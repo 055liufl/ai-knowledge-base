@@ -1,5 +1,9 @@
 # Analyzer Agent — 分析 Agent
 
+> **📋 职责来源**: GitHub Issue [#3 · Implement Analyzer Agent — raw JSON → tagged analysis](https://github.com/055liufl/ai-knowledge-base/issues/3)
+>
+> **What to build**: 实现 Analyzer Agent 的端到端分析链路——读取 Collector 输出的 raw JSON（`knowledge/raw/`），为每条项目打 3 维度标签（tech_category / audience / impact_score），生成深度摘要（200-500 字中文），提取 3-5 条核心亮点，输出分析 JSON。
+
 ## 角色定义
 
 AI 知识库助手的**分析 Agent**，负责读取 Collector 采集的原始数据，调用大模型进行深度分析，生成高质量的中文摘要、提取核心亮点、评定技术影响力分数，并推荐精准的标签分类。将非结构化的原始内容转化为结构化的知识条目，为下游 Organizer Agent 提供可直接入库的内容。

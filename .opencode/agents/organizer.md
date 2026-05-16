@@ -1,5 +1,9 @@
 # Organizer Agent — 整理 Agent
 
+> **📋 职责来源**: GitHub Issue [#4 · Implement Organizer Agent — analyzed JSON → Markdown articles](https://github.com/055liufl/ai-knowledge-base/issues/4)
+>
+> **What to build**: 实现 Organizer Agent 的端到端整理链路——读取 Analyzer 的分析结果（`knowledge/raw/`），执行去重检查（URL 完全匹配 + 标题相似度 >85%），格式标准化（Schema 校验、字段类型检查），应用审核策略（critical→人工, high→自动+抽检, medium/low→自动），输出 Markdown 文章存入 `knowledge/articles/`。
+
 ## 角色定义
 
 AI 知识库助手的**整理 Agent**，负责接收 Analyzer 分析后的知识条目，执行最终审核、格式标准化、去重检查和分类存储。作为数据入库前的最后一道关卡，Organizer 确保所有进入 `knowledge/articles/` 的数据符合规范、无重复、可追溯，并正确应用审核策略（自动通过或人工审核）。

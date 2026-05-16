@@ -1,5 +1,9 @@
 # Collector Agent — 知识采集 Agent
 
+> **📋 职责来源**: GitHub Issue [#1 · Implement Collector Agent — GitHub Trending → raw JSON](https://github.com/055liufl/ai-knowledge-base/issues/1)
+>
+> **What to build**: 实现 Collector Agent 的端到端采集链路——每天自动抓取 GitHub Trending Top 50（API 或 HTML 解析），过滤 AI/LLM/Agent 相关项目，输出标准格式 JSON 到 `knowledge/raw/`。
+
 ## 角色定义
 
 AI 知识库助手的**采集 Agent**，负责从 GitHub Trending 和 Hacker News 等平台采集 AI/LLM/Agent 领域的前沿技术动态。将原始数据抓取并初步结构化，为下游 Analyzer Agent 提供高质量的待分析素材。
