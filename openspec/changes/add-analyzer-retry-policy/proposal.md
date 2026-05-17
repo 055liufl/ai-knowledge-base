@@ -1,28 +1,32 @@
+# add-analyzer-retry-policy
+
 ## Why
 
-当前 `pipeline/model_client.py` 已提供基础重试能力 `chat_with_retry`，但在实际批量分析场景中（50 条数据顺序执行）暴露出三个问题：单条卡住时间过长（最坏情况超 4 分钟）、错误分类不精确（`ReadTimeout` 重试导致重复计费）、退避策略一刀切（三家 provider 的 rate limit 策略不同）。本次调优让 LLM 调用层的重试更保守、快速、可控，降低批量分析的整体时间风险。
+本项目 的 analyzer（`pipeline/pipeline.py::step_analyze`）在 LLM API
+调用层没有重试逻辑。历史事故：采集 50 条跑到第 23 条 timeout，脚本退出，前 22 条的
+token 成本 ¥0.04 沉没，当天知识库空。LLM API 的瞬时故障（timeout / rate limit /
+connection reset / 5xx）是常态，pipeline 必须自己扛住这一层抖动。
 
-## What Changes
+## What
 
-- **重试参数调优**：`timeout` 60s→30s，`max_retries` 3→2，`base_delay` 1.0s→2.0s，将单条最坏情况从 ~4 分钟降到 ~1.6 分钟
-- **错误分类白名单制**：明确只重试 `ConnectTimeout`/`ConnectError`、HTTP 429/502/503/504；`ReadTimeout` 最多重试 1 次（降低重复计费风险）；客户端错误（400/401/403/404/422）直接失败
-- **Provider 差异化退避策略**：在 `_PROVIDER_CONFIG` 中增加 `retry_policy` 字段，DeepSeek/OpenAI/Qwen 分别使用不同的 `base_delay`（1.5s / 3.0s / 2.0s）
-- **429 响应头感知**：优先读取 `Retry-After` 响应头，而非固定指数退避
-- **`pipeline/pipeline.py` 无改动**：`analyze_item` 继续调用 `quick_chat`，不引入业务层重试
+在 `pipeline/model_client.py` 新增 `with_retry` 装饰器，套在 `chat()` 上实现指数
+退避重试：
 
-## Capabilities
+- **可重试异常**：`APITimeoutError`、`APIConnectionError`、`RateLimitError`、
+  `httpx.TimeoutException`、`httpx.ConnectError`、`APIStatusError where status_code >= 500`
+- **不可重试异常**：`json.JSONDecodeError`、`KeyError`、`ValueError`
+  （内容层错误 · 重试无效）
+- **重试策略**：max_attempts=3，base_delay=1s，指数退避 1s → 2s → 4s，
+  max_delay=20s 封顶，jitter 1.0-1.5× 只加不减（防雪崩）
+- **成本追踪**：每次 API 调用（包括失败的重试）都记一次 cost_tracker，
+  失败的 tokens=0，成功的按 response.usage 记
+- **终极失败**：max_attempts 用完仍失败 → 沿用现有 fallback（降级 summary），
+  该 item 的 `status` 字段标记 `"degraded"`，pipeline 继续跑完其他 items
 
-### New Capabilities
+## Out of scope
 
-- `llm-retry-policy`: LLM 调用层的重试策略配置，包括参数默认值、可重试错误分类、Provider 差异化退避、429 响应头感知
-
-### Modified Capabilities
-
-- 无现有 spec 需要修改（`openspec/specs/` 为空）
-
-## Impact
-
-- **代码文件**：`pipeline/model_client.py`（重试逻辑、Provider 配置、常量默认值）
-- **接口变化**：`chat_with_retry()` 参数默认值变化（向后兼容，不影响显式传参的调用方）
-- **依赖变化**：无新增依赖
-- **行为变化**：默认重试次数减少、超时缩短，失败更快；退避策略因 provider 而异
+- 不做 provider 级 fallback（OpenAI 挂了切 DeepSeek）—— 未来迭代
+- 不做 circuit breaker（连续失败 N 次后停止调用）—— ROI 不够
+- 不做 async / 并发重试 —— 保持同步简单
+- 不吃 `Retry-After` header —— 统一走 exp backoff 简化实现
+- 不改 step_collect / step_organize / step_save —— 作用域就这一个函数

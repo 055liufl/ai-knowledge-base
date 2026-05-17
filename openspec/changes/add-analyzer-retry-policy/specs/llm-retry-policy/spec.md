@@ -1,72 +1,70 @@
 ## ADDED Requirements
 
-### Requirement: Retry parameters are tuned for batch analysis
-The LLM client SHALL use conservative retry parameters by default to prevent individual requests from blocking the pipeline for extended periods.
+### Requirement: Retry decorator wraps chat method
+The system SHALL provide a `with_retry` decorator that wraps `chat()` to automatically retry on transient failures.
 
-#### Scenario: Default retry parameters
-- **WHEN** `chat_with_retry()` is called without explicit `timeout`, `max_retries`, or `base_delay` parameters
-- **THEN** the default values SHALL be `timeout=30.0`, `max_retries=2`, and `base_delay=2.0`
+#### Scenario: Decorator is applied
+- **WHEN** `chat()` is called through the `with_retry` decorator
+- **THEN** transient failures SHALL trigger automatic retries according to the configured policy
 
-#### Scenario: Worst-case retry duration is bounded
-- **WHEN** a request encounters retryable failures on every attempt
-- **THEN** the total time spent on that single item SHALL NOT exceed 120 seconds
+### Requirement: Only specific exceptions trigger retry
+The retry mechanism SHALL distinguish between retryable and non-retryable exceptions.
 
-### Requirement: Only specific errors trigger retry
-The retry mechanism SHALL distinguish between retryable and non-retryable errors, and SHALL NOT retry client errors or business logic failures.
+#### Scenario: Network timeout is retried
+- **WHEN** an `httpx.TimeoutException` or `APITimeoutError` occurs
+- **THEN** the request SHALL be retried up to `max_attempts - 1` times
 
-#### Scenario: Connect errors are retried
-- **WHEN** an `httpx.ConnectTimeout` or `httpx.ConnectError` occurs
-- **THEN** the request SHALL be retried up to the configured `max_retries`
+#### Scenario: Connection error is retried
+- **WHEN** an `httpx.ConnectError` or `APIConnectionError` occurs
+- **THEN** the request SHALL be retried up to `max_attempts - 1` times
 
-#### Scenario: Read timeout has limited retries
-- **WHEN** an `httpx.ReadTimeout` occurs
-- **THEN** the request SHALL be retried at most once, regardless of the configured `max_retries`
+#### Scenario: Rate limit is retried
+- **WHEN** a `RateLimitError` occurs
+- **THEN** the request SHALL be retried up to `max_attempts - 1` times
 
-#### Scenario: Server errors are retried
-- **WHEN** the API responds with HTTP status code 429, 502, 503, or 504
-- **THEN** the request SHALL be retried up to the configured `max_retries`
+#### Scenario: Server error is retried
+- **WHEN** an `APIStatusError` with `status_code >= 500` occurs
+- **THEN** the request SHALL be retried up to `max_attempts - 1` times
 
-#### Scenario: Client errors are not retried
-- **WHEN** the API responds with HTTP status code 400, 401, 403, 404, or 422
+#### Scenario: JSON decode error is not retried
+- **WHEN** a `json.JSONDecodeError` occurs after a successful HTTP response
 - **THEN** the error SHALL be raised immediately without retry
 
-#### Scenario: Business errors are not retried
-- **WHEN** the HTTP call succeeds but the response parsing fails (e.g., `json.JSONDecodeError`)
-- **THEN** the error SHALL NOT trigger a retry at the HTTP layer
+#### Scenario: Content errors are not retried
+- **WHEN** a `KeyError` or `ValueError` occurs during response processing
+- **THEN** the error SHALL be raised immediately without retry
 
-### Requirement: Provider-specific backoff policies
-The system SHALL support different retry backoff parameters for each LLM provider, configured in the provider definition.
+### Requirement: Exponential backoff with jitter
+The retry mechanism SHALL use exponential backoff with capped delay and multiplicative jitter.
 
-#### Scenario: DeepSeek uses faster backoff
-- **WHEN** retrying a request to the DeepSeek provider
-- **THEN** the initial backoff delay SHALL be 1.5 seconds
+#### Scenario: Backoff calculation
+- **WHEN** the first retry is attempted
+- **THEN** the delay SHALL be `base_delay * 2^(attempt-1) * jitter` where `jitter` is in range `[1.0, 1.5)`
 
-#### Scenario: OpenAI uses slower backoff
-- **WHEN** retrying a request to the OpenAI provider
-- **THEN** the initial backoff delay SHALL be 3.0 seconds
+#### Scenario: Max delay cap
+- **WHEN** the calculated delay exceeds `max_delay`
+- **THEN** the actual delay SHALL be capped at `max_delay`
 
-#### Scenario: Qwen uses moderate backoff
-- **WHEN** retrying a request to the Qwen provider
-- **THEN** the initial backoff delay SHALL be 2.0 seconds
+#### Scenario: Default retry parameters
+- **WHEN** `with_retry` is used without explicit configuration
+- **THEN** the default values SHALL be `max_attempts=3`, `base_delay=1.0`, `max_delay=20.0`
 
-#### Scenario: Missing provider policy falls back to defaults
-- **WHEN** a provider configuration does not include a `retry_policy`
-- **THEN** the system SHALL use the global default `base_delay` and `max_retries`
+### Requirement: Cost tracking for all attempts
+The system SHALL track API costs for every attempt, including failed retries.
 
-### Requirement: Rate limit responses are respected
-The system SHALL honor the `Retry-After` header when present in HTTP 429 responses, using it instead of calculated exponential backoff.
+#### Scenario: Failed attempt cost
+- **WHEN** an API call fails before receiving a response
+- **THEN** the cost tracker SHALL record `prompt_tokens=0`, `completion_tokens=0`
 
-#### Scenario: Retry-After header is present
-- **WHEN** an HTTP 429 response includes a `Retry-After` header with value `10`
-- **THEN** the system SHALL wait exactly 10 seconds before the next retry attempt
+#### Scenario: Successful attempt cost
+- **WHEN** an API call succeeds
+- **THEN** the cost tracker SHALL record the actual `usage.prompt_tokens` and `usage.completion_tokens` from the response
 
-#### Scenario: Retry-After header is absent
-- **WHEN** an HTTP 429 response does not include a `Retry-After` header
-- **THEN** the system SHALL fall back to exponential backoff with jitter
+### Requirement: Graceful degradation on exhaustion
+When all retry attempts are exhausted, the system SHALL gracefully degrade instead of crashing the pipeline.
 
-### Requirement: Pipeline layer remains unchanged
-The retry mechanism SHALL be transparent to the pipeline orchestration layer, requiring no modifications to `pipeline.py`.
-
-#### Scenario: Pipeline calls quick_chat without changes
-- **WHEN** `analyze_item()` calls `quick_chat()` with existing parameters
-- **THEN** the call SHALL succeed with the new retry behavior applied automatically
+#### Scenario: Degraded fallback
+- **WHEN** `max_attempts` are exhausted and the request still fails
+- **THEN** the item SHALL use `raw_content[:200]` as the summary
+- **AND** the item's `status` field SHALL be set to `"degraded"`
+- **AND** the pipeline SHALL continue processing remaining items

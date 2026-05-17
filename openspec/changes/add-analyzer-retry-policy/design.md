@@ -1,111 +1,89 @@
 ## Context
 
-当前 `pipeline/model_client.py` 实现了 `chat_with_retry()` 函数，为 OpenAI 兼容 API（DeepSeek / Qwen / OpenAI）提供基础重试能力。该函数被 `quick_chat()` 调用，而 `quick_chat()` 又在 `pipeline.py` 的 `analyze_item()` 中被使用。
+当前 `pipeline/model_client.py` 的 `chat()` 方法无重试逻辑，`pipeline.py::analyze_item()` 调用它时，一旦遇到 timeout 或 rate limit，整个脚本退出，已消耗的 tokens 沉没。
 
-现有实现存在以下问题：
-1. **参数过于宽松**：`timeout=60s`, `max_retries=3`, `base_delay=1.0s`，导致单条数据最坏情况可阻塞 4 分钟以上
-2. **错误分类粗糙**：未区分 `ConnectTimeout`（连接失败）与 `ReadTimeout`（服务器已接收但响应超时），后者重试容易导致重复计费
-3. **退避策略无差异化**：三家 provider 的 rate limit 策略不同，但使用相同的退避参数
-4. **未感知 429 响应头**：遇到 rate limit 时不读取 `Retry-After`，可能退避不足或过度
-
-约束条件：
-- 不引入新依赖（保持 `httpx` 单依赖）
-- 不改 `pipeline.py` 的调用方式（向后兼容）
-- 不做业务层重试（JSON 解析失败不在 model_client 处理）
+历史事故：50 条数据跑到第 23 条 timeout，前 22 条 ¥0.04 成本浪费，当天知识库空。
 
 ## Goals / Non-Goals
 
 **Goals:**
-- 将单条数据最坏等待时间从 ~4 分钟降至 ~1.6 分钟
-- 精确分类可重试错误，降低重复计费风险
-- 支持按 Provider 配置差异化退避策略
-- 支持读取 HTTP 429 的 `Retry-After` 响应头
-- 保持 `pipeline.py` 零改动
+- 在 `chat()` 上套一层指数退避重试，扛住 timeout / rate limit / 5xx / connection reset
+- 区分"可重试"与"不可重试"异常，不浪费 tokens 在内容层错误上
+- 成本追踪：记录每次 API 调用（含失败重试）的 token 消耗
+- 终极失败 graceful degradation：降级 summary，标记 `status="degraded"`，pipeline 继续跑完其他 items
 
 **Non-Goals:**
-- Provider 级 fallback（一个 provider 挂了切另一个）
+- Provider 级 fallback（OpenAI 挂了切 DeepSeek）
 - Circuit breaker
-- Async / 并发改造
-- 业务层重试（如 JSON 解析失败后的 prompt 调整重试）
-- Pipeline 断点续传 / 增量保存
+- Async / 并发重试
+- 读取 `Retry-After` header（统一走 exp backoff）
+- 修改 step_collect / step_organize / step_save
 
 ## Decisions
 
-### Decision 1: 参数默认值保守化
+### Decision 1: 用装饰器而非内联重构
 
-**选择：** `timeout=30.0`, `max_retries=2`, `base_delay=2.0`
-
-**理由：**
-- 批量分析场景下，单条 prompt 长度通常不超过 2000 字符（约 500 tokens），30 秒足够完成
-- `max_retries=2`（初始请求 + 2 次重试 = 最多 3 次）在"快速失败"和"容忍瞬时故障"之间取得平衡
-- `base_delay=2.0` 给 rate limit 更长的冷却时间，降低连续触发 429 的概率
-
-**替代方案考虑：**
-- 保持 `max_retries=3`：拒绝，因为批量场景下最坏时间不可接受
-- `timeout=45s`：考虑过，但 30s 已覆盖绝大多数情况，且能更快暴露真正的性能问题
-- 通过环境变量动态调整：过度设计，当前场景不需要
-
-### Decision 2: `ReadTimeout` 单独限制重试次数
-
-**选择：** `ReadTimeout` 最多重试 1 次，其他可重试错误最多 2 次
+**选择：** 新增 `with_retry` 装饰器，套在 `chat()` 上。
 
 **理由：**
-- `ReadTimeout` 的特殊性在于：请求可能已经到达服务器并正在处理（或已完成处理，响应在传输中丢失）
-- 这种情况下重试会导致同一条 prompt 被处理两次，产生重复计费
-- 限制为 1 次是在"容错"和"成本控制"之间的折中
+- 装饰器与业务逻辑解耦，`chat()` 本身不需要知道重试存在
+- 未来可以给其他方法（如 `stream()`）复用
+- 比内联修改 `chat()` 更干净
 
-**替代方案考虑：**
-- 完全不重试 `ReadTimeout`：过于严格，网络抖动时失败率会显著上升
-- 对 `ReadTimeout` 使用更长的退避（如 5s）：无法降低重复计费概率，只是推迟了重试时间
+**替代方案：** 直接改 `chat()` 内部加 try/except 循环 ——  rejected，会污染原始逻辑。
 
-### Decision 3: Provider 差异化配置通过 `_PROVIDER_CONFIG` 扩展
+### Decision 2: 可重试异常白名单
 
-**选择：** 在现有 `_PROVIDER_CONFIG` 字典中增加 `retry_policy` 子字典，而非新建配置系统
-
-**理由：**
-- 最小化改动范围，利用现有配置结构
-- `OpenAICompatibleProvider.__init__` 可以直接读取并保存，无需额外的配置加载逻辑
-- 新 provider 只需在配置中加一行 `retry_policy`，无代码改动
-
-**替代方案考虑：**
-- 新建 `RetryConfig` dataclass：增加代码量，且当前场景不需要复杂的配置组合
-- 环境变量覆盖：`LLM_MAX_RETRIES` 等，但无法支持 per-provider 差异化
-
-### Decision 4: 429 `Retry-After` 优先于指数退避
-
-**选择：** 遇到 429 时，先检查响应头 `Retry-After`，有则用，无则回退到指数退避
+**选择：** 只重试以下异常：
+- `httpx.TimeoutException`（含 `APITimeoutError`）
+- `httpx.ConnectError`（含 `APIConnectionError`）
+- `RateLimitError`
+- `APIStatusError where status_code >= 500`
 
 **理由：**
-- Provider 最清楚自己什么时候能恢复服务，`Retry-After` 是最准确的等待时间
-- DeepSeek 和 OpenAI 都会在 429 响应中携带此头
-- 实现简单：`exc.response.headers.get("retry-after")`，无额外依赖
+- 这些是"provider 侧瞬时故障"，重试有意义
+- `json.JSONDecodeError`、`KeyError`、`ValueError` 是内容/解析层错误，重试不会变好
 
-**替代方案考虑：**
-- 总是使用指数退避，忽略 `Retry-After`：简单但可能退避不足或过度
-- 取 `max(Retry-After, calculated_backoff)`：过度保守，通常 `Retry-After` 已经考虑了服务器负载
+### Decision 3: 重试策略参数
 
-### Decision 5: 不在 `pipeline.py` 引入业务层重试
-
-**选择：** `analyze_item()` 保持现状，JSON 解析失败返回 `None`，不重试
+**选择：** `max_attempts=3, base_delay=1s, max_delay=20s, jitter=1.0-1.5× 只加不减`
 
 **理由：**
-- 业务层重试需要修改 prompt（如附加"只输出 JSON"的约束），这改变了 LLM 的输入，可能导致输出质量变化
-- 当前 JSON 解析失败率较低，投入产出比不高
-- 保持 scope 清晰：model_client 只管 HTTP 层，pipeline 只管业务流程
+- 3 次尝试（初始 + 2 次重试）在"容错"和"不卡死"之间平衡
+- 1s→2s→4s 的退避足够应对大多数 rate limit
+- max_delay=20s 封顶，防止极端情况无限等待
+- jitter 只加不减：避免所有并发请求同时重试导致雪崩
 
-**替代方案考虑：**
-- 在 `analyze_item()` 内对 `JSONDecodeError` 重试 1 次：技术上可行，但属于后续迭代范围
+### Decision 4: 成本追踪
+
+**选择：** 每次 API 调用（包括失败的重试）都记录一次 cost_tracker 条目。
+
+**理由：**
+- 失败的调用 tokens=0（因为没拿到 response），但需要记录"发生了多少次失败尝试"
+- 成功的调用按 `response.usage` 记录实际 tokens
+- 方便后续分析"重试成本占比"
+
+### Decision 5: Graceful Degradation
+
+**选择：** 终极失败时，用原始 `raw_content` 的前 200 字作为降级 summary，`status` 标记为 `"degraded"`。
+
+**理由：**
+- 不因为单条失败中断整个 pipeline
+- 降级后的内容仍有价值（比完全丢失好）
+- `status="degraded"` 方便后续人工 review
+
+**⚠️ 注意：** proposal 声明"不改 step_collect / step_organize / step_save"，但标记 `status="degraded"` 需要修改 `pipeline.py` 的 `standardize()` 函数。这是一个 scope 矛盾，实现时需要在 `standardize()` 里加一行 `status = "degraded" if analysis_failed else entry.get("status", "pending")`。
 
 ## Risks / Trade-offs
 
 | 风险 | 影响 | 缓解 |
 |---|---|---|
-| `timeout` 从 60s 降到 30s，某些复杂分析（长文本 + 高 max_tokens）可能超时 | 低 | 调用方可通过显式传参覆盖；批量场景下 prompt 长度可控 |
-| `ReadTimeout` 只重试 1 次，网络波动时整体失败率上升 | 中 | 失败时记录明确日志（含 provider、status code、耗时），方便用户手动重跑单条 |
-| Provider 配置中遗漏 `retry_policy` 导致使用不合适的默认值 | 低 | 代码中设置合理的全局默认值（`base_delay=2.0, max_retries=2`），缺失时自动回退 |
-| 429 的 `Retry-After` 值过大（如 60s）导致单条阻塞过久 | 低 | `Retry-After` 是 provider 的建议值，通常合理；未来可考虑设置上限（如 max 30s）作为保险 |
+| `max_attempts=3` 在严重故障时仍会连续失败 3 次，累积延迟 | 中 | 单条最坏 1+2+4+20=27s，可控 |
+| 不吃 `Retry-After`，对严格 rate limit 的 provider（如 OpenAI）可能退避不足 | 低 | 目前主要用 DeepSeek，rate limit 较松；未来迭代再加 |
+| Graceful degradation 的降级 summary 质量差 | 低 | 标记 `degraded` 后人工可识别并补录 |
+| `status="degraded"` 需要改 `pipeline.py`，与"不改 step_xxx"声明冲突 | 中 | 实际改动仅 1 行，在 `standardize()` 里判断即可 |
 
 ## Open Questions
 
-1. 是否需要为 `Retry-After` 设置上限（如最多等 30s）？目前按 provider 建议值等待，但极端情况下可能过长。
-2. 是否需要暴露环境变量覆盖全局默认值（如 `LLM_TIMEOUT`, `LLM_MAX_RETRIES`）？当前认为不需要，但用户反馈可能改变这个判断。
+1. `cost_tracker` 的输出格式：是写日志、写文件、还是返回给调用方？建议先简单打印日志，未来持久化。
+2. `with_retry` 装饰器是否也套在 `quick_chat()` 上？是的，因为 `quick_chat()` 内部调 `chat()`，装饰器会生效。
