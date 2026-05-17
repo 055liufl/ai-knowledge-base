@@ -1,0 +1,164 @@
+# RSS 数据源配置
+# 用于 pipeline/pipeline.py 的 RSS 采集模块
+#
+# 使用方式:
+#   python pipeline/pipeline.py --sources rss --limit 10
+#
+# 字段说明:
+#   - name: 源名称（用于日志和标识）
+#   - url: RSS Feed URL
+#   - category: 分类（general_tech / ai_research / company_blog / chinese_community）
+#   - enabled: 是否启用采集（true/false）
+#   - description: 源描述（可选）
+#   - language: 内容语言（en / zh / multi）
+#   - notes: 备注（可选，如速率限制、认证要求等）
+
+rss_sources:
+  # ========== 综合技术 (General Tech) ==========
+  - name: "Hacker News"
+    url: "https://news.ycombinator.com/rss"
+    category: "general_tech"
+    enabled: true
+    description: "Y Combinator 旗下的技术新闻聚合，需 AI 关键词过滤"
+    language: "en"
+    notes: "RSS 包含所有文章，pipeline 会自动过滤 AI 相关内容"
+
+  - name: "Lobsters AI/ML"
+    url: "https://lobste.rs/t/ai.rss"
+    category: "general_tech"
+    enabled: true
+    description: "Lobsters 技术社区的 AI/ML 标签 feed"
+    language: "en"
+    notes: "已按 AI/ML 标签预过滤，无需额外关键词过滤"
+
+  - name: "Lobsters Machine Learning"
+    url: "https://lobste.rs/t/machinelearning.rss"
+    category: "general_tech"
+    enabled: false
+    description: "Lobsters 技术社区的 Machine Learning 标签 feed"
+    language: "en"
+    notes: "与 ai.rss 有部分重叠，默认关闭避免重复"
+
+  - name: "Reddit r/MachineLearning"
+    url: "https://www.reddit.com/r/MachineLearning/.rss"
+    category: "general_tech"
+    enabled: false
+    description: "Reddit Machine Learning 板块"
+    language: "en"
+    notes: "Reddit 对 RSS 请求较严格，可能触发限流，默认关闭"
+
+  # ========== AI 研究 (AI Research) ==========
+  - name: "arXiv cs.AI"
+    url: "https://export.arxiv.org/rss/cs.AI"
+    category: "ai_research"
+    enabled: true
+    description: "arXiv 人工智能领域最新论文"
+    language: "en"
+    notes: "更新频率高，建议控制 limit 避免大量论文入库"
+
+  - name: "arXiv cs.LG"
+    url: "https://export.arxiv.org/rss/cs.LG"
+    category: "ai_research"
+    enabled: false
+    description: "arXiv 机器学习领域最新论文"
+    language: "en"
+    notes: "与 cs.AI 有大量重叠，默认关闭"
+
+  - name: "arXiv cs.CL"
+    url: "https://export.arxiv.org/rss/cs.CL"
+    category: "ai_research"
+    enabled: false
+    description: "arXiv 计算语言学领域最新论文（NLP 相关）"
+    language: "en"
+    notes: "专注 NLP/LLM 方向，可选开启"
+
+  # ========== 公司博客 (Company Blogs) ==========
+  - name: "OpenAI Blog"
+    url: "https://openai.com/blog/rss.xml"
+    category: "company_blog"
+    enabled: true
+    description: "OpenAI 官方博客"
+    language: "en"
+    notes: "发布频率低但质量高，重要产品更新和研究成果"
+
+  - name: "Anthropic Research"
+    url: "https://www.anthropic.com/research/rss.xml"
+    category: "company_blog"
+    enabled: true
+    description: "Anthropic 研究成果和技术博客"
+    language: "en"
+    notes: "专注 AI 安全和对齐研究"
+
+  - name: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/feed.xml"
+    category: "company_blog"
+    enabled: true
+    description: "Hugging Face 技术博客和教程"
+    language: "en"
+    notes: "涵盖 Transformers、Diffusers、数据集等生态内容"
+
+  - name: "Google AI Blog"
+    url: "https://ai.googleblog.com/feeds/posts/default"
+    category: "company_blog"
+    enabled: false
+    description: "Google AI 研究博客"
+    language: "en"
+    notes: "更新频率中等，内容覆盖广泛"
+
+  - name: "DeepMind Blog"
+    url: "https://deepmind.google/blog/rss.xml"
+    category: "company_blog"
+    enabled: false
+    description: "Google DeepMind 研究博客"
+    language: "en"
+    notes: "前沿 AI 研究，更新频率较低"
+
+  - name: "Microsoft Research AI"
+    url: "https://www.microsoft.com/en-us/research/research-area/artificial-intelligence/rss/"
+    category: "company_blog"
+    enabled: false
+    description: "微软研究院 AI 方向文章"
+    language: "en"
+    notes: "学术性较强，更新频率低"
+
+  # ========== 中文社区 (Chinese Community) ==========
+  - name: "机器之心"
+    url: "https://www.jiqizhixin.com/rss"
+    category: "chinese_community"
+    enabled: false
+    description: "国内领先的 AI 媒体和资讯平台"
+    language: "zh"
+    notes: "RSS 可用性待验证，需确认是否为全文输出"
+
+  - name: "量子位"
+    url: "https://www.qbitai.com/feed"
+    category: "chinese_community"
+    enabled: false
+    description: "专注于 AI 和新技术的科技媒体"
+    language: "zh"
+    notes: "RSS 可用性待验证，默认关闭"
+
+  - name: "PaperWeekly"
+    url: "https://www.paperweekly.me/rss"
+    category: "chinese_community"
+    enabled: false
+    description: "AI 论文解读和社区讨论"
+    language: "zh"
+    notes: "学术向中文社区，RSS 可用性待验证"
+
+# ========== 全局配置 ==========
+settings:
+  # 默认每个源采集条数上限
+  default_limit_per_source: 10
+
+  # 请求间隔（秒），避免对 RSS 服务器造成压力
+  request_delay: 2.0
+
+  # 单次请求超时（秒）
+  timeout: 30.0
+
+  # 是否自动过滤非 AI 内容（仅在 general_tech 分类的源上生效）
+  auto_filter_ai: true
+
+  # 中文源特殊处理：如 RSS 为摘要而非全文，标记为需要额外处理
+  chinese_sources_full_text: false

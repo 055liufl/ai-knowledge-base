@@ -18,6 +18,7 @@ import logging
 import os
 import re
 import sys
+import time
 import uuid
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -25,6 +26,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
+import yaml
 
 from model_client import chat_with_retry, quick_chat
 
@@ -39,14 +41,11 @@ MAX_RETRIES = 3
 REQUEST_TIMEOUT = 30.0
 
 _GITHUB_API_URL = "https://api.github.com/search/repositories"
-_RSS_FEEDS = [
-    "https://news.ycombinator.com/rss",
-    "https://www.reddit.com/r/MachineLearning/.rss",
-]
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _RAW_DIR = _PROJECT_ROOT / "knowledge" / "raw"
 _ARTICLES_DIR = _PROJECT_ROOT / "knowledge" / "articles"
+_RSS_SOURCES_FILE = _PROJECT_ROOT / "pipeline" / "rss_sources.yaml"
 
 # AI 相关关键词，用于过滤和标签提取
 _AI_KEYWORDS = [
@@ -218,11 +217,45 @@ def collect_github(limit: int) -> list[dict[str, Any]]:
     return all_items
 
 
+def _load_rss_sources() -> list[dict[str, Any]]:
+    """从 YAML 配置文件加载 RSS 数据源。
+
+    读取 pipeline/rss_sources.yaml，返回所有 enabled=true 的源列表。
+    如果配置文件不存在，回退到默认源。
+
+    Returns:
+        list[dict]: 启用的 RSS 源配置列表。
+    """
+    if not _RSS_SOURCES_FILE.exists():
+        logger.warning("RSS 配置文件不存在: %s，使用默认源", _RSS_SOURCES_FILE)
+        return [
+            {"name": "Hacker News", "url": "https://news.ycombinator.com/rss", "category": "general_tech"},
+            {"name": "Reddit r/MachineLearning", "url": "https://www.reddit.com/r/MachineLearning/.rss", "category": "general_tech"},
+        ]
+
+    try:
+        with open(_RSS_SOURCES_FILE, "r", encoding="utf-8") as f:
+            config = yaml.safe_load(f)
+
+        sources = config.get("rss_sources", [])
+        enabled_sources = [s for s in sources if s.get("enabled", False)]
+
+        logger.info("加载 RSS 配置: 总计 %d 个源，启用 %d 个", len(sources), len(enabled_sources))
+        for src in enabled_sources:
+            logger.debug("  - %s (%s)", src.get("name"), src.get("category"))
+
+        return enabled_sources
+
+    except yaml.YAMLError as exc:
+        logger.error("RSS 配置文件解析失败: %s", exc)
+        return []
+
+
 def collect_rss(limit: int) -> list[dict[str, Any]]:
     """从 RSS 源采集 AI 相关内容。
 
     使用简易正则解析 RSS XML，提取标题、链接和描述。
-    目前支持 Hacker News 和 Reddit Machine Learning。
+    从 rss_sources.yaml 读取启用的数据源。
 
     Args:
         limit: 每条 RSS 源最多采集条数。
@@ -231,6 +264,12 @@ def collect_rss(limit: int) -> list[dict[str, Any]]:
         list[dict]: 采集到的原始条目列表。
     """
     logger.info("开始采集 RSS: limit=%d", limit)
+
+    sources = _load_rss_sources()
+    if not sources:
+        logger.warning("没有启用的 RSS 源，跳过采集")
+        return []
+
     all_items: list[dict[str, Any]] = []
     seen_urls: set[str] = set()
 
@@ -243,8 +282,17 @@ def collect_rss(limit: int) -> list[dict[str, Any]]:
         re.DOTALL | re.IGNORECASE,
     )
 
-    for feed_url in _RSS_FEEDS:
-        if len(all_items) >= limit * len(_RSS_FEEDS):
+    for source in sources:
+        feed_url = source.get("url", "")
+        source_name = source.get("name", feed_url)
+        category = source.get("category", "unknown")
+        language = source.get("language", "en")
+
+        if not feed_url:
+            logger.warning("RSS 源 '%s' 缺少 URL，跳过", source_name)
+            continue
+
+        if len(all_items) >= limit * len(sources):
             break
 
         try:
@@ -253,10 +301,10 @@ def collect_rss(limit: int) -> list[dict[str, Any]]:
                 continue
 
             items = _ITEM_RE.findall(text)
-            logger.debug("RSS '%s' 解析出 %d 条", feed_url, len(items))
+            logger.debug("RSS '%s' 解析出 %d 条", source_name, len(items))
 
             for title, link, description in items:
-                if len(all_items) >= limit * len(_RSS_FEEDS):
+                if len(all_items) >= limit * len(sources):
                     break
 
                 title = title.strip()
@@ -276,9 +324,9 @@ def collect_rss(limit: int) -> list[dict[str, Any]]:
                 entry = {
                     "title": title,
                     "url": link,
-                    "source": "rss",
+                    "source": f"rss_{category}",
                     "raw_content": description[:500],
-                    "language": None,
+                    "language": language,
                     "stars": None,
                     "topics": [],
                     "collected_at": _now_iso(),
@@ -287,8 +335,11 @@ def collect_rss(limit: int) -> list[dict[str, Any]]:
                 all_items.append(entry)
                 seen_urls.add(link)
 
+            # 请求间隔，避免对 RSS 服务器造成压力
+            time.sleep(1.0)
+
         except RuntimeError as exc:
-            logger.warning("RSS 采集失败 '%s': %s", feed_url, exc)
+            logger.warning("RSS 采集失败 '%s': %s", source_name, exc)
             continue
 
     logger.info("RSS 采集完成: %d 条", len(all_items))
