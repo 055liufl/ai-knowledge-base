@@ -1,32 +1,26 @@
-# add-analyzer-retry-policy
-
 ## Why
 
-本项目 的 analyzer（`pipeline/pipeline.py::step_analyze`）在 LLM API
-调用层没有重试逻辑。历史事故：采集 50 条跑到第 23 条 timeout，脚本退出，前 22 条的
-token 成本 ¥0.04 沉没，当天知识库空。LLM API 的瞬时故障（timeout / rate limit /
-connection reset / 5xx）是常态，pipeline 必须自己扛住这一层抖动。
+Pipeline 在批量分析时因 LLM 调用失败（网络超时、服务端错误或返回格式异常）导致整条流水线中断或单条数据报废，已消耗的 tokens 被浪费。需要在 LLM 调用层增加健壮的重试机制，提高单条分析成功率，避免重复采集成本。
 
-## What
+## What Changes
 
-在 `pipeline/model_client.py` 新增 `with_retry` 装饰器，套在 `chat()` 上实现指数
-退避重试：
+- **增强 `chat_with_retry()`**: 扩展可重试错误范围，除网络错误外，增加 LLM 返回内容格式异常（`json.JSONDecodeError`、字段缺失）的重试逻辑
+- **新增内容级校验重试**: 在 `analyze_item()` 中对 LLM 输出进行 schema 校验，校验失败时触发重试而非直接返回 None
+- **优化退避策略**: 解析 HTTP 429 响应的 `Retry-After` header，优先使用服务端建议的等待时间
+- **增强可观测性**: 在 `Usage` 中记录重试次数，在 pipeline 统计中输出平均重试次数和失败明细
+- **新增断点续跑支持**: 基于 URL 对已分析条目进行去重，避免中断后重新分析已消费过 tokens 的数据
 
-- **可重试异常**：`APITimeoutError`、`APIConnectionError`、`RateLimitError`、
-  `httpx.TimeoutException`、`httpx.ConnectError`、`APIStatusError where status_code >= 500`
-- **不可重试异常**：`json.JSONDecodeError`、`KeyError`、`ValueError`
-  （内容层错误 · 重试无效）
-- **重试策略**：max_attempts=3，base_delay=1s，指数退避 1s → 2s → 4s，
-  max_delay=20s 封顶，jitter 1.0-1.5× 只加不减（防雪崩）
-- **成本追踪**：每次 API 调用（包括失败的重试）都记一次 cost_tracker，
-  失败的 tokens=0，成功的按 response.usage 记
-- **终极失败**：max_attempts 用完仍失败 → 沿用现有 fallback（降级 summary），
-  该 item 的 `status` 字段标记 `"degraded"`，pipeline 继续跑完其他 items
+## Capabilities
 
-## Out of scope
+### New Capabilities
+- `llm-retry`: LLM 调用层的重试策略与错误恢复机制，覆盖网络错误和内容格式错误
 
-- 不做 provider 级 fallback（OpenAI 挂了切 DeepSeek）—— 未来迭代
-- 不做 circuit breaker（连续失败 N 次后停止调用）—— ROI 不够
-- 不做 async / 并发重试 —— 保持同步简单
-- 不吃 `Retry-After` header —— 统一走 exp backoff 简化实现
-- 不改 step_collect / step_organize / step_save —— 作用域就这一个函数
+### Modified Capabilities
+<!-- 无现有 spec 需要修改 -->
+
+## Impact
+
+- **pipeline/model_client.py**: `chat_with_retry()` 和 `Usage` 类
+- **pipeline/pipeline.py**: `analyze_item()` 和 `run_pipeline()` 的统计逻辑
+- **knowledge/articles/**: 可能因断点续跑产生部分写入的文件，不影响现有数据格式
+- **CLI 输出**: 统计报告新增重试相关指标

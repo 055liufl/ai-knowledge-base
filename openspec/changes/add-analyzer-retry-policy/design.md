@@ -1,89 +1,78 @@
 ## Context
 
-当前 `pipeline/model_client.py` 的 `chat()` 方法无重试逻辑，`pipeline.py::analyze_item()` 调用它时，一旦遇到 timeout 或 rate limit，整个脚本退出，已消耗的 tokens 沉没。
+当前 pipeline 的 LLM 调用链路：
 
-历史事故：50 条数据跑到第 23 条 timeout，前 22 条 ¥0.04 成本浪费，当天知识库空。
+```
+pipeline.py:analyze_item()
+    └── quick_chat() [model_client.py]
+        └── chat_with_retry() [model_client.py]
+            └── OpenAICompatibleProvider.chat() [model_client.py]
+                └── httpx.Client.post() → DeepSeek/Qwen/OpenAI API
+```
+
+`chat_with_retry()` 已实现网络层重试（timeout、connect error、5xx、429），但未覆盖 LLM 返回 200 但内容格式异常的场景。`analyze_item()` 对 JSON 解析失败仅返回 None，不会触发重试，导致已消耗的 tokens 浪费。
 
 ## Goals / Non-Goals
 
 **Goals:**
-- 在 `chat()` 上套一层指数退避重试，扛住 timeout / rate limit / 5xx / connection reset
-- 区分"可重试"与"不可重试"异常，不浪费 tokens 在内容层错误上
-- 成本追踪：记录每次 API 调用（含失败重试）的 token 消耗
-- 终极失败 graceful degradation：降级 summary，标记 `status="degraded"`，pipeline 继续跑完其他 items
+- 网络错误和内容格式错误均触发重试，单条成功率提升至 99%+
+- 重试过程可观测（重试次数、失败原因记录）
+- 支持断点续跑，避免中断后重复分析已消费 tokens 的数据
+- 对现有 step_collect / step_organize / step_save 零侵入
 
 **Non-Goals:**
 - Provider 级 fallback（OpenAI 挂了切 DeepSeek）
 - Circuit breaker
-- Async / 并发重试
-- 读取 `Retry-After` header（统一走 exp backoff）
-- 修改 step_collect / step_organize / step_save
+- Async / 并发优化
+- 修改数据采集或保存逻辑
 
 ## Decisions
 
-### Decision 1: 用装饰器而非内联重构
+### 1. 内容错误重试放在 model_client 层而非 pipeline 层
+**选择**: 扩展 `chat_with_retry()` 增加一个可选的 `validator` 回调参数，由调用方传入内容校验函数。
+**理由**: 
+- 保持重试逻辑集中，避免 pipeline 和 model_client 都有重试逻辑造成混乱
+- `analyze_item()` 只需传入 JSON schema 校验器，无需关心重试实现
+- 其他调用方（如有）也可复用
 
-**选择：** 新增 `with_retry` 装饰器，套在 `chat()` 上。
+**替代方案**: 在 `analyze_item()` 里自己写 while 循环重试。 rejected，因为会分散重试逻辑，且无法复用指数退避。
 
-**理由：**
-- 装饰器与业务逻辑解耦，`chat()` 本身不需要知道重试存在
-- 未来可以给其他方法（如 `stream()`）复用
-- 比内联修改 `chat()` 更干净
+### 2. 校验失败使用与网络错误相同的退避策略
+**选择**: JSON 解析失败也走指数退避 + jitter，最大重试次数独立计算但与网络错误共享同一计数器。
+**理由**: 
+- 内容错误通常是模型临时"抽风"，稍作等待后重试大概率成功
+- 统一策略降低复杂度
 
-**替代方案：** 直接改 `chat()` 内部加 try/except 循环 ——  rejected，会污染原始逻辑。
+### 3. 断点续跑基于文件系统而非内存状态
+**选择**: `run_pipeline()` 在分析前检查 `knowledge/articles/` 中是否已存在同 URL 的文章，若存在则跳过。
+**理由**:
+- 无需引入数据库或外部存储，最简单可依赖
+- `save_article()` 的文件名包含 source_platform + date + slug，URL 信息已存入文件内容
+- 缺点：需要读取已存在的文件做 URL 比对，有一定 I/O 开销，但可接受
 
-### Decision 2: 可重试异常白名单
+**替代方案**: 在 raw data 中标记 analyzed。rejected，因为会修改采集数据的格式。
 
-**选择：** 只重试以下异常：
-- `httpx.TimeoutException`（含 `APITimeoutError`）
-- `httpx.ConnectError`（含 `APIConnectionError`）
-- `RateLimitError`
-- `APIStatusError where status_code >= 500`
+### 4. 不重试 4xx 客户端错误（除 429 外）
+**选择**: 保持现有行为，401/403/400 直接失败。
+**理由**: 客户端错误通常是配置问题（API key 错误、参数非法），重试不会成功。
 
-**理由：**
-- 这些是"provider 侧瞬时故障"，重试有意义
-- `json.JSONDecodeError`、`KeyError`、`ValueError` 是内容/解析层错误，重试不会变好
-
-### Decision 3: 重试策略参数
-
-**选择：** `max_attempts=3, base_delay=1s, max_delay=20s, jitter=1.0-1.5× 只加不减`
-
-**理由：**
-- 3 次尝试（初始 + 2 次重试）在"容错"和"不卡死"之间平衡
-- 1s→2s→4s 的退避足够应对大多数 rate limit
-- max_delay=20s 封顶，防止极端情况无限等待
-- jitter 只加不减：避免所有并发请求同时重试导致雪崩
-
-### Decision 4: 成本追踪
-
-**选择：** 每次 API 调用（包括失败的重试）都记录一次 cost_tracker 条目。
-
-**理由：**
-- 失败的调用 tokens=0（因为没拿到 response），但需要记录"发生了多少次失败尝试"
-- 成功的调用按 `response.usage` 记录实际 tokens
-- 方便后续分析"重试成本占比"
-
-### Decision 5: Graceful Degradation
-
-**选择：** 终极失败时，用原始 `raw_content` 的前 200 字作为降级 summary，`status` 标记为 `"degraded"`。
-
-**理由：**
-- 不因为单条失败中断整个 pipeline
-- 降级后的内容仍有价值（比完全丢失好）
-- `status="degraded"` 方便后续人工 review
-
-**⚠️ 注意：** proposal 声明"不改 step_collect / step_organize / step_save"，但标记 `status="degraded"` 需要修改 `pipeline.py` 的 `standardize()` 函数。这是一个 scope 矛盾，实现时需要在 `standardize()` 里加一行 `status = "degraded" if analysis_failed else entry.get("status", "pending")`。
+### 5. 记录重试次数但不设 token 预算上限
+**选择**: `Usage` 增加 `retry_count` 字段用于统计，不限制额外 token 消耗。
+**理由**: 默认 max_retries=3，额外成本可控；设预算可能导致"差一次就成功但被迫放弃"的浪费场景。
 
 ## Risks / Trade-offs
 
-| 风险 | 影响 | 缓解 |
-|---|---|---|
-| `max_attempts=3` 在严重故障时仍会连续失败 3 次，累积延迟 | 中 | 单条最坏 1+2+4+20=27s，可控 |
-| 不吃 `Retry-After`，对严格 rate limit 的 provider（如 OpenAI）可能退避不足 | 低 | 目前主要用 DeepSeek，rate limit 较松；未来迭代再加 |
-| Graceful degradation 的降级 summary 质量差 | 低 | 标记 `degraded` 后人工可识别并补录 |
-| `status="degraded"` 需要改 `pipeline.py`，与"不改 step_xxx"声明冲突 | 中 | 实际改动仅 1 行，在 `standardize()` 里判断即可 |
+- **[Risk] 内容错误重试增加 token 消耗** → **Mitigation**: 内容错误重试次数上限与网络错误共享（默认 3 次），且内容错误发生率较低（<5%）
+- **[Risk] 断点续跑误跳过** → **Mitigation**: 严格按 URL 匹配，URL 是数据的唯一标识；支持 `--force` 参数覆盖（未来扩展）
+- **[Risk] Retry-After 值过大导致 pipeline 卡住** → **Mitigation**: 对 Retry-After 设置上限（如最多等 60 秒），超过则回退到指数退避
+
+## Migration Plan
+
+无需迁移。本改动完全向后兼容：
+- `chat_with_retry()` 新增 `validator` 参数为可选，现有调用不受影响
+- `Usage` 新增字段有默认值，不影响已有逻辑
+- 断点续跑为新增行为，不改变现有执行路径
 
 ## Open Questions
 
-1. `cost_tracker` 的输出格式：是写日志、写文件、还是返回给调用方？建议先简单打印日志，未来持久化。
-2. `with_retry` 装饰器是否也套在 `quick_chat()` 上？是的，因为 `quick_chat()` 内部调 `chat()`，装饰器会生效。
+- 是否需要为不同 provider 配置不同的 max_retries？（当前建议统一配置，后续按需扩展）

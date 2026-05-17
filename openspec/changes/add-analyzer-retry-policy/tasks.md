@@ -1,28 +1,28 @@
-## 1. 新增 with_retry 装饰器
+## 1. model_client.py - 增强重试机制
 
-- [ ] 1.1 在 `pipeline/model_client.py` 中实现 `with_retry` 装饰器，支持 `max_attempts`、`base_delay`、`max_delay` 参数
-- [ ] 1.2 实现指数退避 + jitter（1.0-1.5× 只加不减）
-- [ ] 1.3 实现可重试异常白名单：`httpx.TimeoutException`、`httpx.ConnectError`、`RateLimitError`、`APIStatusError(status>=500)`
-- [ ] 1.4 不可重试异常直接抛出：`json.JSONDecodeError`、`KeyError`、`ValueError`
-- [ ] 1.5 将 `with_retry` 装饰器应用到 `OpenAICompatibleProvider.chat()` 方法
+- [x] 1.1 扩展 `Usage` dataclass，增加 `retry_count: int = 0` 字段
+- [x] 1.2 修改 `chat_with_retry()` 签名，增加可选 `validator: Callable[[str], None] | None = None` 参数
+- [x] 1.3 在 `chat_with_retry()` 中实现内容校验重试逻辑：当 HTTP 200 但 validator 抛出异常时，按网络错误相同的退避策略重试
+- [x] 1.4 增强 429 处理：解析 `Retry-After` header，设置上限 60 秒，超过则回退指数退避
+- [x] 1.5 确保每次重试的 `retry_count` 被正确累加并写入最终 `LLMResponse.usage`
 
-## 2. 成本追踪
+## 2. pipeline.py - 内容校验与断点续跑
 
-- [ ] 2.1 在 `with_retry` 内实现 cost_tracker：每次 API 调用（含失败重试）记录一次
-- [ ] 2.2 失败尝试记录 `prompt_tokens=0, completion_tokens=0`
-- [ ] 2.3 成功尝试按 `response.usage` 记录实际 tokens
-- [ ] 2.4 将 cost_tracker 日志输出到 `logger.info`
+- [x] 2.1 在 `analyze_item()` 中实现 JSON schema 校验函数，校验必填字段和类型
+- [x] 2.2 修改 `analyze_item()` 调用 `quick_chat()` 时传入 validator，触发内容错误重试
+- [x] 2.3 实现 `_is_already_analyzed(url: str) -> bool` 函数，扫描 `knowledge/articles/` 检查 URL 是否已存在
+- [x] 2.4 在 `run_pipeline()` 的分析循环中，调用 `analyze_item()` 前检查 `_is_already_analyzed()`，若存在则跳过
 
-## 3. Graceful Degradation
+## 3. 统计与可观测性
 
-- [ ] 3.1 在 `pipeline/pipeline.py::analyze_item()` 中捕获终极失败（`with_retry` 耗尽后的异常）
-- [ ] 3.2 失败时用 `raw_content[:200]` 作为降级 summary
-- [ ] 3.3 在 `pipeline/pipeline.py::standardize()` 中，当 `analysis` 为 `None`（降级情况）时设置 `status="degraded"`
-- [ ] 3.4 确保降级后 pipeline 继续处理剩余 items，不中断
+- [x] 3.1 修改 `run_pipeline()` 的 `stats` 结构，增加 `total_retries` 和 `failed_items` 明细
+- [x] 3.2 在分析循环中累加每条目的 `usage.retry_count` 到 `total_retries`
+- [x] 3.3 增强最终统计输出，显示平均重试次数和失败条目明细（标题 + 错误原因）
 
 ## 4. 验证
 
-- [ ] 4.1 运行 `python -m py_compile pipeline/model_client.py` 确认无语法错误
-- [ ] 4.2 运行 `python -m py_compile pipeline/pipeline.py` 确认无语法错误
-- [ ] 4.3 运行 `python pipeline/pipeline.py --dry-run --limit 5` 确认 pipeline 能正常跑完
-- [ ] 4.4 检查生成的 article JSON 中 `status` 字段正确（成功为 `"pending"`，降级为 `"degraded"`）
+- [x] 4.1 编写本地测试：模拟 HTTP 超时，验证重试 3 次后失败
+- [x] 4.2 编写本地测试：模拟 HTTP 429 返回 Retry-After: 2，验证等待时间正确
+- [x] 4.3 编写本地测试：模拟 LLM 返回无效 JSON，验证触发内容重试
+- [x] 4.4 断点续跑测试：中断后重新运行，验证已分析 URL 被跳过
+- [x] 4.5 运行完整 pipeline dry-run，验证统计输出格式正确

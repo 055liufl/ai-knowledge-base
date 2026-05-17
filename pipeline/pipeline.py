@@ -45,6 +45,7 @@ _GITHUB_API_URL = "https://api.github.com/search/repositories"
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 _RAW_DIR = _PROJECT_ROOT / "knowledge" / "raw"
 _ARTICLES_DIR = _PROJECT_ROOT / "knowledge" / "articles"
+_FAILED_DIR = _PROJECT_ROOT / "knowledge" / "failed"
 _RSS_SOURCES_FILE = _PROJECT_ROOT / "pipeline" / "rss_sources.yaml"
 
 # AI 相关关键词，用于过滤和标签提取
@@ -63,6 +64,116 @@ def _ensure_dirs() -> None:
     """确保知识库目录结构存在。"""
     _RAW_DIR.mkdir(parents=True, exist_ok=True)
     _ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
+    _FAILED_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _url_hash(url: str) -> str:
+    import hashlib
+
+    return hashlib.md5(url.encode()).hexdigest()[:8]
+
+
+def _is_already_analyzed(url: str) -> bool:
+    if not url:
+        return False
+    for filepath in _ARTICLES_DIR.glob("*.json"):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                entry = json.load(f)
+            if entry.get("source_url") == url:
+                return True
+        except (json.JSONDecodeError, IOError):
+            continue
+    return False
+
+
+def _is_known_failure(url: str) -> bool:
+    if not url:
+        return False
+    url_h = _url_hash(url)
+    for filepath in _FAILED_DIR.glob(f"*-{url_h}.json"):
+        return True
+    return False
+
+
+def _get_failure_marker_path(url: str) -> Path | None:
+    if not url:
+        return None
+    url_h = _url_hash(url)
+    for filepath in _FAILED_DIR.glob(f"*-{url_h}.json"):
+        return filepath
+    return None
+
+
+def _remove_failure_marker(url: str) -> bool:
+    filepath = _get_failure_marker_path(url)
+    if filepath and filepath.exists():
+        filepath.unlink()
+        logger.info("失败标记已清除: %s", filepath.name)
+        return True
+    return False
+
+
+def _save_failure_marker(item: dict[str, Any], error_reason: str, retry_count: int) -> None:
+    url = item.get("url", "")
+    source = item.get("source", "unknown")
+    date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
+    url_h = _url_hash(url)
+    filename = f"{source}-{date_str}-{url_h}.json"
+    filepath = _FAILED_DIR / filename
+
+    cumulative_retries = retry_count
+    existing_path = _get_failure_marker_path(url)
+    if existing_path and existing_path.exists():
+        try:
+            with open(existing_path, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+            cumulative_retries += existing.get("retry_count", 0)
+            existing_path.unlink()
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    marker = {
+        "url": url,
+        "title": item.get("title", ""),
+        "error_reason": error_reason,
+        "retry_count": cumulative_retries,
+        "timestamp": _now_iso(),
+    }
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(marker, f, ensure_ascii=False, indent=2)
+
+    logger.info("失败标记已保存: %s (累积重试 %d 次)", filepath.name, cumulative_retries)
+
+
+def _validate_analysis_json(content: str) -> None:
+    """校验 LLM 返回的分析结果是否符合预期格式。
+
+    Args:
+        content: LLM 返回的文本内容。
+
+    Raises:
+        ValueError: 当内容不符合预期格式时。
+    """
+    cleaned = re.sub(r"```json\s*|\s*```", "", content).strip()
+    if not cleaned:
+        raise ValueError("返回内容为空")
+
+    data = json.loads(cleaned)
+
+    required_keys = {"summary", "tags", "tech_category", "audience", "score", "key_insights"}
+    missing = required_keys - set(data.keys())
+    if missing:
+        raise ValueError(f"缺少必要字段: {missing}")
+
+    valid_categories = {"model", "infra", "tool", "application", "research"}
+    if data.get("tech_category") not in valid_categories:
+        raise ValueError(f"无效的技术分类: {data.get('tech_category')}")
+
+    valid_audiences = {"researcher", "developer", "product", "general"}
+    if data.get("audience") not in valid_audiences:
+        raise ValueError(f"无效的目标受众: {data.get('audience')}")
 
 
 def _now_iso() -> str:
@@ -409,14 +520,14 @@ _ANALYSIS_SYSTEM_PROMPT = """你是一位专业的 AI 技术分析师。你的�
 }"""
 
 
-def analyze_item(item: dict[str, Any]) -> dict[str, Any] | None:
+def analyze_item(item: dict[str, Any]) -> tuple[dict[str, Any] | None, int]:
     """调用 LLM 对单条内容进行深度分析。
 
     Args:
         item: 采集到的原始条目，至少包含 title 和 raw_content。
 
     Returns:
-        dict | None: 分析结果字典，失败时返回 None。
+        tuple[dict | None, int]: (分析结果字典, 重试次数)，失败时结果为 None。
     """
     title = item.get("title", "")
     content = item.get("raw_content", "")
@@ -433,19 +544,12 @@ def analyze_item(item: dict[str, Any]) -> dict[str, Any] | None:
             system_prompt=_ANALYSIS_SYSTEM_PROMPT,
             temperature=0.3,
             max_tokens=1500,
+            validator=_validate_analysis_json,
         )
 
-        # 清理可能的 markdown 代码块
-        cleaned = re.sub(r"```json\s*|\s*```", "", response).strip()
+        cleaned = re.sub(r"```json\s*|\s*```", "", response.content).strip()
         analysis = json.loads(cleaned)
 
-        # 基础校验
-        required_keys = {"summary", "tags", "tech_category", "audience", "score", "key_insights"}
-        if not required_keys.issubset(analysis.keys()):
-            logger.warning("LLM 分析结果缺少必要字段: %s", analysis.keys())
-            return None
-
-        # 校验 tech_category 和 audience 枚举值
         valid_categories = {"model", "infra", "tool", "application", "research"}
         valid_audiences = {"researcher", "developer", "product", "general"}
 
@@ -454,32 +558,38 @@ def analyze_item(item: dict[str, Any]) -> dict[str, Any] | None:
         if analysis["audience"] not in valid_audiences:
             analysis["audience"] = "developer"
 
-        # 确保 score 为整数
         try:
             analysis["score"] = int(analysis["score"])
             analysis["score"] = max(1, min(10, analysis["score"]))
         except (ValueError, TypeError):
             analysis["score"] = 5
 
-        # 确保 tags 为列表
         if not isinstance(analysis["tags"], list):
             analysis["tags"] = [str(analysis["tags"])]
         analysis["tags"] = [str(t) for t in analysis["tags"]][:5]
 
-        # 确保 key_insights 为列表
         if not isinstance(analysis["key_insights"], list):
             analysis["key_insights"] = [str(analysis["key_insights"])]
         analysis["key_insights"] = [str(k)[:200] for k in analysis["key_insights"]][:4]
 
-        logger.info("分析完成: title=%s, score=%d", title[:40], analysis["score"])
-        return analysis
+        retry_count = getattr(response, "usage", None)
+        if retry_count is not None:
+            retry_count = getattr(retry_count, "retry_count", 0)
+        else:
+            retry_count = 0
 
-    except json.JSONDecodeError as exc:
-        logger.warning("LLM 输出 JSON 解析失败 '%s': %s", title[:40], exc)
+        logger.info("分析完成: title=%s, score=%d, retries=%d", title[:40], analysis["score"], retry_count)
+        return analysis, retry_count
+
+    except RuntimeError as exc:
+        logger.error("LLM 分析失败（已重试） '%s': %s", title[:40], exc)
+        return None, _MAX_RETRIES
+    except (json.JSONDecodeError, ValueError) as exc:
+        logger.warning("LLM 输出格式错误 '%s': %s", title[:40], exc)
+        return None, 0
     except Exception as exc:
         logger.warning("LLM 分析失败 '%s': %s", title[:40], exc)
-
-    return None
+        return None, 0
 
 
 # ---------------------------------------------------------------------------
@@ -635,19 +745,35 @@ def save_article(entry: dict[str, Any], dry_run: bool = False) -> Path | None:
 # ---------------------------------------------------------------------------
 
 
-def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[str, Any]:
+def run_pipeline(
+    sources: list[str],
+    limit: int,
+    dry_run: bool = False,
+    retry_failed: bool = False,
+    force_url: str | None = None,
+) -> dict[str, Any]:
     """执行完整的四步流水线。
 
     Args:
         sources: 数据源列表，如 ["github", "rss"]。
         limit: 每个源最多采集条数。
         dry_run: 是否为干跑模式。
+        retry_failed: 是否只重试之前失败的条目。
+        force_url: 强制重试特定 URL。
 
     Returns:
         dict: 执行统计信息。
     """
     _ensure_dirs()
-    stats = {"collected": 0, "analyzed": 0, "saved": 0, "failed": 0, "errors": []}
+    stats = {
+        "collected": 0,
+        "analyzed": 0,
+        "saved": 0,
+        "failed": 0,
+        "skipped": 0,
+        "total_retries": 0,
+        "errors": [],
+    }
 
     # ---- Step 1: 采集 ----
     all_raw: list[dict[str, Any]] = []
@@ -678,9 +804,32 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[
 
     # ---- Step 2: 分析 + Step 3: 整理 ----
     for item in unique_items:
-        analysis = analyze_item(item)
+        url = item.get("url", "")
+
+        # 断点续跑：检查是否已分析或已知失败
+        if force_url and url == force_url:
+            logger.info("强制重试: %s", url)
+        elif retry_failed:
+            if not _is_known_failure(url):
+                logger.debug("跳过非失败项: %s", url)
+                continue
+        else:
+            if _is_already_analyzed(url) or _is_known_failure(url):
+                logger.debug("跳过已处理项: %s", url)
+                stats["skipped"] += 1
+                continue
+
+        analysis, retry_count = analyze_item(item)
+        stats["total_retries"] += retry_count
+
         if analysis:
             stats["analyzed"] += 1
+        else:
+            error_reason = f"分析失败（重试 {retry_count} 次）"
+            stats["failed"] += 1
+            stats["errors"].append({"title": item.get("title", ""), "error": error_reason})
+            _save_failure_marker(item, error_reason, retry_count)
+            continue
 
         entry = standardize(item, analysis)
 
@@ -690,19 +839,26 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[
             logger.warning("校验失败 '%s': %s", entry.get("title", ""), error_msg)
             stats["failed"] += 1
             stats["errors"].append({"title": entry.get("title"), "error": error_msg})
+            _save_failure_marker(item, error_msg, retry_count)
             continue
 
         # ---- Step 4: 保存 ----
         saved_path = save_article(entry, dry_run=dry_run)
         if saved_path or dry_run:
             stats["saved"] += 1
+            if not dry_run:
+                _remove_failure_marker(url)
 
+    avg_retries = stats["total_retries"] / max(stats["analyzed"], 1)
     logger.info(
-        "流水线完成: collected=%d, analyzed=%d, saved=%d, failed=%d",
+        "流水线完成: collected=%d, analyzed=%d, saved=%d, failed=%d, skipped=%d, total_retries=%d, avg_retries=%.1f",
         stats["collected"],
         stats["analyzed"],
         stats["saved"],
         stats["failed"],
+        stats["skipped"],
+        stats["total_retries"],
+        avg_retries,
     )
     return stats
 
@@ -751,6 +907,17 @@ def main() -> int:
         action="store_true",
         help="启用详细日志 (DEBUG 级别)",
     )
+    parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="只重试之前失败的条目",
+    )
+    parser.add_argument(
+        "--force-url",
+        type=str,
+        default=None,
+        help="强制重试特定 URL",
+    )
 
     args = parser.parse_args()
 
@@ -772,7 +939,15 @@ def main() -> int:
     logger.info("=" * 50)
 
     try:
-        stats = run_pipeline(sources=sources, limit=args.limit, dry_run=args.dry_run)
+        stats = run_pipeline(
+            sources=sources,
+            limit=args.limit,
+            dry_run=args.dry_run,
+            retry_failed=args.retry_failed,
+            force_url=args.force_url,
+        )
+
+        avg_retries = stats["total_retries"] / max(stats["analyzed"], 1)
 
         logger.info("=" * 50)
         logger.info("流水线执行统计:")
@@ -780,6 +955,9 @@ def main() -> int:
         logger.info("  分析: %d 条", stats["analyzed"])
         logger.info("  保存: %d 条", stats["saved"])
         logger.info("  失败: %d 条", stats["failed"])
+        logger.info("  跳过: %d 条", stats["skipped"])
+        logger.info("  总重试: %d 次", stats["total_retries"])
+        logger.info("  平均重试: %.1f 次/条", avg_retries)
         if stats["errors"]:
             logger.info("  错误详情:")
             for err in stats["errors"]:

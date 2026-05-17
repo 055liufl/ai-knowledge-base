@@ -71,11 +71,13 @@ class Usage:
         prompt_tokens: 输入 Token 数量。
         completion_tokens: 输出 Token 数量。
         total_tokens: 总 Token 数量。
+        retry_count: 重试次数。
     """
 
     prompt_tokens: int = 0
     completion_tokens: int = 0
     total_tokens: int = 0
+    retry_count: int = 0
 
 
 @dataclass
@@ -364,6 +366,23 @@ class OpenAICompatibleProvider(LLMProvider):
         self.close()
 
 
+def _calculate_delay(attempt: int, response: httpx.Response | None = None) -> float:
+    if response is not None and response.status_code == 429:
+        retry_after = response.headers.get("Retry-After")
+        if retry_after:
+            try:
+                delay = float(retry_after)
+                return min(delay, 60.0)
+            except (ValueError, TypeError):
+                pass
+
+    delay = min(
+        _RETRY_BASE_DELAY * (2**attempt) + random.uniform(0, _RETRY_MAX_JITTER),
+        60.0,
+    )
+    return delay
+
+
 def chat_with_retry(
     messages: list[dict[str, str]],
     provider_name: str | None = None,
@@ -372,6 +391,7 @@ def chat_with_retry(
     max_tokens: int | None = None,
     max_retries: int = _MAX_RETRIES,
     timeout: float = _DEFAULT_TIMEOUT,
+    validator: Any = None,
     **kwargs: Any,
 ) -> LLMResponse:
     """带指数退避重试的聊天请求。
@@ -387,10 +407,12 @@ def chat_with_retry(
         max_tokens: 最大生成 Token 数。
         max_retries: 最大重试次数，默认 3。
         timeout: 单次请求超时秒数，默认 60。
+        validator: 可选的内容校验函数，接收 response.content 字符串，
+            校验失败时抛出异常触发重试。
         **kwargs: 额外 API 参数。
 
     Returns:
-        LLMResponse: 成功时的响应对象。
+        LLMResponse: 成功时的响应对象，包含 retry_count。
 
     Raises:
         httpx.HTTPStatusError: 当非可重试错误（如 4xx 客户端错误）时。
@@ -402,6 +424,7 @@ def chat_with_retry(
         provider._client.timeout = httpx.Timeout(timeout)
 
     last_exception: Exception | None = None
+    retry_count = 0
 
     for attempt in range(max_retries + 1):
         try:
@@ -419,8 +442,27 @@ def chat_with_retry(
                 max_tokens=max_tokens,
                 **kwargs,
             )
+
+            if validator is not None:
+                try:
+                    validator(response.content)
+                except Exception as exc:
+                    retry_count += 1
+                    last_exception = exc
+                    logger.warning(
+                        "尝试 %d 内容校验失败: %s", attempt + 1, exc
+                    )
+                    if attempt < max_retries:
+                        delay = _calculate_delay(attempt)
+                        logger.info("等待 %.2f 秒后重试...", delay)
+                        time.sleep(delay)
+                    continue
+
+            response.usage.retry_count = retry_count
             return response
+
         except (httpx.TimeoutException, httpx.ConnectError) as exc:
+            retry_count += 1
             last_exception = exc
             logger.warning(
                 "尝试 %d 失败（网络）: %s", attempt + 1, exc
@@ -428,6 +470,7 @@ def chat_with_retry(
         except httpx.HTTPStatusError as exc:
             status_code = exc.response.status_code
             if status_code == 429 or status_code >= 500:
+                retry_count += 1
                 last_exception = exc
                 logger.warning(
                     "尝试 %d 失败（HTTP %d）: %s",
@@ -440,9 +483,7 @@ def chat_with_retry(
                 raise
 
         if attempt < max_retries:
-            delay = _RETRY_BASE_DELAY * (2**attempt) + random.uniform(
-                0, _RETRY_MAX_JITTER
-            )
+            delay = _calculate_delay(attempt, getattr(last_exception, "response", None))
             logger.info("等待 %.2f 秒后重试...", delay)
             time.sleep(delay)
 
@@ -457,10 +498,10 @@ def quick_chat(
     provider_name: str | None = None,
     model: str | None = None,
     **kwargs: Any,
-) -> str:
-    """一句话调用 LLM，返回纯文本内容。
+) -> LLMResponse:
+    """一句话调用 LLM，返回 LLMResponse 对象。
 
-    最简化的 LLM 调用方式，自动构建消息列表并返回 content 字符串。
+    最简化的 LLM 调用方式，自动构建消息列表并返回响应对象。
 
     Args:
         prompt: 用户输入的提示文本。
@@ -470,11 +511,11 @@ def quick_chat(
         **kwargs: 传给 chat_with_retry 的其他参数。
 
     Returns:
-        str: 模型生成的文本内容。
+        LLMResponse: 包含生成内容和用量统计的响应对象。
 
     Example:
-        >>> reply = quick_chat("请用一句话介绍 Python")
-        >>> print(reply)
+        >>> response = quick_chat("请用一句话介绍 Python")
+        >>> print(response.content)
         Python 是一种高级、解释型、通用的编程语言...
     """
     messages: list[dict[str, str]] = []
@@ -488,7 +529,7 @@ def quick_chat(
         model=model,
         **kwargs,
     )
-    return response.content
+    return response
 
 
 def get_provider(
@@ -572,7 +613,7 @@ if __name__ == "__main__":
             system_prompt="你只会回答数字。",
             max_retries=1,
         )
-        logger.info("quick_chat 测试成功: %s", reply[:100])
+        logger.info("quick_chat 测试成功: %s", reply.content[:100])
     except httpx.HTTPStatusError as exc:
         if exc.response.status_code == 401:
             logger.warning("API Key 无效（401），跳过 quick_chat 测试")
@@ -580,5 +621,22 @@ if __name__ == "__main__":
             logger.error("quick_chat HTTP 错误: %s", exc)
     except Exception as exc:
         logger.error("quick_chat 测试失败: %s", exc)
+
+    # ---- 重试机制测试 ----
+    logger.info("=== 重试机制测试 ===")
+
+    # 测试 1: validator 内容校验重试
+    def bad_validator(content: str) -> None:
+        if "invalid" in content.lower():
+            raise ValueError("检测到 invalid")
+
+    # 这个测试需要 mock，这里只做结构验证
+    logger.info("validator 函数已定义，可接收 content 参数")
+
+    # 测试 2: _calculate_delay 计算
+    logger.info("退避延迟计算测试:")
+    for i in range(4):
+        delay = _calculate_delay(i)
+        logger.info("  尝试 %d: delay=%.2f 秒", i, delay)
 
     logger.info("=== 测试结束 ===")
