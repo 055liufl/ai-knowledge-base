@@ -1,0 +1,72 @@
+name: Daily Collect
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # UTC 08:00，北京时间 16:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-and-push:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Run pipeline
+        env:
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python pipeline/pipeline.py --sources github,rss --limit 20 --verbose
+      
+      - name: Validate JSON files
+        run: |
+          python hooks/validate_json.py knowledge/raw/*.json
+      
+      - name: Check quality
+        run: |
+          python hooks/check_quality.py knowledge/raw/*.json
+      
+      - name: Commit and push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 检查 knowledge/raw/ 目录是否有变更（新增、修改、删除）
+          CHANGED=$(git status --porcelain knowledge/raw/)
+          if [ -z "$CHANGED" ]; then
+            echo "没有新数据，跳过提交"
+            exit 0
+          fi
+          
+          # 统计变更数量
+          ADDED=$(echo "$CHANGED" | grep -c '^??' || true)
+          MODIFIED=$(echo "$CHANGED" | grep -c '^ M' || true)
+          TOTAL=$((ADDED + MODIFIED))
+          
+          # 获取当前日期
+          DATE=$(date +'%Y-%m-%d')
+          
+          # 添加变更
+          git add knowledge/raw/
+          
+          # 提交并推送
+          git commit -m "采集: 新增 ${TOTAL} 篇文章 (${DATE})"
+          git push
