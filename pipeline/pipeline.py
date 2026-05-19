@@ -511,12 +511,13 @@ def deduplicate(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return unique
 
 
-def standardize(item: dict[str, Any], analysis: dict[str, Any] | None) -> dict[str, Any]:
+def standardize(item: dict[str, Any], analysis: dict[str, Any] | None, seq_num: int = 0) -> dict[str, Any]:
     """将原始条目和分析结果合并为标准化的知识条目格式。
 
     Args:
         item: 原始采集条目。
         analysis: LLM 分析结果，可能为 None。
+        seq_num: 当天同源的递增序号，用于生成 ID。
 
     Returns:
         dict: 符合知识库 Schema 的标准化条目。
@@ -524,11 +525,10 @@ def standardize(item: dict[str, Any], analysis: dict[str, Any] | None) -> dict[s
     now = _now_iso()
     title = item.get("title", "未命名")
 
-    # 生成 ID: source_platform + date + uuid 前 8 位
+    # 生成 ID: {source}-{YYYYMMDD}-{NNN}
     date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
-    short_uuid = uuid.uuid4().hex[:8]
     source_platform = item.get("source", "unknown")
-    entry_id = f"{source_platform.replace('_', '-')}-{date_str}-{short_uuid}"
+    entry_id = f"{source_platform.replace('_', '-')}-{date_str}-{seq_num:03d}"
 
     # 构建 metrics
     metrics: dict[str, Any] = {}
@@ -552,7 +552,7 @@ def standardize(item: dict[str, Any], analysis: dict[str, Any] | None) -> dict[s
         "author": None,
         "published_at": item.get("collected_at", now),
         "collected_at": now,
-        "status": "pending",
+        "status": "draft",
         "priority": item.get("priority", "medium"),
         "language": item.get("language"),
         "retry_count": 0,
@@ -581,7 +581,7 @@ def validate(entry: dict[str, Any]) -> tuple[bool, str]:
     if len(entry.get("summary", "")) < 10:
         return False, "摘要过短（< 10 字符）"
 
-    valid_statuses = {"pending", "analyzing", "reviewed", "published", "archived"}
+    valid_statuses = {"draft", "review", "published", "archived"}
     if entry["status"] not in valid_statuses:
         return False, f"无效状态: {entry['status']}"
 
@@ -677,12 +677,15 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[
     unique_items = deduplicate(all_raw)
 
     # ---- Step 2: 分析 + Step 3: 整理 ----
+    source_counters: dict[str, int] = defaultdict(int)
     for item in unique_items:
         analysis = analyze_item(item)
         if analysis:
             stats["analyzed"] += 1
 
-        entry = standardize(item, analysis)
+        source = item.get("source", "unknown")
+        source_counters[source] += 1
+        entry = standardize(item, analysis, seq_num=source_counters[source])
 
         # 校验
         valid, error_msg = validate(entry)
