@@ -461,10 +461,12 @@ def analyze_item(item: dict[str, Any]) -> dict[str, Any] | None:
         except (ValueError, TypeError):
             analysis["score"] = 5
 
-        # 确保 tags 为列表
+        # 确保 tags 为列表且至少包含 1 个元素
         if not isinstance(analysis["tags"], list):
             analysis["tags"] = [str(analysis["tags"])]
         analysis["tags"] = [str(t) for t in analysis["tags"]][:5]
+        if not analysis["tags"]:
+            analysis["tags"] = ["general"]
 
         # 确保 key_insights 为列表
         if not isinstance(analysis["key_insights"], list):
