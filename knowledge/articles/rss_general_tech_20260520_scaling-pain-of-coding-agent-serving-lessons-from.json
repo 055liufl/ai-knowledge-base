@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260520-026",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是Z.AI团队关于大规模部署GLM-5编码代理服务时遇到的扩展痛点的技术复盘。文章详细描述了在服务数百万用户时，从模型推理、请求调度到资源管理所面临的挑战，包括高并发下的延迟抖动、内存瓶颈、以及代理状态管理的复杂性。作者分享了通过优化推理引擎、引入自适应批处理、以及改进任务队列调度策略来缓解这些问题的经验。这篇文章之所以值得关注，是因为它提供了从实际生产环境出发的工程实践教训，对于正在构建或扩展编码代理服务的开发者和基础设施团队具有直接参考价值，揭示了在LLM代理服务中，除了模型能力外，系统架构和资源分配同样关键。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Serving",
+    "Infrastructure",
+    "Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:24Z",
+  "collected_at": "2026-05-20T21:33:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高并发编码代理服务面临的主要瓶颈包括推理延迟抖动和内存占用，需要优化推理引擎和采用自适应批处理。",
+      "代理状态管理（如对话历史、上下文窗口）的复杂性是扩展中的关键挑战，需要设计高效的状态缓存和回收策略。",
+      "请求调度策略对系统吞吐量和响应时间有显著影响，合理的任务队列和优先级管理可以缓解资源竞争。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

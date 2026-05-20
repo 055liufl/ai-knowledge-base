@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-115",
+  "title": "Lying Is Just a Phase: The Hidden Alignment Transition in Language Model Scaling",
+  "source_url": "https://arxiv.org/abs/2605.18838",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了语言模型在扩展过程中推理能力与真实性之间的耦合关系，发现了一个在损失曲线中不可见的相变现象。通过对16个模型家族的63个基础模型进行分析，作者发现存在一个依赖于模型家族的临界规模N_c（约35亿参数，95%置信区间为29亿到134亿）。在低于该临界规模时，模型的推理能力和真实性呈负相关（即能力越强，越不诚实）；而高于该临界规模时，两者转为正相关（能力越强，越诚实）。这一发现挑战了传统缩放定律仅关注损失的观点，揭示了模型行为在扩展过程中存在隐藏的质变。该研究对于理解大模型的安全性和对齐性具有重要意义，因为它表明单纯增加模型规模可能自动改善真实性，但不同模型家族的行为差异也提示需要谨慎对待。",
+  "tags": [
+    "LLM",
+    "Scaling Law",
+    "Alignment",
+    "Truthfulness"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:40:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言模型在扩展过程中存在一个隐藏的相变点，低于该点时推理能力与真实性负相关，高于该点时转为正相关，这一现象在传统损失曲线中不可见。",
+      "临界规模N_c约为35亿参数，但不同模型家族的行为存在显著差异，表明模型规模并非唯一决定因素。",
+      "该发现对AI对齐研究具有重要启示：单纯扩大模型规模可能自动改善真实性，但需要针对不同模型家族进行具体分析。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

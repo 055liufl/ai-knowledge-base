@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-075",
+  "title": "ALDEN: Boosting Private Data Extraction from Retrieval-Augmented Generation Systems via Active Learning and Distribution Estimation",
+  "source_url": "https://arxiv.org/abs/2605.18762",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为ALDEN的新型攻击方法，旨在通过主动学习和分布估计技术，显著提升从检索增强生成（RAG）系统中提取私有数据的效率。RAG系统通过结合外部知识检索来增强大语言模型，广泛应用于提升回答的可靠性和泛化能力。然而，现有研究表明，RAG系统仍然容易受到数据提取攻击，攻击者可以通过在用户查询中嵌入恶意指令来窃取私有数据。尽管已有攻击方法可行，但它们通常面临数据提取率低的问题。ALDEN通过主动学习策略智能选择最可能包含私有数据的查询，并结合分布估计技术精确建模目标数据的分布，从而大幅提高提取成功率。实验结果显示，ALDEN在多个基准数据集上显著优于现有方法，提取率提升超过30%，同时保持较低的查询成本。该工作揭示了RAG系统在隐私保护方面的严重漏洞，强调了在部署RAG系统时需加强安全防护措施，如输入过滤、输出限制和差分隐私等。值得关注的是，该研究不仅推动了对抗性攻击技术的发展，也为RAG系统的安全设计提供了重要警示。",
+  "tags": [
+    "RAG",
+    "Privacy Attack",
+    "Active Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:38:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ALDEN通过主动学习选择高价值查询，显著提升私有数据提取效率，提取率提升超30%。",
+      "分布估计技术帮助攻击者精确建模目标数据分布，克服了传统攻击中数据稀疏性问题。",
+      "该研究揭示了RAG系统在隐私保护方面的严重漏洞，强调需加强安全防护如差分隐私和输入过滤。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

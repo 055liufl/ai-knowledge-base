@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-032",
+  "title": "Position: The Turing-Completeness of Real-World Autoregressive Transformers Relies Heavily on Context Management",
+  "source_url": "https://arxiv.org/abs/2605.19514",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对自回归Transformer的图灵完备性进行了严谨的重新审视，指出已有文献常混淆两种不同设定：固定Transformer系统设定（固定模型与固定上下文管理方法）和缩放族设定（模型族随上下文窗口或数值精度扩展）。作者证明，在固定Transformer系统设定下，自回归Transformer并非图灵完备，其计算能力严重依赖于上下文管理方法（如窗口截断、压缩或外部记忆）。而在缩放族设定下，通过无限扩展上下文窗口或数值精度，模型族可达到图灵完备性。该研究澄清了Transformer计算能力的理论边界，对理解LLM的实际推理能力、上下文长度扩展技术（如RoPE、FlashAttention）以及模型设计具有重要指导意义。值得关注的是，它揭示了当前大模型在长文本处理中依赖工程技巧而非本质计算能力的现实，为未来研究指明了方向。",
+  "tags": [
+    "Transformer",
+    "Turing-completeness",
+    "Context Management",
+    "Theoretical Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定Transformer系统（固定模型+固定上下文管理）并非图灵完备，其计算能力受限于上下文管理方法。",
+      "缩放族设定（无限上下文窗口或数值精度）下，Transformer模型族可达到图灵完备性。",
+      "该研究澄清了Transformer计算能力的理论边界，对理解LLM实际推理能力和上下文扩展技术有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-020",
+  "title": "Causal Evidence for Attention Head Imbalance in Modality Conflict Hallucination",
+  "source_url": "https://arxiv.org/abs/2605.19250",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多模态大语言模型（MLLMs）中的模态冲突幻觉问题进行了机制性研究。模态冲突幻觉是指模型在生成时优先采纳错误的文本前提，而忽略与之矛盾的视觉证据。作者通过路径修补（path patching）方法，对五个开源MLLMs进行了头级别的因果分析，识别出两类注意力头：一类驱动模型依赖错误文本，另一类则抵抗这种依赖。研究发现，注意力头的不平衡是导致视觉证据失效的关键内部机制。这项工作首次从因果角度揭示了注意力头在模态冲突幻觉中的具体作用，为理解和缓解多模态幻觉提供了新的理论视角和可操作的干预目标。其创新性在于将因果分析精细到注意力头级别，并跨模型验证了结论的普适性。对于多模态AI的安全性和可靠性提升具有重要参考价值，尤其适合关注模型可解释性和幻觉问题的研究人员。",
+  "tags": [
+    "MLLM",
+    "Hallucination",
+    "Causal Analysis",
+    "Attention Mechanism",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过头级别因果分析，发现模态冲突幻觉源于注意力头的不平衡，即部分头过度依赖错误文本而忽略视觉证据。",
+      "路径修补方法可有效识别驱动和抵抗幻觉的注意力头，为后续干预提供了精确的靶点。",
+      "跨五个开源MLLMs的验证表明，该机制具有普遍性，而非特定模型的偶然现象。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-080",
+  "title": "DualView: Adaptive Local-Global Fusion for Multi-Hop Document Reranking",
+  "source_url": "https://arxiv.org/abs/2605.18767",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DualView的双视角级联重排序框架，用于多跳文档重排序。多跳问答需要从多个文档中聚合信息，这是知识密集型应用的关键能力。其核心挑战在于从检索到的候选文档中高效识别最小相关文档集，同时保持高召回率。DualView框架作为E5等检索模型后的轻量级后检索阶段运行，通过自适应地融合局部视角（单个文档内的细粒度相关性）和全局视角（文档间的跨文档依赖关系）来提升重排序效果。该工作针对多跳场景中传统重排序方法难以捕捉文档间复杂交互的问题，提出了一种创新的级联架构，先进行粗粒度筛选再进行细粒度融合，在保证效率的同时显著提高了多跳文档重排序的准确性。该研究对于提升检索增强生成（RAG）系统在多跳推理任务中的性能具有重要价值。",
+  "tags": [
+    "RAG",
+    "Multi-hop QA",
+    "Document Reranking",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:38:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出双视角级联重排序框架，通过局部-全局自适应融合解决多跳文档重排序中的跨文档依赖问题。",
+      "作为轻量级后检索阶段，可高效集成于现有检索系统（如E5），提升多跳问答的召回率与准确性。",
+      "级联架构先粗筛后细排，在计算效率与重排序质量之间取得良好平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

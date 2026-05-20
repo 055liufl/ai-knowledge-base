@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-030",
+  "title": "Beyond Mode Collapse: Distribution Matching for Diverse Reasoning",
+  "source_url": "https://arxiv.org/abs/2605.19461",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的强化学习方法，旨在解决GRPO等在线策略强化学习方法中的模式崩溃问题。模式崩溃表现为模型在发现一个高奖励解决方案后，会集中概率质量于该方案，停止探索其他策略，导致解决方案多样性降低。作者指出，这源于反向KL散度的模式寻求行为，即强化学习过程倾向于强化第一个找到的高奖励轨迹，而非维持多个不同解决方案的分布。为此，论文提出了分布匹配方法，通过调整优化目标来鼓励模型保持对多种推理策略的探索，从而提升生成结果的多样性。该方法在数学推理等任务上具有潜在应用价值，能够在不牺牲性能的前提下增加解决方案的丰富性。这项工作对强化学习中的探索-利用平衡问题提供了新的理论视角和实用方案。",
+  "tags": [
+    "RL",
+    "Mode Collapse",
+    "Distribution Matching"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略强化学习方法（如GRPO）因反向KL散度的模式寻求行为，容易陷入模式崩溃，即只探索单一高奖励解决方案。",
+      "提出的分布匹配方法通过调整优化目标，鼓励模型维持对多种推理策略的探索，从而提升解决方案的多样性。",
+      "该方法在数学推理等需要多样化解决方案的任务中具有重要应用价值，能够在不牺牲性能的前提下增加生成结果的丰富性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

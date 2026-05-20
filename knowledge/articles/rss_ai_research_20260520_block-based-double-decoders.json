@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-102",
+  "title": "Block-Based Double Decoders",
+  "source_url": "https://arxiv.org/abs/2605.18807",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“基于块的双解码器”（Block-Based Double Decoders）的新型Transformer架构。传统的编码器-解码器模型虽然在推理时比仅解码器模型更高效，但其预训练目标存在监督稀疏和序列长度动态变化的问题，导致难以大规模应用。本文通过引入双重因果块注意力掩码（doubly-causal block-based attention masks），实现了全损失监督和静态序列打包，从而结合了仅解码器模型的高效训练优势。这一架构在保持编码器-解码器推理效率的同时，解决了其预训练中的关键瓶颈，为大规模语言模型的训练和部署提供了新的可能性。该工作值得关注，因为它可能推动编码器-解码器模型在实际应用中的普及，尤其是在需要高效推理的场景下，如机器翻译、文本摘要等。",
+  "tags": [
+    "Transformer",
+    "Encoder-Decoder",
+    "Attention Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出双重因果块注意力掩码，实现全损失监督和静态序列打包，解决了编码器-解码器模型预训练中的稀疏监督和动态长度问题。",
+      "新架构在保持推理效率的同时，结合了仅解码器模型的训练优势，有望提升大规模语言模型的训练效果。",
+      "该工作为编码器-解码器模型在实际应用中的规模化部署提供了新思路，尤其在需要高效推理的任务中具有潜力。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

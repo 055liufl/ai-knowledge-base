@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-028",
+  "title": "What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents",
+  "source_url": "https://arxiv.org/abs/2605.19447",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为“选择性后见之明蒸馏”（Selective Hindsight Distillation, SHD）的方法，旨在解决多轮对话智能体（Multi-Turn Agents）在强化学习中的长期信用分配问题。在传统的强化学习框架中，智能体从稀疏的任务奖励中学习，但面对长序列动作时，单一的成败信号难以有效分配到每个步骤。现有方法多依赖轨迹级奖励或代理信号，未能充分利用每步的环境反馈。SHD 方法通过引入后见之明机制，智能地选择哪些步骤应该被蒸馏（即从成功或失败的轨迹中提取有用信息），从而更高效地分配信用。该方法特别关注多轮智能体场景，其中反馈可能包括错误信息、页面变化、观察结果等。论文通过实验验证了 SHD 在多个多轮任务上的有效性，显著提升了学习效率和最终性能。这项工作值得关注，因为它针对 LLM 智能体在复杂交互环境中的核心瓶颈提出了创新解决方案，具有重要的实际应用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SHD 方法通过选择性后见之明蒸馏，解决了多轮智能体中的长期信用分配难题。",
+      "该方法充分利用了每步环境反馈（如错误信息、页面变化），优于仅依赖轨迹级奖励的传统方法。",
+      "实验表明 SHD 在多个多轮任务上显著提升了学习效率和最终性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

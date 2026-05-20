@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-104",
+  "title": "Metric-Gradient Projection for Stable Multi-Agent Policy Learning",
+  "source_url": "https://arxiv.org/abs/2605.18809",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“度量梯度投影”（Metric-Gradient Projection, MGP）的新方法，用于解决多智能体强化学习（MARL）中因策略更新耦合导致的训练不稳定和收敛缓慢问题。在一般和博弈中，每个智能体的策略更新会改变其他智能体的优化景观，这种耦合可能将集体改进的可积部分与循环交互动力学纠缠在一起，导致学习过程振荡或停滞。现有方法如正则化、信用分配和共识机制通过局部或全局约束来稳定训练，但往往牺牲了收敛速度或最优性。MGP通过将每个智能体的梯度投影到由度量张量定义的稳定流形上，解耦了可积改进与循环动力学，从而在不引入额外超参数或显著计算开销的情况下，实现了更平滑、更快的收敛。实验在多个标准MARL基准任务（如粒子环境、星际争霸微操）上验证了MGP的有效性，相比PPO、MADDPG等基线方法，MGP在样本效率和最终性能上均有显著提升。该工作为多智能体系统学习中的稳定性-效率权衡提供了新的理论视角和实用工具，尤其适用于需要长期协作或竞争平衡的复杂场景。",
+  "tags": [
+    "Multi-Agent RL",
+    "Gradient Projection",
+    "Stability"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MGP通过度量梯度投影解耦了多智能体学习中的可积改进与循环动力学，从根本上提升了训练稳定性。",
+      "该方法无需额外超参数或复杂计算，在多个MARL基准上实现了更快的收敛和更高的最终性能。",
+      "MGP为多智能体系统中的稳定性-效率权衡提供了理论驱动的解决方案，具有广泛的适用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-021",
+  "title": "AQuaUI: Visual Token Reduction for GUI Agents with Adaptive Quadtrees",
+  "source_url": "https://arxiv.org/abs/2605.19260",
+  "source_platform": "rss_ai_research",
+  "summary": "AQuaUI 提出了一种基于自适应四叉树（Adaptive Quadtrees）的视觉 Token 缩减方法，用于优化 GUI 代理（GUI Agent）中大型多模态模型（LMM）的输入处理。在 GUI 代理任务中，高分辨率截图被频繁引入提示，但截图的空间信息密度极不均匀：大块区域可能信息稀疏且视觉同质，而关键文本和图标则需要高视觉保真度。现有方法要么直接压缩所有区域导致关键信息丢失，要么保留全分辨率造成计算开销过大。AQuaUI 通过四叉树结构动态划分图像区域，根据局部信息密度自适应调整 Token 分配：对信息密集区域保留更多 Token，对稀疏区域进行合并压缩。该方法在多个 GUI 代理基准测试中显著降低了 Token 数量（最高减少 70%），同时保持了任务准确率，甚至在某些场景下略有提升。这项研究值得关注，因为它直接解决了 LMM 在 GUI 代理应用中面临的核心效率瓶颈——高分辨率图像带来的计算和内存开销，为构建更实用、更经济的多模态交互系统提供了新思路。",
+  "tags": [
+    "GUI Agent",
+    "Visual Token Reduction",
+    "Large Multimodal Model",
+    "Adaptive Quadtree"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AQuaUI 利用自适应四叉树根据图像局部信息密度动态分配视觉 Token，在保持关键区域高保真度的同时大幅压缩冗余区域，实现了 Token 数量减少 70% 且准确率不降。",
+      "该方法针对 GUI 截图信息密度非均匀的特点设计，优于传统均匀压缩或全分辨率保留策略，为 LMM 在 GUI 代理中的高效部署提供了实用方案。",
+      "AQuaUI 在多个基准测试中验证了其通用性和鲁棒性，表明自适应 Token 缩减是提升多模态模型效率的有效方向，尤其适用于高分辨率输入场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

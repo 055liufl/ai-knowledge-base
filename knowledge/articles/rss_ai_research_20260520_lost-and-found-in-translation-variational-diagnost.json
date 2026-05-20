@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-120",
+  "title": "Lost and Found in Translation: Variational Diagnostics for Neural Codebook Channels",
+  "source_url": "https://arxiv.org/abs/2605.18846",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的诊断框架，用于分析变分自编码器（VAE）中编码器与解码器之间的潜在空间通信问题。传统通信系统在发射器和接收器使用不兼容的操作码本时会失效，而VAE通过联合训练编码器q_φ和解码器p_θ，其潜在空间常被用作离散码本，应用于聚类、条件生成和机制可解释性。然而，标准的VAE诊断指标（如ELBO、活跃单元数、互信息）无法有效检测码本不匹配问题。论文借鉴通信理论中的变分诊断方法，引入了一种新的度量标准，能够识别编码器和解码器之间的码本失配，从而提升VAE训练的稳定性和下游任务性能。该工作为理解VAE的潜在空间结构提供了新视角，尤其对需要可靠离散表示的领域（如生成模型、可解释性分析）具有重要价值。",
+  "tags": [
+    "VAE",
+    "discrete representation",
+    "codebook mismatch",
+    "variational diagnostics"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:40:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准VAE诊断指标（ELBO、活跃单元数、互信息）无法检测编码器与解码器之间的码本不匹配问题。",
+      "借鉴通信理论，提出变分诊断方法可有效识别潜在空间中的码本失配，提升VAE训练稳定性。",
+      "该框架为聚类、条件生成和机制可解释性等依赖离散码本的应用提供了更可靠的诊断工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

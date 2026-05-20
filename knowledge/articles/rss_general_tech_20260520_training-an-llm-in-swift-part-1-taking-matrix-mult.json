@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260520-018",
+  "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+  "source_url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是系列教程的第一部分，专注于在 Swift 语言中实现高效的矩阵乘法，以支持训练大型语言模型（LLM）。作者从基础的 Gflop/s 性能出发，通过逐步优化（如利用 Swift 的 SIMD 指令、内存布局优化、循环展开和并行化等技术），最终将矩阵乘法性能提升至 Tflop/s 级别。文章详细解释了优化背后的原理，包括缓存利用、向量化计算和 Swift 编译器的特性，展示了如何在不依赖底层 C/C++ 库的情况下，使用纯 Swift 实现接近硬件极限的计算性能。这对于希望在 Swift 生态中构建高性能机器学习应用的开发者具有重要参考价值，尤其适合对 Swift 性能优化和 LLM 训练感兴趣的开发者。",
+  "tags": [
+    "Swift",
+    "Matrix Multiplication",
+    "Performance Optimization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:24Z",
+  "collected_at": "2026-05-20T21:33:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 SIMD 和内存布局优化，纯 Swift 可实现矩阵乘法从 Gflop/s 到 Tflop/s 的性能飞跃。",
+      "Swift 编译器在循环展开和向量化方面表现优异，可替代传统 C/C++ 优化方法。",
+      "缓存友好型算法设计是提升矩阵乘法性能的关键，本文展示了具体实现策略。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

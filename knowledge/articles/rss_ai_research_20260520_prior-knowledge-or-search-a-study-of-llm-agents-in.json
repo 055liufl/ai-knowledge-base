@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-055",
+  "title": "Prior Knowledge or Search? A Study of LLM Agents in Hardware-Aware Code Optimization",
+  "source_url": "https://arxiv.org/abs/2605.19782",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了LLM代理在硬件感知代码优化中的表现，重点分析了先验知识（Prior Knowledge）与搜索（Search）机制的作用。通过设计一个通用的“提出-评估-修订”循环框架，作者系统评估了不同代理组件（如记忆、反馈处理、搜索策略）对优化效果的影响。研究发现，先验知识在初始阶段提供有效起点，但过度依赖可能导致局部最优；而搜索机制在探索新优化路径时更有效，但计算成本较高。实验在多个硬件架构（如GPU、TPU）上验证，揭示了代理失败的关键模式（如反馈误解、搜索空间爆炸）。该工作为设计更鲁棒的LLM优化系统提供了理论指导，尤其适用于编译器优化、芯片设计等硬件敏感领域。值得关注的是，其方法论可推广至其他科学发现场景，如药物分子优化或材料设计。",
+  "tags": [
+    "LLM Agent",
+    "Code Optimization",
+    "Hardware-Aware",
+    "Search Strategy"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:36:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "先验知识在初始优化中高效，但易导致局部最优；搜索机制能突破瓶颈但计算代价高。",
+      "代理失败的主因包括反馈信号误解和搜索空间指数级增长，需设计自适应策略。",
+      "不同硬件架构（GPU vs TPU）对代理策略的敏感度差异显著，需定制化优化循环。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

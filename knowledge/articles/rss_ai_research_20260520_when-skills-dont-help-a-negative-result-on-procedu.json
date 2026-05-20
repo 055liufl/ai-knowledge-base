@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260520-063",
+  "title": "When Skills Don't Help: A Negative Result on Procedural Knowledge for Tool-Grounded Agents in Offensive Cybersecurity",
+  "source_url": "https://arxiv.org/abs/2605.20023",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM代理技能（Agent Skills）在进攻性网络安全领域的实际效用进行了实证研究。技能通常被定义为在推理时加载到LLM代理中的结构化程序知识包，先前研究声称其能平均提升16.2个百分点的任务通过率。然而，作者发现这一结论存在显著偏差：在84个测试任务中，有16个任务在引入技能后反而出现了性能下降（负delta）。论文通过系统实验揭示了技能并非总是有效，尤其在进攻性网络安全这类高度动态、依赖上下文推理的领域，技能可能引入冗余或误导性信息。研究还指出，现有基准测试未能区分技能何时真正提供增量价值，何时只是重复了模型已有的知识或能力。这一负结果挑战了当前对技能机制的理解，并为未来设计更鲁棒的代理系统提供了关键警示：技能加载需要更精细的上下文感知和动态适配策略，而非简单堆砌。该工作对于AI安全、代理系统设计以及LLM在复杂任务中的应用具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Cybersecurity",
+    "Procedural Knowledge",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:37:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "技能（Skills）在进攻性网络安全任务中并非普遍有效，16/84的任务出现性能下降，表明技能存在冗余或干扰效应。",
+      "现有基准测试未能区分技能何时提供增量价值，导致平均提升16.2%的结论掩盖了任务间的巨大方差。",
+      "技能的有效性高度依赖任务上下文和模型已有知识，简单加载结构化知识包可能适得其反。",
+      "该负结果呼吁未来代理系统设计应引入动态技能选择与上下文感知机制，而非静态加载。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

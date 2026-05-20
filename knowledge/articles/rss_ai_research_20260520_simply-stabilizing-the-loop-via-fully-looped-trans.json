@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-095",
+  "title": "Simply Stabilizing the Loop via Fully Looped Transformer",
+  "source_url": "https://arxiv.org/abs/2605.18797",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Fully Looped Transformer”的方法，通过完全循环利用相同的Transformer块来替代传统的模型扩展策略。与增加模型参数或上下文长度不同，该方法通过迭代重用固定数量的Transformer块，在保持参数数量不变的情况下提升模型性能。这种设计允许在推理时灵活调整循环次数，从而在性能与测试时计算量之间实现动态平衡。论文主要解决了循环Transformer训练中的稳定性问题，提出了新的归一化和初始化策略，使得深度循环训练变得可行。这一工作对于在计算资源有限的情况下提升模型能力具有重要价值，尤其适用于需要灵活控制推理计算成本的场景。通过循环机制，模型可以在不增加参数的前提下，通过增加计算步骤来获得更好的表现，类似于深度思考的过程。该研究为Transformer架构的扩展提供了新的思路，可能对高效模型设计和部署产生积极影响。",
+  "tags": [
+    "Transformer",
+    "Looped Transformer",
+    "模型效率",
+    "推理计算"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过完全循环利用Transformer块，可以在不增加参数数量的情况下提升模型性能，为模型扩展提供了新范式。",
+      "推理时动态调整循环次数，实现了性能与测试时计算量的灵活平衡，有利于资源受限场景。",
+      "提出了针对循环Transformer训练稳定性的优化策略，使得深度循环训练成为可能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

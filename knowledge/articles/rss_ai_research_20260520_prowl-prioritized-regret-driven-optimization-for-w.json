@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-099",
+  "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning",
+  "source_url": "https://arxiv.org/abs/2605.18803",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PROWL（Prioritized Regret-Driven Optimization for World Model Learning）的新方法，旨在解决现代动作条件视频世界模型在罕见但关键交互转换上的不可靠性问题。传统世界模型通常依赖被动演示数据，这些数据会系统性低估高影响区域（如罕见但关键的交互），导致模型在规划和控制任务中表现不佳。PROWL通过主动引发模型失败而非等待其自然发生，采用KL散度约束的对抗性重加权策略，优先关注那些对下游规划性能影响最大的状态-动作对。该方法利用遗憾（regret）度量来识别和优先学习这些高影响转换，从而提升世界模型在长尾分布下的鲁棒性。实验表明，PROWL在多个基准任务上显著提高了模型对罕见事件的预测准确性和下游策略性能。该工作值得关注，因为它将主动学习与遗憾最小化结合，为世界模型训练提供了一种新范式，有望推动机器人、自动驾驶等需要处理罕见但关键场景的领域发展。",
+  "tags": [
+    "World Model",
+    "Active Learning",
+    "Reinforcement Learning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PROWL通过主动对抗性重加权，优先学习罕见但高影响的交互转换，解决了被动数据采样偏差问题。",
+      "引入KL散度约束确保优化过程不偏离原始数据分布，平衡探索与利用。",
+      "遗憾度量作为优先级信号，直接关联下游规划性能，使世界模型训练更具目标导向性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

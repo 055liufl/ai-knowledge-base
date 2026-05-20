@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-122",
+  "title": "Exact Linear Attention",
+  "source_url": "https://arxiv.org/abs/2605.18848",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Exact Linear Attention (ELA) 的新型注意力机制，旨在解决 Transformer 中传统注意力机制计算复杂度为二次方的问题，同时避免现有线性注意力方法中的近似误差。ELA 通过利用核函数的精确分解性质，实现了线性计算复杂度，且不引入任何近似误差。该方法还识别并解决了先前线性注意力方法中存在的梯度爆炸和 token 注意力稀释问题，通过施加核约束确保非负性、可区分性和几何可解释性。这项工作在保持 Transformer 强大性能的同时，显著降低了计算成本，对于长序列处理和大规模模型训练具有重要价值。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "Linear Complexity",
+    "Kernel Methods"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:40:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ELA 通过核函数的精确分解实现线性复杂度，避免了近似误差，这是与以往线性注意力方法的关键区别。",
+      "该方法通过核约束解决了梯度爆炸和 token 注意力稀释问题，提升了训练的稳定性和模型性能。",
+      "ELA 保持了注意力的非负性、可区分性和几何可解释性，使其在理论上更接近标准注意力机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

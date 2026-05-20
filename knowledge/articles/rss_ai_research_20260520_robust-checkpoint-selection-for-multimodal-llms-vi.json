@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-125",
+  "title": "Robust Checkpoint Selection for Multimodal LLMs via Agentic Evaluation and Stability-Aware Ranking",
+  "source_url": "https://arxiv.org/abs/2605.18852",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多模态大语言模型（MLLM）的鲁棒检查点选择方法，通过智能体评估和稳定性感知排序来解决现有方法在性能差异微小、评估信号易受噪声干扰时的局限性。传统方法依赖静态基准或逐点评分，在OCR密集型场景中常与真实使用场景脱节且缺乏不确定性估计。作者将检查点选择问题形式化为鲁棒排序问题，引入智能体评估框架，利用多轮交互和稳定性指标（如评分方差、跨任务一致性）来提升选择可靠性。该方法在多个MLLM基准上验证了有效性，尤其在高噪声和边际性能差异场景下表现优异。这项工作为MLLM的模型部署和持续学习提供了实用工具，值得关注因为它直接解决了实际应用中模型版本选择的痛点，并融合了智能体评估与统计鲁棒性思想。",
+  "tags": [
+    "MLLM",
+    "Checkpoint Selection",
+    "Agentic Evaluation",
+    "Robust Ranking",
+    "OCR"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:40:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将检查点选择形式化为鲁棒排序问题，引入稳定性感知指标（如评分方差、跨任务一致性）来量化不确定性。",
+      "提出智能体评估框架，通过多轮交互和动态反馈替代静态基准，提升与真实使用场景的对齐度。",
+      "在OCR密集型场景中，该方法显著优于传统逐点评分和静态基准方法，尤其在性能差异微小和噪声环境下。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-038",
+  "title": "Towards Multi-Model LLM Schedulers: Empirical Insights into Offloading and Preemption",
+  "source_url": "https://arxiv.org/abs/2605.19593",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在多模型、异构硬件环境下的大语言模型（LLM）调度问题，重点研究了CPU-GPU部分卸载和抢占机制。现有系统主要针对单一模型优化吞吐量，而实际部署中常需同时服务多个架构、大小和专业化程度不同的模型，这带来了资源分配、调度和分发的挑战。论文通过实证研究，分析了在不同硬件配置下，卸载和抢占策略对系统性能（如延迟、吞吐量、公平性）的影响。研究揭示了在多模型场景中，简单的调度策略可能导致资源利用率低下和模型间干扰，而智能的卸载和抢占调度可以显著提升整体效率。该工作为设计面向多模型LLM的调度器提供了关键见解，对构建高效、可扩展的LLM服务基础设施具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Scheduling",
+    "Offloading",
+    "Preemption"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模型LLM部署中，异构硬件和模型多样性使得传统单一模型调度策略失效，需要新的资源分配和调度方法。",
+      "CPU-GPU部分卸载和抢占是缓解GPU内存压力的关键机制，但其调度策略对系统性能有显著影响。",
+      "实证结果表明，智能的卸载和抢占调度可以平衡延迟、吞吐量和公平性，优于简单策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

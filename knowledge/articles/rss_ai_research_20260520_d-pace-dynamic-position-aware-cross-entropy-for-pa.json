@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-105",
+  "title": "D-PACE: Dynamic Position-Aware Cross-Entropy for Parallel Speculative Drafting",
+  "source_url": "https://arxiv.org/abs/2605.18810",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为D-PACE（Dynamic Position-Aware Cross-Entropy）的新型训练目标，用于并行推测解码中的草稿模型。在大型语言模型（LLM）推理加速领域，推测解码通过小型草稿模型生成候选令牌，再由大型目标模型并行验证，从而提升效率。现有并行草稿模型（如DFlash）虽能一次性预测整个令牌块，但其训练目标通常采用固定的位置相关权重（如头部依赖权重或块位置权重），这限制了草稿模型对不同位置令牌的适应性和生成质量。D-PACE通过动态调整交叉熵损失中每个令牌位置的权重，使草稿模型能更灵活地学习不同位置的重要性，从而在保持推理速度的同时提高生成令牌的接受率。实验表明，D-PACE在多个基准测试上显著提升了推测解码的加速比和生成质量，尤其是在长序列生成任务中表现突出。该工作值得关注，因为它解决了并行推测解码中一个关键但未被充分探索的问题——训练目标的动态位置感知，为LLM推理加速提供了更高效的方案，具有重要的实际应用价值。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Inference Acceleration",
+    "Training Objective"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "D-PACE通过动态位置感知交叉熵损失替代固定权重，提升了并行草稿模型对不同令牌位置的适应性。",
+      "该方法在多个基准测试上显著提高了推测解码的加速比和生成质量，尤其在长序列任务中效果突出。",
+      "D-PACE为LLM推理加速提供了一种新的训练范式，平衡了草稿模型的深度与生成令牌的接受率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

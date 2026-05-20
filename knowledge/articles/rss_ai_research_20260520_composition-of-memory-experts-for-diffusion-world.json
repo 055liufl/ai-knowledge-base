@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-106",
+  "title": "Composition of Memory Experts for Diffusion World Models",
+  "source_url": "https://arxiv.org/abs/2605.18813",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“记忆专家组合”的新型扩散世界模型架构，旨在解决强化学习中世界模型面临的记忆权衡问题。现有架构中，Transformer虽能保留局部细节，但受限于二次注意力机制的计算瓶颈；而循环神经网络和状态空间模型虽扩展性更优，却因压缩历史信息而损失保真度。该研究通过组合多个记忆专家模块，每个专家专注于不同时间尺度或特征维度的记忆，并利用扩散模型生成与过去观测一致的未来预测。这种方法在保持计算效率的同时，显著提升了长期依赖的建模能力和预测保真度。实验表明，该模型在多个强化学习基准任务中优于现有方法，尤其在需要长期记忆的场景下表现突出。该工作为世界模型的设计提供了新思路，有望推动规划与决策系统的发展。",
+  "tags": [
+    "World Model",
+    "Diffusion Model",
+    "Memory",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:39:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过组合多个记忆专家模块，分别处理不同时间尺度的信息，有效缓解了Transformer与RNN/SSM之间的记忆权衡问题。",
+      "扩散模型作为生成框架，能够生成与过去观测高度一致的未来预测，提升了世界模型的保真度。",
+      "该方法在长期依赖任务中表现突出，为强化学习中的规划与决策提供了更可靠的预测基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

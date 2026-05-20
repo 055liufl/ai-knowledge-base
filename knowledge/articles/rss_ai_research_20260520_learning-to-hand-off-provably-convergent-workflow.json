@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-012",
+  "title": "Learning to Hand Off: Provably Convergent Workflow Learning under Interface Constraints",
+  "source_url": "https://arxiv.org/abs/2605.19140",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种在接口约束下的工作流学习问题，其中多个专业代理通过共享工件进行控制交接，每个代理仅能观察到该工件的局部函数及其自身私有状态，且没有中心化学习器能够访问联合轨迹。这种设置对应于跨组织、供应商或信任边界的多代理大语言模型（LLM）管线的实际运行模式。作者将这一场景形式化为接口约束的半马尔可夫决策过程（IC-SMDP），并提出了一个可证明收敛的工作流学习算法。该算法能够在代理间信息受限、无全局观测的条件下，通过局部交互和共享工件逐步优化工作流策略。理论分析证明了算法的收敛性，实验验证了其在多代理LLM管线中的有效性。这项工作为分布式、隐私敏感的多代理系统提供了理论基础，具有重要的实际意义，尤其是在当前LLM应用日益复杂和去中心化的趋势下。",
+  "tags": [
+    "Workflow Learning",
+    "Multi-Agent Systems",
+    "LLM",
+    "Convergence"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:34:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了接口约束半马尔可夫决策过程（IC-SMDP）形式化框架，用于建模多代理LLM管线中的工作流学习问题。",
+      "设计了一种可证明收敛的工作流学习算法，能够在代理间信息受限、无全局轨迹访问的条件下优化策略。",
+      "理论分析证明了算法的收敛性，实验验证了其在多代理LLM管线中的有效性，为分布式、隐私敏感的系统提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

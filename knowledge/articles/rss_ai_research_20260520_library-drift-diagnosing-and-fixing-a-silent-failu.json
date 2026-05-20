@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-036",
+  "title": "Library Drift: Diagnosing and Fixing a Silent Failure Mode in Self-Evolving LLM Skill Libraries",
+  "source_url": "https://arxiv.org/abs/2605.19576",
+  "source_platform": "rss_ai_research",
+  "summary": "本文识别并分析了自进化技能库（self-evolving skill libraries）中的一种隐性故障模式——'库漂移'（library drift）。该现象表现为技能库无限制地积累技能，缺乏以结果为导向的生命周期管理，导致检索性能下降、假阳性注入以及性能停滞。通过SkillsBench基准测试，实验证实了症状：由大语言模型（LLM）生成的技能带来0.0个百分点的性能提升，而人工筛选的技能则带来16.2个百分点的提升。然而，其底层机制尚未被完全隔离。本文提供了对库漂移的正式定义、诊断方法以及修复策略，旨在提升自进化系统的鲁棒性和效率。该研究对于构建可持续的LLM技能库具有重要价值，尤其适用于需要长期维护和持续改进的AI系统。",
+  "tags": [
+    "LLM",
+    "Skill Library",
+    "Self-Evolving Systems",
+    "Failure Mode",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:35:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "库漂移是自进化技能库中一种未被充分认识的故障模式，表现为技能无限制积累导致检索和性能下降。",
+      "实验表明LLM自动生成的技能性能增益为零，而人工筛选的技能增益显著，凸显了生命周期管理的重要性。",
+      "本文提供了诊断和修复库漂移的方法，为构建更可靠的自进化AI系统奠定了基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

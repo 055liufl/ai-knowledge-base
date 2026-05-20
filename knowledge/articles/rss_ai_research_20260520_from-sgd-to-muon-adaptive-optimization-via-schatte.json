@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-054",
+  "title": "From SGD to Muon: Adaptive Optimization via Schatten-p Norms",
+  "source_url": "https://arxiv.org/abs/2605.19781",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于 Schatten-p 范数的自适应优化方法，将现代优化器（如 Muon）中的矩阵级几何约束统一在线性最小化预言（LMO）理论框架下。当前方法通常通过设计或经验选择固定的 LMO 几何结构，但未必能适应问题的实际几何特性。作者引入了一种高效的数据驱动准则，用于动态选择代理优化器，从而在训练过程中自适应地调整更新规则。该方法通过 Schatten-p 范数家族（包括核范数、Frobenius 范数和谱范数等）来参数化几何约束，并利用梯度统计信息实时决定最优的 p 值。实验表明，该方法在多个深度学习任务（如语言模型和图像分类）中显著提升了收敛速度和最终性能，超越了传统的固定几何优化器（如 Adam 和 Muon）。这项工作将优化理论（LMO 和 Schatten 范数）与实用算法相结合，为自适应优化提供了新的视角，尤其适用于需要矩阵级更新的场景（如 Transformer 训练）。其创新性在于将几何选择从人工调参转变为数据驱动，具有较高的实用价值和理论深度。",
+  "tags": [
+    "Optimization",
+    "Adaptive Methods",
+    "Schatten-p Norm",
+    "LMO",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:36:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Muon 等矩阵级优化器统一在 LMO 理论框架下，揭示了其几何约束的本质。",
+      "提出基于 Schatten-p 范数的数据驱动准则，动态选择最优几何结构，替代固定设计。",
+      "实验证明自适应几何选择在多个任务上优于 Adam 和 Muon，提升了收敛速度和性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

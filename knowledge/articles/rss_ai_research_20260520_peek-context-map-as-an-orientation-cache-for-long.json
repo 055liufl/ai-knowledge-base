@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-059",
+  "title": "PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.19932",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PEEK的新型上下文管理方法，旨在解决长上下文LLM代理在重复处理相同外部上下文（如文档库、代码仓库）时的效率问题。现有方法主要保存代理的轨迹、原始材料的被动访问或任务级策略，但忽略了最关键的复用性定向知识，即上下文包含什么、如何组织等。PEEK通过构建上下文地图作为定向缓存，使代理能够快速定位和利用之前积累的上下文理解，从而减少重复探索和计算开销。该方法特别适用于需要多次与同一上下文交互的场景，如代码库维护、文档分析等。论文通过实验验证了PEEK在降低延迟、提升任务完成质量方面的有效性，为长上下文LLM代理的实用化提供了新思路。该工作值得关注，因为它直接针对LLM代理在真实应用中频繁遇到的上下文复用问题，提出了轻量级且高效的解决方案，有望推动代理系统在复杂、长期任务中的部署。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Long-Context",
+    "Context Management",
+    "Cache"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:31:25Z",
+  "collected_at": "2026-05-20T21:37:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PEEK通过构建上下文地图作为定向缓存，保存可复用的定向知识，而非仅保存轨迹或原始材料。",
+      "该方法针对重复相同上下文的工作负载，显著减少代理的重复探索和计算开销。",
+      "实验表明PEEK在降低延迟和提升任务完成质量方面有效，适用于代码库、文档等场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
