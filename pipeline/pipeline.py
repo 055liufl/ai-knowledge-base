@@ -637,12 +637,39 @@ def save_article(entry: dict[str, Any], dry_run: bool = False) -> Path | None:
 # ---------------------------------------------------------------------------
 
 
-def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[str, Any]:
-    """执行完整的四步流水线。
+def _load_raw_from_disk() -> list[dict[str, Any]]:
+    """从 knowledge/raw/ 加载已有的原始数据文件。"""
+    all_items: list[dict[str, Any]] = []
+    if not _RAW_DIR.exists():
+        return all_items
+
+    for filepath in sorted(_RAW_DIR.glob("*.json")):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            if isinstance(data, list):
+                all_items.extend(data)
+            elif isinstance(data, dict):
+                all_items.append(data)
+        except (json.JSONDecodeError, OSError) as exc:
+            logger.warning("加载原始数据失败 %s: %s", filepath.name, exc)
+
+    logger.info("从磁盘加载原始数据: %d 条", len(all_items))
+    return all_items
+
+
+def run_pipeline(
+    sources: list[str],
+    limit: int,
+    steps: set[int] | None = None,
+    dry_run: bool = False,
+) -> dict[str, Any]:
+    """执行流水线，支持按步骤执行。
 
     Args:
         sources: 数据源列表，如 ["github", "rss"]。
         limit: 每个源最多采集条数。
+        steps: 要执行的步骤集合 {1,2,3,4}，None 表示执行全部。
         dry_run: 是否为干跑模式。
 
     Returns:
@@ -650,57 +677,82 @@ def run_pipeline(sources: list[str], limit: int, dry_run: bool = False) -> dict[
     """
     _ensure_dirs()
     stats = {"collected": 0, "analyzed": 0, "saved": 0, "failed": 0, "errors": []}
-
-    # ---- Step 1: 采集 ----
+    steps = steps or {1, 2, 3, 4}
     all_raw: list[dict[str, Any]] = []
 
-    for source in sources:
-        source = source.strip().lower()
-        if source == "github":
-            items = collect_github(limit)
-        elif source == "rss":
-            items = collect_rss(limit)
+    # ---- Step 1: 采集 ----
+    if 1 in steps:
+        for source in sources:
+            source = source.strip().lower()
+            if source == "github":
+                items = collect_github(limit)
+            elif source == "rss":
+                items = collect_rss(limit)
+            else:
+                logger.warning("未知数据源: %s", source)
+                continue
+
+            if items:
+                all_raw.extend(items)
+
+        stats["collected"] = len(all_raw)
+        logger.info("采集总计: %d 条", stats["collected"])
+
+    # ---- Step 2: 保存原始数据 ----
+    if 2 in steps:
+        if 1 not in steps and not all_raw:
+            all_raw = _load_raw_from_disk()
+            stats["collected"] = len(all_raw)
+
+        if all_raw:
+            for source in {item.get("source", "unknown") for item in all_raw}:
+                source_items = [item for item in all_raw if item.get("source") == source]
+                save_raw_data(source_items, source, dry_run=dry_run)
         else:
-            logger.warning("未知数据源: %s", source)
-            continue
+            logger.info("无原始数据可保存")
 
-        if items:
-            save_raw_data(items, source, dry_run=dry_run)
-            all_raw.extend(items)
+    # ---- Step 3 (前置): 去重 + 加载数据 ----
+    if 3 in steps or 4 in steps:
+        if not all_raw:
+            all_raw = _load_raw_from_disk()
 
-    stats["collected"] = len(all_raw)
-    logger.info("采集总计: %d 条", stats["collected"])
+        if not all_raw:
+            logger.info("无数据需要处理，流水线结束")
+            return stats
 
-    if not all_raw:
-        logger.info("无数据需要处理，流水线结束")
-        return stats
+        unique_items = deduplicate(all_raw)
 
-    # ---- Step 3 (前置): 去重 ----
-    unique_items = deduplicate(all_raw)
+    # ---- Step 3: 分析 + 整理 ----
+    if 3 in steps:
+        source_counters: dict[str, int] = defaultdict(int)
+        entries_to_save: list[dict[str, Any]] = []
 
-    # ---- Step 2: 分析 + Step 3: 整理 ----
-    source_counters: dict[str, int] = defaultdict(int)
-    for item in unique_items:
-        analysis = analyze_item(item)
-        if analysis:
-            stats["analyzed"] += 1
+        for item in unique_items:
+            analysis = analyze_item(item)
+            if analysis:
+                stats["analyzed"] += 1
 
-        source = item.get("source", "unknown")
-        source_counters[source] += 1
-        entry = standardize(item, analysis, seq_num=source_counters[source])
+            source = item.get("source", "unknown")
+            source_counters[source] += 1
+            entry = standardize(item, analysis, seq_num=source_counters[source])
 
-        # 校验
-        valid, error_msg = validate(entry)
-        if not valid:
-            logger.warning("校验失败 '%s': %s", entry.get("title", ""), error_msg)
-            stats["failed"] += 1
-            stats["errors"].append({"title": entry.get("title"), "error": error_msg})
-            continue
+            valid, error_msg = validate(entry)
+            if not valid:
+                logger.warning("校验失败 '%s': %s", entry.get("title", ""), error_msg)
+                stats["failed"] += 1
+                stats["errors"].append({"title": entry.get("title"), "error": error_msg})
+                continue
 
-        # ---- Step 4: 保存 ----
-        saved_path = save_article(entry, dry_run=dry_run)
-        if saved_path or dry_run:
-            stats["saved"] += 1
+            entries_to_save.append(entry)
+
+        # ---- Step 4: 保存文章 ----
+        if 4 in steps:
+            for entry in entries_to_save:
+                saved_path = save_article(entry, dry_run=dry_run)
+                if saved_path or dry_run:
+                    stats["saved"] += 1
+        elif not dry_run:
+            logger.info("Step 3 完成，跳过 Step 4 保存")
 
     logger.info(
         "流水线完成: collected=%d, analyzed=%d, saved=%d, failed=%d",
@@ -751,6 +803,13 @@ def main() -> int:
         help="干跑模式：执行所有步骤但不写入文件",
     )
     parser.add_argument(
+        "--step",
+        type=int,
+        action="append",
+        choices=[1, 2, 3, 4],
+        help="指定执行的步骤（可多次使用），不传则执行全部。1=采集 2=保存原始数据 3=分析整理 4=保存文章",
+    )
+    parser.add_argument(
         "--verbose",
         "-v",
         action="store_true",
@@ -772,12 +831,14 @@ def main() -> int:
         logger.error("至少指定一个数据源")
         return 1
 
+    steps = set(args.step) if args.step else None
+
     logger.info("=" * 50)
-    logger.info("启动流水线: sources=%s, limit=%d, dry_run=%s", sources, args.limit, args.dry_run)
+    logger.info("启动流水线: sources=%s, limit=%d, steps=%s, dry_run=%s", sources, args.limit, steps, args.dry_run)
     logger.info("=" * 50)
 
     try:
-        stats = run_pipeline(sources=sources, limit=args.limit, dry_run=args.dry_run)
+        stats = run_pipeline(sources=sources, limit=args.limit, steps=steps, dry_run=args.dry_run)
 
         logger.info("=" * 50)
         logger.info("流水线执行统计:")
