@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-099",
+  "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning",
+  "source_url": "https://arxiv.org/abs/2605.18803",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为PROWL（Prioritized Regret-Driven Optimization for World Model Learning）的新方法，用于改进世界模型在罕见但关键交互转换上的鲁棒性。现代基于动作条件的视频世界模型在短时域视觉真实性上表现良好，但在下游规划和策略性能主导的稀有、交互关键转换上仍不可靠。由于被动演示数据系统性地对这些高影响区域采样不足，提升鲁棒性需要主动引发模型失败，而非依赖其自然发生。PROWL通过引入KL约束的对抗性重加权，优先关注那些模型预测与真实结果差异大（即高遗憾）的转换，从而优化世界模型的学习。该方法在多个基准测试中展示了显著性能提升，特别是在处理长尾分布和关键决策点方面。这项工作值得关注，因为它直接解决了世界模型在实际部署中的核心瓶颈——对罕见但关键事件的泛化能力，为强化学习和机器人控制等领域提供了更可靠的基础模型。",
+  "tags": [
+    "World Model",
+    "Reinforcement Learning",
+    "Robustness",
+    "Adversarial Training"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:56:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PROWL通过KL约束的对抗性重加权，主动识别并优先学习高遗憾转换，有效提升世界模型对罕见关键事件的鲁棒性。",
+      "该方法解决了被动演示数据对高影响区域采样不足的问题，通过主动引发模型失败来优化学习过程。",
+      "实验表明，PROWL在多个基准上显著提升了世界模型在长尾分布和关键决策点上的性能，优于传统均匀采样或随机重加权方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

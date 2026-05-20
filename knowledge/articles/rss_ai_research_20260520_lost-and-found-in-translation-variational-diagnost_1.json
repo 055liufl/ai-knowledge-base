@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-120",
+  "title": "Lost and Found in Translation: Variational Diagnostics for Neural Codebook Channels",
+  "source_url": "https://arxiv.org/abs/2605.18846",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的诊断框架，用于分析变分自编码器（VAE）中编码器与解码器之间潜在代码本的不兼容性问题。作者将VAE的潜在空间视为一个离散的通信信道，其中编码器作为发射机，解码器作为接收机。当两者使用的代码本不一致时，会导致通信失败，类似于经典通信系统中的不兼容问题。论文引入了变分诊断工具，包括代码本对齐度量、信道容量估计和错误模式分析，以量化这种不兼容性。该工作不仅为VAE的调试和优化提供了新视角，还揭示了潜在空间在聚类、条件生成和机制可解释性等应用中的可靠性问题。实验表明，标准VAE诊断指标（如ELBO、活跃单元数、互信息）无法充分捕捉代码本不匹配，而所提方法能有效识别并解释这些失败模式。该研究对深度学习中的表示学习、生成模型和可解释性领域具有重要价值。",
+  "tags": [
+    "VAE",
+    "representation learning",
+    "diagnostics",
+    "mechanistic interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:57:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VAE的潜在空间可建模为离散通信信道，编码器与解码器的代码本不兼容是导致性能下降的隐藏原因。",
+      "标准VAE诊断指标（ELBO、活跃单元数、互信息）无法有效检测代码本不匹配问题。",
+      "所提变分诊断工具能量化代码本对齐程度、信道容量和错误模式，为VAE调试提供新方法。",
+      "该工作对依赖VAE潜在空间的应用（如聚类、条件生成、可解释性）具有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

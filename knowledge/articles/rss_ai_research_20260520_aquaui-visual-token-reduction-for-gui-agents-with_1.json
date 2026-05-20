@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-021",
+  "title": "AQuaUI: Visual Token Reduction for GUI Agents with Adaptive Quadtrees",
+  "source_url": "https://arxiv.org/abs/2605.19260",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为AQuaUI的新型视觉令牌压缩方法，专门针对图形用户界面（GUI）代理中的大型多模态模型（LMMs）设计。在GUI代理任务中，高分辨率截图被频繁输入模型，但截图中的信息密度分布极不均匀：大面积的背景或空白区域信息量低且视觉上同质，而关键的文字和图标则需要高视觉保真度。现有的令牌压缩方法要么无法有效处理这种非均匀性，要么牺牲了关键细节。AQuaUI利用自适应四叉树（Adaptive Quadtrees）技术，根据图像内容的空间复杂度动态划分区域，对信息密度低的区域进行更激进的压缩，而对关键区域保留更多令牌。实验表明，该方法在保持甚至提升GUI任务性能的同时，显著减少了视觉令牌数量，降低了计算开销和推理延迟。这项工作对于提升GUI代理的效率和实用性具有重要意义，尤其是在资源受限或需要实时响应的场景下。",
+  "tags": [
+    "LMM",
+    "GUI Agent",
+    "Token Reduction",
+    "Adaptive Quadtree"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:52:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AQuaUI通过自适应四叉树动态压缩视觉令牌，有效处理GUI截图中的非均匀信息密度，在减少计算量的同时保持关键细节。",
+      "该方法在多个GUI代理基准测试中表现优异，验证了其在实际应用中的有效性和效率提升。",
+      "这项工作为多模态模型在视觉密集型任务中的令牌优化提供了新思路，尤其适用于需要高分辨率输入的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

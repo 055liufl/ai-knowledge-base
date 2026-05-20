@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-023",
+  "title": "MOCHA: Multi-Objective Chebyshev Annealing for Agent Skill Optimization",
+  "source_url": "https://arxiv.org/abs/2605.19330",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MOCHA（多目标切比雪夫退火算法）的新方法，用于优化LLM智能体的技能。与传统的单一提示不同，智能体的技能是多字段的，受到平台硬约束的影响，如描述字段截断、指令体压缩以及多个技能竞争有限的上下文窗口。MOCHA通过将技能优化建模为多目标优化问题，并采用切比雪夫退火策略来平衡不同目标（如响应质量、资源消耗和约束满足），从而在复杂约束下高效优化智能体行为。该方法在多个基准测试中表现出色，显著提升了智能体的任务完成效率和鲁棒性。这项研究值得关注，因为它解决了LLM智能体在实际部署中面临的关键瓶颈，即如何在资源受限的环境中优化多技能协作，为构建更高效、更可靠的智能体系统提供了理论支持和实用工具。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Optimization",
+    "Multi-Objective"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:52:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MOCHA将智能体技能优化转化为多目标优化问题，有效处理了描述截断、指令压缩和上下文竞争等硬约束。",
+      "采用切比雪夫退火策略，在多个冲突目标（如质量与资源消耗）之间实现动态平衡，提升了优化效率。",
+      "实验证明，MOCHA在多个基准任务上优于传统单目标优化方法，显著增强了智能体的鲁棒性和适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

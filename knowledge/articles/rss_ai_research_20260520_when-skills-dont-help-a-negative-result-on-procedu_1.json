@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-063",
+  "title": "When Skills Don't Help: A Negative Result on Procedural Knowledge for Tool-Grounded Agents in Offensive Cybersecurity",
+  "source_url": "https://arxiv.org/abs/2605.20023",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在进攻性网络安全领域，为LLM智能体加载程序性知识（Agent Skills）是否总能提升任务完成率。尽管现有研究声称Skills平均能提升16.2个百分点的通过率，但作者发现84个任务中有16个任务在引入Skills后反而出现性能下降（负增量）。论文通过系统实验揭示了Skills的适用条件：当任务所需知识已隐含在模型参数或工具描述中时，Skills可能成为冗余甚至干扰。这一负面结果挑战了当前“技能越多越好”的主流假设，为智能体设计提供了重要警示——盲目堆砌程序性知识可能适得其反。该研究对安全领域及其他依赖工具调用的智能体系统具有方法论价值，提醒开发者需根据任务特性审慎选择知识注入方式。",
+  "tags": [
+    "LLM Agent",
+    "Procedural Knowledge",
+    "Cybersecurity",
+    "Negative Result"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:54:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent Skills并非在所有任务中都能提升性能，约19%的任务（16/84）出现性能下降，表明技能注入存在条件性失效。",
+      "性能下降的可能原因是Skills与模型已有知识或工具描述产生冗余，导致推理路径被干扰而非增强。",
+      "该研究首次在进攻性网络安全领域系统验证了程序性知识的负面效应，为智能体知识注入策略提供了关键边界条件。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

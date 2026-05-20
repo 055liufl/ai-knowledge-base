@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-119",
+  "title": "First-Passage Prediction of Grokking Delay: ACalibrated Law under AdamW with Causal Validation",
+  "source_url": "https://arxiv.org/abs/2605.18845",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次提出了在AdamW优化器下对grokking延迟的定量预测。grokking现象是指模型在过拟合训练数据后，经过一段延迟期突然泛化的行为。作者将延迟视为首次通过时间，推导出一个封闭形式的定律：T_grok - T_mem = (1 / 2 kappa_LL eta lambda) log(V_mem / V_star)，其中V_t是参数范数的平方，V_star是架构相关的阈值，kappa_LL吸收了AdamW对干净SGD收缩率2 eta lambda的修正。通过在单个隐藏层上校准(kappa_LL, V_star)，该定律能够准确预测不同架构和超参数下的grokking延迟。这项工作值得关注，因为它为理解深度学习中的泛化动力学提供了理论工具，特别是对grokking这一反直觉现象给出了可验证的定量解释，有助于指导模型训练和泛化性能优化。",
+  "tags": [
+    "grokking",
+    "AdamW",
+    "泛化动力学",
+    "首次通过时间",
+    "深度学习理论"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:57:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次给出AdamW下grokking延迟的定量预测，推导出封闭形式定律。",
+      "将延迟建模为首次通过时间，揭示了参数范数阈值V_star的关键作用。",
+      "通过单隐藏层校准即可跨架构预测，具有实用性和可验证性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

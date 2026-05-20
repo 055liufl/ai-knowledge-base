@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-070",
+  "title": "A Methodology for Selecting and Composing Runtime Architecture Patterns for Production LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.20173",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于选择和组合生产级LLM代理运行时架构模式的方法论。核心贡献在于首次将随机模型输出与确定性软件系统之间的边界定义为“随机-确定性边界”（SDB），并将其视为一个四部分契约：提议者、验证者、提交步骤和拒绝信号。这一契约明确规定了LLM输出如何转化为系统动作。作者认为SDB是生产级LLM代理架构中的承重基元，并基于此方法论提供了多种架构模式的选择与组合策略。该研究对于构建可靠、可扩展的LLM应用具有重要指导意义，尤其是在处理模型输出的不确定性时，通过明确的边界定义和模式化设计，能够有效提升系统的鲁棒性和可维护性。论文还讨论了不同场景下如何根据需求（如延迟、准确性、成本）选择最优的SDB实现，为开发者提供了实用的决策框架。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Architecture",
+    "Pattern"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:54:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了随机-确定性边界（SDB）作为生产级LLM代理的核心架构抽象，定义了提议者、验证者、提交步骤和拒绝信号四部分契约",
+      "提供了基于SDB的架构模式选择与组合方法论，帮助开发者根据延迟、准确性、成本等需求设计可靠的LLM代理系统",
+      "强调了将模型输出与系统动作之间的边界作为一等公民进行设计的重要性，填补了现有LLM代理架构中缺乏系统性边界定义的空白"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

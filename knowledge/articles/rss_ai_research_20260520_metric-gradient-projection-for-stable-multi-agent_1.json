@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-104",
+  "title": "Metric-Gradient Projection for Stable Multi-Agent Policy Learning",
+  "source_url": "https://arxiv.org/abs/2605.18809",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“度量梯度投影”（Metric-Gradient Projection）的新方法，用于解决多智能体强化学习（MARL）中的不稳定性和收敛缓慢问题。在多智能体系统中，每个智能体的策略更新会改变其他智能体的优化环境，导致集体改进与循环交互动态的耦合，从而引发学习不稳定。现有方法如正则化、信用分配和共识机制虽能局部稳定，但未能从根本上解决耦合问题。本文通过引入度量梯度投影技术，将每个智能体的梯度分解为可积部分和循环部分，并投影到稳定流形上，从而消除有害的循环动态，同时保留集体改进方向。实验表明，该方法在多个标准MARL基准测试中显著提升了学习稳定性和收敛速度，尤其在高维连续控制任务中表现突出。这项工作为多智能体学习提供了新的理论视角和实用工具，具有重要的学术价值和潜在应用前景。",
+  "tags": [
+    "MARL",
+    "Gradient Projection",
+    "Multi-Agent Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:56:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出度量梯度投影方法，将智能体梯度分解为可积与循环部分，消除循环动态对学习的干扰。",
+      "理论证明该方法能保持集体改进方向，同时稳定多智能体学习过程。",
+      "在多个MARL基准测试中验证了方法的有效性，尤其在高维连续控制任务中表现优异。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

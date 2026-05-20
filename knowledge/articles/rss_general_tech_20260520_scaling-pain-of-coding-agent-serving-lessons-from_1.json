@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260520-027",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由 z.ai 团队撰写，分享了在规模化部署 GLM-5 编码代理服务过程中遇到的挑战与解决方案。GLM-5 是一个基于大语言模型的编码代理，旨在自动完成代码生成、调试和优化任务。文章详细描述了从单机原型到分布式系统扩展时出现的性能瓶颈、资源调度问题和延迟优化策略。关键教训包括：如何设计高效的请求路由机制以处理高并发；如何通过动态资源分配和缓存策略减少模型推理延迟；以及如何监控和调试分布式系统中的异常行为。文章还讨论了编码代理服务的独特需求，如长上下文处理、代码执行沙箱和实时反馈循环，这些对传统 LLM 服务架构提出了新要求。该内容对于理解 LLM 在复杂应用场景下的工程挑战具有重要参考价值，尤其是对于从事 AI 基础设施和代理系统开发的工程师。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Infrastructure",
+    "Scaling",
+    "Coding"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:48Z",
+  "collected_at": "2026-05-20T21:51:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理服务面临高并发和长上下文处理的独特挑战，需要定制化的请求路由和资源调度策略。",
+      "动态缓存和推理优化是降低延迟的关键，尤其是在代码生成和调试场景中。",
+      "分布式系统的监控和调试对于维持服务稳定性至关重要，需要针对代理行为设计专门的日志和追踪机制。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

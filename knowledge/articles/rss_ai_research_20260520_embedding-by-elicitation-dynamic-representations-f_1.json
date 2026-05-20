@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-009",
+  "title": "Embedding by Elicitation: Dynamic Representations for Bayesian Optimization of System Prompts",
+  "source_url": "https://arxiv.org/abs/2605.19093",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 ReElicit 的贝叶斯优化框架，用于在仅提供聚合指标（而非逐样本标签或失败案例）的约束下，对系统提示（system prompts）进行自动调优。系统提示是现代AI系统（如对话模型、任务执行模型）的核心控制机制，但传统调优方法依赖大量细粒度反馈，难以应用于实际场景。ReElicit 通过动态嵌入表示（embedding by elicitation）将离散、变长的文本提示映射到连续空间，并利用贝叶斯优化高效探索最优提示。该方法在多个任务（如对话生成、指令遵循）上展示了显著性能提升，且样本效率高。该工作值得关注，因为它解决了AI系统部署中的关键痛点——如何在不依赖昂贵人工标注的情况下，自动优化系统行为，从而降低调优成本、提升模型可控性。",
+  "tags": [
+    "Bayesian Optimization",
+    "System Prompt",
+    "Embedding",
+    "Black-box Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:51:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 ReElicit 框架，将系统提示调优视为样本受限的黑箱优化问题，通过动态嵌入表示将离散文本映射到连续空间，实现高效贝叶斯优化。",
+      "在仅使用聚合指标（如整体准确率、用户满意度）的反馈下，ReElicit 能显著提升提示质量，减少对逐样本标注的依赖。",
+      "实验表明，该方法在多个任务上优于基线（如随机搜索、静态嵌入优化），且样本效率高，适用于实际部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

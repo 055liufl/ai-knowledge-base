@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-032",
+  "title": "Position: The Turing-Completeness of Real-World Autoregressive Transformers Relies Heavily on Context Management",
+  "source_url": "https://arxiv.org/abs/2605.19514",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对“Transformer是图灵完备”的常见说法进行了严谨的辨析，指出该结论在现实应用中高度依赖于上下文管理方法。作者区分了两种设定：固定Transformer系统设定（固定模型与固定上下文管理方法配合处理变长输入）和缩放家族设定（通过改变模型家族成员如增大上下文窗口或数值精度来实现图灵完备）。论文通过理论分析和实验证明，在固定系统设定下，仅靠自回归Transformer本身并不足以实现通用计算，必须依赖外部上下文管理机制（如滑动窗口、记忆模块等）才能达到图灵完备。这一发现对理解大语言模型的计算能力边界、设计更高效的推理架构以及评估模型的实际通用性具有重要意义，值得AI研究者与开发者关注。",
+  "tags": [
+    "Transformer",
+    "图灵完备",
+    "上下文管理",
+    "计算理论"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:52:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer的图灵完备性在固定系统设定下并不成立，必须结合上下文管理方法才能实现通用计算。",
+      "文献中常混淆固定系统设定与缩放家族设定，导致对Transformer计算能力的过度乐观。",
+      "上下文窗口长度和数值精度是影响Transformer计算能力的关键因素，但固定模型无法通过自身扩展实现图灵完备。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

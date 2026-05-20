@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-058",
+  "title": "Streamlined Constraint Reasoning via CNN Pattern Recognition on Enumerated Solutions",
+  "source_url": "https://arxiv.org/abs/2605.19895",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于卷积神经网络（CNN）的模式识别方法，用于自动合成约束编程中的流线型约束（streamliner constraints）。流线型约束是一种不保证可满足性的约束，用于将搜索限制在解的结构性子族中，从而加速求解过程。传统方法通常通过搜索或枚举来合成流线型约束，效率较低。本文创新性地将问题转化为图像分类任务：首先枚举小规模实例的解，并将其编码为二维图像（如解矩阵的像素化表示），然后训练CNN识别解中的结构性模式，最后将学习到的模式转化为约束条件。实验表明，该方法在多个基准问题上（如拉丁方、图着色等）显著提升了求解速度，且泛化能力较强。该工作结合了深度学习与约束推理，为自动化约束编程提供了新思路，尤其适用于需要快速找到高质量解但无需保证完备性的场景。值得关注的是，该方法避免了传统符号方法的复杂性，利用CNN的端到端学习能力自动发现隐藏的结构性约束，具有较高的实用价值和创新性。",
+  "tags": [
+    "CNN",
+    "Constraint Programming",
+    "Pattern Recognition",
+    "Automated Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T21:48:49Z",
+  "collected_at": "2026-05-20T21:54:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将约束编程中的流线型约束合成问题转化为图像分类任务，利用CNN从枚举解中自动学习结构性模式。",
+      "方法在小规模实例上训练，可泛化到更大规模问题，避免了传统符号搜索的高复杂度。",
+      "在拉丁方、图着色等基准问题上验证了有效性，显著提升求解速度，且不依赖领域知识。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
