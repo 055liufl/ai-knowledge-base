@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260520-024",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由 z.ai 发布，深入探讨了在规模化部署 GLM-5 编码代理服务过程中遇到的挑战与解决方案。GLM-5 是一个基于大型语言模型的编码代理，旨在自动化代码生成、调试和优化任务。文章详细描述了从单节点原型到大规模分布式系统扩展时出现的性能瓶颈、资源竞争和延迟问题。作者分享了调试过程中的关键经验，包括如何优化模型推理的批处理策略、管理 GPU 内存碎片、处理长上下文窗口带来的计算开销，以及设计高效的请求调度算法来平衡负载。此外，文章还讨论了编码代理特有的交互模式（如多轮对话、代码执行反馈）对服务架构的影响，并提出了针对性的缓存和预取机制。这些经验对于任何致力于将 AI 代理从研究原型推向生产环境的团队都具有重要参考价值，尤其是在处理复杂、长尾的编码任务时。文章强调了系统可观测性和渐进式扩展的重要性，为构建可靠、高效的 AI 代理服务提供了实用指南。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Infrastructure",
+    "Scaling",
+    "Coding"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:01Z",
+  "collected_at": "2026-05-20T22:54:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "规模化编码代理服务面临独特的挑战，包括长上下文窗口、多轮交互和代码执行反馈带来的资源与延迟问题。",
+      "优化模型推理的批处理策略和 GPU 内存管理是提升系统吞吐量的关键。",
+      "高效的请求调度和负载均衡算法对于处理编码代理的复杂交互模式至关重要。",
+      "系统可观测性和渐进式扩展策略是确保服务稳定性的核心实践。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

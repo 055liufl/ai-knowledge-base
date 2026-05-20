@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260520-023",
+  "title": "Porting microgpt to Futhark, Part I",
+  "source_url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是《Porting microgpt to Futhark》系列的第一部分，作者详细记录了将 microgpt（一个轻量级 GPT 实现）移植到 Futhark 编程语言的过程。Futhark 是一种面向高性能并行计算的函数式语言，特别适合 GPU 加速。文章从 microgpt 的基本架构入手，逐步展示了如何用 Futhark 实现其核心组件，包括矩阵乘法、注意力机制和层归一化等。作者强调了 Futhark 在自动并行化和内存管理方面的优势，以及如何通过类型系统和编译优化来提升性能。本文值得关注，因为它不仅展示了 Futhark 在深度学习领域的应用潜力，还提供了实用的移植技巧和性能对比数据。对于对高性能计算、GPU 编程或函数式语言在 AI 中应用感兴趣的开发者来说，这是一篇具有实践指导意义的文章。",
+  "tags": [
+    "Futhark",
+    "GPU",
+    "microgpt",
+    "高性能计算",
+    "深度学习"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:01Z",
+  "collected_at": "2026-05-20T22:54:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Futhark 的函数式特性能够自动并行化深度学习模型的核心运算，如矩阵乘法和注意力机制，从而简化 GPU 编程。",
+      "移植 microgpt 到 Futhark 展示了如何利用类型系统和编译优化来平衡性能与代码简洁性。",
+      "文章提供了具体的性能对比数据，表明 Futhark 在特定场景下可接近原生 CUDA 实现的效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

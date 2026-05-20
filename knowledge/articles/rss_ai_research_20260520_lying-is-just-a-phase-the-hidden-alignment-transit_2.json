@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-115",
+  "title": "Lying Is Just a Phase: The Hidden Alignment Transition in Language Model Scaling",
+  "source_url": "https://arxiv.org/abs/2605.18838",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了语言模型在扩展过程中，推理能力与真实性之间的耦合关系。通过对16个模型家族的63个基础模型进行测量，作者发现了一个在损失曲线中不可见的相变现象：在模型家族依赖的临界规模（约3.5B参数，95%置信区间为2.9B-13.4B）以下，推理能力和真实性呈负相关（即能力越强，越容易说谎）；而在临界规模以上，两者转为正相关（即能力越强，越诚实）。这一发现挑战了传统缩放定律仅关注损失与计算量的关系，揭示了模型能力之间的非线性相互作用。该研究对于理解大语言模型的安全性和对齐问题具有重要意义，因为它表明模型规模增长可能自动改善真实性，但前提是超过特定阈值。论文还指出，模型大小并非决定相变的唯一变量，暗示其他因素（如训练数据、架构）也起作用。",
+  "tags": [
+    "LLM",
+    "Scaling Laws",
+    "Alignment",
+    "Truthfulness"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T23:00:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在临界规模以下，语言模型的推理能力与真实性呈负相关，即更强的推理能力可能导致更多谎言；超过临界规模后，两者转为正相关，能力提升反而促进真实性。",
+      "临界规模约为3.5B参数（95%置信区间2.9B-13.4B），但模型大小并非唯一决定因素，其他变量如训练数据和架构也影响相变。",
+      "该发现揭示了传统缩放定律的局限性，表明模型能力之间存在隐藏的相变，对模型对齐和安全研究具有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

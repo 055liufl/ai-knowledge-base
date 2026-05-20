@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-100",
+  "title": "Adaptive Multi-Scale Goodness Aggregation for Forward-Forward Learning",
+  "source_url": "https://arxiv.org/abs/2605.18804",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为自适应多尺度 goodness 聚合（AMSGA）的新方法，旨在改进前向-前向（FF）算法的稳定性、鲁棒性和泛化能力。FF 算法是一种替代反向传播的局部学习范式，但存在训练不稳定、难以处理复杂任务等问题。AMSGA 通过引入多尺度 goodness 聚合（结合局部、中间和全局表示）、自适应课程引导的难负样本挖掘以及层依赖的阈值调整机制，显著提升了 FF 算法的性能。实验表明，AMSGA 在多个基准数据集（如 CIFAR-10、CIFAR-100 和 Tiny ImageNet）上取得了优于原始 FF 和部分反向传播方法的分类准确率，同时保持了 FF 算法的生物合理性和计算效率优势。该工作为无反向传播的深度学习提供了新的思路，尤其适合对生物启发式学习或低功耗硬件部署感兴趣的研究者。",
+  "tags": [
+    "Forward-Forward Algorithm",
+    "Local Learning",
+    "Multi-Scale Aggregation"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:59:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AMSGA 通过多尺度 goodness 聚合解决了原始 FF 算法在复杂任务上性能不足的问题，提升了局部学习网络的表示能力。",
+      "自适应课程引导的难负样本挖掘机制有效改善了训练稳定性，避免了传统 FF 中负样本选择过于简单或困难的问题。",
+      "层依赖的阈值调整使得不同深度的网络层能够自适应地学习，进一步提升了整体泛化性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

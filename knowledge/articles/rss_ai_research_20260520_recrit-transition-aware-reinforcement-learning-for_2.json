@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-096",
+  "title": "ReCrit: Transition-Aware Reinforcement Learning for Scientific Critic Reasoning",
+  "source_url": "https://arxiv.org/abs/2605.18799",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为ReCrit的强化学习方法，用于提升大型语言模型在科学推理场景中面对用户批评时的推理稳定性。传统方法仅关注最终答案的准确性，而忽略了在交互过程中模型可能因用户批评而放弃原本正确的科学解决方案，导致答案从正确转变为错误。ReCrit将批评交互建模为回合间正确性转换问题，而非最终答案准确性问题，并识别出三个关键挑战：正确性保持、批评理解与推理调整。通过引入转换感知的强化学习框架，模型能够在接收到用户批评时，更鲁棒地维持或修正其科学推理路径，避免因不当批评而偏离正确结论。该方法在多个科学推理基准测试上表现出色，显著提升了模型在交互式批评场景下的推理可靠性。该研究对于开发更稳健、更可信的AI科学助手具有重要意义，尤其是在需要人机协作的复杂科学问题解决中。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Scientific Reasoning",
+    "Critic Interaction"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:59:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将批评交互重新定义为回合间正确性转换问题，而非传统最终答案准确性评估，揭示了模型在交互中可能因批评而退化的重要现象。",
+      "提出了转换感知的强化学习框架ReCrit，专门针对模型在科学推理中面对批评时的正确性保持与调整能力进行优化。",
+      "识别了三个关键挑战：正确性保持、批评理解与推理调整，为后续研究提供了明确的问题分解方向。",
+      "实验证明该方法能显著提升LLM在交互式科学推理中的鲁棒性，减少因用户批评导致的错误转换。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

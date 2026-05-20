@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-087",
+  "title": "Mask-to-Correct$^+$: Leveraging Retriever Diversity for Masking-guided Faithful Fact Correction",
+  "source_url": "https://arxiv.org/abs/2605.18776",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Mask-to-Correct (M₂) 的新型事实校正框架，旨在解决社交媒体上错误信息快速传播的问题。现有方法依赖人工标注的声明-证据对进行监督学习，但这类数据稀缺且易有偏差，限制了跨领域的泛化能力，同时忽略了校正过程中的语义忠实性。M₂ 框架通过利用检索器的多样性来指导掩码生成，从而在不依赖大规模标注数据的情况下实现忠实的事实校正。具体而言，该框架首先从多个检索器获取多样化的证据，然后基于这些证据生成掩码，以识别和修正声明中的错误部分，同时确保修正后的文本在语义上忠实于原始上下文。实验结果表明，M₂ 在多个基准数据集上优于现有方法，特别是在跨领域泛化和语义忠实性方面表现突出。这项工作值得关注，因为它提供了一种无需大量人工标注的自动化事实校正方法，有助于提升社交媒体上信息验证的效率和可靠性，对打击虚假信息具有重要应用价值。",
+  "tags": [
+    "Fact Correction",
+    "Retrieval-Augmented Generation",
+    "Misinformation"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:59:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "M₂ 框架通过利用多个检索器的多样性来生成掩码，无需依赖大量人工标注的声明-证据对，从而增强了跨领域的泛化能力。",
+      "该方法在事实校正过程中强调语义忠实性，确保修正后的文本与原始上下文保持一致，避免了传统方法中常见的语义偏差问题。",
+      "实验证明，M₂ 在多个基准数据集上优于现有方法，特别是在处理跨领域错误信息时表现出更高的准确性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

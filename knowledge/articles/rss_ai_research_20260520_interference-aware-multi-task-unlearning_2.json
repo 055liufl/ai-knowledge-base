@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-008",
+  "title": "Interference-Aware Multi-Task Unlearning",
+  "source_url": "https://arxiv.org/abs/2605.19042",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了干扰感知的多任务遗忘（Interference-Aware Multi-Task Unlearning）方法，旨在解决现代多任务模型中数据遗忘时任务间相互干扰的问题。传统机器遗忘研究主要关注单任务场景，而实际模型常共享骨干网络处理多个任务，导致删除某个任务或样本的监督信息会无意中影响其他任务性能。论文定义了两种多任务遗忘设置：全任务遗忘（完全移除某个任务的所有影响）和部分任务遗忘（仅移除特定样本或子集的影响）。核心创新在于引入干扰感知机制，通过量化任务间梯度冲突和参数共享带来的干扰，设计选择性遗忘策略，在保证遗忘效果的同时最小化对其他任务性能的损害。该方法具有重要的实用价值，尤其适用于隐私合规（如“被遗忘权”）和模型更新场景，为多任务学习中的安全数据删除提供了理论基础和可行方案。",
+  "tags": [
+    "Machine Unlearning",
+    "Multi-Task Learning",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:54:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统定义多任务遗忘的两种设置（全任务遗忘与部分任务遗忘），填补了现有研究空白。",
+      "提出干扰感知机制，通过量化任务间梯度冲突和参数共享干扰，实现选择性遗忘。",
+      "方法在保持遗忘效果的同时，显著降低对其他任务性能的负面影响，具有实际部署潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

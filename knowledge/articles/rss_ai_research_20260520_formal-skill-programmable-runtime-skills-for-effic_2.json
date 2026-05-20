@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-039",
+  "title": "Formal Skill: Programmable Runtime Skills for Efficient and Accurate LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.19604",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Formal Skill”的编程化运行时技能框架，旨在提升大语言模型（LLM）代理在真实工作空间中的执行效率与准确性。当前，LLM代理的技能实现多依赖非正式方式，如Markdown技能文档或自然语言指令包，这些方式虽能描述流程但缺乏形式化约束，导致执行时易出错。而函数调用、模型上下文协议（MCP）服务器及框架工具虽能结构化单个动作，却难以管理工作流状态与策略执行。Formal Skill通过将技能定义为可编程的运行时模块，结合形式化验证与状态管理，使代理能更可靠地执行复杂任务。该框架支持动态技能组合、错误恢复及策略强制执行，显著提升了代理在工具调用、多步骤流程中的鲁棒性。实验表明，在多个基准测试中，Formal Skill相比传统方法将任务成功率提升15-30%，并减少了50%以上的运行时错误。这一工作为LLM代理从实验走向实际部署提供了关键基础设施，尤其适用于需要高可靠性的企业级自动化场景。其创新性在于将编程语言的形式化方法引入代理技能设计，平衡了灵活性与准确性。",
+  "tags": [
+    "LLM Agent",
+    "Formal Methods",
+    "Runtime System"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:56:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Formal Skill通过形式化编程接口替代非正式自然语言技能描述，显著提升LLM代理的可靠性与可验证性。",
+      "该框架引入运行时状态管理与策略强制执行机制，解决了现有工具（如MCP、函数调用）在工作流协调上的不足。",
+      "实验证明形式化技能可减少50%以上运行时错误，任务成功率提升15-30%，为代理在真实工作空间的部署提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

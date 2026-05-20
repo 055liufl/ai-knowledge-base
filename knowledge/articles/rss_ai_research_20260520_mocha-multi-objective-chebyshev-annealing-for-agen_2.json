@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-023",
+  "title": "MOCHA: Multi-Objective Chebyshev Annealing for Agent Skill Optimization",
+  "source_url": "https://arxiv.org/abs/2605.19330",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MOCHA（多目标切比雪夫退火算法）的新方法，用于优化大型语言模型（LLM）代理的技能。LLM代理通过技能（即结构化的自然语言规范）来组织行为，这些技能控制着代理的推理、检索和响应方式。与整体提示不同，技能是多字段的产物，受到严格的平台约束：描述字段会被截断以进行路由，指令体通过渐进式披露进行压缩，共存的技能会争夺有限的上下文窗口。这些约束使得技能优化变得复杂。MOCHA算法通过多目标优化和切比雪夫退火策略，有效地在多个约束条件下优化技能，从而提升代理的性能。该方法在多个基准测试中展示了显著的性能提升，特别是在处理复杂任务和资源受限的环境中。这项研究对于提升LLM代理的效率和鲁棒性具有重要意义，尤其是在实际应用中需要平衡多个目标和约束的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Optimization",
+    "Multi-Objective"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:55:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MOCHA通过多目标切比雪夫退火算法，有效解决了LLM代理技能优化中的多约束问题，如字段截断、指令压缩和上下文竞争。",
+      "该方法在多个基准测试中显著提升了代理的性能，特别是在资源受限和复杂任务场景下，展示了其鲁棒性和实用性。",
+      "MOCHA为LLM代理的技能优化提供了一种系统性的框架，有助于推动代理在实际应用中的部署和效率提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

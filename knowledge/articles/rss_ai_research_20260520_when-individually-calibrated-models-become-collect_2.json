@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-127",
+  "title": "When Individually Calibrated Models Become Collectively Miscalibrated",
+  "source_url": "https://arxiv.org/abs/2605.18858",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在多智能体系统中，个体校准的预测模型在策略性交互下如何导致集体校准失效的问题。研究指出，在概率预测系统中，通常假设如果每个模型单独校准，则聚合预测也将保持良好校准。然而，通过博弈论分析，作者证明当多个模型（如不同AI系统）的预测在决策中相互影响时，个体校准性无法保证集体校准性。例如，在竞争性市场预测或分布式决策中，模型可能根据其他模型的输出调整自身预测，导致整体概率估计出现系统性偏差。该研究揭示了多智能体环境下校准的脆弱性，对金融、医疗、自动驾驶等依赖多模型聚合的领域具有重要警示意义。值得关注的是，它挑战了传统机器学习中关于校准的独立同分布假设，为设计更鲁棒的聚合策略和评估框架提供了理论基础。",
+  "tags": [
+    "calibration",
+    "multi-agent systems",
+    "game theory",
+    "probabilistic prediction"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T23:01:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "个体校准的模型在策略性交互中可能集体失准，打破了传统聚合校准假设。",
+      "博弈论视角揭示了多智能体环境下校准失效的机制，即模型间相互适应导致偏差。",
+      "该发现对依赖多模型聚合的领域（如金融、医疗）提出了新的校准评估挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

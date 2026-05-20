@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-032",
+  "title": "Position: The Turing-Completeness of Real-World Autoregressive Transformers Relies Heavily on Context Management",
+  "source_url": "https://arxiv.org/abs/2605.19514",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文对“Transformer 是图灵完备”这一常见说法进行了深入辨析，指出该结论在现实应用中存在关键前提。作者区分了两种设定：固定 Transformer 系统（使用固定上下文管理方法处理变长输入）和缩放族设定（通过改变模型家族成员如增大上下文窗口或数值精度来模拟图灵机）。研究发现，在固定系统设定下，自回归 Transformer 的图灵完备性严重依赖于上下文管理方法（如窗口滑动、压缩等）的图灵完备性，而 Transformer 本身仅提供有限的计算能力。这一发现挑战了将 Transformer 视为通用计算模型的简单认知，强调了在实际部署中上下文管理机制的重要性。论文通过理论分析和构造性证明，揭示了 Transformer 计算能力的边界，为理解大语言模型的能力来源提供了新视角。该工作对于 AI 安全、模型评估和架构设计具有指导意义，提醒研究者不要过度泛化理论结果。",
+  "tags": [
+    "Transformer",
+    "图灵完备",
+    "上下文管理",
+    "计算理论"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:56:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer 的图灵完备性在固定系统设定下高度依赖上下文管理方法的图灵完备性，而非 Transformer 自身。",
+      "缩放族设定通过改变模型家族成员（如增大上下文窗口）才能实现图灵完备，但这与固定部署场景不同。",
+      "该研究澄清了文献中对 Transformer 计算能力的常见误解，强调了上下文管理机制在现实应用中的核心作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

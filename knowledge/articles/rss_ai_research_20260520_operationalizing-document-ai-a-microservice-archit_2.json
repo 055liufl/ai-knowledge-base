@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-002",
+  "title": "Operationalizing Document AI: A Microservice Architecture for OCR and LLM Pipelines in Production",
+  "source_url": "https://arxiv.org/abs/2605.18818",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于文档AI生产化部署的微服务架构，该架构将分类、光学字符识别（OCR）和大语言模型（LLM）结构化字段提取等多个模型的流水线封装为可独立部署的服务。作者分享了在数千文档规模上运行该流水线的实践经验，旨在弥合学术研究中模型定义与生产级运行之间的差距。该架构通过微服务解耦各模型组件，支持弹性伸缩、独立更新和故障隔离，从而提升系统的可维护性和可靠性。论文强调了从单一模型研究向多模型协同流水线过渡的关键挑战，包括延迟管理、资源调度、数据一致性以及模型间接口标准化。通过实际案例，作者展示了该架构在处理复杂文档（如发票、合同）时的有效性，并提供了性能基准和优化建议。这项工作对于希望将文档AI技术从实验阶段推向大规模生产环境的团队具有重要参考价值，尤其适用于需要高吞吐量和低延迟的金融、法律和行政文档处理场景。",
+  "tags": [
+    "Document AI",
+    "Microservice Architecture",
+    "OCR",
+    "LLM",
+    "Production"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:54:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "微服务架构有效解决了多模型流水线在生产环境中的部署、扩展和维护难题，通过服务解耦提升了系统的弹性和容错性。",
+      "将OCR、分类和LLM提取等不同模型组合为端到端流水线，比单一模型更适用于复杂文档理解任务，但需要精心设计接口和缓存策略以控制延迟。",
+      "生产级文档AI系统需关注资源调度、模型版本管理和数据一致性，论文提供的实践经验对类似系统设计具有直接指导意义。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

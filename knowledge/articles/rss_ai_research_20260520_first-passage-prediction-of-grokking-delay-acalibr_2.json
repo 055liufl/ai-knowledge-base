@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260520-119",
+  "title": "First-Passage Prediction of Grokking Delay: ACalibrated Law under AdamW with Causal Validation",
+  "source_url": "https://arxiv.org/abs/2605.18845",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次对AdamW优化器下的“顿悟延迟”（grokking delay）进行了定量预测。作者将延迟视为首次通过时间，推导出一个封闭形式的定律：T_grok - T_mem = (1 / 2 kappa_LL eta lambda) log(V_mem / V_star)，其中V_t是参数范数的平方，V_star是架构相关的阈值，kappa_LL吸收了AdamW对纯SGD收缩率2 eta lambda的修正。通过在单个超参数设置下校准(kappa_LL, V_star)，该定律能够预测不同学习率和权重衰减下的延迟。这项工作值得关注，因为它首次为神经网络训练中的“顿悟”现象提供了可验证的定量模型，有助于理解深度学习的泛化动力学，并对优化超参数选择具有指导意义。",
+  "tags": [
+    "深度学习理论",
+    "优化算法",
+    "泛化动力学"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T23:00:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次给出了AdamW优化器下顿悟延迟的定量预测，推导出封闭形式的定律。",
+      "该定律通过首次通过时间框架将延迟与参数范数、学习率和权重衰减联系起来。",
+      "仅需在单个超参数设置下校准，即可预测不同学习率和权重衰减下的延迟，具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

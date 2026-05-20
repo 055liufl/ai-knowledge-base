@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260520-059",
+  "title": "PEEK: Context Map as an Orientation Cache for Long-Context LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.19932",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PEEK的新方法，旨在解决长上下文LLM代理在重复处理相同外部上下文（如文档库、代码仓库）时效率低下的问题。现有方法主要保存代理的轨迹、对原始材料的被动访问或任务级策略，但忽略了最关键的复用信息：可重用的方向性知识（例如上下文包含什么、如何组织）。PEEK通过构建一个上下文地图作为方向缓存，使代理能够快速定位和利用之前积累的上下文结构知识，从而在多次调用中显著提升性能。该方法针对LLM代理在长期、重复性任务中的实际需求，具有重要的实用价值，尤其适用于需要频繁访问相同知识库的场景。论文通过实验验证了PEEK在减少冗余计算、提高任务完成效率方面的有效性，为长上下文LLM代理的优化提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Long Context",
+    "Memory",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:57:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PEEK通过构建上下文地图作为方向缓存，解决了长上下文LLM代理在重复任务中缺乏可重用方向性知识的问题。",
+      "该方法显著减少了代理在多次调用中重复解析相同上下文的计算开销，提升了任务效率。",
+      "PEEK的设计理念强调了方向性知识（如上下文结构和内容索引）比原始数据或轨迹更关键。",
+      "实验结果表明，PEEK在文档库和代码仓库等场景中能有效加速代理的决策过程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

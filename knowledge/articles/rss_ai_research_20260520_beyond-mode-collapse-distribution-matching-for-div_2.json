@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-030",
+  "title": "Beyond Mode Collapse: Distribution Matching for Diverse Reasoning",
+  "source_url": "https://arxiv.org/abs/2605.19461",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文分析了当前强化学习方法（如GRPO）在推理任务中面临的模式崩溃问题，即模型一旦发现一个高奖励解决方案，就会集中概率质量于该方案，停止探索其他策略。作者指出，这一问题的根源在于反向KL散度的模式寻求行为，它倾向于强化首次发现的高奖励轨迹，而不是维持多种解决方案的分布。为此，论文提出了一种基于分布匹配的替代方法，旨在通过优化前向KL散度或使用其他分布匹配技术，鼓励模型在推理过程中保持多样性，避免过早收敛到单一模式。该工作对于提升大语言模型在复杂推理任务中的鲁棒性和创造力具有重要意义，尤其是在需要多路径探索的场景中，如数学问题求解、代码生成和逻辑推理。论文通过理论分析和实验验证，展示了所提方法在保持性能的同时显著提高了解决方案的多样性，为强化学习在推理领域的应用提供了新的视角。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Mode Collapse",
+    "Distribution Matching"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:56:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模式崩溃源于反向KL散度的模式寻求行为，导致模型过早收敛到单一高奖励解。",
+      "通过分布匹配（如前向KL散度）可有效维持推理过程中的解决方案多样性。",
+      "该方法在保持性能的同时显著提升了多路径探索能力，适用于数学推理、代码生成等任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

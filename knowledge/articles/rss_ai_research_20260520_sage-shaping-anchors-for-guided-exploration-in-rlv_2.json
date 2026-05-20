@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-130",
+  "title": "SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs",
+  "source_url": "https://arxiv.org/abs/2605.18864",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs》探讨了在大型语言模型（LLM）中，使用可验证奖励的强化学习（RLVR）对推理任务的影响。研究发现，RLVR虽然能稳定提升pass@1指标（即单次尝试的成功率），但在pass@k（多次尝试的成功率）上并未带来同等程度的改进。这引发了一个关键问题：RLVR是否真正赋予了LLM新的推理能力，还是仅仅提高了从基础模型中已有的推理模式中采样的效率？先前的研究倾向于支持后者。SAGE方法通过引入“锚点塑造”（Shaping Anchors）机制，引导模型在RLVR过程中进行更有效的探索，从而在保持pass@1提升的同时，显著改善pass@k性能。该工作对于理解强化学习在LLM推理中的局限性以及设计更有效的训练策略具有重要价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "RLVR"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T23:01:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR在LLM推理任务中主要提升pass@1，但对pass@k改善有限，表明其可能仅优化了已有推理模式的采样效率。",
+      "SAGE方法通过锚点塑造机制引导探索，在保持pass@1优势的同时，有效提升了pass@k性能。",
+      "该研究揭示了RLVR在LLM推理能力获取上的本质局限，并为设计更全面的强化学习训练策略提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

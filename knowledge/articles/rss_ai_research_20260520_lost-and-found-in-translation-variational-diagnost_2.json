@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-120",
+  "title": "Lost and Found in Translation: Variational Diagnostics for Neural Codebook Channels",
+  "source_url": "https://arxiv.org/abs/2605.18846",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于诊断神经编码本通道（如变分自编码器VAE）中编码器与解码器不匹配问题的变分诊断方法。经典通信系统不仅因随机噪声而失败，还会在发送方和接收方使用不兼容的操作编码本时失效。VAE通过联合训练编码器q_phi和解码器p_theta，其潜在空间常被用作离散编码，用于聚类、条件生成和机制可解释性。然而，标准的VAE诊断指标（如ELBO、活跃单元、互信息）无法有效检测编码器与解码器之间的不匹配。本文引入了一种基于变分推理的通道诊断框架，能够量化编码本不一致性，并识别潜在空间中的“翻译错误”。该方法在多个VAE变体（如β-VAE、VQ-VAE）上进行了验证，显示出对模型失效模式的早期预警能力。这项工作为神经编码本的可信度评估提供了新工具，对生成模型的可解释性和可靠性有重要意义。",
+  "tags": [
+    "VAE",
+    "Neural Codebook",
+    "Variational Inference",
+    "Diagnostics",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T23:00:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准VAE诊断指标（如ELBO、活跃单元）无法检测编码器与解码器之间的编码本不匹配问题。",
+      "提出了一种基于变分推理的通道诊断框架，能够量化神经编码本的不一致性并识别潜在空间中的翻译错误。",
+      "该方法在多个VAE变体上验证了有效性，可作为生成模型失效模式的早期预警工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

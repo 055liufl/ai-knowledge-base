@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-099",
+  "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning",
+  "source_url": "https://arxiv.org/abs/2605.18803",
+  "source_platform": "rss_ai_research",
+  "summary": "PROWL（优先遗憾驱动世界模型学习优化）是一项针对现代动作条件视频世界模型的研究。当前模型在短时域视觉真实性上表现优异，但在罕见、交互关键的状态转换中可靠性不足，而这些转换对下游规划和策略性能至关重要。由于被动演示数据系统性地对这些高影响区域采样不足，提升鲁棒性需要主动引发模型失败而非依赖其自然发生。该论文提出了一种KL约束的对抗性数据生成框架，通过优先采样模型预测误差大的状态-动作对（即“遗憾”区域），迭代优化世界模型。核心创新在于将遗憾度量（预测误差）与KL散度约束结合，避免生成不切实际的对抗样本，同时确保数据效率。实验表明，该方法在多个视频预测基准上显著提升了长时域预测准确性和下游规划性能，尤其在处理罕见事件（如碰撞、物体交互）时效果突出。这项工作为世界模型的主动学习提供了新范式，有望推动具身智能和自动驾驶等领域的模型鲁棒性提升。",
+  "tags": [
+    "World Model",
+    "Active Learning",
+    "Reinforcement Learning",
+    "Video Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:52:02Z",
+  "collected_at": "2026-05-20T22:59:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过主动生成对抗性数据（而非被动采样）来暴露世界模型在罕见交互关键状态下的失败，显著提升模型鲁棒性。",
+      "将遗憾度量（预测误差）与KL散度约束结合，平衡了数据探索与生成样本的真实性，避免了不切实际的对抗扰动。",
+      "该方法在长时域预测和下游规划任务中优于现有被动学习基线，尤其对自动驾驶等高风险场景具有实际价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
