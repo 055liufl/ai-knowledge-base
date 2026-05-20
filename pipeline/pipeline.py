@@ -651,8 +651,10 @@ def _load_raw_from_disk() -> list[dict[str, Any]]:
             with open(filepath, "r", encoding="utf-8") as f:
                 data = json.load(f)
             if isinstance(data, list):
-                all_items.extend(data)
-            elif isinstance(data, dict):
+                for item in data:
+                    if isinstance(item, dict) and "url" in item:
+                        all_items.append(item)
+            elif isinstance(data, dict) and "url" in data:
                 all_items.append(data)
         except (json.JSONDecodeError, OSError) as exc:
             logger.warning("加载原始数据失败 %s: %s", filepath.name, exc)
