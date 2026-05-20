@@ -113,8 +113,11 @@ def _http_get(url: str, headers: dict[str, str] | None = None, params: dict[str,
         RuntimeError: 当请求失败或响应异常时。
     """
     try:
+        request_headers = {"Accept-Encoding": "gzip, deflate"}
+        if headers:
+            request_headers.update(headers)
         with httpx.Client(timeout=REQUEST_TIMEOUT) as client:
-            response = client.get(url, headers=headers, params=params)
+            response = client.get(url, headers=request_headers, params=params)
             response.raise_for_status()
             content_type = response.headers.get("content-type", "")
             if "application/json" in content_type:
