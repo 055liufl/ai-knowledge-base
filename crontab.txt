@@ -1,0 +1,16 @@
+# AI 知识库自动化采集定时任务
+# 添加到系统 crontab: crontab -e
+# 查看定时任务: crontab -l
+
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+
+# 1. 每天早上 8:00 执行 Step 1-2（免费采集）
+# - Step 1: 从 GitHub / RSS 采集原始数据
+# - Step 2: 保存原始数据到 knowledge/raw/
+0 8 * * * cd ~/ai-knowledge-base && python pipeline/pipeline.py --step 1 --step 2 >> logs/collect.log 2>&1
+
+# 2. 每周日上午 10:00 执行 Step 3-4（AI 分析入库）
+# - Step 3: 调用 LLM 分析内容
+# - Step 4: 保存标准化文章到 knowledge/articles/
+0 10 * * 0 cd ~/ai-knowledge-base && python pipeline/pipeline.py --step 3 --step 4 >> logs/analyze.log 2>&1
