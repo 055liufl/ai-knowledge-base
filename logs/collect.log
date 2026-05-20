@@ -1,0 +1,38 @@
+usage: pipeline.py [-h] [--sources SOURCES] [--limit LIMIT] [--dry-run]
+                   [--verbose]
+pipeline.py: error: unrecognized arguments: --step 1 --step 2
+2026-05-20 22:30:11 [INFO] __main__: ==================================================
+2026-05-20 22:30:11 [INFO] __main__: 启动流水线: sources=['github', 'rss'], limit=10, steps={1, 2}, dry_run=False
+2026-05-20 22:30:11 [INFO] __main__: ==================================================
+2026-05-20 22:30:11 [INFO] __main__: 开始采集 GitHub: limit=10
+2026-05-20 22:30:12 [INFO] httpx: HTTP Request: GET https://api.github.com/search/repositories?q=llm%2Blanguage%3Apython&sort=stars&order=desc&per_page=20 "HTTP/1.1 200 OK"
+2026-05-20 22:30:12 [INFO] __main__: GitHub 采集完成: 10 条
+2026-05-20 22:30:12 [INFO] __main__: 开始采集 RSS: limit=10
+2026-05-20 22:30:12 [INFO] __main__: 加载 RSS 配置: 总计 20 个源，启用 8 个
+2026-05-20 22:30:17 [WARNING] __main__: RSS 采集失败 'Hacker News': 请求失败: https://news.ycombinator.com/rss - EOF occurred in violation of protocol (_ssl.c:1145)
+2026-05-20 22:30:18 [INFO] httpx: HTTP Request: GET https://lobste.rs/t/ai.rss "HTTP/1.1 200 OK"
+2026-05-20 22:30:18 [ERROR] __main__: 流水线执行失败: 'zstd.ZstdDecompressionObj' object has no attribute 'eof'
+Traceback (most recent call last):
+  File "pipeline/pipeline.py", line 841, in main
+    stats = run_pipeline(sources=sources, limit=args.limit, steps=steps, dry_run=args.dry_run)
+  File "pipeline/pipeline.py", line 690, in run_pipeline
+    items = collect_rss(limit)
+  File "pipeline/pipeline.py", line 299, in collect_rss
+    text = _http_get(feed_url)
+  File "pipeline/pipeline.py", line 117, in _http_get
+    response = client.get(url, headers=headers, params=params)
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_client.py", line 928, in send
+    raise exc
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_client.py", line 922, in send
+    response.read()
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_models.py", line 881, in read
+    self._content = b"".join(self.iter_bytes())
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_models.py", line 898, in iter_bytes
+    decoded = decoder.decode(raw_bytes)
+  File "/home/lfl/.local/lib/python3.8/site-packages/httpx/_decoders.py", line 186, in decode
+    while self.decompressor.eof and self.decompressor.unused_data:
+AttributeError: 'zstd.ZstdDecompressionObj' object has no attribute 'eof'

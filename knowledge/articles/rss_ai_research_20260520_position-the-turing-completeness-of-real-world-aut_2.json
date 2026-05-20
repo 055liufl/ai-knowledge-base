@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-032",
+  "title": "Position: The Turing-Completeness of Real-World Autoregressive Transformers Relies Heavily on Context Management",
+  "source_url": "https://arxiv.org/abs/2605.19514",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对“Transformer 是图灵完备”这一常见论断进行了严谨的辨析，指出该论断在文献中常被混淆为两种不同设定：一是固定 Transformer 系统设定，即一个固定的自回归 Transformer 配合固定的上下文管理方法逐步处理不同长度的输入；二是缩放族设定，即通过一系列不同模型（如增加上下文窗口长度或数值精度）来模拟图灵机。作者通过理论分析证明，在固定系统设定下，现实世界中的自回归 Transformer 的图灵完备性高度依赖于上下文管理机制（如外部记忆、滑动窗口或提示工程），而非模型本身固有的计算能力。该研究澄清了 Transformer 计算能力的边界，对于理解大语言模型的局限性、设计更高效的上下文管理策略以及推动可解释 AI 发展具有重要意义。值得关注的是，它揭示了当前主流 LLM 在缺乏显式外部记忆时可能无法实现通用计算，这对 AI 安全、模型评估和未来架构设计具有直接指导价值。",
+  "tags": [
+    "Transformer",
+    "图灵完备性",
+    "上下文管理",
+    "计算理论",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:32:20Z",
+  "collected_at": "2026-05-20T22:36:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer 的图灵完备性在固定系统设定下并非模型固有属性，而是依赖于上下文管理方法。",
+      "缩放族设定通过改变模型参数（如上下文窗口长度）实现图灵完备，但现实部署中模型是固定的。",
+      "该发现挑战了 LLM 作为通用计算设备的常见认知，强调了外部记忆和上下文管理的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

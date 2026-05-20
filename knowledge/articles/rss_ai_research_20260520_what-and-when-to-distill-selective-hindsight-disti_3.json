@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-028",
+  "title": "What and When to Distill: Selective Hindsight Distillation for Multi-Turn Agents",
+  "source_url": "https://arxiv.org/abs/2605.19447",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“选择性后见蒸馏”（Selective Hindsight Distillation, SHD）的方法，用于优化多轮交互场景下的LLM代理训练。在强化学习框架下，LLM代理通常只能从稀疏的任务奖励中学习，但长期信用分配是一个难题：单一的成功或失败信号需要分配到多个动作上。现有方法依赖轨迹级别的奖励或代理信号，未能充分利用每步的环境反馈（如错误信息、页面变化、观察结果等）。SHD通过选择性蒸馏，在训练过程中动态识别并利用关键反馈步骤，从而更有效地进行信用分配。该方法特别关注多轮代理设置，这是一个尚未充分探索的领域。实验表明，SHD在多个多轮任务上显著提升了代理的性能和样本效率，为LLM在复杂交互环境中的应用提供了新的训练范式。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Multi-Turn Agent",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:32:20Z",
+  "collected_at": "2026-05-20T22:43:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出选择性后见蒸馏方法，解决多轮LLM代理训练中的长期信用分配问题。",
+      "充分利用每步环境反馈（如错误信息、页面变化），而非仅依赖轨迹级奖励。",
+      "在多轮任务上显著提升代理性能和样本效率，填补了该领域的研究空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

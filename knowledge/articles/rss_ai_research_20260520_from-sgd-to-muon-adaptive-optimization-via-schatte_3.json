@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260520-054",
+  "title": "From SGD to Muon: Adaptive Optimization via Schatten-p Norms",
+  "source_url": "https://arxiv.org/abs/2605.19781",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的自适应优化方法，通过 Schatten-p 范数统一了矩阵级优化器的几何约束，如 Muon 等现代优化器。现有方法（如 Muon）通过设计或经验选择固定的线性最小化预言（LMO）几何结构，但未必最优。作者引入了一种高效的数据驱动准则，能够根据问题几何动态选择代理优化器，从而提升优化性能。该方法在理论上统一了多种矩阵级优化器，并在实践中展示了更好的收敛性和泛化能力。这项工作值得关注，因为它为深度学习优化领域提供了一种自适应、理论驱动的框架，可能替代当前广泛使用的固定几何优化器，如 Adam 或 Muon，尤其在需要处理高维参数矩阵的任务中（如 Transformer 训练）。通过动态调整优化几何，该方法有望减少超参数调优成本，并提高训练效率。",
+  "tags": [
+    "optimization",
+    "deep learning",
+    "adaptive optimizer",
+    "Schatten-p norm"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:32:20Z",
+  "collected_at": "2026-05-20T22:45:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 Schatten-p 范数统一了矩阵级优化器的几何约束，为 Muon 等优化器提供了理论框架。",
+      "提出数据驱动准则动态选择 LMO 几何，替代固定几何设计，提升优化自适应能力。",
+      "实验表明该方法在收敛速度和泛化性能上优于固定几何优化器，尤其在 Transformer 训练中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

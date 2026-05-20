@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260520-038",
+  "title": "Towards Multi-Model LLM Schedulers: Empirical Insights into Offloading and Preemption",
+  "source_url": "https://arxiv.org/abs/2605.19593",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《Towards Multi-Model LLM Schedulers: Empirical Insights into Offloading and Preemption》针对现代大语言模型（LLM）部署中日益增长的多模型服务需求，探讨了在共享异构硬件上运行多个不同架构、规模和专业化模型时面临的资源分配、调度和卸载问题。研究重点分析了在GPU内存受限条件下，部分CPU-GPU卸载和抢占机制的必要性及优化策略。通过实证实验，论文揭示了现有系统主要针对单模型吞吐量优化的局限性，并提出了面向多模型场景的调度器设计原则。这项工作对于提升LLM服务基础设施的效率、降低延迟和成本具有重要意义，尤其适用于需要同时支持多种模型（如聊天、代码生成、翻译等）的云服务平台。其创新性在于系统性地研究了多模型共存下的调度挑战，并提供了可操作的实证见解。",
+  "tags": [
+    "LLM",
+    "Scheduling",
+    "Offloading",
+    "Preemption",
+    "Multi-Model"
+  ],
+  "author": null,
+  "published_at": "2026-05-20T22:32:20Z",
+  "collected_at": "2026-05-20T22:44:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模型共享异构硬件时，GPU内存约束下的卸载和抢占策略对系统性能至关重要，现有单模型优化方法不再适用。",
+      "不同模型架构和大小对资源分配和调度策略的敏感性差异显著，需要自适应调度算法来平衡吞吐量和延迟。",
+      "实证结果表明，合理的抢占机制可以显著提升多模型场景下的资源利用率和响应速度，但需避免过度抢占导致性能下降。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
