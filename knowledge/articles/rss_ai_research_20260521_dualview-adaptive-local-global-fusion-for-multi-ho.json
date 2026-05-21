@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260521-080",
+  "title": "DualView: Adaptive Local-Global Fusion for Multi-Hop Document Reranking",
+  "source_url": "https://arxiv.org/abs/2605.18767",
+  "source_platform": "rss_ai_research",
+  "summary": "DualView 是一种针对多跳文档重排序的自适应局部-全局融合框架。多跳问答需要从多个文档中聚合信息，这是知识密集型应用的关键能力。其核心挑战在于从检索到的候选项中高效识别最小相关文档集，同时保持高召回率。该框架作为一个轻量级的检索后阶段，在 E5 嵌入之上运行，通过级联的双视角机制实现：局部视角关注单个文档内的细粒度相关性，全局视角捕捉跨文档的交互与依赖。这种自适应融合能够动态平衡局部与全局信号，从而在保持效率的同时提升重排序的准确性。该方法特别适用于需要多步推理的复杂问答场景，如开放域问答和事实验证。论文通过实验证明了其在多个基准数据集上的有效性，显著优于传统单视角重排序方法，并且计算开销较低。该工作为多跳文档检索与排序提供了新的思路，具有重要的实用价值。",
+  "tags": [
+    "Multi-Hop QA",
+    "Document Reranking",
+    "Retrieval-Augmented Generation"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:35:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种轻量级的双视角级联重排序框架，通过局部与全局视角的自适应融合，有效提升了多跳文档重排序的准确性。",
+      "该框架在保持高召回率的同时，显著降低了计算开销，适合作为检索后处理阶段集成到现有系统中。",
+      "实验表明，DualView 在多个多跳问答基准上优于传统单视角方法，展示了其在知识密集型应用中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-119",
+  "title": "First-Passage Prediction of Grokking Delay: ACalibrated Law under AdamW with Causal Validation",
+  "source_url": "https://arxiv.org/abs/2605.18845",
+  "source_platform": "rss_ai_research",
+  "summary": "本文首次对AdamW优化器下的grokking延迟进行了定量预测。grokking是一种神经网络在过拟合后突然泛化的现象，其延迟时间难以预测。作者将延迟视为首次通过时间，推导出一个封闭形式的定律：T_grok - T_mem = (1 / 2 kappa_LL eta lambda) log(V_mem / V_star)，其中V_t是参数范数的平方，V_star是架构相关的阈值，kappa_LL吸收了AdamW对干净SGD收缩率2 eta lambda的修正。该定律在单个超参数设置下校准后，能够跨不同学习率、权重衰减、模型宽度和深度进行因果验证，并预测训练集大小的影响。这项工作为理解grokking机制提供了理论工具，对深度学习理论和实践具有重要价值。",
+  "tags": [
+    "grokking",
+    "AdamW",
+    "深度学习理论",
+    "泛化"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:37:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次给出了AdamW下grokking延迟的定量预测，推导出封闭形式的定律。",
+      "该定律在单个校准后能跨超参数和模型架构进行因果验证。",
+      "揭示了grokking延迟与参数范数、学习率、权重衰减等关键因素的关系。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

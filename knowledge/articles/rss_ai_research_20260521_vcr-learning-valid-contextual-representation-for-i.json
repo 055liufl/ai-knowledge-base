@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-114",
+  "title": "VCR: Learning Valid Contextual Representation for Incomplete Wearable Signals",
+  "source_url": "https://arxiv.org/abs/2605.18837",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为VCR（Learning Valid Contextual Representation）的方法，用于处理可穿戴设备信号中的模态缺失问题。可穿戴设备通过多模态信号实现连续健康监测，但实际部署中面临标注数据有限和传感器不完整（即部分模态缺失）的挑战。现有的大规模自监督预训练方法虽然减少了对标注数据的依赖，但大多假设所有模态完整可用。当前处理模态缺失的方法通常尝试重建整个缺失信号，这可能导致模型产生幻觉，生成不准确的模态特定信息。VCR通过学习有效的上下文表示，避免了直接重建缺失模态，而是利用可用模态的上下文信息来生成鲁棒的表示，从而提升在不完整信号下的任务性能。该方法在多个真实可穿戴数据集上进行了验证，展示了其在处理模态缺失时的有效性和泛化能力。这项研究对于推动可穿戴设备在现实场景中的部署具有重要意义，因为它解决了实际应用中常见的传感器故障或数据缺失问题，同时避免了传统重建方法带来的幻觉风险。",
+  "tags": [
+    "Self-Supervised Learning",
+    "Multimodal Learning",
+    "Wearable Devices",
+    "Missing Modality"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:37:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VCR通过学习有效的上下文表示，避免了直接重建缺失模态，从而减少模型幻觉。",
+      "该方法在真实可穿戴数据集上验证了其在不完整信号下的鲁棒性和泛化能力。",
+      "VCR解决了现有自监督预训练方法假设模态完整性的局限性，更贴合实际部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

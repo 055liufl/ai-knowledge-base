@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260521-109",
+  "title": "Hybrid-LoRA: Bridging Full Fine-Tuning and Low-Rank Adaptation for Post-Training",
+  "source_url": "https://arxiv.org/abs/2605.18822",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Hybrid-LoRA 的新型参数高效微调方法，旨在弥合全参数微调与低秩适配（LoRA）之间的差距，特别针对大型语言模型（LLM）的后训练阶段。后训练是使 LLM 适应复杂下游行为（如指令遵循、偏好对齐和多步推理）的关键步骤。近期，基于可验证奖励的强化学习（RLVR）已成为提升推理能力的有效后训练范式，其中 GRPO 和 GSPO 等无评论家算法实现了可扩展优化。然而，RLVR 训练通常面临计算成本高和收敛不稳定的挑战。Hybrid-LoRA 通过动态调整适配器的秩，在训练初期模拟全参数微调的灵活性，后期则收敛到低秩结构以保持效率，从而在性能与计算开销之间取得平衡。实验表明，该方法在多个推理基准上优于标准 LoRA，并接近全参数微调的效果，同时显著减少了内存和计算需求。这项工作对于推动 LLM 后训练的高效化具有重要价值，尤其适用于资源受限的开发者场景。",
+  "tags": [
+    "LLM",
+    "LoRA",
+    "Parameter-Efficient Fine-Tuning",
+    "Post-Training",
+    "RLVR"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:37:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Hybrid-LoRA 通过动态秩调整机制，在训练初期模拟全参数微调的高容量，后期过渡到低秩结构，实现了性能与效率的平衡。",
+      "该方法在多个推理基准上显著优于标准 LoRA，并接近全参数微调的效果，同时大幅降低了内存和计算成本。",
+      "Hybrid-LoRA 特别适用于 RLVR 后训练范式，解决了 GRPO 等算法在可扩展优化中的收敛稳定性和资源消耗问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

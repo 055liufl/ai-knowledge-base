@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-099",
+  "title": "PROWL: Prioritized Regret-Driven Optimization for World Model Learning",
+  "source_url": "https://arxiv.org/abs/2605.18803",
+  "source_platform": "rss_ai_research",
+  "summary": "PROWL（优先后悔驱动优化）是一种用于世界模型学习的新方法，旨在解决现代动作条件视频世界模型在罕见但关键交互转换上的不可靠性问题。这些转换对下游规划和策略性能至关重要，但被动演示数据系统性地低估了这些高影响区域。PROWL通过主动引发模型失败而非依赖其自然发生来提升鲁棒性。该方法采用KL约束的对抗性数据收集策略，优先选择那些模型当前预测与真实结果差异最大的状态-动作对，从而高效地探索高后悔区域。实验表明，PROWL在多个基准任务上显著提升了世界模型在长尾事件上的预测准确性，并改善了基于模型的规划性能。这项工作为强化学习和世界模型学习提供了一种新的主动学习范式，特别适用于安全关键和样本效率要求高的应用场景。",
+  "tags": [
+    "World Model",
+    "Reinforcement Learning",
+    "Active Learning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:36:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PROWL通过优先选择高后悔区域进行对抗性数据收集，主动暴露世界模型的弱点，从而提升其在罕见但关键转换上的鲁棒性。",
+      "该方法采用KL约束确保数据收集不偏离原始策略分布太远，平衡了探索与利用，避免了过度拟合到对抗性样本。",
+      "实验证明PROWL在多个基准上显著改善了世界模型的长尾事件预测准确性，并提升了基于模型的规划性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-094",
+  "title": "HELLoRA: Hot Experts Layer-Level Low-Rank Adaptation for Mixture-of-Experts Models",
+  "source_url": "https://arxiv.org/abs/2605.18795",
+  "source_platform": "rss_ai_research",
+  "summary": "HELLoRA（Hot Experts Layer-Level Low-Rank Adaptation）是一种针对混合专家（MoE）模型的高效参数微调方法。传统的低秩适配（LoRA）方法主要针对密集架构设计，而MoE模型通过稀疏激活机制在保持计算成本的同时扩展参数规模，这为更高效的适配提供了新机会。HELLoRA的核心创新在于，它仅将LoRA模块附加到MoE模型中最频繁激活的“专家”层上，从而大幅减少需要微调的参数量，同时保持或提升模型性能。该方法通过识别和利用专家激活的热度分布，实现了对MoE模型的高效适配，避免了全参数微调的高昂成本。HELLoRA在多个自然语言处理任务上进行了验证，结果表明其在参数效率、训练速度和下游任务性能方面均优于现有方法。这项研究对于推动MoE模型在资源受限场景下的应用具有重要意义，尤其是在大模型部署和持续学习领域。",
+  "tags": [
+    "LoRA",
+    "Mixture-of-Experts",
+    "Parameter-Efficient Fine-Tuning",
+    "Sparse Activation"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:36:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HELLoRA通过仅对MoE模型中高频激活的专家层应用LoRA，显著降低了微调参数量，同时保持了模型性能。",
+      "该方法利用MoE模型的稀疏激活特性，实现了比传统全参数微调更高的参数效率和训练速度。",
+      "HELLoRA在多个NLP任务上验证了其有效性，为资源受限场景下的MoE模型适配提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260521-021",
+  "title": "Porting microgpt to Futhark, Part I",
+  "source_url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了将 microgpt（一个轻量级 GPT 模型实现）移植到 Futhark 编程语言的过程。Futhark 是一种面向数据并行计算的语言，特别适合 GPU 加速。作者详细描述了移植过程中的技术挑战和解决方案，包括如何将 microgpt 的神经网络层（如注意力机制、前馈网络）映射到 Futhark 的并行原语上，以及如何优化性能。该工作展示了 Futhark 在深度学习推理中的潜力，尤其是对于小型模型的高效部署。值得关注的是，它探索了使用非传统语言（如 Futhark）进行 AI 模型加速的可能性，可能为边缘计算或资源受限环境提供新思路。",
+  "tags": [
+    "Futhark",
+    "microgpt",
+    "GPU",
+    "并行计算",
+    "深度学习"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:50Z",
+  "collected_at": "2026-05-21T11:29:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Futhark 的并行原语可以高效实现 GPT 模型的注意力机制和前馈网络。",
+      "移植过程中需要处理 Futhark 与 Python 生态的互操作性问题。",
+      "该工作展示了非主流语言在 AI 推理加速中的潜力，尤其适合小型模型。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260521-041",
+  "title": "When Tabular Foundation Models Meet Strategic Tabular Data: A Prior Alignment Approach",
+  "source_url": "https://arxiv.org/abs/2605.19662",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对表格基础模型在策略性数据场景下的先验对齐方法。传统的表格基础模型（如基于预训练先验数据拟合网络PFNs）在非策略性设置中表现出色，但在许多实际决策场景中，个体可能会在模型部署后策略性地修改其特征以获得有利结果，导致数据分布发生偏移。这种策略性行为会破坏模型原有的泛化能力。为此，作者提出了一种先验对齐方法，通过调整模型对策略性数据分布的适应性，保持其在部署后的性能。该方法通过引入策略性数据生成机制和先验对齐损失函数，使模型能够学习到对策略性变化鲁棒的表征。实验表明，该方法在多个真实世界数据集上显著优于现有基线，特别是在信用评分、贷款审批等受策略性行为影响的场景中。这项工作将表格基础模型的应用扩展到了策略性环境，为构建更可靠的决策系统提供了新思路。",
+  "tags": [
+    "Tabular Foundation Model",
+    "Strategic Data",
+    "Prior Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:32:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将表格基础模型应用于策略性数据场景，解决了传统模型在个体策略性行为下的性能退化问题。",
+      "提出先验对齐方法，通过模拟策略性数据分布和设计对齐损失，增强了模型对分布偏移的鲁棒性。",
+      "在多个真实世界决策任务（如信用评分）上验证了方法的有效性，为实际部署提供了理论支持。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

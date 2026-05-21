@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-120",
+  "title": "Lost and Found in Translation: Variational Diagnostics for Neural Codebook Channels",
+  "source_url": "https://arxiv.org/abs/2605.18846",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的诊断框架，用于分析变分自编码器（VAE）中编码器与解码器之间的潜在空间通信问题。传统通信系统不仅会因随机噪声而失败，还会因发射器和接收器使用不兼容的操作码本而失败。VAE通过联合训练编码器q_phi和解码器p_theta，其潜在空间常被视作离散码本，用于聚类、条件生成和机制可解释性。然而，标准的VAE诊断指标（如ELBO、活跃单元、互信息）无法有效检测编码器与解码器之间的码本不匹配问题。作者借鉴通信理论中的信道诊断方法，提出了变分诊断工具，能够量化潜在空间中的信息丢失和码本对齐错误。该方法通过分析编码器输出分布与解码器先验分布之间的差异，识别出潜在通道中的瓶颈和失真。实验表明，该诊断方法能揭示传统指标无法捕捉的失败模式，例如解码器忽略编码器信息或编码器生成无效码字的情况。这项工作为改进VAE训练和潜在空间设计提供了新视角，尤其适用于需要高保真度潜在表示的应用场景。",
+  "tags": [
+    "VAE",
+    "Latent Space",
+    "Communication Theory",
+    "Diagnostics"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:37:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准VAE诊断指标（如ELBO、活跃单元）无法检测编码器与解码器之间的码本不匹配问题，导致潜在空间通信失败。",
+      "借鉴通信理论中的信道诊断方法，提出了变分诊断工具，可量化潜在空间中的信息丢失和码本对齐错误。",
+      "该方法能识别传统指标无法捕捉的失败模式，如解码器忽略编码器信息或编码器生成无效码字。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

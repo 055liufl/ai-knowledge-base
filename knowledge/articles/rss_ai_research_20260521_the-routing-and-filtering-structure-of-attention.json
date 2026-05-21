@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260521-111",
+  "title": "The Routing and Filtering Structure of Attention",
+  "source_url": "https://arxiv.org/abs/2605.18826",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对注意力机制中的交互矩阵 QK^T 进行了深入分析，发现其包含两个纠缠的计算：一个反对称分量，负责在位置之间重新分配信息（路由）；一个对称分量，负责缩放相互相关性（过滤）。通过对五个预训练Transformer模型中的1776个注意力头进行分解，作者发现路由操作在低秩状态下运行，远低于权重核分配的路由容量。此外，文章引入了S-D注意力作为诊断工具，用于分离和评估这两个分量。这项研究揭示了注意力机制内部结构的复杂性，为理解Transformer的工作原理提供了新的视角，并可能启发更高效的注意力机制设计。",
+  "tags": [
+    "Attention",
+    "Transformer",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:37:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力交互矩阵QK^T可分解为反对称的路由分量和对称的过滤分量，两者纠缠但功能不同。",
+      "在多个预训练模型中，路由操作的实际秩远低于理论容量，表明存在冗余或优化空间。",
+      "引入S-D注意力作为诊断工具，有助于分离和评估路由与过滤对模型性能的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

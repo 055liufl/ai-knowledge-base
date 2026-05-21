@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-004",
+  "title": "Learn-by-Wire Training Control Governance: Bounded Autonomous Training Under Stress for Stability and Efficiency",
+  "source_url": "https://arxiv.org/abs/2605.19008",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Learn-by-Wire Guard (LBW-Guard) 的自主训练控制治理层，旨在解决现代语言模型训练中因激进学习率、规模扩展和运行时压力导致的训练不稳定、性能下降和计算资源浪费问题。LBW-Guard 并非替代 AdamW 优化器，而是在其之上运行，通过观察训练遥测数据（如梯度范数、损失变化等），实时识别不稳定敏感区域，并动态调整学习率、梯度裁剪等超参数，从而将训练过程约束在稳定且高效的边界内。该方法借鉴了控制理论中的“线控”思想，实现了对训练过程的有限自主控制，兼顾了训练稳定性和效率。实验表明，LBW-Guard 能有效减少训练崩溃、提升收敛速度，并在多种规模模型上验证了其鲁棒性。该工作为大规模语言模型训练提供了一种实用的治理框架，值得关注。",
+  "tags": [
+    "LLM",
+    "Training Stability",
+    "Autonomous Control",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:30:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LBW-Guard 作为位于 AdamW 之上的治理层，通过实时监控训练遥测数据动态调整超参数，有效应对训练不稳定问题。",
+      "该方法借鉴控制理论中的“线控”思想，实现了对训练过程的有限自主控制，平衡了稳定性与效率。",
+      "实验证明 LBW-Guard 能显著减少训练崩溃、提升收敛速度，并在多种模型规模上具有鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

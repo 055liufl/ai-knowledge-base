@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-068",
+  "title": "Not Every Rubric Teaches Equally: Policy-Aware Rubric Rewards for RLVR",
+  "source_url": "https://arxiv.org/abs/2605.20164",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“策略感知评分标准奖励”（Policy-Aware Rubric Rewards）的新方法，用于强化学习中的可验证奖励（RLVR）场景。传统方法中，当模型行为需要同时满足多个定性标准（如安全性、连贯性、有用性）时，通常使用基于评分标准（rubric）的奖励机制，即对每个标准进行人工评分并聚合为标量奖励。然而，标准的静态聚合方式（如加权求和）将人类预设的重要性与当前模型策略下的实际学习难度混为一谈，导致奖励信号失真，模型可能过度关注容易优化的标准而忽略关键但难优化的标准。本文通过引入策略感知机制，动态调整各标准的权重，使其反映当前策略下各标准的实际学习进展，从而更有效地引导模型行为。实验表明，该方法在多个任务（如文本生成、对话系统）上显著提升了模型对关键标准的满足程度，同时保持了整体性能。该工作值得关注，因为它解决了RLVR中一个被忽视的关键问题——奖励聚合的静态性与策略动态性之间的不匹配，为多目标强化学习提供了更鲁棒的奖励设计范式。",
+  "tags": [
+    "Reinforcement Learning",
+    "Reward Design",
+    "RLVR",
+    "Multi-Objective Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:34:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态评分标准聚合会混淆人类预设重要性与策略实际学习难度，导致奖励信号失真",
+      "策略感知权重动态调整各标准的重要性，使奖励更贴合当前模型的学习状态",
+      "该方法在多个定性标准并存的场景中显著提升了对关键标准的满足度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

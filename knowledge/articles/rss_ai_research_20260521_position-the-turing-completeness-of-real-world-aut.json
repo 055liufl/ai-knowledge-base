@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260521-032",
+  "title": "Position: The Turing-Completeness of Real-World Autoregressive Transformers Relies Heavily on Context Management",
+  "source_url": "https://arxiv.org/abs/2605.19514",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对“Transformer 是图灵完备的”这一常见论断进行了批判性分析，指出该论断在文献中常混淆两种不同设定：固定 Transformer 系统设定（固定自回归 Transformer 与固定上下文管理方法结合）和缩放族设定（模型族随上下文窗口或数值精度变化）。作者认为，在现实应用中，固定 Transformer 系统（如 GPT-4）的图灵完备性高度依赖于上下文管理方法（如滑动窗口、分块处理等），而非模型本身。通过理论分析和实验，论文揭示了上下文管理机制在实现图灵完备性中的关键作用，并指出许多声称 Transformer 图灵完备的工作实际上隐含了对上下文管理的假设。这一发现对理解大语言模型的计算能力边界、设计更高效的推理系统以及评估模型的实际表达能力具有重要意义，尤其挑战了将模型本身视为通用计算设备的观点。",
+  "tags": [
+    "Transformer",
+    "图灵完备性",
+    "上下文管理",
+    "计算理论"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:31:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定 Transformer 系统的图灵完备性主要源于上下文管理方法，而非模型架构本身。",
+      "文献中常混淆固定系统设定与缩放族设定，导致对 Transformer 计算能力的过度解读。",
+      "现实中的自回归 Transformer（如 GPT-4）依赖滑动窗口、分块等上下文管理策略来实现复杂计算。",
+      "该研究为理解大语言模型的计算边界和设计更高效的推理系统提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

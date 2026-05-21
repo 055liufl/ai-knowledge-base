@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-130",
+  "title": "SAGE: Shaping Anchors for Guided Exploration in RLVR of LLMs",
+  "source_url": "https://arxiv.org/abs/2605.18864",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了SAGE（Shaping Anchors for Guided Exploration in RLVR of LLMs）方法，旨在解决强化学习与可验证奖励（RLVR）在提升大语言模型推理能力时的一个关键矛盾：虽然RLVR能显著提高pass@1指标（即单次采样正确率），但对pass@k（多次采样正确率）的提升却有限。作者通过实验和分析指出，RLVR并未让模型真正习得新的推理能力，而是更高效地采样了基座模型中已存在的推理模式。SAGE通过塑造锚点（anchors）来引导探索过程，使模型在训练中更系统地探索和巩固多样化的推理路径，从而在保持pass@1优势的同时，显著提升pass@k性能。该工作对理解RLVR在LLM推理中的本质作用具有重要理论价值，并为提升模型推理鲁棒性提供了实用方法。值得关注的原因在于：它挑战了RLVR能赋予模型全新推理能力的普遍假设，揭示了当前强化学习微调范式的局限性，并提出了可落地的改进方案。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "RLVR"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:38:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR提升pass@1但未显著改善pass@k，表明其并未赋予模型全新推理能力，而是优化了已有推理模式的采样效率。",
+      "SAGE通过引入锚点引导探索，使模型在训练中更均衡地覆盖多种推理路径，从而同时提升pass@1和pass@k。",
+      "该研究揭示了当前RLVR范式的根本局限，即奖励信号可能仅强化了模型已有的行为模式，而非促进真正的能力涌现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

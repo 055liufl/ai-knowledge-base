@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260521-104",
+  "title": "Metric-Gradient Projection for Stable Multi-Agent Policy Learning",
+  "source_url": "https://arxiv.org/abs/2605.18809",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“度量梯度投影”（Metric-Gradient Projection）的新方法，用于解决多智能体强化学习（MARL）中因策略更新耦合导致的训练不稳定和收敛缓慢问题。在多智能体系统中，每个智能体的策略更新会改变其他智能体的优化环境，这种耦合可能导致集体改进的可积分量与循环交互动力学纠缠，从而引发学习不稳定。现有方法如正则化、信用分配和共识机制通过局部或全局约束来稳定训练，但往往牺牲了收敛速度或最优性。本文提出的度量梯度投影方法通过将梯度投影到度量空间中，解耦智能体间的相互影响，从而在保持收敛速度的同时提高训练稳定性。实验结果表明，该方法在多个标准MARL基准任务上显著提升了学习效率和最终性能。该工作为多智能体学习中的稳定性问题提供了新的理论视角和实用工具，值得关注。",
+  "tags": [
+    "Multi-Agent RL",
+    "Gradient Projection",
+    "Stability"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:36:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体策略更新耦合导致优化景观变化，是训练不稳定的根源",
+      "度量梯度投影通过解耦梯度更新，在保持收敛速度的同时提升稳定性",
+      "该方法在多个MARL基准上优于正则化、信用分配等现有稳定化技术"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

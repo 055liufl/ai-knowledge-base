@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-061",
+  "title": "Probabilistic Tiny Recursive Model",
+  "source_url": "https://arxiv.org/abs/2605.19943",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为概率性小递归模型（Probabilistic Tiny Recursive Model, PTRM）的新方法，旨在解决传统小递归模型（TRM）在复杂推理任务中因确定性递归而陷入次优解的问题。TRM通过迭代细化潜在状态和最终答案，以远少于现代大语言模型（LLM）的参数实现高效推理，但其确定性递归缺乏跳出局部最优的机制。现有解决方案通常依赖测试时对特定任务输入进行扰动，并通过投票聚合答案，但这增加了计算复杂度和不稳定性。PTRM通过引入概率性递归机制，在每一步迭代中注入可控随机性，使模型能够探索更广泛的解空间，从而避免收敛到次优解。实验表明，PTRM在多个推理基准（如数学推理、逻辑推理）上，以更少的参数和计算开销，显著提升了准确率和鲁棒性。该工作值得关注，因为它为轻量级推理模型提供了新的范式，平衡了效率与探索能力，可能推动边缘计算和资源受限场景下的AI应用发展。",
+  "tags": [
+    "Tiny Recursive Model",
+    "Probabilistic Reasoning",
+    "LLM Efficiency",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:33:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTRM通过概率性递归机制替代确定性递归，使模型在推理过程中能跳出局部最优，提升解的质量。",
+      "该方法在保持TRM参数高效优势的同时，显著增强了复杂推理任务的准确性和鲁棒性，无需额外测试时扰动。",
+      "PTRM为轻量级模型在资源受限环境下的推理优化提供了新思路，有望降低对大规模LLM的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

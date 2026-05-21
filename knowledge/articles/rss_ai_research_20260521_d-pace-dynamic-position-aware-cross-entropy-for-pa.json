@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-105",
+  "title": "D-PACE: Dynamic Position-Aware Cross-Entropy for Parallel Speculative Drafting",
+  "source_url": "https://arxiv.org/abs/2605.18810",
+  "source_platform": "rss_ai_research",
+  "summary": "D-PACE 是一种用于并行推测解码的动态位置感知交叉熵损失函数。在大型语言模型（LLM）推理加速中，推测解码通过一个小型草稿模型（drafter）生成多个候选 token，再由大型目标模型并行验证，从而提升效率。近期基于扩散的并行草稿模型（如 DFlash）能够一次性预测整个 B-token 块，支持更深的草稿模型和更长的接受块。然而，现有的多 token 草稿模型目标函数通常使用固定的位置相关权重调度（如头部依赖权重或块位置权重），这限制了模型对不同位置 token 预测的灵活性和准确性。D-PACE 提出了一种动态位置感知方法，根据每个 token 在块中的位置动态调整交叉熵损失的权重，从而更有效地训练草稿模型，使其在并行生成多个 token 时能够更好地平衡不同位置的预测难度。该方法在多个基准测试中显示出显著的加速效果和生成质量提升，为 LLM 推理优化提供了新的思路。值得关注的是，D-PACE 解决了并行推测解码中一个关键的训练目标设计问题，具有较高的实用价值和理论创新性。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Inference Acceleration",
+    "Loss Function"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:36:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "D-PACE 通过动态位置感知权重替代固定权重调度，提升了并行草稿模型训练的灵活性和效果。",
+      "该方法显著加速了 LLM 推理，在多个基准测试中表现出更长的接受块和更高的生成质量。",
+      "D-PACE 为推测解码中的多 token 预测目标函数设计提供了新的理论框架，具有广泛的应用前景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260521-012",
+  "title": "Learning to Hand Off: Provably Convergent Workflow Learning under Interface Constraints",
+  "source_url": "https://arxiv.org/abs/2605.19140",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种在接口约束下的工作流学习问题，其中多个专业化智能体通过共享工件进行控制交接，每个智能体仅能观察该工件的局部函数及其自身私有状态，且没有中央学习器能够访问联合轨迹。这种设置对应于跨组织、供应商或信任边界的多智能体LLM流水线的实际运行模式。作者将这一机制形式化为接口约束半马尔可夫决策过程（IC-SMDP），并提出了一个可证明收敛的工作流学习算法。该算法能够在智能体仅能访问局部信息且无法共享完整轨迹的条件下，有效学习最优工作流策略。论文通过理论分析和实验验证，证明了算法在收敛性和性能上的优势。这项研究对于理解分布式多智能体系统中的协作学习、特别是在LLM驱动的自动化工作流中具有重要价值，因为它解决了实际部署中常见的信息隔离和隐私约束问题。",
+  "tags": [
+    "Multi-Agent",
+    "Workflow Learning",
+    "LLM",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:30:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了接口约束半马尔可夫决策过程（IC-SMDP）形式化框架，用于建模多智能体LLM流水线中的局部观测和交接约束。",
+      "设计了可证明收敛的工作流学习算法，能够在无中央学习器且仅访问局部信息的情况下优化策略。",
+      "解决了跨组织、供应商或信任边界的多智能体协作学习中的关键挑战，具有实际部署意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

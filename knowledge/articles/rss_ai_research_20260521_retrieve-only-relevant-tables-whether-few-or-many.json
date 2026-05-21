@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260521-079",
+  "title": "Retrieve Only Relevant Tables Whether Few or Many: Adaptive Table Retrieval Method",
+  "source_url": "https://arxiv.org/abs/2605.18766",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自适应表检索方法，旨在解决现有文本到SQL任务中固定数量表检索的局限性。传统方法通常从大型数据库中为自然语言查询检索固定数量的k个最相似表，但不同查询实际需要的表数量各不相同且无法预先确定。该方法通过动态调整检索表的数量，仅检索与查询相关的表，无论数量多少，从而提高了检索的准确性和效率。论文可能基于对查询复杂度的分析或使用可学习阈值来决定检索表的数量，避免了因固定k值导致的冗余或遗漏。这项研究对于提升文本到SQL系统的性能具有重要意义，尤其是在处理大规模异构数据库时，能够减少无关表的干扰并降低计算开销。其创新点在于打破了固定检索数量的限制，使检索过程更灵活、更适应查询的实际需求。",
+  "tags": [
+    "Table Retrieval",
+    "Text-to-SQL",
+    "Adaptive Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-05-21T11:26:51Z",
+  "collected_at": "2026-05-21T11:35:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有表检索方法使用固定k值，无法适应不同查询对表数量的不同需求，导致检索不准确或效率低下。",
+      "自适应表检索方法根据查询动态决定检索表的数量，仅返回相关表，提升了检索的精确性和灵活性。",
+      "该方法有望减少文本到SQL任务中的噪声输入，并降低后续SQL生成的计算复杂度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
