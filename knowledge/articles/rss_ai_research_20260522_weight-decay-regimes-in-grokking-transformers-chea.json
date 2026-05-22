@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-107",
+  "title": "Weight Decay Regimes in Grokking Transformers: Cheap Online Diagnostics",
+  "source_url": "https://arxiv.org/abs/2605.20441",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了Transformer在模算术任务中训练时出现的记忆、泛化和崩溃之间的尖锐转变现象。研究发现，权重衰减（weight decay）可以作为这些状态之间的标量经验控制参数。作者提出了两种低成本在线诊断方法：平均成对注意力头余弦相似度和熵标准差，这些方法仅从注意力激活中就能追踪训练动态，并且以更低的计算成本补充了损失景观诊断。该工作揭示了权重衰减在控制Transformer泛化行为中的关键作用，为理解深度学习中的泛化机制提供了新的视角，并提供了实用的在线监控工具。",
+  "tags": [
+    "Transformer",
+    "Weight Decay",
+    "Grokking",
+    "Diagnostics"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:03:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重衰减作为标量控制参数，能够调节Transformer在模算术任务中的记忆、泛化和崩溃状态。",
+      "提出的两种在线诊断方法（平均成对注意力头余弦相似度和熵标准差）仅需注意力激活即可有效追踪训练动态。",
+      "这些诊断方法以较低的计算成本补充了传统的损失景观诊断，为实时监控模型行为提供了实用工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

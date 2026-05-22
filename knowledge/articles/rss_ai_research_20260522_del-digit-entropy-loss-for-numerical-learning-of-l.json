@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260522-096",
+  "title": "DEL: Digit Entropy Loss for Numerical Learning of Large Language Models",
+  "source_url": "https://arxiv.org/abs/2605.20369",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“数字熵损失”（Digit Entropy Loss, DEL）的新型损失函数，旨在改进大型语言模型（LLM）在数字预测任务上的表现。数字预测是数学问题求解和代码生成中的基础能力，但当前广泛使用的最大似然估计（MLE）方法并未针对数字预测进行优化。已有的基于惩罚的方法（如Number Token Loss和Discretized Distance Loss）虽然引入了数值距离的归纳偏置，但会导致数字分布过度尖锐或过度平坦，从而影响预测精度。DEL通过引入数字熵作为正则化项，平衡了数字分布的锐度与平滑度，使模型能够更准确地学习数字的数值结构。实验表明，DEL在多个数学推理和代码生成基准上显著提升了LLM的数字预测准确性，且无需额外数据或模型架构修改。该工作值得关注，因为它直接针对LLM在数值任务中的核心瓶颈，提供了一种简单而有效的训练改进方案，有望推动LLM在科学计算、金融分析等需要精确数字处理的领域中的应用。",
+  "tags": [
+    "LLM",
+    "Loss Function",
+    "Numerical Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:03:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数字熵损失通过正则化数字分布的熵，有效解决了现有惩罚驱动方法中分布过锐或过平的问题。",
+      "该方法无需修改模型架构或增加数据，即可显著提升LLM在数学推理和代码生成中的数字预测准确性。",
+      "DEL的提出揭示了数字预测任务中分布平滑性与锐度之间的权衡，为LLM数值学习提供了新的理论视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

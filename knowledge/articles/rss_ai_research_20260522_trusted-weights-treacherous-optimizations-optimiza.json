@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-133",
+  "title": "Trusted Weights, Treacherous Optimizations? Optimization-Triggered Backdoor Attacks on LLMs",
+  "source_url": "https://arxiv.org/abs/2605.20641",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大型语言模型（LLM）的新型后门攻击方法，利用推理优化（特别是编译优化）中的数值副作用来植入隐蔽后门。传统上，编译优化被认为能保持语义等价性，但作者首次揭示其数值变化可被恶意利用。论文提出了一个统一的优化触发攻击框架，包含两种互补策略，无需修改模型权重即可实现攻击。该研究揭示了LLM部署中一个被忽视的安全漏洞，对模型安全性和可信AI具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Backdoor Attack",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:05:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次发现LLM编译优化的数值副作用可被用于植入后门，打破了优化过程语义等价的假设",
+      "提出无需修改权重的优化触发攻击框架，包含两种互补策略，攻击隐蔽性强",
+      "揭示了LLM部署管线中一个被忽视的安全风险，对大规模模型服务的安全性提出新挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-092",
+  "title": "Causal Unlearning in Collaborative Optimization: Exact and Approximate Influence Reversal under Adversarial Contributions",
+  "source_url": "https://arxiv.org/abs/2605.20341",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HF-KCU 的联邦学习去学习（unlearning）方法，旨在高效移除特定客户端的数据贡献，以满足隐私法规（如 GDPR）中的数据删除要求。传统方法需要从头重新训练模型，计算成本极高（复杂度 O(d^3)）。HF-KCU 通过共轭梯度迭代在 Krylov 子空间中近似影响函数，将复杂度降低至 O(kd)（其中 k 远小于 d），从而实现精确或近似的因果影响逆转。该方法引入因果加权机制，确保仅移除目标客户端的影响，同时保持模型在其他数据上的性能。实验表明，HF-KCU 在多个基准数据集上实现了与重新训练相当的去学习效果，且计算效率显著提升。这项工作值得关注，因为它解决了联邦学习中隐私合规与计算效率之间的核心矛盾，为大规模分布式系统提供了实用的去学习方案，并融合了因果推断与数值优化的创新思路。",
+  "tags": [
+    "Federated Learning",
+    "Machine Unlearning",
+    "Privacy",
+    "Causal Inference"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:02:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HF-KCU 通过 Krylov 子空间中的共轭梯度迭代近似影响函数，将去学习复杂度从 O(d^3) 降至 O(kd)，大幅提升计算效率。",
+      "因果加权机制确保仅移除目标客户端的影响，避免对其他数据贡献的干扰，保持模型整体性能。",
+      "该方法在多个基准数据集上实现了与重新训练相当的去学习效果，验证了其在实际联邦学习场景中的可行性和有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

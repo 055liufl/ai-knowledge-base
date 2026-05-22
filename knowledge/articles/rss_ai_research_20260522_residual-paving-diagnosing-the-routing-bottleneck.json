@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-064",
+  "title": "Residual Paving: Diagnosing the Routing Bottleneck in Selective Refusal Editing",
+  "source_url": "https://arxiv.org/abs/2605.20262",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Residual Paving 的方法，用于解决选择性拒绝编辑中的路由瓶颈问题。该方法将选择性拒绝编辑视为一个三向控制问题：在指定编辑提示上诱导非拒绝行为，同时保持编辑集外的良性行为和有害拒绝。Residual Paving 是一种针对冻结指令调优变压器的路由残差编辑方法，它将路由选择性（是否干预）与残差编辑能力（应用何种编辑）分离。通过早期层路由器预测标量门控，该方法实现了对编辑行为的精确控制，避免了传统方法中路由与编辑能力耦合导致的性能下降。这项工作在 AI 安全和对齐领域具有重要价值，因为它提供了一种更精细的方式来调整模型行为，同时保持其整体安全性和可靠性。该研究通过实验验证了其有效性，展示了在保持模型原有性能的同时，如何高效地编辑特定提示的拒绝行为。",
+  "tags": [
+    "AI Safety",
+    "Model Editing",
+    "Transformer",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:00:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Residual Paving 通过分离路由选择性和残差编辑能力，解决了选择性拒绝编辑中的路由瓶颈问题。",
+      "该方法在冻结指令调优变压器上实现，能够精确控制编辑行为，同时保持模型的安全性和良性行为。",
+      "实验表明，Residual Paving 在编辑特定提示的拒绝行为时，不会显著影响模型在其他任务上的性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

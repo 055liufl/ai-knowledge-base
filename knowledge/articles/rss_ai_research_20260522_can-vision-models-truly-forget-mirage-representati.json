@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-075",
+  "title": "Can Vision Models Truly Forget? Mirage: Representation-Level Certification of Visual Unlearning",
+  "source_url": "https://arxiv.org/abs/2605.20282",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Mirage的框架，用于在垂直联邦学习（VFL）中审计机器遗忘（machine unlearning）的效果。传统的遗忘认证方法仅依赖于输出级别的指标，但本文认为这些方法可能无法真正保证模型对特定数据的遗忘。Mirage框架通过四个互补的诊断工具——线性探针恢复（LPR）、中心核对齐（CKA）、特征可分离性评分和逐层恢复分析——在表示级别（representation-level）对遗忘进行认证。实验表明，仅依赖输出级指标可能高估遗忘效果，而表示级审计能更准确地揭示模型是否真正遗忘了特定数据。该工作挑战了现有VFL遗忘认证的可靠性，为隐私保护和合规性提供了更严格的评估标准。值得关注的是，它首次将表示级分析引入视觉遗忘领域，可能推动联邦学习中遗忘机制的设计和审计方法的发展。",
+  "tags": [
+    "Machine Unlearning",
+    "Vertical Federated Learning",
+    "Privacy",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:01:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有VFL遗忘认证仅依赖输出级指标，可能无法保证真正的遗忘，Mirage通过表示级审计揭示了这一漏洞。",
+      "Mirage框架包含四种互补诊断方法，从线性恢复、核对齐、特征分离和逐层分析多角度评估遗忘效果。",
+      "实验表明，输出级认证可能高估遗忘效果，而表示级审计能更严格地验证模型是否真正遗忘特定数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

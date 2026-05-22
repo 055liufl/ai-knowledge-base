@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260522-033",
+  "title": "Neural Estimation of Pairwise Mutual Information in Masked Discrete Sequence Models",
+  "source_url": "https://arxiv.org/abs/2605.20187",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种神经框架，用于从预训练的掩码扩散模型（MDM）的隐藏状态中直接估计成对条件互信息（MI）。掩码扩散模型在生成任务中表现出色，但主要暴露边际条件分布，未能明确表示变量间的依赖关系，这限制了模型的可解释性和生成效率。该框架利用从模型真实分布中计算出的互信息作为监督信号，训练一个轻量级神经网络来近似估计MI。实验表明，该方法能够有效捕捉变量间的依赖结构，提升对模型行为的理解，并可能用于优化生成过程（如减少冗余采样步骤）。这项研究弥合了深度生成模型与信息论之间的鸿沟，为MDM的可解释性分析和高效生成提供了新工具，尤其适用于序列数据（如文本、生物序列）的建模。其创新性在于将MI估计嵌入模型内部，而非作为后处理步骤，从而实现了实时依赖分析。",
+  "tags": [
+    "Masked Diffusion Models",
+    "Mutual Information",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:57:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出从预训练MDM的隐藏状态直接估计成对条件互信息，无需额外采样或后处理。",
+      "利用真实MI作为监督信号训练轻量级估计器，实现了高精度依赖关系捕捉。",
+      "该方法可增强MDM的可解释性，并有望通过识别冗余依赖来优化生成效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-110",
+  "title": "LLM Pretraining Shapes a Generalizable Manifold: Insights into Cross-Modal Transfer to Time Series",
+  "source_url": "https://arxiv.org/abs/2605.20449",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了语言预训练模型（LLM）是否能够有效迁移到时间序列预测任务，并揭示了其背后的机制。研究发现，语言预训练通过构建一个可复用的流形（manifold）来预条件化时间序列训练，从而实现跨模态迁移。具体而言，在冻结的LLM状态上使用线性探针（linear probe）即可解码出真实的时间序列轨迹，无需配对监督；此外，在该投影空间中进行检索也能获得具有竞争力的预测结果。这表明LLM的预训练表征中已经蕴含了时间序列的结构和动态信息。该工作为跨模态迁移学习提供了新的理论视角，并展示了LLM在非语言任务（如时间序列预测）中的潜力，对于推动基础模型在科学和工程领域的应用具有重要意义。",
+  "tags": [
+    "LLM",
+    "Time Series",
+    "Cross-Modal Transfer",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:04:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言预训练模型通过构建可复用的流形，为时间序列训练提供了有效的预条件，从而实现跨模态迁移。",
+      "在冻结的LLM状态上使用线性探针即可解码时间序列轨迹，无需配对监督数据，表明LLM表征中已蕴含时间序列的结构信息。",
+      "在投影空间中进行检索可获得有竞争力的时间序列预测结果，进一步验证了LLM表征的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

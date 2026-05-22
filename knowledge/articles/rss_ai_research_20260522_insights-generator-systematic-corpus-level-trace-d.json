@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-025",
+  "title": "Insights Generator: Systematic Corpus-Level Trace Diagnostics for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.21347",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Insights Generator的系统性方法，用于对LLM代理的执行轨迹进行语料库级别的诊断。当前，诊断LLM代理失败主要依赖手动检查少量轨迹、形成临时假设并迭代，这种方法无法捕捉跨轨迹群体的模式，且无法扩展到生产环境中包含数万token的单个轨迹。作者正式定义了语料库级轨迹诊断问题：给定一个执行轨迹语料库，目标是生成基于证据的、可操作的诊断洞察。该工作通过自动化分析大量轨迹，识别出常见的失败模式、性能瓶颈和异常行为，从而帮助开发者快速定位问题并优化代理系统。这项研究值得关注，因为它解决了LLM代理在生产环境中部署时的一个关键痛点——缺乏系统化的诊断工具，有望显著提升代理系统的可靠性和开发效率。通过将诊断从手动、个案式转变为自动化、数据驱动的方式，Insights Generator为构建更健壮的LLM代理提供了实用基础。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Diagnostics",
+    "Tool"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:57:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出语料库级轨迹诊断问题，将诊断从手动个案分析提升到自动化群体分析。",
+      "通过分析大量执行轨迹，系统性地识别跨轨迹的失败模式和性能瓶颈。",
+      "该方法可扩展到生产环境中的大规模轨迹语料库，解决单个轨迹长度达数万token的挑战。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

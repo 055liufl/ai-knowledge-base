@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-130",
+  "title": "Accelerating Video Inverse Problem Solvers with Autoregressive Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2605.20624",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为AVIS（自回归视频逆问题求解器）的新框架，旨在加速基于扩散模型的零样本视频逆问题求解。传统的扩散模型在视频逆问题中虽然提供了强大的先验知识，但存在两大效率瓶颈：一是整体视频修复导致的高初始延迟，二是为了在像素空间强制执行测量一致性而进行的多次VAE（变分自编码器）传递造成的低吞吐量。AVIS通过引入自回归机制，将视频逆问题分解为逐步处理的过程，从而显著降低初始延迟并提高吞吐量。该框架结合了扩散模型的生成能力和自回归模型的时序建模优势，在保持高质量修复结果的同时，实现了更快的推理速度。实验表明，AVIS在多个视频逆问题基准上（如视频去模糊、超分辨率、修复等）均取得了与现有方法相当或更优的性能，同时推理时间大幅减少。这项工作对于实时视频处理应用（如监控、自动驾驶、视频编辑）具有重要意义，因为它解决了扩散模型在实际部署中的关键效率问题。AVIS的创新点在于将自回归策略与扩散模型结合，为视频逆问题提供了一种高效且实用的解决方案。",
+  "tags": [
+    "Diffusion Models",
+    "Video Inverse Problems",
+    "Autoregressive Models",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:05:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AVIS通过自回归机制分解视频逆问题，显著降低了传统扩散模型的高初始延迟和低吞吐量问题。",
+      "该框架在保持零样本视频逆问题求解质量的同时，大幅提升了推理速度，适用于实时应用场景。",
+      "自回归与扩散模型的结合为视频处理领域提供了一种新的高效范式，有望推动扩散模型在实际部署中的普及。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

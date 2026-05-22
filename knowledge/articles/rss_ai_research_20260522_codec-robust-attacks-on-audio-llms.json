@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260522-118",
+  "title": "Codec-Robust Attacks on Audio LLMs",
+  "source_url": "https://arxiv.org/abs/2605.20519",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CodecAttack的新型攻击方法，专门针对音频大语言模型（Audio LLMs）在编解码器压缩预处理下的鲁棒性。以往的攻击通过在波形域添加精心设计的扰动来迫使模型产生目标对抗输出，但实际应用中，编解码器压缩（如MP3、AAC等）常被用作防御机制，以检测或移除这些扰动。然而，现有攻击均无法在压缩后保持有效性。CodecAttack通过优化扰动，使其在经历编解码器压缩后仍能保留对抗效果，从而突破了这一防御。研究在多个音频LLM上进行了实验，证明了该方法的高成功率和鲁棒性。这项工作值得关注，因为它揭示了音频AI安全领域的一个关键漏洞：即使采用压缩预处理，模型仍可能被攻击，这对语音助手、音频内容审核等实际应用的安全性构成威胁。此外，该研究推动了对抗性攻击与防御的博弈，为设计更鲁棒的音频模型提供了重要参考。",
+  "tags": [
+    "Audio LLM",
+    "Adversarial Attack",
+    "Codec Robustness",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:04:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CodecAttack是首个在编解码器压缩预处理下仍能保持有效性的音频LLM对抗攻击方法。",
+      "该攻击通过优化扰动，使其在压缩后仍能保留对抗效果，突破了现有防御机制。",
+      "研究揭示了音频LLM在真实世界部署中的安全漏洞，对语音助手等应用构成威胁。",
+      "这项工作为设计更鲁棒的音频模型和防御策略提供了新的方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

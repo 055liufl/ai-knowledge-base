@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260522-002",
+  "title": "CODA: Rewriting Transformer Blocks as GEMM-Epilogue Programs",
+  "source_url": "https://arxiv.org/abs/2605.19269",
+  "source_platform": "rss_general_tech",
+  "summary": "CODA 提出了一种将 Transformer 块重写为 GEMM-Epilogue 程序的新方法，旨在优化深度学习模型的计算效率。通过将注意力机制和前馈网络等核心组件转化为通用矩阵乘法（GEMM）及其后处理阶段（Epilogue），该方法能够利用现有的高性能线性代数库和硬件加速器，显著减少计算开销和内存访问。该工作特别关注于减少 Transformer 推理和训练中的瓶颈，如注意力计算中的 softmax 和缩放操作，通过将它们集成到 GEMM 的 epilogue 中实现融合。实验表明，CODA 在多种 Transformer 架构上实现了 1.5-3 倍的加速，同时保持了模型精度。这项研究值得关注，因为它提供了一种系统性的框架来重新思考 Transformer 的实现，可能推动硬件-软件协同设计的新范式，尤其对于大规模模型部署和边缘设备推理具有实际意义。",
+  "tags": [
+    "Transformer",
+    "GEMM",
+    "模型优化",
+    "推理加速"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:42Z",
+  "collected_at": "2026-05-22T10:53:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Transformer 块重写为 GEMM-Epilogue 程序，实现了计算和内存访问的融合优化，显著提升效率。",
+      "该方法在多种 Transformer 架构上验证了 1.5-3 倍的加速，且不牺牲模型精度。",
+      "CODA 提供了一种硬件-软件协同设计的思路，可能影响未来加速器和编译器的开发。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

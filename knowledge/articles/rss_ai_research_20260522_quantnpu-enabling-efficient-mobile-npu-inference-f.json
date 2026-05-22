@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-081",
+  "title": "Quant.npu: Enabling Efficient Mobile NPU Inference for on-device LLMs via Fully Static Quantization",
+  "source_url": "https://arxiv.org/abs/2605.20295",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Quant.npu的方法，旨在解决大型语言模型（LLMs）在移动设备上部署时，神经处理单元（NPU）对全静态量化的需求与现有后训练量化（PTQ）方法依赖动态激活量化之间的矛盾。现有PTQ方法通常采用动态激活量化，这无法满足NPU硬件的约束，导致推理效率低下。Quant.npu通过实现全静态量化，使得LLMs能够在移动NPU上高效运行，同时保持模型精度。该方法通过优化量化策略，消除了对动态激活的依赖，从而显著提升推理速度并降低功耗。这项研究对于推动LLMs在移动设备上的实际应用具有重要意义，尤其是在资源受限的边缘计算场景中，能够实现更快速、更节能的AI推理。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Mobile NPU",
+    "Edge Inference"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:01:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Quant.npu实现了全静态量化，解决了现有PTQ方法无法适配NPU硬件约束的问题，从而提升移动设备上LLM推理效率。",
+      "该方法通过优化量化策略，在保持模型精度的同时，显著降低了推理延迟和功耗，适用于资源受限的边缘场景。",
+      "研究填补了高保真PTQ与NPU约束推理之间的空白，为LLM在移动设备上的实际部署提供了关键技术支撑。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

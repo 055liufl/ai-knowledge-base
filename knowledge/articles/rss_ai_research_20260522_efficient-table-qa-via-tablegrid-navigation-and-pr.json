@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260522-059",
+  "title": "Efficient Table QA via TableGrid Navigation and Progressive Inference Prompting",
+  "source_url": "https://arxiv.org/abs/2605.20254",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TableGrid Navigation and Progressive Inference Prompting的新方法，用于提升大语言模型在表格问答（TQA）任务上的表现。TQA任务要求模型能够精确检索表格中的单元格并进行多步结构化推理，而现有方法通常依赖微调或任务特定训练，缺乏对模型如何导航表格和推导答案的可验证控制。本文通过设计一种基于网格导航的提示策略，引导模型逐步遍历表格结构，并结合渐进式推理提示，使模型在每一步都能明确展示其推理过程。这种方法无需额外训练，仅通过改进提示工程即可显著提升LLM在TQA基准上的准确性和可解释性。实验表明，该方法在多个标准数据集上优于现有基线，尤其适用于需要复杂跨行跨列推理的场景。该工作值得关注，因为它提供了一种轻量级、可解释的解决方案，填补了LLM在结构化数据推理中缺乏透明度的空白，对实际应用如数据分析、智能客服等具有重要价值。",
+  "tags": [
+    "LLM",
+    "Table QA",
+    "Prompt Engineering",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:00:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出TableGrid导航策略，将表格视为网格，引导LLM逐步定位相关单元格，增强推理的可控性。",
+      "渐进式推理提示（Progressive Inference Prompting）使模型分步推导答案，每一步都输出中间结果，提升可解释性。",
+      "无需微调或额外训练，仅通过提示工程即可显著提升TQA性能，降低了应用门槛。",
+      "在多个标准TQA数据集上验证了有效性，尤其擅长处理需要跨行跨列推理的复杂问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

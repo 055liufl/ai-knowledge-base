@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-016",
+  "title": "Conflict-Aware Additive Guidance for Flow Models under Compositional Rewards",
+  "source_url": "https://arxiv.org/abs/2605.20758",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“冲突感知加性引导”（Conflict-Aware Additive Guidance）的新方法，用于在流模型（Flow Models）的推理阶段实现组合奖励下的可控生成。传统的引导采样方法在同时满足多个约束（如成本函数或预训练验证器）时，往往因约束之间的冲突而导致生成结果偏离真实数据分布。该方法通过显式建模约束间的冲突，并动态调整引导方向，从而在保持生成质量的同时有效组合多个奖励信号。实验表明，该方法在图像生成、分子设计等任务中显著优于现有基线，为多目标可控生成提供了更鲁棒的解决方案。该工作值得关注，因为它解决了组合引导中的关键挑战，扩展了扩散和流模型在复杂约束场景下的应用潜力。",
+  "tags": [
+    "Flow Models",
+    "Controllable Generation",
+    "Compositional Rewards",
+    "Guidance"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:56:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出冲突感知机制，显式处理组合奖励间的矛盾，避免生成偏离数据分布。",
+      "在推理阶段无需微调模型，即可灵活整合多个约束，提升可控性。",
+      "在图像和分子生成任务中验证了有效性，优于传统加性引导方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

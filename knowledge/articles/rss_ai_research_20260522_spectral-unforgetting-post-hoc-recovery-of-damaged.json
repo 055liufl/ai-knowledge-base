@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260522-082",
+  "title": "Spectral Unforgetting: Post-Hoc Recovery of Damaged Capabilities Without Retraining",
+  "source_url": "https://arxiv.org/abs/2605.20296",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Spectral Unforgetting”的后处理方法，用于修复语言模型在微调过程中因灾难性遗忘而受损的能力。该方法仅需使用预训练检查点 $W_{\\mathrm{base}}$ 和微调后的检查点 $W_{\\mathrm{ft}}$，无需重新训练或访问原始训练数据。通过分析模型权重的谱结构，该方法能够识别并恢复被微调破坏的特定能力，同时保留目标任务的性能。这项研究为解决微调中的能力退化问题提供了一种高效、实用的解决方案，尤其适用于资源受限或数据不可访问的场景。其创新性在于利用谱分析进行后修复，避免了传统重训练的高成本，具有重要的实际应用价值。",
+  "tags": [
+    "LLM",
+    "Catastrophic Forgetting",
+    "Model Repair"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:01:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种仅利用预训练和微调检查点进行后修复的方法，无需重新训练或原始数据。",
+      "通过谱分析识别微调中受损的能力，并实现针对性恢复，同时保持目标任务性能。",
+      "为灾难性遗忘问题提供了高效、低成本的解决方案，适用于资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

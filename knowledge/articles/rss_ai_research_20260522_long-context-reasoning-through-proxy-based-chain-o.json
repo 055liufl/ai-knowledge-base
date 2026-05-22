@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-041",
+  "title": "Long-Context Reasoning Through Proxy-Based Chain-of-Thought Tuning",
+  "source_url": "https://arxiv.org/abs/2605.20201",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于代理上下文的链式思维调优方法（Proxy-Based Chain-of-Thought Tuning），旨在解决大语言模型在长上下文推理任务中的性能瓶颈。尽管当前模型支持高达1000万token的输入，但在需要复杂推理的长上下文任务中表现不佳。研究发现，许多此类任务仅需输入子集（即代理上下文）即可求解，但模型在代理上下文和完整上下文之间存在显著的性能差距。为此，作者提出通过链式思维调优，使模型学会在长上下文中识别并利用代理上下文进行推理，从而提升长上下文推理能力。该方法具有重要的实用价值，因为长上下文推理是当前LLM应用中的关键挑战，而该工作提供了一种轻量级、无需修改模型架构的解决方案。值得关注的是，它结合了代理上下文选择和链式思维推理两个热点方向，为提升模型在长文档理解、多轮对话等场景中的表现提供了新思路。",
+  "tags": [
+    "LLM",
+    "Long-Context",
+    "Chain-of-Thought",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:58:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大语言模型在长上下文推理任务中性能不佳，但仅需输入子集（代理上下文）即可求解，揭示了模型对完整上下文利用效率低下的问题。",
+      "提出基于代理上下文的链式思维调优方法，通过训练模型识别并利用代理上下文进行推理，有效缩小了代理与完整上下文之间的性能差距。",
+      "该方法无需修改模型架构，是一种轻量级的调优策略，具有较高的实用性和可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

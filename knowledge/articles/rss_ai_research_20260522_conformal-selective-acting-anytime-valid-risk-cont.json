@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260522-068",
+  "title": "Conformal Selective Acting: Anytime-Valid Risk Control for RLVR-Trained LLMs",
+  "source_url": "https://arxiv.org/abs/2605.20270",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Conformal Selective Acting”的方法，旨在为经过RLVR（基于可验证奖励的强化学习）微调的本地专家LLM提供任意时刻有效的风险控制。该方法针对受监管组织中的部署场景，其中每个部署都有每轮错误预算α，且需要每轮的安全认证，不允许跨部署池化或等待长期平均。现有包装器无法在自适应、在线更新的流上提供这种保证，而离线共形风险控制方法也不适用。该研究通过结合选择性预测和共形预测，设计了一种新的框架，确保在每轮部署中，模型输出的风险被严格控制在预设阈值内，同时保持高可用性。该工作对于在金融、医疗等高风险领域部署LLM具有重要意义，因为它提供了实时、可验证的安全保障，解决了现有方法在动态环境中的局限性。",
+  "tags": [
+    "LLM",
+    "RLVR",
+    "Conformal Prediction",
+    "Risk Control",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:00:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种结合选择性预测和共形预测的方法，实现了对RLVR微调LLM的任意时刻风险控制，满足每轮部署的严格安全要求。",
+      "解决了现有离线共形风险控制方法无法处理自适应、在线更新流的问题，为动态环境中的LLM部署提供了理论保障。",
+      "该方法在保持低错误率的同时，通过选择性输出机制优化了模型可用性，适用于金融、医疗等高风险应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

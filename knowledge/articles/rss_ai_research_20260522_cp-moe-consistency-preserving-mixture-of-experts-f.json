@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260522-056",
+  "title": "CP-MoE: Consistency-Preserving Mixture-of-Experts for Continual Learning",
+  "source_url": "https://arxiv.org/abs/2605.20247",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CP-MoE（一致性保持混合专家）的新型持续学习方法，旨在解决大型语言模型（LLM）和视觉-语言模型（VLM）在持续学习中的灾难性遗忘问题。传统的混合专家（MoE）架构虽然通过专家隔离和路由机制支持模型扩展，但现有基于LoRA的MoE持续学习方法面临一个根本性权衡：要么过度隔离专家，限制跨任务的知识迁移；要么允许任务特定更新覆盖重要知识，导致遗忘。CP-MoE通过引入一致性保持机制，在专家更新过程中维护模型对先前任务的关键表示，从而在促进知识迁移的同时防止灾难性遗忘。该方法在多个持续学习基准上进行了评估，显示出优于现有方法的性能，特别是在保持旧任务准确性和适应新任务之间取得了更好的平衡。这项工作对于推动LLM和VLM在实际应用中的持续学习能力具有重要意义，因为它提供了一种更有效的模型扩展和知识管理策略。",
+  "tags": [
+    "MoE",
+    "Continual Learning",
+    "LLM",
+    "VLM",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:59:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CP-MoE通过一致性保持机制解决了MoE持续学习中知识迁移与灾难性遗忘之间的权衡问题",
+      "该方法在多个持续学习基准上优于现有LoRA-based MoE方法，特别是在保持旧任务性能方面",
+      "CP-MoE为LLM和VLM的持续学习提供了一种有效的模型扩展和知识管理策略"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

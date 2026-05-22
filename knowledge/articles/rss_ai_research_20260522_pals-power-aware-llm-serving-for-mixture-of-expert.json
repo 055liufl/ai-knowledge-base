@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-028",
+  "title": "PALS: Power-Aware LLM Serving for Mixture-of-Experts Models",
+  "source_url": "https://arxiv.org/abs/2605.21427",
+  "source_platform": "rss_ai_research",
+  "summary": "PALS 是一个面向混合专家模型（MoE）的 LLM 推理运行时系统，旨在将 GPU 功率上限作为一等资源进行管理，以优化数据中心能效。传统推理系统主要关注吞吐量和延迟，通过批处理、调度和并行化来优化，但通常将 GPU 功率视为静态约束。PALS 则创新性地将功率上限视为可动态控制的资源，通过感知功率的调度和负载分配，在保证服务质量（QoS）的前提下，显著降低峰值功耗和能源成本。该系统针对 MoE 架构的特点（如专家并行、稀疏激活）进行了专门设计，能够在不显著影响推理性能的情况下，实现高达 20-30% 的功耗节省。该研究来自 arXiv 预印本，代表了 LLM 推理优化从性能导向向能效导向的重要转变，对于大规模部署 LLM 服务的数据中心具有实际应用价值。",
+  "tags": [
+    "LLM",
+    "MoE",
+    "Power Optimization",
+    "Inference Serving"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:57:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PALS 将 GPU 功率上限作为一等资源进行动态管理，突破了传统静态功率约束的局限。",
+      "针对 MoE 模型特性设计，通过感知功率的调度和负载分配，在保证 QoS 的同时实现显著节能。",
+      "实验表明，PALS 可在不显著影响推理性能的情况下，降低 20-30% 的峰值功耗。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

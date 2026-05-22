@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-125",
+  "title": "Complementing reinforcement learning with SFT through logit averaging in the post training of LLMs",
+  "source_url": "https://arxiv.org/abs/2605.20555",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新颖的后训练方法，通过在强化学习（RL）过程中对冻结的参考策略（如监督微调SFT模型）和可训练策略的logits进行平均，并将其集成到组相对策略优化（GRPO）中。与传统使用KL正则化或评论家的可验证奖励强化学习（RLVR）方法不同，该方法通过logit平均结构直接耦合可训练策略与参考锚点，避免了KL散度约束和额外的评论家网络。这种方法旨在平衡强化学习的探索能力与SFT的稳定性，从而提升大语言模型（LLM）的后训练效果。值得关注的是，它简化了RL训练流程，同时可能更有效地保留预训练知识，为LLM的后训练提供了一种高效且稳定的替代方案。实验结果表明，该方法在多个基准任务上取得了有竞争力的性能，尤其适用于需要兼顾奖励优化和模型一致性的场景。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "SFT",
+    "GRPO"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:05:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过logit平均结构替代KL正则化，简化了强化学习后训练流程，同时保持策略稳定性。",
+      "该方法将冻结的SFT参考策略与可训练策略耦合，避免了评论家网络，降低了计算复杂度。",
+      "在GRPO框架下，logit平均有效平衡了探索与利用，提升了LLM在奖励优化任务中的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

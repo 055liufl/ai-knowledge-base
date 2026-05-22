@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260522-095",
+  "title": "Security Document Classification with a Fine-Tuned Local Large Language Model: Benchmark Data and an Open-Source System",
+  "source_url": "https://arxiv.org/abs/2605.20368",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个名为 TorchSight 的开源本地安全文档分类系统。该系统基于微调的 Qwen 3.5 27B 大语言模型构建，旨在解决组织在扫描文档敏感信息时面临的实际问题：云服务需要将数据发送到外部基础设施，而基于规则的检测工具常常遗漏依赖上下文的威胁。研究团队使用来自 13 个许可宽松来源的 78,358 个样本以及 GPT-4 生成的数据对模型进行了微调。该系统完全在本地运行，避免了数据外传的风险，同时利用大语言模型的上下文理解能力提高了分类的准确性。这项工作为需要处理敏感文档的组织提供了一种兼顾安全性和性能的实用解决方案，并且开源了基准数据和系统，具有较高的实用价值和参考意义。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Document Classification",
+    "Fine-tuning",
+    "Open-source"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:02:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TorchSight 是一个完全本地运行的开源安全文档分类系统，基于微调的 Qwen 3.5 27B 模型，避免了数据外传至云服务的风险。",
+      "模型在 78,358 个样本上进行了微调，这些样本来自 13 个许可宽松的数据源以及 GPT-4 生成的数据，确保了训练数据的多样性和规模。",
+      "该系统结合了大语言模型的上下文理解能力，能够检测基于规则的检测工具容易遗漏的依赖上下文的威胁，提高了分类的准确性。",
+      "开源了基准数据和系统，为安全文档分类领域提供了可复现的基准和实用的工具，降低了相关研究和应用的门槛。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

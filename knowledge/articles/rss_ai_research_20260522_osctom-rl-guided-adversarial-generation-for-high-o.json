@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260522-003",
+  "title": "OSCToM: RL-Guided Adversarial Generation for High-Order Theory of Mind",
+  "source_url": "https://arxiv.org/abs/2605.20423",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了OSCToM（Observer-Self Conflict Theory of Mind）方法，用于在大语言模型（LLM）中建模嵌套信念冲突，以提升高阶心智理论（Theory of Mind, ToM）推理能力。现有基准如ExploreToM未能充分测试复杂社会情境中的递归信念和信息不对称性，而OSCToM通过强化学习（RL）引导的对抗生成，自动生成具有高阶信念冲突的测试场景，从而暴露LLM在ToM任务中的弱点。该方法的核心在于构建观察者与自身信念之间的冲突，迫使模型处理多级递归推理。实验表明，OSCToM生成的对抗样本能显著降低主流LLM（如GPT-4、Claude）的ToM准确率，同时通过RL微调可提升模型在复杂社会推理任务上的鲁棒性。这项工作为评估和增强LLM的社会认知能力提供了新范式，尤其适用于需要理解他人信念、意图和欺骗的交互场景（如谈判、协作AI）。其价值在于揭示了当前LLM在高阶ToM上的系统性缺陷，并提出了可扩展的对抗训练框架，对AI安全、人机交互和认知科学领域具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Theory of Mind",
+    "Reinforcement Learning",
+    "Adversarial Generation",
+    "Social Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:55:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OSCToM通过强化学习引导的对抗生成，自动构造包含高阶信念冲突的ToM测试场景，有效暴露LLM在递归推理上的不足。",
+      "该方法揭示了当前LLM在复杂社会情境中处理信息不对称和嵌套信念的系统性缺陷，为评估模型社会认知能力提供了更严格的基准。",
+      "RL微调可提升LLM在OSCToM生成样本上的表现，表明对抗训练是增强高阶ToM推理能力的可行路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

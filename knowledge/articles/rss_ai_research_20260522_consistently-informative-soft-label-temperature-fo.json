@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260522-094",
+  "title": "Consistently Informative Soft-Label Temperature for Knowledge Distillation",
+  "source_url": "https://arxiv.org/abs/2605.20357",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“一致性信息软标签温度”（Consistently Informative Soft-Label Temperature, CIST）的知识蒸馏方法，旨在解决传统固定温度缩放策略中样本无关的问题。在知识蒸馏中，温度参数用于软化教师模型的预测分布，以传递超越硬标签的“暗知识”。然而，标准固定温度设计忽略了样本间在logit尺度和学习难度上的差异，导致蒸馏效果不稳定。CIST通过为每个样本动态调整温度，使得软标签信息更加一致且有效，从而提升学生模型的性能。实验表明，该方法在多个基准数据集上优于现有蒸馏技术，特别是在低容量学生模型上表现显著。这项工作为知识蒸馏中的温度调节提供了新的视角，具有较高的实用价值和理论意义。",
+  "tags": [
+    "Knowledge Distillation",
+    "Temperature Scaling",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:02:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出样本自适应的温度调节机制，克服了固定温度在知识蒸馏中的局限性",
+      "通过动态调整软标签温度，显著提升了学生模型在低容量场景下的性能",
+      "方法在多个基准数据集上验证了有效性，为模型压缩和知识迁移提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

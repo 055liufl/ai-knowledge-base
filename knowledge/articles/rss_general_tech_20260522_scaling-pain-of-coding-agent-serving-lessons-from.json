@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260522-024",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由 z.ai 发布，深入探讨了在规模化部署 GLM-5 编码代理服务过程中遇到的性能瓶颈与调试经验。文章详细分析了从单机到分布式扩展时，代理服务在请求调度、资源分配、上下文管理以及推理延迟等方面出现的典型问题，例如因长上下文导致的显存溢出、请求排队引发的响应时间激增，以及多代理协作时的同步开销。作者分享了通过优化缓存策略、引入动态批处理、改进负载均衡算法以及定制化推理引擎来缓解这些痛点的具体方案。文章还强调了编码代理场景下对低延迟和高吞吐的特殊要求，并提出了未来在模型架构和系统设计上的改进方向。这些经验对于构建大规模、高可靠的 AI 代理基础设施具有重要参考价值，尤其适用于需要处理复杂编程任务的场景。",
+  "tags": [
+    "Coding Agent",
+    "Scalability",
+    "Inference Optimization",
+    "GLM-5",
+    "System Design"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:43Z",
+  "collected_at": "2026-05-22T10:55:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理服务在规模化时面临显存瓶颈和请求调度挑战，需要针对长上下文和低延迟进行专门优化。",
+      "动态批处理和缓存策略能有效缓解推理延迟，但需平衡资源利用与响应时间。",
+      "多代理协作场景下的同步开销是系统扩展性的关键限制因素，需改进负载均衡与通信机制。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

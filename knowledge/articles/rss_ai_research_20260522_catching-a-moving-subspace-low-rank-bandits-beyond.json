@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-067",
+  "title": "Catching a Moving Subspace: Low-Rank Bandits Beyond Stationarity",
+  "source_url": "https://arxiv.org/abs/2605.20269",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了低秩线性上下文赌博机在非平稳环境下的在线学习问题。在许多实际应用（如推荐系统、临床剂量调整、广告定向）中，奖励信号通常存在于一个低维潜在子空间中，且该子空间会随时间漂移。现有工作要么假设子空间固定（如低秩赌博机），要么假设环境非平稳但支付与环境维度d相关的代价（如非平稳线性赌博机）。本文首次将两者结合，提出了分段平稳低秩线性上下文赌博机模型，其中奖励矩阵的列子空间在未知的切换点处发生改变。作者设计了基于子空间检测和自适应探索的算法，在子空间变化时能快速适应，同时利用低秩结构降低样本复杂度。理论分析表明，该算法在子空间变化次数有限的情况下，实现了与子空间秩r相关的遗憾界，避免了维度d的线性依赖。该工作为动态推荐系统、在线广告等场景提供了更高效的理论框架，具有重要的理论价值和实践潜力。",
+  "tags": [
+    "Bandit",
+    "Low-Rank",
+    "Non-Stationary",
+    "Online Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:00:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将低秩结构和非平稳性结合，提出分段平稳低秩线性赌博机模型，更贴合实际应用场景。",
+      "设计了基于子空间检测的算法，在子空间变化时能快速适应，同时利用低秩结构降低样本复杂度。",
+      "理论遗憾界与子空间秩r相关，避免了环境维度d的线性依赖，在子空间变化次数有限时表现优异。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

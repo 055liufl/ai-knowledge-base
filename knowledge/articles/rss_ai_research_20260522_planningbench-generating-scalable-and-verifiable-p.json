@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-019",
+  "title": "PlanningBench: Generating Scalable and Verifiable Planning Data for Evaluating and Training Large Language Models",
+  "source_url": "https://arxiv.org/abs/2605.20873",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 PlanningBench，一个用于评估和训练大型语言模型（LLMs）规划能力的可扩展且可验证的规划数据生成框架。规划是 LLMs 执行复杂任务的基础能力，需要模型协调目标、约束、资源和长期后果，生成可执行且可验证的解决方案。然而，现有的规划基准通常将规划数据视为固定的实例集合，而非可控的生成目标，这限制了场景覆盖范围，并将难度与表面代理（如步骤数）而非真正的规划复杂性挂钩。PlanningBench 通过提出一种可扩展的数据生成方法，允许用户控制规划问题的难度、规模和多样性，从而生成大量可验证的规划实例。该框架基于形式化规划语言（如 PDDL），确保生成的数据具有明确的正确性验证标准。实验表明，PlanningBench 能够有效评估 LLMs 在不同规划场景下的表现，并可用于微调模型以提升其规划能力。这项工作对于推动 LLMs 在自动化规划、任务分解和决策制定等领域的应用具有重要意义，因为它解决了现有基准数据稀缺、难度控制不精确的问题。",
+  "tags": [
+    "LLM",
+    "Planning",
+    "Benchmark",
+    "Data Generation"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:56:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PlanningBench 通过可控生成方法解决了现有规划基准场景覆盖有限和难度代理不准确的问题，提升了数据多样性和评估可靠性。",
+      "该框架基于形式化规划语言（如 PDDL）生成可验证的规划数据，确保每个实例都有明确的正确性标准，有利于 LLMs 的精确评估和训练。",
+      "实验证明 PlanningBench 能有效评估和微调 LLMs 的规划能力，为自动化规划、任务分解等复杂应用提供了实用工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

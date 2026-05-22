@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-070",
+  "title": "Modality-Decoupled Online Recursive Editing",
+  "source_url": "https://arxiv.org/abs/2605.20273",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对多模态大语言模型（MLLMs）的在线递归编辑方法——模态解耦在线递归编辑（Modality-Decoupled Online Recursive Editing）。与仅适用于文本LLMs的编辑方法不同，MLLMs面临视觉主导激活导致的跨模态冲突以及顺序编辑在共享空间中引发的长期干扰问题。该方法通过解耦不同模态的激活统计量，设计独立的编辑空间，减少跨模态干扰；同时引入递归编辑机制，在每次更新时考虑历史编辑的影响，从而抑制长期干扰。实验表明，该方法在保持编辑效率的同时，显著提升了多模态场景下的编辑准确性和稳定性。这项研究对于提升MLLMs的实时适应能力和可靠性具有重要意义，尤其在需要快速修正模型行为的应用场景中，如对话系统、图像理解等。",
+  "tags": [
+    "MLLM",
+    "Model Editing",
+    "Online Learning",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:01:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出模态解耦策略，通过分离视觉和语言模态的激活统计量，有效缓解跨模态冲突，提升编辑质量。",
+      "引入递归编辑机制，在顺序更新中考虑历史编辑影响，抑制长期干扰，增强编辑的长期稳定性。",
+      "在多个多模态基准上验证，该方法在保持计算效率的同时，显著优于现有文本编辑方法的直接迁移。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

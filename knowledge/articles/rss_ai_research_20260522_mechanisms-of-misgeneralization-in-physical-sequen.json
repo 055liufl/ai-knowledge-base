@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260522-083",
+  "title": "Mechanisms of Misgeneralization in Physical Sequence Modeling",
+  "source_url": "https://arxiv.org/abs/2605.20299",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了物理序列建模中的泛化错误机制，特别是在生成式序列模型（如用于机器人运动规划和机械模拟的模型）中。当工程师构建数据集时，可能会精心设计演示数据以指定轨迹在物理量（如行进距离或机械能）上的分布。例如，构建迷宫导航代理的机器人专家可能会选择演示数据，使其行进距离覆盖一个固定范围。然而，模型可能会错误地泛化，即学习到与物理量无关的虚假相关性，导致在分布外场景中表现不佳。论文通过理论分析和实验，揭示了这种错误泛化的根源在于模型对训练数据中隐含的统计模式过度拟合，而非真正的物理规律。该研究对于提高物理序列模型的鲁棒性和可靠性具有重要意义，尤其是在安全关键的机器人应用中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "research"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T11:02:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "物理序列模型在训练数据中可能学习到与目标物理量无关的虚假相关性，导致分布外泛化失败。",
+      "错误泛化的机制源于模型对训练数据中统计模式的过度拟合，而非对物理规律的真正理解。",
+      "该研究为设计更鲁棒的物理序列模型提供了理论指导，强调了数据分布设计的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

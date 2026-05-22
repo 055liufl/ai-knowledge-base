@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260522-039",
+  "title": "FlowLM: Few-Step Language Modeling via Diffusion-to-Flow Adaptation",
+  "source_url": "https://arxiv.org/abs/2605.20199",
+  "source_platform": "rss_ai_research",
+  "summary": "FlowLM 是一种通过高效微调从预训练扩散语言模型转换而来的流匹配语言模型。它通过将扩散模型的弯曲采样轨迹重新对齐为直线流，使得模型能够在极少的采样步骤（如几步）内生成高质量文本，其质量可与 2000 步扩散采样相媲美甚至超越。该工作仅需少量训练轮次即可达到性能饱和，显著提升了生成效率。FlowLM 的核心创新在于利用流匹配（flow matching）替代传统扩散过程，解决了扩散模型采样速度慢的瓶颈，同时保持了生成质量。这一方法在语言建模领域具有重要实用价值，尤其适用于需要快速推理的场景，如实时对话系统、交互式内容生成等。值得关注的是，它展示了从现有扩散模型高效迁移到流匹配框架的可行性，为未来高效语言生成模型的设计提供了新思路。",
+  "tags": [
+    "Flow Matching",
+    "Language Model",
+    "Diffusion Model",
+    "Few-Step Generation"
+  ],
+  "author": null,
+  "published_at": "2026-05-22T10:51:44Z",
+  "collected_at": "2026-05-22T10:58:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FlowLM 通过流匹配将扩散模型的弯曲采样轨迹转化为直线流，实现极少数步骤的高质量生成。",
+      "微调后的 FlowLM 在几步内即可达到甚至超越 2000 步扩散采样的生成质量，显著提升推理效率。",
+      "该方法仅需少量训练轮次即可收敛，展示了从扩散模型高效迁移到流匹配框架的潜力。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}
