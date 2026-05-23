@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260523-125",
+  "title": "Efficient Request Queueing – Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-request-queueing",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了在大型语言模型（LLM）推理过程中，通过高效的请求队列管理来优化性能的方法。文章指出，随着LLM应用的普及，并发请求处理成为瓶颈，传统的简单队列（如FIFO）无法满足低延迟和高吞吐量的需求。作者提出了几种先进的队列策略，包括基于优先级的队列、动态批处理（Dynamic Batching）和连续批处理（Continuous Batching），并分析了它们在不同场景下的优劣。例如，动态批处理通过将多个请求合并为一个批次来减少计算开销，而连续批处理则允许在批次中动态添加或移除请求，从而更灵活地利用GPU资源。文章还讨论了如何结合请求的预估执行时间、模型大小和硬件特性来设计自适应队列算法，以平衡延迟和吞吐量。此外，作者提供了实际案例和性能基准测试结果，展示了优化后的队列系统在真实应用中的显著效果。这篇文章对于希望提升LLM服务效率的开发者具有重要参考价值，因为它不仅提供了理论框架，还给出了可落地的实践建议。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Queueing"
+  ],
+  "author": null,
+  "published_at": "2026-05-23T09:54:24Z",
+  "collected_at": "2026-05-23T10:06:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "动态批处理和连续批处理是提升LLM推理吞吐量的关键队列优化技术，能有效减少GPU空闲时间。",
+      "基于优先级的队列策略可以确保高优先级请求（如实时交互）获得低延迟，同时不影响整体吞吐量。",
+      "自适应队列算法结合请求预估时间和硬件特性，能动态调整批处理大小，实现延迟与吞吐量的最佳平衡。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

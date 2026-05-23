@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260523-110",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在TRL（Transformer Reinforcement Learning）框架中通过vLLM（Virtual Large Language Model）实现GPU共置（co-location）以提高效率的方法。传统上，强化学习训练大型语言模型时，策略模型和参考模型通常部署在不同的GPU上，导致资源利用率低下。通过将vLLM与TRL集成，允许策略模型和参考模型共享同一GPU资源，从而减少GPU闲置时间，提升训练吞吐量。该方法特别适用于PPO（Proximal Policy Optimization）等强化学习算法，能显著降低显存占用和通信开销。文章还提供了具体的实现细节和性能基准测试，显示在相同硬件条件下，共置策略可将训练速度提升2-3倍，同时保持模型质量。这一优化对于资源受限的环境尤为重要，使得更多研究者和开发者能够高效地进行大规模语言模型的强化学习训练。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "vLLM",
+    "TRL",
+    "GPU优化"
+  ],
+  "author": null,
+  "published_at": "2026-05-23T09:54:24Z",
+  "collected_at": "2026-05-23T10:05:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过vLLM与TRL的集成，实现策略模型和参考模型的GPU共置，显著提升资源利用率。",
+      "共置策略在PPO等强化学习算法中可将训练速度提升2-3倍，同时降低显存占用。",
+      "该方法降低了大规模语言模型强化学习训练的门槛，尤其适合资源受限的环境。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

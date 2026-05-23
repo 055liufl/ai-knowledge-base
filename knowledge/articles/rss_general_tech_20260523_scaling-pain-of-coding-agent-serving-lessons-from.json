@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260523-024",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由 z.ai 团队撰写，深入探讨了在规模化部署 GLM-5 编码代理服务过程中遇到的挑战与解决方案。文章详细描述了从单机调试到大规模集群运行时所面临的性能瓶颈、资源竞争、任务调度延迟以及系统稳定性问题。作者分享了通过优化请求队列、引入智能负载均衡、改进缓存策略以及实施细粒度监控等手段来缓解这些痛点的实践经验。文章还讨论了编码代理特有的长上下文处理、代码生成与执行环境的隔离、以及多代理协作时的同步开销等关键问题。这些经验教训对于任何正在构建或扩展 AI 编码代理服务的团队都具有重要参考价值，揭示了在真实生产环境中规模化运行复杂 AI 系统时，系统架构设计、资源管理和故障恢复机制的重要性。",
+  "tags": [
+    "Coding Agent",
+    "Scaling",
+    "GLM-5",
+    "System Optimization",
+    "Production Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-05-23T09:54:17Z",
+  "collected_at": "2026-05-23T09:57:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理服务的规模化面临独特的挑战，包括长上下文处理、代码执行环境隔离和多代理同步开销，这些需要专门的基础设施优化。",
+      "通过智能负载均衡、请求队列优化和细粒度监控，可以有效缓解大规模部署中的性能瓶颈和稳定性问题。",
+      "生产环境中的资源竞争和任务调度延迟是主要痛点，改进缓存策略和资源分配机制能显著提升系统吞吐量。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

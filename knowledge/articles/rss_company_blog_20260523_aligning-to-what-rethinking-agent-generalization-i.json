@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260523-056",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是MiniMax团队关于其M2模型在智能体泛化能力上的技术博客。文章反思了传统对齐方法（如RLHF）仅关注人类偏好，而忽略了智能体在复杂、多步任务中需要泛化到新环境、新指令和新工具的能力。MiniMax M2提出了一种新的对齐框架，通过构建多样化的智能体任务场景（包括工具使用、多轮对话、环境交互等），并采用基于过程奖励的强化学习，使模型学会在未知情境中自主决策和适应。实验表明，M2在多个未见过的智能体基准测试中表现显著优于GPT-4等模型，证明了其泛化能力的提升。该工作重新定义了智能体对齐的目标：从“符合人类偏好”转向“具备任务泛化能力”，为下一代自主智能体的训练提供了新思路。值得关注的是，它解决了当前大模型作为智能体时面临的“过拟合到训练场景”的痛点，具有重要的实用和理论价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Reinforcement Learning",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-05-23T09:54:24Z",
+  "collected_at": "2026-05-23T10:01:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对齐方法（如RLHF）仅优化人类偏好，无法保证智能体在新任务或环境中的泛化能力。",
+      "MiniMax M2通过构建多样化的智能体任务场景和过程奖励强化学习，显著提升了模型在未见过的工具、指令和环境中的适应能力。",
+      "该工作重新定义了智能体对齐的目标：从‘符合人类偏好’转向‘具备任务泛化能力’，为自主智能体的训练提供了新范式。",
+      "实验表明，M2在多个未见过的智能体基准测试中超越GPT-4等模型，验证了其泛化策略的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

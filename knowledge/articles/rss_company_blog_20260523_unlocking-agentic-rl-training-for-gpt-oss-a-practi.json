@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260523-040",
+  "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+  "source_url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是LinkedIn工程团队关于在GPT-OSS模型上实施Agentic强化学习（RL）训练的技术回顾。文章详细介绍了如何将RL方法应用于开源GPT模型（GPT-OSS），以提升其在代理任务（如工具使用、多步推理）中的表现。作者分享了从数据收集、奖励建模到训练策略调整的实践经验，包括使用PPO算法进行微调、设计基于任务完成度的奖励函数，以及处理训练不稳定性的技巧。文章还讨论了Agentic RL与传统RLHF的区别，强调了在代理场景下需要更复杂的探索策略和长程奖励分配。该工作展示了开源模型在智能代理领域的潜力，为开发者提供了可复现的实践指南。值得关注的是，它填补了开源社区在Agentic RL训练方面的空白，并提供了实用的工程解决方案。",
+  "tags": [
+    "RL",
+    "Agent",
+    "GPT-OSS",
+    "Training",
+    "Open Source"
+  ],
+  "author": null,
+  "published_at": "2026-05-23T09:54:24Z",
+  "collected_at": "2026-05-23T10:00:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic RL训练通过PPO算法和基于任务完成度的奖励函数，显著提升了GPT-OSS在代理任务中的工具使用和多步推理能力。",
+      "与传统RLHF不同，Agentic RL需要设计更复杂的探索策略和长程奖励分配机制，以应对代理场景中的延迟反馈问题。",
+      "开源模型在Agentic RL训练中面临训练不稳定性挑战，但通过调整学习率和奖励缩放等技巧可以有效缓解。",
+      "该工作为开源社区提供了可复现的Agentic RL训练框架，降低了在代理任务中应用RL的门槛。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
