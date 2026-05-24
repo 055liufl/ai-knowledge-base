@@ -93,6 +93,7 @@ def revise_node(state: KBState) -> dict[str, Any]:
 
     try:
         result, usage = chat_json(
+            node_name="reviser",
             prompt=prompt,
             system_prompt=_REVISE_SYSTEM_PROMPT,
             temperature=0.4,

@@ -36,6 +36,11 @@ from pipeline.model_client import Usage
 from workflows.model_client import chat, chat_json
 from workflows.state import KBState
 
+try:
+    from tests.security import sanitize_input, filter_output
+except ImportError:
+    from security import sanitize_input, filter_output
+
 logger = logging.getLogger(__name__)
 
 # ── GitHub Search API 常量 ──────────────────────────────────
@@ -97,6 +102,19 @@ def collect_node(state: KBState) -> dict[str, Any]:
     logger.info("[collect_node] 开始采集 GitHub 仓库...")
 
     plan = state.get("plan", {})
+
+    if plan:
+        plan = dict(plan)
+        strategy_name = plan.get("strategy_name", "")
+        if strategy_name:
+            cleaned, warns = sanitize_input(strategy_name)
+            plan["strategy_name"] = cleaned
+            if warns:
+                logger.warning(
+                    "[collect_node] plan.strategy_name 安全警告: %d 条",
+                    len(warns),
+                )
+
     per_source_limit = plan.get("per_source_limit", 10)
     logger.info("[collect_node] 使用 per_source_limit=%d", per_source_limit)
 
@@ -125,13 +143,36 @@ def collect_node(state: KBState) -> dict[str, Any]:
 
     items = data.get("items", [])
     sources: list[dict[str, Any]] = []
+    security_warnings: list[str] = []
 
     for item in items:
+        raw_title = item.get("full_name", "未知仓库")
+        raw_desc = item.get("description", "")
+
+        cleaned_title, title_warns = sanitize_input(raw_title)
+        cleaned_desc, desc_warns = sanitize_input(raw_desc)
+        security_warnings.extend(title_warns)
+        security_warnings.extend(desc_warns)
+
+        filtered_title, title_detections = filter_output(cleaned_title, mask=True)
+        filtered_desc, desc_detections = filter_output(cleaned_desc, mask=True)
+
+        if title_detections:
+            logger.warning(
+                "[collect_node] 标题 PII 检测: %s",
+                ", ".join(d["type"] for d in title_detections),
+            )
+        if desc_detections:
+            logger.warning(
+                "[collect_node] 描述 PII 检测: %s",
+                ", ".join(d["type"] for d in desc_detections),
+            )
+
         sources.append({
             "platform": "github_trending",
             "raw_url": item.get("html_url", ""),
-            "title": item.get("full_name", "未知仓库"),
-            "description": item.get("description", ""),
+            "title": filtered_title,
+            "description": filtered_desc,
             "stars": item.get("stargazers_count", 0),
             "language": item.get("language", "Unknown"),
             "fetched_at": datetime.now(timezone.utc).isoformat(),
@@ -140,6 +181,12 @@ def collect_node(state: KBState) -> dict[str, Any]:
                 "topics": item.get("topics", []),
             },
         })
+
+    if security_warnings:
+        logger.warning(
+            "[collect_node] 安全警告: %d 条",
+            len(security_warnings),
+        )
 
     logger.info("[collect_node] 采集完成: %d 条仓库数据", len(sources))
     return {"sources": sources, "cost_tracker": state.get("cost_tracker", {})}
@@ -195,6 +242,7 @@ def analyze_node(state: KBState) -> dict[str, Any]:
 
         try:
             parsed, usage = chat_json(
+                node_name="analyze_node",
                 prompt=prompt,
                 system_prompt=_ANALYZE_SYSTEM_PROMPT,
                 temperature=0.7,
@@ -269,6 +317,13 @@ def organize_node(state: KBState) -> dict[str, Any]:
     iteration = state.get("iteration", 0)
     tracker = state.get("cost_tracker", {}).copy()
 
+    cleaned_feedback, feedback_warns = sanitize_input(feedback)
+    if feedback_warns:
+        logger.warning(
+            "[organize_node] 审核反馈安全警告: %d 条",
+            len(feedback_warns),
+        )
+
     # 1. 过滤低分
     plan = state.get("plan", {})
     relevance_threshold = plan.get("relevance_threshold", 0.6)
@@ -293,16 +348,18 @@ def organize_node(state: KBState) -> dict[str, Any]:
     # 3. 定向修正（iteration > 0 且有 feedback）
     corrected = []
     for url, ana in seen_urls.items():
-        if iteration > 0 and feedback:
+        if iteration > 0 and cleaned_feedback:
             try:
+                safe_summary, _ = filter_output(ana.get("summary", ""), mask=True)
                 prompt = (
-                    f"原始摘要: {ana['summary']}\n"
+                    f"原始摘要: {safe_summary}\n"
                     f"原始标签: {', '.join(ana['tags'])}\n"
                     f"原始分类: {ana['category']}\n\n"
-                    f"审核反馈: {feedback}\n\n"
+                    f"审核反馈: {cleaned_feedback}\n\n"
                     "请根据反馈进行定向修改。"
                 )
                 text, usage = chat(
+                    node_name="organize_node",
                     prompt=prompt,
                     system_prompt=_ORGANIZE_SYSTEM_PROMPT,
                     temperature=0.5,
@@ -320,7 +377,6 @@ def organize_node(state: KBState) -> dict[str, Any]:
                 logger.warning("[organize_node] 修正失败: %s", exc)
         corrected.append(ana)
 
-    # 4. 组装 article 格式
     articles: list[dict[str, Any]] = []
     date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
 
@@ -329,12 +385,30 @@ def organize_node(state: KBState) -> dict[str, Any]:
         src = sources[idx] if 0 <= idx < len(sources) else {}
         article_id = f"github_trending_{date_str}_{src.get('title', 'unknown').replace('/', '_')}"
 
+        filtered_summary, summary_detections = filter_output(
+            ana.get("summary", ""), mask=True
+        )
+        filtered_title, title_detections = filter_output(
+            src.get("title", "无标题"), mask=True
+        )
+
+        if summary_detections:
+            logger.warning(
+                "[organize_node] summary PII 检测: %s",
+                ", ".join(d["type"] for d in summary_detections),
+            )
+        if title_detections:
+            logger.warning(
+                "[organize_node] title PII 检测: %s",
+                ", ".join(d["type"] for d in title_detections),
+            )
+
         articles.append({
             "id": article_id,
-            "title": src.get("title", "无标题"),
+            "title": filtered_title,
             "source_url": src.get("raw_url", ""),
             "source_platform": src.get("platform", "github_trending"),
-            "summary": ana.get("summary", ""),
+            "summary": filtered_summary,
             "tags": ana.get("tags", []),
             "category": ana.get("category", "unknown"),
             "score": ana.get("score", 0.0),
@@ -342,6 +416,18 @@ def organize_node(state: KBState) -> dict[str, Any]:
             "collected_at": datetime.now(timezone.utc).isoformat(),
             "status": "draft",
         })
+
+    for art in articles:
+        art["title"], title_det = filter_output(art.get("title", ""), mask=True)
+        art["summary"], sum_det = filter_output(art.get("summary", ""), mask=True)
+        art["category"], cat_det = filter_output(art.get("category", ""), mask=True)
+
+        all_detections = title_det + sum_det + cat_det
+        if all_detections:
+            logger.warning(
+                "[organize_node] 出口 PII 检测: %s",
+                ", ".join(sorted({d["type"] for d in all_detections})),
+            )
 
     logger.info("[organize_node] 组织完成: %d 条 article", len(articles))
     return {"articles": articles, "cost_tracker": tracker}
@@ -427,6 +513,7 @@ def review_node(state: KBState) -> dict[str, Any]:
 
     try:
         text, usage = chat(
+            node_name="review_node",
             prompt=prompt,
             system_prompt=_REVIEW_SYSTEM_PROMPT,
             temperature=0.3,

@@ -251,7 +251,78 @@ def run_workflow() -> KBState:
     print(f"total_tokens: {final_state.get('cost_tracker', {}).get('total_tokens', 0)}")
     print("=" * 60)
 
+    _print_cost_report(final_state)
+
     return final_state
+
+
+def _print_cost_report(state: KBState) -> None:
+    """打印工作流成本报告。
+
+    汇总 CostGuard 记录和 cost_tracker 中的 Token 用量，
+    按节点分组展示调用次数、Token 数和预估成本。
+
+    Args:
+        state: 最终工作流状态，包含 cost_tracker。
+    """
+    print(f"\n{'=' * 60}")
+    print("成本报告")
+    print("=" * 60)
+
+    tracker = state.get("cost_tracker", {})
+    total_prompt = tracker.get("total_prompt_tokens", 0)
+    total_completion = tracker.get("total_completion_tokens", 0)
+    total_tokens = tracker.get("total_tokens", 0)
+    calls_by_node = tracker.get("calls_by_node", {})
+
+    try:
+        from workflows.model_client import get_cost_guard
+
+        cost_guard = get_cost_guard()
+        report = cost_guard.get_report()
+        summary = report.get("summary", {})
+        by_node = report.get("by_node", {})
+
+        print(f"\n总调用次数: {summary.get('total_records', 0)} 次")
+        print(f"总 Prompt Tokens: {summary.get('total_prompt_tokens', total_prompt):,}")
+        print(f"总 Completion Tokens: {summary.get('total_completion_tokens', total_completion):,}")
+        print(f"总 Tokens: {summary.get('total_prompt_tokens', 0) + summary.get('total_completion_tokens', 0):,}")
+        print(f"预估成本: {summary.get('total_cost_yuan', 0.0):.6f} 元")
+        print(f"预算上限: {summary.get('budget_yuan', 1.0):.4f} 元")
+        print(f"预算使用率: {summary.get('usage_ratio', 0.0):.2%}")
+
+        if by_node:
+            print(f"\n{'─' * 60}")
+            print("按节点统计:")
+            print("─" * 60)
+            for node_name, stats in sorted(by_node.items()):
+                print(
+                    f"  {node_name:20s}  "
+                    f"调用 {stats.get('call_count', 0):3d} 次  "
+                    f"Tokens: {stats.get('total_prompt_tokens', 0):6,} / {stats.get('total_completion_tokens', 0):6,}  "
+                    f"成本: {stats.get('total_cost_yuan', 0.0):.6f} 元"
+                )
+
+        try:
+            report_path = cost_guard.save_report()
+            print(f"\n成本报告已保存: {report_path}")
+        except Exception as exc:
+            logger.warning("[graph] 保存成本报告失败: %s", exc)
+
+    except Exception as exc:
+        logger.warning("[graph] CostGuard 报告生成失败，使用基础统计: %s", exc)
+        print(f"\n总 Prompt Tokens: {total_prompt:,}")
+        print(f"总 Completion Tokens: {total_completion:,}")
+        print(f"总 Tokens: {total_tokens:,}")
+
+        if calls_by_node:
+            print(f"\n{'─' * 60}")
+            print("按节点调用次数:")
+            print("─" * 60)
+            for node_name, count in sorted(calls_by_node.items()):
+                print(f"  {node_name:20s}: {count} 次")
+
+    print(f"{'=' * 60}")
 
 
 if __name__ == "__main__":

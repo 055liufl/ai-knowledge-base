@@ -127,6 +127,7 @@ def review_node(state: KBState) -> dict[str, Any]:
 
     try:
         result, usage = chat_json(
+            node_name="reviewer",
             prompt=prompt,
             system_prompt=_REVIEW_SYSTEM_PROMPT,
             temperature=0.1,
