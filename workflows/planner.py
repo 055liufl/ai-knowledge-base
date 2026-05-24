@@ -31,6 +31,7 @@ _STRATEGIES = {
         "per_source_limit": 5,
         "relevance_threshold": 0.7,
         "max_iterations": 1,
+        "pass_threshold": 8.0,
         "rationale": (
             "目标采集量较少（<10），采用轻量策略："
             "每源最多采集 5 条，提高相关性阈值到 0.7 以减少低质数据，"
@@ -41,6 +42,7 @@ _STRATEGIES = {
         "per_source_limit": 10,
         "relevance_threshold": 0.5,
         "max_iterations": 2,
+        "pass_threshold": 7.0,
         "rationale": (
             "目标采集量中等（10-19），采用标准策略："
             "每源最多采集 10 条，相关性阈值设为 0.5 兼顾数量与质量，"
@@ -51,6 +53,7 @@ _STRATEGIES = {
         "per_source_limit": 20,
         "relevance_threshold": 0.4,
         "max_iterations": 3,
+        "pass_threshold": 6.0,
         "rationale": (
             "目标采集量较大（>=20），采用完整策略："
             "每源最多采集 20 条，降低相关性阈值到 0.4 以覆盖更多潜在素材，"

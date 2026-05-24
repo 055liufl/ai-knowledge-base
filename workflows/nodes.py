@@ -96,10 +96,14 @@ def collect_node(state: KBState) -> dict[str, Any]:
     """
     logger.info("[collect_node] 开始采集 GitHub 仓库...")
 
+    plan = state.get("plan", {})
+    per_source_limit = plan.get("per_source_limit", 10)
+    logger.info("[collect_node] 使用 per_source_limit=%d", per_source_limit)
+
     encoded_query = urllib.parse.quote(_GITHUB_QUERY)
     url = (
         f"{_GITHUB_SEARCH_API}?q={encoded_query}"
-        f"&sort=stars&order=desc&per_page=10"
+        f"&sort=stars&order=desc&per_page={per_source_limit}"
     )
 
     try:
@@ -266,7 +270,10 @@ def organize_node(state: KBState) -> dict[str, Any]:
     tracker = state.get("cost_tracker", {}).copy()
 
     # 1. 过滤低分
-    filtered = [a for a in analyses if a.get("score", 0) >= 0.6]
+    plan = state.get("plan", {})
+    relevance_threshold = plan.get("relevance_threshold", 0.6)
+    logger.info("[organize_node] 使用 relevance_threshold=%.2f", relevance_threshold)
+    filtered = [a for a in analyses if a.get("score", 0) >= relevance_threshold]
     logger.info("[organize_node] 过滤低分: %d -> %d", len(analyses), len(filtered))
 
     # 2. 按 URL 去重（保留 score 最高）

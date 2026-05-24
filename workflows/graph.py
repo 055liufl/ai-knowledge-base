@@ -63,21 +63,25 @@ def _route_after_review(state: KBState) -> str:
     """
     passed = state.get("review_passed", False)
     iteration = state.get("iteration", 0)
+    plan = state.get("plan", {})
+    max_iterations = plan.get("max_iterations", 3)
 
     if passed:
         logger.info("[graph] 审核通过，进入 organize 最终整理")
         return "organize"
 
-    if iteration < 3:
+    if iteration < max_iterations:
         logger.info(
-            "[graph] 审核未通过 (iteration=%d < 3)，进入 revise 修正",
+            "[graph] 审核未通过 (iteration=%d < %d)，进入 revise 修正",
             iteration,
+            max_iterations,
         )
         return "revise"
 
     logger.warning(
-        "[graph] 审核未通过且 iteration=%d >= 3，进入 human_flag 人工审核",
+        "[graph] 审核未通过且 iteration=%d >= %d，进入 human_flag 人工审核",
         iteration,
+        max_iterations,
     )
     return "human_flag"
 

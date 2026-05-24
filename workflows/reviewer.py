@@ -92,8 +92,10 @@ def review_node(state: KBState) -> dict[str, Any]:
     iteration = state.get("iteration", 0)
     analyses = state.get("analyses", [])
     tracker = state.get("cost_tracker", {}).copy()
+    plan = state.get("plan", {})
+    pass_threshold = plan.get("pass_threshold", 7.0)
 
-    logger.info("[reviewer] 开始审核 analyses (iteration=%d, total=%d)...", iteration, len(analyses))
+    logger.info("[reviewer] 开始审核 analyses (iteration=%d, total=%d, pass_threshold=%.1f)...", iteration, len(analyses), pass_threshold)
 
     if not analyses:
         logger.warning("[reviewer] analyses 为空，直接通过")
@@ -163,7 +165,7 @@ def review_node(state: KBState) -> dict[str, Any]:
                 "formatting": r.get("formatting", 0),
             }
             weighted = _calculate_weighted_score(scores)
-            passed = weighted >= _PASS_THRESHOLD
+            passed = weighted >= pass_threshold
 
             if passed:
                 passed_count += 1
@@ -186,7 +188,7 @@ def review_node(state: KBState) -> dict[str, Any]:
         overall_passed = passed_count >= len(reviews) * 0.6  # 60% 通过即整体通过
         summary = (
             f"审核 {len(reviews)} 条 analyses，"
-            f"{passed_count}/{len(reviews)} 条通过（加权分 >= {_PASS_THRESHOLD}）。\n"
+            f"{passed_count}/{len(reviews)} 条通过（加权分 >= {pass_threshold}）。\n"
             + "\n".join(feedback_lines)
         )
 
