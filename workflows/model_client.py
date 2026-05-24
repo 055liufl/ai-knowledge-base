@@ -73,7 +73,7 @@ def chat_json(
     temperature: float = 0.7,
     max_tokens: int | None = None,
     **kwargs: Any,
-) -> dict[str, Any]:
+) -> tuple[dict[str, Any], Usage]:
     """调用 LLM 并尝试将响应解析为 JSON。
 
     在 prompt 中自动附加 JSON 格式要求，并尝试解析返回内容。
@@ -89,7 +89,7 @@ def chat_json(
         **kwargs: 传给 chat_with_retry 的其他参数。
 
     Returns:
-        dict[str, Any]: 解析后的 JSON 字典，或包含错误信息的字典。
+        tuple[dict[str, Any], Usage]: (解析后的 JSON 字典, Token 用量统计)。
     """
     json_system_prompt = (
         "你必须以纯 JSON 格式返回结果，不要包含任何 markdown 代码块标记（如 ```json），"
@@ -122,15 +122,10 @@ def chat_json(
     try:
         result = json.loads(cleaned)
         logger.debug("JSON 解析成功: keys=%s", list(result.keys()))
-        return result
+        return result, usage
     except json.JSONDecodeError as exc:
         logger.warning("JSON 解析失败: %s, raw_content=%s", exc, text[:200])
         return {
             "error": f"JSON 解析失败: {exc}",
             "raw_content": text,
-            "usage": {
-                "prompt_tokens": usage.prompt_tokens,
-                "completion_tokens": usage.completion_tokens,
-                "total_tokens": usage.total_tokens,
-            },
-        }
+        }, usage

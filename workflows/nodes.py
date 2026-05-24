@@ -190,21 +190,12 @@ def analyze_node(state: KBState) -> dict[str, Any]:
         )
 
         try:
-            result = chat_json(
-                prompt=prompt,
-                system_prompt=_ANALYZE_SYSTEM_PROMPT,
-                temperature=0.7,
-            )
-            # chat_json 返回 dict，不返回 usage，需要估算
-            # 这里我们调用 chat 获取 usage
-            text, usage = chat(
+            parsed, usage = chat_json(
                 prompt=prompt,
                 system_prompt=_ANALYZE_SYSTEM_PROMPT,
                 temperature=0.7,
             )
             accumulate_usage(tracker, usage, node_name="analyze_node")
-
-            parsed = json.loads(text.strip().lstrip("`").rstrip("`").replace("json", "", 1).strip()) if text.strip().startswith("```") else json.loads(text)
 
             analyses.append({
                 "source_index": idx,
