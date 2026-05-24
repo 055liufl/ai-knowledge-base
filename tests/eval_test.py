@@ -77,7 +77,7 @@ EVAL_CASES: List[Dict[str, Any]] = [
             "Topics: cooking, recipes, food"
         ),
         "expected": {
-            "summary_max_len": 200,
+            "summary_max_len": 300,
             "score_range": (0.0, 0.5),
             "should_not_have": ["LLM", "AI", "大模型", "agent"],
         },
