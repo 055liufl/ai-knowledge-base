@@ -103,6 +103,22 @@ class KBState(TypedDict, total=False):
     由 review_node 维护，用于控制审核循环终止条件。
     """
 
+    # -- 规划阶段 --
+    plan: Dict[str, object]
+    """planner_node 生成的采集策略。
+
+    包含策略名称、每源采集上限、相关性阈值、最大迭代次数、
+    策略选择理由及目标采集量。
+    由 planner_node 生成，供后续节点参考使用。
+    """
+
+    target_count: int
+    """目标采集条数。
+
+    由用户或外部系统传入，planner_node 据此选择对应策略。
+    若未设置，planner_node 会从环境变量 PLANNER_TARGET_COUNT 读取。
+    """
+
     # -- 成本追踪 --
     cost_tracker: Dict[str, object]
     """Token 用量和成本累加统计。
@@ -131,6 +147,8 @@ def init_state() -> KBState:
         sources=[],
         analyses=[],
         articles=[],
+        plan={},
+        target_count=10,
         review_feedback="",
         review_passed=False,
         iteration=0,

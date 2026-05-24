@@ -35,6 +35,7 @@ from workflows.nodes import (
     review_node_test,
     save_node,
 )
+from workflows.planner import planner_node
 from workflows.reviser import revise_node
 from workflows.reviewer import review_node
 from workflows.state import KBState, init_state
@@ -117,6 +118,7 @@ def build_graph() -> Any:
     builder = StateGraph(KBState)
 
     # ── 注册节点 ───────────────────────────────────────────
+    builder.add_node("planner", planner_node)
     builder.add_node("collect", collect_node)
     builder.add_node("analyze", analyze_node)
     builder.add_node("organize", organize_node)
@@ -126,6 +128,7 @@ def build_graph() -> Any:
     builder.add_node("save", save_node)
 
     # ── 固定边 ─────────────────────────────────────────────
+    builder.add_edge("planner", "collect")
     builder.add_edge("collect", "analyze")
     builder.add_edge("analyze", "organize")
 
@@ -155,7 +158,7 @@ def build_graph() -> Any:
     builder.add_edge("save", END)
 
     # ── 入口点 ─────────────────────────────────────────────
-    builder.set_entry_point("collect")
+    builder.set_entry_point("planner")
 
     app = builder.compile()
     logger.info("[graph] 工作流编译完成")
@@ -182,11 +185,19 @@ def run_workflow() -> KBState:
             if node_name == END:
                 continue
 
+
             print(f"\n[{'─' * 58}]")
             print(f"节点: {node_name}")
             print(f"[{'─' * 58}]")
 
-            if node_name == "collect":
+            if node_name == "planner":
+                plan = output.get("plan", {})
+                print(f"  策略: {plan.get('strategy_name', 'unknown')}")
+                print(f"  target: {plan.get('target_count', 0)}")
+                print(f"  per_source_limit: {plan.get('per_source_limit', 0)}")
+                print(f"  max_iterations: {plan.get('max_iterations', 0)}")
+
+            elif node_name == "collect":
                 sources = output.get("sources", [])
                 print(f"  采集到 {len(sources)} 条数据")
                 for s in sources[:3]:
