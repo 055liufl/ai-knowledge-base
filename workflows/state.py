@@ -103,15 +103,6 @@ class KBState(TypedDict, total=False):
     由 review_node 维护，用于控制审核循环终止条件。
     """
 
-    # -- 人工审核标记 --
-    needs_human_review: bool
-    """是否需要人工审核的标志。
-
-    当审核循环超过最大迭代次数仍未通过时，
-    由 human_flag_node 设为 True。
-    用于区分"可自动修复"和"需人工判断"的条目。
-    """
-
     # -- 成本追踪 --
     cost_tracker: Dict[str, object]
     """Token 用量和成本累加统计。
@@ -143,7 +134,6 @@ def init_state() -> KBState:
         review_feedback="",
         review_passed=False,
         iteration=0,
-        needs_human_review=False,
         cost_tracker={
             "total_prompt_tokens": 0,
             "total_completion_tokens": 0,
