@@ -468,6 +468,69 @@ def review_node(state: KBState) -> dict[str, Any]:
         }
 
 
+def review_node_test(state: KBState) -> dict[str, Any]:
+    """审核节点：测试版本（前2次不通过，第3次通过）。
+
+    用于验证审核循环：organize → review → organize → review → save
+    在 graph.py 中通过注释切换使用。
+
+    Args:
+        state: 当前工作流状态，必须包含 articles、iteration 字段。
+
+    Returns:
+        dict[str, Any]: 包含 review_passed、review_feedback、
+                        iteration 和 cost_tracker。
+    """
+    iteration = state.get("iteration", 0)
+    logger.info("[review_node_test] 开始审核 (iteration=%d)...", iteration)
+
+    articles = state.get("articles", [])
+    tracker = state.get("cost_tracker", {}).copy()
+
+    # 测试逻辑：前 2 次不通过，第 3 次通过
+    if iteration == 0:
+        passed = False
+        feedback = (
+            "测试反馈（第1轮）：摘要不够深入，标签缺少关键技术点，"
+            "请补充 RAG、Agent 等技术标签并重写摘要。"
+        )
+    elif iteration == 1:
+        passed = False
+        feedback = (
+            "测试反馈（第2轮）：分类不够准确，部分条目应归类为 framework "
+            "而非 tool，请重新评估技术领域。"
+        )
+    else:
+        passed = True
+        feedback = "测试反馈（第3轮）：已达到最大迭代次数，强制通过。"
+
+    # 打印当前状态
+    print(f"  [review_node_test] iteration={iteration}, review_passed={passed}")
+
+    logger.info(
+        "[review_node_test] 审核结果: passed=%s, feedback=%s...",
+        passed,
+        feedback[:50],
+    )
+
+    if not articles:
+        logger.warning("[review_node_test] articles 为空，直接通过")
+        return {
+            "review_passed": True,
+            "review_feedback": "无内容可审核。",
+            "iteration": iteration,
+            "cost_tracker": tracker,
+        }
+
+    return {
+        "review_passed": passed,
+        "review_feedback": feedback,
+        "iteration": iteration + 1,
+        "cost_tracker": tracker,
+    }
+
+
+
 # ═══════════════════════════════════════════════════════════════
 #  5. save_node
 # ═══════════════════════════════════════════════════════════════

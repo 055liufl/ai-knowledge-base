@@ -1,0 +1,31 @@
+2026-05-24 08:00:01 [INFO] __main__: ==================================================
+2026-05-24 08:00:01 [INFO] __main__: 启动流水线: sources=['github', 'rss'], limit=10, steps={1, 2}, dry_run=False
+2026-05-24 08:00:01 [INFO] __main__: ==================================================
+2026-05-24 08:00:01 [INFO] __main__: 开始采集 GitHub: limit=10
+2026-05-24 08:00:03 [INFO] httpx: HTTP Request: GET https://api.github.com/search/repositories?q=llm%2Blanguage%3Apython&sort=stars&order=desc&per_page=20 "HTTP/1.1 200 OK"
+2026-05-24 08:00:03 [INFO] __main__: GitHub 采集完成: 10 条
+2026-05-24 08:00:03 [INFO] __main__: 开始采集 RSS: limit=10
+2026-05-24 08:00:03 [INFO] __main__: 加载 RSS 配置: 总计 20 个源，启用 8 个
+2026-05-24 08:00:24 [WARNING] __main__: RSS 采集失败 'Hacker News': 请求失败: https://news.ycombinator.com/rss - [Errno 101] Network is unreachable
+2026-05-24 08:00:26 [INFO] httpx: HTTP Request: GET https://lobste.rs/t/ai.rss "HTTP/1.1 200 OK"
+2026-05-24 08:00:31 [INFO] httpx: HTTP Request: GET https://export.arxiv.org/rss/cs.AI "HTTP/1.1 200 OK"
+2026-05-24 08:00:32 [INFO] httpx: HTTP Request: GET https://openai.com/blog/rss.xml "HTTP/1.1 307 Temporary Redirect"
+2026-05-24 08:00:32 [WARNING] __main__: RSS 采集失败 'OpenAI Blog': HTTP 错误 307: https://openai.com/blog/rss.xml
+2026-05-24 08:00:33 [INFO] httpx: HTTP Request: GET https://www.anthropic.com/research/rss.xml "HTTP/1.1 404 Not Found"
+2026-05-24 08:00:33 [WARNING] __main__: RSS 采集失败 'Anthropic Research': HTTP 错误 404: https://www.anthropic.com/research/rss.xml
+2026-05-24 08:00:54 [WARNING] __main__: RSS 采集失败 'Hugging Face Blog': 请求失败: https://huggingface.co/blog/feed.xml - [Errno 101] Network is unreachable
+2026-05-24 08:00:56 [INFO] httpx: HTTP Request: GET https://blog.google/technology/ai/rss/ "HTTP/1.1 301 Moved Permanently"
+2026-05-24 08:00:56 [WARNING] __main__: RSS 采集失败 'Google AI Blog': HTTP 错误 301: https://blog.google/technology/ai/rss/
+2026-05-24 08:00:56 [INFO] httpx: HTTP Request: GET https://www.theverge.com/rss/ai-artificial-intelligence/index.xml "HTTP/1.1 200 OK"
+2026-05-24 08:00:57 [INFO] __main__: RSS 采集完成: 17 条
+2026-05-24 08:00:57 [INFO] __main__: 采集总计: 27 条
+2026-05-24 08:00:57 [INFO] __main__: 原始数据已保存: /home/lfl/ai-knowledge-base/knowledge/raw/rss_general_tech-2026-05-24.json (17 条)
+2026-05-24 08:00:57 [INFO] __main__: 原始数据已保存: /home/lfl/ai-knowledge-base/knowledge/raw/github_trending-2026-05-24.json (10 条)
+2026-05-24 08:00:57 [INFO] __main__: 流水线完成: collected=27, analyzed=0, saved=0, failed=0
+2026-05-24 08:00:57 [INFO] __main__: ==================================================
+2026-05-24 08:00:57 [INFO] __main__: 流水线执行统计:
+2026-05-24 08:00:57 [INFO] __main__:   采集: 27 条
+2026-05-24 08:00:57 [INFO] __main__:   分析: 0 条
+2026-05-24 08:00:57 [INFO] __main__:   保存: 0 条
+2026-05-24 08:00:57 [INFO] __main__:   失败: 0 条
+2026-05-24 08:00:57 [INFO] __main__: ==================================================
