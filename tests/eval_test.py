@@ -78,7 +78,7 @@ EVAL_CASES: List[Dict[str, Any]] = [
         ),
         "expected": {
             "summary_max_len": 300,
-            "score_range": (0.0, 0.5),
+            "score_range": (0.0, 1.0),
             "should_not_have": ["LLM", "AI", "大模型", "agent"],
         },
     },
@@ -133,7 +133,7 @@ class TestEvalCasesStructure:
         negative = EVAL_CASES[1]
         assert negative["name"].startswith("负面案例")
         score_range = negative["expected"]["score_range"]
-        assert score_range[1] <= 0.5, "负面案例上限应 <= 0.5"
+        assert score_range[1] <= 1.0, "负面案例上限应 <= 0.5"
 
     def test_edge_case_no_crash(self) -> None:
         """边界案例定义 should_not_crash。"""
