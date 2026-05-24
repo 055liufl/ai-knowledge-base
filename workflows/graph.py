@@ -29,10 +29,11 @@ from workflows.nodes import (
     analyze_node,
     collect_node,
     organize_node,
-    review_node,        # LLM 审核版本（默认）
-    review_node_test,   # 测试版本：前2次不通过，第3次通过
+    review_node as review_node_legacy,  # nodes.py 中的 LLM 审核
+    review_node_test,                   # 测试版本
     save_node,
 )
+from workflows.reviewer import review_node  # 5 维度加权评分审核
 from workflows.state import KBState, init_state
 
 logger = logging.getLogger(__name__)
@@ -87,8 +88,9 @@ def build_graph() -> Any:
     builder.add_node("analyze", analyze_node)
     builder.add_node("organize", organize_node)
     # 审核节点切换（取消注释使用对应版本）：
-    builder.add_node("review", review_node)      # LLM 评分（默认）
-    # builder.add_node("review", review_node_test)  # 测试循环
+    builder.add_node("review", review_node)              # 5 维度加权评分（推荐）
+    # builder.add_node("review", review_node_legacy)      # nodes.py 中的 LLM 审核
+    # builder.add_node("review", review_node_test)        # 硬编码测试循环
     builder.add_node("save", save_node)
 
     # ── 线性边 ─────────────────────────────────────────────
