@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260525-013",
+  "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+  "source_url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是系列文章的第一部分，探讨如何在 Swift 中高效实现矩阵乘法，以支持大语言模型（LLM）的训练。作者从基础的 Gflop/s 性能出发，通过逐步优化（如利用 SIMD、缓存优化、循环展开等技术），最终达到 Tflop/s 级别的性能。文章详细介绍了 Swift 在底层性能优化方面的潜力，展示了如何通过手动调优和利用硬件特性（如 ARM NEON 指令集）来显著提升计算效率。这对于希望在 Apple 硬件上运行或训练 LLM 的开发者具有重要参考价值，因为 Swift 通常被视为高级语言，但本文证明了其在高性能计算领域的可行性。值得关注的是，该系列可能为 Swift 在 AI/ML 领域的应用开辟新路径，尤其是在边缘计算和移动设备上。",
+  "tags": [
+    "Swift",
+    "Matrix Multiplication",
+    "Performance Optimization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:44Z",
+  "collected_at": "2026-05-25T11:56:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Swift 通过低级优化（如 SIMD 和缓存管理）可实现接近硬件极限的矩阵乘法性能，从 Gflop/s 提升至 Tflop/s。",
+      "文章展示了在 Apple 硬件上训练 LLM 的潜在可行性，挑战了 Swift 仅适用于应用开发的传统认知。",
+      "优化过程强调了手动调优的重要性，包括循环展开、内存布局调整和指令集利用，这些技术对高性能计算开发者具有通用指导意义。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

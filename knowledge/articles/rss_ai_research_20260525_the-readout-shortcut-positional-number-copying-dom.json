@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-047",
+  "title": "The Readout Shortcut: Positional Number Copying Dominates Arithmetic CoT Readout in Small Language Models",
+  "source_url": "https://arxiv.org/abs/2605.22870",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了小型语言模型（1-3B参数规模）在算术推理任务中使用链式思维（CoT）提示时的行为机制。研究发现，CoT步骤的顺序打乱后，模型性能并未显著下降，这表明CoT的主要贡献并非逻辑顺序推理。通过前缀补全实验，作者发现模型在答案读出阶段存在一种“位置捷径”：模型会直接复制答案分隔符前最后一个位置的数字，而忽略中间计算步骤。这一发现揭示了小型语言模型在算术推理中依赖表面模式而非真正理解逻辑过程，对理解CoT提示的实际作用机制和模型推理能力评估具有重要意义。",
+  "tags": [
+    "Chain-of-Thought",
+    "Arithmetic Reasoning",
+    "Small Language Models",
+    "Positional Shortcut"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:00:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoT提示在小型语言模型中的主要作用并非逻辑顺序推理，而是提供一种位置捷径，模型直接复制答案分隔符前的最后一个数字。",
+      "打乱CoT步骤顺序后模型性能保持稳定，说明模型并未真正依赖中间推理步骤。",
+      "该发现挑战了CoT提示促进逻辑推理的普遍假设，对评估和改进小型模型的推理能力有重要启示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

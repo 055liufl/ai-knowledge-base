@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260525-109",
+  "title": "When Good Equations Get Bad Scores: Improving Symbolic Regression Through Better Parameter Optimization",
+  "source_url": "https://arxiv.org/abs/2605.23272",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过改进参数优化来提升符号回归（Symbolic Regression, SR）性能的方法。符号回归是科学知识发现的核心技术，能从观测数据中提炼数学方程。现有方法大多采用双层优化框架：外层搜索离散方程结构，内层优化连续参数。参数拟合质量直接决定结构的评分，进而影响搜索方向。然而，传统内层优化常采用快速但不可靠的局部优化器（如Levenberg-Marquardt），导致许多结构因参数拟合不佳而被错误地低分评价，从而被搜索过程过早丢弃。本文系统分析了这一“好方程得低分”的问题，并提出了一种更鲁棒的参数优化策略，通过结合全局优化与局部精调，显著提升了方程结构的评分准确性。实验表明，该方法在多个基准数据集上发现了更多符合真实物理规律的方程，且计算开销可控。这项工作值得关注，因为它直击符号回归领域长期存在的瓶颈，即参数优化不足对结构搜索的误导，为提升科学发现自动化水平提供了关键改进。",
+  "tags": [
+    "Symbolic Regression",
+    "Parameter Optimization",
+    "Scientific Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:04:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "符号回归中参数优化质量直接影响方程结构评分，传统局部优化器易导致好方程被低分误判。",
+      "提出结合全局优化与局部精调的鲁棒参数优化策略，显著提升方程结构评分的准确性。",
+      "该方法在多个基准数据集上发现了更多符合真实物理规律的方程，且计算开销可控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

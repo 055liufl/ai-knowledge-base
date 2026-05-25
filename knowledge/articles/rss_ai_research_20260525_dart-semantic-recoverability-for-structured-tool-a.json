@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-019",
+  "title": "DART: Semantic Recoverability for Structured Tool Agents",
+  "source_url": "https://arxiv.org/abs/2605.23311",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为DART（语义可恢复性）的框架，旨在解决结构化工具代理在执行过程中失败时的恢复问题。当代理在任务执行中途失败时，运行时面临两难选择：回放整个任务虽然安全但浪费资源，而从本地检查点恢复虽然高效但可能导致已提交的下游工作与不再存在的上游历史相关联。这种紧张关系在承诺敏感的环境中尤为突出，因为回滚仅针对单个失败实例，但下游消费者已基于其输出采取了行动。DART通过引入语义可恢复性概念，允许代理在失败后仅恢复必要的语义状态，而无需完全重放或依赖脆弱的检查点。该框架利用结构化工具的输出语义来识别和重建关键上下文，从而在效率和正确性之间取得平衡。论文通过实验验证了DART在多种工具代理场景中的有效性，显著减少了恢复开销并保持了系统一致性。这项研究对于构建可靠、高效的AI代理系统具有重要意义，特别是在需要处理复杂、多步骤任务的场景中。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Recovery",
+    "Semantic"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:58:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DART通过语义可恢复性解决了结构化工具代理失败时的恢复困境，避免了完全重放或检查点恢复的缺点。",
+      "该框架利用工具输出的语义信息来重建关键上下文，在承诺敏感环境中保持系统一致性。",
+      "实验表明DART显著降低了恢复开销，同时保证了任务执行的正确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

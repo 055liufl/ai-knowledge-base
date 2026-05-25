@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260525-021",
+  "title": "Scaling Pain of Coding Agent Serving: Lessons from Debugging GLM-5 at Scale",
+  "source_url": "https://z.ai/blog/scaling-pain",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由 z.ai 发布，深入探讨了在规模化部署 GLM-5 编码代理服务过程中遇到的性能瓶颈与调试经验。文章详细分析了编码代理在服务层面面临的独特挑战，包括高并发请求下的资源竞争、模型推理延迟、以及代理状态管理带来的内存与计算开销。作者分享了通过系统架构优化、请求调度策略调整以及缓存机制改进来缓解这些痛点的具体案例。文章还强调了编码代理与传统 LLM 服务在负载模式上的差异，例如代理需要频繁的上下文切换和工具调用，导致服务端压力倍增。这些经验对于构建高效、可扩展的 AI 代理基础设施具有重要参考价值，尤其适用于需要处理复杂编码任务的场景。",
+  "tags": [
+    "Coding Agent",
+    "LLM Serving",
+    "Scalability",
+    "System Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:44Z",
+  "collected_at": "2026-05-25T11:56:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理服务面临独特的资源竞争和延迟问题，源于频繁的上下文切换和工具调用。",
+      "通过请求调度和缓存优化，可以显著缓解高并发下的性能瓶颈。",
+      "GLM-5 的调试经验揭示了代理状态管理对内存和计算开销的关键影响。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

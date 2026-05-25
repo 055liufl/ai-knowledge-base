@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-135",
+  "title": "RA-DCA: A Randomized Active-Set DCA for Directional Stationarity in Max-Structured DC Programs",
+  "source_url": "https://arxiv.org/abs/2605.23550",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为RA-DCA的随机化活动集DCA算法，用于解决一类非光滑差凸规划问题，其中被减凸项是多个光滑凸函数的最大值。标准DCA迭代可能收敛到非方向稳定的临界点，而精确的活动顶点筛选在大规模或组合活动集时计算成本高昂。RA-DCA通过优先采样顶点方向并投影活动梯度，在保证方向稳定性的同时显著降低计算复杂度。该工作为大规模非凸优化问题提供了新的高效求解思路，尤其适用于机器学习中的稀疏正则化、鲁棒优化等场景。其创新点在于将随机化策略与活动集方法结合，平衡了理论收敛性与实际计算效率。",
+  "tags": [
+    "Optimization",
+    "DCA",
+    "Randomized Algorithm",
+    "Nonsmooth Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:06:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准DCA在最大结构差凸规划中可能收敛到非方向稳定点，RA-DCA通过随机化活动集克服此问题。",
+      "RA-DCA采用顶点优先的随机采样策略，避免精确活动顶点筛选的高昂成本。",
+      "算法在理论上保证收敛到方向稳定点，同时具有与问题规模相关的概率复杂度优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

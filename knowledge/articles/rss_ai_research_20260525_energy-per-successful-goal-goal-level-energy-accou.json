@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260525-005",
+  "title": "Energy per Successful Goal: Goal-Level Energy Accounting for Agentic AI Systems",
+  "source_url": "https://arxiv.org/abs/2605.22883",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对智能体AI系统的新型能源度量方法——'每次成功目标能耗'（Energy per Successful Goal, EPSG）。传统的AI能源基准测试以单次模型调用或训练运行作为能耗计量单位，这在经典的单轮任务中尚可适用。然而，对于智能体系统（Agentic AI Systems），一个用户目标可能触发多步编排、工具调用、重试和失败恢复循环，此时调用次数成为实现细节而非任务属性，基于推理次数的能耗归一化会错误表征系统的实际能源效率。EPSG将能耗计量单位从模型调用级别提升到目标完成级别，通过追踪从用户目标提出到成功完成（或最终失败）的整个生命周期内的总能耗，包括所有子任务、重试和恢复过程的能源消耗，从而提供更符合实际任务价值的能耗评估。该工作对于理解智能体系统的真实能源成本、优化系统设计以及制定可持续AI发展策略具有重要意义，尤其值得关注的是它揭示了当前基准测试在智能体场景下的根本性缺陷。",
+  "tags": [
+    "Energy Efficiency",
+    "Agentic AI",
+    "Benchmarking"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:57:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统以模型调用次数为单位的能耗度量在智能体系统中失效，因为调用次数是实现细节而非任务属性。",
+      "EPSG将能耗计量单位提升到目标完成级别，涵盖整个生命周期内的所有子任务、重试和恢复过程。",
+      "该度量方法为智能体系统的能源效率评估提供了更准确和任务相关的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

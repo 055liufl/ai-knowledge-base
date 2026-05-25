@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-111",
+  "title": "Convergence Without Understanding: When Language Models Agree on Representations but Disagree on Reasoning",
+  "source_url": "https://arxiv.org/abs/2605.23315",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了大型语言模型在不同训练目标和架构下是否不仅会收敛到相似的内部表示（即柏拉图表示假说），还会在推理过程上趋同。作者对来自8个模型家族的16个语言模型（参数规模从1.5B到72B）进行了表示相似性评估，发现尽管模型在表示空间上高度对齐，但其推理过程（即基于这些表示进行决策的机制）却存在显著差异。这一发现挑战了“表示收敛必然导致推理一致”的直觉，揭示了模型在“理解”上的表面一致性可能掩盖了底层推理逻辑的多样性。该研究对于理解LLM的泛化能力、可解释性以及模型集成策略具有重要启示，尤其提醒研究者在依赖表示相似性进行模型比较或迁移时需谨慎。论文的实验设计严谨，覆盖了多种主流架构（如GPT、LLaMA、Mistral等），为后续探索表示与推理的解耦关系提供了实证基础。",
+  "tags": [
+    "LLM",
+    "Representation Learning",
+    "Reasoning",
+    "Model Convergence"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:05:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型语言模型在表示空间上高度收敛，但其推理过程（即基于表示进行决策的机制）存在显著差异，表明表示与推理可以解耦。",
+      "对16个模型（8个家族，1.5B-72B参数）的系统评估揭示了表示相似性并不保证推理一致性，挑战了柏拉图表示假说的延伸。",
+      "该发现对模型可解释性、迁移学习和集成方法有重要启示：依赖表示相似性进行模型比较可能掩盖推理层面的多样性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

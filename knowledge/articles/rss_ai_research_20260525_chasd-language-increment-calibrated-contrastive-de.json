@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-113",
+  "title": "CHASD: Language Increment-Calibrated Contrastive Decoding against Hallucination in LVLMs",
+  "source_url": "https://arxiv.org/abs/2605.23344",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CHASD（Language Increment-Calibrated Contrastive Decoding）的新型对比解码方法，旨在减少大型视觉语言模型（LVLMs）中的对象幻觉问题。LVLMs在视觉证据不足或错位时，容易因语言先验主导而产生幻觉。现有的无训练对比解码方法通过比较原始和扰动视觉输入的预测来缓解此问题，但全局扰动可能改变有用的视觉证据，或引入额外的计算开销。CHASD通过语言增量校准机制，在解码过程中动态调整语言先验的影响，确保视觉证据得到适当利用，从而在不增加训练成本的情况下有效抑制幻觉。该方法在多个基准测试中表现出色，显著提升了LVLMs的可靠性。这项研究值得关注，因为它针对LVLMs的核心缺陷——幻觉问题，提供了一种高效、无训练且可扩展的解决方案，有望推动多模态AI在医疗、自动驾驶等高风险领域的实际应用。",
+  "tags": [
+    "LVLM",
+    "Hallucination",
+    "Contrastive Decoding",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:05:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CHASD通过语言增量校准机制动态调整语言先验，有效减少LVLMs中的对象幻觉，无需额外训练。",
+      "该方法避免了全局扰动对有用视觉证据的破坏，同时保持计算效率，优于现有对比解码方法。",
+      "实验表明CHASD在多个基准上显著提升LVLMs的可靠性，为多模态AI的实际部署提供了关键改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260525-052",
+  "title": "Tensor Cache: Eviction-conditioned Associative Memory for Transformers",
+  "source_url": "https://arxiv.org/abs/2605.22884",
+  "source_platform": "rss_ai_research",
+  "summary": "Tensor Cache 是一种针对 Transformer 模型的新型缓存机制，旨在解决自回归生成中 KV 缓存随上下文长度线性增长的问题。传统滑动窗口缓存通过丢弃窗口外的 token 来限制内存使用，但会导致相关信息完全丢失。Tensor Cache 采用两级缓存结构：第一级（L1）使用滑动窗口 softmax 注意力，第二级（L2）则利用从窗口中驱逐的 KV 对构建固定大小的外积快速权重记忆。这种设计使得被驱逐的 token 信息能够被压缩并保留在 L2 中，从而在保持内存效率的同时，避免关键上下文信息的永久丢失。该方法在长上下文场景下具有显著优势，能够在不显著增加计算开销的情况下，提升模型对历史信息的访问能力。值得关注的是，它提供了一种平衡内存使用与信息保留的创新思路，对长序列建模、实时推理和资源受限环境下的 LLM 部署具有重要实用价值。",
+  "tags": [
+    "Transformer",
+    "KV Cache",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:00:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Tensor Cache 通过两级缓存结构，在滑动窗口基础上引入外积快速权重记忆，解决了被驱逐 token 信息完全丢失的问题。",
+      "该方法在保持固定内存开销的同时，显著提升了长上下文场景下模型对历史信息的访问能力。",
+      "这种缓存机制为 Transformer 推理中的内存-精度权衡提供了新的解决方案，尤其适用于资源受限的部署环境。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

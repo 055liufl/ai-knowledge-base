@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-103",
+  "title": "Enhancing Deep Neural Network Reliability with Refinement and Calibration",
+  "source_url": "https://arxiv.org/abs/2605.23249",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对深度神经网络（DNN）在预测精度高但置信度估计不可靠的问题，提出了一种结合精炼（Refinement）与校准（Calibration）的增强可靠性方法。研究指出，现有校准度量常可通过仅模拟校准效果的后处理技术来提升，但并未真正改善模型的内在可靠性。作者提出一种联合框架，在训练过程中同时优化模型预测的精细度（即对正确与错误样本的区分能力）和校准度（即置信度与正确概率的对齐），从而在保持高精度的同时提升置信度的可信度。实验在多个标准数据集和网络架构上验证了该方法在可靠性指标（如期望校准误差、负对数似然）上的显著改进，并展示了其在安全关键应用（如自动驾驶、医疗诊断）中的潜在价值。该工作值得关注，因为它直接回应了DNN部署中信任与安全的核心挑战，并通过理论分析与实证结果证明了联合优化比单独后处理更有效。",
+  "tags": [
+    "Deep Neural Networks",
+    "Calibration",
+    "Reliability",
+    "Confidence Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:04:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出精炼与校准的联合优化框架，克服了后处理技术仅模拟校准效果的局限性，从根本上提升模型可靠性。",
+      "通过理论分析证明，精炼过程能增强模型对正确与错误样本的区分能力，从而为校准提供更坚实的基础。",
+      "在多个数据集和架构上的实验表明，该方法在保持高精度的同时显著降低了期望校准误差，适用于安全关键应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

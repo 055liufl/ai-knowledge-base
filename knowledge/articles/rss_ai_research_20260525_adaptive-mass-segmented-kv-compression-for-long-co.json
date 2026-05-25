@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-097",
+  "title": "Adaptive Mass-Segmented KV Compression for Long-Context Reasoning",
+  "source_url": "https://arxiv.org/abs/2605.23200",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为自适应分段（Adaptive Mass-Segmented, AMS）的KV压缩框架，旨在解决长上下文推理中大型语言模型（LLM）的KV缓存线性增长问题。现有方法基于重要性分数进行全局Top-k选择，但会导致“区域擦除”（Region Wipe-out）问题，即连续推理块被大量驱逐，破坏逻辑连贯性。AMS通过将KV缓存划分为多个连续段，并基于每个段的重要性进行自适应压缩，从而保留关键推理块。实验表明，AMS在保持推理质量的同时，显著降低了缓存占用，尤其适用于需要长上下文推理的任务，如文档问答和代码生成。该工作值得关注，因为它直接针对长上下文推理中的核心瓶颈，提供了更精细的压缩策略，有望提升LLM在复杂推理场景中的效率和准确性。",
+  "tags": [
+    "KV Cache",
+    "Long-Context",
+    "LLM Inference",
+    "Compression"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:04:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有全局Top-k KV压缩方法会导致区域擦除，破坏长上下文推理的逻辑连贯性。",
+      "AMS通过分段自适应压缩，保留关键连续推理块，避免逻辑断裂。",
+      "该方法在长上下文推理任务中显著降低KV缓存占用，同时保持推理质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

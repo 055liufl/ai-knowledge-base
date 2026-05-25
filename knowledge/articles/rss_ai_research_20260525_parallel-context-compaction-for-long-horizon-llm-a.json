@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-017",
+  "title": "Parallel Context Compaction for Long-Horizon LLM Agent Serving",
+  "source_url": "https://arxiv.org/abs/2605.23296",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为并行上下文压缩（Parallel Context Compaction, PCC）的方法，用于解决长周期LLM代理服务中对话历史超出上下文窗口的问题。传统方法通过LLM摘要进行上下文压缩，但摘要过程是阻塞的，会导致代理推理延迟数十秒，且操作员无法精细控制摘要体积。PCC通过将摘要任务与代理推理并行化，并引入可学习的压缩率控制机制，实现了对上下文体积的细粒度管理。实验表明，PCC在保持任务性能的同时，显著降低了推理延迟，提升了系统吞吐量。该工作对于构建高效、可扩展的LLM代理系统具有重要价值，特别是在需要长期交互的复杂任务场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Inference Optimization",
+    "Context Management"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:57:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行化上下文压缩与代理推理，消除阻塞延迟，提升服务效率。",
+      "引入可学习的压缩率控制，实现对上下文体积的精细调节。",
+      "在长周期任务中保持任务性能的同时，显著降低推理延迟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

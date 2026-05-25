@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260525-002",
+  "title": "Notes about reading messages with the Python email packages",
+  "source_url": "https://utcc.utoronto.ca/~cks/space/blog/python/EmailPackagesNotes",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是关于使用Python email包读取消息的笔记，主要讨论了email包在处理邮件消息时的常见问题和注意事项。作者基于实际经验，分享了如何正确解析邮件头、处理多部分消息、解码编码内容以及应对各种邮件格式的陷阱。文章强调了email包在Python标准库中的重要性，但指出了其API设计上的复杂性和文档不足的挑战。对于需要处理邮件数据的开发者来说，这些笔记提供了实用的调试技巧和最佳实践，帮助避免常见的错误，如字符编码问题、MIME结构解析错误等。尽管内容较为技术性，但它直接解决了实际开发中的痛点，因此值得关注。",
+  "tags": [
+    "Python",
+    "email",
+    "parsing"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:42Z",
+  "collected_at": "2026-05-25T11:55:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Python email包的API设计复杂，文档不完善，开发者需注意邮件头解析和多部分消息处理的细节。",
+      "正确处理邮件编码（如Base64、Quoted-Printable）是避免乱码的关键，需结合charset信息。",
+      "多部分邮件（如带附件的邮件）的解析需要递归处理，并注意边界分隔符的匹配。",
+      "实际开发中应优先使用email包的policy模块（如policy.SMTP）以简化兼容性问题。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

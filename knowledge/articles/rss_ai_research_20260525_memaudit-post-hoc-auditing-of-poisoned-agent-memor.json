@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260525-027",
+  "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+  "source_url": "https://arxiv.org/abs/2605.23723",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 MemAudit 的新型事后审计框架，用于检测和定位大型语言模型（LLM）智能体记忆中的恶意注入记录。随着 LLM 智能体越来越多地依赖持久记忆来存储历史交互、检索相关示例并提升长周期任务执行能力，这种记忆机制也带来了安全漏洞：对抗性用户可能通过正常交互将恶意记录注入智能体记忆，这些记录后续可能被检索并操纵智能体的推理和行为。MemAudit 通过因果归因和结构异常检测两种技术手段，在不干扰智能体正常运行的情况下，对记忆进行事后审计。因果归因用于识别哪些记忆条目对智能体决策产生了异常影响，而结构异常检测则通过分析记忆条目之间的关联模式发现异常。该方法能够有效检测多种类型的记忆投毒攻击，包括后门攻击、目标劫持和上下文操纵等。实验结果表明，MemAudit 在多个基准任务上取得了高检测率和低误报率，为 LLM 智能体的安全性提供了重要保障。该研究值得关注，因为它首次系统性地解决了 LLM 智能体记忆投毒的事后审计问题，填补了该领域的安全空白，对于推动 LLM 智能体在实际应用中的安全部署具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Memory Poisoning",
+    "Anomaly Detection"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:58:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MemAudit 通过因果归因和结构异常检测双管齐下，有效识别 LLM 智能体记忆中的恶意注入记录，解决了记忆投毒攻击的事后审计难题。",
+      "该方法能够检测多种攻击类型（如后门攻击、目标劫持），在多个基准任务上实现高检测率与低误报率，为智能体安全提供了实用工具。",
+      "研究首次系统性地关注 LLM 智能体持久记忆的安全漏洞，填补了该领域在事后审计方面的空白，对推动安全部署有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

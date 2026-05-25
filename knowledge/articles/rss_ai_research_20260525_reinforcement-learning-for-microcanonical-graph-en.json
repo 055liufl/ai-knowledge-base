@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-110",
+  "title": "Reinforcement Learning for Microcanonical Graph Ensemble with Assortativity Constraints",
+  "source_url": "https://arxiv.org/abs/2605.23285",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种基于强化学习的微正则图系综采样方法，用于在满足同配性约束的条件下生成网络结构。传统方法如指数随机图模型（ERGM）仅能在期望意义上满足约束，而微正则系综要求严格满足硬约束，但现有采样方法效率低下。作者将图生成过程建模为马尔可夫决策过程，利用强化学习智能体逐步添加边，同时优化同配性指标（如节点属性相似性）。该方法在保持图全局结构（如度序列）的同时，能精确控制同配性水平，实验表明其在收敛速度和采样质量上优于MCMC等基线方法。这项工作为研究网络结构与功能的关系提供了新工具，尤其适用于社交网络、生物网络等需要精确控制同配性的场景。",
+  "tags": [
+    "Reinforcement Learning",
+    "Graph Generation",
+    "Microcanonical Ensemble",
+    "Assortativity"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:05:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将图生成转化为顺序决策问题，通过强化学习实现微正则系综的硬约束采样，避免了传统MCMC的混合时间问题。",
+      "方法能同时满足度序列和同配性约束，生成具有精确可控结构属性的网络，优于ERGM的期望约束。",
+      "实验验证了在多种同配性水平下的采样效率，为网络科学中结构-功能关系研究提供了高效工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

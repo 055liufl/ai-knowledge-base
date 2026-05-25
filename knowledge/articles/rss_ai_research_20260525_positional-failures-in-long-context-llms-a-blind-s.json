@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-094",
+  "title": "Positional Failures in Long-Context LLMs: A Blind Spot in Reasoning Benchmarks",
+  "source_url": "https://arxiv.org/abs/2605.23170",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文揭示了当前长上下文大语言模型（LLM）推理基准测试中的一个盲点：虽然检索任务（如Needle-in-a-Haystack和RULER）已经采用了位置控制的评估方法，但主流的推理基准测试并未控制目标任务在长上下文中的位置放置。作者对11个长上下文基准进行了审计，发现没有一个基准能够同时控制任务位置、填充内容和上下文长度来进行推理评估。进一步对四个旗舰长上下文模型发布的审计显示，其主要结果表中没有包含NIAH、RULER或LongBench的条目。这一发现表明，现有推理基准可能无法准确反映LLM在长上下文中的真实推理能力，因为位置偏差可能导致模型在特定位置表现更好或更差。该研究值得关注，因为它指出了评估方法中的一个系统性缺陷，可能影响对长上下文LLM能力的理解，并为未来更严谨的基准设计提供了方向。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Long Context",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:03:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "主流推理基准未控制任务位置，导致评估结果可能受位置偏差影响",
+      "审计11个长上下文基准，无一个能同时控制位置、填充内容和长度",
+      "旗舰模型发布中缺乏对位置控制评估的引用，显示评估标准不统一"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

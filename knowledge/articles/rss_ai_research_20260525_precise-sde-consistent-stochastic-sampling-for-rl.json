@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-134",
+  "title": "Precise: SDE-Consistent Stochastic Sampling for RL Post-Training of Flow-Matching Models",
+  "source_url": "https://arxiv.org/abs/2605.23522",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Precise 的方法，用于在流匹配模型的强化学习后训练中实现一致的随机采样。在扩散和流匹配生成器中，强化学习已成为提升提示对齐和感知质量的有效手段。将在线强化学习应用于流匹配的关键步骤是将确定性采样轨迹转化为随机策略，通常通过将逆时常微分方程替换为随机微分方程来实现。随机采样器控制着探索与利用的平衡，对强化学习训练效果至关重要。本文提出了一种 SDE 一致的随机采样方法，旨在解决现有随机采样策略在强化学习后训练中可能导致的不一致性和效率低下问题。该方法通过确保采样过程的随机性与模型训练目标的一致性，提升了强化学习训练的稳定性和生成质量。这项工作对于提升生成模型在复杂任务中的表现具有重要意义，尤其是在需要精细控制生成过程的场景中。",
+  "tags": [
+    "Flow-Matching",
+    "Reinforcement Learning",
+    "Stochastic Sampling",
+    "Diffusion Models"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:06:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将强化学习应用于流匹配模型时，将确定性ODE采样替换为随机SDE采样是构建随机策略的关键步骤。",
+      "本文提出的SDE一致随机采样方法能够改善强化学习后训练中的探索-利用平衡，提升训练稳定性和生成质量。",
+      "该方法通过确保采样随机性与模型训练目标的一致性，解决了现有随机采样策略可能导致的性能下降问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

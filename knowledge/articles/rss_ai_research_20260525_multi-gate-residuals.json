@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260525-104",
+  "title": "Multi-Gate Residuals",
+  "source_url": "https://arxiv.org/abs/2605.23259",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Multi-Gate Residuals (MGR) 的新方法，旨在解决深度残差网络中常见的激活值无界增长问题。与现有的 Attention Residuals 方法相比，MGR 通过引入简单的评分和门控机制来维持多流上下文，从而在不增加额外通信开销的情况下稳定激活尺度。该方法避免了 Attention Residuals 中因注意力计算带来的显著通信瓶颈，特别适用于分布式训练或资源受限的场景。MGR 的核心创新在于其轻量级设计：通过多门控单元动态选择或组合不同残差路径的信息，既保留了残差连接的优势，又抑制了激活值的爆炸性增长。实验表明，MGR 在多种深度网络架构（如 ResNet、Transformer）上均能有效提升训练稳定性，并保持或略微提升模型性能。这项工作对于大规模深度学习模型的训练效率优化具有实际意义，尤其值得关注其在分布式系统或边缘设备上的应用潜力。",
+  "tags": [
+    "Residual Networks",
+    "Activation Growth",
+    "Gating Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:04:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MGR 通过评分和门控机制稳定激活尺度，无需额外通信开销，优于 Attention Residuals。",
+      "该方法解决了深度残差网络中激活值无界增长的关键问题，提升训练稳定性。",
+      "MGR 的轻量级设计使其适用于分布式训练和资源受限环境。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

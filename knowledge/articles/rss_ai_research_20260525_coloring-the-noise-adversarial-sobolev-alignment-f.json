@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260525-106",
+  "title": "Coloring the Noise: Adversarial Sobolev Alignment for Faithful Image Super Resolution",
+  "source_url": "https://arxiv.org/abs/2605.23264",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“对抗性Sobolev对齐”（Adversarial Sobolev Alignment）的新方法，用于解决图像超分辨率（SR）中的忠实恢复问题。作者指出，现有生成先验在SR中常因各向同性目标与自然图像流形之间的频谱错位而导致幻觉，即生成的高频细节不真实。直接偏好优化（DPO）虽能进行对齐，但其依赖的频谱平坦高斯噪声无法区分真实高频细节与虚假信息。为此，本文引入Sobolev空间中的对抗性对齐策略，通过约束生成图像与真实图像在梯度域（即高频结构）上的分布一致性，迫使模型学习更忠实的高频细节。该方法在多个基准数据集上验证了有效性，在保持感知质量的同时显著提升了保真度指标（如PSNR、SSIM）。该工作值得关注，因为它从频谱几何角度揭示了超分辨率中幻觉的根源，并提出了一种理论严谨且实用的对齐框架，有望推动生成式超分辨率向更可靠、更忠实的方向发展。",
+  "tags": [
+    "Image Super-Resolution",
+    "Adversarial Learning",
+    "Spectral Alignment",
+    "Sobolev Space",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:04:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图像超分辨率中生成先验的忠实性受限源于各向同性目标与自然图像流形之间的频谱错位，而非简单的过平滑。",
+      "对抗性Sobolev对齐通过约束生成图像与真实图像在梯度域（高频结构）的分布一致性，有效区分真实高频细节与幻觉。",
+      "该方法在提升保真度指标（如PSNR、SSIM）的同时，保持了感知质量，优于现有基于DPO的对齐方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

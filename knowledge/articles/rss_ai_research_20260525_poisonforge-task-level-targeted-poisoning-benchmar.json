@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260525-093",
+  "title": "PoisonForge: Task-Level Targeted Poisoning Benchmark for Instruction-Tuned LLMs",
+  "source_url": "https://arxiv.org/abs/2605.23168",
+  "source_platform": "rss_ai_research",
+  "summary": "PoisonForge 是一个针对指令微调大语言模型（LLM）的任务级定向投毒基准测试。在微调过程中，攻击者可能通过向数据集中插入少量精心设计的指令-响应对，使模型在特定任务族（如涉及某个国家的问答）中嵌入攻击者指定的实体（如偏见），而在其他任务上表现正常。该基准从四个维度（偏见类型、任务族、投毒比例、模型架构）参数化这一威胁，旨在系统评估 LLM 在数据供应链中的脆弱性。PoisonForge 提供了标准化的评估框架和数据集，帮助研究人员和开发者量化投毒攻击的影响，并探索防御策略。其重要性在于揭示了当前 LLM 微调流程中的安全盲点，尤其是当使用未经验证的第三方数据时，模型可能被隐蔽地操纵。该工作为 AI 安全领域提供了实用的工具，有助于推动更鲁棒的微调方法和数据验证技术的发展。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Benchmark",
+    "Data Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:03:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务级投毒攻击可在不影响模型整体性能的情况下，针对特定任务族植入隐蔽偏见，威胁数据供应链安全。",
+      "PoisonForge 提供了四维参数化的基准，支持系统评估不同投毒策略对多种 LLM 架构的影响。",
+      "该基准填补了现有 LLM 安全评估中缺乏任务级定向投毒标准化测试的空白。",
+      "研究结果强调了在微调前对数据集进行严格审查和清洗的必要性，以防范此类攻击。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

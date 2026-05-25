@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-132",
+  "title": "CoSPlay: Cooperative Self-Play at Test-Time with Self-Generated Code and Unit Test",
+  "source_url": "https://arxiv.org/abs/2605.23491",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CoSPlay（Cooperative Self-Play at Test-Time）的新型测试时扩展方法，旨在解决大型语言模型（LLM）在代码生成任务中依赖真实单元测试（GT UTs）的瓶颈问题。当前，基于可验证奖励的强化学习（RLVR）和测试时扩展（TTS）技术通过可执行验证提升了代码生成性能，但GT UTs的获取成本高昂，且现有TTS方法在缺乏GT UTs时竞争力显著下降。CoSPlay通过引入合作式自我博弈机制，在测试阶段利用模型自身生成的代码和单元测试进行协同优化，无需任何真实单元测试。该方法通过迭代生成代码候选和单元测试，并基于相互验证进行筛选和精炼，从而在无GT条件下实现与有GT方法相当甚至更优的性能。实验结果表明，CoSPlay在多个代码生成基准测试中显著优于现有无GT的TTS方法，并接近依赖GT的RLVR方法。这一工作为降低LLM代码生成对人工标注测试的依赖提供了新思路，具有重要的实用价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Test-Time Scaling",
+    "Self-Play"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:06:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoSPlay通过合作式自我博弈机制，在测试时利用模型自生成的代码和单元测试进行协同优化，完全摆脱了对真实单元测试的依赖。",
+      "该方法在多个代码生成基准上显著优于现有无真实单元测试的测试时扩展方法，性能接近甚至超越依赖真实单元测试的强化学习方法。",
+      "CoSPlay为降低LLM代码生成中人工标注测试的成本提供了可行方案，推动了测试时扩展技术的实用化发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

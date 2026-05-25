@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-078",
+  "title": "Dithering Defense: Adversarial Robustness of Vision Foundation Models via Multi-Level Floyd-Steinberg Dithering",
+  "source_url": "https://arxiv.org/abs/2605.23065",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“多级弗洛伊德-斯坦伯格误差扩散抖动”（Multi-Level Floyd-Steinberg Dithering）的轻量级、模型无关的输入变换方法，用于增强视觉基础模型（如CLIP、ViT等）的对抗鲁棒性。视觉基础模型常被用作下游任务的冻结骨干网络，因此成为对抗攻击的单一故障点。该方法通过多级误差扩散抖动技术，在保留图像语义内容的同时，有效破坏对抗性扰动。与以往仅限于二值抖动、灰度CIFAR-10和单一小型模型的研究不同，本文的方法适用于彩色图像、多种模型架构和更复杂的任务。实验表明，该方法在多种对抗攻击下显著提升了模型的鲁棒性，且计算开销极低，无需重新训练或修改模型参数。这项工作为保护视觉基础模型提供了一种实用且高效的防御策略，具有重要的实际应用价值。",
+  "tags": [
+    "Adversarial Robustness",
+    "Vision Foundation Model",
+    "Input Transformation",
+    "Dithering"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:02:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多级弗洛伊德-斯坦伯格抖动是一种轻量级、模型无关的输入变换，能有效破坏对抗扰动，同时保留语义内容。",
+      "该方法克服了以往二值抖动在灰度图像和单一模型上的局限性，适用于彩色图像和多种视觉基础模型。",
+      "无需重新训练或修改模型参数，计算开销低，适合作为实际部署中的防御手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

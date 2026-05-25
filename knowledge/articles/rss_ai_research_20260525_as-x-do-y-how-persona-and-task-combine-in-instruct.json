@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260525-090",
+  "title": "As X, Do Y: How Persona and Task Combine in Instruction-Tuned LLMs",
+  "source_url": "https://arxiv.org/abs/2605.23147",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对指令微调大语言模型中的角色提示（如“作为X，做Y”）进行了机制性分析。研究发现，在残差流的特定位置——即提示到答案的过渡点（最后一个提示token与前两个生成token）——在早期/中层带中，角色（persona）与任务（task）通过部分正交的加性方向贡献。具体而言，存在纯角色效应ΔX和纯任务效应ΔY，且隐藏状态h_BB可表示为h_BB + ΔX + ΔY的线性组合。这一发现揭示了角色提示如何在大模型中实现解耦控制，为理解指令微调模型的内部计算机制提供了新视角。该工作对于提升提示工程的可解释性、优化模型对齐以及设计更高效的指令微调策略具有潜在价值。",
+  "tags": [
+    "LLM",
+    "Instruction Tuning",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:03:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "角色提示在残差流的特定位置（提示到答案过渡点）呈现清晰的线性分解结构，角色与任务通过部分正交的加性方向贡献。",
+      "存在纯角色效应ΔX和纯任务效应ΔY，表明模型内部对角色和任务信息进行了分离编码。",
+      "该发现为理解指令微调大语言模型如何组合角色与任务信息提供了机制性解释，有助于改进提示工程和模型对齐方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-042",
+  "title": "ObjectCache: Layerwise Object-Storage Retrieval for KV Cache Reuse",
+  "source_url": "https://arxiv.org/abs/2605.22850",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ObjectCache的新型KV缓存复用机制，旨在解决大语言模型（LLM）服务中前缀KV缓存占用内存过大的问题。传统方法将KV缓存存储在远程DRAM池中，虽然能减少首令牌时间（TTFT），但增加了集群规模和成本。ObjectCache通过层级对象存储架构，将KV缓存按对象粒度进行分层管理，利用对象存储（如S3）的低成本特性，结合智能预取和缓存替换策略，在GPU内存、本地DRAM和远程对象存储之间动态调度数据。该方法显著降低了远程DRAM的依赖，减少了服务集群的硬件成本，同时保持了低延迟的缓存命中率。实验表明，ObjectCache在多种LLM推理场景下，能减少50%以上的远程DRAM使用，且TTFT仅增加不到10%。该研究对于优化LLM推理基础设施、降低大规模部署成本具有重要价值。",
+  "tags": [
+    "KV Cache",
+    "LLM Serving",
+    "Object Storage",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:59:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ObjectCache通过层级对象存储架构，将KV缓存从昂贵的远程DRAM迁移到低成本对象存储，显著降低基础设施成本。",
+      "智能预取和缓存替换策略在GPU内存、本地DRAM和远程对象存储之间动态调度，保持低延迟的缓存命中率。",
+      "实验显示，ObjectCache可减少50%以上的远程DRAM使用，而TTFT仅增加不到10%，在成本与性能间取得良好平衡。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

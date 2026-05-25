@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260525-115",
+  "title": "Score-Based One-step MeanFlow Policy Optimization",
+  "source_url": "https://arxiv.org/abs/2605.23365",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于评分的一步均值流策略优化方法（Score-Based One-step MeanFlow Policy Optimization），旨在解决强化学习中扩散模型和流匹配策略因多步去噪导致的推理计算开销大的问题。MeanFlow通过学习一个平均速度场，将噪声映射到数据，仅需单次网络评估即可生成样本，从而显著降低推理成本。然而，MeanFlow通常需要从目标分布中采样，这在实际在线RL中可能受限。该方法通过引入评分函数来优化MeanFlow策略，实现一步生成，同时保持策略的表达能力和性能。该工作对于需要实时决策的在线强化学习应用（如机器人控制、自动驾驶）具有重要价值，因为它能大幅提升推理效率，同时保持策略的灵活性和准确性。",
+  "tags": [
+    "Reinforcement Learning",
+    "Diffusion Models",
+    "Flow Matching",
+    "Policy Optimization",
+    "Score-Based Models"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:05:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MeanFlow通过单步网络评估生成样本，显著降低推理计算开销，适合在线RL场景。",
+      "结合评分函数优化MeanFlow策略，可保持策略表达能力，同时实现高效一步生成。",
+      "该方法有望在机器人控制、自动驾驶等实时决策任务中发挥重要作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

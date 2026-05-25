@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-001",
+  "title": "BOHM: Zero-Cost Hierarchical Attribution for Compound AI Systems",
+  "source_url": "https://arxiv.org/abs/2605.22866",
+  "source_platform": "rss_ai_research",
+  "summary": "BOHM 是一种针对复合AI系统的零成本层次化归因方法。复合AI系统通过层次化的专业组件路由任务，而现有的归因方法（如基于Shapley值的SHAP）需要评估系统在任意组件子集上的表现，这在第三方API、不透明端点以及仅集中路由少数工具的代理编排器中无法实现。BOHM 通过利用系统的层次结构，在不进行额外评估的情况下，以零成本计算每个组件的贡献，从而解决了这一瓶颈。该方法具有重要的实用价值，因为它使得归因在现实世界的复杂AI系统中变得可行，尤其是在组件不可直接访问或评估成本高昂的场景下。BOHM 的提出标志着归因技术从理论走向实际应用的关键一步，对于理解和优化复合AI系统的行为具有重要意义。",
+  "tags": [
+    "Attribution",
+    "Explainable AI",
+    "Compound AI Systems",
+    "Shapley Value"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T11:56:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BOHM 实现了零成本的层次化归因，克服了传统Shapley方法在复合AI系统中因需要评估所有组件子集而导致的不可行问题。",
+      "该方法特别适用于包含第三方API、不透明端点或代理编排器的系统，这些场景下无法或难以进行全面的组件子集评估。",
+      "BOHM 通过利用系统的层次结构信息，无需额外计算即可得出每个组件的贡献，显著降低了归因的计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

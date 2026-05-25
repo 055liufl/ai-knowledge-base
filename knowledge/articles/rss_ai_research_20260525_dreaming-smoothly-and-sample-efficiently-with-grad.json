@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260525-080",
+  "title": "Dreaming Smoothly and Sample Efficiently with Gradient Penalized Latent Dynamics",
+  "source_url": "https://arxiv.org/abs/2605.23089",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为GPLD（梯度惩罚潜在动力学正则化器）的方法，用于改进基于模型的强化学习中的世界模型学习。具体来说，它针对DreamerV3等潜在世界模型在过渡动力学学习中缺乏局部平滑性的问题，引入了一个行方向雅可比惩罚项，以强制后验潜在状态的过渡动力学具有局部平滑性。这种归纳偏置有助于提高样本效率，使模型在探索和规划时更加稳定和高效。论文通过实验验证了GPLD在多个连续控制任务上的有效性，展示了其在样本效率和性能上的提升。该工作值得关注，因为它解决了基于模型的强化学习中一个关键但未被充分探索的问题——过渡动力学的平滑性，为提升世界模型的学习质量提供了简单而有效的正则化手段，可能推动更高效、更鲁棒的强化学习算法的发展。",
+  "tags": [
+    "Model-Based RL",
+    "World Model",
+    "Regularization",
+    "Sample Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-05-25T11:53:45Z",
+  "collected_at": "2026-05-25T12:02:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GPLD通过行方向雅可比惩罚强制潜在过渡动力学局部平滑，弥补了DreamerV3等模型缺乏此类归纳偏置的不足。",
+      "该正则化器简单易用，能显著提升基于模型的强化学习的样本效率，在连续控制任务中表现优异。",
+      "论文揭示了过渡动力学平滑性作为有用归纳偏置的重要性，为未来世界模型设计提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
