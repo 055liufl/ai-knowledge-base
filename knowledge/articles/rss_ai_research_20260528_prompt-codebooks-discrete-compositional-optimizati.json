@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260528-109",
+  "title": "Prompt Codebooks: Discrete Compositional Optimization for Language Model Instruction Refinement",
+  "source_url": "https://arxiv.org/abs/2605.28360",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Prompt Codebooks (PCO) 的新型提示优化框架，旨在解决现有自动提示优化（APO）方法中提示被视为单一、实例无关的字符串，导致更新脆弱且无法复用已学习子行为的问题。PCO 将 APO 重新定义为在有限词汇表上的离散组合学习，通过将提示分解为可组合的代码本条目，每个条目代表一个子行为或指令片段，从而实现对提示的细粒度、可复用优化。该方法在多个 LLM 驱动的智能体任务上进行了评估，显示出比传统全局编辑方法更高的鲁棒性和效率。该工作值得关注，因为它为提示工程提供了一种结构化的、模块化的新范式，有望提升 LLM 应用的适应性和可维护性，特别是在复杂多步任务中。",
+  "tags": [
+    "Prompt Optimization",
+    "LLM",
+    "Compositional Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:53:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PCO 将提示优化从全局编辑转变为离散组合学习，通过代码本实现子行为的复用和组合。",
+      "该方法提高了提示优化的鲁棒性，避免了传统方法中因全局修改导致的性能波动。",
+      "PCO 支持跨任务的知识迁移，通过共享代码本条目加速新任务的优化过程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

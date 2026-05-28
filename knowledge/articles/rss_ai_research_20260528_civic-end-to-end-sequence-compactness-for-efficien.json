@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-077",
+  "title": "CIVIC: End-to-End Sequence Compactness for Efficient Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2605.28115",
+  "source_platform": "rss_ai_research",
+  "summary": "CIVIC（端到端序列紧凑性）是一项针对视觉语言模型（VLM）中高分辨率视觉令牌导致的内存和延迟瓶颈的创新解决方案。传统令牌缩减方法虽在理论上节省FLOPs，但事后剪枝引入的结构开销无法实现成比例的加速。CIVIC通过端到端学习实现序列紧凑性，在保持几何定向和细粒度定位能力的同时，消除冗余视觉令牌。该方法在多个VLM基准测试中显著降低延迟（最高达50%）并保持或提升准确性，为高效多模态AI系统提供了实用路径。该工作值得关注，因为它直接解决了VLM部署中的关键效率问题，且其端到端设计避免了传统方法的折衷，对边缘计算和实时应用具有重要价值。",
+  "tags": [
+    "Vision-Language Models",
+    "Token Reduction",
+    "Efficient Inference",
+    "End-to-End Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:50:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CIVIC通过端到端学习实现视觉令牌的紧凑序列，避免了事后剪枝的结构开销，从而获得实际加速。",
+      "该方法在减少冗余令牌的同时，通过几何保持机制维持了空间定位能力，解决了紧凑路径中的信息丢失问题。",
+      "实验表明，CIVIC在多个VLM任务上实现高达50%的延迟降低，且准确性不降反升，展示了高效与性能的平衡。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

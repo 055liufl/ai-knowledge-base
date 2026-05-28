@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-020",
+  "title": "Prefix-Safe Bayesian Belief Tracking for LLM Reasoning Reliability:Separating Calibration from Ranking",
+  "source_url": "https://arxiv.org/abs/2605.27712",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于大语言模型推理可靠性评估的新方法——前缀安全贝叶斯信念追踪（Prefix-Safe Bayesian Belief Tracking, SBBT）。该方法针对长推理链在最终答案未知前需要可靠性估计的需求，通过前缀条件化的最终成功概率估计（P(y=1|o_{1:t})），利用前缀安全观测来校准观测似然，并递归更新一个两状态信念。SBBT提供了一个统一的追踪器，能够处理标量分数、文本、自我验证标记、隐藏聚类、令牌池探针以及潜在轨迹等多种观测类型。该方法的核心创新在于将校准（calibration）与排序（ranking）分离，从而更准确地估计推理过程的可靠性。该研究对于提升LLM在复杂推理任务中的可信度和可解释性具有重要意义，特别是在需要逐步推理和早期错误检测的场景中。",
+  "tags": [
+    "LLM",
+    "Bayesian Inference",
+    "Reasoning",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:44:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出前缀安全贝叶斯信念追踪（SBBT），统一处理多种观测类型，实现推理过程可靠性估计",
+      "将校准与排序分离，提升对LLM推理成功概率的估计准确性",
+      "递归更新两状态信念，支持在推理过程中实时评估，无需等待最终答案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

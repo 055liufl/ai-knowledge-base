@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-021",
+  "title": "A Policy-Driven Runtime Layer for Agentic LLM Serving",
+  "source_url": "https://arxiv.org/abs/2605.27744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多智能体LLM系统的策略驱动运行时层，旨在解决现有服务栈中智能体框架与推理引擎之间的信息割裂问题。当前，多智能体LLM系统已成为主流生产负载，但服务栈并未为此设计：上层的智能体框架了解智能体身份、角色、模式和调度结构，却无法感知引擎级事件；下层的服务引擎能看到每个事件，但对智能体一无所知。这种脱节导致许多跨层策略（如前缀缓存、批处理整形、推测执行、公平性、工具复用）无法高效协同。该运行时层通过引入策略驱动机制，在框架与引擎之间建立桥梁，使得策略能够同时利用上层语义信息和下层执行状态，从而优化系统性能、资源利用率和响应质量。这项工作对于提升多智能体系统的服务效率、降低延迟和成本具有重要意义，尤其适合需要复杂智能体协作的生产环境。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "System Design",
+    "Serving"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:44:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体LLM系统的服务栈存在框架与引擎之间的信息鸿沟，导致跨层策略无法有效协同。",
+      "策略驱动运行时层通过整合上层语义信息和下层执行状态，优化前缀缓存、批处理、推测执行等关键策略。",
+      "该工作为提升多智能体系统的服务效率、公平性和资源利用率提供了新的系统设计范式。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

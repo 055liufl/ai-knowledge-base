@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260528-063",
+  "title": "Clark Hash: Stateless Sparse Johnson-Lindenstrauss Quantization for Neural Embeddings",
+  "source_url": "https://arxiv.org/abs/2605.28034",
+  "source_platform": "rss_ai_research",
+  "summary": "Clark Hash 是一种用于神经网络嵌入的存储压缩方法，旨在显著减少向量存储空间的同时保持检索质量。该方法通过归一化数据库向量、应用确定性的稀疏有符号 Johnson-Lindenstrauss 投影、裁剪结果，并存储固定宽度的标量量化编码来实现。查询过程保持浮点精度，并与存储的草图进行评分。在默认的 384 维句子嵌入场景中，Clark Hash 将余弦搜索向量从 1536 字节压缩到仅 48 字节，压缩比高达 32 倍。这项技术值得关注，因为它解决了大规模嵌入存储和检索中的核心瓶颈——内存占用问题，尤其适用于需要高效处理海量向量数据的应用，如语义搜索、推荐系统和知识库。其基于 Johnson-Lindenstrauss 引理的投影方法保证了近似距离保持，而稀疏性和量化进一步提升了效率，使其在保持高检索精度的同时实现极低存储开销。Clark Hash 的简单性和确定性特性使其易于集成到现有系统中，对需要优化存储成本的开发者和研究人员具有重要实用价值。",
+  "tags": [
+    "Embedding Compression",
+    "Johnson-Lindenstrauss",
+    "Quantization",
+    "Vector Search"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:48:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Clark Hash 通过稀疏 Johnson-Lindenstrauss 投影和标量量化，将 384 维嵌入压缩至 48 字节，实现 32 倍存储节省，同时保持余弦检索精度。",
+      "该方法采用确定性投影，避免了随机性带来的不确定性，简化了系统集成和调试。",
+      "查询过程保持浮点精度，仅对数据库向量进行压缩，确保了检索质量不受量化误差的显著影响。",
+      "Clark Hash 特别适用于大规模向量检索场景，如语义搜索和推荐系统，能有效降低内存和存储成本。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

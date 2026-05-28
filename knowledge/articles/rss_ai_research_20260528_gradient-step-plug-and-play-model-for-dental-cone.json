@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-078",
+  "title": "Gradient Step Plug-and-Play Model for Dental Cone-Beam CT Reconstruction",
+  "source_url": "https://arxiv.org/abs/2605.28124",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种基于梯度步进即插即用模型（Gradient Step Plug-and-Play Model）的方法，用于减少牙科锥束CT重建中的光子噪声影响。研究将重建问题建模为逆问题，并通过模拟扇束采集和添加光子噪声来构建数据先验。先验通过训练梯度步进去噪器获得，该去噪器利用重建的模拟采集数据进行训练。训练后的模型被集成到即插即用梯度步进算法中，以实现更高质量的CT图像重建。该方法结合了深度学习与即插即用框架的优势，在保持计算效率的同时提升了噪声抑制能力。值得关注的是，该工作针对牙科CBCT这一特定医学成像场景，解决了实际临床中低剂量成像带来的噪声问题，具有明确的实用价值。此外，其即插即用的设计使得模型可以灵活替换或升级，为医学图像重建领域提供了一种新的技术路径。",
+  "tags": [
+    "CBCT",
+    "Image Reconstruction",
+    "Plug-and-Play",
+    "Denoising"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:50:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出梯度步进即插即用模型，结合深度学习先验与即插即用框架，有效抑制牙科CBCT重建中的光子噪声。",
+      "通过模拟扇束采集和添加噪声构建训练数据，使模型能够适应低剂量成像场景。",
+      "即插即用设计提高了模型的灵活性和可替换性，便于未来集成更先进的去噪器。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

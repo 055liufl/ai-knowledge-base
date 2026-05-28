@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-049",
+  "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2605.27922",
+  "source_platform": "rss_ai_research",
+  "summary": "Harness-Bench 是一个用于评估 LLM 代理在实际工作流中受“系统层（harness）”影响的新基准。该基准聚焦于代理执行过程中，除基础模型外，由上下文管理、工具调用、状态维护、约束、权限、追踪和恢复等系统层组件构成的“harness”对整体性能的影响。现有基准往往忽略执行细节、比较完整代理系统或固定 harness 不变，导致无法独立衡量 harness 的贡献。Harness-Bench 通过设计多种真实代理工作流（如代码生成、数据分析、多工具协作等），并系统性地变化 harness 配置，来量化不同模型在不同 harness 下的表现差异。该工作揭示了 harness 设计对代理任务成功率、鲁棒性和效率的关键影响，为代理系统的工程优化提供了可复现的评估框架。值得关注的是，它首次将 harness 作为独立变量进行系统研究，填补了代理评估中系统层与模型层解耦分析的空白，对代理系统开发者和研究者具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "System"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:47:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Harness-Bench 首次将系统层（harness）作为独立变量，系统评估其对 LLM 代理性能的影响，弥补了现有基准忽略执行细节的不足。",
+      "实验表明，在真实代理工作流中，harness 的配置（如上下文管理、工具调用方式）对任务成功率的影响可能超过基础模型的选择。",
+      "该基准提供了可复现的评估框架，有助于指导代理系统的工程优化，例如设计更鲁棒的上下文管理策略和错误恢复机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

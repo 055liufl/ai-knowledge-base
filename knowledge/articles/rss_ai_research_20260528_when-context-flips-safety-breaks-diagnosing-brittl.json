@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260528-036",
+  "title": "When Context Flips, Safety Breaks: Diagnosing Brittle Safety in Aligned Language Models",
+  "source_url": "https://arxiv.org/abs/2605.27851",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出并诊断了“脆弱安全”（brittle safety）现象：对齐的语言模型在面对情境变化时，即使原本安全的行为变得有害，模型仍会僵化地遵循安全规则，导致安全基准分数无法反映实际部署风险。为此，作者引入了“情境翻转评估”（context-flip evaluation）方法，在安全基准（PacifAIst）和两个常识控制任务上测试了12个模型，通过配对变体（其中名义上安全的行为实际产生危害）来暴露模型的脆弱性。研究发现了三个主要结果：模型在情境翻转后安全性能显著下降；不同模型对情境变化的敏感度差异大；现有安全基准无法捕捉这种脆弱性。该工作揭示了当前对齐技术的一个关键盲点，对安全评估方法论和模型部署实践具有重要启示。",
+  "tags": [
+    "LLM Safety",
+    "Alignment",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:46:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对齐语言模型存在“脆弱安全”问题：当情境变化使原本安全的行为变得有害时，模型仍会僵化执行安全规则，导致安全基准分数高估实际部署安全性。",
+      "提出了“情境翻转评估”方法，通过配对测试变体（名义安全但实际有害）系统性地诊断模型的脆弱安全，在12个模型上验证了该问题的普遍性。",
+      "现有安全基准无法有效检测脆弱安全，需要引入动态情境评估来更真实地反映模型的安全鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

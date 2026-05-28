@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-080",
+  "title": "Data-Efficient On-Policy Distillation for Automatic Speech Recognition",
+  "source_url": "https://arxiv.org/abs/2605.28139",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在自动语音识别（ASR）领域，如何通过数据高效的在线策略蒸馏（on-policy distillation）来提升模型性能。具体而言，作者以Ark-ASR（一个0.6B参数的音频条件语言模型，使用10万小时语音训练）为基础，探索了强大的Qwen-ASR教师模型能否通过在线策略蒸馏向学生模型转移额外的识别能力。实验在中文和英文ASR基准上进行，结果表明该方法在保持数据高效性的同时显著提升了识别准确率。这项工作的价值在于：它提供了一种低成本、高效益的ASR模型优化路径，尤其适合资源受限场景下的模型复现和专业化定制。通过蒸馏技术，小模型可以从大模型中学习到更丰富的语音特征和语言知识，而无需重新收集大规模标注数据。这对于推动ASR技术的普及和实际应用具有重要意义，特别是在低资源语言或特定领域应用中。",
+  "tags": [
+    "ASR",
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:50:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏能够有效将大模型（Qwen-ASR）的识别能力迁移至小模型（Ark-ASR），显著提升ASR性能。",
+      "该方法在中文和英文基准上均表现优异，且数据需求低，适合资源受限场景。",
+      "蒸馏过程无需额外大规模音频标注，降低了模型复现和专业化定制的成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-090",
+  "title": "Learning When to Optimize: Verified Optimization Skills from Expert GPU-Kernel Lineages",
+  "source_url": "https://arxiv.org/abs/2605.28213",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为KLineage的方法，旨在解决基于LLM的智能体在生成GPU内核时，虽然知道尝试哪些优化，但不知道这些优化何时有效的问题。KLineage从专家内核中学习这种缺失的“何时”知识：它不依赖前向展开，而是通过验证门控简化反向遍历专家实现，并将每个接受的步骤逆向转化为可重用的优化技能。每个技能都包含一个“何时”条件，确保其应用的正确性。该方法通过从专家GPU内核谱系中学习，使LLM智能体能够更可靠地生成高性能内核。这项工作值得关注，因为它解决了LLM在代码生成中缺乏条件性优化知识的关键问题，有望提升自动内核生成的效率和正确性。",
+  "tags": [
+    "LLM",
+    "GPU Kernel",
+    "Optimization",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:51:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KLineage通过反向遍历专家内核并逆向转化优化步骤，学习何时应用优化，而非仅知道优化内容。",
+      "该方法为每个优化技能附加“何时”条件，确保在正确性验证下应用，提高了LLM生成GPU内核的可靠性。",
+      "从专家内核谱系中学习，避免了前向展开的局限性，提供了一种新的知识获取范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

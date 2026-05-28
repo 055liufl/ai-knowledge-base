@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-101",
+  "title": "Better Accuracies, Worse Reasoning: A Step-Level Audit of Medical Chain-of-Thought Distillation",
+  "source_url": "https://arxiv.org/abs/2605.28301",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对医疗领域链式思维（CoT）蒸馏过程中的推理质量进行了细粒度审计。传统上，CoT蒸馏通过最终答案准确率评估学生模型，但忽略了推理轨迹的合理性。研究以医疗问答（MedQA-USMLE）为场景，使用DeepSeek-V3系列教师模型蒸馏Qwen3-8B学生模型。虽然学生模型在答案准确率上有所提升，但研究发现其推理轨迹质量并未同步改善，甚至出现“更准但更差”的悖论：学生模型可能依赖捷径或表面模式，而非真正的临床推理。该工作首次从步骤级别审计蒸馏中的推理退化，揭示了当前评估指标的局限性，对模型蒸馏、可解释性和医疗AI安全性具有重要启示。",
+  "tags": [
+    "Chain-of-Thought",
+    "Knowledge Distillation",
+    "Medical QA",
+    "Reasoning Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:52:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoT蒸馏中答案准确率提升并不保证推理轨迹质量同步改善，存在准确率与推理质量脱节的现象。",
+      "在医疗QA场景下，学生模型可能通过表面模式匹配而非真实临床推理获得正确答案，导致推理轨迹退化。",
+      "当前以最终答案准确率为核心的评估指标不足以反映模型推理能力，需引入步骤级推理质量审计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

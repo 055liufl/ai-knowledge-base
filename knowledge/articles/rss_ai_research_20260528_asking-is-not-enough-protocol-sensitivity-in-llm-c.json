@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-022",
+  "title": "Asking Is Not Enough: Protocol Sensitivity in LLM Confidence Calibration",
+  "source_url": "https://arxiv.org/abs/2605.27752",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了大型语言模型（LLM）置信度校准中的一个关键问题：即仅通过询问模型（如使用token概率或口头置信度）来评估其不确定性是不够的，因为这些信号对测量协议（如提示模板、概率尺度和输出格式）高度敏感。研究通过固定口头置信度获取方式（单一提示模板、概率尺度和输出格式），然后改变测量协议，揭示了不同协议下置信度信号的不一致性。这项工作强调了在LLM置信度校准中必须考虑协议敏感性，否则可能导致对模型不确定性的错误解读。该研究对于提高LLM在关键应用（如医疗、法律）中的可靠性具有重要意义，因为它指出了当前校准方法的潜在缺陷，并呼吁更严谨的评估标准。",
+  "tags": [
+    "LLM",
+    "Confidence Calibration",
+    "Uncertainty",
+    "Prompt Sensitivity"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:44:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM的置信度信号（如token概率和口头置信度）对测量协议（提示模板、尺度、格式）高度敏感，不能简单视为模型不确定性的直接读数。",
+      "固定口头置信度获取方式后，改变测量协议会导致置信度校准结果显著变化，揭示了当前评估方法的潜在不一致性。",
+      "研究呼吁在LLM置信度校准中明确并标准化测量协议，以避免对模型可靠性的误判，尤其在安全关键领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260528-099",
+  "title": "Where Rollouts Begin: Low-Load, High-Leverage First-Token Diversification for RLVR",
+  "source_url": "https://arxiv.org/abs/2605.28295",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“低负载、高杠杆的首令牌多样化”方法，用于强化学习中的可验证奖励（RLVR）训练。RLVR通过分组展开（rollouts）暴露策略于多种推理路径，并利用验证器评分，从而无需标注轨迹即可训练推理模型。然而，展开多样性是RLVR的核心瓶颈，现有方法主要通过温度调整、前缀或展开选择来拓宽探索。本文识别出一个结构上显著但被忽视的切入点：首令牌（first-token）的多样化。作者证明，在生成过程的早期阶段（即首令牌选择时）引入多样性，能以极低的计算开销（低负载）实现高杠杆的探索效果（高杠杆），显著提升RLVR训练效率和最终模型性能。该方法通过设计轻量级策略，在首令牌阶段注入受控的随机性或基于先验知识的引导，从而在不显著增加推理成本的前提下，有效避免策略过早收敛到次优路径。实验表明，该方法在多个推理任务上优于传统的温度缩放和前缀多样化方法，尤其适用于需要长链推理的复杂场景。该工作为RLVR中的探索-利用平衡提供了新视角，具有重要的实用价值和理论意义。",
+  "tags": [
+    "RLVR",
+    "Reinforcement Learning",
+    "LLM",
+    "Reasoning",
+    "Diversity"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:52:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首令牌多样化是RLVR中一个被忽视但高效的探索切入点，能以低计算开销实现高杠杆的探索效果。",
+      "该方法通过轻量级策略在生成早期注入多样性，有效避免策略过早收敛，提升长链推理任务的性能。",
+      "相比温度调整和前缀多样化等现有方法，首令牌多样化在计算效率和探索效果上均具有显著优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

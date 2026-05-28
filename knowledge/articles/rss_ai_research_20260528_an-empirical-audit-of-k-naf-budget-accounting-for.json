@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-058",
+  "title": "An Empirical Audit of k-NAF Budget Accounting for Anchored Decoding",
+  "source_url": "https://arxiv.org/abs/2605.28001",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对锚定解码中的k-NAF预算核算机制进行了实证审计。研究采用两种方法：一是固定、类别分层的测试负载（涵盖六类提示，约8500次随机执行），二是针对高代理支出比率的自适应提示搜索程序。在固定负载测试中，平均累积KL支出远低于序列级预算K（K取600和1000），且基于伯恩斯坦不等式的经验代理支出在所有类别下均未超过K。这项工作为锚定解码的预算核算提供了重要的实证验证，有助于理解其在实际应用中的可靠性和局限性，对提升大语言模型解码的安全性和可控性具有参考价值。",
+  "tags": [
+    "LLM",
+    "Anchored Decoding",
+    "Budget Accounting",
+    "Empirical Audit"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:48:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过8500次随机执行和自适应提示搜索，系统评估了k-NAF预算核算机制在锚定解码中的表现。",
+      "在固定负载下，平均累积KL支出远低于预设预算K（600和1000），表明预算核算机制在典型场景下有效。",
+      "基于伯恩斯坦不等式的经验代理支出在所有提示类别下均未超过K，进一步支持了预算核算的保守性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

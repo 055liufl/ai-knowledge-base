@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-060",
+  "title": "Confidence-Orchestrated Self-Evolution against Uncertain LLM Feedback",
+  "source_url": "https://arxiv.org/abs/2605.28010",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“信心编排的自我进化”（Confidence-Orchestrated Self-Evolution）的方法，旨在解决大语言模型（LLM）在自我进化过程中因自身反馈不确定而导致的训练信号噪声问题。传统自我进化方法中，模型生成训练任务和答案后，需要自我验证和评判，但错误的自我判断会导致错误的梯度更新，从而影响模型性能。现有方法要么依赖外部验证器（增加成本），要么忽略不确定性（导致性能下降）。本文的核心创新在于引入信心编排机制，通过量化模型对自身反馈的置信度，动态调整训练信号的权重，从而在不确定的LLM反馈中实现稳健的自我进化。该方法在多个推理任务上取得了显著性能提升，减少了对外部验证的依赖，并提高了自我进化的效率和可靠性。该研究对于推动LLM的自主学习和持续改进具有重要意义，尤其适用于资源受限或需要持续适应的场景。",
+  "tags": [
+    "LLM",
+    "Self-Evolution",
+    "Uncertainty",
+    "Training Signal"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:48:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过信心编排机制量化模型反馈的置信度，有效缓解了自我进化中错误梯度更新的问题。",
+      "该方法在多个推理任务上优于依赖外部验证器的传统方法，同时降低了对外部资源的依赖。",
+      "动态调整训练信号权重使得模型能够在不确定反馈下更稳健地学习，提升了自我进化的效率和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

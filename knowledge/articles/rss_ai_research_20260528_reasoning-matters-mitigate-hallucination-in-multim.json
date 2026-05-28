@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-046",
+  "title": "Reasoning Matters: Mitigate Hallucination in Multimodal Large Reasoning Models via Reasoning-Conditioned Preference Optimization",
+  "source_url": "https://arxiv.org/abs/2605.27906",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为推理条件偏好优化（Reasoning-Conditioned Preference Optimization, RPO）的新方法，用于缓解多模态大推理模型（Multimodal Large Reasoning Models, MLRMs）中的幻觉问题。MLRMs通过引入推理范式，在复杂视觉-语言任务中展现出强大能力，但仍存在严重幻觉。现有基于训练的方法通常通过响应级直接偏好优化（DPO）来缓解幻觉，将思维链（CoT）和最终答案视为整体输出进行联合优化。本文揭示了这种联合优化方式可能导致推理过程与最终答案之间的不一致，从而加剧幻觉。RPO通过将推理过程作为条件，对最终答案进行偏好优化，从而解耦推理与答案生成，有效减少幻觉。实验结果表明，RPO在多个基准测试上显著优于现有方法，包括DPO和基于监督微调的方法，在保持推理能力的同时大幅降低幻觉率。该工作为多模态推理模型的可靠性提升提供了新思路，具有重要的理论和实践价值。",
+  "tags": [
+    "Multimodal Large Reasoning Models",
+    "Hallucination Mitigation",
+    "Preference Optimization",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:47:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有DPO方法将CoT和最终答案联合优化，可能导致推理与答案不一致，加剧幻觉。",
+      "RPO通过将推理过程作为条件，对最终答案进行偏好优化，有效解耦推理与答案生成。",
+      "RPO在多个基准上显著优于DPO和监督微调方法，在保持推理能力的同时大幅降低幻觉率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

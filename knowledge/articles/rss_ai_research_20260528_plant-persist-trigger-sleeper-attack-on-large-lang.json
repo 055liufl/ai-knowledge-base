@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-088",
+  "title": "Plant, Persist, Trigger: Sleeper Attack on Large Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2605.28201",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对大型语言模型（LLM）代理的新型攻击方法，称为“Plant, Persist, Trigger”（种植、持久化、触发）。与现有研究中常见的单次交互攻击不同，这种攻击通过将恶意内容植入外部环境（如工具返回的数据、网页或MCP上下文），使其在代理的长期记忆或上下文中持久化，并在后续的交互中触发有害行为。攻击者可以设计一个“睡眠”触发器，使得代理在正常操作中保持无害，直到特定条件满足时才表现出恶意行为，从而绕过安全检测。这种攻击利用了LLM代理对长期上下文和外部输入的依赖，展示了代理系统在面对持久化威胁时的脆弱性。该研究值得关注，因为它揭示了LLM代理在复杂、动态环境中的新安全风险，挑战了现有防御机制的有效性，并为开发更鲁棒的代理安全策略提供了重要启示。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:51:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种针对LLM代理的持久化攻击方法，通过将恶意内容植入外部环境并设置触发器，使代理在特定条件下表现出有害行为。",
+      "该攻击突破了传统单次交互攻击的局限，利用代理的长期记忆和上下文依赖，实现了更隐蔽和持久的威胁。",
+      "研究强调了当前LLM代理安全防御的不足，尤其是在处理外部环境中的持久化恶意内容方面。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

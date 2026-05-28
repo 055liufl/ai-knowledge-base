@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-095",
+  "title": "Entropy Distribution as a Fingerprint for Hallucinations in Generative Models",
+  "source_url": "https://arxiv.org/abs/2605.28264",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于熵分布（Entropy Distribution）的幻觉检测方法，用于识别大型语言模型（LLM）生成的事实性错误输出。与现有需要多次前向传播或访问模型内部状态的方法不同，该方法仅通过分析生成文本中每个token的熵值分布（而非仅平均值如困惑度）来检测幻觉。作者提供了理论基础和实证证据，表明熵分布模式可以作为模型生成可靠性的指纹。该方法具有高效、无需额外计算资源的优势，适用于高可靠性场景（如医疗、法律）。论文通过多个基准测试验证了其有效性，并探讨了熵分布与模型置信度、生成质量之间的关系。这项工作为幻觉检测提供了新的视角，有望提升LLM在实际应用中的可信度。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Entropy",
+    "Model Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:51:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "熵分布比平均熵（如困惑度）更能有效区分幻觉与正确生成，提供更细粒度的检测信号。",
+      "该方法无需多次前向传播或模型内部状态，显著降低了检测成本，适合实时应用。",
+      "理论分析表明，熵分布模式可作为模型生成可靠性的指纹，不同模型和任务具有独特分布特征。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

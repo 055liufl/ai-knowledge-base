@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-107",
+  "title": "Plan Before Search: Search Agents Need Plan",
+  "source_url": "https://arxiv.org/abs/2605.28354",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Plan”的结构化智能体行为，用于多跳检索任务。研究指出，当前将大型语言模型训练为检索增强推理代理的主流范式（结合强化学习与从更强模型蒸馏的SFT冷启动）忽略了两个关键因素：子技能之间的依赖结构，以及蒸馏并非能力获取的唯一途径。通过引入“Plan”机制，模型在检索前先进行规划，将复杂查询分解为子步骤，从而更有效地进行多跳信息检索。这项工作挑战了现有训练范式的假设，为提升检索增强生成（RAG）智能体的推理效率和准确性提供了新思路，尤其对需要复杂推理的问答系统具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Multi-hop Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:52:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前RAG智能体训练范式忽视了子技能间的依赖结构，而Plan方法通过显式规划解决了这一问题。",
+      "蒸馏并非能力获取的唯一途径，Plan方法展示了通过结构化行为设计也能有效提升模型性能。",
+      "Plan机制将多跳检索分解为规划与执行两个阶段，显著提高了复杂查询的检索效率和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

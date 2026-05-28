@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-004",
+  "title": "DynaSchedBench: Calibrated Dynamic Scheduling Benchmarks and Observability Paradox in LLM-based Scheduling Agents",
+  "source_url": "https://arxiv.org/abs/2605.27566",
+  "source_platform": "rss_ai_research",
+  "summary": "DynaSchedBench 是一个针对动态柔性作业车间调度问题（DFJSP）的校准诊断框架。当前神经组合优化在该领域面临方法论矛盾：静态基准导致过拟合，而未校准的生成器则因随机噪声掩盖算法能力。该框架通过严格控制实例生成过程，解决了这一矛盾。它引入了一种可观测性悖论：当调度代理（如基于LLM的智能体）能更精确地观测系统状态时，反而可能因过度依赖局部信息而降低全局调度性能。DynaSchedBench 提供了校准的基准和诊断工具，旨在推动LLM调度代理的鲁棒性研究。该工作值得关注，因为它首次系统性地解决了DFJSP基准测试中的校准问题，并揭示了智能体观测精度与调度性能之间的非线性关系，对工业调度和AI代理研究具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Scheduling",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:43:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DynaSchedBench 通过严格控制实例生成过程，解决了DFJSP中静态基准过拟合与未校准生成器噪声的矛盾。",
+      "发现可观测性悖论：LLM调度代理的观测精度提升反而可能导致全局调度性能下降。",
+      "该框架为评估和比较不同调度算法（包括基于LLM的智能体）提供了校准的基准和诊断工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

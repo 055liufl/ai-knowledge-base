@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-118",
+  "title": "DenoiseRL: Bootstrapping Reasoning Models to Recover from Noisy Prefixes",
+  "source_url": "https://arxiv.org/abs/2605.28421",
+  "source_platform": "rss_ai_research",
+  "summary": "DenoiseRL 是一种新颖的强化学习框架，旨在提升大型语言模型（LLM）的推理能力，而无需依赖更强的教师模型或精心策划的困难数据集。该框架的核心创新在于，它通过从弱模型产生的失败中学习恢复策略，将外部监督替换为基于恢复的优化。具体来说，DenoiseRL 利用模型在噪声前缀（noisy prefixes）下的错误推理路径，训练模型学会自我纠正和恢复，从而在推理过程中实现更鲁棒的性能。这种方法不仅减少了对昂贵人工标注或强模型蒸馏的依赖，还通过自举（bootstrapping）方式持续改进模型能力。该工作值得关注，因为它为强化学习在推理任务中的应用提供了一种更自主、可扩展的路径，尤其适用于资源受限的场景，并可能推动 LLM 在复杂推理任务中的实际部署。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Self-Correction"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:53:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DenoiseRL 通过从弱模型的失败中学习恢复策略，替代了传统强化学习中对强教师模型或困难数据集的依赖，降低了训练成本。",
+      "该框架利用噪声前缀作为训练信号，引导模型在推理过程中进行自我纠正，从而提升鲁棒性和泛化能力。",
+      "DenoiseRL 展示了自举式优化在推理任务中的潜力，为大规模语言模型的能力提升提供了一种可扩展的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

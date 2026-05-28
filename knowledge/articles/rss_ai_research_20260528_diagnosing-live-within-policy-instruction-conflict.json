@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260528-027",
+  "title": "Diagnosing Live Within-Policy Instruction Conflicts in LLM Agents with Witnessed Resolution Profiles",
+  "source_url": "https://arxiv.org/abs/2605.27784",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 WIRE（Witnessed Intra-policy Rule Evaluation）的流水线，用于诊断 LLM 智能体在运行过程中，其单一提示策略内不同规则之间产生的实时冲突。LLM 智能体通常由长期存在的自然语言提示策略所控制，但其中看似合理的独立规则可能在未受检查的情况下相互干扰。WIRE 的核心任务是发现策略内可能共同作用于某个真实状态的规则对，并测量模型在响应或工具动作中如何解决这种冲突压力。该工作聚焦于“实时策略内规则冲突诊断”，即找出单一提示策略内能够共同治理某个现实状态的规则对，并量化模型在响应或工具行为中解决这种冲突的方式。这项研究对于提升 LLM 智能体的可靠性、安全性和可解释性具有重要意义，因为它揭示了策略内部潜在的矛盾，并提供了系统化的诊断方法，从而帮助开发者优化提示设计，避免智能体因规则冲突而产生意外行为。",
+  "tags": [
+    "LLM Agent",
+    "Prompt Engineering",
+    "Safety",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:45:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体的单一提示策略内，不同规则之间可能存在未被发现的实时冲突，影响智能体行为的一致性和可靠性。",
+      "WIRE 流水线能够系统性地提取并诊断策略内规则对，并量化模型在响应或工具动作中解决冲突的方式。",
+      "该研究为提升 LLM 智能体的安全性和可解释性提供了新的诊断工具，有助于开发者优化提示策略设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

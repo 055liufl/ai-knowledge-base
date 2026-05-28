@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260528-017",
+  "title": "Cross-Entropy Games and Frost Training",
+  "source_url": "https://arxiv.org/abs/2605.27701",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Frost Training的新方法，用于改进基于蒙特卡洛的策略优化，特别针对一类称为交叉熵游戏（Cross-Entropy Games）的LLM作为评判者的任务。核心思想是利用奖励函数在嵌入空间中的梯度信号，该信号此前在贪婪坐标梯度（GCG）越狱技术中被使用，但本文首次证明其也可用于提升模型训练。通过GRPO训练验证了该方法的有效性。这项工作值得关注，因为它将对抗性攻击中的梯度信号转化为训练信号，为LLM训练提供了新视角，可能提升模型在复杂评判任务中的性能。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:44:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将GCG越狱技术中的梯度信号用于模型训练，而非攻击。",
+      "Frost Training通过利用奖励函数在嵌入空间的梯度，改进了蒙特卡洛策略优化。",
+      "在交叉熵游戏任务中，该方法通过GRPO训练验证了有效性，可能提升LLM作为评判者的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260528-108",
+  "title": "From Knowing to Doing: A Memory-Controlled Benchmark for LLM Trading Agents on Stock Markets",
+  "source_url": "https://arxiv.org/abs/2605.28359",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“记忆控制基准”（Memory-Controlled Benchmark）的新方法，用于评估大语言模型（LLM）交易代理在股票市场中的实际决策能力。传统上，研究者通过让LLM代理在历史市场数据中进行端到端交易，并测量其投资组合回报来评估其盈利能力。然而，这种方法存在两个关键缺陷：一是长时间的回测可能覆盖前沿LLM的知识截止日期，导致模型依赖记忆中的股票代码、日期、价格和市场叙事，而非真正的投资推理；二是模型可能利用训练数据中的信息泄露来获得不公平优势。为了解决这些问题，作者设计了一个基准测试，通过控制LLM对历史数据的记忆访问，区分其“知道”与“行动”的能力。该基准包括多个市场场景，要求代理在有限信息下做出交易决策，从而更真实地反映其推理和适应能力。实验结果表明，当前LLM代理在记忆受限条件下表现显著下降，揭示了其依赖记忆而非逻辑推理的局限性。这项工作对于评估LLM在金融领域的实际应用价值具有重要意义，并推动了更可靠的AI交易系统评估方法的发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Finance"
+  ],
+  "author": null,
+  "published_at": "2026-05-28T11:39:04Z",
+  "collected_at": "2026-05-28T11:52:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统LLM交易代理评估方法因知识截止日期重叠而存在记忆泄露问题，导致高估模型推理能力。",
+      "记忆控制基准通过限制历史数据访问，分离了模型的知识记忆与投资推理能力。",
+      "实验显示当前LLM代理在记忆受限条件下表现显著下降，表明其依赖记忆而非逻辑推理。",
+      "该工作为金融领域AI系统的可信评估提供了新范式，推动更严谨的基准设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
