@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-129",
+  "title": "BioRefusalAudit: Auditing Biosecurity Refusal Depth Using General and Domain-Fine-Tuned Sparse Autoencoders",
+  "source_url": "https://arxiv.org/abs/2605.30162",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为BioRefusalAudit的审计方法，用于评估语言模型在生物安全场景下的拒绝机制的结构稳健性。传统评估仅关注模型是否产生有害输出，而本文则深入探究当模型拒绝时，该拒绝是否会在提示框架、格式或输出长度的微小变化下失效。研究覆盖了五种架构，发现没有模型能清晰区分良性输入与危险输入。例如，Gemma 2 2B-IT在75个提示中从未真正拒绝，而是对所有危险相关输入进行回避。通过使用通用和领域微调的稀疏自编码器，作者揭示了模型拒绝行为的脆弱性，并指出当前模型在生物安全拒绝深度上存在系统性缺陷。这项工作对于提升AI安全评估的严谨性具有重要意义，尤其在高风险领域如生物安全中，确保模型拒绝的鲁棒性至关重要。",
+  "tags": [
+    "AI Safety",
+    "Biosecurity",
+    "Sparse Autoencoders",
+    "LLM Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:41:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前语言模型在生物安全场景下的拒绝机制存在结构性缺陷，无法在提示变化下保持稳健。",
+      "通用和领域微调的稀疏自编码器可用于审计模型拒绝的深度，揭示其脆弱性。",
+      "Gemma 2 2B-IT等模型在危险输入前表现出系统性回避而非真正拒绝，表明安全对齐不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

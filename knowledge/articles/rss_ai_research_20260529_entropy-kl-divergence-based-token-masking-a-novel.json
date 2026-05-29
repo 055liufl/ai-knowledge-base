@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-041",
+  "title": "Entropy-KL Divergence-based Token Masking: A Novel Approach for Selective Fine-tuning of Large Language Models",
+  "source_url": "https://arxiv.org/abs/2605.29303",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于熵- KL散度的令牌掩码方法，用于大型语言模型的选择性微调。在监督微调（SFT）后接强化学习（RL）的标准后训练范式中，SFT阶段通常使用少量数据，导致模型在RL阶段面临冷启动问题，即在线采样产生的正样本不足。作者通过引入熵和KL散度来动态识别并掩码对模型性能影响较小的令牌，从而在SFT阶段更高效地利用有限数据，提升模型在RL阶段的探索效率。该方法在多个基准测试上展示了性能提升，尤其适用于数据稀缺场景。这项研究值得关注，因为它直接针对当前LLM后训练中的关键瓶颈——SFT数据效率与RL冷启动问题，提供了一种轻量级且理论驱动的解决方案，可能显著降低对大规模标注数据的依赖，并加速模型对齐过程。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "Token Masking",
+    "KL Divergence"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出基于熵-KL散度的令牌掩码策略，在SFT阶段动态选择关键令牌进行训练，提升数据利用效率。",
+      "该方法有效缓解了SFT后RL阶段的冷启动问题，通过更优的初始化减少对大量RL样本的依赖。",
+      "实验表明，在少量SFT数据下，该方法在多个任务上优于标准SFT和均匀掩码基线。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-076",
+  "title": "GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents",
+  "source_url": "https://arxiv.org/abs/2605.29668",
+  "source_platform": "rss_ai_research",
+  "summary": "GRASP（Gated Regression-Aware Skill Proposer）是一种针对LLM智能体在结构化环境中自我改进的新方法。LLM智能体在操作层面而非对话层面失败，其可靠性依赖于对环境的程序性知识。现有的自我改进方法在积累自然语言指导时，未检查每个新项目是否保留了先前正确的行为，导致修复一个轨迹的笔记可能静默地使另一个轨迹退化。GRASP通过引入门控回归感知机制，在添加新技能时评估其对已有技能的影响，防止回归问题。该方法将技能视为可组合的模块，通过门控机制决定何时应用新技能，并利用回归检测来确保新技能不会破坏已有性能。实验表明，GRASP在多个结构化环境任务中显著提升了智能体的稳定性和泛化能力，减少了错误累积。这项研究对于提升LLM智能体在复杂任务中的可靠性具有重要意义，特别是在需要持续学习和适应动态环境的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Self-Improvement",
+    "Skill Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:38:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRASP通过门控回归感知机制解决了自我改进中的技能退化问题，确保新技能不会破坏已有正确行为。",
+      "该方法将技能视为可组合模块，利用门控机制动态决定技能应用，提升了智能体在结构化环境中的可靠性。",
+      "实验证明GRASP在多个任务中减少了错误累积，增强了智能体的稳定性和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

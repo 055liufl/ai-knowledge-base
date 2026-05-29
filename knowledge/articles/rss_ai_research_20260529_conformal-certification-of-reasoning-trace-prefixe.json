@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-120",
+  "title": "Conformal Certification of Reasoning Trace Prefixes",
+  "source_url": "https://arxiv.org/abs/2605.30085",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CROP（Conformal Reasoning Output Prefixes）的新方法，旨在为语言模型的推理轨迹提供统计保证。与现有方法仅对最终答案或整个响应进行不确定性量化不同，CROP能够识别并认证推理轨迹中可安全保留的前缀部分，即那些在关键错误发生之前有效的中间步骤。该方法基于共形预测（Conformal Prediction）框架，是一种与验证器无关的校准技术，适用于任何语言模型生成的推理过程。CROP的核心创新在于将不确定性量化从整体响应扩展到序列前缀，从而为逐步推理提供更细粒度的可靠性保证。这一工作对于提升语言模型在需要多步推理的任务（如数学问题求解、代码生成等）中的可信度具有重要意义，尤其适用于对中间步骤可靠性有严格要求的应用场景。通过提供可证明的统计保证，CROP有助于减少模型在推理过程中因早期错误导致的级联失败，增强用户对模型输出逐步信任的能力。",
+  "tags": [
+    "Uncertainty Quantification",
+    "Conformal Prediction",
+    "Language Model",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:40:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CROP通过共形预测为语言模型推理轨迹的前缀提供统计保证，而非仅针对最终答案。",
+      "该方法与验证器无关，可适用于任何语言模型生成的推理过程，具有广泛适用性。",
+      "CROP填补了现有不确定性量化方法在序列前缀认证方面的空白，有助于提升多步推理任务的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-081",
+  "title": "Beyond Trajectory Rewards: Step-level Credit Assignment for Agentic Search via Graph Modeling",
+  "source_url": "https://arxiv.org/abs/2605.29697",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为GDCR（Graph-Distance Contribution Reward）的新型步骤级信用分配方法，用于解决智能体搜索（Agentic Search）中轨迹级奖励无法量化单步行为贡献的问题。传统方法依赖昂贵的树采样来获取步骤级奖励，而GDCR通过将世界知识建模为潜在的世界图（world graph），并将每个信息搜索（IS）任务视为在潜在任务图（task graph）中的搜索过程，其中有效步骤应使图向答案节点前进。基于这一先验，GDCR利用图距离变化来直接计算每一步的贡献奖励，无需额外采样。该方法在多个智能体搜索基准上取得了显著效果，提升了搜索效率和准确性。该研究值得关注，因为它提供了一种高效、可解释的步骤级奖励机制，有望推动智能体搜索、强化学习中的信用分配问题以及图神经网络在推理任务中的应用。",
+  "tags": [
+    "Agentic Search",
+    "Credit Assignment",
+    "Graph Modeling",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:38:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GDCR通过将搜索过程建模为潜在任务图上的路径，利用图距离变化作为步骤级奖励，避免了传统树采样的高成本。",
+      "该方法在多个智能体搜索基准上优于轨迹级奖励和现有步骤级奖励方法，证明了图先验在信用分配中的有效性。",
+      "GDCR提供了可解释的奖励信号，有助于理解智能体在搜索过程中的行为贡献，为后续研究提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

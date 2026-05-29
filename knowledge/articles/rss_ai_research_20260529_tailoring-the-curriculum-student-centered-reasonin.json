@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-030",
+  "title": "Tailoring the Curriculum: Student-Centered Reasoning Distillation via Dynamic Data-Model Compatibility",
+  "source_url": "https://arxiv.org/abs/2605.29229",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为数据-模型兼容性（Data-Model Compatibility, DMC）的度量标准，用于评估训练数据与学生模型在推理蒸馏任务中的适配程度。传统的推理蒸馏方法通常假设所有高质量数据对任何学生模型都有益，但忽略了数据与学生模型之间的个体差异。DMC通过联合考虑数据质量、相对难度等因素，动态评估数据集对特定学生模型的适用性。基于DMC，作者进一步设计了学生中心化的课程学习策略，根据学生模型的当前能力动态调整训练数据的顺序和权重，从而优化蒸馏效果。实验表明，该方法在多个推理任务上显著提升了小模型的性能，尤其是在数学推理和常识推理等复杂场景中。该研究为推理蒸馏提供了一种更精细、个性化的训练数据选择与调度机制，有望推动小型模型在资源受限场景下的推理能力提升。",
+  "tags": [
+    "LLM",
+    "Reasoning Distillation",
+    "Curriculum Learning",
+    "Data-Model Compatibility"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出数据-模型兼容性（DMC）度量，量化训练数据与学生模型的适配程度，超越传统仅关注数据质量的方法。",
+      "基于DMC设计动态课程学习策略，根据学生模型能力自适应调整训练数据顺序与权重，提升推理蒸馏效率。",
+      "实验验证该方法在数学推理、常识推理等任务上显著优于固定数据顺序的蒸馏基线，尤其对小型模型收益明显。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

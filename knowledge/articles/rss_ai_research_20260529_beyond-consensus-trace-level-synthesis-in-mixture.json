@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-021",
+  "title": "Beyond Consensus: Trace-Level Synthesis in Mixture of Agents",
+  "source_url": "https://arxiv.org/abs/2605.29116",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Trace-Level Synthesis”的新方法，用于改进多LLM代理协作中的聚合过程。传统方法如多数投票或分层合成会压缩每个代理的推理轨迹，导致信息丢失。作者发现，即使所有代理达成一致，其推理轨迹中仍可能包含错误，而通过让一个LLM聚合器读取完整的推理轨迹，可以恢复正确解决方案，且有益修正始终多于有害修正，这被称为“聚合悖论”。该方法在多个基准测试中显著优于多数投票和分层合成，展示了在复杂推理任务中利用完整推理轨迹的价值。这项研究挑战了当前多代理系统中以共识为终点的做法，为提升LLM协作的准确性和鲁棒性提供了新思路，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Multi-Agent",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:34:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多数投票和分层合成会丢失代理推理轨迹中的关键信息，导致性能损失。",
+      "即使所有代理一致同意，其推理轨迹中仍可能包含错误，聚合器通过完整轨迹可纠正这些错误。",
+      "有益修正始终多于有害修正，形成“聚合悖论”，表明完整轨迹聚合优于共识压缩。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

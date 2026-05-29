@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260529-062",
+  "title": "ParaTool: Shifting Tool Representations from Context to Parameters",
+  "source_url": "https://arxiv.org/abs/2605.29561",
+  "source_platform": "rss_ai_research",
+  "summary": "ParaTool 提出了一种将工具表示从上下文转移到模型参数中的新方法，以解决传统基于上下文学习（ICL）的工具调用方式带来的推理开销大和幻觉风险高的问题。在 ICL 方法中，详细的工具文档和使用示例被直接放入上下文，随着上下文长度增加，推理成本上升且模型更容易产生幻觉。ParaTool 通过将工具知识编码到模型参数中，使得模型在调用工具时无需依赖冗长的上下文描述，从而显著降低推理延迟和内存占用，同时保持甚至提升工具调用的准确性和鲁棒性。该方法在多个基准测试上展示了优于 ICL 和微调基线的性能，尤其适用于需要频繁调用大量工具的复杂任务场景。这项研究对于提升 LLM 在实际应用中的效率和可靠性具有重要意义，尤其适合需要低延迟和高吞吐量的生产环境。",
+  "tags": [
+    "LLM",
+    "Tool Calling",
+    "Parameter Efficient"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:37:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将工具表示从上下文转移到模型参数中，可大幅减少推理时的上下文长度，降低计算开销和幻觉风险。",
+      "该方法在多个基准测试中优于传统的上下文学习和微调方法，尤其在工具调用频繁的场景下表现更佳。",
+      "ParaTool 为 LLM 的工具调用提供了一种更高效、更可扩展的范式，有助于推动 LLM 在真实应用中的部署。"
+    ],
+    "tech_category": "model",
+    "audience": "developer"
+  },
+  "version": 1
+}

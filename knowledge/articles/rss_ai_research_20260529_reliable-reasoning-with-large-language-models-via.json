@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260529-079",
+  "title": "Reliable Reasoning with Large Language Models via Preference-Based Maximum Satisfiability",
+  "source_url": "https://arxiv.org/abs/2605.29687",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种结合大语言模型（LLM）与偏好最大可满足性（Preference-Based Maximum Satisfiability）的混合推理方法，旨在解决LLM在处理多约束和用户偏好优化任务时的局限性。传统LLM在自然语言理解方面表现出色，但在涉及复杂约束和偏好（如机器人领域中的任务规划）时，往往难以直接生成可靠的最优解。作者提出让LLM通过代码生成将推理过程外部化：给定自然语言问题描述，LLM生成Python代码，将用户定义的约束和偏好编码为偏好最大可满足性（P-MaxSAT）问题，然后利用专门的求解器进行高效求解。这种方法结合了LLM的语义理解能力和形式化推理的精确性，显著提升了在复杂优化任务中的可靠性和可解释性。实验表明，该方法在多个基准测试中优于纯LLM推理和传统规划方法，尤其适用于需要同时满足硬约束和软偏好的场景。该研究值得关注，因为它为LLM在工程和机器人等需要严格逻辑推理的领域提供了实用且可扩展的解决方案，弥合了自然语言处理与形式化推理之间的鸿沟。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "MaxSAT",
+    "Code Generation",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:38:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM通过生成代码将推理外部化，利用P-MaxSAT求解器处理多约束优化问题，显著提升了复杂任务中的推理可靠性。",
+      "该方法结合了LLM的自然语言理解能力与形式化求解器的精确性，在机器人等领域的基准测试中优于纯LLM推理和传统规划方法。",
+      "偏好最大可满足性框架允许灵活处理硬约束和软偏好，为实际应用中的权衡优化提供了可解释的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

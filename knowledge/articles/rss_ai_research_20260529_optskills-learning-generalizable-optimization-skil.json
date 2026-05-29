@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-099",
+  "title": "OptSkills: Learning Generalizable Optimization Skills from Problem Archetypes via Cluster-Based Distillation",
+  "source_url": "https://arxiv.org/abs/2605.29829",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 OptSkills 的新方法，旨在解决大型语言模型（LLM）在自动优化问题求解中的泛化能力不足问题。现有方法对问题描述的细微变化敏感，主要依赖案例级别的经验复用，难以适应问题类型的迁移或新增。OptSkills 通过从问题原型（archetype）中学习可泛化的优化技能，采用基于聚类的知识蒸馏技术，将不同优化问题抽象为有限的原型类别，并从中提取通用的优化策略。该方法首先利用 LLM 对自然语言描述的优化问题进行聚类，识别出问题原型；然后，针对每个原型，通过蒸馏学习得到专门的优化技能；最后，在推理时，模型根据输入问题匹配最相关的原型并应用相应技能。实验表明，OptSkills 在多个优化基准测试中显著提升了泛化能力，尤其是在面对未见过的或变体问题时，相比基线方法取得了更好的性能。这项工作为提升 LLM 在自动化优化领域的鲁棒性和适应性提供了新思路，具有重要的理论和实践价值。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Knowledge Distillation",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:39:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OptSkills 通过识别问题原型（archetype）来学习可泛化的优化技能，而非依赖具体案例，从而提升对问题变体的适应性。",
+      "采用基于聚类的知识蒸馏方法，将大量优化问题抽象为有限原型，并针对每个原型蒸馏出专门的优化策略，提高了学习效率。",
+      "实验证明该方法在未见过的或变体优化问题上显著优于现有方法，展示了更强的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

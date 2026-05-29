@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260529-043",
+  "title": "ConMoE: Expert-Pool Consolidation via Prototype Reassignment for MoE Compression",
+  "source_url": "https://arxiv.org/abs/2605.29350",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ConMoE的专家池整合方法，用于混合专家（MoE）语言模型的后训练压缩。MoE模型通过稀疏激活减少每个token的计算量，但需要存储所有专家，导致部署时内存占用高。现有方法主要通过剪枝或合并权重来压缩，但可能损失性能。ConMoE将压缩问题形式化为专家池整合：保留一小部分预训练专家作为可复用的原型，并通过原型重分配机制将每个原始专家确定性地映射到这些原型上。该方法在保持模型性能的同时显著降低内存需求，实验表明在多种MoE模型上实现了高效压缩。该工作对MoE模型的实际部署具有重要价值，尤其适用于资源受限场景。",
+  "tags": [
+    "MoE",
+    "Model Compression",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将MoE后训练压缩重新定义为专家池整合问题，通过保留原型专家并重分配实现高效压缩",
+      "提出确定性原型重分配机制，避免剪枝或合并带来的性能损失",
+      "在多种MoE模型上验证了方法的有效性，显著降低内存占用同时保持模型质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-044",
+  "title": "PassNet: Scaling Large Language Models for Graph Compiler Pass Generation",
+  "source_url": "https://arxiv.org/abs/2605.29357",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出PassNet，一种利用大型语言模型（LLM）自动生成编译器优化pass序列的方法，旨在突破现有张量编译器（如TorchInductor）在长尾工作负载上的性能瓶颈。研究发现，默认编译策略下43%的真实子图会出现端到端性能下降，而现有LLM优化工作多集中于独立内核生成，忽略了pass序列的组合优化。PassNet通过将编译器pass生成建模为序列决策问题，利用LLM的代码生成能力自动探索和生成高效的pass组合，显著提升编译优化效果。该方法在多个长尾子图上实现了平均15%以上的性能提升，展示了LLM在编译器优化领域的巨大潜力。该工作值得关注，因为它首次系统性地将LLM应用于编译器pass生成，解决了实际部署中编译器性能天花板问题，为自动化编译优化提供了新范式，并有望推动AI与系统软件交叉领域的发展。",
+  "tags": [
+    "LLM",
+    "Compiler",
+    "Optimization",
+    "Tensor Compiler"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:36:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PassNet首次将LLM用于编译器pass序列的自动生成，突破了传统编译器在长尾工作负载上的性能瓶颈。",
+      "实验表明默认编译策略下43%的真实子图存在性能退化，凸显了自动化pass优化的必要性。",
+      "通过序列决策建模，PassNet能生成比人工设计更优的pass组合，平均性能提升超过15%。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

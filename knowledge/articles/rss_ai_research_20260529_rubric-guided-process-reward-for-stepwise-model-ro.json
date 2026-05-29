@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-042",
+  "title": "Rubric-Guided Process Reward for Stepwise Model Routing",
+  "source_url": "https://arxiv.org/abs/2605.29310",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于评分准则引导的过程奖励方法，用于逐步模型路由，以提升大型推理模型（LRMs）的效率。传统方法将路由建模为序列决策过程，并使用强化学习训练路由器，但仅依赖结果奖励（即最终答案正确性）来监督，无法有效评估中间路由决策的质量。本文创新性地引入过程奖励机制，通过评分准则（Rubric）对每个推理步骤的路由决策进行细粒度评估，从而更准确地指导路由器学习。该方法不仅考虑了最终结果，还关注中间步骤的合理性，有望在复杂推理任务中显著提高模型路由的效率和准确性。值得关注的是，它解决了现有路由方法中奖励稀疏和反馈延迟的问题，为LRMs的实用化部署提供了新思路。实验表明，该方法在多个基准测试上优于传统结果奖励方法，尤其是在多步推理任务中表现突出。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Model Routing",
+    "Process Reward"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出评分准则引导的过程奖励，替代传统结果奖励，实现对中间路由决策的细粒度评估。",
+      "将路由问题建模为序列决策过程，并利用过程奖励进行强化学习训练，提升路由效率。",
+      "在多个推理基准上验证了该方法优于仅依赖结果奖励的基线，尤其适用于多步推理任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

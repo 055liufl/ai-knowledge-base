@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260529-077",
+  "title": "Notation Matters: A Benchmark Study of Token-Optimized Formats in Agentic AI Systems",
+  "source_url": "https://arxiv.org/abs/2605.29676",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在Agentic AI系统中，大型语言模型（LLM）消耗工具架构和执行结果并发出工具调用时，结构化数据交换格式的Token效率问题。默认使用的JSON格式因其设计初衷是应用间数据交换，而非Token效率，其结构元素（如括号、引号、逗号）带来了显著的Token开销。为此，近期工作提出了Token优化替代方案，如TOON（Token-Oriented Object Notation）和TRON（Token Reduced Object Notation）。本文通过基准测试，系统比较了JSON、TOON、TRON等格式在Agentic AI系统中的Token消耗、解析速度、模型兼容性及任务完成质量。研究发现，TOON和TRON相比JSON可减少30%-50%的Token使用，同时保持或提升解析效率和模型输出准确性。这一发现对于降低Agentic AI系统的推理成本、提高响应速度具有重要意义，尤其适用于需要频繁工具调用的复杂代理场景。本文为AI系统设计者提供了选择高效数据格式的实证依据，并指出了未来优化方向。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Token Efficiency",
+    "Data Format",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:38:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "JSON的结构元素在Agentic AI系统中造成高达50%的Token浪费，TOON和TRON等优化格式可显著降低Token开销。",
+      "Token优化格式在保持或提升解析速度和模型输出准确性的同时，能有效降低推理成本，提升系统响应速度。",
+      "基准测试结果为Agentic AI系统设计者提供了选择高效数据格式的实证依据，推动标准化进程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

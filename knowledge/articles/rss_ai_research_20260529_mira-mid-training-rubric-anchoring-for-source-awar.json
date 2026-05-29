@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260529-136",
+  "title": "MIRA: Mid-training Rubric Anchoring for Source-Aware Data Selection",
+  "source_url": "https://arxiv.org/abs/2605.30288",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MIRA（Mid-training Rubric Anchoring for Source-Aware Data Selection）的方法，用于解决大语言模型（LLM）开发中“中期训练”阶段的数据选择问题。中期训练是现代LLM训练流程中的关键环节，它介于预训练和后训练之间，使用大规模精心策划的数据集来增强模型能力。与预训练和后训练不同，中期训练的数据选择面临独特挑战：数据在接近预训练规模的条件下优化，但需针对下游能力进行策划，且数据来自异构来源（如不同格式和训练角色的数据）。MIRA通过引入“评分锚定”（Rubric Anchoring）机制，结合数据来源信息，实现源感知的数据选择，从而更有效地筛选出对中期训练有益的数据。该方法在多个基准测试中展示了显著性能提升，尤其提升了模型在推理、知识理解和指令遵循等下游任务上的表现。该研究值得关注，因为它针对LLM训练流程中一个被忽视但至关重要的阶段提出了创新解决方案，有望提升模型训练效率和最终性能。",
+  "tags": [
+    "LLM",
+    "Data Selection",
+    "Mid-training"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:41:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MIRA通过评分锚定机制，结合数据来源信息，解决了中期训练中数据异构性和目标多样性的选择难题。",
+      "该方法在多个下游任务上显著提升了LLM性能，验证了源感知数据选择在中期训练中的有效性。",
+      "MIRA为LLM训练流程优化提供了新思路，填补了预训练与后训练之间数据选择策略的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

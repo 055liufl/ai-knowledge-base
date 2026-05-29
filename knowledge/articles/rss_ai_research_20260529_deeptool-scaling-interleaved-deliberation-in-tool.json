@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-064",
+  "title": "DeepTool: Scaling Interleaved Deliberation in Tool-Integrated Reasoning via Process-Supervised Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2605.29568",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 DeepTool 的新方法，旨在通过过程监督强化学习（Process-Supervised Reinforcement Learning）来扩展工具集成推理（Tool-Integrated Reasoning, TIR）中的交错推理能力。TIR 通过利用外部环境（如 API、数据库等）增强了 LLM 的能力，但现有方法在顺序工具调用过程中缺乏必要的推理和自纠正能力，导致无法进行战略规划和错误修正。传统的强化学习方法在 TIR 中受限于稀疏的结果奖励，无法有效监督中间推理步骤和工具调用。DeepTool 通过引入过程监督信号，在每一步工具调用和推理步骤中提供细粒度的奖励，从而引导模型学习更有效的策略。实验结果表明，DeepTool 在多个复杂推理任务上显著提升了性能，特别是在需要多步工具交互的场景中。该方法不仅提高了模型的规划能力，还增强了其自我纠正和适应能力。这项工作对于推动 LLM 在现实世界中的应用具有重要意义，尤其是在需要复杂推理和工具使用的领域，如代码生成、数据分析、科学计算等。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Tool-Integrated Reasoning",
+    "Process Supervision"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:37:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DeepTool 通过过程监督强化学习解决了工具集成推理中稀疏奖励的问题，实现了对中间推理步骤和工具调用的细粒度监督。",
+      "该方法显著提升了 LLM 在需要多步工具交互的复杂推理任务中的规划、自纠正和适应能力。",
+      "过程监督信号为模型提供了更丰富的学习信号，使其能够更有效地进行战略规划和错误修正。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

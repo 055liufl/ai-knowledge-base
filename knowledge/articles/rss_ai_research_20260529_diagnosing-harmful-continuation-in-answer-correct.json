@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-040",
+  "title": "Diagnosing Harmful Continuation in Answer-Correct Long-CoT Training Traces",
+  "source_url": "https://arxiv.org/abs/2605.29288",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在长链思维（Long CoT）训练数据中，即使答案正确，后续的推理延续部分可能对模型微调产生有害影响。作者将这种“答案正确但后续推理延续”的现象定义为“有害延续”（Harmful Continuation），并提出了一个诊断框架来识别和量化这种有害延续。通过删除或修改这些有害延续部分，实验表明可以显著提升微调后模型的推理准确性和效率。该研究揭示了长CoT数据中一个被忽视的质量问题，即答案正确并不保证整个推理轨迹的优化效果，为构建更高质量的监督微调数据集提供了新视角。论文还分析了有害延续的常见模式，如冗余推理、错误路径探索和过度细化，并提出了自动检测和缓解策略。这项工作对于提升大语言模型在推理任务上的微调效果具有重要实践意义，尤其适用于需要长链推理的复杂问题场景。",
+  "tags": [
+    "LLM",
+    "Chain-of-Thought",
+    "SFT",
+    "Data Quality"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "答案正确的长CoT轨迹中，后续的推理延续可能对模型微调产生有害影响，降低推理准确性和效率。",
+      "提出了诊断框架和自动检测方法，用于识别和量化长CoT数据中的有害延续模式。",
+      "通过删除或修改有害延续，可以显著提升微调后模型的推理性能，为构建高质量监督微调数据集提供了新策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

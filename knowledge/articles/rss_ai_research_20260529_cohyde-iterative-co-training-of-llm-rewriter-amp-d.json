@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260529-039",
+  "title": "CoHyDE: Iterative Co-Training of LLM Rewriter &amp; Dense Encoder for Tool Retrieval",
+  "source_url": "https://arxiv.org/abs/2605.29271",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 CoHyDE 的新型协同训练框架，旨在解决大语言模型（LLM）代理在大型 API 目录中进行工具检索时面临的语义鸿沟问题。用户查询通常使用口语化、不精确的语言，而 API 目录则采用技术性词汇，传统的固定编码器难以弥合这一差距。现有方法如对比编码器微调和 HyDE 风格的查询扩展各有局限：前者可能过度拟合训练数据，后者依赖冻结的 LLM 可能产生不相关的扩展。CoHyDE 通过迭代协同训练一个 LLM 重写器和一个密集编码器，使两者相互增强：重写器将用户查询转换为更接近 API 描述的格式，而编码器则学习更好地表示这些重写后的查询和 API 文档。实验表明，CoHyDE 在多个基准数据集上显著提升了工具检索的准确性和鲁棒性，尤其是在处理模糊或复杂查询时。这项工作值得关注，因为它直接解决了 LLM 代理在实际部署中的关键瓶颈，即如何高效地从海量 API 中检索相关工具，从而提升代理的自主性和可靠性。",
+  "tags": [
+    "LLM",
+    "Tool Retrieval",
+    "Co-training",
+    "Query Expansion",
+    "Dense Encoder"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:35:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoHyDE 通过迭代协同训练 LLM 重写器和密集编码器，有效弥合了用户查询与 API 描述之间的语义鸿沟。",
+      "该方法在多个基准测试中显著优于对比编码器微调和 HyDE 等现有方法，尤其在处理模糊查询时表现突出。",
+      "CoHyDE 的协同训练机制使重写器和编码器相互增强，避免了单一方法的局限性，提升了工具检索的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

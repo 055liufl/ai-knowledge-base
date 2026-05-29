@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260529-070",
+  "title": "Beyond Attack Success Rate: Temporal Logit Observability for LLM Safety Failures",
+  "source_url": "https://arxiv.org/abs/2605.29629",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“时间对数可观测性”（Temporal Logit Observability, TLO）的新型诊断方法，用于分析大语言模型（LLM）在安全对齐中的失败模式。传统的攻击成功率（ASR）仅以二值标签（成功/失败）评估越狱攻击的最终结果，无法揭示攻击过程中的动态演化。TLO 无需额外训练，通过持续监控模型输出层中“顺从-拒绝”维度的对数几率变化，将攻击过程转化为可观测的时间序列。该方法能够区分两种看似结果相同但路径不同的攻击：一种是模型早期表现出拒绝但后期被说服，另一种是模型始终顺从。实验表明，TLO 可以识别 ASR 无法区分的隐蔽失败模式，例如渐进式越狱或延迟性妥协。该工作为 LLM 安全评估提供了更细粒度的分析工具，有助于理解模型安全机制的脆弱性，并指导更鲁棒的对齐策略设计。值得关注的是，TLO 不依赖额外数据或模型修改，具有即插即用的实用性，可能成为安全评估的标准补充方法。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Logit Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:37:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TLO 通过监控顺从-拒绝维度的对数几率变化，将越狱攻击过程转化为可观测的时间序列，超越了传统 ASR 的最终结果评估。",
+      "该方法无需训练，即插即用，能够区分 ASR 无法区分的渐进式越狱和延迟性妥协等隐蔽失败模式。",
+      "TLO 为 LLM 安全评估提供了细粒度诊断工具，有助于揭示模型安全机制的动态脆弱性并指导更鲁棒的对齐策略。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260529-119",
+  "title": "Robust and Generalizable Safety Steering for Text-to-Image Diffusion Transformers",
+  "source_url": "https://arxiv.org/abs/2605.30049",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对文本到图像扩散变换器（Diffusion Transformers）的鲁棒且可泛化的安全引导方法。扩散变换器已成为文本到图像生成的有力骨干，但其分层和跨模态生成过程使得安全控制与简单的提示级过滤或输出级检测根本不同。有害语义可能在文本表示中弱表达，逐步绑定到视觉潜在变量，最终与渲染动态纠缠。因此，在固定层进行安全引导可能不稳定。该方法通过分析扩散变换器中安全相关特征的动态分布，设计了一种自适应引导机制，能够在不同层和不同生成阶段动态调整安全干预强度，从而在保持生成质量的同时有效抑制有害内容。实验表明，该方法在多个安全基准上优于现有方法，并展现出良好的跨模型和跨任务泛化能力。这项工作对于提升生成式AI的安全性和可控性具有重要意义。",
+  "tags": [
+    "Diffusion Transformer",
+    "Safety Steering",
+    "Text-to-Image Generation"
+  ],
+  "author": null,
+  "published_at": "2026-05-29T11:30:39Z",
+  "collected_at": "2026-05-29T11:40:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散变换器的分层跨模态生成过程使安全控制面临独特挑战，固定层引导不稳定",
+      "提出自适应安全引导机制，根据安全相关特征的动态分布调整干预强度",
+      "方法在多个安全基准上优于现有方法，并展现出良好的跨模型和跨任务泛化能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
