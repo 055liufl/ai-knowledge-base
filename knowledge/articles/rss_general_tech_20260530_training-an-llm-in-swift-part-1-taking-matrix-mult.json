@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260530-018",
+  "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+  "source_url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是系列文章的第一部分，专注于在Swift语言中优化矩阵乘法运算，以支持大型语言模型（LLM）的训练。作者从基础的矩阵乘法实现出发，逐步引入性能优化技术，如内存布局调整、循环展开、SIMD向量化、多线程并行计算以及利用硬件特性（如ARM NEON指令集），将矩阵乘法的性能从Gflop/s级别提升至Tflop/s级别。文章详细解释了每个优化步骤的原理和实现细节，并提供了性能基准测试结果。该内容值得关注，因为它展示了在非传统深度学习框架（如PyTorch或TensorFlow）中，使用Swift语言进行高性能计算的可能性，尤其对于苹果生态系统中的开发者而言，这为在iOS/macOS设备上本地运行或训练LLM提供了新的技术路径。此外，文章强调了对底层硬件的精细控制，这对于理解现代计算架构和性能优化有重要教育意义。",
+  "tags": [
+    "Swift",
+    "Matrix Multiplication",
+    "Performance Optimization",
+    "LLM",
+    "SIMD"
+  ],
+  "author": null,
+  "published_at": "2026-05-30T10:01:26Z",
+  "collected_at": "2026-05-30T10:04:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过内存布局优化（如行主序转列主序）和循环分块，可以显著减少缓存未命中，提升矩阵乘法性能。",
+      "利用Swift的SIMD（单指令多数据）特性和ARM NEON指令集，可以实现向量化计算，将浮点运算吞吐量提升至接近硬件理论峰值。",
+      "多线程并行计算（如使用DispatchQueue）结合任务分解，能够有效利用多核CPU，实现从Gflop/s到Tflop/s的性能跨越。",
+      "该优化方法为在苹果生态系统中使用Swift进行LLM训练或推理提供了底层计算基础，展示了Swift在高性能计算领域的潜力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

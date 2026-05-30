@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260530-057",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队发布的技术博客，围绕其最新模型 M2 探讨了智能体（Agent）泛化能力的关键问题。传统对齐方法通常聚焦于让模型遵循人类指令或偏好，但 MiniMax 提出，对于智能体而言，真正的对齐目标应是“任务完成能力”而非简单的指令遵循。文章重新定义了智能体泛化的核心挑战：如何在未见过的任务、环境和工具组合中保持高效执行。M2 模型通过一种新的训练范式，将强化学习与多任务模仿学习结合，使模型学会从任务结果中自我改进，而非仅依赖人类反馈。实验表明，M2 在多种复杂智能体基准测试（如 Web 导航、代码执行、工具调用）中显著超越 GPT-4 等模型，尤其在零样本泛化场景下表现突出。该工作不仅提出了一个更强的模型，更关键的是为智能体对齐研究提供了新视角：未来智能体的对齐应更关注“任务目标”而非“人类偏好”，这可能会改变大模型在自动化、机器人、软件工程等领域的应用范式。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Alignment",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-05-30T10:01:35Z",
+  "collected_at": "2026-05-30T10:08:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "重新定义了智能体对齐的目标：从遵循人类指令转向最大化任务完成能力，这为 Agent 训练提供了新方向。",
+      "M2 模型通过强化学习与多任务模仿学习结合，实现了在未见任务和工具组合上的强零样本泛化。",
+      "实验证明，以任务结果为导向的训练比传统 RLHF 更能提升智能体在复杂环境中的自主决策能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260530-015",
+  "title": "Training and Finetuning Multimodal Embedding &amp; Reranker Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-multimodal-sentence-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何使用 Sentence Transformers 库训练和微调多模态嵌入（Multimodal Embedding）和重排序（Reranker）模型。多模态嵌入模型能够将文本、图像等多种模态的数据映射到统一的向量空间中，从而支持跨模态检索、图文匹配等任务。文章详细说明了从数据准备、模型选择到训练流程的完整步骤，包括如何利用预训练的 CLIP 等模型作为基础，通过对比学习（Contrastive Learning）和排序损失（Ranking Loss）进行微调。此外，还探讨了重排序模型在多阶段检索中的应用，即先通过嵌入模型进行粗召回，再使用重排序模型精排，以提升检索质量。该博客提供了实用的代码示例和配置建议，适合希望构建或优化多模态搜索系统的开发者。值得关注的原因在于，多模态嵌入和重排序是当前 AI 应用（如多模态 RAG、视觉问答、电商搜索）的核心技术，而 Sentence Transformers 库的易用性降低了开发门槛，使得研究者与工程师能够快速实验和部署。",
+  "tags": [
+    "Multimodal Embedding",
+    "Sentence Transformers",
+    "Reranker",
+    "Contrastive Learning",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-05-30T10:01:35Z",
+  "collected_at": "2026-05-30T10:05:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Sentence Transformers 支持多模态嵌入模型的训练与微调，可处理文本、图像等多种数据类型的统一向量表示。",
+      "通过对比学习和排序损失，可以基于预训练模型（如 CLIP）微调出针对特定任务的多模态嵌入和重排序模型。",
+      "重排序模型作为检索流水线中的精排阶段，能显著提升多模态检索的准确性和用户体验。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

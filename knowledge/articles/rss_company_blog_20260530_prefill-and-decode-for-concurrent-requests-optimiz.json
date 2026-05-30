@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260530-121",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在并发请求场景下优化大语言模型（LLM）推理性能的关键技术，重点分析了Prefill（预填充）和Decode（解码）阶段的性能瓶颈与优化策略。Prefill阶段负责处理输入提示（prompt）并生成初始的键值（KV）缓存，而Decode阶段则基于KV缓存逐token生成输出。在并发请求下，GPU资源竞争加剧，导致Prefill和Decode的延迟增加。文章提出了几种优化方法：通过动态批处理（dynamic batching）将多个请求的Prefill合并执行，提高GPU利用率；利用连续批处理（continuous batching）在Decode阶段交错处理不同请求，减少空闲等待；以及通过KV缓存管理（如缓存复用和压缩）降低内存开销。此外，还讨论了模型架构调整（如使用FlashAttention）和硬件适配（如利用GPU的并行计算能力）对性能的提升。这些优化对于部署高吞吐、低延迟的LLM服务至关重要，尤其适用于聊天机器人、代码生成等实时应用场景。文章提供了实用的性能调优指南，帮助开发者平衡资源分配与响应速度。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Concurrent Requests"
+  ],
+  "author": null,
+  "published_at": "2026-05-30T10:01:35Z",
+  "collected_at": "2026-05-30T10:12:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill和Decode阶段的性能优化是提升LLM并发推理效率的关键，动态批处理和连续批处理能显著提高GPU利用率。",
+      "KV缓存管理（如复用和压缩）在减少内存开销的同时，可降低Decode阶段的延迟，支持更多并发请求。",
+      "模型架构调整（如FlashAttention）和硬件适配（如GPU并行计算）是突破性能瓶颈的有效手段。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
