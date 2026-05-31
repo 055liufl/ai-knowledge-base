@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260531-103",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）推理服务中，长提示词（long prompts）如何阻塞其他请求，并提出了优化性能的策略。文章指出，当处理包含大量上下文的长提示词时，LLM 的推理过程会占用大量计算资源，导致后续请求排队等待，从而增加整体延迟。作者通过实验数据展示了不同长度提示词对并发请求处理的影响，并分析了预填充（prefill）和解码（decode）阶段的瓶颈。优化建议包括：使用动态批处理（dynamic batching）来合并短请求、采用分块预填充（chunked prefill）减少单次处理时间、以及利用异步调度（asynchronous scheduling）避免阻塞。这些方法能显著提升吞吐量并降低尾延迟。本文对于部署 LLM 服务的开发者具有实际参考价值，因为它提供了可操作的性能调优方向，尤其是在高并发场景下平衡资源利用与响应速度。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-05-31T10:16:54Z",
+  "collected_at": "2026-05-31T10:25:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词在预填充阶段会阻塞其他请求，导致队列延迟增加，这是 LLM 服务性能瓶颈的关键。",
+      "动态批处理和分块预填充能有效减少长提示词对并发请求的影响，提升系统吞吐量。",
+      "异步调度策略可以避免单次长推理阻塞整个服务，从而降低尾延迟。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

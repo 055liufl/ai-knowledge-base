@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260531-057",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是MiniMax团队发布的一篇技术博客，探讨了在构建通用AI Agent时面临的泛化挑战。文章提出，当前主流方法（如基于LLM的Agent）在特定任务上表现优异，但在跨任务、跨环境的泛化能力上存在瓶颈。MiniMax M2模型通过重新思考对齐目标（Aligning to What），提出了一种新的训练范式：不再仅对齐人类偏好或单一任务目标，而是对齐“通用Agent能力”，包括工具使用、多步推理、环境交互和错误恢复等核心技能。文章详细介绍了M2的架构设计，包括基于强化学习的多任务训练、动态任务采样策略以及环境反馈机制。实验表明，M2在多个未见过的Agent基准测试中（如WebArena、SWE-bench）取得了显著提升，且泛化能力优于同等规模的GPT-4和Claude系列。该工作对于推动Agent从专用走向通用具有重要意义，尤其为开发者提供了可复现的训练思路。值得关注的是，MiniMax将部分模型权重和训练代码开源，降低了研究门槛。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Generalization",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-05-31T10:16:54Z",
+  "collected_at": "2026-05-31T10:22:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MiniMax M2通过重新定义对齐目标（从任务对齐到能力对齐），显著提升了Agent在未见任务上的泛化能力。",
+      "基于强化学习的多任务训练框架，结合动态任务采样和环境反馈，是M2泛化性能提升的关键技术。",
+      "M2在WebArena、SWE-bench等基准上超越GPT-4和Claude，证明了通用Agent能力的可行性。",
+      "开源部分模型权重和训练代码，为社区提供了可复现的Agent泛化研究基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
