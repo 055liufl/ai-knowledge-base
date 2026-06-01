@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-016",
+  "title": "UniScale: Adaptive Unified Inference Scaling via Online Joint Optimization of Model Routing and Test-Time Scaling",
+  "source_url": "https://arxiv.org/abs/2605.30898",
+  "source_platform": "rss_ai_research",
+  "summary": "UniScale 提出了一种自适应统一推理缩放框架，通过在线联合优化模型路由和测试时缩放（TTS），在大型语言模型（LLM）的实际部署中平衡推理质量与计算成本。传统方法将模型路由（根据请求复杂度切换不同规模的模型）和测试时缩放（在固定模型内调整推理计算量）视为两个独立维度，导致次优的权衡。UniScale 创新性地将两者联合优化，利用在线学习动态调整路由策略和缩放参数，以最小化总成本同时满足质量约束。该工作基于强化学习或贝叶斯优化方法，在多个基准测试（如 MMLU、GSM8K）上展示了显著的成本节省（最高达 40%）而性能损失极小。其核心价值在于为 LLM 服务系统提供了一种实用、自适应的推理优化方案，尤其适用于异构负载和动态资源环境。该研究来自学术界与工业界合作，具有较高的工程实践意义，推动了 LLM 部署效率的边界。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Model Routing",
+    "Test-Time Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:41:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "UniScale 首次将模型路由与测试时缩放联合优化，打破了传统独立优化的局限，实现了更优的推理效率-质量权衡。",
+      "通过在线学习机制，系统能动态适应请求分布变化，无需离线预训练，适合实际部署中的非平稳负载。",
+      "实验表明，在保持相似性能下，计算成本可降低 40%，显著优于单独使用路由或缩放的方法。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

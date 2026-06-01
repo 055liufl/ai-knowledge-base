@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-003",
+  "title": "Uncertainty-Aware and Temporally Regulated Expert Advice in Reinforcement Learning for Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2605.30576",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向自动驾驶强化学习的不确定性感知与时间调控专家建议框架。在自动驾驶中，强化学习的探索过程本质上是危险的：智能体需要通过尝试新行为来学习，但这可能导致碰撞或驶离道路。为了解决这一安全-学习困境，作者设计了一个不确定性感知机制，利用专家建议来引导探索，同时避免对专家的长期依赖。具体而言，当认知不确定性（epistemic uncertainty）或偶然不确定性（aleatoric uncertainty）超过基于滚动缓冲区自适应计算的阈值时，系统会触发专家建议。这种方法在保障安全性的同时，允许智能体在不确定性较低时自主探索，从而逐步减少对专家干预的需求。该工作对于提升自动驾驶中强化学习的安全性和样本效率具有重要价值，尤其适用于高风险决策场景。",
+  "tags": [
+    "Reinforcement Learning",
+    "Autonomous Driving",
+    "Uncertainty Estimation",
+    "Safe Exploration"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:40:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种不确定性感知机制，通过区分认知不确定性和偶然不确定性来动态触发专家建议，从而在安全与探索之间取得平衡。",
+      "采用基于滚动缓冲区的自适应阈值，使专家干预的频率随智能体经验积累而自然减少，避免长期依赖。",
+      "该方法直接针对自动驾驶中强化学习的安全瓶颈，具有较高的实际应用潜力，尤其适用于高风险环境下的策略学习。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

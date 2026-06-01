@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-102",
+  "title": "OrcaRouter: A Production-Oriented LLM Router with Hybrid Offline-Online Learning",
+  "source_url": "https://arxiv.org/abs/2605.30736",
+  "source_platform": "rss_ai_research",
+  "summary": "OrcaRouter 是一个面向生产环境的 LLM 路由器，旨在解决多模型部署场景下的智能请求路由问题。随着大型语言模型（LLM）的快速发展，不同模型在能力和推理成本上存在显著差异，如何为每个传入请求选择最合适的模型成为一个关键挑战。OrcaRouter 采用基于 LinUCB 的上下文赌博机算法，结合词汇和句子嵌入特征，并引入混合离线-在线学习协议。在离线阶段，它利用全信息反馈进行初始训练；在线阶段则通过部分反馈（仅路由模型的奖励）持续优化。这种设计使得 OrcaRouter 能够在保证低延迟和高吞吐量的同时，动态平衡模型选择的质量与成本。该工作值得关注，因为它直接针对 LLM 服务中的实际部署痛点，提供了一种可扩展、高效且实用的解决方案，有望显著降低企业使用 LLM 的运营成本并提升用户体验。",
+  "tags": [
+    "LLM",
+    "Router",
+    "Contextual Bandit",
+    "Production"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:47:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OrcaRouter 将 LinUCB 上下文赌博机与词汇及句子嵌入特征结合，实现了高效的在线模型路由决策。",
+      "混合离线-在线学习协议允许模型在离线阶段利用全信息反馈预训练，在线阶段仅需部分反馈即可持续优化，降低了在线学习成本。",
+      "该路由器面向生产环境设计，兼顾了低延迟、高吞吐量和动态成本-质量平衡，解决了多 LLM 部署中的实际路由难题。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

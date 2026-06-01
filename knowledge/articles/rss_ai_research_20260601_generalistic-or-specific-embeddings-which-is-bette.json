@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260601-068",
+  "title": "Generalistic or Specific Embeddings, Which is Better? An Empirical Study on Search for Clinical Coding in Non-English Languages",
+  "source_url": "https://arxiv.org/abs/2605.30529",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对非英语语言（特别是法语）的临床编码检索任务，系统比较了通用句子嵌入模型与特定领域嵌入模型的性能差异。研究发现，在ICD-10-CM/CIE-10代码检索场景下，通用嵌入模型（如多语言Sentence-BERT）的召回率显著低于英语基准测试表现，且这种退化常被聚合基准掩盖。作者提出利用大型生成语言模型（如GPT系列）作为数据工厂，通过合成临床查询-代码对来增强训练数据，并构建了一个两阶段检索器（双编码器+交叉编码器）。实验表明，基于合成数据微调的特定领域嵌入模型在召回率上比通用模型提升15-20%，且跨语言泛化能力更强。该工作揭示了非英语临床检索中嵌入模型的局限性，并提供了低成本数据增强的解决方案，对多语言医疗信息检索具有重要实践价值。",
+  "tags": [
+    "Embedding",
+    "Clinical NLP",
+    "Semantic Search",
+    "Data Augmentation",
+    "Multilingual"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:45:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用多语言嵌入模型在非英语临床编码检索中召回率显著低于英语场景，且聚合基准掩盖了这种退化",
+      "利用大型生成语言模型合成临床查询-代码对，可有效弥补非英语领域训练数据不足的问题",
+      "两阶段检索架构（双编码器+交叉编码器）结合合成数据微调，在法语ICD-10-CM检索中实现15-20%的召回率提升"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

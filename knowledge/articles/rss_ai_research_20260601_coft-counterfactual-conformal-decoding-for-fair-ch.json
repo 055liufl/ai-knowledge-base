@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260601-086",
+  "title": "COFT: Counterfactual-Conformal Decoding for Fair Chain-of-Thought Reasoning in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2605.30641",
+  "source_platform": "rss_ai_research",
+  "summary": "COFT（Chain of Fair Thought）是一种针对大语言模型（LLM）链式思维（CoT）推理中社会偏见问题的训练无关解码方法。该方法在解码阶段实施词元级别的公平性控制，并基于可交换性假设提供无分布边际有效性保证，适用于任何冻结的因果语言模型。COFT通过三个阶段实现：首先，通过替换敏感属性（如性别、种族）构建掩码反事实提示；其次，利用保形预测框架生成校准的预测集；最后，通过反事实对比解码调整输出概率，减少偏见表达。该工作首次将保形预测与反事实推理结合，在无需重新训练或微调的情况下实现公平性干预，且理论保证不依赖数据分布假设。实验表明，COFT在多个偏见基准（如BBQ、CrowS-Pairs）上显著降低偏见指标，同时保持推理质量。其价值在于提供了一种轻量级、可验证的公平性增强方案，尤其适用于敏感场景下的LLM部署。",
+  "tags": [
+    "LLM",
+    "Fairness",
+    "Decoding",
+    "Counterfactual",
+    "Conformal Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:46:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "COFT通过反事实掩码和保形预测实现训练无关的公平性解码，提供无分布边际有效性保证。",
+      "该方法在多个偏见基准上显著降低社会偏见，同时保持CoT推理质量。",
+      "COFT的轻量级特性使其易于集成到现有LLM部署中，无需重新训练。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

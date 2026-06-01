@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-081",
+  "title": "The Architecture of Errors: From Universal Impossibility to Patch-Local LLM Reliability",
+  "source_url": "https://arxiv.org/abs/2605.30628",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文从理论层面论证了通用大语言模型（LLM）可靠性在数学上是不可能的：由于所有可能任务、工具、知识源和评估者期望中，新的可干预区分的失败模式会无限出现，因此不存在有限的干预字典能保证对每种模式的有界残余误差。然而，论文指出，实际部署的系统并非运行于整个宇宙，而是运行于操作上有界的“补丁”（如法律审查、医疗诊断等特定领域）。因此，LLM可靠性的可行路径是从追求“通用可靠性”转向实现“补丁-局部可靠性”，即在有限、定义良好的操作边界内，通过针对性干预和验证来保证可靠性。这一观点挑战了当前LLM可靠性研究的普遍假设，为实际工程提供了更务实的方向。值得关注的是，它揭示了LLM可靠性问题的本质是无限性与有限性之间的根本矛盾，并提出了可操作的局部化解决方案，对AI安全、部署和监管具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Reliability",
+    "Theory",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:46:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用LLM可靠性在数学上不可实现，因为新失败模式无限出现，有限干预字典无法覆盖。",
+      "实际系统运行于操作有界的“补丁”内，因此应追求“补丁-局部可靠性”而非通用可靠性。",
+      "该理论为LLM在特定领域（如法律、医疗）的可靠部署提供了务实框架，强调边界定义与针对性干预。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

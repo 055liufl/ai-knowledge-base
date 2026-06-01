@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-010",
+  "title": "Learning Agent-Compatible Context Management for Long-Horizon Tasks",
+  "source_url": "https://arxiv.org/abs/2605.30785",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向长周期任务的智能体兼容上下文管理方法，旨在解决LLM智能体在长时间任务（如网页搜索、深度研究）中因上下文累积导致的性能退化和推理失败问题。现有方法通常需要训练智能体自身进行上下文控制或采用固定策略（如摘要），这不仅对闭源智能体不适用，而且忽略了不同任务对上下文管理的差异化需求。本文提出了一种无需修改智能体本身、即可动态调整上下文管理策略的框架，通过评估任务状态和上下文质量，自适应地选择压缩、摘要或丢弃等操作，从而保持智能体的推理效率与准确性。该方法在多个长周期任务基准上取得了显著提升，尤其适用于闭源或难以微调的智能体系统。该研究对于提升LLM在复杂、持续交互场景中的实用性和可靠性具有重要价值，是智能体上下文管理领域的一项创新性工作。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Long-Horizon Tasks"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:41:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需修改智能体本身即可动态调整上下文管理策略的框架，解决了闭源智能体难以适配的问题。",
+      "通过评估任务状态和上下文质量，自适应选择压缩、摘要或丢弃等操作，显著提升长周期任务中的推理效率与准确性。",
+      "在多个长周期任务基准上验证了方法的有效性，为LLM在复杂、持续交互场景中的实用化提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-002",
+  "title": "Physically Viable World Models: A Case for Query-Conditioned Embodied AI",
+  "source_url": "https://arxiv.org/abs/2605.30542",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的具身AI世界模型构建范式——物理可行的世界模型（Physically Viable World Models）。传统基于观测预测的世界模型虽然能生成视觉上合理的未来帧，但常常违反物理规律，例如在干预查询（如推动物体）时产生不真实的运动轨迹。作者指出，这种失败是结构性的：不同的物理系统可能在外观上完全相同，但在干预下表现迥异。为此，他们提出世界模型必须能够回答干预查询，即通过显式建模控制动作结果的物理结构（如物体质量、摩擦系数、动力学约束等），而非仅仅预测像素级观测。论文通过理论分析和实验案例（如桌面物体操作、机器人抓取）论证了现有方法的局限性，并展示了查询条件化（query-conditioned）框架如何提升模型在物理推理和泛化方面的表现。这项工作为具身AI提供了更鲁棒的感知-行动循环基础，有望推动机器人、自动驾驶等领域的物理一致性建模。",
+  "tags": [
+    "World Model",
+    "Embodied AI",
+    "Physical Reasoning",
+    "Intervention Query"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:40:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有观测预测型世界模型在干预查询下会产生物理上不合理的预测，其失败源于对物理结构缺乏显式建模",
+      "物理可行的世界模型必须能够回答干预查询，即通过建模控制动作的物理约束来保证预测的因果一致性",
+      "查询条件化框架通过将干预查询作为模型输入，迫使模型学习物理结构而非表面视觉特征"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260601-036",
+  "title": "When LLM Reward Design Fails: Diagnostic-Driven Refinement for Sparse Structured RL",
+  "source_url": "https://arxiv.org/abs/2605.28918",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于诊断驱动的迭代方法，用于改进大型语言模型（LLM）在稀疏结构化强化学习任务中的奖励设计。传统上，LLM被用于一次性生成奖励函数，但在稀疏奖励场景下，这种方法容易失败。作者通过PPO算法在MiniGrid和MuJoCo环境中进行实验，识别出两种主要的一步生成失败模式：奖励泛滥（reward flooding）和语义/API误解，以及一种较罕见的弱塑形（weak-shaping）情况。为了解决这些问题，他们提出了一种诊断驱动的迭代优化框架，通过分析训练过程中的失败模式，逐步调整奖励函数设计。这项工作的重要性在于，它将LLM奖励设计从一次性生成重新定义为调试过程，显著提升了稀疏结构化RL任务的训练效率和稳定性。对于强化学习、LLM应用和自动化奖励工程领域的研究者和开发者而言，该研究提供了实用的方法论和工具，有望推动更可靠的智能体训练流程。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reward Design",
+    "PPO"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:43:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM生成的奖励函数在稀疏结构化RL任务中常出现奖励泛滥和语义误解等失败模式，需通过诊断驱动迭代而非一次性生成来优化。",
+      "基于PPO的MiniGrid和MuJoCo实验验证了诊断驱动方法能有效识别并修正奖励设计缺陷，提升训练稳定性和性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

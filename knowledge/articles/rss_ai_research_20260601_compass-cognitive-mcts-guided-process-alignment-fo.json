@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260601-014",
+  "title": "COMPASS: Cognitive MCTS-Guided Process Alignment for Safe Search Agents",
+  "source_url": "https://arxiv.org/abs/2605.30838",
+  "source_platform": "rss_ai_research",
+  "summary": "COMPASS 是一种针对大语言模型（LLM）驱动的搜索代理的安全对齐框架。它通过引入认知蒙特卡洛树搜索（MCTS）来引导过程对齐，解决多步推理和工具使用中出现的检索诱导安全退化问题。传统对齐方法难以捕捉稀疏的安全信号，且无法有效监督多步交互中的各种违规行为。COMPASS 利用 MCTS 在搜索代理的决策过程中进行安全评估和引导，从而在每一步中识别和纠正潜在的有害子查询，防止它们组合成不安全的结果。该工作首次将认知 MCTS 应用于搜索代理的安全对齐，提供了一种可解释且高效的过程监督方法，显著提升了 LLM 代理在复杂任务中的安全性。值得关注的是，它直接回应了当前 AI 安全领域的关键挑战——如何在保持代理自主性的同时确保其行为符合安全规范，对于推动 LLM 代理在金融、医疗等高风险领域的实际部署具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Alignment",
+    "MCTS"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:41:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "COMPASS 通过认知 MCTS 实现过程级安全对齐，能够实时检测并纠正多步推理中的有害子查询，优于传统的端到端对齐方法。",
+      "该方法有效解决了检索诱导安全退化问题，即无害子查询组合后可能导致不安全结果，这是 LLM 代理安全领域的关键难点。",
+      "COMPASS 提供了可解释的安全监督机制，使得代理的决策过程更加透明，有助于建立用户信任和满足监管要求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

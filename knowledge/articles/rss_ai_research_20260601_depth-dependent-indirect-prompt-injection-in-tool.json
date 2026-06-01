@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-095",
+  "title": "Depth-Dependent Indirect Prompt Injection in Tool-Calling ReAct Agents: Injection Depth, Payload Framing, and Turn-Budget Sensitivity",
+  "source_url": "https://arxiv.org/abs/2605.30686",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在工具调用型ReAct代理中存在的深度依赖间接提示注入攻击。ReAct代理通过将链式思维推理与工具调用相结合，广泛应用于日程安排、文件检索和数据访问等实际任务。其工具观察循环为攻击者提供了直接攻击面：控制任何工具返回值的攻击者可以嵌入指令，将代理从用户目标引开，这种威胁被称为间接提示注入。现有基准测试主要评估攻击成功率（ASR），但忽略了注入深度（即攻击指令在工具调用序列中的位置）、载荷框架（即攻击指令的表述方式）和轮次预算（即代理可执行的工具调用次数）对攻击效果的影响。本文通过系统实验，分析了这些因素如何影响攻击的成功率、代理行为的偏离程度以及用户目标的达成情况。研究发现，注入深度越深，攻击成功率越低；载荷框架的明确性和指令的强制性显著影响攻击效果；轮次预算的减少会降低攻击成功率，但可能增加代理行为的不可预测性。该研究为构建更安全的ReAct代理提供了重要见解，强调了在设计代理系统时需考虑这些深度依赖的威胁因素。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:47:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注入深度是影响间接提示注入攻击成功率的关键因素，攻击指令在工具调用序列中的位置越深，攻击成功率越低。",
+      "载荷框架的明确性和指令的强制性显著影响攻击效果，明确的指令和强制性的表述更容易成功引导代理偏离用户目标。",
+      "轮次预算的减少会降低攻击成功率，但可能导致代理行为更加不可预测，增加安全风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

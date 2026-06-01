@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-061",
+  "title": "The Surface You Test Is Not the Surface That Breaks",
+  "source_url": "https://arxiv.org/abs/2605.30454",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了工具增强型LLM代理在提示注入攻击下的脆弱性，特别是攻击者通过控制代理上下文中的工具描述来植入恶意指令。当前评估通常仅报告单一通道（工具输出）的攻击成功率，并将其视为模型的整体脆弱性指标。然而，作者指出工具描述本身也是攻击面，代理在每次调用工具前都会读取这些描述，因此攻击者可以利用这一通道进行注入。文章通过实验揭示了不同攻击通道（工具输出与工具描述）对模型行为的影响差异，并强调了全面评估多通道攻击面的重要性。这项研究对于理解LLM代理的安全边界、改进评估方法以及设计更鲁棒的防御策略具有关键意义，尤其值得关注的是它挑战了现有评估范式的单一性。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:44:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前LLM代理的提示注入评估仅关注工具输出通道，忽略了工具描述这一同样重要的攻击面。",
+      "攻击者可以通过控制工具描述来植入指令，代理在每次调用工具前都会读取这些描述，从而产生与工具输出注入不同的攻击效果。",
+      "多通道攻击面的评估对于全面理解模型脆弱性和设计防御策略至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

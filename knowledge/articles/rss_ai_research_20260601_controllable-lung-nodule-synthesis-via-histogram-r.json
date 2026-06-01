@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-082",
+  "title": "Controllable Lung Nodule Synthesis via Histogram-Regularized Latent Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2605.30631",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于直方图正则化潜在扩散模型的可控肺结节合成方法。针对CT肺癌筛查中标注数据稀缺的问题，现有扩散模型在条件生成时主要优化空间重建损失，这可能导致生成的结节在纹理、密度分布等关键特征上与真实结节存在差异。作者引入直方图正则化技术，在潜在空间中约束生成结节的强度分布，使其更符合真实结节的统计特性，从而提升合成数据的医学真实性和多样性。该方法在多个公开数据集上进行了验证，实验结果表明，与基线模型相比，生成的结节在视觉质量和诊断一致性上均有显著提升。这项工作为医学图像数据增强提供了新思路，尤其适用于数据稀缺场景下的模型训练，具有重要的临床应用价值。",
+  "tags": [
+    "Diffusion Model",
+    "Medical Imaging",
+    "Data Augmentation",
+    "Lung Nodule"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:46:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直方图正则化能有效约束潜在扩散模型生成结节的密度分布，提升医学真实性。",
+      "该方法解决了传统条件扩散模型因仅优化空间损失而导致的纹理失真问题。",
+      "合成数据在辅助下游诊断模型训练时，可显著缓解标注数据稀缺的瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-088",
+  "title": "LARK: Learnability-Grounded Trajectory Selection for Efficient Reasoning Distillation",
+  "source_url": "https://arxiv.org/abs/2605.30651",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 LARK 的轨迹选择方法，用于推理蒸馏任务。在推理蒸馏中，教师模型生成的推理轨迹被有选择地用作学生模型的监督信号。现有方法通常依赖于启发式规则，如轨迹质量或模型置信度，但往往忽略了轨迹是否可被学生模型学习。LARK 通过引入可学习性（learnability）作为核心选择标准，旨在选择那些学生模型能够有效学习的推理轨迹，从而提升蒸馏效率和模型性能。该方法基于对轨迹可学习性的量化评估，结合了学生模型当前能力与轨迹难度之间的匹配度。实验表明，LARK 在多个推理任务上优于传统选择策略，显著提高了学生模型的推理准确性和泛化能力。这项工作为推理蒸馏中的样本选择提供了新的理论视角和实践指导，尤其适用于需要高效利用教师知识的场景，如大语言模型的微调和知识蒸馏。",
+  "tags": [
+    "Reasoning Distillation",
+    "Trajectory Selection",
+    "Learnability",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:46:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LARK 首次将可学习性作为推理蒸馏中轨迹选择的核心标准，弥补了现有方法忽视学生模型学习能力的缺陷。",
+      "通过量化轨迹难度与学生模型当前能力的匹配度，LARK 能够更有效地筛选出对学生模型有益的监督信号。",
+      "实验结果表明，LARK 在多个推理任务上显著提升了学生模型的推理准确性和泛化能力，优于基于质量或置信度的传统选择方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

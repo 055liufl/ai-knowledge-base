@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-115",
+  "title": "Hide-and-Seek in Trajectories: Discovering Failure Signals for VLA Runtime Monitoring",
+  "source_url": "https://arxiv.org/abs/2605.30834",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“轨迹捉迷藏”的新方法，用于在视觉-语言-动作（VLA）模型执行过程中发现失败信号。VLA模型使机器人能够遵循自然语言指令并在多样化任务中泛化，但在实际部署中容易因执行失败而影响可靠性。现有失败检测方法要么依赖昂贵的动作重采样，要么需要外部模型，而本文的方法通过分析轨迹数据中的隐藏模式，无需额外计算开销即可实时检测失败。该方法的核心是训练一个轻量级分类器，从VLA模型的内部表示中提取失败信号，从而在不影响模型性能的前提下提高鲁棒性。实验表明，该方法在多个机器人任务上显著提升了失败检测的准确率，同时保持了低延迟。这项研究对于推动VLA模型在真实世界中的安全部署具有重要意义，尤其适用于需要高可靠性的应用场景，如家庭服务机器人和工业自动化。",
+  "tags": [
+    "VLA",
+    "Failure Detection",
+    "Robotics",
+    "Runtime Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:48:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需额外计算开销的VLA模型失败检测方法，通过分析轨迹中的隐藏信号实现实时监控。",
+      "该方法利用轻量级分类器从VLA模型内部表示中提取失败特征，避免了动作重采样或外部模型的依赖。",
+      "在多个机器人任务上的实验验证了该方法在提高失败检测准确率的同时保持低延迟，增强了VLA模型的部署可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-015",
+  "title": "Distilling LLM Feedback for Lean Theorem Proving",
+  "source_url": "https://arxiv.org/abs/2605.30861",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“反馈蒸馏”（Feedback Distillation）的新训练方法，旨在改进推理模型的后训练过程。传统方法如GRPO结合了监督微调和基于可验证奖励的强化学习，但存在奖励稀疏、探索受限和模式崩溃等问题。反馈蒸馏方法基于自蒸馏的最新研究，训练模型在令牌级别上匹配自身在特权信息条件下的分布。该方法通过利用模型自身的反馈来生成更密集、更有效的训练信号，从而增强模型的推理能力。论文以Lean定理证明为应用场景，展示了该方法在形式化数学推理中的有效性。这项研究值得关注，因为它提供了一种替代传统强化学习后训练的新范式，有望解决稀疏奖励和探索不足等核心挑战，对于提升大型语言模型在复杂推理任务（如数学证明、代码生成等）中的表现具有重要意义。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Distillation",
+    "Theorem Proving"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:41:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反馈蒸馏通过令牌级别的分布匹配，利用特权信息生成密集奖励信号，缓解了传统强化学习中的稀疏奖励问题。",
+      "该方法基于自蒸馏框架，无需外部奖励模型，降低了训练复杂度和计算成本。",
+      "在Lean定理证明任务上的实验表明，反馈蒸馏能有效提升模型的推理准确性和探索效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

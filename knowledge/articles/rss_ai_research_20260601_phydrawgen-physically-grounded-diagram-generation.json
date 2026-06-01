@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-001",
+  "title": "PhyDrawGen: Physically Grounded Diagram Generation from Natural Language",
+  "source_url": "https://arxiv.org/abs/2605.30512",
+  "source_platform": "rss_ai_research",
+  "summary": "PhyDrawGen 是一个从自然语言生成物理示意图的神经符号系统。现有生成模型虽然能产生视觉上合理的输出，但会系统性地产生幻觉，例如虚构力向量、忽略守恒定律和违反几何约束。PhyDrawGen 通过将语义场景理解与物理约束满足解耦来解决这一问题。其流程首先使用大型语言模型从文本中提取类型化的场景图，然后通过符号物理引擎确保生成的示意图严格遵循物理定律（如力的平衡、动量守恒等）。这项工作值得关注，因为它针对多模态生成中一个关键但被忽视的挑战——物理一致性，提出了一个结合 LLM 和符号推理的实用解决方案，有助于提升科学教育、工程文档等领域的自动化内容生成质量。",
+  "tags": [
+    "LLM",
+    "Neuro-Symbolic",
+    "Diagram Generation",
+    "Physics"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:40:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出神经符号管道，将语义理解与物理约束满足分离，有效减少物理幻觉。",
+      "利用 LLM 提取场景图，再通过符号引擎强制执行物理定律，确保生成示意图的物理正确性。",
+      "针对科学教育等需要精确物理表示的场景，提供了比纯生成模型更可靠的替代方案。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

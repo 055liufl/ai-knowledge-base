@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260601-084",
+  "title": "Score Broadcast and Decorrelation: A General Framework for Broadcast-Based Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2605.30638",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“分数广播与去相关”（Score Broadcast and Decorrelation, SBD）的通用框架，用于处理可微损失函数族中的广播式信用分配问题。该框架是误差广播与去相关（EBD）框架的扩展，后者最初针对均方误差（MSE）设定而设计。SBD 的核心思想是通过将输出信息广播到隐藏层，并利用去相关机制来消除神经元之间的冗余，从而在不依赖权重传输（weight transport）的情况下实现生物可解释的信用分配。这为神经网络的训练提供了一种比反向传播更符合生物学原理的替代方案。该工作值得关注，因为它不仅解决了生物合理性这一长期挑战，还通过理论分析和实验验证展示了其在多种损失函数（如交叉熵）下的有效性，有望推动更高效、更自然的深度学习训练方法的发展。",
+  "tags": [
+    "Credit Assignment",
+    "Biologically Plausible Learning",
+    "Backpropagation Alternative"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:46:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SBD 框架将广播式信用分配从 MSE 损失推广到一般可微损失，显著扩展了其适用范围。",
+      "通过去相关机制，SBD 有效解决了广播信号中的冗余问题，提升了学习效率和稳定性。",
+      "该工作为设计不依赖权重传输的神经网络训练算法提供了理论基础，具有重要的生物合理性意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

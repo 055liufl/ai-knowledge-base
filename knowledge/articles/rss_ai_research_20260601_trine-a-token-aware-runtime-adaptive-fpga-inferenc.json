@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-035",
+  "title": "TRINE: A Token-Aware, Runtime-Adaptive FPGA Inference Engine for Multimodal AI",
+  "source_url": "https://arxiv.org/abs/2603.22867",
+  "source_platform": "rss_ai_research",
+  "summary": "TRINE 是一种面向多模态 AI 的 FPGA 推理引擎，旨在解决嵌入式平台上混合视觉 Transformer（ViT）、卷积神经网络（CNN）、图神经网络（GNN）和 Transformer NLP 模型时因计算/内存模式差异导致的性能瓶颈。该引擎通过单一比特流实现端到端多模态推理，无需重新配置硬件。其核心创新在于将不同层统一为 DDMM（密集矩阵乘法）、SDDMM（半密集矩阵乘法）和 SpMM（稀疏矩阵乘法）形式，并映射到一种可运行时切换模式的引擎上，支持权重输出驻留架构的动态切换。TRINE 还包含配套编译器，可自动优化映射。这项工作对于在资源受限的嵌入式系统中实现实时多模态 AI 推理具有重要意义，尤其适用于自动驾驶、机器人等需要严格实时响应的场景。它通过硬件-软件协同设计，在保持灵活性的同时提升了能效和吞吐量，为多模态 AI 的硬件加速提供了新思路。",
+  "tags": [
+    "FPGA",
+    "Multimodal AI",
+    "Inference Engine",
+    "Hardware Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:42:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TRINE 通过统一层表示为 DDMM/SDDMM/SpMM 并设计模式切换引擎，实现了无需重配置的多模态推理，解决了不同模型层计算模式的异构性问题。",
+      "该引擎支持运行时在权重输出驻留架构间切换，适应不同层的计算和内存访问模式，提升了资源利用率和能效。",
+      "TRINE 针对嵌入式平台的硬实时要求，通过 FPGA 单比特流设计降低了延迟和功耗，适合自动驾驶、机器人等场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

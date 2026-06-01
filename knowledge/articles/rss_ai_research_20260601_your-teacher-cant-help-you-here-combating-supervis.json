@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260601-114",
+  "title": "Your Teacher Can't Help You Here: Combating Supervision Fidelity Decay in On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2605.30833",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并分析了在线策略蒸馏（on-policy distillation）中的一个关键瓶颈——监督保真度衰减（Supervision Fidelity Decay, SFD）。在在线策略蒸馏中，学生模型基于自身生成的轨迹，利用教师模型的token级反馈进行训练，以迁移推理能力。然而，随着学生生成的前缀长度增加，教师模型对下一个token的预测分布变得不再自信且区分度下降，导致教师依赖的修正信号（如反向KL散度）质量恶化。论文通过理论分析和实验验证了SFD的存在及其对蒸馏效果的负面影响，并可能提出缓解策略。该研究揭示了知识蒸馏中一个被忽视的维度——教师反馈的时序退化问题，对于提升大语言模型（LLM）的推理能力迁移效率具有重要价值，尤其适用于需要持续自我改进的在线学习场景。",
+  "tags": [
+    "LLM",
+    "Knowledge Distillation",
+    "On-Policy Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:48:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "监督保真度衰减（SFD）是在线策略蒸馏中教师反馈质量随学生生成序列长度增加而下降的关键问题。",
+      "SFD导致教师模型在长前缀下的预测分布变得不自信且区分度低，削弱了反向KL散度等修正信号的有效性。",
+      "该发现提示在线蒸馏算法需要设计针对长序列的教师反馈增强机制或自适应训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

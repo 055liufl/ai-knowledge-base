@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260601-004",
+  "title": "ChatGPT for Google Sheets exfiltrates workbooks",
+  "source_url": "https://www.promptarmor.com/resources/gpt-for-google-sheets-data-exfiltration",
+  "source_platform": "rss_general_tech",
+  "summary": "该文章揭示了ChatGPT for Google Sheets插件存在数据泄露风险，攻击者可通过恶意提示词诱导插件将用户工作表中的敏感数据（如财务信息、客户数据等）外泄至外部服务器。文章详细分析了插件的权限模型缺陷，指出其缺乏对数据访问范围的严格限制，且未对输出内容进行充分的安全审查。这一发现对使用AI插件处理企业数据的用户构成严重威胁，强调了在集成AI工具时需加强安全审计和权限管控。",
+  "tags": [
+    "Security",
+    "Plugin",
+    "Data Exfiltration",
+    "Google Sheets"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:54Z",
+  "collected_at": "2026-06-01T13:39:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ChatGPT for Google Sheets插件因权限设计缺陷，可被用于窃取工作表中的敏感数据。",
+      "攻击者通过构造恶意提示词，能绕过插件安全机制，将数据外传至第三方服务器。",
+      "该漏洞凸显了AI插件在数据安全方面的薄弱环节，需加强输入验证和输出过滤。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

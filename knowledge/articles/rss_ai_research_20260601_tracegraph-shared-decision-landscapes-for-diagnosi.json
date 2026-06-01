@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-026",
+  "title": "TraceGraph: Shared Decision Landscapes for Diagnosing and Improving Agent Trajectories",
+  "source_url": "https://arxiv.org/abs/2605.31308",
+  "source_platform": "rss_ai_research",
+  "summary": "TraceGraph 是一种基于图的框架，旨在解决当前智能体基准测试中评估过于简化的问题。现有评估通常将丰富的交互轨迹简化为通过率或奖励分数，忽略了轨迹中的决策过程细节。TraceGraph 通过将来自多个模型的智能体轨迹转化为共享的决策景观，为每个任务构建一个基于可观察动作-观察状态的图，并在引入模型身份之前进行池化。然后，它叠加结果信息，以诊断和改进智能体轨迹。该框架能够揭示不同模型在决策路径上的差异、瓶颈和潜在改进点，从而提供更深入的评估和优化指导。TraceGraph 的创新之处在于它利用图结构来捕捉决策过程的全局结构，使得研究人员可以直观地比较和分析不同智能体的行为模式，而不仅仅是最终结果。这对于提升智能体系统的透明度和可解释性具有重要意义，尤其适用于复杂任务中的性能诊断和迭代优化。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Graph",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:42:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TraceGraph 通过构建共享决策景观，将多模型轨迹转化为可比较的图结构，从而揭示决策路径的异同。",
+      "该框架在引入模型身份前进行状态池化，避免了模型偏见，专注于任务本身的决策空间。",
+      "通过叠加结果信息，TraceGraph 能够诊断智能体轨迹中的瓶颈和失败模式，为改进提供具体方向。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

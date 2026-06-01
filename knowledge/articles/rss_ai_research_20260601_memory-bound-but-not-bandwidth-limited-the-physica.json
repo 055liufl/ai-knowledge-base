@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-071",
+  "title": "Memory-Bound but Not Bandwidth-Limited: The Physical AI Inference Gap in Batch-1 LLM Decode",
+  "source_url": "https://arxiv.org/abs/2605.30571",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了物理AI系统（如机器人、自动驾驶汽车、具身智能体和边缘副驾驶）在运行单流、批量大小为1的自回归解码推理时面临的独特性能瓶颈。与云端大语言模型（LLM）服务不同，物理AI系统通常需要处理单个用户会话或传感器数据流，等待下一个token的生成。传统观点认为这种工作负载受限于内存带宽，即每个解码步骤需要流式传输模型权重和活跃的KV缓存，延迟应与峰值HBM带宽成比例。然而，本文通过深入分析发现，实际瓶颈并非带宽限制，而是内存访问延迟和计算效率问题。研究揭示了在batch-1解码场景下，内存访问模式、缓存利用率和计算单元利用率之间存在复杂的相互作用，导致性能远低于理论峰值。这一发现对于优化物理AI系统的实时推理具有重要意义，因为这类系统对延迟极其敏感，且通常部署在资源受限的边缘设备上。文章提出了新的性能模型和优化方向，为设计更高效的物理AI推理硬件和软件提供了理论依据。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "边缘计算",
+    "物理AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:45:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "物理AI系统的batch-1解码工作负载并非单纯受限于内存带宽，而是受内存访问延迟和计算效率的共同制约",
+      "传统的内存带宽瓶颈观点忽略了单流推理中缓存利用率和计算单元利用率的复杂交互",
+      "优化物理AI推理需要重新审视内存层次结构和计算调度策略，而非仅增加带宽"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

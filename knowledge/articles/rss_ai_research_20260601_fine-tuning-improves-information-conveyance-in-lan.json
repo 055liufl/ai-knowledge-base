@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-116",
+  "title": "Fine-Tuning Improves Information Conveyance in Language Models",
+  "source_url": "https://arxiv.org/abs/2605.30844",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Canopy Entropy (CE*) 的新度量方法，用于评估微调对大型语言模型信息传递能力的影响。传统观点认为微调会降低模型的不确定性和多样性，但现有分析忽略了输出长度这一关键混淆因素，未能捕捉整个生成过程中的不确定性分布。CE* 从树状视角看待语言生成，将“树冠”视为所有可能生成路径的空间，从而更准确地衡量微调如何改变模型的信息传递效率。实验表明，微调实际上可能提高信息传递的集中度和效率，而非简单减少多样性。这项工作对理解微调机制、优化模型训练策略具有重要意义，尤其适用于需要平衡生成质量与信息密度的应用场景。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Information Theory",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:48:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有微调分析因忽略输出长度而误解了不确定性变化，Canopy Entropy 通过树状生成视角纠正了这一偏差。",
+      "微调并非单纯降低多样性，而是可能重新分配不确定性，使信息传递更集中于高概率路径。",
+      "CE* 为评估微调效果提供了更精确的工具，有助于设计更高效的训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

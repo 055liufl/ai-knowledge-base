@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-104",
+  "title": "Chatterbox-Flash: Prior-Calibrated Block Diffusion for Streaming Zero-Shot TTS",
+  "source_url": "https://arxiv.org/abs/2605.30748",
+  "source_platform": "rss_ai_research",
+  "summary": "Chatterbox-Flash 是一种零样本文本转语音（TTS）模型，通过将预训练的自回归 TTS 解码器微调为块扩散解码器，实现了每个块内的并行令牌生成，同时保持逐块流式输出。该方法解决了将主流块扩散解码直接应用于离散语音令牌时质量下降的问题，因为长尾令牌分布会导致并行位置选择偏向少数令牌。该研究通过先验校准（Prior-Calibrated）机制来缓解这一偏差，从而在零样本场景下提升语音生成的质量和效率。Chatterbox-Flash 值得关注，因为它结合了扩散模型的并行生成优势和自回归模型的流式能力，为实时语音合成提供了新思路，尤其适用于需要低延迟和高自然度的应用场景，如虚拟助手和语音交互系统。",
+  "tags": [
+    "TTS",
+    "Diffusion",
+    "Zero-Shot",
+    "Streaming"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:47:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过块扩散解码实现并行令牌生成，同时保持逐块流式输出，平衡了效率和质量。",
+      "针对离散语音令牌的长尾分布问题，提出先验校准机制以改善并行位置选择的偏差。",
+      "在零样本TTS场景中，该方法在保持自然度的同时显著提升了生成速度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

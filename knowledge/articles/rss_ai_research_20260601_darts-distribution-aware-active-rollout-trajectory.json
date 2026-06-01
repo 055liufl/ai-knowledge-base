@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-118",
+  "title": "DARTS: Distribution-Aware Active Rollout Trajectory Shaping for Accelerating LLM Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2605.30859",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DARTS（分布感知主动展开轨迹塑造）的方法，旨在加速大型语言模型（LLM）的强化学习（RL）训练过程。在LLM的RL训练中，由于响应长度分布存在长尾现象，导致展开（rollout）效率低下。现有工作通常通过提示级别的尾部调度来缓解长尾影响，而DARTS则直接针对效率低下的根本原因——分布本身。该方法以更细粒度刻画长尾分布，识别出提示内部的长尾问题，并主动塑造展开轨迹的分布，从而减少不必要的计算开销。通过动态调整采样策略，DARTS能够在保持模型性能的同时显著提升训练速度。实验结果表明，该方法在多个基准测试中均能有效加速RL训练，并保持或提升模型质量。这项工作对于提升LLM的RL训练效率具有重要价值，尤其适用于需要大规模RL训练的复杂任务场景。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Efficiency",
+    "Distribution"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:48:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DARTS通过细粒度刻画提示内部的长尾分布，直接优化展开轨迹的分布，而非仅处理提示级别的尾部问题。",
+      "该方法主动塑造展开轨迹，减少不必要的计算开销，从而在保持模型性能的同时显著加速LLM的强化学习训练。",
+      "实验验证了DARTS在多个基准测试中的有效性，展示了其在提升训练效率方面的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

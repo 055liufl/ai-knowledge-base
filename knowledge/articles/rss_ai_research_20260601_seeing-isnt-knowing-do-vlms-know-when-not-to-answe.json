@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-069",
+  "title": "Seeing Isn't Knowing: Do VLMs Know When Not to Answer Spatial Questions (and Why)?",
+  "source_url": "https://arxiv.org/abs/2605.30557",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了视觉语言模型（VLM）在空间推理任务中的一个关键缺陷：模型往往无法识别何时缺乏足够信息来回答空间问题。作者指出，现实世界中的视觉观测存在固有限制，如遮挡导致物体不可见、透视造成几何属性误导等，但现有空间推理基准通常假设观测是充分且可靠的。论文通过设计实验，系统评估了VLM在面对不完整或误导性视觉信息时的表现，发现模型倾向于过度自信地给出错误答案，而非识别出信息不足并拒绝回答。研究进一步分析了模型失败的原因，包括对视觉线索的过度依赖、缺乏对3D空间约束的理解等。这项工作揭示了VLM在鲁棒性和可靠性方面的重大挑战，为未来改进模型的空间推理能力提供了方向。其价值在于指出了当前评估范式的盲点，并强调了构建能够识别自身知识边界的模型的重要性。",
+  "tags": [
+    "VLM",
+    "Spatial Reasoning",
+    "Robustness",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:45:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM在空间推理中常因视觉信息不完整或误导而给出错误答案，而非识别出信息不足并拒绝回答。",
+      "现有空间推理基准假设观测充分可靠，忽略了现实世界中的遮挡、透视等限制，导致评估结果高估模型能力。",
+      "模型过度依赖视觉线索，缺乏对3D空间约束和不确定性的理解，是其失败的主要原因。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

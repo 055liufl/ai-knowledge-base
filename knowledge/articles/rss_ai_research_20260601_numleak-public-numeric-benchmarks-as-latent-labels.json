@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-052",
+  "title": "NumLeak: Public Numeric Benchmarks as Latent Labels in Foundation Models",
+  "source_url": "https://arxiv.org/abs/2605.30393",
+  "source_platform": "rss_ai_research",
+  "summary": "NumLeak 是一个测量框架，旨在评估大型语言模型（LLMs）在公开数值基准上的表现是否源于记忆而非泛化能力。该研究指出，由于公开数值基准数据可能出现在预训练语料中，基于时间条件的评估可能测量的是记忆召回而非样本外技能。NumLeak 结合了生产模型上的 API 边界探测和开放因果语言模型上的白盒控制验证。实验表明，顶级前沿 LLM 在 Fama-French 市场超额收益上的 3-seed 合并 Pearson 相关系数达到 0.97-0.99，同时误差在 0.1 以内，这揭示了模型对特定数值的高度记忆。该工作对评估 LLM 的真实泛化能力具有重要警示意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Benchmark",
+    "Memorization"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:44:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "公开数值基准可能被 LLM 记忆，导致评估结果高估泛化能力",
+      "NumLeak 框架通过 API 探测和白盒验证有效检测记忆现象",
+      "顶级模型在特定数值上表现出近乎完美的记忆（r=0.97-0.99）"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

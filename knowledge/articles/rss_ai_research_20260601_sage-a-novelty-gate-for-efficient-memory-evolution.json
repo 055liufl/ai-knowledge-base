@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260601-098",
+  "title": "SAGE: A Novelty Gate for Efficient Memory Evolution in Agentic LLMs",
+  "source_url": "https://arxiv.org/abs/2605.30711",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SAGE（Spherical Adaptive Gate for memory Evolution）的新型记忆演化机制，专门针对智能体LLM（Agentic LLMs）在持续交互中如何高效管理记忆的问题。传统方法主要关注记忆的检索和存储，而忽略了写入端的控制，即如何决定新提取的事实是否应被添加、与现有记忆合并或忽略。SAGE将记忆演化视为一个新颖性检测问题，通过基于von Mises-Fisher分布的密度估计器对候选事实进行评分，从而在球面空间上自适应地控制记忆更新。该机制能够有效区分新信息与已有记忆的相似度，避免冗余存储，同时保留关键知识。这项工作值得关注，因为它解决了智能体LLM在长期交互中记忆膨胀和遗忘的关键瓶颈，为构建更高效、更持久的智能体系统提供了理论依据和实用方法。实验表明，SAGE在多个基准任务上提升了记忆利用效率和任务完成质量，具有重要的应用前景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Novelty Detection"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:47:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAGE将记忆演化重新定义为新颖性检测问题，通过球面自适应门控机制控制记忆写入，解决了传统方法忽略写入端控制的问题。",
+      "基于von Mises-Fisher分布的密度估计器能够有效评估新事实与现有记忆的相似度，从而决定是否添加、合并或忽略，减少冗余存储。",
+      "该机制在多个基准任务上提升了智能体LLM的记忆利用效率和任务完成质量，为长期交互场景下的记忆管理提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

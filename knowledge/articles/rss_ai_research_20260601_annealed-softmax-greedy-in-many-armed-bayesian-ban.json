@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260601-136",
+  "title": "Annealed Softmax Greedy in Many-Armed Bayesian Bandits",
+  "source_url": "https://arxiv.org/abs/2605.31034",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“退火软最大贪婪策略”（Annealed Softmax Greedy）的算法，专门针对多臂贝叶斯老虎机（Many-Armed Bayesian Bandits）问题。该算法通过引入退火机制，在探索与利用之间动态平衡，逐步从软最大选择过渡到贪婪选择，从而在大量臂（动作）的场景下显著提升累积奖励。研究背景源于强化学习中的可验证奖励（RLVR）和基于组的策略优化方法（如GRPO），这些方法通过采样多个完成并依据奖励更新策略，但缺乏对认知不确定性的显式追踪。本文通过理论分析和实验验证，展示了该策略在不确定性下的高效性，尤其适用于臂数量极大且奖励分布未知的复杂环境。该工作值得关注，因为它为大规模决策问题提供了一种简单而有效的启发式方法，弥补了现有策略优化方法在不确定性处理上的不足，并可能启发后续在LLM对齐、推荐系统等领域的应用。",
+  "tags": [
+    "Bandit",
+    "Reinforcement Learning",
+    "Exploration-Exploitation"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:50:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "退火软最大贪婪策略通过动态调整探索程度，有效解决了多臂老虎机中臂数量极大时的探索-利用困境。",
+      "该算法无需显式建模不确定性，而是通过退火机制隐式平衡，简化了实现并保持了理论保证。",
+      "实验表明，在大量臂场景下，该策略显著优于传统UCB和Thompson采样方法，尤其在早期阶段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

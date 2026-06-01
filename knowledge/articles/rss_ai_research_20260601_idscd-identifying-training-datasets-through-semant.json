@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260601-063",
+  "title": "idSCD: Identifying Training Datasets through Semantic Correlation Descriptors",
+  "source_url": "https://arxiv.org/abs/2605.30462",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 idSCD（语义相关描述符）的新方法，用于识别训练数据集。核心思想是：数据集在模型训练过程中会留下独特的痕迹，这些痕迹体现在模型学到的语义相关结构中。具体而言，数据集中存在的偶然规律（即对数据集有预测性但对底层任务非因果的规律）会在训练中被模型内化。基于这一洞察，作者研究了数据集级别的成员推理，超越了现有依赖模型行为的方法。该方法通过分析模型在特定输入上的语义相关模式，能够有效判断某个数据集是否被用于训练。这项工作对于理解模型训练数据的来源、检测数据泄露以及评估数据隐私具有重要价值，尤其在当前大模型训练数据来源复杂且不透明的背景下，提供了一种新的技术手段。",
+  "tags": [
+    "Membership Inference",
+    "Dataset Identification",
+    "Semantic Correlation"
+  ],
+  "author": null,
+  "published_at": "2026-06-01T13:37:56Z",
+  "collected_at": "2026-06-01T13:44:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据集在训练中会留下独特的语义相关结构痕迹，这些痕迹源于数据集中非因果的偶然规律。",
+      "idSCD 方法通过分析模型学到的语义相关描述符，实现了数据集级别的成员推理。",
+      "该方法超越了传统依赖模型行为（如损失值、输出分布）的成员推理方法，提供了新的视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
