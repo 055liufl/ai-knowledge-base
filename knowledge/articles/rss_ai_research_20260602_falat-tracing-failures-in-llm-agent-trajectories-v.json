@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-051",
+  "title": "FALAT: Tracing Failures in LLM Agent Trajectories via Dependency-Guided Search",
+  "source_url": "https://arxiv.org/abs/2606.00765",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为FALAT（Failure Attribution via Language Agent Trajectories）的方法，用于追踪LLM代理在复杂任务执行轨迹中的失败原因。LLM代理通过长轨迹（包括推理步骤、工具调用和代理间通信）解决复杂任务，但当代理失败时，往往难以确定是哪个代理导致了失败以及哪个步骤引入了关键错误。这种归因问题具有挑战性，因为错误可能在轨迹中传播：后续动作可能看起来不正确，但实际上是因为它们依赖于早期的错误。FALAT通过依赖引导的搜索机制，系统地分析代理轨迹中的依赖关系，从而定位失败的根本原因。该方法值得关注，因为它解决了LLM代理可解释性和调试中的关键痛点，有助于提升代理系统的可靠性和开发效率。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Failure Attribution",
+    "Debugging"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:11:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FALAT通过依赖引导搜索，有效定位LLM代理轨迹中的失败根源，解决了错误传播导致的归因难题。",
+      "该方法适用于多代理协作场景，能够区分不同代理和步骤的贡献，提升系统可解释性。",
+      "FALAT为LLM代理的调试和优化提供了系统化工具，有助于减少开发中的试错成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

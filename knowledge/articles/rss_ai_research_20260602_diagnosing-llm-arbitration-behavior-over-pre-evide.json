@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-075",
+  "title": "Diagnosing LLM Arbitration Behavior over Pre-evidence Epistemic States in RAG-based Fact-Checking",
+  "source_url": "https://arxiv.org/abs/2606.01120",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一个名为PAVE（Prior-Aware Verifier Evaluation）的评估框架，用于系统性地分析基于检索增强生成（RAG）的事实核查系统中，大型语言模型（LLM）在证据呈现前的认知状态（即先验知识倾向）与检索到的上下文证据之间的仲裁行为。现有评估方法未能刻画这种先验-上下文差异，也无法衡量验证器如何在参数化知识与上下文信号之间进行权衡。PAVE通过设计一系列诊断任务，量化LLM在面对与自身先验知识一致或冲突的证据时的决策偏差，从而揭示其在事实核查中的可靠性、鲁棒性以及潜在的偏见。该研究对于理解LLM在RAG系统中的行为、改进事实核查系统的设计以及提升AI系统的可信度具有重要意义，尤其关注了模型如何管理内部知识与外部证据之间的冲突。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Fact-Checking",
+    "Evaluation Framework"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:12:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有RAG事实核查评估忽略了LLM先验知识与检索证据之间的潜在冲突，PAVE框架首次系统性地量化了这种仲裁行为。",
+      "LLM在事实核查中可能因过度依赖参数化知识而忽视或扭曲检索到的证据，导致决策偏差，PAVE能够诊断此类问题。",
+      "该框架通过设计先验-上下文一致性/冲突场景，为评估和提升LLM作为验证器的鲁棒性提供了新方法论。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

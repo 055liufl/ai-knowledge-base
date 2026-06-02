@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-026",
+  "title": "The Deterministic Horizon: When Extended Reasoning Fails and Tool Delegation Becomes Necessary",
+  "source_url": "https://arxiv.org/abs/2606.00376",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了扩展链式思维推理在确定性状态跟踪任务中的性能退化问题，指出其根本原因并非偏好偏差，而是解码器仅注意力机制的信息论容量限制。作者提出了注意力瓶颈定理，并给出了可达性构造，将状态跟踪容量界定为 O(H · log(L/H) · √d_h)。此外，论文还建立了一个上下文相关的错误模型，该模型导致超指数级的错误增长。这项工作揭示了当前大型语言模型在需要精确状态跟踪的推理任务中的根本性局限，强调了工具委托（如使用外部记忆或符号计算）的必要性，为未来模型设计和推理策略提供了重要理论指导。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Attention",
+    "Information Theory"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:09:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩展推理在确定性任务中因注意力瓶颈而失效，而非偏好偏差。",
+      "注意力瓶颈定理界定了状态跟踪容量的理论上限。",
+      "上下文相关错误模型导致超指数级错误增长，凸显工具委托的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

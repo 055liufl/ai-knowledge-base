@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-068",
+  "title": "TriLens: Per-Layer Logit-Lens Entropy for White-Box Hallucination Detection",
+  "source_url": "https://arxiv.org/abs/2606.01033",
+  "source_platform": "rss_ai_research",
+  "summary": "TriLens 是一种用于检测大语言模型幻觉的白盒检测方法。其核心思想是，当模型产生幻觉时，虽然最终输出是错误的，但模型内部不同层和注意力头在推理过程中的不确定性、收敛速度以及竞争性延续的承诺程度会存在差异。TriLens 通过在每个层读取多头自注意力输出，并利用 logit-lens 机制计算每层的熵，从而构建一个紧凑的表示来捕捉这些内部信号。该方法无需额外训练，仅需一次前向传播即可实现幻觉检测。该论文值得关注，因为它提供了一种高效、可解释的幻觉检测方案，能够深入模型内部进行诊断，对于提升 LLM 的可靠性和安全性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "White-Box",
+    "Logit-Lens"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:12:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TriLens 通过分析模型每层的 logit-lens 熵来检测幻觉，无需额外训练或多次推理。",
+      "该方法利用模型内部不同层和注意力头在推理过程中的不确定性差异作为检测信号。",
+      "作为白盒方法，TriLens 提供了对模型内部状态的直接可解释性，有助于理解幻觉产生的机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

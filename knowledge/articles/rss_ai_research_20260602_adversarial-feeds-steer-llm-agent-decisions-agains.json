@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-059",
+  "title": "Adversarial Feeds Steer LLM Agent Decisions Against Their Defaults",
+  "source_url": "https://arxiv.org/abs/2606.00914",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的攻击向量：通过操纵LLM代理在行动前读取的排名外部信息流（如社交媒体动态、搜索结果、检索上下文和邮件队列），来引导代理偏离其默认决策。作者设计了一个受控协议，固定模型、角色、主题和最终决策提示，仅改变代理读取的信息排名，从而证明对抗性信息流可以有效改变LLM代理的行为。这项研究揭示了当前安全评估中的一个重大盲点：大多数测试只关注模型或用户提示的隔离安全性，而忽略了上游排名器（决定代理行动前阅读内容）的潜在风险。论文通过实验展示了对抗性信息流如何使代理做出与其默认设置相悖的决策，强调了在部署LLM代理时，必须将信息流排名纳入安全考量。这项工作对于理解LLM代理在实际应用中的脆弱性具有重要价值，尤其是在社交媒体、搜索引擎和邮件系统等依赖排名信息的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:11:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM代理的安全评估忽视了上游排名器的影响，对抗性信息流可以操纵代理决策。",
+      "通过固定模型和提示，仅改变信息排名即可显著改变代理行为，揭示了新的攻击面。",
+      "该研究强调了在部署LLM代理时，必须考虑外部信息流的排名安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

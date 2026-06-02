@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260602-032",
+  "title": "EnergyMamba: An Uncertainty-Aware Graph-Enhanced Selective State Space Model for Energy Consumption Prediction",
+  "source_url": "https://arxiv.org/abs/2606.00506",
+  "source_platform": "rss_ai_research",
+  "summary": "EnergyMamba 是一种基于不确定性感知的图增强选择性状态空间模型，用于能源消耗预测。该研究针对现有方法的两大局限：一是将能源消耗预测视为纯时间序列问题，忽略了不同区域间的空间依赖关系；二是未能提供预测的不确定性估计。EnergyMamba 通过引入图神经网络（GNN）来建模区域间的空间关联，并结合选择性状态空间模型（SSM）处理时间序列动态，同时利用不确定性感知机制量化预测的置信度。该模型在多个真实数据集上表现出优于传统时间序列模型（如LSTM、Transformer）和纯SSM方法的性能，尤其在多步预测和异常检测场景中具有显著优势。这项工作值得关注，因为它将图结构学习与状态空间模型结合，解决了能源领域的关键预测挑战，同时提供了不确定性量化，增强了模型在实际应用中的可靠性和可解释性。",
+  "tags": [
+    "Energy Prediction",
+    "State Space Model",
+    "Graph Neural Network",
+    "Uncertainty Quantification"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:09:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过图神经网络显式建模区域间空间依赖，弥补了传统时间序列方法在能源预测中的结构缺失。",
+      "引入不确定性感知机制，提供预测置信度估计，增强了模型在决策支持中的实用性。",
+      "选择性状态空间模型（SSM）在长序列建模中展现出比Transformer更高的计算效率与性能。",
+      "在多个真实能源数据集上验证，多步预测和异常检测场景下显著优于现有基线模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

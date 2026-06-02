@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260602-037",
+  "title": "PropLLM: Propagation-Aware Scene Reconstruction for Network Fault Diagnosis",
+  "source_url": "https://arxiv.org/abs/2606.00582",
+  "source_platform": "rss_ai_research",
+  "summary": "PropLLM 提出了一种基于传播感知的场景重建方法，用于网络故障诊断。传统方法（包括基于规则、机器学习和大型语言模型）通常将告警集一次性映射到诊断结果，忽略了故障沿拓扑和协议依赖逐层传播的特性，导致根因故障与终端症状之间的对应关系模糊。PropLLM 通过显式建模故障传播链，利用 LLM 的推理能力，结合场景重建技术，从观察到的症状告警逆向推断出故障传播路径和根因。该方法在多个网络故障数据集上展示了优于现有方法的诊断准确性和可解释性，为网络运维中的根因分析提供了新的思路。值得关注的是，它融合了传播模型与 LLM 的语义理解能力，解决了传统方法在复杂网络拓扑中难以处理的多层传播问题，具有实际部署潜力。",
+  "tags": [
+    "LLM",
+    "Network Fault Diagnosis",
+    "Root Cause Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:10:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PropLLM 通过显式建模故障沿拓扑和协议依赖的传播链，解决了传统单次映射方法无法区分相似终端症状的问题。",
+      "该方法结合 LLM 的推理能力与场景重建技术，从告警集逆向推断故障传播路径和根因，提升了诊断准确性和可解释性。",
+      "在多个网络故障数据集上的实验表明，PropLLM 优于现有基于规则、ML 和 LLM 的方法，具有实际部署价值。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

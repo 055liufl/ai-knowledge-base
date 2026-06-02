@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-031",
+  "title": "TAPS: Target-Aware Prefix Tree Selection for Diffusion-Drafted Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2606.00487",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TAPS（Target-Aware Prefix Tree Selection）的新方法，用于优化扩散模型驱动的推测解码中的验证效率。在推测解码中，扩散模型通过一次前向传播并行预测多个未来位置的 token，从而大幅降低草稿生成延迟。然而，这导致瓶颈转移到验证阶段：验证单一序列会限制接受长度，而验证大型草稿树则会带来过高的目标模型延迟。现有方法在草稿树生成与目标模型验证之间存在关键不匹配。TAPS 通过引入目标感知的前缀树选择机制，动态选择最可能被目标模型接受的草稿路径，从而在保持高接受率的同时显著减少验证开销。该方法在多个语言模型基准测试上取得了加速比提升，展示了其在加速推理方面的实用价值。这项工作值得关注，因为它针对推测解码中的实际瓶颈提供了创新解决方案，有望推动扩散模型在实时应用中的部署。",
+  "tags": [
+    "Speculative Decoding",
+    "Diffusion Model",
+    "Inference Acceleration",
+    "Prefix Tree"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:09:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散模型在推测解码中通过并行草稿生成降低了延迟，但验证阶段成为新瓶颈。",
+      "TAPS 通过目标感知的前缀树选择，动态优化草稿路径，减少验证开销。",
+      "该方法在多个基准测试上实现了显著的推理加速，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

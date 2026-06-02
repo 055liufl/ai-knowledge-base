@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260602-054",
+  "title": "Mitigating Hallucinations in Large Language Models Via Decoder Layer Skipping",
+  "source_url": "https://arxiv.org/abs/2606.00819",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型语言模型（LLM）中的幻觉问题，提出了一种名为DeLask（Decoder Layer Skipping）的解码层跳过方法。作者通过逐层分析解码过程，发现幻觉往往源自较深的解码器层。基于这一发现，DeLask在解码过程中动态跳过这些深层，从而减少幻觉输出。该方法无需额外训练或修改模型参数，仅通过调整推理时的解码策略即可实现。实验表明，DeLask在多个基准测试中有效降低了幻觉率，同时保持了生成文本的流畅性和准确性。这项工作为缓解LLM幻觉提供了一种轻量级、即插即用的解决方案，具有较高的实用价值。",
+  "tags": [
+    "LLM",
+    "Hallucination",
+    "Decoding Strategy"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:11:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "幻觉主要源于LLM解码过程中的深层解码器层，而非浅层。",
+      "DeLask通过动态跳过深层解码器层来减少幻觉，无需重新训练模型。",
+      "该方法在多个基准测试中有效降低了幻觉率，且不影响生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

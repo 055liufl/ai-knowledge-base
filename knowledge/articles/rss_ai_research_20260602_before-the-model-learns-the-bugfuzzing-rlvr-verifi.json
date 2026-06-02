@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-073",
+  "title": "Before the Model Learns the Bug:Fuzzing RLVR Verifiers",
+  "source_url": "https://arxiv.org/abs/2606.01066",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对强化学习可验证奖励（RLVR）中验证器缺陷的轻量级模糊测试框架。RLVR通过可执行的奖励函数（如数学答案检查器、JSON工具调用验证器、代码单元测试工具）替代人类偏好标签，将奖励部分视为软件工件。然而，如果验证器存在错误，优化过程可能会学习到这些错误，导致模型行为异常。该框架通过生成对抗性完成序列，比较有缺陷和无缺陷验证器的输出，自动发现验证器中的逻辑错误。这项工作揭示了RLVR系统中一个被忽视的安全隐患，即验证器作为软件组件可能引入的漏洞，并提供了实用的检测工具。它对于提升基于RLVR的强化学习系统的鲁棒性和可靠性具有重要意义，尤其是在需要精确奖励信号的复杂任务中。",
+  "tags": [
+    "RLVR",
+    "Fuzzing",
+    "Reinforcement Learning",
+    "Verifier"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:12:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR中的验证器作为软件工件，其错误会被优化过程学习，导致模型行为偏离预期。",
+      "提出了轻量级模糊测试框架，通过生成对抗性完成序列自动发现验证器缺陷。",
+      "该工作强调了在RLVR系统中进行验证器鲁棒性测试的必要性，为安全强化学习提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

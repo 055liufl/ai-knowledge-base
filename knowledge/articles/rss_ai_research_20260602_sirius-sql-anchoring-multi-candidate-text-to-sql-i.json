@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260602-087",
+  "title": "SIRIUS-SQL: Anchoring Multi-Candidate Text-to-SQL in Execution Feedback",
+  "source_url": "https://arxiv.org/abs/2606.01246",
+  "source_platform": "rss_ai_research",
+  "summary": "SIRIUS-SQL 是一种针对复杂数据库模式下的 Text-to-SQL 任务的新方法。现有系统通过生成多个 SQL 候选并利用投票机制来过滤错误，但该方法存在三个耦合弱点：单一生成器采样导致候选冗余、对所有非正确执行结果采用通用修正、以及投票机制无法区分不同候选的失败原因。SIRIUS-SQL 通过引入执行反馈来锚定多候选生成过程，具体包括：利用执行结果（如错误类型、超时等）对候选进行差异化修正，并基于反馈动态调整生成策略，从而减少冗余并提高最终 SQL 的准确性。该方法在多个基准数据集上取得了显著改进，尤其在高复杂度模式上表现突出。这项研究值得关注，因为它直接解决了当前 Text-to-SQL 系统在实际部署中的关键瓶颈——多候选生成的质量和效率问题，通过将执行反馈融入生成循环，实现了更鲁棒和自适应的 SQL 生成，对数据库交互、自然语言接口等应用具有重要价值。",
+  "tags": [
+    "Text-to-SQL",
+    "Execution Feedback",
+    "Multi-Candidate Generation"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:13:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SIRIUS-SQL 通过执行反馈（如错误类型、超时）差异化修正候选 SQL，解决了通用修正的不足。",
+      "该方法利用反馈动态调整生成策略，减少了单一生成器采样导致的候选冗余问题。",
+      "在复杂数据库模式上，SIRIUS-SQL 显著提升了多候选生成的质量和最终 SQL 的准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

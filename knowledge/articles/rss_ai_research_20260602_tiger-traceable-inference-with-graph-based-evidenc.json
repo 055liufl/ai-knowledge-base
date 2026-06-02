@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-014",
+  "title": "TIGER: Traceable Inference with Graph-Based Evidence Routing for Mitigating Hallucinations in Multimodal Generation",
+  "source_url": "https://arxiv.org/abs/2606.00232",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为TIGER（Traceable Inference with Graph-Based Evidence Routing）的新方法，用于缓解多模态生成中的幻觉问题。与现有推理时修复方法不同，TIGER专注于事实级别的修复，即生成流畅但包含与输入不符的具体事实的输出。现有方法通常通过联合条件化输入和当前输出来生成反馈，这存在两个主要限制：输出中的幻觉声明可能偏置模型对输入的解释，且自由形式的反馈无法在事实级别进行排序或调度。TIGER通过构建基于图的证据路由机制，实现了可追踪的推理过程，能够识别并修复输出中的具体事实错误。该方法在多个多模态生成任务上进行了评估，显著降低了幻觉率，同时保持了输出的流畅性和相关性。这项研究值得关注，因为它直接针对多模态生成中的关键挑战——事实准确性，提供了一种结构化、可解释的解决方案，有望提升AI系统在视觉问答、图像描述等应用中的可靠性。",
+  "tags": [
+    "Multimodal Generation",
+    "Hallucination Mitigation",
+    "Graph-Based Reasoning",
+    "Fact-Level Repair"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:08:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有推理时修复方法因联合条件化输入和输出，易受输出中幻觉声明的偏见影响，且无法进行事实级别的反馈排序。",
+      "TIGER通过图结构证据路由实现可追踪推理，能够精确识别并修复多模态生成中的具体事实错误。",
+      "该方法在多个基准测试中有效降低幻觉率，同时保持生成内容的流畅性和相关性，为多模态系统的可靠性提供了新路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260602-113",
+  "title": "Evidence-Gated LLM Priors for Multi-Objective Bayesian Optimization",
+  "source_url": "https://arxiv.org/abs/2606.01730",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“证据门控LLM先验”的新方法，用于多目标贝叶斯优化。核心挑战在于，大型语言模型（LLM）作为黑箱优化的启发式顾问时，其建议和置信度与下游目标值并不一定校准，尤其是在多目标场景下，不同目标可能需要不同的专家知识，LLM可能对某个目标有用但对另一个目标产生误导。该方法通过引入一个证据门控机制，动态评估LLM先验对每个优化目标的有效性，从而在贝叶斯优化框架中自适应地融合或忽略LLM的建议。这解决了多目标优化中LLM先验的可靠性问题，提高了优化效率和最终解的质量。该工作值得关注，因为它将LLM的语义理解能力与贝叶斯优化的数学严谨性相结合，为复杂多目标优化问题提供了新的解决思路，特别是在需要领域知识但难以建模的场景中具有重要应用价值。",
+  "tags": [
+    "LLM",
+    "Bayesian Optimization",
+    "Multi-Objective Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:15:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM作为先验在多目标贝叶斯优化中可能对部分目标有效但对其他目标产生误导，需要动态校准。",
+      "证据门控机制能够根据每个优化目标的证据质量自适应地决定是否采纳LLM先验，提升优化鲁棒性。",
+      "该方法将LLM的语义知识与贝叶斯优化的统计框架结合，为复杂黑箱优化问题提供了新的范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

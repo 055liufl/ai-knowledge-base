@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-122",
+  "title": "CAPF: Guiding Search-Agent Rollouts with Credit-Attenuated Privileged Feedback",
+  "source_url": "https://arxiv.org/abs/2606.01830",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CAPF（Credit-Attenuated Privileged Feedback）的方法，旨在解决大型语言模型（LLM）搜索代理在强化学习中的稀疏奖励问题。在复杂推理任务中，LLM搜索代理通常使用基于可验证奖励的强化学习（RLVR）从结果奖励中学习搜索增强推理。然而，对于困难问题，代理很少能采样到端到端成功的轨迹，导致RLVR只能获得极少的正奖励轨迹。CAPF通过利用验证器侧已有的信息，在训练过程中提供额外的引导信号，从而改善学习效果。具体而言，CAPF引入了一种信用衰减机制，对中间搜索步骤的奖励进行衰减分配，使得代理能够从部分成功的搜索路径中学习，而不仅仅依赖最终结果。该方法在数学推理和代码生成等需要多步搜索的基准测试上取得了显著改进，展示了在稀疏奖励环境下提升LLM搜索代理性能的潜力。这项研究对于强化学习、LLM推理和搜索代理领域具有重要价值，因为它提供了一种实用且高效的解决方案来应对困难问题中的学习瓶颈。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Search Agent",
+    "Sparse Reward"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:15:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAPF通过信用衰减机制，从验证器侧信息中提取中间奖励信号，有效缓解了LLM搜索代理在困难问题上的稀疏奖励问题。",
+      "该方法不依赖额外的标注数据或模型修改，仅利用RLVR中已有的验证器信息，具有较好的实用性和可扩展性。",
+      "实验表明，CAPF在数学推理和代码生成等需要多步搜索的任务上显著提升了代理的成功率和学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260602-033",
+  "title": "Threshold-Based Exclusive Batching for LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.00516",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于阈值的独占批处理（Threshold-Based Exclusive Batching, TEB）方法，用于优化大语言模型（LLM）推理中的调度策略。当前主流的混合批处理（Mixed Batching, MB）通过将预填充（prefill）和解码（decode）阶段交错在同一批次中，以最大化计算和内存利用率。然而，通过控制实验发现，预填充与解码之间的干扰会导致MB的每步边际成本高于纯解码阶段。在高带宽H200（4.8 TB/s）上，这种干扰仅在解码令牌数量超过特定阈值时出现。TEB通过动态设置阈值，在解码令牌数超过阈值时切换到独占批处理模式，从而减少干扰，提升推理效率。该方法在保持高吞吐量的同时，显著降低了延迟，尤其适用于高并发或长序列推理场景。该研究为LLM推理系统的调度优化提供了新思路，具有实际部署价值。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Scheduling",
+    "Batch Processing"
+  ],
+  "author": null,
+  "published_at": "2026-06-02T12:04:59Z",
+  "collected_at": "2026-06-02T12:09:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合批处理中预填充与解码的干扰会导致边际成本增加，影响推理效率。",
+      "基于阈值的独占批处理通过动态切换模式，有效减少干扰，优化延迟和吞吐量。",
+      "该方法在高带宽硬件（如H200）上表现显著，适用于高并发或长序列推理场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
