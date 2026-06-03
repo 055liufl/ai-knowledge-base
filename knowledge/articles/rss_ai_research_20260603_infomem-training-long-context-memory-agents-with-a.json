@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-042",
+  "title": "InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain",
+  "source_url": "https://arxiv.org/abs/2606.03329",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 InfoMem 的新型训练框架，用于增强长上下文 LLM 的记忆代理能力。该框架通过引入基于答案条件信息增益的密集奖励信号，解决了现有强化学习方法中奖励稀疏或仅依赖词汇匹配的问题。InfoMem 的核心创新在于：在训练过程中，代理在读取文档块时，每一步的奖励不仅取决于最终答案的正确性，还取决于当前记忆状态相对于最终答案的信息增益。具体来说，代理需要学习如何选择性地更新记忆，使得记忆内容能够最大化对最终答案的预测能力。实验表明，InfoMem 在多个长上下文问答基准（如 NarrativeQA、QMSum 和 LongBench）上显著优于现有方法，包括基于 RL 的基线模型和直接使用长上下文 LLM 的方法。该工作对于提升 LLM 在长文档、多轮对话等场景下的信息检索与推理能力具有重要意义，为构建更高效、更准确的长上下文代理提供了新的训练范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "RL"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:47:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "InfoMem 通过答案条件信息增益提供密集奖励，解决了长上下文记忆代理训练中奖励稀疏的问题。",
+      "该方法使代理能够学习选择性更新记忆，最大化记忆对最终答案的预测能力。",
+      "在多个长上下文基准上，InfoMem 显著优于现有 RL 基线和直接使用长上下文 LLM 的方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260603-051",
+  "title": "Cross-Lingual Token Arbitrage: Optimizing Code Agent Context Windows via Local LLM Preprocessing",
+  "source_url": "https://arxiv.org/abs/2606.03618",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“跨语言令牌套利”的新方法，通过在本地LLM预处理阶段优化代码代理的上下文窗口，以解决AI辅助编码代理中因输入令牌成本过高导致的瓶颈问题。该方法针对非英语文本的令牌化低效和对话提示中的结构熵两大病理，提出了一种预飞行、边缘侧的提示重写中间件，该中间件在开发者与云端模型之间运行，通过本地LLM对原始输入进行预处理，将非英语文本高效转换为令牌化更优的表示，并压缩冗余结构，从而在不牺牲语义完整性的前提下显著降低令牌消耗。该工作值得关注，因为它直接针对实际部署中的成本痛点，提供了一种轻量级、可落地的解决方案，有望提升多语言环境下代码代理的经济性和效率，同时为边缘计算与LLM协同提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Code Generation",
+    "Token Optimization",
+    "Edge Computing"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:48:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过本地LLM预处理，将非英语文本高效转换为令牌化更优的表示，可显著降低输入令牌成本。",
+      "该方法采用预飞行、边缘侧架构，在开发者与云端模型之间插入中间件，实现主动压缩而非事后干预。",
+      "针对对话提示中的结构熵进行压缩，在不损失语义的前提下减少冗余令牌。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-056",
+  "title": "Diagnosing Knowledge Gaps in LLM Tool Use: An Agentic Benchmark for Novel API Acquisition",
+  "source_url": "https://arxiv.org/abs/2606.03657",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了NovelAPIB，一个用于评估大语言模型（LLM）在代码生成中处理全新API能力的基准测试。与现有静态基准不同，NovelAPIB专注于模型在预训练数据中未出现的真实API，要求模型不仅记忆函数名，还需协调签名、模块路径、输入输出契约、语义和可执行使用模式。该基准通过细粒度诊断指标，系统性地评估模型在API获取、理解与正确使用上的知识缺口。其创新点在于使用真实但新颖的API，避免了合成API的局限性，并提供了更细致的错误分析。这项工作对于提升LLM在动态软件生态中的实用性和可靠性具有重要意义，尤其适用于需要频繁集成新库或API的开发场景。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "API",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:48:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有API基准多依赖静态或合成API，无法反映真实库演化中的知识缺口。",
+      "NovelAPIB通过细粒度指标诊断模型在签名、语义、使用模式等多维度的失败原因。",
+      "该基准强调模型需具备从文档或上下文中主动获取并应用新API知识的能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

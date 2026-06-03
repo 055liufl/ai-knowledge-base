@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-127",
+  "title": "Do Neural Retrievers Prefer Certain Documents? Evidence of Learned Relevance Priors",
+  "source_url": "https://arxiv.org/abs/2606.02814",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了神经检索器（neural retrievers）在训练过程中是否隐式地学习了文档级别的相关性先验（relevance prior），即一种与查询无关的信号，体现在文档的表示中。作者指出，标注协议可能并非纯粹反映相关性，因为标注者只选择部分文档进行标注，这种选择可能偏向某些文档类型。通过实验，他们发现监督式双编码器检索器确实会编码这种先验，导致检索结果偏向于训练数据中更常见的文档类型，即使这些文档与查询的实际相关性较低。这项工作揭示了检索模型中的潜在偏差，对信息检索系统的公平性和准确性有重要影响，值得关注因为它挑战了传统假设，即检索器仅学习查询-文档相关性，并提示需要更谨慎地设计标注数据集和训练过程。",
+  "tags": [
+    "Neural Retrieval",
+    "Bias",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:53:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "神经检索器在训练中会隐式学习文档级别的相关性先验，即与查询无关的文档表示偏差。",
+      "标注协议的选择性标注导致模型偏向于训练数据中更常见的文档类型，影响检索公平性。",
+      "该发现挑战了检索器仅学习查询-文档相关性的传统观点，提示需要重新评估训练数据设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

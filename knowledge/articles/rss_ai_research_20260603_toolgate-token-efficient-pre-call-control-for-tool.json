@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-019",
+  "title": "ToolGate: Token-Efficient Pre-Call Control for Tool-Augmented Vision-Language Agents",
+  "source_url": "https://arxiv.org/abs/2606.03054",
+  "source_platform": "rss_ai_research",
+  "summary": "ToolGate 是一篇关于工具增强型视觉语言代理（VLM）的论文，提出了一个“预调用控制”机制，旨在解决代理在执行感知工具调用（如OCR、检测、分割）时的高成本和冗余问题。在ReAct风格的VLM代理中，代理会提出工具调用，但并非所有调用都是必要的。ToolGate 通过一个轻量级的门控机制，在工具调用执行前判断是否跳过，从而减少不必要的计算开销和上下文污染。论文在五个基准测试上验证了该方法，发现基线代理存在大量冗余调用，而ToolGate 能显著提升效率，同时保持或提升任务性能。这项工作对于降低多模态代理的推理成本、提高实时应用效率具有重要意义，尤其适用于需要频繁调用外部工具的视觉问答、机器人导航等场景。",
+  "tags": [
+    "VLM",
+    "Tool-Augmented Agents",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:46:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出预调用控制机制，在工具执行前判断是否跳过，减少不必要的计算和上下文开销。",
+      "在五个基准测试中，基线代理存在大量冗余工具调用，ToolGate 能有效过滤。",
+      "该方法在保持或提升任务性能的同时，显著降低推理成本，适用于实时多模态应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

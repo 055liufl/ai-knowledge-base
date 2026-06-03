@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-104",
+  "title": "CARVE: Certified Affordable Repair of Vetoed Maneuvers via Envelopes for Interactive Driving",
+  "source_url": "https://arxiv.org/abs/2606.02641",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CARVE（Certified Affordable Repair of Vetoed Maneuvers via Envelopes）的交互式驾驶安全框架，旨在解决自动驾驶系统中规则感知堆栈容易忽略的一种失效模式：即使非优先代理（如其他车辆）通过微小的合法让步即可恢复可行性，但硬规则边界仍可能对自车候选轨迹给出负值。现有方法如规则手册、安全盾和可达性过滤器擅长否决不安全动作，而基于预测的规划器则建模可能的响应，但两者都无法在运行时提供静态证明对象来保证修复后的机动是安全的。CARVE通过引入“包络”（envelope）概念，对否决的机动进行可负担的认证修复，在保持安全性的同时避免过度保守。该工作结合了形式化验证与交互式规划，为自动驾驶安全决策提供了新的理论工具。值得关注的是，它填补了规则否决与预测规划之间的空白，使得系统能够在复杂交互场景中动态生成可证明安全的替代方案，对提升自动驾驶在城市场景中的鲁棒性和可解释性具有重要意义。",
+  "tags": [
+    "Autonomous Driving",
+    "Safety Verification",
+    "Interactive Planning",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:52:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CARVE通过包络机制对否决的机动进行认证修复，解决了硬规则边界与非优先代理合法让步之间的冲突。",
+      "该方法在运行时生成静态证明对象，确保修复后的机动安全，弥补了现有规则否决与预测规划之间的空白。",
+      "CARVE避免了过度保守，提升了自动驾驶在交互场景中的鲁棒性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

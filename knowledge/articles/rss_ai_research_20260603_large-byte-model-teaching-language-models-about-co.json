@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260603-129",
+  "title": "Large Byte Model: Teaching Language Models About Compiled Code",
+  "source_url": "https://arxiv.org/abs/2606.02834",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了首个字节原生的大语言模型（Large Byte Model），旨在直接处理可执行程序的原始字节表示，无需通过反汇编等昂贵且易错的工具将其提升为汇编等高级表示。传统LLM无法处理原始字节并回答相关问题，而该模型通过定制的字节分词器扩展词汇表，实现了对编译代码的字节级理解。这一创新对于恶意软件分析、逆向工程等领域具有重要价值，因为它能直接分析二进制文件，避免了传统工具链的误差和开销。论文展示了模型在字节级任务上的能力，如代码分类、漏洞检测等，为LLM在安全领域的应用开辟了新方向。",
+  "tags": [
+    "LLM",
+    "Byte-level Model",
+    "Malware Analysis",
+    "Binary Code Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:53:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次提出字节原生LLM，可直接处理原始可执行字节，无需反汇编等中间表示。",
+      "通过定制字节分词器扩展词汇表，使模型能够理解和生成关于编译代码的响应。",
+      "在恶意软件分析等任务中具有显著优势，可降低工具链误差和计算开销。",
+      "为LLM在二进制代码理解领域开辟了新的研究方向，具有实用潜力。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

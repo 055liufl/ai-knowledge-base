@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-102",
+  "title": "Sparse-View Lung Nodule Volumetry from Digitally Reconstructed Radiographs via AReT: Anatomy-Regularized TensoRF",
+  "source_url": "https://arxiv.org/abs/2606.02639",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次识别并解决了TensoRF在X射线衰减场应用中的一个未报道的失败模式：默认的密度偏移量-10（最初为RGB场景重建引入）会抑制密度梯度，导致稀疏视图医学重建失败。通过将密度偏移量设为零，恢复了梯度流动，实现了肺部结节的稳定体积重建。论文提出了AReT（解剖正则化TensoRF）方法，结合解剖先验正则化，显著提升了稀疏视图下肺结节体积测量的准确性。这项工作对于医学影像分析领域具有重要意义，因为它解决了现有神经辐射场技术在医学应用中一个关键的技术障碍，使得在有限视角下进行高精度三维重建成为可能，有望改善肺癌早期筛查和诊断的准确性。",
+  "tags": [
+    "TensoRF",
+    "医学影像",
+    "三维重建",
+    "肺结节"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:51:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TensoRF在X射线衰减场中的默认密度偏移量-10是导致稀疏视图医学重建失败的根本原因，将其设为零可恢复梯度流动。",
+      "AReT方法通过解剖正则化，在稀疏视图下实现了稳定的肺结节体积重建，提升了体积测量的准确性。",
+      "该研究揭示了神经辐射场技术从RGB场景迁移到医学应用时需注意的关键参数调整，为后续医学三维重建研究提供了重要参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

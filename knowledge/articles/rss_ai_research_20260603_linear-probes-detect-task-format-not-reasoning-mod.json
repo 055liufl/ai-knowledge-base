@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-139",
+  "title": "Linear Probes Detect Task Format, Not Reasoning Mode in Language Model Hidden States",
+  "source_url": "https://arxiv.org/abs/2606.02907",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文通过线性探针实验，质疑了大型语言模型（LLM）隐藏状态中不同推理类型（演绎、归纳、溯因）具有独特表征的普遍观点。研究者在Qwen3-14B模型的第32层（共40层）上，对LogiQA 2.0（演绎推理）、ARC-Challenge（归纳推理）和αNLI（溯因推理）三个基准数据集进行了线性探针测试。结果显示，线性探针在交叉验证中达到了100%的准确率，且隐藏状态几何结构高度分离。然而，作者进一步分析发现，这种分离并非源于推理模式的差异，而是由于任务格式（如问题表述、答案选项结构等）的差异所致。该研究对当前LLM可解释性研究中广泛使用的线性探针方法提出了重要警示，指出其可能捕捉的是表面任务格式特征而非深层认知过程。这一发现对于理解LLM内部表征的本质、改进可解释性方法以及避免过度解读模型推理能力具有重要意义。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Linear Probe",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:54:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性探针在LLM隐藏状态中达到100%准确率，但分离的是任务格式而非推理模式",
+      "当前广泛使用的线性探针方法可能高估了模型对推理类型的表征能力",
+      "研究警示需谨慎解释基于线性探针的LLM内部表征分析结果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

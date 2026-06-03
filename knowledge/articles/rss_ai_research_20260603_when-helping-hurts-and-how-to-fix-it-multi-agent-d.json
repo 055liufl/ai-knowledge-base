@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-010",
+  "title": "When Helping Hurts and How to Fix It: Multi-Agent Debate for Data Cleaning",
+  "source_url": "https://arxiv.org/abs/2606.02866",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文系统性地研究了多智能体辩论（Multi-Agent Debate）在数据清洗任务中的双面效应。通过在三个基准测试、四个模型家族和超过6000个任务-条件对上的大规模实验，作者发现辩论的效果呈现反转现象：一方面，辩论会降低所有四个模型的生成质量（下降1.6到15.5个百分点），原因是“批评诱导的混淆”（CIC），即批评者（Critic）产生幻觉性反馈，而生成者（Generator）不加批判地接受；另一方面，辩论却能显著提升错误检测能力（F1分数提升27.4个百分点，效应量d=1.0）。论文进一步推导了辩论收益的条件，为如何有效利用多智能体辩论提供了理论指导。这项研究值得关注，因为它揭示了多智能体协作中一个反直觉的现象——帮助与伤害并存，并给出了可操作的改进方向，对数据清洗、智能体系统设计以及人机协作领域具有重要参考价值。",
+  "tags": [
+    "Multi-Agent Debate",
+    "Data Cleaning",
+    "LLM",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:45:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体辩论在数据清洗中具有双面性：提升错误检测能力（F1+27.4pp）但降低生成质量（-1.6至-15.5pp）。",
+      "生成质量下降的主因是批评诱导的混淆（CIC）：批评者产生幻觉反馈，生成者不加批判地接受。",
+      "辩论的效果在不同任务和模型上存在显著反转，需要根据具体条件决定是否使用辩论。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-079",
+  "title": "Cost-Aware Query Routing in RAG: Empirical Analysis of Retrieval Depth Tradeoffs",
+  "source_url": "https://arxiv.org/abs/2606.02581",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种成本感知的查询路由方法，用于解决检索增强生成（RAG）中检索深度与成本之间的权衡问题。RAG系统面临一个基本的三方矛盾：更深的检索可以提升事实依据，但会增加token成本和端到端延迟。静态的检索配置无法适应异构查询负载——简单的定义性查询会浪费预算在不必要的上下文上，而复杂的分析性提示则因浅层检索而得不到充分服务。本文通过实证分析，研究了不同检索深度对成本、延迟和回答质量的影响，并提出了一个基于查询复杂度的动态路由策略，以在保证回答质量的同时最小化成本。该方法在多个基准数据集上进行了评估，结果显示在保持高准确率的同时，平均降低了30%的token消耗。这项工作为构建经济高效的RAG系统提供了实用指导，特别适用于需要平衡性能与成本的工业级应用。",
+  "tags": [
+    "RAG",
+    "Query Routing",
+    "Cost Optimization",
+    "Retrieval Depth"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:50:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG系统存在检索深度、事实依据和成本之间的三方矛盾，静态配置无法适应异构查询负载",
+      "基于查询复杂度的动态路由策略可以在保持高准确率的同时平均降低30%的token消耗",
+      "简单的定义性查询适合浅层检索以节省成本，复杂分析性提示需要深层检索以保证质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

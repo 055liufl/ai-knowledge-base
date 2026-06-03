@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-092",
+  "title": "Oscillatory State-Space Models as Inductive Biases for Physics-Informed Neural PDE Solvers",
+  "source_url": "https://arxiv.org/abs/2606.02623",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种将振荡状态空间模型（Oscillatory State-Space Models, OSSMs）作为物理信息神经PDE求解器的归纳偏置的新方法。传统的物理信息神经网络（PINNs）在求解时间依赖的偏微分方程（PDEs）时，难以准确捕捉时间演化过程。近期基于序列模型的方法使用通用序列模型参数化时间演化，虽然能捕获时间依赖性，但缺乏对PDE固有振荡特性的显式建模。本文通过引入专门设计的振荡状态空间模型，将物理系统的振荡行为直接编码为网络结构中的归纳偏置，从而更有效地学习PDE的时间演化规律。该方法在多个基准PDE问题（如波动方程、对流扩散方程）上展示了比标准PINNs和通用序列模型更高的精度和收敛速度。这项工作结合了状态空间模型的高效序列建模能力和物理先验知识，为科学计算中的神经PDE求解器提供了新的设计范式，具有重要的理论意义和实际应用价值。",
+  "tags": [
+    "PINNs",
+    "State-Space Models",
+    "PDE Solvers",
+    "Scientific Computing"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:51:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "振荡状态空间模型作为归纳偏置，显式编码了PDE的振荡特性，提升了时间演化建模的准确性。",
+      "该方法在多个时间依赖PDE基准上优于标准PINNs和通用序列模型，收敛更快且精度更高。",
+      "将物理先验（振荡行为）融入序列模型结构，为神经PDE求解器提供了新的设计思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

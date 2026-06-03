@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-015",
+  "title": "Inducing Reasoning Primitives from Agent Traces",
+  "source_url": "https://arxiv.org/abs/2606.02994",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“推理原语归纳”的方法，旨在从ReAct风格的LLM代理轨迹中提取可复用的推理原语。ReAct代理在解决问题时经常重复相同的推理模式，但这些模式通常被限制在临时的草稿中，无法被系统化利用。该方法通过单次遍历成功轨迹，挖掘并聚类频繁出现的推理动作，将其转化为一个紧凑的伪工具库。每个伪工具由自然语言文档字符串指定，LLM可以在后续任务中解释并调用这些工具，从而提升推理效率。这项研究的意义在于，它提供了一种自动化的方式，将隐式的推理经验显式化为可复用的组件，减少了重复劳动，并可能增强代理的泛化能力。值得关注的是，该方法无需额外训练，仅依赖现有轨迹，具有实用性和可扩展性，对提升LLM代理的推理效率和可解释性有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reasoning",
+    "Tool Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:46:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种单次遍历方法，从ReAct轨迹中自动归纳推理原语，无需额外训练。",
+      "通过聚类频繁推理动作，构建伪工具库，使隐式推理模式显式化和可复用。",
+      "该方法有望提升LLM代理的推理效率和泛化能力，减少重复推理开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-040",
+  "title": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
+  "source_url": "https://arxiv.org/abs/2606.03305",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了基准污染检测在现实审计场景中的可靠性问题。基准污染是指评估示例出现在模型训练数据中，这会威胁到大型语言模型（LLM）评估的有效性。尽管存在用于检测训练数据成员身份的统计工具，但这些工具主要在受控的学术环境中得到验证，例如大规模、同质的预训练语料库和透明的单阶段训练流程。然而，在现实审计场景中，这些方法是否仍然可靠尚不明确。本文识别了两种关键失败模式：分布偏移（distribution shift）和规模效应（scale）。分布偏移指训练数据与评估数据之间的分布差异可能导致检测方法失效；规模效应则指随着模型和数据规模的增大，传统检测方法的统计效力可能下降。通过系统分析，作者揭示了当前基准污染检测方法在应对现实世界复杂性时的局限性，并提出了改进方向。该研究对于确保LLM评估的公正性和可靠性具有重要意义，尤其是在模型部署和监管日益严格的背景下。",
+  "tags": [
+    "LLM",
+    "benchmark contamination",
+    "distribution shift",
+    "auditing"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:47:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基准污染检测方法在现实审计场景中面临分布偏移和规模效应两种主要失败模式，导致其可靠性下降。",
+      "传统统计检测工具在受控学术环境中表现良好，但在实际应用中因数据分布差异和模型规模增大而失效。",
+      "研究强调了开发适应现实复杂性的新检测方法的必要性，以保障LLM评估的有效性和公正性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-103",
+  "title": "D-Judge: Disrupting Multi-Turn Jailbreaks using Semantics-Preserving Output Rewriting",
+  "source_url": "https://arxiv.org/abs/2606.02640",
+  "source_platform": "rss_ai_research",
+  "summary": "D-Judge 是一种针对多轮越狱攻击的新型防御机制，通过语义保持的输出重写技术来破坏攻击者的迭代优化循环。多轮越狱攻击利用辅助评判模型的反馈，逐步调整提示词以实现有害目标，而现有防御方法主要检测或阻止单个轮次或最终响应中的不安全内容，未能切断评判驱动的优化循环。D-Judge 的核心创新在于，它在每一轮交互中对 LLM 的输出进行语义保持的重写，使得攻击者无法从中间交互中提取有用的反馈信息，从而破坏其迭代优化过程。该方法在保持输出语义一致性的同时，有效降低了多轮攻击的成功率，为 LLM 安全提供了一种新的防御思路。该研究值得关注，因为它针对的是日益严重的多轮越狱攻击问题，提出了一种不依赖内容检测的防御策略，具有较高的实用价值和创新性。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak Defense"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:52:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "D-Judge 通过语义保持的输出重写技术，破坏多轮越狱攻击的迭代优化循环，而非简单检测或阻止不安全内容。",
+      "该方法有效防止攻击者从中间交互中提取有用反馈，从而降低多轮攻击的成功率。",
+      "D-Judge 在保持输出语义一致性的同时，提供了一种不依赖内容检测的防御策略，具有较高的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

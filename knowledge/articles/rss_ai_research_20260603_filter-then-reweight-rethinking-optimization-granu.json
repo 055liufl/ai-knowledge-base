@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-116",
+  "title": "Filter, Then Reweight: Rethinking Optimization Granularity in On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2606.02684",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为FiRe-OPD（Filter, then Reweight）的新型在线策略蒸馏方法，旨在优化大型语言模型（LLM）的蒸馏过程。传统的在线策略蒸馏通常采用全轨迹KL散度监督，而FiRe-OPD则转向更选择性的训练范式，通过先过滤（Filter）再重新加权（Reweight）的方式，精细化地选择哪些轨迹、哪些标记以及哪些监督信号最值得学习。该方法从优化粒度入手，重新思考了在线策略蒸馏中数据选择和权重分配的问题，有望提升蒸馏效率和模型性能。这一研究紧跟当前LLM蒸馏领域从粗粒度监督向细粒度选择性训练转变的趋势，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "LLM",
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:52:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FiRe-OPD通过先过滤再重新加权的两阶段策略，实现了对在线策略蒸馏中训练数据的精细化选择，超越了传统的全轨迹KL散度监督。",
+      "该方法针对轨迹、标记和监督信号三个层次进行选择性优化，提升了蒸馏过程的效率和模型性能。",
+      "该研究反映了LLM蒸馏领域从粗粒度监督向细粒度选择性训练的重要趋势，为后续研究提供了新的优化视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

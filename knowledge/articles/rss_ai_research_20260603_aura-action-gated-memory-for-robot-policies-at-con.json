@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-002",
+  "title": "AURA: Action-Gated Memory for Robot Policies at Constant VRAM",
+  "source_url": "https://arxiv.org/abs/2606.02775",
+  "source_platform": "rss_ai_research",
+  "summary": "AURA 提出了一种名为“动作门控记忆”的新机制，旨在解决机器人策略在边缘硬件上运行时面临的内存瓶颈问题。传统数据中心使用的 KV-cache 适用于短请求批处理，但机器人需要长时间、非重置的推理，且边缘设备的高带宽内存和闪存资源有限，闪存写入寿命也有限。AURA 通过动作门控机制动态控制记忆的写入与保留，仅在与动作决策相关的关键步骤存储记忆，从而显著减少内存写入次数和 VRAM 占用，同时保持策略性能。该工作关注机器人策略在资源受限环境下的部署，具有重要的实用价值。",
+  "tags": [
+    "机器人策略",
+    "边缘推理",
+    "内存优化"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:45:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据中心 KV-cache 不适合机器人长时间推理场景，内存写入成为瓶颈。",
+      "动作门控记忆通过选择性存储关键步骤的记忆，减少 VRAM 占用和闪存写入。",
+      "该方法在保持策略性能的同时，显著降低边缘硬件上的内存开销。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260603-006",
+  "title": "How we index images for RAG",
+  "source_url": "https://www.kapa.ai/blog/how-we-index-images-for-rag",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了Kapa.ai团队如何为RAG（检索增强生成）系统构建图像索引的实践经验。文章详细阐述了从图像预处理、特征提取到向量化存储的完整流程，包括使用OCR技术提取文本、利用CLIP等多模态模型生成图像嵌入、以及结合文本和视觉特征进行混合检索的策略。作者还讨论了索引规模、延迟优化和准确性平衡等工程挑战，并分享了在真实场景中的性能评估结果。该内容对于希望将图像数据集成到RAG系统中的开发者具有实用参考价值，展示了多模态检索的可行方案和关键优化点。",
+  "tags": [
+    "RAG",
+    "多模态",
+    "图像索引",
+    "向量检索"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:27Z",
+  "collected_at": "2026-06-03T12:44:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图像索引需要结合OCR文本提取和视觉特征嵌入，以提升检索准确性",
+      "使用CLIP等多模态模型生成统一向量表示，可实现文本与图像的混合检索",
+      "索引构建需平衡嵌入质量、存储成本和查询延迟，实际部署中需针对性优化"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

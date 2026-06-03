@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-028",
+  "title": "Uncertainty-Aware Clarification in LLM Agents with Information Gain",
+  "source_url": "https://arxiv.org/abs/2606.03135",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向大语言模型（LLM）代理的目标导向澄清框架，旨在解决用户指令不明确时代理可能执行错误工具操作的问题。核心创新在于引入“信息增益奖励”（Information Gain Reward）作为量化澄清问题效用的指标，该指标通过贝叶斯方法衡量澄清问题对减少用户意图不确定性的贡献。框架将澄清行为与歧义解决直接对齐，使代理能够主动提出最有助于明确用户意图的问题，从而提升工具调用的准确性和任务完成质量。这项工作对于提升LLM代理在复杂、模糊交互场景中的鲁棒性和实用性具有重要意义，尤其是在需要精确工具调用的应用（如API调用、数据库查询）中，能够显著减少因误解导致的错误。论文还提供了理论分析和实验验证，展示了该方法在多个基准任务上的有效性。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Uncertainty",
+    "Clarification"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:47:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出信息增益奖励（Information Gain Reward）作为量化澄清问题效用的贝叶斯指标，直接与用户意图不确定性减少挂钩。",
+      "构建目标导向澄清框架，使LLM代理的澄清行为与歧义解决目标对齐，而非简单生成通用澄清问题。",
+      "实验表明该方法能显著提升代理在指令模糊场景下的工具调用准确性和任务成功率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

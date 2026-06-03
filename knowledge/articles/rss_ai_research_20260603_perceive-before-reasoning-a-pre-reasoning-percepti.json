@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-034",
+  "title": "Perceive Before Reasoning: A Pre-Reasoning Perception Framework for Efficient and Reliable Proactive Mobile Agents",
+  "source_url": "https://arxiv.org/abs/2606.03236",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“先感知后推理”（Perceive Before Reasoning, PBR）的预推理感知框架，旨在提升主动式移动代理（Proactive Mobile Agents）的效率和可靠性。主动式移动代理需要自主决定何时介入（干预时机）以及如何提供帮助（协助方式），而现有系统通常将这两个决策统一在基于多模态大语言模型（MLLM）的流水线中，导致保守的干预过滤与全面的协助生成之间存在目标错位，并引发计算冗余。PBR框架通过将感知阶段与推理阶段分离，先利用轻量级感知模块高效识别关键上下文和干预时机，再调用MLLM进行深度推理和协助生成，从而减少不必要的计算开销并提高决策准确性。该工作针对移动设备上的实时交互场景，解决了MLLM在资源受限环境下的延迟和能耗问题，同时保持了高水平的服务可靠性。实验表明，PBR在多个移动任务基准上显著降低了响应时间和计算成本，同时提升了干预决策的准确性。该研究为构建更实用、高效的移动AI助手提供了新思路，值得关注。",
+  "tags": [
+    "MLLM",
+    "Mobile Agent",
+    "Perception Framework",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:47:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出感知与推理分离的PBR框架，解决主动式移动代理中干预时机与协助生成的目标错位问题。",
+      "轻量级感知模块可高效识别关键上下文，减少MLLM不必要的计算冗余，提升实时性。",
+      "在移动任务基准上验证了PBR在降低延迟和能耗的同时保持高决策准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

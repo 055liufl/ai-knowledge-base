@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-097",
+  "title": "Wavelet as Tokenizer: Preliminary Results on a Shared Wavelet Token Schema for Natural Signals",
+  "source_url": "https://arxiv.org/abs/2606.02631",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究音频、图像和视频是否能够共享一种基于小波的通用标记模式，而非依赖各自模态特定的潜在网格。作者提出了一种初步的连续标记模型，该模型围绕单层Haar离散小波变换/逆离散小波变换前端、共享系数-标记布局、可选的结构元数据、轻量级模态值适配器以及共享的标记级编码器-解码器主干构建。在Speech Commands、EuroSAT RGB和DAVIS 2016/2017数据集上的实验表明，该模型在多种模态上取得了有竞争力的结果，证明了共享小波标记模式的可行性。这项工作为多模态统一建模提供了新思路，可能简化多模态系统的设计并提升跨模态迁移能力。其创新性在于利用小波变换的数学特性来桥接不同自然信号，而非依赖复杂的模态特定编码器。尽管目前是初步结果，但为未来更高效、更通用的多模态基础模型奠定了基础。",
+  "tags": [
+    "Wavelet",
+    "Multi-modal",
+    "Tokenization"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:51:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种基于小波变换的通用标记模式，使音频、图像和视频能够共享同一标记空间，避免了模态特定潜在网格的复杂性。",
+      "模型采用单层Haar DWT/IDWT前端和轻量级模态适配器，在多个标准数据集上取得了有竞争力的结果，验证了该方法的有效性。",
+      "该工作为多模态统一建模提供了新的数学工具，有望简化多模态系统架构并促进跨模态知识迁移。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

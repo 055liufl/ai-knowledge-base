@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260603-128",
+  "title": "Which Defense Closes Which Threat? Attributing OWASP-LLM-Top-10 Coverage and Its Brittleness Under Paraphrasing",
+  "source_url": "https://arxiv.org/abs/2606.02822",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对生产环境中大型语言模型（LLM）应用的多层防御体系（包括拒绝短语过滤器、令牌预算控制、模型白名单、速率限制、工具注册认证等）进行了归因分析。现有基准测试仅报告单一聚合覆盖率，无法揭示各防御家族具体应对哪些威胁。作者在21个代理基线扫描器中新增了4个针对OWASP-LLM-Top-10的代理，并针对一个由4个合成威胁构成的格状结构进行测试。研究通过归因分析，明确了不同防御机制在应对OWASP-LLM-Top-10威胁时的覆盖范围及其在释义攻击下的脆弱性。这项工作对于理解LLM安全防御的细粒度效能、优化防御策略组合具有重要价值，尤其揭示了当前防御体系在应对语义变体攻击时的不足。",
+  "tags": [
+    "LLM",
+    "Security",
+    "OWASP",
+    "Defense Attribution",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:53:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM安全基准仅提供聚合覆盖率，无法归因各防御家族的具体威胁覆盖，导致防御优化缺乏细粒度指导。",
+      "通过新增OWASP-LLM-Top-10感知代理和合成威胁格，实现了对四种防御家族（过滤器、预算控制、白名单、速率限制）的威胁归因分析。",
+      "研究发现防御体系在释义攻击下存在脆弱性，即同一威胁的不同表述可能绕过特定防御，揭示了当前防御策略的语义鲁棒性不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

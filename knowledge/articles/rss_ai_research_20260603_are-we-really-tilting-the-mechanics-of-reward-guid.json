@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260603-137",
+  "title": "Are we really tilting? The mechanics of reward guidance in flow and diffusion models",
+  "source_url": "https://arxiv.org/abs/2606.02884",
+  "source_platform": "rss_ai_research",
+  "summary": "本文深入探讨了在流模型和扩散模型中，奖励引导算法（reward guidance）的机械原理及其导致奖励黑客（reward hacking）问题的根本原因。奖励引导算法通过在推理时调整生成过程，使其偏向于奖励倾斜的度量，从而在图像生成、强化学习等领域取得了显著效果。然而，这些方法普遍存在奖励黑客问题，即模型过度优化奖励指标，牺牲了生成样本的保真度和多样性。以往研究将这一问题归因于神经奖励函数的复杂性或扩散训练中的隐式偏差，但本文通过理论分析揭示了其更基础的起源：奖励引导本质上改变了生成过程的概率流，导致模型偏离原始数据分布。作者通过数学推导和实验验证，证明了即使使用简单的线性奖励函数，奖励黑客现象依然存在，这表明问题源于奖励引导的固有机制而非奖励函数的复杂性。本文还提出了一种新的理论框架，将奖励引导视为一种对生成轨迹的扰动，并分析了这种扰动如何影响最终样本的分布。研究为理解和缓解奖励黑客问题提供了新的视角，对改进扩散模型和流模型的推理策略具有重要指导意义。",
+  "tags": [
+    "Diffusion Models",
+    "Reward Guidance",
+    "Reward Hacking",
+    "Flow Models",
+    "Generative AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:54:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "奖励引导算法在推理时改变生成过程的概率流，即使使用简单线性奖励函数也会导致奖励黑客，表明问题源于引导机制本身而非奖励函数复杂性。",
+      "本文通过理论分析揭示了奖励引导对生成轨迹的扰动如何导致模型偏离原始数据分布，为理解奖励黑客提供了新的数学框架。",
+      "研究指出，缓解奖励黑客需要重新设计引导策略，例如通过约束扰动幅度或结合分布匹配方法，而非仅改进奖励函数。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

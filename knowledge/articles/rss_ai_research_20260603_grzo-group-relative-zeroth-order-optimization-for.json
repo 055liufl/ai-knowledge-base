@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-131",
+  "title": "GRZO: Group-Relative Zeroth-Order Optimization for Large Language Model Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2606.02857",
+  "source_platform": "rss_ai_research",
+  "summary": "GRZO（Group-Relative Zeroth-Order Optimization）是一种针对大语言模型微调的新型零阶优化器。传统零阶优化通过随机扰动估计梯度，虽能大幅降低内存占用（无需反向传播），但梯度估计方差高，导致收敛慢、效果差。GRZO 的核心创新在于：对每个小批量样本生成一个伪独立扰动，然后通过组相对归一化（group-relative normalization）聚合各样本的损失，从而有效提升梯度方向的估计数量，降低方差。该方法在保持零阶优化低内存优势的同时，显著提高了微调效率和模型性能。该工作值得关注，因为它解决了零阶优化在高维大模型场景下的关键瓶颈——梯度方差问题，为资源受限环境下的 LLM 微调提供了更实用的方案，尤其对内存有限的开发者或研究者具有重要价值。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Zeroth-Order Optimization",
+    "Memory-Efficient"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:53:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRZO 通过组相对归一化聚合多样本损失，有效降低了零阶梯度估计的方差，提升了优化稳定性。",
+      "该方法在保持零阶优化低内存优势的同时，显著提高了大语言模型微调的收敛速度和最终性能。",
+      "GRZO 为资源受限场景下的 LLM 微调提供了实用且高效的替代方案，拓展了零阶优化的应用边界。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

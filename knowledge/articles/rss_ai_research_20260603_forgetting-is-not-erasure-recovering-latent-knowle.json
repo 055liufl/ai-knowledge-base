@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260603-133",
+  "title": "Forgetting is Not Erasure: Recovering Latent Knowledge via Transport Keys",
+  "source_url": "https://arxiv.org/abs/2606.02860",
+  "source_platform": "rss_ai_research",
+  "summary": "本文挑战了灾难性遗忘的传统观点，认为遗忘并非永久擦除，而是内部表示与输出接口之间的漂移。通过在受控的持续学习环境中实验，作者发现模型在顺序训练后，早期任务相关的潜在知识并未被删除，而是由于内部阶段与输出层之间的映射关系发生变化，导致这些知识无法被有效访问。论文提出了一种名为“传输键”（Transport Keys）的方法，通过重新校准接口来恢复被遗忘的知识，从而显著提升模型在旧任务上的性能。这一发现对于理解神经网络的学习机制、改进持续学习算法以及设计更鲁棒的AI系统具有重要意义，因为它表明通过调整接口而非重新训练，可以更高效地利用已有知识。",
+  "tags": [
+    "Catastrophic Forgetting",
+    "Continual Learning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:54:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "灾难性遗忘的主要原因是内部表示与输出接口之间的漂移，而非知识的永久擦除。",
+      "通过传输键重新校准接口，可以有效恢复被遗忘的潜在知识，提升模型在旧任务上的性能。",
+      "该发现挑战了传统观点，为持续学习提供了新的优化方向，即关注接口对齐而非完全重训练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260603-106",
+  "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.02643",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对检索增强生成（RAG）增强型大语言模型（LLM）系统的推理成本攻击（Inference Cost Attacks, ICAs）方法。RAG系统通过引入多阶段流水线动态检索并整合外部知识，虽然提升了模型性能，但也显著增加了推理成本。这种高运营成本暴露了一个关键漏洞：攻击者可以通过精心设计的输入，在不直接修改提示词的情况下，诱导系统执行大量不必要的检索和计算操作，从而大幅增加推理开销。现有攻击方法通常假设攻击者能直接操纵提示词，这在现实场景中往往不切实际。本文提出的ICA方法克服了这一限制，通过利用RAG系统的固有特性（如检索策略、上下文长度限制等）来放大推理成本。该研究揭示了RAG系统在成本效率方面的安全风险，对于部署RAG系统的企业和开发者具有重要警示意义，有助于推动更鲁棒、成本感知的RAG架构设计。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Security",
+    "Inference Cost"
+  ],
+  "author": null,
+  "published_at": "2026-06-03T12:42:30Z",
+  "collected_at": "2026-06-03T12:52:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG系统的高推理成本使其容易受到推理成本攻击（ICA），攻击者无需直接操纵提示词即可放大开销",
+      "现有ICA方法依赖不切实际的直接提示操纵假设，本文提出的攻击更贴近现实场景",
+      "该研究强调了在RAG系统设计中考虑成本效率安全性的必要性，为未来防御策略提供了方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
