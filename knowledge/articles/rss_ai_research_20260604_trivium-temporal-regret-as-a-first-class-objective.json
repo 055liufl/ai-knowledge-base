@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-015",
+  "title": "Trivium: Temporal Regret as a First-Class Objective for Causal-Memory Controllers",
+  "source_url": "https://arxiv.org/abs/2606.04421",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Trivium的新方法，旨在解决当前智能体系统和大型语言模型（LLM）管道中仅优化结果奖励的局限性。作者指出，现有系统在纠正错误时只关注“什么”出了错（即结果与预测的偏差），而忽略了“为什么”和“何时”出错，导致相同错误反复出现。他们认为这是一个结构性问题，而非单纯的模型容量问题。为此，Trivium将长期时间遗憾（temporal regret）作为因果记忆控制器的一等目标，通过系统性地记录、审查和纠正错误的时间点和原因，从而提升智能体的学习效率和鲁棒性。该方法在多个基准测试中展示了显著性能提升，尤其适用于需要长期规划和因果推理的复杂任务。这项研究值得关注，因为它挑战了当前强化学习和智能体系统中以结果为导向的优化范式，提出了更细粒度的错误分析框架，有望推动更可靠和可解释的AI系统发展。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Reinforcement Learning",
+    "Causal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:19:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Trivium将时间遗憾作为因果记忆控制器的一等目标，系统性地追踪错误的时间和原因，而非仅优化结果奖励。",
+      "该方法解决了智能体系统中错误反复出现的结构性问题，通过细粒度错误分析提升学习效率。",
+      "实验表明，Trivium在长期规划和因果推理任务中显著优于传统结果奖励优化方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

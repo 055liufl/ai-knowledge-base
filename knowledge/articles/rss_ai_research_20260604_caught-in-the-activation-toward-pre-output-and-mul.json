@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-085",
+  "title": "Caught in the Act(ivation): Toward Pre-Output and Multi-Turn Detection of Credential Exfiltration by LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.04141",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了LLM代理在将敏感凭证与不可信检索内容置于同一上下文窗口时，因间接提示注入导致凭证泄露的安全漏洞。作者提出了三种互补的防御方法：首先，利用激活探针在输出令牌生成前检测凭证访问；其次，通过格式特定的字符模型构建蜜令令牌（honeytokens）并校准检测机制；最后，针对多轮对话场景设计持续监控策略。实验表明，激活探针能在早期有效识别凭证泄露风险，蜜令令牌可显著提高攻击检测率，而多轮检测机制则能应对复杂攻击链。该研究揭示了当前LLM代理安全设计的薄弱环节，为构建更安全的代理系统提供了实用方案，尤其对金融、医疗等敏感领域具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Prompt Injection",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:24:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "激活探针可在输出生成前检测凭证访问，实现早期预警",
+      "蜜令令牌通过格式建模有效识别凭证泄露行为",
+      "多轮检测机制能应对复杂攻击链，提升整体安全性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

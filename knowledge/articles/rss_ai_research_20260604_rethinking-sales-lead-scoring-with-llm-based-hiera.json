@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-124",
+  "title": "Rethinking Sales Lead Scoring with LLM-based Hierarchical Preference Ranking",
+  "source_url": "https://arxiv.org/abs/2606.04387",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于大语言模型（LLM）的分层偏好排序方法，用于解决高价值销售线索（如汽车、房地产）的评分问题。传统方法（规则评分、机器学习、点式CTR模型）在长决策周期、多阶段漏斗场景下存在监督稀疏、非结构化CRM日志语义鸿沟、无法捕捉线索相对优先级等挑战。作者利用LLM的语义理解能力，通过构建分层偏好排序框架，将销售线索的转化概率建模为相对排序任务，而非绝对评分。该方法首先利用LLM对线索进行语义特征提取，然后通过层次化偏好学习（如基于漏斗阶段的排序）生成更准确的优先级列表。实验表明，该方法在真实销售数据集上显著优于基线模型，尤其在冷启动和稀疏数据场景下表现突出。该研究将LLM从简单的文本分类扩展到结构化排序任务，为高价值销售场景提供了可解释且高效的解决方案，具有重要的工业应用价值。",
+  "tags": [
+    "LLM",
+    "Sales Lead Scoring",
+    "Preference Ranking",
+    "CRM"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:26:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM能够有效弥合非结构化CRM日志与销售线索优先级之间的语义鸿沟，通过分层偏好排序替代传统点式评分。",
+      "层次化排序框架（基于漏斗阶段）比全局排序更适应长决策周期场景，缓解了监督稀疏问题。",
+      "该方法在冷启动和稀疏数据场景下优势显著，表明LLM的迁移学习能力可应用于高价值销售领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

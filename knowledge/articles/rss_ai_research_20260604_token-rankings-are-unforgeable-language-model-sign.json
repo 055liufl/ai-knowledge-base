@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-134",
+  "title": "Token Rankings are Unforgeable Language Model Signatures",
+  "source_url": "https://arxiv.org/abs/2606.04459",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了语言模型在仅暴露token排名（即按概率排序，但不提供具体概率值）的API限制下，是否仍能形成独特的模型签名。研究发现，即使在这种更严格的API限制下，token排名本身也构成了一种不可伪造的签名，能够唯一标识模型。这一发现揭示了即使是最小化的输出信息（如排名）也可能泄露模型身份，甚至可能间接暴露模型参数。该研究对于理解语言模型API的安全性和隐私保护具有重要意义，尤其是在模型部署和知识产权保护方面。",
+  "tags": [
+    "LLM",
+    "security",
+    "privacy",
+    "model signature"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:27:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Token rankings alone can serve as a unique, unforgeable signature for language models, even without probability values.",
+      "This signature leaks information about the model's final layer parameters, posing privacy and security risks.",
+      "The finding highlights the need for careful API design to prevent model identification and parameter leakage."
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

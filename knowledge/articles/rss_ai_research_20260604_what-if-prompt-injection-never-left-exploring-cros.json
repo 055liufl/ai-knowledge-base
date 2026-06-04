@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-130",
+  "title": "What If Prompt Injection Never Left? Exploring Cross-Session Stored Prompt Injection in Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2606.04425",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了现代智能体系统（Agentic Systems）中一种新型安全威胁——跨会话持久化提示注入（Cross-Session Stored Prompt Injection）。传统的大语言模型（LLM）应用通常局限于单次会话，而智能体系统通过记忆、文件系统、工具等长期上下文工件，使LLM能够跨会话持久化并共享世界状态。这种架构转变显著扩大了提示注入的攻击面。然而，以往关于提示注入的研究主要关注单会话内的模型级威胁，忽视了跨会话持久化带来的新风险。本文系统分析了这种攻击的原理、实现方式及潜在影响，并提出了相应的防御策略。该研究对于保障智能体系统的安全性具有重要价值，尤其是在LLM应用日益复杂和自主化的背景下，跨会话攻击可能对用户隐私、数据完整性和系统可靠性构成严重威胁。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:27:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体系统通过记忆和工具实现跨会话状态持久化，这为提示注入提供了新的攻击向量，超越了传统单会话威胁模型。",
+      "跨会话存储提示注入可能利用长期上下文工件（如文件、数据库）植入恶意指令，影响后续会话的LLM行为。",
+      "现有防御措施（如输入过滤、权限控制）在跨会话场景下可能失效，需要设计新的安全机制来检测和缓解此类攻击。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

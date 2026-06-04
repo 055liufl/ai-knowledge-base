@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260604-081",
+  "title": "dMX: Differentiable Mixed-Precision Assignment for Low-Precision Floating-Point Formats",
+  "source_url": "https://arxiv.org/abs/2606.04115",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 dMX 的可微分混合精度量化框架，专门用于学习低精度浮点格式（如 MXFP 系列）的位宽分配。在大型语言模型（LLM）的部署中，量化到低精度浮点表示是提高效率的关键，但传统方法对所有层统一使用单一比特宽度在性能和准确性上均非最优。dMX 通过引入可微分机制，使得模型能够自动学习每一层的最佳位宽分配，从而在保持模型精度的同时最大化压缩效率。该框架针对微缩浮点（MXFP）格式族进行了优化，这是当前低精度计算领域的前沿方向。dMX 的创新之处在于将混合精度分配问题转化为可微分的优化问题，避免了传统基于搜索或启发式方法的局限性。这项工作对于推动 LLM 在资源受限设备上的高效部署具有重要意义，尤其适用于需要平衡计算效率与模型性能的场景。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Mixed-Precision",
+    "MXFP",
+    "Differentiable Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:23:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "dMX 将混合精度位宽分配转化为可微分优化问题，实现了端到端的自动学习，避免了传统搜索或启发式方法的低效。",
+      "该框架针对 MXFP 浮点格式族设计，能够有效利用低精度浮点表示的优势，在 LLM 部署中实现性能与精度的更好平衡。",
+      "通过可微分机制，dMX 能够根据模型各层对精度的不同需求动态分配位宽，显著优于统一位宽量化方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

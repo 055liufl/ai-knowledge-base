@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260604-014",
+  "title": "Not All Errors Are Equal: Consequence-Aware Reasoning Compute Allocation",
+  "source_url": "https://arxiv.org/abs/2606.04402",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的推理计算分配方法，称为“后果感知推理计算分配”（Consequence-Aware Reasoning Compute Allocation）。传统方法通常基于任务难度来分配测试时计算资源（如思考令牌、模型调用或计算预算），假设所有错误具有相同的成本，因为准确率目标平等对待每个任务。然而，这种假设在现实应用中并不成立，例如在医疗诊断、自动驾驶或金融交易中，不同错误的后果差异巨大。该方法通过引入后果感知机制，根据错误后果的严重性动态调整计算资源分配，优先处理高风险任务，从而在有限计算预算下最大化整体效用。论文在多个基准测试上验证了其有效性，显示在资源受限场景下，该方法相比传统难度驱动方法显著降低了高风险错误的概率。这项工作对于提升AI系统在关键领域的可靠性和安全性具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Compute Allocation"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:19:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基于难度的计算分配忽略错误后果差异，导致高风险任务资源不足。",
+      "提出后果感知机制，根据错误严重性动态调整计算资源，优先处理高风险任务。",
+      "在资源受限场景下，该方法显著降低高风险错误概率，提升系统整体效用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

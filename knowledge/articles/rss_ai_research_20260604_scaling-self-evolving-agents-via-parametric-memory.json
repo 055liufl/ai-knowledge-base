@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-022",
+  "title": "Scaling Self-Evolving Agents via Parametric Memory",
+  "source_url": "https://arxiv.org/abs/2606.04536",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TMEM的参数化记忆框架，旨在解决现有记忆增强型大语言模型（LLM）智能体在经验学习上的根本局限。传统方法仅将过往经验存储在提示空间中（如文本摘要或检索段落），并在整个任务执行过程中保持模型参数冻结，导致智能体只能“查阅”历史信息，而无法“从中学习”——其策略不随经验改变，且任何从上下文中丢弃的信息都会永久丢失。TMEM通过引入可更新的参数化记忆，使智能体能够从交互经验中动态调整自身参数，实现自我进化。该框架的核心创新在于将记忆从静态的外部存储转变为模型内部可学习的参数，从而让智能体在长期任务中持续改进决策能力。这一工作对于构建能够真正从经验中学习的自主智能体具有重要意义，可能推动LLM在复杂、长期任务中的应用，如机器人控制、游戏AI和持续对话系统。论文提供了理论框架和初步实验验证，展示了参数化记忆在提升智能体适应性和效率方面的潜力。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Self-Evolving"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:19:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有记忆增强型LLM智能体仅将经验存储在提示空间中，参数冻结导致无法从经验中学习，信息丢失不可逆。",
+      "TMEM框架通过将记忆转化为可更新的模型参数，使智能体能够从交互中动态调整策略，实现自我进化。",
+      "该工作为构建长期、自适应自主智能体提供了新范式，可能显著提升LLM在复杂任务中的持续学习能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

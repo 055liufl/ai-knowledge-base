@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-071",
+  "title": "Need to Know: Contextual-Integrity-Grounded Query Rewriting for Privacy-Conscious LLM Delegation",
+  "source_url": "https://arxiv.org/abs/2606.04067",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于情境完整性（Contextual Integrity）的查询重写方法，用于保护隐私的LLM委托场景。随着LLM深度融入日常流程，用户向云端LLM发送的查询常混合任务必要内容与非必要的敏感披露。传统的基于类型的PII（个人身份信息）脱敏方法缺乏上下文感知，可能导致两个问题：过度披露未类型化的敏感上下文，以及过度移除包含答案的片段。该研究将隐私保护的查询重写重新定义为情境完整性框架下的问题：一个片段仅在符合特定情境的信息规范时才能被转发。该方法通过引入情境完整性理论，动态判断查询中哪些信息是任务必需的、哪些是敏感且应被移除的，从而在保护隐私的同时保持查询的实用性和准确性。这项工作值得关注，因为它解决了传统PII脱敏方法的根本缺陷，提供了一种更智能、上下文感知的隐私保护方案，对于提升LLM在实际应用中的安全性和用户信任具有重要意义。",
+  "tags": [
+    "LLM",
+    "Privacy",
+    "Query Rewriting",
+    "Contextual Integrity"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:23:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基于类型的PII脱敏方法缺乏上下文感知，会导致过度披露或过度移除的问题。",
+      "情境完整性框架为隐私保护提供了更精细的上下文感知标准，能动态判断信息是否应被转发。",
+      "该方法在保护隐私的同时，能保留任务必要的上下文信息，提升LLM委托的实用性和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

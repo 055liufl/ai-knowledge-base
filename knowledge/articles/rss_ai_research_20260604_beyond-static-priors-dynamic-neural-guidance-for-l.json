@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260604-060",
+  "title": "Beyond Static Priors: Dynamic Neural Guidance for Large-Scale Ant Colony Optimization",
+  "source_url": "https://arxiv.org/abs/2606.04039",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 DyNACO（动态神经引导蚁群优化）框架，旨在解决神经引导蚁群优化（ACO）中训练与推理之间的根本性错位问题。传统方法通常训练策略生成静态先验（如热力图），但在实际部署中需要引导迭代、长时域的搜索过程，导致性能受限。DyNACO 通过周期性观察信息素分布和当前最优解，实现动态神经引导，使模型能够根据搜索状态实时调整策略。该框架在保持大规模问题可处理性的同时，显著提升了优化效率。实验表明，DyNACO 在多个经典组合优化问题（如旅行商问题、车辆路径问题）上超越了现有静态先验方法，展示了动态引导在神经组合优化中的潜力。这项工作值得关注，因为它首次系统性地解决了神经 ACO 中的训练-推理不一致问题，为将深度学习与元启发式算法深度融合提供了新范式，有望推动大规模组合优化在实际应用（如物流、调度）中的性能突破。",
+  "tags": [
+    "Neural-Guided Optimization",
+    "Ant Colony Optimization",
+    "Dynamic Guidance",
+    "Combinatorial Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:22:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DyNACO 通过动态观察信息素和当前解，解决了神经 ACO 中静态先验与迭代搜索之间的训练-推理错位问题。",
+      "该框架在保持大规模可处理性的同时，显著提升了组合优化问题的求解质量，超越传统静态方法。",
+      "动态神经引导为深度学习与元启发式算法的融合提供了新方向，具有重要的理论价值和实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

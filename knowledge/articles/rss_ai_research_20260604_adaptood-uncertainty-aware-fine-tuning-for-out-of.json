@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260604-088",
+  "title": "ADAPTOOD: Uncertainty-Aware Fine-Tuning for Out-of-Distribution ECG Time Series Models",
+  "source_url": "https://arxiv.org/abs/2606.04164",
+  "source_platform": "rss_ai_research",
+  "summary": "ADAPTOOD 是一种针对心电图（ECG）时间序列模型的不确定性感知微调方法，旨在解决训练数据与微调及部署数据分布不一致（即分布偏移）的问题。在现实世界中，由于传感器差异、人群多样性及应用场景变化，模型性能常因分布偏移而下降，尤其是在仅有少量标注数据可用时。ADAPTOOD 通过引入不确定性感知机制，在微调过程中动态调整模型对不确定样本的关注程度，从而提升模型在分布外（OOD）数据上的泛化能力。该方法结合了预训练模型的优势，并针对时间序列数据的特性进行了优化，实验表明其在多个 ECG 数据集上显著优于传统微调策略。该研究值得关注，因为它直接应对了医疗 AI 部署中的关键挑战——数据分布变化，且提供了一种实用且有效的解决方案，有望推动 ECG 分析模型在真实临床环境中的可靠应用。",
+  "tags": [
+    "Uncertainty-Aware",
+    "Fine-Tuning",
+    "ECG",
+    "Time Series",
+    "OOD"
+  ],
+  "author": null,
+  "published_at": "2026-06-04T11:15:39Z",
+  "collected_at": "2026-06-04T11:24:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ADAPTOOD 通过不确定性感知微调，有效缓解了 ECG 时间序列模型在分布偏移下的性能下降问题。",
+      "该方法在仅有少量标注数据时仍能保持较好的泛化能力，适用于真实世界中的传感器和人群多样性场景。",
+      "不确定性机制的引入为模型提供了对不确定样本的自适应处理，提升了在 OOD 数据上的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
