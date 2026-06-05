@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260605-136",
+  "title": "ParetoPilot: Zero-Surrogate Offline Multi-Objective Optimization via Infer-Perturb-Guide Diffusion",
+  "source_url": "https://arxiv.org/abs/2606.04468",
+  "source_platform": "rss_ai_research",
+  "summary": "ParetoPilot 是一种新颖的离线多目标优化方法，旨在从静态数据集中发现帕累托最优设计，而无需昂贵的环境交互。与依赖外部代理模型的现有生成方法不同，ParetoPilot 通过“推断-扰动-引导”（Infer-Perturb-Guide）扩散框架，在无代理模型的情况下直接优化。该方法首先利用扩散模型推断数据分布，然后通过扰动机制探索设计空间，最后引导生成过程朝向帕累托前沿。这种零代理（Zero-Surrogate）设计显著降低了计算开销，避免了代理模型评估中的欺骗性问题，并简化了训练流程。ParetoPilot 在多个基准测试中展示了与现有方法相当或更优的性能，特别是在高维和稀疏数据场景下。该工作对材料设计、药物发现和工程优化等领域具有重要价值，因为它提供了一种更高效、更可靠的离线优化范式。值得关注的是，它打破了离线多目标优化对代理模型的依赖，为实际应用中的计算资源受限场景提供了新思路。",
+  "tags": [
+    "Diffusion Models",
+    "Multi-Objective Optimization",
+    "Offline Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:41:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出零代理离线多目标优化框架，消除对外部代理模型的依赖，降低计算开销并避免欺骗性评估。",
+      "采用 Infer-Perturb-Guide 扩散范式，通过数据分布推断、扰动探索和引导生成实现帕累托前沿发现。",
+      "在多个基准测试中表现优异，尤其在高维和稀疏数据场景下，展示了鲁棒性和效率优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

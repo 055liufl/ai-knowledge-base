@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-110",
+  "title": "OpenRFM: Dissecting Relational In-Context Learning",
+  "source_url": "https://arxiv.org/abs/2606.04320",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对关系基础模型（RFM）中的关系上下文学习（ICL）进行了系统性剖析，重点分析了代表性框架——关系变换器（RT）的性能差距来源。研究从模型侧和任务侧两个维度展开：模型侧探讨了架构设计、预训练策略和上下文学习机制对RFM性能的影响；任务侧分析了关系数据库结构、查询类型和训练数据分布等关键因素。通过大量实验，作者揭示了开源RFM与商业版本之间差距的根本原因，包括模型容量限制、关系推理能力不足以及预训练数据多样性缺失等。该工作为改进RFM提供了理论指导和实践方向，有助于推动关系型AI在数据库查询、知识图谱推理等领域的应用。",
+  "tags": [
+    "Relational Foundation Model",
+    "In-Context Learning",
+    "Transformer",
+    "Database"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:40:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "开源RFM与商业版本之间的性能差距主要源于模型架构对关系结构的建模能力不足，以及预训练数据中关系模式覆盖不全面。",
+      "关系变换器（RT）在上下文学习中的表现高度依赖于输入序列中关系元组的排列方式和任务类型，提示需要更优的上下文组织策略。",
+      "提升RFM性能的关键在于增强模型对多表连接、聚合操作等复杂关系推理的泛化能力，而非单纯扩大模型规模。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

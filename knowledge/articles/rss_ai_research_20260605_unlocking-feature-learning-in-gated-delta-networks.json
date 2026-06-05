@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-063",
+  "title": "Unlocking Feature Learning in Gated Delta Networks at Scale",
+  "source_url": "https://arxiv.org/abs/2606.04048",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在门控Delta网络（Gated Delta Networks）中实现特征学习（Feature Learning）的规模化方法。门控Delta网络是一种高效的次二次复杂度架构，旨在降低大型语言模型（LLM）的训练和推理成本。论文的核心贡献在于将最大更新参数化（μP）方法扩展到这类复杂架构中，使得超参数（如学习率）能够从小型模型零样本迁移到大型模型，从而避免大规模训练中的昂贵调参过程。实验表明，通过μP，门控Delta网络在多种规模下均能保持稳定的特征学习动态，并在语言建模任务上取得了与标准Transformer相当的性能，同时显著降低了计算开销。这项工作为高效架构的规模化训练提供了理论指导和实用工具，尤其适用于资源受限场景下的LLM开发。",
+  "tags": [
+    "LLM",
+    "Efficient Architecture",
+    "Hyperparameter Transfer",
+    "Feature Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:36:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将最大更新参数化（μP）成功扩展到门控Delta网络，实现了超参数从小型模型到大型模型的零样本迁移，显著减少了大规模训练中的调参成本。",
+      "门控Delta网络结合μP后，在保持次二次复杂度的同时，语言建模性能与标准Transformer相当，验证了高效架构的实用性。",
+      "该工作为线性复杂度模型（如状态空间模型）的规模化训练提供了理论框架，推动了非Transformer架构在LLM领域的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

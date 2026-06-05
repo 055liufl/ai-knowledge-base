@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-094",
+  "title": "Notarized Agents: Receiver-Attested Confidential Receipts for AI Agent Actions",
+  "source_url": "https://arxiv.org/abs/2606.04193",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Notarized Agents”的新型协议，旨在解决AI代理可观测性中的结构性信任问题。当前，AI代理的活动日志由代理自身生成，这意味着如果代理被攻陷或存在漏洞，它可以随意省略、篡改或伪造自己的操作记录，而操作者无法独立检测到这些篡改行为。该协议通过反转信任边界来应对这一挑战：当AI代理调用外部服务时，由接收该调用的服务签署一份收据，作为代理行为的不可篡改凭证。这种方法确保了代理行为的可审计性和透明性，为AI系统的安全性和可靠性提供了新的保障。该研究值得关注，因为它直接针对AI代理在实际部署中的关键痛点——信任和可验证性，尤其是在金融、医疗、法律等需要高度可信操作的领域具有重要应用前景。通过引入外部服务作为公证人，该协议为构建更可信的AI生态系统提供了理论基础和实用框架。",
+  "tags": [
+    "AI Agent",
+    "Security",
+    "Trust",
+    "Observability"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:38:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前AI代理的可观测性存在结构性缺陷，代理自身生成的日志无法独立验证其真实性。",
+      "通过反转信任边界，让接收代理调用的外部服务签署收据，可以有效防止日志篡改。",
+      "该协议为AI代理在需要高度可信操作的应用场景（如金融、医疗）中提供了可审计性基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

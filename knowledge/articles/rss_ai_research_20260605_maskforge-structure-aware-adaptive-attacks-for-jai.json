@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-056",
+  "title": "MaskForge: Structure-Aware Adaptive Attacks for Jailbreaking Diffusion Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.04027",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MaskForge的结构感知自适应攻击方法，专门针对扩散大语言模型（dLLMs）的越狱攻击。与自回归LLMs不同，dLLMs通过双向上下文迭代去噪部分掩码序列来生成文本，其安全面独特。由于掩码令牌是原生输入，且令牌基于置信度而非位置提交，因此可以通过填充和监控前缀之外的方式诱导有害内容。现有的越狱方法要么忽略了这种原生填充能力，要么依赖于其他假设。MaskForge利用dLLMs的结构特性，通过自适应生成掩码模式来绕过安全机制，展示了在多个dLLMs上的有效性。这项工作值得关注，因为它揭示了dLLMs特有的安全漏洞，并提出了针对性的攻击方法，对AI安全研究具有重要意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Diffusion"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:36:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散大语言模型（dLLMs）因其双向上下文和掩码输入机制，存在与自回归模型不同的安全漏洞，容易被利用进行越狱攻击。",
+      "MaskForge攻击方法通过结构感知的自适应掩码生成，能够有效绕过dLLMs的安全防护，展示了现有防御机制的不足。",
+      "该研究强调了针对dLLMs的专用安全评估和防御策略的必要性，为AI安全领域提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

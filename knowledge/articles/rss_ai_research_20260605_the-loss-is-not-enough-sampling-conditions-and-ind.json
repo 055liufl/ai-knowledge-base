@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-106",
+  "title": "The Loss Is Not Enough: Sampling Conditions and Inductive Bias in Contrastive Representation Learning",
+  "source_url": "https://arxiv.org/abs/2606.04280",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对对比学习在自监督表征学习中的理论基础进行了深入分析。作者提出了一个基于测度论的框架，形式化了“多样性条件”（diversity condition），即正样本对采样的支撑集要求，这是实现等距潜在空间恢复的必要条件。论文指出，标准的全支撑von Mises-Fisher设置虽然隐含了该条件，但实际应用中常见的采样策略（如数据增强）往往无法满足，导致学习到的表征几何结构失真。通过理论推导和实验验证，作者揭示了对比损失函数本身不足以保证良好的表征质量，采样条件和归纳偏置（inductive bias）起着关键作用。该研究为理解对比学习的内在机制提供了新的视角，有助于指导更有效的采样策略设计，提升自监督学习在下游任务中的表现。论文发表于arXiv，属于理论性研究，对机器学习和表征学习领域的研究者具有重要参考价值。",
+  "tags": [
+    "Contrastive Learning",
+    "Self-Supervised Learning",
+    "Representation Learning",
+    "Sampling Theory"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:39:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对比学习的成功不仅依赖于损失函数，更依赖于正样本对的采样条件，即多样性条件，这是等距潜在空间恢复的必要条件。",
+      "标准全支撑von Mises-Fisher设置隐含了多样性条件，但实际采样策略（如数据增强）常无法满足，导致表征几何结构失真。",
+      "论文通过测度论框架形式化了采样条件与归纳偏置的关系，为改进对比学习算法提供了理论指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

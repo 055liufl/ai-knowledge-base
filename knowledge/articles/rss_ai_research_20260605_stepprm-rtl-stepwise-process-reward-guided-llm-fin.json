@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260605-007",
+  "title": "StepPRM-RTL: Stepwise Process-Reward Guided LLM Fine-Tuning for Enhanced RTL Synthesis",
+  "source_url": "https://arxiv.org/abs/2606.04246",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 StepPRM-RTL 框架，旨在解决大语言模型在自动生成数字硬件设计 RTL 代码（Verilog/VHDL）时面临的长程推理、多步依赖和严格正确性约束等挑战。该框架创新性地结合了逐步轨迹建模、过程奖励建模（PRM）和检索增强微调（RAFT）三种技术：首先通过逐步轨迹建模将复杂的 RTL 生成任务分解为可管理的中间步骤；然后利用过程奖励模型对每一步的中间状态进行细粒度评估，提供比传统结果奖励更丰富的反馈信号；最后结合检索增强微调，从高质量设计库中检索相关示例来指导生成。实验结果表明，StepPRM-RTL 在多个基准测试上显著提升了 RTL 代码的功能正确性和推理保真度，相比基线方法有实质性改进。这项工作值得关注，因为它将强化学习中的过程奖励思想成功应用于硬件设计这一高精度领域，为 LLM 在工程自动化中的可靠应用提供了新范式，尤其对芯片设计自动化具有重要实践价值。",
+  "tags": [
+    "LLM",
+    "RTL",
+    "Process-Reward Model",
+    "Hardware Design",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:32:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "过程奖励建模（PRM）为 RTL 代码生成的中间步骤提供细粒度反馈，显著优于传统结果奖励方法，有效解决了长程推理中的信用分配问题。",
+      "逐步轨迹建模将复杂的硬件设计任务分解为可管理的子步骤，降低了 LLM 生成完整正确代码的难度。",
+      "检索增强微调（RAFT）通过引入高质量设计库中的相关示例，进一步提升了生成代码的准确性和一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

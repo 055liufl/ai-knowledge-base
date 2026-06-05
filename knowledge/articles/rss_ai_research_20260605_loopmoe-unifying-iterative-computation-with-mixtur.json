@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-130",
+  "title": "LoopMoE: Unifying Iterative Computation with Mixture-of-Experts for Language Modeling",
+  "source_url": "https://arxiv.org/abs/2606.04438",
+  "source_platform": "rss_ai_research",
+  "summary": "LoopMoE 是一种将循环架构与混合专家模型（MoE）相结合的新型语言模型架构。传统循环架构依赖密集骨干网络，导致参数数量与每个 token 的计算量（FLOPs）耦合，难以在相同预算下独立研究迭代计算的效果。LoopMoE 通过引入稀疏路由机制，在循环过程中动态选择专家，从而解耦参数容量与计算开销。该工作首次系统性地探索了循环深度与专家稀疏性两个正交维度的协同扩展，实验表明在相同计算预算下，LoopMoE 相比标准 MoE 和循环密集模型在语言建模任务上取得了更优的困惑度与下游性能。这一设计为高效语言模型提供了新思路，尤其适合需要深度推理但计算资源受限的场景。值得关注的是，它可能推动下一代高效、可扩展的模型架构发展，兼具 MoE 的参数高效性和循环架构的深度表达能力。",
+  "tags": [
+    "MoE",
+    "Loop Architecture",
+    "Language Model",
+    "Sparse Routing"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:41:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoopMoE 通过稀疏路由解耦了参数容量与计算开销，使得在相同预算下可以独立增加循环深度。",
+      "该架构在语言建模任务上优于标准 MoE 和循环密集模型，展示了正交维度协同扩展的潜力。",
+      "LoopMoE 为高效深度推理提供了新范式，特别适合计算受限但需要复杂推理的应用。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

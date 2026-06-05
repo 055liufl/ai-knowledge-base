@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260605-019",
+  "title": "Training an LLM in Swift, Part 1: Taking matrix multiplication from Gflop/s to Tflop/s",
+  "source_url": "https://www.cocoawithlove.com/blog/matrix-multiplications-swift.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是系列文章的第一部分，探讨如何在Swift中训练大型语言模型（LLM），重点聚焦于矩阵乘法性能优化。作者从基础的Gflop/s（十亿次浮点运算每秒）级别出发，通过一系列优化技术（如内存布局调整、SIMD指令利用、循环展开等），将矩阵乘法性能提升至Tflop/s（万亿次浮点运算每秒）级别。文章详细介绍了Swift语言在底层性能调优方面的潜力，包括使用Accelerate框架、手动优化循环以及利用Metal进行GPU加速。这不仅展示了Swift在机器学习领域的适用性，还为开发者提供了从理论到实践的优化指南。值得关注的是，作者通过逐步优化过程，揭示了高性能计算中的关键瓶颈（如内存带宽和缓存利用率），并给出了具体解决方案。对于希望在非传统ML框架（如PyTorch或TensorFlow）之外探索LLM训练的开发者，本文提供了宝贵的参考。",
+  "tags": [
+    "Swift",
+    "LLM",
+    "Matrix Multiplication",
+    "Performance Optimization",
+    "Metal"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:05Z",
+  "collected_at": "2026-06-05T11:31:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过内存布局优化和SIMD指令，Swift中的矩阵乘法性能可从Gflop/s提升至Tflop/s级别。",
+      "Swift结合Accelerate和Metal框架，为高性能计算提供了灵活的底层控制能力。",
+      "优化过程中，内存带宽和缓存利用率是主要瓶颈，而非单纯的计算能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

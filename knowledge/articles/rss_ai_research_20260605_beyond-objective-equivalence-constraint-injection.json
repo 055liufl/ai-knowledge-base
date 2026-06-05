@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-037",
+  "title": "Beyond Objective Equivalence: Constraint Injection for LLM-Based Optimization Modeling on Vehicle Routing Problems",
+  "source_url": "https://arxiv.org/abs/2606.04816",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对基于大语言模型（LLM）的优化建模方法，重点解决车辆路径问题（VRP）等约束密集型运筹学（OR）问题中的约束注入问题。现有方法主要依赖目标等价信号（如差分测试和答案一致性）来过滤数据和训练模型，但这种方法允许程序在添加虚假约束或静默省略必要约束时仍能通过验证，导致模型生成的求解器代码不可靠。论文通过引入约束注入机制，在LLM的推理或训练过程中显式地注入和验证约束条件，确保生成的代码不仅目标函数正确，而且所有约束条件都被准确表达。该方法在多个VRP基准测试上取得了显著改进，生成的代码在约束满足率和求解质量上均优于现有基线。这项工作对于提升LLM在运筹优化领域的实用性具有重要意义，尤其是在需要精确约束建模的工业场景中。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Vehicle Routing Problem",
+    "Constraint Injection"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:34:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于目标等价信号的数据过滤方法无法有效检测约束错误，导致LLM生成的优化代码可能包含虚假或缺失约束。",
+      "约束注入机制通过显式约束验证和注入，显著提升了LLM在车辆路径问题等约束密集型任务上的建模可靠性。",
+      "该方法在多个VRP基准测试中实现了更高的约束满足率和求解质量，展示了LLM在运筹优化领域应用的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

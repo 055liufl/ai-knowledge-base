@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-069",
+  "title": "LLM Compression with Jointly Optimizing Architectural and Quantization choices",
+  "source_url": "https://arxiv.org/abs/2606.04063",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种联合优化架构和量化选择的LLM压缩方法，旨在解决大语言模型在边缘设备部署时面临的内存和计算资源限制问题。与从头训练小模型不同，该方法通过神经架构搜索（NAS）对预训练LLM进行压缩，同时优化网络结构和量化策略，以在保持模型性能的前提下显著减小模型大小和推理成本。研究背景指出，现有压缩技术如剪枝和量化各有局限，而NAS虽能探索更优架构，但先前工作未充分结合量化与架构搜索的协同效应。本文方法通过联合搜索空间设计，实现了架构与量化位宽的自动选择，实验表明在多种LLM上取得了优于单独优化方法的压缩效果，尤其适用于资源受限的边缘设备。该工作为LLM高效部署提供了新思路，具有重要的实用价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Compression",
+    "Neural Architecture Search",
+    "Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:37:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "联合优化架构和量化选择能比单独优化获得更好的压缩效果，在保持模型性能的同时显著减小模型大小。",
+      "该方法利用神经架构搜索自动探索最优的架构与量化位宽组合，减少人工调参成本。",
+      "实验验证了该方法在多种LLM上的有效性，尤其适合边缘设备部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

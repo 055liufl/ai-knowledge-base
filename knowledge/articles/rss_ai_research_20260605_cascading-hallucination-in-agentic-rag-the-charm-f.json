@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260605-016",
+  "title": "Cascading Hallucination in Agentic RAG: The CHARM Framework for Detection and Mitigation",
+  "source_url": "https://arxiv.org/abs/2606.04435",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CHARM（Cascading Hallucination Assessment and Remediation Mechanism）的框架，用于检测和缓解多步代理型检索增强生成（Agentic RAG）流水线中的级联幻觉问题。级联幻觉是指早期流水线阶段引入的错误在后续推理步骤中传播并放大，最终产生自信但事实不正确的输出。现有幻觉检测机制通常只关注单步输出，无法捕捉这种跨步骤的错误累积。CHARM框架通过引入跨步骤一致性检查、中间结果验证和动态回溯机制，能够有效识别并纠正级联幻觉。该研究基于对多种Agentic RAG系统的实验，证明了CHARM在降低错误传播、提升最终输出准确性方面的显著效果。这项工作对于提升复杂推理任务的可靠性具有重要意义，尤其是在需要多步推理的问答、代码生成和决策支持等场景中。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Hallucination",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-05T11:29:06Z",
+  "collected_at": "2026-06-05T11:33:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "级联幻觉是Agentic RAG系统中一种被系统性忽视的失败模式，早期错误会通过多步推理放大，导致最终输出看似合理但事实错误。",
+      "CHARM框架通过跨步骤一致性检查和动态回溯机制，能够有效检测和缓解级联幻觉，显著提升多步推理的可靠性。",
+      "现有幻觉检测方法（如单步验证）无法捕捉级联效应，CHARM填补了这一空白，为构建更鲁棒的Agentic RAG系统提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
