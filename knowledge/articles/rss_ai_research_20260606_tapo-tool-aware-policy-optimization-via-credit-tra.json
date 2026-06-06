@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260606-051",
+  "title": "TAPO: Tool-Aware Policy Optimization via Credit Transfer for Multimodal Search Agents",
+  "source_url": "https://arxiv.org/abs/2606.05784",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文识别并正式定义了工具增强型多模态搜索代理中GRPO（Group Relative Policy Optimization）的一个系统性失败模式——信用误分配（credit misassignment）。具体而言，GRPO将轨迹级别的优势均匀广播给所有token，导致失败轨迹中有价值的工具使用步骤与无价值的步骤受到相同的惩罚。论文进一步通过实验量化了这一现象的规模：超过一半的失败轨迹和失败的工具使用动作表现出相关性。为解决此问题，论文提出了TAPO（Tool-Aware Policy Optimization via Credit Transfer），一种通过信用转移实现工具感知策略优化的方法，旨在更精确地分配信用，提升多模态搜索代理中工具使用的学习效率。这项工作对于改进强化学习在复杂工具调用场景中的应用具有重要价值，尤其是在多模态搜索和代理系统中。",
+  "tags": [
+    "Reinforcement Learning",
+    "Multi-modal",
+    "Agent",
+    "Tool Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:12:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO在工具增强型多模态搜索代理中存在信用误分配问题，即轨迹级优势均匀广播导致有价值工具使用步骤被错误惩罚。",
+      "实验量化显示超过一半的失败轨迹和失败工具使用动作存在该问题，表明其普遍性和严重性。",
+      "TAPO通过信用转移机制实现工具感知策略优化，有望更精确地分配信用，提升工具学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

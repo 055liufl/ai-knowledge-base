@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260606-111",
+  "title": "Predict and Reconstruct: Joint Objectives for Self-Supervised Language Representation Learning",
+  "source_url": "https://arxiv.org/abs/2606.05173",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种结合掩码语言建模（MLM）与联合嵌入预测架构（JEPA）的混合预训练目标，旨在改善文本编码器的语义表示质量。传统的MLM目标（如BERT）倾向于让模型过度依赖表面形式的token身份，而忽略了深层的语义结构。受LeCun在视觉和音频领域提出的JEPA启发，作者设计了一种在潜在空间中进行预测的损失函数，与MLM共同优化。这种混合目标鼓励模型学习更抽象、更语义化的表示，同时保留MLM在细粒度token预测上的优势。论文通过实验验证了该方法在多个自然语言理解基准上的有效性，表明联合训练能显著提升模型对语义关系的捕捉能力，尤其是在需要深层理解的推理任务上。该工作为自监督语言表示学习提供了新思路，具有重要的理论价值和实践潜力。",
+  "tags": [
+    "Self-Supervised Learning",
+    "Representation Learning",
+    "Pre-training",
+    "JEPA",
+    "MLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:18:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLM预训练目标导致表示过度依赖token表面形式，缺乏深层语义结构。",
+      "引入JEPA风格的潜在空间预测损失可有效增强语义抽象能力。",
+      "混合目标在多个NLU基准上优于纯MLM，尤其提升推理任务表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

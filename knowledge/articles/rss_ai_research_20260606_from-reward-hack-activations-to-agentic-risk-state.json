@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-087",
+  "title": "From Reward-Hack Activations to Agentic Risk States: Context-Calibrated Mechanistic Monitoring in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.06223",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对语言模型代理（LLM Agents）的上下文校准机制监控方法，旨在检测和缓解代理在交互过程中可能出现的奖励黑客行为（reward-hacking）和代理风险状态（agentic risk states）。研究在Gameable ALFWorld和WebShop环境中，使用ReAct风格的代理进行实验。代理被装备了基于激活的奖励黑客评分、令牌级熵和决策上下文特征。通过微调适配器，作者发现仅依赖内部模型状态（如激活模式）的监控器容易产生误报，而结合环境上下文（如任务目标、历史行为）进行校准后，监控准确率显著提升。该方法能够有效区分代理的正常探索行为与潜在的风险行为，为LLM代理的安全部署提供了新的监控范式。该研究的重要性在于，它首次系统性地将环境上下文纳入代理行为监控，解决了传统基于内部状态监控的局限性，对于提升LLM代理在复杂环境中的安全性和可靠性具有重要价值。",
+  "tags": [
+    "LLM Agent",
+    "Safety Monitoring",
+    "Reward Hacking",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:15:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅依赖内部激活模式的监控器在检测代理风险时存在高误报率，而结合环境上下文（如任务目标、历史行为）的校准监控能显著提升准确率。",
+      "通过激活评分、令牌熵和决策上下文特征的多模态监控，可以有效区分代理的正常探索与奖励黑客行为。",
+      "该方法为LLM代理在复杂交互环境中的安全部署提供了可扩展的监控框架，填补了现有安全机制在上下文感知方面的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

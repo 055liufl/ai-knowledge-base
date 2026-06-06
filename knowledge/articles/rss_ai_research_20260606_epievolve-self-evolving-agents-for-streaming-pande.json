@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260606-026",
+  "title": "EpiEvolve: Self-Evolving Agents for Streaming Pandemic Forecasting under Regime Shifts",
+  "source_url": "https://arxiv.org/abs/2606.05513",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对流行病预测中静态监督模型与动态流式预测环境不匹配的问题，提出了EpiEvolve——一种自进化智能体框架。传统流行病预测模型通常作为静态监督模型训练和评估，但实际运营中的疫情预测是一个流式过程：标签在预测后到达，疾病传播模式随时间发生结构性变化（即制度转移）。EpiEvolve通过将LLM预测器封装在自进化智能体中，使其能够适应每周更新的COVID-19住院趋势预测任务，并在五个不同的病毒变体制度下进行验证。该框架的核心创新在于：智能体能够根据新到达的标签数据自动调整预测策略，无需重新训练整个模型，从而在制度转移时保持预测性能。这项工作将LLM与在线学习、自适应机制相结合，为动态环境下的时间序列预测提供了新范式，尤其适用于公共卫生等需要实时响应模式变化的领域。其价值在于解决了静态模型在流式数据中性能退化的问题，为AI在实时决策支持系统中的应用提供了重要参考。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Time Series Forecasting",
+    "Online Learning",
+    "Epidemiology"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:10:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EpiEvolve通过自进化机制解决了静态LLM预测器在流式数据中因制度转移导致的性能退化问题",
+      "该框架在COVID-19住院趋势预测中跨五个变体制度验证了自适应策略的有效性",
+      "将LLM与在线学习结合，为动态环境下的时间序列预测提供了可扩展的解决方案"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

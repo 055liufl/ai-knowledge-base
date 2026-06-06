@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-042",
+  "title": "Beyond Output Matching: Preserving Internal Geometry in NVFP4 LLM Distillatio",
+  "source_url": "https://arxiv.org/abs/2606.05682",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的低精度LLM蒸馏方法，超越了传统的输出匹配（如KL散度损失），转而关注保留教师模型的内部几何结构。针对NVFP4等低精度推理需求，作者指出标准量化感知蒸馏（QAD）仅匹配输出分布，可能导致学生模型内部表示失真。通过引入几何保持损失，该方法在保持低精度计算效率的同时，显著提升了学生模型的泛化能力和推理准确性。实验表明，在多种LLM架构和任务上，该方法优于现有QAD基线，尤其在高压缩比场景下表现出色。这项工作为低精度部署提供了理论依据和实用方案，对成本敏感的生产环境具有重要价值。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Distillation",
+    "NVFP4"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:11:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准输出匹配蒸馏（如KL散度）可能破坏学生模型的内部几何结构，导致性能下降",
+      "通过保留教师模型的内部表示几何，可以显著提升低精度学生模型的泛化能力",
+      "该方法在NVFP4等低精度场景下优于传统QAD，尤其在高压缩比时优势明显"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

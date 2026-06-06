@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-096",
+  "title": "TokenMizer: Graph-Structured Session Memory for Long-Horizon LLM Context Management",
+  "source_url": "https://arxiv.org/abs/2606.06337",
+  "source_platform": "rss_ai_research",
+  "summary": "TokenMizer 提出了一种基于图结构的会话记忆管理方法，用于解决大语言模型在长时间任务中的上下文窗口限制问题。当历史信息超过最大有效上下文窗口（MECW）时，传统的扁平文本处理方法会丢弃关键的结构化信息，如架构决策、任务转换和文件历史。TokenMizer 通过将会话历史建模为图结构，保留实体之间的关联关系，从而在有限的上下文预算内最大化信息密度。该方法引入了图注意力机制和动态记忆压缩策略，能够智能地选择保留哪些信息以及如何压缩。实验表明，TokenMizer 在多个长时任务基准测试中显著优于现有的记忆管理方法，包括基于滑动窗口、摘要和检索增强的方法。这项工作对于开发能够处理复杂、长期交互的 AI 系统具有重要意义，特别是在软件开发、科学研究等需要持续上下文的任务场景中。",
+  "tags": [
+    "LLM",
+    "Memory Management",
+    "Graph Neural Networks",
+    "Context Window"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:16:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TokenMizer 通过图结构建模会话历史，保留了实体间的关联关系，优于传统的扁平文本处理方法。",
+      "该方法引入了动态记忆压缩策略，能够在有限的上下文预算内最大化信息密度，有效应对 MECW 限制。",
+      "在多个长时任务基准测试中，TokenMizer 显著优于滑动窗口、摘要和检索增强等现有方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

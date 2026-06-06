@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-054",
+  "title": "When Tools Fail: Benchmarking Dynamic Replanning and Anomaly Recovery in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.05806",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一个名为 ToolMaze 的基准测试，专门用于评估大语言模型（LLM）代理在工具集成推理（TIR）中的动态重新规划和异常恢复能力。与现有基准测试仅关注理想化的“快乐路径”不同，ToolMaze 模拟了现实世界中工具可能发生的各种故障，包括显式和隐式扰动。基准测试采用二维设计：基于有向无环图（DAG）的拓扑复杂度，以及一个 2x2 的工具扰动分类法（显式/隐式 × 可追踪/不可追踪）。这有助于区分系统性的重新规划与盲目的试错行为。该工作填补了当前 LLM 代理评估中的一个重要空白，即缺乏对工具故障场景下鲁棒性的系统测试。对于构建可靠、可部署的 LLM 代理系统具有重要参考价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Tool-Integrated Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:13:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 TIR 基准测试忽略工具故障场景，ToolMaze 填补了这一空白，通过 DAG 拓扑和扰动分类法系统评估代理的重新规划能力。",
+      "ToolMaze 的二维设计（拓扑复杂度 + 扰动类型）能有效区分系统性重新规划与盲目试错，为评估代理鲁棒性提供更精细的指标。",
+      "该基准测试揭示了当前 LLM 代理在应对隐式或不可追踪工具故障时的显著弱点，为未来研究指明了改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

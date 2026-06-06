@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-049",
+  "title": "Class-Specific Branch Attention for Mitigating Gradient Interference under Class Imbalance",
+  "source_url": "https://arxiv.org/abs/2606.05740",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对深度神经网络在严重类别不平衡条件下性能下降的问题，提出了一种新的优化层面病理机制：共享表示中的类别间梯度干扰。作者通过层间梯度流分析框架，发现多数类别的梯度会抑制少数类别的学习，从而加剧性能退化。为缓解这一问题，论文提出了一种类别特定分支注意力机制（Class-Specific Branch Attention），该机制通过为不同类别分配独立的注意力分支，在训练过程中动态调整梯度流，减少多数类别对少数类别的梯度干扰。实验表明，该方法在多个基准数据集上显著提升了少数类别的分类准确率，同时保持了多数类别的性能。该工作从优化理论角度揭示了类别不平衡的新挑战，并提供了实用的解决方案，对于提升模型在长尾分布下的泛化能力具有重要价值。",
+  "tags": [
+    "Class Imbalance",
+    "Gradient Interference",
+    "Attention Mechanism",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:12:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "识别出类别不平衡下共享表示中的梯度干扰是导致少数类学习抑制的关键优化级病理",
+      "提出类别特定分支注意力机制，通过动态调整梯度流有效缓解多数类对少数类的干扰",
+      "层间梯度流分析框架为诊断和缓解梯度干扰提供了新的理论工具"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

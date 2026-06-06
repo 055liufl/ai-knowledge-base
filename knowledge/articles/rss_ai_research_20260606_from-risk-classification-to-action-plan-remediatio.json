@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260606-053",
+  "title": "From Risk Classification to Action Plan Remediation: A Guardrail Feedback Driven Framework for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.05805",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于护栏反馈驱动的LLM智能体风险分类与行动计划修复框架。传统护栏通常通过二元决策（允许/拒绝）、风险类别或解释性理由来评估智能体的行动或输入，但智能体风险往往源于看似无害的任务被不可信外部内容、不安全指令或高风险工具使用所污染。现有护栏常将整个任务标记为风险，缺乏细粒度的风险分类和针对性的修复行动。该框架通过引入风险分类模块，将风险细分为不同类别（如数据泄露、指令注入等），并基于分类结果生成具体的行动计划修复建议，例如修改输入、替换工具或调整执行策略。该工作强调了从被动检测到主动修复的转变，提升了智能体在复杂环境中的安全性和鲁棒性。值得关注的是，它提供了一种可解释的、分步骤的风险管理方法，有助于推动LLM智能体在金融、医疗等高风险领域的可靠部署。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Guardrail",
+    "Risk Management"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:12:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有护栏缺乏细粒度风险分类，常将整个任务标记为风险，该框架通过风险分类模块实现更精准的风险识别。",
+      "框架从被动检测转向主动修复，基于风险分类生成具体的行动计划修复建议，如修改输入、替换工具等。",
+      "该方法提升了LLM智能体在复杂环境中的安全性和鲁棒性，尤其适用于高风险领域如金融和医疗。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

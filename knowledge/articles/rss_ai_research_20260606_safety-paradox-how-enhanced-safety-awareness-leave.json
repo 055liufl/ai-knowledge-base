@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-034",
+  "title": "Safety Paradox: How Enhanced Safety Awareness Leaves LLMs Vulnerable to Posterior Attack",
+  "source_url": "https://arxiv.org/abs/2606.05614",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了大语言模型（LLMs）在安全对齐过程中产生的一个悖论：为了拒绝有害请求而训练的安全意识，反而引入了一种致命漏洞。作者提出了一种名为“后验攻击”（Posterior Attack）的单次查询越狱方法，通过利用模型内部分类器对有害内容的识别能力，诱导模型生成其内部已经分类为有害的精确响应。该攻击无需多次迭代或复杂提示，仅需一次查询即可绕过安全护栏。研究指出，安全对齐过程不仅教会模型拒绝有害内容，还赋予了模型评估和识别不安全内容的潜在能力，而这种能力恰恰成为攻击的突破口。该工作揭示了当前安全对齐方法的根本性缺陷，即安全意识的增强可能反而降低模型对特定攻击的鲁棒性，对LLM安全研究具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:11:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全对齐过程赋予LLM的潜在有害内容识别能力，可被逆向利用为攻击向量",
+      "后验攻击仅需单次查询即可绕过安全护栏，无需复杂迭代或对抗性提示",
+      "该发现揭示了安全增强与模型鲁棒性之间的根本性矛盾，对现有对齐方法提出挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

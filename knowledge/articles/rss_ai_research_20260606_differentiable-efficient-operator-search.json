@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-127",
+  "title": "Differentiable Efficient Operator Search",
+  "source_url": "https://arxiv.org/abs/2606.05232",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“可微高效算子搜索”（Differentiable Efficient Operator Search）的框架，旨在自动化设计多模态基础模型中的令牌缩减算子。传统上，令牌缩减算子（如剪枝、合并、池化和自适应重加权）需要人工设计，且在不同任务和模型架构中表现各异。作者通过理论分析发现，这些看似不同的算子实际上可以统一到一个共享的算子空间中，并表现为该空间中的不同模式。基于这一洞察，他们构建了一个可微分的搜索框架，能够联合优化两个关键维度：在何处（即哪些层或模块）进行令牌缩减，以及保留多少令牌。该框架利用梯度下降方法进行高效搜索，避免了传统手动调参或离散搜索的高成本。实验结果表明，搜索得到的算子组合在多个多模态任务（如视觉问答、图像描述等）上显著优于人工设计的基线方法，同时保持了计算效率。这项工作值得关注，因为它不仅提供了一种自动化设计高效模型的新范式，还揭示了不同算子之间的内在联系，为未来多模态模型的高效化设计提供了理论基础和实用工具。",
+  "tags": [
+    "Efficient Multimodal Models",
+    "Token Reduction",
+    "Neural Architecture Search",
+    "Differentiable Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:19:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同令牌缩减算子（如剪枝、合并、池化）可统一到一个共享算子空间，视为不同模式，为自动化搜索提供了理论基础。",
+      "提出的可微搜索框架能联合优化令牌缩减的位置和保留数量，通过梯度下降高效搜索，避免了手动设计的高成本。",
+      "搜索得到的算子组合在多个多模态任务上超越人工基线，验证了自动化搜索的有效性和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

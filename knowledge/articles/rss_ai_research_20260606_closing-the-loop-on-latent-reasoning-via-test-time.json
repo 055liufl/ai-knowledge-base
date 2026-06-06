@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260606-088",
+  "title": "Closing the Loop on Latent Reasoning via Test-Time Reconstruction",
+  "source_url": "https://arxiv.org/abs/2606.06252",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种在潜在空间中进行推理时确保中间状态可验证的方法。传统上，推理过程通过自然语言文本进行，每一步都可被检查和修正。然而，为了减少token开销并避免离散通信瓶颈，近期研究将推理转移到潜在或缓存级别的表示中。但这种转变也带来了新问题：中间状态不再可检查，难以判断潜在状态是否仍保留原始查询的约束。为此，论文提出了一种测试时重建机制，通过重建中间状态来验证其与原始查询的一致性，从而在保持潜在推理效率的同时，恢复可检查性。这项工作对于提升潜在推理的可靠性和可解释性具有重要意义，特别是在需要高可靠性的应用场景中。",
+  "tags": [
+    "Latent Reasoning",
+    "Test-Time Reconstruction",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:16:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在推理虽然减少了token开销，但失去了中间状态的可检查性，导致难以验证推理过程是否偏离原始约束。",
+      "论文提出的测试时重建机制通过重建中间状态，实现了对潜在推理过程的验证，平衡了效率与可解释性。",
+      "该方法为提升潜在推理的可靠性提供了新思路，尤其适用于需要高可信度的AI系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

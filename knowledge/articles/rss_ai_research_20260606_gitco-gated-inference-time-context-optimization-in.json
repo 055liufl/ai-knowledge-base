@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-004",
+  "title": "GITCO: Gated Inference-Time Context Optimization in TSFMs",
+  "source_url": "https://arxiv.org/abs/2606.05332",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GITCO（Gated Inference-Time Context Optimization）的轻量级框架，旨在解决基于补丁的时间序列基础模型（TSFMs）在零样本预测中面临的“上下文中毒”问题。该问题源于结构异常的补丁会不成比例地吸引模型注意力，从而无声地降低预测质量。GITCO通过优化输入上下文而非修改模型权重来提升推理时的准确性。框架包含三个核心组件：Gate（门控）、Router（路由）和Critic（评判器），它们协同工作以识别并减轻异常补丁的影响。该方法无需重新训练模型，具有即插即用的特点，能够显著提升TSFMs在零样本场景下的预测性能。这项工作值得关注，因为它提供了一种高效、实用的解决方案，可广泛应用于金融、能源、气象等依赖时间序列预测的领域，且对现有模型具有很好的兼容性。",
+  "tags": [
+    "Time Series",
+    "Foundation Model",
+    "Inference Optimization",
+    "Context Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:08:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GITCO通过门控机制和路由策略，在推理时动态优化输入上下文，有效缓解了TSFMs中的上下文中毒问题。",
+      "该框架无需修改模型权重或重新训练，具有轻量级和即插即用的特点，便于集成到现有TSFMs中。",
+      "实验表明，GITCO在多个零样本时间序列预测基准上显著提升了准确性，验证了其有效性和通用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

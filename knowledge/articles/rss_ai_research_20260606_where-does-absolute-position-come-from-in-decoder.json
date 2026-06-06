@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-082",
+  "title": "Where does Absolute Position come from in decoder-only Transformers?",
+  "source_url": "https://arxiv.org/abs/2606.06160",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在仅使用旋转位置编码（RoPE）的decoder-only Transformer中，绝对位置信息如何出现在注意力模式中。尽管RoPE在内部乘积中仅编码相对偏移，但实验发现模型仍能区分绝对位置。作者将这种泄露归因于两个架构组件：因果掩码和残差流。因果掩码导致每个查询的softmax分母依赖于绝对查询位置，而残差流中位置0的激活仅能关注自身，从而引入位置偏差。该工作揭示了RoPE与因果注意力结合时隐含的绝对位置信号，对理解Transformer位置编码机制和设计更高效的位置表示方法具有重要理论价值。",
+  "tags": [
+    "Transformer",
+    "Position Encoding",
+    "RoPE",
+    "Causal Attention"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:15:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "因果掩码使得softmax分母依赖于绝对查询位置，这是绝对位置泄露的第一个来源。",
+      "残差流中位置0的激活仅能关注自身，进一步引入了绝对位置偏差。",
+      "RoPE与因果注意力结合时，模型实际上利用了绝对位置信息，尽管RoPE设计初衷是仅编码相对位置。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

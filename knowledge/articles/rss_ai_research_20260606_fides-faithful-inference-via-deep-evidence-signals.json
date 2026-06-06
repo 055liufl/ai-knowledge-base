@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-038",
+  "title": "FIDES: Faithful Inference via Deep Evidence Signals for Retrieval-Memory Conflict in RAG",
+  "source_url": "https://arxiv.org/abs/2606.05644",
+  "source_platform": "rss_ai_research",
+  "summary": "FIDES 提出了一种解决检索增强生成（RAG）中检索证据与模型参数记忆冲突的新方法。当检索到的上下文与模型内部存储的知识相矛盾时，语言模型常会忽略上下文而依赖记忆中的先验知识，这削弱了检索增强的核心价值。现有对比解码方法通过放大上下文条件输出来抑制参数偏差，但假设这种偏差在所有 token 上均匀分布，导致全局对比权重过度惩罚安全 token。FIDES 通过引入细粒度的证据信号，对每个 token 动态调整对比权重，从而更精确地平衡上下文与记忆之间的冲突。该方法在多个基准测试上显著提升了忠实性，同时保持了生成质量。这项工作值得关注，因为它直接针对 RAG 中的关键瓶颈——检索-记忆冲突，并提供了更精细的解决方案，有望推动 RAG 系统在事实性和可靠性方面的进步。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Contrastive Decoding",
+    "Faithfulness"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:11:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FIDES 通过动态 token 级对比权重解决了检索-记忆冲突，优于全局对比解码方法。",
+      "该方法在多个基准测试上显著提升了生成文本的忠实性，同时不损害流畅性。",
+      "FIDES 揭示了现有对比解码方法中均匀偏差假设的局限性，为未来 RAG 忠实性研究提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

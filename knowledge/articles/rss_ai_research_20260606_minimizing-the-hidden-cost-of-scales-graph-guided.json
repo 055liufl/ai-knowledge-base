@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-017",
+  "title": "Minimizing the Hidden Cost of Scales: Graph-Guided Ultra-Low-Bit Quantization for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.05429",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SAGE-PTQ（Saliency-Aware Graph-guided Efficient PTQ）的新型超低位量化框架，旨在解决大语言模型（LLM）后训练量化（PTQ）中隐藏的缩放成本问题。现有超低位 PTQ 方法通常依赖刚性的权重显著性假设或位置启发式，导致引入大量隐藏缩放开销。SAGE-PTQ 通过图引导的方式区分显著和非显著权重，从而最小化缩放成本。该框架结合了显著性感知和图结构信息，能够更高效地分配量化资源，在保持模型性能的同时显著降低计算和存储开销。这项工作对于 LLM 的高效部署具有重要意义，尤其是在资源受限的边缘设备上。它提供了一种新的视角来优化量化过程，有望推动 LLM 在实际应用中的广泛采用。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "PTQ",
+    "Graph-Guided"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:09:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAGE-PTQ 通过图引导的显著性感知机制，有效区分显著和非显著权重，从而最小化隐藏缩放成本。",
+      "该框架克服了传统超低位 PTQ 方法依赖刚性假设的局限性，提升了量化效率。",
+      "SAGE-PTQ 在保持模型性能的同时显著降低了计算和存储开销，有利于 LLM 在资源受限环境中的部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260606-083",
+  "title": "ProSarc: Prosody-Aware Sarcasm Recognition Framework via Temporal Prosodic Incongruity",
+  "source_url": "https://arxiv.org/abs/2606.06168",
+  "source_platform": "rss_ai_research",
+  "summary": "ProSarc 是一种基于音频的讽刺检测框架，通过建模时间韵律不一致性来识别讽刺。该框架利用双编码路径：全局情感编码器捕捉话语级情感基线，时间韵律编码器（基于BiLSTM和多头注意力机制）提取局部韵律动态。两者输入韵律不一致性分析器，生成标量不一致性分数用于分类。此外，采用蒙特卡洛丢弃法提供不确定性估计，增强模型可靠性。该研究首次将时间韵律不一致性作为讽刺检测的核心特征，突破了传统文本或单一音频特征方法的局限，为情感计算和自然语言处理领域提供了新的视角。由于讽刺在人类交流中普遍存在且难以被机器识别，ProSarc 在对话系统、社交媒体分析和人机交互中具有重要应用价值。其创新性在于将韵律动态与情感基线对比，并引入不确定性量化，提升了模型的鲁棒性和解释性。",
+  "tags": [
+    "Sarcasm Detection",
+    "Prosody",
+    "Audio Processing",
+    "Emotion Recognition"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:15:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次提出时间韵律不一致性作为讽刺检测的核心特征，通过局部韵律与全局情感基线的对比实现分类。",
+      "双编码路径设计（全局情感编码器+时间韵律编码器）有效捕捉多尺度音频特征，BiLSTM与多头注意力机制增强了时序建模能力。",
+      "蒙特卡洛丢弃法引入不确定性估计，提升了模型在真实场景中的鲁棒性和可信度。",
+      "该框架为音频-only的讽刺检测提供了新范式，可扩展至其他情感识别任务（如反语、幽默）。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

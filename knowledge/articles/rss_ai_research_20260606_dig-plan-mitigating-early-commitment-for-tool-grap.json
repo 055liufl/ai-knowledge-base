@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-047",
+  "title": "DiG-Plan: Mitigating Early Commitment for Tool-Graph Planning via Diffusion Guidance",
+  "source_url": "https://arxiv.org/abs/2606.05728",
+  "source_platform": "rss_ai_research",
+  "summary": "DiG-Plan 是一篇研究论文，提出了一种基于扩散引导的工具图规划方法，旨在解决标准自回归解码中存在的早期承诺问题。在工具规划任务中，从庞大的工具库中选择合适的子集是一个组合搜索问题，解空间呈指数级增长。标准自回归解码在生成初始 token 时容易过早确定搜索方向，导致后续选择受限，从而错过更优解。作者通过受控实验证明，掩码去噪方法能够显著提高 Pass@10 指标，即在前 10 次尝试中找到有效解的概率。该工作将扩散模型引入工具规划领域，为复杂工具组合问题提供了新的解决思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Tool Planning",
+    "Diffusion Model",
+    "Autoregressive Decoding",
+    "Combinatorial Search"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:12:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准自回归解码在工具规划中因早期承诺问题导致搜索空间受限，初始 token 选择会刚性约束后续路径。",
+      "掩码去噪方法通过逐步细化解空间，有效缓解了早期承诺问题，提升了 Pass@10 指标。",
+      "扩散模型为工具图规划提供了新的范式，有望在复杂组合优化任务中替代传统自回归方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

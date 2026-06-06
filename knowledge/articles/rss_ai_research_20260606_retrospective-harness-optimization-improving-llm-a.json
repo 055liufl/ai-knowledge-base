@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260606-060",
+  "title": "Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts",
+  "source_url": "https://arxiv.org/abs/2606.05922",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“回顾性工具集优化”（Retrospective Harness Optimization, RHO）的自监督方法，旨在改进大型语言模型（LLM）智能体的工具集、技能和工作流。当前，AI智能体依赖复杂的工具集（harness）来解决复杂问题，但持续优化这一工具集对于适应新任务至关重要。然而，现有的优化方法通常需要真实标注的验证集，这在实际部署中难以获取。RHO通过利用智能体在轨迹回滚（trajectory rollouts）中的自我偏好（self-preference）进行优化，无需外部标注数据。该方法使智能体能够从自身成功与失败的尝试中学习，自动调整其工具调用策略和工作流，从而提升在未见任务上的表现。该工作值得关注，因为它解决了LLM智能体在无监督环境下持续学习的关键瓶颈，具有重要的实用价值，尤其适用于动态变化的实际应用场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Self-Supervised Learning",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-06T10:04:42Z",
+  "collected_at": "2026-06-06T10:13:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RHO是一种自监督方法，无需真实标注数据即可优化LLM智能体的工具集和工作流，解决了实际部署中数据稀缺的问题。",
+      "该方法通过智能体在轨迹回滚中的自我偏好进行学习，使智能体能够从自身成功与失败的尝试中自动调整策略。",
+      "RHO提升了智能体在未见任务上的适应性和表现，为LLM智能体的持续学习和自主优化提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
