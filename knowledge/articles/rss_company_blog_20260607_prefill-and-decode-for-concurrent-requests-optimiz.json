@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260607-126",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在并发请求场景下优化大型语言模型（LLM）性能的关键技术——Prefill（预填充）和Decode（解码）阶段的优化策略。文章指出，LLM推理通常分为两个阶段：Prefill阶段处理输入提示并生成键值缓存（KV Cache），Decode阶段逐步生成输出token。在并发请求下，这两个阶段会相互影响，导致资源竞争和延迟增加。作者提出了几种优化方法，包括动态批处理（Dynamic Batching）、连续批处理（Continuous Batching）、KV缓存共享（KV Cache Sharing）以及请求调度策略（如优先处理Prefill或Decode）。这些技术能够显著提升GPU利用率、降低首token延迟（TTFT）和总生成时间。文章还提供了实际性能基准测试结果，展示了优化前后的吞吐量和延迟对比。该内容对LLM推理引擎开发者、系统优化工程师以及关注AI基础设施的团队具有重要参考价值，因为它直接关系到如何高效部署大规模语言模型服务，降低运营成本并提升用户体验。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Batching",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-06-07T10:29:59Z",
+  "collected_at": "2026-06-07T10:41:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill和Decode阶段的资源竞争是并发LLM推理性能瓶颈的核心，通过动态或连续批处理可有效缓解。",
+      "KV缓存共享技术能减少重复计算，特别适用于多轮对话或相似提示的并发请求场景。",
+      "合理的请求调度策略（如优先处理Prefill以降低TTFT）对提升用户体验至关重要。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

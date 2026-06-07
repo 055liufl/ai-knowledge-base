@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260607-062",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是MiniMax团队关于其M2模型在智能体泛化能力上的技术博客。核心观点是：传统的对齐方法（如RLHF）主要优化模型在单轮对话中的表现，但智能体需要的是在复杂、多步交互环境中的泛化能力。MiniMax提出了一种新的对齐框架，通过构建一个包含多种工具调用、多轮交互和任务规划的训练环境，让模型在模拟的智能体任务中进行强化学习。实验表明，经过这种对齐的M2模型在未见过的工具和任务上展现出显著的泛化能力，超越了仅通过指令微调或传统RLHF的模型。该工作重新定义了智能体对齐的目标——从“对齐人类偏好”转向“对齐任务完成能力”，为构建更通用的AI助手提供了新思路。值得关注的是，它揭示了当前大模型在真实世界应用中面临的关键瓶颈：如何从静态对话转向动态任务执行。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-07T10:29:59Z",
+  "collected_at": "2026-06-07T10:37:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对齐方法（如RLHF）优化的是对话质量，而非智能体在复杂任务中的泛化能力，导致模型在工具调用、多步规划等场景下表现不佳。",
+      "MiniMax提出了一种面向智能体任务的对齐框架，通过在模拟环境中进行强化学习，使模型学会在未见过的工具和任务上泛化。",
+      "实验证明，经过这种对齐的M2模型在零样本工具调用和任务规划上显著优于基线，表明对齐目标应从“人类偏好”转向“任务完成能力”。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
