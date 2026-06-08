@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-045",
+  "title": "Attention Consistent Longitudinal Medical Visual Question Answering Guided by Vision Foundation Models",
+  "source_url": "https://arxiv.org/abs/2606.06534",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于注意力机制的编码器-解码器模型，用于纵向医学视觉问答（VQA）任务，特别针对胸部X光图像。传统方法直接对比当前时间点和参考时间点的图像，但受限于患者运动导致的配准误差。本文创新性地引入了一个轻量级仿射配准模块，将当前图像与参考图像进行共配准，以减少非病理性的运动伪影。随后，模型利用注意力机制聚焦于解剖结构变化区域，从而更准确地回答关于疾病进展或治疗效果的临床问题。这项工作值得关注，因为它将视觉基础模型（如预训练的医学图像编码器）与配准技术结合，提升了纵向医学影像分析的鲁棒性和可解释性，为临床决策支持系统提供了新思路。实验在公开数据集上验证了其有效性，相比基线方法在问答准确率上有显著提升。",
+  "tags": [
+    "Medical VQA",
+    "Longitudinal Analysis",
+    "Attention Mechanism",
+    "Image Registration",
+    "Chest X-ray"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:36:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "引入轻量级仿射配准模块有效减少了患者运动引起的图像差异，提升了纵向VQA的鲁棒性。",
+      "注意力机制能够自动聚焦于解剖结构变化区域，增强了模型对疾病进展的推理能力。",
+      "该方法在胸部X光数据集上优于传统直接对比方法，展示了视觉基础模型在医学影像分析中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

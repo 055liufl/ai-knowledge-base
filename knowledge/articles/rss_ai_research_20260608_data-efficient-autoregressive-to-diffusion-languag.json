@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260608-071",
+  "title": "Data-Efficient Autoregressive-to-Diffusion Language Models via On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2606.06712",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了将自回归语言模型（ARLM）高效转换为扩散语言模型（DLM）的方法。与从头预训练不同，现有方法通常将ARLM中的因果注意力替换为双向注意力，并使用DLM目标进行训练。然而，这种方法面临两种分布偏移：一是从下一词预测目标转向DLM目标可能导致ARLM学到的知识被丢弃；二是训练数据分布与模型实际生成分布之间的差异。为了解决这些问题，本文提出了一种基于策略蒸馏（on-policy distillation）的数据高效转换方法，通过利用ARLM的生成能力来生成与模型分布一致的训练数据，从而减少分布偏移并提升DLM的生成质量。实验表明，该方法在多个文本生成任务上显著优于现有转换方法，且所需数据量大幅减少。这项工作为从预训练ARLM高效构建高质量DLM提供了新思路，具有重要的实用价值。",
+  "tags": [
+    "Diffusion Language Models",
+    "Autoregressive Models",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:38:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种基于策略蒸馏的方法，有效缓解了从ARLM到DLM转换中的分布偏移问题。",
+      "通过利用ARLM的生成能力生成与模型分布一致的训练数据，显著减少了所需训练数据量。",
+      "在多个文本生成任务上验证了方法的有效性，为高效构建DLM提供了新路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

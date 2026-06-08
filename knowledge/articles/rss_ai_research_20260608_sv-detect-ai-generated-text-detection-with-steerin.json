@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260608-140",
+  "title": "SV-Detect: AI-generated Text Detection with Steering Vectors",
+  "source_url": "https://arxiv.org/abs/2606.07313",
+  "source_platform": "rss_ai_research",
+  "summary": "SV-Detect 提出了一种基于引导向量（steering vectors）的机器生成文本检测方法。该方法从冻结的语言模型的隐藏表示中提取引导向量，在每个层构建一个方向来区分人类撰写文本与机器生成文本，并通过输入与这些方向的逐层对齐程度来进行检测。该方法特别关注在分布偏移（如跨领域、跨源模型和编辑攻击）下的检测鲁棒性。实验表明，SV-Detect 在多种分布偏移场景下均优于现有方法，且无需对检测模型进行微调或重新训练。这项工作为 AI 生成文本检测提供了一种高效、可迁移的新范式，对于维护信息真实性、防止虚假内容传播具有重要意义。",
+  "tags": [
+    "AI生成文本检测",
+    "引导向量",
+    "分布偏移",
+    "语言模型"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:44:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用冻结语言模型的隐藏表示提取引导向量，无需微调即可实现高效检测。",
+      "逐层对齐机制增强了模型在跨领域、跨模型和编辑攻击下的鲁棒性。",
+      "为 AI 生成文本检测提供了一种可迁移、低成本的解决方案，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

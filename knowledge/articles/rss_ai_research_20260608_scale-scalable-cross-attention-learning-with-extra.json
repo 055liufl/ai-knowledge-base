@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-087",
+  "title": "SCALE: Scalable Cross-Attention Learning with Extrapolation for Agentic Workflow Scheduling",
+  "source_url": "https://arxiv.org/abs/2606.06820",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SCALE的可扩展交叉注意力学习调度器，用于解决智能体大语言模型（LLM）系统中工作流有向无环图（DAG）在异构集群上的调度问题。现有基于深度强化学习（DRL）的调度器通常绑定固定集群规模，当服务器数量变化时需要重新训练，缺乏泛化能力。SCALE通过引入交叉注意力机制和可扩展学习策略，使得调度器能够泛化到未见过的集群规模，无需重新训练。该方法利用交叉注意力捕捉任务与服务器之间的动态关系，并通过外推技术适应集群大小的变化。实验表明，SCALE在多种集群配置下均能保持高效的调度性能，显著优于传统固定规模调度器。该工作对于提升智能体LLM系统的部署灵活性和资源利用率具有重要意义，尤其适用于云环境或动态扩展的计算集群。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "DRL",
+    "Scheduling",
+    "Cross-Attention"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:39:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SCALE通过交叉注意力机制实现任务与服务器间的动态关系建模，支持对未见集群规模的泛化调度。",
+      "该方法解决了现有DRL调度器因固定集群规模而需频繁重训练的核心痛点，提升了实际部署的灵活性。",
+      "实验验证了SCALE在异构集群和动态规模变化场景下的高效性，为智能体工作流调度提供了可扩展的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

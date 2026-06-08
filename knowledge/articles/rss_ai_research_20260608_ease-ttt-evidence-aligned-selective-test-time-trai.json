@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260608-100",
+  "title": "EASE-TTT: Evidence-Aligned Selective Test-Time Training for Long-Context Question Answering",
+  "source_url": "https://arxiv.org/abs/2606.06906",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为EASE-TTT（证据对齐的选择性测试时训练）的方法，旨在解决长上下文问答（Long-Context QA）中小型语言模型即使输入中包含答案证据仍表现不佳的问题。现有方法通过上下文内检索定位并展示候选证据片段，但仅停留在输入级别的证据暴露，而未调整控制模型在整个上下文位置上注意力分配的查询侧注意力参数。EASE-TTT通过测试时训练（Test-Time Training）机制，在推理阶段动态调整模型注意力参数，使其更对齐于证据片段，从而提升长上下文问答的准确性。该方法具有创新性，因为它将测试时训练应用于注意力参数微调，而非传统模型权重更新，且选择性地仅对关键证据进行对齐，避免了计算开销。该研究对于提升小型模型在长文档、多跳问答等场景下的性能具有实际意义，尤其适用于资源受限环境。",
+  "tags": [
+    "Test-Time Training",
+    "Long-Context QA",
+    "Attention Alignment",
+    "Small Language Models"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:40:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EASE-TTT通过测试时训练动态调整注意力参数，而非传统权重更新，实现证据对齐。",
+      "选择性对齐策略仅针对关键证据片段，降低计算开销并提升长上下文问答性能。",
+      "该方法弥补了现有上下文检索方法仅停留于输入级证据暴露的不足，直接优化注意力分配机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

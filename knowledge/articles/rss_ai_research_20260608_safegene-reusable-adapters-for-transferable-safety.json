@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260608-003",
+  "title": "SafeGene: Reusable Adapters for Transferable Safety Alignment",
+  "source_url": "https://arxiv.org/abs/2606.06519",
+  "source_platform": "rss_ai_research",
+  "summary": "SafeGene 提出了一种可复用的安全适配器模块，旨在解决开源大语言模型（LLM）在下游微调过程中安全对齐被削弱的问题。随着模型被频繁更新以适应新任务或用户交互，原有的安全防护可能失效，导致模型对恶意提示的脆弱性增加。SafeGene 通过设计一个轻量级、可插拔的安全适配器，使其能够跨任务复用，从而在模型更新后快速恢复安全对齐，而无需重新进行昂贵的完整安全训练。该方法基于参数高效微调（PEFT）技术，将安全知识封装在适配器中，并利用对抗性训练和正则化策略增强其泛化能力。实验表明，SafeGene 在多种下游任务（如对话、代码生成）中有效提升了模型对有害输入的鲁棒性，同时保持了任务性能。这项工作值得关注，因为它解决了 LLM 部署中一个关键的实际问题——安全维护的可持续性，为构建更可靠、可维护的 AI 系统提供了新思路。",
+  "tags": [
+    "LLM",
+    "Safety Alignment",
+    "Adapter",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:32:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "下游微调会系统性削弱 LLM 的安全对齐，即使训练数据无害，也需要可复用的安全恢复机制。",
+      "SafeGene 通过可插拔适配器实现跨任务安全知识迁移，避免了重复训练，提升了安全维护效率。",
+      "该方法结合对抗性训练与正则化，在保持任务性能的同时显著增强了对恶意提示的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

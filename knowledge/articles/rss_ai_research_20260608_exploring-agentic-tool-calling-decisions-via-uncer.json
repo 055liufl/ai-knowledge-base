@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-020",
+  "title": "Exploring Agentic Tool-Calling Decisions via Uncertainty-Aligned Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2606.06976",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于不确定性对齐的强化学习方法（Uncertainty-Aligned Reinforcement Learning, UARL），用于优化大语言模型（LLM）智能体的工具调用决策。现有LLM智能体在工具使用中常出现两种错误：一是调用不支持的或无关的工具，二是直接生成幻觉性回答而不调用工具，这些错误在多步交互中会累积。传统方法多依赖推理时修正或基于决策结果和结构化清单的粗粒度奖励信号，忽略了决策过程中的不确定性特征。UARL通过引入不确定性感知的奖励函数，将模型对工具调用决策的置信度与强化学习信号对齐，从而更精细地引导智能体在不确定时优先调用工具、在确定时直接回答。实验表明，该方法在多个工具使用基准上显著提升了决策准确率和任务完成率，减少了错误累积。该工作值得关注，因为它首次将不确定性建模与强化学习结合用于智能体工具调用，为提升LLM智能体的可靠性和鲁棒性提供了新思路，尤其对复杂多步推理任务具有重要实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Tool Use",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:34:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将不确定性建模与强化学习结合，提出不确定性对齐的奖励函数，用于优化LLM智能体的工具调用决策。",
+      "通过感知模型决策的置信度，UARL能更精细地区分何时应调用工具、何时可直接回答，减少错误累积。",
+      "实验证明该方法在多个工具使用基准上显著提升决策准确率和任务完成率，优于传统推理时修正和粗粒度奖励方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

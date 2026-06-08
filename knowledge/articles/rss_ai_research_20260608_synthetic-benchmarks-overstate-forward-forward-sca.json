@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260608-047",
+  "title": "Synthetic Benchmarks Overstate Forward-Forward Scaling: Real-Data Limits of Layer-Local Training",
+  "source_url": "https://arxiv.org/abs/2606.06539",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对前向-前向（Forward-Forward, FF）学习算法进行了严格的实证分析，指出其在合成基准测试上的表现被高估，而在真实数据场景下存在根本性局限。作者提出了DTG-FF（动态温度 goodness、解耦归一化、多层融合）作为改进工具，旨在缩小FF与反向传播（BP）在32x32基准上的差距。然而，通过系统实验发现，FF算法在真实数据分布上的扩展性受限于层局部训练的本质缺陷，例如梯度信息丢失和表示能力不足。研究强调，尽管FF在特定合成任务上表现良好，但在实际应用中（如CIFAR-10/100）仍远落后于BP，且其优势随数据复杂度增加而消失。该工作对理解无反向传播训练范式的边界具有重要意义，提醒社区避免过度依赖合成基准的乐观结论。",
+  "tags": [
+    "Forward-Forward",
+    "layer-local training",
+    "backpropagation",
+    "benchmark",
+    "deep learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:36:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Forward-Forward算法在合成基准上的性能被高估，真实数据场景下扩展性受限。",
+      "DTG-FF改进虽缩小了与BP在32x32基准上的差距，但无法克服层局部训练的本质限制。",
+      "随着数据复杂度增加，FF与BP的性能差距显著扩大，表明其在实际应用中不可行。",
+      "研究警示社区应谨慎对待基于合成基准的乐观结论，需在真实数据上验证算法有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

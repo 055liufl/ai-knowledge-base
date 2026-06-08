@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260608-002",
+  "title": "Config Files That Run Code: Supply Chain Security Blindspot",
+  "source_url": "https://safedep.io/config-files-that-run-code/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文探讨了配置文件中执行代码的安全盲点，特别是那些看似无害的配置文件（如 YAML、JSON、TOML 等）在解析过程中可能触发代码执行的风险。文章指出，许多现代工具和框架（如 Kubernetes、Ansible、Terraform、npm、pip 等）在解析配置文件时，会隐式或显式地执行其中的代码，这为供应链攻击提供了新的入口。攻击者可以通过篡改配置文件中的特定字段或利用解析器的漏洞，在目标系统上执行任意代码，从而绕过传统的安全检测机制。文章强调了这种攻击方式的隐蔽性和危害性，并提出了相应的防御建议，包括对配置文件进行严格的输入验证、使用沙箱环境解析配置、以及定期审计配置文件的来源和内容。该内容对于理解软件供应链安全中的新兴威胁具有重要价值，尤其提醒开发者和安全从业者关注配置文件的执行风险。",
+  "tags": [
+    "Supply Chain Security",
+    "Configuration Files",
+    "Code Execution",
+    "Security Blindspot"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:31Z",
+  "collected_at": "2026-06-08T12:31:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "配置文件在解析过程中可能隐式执行代码，成为供应链攻击的新载体。",
+      "攻击者可通过篡改配置文件中的特定字段或利用解析器漏洞实现远程代码执行。",
+      "传统安全检测机制难以发现配置文件中的代码执行风险，需加强输入验证和沙箱解析。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260608-060",
+  "title": "Direct 3D-Aware Object Insertion via Decomposed Visual Proxies",
+  "source_url": "https://arxiv.org/abs/2606.06601",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 DIRECT 的新框架，用于实现 3D 感知的对象插入。与现有基于扩散模型的方法不同，DIRECT 不是将插入视为简单的 2D 修复任务，而是通过分解视觉代理（Decomposed Visual Proxies）来显式控制对象的 3D 姿态。该方法将参考对象分解为多个视觉代理，包括形状、纹理和深度信息，然后通过一个集成模块将这些代理注入到背景图像的指定区域。DIRECT 能够生成具有正确 3D 姿态、光照和透视关系的合成图像，显著提升了对象插入的真实感和可控性。该工作解决了当前扩散模型在对象插入任务中缺乏 3D 几何控制的关键问题，具有重要的实际应用价值，例如在图像编辑、增强现实和虚拟内容创作中。通过实验，DIRECT 在多个基准数据集上展示了优于现有方法的性能，特别是在保持对象几何一致性和背景融合方面。",
+  "tags": [
+    "3D-aware",
+    "Object Insertion",
+    "Diffusion Models",
+    "Image Editing"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:37:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DIRECT 通过分解视觉代理（形状、纹理、深度）实现了对插入对象 3D 姿态的显式控制，克服了现有 2D 修复方法的局限性。",
+      "该框架在保持对象几何一致性和背景融合方面优于现有扩散模型方法，显著提升了合成图像的真实感。",
+      "DIRECT 为图像编辑、增强现实等应用提供了更可控且实用的对象插入解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

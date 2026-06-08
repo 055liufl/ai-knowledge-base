@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-130",
+  "title": "RETROSPECT: RETROsynthesis via Sequential Prediction, and Chemically Transformed-ranking",
+  "source_url": "https://arxiv.org/abs/2606.07181",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 RETROSPECT 的单步逆合成预测系统，将逆合成任务分解为候选生成和候选排序两个阶段。在生成阶段，使用名为 ChemAlign Transformer 的单一 Transformer 模型作为提议模型，生成丰富的候选分子列表。在排序阶段，采用 LambdaMART 排序模型，结合结构特征、反应模板特征、上游得分以及可选的 DFT 衍生描述符，对候选列表进行重新排序，以提升首位推荐的准确性和候选列表的整体质量。该系统在标准逆合成基准数据集上进行了评估，实验结果表明，RETROSPECT 在首位推荐准确率和候选列表的多样性方面均优于现有方法。该工作值得关注，因为它提出了一种新颖的分解式框架，将生成与排序分离，并引入了多种化学特征进行排序，有效提升了逆合成预测的实用性和可靠性，对药物发现和化学合成路径规划具有重要价值。",
+  "tags": [
+    "逆合成",
+    "Transformer",
+    "LambdaMART",
+    "排序",
+    "化学信息学"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:43:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将单步逆合成分解为候选生成和候选排序两个独立阶段，提升了系统的灵活性和性能。",
+      "ChemAlign Transformer 作为生成模型，能够产生丰富且多样的候选分子列表。",
+      "LambdaMART 排序器融合了结构、反应模板、上游得分和 DFT 描述符等多维特征，显著提高了首位推荐的准确性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260608-050",
+  "title": "FAIR-Calib: Frontier-Aware Instability-Reweighted Calibration for Post-Training Quantization of Diffusion Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.06547",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为FAIR-Calib（Frontier-Aware Instability-Reweighted Calibration）的新型后训练量化校准方法，专门针对扩散大语言模型（dLLMs）的量化误差问题。dLLMs通过迭代方式逐步精炼token，但一旦提交则不可逆，导致早期决策存在“稳定性滞后”现象，即这些决策在写入后仍可能脆弱。研究发现，后训练量化（PTQ）误差容易在写入前沿（write frontier）翻转这些边界决策，而这些错误随后被永久锁定并放大。FAIR-Calib通过识别量化过程中不稳定的前沿区域，并对这些区域进行重加权校准，从而有效抑制量化误差的传播和放大。该方法在多个dLLM模型上验证了其有效性，显著提升了量化后的模型性能，同时保持了极低的计算开销。该工作对于推动dLLMs在资源受限设备上的部署具有重要意义，解决了量化过程中特有的稳定性问题。",
+  "tags": [
+    "Diffusion LLM",
+    "Post-Training Quantization",
+    "Calibration",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:36:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "揭示了扩散大语言模型中量化误差在写入前沿被翻转并永久放大的机制，即“稳定性滞后”问题。",
+      "提出了前沿感知的不稳定性重加权校准方法（FAIR-Calib），通过识别不稳定区域并重加权校准来抑制误差传播。",
+      "在多个dLLM模型上验证了FAIR-Calib的有效性，显著提升了量化后模型的性能，且计算开销极低。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

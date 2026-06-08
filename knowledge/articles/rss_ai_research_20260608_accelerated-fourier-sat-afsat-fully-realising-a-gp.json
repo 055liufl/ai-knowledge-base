@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-009",
+  "title": "Accelerated Fourier SAT (AFSAT): Fully Realising a GPU-based Symmetric Pseudo-Boolean SAT Solver",
+  "source_url": "https://arxiv.org/abs/2606.06641",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了加速傅里叶SAT（AFSAT），一种基于连续局部搜索（CLS）的GPU加速伪布尔可满足性求解器。AFSAT将概念验证方法FastFourierSAT实现为一个完全工程化的求解器，支持单个问题实例中任意异构混合的对称约束类型和长度。通过使用JAX编译器，AFSAT利用纯函数组合、自动向量化和自动微分，在GPU上高效执行。该工作值得关注，因为它将SAT求解这一经典计算问题与现代GPU并行计算和自动微分技术相结合，显著提升了求解效率，尤其适用于处理大规模、结构复杂的伪布尔问题。AFSAT的发布标志着SAT求解器在硬件加速和软件工程化方面的重要进展，有望推动相关领域如组合优化、形式化验证和人工智能推理的实际应用。",
+  "tags": [
+    "SAT",
+    "GPU",
+    "Pseudo-Boolean",
+    "JAX",
+    "Continuous Local Search"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:33:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AFSAT通过JAX编译器实现纯函数组合和自动向量化，在GPU上高效执行连续局部搜索，显著加速伪布尔SAT求解。",
+      "该求解器支持任意异构混合的对称约束类型和长度，增强了处理复杂实际问题的灵活性。",
+      "将经典SAT求解与现代自动微分技术结合，为SAT领域引入新的计算范式，具有较高的创新性和实用性。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

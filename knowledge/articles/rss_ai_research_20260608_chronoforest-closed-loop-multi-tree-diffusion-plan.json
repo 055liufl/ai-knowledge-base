@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-063",
+  "title": "ChronoForest: Closed-Loop Multi-Tree Diffusion Planning for Efficient Bridge Search and Route Composition",
+  "source_url": "https://arxiv.org/abs/2606.06618",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ChronoForest 的新型规划框架，用于在仅提供短视离线轨迹的情况下，高效地规划长视距路线，使其能够到达指定目标、访问必经路径点并保持路径最短。该框架通过构建多个扩散树（multi-tree diffusion）并引入闭环反馈机制（closed-loop），在树之间进行桥接搜索（bridge search）和路径组合（route composition），从而克服了传统方法在长距离规划中数据稀疏和组合爆炸的难题。ChronoForest 的核心创新在于将扩散模型与树搜索相结合，利用扩散过程生成局部路径片段，再通过树结构高效组合这些片段，同时通过闭环反馈不断修正路径质量。该方法在离线导航场景中具有重要价值，因为实际智能体往往难以获取丰富的长视距数据，但必须完成具有路线效率要求的复杂任务。实验结果表明，ChronoForest 在多个基准测试中显著优于现有方法，能够生成更短、更可靠的路线。这项工作为离线强化学习和机器人导航领域提供了一种新的高效规划范式，值得关注。",
+  "tags": [
+    "Diffusion Model",
+    "Planning",
+    "Navigation",
+    "Tree Search"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:37:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ChronoForest 通过多树扩散和闭环桥接搜索，有效解决了仅依赖短视离线轨迹进行长视距路线规划的难题。",
+      "该方法将扩散模型的生成能力与树搜索的组合效率结合，实现了路径片段的高效组合与优化。",
+      "闭环反馈机制能够动态修正路径质量，提升最终路线的全局最优性和鲁棒性。",
+      "在离线导航场景中，ChronoForest 显著优于现有方法，为实际智能体执行复杂长距离任务提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

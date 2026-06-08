@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-103",
+  "title": "The Fine-Tuning Trap: Evaluating Negative Transfer and the Role of PEFT in Sub-1B Mathematical Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.06920",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究聚焦于在边缘设备上部署小语言模型（SLM）时面临的微调挑战，特别是针对数学推理任务。研究团队对五个参数规模在135M至1B之间的模型进行了全面基准测试，发现了一个关键问题：对于参数低于300M的模型，全参数微调（Full FT）会主动损害性能，导致准确率低于零样本基线，这种现象被称为“负迁移”。研究进一步探讨了参数高效微调（PEFT）方法（如LoRA、Adapter等）在缓解这一问题上的作用。结果表明，PEFT能够有效减少负迁移，在保持模型通用能力的同时提升数学推理性能。这项研究揭示了小模型微调中的陷阱，为边缘设备上的模型部署提供了重要指导，强调了PEFT在资源受限场景下的关键价值。其创新性在于系统性地量化了负迁移与模型规模的关系，并提供了实用的微调策略建议。",
+  "tags": [
+    "SLM",
+    "PEFT",
+    "数学推理",
+    "负迁移",
+    "边缘计算"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:41:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全参数微调对300M以下的小模型在数学推理任务中会造成显著的负迁移，性能甚至低于零样本基线。",
+      "参数高效微调（PEFT）方法能有效缓解负迁移，是部署小模型到边缘设备的关键策略。",
+      "模型规模与微调策略之间存在强相关性，小模型需要更谨慎的微调方法以避免能力退化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

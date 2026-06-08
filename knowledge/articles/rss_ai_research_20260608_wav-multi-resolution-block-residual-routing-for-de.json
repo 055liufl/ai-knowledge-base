@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260608-056",
+  "title": "WAV: Multi-Resolution Block Residual Routing for Deep Decoder-Only Transformers",
+  "source_url": "https://arxiv.org/abs/2606.06564",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为WAV（多分辨率块残差路由）的新方法，旨在改进深度仅解码器Transformer中的残差连接机制。传统的PreNorm残差流使用固定的单位权重聚合子层更新，而近期的工作如Attention Residuals引入了内容相关的深度路由，Block Attention Residuals则通过块级残差摘要提高效率。然而，单个块摘要仅存储低频总残差位移，忽略了高频细节。WAV通过多分辨率块残差路由，同时捕获残差信号中的低频和高频成分，从而更有效地路由信息。实验表明，该方法在语言建模任务上优于基线模型，特别是在深层Transformer中显著提升了训练稳定性和性能。该研究对于理解深度Transformer的残差学习机制具有重要理论意义，并为设计更高效的深层架构提供了实用方案。值得关注的是，它解决了深层网络中信息流动的瓶颈问题，可能对大规模语言模型的训练和部署产生积极影响。",
+  "tags": [
+    "Transformer",
+    "Residual Connections",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:37:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "WAV通过多分辨率块残差路由同时捕获低频和高频残差信息，克服了传统单块摘要的局限性。",
+      "该方法在深度仅解码器Transformer中显著提升了训练稳定性和语言建模性能。",
+      "WAV为设计更高效的深层架构提供了新思路，可能推动大规模语言模型的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260608-004",
+  "title": "Lean4Agent: Formal Modeling and Verification for Agent Workflow and Trajectory",
+  "source_url": "https://arxiv.org/abs/2606.06523",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出Lean4Agent，一个基于Lean4定理证明器的形式化建模与验证框架，用于对智能体工作流和执行轨迹进行严格的形式化验证。当前大语言模型（LLM）驱动的智能体系统在执行多步任务时，常因自然语言描述的歧义性导致行为不可靠，缺乏类似数学证明的严谨性。Lean4Agent借鉴了数学中通过形式化语言消除歧义的方法，将智能体的工作流（如任务分解、工具调用、状态转换）和执行轨迹（如每一步的输入输出、中间状态）编码为Lean4中的可验证命题，从而能够自动检测逻辑错误、死锁、资源冲突等问题。该框架支持对智能体行为进行模块化建模，并提供反例生成机制辅助调试。实验表明，Lean4Agent能够有效发现现有智能体系统（如ReAct、Plan-and-Solve）中的隐含错误，并提升任务成功率。这项工作将形式化验证引入智能体领域，为构建可靠、可解释的LLM智能体系统提供了新范式，尤其适用于金融、医疗等对安全性要求极高的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Formal Verification",
+    "Lean4",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-06-08T12:29:33Z",
+  "collected_at": "2026-06-08T12:32:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Lean4Agent利用定理证明器Lean4对智能体工作流进行形式化建模，将自然语言描述的歧义性转化为可验证的数学命题，显著提升系统可靠性。",
+      "该框架支持模块化建模和自动反例生成，能够检测现有智能体系统（如ReAct）中的逻辑错误、死锁和资源冲突，弥补了当前智能体开发中缺乏形式化验证工具的空白。",
+      "实验证明形式化验证可有效提升多步任务成功率，为LLM智能体在安全关键领域的部署提供了理论支撑和实用工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}
