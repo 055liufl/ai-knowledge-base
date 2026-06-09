@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-002",
+  "title": "OmniMem: Perturbation-aware Memory Compression for Streaming Audio-Visual LLMs",
+  "source_url": "https://arxiv.org/abs/2606.07577",
+  "source_platform": "rss_ai_research",
+  "summary": "OmniMem 是一种针对流式音频-视频大语言模型（LLMs）设计的记忆高效压缩框架。该框架的核心创新在于其模态感知的记忆分配策略，与现有对所有令牌一视同仁的压缩方法不同，OmniMem 能够根据音频和视频令牌的不同重要性进行差异化处理，从而在长视频推理中显著减少视频令牌和键值（KV）缓存的线性增长。该研究解决了长视频理解中内存消耗过大的关键瓶颈，通过扰动感知的压缩机制，在保持模型性能的同时大幅降低内存占用。这一工作对于推动音频-视频 LLMs 在实时视频分析、监控、视频摘要等实际应用中的部署具有重要意义，值得关注。",
+  "tags": [
+    "Audio-Visual LLM",
+    "Memory Compression",
+    "Streaming",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:19:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出模态感知的记忆分配策略，区分音频和视频令牌的重要性，实现高效压缩。",
+      "通过扰动感知机制，在压缩过程中保持模型性能，避免信息丢失。",
+      "有效解决长视频推理中视频令牌和KV缓存线性增长的内存瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

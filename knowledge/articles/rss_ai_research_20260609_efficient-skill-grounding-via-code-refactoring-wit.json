@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-028",
+  "title": "Efficient Skill Grounding via Code Refactoring with Small Language Models",
+  "source_url": "https://arxiv.org/abs/2606.07999",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种通过代码重构实现高效技能落地的方法，专门针对具身智能体在动态、部分可观测环境中的技能复用问题。传统方法依赖大型语言模型（LLM）进行技能适配，但在资源受限的具身场景中，LLM的部署成本高且不切实际。作者转而利用小型语言模型（sLM），通过代码重构技术将通用技能代码自动适配到具体机器人平台或环境差异中。核心创新在于将技能表示为可重构的代码片段，sLM通过分析环境反馈和本体约束，对代码进行局部修改（如调整参数、替换传感器调用），从而在不重新训练模型的情况下实现技能迁移。实验在多个模拟和真实机器人任务上验证，表明该方法在技能成功率、适配速度和资源消耗上均优于基于LLM的基线方法。这项工作为低资源具身智能体的技能泛化提供了实用解决方案，尤其适用于家庭服务、工业自动化等场景，具有显著的应用价值。",
+  "tags": [
+    "Small Language Model",
+    "Embodied Agent",
+    "Code Refactoring",
+    "Skill Grounding"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:21:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用小型语言模型通过代码重构实现技能落地，避免了大型语言模型在具身场景中的高成本和不切实际性。",
+      "将技能表示为可重构代码片段，sLM根据环境差异进行局部修改，实现高效迁移。",
+      "在模拟和真实机器人任务中验证了方法在成功率、速度和资源消耗上的优势。",
+      "为资源受限的具身智能体技能泛化提供了实用且可扩展的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

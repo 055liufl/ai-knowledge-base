@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-126",
+  "title": "From Rigid to Dynamic: Entropy-Guided Adaptive Inference for Long-Context LLMs",
+  "source_url": "https://arxiv.org/abs/2606.09508",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于熵引导的自适应推理方法，用于长上下文LLM的高效推理。现有方法通常对所有注意力头应用固定的稀疏模式或统一的预算，忽略了不同头之间注意力行为的巨大差异。作者观察到注意力头存在两种不同的熵模式：刚性头（Rigid Heads），其熵在不同输入段中保持接近零；动态头（Dynamic Heads），其熵显著波动。基于此，论文设计了一种自适应机制，根据每个头的实时熵值动态调整其稀疏度和KV缓存压缩策略，从而在保持模型性能的同时显著降低计算开销。该方法在多个长上下文基准测试中验证了有效性，展示了从刚性到动态推理的范式转变。该研究对于提升长上下文LLM的推理效率具有重要价值，尤其适用于需要处理超长序列的实际应用场景。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Attention",
+    "KV Cache",
+    "Adaptive"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:28:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "发现注意力头存在刚性头和动态头两种熵模式，为自适应推理提供了理论基础。",
+      "提出基于熵引导的自适应稀疏和KV压缩方法，动态调整每个头的计算预算。",
+      "在长上下文基准测试中验证了该方法在保持性能的同时显著降低推理成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

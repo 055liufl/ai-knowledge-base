@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-065",
+  "title": "AgentTrust: A Self-Improving Trust Layer for AI-Agent Actions",
+  "source_url": "https://arxiv.org/abs/2606.08539",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentTrust 提出了一种针对 AI 代理（AI Agent）执行关键操作（如 shell 命令、云操作、任意工具调用）的信任层机制。该机制的核心在于按威胁类型进行推理：对于词汇性（固定签名）威胁，即危险存在于稳定令牌中的情况，可通过确定性规则进行决策；对于语义性（意图依赖）威胁，即良性操作与恶意操作在语义上难以区分的情况，则需要更复杂的推理。该信任层能够针对每个操作决定是允许、警告、阻止还是升级处理。这项工作值得关注，因为它直接解决了 AI 代理在实际部署中面临的安全与信任挑战，通过分类处理威胁类型，提升了代理系统的安全性和可控性，为构建更可靠的自主代理系统提供了理论基础和实用框架。",
+  "tags": [
+    "AI Agent",
+    "Trust Layer",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:24:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AgentTrust 通过按威胁类型（词汇性与语义性）分类推理，为 AI 代理操作提供了细粒度的信任决策机制。",
+      "该信任层能够针对每个操作动态决定允许、警告、阻止或升级，增强了代理系统的安全性和可控性。",
+      "词汇性威胁可通过确定性规则高效处理，而语义性威胁则需要更复杂的推理，体现了对不同威胁级别的差异化应对策略。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

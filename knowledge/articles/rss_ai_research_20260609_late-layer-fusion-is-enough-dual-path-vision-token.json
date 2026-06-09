@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-103",
+  "title": "Late-Layer Fusion is Enough: Dual-Path Vision Token Routing for Multimodal Large Language Models under Visual Saturation",
+  "source_url": "https://arxiv.org/abs/2606.09131",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多模态大语言模型（MLLMs）中视觉令牌处理效率低下的新方法。研究发现，在LLaVA-1.5等模型中，视觉令牌在深层Transformer中会迅速饱和，即其表示在早期层后变化微小，导致后续计算冗余。为此，作者提出“后期层融合”策略：通过双路径视觉令牌路由，将视觉令牌仅在模型浅层进行完整处理，而在深层则通过轻量级融合机制与语言令牌交互，避免冗余计算。该方法在保持甚至提升多模态任务性能的同时，显著降低了计算开销。该工作揭示了多模态模型中模态不对称性的关键影响，并为高效MLLM设计提供了新思路，值得关注。",
+  "tags": [
+    "MLLM",
+    "Efficiency",
+    "Vision-Language",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:27:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉令牌在深层Transformer中会迅速饱和，后续计算对性能贡献有限，导致计算浪费。",
+      "双路径路由机制将视觉令牌与语言令牌分离处理，仅在后期层进行轻量级融合，可大幅降低计算量。",
+      "该方法在多个多模态基准上保持或提升性能，验证了后期层融合策略的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-055",
+  "title": "Trajectory-Refined Distillation",
+  "source_url": "https://arxiv.org/abs/2606.08432",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“轨迹精炼蒸馏”（Trajectory-Refined Distillation）的新方法，旨在解决大型语言模型（LLM）在策略蒸馏（On-policy Distillation, OPD）中普遍存在的“前缀失败”（prefix failure）问题。在OPD中，教师模型沿着学生模型的生成轨迹提供密集的逐token监督，但作者发现这会导致双峰教师混合和碎片化梯度，即教师模型在序列前缀部分给出不一致的监督信号，使得学生模型难以有效学习。传统的token级损失截断或重加权方法无法解决这一结构性问题。为此，本文提出通过精炼学生模型的生成轨迹，即对轨迹进行筛选或重构，以消除前缀失败带来的负面影响，从而提升蒸馏效果。该工作对于理解LLM蒸馏中的梯度动力学和优化策略具有重要理论价值，并为实际训练更高效、更强大的LLM提供了实用工具。值得关注的是，它直接针对当前LLM后训练中的核心瓶颈，有望推动蒸馏技术的进一步发展。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "On-policy Distillation",
+    "Training Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:23:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "识别了LLM策略蒸馏中普遍存在的“前缀失败”问题，即密集逐token监督导致双峰教师混合和碎片化梯度。",
+      "证明了传统token级损失截断或重加权方法无法有效解决前缀失败问题。",
+      "提出轨迹精炼蒸馏方法，通过精炼学生生成轨迹来消除前缀失败，提升蒸馏效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

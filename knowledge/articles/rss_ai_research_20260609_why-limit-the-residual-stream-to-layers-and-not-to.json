@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-005",
+  "title": "Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.07720",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“持久记忆”（Persistent Memory）的新机制，旨在解决大型语言模型（LLMs）在连续潜在推理（如CoCoNuT范式）中遇到的“概念瓶颈”问题。传统方法如CoCoNuT允许模型在潜在空间中进行多路径推理，但受限于残差流（residual stream）仅在层间传递信息，而无法跨时间步（tokens）保留关键概念。作者通过引入一个额外的持久记忆模块，使模型能够在推理过程中跨token保留和更新潜在状态，从而支持更长的连续推理链。实验表明，该方法在数学推理和多跳规划任务上显著提升了性能，特别是在需要多步推理的场景中。该工作值得关注，因为它突破了现有潜在推理方法的架构限制，为构建更高效、更强大的推理模型提供了新思路，可能对LLM的推理能力产生深远影响。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Latent Space",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:19:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统潜在推理方法（如CoCoNuT）存在概念瓶颈，即残差流仅在层间传递信息，无法跨token保留关键概念，限制了多步推理能力。",
+      "提出的持久记忆模块允许模型在推理过程中跨时间步保留和更新潜在状态，从而支持更长的连续推理链。",
+      "实验证明该方法在数学推理和多跳规划任务上显著优于基线，特别是在需要多步推理的场景中。",
+      "该工作为LLM的潜在空间推理提供了新的架构设计方向，可能推动更高效推理模型的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

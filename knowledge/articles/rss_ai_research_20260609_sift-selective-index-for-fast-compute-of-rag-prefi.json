@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-120",
+  "title": "SIFT: Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance",
+  "source_url": "https://arxiv.org/abs/2606.09441",
+  "source_platform": "rss_ai_research",
+  "summary": "SIFT（Selective-Index For Fast Compute of RAG Prefill by Exploiting Attention Invariance）是一种针对检索增强生成（RAG）系统中预填充阶段加速的新方法。RAG通过向LLM查询注入相关文档来提升回答质量，但这会增加提示长度并延迟首令牌生成时间（TTFT）。与标准查询不同，RAG查询具有上下文复用的特性，即相同文档会在不同用户查询中重复出现。传统方法为每个RAG查询完全重新计算文档的KV张量，导致大量冗余计算和TTFT增加。SIFT通过利用注意力不变性，选择性索引和预计算文档的KV张量，从而在预填充阶段避免重复计算，显著降低TTFT。该方法在保持生成质量的同时，实现了更快的推理速度，特别适用于高频文档复用的RAG场景。该研究来自arXiv预印本，展示了在RAG系统效率优化方面的创新思路，对于提升大规模LLM应用的实时性和成本效益具有重要意义。",
+  "tags": [
+    "RAG",
+    "KV Cache",
+    "Prefill Optimization",
+    "Attention Invariance",
+    "LLM Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:28:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SIFT利用RAG中文档复用的特性，通过预计算和选择性索引KV张量，避免冗余计算，显著降低TTFT",
+      "该方法基于注意力不变性原理，确保在跳过部分计算时不影响生成质量",
+      "SIFT特别适用于高频文档复用的RAG场景，如知识库问答、文档检索等，可提升系统实时性和吞吐量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-050",
+  "title": "Neuro-Symbolic Injection of LTLf Constraints in Autoregressive Reinforcement Learning Policies",
+  "source_url": "https://arxiv.org/abs/2606.08312",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究离线强化学习（RL）在有限迹线性时序逻辑（LTLf）表达的时序扩展任务约束下的应用。近年来，基于Transformer的方法（如轨迹Transformer和决策Transformer）已被用于将RL建模为序列预测问题。然而，这些方法仅优化奖励，未考虑高层时序需求。本文提出一种神经符号注入方法，将LTLf约束整合到自回归强化学习策略中，使智能体在离线数据中学习满足复杂时序规范的行为。该方法通过符号推理模块将LTLf约束转化为可微的损失项，引导策略网络在训练中同时优化奖励和约束满足。实验表明，该方法在多个基准任务上显著提升了约束满足率和任务成功率，为结合符号推理与深度强化学习提供了新范式。该工作值得关注，因为它弥合了符号AI与深度学习在RL中的鸿沟，提升了RL在安全关键应用中的可解释性和可靠性。",
+  "tags": [
+    "Reinforcement Learning",
+    "Neuro-Symbolic",
+    "LTLf",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:23:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出将LTLf约束通过神经符号方法注入自回归RL策略，实现奖励与时序约束的联合优化。",
+      "利用符号推理模块将LTLf规范转化为可微损失，使Transformer-based RL模型能处理高层时序需求。",
+      "在离线RL场景下，该方法在约束满足率和任务成功率上优于纯奖励优化方法。",
+      "为安全关键应用（如机器人、自动驾驶）中的RL提供了可解释且可靠的约束整合框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-014",
+  "title": "Joint Structural Pruning and Mixed-Precision Quantization for LLM Compression",
+  "source_url": "https://arxiv.org/abs/2606.07819",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种联合结构剪枝与混合精度量化（Joint Structural Pruning and Mixed-Precision Quantization）的LLM压缩方法。针对大语言模型部署中的内存占用和推理延迟问题，现有后训练量化（PTQ）方法通常逐层优化量化误差，忽略了误差在网络中的累积与传播效应，导致次优解。该工作创新性地将结构剪枝与混合精度量化统一在一个优化框架中，通过联合考虑剪枝对模型结构的影响以及不同层对量化误差的敏感度，自动分配每层的量化位宽，同时移除冗余结构。实验表明，该方法在保持模型精度的前提下，显著降低了模型大小和推理速度，优于单独使用剪枝或量化的方案。该研究为LLM的高效部署提供了新的思路，尤其适用于资源受限的边缘设备或实时应用场景。",
+  "tags": [
+    "LLM",
+    "Model Compression",
+    "Quantization",
+    "Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:20:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将结构剪枝与混合精度量化联合优化，解决误差累积问题",
+      "自动分配量化位宽，平衡压缩率与模型精度",
+      "在多个LLM基准上验证了显著的内存和延迟降低"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

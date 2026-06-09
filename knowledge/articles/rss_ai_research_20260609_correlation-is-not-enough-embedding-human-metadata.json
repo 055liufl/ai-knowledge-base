@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-136",
+  "title": "Correlation Is Not Enough: Embedding Human Metadata for Individual Causal Discovery",
+  "source_url": "https://arxiv.org/abs/2606.09672",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文指出，现成的生物医学语言模型（如BioBERT、PubMedBERT、BioM-ELECTRA）在评估跨领域概念（如“皮质醇28 ug/dL”与“股市波动性”）的相关性时，会给出不合理的高余弦相似度（0.76-0.92），而实际上两者并无因果机制。作者认为，仅依赖相关性（如余弦相似度）不足以进行个体因果发现，需要嵌入人类元数据（如领域知识、实验设计信息）来提升因果推断的准确性。该研究挑战了当前表示学习在因果推理中的局限性，提出了一种融合元数据的因果发现框架，对于生物医学、社会科学等需要严谨因果关系的领域具有重要启示。值得关注的是，它揭示了预训练模型在跨领域语义匹配中的系统性偏差，并提供了改进方向。",
+  "tags": [
+    "Causal Discovery",
+    "Representation Learning",
+    "Biomedical NLP",
+    "Cross-Domain"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:29:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现成生物医学语言模型在跨领域概念对中产生虚假的高相似度，表明相关性度量不足以用于因果发现。",
+      "嵌入人类元数据（如领域知识、实验条件）是提升个体因果推断准确性的关键。",
+      "该研究挑战了当前表示学习在因果推理中的有效性，并提出了融合元数据的改进框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

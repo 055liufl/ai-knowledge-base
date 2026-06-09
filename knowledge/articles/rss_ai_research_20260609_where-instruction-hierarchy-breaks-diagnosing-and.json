@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-012",
+  "title": "Where Instruction Hierarchy Breaks: Diagnosing and Repairing Failures in Reasoning Language Models",
+  "source_url": "https://arxiv.org/abs/2606.07808",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了推理语言模型在代理工作流中遵循指令层次结构的能力。现有基准主要评估最终响应是否符合要求，但未区分导致不符合的多种失败模式。作者通过系统诊断，识别出三种关键失败类型：模型未能识别相关指令、未能正确解析指令优先级、或在推理过程中忽略了高优先级指令。针对这些失败，论文提出了修复策略，包括改进指令表示、增强优先级推理机制以及引入对抗性训练。该研究对于提升语言模型在复杂多指令环境中的可靠性和安全性具有重要意义，特别是在自主代理和工具使用场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Instruction Hierarchy",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:20:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "非符合性响应可能源于指令识别、优先级解析或推理忽略等不同失败模式",
+      "现有端到端基准无法区分这些失败，需要更细粒度的诊断方法",
+      "通过改进指令表示和优先级推理机制可有效修复这些失败"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

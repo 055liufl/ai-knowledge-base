@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-041",
+  "title": "SciTrace: Trajectory-Aware Safety Reasoning for Scientific Discovery Agents",
+  "source_url": "https://arxiv.org/abs/2606.08234",
+  "source_platform": "rss_ai_research",
+  "summary": "SciTrace 是一篇关于为科学发现智能体（Scientific Discovery Agents）提供轨迹感知安全推理的论文。论文指出，当前基于大语言模型（LLM）的科学智能体虽然具备强大的自主研究能力，但其安全层与核心推理过程在结构上是分离的：安全层仅检查流水线输出，而不参与产生这些输出的推理过程。这种分离导致了两种失败模式：一是安全信号在某个阶段积累后，在进入下一阶段前被丢弃；二是多个单独无害的工具调用序列可能组合成有害的结果，而单个步骤检查无法发现。SciTrace 提出了一种轨迹感知的安全推理方法，将安全考虑嵌入到智能体的推理轨迹中，从而在决策过程中实时评估和引导行为，避免累积性风险。该工作对于提升自主科学研究的可靠性和安全性具有重要意义，尤其在高风险领域如药物发现、材料设计等场景中，能够防止智能体在无人类监督下产生意外有害行为。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Scientific Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:22:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前LLM科学智能体的安全层与推理过程分离，导致安全信号在阶段间丢失，无法检测组合性风险。",
+      "SciTrace 提出轨迹感知安全推理，将安全评估嵌入推理轨迹，实现实时行为引导。",
+      "该方法能有效防止多个无害步骤组合成有害结果，提升自主科学研究的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

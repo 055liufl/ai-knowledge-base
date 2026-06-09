@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-034",
+  "title": "When Does Delegation Beat Majority? A Delegation-Based Aggregator for Multi-Sample LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.08098",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于委托的聚合器（Propagational Proxy Voting, PPV），用于多样本大语言模型推理中的无监督结果聚合。传统方法中，多数投票（majority voting）是主流方案，但该方法忽略了每个样本携带的额外信号（如置信度、中间推理等）。PPV通过将每个样本的信号以委托方式传播，形成更优的共识规则。实验表明，在MMLU-Pro基准上，PPV相比多数投票整体提升+1.5个百分点，在非平凡子集上提升+2.24个百分点，且统计显著性极高（p值约1.0e-14）。该工作揭示了多数投票在信息利用上的不足，并提供了简单有效的替代方案，对提升LLM推理可靠性具有重要实践价值。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Aggregation"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:21:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多数投票丢弃了每个样本携带的额外信号，而委托聚合器PPV能有效利用这些信号提升推理准确性。",
+      "PPV在MMLU-Pro上显著优于多数投票，尤其在非平凡子集上提升更明显，且统计检验支持其可靠性。",
+      "该工作为无监督多样本LLM推理提供了新的聚合范式，简单且无需额外训练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

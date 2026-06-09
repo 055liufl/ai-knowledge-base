@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260609-078",
+  "title": "Inference-Time Conformal Reasoning with Valid Factuality Control for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.08831",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于共形预测（Conformal Prediction, CP）的推理时不确定性量化方法，用于大型语言模型（LLM）在多步推理任务中的事实性控制。LLM在执行多步推理时，中间声明形成隐式有向无环图（DAG），其中节点的正确性在结构上依赖于其祖先节点，这使得事实性不确定性具有结构性，而非简单的节点错误累积。传统共形预测方法通常假设数据独立同分布，难以直接应用于这种结构化依赖场景。本文通过将推理图的结构信息融入共形预测框架，实现了在推理过程中对事实性有效性的实时控制，同时保持统计有效性。该方法允许用户指定错误率上限，并自适应地调整预测集，从而在保证事实性的同时最大化输出质量。实验结果表明，该方法在多个推理任务上显著优于基线，特别是在复杂推理链中能有效识别和纠正错误节点。这项研究为LLM的可靠推理提供了新的理论工具，具有重要的实际应用价值，尤其是在需要高事实性保证的场景（如医疗、法律等）。",
+  "tags": [
+    "LLM",
+    "Conformal Prediction",
+    "Uncertainty Quantification",
+    "Factuality Control",
+    "Multi-step Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:25:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将共形预测扩展到结构化推理图，解决了节点依赖下的不确定性量化问题，这是对传统独立同分布假设的重要突破。",
+      "该方法在推理时提供可证明的事实性控制，允许用户指定错误率上限，增强了LLM在关键应用中的可靠性。",
+      "实验表明，该方法在复杂推理任务中能有效识别错误节点，并自适应调整输出，显著提升事实性而不牺牲过多性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

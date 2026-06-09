@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-018",
+  "title": "Contract2Tool: Learning Preconditions and Effects for Reliable Tool-Augmented LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.07904",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Contract2Tool的方法，旨在通过自动学习工具的前置条件（preconditions）和效果（effects），增强基于大型语言模型（LLM）的工具增强型代理的可靠性。传统工具模式仅描述如何调用工具，但忽略了工具何时在因果上合适以及调用后会产生何种任务状态。Contract2Tool通过引入轻量级契约（contracts），明确每个工具的前置条件、效果、风险级别和成本，从而实现因果工具过滤（causal tool filtering）。该方法能够自动从工具使用历史中学习这些契约，无需人工编写和维护，解决了大规模或动态工具生态中手动管理契约的扩展性问题。该研究对于提升LLM代理在复杂任务中的安全性和有效性具有重要意义，尤其是在需要精确工具选择和副作用管理的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool-Augmented",
+    "Causal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:20:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过自动学习工具的前置条件和效果，Contract2Tool实现了因果工具过滤，提高了LLM代理选择工具的可靠性。",
+      "轻量级契约机制（包括风险级别和成本）为工具使用提供了更丰富的上下文，有助于避免不当调用和副作用。",
+      "该方法解决了手动编写和维护工具契约的扩展性问题，适用于大规模和动态变化的工具生态系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

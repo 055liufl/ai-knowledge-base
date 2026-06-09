@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-046",
+  "title": "Ablation-Reversible Heads Don't Transfer: A Stress Test for Mechanistic Role Claims in Transformers",
+  "source_url": "https://arxiv.org/abs/2606.08292",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文对机械可解释性中常用的注意力头角色归因方法提出了挑战。研究者发现，即使某个注意力头通过了三项标准检验（对行为必要、线性编码该行为、消融后恢复行为），该头仍然可能无法将计算迁移到其他上下文或模型中。实验在三个7-8B指令微调模型和五个计算族上进行，结果表明这些头在激活转移时经常失败。这揭示了当前角色归因方法的局限性，即仅依赖局部必要性和线性编码不足以证明一个头真正实现了特定计算角色。该工作为机械可解释性领域提供了重要的压力测试，提示需要更严格的因果验证方法，以避免对模型内部机制的过度简化解释。对于理解大型语言模型内部计算和开发更可靠的解释技术具有关键意义。",
+  "tags": [
+    "Mechanistic Interpretability",
+    "Attention Heads",
+    "Causal Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:22:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前用于将注意力头归因于特定角色的三项标准（必要性、线性编码、消融后恢复）不足以证明该头真正实现了该计算角色。",
+      "在多个7-8B指令微调模型和计算族上，通过所有三项检验的头在激活转移时仍频繁失败，表明角色归因存在系统性漏洞。",
+      "该研究为机械可解释性中的因果验证方法提出了重要压力测试，推动领域发展更严格的角色归因标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-113",
+  "title": "Capability-Aligned Hierarchical Learning for Tool-Augmented LLMs",
+  "source_url": "https://arxiv.org/abs/2606.09371",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向工具增强型大语言模型（LLM）的能力对齐分层学习方法。传统工具学习通常采用分层结构：高层策略负责全局规划与任务分解，低层策略专注于调用工具完成子任务。然而，现有工作往往独立优化高层与低层策略，导致规划器与执行器之间出现能力不对齐问题，即高层规划的任务可能超出低层执行器的实际能力范围。本文通过引入能力对齐机制，使高层规划能够感知低层执行器的工具调用能力，从而生成更可行的子任务分解方案。该方法在多个工具使用基准测试中显著提升了任务完成成功率与执行效率。该研究值得关注，因为它直接解决了分层工具学习中的核心协同问题，为提升LLM在复杂工具调用场景下的鲁棒性与实用性提供了新思路。",
+  "tags": [
+    "LLM",
+    "Tool Learning",
+    "Hierarchical Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:27:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分层工具学习中规划器与执行器的能力不对齐是导致任务失败的关键原因",
+      "通过让高层策略感知低层执行器的工具调用能力，可生成更可行的子任务分解",
+      "该方法在多个基准测试中显著提升了任务完成成功率与执行效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

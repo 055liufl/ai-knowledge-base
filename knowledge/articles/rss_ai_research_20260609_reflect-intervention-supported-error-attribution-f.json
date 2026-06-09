@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-098",
+  "title": "REFLECT: Intervention-Supported Error Attribution for Silent Failures in LLM Agent Traces",
+  "source_url": "https://arxiv.org/abs/2606.09071",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 REFLECT 的方法，旨在解决大型语言模型（LLM）代理在执行复杂任务时出现的“静默失败”问题。静默失败是指代理在计划与执行轨迹中发生错误，但未产生明显异常信号，导致难以定位错误来源。现有方法通常通过分类器或 LLM 判断来预测可疑步骤，或通过重试来恢复正确答案，但未能将干预结果反馈以优化归因本身。REFLECT 创新性地引入了干预支持的错误归因机制，通过主动干预（如修改或重试特定步骤）并观察结果，将干预反馈用于细化归因，从而更准确地识别静默失败的根本原因。该方法在多个基准测试中显著提升了错误定位的准确性和效率，为 LLM 代理的鲁棒性和可调试性提供了新思路。这项研究值得关注，因为它直接解决了 LLM 代理在实际部署中的关键瓶颈——静默失败，并提出了一个可迭代优化的归因框架，有望推动代理系统在复杂任务中的可靠应用。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Error Attribution",
+    "Silent Failure"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:26:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "REFLECT 通过将干预结果反馈到归因过程，实现了对静默失败更精确的定位，超越了仅依赖静态判断的传统方法。",
+      "该方法在多个基准测试中展示了显著性能提升，表明干预反馈机制能有效增强 LLM 代理的错误诊断能力。",
+      "REFLECT 为 LLM 代理的鲁棒性和可调试性提供了新范式，尤其适用于需要长轨迹推理的复杂任务场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

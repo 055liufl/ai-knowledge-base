@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-105",
+  "title": "Reliable to Expressive: A Curriculum for Rubric-Following Safety Judges",
+  "source_url": "https://arxiv.org/abs/2606.09165",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“从可靠到表达”的课程学习方法，用于训练安全评估模型（safety judges），使其能够更鲁棒地遵循不断变化的评估标准（rubric）。研究背景是当前安全评估模型在面对提示词和评估标准变化时表现脆弱，仅因风格扰动就可能导致假阴性率波动高达0.24。作者将安全评估问题重新定义为“遵循评估标准”问题，即一个鲁棒的评估模型必须能够跨不同评估标准表述一致地应用给定的评估准则。为此，他们设计了一种课程学习策略，从简单、固定的评估标准开始训练，逐步过渡到复杂、变化的评估标准，从而提升模型的泛化能力和鲁棒性。实验结果表明，该方法显著降低了评估标准变化带来的性能波动，提高了安全评估的可靠性。这项工作对于构建更可信的AI安全评估系统具有重要意义，尤其是在需要动态调整评估标准的实际应用场景中。",
+  "tags": [
+    "Safety",
+    "Evaluation",
+    "Curriculum Learning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:27:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全评估模型在评估标准变化时表现脆弱，假阴性率波动可达0.24，这暴露了当前模型缺乏遵循评估标准的能力。",
+      "将安全评估重新定义为遵循评估标准问题，并采用课程学习策略从简单到复杂逐步训练，可显著提升模型的鲁棒性。",
+      "该方法为动态调整评估标准的实际应用场景提供了更可靠的安全评估方案，有助于减少误判风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

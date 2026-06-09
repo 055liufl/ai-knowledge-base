@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-066",
+  "title": "PAEC: Position-Aware Entropy Calibration for LLM Reasoning in RLVR",
+  "source_url": "https://arxiv.org/abs/2606.08543",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 PAEC（位置感知熵校准）的方法，用于解决大语言模型在基于可验证奖励的强化学习（RLVR）中推理时出现的策略熵崩溃问题。在 RLVR 训练中，模型策略容易过早收敛到少数高概率的推理路径，导致探索不足。传统的全局熵正则化方法对所有 token 位置均匀增加熵，但对于长推理轨迹而言，许多 token 并非决策关键，这种均匀处理效率低下。PAEC 通过位置感知的方式动态校准熵，在决策关键位置鼓励探索，在非关键位置保持确定性，从而在保持推理稳定性的同时提升探索效率。实验表明，该方法在数学推理、逻辑推理等任务上显著提升了模型性能，并加速了训练收敛。该工作为强化学习与语言模型推理的结合提供了新的正则化视角，具有重要的理论价值和实践意义。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:24:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PAEC 通过位置感知的熵校准，解决了 RLVR 中策略熵崩溃导致的探索不足问题，比全局熵正则化更高效。",
+      "该方法在长推理轨迹中能区分决策关键 token 与非关键 token，从而在关键位置鼓励探索，非关键位置保持确定性。",
+      "实验证明 PAEC 在数学和逻辑推理任务上显著提升模型性能，并加速训练收敛，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

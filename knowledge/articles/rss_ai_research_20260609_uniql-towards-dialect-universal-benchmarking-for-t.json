@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-029",
+  "title": "UniQL: Towards Dialect-Universal Benchmarking for Text-to-SQL",
+  "source_url": "https://arxiv.org/abs/2606.08018",
+  "source_platform": "rss_ai_research",
+  "summary": "UniQL 是一个面向跨方言文本到 SQL 生成任务的人工验证基准测试集。现有基准测试主要基于 SQLite，难以评估模型在不同 SQL 方言（如 PostgreSQL、MySQL、BigQuery 等）上的泛化能力。UniQL 通过收集和人工验证多种 SQL 方言下的自然语言查询与对应 SQL 语句对，构建了一个覆盖多种方言的评估框架。该工作揭示了当前模型在方言迁移上的显著不足，并提供了标准化评估方法，对于推动文本到 SQL 模型在实际多数据库环境中的应用具有重要意义。",
+  "tags": [
+    "Text-to-SQL",
+    "Benchmark",
+    "SQL Dialect",
+    "NL2SQL"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:21:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有文本到 SQL 基准测试过度依赖 SQLite，忽略了不同 SQL 方言在语法、函数和语义上的差异，导致模型泛化能力评估不足。",
+      "UniQL 通过人工验证构建了覆盖多种 SQL 方言的跨方言基准，为评估模型在不同数据库系统上的表现提供了标准化工具。",
+      "初步实验表明，当前主流模型在跨方言场景下性能显著下降，凸显了方言适配和迁移学习的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

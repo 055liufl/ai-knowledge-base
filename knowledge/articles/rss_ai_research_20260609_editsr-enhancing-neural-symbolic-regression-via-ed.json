@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-020",
+  "title": "EditSR: Enhancing Neural Symbolic Regression via Edit-based Rectification",
+  "source_url": "https://arxiv.org/abs/2606.07915",
+  "source_platform": "rss_ai_research",
+  "summary": "EditSR 是一种通过编辑校正增强神经符号回归的新方法。神经符号回归模型通过将结构搜索转移到预训练阶段来提高推理效率，但其一次性自回归解码容易产生错误累积，导致生成结构不正确的表达式，尤其是在复杂表达式生成场景中。现有的校正策略可以缓解这一问题，但通常依赖于重启全局搜索，从而削弱了效率优势。EditSR 提出了一种基于编辑的校正方法，通过局部编辑操作（如插入、删除、替换）来修正解码过程中产生的错误，无需重启全局搜索，从而在保持效率的同时提高了生成表达式的结构正确性。该方法在多个基准数据集上进行了评估，实验结果表明，EditSR 在保持推理效率的同时，显著提升了表达式生成的结构准确性和符号回归的整体性能。这项研究对于提升神经符号回归在实际应用中的可靠性和效率具有重要意义，特别是在需要快速生成准确数学表达式的领域，如科学发现和工程优化。",
+  "tags": [
+    "Neural Symbolic Regression",
+    "Error Correction",
+    "Autoregressive Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:20:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EditSR 通过局部编辑操作（插入、删除、替换）修正自回归解码中的错误累积，无需重启全局搜索，从而保持推理效率。",
+      "该方法在多个基准数据集上显著提升了表达式生成的结构正确性，优于现有校正策略。",
+      "EditSR 为神经符号回归提供了一种高效且可靠的错误校正机制，适用于复杂表达式生成场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

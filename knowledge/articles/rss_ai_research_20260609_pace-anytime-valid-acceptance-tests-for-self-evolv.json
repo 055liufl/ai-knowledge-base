@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260609-035",
+  "title": "PACE: Anytime-Valid Acceptance Tests for Self-Evolving Agents",
+  "source_url": "https://arxiv.org/abs/2606.08106",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PACE（Anytime-Valid Acceptance Tests）的框架，用于解决自进化智能体在持续自我改进过程中因重复使用小规模验证集而导致的统计偏差和过拟合问题。传统方法中，智能体通过反复修改自身提示、技能或工作流，并仅保留在固定验证集上得分更高的变更，但这一“得分上升即保留”的规则在多次应用后会产生严重的多重比较问题，导致虚假提升。PACE引入了一种随时有效的统计检验方法，能够在每次变更提议时动态评估其改进是否具有统计显著性，从而避免噪声估计带来的误判。该框架不依赖于特定的提议生成器，可广泛应用于各类自进化智能体系统。论文通过实验证明，PACE能显著降低过拟合风险，提升智能体在未知任务上的泛化能力。这一工作填补了自进化智能体在验收决策环节的理论空白，为构建更可靠的自主系统提供了关键工具。",
+  "tags": [
+    "Self-Evolving Agents",
+    "Statistical Testing",
+    "Agent Framework"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:21:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化智能体的核心瓶颈在于验收决策环节，而非提议生成环节，传统'得分上升即保留'规则在多次应用后会产生严重的多重比较问题。",
+      "PACE框架通过随时有效的统计检验方法，能够在每次变更提议时动态评估改进的统计显著性，有效避免噪声估计导致的过拟合。",
+      "该框架不依赖特定提议生成器，具有通用性，可广泛应用于各类自进化智能体系统，显著提升其在未知任务上的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

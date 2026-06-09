@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-077",
+  "title": "Momentum for Reasoning: Dense Intrinsic Signals in Policy Optimization",
+  "source_url": "https://arxiv.org/abs/2606.08815",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Momentum for Reasoning”的新方法，旨在解决强化学习在大型语言模型推理训练中的关键问题。当前基于组相对策略优化（GRPO）的方法依赖于二元结果奖励，这导致了两种结构性失效模式：零优势崩溃（所有采样结果相同导致梯度消失）和幻觉确定性（模型对错误答案过度自信）。作者通过引入密集的内在信号来替代稀疏的二元奖励，利用推理过程中的中间步骤信息提供更丰富的反馈信号。该方法在数学推理和逻辑推理任务上进行了验证，显著提升了模型的推理准确性和稳定性，同时减少了训练中的方差。这项工作为强化学习在复杂推理任务中的应用提供了新的视角，有望推动LLM在需要长链推理的场景中的表现。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:25:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "二元结果奖励导致零优势崩溃和幻觉确定性两种失效模式，限制了GRPO在推理任务中的效果",
+      "通过引入密集内在信号（如中间步骤的局部奖励）可以缓解稀疏奖励问题，提供更稳定的梯度信号",
+      "该方法在数学和逻辑推理基准上显著提升了模型性能，同时减少了训练方差"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

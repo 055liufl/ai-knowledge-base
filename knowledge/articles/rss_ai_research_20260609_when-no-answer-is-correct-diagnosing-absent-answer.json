@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260609-042",
+  "title": "When No Answer Is Correct: Diagnosing Absent Answer Detection for MLLMs in Video Understanding",
+  "source_url": "https://arxiv.org/abs/2606.08239",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多模态大语言模型（MLLMs）在视频理解任务中的“无正确答案”检测能力进行了系统性诊断研究。在传统视频问答任务中，模型通常从候选答案集中选择正确选项，但该研究首次关注当正确答案被故意排除时，模型能否识别出“无有效选项”这一关键可靠性问题。作者构建了专门的评估基准，测试多种主流MLLMs（如GPT-4V、LLaVA等）在视频场景下的缺失答案检测表现，发现当前模型普遍存在过度自信、无法正确拒绝无效选项的缺陷。研究进一步分析了影响检测能力的因素，包括视频内容复杂性、候选答案设计策略以及模型架构差异。该工作揭示了MLLMs在视频理解中一个被忽视的可靠性短板，为提升模型鲁棒性和可信度提供了重要方向，对AI安全和人机交互场景具有实际参考价值。",
+  "tags": [
+    "MLLM",
+    "Video Understanding",
+    "Reliability",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-06-09T11:16:05Z",
+  "collected_at": "2026-06-09T11:22:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前主流MLLMs在视频理解中普遍缺乏识别‘无正确答案’的能力，倾向于从候选集中强行选择而非拒绝回答。",
+      "缺失答案检测的失败与视频内容复杂度、候选答案的迷惑性设计高度相关，简单场景下模型表现更差。",
+      "该研究首次系统性地将‘拒绝回答’作为视频理解可靠性的核心评估维度，填补了现有基准测试的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
