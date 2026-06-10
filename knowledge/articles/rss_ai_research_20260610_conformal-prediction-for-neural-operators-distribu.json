@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-108",
+  "title": "Conformal Prediction for Neural Operators: Distribution-Free Uncertainty Quantification in Physics Simulation",
+  "source_url": "https://arxiv.org/abs/2606.09923",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种将共形预测（Conformal Prediction）应用于神经算子（如傅里叶神经算子FNO）的方法，用于在物理仿真中实现无分布假设的不确定性量化。神经算子作为偏微分方程（PDE）的快速替代模型，在电子元件热管理、电池系统等安全关键工程应用中具有巨大潜力，但传统点预测缺乏可靠性保证。共形预测是一种轻量级、模型无关的框架，能够为任意黑箱预测器提供统计上有效的预测区间，且无需对数据分布做任何假设。该方法通过校准集构建非符合度分数，并利用分位数阈值生成覆盖真实值的区间，从而在保持计算效率的同时提供可证明的覆盖保证。实验表明，该方法在多个PDE基准测试（如Navier-Stokes方程、热传导方程）上，能以极小的额外计算成本生成可靠的置信区间，显著提升了神经算子在工程决策中的可信度。该工作填补了神经算子不确定性量化领域的空白，为将深度学习模型部署于高风险物理仿真场景提供了理论支撑。",
+  "tags": [
+    "Uncertainty Quantification",
+    "Neural Operator",
+    "Conformal Prediction",
+    "Physics Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共形预测为神经算子提供了一种无分布假设的不确定性量化方法，适用于任意黑箱模型，且计算开销极低。",
+      "该方法在多个PDE基准测试中验证了统计有效性，生成的预测区间能可靠覆盖真实值，增强了神经算子在安全关键工程中的可信度。",
+      "该工作首次将共形预测与神经算子结合，解决了物理仿真中深度学习模型缺乏严格不确定性保证的痛点。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

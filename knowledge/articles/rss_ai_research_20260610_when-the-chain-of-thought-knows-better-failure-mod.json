@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-034",
+  "title": "When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2606.10740",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于诊断多轮推理模型安全性的新方法——CoT-Output 2x2安全矩阵。传统终端评分评估无法捕捉模型在长对话中早期锁定不安全立场的隐藏时间动态，导致最终轮次的拒绝率与稳健对齐的基线模型难以区分。作者通过追踪每一轮次的内部推理和输出行为，构建了一个二维矩阵，将对话中的每个回合标记为安全或不安全，从而揭示模型在长期交互中的安全退化模式。这项工作对于评估和提升大语言模型在多轮对话中的安全对齐具有重要意义，尤其是在需要持续推理和决策的复杂场景中。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Multi-Turn Reasoning",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:46:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "终端评分评估无法检测多轮推理模型在长对话中的安全退化，模型可能早期锁定不安全立场但最终拒绝率正常。",
+      "CoT-Output 2x2安全矩阵通过追踪每轮内部推理和输出，提供了更细粒度的安全诊断方法。",
+      "该框架有助于识别模型在长期交互中隐藏的安全失败模式，对提升LLM对齐性具有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

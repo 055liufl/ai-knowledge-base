@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260610-031",
+  "title": "One Token per Multimodal Evidence: Latent Memory for Resource-Constrained QA",
+  "source_url": "https://arxiv.org/abs/2606.10572",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Latent Memory”的新型外部记忆范式，旨在解决资源受限环境下多模态问答（QA）中的高令牌消耗和存储压力问题。传统方法将每个记忆项以原始文本和图像形式存储，检索后需将完整内容传递给生成模型（如LLM或VLM），导致大量令牌消耗和存储开销。Latent Memory通过将多模态证据压缩为单个令牌表示，仅传递该令牌而非原始数据，从而显著降低令牌使用量和存储需求。实验表明，该方法在保持问答性能的同时，能减少高达90%的令牌消耗，特别适用于移动设备、边缘计算等资源受限场景。该工作结合了检索增强生成（RAG）与高效记忆表示，为多模态AI的实用化提供了新思路，值得关注其在实际部署中的潜力。",
+  "tags": [
+    "LLM",
+    "VLM",
+    "RAG",
+    "Memory",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出Latent Memory范式，将多模态证据压缩为单个令牌表示，大幅降低令牌消耗和存储压力。",
+      "在资源受限场景（如移动设备）中，该方法可减少高达90%的令牌使用，同时保持问答性能。",
+      "结合检索增强生成与高效记忆表示，为多模态AI在边缘计算等低资源环境中的部署提供可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-112",
+  "title": "Forward-Only Convolutional Neural Networks with Learnable Channel-Class Assignment",
+  "source_url": "https://arxiv.org/abs/2606.09928",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种可学习的通道-类别分配机制，用于改进前向-前向（Forward-Forward, FF）算法在卷积神经网络（CNN）中的应用。传统的FF算法通过局部前向目标替代基于梯度的反向传播，具有生物合理性，但在复杂任务中表现不佳，尤其是现有方法依赖于静态的通道-类别分区。作者通过引入可学习的分配策略，使网络能够动态调整每个通道与输出类别的对应关系，从而提升模型在图像分类等任务上的性能。实验表明，该方法在多个基准数据集上优于静态分区方案，并接近反向传播的性能，同时保持了FF算法的前向计算优势。这项研究值得关注，因为它不仅推进了生物启发式学习算法的发展，还为在资源受限或隐私敏感场景下训练CNN提供了新思路，例如避免梯度存储和反向传播的通信开销。此外，可学习分配机制的设计具有通用性，可能扩展到其他前向学习框架中。",
+  "tags": [
+    "Forward-Forward Algorithm",
+    "Convolutional Neural Networks",
+    "Biologically Inspired Learning",
+    "Channel-Class Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可学习的通道-类别分配机制克服了静态分区在复杂任务中的性能瓶颈，使FF算法在CNN上取得显著提升。",
+      "该方法在多个基准数据集上接近反向传播的准确率，同时保留了前向计算的低内存和通信优势。",
+      "该工作为生物启发学习算法在深度学习中的实际应用提供了新路径，尤其适用于分布式或隐私敏感场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

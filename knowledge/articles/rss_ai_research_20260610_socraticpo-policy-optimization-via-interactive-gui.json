@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-093",
+  "title": "SocraticPO: Policy Optimization via Interactive Guidance",
+  "source_url": "https://arxiv.org/abs/2606.09887",
+  "source_platform": "rss_ai_research",
+  "summary": "SocraticPO（苏格拉底式策略优化）是一种针对大型语言模型（LLM）强化学习（RL）的新框架。传统RL方法通常仅使用标量结果奖励（如二元正确性）来监督推理，这虽然提供了优化方向，但很少解释模型应如何修正其错误推理，容易导致捷径学习和脆弱策略。SocraticPO通过在RL rollout过程中引入交互式指导（类似苏格拉底式提问），为模型提供更丰富的反馈信号，帮助其理解推理中的错误并学习更稳健的策略。该工作来自arXiv预印本，属于LLM对齐和推理增强的前沿研究。它值得关注，因为它直接针对当前RLHF（基于人类反馈的强化学习）方法中奖励稀疏和缺乏可解释性的痛点，通过模拟教学交互来提升模型推理能力，可能为更高效、更鲁棒的LLM训练范式铺平道路。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Policy Optimization",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:51:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SocraticPO通过交互式指导替代纯标量奖励，为LLM推理提供更丰富的修正信号，减少捷径学习。",
+      "该框架在RL rollout中模拟苏格拉底式提问，使模型能主动反思并调整错误推理步骤。",
+      "相比传统RL方法，SocraticPO有望提升策略的鲁棒性和泛化能力，尤其在复杂推理任务中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

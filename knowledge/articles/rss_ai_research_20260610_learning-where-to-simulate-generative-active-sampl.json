@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-122",
+  "title": "Learning Where to Simulate: Generative Active Sampling for Online PDE Surrogate Training",
+  "source_url": "https://arxiv.org/abs/2606.09949",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“生成式主动采样”的方法，用于在线偏微分方程（PDE）代理模型的训练。传统上，数据驱动的PDE代理模型依赖于数值求解器生成的数据，但为了在广泛的PDE配置（如初始条件和物理系数）上实现泛化，均匀采样配置参数往往无法充分代表具有挑战性动态的轨迹，导致预测误差大且计算成本高。本文的方法通过生成式模型主动选择最需要模拟的配置区域，从而在训练过程中动态调整采样策略，提高代理模型在复杂场景下的准确性和效率。这项研究值得关注，因为它解决了PDE代理模型训练中的数据效率问题，结合了生成式AI与科学计算，有望加速流体动力学、气候模拟等领域的仿真过程，降低计算资源消耗。",
+  "tags": [
+    "PDE surrogate",
+    "active sampling",
+    "generative model",
+    "scientific computing"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:54:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出生成式主动采样方法，动态选择PDE配置参数进行模拟，避免均匀采样导致的代表性不足问题。",
+      "该方法在在线训练框架下，通过生成模型预测高误差区域，从而引导数值求解器集中计算资源于关键轨迹。",
+      "实验表明，与传统均匀采样相比，该方法在保持相同预测精度下可显著减少所需模拟次数，提升训练效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

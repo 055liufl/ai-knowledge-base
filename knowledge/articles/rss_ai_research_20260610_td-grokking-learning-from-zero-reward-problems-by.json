@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-090",
+  "title": "TD-Grokking: Learning from Zero-Reward Problems by Training-Time Decomposition",
+  "source_url": "https://arxiv.org/abs/2606.09883",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TD-Grokking（Training-Time Decomposition Grokking）的新方法，旨在解决大型语言模型（LLM）在推理任务中面临的关键瓶颈：当所有采样推理轨迹均失败时（即零奖励问题），强化学习（RLVR）无法提供优化信号。该方法通过在训练过程中将复杂问题分解为多个子步骤，并利用子步骤的中间结果生成部分奖励信号，从而在零奖励场景下仍能驱动模型改进。TD-Grokking 的核心创新在于将分解过程融入训练阶段，而非推理阶段，这使其能够在不增加推理成本的情况下提升模型性能。实验表明，该方法在数学推理、逻辑推理等零奖励任务上显著优于现有基线，甚至在某些任务上实现了从完全失败到稳定成功的“顿悟”式突破。这项工作值得关注，因为它直接挑战了 RLVR 在零奖励场景下的局限性，为 LLM 在高度复杂或数据稀疏的推理任务中提供了新的训练范式，有望推动 LLM 在科学发现、代码生成等领域的应用。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Training-Time Decomposition"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:51:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TD-Grokking 通过训练时分解将零奖励问题转化为子步骤的部分奖励问题，解决了 RLVR 在无有效轨迹时的优化困境。",
+      "该方法在多个零奖励推理任务上实现了性能突破，展示了从完全失败到稳定成功的‘顿悟’式学习能力。",
+      "与推理时分解不同，训练时分解不增加推理成本，具有实际部署优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

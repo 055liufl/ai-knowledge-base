@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-109",
+  "title": "Sigma-Branch: Hierarchical Single-Path Network Reconstruction for Dynamic Inference with Reduced Active Parameters",
+  "source_url": "https://arxiv.org/abs/2606.09924",
+  "source_platform": "rss_ai_research",
+  "summary": "Sigma-Branch (SigmaB) 是一种针对内存受限的边缘加速器部署深度神经网络的新框架。其核心挑战在于，推理过程中的瓶颈并非计算，而是每轮推理都需要从片外加载全部权重参数，因为密集网络无法完全存储在芯片上。现有的模型压缩方法（如剪枝、量化）虽然能减少参数传输，但会永久性地降低模型容量。SigmaB 通过将预训练的密集网络重构为层次化的单路径网络，实现了动态推理。具体而言，它设计了一种层次化分支结构，使得网络能够根据输入样本的复杂度，动态地选择并激活一个子路径，从而在推理过程中只使用部分参数（即减少活跃参数数量），而无需牺牲模型容量。这种方法在保持原始网络表达能力的同时，显著降低了片外权重传输量，从而提升了边缘设备上的推理效率。该工作值得关注，因为它直接解决了边缘部署中一个关键但常被忽视的瓶颈——内存带宽，而非单纯追求计算加速，为在资源受限硬件上高效运行大型模型提供了新思路。",
+  "tags": [
+    "模型压缩",
+    "边缘计算",
+    "动态推理",
+    "网络重构"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SigmaB 将预训练密集网络重构为层次化单路径结构，实现基于输入复杂度的动态子路径激活，从而在推理时仅使用部分参数，有效减少片外权重传输。",
+      "与传统的模型压缩方法不同，SigmaB 在不永久损失模型容量的前提下降低活跃参数数量，保持了原始网络的表达能力。",
+      "该工作直接针对边缘部署中内存带宽瓶颈这一实际问题，而非仅关注计算效率，具有较高的实用价值和创新性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260610-135",
+  "title": "Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces",
+  "source_url": "https://arxiv.org/abs/2606.10064",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新颖的智能体训练范式：利用Bittensor去中心化网络上的竞技场（Agent Arenas）作为轨迹基元（Trajectory Primitive），从ShoppingBench子网中提取高质量的多轮交互轨迹，用于蒸馏（Distilling）一个高效的购物智能体。核心创新在于，通过去中心化竞技场中多个异构智能体相互竞争产生的轨迹，天然具备多样性、竞争性监督和长尾覆盖，避免了传统方法（如前沿模型合成数据或未过滤的生产日志）的偏差和污染问题。论文展示了如何将这些竞技场轨迹作为训练基元，通过后训练（post-training）方法（如拒绝采样重SFT）蒸馏出一个小模型智能体，在购物任务上达到甚至超越大模型的表现。这项工作值得关注，因为它为智能体训练提供了一种可扩展、低成本且高质量的数据来源范式，有望解决当前智能体训练中数据瓶颈的关键问题，尤其适用于需要复杂多轮交互和长尾场景的领域。",
+  "tags": [
+    "Agent",
+    "Distillation",
+    "Decentralized Training",
+    "Trajectory Primitive",
+    "Shopping Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:55:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "去中心化竞技场（如Bittensor）产生的多智能体竞争轨迹，天然具备多样性、竞争性监督和长尾覆盖，优于传统合成数据或生产日志。",
+      "将竞技场轨迹作为训练基元（Trajectory Primitive），通过拒绝采样重SFT等后训练方法，可有效蒸馏出小模型智能体，性能接近甚至超越大模型。",
+      "该方法解决了智能体后训练中轨迹数据来源的瓶颈问题，提供了一种可扩展、低成本且高质量的数据生成范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-110",
+  "title": "Sample Where You Struggle: Sharpening Base Model Reasoning via Entropy-Guided Power Sampling",
+  "source_url": "https://arxiv.org/abs/2606.09926",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“熵引导功率采样”（Entropy-Guided Power Sampling）的新方法，旨在通过从序列级功率分布 p^α 中采样，在不更新模型参数的情况下，从基础语言模型中激发类似强化学习（RL）的推理能力。标准 Metropolis-Hastings (MH) 采样器作为马尔可夫链蒙特卡洛（MCMC）方法，存在计算成本高和混合速度慢的问题。作者指出，p^α 与原始分布 p 的主要差异集中在稀疏、空间聚集的高熵决策点上，而 MH 算法在这些区域的重采样效率低下。为此，论文设计了一种基于熵引导的采样策略，通过识别高熵区域并优先在这些区域进行重采样，显著提升了采样效率和推理质量。该方法无需额外训练或参数调整，直接应用于基础模型，即可在推理任务中取得显著性能提升。这项工作为提升大语言模型的推理能力提供了一种高效、轻量级的替代方案，尤其适用于资源受限或需要快速部署的场景。其创新性在于将熵作为引导信号，优化了 MCMC 采样过程，从而在保持模型原始能力的同时，增强了其推理深度和准确性。",
+  "tags": [
+    "LLM",
+    "Sampling",
+    "Reasoning",
+    "MCMC"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过从序列级功率分布 p^α 采样，可在不更新参数的情况下提升基础语言模型的推理能力，效果接近强化学习。",
+      "标准 Metropolis-Hastings 采样器因与高熵决策点结构不匹配，导致计算昂贵且混合缓慢。",
+      "熵引导采样策略通过识别并优先重采样高熵区域，显著提高了采样效率和推理质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

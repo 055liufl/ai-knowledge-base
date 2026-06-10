@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-081",
+  "title": "Alignment Collapse Under KV Cache Quantization: Diagnosis and Mitigation",
+  "source_url": "https://arxiv.org/abs/2606.09864",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究首次系统性地评估了KV缓存量化对大型语言模型（LLM）安全对齐的影响。尽管KV缓存量化被广泛用于减少推理内存，但现有评估仅关注困惑度和准确性，忽略了安全性。研究覆盖了11个指令微调模型（3.8B-72B）和5个基准测试（1894个提示），发现低位量化可能悄无声息地破坏安全对齐，导致模型生成有害内容。论文不仅诊断了这一问题，还提出了缓解策略，为LLM部署中的安全性提供了重要警示。",
+  "tags": [
+    "LLM",
+    "KV Cache Quantization",
+    "Safety Alignment",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:50:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低位KV缓存量化会破坏LLM的安全对齐，即使模型在标准基准上表现良好。",
+      "该问题在多个模型规模和基准上普遍存在，表明其具有广泛影响。",
+      "研究提出了诊断方法和缓解策略，为安全部署量化模型提供了指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

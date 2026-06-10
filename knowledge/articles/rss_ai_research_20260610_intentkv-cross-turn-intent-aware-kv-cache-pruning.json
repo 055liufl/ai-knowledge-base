@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260610-105",
+  "title": "IntentKV: Cross-Turn Intent-Aware KV Cache Pruning for Agent Inference",
+  "source_url": "https://arxiv.org/abs/2606.09916",
+  "source_platform": "rss_ai_research",
+  "summary": "IntentKV 是一种针对多轮 LLM 代理推理场景的跨轮次意图感知键值缓存剪枝方法。在多轮代理交互中，工具调用、搜索结果和中间推理导致 KV 缓存大小和读取带宽呈数量级增长，使得 KV 缓存成为长时推理的主要服务瓶颈。IntentKV 通过维护会话级别的 QueryMemory 来学习剪枝策略，在保持基础 LLM 冻结的情况下，仅保留与当前轮次意图最相关的历史 KV 对，从而显著降低 KV 缓存的内存占用和读取带宽。该方法无需修改模型参数，直接应用于现有 LLM 代理系统，具有即插即用的优势。实验表明，IntentKV 在保持代理任务性能的同时，能将 KV 缓存大小减少 60-80%，并提升推理吞吐量。这项工作对于推动 LLM 代理在实际场景中的高效部署具有重要意义，尤其适用于需要长时间交互的复杂任务。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "KV Cache",
+    "Pruning",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:52:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "IntentKV 通过跨轮次意图感知的 KV 剪枝，解决了多轮 LLM 代理推理中 KV 缓存成为主要瓶颈的问题。",
+      "该方法保持基础 LLM 冻结，仅需维护会话级 QueryMemory，即可实现即插即用的高效剪枝。",
+      "实验显示，IntentKV 能减少 60-80% 的 KV 缓存大小，同时显著提升推理吞吐量，且不牺牲代理任务性能。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-030",
+  "title": "ActiveMem: Distributed Active Memory for Long-Horizon LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.10532",
+  "source_platform": "rss_ai_research",
+  "summary": "ActiveMem 提出了一种分布式主动记忆架构，用于解决长时域推理任务中大语言模型（LLM）代理面临的记忆瓶颈。传统集中式记忆机制将检索信息和交互历史全部压缩在单一模型上下文中，导致推理轨迹扩展时易发生上下文过载，而激进的内容剪枝又会造成不可逆的信息丢失。ActiveMem 通过将记忆分散到多个独立但协同的模块中，每个模块负责特定类型或时间段的记忆存储与检索，并引入主动遗忘和优先级更新策略，从而在不牺牲关键信息的前提下支持更长的推理链条。该架构在多个长时域推理基准测试中表现出显著提升，尤其适用于需要多步规划、持续交互或复杂决策的智能体场景。ActiveMem 的创新之处在于打破了传统上下文窗口的限制，为 LLM 代理提供了更灵活、可扩展的记忆管理方案，有望推动自主智能体在现实世界中的长期任务执行能力。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:45:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分布式记忆架构通过分离记忆模块有效避免了上下文过载，支持更长的推理轨迹。",
+      "主动遗忘和优先级更新机制在保留关键信息的同时减少了冗余，提升了记忆效率。",
+      "ActiveMem 在长时域推理任务中显著优于传统集中式记忆方法，展示了可扩展性优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

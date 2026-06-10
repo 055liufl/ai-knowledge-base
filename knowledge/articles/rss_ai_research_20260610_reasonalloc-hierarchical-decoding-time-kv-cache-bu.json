@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-059",
+  "title": "ReasonAlloc: Hierarchical Decoding-Time KV Cache Budget Allocation for Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2606.11164",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ReasonAlloc的新型KV缓存预算分配方法，专门针对推理模型在解码阶段的高效内存管理。大型语言模型在长链式思维推理过程中，由于键值（KV）缓存快速增长，导致严重的推理瓶颈。现有的解码时压缩方法通过令牌驱逐来缓解此问题，但通常假设所有层和头的预算分布均匀。相比之下，现有的非均匀预算分配方法主要针对静态提示预填充阶段设计。ReasonAlloc通过层次化、动态的预算分配策略，在解码阶段根据各层和头的重要性自适应地分配KV缓存预算，从而在保持推理质量的同时显著降低内存占用和计算开销。该方法通过分析注意力模式，识别出关键层和头，并为其分配更多预算，而对不重要的部分进行压缩。实验结果表明，ReasonAlloc在多个推理任务上实现了与全缓存基线相当的性能，同时将KV缓存大小减少了50%以上，显著提升了推理效率。这项研究对于部署大规模推理模型具有重要价值，因为它解决了长序列推理中的关键内存瓶颈问题，使得在资源受限环境下运行复杂推理模型成为可能。",
+  "tags": [
+    "KV Cache",
+    "Reasoning Model",
+    "Memory Optimization",
+    "Inference Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:48:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReasonAlloc通过层次化动态预算分配，在解码阶段自适应地管理KV缓存，突破了传统均匀分配方法的限制。",
+      "该方法在保持推理质量的同时，将KV缓存大小减少50%以上，显著缓解了长链式推理中的内存瓶颈。",
+      "通过分析注意力模式识别关键层和头，实现了非均匀预算分配，优于仅针对预填充阶段设计的现有方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

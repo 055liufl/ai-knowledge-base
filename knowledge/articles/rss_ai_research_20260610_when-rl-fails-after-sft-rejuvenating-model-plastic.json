@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-115",
+  "title": "When RL Fails after SFT: Rejuvenating Model Plasticity for Robust SFT-to-RL Handoff",
+  "source_url": "https://arxiv.org/abs/2606.09932",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了在大型语言模型（LLM）的后训练流程中，监督微调（SFT）后接强化学习（RL）时的一个关键问题：当SFT过度进行时，模型会失去可塑性（plasticity），导致RL阶段无法有效提升性能。作者将这种失败归因于SFT初始化策略降低了模型被有效优化的能力。论文可能提出了诊断或缓解模型可塑性丧失的方法，以优化SFT到RL的过渡。这项研究值得关注，因为它揭示了LLM训练中一个被忽视的瓶颈——模型可塑性，对于提升后训练效率、避免资源浪费以及设计更鲁棒的训练流程具有重要意义，尤其影响当前主流RLHF（基于人类反馈的强化学习）和RL后训练方法的实际效果。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "SFT",
+    "Model Plasticity"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "过度SFT会导致模型可塑性丧失，使后续RL阶段难以带来显著性能提升。",
+      "模型可塑性是SFT到RL成功过渡的关键因素，需要被主动监测和维持。",
+      "该研究挑战了‘SFT越充分，RL效果越好’的常见假设，提出了新的训练优化方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

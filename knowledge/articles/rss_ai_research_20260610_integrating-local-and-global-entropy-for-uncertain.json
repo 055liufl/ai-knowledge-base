@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-089",
+  "title": "Integrating Local and Global Entropy for Uncertainty Quantification in LLMs",
+  "source_url": "https://arxiv.org/abs/2606.09875",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种结合局部与全局熵的大语言模型不确定性量化方法。现有方法主要依赖token级别的信号（如softmax概率），忽略了中间隐藏状态矩阵的几何结构。作者将隐藏状态矩阵的几何复杂度作为全局不确定性度量，而将token级别的不确定性估计视为局部度量。通过融合这两种熵，该方法能够更全面地捕捉模型的不确定性，从而更有效地识别幻觉。实验表明，该方法在多个基准测试上优于现有的不确定性量化技术，为LLM的可靠部署提供了新的思路。该工作值得关注，因为它首次将隐藏状态的几何信息引入不确定性量化，弥补了现有方法的不足，且具有较好的实用性和创新性。",
+  "tags": [
+    "LLM",
+    "Uncertainty Quantification",
+    "Hallucination",
+    "Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:51:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将隐藏状态矩阵的几何复杂度作为全局不确定性度量，弥补了仅依赖token级别信号的不足。",
+      "局部与全局熵的融合方法能更全面地捕捉LLM的不确定性，有效识别幻觉。",
+      "该方法在多个基准测试上优于现有不确定性量化技术，具有较好的实用性和创新性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

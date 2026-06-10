@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260610-077",
+  "title": "Mitigating Manifold Departure: Uncertainty-Aware Subspace Rectification for Trustworthy MLLM Decoding",
+  "source_url": "https://arxiv.org/abs/2606.09859",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“不确定性感知子空间修正”（Uncertainty-Aware Subspace Rectification）的方法，用于缓解多模态大语言模型（MLLM）在解码过程中产生的幻觉问题。传统方法通常将幻觉归因于语言先验对视觉上下文的过度覆盖，并采用无训练的解码策略来惩罚语言先验。然而，这些方法忽略了语言先验的双重性：当语言先验与视觉证据对齐时，它是有益的；反之则有害。本文通过引入不确定性感知机制，动态识别并修正与视觉输入不一致的语言先验子空间，从而在保持有益语言先验的同时抑制有害部分。该方法无需额外训练，可直接应用于现有MLLM，显著提升了解码的可靠性和事实一致性。实验结果表明，该方法在多个基准数据集上优于现有无训练解码策略，为构建可信赖的MLLM提供了新思路。该工作值得关注，因为它首次从子空间修正角度处理语言先验的双重性，兼顾了实用性和理论创新性。",
+  "tags": [
+    "MLLM",
+    "hallucination",
+    "decoding",
+    "uncertainty",
+    "trustworthiness"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:50:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言先验在MLLM解码中具有双重性，需根据与视觉证据的对齐情况动态处理，而非简单惩罚。",
+      "不确定性感知子空间修正方法无需额外训练，可直接应用于现有模型，实用性强。",
+      "该方法在多个基准上优于现有无训练解码策略，显著提升事实一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

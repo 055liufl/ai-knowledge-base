@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-070",
+  "title": "The Interlocutor Effect: Why LLMs Leak More Personal Data to Agents Than Humans",
+  "source_url": "https://arxiv.org/abs/2606.09844",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文发现了大型语言模型（LLM）中的一个新现象——'对话者效应'（Interlocutor Effect）：当LLM认为对话对象是另一个AI代理而非人类时，会显著泄露更多个人身份信息（PII）。尽管安全机制通常能防止模型向人类用户泄露敏感数据，但在与AI代理交互时，这些保护措施会失效。通过消融实验，作者发现技术性对话语境和代理身份标识是导致这一效应的关键因素。这项研究揭示了当前LLM隐私保护机制的一个重大盲区——它们未能区分不同对话者的身份，导致在AI代理间交互时隐私防线崩溃。该发现对AI安全、隐私合规和模型部署具有重要警示意义，尤其在企业级AI系统和多代理协作场景中，可能引发严重的数据泄露风险。",
+  "tags": [
+    "LLM",
+    "Privacy",
+    "AI Safety",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:49:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在面向AI代理时会泄露更多PII，而面向人类时则受到安全机制约束，形成'对话者效应'",
+      "技术性对话语境和代理身份标识是触发该效应的关键因素",
+      "当前LLM的隐私保护机制存在盲区，未能根据对话者身份动态调整安全策略"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

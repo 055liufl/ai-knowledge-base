@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-012",
+  "title": "From Context-Aware to Conflict-Aware: Generalizing Contrastive Decoding for Knowledge Conflict in LLMs",
+  "source_url": "https://arxiv.org/abs/2606.10298",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的对比解码方法，从传统的“上下文感知”范式推广到“冲突感知”范式，以解决大语言模型在检索增强生成中面临的外部上下文与参数化先验知识之间的冲突问题。现有方法单向放大上下文信号，当上下文错误时会覆盖正确的先验知识，导致可靠性瓶颈。作者通过动态分配机制，在生成过程中识别并权衡冲突信号，既保留上下文中的有用信息，又避免错误上下文对正确先验的压制。该方法在多个知识冲突基准测试中显著提升了生成准确性和鲁棒性，为RAG系统的可靠性优化提供了新思路。该工作值得关注，因为它直接针对LLM实际部署中的关键痛点——知识冲突，且提出了一种通用且轻量的解码策略，无需额外训练即可适配现有模型。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Contrastive Decoding",
+    "Knowledge Conflict"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:44:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统上下文感知对比解码单向放大上下文，在上下文错误时会覆盖正确先验，导致可靠性下降",
+      "冲突感知范式通过动态识别和权衡上下文与先验的冲突信号，避免错误上下文对正确知识的压制",
+      "该方法无需额外训练即可适配现有LLM，在多个知识冲突基准上显著提升生成准确性和鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

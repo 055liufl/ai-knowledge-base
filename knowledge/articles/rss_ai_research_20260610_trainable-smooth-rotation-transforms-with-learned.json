@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-111",
+  "title": "Trainable Smooth-Rotation Transforms with Learned Channel Scales for LLM Quantization",
+  "source_url": "https://arxiv.org/abs/2606.09927",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型（LLM）量化训练后量化（PTQ）的新方法，旨在解决激活量化中因异常值主导通道导致的量化误差问题。作者首先分析了现有基于缩放等效变换（如SmoothRot）中可能存在的过度迁移问题，即缩放策略不当导致信息损失。为此，他们引入了一种分位数鲁棒缩放策略，用于SmoothRot风格的变换，以更稳健地处理异常值通道。此外，论文还提出了可训练的平滑旋转变换，通过学习通道缩放因子，进一步优化量化效果。该方法在多个LLM基准测试上展示了显著的性能提升，尤其是在低比特量化场景下，有效降低了量化误差，同时保持了模型推理效率。这项工作为LLM的高效部署提供了实用且创新的量化方案，值得关注。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "PTQ",
+    "SmoothRot"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:53:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有缩放等效变换在LLM量化中可能因过度迁移导致激活量化误差增大，本文通过分位数鲁棒缩放策略缓解了该问题。",
+      "可训练的平滑旋转变换结合学习通道缩放因子，进一步提升了低比特量化下的模型精度。",
+      "该方法在多个LLM基准上验证了有效性，为高效部署提供了实用方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

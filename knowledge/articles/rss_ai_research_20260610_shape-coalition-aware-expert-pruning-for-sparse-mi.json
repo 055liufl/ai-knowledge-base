@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-092",
+  "title": "SHAPE: Coalition-Aware Expert Pruning for Sparse Mixture-of-Experts LLMs",
+  "source_url": "https://arxiv.org/abs/2606.09886",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SHAPE的新型专家剪枝方法，专门针对稀疏混合专家（MoE）大型语言模型。MoE模型通过路由机制仅激活部分专家，从而在保持高质量的同时降低计算成本，但其部署受限于内存瓶颈——所有专家必须常驻内存以支持动态路由。传统的专家剪枝方法通常独立评估每个专家的重要性，忽略了MoE推理的联盟性质，即输出是由路由选中的top-k专家共同协作产生的。SHAPE方法通过引入联盟感知的剪枝策略，考虑专家之间的协同效应，从而更准确地识别冗余专家并实现高效剪枝。实验表明，SHAPE在保持模型性能的同时显著减少了内存占用和推理延迟。该研究对于MoE模型的实际部署具有重要意义，尤其是在资源受限的环境中，如边缘设备或云服务中的大规模推理。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "模型剪枝",
+    "推理优化"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:51:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE推理具有联盟性质，专家输出由路由选中的top-k专家共同决定，传统独立剪枝方法忽略了这一关键特性。",
+      "SHAPE通过联盟感知的剪枝策略，考虑专家间的协同效应，能更准确地识别冗余专家，实现高效剪枝。",
+      "该方法在保持模型性能的同时显著降低内存占用和推理延迟，有助于MoE模型在资源受限场景下的部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

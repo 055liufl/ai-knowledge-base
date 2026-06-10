@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-133",
+  "title": "Interpreting and Steering a Text-to-Speech Language Model with Sparse Autoencoders",
+  "source_url": "https://arxiv.org/abs/2606.10029",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了文本到语音（TTS）语言模型中的内部表示机制，特别是当文本和生成的语音标记共享同一个残差流时，模型如何构建和理解这些表示。作者在CosyVoice3的语言模型骨干上训练了BatchTopK稀疏自编码器，并提出了一种模态感知的自动解释管道，该管道能够根据特征激活的来源（文本前缀上下文、1秒语音片段或两者）对每个特征进行标注。这项工作对于理解TTS语言模型的内部工作原理具有重要意义，因为它揭示了模型如何在不同模态之间进行信息整合和表示学习。此外，该研究还展示了如何通过稀疏自编码器来引导和解释模型的生成行为，为未来改进TTS系统的可控性和可解释性提供了新的工具和视角。",
+  "tags": [
+    "TTS",
+    "Sparse Autoencoders",
+    "Language Model",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:55:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次在TTS语言模型中应用稀疏自编码器来解析文本和语音共享残差流中的表示，揭示了模态间信息整合的机制。",
+      "提出了一种模态感知的自动解释管道，能够自动标注特征激活的来源，提高了模型解释的效率和准确性。",
+      "展示了通过稀疏自编码器可以引导TTS模型的生成行为，为可控文本到语音合成提供了新的方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

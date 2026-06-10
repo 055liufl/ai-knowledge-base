@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260610-080",
+  "title": "Blurry Window Attention",
+  "source_url": "https://arxiv.org/abs/2606.09862",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“模糊窗口注意力”（Blurry Window Attention）的新机制，旨在解决Transformer语言模型中Softmax注意力操作在长上下文场景下的二次复杂度与KV缓存状态增长瓶颈。通过引入有限状态大小的线性复杂度替代方案，如状态空间模型（SSMs）、线性注意力（LA）和有界记忆控制注意力（ABC），论文探索了在保持模型性能的同时降低计算开销的方法。模糊窗口注意力通过模糊化窗口边界，在局部与全局注意力之间取得平衡，从而在长序列处理中实现高效推理。该工作值得关注，因为它为长上下文语言模型的实用化提供了新思路，可能推动大模型在文档分析、对话系统等场景中的部署效率提升。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "Long Context",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-10T11:39:15Z",
+  "collected_at": "2026-06-10T11:50:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模糊窗口注意力通过模糊化窗口边界，在局部与全局注意力之间取得平衡，降低了计算复杂度。",
+      "该方法借鉴了SSMs、线性注意力和有界记忆控制注意力的思想，实现了线性复杂度和有限状态大小。",
+      "该工作为长上下文场景下的Transformer模型推理效率提升提供了新的理论框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
