@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-136",
+  "title": "Towards Data-free and Training-free Compression for Speech Foundation Models Using Parameter Clustering",
+  "source_url": "https://arxiv.org/abs/2606.11836",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对语音基础模型的无数据、无训练压缩方法，通过基于k-means的通道级聚类实现参数压缩。进一步探索了基于层级别不同参数簇数量的混合稀疏剪枝策略。在LibriSpeech数据集上的实验表明，对HuBERT-large模型进行50%剪枝稀疏度操作时，词错误率（WER）绝对降低了27.73%/18.61%（相对降低34.37%/21.91%）。该方法无需额外数据或训练，显著降低了模型部署成本，为语音模型的高效压缩提供了新思路。",
+  "tags": [
+    "model compression",
+    "speech foundation model",
+    "k-means clustering",
+    "pruning"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:26:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出无数据、无训练的参数聚类压缩方法，避免了对额外数据或微调的依赖",
+      "通过层级别混合稀疏剪枝，在保持性能的同时实现50%的模型压缩率",
+      "在HuBERT-large上验证了方法有效性，WER显著降低，展示了实际应用潜力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

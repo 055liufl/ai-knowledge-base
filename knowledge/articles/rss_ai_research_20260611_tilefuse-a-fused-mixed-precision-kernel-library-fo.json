@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260611-069",
+  "title": "TileFuse: A Fused Mixed-Precision Kernel Library for Efficient Quantized LLM Inference on AMD NPUs",
+  "source_url": "https://arxiv.org/abs/2606.11357",
+  "source_platform": "rss_ai_research",
+  "summary": "TileFuse 是一种针对 AMD NPU 的融合混合精度内核库，旨在高效执行量化大语言模型推理。随着边缘设备对 LLM 推理需求的增长，片上系统（SoC）集成了 NPU 以在有限的功耗和热预算下提升性能和能效。然而，当前客户端 NPU 上部署 LLM 面临挑战：广泛使用的量化格式（如 AWQ）与许多现有 NPU 软件栈不兼容，这些软件栈通常是专有的且暴露的低级控制有限。TileFuse 通过设计融合内核和混合精度计算策略，解决了量化 LLM 在 AMD NPU 上的高效推理问题，优化了内存访问和计算模式，从而在保持模型精度的同时显著提升推理速度和能效。该工作对于推动边缘 AI 和端侧 LLM 部署具有重要价值，尤其适用于资源受限的设备场景。",
+  "tags": [
+    "LLM",
+    "NPU",
+    "Quantization",
+    "Mixed-Precision",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:20:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TileFuse 通过融合内核设计解决了量化 LLM 在 AMD NPU 上的软件栈不兼容问题，提升了推理效率。",
+      "混合精度计算策略在保持模型精度的同时，显著优化了 NPU 上的内存访问和计算性能。",
+      "该工作为边缘设备上的 LLM 部署提供了实用工具，推动了端侧 AI 推理的能效和速度提升。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

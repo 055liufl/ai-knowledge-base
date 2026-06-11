@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-061",
+  "title": "When Poison Fails After Retrieval: Revisiting Corpus Poisoning under Chunking and Reranking Pipelines",
+  "source_url": "https://arxiv.org/abs/2606.11265",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了检索增强生成（RAG）系统在现实多阶段检索流水线（包括文档分块、密集检索、重排序和基于上下文的生成）下的语料库投毒攻击。现有研究主要在简化检索设置下评估投毒，忽略了实际RAG流水线中的关键组件。作者发现，当引入分块和重排序后，传统投毒攻击的有效性显著下降，因为分块会破坏恶意内容的完整性，而重排序会优先选择相关片段，从而削弱投毒效果。该研究揭示了RAG系统在复杂流水线中对抗投毒攻击的天然鲁棒性，并提出了新的攻击策略以绕过这些防御。这项工作对于理解RAG安全性和设计更健壮的检索系统具有重要意义，值得关注因为它挑战了现有投毒攻击的假设，并为实际部署提供了更现实的评估视角。",
+  "tags": [
+    "RAG",
+    "Security",
+    "Corpus Poisoning",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:19:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "实际RAG流水线中的分块和重排序机制能显著降低传统语料库投毒攻击的有效性，因为分块破坏恶意内容完整性，重排序优先选择相关片段。",
+      "现有投毒研究多基于简化检索设置，忽略了多阶段流水线的防御效果，导致高估攻击威胁。",
+      "需要重新设计针对现实RAG系统的投毒策略，例如利用分块边界或重排序偏好来绕过防御。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

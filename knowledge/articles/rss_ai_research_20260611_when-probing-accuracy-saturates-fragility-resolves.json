@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-071",
+  "title": "When Probing Accuracy Saturates, Fragility Resolves: A Complementary Metric for LLM Pre-Training Analysis",
+  "source_url": "https://arxiv.org/abs/2606.11375",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于分析大语言模型（LLM）预训练过程的互补性指标——脆弱性（fragility）。传统的线性探测方法通过分类器在隐藏状态上的准确率来判断模型是否“编码”了某种属性，但该方法在预训练过程中存在明显局限：探测准确率在训练的前几千步内迅速饱和，导致后续大部分训练过程对探测工具不可见。为克服这一缺陷，作者定义了脆弱性指标，即导致探测准确率崩溃的激活噪声水平。该指标对模型训练过程中的细微变化更为敏感，能够揭示传统准确率指标无法捕捉的模型演化细节。实验表明，脆弱性在预训练后期持续变化，与模型泛化能力、表示鲁棒性等关键特性相关。该工作为理解LLM预训练动态提供了新的分析工具，有助于优化训练策略和评估模型质量。",
+  "tags": [
+    "LLM",
+    "Pre-training",
+    "Probing",
+    "Representation Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:20:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统线性探测准确率在预训练早期饱和，无法反映后续训练动态，而脆弱性指标在训练全程持续变化，提供了更丰富的分析维度。",
+      "脆弱性定义为导致探测准确率崩溃的激活噪声水平，对模型表示鲁棒性和泛化能力敏感，可作为评估预训练质量的补充指标。",
+      "该工作为理解LLM预训练过程中的表示演化提供了新视角，有助于优化训练策略和诊断模型问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-132",
+  "title": "Grammar-Constrained Decoding Can Jailbreak LLMs into Generating Malicious Code",
+  "source_url": "https://arxiv.org/abs/2606.11817",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了一个反直觉的安全风险：原本用于提升代码生成可靠性的语法约束解码（Grammar-Constrained Decoding, GCD）技术，反而可能成为攻击面，被利用来诱导大语言模型（LLM）生成恶意代码。作者提出了一种新型的越狱攻击方法，通过精心构造的语法约束，绕过模型的安全对齐机制，迫使模型输出符合特定语法但包含恶意逻辑的代码。该攻击利用了GCD在强制执行语法正确性时，可能削弱模型对内容安全性的判断能力。研究通过实验验证了该攻击在多种主流LLM上的有效性，并讨论了潜在的防御策略。这项工作对于LLM安全领域具有重要警示意义，提醒开发者在使用GCD等可靠性增强技术时，需要同时考虑其可能引入的安全漏洞。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Code Generation",
+    "Jailbreak"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:25:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语法约束解码（GCD）在提升代码生成可靠性的同时，可能被恶意利用来绕过LLM的安全对齐机制。",
+      "提出了一种新的越狱攻击方法，通过构造特定的语法约束诱导模型生成恶意代码。",
+      "该攻击在多种主流LLM上验证有效，揭示了可靠性增强技术与安全风险之间的潜在矛盾。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

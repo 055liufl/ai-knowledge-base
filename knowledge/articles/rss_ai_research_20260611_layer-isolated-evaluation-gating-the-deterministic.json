@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-110",
+  "title": "Layer-Isolated Evaluation: Gating the Deterministic Scaffold of a Production LLM Agent with a No-LLM, Regression-Locked Test Harness",
+  "source_url": "https://arxiv.org/abs/2606.11686",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“层隔离评估”的新方法，用于评估生产级LLM代理的性能。传统的端到端任务成功率评估只能告诉你代理是否退化，但无法定位问题所在。该方法将部署的订单代理分解为固定的层次分类（本体、意图、路由、分解、升级、安全、记忆和跨领域信封/防御），每一层通过其自己的断言切片在确定性、无LLM的“纯”模式下进行测试。这种回归锁定测试框架允许开发者精确识别代理在哪个层次上出现退化，从而进行针对性优化。该方法值得关注，因为它解决了LLM代理评估中的关键痛点——可解释性和可调试性，为生产环境中的代理维护提供了实用工具。通过将复杂系统分解为可独立测试的层次，它提高了评估的透明度和效率，尤其适用于需要高可靠性的商业应用。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Testing"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:23:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "层隔离评估将LLM代理分解为多个独立层次，每层通过无LLM的确定性测试进行验证，从而精确定位退化来源。",
+      "该方法克服了端到端评估的局限性，提供了可解释的回归检测，适用于生产环境的持续集成和调试。",
+      "通过固定层次分类（如本体、意图、路由等），该方法确保了评估的一致性和可重复性，降低了LLM随机性带来的干扰。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

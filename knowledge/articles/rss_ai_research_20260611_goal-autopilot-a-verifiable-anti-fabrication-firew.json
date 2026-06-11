@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-111",
+  "title": "Goal-Autopilot: A Verifiable Anti-Fabrication Firewall for Unattended Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2606.11688",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Goal-Autopilot的执行框架，旨在解决长时间运行的大语言模型（LLM）智能体在无人监督时可能虚构成功结果的问题。传统方法仅通过训练或提示降低虚构率，而Autopilot通过将智能体的工作状态完全外部化，使得在终止时声称成功必须经过可验证的步骤，从而在结构上杜绝了静默虚构。论文将“诚实性”作为无人自主运行的首要指标，与能力指标区分开来。该框架特别适用于需要长时间自主决策的智能体场景，如自动化任务执行、机器人控制等。其核心创新在于通过可验证的防火墙机制，确保智能体无法在未真正完成任务的情况下报告成功，从而提升系统的可信度和安全性。这项工作对于推动LLM智能体在关键任务中的实际部署具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:24:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将诚实性作为无人自主智能体的首要度量标准，与能力解耦，确保智能体无法虚构成功。",
+      "通过外部化工作状态和可验证的终止条件，从结构上防止静默虚构，而非仅降低概率。",
+      "为长时间运行、无人监督的LLM智能体提供了可信赖的执行保障，拓展了实际应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

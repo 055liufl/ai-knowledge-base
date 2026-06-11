@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260611-043",
+  "title": "To Intervene or Not: Guiding Inference-time Alignment with Probabilistic Model Blending",
+  "source_url": "https://arxiv.org/abs/2606.11201",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“概率模型混合”的推理时对齐方法，旨在解决现有推理时对齐技术中指导信号可靠性不足的问题。传统方法在生成输出时，从已对齐模型中提取指导信号，但未评估其可靠性，导致对齐效果不稳定。作者通过系统性评估发现，指导信号的可靠性会随生成上下文动态变化。为此，他们设计了一种概率混合框架，在推理过程中动态决定是否进行干预（即是否应用指导信号），通过建模干预的置信度来平衡对齐效果与生成质量。该方法在多个基准测试（如安全性、有用性）上优于固定干预策略，且计算开销较低。该工作为推理时对齐提供了一种更灵活、可靠的方案，尤其适用于需要动态权衡安全性与流畅性的场景，如对话系统和内容生成。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Inference-time"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:18:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有推理时对齐方法忽视指导信号可靠性，导致效果不稳定，本文通过系统性评估揭示了该问题。",
+      "提出概率模型混合框架，动态决定是否干预，通过置信度建模平衡对齐效果与生成质量。",
+      "该方法在安全性和有用性基准上优于固定干预策略，且计算开销低，适合实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

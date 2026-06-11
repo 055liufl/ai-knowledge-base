@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260611-089",
+  "title": "SirenFNO: Efficient and Full Frequency Learning of Fourier Neural Operators",
+  "source_url": "https://arxiv.org/abs/2606.11518",
+  "source_platform": "rss_ai_research",
+  "summary": "SirenFNO 是一种改进的傅里叶神经算子（FNO）架构，旨在解决传统 FNO 因频率截断而导致的低频偏好问题，从而提升对具有强高频振荡特性的偏微分方程（PDE）的求解能力。传统 FNO 通过截断高频分量来保持学习效率，但这会导致频谱偏差，限制了对高频信息的捕捉。SirenFNO 引入了一种高效的全局频率学习机制，通过自适应地调整频率分量的权重，使得模型能够同时学习低频和高频特征，而无需显著增加计算成本。该方法在多个标准 PDE 基准测试（如 Navier-Stokes 方程、Burgers 方程等）上展示了优于传统 FNO 及其变体的性能，特别是在高频振荡场景下。SirenFNO 的创新点在于其频率自适应模块，该模块利用可学习的门控机制动态选择重要频率，从而在保持计算效率的同时扩展了频谱学习范围。这项工作对于科学计算和 AI for Science 领域具有重要意义，因为它提供了一种更通用的 PDE 代理模型，能够处理更广泛的物理问题，尤其是在涉及湍流、波动等高频现象的工程应用中。此外，SirenFNO 的架构设计简洁，易于集成到现有 FNO 框架中，具有较高的实用价值。",
+  "tags": [
+    "FNO",
+    "PDE",
+    "Neural Operator",
+    "Frequency Learning",
+    "AI for Science"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:22:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SirenFNO 通过自适应频率门控机制克服了传统 FNO 的低频偏好，实现了对高频信息的有效学习。",
+      "该方法在多个高频振荡 PDE 基准上显著提升了预测精度，同时保持了与标准 FNO 相当的计算效率。",
+      "SirenFNO 的架构设计具有通用性，可扩展至其他基于谱方法的神经算子模型，推动科学计算代理模型的发展。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

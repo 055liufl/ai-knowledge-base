@@ -1,0 +1,29 @@
+{
+  "id": "rss-ai-research-20260611-077",
+  "title": "Signed Compression Progress on a Sealed Audit is Goodhart-Resistant",
+  "source_url": "https://arxiv.org/abs/2606.11417",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于压缩进步的固有动机奖励机制，并证明了其具有抗古德哈特定律（Goodhart-resistant）的特性。传统上，压缩进步被认为是一种可信的奖励，因为它仅在学习发生时给予。作者通过形式化定义，将固有奖励设定为固定密封审计损失（sealed-audit loss）的符号减少量，即 r_t = E(θ_{t-1}) - E(θ_t)，使得累积奖励恰好等于终点损失之差。这种设计避免了代理通过操纵奖励信号来获取高回报，从而解决了古德哈特定律中“当指标成为目标时，就不再是好指标”的问题。该研究为强化学习中的内在动机提供了理论保障，尤其适用于需要长期学习和探索的场景。值得关注的是，它首次严格证明了压缩进步奖励的可靠性，对AI安全、可解释性和鲁棒学习具有重要启示。",
+  "tags": [
+    "Reinforcement Learning",
+    "Intrinsic Motivation",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:21:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "压缩进步奖励通过密封审计损失设计，实现了抗古德哈特定律的累积奖励，确保奖励仅反映真实学习进展。",
+      "该机制形式化了内在动机的‘可信性’，为强化学习中的探索与奖励设计提供了理论支撑。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

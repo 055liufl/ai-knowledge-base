@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260611-039",
+  "title": "PoQ-Judge: A Multi-Architecture Evaluation Framework for Cost-Aware Proof-of-Quality in Decentralized LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.11196",
+  "source_platform": "rss_ai_research",
+  "summary": "PoQ-Judge 是一个为去中心化大语言模型推理网络设计的轻量级、无参考的质量评估框架，用于实现成本感知的“质量证明”（Proof-of-Quality, PoQ）。该框架训练专门的裁判模型，无需真实参考答案即可对查询-输出对进行评分。研究探索了三种架构在质量与成本之间的权衡：TextCNN 裁判、MiniLM 交叉编码器和 DeBERTa 裁判。通过两阶段训练（在 UltraFeedback 和 GPT 标注的领域内数据上），PoQ-Judge 能够在去中心化环境中高效评估推理质量，解决传统评估方法依赖中心化参考或高计算成本的问题。该工作对于推动去中心化 AI 推理的可信度和经济激励具有重要意义，值得关注因为它提供了一种实用、可扩展的解决方案，平衡了评估准确性与资源消耗。",
+  "tags": [
+    "Decentralized LLM",
+    "Proof-of-Quality",
+    "Evaluation Framework",
+    "Cost-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:17:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PoQ-Judge 通过无参考的裁判模型实现去中心化 LLM 推理的质量评估，避免了传统方法对真实答案的依赖。",
+      "框架比较了三种架构（TextCNN、MiniLM、DeBERTa），揭示了质量与成本之间的权衡，为实际部署提供了选择依据。",
+      "两阶段训练策略（通用数据+领域内数据）提升了裁判模型在特定任务上的泛化能力和准确性。",
+      "该工作为去中心化推理网络中的经济激励和信任机制提供了关键技术支撑，具有实际应用潜力。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

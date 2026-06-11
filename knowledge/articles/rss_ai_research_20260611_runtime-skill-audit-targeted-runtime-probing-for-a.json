@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260611-107",
+  "title": "Runtime Skill Audit: Targeted Runtime Probing for Agent Skill Security",
+  "source_url": "https://arxiv.org/abs/2606.11671",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM Agent技能安全性的动态分析方法——Runtime Skill Audit (RSA)。Agent技能允许LLM代理重用指令、资源、工具和工作流，但这也为恶意行为提供了新的隐藏空间。一个技能可能在文档或代码中看似无害，只有在特定用户请求、本地资产、持久状态或多步骤工具交互下才会变得有害，这使得纯静态审查变得脆弱。RSA通过运行时探测来检测技能在真实执行环境中的行为，从而识别潜在的安全风险。该方法关注技能在调用时的动态行为，而非仅依赖静态分析，能够发现隐藏的恶意逻辑。这项工作对于保障Agent生态系统的安全性具有重要意义，尤其是在技能市场或第三方技能集成场景中。RSA提供了一种实用的安全审计手段，有助于开发者和管理者识别和防范技能层面的安全威胁。",
+  "tags": [
+    "LLM Agent",
+    "Security",
+    "Runtime Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:23:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent技能在静态审查中可能看似无害，但在特定运行时条件下才会触发恶意行为，这构成了新的安全挑战。",
+      "Runtime Skill Audit (RSA) 通过动态探测方法，在技能实际执行时检测其行为，能够发现静态分析无法识别的隐藏威胁。",
+      "该方法强调了运行时上下文（如用户请求、本地资产、持久状态和多步骤交互）在技能安全性评估中的关键作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-121",
+  "title": "AnchorEdit: Maintaining Temporal Consistency in Multi-turn Image Editing via Causal Memory",
+  "source_url": "https://arxiv.org/abs/2606.11751",
+  "source_platform": "rss_ai_research",
+  "summary": "AnchorEdit 是一种基于自回归扩散的框架，旨在解决多轮图像编辑中的身份漂移和错误累积问题。传统的多轮编辑方法依赖于双向注意力机制，这与交互式编辑的因果、顺序特性不匹配，导致在连续编辑步骤中图像身份不一致和误差逐渐放大。AnchorEdit 通过引入因果记忆机制，将编辑过程建模为自回归序列，确保每一轮编辑仅依赖先前步骤的信息，从而保持时间一致性。该框架利用视频先验知识，但重新设计了注意力结构以适应因果性，显著提升了多轮编辑的稳定性和准确性。实验表明，AnchorEdit 在多个基准数据集上优于现有方法，尤其在身份保持和错误控制方面表现突出。这项研究对于图像编辑、交互式设计和生成式 AI 领域具有重要价值，因为它提供了一种更符合实际编辑流程的解决方案，有望推动相关应用的发展。",
+  "tags": [
+    "Image Editing",
+    "Diffusion Model",
+    "Autoregressive",
+    "Temporal Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:24:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AnchorEdit 首次将自回归扩散模型应用于多轮图像编辑，解决了身份漂移和错误累积问题。",
+      "通过因果记忆机制，框架实现了与交互式编辑顺序特性一致的时间一致性。",
+      "重新设计注意力结构以利用视频先验，同时避免双向注意力的不匹配问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

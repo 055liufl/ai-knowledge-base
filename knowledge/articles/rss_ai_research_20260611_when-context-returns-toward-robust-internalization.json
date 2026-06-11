@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-100",
+  "title": "When Context Returns: Toward Robust Internalization in On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2606.11627",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在线策略蒸馏中一个有趣且未被充分探索的现象：当将原始特权上下文（如系统提示或任务提示）重新引入到经过蒸馏的学生模型时，其性能会显著下降。作者将这一现象称为“上下文返回问题”，并分析了其背后的原因，指出蒸馏过程可能导致学生模型对上下文产生过度依赖或错误的内化方式。为了应对这一问题，论文提出了一种新的训练方法——鲁棒内化蒸馏（Robust Internalization Distillation, RID），该方法通过引入对抗性上下文扰动和正则化项，促使学生模型在蒸馏过程中更稳健地内化上下文信息，从而在上下文返回时仍能保持甚至提升性能。实验在多个自然语言处理任务（如指令跟随、对话生成和文本分类）上验证了RID的有效性，结果表明该方法显著缓解了上下文返回导致的性能下降，同时保持了无上下文场景下的高效推理。这项工作对于理解知识蒸馏中的上下文内化机制具有重要意义，并为构建更鲁棒的蒸馏模型提供了实用方案。",
+  "tags": [
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "Context Internalization",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:23:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次识别并系统研究了在线策略蒸馏中的“上下文返回问题”，即重新引入特权上下文会导致学生模型性能显著下降。",
+      "提出鲁棒内化蒸馏（RID）方法，通过对抗性上下文扰动和正则化增强模型对上下文的稳健内化。",
+      "实验证明RID在多个NLP任务上有效缓解了上下文返回导致的性能退化，同时保持无上下文推理的高效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

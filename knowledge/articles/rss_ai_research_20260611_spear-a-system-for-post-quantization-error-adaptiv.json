@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-056",
+  "title": "SPEAR: A System for Post-Quantization Error-Adaptive Recovery Enabling Efficient Low-Bit LLM Serving",
+  "source_url": "https://arxiv.org/abs/2606.11244",
+  "source_platform": "rss_ai_research",
+  "summary": "SPEAR 是一种用于低比特大语言模型（LLM）服务的高效后量化误差自适应恢复系统。该研究指出，量化误差具有高度输入依赖性，且在不同 token 间变化显著，这是导致 4 位量化模型与 FP16 模型之间存在质量差距的根本原因。SPEAR 通过引入自适应误差恢复机制，在推理过程中动态补偿量化误差，从而在不显著增加计算开销的前提下提升低比特模型的生成质量。该系统特别适用于资源受限场景下的小型模型服务，能够有效降低部署成本并保持模型性能。该工作为后量化优化提供了新思路，具有重要的实用价值。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Efficient Serving",
+    "Error Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:19:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化误差的输入依赖性导致低比特模型质量下降，SPEAR 通过自适应恢复机制动态补偿误差。",
+      "该系统在不显著增加推理开销的前提下，有效缩小了 4 位量化与 FP16 模型之间的质量差距。",
+      "SPEAR 特别适用于小型模型，在资源受限场景中实现高效低比特服务。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

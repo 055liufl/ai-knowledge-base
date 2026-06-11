@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-115",
+  "title": "Substrate Asymmetry in User-Side Memory: A Diagnostic Framework",
+  "source_url": "https://arxiv.org/abs/2606.11712",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种诊断框架，用于分析大型语言模型（LLM）中用户侧记忆的基底不对称性。传统上，用户侧记忆被简化为单一的“个性化”能力，即根据用户历史生成更符合用户偏好的输出。然而，作者通过实验证明，这种聚合指标掩盖了方向相反的失败模式。记忆实际上可以分解为至少三个正交维度：行为一致性（风格、语气）、事实存在（回忆历史中的事实）和事实缺失（在事实缺失时放弃回答）。没有任何单一基底能在所有三个维度上同时取得最优表现。该框架通过系统性地评估不同记忆基底（如基于提示、微调或外部记忆库）在这些维度上的表现，揭示了它们之间的权衡关系。这一发现对于设计更鲁棒、更个性化的LLM系统具有重要意义，尤其是在需要平衡记忆准确性与安全性的应用场景中。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Personalization",
+    "Diagnostic Framework"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:24:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用户侧记忆不能简化为单一指标，至少包含行为一致性、事实存在和事实缺失三个正交维度。",
+      "不同记忆基底（如提示、微调、外部记忆）在三个维度上表现各异，不存在全能方案。",
+      "该诊断框架有助于揭示记忆系统的权衡，指导更鲁棒的个性化LLM设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

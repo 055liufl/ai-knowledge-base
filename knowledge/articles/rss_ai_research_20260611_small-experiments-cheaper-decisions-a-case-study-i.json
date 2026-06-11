@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260611-073",
+  "title": "Small Experiments, Cheaper Decisions: A Case Study in Staged Promotion for Micro-Pretraining",
+  "source_url": "https://arxiv.org/abs/2606.11387",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于微预训练的分阶段提升协议，旨在通过短时间训练运行降低实验成本，同时避免因预算过小导致的配置误判。研究在两种异构主机块（Windows A100和Linux L40S）上，对12个预先筛选的配置进行2分钟、5分钟、10分钟、60分钟和12小时的分阶段预算测试，并采用固定的提升规则。该工作为资源受限场景下的模型预训练提供了可审计的决策框架，有助于提升实验效率与可靠性。",
+  "tags": [
+    "LLM",
+    "Pre-training",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:20:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "短时间预训练运行可能过度提升仅在小预算下表现良好的配置，分阶段协议可缓解此问题",
+      "固定提升规则结合异构硬件环境（A100和L40S）增强了实验的可审计性和可重复性",
+      "分阶段预算从2分钟到12小时，覆盖从快速筛选到深度验证的完整流程"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

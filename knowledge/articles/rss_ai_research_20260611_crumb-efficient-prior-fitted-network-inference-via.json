@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-084",
+  "title": "CRUMB: Efficient Prior Fitted Network Inference via Distributionally Matched Context Batching",
+  "source_url": "https://arxiv.org/abs/2606.11473",
+  "source_platform": "rss_ai_research",
+  "summary": "CRUMB（Clustered Retrieval Using Minimized Batching）是一种针对先验拟合网络（PFN）的高效推理方法。PFN是一种基于上下文学习的表格基础模型，能够将整个带标签的训练集作为上下文，在单次前向传播中为测试查询生成预测。然而，PFN架构中使用的自注意力机制具有二次方复杂度，导致在大型训练数据集上推理成本过高。CRUMB通过分布匹配的上下文批处理策略，将训练数据聚类并选择与测试查询分布匹配的子集作为上下文，从而显著降低计算开销，同时保持预测性能。该方法在多个表格数据集上验证了其有效性，实现了推理速度的提升和资源消耗的减少。该研究对于推动PFN在实际大规模表格数据应用中的部署具有重要意义。",
+  "tags": [
+    "Prior-Fitted Networks",
+    "Efficient Inference",
+    "Tabular Foundation Models",
+    "Context Batching"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:21:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CRUMB通过分布匹配的上下文批处理，解决了PFN中自注意力二次复杂度带来的大规模推理瓶颈。",
+      "该方法在保持预测准确性的同时，显著降低了推理时间和内存占用，适用于实际表格数据场景。",
+      "CRUMB为PFN在资源受限环境下的部署提供了可行方案，推动了表格基础模型的实用化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

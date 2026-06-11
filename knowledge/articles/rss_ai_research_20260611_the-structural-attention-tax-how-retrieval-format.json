@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-041",
+  "title": "The Structural Attention Tax: How Retrieval Format Hijacks In-Context Learning Independent of Content",
+  "source_url": "https://arxiv.org/abs/2606.11198",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文识别并形式化了一种称为“结构注意力税”的现象，即在检索增强生成（RAG）系统中，注入内容的结构格式（而非语义相关性）会独立地扭曲模型的注意力分布。具体而言，知识图谱（KG）三元组由于其关系分隔符和重复的槽位模式，每个token捕获的注意力是普通文本的2-3倍。该研究揭示了检索格式如何在不依赖内容的情况下劫持上下文学习，对RAG系统的设计和优化具有重要意义。它挑战了当前RAG研究中仅关注内容相关性的假设，强调了格式对模型行为的潜在影响，值得关注因为它可能改进检索结果的呈现方式，提升LLM输出的可靠性和效率。",
+  "tags": [
+    "RAG",
+    "Attention",
+    "Knowledge Graph",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:17:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "知识图谱三元组的结构格式（如分隔符和重复模式）会导致每个token获得2-3倍于普通文本的注意力，独立于其语义内容。",
+      "检索内容的格式可以劫持上下文学习，扭曲模型的注意力分布，影响RAG系统的输出质量。",
+      "该发现挑战了RAG中仅关注内容相关性的传统观点，提示需要优化检索结果的格式设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

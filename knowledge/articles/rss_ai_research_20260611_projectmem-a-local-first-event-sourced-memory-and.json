@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260611-035",
+  "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+  "source_url": "https://arxiv.org/abs/2606.12329",
+  "source_platform": "rss_ai_research",
+  "summary": "PROJECTMEM 是一个面向 AI 编码代理的本地优先、事件溯源记忆与判断层。它旨在解决当前 AI 编码助手在会话间缺乏状态记忆的问题，避免每次新会话都重新读取项目文件、重新推导先前决策，甚至重复已失败的调试尝试。通过事件溯源机制，PROJECTMEM 能够持久化代理在项目中的操作和决策历史，从而在后续会话中高效恢复上下文，减少不必要的 token 消耗（估计每会话可节省 5,000-20,000 tokens）。该工作关注的是 AI 编码工具在实际开发中的效率瓶颈，而非模型能力本身，因此具有重要的实用价值。它提出了一种轻量级、本地优先的架构，适合集成到现有开发环境中，有望显著提升 AI 编码代理的连续性和可靠性。",
+  "tags": [
+    "AI Coding Agent",
+    "Event Sourcing",
+    "Memory Layer",
+    "Developer Tools"
+  ],
+  "author": null,
+  "published_at": "2026-06-11T12:10:26Z",
+  "collected_at": "2026-06-11T12:17:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 编码代理的 stateless 特性导致大量 token 浪费在重复读取和决策上，PROJECTMEM 通过事件溯源实现状态持久化，可显著降低开销。",
+      "该工作强调本地优先设计，避免依赖外部云服务，适合集成到本地开发环境中，增强隐私和响应速度。",
+      "PROJECTMEM 不仅记录操作历史，还提供判断层，帮助代理在后续会话中快速识别已失败的尝试，避免重复错误。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
