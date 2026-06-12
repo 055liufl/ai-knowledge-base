@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-136",
+  "title": "SymQNet: Amortized Acquisition for Low-Latency Adaptive Hamiltonian Learning",
+  "source_url": "https://arxiv.org/abs/2606.12808",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SymQNet 的强化学习方法，用于实现低延迟的自适应哈密顿量学习。在量子设备的校准和表征过程中，自适应控制器的核心挑战在于每次实验后都需要重新计算贝叶斯设计规则，这一步骤通常需要数秒时间，导致数百次实验后累积的墙钟时间成本显著增加。SymQNet 通过摊销学习（amortized learning）将计算负担从在线推理转移到离线训练，从而大幅降低在线决策的延迟。该方法利用对称性（symmetry）来简化状态空间，并采用强化学习框架直接优化实验序列的长期收益，而非传统的逐次贝叶斯更新。实验结果表明，SymQNet 在保持与现有方法相当的学习精度的同时，将每次实验的决策时间从秒级降低到毫秒级，显著提升了自适应哈密顿量学习的实时性。这项工作对于量子计算硬件的自动化校准和量子传感的实时控制具有重要意义，展示了机器学习在量子信息处理中的实用价值。",
+  "tags": [
+    "Quantum Computing",
+    "Reinforcement Learning",
+    "Hamiltonian Learning",
+    "Adaptive Control"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:58:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SymQNet 通过摊销学习将自适应哈密顿量学习的在线决策延迟从秒级降低到毫秒级，解决了传统贝叶斯方法在多次实验中的累积时间成本问题。",
+      "该方法利用对称性简化状态空间，并结合强化学习框架直接优化长期实验序列的收益，而非逐次贝叶斯更新，从而在保持精度的同时提升效率。",
+      "这项工作展示了机器学习在量子设备校准和表征中的实用价值，为量子计算硬件的自动化控制和量子传感的实时应用提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

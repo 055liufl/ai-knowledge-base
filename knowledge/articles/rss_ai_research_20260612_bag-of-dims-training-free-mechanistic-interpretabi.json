@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260612-119",
+  "title": "Bag of Dims: Training-Free Mechanistic Interpretability via Dimension-Level Sign Patterns",
+  "source_url": "https://arxiv.org/abs/2606.12629",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Bag of Dims”的训练无关的机械可解释性框架，通过分析Transformer隐藏状态中每个维度的符号模式来理解模型内部表示。研究发现，标准基下的单个维度可以独立编码语义内容（通过符号）和置信度（通过幅度），类似于二进制寄存器。研究在Qwen 3.5-4B、Gemma 3-4B和Mistral 7B三个模型家族上进行了验证，通过四个递进实验表明，仅凭符号模式就能预测模型行为，无需额外训练或微调。这一发现为大型语言模型的可解释性提供了一种轻量级、架构通用的方法，有助于研究人员和开发者更深入地理解模型内部工作机制，而无需依赖复杂的探针或干预技术。其创新性在于利用现有表示中的维度级符号信息，简化了可解释性分析流程，具有较高的实用价值。",
+  "tags": [
+    "Mechanistic Interpretability",
+    "Transformer",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:57:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer隐藏状态的每个维度可独立作为二进制寄存器，符号编码语义，幅度编码置信度。",
+      "该方法无需训练或微调，适用于多种模型架构，显著降低可解释性分析的门槛。",
+      "仅凭维度符号模式即可预测模型行为，为理解模型内部表示提供了新的视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

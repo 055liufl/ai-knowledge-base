@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-120",
+  "title": "Keep Policy Gradient in Charge: Sibling-Guided Credit Distillation for Long-Horizon Tool-Use Agents",
+  "source_url": "https://arxiv.org/abs/2606.12634",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Sibling-Guided Credit Distillation”的方法，用于解决长周期工具使用强化学习中的信用分配问题。在长周期任务中，智能体需要执行多个推理步骤、API调用和生成答案，而传统的轨迹级优势函数会将奖励均匀地广播给所有token，导致信号稀疏且不精确。直接使用token级的自我蒸馏（self-distillation）虽然能提供更密集的信号，但可能无意中破坏工具使用行为，因为它会不加区分地模仿教师策略的行为，而不知道哪些动作是真正有效的。本文提出的方法通过引入“兄弟指导”（sibling-guided）机制，利用同一策略的不同rollout之间的对比来更精确地分配信用，从而在保持策略梯度核心优势的同时，提升长周期工具使用任务的样本效率和最终性能。这项研究对于开发更高效、更可靠的自主工具使用智能体具有重要意义，尤其是在需要多步推理和外部工具交互的复杂场景中。",
+  "tags": [
+    "Reinforcement Learning",
+    "Tool Use",
+    "Credit Assignment",
+    "Self-Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:57:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接token级自我蒸馏会因无差别模仿教师行为而破坏工具使用，需要更精细的信用分配机制。",
+      "兄弟指导（Sibling-Guided）方法通过对比同一策略的不同rollout，实现了更精确的信用分配，避免了传统方法的弊端。",
+      "该方法在保持策略梯度核心优势的同时，显著提升了长周期工具使用任务的样本效率和性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

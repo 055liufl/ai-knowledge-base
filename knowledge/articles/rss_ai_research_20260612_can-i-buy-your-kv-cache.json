@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-064",
+  "title": "Can I Buy Your KV Cache?",
+  "source_url": "https://arxiv.org/abs/2606.13361",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为“KV Cache 共享”的机制，旨在解决当前 AI 代理在处理相同文档时重复计算键值缓存（KV Cache）的低效问题。在大型语言模型推理中，预填充（prefill）阶段是计算最密集的步骤，而多个代理在处理相同文本时，各自独立重建 KV Cache，导致大量冗余计算。作者提出一个简单的方案：将 KV Cache 计算一次，并通过公共缓存（pub）进行共享，从而避免重复计算。该研究关注于推理优化，通过减少计算冗余来提升系统效率，尤其适用于多代理场景或重复查询场景。其创新性在于将缓存共享从模型训练扩展到推理阶段，并探讨了缓存一致性、安全性和性能权衡等实际问题。这项工作值得关注，因为它直接针对当前 AI 部署中的资源浪费问题，可能显著降低推理成本和延迟，对大规模 AI 服务的可持续性有重要意义。",
+  "tags": [
+    "KV Cache",
+    "推理优化",
+    "缓存共享",
+    "AI Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:52:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 AI 代理在处理相同文档时，每个代理独立重建 KV Cache，导致大量计算冗余，尤其是预填充阶段。",
+      "提出通过公共缓存共享 KV Cache，避免重复计算，从而显著降低推理成本和延迟。",
+      "该方案简单但有效，适用于多代理或重复查询场景，并需考虑缓存一致性、安全性和性能权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

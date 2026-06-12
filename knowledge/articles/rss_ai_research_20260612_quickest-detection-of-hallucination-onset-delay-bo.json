@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-105",
+  "title": "Quickest Detection of Hallucination Onset: Delay Bounds and Learned CUSUM Statistics",
+  "source_url": "https://arxiv.org/abs/2606.12476",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文将大语言模型（LLM）中的幻觉检测重新定义为最快变化检测问题，而非传统的逐token分类任务。作者提出了一种基于一阶马尔可夫模型的框架，该模型在RAGTruth数据集上得到验证，能够模拟潜在的真实/幻觉状态转换。论文的核心贡献在于：1）建立了幻觉起始检测的延迟界限理论，量化了从幻觉发生到报警所需的最小token数；2）提出了一种基于学习累积和（CUSUM）统计量的在线检测算法，该算法能够自适应地调整检测阈值以平衡检测延迟和误报率。实验表明，该方法在多个基准测试中显著优于传统的逐token AUC评估方法，特别是在低延迟场景下。这项工作值得关注，因为它将经典信号处理理论应用于LLM可靠性问题，为实时幻觉监控提供了理论保证和实用算法，对提升AI系统的可信度具有重要价值。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Change Point Detection",
+    "CUSUM"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:56:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将幻觉检测重新定义为最快变化检测问题，提供了延迟界限的理论保证，优于传统逐token AUC评估。",
+      "基于一阶马尔可夫模型和RAGTruth数据集，验证了潜在状态转换的合理性，为在线检测提供了统计基础。",
+      "学习CUSUM统计量能够自适应调整检测阈值，在低延迟场景下显著降低误报率，实现实时监控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

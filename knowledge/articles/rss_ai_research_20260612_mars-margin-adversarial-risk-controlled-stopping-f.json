@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260612-033",
+  "title": "MARS: Margin-Adversarial Risk-controlled Stopping for Parallel LLM Test-time Scaling",
+  "source_url": "https://arxiv.org/abs/2606.12935",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MARS（Margin-Adversarial Risk-controlled Stopping）的新型并行测试时扩展方法，旨在解决大语言模型（LLM）在推理时因生成大量完整推理轨迹而导致的巨大计算开销问题。传统并行测试时扩展通过采样多条推理轨迹并采用多数投票机制提升准确性，但所有轨迹必须运行至结束，计算成本高昂。MARS的核心创新在于：在推理过程中，通过探测部分轨迹的中间检查点，无需中断生成即可提取当前答案，并观察聚合投票的演变。基于此，MARS设计了一种基于边际对抗的风险控制停止规则，能够在保证最终答案准确性的前提下，动态决定何时提前终止不必要的轨迹生成，从而显著降低计算资源消耗。该方法在多个推理任务上验证了有效性，实现了准确性与计算效率的更好平衡。该研究对于提升LLM在实际应用中的推理效率、降低部署成本具有重要意义，尤其适用于需要大量推理计算的场景。",
+  "tags": [
+    "LLM",
+    "Test-time Scaling",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:49:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过探测中间检查点的聚合投票演变，可以在不中断生成的情况下动态评估推理轨迹的必要性。",
+      "MARS采用边际对抗风险控制停止规则，在保证准确性的前提下提前终止冗余轨迹，显著降低计算开销。",
+      "该方法在多个推理任务上实现了准确性与效率的更好权衡，为LLM测试时扩展提供了实用优化方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

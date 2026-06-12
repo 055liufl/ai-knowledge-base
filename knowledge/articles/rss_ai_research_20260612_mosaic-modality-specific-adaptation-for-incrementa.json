@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-059",
+  "title": "MOSAIC: Modality-Specific Adaptation for Incremental Continual Learning in Parkinson's Disease Gait Assessment",
+  "source_url": "https://arxiv.org/abs/2606.13258",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MOSAIC（Modality-Specific Adaptation for Incremental Continual Learning）的方法，专门用于帕金森病步态评估中的增量持续学习场景。在临床实践中，步态评估系统常依赖多种异构传感器（如加速度计、陀螺仪等），但由于设备升级、协议变更或多中心部署，新传感器可能逐步加入，而历史数据因隐私和存储限制无法完全保留。这种模态增量设置面临三大挑战：跨模态蒸馏不可靠、模态稀疏性导致信息丢失、以及灾难性遗忘问题。MOSAIC通过为每种模态设计特定的适配模块，在增量学习过程中保持对旧模态的记忆，同时有效整合新模态信息，从而在不访问历史数据的情况下实现持续学习。该方法在帕金森病步态数据集上进行了验证，显著优于现有持续学习基线。这项工作对于医疗AI系统的实际部署具有重要意义，因为它解决了现实世界中传感器配置动态变化的核心痛点，为构建可扩展、隐私友好的临床决策支持系统提供了新思路。",
+  "tags": [
+    "Continual Learning",
+    "Healthcare AI",
+    "Sensor Fusion",
+    "Parkinson's Disease"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:51:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MOSAIC针对医疗场景中传感器逐步增加的现实问题，提出了模态特定的增量持续学习框架，有效缓解了灾难性遗忘。",
+      "该方法无需访问历史数据即可适应新模态，解决了隐私和存储限制下的临床部署难题。",
+      "在帕金森病步态评估任务上，MOSAIC显著优于传统持续学习基线，展示了在异构传感器融合中的优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

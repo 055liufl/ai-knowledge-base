@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-067",
+  "title": "MiniMax Sparse Attention",
+  "source_url": "https://arxiv.org/abs/2606.13392",
+  "source_platform": "rss_ai_research",
+  "summary": "MiniMax Sparse Attention (MSA) 是一种基于分组查询注意力（GQA）的块级稀疏注意力机制，旨在解决超长上下文场景下标准 softmax 注意力二次计算成本过高的问题。随着大语言模型在智能体工作流、代码库级推理和持久记忆等应用中需要处理数十万到数百万个 token，传统的全注意力机制在部署时变得不可持续。MSA 通过引入轻量级的稀疏模式，在保持模型性能的同时显著降低了计算和内存开销。该工作来自 MiniMax 团队，发表于 arXiv，代表了在高效长上下文建模领域的重要进展。MSA 的创新在于其块级稀疏设计，能够在不牺牲关键信息捕获能力的前提下，大幅提升推理效率，使得在资源受限环境下部署超长上下文模型成为可能。这项研究对于推动大语言模型在复杂任务中的实际应用具有重要价值，尤其适用于需要处理海量信息的场景。",
+  "tags": [
+    "Sparse Attention",
+    "Long Context",
+    "LLM",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:52:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MSA 通过块级稀疏注意力机制，将超长上下文场景下的计算复杂度从二次降低到近似线性，显著提升了部署效率。",
+      "基于 GQA 的轻量级设计使得 MSA 易于集成到现有大语言模型中，无需大规模重新训练。",
+      "该工作针对智能体工作流、代码推理等实际应用场景，解决了长上下文建模的核心瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

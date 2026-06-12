@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-130",
+  "title": "SMSR: Certified Defence Against Runtime Memory Poisoning in Persistent LLM Agent Systems",
+  "source_url": "https://arxiv.org/abs/2606.12703",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对持久化大语言模型代理系统中运行时内存投毒攻击的认证防御方法SMSR。随着检索增强生成（RAG）代理越来越多地使用跨用户会话累积的持久化内存，一种新的攻击面随之出现：攻击者仅通过正常交互渠道即可注入精心构造的记忆，这些记忆在被检索时会操纵代理对后续用户的响应，而无需修改模型权重或代码。作者将这种攻击定义为多会话内存投毒（MSMP），并指出现有防御措施无法对此提供认证保障。SMSR通过形式化验证和运行时监控，确保即使在攻击者持续注入恶意记忆的情况下，代理系统的行为仍能保持在安全边界内。该工作首次为持久化RAG代理系统提供了针对内存投毒的可认证防御，具有重要的理论价值和实际意义，尤其是在部署长期运行、多用户交互的AI代理场景中。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Security",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:58:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次定义并形式化了多会话内存投毒（MSMP）攻击，揭示了持久化RAG代理系统的新安全漏洞",
+      "提出SMSR认证防御框架，通过运行时监控和形式化验证确保代理行为在攻击下仍符合安全规范",
+      "该工作填补了现有防御措施无法针对内存投毒提供认证保障的空白，对AI代理系统的安全部署具有重要指导意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

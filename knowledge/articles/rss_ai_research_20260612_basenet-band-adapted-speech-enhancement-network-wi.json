@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260612-122",
+  "title": "BASENet: Band-Adapted Speech Enhancement Network with Cross-Band Attention",
+  "source_url": "https://arxiv.org/abs/2606.12662",
+  "source_platform": "rss_ai_research",
+  "summary": "BASENet（Band-Adapted Speech Enhancement Network）是一种新颖的语音增强架构，它通过引入基于Bark尺度的频带自适应机制来改进传统语音增强模型。传统方法通常对所有频率采用统一处理能力，忽略了人类听觉系统非均匀的频谱分辨率特性。BASENet将频谱划分为Bark尺度的频带，并根据临界频带密度为每个频带分配不同容量的编码器：对感知密集的低频区域分配更深的分支，而对高频区域分配更轻的分支。此外，该网络还集成了跨频带注意力机制，以促进不同频带之间的信息交互。这项工作值得关注，因为它从人类听觉感知原理出发，提出了一种更符合生理特性的频带自适应策略，有望在语音增强任务中实现更好的性能与计算效率平衡，尤其适用于资源受限的实时应用场景。",
+  "tags": [
+    "语音增强",
+    "频带自适应",
+    "Bark尺度",
+    "跨频带注意力"
+  ],
+  "author": null,
+  "published_at": "2026-06-12T11:43:36Z",
+  "collected_at": "2026-06-12T11:57:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BASENet通过Bark尺度划分频带并分配不同容量编码器，模拟人类听觉的非均匀频谱分辨率。",
+      "跨频带注意力机制增强了不同频带间的信息融合，可能提升语音增强的整体效果。",
+      "该架构在计算资源分配上更高效，低频区域获得更多处理能力，高频区域则更轻量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
