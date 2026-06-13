@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260613-011",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了vLLM从V0到V1的演进，重点在于强化学习（RL）中正确性优先于修正的理念。vLLM是一个高性能的LLM推理引擎，V1版本通过优化内存管理、调度策略和并行计算，显著提升了推理吞吐量和延迟表现。文章强调在RL场景下，确保模型输出的正确性比事后修正更为关键，因此vLLM V1引入了更严格的正确性验证机制，包括动态批处理、KV缓存优化和精确的采样策略。这些改进使得vLLM在RL训练和推理中能更稳定地支持大规模模型，减少因错误输出导致的训练不稳定。该技术对于需要高效、可靠LLM推理的开发者具有重要参考价值，尤其是在RLHF和在线学习等场景中。",
+  "tags": [
+    "vLLM",
+    "LLM推理",
+    "强化学习",
+    "性能优化"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:33:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1通过动态批处理和KV缓存优化，显著提升了LLM推理的吞吐量和延迟表现。",
+      "在强化学习场景中，确保模型输出的正确性比事后修正更为关键，vLLM V1引入了严格的正确性验证机制。",
+      "vLLM V1的改进使得RL训练和推理更稳定，减少了因错误输出导致的训练不稳定问题。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260613-071",
+  "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+  "source_url": "https://huggingface.co/blog/intel-qwen3-agent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在Intel Core Ultra处理器上，通过深度剪枝草稿模型加速Qwen3-8B Agent推理的方法。Qwen3-8B是一个强大的开源语言模型，但推理速度在消费级硬件上可能受限。Intel团队提出了一种创新的加速方案：利用深度剪枝技术，从原始Qwen3-8B模型中提取一个更小、更快的草稿模型，用于推测性解码。该草稿模型通过移除部分Transformer层（深度剪枝）获得，在保持较高精度的同时大幅减少计算量。在Intel Core Ultra平台上，结合OpenVINO优化和推测性解码，实现了2-3倍的推理加速，同时保持了Agent任务的性能。这一方法特别适合在边缘设备上部署智能Agent，无需依赖云端GPU，降低了延迟和成本。文章还提供了详细的实现步骤和性能基准测试结果，展示了在Intel硬件上运行高效AI Agent的可行性。该工作对于推动大模型在个人电脑和边缘设备上的实用化具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Model Compression",
+    "Inference Acceleration",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:38:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度剪枝草稿模型结合推测性解码，可在Intel Core Ultra上实现Qwen3-8B Agent 2-3倍推理加速",
+      "该方法在保持Agent任务性能的同时，显著降低边缘设备上的推理延迟和计算成本",
+      "Intel OpenVINO优化与深度剪枝技术协同，为消费级硬件上的大模型部署提供了可行方案"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

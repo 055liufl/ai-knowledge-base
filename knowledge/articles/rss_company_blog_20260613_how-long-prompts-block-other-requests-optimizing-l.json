@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260613-108",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）推理服务中，长提示词（prompt）如何阻塞其他请求，并提出了优化性能的策略。文章指出，当处理长提示词时，LLM 的推理过程会占用大量计算资源，导致后续请求排队等待，从而增加延迟。作者通过实验展示了不同提示词长度对吞吐量和响应时间的影响，并分析了批处理（batching）和动态调度（dynamic scheduling）等优化方法。文章还介绍了如何利用 Hugging Face 的文本生成推理（TGI）库来调整配置，例如设置最大批处理大小、使用连续批处理（continuous batching）和优化内存管理。这些优化可以显著减少长提示词对其他请求的阻塞效应，提升整体服务性能。对于部署 LLM 服务的开发者来说，本文提供了实用的性能调优指南，有助于在资源受限的环境中实现更高效的推理。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference",
+    "Batching"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:42:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会阻塞其他请求，导致延迟增加和吞吐量下降，需要优化调度策略。",
+      "连续批处理和动态调度是缓解长提示词阻塞的关键技术，能有效提升资源利用率。",
+      "通过调整 Hugging Face TGI 的配置参数，如最大批处理大小和内存管理，可以显著改善 LLM 推理性能。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

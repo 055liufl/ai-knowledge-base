@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260613-116",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了Hugging Face团队在TRL（Transformer Reinforcement Learning）框架中集成vLLM（一种高性能LLM推理引擎）的协同部署方案，旨在解决强化学习训练中GPU利用率不均的问题。传统RL训练中，策略模型和参考模型通常分别占用独立GPU，导致部分GPU闲置。通过将vLLM作为推理后端与TRL训练循环协同部署，可以在同一GPU上同时运行推理和训练任务，实现计算资源的动态共享。该方法显著提升了GPU利用率（最高可达2倍），降低了训练成本，同时保持了模型性能。文章详细阐述了技术实现细节，包括vLLM的异步推理机制、内存管理优化以及与TRL的通信协议。这一创新对于大规模RLHF（基于人类反馈的强化学习）训练具有重要实践价值，尤其适合资源受限的团队。",
+  "tags": [
+    "vLLM",
+    "TRL",
+    "GPU优化",
+    "强化学习",
+    "推理加速"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:42:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过vLLM与TRL的协同部署，可在同一GPU上同时执行推理和训练，消除GPU闲置问题",
+      "该方法将GPU利用率提升至接近100%，训练成本降低约50%",
+      "vLLM的异步推理机制和内存共享技术是实现高效协同的关键"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

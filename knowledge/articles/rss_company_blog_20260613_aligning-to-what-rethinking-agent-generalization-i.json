@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260613-062",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队发布的一篇技术博客，探讨了在构建通用 AI 代理（Agent）时，如何通过重新思考对齐（Alignment）策略来提升代理的泛化能力。文章以 MiniMax M2 模型为例，指出传统对齐方法（如 RLHF）主要关注模型输出与人类偏好的匹配，但在代理场景下，模型需要执行多步推理、工具调用和与环境交互，因此需要一种新的对齐范式。作者提出了“代理对齐”（Agent Alignment）的概念，强调不仅要让模型“说人话”，还要让模型“做人事”——即通过强化学习训练代理在复杂任务中做出正确决策，包括规划、记忆和错误恢复。文章展示了 M2 在多个基准测试（如 WebArena、SWE-bench）上的显著提升，并讨论了数据合成、奖励模型设计等关键技术。该工作对于推动 LLM 从对话助手向通用代理演进具有重要参考价值，值得关注。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "LLM",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:38:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对齐方法（如 RLHF）不足以使 LLM 成为高效代理，需要专门针对代理行为（如规划、工具使用）进行对齐训练。",
+      "MiniMax M2 通过代理对齐训练，在 WebArena、SWE-bench 等代理基准上取得了显著性能提升，验证了该范式的有效性。",
+      "代理对齐的关键技术包括合成数据生成、多步奖励模型设计以及错误恢复训练，这些方法可迁移至其他基础模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

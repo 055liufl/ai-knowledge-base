@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260613-126",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了在并发请求场景下优化大语言模型（LLM）推理性能的关键技术——Prefill（预填充）与Decode（解码）阶段的分离与优化。文章指出，传统LLM推理中，Prefill阶段（处理输入token并生成第一个输出token）和Decode阶段（逐个生成后续token）在计算特性上存在显著差异：Prefill是计算密集型，而Decode是内存带宽密集型。当多个请求并发时，若将两者混合处理，会导致GPU资源利用率不均，降低整体吞吐量。为此，文章提出通过批处理策略将不同请求的Prefill和Decode阶段分别聚合，例如使用动态批处理、连续批处理（Continuous Batching）或分阶段调度，以最大化GPU利用率。此外，还讨论了KV缓存管理、内存优化（如PagedAttention）以及模型架构调整（如Multi-Query Attention）对并发性能的影响。文章结合Hugging Face生态中的工具（如Text Generation Inference）给出了实践建议，并提供了性能基准测试结果。该内容对于理解LLM服务化部署中的性能瓶颈和优化方向具有重要参考价值，尤",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Concurrent Requests",
+    "Prefill-Decode"
+  ],
+  "author": null,
+  "published_at": "2026-06-13T10:29:48Z",
+  "collected_at": "2026-06-13T10:43:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill和Decode阶段的计算特性不同（计算密集型 vs 内存带宽密集型），混合处理会导致资源利用率不均。",
+      "通过动态批处理和连续批处理策略分离Prefill与Decode阶段，可显著提升并发请求下的GPU吞吐量。",
+      "KV缓存管理和内存优化（如PagedAttention）是解决长序列并发推理内存瓶颈的关键。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
