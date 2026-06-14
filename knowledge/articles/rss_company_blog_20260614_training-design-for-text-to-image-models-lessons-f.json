@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260614-041",
+  "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+  "source_url": "https://huggingface.co/blog/Photoroom/prx-part2",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是Photoroom团队关于文本到图像模型训练设计的系列博客的第二部分，重点分享了通过消融实验（ablation studies）获得的训练设计经验。文章详细探讨了影响文本到图像模型性能的关键因素，包括数据质量、模型架构、训练策略和超参数调优。作者通过系统性的消融实验，揭示了不同设计选择对生成图像质量、文本对齐度和训练效率的具体影响。例如，他们发现数据清洗和去重比单纯增加数据量更重要，而学习率调度和批量大小的选择对模型收敛速度有显著影响。此外，文章还讨论了条件注入方式（如CLIP嵌入的使用）和噪声调度策略的优化。这些经验对于从事文本到图像模型研究和开发的从业者具有实用价值，能够帮助他们避免常见陷阱并加速模型迭代。该博客基于实际项目经验，提供了可操作的指导，而非纯理论分析。",
+  "tags": [
+    "Text-to-Image",
+    "Training Design",
+    "Ablation Study",
+    "Diffusion Models"
+  ],
+  "author": null,
+  "published_at": "2026-06-14T10:49:09Z",
+  "collected_at": "2026-06-14T10:54:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据质量（清洗、去重）对文本到图像模型性能的影响远大于数据量，消融实验验证了这一点。",
+      "学习率调度和批量大小是训练效率的关键超参数，需根据模型规模和数据集特性精细调整。",
+      "条件注入方式（如CLIP嵌入）和噪声调度策略的优化能显著提升生成图像的文本对齐度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

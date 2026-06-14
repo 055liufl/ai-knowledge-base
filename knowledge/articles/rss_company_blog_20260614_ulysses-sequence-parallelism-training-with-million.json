@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260614-030",
+  "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+  "source_url": "https://huggingface.co/blog/ulysses-sp",
+  "source_platform": "rss_company_blog",
+  "summary": "Ulysses Sequence Parallelism 是一种用于训练超长上下文（百万级 token）大语言模型的高效并行策略。该技术通过将输入序列在多个 GPU 上切分，并利用高效的通信原语（如 all-to-all）来减少内存占用和通信开销，从而支持在有限硬件资源下训练具有百万 token 上下文的模型。与传统的序列并行方法相比，Ulysses 在保持计算效率的同时，显著降低了显存需求，使得长上下文训练更加可行。该博客详细介绍了其设计原理、实现细节以及在 Llama 等模型上的实验结果，展示了其在训练速度和模型质量上的优势。这一技术对于推动长上下文理解、文档级生成、多轮对话等应用具有重要意义，是当前大模型训练基础设施领域的前沿进展。",
+  "tags": [
+    "LLM",
+    "Sequence Parallelism",
+    "Training",
+    "Long Context",
+    "Distributed Computing"
+  ],
+  "author": null,
+  "published_at": "2026-06-14T10:49:09Z",
+  "collected_at": "2026-06-14T10:53:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Ulysses Sequence Parallelism 通过序列切分和 all-to-all 通信，有效降低了长上下文训练的内存瓶颈，支持百万级 token 上下文。",
+      "该技术在不牺牲计算效率的前提下，显著减少了显存占用，使得在有限 GPU 资源下训练超长序列成为可能。",
+      "实验表明，Ulysses 在 Llama 等模型上实现了与标准训练相当的模型质量，同时大幅提升了训练速度和可扩展性。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
