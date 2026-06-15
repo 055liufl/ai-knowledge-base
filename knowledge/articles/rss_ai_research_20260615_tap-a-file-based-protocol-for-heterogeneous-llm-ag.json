@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-124",
+  "title": "tap: A File-Based Protocol for Heterogeneous LLM Agent Collaboration",
+  "source_url": "https://arxiv.org/abs/2606.14445",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为TAP（基于文件的协议）的新型多智能体协作协议，旨在解决异构LLM（大语言模型）智能体在软件开发中的协作问题。现有系统通常假设智能体运行在统一运行时、中央对话服务器或相同API家族下，导致来自不同供应商的LLM智能体难以直接从各自执行环境交换消息并分工开发与审查工作。TAP协议通过将文件系统作为智能体间通信的媒介，允许智能体以读写文件的方式异步交换信息，从而打破平台和API限制。该协议支持角色分配、任务分解、代码审查等协作模式，并提供了标准化文件格式和目录结构。论文通过实验验证了TAP在跨供应商智能体协作中的有效性，展示了其提升开发效率和代码质量的潜力。这项研究值得关注，因为它解决了多智能体系统实际部署中的关键互操作性问题，为构建开放、可扩展的AI协作生态提供了新思路，尤其适用于需要集成多种LLM服务的复杂软件开发场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Multi-Agent",
+    "Protocol",
+    "Software Development"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:10:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TAP协议通过文件系统实现异构LLM智能体间的异步通信，消除了对统一运行时或API的依赖，显著提升了跨平台协作的灵活性。",
+      "该协议标准化了智能体协作中的文件格式和目录结构，支持角色分配、任务分解和代码审查等典型开发流程，降低了多智能体系统的集成复杂度。",
+      "实验表明，TAP能够有效整合来自不同供应商的LLM智能体，在软件开发任务中实现高效分工与审查，从而提升整体开发效率和代码质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

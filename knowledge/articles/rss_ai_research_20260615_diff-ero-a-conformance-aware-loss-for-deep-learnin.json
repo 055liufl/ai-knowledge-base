@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-107",
+  "title": "DIFF-ERO: A Conformance-Aware Loss for Deep Learning in Process Mining",
+  "source_url": "https://arxiv.org/abs/2606.14283",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 DIFF-ERO 的新型损失函数，旨在解决深度学习在流程挖掘中的控制流结构学习不精确问题。传统的交叉熵损失函数仅优化局部下一步预测的似然性，虽然能实现高 token 级准确率，但可能导致全局行为不精确，例如产生不符合实际流程约束的序列。DIFF-ERO 通过引入一致性感知（conformance-aware）机制，将流程模型的对齐成本（如编辑距离或惩罚）直接整合到损失函数中，从而在训练过程中惩罚违反流程约束的预测。该方法适用于预测性和规范性流程监控任务，能够提升模型对复杂控制流结构的建模能力。实验表明，DIFF-ERO 在多个真实流程数据集上显著提高了预测序列的合规性，同时保持了较高的预测精度。这项研究将流程挖掘中的一致性概念与深度学习训练范式结合，为流程分析领域提供了一种新的优化视角，尤其对需要高可靠性的业务过程自动化场景具有重要价值。",
+  "tags": [
+    "Process Mining",
+    "Deep Learning",
+    "Loss Function",
+    "Predictive Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:08:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DIFF-ERO 将流程一致性度量（如对齐成本）作为可微损失函数，直接优化模型对控制流结构的全局符合性。",
+      "相比传统交叉熵损失，DIFF-ERO 在保持预测精度的同时，显著减少了违反流程约束的序列生成。",
+      "该方法为深度学习在流程挖掘中的应用提供了更鲁棒的训练目标，尤其适用于需要高合规性的业务过程监控场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

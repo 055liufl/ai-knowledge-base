@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-137",
+  "title": "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+  "source_url": "https://arxiv.org/abs/2606.14589",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对生产环境中长期运行的LLM Agent运行时系统进行了纵向研究，聚焦于“静默失败”现象。研究基于一个自2026年3月起持续运行的个人助手Agent系统，该系统包含约40个定时任务、8个LLM提供商、工具治理代理和知识库记忆平面，并拥有4286个单元测试和827个集成测试。通过分析系统日志和错误案例，作者提出了一种静默失败的纵向分类法，揭示了Agent在工具调用、记忆管理、任务调度等环节中未被传统测试覆盖的失败模式。这些失败通常不会导致系统崩溃，但会累积并影响任务质量和用户体验。研究强调了当前LLM Agent系统在鲁棒性评估上的不足，并为设计更可靠的Agent运行时提供了分类框架和修复建议。该工作对Agent系统的开发者和研究者具有重要参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Silent Failure",
+    "Reliability",
+    "Production System",
+    "Longitudinal Study"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:11:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长期运行的LLM Agent系统中存在大量未被传统测试覆盖的静默失败，这些失败会累积并影响任务质量。",
+      "提出了一种纵向分类法，系统化地识别和分类Agent在工具调用、记忆管理、任务调度等环节的静默失败模式。",
+      "当前Agent系统的鲁棒性评估方法不足以捕捉静默失败，需要新的测试和监控策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-017",
+  "title": "Adversarial Concept Search: Predicting Compositional Errors From Feature Geometry",
+  "source_url": "https://arxiv.org/abs/2606.13934",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“对抗性概念搜索”的新方法，通过分析大型语言模型（LLM）的内部表示几何结构，来预测模型在哪些概念组合上会出现组合性错误。传统上，开发者依赖人类直觉或大规模基准测试来发现模型的失败案例，但这种方法往往无法覆盖所有边缘情况。作者利用LLM的表示空间中的几何特征（如概念向量之间的干扰），识别出模型难以处理的特定概念组合。该方法的核心贡献在于，它提供了一种无需大量人工标注或穷举测试的自动化方式，能够提前预测模型的失败场景，从而指导模型改进或数据增强。实验表明，该方法在多个LLM上有效识别了组合性错误，并揭示了模型表示中的干扰模式。这项工作对于理解LLM的局限性、提升其鲁棒性具有重要意义，尤其适用于需要高可靠性的应用场景。",
+  "tags": [
+    "LLM",
+    "Representation Geometry",
+    "Compositional Errors",
+    "Adversarial Search"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:01:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用LLM表示空间的几何结构（如概念向量间的干扰）可以预测模型在特定概念组合上的失败，无需依赖人类直觉或大规模基准测试。",
+      "该方法通过对抗性搜索自动发现模型难以处理的边缘场景，为模型改进和鲁棒性提升提供了新途径。",
+      "实验验证了表示几何中的干扰是导致组合性错误的关键因素，揭示了LLM内部机制与性能缺陷之间的关联。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-037",
+  "title": "VISTA: View-Consistent Self-Verified Training for GUI Grounding",
+  "source_url": "https://arxiv.org/abs/2606.14579",
+  "source_platform": "rss_ai_research",
+  "summary": "VISTA（View-Consistent Self-Verified Training）是一种基于GRPO的GUI定位训练框架，旨在解决传统GRPO在GUI定位任务中因单一截图视角导致的组内样本同质化问题（即困难样本组全失败、简单样本组全成功，无法提供有效相对优势）。该框架通过从同一GUI实例的多个目标保持视角（target-preserving views）构建对比组，确保组内样本具有视角一致性，从而提升GRPO的训练效果。论文来自arXiv，属于强化学习与计算机视觉交叉领域，核心创新在于将多视角一致性引入策略优化，为GUI自动化、智能体交互等应用提供了更鲁棒的定位能力。值得关注的原因在于：它直接改进了GRPO在视觉定位任务中的实用性，尤其适用于需要高精度GUI元素识别的场景（如自动化测试、机器人流程自动化），且方法具有通用性，可推广至其他视觉 grounding 任务。",
+  "tags": [
+    "GRPO",
+    "GUI Grounding",
+    "Reinforcement Learning",
+    "View Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:02:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统GRPO在GUI定位中因单视角采样导致组内样本缺乏多样性，无法有效计算相对优势，VISTA通过多目标保持视角构建对比组解决此问题。",
+      "VISTA框架的核心是视角一致性（View-Consistent），确保同一实例的不同视角在组内保持目标语义一致，从而提升策略优化的稳定性和效率。",
+      "该方法为GUI grounding任务提供了更鲁棒的训练范式，可降低对大量标注数据的依赖，并增强模型在复杂界面中的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

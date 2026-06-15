@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-051",
+  "title": "HierSVA: A Data Synthesis Pipeline, Dataset, and Benchmark for LLM-Driven Hierarchical Hardware Formal Verification",
+  "source_url": "https://arxiv.org/abs/2606.13706",
+  "source_platform": "rss_ai_research",
+  "summary": "HierSVA 是一个集数据合成流水线、数据集和基准测试于一体的综合套件，旨在利用大型语言模型（LLM）驱动层次化硬件形式化验证。该工作包含三个核心组件：HierSVA-SP 流水线将 RTL 预处理工具链与 LLM 在环的形式化验证流程相结合，自动为层次化 RTL 生成参考 SystemVerilog 断言（SVA）；通过将该流水线应用于 BaseJump STL 硬件设计库，构建了 HierSVA-DS 数据集，包含 342 个模块及其层次化元数据（深度 0-9）；此外还提供了相应的基准测试。这项工作值得关注，因为它解决了硬件形式化验证中一个关键瓶颈——SVA 断言的手动编写既耗时又易错，而 LLM 的引入有望大幅提升验证效率。HierSVA 不仅提供了可复现的数据合成方法，还创建了首个面向层次化硬件设计的 LLM 驱动验证基准，为硬件安全与正确性验证领域的研究者提供了标准化评估平台。其层次化设计（深度达 9 级）更贴近真实工业级芯片设计，具有较高的实用价值。",
+  "tags": [
+    "LLM",
+    "Hardware Verification",
+    "Formal Verification",
+    "SystemVerilog Assertions",
+    "Data Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:04:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HierSVA 通过 LLM 在环的流水线自动生成层次化 RTL 的 SystemVerilog 断言，大幅降低手动编写断言的人力成本。",
+      "构建了包含 342 个模块、深度 0-9 的层次化数据集 HierSVA-DS，为硬件形式化验证提供了标准化基准。",
+      "该工作将 LLM 应用于硬件验证领域，展示了 AI 辅助芯片设计验证的可行路径，具有重要的工程与学术价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

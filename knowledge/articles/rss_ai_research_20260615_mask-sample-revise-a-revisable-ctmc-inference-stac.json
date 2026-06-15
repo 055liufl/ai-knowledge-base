@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-082",
+  "title": "Mask, Sample, Revise: A Revisable CTMC Inference Stack for Guided Discrete Flow Matching Text-to-Speech",
+  "source_url": "https://arxiv.org/abs/2606.13989",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Mask, Sample, Revise (MSR)的可修正CTMC推理栈，用于引导离散流匹配文本到语音（TTS）系统。该工作针对当前非自回归（NAR）TTS模型在离散语音表示（如神经编解码器令牌）下的推理控制问题，提出了一种基于连续时间马尔可夫链（CTMC）的离散流匹配（DFM）框架。MSR通过迭代的掩码、采样和修正步骤，在推理过程中实现对生成语音的精细控制，从而提升合成质量和稳定性。该方法无需显式时长预测器或外部对齐器，通过条件填充任务实现合成，简化了模型结构。实验表明，MSR在语音自然度、可控性和推理效率上均优于现有基线。该研究为离散语音生成提供了新的推理策略，尤其适用于需要高可控性的TTS应用场景，如情感语音合成、多说话人合成等。其核心创新在于将CTMC推理过程可修正化，使得模型能够在生成过程中动态调整输出，弥补了传统离散流匹配在推理时缺乏灵活性的不足。",
+  "tags": [
+    "Text-to-Speech",
+    "Discrete Flow Matching",
+    "CTMC",
+    "Non-autoregressive",
+    "Speech Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:06:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出可修正的CTMC推理栈（MSR），通过掩码-采样-修正迭代过程增强离散流匹配TTS的推理控制能力，解决了传统方法在推理时缺乏灵活性的问题。",
+      "无需显式时长预测器和外部对齐器，利用条件填充任务简化模型结构，同时保持高合成质量和自然度。",
+      "在离散语音表示（神经编解码器令牌）上实现可控生成，为情感、多说话人等复杂TTS任务提供了新的推理范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

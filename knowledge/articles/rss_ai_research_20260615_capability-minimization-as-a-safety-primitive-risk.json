@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-014",
+  "title": "Capability Minimization as a Safety Primitive: Risk-Aware Causal Gating for Least-Privilege LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.13884",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“风险感知因果门控”（Risk-Aware Causal Gating, RACG）的框架，旨在解决现代决策系统中学习组件输出可能自信但错误的问题，从而避免下游行动产生高昂代价。RACG通过结合因果效应估计和校准的风险控制，决定是否对模型的预测采取行动、推迟或放弃。该框架对从候选行动到结果的因果路径进行建模，并对每个决策进行门控，以实现最小权限原则下的安全基元。RACG的核心创新在于将因果推理与风险校准相结合，使得LLM代理能够在不确定性高或潜在风险大的情况下主动选择不执行或延迟执行，从而提升系统的鲁棒性和安全性。该工作对于构建可信赖的自主代理系统具有重要意义，尤其是在金融、医疗、自动驾驶等高风险领域。通过实验验证，RACG在多个基准任务上显著降低了错误决策带来的损失，同时保持了较高的任务完成率。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Causal Inference",
+    "Risk Control"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:00:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RACG通过因果效应估计和校准风险控制，实现了对LLM代理决策的主动门控，有效降低了错误行动的风险。",
+      "该框架将最小权限原则应用于代理系统，使得代理在不确定或高风险情境下能够选择推迟或放弃行动，提升了系统的安全性和鲁棒性。",
+      "实验表明，RACG在多个高风险决策任务中显著减少了错误损失，同时保持了较高的任务完成率，展示了其在实际应用中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

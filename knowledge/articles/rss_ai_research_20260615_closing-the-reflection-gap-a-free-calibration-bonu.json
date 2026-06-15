@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-024",
+  "title": "Closing the Reflection Gap: A Free Calibration Bonus for Agentic RL",
+  "source_url": "https://arxiv.org/abs/2606.14211",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM智能体的“反思差距”问题及其解决方案。研究发现，LLM智能体在与外部环境交互并观察到执行结果、错误消息或工具输出等反馈后，往往会错误评估自身输出，即使对于原本正确回答的问题也是如此。这种“反思差距”导致智能体无法准确利用环境反馈来校准自身性能。作者提出了一种免费的校准奖励方法，通过引入一个额外的校准奖励项，在强化学习训练过程中鼓励智能体更准确地评估自身输出。该方法无需额外标注数据或修改模型架构，仅通过调整训练目标即可显著缩小反思差距。实验表明，该方法能有效提升智能体在多种任务上的表现，包括代码生成、工具使用和问答等。该工作为提升LLM智能体的自我反思能力和鲁棒性提供了新的思路，具有重要的实际应用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RL",
+    "Self-Reflection"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:01:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体存在“反思差距”，即观察到环境反馈后错误评估自身输出，即使对于正确回答的问题也是如此。",
+      "提出一种免费的校准奖励方法，通过强化学习训练目标调整，无需额外数据或模型修改即可缩小反思差距。",
+      "该方法在代码生成、工具使用和问答等任务上显著提升了智能体的自我反思能力和整体表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

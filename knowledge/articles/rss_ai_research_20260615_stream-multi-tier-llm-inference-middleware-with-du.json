@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-081",
+  "title": "STREAM: Multi-Tier LLM Inference Middleware with Dual-Channel HPC Token Streaming",
+  "source_url": "https://arxiv.org/abs/2606.13968",
+  "source_platform": "rss_ai_research",
+  "summary": "STREAM 是一种多层级大语言模型推理中间件，通过双通道 HPC 令牌流技术，旨在解决本地模型、机构 HPC 中心和商业云 API 之间的碎片化问题。本地模型虽免费且私密，但受限于硬件规模和上下文窗口；机构 HPC 中心提供强大的 GPU 资源且数据安全，但主要用于批处理任务而非交互式使用；商业云 API 虽灵活但成本高且数据可能外泄。STREAM 通过双通道令牌流机制，在 HPC 环境中实现高效、低延迟的推理，支持交互式应用，同时保持数据隐私和低成本。该工作值得关注，因为它为 LLM 推理提供了一种新的基础设施方案，弥合了不同部署场景的差距，尤其适用于需要高性能和隐私保护的研究与开发场景。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Middleware",
+    "HPC",
+    "Token Streaming"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:06:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "STREAM 通过双通道令牌流技术，在 HPC 环境中实现了低延迟的交互式 LLM 推理，克服了传统批处理架构的限制。",
+      "该中间件整合了本地、HPC 和云 API 的优势，提供了灵活、隐私且高性能的推理方案，适用于资源受限或数据敏感的场景。",
+      "STREAM 的设计强调了多层级资源调度和令牌级并行处理，显著提升了 HPC 集群中 LLM 推理的吞吐量和响应速度。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

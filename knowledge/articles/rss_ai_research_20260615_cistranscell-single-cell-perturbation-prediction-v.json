@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-052",
+  "title": "CisTransCell: Single-Cell Perturbation Prediction via Gene Function, Regulatory Control, and Cellular Context",
+  "source_url": "https://arxiv.org/abs/2606.13713",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CisTransCell的新型深度学习模型，用于预测单细胞对基因扰动的转录响应，特别是在零样本场景下（即训练时未见过被扰动的基因或基因组合）。该模型的核心创新在于整合了基因功能、调控控制和细胞上下文三个关键因素。具体而言，它通过图神经网络建模基因之间的功能关系（如蛋白质-蛋白质相互作用），利用Transformer架构捕捉顺式调控元件（如增强子、启动子）对基因表达的调控作用，并引入细胞状态嵌入来反映不同细胞类型或状态下的上下文依赖性。这使得CisTransCell能够泛化到未见过的基因扰动组合，并准确预测下游基因表达变化。该工作解决了单细胞扰动预测中的一个核心难题：扰动效应不仅取决于表达状态，还依赖于被扰动基因产物如何影响其他基因和蛋白质，以及这些下游因子如何作用于顺式调控区域。实验结果表明，CisTransCell在多个基准数据集上显著优于现有方法，尤其在零样本预测任务中表现突出。该研究对于理解基因调控机制、药物靶点发现和合成生物学具有重要价值。",
+  "tags": [
+    "单细胞",
+    "基因扰动预测",
+    "深度学习",
+    "零样本学习",
+    "基因调控"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:04:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CisTransCell通过整合基因功能网络、顺式调控机制和细胞上下文，实现了对未见过的基因扰动组合的零样本预测。",
+      "模型利用图神经网络和Transformer架构分别建模基因间功能关系和顺式调控作用，显著提升了预测准确性。",
+      "该工作揭示了扰动效应的细胞上下文依赖性，为理解基因调控的细胞类型特异性提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

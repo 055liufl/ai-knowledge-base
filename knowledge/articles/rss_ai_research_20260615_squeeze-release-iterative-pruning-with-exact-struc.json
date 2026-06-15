@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260615-115",
+  "title": "Squeeze-Release: Iterative Pruning with Exact Structural Minimization",
+  "source_url": "https://arxiv.org/abs/2606.14346",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Squeeze-Release”的迭代剪枝方法，旨在解决非结构化剪枝后模型尺寸不变的问题。传统非结构化剪枝虽然使权重张量稀疏，但张量形状保持不变，导致部署模型并未真正变小。作者提出了一种精确的结构重写技术“最小化”（minimization），能将掩码网络转换为更小的密集网络，且前向函数在浮点舍入误差内完全一致。Squeeze-Release循环通过交替进行剪枝和最小化，并在中间阶段释放部分权重，从而在保持模型性能的同时实现真正的结构压缩。该方法在多个基准测试上验证了有效性，显著减少了模型参数量和计算开销，同时保持了高精度。这项研究值得关注，因为它解决了非结构化剪枝的实际部署瓶颈，提供了一种可落地的模型压缩方案，对资源受限场景（如移动端、边缘设备）具有重要价值。",
+  "tags": [
+    "模型压缩",
+    "剪枝",
+    "非结构化剪枝"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:09:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出精确结构最小化方法，将掩码网络转换为更小的密集网络，保持前向函数一致。",
+      "Squeeze-Release循环通过迭代剪枝和最小化，实现真正的模型尺寸缩减。",
+      "解决了非结构化剪枝后模型部署时尺寸不变的关键问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-075",
+  "title": "Gefen: Optimized Stochastic Optimizer",
+  "source_url": "https://arxiv.org/abs/2606.13894",
+  "source_platform": "rss_ai_research",
+  "summary": "Gefen 是一种针对现代深度学习优化器 AdamW 的内存高效改进方案。AdamW 作为默认优化器，其存储一阶和二阶矩估计需要额外两个参数大小的缓冲区，导致训练内存开销较大。Gefen 通过两个关键创新来降低内存占用：一是自动在参数块之间共享二阶矩估计，二是使用学习到的码本对一阶矩进行量化。实验表明，Gefen 在保持与 AdamW 相同性能的前提下，将内存占用减少了约 8 倍。这一成果对于训练大规模深度学习模型（如大语言模型）具有重要意义，因为它能显著降低硬件资源需求，使得在有限内存下训练更大模型成为可能。该工作来自 arXiv 预印本，属于优化器领域的实用创新。",
+  "tags": [
+    "Optimizer",
+    "Memory Efficiency",
+    "Deep Learning",
+    "Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:06:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Gefen 通过共享二阶矩估计和量化一阶矩，将 AdamW 的内存占用降低约 8 倍，同时保持性能不变。",
+      "该方法针对深度学习训练中的内存瓶颈，尤其适用于大规模模型场景，如大语言模型。",
+      "Gefen 采用学习到的码本进行量化，而非固定量化方案，可能带来更好的适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

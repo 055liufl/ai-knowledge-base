@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-136",
+  "title": "Sensitivity Shaping for Latent Modeling",
+  "source_url": "https://arxiv.org/abs/2606.14585",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Sensitivity Shaping for Latent Modeling”的方法，旨在解决机器人系统中生成式动力学模型在规划时对策略引发的分布外（OOD）转换检测不可靠的问题。现有方法通常将学习到的动力学视为固定，并附加后验支持代理，但这些代理在动力学对关键动作选择局部不敏感时可能失效，导致未支持的控制动作产生潜在预测错误。该方法通过塑造潜在模型的敏感性，增强对关键动作的响应能力，从而提升OOD检测的鲁棒性。该工作对于安全部署机器人系统具有重要意义，特别是在复杂和动态环境中，能够减少因模型不准确导致的规划失败风险。其创新点在于从模型训练阶段直接优化敏感性，而非仅依赖后处理，这为生成式模型在机器人控制中的应用提供了新思路。值得关注的是，该方法有望推广至其他涉及序列决策的领域，如自动驾驶和工业自动化。",
+  "tags": [
+    "Robotics",
+    "Generative Models",
+    "Out-of-Distribution Detection",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:11:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有OOD检测方法在动力学模型对关键动作不敏感时失效，导致未支持动作产生错误潜在预测。",
+      "提出通过敏感性塑造直接优化模型对关键动作的响应，而非依赖后验支持代理。",
+      "该方法提升了机器人规划中OOD转换检测的鲁棒性，对安全部署至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

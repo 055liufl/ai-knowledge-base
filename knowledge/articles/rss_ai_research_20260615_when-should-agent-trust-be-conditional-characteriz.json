@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260615-023",
+  "title": "When Should Agent Trust Be Conditional? Characterizing and Attacking Skill-Conditional Reputation in Agent Swarms",
+  "source_url": "https://arxiv.org/abs/2606.14200",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在开放平台中，由异构LLM代理（在基础模型、框架和工具栈上存在差异）组成的代理群体中的信任与声誉问题。这些代理的能力因技能而异：一个在某种技能上表现出色的代理可能在另一种技能上毫无用处。传统的声誉方法为每个代理分配一个单一的全局信任分数，但这并不适用于此场景，因为将所有任务路由给全局最受信任的代理会忽略专业化的价值。作者提出了“技能条件声誉”的概念，即代理的信任度应基于其特定技能。论文还设计了一种攻击方法，利用技能条件声誉的脆弱性，通过操纵代理在特定技能上的表现来破坏群体信任系统。该工作揭示了当前代理群体信任机制的关键缺陷，并为构建更鲁棒的信任系统提供了理论基础。值得关注的是，它直接挑战了LLM代理部署中广泛使用的单一信任评分范式，并提出了可操作的攻击与防御思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Trust",
+    "Reputation",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:01:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统全局信任评分不适用于异构LLM代理群体，因为代理能力高度专业化且因技能而异。",
+      "提出技能条件声誉概念，即代理的信任度应基于其特定技能而非全局平均。",
+      "设计了一种针对技能条件声誉的攻击方法，揭示了现有信任系统的脆弱性。",
+      "为构建更鲁棒的代理群体信任机制提供了理论基础和防御方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

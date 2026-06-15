@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-042",
+  "title": "Simplex-Constrained Sparse Bagging: Transitioning from Uniform Priors to Sparse Posteriors in Ensemble Learning",
+  "source_url": "https://arxiv.org/abs/2606.13589",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Simplex-Constrained Sparse Bagging (SCSB) 的数学框架，用于对基于自助法（bootstrap）的集成模型（如随机森林、Bagged SVM、Bagged 神经网络）进行后训练压缩与概率校准。传统 Bagging 方法对所有基学习器赋予均匀投票权重，忽略了它们在局部区域的性能差异，导致模型冗余和校准不佳。SCSB 通过在单纯形约束下学习稀疏后验权重，将均匀先验转化为稀疏后验，从而在保持或提升预测精度的同时显著减少模型大小。该方法具有严格的数学基础，能够自动选择最具贡献的基学习器，并提升概率校准质量。该工作值得关注，因为它解决了集成学习中长期存在的效率与校准问题，为实际部署轻量级高性能集成模型提供了新思路。",
+  "tags": [
+    "Ensemble Learning",
+    "Model Compression",
+    "Probability Calibration",
+    "Sparse Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:03:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SCSB 通过单纯形约束的稀疏优化，将 Bagging 中的均匀投票先验转化为稀疏后验权重，实现模型压缩与校准的统一。",
+      "该方法能自动识别并保留局部性能优异的基学习器，剔除冗余，显著降低模型存储与推理成本。",
+      "SCSB 在多个标准数据集上验证了其提升概率校准质量的能力，同时保持或略优于原始 Bagging 的预测精度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-084",
+  "title": "Same-Origin Policy for Agentic Browsers",
+  "source_url": "https://arxiv.org/abs/2606.14027",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次系统性地研究了同源策略（SOP）在智能体浏览器（Agentic Browsers）中的有效性。智能体浏览器将自主AI代理集成到Web浏览器中，允许用户通过自然语言指令完成网页任务。同源策略是浏览器安全的基础机制，旨在防止脚本引发的未经授权的跨源数据流。然而，随着AI代理的引入，代理可以模拟用户操作（如点击、表单填写），可能绕过传统SOP的限制。论文通过分析智能体浏览器的架构和代理行为，揭示了SOP在以下场景中的失效风险：代理通过跨源请求获取敏感数据、利用用户已登录状态执行未授权操作，以及通过多步骤任务链间接泄露信息。研究还提出了针对智能体浏览器的安全增强方案，包括上下文感知的权限控制、代理行为审计和动态策略调整。这项工作对于理解AI代理时代的Web安全具有重要价值，为浏览器安全社区提供了新的研究方向。",
+  "tags": [
+    "Agentic Browser",
+    "Same-Origin Policy",
+    "Web Security",
+    "AI Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:06:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体浏览器中AI代理的行为可能绕过传统同源策略，导致跨源数据泄露风险。",
+      "代理通过模拟用户操作（如点击、表单提交）可触发未授权的跨源请求，而SOP无法有效区分人类与代理行为。",
+      "多步骤任务链（如先登录再跨站操作）可能间接泄露用户敏感信息，现有SOP机制缺乏对此类场景的防护。",
+      "提出上下文感知权限控制和代理行为审计等增强方案，为智能体浏览器的安全设计提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

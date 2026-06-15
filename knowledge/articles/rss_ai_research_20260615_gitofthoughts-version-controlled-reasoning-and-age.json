@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-031",
+  "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge",
+  "source_url": "https://arxiv.org/abs/2606.14470",
+  "source_platform": "rss_ai_research",
+  "summary": "GitOfThoughts 提出了一种将大语言模型（LLM）的推理过程版本控制化的方法。传统 LLM 推理是短暂的：思维链随上下文窗口消失，被剪枝的搜索分支不留记录，记忆缓冲区无法进行差异比较、合并或审计。而其他复杂软件过程（如代码、基础设施、数据、实验）都已实现版本控制，推理却尚未如此。GitOfThoughts 将智能体的推理树存储为 git 仓库：每个被评分的思维作为一个提交，评分作为提交信息的一部分。这使得推理过程可回放、可比较差异、可合并，从而支持更可靠的推理审计、协作式推理以及推理过程的持续改进。该方法将软件工程的最佳实践引入 AI 推理领域，显著提升了 LLM 推理的可追溯性、可复现性和可协作性，对于需要高可靠性推理的应用（如科学发现、法律分析、代码生成）具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Version Control",
+    "Reasoning",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:02:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将推理树存储为 git 仓库，每个思维作为提交，实现了推理过程的版本控制，解决了 LLM 推理不可追溯、不可审计的问题。",
+      "支持推理过程的回放、差异比较和合并，使得多智能体协作推理和推理过程的持续改进成为可能。",
+      "将软件工程中的版本控制最佳实践引入 AI 推理领域，为构建更可靠、可复现的智能系统提供了基础设施。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

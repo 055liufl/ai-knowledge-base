@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260615-034",
+  "title": "Dense Coordinate-List Fine-Tuning Induces a Controllable Interference Surface in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2606.14507",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在视觉语言模型（VLM）中通过密集坐标列表微调来改善视觉定位能力，并分析了这种微调如何影响模型的序列化、重复和终止行为。作者将这种行为视为一种生成和控制表面。在Gemma 4 12B模型上，使用高容量的q/k/v/o LoRA微调将类别感知的F1@0.3从0.007提升至0.448，但同时引入了重复尾部压力（重复率0.080，最大重复次数23）。通过q/v秩扫描，发现最大重复次数在21-22之间保持稳定。这项工作揭示了微调过程中模型输出行为的可控性，为理解VLM的生成机制和优化结构化输出提供了新视角。值得关注的是，它首次系统性地将密集坐标列表微调与输出序列的重复模式联系起来，为未来设计更鲁棒的视觉定位模型和可控生成策略奠定了基础。",
+  "tags": [
+    "Vision-Language Model",
+    "Fine-Tuning",
+    "LoRA",
+    "Visual Grounding",
+    "Structured Output"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:02:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "密集坐标列表微调显著提升视觉定位性能（F1@0.3从0.007升至0.448），但会引入重复尾部压力，导致输出序列重复率上升。",
+      "高容量LoRA（q/k/v/o）是性能提升的关键，但重复行为对秩的敏感性较低，表明重复模式可能源于模型内在的生成机制。",
+      "该研究将微调后的输出行为视为可控表面，为理解VLM的序列化、重复和终止提供了新的分析框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

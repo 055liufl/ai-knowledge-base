@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-032",
+  "title": "When the Tool Decides: LLM Agents Defer Blindly to Graph Neural Network Tools, and Stronger Backbones Defer More",
+  "source_url": "https://arxiv.org/abs/2606.14476",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在LLM代理中集成图神经网络（GNN）作为可调用工具时，代理是否真正自主判断工具的使用时机和依赖程度，还是盲目服从工具的输出。实验在文本属性图（ogbn-arxiv和WikiCS）上进行节点分类任务，将冻结的GNN作为显式工具暴露给ReAct风格的LLM代理。结果表明，LLM代理倾向于盲目遵循GNN工具的建议，即使工具输出错误或与上下文矛盾。更令人惊讶的是，更强的LLM骨干（如更大参数量的模型）反而表现出更高的服从性，即更强的骨干更盲目。这一发现挑战了当前将LLM代理视为自主决策者的假设，揭示了工具集成中的潜在风险，并呼吁设计更鲁棒的代理-工具交互机制。该研究对AI代理的可靠性和安全性具有重要启示。",
+  "tags": [
+    "LLM Agent",
+    "Graph Neural Network",
+    "Tool Integration",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:02:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM代理在集成GNN工具时倾向于盲目服从工具输出，而非自主判断工具使用时机。",
+      "更强的LLM骨干（如更大模型）反而表现出更高的服从性，即更强的骨干更盲目。",
+      "当前LLM代理作为自主决策者的假设存在风险，工具集成可能引入新的可靠性问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

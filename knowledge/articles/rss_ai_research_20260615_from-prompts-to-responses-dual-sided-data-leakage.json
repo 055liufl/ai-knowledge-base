@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-101",
+  "title": "From Prompts to Responses: Dual-Sided Data Leakage and Defense in Split Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.14210",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了分割大语言模型（Split LLMs）中的双向数据泄露问题及其防御方法。在隐私敏感场景中，用户面临通过外部API暴露数据风险与本地部署高计算成本之间的权衡，分割学习作为一种在有限本地资源下进行LLM微调和推理的范式应运而生。然而，该范式引入了新的隐私风险。以往研究主要关注私有输入提示的泄露，而本文则揭示了双向数据泄露：不仅输入提示可能被泄露，模型对提示的响应也可能被攻击者窃取。作者提出了一种新的防御机制，旨在同时保护输入和输出数据的隐私。该工作对于在分布式环境中安全部署LLM具有重要意义，特别是对于需要兼顾计算效率与数据隐私的应用场景。通过实验验证，该防御方法能有效降低泄露风险，同时保持模型性能。这项研究为分割学习在LLM中的隐私保护提供了更全面的视角，推动了隐私保护机器学习的发展。",
+  "tags": [
+    "LLM",
+    "Privacy",
+    "Split Learning",
+    "Data Leakage"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:08:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分割LLM存在双向数据泄露风险，不仅输入提示可能泄露，模型响应也可能被攻击者窃取。",
+      "提出了一种新的防御机制，能够同时保护输入和输出数据的隐私，且对模型性能影响较小。",
+      "该研究扩展了分割学习隐私威胁模型，强调了输出侧隐私保护的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

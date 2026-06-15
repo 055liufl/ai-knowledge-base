@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-132",
+  "title": "Rethinking Global Average Pooling: Your Classifier Is Secretly a Multi-Instance Learner",
+  "source_url": "https://arxiv.org/abs/2606.14555",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文重新审视了现代图像分类器中广泛使用的全局平均池化（GAP）结构，并揭示了其一个被忽视的特性：由于GAP后接线性分类头的线性性质，图像级别的logits等于对特征网格逐点应用分类头后得到的logits的平均值。这意味着标准分类器本质上保留了空间级别的类别证据，即使在图像级别预测错误的情况下，这些空间证据仍然可恢复。作者将这种结构重新解释为一种多实例学习（MIL）范式，其中每个空间位置被视为一个实例，而图像级预测则基于这些实例的聚合。这一发现不仅解释了分类器在某些情况下的鲁棒性，还提出了改进分类器可解释性和错误分析的新方向。该工作挑战了传统上认为GAP仅用于降维和防止过拟合的观点，为理解深度神经网络的行为提供了新的理论视角，并可能推动更鲁棒、更可解释的图像分类模型的发展。",
+  "tags": [
+    "Computer Vision",
+    "Global Average Pooling",
+    "Multi-Instance Learning",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:10:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全局平均池化（GAP）加线性分类头的结构本质上等价于多实例学习（MIL），其中每个空间位置是一个实例，图像级预测是实例预测的平均。",
+      "即使图像级预测错误，空间级别的类别证据仍然保留在特征图中，这为错误分析和模型可解释性提供了新的机会。",
+      "该发现挑战了GAP仅作为降维手段的传统认知，揭示了其作为空间证据聚合器的深层作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260615-018",
+  "title": "Minim: Privacy-Aware Minimal View for Agents via Trusted Local Sanitization",
+  "source_url": "https://arxiv.org/abs/2606.13949",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Minim 的隐私感知方法，旨在通过可信本地清理机制，为基于大语言模型（LLM）的自主代理提供最小化视图。现代 LLM 驱动的代理在复杂数字环境中依赖丰富的用户界面（UI）状态观测来实现可靠的动作基础，但许多部署会将完整的 UI 状态传输到远程推理服务器，即使大多数元素与当前任务无关。这可能导致敏感但非必要的上下文泄露，如认证码、私人通知和后台应用状态。Minim 通过可信的本地清理模块，在发送前对 UI 状态进行过滤和脱敏，仅保留任务相关的必要信息，从而在保持代理性能的同时显著提升隐私保护。该方法值得关注，因为它直接解决了 LLM 代理在隐私和安全方面的关键痛点，为实际部署提供了实用且高效的解决方案，尤其适用于需要处理敏感用户数据的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Privacy",
+    "UI"
+  ],
+  "author": null,
+  "published_at": "2026-06-15T13:56:11Z",
+  "collected_at": "2026-06-15T14:01:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Minim 通过可信本地清理机制，在发送 UI 状态前过滤敏感信息，仅保留任务相关元素，有效防止隐私泄露。",
+      "该方法在不显著降低代理任务性能的前提下，实现了隐私保护，平衡了实用性与安全性。",
+      "Minim 针对 LLM 代理在数字环境中的实际部署问题，提供了轻量级且可扩展的解决方案。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}
