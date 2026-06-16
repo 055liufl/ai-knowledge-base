@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260616-041",
+  "title": "Integrating Reasoning and Generalization in Text-to-SQL via Self-Enhanced Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2606.15598",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CoTE-SQL 框架，旨在解决文本到 SQL 任务中大型语言模型在推理能力与泛化能力之间的平衡问题。现有基于 LLM 的方法通常难以同时具备强推理和鲁棒泛化，CoTE-SQL 通过自增强微调策略，整合推理与泛化，提升模型在复杂查询生成中的表现。该工作利用链式思考（Chain-of-Thought）提示和自我一致性机制，在微调过程中增强模型的逻辑推理步骤，同时通过多样化数据增强保持对未见数据库的泛化能力。实验表明，CoTE-SQL 在多个基准数据集上显著优于基线模型，尤其在需要多表连接、嵌套查询等复杂场景中表现突出。该研究为文本到 SQL 领域提供了一种实用且高效的训练范式，值得关注。",
+  "tags": [
+    "Text-to-SQL",
+    "LLM",
+    "Fine-Tuning",
+    "Reasoning",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:00:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoTE-SQL 通过自增强微调同时提升推理和泛化能力，解决了现有 LLM 方法在两者间的权衡问题。",
+      "链式思考提示与自我一致性机制被用于增强模型在复杂 SQL 查询中的逻辑推理步骤。",
+      "多样化数据增强策略有助于模型在未见数据库上保持鲁棒泛化性能。",
+      "在多个基准测试中，CoTE-SQL 在复杂查询场景下显著优于现有方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

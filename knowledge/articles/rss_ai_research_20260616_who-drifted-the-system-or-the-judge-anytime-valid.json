@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260616-029",
+  "title": "Who Drifted: the System or the Judge? Anytime-Valid Attribution in LLM Evaluation Pipelines",
+  "source_url": "https://arxiv.org/abs/2606.15474",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在LLM评估流程中解决系统漂移与评判者漂移混淆问题的方法。在持续评估LLM产品时，通常依赖一个强大的LLM评判者作为基准，该评判者会对每次交互进行评分，并在评分下降时触发警报。然而，评判者本身也是一个通过API调用的模型，其版本更新或评分提示的修改可能导致评分标准变化，从而使得每次漂移警报无法区分是产品性能下降还是评判者标准改变。为了解决这一歧义，作者引入了一个固定的、人工标注的锚定集，通过对比当前评分与锚定集上的评分，可以实时归因漂移的来源。该方法提供了任意有效的归因，即可以在任何时间点以统计保证的方式判断漂移是由系统还是评判者引起的。这项工作对于LLM产品的持续监控和评估具有重要价值，因为它提高了评估的可靠性和可解释性，减少了因评判者变化导致的误报。",
+  "tags": [
+    "LLM Evaluation",
+    "Drift Detection",
+    "Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T12:59:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出使用固定人工标注锚定集来区分系统漂移和评判者漂移，解决了LLM评估中的歧义问题。",
+      "该方法支持任意有效的归因，即可以在任何时间点以统计保证的方式判断漂移来源。",
+      "提高了LLM产品持续监控的可靠性和可解释性，减少了因评判者变化导致的误报。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

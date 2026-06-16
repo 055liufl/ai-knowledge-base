@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-059",
+  "title": "Heteroskedastic Signals in Budgeted LLM Verification: Structural Heterogeneity Limits Optimization Gains",
+  "source_url": "https://arxiv.org/abs/2606.15841",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在预算受限的LLM验证场景中，异方差信号对计算资源分配策略的影响。作者发现，当前广泛使用的基于不确定性信号的验证策略（如测试时扩展、工具执行等）隐含了一个全局信号可比性假设，即相同的不确定性分数在不同输入下应具有相似的决策价值。然而，通过预算验证这一受控诊断设置，论文揭示了该假设的失效模式：由于信号异方差性的存在，不同输入之间的不确定性信号在统计特性上存在结构性差异，导致基于全局阈值的资源分配策略无法达到理论最优。论文通过理论分析和实验验证，证明了这种结构性异质性限制了优化收益，并提出了改进方向。这项工作对LLM系统的可靠性、资源效率以及不确定性量化方法具有重要启示，尤其是在需要权衡计算成本与输出质量的场景中。",
+  "tags": [
+    "LLM",
+    "Uncertainty Quantification",
+    "Budgeted Verification",
+    "Test-Time Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:01:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "揭示了LLM验证中全局信号可比性假设的失效模式，即异方差信号导致相同分数在不同输入下决策价值不同",
+      "通过预算验证诊断设置，证明了信号结构性异质性会限制基于不确定性信号的资源分配优化收益",
+      "为设计更鲁棒的LLM验证策略提供了理论基础，强调了考虑输入特异性信号分布的重要性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

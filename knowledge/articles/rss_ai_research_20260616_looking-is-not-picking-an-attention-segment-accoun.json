@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-089",
+  "title": "Looking Is Not Picking: An Attention-Segment Account of Tool-Selection Failures in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.16364",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究挑战了关于大语言模型（LLM）代理工具调用失败的常见假设。通常认为，模型在众多工具定义中未能“看到”正确的工具是导致失败的原因。然而，本文通过分析模型对标注工具定义片段的注意力机制，得出了相反的结论。在BFCL（Berkeley Function Calling Leaderboard）的真实失败案例中，通过逐候选注意力最大值分析，模型在80%的情况下最关注正确的工具（随机概率为21%），而正确工具是注意力不足片段的情况仅占10%。这表明，模型“看到了”正确的工具，但并未选择它。论文提出了一个“注意力-片段”解释框架，将工具选择失败归因于注意力分配与最终选择之间的脱节，而非视觉或感知上的遗漏。这一发现对于理解LLM代理的决策过程、改进工具调用机制以及设计更鲁棒的代理系统具有重要意义。它揭示了当前模型在注意力与行动一致性上的深层缺陷，为未来研究提供了新的方向。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool Calling",
+    "Attention Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:04:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM代理工具调用失败的主要原因是注意力与选择之间的脱节，而非未能注意到正确工具。",
+      "在BFCL失败案例中，模型在80%的情况下正确关注了目标工具，但最终选择了其他工具。",
+      "该研究提出了“注意力-片段”解释框架，挑战了关于工具选择失败的常见直觉。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

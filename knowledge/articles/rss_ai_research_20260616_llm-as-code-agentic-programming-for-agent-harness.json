@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-062",
+  "title": "LLM-as-Code Agentic Programming for Agent Harness",
+  "source_url": "https://arxiv.org/abs/2606.15874",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出当前主流的大语言模型（LLM）智能体框架普遍将LLM作为编排器，由模型决定下一步行动、工具调用时机和停止条件。作者认为，令牌爆炸、控制流幻觉和不可靠完成并非实现层面的缺陷，而是将循环、分支和排序等确定性工作分配给概率系统的架构性后果。论文提出，更好的提示或更强的模型无法保证可靠性，因此需要一种新的编程范式——LLM-as-Code Agentic Programming for Agent Harness，将确定性控制流从LLM中解耦，通过代码来编排智能体行为。这一观点挑战了现有智能体框架的设计基础，为构建更可靠的LLM智能体系统提供了新的思路，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Agent Harness",
+    "Control Flow"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:01:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前LLM智能体框架将编排任务交给LLM，导致令牌爆炸、控制流幻觉和不可靠完成等架构性问题。",
+      "这些问题是概率系统承担确定性工作（如循环、分支、排序）的必然结果，无法通过优化提示或模型规模解决。",
+      "提出LLM-as-Code范式，将确定性控制流从LLM中分离，用代码编排智能体行为，以提升可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260616-131",
+  "title": "RAMS: Resource-Adaptive and Detection-Conditioned Model Switching for Embedded Edge Perception",
+  "source_url": "https://arxiv.org/abs/2606.14716",
+  "source_platform": "rss_ai_research",
+  "summary": "RAMS 是一种面向嵌入式边缘感知的轻量级运行时控制器，旨在解决边缘设备上目标检测任务中推理延迟与检测质量之间的平衡问题。该控制器通过监控设备压力（如CPU、内存使用率），从空闲行为中校准切换阈值，并动态选择三种预置的YOLOv8模型变体（NANO/SMALL/MEDIUM，分别对应320/416/640像素输入）进行切换，且无需模型重载延迟。RAMS定义了五种切换策略，包括基于检测置信度、资源压力等条件的自适应选择。该方法的关键创新在于其资源自适应和检测条件驱动的模型切换机制，能够在不牺牲过多检测精度的前提下，显著降低边缘设备的推理延迟，适应动态变化的计算负载。该工作对于资源受限的嵌入式视觉系统（如无人机、机器人、智能摄像头）具有实际应用价值，提供了一种高效、低开销的模型部署优化方案。",
+  "tags": [
+    "Edge AI",
+    "Object Detection",
+    "Model Switching",
+    "YOLOv8",
+    "Embedded Systems"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:07:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAMS通过实时监控设备压力（如CPU/内存）和检测置信度，动态切换YOLOv8模型变体，实现延迟与精度的自适应平衡。",
+      "该方法无需模型重载延迟，利用轻量级运行时控制器和五种切换策略，适用于资源动态变化的嵌入式边缘场景。",
+      "RAMS从空闲行为中校准切换阈值，避免了手动调参，提升了在不同硬件和负载下的鲁棒性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

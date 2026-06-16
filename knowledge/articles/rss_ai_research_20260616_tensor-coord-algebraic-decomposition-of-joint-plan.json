@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-091",
+  "title": "Tensor-Coord: Algebraic Decomposition of Joint Plan Tensors for Conflict-Free Multi-Agent LLM Planning",
+  "source_url": "https://arxiv.org/abs/2606.16478",
+  "source_platform": "rss_ai_research",
+  "summary": "Tensor-Coord 提出了一种基于多线性代数的框架，用于解决多智能体规划中的协调失败问题，如空间碰撞、资源争用和时间死锁。该方法将 N 个智能体的联合计划表示为三阶张量 T ∈ R^(N×H×A)，其中维度分别对应智能体、时间步和动作。通过应用 CP 和 Tucker 分解，Tensor-Coord 能够从联合计划中提取低秩结构，从而识别并消除冲突，同时保持计划的可扩展性。该工作利用张量代数将多智能体协调问题形式化为代数分解，为 LLM 在多智能体场景中的应用提供了新的理论工具。值得关注的是，它直接针对 LLM 在多智能体规划中的核心瓶颈——独立生成计划导致的冲突，并提供了可计算的解决方案。实验表明，该方法在避免冲突的同时，显著降低了计算复杂度，适用于大规模智能体系统。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Planning",
+    "Tensor"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:04:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多智能体联合计划建模为三阶张量，通过 CP 和 Tucker 分解实现冲突检测与消除。",
+      "利用低秩近似降低计算复杂度，支持大规模智能体系统的可扩展规划。",
+      "直接解决 LLM 在多智能体规划中因独立生成计划导致的协调失败问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

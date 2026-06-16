@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-106",
+  "title": "A First-Principles Derivation of LLM Policy Optimization: From Expected Reward to GRPO and Its Structural Extensions",
+  "source_url": "https://arxiv.org/abs/2606.16733",
+  "source_platform": "rss_ai_research",
+  "summary": "本文从第一性原理出发，系统推导了语言模型策略优化算法的核心目标函数 J(θ) = E_{τ~p_θ(τ)}[R(τ)]，并指出该目标仅包含轨迹概率 p_θ(τ) 和奖励 R(τ) 两个因子。文章追溯了从 REINFORCE 到 PPO 再到 GRPO 及其衍生方法的演进脉络，阐明每种方法都是通过修改其中一个或两个因子来克服前序方法的特定缺陷。与现有按领域或时间顺序组织的综述不同，本文提供了一种统一的数学框架，揭示了不同算法之间的内在联系和结构扩展路径。该工作对于理解 LLM 策略优化的理论基础、指导新算法设计具有重要价值，尤其适合希望深入理解强化学习在语言模型中应用的研究者和开发者。",
+  "tags": [
+    "LLM",
+    "Policy Optimization",
+    "GRPO",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:05:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "所有语言模型策略梯度算法都优化同一目标函数，差异仅在于对轨迹概率和奖励两个因子的修改方式",
+      "从 REINFORCE 到 GRPO 的演进可被统一理解为对目标函数两个因子的系统性调整，而非孤立的方法创新",
+      "该第一性原理框架为设计新的策略优化算法提供了清晰的数学指导，有助于避免重复发明和盲目试错"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260616-107",
+  "title": "Skill-to-LoRA: From Using Skills to Learning Behaviors for Token-Efficient LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.16769",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Skill-to-LoRA (S2L) 的新型技能表示方法，旨在解决传统基于文本的技能描述（如 SKILL.md 文件）在 LLM Agent 运行时需要反复注入上下文、导致 token 消耗高的问题。S2L 将技能从可读的文本过程转换为行为导向的 LoRA 适配器，使得 Agent 在执行任务时无需重复加载冗长的技能描述，而是通过加载轻量级的 LoRA 模块来激活特定行为。这种方法显著降低了推理时的 token 开销，同时保持了技能的可复用性和灵活性。该工作结合了参数高效微调（PEFT）与 Agent 系统设计，为构建更高效、可扩展的 LLM Agent 提供了新思路。值得关注的原因在于：它直接针对当前 Agent 系统部署中的效率瓶颈（上下文长度和成本），提出了一种实用且创新的解决方案，有望推动 Agent 在资源受限场景下的应用。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "LoRA",
+    "Efficiency",
+    "Skill Representation"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:05:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "S2L 用 LoRA 适配器替代传统的文本技能描述，从根本上减少了 Agent 运行时所需的 token 数量，提升了推理效率。",
+      "该方法将技能从“可读文档”转变为“可学习行为”，保留了技能的可复用性，同时避免了重复注入相同上下文带来的开销。",
+      "S2L 结合了参数高效微调与 Agent 系统设计，为构建更经济、更快速的 LLM Agent 提供了可行的技术路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

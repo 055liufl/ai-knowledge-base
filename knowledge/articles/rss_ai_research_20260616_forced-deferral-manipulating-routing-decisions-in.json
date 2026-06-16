@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-023",
+  "title": "Forced Deferral: Manipulating Routing Decisions in Multimodal LLM Cascades",
+  "source_url": "https://arxiv.org/abs/2606.15308",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多模态大语言模型（MLLM）级联系统的新型攻击方法——强制延迟（Forced Deferral）。MLLM级联系统通过先使用轻量级弱模型处理查询，仅在弱模型输出不自信时才调用强模型，以平衡计算成本与性能。然而，这种依赖弱模型置信度进行资源分配的设计暴露了安全漏洞：攻击者可以通过操纵弱模型的置信度评分，强制系统将大量查询延迟到强模型，从而显著增加计算开销和响应延迟。论文详细分析了攻击的实现机制，包括如何通过输入扰动或对抗性样本影响弱模型的置信度判断，并评估了攻击对系统效率、成本和可用性的影响。该研究揭示了AI系统在优化资源分配时可能引入的新安全风险，对部署级联架构的MLLM服务具有重要警示意义，值得关注。",
+  "tags": [
+    "MLLM",
+    "Security",
+    "Cascade",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T12:58:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLLM级联系统依赖弱模型置信度进行资源分配，这成为新的攻击面，攻击者可通过操纵置信度强制延迟查询到强模型。",
+      "强制延迟攻击能显著增加系统计算成本和响应延迟，影响服务可用性和经济效率。",
+      "该攻击方法揭示了AI系统优化与安全之间的权衡，为设计更鲁棒的级联架构提供了研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

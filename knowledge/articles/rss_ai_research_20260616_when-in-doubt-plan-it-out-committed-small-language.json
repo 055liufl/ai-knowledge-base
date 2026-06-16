@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-120",
+  "title": "When in Doubt, Plan It Out: Committed Small Language Model Deliberation for Reactive Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2606.16995",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为PACT（Plan, Align, Commit, Think）的混合架构，旨在解决强化学习（RL）策略在陌生环境中因缺乏显式推理而性能下降的问题。PACT将快速的反应式RL策略与慢速的、基于小语言模型（SLM）的推理规划器相结合。SLM被异步调用，用于生成和验证候选行动计划。一旦计划通过模拟验证为安全、可行且完整，RL策略便会承诺执行该计划。这种设计使得RL系统能够在保持实时响应能力的同时，利用语言模型的推理能力进行前瞻性规划，从而提升在未知或动态环境中的鲁棒性和适应性。该工作值得关注，因为它巧妙地融合了两种不同时间尺度的决策机制，为将语言模型引入机器人控制和自主系统提供了实用且高效的范式，有望推动RL在复杂现实场景中的应用。",
+  "tags": [
+    "Reinforcement Learning",
+    "Small Language Model",
+    "Planning",
+    "Hybrid Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:07:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PACT通过异步调用SLM进行计划生成与验证，解决了RL在陌生环境中缺乏显式推理的问题。",
+      "该架构实现了快速反应与慢速推理的协同，兼顾了实时性与前瞻性规划能力。",
+      "计划需通过模拟验证安全性与可行性，确保了RL策略执行的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

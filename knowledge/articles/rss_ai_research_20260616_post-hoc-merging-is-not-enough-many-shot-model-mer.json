@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260616-093",
+  "title": "Post-Hoc Merging is Not Enough: Many-Shot Model Merging with Loss-Gap Balancing",
+  "source_url": "https://arxiv.org/abs/2606.16501",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Many-Shot Model Merging with Loss-Gap Balancing”的新型模型合并方法，旨在解决现有后训练模型合并策略中任务干扰和信息擦除的问题。传统方法通常采用一次性合并（post-hoc merging），即在训练完成后仅对多个任务专用模型进行一次合并，这容易导致不同任务之间的知识相互干扰，从而降低多任务性能。作者通过引入多次合并（many-shot merging）机制，在合并过程中多次迭代调整模型参数，并利用损失差距平衡（Loss-Gap Balancing）技术来动态平衡各任务的学习信号，从而更有效地保留每个任务的特定知识。实验表明，该方法在多个多任务场景下显著优于现有基线，特别是在任务数量较多或任务差异较大时，能有效缓解任务干扰，提升合并后模型的整体性能。该工作为模型合并领域提供了新的视角，即从一次性合并转向多次迭代优化，具有重要的实用价值和理论意义。",
+  "tags": [
+    "Model Merging",
+    "Multi-Task Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-16T12:54:16Z",
+  "collected_at": "2026-06-16T13:04:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统的一次性模型合并（post-hoc merging）容易导致任务干扰和信息擦除，限制了多任务性能。",
+      "提出的多次合并（many-shot merging）通过迭代调整参数，能更有效地保留各任务知识。",
+      "损失差距平衡（Loss-Gap Balancing）技术动态调节任务学习信号，进一步缓解任务冲突。",
+      "实验证明该方法在任务数量多或差异大的场景下优势明显，为模型合并提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
