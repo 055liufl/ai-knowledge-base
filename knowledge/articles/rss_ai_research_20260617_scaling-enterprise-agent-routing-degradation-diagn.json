@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-128",
+  "title": "Scaling Enterprise Agent Routing: Degradation, Diagnosis, and Recovery",
+  "source_url": "https://arxiv.org/abs/2606.17519",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在生产环境中，随着专用工具库规模扩大，LLM助手路由准确性的退化问题。基于一个部署的企业生产力助手，其拥有110个代理和584个工具的目录，作者评估了三种前沿模型在10到110个代理规模下的路由性能。结果显示，对于未明确指定的请求，路由F1分数下降了16到23个百分点。通过Oracle分析，作者分解了这种退化，并提出了诊断和恢复策略。该研究对于理解大规模企业级AI系统的路由瓶颈、优化工具分配和提升助手可靠性具有重要意义，尤其关注了实际部署中的扩展性挑战。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Routing",
+    "Enterprise"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:29:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随着代理和工具库规模从10扩展到110，路由准确性显著下降，F1分数降低16-23个百分点。",
+      "退化主要源于对未明确指定请求的模糊性处理，Oracle分析揭示了不同模型在路由决策中的差异。",
+      "研究为大规模企业级AI助手的路由系统提供了诊断框架和恢复策略，强调了扩展性对性能的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

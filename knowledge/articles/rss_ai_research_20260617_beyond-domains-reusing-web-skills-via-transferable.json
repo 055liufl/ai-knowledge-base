@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-022",
+  "title": "Beyond Domains: Reusing Web Skills via Transferable Interaction Patterns",
+  "source_url": "https://arxiv.org/abs/2606.17645",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“可迁移交互模式”的方法，旨在解决大型语言模型（LLM）网络代理在工具调用场景中的效率问题。传统上，LLM网络代理每轮都会读取新的页面观察并发出一个结构化的工具动作，这种低级别的原始操作导致任务视野迅速增长，增加了策略相关的LLM完成次数，从而在Mind2Web和WebArena等基准测试中主导了延迟和成本。为此，作者提出将重复出现的交互片段封装为“网络技能”，即由成功交互序列构建的可调用工具。这些技能不仅限于特定领域，而是通过识别跨领域的通用交互模式（如表单填写、列表导航等）实现迁移。该方法通过预训练或微调LLM来学习这些模式，使得代理在遇到类似任务时能直接调用技能，而非从头生成每一步动作。实验表明，这种方法显著减少了LLM调用次数，降低了延迟和成本，同时保持了任务完成的高成功率。该研究值得关注，因为它为提升LLM代理的实用性和效率提供了新思路，尤其适用于需要频繁执行重复性网络操作的场景，如自动化测试、数据抓取等。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Web Automation",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:21:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将重复交互片段封装为可迁移的网络技能，显著减少了LLM代理的调用次数和延迟。",
+      "识别并利用跨领域的通用交互模式（如表单填写、列表导航）实现了技能迁移，提升了代理的泛化能力。",
+      "该方法在Mind2Web和WebArena等基准测试中展示了成本降低和效率提升，同时保持了高成功率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

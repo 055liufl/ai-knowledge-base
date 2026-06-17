@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260617-063",
+  "title": "PIVOT: Bridging Black-Scholes Implied-Volatility and Price Objectives via Differentiable J\\\"ackel Operator",
+  "source_url": "https://arxiv.org/abs/2606.17065",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出PIVOT框架，通过可微分的Jäckel算子桥接Black-Scholes隐含波动率与价格目标。现代期权学习系统在价格空间和隐含波动率（IV）空间两个坐标中运行：价格空间便于市场报价和无套利约束，IV空间用于波动率曲面的平滑、正则化和评估。瓶颈在于接口而非近似：Jäckel的“Let's Be Rational”（LBR）求解器已能高效地将Black-Scholes价格反演至机器精度。PIVOT通过使该算子可微分，实现了两个空间之间的无缝梯度传播，从而支持端到端的深度学习模型训练。该工作值得关注，因为它解决了金融机器学习中一个关键的计算瓶颈，使得期权定价和波动率建模可以更自然地整合到现代AI框架中，有望提升衍生品定价、风险管理和波动率预测的准确性和效率。",
+  "tags": [
+    "Differentiable Computing",
+    "Financial Machine Learning",
+    "Option Pricing"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:24:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PIVOT通过可微分算子桥接了价格空间和隐含波动率空间，解决了期权学习系统中的接口瓶颈。",
+      "该工作使得Black-Scholes模型的反演过程可端到端训练，支持深度学习在金融衍生品中的应用。",
+      "PIVOT有望提升波动率曲面建模和期权定价的精度与计算效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

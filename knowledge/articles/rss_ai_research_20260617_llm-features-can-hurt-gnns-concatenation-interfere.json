@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-135",
+  "title": "LLM Features Can Hurt GNNs: Concatenation Interference on Homophilous Graph Benchmarks",
+  "source_url": "https://arxiv.org/abs/2606.17579",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了在标准同质性图基准测试中，直接将大语言模型（LLM）生成的节点特征通过简单拼接（concatenation）方式输入图神经网络（GNN）时，反而会导致模型准确率系统性下降的异常现象。这一发现与当前广泛报道的“LLM特征提升GNN性能”的结论形成鲜明对比。研究指出，当采用纯输入拼接（而非联合训练、知识蒸馏或提示条件化）时，LLM特征会干扰GNN对同质性图结构的有效学习，尤其是在使用MLP作为骨干网络时。该工作挑战了现有认知，强调了特征融合方式对图学习任务的关键影响，为LLM与GNN的协同设计提供了重要警示。值得关注的是，它揭示了简单拼接可能引入噪声或破坏图拓扑信息，从而在看似有利的场景下产生负面效果。这一发现对图表示学习、LLM增强的图分析以及实际应用中的模型集成策略具有重要指导意义。",
+  "tags": [
+    "GNN",
+    "LLM",
+    "Graph Learning",
+    "Feature Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:29:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM特征通过简单拼接输入GNN时，在同质性图基准上会系统性降低准确率，与主流认知相悖。",
+      "纯输入拼接方式（而非联合训练或蒸馏）是导致性能退化的关键因素，提示特征融合策略的重要性。",
+      "该发现挑战了LLM特征总是有益于GNN的假设，强调需谨慎评估特征集成方法对图结构学习的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

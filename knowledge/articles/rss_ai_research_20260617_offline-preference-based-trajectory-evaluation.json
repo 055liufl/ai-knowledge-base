@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-131",
+  "title": "Offline Preference-Based Trajectory Evaluation",
+  "source_url": "https://arxiv.org/abs/2606.17541",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于偏好的离线轨迹评估方法（Preference-Based Trajectory Evaluation），旨在解决传统智能体系统评估中仅依赖终端成功指标（如任务完成率）导致的信息丢失和统计效率低下问题。传统方法将轨迹简化为二元成功/失败结果，忽略了中间过程的进展信息，导致大量平局（tie）和有效样本量减少，从而削弱了系统间的区分能力。作者通过引入时间偏好（temporal preferences）——即对轨迹进展和返回时间（time-to-return）的偏好比较——来直接对比轨迹，从而保留更多过程信息，提高评估的统计效率和区分度。该方法适用于离线场景，无需在线交互，可广泛应用于机器人、对话系统、游戏AI等需要复杂轨迹评估的领域。论文提供了理论分析和实验验证，展示了该方法在减少平局、提升排序一致性方面的优势。这项研究对于提升智能体系统评估的可靠性和效率具有重要意义，尤其适用于需要精细比较不同算法或策略的研发场景。",
+  "tags": [
+    "Offline Evaluation",
+    "Preference Learning",
+    "Agentic Systems",
+    "Trajectory Comparison"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:29:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统终端成功指标导致大量平局和统计效率低下，基于偏好的轨迹评估通过比较时间偏好（如进展和返回时间）可显著提升区分能力。",
+      "该方法在离线场景下有效，无需在线交互，适用于机器人、对话系统等需要精细评估的领域。",
+      "通过保留轨迹的中间进展信息，减少了有效样本量的浪费，提高了系统排序的一致性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

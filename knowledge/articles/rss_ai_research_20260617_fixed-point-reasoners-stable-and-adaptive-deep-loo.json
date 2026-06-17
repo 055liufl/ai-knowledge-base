@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-059",
+  "title": "Fixed-Point Reasoners: Stable and Adaptive Deep Looped Transformers",
+  "source_url": "https://arxiv.org/abs/2606.18206",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为固定点推理器（Fixed-Point Reasoners）的新型循环架构，旨在解决深度循环Transformer中的信号传播问题。循环架构通过重复使用相同层来模拟深度推理，但深度增加会导致梯度消失或爆炸，影响模型性能。作者通过引入固定点迭代机制，使模型在循环过程中收敛到稳定状态，从而自适应地调整有效深度。该方法结合了循环网络的深度优势与固定点迭代的稳定性，在需要组合推理的任务（如数学推理、逻辑推理）中表现出色。实验表明，该架构在多个基准测试上优于传统深度Transformer和现有循环模型，且训练更稳定。这项研究为设计高效、可扩展的推理模型提供了新思路，尤其适用于需要多步推理的复杂任务。",
+  "tags": [
+    "Transformer",
+    "Looped Architecture",
+    "Fixed-Point Iteration",
+    "Compositional Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:24:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定点迭代机制有效缓解了深度循环架构中的信号传播问题，使模型能自适应调整推理深度。",
+      "该架构在组合推理任务上优于传统深度Transformer，展示了循环结构在逐步推理中的优势。",
+      "训练稳定性显著提升，为设计更深的循环网络提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

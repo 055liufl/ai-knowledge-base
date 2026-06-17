@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260617-045",
+  "title": "ProvenanceGuard: Source-Aware Factuality Verification for MCP-Based LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.18037",
+  "source_platform": "rss_ai_research",
+  "summary": "ProvenanceGuard 是一种针对基于 MCP（模型上下文协议）的 LLM 代理的源感知事实性验证方法。随着 LLM 代理越来越多地使用 MCP 从异构证据源（如搜索、API、数据库、临床记录和处方工具）中获取信息，标准的事实性指标通常只测试答案是否得到汇总证据的支持，而忽略了一种对来源敏感的失败模式：一个声明可能在某个地方得到支持，但被错误地归因于错误的来源。作者将这种现象称为“跨源混淆”。ProvenanceGuard 旨在解决这一问题，通过引入源感知的验证机制，确保 LLM 代理的答案不仅事实正确，而且来源归属准确。这项工作值得关注，因为它直接针对 LLM 代理在多源信息整合中的关键可靠性挑战，特别是在医疗、金融等对来源准确性要求极高的领域。通过提升事实性验证的粒度，ProvenanceGuard 有望显著增强 LLM 代理的可信度和实用性，推动 MCP 生态系统的健康发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Factuality",
+    "MCP",
+    "Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:23:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准事实性指标忽略来源归属错误，即跨源混淆问题，导致答案可能正确但来源错误。",
+      "ProvenanceGuard 提出源感知验证方法，专门检测和纠正跨源混淆，提升 LLM 代理的可靠性。",
+      "该方法适用于 MCP 协议，可扩展至多种异构数据源场景，如搜索、API、数据库和临床记录。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

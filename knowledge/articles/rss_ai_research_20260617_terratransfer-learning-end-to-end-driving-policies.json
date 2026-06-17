@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-106",
+  "title": "TerraTransfer: Learning End-to-End Driving Policies Without Expert Demonstrations",
+  "source_url": "https://arxiv.org/abs/2606.17386",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TerraTransfer的新方法，旨在解决端到端自动驾驶策略训练中的高成本问题。传统方法依赖大量标注的驾驶帧数据进行监督学习，或使用图像级闭环强化学习（RL），后者因每步需要逼真渲染和大型视觉骨干网络的前向传播而计算成本高昂。TerraTransfer通过引入向量化模拟器中的自我对弈（self-play）来生成训练数据，避免了专家演示的依赖，从而显著降低了数据收集和计算开销。该方法首先在低成本的向量化环境中训练策略，然后通过迁移学习将其应用于真实世界的图像输入，实现了高效的策略学习。论文展示了在多个基准测试上的竞争力，表明该方法在减少训练成本的同时保持了高性能。这项研究对于推动自动驾驶技术的实用化和降低成本具有重要意义，尤其适合资源受限的研究和开发场景。",
+  "tags": [
+    "Autonomous Driving",
+    "Reinforcement Learning",
+    "Transfer Learning",
+    "Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:27:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过向量化模拟器中的自我对弈生成训练数据，消除了对昂贵专家演示的依赖。",
+      "采用迁移学习将向量化环境中学习的策略应用于真实图像输入，降低了计算成本。",
+      "在多个自动驾驶基准上取得了有竞争力的性能，验证了方法的有效性和实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

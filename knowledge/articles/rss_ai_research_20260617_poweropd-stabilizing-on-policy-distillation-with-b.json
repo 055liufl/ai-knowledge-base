@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-090",
+  "title": "PowerOPD: Stabilizing On-Policy Distillation with Bounded Power Transformation",
+  "source_url": "https://arxiv.org/abs/2606.17199",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PowerOPD，一种用于大语言模型在线策略蒸馏（OPD）的改进方法。标准 OPD 使用学生模型采样的 token 来估计反向 KL 散度，虽然避免了全词汇计算，但存在样本效率低、生成动态不稳定以及与精确全词汇 OPD 的性能差距等问题。PowerOPD 通过引入有界幂变换来稳定训练过程，该方法对估计的奖励进行非线性变换，限制极端值的影响，从而缓解训练不稳定和样本效率低下的问题。实验表明，PowerOPD 在多个基准测试上显著提升了学生模型的性能，缩小了与全词汇 OPD 的差距，同时保持了计算效率。这项工作对于知识蒸馏和模型压缩领域具有重要价值，因为它提供了一种实用且有效的在线蒸馏方法，有助于在保持性能的同时降低大语言模型的部署成本。",
+  "tags": [
+    "LLM",
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "Stabilization"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:26:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准在线策略蒸馏（OPD）存在样本效率低和训练不稳定等严重问题，导致与全词汇 OPD 存在显著性能差距。",
+      "PowerOPD 通过有界幂变换对奖励进行非线性缩放，有效抑制极端值影响，稳定训练过程。",
+      "该方法在保持计算效率的同时，显著提升了学生模型的性能，缩小了与全词汇 OPD 的差距。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

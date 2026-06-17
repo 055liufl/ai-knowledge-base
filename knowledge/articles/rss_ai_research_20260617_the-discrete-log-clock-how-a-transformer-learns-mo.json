@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-110",
+  "title": "The Discrete-Log Clock: How a Transformer Learns Modular Multiplication",
+  "source_url": "https://arxiv.org/abs/2606.17399",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了小型Transformer在学会模乘运算（modular multiplication）时内部表示的特性。以往研究发现，在模加运算中，学习到的嵌入仅需少量关键频率即可表示，而模乘运算的嵌入却表现出“密集”的傅里叶频谱，似乎需要所有频率。本文指出，这种密集性是由于分析时使用了错误的基（即标准的加法离散傅里叶变换）。作者提出，乘法运算的自然傅里叶变换应是乘法特征变换（multiplicative character transform），而非加法DFT。通过使用正确的变换，模乘运算的嵌入同样可以呈现稀疏的频谱结构。这一发现揭示了Transformer内部表示与运算代数结构之间的深层联系，为理解模型如何学习算术运算提供了新的视角，并可能对可解释性研究和模型设计产生重要影响。论文值得关注，因为它修正了先前对模型内部表示的理解，并展示了选择正确数学工具对于分析神经网络的重要性。",
+  "tags": [
+    "Transformer",
+    "Mechanistic Interpretability",
+    "Modular Arithmetic",
+    "Fourier Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:28:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模乘运算的密集傅里叶频谱是使用错误基（加法DFT）导致的假象。",
+      "乘法特征变换是分析模乘运算嵌入的自然工具，能揭示其稀疏结构。",
+      "该工作强调了选择与任务代数结构匹配的数学分析框架的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

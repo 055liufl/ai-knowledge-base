@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-081",
+  "title": "MODE: Modality-Decomposed Expert-Level Mixed-Precision Quantization for MoE Multimodal LLMs",
+  "source_url": "https://arxiv.org/abs/2606.17118",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 MODE 的量化方法，专门针对混合专家多模态大语言模型（MoE-MLLMs）进行压缩。MoE-MLLMs 虽然性能出色，但 GPU 内存消耗巨大，因此需要有效的压缩技术。现有的专家级混合精度量化方法在应用于 MoE-MLLMs 时，由于在专家重要性估计中忽略了两种偏差而导致性能显著下降：一是跨模态层面，视觉 token 在数值上的主导地位导致专家重要性估计偏向视觉模态；二是专家层面，不同专家对视觉和语言 token 的贡献差异未被充分考虑。MODE 通过模态分解的专家级混合精度量化来解决这些问题，实现了更优的压缩效果。该工作值得关注，因为它针对多模态 MoE 模型这一重要且资源密集型的架构，提出了创新的量化策略，有望在保持模型性能的同时大幅降低部署成本，对推动多模态 AI 的实用化具有重要意义。",
+  "tags": [
+    "Quantization",
+    "MoE",
+    "Multimodal LLM",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:26:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MODE 方法通过模态分解，解决了 MoE-MLLMs 中因视觉 token 数值主导导致的专家重要性估计偏差。",
+      "该方法在专家级混合精度量化中，同时考虑了跨模态和专家层面的偏差，提升了压缩后模型的性能。",
+      "MODE 为资源密集型的 MoE-MLLMs 提供了一种有效的模型压缩方案，有助于降低部署成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

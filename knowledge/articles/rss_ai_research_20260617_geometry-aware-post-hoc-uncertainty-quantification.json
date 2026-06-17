@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-125",
+  "title": "Geometry-Aware Post-Hoc Uncertainty Quantification in Operator Learning",
+  "source_url": "https://arxiv.org/abs/2606.17513",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为REEF-GP（Residual on Embedded Features Gaussian Process）的后处理不确定性量化框架，专门用于神经算子模型。神经算子在偏微分方程（PDE）的快速代理求解中表现出色，但其确定性预测限制了在需要不确定性量化（UQ）的任务中的应用，尤其是在几何变化场景下。现有方法主要关注网络参数的不确定性，而忽略了算子本身学习到的几何感知表示。REEF-GP通过将高斯过程（GP）应用于神经算子嵌入特征的残差上，实现了对几何变化感知的不确定性量化。该方法无需修改原有神经算子架构，是一种轻量级的后处理方案。该工作值得关注，因为它解决了神经算子在实际应用中（如工程模拟、科学计算）的关键短板——缺乏可靠的不确定性估计，特别是在几何形状变化时，这对于高风险决策（如结构设计、气候预测）至关重要。",
+  "tags": [
+    "Neural Operator",
+    "Uncertainty Quantification",
+    "Gaussian Process",
+    "PDE Surrogate"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:29:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "REEF-GP是一种后处理框架，无需修改神经算子架构即可实现不确定性量化，降低了应用门槛。",
+      "该方法通过高斯过程对神经算子嵌入特征的残差建模，有效捕捉了几何变化带来的不确定性。",
+      "该工作填补了神经算子领域在几何感知不确定性量化方面的空白，提升了其在科学计算和工程模拟中的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

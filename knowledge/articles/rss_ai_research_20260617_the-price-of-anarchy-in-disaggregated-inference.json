@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-070",
+  "title": "The Price of Anarchy in Disaggregated Inference",
+  "source_url": "https://arxiv.org/abs/2606.17081",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次对分解推理架构（Disaggregated Inference）进行了正式博弈论分析。分解推理架构将大语言模型推理中的预填充（prefill）和解码（decode）阶段物理分离到不同的GPU池中，这些池作为竞争性“代理”共享固定硬件预算。论文以NVIDIA Dynamo为具体案例，将分解服务建模为三个耦合博弈：预填充池与解码池之间的双人资源博弈、自私缓存博弈等。该研究揭示了这种架构中存在的“无政府代价”（Price of Anarchy），即个体理性决策可能导致整体效率损失。论文通过理论分析和实验验证，提出了缓解无政府代价的机制设计建议。这项工作对于理解分布式推理系统的资源分配、优化推理效率具有重要理论价值和实践指导意义，特别是在大模型推理成本日益受到关注的背景下。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Game Theory",
+    "Disaggregated Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:25:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分解推理架构中预填充和解码池的资源竞争可形式化为博弈论模型，存在无政府代价。",
+      "以NVIDIA Dynamo为案例，揭示了自私缓存博弈等耦合博弈对系统效率的影响。",
+      "论文首次提供了分解推理架构的正式博弈论分析框架，为优化资源分配提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

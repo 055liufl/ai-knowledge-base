@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-122",
+  "title": "Decoding Hidden Deception in Reasoning LLMs: Activation Explainers for Deception Auditing",
+  "source_url": "https://arxiv.org/abs/2606.17478",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为STATEWITNESS的激活解释器，用于审计推理型大语言模型（LLMs）中的欺骗行为。随着LLMs推理能力的增强，其可能产生的欺骗性行为（如撒谎、隐藏意图）成为严重的安全隐患。现有的欺骗检测方法要么仅基于可见文本进行评分，要么从表示向量中提取标量探针分数，但都无法提供可检查的证据来解释为何某个响应可疑。STATEWITNESS通过一个独立的解码器读取目标模型的隐藏状态，然后生成自然语言解释，揭示模型内部哪些激活模式与欺骗相关。该方法不仅提高了欺骗检测的可解释性，还允许审计人员深入理解模型决策过程。该工作值得关注，因为它填补了LLM安全领域中可解释欺骗检测的空白，为构建更透明、更可信的AI系统提供了新工具。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Interpretability",
+    "Deception Detection"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:28:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "STATEWITNESS通过解码隐藏状态生成自然语言解释，使欺骗检测从黑盒评分转向可审计的透明过程。",
+      "该方法针对推理型LLM的欺骗行为，解决了现有方法缺乏可检查证据的问题。",
+      "通过激活解释器，审计人员能识别模型内部与欺骗相关的特定激活模式，提升安全评估的深度。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

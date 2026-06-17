@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260617-095",
+  "title": "Pulling The REINS: Training-Free Safety Alignment of Video Diffusion Models via Representation Steering",
+  "source_url": "https://arxiv.org/abs/2606.17257",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为REINS（REpresentation-space INference-time Safety steering）的训练无关安全对齐方法，旨在解决开放权重视频扩散模型在生成不安全内容（如暴力、虚假信息）时的安全问题。现有防御手段要么需要昂贵的微调且会降低模型通用能力，要么依赖容易被对抗性提示绕过的外部过滤器。REINS通过在推理时对模型的表示空间进行干预，直接引导生成过程远离不安全区域，无需额外训练或修改模型权重。该方法具有零额外训练成本、保持模型原有生成能力、对对抗性提示鲁棒等优点。实验表明，REINS能有效降低不安全内容生成率，同时保持视频质量和多样性。该工作为视频扩散模型的安全部署提供了实用且高效的解决方案，尤其适用于开源模型生态，值得关注。",
+  "tags": [
+    "Video Diffusion",
+    "Safety Alignment",
+    "Inference-time Steering"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:27:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "REINS通过推理时在表示空间进行干预，实现了训练无关的安全对齐，避免了微调带来的能力退化。",
+      "该方法对对抗性提示具有鲁棒性，能有效防止外部过滤器的绕过攻击。",
+      "实验证明REINS在降低不安全内容生成率的同时，保持了视频质量和多样性，具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-050",
+  "title": "Trust the Right Teacher: Quality-Aware Self-Distillation for GUI Grounding",
+  "source_url": "https://arxiv.org/abs/2606.18101",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“质量感知自蒸馏”（Quality-Aware Self-Distillation）的方法，用于改进图形用户界面（GUI）定位任务。GUI定位要求视觉语言模型（VLM）在高分辨率截图中识别微小目标元素并预测精确的屏幕坐标。传统的在线策略自蒸馏（OPSD）虽能提供密集的令牌级教师信号，但直接应用于GUI定位效果不佳，因为其教师信号质量参差不齐。本文通过引入质量感知机制，让模型在自蒸馏过程中选择性地信任更可靠的教师信号，从而提升定位精度。该方法在多个GUI定位基准上取得了显著改进，展示了自蒸馏在坐标敏感任务中的潜力。这项研究值得关注，因为它解决了GUI自动化中的关键瓶颈，并为VLM的细粒度视觉定位提供了新的训练范式，对智能助手、自动化测试等应用具有重要价值。",
+  "tags": [
+    "GUI Grounding",
+    "Self-Distillation",
+    "Vision-Language Model",
+    "Quality-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:23:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统在线策略自蒸馏在GUI定位中效果不佳，因为教师信号质量不均，需要质量感知机制来筛选可靠信号。",
+      "质量感知自蒸馏通过动态评估教师信号质量，显著提升了VLM在GUI定位任务中的坐标预测精度。",
+      "该方法在多个基准上验证了有效性，为自蒸馏在细粒度视觉定位任务中的应用提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

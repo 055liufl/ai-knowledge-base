@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260617-120",
+  "title": "AUTOGATE: Automated Clock Gating via Toggling-Aware LLM-based RTL Rewriting",
+  "source_url": "https://arxiv.org/abs/2606.17461",
+  "source_platform": "rss_ai_research",
+  "summary": "AUTOGATE 是一种基于大型语言模型（LLM）的自动化时钟门控（Clock Gating）技术，旨在通过感知翻转率的RTL重写来降低动态功耗。该技术针对细粒度时钟门控（FGCG）优化流程中存在的两大关键问题：一是无法处理跨越数百万周期的长波形轨迹，二是难以在保持正确性的同时将优化扩展到大型层次化代码库。AUTOGATE 通过引入翻转率感知机制，使LLM能够有效利用波形数据识别可门控的寄存器，并采用层次化重写策略确保代码正确性。实验结果表明，该方法在多个工业级设计上实现了显著的功耗降低，同时保持了功能正确性。这项研究值得关注，因为它将LLM应用于硬件设计自动化这一传统上依赖人工经验的领域，展示了AI在芯片设计中的潜力，尤其对于降低动态功耗这一关键挑战提供了可扩展的解决方案。",
+  "tags": [
+    "LLM",
+    "RTL",
+    "Clock Gating",
+    "EDA",
+    "Hardware Design"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:28:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AUTOGATE 利用LLM的代码理解能力，通过感知翻转率的波形分析自动识别可进行时钟门控的寄存器，解决了传统方法依赖人工经验的问题。",
+      "该技术采用层次化重写策略，能够处理大型RTL代码库，并在优化过程中保持功能正确性，克服了现有LLM方法在规模化和正确性上的局限。",
+      "实验证明，AUTOGATE 在多个工业级设计上实现了显著的动态功耗降低，展示了LLM在硬件设计自动化中的实用价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

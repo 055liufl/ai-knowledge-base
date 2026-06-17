@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-001",
+  "title": "Beyond Parallel Sampling: Diverse Query Initialization for Agentic Search",
+  "source_url": "https://arxiv.org/abs/2606.17209",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了智能体搜索中的测试时扩展策略，重点分析了广度扩展（即并行采样）的局限性。作者发现，标准并行采样方法在智能体搜索中收益递减，其根本原因在于第一轮查询的冗余性：当模型在多个并行轨迹中发出相似的首轮查询时，各线程会检索到重叠的证据，导致后续推理步骤基于相似信息，限制了搜索的多样性。为解决这一问题，论文提出了一种多样查询初始化方法，通过在第一轮生成多样化的查询来打破冗余，从而提升搜索覆盖率和最终性能。这项工作对于理解智能体搜索中的测试时计算分配、优化搜索策略具有重要价值，尤其适用于需要广泛信息检索的复杂推理任务。",
+  "tags": [
+    "Agent",
+    "Search",
+    "Test-Time Scaling",
+    "Diversity"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:20:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准并行采样在智能体搜索中收益递减，原因是首轮查询冗余导致证据重叠。",
+      "多样查询初始化通过生成不同的首轮查询，有效提升搜索覆盖率和性能。",
+      "该工作揭示了测试时扩展中广度策略的关键瓶颈，为优化智能体搜索提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

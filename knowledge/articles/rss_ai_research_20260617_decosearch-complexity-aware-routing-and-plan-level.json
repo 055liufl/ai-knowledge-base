@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-029",
+  "title": "DecoSearch: Complexity-Aware Routing and Plan-Level Repair for Text-to-SQL",
+  "source_url": "https://arxiv.org/abs/2606.17821",
+  "source_platform": "rss_ai_research",
+  "summary": "DecoSearch 是一个针对文本到 SQL 任务的训练无关框架，旨在解决大型语言模型在处理复杂查询时因需要多步骤、数据感知推理而表现不佳的问题。该框架通过路由机制将每个查询引导至适当的推理努力级别，并引入轻量级 Schema Selector 来修剪数据库模式至相关表和列，从而提升 SQL 生成的准确性和效率。DecoSearch 的核心创新在于其复杂度感知路由和计划级修复策略，能够在不依赖额外训练数据的情况下，动态调整推理深度以匹配查询复杂度。该工作对于提升 LLM 在数据库查询领域的实用性和可靠性具有重要意义，尤其适用于需要精确 SQL 生成的场景，如商业智能和数据分析。",
+  "tags": [
+    "Text-to-SQL",
+    "LLM",
+    "Routing",
+    "Schema Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:22:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DecoSearch 通过复杂度感知路由机制，根据查询难度动态分配推理资源，避免了对简单查询的过度计算和对复杂查询的不足推理。",
+      "轻量级 Schema Selector 有效减少了无关模式信息对 LLM 的干扰，提升了 SQL 生成的准确性和效率。",
+      "计划级修复策略允许在生成过程中检测并纠正错误，增强了框架的鲁棒性，无需额外训练数据。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

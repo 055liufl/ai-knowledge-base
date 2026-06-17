@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-139",
+  "title": "Divide, Deliberate, Decide: A Multi-Agent Framework for Fine-Grained Egocentric Action Recognition",
+  "source_url": "https://arxiv.org/abs/2606.17627",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Divide, Deliberate, Decide”（3D）的多智能体框架，用于解决第一人称视频中的细粒度动作识别难题。在细粒度动作识别中，不同动作之间的视觉差异非常微小，单一视觉语言模型（VLM）容易对某些视觉线索产生偏见，导致识别准确率受限。3D框架采用完全本地化、零样本的多智能体协作方式：首先，一个VLM协调器将视频分割成若干片段，并为每个片段生成一个候选标签列表（top-k）；然后，一组异构的VLM智能体作为专家，各自独立地对每个片段进行细致分析（Deliberate）；最后，通过投票或协商机制（Decide）综合各智能体的判断，得出最终的动作标签。该方法无需额外训练数据，完全依赖现有VLM的零样本能力，通过多视角、多模型的集体智慧来克服单一模型的偏见，显著提升了细粒度动作识别的准确性和鲁棒性。该工作为第一人称视频理解提供了一种新颖、高效且实用的解决方案，尤其适用于需要精确区分相似动作的场景，如智能助手、机器人导航和体育分析等。",
+  "tags": [
+    "Multi-Agent",
+    "Egocentric Vision",
+    "Action Recognition",
+    "VLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:30:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过多智能体协作（Divide-Deliberate-Decide）有效克服了单一VLM在细粒度动作识别中的视觉偏见问题。",
+      "框架完全零样本、本地化运行，无需额外训练数据或标注，具有很高的实用性和泛化能力。",
+      "异构VLM智能体集成策略能够从不同视觉角度捕捉微小动作差异，显著提升识别准确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260617-037",
+  "title": "DiagFlowBench: Evaluating How Language Models Handle Off-Procedure Inputs in Grounded Diagnostic Dialogue",
+  "source_url": "https://arxiv.org/abs/2606.17904",
+  "source_platform": "rss_ai_research",
+  "summary": "DiagFlowBench 是一个专门用于评估语言模型在接地诊断对话中处理偏离流程输入能力的基准测试。该基准由 50 个工业级诊断对话场景组成，每个场景都包含操作员提出的、可能偏离标准操作程序的问题。当前的语言模型基准测试大多聚焦于模型遵循指令或回答事实性问题的能力，而忽略了在真实维护操作中，操作员可能提出超出文档范围的问题这一关键动态。DiagFlowBench 填补了这一空白，它要求模型在对话过程中识别出哪些输入是超出范围的，并做出适当回应，从而避免产生幻觉或给出错误指导。该基准的提出对于提升语言模型在工业维护、医疗诊断等高风险领域的实用性和可靠性具有重要意义，因为它直接挑战了模型在接地对话中的鲁棒性和边界感知能力。值得关注的是，该工作强调了从“模型能否正确回答”到“模型能否识别何时不应回答”的范式转变，这对于构建可信赖的 AI 顾问系统至关重要。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Diagnostic Dialogue",
+    "Grounding",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:22:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DiagFlowBench 是首个专门评估语言模型在接地诊断对话中处理偏离流程输入能力的基准，填补了现有基准在动态对话边界感知方面的空白。",
+      "该基准强调模型需要识别并适当回应超出程序文档范围的用户输入，而非仅仅追求回答正确性，这有助于减少幻觉和错误指导。",
+      "通过 50 个工业级场景，DiagFlowBench 为评估模型在维护操作等高风险环境中的鲁棒性和安全性提供了标准化测试平台。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

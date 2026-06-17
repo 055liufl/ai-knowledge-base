@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-061",
+  "title": "Correct When Paired, Wrong When Split: Decoupling and Editing Modality-Specific Neurons in MLLMs",
+  "source_url": "https://arxiv.org/abs/2606.17057",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多模态大语言模型（MLLMs）的知识编辑方法，旨在解决现有编辑范式中的“编辑解耦失败”问题。研究发现，当模型通过多模态输入（文本-图像对）触发时，实体相关知识可以被更新，但若输入被拆分为单一模态（如仅文本或仅图像），模型往往会回退到编辑前的旧事实。作者通过分析模型内部神经元激活模式，识别出与特定模态相关的神经元，并设计了一种解耦编辑策略，允许对文本和图像模态的知识进行独立更新。该方法在多个基准测试上显著提升了编辑的鲁棒性和泛化能力，尤其适用于需要跨模态一致性的场景。这项工作揭示了MLLMs中模态特异性神经元的可编辑性，为构建更可靠的多模态知识系统提供了新思路。",
+  "tags": [
+    "MLLM",
+    "Knowledge Editing",
+    "Multimodal",
+    "Neuron Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:24:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前MLLMs知识编辑存在模态解耦失败问题：多模态输入可更新知识，但单模态输入时知识回退。",
+      "通过识别并解耦模态特异性神经元，可实现文本和图像模态知识的独立编辑。",
+      "该方法显著提升了编辑的跨模态一致性和鲁棒性，为多模态知识管理提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-023",
+  "title": "From Brewing to Resolution: Tracing the Internal Lifecycle of Code Reasoning in LLMs",
+  "source_url": "https://arxiv.org/abs/2606.17648",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了大型语言模型（LLMs）在代码推理任务中的内部生命周期。作者发现，标准准确率指标无法解释为什么LLMs能够处理变量追踪任务，但在语义等价的循环任务上失败。通过分析模型内部表示，他们揭示了代码推理的四个阶段：首先模型在早期层中“酝酿”答案，使得答案在多个层中线性可恢复但尚未自解码；随后模型进入四种解析结果之一：成功解析（Resolved）、过度处理（Overprocessed）、错误解析（Misresolved）或未解析（Unresolved）。理解这一生命周期对于改进LLMs的代码推理能力至关重要，因为它揭示了模型内部处理过程的动态性和多样性，为设计更鲁棒的推理机制提供了理论基础。该研究通过追踪内部表示的变化，提供了对模型行为更细致的理解，超越了传统的准确率评估。",
+  "tags": [
+    "LLM",
+    "Code Reasoning",
+    "Internal Representation",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:21:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLMs在代码推理中经历一个内部生命周期，答案在早期层中酝酿并线性可恢复，但直到后期才自解码。",
+      "模型在解析阶段会分化为四种结果：Resolved、Overprocessed、Misresolved或Unresolved，解释了为什么相似任务表现不同。",
+      "标准准确率指标无法捕捉模型内部处理过程的动态性，需要更细粒度的分析来理解失败模式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

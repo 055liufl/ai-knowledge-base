@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260617-062",
+  "title": "Towards Distributed Inference of LLMs on a P2P Network",
+  "source_url": "https://arxiv.org/abs/2606.17059",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向对等网络（P2P）的分布式LLM推理方案，旨在解决前缀缓存（prefix caching）在集群规模下因缓存分区导致的复用效率低下的问题。传统前缀缓存通过共享KV缓存减少推理延迟，但在多节点环境中，缓存被分散在不同节点上，难以高效复用。作者设计了一种去中心化的、前缀缓存感知的路由机制：每个节点维护本地的基数树（radix tree）记录自身缓存的前缀，并通过周期性反熵（anti-entropy）协议异步刷新对等节点的缓存估计。当请求到达时，节点根据本地和估计的全局缓存信息，将请求路由到最可能命中缓存的节点，从而最大化缓存复用、降低延迟。该工作将分布式系统中的去中心化路由与LLM推理优化结合，为大规模P2P环境下的高效推理提供了新思路，尤其适用于资源受限或去中心化部署场景。其创新点在于利用反熵协议实现轻量级全局缓存感知，避免了中心化元数据管理的瓶颈。",
+  "tags": [
+    "LLM",
+    "Distributed Inference",
+    "Prefix Caching",
+    "P2P"
+  ],
+  "author": null,
+  "published_at": "2026-06-17T12:16:58Z",
+  "collected_at": "2026-06-17T12:24:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出去中心化前缀缓存感知路由，通过反熵协议实现节点间缓存状态异步同步，避免中心化瓶颈。",
+      "利用本地基数树高效管理缓存前缀，结合对等节点估计信息优化请求路由，提升缓存命中率。",
+      "该方案适用于P2P网络，可降低分布式LLM推理延迟，尤其适合去中心化或边缘计算场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
