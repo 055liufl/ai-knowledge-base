@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-071",
+  "title": "What Does the Weight Norm Control in Grokking? Logit-Scale Mediation under Cross-Entropy",
+  "source_url": "https://arxiv.org/abs/2606.18465",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了神经网络中“Grokking”现象（即从记忆到泛化的延迟跳跃）与权重范数之间的关系。作者质疑权重范数是否直接控制Grokking的延迟，并通过实验发现，在交叉熵损失下，固定权重范数并仅调整输出温度（即logit尺度）可以复现权重范数变化引起的Grokking延迟变化。具体地，通过将有效logit尺度匹配回基线，可以恢复约85%的延迟效果（在两个模数上验证）。这表明权重范数实际上是通过影响logit尺度来间接控制Grokking的延迟，而非直接作用。该研究揭示了Grokking机制中一个被忽视的中间变量，为理解神经网络的泛化行为提供了新视角，并可能指导更高效的训练策略。值得关注的是，它挑战了以往将权重范数视为Grokking直接驱动因素的观点，强调了损失函数和输出尺度在泛化动态中的关键作用。",
+  "tags": [
+    "Grokking",
+    "Weight Norm",
+    "Generalization",
+    "Cross-Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:59:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重范数通过影响logit尺度间接控制Grokking延迟，而非直接作用。",
+      "固定权重范数并调整输出温度可复现Grokking延迟变化，匹配logit尺度可恢复约85%的延迟效果。",
+      "该发现挑战了将权重范数视为Grokking直接驱动因素的传统观点。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

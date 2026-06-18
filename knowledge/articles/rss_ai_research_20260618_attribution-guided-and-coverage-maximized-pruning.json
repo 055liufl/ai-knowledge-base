@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-047",
+  "title": "Attribution-Guided and Coverage-Maximized Pruning for Structural MoE Compression",
+  "source_url": "https://arxiv.org/abs/2606.18304",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对混合专家（MoE）模型的结构化压缩方法，名为“归因引导与覆盖最大化剪枝”（Attribution-Guided and Coverage-Maximized Pruning）。MoE模型虽然计算效率高，但部署时仍面临内存占用大和推理开销高的问题。现有压缩方法主要在专家级别操作，如移除整个专家或基于粗粒度重要性分数排序，但专家级决策过于粗糙，无法捕捉细粒度冗余，导致剪枝预算分配不当且压缩效果有限。本文方法通过归因分析（如梯度或激活值）识别每个专家内部的关键参数，并结合覆盖最大化策略确保剪枝后模型仍能保持对输入空间的充分覆盖，从而在保持性能的同时显著减少参数和计算量。实验表明，该方法在多个基准任务上优于现有专家级剪枝方法，实现了更高的压缩比和更低的性能损失。该研究对于降低MoE模型部署成本、推动大规模模型在资源受限场景下的应用具有重要价值。",
+  "tags": [
+    "MoE",
+    "Model Compression",
+    "Pruning",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:57:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出归因引导的细粒度剪枝，超越传统专家级粗粒度重要性评估，能更精准识别冗余参数。",
+      "引入覆盖最大化策略，确保剪枝后模型对输入空间的多样性保持，避免关键知识丢失。",
+      "在多个基准上验证了该方法相比现有专家级剪枝方法在压缩比和性能保持上的优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

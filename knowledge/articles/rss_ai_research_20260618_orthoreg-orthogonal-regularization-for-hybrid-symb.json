@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-144",
+  "title": "OrthoReg: Orthogonal Regularization for Hybrid Symbolic-Neural Dynamical Systems",
+  "source_url": "https://arxiv.org/abs/2606.19145",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 OrthoReg 的正交正则化方法，用于混合符号-神经动力系统。混合建模旨在结合基于物理的符号模型（可解释但可能过于简化）与灵活的神经网络（数据驱动但缺乏物理洞察力）的优势。然而，现有混合方法常面临符号与神经组件之间耦合不稳定的问题，导致模型泛化能力差或物理一致性丢失。OrthoReg 通过对神经网络的权重施加正交约束，强制其学习与符号模型正交的残差动态，从而增强两个组件的解耦性，提升模型的可解释性和鲁棒性。实验在多个经典动力系统（如洛伦兹系统、摆锤系统）上验证了该方法在预测精度、长期稳定性和物理一致性方面优于现有混合模型。这项工作值得关注，因为它为科学机器学习中符号与神经方法的融合提供了一种简洁有效的正则化策略，有望推动物理信息神经网络在工程、气候、生物等领域的实际应用。",
+  "tags": [
+    "Hybrid Modeling",
+    "Dynamical Systems",
+    "Orthogonal Regularization",
+    "Scientific Machine Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:04:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "正交正则化有效分离了符号模型与神经网络的学习空间，减少了组件间的干扰，提升了混合模型的泛化能力。",
+      "该方法在多个基准动力系统上实现了更准确的长期预测，并保持了物理一致性，优于未正则化的混合模型。",
+      "OrthoReg 提供了一种轻量级的正则化手段，无需改变网络架构，易于集成到现有混合建模框架中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

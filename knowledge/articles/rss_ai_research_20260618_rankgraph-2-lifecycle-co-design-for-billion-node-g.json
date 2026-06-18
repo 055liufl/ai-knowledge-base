@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-061",
+  "title": "RankGraph-2: Lifecycle Co-Design for Billion-Node Graph Learning in Recommendation",
+  "source_url": "https://arxiv.org/abs/2606.18379",
+  "source_platform": "rss_ai_research",
+  "summary": "RankGraph-2 是 Meta 提出的一种面向十亿节点规模图学习的生命周期协同设计框架，专门用于推荐系统中的相似性检索（如 U2U2I 和 U2I2I）。传统方法将图构建、表示学习和实时服务三个环节独立处理，导致各阶段优化目标不一致，影响整体性能。RankGraph-2 创新性地将这三个紧密耦合的问题进行联合设计，使得每个阶段的需求能够相互影响和优化。例如，服务阶段对低延迟和高召回率的要求会反向指导图构建时的剪枝策略和表示学习中的嵌入维度选择。该框架已在 Meta 的生产环境中部署，显著提升了大规模图检索的效率和准确性。这项工作的价值在于打破了图学习领域长期存在的“分而治之”思维，为工业级图推荐系统提供了端到端的协同优化方案，尤其适用于需要处理数十亿节点和边的超大规模场景。其核心贡献在于证明了生命周期协同设计相比独立优化能带来数量级的性能提升，并为后续研究提供了可复现的范式。",
+  "tags": [
+    "Graph Learning",
+    "Recommendation System",
+    "Large-Scale",
+    "Lifecycle Co-Design"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:58:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RankGraph-2 首次将图构建、表示学习和实时服务三个生命周期阶段进行协同设计，打破了传统独立优化的局限。",
+      "该框架在 Meta 的十亿节点规模生产环境中部署，证明了协同设计在工业级推荐系统中的实用性和高效性。",
+      "通过服务需求反向指导图构建和表示学习，实现了端到端的性能优化，显著提升了检索的召回率和延迟表现。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

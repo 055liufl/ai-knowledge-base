@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-078",
+  "title": "Sparsity Curse: Understanding RLVR Model Parameter Space from Model Merging",
+  "source_url": "https://arxiv.org/abs/2606.18521",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了基于可验证奖励的强化学习（RLVR）作为一种后训练范式，在激发推理智能和抵抗灾难性遗忘方面优于监督微调（SFT）。研究发现，与SFT相比，RLVR会引发高度稀疏且偏离主成分的参数更新。这自然引出一个问题：这种稀疏性是否使RLVR模型更易于模型合并？论文通过实验和分析，揭示了RLVR模型参数空间的“稀疏性诅咒”，即虽然稀疏性可能促进合并，但参数更新的非主成分特性也带来了挑战。该研究对于理解RLVR模型的内部机制、优化模型合并策略以及提升后训练效率具有重要意义，值得关注。",
+  "tags": [
+    "RLVR",
+    "Model Merging",
+    "Sparsity",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:59:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR相比SFT产生高度稀疏且偏离主成分的参数更新，这影响了模型合并的可行性。",
+      "稀疏性可能使RLVR模型在合并时更易处理，但非主成分更新也带来了新的挑战。",
+      "研究揭示了RLVR模型参数空间的独特性质，为后训练范式的优化提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

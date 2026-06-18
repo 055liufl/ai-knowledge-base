@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-087",
+  "title": "MIDS: Detecting Stealthy Masquerade and Tampering Attacks on CAN Bus via Bidirectional Mamba",
+  "source_url": "https://arxiv.org/abs/2606.18599",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为MIDS的新型入侵检测系统，用于检测针对汽车CAN总线的隐蔽性伪装和篡改攻击。CAN协议是现代车辆中电子控制单元（ECU）的主要通信标准，但由于缺乏加密和认证机制，容易受到多种安全威胁。现有的入侵检测系统主要针对制造型攻击（如通过帧注入实现的DoS、模糊测试、ID欺骗），这些攻击中每ID的到达间隔统计等检测信号易于获取。然而，伪装和篡改攻击更为隐蔽，难以被传统方法检测。MIDS利用双向Mamba架构（一种基于状态空间模型的序列建模方法）来捕获CAN总线消息的时间序列特征，从而有效识别异常行为。该工作值得关注，因为它针对的是汽车网络安全中一个尚未充分解决的挑战——隐蔽性攻击，并且采用了创新的深度学习架构（Mamba），在检测性能上可能优于基于Transformer或LSTM的方法。此外，该研究对于提升智能网联汽车的安全性具有实际应用价值。",
+  "tags": [
+    "CAN Bus",
+    "Intrusion Detection",
+    "Mamba",
+    "Automotive Security",
+    "Time Series"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:00:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MIDS利用双向Mamba架构有效捕获CAN总线消息的时序依赖，提升对隐蔽性伪装和篡改攻击的检测能力。",
+      "该工作填补了现有入侵检测系统主要针对制造型攻击的空白，聚焦于更难以检测的篡改和伪装攻击。",
+      "通过状态空间模型（Mamba）替代传统Transformer或LSTM，在保持高效性的同时可能实现更高的检测准确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

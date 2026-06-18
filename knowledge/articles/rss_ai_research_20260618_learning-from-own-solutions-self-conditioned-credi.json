@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-113",
+  "title": "Learning from Own Solutions: Self-Conditioned Credit Assignment for Reinforcement Learning with Verifiable Rewards",
+  "source_url": "https://arxiv.org/abs/2606.18810",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“自条件化信用分配”（Self-Conditioned Credit Assignment, SCCA）的新方法，用于解决强化学习与可验证奖励（RLVR）在训练大型语言模型（LLM）推理任务时面临的信用分配问题。当前代表性方法如GRPO对所有token分配均匀信用，导致梯度浪费在常规token上，而对关键推理步骤的信用不足。SCCA通过利用模型自身的生成结果（即“自身解决方案”）来动态调整每个token的信用权重，无需额外的过程奖励模型或真实答案标注。该方法在数学推理和代码生成等任务上进行了验证，显著提升了样本效率和最终性能。这项研究值得关注，因为它提供了一种轻量级、自适应的信用分配机制，有望推动LLM在复杂推理任务中的强化学习训练，降低对昂贵外部监督的依赖，并提高训练效率。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Credit Assignment",
+    "RLVR"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:02:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SCCA通过自条件化机制，利用模型自身生成的解决方案动态分配token级信用，避免了GRPO等方法的均匀信用分配缺陷。",
+      "该方法无需过程奖励模型或真实答案，仅依赖模型自身的rollout数据，降低了外部监督成本。",
+      "在数学推理和代码生成任务上，SCCA显著提升了样本效率和最终性能，展示了其在复杂推理场景中的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

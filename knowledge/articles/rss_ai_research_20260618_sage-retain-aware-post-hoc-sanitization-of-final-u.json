@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260618-050",
+  "title": "SAGE: Retain-Aware Post-Hoc Sanitization of Final Unlearning Vector",
+  "source_url": "https://arxiv.org/abs/2606.18309",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SAGE的LLM遗忘后处理方法，旨在解决大语言模型遗忘过程中保留能力受损的问题。当前主流遗忘方法在移除不良知识或行为时，往往不可避免地会损害模型原有的保留能力。作者发现，保留激活偏差（retention activation bias）可以作为一种通用度量，在不考虑具体遗忘实现细节的情况下，量化遗忘方法对保留能力的损害程度。基于这一发现，SAGE通过对最终遗忘向量进行后处理净化，在保持遗忘效果的同时，显著恢复模型的保留能力。该方法具有模型无关、方法无关的特点，可作为一种即插即用的后处理模块，兼容现有的各种遗忘算法。实验表明，SAGE在多个基准测试上有效平衡了遗忘与保留的权衡，为LLM遗忘领域提供了一种实用且高效的优化方案。该工作对于提升LLM的安全性和可控性具有重要意义，尤其是在需要精确控制模型知识边界的应用场景中。",
+  "tags": [
+    "LLM",
+    "Unlearning",
+    "Model Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:57:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出保留激活偏差作为通用度量，可量化遗忘方法对保留能力的损害，无需了解具体遗忘实现。",
+      "SAGE通过对最终遗忘向量进行后处理净化，在保持遗忘效果的同时恢复保留能力，实现遗忘与保留的更好平衡。",
+      "该方法具有模型无关和方法无关特性，可作为即插即用模块兼容现有遗忘算法，实用性强。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

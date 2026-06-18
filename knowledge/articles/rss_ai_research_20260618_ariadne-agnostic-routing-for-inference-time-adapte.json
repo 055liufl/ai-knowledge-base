@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-020",
+  "title": "ARIADNE: Agnostic Routing for Inference-time Adapter DyNamic sElection",
+  "source_url": "https://arxiv.org/abs/2606.19079",
+  "source_platform": "rss_ai_research",
+  "summary": "ARIADNE 是一种用于推理时动态选择适配器的无偏路由方法。随着参数高效微调（PEFT）的广泛应用，单个骨干模型常与多个任务专用适配器配对，形成模型生态系统。然而，推理时的查询通常缺乏任务标签，需要系统自动从不断增长且异构的适配器池中选择最合适的适配器。现有路由方法要么依赖适配器内部结构（如权重），要么需要任务标签或预定义路由策略，限制了其可扩展性和实用性。ARIADNE 通过提出一种与适配器内部无关的、基于查询特征的路由机制，解决了这一挑战。它利用轻量级路由网络，仅根据输入查询的嵌入表示来预测最适配的适配器，无需访问适配器权重或任务标签。该方法在多个基准测试中表现出色，显著提升了推理效率和准确性，尤其适用于动态、异构的适配器生态系统。ARIADNE 的创新在于其无偏性和对适配器内部结构的独立性，使其易于集成到现有系统中，并支持适配器的动态添加和移除。这项工作对于推动 PEFT 在实际应用中的部署具有重要意义，特别是在需要灵活适应多种任务的场景中。",
+  "tags": [
+    "PEFT",
+    "Adapter",
+    "Routing",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:55:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ARIADNE 提出了一种与适配器内部无关的推理时路由方法，仅依赖查询特征进行适配器选择，解决了现有方法对适配器内部结构或任务标签的依赖问题。",
+      "该方法通过轻量级路由网络实现动态适配器选择，支持异构适配器池的扩展和动态更新，显著提升了推理效率和准确性。",
+      "ARIADNE 在多个基准测试中验证了其有效性，展示了在无任务标签场景下自动路由的实用性和可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

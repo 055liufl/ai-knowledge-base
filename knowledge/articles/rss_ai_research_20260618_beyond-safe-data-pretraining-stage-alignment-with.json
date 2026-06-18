@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260618-024",
+  "title": "Beyond Safe Data: Pretraining-Stage Alignment with Regular Safety Reflection",
+  "source_url": "https://arxiv.org/abs/2606.19168",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Safety Reflection Pretraining”的新方法，旨在超越传统预训练阶段仅关注数据安全（如过滤或改写不安全数据）的局限。作者认为，大型语言模型（LLM）可能将看似无害的知识和能力组合成不安全的行为，因此需要在预训练阶段引入更深层次的安全对齐机制。该方法通过让模型在预训练过程中进行安全反思，即主动识别和抑制潜在的不安全组合模式，从而在模型学习基础能力的同时内化安全约束。实验表明，该方法能有效降低模型在推理时产生不安全输出的风险，同时保持甚至提升模型在标准基准上的性能。这项工作值得关注，因为它挑战了当前安全对齐主要依赖后训练阶段（如RLHF）或简单数据过滤的范式，为构建更本质安全的LLM提供了新思路，尤其对预训练阶段的安全设计具有重要启发。",
+  "tags": [
+    "LLM",
+    "Safety Alignment",
+    "Pretraining"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:55:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练阶段的安全对齐不应仅停留在数据层面过滤或改写，而需防范模型将安全知识组合成不安全行为。",
+      "提出Safety Reflection Pretraining方法，让模型在预训练中主动反思并抑制潜在的不安全组合模式。",
+      "该方法在降低不安全输出风险的同时，能保持或提升模型在标准基准上的性能，实现安全与能力的平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

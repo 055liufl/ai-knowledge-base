@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-100",
+  "title": "Dual-Channel Grounded World Modeling (DCGWM): Structural Prevention of Objective Interference Collapse via Heterogeneous External Grounding with Inward-Only Gradient Flow",
+  "source_url": "https://arxiv.org/abs/2606.18688",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为双通道接地世界建模（DCGWM）的新方法，旨在解决联合嵌入预测架构（JEPA）在同时处理物理动态和社会行为动态两种异质外部信号时出现的“目标干扰崩溃”（OIC）问题。OIC是指当模型同时优化来自物理动态（稀疏、高幅度、满足约束的梯度修正）和社会行为动态（扩散、分布匹配的修正）的损失时，两种目标相互干扰，导致表示学习崩溃。DCGWM通过引入异质外部接地和仅向内梯度流的结构性机制来防止这种崩溃：它使用两个独立的通道分别处理物理和社会信号，并确保梯度仅从外部信号流向内部表示，从而避免反向传播中的干扰。该方法在多个世界模型基准测试中表现出色，显著提升了模型在复杂环境中的稳定性和预测准确性。这项工作对于构建更鲁棒的世界模型具有重要意义，尤其是在需要同时理解物理规律和社会交互的机器人、自动驾驶和虚拟环境等领域。其创新性在于从结构上解决了多目标学习中的干扰问题，而非依赖超参数调优或正则化。",
+  "tags": [
+    "World Model",
+    "JEPA",
+    "Multi-Task Learning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:01:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "识别了JEPA世界模型在同时学习物理和社会动态时的目标干扰崩溃（OIC）问题，这是多源接地学习中的一个关键失败模式。",
+      "提出了双通道架构（DCGWM），通过分离物理和社会信号的处理通道并限制梯度流向，从结构上防止了OIC。",
+      "仅向内梯度流的设计避免了反向传播中不同目标之间的梯度冲突，是一种新颖的梯度管理策略。",
+      "实验表明DCGWM在多种复杂环境中显著提升了世界模型的稳定性和预测性能，具有广泛的应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

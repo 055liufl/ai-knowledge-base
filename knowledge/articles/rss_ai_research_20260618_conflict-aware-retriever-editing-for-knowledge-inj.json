@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-051",
+  "title": "Conflict-Aware Retriever Editing for Knowledge Injection Attacks on LLM-Based RAG Systems",
+  "source_url": "https://arxiv.org/abs/2606.18310",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对基于大型语言模型（LLM）的检索增强生成（RAG）系统的新型知识注入攻击方法，称为冲突感知检索器编辑（Conflict-Aware Retriever Editing）。传统攻击主要依赖操纵外部知识库（如构造恶意语料），但这种以数据为中心的方法生成的合成文本可能被检测到，导致攻击失败。该方法通过直接编辑检索器的内部参数或行为，使检索器在遇到特定查询时优先返回恶意内容，从而绕过基于文本内容的检测机制。论文详细阐述了攻击原理、实现步骤，并实验验证了其在多个RAG系统上的有效性，揭示了现有安全防御的盲区。该研究值得关注，因为它首次从检索器层面而非数据层面攻击RAG系统，暴露了更深层的安全漏洞，对AI应用的安全防护具有重要警示意义。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Security",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:57:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统RAG攻击依赖操纵外部知识库，易被检测；本文提出通过编辑检索器内部参数实现更隐蔽的攻击。",
+      "冲突感知检索器编辑方法直接修改检索器的行为，使其在特定查询下优先返回恶意内容，绕过文本检测。",
+      "该研究揭示了RAG系统在检索器层面的安全漏洞，对现有防御机制构成挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

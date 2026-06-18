@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260618-084",
+  "title": "Dual Dimensionality for Local and Global Attention",
+  "source_url": "https://arxiv.org/abs/2606.18587",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对解码器Transformer的新型注意力机制，通过为局部和远距离令牌分配不同的表示维度来优化注意力计算。传统方法中，所有键值对（KV缓存）使用相同的维度，但作者假设局部令牌（紧邻预测目标）对表示能力的要求更高，而远距离令牌则相对较低。基于此，他们设计了一种双维度注意力机制：局部令牌使用高维度表示以捕捉细粒度信息，远距离令牌使用低维度表示以减少计算开销。实验表明，该方法在保持模型性能的同时显著降低了KV缓存的内存占用和计算复杂度，尤其适用于长序列生成任务。该工作挑战了Transformer中均匀维度分配的惯例，为高效注意力机制设计提供了新思路，对长文本生成、实时推理等场景具有潜在价值。",
+  "tags": [
+    "Transformer",
+    "Attention Mechanism",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:00:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部和远距离令牌对表示维度的需求不对称，局部令牌需要更高维度以保留关键信息。",
+      "双维度注意力机制通过差异化维度分配，在保持性能的同时减少KV缓存的内存和计算成本。",
+      "该方法特别适用于长序列生成任务，可提升解码器Transformer的推理效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

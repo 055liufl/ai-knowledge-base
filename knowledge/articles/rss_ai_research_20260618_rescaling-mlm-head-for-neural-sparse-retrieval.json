@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-114",
+  "title": "Rescaling MLM-Head for Neural Sparse Retrieval",
+  "source_url": "https://arxiv.org/abs/2606.18811",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了神经稀疏检索模型中MLM头部缩放问题。传统上，LSR模型如SPLADE使用BERT风格的掩码语言模型作为骨干编码器。直觉上，用更强的预训练编码器替换BERT应能提升检索效果。然而，研究发现，在标准SPLADE训练方案下，具有较大MLM头部L2范数的骨干模型会出现性能下降甚至训练崩溃。该工作揭示了骨干模型MLM头部范数对稀疏检索训练稳定性的关键影响，并提出了一种rescaling策略来缓解此问题。这项研究对于改进神经稀疏检索模型的设计和训练具有重要意义，尤其是在利用更强预训练模型时，为保持训练稳定性和提升检索性能提供了新的视角。",
+  "tags": [
+    "Neural Sparse Retrieval",
+    "SPLADE",
+    "MLM-Head",
+    "Training Stability"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:02:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "更强的预训练编码器在标准SPLADE训练下可能因MLM头部范数过大而导致性能下降或训练崩溃。",
+      "MLM头部L2范数是影响神经稀疏检索模型训练稳定性的关键因素。",
+      "提出rescaling策略可有效缓解MLM头部范数过大带来的训练问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

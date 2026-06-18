@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-052",
+  "title": "Ghost Attractor Networks: Basin-Structured Dynamical Decoders for Closed-Loop Sequential Generation",
+  "source_url": "https://arxiv.org/abs/2606.18315",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“幽灵吸引子网络”（Ghost Attractor Networks）的新型动力学解码器，用于闭环序列生成。传统的Transformer和扩散解码器在生成序列时，内存成本随序列长度线性增长，且需要逐步骤迭代计算，效率低下。而小型前馈解码器虽然效率高，但产生的潜在表示缺乏结构，难以支持闭环控制，例如相位条件动作生成和跨步骤潜在传递，这些都需要具有稳定盆地的潜在几何结构。幽灵吸引子网络通过引入基于吸引子的动力学机制，在潜在空间中构建稳定的盆地结构，从而在保持小型解码器高效性的同时，实现了对序列生成的闭环控制。该方法在多个序列生成任务上展示了优于传统方法的性能，特别是在需要长期依赖和精确相位控制的场景中。这项工作值得关注，因为它为高效、可控的序列生成提供了一种新的范式，有望在机器人控制、时间序列预测和自然语言生成等领域产生重要影响。",
+  "tags": [
+    "Dynamical Systems",
+    "Sequence Generation",
+    "Attractor Networks",
+    "Closed-Loop Control"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:57:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出幽灵吸引子网络，在潜在空间中构建稳定盆地结构，实现高效闭环序列生成。",
+      "解决了小型前馈解码器缺乏结构化潜在表示、难以支持闭环控制的问题。",
+      "在多个序列生成任务上优于传统Transformer和扩散解码器，尤其在长期依赖和相位控制场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

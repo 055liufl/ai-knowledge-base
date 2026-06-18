@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-058",
+  "title": "SafeClawBench: Separating Semantic, Audit-Evidence, and Sandbox Harm in Tool-Using LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.18356",
+  "source_platform": "rss_ai_research",
+  "summary": "SafeClawBench 是一个针对工具使用型语言模型代理（Tool-Using LLM Agents）的安全评估基准。现有评估通常将攻击成功简化为单一指标，无法区分模型是否仅仅同意了攻击者的指令，还是实际产生了可观察的危害。SafeClawBench 提出了一种分阶段的安全评估框架，将危害分为三个层次：语义危害（模型输出有害内容）、审计证据危害（模型留下可被审计的痕迹）和沙箱危害（模型在隔离环境中触发实际破坏性操作）。该基准通过设计多轮交互任务和细粒度指标，系统性地评估代理在调用外部工具（如数据库、文件系统、API）时的安全风险。这项工作填补了现有安全评估在工具使用场景下的空白，为构建更安全的自主代理提供了关键测试工具。其创新性在于将抽象的安全概念转化为可量化的评估维度，并强调了不同危害层次之间的因果关系。对于研究者和开发者而言，SafeClawBench 有助于识别代理安全漏洞的具体环节，从而针对性地改进模型对齐、工具沙箱设计和审计机制。该工作来自学术界，具有较高的实用价值和理论深度。",
+  "tags": [
+    "LLM Agent",
+    "Safety",
+    "Benchmark",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:58:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有评估将攻击成功简化为单一指标，无法区分语义同意与实际可观察危害，SafeClawBench 提出三层次危害分离（语义、审计证据、沙箱）。",
+      "该基准通过多轮工具交互任务和细粒度指标，系统评估代理在调用数据库、文件系统等工具时的安全风险。",
+      "SafeClawBench 有助于识别代理安全漏洞的具体环节，为改进模型对齐、工具沙箱设计和审计机制提供方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

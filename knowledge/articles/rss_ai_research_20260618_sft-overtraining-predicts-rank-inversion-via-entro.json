@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-074",
+  "title": "SFT Overtraining Predicts Rank Inversion via Entropy Collapse Under RLVR",
+  "source_url": "https://arxiv.org/abs/2606.18487",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在强化学习（RLVR）中，使用GRPO算法时，SFT（监督微调）过度训练导致熵崩溃，进而引发排名反转的现象。标准启发式方法（选择pass@1最高的SFT检查点用于GRPO）在SFT压缩了rollout分布时可能失效。对于二元奖励，组内优势方差期望为p(1-p)(g-1)/g；当早期GRPO将p推至低于p*(g)时，大多数组具有相同的奖励，无法提供组相对信号。论文通过Qwen2.5-Coder-3B和DeepSeek-Coder-6.7B模型构建SFT深度阶梯进行实验，揭示了SFT过度训练与GRPO性能之间的关键关系。这一发现挑战了现有实践，为优化RLVR训练流程提供了理论依据，对提升大语言模型在代码生成等任务上的表现具有重要指导意义。",
+  "tags": [
+    "SFT",
+    "RLVR",
+    "GRPO",
+    "Entropy Collapse",
+    "Rank Inversion"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:59:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT过度训练会导致rollout分布压缩，使标准启发式方法（选择最高pass@1检查点）在GRPO中失效。",
+      "对于二元奖励，组内优势方差与p和组大小g相关，当p低于阈值p*(g)时，大多数组奖励相同，无法提供有效信号。",
+      "通过Qwen2.5-Coder-3B和DeepSeek-Coder-6.7B的实验，验证了SFT深度与GRPO性能之间的非单调关系，即排名反转现象。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

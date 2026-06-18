@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-138",
+  "title": "Where Did the Variability Go? From Vibe Coding to Product Lines by Regeneration",
+  "source_url": "https://arxiv.org/abs/2606.19042",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了在“氛围编码”（vibe coding）这一新兴AI驱动编程范式下，代码中可变性（variability）的缺失问题。传统软件工程通过条件编译、配置选项、运行时参数等方式在代码中构建可变性，以支持不同场景和需求。然而，当大型语言模型（LLM）根据自然语言提示直接生成完整程序时，这种可变性几乎完全消失。作者对10个使用氛围编码生成的C/C++项目进行了探索性分析，发现这些项目在编译和运行时阶段几乎不存在任何代码内的可变性。所有可变性决策都在提示阶段被一次性解决，导致生成的程序是静态的、缺乏灵活性的。这一发现揭示了当前AI编程范式的局限性：虽然提高了生成速度，但牺牲了软件的可配置性和适应性。论文呼吁未来研究应关注如何在AI生成代码中引入可变性机制，以平衡效率与软件工程的长期需求。该研究对AI辅助编程工具的设计和软件工程实践具有重要启示。",
+  "tags": [
+    "LLM",
+    "Vibe Coding",
+    "Software Engineering",
+    "Variability"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:04:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI驱动的氛围编码生成的程序在编译和运行时几乎不存在代码内可变性，所有决策在提示阶段被固定。",
+      "传统软件工程中的可变性机制（如条件编译、配置选项）在AI生成代码中完全缺失，导致程序缺乏灵活性和适应性。",
+      "该研究揭示了当前AI编程范式在软件工程长期维护和配置管理方面的潜在缺陷。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

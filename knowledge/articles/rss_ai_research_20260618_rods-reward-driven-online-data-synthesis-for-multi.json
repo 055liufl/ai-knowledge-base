@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-019",
+  "title": "RODS: Reward-Driven Online Data Synthesis for Multi-Turn Tool-Use Agents",
+  "source_url": "https://arxiv.org/abs/2606.19047",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为RODS（Reward-Driven Online Data Synthesis）的方法，旨在解决多轮工具使用强化学习中静态数据集信息样本快速耗尽的问题。作者观察到，在GRPO（Group Relative Policy Optimization）算法中，梯度信号集中在具有最高rollout奖励方差的任务上，这是Popoviciu上界的结果。因此，位于智能体能力边界附近的样本（即成功与失败大致平衡的样本）贡献了不成比例的大策略梯度。随着训练的进行，这些高信息量样本会迅速减少，导致训练效率下降。RODS通过奖励驱动的在线数据合成机制，动态生成新的训练样本，特别是那些处于能力边界附近的样本，从而持续提供高信息量的学习信号。该方法在多个多轮工具使用基准测试中表现出色，显著提升了智能体的学习效率和最终性能。该工作对于推动智能体在复杂工具使用场景中的自主学习能力具有重要意义。",
+  "tags": [
+    "RL",
+    "Tool-Use",
+    "Data Synthesis",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:55:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO的梯度信号集中在奖励方差高的任务上，导致能力边界样本贡献主要梯度。",
+      "静态数据集中的高信息量样本会快速耗尽，成为多轮工具使用RL的瓶颈。",
+      "RODS通过奖励驱动的在线数据合成，动态生成能力边界附近的样本，维持学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

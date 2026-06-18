@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-081",
+  "title": "Correcting Sensor-Induced Distribution Drift with Wasserstein Adversarial Learning",
+  "source_url": "https://arxiv.org/abs/2606.18561",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于Wasserstein生成对抗网络（WGAN）的无监督方法，用于校正由传感器运动或老化引起的分布漂移。传统方法通常需要标注数据或假设漂移形式简单，而本文通过对抗学习推断物理可解释的变换参数，将变化的探测器响应分布映射回标称参考分布。该方法无需配对数据，利用Wasserstein距离度量分布差异，并通过生成器学习仿射变换等参数化映射。实验表明，该方法在模拟和真实传感器数据上均能有效恢复原始分布，提升下游任务（如分类）的稳定性。该工作为传感器退化场景下的数据校正提供了新思路，尤其适用于长期监测或环境变化剧烈的应用。",
+  "tags": [
+    "GAN",
+    "Wasserstein距离",
+    "传感器校正",
+    "分布漂移",
+    "无监督学习"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:59:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用Wasserstein GAN框架实现无监督的传感器分布漂移校正，无需配对数据。",
+      "学习物理可解释的变换参数（如仿射变换），增强了方法的可解释性和泛化能力。",
+      "在模拟和真实传感器数据上验证了有效性，能提升下游分类任务的性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

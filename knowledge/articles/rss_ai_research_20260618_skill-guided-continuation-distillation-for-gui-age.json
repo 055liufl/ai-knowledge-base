@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260618-014",
+  "title": "Skill-Guided Continuation Distillation for GUI Agents",
+  "source_url": "https://arxiv.org/abs/2606.18890",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Skill-Guided Continuation Distillation”的方法，用于提升图形用户界面（GUI）代理的性能。传统的GUI代理训练通常依赖于行为克隆，即从专家轨迹中学习。然而，当当前策略偏离专家策略时，在闭环执行过程中，代理不可避免地会遇到策略诱导的离轨状态，即那些不在专家轨迹中的状态。由于专家轨迹没有为这些未见状态提供演示，这些状态无法获得有效的监督，导致策略无法正确选择动作。为了解决这一问题，论文引入了一种技能引导的连续蒸馏方法，通过将复杂任务分解为可学习的技能，并利用技能知识来指导代理在离轨状态下的决策。该方法通过蒸馏技能模型的知识来增强策略的泛化能力，使其能够处理未见状态。实验结果表明，该方法在多个GUI任务基准上显著提升了代理的性能，尤其是在处理复杂、多步骤任务时表现出更强的鲁棒性和适应性。这项研究对于推动GUI自动化、智能助手和机器人流程自动化等领域具有重要价值，因为它解决了行为克隆在闭环执行中的关键局限性。",
+  "tags": [
+    "GUI Agent",
+    "Behavior Cloning",
+    "Distillation",
+    "Skill Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:54:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出Skill-Guided Continuation Distillation方法，解决GUI代理在闭环执行中因策略偏离专家轨迹而遇到的离轨状态问题。",
+      "通过将任务分解为技能并蒸馏技能知识，增强代理在未见状态下的决策能力，提升泛化性能。",
+      "实验证明该方法在多个GUI任务基准上显著提升代理性能，尤其在复杂多步骤任务中表现更优。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

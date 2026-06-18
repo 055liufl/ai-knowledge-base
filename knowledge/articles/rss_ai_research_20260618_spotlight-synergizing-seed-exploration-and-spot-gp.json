@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260618-135",
+  "title": "Spotlight: Synergizing Seed Exploration and Spot GPUs for DiT RL Post-Training",
+  "source_url": "https://arxiv.org/abs/2606.19004",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Spotlight的新方法，旨在解决扩散变换器（DiT）强化学习后训练成本过高的问题。现有方法中，种子探索通过选择高对比度样本改善训练收敛性，但增加了关键路径的计算量；而现货GPU虽然成本降低69-77%，但由于DiT的rollout几乎同时完成，导致训练期间GPU闲置。Spotlight通过协同种子探索和现货GPU，优化了训练流程，减少了计算瓶颈和资源浪费。该方法在保持模型性能的同时显著降低了训练成本，对于大规模DiT模型的RL后训练具有重要实践意义。",
+  "tags": [
+    "Diffusion Transformers",
+    "Reinforcement Learning",
+    "GPU Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:03:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "种子探索虽能改善训练收敛，但增加了关键路径计算量，成为成本瓶颈。",
+      "现货GPU成本低但利用率不足，因DiT rollout同步完成导致闲置。",
+      "Spotlight通过协同两种策略，优化资源分配，降低训练成本而不牺牲性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-124",
+  "title": "URDF Synthesis from RGB-D Sequences via Differentiable Joint Inference and Energy-Consistent Verification",
+  "source_url": "https://arxiv.org/abs/2606.18861",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 KinemaForge 的新型管道，用于从 RGB-D 序列中合成 URDF（统一机器人描述格式）模型，以构建可模拟的铰接物体数字孪生。该方法通过可微分的联合推理和能量一致性验证，解决了现有技术中两个关键问题：一是部件级几何重建与运动学参数估计的解耦，导致模型不准确；二是恢复的模型常违反能量守恒等基本动态不变量，在物理模拟器中回放时产生漂移。KinemaForge 通过约束驱动的方式，将几何重建与运动学估计紧密结合，并引入能量一致性验证机制，确保生成的 URDF 模型在物理模拟中保持稳定和真实。这项工作对于机器人仿真、虚拟现实和自动化领域具有重要意义，因为它提供了一种更可靠、更精确的方法来从传感器数据中自动生成可模拟的物体模型，从而加速了数字孪生技术的应用。",
+  "tags": [
+    "URDF",
+    "Digital Twin",
+    "Differentiable Inference",
+    "Energy Conservation",
+    "RGB-D"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T12:03:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过可微分的联合推理，将部件级几何重建与运动学参数估计统一在一个框架中，提高了模型准确性。",
+      "引入能量一致性验证机制，确保生成的 URDF 模型在物理模拟器中回放时不会出现漂移，增强了动态稳定性。",
+      "该方法从 RGB-D 序列中自动合成可模拟的铰接物体数字孪生，为机器人仿真和虚拟现实提供了更可靠的模型生成管道。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

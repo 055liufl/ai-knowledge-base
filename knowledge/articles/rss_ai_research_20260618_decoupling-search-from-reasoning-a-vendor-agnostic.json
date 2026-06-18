@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260618-016",
+  "title": "Decoupling Search from Reasoning: A Vendor-Agnostic Grounding Architecture for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.18947",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为解耦搜索接地（Decoupled Search Grounding, DSG）的架构，旨在解决生产级LLM代理在依赖实时搜索时面临的核心问题：原生搜索接地将检索策略、提供商选择、证据注入、成本、延迟和生成行为捆绑在单一模型-提供商边界内，导致接地过程难以检查、调优、重用或移植，并可能引发搜索诱导的冗长（Search-Induced Verbosity），破坏严格的输出契约。DSG通过将搜索与推理解耦，提供了一种与供应商无关的接地架构，使开发者能够独立地选择和优化搜索组件与推理组件，从而提升系统的灵活性、可观测性和可移植性。该工作值得关注，因为它直接针对当前LLM代理在实际部署中的关键瓶颈——搜索与推理的紧耦合问题，提出了一种系统性的解耦方案，有望显著降低代理系统的开发与维护成本，并提高其在不同搜索服务间的可迁移性。",
+  "tags": [
+    "LLM Agent",
+    "Search Grounding",
+    "Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:54:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DSG通过将搜索策略、提供商选择与推理过程解耦，解决了原生搜索接地中难以检查、调优和重用的问题。",
+      "该架构能够有效缓解搜索诱导的冗长问题，从而维护LLM代理的输出契约和生成质量。",
+      "DSG的供应商无关设计使得代理系统可以灵活切换或组合不同的搜索服务，提升了系统的可移植性和成本优化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

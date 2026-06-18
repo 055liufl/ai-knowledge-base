@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260618-002",
+  "title": "CaVe-VLM-CoT: An Interpretable Vision-Language Model Framework",
+  "source_url": "https://arxiv.org/abs/2606.18385",
+  "source_platform": "rss_ai_research",
+  "summary": "CaVe-VLM-CoT 是一个面向视觉语言模型（VLM）的模块化、基于反思的智能体检索增强生成（Agentic-RAG）框架，旨在解决 VLM 中的幻觉问题。现有方法（如链式思维和检索增强）未能强制步骤级别的引用依据，也无法将验证失败路由回检索以进行修正。CaVe-VLM-CoT 通过一个五阶段流程（包括证据检索、链式思维推理、引用依据、验证和反思性修正）来确保推理过程基于视觉证据。该框架的创新之处在于将检索、推理和验证循环集成，使得模型在生成过程中能够主动检查并纠正与图像事实不符的输出，从而显著提升输出的忠实度和可解释性。该工作值得关注，因为它直接针对多模态大模型部署中的关键痛点——幻觉，提供了一种可解释、可验证的解决方案，有望推动 VLM 在医疗、自动驾驶等高风险领域的可靠应用。",
+  "tags": [
+    "VLM",
+    "Agentic-RAG",
+    "Chain-of-Thought",
+    "Hallucination",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-06-18T11:50:54Z",
+  "collected_at": "2026-06-18T11:53:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CaVe-VLM-CoT 通过五阶段流程（检索、推理、引用、验证、反思）强制 VLM 输出基于视觉证据，有效减少幻觉。",
+      "该框架将验证失败反馈至检索环节，形成闭环修正，优于传统单向的链式思维或检索增强方法。",
+      "通过步骤级别的引用依据，CaVe-VLM-CoT 提升了模型输出的可解释性和可信度，对高风险应用场景至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
