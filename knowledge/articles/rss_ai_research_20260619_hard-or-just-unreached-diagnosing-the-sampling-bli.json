@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-123",
+  "title": "Hard or Just Unreached? Diagnosing the Sampling Blind Spot in Math-Reasoning Difficulty Estimation",
+  "source_url": "https://arxiv.org/abs/2606.19636",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了数学推理基准测试中广泛使用的难度估计指标 pass@k 存在一个系统性盲点：在模型最难的问题上，pass@k 会严重低估难度。通过对 GSM8K 和 MATH 数据集上四个开源模型的测试，发现 10.3% 到 22.9% 的题目被 pass@k 错误地标记为“已解决”，但实际上模型从未生成过正确的推理链。作者将这种失败归因于采样过程中的“虚假正确”现象，即模型通过随机猜测或部分匹配偶然得到正确答案，而非真正的推理。为解决这一问题，论文提出了“pass@k 校准”方法，通过引入一个简单的校正因子来修正 pass@k 的偏差，从而更准确地反映模型的真实推理能力。这项工作对于数学推理评估、强化学习奖励设计、数据筛选和课程学习等领域具有重要价值，因为它提供了一个更可靠的难度估计工具，有助于避免因错误标记而导致的训练和评估偏差。",
+  "tags": [
+    "Math Reasoning",
+    "Benchmarking",
+    "Difficulty Estimation",
+    "Sampling Bias"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:19:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "pass@k 在数学推理任务的最难问题上存在系统性低估难度的盲点，导致 10.3%-22.9% 的题目被错误标记为已解决。",
+      "这种盲点源于采样过程中的“虚假正确”现象，即模型通过随机猜测或部分匹配偶然得到正确答案，而非真正推理。",
+      "提出的 pass@k 校准方法通过简单校正因子修正偏差，能更准确地反映模型真实推理能力，对评估和训练有重要改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

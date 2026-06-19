@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-011",
+  "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+  "source_url": "https://arxiv.org/abs/2606.19588",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了大型语言模型（LLM）与形式化求解器（如SAT和SMT求解器）在推理管道中交互时出现的“叙述差距”（Narration Gap）问题。尽管求解器能够提供可靠且可独立验证的答案，但LLM在将自然语言问题转化为逻辑公式或解释求解器输出时，可能引入错误或歧义，从而破坏求解器的可靠性保证。该研究分析了这种差距的成因，包括LLM对逻辑约束的误解、求解器输出与自然语言叙述之间的语义不匹配，以及混合系统中验证链的断裂。通过案例研究和理论分析，作者提出了缓解策略，如改进提示设计、引入中间验证步骤和增强模型对逻辑结构的理解。这项工作对于提升LLM在安全关键领域（如代码验证、形式化验证和自动化推理）中的可靠性具有重要意义，因为它揭示了当前混合系统中一个被忽视的脆弱点，并提供了改进方向。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "SAT/SMT Solvers",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:10:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM与求解器交互时，自然语言到逻辑公式的转换过程是主要脆弱点，可能导致求解器输出的可靠性丧失。",
+      "叙述差距源于LLM对逻辑约束的误解和求解器输出与自然语言解释之间的语义不匹配。",
+      "通过改进提示设计、引入中间验证步骤和增强模型逻辑理解能力，可以有效缓解叙述差距问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

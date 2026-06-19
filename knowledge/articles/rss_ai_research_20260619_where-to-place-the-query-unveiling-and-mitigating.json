@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-080",
+  "title": "Where to Place the Query? Unveiling and Mitigating Positional Bias in In-Context Learning for Diffusion LLMs via Decoding Dynamics",
+  "source_url": "https://arxiv.org/abs/2606.19349",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次系统性地研究了扩散大语言模型（dLLMs）中的上下文学习（ICL）位置偏差问题。与自回归（AR）模型受单向因果掩码限制不同，dLLMs 利用双向注意力机制，理论上允许查询（query）在输入序列中灵活放置。然而，当前实践通常沿用 AR 模型的尾部查询模板（trailing-query templates），这可能导致次优性能。论文通过解码动力学（decoding dynamics）分析，揭示了不同查询位置对 ICL 效果的影响，并提出了一种缓解位置偏差的方法。这项工作填补了 dLLMs 中 ICL 机制研究的空白，为优化这类模型的推理策略提供了理论依据和实践指导，对推动扩散模型在自然语言处理中的应用具有重要意义。",
+  "tags": [
+    "Diffusion LLM",
+    "In-Context Learning",
+    "Positional Bias",
+    "Decoding Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:16:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散大语言模型的双向注意力机制允许查询在输入序列中灵活放置，但现有实践盲目继承自回归模型的尾部查询模板，可能引入位置偏差。",
+      "通过解码动力学分析，可以量化不同查询位置对上下文学习效果的影响，为优化查询放置提供理论依据。",
+      "论文提出了一种缓解位置偏差的方法，有望提升扩散大语言模型在上下文学习任务中的性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

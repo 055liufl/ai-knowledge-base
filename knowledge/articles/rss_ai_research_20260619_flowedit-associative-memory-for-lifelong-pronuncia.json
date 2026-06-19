@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-069",
+  "title": "FlowEdit: Associative Memory for Lifelong Pronunciation Adaptation in Flow-Matching TTS",
+  "source_url": "https://arxiv.org/abs/2606.20518",
+  "source_platform": "rss_ai_research",
+  "summary": "FlowEdit 是一种针对流匹配文本转语音（TTS）系统的终身适应框架，旨在解决部署后对未登录专有名词的发音错误问题。传统方法需要重新训练模型，而 FlowEdit 通过将发音修正作为潜在条件编辑而非权重更新来实现适应。当提供纠正反馈时，FlowEdit 优化一个 token 级别的潜在表示，从而在不修改预训练模型参数的情况下，持续改进发音准确性。该方法在保持零样本生成质量的同时，实现了对特定词汇的终身学习能力，显著提升了 TTS 系统在实际应用中的鲁棒性和可维护性。该研究来自 arXiv 预印本，展示了在流匹配 TTS 中结合联想记忆和条件编辑的创新思路，为语音合成系统的持续优化提供了高效、轻量级的解决方案。值得关注的是，它避免了全模型重训练的高成本，适用于需要快速适应新词汇或个性化发音的场景，如虚拟助手、有声读物制作等。",
+  "tags": [
+    "TTS",
+    "Flow-Matching",
+    "Lifelong Learning",
+    "Pronunciation Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:15:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FlowEdit 通过潜在条件编辑而非权重更新，实现了对冻结流匹配 TTS 模型的终身发音适应，避免了重训练成本。",
+      "该方法针对未登录专有名词的发音错误，利用联想记忆机制持续优化 token 级潜在表示，保持零样本生成质量。",
+      "FlowEdit 为 TTS 系统的实际部署提供了高效、可扩展的解决方案，特别适用于需要快速适应新词汇或个性化发音的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

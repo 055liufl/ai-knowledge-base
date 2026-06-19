@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260619-098",
+  "title": "Execution-bound advisory automation for agentic AI: a reproducible AIBOM-driven CSAF-VEX framework",
+  "source_url": "https://arxiv.org/abs/2606.19390",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于执行边界的安全自动化框架，用于代理型AI系统的漏洞管理。框架将SBOM（软件物料清单）和AIBOM（AI物料清单）工件与确定性环境捕获及结构化运行时遥测绑定，通过声明的工件、观察到的激活条件和强制执行的执行策略计算可利用性。生成的CSAF VEX（通用安全咨询框架漏洞利用交换）公告结合了静态和运行时证据，经过加密签名，并通过确定性重放进行验证。评估使用了约10000个样本。该工作值得关注，因为它首次将AIBOM与运行时执行策略结合，实现了针对AI代理的可重复、可验证的漏洞通报自动化，解决了AI系统安全中静态分析不足和运行时行为难以审计的关键问题。",
+  "tags": [
+    "AIBOM",
+    "SBOM",
+    "CSAF-VEX",
+    "Agent Security",
+    "Runtime Telemetry"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:17:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了将AIBOM与SBOM结合，通过确定性环境捕获和运行时遥测实现漏洞可利用性的自动化计算。",
+      "生成的CSAF VEX公告基于静态和运行时双重证据，并采用加密签名和确定性重放确保可验证性。",
+      "该框架针对代理型AI系统，解决了传统静态安全分析无法覆盖运行时行为变化和AI特有风险的痛点。",
+      "评估使用约10000个样本，展示了框架在大规模环境下的可行性和有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

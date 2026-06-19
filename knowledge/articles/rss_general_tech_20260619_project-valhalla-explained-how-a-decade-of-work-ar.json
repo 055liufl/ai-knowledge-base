@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260619-001",
+  "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+  "source_url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
+  "source_platform": "rss_general_tech",
+  "summary": "Project Valhalla 是 Java 社区的一项重大长期项目，旨在为 Java 虚拟机 (JVM) 引入值类型 (Value Types) 和基本类型泛型 (Primitive Generics)，从而显著提升性能并改善内存布局。经过近十年的研发，其核心成果——值类型（通过 `inline class` 实现）——预计将在 JDK 28 中正式发布。该文章详细解释了 Valhalla 的动机：解决 Java 中对象引用带来的间接性和内存开销问题，使得开发者可以定义轻量级、不可变的值类型，这些类型在内存中连续存储，无需堆分配和引用跟踪，从而大幅减少 GC 压力并提升缓存局部性。文章还介绍了基本类型泛型，允许将 `int`、`double` 等基本类型作为泛型参数，避免自动装箱 (Autoboxing) 的性能损失。这一更新对于高性能计算、大数据处理、游戏开发等对延迟和内存敏感的应用场景至关重要，因为它让 Java 在保持面向对象灵活性的同时，获得了接近 C/C++ 级别的数据布局控制能力。该文章值得关注，因为它标志着 Java 语言和 JVM 在性能优化道路上的一个里程碑，将深",
+  "tags": [
+    "JVM",
+    "Java",
+    "Project Valhalla",
+    "Value Types",
+    "Performance"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:29Z",
+  "collected_at": "2026-06-19T12:08:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Project Valhalla 通过引入值类型（inline class）消除了对象引用的间接性，使数据在内存中连续存储，显著提升缓存局部性和减少 GC 开销。",
+      "基本类型泛型允许将 int、double 等原始类型直接用于泛型，避免了自动装箱的性能损失，对数值密集型应用有重大意义。",
+      "该项目的成果将在 JDK 28 中落地，标志着 Java 在保持面向对象特性的同时，获得了接近底层语言的数据布局控制能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

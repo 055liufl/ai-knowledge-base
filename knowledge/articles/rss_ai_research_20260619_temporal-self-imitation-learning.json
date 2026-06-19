@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260619-139",
+  "title": "Temporal Self-Imitation Learning",
+  "source_url": "https://arxiv.org/abs/2606.19752",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“时间自我模仿学习”（Temporal Self-Imitation Learning, TSIL）的强化学习框架，旨在解决长时域机器人操作策略训练中的效率问题。传统方法使用奖励塑造（reward shaping）训练时，智能体可能通过低效交互利用密集奖励，而罕见的高效行为在训练过程中容易被遗忘。TSIL 的核心思想是将时间效率本身作为一种强大的自监督信号：通过从历史轨迹中挖掘时间上高效的行为（即耗时短、步骤少的成功经验），并利用这些经验进行自我模仿学习，从而引导策略向更高效的方向优化。该方法不需要外部示范或额外奖励设计，仅依赖智能体自身的交互数据。实验表明，TSIL 在多个长时域机器人操作任务上显著提升了样本效率和任务成功率，同时减少了训练中的行为退化问题。这项工作为强化学习中的效率优化提供了新视角，尤其适用于奖励稀疏或奖励设计困难的实际机器人场景。",
+  "tags": [
+    "Reinforcement Learning",
+    "Imitation Learning",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:21:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "时间效率可作为自监督信号，通过挖掘历史轨迹中的高效行为来引导策略优化，无需外部示范。",
+      "TSIL 有效缓解了长时域任务中高效行为被遗忘的问题，提升了样本效率和任务成功率。",
+      "该方法适用于奖励稀疏或奖励设计困难的机器人操作场景，具有较好的实用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

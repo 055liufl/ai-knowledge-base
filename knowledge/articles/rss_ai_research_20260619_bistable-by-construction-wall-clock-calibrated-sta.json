@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-096",
+  "title": "Bistable by Construction: Wall-Clock-Calibrated State Monitors Have No Moment-Detection Regime at Agent Cadence",
+  "source_url": "https://arxiv.org/abs/2606.19386",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新型的运行时监控器设计方法，用于自主智能体系统。传统监控器通常基于累积内部状态（如行为基线、漂移统计或情感状态）进行阈值触发，但这种方法存在“状态饱和陷阱”：在连续情感引擎上，基于状态的阈值触发器会导致SWE-bench调试智能体产生近乎持续的警报。作者通过审计发现，引擎在动作之间接收到的dt=0，导致指数衰减无法正常进行，从而引发误报。为解决这一问题，论文提出了一种“构造性双稳态”监控器，该监控器通过校准壁钟时间而非事件时间，避免了在智能体节奏下的瞬间检测问题。这种方法确保了监控器在智能体动作间隙不会错误触发，从而提高了监控的准确性和可靠性。该研究对于提升自主智能体系统的安全性和稳定性具有重要意义，特别是在需要精确行为监控的应用场景中。",
+  "tags": [
+    "Runtime Monitor",
+    "Autonomous Agent",
+    "State Saturation",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:17:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基于状态的阈值监控器在连续情感引擎中存在状态饱和陷阱，导致误报频发。",
+      "通过校准壁钟时间而非事件时间，可以构造双稳态监控器，避免在智能体节奏下的瞬间检测问题。",
+      "该方法显著提高了自主智能体系统监控的准确性和可靠性，适用于需要精确行为监控的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260619-058",
+  "title": "Navigating Unreliable Parametric and Contextual Knowledge: Explicit Knowledge Conflict Resolution for LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.20245",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型（LLM）推理过程中参数化知识与上下文知识冲突的显式冲突消解方法。LLM 在利用内部参数化知识和外部上下文信息时，常面临两者不一致甚至矛盾的情况，例如模型内部记忆与输入提示中的事实冲突，或上下文内多个信息源之间的冲突。现有方法多依赖隐式融合或简单优先级规则，缺乏对冲突类型的显式建模与针对性处理。该研究首先系统分类了知识冲突的类型，包括参数-上下文冲突和上下文内冲突，并分析了不同冲突对模型输出的影响。在此基础上，提出了一种显式冲突消解框架，通过检测冲突、识别冲突类型并应用相应的消解策略（如基于置信度选择、证据整合或模型重训练），从而提升 LLM 在复杂推理任务中的鲁棒性和准确性。实验在多个基准数据集上验证了该方法在减少错误输出、提高事实一致性方面的有效性。该工作对于提升 LLM 在开放域问答、知识密集型任务等场景下的可靠性具有重要意义，尤其适用于需要结合外部知识源的现实应用。",
+  "tags": [
+    "LLM",
+    "Knowledge Conflict",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:14:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统分类了 LLM 推理中的知识冲突类型，包括参数-上下文冲突和上下文内冲突，为后续研究提供了理论基础。",
+      "提出显式冲突消解框架，通过检测冲突类型并应用针对性策略，显著提升了模型在冲突场景下的事实一致性。",
+      "实验表明，显式处理知识冲突比隐式融合方法更有效，尤其在多源信息不一致时能减少错误输出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

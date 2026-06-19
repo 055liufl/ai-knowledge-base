@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260619-026",
+  "title": "Beyond Entropy: Learning from Token-Level Distributional Deviations for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.19771",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的强化学习方法，用于解决大型语言模型（LLM）在推理任务中遇到的优化不稳定性问题。传统的基于可验证奖励的强化学习（RLVR）在更新模型参数时，对所有token进行均匀更新，这会导致熵崩溃（entropy collapse），即模型过早收敛到次优策略。相反，过度最大化香农熵又可能引发熵爆炸（entropy explosion），导致模型进行盲目探索，产生不连贯的推理链。为了克服这一困境，作者提出从token级别的分布偏差中学习，通过更精细地控制每个token的更新幅度，在保持探索能力的同时避免策略过早固化。该方法通过分析token级别的分布变化，动态调整更新策略，从而在推理任务中实现更稳定和高效的优化。这项研究对于提升LLM在复杂推理任务中的表现具有重要意义，尤其是在需要多步推理和逻辑一致性的场景中。它提供了一种新的视角来理解强化学习中的探索-利用平衡问题，并可能推动LLM在数学、编程和科学推理等领域的应用。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:11:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR中的均匀token更新会导致熵崩溃，使模型过早收敛到次优策略。",
+      "过度最大化香农熵会导致熵爆炸，引发盲目探索和不连贯推理。",
+      "从token级别分布偏差中学习可以动态调整更新策略，平衡探索与利用。",
+      "该方法有望提升LLM在复杂推理任务中的稳定性和性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

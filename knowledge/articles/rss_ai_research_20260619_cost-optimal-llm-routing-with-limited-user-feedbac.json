@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-091",
+  "title": "Cost-Optimal LLM Routing with Limited User Feedback under User Satisfaction Guarantees",
+  "source_url": "https://arxiv.org/abs/2606.19376",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在用户满意度保证下，利用有限用户反馈实现成本最优的大语言模型（LLM）路由方法。随着LLM应用推理成本因需求激增和基础设施成本上升而快速增长，用户期望高质量响应，这在商业环境中通过服务等级协议（SLA）正式规定，从而在成本与质量之间形成根本性张力。近期关于成本感知的LLM请求路由研究显示出解决这一张力的潜力，但现有方法依赖于大量用户反馈或无法提供严格的质量保证。本文通过设计一种结合有限反馈和统计保证的在线学习算法，在满足SLA约束的同时最小化推理成本。该方法利用多臂老虎机框架，动态选择最经济的模型或API端点，并引入置信区间来确保用户满意度。实验表明，该方法在多种LLM任务上显著降低推理成本（最高达40%），同时保持与最优模型相当的用户满意度。该研究对于降低LLM部署成本、提升商业应用的经济可行性具有重要意义，尤其适合需要平衡成本与服务质量的生产环境。",
+  "tags": [
+    "LLM",
+    "Routing",
+    "Cost Optimization",
+    "SLA"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:17:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种在用户满意度SLA保证下，利用有限反馈进行成本最优LLM路由的在线学习算法，解决了现有方法依赖大量反馈或缺乏严格保证的问题。",
+      "采用多臂老虎机框架结合置信区间，动态选择最经济的模型或API端点，在多种LLM任务上实现最高40%的推理成本降低，同时保持用户满意度。",
+      "该方法为商业LLM部署提供了理论保障和实用工具，有助于缓解成本与质量之间的根本张力，推动LLM应用的经济可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

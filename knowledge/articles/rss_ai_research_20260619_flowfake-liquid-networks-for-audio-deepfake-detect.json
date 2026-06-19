@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-110",
+  "title": "FlowFake: Liquid Networks for Audio Deepfake Detection",
+  "source_url": "https://arxiv.org/abs/2606.19579",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 FlowFake 的新型音频深度伪造检测框架，旨在解决现有检测器在跨数据集泛化上的严重失败问题。核心洞察是：合成语音中的结构性伪影本质上是多时间尺度的轨迹异常，而现有检测器使用固定时间尺度的聚合窗口，无法同时捕捉短时和长时异常。FlowFake 基于液体网络（Liquid Networks）设计，其时间常数可动态调整，从而自适应地匹配不同时间尺度的异常特征。实验表明，FlowFake 在多个跨数据集场景下显著优于现有方法，尤其对未见过的伪造类型具有更强的鲁棒性。该工作值得关注，因为它不仅提出了一个高性能的检测框架，还从理论层面揭示了现有方法泛化失败的根本原因，为音频深度伪造检测领域提供了新的研究方向和实用工具。",
+  "tags": [
+    "Audio Deepfake Detection",
+    "Liquid Networks",
+    "Generalization",
+    "Synthetic Speech"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:18:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有音频深度伪造检测器泛化失败的主要原因是固定时间尺度聚合窗口无法同时捕捉短时和长时轨迹异常。",
+      "FlowFake 利用液体网络动态调整时间常数，自适应匹配多时间尺度异常特征，显著提升跨数据集泛化能力。",
+      "该方法在多个未见过的伪造类型上表现鲁棒，为音频深度伪造检测提供了新的理论视角和实用框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

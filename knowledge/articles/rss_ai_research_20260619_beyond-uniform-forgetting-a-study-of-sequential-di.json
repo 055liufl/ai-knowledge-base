@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-137",
+  "title": "Beyond Uniform Forgetting: A Study of Sequential Direct Preference Optimization Across Preference Settings",
+  "source_url": "https://arxiv.org/abs/2606.19744",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在语言模型对齐过程中，使用直接偏好优化（DPO）方法顺序优化多个行为目标时，后续训练对先前学习偏好的影响。研究发现，后续训练并非均匀地遗忘先前学到的偏好，而是取决于目标之间的关系。论文通过实验分析了不同偏好设置（如一致性、冲突性）下的遗忘模式，揭示了顺序DPO中非均匀遗忘的现象，并提出了缓解遗忘的策略。这项工作对于理解多目标对齐中的灾难性遗忘问题具有重要意义，为设计更鲁棒的偏好优化流程提供了理论指导。",
+  "tags": [
+    "LLM",
+    "DPO",
+    "Alignment",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:21:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "顺序DPO中后续训练对先前偏好的遗忘并非均匀，而是取决于目标之间的语义关系。",
+      "冲突性偏好目标会导致更严重的遗忘，而一致性目标则有助于保持先前学到的偏好。",
+      "通过调整训练顺序或引入正则化策略，可以缓解顺序DPO中的非均匀遗忘问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

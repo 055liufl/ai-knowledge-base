@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-121",
+  "title": "CTS-MoE: Implicit Terrain Adaptation via Mixture-of-Experts for Perceptive Locomotion",
+  "source_url": "https://arxiv.org/abs/2606.19633",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于混合专家模型（MoE）的隐式地形自适应方法（CTS-MoE），用于解决四足机器人在不连续地形（如楼梯、间隙和障碍物）上的感知运动问题。传统方法采用单一保守步态无法应对突发的拓扑变化，而该研究将问题建模为多任务强化学习，通过MoE架构在共享与分离之间取得平衡：不同专家模块处理不同地形特征，门控网络隐式学习地形条件并动态组合专家输出。实验表明，该方法在模拟和真实机器人上均能实现比基线更优的跨地形泛化能力，且无需显式地形分类。该工作结合了强化学习、混合专家模型和机器人运动控制，为复杂环境下的自适应运动提供了新思路。",
+  "tags": [
+    "MoE",
+    "Legged Locomotion",
+    "Reinforcement Learning",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:19:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过混合专家模型隐式学习地形特征，避免了显式地形分类的依赖，提升了泛化性",
+      "多任务强化学习框架在共享运动基座与任务特定奖励之间实现了有效平衡",
+      "在模拟和真实机器人上验证了跨不连续地形的自适应步态生成能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

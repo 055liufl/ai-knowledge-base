@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260619-012",
+  "title": "Configurable Clinical Information Extraction with Agentic RAG: What Works, What Breaks, and Why",
+  "source_url": "https://arxiv.org/abs/2606.19602",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了在临床信息提取中应用智能体检索增强生成（Agentic RAG）的可行性与挑战。研究指出，患者病历通常包含数百份异构文档和数千个结构化数据点，但AI系统所需的文档级元数据往往缺失或不完整。标准RAG方法在处理此类数据时表现不佳，尤其是在时间推理、跨文档依赖和缺失元数据方面。为此，研究团队在埃森大学医学中心部署了ACIE（智能体临床信息提取）系统，这是一个本地化的智能体框架，旨在通过自主决策和工具调用优化临床信息的检索与提取。论文详细分析了哪些配置有效、哪些会失效及其原因，为医疗AI领域的实际应用提供了重要参考。该工作结合了智能体、RAG和临床信息提取，具有显著的实用价值和创新性。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Clinical Information Extraction",
+    "Healthcare AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-19T12:06:31Z",
+  "collected_at": "2026-06-19T12:10:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准RAG在临床信息提取中因无法处理时间推理和跨文档依赖而失效，智能体架构通过自主决策和工具调用可有效弥补这些缺陷。",
+      "ACIE系统在真实医疗环境中部署，验证了智能体RAG在缺失元数据场景下的鲁棒性，但配置细节（如检索策略、推理步骤）直接影响性能。",
+      "临床信息提取的成功依赖于智能体对异构数据源的动态适应能力，而非简单的检索-生成流水线。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}
