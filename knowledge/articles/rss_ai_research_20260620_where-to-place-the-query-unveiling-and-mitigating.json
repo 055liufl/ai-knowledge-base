@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-080",
+  "title": "Where to Place the Query? Unveiling and Mitigating Positional Bias in In-Context Learning for Diffusion LLMs via Decoding Dynamics",
+  "source_url": "https://arxiv.org/abs/2606.19349",
+  "source_platform": "rss_ai_research",
+  "summary": "本文首次系统性地研究了扩散大语言模型（dLLMs）中上下文学习（ICL）的位置偏差问题。与自回归（AR）模型受单向因果掩码限制不同，dLLMs 利用双向注意力机制，理论上允许查询（query）在输入序列中灵活放置。然而，当前实践通常沿用 AR 模型将查询置于序列末尾的模板，这可能导致次优性能。论文通过实验揭示了 dLLMs 中查询位置对 ICL 效果的显著影响，并提出了一种基于解码动态的优化方法，以缓解位置偏差并提升模型性能。该研究填补了 dLLMs 在 ICL 机制理解上的空白，为更高效地利用扩散模型的双向注意力特性提供了新思路，对推动扩散语言模型的应用具有重要价值。",
+  "tags": [
+    "Diffusion LLM",
+    "In-Context Learning",
+    "Positional Bias",
+    "Decoding Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:41:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型的双向注意力机制为查询放置提供了空间灵活性，但传统 AR 风格的末尾查询模板可能引入位置偏差，影响 ICL 效果。",
+      "通过分析解码动态，可以揭示并缓解查询位置对 ICL 性能的影响，从而优化模型表现。",
+      "该研究为理解扩散模型中的上下文学习机制提供了新视角，并提出了实用的优化策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-013",
+  "title": "Which Pairs to Compare for LLM Post-Training?",
+  "source_url": "https://arxiv.org/abs/2606.19607",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在语言模型后训练阶段，如何高效选择比较对以优化偏好对齐过程。传统方法为每个提示生成少量完成结果并标注所有比较对，但人工标注成本高昂。作者提出一种新策略：生成更多完成结果，但仅标注其中信息量最大的比较对，从而在相同标注预算下提升模型对齐效果。该研究通过理论分析和实验验证，证明了选择性标注策略的有效性，为降低后训练成本、提升数据利用效率提供了新思路。值得关注的是，该方法直接回应了当前LLM对齐中标注成本高、数据效率低的痛点，具有显著实用价值。",
+  "tags": [
+    "LLM",
+    "Post-Training",
+    "Preference Optimization",
+    "Data Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:36:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出在相同标注预算下，通过生成更多完成结果并仅标注信息量最大的比较对，可提升偏好对齐效率。",
+      "理论分析表明，选择性标注策略能更有效地利用有限的人工标注资源，减少冗余比较。",
+      "实验验证了该方法在多个基准测试上优于传统全标注策略，尤其在高标注成本场景下优势明显。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

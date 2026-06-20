@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-114",
+  "title": "FAPO: Fully Autonomous Prompt Optimization of Multi-Step LLM Pipelines",
+  "source_url": "https://arxiv.org/abs/2606.19605",
+  "source_platform": "rss_ai_research",
+  "summary": "FAPO（全自主提示优化）是一个针对多步骤LLM流水线的自动化优化框架。传统提示优化方法仅关注单个提示，而忽略了检索、推理和格式化步骤之间的交互失败。FAPO通过让Claude Code在标准化代码库中自主评估流水线、检查中间步骤、诊断失败原因、提出针对性修改并反复验证变体，实现了端到端的自动化优化。该框架解决了多步骤LLM应用中因步骤间依赖导致的瓶颈问题，显著提升了流水线的鲁棒性和性能。FAPO的价值在于它提供了一种无需人工干预即可系统优化复杂LLM工作流的方法，尤其适用于需要多步推理和工具调用的实际应用场景，如问答系统、代码生成和数据分析。其创新性在于将优化从单提示扩展到整个流水线，并通过自主迭代减少了对专家经验的依赖。",
+  "tags": [
+    "LLM",
+    "Prompt Optimization",
+    "Multi-Step Pipeline",
+    "Automation"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:44:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步骤LLM流水线的失败常源于步骤间交互，而非单一提示，FAPO通过全流程诊断解决了这一盲点。",
+      "FAPO利用Claude Code实现自主优化，无需人工干预即可迭代改进流水线性能。",
+      "该框架在标准化代码库中运行，便于集成到现有开发流程中，提升实用性和可复现性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

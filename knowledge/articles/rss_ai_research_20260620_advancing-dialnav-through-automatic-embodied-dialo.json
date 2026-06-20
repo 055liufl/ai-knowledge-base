@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-039",
+  "title": "Advancing DialNav through Automatic Embodied Dialog Augmentation",
+  "source_url": "https://arxiv.org/abs/2606.19948",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自动生成对话数据的方法，用于增强DialNav框架中具身智能体的对话理解与导航能力。DialNav原本是一个用于评估室内导航中对话-执行循环的框架，但其训练数据仅有2000个episode，严重限制了性能。作者设计了一个自动生成流水线，能够从现有导航数据中合成对话指令与交互，从而大幅扩展训练集。该方法通过模拟用户与智能体之间的自然语言交互，生成多样化的导航任务，并利用预训练语言模型进行质量筛选。实验表明，使用自动生成的数据训练后，智能体在DialNav基准上的成功率提升了显著，且生成的对话更符合真实场景。这项工作解决了具身智能中数据稀缺的关键问题，为对话式导航的实用化提供了低成本、可扩展的解决方案。",
+  "tags": [
+    "Embodied Agent",
+    "Dialogue Generation",
+    "Navigation",
+    "Data Augmentation"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:38:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自动生成对话数据可有效缓解具身导航中训练数据稀缺的问题，将DialNav的episode数量从2K大幅扩展。",
+      "利用预训练语言模型进行质量筛选，确保合成对话的合理性与多样性，提升智能体在真实场景中的表现。",
+      "该方法无需人工标注，具有高度可扩展性，可推广至其他具身交互任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

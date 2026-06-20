@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-011",
+  "title": "Analyzing the Narration Gap in LLM-Solver Loops",
+  "source_url": "https://arxiv.org/abs/2606.19588",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在大语言模型（LLM）与形式化求解器（如SAT、SMT求解器）交互过程中出现的“叙述间隙”（Narration Gap）问题。当安全或安全关键问题可以用逻辑公式表达时，求解器被嵌入到LLM推理流程中，以提供可靠且可独立验证的答案，这与链式思维（Chain of Thought）不同，后者仅从模型分布中采样，缺乏形式化保证。然而，求解器与模型之间的交互可能导致这种可靠性丧失。论文分析了这一间隙的成因，包括模型对求解器输出的误解、求解器对自然语言输入的不精确转换，以及两者在语义表示上的不一致。作者提出了缓解策略，如改进接口设计、增强模型对逻辑输出的理解能力，以及引入中间验证步骤。该研究对于提升混合推理系统的可靠性和安全性具有重要意义，尤其是在需要严格保证的领域（如自动驾驶、网络安全）。",
+  "tags": [
+    "LLM",
+    "Solver",
+    "Formal Verification",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:36:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM与形式化求解器的混合推理系统存在“叙述间隙”，导致求解器的可靠性在交互中丢失。",
+      "该间隙源于模型对求解器输出的误解、输入转换不精确及语义表示不一致。",
+      "通过改进接口设计、增强模型逻辑理解能力和引入中间验证步骤可缓解此问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

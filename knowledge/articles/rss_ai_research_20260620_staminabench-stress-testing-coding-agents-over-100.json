@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-116",
+  "title": "StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns",
+  "source_url": "https://arxiv.org/abs/2606.19613",
+  "source_platform": "rss_ai_research",
+  "summary": "StaminaBench 是一个用于评估编码代理（coding agents）在连续交互轮次中表现的新型基准测试。与传统的任务解决率指标不同，StaminaBench 专注于衡量代理在长时间会话中的“耐力”，即它们能够成功处理多少个连续的变更请求（interaction turns）。该基准测试模拟了真实的“氛围编码”（vibe-coding）场景，其中会话可能包含数十甚至数百轮交互。在 StaminaBench 中，代理需要实现一个 REST API 服务器，并在一系列程序生成的后续变更请求中对其进行修改。这一基准测试填补了现有评估方法的空白，因为当前大多数基准测试只关注单次或少量交互，而忽略了实际开发中常见的长时间、多轮迭代。StaminaBench 的提出对于提升编码代理在复杂、持续交互环境中的鲁棒性和实用性具有重要意义，值得关注因为它直接反映了代理在真实工作流中的表现，并可能推动更可靠的 AI 辅助编程工具的发展。",
+  "tags": [
+    "Benchmark",
+    "Coding Agent",
+    "LLM",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:44:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "StaminaBench 引入了一种新的评估维度——交互轮次耐力，弥补了传统单次任务解决率指标的不足。",
+      "该基准测试通过程序生成的连续变更请求，模拟了真实开发中长时间、多轮迭代的编码场景。",
+      "StaminaBench 的评估结果可能直接影响编码代理在实际应用中的可靠性和用户满意度。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

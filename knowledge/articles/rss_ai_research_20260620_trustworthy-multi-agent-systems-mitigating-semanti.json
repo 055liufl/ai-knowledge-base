@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-083",
+  "title": "Trustworthy Multi-Agent Systems: Mitigating Semantic Drift with the Argent Signaling Protocol",
+  "source_url": "https://arxiv.org/abs/2606.19356",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Argent Signaling Protocol的新型协议，旨在解决多智能体LLM系统中的语义漂移问题。在多智能体系统中，当系统产生错误答案时，失败类型并不相同：有些答案基于正确材料但不完整，而另一些则完全无根据，应当停止。当前的重新尝试策略对这两种情况一视同仁（再次尝试并希望最好），导致人类监督者无法判断重新尝试是否合理，或者系统是否应该停止。Argent Signaling Protocol通过引入信号机制，使智能体能够区分不同类型的失败，并据此决定是重新尝试还是停止，从而提高了系统的可信度和可解释性。该协议为构建更可靠、更透明的多智能体系统提供了新的思路，对于提升AI系统的安全性和用户信任具有重要意义。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Semantic Drift",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:41:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体LLM系统中的失败类型不同，需要区分对待，而非统一重新尝试。",
+      "Argent Signaling Protocol通过信号机制区分基于正确材料但不完整的失败与完全无根据的失败。",
+      "该协议提高了系统的可解释性和人类监督的有效性，有助于构建更可信的多智能体系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

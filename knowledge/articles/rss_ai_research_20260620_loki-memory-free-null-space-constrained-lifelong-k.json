@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260620-127",
+  "title": "LOKI: Memory-Free Null-Space Constrained Lifelong Knowledge Editing",
+  "source_url": "https://arxiv.org/abs/2606.19679",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为LOKI（Memory-Free Null-Space Constrained Lifelong Knowledge Editing）的新方法，用于解决大型语言模型在持续知识编辑中面临的灾难性遗忘和灵活性不足问题。传统方法对所有新知识样本修改固定层集合，导致模型在处理多样化的新知识时缺乏适应性，且容易遗忘旧知识。LOKI通过引入零空间约束（null-space constraint），在不依赖记忆重放或额外存储旧知识的情况下，动态选择每层中与已有知识正交的参数子空间进行更新，从而在编辑新知识时保持对旧知识的性能。该方法无需维护记忆缓冲区，显著降低了存储开销，并在多个基准数据集（如CounterFact、zsRE）上展示了优于现有方法（如MEND、KE、ROME）的编辑准确率和知识保留率。论文还通过消融实验验证了零空间约束的有效性，并分析了不同层对知识编辑的贡献差异。这项工作为持续学习中的知识编辑提供了新的理论框架，尤其适用于需要频繁更新知识但存储资源受限的场景。",
+  "tags": [
+    "LLM",
+    "Knowledge Editing",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:45:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出零空间约束机制，无需记忆缓冲即可实现持续知识编辑，解决了灾难性遗忘问题",
+      "动态选择参数子空间进行更新，提高了对不同新知识样本的适应性",
+      "在多个基准上验证了方法在编辑准确率和知识保留方面的优越性，且存储开销低"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

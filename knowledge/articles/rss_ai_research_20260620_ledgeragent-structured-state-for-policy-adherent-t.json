@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260620-071",
+  "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents",
+  "source_url": "https://arxiv.org/abs/2606.20529",
+  "source_platform": "rss_ai_research",
+  "summary": "LedgerAgent 提出了一种结构化状态管理方法，用于增强工具调用代理在客户服务领域中的策略遵循能力。传统代理将任务状态（如相关事实、标识符、约束和条件）隐式地嵌入到提示中，导致代理需要从大量上下文信息中重构状态，容易出错且难以保证策略一致性。LedgerAgent 通过引入一个显式的、结构化的“账本”（Ledger）来独立维护任务状态，该账本在每次交互和工具调用后更新，并作为代理决策的明确依据。该方法不仅提高了代理对领域策略的遵守程度，还增强了可解释性和可调试性。论文通过实验验证了 LedgerAgent 在多个客户服务场景中的有效性，相比基线方法显著提升了策略遵循率和任务完成质量。这一工作对于构建可靠、可审计的 AI 助手具有重要价值，尤其是在需要严格遵循业务规则的场景中。",
+  "tags": [
+    "Agent",
+    "Tool Calling",
+    "State Management"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:41:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式结构化状态管理（Ledger）能显著提升工具调用代理的策略遵循能力，减少因上下文混乱导致的错误。",
+      "该方法通过独立维护任务状态，增强了代理的可解释性和可调试性，便于在客户服务等高风险场景中审计。",
+      "实验表明，LedgerAgent 在多个客户服务任务中优于传统提示嵌入状态的方法，验证了结构化状态的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

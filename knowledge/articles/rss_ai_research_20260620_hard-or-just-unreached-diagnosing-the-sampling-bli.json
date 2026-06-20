@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-123",
+  "title": "Hard or Just Unreached? Diagnosing the Sampling Blind Spot in Math-Reasoning Difficulty Estimation",
+  "source_url": "https://arxiv.org/abs/2606.19636",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了当前数学推理基准中广泛使用的难度估计指标 pass@k 存在一个系统性盲点：在模型采样链中，那些从未达到正确答案的困难样本被错误地标记为“无法解决”，而实际上它们只是由于采样不足而未被触及。通过对 GSM8K 和 MATH 数据集上四个开源模型的测试，发现 10.3-22.9% 的问题在 pass@k 下被归为“无法解决”，但通过增加采样次数或调整解码策略（如温度、top-p）即可成功解决。这一发现对强化学习中的可验证奖励、数学数据筛选、合成课程和验证器训练等领域具有重要影响，意味着基于 pass@k 的难度估计可能低估了模型的真实能力，并误导了训练数据的分布。论文提出了诊断这一盲点的方法，并建议采用更全面的采样策略来准确评估模型在数学推理任务上的表现。该研究对于改进数学推理基准的可靠性、优化 RL 训练数据以及提升模型在困难问题上的泛化能力具有实际意义。",
+  "tags": [
+    "Math Reasoning",
+    "Sampling",
+    "Benchmark",
+    "Difficulty Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:44:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "pass@k 指标在困难样本上存在系统性盲点，将采样不足的样本误判为无法解决，导致难度估计失真。",
+      "通过增加采样次数或调整解码参数，10.3-22.9% 的原本被认为无法解决的问题可以被成功求解。",
+      "该盲点会影响基于 pass@k 的强化学习奖励、数据筛选和课程设计，可能导致模型训练偏离真实能力分布。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

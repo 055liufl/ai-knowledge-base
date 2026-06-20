@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-137",
+  "title": "Beyond Uniform Forgetting: A Study of Sequential Direct Preference Optimization Across Preference Settings",
+  "source_url": "https://arxiv.org/abs/2606.19744",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在语言模型对齐过程中，顺序使用直接偏好优化（DPO）方法时，不同偏好目标之间的相互影响。传统观点认为后续训练会均匀地遗忘先前学到的偏好，但本文通过实验发现，这种遗忘并非均匀，而是取决于目标之间的关系。作者设计了多种偏好设置（如冲突、正交、包含等关系），系统分析了顺序DPO中模型行为的变化。结果表明，当后续目标与先前目标冲突时，遗忘最为严重；而当目标正交或包含时，遗忘程度显著降低。此外，论文还提出了一种基于目标关系动态调整训练策略的方法，以缓解灾难性遗忘。这项工作对于多目标对齐、持续学习以及偏好优化具有重要指导意义，为开发更鲁棒的对齐算法提供了理论基础。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "DPO",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:46:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "顺序DPO中偏好遗忘并非均匀，而是依赖于目标之间的关系，冲突目标导致严重遗忘，正交或包含目标遗忘较轻。",
+      "提出基于目标关系动态调整训练策略的方法，可有效缓解多目标对齐中的灾难性遗忘问题。",
+      "该研究为多目标偏好优化和持续学习提供了新的理论视角和实用指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-104",
+  "title": "Can In-Context Learning Support Intrinsic Curiosity?",
+  "source_url": "https://arxiv.org/abs/2606.19476",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了在上下文学习（In-Context Learning, ICL）框架下，如何实现内在好奇心（Intrinsic Curiosity）机制，以解决自动数据选择问题。传统机器学习依赖于数据建模，但数据收集策略往往被忽视。内在好奇心通过奖励智能体基于学习进度（即新观察对世界模型的改进程度）来鼓励探索，从而优化数据选择。然而，现有方法通常需要显式训练一个世界模型来计算学习进度，这在大规模序列模型中计算成本高昂。本文提出利用上下文学习的能力，使预训练的大语言模型（LLM）能够在不更新参数的情况下，通过上下文示例推断学习进度，从而引导数据收集。这种方法无需额外训练，即可实现类似内在好奇心的探索行为，有望提升模型在未知环境中的适应性和样本效率。该研究将内在动机与上下文学习结合，为自动化数据选择提供了新思路，尤其适用于强化学习、主动学习和机器人探索等领域。其价值在于降低计算开销，同时保持探索效率，可能推动更自主的AI系统发展。",
+  "tags": [
+    "In-Context Learning",
+    "Intrinsic Curiosity",
+    "Data Selection",
+    "Large Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:43:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文学习可替代显式世界模型，通过预训练LLM推断学习进度，实现内在好奇心驱动的数据选择。",
+      "该方法无需参数更新，降低了计算成本，同时保持了探索效率，适用于强化学习和主动学习场景。",
+      "将内在动机与上下文学习结合，为自动化数据收集提供了新范式，有望提升模型在未知环境中的适应性和样本效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

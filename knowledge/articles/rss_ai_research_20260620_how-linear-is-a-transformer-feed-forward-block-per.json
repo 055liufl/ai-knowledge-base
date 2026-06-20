@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-093",
+  "title": "How Linear Is a Transformer Feed-Forward Block? Per-Block Linear Recoverability Is Learned, Not Architectural",
+  "source_url": "https://arxiv.org/abs/2606.19379",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对Transformer中的前馈网络（FFN）块的非线性程度进行了量化分析。传统观点认为FFN是高度非线性的计算模块，但作者通过将每个FFN块分解为精确的最小二乘线性近似与残差部分，提出了线性可恢复性（R²_lin）指标，用于衡量FFN块输出能被线性映射解释的程度。实验发现，训练后的FFN块并非天生非线性，其线性可恢复性是在训练过程中习得的，而非由架构本身决定。这一发现挑战了现有认知，表明FFN块可能比预期更接近线性变换，从而为模型压缩、知识蒸馏和架构优化提供了新视角。该研究通过无优化器的度量方法，揭示了Transformer内部计算的实际特性，对理解大模型行为具有重要理论价值。",
+  "tags": [
+    "Transformer",
+    "Feed-Forward Network",
+    "Nonlinearity",
+    "Model Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:42:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FFN块的线性可恢复性（R²_lin）是训练过程中习得的，而非架构固有属性，表明训练动态塑造了其非线性程度。",
+      "通过最小二乘线性近似分解，提供了一种无优化器的量化方法，可准确评估FFN块的非线性贡献。",
+      "该发现对模型压缩和知识蒸馏有直接启示：若FFN块接近线性，则可能用更简单的线性变换替代，降低计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

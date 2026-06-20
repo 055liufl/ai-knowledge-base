@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-026",
+  "title": "Beyond Entropy: Learning from Token-Level Distributional Deviations for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.19771",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的方法，通过从 token 级别的分布偏差中学习，来解决 LLM 推理中强化学习（RLVR）的优化不稳定性问题。传统 RLVR 方法面临熵崩溃（uniform token updates 导致过早收敛到次优策略）和熵爆炸（过度最大化 Shannon 熵导致盲目探索和不连贯推理链）的两难困境。作者提出超越传统熵约束，利用 token 级别的分布偏差来引导更稳定的优化过程，从而提升 LLM 的推理能力。该方法在数学推理和逻辑推理任务上展示了显著改进，为 LLM 推理的强化学习训练提供了新的理论视角和实用方案。值得关注的是，它直接针对当前 LLM 推理优化中的核心瓶颈，具有较高的实用价值和理论创新性。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:37:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 RLVR 中 uniform token updates 导致熵崩溃，使模型过早收敛到次优策略，而过度熵最大化则引发熵爆炸和盲目探索。",
+      "本文提出从 token 级别的分布偏差中学习，而非仅依赖全局熵约束，从而更精细地引导优化过程。",
+      "该方法在数学和逻辑推理任务上有效提升了 LLM 的推理性能，缓解了优化不稳定性问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

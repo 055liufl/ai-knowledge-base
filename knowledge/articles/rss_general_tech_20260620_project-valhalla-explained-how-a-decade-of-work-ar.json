@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260620-006",
+  "title": "Project Valhalla, Explained: How a Decade of Work Arrives in JDK 28",
+  "source_url": "https://www.jvm-weekly.com/p/project-valhalla-explained-how-a",
+  "source_platform": "rss_general_tech",
+  "summary": "Project Valhalla 是 Java 社区的一项长期重大改进，旨在为 Java 虚拟机 (JVM) 引入值类型 (Value Types) 和基本类型泛型 (Primitive Generics)，以解决 Java 中对象装箱带来的性能开销和内存浪费问题。经过近十年的研发，该项目的主要成果——内联类 (Inline Classes) 和基本类型泛型——预计将在 JDK 28 中正式交付。文章详细解释了 Valhalla 的核心动机：Java 中所有非基本类型都是对象，导致大量堆分配、内存间接引用和缓存不友好，而值类型能以扁平化、连续的内存布局存储数据，显著提升性能。内联类允许开发者定义不可变的值类型，它们没有身份标识，可以直接在栈上或作为对象字段的一部分内联存储，避免了对象头开销和指针追踪。基本类型泛型则允许将 int、double 等基本类型直接用作泛型参数，消除了自动装箱和拆箱的代价。文章还讨论了 Valhalla 对现有 Java 生态的影响，包括与现有库的兼容性、迁移策略以及潜在的破坏性变化。这一改进对于高性能计算、大数据处理、游戏开发等对内存和计算效率敏感的领域至关",
+  "tags": [
+    "Java",
+    "JVM",
+    "Value Types",
+    "Performance Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:34Z",
+  "collected_at": "2026-06-20T10:34:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Project Valhalla 通过引入内联类（值类型）和基本类型泛型，从根本上解决 Java 对象装箱带来的堆分配、内存间接引用和缓存不友好问题。",
+      "内联类是不可变的值类型，无对象头，可扁平化存储于栈或对象字段中，大幅减少内存占用和 GC 压力。",
+      "基本类型泛型允许 int、double 等直接作为泛型参数，消除自动装箱/拆箱的性能开销。",
+      "Valhalla 的交付（JDK 28）将对高性能计算、大数据等场景产生深远影响，但需注意与现有库的兼容性和迁移策略。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

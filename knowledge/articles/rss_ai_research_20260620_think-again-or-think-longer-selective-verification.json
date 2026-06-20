@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-030",
+  "title": "Think Again or Think Longer? Selective Verification for Budget-Aware Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.19808",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SEVRA（Selective Verification for Reasoning Allocation）的推理预算感知选择性验证方法，旨在解决测试时推理计算分配问题。传统方法中，增加推理计算量并不总是有益：它可能修复错误答案、浪费在已正确回答上的计算资源，或引入有害的答案变化。SEVRA作为一个服务层控制器，通过选择性验证来决定是否保留冻结的推理结果，从而在推理预算约束下优化整体性能。该方法将问题重新定义为部署分配问题，而非设计新的验证器。实验表明，SEVRA能够在给定计算预算下显著提升推理效率，避免不必要的计算开销，并减少答案变化带来的负面影响。这项工作对于大语言模型（LLM）的推理优化具有重要价值，尤其是在资源受限的实际部署场景中，提供了一种实用的预算感知推理策略。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "预算感知",
+    "选择性验证"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:38:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时推理计算并非均匀有益，需要选择性分配以避免浪费和有害变化",
+      "SEVRA将推理分配问题建模为部署层控制，而非设计新验证器",
+      "该方法在预算约束下能有效提升推理效率，减少计算浪费"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

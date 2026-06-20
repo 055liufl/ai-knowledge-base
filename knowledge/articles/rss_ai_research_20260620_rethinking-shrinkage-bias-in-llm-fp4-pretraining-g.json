@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-064",
+  "title": "Rethinking Shrinkage Bias in LLM FP4 Pretraining: Geometric Origin, Systemic Impact, and UFP4 Recipe",
+  "source_url": "https://arxiv.org/abs/2606.20381",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大型语言模型（LLM）在FP4预训练中存在的收缩偏差问题。FP4训练有望大幅降低LLM预训练的内存和计算成本，但当前FP4硬件路径和方案（包括NVIDIA Blackwell/Rubin-class系统和AMD MI350系列GPU）仍以E2M1数据元素为中心。研究发现，E2M1等非均匀格式固有地存在收缩偏差，这是一种由几何分布引起的系统性负向舍入误差。论文深入探讨了收缩偏差的几何起源、对LLM预训练的系统性影响，并提出了UFP4方案来缓解这一问题。这项研究对于理解低精度训练中的数值误差机制、优化LLM预训练效率具有重要意义，为未来硬件设计和训练算法改进提供了理论指导。",
+  "tags": [
+    "LLM",
+    "FP4",
+    "低精度训练",
+    "数值误差"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:40:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "E2M1等非均匀FP4格式存在固有的收缩偏差，这是一种由几何分布导致的系统性负向舍入误差",
+      "收缩偏差对LLM预训练有系统性影响，可能导致模型性能下降",
+      "提出的UFP4方案有望缓解收缩偏差问题，提升FP4训练的实用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

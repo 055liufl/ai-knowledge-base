@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260620-099",
+  "title": "VERITAS: Verifier-Guided Proof Search for Zero-Shot Formal Theorem Proving",
+  "source_url": "https://arxiv.org/abs/2606.19399",
+  "source_platform": "rss_ai_research",
+  "summary": "VERITAS 是一种零样本形式定理证明框架，旨在解决基于大语言模型（LLM）的形式化证明器在处理验证器信号时的局限性。传统方法通常将丰富的验证器信号（如语法错误、类型不匹配、部分目标进展）简化为简单的二元通过/失败结果，导致信息丢失。VERITAS 通过两阶段协议将每个验证器信号重新路由回证明搜索过程：首先进行 Best-of-N 采样，生成多个候选证明；然后进行基于评论家的蒙特卡洛树搜索（MCTS），将第一阶段失败作为显式负例输入，从而利用失败信息指导后续搜索。该协议保留了每个定理的求解能力，并通过零样本方式避免了微调或额外训练数据的需求。这项工作值得关注，因为它显著提升了 LLM 在形式化推理任务中的表现，特别是在数学和计算机科学领域，通过更有效地利用验证器反馈，推动了自动定理证明的实用性和鲁棒性。",
+  "tags": [
+    "LLM",
+    "Theorem Proving",
+    "MCTS",
+    "Zero-Shot"
+  ],
+  "author": null,
+  "published_at": "2026-06-20T10:32:37Z",
+  "collected_at": "2026-06-20T10:43:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VERITAS 通过两阶段协议（Best-of-N 采样 + 评论家引导的 MCTS）将丰富的验证器信号（如语法错误、类型不匹配）重新利用，而非简化为二元结果，从而提升零样本定理证明性能。",
+      "该框架将第一阶段失败作为显式负例输入第二阶段，使 MCTS 能有效利用失败信息指导搜索，避免微调或额外数据需求。",
+      "VERITAS 在零样本设置下保留了每个定理的求解能力，展示了如何通过结构化反馈循环增强 LLM 在形式化推理中的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
