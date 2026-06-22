@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260622-037",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客文章深入探讨了在Transformer架构中集成混合专家（MoE）技术的方法和优势。MoE通过将模型分解为多个专门的“专家”子网络，并利用门控机制动态选择激活哪些专家来处理输入，从而在保持模型容量的同时显著降低计算成本。文章详细解释了MoE的核心组件，包括专家网络、门控网络（如Top-k门控）以及负载均衡策略（如辅助损失函数），并讨论了训练和推理中的关键挑战，如专家崩溃和通信开销。此外，文章还介绍了MoE在大型语言模型（如Mixtral 8x7B）中的成功应用，展示了其在提升模型性能、扩展模型规模以及实现稀疏激活方面的潜力。该内容对于理解如何高效构建和部署大规模Transformer模型具有重要价值，尤其适用于资源受限但追求高性能的场景。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "Sparse Models",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-22T13:35:37Z",
+  "collected_at": "2026-06-22T13:41:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE通过稀疏激活机制，在增加模型参数量的同时保持计算成本近似恒定，实现了高效扩展。",
+      "门控网络和负载均衡策略是MoE成功的关键，它们确保专家被均匀使用并避免计算浪费。",
+      "MoE已在多个大型语言模型（如Mixtral 8x7B）中验证了其有效性，显著提升了模型性能。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

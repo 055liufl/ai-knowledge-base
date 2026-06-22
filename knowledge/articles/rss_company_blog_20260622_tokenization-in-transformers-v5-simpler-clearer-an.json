@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260622-057",
+  "title": "Tokenization in Transformers v5: Simpler, Clearer, and More Modular",
+  "source_url": "https://huggingface.co/blog/tokenizers",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 发布了 Transformers 库 v5 版本，重点改进了分词器（tokenizer）的设计，使其更简单、清晰和模块化。新版本将分词器从模型配置中分离，采用独立的 tokenizer 对象，支持更灵活的自定义和组合。主要变化包括：移除自动添加特殊 token 的默认行为，要求用户显式指定；引入新的 tokenizer 类（如 PreTrainedTokenizerFast 和 PreTrainedTokenizerBase），统一接口；支持更细粒度的控制，如添加、删除或修改 tokenizer 的组件（如 normalization、pre-tokenization、model、post-processing）。这些改进降低了使用门槛，减少了隐藏的 bug，同时为高级用户提供了更强的可扩展性。该更新对于 NLP 开发者、研究人员以及依赖 Transformers 库的 AI 应用开发者具有重要意义，因为它简化了分词流程，提升了代码的可读性和可维护性，并促进了社区贡献。",
+  "tags": [
+    "Transformers",
+    "Tokenization",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-06-22T13:35:37Z",
+  "collected_at": "2026-06-22T13:42:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformers v5 将分词器从模型配置中解耦，采用独立的 tokenizer 对象，简化了使用和定制。",
+      "新版本移除了自动添加特殊 token 的默认行为，要求显式指定，减少了隐藏错误。",
+      "引入更模块化的设计，支持对分词流程各组件（如 normalization、pre-tokenization）进行细粒度控制。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

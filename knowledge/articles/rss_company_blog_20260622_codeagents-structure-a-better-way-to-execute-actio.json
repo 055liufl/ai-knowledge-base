@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260622-121",
+  "title": "CodeAgents + Structure: A Better Way to Execute Actions",
+  "source_url": "https://huggingface.co/blog/structured-codeagent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了一种结合代码生成与结构化输出的新型智能体执行范式——CodeAgents + Structure。传统智能体在执行动作时，通常依赖自由文本生成或预定义工具调用，存在输出不可控、错误率高、难以集成等痛点。该方法通过让智能体生成结构化代码（如JSON、YAML或特定DSL）来定义动作序列，并利用代码解释器或编译器进行验证和执行，从而显著提升动作的准确性、可解释性和可维护性。文章详细阐述了该范式的核心设计：智能体首先根据用户指令生成结构化动作代码，然后由执行引擎解析并调用相应工具或API，最后将结果反馈给智能体进行下一步推理。这种设计不仅降低了动作执行的歧义，还便于人类审查和调试。此外，文章还讨论了如何通过约束生成（如使用Pydantic模型）确保输出格式的规范性，并提供了在Hugging Face Transformers等框架中的实现示例。该工作对于构建可靠、可扩展的智能体系统具有重要参考价值，尤其适用于需要复杂工具编排和严格错误控制的场景。",
+  "tags": [
+    "CodeAgent",
+    "Structured Output",
+    "Agent Framework",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-06-22T13:35:37Z",
+  "collected_at": "2026-06-22T13:47:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过结构化代码生成替代自由文本输出，可显著提升智能体动作执行的准确性和可调试性。",
+      "结合代码解释器或编译器进行动作验证，能够有效减少运行时错误并支持复杂逻辑编排。",
+      "该范式为构建企业级、高可靠性的智能体系统提供了新的设计思路，尤其适合需要严格输出格式的场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

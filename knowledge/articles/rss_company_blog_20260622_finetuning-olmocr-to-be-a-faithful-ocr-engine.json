@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260622-129",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够从图像中提取文本。然而，原始模型在处理复杂文档（如表格、多列布局、手写文字或低质量扫描件）时，可能会产生错误或不一致的输出。作者通过收集特定领域的标注数据（包括合成数据和真实数据），采用低秩适应（LoRA）方法对模型进行微调，显著提升了其在特定场景下的准确性和鲁棒性。文章详细描述了数据准备、训练策略、评估指标以及微调后的性能对比，展示了在保持通用 OCR 能力的同时，如何针对特定任务（如发票识别、历史文档数字化）进行优化。这项工作对于需要高精度 OCR 的应用（如文档自动化、数据录入）具有实用价值，也展示了 VLM 在细粒度视觉任务上的微调潜力。",
+  "tags": [
+    "OCR",
+    "Fine-tuning",
+    "VLM",
+    "LoRA"
+  ],
+  "author": null,
+  "published_at": "2026-06-22T13:35:37Z",
+  "collected_at": "2026-06-22T13:48:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 LoRA 微调可以高效地提升 VLM 在特定 OCR 任务上的准确性，而无需完全重新训练模型。",
+      "合成数据与真实数据结合的数据策略是提升 OCR 模型鲁棒性的关键，尤其在处理表格和手写文字时。",
+      "微调后的 olmOCR 在特定领域（如发票识别）的准确率显著提高，同时保持了通用 OCR 能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260622-130",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文讨论了在并发请求场景下优化大型语言模型（LLM）性能的关键技术——Prefill（预填充）和Decode（解码）阶段。Prefill阶段负责处理输入提示并生成初始的键值（KV）缓存，而Decode阶段则基于该缓存逐步生成输出令牌。在并发请求中，这两个阶段会相互竞争GPU资源，导致性能瓶颈。文章提出了一种优化策略：通过将多个请求的Prefill阶段合并执行，利用批处理技术提高计算效率，同时将Decode阶段分散处理以减少延迟。此外，文章还探讨了动态调整批大小、内存管理（如KV缓存复用）以及调度算法（如优先级队列）来平衡吞吐量和响应时间。这些优化对于部署高并发LLM服务（如聊天机器人、实时翻译）至关重要，能够显著提升系统吞吐量并降低用户感知延迟。该博客由TNG Technology Consulting发布，内容基于实际工程经验，具有较高的实用价值。",
+  "tags": [
+    "LLM",
+    "Performance Optimization",
+    "Concurrency",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-22T13:35:37Z",
+  "collected_at": "2026-06-22T13:48:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill和Decode阶段在并发请求中会竞争GPU资源，合并Prefill批处理可提升计算效率。",
+      "动态调整批大小和KV缓存复用是优化内存使用和降低延迟的关键。",
+      "优先级调度算法能有效平衡高吞吐量与低响应时间。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
