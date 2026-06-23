@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260623-113",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章探讨了长提示词（long prompts）如何阻塞其他请求，并提出了优化LLM性能的策略。文章指出，在LLM推理过程中，长提示词会占用大量计算资源，导致后续请求被阻塞，从而影响整体系统的吞吐量和响应时间。作者通过实验数据展示了不同长度提示词对请求排队和延迟的影响，并提出了几种优化方法，包括提示词截断、动态批处理、优先级调度以及使用更高效的注意力机制（如FlashAttention）。文章还讨论了在部署LLM服务时，如何通过负载均衡和请求调度来减少长提示词带来的负面影响。这些优化对于提升LLM在实际应用中的性能至关重要，尤其是在需要处理大量并发请求的场景下，如聊天机器人、代码生成和内容创作等。文章提供了实用的建议和代码示例，帮助开发者更好地理解和解决长提示词带来的性能瓶颈。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Optimization",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:40Z",
+  "collected_at": "2026-06-23T11:29:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著阻塞其他请求，导致系统吞吐量下降和延迟增加。",
+      "通过动态批处理和优先级调度，可以有效缓解长提示词带来的性能问题。",
+      "使用高效的注意力机制（如FlashAttention）可以降低长提示词的计算开销。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

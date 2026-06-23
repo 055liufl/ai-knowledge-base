@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260623-121",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在TRL（Transformer Reinforcement Learning）框架中集成vLLM（一种高效的LLM推理引擎）的协同部署方案，旨在解决强化学习训练过程中GPU利用率不均衡的问题。传统方法中，强化学习训练通常需要多个GPU分别用于策略模型、参考模型和奖励模型，导致部分GPU闲置。通过将vLLM与TRL结合，实现多个模型在同一GPU上的协同部署，显著提升了GPU利用率和训练效率。文章详细说明了该方案的技术实现，包括如何通过vLLM的高效推理能力加速强化学习中的采样和评估过程，以及如何通过动态资源调度避免GPU空闲。实验结果表明，该方法在保持模型性能的同时，将训练时间缩短了30%以上，并降低了硬件成本。这一创新对于大规模强化学习训练具有重要价值，尤其适合资源受限的团队。",
+  "tags": [
+    "vLLM",
+    "TRL",
+    "GPU优化",
+    "强化学习",
+    "模型部署"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:40Z",
+  "collected_at": "2026-06-23T11:29:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过vLLM与TRL的协同部署，解决了强化学习训练中GPU利用率低的问题，显著提升效率。",
+      "该方法在不牺牲模型性能的前提下，将训练时间缩短30%以上，降低硬件成本。",
+      "动态资源调度机制使得多个模型可以共享同一GPU，优化了资源分配。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260623-035",
+  "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+  "source_url": "https://huggingface.co/blog/ulysses-sp",
+  "source_platform": "rss_company_blog",
+  "summary": "Ulysses Sequence Parallelism 是一种用于训练超长上下文（百万级 token）的大语言模型（LLM）的并行策略。该技术通过将序列维度上的注意力计算分布到多个设备上，解决了传统数据并行和模型并行在处理极长序列时面临的内存瓶颈和通信开销问题。与常见的张量并行（TP）和流水线并行（PP）不同，Ulysses 专注于序列维度的拆分，利用高效的 all-to-all 通信实现注意力层的分布式计算，从而在不显著增加通信量的情况下支持百万 token 级别的上下文。该博客文章详细介绍了其原理、实现细节（包括与 FlashAttention 的兼容性）以及性能基准测试，显示在 128 个 GPU 上训练 1M token 序列时，相比基线方法有近 2 倍的吞吐量提升。这一技术对于需要处理超长文档、代码库或视频序列的 LLM 训练至关重要，是推动长上下文模型发展的重要基础设施创新。",
+  "tags": [
+    "LLM",
+    "分布式训练",
+    "序列并行",
+    "长上下文"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:40Z",
+  "collected_at": "2026-06-23T11:23:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Ulysses 通过序列维度拆分注意力计算，使训练百万 token 上下文成为可能，突破了传统并行策略的内存限制。",
+      "该技术利用 all-to-all 通信模式，在分布式注意力中实现高效通信，避免了张量并行中的大量广播开销。",
+      "与 FlashAttention 兼容，可在保持计算效率的同时支持超长序列，实际测试中在 128 GPU 上实现近 2 倍吞吐提升。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

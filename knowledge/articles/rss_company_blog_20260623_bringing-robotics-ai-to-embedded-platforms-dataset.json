@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260623-036",
+  "title": "Bringing Robotics AI to Embedded Platforms: Dataset Recording, VLA Fine‑Tuning, and On‑Device Optimizations",
+  "source_url": "https://huggingface.co/blog/nxp/bringing-robotics-ai-to-embedded-platforms",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何在嵌入式平台上实现机器人AI，涵盖数据集录制、VLA（视觉-语言-动作）微调以及设备端优化。文章由NXP和Hugging Face合作撰写，展示了将先进的机器人AI模型（如RT-1、RT-2）部署到资源受限的嵌入式系统（如i.MX 8M Plus）上的完整流程。首先，通过LeRobot框架录制机器人操作数据集，包括关节角度、图像和动作标签。然后，使用Hugging Face的Transformers库对预训练的VLA模型进行微调，使其适应特定任务和硬件约束。最后，通过量化（如INT8）、剪枝和知识蒸馏等技术优化模型，减少内存占用和推理延迟，同时利用NXP的eIQ Toolkit和ONNX Runtime进行硬件加速。文章强调，这种端到端方案使得机器人AI不再依赖云端，能够在边缘设备上实时运行，从而降低延迟、提高隐私性和可靠性。该工作对于推动机器人技术在工业自动化、服务机器人等领域的落地具有重要意义，尤其适合嵌入式开发者、机器人研究人员和AI工程师关注。",
+  "tags": [
+    "Robotics",
+    "VLA",
+    "Embedded AI",
+    "Model Optimization",
+    "Edge Computing"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:40Z",
+  "collected_at": "2026-06-23T11:23:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一套从数据集录制到模型微调再到设备端优化的完整工作流，使VLA模型能在嵌入式平台上高效运行。",
+      "利用量化、剪枝和知识蒸馏等技术，将大型机器人AI模型压缩至适合边缘设备的尺寸，同时保持任务性能。",
+      "结合LeRobot、Hugging Face Transformers和NXP eIQ Toolkit，实现了开源工具链与硬件加速的无缝集成。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

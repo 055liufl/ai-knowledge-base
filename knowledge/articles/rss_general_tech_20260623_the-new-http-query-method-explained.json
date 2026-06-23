@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260623-001",
+  "title": "The new HTTP QUERY method explained",
+  "source_url": "https://kreya.app/blog/new-http-query-method-explained/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文详细介绍了HTTP QUERY方法，这是一种新的HTTP请求方法，旨在解决传统GET和POST方法在处理复杂查询时的局限性。QUERY方法允许客户端发送请求体（body）来定义查询参数，同时保持幂等性和缓存友好性，类似于GET方法。文章解释了QUERY方法的背景、设计动机、与现有方法的区别、使用场景以及潜在的优势。例如，在RESTful API中，当查询条件复杂或参数过多时，GET方法可能因URL长度限制而受限，而POST方法则破坏了幂等性和缓存机制。QUERY方法通过将查询参数放在请求体中，既避免了URL长度问题，又保留了GET的语义特性。此外，文章还讨论了QUERY方法的安全性和缓存策略，以及它在GraphQL和OData等查询语言中的应用潜力。这一新方法对于API设计者、后端开发者和Web标准研究者具有重要意义，因为它可能改变未来API的设计模式，提升查询的灵活性和效率。",
+  "tags": [
+    "HTTP",
+    "API",
+    "Web标准",
+    "REST"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:35Z",
+  "collected_at": "2026-06-23T11:19:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HTTP QUERY方法通过将查询参数放在请求体中，解决了GET方法URL长度限制和POST方法非幂等性的问题。",
+      "QUERY方法保持了幂等性和缓存友好性，适用于复杂查询场景，如RESTful API和GraphQL。",
+      "该方法的引入可能推动API设计标准的演进，提升查询的灵活性和效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260623-136",
+  "title": "Efficient Request Queueing – Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-request-queueing",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）部署中，通过高效请求队列优化性能的方法。文章指出，LLM推理过程中，请求的到达模式往往具有突发性和不均衡性，直接处理可能导致资源利用率低下、响应延迟增加。为此，作者介绍了多种请求队列策略，包括先进先出（FIFO）、优先级队列、基于批处理的队列以及动态负载均衡等。这些策略旨在平滑请求流量，最大化GPU等计算资源的利用率，同时保证服务质量（QoS）。文章还讨论了如何结合连续批处理（continuous batching）技术，将多个请求合并为批次处理，减少空闲时间，提升吞吐量。此外，文中提到了队列长度管理、超时处理、请求优先级分配等实际工程细节，并给出了性能对比数据，展示了优化后延迟降低和吞吐量提升的效果。该内容对于LLM服务部署和性能调优具有重要参考价值，尤其适合需要处理高并发请求的生产环境。",
+  "tags": [
+    "LLM",
+    "Performance Optimization",
+    "Request Queueing",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-23T11:17:40Z",
+  "collected_at": "2026-06-23T11:31:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "请求队列策略能有效平滑LLM推理中的突发流量，提升资源利用率。",
+      "结合连续批处理技术，队列优化可显著降低响应延迟并提高吞吐量。",
+      "优先级队列和动态负载均衡是保证服务质量（QoS）的关键手段。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
