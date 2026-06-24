@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260624-130",
+  "title": "Blockwise Policy-Drift Gating for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2606.24084",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Blockwise Policy-Drift Gating”的轻量级方法，用于解决在线策略蒸馏（On-Policy Distillation, OPD）在长程推理任务中的不稳定性问题。OPD通过学生自身采样的轨迹来训练学生策略，但现有研究表明，在长程推理任务中，基于采样令牌的OPD容易产生策略漂移，导致性能下降。作者提出了一种仅依赖学生自身的旧-当前漂移控制器，通过分块（blockwise）门控机制动态调节策略更新幅度，从而在重用轨迹（rollout reuse）场景下稳定训练。该方法无需教师模型额外计算，计算开销极低，且与局部教师支持匹配（local teacher-support matching）等现有修复手段兼容。实验表明，该方法在多个长程推理基准（如数学推理、代码生成）上显著提升了学生策略的收敛速度和最终性能，同时保持了训练效率。该工作为强化学习中的知识蒸馏提供了实用且高效的解决方案，尤其适用于资源受限的部署场景。",
+  "tags": [
+    "On-Policy Distillation",
+    "Policy Drift",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:03:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种轻量级的块状策略漂移门控机制，仅依赖学生自身状态即可稳定在线策略蒸馏，无需额外教师计算。",
+      "该方法在长程推理任务中有效缓解了采样令牌OPD的脆弱性，显著提升了学生策略的收敛速度和性能。",
+      "与局部教师支持匹配等现有修复手段兼容，且计算开销极低，适合资源受限的部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

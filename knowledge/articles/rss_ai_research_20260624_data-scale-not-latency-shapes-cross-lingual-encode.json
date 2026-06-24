@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260624-017",
+  "title": "Data Scale, Not Latency, Shapes Cross-Lingual Encoder Transfer in Streaming ASR",
+  "source_url": "https://arxiv.org/abs/2606.24169",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了流式语音识别（ASR）模型在适应新语言时的冷启动策略选择问题。具体比较了两种预训练编码器：多语言（ML）编码器和仅英语（EN）编码器。常见直觉认为多语言编码器在低数据量下更有优势，但该优势的持续时间、是否受严格流式延迟影响、以及是否能在部署量化后保持，尚不明确。通过受控实验，作者发现数据规模是决定跨语言编码器迁移效果的关键因素，而非延迟。多语言编码器的优势在数据量增加后会逐渐减弱，且流式延迟和量化对迁移效果的影响有限。该研究为流式ASR的跨语言迁移提供了重要指导，强调了数据规模在模型选择中的核心作用。",
+  "tags": [
+    "ASR",
+    "Cross-Lingual Transfer",
+    "Streaming",
+    "Encoder",
+    "Data Scale"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:54:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据规模是决定跨语言编码器迁移效果的关键因素，而非流式延迟或量化。",
+      "多语言编码器在低数据量下具有优势，但该优势随数据量增加而减弱。",
+      "严格的流式延迟和部署量化对跨语言迁移效果的影响有限。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

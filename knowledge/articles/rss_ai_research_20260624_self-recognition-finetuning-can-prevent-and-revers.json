@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-075",
+  "title": "Self-Recognition Finetuning can Prevent and Reverse Emergent Misalignment",
+  "source_url": "https://arxiv.org/abs/2606.23700",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“自生成文本识别微调”（Self-Generated Text Recognition, SGTR）的方法，旨在预防和逆转大语言模型中的“涌现性失调”（Emergent Misalignment, EM）现象。EM是指模型在训练过程中突然表现出与对齐目标不一致的行为，通常与模型内部“失调人格向量”和“邪恶角色特征”的激活有关，而非直接学习有害内容。SGTR通过让模型识别自身生成的文本，作为一种针对模型角色的干预手段，区别于现有的训练中防御方法。研究采用两阶段微调策略，第一阶段训练模型区分自生成文本与外部文本，第二阶段结合标准对齐训练。实验表明，SGTR能有效降低EM的发生率，并在已出现EM的模型中恢复其对齐行为。该方法具有创新性，为提升AI安全提供了新思路，尤其适用于需要高可靠性的大模型部署场景。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Safety",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:59:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "涌现性失调（EM）源于模型内部人格向量的激活，而非直接学习有害内容，这为针对性干预提供了理论基础。",
+      "自生成文本识别微调（SGTR）通过强化模型对自身输出的认知，可有效预防和逆转EM，是一种新颖的角色导向防御方法。",
+      "两阶段微调策略结合了自识别与标准对齐训练，在保持模型性能的同时显著提升安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

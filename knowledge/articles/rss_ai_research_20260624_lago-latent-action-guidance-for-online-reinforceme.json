@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260624-057",
+  "title": "LaGO: Latent Action Guidance for Online Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2606.24669",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 LaGO（Latent Action Guidance for Online Reinforcement Learning）的新型框架，旨在利用预训练的大语言模型（LLM）作为潜在动作先验，以软引导的方式优化在线强化学习策略，而非直接使用 LLM 作为控制器。传统方法中，LLM 直接生成动作往往不够精确且不可靠，而 LaGO 通过将 LLM 的规划能力编码为潜在空间中的先验分布，与在线强化学习策略进行交互，从而在不要求 LLM 输出精确动作的情况下提升策略学习效率。该框架结合了 LLM 的语义理解和强化学习的探索能力，适用于复杂连续控制任务。值得关注的是，LaGO 解决了 LLM 在决策任务中直接控制的不稳定性问题，为 LLM 与强化学习的融合提供了新思路，有望在机器人控制、游戏 AI 等需要长期规划的领域产生实际影响。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:58:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LaGO 利用 LLM 作为潜在动作先验，通过软引导而非直接控制来提升在线强化学习的策略优化，避免了 LLM 直接生成动作的不精确问题。",
+      "该框架将 LLM 的规划能力编码为潜在空间分布，与强化学习的探索机制结合，实现了更稳定和高效的决策学习。",
+      "LaGO 为 LLM 在复杂连续控制任务中的应用提供了新范式，有望推动机器人、游戏 AI 等领域的实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

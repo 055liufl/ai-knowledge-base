@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-119",
+  "title": "EMAgnet: Parameter-Space EMA Regularization for Policy Gradient Self-Play in Large Games",
+  "source_url": "https://arxiv.org/abs/2606.23995",
+  "source_platform": "rss_ai_research",
+  "summary": "EMAgnet 是一种针对大规模两人零和博弈中策略梯度自对弈的改进方法。传统方法如PPO在自对弈中通过均匀分布进行正则化，但均匀分布对所有动作一视同仁，忽略了动作的可行性差异。EMAgnet 提出使用参数空间的指数移动平均（EMA）作为正则化目标，从而更智能地引导策略更新，优先保留历史中表现较好的动作倾向。该方法在理论分析和实验验证中均显示出比均匀正则化更快的收敛速度和更好的最终策略质量，尤其适用于大规模不完美信息博弈。这项研究结合了强化学习和博弈论，为自对弈训练提供了新的正则化视角，具有重要的实用价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Game Theory",
+    "Self-Play",
+    "Regularization"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:03:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EMAgnet 通过参数空间指数移动平均替代均匀分布作为正则化目标，能更有效地引导策略更新。",
+      "该方法在两人零和博弈中显著提升了策略梯度自对弈的收敛速度和最终策略质量。",
+      "EMAgnet 避免了均匀正则化对所有动作一视同仁的缺点，优先保留历史中表现较好的动作倾向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

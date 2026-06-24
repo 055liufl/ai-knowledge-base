@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-113",
+  "title": "When Retrieval Metrics Mislead: Measuring Policy Signal in Long-Horizon Tool-Use Agents",
+  "source_url": "https://arxiv.org/abs/2606.23937",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在长周期工具使用代理任务中，检索指标（如精确匹配召回率）是否能够准确反映检索器为下游决策模型提供有用策略上下文的能力。作者以tau-bench为测试平台，使用Qwen2.5-3B/7B分类器进行预动作策略分类实验。研究发现，在黄金策略条件下，紧凑的结构化状态经过调优后，其宏F1分数比原始轨迹高出0.13-0.17。然而，当用检索器返回的排名第一的策略子句替换基准设计中的策略子句时，分类性能显著下降，表明常见的检索指标（如精确匹配召回率）可能误导对检索器实际贡献的评估。该工作揭示了检索评估与下游任务性能之间的不一致性，对构建更可靠的检索增强型代理系统具有重要指导意义。",
+  "tags": [
+    "Retrieval",
+    "Agent",
+    "Evaluation",
+    "Tool-Use"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:02:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "精确匹配召回率作为检索器质量的代理指标，在长周期工具使用代理任务中可能产生误导，无法准确反映检索对下游策略分类的实际贡献。",
+      "在黄金策略条件下，紧凑结构化状态相比原始轨迹能显著提升分类性能（宏F1提升0.13-0.17），但检索器返回的顶级策略子句替换后性能下降，说明检索质量与下游任务性能存在差距。",
+      "该研究强调了需要开发更贴合下游任务目标的检索评估方法，而非仅依赖传统检索指标，以提升检索增强型代理系统的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

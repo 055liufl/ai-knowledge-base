@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-084",
+  "title": "Weight-Space Geometry of Offline Reasoning Training",
+  "source_url": "https://arxiv.org/abs/2606.23740",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了多种离线强化学习损失函数（RFT, RIFT, DFT, Offline GRPO, DPO）在推理训练中的权重空间几何特性。作者以Qwen3-4B为基座模型，使用注意力LoRA在相同的数学推理数据上训练了六种方法（包括SFT），并比较它们的权重更新机制。研究发现，尽管这些方法在最终准确率上表现相似，但它们在权重空间中的更新方向存在显著差异，表明不同的损失函数会导致模型学习到不同的推理策略。该工作揭示了离线推理训练方法的机械性差异，为理解模型微调中的学习动态提供了新视角。值得关注的是，它挑战了仅以准确率评估方法的惯例，强调了权重空间分析的重要性，对模型压缩、知识蒸馏和强化学习训练策略的设计具有指导意义。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Knowledge Distillation",
+    "Weight Space"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:00:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同离线强化学习损失函数在权重空间中的更新方向存在显著差异，即使它们达到相似的准确率。",
+      "权重空间几何分析揭示了SFT与强化学习方法（如DPO、GRPO）在训练动态上的本质区别。",
+      "该研究为理解模型微调中的学习机制提供了新工具，有助于设计更高效的训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

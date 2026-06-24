@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-080",
+  "title": "Audio-visual Contrastive Alignment for Diffusion-based Visual-conditioned Speech Enhancement",
+  "source_url": "https://arxiv.org/abs/2606.23712",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于扩散模型的视听语音增强方法，通过引入音频-视觉对比对齐机制来提升语音增强性能。传统方法使用交叉注意力将视觉特征（如唇部运动）作为条件输入扩散模型，但未显式对齐音频和视觉模态。本文提出在扩散模型的训练过程中加入对比学习损失，强制音频和视觉特征在共享嵌入空间中接近，从而增强跨模态一致性。实验表明，该方法在多个基准数据集上优于纯音频和未对齐的视听基线，尤其在低信噪比场景下表现突出。该工作融合了扩散模型、对比学习和多模态融合，为语音增强领域提供了新的思路，值得关注。",
+  "tags": [
+    "Diffusion Model",
+    "Audio-Visual",
+    "Speech Enhancement",
+    "Contrastive Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:00:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对比对齐损失显式增强了音频和视觉特征的跨模态一致性，提升了扩散模型的条件生成质量。",
+      "该方法在低信噪比环境下显著优于纯音频和未对齐的视听基线，展示了多模态融合的鲁棒性。",
+      "通过对比学习而非简单拼接或交叉注意力，实现了更有效的视觉条件控制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

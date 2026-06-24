@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260624-143",
+  "title": "Zero-Shot Test-Time Canonicalization using Out-of-Distribution Scoring",
+  "source_url": "https://arxiv.org/abs/2606.24178",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种零样本测试时规范化方法，利用分布外评分来识别并纠正输入图像中的仿射变换（如旋转、缩放、剪切），从而提升预训练视觉模型对变换的鲁棒性。与传统的通过架构等变性或数据增强重新训练的方法不同，该方法在测试阶段无需修改或重新训练模型，仅通过评估输入相对于模型分布外评分来估计最优变换参数，并将输入反向变换回规范状态后再进行分类。这种方法具有即插即用的优势，适用于任何预训练模型，且无需额外的训练数据或标签。实验表明，该方法在多个标准视觉基准上显著提高了模型对仿射变换的鲁棒性，尤其是在零样本场景下表现突出。该工作值得关注，因为它提供了一种轻量级、无需模型修改的解决方案，有望推动视觉模型在实际部署中应对复杂变换的泛化能力，同时降低了维护和更新模型的成本。",
+  "tags": [
+    "Test-Time Canonicalization",
+    "Out-of-Distribution Scoring",
+    "Vision Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:04:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种零样本测试时规范化方法，无需修改或重新训练模型即可提升视觉模型对仿射变换的鲁棒性。",
+      "利用分布外评分来估计输入的最优变换参数，实现即插即用的变换校正。",
+      "在多个基准上验证了该方法在零样本场景下的有效性，显著提高了分类准确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

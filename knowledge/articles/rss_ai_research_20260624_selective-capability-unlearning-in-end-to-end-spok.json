@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260624-125",
+  "title": "Selective Capability Unlearning in End-to-End Spoken Language Understanding",
+  "source_url": "https://arxiv.org/abs/2606.24063",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对端到端口语理解（SLU）系统的选择性能力遗忘方法。现代SLU系统在实际部署中，可能因政策或安全约束需要移除特定功能（如某个意图及其相关的槽位生成行为）。然而，在自回归模型中，抑制目标意图并不能消除基于该意图生成槽位的条件映射。本文的方法旨在实现更精确的能力遗忘，确保在移除特定意图时，不会影响其他无关功能，同时避免模型在推理时因条件映射残留而产生不安全或不合规的输出。该研究对于提升SLU系统的可控性和安全性具有重要意义，尤其是在隐私保护、合规性调整和模型治理等场景中。通过选择性遗忘，可以在不重新训练整个模型的情况下，灵活调整模型行为，降低部署风险。",
+  "tags": [
+    "SLU",
+    "Machine Unlearning",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:03:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在自回归SLU模型中，直接抑制目标意图无法完全消除其相关的槽位生成条件映射，导致能力遗忘不彻底。",
+      "提出了一种选择性能力遗忘方法，能够精准移除特定意图及其槽位生成行为，同时保持其他功能不受影响。",
+      "该方法有助于提升SLU系统的可控性和安全性，适用于政策合规、隐私保护等实际部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

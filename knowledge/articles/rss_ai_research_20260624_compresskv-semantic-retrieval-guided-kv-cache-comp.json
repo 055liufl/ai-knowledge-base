@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-038",
+  "title": "CompressKV: Semantic-Retrieval-Guided KV-Cache Compression for Resource-Efficient Long-Context LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.24467",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CompressKV的新型KV缓存压缩方法，旨在解决长上下文大语言模型推理中KV缓存内存占用和计算成本过高的问题。该方法利用语义检索指导KV缓存压缩，通过识别并保留对生成任务至关重要的token，同时丢弃不重要的token，从而在资源受限的硬件上实现高效推理。与现有基于启发式评分的方法不同，CompressKV考虑了多头注意力中不同头部的功能差异，避免了关键token的误删。实验表明，该方法在保持模型性能的同时，显著降低了内存消耗和延迟，为长上下文LLM的可持续部署提供了新思路。",
+  "tags": [
+    "KV-Cache",
+    "LLM",
+    "Inference",
+    "Compression"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:56:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CompressKV通过语义检索指导KV缓存压缩，优于传统启发式评分方法。",
+      "该方法考虑了GQA架构中注意力头部的功能差异，避免关键token被误删。",
+      "在资源受限硬件上，CompressKV能显著降低内存占用和推理延迟，同时保持模型性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-094",
+  "title": "Listening makes Vision Clear for VLMs",
+  "source_url": "https://arxiv.org/abs/2606.23763",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Listening makes Vision Clear for VLMs”的方法，旨在解决视觉-语言模型（VLMs）在生成答案时出现的视觉-语言不一致问题。传统方法通常通过答案侧令牌的注意力分布来评估一致性，但研究发现，最高注意力区域并不总是与预期的语义令牌一致，这可能是由于解码漂移（decoding drift）导致的。解码漂移是指先前生成的答案令牌的语言先验积累，并与视觉注意力不匹配。除了先前答案令牌的先验，本文还发现结构令牌（如标点符号）也会引入语言先验，加剧了视觉与语言之间的偏差。为此，作者提出了一种新的机制，通过“倾听”视觉信息来调整解码过程，从而减少语言先验的干扰，使视觉注意力更准确地聚焦于相关区域。该方法在多个基准测试上取得了显著改进，提升了VLMs在视觉问答等任务中的表现。这项研究值得关注，因为它揭示了VLMs中一个被忽视的视觉-语言对齐问题，并提供了实用的解决方案，有助于推动多模态模型在真实场景中的应用。",
+  "tags": [
+    "VLM",
+    "视觉-语言一致性",
+    "解码漂移",
+    "多模态"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:01:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "最高注意力区域与语义令牌不一致的问题源于解码漂移，即语言先验积累导致视觉注意力偏移。",
+      "结构令牌（如标点符号）也会引入语言先验，加剧视觉-语言不一致。",
+      "通过“倾听”视觉信息调整解码过程，可有效减少语言先验干扰，提升VLMs的视觉注意力准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

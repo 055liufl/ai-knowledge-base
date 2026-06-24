@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260624-121",
+  "title": "Fast and Slow Variational Continual Learning",
+  "source_url": "https://arxiv.org/abs/2606.24007",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“快慢变分持续学习”（Fast and Slow Variational Continual Learning）的方法，旨在解决深度网络在持续学习中的稳定性-可塑性困境。该方法借鉴神经科学中的快慢适应机制，通过变分推断框架将快速适应（针对新任务）与慢速适应（保留旧知识）整合到常用优化器中，无需复杂修改。论文展示了如何通过调整变分参数的学习率来实现这一平衡，并在多个持续学习基准（如Split MNIST、Permuted MNIST和CIFAR-100）上取得了优于现有方法（如EWC、SI和VCL）的性能。该工作值得关注，因为它提供了一种简单、通用且理论驱动的持续学习优化策略，有望推动实际应用中的模型自适应能力。",
+  "tags": [
+    "Continual Learning",
+    "Variational Inference",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:03:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过变分推断中的快慢学习率分离，实现了持续学习中稳定性与可塑性的自然平衡。",
+      "该方法可直接集成到现有优化器（如Adam、SGD）中，无需额外网络结构或记忆重放。",
+      "在多个基准测试中，该方法在减少灾难性遗忘的同时保持了新任务的学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

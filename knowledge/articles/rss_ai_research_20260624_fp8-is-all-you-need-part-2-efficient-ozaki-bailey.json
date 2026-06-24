@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-074",
+  "title": "FP8 is All You Need (Part 2): Efficient Ozaki-Bailey Style FFT Through Tensor-core Garner Reformulation and Kulisch Escape Route",
+  "source_url": "https://arxiv.org/abs/2606.23698",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种在NVIDIA Blackwell Ultra (B300) GPU上利用FP8张量核心实现FP64等效吞吐量的方法。由于B300的FP64向量吞吐量降至约1.3 TFLOPS，比B200低约30倍，导致带宽受限的FP64工作负载难以保持内存绑定状态。作者采用Ozaki Scheme II框架，通过尾数切分的中国剩余定理重构，将密集矩阵乘法路由到FP8张量核心，从而恢复FP64级别的计算效率。该论文是系列的第二部分，第一部分涵盖了密集GEMM、批量GEMV、模板计算和S（可能指稀疏或特定算法）。这项研究值得关注，因为它解决了现代GPU中FP64性能严重下降的问题，为需要高精度计算的应用（如科学模拟、深度学习训练）提供了可行的优化路径，展示了如何利用低精度硬件加速器实现高精度计算，具有重要的实用价值和创新性。",
+  "tags": [
+    "FP8",
+    "Tensor Core",
+    "High-Performance Computing",
+    "Matrix Multiplication"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:59:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "B300 GPU的FP64吞吐量大幅下降，促使需要新的方法利用FP8张量核心实现高精度计算。",
+      "Ozaki Scheme II通过尾数切分的中国剩余定理重构，有效将密集矩阵乘法路由到FP8张量核心，恢复FP64等效吞吐量。",
+      "该研究为带宽受限的FP64工作负载提供了内存绑定之外的解决方案，具有重要的实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

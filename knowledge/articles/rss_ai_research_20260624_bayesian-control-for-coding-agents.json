@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-037",
+  "title": "Bayesian control for coding agents",
+  "source_url": "https://arxiv.org/abs/2606.24453",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于贝叶斯控制的编码代理编排方法，将工具使用决策建模为成本敏感的序贯假设检验问题。传统编码代理通常使用固定规则来协调LLM生成器与诊断工具、验证器等资源，忽略了不确定性。本文通过贝叶斯控制器维护对候选代码正确性的信念，并动态决定是收集更多证据、优化候选代码还是直接输出结果。这种方法能够在保证代码质量的同时，显著降低昂贵验证器的使用成本。论文在多个编程任务上进行了实验，结果表明贝叶斯控制策略相比固定规则方法在成本-质量权衡上取得了更优表现。这项工作为构建更高效、更智能的编码代理提供了理论框架和实践指导，尤其适用于需要平衡资源消耗与输出可靠性的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Bayesian Control",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:56:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将编码代理的工具编排问题形式化为成本敏感的序贯假设检验，通过贝叶斯更新动态决策，优于固定规则方法。",
+      "贝叶斯控制器能够有效平衡代码质量与验证成本，在保持高准确率的同时减少对昂贵验证器的依赖。",
+      "该方法为LLM代理的自动化资源分配提供了可解释的概率框架，具有扩展到其他多工具协作场景的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

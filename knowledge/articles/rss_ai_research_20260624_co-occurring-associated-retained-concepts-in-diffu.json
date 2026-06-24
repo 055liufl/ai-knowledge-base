@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-145",
+  "title": "Co-occurring associated retained concepts in Diffusion Unlearning",
+  "source_url": "https://arxiv.org/abs/2606.24192",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对扩散模型遗忘学习（unlearning）中“共现关联保留概念”（Co-occurring Associated Retained concepts, CARE）问题的解决方案。在扩散模型中，遗忘学习旨在移除特定有害概念（如裸体）的生成能力，但现有方法往往连带抑制了与目标概念共现的良性概念（如人物），导致模型无法生成包含这些良性概念的图像。作者正式定义了CARE问题，即那些不应被抑制但被意外移除的共现概念。论文分析了CARE产生的机制，并提出了一个框架，通过在遗忘过程中显式保留这些共现概念，来平衡有害内容的移除与良性内容的保持。该工作对于提升扩散模型遗忘学习的精确性和安全性具有重要意义，能够避免因过度遗忘而损害模型的有用性。论文提供了理论分析和实验验证，展示了在多个数据集和模型上的有效性。",
+  "tags": [
+    "Diffusion Models",
+    "Unlearning",
+    "Safety",
+    "Concept Preservation"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T11:05:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统定义并研究了扩散模型遗忘学习中的共现关联保留概念（CARE）问题，即遗忘目标概念时意外抑制良性共现概念。",
+      "提出了一种新的遗忘框架，能够在移除有害概念的同时显式保留共现的良性概念，平衡安全性与模型有用性。",
+      "通过理论分析和实验验证，证明了该方法在多个扩散模型和数据集上有效减少了CARE现象，同时保持了遗忘效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

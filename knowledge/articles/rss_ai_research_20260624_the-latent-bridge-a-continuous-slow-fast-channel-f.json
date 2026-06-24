@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260624-039",
+  "title": "The Latent Bridge: A Continuous Slow-Fast Channel for Real-Time Game Agents",
+  "source_url": "https://arxiv.org/abs/2606.24470",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“潜在桥梁”（The Latent Bridge）的连续慢速-快速通道架构，用于实时游戏代理。该架构旨在解决通用计算机使用场景（以游戏为最苛刻案例）中实时代理面临的延迟-质量权衡问题。具体而言，推理型视觉语言模型（如Qwen3-VL-8B-Thinking）虽然能够进行有效规划，但每次响应需要约1.5秒，远无法满足15Hz控制循环的要求；而反应型视觉语言模型（如MiniCPM-o 4.5）虽然能在毫秒级内行动，但在复杂任务上表现不佳。潜在桥梁通过一个连续的潜在空间通道，将慢速推理通道（用于长期规划）与快速反应通道（用于即时控制）无缝连接，使得代理既能进行深度思考，又能保持实时响应。该研究对于开发能够在复杂动态环境中实时决策的通用AI代理具有重要价值，特别是在游戏AI、机器人控制和自动化操作等领域。其创新之处在于提出了一种实用的混合架构，平衡了计算效率与决策质量，为实时AI系统的设计提供了新思路。",
+  "tags": [
+    "VLM",
+    "Real-Time Agent",
+    "Latency-Quality Tradeoff",
+    "Game AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-24T10:50:52Z",
+  "collected_at": "2026-06-24T10:56:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种连续慢速-快速通道架构，通过潜在空间桥接推理型VLM和反应型VLM，解决了实时代理中延迟与质量的矛盾。",
+      "推理型VLM（如Qwen3-VL-8B-Thinking）擅长长期规划但响应慢，反应型VLM（如MiniCPM-o 4.5）响应快但能力有限，两者互补。",
+      "该架构在游戏等实时场景中具有重要应用潜力，能够实现毫秒级控制与秒级规划的统一。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
