@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-116",
+  "title": "Faithful by Construction: Claim-Anchored Attribution for Multi-Document Summarization",
+  "source_url": "https://arxiv.org/abs/2606.23989",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为CAMS（Claim-Anchored Multi-document Summarization）的方法，旨在解决多文档摘要中的幻觉问题和归因不精确的挑战。传统端到端大语言模型（LLMs）虽然能生成流畅的摘要，但容易产生幻觉，且其归因通常基于整个文档或段落，属于事后生成，导致每个摘要陈述难以验证。CAMS重新审视了经典的“提取-选择-重写”（Extract-Select-Rewrite）范式，将中间表示重新定义为归因的基本单元，即“声明锚定”（claim-anchored）。该方法通过将摘要中的每个声明（claim）直接锚定到源文档中的具体证据，实现了“由构造保证忠实”（faithful by construction）的归因。这显著提升了摘要的可验证性和准确性，尤其适用于需要高可信度的多文档摘要场景。该工作值得关注，因为它提供了一种结构化的、可解释的解决方案，弥补了当前LLM在归因透明度上的不足，对信息检索、事实核查和知识管理等领域具有重要应用价值。",
+  "tags": [
+    "Multi-Document Summarization",
+    "Attribution",
+    "Faithfulness",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:55:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAMS通过将摘要中的每个声明锚定到源文档的具体证据，实现了由构造保证的忠实归因，有效缓解了幻觉问题。",
+      "该方法重新激活了经典的Extract-Select-Rewrite范式，并将其中间表示作为归因单元，提升了多文档摘要的可解释性和可验证性。",
+      "与端到端LLM的粗粒度事后归因不同，CAMS提供了细粒度的、结构化的归因机制，有助于构建更可信的摘要系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

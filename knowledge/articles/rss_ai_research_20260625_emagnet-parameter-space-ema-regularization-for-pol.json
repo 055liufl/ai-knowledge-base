@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260625-119",
+  "title": "EMAgnet: Parameter-Space EMA Regularization for Policy Gradient Self-Play in Large Games",
+  "source_url": "https://arxiv.org/abs/2606.23995",
+  "source_platform": "rss_ai_research",
+  "summary": "EMAgnet 是一种针对大规模两人零和博弈中策略梯度自对弈的算法改进。它通过引入参数空间指数移动平均（EMA）正则化，替代了传统的均匀分布正则化目标。在两人零和博弈中，均匀分布正则化虽然有效，但会无差别地鼓励所有动作，包括那些不可行的动作，从而影响策略的收敛效率和质量。EMAgnet 通过维护一个参数空间的 EMA 模型，作为正则化目标，使得策略更新更倾向于历史平均策略，从而更有效地利用博弈中的信息，提升策略的稳定性和最终性能。该工作基于 PPO 等策略梯度方法，在自对弈场景下与专门的博弈论算法（如 CFR）进行了对比，展示了 EMAgnet 在收敛速度和最终策略质量上的优势。这一研究对于大规模博弈（如扑克、战略游戏）的 AI 训练具有重要价值，因为它提供了一种简单而有效的正则化方法，可以显著提升现有强化学习算法的博弈求解能力。",
+  "tags": [
+    "Reinforcement Learning",
+    "Game Theory",
+    "Self-Play",
+    "Policy Gradient",
+    "Regularization"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:55:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EMAgnet 通过参数空间 EMA 正则化替代均匀分布正则化，在两人零和博弈自对弈中提升了策略梯度方法的收敛效率。",
+      "该方法在 PPO 等算法基础上实现简单，无需复杂博弈论计算，即可在大型博弈中取得与专用算法相当或更优的性能。",
+      "参数空间 EMA 正则化有效避免了均匀分布对不可行动作的过度鼓励，从而引导策略向更合理的平均策略收敛。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

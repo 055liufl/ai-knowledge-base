@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260625-139",
+  "title": "Breaking Shortcut Learning for Cross-Trial EEG-Guided Target Speech Extraction via Two-Stage Training",
+  "source_url": "https://arxiv.org/abs/2606.24164",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对脑电图（EEG）引导的目标语音提取任务中存在的捷径学习问题进行了深入分析，并提出了一种名为TRUST-TSE的两阶段训练框架。研究发现，现有的端到端模型在跨试验（cross-trial）场景下表现不佳，原因在于模型过度依赖特定试验中的EEG结构特征（如噪声模式或伪迹），这些特征作为“捷径”帮助模型在训练集内取得高准确率，但无法泛化到未见过的试验数据。TRUST-TSE通过两阶段训练策略：第一阶段让模型学习通用的EEG-语音关联，第二阶段通过对抗性训练或正则化方法抑制对试验特异性特征的依赖，从而打破捷径学习。该方法在多个公开数据集上验证了有效性，显著提升了跨试验的泛化能力。这项工作对于神经导向听觉技术（如智能助听器、脑机接口）的实际部署具有重要意义，因为它解决了模型从实验室环境到真实应用场景的关键障碍。",
+  "tags": [
+    "EEG",
+    "Target Speech Extraction",
+    "Shortcut Learning",
+    "Two-Stage Training",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:56:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有EEG引导的语音提取模型在跨试验场景下存在严重的捷径学习问题，导致泛化能力差。",
+      "TRUST-TSE通过两阶段训练框架有效抑制了试验特异性EEG特征的干扰，提升了模型对未见数据的适应性。",
+      "该研究为神经导向听觉技术的实际应用提供了关键解决方案，具有重要的临床和工程价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

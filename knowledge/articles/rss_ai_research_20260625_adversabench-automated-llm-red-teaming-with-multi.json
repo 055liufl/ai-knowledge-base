@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-047",
+  "title": "AdversaBench: Automated LLM Red-Teaming with Multi-Judge Confirmation and Cross-Model Transferability",
+  "source_url": "https://arxiv.org/abs/2606.24589",
+  "source_platform": "rss_ai_research",
+  "summary": "AdversaBench 是一个用于大规模语言模型（LLM）的自动化红队测试框架，旨在解决对抗性评估中的两个核心挑战：生成高难度输入和可靠地确认模型失败。该框架通过五个结构化操作符对种子提示进行变异，生成对抗性输入，然后查询目标模型。为了确保失败检测的准确性，AdversaBench 采用了一个三裁判小组（three-judge panel）进行确认，并在意见分歧时引入元裁判（meta-judge）作为决胜机制。论文在三个类别的45个种子上进行了实验，展示了该方法在跨模型迁移性方面的有效性。这项工作值得关注，因为它提供了一种系统化、可扩展的自动化红队测试方法，有助于提高LLM的安全性和鲁棒性，同时通过多裁判确认机制减少了误报，增强了评估的可靠性。",
+  "tags": [
+    "LLM",
+    "Red-Teaming",
+    "Adversarial Testing",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:49:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AdversaBench 通过五个结构化操作符（如替换、插入等）变异种子提示，生成多样化的对抗性输入，覆盖不同攻击类别。",
+      "采用三裁判加元裁判的确认机制，显著提高了失败检测的准确性和可靠性，减少了单一裁判可能带来的偏差。",
+      "实验验证了跨模型迁移性，表明在一种模型上生成的对抗性输入可能有效攻击其他模型，增强了框架的通用性。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

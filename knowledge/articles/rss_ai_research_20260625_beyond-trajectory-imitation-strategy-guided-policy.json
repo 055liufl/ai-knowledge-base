@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-009",
+  "title": "Beyond Trajectory Imitation: Strategy-Guided Policy Optimization for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.24064",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为策略引导策略优化（SGPO）的新方法，旨在解决大型语言模型（LLM）推理能力蒸馏中的关键问题。传统方法通过模仿特定解决方案轨迹来从强模型向弱模型转移推理能力，这主要转移了“回答什么”而非“如何推理”，导致模型倾向于记忆实例特定步骤，而非获得可迁移的问题解决技能，从而限制了模型对新问题的泛化能力。SGPO通过引入策略层面的引导，使弱模型学习强模型的推理策略而非具体轨迹，从而提升其推理能力和泛化性能。该方法在多个推理基准测试上展示了显著改进，为LLM推理能力的有效蒸馏提供了新思路。这项研究值得关注，因为它直接挑战了当前主流的轨迹模仿范式，提出了一种更本质的策略学习框架，有望推动LLM在复杂推理任务中的表现，并促进更高效的知识迁移方法的发展。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Policy Optimization",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:46:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SGPO通过策略引导而非轨迹模仿，解决了传统蒸馏方法中模型仅记忆实例步骤而缺乏泛化能力的问题。",
+      "该方法强调学习推理策略（how to reason）而非具体答案（what to answer），从而提升模型在新问题上的表现。",
+      "实验结果表明，SGPO在多个推理基准上优于现有轨迹模仿方法，验证了策略级蒸馏的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

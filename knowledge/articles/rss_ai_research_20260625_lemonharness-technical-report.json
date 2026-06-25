@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-025",
+  "title": "LemonHarness Technical Report",
+  "source_url": "https://arxiv.org/abs/2606.24311",
+  "source_platform": "rss_ai_research",
+  "summary": "LemonHarness 技术报告提出了一种针对大语言模型（LLM）代理在长时间任务中管理工作空间状态变化的新方法。随着 LLM 代理被应用于更复杂的多轮迭代任务，它们会频繁修改工作空间状态，但传统代理仅能观察工具输出和日志片段，而实际状态变化（如文件写入、临时工件生成）发生在文件系统中，缺乏明确边界，导致状态分散且难以追踪。该报告通过引入显式的工作空间边界和状态跟踪机制，解决了代理在长时间运行中状态管理混乱的问题，提升了代理的可靠性和可调试性。这项研究对于推动 LLM 代理在复杂、长期任务中的应用具有重要意义，尤其是在自动化编程、数据分析和多步骤工作流等场景中，能够显著减少因状态不一致导致的错误。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "State Management",
+    "Workspace"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:47:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 代理在长时间任务中面临工作空间状态分散的问题，传统方法仅依赖工具输出和日志，无法有效追踪文件系统级别的状态变化。",
+      "LemonHarness 通过定义显式的工作空间边界和状态跟踪机制，提升了代理对多轮迭代中状态变化的可控性和可观测性。",
+      "该研究为 LLM 代理在复杂、长期任务（如自动化编程、数据分析）中的可靠应用提供了关键技术支撑。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

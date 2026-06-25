@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-038",
+  "title": "CompressKV: Semantic-Retrieval-Guided KV-Cache Compression for Resource-Efficient Long-Context LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.24467",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 CompressKV 的新型 KV 缓存压缩方法，旨在解决长上下文大语言模型推理中因 KV 缓存带来的内存和计算瓶颈。与现有基于启发式评分对所有注意力头进行统一令牌驱逐的方法不同，CompressKV 利用语义检索技术，根据注意力头的不同功能进行差异化处理，从而保留关键令牌，减少性能损失。该方法特别适用于资源受限的硬件环境，通过智能选择哪些令牌应被保留或驱逐，实现了在保持模型生成质量的同时显著降低内存占用和推理延迟。该研究对于推动 LLM 在边缘设备上的部署具有重要意义，因为它提供了一种更高效、更可持续的推理方案。",
+  "tags": [
+    "LLM",
+    "KV-Cache",
+    "Compression",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:49:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 KV 缓存压缩方法忽略注意力头的不同功能，导致关键令牌被错误驱逐，CompressKV 通过语义检索引导的差异化策略解决了这一问题。",
+      "CompressKV 在资源受限硬件上实现了长上下文 LLM 推理的内存和计算效率提升，同时保持了模型性能。",
+      "该方法为 LLM 在边缘设备上的可持续部署提供了新思路，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

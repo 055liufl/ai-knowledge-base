@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260625-129",
+  "title": "CAVEWOMAN: How Large Language Models Behave Under Linguistic Input and Output Compression",
+  "source_url": "https://arxiv.org/abs/2606.24083",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一个名为Cavewoman的双通道评估协议，用于系统性地研究大语言模型在语言输入和输出压缩下的行为表现。研究背景是当前广泛推广的“穴居人风格”（即简短、省略语法、节省token）被认为可以降低推理成本，但实际效果取决于压缩发生在哪个通道（用户提示或模型响应）。Cavewoman协议通过任务准确率、实际每项成本和与模型无约束参考文本的一致性三个维度，对每次生成进行评分。该研究的重要性在于它首次提供了量化评估语言压缩对LLM性能影响的标准化方法，有助于开发者更科学地平衡推理效率与输出质量，避免盲目压缩导致的性能损失。论文通过实验揭示了不同压缩策略在不同任务上的差异化影响，为实际部署中的成本优化提供了理论依据。",
+  "tags": [
+    "LLM",
+    "Efficiency",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:56:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言压缩对LLM性能的影响取决于压缩通道（输入或输出），而非简单的一刀切策略。",
+      "Cavewoman协议提供了多维度的评估框架，包括任务准确率、实际成本和参考文本一致性，能更全面反映压缩效果。",
+      "研究发现，过度压缩输出可能导致任务准确率显著下降，而输入压缩在某些场景下更安全。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

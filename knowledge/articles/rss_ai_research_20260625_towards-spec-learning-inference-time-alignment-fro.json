@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-120",
+  "title": "Towards Spec Learning: Inference-Time Alignment from Preference Pairs",
+  "source_url": "https://arxiv.org/abs/2606.24004",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“spec learning”的新框架，旨在通过推理时对齐（inference-time alignment）来引导大型语言模型（LLM）的行为，而无需昂贵的偏好微调。传统方法依赖于手工设计提示词或进行偏好微调，前者脆弱且易错，后者成本高昂。Spec learning 利用少量用户指令和偏好判断对（preference pairs），在推理阶段动态调整模型输出，使其更符合用户意图。该方法通过从偏好对中学习隐式约束，避免了全模型微调的计算开销，同时提高了对齐的灵活性和效率。实验表明，spec learning 在多个任务上显著提升了模型响应质量，尤其是在需要细粒度控制的场景中。该工作为 LLM 对齐提供了一种轻量级、实用的替代方案，值得关注。",
+  "tags": [
+    "LLM",
+    "alignment",
+    "inference-time",
+    "preference learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:55:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Spec learning 通过推理时对齐，避免了昂贵的偏好微调，降低了计算成本。",
+      "该方法利用少量偏好判断对，在推理阶段动态调整模型输出，提高了对齐的灵活性和鲁棒性。",
+      "实验验证了 spec learning 在细粒度控制任务上的有效性，为 LLM 对齐提供了轻量级解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

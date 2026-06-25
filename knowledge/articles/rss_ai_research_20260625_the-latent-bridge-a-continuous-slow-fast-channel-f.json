@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-039",
+  "title": "The Latent Bridge: A Continuous Slow-Fast Channel for Real-Time Game Agents",
+  "source_url": "https://arxiv.org/abs/2606.24470",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Latent Bridge”的连续慢-快通道架构，用于解决实时游戏智能体在延迟与质量之间的权衡问题。在通用计算机使用场景中，尤其是游戏环境，智能体需要在数十毫秒内做出反应，同时还要进行长达数秒的规划。传统的推理型视觉语言模型（如Qwen3-VL-8B-Thinking）虽然能够进行有效的深思熟虑，但每次响应需要约1.5秒，远不能满足15Hz控制循环的要求；而反应型模型（如MiniCPM-o 4.5）虽然能在毫秒级内行动，但在复杂任务上表现不佳。Latent Bridge通过一个连续的慢-快通道，将推理型模型的深度规划能力与反应型模型的快速响应能力结合起来，使得智能体能够在保持实时性的同时，利用高级推理进行长期规划。这项研究对于开发能够在复杂动态环境中实时决策的通用AI智能体具有重要意义，尤其是在游戏、机器人控制和自动化操作等领域。它展示了如何通过架构创新来弥合不同时间尺度上的性能差距，为构建更高效、更智能的实时系统提供了新思路。",
+  "tags": [
+    "Real-Time Agent",
+    "VLM",
+    "Latency-Quality Tradeoff",
+    "Game AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:49:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种连续慢-快通道架构，有效结合了推理型VLM的深度规划能力和反应型VLM的快速响应能力，解决了实时游戏智能体在延迟与质量之间的根本矛盾。",
+      "通过实验验证了该架构在15Hz控制循环下的可行性，使得智能体能够在毫秒级响应中融入秒级规划，显著提升了复杂游戏场景中的表现。",
+      "该研究为通用计算机使用智能体的实时决策提供了新的范式，可能推动游戏AI、机器人控制和自动化操作等领域的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

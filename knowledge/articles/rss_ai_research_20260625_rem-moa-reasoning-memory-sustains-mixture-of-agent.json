@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260625-036",
+  "title": "ReM-MoA: Reasoning Memory Sustains Mixture-of-Agents Scaling",
+  "source_url": "https://arxiv.org/abs/2606.24437",
+  "source_platform": "rss_ai_research",
+  "summary": "ReM-MoA 是一种新型的混合代理（Mixture-of-Agents, MoA）架构，旨在解决现有 MoA 方法在深度增加时性能退化、过早饱和或停滞的问题。该论文提出通过两种机制实现持续扩展：一是排名推理记忆（Ranked Reasoning Memory），它持久存储并排名来自各层代理的推理轨迹，为后续层提供高质量上下文；二是动态层路由（Dynamic Layer Routing），根据当前推理状态自适应选择最相关的代理组合。实验表明，ReM-MoA 在多个基准测试（如数学推理、代码生成和常识问答）中显著优于传统 MoA 和单模型方法，尤其在深层架构下保持线性性能提升。该工作值得关注，因为它突破了多代理系统扩展性的关键瓶颈，为构建更强大、可扩展的推理系统提供了新范式，对 LLM 的推理效率和应用广度有重要影响。",
+  "tags": [
+    "Mixture-of-Agents",
+    "LLM",
+    "Reasoning",
+    "Memory",
+    "Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:48:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReM-MoA 通过排名推理记忆机制，有效缓解了多代理系统深度增加时的性能退化问题，实现了持续的推理扩展。",
+      "动态层路由策略使代理组合能根据当前推理状态自适应调整，提升了资源利用效率和推理质量。",
+      "该架构在数学、代码和常识推理等多个领域均优于现有 MoA 方法，展示了通用性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

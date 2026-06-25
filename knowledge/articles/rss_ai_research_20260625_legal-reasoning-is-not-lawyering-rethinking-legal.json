@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260625-082",
+  "title": "Legal Reasoning Is Not Lawyering: Rethinking Legal Benchmarks for Pro Se Access to Justice",
+  "source_url": "https://arxiv.org/abs/2606.23716",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对当前法律AI基准测试进行了批判性分析，指出其存在根本性缺陷：现有基准测试评估的是模型对法律专家预处理后的输入进行推理的能力，这实际上衡量的是模型性能的上限，而非其在实际司法公正场景中的真实表现。作者认为，如果目标是让大语言模型帮助无法获得律师服务的普通人（pro se）理解并行使法律权利，那么基准测试应模拟普通人直接面对原始法律材料（如法规条文、法院判决、法律表格）时的真实需求，而非依赖法律专家已经完成的案情摘要、法律问题提炼等预处理步骤。论文通过分析多个主流法律基准测试（如LegalBench、LexGLUE等）的设计，揭示了它们如何隐含地假设用户具备法律专业知识，从而高估了模型在真实司法公正场景中的实用性。作者提出了重新设计基准测试的原则，包括：测试模型从原始法律文本中提取关键信息的能力、评估模型对法律程序的理解（如如何填写法律表格）、以及衡量模型在缺乏法律术语背景下的解释能力。这项工作对于法律AI领域具有重要的方法论意义，提醒研究者避免在基准测试中引入隐性专家知识，从而更准确地评估AI技术对司法公正的实际贡献。",
+  "tags": [
+    "Legal AI",
+    "Benchmark",
+    "Access to Justice",
+    "LLM Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-25T10:42:31Z",
+  "collected_at": "2026-06-25T10:52:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前法律AI基准测试普遍假设输入已被法律专家预处理，这导致模型性能被高估，无法反映其在真实司法公正场景中的表现。",
+      "为评估LLM对无法获得律师服务的普通人的实际帮助，基准测试应模拟用户直接面对原始法律材料（如法规、表格）的场景，而非法律专家提炼后的法律问题。",
+      "重新设计基准测试需关注模型从原始文本中提取关键信息、理解法律程序以及用通俗语言解释法律概念的能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
