@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-124",
+  "title": "ProvenAI: Provenance-Native Traces of Evidence in Generated Answers",
+  "source_url": "https://arxiv.org/abs/2606.26449",
+  "source_platform": "rss_ai_research",
+  "summary": "ProvenAI 是一个针对检索增强生成（RAG）系统透明度的新框架，旨在解决当前系统中引用与生成答案之间缺乏可验证因果关系的问题。该框架将多跳问答中的透明度分解为三个独立可测量的层次：答案正确性、引用忠实性（即引用是否与基准支持证据一致）以及逐文档影响力（通过留一法评估每个文档对最终答案的贡献）。这一工作不仅提出了评估指标，还提供了可操作的测量方法，使得开发者能够更精确地诊断和提升RAG系统的可信度。值得关注的是，它首次将“证据溯源”从简单的引用匹配提升到因果影响层面，为构建可解释、可审计的AI系统提供了理论基础和实践工具。对于研究者和开发者而言，ProvenAI 填补了当前RAG系统在透明度评估上的空白，尤其适用于法律、医疗等对证据链要求严格的领域。",
+  "tags": [
+    "RAG",
+    "Transparency",
+    "Evaluation",
+    "Multi-hop QA"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:04:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ProvenAI 将透明度分解为答案正确性、引用忠实性和逐文档影响力三个可独立测量的层次，提供了比传统引用评估更细粒度的诊断能力。",
+      "通过留一法（leave-one-out）评估每个文档对答案的因果贡献，该框架能够揭示哪些源材料真正影响了生成结果，而非仅依赖表面引用。",
+      "该工作为多跳问答中的证据溯源建立了标准化评估基准，有助于推动RAG系统从“引用正确”向“证据可信”的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

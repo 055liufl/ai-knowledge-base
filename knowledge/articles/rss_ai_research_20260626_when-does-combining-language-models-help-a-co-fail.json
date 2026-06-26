@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260626-073",
+  "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+  "source_url": "https://arxiv.org/abs/2606.27288",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了多模型LLM系统（如路由、投票、级联、融合和混合代理）的性能上限。作者发现，这些系统的准确率受限于一个常被忽视的指标：所有模型在同一查询上同时出错的概率（β）。具体而言，任何输出为单一模型答案的策略，其准确率不能超过1-β。这与常用的平均成对错误相关性ρ不同，后者无法准确反映这一上限。通过对67个前沿模型进行实验，论文揭示了多模型组合的“共失败天花板”，即当所有模型在相同问题上都失败时，组合策略无法提升准确率。这一发现对设计更有效的多模型系统具有重要指导意义，强调了评估模型失败模式一致性的必要性。",
+  "tags": [
+    "LLM",
+    "Multi-Model",
+    "Ensemble",
+    "Routing",
+    "Voting"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:00:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模型LLM系统的准确率上限由所有模型同时出错的概率β决定，而非平均错误相关性ρ。",
+      "任何输出为单一模型答案的策略，其准确率无法超过1-β，揭示了组合策略的根本限制。",
+      "该发现挑战了当前多模型系统（如路由、投票、混合代理）能无限提升性能的假设，强调需关注模型失败模式的一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

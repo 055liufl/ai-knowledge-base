@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-118",
+  "title": "CoStream: Composing Simple Behaviors for Generalizable Complex Manipulation",
+  "source_url": "https://arxiv.org/abs/2606.26423",
+  "source_platform": "rss_ai_research",
+  "summary": "CoStream 提出了一种新颖的机器人操作框架，通过组合简单行为来实现长时域、高精度且具有泛化能力的复杂操作任务。该框架的核心思想是将复杂任务分解为一系列可复用的简单行为（如抓取、插入、推拉等），并通过一个流式组合机制将这些行为动态串联起来，从而在保持毫米级高精度的同时，能够零样本或小样本泛化到新任务。与传统的基于经典管线的方案相比，CoStream 避免了针对每个新任务重新设计昂贵的专用接口；与端到端策略相比，它又保留了模块化带来的可解释性和鲁棒性。论文以 GPU 插入 PCIe 插槽等高接触、高精度任务为典型案例，展示了 CoStream 在成功率、泛化能力和部署效率上的显著优势。这项工作值得关注，因为它为机器人领域长期存在的“高精度 vs 泛化性”矛盾提供了一种实用的折中方案，有望推动机器人操作在工业装配、家庭服务等场景中的实际应用。",
+  "tags": [
+    "Robot Manipulation",
+    "Behavior Composition",
+    "Generalization",
+    "Contact-Rich Tasks"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:04:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将复杂操作分解为可复用的简单行为，CoStream 在保持高精度的同时显著提升了任务泛化能力。",
+      "流式组合机制允许动态调整行为序列，无需针对新任务重新设计整个管线，降低了部署成本。",
+      "在 GPU 插入等高接触、高精度任务上，CoStream 的成功率和泛化性能优于传统管线方法和端到端策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

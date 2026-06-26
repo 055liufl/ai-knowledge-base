@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-029",
+  "title": "PMDformer: Patch-Mean Decoupling Information Transformer for Long-term Forecasting",
+  "source_url": "https://arxiv.org/abs/2606.26549",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为PMDformer的新型Transformer模型，专门用于长期时间序列预测（LTSF）。该模型通过引入补丁均值解耦（Patch-Mean Decoupling, PMD）机制，将时间序列的长期趋势与残差形状分离，从而更准确地捕捉跨补丁和跨变量的形状相似性。传统基于补丁的Transformer模型在处理不同尺度的序列时，难以同时建模趋势和形状特征，导致预测精度受限。PMDformer通过解耦策略，分别对趋势和残差进行建模，并利用注意力机制聚焦于形状相似性，显著提升了长期预测的准确性。实验在多个基准数据集（如电力、交通、天气等）上验证了其优越性，相比现有方法（如PatchTST、FEDformer等）取得了更低的预测误差。该工作对于能源管理、金融和交通等领域的实际应用具有重要价值，展示了在复杂时间序列中解耦不同成分的潜力。",
+  "tags": [
+    "Transformer",
+    "Time Series",
+    "Long-term Forecasting",
+    "Patch-Mean Decoupling"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T10:56:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PMDformer通过补丁均值解耦机制，将时间序列的趋势和残差形状分离，解决了传统补丁Transformer在跨尺度建模中的局限性。",
+      "该模型在多个长期预测基准上优于现有方法，验证了解耦策略对提升预测精度的有效性。",
+      "PMDformer的设计思路为时间序列预测中的多尺度特征提取提供了新视角，有望推动相关领域的研究进展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

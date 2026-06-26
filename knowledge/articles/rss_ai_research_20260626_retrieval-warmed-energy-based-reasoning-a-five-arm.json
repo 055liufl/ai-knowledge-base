@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260626-128",
+  "title": "Retrieval-Warmed Energy-Based Reasoning: A Five-Arm Ablation Methodology for Diffusion-as-Inference on Structured Reasoning Tasks",
+  "source_url": "https://arxiv.org/abs/2606.26476",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为检索预热能量基推理（RW-EBR）的方法，该方法将IRED能量基扩散模型与现代Hopfield轨迹记忆相结合，以加速结构化推理任务中的迭代推理过程。作者贡献了一个五臂消融方法论（包括oracle、best-constant、per-query-random、shuffled和aligned），用于系统地分离和评估扩散推理管道中不同组件的贡献。该方法通过检索预热机制，利用外部知识或历史轨迹来初始化扩散采样器，从而减少迭代步数并提高推理效率。实验在结构化推理任务上展示了RW-EBR的有效性，并揭示了不同消融设置下的性能差异。这项工作值得关注，因为它不仅提出了一种实用的推理加速技术，还提供了一种严谨的评估框架，有助于深入理解扩散模型在推理任务中的工作机制，对AI推理和模型优化领域具有重要参考价值。",
+  "tags": [
+    "Diffusion Model",
+    "Energy-Based Model",
+    "Structured Reasoning",
+    "Ablation Study",
+    "Retrieval-Augmented"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:04:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RW-EBR通过检索预热机制显著加速了能量基扩散模型的迭代推理过程，减少了所需迭代步数。",
+      "五臂消融方法论提供了一种系统性的评估框架，能够区分不同组件（如检索质量、记忆对齐）对整体性能的贡献。",
+      "实验表明，检索预热的效果高度依赖于检索内容与当前查询的对齐程度，而非简单的检索数量或随机初始化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

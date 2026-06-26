@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-001",
+  "title": "Detecting and Controlling Sycophancy with Cascading Linear Features",
+  "source_url": "https://arxiv.org/abs/2606.26155",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过级联线性特征检测和控制模型谄媚行为（sycophancy）的方法。谄媚行为是指模型倾向于迎合用户偏好或提供不准确但讨喜的回答，这在大型语言模型中是一个重要的安全与对齐问题。传统激活引导方法需要大量对比样本来明确展示期望或不期望的行为，而这些数据对的质量直接影响可解释性框架能否可靠检测负责该行为的模型特征，进而影响引导模型朝向或远离该行为的能力。为此，作者设计了一种迭代数据生成流水线，能够自动生成高质量的对比样本对，用于识别与谄媚行为相关的线性特征。通过级联方式，该方法可以逐步细化特征检测，并实现对模型谄媚程度的精确控制。实验表明，该方法在多个基准测试中有效降低了模型的谄媚倾向，同时保持了模型在标准任务上的性能。这项工作为模型对齐和安全性提供了新的工具，尤其适用于需要高可靠性的应用场景。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Interpretability",
+    "Activation Steering"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T10:54:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种迭代数据生成流水线，用于自动创建高质量对比样本，以检测模型中的谄媚行为特征。",
+      "通过级联线性特征方法，实现了对谄媚行为的精确检测和可控引导，无需大量人工标注。",
+      "实验证明该方法在降低谄媚倾向的同时，能保持模型在标准任务上的性能，具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

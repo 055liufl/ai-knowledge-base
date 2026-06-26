@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-107",
+  "title": "TEMPO-Diffusion: Temporally Exposed Malicious Poisoning of Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2606.26285",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TEMPO-Diffusion 的新型后门攻击框架，针对扩散模型。与传统的基于噪声的后门攻击不同，后者通常依赖输入时的触发器注入、非目标激活和分布外目标生成，这些假设降低了攻击的隐蔽性和实际相关性。TEMPO-Diffusion 将恶意分布偏移定位到时间上的、分布内的暴露，实现了更隐蔽和实用的攻击。该框架支持：(i) 目标攻击，即攻击者可以指定特定的输出目标；(ii) 时间暴露，即恶意行为仅在特定时间步或条件下触发；(iii) 分布内生成，确保生成的恶意样本在视觉上符合正常数据分布，难以被检测。这项工作揭示了扩散模型在安全方面的新漏洞，对于理解生成式 AI 的鲁棒性和安全性具有重要意义，值得关注因为它挑战了现有防御机制的有效性，并推动了对抗性攻击研究的前沿。",
+  "tags": [
+    "Diffusion Models",
+    "Backdoor Attack",
+    "Adversarial Machine Learning",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:03:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TEMPO-Diffusion 通过将恶意分布偏移限制在时间上的分布内暴露，显著提高了后门攻击的隐蔽性，克服了传统方法依赖分布外目标生成的局限。",
+      "该框架支持目标攻击和时间触发，使得攻击者可以精确控制恶意行为的发生时机和输出结果，增强了攻击的实用性和威胁性。",
+      "这项工作揭示了扩散模型在时间维度上的安全脆弱性，为设计更鲁棒的防御策略提供了新的视角和挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

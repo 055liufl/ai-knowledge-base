@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260626-066",
+  "title": "TOPS: First-Principles Visual Token Pruning via Constructing Token Optimal Preservation Sets for Efficient MLLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.27161",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为TOPS（通过构建令牌最优保留集实现第一性原理视觉令牌剪枝）的新方法，用于高效的多模态大语言模型（MLLM）推理。MLLMs在视觉-语言任务中表现出色，但大量视觉令牌导致计算开销巨大。现有的视觉令牌剪枝方法存在缺陷：基于注意力的标准倾向于保留冗余令牌，而基于多样性的标准往往忽略用户指令。TOPS从第一性原理出发，通过构建令牌最优保留集（TOPS），在剪枝过程中同时考虑视觉信息的多样性和与用户指令的相关性，从而在保持模型性能的同时显著减少计算成本。该方法在多个基准测试上验证了其有效性，展示了在推理效率与准确性之间的更好平衡。这项工作对于推动MLLM在实际应用中的部署具有重要意义，特别是在资源受限的环境中。",
+  "tags": [
+    "MLLM",
+    "Visual Token Pruning",
+    "Efficient Inference",
+    "First-Principles"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T10:59:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TOPS通过构建令牌最优保留集，同时优化视觉令牌的多样性和与指令的相关性，克服了现有剪枝方法的局限性。",
+      "该方法基于第一性原理，无需依赖复杂的注意力机制或外部知识，具有理论上的简洁性和可解释性。",
+      "实验结果表明，TOPS在多个MLLM基准上实现了显著的推理加速，同时保持了与原始模型相当的性能。",
+      "这项工作为高效MLLM推理提供了新的方向，尤其适用于需要实时或低延迟响应的应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

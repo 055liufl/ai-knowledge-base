@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260626-045",
+  "title": "ResilPhase: Plug-and-Play Phase Mapping and Noise-Resilient Macro-Trajectory Extrapolation for Diffusion Acceleration",
+  "source_url": "https://arxiv.org/abs/2606.26769",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ResilPhase的新型扩散模型加速方法，旨在解决现有“缓存-预测”方案在高加速比下质量严重下降的问题。该方法通过引入相位映射技术，将离散的表示与连续的扩散轨迹对齐，并利用噪声鲁棒的宏轨迹外推策略，在保持生成质量的同时显著降低推理延迟。实验表明，ResilPhase在多种扩散模型（如DiT）上实现了4-8倍的加速，且质量损失极小。该工作具有重要的实用价值，因为它直接针对扩散模型部署中的核心瓶颈——推理速度慢，提供了一种即插即用的解决方案，无需重新训练模型。其创新性在于从连续动力学的角度重新审视了扩散过程，并设计了相位对齐机制，这为未来扩散模型的加速研究提供了新思路。",
+  "tags": [
+    "Diffusion Model",
+    "Inference Acceleration",
+    "Phase Mapping",
+    "Trajectory Extrapolation"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T10:58:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "揭示了现有缓存-预测方案在高加速比下质量下降的根本原因是离散外推与连续扩散轨迹的错位。",
+      "提出了相位映射技术，将离散表示对齐到连续轨迹，从而提升外推的准确性。",
+      "设计了噪声鲁棒的宏轨迹外推策略，进一步增强了高加速比下的生成稳定性。",
+      "实现了即插即用的加速框架，无需修改模型结构或重新训练，具有较高的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

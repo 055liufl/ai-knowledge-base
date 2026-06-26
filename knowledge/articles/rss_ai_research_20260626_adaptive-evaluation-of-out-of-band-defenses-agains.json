@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-129",
+  "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.26479",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2606.26479）系统评估了针对LLM Agent中间接提示注入攻击的带外防御策略。与传统的模型内训练拒绝恶意指令不同，近期研究（2024-2026）转向在模型外部实施确定性安全策略，通过能力控制、信息流标签和参考监视器等机制来中介Agent的行为。文中重点分析了CaMeL、FIDES、Progent、RTBAS和FORGE等代表性系统，这些系统均报告了接近完美的防御效果。该研究首次对这些带外防御方法进行了适应性评估，探讨了在不同攻击场景下的鲁棒性和局限性。值得关注的是，它揭示了现有防御在对抗自适应攻击时可能存在的脆弱性，为构建更安全的LLM Agent提供了关键指导。这项工作对于理解AI安全中模型内与模型外防御的权衡、以及推动Agent系统的实际部署具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:05:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "带外防御（如CaMeL、FIDES）通过确定性策略在模型外部阻断注入攻击，避免了模型内训练的局限性，但面临自适应攻击的挑战。",
+      "现有防御系统在标准测试中表现优异，但在对抗性调整的攻击下可能失效，需进一步评估其鲁棒性。",
+      "信息流标签和参考监视器是实现安全中介的关键技术，但需平衡安全性与Agent的灵活性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-014",
+  "title": "Instruction Bleed: Cross-Module Interference in Prompt-Composed Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2606.26356",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了提示组合代理系统中的一种新型故障模式——组合行为泄漏（Compositional Behavioral Leakage, CBL）。在基于提示组合的代理系统中，当修改一个提示模块时，即使模块之间没有共享变量或可执行依赖，其他模块的行为也会发生静默偏移。作者指出，这种干扰的根本原因在于架构上的非隔离性：Transformer的自注意力机制在连接多个模块时，无法提供形式化的边界，导致上下文窗口中的信息相互渗透。该研究通过系统化的实验验证了CBL的存在，并分析了其在不同代理架构中的表现。这项工作对于理解大型语言模型在复杂任务中的行为稳定性具有重要意义，尤其是在多步骤、多模块的代理系统中，CBL可能导致难以调试的意外行为。值得关注的是，它揭示了当前提示工程实践中一个被忽视的脆弱性，为构建更鲁棒的代理系统提供了理论依据和设计指导。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Prompt Engineering",
+    "System Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T10:55:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示组合代理系统中存在组合行为泄漏（CBL），即修改一个提示模块会静默影响其他模块的行为，即使没有直接依赖。",
+      "CBL的根本原因是Transformer自注意力机制的架构非隔离性，无法为连接模块提供形式化边界。",
+      "该故障模式在现有提示工程实践中被忽视，可能导致难以调试的意外行为，影响系统可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

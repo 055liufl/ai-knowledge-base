@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-133",
+  "title": "Temporal Validity in Retrieval Memory: Eliminating Stale-Fact Errors for AI Agents over Evolving Knowledge",
+  "source_url": "https://arxiv.org/abs/2606.26511",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种解决检索增强生成（RAG）系统中时间有效性问题的方案。当前RAG系统缺乏时间模型，当事实发生变化（如函数重命名或API重构）时，系统会同时检索到过时和当前的值，且嵌入相似度几乎相同，导致智能体要么放弃回答，要么提供过时信息。作者通过校准数据集证明，余弦相似度无法有效区分矛盾事实，这是一个结构性问题。论文提出了一种新的记忆机制，通过引入时间戳和有效性验证，消除过时事实错误，使AI智能体能够处理动态变化的知识。该研究对于构建可靠、实时的知识检索系统具有重要意义，特别是在需要持续更新知识的应用场景中，如代码库管理、实时新闻分析和动态数据库查询。",
+  "tags": [
+    "RAG",
+    "Knowledge Retrieval",
+    "Temporal Validity",
+    "AI Agent"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:05:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG系统缺乏时间模型导致过时事实错误，这是一个结构性问题而非简单工程缺陷",
+      "余弦相似度无法区分矛盾事实，需要引入时间有效性机制",
+      "通过时间戳和有效性验证可以消除过时事实错误，提升AI智能体在动态知识环境中的可靠性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

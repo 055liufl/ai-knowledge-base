@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-130",
+  "title": "Speaking Numbers to LLMs: Multi-Wavelet Number Embeddings for Time Series Forecasting",
+  "source_url": "https://arxiv.org/abs/2606.26487",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TempoWave的新型时间序列预测方法，旨在解决大语言模型（LLM）在处理连续数值时面临的离散化与数值顺序保持问题。传统LLM的token化与嵌入接口主要针对自然语言设计，难以准确捕捉连续数值的细微变化和顺序关系，导致时间序列预测的可靠性下降。TempoWave通过多小波数字嵌入（Multi-Wavelet Number Embeddings）将每个标量观测值映射为数字级表示，从而在保留数值顺序的同时，使LLM能够更好地理解时间序列中的上下文信息。该方法作为即插即用模块，可无缝集成到现有LLM框架中。实验表明，TempoWave在多个时间序列基准数据集上显著提升了预测精度，尤其是在处理长序列和复杂模式时表现突出。这项工作值得关注，因为它弥合了LLM与连续数值数据之间的鸿沟，为时间序列预测领域提供了一种高效、灵活的解决方案，同时保持了LLM在融合异构文本信号方面的优势。",
+  "tags": [
+    "LLM",
+    "Time Series Forecasting",
+    "Numerical Embedding",
+    "Wavelet Transform"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:05:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TempoWave通过多小波数字嵌入解决了LLM在时间序列预测中数值顺序丢失的问题，提升了预测可靠性。",
+      "该方法作为即插即用模块，可无缝集成到现有LLM框架中，无需重新训练模型。",
+      "实验证明TempoWave在多个基准数据集上优于传统方法，尤其在长序列和复杂模式预测中表现突出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260626-108",
+  "title": "SSM Adapters via Hankel Reduced-order Modeling: Injection Site Determines Task Suitability in Long-Context Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2606.26290",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在需要序列状态累积的任务中，参数高效微调（PEFT）是否可以从状态空间模型（SSM）适配器中受益，以及MLP块是否是更好的注入位置。作者提出了Hankel降阶模型（HRM）适配器，这是一种基于SSM的残差模块，通过经验Hankel Grammian的平衡截断进行初始化。研究关注于长上下文微调场景，发现注入位置（如注意力层或MLP层）对任务适配性有显著影响。该工作为PEFT在序列建模任务中的应用提供了新视角，特别是针对需要长期依赖和状态累积的场景。HRM适配器结合了SSM的序列建模能力和PEFT的效率，有望提升长上下文任务的微调效果。值得关注的是，该研究不仅提出了新方法，还揭示了注入位置与任务类型之间的匹配关系，为未来PEFT设计提供了指导。",
+  "tags": [
+    "PEFT",
+    "SSM",
+    "Long-Context",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-06-26T10:52:07Z",
+  "collected_at": "2026-06-26T11:03:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HRM适配器通过平衡截断初始化，有效结合了SSM的序列建模能力与PEFT的效率。",
+      "注入位置（注意力层 vs MLP层）对长上下文微调任务适配性有决定性影响。",
+      "SSM适配器在需要序列状态累积的任务中优于传统注意力投影器微调。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
