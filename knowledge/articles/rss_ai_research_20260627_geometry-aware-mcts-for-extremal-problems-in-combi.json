@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260627-017",
+  "title": "Geometry-Aware MCTS for Extremal Problems in Combinatorial Geometry",
+  "source_url": "https://arxiv.org/abs/2606.26399",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种几何感知的蒙特卡洛树搜索（MCTS）方法，用于解决组合几何中的极值问题。这类问题要求在一个 n×n 网格中寻找满足严格全局几何约束的点配置，例如最大无三点共线集或最小凸包面积等。传统精确求解器因组合爆炸而无法扩展，而标准强化学习和基于 Transformer 的模型则面临稀疏奖励导致的“有效性悬崖”以及二次方 token 消耗限制。作者通过将几何先验（如对称性、距离约束）融入 MCTS 的搜索策略，显著提升了搜索效率，并能在中等规模网格上找到接近最优的解。该方法在多个经典极值问题上取得了优于现有方法的结果，展示了将领域知识与搜索算法结合的潜力。这项工作值得关注，因为它为处理具有严格几何约束的组合优化问题提供了一种新范式，可能推动计算几何、运筹学和 AI 规划交叉领域的发展。",
+  "tags": [
+    "MCTS",
+    "Combinatorial Geometry",
+    "Reinforcement Learning",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:13:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "几何感知的 MCTS 通过融入对称性和距离约束等几何先验，有效克服了传统搜索和强化学习方法在稀疏奖励环境中的局限性。",
+      "该方法在 n×n 网格的极值问题上显著优于精确求解器和基于 Transformer 的模型，展示了领域知识增强搜索的实用性。",
+      "研究揭示了组合几何问题中“有效性悬崖”和二次 token 消耗的关键瓶颈，并为类似结构优化问题提供了可迁移的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

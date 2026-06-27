@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260627-129",
+  "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.26479",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM代理中间接提示注入攻击的带外防御自适应评估方法。研究背景是2024至2026年间，业界已形成一种共识：与其训练模型拒绝恶意指令，不如在模型外部通过确定性策略来强制执行安全措施，以中介代理的行为。具体系统如CaMeL、FIDES、Progent、RTBAS和FORGE，它们利用能力、信息流标签和引用监视器来实现这一防御，并报告了接近完美的防御效果。然而，本文指出这些防御在自适应攻击者面前可能失效，因为攻击者可以针对防御机制进行优化。因此，作者提出了一种自适应评估框架，用于系统性地测试这些带外防御的鲁棒性。该框架通过模拟攻击者不断调整策略来绕过防御，从而评估防御的真实有效性。这项工作值得关注，因为它揭示了当前主流防御策略的潜在脆弱性，并为构建更安全的LLM代理系统提供了关键指导。通过自适应评估，研究者可以更准确地理解防御的局限性，并推动更健壮的安全机制的发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection",
+    "Adversarial Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:21:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前主流带外防御策略（如CaMeL、FIDES）在自适应攻击者面前可能失效，需要系统性评估其鲁棒性。",
+      "自适应评估框架通过模拟攻击者策略优化，能更真实地反映防御机制的脆弱性。",
+      "防御设计需考虑攻击者的自适应行为，而非仅依赖静态安全策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

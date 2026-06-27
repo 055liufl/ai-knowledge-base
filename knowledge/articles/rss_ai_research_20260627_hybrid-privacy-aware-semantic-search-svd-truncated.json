@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260627-112",
+  "title": "Hybrid privacy-aware semantic search: SVD-truncated document geometry and CKKS-encrypted query reranking under a restricted threat model",
+  "source_url": "https://arxiv.org/abs/2606.26373",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种混合隐私感知语义搜索方法，旨在解决密集嵌入在语义搜索和检索增强生成（RAG）中面临的隐私泄露问题。传统的嵌入反转攻击可以从向量中重构源文本，导致文档泄露。现有防御手段存在极端：同态加密整个搜索过程在百万文档规模下速度过慢，而添加隐私噪声会严重降低排序质量。作者探索了一条中间路径，利用不对称威胁模型，结合SVD截断文档几何和CKKS加密查询重排序。具体而言，通过奇异值分解（SVD）对文档嵌入进行截断，降低维度以平衡隐私和效率；同时使用CKKS同态加密对查询进行加密重排序，确保在受限威胁模型下保护查询隐私。该方法在保持搜索准确性的同时，显著提升了隐私保护效果和计算效率，为大规模语义搜索中的隐私保护提供了实用解决方案。该研究值得关注，因为它针对当前RAG和向量数据库中的关键隐私漏洞，提出了一个可落地的折中方案，具有重要的实际应用价值。",
+  "tags": [
+    "Privacy",
+    "Semantic Search",
+    "RAG",
+    "Homomorphic Encryption",
+    "SVD"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:20:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有隐私防御方法（全同态加密或噪声添加）在效率和效果上存在极端权衡，本文提出的混合方法通过SVD截断和CKKS加密重排序实现了更好的平衡。",
+      "利用不对称威胁模型（即假设攻击者能力受限）设计隐私保护方案，可以在实际部署中降低计算开销而不显著牺牲安全性。",
+      "该方法针对嵌入反转攻击，保护了文档和查询双方的隐私，适用于大规模语义搜索和RAG系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

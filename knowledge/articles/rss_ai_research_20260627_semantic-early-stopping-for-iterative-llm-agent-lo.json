@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260627-062",
+  "title": "Semantic Early-Stopping for Iterative LLM Agent Loops",
+  "source_url": "https://arxiv.org/abs/2606.27009",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对迭代式LLM智能体循环的语义早停机制。在多智能体LLM循环（如Writer起草、Critic修订）中，传统方法使用固定迭代次数上限作为终止条件，这是一种语法层面的终止开关，无法感知答案是否仍在改进，导致在简单输入上浪费token，在困难输入上过早截断。该研究提出基于语义的早停：当连续草稿的嵌入向量在语义上停止变化（如余弦距离低于阈值）时，循环终止。这种方法能动态适应任务难度，在保证输出质量的同时显著降低计算开销。该工作关注LLM智能体系统的效率优化，具有重要的实用价值，尤其适用于需要多轮迭代优化的场景，如代码生成、文本修订等。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Early-Stopping",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:16:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定迭代次数上限是语法层面的终止条件，无法感知语义改进，导致资源浪费或输出不充分。",
+      "基于嵌入向量余弦距离的语义早停能动态适应任务难度，在保证质量的同时减少计算开销。",
+      "该方法适用于多智能体LLM循环，如Writer-Critic模式，可推广至其他迭代优化任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

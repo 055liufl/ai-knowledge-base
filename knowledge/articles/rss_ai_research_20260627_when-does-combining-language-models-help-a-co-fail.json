@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260627-073",
+  "title": "When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models",
+  "source_url": "https://arxiv.org/abs/2606.27288",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了多模型LLM系统（如路由、投票、级联、融合和混合代理）在提升准确性方面的局限性。作者发现，这些系统的性能提升受限于一个关键指标——所有模型在同一查询上同时出错的概率（beta）。具体而言，对于输出为单一模型答案的策略，其准确率无法超过1减去beta。这与常用的平均成对错误相关性（rho）不同，后者无法揭示这一上限。论文基于67个前沿模型进行了实证分析，揭示了多模型组合的“共失效天花板”现象，为系统设计提供了理论指导。该研究值得关注，因为它挑战了多模型系统必然优于单模型的普遍假设，并提出了更有效的评估指标。",
+  "tags": [
+    "LLM",
+    "Ensemble",
+    "Multi-Model Systems"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:17:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模型LLM系统的准确率上限由所有模型同时出错的概率（beta）决定，而非平均错误相关性。",
+      "对于输出单一模型答案的策略，准确率无法超过1减去beta，这为系统设计提供了理论边界。",
+      "常用诊断指标（如rho）不足以揭示多模型组合的性能上限，需要关注共失效概率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

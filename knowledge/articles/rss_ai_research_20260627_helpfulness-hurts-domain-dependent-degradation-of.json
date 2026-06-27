@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260627-077",
+  "title": "Helpfulness Hurts: Domain-Dependent Degradation of Mid-Trained Compassion Values Under Post-Training",
+  "source_url": "https://arxiv.org/abs/2606.26102",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了标准后训练流程（包括监督微调SFT和强化学习RL）在提升语言模型帮助性的同时，是否会对预训练阶段植入的价值观（如动物同情心）产生意外退化。研究者以Llama 3.1 8B模型为基础，在同情心导向的合成数据上进行中期训练，并通过Dolly数据集进行SFT（帮助性训练），随后评估不同领域后训练数据对同情心价值观保留的影响。实验发现，后训练数据的领域差异会显著影响模型对同情心价值观的保持程度，某些领域的帮助性训练可能导致同情心价值观的显著退化。该研究揭示了AI对齐中帮助性与价值观保留之间的潜在冲突，对构建安全、符合伦理的语言模型具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "AI Alignment",
+    "Value Degradation",
+    "Post-Training"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:18:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "后训练中的帮助性优化（SFT/RL）可能意外削弱模型在预训练阶段习得的价值观，如动物同情心。",
+      "不同领域的后训练数据对价值观保留的影响存在差异，某些领域的数据更容易导致价值观退化。",
+      "该研究强调了AI对齐中多目标优化（帮助性与价值观）的复杂性，需要更精细的训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

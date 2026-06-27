@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260627-108",
+  "title": "SSM Adapters via Hankel Reduced-order Modeling: Injection Site Determines Task Suitability in Long-Context Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2606.26290",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在需要序列状态累积的任务中，参数高效微调（PEFT）方法的效果。传统PEFT通常针对注意力投影器，但本文发现，对于这类任务，状态空间模型（SSM）适配器可能更有效，并且MLP模块可能是更好的注入位置。为此，作者提出了Hankel降阶模型（HRM）适配器，这是一种基于SSM的残差模块，通过经验Hankel Grammian的平衡截断进行初始化。该研究为长上下文微调中的任务适配提供了新视角，值得关注，因为它可能改进PEFT在序列建模任务中的表现，尤其是在需要长期依赖的场景中。",
+  "tags": [
+    "PEFT",
+    "SSM",
+    "Long-Context",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-06-27T10:09:12Z",
+  "collected_at": "2026-06-27T10:20:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统PEFT针对注意力投影器，但在序列状态累积任务中效果有限，SSM适配器可能更优。",
+      "MLP模块作为注入位置可能比注意力投影器更适合长上下文微调。",
+      "HRM适配器通过Hankel降阶模型初始化，提供了一种新的SSM-based残差模块设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
