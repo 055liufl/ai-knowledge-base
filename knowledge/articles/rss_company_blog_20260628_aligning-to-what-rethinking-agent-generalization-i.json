@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260628-071",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队发布的技术博客，核心探讨了在构建通用 AI Agent 时，如何通过对齐（Alignment）策略来提升 Agent 的泛化能力。文章指出，传统的对齐方法（如 RLHF）主要关注模型输出的安全性与有用性，但在 Agent 场景下，模型需要具备在复杂、多步任务中自主规划、工具调用和错误恢复的能力。MiniMax 提出了 M2 模型，通过一种新的对齐框架，将 Agent 的泛化能力作为对齐目标，而非仅仅关注最终答案的正确性。具体而言，他们引入了“过程奖励模型”（Process Reward Model）和“行为克隆”（Behavior Cloning）等技术，让模型在训练中学习到更鲁棒的决策路径。实验表明，M2 在多个未见过的 Agent 任务（如网页导航、API 调用）上表现出显著的零样本泛化能力，超越了同等规模的基线模型。这篇文章之所以值得关注，是因为它挑战了当前 LLM Agent 研究中“以任务准确率为唯一指标”的范式，提出了以“泛化能力”为核心的对齐新思路，对于推动 Agent 从实验室走向真实应用具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-28T10:28:35Z",
+  "collected_at": "2026-06-28T10:38:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对齐方法（如 RLHF）在 Agent 场景下存在局限，需要将泛化能力作为对齐目标而非仅关注输出正确性。",
+      "通过过程奖励模型和行为克隆等技术，可以训练模型在复杂多步任务中学习鲁棒的决策路径，提升零样本泛化能力。",
+      "MiniMax M2 在多个未见过的 Agent 任务上展现了显著超越基线模型的泛化性能，验证了以泛化为核心的对齐策略的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

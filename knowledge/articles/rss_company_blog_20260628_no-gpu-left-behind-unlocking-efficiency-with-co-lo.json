@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260628-125",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在TRL（Transformer Reinforcement Learning）框架中集成vLLM（一种高效的大语言模型推理引擎）的共置部署方案，旨在解决强化学习训练过程中GPU利用率不均的问题。传统上，强化学习训练需要同时运行策略模型和参考模型，导致部分GPU闲置。通过将vLLM作为推理后端与训练进程共置于同一GPU集群，可以动态分配计算资源，实现推理与训练的无缝切换，从而显著提升GPU利用率。该方案特别适用于PPO等需要频繁采样和评估的强化学习算法，能够减少显存碎片、降低通信开销，并支持批量推理。实验表明，在相同硬件条件下，共置部署可将训练吞吐量提升2-3倍，同时保持模型性能不变。这一技术对于降低大模型训练成本、加速RLHF（基于人类反馈的强化学习）流程具有重要意义，尤其适合资源受限的研究团队和企业。",
+  "tags": [
+    "vLLM",
+    "RLHF",
+    "GPU优化",
+    "强化学习"
+  ],
+  "author": null,
+  "published_at": "2026-06-28T10:28:35Z",
+  "collected_at": "2026-06-28T10:43:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共置vLLM与TRL训练进程可消除GPU闲置，提升资源利用率2-3倍",
+      "动态资源调度机制支持推理与训练的无缝切换，减少显存碎片",
+      "该方案显著降低RLHF训练成本，尤其适合PPO等采样密集型算法"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

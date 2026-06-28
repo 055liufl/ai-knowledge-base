@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260628-134",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为一个更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够从图像中提取文本。然而，在原始版本中，模型有时会产生幻觉，即输出与图像内容不符的文本。为了解决这个问题，作者通过收集高质量的真实世界 OCR 数据集，并采用特定的微调策略（如使用对比学习、数据增强和损失函数调整），显著提升了模型的准确性和忠实度。微调后的模型在多个基准测试中表现出色，特别是在处理复杂文档、手写文本和低质量图像时，幻觉率大幅降低。这项工作对于需要高精度 OCR 的应用场景（如文档数字化、自动化数据录入）具有重要意义，展示了通过针对性微调来优化 VLM 在特定任务上表现的潜力。文章还提供了详细的微调步骤和代码示例，便于开发者复现和进一步改进。",
+  "tags": [
+    "OCR",
+    "Fine-tuning",
+    "VLM",
+    "Document AI"
+  ],
+  "author": null,
+  "published_at": "2026-06-28T10:28:35Z",
+  "collected_at": "2026-06-28T10:44:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过微调可以显著降低 VLM 在 OCR 任务中的幻觉问题，提升文本提取的忠实度。",
+      "高质量的真实世界数据集和针对性的微调策略（如对比学习）是提升 OCR 性能的关键。",
+      "微调后的 olmOCR 在复杂文档、手写文本和低质量图像上表现更优，适用于高精度 OCR 场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

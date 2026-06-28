@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260628-006",
+  "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+  "source_url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+  "source_platform": "rss_general_tech",
+  "summary": "DSpark 是一种基于推测解码（Speculative Decoding）的加速技术，旨在提升大型语言模型（LLM）的推理效率。该技术由 DeepSeek 团队提出，通过引入一个轻量级的草稿模型（draft model）来快速生成候选 token 序列，然后由目标 LLM 进行并行验证，从而在不牺牲生成质量的前提下显著降低推理延迟。DSpark 的核心创新在于其高效的草稿模型设计和验证机制，能够适应不同的 LLM 架构和推理场景。该技术特别适用于需要低延迟响应的应用，如实时对话系统、代码生成和交互式 AI 助手。DSpark 的发布为 LLM 推理优化提供了新的思路，尤其是在资源受限的环境中，能够平衡计算成本与生成速度。该论文提供了详细的实验数据，展示了在多种基准测试上的加速效果，证明了其在实际部署中的潜力。",
+  "tags": [
+    "LLM",
+    "推理加速",
+    "推测解码",
+    "DeepSeek"
+  ],
+  "author": null,
+  "published_at": "2026-06-28T10:28:24Z",
+  "collected_at": "2026-06-28T10:30:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DSpark 通过推测解码技术，利用轻量级草稿模型生成候选 token，再由目标 LLM 并行验证，显著降低推理延迟。",
+      "该技术在不影响生成质量的前提下，实现了 2-4 倍的推理加速，适用于多种 LLM 架构和实时应用场景。",
+      "DSpark 的草稿模型设计高效，能够适应不同任务，如对话、代码生成等，展示了良好的通用性和实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

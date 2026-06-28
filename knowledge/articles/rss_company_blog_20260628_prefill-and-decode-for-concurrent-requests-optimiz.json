@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260628-135",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了在大型语言模型（LLM）推理过程中，针对并发请求优化预填充（Prefill）和解码（Decode）阶段性能的关键技术。文章首先解释了LLM推理的两个主要阶段：预填充阶段处理输入提示并生成键值缓存，解码阶段逐步生成输出令牌。针对高并发场景，文章分析了预填充和解码阶段的计算与内存访问特性差异，指出预填充是计算密集型（compute-bound），而解码是内存带宽密集型（memory-bound）。为了优化性能，文章提出了几种策略：包括动态批处理（dynamic batching）以合并不同长度的请求，连续批处理（continuous batching）以在解码阶段实时插入新请求，以及使用KV缓存管理技术减少内存开销。此外，文章还讨论了如何通过调整预填充和解码的并行度、使用更高效的内存分配策略（如PagedAttention）来提升吞吐量。这些优化对于部署高并发LLM服务（如聊天机器人、代码助手）至关重要，能够显著降低延迟并提高资源利用率。文章提供了实用的性能调优建议，并引用了相关研究（如vLLM、TensorRT-LLM）作为参考。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Concurrent Requests",
+    "Prefill",
+    "Decode"
+  ],
+  "author": null,
+  "published_at": "2026-06-28T10:28:35Z",
+  "collected_at": "2026-06-28T10:44:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM推理的预填充阶段是计算密集型，解码阶段是内存带宽密集型，优化需针对不同特性分别处理。",
+      "连续批处理和动态批处理是提升并发请求吞吐量的关键策略，能有效减少空闲等待时间。",
+      "KV缓存管理（如PagedAttention）和高效内存分配对降低解码阶段的内存瓶颈至关重要。",
+      "调整预填充和解码的并行度可以平衡计算与内存资源，从而优化整体性能。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
