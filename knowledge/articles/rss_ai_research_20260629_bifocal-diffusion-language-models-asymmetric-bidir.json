@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-063",
+  "title": "Bifocal Diffusion Language Models: Asymmetric Bidirectional Context for Parallel Generation",
+  "source_url": "https://arxiv.org/abs/2606.27732",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Bifocal Diffusion Language Models（双焦扩散语言模型）的新型离散扩散语言模型架构，旨在解决现有离散扩散语言模型在并行生成中面临的双向注意力与KV缓存不兼容的困境。传统离散扩散语言模型采用双向注意力机制，虽然能通过访问完整上下文提升生成质量，但无法利用KV缓存加速推理，导致批处理吞吐量受限。该研究通过引入非对称双向上下文设计，在保持并行生成速度优势的同时，实现了与KV缓存的兼容性，从而显著提升推理效率。论文通过实验验证了该方法在生成质量和推理速度上的平衡，为离散扩散语言模型的实际部署提供了新的解决方案。该工作值得关注，因为它针对离散扩散语言模型的核心架构矛盾提出了创新性改进，有望推动扩散模型在文本生成等任务中的实际应用，特别是在需要高吞吐量的场景下。",
+  "tags": [
+    "Diffusion Model",
+    "LLM",
+    "Parallel Generation",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离散扩散语言模型的双向注意力机制虽提升生成质量，但无法使用KV缓存，限制批处理吞吐量。",
+      "提出非对称双向上下文设计，在保持并行生成速度的同时兼容KV缓存，实现推理效率提升。",
+      "该方法在生成质量和推理速度之间取得了更好的平衡，为扩散语言模型的实际部署提供了新思路。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

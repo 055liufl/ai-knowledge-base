@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-132",
+  "title": "Agentic Episodic Control",
+  "source_url": "https://arxiv.org/abs/2506.01442",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Agentic Episodic Control (AEC)”的新型强化学习架构，旨在解决传统强化学习在数据效率和泛化能力上的根本局限。现有基于情节记忆的方法受限于两个关键问题：一是浅层编码器导致的表征瓶颈，使得记忆存储的信息不够丰富；二是检索困境，即情节记忆被不加区分地访问，导致无关或有害信息干扰决策。AEC通过引入一个智能体控制器来动态决定何时以及如何访问外部情节记忆，从而实现了更高效和精准的记忆利用。该架构结合了深度编码器以增强表征能力，并采用基于元学习的检索策略，使智能体能够根据当前状态和任务需求自适应地选择相关经验。实验结果表明，AEC在多个标准RL基准任务上显著提升了样本效率和泛化性能，尤其是在需要长期依赖和稀疏奖励的场景中表现突出。这项工作为将外部记忆与强化学习智能体深度整合提供了新思路，有望推动RL在复杂现实应用中的发展。",
+  "tags": [
+    "Reinforcement Learning",
+    "Episodic Memory",
+    "Meta-Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:51:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AEC通过智能体控制器动态管理情节记忆访问，解决了传统方法中记忆检索无区分性的问题，提升了记忆利用效率。",
+      "引入深度编码器克服了浅层编码器的表征瓶颈，使记忆存储的状态信息更加丰富和有用。",
+      "基于元学习的检索策略使智能体能根据当前任务自适应选择相关经验，显著增强了泛化能力。",
+      "在稀疏奖励和长期依赖任务上，AEC相比基线方法取得了显著的样本效率和性能提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

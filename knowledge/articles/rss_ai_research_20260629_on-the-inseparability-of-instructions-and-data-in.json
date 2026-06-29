@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-038",
+  "title": "On the Inseparability of Instructions and Data in Shared-Embedding Sequence Models",
+  "source_url": "https://arxiv.org/abs/2606.27567",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文从数学上证明了在共享嵌入架构的序列模型中，完美防止提示注入攻击是不可能的。研究将提示系统形式化为“提示动作模型”，其输出包括控制权威动作（如拒绝决策、工具授权）。作者指出，当前所有针对提示注入的防御方案均已被攻破，而这一现象并非偶然，而是源于共享嵌入架构中缺乏强制性的控制-数据分离。该工作为LLM集成应用的安全风险提供了理论下限，强调了架构设计本身的安全局限性。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Prompt Injection",
+    "Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:42:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在共享嵌入架构中，指令与数据无法完全分离，导致提示注入防御存在数学上的不可能性。",
+      "所有现有提示注入防御方案均被攻破，论文证明这是架构固有缺陷而非偶然。",
+      "形式化模型（Prompted Action Models）为理解LLM安全风险提供了理论框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-011",
+  "title": "ATOD: Annealed Turn-aware On-policy Distillation for Multi-turn Autonomous Agents",
+  "source_url": "https://arxiv.org/abs/2606.27814",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为ATOD（退火式回合感知在线策略蒸馏）的方法，用于训练小型语言模型代理以执行多轮交互任务。传统在线策略蒸馏（OPD）在早期阶段通过密集的教师指导实现快速模仿，但当学生模型接近教师模型时，性能提升趋于饱和，限制了最终性能上限。强化学习（RL）直接优化环境奖励并鼓励探索性改进，但样本效率较低。ATOD通过引入退火机制和回合感知策略，在训练过程中动态调整蒸馏与RL的权重，从而在保持快速模仿的同时突破性能瓶颈。该方法在多个多轮交互基准任务上取得了显著提升，展示了其在训练高效、高性能语言代理方面的潜力。该研究对于提升自主代理在复杂、长期任务中的能力具有重要意义，特别是在需要平衡模仿学习与探索性优化的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Distillation",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:40:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ATOD通过退火机制动态调整在线策略蒸馏与强化学习的权重，解决了OPD在接近教师模型时性能饱和的问题。",
+      "该方法在多个多轮交互任务中显著提升了小型语言代理的性能，展示了平衡模仿与探索的有效性。",
+      "回合感知策略使模型能够更好地适应多轮交互的上下文依赖，增强了长期任务中的决策能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

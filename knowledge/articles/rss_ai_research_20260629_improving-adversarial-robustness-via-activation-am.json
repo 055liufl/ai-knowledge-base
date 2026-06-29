@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260629-070",
+  "title": "Improving Adversarial Robustness via Activation Amplification and Attenuation",
+  "source_url": "https://arxiv.org/abs/2606.27784",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Activation Amplification and Attenuation (A3) 的轻量级插件模块，旨在提升神经网络的对抗鲁棒性。与传统的通过剪枝、掩码或特征重校准来减少非鲁棒特征影响的防御方法不同，A3 通过简单的激活缩放机制，联合学习放大和衰减这些信号。该方法的核心思想是让模型自适应地调整内部激活值，从而在对抗攻击下保持稳定的预测性能。A3 模块设计为即插即用，可轻松集成到现有网络架构中，无需大幅修改模型结构。实验结果表明，A3 在多种对抗攻击（如 FGSM、PGD 等）下显著提升了模型的鲁棒性，同时保持了较高的干净样本准确率。该工作为对抗防御提供了一种新颖且高效的特征调控思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Adversarial Robustness",
+    "Activation Scaling",
+    "Defense"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "A3 通过联合学习放大和衰减激活信号，而非仅抑制非鲁棒特征，提供了一种更灵活的对抗防御机制。",
+      "该模块是轻量级且即插即用的，易于集成到现有神经网络中，降低了部署成本。",
+      "实验验证了 A3 在多种攻击下能有效提升鲁棒性，同时保持干净样本的准确率，平衡了鲁棒性与泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

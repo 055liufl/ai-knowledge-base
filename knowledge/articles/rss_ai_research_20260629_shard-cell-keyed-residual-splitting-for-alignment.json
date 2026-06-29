@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-096",
+  "title": "SHARD: cell-keyed residual splitting for alignment-resistant private dense retrieval",
+  "source_url": "https://arxiv.org/abs/2606.27976",
+  "source_platform": "rss_ai_research",
+  "summary": "SHARD 是一种针对密集检索系统中向量存储泄露问题的防御方法。密集嵌入在语义搜索和 RAG（检索增强生成）中广泛应用，但泄露的向量存储可能被攻击者利用，通过少样本对齐、零样本反转、无监督跨空间翻译等攻击手段恢复原始文本。现有防御如秘密全局旋转（正交 Procrustes 变换）存在弱点，因为整个向量空间具有单一全局几何结构，攻击者可以通过对齐已知空间来破解。SHARD 的核心创新在于引入“cell-keyed residual splitting”机制：它将每个向量分割成多个残差片段，每个片段使用不同的密钥进行随机旋转或置换，从而破坏全局几何的一致性。这种方法使得攻击者无法通过全局对齐来恢复原始向量，因为每个片段的空间结构独立且随机化。SHARD 在保持检索效率的同时，显著提升了对抗对齐攻击的鲁棒性，适用于需要高隐私保护的密集检索场景。该工作值得关注，因为它针对当前 RAG 和语义搜索中日益突出的隐私安全问题，提供了一种轻量级且实用的防御方案，且不牺牲检索性能。",
+  "tags": [
+    "Privacy",
+    "Dense Retrieval",
+    "RAG",
+    "Vector Database"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:48:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SHARD 通过将向量分割成多个独立随机化的残差片段，破坏了全局几何结构，从而防御对齐攻击。",
+      "该方法在保持检索效率的同时，显著提升了对抗向量反转攻击的鲁棒性。",
+      "SHARD 适用于需要高隐私保护的密集检索和 RAG 系统，是对现有全局旋转防御的重要改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

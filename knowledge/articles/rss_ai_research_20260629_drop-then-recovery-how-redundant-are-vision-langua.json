@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-068",
+  "title": "Drop-Then-Recovery: How Redundant Are Vision-Language-Action Models?",
+  "source_url": "https://arxiv.org/abs/2606.27755",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了视觉-语言-动作（VLA）模型在机器人操控任务中的架构冗余问题。VLA模型通常继承自预训练的视觉-语言模型（VLM），其语言骨干网络容量远超处理简短机器人指令所需。作者通过Transformer块移除作为受控干预手段，系统性地研究了VLA模型中哪些部分对于闭环控制是真正必要的。研究发现，大量Transformer块可以被移除而不显著影响任务性能，这表明当前VLA模型存在显著的架构冗余。该工作为设计更高效、更轻量的机器人操控模型提供了理论依据和实用指导，有助于降低计算成本和部署门槛。",
+  "tags": [
+    "VLA",
+    "模型压缩",
+    "机器人操控",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLA模型的语言骨干网络存在显著冗余，大量Transformer块可被移除而不影响闭环控制性能。",
+      "通过块移除作为干预手段，可以系统性地识别VLA模型中的关键与非关键组件。",
+      "该发现为设计更高效的机器人操控模型提供了新思路，有望降低计算资源需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

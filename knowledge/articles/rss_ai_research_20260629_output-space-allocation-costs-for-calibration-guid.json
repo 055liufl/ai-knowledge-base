@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-071",
+  "title": "Output-Space Allocation Costs for Calibration-Guided LLM Compression: An Empirical Study",
+  "source_url": "https://arxiv.org/abs/2606.27785",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文对大型语言模型（LLM）的无训练压缩方法进行了实证研究，重点关注校准引导压缩中的输出空间分配成本。具体而言，它分析了ROCKET方法——一种结合稀疏字典分解和多选择背包问题（MCKP）分配的技术。ROCKET通过输出重建目标推导每层分解，但在MCKP分配成本中使用了权重空间的Frobenius误差。研究探讨了将分配成本与输出空间对齐是否能够提升压缩效果。这项研究值得关注，因为它揭示了校准数据在LLM压缩中的关键作用，并可能通过优化分配策略来改进模型压缩的效率和性能，从而降低部署成本。对于从事模型优化和高效推理的研究人员和开发者而言，该工作提供了重要的实证见解。",
+  "tags": [
+    "LLM",
+    "Compression",
+    "Calibration",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:46:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "校准数据在无训练LLM压缩中用于指导决策，但分配成本的选择（如权重空间 vs. 输出空间）对压缩质量有显著影响。",
+      "ROCKET方法结合稀疏字典分解和MCKP分配，但现有分配成本与输出重建目标不一致，可能限制了压缩效果。",
+      "将分配成本与输出空间对齐可能提升压缩性能，为未来校准引导压缩方法的设计提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-097",
+  "title": "Parallel Rollout Approximation for Pixel-Space Autoregressive Image Generation",
+  "source_url": "https://arxiv.org/abs/2606.27978",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“并行展开近似”（Parallel Rollout Approximation）的方法，用于解决像素空间连续令牌自回归（AR）图像生成中的关键问题。传统像素空间AR生成直接对原始像素块序列建模，避免了离散令牌化或预训练分词器，但面临两大挑战：高维补丁生成导致单步误差大，以及教师强制训练造成的训练-推理差距使误差在AR步骤中累积。现有解决方案如x预测和输入噪声注入虽有一定效果，但未能根本解决误差累积问题。本文通过并行展开近似，在训练阶段模拟推理时的多步展开，从而缩小训练与推理之间的差距，显著提升生成质量。该方法在多个图像生成基准上取得了优于现有AR模型的结果，且无需额外组件或复杂训练策略。这项工作对于推动自回归图像生成模型的实用化具有重要意义，尤其是在高分辨率图像生成和实时应用场景中。其创新性在于将并行计算思想融入自回归训练过程，为像素空间生成模型提供了新的优化方向。",
+  "tags": [
+    "Autoregressive Generation",
+    "Image Generation",
+    "Pixel-Space Modeling",
+    "Training-Inference Gap"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:48:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "像素空间连续令牌自回归生成面临单步误差大和训练-推理差距累积的双重挑战，现有方法如x预测和输入噪声注入未能根本解决。",
+      "并行展开近似通过在训练中模拟推理时的多步展开，有效缩小了训练与推理之间的差距，显著提升了生成质量。",
+      "该方法在多个图像生成基准上取得了优于现有AR模型的结果，且无需额外组件或复杂训练策略，具有较好的实用性和可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

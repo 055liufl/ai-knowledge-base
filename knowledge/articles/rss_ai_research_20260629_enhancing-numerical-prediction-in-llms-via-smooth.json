@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-062",
+  "title": "Enhancing Numerical Prediction in LLMs via Smooth MMD Alignment",
+  "source_url": "https://arxiv.org/abs/2606.27731",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为平滑最大均值差异（SMMD）的方法，用于提升大型语言模型（LLMs）在数值预测任务中的精度。LLMs在需要精确数值输出的场景中（如科学计算、金融预测）常表现不可靠，根本原因在于标准交叉熵损失函数将数值标记视为无结构类别，忽略了数值之间的度量关系。SMMD基于经典MMD，通过引入数值距离核函数，在训练过程中对齐模型预测分布与真实数值分布，从而保留数值的连续性和度量结构。该方法无需修改模型架构，仅通过调整损失函数即可实现，具有即插即用的特点。实验表明，SMMD在多个数值预测基准上显著提升了LLMs的准确性，尤其在高精度要求任务中表现突出。这项研究值得关注，因为它直接解决了LLMs在数值推理中的核心缺陷，且方法简洁高效，有望推动LLMs在科学、工程和金融等需要精确数值输出的领域的应用。",
+  "tags": [
+    "LLM",
+    "Numerical Prediction",
+    "Loss Function",
+    "MMD"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准交叉熵损失函数忽略数值的度量结构，是LLMs数值预测不精确的根本原因。",
+      "SMMD通过引入数值距离核函数，在训练中对齐预测与真实数值分布，有效提升数值精度。",
+      "该方法无需修改模型架构，仅调整损失函数，具有即插即用的实用优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

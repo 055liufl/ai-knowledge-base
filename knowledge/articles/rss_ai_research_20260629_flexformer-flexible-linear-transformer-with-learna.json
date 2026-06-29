@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260629-066",
+  "title": "Flexformer: Flexible Linear Transformer with Learnable Attention Kernel",
+  "source_url": "https://arxiv.org/abs/2606.27748",
+  "source_platform": "rss_ai_research",
+  "summary": "Flexformer 是一种新型的线性 Transformer 架构，旨在解决传统 Transformer 在处理长序列时面临的二次复杂度问题。传统 Transformer 依赖注意力机制捕获长距离依赖，但其计算复杂度随序列长度呈二次增长，限制了其可扩展性。现有的基于核的线性注意力方法虽然降低了复杂度，但通常使用固定或弱可学习的核函数，导致表达能力和性能受限。Flexformer 通过引入完全数据驱动的可学习注意力核，在保持线性复杂度的同时显著提升了模型的表达能力和性能。该工作提出了一种灵活的学习框架，使注意力核能够根据数据自适应调整，从而在长序列任务中实现更好的效果。Flexformer 在多个基准测试上展示了优于传统线性 Transformer 和标准 Transformer 的性能，特别是在长序列建模任务中表现突出。这项工作为高效 Transformer 设计提供了新思路，有望推动长序列处理在自然语言处理、计算机视觉等领域的应用。",
+  "tags": [
+    "Transformer",
+    "Linear Attention",
+    "Long Sequence"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Flexformer 通过可学习的注意力核在保持线性复杂度的同时提升了模型表达能力，解决了传统线性 Transformer 核函数固定或弱可学习的问题。",
+      "该工作采用完全数据驱动的方式学习注意力核，使模型能够自适应不同任务和序列长度，在长序列建模任务中表现优于现有方法。",
+      "Flexformer 在多个基准测试中展示了性能提升，表明可学习核是改进线性 Transformer 的有效方向，具有重要的理论和实践价值。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

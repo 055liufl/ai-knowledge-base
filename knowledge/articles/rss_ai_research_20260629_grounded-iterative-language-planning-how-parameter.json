@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260629-010",
+  "title": "Grounded Iterative Language Planning: How Parameterized World Models Reduce Hallucination Propagation in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.27806",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“接地迭代语言规划”（Grounded Iterative Language Planning）的方法，旨在通过参数化世界模型减少大型语言模型（LLM）代理中的幻觉传播。研究指出，语言代理的世界模型有两种形式：基于代理的世界模型（调用LLM API，灵活推理但易产生幻觉状态变化）和参数化世界模型（训练过的转移预测器，误差更易量化但独立能力较弱）。论文的核心创新在于将两种模型结合：利用参数化世界模型的可测量误差（如NodeMSE、delta准确性和有效性准确性）来约束和修正基于代理的世界模型中的幻觉传播，从而实现更可靠的迭代规划。该方法在复杂任务中显著降低了幻觉累积，提升了代理的决策一致性和可解释性。这项工作值得关注，因为它直接解决了LLM代理在长期规划中因幻觉传播导致的可靠性问题，为构建更稳健的自主代理提供了实用框架，并展示了参数化模型与语言模型协同工作的新范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "World Model",
+    "Hallucination",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:40:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "参数化世界模型通过可量化误差（如NodeMSE）有效检测并抑制LLM代理中的幻觉状态变化，从而减少幻觉在迭代规划中的传播。",
+      "结合基于代理的世界模型（灵活推理）与参数化世界模型（可测量误差）的混合方法，在复杂任务中比单一模型更可靠，提升了决策一致性和可解释性。",
+      "该方法为LLM代理的长期规划问题提供了实用解决方案，通过接地迭代规划显著降低了幻觉累积，增强了代理的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

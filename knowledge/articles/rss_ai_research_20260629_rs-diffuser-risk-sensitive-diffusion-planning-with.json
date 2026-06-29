@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-069",
+  "title": "RS-Diffuser: Risk-Sensitive Diffusion Planning with Distributional Value Guidance",
+  "source_url": "https://arxiv.org/abs/2606.27766",
+  "source_platform": "rss_ai_research",
+  "summary": "RS-Diffuser 是一种基于扩散模型的风险敏感离线强化学习规划方法，通过引入分布价值引导机制来优化决策过程。该方法针对离线强化学习中现有扩散规划器通常风险中性、无法有效处理安全关键场景的问题，提出将风险敏感学习与扩散模型结合。具体而言，RS-Diffuser 在扩散模型生成轨迹时，利用分布价值函数（如条件风险价值 CVaR）来引导采样，从而在保持多模态轨迹分布建模能力的同时，优先选择低风险、高回报的轨迹。该工作解决了离线 RL 中安全约束与探索效率的平衡问题，为自动驾驶、机器人操作等高风险应用提供了更可靠的决策框架。其创新点在于将风险度量直接嵌入扩散模型的逆扩散过程，而非后处理过滤，实现了端到端的风险敏感规划。实验表明，在 D4RL 等基准上，RS-Diffuser 在风险指标（如最坏情况回报）上显著优于传统扩散规划器，同时保持了较高的平均性能。",
+  "tags": [
+    "Diffusion Model",
+    "Offline Reinforcement Learning",
+    "Risk-Sensitive Planning",
+    "Distributional Value Guidance"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将风险敏感学习与扩散模型结合，通过分布价值引导实现离线 RL 中的安全规划",
+      "在扩散逆过程中直接嵌入 CVaR 等风险度量，避免了后处理过滤导致的性能损失",
+      "在 D4RL 基准上验证了该方法在风险指标上的显著优势，同时保持平均回报竞争力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

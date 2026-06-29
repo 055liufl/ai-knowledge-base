@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-073",
+  "title": "NLL-Guided Full-Attention Layer Selection for Training-Free Sliding-Window Adaptation",
+  "source_url": "https://arxiv.org/abs/2606.27791",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种无需训练的滑动窗口注意力适配方法，通过负对数似然（NLL）指导来选择哪些层应保留全注意力。混合注意力模型通过在不同层混合使用全注意力和滑动窗口注意力，为高效的长上下文推理提供了有前景的方案。然而，关键问题在于如何确定哪些层应保留全注意力。现有方法要么使用固定的周期性模式，要么使用基于注意力的启发式方法，但这些方法可能无法捕捉对下游准确性至关重要的因素。本文提出的NLL引导的层选择方法，无需额外训练，即可自动识别出对模型性能最关键的层，并为其保留全注意力，从而在保持推理效率的同时提升准确性。该方法通过计算每层对模型输出的NLL贡献，选择贡献最大的层保留全注意力，其余层则使用滑动窗口注意力。实验结果表明，该方法在多个长上下文任务上优于现有基线，且计算开销极低。这项研究对于提升大语言模型在长文本处理中的效率和效果具有重要意义，尤其是在资源受限的场景下。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Long-Context",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:46:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种基于NLL的无需训练的层选择方法，用于混合注意力模型中的全注意力层分配。",
+      "该方法通过计算每层对模型输出的负对数似然贡献，自动识别关键层，避免了手动或启发式选择。",
+      "在保持推理效率的同时，显著提升了长上下文任务的下游准确性，优于固定模式和基于注意力的基线。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

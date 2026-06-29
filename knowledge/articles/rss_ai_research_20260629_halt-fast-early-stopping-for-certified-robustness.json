@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-055",
+  "title": "Halt Fast! Early Stopping for Certified Robustness",
+  "source_url": "https://arxiv.org/abs/2606.27694",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对随机平滑（Randomized Smoothing, RS）的元学习框架，旨在解决其计算成本极高的问题。传统RS方法需要对每个输入进行数万次模型评估，且必须预先固定样本量，导致实际应用受限。本文通过引入“随时有效”（anytime-valid）的认证鲁棒性概念，允许模型在推理过程中动态调整计算量，从而在保证严格鲁棒性保证的同时大幅降低计算开销。核心创新在于利用元学习训练一个“停止策略”，该策略能够根据输入样本的难度自适应地决定何时停止采样并输出认证结果。实验表明，该方法在多个基准数据集上显著减少了平均样本数，同时保持了与标准RS相当的认证精度。这项工作为将认证鲁棒性部署到资源受限场景（如边缘设备）提供了可行路径，具有重要的实用价值和理论意义。",
+  "tags": [
+    "Randomized Smoothing",
+    "Certified Robustness",
+    "Meta-Learning",
+    "Adaptive Computation"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:44:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出元学习框架实现自适应停止策略，显著降低随机平滑的计算成本，无需预先固定样本量。",
+      "引入“随时有效”认证鲁棒性概念，允许在推理过程中动态权衡计算量与鲁棒性保证。",
+      "实验验证该方法在多个数据集上保持高认证精度的同时，平均样本数大幅减少，适合资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

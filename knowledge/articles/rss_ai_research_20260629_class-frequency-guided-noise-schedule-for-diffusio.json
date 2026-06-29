@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260629-056",
+  "title": "Class-frequency Guided Noise Schedule for Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2606.27696",
+  "source_platform": "rss_ai_research",
+  "summary": "本文首次探讨了扩散模型中类别频率与多尺度噪声调度之间的相关性。在基于分数的生成模型中，低密度区域常常导致分数估计不准确，从而影响生成质量。尽管多尺度噪声调度可以在扩散过程中缓解这一问题，但低频类别仍然面临大低密度区域的挑战。为此，作者提出了一种类别频率引导的噪声调度方法（Class-frequency Guided Noise Schedule），通过根据类别频率动态调整噪声调度，优先为低频类别分配更多的高噪声步长，以改善其密度估计和生成质量。实验表明，该方法在多个数据集上显著提升了低频类别的生成效果，同时保持了高频类别的性能。这项工作为扩散模型的噪声调度设计提供了新的视角，具有重要的理论价值和实践意义，尤其适用于类别不平衡或长尾分布的数据场景。",
+  "tags": [
+    "Diffusion Models",
+    "Noise Schedule",
+    "Class Imbalance"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:44:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次建立类别频率与多尺度噪声调度的关联，提出类别频率引导的噪声调度方法",
+      "通过动态调整噪声步长分配，有效缓解低频类别在扩散过程中的低密度区域问题",
+      "在多个数据集上验证了该方法对类别不平衡场景下生成质量的提升效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

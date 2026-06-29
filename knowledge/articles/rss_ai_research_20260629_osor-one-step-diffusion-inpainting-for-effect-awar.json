@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-108",
+  "title": "OSOR: One-Step Diffusion Inpainting for Effect-Aware Object Removal",
+  "source_url": "https://arxiv.org/abs/2606.28094",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 OSOR（One-Step Diffusion Inpainting for Effect-Aware Object Removal）的一步扩散修复方法，旨在高效且高质量地实现现实场景中的物体移除。该方法针对两大挑战：一是目标物体产生的非局部效应（如阴影、反射）难以建模；二是用户提供的掩码往往不准确或不完整。传统扩散模型虽性能强大，但依赖数十亿参数和数十步去噪过程，计算成本极高，难以用于交互式应用。OSOR 通过单步扩散机制，在保持修复质量的同时大幅降低计算开销，并专门设计了效应感知模块来处理阴影、反射等复杂场景。实验表明，该方法在多个基准数据集上达到了与多步扩散模型相当甚至更优的移除效果，同时推理速度提升了一个数量级，为实时图像编辑和交互式应用提供了可行方案。",
+  "tags": [
+    "Diffusion Model",
+    "Image Inpainting",
+    "Object Removal",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:49:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OSOR 通过单步扩散机制显著降低了计算成本，使高质量物体移除在交互式应用中成为可能。",
+      "该方法专门处理阴影、反射等非局部效应，克服了传统修复模型在复杂场景下的局限性。",
+      "实验验证了 OSOR 在推理速度上比多步扩散模型快一个数量级，同时保持甚至提升修复质量。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

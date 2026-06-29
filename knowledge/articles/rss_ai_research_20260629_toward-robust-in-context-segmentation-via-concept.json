@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-114",
+  "title": "Toward Robust In-Context Segmentation via Concept Guidance",
+  "source_url": "https://arxiv.org/abs/2606.28149",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“概念引导”的方法，旨在提升上下文分割（In-Context Segmentation, ICS）模型的鲁棒性。ICS任务要求模型仅凭少量参考图像及其对应的掩码，在不更新任何参数的情况下，对查询图像中的目标区域进行分割。然而，现有研究普遍忽略了系统鲁棒性这一关键问题：即对于同一查询图像，当使用不同的参考图像时，模型能否产生稳定一致的分割结果。本文从鲁棒性角度重新审视ICS，并引入概念引导机制，通过显式建模参考图像中的语义概念，增强模型对参考变化的抗干扰能力。该方法在多个基准数据集上验证了有效性，显著提升了分割结果的稳定性和准确性。该工作对于推动ICS在实际应用中的可靠性具有重要意义，尤其是在医学影像、自动驾驶等对稳定性要求高的场景。",
+  "tags": [
+    "In-Context Segmentation",
+    "Robustness",
+    "Computer Vision",
+    "Semantic Segmentation"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:49:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统性地研究了上下文分割中的鲁棒性问题，揭示了现有模型对参考图像变化的脆弱性。",
+      "提出概念引导机制，通过语义概念建模增强模型对参考变化的稳定性，无需额外参数更新。",
+      "在多个基准数据集上验证了方法有效性，显著提升了分割结果的一致性和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

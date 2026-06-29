@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260629-019",
+  "title": "Agent memory on Elasticsearch: hybrid retrieval and DLS",
+  "source_url": "https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了如何在 Elasticsearch 上实现智能体（Agent）的记忆功能，重点探讨了混合检索（hybrid retrieval）和文档级安全（Document Level Security, DLS）技术。文章指出，在构建具有长期记忆的 AI 智能体时，传统的关键词搜索或纯向量搜索往往无法满足复杂场景下的准确性和安全性需求。通过结合稀疏检索（如 BM25）和稠密向量检索（如嵌入模型），混合检索能够同时利用语义理解和精确匹配的优势，显著提升记忆检索的召回率和相关性。此外，DLS 机制允许在检索过程中根据用户或角色的权限过滤文档，确保智能体只能访问授权的记忆内容，这对于企业级应用中的隐私和合规至关重要。文章还提供了在 Elasticsearch 中配置混合检索和 DLS 的实践指南，包括索引映射、查询构建和权限设置。该方案特别适用于需要持久化对话历史、用户偏好或任务上下文的 AI 助手、客服系统或自动化工作流。值得关注的原因是，它解决了智能体记忆中的两个核心挑战：检索准确性和数据安全性，为构建更可靠、更安全的 AI 应用提供了可落地的技术路径。",
+  "tags": [
+    "Agent",
+    "Elasticsearch",
+    "Hybrid Retrieval",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:50Z",
+  "collected_at": "2026-06-29T12:39:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合检索结合了稀疏检索和稠密向量检索，能同时提升语义理解和精确匹配能力，显著改善智能体记忆的召回效果。",
+      "文档级安全（DLS）机制确保智能体在检索记忆时遵循用户权限，是构建企业级安全 AI 应用的关键。",
+      "Elasticsearch 提供了开箱即用的混合检索和 DLS 支持，降低了实现智能体长期记忆的技术门槛。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

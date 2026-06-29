@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260629-040",
+  "title": "PEBS: Per-rater Empirical-Bayes Shrinkage for RLHF Reward-Model Calibration",
+  "source_url": "https://arxiv.org/abs/2606.27578",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为PEBS（Per-rater Empirical-Bayes Shrinkage）的方法，用于改进RLHF（基于人类反馈的强化学习）中的奖励模型校准。传统方法将所有标注者的偏好数据合并，拟合一个全局的仿射校准器，忽略了不同标注者在评分尺度和斜率上的系统性差异，导致校准结果无法准确反映任何单个标注者的真实偏好。PEBS通过为每个标注者单独拟合仿射校准器，并利用经验贝叶斯收缩估计来平衡个体差异与全局信息，从而在保留个体特异性的同时避免过拟合。该方法在保留的标注者子集上进行评估，显著提升了奖励模型的校准质量和泛化能力。这项工作值得关注，因为它直接解决了RLHF中一个被忽视的关键问题——标注者异质性，这对于提高大语言模型与人类价值观对齐的准确性和公平性具有重要意义。PEBS提供了一种实用且理论扎实的解决方案，有望成为未来RLHF奖励模型校准的标准工具。",
+  "tags": [
+    "RLHF",
+    "Reward Model",
+    "Calibration",
+    "Empirical Bayes"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:43:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统RLHF奖励模型使用全局校准器，忽略了标注者间评分尺度和斜率的系统性差异，导致校准偏差。",
+      "PEBS为每个标注者独立拟合仿射校准器，并通过经验贝叶斯收缩在个体特异性和全局稳定性之间取得平衡。",
+      "该方法在保留的标注者子集上评估，显著提升了奖励模型的校准质量和泛化能力。",
+      "PEBS直接解决了RLHF中标注者异质性问题，对提升大模型与人类价值观对齐的准确性和公平性具有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

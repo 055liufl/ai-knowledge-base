@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-032",
+  "title": "Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.27472",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《Supersede: Diagnosing and Training the Memory-Update Gap in LLM Agents》聚焦于大型语言模型（LLM）智能体在长期、多轮交互中处理事实更新的能力缺陷。研究通过真实对话数据，发现智能体在事实发生变化（如用户搬家、价格更新、计划修改）时，无法有效丢弃旧值并使用新值，这一能力被定义为“记忆更新差距”。论文在LongMemEval数据集的知识更新子集上进行了实验，通过替换智能体的完整上下文来测试其更新能力，结果表明现有模型存在明显的系统性失败。该研究揭示了LLM智能体在动态环境中的关键瓶颈，为提升智能体的长期记忆和适应能力提供了诊断方法和训练方向，对开发更可靠的对话系统和自主代理具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Knowledge Update"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:42:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体在长期交互中无法有效处理事实更新，存在系统性的记忆更新差距。",
+      "通过替换完整上下文测试，发现模型倾向于保留旧信息而非采用新值。",
+      "该问题在LongMemEval数据集的知识更新子集中被明确量化，表明这是一个独立且未解决的失败模式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

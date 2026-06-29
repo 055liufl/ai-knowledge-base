@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-072",
+  "title": "SHIFT: Gate-Modulated Activation Steering for Knowledge Conflict Mitigation in Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2606.27786",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SHIFT的门控调制激活引导方法，用于缓解检索增强生成（RAG）系统中检索上下文与模型参数知识之间的冲突。RAG通过引入外部知识增强大语言模型（LLM）的生成能力，但检索到的上下文可能与模型内部存储的参数知识不一致，导致生成结果不可靠。现有研究多通过识别和编辑与知识相关的内部神经元来使模型更依赖上下文证据，但这种方法可能过于粗糙且缺乏灵活性。SHIFT方法创新性地采用门控机制动态调制模型激活，在生成过程中根据检索上下文与参数知识的冲突程度，自适应地调整模型内部表示，从而引导模型优先使用检索到的上下文信息。该方法无需修改模型参数，计算开销低，且能保持模型原有能力。实验结果表明，SHIFT在多个基准数据集上显著提升了RAG系统在知识冲突场景下的生成准确性和一致性，同时保持了模型在其他任务上的性能。这项工作为RAG系统的鲁棒性提供了新的解决思路，具有重要的实用价值。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Knowledge Conflict",
+    "Activation Steering"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:46:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SHIFT通过门控机制动态调制模型激活，自适应地解决检索上下文与参数知识的冲突，无需修改模型参数。",
+      "该方法在多个基准上显著提升了RAG系统在知识冲突场景下的生成准确性和一致性。",
+      "SHIFT保持了模型在其他任务上的性能，计算开销低，具有较好的实用性和扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

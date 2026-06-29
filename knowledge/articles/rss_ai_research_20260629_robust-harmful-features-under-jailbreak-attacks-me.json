@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-115",
+  "title": "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.28153",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大型语言模型（LLM）在面对越狱攻击时的内部机制。传统观点认为攻击会完全消除模型的安全特性，但本文通过注意力头（attention head）层面的分析提供了新的证据：攻击并非全面消除安全特征，而是选择性地抑制特定注意力头。研究者识别出两种功能分化的注意力头类型：集中在早期层的“对抗性受损头”（ACHs），在攻击下被抑制；以及分布在中间层的“安全对齐头”（SAHs），在攻击中仍保持活跃。这一发现揭示了LLM安全对齐的脆弱性根源，即攻击通过干扰特定注意力头来绕过安全机制，而非彻底破坏安全特征。该研究结合了机制性证据和注意力头专门化分析，为理解越狱攻击的底层原理提供了新视角，并可能推动更鲁棒的安全对齐方法设计。值得关注的是，它挑战了“攻击完全消除安全特征”的假设，强调了模型内部结构的局部脆弱性。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Attention Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:49:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "越狱攻击并非全面消除LLM的安全特征，而是选择性抑制早期层的对抗性受损头（ACHs）。",
+      "中间层的安全对齐头（SAHs）在攻击中仍保持活跃，表明安全特征未被完全破坏。",
+      "注意力头的功能分化（ACHs与SAHs）揭示了LLM安全对齐的局部脆弱性机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

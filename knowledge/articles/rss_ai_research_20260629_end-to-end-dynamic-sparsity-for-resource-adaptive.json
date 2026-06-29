@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-065",
+  "title": "End-to-End Dynamic Sparsity for Resource-Adaptive LLM Inference",
+  "source_url": "https://arxiv.org/abs/2606.27743",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种端到端的动态稀疏性方法，用于资源自适应的大语言模型推理。传统LLM推理通常假设静态资源环境，模型执行固定的计算图，但在实际云基础设施中，资源可用性（如抢占式实例）和服务质量需求是动态变化的。静态模型在这种场景下缺乏灵活性，可能导致崩溃或资源浪费。本文通过引入动态稀疏性，使模型能够根据运行时资源条件自适应调整计算路径，从而在资源波动时保持稳定推理。该方法从训练到推理全流程支持稀疏性，包括动态稀疏训练、自适应推理调度和资源感知的模型压缩。实验表明，该方法在多种资源约束下显著提升了推理效率，同时保持了模型质量。该工作对于提升LLM在云环境中的鲁棒性和经济性具有重要价值，尤其适用于边缘计算、混合云和成本敏感型应用。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Dynamic Sparsity",
+    "Resource Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:45:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出端到端动态稀疏性框架，使LLM推理能根据运行时资源波动自适应调整计算图，解决了静态模型在云环境中的不灵活问题。",
+      "方法覆盖训练、推理和压缩全流程，包括动态稀疏训练和资源感知调度，在保持模型质量的同时显著提升资源波动下的推理效率。",
+      "实验验证了该方法在抢占式实例、分层服务质量等真实云场景中的有效性，为LLM在动态基础设施中的部署提供了实用方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

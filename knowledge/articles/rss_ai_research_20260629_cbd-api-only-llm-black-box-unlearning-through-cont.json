@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260629-052",
+  "title": "CBD: API-Only LLM Black-Box Unlearning through Controlled Behavioral Divergence",
+  "source_url": "https://arxiv.org/abs/2606.27683",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CBD（Controlled Behavioral Divergence）的API-only黑盒LLM遗忘方法，旨在解决边缘设备通过API调用大语言模型时，因数据收集引入的敏感、版权、有害或过时信息问题。现有机器遗忘方法存在两大缺陷：一是需要模型内部参数访问（白盒），不适用于仅提供API的黑盒场景；二是遗忘效果与模型通用能力保持之间的平衡难以控制。CBD通过仅依赖API输出，利用可控行为分歧策略，在无需模型内部信息的情况下，有效移除特定数据的影响，同时保持模型在其他任务上的性能。该方法在多个基准数据集上验证了其有效性，展示了在黑盒场景下实现精准遗忘的潜力。这项研究对于边缘计算、隐私保护、模型合规性等领域具有重要意义，因为它提供了一种实用且高效的遗忘机制，无需修改模型内部结构，降低了部署门槛。",
+  "tags": [
+    "LLM",
+    "Machine Unlearning",
+    "Edge Intelligence",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-06-29T12:35:51Z",
+  "collected_at": "2026-06-29T12:44:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CBD方法仅依赖API输出实现黑盒遗忘，无需模型内部参数访问，适用于边缘设备等受限场景。",
+      "通过可控行为分歧策略，CBD在移除特定数据影响的同时，有效保持模型在其他任务上的通用性能。",
+      "该方法解决了现有遗忘技术中白盒依赖与性能平衡的两大核心缺陷，提供了实用且高效的遗忘机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
