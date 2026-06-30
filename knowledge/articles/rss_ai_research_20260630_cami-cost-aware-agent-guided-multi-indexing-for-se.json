@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-140",
+  "title": "CAMI: Cost-Aware Agent-Guided Multi-Indexing for Semantic Retrieval",
+  "source_url": "https://arxiv.org/abs/2606.28365",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CAMI（成本感知的智能体引导多索引语义检索）的方法，旨在优化RAG（检索增强生成）系统中的语义检索流程。传统的RAG管道通常通过添加语义增强索引（如从文档块生成的合成查询或摘要）来丰富搜索语料库索引，这些索引与基础索引一起查询，以改善文档表示与用户意图之间的对齐，从而提高检索质量。然而，这些补充表示虽然显著提升了检索效果，但也引入了计算瓶颈：配置和管理多个索引（包括基础索引和增强索引）需要大量资源，导致检索延迟和成本增加。CAMI通过引入一个成本感知的智能体来动态选择最合适的索引组合进行查询，从而在保持检索质量的同时降低计算开销。该方法的核心在于智能体能够根据查询的复杂性和成本约束，自适应地决定是否使用增强索引或仅依赖基础索引，从而在效率和效果之间取得平衡。该研究对于大规模RAG系统的实际部署具有重要意义，特别是在资源受限或对延迟敏感的应用场景中。",
+  "tags": [
+    "RAG",
+    "Semantic Retrieval",
+    "Cost Optimization",
+    "Agent",
+    "Multi-Indexing"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:11:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAMI通过成本感知的智能体动态选择索引组合，有效平衡了检索质量与计算开销。",
+      "该方法解决了RAG系统中多索引引入的计算瓶颈问题，提升了系统效率。",
+      "智能体能够根据查询复杂性和成本约束自适应调整检索策略，增强了系统的灵活性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-040",
+  "title": "Process Advantage Signal Shaping: A Paradigm-Agnostic Middleware for Process-Supervised RL in LLM Reasoners",
+  "source_url": "https://arxiv.org/abs/2606.29296",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“过程优势信号整形”（Process Advantage Signal Shaping, PASS）的中间件技术，旨在解决大型语言模型（LLM）推理器在过程监督强化学习中的关键问题。当前，GRPO（组相对策略优化）是LLM推理器过程监督强化学习的默认方法，而密集的过程监督通常通过学习的PRM（过程奖励模型）或策略蒸馏KL信号来实现，以增强其原本较弱的结果奖励。然而，将这种步骤级信号叠加在GRPO的组标准化优势上，会暴露出三种结构性病理：通道污染。PASS作为一种范式无关的中间件，能够在不改变底层算法的情况下，对过程优势信号进行整形，从而缓解这些病理问题，提升强化学习训练的效果和稳定性。该研究具有重要的技术影响力，因为它直接针对当前LLM推理器强化学习中的核心痛点，提供了一种轻量级、可插拔的解决方案，有望推动LLM在复杂推理任务中的性能提升。其创新性在于从信号处理角度重新审视过程监督，而非依赖更复杂的模型架构或训练范式。实用性方面，PASS的范式无关特性使其易于集成到现有GRPO等训练流程中，对开发者和研究者均有较高价值。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Process Supervision",
+    "GRPO",
+    "Signal Processing"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:03:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO结合密集过程监督时，存在通道污染等结构性病理，影响训练效果。",
+      "PASS作为范式无关的中间件，通过信号整形技术缓解这些病理，无需修改底层算法。",
+      "该方法为LLM推理器的过程监督强化学习提供了一种轻量级、可插拔的改进方案，具有较高的实用性和推广潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

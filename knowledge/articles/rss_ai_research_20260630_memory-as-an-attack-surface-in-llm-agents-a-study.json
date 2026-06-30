@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-023",
+  "title": "Memory as an Attack Surface in LLM Agents: A Study on Multiple-Choice Question Answering",
+  "source_url": "https://arxiv.org/abs/2606.29030",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了LLM Agent中记忆机制带来的安全风险。传统LLM应用主要关注输入层面的攻击（如提示注入），但Agent系统引入了记忆模块，允许模型存储和检索历史交互信息。作者提出了一种新的攻击面：攻击者可以通过在记忆存储中植入恶意信息，影响Agent在后续干净查询下的输出，即使当前输入本身是安全的。论文以多项选择题问答任务为实验场景，展示了如何构造记忆污染样本，使Agent在回答问题时被误导。研究发现，记忆污染攻击具有隐蔽性和持久性，且现有防御措施（如输入过滤、输出检测）难以完全防御。这项工作揭示了Agent系统安全设计中的一个关键盲区，对构建可信AI Agent具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:01:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆机制是LLM Agent的一个新攻击面，攻击者可通过污染记忆影响后续输出，即使当前查询是干净的。",
+      "记忆污染攻击具有隐蔽性和持久性，传统输入过滤和输出检测难以完全防御。",
+      "在多项选择题问答场景中，记忆污染可显著降低Agent的准确率，且攻击样本构造简单。",
+      "该研究揭示了Agent系统安全设计中的关键盲区，需要开发针对记忆层面的防御机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260630-042",
+  "title": "PHF: Privileged Hidden Flow for On-Policy Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2606.29340",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为特权隐藏流（Privileged Hidden Flow, PHF）的新型自蒸馏方法，用于改进在线策略自蒸馏（On-Policy Self-Distillation, OPSD）的训练效果。传统OPSD方法通过匹配一个能够看到已验证参考解的特权教师模型来训练推理模型，但仅监督输出分布，导致特权上下文仅通过token级别的散度影响训练，而无法直接监督产生该分布的内部计算过程。PHF通过引入隐藏状态级别的监督，允许学生模型直接学习教师模型在推理过程中的内部表示，从而更有效地利用特权信息。实验表明，PHF在多个推理任务上显著提升了模型性能，特别是在需要复杂推理的场景中。该方法具有重要的理论意义和实用价值，因为它解决了自蒸馏中关键的信息传递瓶颈问题，为提升大语言模型的推理能力提供了新思路。",
+  "tags": [
+    "Self-Distillation",
+    "Reasoning Model",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:03:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PHF通过监督隐藏状态而非仅输出分布，实现了更有效的特权信息传递，解决了传统OPSD方法的信息瓶颈问题。",
+      "该方法在多个推理任务上显著提升了模型性能，表明内部计算过程的监督对于提升推理能力至关重要。",
+      "PHF为自蒸馏领域提供了一种新的范式，可能推动大语言模型在复杂推理场景中的进一步发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

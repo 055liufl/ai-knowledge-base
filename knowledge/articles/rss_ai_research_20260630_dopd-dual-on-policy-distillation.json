@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-110",
+  "title": "DOPD: Dual On-policy Distillation",
+  "source_url": "https://arxiv.org/abs/2606.30626",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DOPD（Dual On-policy Distillation）的双重在线策略蒸馏方法，旨在提升知识蒸馏中教师模型对学生模型的容量迁移效果。传统在线策略蒸馏通过监督学生采样的轨迹并利用密集的token级信号来实现能力迁移，但为了进一步提高蒸馏性能，直观的思路是向教师或学生注入特权信息（privileged information）。然而，作者发现这种额外输入会导致一种称为“特权幻觉”（privilege illusion）的失败模式，即模型错误地依赖特权信息而忽视真正的学习目标。DOPD通过双重在线策略机制，同时优化教师和学生模型，避免特权幻觉，从而在多个自然语言处理任务上取得了显著的性能提升。该工作值得关注，因为它揭示了知识蒸馏中的一个关键问题，并提供了有效的解决方案，对模型压缩和高效部署具有重要价值。",
+  "tags": [
+    "Knowledge Distillation",
+    "On-policy Distillation",
+    "Privileged Information",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:08:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "特权信息注入在在线策略蒸馏中可能导致特权幻觉，即模型错误依赖额外信息而偏离学习目标。",
+      "DOPD通过双重在线策略机制同时优化教师和学生，有效避免了特权幻觉，提升了蒸馏效果。",
+      "该方法在多个NLP任务上验证了有效性，为知识蒸馏领域提供了新的理论视角和实践方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

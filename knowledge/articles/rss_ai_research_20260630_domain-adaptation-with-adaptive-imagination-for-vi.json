@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-091",
+  "title": "Domain Adaptation with Adaptive Imagination for Visual Reinforcement Learning under Limited Target Data",
+  "source_url": "https://arxiv.org/abs/2606.30192",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“自适应想象力域适应”（Adaptive Imagination for Domain Adaptation, AIDA）的方法，旨在解决视觉强化学习在目标域数据有限情况下的仿真到现实迁移问题。传统的域适应方法通常需要大量目标域数据，但在实际应用中，获取真实世界的图像数据成本高昂且困难。AIDA通过引入一个自适应想象力模块，在源域（仿真）中生成与目标域（真实世界）视觉特征相似的想象图像，从而在无需大量目标数据的情况下实现有效的域适应。该方法结合了对抗性训练和元学习，使模型能够动态调整生成策略，以匹配目标域的分布。实验在多个视觉控制任务（如机器人抓取和导航）上验证了其有效性，在目标数据量仅为传统方法10%的条件下，AIDA仍能显著提升迁移性能，接近甚至超越使用全部目标数据的基线方法。这项工作为数据稀缺场景下的视觉RL部署提供了实用方案，具有重要的工程应用价值。",
+  "tags": [
+    "Domain Adaptation",
+    "Reinforcement Learning",
+    "Sim-to-Real",
+    "Visual Control"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:07:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出自适应想象力机制，在源域生成与目标域视觉特征匹配的想象图像，减少对大量目标数据的依赖。",
+      "结合对抗训练与元学习，使模型能动态调整生成策略以适配有限的目标域样本。",
+      "在多个视觉控制任务上，仅用10%的目标数据即可达到接近全数据基线的迁移性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

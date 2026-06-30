@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-031",
+  "title": "Selective Memory Retention for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2606.29178",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了TraceRetain，一个轻量级框架，用于在冻结的大型语言模型（LLM）代理中实现有界外部记忆的选择性保留。研究聚焦于记忆增强型LLM代理中“何时保留记忆”的问题。TraceRetain通过可解释的特征（如成功性、年龄、访问频率、冗余度、特异性、相似性和下游效用）对记忆条目进行评分，并在容量达到上限时驱逐得分最低的条目。在干净的ALFWorld环境中使用gpt-5-mini进行实验，结果表明外部记忆在两个随机种子下均能稳健地提升无记忆基线性能。该工作为长周期任务中LLM代理的记忆管理提供了实用且可解释的解决方案，值得关注，因为它平衡了记忆容量与性能，且框架轻量、易于集成。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Selective Retention",
+    "ALFWorld"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:02:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TraceRetain通过可解释特征评分实现高效记忆驱逐，优于简单策略。",
+      "外部记忆在长周期任务中显著提升冻结LLM代理的鲁棒性。",
+      "框架轻量且与模型无关，易于部署在现有LLM代理系统中。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

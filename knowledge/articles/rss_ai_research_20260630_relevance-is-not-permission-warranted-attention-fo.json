@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-086",
+  "title": "Relevance Is Not Permission: Warranted Attention for Value Contributions",
+  "source_url": "https://arxiv.org/abs/2606.30139",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一个关于注意力机制中相关性与价值贡献之间差距的理论框架。作者指出，在当前的Transformer架构中，注意力机制允许模型读取与当前查询相关的键值项，但这并不保证这些项的价值贡献会成为预测证据。例如，在检索增强生成（RAG）中，检索到的段落可能与问题相关，但不一定是支持证据；在时序预测中，历史事实或时间邻居可能模糊真实尾部排名或当前边分数。论文将这一差距形式化为一个权限问题，即模型需要区分“相关性”和“许可性”，只有被“许可”的相关信息才能用于预测。这项工作对理解注意力机制的局限性、改进模型的可解释性和可靠性具有重要意义，尤其是在需要严格证据支持的场景（如法律、医疗、金融）中。论文提供了理论分析和潜在解决方案，可能推动注意力机制的设计改进。",
+  "tags": [
+    "Attention",
+    "Transformer",
+    "Interpretability",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:06:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力机制中的相关性并不等同于预测证据的许可，存在一个被忽视的权限问题。",
+      "该问题在RAG、时序预测等应用中可能导致错误或模糊的预测结果。",
+      "论文形式化了这一差距，为改进注意力机制的设计提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

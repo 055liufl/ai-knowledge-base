@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-050",
+  "title": "Faults in Our Formal Benchmarking: Dataset Defects and Evaluation Failures in Lean Theorem Proving",
+  "source_url": "https://arxiv.org/abs/2606.29493",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统性地审计了五个广泛使用的Lean定理证明基准测试，揭示了这些基准测试在数据集和评估流程中存在的严重缺陷。尽管每个已解决的实例都附带机器检查的证明，但内核仅验证证明是否建立了形式化陈述，并未验证该陈述是否忠实地编码了预期的非正式问题，也未验证评估框架是否对琐碎或对抗性解决方案具有鲁棒性。研究发现，这些基准测试中存在数据标注错误、问题表述歧义、评估指标设计不合理等问题，导致对LLM辅助定理证明能力的评估结果不可靠。该工作强调了在形式化基准测试中需要更严格的验证流程，以确保评估结果能够真实反映模型在数学推理任务上的能力。这对于推动LLM在数学和科学推理领域的可靠应用具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Theorem Proving",
+    "Lean"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:03:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有Lean定理证明基准测试存在系统性缺陷，包括数据集标注错误和评估流程不严谨，导致对LLM能力的评估不可靠。",
+      "形式化验证仅保证证明与形式化陈述的一致性，但无法确保形式化陈述正确编码了非正式问题，这构成了评估的盲区。",
+      "需要建立更严格的基准测试验证流程，包括问题表述的语义一致性检查和评估框架的鲁棒性测试，以提高评估结果的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

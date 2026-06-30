@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260630-029",
+  "title": "Pooled Leaderboards Hide System-Specific Winners: A Reporting-Protocol Audit of Offline Root-Cause Analysis Benchmarks",
+  "source_url": "https://arxiv.org/abs/2606.29159",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对离线根因分析（RCA）基准测试中常用的单一池化排名方法进行了系统性审计。研究指出，当前主流基准（如OpenRCA、RCAEval和PetShop）通常通过跨多个子系统的池化top-1准确率来排名方法，但工程师往往将池化胜者视为针对自身子系统的推荐，这种解读可能具有误导性。作者对11个子系统和778个匹配评分单元进行了成对比较分析，发现不同子系统之间存在显著的性能差异，池化排名无法反映特定子系统的真实最优方法。该工作揭示了现有RCA基准报告协议中的关键缺陷，强调了需要更细粒度的、面向子系统的评估标准，以避免工程实践中的错误决策。研究对于提升RCA方法评估的可靠性和实用性具有重要意义，尤其适用于多子系统环境下的故障诊断场景。",
+  "tags": [
+    "Root Cause Analysis",
+    "Benchmark Audit",
+    "System-Specific Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:02:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有RCA基准的池化排名掩盖了子系统间的性能差异，导致工程师可能误选次优方法",
+      "通过11个子系统和778个单元的审计，证实了系统特定胜者的存在，挑战了单一排名范式的有效性",
+      "研究呼吁建立更细粒度的报告协议，以提升RCA基准在工程实践中的指导价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

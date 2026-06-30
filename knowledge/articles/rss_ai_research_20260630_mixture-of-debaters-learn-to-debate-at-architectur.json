@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-046",
+  "title": "Mixture of Debaters: Learn to Debate at Architectural Level in Multi-Agent Reasoning",
+  "source_url": "https://arxiv.org/abs/2606.29425",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“辩论者混合体”（Mixture of Debaters, MoD）的新型多智能体推理框架。现有的大多数多智能体辩论方法存在两个关键缺陷：一是架构静态，智能体的角色和协作模式在设计时就被固定，缺乏灵活性；二是需要实例化多个模型副本，导致计算开销巨大。MoD 通过引入混合专家（Mixture-of-Experts, MoE）范式，在单一模型内部实现了动态的自我辩论机制。具体而言，MoD 将模型的不同专家模块视为具有不同观点或推理风格的“辩论者”，通过门控网络动态地选择并组合这些专家的输出，从而模拟多智能体辩论过程，而无需复制整个模型。这种方法不仅显著降低了计算成本，还使得辩论架构能够根据输入任务自适应调整。实验表明，MoD 在多个推理基准测试上取得了与甚至超越传统多智能体辩论方法的性能，同时推理效率大幅提升。该工作为多智能体推理提供了一种更高效、更灵活的新思路，值得关注。",
+  "tags": [
+    "Multi-Agent",
+    "Mixture-of-Experts",
+    "Reasoning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:03:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoD 利用 Mixture-of-Experts 范式，在单一模型内部实现动态的多智能体自我辩论，克服了传统方法需要多个模型副本的高计算开销问题。",
+      "通过门控网络动态选择专家组合，MoD 的辩论架构能够根据输入任务自适应调整，打破了静态架构的限制。",
+      "实验证明 MoD 在多个推理任务上达到或超越传统多智能体辩论方法的性能，同时推理效率显著提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

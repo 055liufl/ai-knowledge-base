@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-045",
+  "title": "LLM-Guided Planning for Multi-hop Reasoning over Multimodal Nuclear Regulatory Documents",
+  "source_url": "https://arxiv.org/abs/2606.29399",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于大语言模型（LLM）的规划方法，用于对核监管文档进行多跳推理。核监管文档通常长达数万页，审查过程需要跨多个章节收集证据并做出判断。作者将这一任务建模为规划问题：LLM 智能体观察已收集的证据，选择下一个要检查的文档片段，并在证据充分时停止。智能体通过浏览、阅读和搜索工具在无向量文档树上操作，并维护一个证据状态。该方法旨在解决长文档中复杂推理的挑战，通过显式规划减少不必要的搜索，提高证据收集的效率和准确性。该工作结合了 LLM 的推理能力与结构化文档操作，为高风险的监管领域提供了一种可解释、可追溯的自动化审查方案。值得关注的是，它展示了 LLM 在专业领域（如核安全）中处理超长文档和复杂推理的潜力，并提出了一个无需向量检索的轻量级文档树交互范式。",
+  "tags": [
+    "LLM",
+    "Multi-hop Reasoning",
+    "Planning",
+    "Document Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:03:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多跳文档推理任务转化为规划问题，LLM 智能体通过选择文档片段和判断证据充分性来逐步收集信息。",
+      "提出无向量文档树结构，智能体仅通过浏览、阅读和搜索工具交互，避免了传统向量检索的复杂性和开销。",
+      "在核监管文档这一高风险、长文档场景中验证了方法的有效性，展示了 LLM 在专业领域自动化审查中的潜力。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

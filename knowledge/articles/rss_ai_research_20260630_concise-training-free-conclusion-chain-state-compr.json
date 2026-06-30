@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-137",
+  "title": "ConCise: Training-Free Conclusion-Chain State Compression for Cost-Efficient Multi-Step RAG Services",
+  "source_url": "https://arxiv.org/abs/2606.28361",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ConCise 的无训练结论链状态压缩方法，旨在降低多步检索增强生成（RAG）服务中的累积输入令牌成本。在多步 RAG 中，每次迭代的检索和推理都会产生历史文档和推理轨迹，导致输入令牌数呈 O(N²) 增长，并引入噪声。ConCise 通过压缩中间状态（即结论链）来减少冗余信息，无需额外训练即可保持推理质量。该方法特别适用于基于 API 的 LLM 服务架构，能显著降低延迟和成本，同时保持多跳问答的准确性。该研究解决了多步 RAG 在实际部署中的关键效率瓶颈，具有重要的实用价值。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Compression",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:10:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步 RAG 中累积输入令牌呈 O(N²) 增长，ConCise 通过无训练的状态压缩有效缓解了这一问题。",
+      "ConCise 无需额外训练即可压缩中间推理链，降低了 API 调用成本并减少了噪声干扰。",
+      "该方法在保持多跳问答准确性的同时，显著提升了服务效率，适合实际部署场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

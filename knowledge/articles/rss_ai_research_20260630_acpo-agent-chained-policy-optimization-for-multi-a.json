@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-078",
+  "title": "ACPO: Agent-Chained Policy Optimization for Multi-Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2606.30072",
+  "source_platform": "rss_ai_research",
+  "summary": "ACPO（Agent-Chained Policy Optimization）是一种针对多智能体强化学习（MARL）中合作任务的新型算法。在集中式训练与分散式执行（CTDE）范式下，策略梯度的直接计算一直存在困难。现有方法主要分为两类：一是使用集中式评论家的独立因子化更新，但缺乏无价值分解假设下的通用联合改进保证；二是基于价值分解的方法，但受限于特定结构。ACPO 通过引入智能体链式策略优化机制，将多智能体联合策略优化分解为一系列条件策略更新步骤，从而在理论上提供联合改进保证，同时保持分散式执行的可行性。该方法无需严格的价值分解假设，适用于更广泛的合作任务场景。该论文来自 arXiv 预印本，代表了 MARL 领域在策略优化理论上的重要进展，尤其解决了 CTDE 下联合策略梯度计算的长期难题，具有较高的理论价值和实际应用潜力。",
+  "tags": [
+    "Multi-Agent Reinforcement Learning",
+    "Policy Optimization",
+    "CTDE",
+    "Cooperative Tasks"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:06:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ACPO 通过智能体链式条件策略更新，在无价值分解假设下提供了联合改进保证，弥补了现有 CTDE 方法的理论缺陷。",
+      "该方法在保持分散式执行的同时，实现了更通用的合作任务策略优化，扩展了 MARL 的应用范围。",
+      "ACPO 的理论框架为多智能体策略梯度算法提供了新的设计思路，可能推动后续研究向更高效、更稳定的方向演进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

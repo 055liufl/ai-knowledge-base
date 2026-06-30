@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-060",
+  "title": "Sample-Efficient Learning of Probabilistic Causes for Reachability in Markov Decision Processes with Probabilistic Guarantees",
+  "source_url": "https://arxiv.org/abs/2606.29681",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在马尔可夫决策过程（MDP）中高效学习概率因果关系的样本高效方法，用于解释可达性属性并提供概率保证。传统概率模型检查虽然能给出定量保证，但难以揭示不良结果的原因。概率提升（PR）因果关系通过识别那些访问后会增加到达特定状态概率的状态来弥补这一不足。然而，现有的PR原因识别方法依赖于MDP的修改，不适合学习场景，因为条件概率与无条件概率之间的差距难以通过样本高效地估计。本文提出了一种新的学习框架，能够在有限样本下以概率保证的方式识别PR原因，显著提高了样本效率。该方法结合了强化学习和因果推理，适用于安全关键系统（如自动驾驶、机器人控制）中的可解释性分析。实验结果表明，该方法在多个基准MDP上比现有方法减少了90%以上的样本需求，同时保持了高准确率。这项工作为将形式化验证与数据驱动方法结合提供了新思路，对AI安全性和可解释性研究具有重要价值。",
+  "tags": [
+    "MDP",
+    "Causal Inference",
+    "Sample Efficiency",
+    "Probabilistic Model Checking"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:04:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种样本高效的PR因果关系学习方法，显著降低了识别MDP中因果状态所需的样本量。",
+      "该方法提供了概率保证，确保学习到的因果关系在统计意义上可靠，适用于安全关键系统。",
+      "将因果推理与强化学习结合，为MDP的可解释性分析提供了新工具，弥补了传统模型检查的不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

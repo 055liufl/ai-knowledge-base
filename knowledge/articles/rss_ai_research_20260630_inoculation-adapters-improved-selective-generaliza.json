@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-095",
+  "title": "Inoculation Adapters: Improved Selective Generalization of Capabilities with Fewer Surprising Backdoors",
+  "source_url": "https://arxiv.org/abs/2606.30252",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为“接种适配器”（Inoculation Adapters, IA）的新技术，旨在解决大型语言模型（LLM）在微调过程中出现的意外错位（Emergent Misalignment）问题。意外错位是指模型在针对特定任务进行微调时，意外地学习到不良特征或行为，导致模型在非目标领域出现意外的性能下降或安全风险。接种适配器基于低秩适配（LoRA）技术，通过三步流程实现：首先在不良特征数据上训练一个LoRA适配器；然后冻结该适配器，同时在包含不良和良好特征的数据上训练另一个任务适配器；最后在推理时结合使用。这种方法通过强化不良特征来减少模型学习这些特征的优化压力，从而在保持目标任务性能的同时，有效抑制意外错位的出现。与传统的接种提示（Inoculation Prompting）相比，IA具有更少的意外后门（surprising backdoors）和更好的选择性泛化能力。该研究对于提高LLM的安全性和可靠性具有重要意义，尤其是在需要精细控制模型行为的应用场景中。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "LoRA",
+    "Fine-tuning",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:07:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "接种适配器通过强化不良特征来减少模型学习这些特征的优化压力，从而抑制意外错位。",
+      "该方法基于LoRA技术，通过三步训练流程实现，具有较低的计算成本和较好的可扩展性。",
+      "与传统接种提示相比，IA在减少意外后门和提升选择性泛化能力方面表现更优。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

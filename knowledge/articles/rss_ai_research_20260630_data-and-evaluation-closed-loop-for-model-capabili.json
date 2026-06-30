@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-002",
+  "title": "Data and Evaluation Closed-Loop for Model Capability Enhancement",
+  "source_url": "https://arxiv.org/abs/2606.28471",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于大语言模型（LLM）能力增强的数据与评估闭环框架。该框架的核心思想是解决预训练中数据与评估之间的脱节问题：数据前瞻性地塑造模型能力，而评估仅能事后通过噪声分数反映能力，且两者使用不兼容的词汇（如基准名称与样本级特征）。作者设计了一个闭环系统，将评估失败信号反向传播到数据优化环节，通过自动化分析评估结果与数据特征之间的关联，指导数据筛选、增强或重采样策略，从而迭代提升模型能力。该工作值得关注，因为它首次系统性地将数据工程与评估反馈整合为可操作的闭环，有望显著提升LLM训练的效率和效果，减少人工试错成本。",
+  "tags": [
+    "LLM",
+    "Data Engineering",
+    "Evaluation",
+    "Training Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T10:59:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据与评估之间存在语义鸿沟，导致模型优化难以从评估失败直接定位到数据问题。",
+      "闭环框架通过将评估信号反向映射到数据特征，实现了数据优化的自动化与可解释性。",
+      "该方法可减少人工干预，提升LLM预训练中数据策略的迭代效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

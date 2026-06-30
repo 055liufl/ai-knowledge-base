@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260630-124",
+  "title": "A Systems-Level Analysis of Sensitivity, Robustness, and Stability in Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2606.28337",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对检索增强生成（RAG）系统进行了系统级分析，重点关注其敏感性、鲁棒性和稳定性。研究通过56次实验运行，系统评估了块大小、检索深度（top k）、基于嵌入的重排序、概率性检索噪声以及重复采样等关键参数对RAG性能的影响。与仅关注最终答案准确性的传统评估不同，本文深入剖析了预处理、检索、上下文打包和生成等各环节的失败模式。研究结果揭示了RAG系统在不同配置下的行为特征，为优化RAG架构提供了实证依据。该工作对于理解RAG系统的内在脆弱性、提升其在实际应用中的可靠性具有重要意义，尤其适用于需要高稳定性的知识密集型任务场景。",
+  "tags": [
+    "RAG",
+    "Robustness",
+    "Sensitivity",
+    "Stability",
+    "Empirical Study"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:09:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG系统的失败可能源于预处理、检索、上下文打包或生成等多个环节，而不仅仅是最终答案的准确性。",
+      "块大小、检索深度和重排序等参数对RAG的敏感性和鲁棒性有显著影响，需要系统级调优。",
+      "概率性检索噪声和重复采样会引入不稳定性，影响RAG系统的可靠输出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

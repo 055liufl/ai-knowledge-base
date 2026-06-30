@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260630-009",
+  "title": "BV-Blend: Uncertainty-Weighted Historical Baselines for Stable Critic-Free RL with Verifiable Rewards",
+  "source_url": "https://arxiv.org/abs/2606.28707",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 BV-Blend 的新方法，旨在解决基于可验证奖励的无评论强化学习（RLVR）中的不稳定性问题。RLVR 方法，如组相对策略优化（GRPO），通过避免训练价值函数（评论家）来减少内存和计算开销，但在优势估计中依赖于提示局部（组内）奖励统计，导致训练不稳定。BV-Blend 通过引入不确定性加权的历史基线，将当前组的奖励统计与历史数据融合，从而稳定优势估计。该方法在数学推理任务上进行了评估，展示了比标准 GRPO 更稳定的训练过程和更好的性能。这项工作对于改进大型语言模型的对齐技术具有重要意义，特别是在需要稳定和高效训练的领域。",
+  "tags": [
+    "RLHF",
+    "LLM",
+    "Reinforcement Learning",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-06-30T10:57:15Z",
+  "collected_at": "2026-06-30T11:00:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BV-Blend 通过不确定性加权融合历史基线，解决了 GRPO 中提示局部奖励统计导致的训练不稳定性问题。",
+      "该方法无需训练额外的价值函数，保持了无评论强化学习的计算效率优势。",
+      "实验表明，BV-Blend 在数学推理任务上比标准 GRPO 更稳定，且性能更优。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
