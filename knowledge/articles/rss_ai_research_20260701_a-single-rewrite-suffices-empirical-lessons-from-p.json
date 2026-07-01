@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260701-109",
+  "title": "A Single Rewrite Suffices: Empirical Lessons from Production Skill Description Optimization",
+  "source_url": "https://arxiv.org/abs/2606.30775",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并解决了一个企业AI代理系统中的关键问题：技能碰撞（skill collision）。当多个技能的自然语言描述存在重叠时，路由LLM会错误地将用户查询分配给不匹配的技能。随着技能数量扩展到数十个，手动调整描述以维持路由准确性成为工程瓶颈。作者部署了一个自动化描述优化管道，通过单次重写（single rewrite）即可显著提升路由准确率。该研究基于生产环境的实证经验，提供了优化技能描述的实用原则和算法。论文的核心贡献在于：1）系统定义了技能碰撞问题及其对路由准确性的影响；2）提出了一种轻量级、可扩展的自动化优化方法；3）通过真实数据验证了单次重写策略的有效性。这项工作对于构建大规模、高可靠性的企业AI代理系统具有重要实践价值，尤其适用于需要动态管理大量技能描述的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Routing",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:35:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "技能碰撞（skill collision）是导致企业AI代理路由错误的核心原因，通过自动化描述优化可有效缓解。",
+      "单次重写（single rewrite）策略在保持低工程成本的同时，能显著提升路由准确率，适用于大规模技能管理。",
+      "生产环境中的实证经验表明，自动化优化管道比手动调优更高效且可扩展，是解决工程瓶颈的关键。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

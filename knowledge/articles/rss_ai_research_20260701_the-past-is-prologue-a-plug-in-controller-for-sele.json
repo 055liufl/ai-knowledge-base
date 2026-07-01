@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260701-022",
+  "title": "The Past Is Prologue: A Plug-in Controller for Selective Updates in Sequentially Evolving LLM Memory",
+  "source_url": "https://arxiv.org/abs/2606.31121",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Janus的插件式记忆控制器，用于选择性更新顺序演进的LLM记忆。在现有的LLM代理系统中，记忆更新通常被无条件接受，这可能导致有用知识被覆盖、引入过度特定规则或使最终记忆偏向近期示例。Janus通过评估候选记忆更新是否真正改善未来行为，来决定是否接受该更新。该方法基于一个关键洞察：并非所有局部生成的记忆更新都有益，因此需要一种机制来过滤无益的更新。Janus作为插件设计，可轻松集成到现有系统中，无需修改核心LLM架构。实验表明，Janus能有效提升记忆质量，避免有害更新，从而增强LLM代理的长期性能。这项工作对于构建更可靠的自主代理系统具有重要意义，特别是在需要持续学习和适应性的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:28:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM记忆系统无条件接受所有局部更新，导致知识覆盖和偏差问题",
+      "Janus通过评估更新对未来行为的实际影响来选择性接受记忆更新",
+      "作为插件设计，Janus可轻松集成到现有LLM代理系统中",
+      "实验证明选择性更新能显著提升记忆质量和代理长期性能"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

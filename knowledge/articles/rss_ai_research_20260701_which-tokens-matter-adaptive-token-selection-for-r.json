@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-059",
+  "title": "Which Tokens Matter? Adaptive Token Selection for RLVR with the Relative Surprisal Index",
+  "source_url": "https://arxiv.org/abs/2606.31575",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“相对意外性指数”（Relative Surprisal Index, RSI）的方法，用于在强化学习（RL）训练大语言模型（LLM）时自适应地选择关键token。传统的RLVR（基于可验证奖励的强化学习）方法通常对所有token一视同仁，但作者发现不同token对推理能力的贡献差异显著。RSI通过衡量token在模型输出中的意外性（即概率分布熵），自动识别并优先训练那些高信息量、高不确定性的token位置，从而提升训练效率和推理性能。实验表明，该方法在数学推理、代码生成等任务上显著优于均匀采样或固定阈值策略，且计算开销可控。该工作为RLVR中的token级优化提供了新视角，有望推动LLM在复杂推理任务中的高效训练。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Token Selection",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:31:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出相对意外性指数（RSI）作为自适应token选择指标，优先训练高信息量token，提升RLVR效率。",
+      "实验证明RSI在数学推理和代码生成任务上优于均匀采样和固定阈值方法，且计算开销可控。",
+      "揭示了不同token对LLM推理能力贡献不均，为token级优化提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

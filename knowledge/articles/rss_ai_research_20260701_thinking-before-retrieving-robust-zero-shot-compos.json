@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-032",
+  "title": "Thinking Before Retrieving: Robust Zero-Shot Composed Image Retrieval via Strategic Planning and Self-Criticism",
+  "source_url": "https://arxiv.org/abs/2606.31222",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“思考-检索-批评”（Thinking Before Retrieving）的新型零样本组合图像检索方法。在训练-free的零样本设置下，传统方法通常采用单次生成策略，将参考图像上下文与文本修改指令直接融合，但这种方法缺乏对检索目标的战略性规划，容易导致检索结果不准确。本文通过引入战略规划与自我批评机制，在推理时首先基于参考图像和修改指令生成一个初步的检索查询，然后利用自我批评模块对查询进行迭代优化，使其更符合目标图像的语义。该方法在冻结的视觉-语言嵌入空间（如CLIP）中运行，无需任何训练数据或微调。实验在多个标准组合图像检索基准（如CIRR、FashionIQ等）上验证了其有效性，显著优于现有的零样本方法，甚至在某些场景下接近有监督方法。这项工作的价值在于为组合图像检索提供了一种鲁棒且高效的零样本解决方案，尤其适用于缺乏标注数据的实际应用场景，同时展示了战略规划与自我批评在视觉-语言任务中的潜力。",
+  "tags": [
+    "Composed Image Retrieval",
+    "Zero-Shot Learning",
+    "Self-Criticism",
+    "Vision-Language"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:29:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出战略规划与自我批评机制，在零样本组合图像检索中实现查询的迭代优化，显著提升检索准确性。",
+      "无需训练数据或模型微调，在冻结的视觉-语言嵌入空间中运行，具有强泛化性和实用性。",
+      "在多个基准上超越现有零样本方法，部分场景接近有监督方法，展示了零样本学习的巨大潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

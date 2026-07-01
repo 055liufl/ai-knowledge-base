@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-129",
+  "title": "OTCache: Optimal Transport for Geometry-Aware Caching in Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2606.31026",
+  "source_platform": "rss_ai_research",
+  "summary": "OTCache 是一种无需训练的框架，旨在通过缓存调度预测加速扩散模型采样。现有基于图的缓存方法通过优化最短路径目标来减少冗余计算，但依赖于加性独立性假设，该假设在低 NFE（神经函数评估）场景下常常失效。OTCache 将不同推理预算下的缓存调度建模为策略空间中的平滑演化，灵感来源于最优传输理论。该方法通过几何感知的缓存策略，在保持生成质量的同时显著提升采样速度。该工作值得关注，因为它解决了扩散模型推理加速中的一个关键瓶颈，即现有方法在低计算预算下的性能退化问题，并通过最优传输提供了理论优雅的解决方案，具有实际部署潜力。",
+  "tags": [
+    "Diffusion Models",
+    "Inference Acceleration",
+    "Optimal Transport",
+    "Caching"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:37:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OTCache 通过最优传输理论建模缓存调度策略的平滑演化，克服了传统图方法在低 NFE 下的加性独立性假设失效问题。",
+      "该框架无需额外训练，可直接应用于现有扩散模型，显著降低推理计算成本。",
+      "几何感知的缓存策略在保持生成质量的同时，实现了采样速度的显著提升，适用于实时或资源受限场景。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

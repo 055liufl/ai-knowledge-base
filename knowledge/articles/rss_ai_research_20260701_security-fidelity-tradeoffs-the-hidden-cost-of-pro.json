@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260701-111",
+  "title": "Security--Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense",
+  "source_url": "https://arxiv.org/abs/2606.30783",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了大型语言模型（LLM）在防御间接提示注入攻击时存在一个根本性的安全-保真度权衡：当前防御机制主要通过抑制不可信文本来抵抗注入指令，但这种做法会破坏需要保留原始文本的任务（如翻译、文档编辑）。传统攻击成功指标无法捕捉这一问题，因为忽略注入的模型与忠实处理数据的模型在指标上得分相同。为此，作者提出了SecFid基准测试，专门设计用于评估防御措施在安全性与任务保真度之间的平衡。这项研究值得关注，因为它指出了现有防御策略的盲区，并提供了更全面的评估方法，对LLM安全部署和任务可靠性具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:35:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "间接提示注入防御存在安全-保真度权衡：抑制不可信文本会破坏翻译、编辑等需要保留原始内容的任务。",
+      "传统攻击成功指标存在盲区，无法区分忽略注入与忠实处理数据的模型表现。",
+      "SecFid基准测试为评估防御措施在安全性与任务保真度之间的平衡提供了新方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

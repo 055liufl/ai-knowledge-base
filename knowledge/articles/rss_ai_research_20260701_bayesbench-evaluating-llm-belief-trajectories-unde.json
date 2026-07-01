@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-004",
+  "title": "BayesBench: Evaluating LLM Belief Trajectories Under Multi-Turn Evidence Accumulation",
+  "source_url": "https://arxiv.org/abs/2606.30850",
+  "source_platform": "rss_ai_research",
+  "summary": "BayesBench 是一个用于评估大语言模型（LLM）在多轮对话中信念更新轨迹的基准测试。该研究指出，当前大多数评估仅关注模型在单轮对话中的最终答案，而忽略了多轮对话中模型如何根据逐步积累的证据更新其信念这一关键过程。BayesBench 通过设计一系列需要贝叶斯推理的任务，要求模型在每轮对话中基于新证据调整对未观测变量的信念，并记录其信念轨迹。该基准测试旨在衡量模型是否能够理性地减少认知不确定性，即是否遵循贝叶斯更新原则。实验结果表明，现有 LLM 在信念更新方面存在系统性偏差，例如过度自信或更新不足，这限制了其在需要持续推理和动态调整的应用场景（如医疗诊断、科学发现、交互式问答）中的可靠性。BayesBench 的提出为评估和改进 LLM 的推理能力提供了新的视角和工具，对于推动更鲁棒、更接近人类推理的 AI 系统具有重要意义。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Bayesian Inference",
+    "Multi-Turn Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:27:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 评估忽视多轮对话中的信念更新过程，BayesBench 填补了这一空白，通过贝叶斯推理任务系统评估模型在证据积累下的理性程度。",
+      "实验发现 LLM 在信念更新中存在系统性偏差，如过度自信或更新不足，表明其推理过程与贝叶斯最优原则存在差距。",
+      "该基准测试为改进 LLM 的持续推理能力提供了量化工具，对医疗、科学等需要动态决策的领域具有重要应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

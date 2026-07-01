@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-042",
+  "title": "ReGRPO: Reflection-Augmented Policy Optimization for Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2606.31392",
+  "source_platform": "rss_ai_research",
+  "summary": "ReGRPO 是一种针对工具使用型智能体的新型强化学习方法，旨在解决现有视觉-语言模型（VLM）在多模态、多步骤任务中因工具调用失败而表现脆弱的问题。当前方法存在两大缺陷：监督微调（SFT）主要依赖成功轨迹，缺乏对工具失败后恢复行为的训练信号；而稀疏的轨迹级强化学习奖励则难以定位具体失败步骤并提供修复指导。ReGRPO 通过引入反思增强策略优化，在强化学习过程中融入对失败步骤的反思信号，从而提升智能体在工具使用场景下的鲁棒性和自我修复能力。该方法有望显著改善 VLM 在实际应用中的可靠性，特别是在需要连续调用外部工具的复杂任务中，如视觉问答、机器人操控等。该工作结合了强化学习与反思机制，为工具增强型智能体的训练提供了新范式，具有重要的理论和实践价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Tool-Using Agents",
+    "Vision-Language Models",
+    "Reflection Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:30:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReGRPO 通过反思增强策略优化，解决了现有方法在工具失败后缺乏恢复信号的问题。",
+      "该方法将反思信号融入强化学习过程，为多步骤工具使用任务提供了更细粒度的训练指导。",
+      "ReGRPO 有望提升视觉-语言模型在复杂、多模态任务中的鲁棒性和自我修复能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

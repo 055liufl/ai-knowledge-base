@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-071",
+  "title": "Harnessing Textual Refusal Directions for Multimodal Safety",
+  "source_url": "https://arxiv.org/abs/2606.31876",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种利用大语言模型（LLM）内部的文本拒绝方向来增强多模态大语言模型（MLLM）安全性的新方法。传统上，提升MLLM安全性需要收集大量不安全的多模态数据进行后训练对齐或激活空间干预，但多模态不安全数据的收集比纯文本数据困难得多。该研究通过从LLM骨干网络中直接提取文本拒绝方向，并验证其能否泛化到多模态场景，从而避免了多模态不安全数据的依赖。实验表明，这些文本拒绝方向在MLLM中仍能有效识别和抑制不安全输出，显著降低了有害内容的生成风险。该方法具有高效、低成本的优点，为多模态安全对齐提供了新的思路，尤其适用于数据稀缺的场景。这项工作在AI安全领域具有重要价值，因为它简化了多模态安全防护的实现路径，并可能推动更广泛的多模态模型部署。",
+  "tags": [
+    "LLM",
+    "Multimodal",
+    "Safety",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:32:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "文本拒绝方向可从LLM骨干中直接提取，并有效泛化到多模态场景，无需多模态不安全数据。",
+      "该方法降低了MLLM安全对齐的数据收集成本，为数据稀缺环境下的安全防护提供了可行方案。",
+      "实验验证了激活空间干预在跨模态迁移中的有效性，拓展了安全对齐技术的应用边界。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

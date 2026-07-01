@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260701-008",
+  "title": "Teaching digiKam to Understand You: Natural Language Search with Local LLMs",
+  "source_url": "http://srirupa19.github.io/gsoc/2026/06/28/gsoc1.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了在开源照片管理软件 digiKam 中集成本地大语言模型（LLM）以实现自然语言搜索功能。digiKam 是一款功能强大的照片管理工具，支持标签、评分和元数据管理，但传统搜索依赖关键词匹配。通过集成本地运行的 LLM（如 Llama 或 GPT 系列），用户可以用自然语言描述照片内容（如“去年夏天的海滩照片”），系统自动理解语义并返回匹配结果。该方案注重隐私保护，因为所有处理在本地完成，无需上传数据到云端。文章详细描述了技术实现，包括使用 Hugging Face Transformers 库加载模型、将用户查询转换为向量嵌入、以及利用 FAISS 进行相似性搜索。此外，还讨论了性能优化和模型选择策略。这项创新提升了 digiKam 的可用性，尤其适合隐私敏感用户，展示了 LLM 在桌面应用中的实际落地潜力。",
+  "tags": [
+    "LLM",
+    "Natural Language Search",
+    "digiKam",
+    "Local AI",
+    "Open Source"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:42Z",
+  "collected_at": "2026-07-01T11:25:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将本地 LLM 集成到 digiKam 中，实现隐私保护的语义搜索，避免云端依赖。",
+      "使用向量嵌入和 FAISS 索引，将自然语言查询转化为高效相似性匹配。",
+      "该方案展示了 LLM 在桌面应用中的实用价值，尤其适合照片管理等数据密集型场景。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

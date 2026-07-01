@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-061",
+  "title": "Think in English, Answer in Korean: Efficient Adaptation of Multilingual Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2606.31648",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍 LuckyStar 111B，一个 1110 亿参数的混合推理模型，由 Cohere 与 LG CNS 合作开发，专为韩英双语企业代理设计，在内存和部署约束下实现高效工具使用。该模型基于 Cohere 的 Command A 模型进行后训练，而非从头预训练，通过前置条件（preamble conditioning）在简洁的非推理行为与更长的工具导向推理之间切换。研究探讨了四种选择，旨在优化多语言工具使用代理的适应效率。该工作值得关注，因为它展示了在资源受限环境下，如何通过后训练和条件控制实现高性能多语言代理，对工业界部署多语言 AI 系统具有实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Multilingual",
+    "Tool-Using"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:31:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LuckyStar 111B 通过后训练 Command A 模型而非从头预训练，显著降低了计算成本，同时保持了高性能。",
+      "前置条件（preamble conditioning）机制允许模型在简洁推理和工具导向推理之间动态切换，提升了多语言企业代理的适应性。",
+      "该模型针对韩英双语场景优化，展示了在内存和部署约束下实现高效多语言工具使用的可行性。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

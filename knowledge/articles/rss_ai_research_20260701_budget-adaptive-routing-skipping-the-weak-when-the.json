@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-122",
+  "title": "Budget-Adaptive Routing: Skipping the Weak When the Strong Answers Anyway",
+  "source_url": "https://arxiv.org/abs/2606.30919",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种预算自适应路由（Budget-Adaptive Routing）方法，用于边缘-云协同推理系统。传统系统将路由估计器放置在弱模型（边缘端）之后，导致即使后续需要将任务卸载到云端强模型，弱模型的前向计算仍然执行，造成不必要的计算开销。作者指出，当卸载预算（如带宽、延迟或计算资源）动态变化时，这种弱条件设计是次优的。新方法通过提前预测是否需要卸载，从而在预算紧张时跳过弱模型的计算，直接利用云端强模型的结果。该方法在多个视觉任务（如目标检测）上进行了验证，表明在保持精度的同时显著降低了边缘端的计算成本。该工作对于资源受限的边缘计算场景具有实际意义，尤其是在物联网、自动驾驶和实时视频分析等领域。其创新点在于将路由决策与预算动态结合，优化了计算-通信权衡。",
+  "tags": [
+    "Edge-Cloud Collaboration",
+    "Adaptive Routing",
+    "Inference Optimization",
+    "Computer Vision"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统边缘-云推理中，弱模型的前向计算在卸载后仍被执行，造成浪费；新方法通过预算自适应路由跳过不必要的弱模型计算。",
+      "该方法根据动态变化的卸载预算（如带宽、延迟）调整路由策略，在资源紧张时直接使用云端强模型，优化计算-通信权衡。",
+      "在多个视觉任务上验证，该方法在保持精度的同时显著降低边缘端计算开销，适用于物联网、自动驾驶等实时场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

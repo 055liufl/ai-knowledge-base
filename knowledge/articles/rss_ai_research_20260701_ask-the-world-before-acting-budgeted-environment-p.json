@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-048",
+  "title": "Ask the World Before Acting: Budgeted Environment Probing for World-Model Calibration",
+  "source_url": "https://arxiv.org/abs/2606.31422",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新颖的机制，用于校准长时域语言智能体（Long-horizon Language Agents）的内部世界模型（World Model）。在传统的智能体决策过程中，智能体不仅选择动作，还会维护一个私有的世界模型，该模型在连续决策步骤间传递。然而，当模型发生漂移（drift）时，后续的失败可能在执行错误动作之前就已经注定。为了解决这一问题，论文研究了一种直接的修复机制：在智能体执行下一个任务动作之前，它可以选择向环境询问一个特定的信念字段（belief field），并将得到的答案写回其世界模型。这种机制将环境交互视为一种稀缺资源，智能体需要在有限的预算内决定何时以及询问哪些信念字段，以最有效地校准模型、避免未来的失败。这项工作值得关注，因为它直接针对了长时域语言智能体在复杂任务中因模型漂移导致的累积错误问题，提出了一种主动、预算受限的校准方法，有望提升智能体在真实世界场景中的鲁棒性和可靠性。论文通过理论分析和实验验证了该机制的有效性，为智能体自我修正和世界模型维护提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "World Model",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:30:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时域语言智能体的世界模型漂移是导致后续决策失败的根本原因，且失败在错误动作执行前已注定。",
+      "提出了一种预算受限的环境探测机制，允许智能体在行动前主动询问环境以校准世界模型。",
+      "将环境交互视为稀缺资源，智能体需在有限预算内优化询问策略，以最大化校准效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

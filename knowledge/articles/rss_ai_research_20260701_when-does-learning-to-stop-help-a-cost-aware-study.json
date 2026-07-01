@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260701-005",
+  "title": "When Does Learning to Stop Help? A Cost-Aware Study of Early Exits in Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2606.30852",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了推理模型中的早期退出机制，提出了一种名为LearnStop的轻量级停止规则。LearnStop无需隐藏状态，通过在固定预算检查点从当前推理前缀中提取简短答案，并基于在线特征预测前缀正确性，从而决定是否提前终止推理。论文从成本感知的角度分析了学习停止规则何时优于简单的置信度或收敛阈值，揭示了在不同实例上推理计算量存在差异时，学习停止规则的有效性条件。这项工作对于提升推理模型的效率、降低计算成本具有重要意义，尤其适用于资源受限或需要实时响应的场景。",
+  "tags": [
+    "Reasoning Models",
+    "Early Exits",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:27:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LearnStop通过在线特征预测前缀正确性，无需隐藏状态即可实现高效停止决策。",
+      "学习停止规则在推理计算量差异大的实例上优于固定阈值，但在某些场景下简单阈值更优。",
+      "成本感知分析揭示了停止规则选择与计算预算、任务难度之间的权衡关系。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

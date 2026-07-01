@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260701-029",
+  "title": "Agentic RAG-VLM: Affordance-Aware Retrieval-Augmented Generation with Self-Reflective Planning for Robotic Grasping",
+  "source_url": "https://arxiv.org/abs/2606.31200",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Agentic RAG-VLM的新型机器人抓取框架，旨在解决杂乱环境中通用机器人抓取的关键挑战。现有基于视觉语言模型（VLM）的方法主要依赖视觉相似性进行物体匹配，忽略了物理可供性（如手柄可抓握性、材料脆弱性），且以开环方式运行，缺乏空间推理和故障恢复能力，在物体密集或物理多样性高的场景中效果有限。Agentic RAG-VLM通过引入检索增强生成（RAG）和自反思规划，使机器人能够利用外部知识库检索与物体物理属性相关的信息，并结合视觉输入进行闭环推理和自适应调整。该方法的核心创新在于将可供性感知（affordance awareness）融入RAG流程，使机器人不仅能识别物体，还能理解其物理交互特性，从而优化抓取策略。实验表明，该框架在多种复杂场景下显著提升了抓取成功率和鲁棒性，尤其对易碎或形状不规则物体表现突出。这项工作值得关注，因为它将RAG从语言任务扩展到机器人操作领域，为具身智能提供了新的范式，有望推动机器人在家庭、医疗等非结构化环境中的实际应用。",
+  "tags": [
+    "Robotic Grasping",
+    "VLM",
+    "RAG",
+    "Affordance",
+    "Self-Reflective Planning"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:29:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将检索增强生成（RAG）从自然语言处理扩展到机器人抓取，通过外部知识库提供物理可供性信息，弥补了纯VLM方法在物体物理属性理解上的不足。",
+      "引入自反思规划机制，使机器人能够基于抓取结果进行闭环推理和故障恢复，显著提升了在杂乱环境中的鲁棒性和适应性。",
+      "可供性感知（affordance awareness）的融入是核心创新，使机器人能根据物体手柄、材质等物理特征动态调整抓取策略，而非仅依赖视觉相似性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

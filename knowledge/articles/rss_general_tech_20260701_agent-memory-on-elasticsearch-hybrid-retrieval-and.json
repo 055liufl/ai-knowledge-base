@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260701-019",
+  "title": "Agent memory on Elasticsearch: hybrid retrieval and DLS",
+  "source_url": "https://www.elastic.co/search-labs/blog/agent-memory-elasticsearch",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了在 Elasticsearch 上实现智能体记忆（Agent Memory）的混合检索与文档级安全（DLS）方案。核心思路是利用 Elasticsearch 的向量搜索与关键词搜索能力，构建混合检索系统，以提升智能体对历史交互、上下文信息的召回准确性和效率。同时，通过集成文档级安全机制，确保不同用户或角色的记忆数据隔离，满足企业级隐私与合规需求。该方案为构建具有长期记忆的 AI 智能体提供了可扩展、高性能的存储与检索基础设施，尤其适用于需要处理敏感数据的对话系统、客服机器人等场景。值得关注的是，它结合了传统搜索与向量检索的优势，并首次在智能体记忆领域系统性地引入细粒度权限控制，为生产级部署提供了参考。",
+  "tags": [
+    "Agent",
+    "Elasticsearch",
+    "Hybrid Retrieval",
+    "Memory",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:42Z",
+  "collected_at": "2026-07-01T11:26:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合检索（向量+关键词）能显著提升智能体记忆的召回质量，兼顾语义相似性与精确匹配。",
+      "文档级安全（DLS）机制实现了多租户场景下的记忆隔离，满足企业级数据隐私要求。",
+      "Elasticsearch 作为底层存储，提供了高可用、可扩展的架构，适合生产环境部署。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

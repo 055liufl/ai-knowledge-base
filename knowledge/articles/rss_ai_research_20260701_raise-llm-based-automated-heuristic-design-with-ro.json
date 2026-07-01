@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-066",
+  "title": "RAISE: LLM-based Automated Heuristic Design with Robust Adversary Instance Search",
+  "source_url": "https://arxiv.org/abs/2606.31801",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为RAISE（Robust Adversary Instance Search）的框架，旨在解决基于大型语言模型（LLM）的自动启发式设计（AHD）在面对真实世界分布偏移时的鲁棒性问题。现有LLM-based AHD方法通常在固定的训练实例集上优化启发式算法，但部署时可能因数据分布变化而性能崩溃。RAISE通过在训练过程中集成约束最坏情况实例搜索，主动寻找并优化对抗性实例，从而增强启发式算法的泛化能力和鲁棒性。该框架将实例搜索视为一个约束优化问题，利用LLM生成和评估潜在困难实例，并迭代更新启发式策略。实验表明，RAISE在多个组合优化和搜索问题中显著提升了启发式算法的鲁棒性，同时保持了高效性。这项工作对于将LLM应用于实际决策系统具有重要价值，因为它直接应对了模型部署中的分布偏移挑战，是AI安全与可靠性领域的前沿探索。",
+  "tags": [
+    "LLM",
+    "Automated Heuristic Design",
+    "Robustness",
+    "Adversarial Instance Search"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:32:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAISE通过约束最坏情况实例搜索，主动增强LLM-based AHD对分布偏移的鲁棒性，弥补了现有方法仅优化固定训练集的缺陷。",
+      "该框架将实例搜索形式化为约束优化问题，利用LLM生成对抗性实例并迭代更新启发式策略，实现了鲁棒性与效率的平衡。",
+      "实验验证了RAISE在多个组合优化和搜索问题上的有效性，为LLM在真实世界决策系统中的应用提供了重要的安全保障。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

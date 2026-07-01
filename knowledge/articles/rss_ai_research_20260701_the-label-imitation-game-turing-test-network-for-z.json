@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-118",
+  "title": "The Label Imitation Game: Turing Test Network for Zero-Shot Pseudo-Label Pruning",
+  "source_url": "https://arxiv.org/abs/2606.30875",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“标签模仿游戏”（Label Imitation Game, LIG）的新框架，用于解决基础模型在零样本推理中产生的伪标签幻觉问题。传统方法依赖固定阈值过滤伪标签，但难以有效识别和剔除错误标签。LIG 受图灵测试启发，将伪标签修剪形式化为对抗性询问过程：通过训练一个“图灵测试网络”，让该网络与伪标签生成器进行对抗博弈，从而自动识别并剔除不可靠的伪标签。实验表明，该方法在多个零样本学习基准上显著提升了伪标签质量，进而提高了下游任务的性能。该工作为大规模数据标注中的质量控制提供了新思路，具有重要的理论价值和实际应用潜力。值得关注的是，它巧妙地将经典图灵测试概念引入机器学习数据清洗领域，创新性地解决了零样本场景下的标签噪声问题。",
+  "tags": [
+    "Zero-Shot Learning",
+    "Pseudo-Labeling",
+    "Adversarial Learning",
+    "Data Quality"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将图灵测试思想引入伪标签修剪，通过对抗性询问机制替代传统固定阈值过滤，更有效地识别和剔除零样本推理中的幻觉标签。",
+      "LIG 框架无需人工标注或额外监督信号，完全在零样本设定下运行，适用于大规模数据标注场景。",
+      "实验证明该方法在多个基准上显著提升了伪标签的准确率和下游任务性能，为数据质量控制在基础模型时代提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

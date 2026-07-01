@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260701-116",
+  "title": "A Stationary-Distribution Theory for Triplet-Based Plateau Search in Random Forest Ensemble-Size Selection",
+  "source_url": "https://arxiv.org/abs/2606.30837",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于平稳分布理论的三元组高原搜索方法，用于随机森林中树的数量（即集成大小）的自动调优。随机森林中树的数量是一个关键计算参数：增加树的数量会减少有限集成的变异性，但会增加训练和预测成本。传统的基于高原的调优方法通过比较三个不同树数量（几何三元组）的袋外分数来调整该参数。然而，在其余超参数稳定后，三元组的中心点并不一定收敛到一个确定值，而是会波动。本文通过引入平稳分布理论，分析了这种波动行为，并证明了在适当条件下，三元组中心点的分布会收敛到一个平稳分布。基于此，作者提出了一种新的算法，能够更稳定地选择最优树的数量，从而在保持预测性能的同时降低计算成本。该研究对于提升随机森林的实用性和自动化调优具有重要意义，特别是在大规模数据集和资源受限的场景下。",
+  "tags": [
+    "Random Forest",
+    "Hyperparameter Tuning",
+    "Plateau Search",
+    "Stationary Distribution",
+    "Ensemble Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了基于平稳分布理论的三元组高原搜索方法，解决了随机森林树数量调优中中心点波动的问题。",
+      "证明了在超参数稳定后，三元组中心点的分布会收敛到一个平稳分布，为算法提供了理论基础。",
+      "新方法能够在保持预测性能的同时，更稳定地选择最优树的数量，降低计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

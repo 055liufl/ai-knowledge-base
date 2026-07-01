@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260701-127",
+  "title": "Loc2Repair: A Framework for Evaluating the Impact of File-Level Issue Localization in Repo-Level LLM Repair",
+  "source_url": "https://arxiv.org/abs/2606.30963",
+  "source_platform": "rss_ai_research",
+  "summary": "Loc2Repair 是一个用于评估仓库级大型语言模型（LLM）自动修复系统中文件级问题定位影响的模块化框架。该框架通过将问题定位与补丁合成、迭代调试等下游步骤解耦，实现了对修复流水线的可控分析。其核心贡献在于揭示了端到端修复能力中隐藏的失败模式，例如文件定位不准确、补丁合成错误以及调试失败等。通过隔离文件级问题定位作为上游变量，Loc2Repair 能够量化其对整体修复性能的影响，从而为改进 LLM 在代码修复中的实际应用提供指导。该工作对于理解 LLM 在软件工程中的局限性、优化修复流程以及提升自动化修复的可靠性具有重要意义，尤其适合研究人员和开发者深入分析 LLM 在代码修复中的具体瓶颈。",
+  "tags": [
+    "LLM",
+    "Code Repair",
+    "Evaluation Framework"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Loc2Repair 通过模块化设计将文件级问题定位与补丁合成、调试等步骤解耦，从而能够单独评估定位环节对修复效果的影响。",
+      "该框架揭示了端到端修复系统中隐藏的失败模式，如文件定位不准确和补丁合成错误，为改进 LLM 修复能力提供了具体方向。",
+      "通过隔离上游变量，Loc2Repair 能够量化文件级定位对整体修复性能的贡献，有助于优化修复流水线的各个环节。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

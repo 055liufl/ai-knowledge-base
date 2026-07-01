@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-075",
+  "title": "AxDafny: Agentic Verified Code Generation in Dafny",
+  "source_url": "https://arxiv.org/abs/2606.32007",
+  "source_platform": "rss_ai_research",
+  "summary": "AxDafny 是一个基于智能体（agentic）的代码生成框架，专注于 Dafny 语言的验证代码生成。Dafny 是一种支持形式化验证的编程语言，要求代码同时包含可执行部分和证明工件（如不变量、断言、终止性论证）。AxDafny 通过验证器引导的修复循环（verifier-guided repair framework）迭代生成这些组件，确保代码的正确性。该研究还引入了 LiveCodeBench-Pro-Dafny（LCB-Pro-Dafny）基准测试，包含 250 个竞赛风格的编程问题，这些问题被翻译为 Dafny 语言并附有形式化规范。这项工作值得关注，因为它将智能体代码生成与形式化验证结合，解决了传统代码生成中缺乏正确性保证的问题。AxDafny 的迭代修复方法能够自动处理验证错误，减少人工干预，对于需要高可靠性的软件系统（如安全关键系统）具有重要应用价值。此外，LCB-Pro-Dafny 基准测试为评估验证代码生成模型提供了标准化平台，推动了该领域的研究进展。",
+  "tags": [
+    "Agent",
+    "Code Generation",
+    "Formal Verification",
+    "Dafny"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:32:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AxDafny 通过验证器引导的迭代修复循环，自动生成 Dafny 代码及其证明工件，解决了传统代码生成缺乏形式化验证的问题。",
+      "LCB-Pro-Dafny 基准测试提供了 250 个带形式化规范的竞赛问题，为评估验证代码生成模型提供了标准化资源。",
+      "该框架展示了智能体在代码生成中结合验证反馈的潜力，可减少人工调试成本，适用于高可靠性软件场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

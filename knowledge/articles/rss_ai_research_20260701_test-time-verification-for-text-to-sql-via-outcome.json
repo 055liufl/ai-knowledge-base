@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-117",
+  "title": "Test-Time Verification for Text-to-SQL via Outcome Reward Models",
+  "source_url": "https://arxiv.org/abs/2606.30851",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在Text-to-SQL任务中，通过结果奖励模型（Outcome Reward Models, ORMs）在推理时进行验证，以提升大语言模型（LLMs）的可靠性。传统的测试时推理策略，如Best-of-N采样和多数投票，依赖于执行成功或输出频率等启发式信号，这些信号在候选输出之间的语义区分能力有限。本文提出使用ORMs作为学习到的验证器，对候选SQL查询进行更精细的语义评估，从而选择更优的输出。这项工作针对结构化推理任务中的关键挑战，即如何在不依赖简单启发式信号的情况下，提高LLM在推理时的可靠性。通过引入ORMs，作者旨在提供一种更有效的验证机制，以改善Text-to-SQL等任务的性能。该研究具有重要的实际意义，因为Text-to-SQL是自然语言处理与数据库交互的核心应用，其可靠性的提升将直接推动相关技术的发展。",
+  "tags": [
+    "LLM",
+    "Text-to-SQL",
+    "Outcome Reward Model",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统的测试时推理策略（如Best-of-N采样和多数投票）依赖启发式信号，在语义区分上存在局限。",
+      "结果奖励模型（ORMs）作为学习到的验证器，能够提供更精细的语义评估，提升Text-to-SQL任务的可靠性。",
+      "该研究针对LLM在结构化推理任务中的推理时可靠性挑战，提出了基于ORMs的验证方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

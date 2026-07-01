@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260701-098",
+  "title": "Citation Discipline in Spec-Driven Development: A Cross-Model Empirical Study of Output Determinism and Automated Hallucination Detection in LLM-Generated Code",
+  "source_url": "https://arxiv.org/abs/2606.30689",
+  "source_platform": "rss_ai_research",
+  "summary": "本文通过两个受控实证研究，比较了三种基于规范驱动开发（SDD）框架在LLM代码生成中的表现：traceSDD（强制每行需求引用）、Spec Kit（使用层次化REQ-XXX.Y.Z标识符）以及另一个未命名的框架。研究聚焦于输出确定性（即生成代码与需求的一致性）和自动幻觉检测能力。结果显示，强制引用机制（如traceSDD）显著提高了代码与需求的可追溯性，减少了幻觉（如未实现需求或生成无关代码），但可能增加生成时间。该研究为LLM代码生成工具的设计提供了重要指导，特别是在需要高可靠性的场景（如安全关键系统）中，强调了规范强制引用对提升输出确定性的价值。值得关注的是，它首次系统性地量化了不同SDD框架对LLM输出质量的影响，并为自动化幻觉检测提供了实证基础。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Spec-Driven Development",
+    "Hallucination Detection",
+    "Empirical Study"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:34:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "强制每行需求引用的SDD框架（如traceSDD）能显著提升LLM生成代码与需求的一致性，减少幻觉。",
+      "不同SDD框架在输出确定性和自动幻觉检测能力上存在根本差异，层次化标识符有助于提高可追溯性。",
+      "强制引用机制可能增加生成时间，但能有效降低未实现需求或生成无关代码的风险。",
+      "该研究为构建高可靠性LLM代码生成工具提供了实证基础，尤其适用于安全关键系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

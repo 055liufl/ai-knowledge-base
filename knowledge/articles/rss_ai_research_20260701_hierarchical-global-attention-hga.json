@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-107",
+  "title": "Hierarchical Global Attention (HGA)",
+  "source_url": "https://arxiv.org/abs/2606.30709",
+  "source_platform": "rss_ai_research",
+  "summary": "Hierarchical Global Attention (HGA) 是一种即插即用的注意力机制替代方案，专为预训练的长上下文Transformer模型设计。它无需修改原始检查点参数（如W_Q、W_K、W_V、W_O），无需引入校准参数，也无需重新训练。HGA直接替换密集因果注意力，显著降低计算和内存开销。在单张RTX 5090（32GB）上对Qwen3-30B-A3B-Instruct-2507-FP8模型进行测试，补丁后的模型可直接支持64K上下文长度，而原始模型在相同硬件上无法运行。这一方法解决了长上下文场景下注意力机制的计算瓶颈，具有极高的实用价值，尤其适用于资源受限的部署环境。HGA的创新性在于其零额外成本的高效性，为长上下文LLM的推理优化提供了新思路。",
+  "tags": [
+    "Attention",
+    "Long Context",
+    "Transformer",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:35:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HGA作为即插即用的注意力替代方案，无需修改预训练参数或重新训练，直接降低长上下文计算复杂度。",
+      "在单张32GB GPU上，HGA使Qwen3-30B模型支持64K上下文，而原始模型无法运行，显著提升硬件效率。",
+      "该方法消除了校准和微调需求，简化了部署流程，适合资源受限场景。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

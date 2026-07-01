@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-046",
+  "title": "Learning to Select, Not Relearn: Hard-Routed Mixtures of Reasoning LoRAs",
+  "source_url": "https://arxiv.org/abs/2606.31413",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Hard-Routed MoR-LoRA 的新方法，用于在大型语言模型中组合多个独立训练的 LoRA 适配器，以支持多领域适应。传统方法使用 MoE（混合专家）风格的软路由，但软加权组合会改变每个 LoRA 模块在训练时依赖的单位尺度加法更新，导致性能下降。Hard-Routed MoR-LoRA 采用硬路由策略，在推理时为每个输入 token 选择单个最优的 LoRA 专家，从而保持每个适配器的原始更新特性。该方法无需共享原始训练数据，适用于隐私敏感的多领域场景。实验表明，硬路由在多个领域任务上优于软路由和简单拼接，尤其在领域差异较大时表现更佳。这项研究解决了多适配器组合中的关键问题，为模块化模型扩展提供了实用方案。",
+  "tags": [
+    "LoRA",
+    "MoE",
+    "LLM",
+    "Multi-Domain Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:30:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "硬路由策略避免了软加权组合对 LoRA 模块单位尺度更新的破坏，从而保持每个适配器的原始训练特性。",
+      "该方法在无需共享训练数据的情况下，实现了多领域适配器的有效组合，适用于隐私敏感场景。",
+      "实验证明硬路由在领域差异大的任务上显著优于软路由和简单拼接，提升了模型的多领域泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

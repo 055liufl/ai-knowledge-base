@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-082",
+  "title": "The Consistency Dilemma in LLMs: Generator-Evaluator Agreement and Vulnerability to Mistakes",
+  "source_url": "https://arxiv.org/abs/2606.30653",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的度量方法——生成器-评估器自一致性（generator-evaluator self-consistency），用于测试大型语言模型（LLM）在自主代理管道中评估自身输出时的一致性。随着LLM越来越多地被部署在依赖模型自我评估的代理系统中，这些系统的可靠性隐含地假设模型在生成输出和评估输出时以相同的方式应用相关概念。然而，这一假设可能不成立，导致模型对自身错误不敏感。作者通过实验证明，LLM在生成和评估阶段存在显著的不一致性，这种不一致性使得模型容易忽视自身产生的错误，从而影响代理管道的整体可靠性。该研究揭示了LLM自我评估中的关键漏洞，并提出了量化这一问题的具体方法，对于理解LLM在自主系统中的行为具有重要意义。值得关注的是，该工作直接挑战了当前LLM代理系统设计的核心假设，并为改进模型自我纠错能力提供了理论基础。",
+  "tags": [
+    "LLM",
+    "Self-Consistency",
+    "Agent",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:33:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出生成器-评估器自一致性度量，直接测试LLM在生成和评估阶段应用概念的一致性",
+      "实验表明LLM在自我评估中存在显著不一致性，导致对自身错误不敏感",
+      "该发现挑战了依赖模型自我评估的代理管道可靠性的核心假设"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

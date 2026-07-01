@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260701-120",
+  "title": "Curvature-Guided Module Localization for Low-Rank Detoxification of Backdoored Large Language Models",
+  "source_url": "https://arxiv.org/abs/2606.30899",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于曲率引导的模块定位方法，用于对带有后门的大型语言模型（LLM）进行低秩解毒。后门攻击通过在模型中隐藏触发器，使模型在遇到特定输入时产生恶意行为，对LLM的安全性构成严重威胁。本文研究了一种实用的后处理解毒方案，假设防御者可以访问被污染的模型，但不愿意从头开始重新训练整个网络。该方法通过分析模型权重的曲率信息，精确定位与后门相关的模块，然后对这些模块进行低秩修复，从而在保持模型性能的同时有效消除后门行为。实验结果表明，该方法在多种后门攻击场景下均能显著降低攻击成功率，且对模型原有能力影响极小。这项工作为LLM的安全部署提供了一种高效、实用的解毒手段，具有重要的理论和应用价值。",
+  "tags": [
+    "LLM",
+    "Backdoor Attack",
+    "Detoxification",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:36:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种曲率引导的模块定位方法，能够精确识别LLM中与后门相关的关键模块，避免了对整个模型进行盲目修复。",
+      "采用低秩修复策略，在消除后门行为的同时，最大程度地保留了模型在正常任务上的性能，实现了高效解毒。",
+      "该方法适用于多种后门攻击类型，且不需要重新训练模型，显著降低了防御成本，具有很高的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

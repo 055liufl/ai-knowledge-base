@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260701-009",
+  "title": "RoPoLL: Robust Panel of LLM Judges",
+  "source_url": "https://arxiv.org/abs/2606.30931",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为RoPoLL（Robust Panel of LLM Judges）的鲁棒性LLM评估方法。研究首先形式化了LLM陪审团（Panel of LLM Evaluators, PoLL）在Huber污染模型下的统计行为，发现即使陪审团规模增大，只要存在一个以LLM典型方式（如模式崩溃、谄媚、安全过度）失败的法官，PoLL就会产生无界偏差。为了解决这一问题，作者提出了RoPoLL，一种基于鲁棒聚合的框架，通过检测和过滤异常法官评分来消除污染影响。实验表明，RoPoLL在多个基准测试上显著优于传统PoLL方法，尤其是在存在恶意或系统性偏差法官时，评估准确性和稳定性大幅提升。该工作首次从理论层面揭示了LLM评估中群体决策的脆弱性，并提供了实用的鲁棒解决方案，对于构建可信的LLM评估体系具有重要价值。",
+  "tags": [
+    "LLM Evaluation",
+    "Robustness",
+    "Jury Aggregation"
+  ],
+  "author": null,
+  "published_at": "2026-07-01T11:23:43Z",
+  "collected_at": "2026-07-01T11:27:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PoLL在Huber污染模型下存在无界偏差，即使增加法官数量也无法消除，揭示了群体评估的统计脆弱性。",
+      "RoPoLL通过鲁棒聚合机制有效过滤异常评分，显著提升评估的准确性和稳定性。",
+      "该工作首次从理论层面分析LLM评估中群体决策的鲁棒性问题，为构建可信评估体系提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
