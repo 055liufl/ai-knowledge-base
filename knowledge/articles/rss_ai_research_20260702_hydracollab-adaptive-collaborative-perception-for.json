@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-073",
+  "title": "HydraCollab: Adaptive Collaborative-Perception for Distributed Autonomous Systems",
+  "source_url": "https://arxiv.org/abs/2607.00191",
+  "source_platform": "rss_ai_research",
+  "summary": "HydraCollab 是一种针对分布式自主系统（如多机器人系统）的自适应协作感知框架。该研究解决了协作感知中通信带宽与感知精度之间的固有矛盾：传统方法通过交换更多信息来提升感知效果，但会显著增加通信开销。HydraCollab 提出了一种自适应机制，能够在实时通信网络带宽限制下动态调整信息交换策略，从而在保持高感知精度的同时最小化通信负载。该工作基于图神经网络和强化学习，使每个智能体能够根据当前网络状态和任务需求，智能地选择共享哪些感知数据以及以何种粒度共享。实验结果表明，HydraCollab 在多种仿真场景下（如自动驾驶车队、无人机编队）相比现有基线方法，在感知精度相当的情况下减少了 30%-50% 的通信量，并在带宽受限时仍能维持鲁棒性能。这项研究对于推动多机器人系统在真实世界中的部署具有重要意义，尤其是在通信资源受限的户外或灾难响应场景中。其创新点在于将通信效率作为一阶优化目标，而非事后考虑，为分布式感知系统的实用化提供了新思路。",
+  "tags": [
+    "Collaborative Perception",
+    "Multi-Robot Systems",
+    "Adaptive Communication",
+    "Graph Neural Networks"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:47:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HydraCollab 通过自适应机制在通信带宽和感知精度之间实现了动态平衡，显著降低了通信开销而不牺牲感知性能。",
+      "该框架结合图神经网络和强化学习，使每个智能体能根据实时网络状态和任务需求智能选择共享信息，提升了系统的鲁棒性。",
+      "在带宽受限的真实场景中，HydraCollab 相比传统方法减少了 30%-50% 的通信量，展示了在分布式自主系统中的实用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

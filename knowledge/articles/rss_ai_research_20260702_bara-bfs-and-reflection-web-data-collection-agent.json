@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260702-038",
+  "title": "BaRA: BFS-and-Reflection Web Data Collection Agent",
+  "source_url": "https://arxiv.org/abs/2607.00007",
+  "source_platform": "rss_ai_research",
+  "summary": "BaRA（BFS-and-Reflection Agent）是一个基于大语言模型的网站级数据采集框架，旨在解决现有Web代理在实时网站上采集数据时常见的页面遗漏、多模态输出不完整以及媒体URL不可直接下载等问题。该框架在固定的交互预算下运行，结合了有界广度优先搜索（BFS）遍历与基于历史的自反思机制。通过BFS，BaRA能够系统性地探索网站结构，确保覆盖更多相关页面；而自反思机制则利用历史交互记录动态调整搜索策略，避免重复访问无效路径，并优化媒体资源的直接获取。该研究来自arXiv预印本，属于LLM驱动的自动化工具方向，对于需要大规模、结构化网页数据采集的研究者和开发者具有实用价值，尤其是在电商、新闻聚合、学术资源抓取等场景中。其创新点在于将图遍历算法与LLM的推理能力结合，在有限预算下平衡了探索深度与广度。",
+  "tags": [
+    "LLM",
+    "Web Agent",
+    "Data Collection",
+    "BFS",
+    "Self-Reflection"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:45:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BaRA通过有界BFS遍历系统化探索网站结构，相比随机或贪心策略能更全面地覆盖相关页面。",
+      "基于历史的自反思机制让代理能避免重复访问无效路径，提升在固定交互预算下的采集效率。",
+      "该框架直接处理多模态输出和媒体URL的可下载性问题，减少了后处理工作量。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

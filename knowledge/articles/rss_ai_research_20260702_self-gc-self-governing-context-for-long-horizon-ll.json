@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-021",
+  "title": "Self-GC: Self-Governing Context for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.00692",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Self-GC（Self-Governing Context）的新型上下文管理框架，旨在解决长周期 LLM 智能体在持续交互过程中面临的上下文膨胀与关键信息丢失问题。现有方法如时间顺序剪枝、工具输出掩码或最终自我摘要，要么忽略未来依赖关系，要么隐藏精确证据和可编辑工件。Self-GC 通过让智能体在运行时自主决定哪些上下文片段需要保留、压缩或丢弃，实现了对工具结果、文件、计划和用户约束的结构化动态管理。该框架引入了一种基于注意力机制和任务依赖图的上下文评估方法，使智能体能够预测未来步骤的信息需求，从而在保持关键信息的同时有效控制上下文长度。实验表明，Self-GC 在多个长周期任务基准上显著优于现有启发式方法，提升了任务完成率和信息检索效率。这项工作为构建更自主、更高效的长期运行 LLM 智能体提供了新的思路，尤其适用于需要持续交互和复杂决策的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:44:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Self-GC 让 LLM 智能体自主决定上下文保留策略，避免盲目剪枝或摘要导致的信息丢失。",
+      "通过注意力机制和任务依赖图预测未来信息需求，实现上下文的结构化动态管理。",
+      "在长周期任务中显著提升任务完成率和信息检索效率，优于现有启发式方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

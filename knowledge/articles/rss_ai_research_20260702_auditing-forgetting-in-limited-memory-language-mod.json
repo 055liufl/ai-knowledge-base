@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260702-123",
+  "title": "Auditing Forgetting in Limited Memory Language Models",
+  "source_url": "https://arxiv.org/abs/2607.00605",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对有限记忆语言模型（LMLMs）的因果审计框架，用于评估模型在删除事实后的遗忘效果。LMLMs通过将事实知识外部化到数据库，支持基于删除的遗忘机制，无需重新训练。然而，现有的评估方法仅从整体上衡量删除后的正确性，无法判断被删除的事实是否通过残余参数记忆、替代检索路径或近邻检索伪影而持续存在。该框架通过固定模型并变化数据库内容，能够更精确地检测遗忘的彻底性。这项工作对于提升模型的可解释性、隐私保护和合规性具有重要意义，尤其是在需要严格遗忘敏感信息的应用场景中。",
+  "tags": [
+    "LLM",
+    "Machine Unlearning",
+    "Model Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:50:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有遗忘评估方法存在盲区，无法检测通过残余参数记忆或替代路径的持久化事实。",
+      "提出的因果审计框架通过固定模型并变化数据库，实现了对遗忘效果的细粒度因果分析。",
+      "该框架有助于识别和量化LMLMs中遗忘机制的实际有效性，为更安全的模型部署提供保障。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

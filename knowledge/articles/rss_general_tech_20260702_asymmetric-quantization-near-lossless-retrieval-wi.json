@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260702-002",
+  "title": "Asymmetric Quantization: Near-Lossless Retrieval with 97% Storage Reduction",
+  "source_url": "https://www.mixedbread.com/blog/asymmetric-quant",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了混合面包（Mixed Bread）团队在向量量化领域的一项创新——非对称量化（Asymmetric Quantization）。该方法针对大规模向量检索中的存储与精度权衡问题，提出了一种新颖的量化策略：在索引构建阶段对向量进行高度压缩（如使用1位量化），而在查询阶段保留原始高精度向量。这种非对称设计使得检索精度几乎无损，同时实现了高达97%的存储空间缩减。文章详细阐述了非对称量化的原理，包括如何通过优化量化误差和利用查询向量的全精度信息来补偿索引向量的信息损失。实验结果表明，在多个标准数据集上，该方法在召回率和精度上显著优于传统的对称量化方法（如乘积量化PQ和标量量化SQ），甚至接近全精度检索的性能。该技术对于需要处理海量向量数据的应用（如推荐系统、语义搜索、RAG）具有重大意义，因为它能大幅降低存储成本（从TB级降至GB级）和内存带宽需求，同时保持高检索质量。文章还讨论了实际部署中的注意事项，如量化码本的设计和查询阶段的计算开销。整体上，这是一项实用且高效的技术创新，有望推动向量数据库和检索系统的进一步发展。",
+  "tags": [
+    "Vector Quantization",
+    "Asymmetric Quantization",
+    "Storage Optimization",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:56Z",
+  "collected_at": "2026-07-02T10:42:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "非对称量化通过在索引时使用极低比特量化（如1位），在查询时保留全精度向量，实现了存储减少97%的同时保持近乎无损的检索精度。",
+      "该方法在多个标准数据集上显著优于传统对称量化方法（如PQ、SQ），召回率和精度接近全精度检索，为大规模向量检索提供了高效的存储解决方案。",
+      "该技术特别适用于存储成本敏感的应用场景，如推荐系统、语义搜索和RAG，能够将TB级存储需求降至GB级，同时降低内存带宽压力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260702-106",
+  "title": "Real-Time Hard Negative Sampling via LLM-based Clustering for Large-Scale Two-Tower Retrieval",
+  "source_url": "https://arxiv.org/abs/2607.00448",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于大语言模型（LLM）的实时硬负采样方法，用于大规模双塔检索模型。在推荐系统的检索阶段，双塔模型广泛使用，但传统的批内或批外负采样方法往往产生容易区分的负样本，无法有效挑战模型，导致模型学习不充分。作者通过LLM对用户和物品进行聚类，动态生成具有高相似度的硬负样本，从而提升双塔模型的判别能力。该方法无需额外标注，属于自监督学习范畴，在工业级数据集上实验表明，相比现有负采样策略，能显著提高召回率和排序质量。该工作结合了LLM的语义理解能力与推荐系统的检索效率，为大规模推荐中的负样本挖掘提供了新思路，值得关注。",
+  "tags": [
+    "LLM",
+    "推荐系统",
+    "负采样",
+    "双塔模型",
+    "自监督学习"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:49:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用LLM进行聚类，实现实时生成高难度负样本，克服传统负采样易产生简单样本的局限。",
+      "该方法为自监督学习，无需人工标注，适用于工业级大规模推荐系统。",
+      "实验证明，基于LLM聚类的硬负采样能显著提升双塔模型的召回率和排序性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

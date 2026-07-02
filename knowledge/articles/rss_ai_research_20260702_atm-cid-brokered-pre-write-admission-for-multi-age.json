@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-053",
+  "title": "ATM: CID-Brokered Pre-Write Admission for Multi-Agent Code Co-Synthesis",
+  "source_url": "https://arxiv.org/abs/2607.00041",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ATM（AI-Atomic-Framework）的框架，用于解决多智能体LLM系统在协同代码生成中的写操作准入问题。在多智能体系统中，多个智能体可能同时生成代码修改意图，但系统需要决定哪些写操作可以并行执行、哪些需要确定性组合或序列化、以及哪些必须走失败关闭路径。ATM通过引入CID（Conflict-Intent-Descriptor）代理的写前准入机制，实现了对并发写操作的安全管理。该框架借鉴了数据库事务处理中的原子性概念，确保多智能体协作的代码合成过程具有一致性和可靠性。这项工作对于提升多智能体LLM系统在软件工程中的实际应用价值具有重要意义，特别是在需要多人协作或自动化代码生成的场景中。ATM框架的创新之处在于将系统层面的并发控制与LLM的生成能力相结合，为构建更可靠的多智能体编程助手提供了理论基础和实用方案。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Code Generation",
+    "Concurrency Control"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:46:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ATM框架通过CID代理实现了多智能体代码合成中的写前准入控制，解决了并发写操作的安全性问题。",
+      "该工作将数据库事务的原子性概念引入多智能体LLM系统，为协同代码生成提供了系统级的可靠性保障。",
+      "ATM框架区分了并行执行、确定性组合和失败关闭三种写操作处理路径，为多智能体协作提供了灵活的并发控制策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

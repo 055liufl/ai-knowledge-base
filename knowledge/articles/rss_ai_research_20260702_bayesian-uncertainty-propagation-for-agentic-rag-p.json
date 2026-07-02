@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-025",
+  "title": "Bayesian Uncertainty Propagation for Agentic RAG Pipelines: A Proof-of-Concept Study on Multi-Hop Question Answering",
+  "source_url": "https://arxiv.org/abs/2607.00972",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向智能体检索增强生成（Agentic RAG）管线的贝叶斯不确定性传播框架，旨在解决多跳问答中多阶段推理管线可能失败时的可信部署问题。研究通过规划器、评估器和生成器三个关键阶段，利用语义分歧和生成器自我评估产生不确定性信号，并借助贝叶斯网络将这些信号在管线中传播，从而实现对管线整体不确定性的量化。该工作以概念验证形式在多个多跳问答数据集上进行了实验，展示了不确定性估计在识别错误答案、提升系统可解释性方面的潜力。值得关注的是，它为Agentic RAG系统提供了一种系统化的可靠性评估方法，弥补了当前RAG研究中缺乏不确定性量化机制的空白，对于推动RAG在医疗、法律等高风险领域的可信应用具有重要意义。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Uncertainty Quantification",
+    "Bayesian Network"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:44:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种基于贝叶斯网络的不确定性传播机制，能够整合Agentic RAG管线中规划、评估和生成阶段的不确定性信号。",
+      "利用语义分歧和生成器自我评估作为不确定性来源，为多跳问答任务提供了可解释的置信度估计。",
+      "概念验证实验表明，该方法能有效识别错误答案，提升Agentic RAG系统的可信度，但需进一步验证其在大规模场景下的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

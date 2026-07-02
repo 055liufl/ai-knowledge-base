@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260702-074",
+  "title": "SLIM-RL: Risk-Budgeted Random-Masking RL for Diffusion LLMs Without Trajectory Slicing",
+  "source_url": "https://arxiv.org/abs/2607.00208",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SLIM-RL的新型强化学习方法，用于训练扩散大语言模型（dLLMs）。与当前最先进的TraceRL方法不同，TraceRL通过将每次rollout切片成最多K/s个轨迹对齐的训练样本来解决随机掩码与模型推理轨迹不匹配的问题，但这种方法成本随块大小K线性增长。SLIM-RL通过风险预算随机掩码策略，在不进行轨迹切片的情况下有效缓解了这种不匹配问题。该方法在保持性能的同时显著降低了训练成本，为扩散LLMs的强化学习提供了一种更高效的替代方案。这项研究值得关注，因为它解决了扩散模型强化学习中的关键效率瓶颈，可能推动更大规模和更实用的dLLM应用。",
+  "tags": [
+    "Diffusion LLM",
+    "Reinforcement Learning",
+    "Efficient Training"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:47:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SLIM-RL通过风险预算随机掩码策略，避免了TraceRL中昂贵的轨迹切片操作，降低了训练成本。",
+      "该方法证明了随机掩码与推理轨迹的不匹配可以通过风险预算机制有效缓解，无需显式轨迹重建。",
+      "SLIM-RL为扩散LLMs的强化学习提供了一种更高效、可扩展的替代方案，可能加速该领域的研究和应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

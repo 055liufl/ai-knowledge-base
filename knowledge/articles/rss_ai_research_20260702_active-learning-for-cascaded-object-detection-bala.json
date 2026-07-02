@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-139",
+  "title": "Active Learning for Cascaded Object Detection: Balancing Coverage and Uncertainty in Table Extraction Pipelines",
+  "source_url": "https://arxiv.org/abs/2607.00747",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对级联目标检测管道的主动学习（Active Learning）方法，专门用于优化表格提取流程中的标注效率。在商业文档处理中，表格提取通常采用级联管道：首先通过表格检测（Table Detection, TD）定位表格区域，然后通过表格结构识别（Table Structure Recognition, TSR）恢复其内部布局。然而，为TSR构建任务特定的训练集成本高昂，因为它需要细粒度的结构标注。传统的主动学习策略主要针对单模型任务设计，无法有效处理级联管道中两个模型之间的依赖关系。本文的核心创新在于提出一种平衡覆盖率和不确定性的主动学习策略，通过联合考虑TD和TSR的预测不确定性以及样本多样性，在减少标注成本的同时保持管道整体性能。该方法在多个商业文档数据集上进行了验证，实验结果表明，与随机采样和传统主动学习方法相比，该方法在标注预算有限的情况下显著提升了表格提取的准确率和召回率。这项工作对于降低文档理解系统的部署成本具有重要价值，尤其适用于金融、法律等需要大量文档处理的行业。",
+  "tags": [
+    "Active Learning",
+    "Table Extraction",
+    "Object Detection",
+    "Document Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:51:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种针对级联目标检测管道的主动学习策略，解决了传统主动学习方法无法处理多模型依赖的问题。",
+      "通过平衡覆盖率和不确定性，在减少标注成本的同时保持了表格提取管道的整体性能。",
+      "在商业文档数据集上验证了方法的有效性，为文档理解系统的低成本部署提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-043",
+  "title": "PRA-RAG: Provably Robust Aggregation in Retrieval-Augmented Generation against Retrieval Corruption",
+  "source_url": "https://arxiv.org/abs/2607.00012",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为PRA-RAG（可证明鲁棒的检索增强生成聚合方法）的新型防御机制，旨在解决检索增强生成（RAG）系统在面对检索内容投毒攻击时的脆弱性问题。RAG通过整合外部知识来增强大型语言模型（LLM），但攻击者可能通过操纵检索到的文本来误导模型输出。现有的防御方法通常缺乏理论上的鲁棒性保证，并且在LLM对检索内容知识有限时表现不可靠。PRA-RAG通过设计一种可证明鲁棒的聚合策略，确保即使在检索内容被部分污染的情况下，模型输出仍能保持正确性。该方法基于严格的数学证明，提供了对投毒攻击的鲁棒性边界，并在多个基准数据集上进行了实验验证，显示出优于现有方法的性能。这项工作对于提升RAG系统在实际应用中的安全性和可靠性具有重要意义，尤其是在知识密集型任务如问答和事实核查中。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Adversarial Robustness",
+    "Poisoning Attack"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:45:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRA-RAG提供了首个针对RAG检索投毒攻击的可证明鲁棒性聚合方法，具有严格的数学保证。",
+      "该方法在LLM对检索内容知识有限的情况下仍能保持鲁棒性，解决了现有防御机制的局限性。",
+      "实验结果表明，PRA-RAG在多个基准数据集上显著优于现有防御方法，有效提升了RAG系统的安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

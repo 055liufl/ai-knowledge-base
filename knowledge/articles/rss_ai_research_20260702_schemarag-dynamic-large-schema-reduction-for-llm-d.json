@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-039",
+  "title": "SchemaRAG: Dynamic Large Schema Reduction for LLM-driven Structured Information Extraction",
+  "source_url": "https://arxiv.org/abs/2607.00008",
+  "source_platform": "rss_ai_research",
+  "summary": "SchemaRAG 是一种新型的检索增强生成（RAG）框架，专门用于解决大型语言模型（LLM）在从非结构化文本中提取结构化数据时面临的大规模、复杂模式（schema）带来的挑战。传统方法在提示中包含完整模式会导致成本高、延迟大、中间信息丢失以及可能超出上下文长度限制。SchemaRAG 通过动态剪枝输出模式空间，仅保留与输入文本相关的模式部分，从而显著提高提取效率和准确性。该框架利用检索机制从预定义的大型模式库中筛选出相关子集，然后将其作为 LLM 的输入，实现高效的结构化信息提取。这项工作值得关注，因为它直接解决了 LLM 在实际应用中处理大规模模式时的关键瓶颈，有望推动信息提取、知识图谱构建和自动化数据管道等领域的进展。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Information Extraction",
+    "Schema"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:45:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SchemaRAG 通过动态检索和剪枝模式空间，解决了大规模模式在 LLM 提示中导致的成本、延迟和性能问题。",
+      "该框架将 RAG 技术应用于模式管理，而非传统的文档检索，为结构化信息提取提供了新思路。",
+      "实验表明，SchemaRAG 在保持高提取精度的同时，显著降低了计算开销和上下文长度需求。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

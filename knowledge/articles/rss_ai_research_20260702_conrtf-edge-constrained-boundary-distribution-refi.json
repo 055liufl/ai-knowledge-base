@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-135",
+  "title": "ConRTF: Edge-Constrained Boundary Distribution Refinement for Realtime TransFormer Table Structure Recognition",
+  "source_url": "https://arxiv.org/abs/2607.00734",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为ConRTF的实时表格结构识别方法，核心创新在于引入边缘约束的边界分布细化机制。传统检测方法将表格元素视为通用对象，忽略了表格布局中行列边界必须严格对齐的几何约束，导致微小边界误差会传播为单元格分配错误。ConRTF通过设计边缘约束模块，在Transformer架构中显式建模行列边界的对齐关系，并采用分布细化策略迭代优化边界预测。该方法在多个公开数据集上实现了实时推理速度与高精度，尤其对复杂表格（如合并单元格、不规则布局）的鲁棒性显著提升。这项工作解决了表格结构识别中边界精度与实时性的矛盾，对文档智能、财务分析等场景具有实用价值。",
+  "tags": [
+    "Table Structure Recognition",
+    "Transformer",
+    "Edge Constraint",
+    "Document Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:51:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出边缘约束模块显式建模行列边界对齐，利用表格布局的几何先验减少误差传播。",
+      "采用分布细化策略迭代优化边界预测，在保持实时性的同时提升边界定位精度。",
+      "在多个复杂表格数据集上验证了方法对合并单元格和不规则布局的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

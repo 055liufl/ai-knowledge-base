@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-058",
+  "title": "SWE-Router: Routing in Multi-turn Agentic Software Engineering Tasks",
+  "source_url": "https://arxiv.org/abs/2607.00053",
+  "source_platform": "rss_ai_research",
+  "summary": "SWE-Router 是一篇关于多轮代理软件工程任务路由的论文。它指出，在多轮代理框架中，将每个软件工程任务都路由到最强大的前沿模型（如 GPT-4）是资源浪费的，因为许多问题可以通过更便宜的模型解决。现有的 LLM 路由器仅基于任务描述进行路由，这在代理设置中存在信息论上的贝叶斯误差下限：相似的问题描述可能隐藏着局部拼写错误或多模块重构，而仅凭提示无法区分。SWE-Router 提出了一种新的路由方法，通过利用多轮交互中的中间反馈和代理行为来更准确地评估任务难度，从而将简单任务分配给低成本模型，复杂任务分配给高成本模型。该方法在多个基准测试中显著降低了推理成本（最高节省 60%），同时保持了任务解决率。这项工作值得关注，因为它解决了 LLM 代理在软件工程中实际部署时的成本效率问题，推动了更智能的资源分配策略。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "SWE",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:46:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 路由器仅基于任务描述进行路由，在代理设置中存在信息瓶颈，无法区分表面相似但难度差异巨大的任务。",
+      "SWE-Router 利用多轮交互中的中间反馈和代理行为来动态评估任务难度，实现更精准的路由。",
+      "该方法在多个基准测试中最高可节省 60% 的推理成本，同时保持任务解决率，显著提升实际部署的经济性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

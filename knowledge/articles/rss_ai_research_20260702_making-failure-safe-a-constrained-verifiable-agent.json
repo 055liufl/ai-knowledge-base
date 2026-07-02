@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-004",
+  "title": "Making Failure Safe: A Constrained, Verifiable Agent Framework for Open-Web Data Collection",
+  "source_url": "https://arxiv.org/abs/2607.00035",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种约束性、可验证的智能体框架，旨在解决LLM在开放网页数据收集任务中生成网络爬虫时的不可靠性问题。传统方法直接生成自由形式的代码，容易因依赖错误、选择器失效、模式不匹配和页面结构异构而失败。该框架通过将LLM输出从自由代码转换为类型化的JSON收集器配置，结合六类型收集器分类法、模板和效用函数约束，以及静态Air验证机制，显著提升了数据收集的准确性和鲁棒性。该工作值得关注，因为它为LLM在自动化数据采集领域的实际应用提供了一种更安全、更可控的解决方案，减少了错误和调试成本，对需要大规模、动态网页数据收集的研究和工程实践具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Web Scraping",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:43:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将LLM输出约束为类型化JSON配置而非自由代码，显著降低了生成网络爬虫时的错误率。",
+      "六类型收集器分类法和模板约束提供了结构化的数据收集范式，增强了框架的通用性和可验证性。",
+      "静态Air验证机制在部署前即可检测配置错误，提升了系统的安全性和可靠性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

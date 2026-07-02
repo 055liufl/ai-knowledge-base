@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-077",
+  "title": "Adaptive Perturbation Selection for Contrastive Audio Decoding",
+  "source_url": "https://arxiv.org/abs/2607.00247",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自适应扰动选择方法，用于对比音频解码，以缓解大型音频语言模型（LALMs）中的幻觉问题。LALMs 常因语言先验覆盖声学证据而产生幻觉，而现有的对比解码（CD）方法虽无需训练，但依赖掩码或噪声等粗粒度扰动，忽略了结构化音频变换的潜力。作者通过评估多种目标音频扰动库，并自适应选择最优负分支，探索了该设计空间。该方法通过动态调整扰动类型（如时间拉伸、音高偏移等），在保持推理效率的同时，显著提升了模型对声学证据的忠实度。实验表明，该策略在多个音频理解基准上优于传统对比解码方法，尤其在高噪声或复杂声学场景下表现突出。这项工作为音频-语言模型的鲁棒性提升提供了新思路，具有重要的实用价值。",
+  "tags": [
+    "Audio-Language Model",
+    "Contrastive Decoding",
+    "Hallucination Mitigation",
+    "Adaptive Perturbation"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:47:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有对比解码方法依赖掩码或噪声等粗粒度扰动，而结构化音频变换（如时间拉伸、音高偏移）能更有效地抑制语言先验带来的幻觉。",
+      "自适应选择最优负分支（基于音频特征或任务需求）可动态平衡声学证据与语言先验，提升模型在复杂声学场景下的忠实度。",
+      "该方法无需额外训练，在多个音频理解基准上显著优于传统对比解码，尤其在高噪声环境中表现突出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

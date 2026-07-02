@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260702-125",
+  "title": "Loss Smoothing for Stable Adaptation Under Distribution Shift",
+  "source_url": "https://arxiv.org/abs/2607.00634",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“损失平滑”（Loss Smoothing）的方法，用于解决神经网络在分布偏移下的稳定适应问题。在微调、强化学习等场景中，标准适应方法通常直接优化目标目标，导致从源训练目标到新目标的突然转变，这种突变可能扭曲已学习的表示，包括那些对新任务仍有用的特征。论文通过引入损失平滑技术，在适应过程中逐步过渡目标函数，从而减少表示扭曲，提高适应稳定性。实验表明，该方法在多种分布偏移场景下（如领域适应、任务迁移）均能提升模型性能，且无需额外计算开销。该工作为分布偏移下的模型适应提供了新的理论视角和实用工具，值得关注。",
+  "tags": [
+    "Distribution Shift",
+    "Fine-tuning",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:50:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接优化目标目标会导致表示扭曲，损失平滑通过逐步过渡目标函数来缓解这一问题。",
+      "该方法在多种分布偏移场景下（如领域适应、任务迁移）均能提升模型性能，且无需额外计算开销。",
+      "损失平滑为分布偏移下的模型适应提供了新的理论视角和实用工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

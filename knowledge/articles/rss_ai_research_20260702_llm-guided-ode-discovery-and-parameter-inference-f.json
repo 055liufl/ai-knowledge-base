@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260702-134",
+  "title": "LLM-Guided ODE Discovery and Parameter Inference from Small-Cohort Aggregate Data",
+  "source_url": "https://arxiv.org/abs/2607.00733",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种利用大语言模型（LLM）指导常微分方程（ODE）发现与参数推断的新方法，专门针对小规模聚合数据场景。在罕见病等临床环境中，个体级数据稀缺、噪声大、异质性强且受隐私限制，而模型结构和参数通常未知。传统方法难以从聚合数据中自动发现ODE结构并推断参数。作者利用LLM的语义理解和知识推理能力，将ODE发现转化为一个由LLM驱动的搜索与优化问题：LLM根据数据特征和领域知识生成候选ODE结构，再结合贝叶斯推断或优化算法进行参数估计。该方法在多个合成和真实罕见病数据集上验证，能够从少量聚合时间序列中恢复出合理的动力学模型，并给出参数的不确定性量化。这项工作将LLM从文本生成扩展到科学模型发现，为数据稀缺的临床研究提供了可解释、可泛化的工具，具有重要的方法论创新和实际应用价值。",
+  "tags": [
+    "LLM",
+    "ODE",
+    "Scientific Discovery",
+    "Rare Disease",
+    "Parameter Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:51:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM能够利用领域知识引导ODE结构搜索，克服小样本聚合数据下模型发现的困难。",
+      "该方法结合了LLM的语义推理与数值优化，实现了从聚合数据到可解释动力学模型的端到端推断。",
+      "在罕见病等隐私敏感场景中，聚合数据方法避免了个体级数据共享，同时保持了模型发现能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

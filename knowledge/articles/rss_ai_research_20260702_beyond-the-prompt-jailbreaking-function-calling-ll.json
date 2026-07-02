@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-110",
+  "title": "Beyond the Prompt: Jailbreaking Function-Calling LLMs via Simulated Moderation Traces",
+  "source_url": "https://arxiv.org/abs/2607.00481",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了在具有状态和函数调用功能的大型语言模型（LLM）应用中存在一种新型的结构性漏洞。与传统的基于提示的越狱攻击不同，作者发现攻击者可以通过模拟模型内部用于安全审核的中间痕迹（如函数调用参数、工具输出等）来绕过安全机制。这种攻击方式利用了函数调用环境中开发者定义的架构、结构化参数和不可信工具输出被混合到单一模型上下文中的特点，使得模型难以区分真实用户输入和模拟的审核痕迹。论文通过实验证明了这种攻击的有效性，并讨论了其对LLM安全部署的潜在威胁。这项研究值得关注，因为它指出了当前安全防御的盲区，即过于关注提示层面的攻击而忽视了函数调用等结构化环境中的漏洞，为未来的安全研究提供了新的方向。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Jailbreak",
+    "Function Calling"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:49:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统的基于提示的越狱攻击研究忽略了函数调用环境中结构化参数和工具输出带来的新攻击面。",
+      "攻击者可以通过模拟安全审核痕迹来绕过LLM的安全机制，这是一种新型的越狱方法。",
+      "该研究强调了在状态化、函数调用的LLM应用中需要重新设计安全防御策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

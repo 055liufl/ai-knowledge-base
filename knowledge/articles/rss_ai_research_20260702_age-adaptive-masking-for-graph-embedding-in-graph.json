@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260702-057",
+  "title": "AGE: Adaptive-masking for Graph Embedding in Graph Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2607.00052",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为AGE（Adaptive-masking for Graph Embedding）的方法，用于解决图检索增强生成（GraphRAG）中的关键挑战。GraphRAG是RAG的扩展，通过引用图结构数据作为外部知识来支持大语言模型（LLMs）。然而，现有方法在处理图表示时，尤其是对于冻结的LLMs，常因图基和文本基潜在特征之间的不对齐而表现不佳。AGE通过自适应掩码机制优化图嵌入，使其更好地与LLM的文本表示空间对齐，从而提升检索和生成质量。该方法在多个基准数据集上验证了有效性，显著增强了LLM对复杂关系数据的理解和利用能力。这项工作值得关注，因为它直接解决了GraphRAG在实际应用中的核心瓶颈——图与文本的语义鸿沟，为知识密集型任务（如问答、推理）提供了更鲁棒的解决方案，并推动了RAG技术在结构化数据领域的实用化进程。",
+  "tags": [
+    "GraphRAG",
+    "Graph Embedding",
+    "LLM",
+    "Retrieval-Augmented Generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:46:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自适应掩码机制有效缓解了图嵌入与文本嵌入之间的特征不对齐问题，提升了冻结LLM在GraphRAG中的表现。",
+      "该方法通过动态调整图节点和边的掩码权重，实现了更精准的图结构信息提取，增强了检索相关性。",
+      "AGE在多个知识图谱问答和推理任务上优于现有基线，展示了其在复杂关系建模中的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

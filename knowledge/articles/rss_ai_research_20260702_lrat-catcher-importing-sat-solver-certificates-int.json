@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260702-141",
+  "title": "LRAT-Catcher: Importing SAT Solver Certificates into Lean4 by Reflection",
+  "source_url": "https://arxiv.org/abs/2607.00815",
+  "source_platform": "rss_ai_research",
+  "summary": "LRAT-Catcher 是一个独立的通用工具，旨在将 DIMACS 格式的布尔可满足性（SAT）问题公式及其对应的 LRAT 证书导入到 Lean 4 交互式定理证明器中，并生成一个可验证的定理。SAT 求解器能够高效解决复杂的组合问题，但通常缺乏形式化验证的保证；而交互式定理证明器（如 Lean 4）虽然能提供严格的数学证明，但难以直接处理大规模 SAT 实例。LRAT-Catcher 通过反射机制调用 Lean 核心中经过形式化验证的 LRAT 检查器（作为编译后的原生代码运行），从而在 Lean 4 中高效验证 SAT 求解器的结果。该工具的关键优势在于其可扩展性：它能够处理 Mathlib（Lean 的数学库）中难以直接验证的大规模实例，弥合了自动推理与形式化验证之间的鸿沟。这项工作值得关注，因为它为将高效的 SAT 求解能力融入形式化证明环境提供了一种实用且可验证的桥梁，对形式化验证、自动推理和数学证明的交叉领域具有重要影响。",
+  "tags": [
+    "SAT Solver",
+    "Lean 4",
+    "Formal Verification",
+    "LRAT Certificate",
+    "Interactive Theorem Proving"
+  ],
+  "author": null,
+  "published_at": "2026-07-02T10:40:58Z",
+  "collected_at": "2026-07-02T10:51:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LRAT-Catcher 通过反射机制在 Lean 4 中运行经过形式化验证的 LRAT 检查器，实现了对 SAT 求解器结果的高效验证。",
+      "该工具能够处理 Mathlib 难以直接验证的大规模 SAT 实例，显著扩展了形式化证明的适用范围。",
+      "LRAT-Catcher 作为通用工具，为自动推理与交互式定理证明的集成提供了可扩展的解决方案。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}
