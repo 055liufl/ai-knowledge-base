@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260703-110",
+  "title": "Black-Box Inference of LLM Architectural Properties with Restrictive API Access",
+  "source_url": "https://arxiv.org/abs/2607.01313",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在API访问受限条件下（仅能获取top-k logits或logit bias函数）的黑盒推理方法，用于推断大型语言模型（LLM）的架构属性，如前馈网络的隐藏维度。研究背景是商业LLM提供商通常不公开模型架构细节，而先前工作表明通过有限API访问可恢复部分架构信息，但提供商已通过限制API（如仅提供top-k logits或logit bias）来应对。本文的核心贡献在于开发了新的推理技术，能在更严格的API限制下仍有效推断关键架构参数，从而揭示了当前商业LLM的架构透明度问题。该研究值得关注，因为它不仅推动了模型逆向工程的技术边界，还引发了对AI安全、知识产权保护和模型透明度的讨论。对于开发者、研究人员和AI政策制定者而言，理解这些推理方法有助于评估模型的安全性和合规性，同时促进更开放的AI生态系统。",
+  "tags": [
+    "LLM",
+    "Model Security",
+    "Reverse Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:48:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在API仅提供top-k logits或logit bias的受限条件下，仍能推断LLM的架构属性如隐藏维度，表明现有安全措施不足。",
+      "该工作揭示了商业LLM提供商通过限制API来保护架构细节的策略存在漏洞，可能被用于模型窃取或安全分析。",
+      "研究结果强调了需要更强大的防御机制来防止架构信息泄露，同时平衡模型透明度与商业机密。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

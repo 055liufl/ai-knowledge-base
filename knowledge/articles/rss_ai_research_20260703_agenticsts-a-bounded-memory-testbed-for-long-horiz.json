@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-071",
+  "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.02255",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了AgenticSTS，一个用于长周期LLM智能体的有界记忆测试平台。核心思想是将智能体的记忆视为一种“契约”，决定了每个未来决策可以访问哪些历史信息。传统的简单追加所有历史记录的方法会导致上下文混乱，难以隔离单个记忆组件的影响。AgenticSTS通过引入一种有界记忆契约，使每个决策都基于一个全新的用户消息，从而实现对记忆组件的精确控制和隔离。该测试平台为研究长周期任务中智能体记忆管理提供了标准化的评估工具，有助于深入理解记忆结构对决策质量的影响。值得关注的是，它解决了当前LLM智能体在长时间交互中记忆膨胀和干扰的关键问题，为设计更高效、可解释的智能体记忆机制奠定了基础。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Testbed"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:45:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将智能体记忆重新定义为一种关于未来决策可见性的契约，为记忆管理提供了新的理论视角。",
+      "有界记忆契约通过限制每个决策可访问的历史信息，避免了传统方法中记忆组件相互干扰的问题。",
+      "AgenticSTS作为标准化测试平台，能够系统评估不同记忆策略对长周期任务性能的影响。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

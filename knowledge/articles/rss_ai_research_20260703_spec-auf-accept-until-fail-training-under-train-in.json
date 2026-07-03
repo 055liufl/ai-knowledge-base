@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260703-046",
+  "title": "Spec-AUF: Accept-Until-Fail Training under Train-Inference Misalignment for Masked Block Drafters",
+  "source_url": "https://arxiv.org/abs/2607.01893",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Spec-AUF（Accept-Until-Fail）的训练方法，旨在解决掩码块草稿模型（Masked Block Drafters）在推测解码（Speculative Decoding）中存在的训练与推理不一致问题。推测解码通过草稿模型并行生成一组令牌，再由目标模型从左到右验证，只接受最长的前缀。然而，传统的块级草稿模型（如DLM风格）在训练时使用全块交叉熵损失，对所有位置（包括可能被拒绝的令牌）进行监督，而推理时只保留第一个被接受的前缀，导致训练与推理目标不匹配。Spec-AUF通过引入“接受直到失败”的训练策略，使模型专注于生成更可能被接受的令牌序列，从而提升推测解码的效率。实验表明，该方法在多个基准测试中显著提高了加速比，同时保持了生成质量。该工作对于提升大语言模型推理速度具有重要价值，尤其适用于需要低延迟的应用场景。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Training-Inference Misalignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:43:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出Spec-AUF训练方法，解决掩码块草稿模型在推测解码中的训练与推理不一致问题，通过聚焦于可接受前缀的生成来提升效率。",
+      "实验证明Spec-AUF在多个基准上显著加速推理，同时保持生成质量，为低延迟LLM部署提供了新思路。",
+      "该方法针对块级草稿模型的固有缺陷进行优化，具有较好的通用性和实用性，可应用于多种自回归生成任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

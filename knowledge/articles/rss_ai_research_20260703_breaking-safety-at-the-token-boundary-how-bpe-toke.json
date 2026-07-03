@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-090",
+  "title": "Breaking Safety at the Token Boundary: How BPE Tokenization Creates Exploitable Gaps in LLM Alignment",
+  "source_url": "https://arxiv.org/abs/2607.01239",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了现代大型语言模型（LLM）在安全对齐方面的一个关键漏洞：BPE（字节对编码）分词器在将安全关键词汇拆分为子词片段时，会创建可被利用的间隙。尽管输入对人类可读，但字符级别的扰动能够绕过安全对齐机制。作者识别并测试了这一结构性机制，发现三个公开的对齐数据集中均不包含故意分片的输入。该机制在五个模型系列（Qwen-3-4B、Qwen-2.5-7B、Gemma-3-4B、Llama-3.1-8B、Mi）上进行了端到端测试，证明了其普遍性。这项研究值得关注，因为它揭示了LLM安全对齐中的一个根本性设计缺陷，即分词器本身可能成为攻击面，而现有对齐数据集未能覆盖此类扰动。该发现对LLM的安全部署和未来对齐研究具有重要指导意义，提示需要重新审视分词策略或增强对齐数据的多样性。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Tokenization",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:47:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BPE分词器将安全关键词汇拆分为子词片段，导致模型无法正确识别恶意意图，从而绕过安全对齐。",
+      "现有公开对齐数据集缺乏故意分片的输入，使得模型在面对此类扰动时缺乏防御能力。",
+      "该漏洞在多个主流模型系列上得到验证，表明其具有普遍性，而非特定模型的缺陷。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260703-028",
+  "title": "Generic Expert Coverage for Pruning SparseMixture-of-Experts Language Models",
+  "source_url": "https://arxiv.org/abs/2607.01710",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Generic TB-Coverage 的新型专家剪枝方法，用于稀疏激活的混合专家（MoE）语言模型。MoE 模型虽然高效，但其路由专家之间存在大量结构化冗余，而现有剪枝方法通常依赖单一的聚合重要性评分，这会导致保留的专家集偏向于主导校准模式所偏好的专家，从而降低模型在未见数据上的泛化能力。Generic TB-Coverage 通过引入覆盖感知的剪枝策略，在无需下游校准数据的情况下，更全面地评估专家的重要性，确保保留的专家集能够覆盖更广泛的知识领域。该方法在多个基准测试上展示了优于传统剪枝方法的性能，有效减少了模型参数数量，同时保持了甚至提升了模型的泛化能力。这项研究对于推动 MoE 模型在资源受限环境下的部署具有重要意义，因为它提供了一种无需额外数据即可高效压缩模型的手段，尤其适用于大规模语言模型的轻量化应用。",
+  "tags": [
+    "MoE",
+    "Pruning",
+    "LLM",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:42:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有专家剪枝方法依赖单一聚合评分，导致保留专家集偏向特定校准模式，降低泛化能力。",
+      "Generic TB-Coverage 通过覆盖感知策略，无需下游数据即可更全面地评估专家重要性。",
+      "该方法在多个基准上优于传统剪枝方法，有效减少参数并保持或提升模型性能。",
+      "为 MoE 模型在资源受限环境下的部署提供了高效、无需额外数据的压缩方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

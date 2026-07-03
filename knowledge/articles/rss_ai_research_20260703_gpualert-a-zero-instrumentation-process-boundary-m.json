@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-119",
+  "title": "GPUAlert: A Zero-Instrumentation Process-Boundary Monitor for Diagnosing GPU Training-Job Failures",
+  "source_url": "https://arxiv.org/abs/2607.01409",
+  "source_platform": "rss_ai_research",
+  "summary": "GPUAlert 是一种零侵入的进程边界监控工具，用于诊断 GPU 训练任务的失败原因。在大型生产集群中，约五分之二的 GPU 训练任务会失败，但操作员通常只能在数小时后重新连接时才发现失败。现有的实验追踪器需要修改训练脚本并维护云连接，而调度器的邮件钩子仅提供无原因和无日志的单行状态。GPUAlert 作为命令行包装器，无需修改训练脚本即可在进程边界监控任何训练命令，从而在失败发生时立即捕获关键信息，帮助快速诊断问题。该工具通过零仪器化设计，降低了部署复杂度，提高了故障排查效率，对大规模 GPU 集群的运维具有重要价值。",
+  "tags": [
+    "GPU",
+    "training",
+    "monitoring",
+    "failure-diagnosis"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:49:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GPUAlert 无需修改训练脚本即可监控 GPU 训练任务，降低了部署门槛。",
+      "该工具在进程边界捕获失败信息，解决了现有方法延迟高、信息不足的问题。",
+      "针对生产集群中高失败率（约40%）的 GPU 训练任务，提供了实用的诊断手段。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

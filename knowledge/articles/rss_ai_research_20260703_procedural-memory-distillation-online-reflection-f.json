@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-010",
+  "title": "Procedural Memory Distillation: Online Reflection for Self-Improving Language Models",
+  "source_url": "https://arxiv.org/abs/2607.01480",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“程序性记忆蒸馏”（Procedural Memory Distillation, PMD）的新方法，旨在解决语言模型在强化学习与自蒸馏过程中对过程信息利用不足的问题。传统方法如基于可验证奖励的强化学习（RLVR）和自蒸馏变体（如SDPO）仅从每个回合的最终验证信号中更新策略，忽略了回合内丰富的程序性信息（如推理步骤、中间状态）。PMD通过在线反思机制，让模型在多个回合和训练周期中跨回合地捕获并蒸馏这些过程信号，从而自我改进。该方法的关键在于：1）构建一个程序性记忆缓冲区，存储历史回合中的过程级反馈；2）设计一个反思模块，从这些记忆中提取可迁移的改进策略；3）通过蒸馏损失将反思结果融入当前策略更新。实验表明，PMD在数学推理、代码生成等任务上显著优于基线方法，且能有效减少重复错误。这项研究值得关注，因为它将强化学习中的过程监督思想与自蒸馏相结合，为语言模型的持续自我改进提供了新范式，尤其适用于需要复杂推理的场景。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Self-Improvement",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:40:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PMD通过跨回合的程序性记忆蒸馏，解决了传统RLVR和SDPO仅利用回合级信号的问题，显著提升了模型对过程信息的利用效率。",
+      "在线反思机制允许模型从历史回合中提取可迁移的改进策略，从而在数学推理和代码生成等任务中实现自我改进。",
+      "该方法在多个基准测试中优于现有基线，表明过程级反馈的跨回合重用是提升语言模型持续学习能力的关键。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

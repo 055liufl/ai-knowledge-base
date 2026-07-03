@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260703-030",
+  "title": "DRL-CLBA: A Clean Label Backdoor Attack for Speech Classification via DDPG Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.01729",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为DRL-CLBA的新型干净标签后门攻击方法，专门针对语音分类任务。该方法利用深度确定性策略梯度（DDPG）强化学习来生成后门触发器，从而在保持标签干净（即不改变训练样本的原始标签）的情况下实现后门攻击。与传统的样本特定攻击不同，DRL-CLBA不需要依赖有毒标签攻击，因此能够绕过许多基于手动数据防御的检测机制。该攻击在推理阶段通过恶意触发器导致模型误分类，具有较高的隐蔽性和威胁性。这项工作揭示了语音分类模型在安全方面的脆弱性，并为后门攻击研究提供了新的视角。值得关注的是，它结合了强化学习与对抗攻击，展示了AI安全领域的新方向，对研究人员和开发者具有重要参考价值。",
+  "tags": [
+    "Backdoor Attack",
+    "Speech Classification",
+    "Reinforcement Learning",
+    "DDPG",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:42:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DRL-CLBA利用DDPG强化学习生成后门触发器，实现了干净标签后门攻击，无需修改训练标签，提高了攻击的隐蔽性。",
+      "该方法针对语音分类任务，展示了深度学习模型在音频领域的安全漏洞，尤其是对后门攻击的脆弱性。",
+      "通过强化学习优化触发器生成，DRL-CLBA能够绕过基于标签检查的防御机制，对现有防御体系构成挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-035",
+  "title": "Repair the Amplifier, Not the Symptom: Stable World-Model Correction for Agent Rollouts",
+  "source_url": "https://arxiv.org/abs/2607.01767",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对长周期智能体规划中模型错误的新纠正方法。传统方法在智能体执行数千步的持久化工作流时，一旦出现错误，往往需要重新规划整个规划图，这会导致巨大的计算开销和上下文预算消耗，并可能引入大量无关症状，降低长上下文检索性能。作者提出“修复放大器而非症状”的策略，即通过稳定世界模型校正来替代全局重放。该方法在智能体滚动执行过程中，仅对导致错误的关键模型部分进行局部修正，而非对整个规划图进行重规划。实验表明，该方法在保持任务成功率的同时，显著降低了计算成本和上下文消耗，尤其适用于需要长周期、多步骤决策的复杂场景。该工作对提升智能体在真实世界中的鲁棒性和效率具有重要意义。",
+  "tags": [
+    "Agent",
+    "Planning",
+    "World Model",
+    "Correction"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:42:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "针对长周期智能体规划中的错误，提出局部世界模型校正方法，避免全局重规划的高成本。",
+      "该方法通过识别和修复关键错误节点，而非所有症状，提升了长上下文任务的效率。",
+      "实验验证了在数千步工作流中，该方法在保持成功率的同时显著降低了计算和上下文开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

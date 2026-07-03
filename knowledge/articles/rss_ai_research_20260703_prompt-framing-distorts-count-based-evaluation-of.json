@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-091",
+  "title": "Prompt Framing Distorts Count-Based Evaluation of LLM Error Detection: Evidence from Numeric Anchoring",
+  "source_url": "https://arxiv.org/abs/2607.01240",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了在LLM错误检测评估中广泛使用的基于计数的F1指标存在严重缺陷：当提示框架（prompt framing）改变时，F1分数可能显著上升，但错误定位（span localization）能力并未同步提升，这种现象被称为“F1膨胀”（F1 Inflation）。为了系统性地研究这一现象，作者提出了ErrorBench——一个受控的压力测试协议，用于评估提示诱导的计数失真。研究基于CoNLL-2014语料库中的143个段落，生成了4,290条响应，并测试了六种当代LLM在五种不同提示条件下的表现。结果表明，提示框架中的数字锚定（numeric anchoring）等细微变化会显著扭曲基于计数的评估结果，导致对模型错误检测能力的误判。这项研究对当前依赖F1分数进行LLM评估的实践提出了重要警示，强调了在评估中需要更精细的定位感知指标。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Error Detection",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:47:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于计数的F1指标在LLM错误检测评估中容易受到提示框架的影响，产生F1膨胀现象，即分数上升但错误定位能力未改善。",
+      "ErrorBench协议通过控制提示条件，系统性地揭示了数字锚定等提示因素对评估结果的扭曲效应。",
+      "研究基于CoNLL-2014语料库和多种LLM的实证分析，表明当前评估实践可能高估了模型的错误检测能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

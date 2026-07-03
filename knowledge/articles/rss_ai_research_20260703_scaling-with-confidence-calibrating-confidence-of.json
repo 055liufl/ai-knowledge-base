@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-021",
+  "title": "Scaling with Confidence: Calibrating Confidence of LLMs for Adaptive Test Time Scaling",
+  "source_url": "https://arxiv.org/abs/2607.01612",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对大型语言模型（LLM）的置信度校准方法，旨在解决强化学习（RL）训练中仅关注答案正确性而忽略置信度表达准确性的问题。作者发现，当前RL奖励设计通常只奖励正确回答，导致模型在性能提升的同时，其置信度与真实准确性之间出现严重失配（即过度自信或信心不足）。为此，论文设计了一种自适应测试时缩放（Adaptive Test Time Scaling）策略，通过校准模型在推理过程中的置信度，动态调整输出长度或搜索深度，从而在保持或提升性能的同时，使模型的置信度更可靠地反映其预测准确性。该方法在多个推理和问答基准上进行了验证，实验表明，经过校准的模型不仅提高了置信度与准确性的对齐程度，还增强了模型在不确定情况下的鲁棒性。这项工作对于提升LLM在关键应用中的可信度和安全性具有重要意义，尤其是在需要模型自我评估和风险控制的场景中。",
+  "tags": [
+    "LLM",
+    "confidence calibration",
+    "reinforcement learning",
+    "test-time scaling"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:41:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前RL训练中仅奖励正确性会导致模型置信度与准确性严重失配，影响模型可信度",
+      "提出自适应测试时缩放方法，通过校准置信度动态调整推理行为，提升模型可靠性",
+      "实验证明该方法在多个基准上同时改善了性能与置信度校准，增强了模型在不确定场景下的鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

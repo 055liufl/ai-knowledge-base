@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260703-037",
+  "title": "Subliminal Clocks: Latent Time Modelling in Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2607.01774",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了扩散语言模型（DLMs）中的潜在时间表示问题。与标准扩散模型不同，DLMs 并未显式地以时间步为条件，这引发了一个关键问题：这些模型是否在内部编码了去噪进度，以及这种信息如何在下游任务中被利用。通过实验分析，作者发现 DLMs 确实在其隐藏状态中编码了与扩散时间步相关的潜在表示，并且这种表示对模型的生成行为有显著影响。这项工作揭示了扩散语言模型内部工作机制的一个重要方面，为理解其行为和改进模型设计提供了新视角。该研究具有较高的理论价值和实践意义，因为它可能推动更高效、更可控的文本生成方法的发展。值得关注的是，它挑战了传统上对扩散模型时间依赖性的假设，并为未来研究如何显式利用或操纵这种潜在时间信息铺平了道路。",
+  "tags": [
+    "Diffusion Language Models",
+    "Latent Representation",
+    "Time Modelling"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:42:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型在内部编码了与去噪时间步相关的潜在表示，尽管未显式使用时间条件。",
+      "这种潜在时间表示对模型的生成质量和行为有直接影响，可用于解释和调控生成过程。",
+      "该发现挑战了现有扩散模型设计假设，为开发更高效、可控的文本生成模型提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

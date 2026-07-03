@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-072",
+  "title": "A Hippocampus for Linear Attention: An Exact Memory for What the Recurrent State Forgets",
+  "source_url": "https://arxiv.org/abs/2607.02303",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为HOLA（Hippocampal Linear Attention）的新型线性注意力机制，旨在解决线性注意力模型在长序列处理中因固定大小循环状态导致的记忆丢失问题。受互补学习系统（Complementary Learning Systems）理论的启发，HOLA为线性注意力引入了一个类似海马体的互补记忆系统，以精确存储被循环状态遗忘的关键信息。具体而言，HOLA在保持原有delta规则状态作为压缩记忆的同时，增加了一个外部记忆模块，用于记录被覆盖或遗忘的键值对，从而在不显著增加计算复杂度的情况下实现精确回忆。实验表明，HOLA在长序列任务（如文档问答、多跳推理）中显著提升了“针在干草堆”（needle-in-a-haystack）场景下的召回率，同时保持了线性注意力的高效性。该工作为改进状态空间模型和线性Transformer的记忆能力提供了新思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Linear Attention",
+    "Memory",
+    "State Space Model",
+    "Complementary Learning Systems"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:45:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HOLA通过引入海马体互补记忆系统，解决了线性注意力模型因固定大小循环状态导致的长期记忆丢失问题。",
+      "该方法在保持O(1)内存效率的同时，显著提升了长序列任务中精确回忆关键信息的能力。",
+      "受互补学习系统理论启发，HOLA将压缩记忆与外部精确记忆结合，为改进状态空间模型提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

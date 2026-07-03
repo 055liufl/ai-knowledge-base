@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-009",
+  "title": "World Feedback for Clinical Agents: Diagnosing RL in FHIR Environments",
+  "source_url": "https://arxiv.org/abs/2607.01470",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在FHIR（快速医疗互操作性资源）环境中，利用世界反馈进行强化学习（RL）以执行临床协议任务的方法。临床协议执行任务，如检查实验室值、应用阈值、下达正确结构的FHIR订单，是RL从世界反馈中学习的自然候选：一旦临床领域专家将决策逻辑编码到验证器中，该验证器即可对无限次展开进行评分，无需每次标注。然而，应用RL需要健全的反馈通道和足够的基础能力。作者对MedAgentBench v1/v2进行了审计，发现存在41.7%的静默完成上限，即模型在未正确完成任务的情况下被错误视为成功。该研究强调了在临床环境中部署RL代理时，反馈机制准确性的关键性，并指出了当前基准测试中的潜在缺陷。这项工作对于推动强化学习在医疗领域的实际应用具有重要意义，尤其是在确保安全性和可靠性方面。",
+  "tags": [
+    "RL",
+    "FHIR",
+    "Clinical Agents",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:40:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临床协议执行任务适合通过世界反馈进行强化学习，但需要健全的反馈通道和足够的基础能力。",
+      "对MedAgentBench v1/v2的审计发现41.7%的静默完成上限，表明现有基准测试可能高估了模型的实际性能。",
+      "该研究强调了在医疗领域部署RL代理时，反馈机制准确性和任务完成真实性的关键性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

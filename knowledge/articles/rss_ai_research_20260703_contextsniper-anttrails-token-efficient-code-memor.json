@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260703-048",
+  "title": "ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair",
+  "source_url": "https://arxiv.org/abs/2607.01916",
+  "source_platform": "rss_ai_research",
+  "summary": "ContextSniper 是 AntTrail 提出的一种面向仓库级程序修复的 token 高效代码记忆层。大型语言模型代理在修复真实仓库问题时，常常将大量上下文预算浪费在读取整个文件、进行广泛搜索以及处理冗长的终端输出上，这些输出中有效证据与无关代码和日志混杂在一起。ContextSniper 作为 AntTrail 更广泛的代理记忆引擎的编码专业化组件，通过实现“Sn”机制（推测为某种选择性记忆或摘要策略），显著减少了上下文消耗，同时保留了修复所需的关键代码证据。该工作针对 LLM 在软件工程中的实际应用痛点——上下文窗口限制与信息冗余，提出了一个轻量级、高效的解决方案。其价值在于提升程序修复代理的 token 利用率，降低推理成本，并可能加速自动化调试流程。值得关注的是，它代表了将记忆机制与代码理解相结合的创新方向，有望在持续集成、代码审查等场景中发挥实际作用。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Code Repair",
+    "Memory",
+    "Token Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:43:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ContextSniper 通过选择性记忆机制减少 LLM 代理在仓库级程序修复中的上下文浪费，提升 token 效率。",
+      "该工作针对实际修复场景中全文件读取和长日志输出的冗余问题，提出轻量级代码记忆层。",
+      "作为 AntTrail 记忆引擎的编码专业化组件，ContextSniper 可能推动 LLM 在软件工程中的实用化部署。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

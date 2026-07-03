@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-088",
+  "title": "Kara: Efficient Reasoning LLM Serving via Sliding-Window KV Cache Compression",
+  "source_url": "https://arxiv.org/abs/2607.01237",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Kara的高效推理LLM服务方法，通过滑动窗口KV缓存压缩技术解决推理语言模型在解码阶段因长链思维（CoT）生成导致的KV缓存膨胀问题。传统KV缓存压缩方法在长序列推理中存在两个关键限制：一是难以在保留有用信息的同时有效压缩，二是压缩策略对推理质量的影响评估不足。Kara通过引入滑动窗口机制，动态调整缓存窗口大小，并基于注意力分数和位置信息设计重要性评分函数，选择性丢弃低重要性KV对，从而在保持模型推理准确性的前提下显著降低内存占用和解码延迟。实验表明，该方法在多个推理任务上实现了高达2-3倍的吞吐量提升，同时保持与原始模型相当的推理质量。该工作对提升LLM推理效率、降低部署成本具有重要实践价值，尤其适用于需要长序列推理的复杂任务场景。",
+  "tags": [
+    "LLM",
+    "KV Cache Compression",
+    "Inference Optimization",
+    "Sliding Window"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:47:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "滑动窗口KV缓存压缩通过动态调整缓存窗口大小，在长序列推理中实现内存与性能的平衡",
+      "基于注意力分数和位置信息的重要性评分函数能有效识别并保留关键KV对，减少压缩对推理质量的影响",
+      "该方法在多个推理任务上实现2-3倍吞吐量提升，同时保持与原始模型相当的准确性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

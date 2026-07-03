@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260703-026",
+  "title": "Epistemic Goggles: A Pretrained Module that Induces an Epistemic Frame via Gradient Editing",
+  "source_url": "https://arxiv.org/abs/2607.01690",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Epistemic Goggles”的预训练模块，通过梯度编辑技术干预语言模型的微调过程，以解决“否定忽视”（Negation Neglect）问题。研究发现，当模型在明确标注为虚构的文档上进行微调时，模型仍然会相信文档中的核心主张，正确识别相关主张为虚构的概率仅为约9%。Goggles模块通过学习干预机制，在微调过程中调整模型对事实性信息的认知框架，从而显著提升模型对虚构内容的识别能力。这项工作对于提升语言模型的事实性理解和可靠性具有重要意义，特别是在处理带有元信息标注的文本时，能够有效防止模型错误吸收虚构内容。该研究为模型对齐和安全性提供了新的技术路径，值得关注。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:42:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言模型在微调时存在否定忽视现象，即使文档明确标注为虚构，模型仍会相信其核心主张，正确识别率仅约9%。",
+      "Goggles模块通过梯度编辑技术，在微调过程中主动干预模型对事实性信息的认知框架，有效提升虚构内容识别能力。",
+      "该研究为语言模型的安全性和事实性对齐提供了新的技术手段，具有重要的实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

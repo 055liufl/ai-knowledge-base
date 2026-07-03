@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-067",
+  "title": "UA-ChatDev: Uncertainty-Aware Multi-Agent Collaboration for Reliable Software Development",
+  "source_url": "https://arxiv.org/abs/2607.02186",
+  "source_platform": "rss_ai_research",
+  "summary": "UA-ChatDev 提出了一种不确定性感知的多智能体协作框架，旨在提升基于大型语言模型（LLM）的自主软件开发可靠性。传统多智能体系统（如 ChatDev）假设所有中间输出均可靠，但 LLM 的幻觉问题会导致错误在角色间传播。该框架通过引入不确定性量化机制，让每个智能体（如分析师、开发者、测试者）在生成输出时附带置信度分数，并基于此动态调整协作策略：低置信度输出触发重新生成或人工审核，高置信度输出则加速流程。实验表明，该方法在代码生成、测试通过率和错误修复效率上显著优于基线，尤其能减少因幻觉导致的级联失败。该工作值得关注，因为它直接解决了 LLM 应用中的核心痛点——可靠性，并为多智能体系统提供了实用的不确定性处理范式，对自动化软件工程和 LLM 安全部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Uncertainty",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:45:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过不确定性量化打破多智能体协作中输出等可靠的假设，有效抑制幻觉传播",
+      "动态置信度阈值策略可平衡自动化效率与人工干预成本，提升整体可靠性",
+      "在代码生成与测试任务中，该方法显著降低级联错误率，优于传统固定协作模式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

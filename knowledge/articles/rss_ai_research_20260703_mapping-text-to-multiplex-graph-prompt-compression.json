@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260703-092",
+  "title": "Mapping Text to Multiplex Graph: Prompt Compression as L\\'evy Walk-Guided Graph Pruning",
+  "source_url": "https://arxiv.org/abs/2607.01241",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为RAGP（Relational-Aware Graph Pruning）的新型提示压缩方法，旨在解决现有方法将文本视为扁平化token序列、无法捕捉重要信息分布式分布的问题。RAGP将文本建模为多路复用图（multiplex graph），其中token或句子作为节点，局部句法依赖和全局语义关系作为不同类型的边。在此基础上，受Lévy行走（Lévy walk）启发的图剪枝算法被用于识别并保留信息密度高的子图，从而实现有效的提示压缩。该方法在多个自然语言处理基准测试中展现出优于现有压缩技术的性能，特别是在长文本和复杂推理任务中，能够显著减少token数量同时保持或提升下游任务效果。该工作融合了图神经网络、随机过程理论和自然语言处理，为提示工程和高效LLM推理提供了新视角。",
+  "tags": [
+    "Prompt Compression",
+    "Graph Neural Networks",
+    "Lévy Walk",
+    "Multiplex Graph",
+    "LLM Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:47:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将提示压缩问题转化为图上的信息保留剪枝问题，利用多路复用图同时建模局部句法和全局语义关系。",
+      "受Lévy行走启发的图剪枝算法能够自适应地识别信息密集区域，优于传统的随机或基于重要性的剪枝方法。",
+      "实验表明，RAGP在多种NLP任务上实现了更优的压缩率与性能权衡，尤其在长文本和复杂推理场景中优势明显。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-056",
+  "title": "InduceKV: Fixed-Footprint Continual Adaptation of Multimodal LLMs via Inducing KV Memories",
+  "source_url": "https://arxiv.org/abs/2607.02010",
+  "source_platform": "rss_ai_research",
+  "summary": "InduceKV 提出了一种固定内存占用的多模态大语言模型持续适应方法。该方法通过引入 KV 记忆（KV memories）来存储任务特定信息，从而在不增加模型参数或回放存储的情况下实现持续学习。核心思想是将任务相关的知识编码为外部 KV 缓存，这些缓存可以在固定内存预算下动态更新和替换，而无需修改骨干模型。这种方法解决了传统持续学习中参数更新或回放存储导致的内存增长问题，使得模型能够适应新任务而不遗忘旧知识。InduceKV 在多个多模态基准测试中展示了与全参数微调相当的性能，同时显著降低了部署内存开销。该工作对于资源受限环境下的多模态模型部署具有重要意义，尤其适用于需要持续适应新领域或任务的场景。",
+  "tags": [
+    "Multimodal LLM",
+    "Continual Learning",
+    "KV Cache",
+    "Memory Efficient"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:44:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出固定内存预算下的持续适应方法，通过外部 KV 记忆存储任务特定知识，避免参数更新或回放存储的内存增长。",
+      "在多个多模态基准测试中，InduceKV 实现了与全参数微调相当的性能，同时显著降低部署内存开销。",
+      "该方法支持动态更新和替换 KV 缓存，使得模型能够适应新任务而不遗忘旧知识，解决了持续学习中的灾难性遗忘问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

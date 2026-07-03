@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260703-133",
+  "title": "X-LogSMask: Expand Transformer for Graph-Structured Data",
+  "source_url": "https://arxiv.org/abs/2607.01553",
+  "source_platform": "rss_ai_research",
+  "summary": "X-LogSMask 是一种针对图结构数据设计的可解释 Transformer 扩展。传统 Transformer 的全连接自注意力机制与图数据的稀疏、结构化、多尺度交互特性不匹配。现有图 Transformer 通过结构编码、混合消息传递模块或学习注意力约束来缓解这一问题，但往往引入额外复杂性且可解释性有限。X-LogSMask 提出了一种新的注意力掩码机制，能够自适应地捕捉图数据的局部和全局结构，同时保持模型的可解释性。该方法通过对数空间掩码设计，在保持计算效率的同时，显著提升了图分类和节点分类等任务的性能。实验表明，X-LogSMask 在多个基准数据集上优于现有图 Transformer 和消息传递神经网络，并且其注意力权重能够直观地反映图结构中的重要子图模式。这项工作为图数据上的 Transformer 应用提供了更简洁、可解释的解决方案，值得关注。",
+  "tags": [
+    "Graph Transformer",
+    "Explainability",
+    "Attention Mask"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:50:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "X-LogSMask 通过可学习的对数空间注意力掩码，有效解决了 Transformer 与图结构数据的不匹配问题，无需复杂的结构编码或混合模块。",
+      "该方法在多个图分类和节点分类基准上达到或超越了现有图 Transformer 和消息传递网络的性能，同时保持了较高的可解释性。",
+      "注意力掩码的可视化显示，X-LogSMask 能够自动识别图数据中的关键子结构和多尺度模式，为图分析提供了直观的洞察。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-008",
+  "title": "Beyond Next-Token Prediction: An RLVR Proof of Concept for Tool-Use Agents on Atlassian Workflows",
+  "source_url": "https://arxiv.org/abs/2607.01465",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于强化学习与可验证奖励（RLVR）的方法，用于解决大型语言模型在特定企业SaaS工作流（如Atlassian API）中作为工具使用代理时的目标不匹配问题。传统语言模型通过预测下一个token进行训练，但在需要精确调用API端点、正确嵌套参数并按顺序执行操作的场景中，常出现静默失败，如遗漏必填字段、虚构工具或过早停止。作者通过将RLVR直接应用于工具使用代理，利用可验证的奖励信号（如API调用成功与否、参数正确性）来优化模型行为，使其能够学习到符合企业工作流要求的操作序列。实验表明，该方法显著提升了模型在Atlassian工作流中的任务完成率和准确性，减少了错误调用。该研究值得关注，因为它提供了一种实用的范式，将强化学习与可验证奖励结合，弥合了语言模型通用预测能力与特定领域精确执行之间的鸿沟，对推动LLM在企业自动化中的应用具有重要意义。",
+  "tags": [
+    "RLVR",
+    "Tool-Use Agent",
+    "Enterprise SaaS",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:40:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR通过可验证的奖励信号（如API调用成功与否）直接优化模型在特定工作流中的行为，解决了next-token预测与精确执行之间的目标不匹配。",
+      "在Atlassian等企业SaaS工作流中，传统LLM常因缺乏对API约束的理解而出现静默失败，RLVR方法能显著减少此类错误。",
+      "该研究展示了强化学习在工具使用代理中的实用价值，为LLM在复杂、多步骤企业流程中的可靠部署提供了新路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

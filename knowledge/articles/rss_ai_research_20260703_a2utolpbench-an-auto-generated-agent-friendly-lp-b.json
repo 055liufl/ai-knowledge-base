@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260703-065",
+  "title": "A$^{2}$utoLPBench: An Auto-Generated, Agent-Friendly LP Benchmark via Inverse-KKT Construction",
+  "source_url": "https://arxiv.org/abs/2607.02141",
+  "source_platform": "rss_ai_research",
+  "summary": "A$^{2}$utoLPBench 是一个自动生成的、面向智能体的线性规划（LP）基准测试，旨在评估大型语言模型（LLM）驱动的智能体在纯文本线性规划问题上的表现。该基准通过逆KKT条件构造方法，首先生成可行点和其对偶变量，然后自动构建对应的LP问题，从而避免了传统静态数据集（如手工编写的文字题）的局限性：数据集大小固定、难度固定、且问题可能泄露到未来LLM的训练数据中。A$^{2}$utoLPBench 能够动态生成无限数量的、难度可控的LP问题，确保测试的公平性和可扩展性。该工作值得关注，因为它解决了LLM评估中数据污染和泛化能力测试的关键问题，为智能体在数学优化领域的应用提供了更可靠的评估工具。此外，其自动生成机制可推广到其他优化问题（如二次规划、整数规划），具有重要的方法论意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Linear Programming"
+  ],
+  "author": null,
+  "published_at": "2026-07-03T10:36:16Z",
+  "collected_at": "2026-07-03T10:45:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过逆KKT条件自动生成LP问题，避免了静态数据集的数据泄露和难度固定问题。",
+      "支持动态生成无限数量的、难度可调的测试实例，提升基准的公平性和可扩展性。",
+      "专门针对LLM驱动的智能体设计，评估其在数学优化任务中的推理和规划能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}
