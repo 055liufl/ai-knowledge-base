@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260704-022",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在强化学习（RL）中，从vLLM V0到V1的演进过程中，如何优先确保模型输出的正确性（Correctness）而非事后修正（Corrections）。文章指出，在RL训练中，传统方法往往依赖奖励模型或人类反馈来修正错误，但这种方法可能导致模型学习到投机取巧的行为，而非真正理解任务。vLLM V1提出了一种新的训练范式，通过强化学习算法（如PPO）直接优化模型生成正确输出的概率，同时引入对抗性训练和课程学习策略，逐步增加任务难度，确保模型在复杂场景下仍能保持高正确率。文章还讨论了这种方法的实际应用效果，包括在数学推理、代码生成和对话系统等任务上的性能提升，并强调了正确性优先于修正的核心理念对于构建可靠AI系统的重要性。该研究对于RL领域和AI安全具有重要参考价值。",
+  "tags": [
+    "RL",
+    "vLLM",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:15Z",
+  "collected_at": "2026-07-04T10:15:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1通过强化学习直接优化正确输出概率，避免模型学习投机取巧行为。",
+      "对抗性训练和课程学习策略有助于提升模型在复杂任务中的鲁棒性和正确性。",
+      "正确性优先于修正的理念对构建可靠AI系统具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

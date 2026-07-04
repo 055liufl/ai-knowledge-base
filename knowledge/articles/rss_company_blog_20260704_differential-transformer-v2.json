@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260704-059",
+  "title": "Differential Transformer V2",
+  "source_url": "https://huggingface.co/blog/microsoft/diff-attn-v2",
+  "source_platform": "rss_company_blog",
+  "summary": "Differential Transformer V2 是微软在 Transformer 架构上的一项改进，通过引入差分注意力机制（Differential Attention）来增强模型对长序列中关键信息的聚焦能力，同时抑制噪声干扰。该版本在 V1 基础上进一步优化了计算效率和稳定性，使得模型在处理长文本、代码生成、多轮对话等任务时表现更优。值得关注的是，它通过简单的注意力头差分操作，显著提升了模型在长上下文任务中的鲁棒性，且无需大幅增加计算成本。这一创新可能推动 Transformer 在需要高精度长距离依赖建模的场景（如文档摘要、代码理解）中的应用，并为后续架构设计提供新思路。",
+  "tags": [
+    "Transformer",
+    "Attention Mechanism",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:15Z",
+  "collected_at": "2026-07-04T10:17:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "差分注意力机制通过计算两个注意力头的差异来抑制噪声，提升长序列建模的鲁棒性。",
+      "V2 版本在保持 V1 优势的同时，优化了计算效率，降低了训练和推理成本。",
+      "该架构在长文本任务（如文档摘要、代码生成）中表现出显著性能提升，且无需额外数据或复杂修改。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

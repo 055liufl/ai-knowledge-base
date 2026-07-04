@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260704-003",
+  "title": "Postgres data stored in Parquet on S3: LTAP architecture explained",
+  "source_url": "https://www.databricks.com/blog/lakebase-ltap-rethinking-database-storage",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了Databricks提出的Lakebase LTAP（Lakehouse Transactional Analytical Processing）架构，该架构将Postgres数据存储在Parquet格式的S3上，实现了事务处理与分析处理的统一。传统上，数据库存储与数据湖存储分离，导致数据冗余和同步延迟。LTAP架构通过将Postgres的存储层直接构建在云对象存储（如S3）上，并利用Parquet列式存储格式，使得同一份数据既能支持OLTP事务操作，又能高效进行OLAP分析查询。该架构的关键在于利用Delta Lake或类似技术提供ACID事务保证，同时利用Parquet的压缩和列式存储特性提升分析性能。文章强调，这种设计消除了ETL过程，降低了数据延迟，并简化了数据基础设施。Lakebase LTAP代表了数据湖与数据库融合的新方向，对于需要实时分析的事务型应用具有重要价值。",
+  "tags": [
+    "LTAP",
+    "Postgres",
+    "Parquet",
+    "Data Lakehouse",
+    "S3"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:02Z",
+  "collected_at": "2026-07-04T10:11:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LTAP架构将Postgres存储层直接构建在S3上的Parquet文件，实现事务与分析统一存储。",
+      "通过Delta Lake提供ACID事务保证，同时利用Parquet列式存储优化分析查询性能。",
+      "消除传统ETL过程，降低数据冗余和同步延迟，简化数据基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

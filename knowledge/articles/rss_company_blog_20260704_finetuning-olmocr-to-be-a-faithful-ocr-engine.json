@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260704-136",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为一个更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够从图像中提取文本。然而，原始模型在处理复杂文档（如表格、多列布局、手写文本或低质量扫描件）时，可能会出现文本丢失、顺序错误或幻觉（生成不存在的文本）等问题。为了解决这些问题，作者通过构建一个包含多样化文档类型（如发票、合同、学术论文、手写笔记等）的高质量数据集，并采用指令微调（Instruction Tuning）和强化学习（RLHF）等方法，对 olmOCR 进行了针对性优化。微调后的模型在多个基准测试中表现出显著的改进，包括更高的字符准确率（CER）、更少的幻觉现象以及更好的结构保持能力（如保留表格和列表的格式）。此外，文章还讨论了微调过程中的关键技巧，如数据增强（添加噪声、旋转、裁剪等）和损失函数设计（如 CTC 损失与交叉熵损失的结合），以提升模型的鲁棒性。这项工作对于需要高精度 OCR 的应用场景（如文档数字化、自动化数据录入、古籍保护等）具有重要意义，展示了通过微调 VLM 来提升特定任务性能的潜力。",
+  "tags": [
+    "OCR",
+    "VLM",
+    "Fine-tuning",
+    "Document Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:15Z",
+  "collected_at": "2026-07-04T10:23:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过指令微调和强化学习，可以显著提升 VLM 在 OCR 任务上的准确性和可靠性，减少幻觉和文本丢失。",
+      "构建高质量、多样化的训练数据集（包含表格、手写、低质量扫描件等）是微调成功的关键。",
+      "数据增强（如噪声、旋转、裁剪）和混合损失函数（CTC + 交叉熵）能有效提升模型对复杂文档的鲁棒性。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260704-073",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是MiniMax团队关于其最新模型M2的博客文章，核心探讨了智能体（Agent）泛化能力的关键问题：对齐（Alignment）应该对齐到什么？传统对齐方法（如RLHF）主要关注模型输出与人类偏好的匹配，但M2提出，对于智能体而言，真正的泛化能力来源于对“任务目标”而非“人类反馈”的对齐。文章介绍了M2在训练中引入的“目标条件化”机制，使模型能够理解并适应不同任务的具体目标，从而在未见过的任务上表现出更强的泛化能力。这一思路跳出了单纯追求指令跟随的框架，转向让智能体学会“理解意图”和“自主规划”。M2在多个基准测试（如AgentBench、WebArena）上取得了显著提升，证明了该方法的有效性。该研究对于构建更通用、更鲁棒的AI智能体具有重要启示，值得关注。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "MiniMax",
+    "M2"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:15Z",
+  "collected_at": "2026-07-04T10:19:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "M2提出智能体泛化的关键在于对齐任务目标而非人类反馈，重新定义了对齐方向。",
+      "通过目标条件化训练，模型能理解并适应不同任务的具体目标，提升零样本泛化能力。",
+      "在AgentBench、WebArena等基准上取得显著提升，验证了方法的有效性。",
+      "该研究为构建更通用、自主的AI智能体提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260704-137",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了在并发请求场景下优化大语言模型（LLM）性能的关键技术——Prefill（预填充）与Decode（解码）阶段的分离与优化。文章指出，传统LLM推理中，Prefill阶段（处理输入提示）和Decode阶段（逐token生成输出）是串行执行的，这在高并发场景下会导致显著的延迟和资源浪费。通过将这两个阶段解耦并分别优化，可以大幅提升吞吐量和响应速度。具体方法包括：使用批处理技术合并多个请求的Prefill操作，利用GPU并行计算优势；在Decode阶段采用KV缓存共享、动态批处理和投机解码等策略，减少重复计算和内存占用。文章还提供了实际性能对比数据，展示了优化后延迟降低50%以上、吞吐量提升2-3倍的效果。该技术对于部署LLM服务的开发者至关重要，能有效降低推理成本并改善用户体验。本文来自Hugging Face博客，内容详实，结合了理论分析和实践案例，具有很高的参考价值。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Concurrent Requests",
+    "Prefill",
+    "Decode"
+  ],
+  "author": null,
+  "published_at": "2026-07-04T10:10:15Z",
+  "collected_at": "2026-07-04T10:23:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill和Decode阶段分离是优化LLM并发推理性能的关键，可显著降低延迟并提升吞吐量。",
+      "批处理Prefill操作和KV缓存共享能有效减少重复计算，提高GPU利用率。",
+      "动态批处理和投机解码等策略在Decode阶段可进一步优化资源分配，加速生成过程。",
+      "实际测试表明，优化后延迟可降低50%以上，吞吐量提升2-3倍，对生产环境部署具有重要实践意义。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
