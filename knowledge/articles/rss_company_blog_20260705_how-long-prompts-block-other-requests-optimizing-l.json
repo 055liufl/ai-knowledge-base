@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260705-119",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章来自 Hugging Face，主要探讨了在大型语言模型（LLM）推理服务中，长提示词（long prompts）如何阻塞其他请求，并提出了优化性能的方法。文章指出，在并发处理多个请求时，长提示词会占用大量计算资源，导致其他短提示词请求被延迟或阻塞，从而影响整体系统的吞吐量和响应时间。作者通过实验数据展示了不同提示词长度对请求排队和响应时间的影响，并分析了当前 LLM 推理框架（如 vLLM、TGI）在处理长提示词时的局限性。文章提出了一些优化策略，包括动态批处理（dynamic batching）、提示词长度感知调度（prompt-length-aware scheduling）以及请求优先级管理（request prioritization），以平衡长提示词和短提示词之间的资源分配。此外，文章还讨论了未来可能的方向，如更高效的注意力机制和模型架构改进。这篇内容对于 LLM 服务部署和性能调优具有实际指导意义，尤其适合关注推理效率的开发者。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-07-05T10:13:01Z",
+  "collected_at": "2026-07-05T10:24:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著阻塞其他请求，导致系统吞吐量下降和响应时间增加。",
+      "动态批处理和提示词长度感知调度是缓解阻塞问题的有效策略。",
+      "当前主流推理框架在处理长提示词时存在优化空间，需要更智能的请求调度机制。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

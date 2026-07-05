@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260705-137",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了大型语言模型（LLM）在处理并发请求时，如何通过优化预填充（Prefill）和解码（Decode）阶段来提升性能。文章首先解释了LLM推理的两个核心阶段：预填充阶段负责处理输入提示并生成初始的键值缓存（KV Cache），而解码阶段则逐词生成输出。在并发场景下，这两个阶段会相互竞争计算资源，导致性能瓶颈。作者提出了一种优化策略，通过将预填充和解码请求分离到不同的计算流或批次中，利用GPU的并行计算能力减少空闲时间，并采用动态批处理（Dynamic Batching）和连续批处理（Continuous Batching）技术来最大化吞吐量。此外，文章还讨论了内存管理优化，如KV Cache的共享和预分配，以及使用FlashAttention等高效注意力机制来降低计算复杂度。这些优化方法对于部署高并发LLM服务（如聊天机器人、实时翻译）至关重要，能够显著降低延迟并提高系统吞吐量。本文值得关注，因为它提供了实用的性能调优指南，帮助开发者在资源受限的环境下实现更高效的LLM推理。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Concurrency",
+    "Performance"
+  ],
+  "author": null,
+  "published_at": "2026-07-05T10:13:01Z",
+  "collected_at": "2026-07-05T10:25:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预填充和解码阶段在并发请求中会竞争资源，分离处理可提升性能。",
+      "动态批处理和连续批处理是优化LLM并发推理吞吐量的关键技术。",
+      "优化KV Cache管理和使用高效注意力机制（如FlashAttention）能显著降低内存和计算开销。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
