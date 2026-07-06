@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260706-080",
+  "title": "Google Cloud C4 Brings a 70% TCO improvement on GPT OSS with Intel and Hugging Face",
+  "source_url": "https://huggingface.co/blog/gpt-oss-on-intel-xeon",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客文章介绍了Google Cloud C4实例与Intel和Hugging Face合作，在GPT开源模型（OSS）上实现了70%的总拥有成本（TCO）改进。文章详细阐述了通过使用第四代Intel Xeon可扩展处理器（Sapphire Rapids）和Hugging Face的Optimum Intel库，在Google Cloud C4机器上优化GPT模型推理性能的方法。关键优化包括利用Intel的Advanced Matrix Extensions（AMX）加速矩阵运算、使用Intel Extension for PyTorch（IPEX）进行模型量化（如INT8），以及通过Hugging Face的Transformers和Optimum库简化部署流程。基准测试显示，与之前的C3实例相比，C4实例在GPT-J和GPT-NeoX等模型上实现了显著的吞吐量提升和延迟降低，从而大幅降低了推理成本。这一成果对于希望以更低成本部署大型语言模型的企业和开发者具有重要意义，展示了云基础设施、硬件加速和开源软件协同优化的潜力。文章还提供了详细的性能数据和部署指南，使读者能够复现这些结果。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Cloud Computing",
+    "Intel",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-07-06T12:05:03Z",
+  "collected_at": "2026-07-06T12:13:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Google Cloud C4实例结合Intel AMX和Hugging Face Optimum库，使GPT开源模型的推理TCO降低70%，主要通过INT8量化和硬件加速实现。",
+      "优化方法包括使用Intel Extension for PyTorch进行模型量化和图优化，以及利用Hugging Face Transformers的集成，简化了部署流程。",
+      "基准测试显示，在GPT-J和GPT-NeoX模型上，C4实例相比C3实例在吞吐量上提升显著，同时延迟降低，证明了硬件与软件协同优化的有效性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

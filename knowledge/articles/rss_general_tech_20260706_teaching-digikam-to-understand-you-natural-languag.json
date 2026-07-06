@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260706-012",
+  "title": "Teaching digiKam to Understand You: Natural Language Search with Local LLMs",
+  "source_url": "http://srirupa19.github.io/gsoc/2026/06/28/gsoc1.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了在开源照片管理软件 digiKam 中集成本地大语言模型（LLM）实现自然语言搜索功能的技术实践。作者通过将本地运行的 LLM（如 Llama 或 Mistral）与 digiKam 的元数据系统结合，使用户能够用自然语言描述（如“去年夏天的海滩照片”）来搜索图片，而无需依赖云端服务或手动标签。该方案利用 LLM 理解用户查询并匹配图片的 EXIF 数据、标签和描述，同时通过本地部署保护隐私。文章详细说明了技术架构，包括使用 ONNX Runtime 或 llama.cpp 进行模型推理、将查询转换为结构化搜索条件，以及优化性能的方法。这一创新将传统照片管理工具升级为智能助手，展示了 LLM 在桌面应用中的实用价值，尤其适合注重隐私的用户。值得关注的是，它降低了 AI 应用的门槛，让普通用户也能享受自然语言交互的便利，同时避免了数据外泄风险。",
+  "tags": [
+    "LLM",
+    "Local AI",
+    "Photo Management",
+    "Open Source"
+  ],
+  "author": null,
+  "published_at": "2026-07-06T12:04:58Z",
+  "collected_at": "2026-07-06T12:07:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 digiKam 中集成本地 LLM 实现自然语言搜索，无需云端依赖，保护用户隐私。",
+      "利用 LLM 理解自然语言查询并匹配图片元数据，提升照片管理效率。",
+      "技术方案基于 ONNX Runtime 或 llama.cpp，支持在消费级硬件上运行。",
+      "展示了开源桌面应用如何通过本地 AI 增强功能，降低用户使用门槛。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

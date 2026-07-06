@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260706-136",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够从图像中提取文本。然而，原始模型在处理复杂文档（如表格、多栏布局或手写文本）时可能产生幻觉或错误。作者通过收集高质量标注数据、设计针对性的微调策略（如使用对比学习和文本对齐损失）来提升模型的准确性和鲁棒性。实验结果表明，微调后的模型在多个基准测试中显著降低了字符错误率（CER）和单词错误率（WER），同时保持了良好的泛化能力。这项工作对于需要高精度文档数字化的应用场景（如档案管理、自动化办公）具有重要价值，展示了通过领域特定微调增强通用 VLM 能力的潜力。",
+  "tags": [
+    "OCR",
+    "Fine-tuning",
+    "Vision-Language Model",
+    "Document Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-07-06T12:05:03Z",
+  "collected_at": "2026-07-06T12:17:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过微调视觉语言模型（VLM）可以显著提升 OCR 在复杂文档上的准确性，减少幻觉和错误。",
+      "针对性的数据收集和损失函数设计（如对比学习）是提升 OCR 鲁棒性的关键。",
+      "微调后的模型在字符错误率（CER）和单词错误率（WER）上表现优异，且泛化能力良好。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260706-027",
+  "title": "How to Use Transformers.js in a Chrome Extension",
+  "source_url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何在 Chrome 扩展中使用 Transformers.js，这是一个在浏览器中运行机器学习模型的 JavaScript 库。文章详细说明了从安装依赖、配置 manifest.json、编写后台脚本到实现特定功能（如文本分类、图像识别）的完整流程。Transformers.js 基于 ONNX Runtime，支持多种预训练模型，无需服务器端支持，直接在客户端执行推理。这对于开发隐私保护、离线可用的 AI 应用具有重要意义，尤其适合需要实时处理用户数据且不希望数据外传的场景。文章还讨论了性能优化和常见问题，如模型加载策略、内存管理及与 Chrome 扩展 API 的集成。该技术降低了 AI 应用的门槛，使前端开发者能轻松集成 NLP 和 CV 能力，值得关注。",
+  "tags": [
+    "Transformers.js",
+    "Chrome Extension",
+    "Browser ML",
+    "ONNX Runtime"
+  ],
+  "author": null,
+  "published_at": "2026-07-06T12:05:03Z",
+  "collected_at": "2026-07-06T12:10:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformers.js 允许在浏览器中直接运行预训练模型，无需后端服务器，增强了隐私保护和离线能力。",
+      "Chrome 扩展结合 Transformers.js 可实现实时文本分类、图像识别等功能，适用于内容过滤、辅助输入等场景。",
+      "文章提供了从零开始的实现指南，包括 manifest.json 配置、模型加载和推理调用的具体代码示例。",
+      "性能优化方面，建议使用 Web Workers 避免阻塞主线程，并合理管理模型缓存以减少加载时间。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

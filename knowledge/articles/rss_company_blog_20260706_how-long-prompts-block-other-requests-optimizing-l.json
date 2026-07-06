@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260706-119",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了长提示词（long prompts）如何阻塞其他请求，从而影响大型语言模型（LLM）的性能。文章指出，在处理长提示词时，LLM 的推理过程会占用大量计算资源，导致后续请求被排队或阻塞，进而降低整体系统的吞吐量和响应速度。作者通过实验数据展示了不同长度提示词对请求延迟和并发处理能力的影响，并提出了优化策略，包括提示词压缩、请求优先级调度、以及使用更高效的模型架构（如稀疏注意力机制）。文章还讨论了在实际部署中（如聊天机器人、代码生成等场景）如何平衡提示词长度与性能，强调了合理设计提示词和系统架构的重要性。该内容对于提升 LLM 服务效率具有实践指导意义，尤其适合需要处理大量并发请求的开发者。",
+  "tags": [
+    "LLM",
+    "Performance Optimization",
+    "Prompt Engineering",
+    "System Design"
+  ],
+  "author": null,
+  "published_at": "2026-07-06T12:05:03Z",
+  "collected_at": "2026-07-06T12:16:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著增加 LLM 推理的计算开销，导致请求排队和系统吞吐量下降。",
+      "通过提示词压缩和优先级调度可以缓解长提示词带来的性能瓶颈。",
+      "稀疏注意力等高效模型架构能有效减少长序列处理时的资源占用。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
