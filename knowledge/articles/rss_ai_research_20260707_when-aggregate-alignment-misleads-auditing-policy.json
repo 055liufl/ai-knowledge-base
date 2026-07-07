@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-019",
+  "title": "When Aggregate Alignment Misleads: Auditing Policy Repair Without Per-State Expert Actions",
+  "source_url": "https://arxiv.org/abs/2607.03386",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在缺乏逐状态专家行为标签的情况下，如何审计和修复智能体决策策略的问题。作者以一个酒店定价模拟器为实验环境，其中策略编辑器只能获取区域级别的诊断反馈（如价格分布与基准策略在时间、库存和市场区域上的差异摘要），而无法观察每个具体状态下的专家动作。论文揭示了聚合对齐（aggregate alignment）可能产生误导性结果的现象：即使区域级别的统计指标看起来一致，策略修复仍可能引入局部错误或偏差。这项工作对于评估和调试基于大语言模型（LLM）的智能体策略编辑器具有重要价值，因为它指出了仅依赖聚合反馈进行策略修复的潜在风险，并提出了更细粒度的审计方法。该研究属于AI安全与可解释性领域的前沿探索，对于开发更可靠的自主决策系统具有指导意义。",
+  "tags": [
+    "AI Safety",
+    "Policy Repair",
+    "Agentic AI",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:01:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "聚合对齐（aggregate alignment）在缺乏逐状态专家标签时可能掩盖局部策略错误，导致误导性审计结果。",
+      "在酒店定价模拟器中，仅依赖区域级诊断反馈的策略修复可能引入未检测到的偏差，需要更细粒度的审计方法。",
+      "该研究为评估和调试基于LLM的智能体策略编辑器提供了重要警示，强调了在AI安全中考虑局部行为一致性的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

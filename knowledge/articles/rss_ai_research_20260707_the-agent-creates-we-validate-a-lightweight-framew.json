@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260707-118",
+  "title": "The agent creates, we validate: A Lightweight Framework for Agentic Artifact Generation",
+  "source_url": "https://arxiv.org/abs/2607.02615",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种轻量级框架，用于通过大型语言模型（LLM）生成结构化工件（如数据库查询、威胁框架映射、实体模式），并确保其可靠性以适用于生产部署。核心原则是“LLM生成，我们验证”，将责任从生成质量转移到验证严谨性。该框架基于三个关键组件：生成器、验证器和修复器。生成器负责创建初始工件，验证器使用预定义规则或约束检查工件的正确性，修复器则根据验证反馈进行修正。这种方法通过迭代生成-验证-修复循环，显著提高了工件的准确性和一致性。论文还通过多个案例研究（如SQL查询生成、威胁建模映射）展示了框架的有效性，表明其能减少错误并提升输出可靠性。该框架的轻量级特性使其易于集成到现有工作流中，特别适合需要高可靠性的生产环境。值得关注的是，它提供了一种实用且可扩展的解决方案，平衡了LLM的生成能力与人工验证的严谨性，为AI在关键任务中的应用提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Validation",
+    "Framework"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:10:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "核心原则是LLM生成、人工验证，将可靠性责任从生成质量转移到验证严谨性。",
+      "框架包含生成器、验证器和修复器三个组件，通过迭代循环提高工件准确性。",
+      "在SQL查询生成和威胁建模等案例中，框架显著减少了错误并提升了输出一致性。",
+      "轻量级设计使其易于集成到生产工作流，适合需要高可靠性的应用场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

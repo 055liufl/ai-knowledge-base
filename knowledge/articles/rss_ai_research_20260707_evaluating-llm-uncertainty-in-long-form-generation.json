@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-034",
+  "title": "Evaluating LLM Uncertainty in Long-Form Generation Using Deterministic Ground Truth",
+  "source_url": "https://arxiv.org/abs/2607.03870",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于评估长文本生成中LLM不确定性估计的新基准方法，该方法利用确定性真实标签来克服传统评估中标签不完善的问题。研究指出，随着LLM生成越来越长的输出，有效的置信度估计需要在细粒度级别（从单个token到整个生成）识别错误，而非简单地丢弃整个响应。然而，现有评估方法对标签噪声高度敏感，而长文本生成基准通常依赖易出错的标注。作者通过构建确定性真实标签的基准，实现了零噪声评估环境，从而更准确地衡量不确定性估计方法的性能。这项工作对于提升LLM在长文本生成任务中的可靠性和可解释性具有重要意义，尤其适用于需要高精度错误定位的应用场景，如自动摘要、报告生成和对话系统。",
+  "tags": [
+    "LLM",
+    "Uncertainty Estimation",
+    "Long-Form Generation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:03:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出使用确定性真实标签构建零噪声基准，解决了长文本生成中不确定性评估对标签噪声敏感的问题。",
+      "强调细粒度不确定性估计（从token到整个生成）对于识别长文本中局部错误的重要性。",
+      "该基准方法有望提升LLM在长文本生成任务中的可靠性和可解释性，推动相关应用的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

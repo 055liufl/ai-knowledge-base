@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-045",
+  "title": "Progress- and Reliability-Oriented Group Policy Optimization for Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.04242",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向智能体强化学习的分组策略优化方法，名为“面向进度与可靠性的分组策略优化”（Progress- and Reliability-Oriented Group Policy Optimization，简称PRO-GPO）。针对现有基于步骤的分组强化学习中，优势估计对分组方式敏感的问题，PRO-GPO引入了一种新的分组机制，该机制同时考虑智能体在任务中的进度（progress）和动作的可靠性（reliability）。进度衡量智能体在长期交互任务中距离目标完成的距离，而可靠性则评估动作在给定状态下导致成功结果的概率。通过将这两个维度结合，PRO-GPO能够更精细地估计每个步骤的优势值，从而在训练大型语言模型智能体时实现更稳定和高效的策略更新。实验表明，该方法在多个长期交互任务基准上优于传统的轨迹级优化和现有步骤级分组方法，显著提升了智能体的任务完成率和学习效率。这项工作为强化学习在复杂、长时域任务中的应用提供了新的视角，尤其对于需要细粒度控制的大语言模型智能体训练具有重要价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM Agent",
+    "Policy Optimization",
+    "Group-based RL"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:04:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRO-GPO通过同时考虑任务进度和动作可靠性来改进步骤级分组策略，解决了传统分组方法中优势估计不稳定的问题。",
+      "该方法在长期交互任务中显著提升了LLM智能体的任务完成率和学习效率，优于轨迹级和现有步骤级优化方法。",
+      "进度和可靠性的双维度分组机制为细粒度策略更新提供了更鲁棒的信号，有望推动强化学习在复杂智能体训练中的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-091",
+  "title": "Graph Sparse Sampling: Breaking the Curse of the Horizon in Continuous MDP Planning",
+  "source_url": "https://arxiv.org/abs/2607.05359",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“图稀疏采样”（Graph Sparse Sampling）的新方法，旨在解决连续马尔可夫决策过程（MDP）规划中因规划深度增加而导致的采样复杂度指数级增长问题（即“horizon诅咒”）。传统基于树的搜索方法（如蒙特卡洛树搜索MCTS）在连续状态或动作空间中，随着前瞻深度增加，分支结构会导致采样预算呈指数增长，限制了其在长时域自主系统中的应用。本文通过构建稀疏图结构替代传统树结构，在保持规划质量的同时显著降低采样复杂度。该方法在理论上证明了其能够打破horizon诅咒，并在多个连续控制基准任务中验证了其高效性和可扩展性。该研究对于机器人、自动驾驶等需要长时域规划的自主系统具有重要价值，为连续空间中的高效规划提供了新的理论框架和实用算法。",
+  "tags": [
+    "MDP",
+    "Planning",
+    "Continuous Control",
+    "Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:08:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出图稀疏采样方法，通过稀疏图结构替代传统树结构，有效降低连续MDP规划中随深度指数增长的采样复杂度。",
+      "从理论上证明了该方法能够打破horizon诅咒，即在长前瞻深度下仍保持多项式级别的采样预算。",
+      "在多个连续控制基准任务中验证了方法的有效性，展示了比MCTS等基线方法更高的采样效率和规划性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

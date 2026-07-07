@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-068",
+  "title": "FORGE: Research-Trajectory Hijacking Attacks on Deep Research Agents",
+  "source_url": "https://arxiv.org/abs/2607.04718",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对深度研究代理（Deep Research Agents）的新型攻击方法——FORGE（Fabricated Orchestrated Reasoning chain for aGent Exploitation）。深度研究代理通常将开放式查询分解为多个子任务，通过多轮检索网络证据并最终生成长篇报告。这种工作流程暴露了一个规划层投毒面：攻击者可以构造恶意文档，使其进入检索池，从而影响后续的提问方向，将局部注入转化为整个报告级别的污染。FORGE攻击分为两个层面：首先，通过精心设计的对抗性文档污染检索结果；其次，利用代理的推理链，使恶意内容在报告生成过程中被放大和整合。该研究揭示了当前深度研究代理在安全方面的脆弱性，尤其是对检索增强生成（RAG）流程的潜在威胁。值得关注的是，随着AI代理在科研、商业分析等领域的广泛应用，此类攻击可能导致严重的信息误导和决策错误。论文提供了攻击的具体实现和评估，为防御策略的开发提供了重要参考。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:06:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度研究代理的规划层存在投毒面，恶意文档可影响多轮检索和报告生成。",
+      "FORGE攻击通过两级策略（局部注入和推理链放大）实现报告级污染。",
+      "该攻击凸显了RAG流程在安全设计上的不足，需加强对抗性鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

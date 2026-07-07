@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-003",
+  "title": "ASK in the Dark: Uncertainty-Gated LLM Assistance under Partial Observability",
+  "source_url": "https://arxiv.org/abs/2607.02686",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ASK（Action Selection with Knowledge）的新方法，用于在部分可观测环境中通过不确定性门控机制整合小语言模型（SLM）的指导，以增强强化学习代理的性能。在部分可观测性下，代理必须基于不完整信息行动，而SLM携带广泛推理先验，理论上适合提供指导。然而，传统不确定性门控方法在所有测试环境中几乎无法实现SLM的有效覆盖（覆盖率为零或接近零），导致SLM几乎从不独立贡献行动。ASK通过设计一种新的门控策略，基于代理对当前状态的不确定性动态决定是否采纳SLM建议，从而显著提升了SLM的参与度和整体性能。实验表明，ASK在多个基准任务中优于基线方法，特别是在高不确定性场景下，代理能更有效地利用SLM的推理能力。这项工作值得关注，因为它解决了LLM/SLM在强化学习中实际应用的关键瓶颈——如何在不破坏代理自主性的前提下，智能地引入外部知识。其创新性在于将不确定性量化与门控机制结合，为部分可观测RL中的语言模型集成提供了实用框架，对开发更鲁棒的AI系统具有重要参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM",
+    "Uncertainty Quantification",
+    "Partial Observability"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:00:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统不确定性门控方法在部分可观测RL中几乎无法让SLM有效参与，覆盖率为零或接近零，表明简单门控策略存在根本缺陷。",
+      "ASK通过动态不确定性门控机制，根据代理对当前状态的不确定性水平决定是否采纳SLM建议，显著提升了SLM的贡献率和任务性能。",
+      "该方法在高不确定性场景下尤其有效，展示了语言模型推理先验在增强RL代理决策中的潜力，同时避免了过度依赖外部指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

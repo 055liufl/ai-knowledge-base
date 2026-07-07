@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260707-010",
+  "title": "The Control Plane Was the Point: Revisiting autofz in the LLM Era",
+  "source_url": "https://yfu.tw/blog/en/autofz-revisited/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文回顾了作者在2019年开发的自动化模糊测试工具autofz，并探讨了在LLM时代其核心设计理念——控制平面（Control Plane）的重要性。autofz通过将模糊测试的调度逻辑（如种子选择、变异策略、覆盖率反馈）抽象为可配置的控制平面，实现了高度灵活和可扩展的测试框架。在LLM时代，作者认为控制平面的设计思想对于构建基于LLM的自动化系统（如代码生成、测试生成、Agent等）具有重要启示：LLM应作为决策引擎（控制平面的一部分），而非直接生成所有细节。文章强调，将复杂任务分解为控制平面（策略、调度）和数据平面（具体执行）的分离，能更好地利用LLM的推理能力，同时保持系统的可解释性和可控性。这一观点对于当前LLM应用开发中常见的“端到端黑盒”方法提出了批判性反思，值得关注。",
+  "tags": [
+    "Fuzzing",
+    "LLM",
+    "Control Plane",
+    "Automation",
+    "Software Testing"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:55Z",
+  "collected_at": "2026-07-07T10:59:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "autofz的控制平面设计将模糊测试的调度逻辑抽象化，实现了高度灵活和可扩展的测试框架。",
+      "在LLM时代，控制平面思想启示我们应将LLM作为决策引擎，而非直接生成所有细节。",
+      "将复杂任务分解为控制平面（策略、调度）和数据平面（具体执行）的分离，能提升系统的可解释性和可控性。",
+      "对当前LLM应用开发中常见的端到端黑盒方法提出了批判性反思，强调结构化设计的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

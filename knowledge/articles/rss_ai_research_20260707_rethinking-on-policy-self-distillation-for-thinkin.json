@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-083",
+  "title": "Rethinking On-Policy Self-Distillation for Thinking Models",
+  "source_url": "https://arxiv.org/abs/2607.05184",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在思考模型（thinking models）中应用特权自我蒸馏（privileged self-distillation）的局限性。自我蒸馏是一种语言模型自我改进的方法，模型可以利用特权信息（如数学问题的解答）作为自己的教师。对于思考模型而言，它们能够通过测试时推理来吸收这些特权信息，因此这种方法看似特别有吸引力。然而，研究发现，在长推理轨迹上，特权自我蒸馏反而会降低思考模型的性能。实验在五个不同的设置中均观察到这一退化现象，表明该策略在长推理场景下存在根本性问题。这一发现挑战了当前对自我蒸馏在复杂推理任务中有效性的普遍认知，提示研究者需要重新思考如何设计更有效的自我改进机制，特别是对于需要长链推理的模型。该工作对语言模型的自训练和推理优化具有重要启示。",
+  "tags": [
+    "self-distillation",
+    "thinking models",
+    "reasoning",
+    "language models"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:07:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "特权自我蒸馏在长推理轨迹上会降低思考模型的性能，与直觉相反。",
+      "该退化现象在五个不同实验设置中均被观察到，具有普遍性。",
+      "当前自我蒸馏策略可能不适用于需要长链推理的复杂任务，需要重新设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

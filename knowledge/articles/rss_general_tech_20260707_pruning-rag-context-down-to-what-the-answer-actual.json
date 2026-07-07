@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260707-005",
+  "title": "Pruning RAG context down to what the answer actually needs",
+  "source_url": "https://www.kapa.ai/blog/how-we-prune-rag-context",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章由 kapa.ai 团队撰写，介绍了他们在 RAG（检索增强生成）系统中如何通过修剪上下文来提升回答质量和效率。核心问题在于，RAG 系统通常检索大量文档片段，但其中很多内容与最终答案无关，导致 LLM 处理冗余信息、增加成本并可能引入噪声。文章提出了一种基于“答案需求”的上下文修剪方法：首先通过一个轻量级模型（如分类器或小语言模型）分析用户问题，预测回答所需的关键信息类型（如事实、步骤、定义等），然后从检索到的文档中仅保留与这些需求高度相关的部分。具体实现包括使用语义相似度、关键词匹配和注意力机制来筛选段落，并动态调整上下文长度。该方法在 kapa.ai 的问答系统中进行了实验，结果显示在保持回答准确性的前提下，上下文大小平均减少了 40-60%，同时降低了延迟和 API 成本。文章还讨论了修剪策略的权衡，如过度修剪可能导致信息丢失，而不足则无法优化性能。这项技术对于构建高效、经济的 RAG 应用具有实际价值，尤其适合需要处理大量文档的企业级场景。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Context Optimization",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:53Z",
+  "collected_at": "2026-07-07T10:58:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过分析用户问题预测答案需求，可以精准修剪 RAG 上下文，减少冗余信息。",
+      "修剪上下文平均减少 40-60% 的大小，同时保持回答准确性，降低延迟和成本。",
+      "方法结合轻量级模型和语义筛选，平衡了信息保留与性能优化。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

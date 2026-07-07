@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260707-079",
+  "title": "DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation",
+  "source_url": "https://arxiv.org/abs/2607.05147",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DSpark的新型推测解码方法，旨在加速大型语言模型（LLM）的推理过程。传统推测解码通过将草稿生成与目标验证解耦来提升速度，但现有的并行草稿生成器虽然能一次性生成较长的令牌序列，却因缺乏令牌间依赖关系而导致接受率快速下降。此外，不加区分地验证这些扩展块会浪费关键的批处理容量在高拒绝风险的令牌上，从而严重降低整体效率。DSpark通过引入置信度调度机制和半自回归生成策略来解决这些问题。具体而言，它动态调整草稿生成的置信度阈值，优先验证高置信度的令牌，同时利用半自回归方式在草稿阶段引入部分依赖关系，从而提高令牌的接受率。实验结果表明，DSpark在多个基准测试上相比现有方法实现了显著的加速，同时保持了生成质量。这项工作对于提升LLM在实际应用中的推理效率具有重要价值，尤其是在需要低延迟和高吞吐量的场景中。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Inference Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:07:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DSpark通过置信度调度机制动态调整草稿生成的验证策略，优先处理高置信度令牌，从而减少无效计算。",
+      "半自回归生成策略在草稿阶段引入部分令牌间依赖关系，有效缓解了并行草稿生成中接受率快速下降的问题。",
+      "该方法在多个基准测试中实现了显著的推理加速，同时保持了生成质量，为LLM高效推理提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

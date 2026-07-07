@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260707-111",
+  "title": "From Tensor Buffer to Distributed Memory Hierarchy: A Survey of KV Cache Management for LLM Serving",
+  "source_url": "https://arxiv.org/abs/2607.02574",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇综述论文系统性地探讨了大型语言模型（LLM）服务中键值（KV）缓存的管理问题，将其从传统的临时张量提升为一等内存对象。论文通过四个关键维度（局部性、生命周期、所有权和底层介质）对超过三十种KV管理系统和框架进行了分类，揭示了五种架构原型：本地分页、分离式管道、共享存储、内存池和混合分层。该研究指出，在固定工作负载和硬件的情况下，所有权是影响系统性能的最关键因素。这篇综述为LLM服务中的内存层次结构设计提供了全面的视角，对于优化推理效率、降低延迟和成本具有重要意义，尤其值得关注的是其提出的分类法为未来系统设计提供了清晰的指导框架。",
+  "tags": [
+    "KV Cache",
+    "LLM Serving",
+    "Memory Hierarchy",
+    "System Architecture",
+    "Survey"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:10:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV缓存已成为LLM服务中的一等内存对象，其管理方式直接影响推理效率和成本。",
+      "通过局部性、生命周期、所有权和底层介质四个维度，可以系统性地分类和比较超过三十种KV缓存管理系统。",
+      "五种架构原型（本地分页、分离式管道、共享存储、内存池和混合分层）覆盖了当前主流设计空间。",
+      "在固定工作负载和硬件条件下，所有权（ownership）是决定系统性能的最关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

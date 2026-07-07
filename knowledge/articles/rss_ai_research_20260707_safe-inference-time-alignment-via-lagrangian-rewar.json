@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-134",
+  "title": "Safe Inference-Time Alignment via Lagrangian Reward Augmentation",
+  "source_url": "https://arxiv.org/abs/2607.02781",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Lagrangian Reward Augmentation (LARA) 的推理时对齐框架，旨在解决现有推理时对齐方法在安全约束方面的不足。传统的推理时对齐技术通过辅助奖励信号在解码过程中引导冻结的语言模型，避免了重复的权重更新，但通常只优化单一标量分数，导致安全约束要么被忽略，要么需要通过手动调整的惩罚项来编码。LARA 框架将安全约束形式化为拉格朗日乘子问题，通过动态调整奖励函数来平衡生成质量与安全性，从而在不牺牲模型性能的前提下实现可证明的安全对齐。该方法具有通用性，可应用于多种解码策略，且无需重新训练模型。该工作值得关注，因为它提供了一种系统化的安全对齐方案，解决了当前大语言模型部署中关键的安全与可控性问题，同时保持了推理效率。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Alignment",
+    "Inference-Time"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:11:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LARA 通过拉格朗日乘子法将安全约束动态整合到奖励函数中，避免了手动调参的繁琐和不确定性。",
+      "该框架在推理时生效，无需更新模型权重，保持了冻结模型的效率和稳定性。",
+      "LARA 提供了一种通用且可证明的安全对齐方法，适用于多种解码策略，显著提升了生成内容的安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

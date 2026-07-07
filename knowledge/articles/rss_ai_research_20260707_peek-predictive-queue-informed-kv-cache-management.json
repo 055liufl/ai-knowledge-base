@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-101",
+  "title": "PEEK: Predictive Queue-Informed KV Cache Management for LLM Serving",
+  "source_url": "https://arxiv.org/abs/2607.02525",
+  "source_platform": "rss_ai_research",
+  "summary": "PEEK 是一种轻量级的调度与驱逐框架，专为在线（流式）和离线（批量）大语言模型（LLM）服务设计，本文重点研究在线场景。PEEK 在待处理队列上维护一个增量基数树，以暴露现有引擎无法揭示的前缀共享集群。通过一种低开销的双向遍历机制，将该树与引擎的前缀缓存进行匹配，为每个等待请求提供最长前缀匹配。PEEK 随后基于这些信息进行集群感知的请求准入与缓存驱逐决策，从而显著提高缓存命中率、降低延迟并提升系统吞吐量。该工作针对 LLM 服务中常见的请求前缀重复和缓存碎片问题，提出了一种系统级优化方案，具有较高的实用价值和创新性。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Scheduling",
+    "Prefix Sharing"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:09:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PEEK 通过增量基数树暴露请求队列中的前缀共享模式，这是现有引擎未实现的。",
+      "低开销的双向遍历算法实现了高效的最长前缀匹配，优化了缓存准入与驱逐。",
+      "该框架适用于在线和离线 LLM 服务，能显著提升缓存效率和系统性能。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

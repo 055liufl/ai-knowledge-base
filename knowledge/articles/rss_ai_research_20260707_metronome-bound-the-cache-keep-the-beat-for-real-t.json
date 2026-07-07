@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260707-124",
+  "title": "Metronome: Bound the Cache, Keep the Beat for Real-Time Interaction Model Serving",
+  "source_url": "https://arxiv.org/abs/2607.02640",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《Metronome: Bound the Cache, Keep the Beat for Real-Time Interaction Model Serving》针对实时交互模型（如Moshi、MiniCPM-o、Qwen-Omni）的推理服务提出了一种新的缓存管理方法。实时交互模型将服务转化为周期性实时任务：每个会话在每一帧中接收流式音频，并必须在固定的截止时间前做出响应，同时其KV缓存单调增长并保持固定。这种机制隐藏了一个危险的故障模式：在真实的全双工堆栈上，持续负载不会导致服务优雅降级，而是性能突然崩溃。论文通过限制缓存大小并保持服务节奏，解决了这一关键问题，确保了实时交互服务的稳定性和可靠性。该工作对于提升实时AI交互系统的服务质量具有重要意义，尤其是在语音助手、实时翻译等场景中，能够避免因缓存增长导致的性能悬崖式下降。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Real-Time"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:11:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "实时交互模型服务存在缓存增长导致的性能悬崖式下降问题，传统优雅降级策略失效。",
+      "Metronome通过限制缓存大小并保持服务节奏，有效避免了性能崩溃。",
+      "该方法适用于全双工实时交互场景，如语音助手和实时翻译，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

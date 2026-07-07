@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-112",
+  "title": "Criterion-Conditional In-Context Learning: Evaluating Criterion-Shift Adaptation in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2607.02575",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的评估框架——Criterion-Conditional In-Context Learning（CC-ICL），用于测试视觉语言模型（VLMs）在上下文学习（ICL）中适应决策标准变化的能力。与标准ICL中任务诱导后决策标准固定不同，现实任务常具有稳定的高层意图，但决策标准会随具体需求变化（例如，在图像分类中，从“识别动物”到“识别危险动物”）。作者通过设计包含标准变化的任务集，评估了多个主流VLM（如CLIP、Flamingo等）的表现。实验表明，现有模型在标准变化场景下性能显著下降，且对支持集顺序和示例选择敏感。该工作揭示了当前VLMs在动态标准适应上的局限性，并提出了改进方向，如引入显式标准编码或元学习策略。这项研究对于推动更灵活、更贴近实际应用的ICL方法具有重要意义，尤其适用于需要动态调整判断准则的领域，如医疗诊断、安全监控等。",
+  "tags": [
+    "Vision-Language Model",
+    "In-Context Learning",
+    "Criterion Shift",
+    "Evaluation Framework"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:10:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准ICL假设任务标准固定，但现实场景中决策标准常随需求变化，现有VLM在此类动态标准适应上表现不佳。",
+      "CC-ICL框架通过引入标准条件，系统评估模型对标准变化的适应能力，揭示了模型对支持集顺序和示例选择的敏感性。",
+      "该工作为开发更鲁棒的ICL方法提供了新基准，并指出了显式标准编码或元学习等潜在改进路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

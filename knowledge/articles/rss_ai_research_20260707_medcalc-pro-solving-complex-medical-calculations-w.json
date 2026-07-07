@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-007",
+  "title": "MedCalc-Pro: Solving Complex Medical Calculations with LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.02879",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 MedCalc-Pro，一个用于评估大语言模型（LLM）在复杂医疗计算场景中能力的基准。现有基准通常基于简化设定，如每个病例对应单一计算器且查询中明确指定所需工具，但真实临床环境往往需要多个计算器联合评估、嵌套尺度计算以及模糊查询（不直接指定目标计算器）。MedCalc-Pro 通过设计包含多步推理、工具组合和模糊查询的任务，系统性地测试 LLM 在医疗计算中的规划、工具使用和推理能力。该基准包含来自真实临床场景的多样化病例，覆盖多种医学专科（如肾脏病学、心脏病学、肿瘤学等），并引入新的评估指标以衡量模型在复杂计算链中的表现。初步实验表明，当前最先进的 LLM（如 GPT-4、Claude 3）在 MedCalc-Pro 上表现不佳，尤其在多工具协作和嵌套计算中错误率较高，揭示了现有模型在临床决策支持中的局限性。这项工作值得关注，因为它填补了医疗 AI 评估中复杂计算场景的空白，推动了 LLM 在真实医疗应用中可靠性的研究，并为未来开发更鲁棒的医疗 AI 系统提供了重要基准。",
+  "tags": [
+    "LLM",
+    "Medical AI",
+    "Benchmark",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:00:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有医疗计算基准过于简化，无法反映真实临床中多工具联合和模糊查询的复杂性。",
+      "MedCalc-Pro 通过多步推理、工具组合和嵌套计算任务，系统评估 LLM 在复杂医疗计算中的能力。",
+      "当前顶级 LLM 在 MedCalc-Pro 上表现不佳，尤其在多工具协作和嵌套计算中错误率高，表明现有模型在临床决策支持中仍有显著局限。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

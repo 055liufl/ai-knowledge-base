@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-098",
+  "title": "GLM-5 Serving Parameter Tuning for OpenClaw: Single-Deployment MaaS Inference Optimization for Long-Context Agent Workloads",
+  "source_url": "https://arxiv.org/abs/2607.02518",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在MaaS（模型即服务）多模型推理框架下，针对OpenClaw工作负载的GLM-5服务参数调优。OpenClaw请求主要由长、工具增强的前缀组成，包括系统提示、对话历史和工具输出，每个请求约有28k-30k输入token和500输出token。在这种长上下文代理工作负载下，服务质量主要由吞吐量、首token生成时间（TTFT）和尾延迟决定，而非短提示吞吐量。研究通过单部署推理优化，探索了如何调整GLM-5的服务参数以提升性能。该工作对于优化大语言模型在长上下文、工具增强场景下的推理效率具有重要实践意义，尤其适用于需要处理复杂代理任务的系统。值得关注的是，它针对特定工作负载（OpenClaw）提供了可操作的调优策略，有助于降低延迟和提高吞吐量，从而改善用户体验。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "MaaS",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:08:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OpenClaw工作负载以长前缀（28k-30k输入token）和短输出（500 token）为特征，服务性能瓶颈在于吞吐量、TTFT和尾延迟。",
+      "GLM-5服务参数调优在MaaS框架下可显著影响长上下文代理工作负载的推理效率。",
+      "单部署推理优化策略针对工具增强的代理场景，提供了不同于传统短提示优化的新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

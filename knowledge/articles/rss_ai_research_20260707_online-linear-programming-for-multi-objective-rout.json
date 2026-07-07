@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-036",
+  "title": "Online Linear Programming for Multi-Objective Routing in LLM Serving",
+  "source_url": "https://arxiv.org/abs/2607.03948",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型服务中的在线路由问题。在LLM服务中，请求按顺序到达，必须在严格的批处理大小和KV缓存约束下分发到并行的解码工作节点。与广泛使用的、未与明确服务级别目标（SLO）挂钩且对延迟-吞吐量权衡控制有限的路由启发式方法不同，作者引入了一个多目标优化框架，将路由问题形式化为在线线性规划。该框架旨在同时优化多个目标（如延迟、吞吐量），并能在动态环境中做出实时路由决策。这项工作值得关注，因为它为LLM服务中的资源分配和性能优化提供了理论驱动的解决方案，有望替代当前基于启发式的方法，从而在保证服务质量的同时提升系统效率。",
+  "tags": [
+    "LLM",
+    "Routing",
+    "Online Optimization",
+    "Multi-Objective"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:03:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将LLM服务中的在线路由问题形式化为多目标优化框架，超越了传统启发式方法。",
+      "通过在线线性规划，在批处理大小和KV缓存约束下同时优化延迟和吞吐量。",
+      "提供了与SLO挂钩的显式控制，增强了服务质量和资源利用的可预测性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

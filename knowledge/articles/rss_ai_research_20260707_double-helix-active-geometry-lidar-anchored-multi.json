@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260707-105",
+  "title": "Double-Helix Active Geometry: LiDAR-Anchored Multi-View Depth with Selective Abstention",
+  "source_url": "https://arxiv.org/abs/2607.02561",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 DH-Active 的新型几何后端方法，旨在利用消费级深度传感器（如 iPhone 上的 LiDAR 扫描仪）提供的度量范围，同时克服其有效距离短和返回稀疏的局限。该方法将传感器视为度量标尺而非唯一深度来源，通过近场返回的深度数据，利用 PnP（透视 n 点）算法锚定两个视图之间的度量相对位姿；对于没有有效深度返回但视觉上可追踪的样本，则通过三角测量获得深度。DH-Active 是一种轻量级、无需训练的几何后端，能够有效融合 LiDAR 深度与多视图立体视觉，提升深度估计的精度和鲁棒性。该工作对于增强现实、机器人导航和 3D 重建等依赖精确深度信息的应用具有重要意义，因为它提供了一种低成本、高效的方式来弥补消费级深度传感器的不足，且无需额外的训练数据或复杂的模型。",
+  "tags": [
+    "LiDAR",
+    "Depth Estimation",
+    "Multi-View Geometry",
+    "PnP",
+    "3D Reconstruction"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:09:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需训练的轻量级几何后端，将 LiDAR 传感器作为度量标尺，通过近场深度锚定多视图位姿，有效扩展了深度估计的可用范围。",
+      "通过结合 PnP 和三角测量，解决了消费级 LiDAR 深度稀疏和短距离的问题，实现了更鲁棒的深度融合。",
+      "该方法在无需额外训练数据或复杂模型的情况下，提升了深度估计的精度，对增强现实和机器人等实时应用具有实际价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

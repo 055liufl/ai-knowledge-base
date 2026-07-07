@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-073",
+  "title": "STAPO: Selective Trajectory-Aware Policy Optimization for LLM Agent Training",
+  "source_url": "https://arxiv.org/abs/2607.04963",
+  "source_platform": "rss_ai_research",
+  "summary": "STAPO（选择性轨迹感知策略优化）是一种针对大型语言模型（LLM）智能体训练的新型强化学习方法。在长周期任务中，稀疏和延迟的奖励常导致“轨迹忽视”问题，即智能体在中间步骤失去对任务目标和交互历史的关注。现有方法使用基于香农熵的不确定性信号进行步骤级监督，但这种方法混淆了状态固有复杂性与智能体置信度。STAPO通过选择性轨迹感知机制，在策略优化中动态识别并强调关键中间步骤，从而缓解轨迹忽视。该方法利用智能体对轨迹的置信度来区分重要状态，并调整策略梯度更新权重，使训练更聚焦于高价值决策点。实验表明，STAPO在多个复杂推理和交互任务上显著优于基线方法，提升了智能体的长期规划能力和任务完成率。这项研究值得关注，因为它直接解决了LLM智能体在长周期任务中训练效率低下的核心瓶颈，为更可靠的自主智能体开发提供了新思路，尤其在需要多步推理和持续交互的场景（如代码生成、对话系统）中具有重要应用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:06:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "STAPO通过选择性轨迹感知机制，有效缓解了LLM智能体在长周期任务中的轨迹忽视问题，提升了训练效率。",
+      "该方法创新性地利用智能体对轨迹的置信度而非香农熵来区分关键中间步骤，避免了状态复杂性与置信度的混淆。",
+      "实验证明STAPO在复杂推理和交互任务上优于现有方法，对提升LLM智能体的长期规划能力具有显著效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

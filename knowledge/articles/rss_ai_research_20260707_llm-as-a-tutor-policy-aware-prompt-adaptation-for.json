@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-054",
+  "title": "LLM-as-a-Tutor: Policy-Aware Prompt Adaptation for Non-Verifiable RL",
+  "source_url": "https://arxiv.org/abs/2607.04412",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“LLM-as-a-Tutor”的新方法，用于解决非可验证指令跟随任务中的强化学习（RL）问题。传统方法中，LLM作为评判者使用基于提示的评分标准（rubrics）提供奖励信号，但这些提示在训练过程中保持静态，导致提示难度与策略能力之间的错配。本文的核心创新在于引入策略感知的提示自适应机制，即根据当前策略的进展动态调整训练提示的难度和内容，从而保持评判者的有效性。该方法通过一个元学习框架实现，其中提示生成器根据策略的当前表现生成或修改提示，使得RL训练更加高效和稳定。实验结果表明，该方法在多个非可验证指令跟随基准上显著优于静态提示方法，尤其是在复杂任务中。这项工作值得关注，因为它解决了RL中一个关键的实际问题——如何为不断变化的策略提供合适的奖励信号，从而推动LLM在更广泛的应用场景中实现更可靠的指令跟随。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Prompt Adaptation",
+    "Instruction Following"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:04:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态提示在RL训练中会导致提示难度与策略能力之间的错配，降低评判者的有效性。",
+      "策略感知的提示自适应机制通过动态调整提示内容，显著提升了非可验证指令跟随任务的训练效果。",
+      "该方法采用元学习框架，使提示生成器能够根据策略的实时表现进行优化，从而保持奖励信号的准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

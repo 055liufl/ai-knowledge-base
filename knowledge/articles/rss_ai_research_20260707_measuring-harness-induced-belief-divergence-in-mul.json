@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-060",
+  "title": "Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.04528",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的诊断方法——信念展开（belief-rollout），用于量化在多步骤LLM代理中，由软件框架（harness）引起的信念分歧。传统基准测试仅关注代理是否完成任务，但忽略了框架对代理信念的影响。框架控制着代理的观察、动作、失败修复、状态验证和日志记录，这些因素即使任务、环境和基础LLM固定，也会改变代理的多步信念。通过信念展开诊断，可以结构化地评估框架如何扭曲代理的信念，从而揭示基准测试中隐藏的偏差。这项工作对于理解LLM代理的鲁棒性和可靠性具有重要意义，尤其是在复杂任务中，框架设计可能无意中引入系统性错误。论文提供了理论分析和实验验证，展示了信念分歧在不同框架配置下的表现，为未来代理系统的设计提供了指导。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Belief"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:05:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "软件框架（harness）在控制代理的观察、动作和修复时，会显著改变代理的多步信念，即使任务和环境不变。",
+      "信念展开（belief-rollout）诊断方法能够系统性地量化框架引起的信念分歧，揭示基准测试中的隐藏偏差。",
+      "该研究强调了代理评估中框架设计的重要性，为构建更鲁棒和可靠的LLM代理系统提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-035",
+  "title": "Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions",
+  "source_url": "https://arxiv.org/abs/2607.03935",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Harness-Aware Self-Evolving (HASE) 的智能体强化学习框架，突破了传统自进化方法中仅优化任务解决方案而固定周围“harness”（即任务执行环境或辅助组件）的局限。HASE 允许单一模型在多轮动作空间中同时生成任务解决方案或编辑选定的 harness 组件，实现模型权重、harness 和任务解决方案的协同进化。实验表明，仅使用 Qwen3-8B 模型，HASE 即可在文本分类任务上达到与使用 Claude Code 作为 harness 的 GPT-OSS-120B 模型相当的性能，显著降低了计算成本。该工作值得关注，因为它提出了一种更灵活、高效的模型自进化范式，通过将 harness 纳入进化过程，有望在资源受限场景下实现高性能，对强化学习、智能体系统和模型优化领域具有重要启示。",
+  "tags": [
+    "Reinforcement Learning",
+    "Agent",
+    "Self-Evolving",
+    "Model Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:03:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HASE 通过将 harness 作为可进化组件，打破了传统自进化框架中固定环境的限制，实现了模型、环境和任务的协同优化。",
+      "仅用 8B 参数的模型即可匹配 120B 参数模型在文本分类上的性能，展示了 HASE 在资源效率上的巨大潜力。",
+      "该框架为智能体系统提供了一种新的学习范式，即模型不仅能生成解决方案，还能主动调整其运行环境，增强了适应性和自主性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

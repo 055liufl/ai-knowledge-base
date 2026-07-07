@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-085",
+  "title": "Reason, Reward, Refine: Step-Level Errors Corrections with Structured Feedback for Physics Reasoning in Small Language Models",
+  "source_url": "https://arxiv.org/abs/2607.05199",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对小型语言模型在物理推理任务中的结构化错误修正框架。核心问题在于，小型语言模型在物理推理中容易在任意步骤出现错误，且错误会逐级传播，导致后续推理全部失效。作者识别出三个主要失败原因：领域知识有限、多步推导下的幻觉现象以及分布敏感性。为此，他们设计了一个步骤级别的奖励框架，能够定位第一个推理错误，生成针对性的结构化反馈，并通过策略梯度训练模型修正其解决方案。该方法通过“推理-奖励-修正”的循环，显著提升了小型模型在物理推理任务上的准确性和鲁棒性。这项工作对于提升小型语言模型在复杂推理任务中的可靠性具有重要意义，尤其是在资源受限或需要高精度推理的场景中。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "RLHF",
+    "Physics"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:07:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小型语言模型在物理推理中错误会逐级传播，导致整体推理失败，需要步骤级别的错误定位与修正。",
+      "提出的步骤级奖励框架通过识别首个错误并生成结构化反馈，结合策略梯度训练，有效提升了模型修正能力。",
+      "该方法针对领域知识有限、多步推导幻觉和分布敏感性等核心问题，提供了系统性的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-137",
+  "title": "Training Hybrid Block Diffusion Language Models with Partial Bidirectionality",
+  "source_url": "https://arxiv.org/abs/2607.02805",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种混合块扩散语言模型（Hybrid Block Diffusion Language Models），旨在解决大语言模型在高吞吐量长上下文生成中的内存带宽瓶颈问题。传统自回归解码每步需从内存中流式传输累积的键值（KV）缓存，导致带宽需求随上下文长度线性增长，而每次仅生成一个token。为此，研究者结合了两种并行策略：一是通过高效注意力变体减少内存访问，二是采用扩散模型实现并行生成。该模型通过部分双向性设计，在块级别上混合自回归和扩散过程，从而在保持生成质量的同时显著提升长上下文生成的吞吐量。实验表明，该方法在长文本生成任务中实现了更快的解码速度和更低的延迟，为高效长上下文LLM推理提供了新思路。",
+  "tags": [
+    "LLM",
+    "Diffusion Model",
+    "Long Context",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:12:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合块扩散模型通过部分双向性设计，在块级别结合自回归和扩散生成，有效缓解了长上下文生成中的内存带宽瓶颈。",
+      "该方法实现了高吞吐量并行生成，显著降低了长文本解码的延迟，同时保持了生成质量。",
+      "研究为高效长上下文LLM推理提供了新的模型架构方向，具有重要的实用价值和理论意义。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

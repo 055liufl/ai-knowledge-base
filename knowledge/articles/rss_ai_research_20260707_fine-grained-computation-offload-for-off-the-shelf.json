@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-120",
+  "title": "Fine-Grained Computation Offload for Off-the-Shelf Servers in Tens of Lines",
+  "source_url": "https://arxiv.org/abs/2607.02630",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对现成服务器中硬件加速器（如GPU、FPGA、远程服务）的细粒度计算卸载方法。传统上，当服务器执行微秒到毫秒级别的细粒度卸载时，上下文切换的开销与卸载本身相当，而忙等待则会浪费核心资源。论文的核心创新在于通过将卸载与其他请求重叠执行来避免核心空闲，从而在不增加额外硬件成本的情况下提升系统吞吐量。该方法仅需数十行代码即可实现，具有极高的实用性和可部署性。该研究对于优化在线服务中的硬件加速器使用、减少延迟和提升资源利用率具有重要意义，尤其适用于需要频繁调用远程服务（如硬件安全模块、后量子KEM、推理服务器）的场景。",
+  "tags": [
+    "Computation Offload",
+    "Hardware Accelerator",
+    "Online Serving",
+    "System Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:10:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "细粒度卸载（微秒到毫秒级）中，传统上下文切换和忙等待均不高效，重叠执行是更优方案。",
+      "该方法仅需数十行代码即可在现成服务器上实现，降低了部署门槛。",
+      "适用于GPU、FPGA及远程服务（如安全模块、后量子KEM、推理服务器）等场景，可显著提升在线服务吞吐量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

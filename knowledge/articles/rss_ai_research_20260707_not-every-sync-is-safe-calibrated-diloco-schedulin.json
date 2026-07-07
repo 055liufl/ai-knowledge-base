@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260707-103",
+  "title": "Not Every Sync Is Safe: Calibrated DiLoCo Scheduling for Shared AI Infrastructure",
+  "source_url": "https://arxiv.org/abs/2607.02544",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对共享AI基础设施的校准型DiLoCo调度方法。DiLoCo风格训练通过让学习器岛在本地训练后偶尔进行外部同步来减少通信，这对于训练与延迟敏感服务共享硬件的碎片化工业AI集群具有吸引力。此类集群的关键问题是何时进行外部合并才值得其系统成本，以及选择推迟哪些窗口是否重要。现有调度研究评估了工作负载感知策略，但本文进一步探讨了在共享基础设施中，如何通过校准调度来优化同步时机，以平衡训练效率与系统开销。该方法通过动态调整同步窗口，避免不必要的通信，从而提升整体资源利用率。研究结果对分布式训练在异构环境中的部署具有重要指导意义，尤其适用于需要兼顾训练与在线服务的场景。",
+  "tags": [
+    "分布式训练",
+    "调度优化",
+    "共享基础设施",
+    "DiLoCo"
+  ],
+  "author": null,
+  "published_at": "2026-07-07T10:56:56Z",
+  "collected_at": "2026-07-07T11:09:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DiLoCo训练在共享AI基础设施中面临同步成本与系统开销的权衡，校准调度可优化同步时机。",
+      "选择推迟哪些同步窗口对训练效率和资源利用率有显著影响，现有研究未充分探索。",
+      "该方法通过动态调整同步策略，在保持模型收敛质量的同时减少通信开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
