@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260708-001",
+  "title": "GitLost: We Tricked GitHub&#x27;s AI Agent into Leaking Private Repos",
+  "source_url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/",
+  "source_platform": "rss_general_tech",
+  "summary": "GitLost 是一篇安全研究报告，揭示了 GitHub 的 AI 代理（GitHub Copilot 或类似功能）存在严重的安全漏洞，能够被诱导泄露私有仓库中的敏感信息。研究人员通过精心设计的提示注入攻击，成功让 AI 代理访问并输出本应受保护的私有仓库内容。该漏洞利用了 AI 代理在处理用户请求时对上下文权限的误解，以及缺乏严格的访问控制机制。这一发现对使用 AI 辅助编程工具的开发者、企业安全团队以及平台提供商具有重大警示意义，表明当前 AI 系统在数据隔离和权限管理方面仍存在根本性缺陷。GitHub 已确认该问题并正在修复，但此案例凸显了 AI 安全领域的新挑战：如何确保 AI 代理在执行任务时不会无意中泄露敏感数据。该研究不仅影响了 GitHub 用户，也为所有集成 AI 代理的代码托管平台敲响了警钟。",
+  "tags": [
+    "AI Security",
+    "Prompt Injection",
+    "GitHub",
+    "Data Leakage"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:49Z",
+  "collected_at": "2026-07-08T10:20:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GitHub 的 AI 代理存在提示注入漏洞，可被用于泄露私有仓库内容，说明当前 AI 系统对权限边界的理解不足。",
+      "该漏洞利用的是 AI 代理对上下文权限的混淆，而非传统代码漏洞，表明 AI 安全需要新的防护策略。",
+      "此事件对依赖 AI 辅助编程的开发者构成直接威胁，私有代码可能通过 AI 代理被意外暴露。",
+      "平台提供商需重新设计 AI 代理的访问控制机制，确保其严格遵循用户权限设置，避免数据泄露。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

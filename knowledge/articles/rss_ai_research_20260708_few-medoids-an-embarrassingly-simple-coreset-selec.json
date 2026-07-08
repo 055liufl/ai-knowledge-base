@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260708-129",
+  "title": "Few-Medoids: An Embarrassingly Simple Coreset Selection Method for Few-Shot Knowledge Distillation",
+  "source_url": "https://arxiv.org/abs/2607.05891",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Few-Medoids的极简核心集选择方法，专门用于少样本知识蒸馏场景。核心集选择旨在从大规模数据集中挑选出一个小而高度代表性的子集，以高效训练模型。在少样本知识蒸馏设置中，全规模预训练教师网络指导学生网络，但传统的样本选择策略往往难以超越随机选择基线。Few-Medoids方法通过一种极其简单的方式——基于样本在特征空间中的代表性（如使用k-medoids聚类思想）来选取核心集，显著提升了少样本知识蒸馏的性能。该方法无需复杂计算或额外训练，仅需少量样本即可实现与全数据集训练相当的效果。实验表明，Few-Medoids在多个基准数据集上优于现有核心集选择方法，包括随机选择、基于梯度的选择和基于不确定性的选择等。该工作的重要性在于：它揭示了在少样本知识蒸馏中，简单的基于距离的样本选择策略可能比复杂方法更有效，为高效模型训练提供了新思路。此外，该方法易于实现和集成，对资源受限场景（如边缘设备上的模型压缩）具有实际应用价值。",
+  "tags": [
+    "Coreset Selection",
+    "Knowledge Distillation",
+    "Few-Shot Learning",
+    "Sample Selection"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:33:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Few-Medoids通过简单的k-medoids聚类思想选择代表性样本，在少样本知识蒸馏中显著超越随机基线和其他复杂方法。",
+      "该方法无需额外训练或复杂计算，仅基于特征空间距离即可实现高效核心集选择。",
+      "实验证明，在多个基准数据集上，Few-Medoids能以极少量样本达到接近全数据集训练的性能。",
+      "该工作挑战了复杂核心集选择方法的必要性，为资源受限场景下的模型训练提供了实用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

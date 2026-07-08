@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-047",
+  "title": "DepthWeave-KV: Token-Adaptive Cross-Layer Residual Factorization for Long-Context KV Cache Compression",
+  "source_url": "https://arxiv.org/abs/2607.06523",
+  "source_platform": "rss_ai_research",
+  "summary": "DepthWeave-KV 是一种针对长上下文语言模型推理中键值缓存（KV cache）内存瓶颈的新型压缩方法。现有压缩方法通常对层或令牌采用统一预算，导致在词汇线索和语义状态需要不同保留程度时检索性能下降。DepthWeave-KV 通过跨相邻 Transformer 层对键和值状态进行残差分解，实现了令牌自适应的缓存压缩。该方法能够根据每个令牌的具体需求动态调整压缩策略，在保持高检索精度的同时显著减少内存占用。该工作解决了长上下文推理中内存带宽和容量限制的关键问题，对于部署大规模语言模型具有重要实用价值。通过自适应分解，DepthWeave-KV 在多个长上下文基准测试中展示了优于统一压缩方法的性能，为高效推理提供了新的技术路径。",
+  "tags": [
+    "KV Cache",
+    "Compression",
+    "Long Context",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:26:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出令牌自适应的跨层残差分解方法，根据每个令牌的词汇和语义需求动态调整压缩预算，优于统一压缩策略。",
+      "通过跨相邻Transformer层的残差分解，有效保留了关键信息，在长上下文检索任务中保持高精度。",
+      "显著降低长上下文推理中的内存带宽和容量需求，有助于部署更大规模的语言模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

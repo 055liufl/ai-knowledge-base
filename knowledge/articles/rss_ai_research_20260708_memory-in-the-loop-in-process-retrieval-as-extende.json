@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-007",
+  "title": "Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents",
+  "source_url": "https://arxiv.org/abs/2607.05690",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Memory in the Loop”的新范式，将检索增强生成（RAG）中的记忆存储从循环外部移至语言代理的推理循环内部，实现每步读取和写入。传统方法中，记忆存储仅在每轮查询一次，导致信息更新滞后；而将记忆内置于循环中虽能提升实时性，但面临严重的延迟问题——网络化存储的响应时间在数十到数百毫秒，若检索成本高，端到端延迟可能增加83倍。该研究通过优化检索机制（如缓存、预取或轻量级索引）来缓解延迟瓶颈，使代理在观察、推理和行动过程中持续访问和更新记忆。这项工作值得关注，因为它解决了语言代理在动态环境中需要实时记忆更新的核心痛点，有望提升代理在对话、任务规划等场景中的适应性和准确性。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:23:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将记忆从循环外移至循环内，实现每步读写，显著提升代理的实时信息处理能力",
+      "延迟是主要挑战，网络化存储可能导致端到端延迟增加83倍，需优化检索机制",
+      "该范式适用于需要持续记忆更新的动态任务，如多轮对话和复杂规划"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

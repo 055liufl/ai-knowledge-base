@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-084",
+  "title": "Full-range Binary Classifier Calibration for Stable Model Updates in Production",
+  "source_url": "https://arxiv.org/abs/2607.05481",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对二分类器在全输出范围内的校准方法，旨在解决生产环境中模型更新导致的预测分数变化问题。在对抗性环境中（如安全检测），恶意分布快速漂移而良性分布相对稳定，团队需要频繁重训练和部署模型以应对新威胁。然而，重训练会改变输出预测分数，破坏下游用户的依赖。为此，作者提出一种校准技术，确保模型在所有输出值上保持一致的假阳性率（FPR），从而在模型更新时维持稳定性和可靠性。该方法通过调整预测分数分布，使得不同版本模型在相同阈值下具有相似的FPR，减少对下游系统的影响。实验表明，该方法能有效提升模型在动态环境中的鲁棒性，尤其适用于安全检测、欺诈识别等需要稳定FPR的场景。该研究为生产环境中模型持续部署提供了实用解决方案，具有重要的工程价值。",
+  "tags": [
+    "Model Calibration",
+    "Binary Classification",
+    "Adversarial Environment",
+    "Production ML"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:29:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出全范围校准方法，确保模型更新后所有输出值上的假阳性率保持一致，解决下游系统因分数变化而失效的问题。",
+      "针对对抗性环境中恶意分布快速漂移的特点，该方法在保持良性分布稳定性的同时，提升模型对新威胁的适应能力。",
+      "实验验证了校准后的模型在频繁重训练场景下具有更高的鲁棒性和可靠性，适用于安全检测等关键应用。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

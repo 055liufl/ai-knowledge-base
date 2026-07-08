@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260708-071",
+  "title": "The Granularity Paradox: How Temporal Disaggregation Inflates In-Sample Fit and Compounds Out-of-Sample Error",
+  "source_url": "https://arxiv.org/abs/2607.05450",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了时间序列预测中的“粒度悖论”，即更细的时间粒度（如从月度到周度或日度）虽然能提升样本内诊断效果并增加数据集大小（N），但由于递归误差在更长预测周期（H）上的累积，反而会降低样本外预测的准确性。相反，粗粒度聚合（如年度）虽然消除了递归误差传播，但减少了可用于估计的数据量。论文形式化了这一权衡，并分析了其对预测模型选择的影响。该研究对于金融、经济、气象等领域的时间序列预测具有重要指导意义，提醒实践者在数据粒度与预测精度之间寻求平衡。",
+  "tags": [
+    "Time-Series Forecasting",
+    "Granularity Paradox",
+    "Error Compounding"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:28:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "更细的时间粒度会提升样本内拟合，但可能因递归误差累积而降低样本外预测精度。",
+      "粗粒度聚合虽减少误差传播，但会损失数据量，影响模型估计效果。",
+      "预测模型选择需在数据粒度与预测误差之间进行权衡，存在最优粒度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

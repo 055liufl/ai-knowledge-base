@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-050",
+  "title": "Lingering Authority: Revocable Resource-and-Effect Capabilities for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2606.22504",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对编码代理（coding agents）的安全机制，旨在解决“持续权限”（lingering authority）问题。在现有系统中，编码代理在执行任务时通常会获得广泛的工具访问权限，即使某个资源仅用于一个子目标，其权限也会在整个任务期间持续存在。这种临时资源或效果能力在相关任务结束后仍然暴露，增加了安全风险。作者提出了PORTICO，一个用于可撤销能力的参考监视器。PORTICO将显式任务契约编译为初始能力、授权规则和可信关闭谓词，从而实现对代理权限的细粒度、动态管理。该研究对于提升AI代理系统的安全性、最小化权限泄露具有重要意义，特别是在需要执行复杂、多步骤任务的编码场景中。通过引入可撤销的能力机制，PORTICO能够确保代理仅在必要时拥有所需权限，并在任务完成后及时回收，从而有效降低潜在的安全威胁。",
+  "tags": [
+    "AI安全",
+    "编码代理",
+    "权限管理",
+    "可撤销能力"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:26:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了“持续权限”概念，揭示了编码代理中临时权限长期暴露的安全漏洞。",
+      "设计了PORTICO参考监视器，通过任务契约和可撤销能力实现细粒度权限控制。",
+      "该机制能够有效降低代理系统的安全风险，提升任务执行的安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-045",
+  "title": "FreqDepthKV: Frequency-Guided Depth Sharing for Robust KV Cache Compression in Long-Context LLM Inference",
+  "source_url": "https://arxiv.org/abs/2607.06519",
+  "source_platform": "rss_ai_research",
+  "summary": "FreqDepthKV 是一种面向长上下文大语言模型（LLM）推理的 KV 缓存压缩方法。该方法通过将相邻层的 KV 状态分解为共享的低频深度分量和稀疏的高频残差，在保持推理质量的同时显著降低缓存内存和带宽开销。其核心创新在于利用频率域分解来识别并保留层间共享的、对检索和多步推理至关重要的证据，同时丢弃冗余信息。论文提出了一种轻量级在线探针机制，用于动态分配注意力头，以平衡压缩率与模型性能。该方法在多种长上下文基准测试中展示了优于现有压缩技术的性能，尤其在高压缩比下仍能保持检索和推理能力。FreqDepthKV 的价值在于它解决了长上下文 LLM 推理中内存瓶颈与模型能力保持之间的矛盾，为实际部署提供了更高效的缓存管理方案。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Model Compression",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:26:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FreqDepthKV 通过频率域分解将相邻层 KV 状态分离为共享低频分量和稀疏高频残差，有效保留层间关键证据。",
+      "轻量级在线探针机制动态分配注意力头，在压缩率和模型性能之间取得平衡。",
+      "该方法在高压缩比下仍能维持长上下文检索和多步推理能力，优于现有压缩技术。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

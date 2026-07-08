@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260708-112",
+  "title": "Unicode TAG-Block Concealment of Tool-Metadata Payloads in the Model Context Protocol: An Approval-View Fidelity Gap Across Three Independent Server Implementations",
+  "source_url": "https://arxiv.org/abs/2607.05744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了模型上下文协议（MCP）中一个关键的安全漏洞：工具元数据在审批视图与模型上下文之间存在保真度差距。MCP是编码代理发现和调用外部工具的主要方式，服务器通过tools/list握手返回工具名称、自然语言描述和JSON输入模式。客户端在一次性审批对话框中渲染这些元数据，然后在后续每次交互中将其逐字注入模型上下文。协议并未要求渲染的审批视图与注入模型上下文的元数据保持一致。作者发现，通过在工具描述中嵌入Unicode TAG块（U+E0000-U+E007F），可以在审批对话框中隐藏有效载荷，因为这些字符在大多数UI渲染中被忽略，但会被LLM令牌化器保留。研究在三个独立的MCP服务器实现（Claude Code、Continue.dev、Cline）上验证了这种攻击，展示了攻击者如何隐藏恶意指令或数据，导致用户批准的与实际执行的内容不一致。该漏洞影响所有依赖MCP的编码代理，具有高实用性和严重性，值得开发者、安全研究人员和平台维护者高度关注。",
+  "tags": [
+    "MCP",
+    "Security",
+    "LLM",
+    "Agent",
+    "Unicode"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:31:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCP协议存在审批视图与模型上下文之间的保真度差距，允许攻击者通过Unicode TAG块隐藏工具元数据中的恶意有效载荷",
+      "Unicode TAG块字符在UI渲染中被忽略，但LLM令牌化器会保留，造成视觉欺骗与模型实际读取内容不一致",
+      "该漏洞在Claude Code、Continue.dev、Cline三个独立MCP服务器实现上均被验证有效，表明问题具有普遍性"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

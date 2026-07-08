@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-137",
+  "title": "Decoupled Single-Mask Annotation Noise Detection via Cross-Sectional Patch Self-Consistency",
+  "source_url": "https://arxiv.org/abs/2607.05965",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种解耦的单掩膜标注噪声检测框架，专门针对血管CT数据集中常见的单次标注噪声问题。传统方法要么依赖昂贵的多评分者融合，要么与网络训练耦合，无法明确审计标签错误的位置和原因。该框架通过利用横截面补丁自一致性，在不依赖多评分者或网络训练的情况下，独立检测标注中的噪声区域。该方法的核心创新在于解耦设计，使得噪声检测与模型训练分离，从而提供可解释的标签错误审计能力。实验表明，该方法在合成噪声和真实噪声数据集上均能有效识别标注错误，显著优于现有耦合方法。这项工作对于医学图像分析中的标注质量控制具有重要意义，尤其适用于大规模数据集中的自动标注审核，有望降低人工复核成本并提升下游任务的可靠性。",
+  "tags": [
+    "Medical Imaging",
+    "Annotation Noise",
+    "Self-Consistency",
+    "CT"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:33:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出解耦框架，独立于网络训练检测单掩膜标注噪声，实现可审计的标签错误定位。",
+      "利用横截面补丁自一致性作为噪声检测依据，无需多评分者融合，降低标注成本。",
+      "在血管CT数据集上验证，有效识别合成和真实噪声，优于现有耦合方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

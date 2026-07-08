@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-051",
+  "title": "KVpop -- Key-Value Cache Compression with Predictive Online Pruning",
+  "source_url": "https://arxiv.org/abs/2607.05061",
+  "source_platform": "rss_ai_research",
+  "summary": "KVpop 是一种用于自回归解码中键值（KV）缓存压缩的新方法。在大型语言模型推理过程中，KV 缓存的大小会随着上下文长度线性增长，成为内存和带宽的主要瓶颈。现有的 KV 驱逐方法通常依赖静态启发式或代理分数，难以准确预测未来 token 的效用，导致驱逐策略脆弱。KVpop 通过直接监督保留或丢弃决策，学习一个固定预算的 KV 驱逐策略。该方法利用预测性在线剪枝，动态评估每个 KV 条目的重要性，从而在保持模型生成质量的同时显著减少缓存占用。这项研究对于提升大模型推理效率、降低部署成本具有重要价值，尤其适用于长上下文场景。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Memory Optimization",
+    "Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:26:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KVpop 通过监督学习直接优化 KV 缓存的保留/丢弃决策，避免了传统启发式方法的局限性。",
+      "该方法采用预测性在线剪枝，能够动态适应 token 相关性的变化，提高驱逐策略的鲁棒性。",
+      "固定预算的压缩策略在保证模型质量的同时，显著降低了推理时的内存和带宽需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

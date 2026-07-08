@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260708-135",
+  "title": "NegROI: Click-Centric Uncertainty-Guided Refinement with Scene-Conditioned Negative Prompts for Robust Interactive 3D Segmentation",
+  "source_url": "https://arxiv.org/abs/2607.05955",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为NegROI的交互式3D分割方法，旨在通过点击中心的不确定性引导细化与场景条件负提示，解决现有方法在点云分割中面临的粗体素分辨率导致边界模糊、以及背景结构混淆引起的硬假阳性问题。该方法首先利用用户点击生成感兴趣区域（ROI），并通过不确定性估计识别边界模糊区域，然后引入场景条件负提示（Scene-Conditioned Negative Prompts）来抑制背景干扰，从而在有限点击下实现更精确的3D分割。实验表明，NegROI在多个数据集（如密集RGB-D重建和稀疏LiDAR扫描）上均表现出鲁棒性，显著提升了分割精度和泛化能力。该工作对于3D视觉、交互式分割和点云处理领域具有重要价值，尤其适用于需要高效人机交互的机器人、自动驾驶和AR/VR应用场景。",
+  "tags": [
+    "3D Segmentation",
+    "Interactive Segmentation",
+    "Point Cloud",
+    "Uncertainty-Guided Refinement",
+    "Negative Prompts"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:33:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出点击中心的不确定性引导细化策略，有效解决粗体素分辨率导致的边界模糊问题。",
+      "引入场景条件负提示，通过抑制背景结构干扰，显著减少硬假阳性错误。",
+      "方法在跨数据集（密集RGB-D vs. 稀疏LiDAR）上展现强泛化能力，适应密度和尺度变化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

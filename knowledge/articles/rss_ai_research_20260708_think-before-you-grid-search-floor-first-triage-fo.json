@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260708-126",
+  "title": "Think Before You Grid-Search: Floor-First Triage for LLM Serving",
+  "source_url": "https://arxiv.org/abs/2607.05876",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Floor-First”的LLM服务优化方法，挑战了传统的网格搜索和重分析器范式。作者认为，在LLM服务优化中，通常的做法是基准测试多种配置，并在延迟目标未达到时使用重型分析器。他们主张相反的原则：估计是分析的分析层——没有它，优化就退化为网格搜索。Floor-First是一种残差驱动的分类工作流，将每个解码步骤建模为五维资源向量（HBM字节、FLOPs、网络字节、网络消息、KV容量）。该方法通过先进行轻量级估计来快速识别瓶颈，从而避免昂贵的网格搜索。这项研究值得关注，因为它提供了一种更高效的LLM服务优化策略，可能显著降低部署成本并提高系统性能，尤其适用于大规模推理场景。",
+  "tags": [
+    "LLM",
+    "Serving",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:32:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出Floor-First方法，将LLM解码步骤建模为五维资源向量，实现残差驱动的瓶颈分类。",
+      "挑战传统网格搜索优化范式，主张先进行轻量级估计再决定是否使用分析器。",
+      "该方法有望减少LLM服务优化中的计算开销，提升部署效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

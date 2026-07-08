@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-110",
+  "title": "SCOReD: Student-Aware CoT Optimization for Recommendation Distillation",
+  "source_url": "https://arxiv.org/abs/2607.05734",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SCOReD（Student-Aware CoT Optimization for Recommendation Distillation）的方法，旨在优化推荐系统中的链式思维（Chain-of-Thought, CoT）蒸馏过程。在推荐领域，CoT蒸馏是强化学习训练的必要前提，但原始的教师模型推理轨迹并不适合直接用于蒸馏。大型教师模型在推荐任务中表现出异常高的推理不确定性，会反复检查答案而不进行修正；基于此类轨迹进行监督微调会导致学生模型变得冗长且从不修正初始猜测。SCOReD通过学生感知的CoT优化策略，解决了教师轨迹中的冗余和不确定性，从而生成更高效、更准确的学生模型。该方法值得关注，因为它直接针对推荐系统中知识蒸馏的关键瓶颈，有望提升推荐系统的推理效率和准确性，对工业级推荐系统的部署具有实际意义。",
+  "tags": [
+    "Recommendation",
+    "Knowledge Distillation",
+    "Chain-of-Thought",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:31:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "教师模型在推荐任务中表现出高推理不确定性，导致CoT轨迹冗长且无效，不适合直接用于蒸馏。",
+      "SCOReD通过学生感知的优化策略，减少教师轨迹中的冗余，提升学生模型的推理效率。",
+      "该方法解决了监督微调中学生模型从不修正初始猜测的问题，增强了推荐系统的自适应能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

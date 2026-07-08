@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-073",
+  "title": "Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.05458",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过离线强化学习来优化LLM Agent执行框架（Harness）的方法。传统上，LLM Agent的改进集中在修改提示、模型或手工编写的工作流上，而执行框架被视为固定的基础设施。作者认为，执行框架本身是一个可学习的控制层，并形式化地将其建模为有限时域的Harness MDP（马尔可夫决策过程）。在该框架中，一个轻量级的控制器负责选择结构化的执行动作，而LLM执行器保持冻结状态。控制器通过离线强化学习进行训练，从而在不改变底层模型的情况下优化Agent的整体性能。这一方法值得关注，因为它提供了一种新的视角，将Agent的改进从模型层面扩展到执行框架层面，降低了优化成本，并可能显著提升Agent的灵活性和效率。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "MDP"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:28:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将LLM Agent的执行框架视为可学习的控制层，而非固定基础设施，为Agent优化提供了新维度。",
+      "通过离线强化学习训练轻量级控制器，可以在不修改LLM模型的情况下优化Agent行为，降低计算成本。",
+      "形式化Harness MDP为结构化执行动作的选择提供了理论基础，有助于实现更高效的Agent控制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

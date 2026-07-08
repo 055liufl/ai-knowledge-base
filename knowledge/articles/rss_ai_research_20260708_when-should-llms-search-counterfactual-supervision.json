@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-113",
+  "title": "When Should LLMs Search? Counterfactual Supervision for Search Routing",
+  "source_url": "https://arxiv.org/abs/2607.05752",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的搜索路由方法，用于决定语言模型何时需要调用外部搜索来提升任务成功率。作者将问题形式化为实例级别的搜索路由决策，即判断对于特定问题，搜索是否能比直接回答带来更好的结果。他们引入了反事实监督（Counterfactual Supervision）的概念，通过比较模型在有搜索和无搜索情况下的表现差异来训练路由策略。这种方法避免了传统搜索增强模型中的过度搜索或错误依赖问题，使模型能在合适的时候选择搜索、纠正、澄清或放弃回答。实验表明，该方法在多个问答基准上显著提升了任务成功率，同时减少了不必要的搜索调用。这项研究对于提升检索增强生成（RAG）系统的效率和准确性具有重要价值，尤其适用于需要平衡知识依赖和外部证据的场景。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Search Routing",
+    "Counterfactual Supervision"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:31:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反事实监督通过比较有/无搜索的模型表现来学习何时需要搜索，避免了过度或不足的搜索调用。",
+      "该方法将搜索路由视为实例级别的决策问题，而非全局策略，能更精细地适应不同问题的需求。",
+      "实验证明该路由策略在多个基准上提升了任务成功率，同时减少了不必要的搜索，提高了效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

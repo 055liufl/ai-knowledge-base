@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-089",
+  "title": "Rendering-Aware Bayesian 3D Gaussian Splatting with Native Uncertainty and Adaptive Complexity Control",
+  "source_url": "https://arxiv.org/abs/2607.05522",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于贝叶斯方法的3D高斯溅射（3DGS）框架，旨在解决标准3DGS训练中缺乏不确定性估计和复杂度控制的问题。标准3DGS依赖于点估计和手工调参的启发式规则，在稀疏视图或固定采集预算下表现不佳，无法识别弱支持的几何结构或选择信息量大的视图。作者通过引入渲染感知的贝叶斯推断，为每个高斯原语赋予原生不确定性，并实现自适应的复杂度控制。该方法能够自动调整高斯原语的数量和分布，避免过拟合或欠拟合，同时提供对重建质量的概率评估。实验表明，该框架在稀疏视图场景下显著提升了新视角合成的鲁棒性和准确性，并支持主动视图选择等下游任务。这项工作将贝叶斯深度学习与3DGS结合，为神经渲染中的不确定性建模提供了新思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "3D Gaussian Splatting",
+    "Bayesian Inference",
+    "Novel-View Synthesis",
+    "Uncertainty Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:29:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将贝叶斯方法引入3DGS，为每个高斯原语提供原生不确定性估计，解决了标准方法缺乏概率解释的问题。",
+      "提出自适应复杂度控制机制，能够根据数据自动调整高斯原语数量，避免手工调参的繁琐。",
+      "在稀疏视图场景下，该方法显著提升了新视角合成的鲁棒性，并支持主动视图选择等高级应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

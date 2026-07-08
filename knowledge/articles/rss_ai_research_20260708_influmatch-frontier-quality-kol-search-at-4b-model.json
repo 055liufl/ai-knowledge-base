@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-138",
+  "title": "InfluMatch: Frontier-Quality KOL Search at 4B-Model Cost",
+  "source_url": "https://arxiv.org/abs/2607.05968",
+  "source_platform": "rss_ai_research",
+  "summary": "InfluMatch 是一种用于关键意见领袖（KOL）搜索的低成本三阶段级联系统，旨在解决传统关键词搜索无法捕捉语义匹配、而前沿大语言模型（LLM）逐个评估候选者成本高昂且速度慢的问题。该系统由检索、重排序和推理三个阶段组成，完全基于小型开源模型构建：密集检索返回50个候选者，轻量级重排序器进一步筛选，最后使用4B参数模型进行推理。实验表明，InfluMatch 在匹配自由形式、多部分泰国营销标准方面达到了与前沿模型（如GPT-4）相当的质量，但成本仅为后者的极小部分。该工作展示了如何通过精心设计的级联架构，在保持高性能的同时大幅降低计算和推理成本，对于资源受限的营销技术应用具有重要价值。值得关注的是，它证明了小型模型在特定任务上可以替代昂贵的大模型，为实际部署提供了经济高效的解决方案。",
+  "tags": [
+    "KOL搜索",
+    "级联系统",
+    "低成本推理",
+    "信息检索"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:34:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过检索-重排序-推理的三阶段级联，仅使用4B参数模型即可达到与前沿LLM相当的KOL匹配质量，成本大幅降低。",
+      "密集检索和轻量级重排序器的组合有效缩小了候选集，使得后续推理阶段可以高效运行。",
+      "该工作为资源受限场景下的语义搜索提供了可复用的设计模式，尤其适用于营销、推荐等需要高精度但预算有限的领域。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

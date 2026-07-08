@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-074",
+  "title": "AdaStop: Cost-Aware Early Stopping for DNN Test Selection",
+  "source_url": "https://arxiv.org/abs/2607.05461",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 AdaStop 的代价感知早期停止方法，用于深度神经网络（DNN）测试中的测试输入选择。现有的 DNN 测试方法通常在固定标注预算下优先选择可能揭示模型故障的测试输入，但实际中预算的选择很困难：预算过少会遗漏故障，过多则导致不必要的标注成本。AdaStop 将测试过程建模为一个成本-收益决策过程，其中标注每个输入会产生成本 c，而发现故障则带来收益。该方法通过动态调整测试过程，在达到足够高的故障发现率时自动停止，从而在保证测试效果的同时最小化总成本。该工作首次系统性地研究了 DNN 测试中的停止问题，具有重要的理论价值和实际应用前景。值得关注的是，它直接解决了测试资源分配的核心矛盾，为自动化测试流程提供了可操作的优化方案，尤其适用于资源受限的工业场景。",
+  "tags": [
+    "DNN Testing",
+    "Early Stopping",
+    "Cost-Aware",
+    "Test Selection"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:28:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 DNN 测试形式化为成本-收益决策过程，首次系统研究停止问题",
+      "提出代价感知的早期停止策略，动态平衡故障发现率与标注成本",
+      "方法可显著降低不必要的标注开销，适用于资源受限的实际部署场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

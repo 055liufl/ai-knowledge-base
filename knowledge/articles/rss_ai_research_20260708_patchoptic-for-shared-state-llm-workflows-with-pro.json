@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260708-085",
+  "title": "PatchOptic for Shared-State LLM Workflows with Projected Views and Verified Structured Updates",
+  "source_url": "https://arxiv.org/abs/2607.05483",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PatchOptic的框架，用于解决共享状态LLM工作流中的状态管理问题。在代理工作流中，多个模型调用需要共享结构化状态，但由于LLM上下文窗口的限制，每次调用只能显示当前步骤所需的状态片段，即渐进式披露模式。现有系统通过关键词搜索、检索增强生成（RAG）、抽象语法树（AST）查询和任务特定代理技能来构建模型视图，但这些方法缺乏一致性和可验证性。PatchOptic引入了投影视图和验证的结构化更新机制，允许工作流以声明式方式定义状态投影，并确保更新操作在结构上正确且一致。该框架通过形式化验证和高效实现，提升了共享状态工作流的可靠性和可扩展性。值得关注的是，它解决了LLM代理在复杂多步骤任务中状态管理的核心痛点，为构建更健壮的AI工作流提供了理论基础和实用工具。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Workflow",
+    "State Management",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:29:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PatchOptic通过投影视图和验证的结构化更新，解决了LLM工作流中共享状态的一致性和可验证性问题。",
+      "该框架支持声明式状态投影，允许工作流步骤仅访问所需状态片段，同时确保更新操作的结构正确性。",
+      "相比现有方法（如RAG和AST查询），PatchOptic提供了形式化验证机制，提升了多步骤代理工作流的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-067",
+  "title": "Modality Relevance is not Modality Utility: Post-hoc Selective Modality Escalation for Cost-Aware Multimodal RAG",
+  "source_url": "https://arxiv.org/abs/2607.05438",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于多模态检索增强生成（RAG）的后验选择性模态升级方法，旨在解决现有系统中模态选择策略的不足。传统多模态RAG通常采用二元决策：要么仅使用廉价的文本（+表格）管道，要么对所有图像都使用昂贵的视觉语言模型（VLM），这忽略了不同查询对图像信息实际需求的差异。近期自适应系统虽尝试在检索前根据查询选择模态或保真度，但本文指出，模态的相关性并不等同于其效用——即一个查询可能看似与图像相关，但实际答案可能已完全包含在文本中，无需调用VLM。为此，作者提出一种后验方法：先运行低成本文本管道生成初步答案，再基于该答案与查询的置信度或不确定性，动态决定是否需要升级到VLM以利用图像信息。该方法在保持答案质量的同时显著降低了计算成本，为成本敏感的多模态RAG部署提供了新思路。该工作值得关注，因为它挑战了“模态相关性即效用”的常见假设，并提出了一个实用、高效的解决方案，有助于推动多模态RAG在实际应用中的经济可行性。",
+  "tags": [
+    "RAG",
+    "Multimodal",
+    "Cost-Aware",
+    "Selective Modality"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:27:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模态相关性不等于模态效用：一个查询可能看似与图像相关，但答案可能已完全包含在文本中，无需调用昂贵的视觉语言模型。",
+      "后验模态升级策略：先运行低成本文本管道，再根据初步答案的置信度决定是否升级到VLM，可有效平衡成本与质量。",
+      "该方法挑战了现有自适应系统中基于查询预选模态的范式，提供了更细粒度的成本控制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-017",
+  "title": "StateFuse: Deterministic Conflict-Preserving Memory for Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2607.05844",
+  "source_platform": "rss_ai_research",
+  "summary": "StateFuse 是一种面向多智能体系统的确定性冲突保留内存架构。它基于标准 OpSet/CRDT 合并机制，但并非提出新的连接代数，而是定义了一个面向智能体的语义层，该层具有不可变历史记录和显式冲突标记。在多智能体系统中，不同分支、重试和副本之间常产生冲突观测，而现有内存层通常通过难以检查或纠正的覆盖规则来掩盖分歧。StateFuse 通过保留这些冲突，使得系统行为更加可追溯和可调试，从而提升了多智能体系统的可靠性和透明度。该工作特别适用于需要高一致性和可审计性的分布式智能体应用场景，如协作机器人、多源数据融合等。StateFuse 的设计简洁且实用，为多智能体系统的内存管理提供了一种新颖且有效的解决方案。",
+  "tags": [
+    "Multi-Agent Systems",
+    "CRDT",
+    "Conflict Resolution",
+    "Distributed Systems"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:24:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "StateFuse 基于标准 OpSet/CRDT 合并，不引入新代数，降低了理解和集成门槛。",
+      "通过显式冲突标记和不可变历史记录，StateFuse 使多智能体系统中的冲突可追溯和可调试。",
+      "该工作针对现有内存层覆盖规则难以检查的问题，提供了一种透明且确定性的冲突保留方案。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

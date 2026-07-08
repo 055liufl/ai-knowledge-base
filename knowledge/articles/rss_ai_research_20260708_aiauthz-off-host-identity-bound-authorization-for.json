@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-088",
+  "title": "aiAuthZ: Off-Host, Identity-Bound Authorization for AI Agents",
+  "source_url": "https://arxiv.org/abs/2607.05518",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 aiAuthZ 的授权框架，旨在解决 AI 代理在工具调用过程中因无法验证文本真实性而面临的安全问题。研究基于真实代理事件语料库，设计了八种攻击场景，并对 15 种当代语言模型进行了评估。结果显示，模型对攻击的拒绝率从 100% 到 38% 不等，即使是最昂贵的模型也仅拒绝了半数攻击，尽管其价格是其他模型的二十倍。aiAuthZ 框架通过将授权与身份绑定，并采用离线（off-host）方式执行，以增强 AI 代理的安全性。这项工作对于理解当前语言模型在代理场景下的安全漏洞具有重要意义，并提出了一个实用的解决方案，值得关注。",
+  "tags": [
+    "AI Security",
+    "Authorization",
+    "Agent",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:29:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前语言模型在代理工具调用场景下存在严重安全漏洞，对多种攻击的拒绝率差异巨大，最高仅 100%，最低仅 38%。",
+      "最昂贵的模型（价格高出二十倍）在安全性上并未显著优于其他模型，仅拒绝了半数攻击，表明成本与安全性不直接相关。",
+      "aiAuthZ 框架通过离线、身份绑定的授权机制，为 AI 代理提供了一种新的安全增强方法，有望减少上下文伪造攻击的风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

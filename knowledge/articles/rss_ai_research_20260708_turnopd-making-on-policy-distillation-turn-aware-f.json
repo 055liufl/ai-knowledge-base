@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260708-015",
+  "title": "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training",
+  "source_url": "https://arxiv.org/abs/2607.05804",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出TurnOPD，一种针对长周期智能体训练的高效策略蒸馏方法。传统在线策略蒸馏（OPD）在训练语言智能体时，需要在整个任务轨迹上进行完整展开，导致在尾部回合中浪费大量时间资源，因为这些回合提供的KL监督信号弱且噪声大。TurnOPD通过引入回合感知机制，动态识别并跳过低效的尾部回合，仅对关键回合进行蒸馏，从而显著提升训练效率。实验表明，该方法在多个长周期任务上，在保持或提升性能的同时，将训练时间减少30%-50%。该工作为大规模语言模型在复杂、多步决策任务中的应用提供了实用优化方案，尤其适用于需要高效训练的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Distillation",
+    "Training Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-08T10:18:52Z",
+  "collected_at": "2026-07-08T10:23:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统在线策略蒸馏在长周期任务中，尾部回合的KL监督信号弱且噪声大，导致计算资源浪费。",
+      "TurnOPD通过回合感知机制动态识别并跳过低效回合，仅对关键回合进行蒸馏，提升训练效率。",
+      "该方法在多个长周期任务上实现30%-50%的训练时间减少，同时保持或提升模型性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
