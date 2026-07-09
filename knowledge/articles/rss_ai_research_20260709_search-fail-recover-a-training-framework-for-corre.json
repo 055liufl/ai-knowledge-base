@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-023",
+  "title": "Search, Fail, Recover: A Training Framework for Correction-Aware Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.07492",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Pyligent的训练与推理框架，灵感来源于Diligent Learner公式，旨在解决复杂推理任务中需要回溯和纠错的问题。传统从左到右的链式推理难以应对需要探索分支、观察延迟失败并回退到可行前缀的场景。Pyligent通过将推理表示为对部分解链的验证搜索，利用任务验证器标记生成的延续和失败，从而训练模型具备纠错感知能力。该框架的核心在于使模型学会在搜索过程中识别失败并恢复，提升推理的鲁棒性和准确性。Pyligent在多个推理任务上展示了有效性，尤其适用于需要多步探索和错误恢复的场景，如数学证明、程序合成和规划问题。这项工作值得关注，因为它提供了一种系统性的方法来增强AI系统的推理能力，使其更接近人类的问题解决方式，即通过试错和回溯找到正确路径。",
+  "tags": [
+    "Reasoning",
+    "Training Framework",
+    "Search",
+    "Error Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T10:59:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Pyligent框架将推理建模为验证搜索过程，允许模型在延迟失败后回溯到可行前缀，从而提升复杂推理任务的性能。",
+      "通过任务验证器标记生成和失败，模型能够学习纠错感知的推理策略，增强对错误路径的识别和恢复能力。",
+      "该框架适用于需要多步探索和错误恢复的领域，如数学证明和程序合成，展示了在提升推理鲁棒性方面的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

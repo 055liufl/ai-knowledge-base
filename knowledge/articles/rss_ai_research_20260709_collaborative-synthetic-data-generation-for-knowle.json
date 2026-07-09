@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-132",
+  "title": "Collaborative Synthetic Data Generation for Knowledge Transfer in Federated Learning",
+  "source_url": "https://arxiv.org/abs/2607.07565",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于联邦学习（Federated Learning）中知识迁移的协作式合成数据生成方法，旨在解决单轮联邦学习（One-shot Federated Learning, OSFL）中的通信开销和模型质量损失问题。OSFL通过将训练限制为单轮来减少通信成本，但当客户端数据分布存在差异时，保持模型质量变得困难。现有方法通过构建可迁移的合成数据集（或蒸馏数据）在服务器端聚合客户端知识，但多数方法缺乏协作性。本文提出的方法通过客户端协作生成合成数据，以更有效地迁移知识，从而在单轮通信下提升全局模型性能。该方法利用生成对抗网络或扩散模型等技术，在保护隐私的同时，生成代表各客户端数据分布的合成样本，并在服务器端进行聚合。实验结果表明，该方法在非独立同分布（Non-IID）数据场景下显著优于现有OSFL方法，平衡了通信效率与模型准确性。该研究对于降低联邦学习部署成本、提升跨机构协作效率具有重要价值，尤其适用于医疗、金融等数据敏感领域。",
+  "tags": [
+    "Federated Learning",
+    "Synthetic Data",
+    "Knowledge Transfer",
+    "One-shot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:08:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过协作式合成数据生成，在单轮联邦学习中有效迁移客户端知识，解决了Non-IID数据下的模型质量下降问题。",
+      "方法在保护数据隐私的同时，利用生成模型（如GAN或扩散模型）创建代表性合成样本，降低了通信开销。",
+      "实验证明该方法在非独立同分布场景下优于现有OSFL方法，为联邦学习的实际部署提供了更高效的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

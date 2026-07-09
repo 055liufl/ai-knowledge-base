@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-043",
+  "title": "WHERE to Generate Matters: Budget-Aware Synthetic Augmentation for Label Skewed Federated Learning",
+  "source_url": "https://arxiv.org/abs/2607.06616",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对联邦学习（FL）中标签分布倾斜（label skew）导致客户端漂移和全局精度下降的问题，提出了一种预算感知的合成数据增强方法FedEAS。核心创新在于：每个客户端根据其本地标签分布计算一个熵自适应的每类生成预算，该预算同时决定客户端生成多少样本以及从何处（即哪些类别）生成样本。通过这种自适应预算分配，FedEAS在减少计算开销的同时有效缓解了标签不平衡，提升了全局模型性能。论文在多个基准数据集上验证了该方法相比传统均匀生成策略的优势，展示了在资源受限场景下实现高效联邦学习数据增强的潜力。该工作对于联邦学习中的非独立同分布（Non-IID）数据问题具有实际意义，尤其适用于客户端计算资源异构或通信成本敏感的应用。",
+  "tags": [
+    "Federated Learning",
+    "Data Augmentation",
+    "Label Skew",
+    "Budget-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:01:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出熵自适应生成预算策略，根据客户端本地标签分布动态决定每类合成样本数量，避免全局均匀生成的高计算成本。",
+      "FedEAS同时控制生成数量和生成类别（WHERE），在缓解标签倾斜与计算效率之间取得平衡。",
+      "实验表明，该方法在多个标签倾斜场景下优于传统均匀生成和固定预算方法，且对异构客户端具有鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

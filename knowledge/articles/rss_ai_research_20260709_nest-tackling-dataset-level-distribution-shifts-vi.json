@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-036",
+  "title": "NEST: Tackling Dataset-Level Distribution Shifts via Regime-Oriented Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2607.06607",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为NEST（Regime-Oriented Mixture-of-Experts）的新方法，旨在解决复杂系统中长期预测面临的全局数据集级分布偏移问题。传统方法主要关注局部时间偏移，而忽略了数据集由不同操作模式（regime）组成的全局结构挑战。NEST通过面向机制（regime-oriented）的混合专家（MoE）架构，显式建模多变量时间序列中隐藏的多种行为模式和系统状态演化，从而提升长期预测的准确性和鲁棒性。该方法在多个基准数据集上验证了有效性，尤其适用于金融、气候、能源等存在明显状态切换的复杂系统。该工作的重要性在于：首次将数据集级分布偏移问题形式化为多机制组合问题，并利用MoE的稀疏激活特性实现动态专家选择，为时间序列预测领域提供了新的理论视角和实用工具。",
+  "tags": [
+    "Time Series",
+    "Mixture-of-Experts",
+    "Distribution Shift",
+    "Long-term Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:00:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NEST将数据集级分布偏移建模为多个操作机制的混合，而非单一局部偏移，更符合复杂系统实际。",
+      "采用面向机制的混合专家架构，通过稀疏门控动态选择专家，有效捕捉不同机制下的时间序列模式。",
+      "在多个长期预测基准上显著优于现有方法，尤其在存在明显状态切换的场景中表现突出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

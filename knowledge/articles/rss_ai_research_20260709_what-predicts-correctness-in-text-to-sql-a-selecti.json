@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260709-067",
+  "title": "What Predicts Correctness in Text-to-SQL? A Selective-Prediction Study",
+  "source_url": "https://arxiv.org/abs/2607.06799",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究聚焦于文本到SQL（Text-to-SQL）任务中的选择性预测问题，旨在通过多种信号预测AI生成SQL查询的正确性。正确性定义为查询执行结果与人工编写的参考查询一致。研究在BIRD和Spider两个多表复杂数据集上，利用AUROC指标评估不同信号对正确查询与错误查询的排序能力。探索的信号包括黑盒信号（如字符串一致性、结构一致性、执行一致性）以及模式相关性等。这项工作对于提升Text-to-SQL系统的可靠性和可解释性具有重要意义，尤其是在实际应用中需要评估查询可信度的场景。它揭示了哪些信号能有效预测SQL正确性，为构建更鲁棒的文本到SQL模型提供了指导，并推动了选择性预测在自然语言处理与数据库交叉领域的发展。",
+  "tags": [
+    "Text-to-SQL",
+    "Selective Prediction",
+    "Uncertainty Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:02:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒信号如字符串、结构和执行自一致性在预测SQL正确性上具有显著效果，AUROC指标可有效评估其排序能力。",
+      "在复杂多表数据集（BIRD和Spider）上，不同信号对正确性的预测能力存在差异，执行一致性可能优于其他信号。",
+      "该研究为Text-to-SQL系统的可信度评估提供了量化方法，有助于减少错误查询的部署风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

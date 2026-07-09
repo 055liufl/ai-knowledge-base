@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-058",
+  "title": "tsbootstrap: Distribution-Free Uncertainty Quantification and Conformal Prediction for Time Series",
+  "source_url": "https://arxiv.org/abs/2607.06690",
+  "source_platform": "rss_ai_research",
+  "summary": "tsbootstrap 是一个专注于时间序列数据的无分布不确定性量化与共形预测的开源库。它解决了传统共形预测和自助法（bootstrap）假设数据独立同分布（IID）的问题，而金融、传感和需求流等实际数据往往违反这一假设。现有库要么只实现通用重采样引擎，要么只实现共形校准，缺乏两者的结合。tsbootstrap 通过统一的类型化 API 提供了块重采样、残差重采样、筛重采样和野重采样四种方法，支持经典自助法置信区间，并集成了多种自适应共形校准器（如 EnbPI、ACI、NexCP、AgACI）。该库填补了时间序列不确定性量化工具链的空白，尤其适合需要可靠预测区间的实际应用场景，如金融风险建模、传感器数据分析和需求预测。其创新性在于将多种重采样技术与共形预测框架无缝整合，降低了使用门槛，并提升了时间序列预测的鲁棒性和可解释性。",
+  "tags": [
+    "Conformal Prediction",
+    "Time Series",
+    "Uncertainty Quantification",
+    "Bootstrap"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:02:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "tsbootstrap 整合了四种时间序列重采样方法和多种自适应共形校准器，解决了非IID数据下的不确定性量化问题。",
+      "该库通过统一的类型化 API 降低了时间序列共形预测的使用门槛，适合金融、传感等实际应用。",
+      "tsbootstrap 填补了现有库在时间序列重采样与共形校准结合方面的空白，提升了预测区间的鲁棒性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

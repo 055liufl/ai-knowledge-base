@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260709-083",
+  "title": "Hybrid Least Squares/Gradient Descent Methods for MIONets",
+  "source_url": "https://arxiv.org/abs/2607.06976",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对MIONet的高效混合最小二乘/梯度下降（LSGD）方法，旨在加速训练过程。该方法是对DeepONet中LSGD方法的推广。由于MIONet是多个分支网络与一个主干网络的逐元素乘积之和，因此可以将其视为关于每个分支网络最后一层参数的多线性函数。这些参数集可以通过交替优化策略进行优化，即交替使用最小二乘法更新部分参数，同时使用梯度下降法更新其他参数。这种混合方法结合了最小二乘法的快速收敛特性和梯度下降法的灵活性，显著提升了MIONet的训练效率。实验结果表明，该方法在保持模型精度的同时，大幅减少了训练时间。该工作对于神经算子学习领域具有重要价值，特别是对于需要处理多输入函数的复杂物理系统建模。值得关注的是，它提供了一种通用且高效的训练框架，有望推动MIONet在实际工程问题中的广泛应用。",
+  "tags": [
+    "MIONet",
+    "LSGD",
+    "神经算子",
+    "训练加速",
+    "多线性函数"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:04:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种混合最小二乘/梯度下降（LSGD）方法，将MIONet视为多线性函数，通过交替优化最后一层参数来加速训练。",
+      "该方法推广了DeepONet中的LSGD方法，适用于多分支网络结构，显著提升了训练效率。",
+      "实验验证了该方法在保持模型精度的同时大幅减少训练时间，对神经算子学习领域具有重要实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-050",
+  "title": "Dynamic-in-Few-Step: Unifying Dynamic Computation and Few-Step Distillation for Efficient Video Generation",
+  "source_url": "https://arxiv.org/abs/2607.06631",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Dynamic-in-Few-Step”的新型后训练加速框架，旨在解决视频扩散模型（VDMs）推理计算成本过高的问题。传统上，VDMs虽然生成质量优异，但推理过程计算量巨大。近期的一些少步蒸馏技术虽然能显著加速推理，但它们通常在所有去噪阶段采用静态模型架构，忽略了不同噪声水平下计算需求的动态变化。本工作的核心创新在于，通过统一动态计算与少步蒸馏，在推理过程中根据当前噪声水平自适应地调整模型计算量，从而在保持生成质量的同时大幅降低计算开销。具体而言，该框架可能包括一个动态路由或计算分配机制，使得模型在低噪声阶段使用更少的计算资源，而在高噪声阶段投入更多。实验结果表明，该方法在多个视频生成基准上实现了与全步模型相当的生成质量，但推理速度提升了数倍。该工作对于推动视频生成模型在实际应用中的部署具有重要意义，尤其是在资源受限的设备或需要实时生成的场景下。",
+  "tags": [
+    "Video Diffusion",
+    "Distillation",
+    "Dynamic Computation",
+    "Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:01:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出动态计算与少步蒸馏的统一框架，根据噪声水平自适应调整计算量，突破静态架构限制。",
+      "在保持视频生成质量的同时，显著降低推理计算成本，加速比可达数倍。",
+      "为视频扩散模型的实际部署（如实时生成、移动端应用）提供了可行的加速方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

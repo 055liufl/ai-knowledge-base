@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-021",
+  "title": "The Blind Curator: How a Biased Judge Silently Disables Skill Retirement in Self-Evolving Agents",
+  "source_url": "https://arxiv.org/abs/2607.07436",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《The Blind Curator: How a Biased Judge Silently Disables Skill Retirement in Self-Evolving Agents》探讨了自进化智能体在技能淘汰机制中的一个关键漏洞：当依赖有偏见的LLM作为裁判时，技能淘汰功能会无声失效。自进化智能体通过观察技能失败来淘汰不良技能，以维持技能库的质量基线。然而，该机制假设裁判的奖励信号是无偏的，但在无参考任务中被迫使用的LLM裁判往往存在系统性偏见。研究表明，有偏裁判不仅引入噪声，还会导致技能淘汰机制完全关闭，使得智能体无法有效剔除低效技能，从而性能逐渐退化。该工作揭示了当前自进化智能体设计中的一个重要盲点，对构建可靠、可扩展的自主系统具有警示意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Self-Evolving",
+    "Bias"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T10:59:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化智能体的技能淘汰机制依赖于无偏奖励信号，但LLM裁判在无参考任务中普遍存在偏见，导致该机制失效。",
+      "有偏裁判不仅增加噪声，还会完全关闭技能淘汰功能，使智能体无法剔除低效技能，性能逐渐退化。",
+      "该研究揭示了当前自进化智能体设计中的一个关键盲点，对构建可靠、可扩展的自主系统具有重要警示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

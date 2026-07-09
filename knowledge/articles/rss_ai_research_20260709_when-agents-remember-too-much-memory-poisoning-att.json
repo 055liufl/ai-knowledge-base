@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-031",
+  "title": "When Agents Remember Too Much: Memory Poisoning Attacks on Large Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2607.06595",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大型语言模型（LLM）智能体的新型安全攻击——记忆投毒攻击。随着LLM智能体被赋予长期记忆能力，它们能够利用工具访问邮件、管理日历、推送代码等，但这也引入了新的安全风险。研究者发现，攻击者可以通过在智能体的长期记忆中注入恶意信息，诱导其在后续任务中做出错误决策或泄露敏感数据。这种攻击不同于传统的提示注入或上下文操纵，它利用记忆的持久性和跨会话特性，使得攻击效果可以持续影响智能体的行为。论文详细描述了攻击的实现方式，包括如何构造恶意记忆片段、如何触发记忆检索以及如何利用智能体的工具调用能力。实验表明，在多种智能体架构和任务场景下，记忆投毒攻击具有较高的成功率和隐蔽性。该研究揭示了长期记忆机制在提升智能体能力的同时，也带来了新的安全挑战，对于设计更安全的LLM智能体系统具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Memory Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T10:59:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长期记忆机制使LLM智能体面临记忆投毒攻击风险，攻击者可通过注入恶意记忆片段操纵智能体行为。",
+      "记忆投毒攻击具有持久性和跨会话影响，不同于传统的提示注入或上下文操纵。",
+      "攻击可诱导智能体做出错误决策或泄露敏感数据，在多种架构和任务场景下成功率较高。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

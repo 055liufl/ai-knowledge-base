@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-140",
+  "title": "Selective Timestep Weighting and Advantage-Based Replay for Sample-Efficient Diffusion RLHF",
+  "source_url": "https://arxiv.org/abs/2607.07693",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对扩散模型的高效强化学习从人类反馈（RLHF）方法，通过选择性时间步加权和基于优势的重放机制来提升反馈效率。现有扩散模型RLHF方法通常需要大量人类或奖励模型评估，导致反馈效率低下，限制了实际应用。作者引入选择性时间步加权，根据每个时间步对最终生成质量的重要性动态调整权重，从而更有效地利用反馈信号。同时，基于优势的重放机制优先重放高优势样本，加速学习过程。实验表明，该方法在多个图像生成任务上显著减少了所需反馈数量，同时保持了生成质量，为扩散模型在资源受限场景下的对齐提供了实用解决方案。",
+  "tags": [
+    "Diffusion Model",
+    "RLHF",
+    "Sample Efficiency",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:09:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "选择性时间步加权根据每个时间步对生成质量的贡献动态调整权重，减少冗余反馈，提升学习效率。",
+      "基于优势的重放机制优先重放高优势样本，加速模型收敛，降低对大量人类反馈的依赖。",
+      "该方法在图像生成任务上显著减少所需反馈数量，同时保持生成质量，增强了扩散模型RLHF的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

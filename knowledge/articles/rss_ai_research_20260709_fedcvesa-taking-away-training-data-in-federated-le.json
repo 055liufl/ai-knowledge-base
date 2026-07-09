@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260709-112",
+  "title": "FedCVESA: Taking Away Training Data in Federated Learning via Correlation Value Encoding and Segmented Aggregation",
+  "source_url": "https://arxiv.org/abs/2607.07314",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为FedCVESA的新型联邦学习攻击方法，通过相关性值编码和分段聚合技术，在联邦学习框架下系统性地研究了基于记忆的训练数据窃取攻击。传统联邦学习通过将原始数据保留在本地客户端来避免直接数据暴露，但训练过程和模型本身仍存在隐私风险。最近集中式TATD攻击表明，恶意训练可能滥用深度模型的记忆能力来存储并恢复训练数据。然而，这种基于记忆的威胁在联邦学习下尚未被系统研究。FedCVESA通过设计相关性值编码机制，将训练数据信息嵌入模型参数中，并利用分段聚合策略在全局模型更新中隐藏这些嵌入，从而在联邦学习环境下实现训练数据的窃取。该工作首次将TATD攻击扩展到联邦学习场景，揭示了联邦学习在隐私保护方面的潜在漏洞，对联邦学习的安全性和隐私保护研究具有重要意义。",
+  "tags": [
+    "Federated Learning",
+    "Privacy Attack",
+    "TATD"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:06:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FedCVESA首次将基于记忆的训练数据窃取攻击（TATD）系统性地扩展到联邦学习场景，填补了该领域的研究空白。",
+      "通过相关性值编码和分段聚合技术，攻击者能够在联邦学习过程中隐蔽地嵌入并恢复训练数据，突破了传统联邦学习隐私保护假设。",
+      "该工作揭示了联邦学习在模型记忆能力方面的隐私风险，为设计更安全的联邦学习协议提供了重要警示和理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

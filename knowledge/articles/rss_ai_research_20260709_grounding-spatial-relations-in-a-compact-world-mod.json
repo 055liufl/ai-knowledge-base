@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-008",
+  "title": "Grounding Spatial Relations in a Compact World Model: Instruction Leakage and a Goal-Free Dynamics Fix",
+  "source_url": "https://arxiv.org/abs/2607.06925",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了紧凑世界模型中空间关系的语言接地问题，发现了一个关键陷阱：当模型以语言目标为条件时，它能够达到90%的关系读取准确率，但这并非真正的感知，而是指令转录——模型只是从输入中复制了目标信息，而非基于视觉或空间推理。当移除目标时，准确率急剧下降。作者提出了一种无目标动态修正方法，通过构建不依赖语言目标的世界模型，迫使模型真正学习空间关系，从而避免指令泄漏。这项工作对具身智能、机器人操作和语言接地研究具有重要意义，因为它揭示了当前模型在空间推理中的虚假表现，并提供了更可靠的评估和训练方法。",
+  "tags": [
+    "World Model",
+    "Language Grounding",
+    "Spatial Reasoning",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T10:58:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "目标条件模型可能通过指令转录而非真实感知达到高准确率，这是一个普遍存在的评估陷阱。",
+      "无目标动态修正方法能迫使模型学习真正的空间关系，避免语言泄漏。",
+      "该工作为评估具身智能中的语言接地提供了更严格的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

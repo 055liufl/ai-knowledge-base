@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-089",
+  "title": "Intrinsic Green's Learning: Supervised Learning on Manifolds via Inverse PDE",
+  "source_url": "https://arxiv.org/abs/2607.07034",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“内在格林学习”（Intrinsic Green's Learning, IGL）的全新监督学习框架。该框架的核心思想是将定义在流形上的目标函数建模为一个线性偏微分方程（PDE）的解，其中方程的源项从数据中学习得到。与传统方法直接逼近目标函数不同，IGL通过学习一个源函数，然后将其与格林核进行积分来获得预测。为了处理高维流形，IGL引入了一个编码器，该编码器在流形上发现一个低维坐标图，使得源函数和格林核在该坐标图上都能分解为低秩张量，从而有效克服了高维空间中的维数灾难。这项工作将偏微分方程理论、流形学习和深度学习有机结合，为处理流形上的监督学习问题提供了一种新颖且具有理论深度的视角。其价值在于，它不仅提供了一种新的学习范式，还通过利用PDE的结构化先验，有望在数据量有限或数据分布具有复杂几何结构时，实现更高效、更具泛化能力的学习。",
+  "tags": [
+    "Manifold Learning",
+    "PDE",
+    "Supervised Learning",
+    "Green's Function"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:04:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "IGL将监督学习问题转化为求解流形上线性PDE的逆问题，通过学习源函数并利用格林核积分来间接建模目标函数，提供了新的理论框架。",
+      "通过编码器学习低维坐标图，并假设源函数和格林核在该图上具有低秩张量分解结构，有效应对了高维流形学习的维数灾难问题。",
+      "该方法融合了PDE理论、流形几何和深度学习，为处理具有复杂几何结构的数据（如图形、点云）提供了有潜力的新途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

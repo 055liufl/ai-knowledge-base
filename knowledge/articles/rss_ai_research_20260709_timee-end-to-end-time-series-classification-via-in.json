@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260709-127",
+  "title": "TimEE: End-to-end Time Series Classification via In-Context Learning",
+  "source_url": "https://arxiv.org/abs/2607.07500",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 TimEE 的新型端到端时间序列分类方法，该方法通过上下文学习（In-Context Learning）统一了特征提取和分类过程，摒弃了传统的两阶段范式（先训练特征编码器，再拟合分类器）。传统方法将表示学习与分类目标分离，需要针对每个数据集单独训练，且无法在推理时利用标签信息。TimEE 通过将时间序列数据转化为序列形式，并利用预训练语言模型的上下文学习能力，直接在推理时根据少量示例进行分类，无需微调或重新训练。该方法在多个基准数据集上取得了与现有方法相当或更优的性能，同时显著降低了训练成本。这项工作值得关注，因为它挑战了时间序列分类的固有范式，展示了上下文学习在非语言领域的潜力，并为时间序列分析提供了一种更灵活、高效的解决方案。其创新性在于将时间序列分类问题重新定义为序列到序列的上下文学习任务，从而实现了真正的端到端学习。",
+  "tags": [
+    "Time Series Classification",
+    "In-Context Learning",
+    "End-to-End Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:08:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TimEE 通过上下文学习将时间序列分类从两阶段范式转变为端到端过程，消除了特征编码和分类器拟合的分离。",
+      "该方法利用预训练语言模型的上下文学习能力，在推理时仅需少量示例即可进行分类，无需针对每个数据集重新训练。",
+      "实验结果表明，TimEE 在多个基准数据集上取得了与现有方法相当或更优的性能，同时显著降低了训练成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

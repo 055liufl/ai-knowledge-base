@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-141",
+  "title": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+  "source_url": "https://arxiv.org/abs/2607.07696",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Jailbreak的方法，旨在解决分析型工作负载在访问外部数据库系统时遇到的性能瓶颈。传统上，数据访问完全受限于数据库驱动程序（如JDBC或ODBC），这些驱动层并非为批量列式分析而设计，导致所有读取操作都必须经过查询执行等不必要的开销。Jailbreak通过直接读取存储文件并物化为内存列式格式，完全绕过数据库引擎，从而大幅提升数据访问性能。该方法的核心在于利用智能体（Agent）自动生成高性能的存储读取器，实现数据库旁路。这一创新对于需要高效处理大规模分析查询的场景具有重要意义，能够显著降低延迟并提高吞吐量。论文的实验结果展示了Jailbreak在多种数据库系统上的有效性，为数据库分析领域提供了一种新的优化思路。",
+  "tags": [
+    "Database",
+    "Storage",
+    "Analytics",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:09:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Jailbreak通过直接读取存储文件并物化为内存列式格式，绕过数据库引擎，消除了传统数据库驱动层的性能瓶颈。",
+      "该方法利用智能体自动生成高性能存储读取器，实现了对多种数据库系统的通用旁路能力。",
+      "实验结果表明，Jailbreak在分析型工作负载上能显著降低延迟并提高吞吐量，尤其适用于大规模列式分析场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

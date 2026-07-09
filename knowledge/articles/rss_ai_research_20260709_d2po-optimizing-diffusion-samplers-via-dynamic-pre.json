@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260709-038",
+  "title": "D2PO: Optimizing Diffusion Samplers via Dynamic Preference",
+  "source_url": "https://arxiv.org/abs/2607.06609",
+  "source_platform": "rss_ai_research",
+  "summary": "D2PO（动态直接偏好优化）是一个用于优化扩散模型采样策略的框架，它针对时间步调度和无分类器引导（CFG）权重进行动态调整。该研究指出，现有学生-教师回归框架存在根本性限制：低NFE（函数评估次数）学生采样器被训练去模仿高NFE教师，这往往以牺牲高频纹理保真度为代价来保留粗糙的全局结构。D2PO通过引入动态偏好优化，在采样过程中根据当前状态自适应地调整时间步和CFG权重，从而在保持生成质量的同时显著减少所需的NFE。该方法在多个图像生成基准上展示了优于现有蒸馏方法的性能，特别是在低NFE设置下，能够更好地恢复细节纹理。这项工作值得关注，因为它直接解决了扩散模型加速采样中的核心权衡问题，为高效生成高质量图像提供了新的理论框架和实践方法，对推动扩散模型在实时应用中的部署具有重要意义。",
+  "tags": [
+    "Diffusion Models",
+    "Preference Optimization",
+    "Sampling Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:00:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "D2PO通过动态调整时间步和CFG权重，在低NFE下显著提升纹理细节保真度，克服了传统蒸馏方法牺牲高频信息的缺陷。",
+      "该框架将偏好优化引入扩散采样过程，实现了采样策略的自适应优化，为加速扩散模型生成提供了新范式。",
+      "实验表明，D2PO在多个基准上优于现有方法，特别是在极低NFE设置下，展示了其在实际应用中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

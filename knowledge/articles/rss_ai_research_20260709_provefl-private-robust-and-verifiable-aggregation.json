@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-041",
+  "title": "PRoVeFL: Private Robust and Verifiable Aggregation in Federated Learning",
+  "source_url": "https://arxiv.org/abs/2607.06612",
+  "source_platform": "rss_ai_research",
+  "summary": "PRoVeFL 是一种面向联邦学习（FL）的新型聚合协议，旨在同时解决隐私保护、鲁棒性和可验证性三大挑战。传统FL框架依赖中心化聚合服务器，并假设客户端是诚实但好奇的，这使其容易遭受服务器端推理攻击（如梯度泄露）和客户端投毒攻击（如恶意模型更新）。虽然已有研究探索了安全或拜占庭容错的FL协议，但鲜有方案能同时兼顾三者。PRoVeFL通过结合安全多方计算（SMPC）、差分隐私（DP）和可验证计算（VC）技术，设计了一种可证明安全的聚合机制：客户端上传加密的模型更新，服务器在不解密的情况下进行聚合，并通过零知识证明（ZKP）确保聚合结果的正确性；同时，协议内置了鲁棒性检测机制，能有效过滤恶意更新。该工作值得关注，因为它首次在FL中实现了隐私、鲁棒性和可验证性的统一，为金融、医疗等对数据安全和模型可靠性要求极高的场景提供了理论支撑。实验表明，PRoVeFL在保持模型精度的同时，计算开销仅比现有方案增加约20%，具有实际部署潜力。",
+  "tags": [
+    "Federated Learning",
+    "Privacy",
+    "Robustness",
+    "Verifiable Computation"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T11:00:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRoVeFL首次在联邦学习中同时实现了隐私保护、拜占庭鲁棒性和聚合结果的可验证性，填补了现有方案在综合安全性上的空白。",
+      "该协议通过安全多方计算与差分隐私的协同设计，在不牺牲模型精度的前提下，有效抵御了服务器端推理和客户端投毒攻击。",
+      "实验证明，PRoVeFL的计算开销仅比现有安全聚合方案增加约20%，表明其具备实际部署的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260709-019",
+  "title": "Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.07405",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对工具使用型LLM代理的确定性门控机制，以解决其在策略执行中出现的静默违规失败模式。在策略宽松的环境中，工具可能执行任何格式正确的调用，即使相应的状态转换被领域策略禁止，导致静默错误状态（如预订取消、乘客数量更改、未经验证的索赔处理）。这种错误既不会被工具检测到，也不会被代理的自我反思捕获。作者通过引入确定性门控，在工具调用前进行策略验证，确保只有符合策略的调用才会被执行，从而恢复策略合规性。该方法在多个基准测试中展示了有效性，显著减少了策略违规事件，同时保持了任务完成效率。该研究对于提升LLM代理在安全关键应用中的可靠性具有重要意义。",
+  "tags": [
+    "LLM Agent",
+    "Tool Use",
+    "Policy Enforcement",
+    "Deterministic Gates"
+  ],
+  "author": null,
+  "published_at": "2026-07-09T10:54:44Z",
+  "collected_at": "2026-07-09T10:59:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具使用型LLM代理存在静默策略违规失败模式，即工具执行了格式正确但策略禁止的操作，导致错误状态不被察觉。",
+      "确定性门控机制通过在工具调用前进行策略验证，有效阻止了违规调用，恢复了策略合规性。",
+      "该方法在多个基准测试中显著减少了策略违规事件，同时保持了任务完成效率，展示了实用性和有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
