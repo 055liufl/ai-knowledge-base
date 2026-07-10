@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-095",
+  "title": "Structured Pruning of Large Language Models via Power Transformation and Sign-Preserving Score Aggregation with Adaptive Feature Retention",
+  "source_url": "https://arxiv.org/abs/2607.08027",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种改进的大型语言模型结构化剪枝方法，旨在解决将自适应特征保留（AFR）从非结构化剪枝迁移到结构化剪枝时面临的三大挑战：异构剪枝分数的分布不匹配、指示优化方向一致性的符号信息丢失以及异常值的影响。该方法通过幂变换对剪枝分数进行归一化，以缓解分布不匹配问题；通过符号保留分数聚合保留优化方向信息；并引入自适应特征保留机制来应对异常值。实验表明，该方法在保持模型性能的同时，显著减少了模型参数和计算量，适用于资源受限场景下的LLM部署。该研究对于提升LLM的推理效率和降低部署成本具有重要价值，尤其关注了结构化剪枝中分数聚合的细节问题，提供了实用的解决方案。",
+  "tags": [
+    "LLM",
+    "Pruning",
+    "Model Compression",
+    "Structured Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:05:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过幂变换解决异构剪枝分数的分布不匹配问题，实现更公平的分数聚合。",
+      "符号保留分数聚合机制保留了优化方向一致性信息，避免剪枝决策中的信息丢失。",
+      "自适应特征保留机制有效抑制异常值对剪枝结果的影响，提升模型压缩后的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

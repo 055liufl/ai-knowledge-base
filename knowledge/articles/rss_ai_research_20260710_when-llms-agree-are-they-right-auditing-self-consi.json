@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-019",
+  "title": "When LLMs Agree, Are They Right? Auditing Self-Consistency and Cross-Model Agreement as Confidence Signals",
+  "source_url": "https://arxiv.org/abs/2607.08065",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文挑战了LLM评估中一个普遍但未经充分验证的假设：一致性（即多个法官之间或同一模型多次采样结果的一致）等同于正确性。作者通过系统实验证明，模型间的一致性或自我一致性并不能可靠地指示答案的正确性，因为模型可能在某些错误答案上达成一致。研究揭示了当前LLM-as-judge方法在可靠性上的根本缺陷，并提出了审计一致性与准确率之间关系的必要性。这项工作对于依赖LLM进行自动化评估的企业和研究者具有重要警示意义，推动了更严谨的评估方法论的发展。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Consistency",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T10:58:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "一致性不等于准确性：模型在错误答案上也可能达成高度一致，因此不能将一致性作为正确性的代理指标。",
+      "LLM-as-judge方法的可靠性受到挑战：当前广泛使用的多模型或自一致性评估方法存在根本性缺陷，可能导致误判。",
+      "需要审计一致性与准确率的关系：研究呼吁在应用一致性信号前，先验证其与真实准确率的关联性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-085",
+  "title": "When Implausible Tokens Get Reinforced: Tail-Aware Credit Calibration for LLM Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.07976",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型强化学习中的信用分配问题，提出了一种新的尾感知信用校准方法。当前广泛使用的无评论家强化学习方法采用统一的信用分配机制，即对所有token赋予相同的优势值，忽略了不同token之间的差异。作者识别出这种设计的一个关键失败模式——正信用污染：低概率的尾部token（即上下文错误但被模型错误赋予高概率的token）会因统一的正向信用而得到强化，导致模型生成质量下降。为了解决这一问题，论文提出了一种尾感知信用校准方法，通过动态调整不同token的信用值，避免低质量token被错误强化。该方法在数学推理和代码生成等任务上进行了验证，实验结果表明其能有效提升模型性能。该研究对于理解LLM强化学习中的信用分配机制具有重要意义，并为改进RL训练提供了新思路。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:04:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一信用分配会导致低概率尾部token被错误强化，即正信用污染问题。",
+      "提出尾感知信用校准方法，通过动态调整token信用值来避免低质量token被强化。",
+      "该方法在数学推理和代码生成任务上验证了有效性，提升了模型性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

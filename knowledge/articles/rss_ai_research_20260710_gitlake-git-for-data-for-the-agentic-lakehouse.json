@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-121",
+  "title": "GitLake: Git-for-data for the agentic lakehouse",
+  "source_url": "https://arxiv.org/abs/2607.08319",
+  "source_platform": "rss_ai_research",
+  "summary": "GitLake 是一种为智能体优先的数据湖屋设计的 Git-for-data 系统。它将 Iceberg 单表快照提升为湖屋级别的提交、分支和合并操作，使智能体可以在隔离的分支上工作，同时人类可以审查和发布更改。数据管道在临时分支上运行，并通过最终合并发布，确保所有输出要么原子性可见，要么完全不可见。论文还报告了生产实践中的经验教训以及正确性方面的见解。该系统值得关注，因为它解决了数据湖屋中多智能体协作和版本控制的关键挑战，通过引入类似 Git 的工作流，提高了数据操作的可靠性、可审计性和协作效率，尤其适用于需要严格数据版本管理和原子发布的场景。",
+  "tags": [
+    "Data Lakehouse",
+    "Version Control",
+    "Agent",
+    "Iceberg"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:07:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GitLake 将 Git 的分支和合并概念应用于数据湖屋，使智能体能在隔离分支上工作，实现安全的数据变更管理。",
+      "通过原子性合并发布，确保数据管道输出要么全部可见，要么完全不出现，避免了部分更新导致的数据不一致问题。",
+      "系统基于 Iceberg 快照，将其扩展为湖屋级别的版本控制，支持多智能体协作和人类审查流程。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

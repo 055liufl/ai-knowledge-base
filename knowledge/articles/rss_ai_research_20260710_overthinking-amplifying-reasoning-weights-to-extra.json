@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-024",
+  "title": "Overthinking: Amplifying Reasoning Weights to Extract Learned Secrets",
+  "source_url": "https://arxiv.org/abs/2607.08173",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“过度思考”（overthinking）的黑盒审计方法，旨在通过放大推理模型的推理权重来提取其隐藏的秘密信息。该方法利用推理任务向量，增强非推理指令模型在审计过程中进行“出声思考”的倾向，从而更有效地揭示模型可能存在的细微对齐问题或隐藏信息。具体而言，给定一个非推理指令模型M和一个推理蒸馏模型R的参数，通过计算两者之间的差异得到推理任务向量，并将其应用于M，以诱导其产生更丰富的推理过程。这种方法为语言模型部署前的安全审计提供了新的视角，能够发现传统黑盒审计可能遗漏的微妙形式的不对齐和隐藏信息，具有重要的实际应用价值。",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T10:59:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过推理任务向量放大模型的推理倾向，可以更有效地提取隐藏信息。",
+      "过度思考方法能够发现传统黑盒审计可能遗漏的细微对齐问题。",
+      "该方法利用推理蒸馏模型与非推理模型之间的差异，实现黑盒审计的增强。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

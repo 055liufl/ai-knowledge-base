@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-112",
+  "title": "Out of Sight: Compression-Aware Content Protection against Agentic Crawlers",
+  "source_url": "https://arxiv.org/abs/2607.08180",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM代理的新型内容保护方法，称为“压缩感知内容保护”。随着基于LLM的代理（如具备推理、总结和记忆能力的智能体）的兴起，传统的内容防御措施（如访问控制）已无法有效保护在线内容，因为这些代理可以模拟普通浏览器行为绕过限制，而注入式防御又常损害人类可读性。作者重新审视了代理的工作流程，并识别出上下文压缩这一关键环节——代理在调用时会压缩上下文，从而可能泄露敏感信息。该方法通过设计一种对压缩敏感的机制，使得内容在代理压缩过程中被破坏或混淆，而人类用户仍能正常阅读。论文探讨了如何在不影响人类体验的前提下，利用压缩算法的特性来阻止代理抓取和利用内容。这项工作对于保护网站内容免受自动化代理的滥用具有重要意义，尤其是在AI代理日益普及的背景下，为内容创作者和平台提供了新的防御思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Content Protection"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:06:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统防御措施（如访问控制）无法有效阻止模仿普通浏览器的LLM代理，而注入式防御会损害人类可读性。",
+      "代理工作流程中的上下文压缩环节是防御的新突破口，可设计压缩感知机制来保护内容。",
+      "该方法能在不影响人类阅读体验的前提下，通过压缩过程破坏或混淆代理抓取的内容。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260710-093",
+  "title": "Can We Trust LLM's Logic? Quantifying Uncertainty, Coherence, and Robustness via a Graph-Based Framework",
+  "source_url": "https://arxiv.org/abs/2607.08017",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于图的框架来量化大型语言模型（LLM）推理中的不确定性、连贯性和鲁棒性。作者指出，现有解码策略如自一致性（Self-Consistency）仅评估最终答案的一致性，而忽略了中间步骤的逻辑有效性，因此无法检测到有缺陷或不忠实的推理。该框架通过构建推理步骤的图结构，利用语义、结构和因果信息来评估推理路径的可靠性。具体而言，它通过图论方法（如节点中心性、路径一致性）和因果推断技术，量化每个推理步骤的不确定性，并衡量整体推理的连贯性和鲁棒性。实验表明，该框架能更准确地识别出不可靠的推理链，相比传统方法（如多数投票）有显著提升。这项工作值得关注，因为它直接回应了LLM推理中的核心信任问题，为可解释性和安全性提供了新的工具。其创新点在于将图结构与因果推理结合，超越了简单的答案一致性检查，有望应用于需要高可靠性的场景（如医疗、法律推理）。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Uncertainty Quantification",
+    "Graph",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:04:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自一致性（Self-Consistency）等现有方法仅检查最终答案一致性，忽略了中间推理步骤的逻辑有效性，导致无法检测不忠实推理。",
+      "基于图的框架通过语义、结构和因果信息，能更可靠地量化LLM推理中的不确定性、连贯性和鲁棒性。",
+      "该框架利用图论和因果推断技术，可识别出不可靠的推理链，相比传统多数投票方法有显著改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

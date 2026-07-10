@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-139",
+  "title": "Two Axes of LLM Abstention: Answer Correctness and Question Answerability",
+  "source_url": "https://arxiv.org/abs/2607.08456",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了大语言模型（LLM）在拒绝回答时的两个不同维度：答案正确性和问题可回答性。模型需要区分两种拒绝情况：一是它可能给出错误答案的问题，二是根本不应回答的问题（如无法回答或基于错误前提的问题）。传统方法通常使用单一置信度阈值，无法区分这两种情况。研究者在三个模型家族（2B到14B参数）的五个指令微调模型上发现，这两个维度是独立的：普通的答案置信度能反映答案是否正确，但对问题是否可回答几乎不敏感。这一发现对提升LLM的可靠性和安全性具有重要意义，为设计更精细的拒绝机制提供了理论基础。论文通过实验揭示了现有方法的局限性，并提出了未来改进方向，值得关注。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:08:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM的拒绝机制需要区分答案正确性和问题可回答性两个独立维度",
+      "传统单一置信度阈值方法无法有效区分这两种拒绝场景",
+      "不同模型家族在答案置信度上表现一致，但对问题可回答性不敏感"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

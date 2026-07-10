@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-126",
+  "title": "On the Role of Conversational Timing in Synthetic Training Data for ASR",
+  "source_url": "https://arxiv.org/abs/2607.08371",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在合成多说话人对话数据中，对话时序（如停顿和重叠时间分布）对自动语音识别（ASR）系统训练效果的影响。传统方法通常将真实对话的时序统计量作为目标来生成合成数据，但本文提出将时序视为可控的训练变量，通过指数倾斜族参数化停顿和重叠时间分布，并系统性地探索不同时序配置对ASR性能的影响。实验表明，适当调整时序分布（如增加重叠比例或调整停顿长度）可以显著提升ASR在真实对话场景下的识别准确率，尤其是在处理重叠语音和自然对话节奏时。该研究为合成训练数据的生成提供了新的设计原则，有助于提升ASR系统在复杂对话环境中的鲁棒性。值得关注的是，它挑战了“越真实越好”的直觉，揭示了时序作为主动优化变量的潜力，对语音交互系统、会议转录等应用具有重要指导意义。",
+  "tags": [
+    "ASR",
+    "Synthetic Data",
+    "Conversational AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:07:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对话时序（如停顿和重叠）是合成ASR训练数据中可主动优化的变量，而非仅需复制的统计特征。",
+      "通过指数倾斜族参数化时序分布，可系统探索不同时序配置对ASR性能的影响。",
+      "适当调整重叠比例和停顿长度能显著提升ASR在真实对话场景下的识别准确率。",
+      "该研究挑战了“合成数据越接近真实越好”的传统观点，提出了基于性能优化的数据生成新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

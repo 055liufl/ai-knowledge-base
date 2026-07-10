@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-063",
+  "title": "Jet-Long: Efficient Long-Context Extension with Dynamic Bifocal RoPE",
+  "source_url": "https://arxiv.org/abs/2607.07740",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为Jet-Long的高效长上下文扩展方法，核心创新在于动态双焦点旋转位置编码（Dynamic Bifocal RoPE）。现代大语言模型在检索增强生成、仓库级编码和智能体工作流等长上下文应用中，输入长度常超出预训练窗口一个数量级，零样本上下文扩展成为主流部署路径。现有方法通常固定单一重缩放因子，导致对长序列的适应性不足。Jet-Long通过动态调整位置编码的焦点区域，使模型能够在不进行额外训练的情况下，有效处理远超预训练长度的输入。该方法在多个长上下文基准测试中表现出色，显著提升了模型在长序列任务中的性能，同时保持了计算效率。该工作对于推动LLM在长上下文场景中的实际应用具有重要意义，尤其适用于需要处理超长文本的开发者。",
+  "tags": [
+    "LLM",
+    "Position Encoding",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:02:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出动态双焦点RoPE，通过自适应调整位置编码焦点区域，实现零样本长上下文扩展。",
+      "在无需额外训练的情况下，显著提升模型对超长序列的处理能力，适用于RAG、代码生成等场景。",
+      "相比固定重缩放因子方法，Jet-Long在长上下文基准测试中取得更优性能，且计算开销可控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

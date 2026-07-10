@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260710-099",
+  "title": "What LLM Forecasters Know but Don't Say: Probing Internal Representations for Calibration and Faithfulness",
+  "source_url": "https://arxiv.org/abs/2607.08046",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大型语言模型（LLM）在预测任务中的校准性与忠实性问题。尽管经过微调的LLM（如Eternis-Forecaster 8B）在预测上表现准确，但其链式思维（CoT）推理过程可能无法忠实反映预测背后的真实证据，且模型校准性较差。研究者提出通过训练表示池化探针（representation-pooling probes）来直接利用模型中间层激活值，从而更直接地获取预测依据。实验在OpenForesight数据集上进行，发现基于内部表示的探针在预测校准性上显著优于传统方法。这项工作揭示了LLM内部表示与输出行为之间的差异，为提升模型可解释性和可靠性提供了新思路。值得关注的是，它挑战了仅依赖表面推理链评估模型忠实性的做法，并展示了利用内部状态改进校准的实用路径，对AI安全、可信赖预测系统及模型审计具有重要价值。",
+  "tags": [
+    "LLM",
+    "Calibration",
+    "Faithfulness",
+    "Interpretability",
+    "Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:05:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM内部表示比链式思维推理更能直接反映预测的真实证据，通过探针可显著提升校准性。",
+      "当前LLM的CoT推理可能不忠实于内部决策过程，依赖表面推理链评估模型可靠性存在风险。",
+      "表示池化探针方法为改进模型校准和忠实性提供了实用工具，无需修改模型架构或训练过程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

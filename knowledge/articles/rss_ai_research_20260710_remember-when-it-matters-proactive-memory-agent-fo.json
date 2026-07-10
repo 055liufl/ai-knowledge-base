@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-051",
+  "title": "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2607.08716",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“主动记忆体”（Proactive Memory Agent）的机制，旨在解决长时域任务中智能体因轨迹增长而导致的“行为状态衰减”问题。在长时域任务中，决策相关的状态信息（如任务要求、环境事实、先前尝试、诊断结果和未完成的子目标）往往分散在不断扩展的轨迹中，可能被埋没在上下文窗口内甚至被推出窗口，从而无法在关键时刻影响决策。作者将这种失效模式定义为“行为状态衰减”。与传统的被动记忆（如简单的缓存或检索）不同，主动记忆体被设计为一个主动干预机制，能够动态地识别、提取和呈现关键信息，以维持智能体的决策一致性。该研究通过实验验证了主动记忆体在长时域任务中的有效性，表明其能显著提升智能体的任务完成率和决策质量。这项工作的价值在于它直接挑战了当前大型语言模型（LLM）在长时域任务中依赖固定上下文窗口的局限性，为构建更鲁棒的自主智能体提供了新的记忆管理范式，尤其适用于需要长期规划和持续推理的复杂场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:01:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出“行为状态衰减”概念，系统性地描述了长时域任务中关键信息被上下文窗口淹没导致决策失效的问题。",
+      "设计主动记忆体作为干预机制，区别于被动记忆，能够动态提取和呈现决策相关状态。",
+      "实验证明主动记忆体可显著提升长时域任务完成率和决策质量，为LLM Agent的长期记忆管理提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

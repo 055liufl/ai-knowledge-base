@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-110",
+  "title": "LEXIC: Lightweight Eye-tracking eXtension via Injected Complexity",
+  "source_url": "https://arxiv.org/abs/2607.08152",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为LEXIC（Lightweight Eye-tracking eXtension via Injected Complexity）的轻量级眼动追踪扩展方法，旨在仅基于眼动数据预测阅读理解能力，而不依赖预训练语言模型。在EyeBench基准测试中，文本感知模型（使用预训练语言模型）的AUROC达到56-63%，而纯眼动模型仅处于随机水平。LEXIC通过注入三种预计算的词级难度特征（如词频、词长等），在无需语言模型的情况下显著提升纯眼动模型的性能。该方法基于EyeBench的AhnCNN基线（LEXIC-Base），通过两种机制注入复杂度信息，探索了纯眼动模型在阅读理解预测中的极限。这项工作值得关注，因为它挑战了当前依赖语言模型的主流范式，展示了轻量级、无语言模型方法在眼动追踪任务中的潜力，可能为资源受限场景下的认知状态监测提供新思路。",
+  "tags": [
+    "Eye-tracking",
+    "Reading Comprehension",
+    "Lightweight Model"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:06:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "纯眼动模型在阅读理解预测中性能远低于文本感知模型，但通过注入词级难度特征可显著提升。",
+      "LEXIC方法无需预训练语言模型，仅依赖轻量级特征注入，适用于资源受限场景。",
+      "词级难度特征（如词频、词长）是提升眼动模型性能的关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

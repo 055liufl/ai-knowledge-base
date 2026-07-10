@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-052",
+  "title": "The Illusion of Equivalency: Statistical Characterization of Quantization Effects in LLMs",
+  "source_url": "https://arxiv.org/abs/2607.08734",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文揭示了当前大语言模型（LLM）量化评估中的关键缺陷：仅依赖准确率和困惑度等传统指标会掩盖量化带来的行为变化。作者提出了一种新的决策级指标——正确性一致性（correctness agreement），该指标独立于绝对准确率，直接衡量基础模型与其量化变体在正确预测上的重叠程度。通过实验，论文展示了量化模型可能在保持高准确率的同时，其正确预测的样本分布与原始模型存在显著差异，从而产生“等价幻觉”。这项工作对于量化技术的可靠部署和模型行为理解具有重要价值，尤其适用于资源受限场景下的模型压缩与部署。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:01:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统准确率和困惑度指标无法捕捉量化导致的模型行为变化，存在评估盲区。",
+      "提出的正确性一致性指标能独立于绝对准确率，直接量化量化前后模型在正确预测上的重叠程度。",
+      "量化模型可能在保持高准确率的同时，其正确预测的样本分布与原始模型显著不同，形成“等价幻觉”。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

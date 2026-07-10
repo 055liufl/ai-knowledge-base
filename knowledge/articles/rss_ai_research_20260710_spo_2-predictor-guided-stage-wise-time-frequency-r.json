@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260710-089",
+  "title": "SpO$_2$ Predictor-Guided Stage-Wise Time-Frequency Reconstruction of Low-Quality Dual-Wavelength PPG for Oxygen Saturation Estimation",
+  "source_url": "https://arxiv.org/abs/2607.07996",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于SpO₂预测器引导的分阶段时频重建方法，用于从低质量双波长PPG信号中估计血氧饱和度。研究针对可穿戴设备中常见的低质量PPG信号（如运动伪影导致的波形畸变）问题，现有方法主要优化波形保真度或心率特征，但仅使用时域波形损失不足以保留SpO₂预测所需的关键信息。本文创新性地引入SpO₂预测器作为引导，分阶段在时频域对低质量PPG进行重建：第一阶段利用时频分析提取信号特征，第二阶段通过SpO₂预测器的反馈优化重建过程，从而在提升波形质量的同时保持SpO₂估计的准确性。该方法在真实低质量PPG数据集上验证，显著优于传统去噪和重建方法，为可穿戴健康监测中的血氧饱和度连续估计提供了更鲁棒的解决方案。值得关注的是，该研究将下游任务（SpO₂估计）的性能作为重建质量的评价标准，而非仅关注波形相似度，这种任务导向的信号处理思路对生物医学信号处理领域具有重要启发意义。",
+  "tags": [
+    "PPG",
+    "SpO2",
+    "Signal Reconstruction",
+    "Time-Frequency Analysis",
+    "Wearable Health Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:04:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出SpO₂预测器引导的分阶段时频重建方法，将下游任务性能作为信号重建质量的评价标准，突破了传统仅优化波形保真度的局限。",
+      "通过时频域分析和任务导向的反馈机制，有效解决了低质量双波长PPG信号中波形畸变对血氧估计精度的影响。",
+      "在真实低质量PPG数据集上验证了方法的有效性，为可穿戴设备中连续、鲁棒的血氧监测提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

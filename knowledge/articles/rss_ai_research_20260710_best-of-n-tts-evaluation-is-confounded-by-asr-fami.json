@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-118",
+  "title": "Best-of-$N$ TTS Evaluation is Confounded by ASR Family Alignment",
+  "source_url": "https://arxiv.org/abs/2607.08256",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了在零样本文本转语音（TTS）系统中，使用最佳N选（Best-of-N, BoN）推理方法时，评估结果存在一个被忽视的混淆因素：自动语音识别（ASR）验证器的家族一致性。具体而言，当使用不同的ASR模型（如Whisper、wav2vec 2.0、HuBERT）作为验证器时，对TTS输出质量的排名会完全反转。例如，在LibriSpeech-PC测试集上使用F5-TTS模型时，验证器的排名结果依赖于其所属的ASR家族。这一发现挑战了当前TTS评估的可靠性，表明BoN方法的效果可能被高估或误判，因为验证器与TTS模型之间的家族对齐（如共享训练数据或架构）会引入偏差。该研究对TTS领域的评估标准、模型选择以及实际应用中的质量保证具有重要警示意义，值得关注。",
+  "tags": [
+    "TTS",
+    "ASR",
+    "Evaluation",
+    "Zero-shot"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:06:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BoN推理在零样本TTS中的评估结果严重依赖于ASR验证器的家族一致性，不同ASR家族（如Whisper、wav2vec 2.0、HuBERT）会导致排名反转。",
+      "当前TTS评估方法存在混淆因素，验证器与TTS模型之间的潜在对齐可能使BoN效果被高估，需重新审视评估标准。",
+      "该发现提示研究者在使用ASR作为验证器时需注意家族偏差，并建议采用多家族ASR或更鲁棒的评估协议。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

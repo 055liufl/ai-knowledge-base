@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260710-031",
+  "title": "Different Teachers, Different Capabilities: Sub-1B On-Device Distillation for Structured Text Enrichment",
+  "source_url": "https://arxiv.org/abs/2607.08268",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了将大规模语言模型的结构化文本提取能力蒸馏到小型设备端模型的方法。具体任务是将新闻文章映射为包含简短摘要和五个分类标签的JSON对象。研究者使用8B参数的推理模型（deepseek-r1:8b）作为教师模型，通过QLoRA方法将知识蒸馏到0.6B参数的学生模型（Qwen3-0.6B）上。论文重点评估了蒸馏在不同子任务上的实际效果，发现小模型在部分任务上能接近教师模型的性能，同时大幅降低延迟和成本。这项工作对于在资源受限设备上部署高效的结构化信息提取系统具有重要意义，展示了模型蒸馏在特定任务上的可行性和局限性。",
+  "tags": [
+    "Model Distillation",
+    "Structured Extraction",
+    "On-Device AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T10:59:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将8B教师模型蒸馏到0.6B学生模型可在部分结构化提取任务上保持接近的性能，显著降低延迟和成本",
+      "不同子任务（摘要生成与分类标签）的蒸馏效果存在差异，需要针对性地评估",
+      "QLoRA方法有效支持了跨参数规模的蒸馏，为设备端部署提供了实用路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260710-053",
+  "title": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+  "source_url": "https://arxiv.org/abs/2607.08740",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种受Lisp启发的、语言无关的概念模型，用于解决大语言模型（LLM）应用中工作流的语义持久化问题。现有工作流系统主要关注执行层面的问题（如工具调用、检索、分支、检查点和人工审批），但缺乏对工作流定义、执行状态和中间结果的结构化语义表示。作者借鉴了符号形式、对象标识和活镜像（live-image）思维三个核心概念，将其作为解释性透镜而非具体实现约束，构建了一个统一的工作流知识表示框架。该模型允许工作流定义、执行轨迹和中间产物以结构化、可查询、可重用的方式持久化，从而支持工作流的调试、优化、组合和跨会话复用。论文通过多个示例展示了该模型如何增强LLM应用的透明度和可控性，例如通过对象标识追踪工作流中的实体状态变化，以及利用活镜像思维实现工作流的动态修改和热更新。这项工作为构建更健壮、可解释的LLM应用提供了理论基础，尤其适用于需要复杂多步骤推理和工具编排的场景。",
+  "tags": [
+    "LLM",
+    "Workflow",
+    "Semantic Persistence",
+    "Lisp"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:39Z",
+  "collected_at": "2026-07-10T11:01:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种受Lisp启发的概念模型，通过符号形式、对象标识和活镜像思维三个透镜，为LLM工作流提供语义持久化框架，解决了现有系统仅关注执行层面而忽视知识表示的问题。",
+      "该模型语言无关，不绑定具体实现，允许工作流定义、执行状态和中间结果以结构化方式持久化，支持调试、优化、组合和跨会话复用。",
+      "通过对象标识追踪工作流中实体状态变化，利用活镜像思维实现工作流的动态修改和热更新，增强了LLM应用的透明度和可控性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

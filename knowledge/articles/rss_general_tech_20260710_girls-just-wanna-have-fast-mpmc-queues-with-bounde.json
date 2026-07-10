@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260710-006",
+  "title": "Girls just wanna have fast MPMC queues with bounded waiting",
+  "source_url": "https://nahla.dev/blog/waitfree_queue/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了一种基于等待自由（wait-free）算法的多生产者多消费者（MPMC）队列实现，重点解决了有界等待（bounded waiting）问题。作者通过详细的技术分析和代码示例，展示了如何利用原子操作和内存排序保证在高并发场景下，生产者和消费者操作的无锁、无等待特性。该队列适用于实时系统、高性能计算和低延迟应用，如游戏引擎、金融交易系统等。文章还对比了传统锁机制和锁自由（lock-free）方案的性能瓶颈，强调了等待自由算法在避免线程饥饿和死锁方面的优势。对于需要极致性能的开发者而言，这是一种重要的数据结构优化方案。",
+  "tags": [
+    "MPMC",
+    "wait-free",
+    "concurrency",
+    "queue"
+  ],
+  "author": null,
+  "published_at": "2026-07-10T10:54:37Z",
+  "collected_at": "2026-07-10T10:56:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "等待自由算法消除了锁竞争和线程饥饿，适合高并发场景。",
+      "有界等待保证了每个操作在有限步骤内完成，提升实时性。",
+      "原子操作和内存排序是实现无锁队列的关键技术。",
+      "该队列在低延迟应用中比传统锁机制有显著性能优势。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
