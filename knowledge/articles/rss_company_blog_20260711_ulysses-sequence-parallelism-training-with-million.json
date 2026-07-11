@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260711-043",
+  "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+  "source_url": "https://huggingface.co/blog/ulysses-sp",
+  "source_platform": "rss_company_blog",
+  "summary": "Ulysses Sequence Parallelism 是一种用于训练超长上下文（百万级 token）的大型语言模型（LLM）的并行策略。该技术通过将输入序列在多个设备间进行分片，并利用高效的通信原语（如 all-to-all）来减少内存占用和计算瓶颈，从而实现在有限资源下训练具有百万 token 上下文的模型。与传统的张量并行或流水线并行不同，Ulysses 专注于序列维度的并行化，特别适用于需要处理极长序列的场景，如文档级理解、代码生成和长视频分析。该博客文章由 Hugging Face 发布，详细介绍了其原理、实现细节和性能优势，并提供了与现有框架（如 PyTorch FSDP）的集成示例。Ulysses 的出现解决了长上下文训练中的关键挑战，即内存爆炸和通信开销，使得研究人员和开发者能够更高效地探索长序列模型。其创新性在于将序列并行与现有的分布式训练范式结合，无需修改模型架构即可扩展上下文长度，这为 NLP 领域的长上下文应用提供了重要基础设施。",
+  "tags": [
+    "LLM",
+    "分布式训练",
+    "序列并行",
+    "长上下文"
+  ],
+  "author": null,
+  "published_at": "2026-07-11T09:37:50Z",
+  "collected_at": "2026-07-11T09:44:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Ulysses Sequence Parallelism 通过将序列分片到多个设备，显著降低了单设备内存需求，使得训练百万 token 上下文成为可能。",
+      "该技术利用 all-to-all 通信实现高效的数据交换，避免了传统并行策略在长序列场景下的通信瓶颈。",
+      "与现有框架（如 PyTorch FSDP）兼容，无需修改模型架构即可集成，降低了采用门槛。",
+      "Ulysses 特别适用于需要极长上下文的 NLP 任务，如文档理解、代码生成和多模态分析，推动了长序列模型的实际应用。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

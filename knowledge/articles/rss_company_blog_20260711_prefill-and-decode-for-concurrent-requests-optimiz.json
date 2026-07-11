@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260711-139",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了大型语言模型（LLM）在处理并发请求时的性能优化策略，重点分析了预填充（Prefill）和解码（Decode）两个关键阶段的优化方法。预填充阶段负责处理输入提示并生成键值缓存（KV Cache），而解码阶段则基于该缓存逐步生成输出令牌。文章指出，在并发场景下，预填充和解码的计算特性存在显著差异：预填充是计算密集型任务，适合利用GPU的并行计算能力；解码则是内存密集型任务，受限于内存带宽。针对这一差异，文章提出了一种动态调度策略，通过将预填充和解码请求分离处理，并利用批处理技术提高GPU利用率。具体优化包括：使用更小的批处理大小来减少预填充阶段的延迟，以及通过内存优化（如KV缓存压缩和注意力机制优化）来加速解码阶段。此外，文章还讨论了如何通过请求优先级排序和资源分配来平衡吞吐量和延迟。这些优化方法对于提升LLM在实际应用中的响应速度和并发处理能力具有重要意义，尤其适用于需要实时交互的聊天机器人、代码生成和内容创作等场景。",
+  "tags": [
+    "LLM",
+    "Performance Optimization",
+    "Concurrency",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-11T09:37:50Z",
+  "collected_at": "2026-07-11T09:52:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预填充阶段是计算密集型，解码阶段是内存密集型，两者在并发场景下需要不同的优化策略。",
+      "动态调度策略通过分离预填充和解码请求，并利用批处理技术，能有效提升GPU利用率和系统吞吐量。",
+      "KV缓存压缩和注意力机制优化是降低解码阶段内存瓶颈的关键技术。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

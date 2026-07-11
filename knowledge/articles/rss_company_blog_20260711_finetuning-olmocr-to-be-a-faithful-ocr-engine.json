@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260711-138",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为一个更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够处理复杂的文档布局和手写文本。然而，在原始版本中，olmOCR 在处理某些特定类型的文档（如表格、公式或低质量扫描件）时可能会出现错误或不一致。作者通过收集针对性的训练数据，包括合成数据、真实世界样本以及人工标注的校正数据，对 olmOCR 进行了微调。微调过程采用了低秩适应（LoRA）技术，以保持模型原有能力的同时提升特定场景下的准确性。实验结果显示，微调后的 olmOCR 在表格识别、公式提取和手写文本转录等任务上的错误率显著降低，同时保持了较高的泛化能力。这项工作值得关注，因为它展示了如何通过有针对性的微调，将通用 VLM 转化为特定领域的高精度工具，为文档数字化、自动化数据录入等应用提供了实用方案。此外，作者公开了微调代码和部分数据集，便于社区复现和进一步改进。",
+  "tags": [
+    "OCR",
+    "VLM",
+    "Fine-tuning",
+    "LoRA",
+    "Document Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-07-11T09:37:50Z",
+  "collected_at": "2026-07-11T09:52:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过针对性数据收集和 LoRA 微调，可以显著提升 VLM 在特定 OCR 任务（如表格、公式、手写文本）上的准确性。",
+      "微调后的 olmOCR 在保持泛化能力的同时，错误率大幅降低，证明了领域微调在实用场景中的有效性。",
+      "公开的微调代码和数据集降低了复现门槛，有助于推动 OCR 技术的社区发展。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

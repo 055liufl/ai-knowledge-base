@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260711-121",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）推理服务中，长提示词（prompts）如何阻塞其他请求，并提出了优化性能的策略。文章指出，当处理长提示词时，LLM推理引擎（如vLLM、TGI等）可能会占用大量计算资源，导致后续请求排队等待，从而增加延迟。作者通过实验分析了不同提示词长度对并发请求处理的影响，并提出了几种优化方法：包括动态批处理（dynamic batching）、请求优先级调度、提示词截断或分块处理，以及使用更高效的注意力机制（如FlashAttention）。这些优化旨在减少长提示词对系统吞吐量的负面影响，提升整体响应速度。本文对于部署LLM服务的开发者具有实际指导意义，帮助他们理解并解决长上下文场景下的性能瓶颈。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-11T09:37:50Z",
+  "collected_at": "2026-07-11T09:50:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会阻塞其他请求，导致LLM推理服务延迟增加和吞吐量下降。",
+      "动态批处理和请求优先级调度是缓解长提示词阻塞问题的有效方法。",
+      "使用FlashAttention等高效注意力机制可以降低长上下文计算开销。",
+      "提示词截断或分块处理能减少单个请求的资源占用，提升并发能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
