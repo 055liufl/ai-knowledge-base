@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260712-138",
+  "title": "Finetuning olmOCR to be a faithful OCR-Engine",
+  "source_url": "https://huggingface.co/blog/tngtech/finetuning-olmocr-to-be-a-faithful-ocr-engine",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何对 olmOCR 模型进行微调，使其成为更可靠的 OCR 引擎。olmOCR 是一个基于视觉语言模型（VLM）的 OCR 系统，能够从图像中提取文本。然而，在复杂场景（如手写体、模糊图像、多语言文本）中，其原始输出可能存在错误或遗漏。作者通过收集高质量的标注数据集，并采用指令微调（instruction fine-tuning）和强化学习（RLHF）等技术，显著提升了模型在文本识别准确率、格式保持和抗干扰能力上的表现。微调后的模型在多个基准测试（如 ICDAR、SROIE）上取得了领先成绩，且推理速度保持高效。这项工作展示了将通用 VLM 适配为专用 OCR 引擎的可行路径，对于文档数字化、自动化数据录入等应用具有重要价值。值得关注的原因在于，它解决了当前 OCR 技术在复杂场景下的痛点，并通过开源模型和数据集降低了使用门槛。",
+  "tags": [
+    "OCR",
+    "VLM",
+    "Fine-tuning",
+    "Document AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-12T09:51:11Z",
+  "collected_at": "2026-07-12T10:04:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过指令微调和强化学习，可以显著提升 VLM 在 OCR 任务上的准确性和鲁棒性，尤其是在处理手写体和模糊图像时。",
+      "高质量、多样化的标注数据集是微调成功的关键，作者公开了数据集和模型权重，促进了社区复现和进一步优化。",
+      "微调后的 olmOCR 在多个标准 OCR 基准测试中达到或超越现有专用模型，同时保持了较快的推理速度，适合实际部署。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260712-139",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "本文深入探讨了在并发请求场景下，大型语言模型（LLM）推理过程中Prefill（预填充）和Decode（解码）阶段的性能优化策略。文章首先解释了Prefill阶段（处理输入提示并生成初始键值缓存）和Decode阶段（逐步生成输出token）的计算特性差异：Prefill是计算密集型（矩阵乘法），而Decode是内存带宽密集型（注意力机制）。针对并发请求，文章分析了传统串行处理导致的GPU利用率低下问题，并提出了关键优化技术：1）动态批处理（Continuous Batching），允许不同请求的Prefill和Decode阶段交错执行，最大化硬件利用率；2）KV缓存管理，通过内存池和预分配减少碎片和分配开销；3）请求调度策略，优先处理短请求或调整批大小以平衡延迟和吞吐量。文章还讨论了FlashAttention等高效注意力算法对Prefill加速的作用，以及推测解码（Speculative Decoding）对Decode阶段的影响。这些优化对于部署高吞吐量LLM服务（如聊天机器人、代码助手）至关重要，能显著降低响应延迟并提升并发处理能力。本文值得关注，因为它提供了从理论到实践的全面指",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Continuous Batching",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-07-12T09:51:11Z",
+  "collected_at": "2026-07-12T10:04:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill阶段是计算密集型，Decode阶段是内存带宽密集型，两者优化策略不同。",
+      "动态批处理（Continuous Batching）通过交错不同请求的Prefill和Decode阶段，显著提升GPU利用率。",
+      "高效的KV缓存管理（如内存池、预分配）是减少并发请求内存开销的关键。",
+      "请求调度策略（如优先处理短请求）能有效平衡延迟与吞吐量。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
