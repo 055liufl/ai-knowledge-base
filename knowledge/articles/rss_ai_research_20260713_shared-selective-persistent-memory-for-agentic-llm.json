@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-021",
+  "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+  "source_url": "https://arxiv.org/abs/2607.09493",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“共享选择性持久内存”（Shared Selective Persistent Memory）的机制，用于解决智能体LLM系统在多轮工具使用中面临的上下文丢失问题。在当前的智能体系统中，每个会话从零开始，丢弃了之前会话中形成的配置选择、领域约束、数据模式和工具使用模式，导致效率低下。简单地持久化整个对话历史不仅消耗大量token，还会因引入无关上下文而降低生成质量。该机制通过选择性持久化关键上下文信息，并在不同会话间共享，从而在保持token效率的同时提升生成质量。论文可能涉及如何识别和存储重要上下文、如何在不同会话中检索和重用这些信息，以及如何平衡持久化与遗忘。这项工作对于提升智能体系统的连续性和效率具有重要意义，尤其是在代码生成、多轮交互和复杂任务执行等场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Context Management"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:17:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体LLM系统面临会话间上下文丢失问题，导致重复工作和效率低下。",
+      "简单持久化整个对话历史不可行，因为无关上下文会降低生成质量。",
+      "共享选择性持久内存机制通过选择性存储和跨会话共享关键上下文，平衡了token效率与生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

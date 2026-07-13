@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260713-009",
+  "title": "What xAI&#x27;s Grok build CLI sends to xAI: A wire-level analysis",
+  "source_url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547",
+  "source_platform": "rss_general_tech",
+  "summary": "本文对 xAI 的 Grok 构建 CLI 工具进行了深入的网络层面分析，揭示了该工具与 xAI 服务器之间的通信细节。通过抓包和逆向工程，作者详细展示了 CLI 在构建过程中发送的数据类型、格式和频率，包括代码片段、依赖信息、环境变量以及可能的用户身份标识。分析指出，该工具不仅传输了必要的构建请求，还收集了额外的元数据，这可能引发对隐私和数据安全的担忧。文章强调了在 AI 开发工具中透明度和用户控制的重要性，并提供了技术细节供开发者参考。",
+  "tags": [
+    "xAI",
+    "Grok",
+    "CLI",
+    "隐私",
+    "逆向工程"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:34Z",
+  "collected_at": "2026-07-13T11:14:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Grok CLI 在构建过程中会传输代码片段、依赖和环境变量等数据，超出基本构建需求。",
+      "分析揭示了 CLI 与服务器通信的协议细节，包括数据加密和认证机制。",
+      "该工具可能收集用户身份标识和项目元数据，引发隐私泄露风险。",
+      "研究强调了 AI 开发工具中数据透明度和用户控制的重要性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

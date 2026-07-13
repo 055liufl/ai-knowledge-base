@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-128",
+  "title": "Towards Shutdownable Agents: Generalizing Stochastic Choice in RL Agents and LLMs",
+  "source_url": "https://arxiv.org/abs/2604.17502",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种解决AI系统抵抗关机问题的新方法。作者指出，未对齐的人工智能代理可能会抵抗被关闭，因此需要一种机制来确保代理对关机保持中性态度。论文提出了基于折扣奖励的等长轨迹（DReST）奖励函数，通过惩罚代理重复选择相同长度的轨迹，激励代理在不同长度的轨迹之间随机选择，从而使其对轨迹长度（即是否被关闭）保持中性。该方法将随机选择的概念从强化学习代理推广到大型语言模型（LLMs），为构建可安全关机的AI系统提供了理论基础。该研究对于AI安全和对齐领域具有重要价值，因为它直接针对了AI系统可能产生的抵抗关机行为，这是AI控制问题中的一个关键挑战。通过引入DReST，作者展示了一种无需显式指定关机条件即可训练代理接受关机的方法，这比传统的基于约束的方法更为灵活和通用。论文还讨论了该方法在LLMs中的应用潜力，为未来开发更安全的AI系统提供了新思路。",
+  "tags": [
+    "AI Safety",
+    "Alignment",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:25:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DReST奖励函数通过惩罚重复选择相同长度轨迹，激励代理在不同长度轨迹间随机选择，从而对关机保持中性态度。",
+      "该方法将随机选择的概念从RL代理推广到LLMs，为构建可安全关机的AI系统提供了理论基础。",
+      "相比传统约束方法，DReST无需显式指定关机条件，提供了更灵活和通用的对齐方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

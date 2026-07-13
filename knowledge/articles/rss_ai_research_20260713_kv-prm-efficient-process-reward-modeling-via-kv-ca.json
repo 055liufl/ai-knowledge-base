@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-010",
+  "title": "KV-PRM: Efficient Process Reward Modeling via KV-Cache Transfer for Multi-Agent Test-Time Scaling",
+  "source_url": "https://arxiv.org/abs/2607.09153",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为KV-PRM的新型过程奖励模型，旨在解决多智能体测试时扩展中的计算瓶颈问题。传统的基于文本的过程奖励模型（PRMs）在长序列多智能体交互中，需要从头重新编码整个轨迹文本，导致计算成本随序列长度L呈二次方增长，严重限制了扩展效率。KV-PRM通过利用KV-Cache传输机制，在智能体间共享和复用键值缓存，避免了重复编码，从而将评分成本降低为线性复杂度。该方法特别适用于多智能体系统，其中多个智能体协同生成轨迹，通过高效传递中间状态，显著加速了测试时扩展过程。实验表明，KV-PRM在保持甚至提升奖励模型准确性的同时，大幅减少了计算开销，为大规模多智能体强化学习和推理提供了实用解决方案。该工作结合了过程奖励建模、KV-Cache优化和多智能体协作，具有重要的工程和理论价值。",
+  "tags": [
+    "Process Reward Model",
+    "KV-Cache",
+    "Multi-Agent",
+    "Test-Time Scaling",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:16:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV-PRM通过KV-Cache传输机制，将多智能体轨迹评分成本从二次方降低为线性，解决了长序列计算瓶颈。",
+      "该方法在保持过程奖励模型准确性的同时，显著提升测试时扩展效率，适用于大规模多智能体系统。",
+      "KV-PRM展示了缓存复用技术在强化学习和推理中的潜力，为高效模型设计提供了新思路。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

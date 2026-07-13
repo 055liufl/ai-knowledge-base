@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-036",
+  "title": "LieBN: Batch Normalization over Lie Groups",
+  "source_url": "https://arxiv.org/abs/2607.08783",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 LieBN 的新型批归一化方法，专门针对李群流形上的数据设计。在机器学习的许多任务中，流形值测量（如旋转矩阵、姿态等）非常常见，而深度神经网络（DNN）已被扩展到处理这类数据。然而，现有的黎曼归一化方法大多针对特定流形设计，或者无法有效归一化流形上的样本分布。LieBN 通过在李群流形上定义均值和方差，并利用李群的对数映射和指数映射，实现了对任意李群流形上数据的批归一化。该方法不仅具有理论上的优雅性，还能显著提升模型在旋转矩阵、特殊正交群等流形数据上的训练稳定性和性能。这项研究值得关注，因为它填补了李群流形归一化技术的空白，为机器人、计算机视觉、医学图像分析等领域中涉及流形数据的深度学习任务提供了更通用的工具。实验表明，LieBN 在多个基准数据集上优于现有的黎曼归一化方法，展示了其强大的实用性和泛化能力。",
+  "tags": [
+    "Batch Normalization",
+    "Lie Groups",
+    "Manifold Learning",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:18:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LieBN 是首个通用且高效的批归一化方法，适用于任意李群流形，解决了现有黎曼归一化方法对流形类型的限制。",
+      "该方法通过李群的对数映射和指数映射，在流形上定义均值和方差，实现了对样本分布的有效归一化，提升了训练稳定性。",
+      "在多个涉及旋转矩阵和特殊正交群数据的基准测试中，LieBN 显著优于现有方法，展示了其在实际应用中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

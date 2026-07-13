@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-068",
+  "title": "IB-Flow: Information Bottleneck-Guided CFG Distillation for Few-Step Text-to-Image Generation",
+  "source_url": "https://arxiv.org/abs/2607.09133",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了IB-Flow，一种基于信息瓶颈（Information Bottleneck）引导的CFG蒸馏方法，用于实现少步文本到图像生成。当前大规模文本到图像生成模型虽然视觉性能卓越，但依赖多步迭代求解器导致推理延迟严重。少步蒸馏针对分类器自由引导（CFG）轨迹已成为流行的双维度压缩范式，但现有框架受限于粗粒度的盲目注入范式，持续强制CFG条件而忽略信息冗余。IB-Flow通过信息瓶颈理论动态选择关键CFG信息，在蒸馏过程中自适应地压缩冗余条件，从而在少步生成中保持高质量图像输出。该方法在多个基准数据集上验证了有效性，显著减少了推理步骤（如从50步降至4步）同时保持或提升生成质量，为实时文本到图像生成提供了高效解决方案。这项研究值得关注，因为它解决了生成模型部署中的核心瓶颈——推理速度，并通过理论驱动的信息选择机制超越了传统启发式方法，具有实际应用潜力。",
+  "tags": [
+    "Text-to-Image",
+    "CFG Distillation",
+    "Information Bottleneck",
+    "Few-Step Generation",
+    "Diffusion Models"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:20:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出信息瓶颈引导的CFG蒸馏框架，通过动态选择关键条件信息减少冗余，实现少步生成中高质量图像输出。",
+      "在多个基准上验证，将推理步骤从50步降至4步，同时保持或提升生成质量，显著降低推理延迟。",
+      "克服了现有粗粒度盲目注入范式的局限，为实时文本到图像生成提供了理论驱动的压缩方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

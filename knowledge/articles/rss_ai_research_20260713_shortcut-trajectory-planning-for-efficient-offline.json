@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-085",
+  "title": "Shortcut Trajectory Planning for Efficient Offline Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.09336",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Shortcut Trajectory Planning (STP) 的离线强化学习方法，旨在解决扩散模型在轨迹规划中推理成本高的问题。传统的扩散模型通过迭代去噪生成轨迹，虽然性能优异，但计算开销大。一致性模型通过教师-学生蒸馏减少采样步数，但训练成本高且不稳定。STP 是一种基于模型的离线强化学习方法，它通过直接学习从初始状态到目标状态的“捷径”轨迹，避免了多步迭代或蒸馏过程。该方法在多个离线强化学习基准任务上取得了与扩散模型相当或更优的性能，同时显著降低了推理和训练成本。这项工作值得关注，因为它提供了一种高效且稳定的轨迹规划方案，有望推动离线强化学习在机器人、自动驾驶等实时决策场景中的应用。",
+  "tags": [
+    "Offline RL",
+    "Trajectory Planning",
+    "Diffusion Model",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:21:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "STP 通过直接学习捷径轨迹，避免了扩散模型的迭代去噪和一致性模型的蒸馏过程，大幅降低了推理和训练成本。",
+      "该方法在多个离线强化学习基准上保持了与扩散模型相当的性能，同时提升了计算效率。",
+      "STP 的稳定性优于基于蒸馏的方法，因为它不依赖两阶段训练，减少了训练中的不稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

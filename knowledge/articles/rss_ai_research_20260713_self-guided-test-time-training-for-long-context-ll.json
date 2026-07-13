@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260713-093",
+  "title": "Self-Guided Test-Time Training for Long-Context LLMs",
+  "source_url": "https://arxiv.org/abs/2607.09415",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“自引导测试时训练”（Self-Guided Test-Time Training）的方法，旨在提升大型语言模型（LLM）在处理长上下文时的表现。尽管当前模型支持更长的上下文窗口，但实际应用中，随着输入长度增加，模型准确率往往会下降，难以有效定位和利用关键证据。该方法通过在测试阶段对模型进行自适应训练，利用模型自身生成伪标签或自监督信号，引导模型关注长文本中的相关部分，从而改善长上下文利用率。实验表明，该方法在多个长文本基准测试中显著提升了性能，且无需额外标注数据。这项研究对于提升LLM在文档分析、法律文本处理、科研论文阅读等长上下文场景中的实用性具有重要意义，为缓解长上下文退化问题提供了一种高效、低成本的解决方案。",
+  "tags": [
+    "LLM",
+    "Test-Time Training",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:22:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文处理中，模型准确率随输入长度增加而下降，表明现有模型难以有效利用长文本中的关键证据。",
+      "自引导测试时训练通过测试阶段的自适应训练，利用模型自身生成伪标签，无需额外标注即可提升长上下文利用率。",
+      "该方法在多个长文本基准测试中取得显著性能提升，为缓解长上下文退化问题提供了高效、低成本的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

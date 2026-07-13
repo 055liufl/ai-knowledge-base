@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-098",
+  "title": "Practical Source Code Recovery from Binary Functions Using Anchor-Based Retrieval and LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.09452",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种实用的从二进制函数恢复源代码的流水线，结合了逆向工程、基于锚点的源代码检索和大语言模型推理。其核心方法不是生成近似的反编译伪代码，而是通过提取二进制函数中的锚点（如字符串、常量、外部调用和可用函数）来从源代码数据库中检索匹配的源函数。这种方法显著提高了恢复的准确性和实用性，尤其适用于存在源代码库的场景（如开源软件或内部代码库）。该工作值得关注，因为它解决了传统反编译工具在恢复语义信息（如变量名、注释）方面的局限性，并展示了LLM在逆向工程中的新应用方向。通过将检索与推理结合，它可能改变二进制安全分析、漏洞研究和代码审计的工作流程。",
+  "tags": [
+    "LLM",
+    "Reverse Engineering",
+    "Binary Analysis",
+    "Code Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:22:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出基于锚点的检索方法，从二进制函数中提取字符串、常量等特征，实现高精度的源代码匹配，而非生成伪代码。",
+      "结合LLM推理增强检索结果，处理模糊匹配和上下文理解，提升恢复的完整性和可用性。",
+      "该流水线在存在源代码库的场景下（如开源软件）具有实际应用价值，可辅助漏洞分析和代码审计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

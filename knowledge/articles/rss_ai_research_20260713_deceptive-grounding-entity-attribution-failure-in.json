@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-086",
+  "title": "Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2607.09349",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的检索增强生成（RAG）评估缺陷——欺骗性归因（Deceptive Grounding, DG）。传统RAG评估仅检查模型生成内容是否与检索文档事实一致，但忽略了检索证据是否被正确归因到查询实体。在临床RAG场景中，模型可能将药物Y的临床证据错误地归因于查询的药物X，却仍能通过所有自动化检查（零幻觉、近乎完美的忠实度、真实引用）。作者通过实验展示了这种失败模式，并强调了当前评估指标在实体级归因上的盲区。该研究对RAG系统的可靠性提出了重要警示，尤其在医疗等高风险领域，错误的实体归因可能导致严重后果。论文值得关注，因为它揭示了现有评估范式的根本性漏洞，并推动开发更细粒度的归因验证方法。",
+  "tags": [
+    "RAG",
+    "Evaluation",
+    "Clinical NLP",
+    "Entity Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:21:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前RAG评估仅关注事实一致性，忽略了检索证据与查询实体之间的正确归因，导致欺骗性归因失败模式。",
+      "在临床RAG中，模型可能将其他实体的证据错误归因于查询实体，但仍能通过所有现有自动化检查。",
+      "该研究揭示了现有评估指标在实体级归因上的盲区，对高风险领域（如医疗）的RAG应用构成严重威胁。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

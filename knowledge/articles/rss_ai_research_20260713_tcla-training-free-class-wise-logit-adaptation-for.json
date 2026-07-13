@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-105",
+  "title": "TCLA: Training-Free Class-wise Logit Adaptation for Medical Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2607.09562",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为TCLA（Training-Free Class-wise Logit Adaptation）的方法，用于提升医学视觉语言模型（VLMs）在分布外（OOD）数据上的零样本性能。医学VLMs在预训练后虽展现出强大的零样本能力，但由于领域偏移和类别偏差，其在OOD数据上的表现会显著下降。现有的少样本适应方法通常需要引入额外的可训练组件，这在极低数据量（如单样本）场景下不稳定，且对不同医学数据的鲁棒性不足。TCLA是一种无需训练的方法，通过类别级别的logit自适应来调整模型输出，从而在不增加训练负担的情况下缓解领域偏移和类别偏差问题。该方法在多个医学数据集上进行了验证，包括X光、CT和MRI等模态，实验结果表明TCLA在1-shot和5-shot场景下均优于现有方法，且计算开销极低。这项工作值得关注，因为它提供了一种高效、鲁棒的解决方案，能够在不依赖大量标注数据的情况下提升医学VLMs的泛化能力，对于推动医学影像分析在实际临床中的应用具有重要意义。",
+  "tags": [
+    "Medical VLM",
+    "Domain Adaptation",
+    "Zero-shot Learning",
+    "OOD Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:23:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TCLA是一种无需训练的类别级logit自适应方法，有效解决了医学VLMs在分布外数据上的性能下降问题。",
+      "该方法在极低数据量（如1-shot）场景下表现出色，避免了传统少样本适应方法的不稳定性。",
+      "TCLA在多种医学影像模态（X光、CT、MRI）上均验证了其鲁棒性和泛化能力，计算开销极低。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

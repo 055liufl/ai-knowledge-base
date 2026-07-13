@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-035",
+  "title": "Director: Accelerating Distributed MoE Serving via Online Proactive Expert Placement",
+  "source_url": "https://arxiv.org/abs/2607.08782",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Director 的在线主动专家放置方法，旨在加速分布式混合专家（MoE）模型的推理服务。在专家并行范式下，GPU 间的通信和计算延迟高度依赖于专家在 GPU 上的物理放置位置。现有方法通常基于历史请求的专家激活模式进行静态或被动优化，但在面对多样化且快速变化的请求模式时表现不佳。Director 通过在线主动预测未来请求的专家激活分布，并动态调整专家放置策略，从而最小化通信开销并平衡计算负载。该方法结合了轻量级预测模型和实时调度算法，能够在不显著增加系统开销的前提下显著提升服务吞吐量并降低延迟。实验结果表明，Director 在多种 MoE 模型和请求分布下均优于现有基线方法，尤其在高动态场景中优势明显。这项工作对于大规模 MoE 模型的高效部署具有重要实践意义，为分布式推理系统的优化提供了新思路。",
+  "tags": [
+    "MoE",
+    "Expert Parallelism",
+    "Distributed Inference",
+    "Online Scheduling",
+    "LLM Serving"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:18:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有专家放置方法依赖历史模式，难以适应快速变化的请求分布，导致通信和计算效率下降。",
+      "Director 通过在线预测未来专家激活分布并主动调整放置，显著降低了动态场景下的通信延迟。",
+      "轻量级预测模型与实时调度算法的结合，使得优化开销可控，同时提升了系统吞吐量和响应速度。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

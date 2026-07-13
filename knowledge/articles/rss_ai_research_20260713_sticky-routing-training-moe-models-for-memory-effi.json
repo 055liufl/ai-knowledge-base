@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-033",
+  "title": "Sticky Routing: Training MoE Models for Memory-Efficient Inference",
+  "source_url": "https://arxiv.org/abs/2607.08780",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 StickyMoE，一种用于训练混合专家（MoE）模型以实现内存高效推理的新方法。在边缘设备上，MoE 模型虽然每个 token 只激活稀疏的专家子集，但连续 token 频繁激活不同专家，导致权重在慢速存储和快速内存之间不断交换，造成推理瓶颈。现有解决方案要么是系统级缓存启发式方法，要么是事后路由器微调，均未在预训练阶段解决根本原因。StickyMoE 引入可微的路由一致性损失，鼓励路由器在连续 token 间保持专家激活的稳定性，从而减少权重交换频率。该方法在预训练过程中直接优化路由一致性，无需额外系统级缓存或后处理微调。实验表明，StickyMoE 在保持模型质量的同时，显著降低了推理时的内存访问开销和延迟。这项工作值得关注，因为它从算法层面解决了 MoE 模型在资源受限设备上的部署难题，为高效边缘推理提供了新思路，且与现有系统优化方法互补。",
+  "tags": [
+    "MoE",
+    "Edge Inference",
+    "Memory Efficiency",
+    "Routing Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:17:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "StickyMoE 通过可微路由一致性损失在预训练阶段直接优化专家激活的稳定性，从根源减少权重交换。",
+      "该方法无需额外系统级缓存或后处理微调，与现有优化技术互补，适用于资源受限的边缘设备。",
+      "实验证明 StickyMoE 在保持模型质量的同时，显著降低推理时的内存访问开销和延迟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-050",
+  "title": "The Patchwork Problem in LLM-Generated Code",
+  "source_url": "https://arxiv.org/abs/2607.08981",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《The Patchwork Problem in LLM-Generated Code》揭示了大型语言模型生成代码中的一个关键问题：生成的代码在局部上看似正确（如编译通过、测试通过），但在全局部署时却会失败。这种失败的根本原因通常是结构性的而非逻辑性的。例如，生成的端点引用了项目中从未声明的配置键，导入的包在注册表中不存在，或者新路由遗漏了应用于所有同级端点的身份验证守卫。每个补丁在局部有效，但在全局上不连贯。该问题被定义为“拼凑问题”，强调了LLM生成代码在系统集成和一致性方面的脆弱性。这一发现对于理解LLM在软件工程中的局限性至关重要，并提示开发者需要更严格的全局验证和集成测试，以避免部署后的意外故障。论文通过具体案例和系统分析，展示了这一现象的普遍性和潜在风险，为改进代码生成模型和开发工具提供了重要方向。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Software Engineering",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:19:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM生成的代码在局部测试中可能表现正确，但在全局部署时因结构不一致而失败。",
+      "问题根源在于生成的代码缺乏对项目整体上下文和依赖关系的全局一致性。",
+      "该现象被定义为‘拼凑问题’，强调了局部有效性与全局不连贯之间的冲突。",
+      "需要开发更强大的全局验证机制和集成测试方法来检测此类结构性缺陷。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

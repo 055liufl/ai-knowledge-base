@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-127",
+  "title": "Rectification Difficulty and Optimal Sample Allocation in LLM-Augmented Surveys",
+  "source_url": "https://arxiv.org/abs/2604.17267",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究在LLM辅助调查中，如何通过优化人类样本分配来提升估计精度。核心问题是在预算有限的情况下，如何利用低成本但准确性不一的LLM预测来辅助人类调查。作者提出了一个结合预测驱动推断的框架，通过量化每个问题的修正难度（即LLM预测与真实值的偏差），来动态分配有限的人类样本。该框架包含三个组成部分：首先，基于预测驱动推断，定义问题特定的修正难度；其次，建立样本分配优化模型，在给定预算下最小化整体估计误差；最后，通过理论分析和实验验证，证明最优分配策略能显著提升估计效率。研究的关键发现是，修正难度高的任务需要更多人类样本，而修正难度低的任务可以更多依赖LLM预测。该工作为混合调查设计提供了理论指导，具有重要的实践意义，尤其是在社会科学、市场调研和公共政策等领域，能够帮助研究者更高效地利用LLM与人类样本的结合。",
+  "tags": [
+    "LLM",
+    "Survey",
+    "Sample Allocation",
+    "Prediction-Powered Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:24:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了基于修正难度的样本分配框架，量化了LLM预测与人类真实值的偏差对估计精度的影响",
+      "通过优化模型证明，将有限人类样本优先分配给修正难度高的任务，能显著降低整体估计误差",
+      "该框架为混合调查设计提供了理论依据，有助于在预算约束下平衡LLM与人类样本的使用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

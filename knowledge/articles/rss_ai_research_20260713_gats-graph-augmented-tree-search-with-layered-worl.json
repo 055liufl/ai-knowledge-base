@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-003",
+  "title": "GATS: Graph-Augmented Tree Search with Layered World Models for Efficient Agent Planning",
+  "source_url": "https://arxiv.org/abs/2607.08894",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GATS（Graph-Augmented Tree Search）的新型智能体规划框架，旨在解决现有LLM智能体（如LATS和ReAct）在多步规划任务中过度依赖LLM推理导致的高计算成本和随机性问题。GATS通过结合基于UCB1的系统性树搜索与分层世界模型，在规划过程中完全消除了LLM调用，从而显著提升效率。该框架利用图结构增强搜索空间，通过分层世界模型对状态进行抽象和预测，使得智能体能够在不频繁调用昂贵LLM的情况下进行高效、确定性的规划。实验表明，GATS在多个复杂规划基准上实现了与现有方法相当或更优的性能，同时大幅降低了计算开销。这项研究对于开发更实用、更高效的LLM智能体系统具有重要意义，特别是在资源受限或需要实时响应的应用场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Planning",
+    "Tree Search"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:15:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GATS通过图增强的树搜索和分层世界模型，在规划阶段完全消除LLM调用，大幅降低计算成本。",
+      "该方法结合UCB1算法进行系统性搜索，提高了规划过程的确定性和效率。",
+      "分层世界模型允许智能体在不同抽象层次上进行状态预测，增强了规划的灵活性和可扩展性。",
+      "实验证明GATS在多个基准上性能与现有方法相当，但计算开销显著减少，为实际部署提供了可能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

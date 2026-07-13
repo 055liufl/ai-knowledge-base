@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260713-096",
+  "title": "Test-Time Scaling for Small VLMs on Multilingual Visual MCQ",
+  "source_url": "https://arxiv.org/abs/2607.09438",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了测试时扩展（Test-Time Scaling, TTS）在小型开源视觉语言模型（VLM）上的迁移效果，特别是在多语言视觉多项选择题（EXAMS-V基准）上的表现。作者比较了自一致性（self-consistency）、描述后推理（describe-then-reason）结合过程奖励模型（PRM）引导的束搜索（beam search），以及两种事后选择器（post-hoc selectors）在Qwen2.5-VL-7B-Instruct和Qwen3.5-4B模型上的效果。研究发现，TTS的有效性高度依赖于运行条件（如模型规模、任务复杂度、搜索策略），而非简单的规模扩展。这一工作挑战了TTS仅适用于大型模型的假设，为小型VLM在资源受限环境下的推理优化提供了新视角，值得关注。",
+  "tags": [
+    "Test-Time Scaling",
+    "Vision-Language Model",
+    "Multilingual",
+    "Reasoning",
+    "Small Model"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:22:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时扩展（TTS）在小型视觉语言模型（如7B和4B参数）上的效果高度依赖于运行条件，而非模型规模本身。",
+      "描述后推理结合PRM引导的束搜索在特定条件下可提升小型VLM的多语言视觉问答性能。",
+      "自一致性方法在小型模型上的表现不如预期，提示需要针对小模型设计更合适的TTS策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

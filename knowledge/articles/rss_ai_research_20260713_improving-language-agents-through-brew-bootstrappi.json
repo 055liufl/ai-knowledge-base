@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-123",
+  "title": "Improving Language Agents through BREW: Bootstrapping expeRientially-learned Environmental knoWledge",
+  "source_url": "https://arxiv.org/abs/2511.20297",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 BREW（Bootstrapping expeRientially-learned Environmental knoWledge）框架，旨在解决基于大语言模型（LLM）的智能体无法从经验中学习的问题。当前 LLM 智能体在执行多步骤任务（如 GUI 自动化、工具使用、数据操作）时，每次新会话都需从头开始探索解决方案，缺乏持续改进能力。BREW 通过将智能体过去的交互轨迹蒸馏成结构化的、可检索的知识库（KB），使智能体能够利用历史经验提升未来任务执行效率。该框架包含三个关键模块：经验蒸馏（将轨迹转化为通用知识）、知识检索（根据当前上下文匹配相关经验）和知识应用（将检索到的知识融入决策过程）。实验表明，BREW 在多种任务上显著提升了智能体的成功率、效率和鲁棒性，特别是在复杂、动态环境中。该工作值得关注，因为它首次系统性地解决了 LLM 智能体的经验学习瓶颈，为构建持续进化的自主智能体提供了实用范式，对自动化、人机交互和 AI 系统可靠性有重要影响。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Knowledge Distillation",
+    "Experience Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:24:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BREW 通过蒸馏历史轨迹为结构化知识库，使 LLM 智能体能够从经验中学习，避免重复探索。",
+      "该框架显著提升了智能体在复杂多步骤任务中的成功率、效率和鲁棒性。",
+      "经验蒸馏、知识检索和知识应用三个模块协同工作，实现了知识的有效复用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

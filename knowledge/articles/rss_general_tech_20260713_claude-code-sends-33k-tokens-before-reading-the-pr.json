@@ -1,0 +1,30 @@
+{
+  "id": "rss-general-tech-20260713-008",
+  "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+  "source_url": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+  "source_platform": "rss_general_tech",
+  "summary": "本文对比了 Claude Code 和 OpenCode 在发送提示词时的 token 开销差异。Claude Code 在读取用户提示词之前会发送约 33,000 个 token，而 OpenCode 仅发送约 7,000 个 token。这种差异主要源于两者在系统提示、工具定义、上下文构建等方面的设计不同。Claude Code 可能包含了更丰富的预置指令、示例和工具描述，导致初始 token 消耗较高；而 OpenCode 则更加精简。对于开发者而言，token 开销直接影响 API 调用成本和响应速度，尤其是在高频交互场景下。该对比揭示了不同 AI 编程助手在效率优化上的取舍，值得关注 token 消耗的开发者参考。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:34Z",
+  "collected_at": "2026-07-13T11:14:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Claude Code 在读取用户提示前发送约 33k token，OpenCode 仅发送约 7k token，差异显著",
+      "token 开销差异源于系统提示、工具定义和上下文构建策略的不同",
+      "较低的 token 开销可降低 API 调用成本并提升响应速度，对高频交互场景尤为重要"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

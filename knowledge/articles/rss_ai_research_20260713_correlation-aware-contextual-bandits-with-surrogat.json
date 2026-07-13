@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-054",
+  "title": "Correlation-Aware Contextual Bandits with Surrogate Rewards for LLM Routing",
+  "source_url": "https://arxiv.org/abs/2607.09015",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于相关性感知的上下文赌博机（Contextual Bandit）框架，用于大语言模型（LLM）路由问题。传统上下文赌博机假设各臂（如不同LLM）条件独立，仅依赖赌博机反馈（如用户点击或评分），但实际中LLM的表现常存在上下文相关的相关性（如不同模型在特定任务上的性能关联），且可获取由机器学习模型生成的替代奖励信号（如模型质量评分），这些信号可能带有噪声或模型误设。论文通过引入相关性感知机制，利用替代奖励信号来改进臂选择策略，从而在LLM路由场景中更高效地平衡探索与利用。该工作值得关注，因为它解决了LLM服务中多模型动态选择的实际挑战，通过结合辅助信号和臂间相关性，有望提升路由系统的响应质量和资源利用率，对AI基础设施和模型部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Contextual Bandits",
+    "Routing",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:19:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出相关性感知的上下文赌博机模型，突破传统条件独立假设，更贴合LLM路由中模型性能的上下文依赖关系。",
+      "利用机器学习模型生成的替代奖励信号作为辅助反馈，缓解了纯赌博机反馈的稀疏性和延迟问题。",
+      "在LLM路由场景中，该方法能有效平衡探索与利用，提升整体响应质量和系统效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

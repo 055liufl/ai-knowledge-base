@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260713-088",
+  "title": "Diversifying to Verify: When Task-Equivalent Programs Differ in Verifiability",
+  "source_url": "https://arxiv.org/abs/2607.09366",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在程序验证中，当多个生成的程序旨在满足相同任务级语义时，实现结构是否会影响自动化可验证性。作者提出了Diversify2Verify，一个基于LLM的分阶段流水线，用于Why3验证框架。该流水线能够推断表示特定的契约，生成并测试多样化的递归程序。研究核心在于通过多样化程序实现来提升验证成功率，即当一种实现难以验证时，其他结构不同的等价实现可能更易于验证。这项工作对于提高程序验证的自动化程度和实用性具有重要意义，尤其适用于需要高可靠性的软件系统开发。",
+  "tags": [
+    "LLM",
+    "Program Verification",
+    "Why3",
+    "Diversification"
+  ],
+  "author": null,
+  "published_at": "2026-07-13T11:11:37Z",
+  "collected_at": "2026-07-13T11:21:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "程序实现的结构多样性可以显著影响自动化验证的难易程度，为验证提供了新的策略。",
+      "Diversify2Verify通过LLM生成多种语义等价但结构不同的程序，并自动推断契约，提高了验证成功率。",
+      "该方法在Why3框架上实现，展示了将大语言模型与传统形式化验证工具结合的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
