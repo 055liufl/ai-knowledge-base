@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-007",
+  "title": "The Verifier is the Curriculum: Execution-Gated Self-Distillation for Cross-Family Game Generation",
+  "source_url": "https://arxiv.org/abs/2607.09709",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“执行门控自蒸馏”（Execution-Gated Self-Distillation）的方法，用于跨家族游戏生成。核心思想是利用一个确定性的、不可欺骗的过滤器——即生成的游戏项目能否在无头引擎下干净启动（strict-launch）——作为训练信号，替代传统基于学习型评判器的后训练方法。通过拒绝采样自蒸馏，该方法在跨家族泛化上取得了显著效果。论文基于GameCraft-Bench基准测试，该测试将自然语言描述映射到可运行的游戏项目。这项研究值得关注，因为它解决了代码生成中代理特征优化的问题，提供了一种无需评判器、基于执行结果的训练范式，显著提升了生成代码的实用性和泛化能力，对游戏开发自动化、代码生成领域具有重要启示。",
+  "tags": [
+    "Code Generation",
+    "Self-Distillation",
+    "Game Generation",
+    "Execution-Gated"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:01:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出执行门控（strict-launch）作为确定性、不可欺骗的过滤器，替代传统学习型评判器，避免代理特征优化。",
+      "拒绝采样自蒸馏方法在跨家族游戏生成中显著提升泛化能力，验证了执行信号的有效性。",
+      "GameCraft-Bench基准测试为自然语言到游戏代码的映射提供了标准化评估平台。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

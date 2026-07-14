@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-098",
+  "title": "Compile, Then Page: Executable SOP Programs and a Capability-Gated Runtime for Procedural LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.11346",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种将标准操作程序（SOP）编译为可执行伪代码，并通过程序引导的栈机器运行时执行的方法，用于增强LLM代理在长周期、条件性、安全关键的企业级任务中的表现。作者设计了一个三臂SOPBench基准测试，对比了纯文本表示、编译后文本表示以及编译后程序引导执行三种方式，在六个模型上的效果。结果表明，编译后的文本表示从未显著降低性能，且在某些情况下提升高达16.0%。该方法通过将SOP约束显式编码为可执行程序，并利用栈机器分页活动帧，实现了LLM的语义执行与程序控制的解耦，提高了复杂流程的可靠性和可解释性。该工作对于构建企业级LLM代理具有重要的实用价值，尤其是在需要严格遵循操作流程的场景中。",
+  "tags": [
+    "LLM Agent",
+    "SOP",
+    "Program-Guided Execution",
+    "Enterprise AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:07:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将SOP编译为可执行伪代码，实现了LLM代理对复杂、安全关键流程的可靠遵循。",
+      "程序引导的栈机器运行时将表示与执行分离，避免了纯文本表示中的歧义和错误。",
+      "在SOPBench基准测试中，编译方法在多个模型上表现稳定，最高提升16.0%，且从未显著降低性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

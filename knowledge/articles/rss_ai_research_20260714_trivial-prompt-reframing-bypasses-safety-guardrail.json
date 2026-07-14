@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-143",
+  "title": "Trivial Prompt Reframing Bypasses Safety Guardrails in Google\\'s MedGemma-4B",
+  "source_url": "https://arxiv.org/abs/2607.09804",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了谷歌MedGemma-4B开源医学语言模型的安全护栏漏洞。研究发现，通过简单的提示重构（如将直接问题改为假设性场景或第三人称叙述），即可绕过模型内置的安全限制，使其输出被明确禁止的内容，包括推荐具体药物剂量、给出确定性诊断、开具治疗方案、判断药物相互作用以及建议跳过紧急护理等。研究量化了模型卡中描述的行为与实际鲁棒行为之间的差距，表明当前的安全防护措施在面对精心设计的提示时极易被突破。这项工作揭示了开源医学模型在部署前需要更严格的安全评估和防护机制，对医疗AI的安全应用具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Medical AI",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:10:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "简单的提示重构（如假设性场景）即可绕过MedGemma-4B的安全护栏，输出被明确禁止的医疗建议",
+      "模型卡描述的行为与实际鲁棒行为存在显著差距，开源医学模型的安全防护远未达到可靠水平",
+      "该研究为医疗AI的安全评估提供了重要方法论，提示需要更严格的对抗性测试和防护机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

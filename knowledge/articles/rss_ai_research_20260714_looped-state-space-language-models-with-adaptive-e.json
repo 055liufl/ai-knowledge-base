@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260714-036",
+  "title": "Looped State-Space Language Models with Adaptive Exit-State Selection",
+  "source_url": "https://arxiv.org/abs/2607.10110",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了循环状态空间语言模型（Looped State-Space Language Models）在自适应退出状态选择（Adaptive Exit-State Selection）方面的应用。传统上，循环语言模型的研究主要集中在Transformer架构上，认为许多推理问题受益于更深的计算而非额外的独立参数。然而，这一原则是否适用于状态空间语言模型（如Mamba）尚不明确。本文提出了循环Mamba（Looped Mamba）和循环混合Mamba-Transformer（Looped Hybrid Mamba-Transformer）架构，这些架构重复应用共享的Mamba或混合模块，以增加计算深度。通过自适应退出状态选择机制，模型能够在推理过程中动态决定何时停止循环，从而在效率和性能之间取得平衡。实验结果表明，循环状态空间模型在多个推理任务上优于传统Transformer循环模型，尤其是在需要深度推理的场景中。这一发现扩展了循环语言模型的设计空间，为状态空间模型在推理密集型任务中的应用提供了新思路。值得关注的是，该工作挑战了Transformer在循环推理中的主导地位，并展示了状态",
+  "tags": [
+    "State-Space Model",
+    "Looped Architecture",
+    "Mamba",
+    "Adaptive Exit",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:03:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "循环状态空间模型（如Looped Mamba）通过重复应用共享模块增加计算深度，在推理任务上表现优于传统Transformer循环模型。",
+      "自适应退出状态选择机制允许模型动态决定循环次数，平衡了计算效率与推理性能。",
+      "该研究首次将循环架构原则从Transformer扩展到状态空间模型，拓宽了循环语言模型的设计空间。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

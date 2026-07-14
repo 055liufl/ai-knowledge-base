@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-085",
+  "title": "The Hidden Footprint: Making Storage a First-Class Metric for LLM Agent Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.11149",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的评估维度——存储足迹（storage footprint），用于衡量LLM Agent在运行后留下的持久化数据，包括日志、上下文快照、检查点和调试追踪。作者开发了AgentFootprint，这是一个跨框架的基准测试，专注于Agent运行后的存储占用。其序列化感知的度量套件能够测量总保留量、通道组成、重复数据、增长趋势、可压缩性以及对话历史重建能力。该工作填补了现有Agent评估体系中的空白，因为当前基准主要关注任务完成度、可靠性和推理成本，而忽略了存储开销。随着Agent系统在生产环境中的部署日益增多，存储足迹可能成为影响成本、隐私和合规性的关键因素。该研究为开发者提供了优化Agent存储策略的量化工具，具有重要的实用价值。",
+  "tags": [
+    "LLM Agent",
+    "Benchmark",
+    "Storage",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:06:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM Agent基准忽略了运行后存储足迹这一关键维度，包括日志、快照和检查点等持久化数据。",
+      "AgentFootprint提供了序列化感知的度量套件，可量化存储占用、重复数据、增长趋势和可压缩性。",
+      "存储足迹评估对于生产环境中的成本控制、隐私保护和合规性至关重要。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

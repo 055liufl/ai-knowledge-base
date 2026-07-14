@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-082",
+  "title": "OS-Pruner: Pruning Chains-of-Thought of Reasoning Models via Optimal Stopping",
+  "source_url": "https://arxiv.org/abs/2607.11089",
+  "source_platform": "rss_ai_research",
+  "summary": "OS-Pruner 提出了一种通过最优停止理论来剪枝推理模型思维链（CoT）的方法。大型语言模型在复杂推理任务中常出现“计算过度思考”现象，即生成冗余推理步骤，增加延迟和成本却不提升准确性。现有方法通常依赖静态思考预算或启发式过滤，缺乏动态适应性。OS-Pruner 将 CoT 剪枝形式化为一个最优停止问题，在推理过程中动态决定何时停止生成后续步骤，从而在保持推理准确性的同时显著减少计算开销。该方法在多个推理基准上验证了有效性，能够自适应地剪枝冗余步骤，降低推理成本。这项工作值得关注，因为它直接针对 LLM 推理效率的关键瓶颈，提供了理论驱动的动态剪枝方案，有望推动更高效、更经济的推理模型部署。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Efficiency",
+    "Optimal Stopping"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:06:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OS-Pruner 将思维链剪枝建模为最优停止问题，实现了动态、自适应的推理步骤控制。",
+      "该方法有效缓解了 LLM 推理中的“计算过度思考”问题，在保持准确性的同时显著降低延迟和计算成本。",
+      "与静态预算或启发式方法相比，OS-Pruner 提供了理论更完备、适应性更强的剪枝策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

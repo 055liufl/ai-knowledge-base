@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-090",
+  "title": "PREF-Gate: Provenance-Constrained Relational Evidence Fusion with Validation-Gated Selection for Graph Fraud Detection",
+  "source_url": "https://arxiv.org/abs/2607.11212",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PREF-Gate的框架，用于解决图数据中的欺诈检测问题。核心挑战在于，图神经网络在利用邻居节点信息时，如果混入了查询节点自身的标签或验证/测试集的标签，会导致信息泄露和模型性能的虚假提升。PREF-Gate通过“来源约束”（provenance-constrained）机制，严格区分无标签的图上下文和有标签的邻居证据，并采用“验证门控选择”（Validation-Gated Selection）来动态决定何时以及如何融合这两类信息。该方法不仅提升了欺诈检测的准确性和鲁棒性，还增强了模型的可审计性，使得决策过程更加透明。该工作对于金融风控、社交网络异常检测等依赖关系数据的领域具有重要价值，因为它解决了实际部署中常见的标签泄露问题，推动了图神经网络在安全敏感场景下的可信应用。",
+  "tags": [
+    "Graph Neural Networks",
+    "Fraud Detection",
+    "Information Leakage",
+    "Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:06:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "明确指出了图欺诈检测中标签信息泄露的根源：邻居证据构建时混入查询节点自身或验证/测试集的标签。",
+      "提出了来源约束机制，严格隔离无标签图上下文与有标签邻居证据，防止信息污染。",
+      "通过验证门控选择动态融合两类信息，在保证模型性能的同时提升可审计性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

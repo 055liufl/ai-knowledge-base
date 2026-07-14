@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-003",
+  "title": "Faithful, Not Corrective: Message-Format Effects in Multi-Hop Agent Relays Are Tier-Dependent",
+  "source_url": "https://arxiv.org/abs/2607.09678",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了多跳LLM代理中消息格式对信息传递准确性的影响。现有文献存在分歧：格式优化研究认为结构化消息能降低成本且不损害准确性，而格式限制研究则发现强制结构会降低生成质量。然而，这些研究均未测量消息经过多跳传递时的效果，其中复制保真度而非单次生成质量起主导作用。作者引入了一种受控的中继实验范式，通过让多个代理依次传递信息，系统比较了不同消息格式（如自由文本、结构化JSON等）在单跳和多跳场景下的表现。初步结果表明，格式效果具有层级依赖性：在单跳中，结构化格式可能表现良好，但在多跳中，由于复制错误累积，自由文本格式反而能保持更高的信息保真度。这一发现挑战了当前普遍采用结构化消息的实践，并为设计更鲁棒的多代理协作系统提供了新视角。该研究对于理解LLM代理间的通信机制、优化多跳信息传递具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Multi-Hop",
+    "Message Format"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:00:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "消息格式对多跳代理中继的影响具有层级依赖性，单跳与多跳场景下的最优格式可能不同。",
+      "结构化消息在单跳中可能有效，但在多跳中因复制错误累积反而降低信息保真度。",
+      "自由文本格式在多跳传递中能保持更高的复制保真度，挑战了当前普遍采用结构化消息的实践。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260714-060",
+  "title": "Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories",
+  "source_url": "https://arxiv.org/abs/2607.10601",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Agentic-DPO的新方法，旨在改进大型语言模型（LLM）智能体的训练。传统上，LLM智能体通过监督式微调（SFT）从专家轨迹中学习，但这种方法仅模仿专家动作序列，未能训练智能体在面临合理错误时选择正确动作。Agentic-DPO通过将偏好学习引入多轮智能体行为优化，结合专家轨迹和对比性错误轨迹，使智能体学会在状态空间中区分正确与错误动作。该方法在多个基准测试中显著优于SFT基线，并展示了更强的泛化能力和鲁棒性。这项研究值得关注，因为它解决了LLM智能体训练中的关键瓶颈——从简单模仿到策略优化，为构建更可靠、更智能的自主代理提供了新范式。其创新性在于将DPO（直接偏好优化）扩展到智能体场景，并设计了针对多轮交互的损失函数，具有较高的实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "DPO",
+    "Preference Learning",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:04:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic-DPO将直接偏好优化（DPO）从单轮文本生成扩展到多轮智能体行为优化，解决了SFT仅模仿动作序列的局限性。",
+      "该方法通过对比专家轨迹与合理错误轨迹，训练智能体在状态空间中学习正确动作选择，显著提升了决策鲁棒性。",
+      "实验表明Agentic-DPO在多个基准上超越SFT基线，并展现出更强的泛化能力，为LLM智能体训练提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

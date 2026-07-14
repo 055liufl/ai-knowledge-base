@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260714-128",
+  "title": "MorphologyFM: A Foundation Model for Morphology-Aware Representation Learning from ECG and Pulse Oximetry Waveforms",
+  "source_url": "https://arxiv.org/abs/2607.09749",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 MorphologyFM 的基础模型，专门用于从心电图（ECG）和脉搏血氧仪（SpO2）波形中学习形态学感知的表示。与现有主要优化重建或预测目标的生理波形基础模型不同，MorphologyFM 明确保留了临床上有意义的波形形态特征。该模型通过自监督学习框架，结合形态学感知的对比学习目标，能够从大规模未标记的波形数据中提取可迁移的表示。其创新之处在于，它不仅仅关注波形的整体结构，还强调局部形态变化（如ST段抬高、T波倒置等）的编码，这些变化对心血管疾病的诊断至关重要。MorphologyFM 在多个下游任务（如心律失常检测、血氧饱和度异常识别）上展示了优越的性能，尤其是在数据稀缺场景下，其迁移学习能力显著优于传统方法。这项工作值得关注，因为它填补了现有基础模型在生理信号形态学细节保留方面的空白，有望推动临床决策支持系统的发展，特别是在远程监护和可穿戴设备应用中。",
+  "tags": [
+    "Foundation Model",
+    "ECG",
+    "Pulse Oximetry",
+    "Self-Supervised Learning",
+    "Healthcare AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:09:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MorphologyFM 通过形态学感知的对比学习，显式保留了ECG和SpO2波形中临床关键的形态特征，如ST段和T波变化。",
+      "该模型在心律失常检测和血氧异常识别等下游任务中，尤其在数据稀缺时，迁移学习性能显著优于传统重建或预测目标的基础模型。",
+      "MorphologyFM 的设计填补了现有生理信号基础模型在形态学细节保留方面的空白，为远程监护和可穿戴设备中的临床决策支持提供了新范式。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

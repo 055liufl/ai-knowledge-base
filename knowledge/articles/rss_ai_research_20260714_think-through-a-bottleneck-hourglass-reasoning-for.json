@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-113",
+  "title": "Think Through a Bottleneck: Hourglass Reasoning for Rigorous Induction",
+  "source_url": "https://arxiv.org/abs/2607.11696",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Hourglass Reasoning”（沙漏推理）的新方法，旨在解决大语言模型在少样本归纳推理中自我精炼（self-refinement）效果不佳的问题。研究发现，仅仅提示模型明确陈述其推断的规则对推理能力的提升微乎其微。关键在于在推理阶段之间实施结构化的隔离，使得信息只能以压缩的符号状态进行传递。Hourglass Reasoning 通过强制不同推理阶段之间的严格上下文隔离，迫使模型在每一步生成一个紧凑的中间表示，从而避免信息泄露和过度依赖原始上下文。该方法在多个归纳推理基准测试上取得了显著改进，展示了其在提升模型严谨推理能力方面的潜力。该工作值得关注，因为它提供了一种新颖且有效的推理架构设计思路，可能对提升LLM的推理可靠性和可解释性产生重要影响。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Induction",
+    "Self-refinement"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:08:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自我精炼在少样本归纳推理中效果有限，单纯要求模型陈述规则并不能有效提升推理能力。",
+      "推理阶段之间的结构化隔离是提升归纳推理质量的关键，信息应以压缩的符号状态传递。",
+      "Hourglass Reasoning 通过强制上下文隔离，迫使模型生成紧凑的中间表示，从而提升推理的严谨性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

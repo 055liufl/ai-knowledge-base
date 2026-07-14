@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-095",
+  "title": "Calibrated e-CUSUM Decoding for Quantized Reasoning Models: Why Token Log-Probability Is the Wrong Observable for Decoding Monitors",
+  "source_url": "https://arxiv.org/abs/2607.11317",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对量化推理模型的校准式e-CUSUM解码监控方法。研究指出，在低比特量化场景下，小规模推理模型的思维链质量可能下降，因此需要解码器侧监控器在生成不可靠时进行干预。作者证明，自然候选指标——中心化token对数概率增量（log p(w_t)+H_t）并非合适的观测变量，因为它在模型自身采样律下是零均值鞅，仅衡量采样自一致性而非生成可靠性。为此，论文引入校准式e-CUSUM程序，通过调整观测变量来更有效地检测量化导致的退化。这项工作对于部署低成本量化推理模型具有重要实践意义，为提升模型在资源受限环境下的可靠性提供了新思路。",
+  "tags": [
+    "Quantization",
+    "Reasoning Models",
+    "Decoding Monitor",
+    "CUSUM"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:07:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "中心化token对数概率增量在模型自身采样律下是零均值鞅，不适合作为解码监控的观测变量",
+      "校准式e-CUSUM方法能更有效地检测量化推理模型中的生成退化",
+      "该研究为低比特量化场景下部署小规模推理模型提供了实用的可靠性监控方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

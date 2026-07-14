@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-122",
+  "title": "Depth-Entropy Guided Sampling for Training-Free LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.09693",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“深度熵引导采样”（Depth-Entropy Guided Sampling）的新方法，用于在无需训练的情况下提升大语言模型的推理能力。传统上，强化学习（RL）被广泛用于改进模型推理，但需要昂贵的训练、精心整理的数据和奖励信号。最近的研究表明，在测试时从锐化的基础模型分布中采样可以恢复大部分RL带来的增益，但现有方法仅依赖输出层的似然度，忽略了Transformer内部前向传播的动态信息。本文通过利用模型内部各层的熵信息来引导采样过程，从而更有效地选择推理路径，无需额外训练。该方法在多个推理基准测试上取得了显著性能提升，展示了其作为训练自由替代方案的潜力。值得关注的是，它提供了一种轻量级、高效的方式来增强LLM推理，尤其适用于资源受限或需要快速部署的场景，同时揭示了模型内部状态对推理质量的重要影响。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Sampling",
+    "Training-Free"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:08:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出深度熵引导采样，利用Transformer内部层熵信息优化测试时采样，无需训练即可提升推理性能。",
+      "该方法在多个推理基准上超越仅依赖输出层似然的现有采样方法，接近甚至媲美RL训练效果。",
+      "揭示了模型内部前向传播动态对推理质量的关键作用，为理解LLM推理机制提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

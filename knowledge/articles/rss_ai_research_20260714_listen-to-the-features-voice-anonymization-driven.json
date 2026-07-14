@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260714-137",
+  "title": "Listen to the Features: Voice Anonymization Driven by Content Embedding Matching over Signal Reconstruction",
+  "source_url": "https://arxiv.org/abs/2607.09767",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新颖的语音匿名化模型，其核心创新在于优先保留语音内容而非生成逼真的语音信号。该模型利用冻结的预训练wav2vec2编码器提取内容嵌入，并通过向量量化和HiFi-GAN声码器将这些嵌入解码为匿名化信号。模型在LibriTTS数据集上训练，完全避免了波形重建损失和说话人嵌入映射，训练目标强制匿名化后的嵌入与原始内容嵌入保持一致性。这种方法有效去除了说话人身份信息，同时保留了语音的语义内容，为隐私保护下的语音通信提供了新的解决方案。该研究值得关注，因为它突破了传统语音匿名化方法在内容保留和身份去除之间的权衡，展示了基于内容嵌入匹配的简洁高效框架，对语音隐私保护领域具有重要参考价值。",
+  "tags": [
+    "Voice Anonymization",
+    "Content Embedding",
+    "wav2vec2",
+    "Vector Quantization",
+    "HiFi-GAN"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:10:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型通过冻结的wav2vec2编码器提取内容嵌入，避免了说话人身份信息的干扰，实现了内容优先的匿名化。",
+      "采用向量量化和HiFi-GAN声码器，无需波形重建损失或说话人嵌入映射，简化了训练流程并提升了匿名化效果。",
+      "训练目标强制匿名化嵌入与原始内容嵌入匹配，确保了语义内容的完整性，同时有效去除了身份特征。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

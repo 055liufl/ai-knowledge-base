@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-002",
+  "title": "Format Sensitivity Index: Token-Controlled Prompt Wrapper Robustness and Schema Compliance in LLM Benchmarking",
+  "source_url": "https://arxiv.org/abs/2607.09665",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的评估框架，用于量化提示包装器（prompt wrappers）在大型语言模型（LLM）基准测试中的影响。作者发现，即使提示包装器仅在格式上存在细微差异，也可能导致模型得分发生显著变化，甚至足以改变排行榜的结论。为了系统研究这一现象，论文引入了两个互补指标：格式敏感指数（FSI），衡量由包装器选择引起的准确率变化范围；以及可解析性敏感指数（PSI），衡量答案可解析性的相应变化范围。研究基于140,000次OpenRouter生成，覆盖7个问答任务。该工作揭示了当前LLM评估中一个被忽视的变量——提示格式的微小差异可能对结果产生不成比例的影响，从而挑战了基准测试的可靠性和可重复性。这项研究对于改进LLM评估方法论、确保排行榜公平性以及提升模型部署的鲁棒性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Benchmarking",
+    "Prompt Engineering",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:00:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示包装器的格式差异可显著改变模型得分，甚至翻转排行榜结论，揭示了当前LLM评估中的脆弱性。",
+      "引入的格式敏感指数（FSI）和可解析性敏感指数（PSI）为量化提示格式对模型性能的影响提供了系统化工具。",
+      "基于大规模实验（140,000次生成）的结果强调了在基准测试中控制提示格式变量的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260714-107",
+  "title": "HCRMap: Pressure-Aware Hot-Expert Residency Mapping for 3.5D MoE Chiplet Inference",
+  "source_url": "https://arxiv.org/abs/2607.11586",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为HCRMap（压力感知的热专家驻留映射）的方法，用于优化3.5D多芯片系统上混合专家（MoE）大语言模型的推理效率。MoE模型在推理时仅激活少量专家，但令牌路由会导致专家热度偏斜：少数热门专家持续处理大部分令牌，而其他专家负载较轻。在3.5D多芯片系统中，这种偏斜不仅造成计算不平衡，还会加剧通信、内存带宽、I/O和执行队列的压力。HCRMap通过压力感知的映射策略，动态调整热门专家在芯片上的驻留位置，以平衡资源利用并减少瓶颈。该方法值得关注，因为它针对MoE推理中的关键性能问题提供了硬件-算法协同优化方案，尤其适用于新兴的3.5D集成架构，有望显著提升大规模AI模型的部署效率。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "Chiplet",
+    "Inference Optimization",
+    "Hardware-Software Co-design"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:07:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE推理中的专家热度偏斜在3.5D多芯片系统中会放大通信、内存和I/O压力，导致性能瓶颈。",
+      "HCRMap通过压力感知的驻留映射动态调整热门专家位置，以平衡资源利用并减少系统压力。",
+      "该方法结合硬件架构特性与算法需求，为大规模MoE模型的高效推理提供了新的协同优化思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

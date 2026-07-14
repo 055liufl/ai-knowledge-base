@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260714-109",
+  "title": "Interaction Scaling: Grounding the Third Axis of Test-Time Compute",
+  "source_url": "https://arxiv.org/abs/2607.11598",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的测试时计算扩展方式——交互（Interaction），作为传统内部推理（延长推理链）和采样（多次尝试并保留最佳结果）之外的第三条路径。传统方法受限于模型自身权重和提示，无法引入外部新信息。交互方法通过让模型生成一个工件（artifact），由外部工具观察其实际行为，并将观察结果反馈给模型，从而打破信息闭环。这种机制使模型能够利用外部世界的反馈进行迭代改进，类似于人类通过实验验证假设的过程。论文可能探讨了交互在代码执行、物理模拟、数学验证等场景中的应用，展示了如何通过外部反馈提升模型性能。该研究值得关注，因为它为测试时计算扩展提供了全新视角，可能显著提升LLM在复杂推理和交互任务中的能力，尤其适用于需要外部验证的场景。",
+  "tags": [
+    "LLM",
+    "Test-Time Compute",
+    "Interaction",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-14T09:58:27Z",
+  "collected_at": "2026-07-14T10:08:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "交互作为测试时计算的第三轴，通过外部反馈打破模型内部信息限制，实现更有效的计算扩展。",
+      "传统内部推理和采样方法受限于模型已有知识，交互引入外部观察，使模型能获取新信息并迭代改进。",
+      "该方法可能显著提升LLM在需要外部验证的任务（如代码执行、物理模拟）中的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
