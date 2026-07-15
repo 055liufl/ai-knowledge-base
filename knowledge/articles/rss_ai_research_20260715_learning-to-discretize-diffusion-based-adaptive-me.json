@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-079",
+  "title": "Learning to Discretize: Diffusion-Based Adaptive Mesh with Spectral Guidance",
+  "source_url": "https://arxiv.org/abs/2607.11974",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的方法，将网格离散化过程本身纳入神经偏微分方程（PDE）代理模型的学习中。传统方法在固定网格上学习场演化，但网格选择决定了模型在空间、分辨率和频谱带宽上的容量分配。作者认为这一隐藏设计选择应是可学习的，从而提出了一个不同于标准算子学习的问题：代理模型能否学习在何处分配分辨率。通过引入扩散模型和频谱引导，该方法能够自适应地生成网格，优化计算资源分配。这项工作值得关注，因为它挑战了PDE代理模型中网格固定的隐含假设，有望显著提升复杂物理模拟的效率和精度，特别是在多尺度问题中。",
+  "tags": [
+    "PDE",
+    "Diffusion Model",
+    "Neural Surrogate",
+    "Adaptive Mesh",
+    "Spectral Method"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:12:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "网格选择是PDE代理模型中的关键但常被忽视的设计选择，直接影响模型容量分配。",
+      "提出将网格离散化过程学习化，通过扩散模型和频谱引导实现自适应网格生成。",
+      "该方法有望突破固定网格的限制，提升多尺度物理模拟的效率和精度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

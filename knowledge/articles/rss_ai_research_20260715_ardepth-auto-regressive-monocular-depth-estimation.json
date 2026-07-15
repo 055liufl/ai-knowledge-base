@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260715-115",
+  "title": "ARDepth: Auto-regressive Monocular Depth Estimation with Progressive Visual Conditioning",
+  "source_url": "https://arxiv.org/abs/2607.12433",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ARDepth 的自回归单目深度估计方法，通过渐进式视觉条件化来改进深度估计。与当前主流的扩散模型不同，扩散模型假设深度可以通过迭代去噪恢复为全局平滑场，但这未能明确反映场景几何的逐段和尺度依赖组织。ARDepth 利用自回归框架，逐步从粗到细地构建深度图，首先估计场景的粗略布局，然后细化表面和边界。这种方法更符合几何结构在空间尺度上渐进出现的自然过程。该工作值得关注，因为它挑战了扩散模型在单目深度估计中的主导地位，提出了一种更符合几何结构本质的自回归范式，可能带来更高的精度和更好的边界清晰度。实验结果表明，ARDepth 在多个基准数据集上达到了最先进的性能，特别是在细节和边界处理上优于现有方法。",
+  "tags": [
+    "Depth Estimation",
+    "Autoregressive Model",
+    "Computer Vision"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:15:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ARDepth 采用自回归方式，从粗到细渐进式估计深度，更符合场景几何结构的自然组织。",
+      "该方法挑战了扩散模型在单目深度估计中的主导地位，提供了新的范式。",
+      "实验表明 ARDepth 在多个基准上达到最先进性能，尤其在边界和细节方面表现优异。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

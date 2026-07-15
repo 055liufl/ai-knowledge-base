@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-117",
+  "title": "An Omnilingual-ASR-Based Speech-LLM System for the 2nd MLC-SLM Challenge",
+  "source_url": "https://arxiv.org/abs/2607.12468",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个用于第二届MLC-SLM挑战赛任务1的级联系统，该系统结合了基于WavLM-Large的DiariZen-Large-s80分割、CAM++嵌入的双说话人聚类以及LoRA微调的omniASR LLM 7B v2识别器，在测试时不依赖任何先验分割或说话人标签。在包含150段对话、21种语言/口音类别的官方开发集上，系统取得了宏平均tcpMER指标。该系统展示了将大规模语音模型与LLM结合进行多语言、多说话人场景下语音识别的实用方案，其级联架构和LoRA微调策略具有较高的工程参考价值。",
+  "tags": [
+    "Speech Recognition",
+    "LLM",
+    "Speaker Diarization",
+    "Multi-lingual"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:15:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统采用级联的说话人分割-聚类-识别架构，无需测试时先验信息，适用于真实多说话人场景。",
+      "使用LoRA微调omniASR LLM 7B v2作为识别器，兼顾模型容量与微调效率。",
+      "在21种语言/口音类别上验证了系统的多语言泛化能力。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

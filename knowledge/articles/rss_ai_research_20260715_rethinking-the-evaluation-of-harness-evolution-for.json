@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-015",
+  "title": "Rethinking the Evaluation of Harness Evolution for Agents",
+  "source_url": "https://arxiv.org/abs/2607.12227",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了大型语言模型（LLM）智能体自动“马具”（harness）进化评估的方法。现有的马具进化方法通常使用单元测试用例来搜索马具配置，并在相同的公共基准上报告最终性能。然而，这种评估协议存在两个根本性问题：首先，马具进化本身是一个迭代搜索过程，它反复利用任务反馈来评估和修改候选马具，类似于智能体测试时扩展（test-time scaling）中的搜索行为，但当前的评估方式未能区分马具进化带来的性能提升与模型本身能力的差异；其次，在公共基准上进行评估可能导致过拟合，因为进化过程可能过度适应基准测试的特定模式，从而高估了智能体的泛化能力。本文通过实验揭示了这些评估漏洞，并提出了更严谨的评估框架，包括使用独立测试集、控制搜索预算以及引入鲁棒性指标。这项工作对于智能体评估领域具有重要价值，因为它指出了当前主流评估方法的缺陷，并提供了改进方向，有助于更准确地衡量智能体系统的真实进步。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:07:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有马具进化评估方法存在根本性缺陷：将搜索过程与最终性能混淆，且在同一基准上评估易导致过拟合。",
+      "本文提出了更严谨的评估框架，包括使用独立测试集、控制搜索预算和引入鲁棒性指标，以区分马具进化带来的真实增益。",
+      "该研究对智能体评估领域具有重要警示意义，有助于避免对LLM智能体能力的虚假高估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

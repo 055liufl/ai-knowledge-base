@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-050",
+  "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+  "source_url": "https://arxiv.org/abs/2607.13034",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了大型语言模型（LLM）代理在执行多步骤工程和信息学工作流时的一个关键缺陷：它们缺乏对任务复杂度的感知能力。当前LLM代理通常采用“最大上下文优先”策略，即反复读取已见过的文件和依赖项，导致简单任务（如一行代码修改）被不必要地扩展为小型代码库审计。作者提出“任务感知执行范围估计”作为缺失的核心能力，即代理应能判断任务的难度、所需信息范围，并据此调整执行策略，避免过度计算和资源浪费。该研究通过分析现有代理的失败案例，论证了复杂度感知推理与执行的重要性，并提出了初步的解决方向。这项工作值得关注，因为它直接影响了LLM代理在实际应用中的效率和可扩展性，尤其是在自动化工程和数据分析领域，有望推动更智能、更高效的代理设计。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Task Complexity",
+    "Efficiency",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:10:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前LLM代理缺乏任务复杂度感知能力，常采用低效的“最大上下文优先”策略，导致简单任务被过度处理。",
+      "提出“任务感知执行范围估计”概念，即代理应能动态评估任务难度并调整信息获取和执行策略。",
+      "该研究指出了LLM代理在自动化工作流中效率瓶颈的关键原因，为未来设计更智能、资源高效的代理系统提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

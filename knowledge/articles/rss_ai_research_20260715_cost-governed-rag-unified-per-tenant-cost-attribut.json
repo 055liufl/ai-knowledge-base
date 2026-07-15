@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-013",
+  "title": "Cost-Governed RAG: Unified Per-Tenant Cost Attribution Across Retrieval and Generation in Multi-Tenant LLM Systems",
+  "source_url": "https://arxiv.org/abs/2607.12188",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多租户RAG系统的成本归因架构Cost-Governed RAG，旨在解决企业级RAG部署中检索层成本（向量存储、相似度计算、嵌入API调用）无法按租户精确分摊的问题。传统方案仅对LLM生成阶段按token计费，而检索层作为共享资源导致租户间隐性交叉补贴。该架构通过集成一种码本无关的向量索引（TurboVec）与多租户LLM治理框架，实现了检索与生成全链路的统一按租户成本归因。TurboVec索引通过优化向量存储和检索路径，在不依赖码本的情况下支持高效租户隔离与成本追踪。该工作填补了多租户RAG系统在成本治理方面的空白，对于企业级AI服务（如SaaS平台、私有化部署）的财务透明性和资源公平分配具有重要实践价值。值得关注的是，其提出的跨层成本归因方法可能成为未来RAG系统标准化治理的基础组件。",
+  "tags": [
+    "RAG",
+    "Multi-Tenant",
+    "Cost Attribution",
+    "Vector Index",
+    "LLM Governance"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:07:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "揭示了多租户RAG系统中检索层成本无法按租户归因的治理漏洞，导致隐性交叉补贴问题",
+      "提出TurboVec向量索引，实现码本无关的租户隔离与成本追踪，降低检索层共享成本",
+      "构建了检索与生成全链路的统一成本归因框架，提升企业级RAG部署的财务透明性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

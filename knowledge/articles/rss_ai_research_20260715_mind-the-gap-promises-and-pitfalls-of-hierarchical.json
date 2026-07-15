@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-120",
+  "title": "Mind the Gap: Promises and Pitfalls of Hierarchical Planning in LeWorldModel",
+  "source_url": "https://arxiv.org/abs/2607.12547",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在长时域目标条件控制任务中，时间层次结构是否能够提升LeWorldModel（LeWM）的性能。作者提出了Hi-LeWM扩展，该扩展冻结了预训练的低层LeWM，并增加了对潜在子目标的高层规划。在PushT和Cube两个任务上，随着目标偏移量的增加，对Hi-LeWM进行了评估。研究发现，层次结构并不能自动提升性能：在短时域范围内，最佳配置使用单步高层规划，而长时域下层次规划的优势并不明显。该研究揭示了层次规划在长时域控制中的潜在陷阱，即简单的层次结构可能无法有效应对长时域依赖，需要更精细的设计。这项工作对于理解层次强化学习和世界模型在复杂控制任务中的局限性具有重要意义，为未来改进层次规划方法提供了方向。",
+  "tags": [
+    "Hierarchical Planning",
+    "World Model",
+    "Reinforcement Learning",
+    "Long-Horizon Control"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:16:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "层次规划在长时域控制中并非自动有效，短时域下单步高层规划反而更优。",
+      "冻结预训练低层世界模型并添加高层规划的方法（Hi-LeWM）在长时域任务中表现有限。",
+      "研究揭示了层次结构设计中的关键挑战，即如何有效利用时间抽象来提升长时域性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-075",
+  "title": "Exact and Certified Data Shapley for Weighted k-Nearest-Neighbor Regression and Soft-Label Prediction",
+  "source_url": "https://arxiv.org/abs/2607.11956",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对加权K近邻回归和软标签预测场景的精确且可认证的数据Shapley值计算方法。数据Shapley是评估训练数据点价值的标准方法，而KNN特化版本已在pyDVL和OpenDataVal等工具包中实际部署。此前，精确算法仅适用于未加权KNN和加权KNN分类，对于加权KNN回归和软标签预测，唯一精确方法是O(N^K)的暴力枚举，计算成本极高。本文通过理论创新，首次实现了该场景下的多项式时间精确算法，并提供了可认证的近似保证。该工作填补了数据估值领域的重要空白，对于需要精确数据贡献度量的机器学习应用（如数据定价、模型调试、公平性分析）具有显著实用价值，尤其适用于回归任务和软标签场景。",
+  "tags": [
+    "Data Shapley",
+    "KNN",
+    "Data Valuation",
+    "Regression",
+    "Certified Algorithm"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:12:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次提出加权KNN回归和软标签预测场景下数据Shapley值的精确多项式时间算法，突破了此前仅能暴力枚举的限制。",
+      "算法提供可认证的近似保证，兼顾计算效率与结果可靠性，适合实际部署。",
+      "填补了数据估值领域在回归任务和软标签场景下的理论空白，拓展了数据Shapley的应用范围。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

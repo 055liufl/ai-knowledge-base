@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-127",
+  "title": "Jetson-PI: Towards Onboard Real-Time Robot Control via Foresight-Aligned Asynchronous Inference",
+  "source_url": "https://arxiv.org/abs/2607.12659",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Jetson-PI的异步推理框架，旨在解决视觉-语言-动作（VLA）模型在低功耗边缘设备（如Jetson Orin）上部署时面临的高计算复杂度和低控制频率问题。通过将动作执行与后续推理并行化，异步推理可以部分掩盖延迟，但会引入动作过时问题。Jetson-PI通过前瞻对齐（Foresight-Aligned）机制，利用预测的未来状态来校准当前动作，从而在保持实时性的同时提升控制精度。该工作在机器人实时控制领域具有重要价值，尤其适用于资源受限的嵌入式平台，为VLA模型的实际部署提供了可行的优化方案。",
+  "tags": [
+    "VLA",
+    "Edge AI",
+    "Robot Control",
+    "Asynchronous Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:16:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "异步推理通过并行化动作执行与推理过程，有效掩盖了VLA模型在低功耗设备上的延迟问题。",
+      "前瞻对齐机制利用预测的未来状态校准当前动作，解决了异步推理中动作过时导致的控制精度下降。",
+      "该框架在Jetson Orin等边缘设备上实现了实时机器人控制，为VLA模型的实际部署提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

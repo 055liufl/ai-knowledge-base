@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-130",
+  "title": "Less Experts, Faster Decoding: Cost-Aware Speculative Decoding for Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2607.12696",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对混合专家（MoE）大语言模型的成本感知推测解码方法。传统的推测解码在MoE模型中仅优化草稿令牌的接受概率，但忽略了不同专家激活带来的计算成本差异。该方法通过引入成本感知机制，在草稿选择阶段同时考虑令牌的接受概率和对应的专家激活成本，从而在保持生成质量的同时显著降低解码延迟。实验表明，该方法在多个MoE模型上实现了更快的解码速度，尤其适用于大规模部署场景。这项研究对于提升MoE模型的推理效率具有重要价值，为实际应用中的成本优化提供了新思路。",
+  "tags": [
+    "MoE",
+    "Speculative Decoding",
+    "LLM Inference",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:16:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有推测解码方法在MoE模型中忽略了专家激活成本，导致效率未达最优",
+      "成本感知的草稿选择策略能平衡接受概率与计算开销，实现更快的解码",
+      "该方法在多个MoE模型上验证了有效性，尤其适合大规模部署场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

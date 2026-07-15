@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-049",
+  "title": "Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model",
+  "source_url": "https://arxiv.org/abs/2607.13013",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于离散扩散语言模型的音频原生语音识别方法，挑战了传统自回归解码器逐token生成的范式。该方法利用DiffusionGemma——一个26B参数的混合专家模型，通过均匀随机token离散扩散机制（而非吸收掩码方案）并行优化整个转录文本，仅需少量去噪步骤即可完成。研究训练了音频原生接口，使模型直接处理语音信号，无需文本中间表示。这一工作展示了离散扩散模型在非自回归语音识别中的潜力，可能显著提升推理速度并降低延迟，尤其适合实时应用场景。其创新性在于将扩散生成模型从文本领域扩展到语音识别，且模型规模庞大（26B），体现了大规模离散扩散模型在跨模态任务中的可行性。值得关注的原因是，它打破了ASR领域自回归模型的垄断，为并行解码提供了新思路，同时验证了离散扩散在连续信号处理中的有效性。",
+  "tags": [
+    "ASR",
+    "Diffusion Model",
+    "Non-autoregressive",
+    "Speech Recognition",
+    "Mixture of Experts"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:10:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离散扩散语言模型可替代自回归解码器，实现语音转录的并行生成，仅需少量去噪步骤。",
+      "DiffusionGemma（26B参数）采用均匀随机token扩散机制，而非常见的吸收掩码方案，适用于音频原生输入。",
+      "该方法有望大幅提升ASR推理速度，降低延迟，适合实时语音识别场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

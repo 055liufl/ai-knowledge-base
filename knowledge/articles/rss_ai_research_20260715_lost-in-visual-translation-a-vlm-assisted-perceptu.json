@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-113",
+  "title": "Lost in Visual Translation: A VLM-Assisted Perceptual-Semantic Coherence Framework for EEG-to-Image Reconstruction",
+  "source_url": "https://arxiv.org/abs/2607.12364",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于视觉语言模型（VLM）的感知-语义一致性框架，用于解决脑电图（EEG）到图像重建任务中的评估困境。现有评估指标（如SSIM、LPIPS、CLIP）往往因重建图像的模糊、失真和低细节而惩罚语义可恢复的输出，或奖励看似合理但实际错误的图像。作者分析了来自ATM、ENIGMA、BrainVis和DreamDiffusion等方法的6,855个真实-重建图像对，利用语义探针、描述严格性和盲点率等工具，揭示了当前评估体系的局限性。该框架通过引入VLM辅助的感知与语义一致性度量，旨在更准确地评估EEG重建图像的质量，区分视觉保真度和可恢复语义。这项工作对于脑机接口和神经解码领域具有重要意义，因为它提供了一种更可靠的评估方法，有助于推动EEG到图像重建技术的发展，并可能改善相关应用的可解释性和实用性。",
+  "tags": [
+    "EEG",
+    "Image Reconstruction",
+    "VLM",
+    "Evaluation Framework",
+    "Brain-Computer Interface"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:15:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有EEG到图像重建的评估指标（如SSIM、LPIPS、CLIP）无法有效区分视觉保真度和语义可恢复性，导致评估偏差。",
+      "通过分析6,855个重建对，发现当前方法在语义保留上存在盲点，而VLM辅助的感知-语义一致性框架能提供更全面的评估。",
+      "该框架有望推动EEG解码领域评估标准的改进，促进更鲁棒和可解释的重建模型开发。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

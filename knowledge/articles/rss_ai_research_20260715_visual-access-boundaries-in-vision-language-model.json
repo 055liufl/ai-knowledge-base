@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-039",
+  "title": "Visual Access Boundaries in Vision-Language Model Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.12815",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了视觉语言模型（VLM）在链式思维（CoT）推理过程中对图像令牌的持续访问需求。作者提出了“视觉访问扫描”（Visual Access Sweep）这一因果干预方法，通过遮蔽注意力机制来探究CoT推理是否依赖于持续获取图像信息，还是主要基于前向传播早期已提取的视觉特征。实验结果表明，VLM在生成推理轨迹时，对图像令牌的访问并非必需，其推理过程更多依赖于早期阶段已编码的视觉信息。这一发现挑战了现有CoT策略中关于视觉信息持续作用的假设，为优化VLM的推理效率和设计更高效的测试时扩展策略提供了新视角。该研究对于理解VLM的推理机制、减少计算开销以及提升模型在视觉推理任务中的表现具有重要价值。",
+  "tags": [
+    "Vision-Language Model",
+    "Chain-of-Thought",
+    "Causal Intervention",
+    "Visual Access"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:09:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoT推理在VLM中主要依赖早期阶段提取的视觉信息，而非持续访问图像令牌。",
+      "Visual Access Sweep方法通过因果干预揭示了视觉访问边界，挑战了现有假设。",
+      "该发现为减少VLM推理计算成本、优化测试时扩展策略提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

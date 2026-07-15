@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-069",
+  "title": "How Query Visibility Changes KV-Cache Compression Rankings: A Matched-Budget Audit",
+  "source_url": "https://arxiv.org/abs/2607.11942",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对KV缓存压缩方法进行了系统性审计，重点比较了查询感知（query-aware）与查询无关（query-agnostic）两种压缩协议下的性能差异。传统评估中，KV缓存压缩方法通常将查询附加到上下文后进行压缩，但实际部署中，压缩后的KV缓存需要被重复用于回答多个未来问题，因此压缩必须在看到任何查询之前完成。作者在三个问答数据集上对六种已发表的压缩方法进行了预算匹配的审计，发现查询无关压缩的性能显著低于查询感知压缩，且不同方法的排名在两种协议下发生明显变化。该研究揭示了当前KV缓存压缩评估范式的局限性，强调了实际部署中压缩协议选择的重要性，对LLM推理优化和缓存系统设计具有重要参考价值。",
+  "tags": [
+    "KV-Cache",
+    "LLM",
+    "Compression",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:11:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "查询无关压缩（实际部署场景）的性能显著低于查询感知压缩，且方法排名发生明显变化",
+      "当前KV缓存压缩评估主要基于查询感知协议，与真实复用场景存在偏差",
+      "预算匹配审计揭示了不同压缩方法在两种协议下的性能差异，为实际部署提供了重要参考"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

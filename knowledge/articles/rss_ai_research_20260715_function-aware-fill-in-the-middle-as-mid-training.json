@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-024",
+  "title": "Function-Aware Fill-in-the-Middle as Mid-Training for Coding Agent Foundation Models",
+  "source_url": "https://arxiv.org/abs/2607.12463",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“函数感知的中间填充”（Function-Aware Fill-in-the-Middle, FA-FIM）的新型训练方法，旨在增强编码智能体（Coding Agent）的基础模型能力。作者观察到，编码智能体在执行任务时，其“动作-观察-继续”循环（action-observation-continuation loop）在结构上与函数调用点同构：调用者绑定参数，被调用者返回在其他地方计算的值，下游代码消费该值。这种结构在标准的从左到右的代码预训练中仅以正向方式暴露，导致模型难以有效整合外部工具返回的结果。FA-FIM 通过将函数调用视为一种特殊的填充任务，在预训练阶段引入中间填充（Fill-in-the-Middle）目标，使模型学会在推理过程中动态地插入和利用外部工具返回的信息。该方法在多个编码智能体基准测试（如 SWE-bench、HumanEval 等）上取得了显著提升，证明了其作为编码智能体基础模型中间训练（Mid-Training）范式的有效性。该工作值得关注，因为它直接针对编码智能体与外部工具交互的核心瓶颈，提出了一种简洁且可扩展的解决方案，有望推动编码",
+  "tags": [
+    "Coding Agent",
+    "Fill-in-the-Middle",
+    "Code Generation",
+    "Tool Integration",
+    "Foundation Model"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:08:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码智能体的动作-观察-继续循环与函数调用点在结构上同构，为利用填充式训练提供了理论基础。",
+      "函数感知的中间填充（FA-FIM）通过将函数调用视为填充任务，有效增强了模型整合外部工具返回结果的能力。",
+      "FA-FIM 作为一种中间训练范式，在多个编码智能体基准上显著提升了性能，展示了其在基础模型训练中的实用价值。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

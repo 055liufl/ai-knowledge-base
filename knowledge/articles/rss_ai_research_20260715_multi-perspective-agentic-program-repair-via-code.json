@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260715-124",
+  "title": "Multi-Perspective Agentic Program Repair via Code Property Graphs and Temporal Execution Graphs",
+  "source_url": "https://arxiv.org/abs/2607.12605",
+  "source_platform": "rss_ai_research",
+  "summary": "CT-Repair 是一个基于多视角智能体的自动化程序修复（APR）框架，旨在解决大语言模型（LLM）在程序修复中的两个关键局限：原始执行轨迹过大且重复，难以作为有效模型上下文；以及重复的补丁采样可能产生不同实现，但无法提供不同的根本原因假设或修复策略。该框架通过将静态和动态证据表示为可查询的代码属性图（CPG）和时间执行图（TEG），实现了对程序缺陷的多维度分析。CT-Repair 利用智能体协作，从代码结构、数据流、控制流和执行时序等多个视角进行推理，从而生成更准确、多样化的修复方案。这项工作在多个基准测试上展示了显著优于现有方法的修复效果，尤其在处理复杂、多步骤缺陷时表现出色。它代表了 APR 领域从单一模型推理向多智能体协作、多证据融合的重要演进，值得关注因为它提升了自动化修复的鲁棒性和解释性，有望降低软件维护成本。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Automated Program Repair",
+    "Code Property Graph",
+    "Temporal Execution Graph"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:16:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CT-Repair 通过引入代码属性图和时间执行图，将静态结构与动态执行信息融合，克服了原始执行轨迹冗余和上下文有限的难题。",
+      "多智能体协作框架使得不同视角（如结构、数据流、时序）的推理能独立进行，从而生成更多样化的根本原因假设和修复策略。",
+      "该方法在多个 APR 基准上显著优于现有 LLM 驱动的修复方法，尤其擅长处理需要跨步骤、跨组件推理的复杂缺陷。",
+      "CT-Repair 的设计展示了将符号化程序分析与 LLM 智能体结合的有效性，为未来可解释、高鲁棒性的自动化修复系统提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

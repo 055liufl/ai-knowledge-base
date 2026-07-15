@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-090",
+  "title": "AutoTrace: From Patches to Triggers via Agentic Interprocedural Exploration",
+  "source_url": "https://arxiv.org/abs/2607.12058",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoTrace 是一种基于智能体（Agent）的跨过程探索方法，用于从漏洞修复补丁中定位触发漏洞的具体语句。与传统的二元漏洞检测不同，触发定位需要跨过程、因果推理，因为实际漏洞的触发语句往往位于补丁函数之外的多个调用层，超出了静态规则和模式的覆盖范围。该方法通过构建智能体驱动的跨过程分析框架，自动追踪补丁与触发点之间的因果链，从而精确识别导致程序状态从脆弱变为具体不安全操作的关键语句。该工作解决了安全分析中的一个核心难题，即从已知补丁逆向定位漏洞触发点，对于自动化漏洞分析、补丁验证和安全审计具有重要价值。其创新性在于将智能体技术与程序分析结合，实现了对复杂调用关系的动态探索，显著提升了触发定位的准确性和覆盖范围。",
+  "tags": [
+    "Vulnerability Analysis",
+    "Agent",
+    "Program Analysis",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:13:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "触发定位比漏洞检测更困难，需要跨过程因果推理，而AutoTrace通过智能体驱动的探索有效解决了这一挑战。",
+      "该方法能够自动追踪补丁与触发点之间的因果链，覆盖静态规则难以触及的多个调用层。",
+      "AutoTrace将智能体技术与程序分析结合，实现了动态、自适应的跨过程探索，提升了触发定位的准确性和实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

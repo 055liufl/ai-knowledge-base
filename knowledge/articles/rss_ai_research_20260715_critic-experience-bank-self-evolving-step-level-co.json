@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-019",
+  "title": "Critic Experience Bank: Self-Evolving Step-Level Confidence Estimation for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.12397",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Critic Experience Bank”的新型框架，用于提升LLM代理在复杂环境中的步骤级置信度估计。LLM代理在外部环境中执行动作时，每一步都可能改变后续决策所依赖的状态，且单个错误步骤可能浪费交互预算或引发不可逆的副作用。因此，在动作执行前准确估计其是否有效（即步骤级置信度）至关重要。现有方法通常依赖事后反馈或全局奖励，难以在动作执行前提供细粒度的置信度。该框架通过引入一个经验银行，存储历史批评（critic）经验，使代理能够自我演化，逐步学习如何更准确地评估每一步动作的潜在效果。具体而言，代理在每次交互后生成批评，并将其存入经验银行；未来遇到类似状态时，代理可检索相关批评来辅助置信度估计。这种方法不仅提高了置信度校准的准确性，还增强了代理的鲁棒性和适应性。该工作值得关注，因为它直接解决了LLM代理在安全关键场景（如机器人控制、自动化决策）中可靠部署的核心挑战，通过自我演化的机制实现了无需人工标注的持续改进，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Confidence Estimation",
+    "Self-Evolving",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:07:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出Critic Experience Bank框架，通过存储和检索历史批评经验，实现LLM代理步骤级置信度的自我演化估计。",
+      "在动作执行前提供校准的概率估计，解决了现有方法依赖事后反馈或全局奖励的局限性。",
+      "该方法无需人工标注，通过代理自身的交互经验持续改进置信度估计，增强了在安全关键场景中的部署可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

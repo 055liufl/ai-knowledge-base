@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-004",
+  "title": "GRID: Grammar-Railed Decoding for Enterprise SQL Generation",
+  "source_url": "https://arxiv.org/abs/2607.11951",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为GRID（Grammar-Railed Decoding）的语法约束解码引擎，专为企业级SQL生成场景设计。与传统的LLM生成SQL不同，GRID通过在每个解码步骤中基于解析状态精确计算下一个合法token的掩码，确保输出在语法上完全有效，并能够遵守角色和模式级别的策略。该方法提供了可证明的保证（而非尽力而为），且生成速度不会随序列长度增加而下降，同时保留完整的合规审计记录。GRID解决了企业部署中LLM生成SQL的关键痛点：语法正确性、策略合规性、性能可扩展性和可审计性。该工作值得关注，因为它将形式化方法与LLM结合，为高可靠性要求的数据库交互提供了实用解决方案，有望推动LLM在金融、医疗等严格监管领域的SQL生成应用。",
+  "tags": [
+    "LLM",
+    "SQL Generation",
+    "Grammar-Constrained Decoding",
+    "Enterprise AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:06:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRID通过解析状态驱动的精确token掩码，实现了可证明的语法和策略合规性，优于传统后处理或概率约束方法。",
+      "该方法在生成过程中保持恒定时间开销，避免了长序列下的性能退化，适合企业级高吞吐场景。",
+      "GRID内置合规审计记录功能，满足金融、医疗等行业的监管要求，这是现有LLM SQL工具缺乏的关键特性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

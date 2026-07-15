@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260715-032",
+  "title": "A Learning-Rate-Gated Failure of GRPO in a Small Language and Vision-Language Model Web Agent: A Controlled Null and Its Mechanism",
+  "source_url": "https://arxiv.org/abs/2607.12640",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了在小型语言与视觉语言模型（4B-8B参数规模）的Web智能体训练中，使用可验证奖励的强化学习（特别是GRPO算法）是否真正提升了技能，还是仅仅重塑了监督模型已有的行为。通过18个控制实验，变化学习率和KL权重等超参数，论文发现GRPO在特定学习率下会导致训练失败，表现为模型性能不升反降。作者分析了这种失败机制，指出学习率门控效应是核心原因：当学习率过高时，GRPO的更新会破坏模型已有的稳定行为模式，导致策略崩溃。该研究为强化学习在小型多模态模型中的应用提供了重要警示，强调了超参数调优的关键性，并揭示了GRPO在特定条件下的局限性。值得关注的是，它挑战了当前普遍认为GRPO总能提升模型能力的假设，为更稳健的强化学习训练策略提供了理论基础。",
+  "tags": [
+    "GRPO",
+    "Reinforcement Learning",
+    "Web Agent",
+    "Vision-Language Model",
+    "Training Failure"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:09:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO在小型多模态Web智能体训练中可能不会增加新技能，而只是重塑已有行为，且学习率过高会导致训练失败。",
+      "学习率门控效应是GRPO失败的关键机制：高学习率使策略更新破坏模型稳定行为，引发性能崩溃。",
+      "该研究通过18个控制实验系统揭示了GRPO在4B-8B参数规模模型中的局限性，为强化学习训练提供了重要调参指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

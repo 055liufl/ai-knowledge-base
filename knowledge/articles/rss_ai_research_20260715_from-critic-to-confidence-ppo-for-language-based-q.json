@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-129",
+  "title": "From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation",
+  "source_url": "https://arxiv.org/abs/2607.12687",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出CARE-PPO框架，将损失预测（loss prediction）用于不确定性估计与演员-评论家PPO（Proximal Policy Optimization）微调相结合，实现语言模型在定量预测任务中的置信度估计。传统LLM在从非结构化输入进行定量预测时容易产生幻觉和过度自信的错误，CARE-PPO通过强化学习机制让模型不仅输出预测值，还能同时给出预测的可信度。该方法在多个定量预测基准上取得了更好的校准性能，有效降低了高置信度错误的发生率。这项工作值得关注，因为它解决了LLM在金融、医疗、科学等高风险领域应用中的关键信任问题，通过将不确定性估计直接融入强化学习训练过程，为构建更可靠的语言模型提供了新思路。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Uncertainty Estimation",
+    "PPO"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:16:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CARE-PPO将损失预测作为不确定性估计的信号，与演员-评论家PPO框架联合训练，使模型在预测时同步输出置信度。",
+      "该方法有效缓解了LLM在定量预测中的过度自信问题，在多个基准上实现了更好的校准性能。",
+      "通过强化学习内化不确定性估计，避免了传统事后校准方法的额外开销和模型修改需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

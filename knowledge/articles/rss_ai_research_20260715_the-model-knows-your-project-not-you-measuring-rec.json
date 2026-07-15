@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260715-027",
+  "title": "The Model Knows Your Project, Not You: Measuring Recognition in LLMs with NameRank",
+  "source_url": "https://arxiv.org/abs/2607.12520",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了NameRank，一种用于衡量大语言模型（LLM）对特定实体（如研究人员或工具）的识别程度的评分方法。研究背景是，LLM在未进行检索增强生成（RAG）时，其参数化知识库中关于某个实体的记忆会直接影响模型对该实体的描述质量。传统上，引用次数只能解释约三分之一的识别情况，因此作者针对剩余部分设计了NameRank评分（0到1之间）。实验涉及54个队列中的4685个实体，通过一个开放式问题在36个月内对模型进行探测。该工作的重要性在于：它提供了一种量化模型内部知识覆盖度的新工具，有助于理解模型的知识边界和偏差，对于评估模型可靠性、改进训练数据分布以及设计更公平的AI系统具有参考价值。NameRank的提出也推动了模型可解释性和知识审计领域的发展。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Knowledge",
+    "Model Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-07-15T10:02:52Z",
+  "collected_at": "2026-07-15T10:08:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NameRank提供了一种量化LLM对特定实体识别程度的新方法，弥补了仅依赖引用次数等外部指标的不足。",
+      "通过大规模实验（54个队列、4685个实体）验证了该方法的有效性，揭示了模型内部知识分布的不均匀性。",
+      "该工作为评估模型的知识覆盖度、偏见和可靠性提供了可操作的工具，对模型审计和公平性研究有直接推动作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
