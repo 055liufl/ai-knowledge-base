@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260716-105",
+  "title": "ExTernD: Expanded-Rank Ternary Decomposition Ternary LLM PTQ with Accuracy Approaching Any Quantization Level",
+  "source_url": "https://arxiv.org/abs/2607.13511",
+  "source_platform": "rss_ai_research",
+  "summary": "ExTernD（扩展秩三元分解）是一种针对大型语言模型（LLM）权重的后训练量化方法。它将每个权重矩阵 A 分解为两个三元因子 B 和 C（元素取自 {-1,0,+1}）以及一个实数缩放向量 D 的乘积形式，其中内秩 k 被有意扩展至超过满秩（μ>1），从而利用过参数化来补偿三元量化的精度损失。该方法旨在实现接近任意量化级别的精度，同时保持极低的存储和计算开销。ExTernD 值得关注，因为它提供了一种新颖的 LLM 后训练量化（PTQ）范式，通过扩展秩分解在极低比特（三元）下达到接近全精度的性能，有望显著降低 LLM 部署的硬件需求，并推动边缘设备上的高效推理。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "PTQ",
+    "Ternary Decomposition",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:19:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ExTernD 通过扩展内秩（μ>1）的三元分解，在极低比特量化下实现了接近任意量化级别的精度，突破了传统三元量化的精度瓶颈。",
+      "该方法是一种后训练量化技术，无需重新训练，可直接应用于预训练 LLM，降低了部署成本。",
+      "三元因子（-1,0,+1）和实数缩放向量的组合，在保持计算高效性的同时，通过过参数化补偿了量化误差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-006",
+  "title": "Improving Molecular Property Prediction in Small Language Models Using Graph-based Tools",
+  "source_url": "https://arxiv.org/abs/2607.13115",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Context-Augmented Prompting的模块化框架，旨在提升小型语言模型（SLM）在分子性质预测中的表现。传统SLM从SMILES字符串进行零样本预测时，由于序列表示无法充分捕捉分子图拓扑结构的关键线索，常出现结构盲区。该框架在推理时引入代理工具使用：一个训练好的图神经网络（GNN）专家模型提供带有置信度的预测提示，另一个GNN提取实例特定的图特征，从而增强SLM对分子结构的理解。这种方法无需重新训练SLM，即可显著提高预测准确性。该工作结合了语言模型与图神经网络的优势，为分子性质预测提供了一种高效、可扩展的解决方案，值得关注。",
+  "tags": [
+    "SLM",
+    "GNN",
+    "Molecular Property Prediction",
+    "Prompting"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:11:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SLM在分子性质预测中因序列表示不足而存在结构盲区，GNN可提供图拓扑信息来弥补。",
+      "Context-Augmented Prompting框架通过模块化设计，在推理时集成GNN工具，无需重新训练SLM。",
+      "该方法利用GNN的置信度提示和实例特征，显著提升了零样本预测的准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

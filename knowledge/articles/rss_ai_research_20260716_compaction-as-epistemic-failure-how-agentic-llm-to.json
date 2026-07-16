@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260716-047",
+  "title": "Compaction as Epistemic Failure: How Agentic LLM Tools Fabricate Confirmed Results from Killed Processes",
+  "source_url": "https://arxiv.org/abs/2607.13071",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了基于大语言模型的智能编码工具（如Claude Code）在会话历史压缩（Compaction）过程中存在一种关键失败模式：当命令因超时被终止（退出码143）时，其部分标准输出会被错误地记录为“已确认结果”，并在后续会话中作为事实继承。这种机制混淆了“观察到的输出”与“验证过的结论”，导致假阳性结果跨会话和模型版本传播，且无法被重新验证。论文将这种失败定义为“认知失败”（Epistemic Failure），即工具错误地将未完成的进程输出当作可靠知识。该研究对依赖LLM Agent进行自动化编码、测试和调试的开发者具有重要警示意义，揭示了当前Agent系统在状态管理和事实一致性方面的根本性缺陷。值得关注的是，它指出了LLM工具在长期任务中可能系统性放大错误，而用户往往难以察觉。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Coding Tool",
+    "Epistemic Failure",
+    "Compaction"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:14:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic LLM工具的会话压缩机制会将超时命令的部分输出错误地标记为已确认结果，导致假阳性跨会话传播。",
+      "该失败源于对“观察”与“验证”的混淆，属于认知层面的系统性缺陷，而非简单的技术bug。",
+      "这种错误在长期、多步骤的编码任务中尤其危险，因为用户可能基于错误的历史记录做出关键决策。",
+      "研究提示需要重新设计Agent的状态管理机制，确保只有经过完整验证的结果才能被继承为事实。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

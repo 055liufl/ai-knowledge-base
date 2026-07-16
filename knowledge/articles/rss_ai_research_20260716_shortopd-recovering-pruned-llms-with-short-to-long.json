@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-067",
+  "title": "ShortOPD: Recovering Pruned LLMs with Short-to-Long On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2607.13124",
+  "source_platform": "rss_ai_research",
+  "summary": "ShortOPD 是一种针对结构化剪枝后大型语言模型（LLM）的恢复方法。结构化剪枝虽然硬件友好，但在自由文本生成任务中常导致模型性能崩溃，尤其是在贪婪解码（pass@1）上表现极差，而重复采样（pass@k）却能显著恢复，表明有用生成被降级而非完全丢失。ShortOPD 通过短到长的在线策略蒸馏（short-to-long on-policy distillation）来恢复剪枝后的 LLM，利用短序列上的策略蒸馏和长序列上的在线学习，有效提升了生成质量。该方法在多个基准测试上展示了显著效果，为 LLM 压缩后的部署提供了实用解决方案。值得关注的是，它解决了结构化剪枝在生成任务中的关键瓶颈，具有实际应用价值。",
+  "tags": [
+    "LLM",
+    "structured pruning",
+    "distillation",
+    "generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:15:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "结构化剪枝在自由生成任务中导致贪婪解码性能崩溃，但重复采样可恢复，表明生成能力被降级而非丢失。",
+      "ShortOPD 通过短到长的在线策略蒸馏有效恢复剪枝后 LLM 的生成质量。",
+      "该方法在多个基准上验证了有效性，为 LLM 压缩部署提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

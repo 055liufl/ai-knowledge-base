@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-095",
+  "title": "ScanFocus: A Coarse-to-Fine Framework for Spatio-Temporal Video Grounding",
+  "source_url": "https://arxiv.org/abs/2607.13421",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ScanFocus的粗到细框架，用于解决时空视频定位（STVG）任务中的关键挑战。STVG的目标是根据自然语言描述从视频流中检索特定对象的视觉轨迹。现有方法在处理长视频时面临全局上下文建模与精确边界定位之间的平衡难题，主要因为高计算成本导致它们采用低帧率时间下采样和隐式运动建模。ScanFocus通过一种粗到细的策略，首先在粗粒度上快速定位候选时空区域，然后在这些区域上进行细粒度的精确匹配和边界细化，从而在不显著增加计算负担的情况下提升定位精度。该框架创新性地结合了全局上下文感知和局部细节捕捉，为视频理解与语言交互领域提供了新的解决方案。该工作值得关注，因为它直接针对STVG中的核心瓶颈——计算效率与定位精度的权衡，并提出了一个实用的两阶段框架，有望推动视频检索、自动驾驶和智能监控等应用的发展。",
+  "tags": [
+    "Video Grounding",
+    "Spatio-Temporal",
+    "Coarse-to-Fine",
+    "Vision-Language"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:18:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ScanFocus采用粗到细的两阶段框架，先快速定位候选区域再精细匹配，有效平衡了全局上下文建模与边界定位精度。",
+      "该框架通过避免对长视频进行高密度处理，显著降低了计算开销，同时提升了定位准确性。",
+      "针对现有方法在低帧率下采样和隐式运动建模中的不足，ScanFocus显式地处理时空信息，增强了对象轨迹的连续性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

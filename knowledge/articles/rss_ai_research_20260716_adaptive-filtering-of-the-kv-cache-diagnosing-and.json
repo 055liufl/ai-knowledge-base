@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-073",
+  "title": "Adaptive Filtering of the KV Cache: Diagnosing and Correcting Structural-Role Bias in LLM Inference",
+  "source_url": "https://arxiv.org/abs/2607.13205",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型推理中KV缓存的自适应过滤方法，旨在诊断和纠正结构-角色偏差。传统的基于注意力机制的KV缓存淘汰策略（如H2O及其变体）通过累积注意力质量对令牌进行排序，并保留得分最高的令牌，以压缩长上下文模型的内存状态。然而，在模式密集的输入流（如嵌套JSON）中，这种得分表现为非平稳滤波器，会不成比例地保留噪声：非内容角色（如分隔符或空白）携带的注意力质量比内容令牌高出一个数量级，导致缓存中充斥无关信息，损害模型性能。本文通过分析这一偏差，提出自适应过滤机制，动态调整缓存策略以平衡内容与结构令牌的保留，从而提升推理效率与准确性。该工作对长上下文LLM的部署和优化具有重要价值，特别是在处理结构化数据时，能显著减少内存占用并保持模型输出质量。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Attention Mechanism",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:16:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统KV缓存淘汰策略在结构化输入中会因结构令牌（如分隔符）的高注意力质量而引入噪声，导致缓存污染。",
+      "本文提出的自适应过滤方法通过动态调整缓存策略，有效纠正结构-角色偏差，提升长上下文推理的准确性和效率。",
+      "该研究揭示了注意力机制在非平稳输入下的局限性，为未来缓存优化提供了理论依据和实践方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

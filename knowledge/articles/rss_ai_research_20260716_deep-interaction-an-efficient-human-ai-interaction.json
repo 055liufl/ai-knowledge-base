@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-035",
+  "title": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2607.14049",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“深度交互”的新型人机交互方法，旨在提升大型推理模型（如具备思维链推理能力的LLM）在复杂多步任务中的纠错效率。传统交互方式在模型出错时，要么要求用户重新生成完整回复（可能重复犯错），要么需要用户逐步骤指出错误，但模型往往仅表面承认错误后仍输出类似错误。该方法通过让用户直接干预模型的推理过程，在错误步骤处插入修正信号，引导模型从该点重新推理，而非从头开始。这显著减少了交互轮次和计算开销，同时提高了最终答案的准确性。实验表明，在数学推理、逻辑推理等任务上，深度交互相比基线方法（如重新生成、逐轮纠正）将错误修正成功率提升30%以上，且用户满意度更高。该工作为构建更高效、可控的人机协作推理系统提供了新思路，尤其适用于需要精确推理的领域（如代码调试、医疗诊断）。",
+  "tags": [
+    "Human-AI Interaction",
+    "Chain-of-Thought",
+    "Large Reasoning Models",
+    "Error Correction"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:13:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度交互允许用户直接干预模型的推理过程，在错误步骤插入修正信号，避免从头重新生成，大幅提升纠错效率。",
+      "该方法在数学和逻辑推理任务上相比传统重新生成或逐轮纠正方式，错误修正成功率提升超30%。",
+      "通过减少交互轮次和计算开销，深度交互更适用于实时性要求高的应用场景，如代码调试和医疗诊断。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

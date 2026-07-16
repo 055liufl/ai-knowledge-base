@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260716-042",
+  "title": "Beyond Backbone Backpropagation: A Decoupled Strategy for Efficient Transfer Learning",
+  "source_url": "https://arxiv.org/abs/2607.13043",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Beyond Backbone Backpropagation”的高效迁移学习策略，旨在降低深度学习模型在图像分类任务中的计算成本和能耗。该方法的核心创新在于：1）仅调整模型的归一化层以适应新领域，而非对整个骨干网络进行反向传播；2）将特征提取与分类器优化解耦，通过一次性预计算特征来减少重复计算；3）重新设计分类器头部，引入基于边界的加权损失函数，进一步提升分类性能。该策略在保持较高准确率的同时，显著降低了训练开销，特别适用于资源受限的部署场景。值得关注的是，它挑战了传统全模型微调的范式，为高效迁移学习提供了新思路，并可能推动模型在边缘设备上的实际应用。",
+  "tags": [
+    "Transfer Learning",
+    "Efficient Training",
+    "Image Classification"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:14:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过仅调整归一化层并解耦特征提取与分类器优化，大幅降低迁移学习的计算成本。",
+      "重新设计的分类器头部采用基于边界的加权损失，在效率提升的同时保持了分类性能。",
+      "该方法挑战了传统全模型微调范式，为资源受限场景下的模型适配提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

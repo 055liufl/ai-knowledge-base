@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-128",
+  "title": "MxGPS: Multiplex Graph Transformers for a Power Grid Foundation Model",
+  "source_url": "https://arxiv.org/abs/2607.13763",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 MxGPS（Multiplex Graph Transformers for a Power Grid Foundation Model），一种用于电力电网基础模型的多重图变换器架构。研究指出，针对电网问题的图神经网络（GNN）单任务微调存在系统性失败模式：在分布内误差最低的模型在拓扑变化下性能下降最严重，作者将其定义为“拓扑过拟合”——任务特定梯度信号倾向于编码训练拓扑特有的关系结构而非底层物理规律，导致模型在未见过的电网上失败。MxGPS 通过多重图表示和 Transformer 架构，旨在学习对拓扑变化鲁棒的通用电网表征，从而作为基础模型支持多种下游任务。该工作值得关注，因为它首次系统性地识别并命名了电网 GNN 中的拓扑过拟合问题，并提出了一种可扩展的基础模型解决方案，有望提升电网分析模型在真实世界拓扑变化场景下的泛化能力，对智能电网和能源 AI 领域具有重要实践意义。",
+  "tags": [
+    "Graph Neural Networks",
+    "Foundation Model",
+    "Power Grid",
+    "Topology Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:20:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统定义并命名了电网 GNN 中的拓扑过拟合问题，揭示了低分布内误差与拓扑泛化能力之间的权衡。",
+      "提出 MxGPS 多重图变换器架构，通过结合多重图表示和 Transformer 机制学习对拓扑变化鲁棒的通用表征。",
+      "该工作为构建电力电网基础模型提供了新范式，有望提升模型在真实电网拓扑变化场景下的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-009",
+  "title": "CayleyR: Solving the TopSpin puzzle via cycle intersection",
+  "source_url": "https://arxiv.org/abs/2607.13219",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 cayleyR，一个用于通过检测 Cayley 图中的循环交集来求解排列谜题的 R 语言包。该包的核心算法执行迭代双向搜索：从初始和目标排列状态出发，随机操作序列在对称群 Sn 的 Cayley 图中生成循环；它们的交集产生连接路径。当未找到直接交集时，采用距离引导的桥选择来缩小搜索范围。该研究专注于 TopSpin 谜题，这是一种经典的排列重组问题，cayleyR 提供了一种新颖的求解方法，通过图论和群论技术提高了求解效率。值得关注的原因是，它展示了如何将抽象数学概念（如 Cayley 图）应用于实际计算问题，为组合优化和谜题求解领域提供了新工具，尤其适合需要高效搜索排列空间的场景。",
+  "tags": [
+    "Cayley graph",
+    "permutation puzzle",
+    "R package",
+    "bidirectional search"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:12:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "cayleyR 利用 Cayley 图中的循环交集实现双向搜索，有效求解排列谜题。",
+      "算法通过随机操作序列生成循环，并检测初始与目标状态之间的连接路径。",
+      "距离引导的桥选择策略在无直接交集时优化搜索，提高求解效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

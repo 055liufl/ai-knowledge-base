@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260716-003",
+  "title": "The Tokio&#x2F;Rayon Trap and Why Async&#x2F;Await Fails Concurrency",
+  "source_url": "https://pmbanugo.me/blog/why-async-await-complect-concurrency",
+  "source_platform": "rss_general_tech",
+  "summary": "本文深入探讨了异步编程模型（async/await）与并发（concurrency）之间的复杂关系，指出async/await虽然简化了异步I/O的编写，但并未真正解决并发问题，反而可能引入新的陷阱。作者以Tokio和Rayon为例，分析了在Rust生态中，开发者常误以为使用async/await就能自动获得并发性能，但实际上，async/await主要解决的是非阻塞I/O，而非并行计算。文章揭示了Tokio（异步运行时）与Rayon（并行计算库）在任务调度上的本质区别：Tokio适用于大量I/O等待的场景，而Rayon适用于CPU密集型任务。作者警告，错误地将两者混用或过度依赖async/await会导致性能下降、死锁或资源竞争。本文值得关注，因为它澄清了异步编程中的常见误解，对Rust开发者优化并发应用具有重要指导意义，同时也反映了编程语言设计在抽象并发模型时的权衡。",
+  "tags": [
+    "Rust",
+    "async/await",
+    "concurrency",
+    "Tokio",
+    "Rayon"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:08:58Z",
+  "collected_at": "2026-07-16T10:10:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "async/await 主要解决非阻塞I/O，而非并行计算，错误使用会导致性能陷阱。",
+      "Tokio 和 Rayon 分别适用于I/O密集型和CPU密集型任务，混用可能引发死锁或资源竞争。",
+      "开发者需明确区分并发（concurrency）与并行（parallelism），避免被async/await的抽象误导。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

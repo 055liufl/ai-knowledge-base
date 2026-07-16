@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-120",
+  "title": "OvisOCR2 Technical Report",
+  "source_url": "https://arxiv.org/abs/2607.13639",
+  "source_platform": "rss_ai_research",
+  "summary": "OvisOCR2 是一个轻量级（0.8B参数）的端到端文档解析模型，能够将文档页面图像直接转换为自然阅读顺序的 Markdown 表示，涵盖文本、公式、表格和视觉区域。该模型通过一个数据引擎构建，该引擎结合了经过筛选的真实文档标注和合成页面（其渲染图像和 Markdown 目标均源自同一 HTML 源）。其训练方案包括多阶段优化，旨在提升文档解析的准确性和鲁棒性。该技术报告详细介绍了模型架构、数据构建流程和训练策略。OvisOCR2 值得关注，因为它以极小的模型规模实现了高效的文档结构化解析，对于需要从扫描文档、PDF 等非结构化图像中提取信息的应用（如知识库构建、文档数字化、自动化办公）具有重要价值，展示了在资源受限场景下实现高质量 OCR 和文档理解的潜力。",
+  "tags": [
+    "OCR",
+    "Document Parsing",
+    "Multimodal",
+    "Small Model"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:20:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OvisOCR2 以仅 0.8B 参数实现了端到端的文档图像到 Markdown 的结构化解析，覆盖文本、公式、表格和视觉区域。",
+      "其数据引擎通过结合真实标注与从 HTML 源生成的合成页面，有效解决了训练数据不足和标注成本高的问题。",
+      "该模型在保持较小规模的同时，展示了在文档解析任务上的竞争力，为在资源受限环境下部署高质量文档理解模型提供了可行方案。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

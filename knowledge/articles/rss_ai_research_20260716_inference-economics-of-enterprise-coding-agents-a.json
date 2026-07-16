@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260716-053",
+  "title": "Inference Economics of Enterprise Coding Agents: A Case Study of Cloud vs. On-Premise LLMs",
+  "source_url": "https://arxiv.org/abs/2607.13080",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文通过一个为期56天的纵向案例研究，对比了企业编码代理在云端API模型（如前沿推理模型）与本地量化开源模型之间的推理经济学。研究聚焦于单一开发者在生产环境单仓库中的实际表现，分析了两种部署方式在推理成本、数据主权、推理保真度及扩展性方面的权衡。结果显示，API模型虽具备强推理能力但token成本高，而本地模型虽推理保真度略低但边际成本低且支持数据本地化。该研究为工程组织在选择编码代理的LLM部署策略时提供了实证依据，尤其适用于需要平衡性能、成本与合规性的企业场景。其价值在于通过真实案例量化了云端与本地模型的成本效益差异，对AI工程化实践具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Enterprise",
+    "Cost Analysis",
+    "Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:14:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "云端API模型在推理保真度上优于本地量化模型，但token成本显著更高，需根据任务复杂度权衡。",
+      "本地开源模型通过量化实现低边际成本扩展，适合数据敏感或高频调用场景，但需接受推理质量损失。",
+      "案例研究显示，单一开发者在生产环境中，本地模型在28天内可节省约60%的推理成本，同时保持可接受的代码生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-127",
+  "title": "Anatomically Faithful but Temporally Blind: Auditing Attribution for Left-Ventricular Ejection-Fraction Estimation from Echocardiography",
+  "source_url": "https://arxiv.org/abs/2607.13738",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对深度学习视频模型在超声心动图中估算左心室射血分数（EF）时的归因可信度问题进行了审计。EF由收缩末期（ES）和舒张末期（ED）帧定义，但现有归因方法（如Chefer相关性和Grad-CAM）仅关注空间位置，忽略了时间维度上的忠实性。研究通过系统审计发现，尽管模型在空间上能定位正确区域，但在时间上对关键帧（ES/ED）的依赖不足，导致归因结果在时间上不可靠。这一发现揭示了当前归因方法在时间序列医学影像中的局限性，强调了开发时空一致归因技术的必要性。该工作对提升AI在临床诊断中的可解释性和信任度具有重要意义，尤其适用于依赖时间动态的医学任务。",
+  "tags": [
+    "Explainable AI",
+    "Medical Imaging",
+    "Echocardiography",
+    "Attribution Methods"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:20:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有归因方法（如Chefer、Grad-CAM）在空间上表现忠实，但在时间维度上未能准确反映模型对关键帧（ES/ED）的依赖。",
+      "EF估算任务对时间动态敏感，但归因审计忽略了时间忠实性，可能导致临床误判。",
+      "研究呼吁开发时空一致的归因技术，以增强深度学习模型在医学影像中的可解释性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

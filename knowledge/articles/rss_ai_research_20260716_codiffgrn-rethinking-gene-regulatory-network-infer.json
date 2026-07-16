@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260716-065",
+  "title": "CoDiffGRN: Rethinking Gene Regulatory Network Inference via the BEELINE-KGC Benchmark and Co-evolutionary Discrete Diffusion",
+  "source_url": "https://arxiv.org/abs/2607.13120",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CoDiffGRN的新型基因调控网络（GRN）推断方法，旨在解决现有方法在真实世界应用中的根本性错位问题。当前基准测试多采用全局分类指标的直推式分割，而研究者实际需要的是针对少量高置信度调控相互作用（尤其是涉及未知基因）的归纳式预测。为此，作者首先构建了BEELINE-KGC基准，将GRN推断重新定义为归纳式知识图谱补全（KGC）任务，并引入新的评估指标以匹配实际需求。在此基础上，CoDiffGRN利用共进化离散扩散模型，通过模拟基因调控关系的协同进化过程来生成高置信度的调控边。该方法在多个单细胞转录组数据集上展示了优于现有方法的性能，特别是在预测未见基因的调控关系方面。该工作不仅提供了更贴近生物学实验验证需求的基准，还通过扩散模型创新性地解决了GRN推断中的归纳学习挑战，具有重要的方法论和实际应用价值。",
+  "tags": [
+    "Gene Regulatory Network",
+    "Diffusion Model",
+    "Knowledge Graph Completion",
+    "Single-cell Transcriptomics",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:15:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过BEELINE-KGC基准将GRN推断重新定义为归纳式知识图谱补全任务，解决了现有基准与真实实验验证需求之间的错位。",
+      "提出共进化离散扩散模型，能够有效学习基因调控关系的协同进化模式，提升对未见基因调控关系的预测能力。",
+      "新基准和模型在多个单细胞数据集上验证了优越性，为生物发现提供了更可靠的计算工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

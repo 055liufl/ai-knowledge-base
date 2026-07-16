@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-003",
+  "title": "Interventional Grounding Audits: Black-Box Premise-Dependency Tests for LLM Chain-of-Thought via Predicate Substitution",
+  "source_url": "https://arxiv.org/abs/2607.13069",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“干预性基础审计”的黑盒方法，用于测试大型语言模型（LLM）在链式思维（CoT）推理中是否真正依赖于其陈述的前提。该方法通过替换单个前提中的目标谓词为全新符号，重新运行模型，并检查每个推理步骤的规范化结论（规范谓词形式）是否发生变化，从而在步骤级别评估前提依赖性。这一技术解决了LLM推理中常见的“虚假逻辑”问题——即模型生成的推理看似合理，但实际上可能并未基于其声称的前提。该研究对于提升LLM推理的可解释性和可靠性具有重要意义，尤其适用于需要严格逻辑验证的应用场景，如法律分析、科学推理和复杂决策支持。通过提供一种无需访问模型内部结构的测试方法，它增强了AI系统的透明度和可信度。",
+  "tags": [
+    "LLM",
+    "Chain-of-Thought",
+    "Interpretability",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:11:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种黑盒、步骤级别的测试方法，通过谓词替换干预来检测LLM推理是否真正依赖其前提。",
+      "该方法无需模型内部访问，适用于任何基于CoT的LLM，增强了可解释性审计的实用性。",
+      "揭示了LLM可能产生逻辑上看似合理但实际不依赖前提的推理，对AI安全与可信度有重要警示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

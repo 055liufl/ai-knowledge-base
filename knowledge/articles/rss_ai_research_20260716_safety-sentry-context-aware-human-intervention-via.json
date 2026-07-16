@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-021",
+  "title": "SAFETY SENTRY: Context-Aware Human Intervention via EXECUTE-ASK-REFUSE Routing",
+  "source_url": "https://arxiv.org/abs/2607.13594",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SAFETY SENTRY 的上下文感知人工干预框架，用于增强 LLM 代理在工具调用过程中的安全性。传统防护模型仅对动作进行二元安全分类（安全/不安全），忽略了动作本身是否有害以及是否适应用户上下文这两类不同决策，且通常基于动作类别而非具体实例进行判断。SAFETY SENTRY 通过 EXECUTE-ASK-REFUSE 路由机制，根据动作的上下文相关性和潜在危害程度，动态决定是直接执行、请求用户确认还是拒绝动作。该框架能够更精细地平衡安全性与自主性，避免不必要的用户干扰，同时防止危险操作。论文在多个真实环境数据集上进行了实验，证明该方法在减少误报和漏报方面优于传统防护模型。这项工作对于提升 LLM 代理在实际部署中的安全性和可靠性具有重要意义，尤其适用于金融、医疗、自动驾驶等高风险领域。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Human-in-the-loop"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:12:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统二元安全分类混淆了动作本身有害性与上下文不适当性，导致过度干预或漏判。",
+      "EXECUTE-ASK-REFUSE 路由根据上下文动态决定干预级别，实现安全与自主性的平衡。",
+      "该方法在多个真实环境数据集上显著降低了误报率和漏报率，优于现有防护模型。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

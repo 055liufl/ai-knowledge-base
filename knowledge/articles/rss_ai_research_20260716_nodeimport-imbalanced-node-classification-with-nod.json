@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-132",
+  "title": "NodeImport: Imbalanced Node Classification with Node Importance Assessment",
+  "source_url": "https://arxiv.org/abs/2607.13837",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为NodeImport的新方法，用于解决图神经网络（GNN）在节点分类任务中面临的类别不平衡问题。在现实应用中，多数类节点往往主导训练过程，导致模型对少数类节点的性能偏差。传统GNN容易过拟合多数类而忽视少数类。现有方法要么基于类别大小优先选择节点，要么为少数类合成新节点，但效果有限。NodeImport通过引入节点重要性评估机制，动态调整不同类别节点在训练中的权重，从而提升模型对少数类的分类能力。该方法在多个基准数据集上取得了显著改进，展示了其在处理图数据不平衡问题上的实用性和创新性。值得关注的是，它提供了一种无需额外数据生成即可缓解不平衡的轻量级方案，对图学习领域具有重要参考价值。",
+  "tags": [
+    "GNN",
+    "Node Classification",
+    "Class Imbalance",
+    "Node Importance"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:21:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NodeImport通过节点重要性评估动态调整训练权重，有效缓解了类别不平衡问题。",
+      "该方法避免了合成数据带来的噪声，提供了一种更简洁的不平衡处理策略。",
+      "在多个基准数据集上的实验表明，NodeImport显著提升了少数类节点的分类准确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

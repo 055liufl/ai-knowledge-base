@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-096",
+  "title": "Data-Efficient Adaptation of LLMs via Attention Head Reweighting",
+  "source_url": "https://arxiv.org/abs/2607.13425",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为注意力头重加权（Attention Head Reweighting, AHR）的数据高效方法，用于在标注数据稀缺的场景下（如安全领域）适应大型语言模型（LLMs）。AHR 通过重新加权预训练 LLM 中的注意力头，而非微调全部参数或仅调整少量参数，从而在仅有少量样本的情况下实现高效学习。该方法在多个困难任务上表现出色，相比现有的参数高效微调方法（如 LoRA）具有更好的数据效率和性能。AHR 的核心思想是识别并强化对目标任务最重要的注意力头，同时抑制无关头，从而在保持模型大部分预训练知识的同时，快速适应新任务。实验表明，AHR 在少样本学习设置下显著提升了 LLM 的准确性和鲁棒性，尤其适用于安全、医疗等数据稀缺领域。该工作为 LLM 的少样本适应提供了新思路，具有重要的实用价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Attention Head Reweighting",
+    "Data-Efficient Learning",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:18:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AHR 通过重新加权注意力头而非微调全部参数，实现了在少样本场景下的高效 LLM 适应，显著优于传统参数高效方法。",
+      "该方法特别适用于数据稀缺的领域（如安全），解决了 LLM 在困难任务上少样本学习能力不足的问题。",
+      "AHR 保留了预训练知识，仅调整注意力头的权重，从而在保持模型泛化能力的同时快速适应新任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

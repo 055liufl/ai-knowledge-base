@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260716-082",
+  "title": "Accuracy Without Grounding: Diagnosing Visual Dependency Dissociation in Video LLM Benchmarks",
+  "source_url": "https://arxiv.org/abs/2607.13305",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对视频大语言模型（Video LLMs）的基准测试准确性进行了深入审计，质疑了高准确率等同于视觉理解的常见假设。研究跨越了20个模型，参数范围从2B到78B，涵盖10种架构家族。作者提出了“视觉依赖差距”（Visual Dependency Gap, VDG）这一新概念，即模型在原始视频条件下与黑屏条件下每道题正确率之间的差异。通过在MVBench上进行配对McNemar检验，发现准确率与视觉依赖是可分离的：一些模型即使在没有视觉输入（黑屏）时也能达到高准确率，表明其“理解”可能并非真正基于视觉信息，而是依赖于语言先验或数据集偏差。这项工作揭示了当前视频LLM基准测试的局限性，强调了需要更严格的评估方法来衡量真实的视觉理解能力，对于推动多模态AI的可靠评估具有重要意义。",
+  "tags": [
+    "Video LLM",
+    "Benchmark",
+    "Visual Understanding",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:17:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了视觉依赖差距（VDG）指标，用于量化模型对视觉信息的真实依赖程度，而非仅看准确率。",
+      "通过黑屏对照实验，发现多个视频LLM在无视觉输入时仍能保持高准确率，暴露了基准测试中的语言先验偏差。",
+      "研究覆盖了从2B到78B参数的20个模型，揭示了模型规模与视觉依赖之间的非单调关系。",
+      "为视频LLM评估提供了新方法论，强调需要设计能真正测试视觉理解而非语言捷径的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

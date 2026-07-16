@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-023",
+  "title": "STOCKTAKE: Measuring the Gap Between Perception and Action in LLM Agents with a Fair Oracle",
+  "source_url": "https://arxiv.org/abs/2607.13618",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为STOCKTAKE的评估框架，用于量化LLM智能体在长期决策任务中“感知”与“行动”之间的差距。在现实场景中，智能体需要基于部分可观测状态做出决策，而最终成本无法区分失败是由于感知错误（误读世界状态）还是行动失败（知道该做什么但未执行）。现有评估方法要么依赖智能体无法获取的特权信息，要么完全缺失参考策略。STOCKTAKE通过引入一个公平的“神谕”（oracle）——即一个拥有完全信息但受限于与智能体相同行动空间的参考策略——来分离这两种失败模式。实验表明，该方法能有效诊断智能体在复杂任务中的瓶颈，为改进智能体设计提供针对性指导。该研究填补了LLM智能体评估中一个关键空白，对于提升智能体在现实世界中的可靠性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:12:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "STOCKTAKE通过公平神谕（oracle）分离智能体在长期决策任务中的感知错误与行动失败，解决了现有评估无法区分这两种失败模式的问题。",
+      "该框架不依赖特权信息，而是使用与智能体相同行动空间的参考策略，从而提供更公平、更可解释的诊断结果。",
+      "实验证明该方法能有效识别智能体在复杂多步任务中的具体瓶颈，为改进智能体设计提供明确方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260716-017",
+  "title": "LAPO: Leave-One-Turn Attribution for Self-Generated Process Rewards in Multi-Turn Search Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.13501",
+  "source_platform": "rss_ai_research",
+  "summary": "LAPO（Leave-One-Turn Attribution）是一种针对多轮搜索推理任务的自生成过程监督方法。传统强化学习方法在多轮搜索推理中仅依赖最终结果奖励，无法区分中间交互的有用性、冗余性或危害性。LAPO通过反向留一回合归因机制，将每个搜索回合及其检索观察替换为固定的[DELETE]占位符，并测量由此导致的当前策略变化，从而为每个中间回合生成细粒度的过程奖励信号。该方法无需外部人工标注，完全由模型自身生成监督信号，显著提升了多轮搜索推理中强化学习的效率和效果。该工作发表于arXiv，属于强化学习与搜索推理交叉领域的前沿研究，对于提升AI系统在复杂多步推理任务中的自主学习和决策能力具有重要意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Search Reasoning",
+    "Process Reward",
+    "Self-Supervised Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-16T10:09:00Z",
+  "collected_at": "2026-07-16T10:12:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LAPO通过留一回合归因机制，实现了对多轮搜索推理中每个中间交互的细粒度过程奖励，解决了传统终端奖励无法区分中间步骤贡献的问题。",
+      "该方法完全自生成，无需外部人工标注过程奖励，降低了监督成本并提升了可扩展性。",
+      "实验表明，LAPO能够有效识别并强化有用交互、抑制冗余和有害交互，从而提升多轮搜索推理的整体性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
