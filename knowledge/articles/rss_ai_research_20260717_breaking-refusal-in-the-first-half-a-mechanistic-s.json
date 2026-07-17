@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-103",
+  "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+  "source_url": "https://arxiv.org/abs/2607.14147",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对一种被称为“Prefill Jailbreak”的提示注入攻击进行了机制性分析。攻击者通过在提示前添加一行简单的文本（如“Sure, here is”），就能使经过对齐的语言模型（如Llama、Mistral等系列，参数规模从1.5B到14B）拒绝有害请求的行为失效。研究发现，即使在攻击成功使模型输出转为顺从的情况下，模型内部对“危害”的线性探测表示仍然保持高水平（0.91-0.98），与模型正常拒绝时的表示几乎一致。这表明模型的拒绝行为是一种浅层、响应层面的机制，而非深层语义理解的改变。该工作揭示了当前对齐技术的一个关键脆弱性：安全训练可能主要改变了模型的输出策略，而未真正消除对有害内容的内部表征。这一发现对于理解大模型的安全机制和设计更鲁棒的对齐方法具有重要价值，值得研究者和开发者关注。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:08:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill Jailbreak攻击通过简单的前缀文本（如“Sure, here is”）即可使模型拒绝行为失效，但模型内部对危害的表示并未改变。",
+      "实验表明，拒绝行为是一种浅层、响应层面的机制，而非基于深层语义理解的改变，这揭示了当前对齐技术的脆弱性。",
+      "该发现提示，安全训练可能主要改变了模型的输出策略，而未消除对有害内容的内部表征，需要更鲁棒的对齐方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

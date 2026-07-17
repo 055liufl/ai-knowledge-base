@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-090",
+  "title": "Polestar: Drift-Aware Cache Calibration and Token Commitment for Efficient Inference of Diffusion LLMs",
+  "source_url": "https://arxiv.org/abs/2607.14107",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Polestar，一种针对扩散大语言模型（dLLMs）推理效率优化的漂移感知缓存校准与令牌承诺方法。dLLMs 的推理面临两大挑战：双向注意力机制阻碍了高效的 KV 缓存复用，而使用静态置信度阈值增加解码并行度会损害生成质量。作者观察到这两个问题源于同一现象：令牌解码时，通过双向注意力的上下文整合导致令牌表示发生漂移。Polestar 通过动态校准缓存以应对表示漂移，并引入令牌承诺机制，在保证生成质量的同时提升并行解码效率。该方法在多个基准测试上显著降低了推理延迟，同时保持了与标准 dLLM 解码相当或更优的生成质量。这项工作值得关注，因为它直接解决了 dLLM 推理中的核心瓶颈，为高效部署扩散模型提供了实用方案，且其漂移感知思路可能启发更广泛的序列生成优化。",
+  "tags": [
+    "Diffusion LLM",
+    "KV-cache",
+    "Inference Optimization",
+    "Parallel Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:07:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "dLLM 推理效率受限于双向注意力导致的 KV 缓存复用困难和静态置信度阈值引发的质量下降，两者根源在于令牌表示漂移。",
+      "Polestar 通过漂移感知缓存校准动态调整缓存，并利用令牌承诺机制在并行解码中保持生成质量，实现延迟与质量的最佳平衡。",
+      "该方法在多个基准上显著降低推理延迟，同时保持或提升生成质量，为 dLLM 的高效部署提供了实用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

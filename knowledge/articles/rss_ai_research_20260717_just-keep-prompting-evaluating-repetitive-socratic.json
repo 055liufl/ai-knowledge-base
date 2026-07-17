@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-086",
+  "title": "Just Keep Prompting: Evaluating Repetitive Socratic Prompting in VLMs",
+  "source_url": "https://arxiv.org/abs/2607.14099",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了“Just Keep Prompting (JKP)”框架，用于评估视觉语言模型（VLM）在持续对话压力下的认知稳定性。具体而言，JKP通过多轮交互（最多10轮）模拟用户反复挑战、质疑或反驳模型回答的场景，并采用三种策略：对抗性否定（Adversarial Negation）、重复提问（Repetitive Questioning）和矛盾陈述（Contradictory Statements）。实验表明，当前主流VLM（如GPT-4V、LLaVA等）在持续压力下容易出现回答不一致、自我矛盾或崩溃现象，揭示了模型在长期对话中的脆弱性。该研究对于提升VLM在实际部署中的鲁棒性和可信度具有重要价值，尤其适用于需要稳定交互的领域如客服、教育或医疗。",
+  "tags": [
+    "VLM",
+    "Evaluation",
+    "Robustness",
+    "Multi-turn"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:07:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "JKP框架通过多轮对抗性提示有效暴露了VLM在持续对话中的认知不稳定性",
+      "对抗性否定策略对模型性能影响最大，导致回答频繁翻转或退化",
+      "当前主流VLM在重复质疑下缺乏自我修正能力，容易陷入错误循环"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

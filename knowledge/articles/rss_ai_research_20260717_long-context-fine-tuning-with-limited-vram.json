@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-070",
+  "title": "Long-Context Fine-Tuning with Limited VRAM",
+  "source_url": "https://arxiv.org/abs/2607.15105",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在有限显存条件下进行长上下文微调的方法，通过结合层级全局注意力（HGA）、分段反向传播和分层KV存储技术，显著降低了长序列训练的内存需求。该方法将注意力机制分为局部和全局两部分，仅保留当前活跃段在显存中可微分，而历史KV被卸载到RAM或NVMe，同时HGA为每个查询块加载有限的历史精确令牌。在Qwen3-8B模型上使用4-bit QLoRA和PG19数据集进行实验，验证了该方法在保持模型性能的同时，能够支持更长的训练序列。这项研究对于在消费级GPU上进行长上下文微调具有重要实用价值，解决了大模型训练中显存瓶颈的关键问题。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Memory Optimization",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:06:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过层级全局注意力（HGA）和分段反向传播，仅保留活跃段在显存中可微分，大幅降低长序列训练的内存需求。",
+      "分层KV存储将历史KV卸载到RAM或NVMe，同时HGA为每个查询块加载有限的历史精确令牌，平衡了内存与计算效率。",
+      "在Qwen3-8B模型上使用4-bit QLoRA和PG19数据集验证，表明该方法在有限显存下有效支持长上下文微调。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

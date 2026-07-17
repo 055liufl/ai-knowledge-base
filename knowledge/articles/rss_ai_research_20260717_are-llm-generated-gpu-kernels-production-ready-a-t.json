@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260717-039",
+  "title": "Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent",
+  "source_url": "https://arxiv.org/abs/2607.14541",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个名为 Atrex-Bench 的新型 GPU 内核生成基准测试，该基准测试直接来源于全集群生产推理轨迹，包含 30 个算子和 440 种形状，每个问题都根据其在 GPU 时间中的占比赋予重要性权重。与现有基于合成或策划来源的基准不同，Atrex-Bench 更贴近实际部署的工作负载。此外，论文还提出了一个优化代理，用于自动生成和优化 GPU 内核，并通过轨迹驱动的评估验证其生产就绪性。这项研究值得关注，因为它解决了 LLM 生成 GPU 内核在实际生产环境中的适用性问题，为高性能计算和 AI 推理优化提供了更可靠的评估工具和方法。",
+  "tags": [
+    "GPU Kernel Generation",
+    "Benchmark",
+    "LLM",
+    "Optimization Agent",
+    "Production Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:03:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Atrex-Bench 直接从生产推理轨迹中采样，比现有基准更真实反映实际工作负载。",
+      "每个问题带有重要性权重，使得评估结果更能体现实际性能影响。",
+      "优化代理的引入展示了自动生成和优化 GPU 内核的潜力，但生产就绪性仍需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-054",
+  "title": "Stop Thinking, Start Looking: Efficient Post-Training for Multimodal Document Question Answering via Reasoning-Free Alignment",
+  "source_url": "https://arxiv.org/abs/2607.14682",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多模态文档问答的高效后训练方法，名为“停止思考，开始观察：通过无推理对齐实现高效后训练”。该方法针对文档问答中需要精确视觉定位（即定位支持答案的文档区域）的挑战，提出了一种无推理的对齐策略，以替代传统的监督微调（SFT）和基于推理的强化学习（RL）方法。SFT需要大量标注数据且易陷入优化瓶颈，而RL依赖冗长的中间推理步骤，导致推理时token成本激增。本文的方法通过消除显式推理过程，直接对齐视觉和语言特征，在保持高精度的同时显著降低计算开销。该工作值得关注，因为它为多模态文档问答提供了一种更高效、更经济的训练范式，有望推动实际应用中的部署效率。",
+  "tags": [
+    "Multimodal",
+    "Document QA",
+    "Post-Training",
+    "Efficient Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:04:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出无推理对齐方法，避免SFT的标注依赖和RL的推理开销，实现高效后训练。",
+      "在文档问答任务中，通过直接视觉-语言对齐实现精确的视觉定位，无需中间推理步骤。",
+      "该方法在保持高问答准确性的同时，显著降低推理时的token消耗，提升部署效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

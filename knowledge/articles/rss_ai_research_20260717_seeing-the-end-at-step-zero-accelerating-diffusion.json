@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-041",
+  "title": "Seeing the End at Step Zero: Accelerating Diffusion MLLMs via MLP Sparsity-Aware Truncation",
+  "source_url": "https://arxiv.org/abs/2607.14557",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对扩散多模态大语言模型（DMLLMs）的推理加速方法，核心发现是DMLLMs在生成过程中会隐式地提前揭示有效语义长度，从而可以通过MLP稀疏性感知截断来减少冗余计算。由于DMLLMs在推理时输出序列长度固定，实际输出长度未知，导致大量计算浪费在填充的[EOS]标记上。该方法通过分析MLP层的稀疏性模式，在生成早期就预测有效输出长度，并截断后续计算，从而显著提升推理效率。这项工作对于降低多模态大模型部署成本、实现实时应用具有重要价值，特别是在资源受限场景下。其创新性在于利用模型内部稀疏性特征而非外部启发式规则，实现了更精准的截断策略。",
+  "tags": [
+    "Diffusion",
+    "MLLM",
+    "Inference Acceleration",
+    "Sparsity"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:04:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DMLLMs在生成过程中隐式编码了有效语义长度信息，可通过MLP稀疏性模式检测。",
+      "基于稀疏性感知的截断方法能有效减少冗余计算，加速推理而不显著影响生成质量。",
+      "该方法无需修改模型架构或训练过程，可直接应用于现有DMLLMs。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

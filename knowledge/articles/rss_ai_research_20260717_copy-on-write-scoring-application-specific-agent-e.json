@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-125",
+  "title": "Copy-on-Write Scoring: Application-Specific Agent Evaluations",
+  "source_url": "https://arxiv.org/abs/2607.14336",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Copy-on-Write (CoW) Scoring 的评估方法，旨在解决基于大语言模型（LLM）的智能体在特定应用工作流中的可信部署问题。现有评估机制存在局限性：基准测试对特定应用工作流和环境的结构效度较低，而复制评估环境成本高昂且容易发生漂移。CoW Scoring 通过一种轻量级、可复用的评估框架，允许开发者在不构建完整复制环境的情况下，对智能体在应用特定任务上的表现进行细粒度评估，从而定位其成功与失败的具体环节。该方法的核心思想是利用“写时复制”机制，动态生成评估场景，降低评估成本并提高评估的准确性和稳定性。该研究对于推动 LLM 智能体在实际软件系统中的安全、可靠应用具有重要意义，为开发者提供了一种实用且高效的评估工具。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:09:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoW Scoring 通过动态生成评估场景，解决了传统复制评估环境成本高、易漂移的问题。",
+      "该方法提供了细粒度的评估能力，能够定位智能体在特定工作流中的成功与失败点。",
+      "CoW Scoring 提升了评估的结构效度，使其更适用于应用特定的工作流和环境。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

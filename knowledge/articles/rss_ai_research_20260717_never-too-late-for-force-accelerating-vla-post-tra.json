@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-116",
+  "title": "Never Too Late for Force: Accelerating VLA Post-Training with Reactive Force Injection",
+  "source_url": "https://arxiv.org/abs/2607.14236",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 LIFT（Late Reactive Injection of Force for VLA Post-Training）框架，旨在解决预训练视觉-语言-动作（VLA）策略在接触状态下的操作难题。当操作进入接触状态时，场景可能被遮挡、深度模糊或微小力误差导致执行偏离离线演示分布，而现有 VLA 策略主要依赖视觉驱动，难以应对这些情况。LIFT 通过后训练阶段注入力反馈，使 VLA 策略能够利用触觉信息进行精细操作，提升在接触任务中的鲁棒性和成功率。该框架具有反应式、延迟注入的特点，不改变预训练模型结构，仅通过后训练适配，降低了部署成本。实验表明，LIFT 在多种接触密集型任务（如插孔、装配）上显著优于纯视觉基线，且能泛化到未见过的物体和场景。这项工作将力传感与 VLA 策略结合，为机器人操作中的触觉-视觉融合提供了实用方案，尤其适用于工业装配、精细操作等需要力控的场景。",
+  "tags": [
+    "VLA",
+    "Force Control",
+    "Post-Training",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:09:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LIFT 通过后训练阶段注入力反馈，解决了 VLA 策略在接触状态下因视觉受限导致的执行失败问题。",
+      "该框架采用反应式、延迟注入设计，不修改预训练模型，仅需少量力数据即可适配，降低了部署门槛。",
+      "在接触密集型任务（如插孔、装配）上，LIFT 显著优于纯视觉基线，并展现出良好的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-013",
+  "title": "When a Verified World Model Still Loses: Play-Adequacy vs Prediction-Accuracy in LLM-Synthesized Code World Models",
+  "source_url": "https://arxiv.org/abs/2607.14169",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了大型语言模型（LLM）在合成游戏规则作为可执行代码（即代码世界模型，CWM）时的评估标准问题。传统上，这类模型通过采样轨迹上的高转换准确率来验证其有效性，但作者认为这种“预测准确性”并不足以衡量模型在规划任务中的适用性。论文通过四个主要发现论证了这一点：首先，一个LLM合成的CWM可能在采样门控测试中达到100%的转换准确率，并且在状态准确率上超过98%，但仍然可能在规划中失败。其次，作者提出了“游戏充分性”（Play-Adequacy）这一新概念，强调模型需要捕捉对规划至关重要的状态-动作对，而不仅仅是整体预测精度。第三，实验表明，即使模型在统计上高度准确，微小的错误也可能导致规划路径完全偏离。最后，论文建议采用基于规划性能的验证方法，而非仅依赖采样准确率。这项研究挑战了当前LLM生成世界模型的评估范式，对AI规划、游戏AI和LLM应用具有重要启示，值得关注因为它揭示了模型验证中的关键盲点，并提出了更实用的评估框架。",
+  "tags": [
+    "LLM",
+    "World Model",
+    "Planning",
+    "Game AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:01:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM合成的代码世界模型即使达到100%的采样转换准确率，仍可能在规划任务中失败，表明预测准确率不是评估规划适用性的充分标准。",
+      "提出“游戏充分性”概念，强调模型需要准确捕捉对规划关键的状态-动作对，而非追求整体统计精度。",
+      "微小错误在规划中可能被放大，导致路径完全偏离，因此验证应基于规划性能而非仅采样准确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-107",
+  "title": "Structured Feedback Improves Repair in an LLM Agent Loop",
+  "source_url": "https://arxiv.org/abs/2607.14167",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 VeriHarness 的代码控制代理循环框架，旨在改进大语言模型（LLM）代理在外部验证失败后的修复能力。传统方法中，代理在验证拒绝候选方案后仅进行简单重试，但验证与模型调用之间的接口缺乏明确规范。VeriHarness 通过引入外部验证器来控制接受条件、预算和追踪，使模型在生成候选方案的同时，能够接收结构化的反馈信息，包括失败位置、观察值和可接受的替代方案。实验表明，与原始诊断相比，这种结构化反馈显著提升了代理的修复效率和成功率。该研究为构建更鲁棒的 LLM 代理系统提供了实用工具和方法论，尤其适用于需要迭代验证的复杂任务场景，如代码生成、自动化调试等。",
+  "tags": [
+    "LLM Agent",
+    "Feedback Loop",
+    "Code Generation",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:08:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VeriHarness 通过外部验证器控制接受条件、预算和追踪，明确了验证与模型调用之间的接口。",
+      "结构化反馈（包含失败位置、观察值和可替代方案）比原始诊断更有效地提升代理的修复成功率。",
+      "该框架适用于需要迭代验证的复杂任务，如代码生成和自动化调试。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

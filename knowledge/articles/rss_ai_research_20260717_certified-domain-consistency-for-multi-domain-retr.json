@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-105",
+  "title": "Certified Domain Consistency for Multi-Domain Retrieval: Label-Free Per-Domain Contamination Control with Conformal Risk Guarantees",
+  "source_url": "https://arxiv.org/abs/2607.14157",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 C3R（Certified Consistent Contamination Risk）的新型控制层，用于解决多领域检索中的域污染问题。在混合多个领域的语料库中进行检索时，传统方法可能返回相关但属于错误领域的证据，而现有的排序指标和 conformal risk control 边界对此覆盖不足，尤其在最差领域上表现不佳。C3R 作为一个即插即用的控制层，通过推断的领域后验分布，无需查询时的标签，即可在可行时认证每个领域的污染预算，否则选择弃权而非默默违反约束。该方法提供了统计上的风险保证，确保检索结果在跨领域场景下的域一致性。这项工作值得关注，因为它填补了多领域检索中域污染控制的空白，结合了 conformal prediction 的统计保证与无标签推理的实用性，对提升检索系统的可靠性和鲁棒性具有重要价值。",
+  "tags": [
+    "Retrieval",
+    "Conformal Prediction",
+    "Multi-Domain",
+    "Risk Control"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:08:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "C3R 通过领域后验推断实现无标签的域污染控制，避免了传统方法对最差领域的覆盖不足。",
+      "该方法提供统计上的 conformal risk 保证，在可行时认证每个领域的污染预算，否则弃权，确保可靠性。",
+      "作为即插即用层，C3R 可轻松集成到现有检索系统中，提升跨领域场景下的域一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-123",
+  "title": "PReM: Learning What to Preserve and When to Refresh for Context Compression",
+  "source_url": "https://arxiv.org/abs/2607.14327",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为PReM（Preserve and Refresh Memory）的新型上下文压缩方法，旨在解决长上下文推理中的效率与信息保留平衡问题。现有方法如KV缓存压缩或上下文压缩通常过早决定保留哪些信息，或依赖外部压缩器，导致难以动态适应生成过程中的信息需求变化。PReM通过引入一个轻量级的学习模块，在推理过程中动态判断哪些上下文信息需要保留（Preserve）以及何时需要刷新（Refresh）压缩表示，从而在降低内存成本的同时保持关键上下文的可访问性。该方法在多个长上下文基准测试中展示了优于传统压缩策略的性能，特别适用于需要持续访问历史信息的场景，如多轮对话、文档摘要和长文本生成。PReM的创新点在于其自适应压缩机制，能够根据生成进度调整压缩策略，避免了静态压缩带来的信息丢失问题。这项工作对提升大语言模型在长上下文任务中的实用性和效率具有重要意义，尤其为资源受限环境下的部署提供了新思路。",
+  "tags": [
+    "Context Compression",
+    "KV Cache",
+    "Long-Context Inference",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:09:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PReM通过动态学习机制在推理过程中自适应决定上下文保留与刷新时机，解决了静态压缩导致的信息丢失问题。",
+      "该方法在降低内存成本的同时，保持了关键上下文的可访问性，显著提升了长上下文推理的效率与质量。",
+      "PReM不依赖外部压缩器，而是将压缩决策集成到模型推理流程中，实现了更灵活的上下文管理。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

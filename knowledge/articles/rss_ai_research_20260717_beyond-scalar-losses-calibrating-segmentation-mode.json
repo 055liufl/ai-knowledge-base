@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260717-126",
+  "title": "Beyond scalar losses: calibrating segmentation models via gradient vector field surgery",
+  "source_url": "https://arxiv.org/abs/2607.14338",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的校准方法，通过梯度向量场手术（gradient vector field surgery）来改进基于区域的损失函数（如Dice损失）在分割模型中的校准问题。传统上，使用Dice损失等区域损失函数训练的模型在高度类别和区域不平衡的分割任务中表现良好，但往往产生过度自信的预测，导致校准不良。这在医学影像应用（如定义肿瘤切除边缘）中阻碍了临床采用。作者通过分析梯度向量场，设计了一种手术式干预，调整梯度以改善模型输出的概率校准，同时保持分割性能。实验在多个医学分割数据集上验证了该方法能显著降低校准误差，提升模型可靠性。该工作为分割模型的校准提供了新视角，具有重要的临床应用价值。",
+  "tags": [
+    "segmentation",
+    "calibration",
+    "medical imaging",
+    "loss function"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:09:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于区域的损失函数（如Dice损失）导致分割模型校准不良，产生过度自信预测。",
+      "梯度向量场手术通过调整梯度来改善模型校准，同时保持分割性能。",
+      "该方法在医学影像分割任务中显著降低了校准误差，提升了临床适用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260717-045",
+  "title": "Multi-LLM Collaborative MRI Report Generation for Visual Instruction Tuning in Brain Oncology",
+  "source_url": "https://arxiv.org/abs/2607.14581",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于多大型语言模型（LLM）协作的脑肿瘤MRI报告生成方法，旨在解决3D医学影像与文本配对数据稀缺的问题。研究通过视觉指令微调（Visual Instruction Tuning）技术，利用多个LLM协同工作，从3D MRI图像中自动生成结构化的放射学报告。该方法首先利用预训练的视觉编码器提取3D影像特征，然后通过多LLM协作框架进行文本生成，其中不同LLM分别负责不同子任务（如病灶描述、位置定位、诊断结论等），最后通过融合机制生成完整报告。实验在脑肿瘤MRI数据集上验证了方法的有效性，生成的报告在专业性和准确性上接近放射科医生水平。这项工作值得关注，因为它首次将多LLM协作应用于3D医学影像报告生成，解决了数据稀缺问题，并为视觉指令微调在医学领域的应用提供了新范式。",
+  "tags": [
+    "LLM",
+    "Medical Imaging",
+    "Report Generation",
+    "Visual Instruction Tuning",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-07-17T09:57:34Z",
+  "collected_at": "2026-07-17T10:04:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出多LLM协作框架，通过任务分解（如病灶描述、位置定位）提升3D MRI报告生成的准确性和专业性",
+      "利用视觉指令微调技术，在缺乏大规模3D影像-文本配对数据的情况下实现有效训练",
+      "实验表明生成报告在临床指标上接近放射科医生水平，展示了LLM在医学影像分析中的潜力"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}
