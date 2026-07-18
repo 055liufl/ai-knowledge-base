@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-087",
+  "title": "LBA: Textual Hard-Label Adversarial Attack under Low Query Budgets",
+  "source_url": "https://arxiv.org/abs/2607.14101",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为LBA（Low-Budget Attack）的新型文本对抗攻击方法，专门针对硬标签（hard-label）场景下的低查询预算问题。在硬标签设置中，攻击者只能获得模型输出的最终类别标签，而无法获取梯度或置信度分数，这使得生成高质量对抗样本变得极具挑战性。现有方法多采用贪心算法，逐个替换文本中的位置，这种局部搜索策略不仅容易陷入次优解，还导致查询成本过高。LBA通过引入全局优化视角，利用一种高效的搜索策略，在有限的查询次数内找到更优的对抗样本。实验表明，LBA在多个基准数据集上显著降低了查询次数，同时保持了较高的攻击成功率。该工作值得关注，因为它解决了实际攻击场景中的关键瓶颈——查询效率，对于评估和提升NLP模型的鲁棒性具有重要意义，尤其是在资源受限或黑盒访问环境下。",
+  "tags": [
+    "Adversarial Attack",
+    "NLP",
+    "Hard-Label Attack",
+    "Low-Query Budget"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:35:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LBA通过全局搜索策略替代传统贪心局部替换，在硬标签攻击中显著降低查询次数。",
+      "该方法在多个NLP基准数据集上实现了与现有方法相当或更高的攻击成功率，但查询预算大幅减少。",
+      "LBA为评估和提升NLP模型在低资源黑盒场景下的鲁棒性提供了实用工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

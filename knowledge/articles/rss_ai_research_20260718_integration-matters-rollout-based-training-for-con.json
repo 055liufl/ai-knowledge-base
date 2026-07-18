@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260718-134",
+  "title": "Integration Matters: Rollout-Based Training for Constrained Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2607.14398",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于 rollout 的训练方法，用于解决约束扩散模型中的可行性约束问题。现有方法通常通过训练时优化或采样时校正来施加约束，但训练时优化依赖于训练分布诱导的状态，这些状态可能与采样时遇到的状态存在显著差异，导致约束满足效果不佳。作者提出的 rollout-based 训练方法通过在训练过程中模拟采样轨迹，使模型在训练时就能接触到采样时可能出现的状态分布，从而更有效地学习满足复杂约束的生成过程。该方法在多个约束生成任务上展示了优越的性能，包括分子生成、图像修复等，显著提高了约束满足率和生成质量。这项工作对于需要严格约束的生成应用（如药物设计、材料科学）具有重要价值，为扩散模型的实用化提供了新的训练范式。",
+  "tags": [
+    "Diffusion Models",
+    "Constrained Generation",
+    "Training Strategy"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:38:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 rollout-based 训练方法，通过模拟采样轨迹来弥合训练与采样状态分布之间的差距，有效提升约束满足能力。",
+      "该方法在分子生成、图像修复等约束生成任务上显著优于现有训练时优化和采样时校正方法。",
+      "为扩散模型在需要严格约束的实际应用（如药物设计）中提供了更可靠的训练范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

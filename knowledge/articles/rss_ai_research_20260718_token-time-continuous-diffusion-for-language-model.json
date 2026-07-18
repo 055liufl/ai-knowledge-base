@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260718-089",
+  "title": "Token Time Continuous Diffusion for Language Modeling",
+  "source_url": "https://arxiv.org/abs/2607.14106",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Token Time Continuous Diffusion (TTCD) 的新型扩散语言模型。TTCD 在连续空间中运行，将高斯噪声确定性地映射到最终的 token 画布上，无需进一步采样。其核心创新在于引入了每个 token 独立的时间概念，允许不同 token 以不同速率从噪声过渡到最终 token，从而避免了传统扩散模型中并行采样多个时间步的限制。TTCD 通过这种非均匀的时间演化机制，有望提升语言建模的生成质量和效率。该工作结合了连续空间建模和 token 级时间动态，为扩散模型在自然语言处理中的应用提供了新思路，值得关注。",
+  "tags": [
+    "Diffusion Model",
+    "Language Modeling",
+    "Continuous Space"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:35:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TTCD 在连续空间中运行，将高斯噪声确定性地映射到 token 序列，无需额外采样步骤。",
+      "引入 per-token times 概念，允许不同 token 以不同速率从噪声过渡到最终 token，实现非均匀时间演化。",
+      "连续空间建模避免了传统扩散模型并行采样多个时间步的限制，可能提升生成效率和质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-082",
+  "title": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+  "source_url": "https://arxiv.org/abs/2607.15267",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了通过计算宣传手段对预训练数据进行投毒攻击的可行性。与以往依赖维基百科等固定数据源的研究不同，本文关注大规模、异构的预训练语料库中数据投毒的风险，并首次分析了投毒数据与数据清洗管道之间的相互作用。研究表明，攻击者可以通过在预训练数据中注入精心设计的文本（如带有特定偏见或错误信息的宣传内容），使语言模型学习到有害行为，且这些行为难以被检测和缓解。该工作揭示了当前预训练数据安全性的薄弱环节，对构建可信赖的大语言模型具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Pretraining",
+    "Data Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:34:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练数据投毒攻击在真实大规模异构语料库中具有可行性，且能绕过现有数据清洗管道",
+      "攻击者可通过计算宣传手段（如自动生成偏见文本）污染预训练数据，导致模型产生有害行为",
+      "与微调阶段投毒相比，预训练阶段投毒更难检测和缓解，影响范围更广"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

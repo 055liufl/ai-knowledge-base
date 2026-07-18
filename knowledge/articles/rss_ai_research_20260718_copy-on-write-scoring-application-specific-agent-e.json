@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-125",
+  "title": "Copy-on-Write Scoring: Application-Specific Agent Evaluations",
+  "source_url": "https://arxiv.org/abs/2607.14336",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Copy-on-Write (CoW) Scoring 的新型评估方法，旨在解决基于 LLM 的代理在特定应用工作流中的可信部署问题。现有评估机制存在两大局限：基准测试对特定应用工作流和环境的结构效度较低，而复制评估环境成本高昂且容易漂移。CoW Scoring 通过一种轻量级、应用特定的评估框架，允许开发者在不构建完整复制环境的情况下，对代理在具体工作流中的表现进行细粒度评估，从而精确定位成功与失败点。该方法的核心思想是“写时复制”，即利用原始应用数据生成评估场景，减少对独立测试环境的依赖。该工作对于提升 LLM 代理在实际软件系统中的可靠性和可调试性具有重要意义，尤其适用于需要高可信度的企业级应用场景。其创新性在于将评估从通用基准转向应用特定场景，同时降低了评估成本，为代理系统的持续集成和部署提供了实用工具。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:37:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoW Scoring 通过写时复制机制，利用原始应用数据生成评估场景，避免了构建完整复制环境的高成本和漂移问题。",
+      "该方法提供了细粒度的评估能力，能够定位代理在特定工作流中的成功与失败点，提升调试效率。",
+      "CoW Scoring 填补了通用基准测试与高成本复制环境之间的空白，为 LLM 代理在软件系统中的可信部署提供了实用工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-137",
+  "title": "Smarter and Cheaper at Once: Byte-Exact KV-Cache Grafting Turns a Frozen Small Model into a Verified-Knowledge Flywheel",
+  "source_url": "https://arxiv.org/abs/2607.14431",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Byte-Exact KV-Cache Grafting”的技术，能够在完全不改变模型权重的情况下，使冻结的小型语言模型同时变得更强大且成本更低。核心方法是将经过验证的知识以字节精确的键值（KV）状态工件形式存储，并在后续推理时通过“嫁接”操作将其恢复到新的推理上下文中。该恢复过程是比特精确的：在固定的确定性配置下，嫁接后的logits与重新计算的结果在字节级别完全一致（通过SHA-256验证）。这项技术值得关注，因为它打破了传统上模型能力与计算成本之间的权衡，为小型模型的持续知识更新和高效推理提供了全新范式，尤其适用于需要高可靠性和低成本的场景，如边缘设备或实时应用。",
+  "tags": [
+    "KV-Cache",
+    "Small Language Model",
+    "Inference Optimization",
+    "Knowledge Grafting"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:38:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出字节精确的KV缓存嫁接技术，使冻结的小模型在不更新权重的情况下提升能力并降低成本",
+      "嫁接过程实现比特级一致性，确保推理结果与重新计算完全一致，保障知识可靠性",
+      "通过一次存储验证知识，后续推理直接复用，大幅减少计算开销，适合资源受限场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

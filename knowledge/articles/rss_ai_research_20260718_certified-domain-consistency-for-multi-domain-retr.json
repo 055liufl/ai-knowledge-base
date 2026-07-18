@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-105",
+  "title": "Certified Domain Consistency for Multi-Domain Retrieval: Label-Free Per-Domain Contamination Control with Conformal Risk Guarantees",
+  "source_url": "https://arxiv.org/abs/2607.14157",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 C3R（Certified Consistent Contamination Control for Retrieval）的新型控制层，旨在解决多领域检索中常见的“领域污染”问题。在混合多个领域的语料库中进行检索时，现有方法（如排序指标和共形风险控制边界）往往无法有效识别并控制来自错误领域的相关文档，导致最差领域的覆盖不足。C3R 作为一个即插即用的控制层，利用推断出的领域后验概率，在无需查询时标签的情况下，为每个领域认证一个污染预算，并在不可行时选择弃权而非静默违规。该方法提供了严格的共形风险保证，确保每个领域的污染率在统计上可控。这项工作对于提升多领域检索系统的可靠性和公平性具有重要意义，尤其适用于需要高精度领域过滤的应用场景，如法律文档检索、医疗信息检索或跨语言知识库问答。其创新性在于将共形预测与领域自适应结合，实现了无标签的领域级风险控制，为检索系统的鲁棒性提供了理论保障。",
+  "tags": [
+    "Retrieval",
+    "Conformal Prediction",
+    "Domain Adaptation",
+    "Risk Control"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:36:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "C3R 通过推断领域后验概率，实现了无需查询时标签的每领域污染预算认证，填补了现有方法在跨领域检索中风险控制不足的空白。",
+      "该方法提供了严格的共形风险保证，确保每个领域的污染率在统计上可控，并在不可行时选择弃权，避免了静默违规。",
+      "C3R 作为即插即用的控制层，可轻松集成到现有检索系统中，提升多领域检索的可靠性和公平性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

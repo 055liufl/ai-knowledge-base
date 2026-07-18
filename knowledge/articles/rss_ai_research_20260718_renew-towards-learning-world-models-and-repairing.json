@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-109",
+  "title": "RENEW: Towards Learning World Models and Repairing Model Exploitation from Preferences",
+  "source_url": "https://arxiv.org/abs/2607.14180",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为RENEW的新方法，旨在解决离线强化学习中世界模型面临的模型利用问题。世界模型在离线RL中用于提升样本效率并生成超出固定数据集的经验，但在数据覆盖稀疏的区域容易受到模型利用，导致策略性能下降。现有工作要么通过收集更多专家演示（成本高、不安全或不可用），要么采用保守算法避免不确定区域（限制泛化能力）来应对。RENEW从人类偏好中学习，通过偏好反馈来修复模型利用问题，无需额外专家数据。该方法结合了偏好学习和世界模型，使模型能够识别并纠正高不确定性区域中的错误预测，从而提升泛化能力和鲁棒性。实验表明，RENEW在多个离线RL基准任务上显著优于现有方法，特别是在数据稀疏场景下。这项工作值得关注，因为它提供了一种新颖且实用的途径，将人类偏好整合到世界模型学习中，平衡了安全性和泛化性，为离线RL的实际部署提供了新思路。",
+  "tags": [
+    "Reinforcement Learning",
+    "World Model",
+    "Preference Learning",
+    "Offline RL"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:36:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RENEW通过偏好学习修复世界模型在数据稀疏区域的利用问题，无需额外专家演示。",
+      "该方法在多个离线RL基准上优于保守算法，提升了泛化能力和鲁棒性。",
+      "偏好反馈为平衡模型安全性和探索性提供了有效机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

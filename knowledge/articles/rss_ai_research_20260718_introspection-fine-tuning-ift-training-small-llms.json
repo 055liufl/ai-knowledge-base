@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-094",
+  "title": "Introspection Fine-Tuning (IFT): Training Small LLMs to Introspect",
+  "source_url": "https://arxiv.org/abs/2607.14111",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“内省微调”（Introspection Fine-Tuning, IFT）的新方法，旨在训练小型语言模型（SLMs）检测并报告其内部激活中的扰动。研究通过激活引导（activation steering）技术，将概念向量注入模型的残差流，并评估模型能否准确报告这些扰动。作者首先指出，以往工作中使用的二元检测范式（即提示模型回答“是”或“否”以判断是否检测到注入的“思想”）存在局限性。IFT通过微调，使模型不仅能检测扰动，还能以自然语言形式描述扰动的性质和位置，从而提升模型的可解释性和自我监控能力。实验表明，IFT显著增强了小型模型在内部状态扰动检测上的性能，甚至在某些任务上接近大型模型的表现。这项研究值得关注，因为它为提升小型语言模型的透明度和可控性提供了新思路，有助于在资源受限场景下部署更可靠的AI系统。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Interpretability",
+    "Activation Steering"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:35:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "IFT通过微调使小型语言模型能够检测并描述其内部激活中的扰动，超越了简单的二元检测范式。",
+      "该方法利用激活引导技术注入概念向量，并训练模型以自然语言形式报告扰动，增强了模型的可解释性。",
+      "IFT在小型模型上显著提升了扰动检测性能，甚至在某些任务上接近大型模型，展示了其提升资源受限场景下AI系统可靠性的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

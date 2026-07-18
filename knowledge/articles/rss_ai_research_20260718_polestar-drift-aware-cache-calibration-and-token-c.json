@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-090",
+  "title": "Polestar: Drift-Aware Cache Calibration and Token Commitment for Efficient Inference of Diffusion LLMs",
+  "source_url": "https://arxiv.org/abs/2607.14107",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Polestar 的框架，旨在解决扩散大语言模型（dLLMs）推理效率中的两个关键挑战：双向注意力机制阻碍了高效的 KV-cache 重用，以及使用静态置信度阈值增加解码并行度可能损害生成质量。作者观察到，这两个挑战源于一个共同现象：随着 token 被解码，它们通过双向注意力进行上下文整合，导致 token 表示发生漂移。Polestar 通过引入漂移感知的缓存校准和 token 提交机制来应对这一问题。具体来说，它动态调整缓存策略以适应 token 表示的漂移，并智能决定何时提交 token 以平衡并行度和生成质量。该工作对于提升 dLLMs 的推理效率具有重要意义，尤其是在需要高质量生成和低延迟的场景中。通过解决双向注意力带来的缓存和并行解码问题，Polestar 为扩散模型的实际部署提供了新的优化方向，值得关注。",
+  "tags": [
+    "Diffusion LLM",
+    "Inference Efficiency",
+    "KV-cache",
+    "Token Commitment"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:35:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散LLM的双向注意力机制导致KV-cache重用效率低下，这是推理瓶颈之一。",
+      "静态置信度阈值在增加解码并行度时可能损害生成质量，需要动态策略。",
+      "Polestar通过漂移感知的缓存校准和token提交机制，同时优化缓存重用和并行解码。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

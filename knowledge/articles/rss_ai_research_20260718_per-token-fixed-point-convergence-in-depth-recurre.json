@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-031",
+  "title": "Per-Token Fixed-Point Convergence in Depth-Recurrent Transformers",
+  "source_url": "https://arxiv.org/abs/2607.14427",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究深度循环Transformer（Depth-Recurrent Transformer）中每个token的逐token定点收敛现象。深度循环Transformer通过共享权重的核心模块进行可变次数的递归计算，先前工作表明使用随机递归次数训练可得到一个适用于多种推理深度的检查点。本文直接测量了135M参数模型在FineWeb-Edu数据集上的行为，发现递归状态在每个token上收敛到定点：连续输出的平均KL散度随递归次数增加而下降。这一发现揭示了深度循环Transformer的计算本质，即每个token独立地通过递归达到稳定表示，而非依赖层间交互。该工作对理解递归架构的收敛特性、优化推理深度选择以及设计更高效的Transformer变体具有重要理论意义和实用价值，尤其适合关注模型可解释性和计算效率的研究者。",
+  "tags": [
+    "Transformer",
+    "Recurrent",
+    "Convergence",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:30:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度循环Transformer中每个token的递归状态会收敛到定点，表现为连续输出KL散度随递归次数递减。",
+      "使用随机递归次数训练的模型可在不同推理深度下保持一致性，验证了递归计算的鲁棒性。",
+      "逐token定点收敛表明模型内部计算是独立于token间交互的局部过程，为理解递归架构提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

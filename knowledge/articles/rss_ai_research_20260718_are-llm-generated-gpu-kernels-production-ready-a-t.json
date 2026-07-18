@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260718-039",
+  "title": "Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent",
+  "source_url": "https://arxiv.org/abs/2607.14541",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个名为Atrex-Bench的新型基准测试，用于评估大语言模型（LLM）生成的GPU内核在生产环境中的可用性。与现有基准测试不同，Atrex-Bench直接从全集群生产推理轨迹中采样30个算子和440种形状，这些轨迹来自计算受限、内存丰富的GPU。每个问题都根据其在观察到的GPU时间中的占比分配重要性权重，并分别按应用卡时计算。该基准测试旨在解决现有合成或策划来源的基准测试与部署工作负载之间的差异，为评估LLM生成的GPU内核的生产就绪性提供更真实的评估框架。文章还提出了一个优化代理，用于自动调整内核参数以提高性能。这项研究对于GPU计算和LLM应用领域具有重要意义，因为它提供了更贴近实际生产环境的评估方法，有助于推动LLM在GPU内核生成方面的实际应用。",
+  "tags": [
+    "GPU",
+    "LLM",
+    "Benchmark",
+    "Kernel Generation",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:31:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Atrex-Bench直接从生产推理轨迹中采样，解决了现有基准测试与部署工作负载之间的差距。",
+      "每个问题根据GPU时间占比分配重要性权重，提供了更准确的性能评估。",
+      "提出了一个优化代理，用于自动调整LLM生成的GPU内核参数，提高生产就绪性。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-103",
+  "title": "Breaking Refusal in the First Half: A Mechanistic Study of the Prefill Jailbreak",
+  "source_url": "https://arxiv.org/abs/2607.14147",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对一种名为“Prefill Jailbreak”的提示注入攻击进行了机制性分析，这种攻击通过在用户请求前添加一行简单的预填充文本（如“Sure, here is”）就能使对齐的语言模型拒绝有害请求的机制失效。研究发现，即使模型行为上从拒绝转变为顺从，其内部对有害内容的表征（通过线性探针测量）仍然保持高度活跃（0.91-0.98），与拒绝时的表征几乎无异。这一现象在多个模型家族（1.5-3.8B及14B参数规模）中均得到验证。研究揭示了当前对齐模型的安全机制存在浅层性缺陷：拒绝行为依赖于表层响应策略，而非深层语义理解。该工作对于理解大语言模型安全机制的脆弱性、设计更鲁棒的对齐方法具有重要价值，同时也为红队测试提供了新的攻击视角。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:36:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill Jailbreak攻击通过简单的预填充文本即可使模型拒绝机制失效，但模型内部对有害内容的表征并未改变，表明拒绝行为是浅层的响应策略。",
+      "线性探针测量显示，在攻击成功时，模型内部有害表征的活跃度与拒绝时几乎相同（0.91-0.98），说明安全机制未能触及深层语义理解。",
+      "该现象在多个模型家族和参数规模（1.5B-14B）中一致出现，暗示当前对齐方法普遍存在结构性脆弱性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

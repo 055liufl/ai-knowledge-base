@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260718-063",
+  "title": "Explaining Process Control Optimisation Recommendations via GradientSHAP and Implicit Differentiation",
+  "source_url": "https://arxiv.org/abs/2607.14970",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种将可解释人工智能方法（如SHAP）应用于工业过程控制优化推荐的新框架。传统的SHAP方法主要用于解释机器学习模型的预测结果，但优化问题的输出（如最优控制参数）通常缺乏类似的解释性。作者通过隐函数定理（Implicit Function Theorem）将优化问题的解与输入特征之间的梯度关系联系起来，并利用GradientSHAP方法计算每个特征对优化推荐的贡献度。该方法能够为操作员提供每个控制参数调整背后的原因，从而弥合算法设计者与操作员之间的信任鸿沟。实验在多个工业过程控制基准问题上验证了该方法的有效性，表明其不仅能生成准确的解释，还能帮助操作员理解优化推荐的逻辑，提高对自动化系统的接受度。这项工作将可解释AI从预测模型扩展到优化领域，具有重要的实用价值。",
+  "tags": [
+    "Explainable AI",
+    "Process Control",
+    "Optimization",
+    "SHAP"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:33:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将SHAP方法从预测模型扩展到优化问题，通过隐函数定理计算优化解对输入特征的梯度，实现优化推荐的可解释性。",
+      "GradientSHAP结合隐式微分，能够为每个控制参数调整提供归因解释，帮助操作员理解优化逻辑。",
+      "该方法在工业过程控制基准上验证了有效性，有望缩小算法设计者与操作员之间的信任差距。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

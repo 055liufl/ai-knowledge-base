@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260718-034",
+  "title": "SAGA: Schema-Aware Grounding for Agentic Text-to-SPARQL Generation",
+  "source_url": "https://arxiv.org/abs/2607.14494",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SAGA（Schema-Aware Grounding for Agentic Text-to-SPARQL Generation）的新方法，旨在解决复杂知识库问答（KBQA）中的语义解析问题。传统方法要么通过信息检索在问题相关的子图上进行，要么通过语义解析生成可执行的逻辑形式。SAGA采用后一种范式，并利用大型语言模型（LLM）代理实现交互式语义解析。代理能够交替进行推理、查询知识库以及扩展部分SPARQL查询，从而减少对一次性生成的依赖。这种方法通过模式感知的接地（schema-aware grounding）来增强代理对知识库模式的理解，使其能够更准确地生成SPARQL查询。论文的实验结果表明，SAGA在多个KBQA基准数据集上取得了显著性能提升，特别是在处理复杂多跳问题时表现出色。这项研究值得关注，因为它将LLM代理与结构化查询生成相结合，为知识库问答提供了一种更灵活、更准确的解决方案，有望推动语义解析和智能问答系统的发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "KBQA",
+    "SPARQL",
+    "Semantic Parsing"
+  ],
+  "author": null,
+  "published_at": "2026-07-18T09:25:53Z",
+  "collected_at": "2026-07-18T09:31:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAGA通过LLM代理实现交互式SPARQL生成，减少了对一次性生成的依赖，提高了查询准确性。",
+      "模式感知的接地机制帮助代理更好地理解知识库模式，从而生成更符合语义的SPARQL查询。",
+      "该方法在复杂多跳KBQA任务上表现优异，展示了LLM代理在结构化知识推理中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
