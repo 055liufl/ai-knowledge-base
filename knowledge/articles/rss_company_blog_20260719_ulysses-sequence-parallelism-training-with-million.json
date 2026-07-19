@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260719-044",
+  "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+  "source_url": "https://huggingface.co/blog/ulysses-sp",
+  "source_platform": "rss_company_blog",
+  "summary": "Ulysses Sequence Parallelism 是一种用于训练超长上下文（百万级 token）的大语言模型的技术。它通过将序列维度上的计算和通信进行并行化，解决了传统数据并行和模型并行在处理长序列时面临的内存瓶颈和通信开销问题。该技术的关键在于将输入序列分割成多个块，并在多个设备上同时处理这些块，同时利用高效的通信原语（如 all-to-all）来同步注意力计算中的中间结果。Ulysses Sequence Parallelism 特别适用于需要处理极长上下文的场景，如文档级理解、代码生成和多轮对话。它显著降低了单设备的内存需求，使得在有限资源下训练更大规模的模型成为可能。该博客文章详细介绍了其实现原理、性能优势以及与其他并行策略（如张量并行、流水线并行）的兼容性，展示了在百万 token 上下文训练中的实际效果。",
+  "tags": [
+    "LLM",
+    "Sequence Parallelism",
+    "Training",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-19T09:52:08Z",
+  "collected_at": "2026-07-19T09:59:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Ulysses Sequence Parallelism 通过将序列分割并在多设备上并行处理，有效降低了长上下文训练的内存需求。",
+      "该技术利用 all-to-all 通信原语高效同步注意力计算，避免了传统并行策略的通信瓶颈。",
+      "Ulysses Sequence Parallelism 可与其他并行策略（如张量并行、流水线并行）组合使用，实现更高效的分布式训练。",
+      "该技术使得在有限资源下训练百万 token 上下文的 LLM 成为可能，对长文本理解和生成任务具有重要意义。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

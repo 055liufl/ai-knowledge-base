@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260719-122",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）服务中，长提示词（prompts）如何阻塞其他请求，从而影响整体性能。文章通过实验和分析，揭示了当单个请求包含长提示词时，会占用大量计算资源，导致后续请求排队等待，增加延迟。作者提出了一种优化策略，即通过动态调整请求处理顺序或使用批处理技术，来减少长提示词对系统吞吐量的负面影响。此外，文章还讨论了模型架构和硬件配置对性能的影响，并给出了实际部署中的最佳实践建议。该内容对于理解LLM服务的性能瓶颈和优化方法具有重要价值，尤其适合需要处理高并发请求的AI应用开发者。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Optimization",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-19T09:52:08Z",
+  "collected_at": "2026-07-19T10:06:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著增加请求处理时间，并阻塞其他请求，导致系统吞吐量下降。",
+      "通过动态调度和批处理技术，可以有效缓解长提示词带来的性能瓶颈。",
+      "模型架构和硬件配置的选择对处理长提示词的效率有直接影响。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

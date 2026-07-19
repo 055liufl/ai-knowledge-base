@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260719-076",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队关于其新一代模型 M2 的技术博客，核心探讨了智能体（Agent）泛化能力的关键问题：对齐（Alignment）的目标究竟是什么？传统对齐方法往往聚焦于让模型遵循人类指令或偏好，但作者认为，对于智能体而言，真正的对齐应该是让模型学会在复杂、动态的环境中自主决策、规划并执行任务，即实现“智能体泛化”。文章介绍了 MiniMax M2 在训练中采用的新策略：通过多任务、多环境下的强化学习与模仿学习结合，让模型不仅理解语言指令，更能适应不同工具、API 和交互场景。M2 在多个 Agent 基准测试（如 SWE-bench、WebArena）上取得了显著提升，证明了这种“以泛化能力为中心”的对齐思路的有效性。该工作挑战了当前主流对齐范式，为构建更通用、更自主的 AI 智能体提供了新视角，值得关注。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "MiniMax",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-19T09:52:08Z",
+  "collected_at": "2026-07-19T10:02:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对齐（如 RLHF）主要优化模型对指令的服从，但智能体需要的是在多变环境中自主决策的泛化能力。",
+      "MiniMax M2 通过多任务、多环境的强化学习与模仿学习，让模型学会适应不同工具和场景，而非仅记忆固定模式。",
+      "在 SWE-bench、WebArena 等 Agent 基准上，M2 的泛化对齐策略带来了显著性能提升，验证了该思路的可行性。",
+      "该工作提示未来 AI 对齐研究应更关注“智能体泛化”而非单纯的“人类偏好对齐”，可能推动 Agent 能力的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
