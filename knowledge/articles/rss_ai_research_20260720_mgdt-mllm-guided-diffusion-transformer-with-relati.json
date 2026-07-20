@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-013",
+  "title": "MGDT: MLLM-Guided Diffusion Transformer with Relation-Adaptive Mixture-of-Experts for Multimodal Knowledge Graph Completion",
+  "source_url": "https://arxiv.org/abs/2607.15592",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MGDT（MLLM-Guided Diffusion Transformer with Relation-Adaptive Mixture-of-Experts）的新方法，用于多模态知识图谱补全（MKGC）。MKGC任务需要从结构、文本和视觉线索中推断缺失的实体。现有的基于扩散的MKGC方法通常直接在原始多模态特征上进行去噪，这种设计迫使去噪器同时执行关系相关的线索选择、跨模态语义对齐和结构感知的实体生成，这引入了噪声和语义不一致的条件。MGDT通过引入多模态大语言模型（MLLM）指导的扩散Transformer和关系自适应混合专家（MoE）模块来解决这些问题。具体地，MLLM用于提供高质量的语义条件，引导扩散过程；关系自适应MoE则根据不同的关系类型动态调整专家网络的权重，从而更有效地融合多模态信息。该方法在多个基准数据集上取得了显著优于现有方法的性能，展示了其在处理复杂多模态知识图谱补全任务中的潜力。该工作值得关注，因为它不仅提升了MKGC的准确性，还提供了一种将大语言模型与扩散模型结合的新范式，对多模态学习和知识图谱领域具有重要参考价值。",
+  "tags": [
+    "Multimodal Knowledge Graph Completion",
+    "Diffusion Transformer",
+    "Mixture-of-Experts",
+    "MLLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:56:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有扩散MKGC方法因直接在原始多模态特征上操作而面临噪声和语义不一致问题，MGDT通过MLLM引导的扩散过程提供高质量语义条件。",
+      "关系自适应混合专家（MoE）模块能根据关系类型动态调整专家权重，实现更有效的多模态信息融合。",
+      "MGDT在多个基准数据集上显著超越现有方法，展示了结合大语言模型与扩散模型在知识图谱补全中的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

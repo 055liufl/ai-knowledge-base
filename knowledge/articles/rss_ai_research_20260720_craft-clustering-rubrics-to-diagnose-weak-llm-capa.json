@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260720-026",
+  "title": "CRAFT: Clustering Rubrics to Diagnose Weak LLM Capabilities and Generate Targeted Fine-Tuning Data",
+  "source_url": "https://arxiv.org/abs/2607.16122",
+  "source_platform": "rss_ai_research",
+  "summary": "CRAFT（Clustering Rubrics to Diagnose Weak LLM Capabilities and Generate Targeted Fine-Tuning Data）是一种新颖的方法，旨在将基于评分标准的评估数据集转化为可操作的诊断工具，以识别大型语言模型（LLM）的潜在能力缺陷，并生成针对性的微调数据。传统的评估流程通常仅指出模型在哪些示例或主题上表现不佳，但未能揭示失败的根本原因。CRAFT通过聚类分析评分标准中的失败模式，自动发现模型在推理、事实性、指令遵循等核心能力上的薄弱环节。该方法不仅提供诊断报告，还能基于识别出的弱点自动生成高质量的微调样本，从而直接指导模型的下一次迭代改进。CRAFT的价值在于它将评估从单纯的性能度量转变为模型发展的驱动力，填补了当前LLM开发中“评估-改进”循环的关键缺口。通过明确失败原因并提供修复数据，CRAFT有望显著提升模型迭代效率，尤其适用于需要持续优化和定制化训练的研发场景。该工作结合了无监督学习与数据增强技术，为LLM的自动化诊断与自适应训练提供了新范式。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Evaluation",
+    "Data Augmentation",
+    "Diagnosis"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:57:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CRAFT通过聚类评分标准中的失败模式，将评估从性能度量转变为能力缺陷诊断，揭示了模型失败的根本原因而非仅指出失败位置。",
+      "该方法能自动生成针对性的微调数据，直接填补了评估与模型改进之间的鸿沟，实现评估驱动的迭代优化。",
+      "CRAFT适用于任何基于评分标准的评估数据集，具有通用性，可扩展至多种LLM能力维度（如推理、事实性、指令遵循）。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

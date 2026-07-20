@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-119",
+  "title": "Agent Step Value: Auditing Evaluator-Channel Reversals in Black-Box Agent Traces",
+  "source_url": "https://arxiv.org/abs/2607.04419",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了Agent Step Value (ASV)概念，用于审计黑盒智能体轨迹中评估器-通道反转问题。传统方法中，将评估器生成的步骤奖励进行池化、替换或重用，假设其方向在评估通道变化时保持不变，但同一冻结的过渡可能违反这一假设。过程奖励改变智能体状态，而评估器审计改变评分配置，两者的一阶差分无法隔离它们的交互作用。ASV定义为通道索引的目标边际增益，并识别状态与通道的交互作用。该工作为智能体评估提供了更严谨的数学框架，有助于理解评估偏差来源，提升黑盒智能体系统的可靠性和可审计性。值得关注的是，它直接挑战了当前LLM Agent评估中普遍使用的奖励池化假设，可能推动更细粒度的评估方法发展。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Reward Modeling",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T11:04:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统评估器奖励池化假设在通道变化时可能失效，ASV通过通道索引的目标边际增益解决了这一问题",
+      "过程奖励和评估器审计分别改变状态和评分配置，ASV通过状态-通道交互分析隔离了它们的相互作用",
+      "该工作为黑盒智能体轨迹的审计提供了理论基础，有助于提升评估的鲁棒性和可解释性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-056",
+  "title": "Think at 5 Hz, Act at 20 Hz: Asynchronous Fast-Slow Vision-Language-Action Inference for Closed-Loop Driving",
+  "source_url": "https://arxiv.org/abs/2607.15621",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于闭环驾驶的异步快慢视觉-语言-动作推理架构，旨在解决大语言模型在端到端驾驶中推理延迟与车辆控制速率之间的矛盾。现有方法通过在模拟间隔中交替调用模型并重放上一指令来隐藏延迟，导致半数控制输出忽略最新观测。本文提出的快慢架构将推理过程分为5 Hz的慢速推理（处理语言理解和场景推理）和20 Hz的快速控制（执行低延迟动作），两者异步协作，确保控制输出始终基于最新观测。该工作值得关注，因为它首次在闭环驾驶中实现了语言模型推理与控制频率的解耦，显著提升了实时性和安全性，为LLM在机器人控制等实时场景的应用提供了新范式。",
+  "tags": [
+    "LLM",
+    "Autonomous Driving",
+    "Real-time Systems",
+    "Vision-Language-Action"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:59:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出异步快慢架构，将语言推理（5 Hz）与动作控制（20 Hz）解耦，解决LLM推理延迟与高频控制需求的冲突。",
+      "现有方法通过交替调用模型和重放指令隐藏延迟，但导致半数控制输出基于过时观测，本架构确保控制始终基于最新数据。",
+      "该架构可推广至其他需要实时决策的机器人系统，如机械臂操作或无人机导航，具有跨领域应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

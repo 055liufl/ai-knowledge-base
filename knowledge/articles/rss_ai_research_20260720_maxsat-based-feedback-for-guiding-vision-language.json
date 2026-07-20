@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260720-126",
+  "title": "MaxSAT-Based Feedback for Guiding Vision-Language Models in Sudoku",
+  "source_url": "https://arxiv.org/abs/2607.12711",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种神经符号方法，将形式化约束推理集成到视觉语言模型（VLM）中，用于解决数独等结构化视觉推理任务。该方法利用最大可满足性（MaxSAT）求解器为VLM提供反馈，以纠正违反逻辑约束的生成结果。具体而言，VLM首先基于视觉输入生成数独的初始解，然后MaxSAT求解器检测并修正其中违反数独规则（如行、列、宫格内数字不重复）的赋值，并将修正后的解作为反馈指导VLM进行迭代优化。实验表明，该方法显著提升了VLM在数独任务上的准确性和逻辑一致性，相比纯VLM方法，错误率降低了约30%。这项工作值得关注，因为它展示了如何通过符号推理增强深度学习模型的逻辑推理能力，为处理需要严格约束满足的视觉推理问题提供了新范式，并有望推广到其他结构化任务（如表格解析、逻辑谜题等）。",
+  "tags": [
+    "Vision-Language Model",
+    "MaxSAT",
+    "Neuro-Symbolic",
+    "Constraint Reasoning",
+    "Sudoku"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T11:04:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将MaxSAT求解器作为外部反馈机制，有效纠正VLM在结构化视觉推理中的逻辑错误，无需额外训练数据。",
+      "神经符号方法在数独任务上实现了约30%的错误率降低，证明了符号推理与深度学习结合的潜力。",
+      "该方法可泛化至其他需要严格约束满足的视觉推理任务，如表格解析和逻辑谜题，具有广泛的应用前景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

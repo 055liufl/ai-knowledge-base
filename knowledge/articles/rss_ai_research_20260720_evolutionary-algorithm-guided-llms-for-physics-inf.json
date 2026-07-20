@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260720-047",
+  "title": "Evolutionary Algorithm-Guided LLMs for Physics-Informed Neural Network Design",
+  "source_url": "https://arxiv.org/abs/2607.15560",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种结合进化算法与大语言模型（LLM）的闭环框架，用于自动设计物理信息神经网络（PINN）。PINN对架构、激活函数、损失权重、配置点、优化器和约束执行等交互选择极为敏感，传统LLM虽能独立推荐这些配置，但无法从先前训练的PINN中积累经验。该框架通过进化算法引导LLM生成完整且可执行的PINN配置，形成闭环优化：LLM基于进化历史生成新配置，评估后反馈结果，迭代改进。实验表明，该方法能有效提升PINN在复杂物理问题上的精度和鲁棒性，减少人工调参成本。该工作融合了进化计算与LLM的生成能力，为科学机器学习中的自动化设计提供了新范式，尤其适用于需要大量试错的PINN应用场景。值得关注的是，其闭环机制使LLM能持续学习，突破了静态推荐限制，具有显著实用价值。",
+  "tags": [
+    "PINN",
+    "LLM",
+    "Evolutionary Algorithm",
+    "AutoML",
+    "Scientific Machine Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:59:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM与进化算法结合形成闭环优化，使LLM能从历史训练中积累经验，克服独立推荐的局限性。",
+      "该框架自动生成完整PINN配置，涵盖架构、激活、损失权重等关键组件，显著减少人工调参。",
+      "在复杂物理问题上，该方法提升了PINN的精度与鲁棒性，展示了LLM在科学机器学习自动化设计中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

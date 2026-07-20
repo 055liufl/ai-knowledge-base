@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260720-055",
+  "title": "AEGIS: Assay-Aware Protocol Validation and Runtime Monitoring for Open-Source Liquid Handling Robots",
+  "source_url": "https://arxiv.org/abs/2607.15620",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为AEGIS的新型验证与运行时监控系统，专门针对开源液体处理机器人（如Opentrons OT-2）的协议验证与执行监控。当前低成本液体处理机器人缺乏高端系统（如Hamilton或Tecan）的压力式吸液监控，通常以开环方式运行，导致两类关键故障无法被检测：一是协议在语法上正确但违反了实验特定不变量（例如在PCR模板与无模板对照之间重复使用吸头），二是物理执行失败（如部分分液）。AEGIS通过引入“实验感知”的协议验证机制，在协议执行前检查其是否符合实验设计约束，并在运行时实时监控物理执行过程，从而显著提升实验可靠性和可重复性。该系统对于推动自驱动实验室（self-driving laboratories）的普及具有重要意义，尤其是在低成本自动化场景下，能够弥补现有开源液体处理机器人在安全性和准确性方面的不足。该工作发表于arXiv，属于自动化实验基础设施领域的前沿研究。",
+  "tags": [
+    "liquid handling",
+    "protocol validation",
+    "runtime monitoring",
+    "self-driving lab",
+    "robotics"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:59:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AEGIS针对开源液体处理机器人（如Opentrons OT-2）缺乏压力监控的缺陷，提出了实验感知的协议验证方法，可检测违反实验特定不变量（如吸头交叉污染）的语法正确协议。",
+      "系统结合运行时监控，能够实时识别物理执行失败（如部分分液），弥补了低成本液体处理机器人开环运行的盲区。",
+      "该工作为自驱动实验室的可靠性和可重复性提供了关键基础设施，尤其适用于需要低成本自动化的生物实验场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

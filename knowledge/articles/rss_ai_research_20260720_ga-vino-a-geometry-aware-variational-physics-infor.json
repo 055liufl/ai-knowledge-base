@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-114",
+  "title": "GA-VINO: A Geometry-Aware Variational Physics-informed Neural Operator for Mindlin-Reissner Plates",
+  "source_url": "https://arxiv.org/abs/2606.16624",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GA-VINO（几何感知变分物理信息神经算子）的新方法，用于解决Mindlin-Reissner板壳结构在复杂几何、异质材料和变化载荷下的快速响应预测问题。传统的数值方法（如有限元法）在物理配置变化时需要重复建模和求解，计算成本高。GA-VINO通过将几何信息（如板的中面形状、厚度分布）作为输入，结合变分原理和物理信息神经网络，构建了一个能够直接学习从几何和载荷到位移、应力等物理场映射的神经算子。该方法在训练时无需依赖大量仿真数据，而是通过最小化物理残差（如平衡方程、边界条件）来优化网络参数，从而实现了对任意几何和载荷配置的快速、准确预测。实验结果表明，GA-VINO在多种板壳问题上（如不同形状、厚度变化、载荷分布）均表现出高精度和泛化能力，计算速度比传统有限元方法快数个数量级。这项研究为工程设计中快速迭代和优化提供了新的工具，尤其适用于需要频繁调整几何或载荷的场景，如航空航天、汽车和土木工程中的结构分析。",
+  "tags": [
+    "Physics-Informed Neural Network",
+    "Neural Operator",
+    "Computational Mechanics",
+    "Plate Theory"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T11:04:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GA-VINO将几何信息作为输入，结合变分物理信息学习，实现了对Mindlin-Reissner板壳结构在任意几何和载荷下的快速响应预测，避免了传统方法的重建模成本。",
+      "该方法无需大量仿真数据，通过物理残差最小化进行训练，显著提高了泛化能力和计算效率，在多个测试案例中精度高且速度比有限元快数个数量级。",
+      "GA-VINO为工程设计中需要频繁调整几何或载荷的场景（如结构优化、参数研究）提供了高效替代方案，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

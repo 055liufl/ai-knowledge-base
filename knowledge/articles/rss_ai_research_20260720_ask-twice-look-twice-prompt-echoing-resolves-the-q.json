@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-049",
+  "title": "Ask Twice, Look Twice: Prompt Echoing Resolves the Question-First Paradox in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2607.15565",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了视觉语言模型（VLM）提示中一个反直觉的现象：将问题放在图像之前（问题优先）反而比图像优先排序表现更差，作者称之为“问题优先悖论”。通过分析，他们发现这一悖论源于VLM处理过程中两个阶段的冲突：视觉编码阶段和语言解码阶段。问题优先提示虽然有助于视觉编码阶段聚焦于相关区域，但会干扰语言解码阶段对图像特征的提取。为了解决这一问题，作者提出了一种简单而有效的方法——提示回显（Prompt Echoing），即在图像之后重复问题，从而同时满足两个阶段的需求。实验表明，该方法在多个VQA基准测试中显著提升了性能，且无需额外训练或模型修改。这项工作对于理解VLM的提示工程和优化多模态交互具有重要意义。",
+  "tags": [
+    "VLM",
+    "Prompt Engineering",
+    "Visual Question Answering",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:59:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "问题优先提示在VLM中表现不佳，是因为它虽然帮助视觉编码聚焦，但干扰了语言解码对图像特征的提取。",
+      "提示回显（在图像后重复问题）是一种无需训练或修改模型的简单方法，能有效解决这一悖论。",
+      "该发现强调了VLM中视觉与语言处理阶段的冲突，为多模态提示设计提供了新的理论视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

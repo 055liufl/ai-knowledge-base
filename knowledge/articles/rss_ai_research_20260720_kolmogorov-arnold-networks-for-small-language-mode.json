@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-044",
+  "title": "Kolmogorov--Arnold Networks for Small Language Models",
+  "source_url": "https://arxiv.org/abs/2607.15525",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了Kolmogorov-Arnold网络（KANs）在小语言模型中的应用，将传统的固定节点激活函数替换为可学习的一维边缘函数，旨在提供更清晰的解释接口，并作为Transformer前馈网络的潜在替代方案。作者通过一个六层、1000万参数的B样条KAN模型进行了实验验证，重建了所有884,736个前馈边缘，发现其中87.8%的边缘非线性强度（NLS）超过0.1，仅0.4%处于非活跃状态。进一步实验表明，剪除最低活跃度20-25%的边缘对模型性能影响极小，几乎可以忽略。这项工作为KANs在小型语言模型中的可行性和效率提供了实证，展示了其作为Transformer前馈网络替代方案的潜力，尤其通过边缘剪枝实现模型压缩而不显著损失性能，值得关注。",
+  "tags": [
+    "KAN",
+    "Small Language Models",
+    "Transformer",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:58:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KANs通过可学习边缘函数替代固定节点激活，为语言模型提供新的解释性接口。",
+      "在10M参数KAN中，大部分前馈边缘具有高非线性强度，仅极少数非活跃，表明模型参数利用率高。",
+      "剪除20-25%最低活跃边缘对性能影响极小，验证了KANs在模型压缩方面的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

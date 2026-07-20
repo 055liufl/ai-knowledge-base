@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-041",
+  "title": "Cache-Aware Prompt Compression:A Two-Tier Cost Model for LLM API Caching",
+  "source_url": "https://arxiv.org/abs/2607.15516",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM API部署中缓存感知的提示压缩方法，通过建立双层成本模型来平衡提示缓存和提示压缩两种成本降低策略。在生产环境中，LLM部署通常结合提示缓存（对重复使用的令牌前缀提供折扣）和提示压缩（减少发送的令牌数量）来降低成本。然而，现有的查询感知压缩方法会为每个查询生成不同的压缩前缀，这机械地使前缀严格缓存失效，导致每次调用都需要重新计算。作者通过Anthropic的Sonnet 4.6 API进行了实证分析，发现缓存机制在成本优化中具有显著影响，但现有压缩方法未能有效利用缓存优势。该研究提出的双层成本模型旨在量化缓存与压缩之间的权衡，从而指导更高效的提示压缩策略。这项工作对于降低大规模LLM部署的运营成本具有重要价值，特别是在API调用频繁的场景下，能够帮助开发者做出更优的成本决策。",
+  "tags": [
+    "LLM",
+    "Prompt Compression",
+    "Caching",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T10:58:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "查询感知的提示压缩方法会破坏缓存前缀的复用性，导致缓存失效和成本增加",
+      "通过双层成本模型可以量化缓存与压缩之间的权衡，优化整体成本",
+      "实证分析表明，在Anthropic Sonnet 4.6 API上，缓存机制对成本有显著影响"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

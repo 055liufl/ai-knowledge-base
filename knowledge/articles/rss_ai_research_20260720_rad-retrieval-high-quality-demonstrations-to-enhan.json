@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260720-103",
+  "title": "RAD: Retrieval High-quality Demonstrations to Enhance Decision-making",
+  "source_url": "https://arxiv.org/abs/2507.15356",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为RAD（Retrieval High-quality Demonstrations）的方法，旨在提升离线强化学习（Offline RL）的决策能力。离线RL从固定数据集中学习策略，避免了昂贵或不安全的环境交互，但其泛化能力受限于有限静态数据集。现有基于合成数据增强的方法往往无法泛化到未见场景。RAD通过检索高质量演示来增强决策，具体而言，它从外部数据源或经验池中检索与当前状态最相关的高质量轨迹，并将其作为辅助信息输入策略网络，从而提升模型在分布外场景下的表现。该方法结合了检索增强生成（RAG）的思想与强化学习，创新性地将检索机制应用于决策任务，有望解决离线RL的泛化瓶颈。该工作值得关注，因为它为离线RL提供了一种无需额外环境交互即可提升泛化能力的新范式，且检索机制具有可解释性和可扩展性，对机器人、自动驾驶等高风险决策领域具有重要应用价值。",
+  "tags": [
+    "Offline RL",
+    "Retrieval-Augmented",
+    "Decision-making",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-07-20T10:52:34Z",
+  "collected_at": "2026-07-20T11:03:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAD通过检索高质量演示来增强离线RL策略，解决了静态数据集泛化能力不足的问题。",
+      "该方法将检索增强生成（RAG）思想引入决策任务，为离线RL提供了新的技术路径。",
+      "检索机制具有可解释性，能够从外部数据源动态获取相关知识，提升模型在未见场景下的适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
