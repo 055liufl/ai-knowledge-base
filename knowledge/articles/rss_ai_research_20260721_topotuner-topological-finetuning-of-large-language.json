@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-032",
+  "title": "TopoTuner: Topological Finetuning of Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.16637",
+  "source_platform": "rss_ai_research",
+  "summary": "TopoTuner 是一种面向大型语言模型（LLM）的拓扑引导微调框架，旨在解决全参数微调成本高、LoRA 等参数高效方法缺乏选择性冻结指导的问题。该方法将注意力投影矩阵视为行，通过分析模型内部的拓扑结构（如注意力头之间的连接模式或梯度流），自动识别哪些投影矩阵在微调过程中应保持可训练、哪些可以冻结。TopoTuner 在保持与全微调相当性能的同时，显著减少了可训练参数数量，降低了计算和存储开销。该工作为参数高效微调提供了新的理论视角，即利用模型拓扑信息指导选择性参数更新，而非依赖随机或启发式选择。实验表明，TopoTuner 在多个基准任务上优于现有方法，尤其适用于资源受限场景。该研究对于推动 LLM 的高效部署和持续学习具有重要价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "Parameter Efficiency",
+    "Topology"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:30:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TopoTuner 利用模型拓扑结构指导注意力投影矩阵的选择性冻结，而非随机或启发式选择，提供了更科学的参数高效微调策略。",
+      "该方法在减少可训练参数的同时，保持了与全微调相当的性能，显著降低了计算和存储成本。",
+      "TopoTuner 为理解 LLM 内部结构对微调效果的影响提供了新视角，可能启发更多基于拓扑分析的模型压缩与适配方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

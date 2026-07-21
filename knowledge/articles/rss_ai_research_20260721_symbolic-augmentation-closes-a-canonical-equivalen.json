@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-017",
+  "title": "Symbolic Augmentation Closes a Canonical-Equivalence Blind Spot in Neural Fact-Checkers",
+  "source_url": "https://arxiv.org/abs/2607.16212",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型语言模型在总结科学文本时出现的数字和单位幻觉问题，提出了一种符号增强方法。作者将错误检测重新定义为类型化验证，并引入了一个五类类型化数量错误分类法。他们构建了一个包含1500个样本的基准数据集，这些样本来自PMC和arXiv，并由两个独立的LLM标注者进行标注，标注一致性达到0.882（Krippendorff's alpha）。通过微调ModernBERT编码器，该方法能够有效识别和纠正科学文本中的数量错误，从而避免科学主张被无意识地颠倒。这项工作对于提升LLM在科学领域的可靠性和准确性具有重要意义，特别是在事实核查和科学摘要生成等应用中。",
+  "tags": [
+    "LLM",
+    "Fact-Checking",
+    "Symbolic Augmentation",
+    "Scientific Text"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:29:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种五类类型化数量错误分类法，用于系统化检测LLM在科学文本中的数字和单位幻觉。",
+      "构建了一个1500样本的高质量基准数据集，通过双LLM标注和仲裁确保标注一致性。",
+      "符号增强方法通过类型化验证有效减少了科学摘要中的数量错误，提升了事实核查的准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

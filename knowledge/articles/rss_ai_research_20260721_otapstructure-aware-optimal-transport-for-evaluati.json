@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-052",
+  "title": "Otap:Structure-Aware Optimal Transport for Evaluating Planning and Execution in Agent Trajectories",
+  "source_url": "https://arxiv.org/abs/2607.17082",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Otap（Structure-Aware Optimal Transport）的新型评估框架，用于评估大语言模型（LLM）智能体在执行任务时生成的轨迹。传统评估方法要么仅使用二元成功标志（无法区分偶然成功与合理规划，也无法解释失败原因），要么通过精确匹配与参考轨迹对比（会惩罚有效但顺序不同的规划）。Otap 利用结构感知的最优传输理论，将智能体轨迹视为由规划、工具调用和中间结果组成的结构化序列，通过计算轨迹之间的结构相似性来提供更细粒度的评估。该方法能够识别轨迹中的关键步骤、检测规划与执行之间的偏差，并量化不同轨迹的质量差异。实验表明，Otap 在多个基准任务上比现有指标更准确地反映智能体的真实性能，尤其适用于需要复杂推理和多步骤规划的代理任务。该工作填补了智能体评估中缺乏结构化、可解释性指标的空白，对于推动 LLM 代理的可靠性和可调试性具有重要意义。",
+  "tags": [
+    "LLM Agent",
+    "Evaluation",
+    "Optimal Transport",
+    "Trajectory Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:32:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Otap 通过结构感知的最优传输方法，将智能体轨迹视为结构化序列，实现了比二元成功标志或精确匹配更细粒度的评估。",
+      "该方法能够区分偶然成功与合理规划，并定位失败轨迹中的具体错误步骤，提升了评估的可解释性。",
+      "实验证明 Otap 在复杂推理和多步骤规划任务中优于现有指标，为 LLM 代理的可靠性和调试提供了新工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

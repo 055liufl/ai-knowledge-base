@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-112",
+  "title": "Can We Break LLMs Out of Self-Loops? Fine-Grained Reasoning Control with Activation Steering",
+  "source_url": "https://arxiv.org/abs/2607.18100",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“激活引导”（Activation Steering）的方法，用于对大型语言模型（LLM）的推理过程进行细粒度控制。传统方法依赖提示词（prompt）在输入层面影响模型行为，无法精确干预模型内部的推理轨迹。作者通过分析推理轨迹中的潜在状态转换动态，发现模型在推理时容易陷入“自我循环”（self-loops），即重复生成相似或无效的推理步骤。激活引导技术通过调整模型内部特定层的激活向量，直接干预推理路径，从而打破这种循环，引导模型走向更高效、更正确的推理。这项研究首次实现了对LLM推理过程的内部控制，而非仅停留在输入输出层面，为提升模型推理的可靠性和可解释性提供了新思路。论文的实验表明，该方法在数学推理、逻辑推理等任务上显著减少了无效循环，提高了推理准确率。该工作值得关注，因为它将推理控制从黑盒提示转向白盒干预，为未来构建更可控、更可信的AI推理系统奠定了基础。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Activation Steering",
+    "Model Control"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:36:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了激活引导（Activation Steering）方法，通过调整模型内部激活向量实现对推理过程的细粒度控制，突破了传统提示词方法的局限。",
+      "揭示了LLM在推理过程中存在‘自我循环’（self-loops）问题，即模型会重复生成无效推理步骤，激活引导可有效打破这种循环。",
+      "该方法首次实现了对推理轨迹的内部干预，而非仅依赖输入层控制，显著提升了数学和逻辑推理任务的准确率与效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-044",
+  "title": "Environment-free Synthetic Data Generation for API-Calling Agents",
+  "source_url": "https://arxiv.org/abs/2607.16900",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种无需真实环境即可生成API调用智能体训练数据的方法。传统上，训练大型语言模型（LLM）作为API调用智能体需要大量高质量的执行轨迹数据，这通常依赖于已实现的环境（如可执行的API和预填充的后端数据库），导致数据收集成本高、扩展性差。本文创新性地利用LLM本身作为动态数字世界模型，在无需真实环境的情况下，通过模拟API交互和响应来合成训练数据。该方法通过让LLM扮演环境角色，根据智能体的API调用生成合理的返回结果，从而生成多样化的训练轨迹。实验表明，使用该方法生成的数据训练的智能体在多个基准测试中表现优异，甚至优于使用真实环境数据训练的模型。这项工作显著降低了API调用智能体开发的资源门槛，为大规模智能体训练提供了可扩展的解决方案，尤其适用于API生态快速变化的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Synthetic Data",
+    "API"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:31:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出利用LLM作为动态环境模型，无需真实API和数据库即可生成训练数据，解决了数据收集的瓶颈问题。",
+      "该方法生成的合成数据在多个基准测试中达到或超越真实环境数据训练的模型性能，验证了其有效性和实用性。",
+      "为API调用智能体的规模化训练提供了低成本、高灵活性的新范式，尤其适用于快速迭代的API生态。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

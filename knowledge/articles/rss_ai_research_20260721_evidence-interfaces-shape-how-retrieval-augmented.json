@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-054",
+  "title": "Evidence Interfaces Shape How Retrieval-Augmented Readers Use Support",
+  "source_url": "https://arxiv.org/abs/2607.17108",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了多跳检索增强生成（RAG）评估中的一个关键问题：传统的top-k答案分数可能掩盖两种不同的失败模式——检索窗口可能遗漏部分支持链，或者检索到的支持信息形式导致阅读器无法有效利用。作者提出了“证据接口”（evidence interface）这一概念，指代检索证据在阅读器面前的呈现形式。通过在三个带有支持标注的多跳问答基准上，对比使用原始上下文、检索窗口和黄金支持诊断训练的匹配阅读器，论文揭示了证据接口对RAG系统性能的显著影响。这项研究对于理解RAG系统的内部失败机制、改进检索与阅读模块的协同设计具有重要价值，为构建更鲁棒的RAG系统提供了新的分析视角和优化方向。",
+  "tags": [
+    "RAG",
+    "Multi-hop QA",
+    "Evidence Interface",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:32:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统的top-k答案分数无法区分检索窗口缺失支持链与阅读器无法有效利用支持信息这两种失败模式。",
+      "证据接口（evidence interface）作为检索证据的呈现形式，显著影响阅读器的利用效率。",
+      "通过对比不同训练方式（原始上下文、检索窗口、黄金支持）的阅读器，可以诊断RAG系统中的具体瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

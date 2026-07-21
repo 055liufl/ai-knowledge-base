@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-042",
+  "title": "AgentBrew: Lifelong Knowledge Brewing from Strong Teachers to Weak LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.16851",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了AgentBrew，一种无需更新模型权重、无需专家演示或真实标签的知识蒸馏方法，旨在将强教师模型（如GPT-4）的交互经验转化为弱学生模型（如Llama-3-8B）的持久外部记忆。核心创新在于通过“知识酿造”过程，让教师模型在训练环境中执行任务并记录成功轨迹，学生模型在测试时通过检索这些记忆来指导决策，从而显著提升性能。实验表明，在ALFWorld和WebArena等基准测试中，学生模型性能提升超过30%，甚至在某些任务上超越教师模型。该方法解决了部署轻量级智能体时性能与效率的权衡问题，具有重要的实用价值，尤其适用于资源受限场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Knowledge Distillation",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:31:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出无需权重更新的知识蒸馏方法，通过外部记忆存储教师经验，显著提升弱学生模型性能。",
+      "在多个基准测试中实现超过30%的性能提升，甚至在某些任务上超越教师模型。",
+      "解决了部署轻量级智能体时性能与效率的权衡问题，适用于资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

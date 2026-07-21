@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-083",
+  "title": "Verify, Repair, Repeat, or Stop? Robust Stopping for Noisy Verify-Repair Loops in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.17641",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出VRR-Stop，一个用于LLM代理中验证-修复循环的鲁棒停止框架。在代码生成、数学推理和工具使用等任务中，LLM代理常使用验证-修复循环来纠正错误计划。然而，当验证器和修复器都存在噪声时，修复可能损害已正确的计划，导致报告接受率持续上升而真实有效性下降，现有方法缺乏决定何时停止修复的原则性基础。VRR-Stop通过引入统计假设检验和早期停止机制，在修复过程中动态评估计划的真实有效性，并基于置信度决定是否停止修复，从而避免过度修复导致的性能退化。实验表明，该框架在多个基准测试中显著提升了最终计划的正确性和效率。该工作为LLM代理的鲁棒决策提供了新视角，具有重要的理论和实践价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Robustness",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:34:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "验证-修复循环在噪声环境下可能导致修复损害正确计划，VRR-Stop通过统计检验提供原则性停止决策。",
+      "VRR-Stop引入早期停止机制，基于置信度动态评估计划真实性，避免过度修复。",
+      "该框架在多个基准测试中显著提升最终计划的正确性和效率，为LLM代理鲁棒性研究提供新方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

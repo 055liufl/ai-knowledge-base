@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-033",
+  "title": "Diversity-Oriented Fine-Tuning for Uncertainty-Based Hallucination Detection",
+  "source_url": "https://arxiv.org/abs/2607.16643",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多样性的微调方法，旨在增强大语言模型在推理阶段对幻觉的检测能力。传统幻觉检测方法通常仅在推理阶段进行，不修改模型本身。作者聚焦于基于语义熵的检测方法，发现模型在产生错误输出时往往生成几乎相同的错误答案，导致检测失效。为此，他们设计了一种微调策略，通过鼓励模型在不确定时生成更多样化的输出，从而增大正确与错误输出之间的语义熵差异，提升检测灵敏度。实验表明，该方法在多个基准数据集上显著提高了幻觉检测的准确率，且不牺牲模型原有性能。这项工作为从模型训练层面解决幻觉问题提供了新思路，具有重要的实用价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Fine-Tuning",
+    "Semantic Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:30:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种面向多样性的微调方法，通过增加模型在不确定时的输出多样性来增强基于语义熵的幻觉检测。",
+      "该方法在多个基准数据集上显著提升了幻觉检测的准确率，且不损害模型原有性能。",
+      "从模型训练层面解决幻觉检测问题，为后续研究提供了新的方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

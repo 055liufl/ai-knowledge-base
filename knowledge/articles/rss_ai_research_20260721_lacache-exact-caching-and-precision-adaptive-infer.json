@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260721-021",
+  "title": "LaCache: Exact Caching and Precision-Adaptive Inference for Diffusion Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.16339",
+  "source_platform": "rss_ai_research",
+  "summary": "LaCache 是一种针对扩散大语言模型（DLLMs）的免训练加速框架。扩散模型通过半自回归解码实现并行文本生成，但现有方法在去噪步骤中存在严重的算子级冗余：它们会重新计算整个序列，而忽略了块内前缀和掩码后缀在去噪过程中保持不变。LaCache 通过无损缓存技术消除这种冗余，从而在不牺牲生成质量的前提下显著提升推理速度。该工作直接针对扩散语言模型的核心计算瓶颈，提出了一种即插即用的优化方案，无需额外训练或模型修改。由于扩散模型在并行生成和可控文本生成方面具有潜力，LaCache 的提出有望推动该类模型在实际应用中的部署效率，尤其对需要低延迟生成场景（如交互式对话、实时内容生成）具有重要意义。其创新点在于精准识别并利用扩散去噪过程中的不变性，实现精确缓存，同时支持精度自适应推理以平衡速度与质量。",
+  "tags": [
+    "Diffusion LLM",
+    "Inference Acceleration",
+    "Caching",
+    "Parallel Generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:30:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型在去噪步骤中存在大量重复计算，LaCache 通过无损缓存前缀和掩码后缀来消除冗余。",
+      "LaCache 是免训练框架，可直接应用于现有扩散语言模型，无需额外训练或架构修改。",
+      "该方法支持精度自适应推理，可在加速与生成质量之间灵活权衡。",
+      "LaCache 针对半自回归解码的块内不变性进行优化，显著提升推理效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

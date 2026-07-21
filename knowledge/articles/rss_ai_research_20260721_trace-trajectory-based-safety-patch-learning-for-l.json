@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-128",
+  "title": "TRACE: Trajectory-Based Safety Patch Learning for LLM Post-Training Realignment",
+  "source_url": "https://arxiv.org/abs/2607.16242",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TRACE（Trajectory-Based Safety Patch Learning）的新方法，用于在大型语言模型（LLM）的后训练阶段进行安全对齐修复。针对Fine-Tuning-as-a-Service（FTaaS）平台中，用户自定义微调可能削弱模型安全对齐的问题，TRACE通过基于轨迹的安全补丁学习，在不重新运行完整对齐流程或破坏定制任务效用的前提下，恢复模型的安全性。该方法区别于传统的参数合并技术，通过分析微调过程中的参数变化轨迹，学习一个轻量级的安全补丁，直接作用于微调后的模型参数，从而高效地修正安全偏差。这项工作对于保障LLM在实际部署中的安全性具有重要意义，尤其是在多用户、多任务的FTaaS场景下，提供了一种实用且高效的解决方案。",
+  "tags": [
+    "LLM",
+    "Safety Alignment",
+    "Fine-Tuning",
+    "Model Patch"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:37:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TRACE通过分析微调参数轨迹学习安全补丁，避免了重新全量对齐的高成本。",
+      "该方法在恢复安全性的同时，能够保持定制任务的效用，解决了安全与性能的权衡问题。",
+      "基于轨迹的学习策略比传统参数合并更精准，能有效应对微调导致的安全退化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

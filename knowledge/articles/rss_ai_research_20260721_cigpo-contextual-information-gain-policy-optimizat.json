@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-130",
+  "title": "CIGPO: Contextual Information-Gain Policy Optimization for Multi-Turn Evidence-Reading LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.16244",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CIGPO（上下文信息增益策略优化）的方法，用于解决多轮证据阅读LLM代理在强化学习训练中的稳定性问题。传统的结果导向强化学习（如GRPO）在HotpotQA数据集上使用Qwen2.5-3B-Instruct模型时，虽然初始阶段能提升性能（标准F1分数0.430），但随后会崩溃，导致100%的输出违反格式要求。训练日志诊断揭示了零优势锁定机制：所有采样轨迹都收到最低格式惩罚（-2.0），导致组内优势为零，无法有效更新策略。CIGPO通过引入上下文信息增益作为中间奖励信号，打破这种锁定，使代理能够从中间步骤获得直接信用分配，从而稳定训练过程。该工作值得关注，因为它针对了多轮交互式LLM代理训练中的一个关键痛点——稀疏奖励和信用分配问题，提供了可操作的解决方案，对提升复杂推理任务的强化学习效果具有重要实践意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Multi-Turn Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:37:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "结果导向强化学习在多轮证据阅读任务中容易陷入零优势锁定，导致策略崩溃和格式违规。",
+      "CIGPO通过引入上下文信息增益作为中间奖励，有效解决了信用分配问题，稳定了训练过程。",
+      "该方法在HotpotQA实验中使用Qwen2.5-3B-Instruct模型，展示了从GRPO的失败到CIGPO的改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

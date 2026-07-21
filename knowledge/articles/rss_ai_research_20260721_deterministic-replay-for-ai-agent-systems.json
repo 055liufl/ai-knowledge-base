@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260721-006",
+  "title": "Deterministic Replay for AI Agent Systems",
+  "source_url": "https://arxiv.org/abs/2607.16200",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对AI Agent系统的确定性重放框架agrepl。AI Agent系统由于结合了大语言模型（LLM）与外部工具和API，本质上具有非确定性：LLM采样的随机性、外部API状态变化、CDN基础设施头部信息以及执行环境噪声等因素，使得先前的Agent运行无法被忠实重放。现有的可观测性平台虽然能捕获执行日志，但无法在隔离环境中复现运行过程。agrepl是一个面向开发者的CLI框架，旨在解决这一问题，通过记录和重放关键状态，实现Agent行为的可复现性。该工作对于调试、测试和审计AI Agent系统具有重要意义，能够提升系统的可靠性和可维护性。值得关注的是，它填补了Agent系统可观测性领域的一个关键空白，为开发者提供了实用的工具。",
+  "tags": [
+    "AI Agent",
+    "Deterministic Replay",
+    "LLM",
+    "Observability",
+    "CLI"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:29:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI Agent系统的非确定性主要源于LLM采样、外部API状态、CDN和执行环境噪声，导致运行无法忠实重放。",
+      "现有可观测性平台仅能记录日志，无法在隔离环境中复现Agent运行，agrepl通过CLI框架填补了这一空白。",
+      "agrepl通过记录和重放关键状态，实现了Agent行为的确定性重放，有助于调试、测试和审计。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

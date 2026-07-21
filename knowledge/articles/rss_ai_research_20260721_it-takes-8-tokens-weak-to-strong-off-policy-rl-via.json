@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-010",
+  "title": "It Takes 8 Tokens: Weak-to-Strong Off-Policy RL via Auxiliary Branches",
+  "source_url": "https://arxiv.org/abs/2607.16205",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“弱到强离策略强化学习”（Weak-to-Strong Off-Policy RL）的新方法，通过辅助分支（auxiliary branches）机制，仅需8个额外token即可显著提升大型语言模型（LLM）的推理能力。该方法针对传统强化学习中目标模型样本语义冗余、陷入相同错误推理盆地的问题，利用弱模型（如小规模或低能力模型）生成的多样化轨迹作为离策略数据，结合辅助分支进行高效学习。实验表明，该方法在数学推理、代码生成等复杂任务上，以极低的计算开销（8 token）实现了与强基线相当或更优的性能，且避免了在线采样中的支持受限瓶颈。该工作为LLM推理增强提供了轻量级、可扩展的新范式，尤其适用于资源受限场景。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Off-Policy RL"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:29:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统在线强化学习在复杂推理任务中面临支持受限问题，模型样本易陷入相同错误模式，而离策略数据（如弱模型生成）可提供更丰富的探索多样性。",
+      "通过辅助分支机制，仅需8个额外token即可将弱模型知识高效迁移至强模型，实现弱到强的性能提升，计算开销极低。",
+      "该方法在数学推理和代码生成等任务上验证了有效性，为LLM推理增强提供了轻量级、可扩展的解决方案，尤其适合资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

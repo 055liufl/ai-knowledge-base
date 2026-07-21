@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-005",
+  "title": "PlanFlip: Attacking Multi-Agent LLM Systems via Planning-Phase Prompt Injection",
+  "source_url": "https://arxiv.org/abs/2607.16199",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多智能体大语言模型（LLM）系统的新型攻击框架 PlanFlip，聚焦于规划阶段的提示注入攻击。多智能体 LLM 系统通常依赖一个 Planner 组件将目标分解为子任务序列，由下游的 Executor 和 Critic 智能体执行和审计。PlanFlip 识别出规划阶段是关键的攻击面：通过在 Planner 的上下文中注入单一恶意提示，可以实现级联放大效应，同时污染所有下游子任务。该框架包含四种规划阶段提示注入攻击方法，旨在利用 Planner 的脆弱性，导致整个多智能体系统行为失控。这项研究揭示了多智能体 LLM 系统在安全性方面的重大隐患，特别是规划阶段的脆弱性可能被攻击者利用，造成系统性风险。PlanFlip 的提出对于理解和防御此类攻击具有重要意义，值得安全研究人员和开发者关注。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Prompt Injection",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:29:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体 LLM 系统的规划阶段是关键的攻击面，单一注入可导致级联放大效应。",
+      "PlanFlip 框架包含四种规划阶段提示注入攻击，展示了 Planner 的脆弱性。",
+      "该研究强调了多智能体系统安全设计的重要性，尤其是规划组件的防护。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

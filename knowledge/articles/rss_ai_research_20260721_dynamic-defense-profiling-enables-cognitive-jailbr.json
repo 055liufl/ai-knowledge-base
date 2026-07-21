@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-093",
+  "title": "Dynamic Defense Profiling Enables Cognitive Jailbreak of Text-to-Image Models",
+  "source_url": "https://arxiv.org/abs/2607.17779",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对文本到图像（T2I）生成模型的认知越狱攻击方法——动态防御剖析（Dynamic Defense Profiling）。与现有依赖启发式提示工程或黑盒优化的攻击不同，该方法将模型反馈视为连续信号而非二元结果，通过动态分析模型的防御机制（如内容过滤、安全分类器）的薄弱环节，逐步构建能绕过防御的对抗性提示。实验表明，该方法在多个主流T2I模型（如DALL·E 3、Stable Diffusion）上实现了高成功率，并揭示了当前安全防御的认知盲区。该研究值得关注，因为它不仅暴露了T2I模型在对抗性输入下的脆弱性，还提出了一种系统性的攻击框架，对模型安全研究具有重要启示，可能推动更鲁棒的防御策略设计。",
+  "tags": [
+    "Adversarial Attack",
+    "Text-to-Image",
+    "Jailbreak",
+    "Model Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:35:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将模型反馈从二元信号扩展为连续信号，通过动态剖析防御机制实现更精准的越狱攻击。",
+      "揭示了T2I模型安全防御的认知盲区，即防御系统无法有效应对自适应、多步的对抗性提示。",
+      "提出的攻击框架具有通用性，在多个主流T2I模型上验证了高成功率，凸显了现有安全措施的不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

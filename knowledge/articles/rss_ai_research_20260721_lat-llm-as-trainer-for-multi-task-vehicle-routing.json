@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-088",
+  "title": "LaT: LLM-as-Trainer for Multi-Task Vehicle Routing Solvers",
+  "source_url": "https://arxiv.org/abs/2607.17708",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为LaT（LLM-as-Trainer）的新方法，用于多任务车辆路径问题（VRP）求解器。传统多任务神经求解器试图在一个统一模型中处理多种VRP变体，但不同变体的优化难度差异导致模型偏向某些特定变体。现有方法缺乏对训练状态的阶段性反馈，而元学习虽能支持自适应训练，但通常需要双层优化，计算成本高。LaT利用大语言模型（LLM）作为训练器，通过分析各任务的学习进度和难度，动态调整训练策略，从而平衡多任务学习。该方法在多个VRP变体上进行了实验，结果显示其能有效提升求解质量，并减少对特定任务的偏见。这项研究值得关注，因为它将LLM的能力扩展到优化领域，为多任务学习提供了一种新颖的自适应训练框架，具有潜在的实际应用价值，如物流和供应链管理。",
+  "tags": [
+    "LLM",
+    "Multi-task Learning",
+    "Vehicle Routing Problem",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:34:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LaT利用LLM作为训练器，动态调整多任务VRP求解器的训练策略，以平衡不同变体的优化难度。",
+      "该方法通过阶段性反馈克服了传统多任务学习中的任务偏见问题，无需昂贵的双层优化。",
+      "实验表明LaT在多个VRP变体上提升了求解质量，展示了LLM在优化领域的应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

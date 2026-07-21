@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-132",
+  "title": "Let the Data Decide: Supervision Analysis, Capability Trade-offs, and Adaptive Objective Routing in Continued Pre-Training via Off-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2607.16246",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在大型语言模型（LLM）的持续预训练中，如何通过离策略蒸馏（off-policy distillation）来优化训练数据、目标参数化和模型能力之间的交互。研究聚焦于top-k截断和温度缩放的离策略蒸馏，将问题分解为两个核心方面：一是“目标到能力”分析，即训练目标如何影响token级别的监督信号和下游性能；二是能力权衡与自适应目标路由，旨在根据数据特性动态调整训练策略。该工作揭示了不同训练目标（如KL散度、交叉熵）对模型能力（如推理、生成、知识保留）的非对称影响，并提出了一种基于数据驱动的自适应路由方法，以在持续预训练中平衡多种能力。这项研究对于理解LLM预训练中的监督信号设计、能力权衡以及高效训练策略具有重要价值，尤其适用于需要持续更新或领域适应的模型场景。",
+  "tags": [
+    "LLM",
+    "Pre-training",
+    "Distillation",
+    "Training Objective"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:37:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离策略蒸馏中，训练目标的参数化（如top-k截断、温度缩放）显著影响token级监督信号的分布，进而决定模型在下游任务中的能力表现。",
+      "不同训练目标（如KL散度与交叉熵）在推理、生成和知识保留等能力上存在非对称权衡，单一目标难以同时优化所有能力。",
+      "提出自适应目标路由方法，根据数据特征动态选择最优训练目标，可有效缓解能力冲突，提升持续预训练的整体效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

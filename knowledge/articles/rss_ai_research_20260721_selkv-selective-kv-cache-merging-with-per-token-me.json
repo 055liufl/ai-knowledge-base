@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-018",
+  "title": "SelKV: Selective KV Cache Merging with Per-Token Merge-or-Drop and Attention Compensation",
+  "source_url": "https://arxiv.org/abs/2607.16213",
+  "source_platform": "rss_ai_research",
+  "summary": "SelKV 是一种针对大型语言模型（LLM）中键值缓存（KV Cache）内存瓶颈的新型压缩方法。在自回归文本生成中，KV 缓存的内存占用随上下文长度线性增长，成为主要瓶颈。现有压缩方法通过 token 合并来缓解这一问题，但往往采用无差别聚合，导致表示质量下降，并引入“注意力凹陷”（attention sag）现象——即合并后的 token 与单个 token 获得相同的 softmax 权重，造成注意力分布失真。SelKV 提出了一种选择性合并策略，包含两个关键组件：一是“逐 token 合并或丢弃”（Per-Token Merge-or-Drop）机制，根据每个 token 的重要性动态决定是合并还是丢弃；二是“注意力补偿”（Attention Compensation）技术，通过调整注意力权重来补偿合并带来的信息损失。该方法在保持模型性能的同时，显著减少了 KV 缓存大小，从而降低内存开销和推理延迟。该工作值得关注，因为它直接针对 LLM 部署中的核心效率问题，提出了一种更精细的缓存管理方案，有望在长上下文场景下提升推理效率，且不牺牲生成质量。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Memory Compression",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:30:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SelKV 通过逐 token 动态决策合并或丢弃，避免了无差别聚合导致的表示退化。",
+      "注意力补偿机制有效缓解了合并 token 带来的注意力凹陷问题，保持了注意力分布的准确性。",
+      "该方法在压缩 KV 缓存的同时，能够维持模型生成质量，适用于长上下文 LLM 推理场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

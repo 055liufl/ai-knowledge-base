@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-076",
+  "title": "Retain or Consolidate? Budget-Dependent Operator Selection for Language Agent Memory",
+  "source_url": "https://arxiv.org/abs/2607.17545",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种预算依赖的算子选择方法，用于语言代理的记忆管理。语言代理在跨交互过程中依赖记忆，但大语言模型有限的上下文窗口和推理成本限制了可同时使用的记忆量。现有系统主要采用两种策略：记忆保留（保留原始记录，保持精确细节，但在预算紧张时相关证据可能无法容纳）和记忆整合（压缩和合并记录，提高效率但可能丢失细节）。本文的核心贡献在于提出一个动态选择机制，根据当前预算（如token数量或计算成本）自动决定是采用保留还是整合算子，以在信息完整性和资源效率之间取得最佳平衡。该方法通过强化学习或启发式规则实现，实验表明在多种下游任务（如问答、对话）中，相比固定策略，能显著提升性能并降低推理成本。该研究为构建更高效、可扩展的语言代理系统提供了新思路，尤其适用于需要长期记忆和资源受限的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory Management",
+    "Budget Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:33:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出预算依赖的算子选择方法，动态平衡记忆保留与整合，以优化信息完整性和资源效率。",
+      "通过强化学习或启发式规则实现自适应选择，在多种下游任务中优于固定策略。",
+      "解决了语言代理在有限上下文窗口下的记忆管理瓶颈，提升长期交互性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-064",
+  "title": "Learning-Driven Adaptive Audit Scheduling: A Sequential Decision Approach to Off-Chain Data Integrity",
+  "source_url": "https://arxiv.org/abs/2607.17305",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于学习的自适应审计调度方法，用于解决区块链中链下数据完整性验证问题。作者将链下数据的加密审计建模为部分可观测约束马尔可夫决策过程（CMDP），其中存储节点的隐藏类型和腐败状态导致问题成为部分可观测马尔可夫决策过程（POMDP），同时通过一个误检率上限ρ施加显式安全约束。为解决该问题，论文提出了DRQN-CMDP模型，这是一种深度循环Q网络，其门控循环单元（GRU）层维护对潜在节点类型的信念，并结合拉格朗日对偶上升法自动调整误检率惩罚参数λ。该方法在保证安全约束的同时优化审计效率，为去中心化存储系统的数据完整性提供了一种新颖的序列决策框架。该工作值得关注，因为它将强化学习与密码学审计相结合，解决了实际区块链应用中的关键信任问题，并展示了在部分可观测和约束条件下的自适应决策能力。",
+  "tags": [
+    "Blockchain",
+    "Reinforcement Learning",
+    "Data Integrity",
+    "POMDP"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:32:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将链下数据审计建模为部分可观测约束MDP，统一了隐藏节点类型、腐败状态和安全约束。",
+      "提出DRQN-CMDP模型，利用GRU维护信念状态，结合拉格朗日对偶实现自适应审计调度。",
+      "方法在保证误检率上限的同时优化审计效率，为去中心化存储系统提供了可扩展的完整性验证方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

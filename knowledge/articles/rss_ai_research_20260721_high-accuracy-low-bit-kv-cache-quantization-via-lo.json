@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-133",
+  "title": "High-accuracy Low-Bit KV-Cache Quantization via Local Distribution Restoration",
+  "source_url": "https://arxiv.org/abs/2607.16248",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过局部分布恢复实现高精度低位KV缓存量化的方法。针对长上下文大语言模型推理中KV缓存带来的高内存和带宽开销，低位量化虽能降低成本但会严重损害模型质量（例如，在Llama-3.1-8B模型上，1比特量化使RULER准确率从84.2%骤降至47.8%）。作者发现，问题的根本原因并非常见的logits绝对误差，而是结构化的局部分布失真。该方法通过恢复局部注意力分布来提升量化精度，在极低位（如1比特）场景下显著缩小了与全精度模型的性能差距。这项工作为高效长上下文推理提供了新思路，具有重要的实用价值。",
+  "tags": [
+    "KV Cache",
+    "Quantization",
+    "LLM Inference",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:37:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低位KV缓存量化的质量下降主要源于结构化的局部分布失真，而非logits的绝对误差。",
+      "通过局部分布恢复技术，可以在极低位（如1比特）量化下大幅提升模型准确率。",
+      "该方法为长上下文大语言模型的高效推理提供了可行的优化方向，平衡了内存开销与模型质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

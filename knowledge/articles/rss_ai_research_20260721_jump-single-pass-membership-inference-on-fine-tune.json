@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-012",
+  "title": "JUMP: Single-Pass Membership Inference on Fine-Tuned Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2607.16207",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对微调离散扩散语言模型（dLLMs）的单次成员推理攻击方法JUMP。成员推理攻击旨在判断某个样本是否出现在模型的训练数据中。与自回归语言模型不同，dLLMs允许攻击者选择任意掩码集，并并行获取所有掩码位置的令牌分布。论文指出，先前的攻击方法SAMA存在局限性，而JUMP通过利用dLLMs的并行掩码特性，实现了更高效的成员推理。该研究首次系统性地探索了dLLMs在微调场景下的隐私泄露风险，为理解扩散模型的安全性和隐私保护提供了新视角。其创新性在于利用dLLMs的结构特性设计攻击策略，而非依赖传统自回归模型的逐令牌生成方式。该工作对模型隐私评估和防御机制设计具有重要参考价值，尤其适用于需要保护训练数据隐私的微调场景。",
+  "tags": [
+    "Membership Inference Attack",
+    "Diffusion Language Models",
+    "Privacy",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:29:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "JUMP利用离散扩散语言模型的并行掩码特性，实现了单次成员推理攻击，显著提升了攻击效率。",
+      "与自回归模型不同，dLLMs的并行令牌分布生成能力为攻击者提供了新的信息泄露途径。",
+      "该研究揭示了微调dLLMs在隐私保护方面的脆弱性，为后续防御策略设计提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

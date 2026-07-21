@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260721-084",
+  "title": "FlowBlock: Wavefront-Parallel Decoding for Self-Correcting Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2607.17652",
+  "source_platform": "rss_ai_research",
+  "summary": "FlowBlock 是一种针对自校正扩散语言模型（dLLMs）的波前并行解码方法。传统的块级扩散语言模型在块级别顺序解码，虽然能实现块间 KV 缓存重用，但解码过程严格串行，限制了推理速度。先前的工作尝试通过后训练方法实现块间并行，但加速效果有限且常导致精度下降。FlowBlock 的关键洞察是，自校正 dLLMs 提供了一种无需训练的替代方案：利用 token 到 token（T2T）编辑来修复解码过程中的错误，从而打破块间的串行依赖。通过波前并行策略，FlowBlock 能够在保持模型精度的同时显著提升解码速度。该方法无需额外的训练或微调，直接应用于现有模型，具有较高的实用性和创新性。该工作对于加速扩散语言模型的推理具有重要意义，尤其适用于需要实时或高效文本生成的场景。",
+  "tags": [
+    "LLM",
+    "Diffusion Model",
+    "Parallel Decoding",
+    "Self-Correction"
+  ],
+  "author": null,
+  "published_at": "2026-07-21T10:25:25Z",
+  "collected_at": "2026-07-21T10:34:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FlowBlock 利用自校正扩散语言模型的 T2T 编辑能力，无需训练即可实现块间并行解码。",
+      "波前并行策略打破了传统块级扩散模型的串行解码限制，显著提升推理速度。",
+      "该方法在加速的同时保持了模型精度，避免了后训练方法常见的精度下降问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
