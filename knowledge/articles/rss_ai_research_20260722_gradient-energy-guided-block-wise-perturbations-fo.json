@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-087",
+  "title": "Gradient-Energy Guided Block-Wise Perturbations for Sharpness-Aware Minimization",
+  "source_url": "https://arxiv.org/abs/2607.18306",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GEAR-SAM（梯度能量自适应半径SAM）的新方法，旨在改进Sharpness-Aware Minimization（SAM）优化器的性能。SAM通过最小化局部参数邻域内的最坏情况损失来提升泛化能力，但其标准版本根据瞬时小批量梯度范数在参数块间分配全局扰动预算，这种分配方式噪声较大，且可能无法反映块在整个训练过程中累积的敏感性。GEAR-SAM引入了基于梯度能量的自适应半径机制，通过计算每个参数块的梯度能量（即梯度范数的累积和）来动态调整扰动预算，从而更稳定地反映参数块的敏感性。实验表明，GEAR-SAM在图像分类、自然语言处理等任务上显著优于标准SAM及其他变体，且计算开销几乎可忽略。该方法值得关注，因为它提供了一种简单而有效的策略来增强SAM的鲁棒性和泛化能力，尤其适用于大规模深度学习模型的训练。",
+  "tags": [
+    "SAM",
+    "optimization",
+    "generalization",
+    "deep learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:35:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GEAR-SAM通过梯度能量累积替代瞬时梯度范数，减少了扰动预算分配的噪声，更准确地反映参数块的长期敏感性。",
+      "该方法在多个基准任务上显著提升了泛化性能，且计算开销极低，易于集成到现有SAM框架中。",
+      "梯度能量自适应机制为理解SAM的块级敏感性提供了新视角，可能启发更高效的优化器设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

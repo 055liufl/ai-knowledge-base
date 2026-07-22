@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-085",
+  "title": "Reliability Scales Inversely: Bigger Models Compound Mistakes Faster via a Hidden Auto-Regressive Risk Regime",
+  "source_url": "https://arxiv.org/abs/2607.18292",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的视角来理解大语言模型（LLM）在规模扩展时出现的可靠性下降现象。传统观点认为，模型规模越大，知识越丰富，答案越准确，但实际观察发现，随着模型规模增大，虽然初始答案更接近真实，但错误累积的速度更快，导致整体可靠性反而下降。作者指出，这并非单纯的知识差距问题，而是由自回归生成过程中的“隐藏风险机制”所致：模型在生成序列的某个位置可能选择一个低概率的token，随后将其作为既定事实进行条件生成，导致错误像雪球一样越滚越大。为了量化这一现象，论文引入了“逐位置分歧度”δ = log p_M - log p_O，其中p_M是当前模型的概率，p_O是同一家族更强模型（oracle）的概率。通过这一指标，可以追踪模型在生成过程中何时开始偏离正确路径。该研究揭示了规模扩展带来的能力与可靠性之间的根本性矛盾，对于理解LLM的局限性、设计更可靠的生成策略具有重要价值。",
+  "tags": [
+    "LLM",
+    "reliability",
+    "auto-regressive",
+    "scaling law"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:34:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型规模增大时，初始答案更准确，但错误累积速度更快，导致整体可靠性下降，这并非单纯的知识差距问题。",
+      "自回归生成中的低概率token选择是错误雪球效应的关键触发点，模型将其作为既定条件后错误会迅速放大。",
+      "论文提出的逐位置分歧度δ = log p_M - log p_O 可有效追踪模型在生成过程中偏离正确路径的位置。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

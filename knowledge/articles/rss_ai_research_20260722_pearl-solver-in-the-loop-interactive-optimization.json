@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-013",
+  "title": "PEARL: Solver-in-the-Loop Interactive Optimization Modeling from Natural Language",
+  "source_url": "https://arxiv.org/abs/2607.18256",
+  "source_platform": "rss_ai_research",
+  "summary": "PEARL 是一种新颖的交互式优化建模框架，旨在通过自然语言描述自动生成数学优化模型和可执行的求解器代码。与现有的一次性方法不同，PEARL 采用“求解器在环”的迭代策略：它首先生成初始模型，然后执行求解器代码，获取反馈（如错误信息、求解状态），并基于这些反馈进行多轮修正，直到模型正确或达到终止条件。该框架利用大型语言模型（LLM）作为核心推理引擎，结合求解器反馈循环，显著提高了建模的准确性和鲁棒性。实验表明，PEARL 在多个标准优化基准测试中，相比一次性基线方法，模型生成成功率提升超过 30%。这项工作值得关注，因为它解决了自动化优化建模中的关键瓶颈——缺乏迭代验证和错误修正，使得非专家用户也能通过自然语言高效构建复杂的优化模型，从而降低了运筹学应用的门槛，并推动了 LLM 在科学计算和决策优化领域的实用化进程。",
+  "tags": [
+    "LLM",
+    "Optimization Modeling",
+    "Solver-in-the-Loop",
+    "Interactive"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:29:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PEARL 通过求解器反馈循环实现迭代式模型修正，显著优于传统一次性生成方法。",
+      "该框架降低了优化建模的入门门槛，使非专家用户能用自然语言描述问题并自动生成可执行代码。",
+      "实验证明，PEARL 在多个基准测试中将模型生成成功率提升超过 30%，展示了 LLM 结合领域工具的潜力。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

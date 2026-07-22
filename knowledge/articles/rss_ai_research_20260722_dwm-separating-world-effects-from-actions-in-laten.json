@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260722-038",
+  "title": "DWM: Separating World Effects from Actions in Latent World Models",
+  "source_url": "https://arxiv.org/abs/2607.18715",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DWM（Decoupled World Model）的新型潜空间世界模型架构，旨在解决现有动作条件化世界模型中监督信号单一化的问题。传统方法将下一潜状态预测视为一个整体任务，迫使模型同时学习由动作驱动的状态变化和与动作无关的世界效应（如环境自身演化），导致学习效率低下且泛化能力受限。DWM通过显式分离这两种异质来源：动作驱动组件和动作不变的世界效应，分别建模并组合预测下一潜状态。实验表明，该方法在多个连续控制基准（如DMControl、Meta-World）上显著提升了模型预测精度和下游任务性能，尤其在存在环境动态变化或干扰的场景中优势明显。该工作为世界模型的设计提供了新视角，有望推动基于模型的强化学习和机器人控制领域的发展。",
+  "tags": [
+    "World Model",
+    "Model-Based RL",
+    "Latent Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:31:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有动作条件化世界模型将动作驱动和世界效应混为一谈，限制了模型对状态变化来源的区分能力。",
+      "DWM通过解耦两个异质组件，分别建模动作驱动和动作不变的世界效应，提升了预测的准确性和鲁棒性。",
+      "该方法在多个连续控制任务上验证了有效性，尤其在环境动态变化场景下优势明显。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

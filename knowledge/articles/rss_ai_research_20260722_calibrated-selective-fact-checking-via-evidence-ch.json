@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-002",
+  "title": "Calibrated Selective Fact-Checking via Evidence Chain Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.18240",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“证据链评估”（Evidence Chain Evaluation, ECE）的选择性事实核查框架，旨在解决大语言模型在事实核查中因强制二元判断（真/假）而导致的可靠性问题。传统方法即使证据薄弱、稀疏或内部矛盾，也会给出自信的裁决，而ECE允许模型在证据不足时选择“不确定”作为输出，从而避免错误判断。ECE通过构建和评估证据链的质量（包括一致性、充分性和相关性）来决定是否给出明确结论。实验表明，该方法在多个基准数据集上显著提升了事实核查的准确性和可靠性，同时减少了误判风险。该工作值得关注，因为它直接回应了LLM在事实核查应用中的关键缺陷——过度自信，并提供了一个实用的选择性机制，有助于提升AI系统的可信度和安全性。",
+  "tags": [
+    "LLM",
+    "Fact-Checking",
+    "Uncertainty",
+    "Selective Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:28:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在事实核查中常因强制二元判断而过度自信，即使证据不足也会给出错误结论。",
+      "ECE框架通过评估证据链的质量（一致性、充分性、相关性）来决定是否允许模型选择“不确定”裁决。",
+      "选择性事实核查机制能显著提升系统在证据薄弱场景下的可靠性，减少误判风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

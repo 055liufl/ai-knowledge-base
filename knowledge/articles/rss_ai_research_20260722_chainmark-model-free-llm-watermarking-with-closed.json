@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-112",
+  "title": "ChainMark: Model-Free LLM Watermarking with Closed-Form Calibration",
+  "source_url": "https://arxiv.org/abs/2607.18445",
+  "source_platform": "rss_ai_research",
+  "summary": "ChainMark 是一种无需模型的黑盒文本水印方法，旨在满足欧盟 AI 法案等法规对合成文本可机器读取标记的要求。与现有依赖生成语言模型和启发式阈值的水印检测器不同，ChainMark 通过密钥控制的 SHA-256 将词汇表划分为 S 个状态，并在部分位置上强制实施硬马尔可夫转移。检测器仅需使用相同密钥在 O(n) 时间内重放划分即可验证水印，无需访问生成模型。该方法提供了封闭形式的校准，避免了启发式阈值的不确定性。ChainMark 的创新性在于其模型无关性、高效检测和理论保证的校准能力，使其在合规性、版权保护和内容溯源方面具有重要应用价值。该工作值得关注，因为它解决了当前水印技术依赖模型和缺乏理论校准的痛点，为合成文本的监管提供了实用且可验证的解决方案。",
+  "tags": [
+    "LLM",
+    "Watermarking",
+    "Security",
+    "Regulation"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:37:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ChainMark 实现了无需访问生成语言模型的黑盒水印检测，通过密钥控制的词汇表划分和马尔可夫转移，显著降低了部署复杂度。",
+      "该方法提供封闭形式的校准，避免了传统启发式阈值的不确定性，增强了水印检测的理论可靠性和可解释性。",
+      "ChainMark 的检测时间复杂度为 O(n)，适用于大规模合成文本的实时验证，满足欧盟 AI 法案等法规的合规要求。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

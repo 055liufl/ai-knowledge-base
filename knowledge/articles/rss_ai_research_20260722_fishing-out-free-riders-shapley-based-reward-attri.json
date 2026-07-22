@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-052",
+  "title": "Fishing Out Free Riders: Shapley-Based Reward Attribution for Parallel Reasoning via Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.18979",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Parallel Shapley 的强化学习框架，用于解决大语言模型（LLM）在并行推理中的奖励分配问题。在现有的并行推理方法中，多个推理路径的贡献往往难以区分，导致冗余、误导甚至有害的路径获得与有效路径相同的奖励，从而产生模糊的学习信号和不稳定的训练过程。Parallel Shapley 基于沙普利值（Shapley value）的博弈论思想，为每条推理路径分配细粒度的、路径级别的奖励，从而更准确地反映其真实贡献。该方法通过强化学习优化模型，使其能够识别并奖励高质量推理路径，同时抑制低质量路径。实验结果表明，该框架在多个推理任务上显著提升了模型性能，尤其是在需要多步推理和复杂决策的场景中。这项研究值得关注，因为它提供了一种理论严谨且实用的方法来解决并行推理中的关键瓶颈，有望推动 LLM 在推理任务中的可靠性和效率提升。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Parallel Reasoning",
+    "Reward Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:32:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Parallel Shapley 利用沙普利值实现路径级奖励分配，解决了并行推理中奖励模糊的问题。",
+      "该方法通过强化学习优化模型，有效区分高质量与低质量推理路径，提升训练稳定性。",
+      "实验验证了该框架在多步推理任务中的显著性能提升，具有广泛的应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

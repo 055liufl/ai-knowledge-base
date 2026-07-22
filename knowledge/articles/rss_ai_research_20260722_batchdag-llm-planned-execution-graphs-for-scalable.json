@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260722-003",
+  "title": "BatchDAG: LLM-Planned Execution Graphs for Scalable Ad-Hoc Analysis Over Enterprise Data",
+  "source_url": "https://arxiv.org/abs/2607.18241",
+  "source_platform": "rss_ai_research",
+  "summary": "BatchDAG 是一个利用大型语言模型（LLM）生成类型化有向无环图（DAG）的系统，旨在解决企业级数据上的可扩展即席分析问题。传统 LLM 在处理跨实体的全面分析时，面临上下文溢出、实体归因丢失以及顺序工具调用导致的线性延迟等挑战。BatchDAG 通过让 LLM 规划一个包含 SQL 查询、语义搜索、内存转换和并行扇出等操作的有向无环图，实现了高效、可扩展的分析。该系统将分析任务分解为可并行执行的子任务，从而显著减少延迟，并保持对每个实体的归因能力。BatchDAG 的创新之处在于将 LLM 的规划能力与图执行引擎相结合，为大规模企业数据分析提供了一种新的范式。它特别适用于需要跨多个数据源进行复杂、全面分析的场景，如金融、医疗和电商等领域。该工作值得关注，因为它直接解决了 LLM 在企业级应用中面临的关键瓶颈，并展示了如何通过结构化规划来提升 LLM 的实用性和效率。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Data Analysis",
+    "DAG",
+    "Enterprise"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:28:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BatchDAG 通过 LLM 生成有向无环图（DAG）来规划分析任务，将顺序操作转化为并行执行，有效解决了上下文溢出和线性延迟问题。",
+      "该系统支持多种操作类型（如 SQL 查询、语义搜索、内存转换），并通过并行扇出实现跨实体分析的归因保持和可扩展性。",
+      "BatchDAG 展示了 LLM 在结构化规划方面的潜力，为构建更高效、更可靠的企业级数据分析系统提供了新思路。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

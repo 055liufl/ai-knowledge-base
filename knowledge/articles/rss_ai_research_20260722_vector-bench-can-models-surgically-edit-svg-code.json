@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-054",
+  "title": "Vector-Bench: Can Models Surgically Edit SVG Code?",
+  "source_url": "https://arxiv.org/abs/2607.19056",
+  "source_platform": "rss_ai_research",
+  "summary": "Vector-Bench 是一个针对向量图形编辑能力的基准测试，专注于评估模型在 SVG 代码层面进行精确编辑的能力。该基准包含 40 个 SVG 修复任务，每个任务包含一个损坏的 SVG 程序、作者编写的视觉指令、隐藏的目标程序、平均 5.05 个标注修复方案以及平均 60.55 个保护性约束。其核心创新在于，传统评估仅基于光栅图像判断编辑效果，容易忽略模型在保持未修改部分不变方面的能力。Vector-Bench 通过代码级别的评估，严格测试模型是否能够“外科手术式”地仅修改指定部分，而保持其他代码不变。该基准难度较高，旨在推动指令驱动的向量编辑研究，尤其适用于评估大型语言模型或视觉语言模型在结构化代码编辑任务上的表现。值得关注的是，它填补了向量图形编辑评估中缺乏精细代码级基准的空白，对于提升 AI 在图形设计、UI 生成等领域的实用性和可控性具有重要意义。",
+  "tags": [
+    "Benchmark",
+    "SVG",
+    "Vector Editing",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:32:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Vector-Bench 强调在向量编辑中保持未修改部分不变的能力，这是传统光栅图像评估容易忽略的关键维度。",
+      "该基准通过代码级评估和丰富的标注修复方案，提供了比光栅图像更严格的测试，推动模型在结构化代码编辑上的精确性。",
+      "平均 60.55 个保护性约束表明任务设计高度注重局部修改的精确性，对现有模型构成显著挑战。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

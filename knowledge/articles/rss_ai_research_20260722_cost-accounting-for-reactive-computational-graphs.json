@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-092",
+  "title": "Cost Accounting for Reactive Computational Graphs: Exhaustive Sweeps, Sequential Mutation, and the Backward-Locality Gap",
+  "source_url": "https://arxiv.org/abs/2607.18323",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对反应式计算图（Reactive Computational Graphs）的成本核算方法，特别关注于神经网络计算图中的穷举逐点干预（如激活修补扫描、电路发现搜索、系统性消融研究）。这些操作在每个候选节点处突变图，其成本主要由每次突变后的重新计算主导。作者在反应式图引擎上，其失效机制能精确触及突变节点的下游锥体，给出了此类工作负载的完整成本核算。论文揭示了“后向局部性差距”（Backward-Locality Gap），即前向传播的局部性与后向传播的局部性之间的差异，这影响了计算效率。该研究对于优化神经网络可解释性工具和自动化电路发现算法具有重要价值，因为它提供了一种量化计算成本的方法，有助于设计更高效的干预策略。值得关注的是，该工作将计算图优化与可解释性研究相结合，为大规模模型分析提供了理论基础。",
+  "tags": [
+    "Computational Graph",
+    "Neural Network Interpretability",
+    "Cost Accounting",
+    "Reactive Engine"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:35:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "穷举逐点干预的计算成本主要由突变后的重新计算主导，反应式图引擎通过精确失效下游锥体来优化此过程。",
+      "提出了后向局部性差距的概念，即前向传播与后向传播在局部性上的不对称性，这影响了计算效率。",
+      "该成本核算方法为神经网络可解释性中的电路发现和消融研究提供了量化工具，有助于设计更高效的算法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-014",
+  "title": "S2T-RLHF: Hierarchical Credit Assignment for Stable Preference-Based RLHF",
+  "source_url": "https://arxiv.org/abs/2607.18258",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为S2T-RLHF（Sequence-to-Token RLHF）的层次化信用分配方法，旨在解决基于人类偏好的强化学习（RLHF）中训练不稳定的问题。传统RLHF使用单一的序列级标量奖励，并将其传播到token级别的策略更新中，导致响应内部的信用分配模糊不清。S2T-RLHF通过将序列级奖励分解为更细粒度的token级监督信号，实现了层次化的信用分配，从而稳定了训练过程。该方法在多个基准测试中展示了优于标准RLHF的性能，特别是在长文本生成和复杂推理任务中。这项研究对于提升RLHF的可靠性和效率具有重要意义，尤其是在需要精细控制生成质量的场景中。",
+  "tags": [
+    "RLHF",
+    "Credit Assignment",
+    "Reinforcement Learning",
+    "Token-Level Reward"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:29:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准RLHF的序列级奖励导致token级信用分配模糊，是训练不稳定的关键因素",
+      "S2T-RLHF通过层次化信用分配将序列奖励分解为token级监督，显著提升训练稳定性",
+      "该方法在长文本生成和复杂推理任务中表现优于传统RLHF，具有实际应用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

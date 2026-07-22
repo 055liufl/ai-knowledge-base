@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-074",
+  "title": "FALCON-Discover: Discovering Concentrated False-Confidence Regions for Calibration",
+  "source_url": "https://arxiv.org/abs/2607.18278",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了FALCON-Discover，一种后处理、模型无关的框架，用于发现预测空间中高置信度错误集中的紧凑区域。传统校准评估通常关注整体性能，但最危险的失败往往是局部的：模型在错误预测时仍保持高置信度。FALCON-Discover通过利用置信度与正确性之间的差异信号对预测进行排序，从而识别这些“假置信集中区域”。该方法无需修改原模型，可广泛应用于各类分类任务，有助于提升模型在关键场景下的可靠性和安全性。该工作填补了局部校准评估的空白，对高风险AI应用（如医疗、自动驾驶）具有重要价值。",
+  "tags": [
+    "Calibration",
+    "Model Reliability",
+    "Uncertainty Estimation",
+    "Post-hoc Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:34:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统整体校准评估无法捕捉局部高置信度错误集中区域，这些区域是模型最危险的失败模式。",
+      "FALCON-Discover通过置信度与正确性之间的差异信号作为排序依据，无需修改模型即可发现紧凑的假置信区域。",
+      "该框架是模型无关的后处理方法，可应用于任何分类器，具有广泛的实用性和可迁移性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

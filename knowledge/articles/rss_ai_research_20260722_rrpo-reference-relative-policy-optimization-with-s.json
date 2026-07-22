@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260722-116",
+  "title": "RRPO: Reference-Relative Policy Optimization with Stratified Conditional Rollouts",
+  "source_url": "https://arxiv.org/abs/2607.18470",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“参考相对策略优化”（Reference-Relative Policy Optimization, RRPO）的新方法，旨在解决现有组相对策略优化（GRPO）在非可验证反馈场景下的局限性。GRPO通过组内采样轨迹的比较来利用任务提供的正确性信号，在可验证反馈的强化学习中表现出色。然而，许多任务的成功无法仅通过单一的正确性标准来衡量，这限制了GRPO的广泛应用。RRPO引入了分层条件采样（Stratified Conditional Rollouts）机制，通过参考相对比较来优化策略，从而在更广泛的非可验证任务中实现有效的强化学习。该方法通过构建参考轨迹和分层条件采样，使得策略优化能够基于相对性能而非绝对正确性，从而提高了在复杂任务中的适应性和鲁棒性。RRPO的提出为强化学习从可验证反馈扩展到更通用的场景提供了新的思路，具有重要的理论意义和实际应用价值。该工作值得关注，因为它解决了当前强化学习中的一个关键瓶颈，有望推动智能体在更复杂和开放环境中的学习能力。",
+  "tags": [
+    "Reinforcement Learning",
+    "Policy Optimization",
+    "GRPO"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:37:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RRPO通过参考相对比较替代组内绝对正确性比较，扩展了强化学习在非可验证反馈任务中的适用性。",
+      "分层条件采样机制允许策略优化基于相对性能，提高了在复杂任务中的鲁棒性和适应性。",
+      "该方法解决了GRPO在单一正确性标准不足时的局限性，为通用强化学习提供了新框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

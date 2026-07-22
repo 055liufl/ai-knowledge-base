@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-134",
+  "title": "LatentMT: Machine Translation with Latent Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.18618",
+  "source_platform": "rss_ai_research",
+  "summary": "LatentMT 是首个系统研究潜在推理循环语言模型（LoopLM）在机器翻译（MT）中应用的工作。与传统的通过增加参数量或生成显式思维链（CoT）标记来提升性能不同，LoopLM 通过在隐藏状态内部进行额外的循环计算来扩展模型能力，从而提供了一种新的缩放路径。该研究基于一个 2.6B 参数的小型骨干模型，通过轻量级训练进行适配。实验表明，LatentMT 在多个翻译基准上取得了与更大规模模型（如 7B 参数模型）相当甚至更优的性能，同时显著降低了推理成本。这项工作挑战了“越大越好”的模型扩展范式，展示了通过计算时间而非参数规模来提升翻译质量的可行性，为资源受限场景下的高质量机器翻译提供了新思路。其潜在推理机制也启发了对模型内部计算效率与可解释性的进一步探索。",
+  "tags": [
+    "Machine Translation",
+    "Latent Reasoning",
+    "LoopLM",
+    "Efficient Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:38:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LatentMT 通过隐藏状态内的循环计算替代参数增长或显式推理链，实现了模型性能的另一种缩放路径。",
+      "基于 2.6B 参数的小型模型，LatentMT 在多个翻译任务上达到或超越 7B 参数模型的水平，显著降低了推理成本。",
+      "该研究首次系统性地将潜在推理循环语言模型应用于机器翻译，为低资源或计算受限场景提供了高效解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

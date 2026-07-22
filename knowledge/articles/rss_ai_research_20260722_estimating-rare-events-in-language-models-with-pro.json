@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260722-114",
+  "title": "Estimating Rare Events in Language Models with Proper Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.18454",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对语言模型中罕见事件概率估计的改进方法，旨在解决现有估计器在极低概率区间（如小于10^-6）出现的零估计崩溃和系统性偏差问题。作者通过理论分析和实验验证，揭示了标准评估损失在极端稀疏场景下的不稳定性，并设计了一种结合重要性采样和自适应阈值的稳健估计框架。该框架能够有效处理由对抗性分布偏移或大规模部署引发的罕见失败事件，例如模型生成有害内容或产生逻辑错误。实验表明，新方法在多个基准测试中显著提升了估计精度，同时保持了计算效率。这项工作对于提升语言模型的安全性和可靠性具有重要意义，尤其是在高风险应用（如医疗、金融）中，能够更准确地量化尾部风险。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:37:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有低概率估计方法在极低概率区间（<10^-6）存在零估计崩溃和系统性偏差，导致评估结果不可靠。",
+      "标准评估损失在极端稀疏场景下不稳定，需要设计自适应阈值和重要性采样来提升估计鲁棒性。",
+      "该框架能够有效量化语言模型在对抗性分布偏移或大规模部署下的罕见失败风险，对安全评估具有实际价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

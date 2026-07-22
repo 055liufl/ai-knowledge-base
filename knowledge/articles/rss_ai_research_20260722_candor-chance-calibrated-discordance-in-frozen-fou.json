@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260722-113",
+  "title": "CANDOR: Chance-Calibrated Discordance in Frozen Foundation Encoders",
+  "source_url": "https://arxiv.org/abs/2607.18451",
+  "source_platform": "rss_ai_research",
+  "summary": "CANDOR 是一种针对冻结基础编码器（frozen foundation encoders）的新型不一致性度量方法。传统上，编码器的评估依赖于轻量级分类头从其特征中读取结果的能力，而非特征几何结构本身是否能够分离不同类别。最近邻不一致性虽然能反映几何分离性，但在类别样本数量不均衡时，由于密度差异，多数类样本更容易成为少数类样本的最近邻，导致评估结果偏向于流行类别，使得即使编码器本身性能良好，也可能被误判为“盲目”。CANDOR 通过构建等大小的类别样本库，并在标签交换下保持对称性，将随机水平精确固定为 1，从而消除了类别不平衡带来的偏差。该方法为评估冻结编码器的特征质量提供了更公平、更鲁棒的基准，尤其适用于预训练模型在下游任务中的迁移学习场景。其创新点在于从几何分离性角度重新定义了不一致性度量，而非依赖分类头的性能，这有助于更深入地理解编码器的表征能力。",
+  "tags": [
+    "representation learning",
+    "evaluation metric",
+    "foundation model",
+    "imbalanced data"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:37:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CANDOR 通过等大小样本库和标签交换对称性，消除了类别不平衡对编码器评估的偏差。",
+      "该方法从特征几何分离性角度评估冻结编码器，而非依赖分类头性能，提供了更本质的表征质量度量。",
+      "CANDOR 将随机水平精确固定为 1，使得评估结果更稳定且可解释。",
+      "该工作对预训练模型迁移学习中的特征评估具有重要实践意义，尤其适用于长尾分布数据集。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

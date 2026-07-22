@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-047",
+  "title": "OntoBook: Ontology-Grounded Synthetic Textbooks for Medical Encoder Pretraining",
+  "source_url": "https://arxiv.org/abs/2607.18927",
+  "source_platform": "rss_ai_research",
+  "summary": "OntoBook 是一种将医学本体结构转化为编码器语言模型预训练信号的新方法。该方法包含三个阶段：首先，通过随机游走遍历本体图，捕获医学代码之间的层次和因果关系；其次，利用大型语言模型将这些游走路径转化为流畅的教科书式文本；最后，使用生成的文本训练 ModernCamemBERT（一个 1.49 亿参数的法国编码器），并采用两个预训练目标。这项工作的核心创新在于利用本体结构生成高质量的合成文本，从而增强编码器模型对医学知识的理解，尤其适用于低资源语言（如法语）的医学自然语言处理任务。OntoBook 值得关注，因为它提供了一种可扩展的、无需大量人工标注的预训练数据生成方法，有望提升医学编码、信息提取等下游任务的性能，同时展示了本体知识与大语言模型结合的潜力。",
+  "tags": [
+    "Medical NLP",
+    "Ontology",
+    "Encoder Pretraining",
+    "Synthetic Data"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:31:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OntoBook 通过随机游走和 LLM 生成，将医学本体结构转化为高质量的教科书式预训练文本，解决了医学 NLP 中标注数据稀缺的问题。",
+      "该方法在法语医学编码器 ModernCamemBERT 上验证了有效性，展示了本体知识增强预训练在低资源语言中的潜力。",
+      "OntoBook 的合成数据生成策略具有通用性，可扩展到其他领域或语言，为编码器预训练提供了一种新的数据增强范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

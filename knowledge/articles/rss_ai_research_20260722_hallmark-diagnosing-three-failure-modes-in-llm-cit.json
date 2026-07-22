@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260722-106",
+  "title": "HALLMARK: Diagnosing Three Failure Modes in LLM Citation Verifiers",
+  "source_url": "https://arxiv.org/abs/2607.18360",
+  "source_platform": "rss_ai_research",
+  "summary": "HALLMARK 是一个专门用于评估大语言模型（LLM）引用验证器性能的基准测试框架。随着 LLM 在学术写作中越来越广泛地应用，生成的文献综述中经常出现虚构引用（幻觉引用）的问题，例如 GPTZero 在 NeurIPS 2025 的录用论文中发现了 53 篇存在此类问题。现有的基于规则和基于 LLM 的验证器虽然已经出现，但缺乏统一的基准来比较它们，也无法提供详细的失败诊断。HALLMARK 填补了这一空白，它包含 2,526 条 BibTeX 条目，覆盖多种领域和引用类型，旨在系统性地诊断验证器在三种主要失败模式下的表现：虚假引用（完全捏造）、错误属性（引用存在但内容不匹配）和错误细节（引用存在但细节错误）。该基准不仅提供了标准化的评估指标，还通过细粒度的错误分析帮助研究人员理解验证器的弱点，从而推动更可靠的引用验证工具的发展。HALLMARK 的发布对于提升学术写作的诚信度和 LLM 在科研场景中的可信度具有重要意义，是当前 AI 安全与可靠性研究中的一项关键贡献。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Hallucination",
+    "Citation Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:36:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HALLMARK 是首个系统性地诊断 LLM 引用验证器三种失败模式（虚假引用、错误属性、错误细节）的基准测试，填补了该领域的评估空白。",
+      "该基准包含 2,526 条 BibTeX 条目，覆盖多领域，为验证器提供了标准化、可复现的评估环境。",
+      "通过细粒度错误分析，HALLMARK 能够揭示验证器的具体弱点，为改进算法提供明确方向。",
+      "该工作直接回应了 LLM 在学术写作中导致虚构引用激增的现实问题，对提升科研诚信具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

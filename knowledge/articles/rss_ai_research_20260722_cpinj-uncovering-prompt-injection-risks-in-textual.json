@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260722-136",
+  "title": "CPInj: Uncovering Prompt Injection Risks in Textual Collaborative Prompt Optimization",
+  "source_url": "https://arxiv.org/abs/2607.18622",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CPInj的新攻击方法，旨在揭示文本协作提示优化（TCPO）中的提示注入风险。TCPO是Textgrad的扩展，允许多个客户端在保持数据本地化的同时，共同改进大型语言模型（LLM）的提示。然而，TCPO依赖自由形式的文本更新和聚合，这引入了一个新的、尚未充分探索的攻击面：恶意指令可以被注入到本地提示中，并通过服务传播。CPInj方法系统地探索了这一漏洞，展示了攻击者如何通过精心构造的提示注入，操纵协作优化过程，从而影响LLM的输出。该研究强调了在分布式提示优化场景中安全性的重要性，并提供了对潜在风险的深入分析。值得关注的是，随着LLM在协作环境中的广泛应用，这种攻击可能对模型的安全性和可靠性构成严重威胁，尤其是在多用户参与的场景下。本文不仅揭示了风险，还提出了防御方向，对研究者和开发者具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Prompt Injection",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:38:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TCPO的分布式协作优化机制引入了新的攻击面，恶意指令可通过自由文本更新传播。",
+      "CPInj方法系统性地展示了提示注入在协作环境中的可行性和潜在危害。",
+      "该研究强调了在LLM协作优化中加强安全防护的必要性，并提出了防御方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

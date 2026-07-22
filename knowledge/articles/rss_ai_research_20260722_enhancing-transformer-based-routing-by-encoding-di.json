@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-046",
+  "title": "Enhancing Transformer-based Routing by Encoding Distance via Relative Positional Encoding",
+  "source_url": "https://arxiv.org/abs/2607.18909",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过相对位置编码（RPE）增强Transformer路由能力的方法，用于解决团队定向问题（Team Orienteering Problem）。团队定向问题是一种组合优化问题，要求在有限资源下选择并访问一组节点以最大化总收益。传统Transformer在路由任务中难以有效编码节点间的空间关系，导致路径规划次优。作者通过在注意力机制中引入RPE作为加性偏置，将节点间的成对空间距离信息直接嵌入到编码器的计算中，从而生成空间感知更强的图嵌入。这种嵌入使解码器能够更准确地估计最优路径。实验在包含多达1000个节点的实例上进行，结果表明该方法在路由质量上显著优于基线模型。该工作结合了图神经网络与Transformer的优势，为组合优化问题提供了新的解决思路，具有较高的实用价值和理论意义。",
+  "tags": [
+    "Transformer",
+    "Relative Positional Encoding",
+    "Routing",
+    "Combinatorial Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:31:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "相对位置编码作为加性偏置能有效编码节点间空间关系，提升Transformer在路由问题中的图嵌入质量。",
+      "该方法在多达1000个节点的团队定向问题实例上验证了有效性，展示了可扩展性。",
+      "将空间感知嵌入与Transformer结合，为组合优化问题提供了新的范式，有望推广至其他路径规划任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

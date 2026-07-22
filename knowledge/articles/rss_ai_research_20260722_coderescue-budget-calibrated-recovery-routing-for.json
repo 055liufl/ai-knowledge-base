@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-067",
+  "title": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2607.19338",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CodeRescue的预算校准恢复路由方法，用于优化编码智能体在可执行环境中的部署策略。传统成本感知系统通常采用级联决策模式，即先用廉价模型尝试，失败后再升级到更昂贵但更强的模型。然而，在编码任务中，执行反馈不仅指示失败，还可能提供有价值的信息，使得继续使用廉价模型进行恢复尝试变得经济有效。CodeRescue通过动态评估每次失败后的执行反馈，智能决定是继续使用当前模型还是切换至更昂贵的模型，从而在固定预算下最大化整体成功率。该方法在多个编码基准测试上显著优于现有级联策略，在相同预算下实现了更高的任务完成率。这项工作对于构建高效、成本可控的AI编码助手具有重要实践意义，尤其适用于需要平衡性能与成本的工业级部署场景。",
+  "tags": [
+    "Coding Agent",
+    "Cost-Aware",
+    "Routing",
+    "Execution Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:33:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统级联策略在编码任务中可能浪费执行反馈信息，而CodeRescue通过利用反馈动态调整模型选择，在预算内提升成功率。",
+      "该方法在多个编码基准测试中，相同预算下比现有级联策略取得更高任务完成率，展示了实际部署中的成本效益。",
+      "CodeRescue为构建自适应、成本可控的AI编码助手提供了新范式，特别适合资源受限或需要精细预算管理的场景。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

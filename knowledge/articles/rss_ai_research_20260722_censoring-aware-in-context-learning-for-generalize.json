@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-126",
+  "title": "Censoring-Aware In-Context Learning for Generalized Supplier Lead Time Estimation in Supply Chain Planning",
+  "source_url": "https://arxiv.org/abs/2607.18530",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于审查感知的上下文学习（Censoring-Aware In-Context Learning）方法，用于供应链规划中的广义供应商交货时间估计。供应商交货时间预测是物料需求计划、库存优化和供应链风险管理的关键输入。然而，许多工业交货时间数据集存在自然的右删失问题：在需要预测时，部分订单尚未到达。标准的回归和分类方法会丢弃这些信息，而传统的生存模型需要针对特定任务进行建模。作者提出的LeadTime方法通过上下文学习，利用删失数据中的部分信息，无需重新训练模型即可适应不同供应商和产品类别，显著提高了预测准确性。该方法结合了生存分析的思想和大语言模型的上下文学习能力，为供应链管理中的时间序列预测问题提供了新的解决方案。实验结果表明，该方法在多个真实工业数据集上优于现有基线，具有实际应用价值。",
+  "tags": [
+    "LLM",
+    "In-Context Learning",
+    "Supply Chain",
+    "Survival Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:38:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "右删失数据在工业交货时间数据集中普遍存在，传统方法因丢弃删失信息而导致预测偏差，而本文提出的方法能有效利用这部分信息。",
+      "通过上下文学习，模型无需针对每个供应商或产品类别重新训练，即可泛化到新场景，降低了实际部署成本。",
+      "将生存分析中的审查机制与大语言模型的上下文学习能力结合，为供应链时间序列预测提供了新的技术路径。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

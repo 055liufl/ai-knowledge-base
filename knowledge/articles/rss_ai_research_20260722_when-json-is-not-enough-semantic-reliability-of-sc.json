@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260722-017",
+  "title": "When JSON Is Not Enough: Semantic Reliability of Schema-Constrained LLM Ordering Agents",
+  "source_url": "https://arxiv.org/abs/2607.18261",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了OrderBench，一个用于评估LLM代理在结构化输出场景中语义可靠性的确定性基准。尽管JSON Schema和结构化输出模式能消除解析错误，但无法保证生成的对象是安全且忠实的交易。OrderBench专注于餐厅点餐场景，通过一系列精心设计的测试案例，评估模型在约束条件下生成符合用户意图、无幻觉、无遗漏关键信息（如过敏原、数量、价格）的结构化订单的能力。该工作揭示了当前LLM在遵循模式约束时仍存在语义错误，例如错误填充字段、忽略隐含约束或生成不安全的交易。OrderBench为研究者和开发者提供了一个可复现的评估工具，有助于推动LLM代理在交易编译等高风险应用中的可靠性提升。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "structured output",
+    "benchmark",
+    "reliability"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:29:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "JSON Schema和结构化输出模式无法保证LLM生成对象的语义正确性，仍存在幻觉、遗漏约束等错误。",
+      "OrderBench作为确定性基准，通过餐厅点餐场景系统评估LLM代理在交易编译中的语义可靠性。",
+      "该工作为构建更安全的LLM代理提供了可复现的评估方法和改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

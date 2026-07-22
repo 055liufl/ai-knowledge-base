@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260722-109",
+  "title": "Adversarial Robustness of Phishing Email Detection: A Comparative Study of TF-IDF + Logistic Regression and Fine-Tuned DistilBERT",
+  "source_url": "https://arxiv.org/abs/2607.18429",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对两种钓鱼邮件检测方法——TF-IDF + 逻辑回归（传统机器学习基线）与微调后的DistilBERT（轻量级Transformer模型）——进行了对抗鲁棒性的对比研究。研究指出，大多数现有检测准确率报告仅基于干净、分布内测试数据，忽略了攻击者可能故意篡改邮件以逃避检测的情况。通过设计对抗性攻击（如文本扰动、同义词替换等），作者系统评估了两种方法在面对恶意修改时的性能退化程度。结果表明，虽然DistilBERT在干净数据上表现更优，但在对抗性样本下其鲁棒性并不显著优于逻辑回归基线，甚至在某些攻击下更脆弱。该研究强调了在网络安全场景中评估模型对抗鲁棒性的重要性，并为钓鱼邮件检测系统的实际部署提供了关键洞见。值得关注的是，它揭示了深度学习模型在安全敏感任务中可能存在的脆弱性，推动了更可靠的检测系统设计。",
+  "tags": [
+    "Adversarial Robustness",
+    "Phishing Detection",
+    "DistilBERT",
+    "NLP Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-22T10:25:08Z",
+  "collected_at": "2026-07-22T10:36:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统TF-IDF+逻辑回归与微调DistilBERT在干净数据上表现差异显著，但在对抗性攻击下鲁棒性差距缩小，甚至DistilBERT更易被特定扰动欺骗。",
+      "当前钓鱼邮件检测研究过度依赖干净测试集，忽视了对抗性样本对模型实际部署安全性的威胁。",
+      "对抗鲁棒性评估应成为安全相关NLP模型的标准测试流程，尤其在高风险应用如网络安全中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
