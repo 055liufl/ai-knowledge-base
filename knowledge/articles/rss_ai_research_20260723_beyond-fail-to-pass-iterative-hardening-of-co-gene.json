@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-106",
+  "title": "Beyond Fail-to-Pass: Iterative Hardening of Co-Generated Bug Reproduction Tests and Fixes",
+  "source_url": "https://arxiv.org/abs/2607.19843",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“迭代强化”的新方法，用于协同生成错误复现测试（BRT）和修复补丁，以解决大型语言模型（LLM）在自动程序修复（APR）中因错误报告信息不足而导致的修复不准确问题。传统方法通常先独立生成BRT，再基于其进行修复，但BRT质量不佳会限制修复效果。该方法通过迭代过程，让BRT生成和补丁生成相互强化：在每一轮中，基于当前补丁生成更精确的BRT，再基于改进的BRT生成更优补丁，直至收敛。实验表明，该方法在多个基准数据集上显著提升了修复成功率，尤其适用于复杂错误。这项研究值得关注，因为它将BRT生成从辅助任务提升为核心协同组件，为LLM驱动的APR提供了更鲁棒的框架，有望推动自动化调试和修复的实用化进程。",
+  "tags": [
+    "LLM",
+    "Automated Program Repair",
+    "Bug Reproduction Test"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:33:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "迭代强化机制通过BRT和补丁的协同优化，克服了传统独立生成BRT的局限性，显著提升了修复准确率。",
+      "该方法将BRT从被动验证工具转变为主动指导修复的信号源，增强了LLM在APR中的上下文理解能力。",
+      "实验证明，迭代过程能有效处理复杂错误，为LLM在软件工程中的实用化提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

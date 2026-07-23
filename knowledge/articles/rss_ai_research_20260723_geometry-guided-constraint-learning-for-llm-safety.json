@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-016",
+  "title": "Geometry-Guided Constraint Learning for LLM Safety Classification",
+  "source_url": "https://arxiv.org/abs/2607.19366",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于几何引导的约束学习方法，用于提升大语言模型（LLM）的安全分类能力。核心方法名为“安全多面体”（Safety as Polytope, SaP），通过在LLM的隐藏空间中学习线性半空间约束来检测不安全内容。传统SaP方法需要针对每个安全类别手动调整约束数量K，导致调参成本高。本文发现，引入稀疏自编码器（SAE）进行特征提取可以显著简化这一过程：在Qwen3.5-9B模型上，对于BeaverTails分类基准中的14个类别中的12个，仅需K=2即可达到最优性能，每个类别的准确率高达96-99%。这几乎消除了传统方法中需要从K=4到25进行穷举搜索的需求。该工作展示了SAE特征在简化安全分类器设计中的潜力，具有较高的实用价值和创新性，尤其适合需要高效部署安全分类器的场景。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Sparse Autoencoder",
+    "Geometric Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:26:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏自编码器（SAE）提取的特征能有效简化LLM安全分类中的约束数量调优，使K=2在大多数类别上达到最优。",
+      "在Qwen3.5-9B模型和BeaverTails基准上，该方法实现了96-99%的类别准确率，显著优于传统需要穷举K值的SaP方法。",
+      "该工作揭示了隐藏空间几何结构与安全分类任务之间的强关联，为未来高效、可解释的LLM安全机制提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

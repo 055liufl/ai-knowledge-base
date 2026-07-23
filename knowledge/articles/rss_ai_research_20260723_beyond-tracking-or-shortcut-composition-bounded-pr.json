@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-019",
+  "title": "Beyond Tracking or Shortcut: Composition-Bounded Predictive States in Poker Autoregressive Models",
+  "source_url": "https://arxiv.org/abs/2607.19369",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了在不完美信息序列模型（如扑克中的自回归模型）中，隐藏状态探针（hidden-state probes）是否真正维持了关于隐藏状态的后验信念分布。作者以有限注德州扑克（Limit Hold'em）为实验环境，训练了一个仅基于动作和价值目标的自回归模型，没有使用对手的手牌或范围信息。通过对手范围探针（opponent-range probes）测试，发现在三个随机种子中的两个，在控制动作和价值后，探针仍然能够恢复对手范围标签，这表明模型可能隐式地编码了对手范围的后验信念，而不仅仅是简单的追踪或捷径。该研究挑战了“探针仅反映表面特征”的常见假设，揭示了自回归模型在复杂博弈中可能具备更深的推理能力。值得关注的是，它提供了理解大语言模型（LLM）在不确定性下推理机制的新视角，对AI安全、博弈论和可解释性研究有重要启示。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Game Theory",
+    "Probabilistic Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:27:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在不完美信息博弈中，自回归模型可能隐式维持对手范围的后验信念分布，而不仅仅是追踪表面特征。",
+      "对手范围探针在控制动作和价值后仍能恢复标签，表明模型编码了更深层的概率推理。",
+      "该发现挑战了探针仅反映捷径或记忆的常见解释，为理解LLM的推理机制提供了新证据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

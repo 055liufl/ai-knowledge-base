@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-129",
+  "title": "Co-Evolving LLM Evaluators and Policies via DynamicRubric",
+  "source_url": "https://arxiv.org/abs/2607.20083",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DynamicRubric的框架，用于解决大语言模型（LLM）后训练中评估器反馈失效的问题。在策略优化过程中，随着策略提升，模型生成的样本质量趋近，导致评估器给出的相对分数差距缩小，从而产生弱化或误导性的监督信号。论文通过概率分配视角理论分析了分数差距的重要性，并设计了一种动态评估标准（rubric），使评估器能够根据当前策略的生成质量自适应调整评分粒度，从而保持有效的梯度信号。实验表明，该方法能显著提升策略优化效率，在多个基准测试中优于固定评估标准的基线方法。该工作为LLM后训练中的评估-策略协同进化提供了新思路，具有重要的理论价值和实践意义。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "Evaluation",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:35:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "策略优化中评估器分数差距的坍塌是导致监督信号失效的关键瓶颈，论文从概率分配角度给出了理论解释。",
+      "DynamicRubric通过动态调整评估标准，使评估器能自适应策略的进化，保持有效的相对分数差距。",
+      "该方法在多个基准上显著提升了策略优化效果，验证了评估-策略协同进化的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

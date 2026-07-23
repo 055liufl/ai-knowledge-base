@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-018",
+  "title": "Spectral-LSH: Sub-Quadratic Prompt Compression via Krylov-Projected Locality-Sensitive Hashing",
+  "source_url": "https://arxiv.org/abs/2607.19368",
+  "source_platform": "rss_ai_research",
+  "summary": "Spectral-LSH 是一种无需训练的提示压缩方法，旨在解决长提示推理中预填充注意力机制随序列长度二次方增长的高昂成本问题。该方法在提示进入语言模型之前进行压缩，通过结合 Krylov 子空间方法和随机特征来近似隐式注意力核算子的主导成分，从而避免了显式的 O(N²) 注意力核计算。这项工作提出了一种新颖的次二次复杂度提示压缩技术，通过谱分析和局部敏感哈希（LSH）实现高效近似，显著降低了长上下文场景下的计算开销。其无需额外训练的特性使其易于集成到现有系统中，对于提升大语言模型在长文档处理、多轮对话等应用中的推理效率具有重要价值。",
+  "tags": [
+    "Prompt Compression",
+    "Efficient Inference",
+    "Locality-Sensitive Hashing",
+    "Krylov Subspace"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:27:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 Krylov 子空间方法近似注意力核主导成分，避免了二次复杂度计算，实现了次二次的提示压缩。",
+      "无需额外训练，可直接应用于现有语言模型，降低了部署和适配成本。",
+      "结合随机特征和局部敏感哈希，在保持压缩质量的同时显著提升计算效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

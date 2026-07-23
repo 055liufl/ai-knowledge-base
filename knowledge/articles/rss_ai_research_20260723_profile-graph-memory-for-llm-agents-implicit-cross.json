@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260723-010",
+  "title": "Profile-Graph Memory for LLM Agents: Implicit Cross-Entity Traversal through Narrative Profiles",
+  "source_url": "https://arxiv.org/abs/2607.19359",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Profile-Graph Memory (ProGraph) 的新型记忆架构，旨在增强大语言模型（LLM）代理在多会话交互中的长期记忆能力。当前记忆基准主要评估单跳回忆，而忽略了多跳关联。为此，作者首先引入了 MemHop 基准，包含 1000 个问题，覆盖 1 到 5 跳深度，涉及 10 个社交网络场景，并提供了每跳的证据注释。ProGraph 采用两层结构：第一层通过叙事性档案（narrative profiles）隐式编码跨实体关系，第二层利用图结构显式存储实体间的关联。这种设计使得代理能够高效地进行多跳推理，而无需显式遍历所有路径。实验表明，ProGraph 在多跳记忆任务上显著优于现有方法，同时保持了较低的计算开销。该工作值得关注，因为它填补了 LLM 代理长期记忆中多跳关联评估的空白，并提出了一个实用且高效的解决方案，对提升代理在复杂社交场景中的交互能力具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Graph",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:26:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MemHop 基准填补了 LLM 代理多跳记忆评估的空白，提供了 1-5 跳深度的标准化测试集。",
+      "ProGraph 通过叙事性档案隐式编码跨实体关系，避免了显式图遍历的高成本。",
+      "两层记忆架构（叙事档案+图结构）在保持高效的同时实现了多跳推理能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

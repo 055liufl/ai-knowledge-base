@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-068",
+  "title": "ChannelGuard: Safe Models Do Not Compose into Safe Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2607.19430",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ChannelGuard的新型防御机制，旨在解决多智能体LLM应用中的安全漏洞。在多智能体系统中，智能体之间的通信通道（如规划器、工作智能体、验证器和合成器之间的跳转）缺乏监控，使得攻击者能够通过注入恶意指令来劫持系统。现有的防御措施（如IBProtector、Llama Guard、困惑度过滤器和SmoothLLM）仅保护输入边界，或作为不透明的随机过滤器在提供方侧运行，无法覆盖智能体间的内部通道。ChannelGuard通过监控和验证这些通道，有效防止了指令注入攻击。实验在2100个样本上进行，结果表明ChannelGuard能够显著提升多智能体系统的安全性，同时保持较低的性能开销。这项研究值得关注，因为它揭示了多智能体LLM应用中的关键安全盲点，并提出了实用的解决方案，对构建可信赖的AI系统具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:30:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体LLM应用中的智能体间通信通道是未受监控的，易被攻击者利用进行指令注入。",
+      "现有防御措施仅关注输入边界或外部过滤器，忽略了内部通道的安全风险。",
+      "ChannelGuard通过监控智能体间通道，有效阻止了恶意指令的传播，且性能开销低。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

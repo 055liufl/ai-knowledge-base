@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-058",
+  "title": "Decodable but Not Detectable: A Leakage Fingerprint for Near-OOD Benchmarks",
+  "source_url": "https://arxiv.org/abs/2607.19393",
+  "source_platform": "rss_ai_research",
+  "summary": "本文揭示了一个在近分布外（Near-OOD）基准测试中存在的严重数据泄露问题。作者在对一个基于扰动的OOD检测器进行审计时，发现其在文档基准测试上的AUROC仅为0.326，远低于随机猜测的0.5水平。深入分析表明，问题根源在于基准测试的泄露：被标记为“OOD”的类别实际上包含在模型的训练数据中，导致检测器正确地将这些样本识别为熟悉样本时反而受到惩罚。通过删除泄露类别并在两个领域重新训练35个模型，AUROC提升至0.911。这一发现对OOD检测领域的基准测试设计具有重要警示意义，提醒研究者必须严格审查数据划分，避免因标签错误导致对模型性能的严重误判。该工作不仅指出了当前评估流程中的漏洞，还提供了可复现的修复方法，对于提升OOD检测研究的可靠性和可重复性具有直接价值。",
+  "tags": [
+    "OOD Detection",
+    "Benchmark Leakage",
+    "Model Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:29:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基准测试中OOD类别泄露会导致检测器AUROC远低于随机水平，严重误导模型性能评估",
+      "通过删除泄露类别并重新训练，AUROC可从0.326提升至0.911，验证了泄露是性能下降的主因",
+      "该发现警示OOD检测领域需严格审查数据划分，避免训练集与OOD测试集重叠"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

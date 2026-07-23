@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-009",
+  "title": "LISA: Linear-Indexed Sparse Attention for Efficient Long-Context Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.19358",
+  "source_platform": "rss_ai_research",
+  "summary": "LISA（线性索引稀疏注意力）是一种针对长上下文推理场景的高效注意力机制优化方法。随着DeepSeek-R1等长链思维推理模型的发展，测试时扩展范式导致推理上下文长度急剧增加，而标准自注意力的O(n²)计算复杂度使得推理成本随序列长度快速增长，严重限制了长链思维推理在生产环境中的部署。LISA通过引入线性索引稀疏注意力机制，在保持模型推理能力的同时显著降低计算复杂度，为长上下文推理提供了实用的加速方案。该工作直接回应了当前大模型推理效率的核心瓶颈，具有重要的工程价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Efficiency",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:26:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LISA通过线性索引实现稀疏注意力，将标准自注意力的O(n²)复杂度降低至接近线性，有效缓解长上下文推理的计算瓶颈。",
+      "该方法作为即插即用模块，可直接应用于DeepSeek-R1等长链思维推理模型，无需重新训练即可提升推理效率。",
+      "LISA针对测试时扩展范式下的实际需求设计，解决了长上下文推理在生产部署中的关键效率问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

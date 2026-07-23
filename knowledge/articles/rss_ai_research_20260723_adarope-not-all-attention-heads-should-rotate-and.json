@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-013",
+  "title": "AdaRoPE: Not All Attention Heads Should Rotate and Scale Equally",
+  "source_url": "https://arxiv.org/abs/2607.19363",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为AdaRoPE的方法，旨在解决Transformer模型中旋转位置编码（RoPE）的局限性。标准的RoPE实现对所有注意力头使用统一的频率调度和缩放因子，但作者通过简化检索任务和长度泛化场景，从理论和实验上证明不同功能的注意力头需要不同的频率范围和注意力缩放因子才能有效工作。AdaRoPE允许每个注意力头自适应地调整其旋转频率和缩放参数，从而提升模型在长序列任务中的泛化能力和性能。这项工作挑战了RoPE的均匀设计假设，为位置编码的个性化优化提供了新思路，对提升Transformer在长文本、检索和推理任务中的表现具有潜在价值。",
+  "tags": [
+    "Position Encoding",
+    "Attention Mechanism",
+    "Length Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:26:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同注意力头在功能上存在差异，统一频率和缩放限制了RoPE的表达能力",
+      "AdaRoPE通过自适应调整每个头的旋转频率和缩放因子，提升了长度泛化性能",
+      "理论分析和简化任务实验验证了头部特异性位置编码的必要性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

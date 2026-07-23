@@ -1,0 +1,30 @@
+{
+  "id": "rss-general-tech-20260723-003",
+  "title": "ANSI escape injection in MCP servers: Hidden from humans, visible to AI",
+  "source_url": "https://brightsec.com/research/detecting-ansi-escape-sequence-injection-in-mcp-servers-with-dast/",
+  "source_platform": "rss_general_tech",
+  "summary": "该研究揭示了MCP（Model Context Protocol）服务器中存在ANSI转义序列注入漏洞的安全问题。攻击者可以通过在MCP服务器响应中注入ANSI转义序列，使得这些序列对人类用户不可见，但能被AI模型解析和执行，从而操纵AI的行为或窃取敏感信息。研究使用DAST（动态应用安全测试）方法检测此类漏洞，并强调了其潜在风险。该发现对于AI安全领域具有重要警示意义，尤其是在AI与外部系统交互日益频繁的背景下，此类隐蔽攻击可能被用于数据投毒、模型操纵或隐私泄露。",
+  "tags": [
+    "AI Security",
+    "MCP",
+    "Injection Attack"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:00Z",
+  "collected_at": "2026-07-23T10:24:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ANSI转义序列注入可绕过人类审查，直接影响AI模型行为",
+      "MCP协议缺乏对转义序列的过滤机制，存在设计缺陷",
+      "DAST方法可有效检测此类隐蔽注入漏洞"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

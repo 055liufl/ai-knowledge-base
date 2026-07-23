@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-084",
+  "title": "Fine-grained Computation-Communication Overlap via Tile-level Signaling and Scheduling for Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2607.19539",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对混合专家（MoE）架构的细粒度计算-通信重叠方法，通过基于tile级别的信号传递和调度优化，显著提升了MoE模型在多GPU分布式执行中的效率。MoE架构通过增加模型容量而不成比例增加计算成本，已成为扩展大语言模型（LLM）至万亿参数规模的关键构建块。然而，MoE层涉及两次all-to-all通信（将token分派到专家rank并返回专家输出），这成为性能瓶颈。现有方法通常在粗粒度级别（如层或批次）进行重叠，难以充分利用计算和通信资源。本文创新性地引入tile级别（即细粒度子块）的信号和调度机制，允许在更小的粒度上重叠计算和通信，从而减少空闲时间并提高GPU利用率。实验表明，该方法在多种MoE模型和硬件配置下显著降低了通信开销，提升了端到端推理和训练吞吐量。该研究对于大规模分布式训练和推理系统具有重要实践价值，尤其适用于需要高效部署MoE模型的场景。",
+  "tags": [
+    "MoE",
+    "分布式训练",
+    "计算-通信重叠",
+    "GPU优化"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:31:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过tile级别的信号传递和调度，实现了比传统层或批次级别更细粒度的计算-通信重叠，有效减少了GPU空闲时间。",
+      "该方法针对MoE架构中的all-to-all通信瓶颈，显著提升了多GPU环境下的推理和训练吞吐量。",
+      "实验验证了该技术在不同MoE模型规模和硬件配置下的通用性和有效性，为大规模LLM部署提供了实用优化方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

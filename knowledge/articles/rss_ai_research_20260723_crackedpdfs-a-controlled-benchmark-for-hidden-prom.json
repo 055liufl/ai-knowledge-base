@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-022",
+  "title": "CrackedPDFs: A Controlled Benchmark for Hidden Prompt Injection in PDFs",
+  "source_url": "https://arxiv.org/abs/2607.19396",
+  "source_platform": "rss_ai_research",
+  "summary": "CrackedPDFs 是一个用于评估 PDF 中隐藏提示注入攻击的受控基准测试集。该基准包含从 4,983 个基础文档生成的 29,322 个 PDF 文件，其中包括 9,774 个注入文件和 19,548 个良性或匹配混淆文件。研究指出，基于文档的 LLM 系统在安全防护检查前通常会将 PDF 扁平化处理，这一步骤可能丢弃用户从未看到的指令证据，从而为隐藏提示注入攻击留下漏洞。论文评估了 PromptGuard 和规则基线方法在该基准上的表现。该工作填补了 PDF 格式特有的安全评估空白，为开发更鲁棒的文档处理 LLM 系统提供了重要测试工具。值得关注的是，它揭示了现有安全机制在处理多模态文档格式时的盲点，对提升 LLM 应用的安全性具有实际指导意义。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Benchmark",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:27:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PDF 扁平化处理会丢弃用户不可见的指令证据，为隐藏提示注入攻击创造机会",
+      "CrackedPDFs 提供了包含 29,322 个 PDF 的大规模受控基准，覆盖注入、良性及混淆场景",
+      "现有安全防护（如 PromptGuard）在检测 PDF 隐藏注入方面存在显著不足"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

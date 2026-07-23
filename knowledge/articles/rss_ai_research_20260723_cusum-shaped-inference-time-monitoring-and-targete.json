@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260723-048",
+  "title": "CUSUM-Shaped Inference-Time Monitoring and Targeted Re-Decoding for Quantized Small Language Model Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.20129",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MGT-B（Monitoring-Guided Test-time Backtracking）的推理时监控与重解码方法，专门用于量化小型自回归推理模型。该方法基于早期的token级e-CUSUM控制器，通过监控预采样不确定性和退化特征的滑动窗口，在推理过程中实时检测模型是否陷入长、重复或无效的轨迹。一旦检测到异常，MGT-B会触发目标性的回溯重解码，从而在不增加训练成本的情况下提升推理质量。该工作针对量化小模型在资源受限场景下的推理可靠性问题，提供了一种轻量级、即插即用的解决方案。其创新点在于将统计过程控制（CUSUM）与推理时动态调整相结合，实现了对推理轨迹的在线监控与修正。值得关注的是，该方法有望在边缘设备、实时应用等对模型大小和推理效率有严格要求的场景中，显著提升量化小模型的推理鲁棒性和输出质量。",
+  "tags": [
+    "Quantization",
+    "Small Language Model",
+    "Inference-Time Monitoring",
+    "Re-Decoding",
+    "CUSUM"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:29:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MGT-B通过监控预采样不确定性和退化特征，实时检测量化小模型的无效推理轨迹。",
+      "该方法基于CUSUM统计控制框架，实现了轻量级的推理时回溯重解码，无需额外训练。",
+      "针对量化小模型在资源受限场景下的推理可靠性问题，提供了一种有效的在线修正机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

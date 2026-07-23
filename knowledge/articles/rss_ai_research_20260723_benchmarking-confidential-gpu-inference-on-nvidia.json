@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-004",
+  "title": "Benchmarking Confidential GPU Inference on NVIDIA H100 under Intel TDX",
+  "source_url": "https://arxiv.org/abs/2607.19353",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对NVIDIA H100 GPU在Intel TDX（Trusted Domain Extensions）机密计算环境下的推理性能进行了基准测试。研究比较了标准非机密执行与机密计算模式下的性能差异，重点关注大语言模型（LLM）推理工作负载。实验评估了不同模型规模、批处理大小和序列长度下的吞吐量、延迟和内存开销。结果表明，机密计算模式会引入一定的性能开销，但具体影响因工作负载而异，例如小模型或低批处理量时开销更显著。该研究为AI推理部署中权衡安全性与性能提供了关键数据，尤其适用于处理敏感数据或保护模型资产的场景。论文通过系统化的基准测试，揭示了TDX与H100结合时的性能瓶颈，并提出了优化方向，如调整内存分配和计算调度策略。这项工作对推动机密计算在AI领域的实际应用具有重要参考价值。",
+  "tags": [
+    "Confidential Computing",
+    "GPU Inference",
+    "LLM",
+    "Performance Benchmarking"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:26:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "机密计算模式在H100 GPU上引入的性能开销高度依赖工作负载，小模型和低批处理场景下开销更显著。",
+      "Intel TDX与NVIDIA H100结合时，内存访问和计算调度是主要性能瓶颈，需针对性优化。",
+      "该基准测试为AI推理部署中安全性与性能的权衡提供了量化依据，尤其适用于敏感数据处理场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

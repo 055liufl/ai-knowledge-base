@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-117",
+  "title": "When Does Knowledge Distillation Hurt? Reliability-Aware Distillation for Low-Resource Language Summarization",
+  "source_url": "https://arxiv.org/abs/2607.19956",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了知识蒸馏（KD）在低资源语言摘要任务中的负面影响。通过在孟加拉语摘要基准BanSum上的实验，作者发现标准KD仅比交叉熵基线提升ROUGE-L 0.0003，且约51.3%的训练样本在标准KD下会损害学生模型的验证损失。为此，论文提出了两种互补的可靠性感知蒸馏方法，旨在识别并减轻有害样本的影响，从而提升低资源场景下的模型压缩效果。这项工作揭示了KD在低资源语言任务中的潜在风险，并提供了实用的改进策略，对于多语言NLP和模型压缩领域具有重要参考价值。",
+  "tags": [
+    "Knowledge Distillation",
+    "Low-Resource NLP",
+    "Summarization"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:34:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准知识蒸馏在低资源语言摘要中可能对大量训练样本产生负面影响，导致性能提升微乎其微。",
+      "约51.3%的训练样本在标准KD下会损害学生模型的验证损失，表明样本级影响存在显著差异。",
+      "提出的可靠性感知蒸馏方法能够有效识别并减轻有害样本的影响，为低资源场景下的模型压缩提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

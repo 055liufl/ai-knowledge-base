@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-074",
+  "title": "Guardrails as Scapegoats: Auditing Unfaithful Safety Refusals in Tool-Augmented LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.19449",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对工具增强型LLM代理的轻量级黑盒审计框架，重点检测在工具调用过程中发生的静默基础设施故障——即HTTP 200响应但返回空、null或格式错误载荷的情况。现有评估框架过度关注能力指标或显式工具崩溃，忽略了这些无声的失败模式。该框架通过注入四种静默故障模式（如空响应、null值、格式错误等）到12个生产级工具桩中，并将代理响应分类为三种互斥行为（安全拒绝、不安全接受、错误处理）。这项工作揭示了当前LLM代理在工具交互中的安全盲区，为提升代理系统的鲁棒性和可靠性提供了新的审计视角。值得关注的是，它填补了工具增强型代理评估中关于静默失败的系统性研究空白，对构建更可信的AI代理系统具有重要实践意义。",
+  "tags": [
+    "LLM Agent",
+    "Safety",
+    "Auditing",
+    "Tool-Augmented"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:31:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具增强型LLM代理评估过度聚焦能力指标和显式崩溃，忽略了HTTP 200响应下的静默故障（空/null/格式错误载荷）",
+      "提出一种轻量级黑盒审计框架，通过注入四种静默故障模式到12个生产级工具桩中，系统检测代理的安全拒绝行为",
+      "该框架将代理响应分为三类互斥行为，为评估代理在工具交互中的安全鲁棒性提供了标准化方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

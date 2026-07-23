@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-125",
+  "title": "Drift-Aware RL-based Wavelet Denoising for Network-Traffic Anomaly Detection",
+  "source_url": "https://arxiv.org/abs/2607.20011",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于强化学习（RL）的自适应小波去噪方法，用于解决网络流量异常检测中因统计漂移（均值、方差、分布形状或尾部行为的时变）和加性噪声导致的静态小波去噪失效问题。传统小波去噪假设噪声为平稳独立同分布（i.i.d.）高斯噪声，但在实际网络流量中，信号常受漂移影响，导致去噪参数失配，尤其在中等至高信噪比（SNR）下会过度抑制有用结构，降低异常检测性能。作者将小波阈值选择建模为马尔可夫决策过程，利用深度Q网络（DQN）等RL算法动态调整去噪阈值，以适应漂移环境。实验在合成和真实网络流量数据集上验证了该方法在保持检测率的同时，显著降低了误报率，优于静态和自适应基线方法。该工作融合了信号处理与强化学习，为网络监控中的非平稳环境提供了新的自适应去噪框架，具有实际部署价值。",
+  "tags": [
+    "Anomaly Detection",
+    "Reinforcement Learning",
+    "Wavelet Denoising",
+    "Network Traffic"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:34:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将强化学习引入小波去噪阈值选择，解决了传统方法在统计漂移环境下的参数失配问题。",
+      "在中等至高信噪比下，自适应去噪能避免过度抑制有用信号，提升异常检测的准确性。",
+      "通过DQN等RL算法实现实时阈值调整，为网络流量监控提供了非平稳环境下的鲁棒去噪方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260723-091",
+  "title": "PerfAgent: Profiler-Guided Iterative Refinement for Repository-Level Code Optimization",
+  "source_url": "https://arxiv.org/abs/2607.19653",
+  "source_platform": "rss_ai_research",
+  "summary": "PerfAgent 是一个由性能分析器引导的迭代优化框架，专门用于仓库级别的代码优化。与现有主要关注正确性的 LLM 代理（如 SWE-Bench 问题解决）不同，PerfAgent 旨在通过保持行为不变的同时提升运行时性能。该框架利用性能分析器（profiler）识别代码中的性能瓶颈，并引导 LLM 代理进行迭代的、细粒度的优化。其核心创新在于将性能分析结果作为反馈信号，驱动 LLM 生成优化补丁，并通过测试验证确保行为保持。这项工作解决了 LLM 在代码优化领域的一个关键挑战：即优化不仅需要正确性，还需要性能提升，且优化补丁必须通过测试。PerfAgent 代表了 LLM 代理从“正确性”向“性能优化”的重要扩展，对于提升大型代码库的自动优化能力具有显著价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Code Optimization",
+    "Performance Profiling",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:32:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PerfAgent 将性能分析器与 LLM 代理结合，实现了仓库级别的代码优化，超越了仅关注正确性的现有方法。",
+      "该框架通过迭代优化和测试验证，确保优化补丁在提升性能的同时保持原有行为。",
+      "PerfAgent 解决了 LLM 在代码优化中的关键挑战：优化必须兼顾正确性与性能，且需通过测试。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

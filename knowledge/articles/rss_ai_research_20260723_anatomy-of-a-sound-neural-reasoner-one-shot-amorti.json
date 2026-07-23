@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-090",
+  "title": "Anatomy of a Sound Neural Reasoner: One-Shot Amortization, First-Pass Poisoning, and Search Inertness in Clue-Rich Completion",
+  "source_url": "https://arxiv.org/abs/2607.19635",
+  "source_platform": "rss_ai_research",
+  "summary": "本文分析了神经求解器在推理过程中的行为，特别是Lattice Deduction Transformer（LDT）在Sudoku任务中的表现。研究发现，LDT并非如预期那样进行逐步推理和修正，而是在一次前向传播中几乎完全确定整个网格的解（标准6x6谜题中所有空白单元格，增强9x9谜题中94-96%的单元格），将迭代求解器转变为一次预测器，并辅以精确验证器。所有困难部分的失败在搜索开始前就已决定，这表明模型存在“一次性摊销”现象，即通过单次前向传播完成推理，而非逐步迭代。此外，研究还涉及“首次通过中毒”和“搜索惰性”等概念，揭示了神经求解器在复杂推理任务中的局限性。这项工作值得关注，因为它挑战了当前对神经推理器工作方式的普遍理解，并可能对设计更有效的推理模型产生重要影响。",
+  "tags": [
+    "Neural Reasoning",
+    "Transformer",
+    "Sudoku"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:32:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LDT在一次前向传播中几乎完全确定解，而非逐步迭代推理，这挑战了神经求解器进行逐步推理的假设。",
+      "所有困难部分的失败在搜索开始前就已决定，表明模型存在“一次性摊销”现象，限制了其处理复杂问题的能力。",
+      "研究揭示了“首次通过中毒”和“搜索惰性”等新概念，为理解神经推理器的行为提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

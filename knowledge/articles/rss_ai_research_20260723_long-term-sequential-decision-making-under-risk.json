@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-035",
+  "title": "Long-Term Sequential Decision Making under Risk",
+  "source_url": "https://arxiv.org/abs/2607.19914",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在有限时域马尔可夫决策过程（MDP）中，基于根（resolute）风险目标（即对总回报分布应用秩依赖函数）的长期序贯决策问题。这类目标在回报分布上具有非线性，通常破坏贝尔曼最优性，因此通过场景树枚举直接优化是难以处理的。作者提出了ERQDP方法，这是一种无需枚举和采样的算法，通过精确求解秩-分位数代理来规避传统方法的计算瓶颈。该方法为风险敏感的强化学习与规划提供了新的理论工具，尤其适用于金融、机器人等需要长期风险控制的场景。其创新性在于避免了枚举和采样，显著降低了计算复杂度，同时保持了风险目标的数学严谨性。值得关注的是，ERQDP可能推动风险敏感MDP在实际应用中的可行性，并为后续研究提供基础。",
+  "tags": [
+    "MDP",
+    "Risk-Sensitive",
+    "Sequential Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:28:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ERQDP通过秩-分位数代理避免了枚举和采样，解决了非线性风险目标下的MDP规划难题。",
+      "该方法在破坏贝尔曼最优性的风险目标下仍能实现有效优化，拓展了风险敏感决策的理论边界。",
+      "ERQDP为长期风险控制（如金融、机器人）提供了可计算的新工具，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

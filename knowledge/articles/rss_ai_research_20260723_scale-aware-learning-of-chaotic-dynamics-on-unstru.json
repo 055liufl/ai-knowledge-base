@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260723-055",
+  "title": "Scale-Aware Learning of Chaotic Dynamics on Unstructured Meshes via Binned Spectral Losses",
+  "source_url": "https://arxiv.org/abs/2607.19387",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向非结构化网格上混沌动力系统的尺度感知学习方法，通过引入分箱谱损失函数（Binned Spectral Loss）来替代传统逐点损失。在结构化网格中，傅里叶模式可定义标准频率分解，但非结构化网格缺乏规范傅里叶基。作者设计了一种基于图拉普拉斯谱分解的分箱策略，将不同尺度的频谱能量分箱，并监督模型学习多尺度能量分布。该方法在混沌流体动力学模拟（如湍流、大气环流）中显著提升了长期预测的统计一致性和尺度结构保持能力，优于MSE和传统谱损失。这项工作将谱损失从结构化网格推广到非结构化网格，解决了工程应用中常见的不规则网格（如有限元、有限体积法）上的混沌动力系统代理建模难题，具有重要的实用价值。",
+  "tags": [
+    "Chaotic Dynamics",
+    "Spectral Loss",
+    "Unstructured Meshes",
+    "Surrogate Modeling",
+    "Graph Neural Networks"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:29:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出分箱谱损失函数，将非结构化网格上的频谱能量分箱监督，实现尺度感知学习。",
+      "利用图拉普拉斯谱分解替代傅里叶基，使谱损失适用于任意不规则网格。",
+      "在混沌动力系统代理建模中，该方法显著提升了长期预测的统计一致性和多尺度结构保持能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

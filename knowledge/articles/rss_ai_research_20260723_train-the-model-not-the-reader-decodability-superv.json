@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-050",
+  "title": "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
+  "source_url": "https://arxiv.org/abs/2607.20379",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的解释性评估方法，旨在解决自然语言自编码器在评估隐藏激活解释时存在的结构性问题。传统方法通过重建损失来评估解释的忠实度，即如果解释能够重建原始激活，则被认为是忠实的。然而，这种方法对单个错误声明不敏感：即使翻转一个声明，只要重建结果不变，该声明就不会受到惩罚。作者通过实验证明，这种测试存在两种通过方式，但都不是真正忠实的。基于此，他们提出了一种新的监督方法——可解码性监督，用于验证可验证的激活解释。该方法通过直接监督解释的可解码性，确保每个声明都对重建有贡献，从而提高解释的忠实度和可靠性。该研究对于理解神经网络内部机制、提升模型可解释性具有重要意义，尤其适用于大型语言模型（如Qwen-2.5-7B）的激活分析。",
+  "tags": [
+    "解释性",
+    "可解码性监督",
+    "神经网络",
+    "忠实度"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:29:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统自然语言自编码器通过重建损失评估解释忠实度，但对单个错误声明不敏感，导致两种不忠实的通过方式。",
+      "提出可解码性监督方法，直接监督解释的可解码性，确保每个声明对重建有贡献，提升解释的忠实度。",
+      "该方法在Qwen-2.5-7B verbalizer上验证，表明现有解释方法存在结构性问题，新方法能有效改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

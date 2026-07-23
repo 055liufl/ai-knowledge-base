@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-044",
+  "title": "Global Difference Constraint Propagation for Constraint Programming",
+  "source_url": "https://arxiv.org/abs/2607.20022",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对约束规划中全局差异约束传播的新方法。差异约束（形式为 x - y ≤ d）在最短路径等经典问题中已有高效算法，但传统的有限域传播算法通常将每个差异约束视为独立的传播器，导致求解过程虽然完备但效率低下。本文通过构建全局传播机制，利用差异约束的结构特性（如与最短路径的关联），设计了一种能够同时处理所有差异约束的传播算法，从而显著提升约束满足问题的求解速度。该方法在理论上保证了传播的完整性，同时通过实验验证了其在多个基准问题上的性能提升。这项研究对于约束规划领域具有重要价值，因为它弥合了经典算法与传播方法之间的鸿沟，为高效求解大规模约束问题提供了新思路。",
+  "tags": [
+    "Constraint Programming",
+    "Difference Constraints",
+    "Propagation"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:28:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统有限域传播将每个差异约束独立处理，导致效率低下，而全局传播利用差异约束的图结构特性可显著加速求解。",
+      "该方法将差异约束传播与最短路径算法结合，在保证完备性的同时提升了传播效率。",
+      "实验表明，全局差异约束传播在多个基准问题上优于独立传播器，尤其适用于大规模约束满足问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

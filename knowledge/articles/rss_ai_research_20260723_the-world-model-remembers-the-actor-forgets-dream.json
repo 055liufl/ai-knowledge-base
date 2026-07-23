@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-099",
+  "title": "The World Model Remembers, the Actor Forgets: Dream Rehearsal for Continual Model-Based RL",
+  "source_url": "https://arxiv.org/abs/2607.19749",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了基于模型的强化学习代理（DreamerV3系列）在任务序列训练中的灾难性遗忘问题。尽管使用了无限制的重放缓冲区来保存所有早期经验，这些代理仍然表现出严重的遗忘现象。作者提出了一个关键问题：在持续强化学习文献中，通常假设某个组件会遗忘，但从未被精确测量过。通过预注册的组件级探针实验（n=3个种子），在不清除重放的情况下，作者发现世界模型实际上保留了几乎所有早期知识，而遗忘主要发生在策略（actor）组件中。基于此发现，他们提出了一种名为“Dream Rehearsal”的方法，通过让策略在梦境中重放旧任务的经验来缓解遗忘。这项工作不仅揭示了持续强化学习中遗忘的根本原因，还提供了一种有效的解决方案，对于开发更鲁棒的持续学习代理具有重要意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Continual Learning",
+    "Model-Based RL",
+    "DreamerV3"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:32:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在持续强化学习中，世界模型在无限制重放下几乎不遗忘，而策略组件是灾难性遗忘的主要来源。",
+      "Dream Rehearsal方法通过让策略在梦境中重放旧任务经验，有效缓解了任务序列中的遗忘问题。",
+      "该研究首次通过组件级探针实验量化了持续强化学习中的遗忘来源，为未来研究提供了新的视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

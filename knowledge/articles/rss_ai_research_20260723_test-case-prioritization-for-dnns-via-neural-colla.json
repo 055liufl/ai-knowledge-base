@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260723-127",
+  "title": "Test Case Prioritization for DNNs via Neural Collapse Instability",
+  "source_url": "https://arxiv.org/abs/2607.20046",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于神经坍缩不稳定性（Neural Collapse Instability）的测试用例优先级排序方法，用于深度神经网络（DNN）的验证。在安全关键领域，DNN的测试预算有限，现有方法通常依赖单次检查点的置信度信号（如输出概率），但DNN可能自信地犯错，且预测类与竞争类之间的置信度边际往往不可靠。本文通过分析神经坍缩现象——即训练后期类内特征收敛到均值、类间特征正交化的特性——并利用其不稳定性指标来动态评估测试用例的优先级。该方法通过监测特征表示在训练过程中的变化，识别出可能导致模型失效的输入。实验表明，该方法在多个基准数据集和模型架构上优于传统的基于置信度的方法，能更有效地发现错误，从而降低验证成本。这项研究为DNN测试提供了一种新的理论驱动视角，具有重要的实用价值。",
+  "tags": [
+    "DNN Testing",
+    "Test Prioritization",
+    "Neural Collapse"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:34:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "神经坍缩不稳定性可作为DNN测试用例优先级排序的有效指标，优于传统置信度方法。",
+      "该方法通过分析特征表示在训练过程中的动态变化，能更可靠地识别可能导致模型失效的输入。",
+      "实验证明该方法在多个数据集和模型架构上均能提升错误发现效率，降低验证成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

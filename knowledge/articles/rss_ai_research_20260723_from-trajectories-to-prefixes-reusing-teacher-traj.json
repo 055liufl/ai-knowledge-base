@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-060",
+  "title": "From Trajectories to Prefixes: Reusing Teacher Trajectories via Replayed Prefixes and Online Continuation",
+  "source_url": "https://arxiv.org/abs/2607.19395",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出Prefix-GRPO，一种面向小语言模型（SLM）的强化学习框架，旨在解决从强教师轨迹中直接蒸馏时，将丰富的多轮交互行为简化为单次模仿目标的问题。该方法将教师轨迹分解为与重放对齐的前缀查询和在线延续两部分，通过前缀重放和在线延续训练，使SLM在长时域环境中更有效地复用教师知识。实验表明，Prefix-GRPO在多个交互式任务上显著提升了SLM的决策质量和样本效率，为构建高效、可扩展的交互式智能体提供了新思路。该工作结合了强化学习、模仿学习和序列建模，具有较高的实用价值和理论创新性。",
+  "tags": [
+    "Reinforcement Learning",
+    "Small Language Models",
+    "Imitation Learning",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:30:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefix-GRPO通过将教师轨迹分解为前缀查询和在线延续，解决了直接蒸馏中多轮行为退化为单次模仿的问题，提升了长时域环境下的学习效率。",
+      "该方法利用重放对齐的前缀，使小模型在在线延续中逐步适应教师策略，避免了早期决策错误对后续学习的影响。",
+      "实验验证了Prefix-GRPO在多个交互式任务上优于传统蒸馏和强化学习方法，为小模型在复杂环境中的部署提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

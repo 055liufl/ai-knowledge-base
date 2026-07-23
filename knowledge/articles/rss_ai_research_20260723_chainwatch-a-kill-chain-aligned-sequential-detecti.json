@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260723-070",
+  "title": "ChainWatch: A Kill Chain-Aligned Sequential Detection Framework for Multi-Step Attacks in MCP-Based AI Agent Systems",
+  "source_url": "https://arxiv.org/abs/2607.19432",
+  "source_platform": "rss_ai_research",
+  "summary": "ChainWatch 是一种针对基于 MCP（模型上下文协议）的 AI 代理系统的多步攻击检测框架。MCP 作为开源标准，允许 AI 代理连接外部工具、数据库和服务，但同时也引入了多步攻击风险：攻击者可以将单个看似良性的工具调用组合成恶意序列，从而绕过传统的单次调用防御。ChainWatch 采用“杀伤链对齐”的序列检测方法，通过分析工具调用的时序和上下文关系，识别出隐蔽的多步攻击模式。该框架的核心创新在于将攻击链的各个阶段（如侦察、武器化、利用等）与代理系统的行为序列进行对齐，从而在早期阶段发现攻击意图。ChainWatch 的提出填补了 MCP 生态中针对多步攻击的检测空白，对于保障 AI 代理系统的安全性具有重要意义，尤其适用于金融、医疗等对安全要求极高的自动化场景。",
+  "tags": [
+    "AI Security",
+    "MCP",
+    "Multi-Step Attack Detection",
+    "Agent Systems"
+  ],
+  "author": null,
+  "published_at": "2026-07-23T10:23:03Z",
+  "collected_at": "2026-07-23T10:30:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCP 协议在增强 AI 代理能力的同时，引入了多步攻击的新威胁面，传统单次调用防御无法有效检测。",
+      "ChainWatch 通过杀伤链对齐的序列检测方法，能够识别由多个良性调用组合而成的恶意攻击序列。",
+      "该框架为 MCP 生态提供了首个针对多步攻击的专用检测方案，填补了现有安全机制的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
