@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-004",
+  "title": "Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between Temperature Variation and Model Diversity in LLMs",
+  "source_url": "https://arxiv.org/abs/2607.20464",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了大型语言模型（LLM）中随机采样（Stochastic Sampling）与模型多样性（Model Diversity）之间的关系。作者指出，虽然通过温度参数（τ）调节的随机采样可以产生不同的输出，但这种变化在揭示模型不确定性方面存在局限性。具体而言，论文比较了同一模型在温度τ=1下运行100次与使用集成方法（Ensemble）的效果，发现随机采样产生的变体在跨问题结构（cross-question structure）上缺乏多样性，即相关问题的输出不会像集成方法那样协同变化。这一发现挑战了通过随机采样进行不确定性估计的常见做法，并揭示了温度变化与模型多样性之间的维度差距（Dimensionality Gap）。该研究对于理解LLM的可靠性、不确定性量化以及改进模型评估方法具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Uncertainty Estimation",
+    "Sampling",
+    "Model Diversity"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:20:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随机采样（如温度调节）产生的输出变化在跨问题结构上缺乏多样性，无法像集成方法那样捕捉相关问题的协同变化。",
+      "温度变化与模型多样性之间存在维度差距，即随机采样在不确定性估计中存在认知浅层性（Epistemic Shallowness）。",
+      "该研究挑战了通过自一致性（Self-consistency）进行不确定性估计的常见做法，提示需要更鲁棒的方法来量化LLM的不确定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

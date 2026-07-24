@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-102",
+  "title": "Towards Faithful Graph Explanations with Synergistic Edge Effects via Granular Balls",
+  "source_url": "https://arxiv.org/abs/2607.21381",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于粒度球（Granular Balls）的图神经网络（GNN）解释方法，旨在解决实例级图解释中边重要性评估忽略边间协同效应的问题。现有方法通常通过扰动单条边并观察预测变化来评估边的重要性，但这种方法无法捕捉边之间的相互作用，导致解释不忠实。作者引入粒度球的概念，将图结构中的边分组为具有相似属性的球体，从而在评估边重要性时同时考虑组内和组间的协同效应。该方法通过优化粒度球的划分和聚合，生成更忠实于模型决策的子图解释。实验在多个图分类数据集上验证了其有效性，相比基线方法（如GNNExplainer、PGExplainer等），在解释忠实度和稳定性上均有显著提升。这项工作值得关注，因为它填补了GNN解释中协同效应建模的空白，为可解释AI在复杂图数据上的应用提供了新思路，尤其适用于需要高可靠性解释的场景（如药物发现、社交网络分析）。",
+  "tags": [
+    "Graph Neural Networks",
+    "Explainable AI",
+    "Granular Balls",
+    "Instance-level Explanation"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:27:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有GNN解释方法忽略边间协同效应，导致解释不忠实；本文通过粒度球建模边组内和组间相互作用，提升解释质量。",
+      "粒度球方法将边分组为球体，在评估重要性时同时考虑局部和全局协同，优于单边扰动策略。",
+      "实验表明，该方法在多个数据集上显著提高了解释的忠实度和稳定性，为高可靠性图解释提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

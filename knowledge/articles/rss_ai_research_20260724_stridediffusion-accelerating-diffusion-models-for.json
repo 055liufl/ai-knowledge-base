@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-053",
+  "title": "StrideDiffusion: Accelerating Diffusion Models for Time-series Generation",
+  "source_url": "https://arxiv.org/abs/2607.20545",
+  "source_platform": "rss_ai_research",
+  "summary": "StrideDiffusion 是一种无需额外训练即可加速时间序列扩散模型推理的方法。它基于一个关键观察：在时间序列扩散模型的反向去噪过程中，不同频谱带的演化速度不同。传统快速采样器通常使用固定或通用的时间步长调度，忽略了这一特性。StrideDiffusion 通过利用频谱差异，动态调整采样步长，从而在保持生成质量的同时显著减少所需的去噪步骤数量。该方法无需对预训练模型进行任何修改或微调，即可直接应用于现有模型。这项工作对于时间序列生成领域具有重要意义，因为它解决了扩散模型在实际应用中推理速度慢的核心瓶颈，为金融、医疗、气象等需要快速生成时间序列数据的场景提供了实用解决方案。其训练无关的特性也使得它易于部署和推广。",
+  "tags": [
+    "Diffusion Models",
+    "Time Series",
+    "Inference Acceleration",
+    "Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:23:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "时间序列扩散模型的反向过程中，不同频谱带的演化速度不同，这是加速采样的关键切入点。",
+      "StrideDiffusion 是一种训练无关的采样加速方法，无需修改预训练模型即可应用。",
+      "通过动态调整采样步长，StrideDiffusion 在减少推理步骤的同时保持了生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

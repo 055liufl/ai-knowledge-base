@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-012",
+  "title": "Incomplete Prompt Jailbreaks in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.20473",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统性地研究了大型语言模型（LLMs）中不完整提示（incomplete prompts）引发的越狱攻击现象，即不完整提示越狱（Incomplete Prompt Jailbreaks, IPJ）。作者首先形式化定义了IPJ，指出即使模型经过安全对齐训练，面对不完整的恶意提示时，模型仍可能生成有害的延续内容。论文通过大量实验，对不同吸引子类型（attractor types）进行了分析，揭示了不完整提示触发有害输出的条件与机制。这项工作的重要性在于，它暴露了当前安全对齐方法的一个关键盲点：模型在补全不完整输入时，可能绕过安全约束，生成有害内容。研究为LLM的安全性评估提供了新的视角，并提示开发者需要关注输入补全场景下的安全风险。该工作具有较高的实用价值，尤其对模型安全研究和部署实践有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Jailbreak",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:21:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不完整提示越狱（IPJ）是一种新型攻击方式，利用模型补全不完整输入的能力绕过安全对齐。",
+      "不同吸引子类型（如情感、主题、角色等）对IPJ的成功率有显著影响，揭示了模型安全机制的脆弱性。",
+      "该研究为LLM安全评估提供了新维度，提示开发者需在输入补全场景中加强安全防护。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

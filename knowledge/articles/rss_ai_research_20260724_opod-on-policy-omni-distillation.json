@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-072",
+  "title": "OPOD: On-Policy Omni Distillation",
+  "source_url": "https://arxiv.org/abs/2607.20918",
+  "source_platform": "rss_ai_research",
+  "summary": "OPOD（On-Policy Omni Distillation）是一种面向全模态模型的新型训练方法。全模态模型旨在统一处理文本、图像和音频，但现有方法在同时提升所有模态能力时表现不佳，往往不如针对单一模态的专用模型。OPOD 通过在线策略蒸馏（on-policy distillation）解决这一问题：学生模型生成响应后，由教师模型对同一响应进行评估，从而让学生直接从自身行为中学习。这种方法避免了传统离线蒸馏中教师与学生的行为分布不匹配问题，使得学生能够更有效地吸收多模态专家的知识。OPOD 在多个全模态基准测试中展示了显著性能提升，尤其是在跨模态理解和生成任务上。该工作为构建更强大的通用多模态系统提供了新思路，具有重要的理论和实践价值。",
+  "tags": [
+    "Multi-modal",
+    "Distillation",
+    "On-policy Learning",
+    "Omni-modal"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:25:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OPOD 通过在线策略蒸馏解决了多模态训练中行为分布不匹配的问题，使学生模型能从自身生成行为中学习。",
+      "该方法在多个全模态基准上显著提升了性能，特别是在跨模态理解和生成任务上超越了传统蒸馏方法。",
+      "OPOD 为构建统一的全模态模型提供了有效框架，有望推动多模态 AI 系统的实用化发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

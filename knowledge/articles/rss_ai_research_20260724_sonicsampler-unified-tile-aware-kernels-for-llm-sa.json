@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260724-014",
+  "title": "SonicSampler: Unified Tile-Aware Kernels for LLM Sampling and Speculative Verification",
+  "source_url": "https://arxiv.org/abs/2607.20475",
+  "source_platform": "rss_ai_research",
+  "summary": "SonicSampler 是一种针对大型语言模型（LLM）推理中采样和推测性验证的统一、基于 tile 感知的 CUDA 内核。在 LLM 推理中，采样过程涉及 logit 处理、token 选择和推测性解码验证的组合操作，但现有实现要么仅加速管道子集，要么依赖多次内核启动，或假设批次内采样行为同质，从而限制了动态服务工作负载的支持并阻碍了高效的 CUDA Graph 执行。SonicSampler 通过设计统一的 tile 感知内核，将采样和验证操作融合为单个高效内核，支持批次内异构采样行为（如不同温度、top-k 参数），并兼容 CUDA Graph 以最小化内核启动开销。该方法显著提升了吞吐量并降低了延迟，尤其适用于动态、多请求的 LLM 服务场景。该工作值得关注，因为它解决了 LLM 推理中采样阶段的性能瓶颈，为推测性解码和多样化采样策略提供了可扩展的解决方案，对提升 LLM 服务效率具有实际意义。",
+  "tags": [
+    "LLM",
+    "Sampling",
+    "Speculative Decoding",
+    "CUDA",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:21:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SonicSampler 通过统一的 tile 感知内核，将 logit 处理、token 选择和推测性验证融合为单次内核启动，减少了内核启动开销并提升了吞吐量。",
+      "该方法支持批次内异构采样行为（如不同温度、top-k 参数），适应动态服务工作负载，突破了传统同质采样假设的限制。",
+      "SonicSampler 兼容 CUDA Graph 执行，进一步优化了推理管道的延迟和资源利用率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

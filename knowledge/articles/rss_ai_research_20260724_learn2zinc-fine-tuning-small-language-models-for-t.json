@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260724-138",
+  "title": "Learn2Zinc: Fine-tuning Small Language Models for Text-to-Model Translation in MiniZinc",
+  "source_url": "https://arxiv.org/abs/2607.20456",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《Learn2Zinc: Fine-tuning Small Language Models for Text-to-Model Translation in MiniZinc》探讨了如何通过微调小型语言模型（参数规模从0.6B到20B）来生成MiniZinc约束建模语言的代码。MiniZinc是一种用于组合优化问题的领域特定语言，但主流大语言模型（如GPT-4）在生成此类语言时表现不佳，因为其训练数据中缺乏相关示例。研究团队通过收集和标注自然语言问题描述与对应MiniZinc模型的数据集，对多个小型模型（如CodeLlama、Phi等）进行微调。关键发现是，即使参数规模较小的模型（如7B）在经过针对性微调后，也能生成语法正确且语义有效的MiniZinc模型，其性能接近甚至超过未微调的大模型（如GPT-4）。这项工作展示了领域特定语言代码生成中，小模型通过微调可以弥补数据稀缺带来的挑战，具有重要的实用价值，尤其对于运筹学、约束编程等领域的自动化建模工具开发。该研究还分析了模型规模、训练数据量对生成质量的影响，为未来在低资源语言上的代码生成提供了方法论指导。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "Code Generation",
+    "MiniZinc",
+    "Constraint Programming"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:29:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小型语言模型（如7B参数）通过针对性微调，可以在MiniZinc这种低资源领域特定语言上生成语法正确且语义有效的代码，性能接近未微调的大模型。",
+      "微调数据集的构建和标注是成功的关键，自然语言问题描述与MiniZinc模型的配对数据显著提升了模型的理解和生成能力。",
+      "模型参数规模与生成质量并非线性关系，较小的模型在充分微调后可能比未微调的大模型表现更好，这为资源受限场景提供了可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

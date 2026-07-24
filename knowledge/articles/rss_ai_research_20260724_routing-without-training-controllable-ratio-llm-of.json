@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-019",
+  "title": "Routing Without Training: Controllable-Ratio LLM Offloading via Reliability Gating",
+  "source_url": "https://arxiv.org/abs/2607.20481",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种无需训练的路由方法，用于在本地-云端协作部署大语言模型时实现可控比例的卸载。现有方法通常依赖训练好的路由器或协作感知的微调，将路由行为绑定到特定操作模式。本文证明，本地模型在采样响应中的推理时一致性已经为决定何时信任本地执行提供了强信号。通过引入可靠性门控机制，该方法可以在不进行额外训练的情况下，动态调整本地与云端之间的负载分配，实现可控的卸载比例。该方法具有实用性强、部署成本低的优点，特别适合资源受限环境下的LLM部署。",
+  "tags": [
+    "LLM",
+    "Offloading",
+    "Routing",
+    "Local-Cloud Collaboration"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:21:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "本地模型在采样响应中的推理时一致性可作为信任本地执行的强信号，无需训练路由器。",
+      "可靠性门控机制实现了可控比例的LLM卸载，无需协作感知微调。",
+      "该方法降低了本地-云端协作部署的复杂性和成本，适合资源受限场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

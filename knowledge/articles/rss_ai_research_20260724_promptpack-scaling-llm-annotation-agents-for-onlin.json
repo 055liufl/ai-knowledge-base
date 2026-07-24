@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260724-050",
+  "title": "PromptPack: Scaling LLM Annotation Agents for Online Recommendation",
+  "source_url": "https://arxiv.org/abs/2607.20528",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PromptPack的框架，旨在解决在线推荐平台中大规模使用大型语言模型（LLM）进行广告创意结构化特征提取时的成本瓶颈问题。在现有生产环境中，单次调用LLM的标注代理虽能显著提升点击率（CTR），但每个创意都需要独立发送提示词，其中冗余的系统指令占用了94%的输入令牌，导致扩展成本过高。PromptPack通过打包多个创意的提示词，共享系统指令部分，从而大幅减少令牌消耗，降低推理成本。实验表明，该方法在保持CTR提升效果的同时，能将标注成本降低至原来的1/10以下。该工作聚焦于LLM在工业推荐系统中的实际部署优化，具有显著的经济效益和可扩展性，为在线广告、内容推荐等场景下的LLM应用提供了实用的工程解决方案。",
+  "tags": [
+    "LLM",
+    "Recommendation System",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:23:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过打包多个创意的提示词，共享系统指令，可减少94%的冗余输入令牌，显著降低LLM推理成本。",
+      "该方法在保持CTR提升效果的同时，能将标注成本降低至原来的1/10以下，验证了其在工业环境中的实用性和经济性。",
+      "PromptPack为在线推荐平台中LLM的大规模部署提供了一种可扩展的工程优化策略，解决了成本瓶颈问题。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

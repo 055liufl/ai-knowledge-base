@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-123",
+  "title": "Knowledge Injection Exists in MoE? Exploring Expert-Aware Contrast Decoding in MoE for Mitigating LLMs'Hallucinations",
+  "source_url": "https://arxiv.org/abs/2607.20426",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了混合专家模型（MoE）中的知识注入现象，并提出了一种名为“专家感知对比解码”（Expert-Aware Contrast Decoding, EACD）的方法，用于缓解大型语言模型（LLM）的幻觉问题。现有方法如提示工程和模型优化难以改变模型内部知识或缺乏跨领域泛化能力，而对比解码通过利用LLM的层间差异来减少幻觉，但此前研究仅关注基于Transformer的模型（如GPT），忽略了MoE等有效框架。MoE通过引入多个专家模块改变了传统架构，可能导致知识分布不均和幻觉问题。EACD方法通过识别MoE中与幻觉相关的专家，并在解码过程中对比这些专家的输出，从而抑制错误生成。实验表明，该方法在多个基准测试中有效降低了幻觉率，并保持了模型性能。该研究首次将对比解码应用于MoE架构，为缓解LLM幻觉提供了新思路，具有重要的理论价值和实践意义。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "Hallucination",
+    "Contrast Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:28:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE架构中存在的知识注入现象可能导致幻觉，专家感知对比解码通过识别和对比相关专家输出有效缓解此问题。",
+      "该方法首次将对比解码应用于MoE模型，弥补了此前仅关注Transformer架构的空白，提升了跨领域泛化能力。",
+      "实验验证了EACD在多个基准测试中降低幻觉率的同时保持模型性能，为LLM可靠性改进提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

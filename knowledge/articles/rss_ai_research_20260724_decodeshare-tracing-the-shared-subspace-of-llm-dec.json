@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-008",
+  "title": "DecodeShare: Tracing the Shared Subspace of LLM Decode-Time Decisions",
+  "source_url": "https://arxiv.org/abs/2607.20469",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DecodeShare的方法，旨在分析大型语言模型（LLM）在解码阶段（而非预填充阶段）隐藏状态中共享的低维子空间。研究首先识别出不同任务间解码时隐藏状态中一致共享的低维子空间，然后通过仅在该解码阶段移除该子空间来测试其因果作用。实验结果表明，该子空间对LLM的多任务处理能力具有重要影响。这项工作揭示了LLM在解码时可能利用任务通用结构，为理解LLM的推理机制和优化KV缓存推理提供了新视角，值得关注。",
+  "tags": [
+    "LLM",
+    "Decode-Time",
+    "Subspace",
+    "KV-Cache"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:20:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在解码阶段的隐藏状态中存在一个跨任务共享的低维子空间。",
+      "移除该共享子空间会显著影响LLM的解码性能，表明其在任务通用处理中具有因果作用。",
+      "DecodeShare方法为分析LLM解码时的内部表示结构提供了新工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

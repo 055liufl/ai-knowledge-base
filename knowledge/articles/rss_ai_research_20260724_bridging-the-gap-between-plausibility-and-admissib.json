@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260724-108",
+  "title": "Bridging the Gap Between Plausibility and Admissibility: Constraint-Aware Flow Maps for Dynamic Graph Systems",
+  "source_url": "https://arxiv.org/abs/2607.21421",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种结合生成模型与符号约束的方法，用于提升动态图系统中轨迹建模的可靠性。传统生成模型（如扩散模型）能够生成统计上合理的未来系统轨迹，但无法保证这些轨迹满足结构可行性（如物理或逻辑约束）。作者通过在后处理阶段引入符号约束（如连通性、容量限制等），对扩散模型生成的图状态轨迹进行修正，从而在保持生成多样性的同时确保结构合规。实验在多个动态图数据集（如交通流、社交网络）上验证了该方法能有效减少不可行轨迹的比例，并提升下游决策的鲁棒性。该工作弥合了统计合理性与结构可接受性之间的鸿沟，为高风险场景下的生成式决策提供了新思路。值得关注的是，其约束感知的流映射框架具有通用性，可扩展至其他生成模型（如GAN、VAE），且不依赖模型重训练。",
+  "tags": [
+    "Generative Model",
+    "Graph Neural Network",
+    "Constraint Satisfaction",
+    "Diffusion Model",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:27:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成模型在动态图系统中生成的轨迹虽统计合理，但常违反结构约束，本文通过后处理符号约束有效解决了这一问题。",
+      "提出的约束感知流映射框架无需修改生成模型本身，即可提升轨迹的结构可行性，具有较好的通用性和可扩展性。",
+      "实验表明该方法在交通流、社交网络等场景下能显著降低不可行轨迹比例，同时保持生成多样性，对高风险决策场景尤为重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

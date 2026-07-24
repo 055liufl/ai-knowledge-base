@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-011",
+  "title": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
+  "source_url": "https://arxiv.org/abs/2607.20472",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多轮对话中LLM安全性的防御框架“Robust Critics”。核心挑战在于区分用户的恶意攻击与误解但善意的提问，尤其是在多轮交互中，攻击者的真实意图可能逐步显现。现有安全机制往往在单轮中做出判断，容易误伤或漏防。该框架通过引入一个独立的“批评者”模型，在对话过程中持续评估用户意图，并动态调整防御策略。实验表明，该方法能有效降低多轮攻击的成功率，同时保持对正常用户的高可用性。该研究对于提升LLM在实际部署中的鲁棒性和安全性具有重要意义，尤其适用于客服、教育等需要多轮交互的场景。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Multi-Turn Attack",
+    "Defense"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:21:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多轮对话中攻击意图的渐进性使得单轮安全机制失效，需要持续评估。",
+      "独立的批评者模型可以动态调整防御策略，平衡安全性与用户体验。",
+      "该方法在降低攻击成功率的同时，对正常用户影响较小。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-068",
+  "title": "Code Monitor Red Teaming for Public-Test-Passing Code",
+  "source_url": "https://arxiv.org/abs/2607.20852",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对LLM生成代码的监控与红队测试协议，旨在解决代码通过公开测试后仍存在隐藏缺陷的问题。研究背景是：当前LLM生成的代码常通过可见测试作为质量门禁，但通过测试并不保证代码规范的正确性，因为公开测试无法覆盖所有边界情况。作者定义了一个部署类监控问题：在代码通过公开测试后，能否使用一个较弱的LLM验证器来识别剩余的隐藏缺陷？为此，他们引入了Code Monitor Red Teaming协议，该协议固定了公开检查的信息边界，同时变化生成器压力、验证器脚手架以及弱到强的迁移策略。该工作值得关注，因为它直接针对LLM代码生成的实际部署安全性，提出了一种系统性的红队测试方法，有助于提升代码生成系统的鲁棒性和可靠性。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Red Teaming",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:24:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过公开测试的代码仍可能含有隐藏缺陷，需要额外的监控机制。",
+      "较弱的LLM验证器在特定协议下可以有效识别隐藏缺陷。",
+      "固定信息边界并变化生成器压力与验证器脚手架是提升监控效果的关键。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

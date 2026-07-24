@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-042",
+  "title": "SiGMA: Sign-Guided Merging and Adaptation for Multimodal Continual Instruction Tuning",
+  "source_url": "https://arxiv.org/abs/2607.20511",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SiGMA（符号引导的合并与自适应）的新方法，用于解决多模态持续指令微调（MCIT）中的负干扰问题。MCIT旨在使多模态大语言模型（MLLMs）能够适应一系列不断变化的下游任务。现有方法主要采用专家混合或扩展合并策略，虽然在一定程度上缓解了灾难性遗忘，但在推理过程中仍会出现新学到的更新覆盖有用先验知识、导致整体性能下降的负干扰现象。SiGMA通过引入符号引导机制，在合并模型参数时保留关键先验知识，并自适应地调整新任务的学习方向，从而有效减少负干扰。该方法在多个多模态持续学习基准上取得了显著改进，展示了其在提升模型持续学习能力方面的潜力。这项工作对于推动多模态AI系统在实际应用中的持续适应性和鲁棒性具有重要意义，尤其是在需要模型不断学习新任务而不遗忘旧知识的场景中。",
+  "tags": [
+    "Multimodal",
+    "Continual Learning",
+    "Instruction Tuning",
+    "MLLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:23:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SiGMA通过符号引导的合并策略，在参数更新时保留关键先验知识，有效缓解了多模态持续微调中的负干扰问题。",
+      "该方法在多个基准上优于现有专家混合和扩展合并方法，展示了更好的任务适应性和知识保留能力。",
+      "符号引导机制为持续学习提供了一种新的范式，可推广至其他需要平衡新知识与旧知识的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

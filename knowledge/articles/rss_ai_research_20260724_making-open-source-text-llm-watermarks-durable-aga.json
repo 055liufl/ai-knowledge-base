@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-129",
+  "title": "Making Open-Source Text LLM Watermarks Durable Against Merging",
+  "source_url": "https://arxiv.org/abs/2607.20435",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对开源文本大语言模型（OSM）的水印技术，旨在解决模型合并（model merging）导致的水印去除问题。随着开源LLM性能接近闭源模型，通过权重嵌入水印来追踪生成文本成为重要需求。然而，模型合并（一种结合专家知识、防止灾难性遗忘的常用方法）会显著削弱或移除水印。该研究分析了合并操作对水印的影响机制，并设计了一种鲁棒的水印嵌入方案，使得水印在模型合并后仍能保持可检测性。这项工作对于保障开源模型的可追溯性、防止滥用具有重要意义，尤其是在多模型协作和持续学习的场景下。其创新点在于首次系统性地解决了合并操作对水印的破坏问题，并提供了可验证的解决方案。",
+  "tags": [
+    "LLM",
+    "Watermark",
+    "Model Merging",
+    "Open Source"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:29:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型合并操作会显著移除或削弱开源LLM权重中嵌入的水印，现有水印方案在合并场景下失效。",
+      "通过分析合并操作对水印的破坏机制，可以设计出对合并鲁棒的水印嵌入方法，确保水印在合并后仍可检测。",
+      "该工作为开源模型的可追溯性和安全性提供了新思路，尤其适用于多模型协作和持续学习等实际应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

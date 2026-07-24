@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-085",
+  "title": "Faster IndexTTS-2: Accelerating and Streaming Autoregressive Zero-Shot Text-to-Speech Synthesis on GPUs",
+  "source_url": "https://arxiv.org/abs/2607.21042",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出Faster IndexTTS-2，一种针对GPU加速的流式自回归零样本文本转语音合成系统。IndexTTS-2作为当前最先进的自回归TTS模型，由GPT、流匹配扩散Transformer和声码器组成，虽然合成质量高，但推理速度仅勉强达到实时，且不支持流式或批处理。Faster IndexTTS-2通过优化GPU上的推理流程，引入流式生成机制，显著加速了自回归token生成过程，使得在保持高质量合成的同时，实现低延迟的实时语音合成。该工作对于需要低延迟响应的生产环境（如语音助手、实时配音）具有重要价值，解决了自回归TTS模型部署中的关键瓶颈。其创新点在于将流式处理与GPU加速结合，在不牺牲音质的前提下提升推理效率，为TTS技术的实际应用提供了可行方案。",
+  "tags": [
+    "TTS",
+    "GPU加速",
+    "流式推理",
+    "自回归模型"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:26:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自回归TTS模型因顺序token生成导致推理速度慢，是部署到低延迟应用的主要障碍",
+      "Faster IndexTTS-2通过GPU优化和流式生成，在不降低合成质量的前提下实现实时推理",
+      "该工作为自回归TTS模型在生产环境中的实际部署提供了有效的加速方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

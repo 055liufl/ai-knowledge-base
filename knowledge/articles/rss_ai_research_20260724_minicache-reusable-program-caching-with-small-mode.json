@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260724-040",
+  "title": "MiniCache: Reusable Program Caching with Small Model Interfaces for Efficient LLM Inference",
+  "source_url": "https://arxiv.org/abs/2607.20507",
+  "source_platform": "rss_ai_research",
+  "summary": "MiniCache 是一个针对大型语言模型（LLM）推理效率优化的可复用程序缓存框架。该框架针对程序辅助推理、智能体决策和结构化任务执行等场景中 LLM 推理成本高的问题，提出将 Program-of-Thought (PoT) 程序转化为参数化的缓存对象，从而在结构相似的请求之间实现计算复用。MiniCache 的核心创新在于利用小型模型接口来管理缓存，而非依赖大型模型进行重复推理，这显著降低了推理延迟和计算开销。通过缓存可复用的程序片段，MiniCache 能够在不牺牲任务准确性的前提下，提升 LLM 在复杂推理任务中的效率。该工作对于降低 LLM 在实际应用中的部署成本、提升响应速度具有重要价值，尤其适用于需要频繁执行相似逻辑的智能体系统和自动化工作流。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Caching",
+    "Program-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:23:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MiniCache 通过将 PoT 程序参数化为缓存对象，实现了跨相似请求的计算复用，避免了重复推理的高成本。",
+      "该框架利用小型模型接口管理缓存，而非依赖大型模型，从而在保持性能的同时大幅降低推理延迟。",
+      "MiniCache 特别适用于程序辅助推理和智能体决策等需要频繁执行结构化任务的场景，能显著提升效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

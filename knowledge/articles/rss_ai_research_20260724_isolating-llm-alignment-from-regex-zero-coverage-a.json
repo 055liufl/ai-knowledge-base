@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260724-031",
+  "title": "Isolating LLM Alignment from Regex: Zero Coverage and Metric-Dependent Divergence Under Adversarial Mutation",
+  "source_url": "https://arxiv.org/abs/2607.20494",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了生产级LLM应用中正则表达式过滤器与模型对齐之间的隔离效应。作者发现，在常规语料库中，在活跃的正则过滤器后添加实时Gemini后端并未带来可衡量的覆盖增益。然而，当语料库被设计为专门绕过正则过滤器时，这种天花板效应是否仍然成立？为此，他们引入了L5-no-regex设置，该设置与L4-real（使用Gemini-2.5-flash、令牌预算上限、速率限制和输出清洗）相同，但禁用了九模式过滤器。实验揭示了在对抗性变异下，正则过滤器的覆盖率为零，且指标存在发散现象，表明对齐与正则过滤之间存在根本性的不匹配。这项工作对生产环境中的安全对齐策略具有重要启示，值得关注因为它挑战了现有LLM安全栈中正则过滤作为对齐补充的假设。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Adversarial"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:22:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在对抗性设计的语料库中，正则过滤器无法提供任何覆盖增益，表明其与模型对齐完全隔离。",
+      "禁用正则过滤器后，指标出现发散，说明正则过滤与模型对齐之间存在度量依赖的不匹配。",
+      "该发现对生产LLM应用的安全架构设计有重要影响，提示需要重新评估正则过滤作为安全屏障的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

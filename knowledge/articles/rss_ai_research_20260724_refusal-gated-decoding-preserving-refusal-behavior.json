@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260724-061",
+  "title": "Refusal-Gated Decoding: Preserving Refusal Behavior Under High-Temperature Sampling",
+  "source_url": "https://arxiv.org/abs/2607.20791",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“拒绝门控解码”（Refusal-Gated Decoding）的新方法，旨在解决大语言模型（LLM）在高温度采样下拒绝行为减弱的问题。高温度采样通过增加token概率分布的熵来提升输出多样性，但现有研究显示，这会导致模型拒绝回答不安全或不当请求的能力下降，从而带来安全风险。该方法通过引入一个门控机制，在解码过程中动态调整拒绝行为的强度，确保即使在高温环境下，模型仍能保持对有害输入的拒绝能力。论文基于对现有截断采样技术的分析，提出了一种轻量级的解码策略，无需额外训练即可集成到现有LLM中。实验结果表明，该方法在保持输出多样性的同时，显著提升了模型在高温度下的安全性和鲁棒性。这项工作对于提升LLM在实际部署中的安全性具有重要意义，尤其是在需要高多样性输出的应用场景中。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-07-24T10:17:44Z",
+  "collected_at": "2026-07-24T10:24:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高温度采样会削弱LLM的拒绝行为，增加安全风险，而拒绝门控解码通过动态门控机制有效缓解了这一问题。",
+      "该方法无需重新训练模型，仅通过解码阶段的调整即可实现，具有轻量级和易集成的特点。",
+      "实验证明，拒绝门控解码在保持输出多样性的同时，显著提升了模型在高温度下的安全性，为LLM安全部署提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
