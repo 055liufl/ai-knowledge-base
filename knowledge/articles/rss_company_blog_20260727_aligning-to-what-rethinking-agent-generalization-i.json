@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260727-076",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是MiniMax团队发布的技术博客，核心探讨了在构建通用AI Agent时，模型对齐（Alignment）的目标应该是什么。传统对齐方法（如RLHF）主要关注让模型遵循人类指令、保持无害和诚实，但MiniMax认为，对于Agent而言，对齐的目标应该是提升其在复杂、多步任务中的泛化能力，而非仅仅服从指令。他们提出了一个新的训练框架，通过强化学习让模型学会在不确定环境中进行探索、规划与纠错，从而在未见过的任务上也能表现出色。该工作基于其最新模型M2，展示了在工具使用、网页导航、代码执行等Agent基准测试上的显著提升。文章还讨论了Agent泛化中的关键挑战，如长程依赖、环境反馈稀疏性以及模型对错误的自愈能力。这一思路重新定义了Agent对齐的方向，从“让模型说对的话”转向“让模型做对的事”，对Agent研究具有重要启发意义。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Reinforcement Learning",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-07-27T11:21:50Z",
+  "collected_at": "2026-07-27T11:30:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MiniMax提出Agent对齐的目标应从服从指令转向提升任务泛化能力，通过强化学习训练模型在复杂环境中自主探索与纠错。",
+      "M2模型在工具使用、网页导航等Agent基准上表现优异，验证了以任务泛化为导向的对齐方法的有效性。",
+      "该工作强调Agent需具备长程依赖处理、稀疏反馈利用和错误自愈能力，为下一代通用Agent设计提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

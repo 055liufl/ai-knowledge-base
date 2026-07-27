@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260727-122",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在大型语言模型（LLM）推理服务中，长提示词（prompts）如何阻塞其他请求，从而影响整体性能的问题。文章通过实验和分析，揭示了当处理长提示词时，GPU资源被长时间占用，导致后续短提示词请求排队等待，增加了延迟。作者提出了一种优化策略，即通过动态批处理（dynamic batching）和请求调度（request scheduling）来减少阻塞效应，例如优先处理短提示词或使用更高效的注意力机制（如FlashAttention）。此外，文章还讨论了模型架构选择（如使用稀疏注意力）和硬件优化（如更快的GPU内存）对缓解该问题的帮助。这些发现对于部署LLM服务的开发者具有实际指导意义，能够帮助提升系统的吞吐量和响应速度。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-27T11:21:50Z",
+  "collected_at": "2026-07-27T11:34:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会阻塞其他请求，导致GPU资源利用率不均和延迟增加。",
+      "动态批处理和请求调度策略可以有效缓解长提示词引起的阻塞问题。",
+      "采用FlashAttention等高效注意力机制可减少长提示词的计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

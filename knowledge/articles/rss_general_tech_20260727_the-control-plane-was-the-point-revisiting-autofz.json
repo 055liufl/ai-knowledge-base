@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260727-013",
+  "title": "The Control Plane Was the Point: Revisiting autofz in the LLM Era",
+  "source_url": "https://yfu.tw/blog/en/autofz-revisited/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文回顾了作者在2019年开发的自动化模糊测试工具autofz，并探讨了在LLM时代其设计理念的重新审视。autofz的核心思想是将控制平面（control plane）与数据平面（data plane）分离，控制平面负责调度和决策，数据平面负责执行。在LLM时代，这一设计被证明具有前瞻性：LLM可以充当更智能的控制平面，利用其推理和生成能力来优化模糊测试的种子选择、变异策略和路径探索。文章指出，传统的模糊测试工具往往将控制逻辑与执行逻辑耦合，而autofz的分离架构使得LLM能够无缝集成，提升测试效率和覆盖率。作者通过实验展示了LLM增强的autofz在发现漏洞和代码覆盖率上的显著改进，并讨论了这种架构在更广泛的软件测试和自动化领域的潜在应用。本文值得关注，因为它不仅提供了一个具体的工具案例，还揭示了LLM如何通过控制平面抽象来增强传统自动化任务，为AI与软件工程的融合提供了新思路。",
+  "tags": [
+    "LLM",
+    "fuzzing",
+    "automation",
+    "software testing"
+  ],
+  "author": null,
+  "published_at": "2026-07-27T11:21:46Z",
+  "collected_at": "2026-07-27T11:24:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "autofz通过分离控制平面和数据平面，为LLM集成提供了灵活架构，使LLM能优化模糊测试的决策过程。",
+      "LLM增强的autofz在种子选择、变异策略和路径探索上显著提升了测试效率和漏洞发现能力。",
+      "该设计理念可推广至其他自动化任务，如代码生成、调试和运维，展示了LLM作为通用控制平面的潜力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
