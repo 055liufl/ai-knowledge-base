@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-026",
+  "title": "MM-ShiftKV: Decode-Aware Prefill-Stage KV Selection for Multimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.22586",
+  "source_platform": "rss_ai_research",
+  "summary": "MM-ShiftKV 是一种针对多模态大语言模型（MLLMs）的预填充阶段键值（KV）缓存选择方法。在MLLMs推理中，KV缓存的内存占用随上下文长度线性增长，尤其是视觉token数量庞大，成为主要瓶颈。现有方法在预填充阶段基于统计估计KV重要性，隐含假设预填充时的查询能代表解码阶段的查询。MM-ShiftKV 提出了一种“解码感知”的预填充KV选择策略，通过引入解码阶段的查询分布信息来更准确地评估KV重要性，从而在保持模型性能的同时显著减少KV缓存大小。该方法在多个多模态基准测试上验证了有效性，实现了内存节省与推理效率的提升。这项研究值得关注，因为它直接解决了MLLMs部署中的关键内存效率问题，且方法具有创新性，通过跨阶段信息利用优化了KV缓存管理，对推动多模态AI的实际应用具有重要意义。",
+  "tags": [
+    "MLLM",
+    "KV Cache",
+    "Inference Optimization",
+    "Memory Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MM-ShiftKV 通过引入解码阶段的查询分布信息来指导预填充阶段的KV选择，打破了传统方法中预填充与解码阶段重要性假设不一致的局限。",
+      "该方法显著减少了多模态大语言模型推理中的KV缓存内存占用，同时保持了模型性能，适用于资源受限的部署场景。",
+      "MM-ShiftKV 在多个多模态基准测试中验证了其有效性，展示了跨阶段信息利用在KV缓存优化中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-057",
+  "title": "PTStore (Prefix Tensor Store): Distributed Prefix Caching and Replication for High Throughput Inference Serving",
+  "source_url": "https://arxiv.org/abs/2607.22648",
+  "source_platform": "rss_ai_research",
+  "summary": "PTStore（前缀张量存储）是一种受内容分发网络（CDN）客户端缓存设计启发的分布式前缀缓存与复制系统，旨在提升大语言模型推理服务的高吞吐量。当前最先进的推理加速技术通过复用KV缓存前缀来减少计算开销，但面临两个关键挑战：一是热门前缀张量集中在少数服务器上导致负载不均衡，二是跨服务器访问KV缓存的延迟较高。PTStore通过将可复用的KV缓存前缀视为“张量对象”，在分布式推理集群中智能地分发和复制这些热门张量，使得请求能够就近获取缓存数据，从而显著降低访问延迟。同时，系统通过复制策略将热门前缀分散到多台服务器，有效缓解了热点服务器的负载压力，提升了整体集群的吞吐能力和资源利用率。该工作将CDN中的缓存分发思想引入LLM推理场景，为大规模部署高效推理服务提供了新的系统架构思路。",
+  "tags": [
+    "LLM",
+    "Inference Serving",
+    "Distributed Caching",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:42:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTStore将CDN的缓存分发与复制机制应用于LLM推理的KV缓存前缀管理，解决了热门前缀导致的负载不均衡问题。",
+      "通过分布式复制热门张量，系统降低了跨服务器访问KV缓存的延迟，从而提升推理服务的整体吞吐量。",
+      "该工作为大规模LLM推理集群的缓存架构设计提供了新的视角，有望推动更高效的推理基础设施发展。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

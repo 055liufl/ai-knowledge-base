@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260728-099",
+  "title": "ConsistencyGate: Preventing Memory Contamination in LLM Agents via Self-Consistency Admission Control",
+  "source_url": "https://arxiv.org/abs/2607.22962",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为ConsistencyGate的机制，旨在解决LLM代理在多轮交互中因记忆污染导致的错误累积问题。LLM代理在长期运行中会将事实存储于外部记忆，并在后续推理中重复使用。若某一步骤产生了幻觉（即错误事实），该错误会作为前提持续污染后续所有推理步骤，形成记忆污染。现有记忆管理方法主要关注检索和容量优化，但未在写入时验证事实的正确性。ConsistencyGate通过自一致性准入控制，在事实写入记忆前进行验证，确保只有与代理自身推理一致的事实被存储，从而防止错误传播。该方法基于自一致性原则，利用代理自身的推理能力对候选事实进行多角度验证，显著提升了长期推理的可靠性。实验表明，该机制在多个复杂任务中有效降低了错误累积，提升了最终答案的准确性。该研究为LLM代理的记忆管理提供了新的思路，具有重要的实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory Management",
+    "Self-Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:45:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆污染是LLM代理长期推理中的关键失败模式，现有方法无法在写入时验证事实正确性。",
+      "ConsistencyGate通过自一致性准入控制，在事实写入前进行验证，有效防止错误传播。",
+      "该方法利用代理自身的推理能力进行多角度验证，无需外部知识库或人工标注。",
+      "实验证明该机制能显著提升长期推理的准确性，为记忆管理提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

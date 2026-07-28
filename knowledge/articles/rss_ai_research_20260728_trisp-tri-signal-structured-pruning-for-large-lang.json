@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260728-027",
+  "title": "TriSP: Tri-Signal Structured Pruning for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.22587",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为TriSP（Tri-Signal Structured Pruning）的新型结构化剪枝方法，用于压缩大型语言模型（LLMs）。该方法通过融合三种信号——梯度、激活值和权重幅度——来更准确地评估注意力头和MLP神经元的重要性，从而在保持模型性能的同时显著减少参数数量和计算成本。与现有依赖单一信号（如仅梯度或仅权重）的方法相比，TriSP在多个基准测试中展示了更好的剪枝效果，特别是在高压缩率下仍能维持较高的任务精度。该研究解决了LLM部署中的内存和计算瓶颈，为在资源受限环境中高效运行大模型提供了实用方案，值得关注。",
+  "tags": [
+    "LLM",
+    "Model Compression",
+    "Structured Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TriSP通过结合梯度、激活值和权重三种信号进行重要性评估，比单一信号方法更鲁棒。",
+      "该方法在注意力头和MLP神经元级别进行结构化剪枝，可直接生成可在标准硬件上高效运行的紧凑模型。",
+      "实验表明，在高压缩率下TriSP仍能保持较好的任务性能，优于现有剪枝技术。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

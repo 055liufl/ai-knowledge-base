@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-025",
+  "title": "The Scaffold Effect in Coding Agents: Harness Choice as a Hidden Variable in Coding-Agent Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.22585",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《The Scaffold Effect in Coding Agents: Harness Choice as a Hidden Variable in Coding-Agent Evaluation》揭示了当前编程智能体公开排行榜的一个关键缺陷：排名通常只关注模型名称和通过率，而忽略了周围脚手架（scaffold）——即负责调用工具、管理上下文和决定何时停止的框架——的影响。当脚手架固定时，模型间比较是有效的；但一旦脚手架变化，性能和效率的差异就会混淆模型与脚手架各自的作用。研究者在三个开源脚手架（Goose、OpenHands、SWE-agent）上评估了Qwen 3.6 Plus和MiniMax M2.5两个模型，发现同一模型在不同脚手架下的表现差异显著，甚至可能超过不同模型在同一脚手架下的差异。这一发现对编程智能体的评估标准提出了重要修正，强调必须将脚手架作为隐藏变量纳入考量，否则排行榜结果可能误导实际选型。该工作对于构建更公平、可复现的智能体基准测试具有重要指导意义，值得开发者、研究者以及平台运营者关注。",
+  "tags": [
+    "Coding Agent",
+    "Evaluation",
+    "Scaffold",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编程智能体的性能不仅取决于模型，还高度依赖于脚手架（scaffold）的选择，后者常被排行榜忽略。",
+      "同一模型在不同脚手架下的表现差异可能超过不同模型在同一脚手架下的差异，说明脚手架是评估中的隐藏变量。",
+      "当前公开排行榜的排名方式（仅按模型名和通过率）可能产生误导，需要将脚手架信息标准化并纳入比较。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

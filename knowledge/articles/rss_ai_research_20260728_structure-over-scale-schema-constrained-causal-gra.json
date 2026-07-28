@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260728-030",
+  "title": "Structure Over Scale: Schema-Constrained Causal Graphs for RAG",
+  "source_url": "https://arxiv.org/abs/2607.22592",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HCG-RAG（Hierarchical Causal Graph RAG）的新型检索增强生成方法，旨在解决现有 GraphRAG 系统因无差别提取实体和关系而导致图规模随语料库长度线性增长、构建成本高且与查询推理需求脱节的问题。HCG-RAG 的核心创新在于用模式约束的因果图替代开放式提取：通过自动化流水线，从文档中提取符合预定义模式的因果结构（如原因-结果关系），并构建分层因果图，从而在保持结构化知识的同时大幅压缩图规模。该方法不仅降低了构建成本，还使检索更聚焦于查询所需的因果推理，提升了答案的准确性和可解释性。实验表明，HCG-RAG 在多个因果推理基准上优于传统 GraphRAG 和纯文本 RAG 方法。这项工作值得关注，因为它将因果推理与 RAG 结合，为知识密集型任务提供了一种更高效、更精准的结构化检索范式，尤其适用于需要逻辑推理的场景（如医疗诊断、法律分析）。",
+  "tags": [
+    "GraphRAG",
+    "Causal Graph",
+    "Retrieval-Augmented Generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HCG-RAG 通过模式约束的因果图替代开放式实体关系提取，显著降低图构建成本并提升检索效率。",
+      "分层因果图结构使系统能够聚焦于查询所需的因果推理路径，而非全量知识，从而增强答案的准确性和可解释性。",
+      "该方法在因果推理基准上优于传统 GraphRAG 和纯文本 RAG，展示了结构化因果知识在 RAG 中的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

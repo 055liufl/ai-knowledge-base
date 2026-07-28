@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-042",
+  "title": "Opti-Q: A Constraint-Based Optimization Framework for Multi-LLM Question Planning",
+  "source_url": "https://arxiv.org/abs/2607.22621",
+  "source_platform": "rss_ai_research",
+  "summary": "OPTI-Q 是一个基于约束优化的多大型语言模型（LLM）问题规划框架，旨在解决预算受限部署中的非确定性和异构资源特征（成本、延迟和能耗）问题。受数据库查询优化器启发，OPTI-Q 采用“先规划后执行”的范式，将 LLM 调用建模为执行有向无环图（DAG）中的物理算子，并为每个问题搜索最优执行计划。该框架通过约束优化方法，在满足预算和性能约束的前提下，平衡多个 LLM 的调用策略，从而提升问答系统的效率和经济性。这项工作值得关注，因为它将数据库领域的经典优化思想引入 LLM 编排，为多模型协同提供了系统化的解决方案，有助于降低部署成本并提高资源利用率，尤其适用于需要权衡成本、延迟和准确率的实际应用场景。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Multi-LLM Orchestration",
+    "Question Answering"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:40:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OPTI-Q 将 LLM 调用视为执行 DAG 中的物理算子，通过约束优化实现多模型编排的全局最优。",
+      "该框架借鉴数据库成本优化器，支持在成本、延迟和能耗等异构资源约束下进行计划搜索。",
+      "先规划后执行的范式有效应对 LLM 的非确定性，提升预算受限部署的可靠性和效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260728-104",
+  "title": "Compiler-Grounded Hierarchical Diagnosis for LLM-Based Triton Kernel Optimization",
+  "source_url": "https://arxiv.org/abs/2607.23089",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于编译器接地层次诊断的方法，用于优化基于LLM的Triton内核。传统方法依赖编译反馈和性能指标等表面信号，只能检测内核速度慢，但无法解释后端编译器为何未能实现有利优化，特别是在NPU等新兴加速器上。作者将内核优化形式化为跨层诊断问题，通过编译器接地方法，从编译器的内部表示和优化过程入手，逐层分析性能瓶颈。该方法利用LLM自动生成和优化内核，同时结合编译器层次信息进行诊断，从而更有效地指导优化。这项工作值得关注，因为它解决了LLM驱动内核优化中缺乏可解释性的关键问题，为提升AI加速器上的计算效率提供了新思路，尤其对NPU等新兴硬件具有重要实践意义。",
+  "tags": [
+    "LLM",
+    "Compiler",
+    "Kernel Optimization",
+    "Triton",
+    "NPU"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM内核优化方法依赖表面信号，无法解释编译器优化失败的根本原因。",
+      "提出编译器接地层次诊断框架，通过分析编译器内部表示逐层定位性能瓶颈。",
+      "该方法可提升LLM在NPU等新兴加速器上自动生成和优化内核的效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

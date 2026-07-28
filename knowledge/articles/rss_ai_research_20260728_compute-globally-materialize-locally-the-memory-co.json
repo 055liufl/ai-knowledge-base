@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-129",
+  "title": "Compute Globally, Materialize Locally: The Memory Contract of Sparse Event-KV",
+  "source_url": "https://arxiv.org/abs/2607.23693",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一个名为“稀疏事件-KV”的内存契约概念，旨在解决长时域智能体在复用KV缓存作为记忆时面临的关键问题：当产生某个事件的观测被丢弃后，该事件是否仍然具有信息价值。作者通过实验发现，在智能体历史中省略一个早期观测，会导致后续性能显著下降，表明现有缓存策略（如驱逐和情景记忆）的假设存在缺陷。论文的核心贡献是提出了一种全局计算与本地物化相结合的方法，即“全局计算，本地物化”，以在保持记忆有效性的同时优化存储和计算效率。这项工作对于理解大型语言模型在长时域任务中的记忆机制具有重要意义，挑战了当前缓存策略的直觉，并为设计更鲁棒的智能体系统提供了理论基础。其创新性在于直接测试了记忆保留的前提条件，并提出了新的内存管理范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:48:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有KV缓存驱逐策略假设保留的事件在观测丢失后仍具信息价值，但实验表明省略早期观测会显著降低智能体性能，挑战了这一假设。",
+      "论文提出“全局计算，本地物化”的内存契约，通过全局视角计算事件重要性，并在本地物理存储中实现，以平衡记忆有效性与存储效率。",
+      "该研究揭示了长时域智能体记忆管理中的关键漏洞，为设计更鲁棒的缓存策略和情景记忆系统提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

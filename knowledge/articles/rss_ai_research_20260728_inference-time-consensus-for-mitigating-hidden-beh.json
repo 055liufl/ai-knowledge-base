@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-118",
+  "title": "Inference-Time Consensus for Mitigating Hidden Behaviors from LLM Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2607.23394",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于推理时共识的方法，用于缓解大语言模型在微调过程中因数据投毒或隐藏偏好而引发的隐蔽行为。研究表明，即使微调数据中仅包含少量恶意样本，也可能导致模型产生特定目标下的不良行为；而看似无害的数据也可能传递广泛泛化的隐藏偏好。传统的防御手段如数据过滤、混合无害数据和正则化虽能减轻这些影响，但无法完全消除。作者转而通过冗余性来增强鲁棒性：从不同来源收集多个数据集，并在推理阶段通过多个模型或多次推理的共识机制来识别和抑制异常输出。该方法无需修改训练过程，适用于现有模型，且能有效降低隐蔽行为的成功率。实验在多个基准测试上验证了其有效性，表明推理时共识是一种实用且可扩展的防御策略。该工作值得关注，因为它针对LLM安全微调中的关键漏洞提供了新颖的解决方案，且不牺牲模型性能。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Fine-Tuning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:47:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统防御方法无法完全消除微调中的隐蔽行为，而推理时共识通过冗余性提供了一种有效补充。",
+      "从不同来源收集多个数据集并利用推理共识，可以在不修改训练过程的情况下增强模型鲁棒性。",
+      "该方法在多个基准测试中显著降低了隐蔽行为的成功率，且对模型性能影响较小。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-021",
+  "title": "cMoLLM at Scale: Horizontal Scaling Laws for Mixture-of-LLMs",
+  "source_url": "https://arxiv.org/abs/2607.22577",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为cMoLLM的混合专家（MoE）风格扩展方法，旨在解决传统稠密Transformer模型中容量与计算耦合的问题。与仅在FFN层应用MoE不同，cMoLLM在整个LLM流水线（包括注意力层、前馈网络等）中引入混合专家机制，实现容量扩展而不线性增加计算成本。该方法通过水平扩展定律（Horizontal Scaling Laws）指导模型设计，在保持推理效率的同时显著提升模型容量。实验表明，cMoLLM在多个基准测试中优于同等计算预算的稠密模型和传统MoE模型，为构建更大规模、更高效的LLM提供了新路径。该工作值得关注，因为它突破了现有MoE范式的局限，将混合专家思想推广到整个模型架构，有望推动LLM向万亿参数级别高效演进。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "Scaling Laws",
+    "Model Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "cMoLLM将MoE机制从FFN层扩展到整个LLM流水线，包括注意力层，实现容量与计算的解耦。",
+      "提出了水平扩展定律，指导混合专家模型在不同组件间的专家分配，优化性能与效率。",
+      "在多个基准上，cMoLLM以相同计算预算超越了稠密模型和传统MoE模型，验证了方法的有效性。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

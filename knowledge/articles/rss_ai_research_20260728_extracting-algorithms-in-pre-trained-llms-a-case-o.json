@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-056",
+  "title": "Extracting Algorithms in Pre-trained LLMs: A Case on Hidden Markov Models",
+  "source_url": "https://arxiv.org/abs/2607.22646",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种三阶段流水线方法，用于从预训练的大型语言模型（LLMs）中提取其内部算法，特别是针对隐马尔可夫模型（HMM）的上下文学习（ICL）能力。研究首先通过实验比较LLM行为与多种候选算法（如贝叶斯更新、梯度下降等）的匹配度，然后利用激活分析技术定位模型内部与算法相关的神经表征，最后通过因果干预验证提取算法的有效性。这项工作首次将LLM的ICL能力与内部激活联系起来，为理解LLM的推理机制提供了可解释性工具，并可能推动更高效的模型设计和调试。其价值在于揭示了LLM在序列预测任务中可能使用的具体计算策略，对AI安全、模型透明度和算法优化具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "In-Context Learning",
+    "Hidden Markov Models"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:42:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种三阶段流水线，结合行为比较、激活分析和因果干预，首次从LLM内部提取出HMM上下文学习的具体算法。",
+      "实验表明LLM在HMM预测任务中可能采用类似贝叶斯更新的算法，而非简单的模式匹配或梯度下降。",
+      "该方法为理解LLM的推理机制提供了可解释性框架，有助于提升模型透明度和安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

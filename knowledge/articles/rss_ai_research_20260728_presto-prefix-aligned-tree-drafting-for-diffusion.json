@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260728-048",
+  "title": "PRESTO: Prefix-Aligned Tree Drafting for Diffusion Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2607.22634",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PRESTO，一种基于前缀对齐树草图的扩散推测解码方法。扩散大语言模型（dLLMs）作为自回归（AR）LLMs 的有前途替代方案，能够并行生成 token，使其成为推测解码（SD）的理想草稿模型，单次前向传播即可生成整个 token 块。然而，现有基于扩散的草稿方法依赖线性草稿，尽管 dLLMs 在不同位置发射多个候选 token，导致巨大的组合空间。PRESTO 通过前缀对齐的树结构，有效利用 dLLMs 的多候选输出，在推测解码中实现更高效的草稿生成，显著提升解码速度。该方法在多个基准测试上验证了其有效性，为加速 LLM 推理提供了新的思路。",
+  "tags": [
+    "Diffusion LLM",
+    "Speculative Decoding",
+    "Inference Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:41:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRESTO 利用扩散 LLM 的多候选 token 输出，通过前缀对齐树结构替代线性草稿，显著提升推测解码效率。",
+      "该方法有效解决了扩散模型在推测解码中因多候选导致的组合爆炸问题，实现了更快的推理速度。",
+      "实验表明，PRESTO 在多个基准上优于现有扩散草稿方法，为加速 LLM 推理提供了实用方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

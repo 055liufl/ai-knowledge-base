@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-127",
+  "title": "SpecAHD: Localize to Specialize for Automated Heuristic Design in Large-Scale Routing Problems",
+  "source_url": "https://arxiv.org/abs/2607.23676",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SpecAHD，一种基于大语言模型（LLM）的自动化启发式设计（AHD）框架，专门针对大规模路径规划问题。传统 AHD 方法通常在整个实例或固定求解器组件上评估可执行程序，但在大规模问题中，局部重构虽能减小每个优化任务的规模，但同一当前解内的修复区域结构差异显著，导致单一构造规则难以兼顾。SpecAHD 采用耦合双层框架，通过“局部化以专门化”的策略，先利用 LLM 分析问题实例并生成针对不同局部区域的专门化启发式规则，再在全局层面协调这些规则以提升整体求解效率。该方法在多个大规模路径规划基准上取得了显著性能提升，展示了 LLM 在自动化算法设计中的潜力。值得关注的是，它解决了传统 AHD 在异构局部结构上的适应性瓶颈，为复杂组合优化问题的自动化求解提供了新思路。",
+  "tags": [
+    "LLM",
+    "Automated Heuristic Design",
+    "Routing Problems",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:47:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SpecAHD 通过耦合双层框架，利用 LLM 为大规模路径规划问题中的不同局部区域生成专门化启发式规则，克服了单一规则难以适应异构结构的局限。",
+      "该方法在多个大规模路径规划基准上显著提升了求解效率，展示了 LLM 在自动化算法设计中的实用价值。",
+      "SpecAHD 的局部化策略有效减小了每个优化任务的规模，同时通过全局协调保持了整体解的质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

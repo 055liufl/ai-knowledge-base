@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-010",
+  "title": "Loss-Aware Feature-Map Pruning in Convolutional Neural Networks Using Multi-Armed Bandits",
+  "source_url": "https://arxiv.org/abs/2607.22564",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于多臂老虎机（Multi-Armed Bandits）的损失感知特征图剪枝框架，用于卷积神经网络（CNN）的结构化剪枝。传统剪枝方法通常基于权重大小或梯度信息，但忽略了剪枝对最终损失函数的直接影响。该框架将每个候选特征图视为一个“臂”，通过在线学习的方式动态选择要剪枝的特征图，以最小化剪枝带来的损失增量。具体地，在每次迭代中，模型会临时屏蔽一个特征图，并观察其对损失的影响，从而更新各臂的奖励估计。这种方法不仅实现了结构化剪枝（移除整个输出通道及其对应的卷积核），还通过损失感知机制保证了剪枝后的模型精度。实验表明，该方法在多个基准数据集（如CIFAR-10、ImageNet）上，在减少计算量和参数量的同时，保持了与原始模型相近的准确率。该工作为模型压缩提供了一种新的自适应、低开销的剪枝策略，尤其适用于资源受限的部署场景。",
+  "tags": [
+    "CNN",
+    "Model Compression",
+    "Pruning",
+    "Multi-Armed Bandits"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:38:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多臂老虎机引入CNN特征图剪枝，实现了在线、损失感知的剪枝决策，避免了传统剪枝方法对全局重要性排序的依赖。",
+      "结构化剪枝直接移除整个输出通道及其卷积核，相比非结构化剪枝更利于硬件加速和模型部署。",
+      "通过临时屏蔽特征图并观察损失变化，该方法能够自适应地平衡剪枝率与模型精度，无需人工设定阈值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-117",
+  "title": "Key-Interval A*: Accelerating Grid Pathfinding via Structural Abstraction",
+  "source_url": "https://arxiv.org/abs/2607.23393",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Key-Interval A* (KIA*) 的最优路径规划算法，专门针对 4-连通网格环境。现有精确方法在减少在线搜索方面有所进展，但往往要么保留细粒度的搜索状态，要么需要大量的预处理。KIA* 通过轻量级预处理，构建并搜索自由空间的紧凑区间级抽象，从而克服了这些限制。该算法使用“区间”来表示自由空间，即最大连续的可通行单元格序列。通过这种结构抽象，KIA* 能够显著减少搜索空间，同时保证找到最优路径。该研究在路径规划领域具有重要价值，因为它提供了一种在保持最优性的同时提升搜索效率的新方法，尤其适用于游戏、机器人导航等需要实时响应的应用场景。其创新性在于将区间抽象与 A* 算法结合，实现了轻量级预处理与高效在线搜索的平衡。",
+  "tags": [
+    "Path Planning",
+    "A*",
+    "Grid Pathfinding",
+    "Abstraction"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:47:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KIA* 通过区间级抽象替代细粒度网格状态，大幅减少搜索空间，同时保持最优性。",
+      "轻量级预处理方法使得算法易于部署，无需大量离线计算资源。",
+      "该算法在 4-连通网格路径规划中，相比传统 A* 及其变体，在搜索效率上有显著提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

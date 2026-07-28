@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260728-017",
+  "title": "Schema-Aware Localisation (SAL): Live Schema Grounding and Hallucination Validation for Oracle NL2SQL",
+  "source_url": "https://arxiv.org/abs/2607.22572",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Schema-Aware Localisation (SAL) 的方法，旨在解决大型语言模型在将自然语言转换为 Oracle SQL 时常见的模式接地失败和幻觉问题。在真实的企业级 Oracle 数据库中，LLM 经常生成包含虚构列名、别名或不符合方言语法的 SQL，导致执行时出现 ORA-00904 无效标识符错误。SAL 通过实时模式接地和幻觉验证机制，确保生成的 SQL 仅使用数据库中实际存在的表和列，并符合 Oracle 的方言规范。该方法通过将数据库模式信息动态注入到提示中，并在生成过程中进行验证，显著提高了 NL2SQL 的准确性和可靠性。这项工作对于企业级数据库的自然语言查询接口开发具有重要意义，因为它直接解决了实际部署中的关键瓶颈——模式不匹配和语法错误。SAL 的创新之处在于其轻量级、实时性，并且不需要对模型进行微调，使其易于集成到现有系统中。",
+  "tags": [
+    "NL2SQL",
+    "LLM",
+    "Oracle",
+    "Schema Grounding",
+    "Hallucination"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在生成 Oracle SQL 时的主要失败原因是模式接地缺失，导致虚构列名和方言错误。",
+      "SAL 通过实时注入数据库模式信息和生成时验证，有效消除了 ORA-00904 等执行错误。",
+      "该方法无需微调模型，是一种轻量级、可集成的解决方案，适用于企业级数据库。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

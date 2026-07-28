@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260728-063",
+  "title": "EventOD: Event-Aware OD Flow Generation via LLM-Guided Semantic Modulation",
+  "source_url": "https://arxiv.org/abs/2607.22655",
+  "source_platform": "rss_ai_research",
+  "summary": "EventOD 是一种事件自适应的 OD 流生成框架，旨在解决极端事件（如自然灾害、大型活动）下城市交通起讫点（OD）流量估计的难题。传统深度 OD 模型在常规移动模式上表现良好，但突发事件会迅速改变区域功能和人口活动，导致模型性能下降。由于事件期间监督数据有限，为每个事件重新训练生成器不切实际。EventOD 通过引入大语言模型（LLM）引导的语义调制，利用 LLM 对事件描述的语义理解，动态调整预训练生成器的参数或特征，从而在不重新训练的情况下适应新事件。该框架结合了事件语义嵌入、条件生成和迁移学习，实现了对突发事件下 OD 流的高效、准确生成。这项工作值得关注，因为它解决了城市计算和交通领域的关键挑战，即如何在数据稀缺的极端事件下保持模型鲁棒性，同时展示了 LLM 在时空数据生成中的新应用范式，具有重要的实际应用价值，如灾害响应和城市韧性规划。",
+  "tags": [
+    "LLM",
+    "OD Flow",
+    "Event Adaptation",
+    "Urban Computing",
+    "Semantic Modulation"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:42:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EventOD 利用 LLM 理解事件语义，动态调制预训练 OD 生成模型，无需为每个事件重新训练，解决了事件监督数据稀缺的问题。",
+      "该方法在极端事件下显著优于传统深度 OD 模型，展示了 LLM 引导的语义调制在时空数据生成中的有效性。",
+      "框架具有通用性，可扩展到其他受事件影响的时空预测任务，如交通流量、人口移动等。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

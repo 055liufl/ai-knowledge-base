@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-041",
+  "title": "DynaResize: Runtime GPU Reallocation for Disaggregated LLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2607.22614",
+  "source_platform": "rss_ai_research",
+  "summary": "DynaResize 是一种用于解耦式 LLM 后训练阶段的运行时 GPU 重分配系统。在基于强化学习的 LLM 后训练中，Rollout（推理采样）和 Training（训练）通常被分配到不同的 GPU 资源上，但静态的 GPU 划分策略在面对长尾分布的 Rollout 延迟时，会导致严重的流水线气泡（pipeline bubbles），即部分 GPU 空闲等待，造成资源浪费和训练效率下降。DynaResize 通过动态地在 Rollout 和 Training 阶段之间切换 GPU，以平衡各阶段的执行时间，同时不改变强化学习原有的语义。该系统将 GPU 重分配过程分解为细粒度的操作，从而实现了高效、低开销的资源调度。该工作针对 LLM 后训练中资源利用率低的关键痛点，提出了一种创新的运行时优化方案，具有显著的实际应用价值。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "GPU调度",
+    "分布式训练"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:40:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态 GPU 划分在 LLM 后训练中因 Rollout 延迟长尾分布导致严重流水线气泡，DynaResize 通过动态重分配 GPU 资源来平衡阶段执行时间。",
+      "DynaResize 将 GPU 重分配分解为细粒度操作，在保持 RL 语义不变的前提下实现高效调度。",
+      "该方法直接提升了 LLM 后训练阶段的资源利用率和吞吐量，对大规模 RLHF 训练具有重要优化意义。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

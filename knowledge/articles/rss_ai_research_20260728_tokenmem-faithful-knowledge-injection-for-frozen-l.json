@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-044",
+  "title": "TokenMem: Faithful Knowledge Injection for Frozen LLMs",
+  "source_url": "https://arxiv.org/abs/2607.22625",
+  "source_platform": "rss_ai_research",
+  "summary": "TokenMem 是一种轻量级记忆系统，旨在解决检索增强生成（RAG）中常见的知识冲突问题。传统 RAG 方法将外部知识注入 LLM 时，检索到的信息可能与模型的参数记忆发生冲突，导致不可预测的输出。TokenMem 通过一个专用的交叉注意力通道将知识注入冻结的 LLM，从而避免与参数记忆在共享自注意力路径中的竞争。这种方法无需微调模型，保持了模型的原始能力，同时提高了知识注入的忠实度和可靠性。该研究来自 arXiv 预印本，展示了在保持模型冻结状态下有效整合外部知识的创新思路，对于提升 RAG 系统的稳定性和准确性具有重要意义。TokenMem 的设计轻量且高效，适用于需要动态知识更新的场景，如实时问答、知识密集型任务等。其核心贡献在于通过架构创新解决了知识冲突这一关键瓶颈，为未来 LLM 与外部知识源的融合提供了新方向。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Knowledge Injection",
+    "Cross-Attention"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:41:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TokenMem 通过专用交叉注意力通道注入知识，避免了与参数记忆的竞争，解决了 RAG 中的知识冲突问题。",
+      "该方法无需微调冻结的 LLM，保持了模型的原始能力，同时提高了知识注入的忠实度。",
+      "轻量级设计使得 TokenMem 适用于动态知识更新场景，如实时问答和知识密集型任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

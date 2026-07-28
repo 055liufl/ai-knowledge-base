@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260728-014",
+  "title": "The Control Plane Was the Point: Revisiting autofz in the LLM Era",
+  "source_url": "https://yfu.tw/blog/en/autofz-revisited/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文回顾了作者在2018年开发的自动化模糊测试工具autofz，并探讨了在LLM时代其设计理念的重新审视。autofz的核心创新在于将控制平面（control plane）与数据平面（data plane）分离，通过一个中央控制器来协调多个模糊测试实例，从而实现了高效的并行测试和资源管理。在LLM时代，这一设计理念被证明具有前瞻性，因为现代LLM应用（如代码生成、智能代理）同样需要强大的控制平面来管理复杂的任务流程、上下文切换和错误恢复。文章指出，autofz的控制平面思想可以应用于LLM系统的构建，例如通过中央控制器来协调多个LLM调用、管理对话状态、处理工具调用等。作者认为，控制平面是构建可靠、可扩展的LLM应用的关键，而不仅仅是关注模型本身。本文值得关注，因为它提供了一个独特的视角，将传统的软件测试架构思想与新兴的LLM技术相结合，为LLM应用开发提供了实用的设计模式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "fuzzing",
+    "control plane"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:22Z",
+  "collected_at": "2026-07-28T10:37:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "autofz的控制平面与数据平面分离设计在LLM时代具有重要借鉴意义，可用于管理复杂的LLM任务流程。",
+      "LLM应用开发应重视控制平面的构建，以协调多个模型调用、上下文管理和错误恢复。",
+      "传统的软件测试架构思想（如模糊测试）可以启发LLM系统的可靠性和可扩展性设计。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

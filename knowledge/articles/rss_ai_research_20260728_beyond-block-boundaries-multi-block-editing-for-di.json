@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-067",
+  "title": "Beyond Block Boundaries: Multi-Block Editing for Diffusion Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.22663",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对扩散大语言模型（dLLMs）的多块编辑方法，旨在解决现有块扩散（Block Diffusion）范式中因固定大小块边界导致的上下文缺失问题。在传统块扩散模型中，文本以固定大小的块为单位进行解码，虽然保持了块内并行生成并控制了注意力计算的二次成本，但存在结构性缺陷：块末尾的标记无法访问未来跨块上下文，且一旦块被最终确定，其不确定性无法被后续块修正。该方法通过引入跨块编辑机制，允许在生成过程中动态调整已生成块的内容，从而增强模型对长距离依赖的建模能力。实验表明，该方法在多个文本生成任务上显著提升了生成质量，特别是在需要全局一致性的场景中（如故事生成、长文档摘要）。该工作为扩散语言模型在复杂文本生成任务中的应用提供了新的优化方向，具有重要的理论价值和实践潜力。",
+  "tags": [
+    "Diffusion Model",
+    "LLM",
+    "Text Generation",
+    "Block Diffusion"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:42:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多块编辑方法打破了传统块扩散中固定块边界的限制，允许跨块上下文交互，提升了长文本生成的连贯性。",
+      "该方法通过动态修正已生成块的内容，解决了块扩散模型中因块独立生成导致的全局不一致问题。",
+      "实验验证了该方法在需要长距离依赖的任务（如故事生成、长文档摘要）上显著优于现有块扩散模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

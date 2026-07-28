@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-015",
+  "title": "Reference Feature Atlases for Mechanistic Auditing of Language Models",
+  "source_url": "https://arxiv.org/abs/2607.22570",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于语言模型机制审计的参考特征图谱方法。传统上，审计一个新语言模型需要从头开始重新学习和解释其内部特征，这既耗时又缺乏可迁移性。该研究通过构建一个稀疏特征库（参考特征图谱），该图谱在参考模型面板上训练一次，然后通过仅拟合一个线性解码器即可复用于新的目标模型。这种方法提供了两种互补的视图：图谱通道在已解释的参考特征上读取目标模型，从而在不同模型之间提供稳定的坐标系统；而重映射通道则揭示目标模型特有的特征。该工作显著降低了审计新语言模型的成本，提高了可解释性研究的可迁移性和效率，对于理解和验证语言模型的行为具有重要意义。",
+  "tags": [
+    "LLM",
+    "Mechanistic Interpretability",
+    "Sparse Features",
+    "Model Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:38:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过构建一次参考特征图谱并复用，避免了为每个新模型从头审计的高昂成本。",
+      "线性解码器拟合的方式使得特征迁移高效且稳定，支持跨模型比较。",
+      "该方法提供了两种互补视图，兼顾了通用特征与模型特有特征的发现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

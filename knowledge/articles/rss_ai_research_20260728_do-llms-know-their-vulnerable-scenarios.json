@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-121",
+  "title": "Do LLMs Know Their Vulnerable Scenarios?",
+  "source_url": "https://arxiv.org/abs/2607.23496",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了大型语言模型（LLMs）是否能够识别自身易受攻击的场景。尽管安全对齐的LLMs被训练为拒绝有害请求，但在特定场景下嵌入相同请求可能绕过其安全机制。现有红队方法通过观察攻击结果来经验性地识别有效场景，但为何特定场景会削弱拒绝能力在机制上仍不明确。同时，机械可解释性研究已描述了拒绝方向和越狱机制，但缺乏对场景级脆弱性的理解。本文提出了一种新方法，通过分析模型内部表示来预测哪些场景更容易导致安全机制失效，从而为LLM安全评估和防御提供新视角。该研究结合了红队测试和机械可解释性，具有重要的理论和实践价值。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Red-teaming",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:47:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种基于模型内部表示预测场景级脆弱性的方法，超越了传统经验性红队测试。",
+      "揭示了特定场景如何通过影响模型内部拒绝方向来绕过安全对齐。",
+      "为LLM安全评估提供了可解释的框架，有助于设计更鲁棒的防御机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

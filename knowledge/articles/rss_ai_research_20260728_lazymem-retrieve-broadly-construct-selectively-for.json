@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-077",
+  "title": "LazyMem: Retrieve Broadly, Construct Selectively for Efficient Long-Term Agent Memory",
+  "source_url": "https://arxiv.org/abs/2607.22690",
+  "source_platform": "rss_ai_research",
+  "summary": "LazyMem 是一种针对大型语言模型（LLM）代理的长期记忆优化方法，旨在解决传统记忆机制中检索广泛性导致噪声过多、而写入时压缩又可能丢失未来查询所需细节的困境。该方法的核心创新在于将记忆构建过程推迟到查询时进行，即“延迟构建”。具体而言，LazyMem 使用一个轻量级的 4B 参数模型，在查询时动态地从原始对话历史中检索广泛信息，然后仅选择性地构建与当前查询最相关的记忆片段。这种设计避免了在写入时进行不可逆的压缩，同时通过查询时的选择性构建减少了噪声对下游推理的干扰。论文通过实验证明，LazyMem 在多个长期记忆任务上显著提升了代理的推理效率和准确性，尤其是在需要跨会话引用信息的场景中。该方法值得关注，因为它提供了一种新颖的“延迟处理”思路，平衡了记忆的完整性和推理的精确性，对于构建更高效、更智能的 LLM 代理系统具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:43:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LazyMem 通过将记忆构建推迟到查询时，解决了传统方法中检索广泛性与写入压缩之间的权衡问题。",
+      "使用轻量级 4B 模型在查询时动态选择性地构建记忆，既保留了原始对话的细节，又减少了噪声对推理的影响。",
+      "该方法在长期记忆任务上提升了代理的推理效率和准确性，尤其适用于需要跨会话引用信息的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

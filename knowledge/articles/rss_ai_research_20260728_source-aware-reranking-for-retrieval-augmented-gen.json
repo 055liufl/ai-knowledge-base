@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-024",
+  "title": "Source-Aware Reranking for Retrieval-Augmented Generation: A Reliability Prior Approach",
+  "source_url": "https://arxiv.org/abs/2607.22584",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对检索增强生成（RAG）管道的简单且可解释的改进方法：在检索排序中引入来源可靠性先验。传统的RAG仅依赖语义相似度对文档排序，忽略了文档来源的可信度差异。该方法为每个文档基于其来源类型分配一个先验权重λ(s)，并将检索得分重新计算为语义相似度与先验权重的乘积。实验表明，这种轻量级修改能显著提升生成质量，尤其是在处理混合来源（如权威学术论文与低质量网页）时。该工作为RAG系统的可靠性提升提供了实用思路，且无需复杂模型改动，易于集成到现有流程中。",
+  "tags": [
+    "RAG",
+    "Retrieval-Augmented Generation",
+    "Reliability",
+    "Reranking"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:39:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过引入来源可靠性先验，RAG检索排序可同时考虑语义相关性和来源可信度，提升生成质量。",
+      "该方法仅需修改检索得分计算方式，无需额外训练或复杂模型，易于部署和集成。",
+      "实验验证了在混合来源场景下，该先验加权策略能有效抑制低质量来源的负面影响。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

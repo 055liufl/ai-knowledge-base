@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260728-091",
+  "title": "What Can Be Enforced? A Theory of Certified Runtime Safety for Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2607.22868",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对使用工具的智能体（Tool-Using Agents）的运行时安全认证理论框架。核心贡献在于形式化定义了运行时防护栏（runtime guardrails）在不可逆工具调用前的执行保证，并系统性地分离了三个关键问题：策略状态的可表示性、裁判（judge）可观测的信息范围、以及干预是否改变未来行为。作者证明，相对于固定的预言机谓词，确定性门（deterministic gate）恰好能强制执行那些其寄存器模型可识别的非空安全策略；同时，当存在两个可递减计数器时，策略非平凡性（policy nontriviality）是不可判定的。该工作为智能体系统的运行时安全提供了严格的理论基础，有助于设计更可靠的防护机制，避免因工具误用导致的安全事故。值得关注的是，它首次将计算理论中的可判定性结果与智能体安全策略的强制执行联系起来，为后续研究提供了形式化分析工具。",
+  "tags": [
+    "Agent",
+    "Runtime Safety",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:44:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "运行时防护栏的保证能力受限于策略状态的可表示性和裁判的观测范围。",
+      "确定性门只能强制执行其寄存器模型可识别的非空安全策略。",
+      "在具有两个可递减计数器的模型中，策略非平凡性是不可判定的。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

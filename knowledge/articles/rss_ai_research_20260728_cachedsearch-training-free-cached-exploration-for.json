@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-107",
+  "title": "CachedSearch: Training-Free Cached Exploration for Test-Time Search in Video Diffusion",
+  "source_url": "https://arxiv.org/abs/2607.23159",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了视频扩散模型在测试时搜索中的效率问题。测试时搜索允许小模型通过多次采样来匹敌大模型性能，但计算成本增加2-10倍，且大部分候选样本被丢弃。作者提出CachedSearch方法，利用无训练缓存（training-free caching）技术，使每次采样加速2-3倍，同时保持近无损质量。核心挑战在于缓存可能破坏验证器对候选样本的排序，导致组合搜索不安全。论文首次系统研究了缓存对视频测试时搜索中候选排序的影响，并在Wan2.1-T2V-1.3B模型上使用自适应缓存进行了验证。该方法无需额外训练，直接适用于现有扩散模型，显著降低了测试时搜索的计算开销，为视频生成模型的实用化提供了重要优化方向。",
+  "tags": [
+    "Video Diffusion",
+    "Test-Time Search",
+    "Caching",
+    "Model Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:46:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时搜索通过多次采样提升小模型性能，但计算成本高，CachedSearch通过无训练缓存实现2-3倍加速且近无损质量",
+      "首次系统研究缓存对视频测试时搜索中候选排序的影响，发现自适应缓存可保持验证器排名",
+      "该方法无需额外训练，可直接应用于现有视频扩散模型，如Wan2.1-T2V-1.3B"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

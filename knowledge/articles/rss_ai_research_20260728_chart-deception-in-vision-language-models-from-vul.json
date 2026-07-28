@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260728-035",
+  "title": "Chart Deception in Vision-Language Models: From Vulnerability to Mitigation",
+  "source_url": "https://arxiv.org/abs/2607.22600",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究视觉语言模型（VLM）在图表理解中的脆弱性与防御策略。作者系统性地构建了包含截断坐标轴、倒置坐标轴、扭曲宽高比、不当编码和误导性颜色映射等五种常见欺骗性图表设计的数据集，并评估了多个主流VLM（如GPT-4V、LLaVA等）在这些欺骗性图表上的表现。实验发现，现有VLM对图表欺骗高度敏感，准确率显著下降，甚至产生错误解读。进一步分析表明，模型容易受到视觉线索的误导，而忽略数据本身的真实性。为此，作者提出了一种基于提示工程的防御方法，通过引入上下文感知的指令和视觉注意力引导，有效提升了模型对欺骗性图表的鲁棒性。该工作揭示了VLM在数据可视化理解中的安全风险，并为构建更可靠的图表分析系统提供了重要参考。值得关注的是，随着VLM在数据分析、商业智能等领域的应用日益广泛，确保其对图表欺骗的鲁棒性具有重要的实际意义。",
+  "tags": [
+    "VLM",
+    "Chart Understanding",
+    "Robustness",
+    "Deception",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:40:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM对图表欺骗（如截断坐标轴、扭曲比例）高度敏感，准确率显著下降，存在安全风险。",
+      "欺骗性图表设计可系统性地误导模型解读，而模型倾向于依赖视觉线索而非数据真实性。",
+      "基于上下文感知提示和视觉注意力引导的防御方法能有效提升模型鲁棒性。",
+      "该研究为构建可靠的数据可视化分析系统提供了重要方向，尤其适用于商业智能和自动化报告场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

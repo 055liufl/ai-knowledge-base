@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-053",
+  "title": "CRAFT: Learn the Schema, Execute the Plan",
+  "source_url": "https://arxiv.org/abs/2607.22642",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CRAFT的方法，旨在解决企业编码代理在将自然语言分析请求转换为可执行代码时面临的挑战。当前的主流方法是将完整的模式（schema）和工具文档注入到每个提示中，这导致了推理开销增加、模式演化复杂化以及多轮分析中的可靠性下降。CRAFT通过将稳定的模式知识和工具使用行为分离出来，学习模式并执行计划，从而提高了效率和可靠性。该方法通过预训练一个模式理解模块，使代理能够在不依赖大量上下文的情况下理解和操作API、模式和指标定义。实验表明，CRAFT在多个企业级数据集上显著降低了推理成本，同时保持了高准确性和鲁棒性。这项研究对于提升企业数据分析自动化的实用性和可扩展性具有重要意义，尤其适用于需要频繁更新模式或进行多轮交互的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Code Generation",
+    "Schema Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:41:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CRAFT通过分离模式学习和计划执行，减少了推理开销并提升了模式演化的灵活性。",
+      "该方法在多轮分析中表现出更高的可靠性，避免了传统方法中因上下文过长导致的错误。",
+      "预训练的模式理解模块使得代理能够更高效地处理企业级API和复杂指标定义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

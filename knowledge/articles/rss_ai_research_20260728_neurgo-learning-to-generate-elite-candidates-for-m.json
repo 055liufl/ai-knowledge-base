@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-119",
+  "title": "NeurGO: Learning to Generate Elite Candidates for Meta-Black-Box Expensive Optimization",
+  "source_url": "https://arxiv.org/abs/2607.23408",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了 NeurGO，一种用于元黑箱昂贵优化问题的新方法。在科学和工程领域，昂贵的黑箱优化普遍存在，函数评估成本高且预算有限。传统进化算法和元黑箱优化方法通常将大部分评估消耗在候选解选择上，往往在劣质解上浪费宝贵预算。尽管代理辅助进化和贝叶斯优化旨在通过代理模型减少评估，但它们在处理高维、非凸或噪声问题时仍面临挑战。NeurGO 通过生成精英候选解来直接提升优化效率，其核心思想是学习一个生成模型，该模型能够从历史优化轨迹中提取知识，并直接生成高质量候选解，从而减少对昂贵真实评估的依赖。该方法结合了深度学习和进化优化的优势，在多个基准测试和实际应用场景中展示了显著的性能提升，尤其适用于评估预算极度受限的场景。该工作值得关注，因为它为昂贵优化问题提供了一种新的范式，有望在超参数调优、材料设计、药物发现等领域产生重要影响。",
+  "tags": [
+    "MetaBBO",
+    "Expensive Optimization",
+    "Surrogate-Assisted Evolution",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:47:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NeurGO 通过生成模型直接产生精英候选解，显著减少了昂贵评估的浪费。",
+      "该方法从历史优化轨迹中学习，实现了跨任务的知识迁移和泛化。",
+      "在评估预算极度受限的场景下，NeurGO 相比传统方法和贝叶斯优化有显著性能提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

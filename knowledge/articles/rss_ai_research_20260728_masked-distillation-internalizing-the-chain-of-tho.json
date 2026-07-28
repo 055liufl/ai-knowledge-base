@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-045",
+  "title": "Masked Distillation: Internalizing the Chain-of-Thought in Language Models",
+  "source_url": "https://arxiv.org/abs/2607.22629",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“掩码蒸馏”（Masked Distillation）的新方法，旨在将大型推理模型（LRMs）中的思维链（Chain-of-Thought, CoT）过程内化到模型参数中，从而在推理时无需显式生成中间步骤。LRMs在生成最终答案前会产生冗长的中间推理步骤，这显著增加了延迟、内存使用和推理成本，但最终答案的正确性并不直接依赖于中间步骤的正确性，且步骤长度与问题复杂度无关。掩码蒸馏通过训练一个学生模型来模仿教师模型在CoT过程中的隐藏状态表示，但仅关注与最终答案相关的关键信息，从而在保持推理能力的同时大幅减少计算开销。该方法在数学推理、逻辑推理和常识推理等多个基准测试上取得了与原始LRMs相当的性能，同时将推理时间缩短了数倍。这项研究对于提升大语言模型的推理效率具有重要价值，尤其是在资源受限或对实时性要求高的应用场景中。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "Chain-of-Thought",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:41:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "掩码蒸馏通过内化思维链过程，显著减少了推理时的计算开销，同时保持了模型性能。",
+      "该方法揭示了最终答案正确性与中间步骤正确性之间的非因果性，为优化推理过程提供了新视角。",
+      "实验表明，掩码蒸馏在多种推理任务上均有效，且推理时间缩短数倍，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

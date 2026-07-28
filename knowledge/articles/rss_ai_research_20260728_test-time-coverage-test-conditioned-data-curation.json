@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260728-082",
+  "title": "Test-Time Coverage: Test-Conditioned Data Curation for Deployment-Aware Learning",
+  "source_url": "https://arxiv.org/abs/2607.22697",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TTCov（Test-Time Coverage）的新型数据筛选方法，旨在解决部署时 AI 系统训练数据与测试分布不匹配的问题。传统数据筛选方法通常基于训练侧标准（如数据多样性或难度）进行评分，而未能直接优化训练数据与部署测试分布的匹配度。TTCov 的创新之处在于，它在训练之前利用测试侧信息（即部署时的数据分布）来指导训练数据的筛选，而不是在推理阶段调整模型权重。具体而言，TTCov 通过计算候选数据与测试分布之间的覆盖度，选择那些最能代表测试分布的训练样本，从而提升模型在目标测试集上的泛化性能。该方法属于数据级预处理技术，不改变模型架构或训练过程，具有计算高效、部署友好的特点。这项工作值得关注，因为它提供了一种实用且高效的思路，将测试分布信息融入数据准备阶段，有望在模型部署前显著提升性能，尤其适用于数据池庞大、测试分布明确的场景（如自动驾驶、医疗影像等）。",
+  "tags": [
+    "Data Curation",
+    "Test-Time Adaptation",
+    "Distribution Shift",
+    "Deployment-Aware Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-28T10:35:24Z",
+  "collected_at": "2026-07-28T10:44:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TTCov 在训练前利用测试分布信息筛选数据，而非在推理时调整模型，避免了计算开销和延迟问题。",
+      "该方法直接优化训练数据与测试分布的覆盖度，比传统基于训练侧标准的方法更贴合部署需求。",
+      "TTCov 是一种数据级预处理技术，易于集成到现有训练流程中，具有较高的实用性和可扩展性。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}
