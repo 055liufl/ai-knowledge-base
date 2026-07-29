@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260729-043",
+  "title": "Less Data, Better Alignment: Data-Centric Multi-Evaluator Agreement for Preference Optimization",
+  "source_url": "https://arxiv.org/abs/2607.25136",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DMAPO（以数据为中心的多评估者一致性偏好优化）的方法，挑战了传统偏好优化研究中固定数据、变化训练目标的范式。DMAPO的核心思想是：通过从目标策略生成候选响应，并利用专门针对有用性、事实性和简洁性等维度的评估者进行评分，仅保留所有评估者一致同意的“高置信度”响应对作为训练数据。这种方法旨在用更少但更可靠的数据来优化语言模型，从而提升对齐效率。论文通过实验证明，即使只使用少量高质量数据，DMAPO也能在多个基准测试中达到或超越现有方法的表现。该工作值得关注，因为它强调了数据质量而非数量在偏好优化中的关键作用，提供了一种数据驱动的、可解释的对齐策略，可能降低训练成本并提高模型安全性。",
+  "tags": [
+    "Preference Optimization",
+    "Data-Centric AI",
+    "LLM Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:46:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DMAPO通过多评估者一致性筛选高置信度响应对，证明少量高质量数据可替代大规模低质量数据用于偏好优化。",
+      "该方法从目标策略生成候选响应，避免了离线数据分布不匹配问题，提升了在线学习的有效性。",
+      "专门化的评估者（如针对有用性、事实性、简洁性）比单一通用评估者更可靠，能提供更细粒度的对齐信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

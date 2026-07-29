@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-035",
+  "title": "Similar Models Learn Differently: Final-Window Pretraining Shapes Post-Training Beyond SFT",
+  "source_url": "https://arxiv.org/abs/2607.25063",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了预训练阶段对模型后续微调行为的影响，特别是“最终窗口预训练”（Final-Window Pretraining）如何塑造模型在监督微调（SFT）之后的表现。作者发现，即使两个模型在SFT后表现出相似的基准测试结果，它们在预训练阶段的最后部分（即最终窗口）的差异会导致对后续对齐阶段（如偏好优化）的响应不同。这种差异在标准基准测试中无法被检测到，但会显著影响模型在进一步训练中的行为。研究通过实验验证了这一现象，强调了预训练阶段对模型最终性能的深远影响，并提出了在模型选择时需要考虑预训练历史的重要性。该工作对于理解深度学习模型的训练动态和优化策略具有重要价值，尤其对从事模型训练和调优的研究者和开发者具有指导意义。",
+  "tags": [
+    "pretraining",
+    "fine-tuning",
+    "model behavior",
+    "alignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:45:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练的最后阶段（最终窗口）对模型在后续对齐训练中的行为有决定性影响，即使SFT后基准测试结果相似。",
+      "标准基准测试无法捕捉预训练印记，导致开发者可能错误地认为不同检查点可互换。",
+      "研究揭示了预训练与后训练之间的隐藏关联，为优化模型训练流程提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

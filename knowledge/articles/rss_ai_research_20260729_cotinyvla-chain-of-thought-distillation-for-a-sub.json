@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260729-074",
+  "title": "CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model",
+  "source_url": "https://arxiv.org/abs/2607.25487",
+  "source_platform": "rss_ai_research",
+  "summary": "CoTinyVLA 是一种面向机器人动作生成的子十亿参数视觉-语言-动作（VLA）模型。当前领先的 VLA 系统（如基于 3B-7B 参数骨干网络）在 LIBERO-Plus 鲁棒性基准上表现优异，但内存需求远超嵌入式机器人预算。CoTinyVLA 仅使用 0.9B 参数（基于 Qwen3.5-0.8B 骨干），通过结构化监督而非扩大模型规模来获得鲁棒性。该工作通过链式思维（Chain-of-Thought）蒸馏技术，将复杂推理过程压缩到小模型中，使得在资源受限的机器人平台上部署高性能 VLA 成为可能。其核心创新在于用知识蒸馏替代参数扩展，在保持动作生成准确性和鲁棒性的同时，大幅降低计算和存储开销。这项工作对于推动具身智能在低成本硬件上的落地具有重要意义，尤其适用于实时性要求高、算力有限的嵌入式机器人场景。",
+  "tags": [
+    "VLA",
+    "Chain-of-Thought",
+    "Knowledge Distillation",
+    "Robotics",
+    "Efficient AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:49:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoTinyVLA 以 0.9B 参数实现与 3B-7B 参数模型相当的鲁棒性，验证了结构化监督（链式思维蒸馏）可替代参数扩展来提升 VLA 模型性能。",
+      "该模型基于 Qwen3.5-0.8B 骨干，通过蒸馏技术将复杂推理链压缩到小模型中，显著降低内存需求，适合嵌入式机器人部署。",
+      "在 LIBERO-Plus 基准上的表现表明，小模型通过蒸馏可获得与大型模型相近的鲁棒性，为资源受限的具身智能应用提供了可行方案。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

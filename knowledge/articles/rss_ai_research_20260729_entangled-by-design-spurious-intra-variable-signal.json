@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260729-076",
+  "title": "Entangled by Design: Spurious Intra-Variable Signal Routing in Tabular In-Context Learners",
+  "source_url": "https://arxiv.org/abs/2607.25532",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了表格型上下文学习器（Tabular In-Context Learners）中一种新的虚假关联问题：特征内信号路由（Intra-Variable Signal Routing）。作者通过理论分析和实验证明，当单个特征变量同时包含真实信号（如患者健康状态C）和系统性伪影（如医院设备偏差S）时，模型会倾向于利用伪影进行预测，因为伪影在训练数据中与结果存在虚假相关。这种路由行为在训练环境中表现良好，但在跨域部署时会因伪影模式变化而导致性能骤降。论文揭示了上下文学习器在表格数据中处理混杂特征时的脆弱性，并提出了检测和缓解该问题的方法。该研究对表格数据机器学习模型的鲁棒性和泛化能力具有重要警示意义，尤其适用于医疗、金融等对特征可解释性要求高的领域。",
+  "tags": [
+    "tabular data",
+    "in-context learning",
+    "spurious correlation",
+    "robustness",
+    "feature selection"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:49:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "表格型上下文学习器会错误地将特征内的伪影信号路由为预测依据，而非真实信号，导致跨域泛化失败。",
+      "该问题源于训练数据中伪影与结果之间的虚假相关，模型在训练时无法区分真实信号与噪声。",
+      "提出了一种基于特征分解的检测方法，可量化模型对伪影的依赖程度。",
+      "缓解策略包括数据增强和正则化，但完全消除该问题仍具挑战性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

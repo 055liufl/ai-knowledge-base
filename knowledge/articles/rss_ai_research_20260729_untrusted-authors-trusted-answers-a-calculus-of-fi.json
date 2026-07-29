@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-113",
+  "title": "Untrusted Authors, Trusted Answers: A Calculus of Fidelity-Graded Translations",
+  "source_url": "https://arxiv.org/abs/2607.14137",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于可信度分级的翻译演算方法，用于在程序分析中处理跨语言翻译的不确定性问题。核心思想是：当需要回答关于某个程序的问题时，应将程序翻译到该问题可判定的语言环境中。每一次翻译都可能引入错误，因此作者将翻译过程建模为一个图结构——包含多种语言、少数推理目标以及独立构建的、可信度各异的翻译路径。论文引入了“方向性闭交换方块”的概念，将精确性视为嵌入恒等映射的特例，从而形式化地定义了翻译的可信度分级。这项工作为多语言程序分析、跨语言代码验证以及可信翻译系统的设计提供了理论基础，尤其适用于需要权衡翻译准确性与推理效率的场景。值得关注的是，它首次将翻译的可信度作为一阶概念纳入演算体系，有望推动程序语言理论与安全验证工具的交叉发展。",
+  "tags": [
+    "program analysis",
+    "translation calculus",
+    "trustworthiness",
+    "formal verification"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:52:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "翻译过程被形式化为一个图结构，其中节点代表语言，边代表翻译路径，每条路径具有独立评估的可信度。",
+      "提出了方向性闭交换方块的概念，将精确翻译视为嵌入恒等映射的特例，从而实现了可信度的分级量化。",
+      "该演算为多语言程序分析中的不确定性管理提供了理论框架，有助于设计更可靠的跨语言验证工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

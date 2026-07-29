@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260729-050",
+  "title": "CADENCE: A Cardiac Atom Dictionary for Interpretable Neural Concept Extraction from ECG Foundation Models",
+  "source_url": "https://arxiv.org/abs/2607.25244",
+  "source_platform": "rss_ai_research",
+  "summary": "CADENCE 是一个用于解释心电图（ECG）基础模型内部表示的可解释性框架。该研究针对12导联ECG基础模型在临床任务中表现良好但其内部编码的生理知识难以理解的问题，提出了一个基于BatchTopK稀疏自编码器的方法。CADENCE将ECG基础模型第6层的嵌入（来自超过900万个ECG令牌）分解为8192个稀疏的、可查询的生理概念字典。这些概念对应于特定的心电图形态特征（如ST段抬高、T波倒置等），使得模型决策过程更加透明和可解释。该工作为医疗AI中的可解释性研究提供了新思路，有助于增强临床医生对AI诊断结果的信任，并可能推动ECG基础模型在临床实践中的更广泛应用。值得关注的是，它首次将稀疏自编码器应用于ECG基础模型的概念提取，实现了从黑盒模型到可解释字典的转换。",
+  "tags": [
+    "ECG",
+    "Foundation Model",
+    "Interpretability",
+    "Sparse Autoencoder",
+    "Healthcare AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:46:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CADENCE利用BatchTopK稀疏自编码器将ECG基础模型的隐层表示分解为8192个可解释的生理概念，实现了模型内部知识的透明化。",
+      "该方法基于超过900万个ECG令牌进行训练，能够提取出与临床相关的心电图形态特征（如ST段变化），增强了模型的可信度。",
+      "该工作为医疗领域基础模型的可解释性提供了新范式，有助于弥合AI与临床实践之间的鸿沟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

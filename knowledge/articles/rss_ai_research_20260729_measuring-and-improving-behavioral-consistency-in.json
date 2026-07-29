@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260729-124",
+  "title": "Measuring and Improving Behavioral Consistency in Large Language Models through Fact-Heuristic-Emotion State Enforcement",
+  "source_url": "https://arxiv.org/abs/2607.24765",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为认知核心模型（CKM）的方法，旨在测量并部分减少大型语言模型（LLM）在相同决策问题上的行为不一致性。研究发现，LLM在不同运行中可能对同一问题给出不同答案，甚至在其自身先前答案作为上下文返回时推翻之前的决策。CKM作为一种提示级别的状态强制层，在模型做出决策前，要求其将输入分为三个认知角色：事实（给定或已知信息）、启发（基于经验的快速判断）和情感（情绪或偏好）。通过强制分离这些角色，模型能够更稳定地处理决策问题，从而提升行为一致性。该方法无需修改模型权重，仅通过提示工程实现，具有实用性和可扩展性。论文通过实验验证了CKM在减少不一致性方面的有效性，并讨论了其对LLM可靠性和可信度的潜在影响。这项工作对于提升LLM在需要稳定输出的应用场景（如法律、医疗和金融决策）中的可靠性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Behavioral Consistency",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:53:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在相同决策问题上存在行为不一致性，且可能因自身先前答案作为上下文而反转决策。",
+      "CKM通过将输入强制分离为事实、启发和情感三个认知角色，在提示层面实现状态强制，无需修改模型权重。",
+      "该方法能有效测量并部分减少LLM的行为不一致性，提升决策稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

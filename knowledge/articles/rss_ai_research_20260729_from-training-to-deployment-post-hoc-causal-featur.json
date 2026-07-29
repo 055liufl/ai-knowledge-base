@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-077",
+  "title": "From Training to Deployment: Post-Hoc Causal Feature Identification via Sensitivity Ratios",
+  "source_url": "https://arxiv.org/abs/2607.25546",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为归一化敏感度比（NSR）的后验、模型无关的诊断方法，用于在模型已训练完成后，区分其依赖的特征是因果性的还是虚假相关的。现有方法通常需要访问训练过程，无法在事后回答这一问题。NSR 在结构化偏移场景下工作：环境主要在虚假特征的均值上有所不同，而因果机制和因果边际保持不变。该方法通过分析模型在不同环境下的预测敏感度，量化每个特征对预测的因果贡献。这一创新点在于无需重新训练或访问训练数据，即可评估模型依赖的因果性，对于模型可解释性、公平性和鲁棒性具有重要价值。论文提供了理论证明和实验验证，展示了 NSR 在合成数据和真实数据上的有效性，能够准确识别因果特征并区分虚假关联。该工作填补了后验因果特征识别领域的空白，为部署后的模型审计和调试提供了实用工具。",
+  "tags": [
+    "Causal Inference",
+    "Model Interpretability",
+    "Post-hoc Analysis",
+    "Feature Importance"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:49:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NSR 是一种后验、模型无关的诊断方法，无需访问训练过程即可区分因果特征与虚假特征。",
+      "该方法在结构化偏移假设下工作，即环境间仅虚假特征均值变化，因果机制和边际不变。",
+      "通过计算特征在不同环境下的预测敏感度比，NSR 能有效量化因果贡献，实验验证其在合成和真实数据上的准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

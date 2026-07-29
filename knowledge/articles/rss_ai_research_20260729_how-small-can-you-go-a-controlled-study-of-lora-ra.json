@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260729-081",
+  "title": "How Small Can You Go? A Controlled Study of LoRA Rank, Target Modules, and Quantization Trade-offs for Text-to-SQL on a 60M-Parameter Model",
+  "source_url": "https://arxiv.org/abs/2607.25583",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究系统性地探讨了在极低参数规模（60M参数T5-small模型）下，参数高效微调（PEFT）与低比特量化之间的交互作用。通过控制LoRA秩、目标模块选择以及量化策略（如4-bit、8-bit等），在单表文本到SQL基准测试WikiSQL上评估了任务准确率。研究发现，在极小模型上，LoRA的秩和量化精度对性能有显著影响，且某些模块组合（如注意力层与全连接层）在低秩设置下表现更优。该工作填补了以往研究集中于大模型（数十亿参数）的空白，为资源受限场景下的模型适配提供了可复现的实证指导，具有重要的实用价值。",
+  "tags": [
+    "PEFT",
+    "LoRA",
+    "Quantization",
+    "Text-to-SQL",
+    "T5"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:49:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在60M参数模型上，LoRA秩与量化精度的平衡对文本到SQL任务准确率有显著影响，低秩（如r=8）结合4-bit量化可能达到与高秩全精度相近的效果。",
+      "目标模块选择（如仅微调注意力层或全连接层）在极小模型上对性能影响更大，注意力层微调在低秩下更关键。",
+      "该研究为资源受限环境下的模型适配提供了可复现的基准，挑战了PEFT与量化仅适用于大模型的假设。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

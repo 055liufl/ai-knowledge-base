@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-106",
+  "title": "Penelope: Localized Latent Recurrence for Efficient Structured Reasoning",
+  "source_url": "https://arxiv.org/abs/2607.25915",
+  "source_platform": "rss_ai_research",
+  "summary": "Penelope 是一种高效的潜在推理框架，专为预训练的仅解码器 Transformer 设计，旨在解决复杂结构化推理任务中计算成本高的问题。传统方法通过增加模型参数规模或使用链式思维（CoT）令牌序列化中间步骤来提升推理能力，但这分别导致训练和部署成本上升，或将推理计算与自回归输出长度绑定。Penelope 通过引入局部化潜在循环（Localized Latent Recurrence），在模型的潜在空间中执行迭代推理，无需生成显式的中间令牌，从而显著降低计算开销。该方法在保持或提升推理性能的同时，实现了更高效的推理过程，尤其适用于需要多步推理的结构化任务。该研究值得关注，因为它提供了一种在不牺牲模型规模或输出长度的情况下增强推理能力的新路径，对提升 Transformer 模型的实用性和效率具有重要价值。",
+  "tags": [
+    "LLM",
+    "Transformer",
+    "Efficient Inference",
+    "Latent Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:51:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Penelope 通过局部潜在循环在潜在空间中进行迭代推理，避免了生成显式 CoT 令牌，从而解耦推理计算与输出长度。",
+      "该方法在预训练的仅解码器 Transformer 上实现，无需重新训练或大幅修改架构，降低了部署门槛。",
+      "实验表明，Penelope 在复杂结构化推理任务上能匹配或超越传统 CoT 方法的性能，同时显著减少计算资源消耗。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

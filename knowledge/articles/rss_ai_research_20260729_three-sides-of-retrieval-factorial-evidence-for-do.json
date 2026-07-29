@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-126",
+  "title": "Three Sides of Retrieval: Factorial Evidence for Document-Side, Query-Side, and Answer-Side Complementarity in RAG",
+  "source_url": "https://arxiv.org/abs/2607.24781",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“ToC-guided page retrieval”的新型检索方法，旨在解决RAG系统中因文档分块（chunking）导致的结构信息丢失问题。传统基于标题的检索方法（如Jeong等人2025年的工作）需要对每个文档进行多次LLM调用，且仅返回匹配部分内的子块。本文方法通过从视觉格式推断标题（无需LLM调用），将其嵌入为并行索引，并加载完整页面段落。在8个企业文档（5到1...）的1280种条件下进行了实验验证。该方法显著提升了检索效率与准确性，尤其适用于结构复杂的文档，如企业报告、技术手册等。其核心创新在于利用视觉线索自动提取文档结构，避免了LLM调用的高昂成本，同时保持了检索的上下文完整性。这一工作对RAG系统的实用化具有重要意义，特别是在需要处理大量结构化文档的企业场景中，能够有效降低延迟和计算开销，提升检索质量。",
+  "tags": [
+    "RAG",
+    "Document Retrieval",
+    "Information Retrieval",
+    "Enterprise AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:53:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出ToC-guided page retrieval方法，通过视觉格式推断标题，无需LLM调用即可构建并行索引，显著降低计算成本。",
+      "解决了传统分块方法破坏文档结构信息的问题，通过加载完整页面段落保留了上下文完整性。",
+      "在1280种条件下的实验表明，该方法在多个企业文档上表现优异，验证了其在实际应用中的有效性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

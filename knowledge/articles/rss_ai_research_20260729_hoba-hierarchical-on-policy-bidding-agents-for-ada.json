@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-015",
+  "title": "HOBA: Hierarchical On-Policy Bidding Agents for Adaptive Online Advertising",
+  "source_url": "https://arxiv.org/abs/2607.24779",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为HOBA（分层在线策略竞价代理）的新型在线广告竞价系统。传统系统通常部署多个离线训练的专家模型（如PID控制器、模型预测控制、离线强化学习策略），但存在两个关键局限：缺乏对非平稳拍卖市场的在线适应性，以及依赖昂贵的手动调整超参数（如出价界限和预算节奏约束）。HOBA通过分层强化学习框架解决这些问题，上层代理负责调整出价策略的超参数，下层代理执行具体的出价动作，从而实现端到端的在线学习和自适应。该方法在模拟和真实广告数据集上展示了显著性能提升，减少了人工干预并提高了广告投放效率。该研究值得关注，因为它将强化学习应用于实际广告系统，解决了在线适应性和自动化调参的痛点，对广告技术和强化学习领域均有重要影响。",
+  "tags": [
+    "Reinforcement Learning",
+    "Online Advertising",
+    "Bidding System",
+    "Hierarchical RL"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:43:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HOBA通过分层强化学习实现了在线广告竞价系统的自适应超参数调整，减少了对人工调参的依赖。",
+      "该方法在非平稳拍卖市场中表现出更强的在线适应性，优于传统离线训练模型。",
+      "分层架构将策略优化分解为上层超参数调整和下层出价执行，提高了学习效率和稳定性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

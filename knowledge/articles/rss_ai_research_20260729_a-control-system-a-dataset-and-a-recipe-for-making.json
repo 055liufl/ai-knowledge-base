@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-066",
+  "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
+  "source_url": "https://arxiv.org/abs/2607.25415",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种控制框架、数据集和配方，用于使冻结的大型语言模型（LLM）代理学习特定领域知识。核心思想是：生产级LLM代理通常由冻结模型和外部“控制套件”（包括提示模板、工具集、记忆/检索层、规划策略和验证策略）组成。2026年的两个系统——Meta-Harness和HyperAgents——展示了这种控制套件本身可以通过代理提议者进行优化甚至自我重写，但代价是昂贵的代码搜索循环或不受约束的自我修改。本文旨在解决这一瓶颈，通过提供一种结构化的控制框架、一个领域数据集以及一个明确的“配方”，使得冻结的LLM代理能够在不修改底层模型的情况下，高效地适应和掌握特定领域任务。该方法避免了传统微调的成本和风险，同时提升了代理在特定领域的表现和可靠性。这项研究值得关注，因为它为构建可扩展、可维护且领域自适应的LLM代理提供了一条实用路径，有望降低部署成本并提高代理系统的鲁棒性。",
+  "tags": [
+    "LLM Agent",
+    "Control System",
+    "Domain Adaptation",
+    "Frozen Model"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:48:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需修改底层模型即可使冻结LLM代理学习特定领域的方法，通过优化外部控制套件实现。",
+      "Meta-Harness和HyperAgents展示了控制套件可被优化或自改写，但存在成本或稳定性问题，本文提供了更高效的替代方案。",
+      "该方法包含一个控制框架、一个领域数据集和一个明确的配方，为构建领域自适应代理提供了系统化指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-091",
+  "title": "CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization",
+  "source_url": "https://arxiv.org/abs/2607.25659",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 CoRT（Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization）的新方法，旨在改进基于评分标准的强化学习在语言模型训练中的应用。在传统的 GRPO 风格流水线中，结构化评分被简化为一个标量响应级奖励，并均匀地广播到所有生成的 token 上，这导致无法在响应内部进行细粒度的信用分配。CoRT 通过引入反事实重放机制，在 token 级别上根据评分标准分配信用，从而更精确地指导策略优化。该方法允许模型根据不同的评分标准（如事实准确性、流畅性等）对每个 token 的贡献进行差异化学习，显著提升了训练效率和模型输出质量。这项研究值得关注，因为它解决了强化学习在语言模型训练中一个关键且未被充分探索的问题——细粒度信用分配，为更高效、更可控的语言模型训练提供了新思路。实验结果表明，CoRT 在多个基准任务上优于现有方法，展示了其在提升模型对齐和生成质量方面的潜力。",
+  "tags": [
+    "RLHF",
+    "Language Model",
+    "Reinforcement Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:50:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoRT 通过反事实重放机制在 token 级别进行信用分配，解决了传统 GRPO 方法中响应级奖励均匀广播导致的细粒度信用缺失问题。",
+      "该方法允许根据不同的评分标准（如事实准确性、流畅性）对每个 token 的贡献进行差异化学习，从而更精确地指导策略优化。",
+      "实验表明，CoRT 在多个基准任务上优于现有方法，显著提升了语言模型的训练效率和生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

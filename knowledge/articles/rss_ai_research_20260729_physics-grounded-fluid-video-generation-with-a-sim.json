@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-055",
+  "title": "Physics-Grounded Fluid Video Generation with a Simulation Dataset and Dual-Stream Optical-Flow Supervision",
+  "source_url": "https://arxiv.org/abs/2607.25321",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于物理约束的流体视频生成方法，通过构建仿真数据集和双流光流监督来增强视频扩散模型对流体物理规律的理解。现有视频扩散模型在生成流体内容时经常违反基本物理定律，如液体柱在空中断裂、容器水位不随注入上升、飞溅无视动量和重力等。作者认为这是由于大规模视频-文本数据集中缺乏明确的运动监督，导致模型仅模仿流体外观而非真实物理行为。为此，他们创建了一个包含多种流体场景的仿真数据集，并设计了双流光流监督机制，分别对流体区域和背景区域施加物理约束。实验表明，该方法能显著提升生成视频中流体运动的物理合理性，在定量和定性评估上均优于现有基线。这项工作为将物理知识融入生成模型提供了新思路，对视频生成、物理仿真和计算机图形学领域具有重要价值。",
+  "tags": [
+    "Video Generation",
+    "Physics Simulation",
+    "Fluid Dynamics",
+    "Diffusion Models"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:47:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视频扩散模型因缺乏运动监督而无法生成符合物理规律的流体视频，本文通过仿真数据集提供精确物理标注。",
+      "双流光流监督分别约束流体和背景的运动，有效提升了生成视频的物理一致性。",
+      "该方法在定量指标和视觉质量上均超越现有方法，为物理引导的视频生成提供了可行框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

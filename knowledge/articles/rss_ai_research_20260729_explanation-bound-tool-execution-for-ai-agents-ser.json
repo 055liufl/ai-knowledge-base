@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-059",
+  "title": "Explanation-Bound Tool Execution for AI Agents: Server-Verified Action Claims Without Trusting Model Rationales",
+  "source_url": "https://arxiv.org/abs/2607.25364",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“解释绑定工具执行”（Explanation-Bound Tool Execution, EBTE）的新型中介层，用于AI代理的工具调用场景。当前，使用工具的AI代理虽然能生成结构化调用，但通常会附带自由形式的解释性理由（rationales），这些理由既不能作为授权依据，也无法可靠地反映代理的真实意图。EBTE通过将决策相关的理由内容转化为类型化的动作声明（action claims），并与服务器端持有的意图、策略、负载、工具、风险、来源和时效性等事实进行校验，从而在不依赖模型内部推理过程的情况下，实现对工具调用的安全验证。该方法不扩大基线授权范围，而是专注于确保代理的声明与服务器端策略一致。该工作对于提升AI代理系统的安全性、可审计性和可靠性具有重要意义，尤其适用于需要严格合规和风险控制的场景。",
+  "tags": [
+    "AI Agent",
+    "Tool Execution",
+    "Security",
+    "Mediation Layer"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:47:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EBTE将自由形式的理由转化为可验证的类型化动作声明，解决了模型理由不可靠的问题。",
+      "该方法通过服务器端事实校验，在不扩大授权范围的前提下增强了工具调用的安全性。",
+      "EBTE适用于需要严格合规和风险控制的AI代理系统，如金融、医疗等领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

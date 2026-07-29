@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-054",
+  "title": "Instruction-Tuned Language Models Cannot Sample from Distributions They Can Describe",
+  "source_url": "https://arxiv.org/abs/2607.25292",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了指令微调语言模型在模拟人类调查受访者时的一个根本性缺陷：它们无法从分布中采样，而是坍缩到单一输出。具体来说，当使用相同的角色设定和相同的问题时，模型在超过一半的公共意见基准测试项上返回相同的答案。这种坍缩现象是尖锐的，意味着模型无法像人类那样在多次询问中产生多样化的回答分布。这一发现对使用语言模型作为人类调查代理的“硅采样”方法提出了严峻挑战，因为其假设模型每次调用都能独立地从角色响应分布中采样，而实际模型却表现出确定性的输出模式。该研究对于理解指令微调模型的生成机制、改进模型评估方法以及避免在社会科学研究中使用语言模型作为不可靠的代理具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Instruction Tuning",
+    "Sampling",
+    "Social Science"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:47:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "指令微调模型在模拟人类调查时无法从分布中采样，而是坍缩到单一输出，这违背了硅采样的基本假设。",
+      "在公共意见基准测试中，相同角色和问题下模型超过一半的返回结果完全相同，表明坍缩现象显著且普遍。",
+      "该发现对使用语言模型作为人类调查代理的可靠性提出根本性质疑，并可能影响社会科学研究中的方法论选择。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

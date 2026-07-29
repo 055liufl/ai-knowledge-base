@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260729-045",
+  "title": "Inferring Missing Trajectory Data with Temporal Convolutional Networks",
+  "source_url": "https://arxiv.org/abs/2607.25147",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于时间卷积网络（TCN）的轨迹数据补全方法，用于解决现实场景中因传感器故障、通信丢失或遮挡导致的轨迹数据不完整问题。研究聚焦于“轨迹修复”任务，即从观测到的上下文信息中重建连续的缺失片段。作者设计了一种具有对称膨胀结构的时间卷积网络，该网络放宽了标准因果约束，使得每个时间步能够同时利用过去和未来的观测信息，从而更准确地推断缺失轨迹。该方法在轨迹数据修复领域具有创新性，尤其适用于智能交通、自动驾驶和移动计算等需要高精度轨迹数据的应用场景。论文通过实验验证了模型在多种缺失模式下的有效性，展示了TCN在时间序列补全任务中的潜力。该研究对于提升数据质量、增强下游任务（如路径规划、行为分析）的鲁棒性具有重要意义。",
+  "tags": [
+    "TCN",
+    "Trajectory Inpainting",
+    "Time Series",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-29T10:39:02Z",
+  "collected_at": "2026-07-29T10:46:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对称膨胀TCN通过同时利用过去和未来上下文，有效提升了轨迹缺失段的重建精度。",
+      "放宽因果约束是轨迹修复任务的关键创新，使得模型能够捕获双向时间依赖关系。",
+      "该方法在多种缺失模式（如连续缺失、随机缺失）下均表现出鲁棒性，适用于实际传感器数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
