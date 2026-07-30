@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260730-124",
+  "title": "Measuring and Improving Behavioral Consistency in Large Language Models through Fact-Heuristic-Emotion State Enforcement",
+  "source_url": "https://arxiv.org/abs/2607.24765",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为认知内核模型（Cognitive Kernel Model, CKM）的方法，旨在测量并部分减少大型语言模型（LLMs）在决策问题中的行为不一致性。研究发现，LLMs 在多次运行中可能对同一问题给出不同答案，甚至在自身先前答案作为上下文出现时反转决策。CKM 是一种提示级别的状态强制层，不改变模型权重，而是要求模型在决策前将输入分为三个认知角色：事实（给定或已知信息）、启发（基于经验的快捷推理）和情感（情绪或主观倾向）。通过强制分离这些角色，模型能够更稳定地处理信息，减少不一致性。该工作关注 LLM 的可靠性和一致性，具有实际应用价值，尤其适用于需要稳定输出的场景如客服、法律咨询等。论文通过实验验证了 CKM 在多个基准任务上的有效性，展示了其在提升行为一致性方面的潜力。",
+  "tags": [
+    "LLM",
+    "Consistency",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:34:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLMs 在决策任务中表现出显著的行为不一致性，包括跨运行差异和上下文反转决策。",
+      "CKM 通过强制分离事实、启发和情感三个认知角色，在不改变模型权重的情况下提升一致性。",
+      "该方法为提示工程提供了新范式，强调结构化输入处理以减少模型输出的随机性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

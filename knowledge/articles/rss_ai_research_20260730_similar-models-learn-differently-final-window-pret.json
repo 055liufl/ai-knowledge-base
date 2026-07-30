@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-035",
+  "title": "Similar Models Learn Differently: Final-Window Pretraining Shapes Post-Training Beyond SFT",
+  "source_url": "https://arxiv.org/abs/2607.25063",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了在监督微调（SFT）后，两个在相关基准测试中表现相似的模型检查点是否真的可互换。作者发现，尽管这些检查点在SFT后表现相当，但它们可能带有不同的预训练印记，这种差异在SFT后的基准测试中无法显现，但会影响后续训练（如偏好优化）的效果。通过实验，论文揭示了“最终窗口预训练”（final-window pretraining）对模型行为的影响，表明预训练阶段的细微差异可能对对齐阶段产生显著影响。这一发现挑战了当前将SFT后表现作为模型可互换性唯一标准的做法，强调了预训练过程在模型最终行为中的关键作用。该研究对于理解深度学习模型的训练动态和优化对齐策略具有重要意义，值得关注因为它可能改变模型选择和训练流程的设计方式。",
+  "tags": [
+    "pretraining",
+    "fine-tuning",
+    "alignment",
+    "model behavior"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:29:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT后表现相似的模型检查点可能具有不同的预训练印记，影响后续对齐训练的效果",
+      "最终窗口预训练阶段对模型行为有显著影响，但SFT后的基准测试无法捕捉这种差异",
+      "当前模型可互换性标准（基于SFT后表现）需要重新评估，预训练细节应纳入考量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

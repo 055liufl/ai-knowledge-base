@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260730-016",
+  "title": "LivingArena: Do LLMs Know What Other LLMs Don't? Peer-Probing as Scalable Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.24780",
+  "source_platform": "rss_ai_research",
+  "summary": "LivingArena 提出了一种新颖的 LLM 评估框架，核心思想是利用 LLM 之间的相互探测（peer-probing）来评估模型能力，而非依赖静态基准或人工偏好。该方法通过让一个 LLM 判断另一个 LLM 是否知道某个问题的答案，从而构建动态、抗污染的评估指标。论文指出，静态基准存在数据污染和饱和问题，而人工评估主观性强且成本高。LivingArena 通过模型间的知识差异探测，能够自动发现特定失败模式，并区分顶级模型。该框架具有可扩展性，无需人工标注，且能持续更新评估内容。实验表明，peer-probing 结果与模型实际能力高度相关，并能揭示传统基准无法捕捉的细微差距。这项研究为 LLM 评估提供了全新思路，尤其适合快速迭代的模型生态，值得关注。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:28:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LivingArena 利用 LLM 间的相互探测（peer-probing）替代静态基准，有效避免数据污染和饱和问题。",
+      "该方法能够自动发现特定失败模式，并区分性能接近的顶级模型，弥补传统评估的不足。",
+      "框架无需人工标注，可扩展性强，适合持续更新的模型评估场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

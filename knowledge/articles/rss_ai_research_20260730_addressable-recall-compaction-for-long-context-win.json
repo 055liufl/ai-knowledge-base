@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-036",
+  "title": "Addressable Recall Compaction for Long Context-Window Control in AI Agents",
+  "source_url": "https://arxiv.org/abs/2607.25066",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ARC（Addressable Recall Compaction）的上下文管理框架，旨在解决长周期LLM代理在运行过程中积累大量推理轨迹、动作和工具观察结果，最终超出模型固定上下文窗口的问题。现有方法如丢弃、总结或检索早期信息，可能会移除关键任务细节或无法可靠恢复。ARC通过将存档存储与当前上下文分离，并引入可寻址的召回机制，允许代理在需要时精确访问历史信息，从而在保持上下文窗口可控的同时，确保关键细节不丢失。该框架特别适用于需要长期记忆和复杂推理的AI代理场景，如多步骤任务执行和持续对话。ARC的创新在于其可寻址性，使得信息检索更高效、更可靠，避免了传统压缩方法中的信息丢失问题。这项研究对于提升AI代理在长上下文场景下的性能和可靠性具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:29:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ARC通过可寻址的召回机制，将存档存储与当前上下文分离，解决了长上下文窗口控制中的信息丢失问题。",
+      "该框架允许代理在需要时精确访问历史信息，避免了传统压缩方法中关键细节被丢弃或无法可靠恢复的缺陷。",
+      "ARC适用于需要长期记忆和复杂推理的AI代理场景，如多步骤任务执行和持续对话，提升了代理的性能和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-126",
+  "title": "Three Sides of Retrieval: Factorial Evidence for Document-Side, Query-Side, and Answer-Side Complementarity in RAG",
+  "source_url": "https://arxiv.org/abs/2607.24781",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“ToC-guided page retrieval”的新型检索方法，旨在解决RAG系统中因分块（chunking）导致文档结构信息丢失的问题。传统方法如基于标题的检索（Jeong et al., 2025）需要多次调用LLM处理每个文档，且仅返回匹配章节内的子块。而本文方法通过从视觉格式推断标题，无需LLM调用即可构建并行索引，并加载完整页面章节。在8个企业文档（5到1页）的1280种条件下进行实验，验证了该方法在文档侧、查询侧和答案侧的互补性，显著提升了检索效率和准确性。该研究对于提升企业级RAG系统的文档理解与检索质量具有重要价值，尤其适用于结构复杂的长文档场景。",
+  "tags": [
+    "RAG",
+    "Retrieval",
+    "Document Understanding",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:35:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ToC-guided page retrieval通过视觉格式推断标题，避免了传统方法中多次LLM调用的高成本，同时保留了文档的完整结构信息。",
+      "该方法在1280种条件下验证了文档侧、查询侧和答案侧的互补性，表明其在不同检索维度上均能提升RAG系统的性能。",
+      "针对企业文档（5到1页）的实验结果展示了该方法在处理中等长度、结构复杂文档时的优势，为实际应用提供了有效方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

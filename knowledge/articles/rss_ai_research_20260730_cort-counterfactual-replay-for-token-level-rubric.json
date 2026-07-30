@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260730-091",
+  "title": "CoRT: Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization",
+  "source_url": "https://arxiv.org/abs/2607.25659",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为CoRT（Counterfactual Replay for Token-Level Rubric-Guided Policy Optimization）的新方法，旨在改进基于评分标准的强化学习在语言模型训练中的应用。在传统的GRPO（Group Relative Policy Optimization）风格流程中，评分标准被简化为一个标量响应级奖励，并转换为响应级优势，然后均匀地分配给所有生成的令牌。这种方法无法在响应内部进行细粒度的信用分配，即使不同评分标准基于不同的令牌。CoRT通过引入反事实重放机制，实现了令牌级别的信用分配，使得模型能够根据每个令牌对最终评分的贡献进行差异化学习。该方法的核心创新在于将评分标准与令牌级别的反馈相结合，从而更精确地指导语言模型的优化过程。论文通过实验验证了CoRT在提升模型输出质量和对齐人类偏好方面的有效性，特别是在需要精细控制生成内容的场景中。这项研究对于提升语言模型的可控性和训练效率具有重要意义，为强化学习在自然语言处理中的应用提供了新的视角。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:32:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoRT通过反事实重放机制实现了令牌级别的信用分配，解决了传统GRPO中响应级奖励均匀分配的问题。",
+      "该方法将评分标准与令牌级别的反馈相结合，使得语言模型训练能够更精确地针对每个生成令牌进行优化。",
+      "实验结果表明，CoRT在提升模型输出质量和对齐人类偏好方面优于传统方法，特别是在需要精细控制生成内容的场景中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

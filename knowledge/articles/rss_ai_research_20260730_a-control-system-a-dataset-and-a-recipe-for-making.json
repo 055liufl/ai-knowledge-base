@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-066",
+  "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
+  "source_url": "https://arxiv.org/abs/2607.25415",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种控制框架、数据集和配方，用于使冻结的大型语言模型（LLM）智能体学习特定领域知识。研究背景是生产级LLM智能体通常由冻结模型和外部“控制套件”（包括提示模板、工具集、记忆/检索层、规划策略和验证策略）组成。2026年的两个系统——Meta-Harness和HyperAgents——展示了可以通过智能体提议器优化甚至重写这个控制套件，但代价是昂贵的代码搜索循环或不受约束的自我修改。本文旨在解决这些局限性，提供一种更高效、可控的方法，使冻结的LLM智能体能够适应新领域，而无需微调模型本身。该工作值得关注，因为它为LLM智能体的领域适应提供了一种实用且经济的方案，避免了大规模模型更新的成本，同时保持了模型的通用能力。通过引入标准化的控制框架和数据集，它可能推动LLM智能体在垂直行业（如医疗、法律）的部署，并降低开发门槛。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Control System",
+    "Domain Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:31:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种优化冻结LLM智能体控制套件（提示、工具、记忆等）的框架，避免昂贵的模型微调。",
+      "通过标准化数据集和配方，实现了高效且可控的领域适应，解决了现有方法（如代码搜索循环）的瓶颈。",
+      "展示了控制套件可被智能体自我优化，但需约束机制以防止不受控制的修改。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-010",
+  "title": "RoCo-ACE: Rollout-Conditioned Online Distillation for Retention-Aware Knowledge Injection",
+  "source_url": "https://arxiv.org/abs/2607.24771",
+  "source_platform": "rss_ai_research",
+  "summary": "RoCo-ACE 是一种新颖的在线蒸馏方法，旨在解决多模态大语言模型（MLLM）在知识注入过程中出现的知识漂移问题。传统方法通过拟合完整权威答案来更新模型，但容易导致非更新行为的退化。RoCo-ACE 提出基于 rollout 条件化的在线蒸馏策略，通过模型自身生成的 rollout 数据进行训练，并引入条件化蒸馏机制，对参考支持的 rollout token 给予更高权重，同时间接监督遗漏的事实。该方法在保持模型原有能力的同时，有效注入新的事实或领域知识，实验表明在多个基准上显著优于现有方法。该工作对于提升 MLLM 的持续学习能力和知识更新效率具有重要价值，尤其适用于需要频繁更新知识的应用场景。",
+  "tags": [
+    "MLLM",
+    "Knowledge Injection",
+    "Online Distillation",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:27:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RoCo-ACE 通过 rollout 条件化蒸馏，解决了知识注入中参考监督不足的问题，提升了知识保留和模型稳定性。",
+      "该方法在多个 MLLM 基准上展示了优于传统在线蒸馏和微调方法的性能，特别是在减少知识漂移方面。",
+      "RoCo-ACE 为多模态模型的持续学习提供了一种高效的知识注入框架，具有实际部署潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

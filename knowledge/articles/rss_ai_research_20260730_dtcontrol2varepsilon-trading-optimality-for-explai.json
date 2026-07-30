@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-107",
+  "title": "dtControl2+$\\varepsilon$: Trading Optimality for Explainability in MDPs via Decision Trees",
+  "source_url": "https://arxiv.org/abs/2607.25925",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 dtControl2+ε 的改进工具，用于在马尔可夫决策过程（MDP）中通过决策树表示控制器（策略），以在最优性和可解释性之间进行权衡。dtControl2 是当前最先进的工具，能够生成可解释的决策树控制器，但对于大型系统或具有许多边界情况的系统，生成的决策树仍然过于复杂，难以被人类理解。dtControl2+ε 的核心创新在于允许用户通过牺牲少量的最优性（即 ε 容忍度）来显著简化决策树的结构，从而提升可解释性。该工具通过引入一个参数 ε，在保证策略性能损失不超过 ε 的前提下，系统地剪枝决策树，移除不必要的分支和条件。实验结果表明，dtControl2+ε 能够在保持高可解释性的同时，将性能损失控制在可接受的范围内。这项工作值得关注，因为它解决了 AI 系统中可解释性与性能之间的核心矛盾，特别是在安全关键领域（如自动驾驶、机器人控制）中，人类需要理解并信任 AI 的决策逻辑。通过提供一种实用的权衡方法，dtControl2+ε 为复杂系统的可解释 AI 部署提供了新思路。",
+  "tags": [
+    "Explainable AI",
+    "Decision Trees",
+    "MDP",
+    "Controller Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:33:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "dtControl2+ε 通过引入 ε 容忍度参数，在决策树控制器中实现了最优性与可解释性的系统化权衡，允许用户牺牲少量性能换取更简洁的决策树。",
+      "该工具针对大型或边界情况复杂的 MDP 系统，解决了现有决策树表示仍过于复杂、难以人类理解的问题。",
+      "实验表明，dtControl2+ε 能够在保持高可解释性的同时，将性能损失控制在 ε 范围内，为安全关键领域的可解释 AI 部署提供了实用方法。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

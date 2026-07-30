@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-094",
+  "title": "DecoEvo: Score-Decoupled Co-Evolution of Solver and Rubric-Generator Skills in Text Space",
+  "source_url": "https://arxiv.org/abs/2607.25675",
+  "source_platform": "rss_ai_research",
+  "summary": "DecoEvo 是一种创新的文本空间优化方法，它通过协同进化求解器（Solver）和评分生成器（Rubric-Generator）的技能，解决了开放任务中固定评估标准导致的优化瓶颈问题。传统文本空间优化方法仅调整外部自然语言工件（如提示或规则），而保持评估标准不变，这限制了模型在开放任务中的表现，因为一旦求解器在现有评分维度上提升，未覆盖的维度就会被忽视。DecoEvo 提出了一种分数解耦的协同进化机制：求解器负责生成解决方案，评分生成器动态创建和更新评估标准，两者在文本空间中交替进化，从而不断扩展评估维度并引导求解器探索更优解。该方法在多个开放任务（如创意写作、代码生成）上显著提升了性能，同时保持了文本空间优化的可解释性和黑箱兼容性。这项研究值得关注，因为它解决了评估标准静态化这一关键问题，为 LLM 在复杂、开放场景下的自适应优化提供了新范式，具有重要的理论和实践价值。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Co-Evolution",
+    "Text-Space"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:33:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DecoEvo 通过协同进化求解器和评分生成器，动态扩展评估维度，解决了开放任务中固定评估标准的瓶颈。",
+      "该方法在文本空间中进行优化，保持了可解释性和黑箱兼容性，适用于多种 LLM 应用。",
+      "实验表明，DecoEvo 在创意写作和代码生成等开放任务上显著优于传统文本空间优化方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

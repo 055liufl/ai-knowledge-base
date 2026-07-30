@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-037",
+  "title": "How Often Should a Recommender Call an LLM? Value-Weighted Routing, Monitoring, and Seasonal Robustness",
+  "source_url": "https://arxiv.org/abs/2607.25068",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Value Router的框架，用于在推荐系统中优化大型语言模型（LLM）的调用频率。传统的路由决策通常基于难度，即仅将困难案例发送给昂贵的LLM，但这种方法忽略了业务价值这一关键维度。作者认为，困难但低价值的商品与困难且高价值的商品具有不同的错误成本，因此路由策略应同时考虑难度和业务价值。Value Router通过全合成模拟零售商品管理流程，实现了基于价值加权的路由、监控和季节性鲁棒性。该研究解决了LLM在实际部署中的成本效益问题，通过动态调整LLM调用策略，在保持推荐质量的同时显著降低计算成本。其创新点在于将业务价值纳入路由决策，并提供了可操作的监控和季节性调整机制。该工作对推荐系统、LLM成本优化和工业级AI部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Recommender System",
+    "Cost Optimization",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:29:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "路由决策应同时考虑任务难度和业务价值，而非仅基于难度，因为不同价值的商品错误成本差异显著。",
+      "Value Router通过全合成模拟验证了价值加权路由在降低LLM调用成本的同时保持推荐质量的有效性。",
+      "框架引入了监控和季节性鲁棒性机制，使路由策略能适应动态业务环境。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

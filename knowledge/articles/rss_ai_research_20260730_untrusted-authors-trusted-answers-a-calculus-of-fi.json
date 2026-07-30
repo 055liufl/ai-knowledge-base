@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-113",
+  "title": "Untrusted Authors, Trusted Answers: A Calculus of Fidelity-Graded Translations",
+  "source_url": "https://arxiv.org/abs/2607.14137",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于可信度分级的翻译演算方法，用于解决程序分析中的跨语言推理问题。核心思想是将程序移动到问题可判定的语言环境中，每次移动都是一种翻译，而每种翻译都可能引入错误。作者将翻译建模为图结构，包含多种语言、少数推理目标以及独立构建的、具有不同可信度的路径。通过引入方向性闭交换方对（directional close commuting squares），论文定义了精确翻译（exactness）作为恒等嵌入的特例，从而为翻译的可信度提供了一种形式化分级机制。这项工作值得关注，因为它为多语言程序分析中的可靠性问题提供了理论基础，特别是在大型语言模型（LLM）和代码生成场景下，翻译的准确性直接影响下游任务的正确性。该演算有望指导更鲁棒的跨语言工具设计，并促进对翻译过程中错误传播的量化理解。",
+  "tags": [
+    "program analysis",
+    "translation calculus",
+    "trustworthiness",
+    "formal methods"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:34:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "翻译过程被形式化为图结构，其中不同语言间的路径具有独立可信度，为错误传播分析提供了框架。",
+      "方向性闭交换方对的概念允许在保持语义一致性的同时，对翻译的精确性进行分级。",
+      "该演算为多语言程序分析中的可靠性问题提供了理论基础，可应用于LLM生成的代码验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

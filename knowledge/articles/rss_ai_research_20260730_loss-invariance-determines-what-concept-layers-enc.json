@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-097",
+  "title": "Loss Invariance Determines What Concept Layers Encode: Volume Grounding in Echocardiography",
+  "source_url": "https://arxiv.org/abs/2607.25748",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了概念瓶颈模型（Concept Bottleneck Models）在超声心动图视频中左心室射血分数估计任务中的有效性。传统上，这类模型通过可解释的中间变量（如左心室容积）进行预测，其有效性通常由这些变量预测的准确性来评判。然而，作者质疑这种评判标准是否足够。他们使用左心室容积作为概念，训练了一个视频变换器编码器，并在公开的超声心动图数据集上进行实验。研究发现，损失不变性（Loss Invariance）决定了概念层实际编码的内容，即模型可能通过不直接对应预期概念但同样有效的特征来最小化损失。这一发现挑战了概念瓶颈模型的可解释性假设，表明仅靠概念预测准确性不足以验证模型是否真正使用了预期概念。该工作对可解释AI和医学影像分析领域具有重要价值，因为它揭示了模型内部表征与人类定义概念之间的潜在脱节。",
+  "tags": [
+    "Concept Bottleneck Model",
+    "Interpretability",
+    "Medical Imaging",
+    "Echocardiography"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:33:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "概念瓶颈模型的有效性不能仅通过中间变量预测准确性来评判，因为模型可能利用损失不变性学习到与预期概念不同但等效的表征。",
+      "在超声心动图视频的射血分数估计任务中，左心室容积作为概念层，其编码内容可能受损失函数影响，而非严格对应人类定义的解剖学概念。",
+      "该研究揭示了可解释AI中一个关键问题：模型内部表征与人类可解释概念之间可能存在不一致，需要更严格的验证方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

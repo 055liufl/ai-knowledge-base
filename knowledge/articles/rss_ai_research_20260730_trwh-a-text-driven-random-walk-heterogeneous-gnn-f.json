@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260730-070",
+  "title": "TRWH: A Text-Driven Random Walk Heterogeneous GNN for Semantic-Aware Sparse Recommendation",
+  "source_url": "https://arxiv.org/abs/2607.25471",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TRWH（Text-driven Random Walk Heterogeneous Graph Neural Network）的新型框架，旨在融合图神经网络（GNN）和大语言模型（LLM）的优势，以解决稀疏推荐场景中的语义感知问题。传统推荐系统在数据稀疏时面临语义信息丢失的挑战，而 TRWH 通过利用 LLM 生成的文本描述来增强节点特征，并采用随机游走策略在异构图（如用户-物品-文本三元组）上进行消息传递，从而同时捕捉结构信号和语义信号。该框架的核心创新在于：1）使用 LLM 为每个节点生成语义丰富的文本特征；2）设计异构图随机游走机制，在稀疏连接下仍能有效传播语义信息；3）通过端到端训练联合优化图结构和语义表示。实验结果表明，TRWH 在多个稀疏推荐基准数据集上显著优于现有 GNN 和 LLM 基线方法，尤其在冷启动和长尾场景中表现突出。这项工作为语义感知的稀疏推荐提供了新思路，值得关注的原因在于它巧妙地结合了 GNN 的结构建模能力和 LLM 的语义理解能力，解决了实际推荐系统中数据稀疏性导致的性能瓶颈，具有较高的实用价值和学术影响力。",
+  "tags": [
+    "GNN",
+    "LLM",
+    "推荐系统",
+    "稀疏推荐",
+    "异构图"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:31:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TRWH 通过 LLM 生成的文本特征增强节点表示，有效缓解了稀疏推荐中的语义缺失问题。",
+      "异构图随机游走机制在稀疏连接下仍能高效传播语义和结构信号，优于传统 GNN 的消息传递方式。",
+      "该框架在冷启动和长尾推荐场景中表现突出，验证了语义感知对稀疏推荐的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

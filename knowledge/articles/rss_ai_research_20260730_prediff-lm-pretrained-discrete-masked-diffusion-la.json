@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-047",
+  "title": "PreDiff-LM: Pretrained Discrete Masked Diffusion Language Modeling with Hybrid Attention",
+  "source_url": "https://arxiv.org/abs/2607.25157",
+  "source_platform": "rss_ai_research",
+  "summary": "PreDiff-LM 提出了一种离散掩码扩散语言模型，旨在解决预训练自回归（AR）Transformer 在双向生成和填充任务中的适配问题。核心创新在于注意力机制层面：在观察到的提示（prompt）部分保留因果注意力（causal attention），而在掩码目标（masked target）部分采用全双向注意力（bidirectional attention）。这种方法避免了简单地复用 AR 权重，而是通过混合注意力结构，使模型既能利用 AR 预训练的优势，又能实现双向去噪生成。该工作值得关注，因为它为离散扩散模型与大规模预训练 AR 模型的结合提供了新思路，有望提升文本生成中的灵活性和质量，尤其在需要上下文双向理解的场景（如文本填充、编辑）中具有潜力。论文来自 arXiv 预印本，属于语言模型与扩散模型的交叉研究方向。",
+  "tags": [
+    "Diffusion Model",
+    "Language Model",
+    "Attention Mechanism",
+    "Bidirectional Generation"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:30:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过混合注意力机制（因果+双向），弥合了自回归预训练与双向去噪生成之间的鸿沟。",
+      "离散掩码扩散模型在文本填充和双向生成任务中展现出优势，无需完全重新训练模型。",
+      "该方法在保留 AR 预训练权重的同时，实现了对掩码区域的灵活建模，降低了计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

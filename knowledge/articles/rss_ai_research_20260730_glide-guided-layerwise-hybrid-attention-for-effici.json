@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-021",
+  "title": "GLIDE: Guided Layerwise Hybrid Attention for Efficient LLM Inference",
+  "source_url": "https://arxiv.org/abs/2607.24788",
+  "source_platform": "rss_ai_research",
+  "summary": "GLIDE（Guided Layerwise Hybrid Attention）是一种针对大语言模型（LLM）推理效率优化的新型注意力机制。随着LLM处理越来越长的上下文，解码阶段键值（KV）缓存的内存I/O和计算开销成为主要的吞吐量瓶颈。GLIDE通过策略性地结合滑动窗口softmax注意力与线性递归聚合来应对这一挑战。该方法受层间异质性启发：早期层对全局上下文敏感度较低，而深层则需要更全面的信息。GLIDE为不同层分配不同的注意力模式，从而在保持模型性能的同时显著降低KV缓存的内存占用和计算成本。该研究通过理论分析和实验验证，展示了GLIDE在长序列推理中的高效性，为LLM的实用化部署提供了重要优化方案。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Efficient Inference",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:28:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GLIDE通过层间异质性分析，为不同层分配混合注意力模式（滑动窗口softmax与线性递归），有效降低KV缓存开销。",
+      "该方法在长上下文推理中显著提升吞吐量，同时保持模型性能，解决了LLM部署中的关键瓶颈。",
+      "GLIDE的设计思路为未来高效注意力机制研究提供了新方向，特别是在处理超长序列时。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

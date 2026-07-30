@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-128",
+  "title": "Unlocking Spatial Grounding in Large Audio-Visual Retrieval models",
+  "source_url": "https://arxiv.org/abs/2607.24786",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种在弱监督条件下实现音频-视觉大模型中空间定位能力的方法。传统音频-视觉声音源定位需要密集的空间标注，成本高昂。作者发现，大规模预训练的音频-视觉检索模型（如CLAP、AudioCLIP等）的潜在表示中已经编码了丰富的多模态结构信息，但缺乏显式的空间定位能力。通过设计一种轻量级的空间解码器，仅利用视频级别的弱监督信号（如音频与视频的对应关系），即可从这些模型的潜在表示中提取出声音源的空间位置。实验表明，该方法在多个基准数据集上达到了与全监督方法相当的性能，显著降低了标注成本。该工作为利用现有大规模多模态模型进行细粒度空间推理提供了新思路，具有重要的实用价值，尤其是在视频理解、机器人感知和增强现实等需要空间感知的应用场景中。",
+  "tags": [
+    "Audio-Visual Learning",
+    "Weak Supervision",
+    "Sound Source Localization",
+    "Multimodal Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:35:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大规模预训练的音频-视觉检索模型潜在表示中已隐含空间信息，可通过弱监督解码器提取。",
+      "提出的轻量级空间解码器仅需视频级别弱监督，无需像素级标注，大幅降低标注成本。",
+      "该方法在多个基准上达到与全监督方法相当的性能，验证了弱监督空间定位的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

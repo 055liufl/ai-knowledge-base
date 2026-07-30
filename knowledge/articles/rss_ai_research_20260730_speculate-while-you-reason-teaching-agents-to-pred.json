@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260730-098",
+  "title": "Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL",
+  "source_url": "https://arxiv.org/abs/2607.25816",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“联合智能体-推测器强化学习”（Joint Agent-Speculator RL）的方法，旨在解决大型语言模型（LLM）智能体在工具调用过程中因等待结果而产生的延迟问题。传统方法通过预测并预执行智能体的下一个工具调用来隐藏延迟，但现有的推测器通常是独立的草稿模型或缓存轨迹，与部署的智能体自身行为存在对齐不足的问题。作者识别出这种“推测器-智能体差距”，并通过联合强化学习训练智能体和推测器，使推测器能够更准确地预测智能体的工具调用行为。实验表明，该方法在多个基准任务上显著降低了工具调用的等待时间，同时保持了任务完成质量。这项工作对于提升LLM智能体的实时交互效率具有重要意义，尤其是在需要频繁调用外部工具的复杂任务场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Tool Calling"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:33:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过联合强化学习训练智能体和推测器，可以显著减少工具调用的等待时间，提升系统响应速度。",
+      "识别并解决了推测器与智能体行为之间的对齐问题，提出了一种新的训练范式。",
+      "该方法在多个基准任务上验证了有效性，展示了在复杂任务场景中的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

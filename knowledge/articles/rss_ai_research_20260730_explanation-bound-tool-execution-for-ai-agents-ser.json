@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260730-059",
+  "title": "Explanation-Bound Tool Execution for AI Agents: Server-Verified Action Claims Without Trusting Model Rationales",
+  "source_url": "https://arxiv.org/abs/2607.25364",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“解释绑定工具执行”（Explanation-Bound Tool Execution, EBTE）的新型中介层机制，用于AI代理的工具调用场景。传统上，代理在调用工具时会附带自由格式的推理说明，但这些说明既不能作为授权依据，也无法可靠地反映代理的真实意图。EBTE通过将决策相关的推理内容转化为类型化的动作声明，并在服务器端对这些声明进行验证，检查其是否符合意图、策略、负载、工具、风险、来源和时效性等事实。该方法不依赖代理的自我解释，而是通过可验证的声明来确保工具调用的安全性和合规性。EBTE在不扩大现有授权范围的前提下，增强了工具执行的可靠性和可审计性，为AI代理的安全部署提供了新的思路。该研究值得关注，因为它解决了代理系统中自由格式推理不可信的核心问题，通过结构化的声明验证机制，提升了工具调用的透明度和安全性。",
+  "tags": [
+    "AI Agent",
+    "Tool Execution",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-30T10:24:46Z",
+  "collected_at": "2026-07-30T10:30:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EBTE将代理的自由格式推理转化为可验证的类型化动作声明，解决了传统方法中推理不可信的问题。",
+      "该方法在服务器端对声明进行多维度验证（如意图、策略、风险等），无需信任代理的自我解释。",
+      "EBTE不扩大现有授权范围，而是通过声明验证增强工具执行的安全性和可审计性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
