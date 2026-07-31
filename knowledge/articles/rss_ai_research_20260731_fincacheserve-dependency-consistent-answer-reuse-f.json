@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260731-050",
+  "title": "FinCacheServe: Dependency-Consistent Answer Reuse for Cost-Efficient RAG Serving over Mutable Enterprise Documents",
+  "source_url": "https://arxiv.org/abs/2607.26076",
+  "source_platform": "rss_ai_research",
+  "summary": "FinCacheServe 是一篇来自 arXiv 的学术论文，提出了一种面向可变企业文档的 RAG 服务中的答案复用机制。该论文指出，在企业环境中，针对同一语义分析请求的重复执行会浪费 GPU 计算资源，而答案复用可以消除这部分生成开销。然而，由于企业文档（如申报文件、证据块）和工具输出会动态变化，响应缓存必须保证依赖一致性。FinCacheServe 将每个生成的答案视为一个服务对象，以企业意图为索引，并通过文档版本、证据指纹和工具状态进行守护，从而在保证一致性的前提下实现高效的答案复用。该研究对于降低 RAG 服务成本、提升响应效率具有重要意义，尤其适用于金融、法律等文档频繁更新的领域。其创新点在于将缓存一致性问题与 RAG 服务结合，提出了依赖感知的缓存策略，为后续研究提供了新思路。",
+  "tags": [
+    "RAG",
+    "Caching",
+    "Enterprise",
+    "LLM",
+    "Serving"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:45:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "答案复用可显著减少 GPU 计算开销，但需处理文档和工具输出的动态变化。",
+      "通过文档版本和证据指纹实现依赖一致性，确保缓存答案的准确性。",
+      "将答案视为服务对象，以企业意图为索引，支持细粒度的缓存管理。",
+      "适用于文档频繁更新的企业场景，如金融申报和合规分析。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

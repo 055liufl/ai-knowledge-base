@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-132",
+  "title": "ReCo: Reweighting GRPO Against Distributional Concentration",
+  "source_url": "https://arxiv.org/abs/2607.26862",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ReCo 的方法，用于解决 GRPO（组相对策略优化）在语言模型后训练中出现的分布集中问题。GRPO 是一种广泛使用的强化学习算法，用于提升模型的推理能力，但近期研究发现，GRPO 可能导致模型在 Pass@k 指标（k 较大时）上表现不如基础模型，表明其推理路径的覆盖范围缩小。作者指出，这种退化与 GRPO 过度集中于基础模型已高概率生成的响应有关。ReCo 通过对 GRPO 的奖励加权机制进行重新设计，抑制对高概率响应的过度集中，从而保持推理路径的多样性，提升模型的泛化能力和推理覆盖度。该研究为强化学习在语言模型中的应用提供了重要改进，具有较高的实用价值和研究意义。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "GRPO",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:51:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO 的分布集中问题导致模型推理路径覆盖减少，影响 Pass@k 性能。",
+      "ReCo 通过重新加权奖励来抑制对高概率响应的过度集中，保持推理多样性。",
+      "该方法有望提升语言模型在复杂推理任务中的鲁棒性和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

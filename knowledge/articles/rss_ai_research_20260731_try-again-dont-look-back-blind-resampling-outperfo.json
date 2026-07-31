@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-056",
+  "title": "Try Again, Don't Look Back: Blind Resampling Outperforms Self-Repair in Small Code Models",
+  "source_url": "https://arxiv.org/abs/2607.26117",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文对代码生成模型中自我修复（self-repair）机制的有效性提出了质疑。自我修复是指将失败的程序连同测试输出反馈给模型，并要求其进行修正，这是代码代理中的标准组件。然而，作者指出，现有评估通常将自我修复与完全不重试的基线进行比较，这混淆了反馈的价值与额外尝试的价值。为了更严谨地评估，论文采用了安慰剂对照设计，在MBPP+基准上，针对三种不同规模的模型（1.5B、3B、7B），在匹配预算的条件下，比较了盲重采样（blind resampling）与自我修复的性能。盲重采样是指不提供任何反馈，仅让模型重新生成解决方案。研究结果表明，盲重采样在性能上优于自我修复，这意味着自我修复中的反馈可能并非提升性能的关键因素，而额外的尝试次数才是。这一发现对代码生成和代码智能体的设计具有重要意义，挑战了反馈机制的必要性，并提示资源分配应更注重重试策略而非复杂的反馈循环。",
+  "tags": [
+    "Code Generation",
+    "Self-Repair",
+    "LLM",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:46:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "盲重采样在匹配预算下优于自我修复，表明反馈可能不是性能提升的主因。",
+      "现有评估混淆了反馈价值与额外尝试价值，需采用安慰剂对照设计。",
+      "研究覆盖多种模型规模，结论具有普适性，对代码智能体设计有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

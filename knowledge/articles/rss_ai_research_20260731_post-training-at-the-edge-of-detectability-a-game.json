@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-074",
+  "title": "Post-Training at the Edge of Detectability: A Game-Theoretic Approach to Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2607.26358",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于博弈论的方法来优化语言模型微调中的KL正则化系数，解决了强化学习（RL）微调中平衡目标性能与参考策略漂移的难题。传统上，KL正则化系数通过启发式或超参数搜索设定，缺乏理论指导。作者将微调过程建模为博弈，其中模型与一个对抗性评估器互动，从而动态调整正则化强度，使得模型在保持接近参考策略的同时最大化任务奖励。该方法在理论上提供了系数选择的原理性依据，并在实验中展示了优于固定系数的性能，减少了手动调参成本。这项研究对LLM对齐和微调实践具有重要价值，尤其适用于资源受限或需要精细控制漂移的场景。其创新性在于将博弈论引入超参数优化，为RLHF（基于人类反馈的强化学习）的自动化提供了新视角。",
+  "tags": [
+    "LLM",
+    "RLHF",
+    "Game Theory",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:47:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "博弈论框架为KL正则化系数提供了动态调整的理论基础，替代了启发式选择。",
+      "该方法在保持模型性能的同时有效控制漂移，减少了对人工调参的依赖。",
+      "实验表明，自适应正则化在多种任务上优于固定系数，提升了微调效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-036",
+  "title": "Emergent Sparsity in Frozen Random CNN Feature Extractors for Deep Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.26059",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文报告了一个引人注目的现象：使用冻结的、随机初始化的CNN特征提取器进行深度强化学习训练时，智能体自发地发展出极其稀疏的全连接层表示，而无需任何稀疏性诱导目标。具体而言，在第一个全连接层（FC1，维度从3136降至64）中，智能体仅通过64个神经元中的1-3个（确定性Pong环境）或5-11个（随机Pong环境）来压缩任务相关信息。这一发现揭示了随机特征提取器在强化学习中的潜在机制，表明即使没有显式稀疏约束，网络也能通过训练自动形成高效的信息编码路径。该研究对理解深度强化学习的内部表征、优化网络架构以及设计更高效的训练算法具有重要意义，可能为资源受限场景下的强化学习应用提供新思路。",
+  "tags": [
+    "Deep Reinforcement Learning",
+    "Sparsity",
+    "CNN",
+    "Feature Extraction"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:44:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结的随机CNN特征提取器在强化学习中能自发产生高度稀疏的全连接层表示，无需显式稀疏性目标。",
+      "稀疏性程度随任务随机性变化：确定性环境（Pong）中仅需1-3个神经元，随机环境中需5-11个，表明稀疏性适应任务复杂度。",
+      "该现象揭示了随机特征提取器在强化学习中的有效性，挑战了传统上对特征提取器需训练或预训练的观点。",
+      "稀疏表示可能为解释强化学习智能体的决策机制和优化网络结构提供新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

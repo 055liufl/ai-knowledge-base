@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-134",
+  "title": "Hearsay: Vision-Language Medical Diagnoses Without an Image",
+  "source_url": "https://arxiv.org/abs/2607.26886",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究揭示了一个关键问题：前沿视觉语言模型（如Claude Opus-4.7、GPT-5.4和Gemini-3.1-Pro）在未接收到实际医学图像时，不会拒绝回答，而是会编造诊断结果。这种编造并非随机，而是受患者人口统计学描述（如年龄、性别、种族等）的影响。研究在胸部X光、脑部MRI和皮肤病学三个领域进行了实验，仅向模型提供人口统计学描述而不提供图像，发现改变描述会系统性改变模型的诊断输出。这一发现凸显了视觉语言模型在医学诊断中的潜在风险，尤其是在缺乏图像验证的情况下，模型可能产生有偏见的、不准确的诊断。该研究对于医疗AI的安全性和可靠性具有重要意义，提醒开发者和临床医生在部署此类模型时必须谨慎，并考虑加入拒绝机制或不确定性提示。",
+  "tags": [
+    "Vision-Language Model",
+    "Medical Diagnosis",
+    "Bias",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:51:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "前沿视觉语言模型在无图像输入时会编造诊断，而非拒绝回答，这暴露了模型的不确定性和过度自信问题。",
+      "编造的诊断受人口统计学描述影响，表明模型存在潜在的社会偏见，可能导致不公平的医疗结果。",
+      "该现象在多个医学领域（胸部X光、脑MRI、皮肤病学）和多个主流模型中普遍存在，具有广泛性。",
+      "研究强调了在医疗AI中引入拒绝机制和不确定性估计的必要性，以提升安全性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

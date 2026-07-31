@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260731-094",
+  "title": "Recover, Decode, Reguard: Guard-Agnostic Defense Amplification againstEncoded VLM Jailbreaks",
+  "source_url": "https://arxiv.org/abs/2607.26574",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对视觉语言模型（VLM）的越狱攻击的防御方法，称为“恢复-解码-再防护”（Recover, Decode, Reguard）。该方法针对现有安全分类器（即“防护”）的缺陷：它们仅基于输入的表面形式而非语义进行判断，导致恶意请求通过编码（如集合论、形式逻辑、稀有语言、代码或图像文本）绕过防护。作者提出一种与防护无关的放大机制，通过转录图像内容并重新表述编码文本，将输入转换为防护能够有效处理的自然语言形式，从而缩小“解码差距”。该研究具有重要的实用价值，因为VLM的广泛应用使得安全防御成为关键问题，而现有防护的脆弱性可能被恶意利用。该方法的创新性在于其防护无关性，即不依赖于特定防护模型，而是通过预处理步骤增强任何防护的鲁棒性。实验结果表明，该方法能显著提高对编码越狱攻击的防御能力，同时保持对正常输入的可用性。该工作为VLM安全领域提供了新的防御思路，值得关注。",
+  "tags": [
+    "VLM",
+    "Jailbreak",
+    "Safety",
+    "Defense",
+    "Encoding"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:48:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有VLM安全防护存在解码差距，即基于表面形式的判断无法识别编码后的恶意内容。",
+      "提出一种防护无关的恢复-解码-再防护方法，通过转录和重述输入来增强防御。",
+      "该方法能有效应对多种编码形式（如形式逻辑、代码、图像文本）的越狱攻击。",
+      "实验验证了该方法在保持可用性的同时显著提升安全性的效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

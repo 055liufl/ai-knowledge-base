@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260731-067",
+  "title": "SARC-DQ: Runtime Data-Quality Gating for Agentic AI: Silent Evidence Defects, the Incompetence Shield, and Downstream-Only Remediation",
+  "source_url": "https://arxiv.org/abs/2607.26313",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SARC-DQ的运行时数据质量门控机制，用于解决智能体（Agentic AI）系统中因元数据缺陷（如数据过期、记录被取代）导致错误行动的问题。这些缺陷在数据载荷中格式良好，但仅通过新鲜度、血缘或来源信息才能发现，且不会进入智能体的上下文，因此智能体无法察觉。SARC-DQ通过运行时门控在数据进入智能体上下文前进行质量检查，并采用仅下游修复策略，避免智能体因不可见数据缺陷而做出错误决策。在定价补货基准测试中，该方法展示了显著效果，表明其能有效提升智能体系统的可靠性和安全性。该研究对于企业级AI应用尤为重要，因为数据质量直接关联到行动成本，为智能体系统提供了一种新的防御机制。",
+  "tags": [
+    "Agentic AI",
+    "Data Quality",
+    "Runtime Gating",
+    "LLM",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:46:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "元数据缺陷（如过期价格）是智能体系统中最危险的缺陷，因为它们格式良好但仅通过元数据可检测，且智能体无法感知。",
+      "SARC-DQ通过运行时门控在数据进入上下文前拦截缺陷，并采用仅下游修复策略，避免智能体错误行动。",
+      "在定价补货基准测试中，SARC-DQ显著提升了智能体性能，验证了其有效性。",
+      "该机制为智能体系统提供了一种'无能盾牌'，防止因不可见数据缺陷导致的错误决策，对高成本企业应用至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

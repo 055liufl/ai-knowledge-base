@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-106",
+  "title": "FPSGen: Flexible Point Cloud Scene Generation with BEV-Supported Transport Flows",
+  "source_url": "https://arxiv.org/abs/2607.26645",
+  "source_platform": "rss_ai_research",
+  "summary": "FPSGen 提出了一种基于 BEV（鸟瞰图）支持的传输流（Transport Flows）的灵活点云场景生成方法，旨在解决户外场景中基于点的生成任务。现有方法主要聚焦于 LiDAR 条件下的补全，其训练过程通过扰动完整的地面真值场景来构造带噪点云，而推理时则通过向重复的部分扫描添加噪声来初始化。这种训练与推理的不匹配继承了部分扫描的稀疏性和可见性偏差，导致生成结果在远距离区域稀疏且遮挡区域几何不完整。FPSGen 通过引入 BEV 支持，将点云生成建模为传输流，从而更灵活地处理不同输入条件，并缓解上述偏差。该方法有望提升户外场景生成的完整性和一致性，对自动驾驶仿真、机器人感知等领域具有重要价值。",
+  "tags": [
+    "Point Cloud",
+    "Scene Generation",
+    "BEV",
+    "Transport Flows",
+    "LiDAR"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:49:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FPSGen 利用 BEV 表示作为辅助条件，增强了点云生成的空间一致性，有效缓解了部分扫描带来的稀疏性问题。",
+      "通过传输流（Transport Flows）建模，FPSGen 实现了灵活的条件生成，能够适应多种输入场景，优于传统的固定扰动方法。",
+      "该方法针对训练-推理不匹配问题，提出了新的生成框架，有望提升远距离和遮挡区域的几何完整性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

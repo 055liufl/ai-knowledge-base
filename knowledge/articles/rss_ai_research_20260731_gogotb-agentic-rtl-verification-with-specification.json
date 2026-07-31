@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-006",
+  "title": "GoGoTB: Agentic RTL Verification with Specification-Grounded Coverage Closure",
+  "source_url": "https://arxiv.org/abs/2607.26181",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 GoGoTB，一种基于智能体（Agentic）的 RTL 验证方法，旨在通过规范导向的覆盖率收敛来应对集成电路前端验证中的重大挑战。传统验证流程中，单个遗漏的 bug 可能导致昂贵的芯片返工，而现有基于大语言模型（LLM）的验证方法通常以独立单轮调用生成各组件，缺乏共享上下文，导致接口不匹配难以检测，且覆盖率报告与验证目标脱节。GoGoTB 通过引入智能体协作机制，使多个 LLM 智能体共享上下文，协同完成测试平台生成、覆盖率分析和收敛优化，从而更有效地实现覆盖率闭合。该方法将规范（specification）作为核心指导，确保验证过程与设计意图对齐，提升验证的完整性和效率。该研究展示了 LLM 在硬件验证领域的应用潜力，为自动化验证工具的发展提供了新方向，尤其对复杂芯片设计的前端验证具有实际意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RTL Verification",
+    "EDA",
+    "Coverage Closure"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:42:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GoGoTB 利用多智能体 LLM 协作，通过共享上下文解决传统独立调用导致的接口不匹配问题。",
+      "以规范为导向的覆盖率收敛机制，确保验证活动与设计意图紧密对齐，提高验证完整性。",
+      "该方法有望显著降低芯片前端验证的人工成本，并减少因验证疏漏导致的芯片返工风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

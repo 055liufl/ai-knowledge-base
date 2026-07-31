@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-086",
+  "title": "Collaborative Weighting with Pessimistic Critic for Mitigating Overestimation in Off-Policy Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2607.26509",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“协作加权与悲观评论家”的方法，旨在缓解离策略强化学习中常见的过估计问题。在连续控制任务中，深度离策略算法依赖神经价值函数近似来指导策略改进，但时序差分学习会产生噪声目标，导致非平稳优化，而贪婪策略更新会放大早期估计误差。这些误差的递归传播会造成持续的过估计偏差，降低训练稳定性。该方法通过引入协作加权机制和悲观评论家，动态调整价值估计的权重，并采用保守的评估策略，以抑制过估计并提升算法鲁棒性。该研究为强化学习中的价值估计偏差问题提供了新思路，对提升连续控制任务的性能具有实际意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Off-Policy",
+    "Overestimation",
+    "Value Function"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:48:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "过估计偏差源于TD学习噪声和贪婪更新的递归放大，影响训练稳定性。",
+      "协作加权机制通过动态调整价值估计权重，减少单一估计器的偏差影响。",
+      "悲观评论家采用保守评估，有效抑制过估计，提升策略改进的可靠性。",
+      "该方法在连续控制任务中具有潜在优势，可增强离策略算法的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

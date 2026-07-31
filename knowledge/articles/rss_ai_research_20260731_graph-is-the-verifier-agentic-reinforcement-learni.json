@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-109",
+  "title": "Graph Is the Verifier: Agentic Reinforcement Learning for Interprocedural Vulnerability Detection",
+  "source_url": "https://arxiv.org/abs/2607.26656",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于智能体强化学习（Agentic RL）的跨函数漏洞检测方法，核心创新在于利用图结构作为验证器来提供可靠的奖励信号。传统学习型漏洞检测器通常对单个函数进行独立分类，但实际漏洞往往涉及多个函数，作者在真实CVE样本中发现71.7%的漏洞函数需要函数外部的证据才能正确分类。为此，他们引入智能体RL，让模型自主收集跨函数证据，但RL面临奖励稀疏和不可靠的问题。本文的解决方案是使用图（如程序依赖图或调用图）作为验证器，通过图结构约束和验证最终检测结果，从而提供更稳定的奖励信号。该方法有望显著提升漏洞检测的准确性和泛化能力，尤其适用于真实世界复杂漏洞场景。该研究结合了强化学习、图神经网络和程序分析，为AI驱动的软件安全提供了新思路。",
+  "tags": [
+    "Agentic RL",
+    "Vulnerability Detection",
+    "Graph Neural Network",
+    "Program Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:49:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "71.7%的漏洞函数需要跨函数证据，传统孤立分类方法存在重大缺陷",
+      "智能体RL可自主收集证据，但需要图结构作为验证器提供可靠奖励",
+      "图验证器能有效约束智能体行为，提升检测准确性和可解释性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-111",
+  "title": "Efficient Heteroscedastic Bayesian Optimization for Risk-Aware AutoRL",
+  "source_url": "https://arxiv.org/abs/2607.26680",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ERAHBO（高效风险规避异方差贝叶斯优化）的新方法，用于风险感知的自动强化学习（AutoRL）。强化学习（RL）在复杂任务中表现出色，但其结果具有高度随机性，且期望性能和变异性通常依赖于超参数（HP）配置。ERAHBO 通过同时建模学习结果的均值和方差作为 HP 配置的函数，实现了对超参数的高效且风险规避的优化。该方法在贝叶斯优化框架下，利用异方差高斯过程（GP）来捕捉输出方差随输入变化的特点，从而在优化过程中不仅考虑期望性能，还考虑性能的波动性，以选择更稳健的超参数配置。该研究解决了 AutoRL 中因随机性导致的超参数优化困难问题，为在不确定环境下进行可靠的策略调优提供了新思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Bayesian Optimization",
+    "AutoRL",
+    "Reinforcement Learning",
+    "Heteroscedastic"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:50:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ERAHBO 通过同时建模均值和方差，实现了风险规避的超参数优化，优于仅考虑期望性能的传统方法。",
+      "异方差高斯过程能够有效捕捉 RL 中性能方差随超参数变化的特性，提高优化鲁棒性。",
+      "该方法为 AutoRL 提供了一种高效且稳健的调参策略，有助于在随机环境中获得更可靠的学习性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

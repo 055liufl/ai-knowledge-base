@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-088",
+  "title": "A Graph-Native Bitemporal Memory Store for Conversational AI Agents",
+  "source_url": "https://arxiv.org/abs/2607.26520",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向对话式AI代理的图原生双时态记忆存储方案。该方案针对当前AI代理在跨会话持久记忆方面的不足，指出常见的解决方案——如将完整聊天历史注入上下文窗口或依赖第三方记忆服务——分别存在上下文预算耗尽和用户数据不受控的问题。作者设计了一种代理本地的Neo4j属性图存储，并集成了HNSW向量索引，以支持高效的双时态数据管理（即同时跟踪有效时间和事务时间）。这种设计允许代理在本地持久化记忆，同时支持时间点查询和向量相似性检索，从而在不牺牲隐私的前提下增强对话的连续性和个性化。该研究为构建更智能、更私密的对话代理提供了基础设施层面的创新，值得关注。",
+  "tags": [
+    "Memory",
+    "Graph Database",
+    "Conversational AI",
+    "Vector Search",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:48:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过图原生存储和双时态模型，实现了对对话历史的精细时间管理，支持复杂的时间点回溯查询。",
+      "结合HNSW向量索引，使得记忆检索不仅限于结构化查询，还能进行语义相似性搜索，增强代理的上下文理解。",
+      "代理本地化的存储方案避免了第三方服务的数据隐私问题，同时减轻了上下文窗口的压力，提升了系统的可扩展性。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

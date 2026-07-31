@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-141",
+  "title": "BayesAME: Bayesian Active Model Evaluation",
+  "source_url": "https://arxiv.org/abs/2607.27023",
+  "source_platform": "rss_ai_research",
+  "summary": "BayesAME 提出了一种基于贝叶斯框架的主动模型评估方法，旨在解决大型生成模型在基准测试中评估耗时且计算成本高昂的问题。传统方法通常需要预先指定核心集（coreset）的大小，而 BayesAME 能够在可靠性能估计优先于效率的场景下，自动决定何时停止评估，从而在保证估计精度的同时减少计算开销。该方法通过贝叶斯主动学习策略，动态选择最具信息量的样本进行评估，并利用后验分布对完整基准性能进行推断。这项研究对于降低大模型评估成本、加速模型迭代具有重要意义，尤其适用于资源受限的研究和生产环境。其创新点在于将主动学习与贝叶斯推断结合，实现了评估过程的自动化和自适应，为模型评估领域提供了一种新的高效工具。",
+  "tags": [
+    "Bayesian",
+    "Active Learning",
+    "Model Evaluation",
+    "Coreset"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:52:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BayesAME 通过贝叶斯主动学习动态选择评估样本，无需预设核心集大小，自动平衡评估效率与精度。",
+      "该方法在保证可靠性能估计的前提下，显著降低了大型生成模型在基准测试中的计算成本。",
+      "BayesAME 的停止准则基于后验不确定性，使得评估过程自适应于模型和基准的复杂性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

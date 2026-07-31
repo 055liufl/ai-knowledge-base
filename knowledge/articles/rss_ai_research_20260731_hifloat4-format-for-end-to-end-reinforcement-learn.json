@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-087",
+  "title": "HiFloat4 Format for End-To-End Reinforcement Learning Post-Training of Large Language Models",
+  "source_url": "https://arxiv.org/abs/2607.26515",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了首个端到端 FP4 强化学习后训练方案，其中 rollout 和训练策略（包括前向和反向传播）均以 4 位精度运行。系统研究表明，FP4 强化学习性能下降的主要来源并非训练侧的量化误差，而是 rollout 激活量化：异常值将动态范围拉伸得过大，导致大量激活值下溢为零。该工作为低精度强化学习后训练提供了新的视角，可能显著降低大语言模型后训练的计算和内存开销，对高效模型部署具有重要意义。",
+  "tags": [
+    "FP4",
+    "Quantization",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:48:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次实现端到端 FP4 强化学习后训练，覆盖 rollout 和训练全流程。",
+      "识别出 rollout 激活量化是性能下降的主要瓶颈，而非训练侧量化。",
+      "异常值导致动态范围拉伸，引发大量激活值下溢，为量化策略优化提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

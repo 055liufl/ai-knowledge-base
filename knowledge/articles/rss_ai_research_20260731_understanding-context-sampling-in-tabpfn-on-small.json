@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-101",
+  "title": "Understanding Context Sampling in TabPFN on Small Tabular Datasets",
+  "source_url": "https://arxiv.org/abs/2607.26628",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了TabPFN模型在小规模表格数据集上的上下文采样策略。TabPFN通过上下文学习进行分类，即利用一组带标签的训练样本（上下文或原型）进行预测，无需梯度更新。然而，在实际应用中，用户需要选择上下文的大小和具体样本。作者在15个OpenML数据集上通过重复上下文采样，系统分析了这些选择对预测稳定性、准确性和选择成本的影响。研究发现，上下文采样策略对模型性能有显著影响，合理的采样方法可以提升预测稳定性并降低计算成本。该研究为TabPFN的实际应用提供了指导，有助于优化小样本场景下的模型配置。",
+  "tags": [
+    "TabPFN",
+    "In-Context Learning",
+    "Tabular Data",
+    "Context Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:49:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文采样策略显著影响TabPFN在小数据集上的预测稳定性和准确性。",
+      "重复采样可以降低选择成本，但需要平衡计算开销与性能提升。",
+      "研究基于15个OpenML数据集，提供了实证指导，有助于实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

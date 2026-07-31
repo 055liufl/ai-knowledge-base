@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-108",
+  "title": "Constitutional Midtraining: Content Presence Drives Alignment Gains",
+  "source_url": "https://arxiv.org/abs/2607.26654",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“宪法式中期训练”（Constitutional Midtraining）的新方法，旨在解决传统后训练对齐（post-training alignment）在后续微调中容易退化的问题。作者构建了一个包含3.94亿token的宪法语料库，基于Anthropic的宪法原则，在120B参数规模的模型中期训练阶段插入基于价值观的内容，并通过2x2实验设计（课程顺序与去重策略）来评估其对对齐持久性的影响。研究结果表明，中期训练中的内容存在性（content presence）显著影响对齐效果，且该方法能产生比后训练更持久的对齐。该研究为对齐技术提供了新的训练阶段视角，具有重要的理论价值和实践潜力。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Midtraining",
+    "Constitutional AI"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:49:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "中期训练阶段插入宪法式内容可产生更持久的对齐效果，优于传统后训练。",
+      "内容存在性（content presence）是影响对齐增益的关键因素，而非仅靠训练顺序。",
+      "2x2实验设计揭示了课程顺序与去重策略对对齐效果有交互影响。",
+      "该方法为在模型规模扩大时实现稳健对齐提供了新路径，可能减少对后训练的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

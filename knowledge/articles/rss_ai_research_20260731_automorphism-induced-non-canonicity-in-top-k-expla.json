@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260731-070",
+  "title": "Automorphism-Induced Non-Canonicity in Top-k Explanations of Graph Neural Networks",
+  "source_url": "https://arxiv.org/abs/2607.26344",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究图神经网络（GNN）可解释性中的非规范性（non-canonicity）问题。具体而言，当输入分子含有两个化学等价的硝基时，基于梯度的GNN解释器为它们分配的归因分数完全相同，因为消息传递机制是置换等变的，任何自同构都会保持归因不变。然而，标准的top-k边报告会从两个等价基团中选出一个，而选择结果取决于数组顺序，这构成了一种结构性的障碍。该研究揭示了GNN解释中的这一固有缺陷，可能导致对模型决策的误解，尤其是在化学等对称性重要的领域。该工作对可解释AI和GNN的可靠性提出了重要挑战，值得关注。",
+  "tags": [
+    "GNN",
+    "Explainability",
+    "Equivariance"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:47:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GNN解释器的top-k选择在对称输入下具有非规范性，结果受数组顺序影响。",
+      "消息传递的置换等变性导致等价结构获得相同归因，但报告机制破坏了这种对称性。",
+      "该问题在化学分子等对称性关键领域可能引发严重误解，需设计更鲁棒的解释方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

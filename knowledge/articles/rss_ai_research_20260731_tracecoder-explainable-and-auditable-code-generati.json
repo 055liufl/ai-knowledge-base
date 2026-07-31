@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260731-008",
+  "title": "TraceCoder: Explainable and Auditable Code Generation with Position-Key Snippet Versioning",
+  "source_url": "https://arxiv.org/abs/2607.26307",
+  "source_platform": "rss_ai_research",
+  "summary": "TraceCoder 提出了一种面向 LLM 代码生成的可解释与可审计框架。针对当前基于 LLM 的编码代理将代码作为黑盒输出、缺乏逐行推理依据、基准驱动修复过程不可追溯以及事后审计困难等问题，TraceCoder 通过三个互补机制加以解决：一是关系型片段历史模式，记录每次修复事件对应的基准引用、轮次和失败信息；二是位置键片段版本控制，确保代码片段的版本可追踪；三是提供可解释的代码生成过程，使审计成为可能。该工作旨在提升代码生成的可信度与透明度，对软件工程和 AI 安全领域具有重要价值。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Explainability",
+    "Auditability",
+    "Versioning"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:42:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TraceCoder 通过关系型片段历史模式记录每次修复的基准、轮次和失败信息，实现代码演化的完整追溯。",
+      "位置键片段版本控制机制使得代码片段版本可精确定位，增强了代码生成过程的可审计性。",
+      "该框架将黑盒代码生成转变为可解释过程，有助于提升 LLM 编码代理在关键场景中的可信度。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

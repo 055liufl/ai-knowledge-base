@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260731-084",
+  "title": "Audio-Anchored Fusion of Multi-Ratio DiT Reconstruction Residuals for Cross-Domain Audio Deepfake Detection",
+  "source_url": "https://arxiv.org/abs/2607.26472",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种跨域音频深度伪造检测方法，通过使用仅在真实语音上训练的扩散变换器（DiT）作为冻结重建探针，在不同掩码比率（0.5、0.75、0.9）下生成多比率残差图。这些残差对域变化敏感，因此作者设计了一个音频锚定检测器，将冻结的WavLM听觉表示投影并融合到残差中，以增强跨域泛化能力。该方法旨在解决音频深度伪造检测器在生成器、语料库或录音条件变化时性能下降的问题，通过利用重建残差作为域敏感特征，结合预训练音频表示，提高检测的鲁棒性和适应性。该研究对音频安全领域具有重要价值，特别是在应对新型伪造攻击和跨数据集场景中，提供了一种新颖的融合策略，有望提升实际应用中的检测可靠性。",
+  "tags": [
+    "Audio Deepfake Detection",
+    "Diffusion Transformer",
+    "Cross-Domain",
+    "Residual Learning",
+    "Audio Security"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:48:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用冻结的DiT重建残差作为域敏感特征，有效捕捉伪造痕迹，提升跨域检测性能。",
+      "多比率掩码策略（0.5、0.75、0.9）提供多尺度重建信息，增强特征表达能力。",
+      "音频锚定融合方法结合WavLM表示，实现特征互补，提高检测鲁棒性。",
+      "该方法在跨域场景下具有显著优势，为音频深度伪造检测提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-065",
+  "title": "Entity Resolution in Practice: Lessons from a Self-Serve Pipeline",
+  "source_url": "https://arxiv.org/abs/2607.26298",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个自服务实体解析（ER）系统的实践经验，该系统在六个基准数据集上进行了评估，数据集规模从864条到500万条记录不等。作者总结了现有ER文献中未提及的三个关键教训：首先，没有单一匹配算法能在所有场景中胜出，因此自服务管道无法预知下一个数据集，建议针对每个数据集训练多种算法族，并通过自动对比选择最佳方案；其次，精确率和召回率需要分别优化，不能依赖单一方法同时解决；第三，系统设计需兼顾可扩展性和易用性。这些发现对构建通用、鲁棒的实体解析工具具有重要指导意义，尤其适用于数据集成、数据清洗等实际应用场景。该研究填补了ER系统在自服务环境下的实践空白，为开发者提供了实用建议。",
+  "tags": [
+    "Entity Resolution",
+    "Data Integration",
+    "Machine Learning",
+    "Self-Serve Pipeline"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:46:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自服务ER系统需要多算法集成，通过自动对比选择最优，以适应不可预测的数据集。",
+      "精确率和召回率的优化应分开处理，采用针对性策略。",
+      "系统设计需在可扩展性和易用性之间取得平衡，以支持大规模数据。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

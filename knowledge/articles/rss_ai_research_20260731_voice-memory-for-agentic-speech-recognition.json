@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260731-078",
+  "title": "Voice Memory for Agentic Speech Recognition",
+  "source_url": "https://arxiv.org/abs/2607.26410",
+  "source_platform": "rss_ai_research",
+  "summary": "Voice Memory 是一种面向智能体语音识别（Agentic Speech Recognition）的推理阶段方案。其核心机制是在流式识别过程中，一个冻结的校正器（frozen corrector）读取每个领域的单一 memory.md 文件，并针对每个语音片段决定是采纳当前假设还是弃权保留 1-best 结果。与此同时，一个基于分数门控的优化器（score-gated optimizer）异步地通过有界编辑来修订该文件，仅当编辑能严格提升留出集（held-out）分数时才接受修改。该方法从经典的 ASR-LM 框架扩展而来，旨在通过记忆文件实现领域自适应，而无需重新训练模型。该研究值得关注，因为它提出了一种轻量级、推理时自适应的语音识别新思路，结合了记忆机制和异步优化，有望提升特定领域（如专业术语、个性化词汇）的识别准确性，同时保持模型冻结，降低部署成本。",
+  "tags": [
+    "ASR",
+    "Agent",
+    "Memory",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-07-31T10:38:54Z",
+  "collected_at": "2026-07-31T10:47:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出推理时记忆机制，通过 memory.md 文件实现领域自适应，无需微调模型。",
+      "采用冻结校正器与异步优化器分离的设计，确保流式识别效率与记忆更新安全性。",
+      "扩展经典 ASR-LM 框架，为智能体语音识别提供新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
