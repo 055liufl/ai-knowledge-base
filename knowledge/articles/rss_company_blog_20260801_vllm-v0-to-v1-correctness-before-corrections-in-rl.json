@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260801-026",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由 ServiceNow AI 团队撰写，深入探讨了 vLLM 从 V0 到 V1 的演进过程中，在强化学习（RL）场景下如何优先保证正确性（Correctness）而非急于进行修正（Corrections）。文章指出，在 RL 训练中，推理引擎的稳定性和正确性至关重要，因为任何微小的错误都可能导致训练不稳定或模型性能下降。vLLM V1 版本通过重构架构，优化了内存管理、调度和内核执行，显著提升了在 RL 环境下的可靠性和效率。作者强调了在引入新功能或优化之前，确保基础正确性的重要性，并分享了在实际 RL 工作负载中应用 vLLM V1 的经验和最佳实践。该文章对于使用 vLLM 进行大规模 RL 训练的研究人员和工程师具有很高的参考价值，揭示了推理引擎在 RL 闭环中的关键作用。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "性能优化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-01T09:59:38Z",
+  "collected_at": "2026-08-01T10:04:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 通过架构重构优先保障正确性，为 RL 训练提供稳定基础。",
+      "在 RL 场景下，推理引擎的微小错误会被放大，导致训练失败。",
+      "V1 版本在内存和调度上的优化显著提升了 RL 工作负载的效率。",
+      "正确性优先的策略比盲目添加新功能更能提升整体系统可靠性。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

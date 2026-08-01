@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260801-013",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章由 Hugging Face 发布，探讨了如何针对用户自己的工具集来评估开源模型是否具备足够的“代理性”（agentic capability）。文章指出，现有的通用基准测试（如 MMLU、HumanEval）无法准确反映模型在实际工具调用场景中的表现，因此提出了一个自建基准测试的方法论。作者详细介绍了如何利用 Hugging Face 的轻量级框架（如 smolagents）来构建自定义评估环境，模拟真实工具调用流程，并对比不同开源模型（如 Llama、Mistral 等）在任务完成率、工具选择准确性、错误恢复能力等指标上的表现。文章强调，这种基于自身工具链的评估能更真实地反映模型在特定业务场景中的适用性，避免被通用基准误导。此外，文章还提供了代码示例和最佳实践，帮助开发者快速上手。该内容对于正在构建 Agent 应用的开发者具有很高的实用价值，因为它提供了一种可复现、可定制的评估方案，有助于模型选型和优化。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-01T09:59:38Z",
+  "collected_at": "2026-08-01T10:03:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法准确评估模型的代理能力，需要基于实际工具链进行定制化评估。",
+      "利用 smolagents 等轻量级框架可以快速构建自定义评估环境，模拟真实工具调用场景。",
+      "评估指标应关注任务完成率、工具选择准确性和错误恢复能力，而非仅依赖传统 NLP 指标。",
+      "开源模型在代理任务上的表现差异显著，自建基准有助于选择最适合业务需求的模型。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

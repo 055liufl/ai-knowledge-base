@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260801-086",
+  "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+  "source_url": "https://huggingface.co/blog/intel-qwen3-agent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了英特尔在Intel Core Ultra平台上，通过深度剪枝的草稿模型加速Qwen3-8B智能体的推理性能。文章聚焦于一种结合投机解码（Speculative Decoding）与模型剪枝的优化策略：使用深度剪枝后的较小模型作为草稿模型，在保持生成质量的同时显著提升解码速度。该方案针对Intel Core Ultra的异构计算架构（CPU+GPU+NPU）进行了优化，展示了如何利用硬件特性实现端到端的智能体工作负载加速。文章通过实验数据表明，该方法在Qwen3-8B上实现了显著的token生成吞吐量提升，同时降低了延迟，为在边缘设备上部署大型语言模型智能体提供了实用路径。这一工作对于推动LLM在本地设备上的实时交互应用（如个人助手、代码生成等）具有重要意义，体现了模型压缩与硬件协同设计的趋势。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Model Pruning",
+    "Edge AI",
+    "Intel"
+  ],
+  "author": null,
+  "published_at": "2026-08-01T09:59:38Z",
+  "collected_at": "2026-08-01T10:08:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度剪枝的草稿模型结合投机解码，可在不牺牲生成质量的前提下大幅提升LLM推理速度。",
+      "针对Intel Core Ultra的异构架构进行协同优化，能有效释放边缘设备的AI潜力。",
+      "该方案为在资源受限设备上部署复杂智能体（如Qwen3-8B）提供了可落地的性能优化路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

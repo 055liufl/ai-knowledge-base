@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260801-141",
+  "title": "Prefill and Decode for Concurrent Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-prefill-decode-concurrent-requests",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章来自 Hugging Face 博客，由 TNG Technology Consulting 撰写，深入探讨了在大语言模型（LLM）推理过程中，针对并发请求的预填充（Prefill）和解码（Decode）阶段的性能优化策略。文章指出，LLM 推理通常分为两个阶段：预填充阶段处理输入提示并生成键值（KV）缓存，解码阶段逐步生成输出 token。在并发请求场景下，这两个阶段的计算和内存访问特性差异显著，预填充是计算密集型（compute-bound），而解码是内存带宽密集型（memory-bound）。文章分析了如何通过调度策略（如连续批处理、分块预填充）和资源分配优化来提升吞吐量和降低延迟，并讨论了 GPU 利用率、KV 缓存管理以及请求优先级等关键因素。该内容对于理解 LLM 服务化部署中的性能瓶颈和优化方向具有重要参考价值，尤其适合关注推理引擎设计和系统优化的开发者。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "并发调度",
+    "KV缓存",
+    "性能分析"
+  ],
+  "author": null,
+  "published_at": "2026-08-01T09:59:38Z",
+  "collected_at": "2026-08-01T10:12:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预填充阶段是计算密集型，解码阶段是内存密集型，两者在并发场景下需要不同的资源优化策略。",
+      "通过连续批处理和分块预填充可以有效提高 GPU 利用率，减少请求等待时间。",
+      "KV 缓存管理是并发请求性能的关键，合理的内存分配和复用能显著提升吞吐量。",
+      "调度策略（如请求优先级和动态批处理）对平衡延迟和吞吐量至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
