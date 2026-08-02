@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260802-014",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，探讨了如何评估开源模型在自定义工具调用（tool use）场景下的智能体（agentic）能力。文章指出，现有的通用基准测试（如 MMLU、HumanEval）无法充分反映模型在真实工具调用环境中的表现，因此提出了一种新的评估方法：用户可以在自己的工具集上对开源模型进行基准测试。该方法强调使用私有或特定领域的工具定义（如 JSON schema）和真实任务，通过模拟智能体循环（agent loop）来测量模型正确选择工具、生成参数、处理错误和最终完成任务的效率。文章还提供了实践指导，包括如何构建评估数据集、设计测试流程、以及如何解读结果，并讨论了开源模型（如 Llama、Mistral）与闭源模型（如 GPT-4）在工具调用上的差距。这一方法对于希望在生产环境中部署智能体的开发者具有重要参考价值，因为它允许针对特定场景进行定制化评估，避免了对通用基准的过度依赖。该博客内容实用性强，填补了智能体评估领域的空白，值得关注。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Tool Use",
+    "Open Models",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-02T09:57:03Z",
+  "collected_at": "2026-08-02T10:00:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法准确反映模型在真实工具调用场景中的智能体能力，需要定制化评估。",
+      "提出了一种在自定义工具集上评估开源模型的方法，强调使用真实任务和工具定义。",
+      "开源模型在工具调用上与闭源模型存在差距，但通过针对性评估可以优化选择。",
+      "该方法为开发者提供了在部署前验证模型智能体能力的实用框架。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

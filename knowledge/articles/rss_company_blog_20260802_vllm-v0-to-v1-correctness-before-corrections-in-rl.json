@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260802-027",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由ServiceNow AI团队发布，深入探讨了vLLM推理引擎从V0到V1的演进过程，并重点强调了在强化学习（RL）场景中“正确性优先于修正”的设计理念。文章指出，在RL训练中，推理引擎的稳定性和正确性比单纯的速度优化更为关键，因为任何微小的数值误差或状态不一致都可能导致训练不稳定或策略漂移。vLLM V1版本通过重构调度器、优化KV缓存管理、改进采样算法和增强数值稳定性，显著提升了在RL工作负载下的可靠性。文章还对比了V0与V1在批处理策略、内存管理、并行计算等方面的差异，并提供了实际案例和基准测试结果，展示了V1在长时间运行RL任务中的优势。该内容对于理解大模型推理引擎在RL训练中的角色、以及如何平衡性能与正确性具有重要参考价值，尤其适合从事LLM训练和推理优化的研究人员和工程师阅读。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "LLM训练",
+    "系统优化"
+  ],
+  "author": null,
+  "published_at": "2026-08-02T09:57:03Z",
+  "collected_at": "2026-08-02T10:01:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在RL训练中，推理引擎的正确性和稳定性比峰值性能更重要，vLLM V1通过重构调度和内存管理来确保这一点。",
+      "vLLM V1针对RL场景优化了KV缓存和采样算法，减少了数值误差和状态不一致，从而提升训练收敛性。",
+      "V0到V1的演进体现了从通用推理到面向训练工作负载的专用优化的趋势，为其他推理引擎提供了借鉴。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
