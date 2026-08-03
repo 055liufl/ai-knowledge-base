@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260803-066",
+  "title": "WitCert: Sound Runtime Risk Observability and Gating for KV-Cache Quantization",
+  "source_url": "https://arxiv.org/abs/2607.28699",
+  "source_platform": "rss_ai_research",
+  "summary": "WitCert 提出了一种用于 KV 缓存量化场景的运行时风险可观测性与门控机制。当前 KV 缓存量化通常依赖离线基准平均值来验证，但部署系统无法实时判断压缩是否损害正在服务的请求。WitCert 为每个（层、头、步骤）提供精确注意力与压缩注意力之间总变差的上界，实现可证明安全的运行时度量，类似于“KV 量化的 DTrace”。该度量包含两层：确定性带范数见证界，适用于任何保持缓存的黑色盒模型。该工作旨在提升 LLM 推理中 KV 缓存量化的可靠性和安全性，使系统能够动态监控并门控量化风险，避免因压缩导致的服务质量下降。其创新点在于将形式化验证思想引入系统运行时监控，为量化 LLM 部署提供实时保障。",
+  "tags": [
+    "KV-Cache",
+    "Quantization",
+    "Runtime Monitoring",
+    "LLM",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:30:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV缓存量化缺乏运行时验证，WitCert 提供逐层逐头的总变差上界，实现可证明安全的实时监控。",
+      "采用确定性带范数见证界，适用于任何缓存保持的模型，具有通用性。",
+      "该机制可作为门控信号，动态调整量化策略，避免服务质量下降。",
+      "将形式化验证方法引入系统监控，为 LLM 推理的可靠性提供新思路。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

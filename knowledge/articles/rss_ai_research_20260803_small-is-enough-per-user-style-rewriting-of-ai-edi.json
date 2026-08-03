@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260803-118",
+  "title": "Small Is Enough: Per-User Style Rewriting of AI-Edited Text via LoRA Adapters",
+  "source_url": "https://arxiv.org/abs/2607.29238",
+  "source_platform": "rss_ai_research",
+  "summary": "InMyStyle 是一个隐私优先的单用户系统，旨在通过 LoRA 适配器将小型语言模型适配到单个用户的写作风格，从而重写 AI 编辑后的文本，且在推理时无需指令提示。该系统利用用户提供的文档，借助多个本地辅助大语言模型构建成对的训练样本，并在参数规模从 0.5B 到 7B 的基础模型上微调 LoRA 适配器。此外，系统还引入了长度感知的生成预算和自动分块机制，以支持长文本输入。该研究的意义在于，它提供了一种轻量级、隐私保护的个人化文本风格重写方案，避免了依赖大规模云端模型或复杂的提示工程，使得 AI 辅助写作工具能够更贴合个体用户的表达习惯，同时降低数据泄露风险。这一方法在个性化文本生成领域具有创新性，尤其适用于对隐私敏感的应用场景，如个人写作助手、邮件撰写等。其技术路线结合了参数高效微调（PEFT）和本地化部署，为资源受限环境下的个性化 NLP 应用提供了新思路。",
+  "tags": [
+    "LoRA",
+    "个性化",
+    "文本重写",
+    "隐私保护",
+    "小型语言模型"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:35:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 LoRA 适配器在小型模型上实现个性化风格重写，无需推理时指令提示，降低了部署复杂度。",
+      "利用多个本地辅助 LLM 自动生成训练数据，解决了个性化数据稀缺问题，同时保护用户隐私。",
+      "支持 0.5B 到 7B 的模型规模，结合长度感知生成和自动分块，适应不同输入长度和计算资源限制。",
+      "为隐私敏感场景下的 AI 辅助写作提供了轻量级、可定制的解决方案，具有实际应用价值。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

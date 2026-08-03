@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260803-007",
+  "title": "An Ontology-Guided, Deduplication-Aware Extraction Layer for Knowledge Graph Construction from Heterogeneous Documents",
+  "source_url": "https://arxiv.org/abs/2607.28662",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向异构文档知识图谱构建的提取层，该层结合本体引导与去重感知机制，以解决大语言模型在实体和关系抽取中的一致性问题。具体而言，LLM 在从非结构化文档中抽取信息时，常出现类型词汇不一致、同一实体多种名称变体、关系重复以及同名不同个体的混淆等问题。该提取层通过本体定义约束类型体系，并集成去重算法，确保跨文档的实体和关系唯一性。文章详细描述了该层的设计、实现及在真实生产环境中的经验性优化过程，将实时文档流转换为知识图谱。实验表明，该方法显著提升了抽取的一致性和准确性，减少了冗余和错误。该工作对于构建可靠的企业级知识图谱具有重要价值，为处理大规模异构数据源提供了实用方案。",
+  "tags": [
+    "Knowledge Graph",
+    "LLM",
+    "Ontology",
+    "Deduplication",
+    "Information Extraction"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:26:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "本体引导的提取层通过预定义类型体系，有效解决了LLM抽取中类型词汇不一致的问题。",
+      "去重感知机制（如实体消歧和名称变体处理）显著降低了知识图谱中的实体重复和关系冗余。",
+      "生产级实现表明，结合本体约束与去重策略能提升跨文档抽取的准确性和一致性。",
+      "该方案为实时文档流到知识图谱的自动化构建提供了可复用的架构参考。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

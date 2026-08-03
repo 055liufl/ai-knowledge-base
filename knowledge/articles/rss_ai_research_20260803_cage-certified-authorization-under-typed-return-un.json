@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260803-028",
+  "title": "CAGE: Certified Authorization under Typed-Return Uncertainty for Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2607.29190",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CAGE的认证授权机制，旨在解决工具使用型LLM代理在类型化返回（typed returns）下的授权不确定性问题。在代理系统中，工具返回通常包含来源（provenance）和分类字段及数值，而运行时权限门通常仅基于观察到的返回和动作进行授权，未考虑返回绑定到其来源时可能出现的微小错误。CAGE通过声明一个合理的正确绑定返回邻域（包括一个可接受的绑定错误及边界），来检查候选动作在该邻域内是否仍然保持授权状态，从而提供更稳健的授权决策。该研究关注代理安全性和可靠性，对构建可信赖的AI代理系统具有重要意义，尤其适用于需要严格权限控制的工具调用场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Authorization"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:28:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAGE针对工具返回绑定错误导致的授权漏洞，提出邻域内授权验证方法，增强安全性。",
+      "该方法通过声明合理错误范围，确保动作在潜在返回变异下仍被授权，提升鲁棒性。",
+      "研究填补了代理权限控制中不确定性处理的空白，对安全关键型代理应用有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

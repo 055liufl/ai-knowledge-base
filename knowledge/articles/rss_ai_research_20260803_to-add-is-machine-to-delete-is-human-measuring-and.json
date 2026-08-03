@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260803-079",
+  "title": "To Add Is Machine, To Delete Is Human: Measuring and Mitigating Deletion Avoidance in LLM Code Editing",
+  "source_url": "https://arxiv.org/abs/2607.28887",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型语言模型在代码编辑任务中普遍存在的“删除回避”现象进行了系统性研究。作者指出，尽管LLM在生成测试通过的补丁方面表现出色，但它们在删除代码时往往不够彻底，导致代码库的可维护性下降。论文在SWE-bench Verified基准上对五个领先模型进行了评估，发现即使是最佳模型，其删除召回率也仅为71.7%，表明模型倾向于保留本应删除的代码。研究进一步分析了删除回避的成因，并提出了缓解策略，如改进训练数据、调整解码策略或引入专门的删除优化目标。这项工作对代码生成和软件工程领域具有重要价值，因为它揭示了LLM在代码编辑中的隐性缺陷，并为提升代码质量提供了可操作的方向。该研究不仅对研究者有启发，对依赖LLM进行代码维护的开发者也有实际指导意义。",
+  "tags": [
+    "LLM",
+    "Code Editing",
+    "SWE-bench",
+    "Deletion Avoidance"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:31:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在代码编辑中存在系统性的删除回避倾向，导致补丁保留冗余代码，降低可维护性。",
+      "在SWE-bench Verified上，领先模型的删除召回率最高仅71.7%，表明删除能力是当前模型的短板。",
+      "论文提出了针对删除回避的缓解方法，包括训练数据调整和解码策略优化，为提升代码编辑质量提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

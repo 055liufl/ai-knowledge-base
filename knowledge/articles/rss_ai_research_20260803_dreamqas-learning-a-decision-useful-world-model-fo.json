@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260803-136",
+  "title": "DreamQAS: Learning a Decision-Useful World Model for VQE-Efficient Quantum Architecture Search",
+  "source_url": "https://arxiv.org/abs/2607.29491",
+  "source_platform": "rss_ai_research",
+  "summary": "DreamQAS 是一种基于模型强化学习（model-based RL）的量子架构搜索（QAS）框架，旨在高效优化变分量子本征求解器（VQE）的电路设计。传统 RL-QAS 方法在每次扩展电路后都需重复运行 VQE 以获取反馈，计算成本高昂。DreamQAS 利用电路构建和动作合法性的确定性，仅学习昂贵的 VQE 后反馈，通过循环随机先验集成（recurrent randomized-prior ensemble）预测无 oracle 的评分，从而显著减少计算开销。该工作将模型学习与精确电路动力学相结合，提升了搜索效率，对量子计算和自动机器学习领域具有重要价值，尤其适用于量子化学和材料科学中的本征值问题。",
+  "tags": [
+    "Quantum Computing",
+    "Reinforcement Learning",
+    "Architecture Search",
+    "VQE"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:36:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DreamQAS 通过模型化 RL 避免重复 VQE 计算，大幅降低量子架构搜索成本。",
+      "利用电路动力学的确定性，仅学习后 VQE 反馈，提高样本效率。",
+      "循环随机先验集成预测评分，增强模型鲁棒性和泛化能力。",
+      "为量子计算中的自动设计提供了新范式，可扩展至其他量子算法优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260803-084",
+  "title": "Gated Q-learning: Add Off-Policy Bias to Taste",
+  "source_url": "https://arxiv.org/abs/2607.28916",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“门控Q学习”（Gated Q-learning）的新方法，旨在解决强化学习中多步信用分配与离策略偏差之间的长期权衡问题。传统上，Watkins的Q(λ)通过截断资格迹消除偏差但牺牲了学习速度，而Peng的Q(λ)则忽略偏差以加速学习却引入了价值估计误差。门控Q学习通过引入一个门控机制，动态地控制资格迹的传播，从而在保留多步回报优势的同时，有效抑制离策略偏差。该方法在理论上提供了收敛性分析，并在多个基准任务上展示了比现有方法更优的样本效率和最终性能。这一工作填补了强化学习算法设计中一个长期存在的空白，为处理离策略学习中的偏差-方差权衡提供了新的思路，对深度强化学习领域具有重要的理论和实践意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Q-learning",
+    "Off-policy",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:32:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "门控机制允许动态调整资格迹，实现偏差与方差的自适应平衡，优于固定截断或忽略策略。",
+      "理论分析证明了门控Q学习的收敛性，为实际应用提供了坚实保证。",
+      "实验表明，在多种环境中，门控Q学习在样本效率和最终性能上均优于Watkins和Peng的Q(λ)变体。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260803-105",
+  "title": "HERO: History-Enriched Rollout Training for Long-Horizon Autoregressive Neural Operators",
+  "source_url": "https://arxiv.org/abs/2607.29135",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HERO（History-Enriched Rollout Training）的新训练方法，用于长时程自回归神经算子。神经算子通过递归地将学习到的演化算子应用于自身预测，为时间相关的偏微分方程（PDE）提供快速代理模型，但自回归展开会将每次预测误差反馈为输入，导致局部误差累积。现有的展开训练策略旨在减少训练输入与自生成状态之间的不匹配，但其监督仅衡量绝对差异，未能充分利用历史信息。HERO 通过引入历史增强的展开训练，在训练过程中利用历史状态信息来改进监督信号，从而更有效地抑制误差累积，提升长时程预测的稳定性和准确性。该方法针对神经算子领域的关键挑战，具有重要的理论意义和实际应用价值，尤其适用于需要长时间模拟的复杂物理系统。",
+  "tags": [
+    "Neural Operator",
+    "Autoregressive",
+    "PDE",
+    "Rollout Training"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:34:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HERO 通过历史增强的监督信号，有效缓解了自回归神经算子中的误差累积问题。",
+      "该方法在长时程 PDE 预测中显著提升了稳定性和准确性，优于现有展开训练策略。",
+      "历史信息的引入为神经算子训练提供了新视角，有望推广至其他时序预测任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

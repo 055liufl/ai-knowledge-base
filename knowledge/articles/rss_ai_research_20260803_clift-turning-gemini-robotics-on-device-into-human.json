@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260803-110",
+  "title": "CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2607.29172",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 CLIFT 的方法，旨在将 Gemini Robotics 这类闭源机器人基础模型通过非侵入式的闭环迭代微调，转化为特定人形机器人任务的专业模型。该方法针对闭源模型无法直接修改权重的问题，提出利用托管监督微调（SFT）API 进行适配，并通过闭环迭代过程（即根据模型在目标任务上的表现反馈，不断调整训练数据和微调策略）来提升性能。CLIFT 的核心价值在于，它允许下游用户在不访问模型内部参数的情况下，将强大的基础模型定制到特定场景，解决了闭源模型可适应性的关键瓶颈。这项工作对于机器人领域具有重要意义，因为它扩展了闭源模型的应用范围，降低了定制门槛，并可能推动机器人基础模型生态的进一步发展。其创新性在于将 LLM 社区中的微调范式引入机器人领域，并针对机器人任务的特殊性设计了闭环迭代机制。",
+  "tags": [
+    "Robot Foundation Model",
+    "Fine-tuning",
+    "Closed-loop",
+    "Humanoid Robot",
+    "SFT API"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:34:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CLIFT 通过非侵入式方式（SFT API）微调闭源机器人模型，解决了闭源模型无法直接修改权重的问题。",
+      "闭环迭代微调机制利用任务反馈动态优化训练数据，显著提升模型在特定人形机器人任务上的表现。",
+      "该方法为下游用户提供了一种低成本、高效的模型定制途径，有望推动机器人基础模型在垂直场景的落地。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

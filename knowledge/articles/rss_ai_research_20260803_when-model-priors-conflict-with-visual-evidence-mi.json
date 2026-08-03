@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260803-119",
+  "title": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+  "source_url": "https://arxiv.org/abs/2607.29240",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对视觉-语言模型中的常识驱动幻觉（CDH）问题展开研究，即当模型的常识先验与清晰的视觉证据相冲突时，模型倾向于忽略视觉证据而输出符合常识的错误答案，例如将可见的六指手报告为五指。作者首先系统性地证明了这类错误具有方向性：当模型对反事实图像回答错误时，其答案往往与模型在无视觉输入时偏好的候选一致。基于此，论文提出了一种选择性先验校准方法，旨在动态识别并调整模型对特定问题的常识先验依赖，从而在保留模型对常规场景泛化能力的同时，减少对异常视觉状态的误判。该方法通过对比模型在有/无视觉输入时的预测差异来定位潜在的冲突点，并仅对高风险样本进行校准，避免了对所有样本的过度干预。实验结果表明，该方法能有效降低CDH的发生率，同时保持模型在标准基准上的性能。该研究为理解多模态模型的推理偏差提供了新视角，并为构建更可靠的视觉问答系统提供了实用方案。",
+  "tags": [
+    "Vision-Language Model",
+    "Hallucination",
+    "Commonsense Reasoning",
+    "Model Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-08-03T11:23:14Z",
+  "collected_at": "2026-08-03T11:35:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "常识驱动幻觉具有系统性方向性，错误答案常与模型无视觉输入时的偏好一致。",
+      "通过对比有/无视觉输入的预测差异，可有效识别常识先验与视觉证据的冲突点。",
+      "选择性先验校准方法仅对高风险样本进行干预，在降低幻觉的同时保持模型性能。",
+      "该研究为多模态模型的鲁棒性提升提供了新的校准思路，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
