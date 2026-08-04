@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-108",
+  "title": "Memory Provenance Laundering in LLM Agents: A Non-Amplification Firewall for Persistent Memory",
+  "source_url": "https://arxiv.org/abs/2607.29167",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并分析了LLM智能体中长期记忆的\"记忆来源清洗\"（Memory Provenance Laundering）安全漏洞。该漏洞发生在基于LLM的记忆整合过程中，外部不可信观察可能被重写为看似用户历史或工作流支持的内容，从而保留动作触发条件的同时抹除了低信任来源，导致本应限制其权限的溯源信息丢失。作者提出了一种\"非放大防火墙\"（Non-Amplification Firewall）机制来防御此类攻击，确保记忆整合不会放大外部观察的权限。该研究揭示了记忆系统在安全设计上的关键盲点，对构建可信赖的LLM智能体具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:48:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆来源清洗漏洞使得外部观察可伪装成用户历史，绕过信任边界，威胁智能体安全。",
+      "非放大防火墙机制通过限制记忆整合过程中的权限放大，有效缓解该漏洞。",
+      "该研究强调了记忆溯源在LLM智能体安全设计中的核心地位，为后续防御提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

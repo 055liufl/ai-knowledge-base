@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-030",
+  "title": "Don't Mix Rewards, Mix Policies: Policy Decomposition and Optimization for Multi-Reward RL",
+  "source_url": "https://arxiv.org/abs/2607.29246",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多奖励强化学习（RL）的新方法，旨在解决大型语言模型（LLM）在多目标优化中面临的“对齐税”问题。传统方法通常将多个奖励信号加权组合成一个单一目标，这会导致不同目标之间的冲突，进而损害模型在某个或某些维度上的性能。本文的核心思想是“不要混合奖励，而是混合策略”，即通过策略分解与优化，将多奖励RL问题分解为多个单奖励策略的优化，再在策略层面进行组合。这种方法避免了奖励加权带来的目标冲突，能够更有效地平衡不同的人类价值观和使用场景。该研究对于提升LLM的多任务适应性和对齐质量具有重要意义，为多奖励RL提供了一种新的理论框架和实用算法。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Multi-Reward",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:43:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多奖励RL中直接混合奖励信号会导致目标冲突和更严重的对齐税，而混合策略可以避免这一问题。",
+      "策略分解方法将多奖励问题转化为多个单奖励策略的优化，降低了优化难度并提高了可解释性。",
+      "该方法有望提升LLM在多个维度上的平衡表现，更好地适应不同人类价值观和使用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

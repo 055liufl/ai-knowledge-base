@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260804-045",
+  "title": "Topology-Aware Data Movement for Disaggregated GPU Inference",
+  "source_url": "https://arxiv.org/abs/2607.28633",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向解耦式GPU推理的拓扑感知数据移动方案，针对大规模语言模型（LLM）推理中KV缓存传输的网络瓶颈问题。在解耦式推理架构中，预填充（prefill）和解码（decode）阶段运行在不同的GPU池上，KV缓存需要在两者间传输。对于70B模型，每个请求的KV缓存高达2.6GB，在生产规模下聚合带宽需求超过100GB/s。然而，现有系统如DistServe、Splitwise和Mooncake均采用统一的RDMA传输，忽略了物理拓扑对带宽的影响——不同GPU对之间的带宽差异可达72倍。该研究通过感知物理拓扑来优化数据移动路径，从而显著提升传输效率，降低推理延迟和网络拥塞。这项工作对于大规模AI推理基础设施的设计具有重要参考价值，尤其是在GPU资源池化和数据中心网络优化的背景下。",
+  "tags": [
+    "LLM",
+    "GPU推理",
+    "数据中心网络",
+    "KV缓存",
+    "拓扑感知"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:44:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "解耦式LLM推理中KV缓存传输成为关键瓶颈，现有系统未考虑物理拓扑差异。",
+      "GPU间带宽因物理位置不同可变化72倍，统一RDMA传输效率低下。",
+      "拓扑感知的数据移动策略可显著提升传输性能，降低推理延迟。",
+      "该方案对大规模GPU集群的推理基础设施设计具有指导意义。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

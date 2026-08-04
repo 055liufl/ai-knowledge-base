@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260804-066",
+  "title": "WitCert: Sound Runtime Risk Observability and Gating for KV-Cache Quantization",
+  "source_url": "https://arxiv.org/abs/2607.28699",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 WitCert 的运行时风险观测与门控机制，用于 KV 缓存量化。当前 KV 缓存量化技术通常通过离线基准测试的平均值来验证其有效性，但在实际部署中，系统无法实时判断压缩是否正在损害当前正在处理的请求。WitCert 提供了一种可证明安全的运行时仪表，类似于 DTrace 对 KV 量化的支持，能够为每个（层、头、步骤）提供精确注意力与压缩注意力之间总变差的上界。该仪表包含两个层级：一个确定性的带范数见证界，适用于任何保持缓存的黑色盒模型；另一个层级则可能提供更紧的界。这一机制使得系统能够在运行时监控量化带来的风险，并在必要时进行门控干预，从而确保服务质量。该工作填补了 KV 缓存量化在实际部署中缺乏实时风险监控的空白，具有重要的实用价值和研究意义。",
+  "tags": [
+    "KV-Cache",
+    "Quantization",
+    "Runtime Monitoring",
+    "LLM",
+    "System"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:45:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV缓存量化缺乏运行时风险监控，离线平均指标无法反映单请求的实时损害。",
+      "WitCert 提供逐层、逐头、逐步骤的总变差上界，实现可证明安全的运行时观测。",
+      "该机制支持确定性界和更紧的界，适用于任何缓存保持的黑色盒模型。",
+      "运行时门控功能可实时干预，防止量化压缩对当前请求造成不可接受的损害。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-092",
+  "title": "Adjudicated Captioning: Multi-Agent Alignment Scoring and Consensus-Distilled Beam Arbitration for Strict Zero-Shot Image Captioning",
+  "source_url": "https://arxiv.org/abs/2607.28986",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Adjudicated Captioning”的新型零样本图像描述（ZIC）方法，旨在解决现有方法在解码阶段缺乏视觉反馈的问题。传统方法仅在检索阶段对图像-文本对齐进行一次评分，随后仅依赖语言模型概率进行自回归束搜索，导致解码器缺乏持续的视觉接地。该方法引入多智能体对齐评分机制，在解码过程中动态评估候选描述与图像的对齐程度，并通过共识蒸馏束仲裁（Consensus-Distilled Beam Arbitration）整合多个智能体的评分，以选择更优的描述。这种方法在严格零样本设置下，无需配对图像-文本监督，仅利用文本语料和冻结的预训练图像-文本评分器，显著提升了描述质量。该研究为图像描述领域提供了新的技术路径，具有较高的创新性和实用性，尤其适用于数据稀缺或领域迁移场景。",
+  "tags": [
+    "Zero-Shot Image Captioning",
+    "Multi-Agent",
+    "Beam Search",
+    "Vision-Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:47:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出多智能体对齐评分机制，在解码过程中持续提供视觉反馈，突破传统单次检索评分的局限。",
+      "共识蒸馏束仲裁方法有效整合多智能体评分，提升候选描述选择的鲁棒性。",
+      "严格零样本设置下，无需配对数据，仅依赖文本语料和冻结评分器，增强模型泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

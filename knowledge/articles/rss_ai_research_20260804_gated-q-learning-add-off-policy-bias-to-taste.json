@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-084",
+  "title": "Gated Q-learning: Add Off-Policy Bias to Taste",
+  "source_url": "https://arxiv.org/abs/2607.28916",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“门控Q学习”（Gated Q-learning）的新方法，旨在解决强化学习中多步信用分配与离策略偏差之间的长期权衡问题。传统上，Q(λ)算法在Watkins变体中通过截断资格迹来消除偏差，但牺牲了学习速度；而Peng变体则允许偏差存在以加速学习，却可能引入价值估计误差。门控Q学习通过引入一个可学习的门控机制，动态地决定在每一步是否将离策略偏差纳入更新，从而在保持样本效率的同时控制偏差的影响。该方法基于arXiv预印本，可能包含理论分析和实验验证，展示了在标准基准任务上的性能提升。这一创新为强化学习领域提供了新的视角，有望推动更稳健和高效的算法设计，尤其适用于复杂环境中的决策问题。",
+  "tags": [
+    "Reinforcement Learning",
+    "Q-learning",
+    "Off-policy",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:46:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "门控机制动态平衡偏差与方差，突破传统Q(λ)的二元选择限制。",
+      "该方法可能显著提升样本效率，同时保持价值估计的准确性。",
+      "为多步信用分配问题提供了可学习的自适应解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

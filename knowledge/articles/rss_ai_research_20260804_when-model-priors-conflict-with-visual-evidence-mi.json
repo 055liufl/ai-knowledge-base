@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-119",
+  "title": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+  "source_url": "https://arxiv.org/abs/2607.29240",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对视觉-语言模型中的常识驱动幻觉（CDH）问题，提出了一种选择性先验校准方法。CDH 发生在模型的常识先验与清晰的视觉证据冲突时，例如模型可能将可见的六指手报告为五指。作者首先系统性地展示了这类错误的定向性：当模型对反事实图像回答错误时，其答案往往与无图像输入时偏好的候选一致。基于此观察，他们提出了一种选择性先验校准机制，旨在在视觉证据与常识先验冲突时，动态调整模型对先验的依赖，从而减少幻觉。该方法通过识别冲突场景并仅在该类场景中校准先验，避免了全局调整带来的性能下降。实验表明，该方法在多个视觉-语言基准上显著降低了 CDH，同时保持了模型在常规任务上的表现。这项工作为缓解多模态模型中的系统性幻觉提供了新思路，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Vision-Language Model",
+    "Hallucination",
+    "Commonsense Reasoning",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:49:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CDH 错误具有系统性：模型在反事实图像上的错误答案常与无视觉输入时的先验偏好一致，表明先验主导了视觉证据。",
+      "提出选择性先验校准方法，仅在冲突场景中调整先验依赖，避免全局校准带来的性能损失。",
+      "实验证明该方法在多个基准上有效减少 CDH，同时保持常规任务性能，为多模态幻觉缓解提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

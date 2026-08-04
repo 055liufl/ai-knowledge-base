@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260804-114",
+  "title": "SAF-OPD: Stable Advantage Fusion for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2607.29209",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SAF-OPD（Stable Advantage Fusion for On-Policy Distillation）的新方法，旨在解决强化学习与在线策略蒸馏结合时的稳定性问题。RLVR 将单一响应级奖励广播到每个 token，而 OPD 则利用更强教师模型为每个 token 提供密集优势，但会限制性能上限并抑制探索。作者发现，简单地将两种优势以固定系数融合会导致熵崩溃，即策略过早收敛到低熵状态，损害探索能力。SAF-OPD 通过设计自适应融合机制，动态调整 RLVR 和 OPD 优势的权重，以维持策略的熵稳定，从而在利用教师知识的同时保持探索，提升学习效率和最终性能。该方法在多个基准任务上验证了有效性，显示出在复杂决策场景中的潜力。这项研究对强化学习领域，特别是奖励稀疏或需要精细控制的任务，具有重要参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Distillation",
+    "RLVR",
+    "Entropy Collapse"
+  ],
+  "author": null,
+  "published_at": "2026-08-04T10:39:05Z",
+  "collected_at": "2026-08-04T10:48:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 和 OPD 的优势互补，但固定系数融合会导致熵崩溃，损害探索能力。",
+      "SAF-OPD 通过自适应优势融合机制，动态平衡教师知识与探索，维持策略熵稳定。",
+      "该方法在多个基准任务上显著提升了学习效率和最终性能，验证了其有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
