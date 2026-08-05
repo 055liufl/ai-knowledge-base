@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-115",
+  "title": "Interpretable Adaptive Sampling for LLM Test-Time Scaling",
+  "source_url": "https://arxiv.org/abs/2608.03961",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于大语言模型（LLM）测试时扩展的可解释自适应采样方法。传统的测试时扩展通常为每个查询分配固定的计算预算，导致简单和困难问题消耗相同资源，且缺乏可解释性。该方法引入轻量级模糊控制器，基于可解释信号（如模型置信度、不确定性等）动态调整每个提示的采样数量，从而在保持性能的同时提高计算效率。模糊控制器的设计使得采样决策透明可解释，便于用户理解为何特定提示获得特定采样数。实验表明，该方法在多个推理基准上以更少的平均计算量达到或超过固定预算策略的性能，并提供了对采样过程的洞察。该工作为测试时扩展提供了一种高效且可解释的替代方案，对资源受限的推理场景具有实际价值。",
+  "tags": [
+    "LLM",
+    "Test-Time Scaling",
+    "Adaptive Sampling",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:46:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过模糊控制器实现自适应采样，根据提示难度动态调整计算预算，显著提升计算效率。",
+      "可解释性设计使采样决策透明，有助于用户理解和信任模型推理过程。",
+      "在多个基准上验证了自适应策略的有效性，以更少计算量达到或超越固定预算性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-108",
+  "title": "Intertemporal Preference Steering in Qwen3 via Contrastive Activation Addition",
+  "source_url": "https://arxiv.org/abs/2608.03892",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在大型语言模型 Qwen3-32B 中，时间视野（temporal horizon）的线性表示，并利用对比激活添加（Contrastive Activation Addition, CAA）技术来调整模型的时间相关偏好、推荐和能力。作者通过在教师强制的时间选择答案上训练对比线性探针，在模型的残差流中找到了一个短期与长期偏好的方向向量。随后，他们在保留的二元时间选择任务上评估了对比激活添加的引导效果，并在分布外任务上验证了其泛化能力。这项工作展示了通过干预模型内部表示来精确控制模型时间决策的可行性，为可解释性和可控生成提供了新思路。该研究具有较高的创新性和实用性，尤其对模型对齐和个性化推荐系统有潜在影响。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Steering",
+    "Contrastive Activation Addition"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:45:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 Qwen3-32B 的残差流中成功识别出时间视野的线性方向，表明时间偏好可能以线性编码方式存在。",
+      "对比激活添加（CAA）能有效引导模型在时间选择任务上的行为，且效果在分布外任务上具有泛化性。",
+      "该方法为无需重新训练即可调整模型时间相关行为提供了轻量级干预手段，对模型对齐和个性化应用有重要意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

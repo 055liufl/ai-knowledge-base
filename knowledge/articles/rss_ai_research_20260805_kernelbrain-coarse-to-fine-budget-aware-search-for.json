@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-126",
+  "title": "KernelBrain: Coarse-to-Fine, Budget-Aware Search for Agentic GPU Kernel Optimization",
+  "source_url": "https://arxiv.org/abs/2608.02611",
+  "source_platform": "rss_ai_research",
+  "summary": "KernelBrain 是一个面向 GPU 内核优化的实用智能体系统，旨在解决自动化内核优化中的关键挑战：生成变体可能违反正确性约束、运行时测量存在噪声、搜索过程容易过早停滞。该系统结合了 LLM 引导的变异、自适应资源分配、策略门控评估和基于 profiler 的诊断。其核心思路是采用从粗到细的搜索策略：先用低成本评估筛选大量候选，再将高保真预算分配给最有希望的候选，从而在有限计算资源下提高优化效率。该系统针对 GPU 内核优化这一高性能计算中的关键问题，通过智能体方式整合多种技术，具有较高的实用价值和创新性。",
+  "tags": [
+    "GPU",
+    "Kernel Optimization",
+    "LLM Agent",
+    "Auto-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:46:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "采用从粗到细的搜索策略，通过低成本评估筛选候选，再分配高保真预算，有效应对测量噪声和搜索停滞问题。",
+      "结合 LLM 引导的变异与策略门控评估，平衡探索与利用，提升优化效率。",
+      "利用 profiler 信息进行诊断，指导后续变异方向，增强系统的自适应能力。",
+      "针对 GPU 内核优化的实际痛点，提供了一种实用的智能体解决方案，具有工程落地潜力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

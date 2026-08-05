@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-019",
+  "title": "LoCA: Forward-Only LLM Tuning after One-Shot Calibration with Local Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2608.03020",
+  "source_platform": "rss_ai_research",
+  "summary": "LoCA（Local Credit Assignment）是一种针对大语言模型（LLM）的高效后训练方法，旨在解决传统参数高效微调（如LoRA）中仍需反复进行端到端反向传播的问题。该方法提出将反向传播链替换为一次性校准，从而显著降低对支持反向传播的硬件依赖和激活值存储开销。LoCA采用两阶段流程：首先通过一次性校准获得局部信用分配信息，然后仅使用前向传播完成小幅度适配。这种方法特别适用于资源受限环境或需要快速迭代的场景，同时保持了与现有微调方法相当的性能。该研究发表于arXiv（编号2608.03020），属于模型优化与训练效率领域的前沿探索，对于推动LLM在边缘设备上的应用具有重要意义。",
+  "tags": [
+    "LLM",
+    "Parameter-Efficient Tuning",
+    "Forward-Only Training",
+    "Local Credit Assignment",
+    "Efficient Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:39:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoCA通过一次性校准替代重复反向传播，大幅降低训练硬件要求和内存开销。",
+      "该方法支持纯前向传播的模型适配，为边缘设备上的LLM微调提供了新路径。",
+      "LoCA在保持性能的同时，简化了训练流程，可能推动更高效的模型迭代。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

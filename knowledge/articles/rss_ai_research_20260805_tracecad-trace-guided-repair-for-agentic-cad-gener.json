@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-023",
+  "title": "TraceCAD: Trace-Guided Repair for Agentic CAD Generation",
+  "source_url": "https://arxiv.org/abs/2608.03062",
+  "source_platform": "rss_ai_research",
+  "summary": "TraceCAD 是一种针对基于大语言模型（LLM）的 CAD（计算机辅助设计）智能体生成过程的修复层。在 LLM 驱动的 CAD 智能体中，程序生成通常涉及多步修正循环，但现有方法在迭代过程中容易丢失关于已满足需求、故障操作和先前修复的关键证据，导致修复效率低下和错误累积。TraceCAD 通过将请求的功能、建模步骤、失败证据和候选结果链接为持久状态，构建了一个可追溯的修复机制。它能够诊断出最可能的故障操作，在其依赖区域内搜索有界编辑，并通过执行验证候选方案，从而显著提升 CAD 程序生成的可靠性和成功率。该工作针对 CAD 生成这一专业领域，结合了程序合成、智能体状态管理和自动修复技术，为复杂设计任务的自动化提供了新思路，尤其对需要高精度和可验证性的工程场景具有重要价值。",
+  "tags": [
+    "LLM",
+    "CAD",
+    "Agent",
+    "程序修复",
+    "状态管理"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:39:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TraceCAD 通过持久化状态链接需求、步骤和失败证据，解决了 LLM 智能体在迭代修复中的信息丢失问题。",
+      "其诊断和依赖区域搜索机制使得修复过程更加精准，减少了无效尝试。",
+      "该工作展示了将程序合成与智能体状态管理结合，可显著提升专业领域（如 CAD）的生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

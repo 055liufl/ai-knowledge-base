@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-137",
+  "title": "Instruction Stacking Collapse: A Benchmark and the Capability-Dependent Value of Prompt Compilation",
+  "source_url": "https://arxiv.org/abs/2608.02639",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对生产环境中提示词常包含多条指令的现象，提出了一种新的基准测试方法，用于评估指令堆叠对大型语言模型指令遵循能力的影响。研究通过逐步叠加1至20条可验证的指令（最多24条），对Claude Sonnet 4.6、GPT-5-mini和Gemini 2.5 Flash三个生产级模型进行了系统评估。结果显示，随着指令数量增加，模型遵循指令的能力显著下降，揭示了指令堆叠崩溃现象。研究还探讨了提示词编译（prompt compilation）的价值，发现其效果依赖于模型能力，即能力较强的模型从提示词编译中获益更多。该工作为理解LLM在复杂多指令场景下的性能边界提供了重要基准，对提示工程和模型优化具有指导意义。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Instruction Following",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:47:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "指令堆叠导致LLM遵循能力显著下降，存在明确的性能崩溃点",
+      "提示词编译的价值与模型能力正相关，能力越强获益越大",
+      "提供了首个系统评估多指令堆叠的基准，填补了该领域空白"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

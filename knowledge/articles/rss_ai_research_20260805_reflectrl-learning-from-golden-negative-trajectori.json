@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-117",
+  "title": "ReflectRL: Learning from Golden Negative Trajectories via Reflective-to-Direct Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.03972",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ReflectRL 的新方法，用于提升大型语言模型（LLM）的推理能力。该方法针对现有轨迹引导训练方法的局限性：当专家模型在难题上失败时，这些失败轨迹通常被丢弃，导致监督信号缺失。ReflectRL 利用这些“黄金负轨迹”（golden negative trajectories），通过反思性到直接推理（reflective-to-direct reasoning）的机制，将失败案例转化为学习信号。具体而言，模型首先对失败轨迹进行反思，生成改进策略，然后将其转化为直接推理路径，从而在无需外部专家成功示例的情况下增强训练。该方法在强化学习（on-policy training）框架下实现，旨在提高模型在复杂推理任务上的泛化能力。该研究值得关注，因为它挑战了传统上仅依赖正样本的训练范式，为利用负样本提供了新思路，可能对推理模型的效率和鲁棒性产生重要影响。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Reinforcement Learning",
+    "Negative Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:46:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReflectRL 创新性地利用失败轨迹作为学习信号，弥补了专家模型在难题上失败时的监督缺失。",
+      "通过反思性到直接推理的转换，模型能够从负样本中提取改进策略，提升推理能力。",
+      "该方法在 on-policy 训练框架下实现，有望增强 LLM 在复杂任务上的泛化性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

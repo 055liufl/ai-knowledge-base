@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-129",
+  "title": "Evaluating OpenAI's Privacy Filter: Cross-Lingual, Cross-Domain PII Detection Across 42 Benchmarks",
+  "source_url": "https://arxiv.org/abs/2608.02616",
+  "source_platform": "rss_ai_research",
+  "summary": "本文首次对OpenAI的隐私过滤器（OPF）进行了独立、系统的评估。OPF是一个拥有15亿参数的双向PII（个人身份信息）检测器，在覆盖22种语言和5个领域的42个合成基准上进行了测试。零样本情况下，OPF在AI4Privacy上达到F1=0.855，在SPY医疗数据集上达到0.464，显著优于Presidio（0.431, 0.273）和XLM-RoBERTa（0.269, 0.111）在PII标注基准上的表现；但在多语言命名实体识别（NER）任务中，XLM-RoBERTa在全部13个印度语系和非拉丁语系基准上领先OPF。该研究填补了第三方对OpenAI隐私过滤器性能评估的空白，对于隐私保护技术选型、多语言PII检测的可靠性以及模型在不同语言和领域的泛化能力具有重要参考价值。",
+  "tags": [
+    "PII检测",
+    "隐私保护",
+    "多语言模型",
+    "基准评估",
+    "OpenAI"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:47:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OPF在零样本PII检测上表现优异，尤其在英语和医疗领域，但多语言NER能力落后于XLM-RoBERTa，表明其跨语言泛化存在局限。",
+      "该评估覆盖22种语言和5个领域，是首个独立的OPF基准测试，为隐私过滤器的实际应用提供了可靠数据。",
+      "OPF在特定任务上优于传统工具（如Presidio），但在非拉丁语系语言上表现不佳，提示需要针对低资源语言进行优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

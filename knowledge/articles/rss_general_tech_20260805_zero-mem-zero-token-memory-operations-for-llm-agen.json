@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260805-002",
+  "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2607.29377",
+  "source_platform": "rss_general_tech",
+  "summary": "本文提出了一种名为 Zero-Mem 的新型内存管理机制，旨在解决大型语言模型（LLM）智能体在长期交互中因上下文窗口限制而导致的内存瓶颈问题。传统方法通常依赖显式的 token 存储或压缩技术，但 Zero-Mem 通过引入零 token 内存操作，使得智能体能够在无需消耗额外 token 的情况下进行记忆的写入、读取和更新。该方法基于一种轻量级的外部记忆架构，利用可学习的键值索引和高效的检索算法，实现了对历史信息的即时访问，同时避免了上下文窗口的膨胀。Zero-Mem 在多个基准任务（如多轮对话、复杂推理和工具使用）上展示了显著的性能提升，并大幅降低了计算开销。这一创新不仅提升了 LLM 智能体的长期记忆能力，还为构建更高效、更可扩展的智能体系统提供了新思路。该研究值得关注，因为它直接回应了 LLM 应用中的核心挑战——记忆管理，且其零 token 的设计理念具有高度的实用性和前瞻性，可能推动智能体在真实场景中的更广泛部署。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:52Z",
+  "collected_at": "2026-08-05T10:36:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Zero-Mem 通过零 token 操作实现记忆管理，显著降低上下文窗口压力，提升长期交互效率。",
+      "其外部记忆架构结合可学习索引，支持高效检索，适用于多轮对话和复杂推理任务。",
+      "该方法在多个基准上超越传统压缩和摘要方法，展示了更好的性能与成本平衡。",
+      "为 LLM 智能体的可扩展性提供了新方向，有望减少对长上下文硬件的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

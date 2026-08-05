@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-132",
+  "title": "Speculative Correction: Draft-then-Refine Decoding for Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2608.02625",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“推测性修正”（Speculative Correction）的推理模式，用于扩散语言模型（DLMs）。扩散语言模型能够双向修正token，但标准的解码过程通常将其调整为从左到右的逐块生成。该研究探索了一种简单的即插即用推理模式：首先生成完整的草稿，然后利用双向扩散对整个响应进行细化。作者使用LLaDA2.1-Flash和LLaDA2.1-Mini两个模型，评估了两种配置：在Flash-Flash配置中，同一个Flash模型既用于草稿生成又用于细化；在Flash-Mini配置中，Flash模型生成草稿，Mini模型进行细化。这种模式有望提升生成质量，同时保持推理效率，为扩散语言模型的实际应用提供了新的思路。该研究值得关注，因为它提出了一种无需额外训练即可改进扩散模型生成效果的通用方法，可能对自然语言生成领域产生重要影响。",
+  "tags": [
+    "Diffusion Language Models",
+    "Decoding",
+    "Inference",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:47:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种即插即用的推理模式，通过先草稿后细化的方式，利用扩散模型的双向修正能力提升生成质量。",
+      "在两种配置下进行了实验评估，验证了该模式在不同模型组合下的有效性。",
+      "该方法无需额外训练，可直接应用于现有扩散语言模型，具有较高的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-138",
+  "title": "IR2Solve: Structured Intermediate Representations for Cost-Efficient Optimization Autoformulation",
+  "source_url": "https://arxiv.org/abs/2608.02641",
+  "source_platform": "rss_ai_research",
+  "summary": "IR2Solve 提出了一种面向优化问题自动建模的中间表示优先（intermediate-representation-first）流水线。传统方法直接让大语言模型（LLM）将自然语言优化问题翻译成求解器可执行的代码（如 Gurobi、CPLEX 等），但这种方式容易产生模式错误、索引错误或语义错误，导致编译失败、模型不可行或目标函数错误，且通过迭代修复、搜索或多智能体工作流来纠错会显著增加推理成本。IR2Solve 通过引入结构化中间表示，将建模过程分解为更可控的步骤，从而减少错误并降低推理开销。该论文来自 arXiv（编号 2608.02641），属于交叉类型公告。其核心价值在于提升 LLM 在运筹优化领域的实用性和成本效率，对需要将自然语言需求转化为可求解模型的场景（如供应链优化、调度问题）具有重要意义。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Autoformulation",
+    "Intermediate Representation"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:47:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接代码生成在优化问题建模中脆弱且易错，中间表示可降低错误率。",
+      "IR2Solve 通过结构化中间表示减少迭代修复需求，从而降低推理成本。",
+      "该方法适用于自然语言到求解器公式的自动转换，提升 LLM 在运筹优化中的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

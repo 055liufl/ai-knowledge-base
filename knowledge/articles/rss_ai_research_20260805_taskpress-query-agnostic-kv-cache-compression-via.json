@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-041",
+  "title": "TaskPress: Query-Agnostic KV Cache Compression via Task-Guided Pruning",
+  "source_url": "https://arxiv.org/abs/2608.03276",
+  "source_platform": "rss_ai_research",
+  "summary": "TaskPress 提出了一种面向长上下文推理的键值缓存压缩新框架，其核心创新在于实现查询无关的缓存淘汰策略。传统方法通常根据特定查询计算 token 重要性，导致缓存无法在不同查询间复用，而 TaskPress 通过任务引导的方式构建可复用的缓存，从而显著提升推理效率。该工作针对大语言模型长上下文场景中 KV 缓存随序列长度线性增长的问题，提供了一种有效的压缩方案，有望降低推理成本并加速响应速度。其方法兼顾了缓存压缩的通用性和任务适应性，为后续研究提供了新思路。",
+  "tags": [
+    "KV Cache",
+    "LLM",
+    "Efficient Inference",
+    "Compression"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:40:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TaskPress 提出查询无关的缓存淘汰，突破传统方法对特定查询的依赖，提升缓存复用性。",
+      "通过任务引导的剪枝策略，在保持模型性能的同时显著压缩 KV 缓存，降低长上下文推理的显存占用。",
+      "该框架为长上下文 LLM 推理效率优化提供了新的研究方向，可能推动实时应用部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

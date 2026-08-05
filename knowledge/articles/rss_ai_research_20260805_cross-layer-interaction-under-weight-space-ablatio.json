@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260805-081",
+  "title": "Cross-Layer Interaction under Weight-Space Ablation: A Closed-Form Attention Jacobian Bound and a Test on a Real Pretrained Model",
+  "source_url": "https://arxiv.org/abs/2608.03629",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在权重空间消融（weight-space ablation）下分析跨层交互（cross-layer interaction）的新方法，并给出了注意力雅可比矩阵（attention Jacobian）的闭式上界（closed-form bound）。研究基于一个理想化模型，该模型假设条件计算通过残差流（residual stream）以加性方式实现，并探讨了激活修补（activation patching）与权重空间消融在何种条件下会得到一致的结果。文章特别关注了模型中一种架构上依赖的组合：注意力头与其所在层的归一化-MLP（normalization-MLP）组合，并推导出精确的一阶交互公式。该公式表明，当仅消融MLP时交互为零，而当同时消融注意力头时交互表现为二阶效应。此外，作者在真实预训练模型上进行了测试，验证了理论界的有效性。这项工作为理解Transformer内部组件间的交互机制提供了新的理论工具，有助于解释模型编辑、可解释性分析中的消融实验行为，并为未来设计更精确的干预方法奠定基础。其创新性在于将权重空间消融与激活修补联系起来，并提供了可计算的边界，对模型可解释",
+  "tags": [
+    "Transformer",
+    "Interpretability",
+    "Ablation",
+    "Attention",
+    "Theory"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:43:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了注意力雅可比矩阵的闭式上界，用于量化权重空间消融下的跨层交互强度。",
+      "在理想化模型中，仅消融MLP时交互为零，而同时消融注意力头时出现二阶效应，揭示了组件依赖性的本质。",
+      "理论结果在真实预训练模型上得到验证，表明该边界具有实际适用性。",
+      "为激活修补与权重空间消融的一致性提供了理论依据，有助于改进模型编辑和可解释性方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

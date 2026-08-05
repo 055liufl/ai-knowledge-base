@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-083",
+  "title": "Is Inter-Seed Cross-Play Enough? Evaluating the Robustness of Zero-Shot Coordination Algorithms to Implementation Details",
+  "source_url": "https://arxiv.org/abs/2608.03644",
+  "source_platform": "rss_ai_research",
+  "summary": "本文评估了零样本协调（ZSC）算法在实现细节变化下的鲁棒性，重点关注跨种子（inter-seed）交叉游戏是否足以作为评估标准。研究指出，ZSC算法旨在使独立开发的智能体在测试时能与未见过的对手协调，但现有评估通常依赖单一实现，忽略了实现细节（如超参数、网络结构、训练随机性）对算法性能的影响。通过系统比较不同实现下的跨种子交叉游戏结果，作者发现算法排名可能因实现细节而显著变化，仅依赖跨种子交叉游戏可能不足以可靠评估算法鲁棒性。该研究为ZSC评估协议提供了重要见解，建议采用多实现、多配置的评估框架，以提升结论的泛化性和可信度。",
+  "tags": [
+    "Zero-Shot Coordination",
+    "Robustness",
+    "Evaluation",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:43:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨种子交叉游戏是评估ZSC算法的常用方法，但研究显示其可能对实现细节敏感，导致算法排名不稳定。",
+      "实现细节（如超参数、网络结构、随机种子）显著影响ZSC算法的协调性能，单一实现评估可能产生误导性结论。",
+      "建议采用多实现、多配置的评估协议，以更可靠地衡量ZSC算法的鲁棒性和泛化能力。",
+      "该研究为ZSC领域提供了方法论贡献，有助于推动更严谨的算法比较和实际部署中的可靠性保障。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

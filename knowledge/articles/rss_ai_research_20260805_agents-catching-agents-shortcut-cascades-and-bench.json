@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260805-097",
+  "title": "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2608.03744",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了临床多智能体系统中，语言模型智能体委员会如何被基准测试中的捷径（shortcuts）所欺骗，即模型利用数据集中与临床无关的线索（如文本中的特定词汇、图像中的伪影）来获得高分，而临床医生会忽略这些线索。研究在七个队列、六个公开数据集上进行了实验，涵盖文本（MedQA-USMLE、MedMCQA、MIMIC-CXR报告）、影像（NIH ChestX-ray14、MIMIC-CXR-JPG、CheXpert）和表格型ICU记录（SUPPORT2）。结果显示，Gemini委员会对这些线索表现出一定的抵抗性，但其他模型可能更容易受到攻击。该工作揭示了基准测试游戏化（benchmark gaming）的风险，即模型可能通过利用数据中的捷径而非真正的临床推理来提升性能，这对临床决策支持系统的可靠性和安全性提出了重要挑战。该研究值得关注，因为它首次系统性地探讨了多智能体系统在临床场景下的脆弱性，并为未来设计更鲁棒的评估基准和模型训练提供了方向。",
+  "tags": [
+    "Multi-Agent",
+    "Clinical Decision Support",
+    "Benchmark Gaming",
+    "LLM",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:44:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临床多智能体系统可能被基准测试中的捷径所欺骗，导致性能虚高，但实际临床推理能力不足。",
+      "Gemini委员会对某些捷径表现出抵抗性，但不同模型和模态的脆弱性差异显著。",
+      "研究强调了设计更严谨的评估协议和去偏训练数据的重要性，以避免基准测试游戏化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

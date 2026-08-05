@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-026",
+  "title": "Don't Peek at the Answer: Outcome-Masked Group Relative Policy Optimization for Label-Free RLVR",
+  "source_url": "https://arxiv.org/abs/2608.03119",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Outcome-Masked Group Relative Policy Optimization”的新型强化学习算法，用于解决无标签强化学习（RLVR）中的奖励崩溃问题。传统RLVR依赖真实答案作为奖励信号，限制了其可扩展性。基于投票的无标签方法通过模型样本的答案级共识替代人工标注，但存在一个关键缺陷：当同一答案级信号既用于奖励估计又用于token级策略优化时，模型会倾向于直接强化答案token，导致策略崩溃。该方法通过掩蔽答案token的梯度更新，仅对推理过程中的非答案token进行优化，从而避免模型“偷看答案”并保持推理能力。实验表明，该方法在数学推理和代码生成任务上显著提升了性能，且无需任何外部标签。该工作为无标签强化学习提供了新思路，具有较高的实用价值和研究意义。",
+  "tags": [
+    "RLVR",
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:39:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无标签RLVR中，答案级共识信号同时用于奖励和策略优化会导致模型直接强化答案token，引发策略崩溃。",
+      "Outcome-Masked GRPO通过掩蔽答案token的优化，迫使模型专注于推理过程，从而提升泛化能力。",
+      "该方法在数学和代码任务上验证了有效性，为无标签强化学习提供了可扩展的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

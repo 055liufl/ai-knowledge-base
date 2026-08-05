@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-105",
+  "title": "MAFIA: Query-Only Memory Attacks via Probing and Factual Injection against Audited LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.03844",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 MAFIA 的新型查询仅限（query-only）记忆投毒攻击方法，针对记忆增强型大型语言模型（LLM）代理系统。此类代理依赖长期记忆模块存储上下文信息以支持复杂推理和行动，但记忆模块易受恶意记录注入攻击。现有查询仅限攻击在两种现实场景中效果不佳：大规模良性记忆池和主动输入审计。MAFIA 通过探测（probing）和事实注入（factual injection）技术，在仅能进行查询（无法直接修改记忆）的情况下，利用模型对事实性信息的依赖，构造难以被审计机制识别的恶意记忆，从而绕过防御。该研究揭示了记忆增强代理的安全漏洞，对 LLM 安全领域具有重要警示意义，并提出了更隐蔽的攻击范式，为后续防御研究提供了新方向。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Agent",
+    "Memory Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:45:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MAFIA 通过探测和事实注入实现查询仅限攻击，无需直接修改记忆即可投毒，突破了现有攻击的局限。",
+      "该攻击在大型良性记忆池和主动输入审计下仍保持有效性，凸显了记忆增强代理的脆弱性。",
+      "研究强调了记忆模块作为攻击面的重要性，为设计更鲁棒的审计和防御机制提供了依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

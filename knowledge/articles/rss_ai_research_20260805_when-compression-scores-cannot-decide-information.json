@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-013",
+  "title": "When Compression Scores Cannot Decide: Information Boundaries for Group-Robust LLM Pruning",
+  "source_url": "https://arxiv.org/abs/2608.02940",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的视角来理解大语言模型（LLM）剪枝中的压缩统计量选择问题。作者指出，即使压缩统计量具有高可复现性（如0.906的分半信度），其预测的模型性能提升也可能与实际结果严重不符：该统计量预测16.1%的性能增益，但实际选出的端点比两个对照组分别差6.0%和7.7%。为了解释这一差距，作者引入了“信息边界”的概念，用以界定每种统计量能够支持的区分能力。对于等权重分组，他们推导出一个圆锥定律，精确给出了正线性固定候选损伤的池化代价，包括对角情况。该研究为模型压缩中的统计量选择提供了理论框架，有助于避免仅依赖单一统计量导致的次优决策。",
+  "tags": [
+    "LLM",
+    "Pruning",
+    "Compression",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:38:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高可复现性的压缩统计量并不保证选择最优模型，实际性能可能显著低于对照组。",
+      "信息边界概念为理解统计量支持哪些区分提供了理论依据，解释了预测与实际的差距。",
+      "圆锥定律为等权重分组下的池化代价提供了精确数学描述，有助于优化剪枝决策。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

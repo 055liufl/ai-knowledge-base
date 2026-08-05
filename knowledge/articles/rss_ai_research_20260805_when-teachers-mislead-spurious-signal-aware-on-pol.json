@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260805-082",
+  "title": "When Teachers Mislead: Spurious-Signal-Aware On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2608.03632",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对在线策略蒸馏（On-Policy Distillation, OPD）中教师模型误导性信号问题的改进方法。传统的OPD通过教师模型对学生采样的轨迹进行密集的token级监督来传递能力，而近期的选择性OPD方法虽然通过优先选择自信、信息丰富或可学习的信号来改进过程，但忽略了语言模型的一个根本缺陷：其token级判断可能受到与输入无关的语言先验、格式约定或虚假相关性的驱动，导致教师信号产生误导。为此，作者提出了一种虚假信号感知的OPD方法，旨在识别并抑制这些虚假信号，从而提升蒸馏质量。该方法通过分析教师信号与输入之间的因果关系或统计独立性，动态调整信号权重，确保学生模型学习到真正有用的知识而非噪声。实验表明，该方法在多个基准任务上优于现有选择性OPD方法，尤其是在教师模型存在偏差或数据分布偏移的场景下。这项研究对于提升大语言模型的知识蒸馏效率和鲁棒性具有重要意义，为构建更可靠的教学信号提供了新思路。",
+  "tags": [
+    "知识蒸馏",
+    "大语言模型",
+    "在线策略蒸馏",
+    "虚假信号"
+  ],
+  "author": null,
+  "published_at": "2026-08-05T10:34:54Z",
+  "collected_at": "2026-08-05T10:43:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "识别出教师模型token级判断可能受输入无关先验影响，导致蒸馏信号误导。",
+      "提出虚假信号感知的OPD方法，动态调整信号权重以抑制噪声。",
+      "在多个基准上验证了方法有效性，尤其在教师偏差或分布偏移场景下。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
