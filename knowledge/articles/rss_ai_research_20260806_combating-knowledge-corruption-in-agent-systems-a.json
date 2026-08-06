@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-091",
+  "title": "Combating Knowledge Corruption in Agent Systems: A Byzantine-Tolerant Secure Collaborative RAG Framework",
+  "source_url": "https://arxiv.org/abs/2608.04366",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SecureCollaRAG 的拜占庭容错协作式检索增强生成（RAG）框架，旨在应对 RAG 系统中的知识污染攻击。这类攻击通过向检索文档中注入恶意内容，操纵大语言模型的输出，从而破坏系统的可靠性和安全性。SecureCollaRAG 通过多源知识验证机制，在多个知识源之间进行交叉验证，能够有效识别并隔离被污染的文档，从而增强系统对恶意输入的鲁棒性。该框架借鉴了拜占庭容错（Byzantine fault tolerance）的思想，即使在部分知识源被攻击者控制的情况下，也能保证最终生成结果的正确性。这项工作对于提升 RAG 系统在实际应用中的安全性具有重要意义，尤其是在开放域问答、事实核查等对知识准确性要求极高的场景中。值得关注的是，它首次将拜占庭容错理论系统性地引入 RAG 安全防护，为后续研究提供了新的思路和框架。",
+  "tags": [
+    "RAG",
+    "Security",
+    "Byzantine Fault Tolerance",
+    "LLM",
+    "Knowledge Corruption"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:48:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SecureCollaRAG 通过多源知识验证机制，有效抵御针对 RAG 系统的知识污染攻击，提升输出可靠性。",
+      "引入拜占庭容错理论，使框架在部分知识源被恶意控制时仍能保持正确性，增强了系统的鲁棒性。",
+      "该框架填补了 RAG 安全防护领域的研究空白，为构建可信赖的 LLM 应用提供了重要参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

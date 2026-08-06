@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-045",
+  "title": "Wiring Beats Blending: What Transfers Between Transformer Sizes -- and What Doesn't",
+  "source_url": "https://arxiv.org/abs/2608.02829",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了Transformer模型家族中不同规模模型之间的转换问题，具体聚焦于Pythia家族中1.4B到410M参数的转换。研究发现，尽管不同规模的模型在表示层面高度对齐（岭回归R^2=0.84），但参数层面的对齐较弱。更重要的是，直接进行密集权重投影在功能上具有破坏性，且这种破坏并非简单的组装伪影，而是源于基混合破坏了旋转位置编码、每头注意力、GELU激活函数和层归一化等关键组件。这项工作挑战了通过权重混合实现模型压缩的简单假设，为模型蒸馏和跨规模知识迁移提供了新的理论视角。",
+  "tags": [
+    "Transformer",
+    "Model Compression",
+    "Knowledge Transfer",
+    "Representation Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:45:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同规模Transformer的表示层高度对齐，但参数层对齐弱，表明功能相似性不依赖于参数直接对应。",
+      "密集权重投影的破坏性源于基混合对关键组件（如旋转编码、层归一化）的干扰，而非简单组装问题。",
+      "研究为跨规模模型转换提供了理论边界，对模型压缩和知识蒸馏有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

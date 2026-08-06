@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-083",
+  "title": "EA-Graph: Artifact-Anchored Verification Memory for Coding Agents under Upstream Drift",
+  "source_url": "https://arxiv.org/abs/2608.04278",
+  "source_platform": "rss_ai_research",
+  "summary": "EA-Graph 提出了一种面向编码代理的、以工件为锚点的验证记忆机制，旨在解决上游依赖漂移导致的验证结论失效问题。传统方法依赖自然语言笔记，虽能保留结论，却丢失了支撑结论的程序状态。当上游库更新后，即使仓库仍能构建，先前的验证声明可能已不再成立。EA-Graph 在子路径粒度上表示工件，将别名解析到叶定义，并将每条验证声明锚定到用于验证的具体内容，从而在跨会话的编码任务中维持验证记忆的有效性。该工作对于提升编码代理在动态依赖环境下的可靠性和长期记忆能力具有重要意义，值得关注。",
+  "tags": [
+    "Coding Agent",
+    "Verification",
+    "Memory",
+    "Dependency Drift"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:48:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EA-Graph 通过工件锚定而非自然语言笔记来存储验证声明，确保结论与支撑状态绑定，避免上游变化后验证失效。",
+      "采用子路径粒度和别名解析，使验证记忆能够精确关联到具体代码定义，提高记忆的准确性和可追溯性。",
+      "该机制针对跨会话编码代理的长期记忆问题，为应对依赖漂移提供了新的技术路径，有望提升代理的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260806-099",
+  "title": "Not Every Divergence Should Be Suppressed: Counterfactual Recoverability in On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2608.04408",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的在线策略蒸馏（On-policy Distillation, OPD）方法，旨在解决传统基于散度（divergence）的规则无法判断学生模型在错误前缀后是否仍可纠正的问题。作者将这一决策形式化为反事实可恢复性（counterfactual recoverability），并通过预算匹配的教师延续和回滚分支对每个错误状态进行重放。根据相对成功度，状态被分类为可恢复、不可逆但可避免或模糊三类，并据此调整蒸馏策略。该方法为知识蒸馏中的错误处理提供了更细粒度的视角，有望提升学生模型的鲁棒性和学习效率。该研究发表于arXiv，属于强化学习与知识蒸馏交叉领域的前沿工作，对模型训练策略的设计具有理论指导意义。",
+  "tags": [
+    "Knowledge Distillation",
+    "Reinforcement Learning",
+    "On-policy Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:49:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统散度规则无法区分错误是否可纠正，本文引入反事实可恢复性概念，通过重放错误状态来分类处理。",
+      "提出预算匹配的教师延续和回滚分支机制，以评估不同纠正路径的相对成功度。",
+      "状态分类（可恢复、不可逆但可避免、模糊）为蒸馏策略提供了更精细的调整依据，可能提升学生模型的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

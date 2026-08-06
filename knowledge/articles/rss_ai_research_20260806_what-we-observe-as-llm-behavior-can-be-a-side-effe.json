@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-135",
+  "title": "What We Observe as LLM Behavior Can Be a Side-effect of Inference Backend",
+  "source_url": "https://arxiv.org/abs/2608.04714",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了推理后端（如 HuggingFace、vLLM、Ollama 等）对大型语言模型（LLM）行为的影响，指出基准测试分数通常被归因于模型本身，而推理框架的选择及其版本几乎从不被披露。通过一个全交叉实验设计（3 个指令微调模型 × 5 个推理框架 × 6 个基准测试 × 4 种生成模式），研究者系统性地评估了推理后端对模型输出的影响。结果表明，推理框架的选择可以显著影响模型的行为和基准分数，这意味着在比较不同模型时，若未控制推理后端，可能会得出误导性结论。该研究强调了在报告基准分数时披露推理框架和版本的重要性，并为 LLM 评估的标准化提供了新的视角。这一发现对于研究者和开发者而言都至关重要，因为它揭示了评估过程中一个被忽视的变量，可能影响模型选择和应用部署的决策。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:52:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理后端（如 vLLM、Ollama）的选择会显著影响 LLM 的基准测试结果，但通常不被披露。",
+      "全交叉实验设计揭示了模型、推理框架、基准测试和生成模式之间的复杂交互作用。",
+      "研究呼吁在报告模型性能时标准化披露推理框架和版本，以提高评估的可复现性和公平性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

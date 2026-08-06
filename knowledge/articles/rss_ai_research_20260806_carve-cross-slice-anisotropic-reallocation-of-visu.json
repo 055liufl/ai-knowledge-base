@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-115",
+  "title": "CARVE: Cross-Slice Anisotropic Reallocation of Visual Evidence for Efficient 3D Medical Volume Understanding",
+  "source_url": "https://arxiv.org/abs/2608.04515",
+  "source_platform": "rss_ai_research",
+  "summary": "CARVE 提出了一种名为“跨切片各向异性视觉证据重分配”的方法，用于提升三维医学影像体积理解的效率。传统基于切片的 MLLM 将三维体积表示为二维切片序列，借助成熟的二维编码器，但会产生大量视觉 token，其中许多在相邻切片间存在重叠，给 LLM 主干带来沉重负担。作者通过缩放分析发现，在三维医学 VQA 基准上，增加视觉 token 预算带来的性能提升呈边际递减效应。CARVE 的核心思路是对视觉证据进行跨切片的各向异性重分配，即根据信息量动态调整不同切片或区域的 token 分配，减少冗余，从而在保持甚至提升性能的同时大幅降低计算开销。该方法针对医学影像分析中高分辨率、多切片数据带来的计算瓶颈，具有显著的实用价值，有望推动三维医学影像理解在临床场景中的落地。",
+  "tags": [
+    "3D Medical Imaging",
+    "MLLM",
+    "Efficiency",
+    "Visual Token",
+    "VQA"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:50:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "切片式三维医学影像理解存在大量冗余视觉 token，导致计算负担重且性能提升边际递减。",
+      "CARVE 通过跨切片各向异性重分配视觉证据，可有效减少冗余，提升效率。",
+      "该方法在三维医学 VQA 基准上验证了有效性，为高效三维医学影像理解提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

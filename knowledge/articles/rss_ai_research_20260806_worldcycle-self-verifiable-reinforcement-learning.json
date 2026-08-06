@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-033",
+  "title": "WorldCycle: Self-Verifiable Reinforcement Learning for Long-Horizon Video World Models",
+  "source_url": "https://arxiv.org/abs/2608.04964",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 WorldCycle 的新方法，用于通过自验证强化学习训练长时程视频世界模型。视频世界模型对于长期规划和探索至关重要，但常因复合误差而性能下降。传统的后训练方法（如强化学习）虽能改善模型，却面临验证瓶颈：对于任意动作序列，缺乏真实未来状态来衡量长期漂移。WorldCycle 的关键洞察在于利用可逆动作循环，使得验证成为可能：通过构造由可逆动作组成的序列，模型可以自我验证其预测的准确性，从而在没有外部监督的情况下进行有效的强化学习。该方法有望显著提升视频世界模型在长时程任务中的稳定性和可靠性，为机器人控制、自动驾驶等需要长期预测的领域带来突破。",
+  "tags": [
+    "Reinforcement Learning",
+    "World Models",
+    "Video Prediction",
+    "Self-Verification"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:44:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可逆动作循环提供了一种无需真实未来状态的自我验证机制，解决了长时程视频世界模型的验证瓶颈。",
+      "将强化学习与自验证结合，能够有效减少复合误差，提升模型在长期规划中的表现。",
+      "该方法适用于多种交互式视频世界模型，具有广泛的通用性和实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

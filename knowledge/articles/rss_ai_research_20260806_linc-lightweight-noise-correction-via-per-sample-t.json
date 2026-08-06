@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-073",
+  "title": "LiNC: Lightweight Noise Correction via Per-Sample Trust and Gaussian Mixture Modeling",
+  "source_url": "https://arxiv.org/abs/2608.04147",
+  "source_platform": "rss_ai_research",
+  "summary": "LiNC（轻量级噪声校正）是一种针对医学影像数据集中标签噪声问题的新方法。医学影像数据常因标注者间差异、标注错误和模糊案例而存在标签噪声，这会严重损害机器学习模型的可靠性和临床有效性。LiNC 通过为每个训练样本引入一个可训练的信任参数，并学习何时使用观察到的标签，从而在训练过程中动态校正噪声标签的影响。该方法设计轻量，仅增加少量参数，旨在提升模型在噪声环境下的鲁棒性。该研究来自 arXiv 预印本，属于医学影像与机器学习交叉领域，对于提高临床 AI 系统的可靠性具有重要意义。其创新点在于将噪声校正与样本级信任建模结合，且计算开销低，适合实际医疗场景。",
+  "tags": [
+    "Label Noise",
+    "Medical Imaging",
+    "Robust Learning",
+    "Gaussian Mixture Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:47:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LiNC 通过每个样本的信任参数动态调整标签权重，有效缓解标签噪声对模型训练的负面影响。",
+      "采用高斯混合模型对信任参数进行建模，能够自适应地区分干净样本和噪声样本。",
+      "该方法保持轻量级，仅增加少量参数，适合计算资源受限的医学影像应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

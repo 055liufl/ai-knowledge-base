@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-088",
+  "title": "Equitable System-Prompt Selection via Constrained Mixed-Strategy GroupDRO",
+  "source_url": "https://arxiv.org/abs/2608.04339",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种通过约束混合策略的群分布鲁棒优化（GroupDRO）方法，用于系统提示词（system prompt）的公平选择。研究指出，大型语言模型在信息检索中，对于语义等价但措辞不同的问题，回答质量可能存在显著差异。传统的系统提示词优化通常针对平均质量，导致某些措辞形式可能获得不完整或低质量的回答。为此，作者将问题形式化为一个约束混合策略优化问题，旨在在保证整体性能的同时，最小化最差组（即不同措辞群体）的风险，从而实现更公平的提示词选择。该方法具有理论保证，并在实验中验证了其有效性，能够提升模型在不同用户表达下的响应一致性和质量。这项工作对于提升LLM在实际应用中的鲁棒性和公平性具有重要意义，尤其适用于对回答质量敏感的场景，如医疗咨询、法律问答等。其创新点在于将博弈论中的混合策略与GroupDRO结合，为提示词优化提供了新视角。",
+  "tags": [
+    "LLM",
+    "Prompt Optimization",
+    "GroupDRO",
+    "Fairness",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:48:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统提示词的平均优化会导致不同措辞下回答质量不均，需关注最差情况性能。",
+      "约束混合策略GroupDRO能有效平衡整体性能与群体公平性，提升LLM响应一致性。",
+      "该方法为提示词选择提供了理论框架，可推广至其他需要公平优化的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

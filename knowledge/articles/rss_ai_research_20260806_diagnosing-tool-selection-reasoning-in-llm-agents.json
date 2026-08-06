@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260806-024",
+  "title": "Diagnosing Tool-Selection Reasoning in LLM Agents with Canary Tools",
+  "source_url": "https://arxiv.org/abs/2608.04719",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为“金丝雀工具”（Canary Tools）的新型诊断方法，用于深入分析LLM智能体在工具选择推理中的失败原因。传统评估仅能告知模型选错了工具，却无法解释背后的原因。作者在智能体的模型上下文协议（MCP）工具集中植入精心设计的探针工具，每种工具针对一种特定的工具选择弱点进行探测。文章提出了一种六类分类法，包括语义诱饵、参数陷阱、能力幻象、先决条件盲区、时间诱饵和粒度陷阱，将单一的“选错工具”结果转化为多维度的诊断信息。该方法有望提升智能体评估的可解释性，帮助开发者识别和修复工具选择中的系统性缺陷，从而优化智能体的决策能力。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool-Selection",
+    "Evaluation",
+    "MCP"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:43:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "金丝雀工具通过植入探针，将工具选择失败从二元结果转化为多维诊断，提升了评估的可解释性。",
+      "六类分类法（语义诱饵、参数陷阱等）系统性地覆盖了工具选择中的常见弱点，为问题定位提供了结构化框架。",
+      "该方法基于MCP标准，易于集成到现有智能体评估流程中，具有实际应用潜力。",
+      "研究填补了智能体评估中“为何选错”的空白，对改进模型推理和工具设计具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

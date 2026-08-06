@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-013",
+  "title": "Improving Auto-Design of Neural PDE Solvers with a Domain-Specific Language",
+  "source_url": "https://arxiv.org/abs/2608.04384",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于神经偏微分方程（PDE）求解器自动设计的领域特定语言（DSL），旨在解决直接代码生成中搜索空间稀疏的问题。在无限制的Python程序空间中，有效的求解器仅占极小比例，大多数候选程序存在语法错误、语义不兼容或数值不稳定等问题，导致大语言模型（LLM）将大部分搜索能力浪费在实现失败上，而非优化求解器质量。通过引入ADSL（一种专为PDE求解器设计的DSL），作者将搜索空间限制在语法和语义上有效的程序内，从而显著提高LLM生成求解器的效率和成功率。该工作结合了程序合成、领域知识和LLM能力，为科学计算中的自动设计提供了新思路，具有较高的实用价值和创新性。",
+  "tags": [
+    "LLM",
+    "PDE",
+    "DSL",
+    "AutoML",
+    "Program Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:43:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接代码生成在PDE求解器设计中效率低下，因为有效程序在搜索空间中极度稀疏，LLM大部分能力被消耗在修复错误上。",
+      "领域特定语言（DSL）通过约束搜索空间，仅允许语法和语义上有效的程序，从而提升自动设计的成功率。",
+      "该工作展示了将领域知识嵌入DSL与LLM结合，可显著提高科学计算中自动设计工具的性能，为类似问题提供范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-127",
+  "title": "DisMix: Order-Aware Mixup for Medical Imaging via Disentangling Ordinal and Non-Ordinal Features",
+  "source_url": "https://arxiv.org/abs/2608.04652",
+  "source_platform": "rss_ai_research",
+  "summary": "DisMix 是一种针对医学影像分类任务中序数标签（如疾病严重程度分级）设计的图像混合数据增强方法。传统 mixup 方法在混合图像时未区分序数特征（如疾病严重程度）和非序数特征（如外观变化），导致生成的样本扭曲了临床严重程度分级所依赖的序数结构。DisMix 通过解耦这两类特征，在混合过程中保持序数特征的顺序性，从而生成更符合临床语义的增强样本。该方法有望提升医学影像分级任务的模型性能，尤其在数据稀缺场景下具有实用价值。该研究发表于 arXiv，属于医学影像分析与数据增强交叉领域，对从事医学 AI 和图像分类的研究者具有参考意义。",
+  "tags": [
+    "Data Augmentation",
+    "Medical Imaging",
+    "Ordinal Classification",
+    "Mixup"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:51:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准 mixup 在序数分类任务中会破坏标签的序数结构，导致模型学习到扭曲的严重程度关系。",
+      "DisMix 通过解耦序数特征和非序数特征，在混合时保留序数信息，从而生成更符合临床语义的增强样本。",
+      "该方法有望提升医学影像分级任务（如疾病严重程度评估）的模型泛化能力，尤其在数据有限的情况下。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

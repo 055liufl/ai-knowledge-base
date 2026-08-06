@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-063",
+  "title": "LaPrune: Controllable Differentiable Sparsity at Million Scale",
+  "source_url": "https://arxiv.org/abs/2608.04057",
+  "source_platform": "rss_ai_research",
+  "summary": "LaPrune 是一种新型的可微稀疏化层，旨在解决大规模稀疏模型中 Top-k 选择带来的梯度阻断问题。传统硬选择会阻断梯度，而连续松弛方法往往将掩码硬度与所选质量耦合，导致难以精确控制稀疏度。LaPrune 通过引入 LapSum 屏障保持选择质量，并利用归一化二阶矩约束来调整掩码，从而在百万级规模下实现精确预算的可微稀疏化。该方法在保持稀疏模型性能的同时，允许梯度有效传播，提升了训练效率和模型可解释性。该研究发表于 arXiv，属于机器学习与优化交叉领域，对大规模模型压缩和高效推理具有重要意义，值得关注。",
+  "tags": [
+    "Sparsity",
+    "Differentiable Optimization",
+    "Model Compression",
+    "Large-Scale ML"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:46:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LaPrune 通过 LapSum 屏障和归一化二阶矩约束，实现了精确预算的可微稀疏化，解决了硬选择梯度阻断问题。",
+      "该方法在百万级规模下保持性能，表明其可扩展性适用于大型模型压缩。",
+      "与连续松弛方法不同，LaPrune 解耦了掩码硬度与质量选择，提供了更灵活的控制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

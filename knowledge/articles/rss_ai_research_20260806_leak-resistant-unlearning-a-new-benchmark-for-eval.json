@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-016",
+  "title": "Leak-Resistant Unlearning: A New Benchmark for Evaluating Multi-Hop Reasoning Consistency and Recovery Robustness",
+  "source_url": "https://arxiv.org/abs/2608.04519",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的基准测试框架，用于评估大语言模型（LLM）在机器遗忘（machine unlearning）场景下的多跳推理一致性与恢复鲁棒性。现有遗忘基准主要依赖单跳问题或有限的多跳问题，难以捕捉知识间的关联性，导致敏感知识可能通过多样化的推理路径被间接泄露。该研究针对这一缺陷，设计了包含复杂多跳推理路径的测试集，并引入恢复鲁棒性评估，即检验模型在遗忘后是否仍能通过间接推理恢复已删除的知识。这项工作为LLM隐私保护提供了更严格的评估标准，对AI安全与合规领域具有重要价值，尤其适用于需要满足数据删除法规（如GDPR）的应用场景。",
+  "tags": [
+    "Machine Unlearning",
+    "LLM",
+    "Benchmark",
+    "Privacy",
+    "Multi-Hop Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:43:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有遗忘基准低估了知识泄露风险，因为多跳推理路径可绕过直接查询限制。",
+      "新基准强调恢复鲁棒性，即模型在遗忘后仍可能通过间接推理重建敏感信息。",
+      "该工作为LLM隐私保护提供了更全面的评估工具，有助于推动更安全的模型部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

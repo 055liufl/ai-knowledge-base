@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-067",
+  "title": "Spend Bits Where Queries Look: KV Cache Vector Quantization with Attention-Preserving Transforms",
+  "source_url": "https://arxiv.org/abs/2608.04074",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对长上下文大语言模型（LLM）解码过程中KV缓存带宽瓶颈的优化方法。在长上下文场景下，每一步解码都需要读取完整的KV缓存，其加载时间超过了注意力计算时间，导致吞吐量受限于内存带宽。因此，压缩KV缓存大小可以同时提升解码速度和服务器容量。挑战在于如何在保持注意力乘积（即查询与键的点积）的同时，以固定的每元素比特数（如2比特）进行压缩，并保证重建成本低廉。现有最先进的方法在2比特每元素下仍存在精度损失。本文引入了一种基于注意力保持变换的向量量化技术，通过优化变换矩阵，使得量化后的KV缓存能够更好地保留注意力分布，从而在极低比特率下实现更优的模型性能。该方法在保持推理质量的同时，显著减少了内存占用，有望提升长上下文服务的效率。该研究对于推动LLM在实际应用中的可扩展性具有重要意义，特别是在需要处理超长文档或对话历史的场景下。",
+  "tags": [
+    "KV Cache",
+    "Vector Quantization",
+    "LLM Inference",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:47:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV缓存压缩是提升长上下文LLM推理吞吐量的关键，因为解码受限于内存带宽而非计算。",
+      "提出的注意力保持变换向量量化方法在2比特每元素下优于现有技术，通过优化变换保留注意力乘积。",
+      "该方法采用固定比特率，兼顾压缩率与重建成本，适合实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

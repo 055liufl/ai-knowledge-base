@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-118",
+  "title": "Breadcrumbing Search Agents",
+  "source_url": "https://arxiv.org/abs/2608.04565",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对基于大语言模型（LLM）的搜索代理的安全风险新视角，即“面包屑式搜索代理”（Breadcrumbing Search Agents）。该研究指出，LLM搜索代理在执行信息检索任务时，依赖外部工具返回的网页内容，而这些内容是不可信的，容易受到提示注入和目标劫持攻击。以往的研究主要关注静态网页内容注入，但现代搜索代理会发出后续查询并交叉核对多个来源，因此单个注入页面可能不足以实现攻击。本文通过引入“面包屑”概念，探讨了攻击者如何通过一系列精心设计的、看似无害的网页内容，逐步引导代理偏离其原始目标，从而实现对代理行为的操控。这项工作对于理解搜索代理的安全漏洞、设计更健壮的防御机制具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:50:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现代LLM搜索代理面临动态、多步骤的提示注入攻击，而非仅静态网页注入。",
+      "攻击者可通过“面包屑”策略，利用一系列网页内容逐步劫持代理目标。",
+      "现有防御机制需考虑代理的后续查询和交叉核对行为，以应对更复杂的攻击。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

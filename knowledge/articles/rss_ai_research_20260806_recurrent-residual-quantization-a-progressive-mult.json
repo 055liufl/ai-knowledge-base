@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260806-060",
+  "title": "Recurrent Residual Quantization: A Progressive Multi-Precision Representation for LLMs",
+  "source_url": "https://arxiv.org/abs/2608.04048",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为循环残差量化（RRQ）的后训练量化框架，旨在解决大型语言模型（LLM）在不同部署约束下需要灵活权衡精度、内存占用和吞吐量的问题。传统量化方法通常需要为每种目标位宽单独保存检查点，而RRQ通过将权重表示为低比特量化基与一系列量化残差的组合，实现了单一模型支持多种位宽的多精度表示。这种方法允许在部署时动态调整精度，无需重新训练或存储多个模型副本，从而显著提升部署灵活性和效率。RRQ的核心创新在于其渐进式量化机制，能够逐步细化权重表示，在保持高精度的同时降低内存需求。该工作对边缘计算、实时推理等资源受限场景具有重要价值，并为LLM的高效部署提供了新思路。其技术影响力在于简化了量化流程，提高了模型在不同硬件上的适配性，有望推动LLM在更广泛设备上的应用。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Post-Training Quantization",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:46:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RRQ通过残差量化实现多精度表示，避免为每个位宽单独存储检查点，节省存储资源。",
+      "渐进式量化机制允许在部署时动态调整精度，适应不同硬件和性能需求。",
+      "该方法属于后训练量化，无需重新训练模型，易于集成到现有LLM部署流程中。",
+      "RRQ在精度和内存占用之间提供了灵活权衡，特别适合资源受限的部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

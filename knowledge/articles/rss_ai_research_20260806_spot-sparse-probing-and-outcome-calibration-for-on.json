@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260806-100",
+  "title": "SPOT: Sparse Probing and Outcome Calibration for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2608.04419",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SPOT（Sparse Probing and Outcome Calibration）的新方法，用于改进在线策略蒸馏（On-Policy Distillation, OPD）中教师模型对学生的监督质量。在 OPD 中，教师模型对学生生成的轨迹提供密集的监督信号，但标准的反向 KL 散度训练可能无法充分覆盖除最可能路径外的其他合理延续。教师模型的熵值无法区分不确定性是集中在少数几个候选 token 上，还是分散在长尾概率分布中，也无法判断学生是否已经很好地表征了这些候选。SPOT 通过稀疏探测（Sparse Probing）和结果校准（Outcome Calibration）机制，更精细地利用教师模型的概率分布，从而提升蒸馏效果。该方法有望提高学生模型的泛化能力和生成质量，尤其在复杂序列生成任务中。该论文来自 arXiv，属于大模型蒸馏领域的前沿研究，对于模型压缩和高效部署具有实际意义。",
+  "tags": [
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "LLM",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:49:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准反向 KL 蒸馏可能忽略教师分布中的长尾合理候选，SPOT 通过稀疏探测聚焦关键不确定性。",
+      "教师熵不足以反映不确定性结构，需要更细粒度的概率分布分析。",
+      "结果校准机制确保学生模型在关键候选上得到充分监督，提升生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

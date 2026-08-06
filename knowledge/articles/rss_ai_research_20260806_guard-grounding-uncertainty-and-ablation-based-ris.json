@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260806-114",
+  "title": "GUARD: Grounding Uncertainty and Ablation-Based Risk Detection for Diffusion-Based VLAs",
+  "source_url": "https://arxiv.org/abs/2608.04510",
+  "source_platform": "rss_ai_research",
+  "summary": "GUARD 是一种针对扩散式视觉-语言-动作（VLA）策略的测试时失败检测方法。扩散式 VLA 策略即使在预测与任务相关的视觉和语言证据关联较弱时，也可能生成看似合理的动作，这可能导致部署中的安全隐患。GUARD 无需修改预训练策略，通过估计最终视觉-语言模型键值（KV）缓存中按 token 索引的条目的影响，构建反事实场景来量化这种“接地”程度，从而在测试时检测失败。该方法旨在提高 VLA 系统在真实世界应用中的可靠性和安全性，尤其是在机器人操作等任务中。该研究来自 arXiv，属于交叉领域，结合了视觉-语言模型、扩散模型和机器人策略，为 VLA 策略的鲁棒性评估提供了新思路，具有重要的实用价值。",
+  "tags": [
+    "VLA",
+    "Diffusion",
+    "Failure Detection",
+    "Vision-Language Model",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-08-06T10:38:50Z",
+  "collected_at": "2026-08-06T10:50:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GUARD 通过分析 KV 缓存中的 token 影响来检测 VLA 策略的接地不足，无需修改预训练模型。",
+      "该方法在测试时运行，有助于实时识别潜在失败，提升部署安全性。",
+      "针对扩散式 VLA 策略，填补了现有失败检测方法在视觉-语言接地评估方面的空白。",
+      "适用于机器人等高风险应用，具有实际部署潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
