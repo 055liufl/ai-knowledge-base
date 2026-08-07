@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260807-122",
+  "title": "Marginal Matching Does Not License Factorized Sampling: Auditing Conditional Style Leakage in Factorized Generative Models",
+  "source_url": "https://arxiv.org/abs/2608.05243",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对因子化生成模型（如GAN、VAE等）中常见的正则化做法提出质疑：通过将潜在风格变量z_s的边缘分布匹配到固定高斯先验，并不能保证风格表示与类别信息独立。作者指出，边缘分布匹配仅约束整体分布，而不约束类别条件分布，因此风格变量仍可能携带大量类别预测信息，导致条件风格泄漏。论文通过理论分析和实验验证，展示了即使边缘分布完全匹配，类别条件分布仍可显著不同，从而影响生成样本的多样性和可控性。该研究对生成模型的表示学习、公平性和可解释性具有重要启示，提醒研究者在设计正则化目标时需考虑条件分布约束，而非仅依赖边缘匹配。论文还提出了审计条件风格泄漏的方法，为评估因子化模型提供了新工具。该工作属于生成模型理论分析的前沿研究，对推动更严谨的模型评估和设计有实际价值。",
+  "tags": [
+    "生成模型",
+    "表示学习",
+    "风格泄漏",
+    "正则化",
+    "理论分析"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:09:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "边缘分布匹配不足以确保风格变量与类别独立，需额外约束条件分布。",
+      "条件风格泄漏可能导致生成样本在类别间缺乏多样性，影响可控性。",
+      "提出审计方法可量化风格泄漏程度，为模型评估提供新标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

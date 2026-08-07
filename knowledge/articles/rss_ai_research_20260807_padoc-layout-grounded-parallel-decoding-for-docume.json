@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-082",
+  "title": "PaDoc: Layout-Grounded Parallel Decoding for Document Parsing",
+  "source_url": "https://arxiv.org/abs/2608.06146",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 PaDoc 的文档解析方法，旨在解决端到端文档解析器中序列化解码效率低下的问题。传统端到端解析器将页面布局和区域内容统一序列化为自回归序列，导致解码长度随内容总量增长，且区域间存在依赖。而基于裁剪的两阶段解析器虽然支持区域级并行，但需要重复的视觉预填充并丢失页面上下文。PaDoc 通过布局引导的并行解码，在保持全页上下文的同时，消除区域间的解码依赖，从而提升解析速度。该方法具有创新性，对文档理解领域有实际应用价值，尤其适合处理复杂多区域文档。",
+  "tags": [
+    "Document Parsing",
+    "Parallel Decoding",
+    "Layout",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:06:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PaDoc 通过布局引导的并行解码，在保持全页上下文的同时消除区域间依赖，提升了解码效率。",
+      "该方法避免了传统两阶段解析器重复视觉预填充的缺点，同时保留了端到端模型的统一接口优势。",
+      "PaDoc 适用于内容密集、多区域文档，有望加速文档解析在实际应用中的部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-003",
+  "title": "Woodpecker Distillation: Weak Models Diagnose Reasoning Bugs in Strong Models",
+  "source_url": "https://arxiv.org/abs/2608.05168",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Woodpecker Distillation”的方法，旨在通过弱模型诊断并修复强语言模型在推理任务中的局部错误。作者认为，强模型在推理失败时，问题往往出在中间步骤的局部推理缺陷，而非整体能力不足。通过让弱探针模型在强模型推理前缀后生成简短补丁，可以引导推理轨迹走向正确结果。该方法展示了弱模型在辅助强模型方面的潜力，为推理优化提供了新思路，并可能降低对大规模微调或复杂推理框架的依赖。论文通过实验验证了修复的有效性，并分析了补丁的定位与生成机制。该研究对提升LLM推理可靠性和可解释性具有重要价值，尤其适用于需要高精度推理的应用场景。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Distillation",
+    "Weak-to-Strong"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:01:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "强模型推理失败常源于局部步骤缺陷，而非整体能力不足，这为针对性修复提供了可能。",
+      "弱模型生成的短补丁能有效纠正强模型的推理轨迹，展示了弱到强迁移的新范式。",
+      "该方法无需重新训练强模型，成本低且可解释性强，适合作为推理后处理工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

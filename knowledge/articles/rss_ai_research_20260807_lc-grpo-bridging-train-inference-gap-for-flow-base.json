@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260807-141",
+  "title": "LC-GRPO: Bridging Train-Inference Gap for Flow-Based GRPO with Langevin Correction",
+  "source_url": "https://arxiv.org/abs/2608.05600",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为LC-GRPO的新方法，旨在弥合基于流的生成模型在训练与推理之间的差距。基于流的模型通常通过求解确定性常微分方程（ODE）进行采样，而在线强化学习需要随机轨迹以进行策略探索和优化。现有的针对流模型的GRPO方法在训练时用随机微分方程（SDE）替代推理时的ODE，尽管在连续时间下ODE和SDE具有相同的边际分布，但这种替代可能导致训练与推理之间的不一致。LC-GRPO通过引入朗之万校正（Langevin Correction）来桥接这一差距，使得训练过程中的随机探索更接近推理时的确定性采样，从而提升策略优化效果。该方法值得关注，因为它解决了生成模型与强化学习结合中的关键一致性问题，有望提高基于流的生成模型在在线学习任务中的性能和稳定性。",
+  "tags": [
+    "Flow-based Models",
+    "GRPO",
+    "Reinforcement Learning",
+    "Langevin Dynamics",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:10:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LC-GRPO通过朗之万校正弥合了训练时SDE与推理时ODE之间的分布差异，提升了策略优化的一致性。",
+      "该方法针对现有GRPO方法在流模型中的不足，提出了一种理论上有依据的校正机制，增强了训练稳定性。",
+      "该研究为生成模型与强化学习的结合提供了新思路，可能推动基于流的模型在在线学习场景中的实际应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

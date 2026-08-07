@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-091",
+  "title": "The Illusion of Visual Tool-Use: A Causal Audit of Thinking with Images",
+  "source_url": "https://arxiv.org/abs/2608.06270",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对多模态大语言模型（LLM）中的“用图像思考”范式进行了因果审计，指出模型在使用主动视觉操作（如裁剪和缩放）时，相比直接推理往往只能获得边际甚至负面的收益，且会消耗更高的token成本。模型可能反复裁剪无关区域，并在直接推理能正确回答的问题上失败。作者提出疑问：返回的视觉证据是否真正因果地影响了答案。该研究通过因果审计方法，系统性地评估了视觉工具使用对模型输出的实际影响，揭示了当前视觉工具使用范式的潜在幻觉问题。这项工作对于理解多模态模型的推理机制、优化视觉工具设计以及提升模型的可解释性和可靠性具有重要意义，值得研究者和开发者关注。",
+  "tags": [
+    "Multimodal LLM",
+    "Visual Tool-Use",
+    "Causal Audit"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:07:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉工具使用（如裁剪缩放）在多数情况下并未带来显著性能提升，甚至可能降低准确率。",
+      "模型可能过度依赖视觉操作，导致对无关区域的重复裁剪，浪费计算资源。",
+      "因果审计方法能够有效评估视觉证据对答案的真实影响，揭示工具使用的幻觉问题。",
+      "该研究为改进多模态模型的视觉推理策略提供了重要依据，强调直接推理的稳健性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

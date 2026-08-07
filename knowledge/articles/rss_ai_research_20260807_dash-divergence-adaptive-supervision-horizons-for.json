@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-089",
+  "title": "DASH: Divergence-Adaptive Supervision Horizons for On-Policy Self-Distillation of Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2608.06243",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为DASH（Divergence-Adaptive Supervision Horizons）的新方法，用于改进推理模型的自蒸馏训练。在强化学习（RLVR）中，奖励信号通常是稀疏且序列级别的，这限制了模型推理能力的提升。DASH通过引入自适应监督视界，在训练过程中动态调整教师模型提供监督的粒度，从而在稀疏奖励和密集监督之间取得平衡。该方法基于学生与教师之间的发散度，决定何时以及如何提供密集的token级监督，以提高训练效率和模型性能。DASH的提出解决了OPSD（On-Policy Self-Distillation）中固定监督视界导致的效率低下问题，为推理模型的自蒸馏提供了更灵活的框架。该研究具有重要的理论意义和实际应用价值，可能推动大语言模型在复杂推理任务上的表现。",
+  "tags": [
+    "RLVR",
+    "Self-Distillation",
+    "Reasoning Models",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:07:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DASH通过动态调整监督视界，解决了固定视界在自蒸馏中的效率瓶颈。",
+      "基于发散度的自适应机制能更有效地利用教师模型，提升训练信号密度。",
+      "该方法在推理任务上可能显著提高模型性能，同时降低计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

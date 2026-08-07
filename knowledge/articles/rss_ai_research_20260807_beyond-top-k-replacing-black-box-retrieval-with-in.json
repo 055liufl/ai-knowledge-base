@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260807-095",
+  "title": "Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations",
+  "source_url": "https://arxiv.org/abs/2608.06305",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对长文档检索增强生成（RAG）中普遍采用的“分块-嵌入-取Top-K”范式提出了质疑，指出其在处理财务报表、审计报告、监管申报等结构化文档时存在结构性缺陷。作者以一份780页的政府财务报告为例，指出其中86.8%的内容行是表格行，传统分块和向量检索难以有效处理这类密集的表格数据。文章提出用可解释的代理操作（Agentic Operations）替代黑盒检索，旨在通过更细粒度的操作（如表格解析、数值比较、跨行聚合等）提升检索的准确性和可解释性。该研究为RAG在专业文档领域的应用提供了新思路，强调了从“检索”到“操作”的范式转变，对金融、审计等垂直领域的文档智能处理具有重要参考价值。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Long Document",
+    "Table Understanding",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:07:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统Top-K检索在结构化文档（如财务报表）中失效，因为表格行占比极高，语义嵌入难以捕捉数值和结构关系。",
+      "提出以可解释的代理操作替代黑盒检索，通过显式操作（如表格解析、数值比较）提升检索的准确性和可解释性。",
+      "实证数据（86.8%表格行）揭示了现有RAG系统在专业文档上的系统性缺陷，为后续研究提供了量化基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

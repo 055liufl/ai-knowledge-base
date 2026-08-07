@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-045",
+  "title": "RA-CAD: Learning Post-Execution Critique for State-Aware Text-to-CAD Generation",
+  "source_url": "https://arxiv.org/abs/2608.05714",
+  "source_platform": "rss_ai_research",
+  "summary": "RA-CAD 提出了一种用于文本到 CAD 生成的后执行批判学习框架，旨在将自然语言设计意图转化为可编辑且可执行的参数化 CAD 代码。现有方法依赖固定或外部提供的批判机制（如提示诱导或单独优化的反馈）来优化生成过程，但这些机制未能充分优化反馈的解释与转化，导致生成质量受限。RA-CAD 通过引入状态感知的后执行批判学习，使模型能够根据生成代码的执行结果（如几何或约束错误）自适应地调整反馈策略，从而提升生成代码的准确性和可执行性。该研究针对 CAD 生成这一专业领域，结合了自然语言处理、程序合成和计算机辅助设计，具有较高的应用价值，尤其对需要自动化设计工具的开发者和研究者具有参考意义。其创新点在于将批判机制从静态或外部驱动转向动态学习，有望推动文本到 CAD 生成技术的实用化。",
+  "tags": [
+    "Text-to-CAD",
+    "LLM",
+    "Program Synthesis",
+    "Critique Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:04:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有文本到 CAD 生成方法依赖固定或外部批判机制，缺乏对反馈解释的动态优化，RA-CAD 通过后执行批判学习解决了这一局限。",
+      "状态感知的批判机制利用执行结果（如几何错误）来指导模型调整，显著提升生成 CAD 代码的可执行性和准确性。",
+      "该框架展示了将学习型批判融入程序合成任务的潜力，为其他代码生成领域（如文本到代码）提供了可借鉴的思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

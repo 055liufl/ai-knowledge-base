@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260807-130",
+  "title": "Perturbation Sensitivity at Convergence: A Simple Signal for Identifying Spuriously Correlated Samples",
+  "source_url": "https://arxiv.org/abs/2608.05419",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种无需组标注即可识别受虚假相关性影响样本的新方法。传统方法依赖早期训练阶段的信号，且需要选择干预的epoch超参数，通常需要组标注的验证数据。本文发现，在收敛状态下，模型对扰动（如输入扰动或参数扰动）的敏感性可以作为识别虚假相关样本的简单信号。具体而言，受虚假相关性影响的样本在收敛时对扰动更敏感，而正常样本则相对稳定。该方法避免了早期训练干预的复杂性，简化了识别流程，并可能提高在分布外子群体上的鲁棒性。该研究为鲁棒机器学习提供了新的视角，尤其适用于缺乏组标注的现实场景，具有重要的实用价值。",
+  "tags": [
+    "spurious correlation",
+    "robustness",
+    "perturbation sensitivity",
+    "deep learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:09:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "收敛时的扰动敏感性可作为识别虚假相关样本的简单信号，无需组标注。",
+      "该方法避免了早期训练干预的epoch选择问题，简化了现有流程。",
+      "实验表明，该方法在多个基准上有效，提升了子群体鲁棒性。",
+      "为鲁棒学习提供了新的理论视角，可能启发更多基于收敛特性的方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

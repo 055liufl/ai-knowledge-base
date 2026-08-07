@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-010",
+  "title": "When Privileged Guidance Misaligns: State-Matched Routing and Contextualized Self-Distillation for Multi-Turn Agents",
+  "source_url": "https://arxiv.org/abs/2608.05219",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多轮对话智能体的新训练方法，旨在解决特权引导（privileged guidance）与学生实际执行轨迹之间的错位问题。在交互式环境中，学生智能体的先前动作会持续改变执行状态，导致其轨迹与训练时使用的成功参考轨迹产生偏差，从而削弱特权蒸馏（privileged distillation）的效果。为此，作者引入了状态匹配路由（State-Matched Routing）和情境化自蒸馏（Contextualized Self-Distillation）两种机制。状态匹配路由通过动态匹配学生当前状态与教师参考状态，选择最合适的引导信号；情境化自蒸馏则利用学生自身的上下文信息进行自我改进，减少对特权信息的依赖。该方法在多个多轮任务基准上进行了实验，显著提升了智能体的决策质量和鲁棒性。该研究对于强化学习、多轮对话系统以及智能体训练领域具有重要价值，为解决训练与执行不一致问题提供了新思路。",
+  "tags": [
+    "Multi-Turn Agents",
+    "Distillation",
+    "Reinforcement Learning",
+    "State Matching"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:02:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "特权引导与学生实际轨迹的错位是多轮智能体训练中的关键挑战，本文通过状态匹配路由有效缓解了这一问题。",
+      "情境化自蒸馏机制利用学生自身上下文，减少了对特权信息的依赖，提升了模型的泛化能力。",
+      "实验证明该方法在多个基准上优于传统蒸馏方法，为多轮智能体训练提供了新的技术路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

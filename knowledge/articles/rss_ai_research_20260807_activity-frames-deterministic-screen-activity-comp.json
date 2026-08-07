@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260807-050",
+  "title": "Activity Frames: Deterministic Screen-Activity Compilation for Agent Memory and Replay",
+  "source_url": "https://arxiv.org/abs/2608.05784",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Activity Frames”的方法，用于将用户屏幕活动编译为代理（agent）的记忆，以支持确定性回放。该方法通过一个零模型的确定性流水线，将本地捕获的屏幕活动流分割为类型化的活动帧，每个帧包含应用、站点、时间、输入量及证据指针等边界信息。这解决了当前计算机使用代理（computer-use agents）在记忆用户行为时仅记录用户所说而非所做的问题，从而避免重复推理用户已执行过的例程。该工作对于提升代理的效率和个性化体验具有重要意义，值得关注。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Screen Activity",
+    "Deterministic Pipeline",
+    "Replay"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:04:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前代理记忆仅记录用户语言指令，忽略实际行为，导致重复推理；Activity Frames通过捕获屏幕活动补充行为记忆。",
+      "采用确定性、零模型的流水线，无需依赖机器学习模型，确保编译过程的可靠性和可解释性。",
+      "活动帧包含应用、站点、时间、输入量等结构化信息，为代理提供丰富的上下文，支持高效回放和个性化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

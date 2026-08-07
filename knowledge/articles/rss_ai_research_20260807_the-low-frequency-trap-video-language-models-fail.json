@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-098",
+  "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+  "source_url": "https://arxiv.org/abs/2608.06361",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对视频语言模型（Video Language Models）在事件计数任务上的系统性评估方法。作者指出，现有真实世界视频基准虽然覆盖面广，但固定片段中事件数量、发生频率、持续时间和视觉复杂度相互纠缠，难以定位模型的具体失败原因。而现有的程序化基准虽然能控制变量，却只对最终答案评分，无法将模型报告的事件与可执行的真实事件进行逐项核对。为此，他们引入了基于轨迹（trace）的参数化剖析方法，在三个受控视频场景中评估模型的事件计数能力。研究发现，视频语言模型在简单事件记录任务上存在系统性缺陷，尤其对低频事件容易遗漏，这被称为“低频陷阱”。该工作为视频理解模型的诊断提供了更精细的工具，有助于推动模型在细粒度时序事件理解上的改进。",
+  "tags": [
+    "Video Language Model",
+    "Event Counting",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:07:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有视频基准无法隔离事件计数失败的具体原因，需要更精细的受控评估。",
+      "基于轨迹的剖析方法能对模型报告的事件进行逐项核对，提供可执行的真实标准。",
+      "视频语言模型在低频事件上存在系统性遗漏，揭示了其时序理解能力的短板。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

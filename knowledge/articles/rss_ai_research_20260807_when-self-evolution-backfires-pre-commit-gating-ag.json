@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-053",
+  "title": "When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.05810",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了自进化LLM代理在从执行轨迹中提炼可复用技能时出现的非单调性能退化现象。作者发现，当技能池超过临界规模后，新增技能不仅无法提升性能，反而会损害整体表现，并将此定义为“能力污染相变”。他们从结构上追溯原因：一旦有缺陷的技能进入决策上下文，它就会成为后续技能提炼的参考材料，导致错误传播和累积。为解决这一问题，论文提出了一种“预提交门控”机制，在技能被纳入池中之前进行质量检查，以防止污染扩散。这项工作对自进化代理的设计具有重要指导意义，揭示了技能管理中的潜在风险，并提供了可行的缓解策略。该研究值得关注，因为它挑战了“更多技能必然更好”的直觉，为构建更稳健的自主代理提供了理论基础和实用方法。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Self-Evolution",
+    "Skill Contamination"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:05:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化代理的技能积累并非单调有益，存在临界池大小导致性能下降的相变现象。",
+      "缺陷技能一旦进入决策上下文，会污染后续技能提炼过程，形成错误传播链。",
+      "预提交门控机制通过事前质量检查，可有效阻止污染技能进入池中，维持代理性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

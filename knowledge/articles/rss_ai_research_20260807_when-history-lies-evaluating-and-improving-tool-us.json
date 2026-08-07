@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-073",
+  "title": "When History Lies: Evaluating and Improving Tool Use under Misleading Multi-Turn Histories",
+  "source_url": "https://arxiv.org/abs/2608.06057",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了工具调用智能体在多轮对话历史误导下的行为退化问题。作者指出，在持久交互中，历史轨迹可能结构上有效、语义上合理，但已不再对当前请求具有权威性，这种“历史污染”会劫持模型已有的正确策略。实验表明，在Qwen3-1.7B模型上，污染导致32.1%原本正确的决策被翻转，并频繁引发重复性错误。论文提出了一种评估方法和改进策略，旨在提升工具调用智能体在误导性多轮历史下的鲁棒性。该研究对于构建可靠、可长期交互的AI代理具有重要意义，尤其是在客服、自动化操作等需要持续对话的场景中。其创新点在于系统性地定义和量化了历史误导问题，并提供了改进方向，为后续研究奠定了基础。",
+  "tags": [
+    "Tool Use",
+    "Multi-Turn Dialogue",
+    "Robustness",
+    "LLM Agent"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:06:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "历史轨迹即使结构有效且语义合理，也可能因失去权威性而误导工具调用智能体，导致决策错误。",
+      "实验量化了历史污染的严重性：在Qwen3-1.7B上，32.1%的正确决策被翻转，表明问题普遍存在。",
+      "论文提出了评估方法和改进策略，为提升智能体在长期交互中的鲁棒性提供了可行路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-116",
+  "title": "Post-Hoc Trajectory-Risk Certification for Modular LLM-Based Security Agents",
+  "source_url": "https://arxiv.org/abs/2608.05199",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对模块化LLM安全代理的事后轨迹风险认证方法。安全代理通常以分阶段流水线方式运行，例如先对网络流量进行分类，再将攻击归因于特定技术。虽然分裂共形预测能为每个阶段提供有限样本覆盖保证，但在部署时需要对整个链路提供轨迹级别的保证。由于各阶段独立训练和校准，这些保证无法自动组合。文章指出，Bonferroni分配虽无需分布假设但较为保守，因此需要一种更精细的方法来在保证整体风险控制的同时提高效率。该研究为LLM驱动的安全代理提供了形式化的可靠性认证框架，有助于在动态威胁环境中实现可验证的安全决策。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Conformal Prediction",
+    "Certification"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:08:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模块化LLM安全代理的轨迹级风险保证无法通过各阶段独立校准自动组合，需要专门的事后认证方法。",
+      "分裂共形预测提供阶段级覆盖，但Bonferroni分配虽分布自由却过于保守，存在改进空间。",
+      "该研究为安全代理的可靠性验证提供了形式化框架，对实际部署中的风险控制具有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

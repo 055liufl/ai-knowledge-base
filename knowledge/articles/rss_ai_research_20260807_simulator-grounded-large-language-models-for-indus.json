@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260807-101",
+  "title": "Simulator-Grounded Large Language Models for Industrial Causal Reasoning: Tool-Use, Structured Injection, and Plant-Portable Retrieval for Wastewater Treatment Decision Support",
+  "source_url": "https://arxiv.org/abs/2608.05151",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对工业因果推理场景，特别是污水处理厂的决策支持，提出并比较了三种将大语言模型（LLM）与领域特定模拟器相结合的方法。研究背景是污水处理操作员需要基于工厂变量间相互作用和效应传播速度的答案，而非通用预训练文本。三种方法包括：实时模拟器作为外部工具（Method 1）、结构化参数注入（Method 2）以及面向工厂可移植的检索增强生成（Method 3）。研究使用冻结的Qwen2.5-32B-Instruct模型，并基于可解释的污水处理模拟器CCSS-IX进行实验。该工作的重要性在于，它探索了如何将LLM的推理能力与工业级模拟器的精确性结合，以提供可操作、可解释的决策支持，解决了LLM在专业领域应用中常见的幻觉和缺乏动态适应性问题。通过对比不同集成策略，研究为工业AI应用提供了实用指导，尤其是在需要实时响应和领域知识融合的场景中。",
+  "tags": [
+    "LLM",
+    "Causal Reasoning",
+    "Industrial AI",
+    "Simulator",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:08:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将LLM与实时模拟器集成可显著提升因果推理的准确性和可解释性，优于纯文本生成。",
+      "结构化参数注入方法在保持模型冻结的同时，能有效传递领域知识，减少对大量微调的需求。",
+      "面向工厂可移植的检索增强生成方法平衡了泛化性和专业性，适合多场景部署。",
+      "该研究为工业决策支持系统提供了可复现的基准，强调了工具使用和结构化知识注入的重要性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

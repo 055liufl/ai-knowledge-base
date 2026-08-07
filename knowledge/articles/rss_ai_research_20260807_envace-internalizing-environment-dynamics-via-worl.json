@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-087",
+  "title": "EnvACE: Internalizing Environment Dynamics via World Rehearsal for Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.06197",
+  "source_platform": "rss_ai_research",
+  "summary": "EnvACE 是一种面向智能体强化学习的新方法，旨在解决训练大型语言模型（LLM）智能体进行长时程工具使用时对真实或合成可执行环境依赖的高成本问题。传统方法需要构建和验证真实环境，或依赖难以对齐的外部模拟器，而 EnvACE 通过“世界预演”（world rehearsal）机制，在训练过程中用内部环境动态模拟替代外部环境交互。具体而言，策略在“行动”和“预演”之间交替：智能体先基于当前策略采取行动，然后利用内部世界模型预演后续状态和奖励，从而在不访问外部环境的情况下进行强化学习。这种方法有望显著降低训练成本，提高环境对齐性，并增强智能体在复杂任务中的泛化能力。该论文来自 arXiv，属于智能体强化学习与 LLM 应用的前沿研究，对开发高效、可扩展的智能体训练框架具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "World Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:07:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EnvACE 通过世界预演替代外部环境交互，降低训练成本并提升环境对齐性。",
+      "该方法在行动与预演间交替，使智能体在无外部环境情况下进行强化学习。",
+      "适用于长时程工具使用任务，有望增强 LLM 智能体的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

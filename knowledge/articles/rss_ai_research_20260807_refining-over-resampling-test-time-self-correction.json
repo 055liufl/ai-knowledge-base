@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260807-040",
+  "title": "Refining Over Resampling: Test-Time Self-Correction for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.05643",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型推理的测试时自校正框架，旨在解决测试时扩展中广泛采样带来的收益递减问题。传统方法通过增加采样数量来提升推理性能，但新样本往往重复已有答案模式，缺乏多样性；而基于验证器的选择方法又受限于外部奖励模型的校准质量。该框架采用无验证器的广度-深度细化策略，在测试时利用计算资源对初始推理结果进行迭代修正，从而在不依赖外部验证器的情况下提升推理准确性。这一方法为LLM推理的测试时优化提供了新思路，尤其适用于计算资源受限或奖励模型不可靠的场景。其创新性在于将自校正机制融入测试时计算，平衡了探索与利用，有望推动推理效率和准确性的进一步提升。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Test-Time Scaling",
+    "Self-Correction"
+  ],
+  "author": null,
+  "published_at": "2026-08-07T08:58:52Z",
+  "collected_at": "2026-08-07T09:04:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "广泛采样在测试时扩展中收益递减，因为新样本缺乏推理多样性，重复已有模式。",
+      "无验证器的广度-深度细化框架通过自校正机制，在测试时迭代优化推理结果，避免依赖外部奖励模型。",
+      "该方法在推理准确性和计算效率之间取得平衡，为测试时计算分配提供了新策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
