@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260808-134",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，介绍了在 TRL（Transformer Reinforcement Learning）库中集成 vLLM 的共置（co-location）功能，旨在解决 GPU 利用率低下的问题。传统上，在强化学习（RL）训练中，生成（generation）和训练（training）阶段通常需要分离的 GPU 资源，导致部分 GPU 在生成阶段闲置，造成资源浪费。通过将 vLLM 作为推理引擎与训练模型共置在同一批 GPU 上，TRL 能够动态调度资源，使生成和训练交替进行，从而显著提升 GPU 利用率。文章详细阐述了共置架构的工作原理、性能优化效果（如吞吐量提升和内存节省），并提供了实际使用示例和基准测试结果。这一创新对于大规模语言模型（LLM）的强化学习训练尤为重要，因为它降低了硬件成本，加速了实验迭代，推动了 RLHF（基于人类反馈的强化学习）等技术的普及。该博客内容兼具技术深度和实用性，适合对 LLM 训练优化感兴趣的开发者与研究者。",
+  "tags": [
+    "LLM",
+    "vLLM",
+    "TRL",
+    "GPU优化",
+    "强化学习"
+  ],
+  "author": null,
+  "published_at": "2026-08-08T08:40:54Z",
+  "collected_at": "2026-08-08T08:53:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共置 vLLM 与训练模型可显著提升 GPU 利用率，避免生成阶段资源闲置。",
+      "该方案在 TRL 中实现简单，且能带来吞吐量提升和内存节省，降低 RL 训练成本。",
+      "动态资源调度使得生成和训练无缝交替，加速 RLHF 实验迭代。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

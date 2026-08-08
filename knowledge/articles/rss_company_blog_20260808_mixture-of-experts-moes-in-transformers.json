@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260808-051",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上的一篇技术文章，深入探讨了 Transformer 模型中的混合专家（Mixture of Experts, MoE）架构。文章首先解释了 MoE 的基本概念，即通过将模型分解为多个专家子网络，并利用门控网络（router）动态选择最相关的专家来处理输入，从而在增加模型参数量的同时保持计算效率。接着，文章详细介绍了 MoE 在 Transformer 中的具体实现方式，包括稀疏 MoE 层、专家容量（expert capacity）、负载均衡损失（load balancing loss）等关键技术细节。此外，文章还讨论了 MoE 的训练挑战，如路由不稳定、专家退化等问题，并提供了实用的解决方案。最后，文章列举了 MoE 在业界和学术界的应用实例，如 GShard、Switch Transformer 等，并展望了未来的发展方向。这篇内容对于理解大规模语言模型的高效扩展策略具有重要意义，是研究者和工程师了解 MoE 技术的优秀入门材料。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "稀疏模型",
+    "高效推理"
+  ],
+  "author": null,
+  "published_at": "2026-08-08T08:40:54Z",
+  "collected_at": "2026-08-08T08:47:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活机制，在保持计算成本近似不变的情况下大幅增加模型参数量，从而提升模型容量和性能。",
+      "门控网络的设计和负载均衡损失是 MoE 训练稳定性的关键，直接影响路由效果和专家利用率。",
+      "MoE 架构已在多个大规模语言模型中得到验证，如 Switch Transformer 和 GShard，展示了其在实际应用中的可行性。",
+      "MoE 仍面临训练不稳定、推理内存开销等挑战，未来研究需关注更高效的路由策略和专家分配方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

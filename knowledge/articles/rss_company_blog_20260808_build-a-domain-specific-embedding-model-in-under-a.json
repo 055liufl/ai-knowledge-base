@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260808-045",
+  "title": "Build a Domain-Specific Embedding Model in Under a Day",
+  "source_url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章由 NVIDIA 发布在 Hugging Face 博客上，介绍了如何在一天之内构建一个领域特定的嵌入模型。文章针对通用嵌入模型在特定领域（如金融、医疗、法律等）表现不佳的问题，提出了一套完整的微调流程。内容涵盖数据准备、模型选择、训练技巧和评估方法，强调了使用领域数据对预训练嵌入模型进行微调的重要性。该文章提供了实用的代码示例和最佳实践，旨在帮助开发者快速提升模型在垂直领域的检索和语义理解能力。由于嵌入模型是 RAG（检索增强生成）系统的核心组件，该指南对于构建高效、准确的领域应用具有直接价值，因此值得关注。",
+  "tags": [
+    "Embedding",
+    "Fine-tuning",
+    "RAG",
+    "NVIDIA",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-08-08T08:40:54Z",
+  "collected_at": "2026-08-08T08:46:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "领域特定的嵌入模型能显著提升垂直场景下的检索准确率，通用模型往往无法捕捉领域术语和语义。",
+      "微调流程包括数据收集、清洗、构造训练对（如查询-文档对），以及选择合适的损失函数（如对比学习）。",
+      "利用预训练模型（如 sentence-transformers）和高效微调技术（如 LoRA）可以在单日内完成训练，降低资源门槛。",
+      "评估阶段应使用领域内的基准数据集，并关注检索指标（如 Recall@K）以确保实际效果。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
