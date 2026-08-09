@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260809-016",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，探讨了如何评估开源模型在自定义工具调用场景中的“智能体能力”（agentic capability）。文章指出，现有的基准测试（如函数调用基准）往往不能反映实际应用中模型与特定工具集成的效果，因此提出了一种新的评估方法：用户可以在自己的工具集上对开源模型进行基准测试。文章详细介绍了使用 Hugging Face 的 `transformers` 和 `agents` 库，通过定义工具模式（如 JSON Schema）和测试用例，自动评估模型能否正确选择工具、生成参数并处理错误。该方法强调了可重复性和自定义性，允许开发者针对自己的 API、数据库或内部工具进行测试，从而选择最适合的模型。文章还讨论了评估指标（如工具选择准确率、参数正确率）和常见陷阱（如模型过度依赖提示词、工具描述不清晰）。这一方法对于构建可靠的 AI Agent 应用至关重要，因为它弥合了通用基准与生产环境之间的差距，帮助开发者做出更明智的模型选择，并优化工具设计以提升模型性能。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-08-09T08:42:45Z",
+  "collected_at": "2026-08-09T08:46:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法反映模型在特定工具集上的真实表现，自定义评估是必要的。",
+      "通过 JSON Schema 定义工具接口，可以自动化评估模型的选择和参数生成能力。",
+      "评估结果受工具描述质量影响，优化工具描述可显著提升模型性能。",
+      "该方法支持开源模型间的对比，帮助开发者选择最适合其应用场景的模型。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

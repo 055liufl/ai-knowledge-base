@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260809-134",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章介绍了在Hugging Face的TRL（Transformer Reinforcement Learning）库中集成vLLM（Very Large Language Model）推理引擎的新功能，旨在解决GPU利用率不足的问题。传统上，在强化学习（RL）训练过程中，推理和训练阶段通常分离，导致GPU资源在推理时闲置。通过将vLLM与TRL协同部署，可以在同一GPU上同时进行推理和训练，从而最大化硬件利用率，显著提升训练效率。文章详细说明了这种协同部署的技术实现、性能提升（如吞吐量增加、内存优化）以及实际应用场景，并提供了代码示例和基准测试结果。这一创新对于大规模语言模型的强化学习训练尤为重要，能够降低训练成本并加速实验迭代。该功能值得关注，因为它直接解决了AI训练中的资源瓶颈问题，为研究者和开发者提供了更高效的训练工具。",
+  "tags": [
+    "vLLM",
+    "TRL",
+    "GPU优化",
+    "强化学习",
+    "训练效率"
+  ],
+  "author": null,
+  "published_at": "2026-08-09T08:42:45Z",
+  "collected_at": "2026-08-09T08:53:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "协同部署vLLM和TRL可显著提高GPU利用率，减少推理和训练阶段的资源闲置。",
+      "该功能通过在同一GPU上并行处理推理和训练，提升了整体训练吞吐量，降低了成本。",
+      "提供了实用的代码示例和基准测试，便于开发者快速集成和评估性能。",
+      "这一创新对大规模语言模型的强化学习训练具有重要价值，加速了实验迭代。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

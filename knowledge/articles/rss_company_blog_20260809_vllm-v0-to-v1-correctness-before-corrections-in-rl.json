@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260809-029",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章讨论了 vLLM 从 V0 到 V1 的演进，重点聚焦于强化学习（RL）场景下的正确性问题。文章标题强调“Correctness Before Corrections”，即在 RL 训练中，确保推理引擎的正确性比进行快速修正更为重要。内容可能涉及 vLLM V1 在架构、性能优化和正确性保障方面的改进，特别是针对 RL 工作负载（如策略梯度、PPO 等）的推理需求。vLLM 作为高性能 LLM 推理引擎，其 V1 版本可能引入了更稳定的批处理、更精确的采样逻辑或对 RL 循环的更好支持，以减少训练中的偏差和错误。该文章值得关注，因为它直接关系到 RL 训练基础设施的可靠性，对依赖 vLLM 进行大规模 RL 实验的团队具有实际指导意义。",
+  "tags": [
+    "vLLM",
+    "Reinforcement Learning",
+    "LLM Inference",
+    "Correctness",
+    "Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-08-09T08:42:45Z",
+  "collected_at": "2026-08-09T08:47:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 在 RL 场景中优先保证推理正确性，避免因采样或批处理错误导致训练不稳定。",
+      "从 V0 到 V1 的演进可能包括对 RL 循环的优化，如更高效的张量管理和更精确的随机数生成。",
+      "文章强调在快速迭代中，正确性应优先于性能修正，以避免累积误差影响模型收敛。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
