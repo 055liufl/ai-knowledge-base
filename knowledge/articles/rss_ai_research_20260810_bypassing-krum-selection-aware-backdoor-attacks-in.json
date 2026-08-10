@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-114",
+  "title": "Bypassing Krum: Selection-Aware Backdoor Attacks in Federated Learning",
+  "source_url": "https://arxiv.org/abs/2608.06637",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对联邦学习中鲁棒聚合方法（如Krum和Multi-Krum）的自适应后门攻击，称为Krum-Proxy攻击。传统上，距离聚合规则通过选择与多数良性更新最接近的客户端更新来抵御恶意行为，但该研究揭示了这些方法在几何特性上的脆弱性：攻击者可以构造恶意更新，使其在距离度量上接近良性簇，从而绕过Krum的筛选，同时注入后门任务。论文通过理论分析和实验验证，展示了该攻击在多种联邦学习场景下的有效性，并讨论了防御策略的局限性。这项工作对联邦学习的安全研究具有重要意义，因为它挑战了现有鲁棒聚合方法的假设，并强调了设计更健壮聚合机制的必要性。",
+  "tags": [
+    "Federated Learning",
+    "Backdoor Attack",
+    "Robust Aggregation",
+    "Krum",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:34:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Krum-Proxy攻击通过构造与良性更新几何接近的恶意更新，成功绕过Krum等距离聚合规则，实现后门注入。",
+      "现有鲁棒聚合方法对自适应攻击的防御能力有限，其基于几何紧凑性的假设可被利用。",
+      "该攻击在多种联邦学习设置下均有效，凸显了设计更健壮聚合机制的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

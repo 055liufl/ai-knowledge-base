@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260810-129",
+  "title": "Progressive Alignment of Recommender Foundation Model through Multi-Phase Post-Training",
+  "source_url": "https://arxiv.org/abs/2608.06792",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过多阶段后训练（Multi-Phase Post-Training）来渐进对齐推荐基础模型（Foundation Model, FM）的方法。推荐系统的基础模型通常通过预训练学习用户长期行为序列，然后针对不同下游场景进行监督微调（SFT）。然而，传统的SFT优化目标（如点击率、点赞数）与业务指标（如用户满意度、长期留存）并不完全一致，导致模型行为与业务目标脱节。为此，作者提出了一种多阶段后训练框架，通过逐步引入与业务指标相关的对齐信号，使模型在保持通用能力的同时，更好地优化业务目标。该方法可能涉及多个训练阶段，每个阶段针对不同的目标或数据分布进行优化，最终实现模型与业务指标的渐进对齐。该研究对于提升推荐系统的实际效果具有重要意义，尤其是在工业界推荐场景中，能够有效弥合学术研究与业务需求之间的差距。论文来自arXiv，编号2608.06792，属于交叉领域，可能涉及推荐系统、强化学习和模型对齐技术。",
+  "tags": [
+    "推荐系统",
+    "基础模型",
+    "后训练",
+    "对齐",
+    "多阶段训练"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:35:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统SFT优化目标与业务指标不一致，导致推荐模型行为偏离业务目标。",
+      "多阶段后训练通过渐进式对齐，逐步引入业务相关信号，提升模型与业务指标的契合度。",
+      "该方法有望在保持模型通用性的同时，优化长期业务指标，如用户留存和满意度。",
+      "该研究为推荐系统基础模型的应用提供了新的训练范式，具有工业应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

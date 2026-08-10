@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-059",
+  "title": "How Much, Then Where: Credit-Conserving Action-to-Token Allocation for Multi-Turn Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.07118",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为FACTOR的方法，用于多轮智能体强化学习中的信用分配问题。传统方法在轨迹层面和令牌层面同时进行信用分配，而FACTOR将这两个决策分离：首先通过检查点校准的TD残差为每个动作分配信用，使其总和等于轨迹优势；然后利用反馈条件下的师生似然差距来分配每个动作内部各令牌的信用。这种分离设计旨在提高信用分配的精确性和学习效率，尤其适用于需要细粒度反馈的复杂多轮交互场景。该研究来自arXiv预印本，属于强化学习与自然语言处理交叉领域，对智能体训练和推理优化具有潜在价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Multi-Turn Agent",
+    "Credit Assignment",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:30:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FACTOR将信用分配分解为动作级和令牌级两个独立步骤，提高了分配的灵活性和准确性。",
+      "通过检查点校准的TD残差，动作信用能够精确地累加为轨迹优势，增强了理论一致性。",
+      "反馈条件下的师生似然差距为令牌级信用分配提供了新思路，可能提升样本效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

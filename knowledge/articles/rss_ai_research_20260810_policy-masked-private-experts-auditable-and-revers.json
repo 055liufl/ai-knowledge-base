@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-118",
+  "title": "Policy-Masked Private Experts: Auditable and Reversible Capability Access Control in Sparse MoE Models",
+  "source_url": "https://arxiv.org/abs/2608.06690",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Policy-Masked Private Experts”的机制，用于在稀疏混合专家（MoE）模型中实现可审计且可逆的能力访问控制。与传统的语言模型访问控制不同，该方法不改变模型行为，而是通过冻结预训练的MoE模型，训练一个独立的专家分支，并在top-k路由之前根据授权策略选择公开或私有专家池，从而控制特定参数是否在前向传播中可达。这种设计允许系统管理员基于信任级别动态启用或禁用新训练的参数，同时保持模型原有性能，并支持审计和逆向操作。该研究关注的是AI系统安全与治理中的一个关键问题：如何细粒度地控制模型能力，而非仅限制输出。其创新性在于将访问控制从应用层下沉到模型架构层，为多租户环境、合规性要求或敏感任务提供了新的解决方案。该工作对模型安全、隐私保护和AI治理具有潜在价值，但尚处于理论阶段，实际部署需考虑计算开销和路由效率。",
+  "tags": [
+    "MoE",
+    "Access Control",
+    "AI Safety",
+    "Model Governance"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:34:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过冻结预训练MoE模型并训练独立专家分支，实现了参数级别的访问控制，而非仅限制模型输出。",
+      "在top-k路由前选择公共或私有专家池，使得授权策略直接影响前向传播的计算路径，增强了可审计性。",
+      "该方法支持可逆操作，即可以动态切换专家池，为模型能力的临时或永久启用提供了灵活性。",
+      "该研究为AI系统安全提供了新思路，但需进一步评估其在实际部署中的计算开销和路由效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

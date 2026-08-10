@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260810-082",
+  "title": "Post-Grokking Collapse at the Representation-Readout Interface in Muon-Trained Transformers",
+  "source_url": "https://arxiv.org/abs/2608.07436",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了Muon优化器在Transformer模型中的泛化稳定性问题，特别是在表示-读出接口处的“后Grokking崩溃”现象。研究发现，在标准配置下，Muon优化器虽然能加速模加法任务的Grokking（即突然泛化），但其训练出的模型解决方案不稳定，在训练后期会失去泛化能力。具体而言，在(a+b) mod 113任务中，所有九种配置均出现先Grokking后崩溃的现象，而AdamW优化器作为参考在五个随机种子中有四个未能达到阈值，最佳准确率仅为27.59%。这种不稳定性在多种设置下持续存在，包括不同的模数、宽度、训练数据比例、减法任务以及网络深度。该研究揭示了优化器选择对模型泛化稳定性的深远影响，对理解深度学习中的Grokking现象和优化器设计具有重要意义。",
+  "tags": [
+    "Muon",
+    "Grokking",
+    "Transformer",
+    "Optimizer",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:32:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Muon优化器虽然能加速Grokking，但其训练出的模型在后期会失去泛化能力，表现出后Grokking崩溃现象。",
+      "在模加法任务中，所有配置均出现先泛化后崩溃的模式，表明该问题具有普遍性。",
+      "AdamW优化器作为参考，在多个随机种子下未能达到泛化阈值，进一步凸显了优化器选择的重要性。",
+      "该研究为优化器与模型泛化稳定性之间的关系提供了新的视角，对设计更可靠的训练算法具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

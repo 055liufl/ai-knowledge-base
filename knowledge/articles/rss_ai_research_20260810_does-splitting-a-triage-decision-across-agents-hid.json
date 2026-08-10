@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-043",
+  "title": "Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints",
+  "source_url": "https://arxiv.org/abs/2608.06949",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在多智能体流水线中分配分诊决策时，偏见是否会被隐藏或更容易被发现。研究背景是单个大语言模型在资源分配决策中表现出人口统计偏见，而实际部署通常使用多智能体流水线，包含审查步骤以捕捉此类失败。研究通过模拟审计容量受限的情况，比较了单智能体与角色分化多智能体（评估、分配）在偏见表现上的差异。研究发现，多智能体流水线可能掩盖偏见，因为中间步骤的决策分散了责任，使得最终输出看似合理，但偏见仍存在；同时，在审计容量有限时，多智能体可能提供更多检查点，但若审计设计不当，反而可能降低发现偏见的概率。该研究对AI系统公平性审计和部署设计具有重要启示，强调了审计机制需针对多智能体流程进行优化，而非简单依赖单点检查。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Bias",
+    "Fairness",
+    "Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:29:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体流水线可能隐藏偏见，因为决策分散导致责任模糊，最终输出看似合理但偏见未消除。",
+      "审计容量约束下，多智能体提供更多检查点，但若审计策略不当，可能降低偏见发现率。",
+      "研究强调审计机制需针对多智能体流程设计，而非简单依赖单点审查。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

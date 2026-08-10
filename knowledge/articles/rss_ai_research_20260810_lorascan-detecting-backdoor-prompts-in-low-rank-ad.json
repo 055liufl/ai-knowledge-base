@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-130",
+  "title": "LoRAScan: Detecting Backdoor Prompts in Low-Rank Adapters for Large Language Models via Down-Projection Activation Spikes",
+  "source_url": "https://arxiv.org/abs/2608.06795",
+  "source_platform": "rss_ai_research",
+  "summary": "LoRAScan 提出了一种针对大型语言模型（LLM）低秩适配器（LoRA）中后门提示的检测方法。该方法基于一个关键观察：后门适配器在下投影（down-projection）层会产生激活尖峰（activation spikes），而良性适配器则不会。通过分析适配器合并到基础模型后的激活模式，LoRAScan 能够在不依赖触发器知识的情况下，有效识别恶意适配器，从而缓解供应链攻击风险。该研究针对当前 LoRA 适配器分发场景中的安全漏洞，提出了一种轻量级、无需训练数据的检测方案，具有重要的实用价值。其创新性在于利用适配器内部结构的特定信号，而非传统的输入输出行为分析，为模型安全领域提供了新思路。该工作对 AI 安全、模型供应链防护以及 LoRA 生态的健康发展具有积极意义，值得研究者和开发者关注。",
+  "tags": [
+    "LLM",
+    "LoRA",
+    "Security",
+    "Backdoor Detection"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:35:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "后门适配器在下投影层产生激活尖峰，可作为检测的可靠信号。",
+      "LoRAScan 无需触发器知识或训练数据，即可检测恶意适配器。",
+      "该方法针对适配器合并后的激活模式，而非输入输出行为，提高了检测效率。",
+      "该研究填补了 LoRA 适配器供应链安全检测的空白，具有实际部署潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

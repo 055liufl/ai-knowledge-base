@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260810-132",
+  "title": "FutureBridge: Token Selection Beyond Local Preference in Collaborative Decoding",
+  "source_url": "https://arxiv.org/abs/2608.06819",
+  "source_platform": "rss_ai_research",
+  "summary": "FutureBridge 提出了一种新的协同解码方法，旨在解决大语言模型（LLM）辅助小语言模型（SLM）时仅依赖局部偏好（即 LLM 的下一 token 概率或干预 token）的局限性。现有方法在 token 级别协作时，LLM 选择的 token 可能对 SLM 后续生成不利，因为未考虑 SLM 的构建能力。FutureBridge 通过联合考虑 LLM 和 SLM 的 token 候选，并根据它们对未来生成的潜在影响进行排序，从而超越了局部偏好。该方法有望提升 SLM 在推理时的性能，同时降低计算成本，适用于资源受限场景下的高效部署。该论文来自 arXiv，属于自然语言处理与模型压缩交叉领域，对协同解码、知识蒸馏和高效推理有重要参考价值。",
+  "tags": [
+    "LLM",
+    "SLM",
+    "协同解码",
+    "推理优化",
+    "知识蒸馏"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:40:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有协同解码方法过度依赖 LLM 的局部偏好，忽略 SLM 的后续构建能力，导致次优 token 选择。",
+      "FutureBridge 通过联合排序 LLM-SLM token 候选，考虑未来生成影响，实现更优的 token 级协作。",
+      "该方法在保持性能的同时，可能降低对 LLM 的调用频率，提升推理效率，适合资源受限环境。",
+      "为协同解码和模型压缩提供了新思路，可能启发更多考虑双向影响的协作策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

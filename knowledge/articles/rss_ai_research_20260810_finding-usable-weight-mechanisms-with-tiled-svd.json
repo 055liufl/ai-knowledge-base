@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-047",
+  "title": "Finding Usable Weight Mechanisms with Tiled SVD",
+  "source_url": "https://arxiv.org/abs/2608.06969",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的机制可解释性方法，通过列分块奇异值分解（Tiled SVD）直接从神经网络的线性层中提取“机制挂载点”（mechanism mounts），每个挂载点由三元组（触发向量v，写入向量u，奇异值σ）表示。与当前主流方法（如稀疏自编码器）不同，该方法不依赖代理字典或最大激活文本标签，而是直接从网络权重中识别可解释的线性结构，从而更直接地反映模型内部的计算机制。该方法有望提高可解释性的准确性和效率，为理解大型语言模型的内部工作原理提供新工具。该研究具有理论创新性和实用潜力，值得关注。",
+  "tags": [
+    "Mechanistic Interpretability",
+    "SVD",
+    "LLM",
+    "Sparse Autoencoders"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:29:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出直接从线性层权重提取机制挂载点，避免代理字典的间接性。",
+      "使用列分块SVD，可扩展至大型模型，提高计算效率。",
+      "三元组（触发、写入、奇异值）提供更细粒度的机制描述。",
+      "可能替代或补充稀疏自编码器，增强可解释性研究的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

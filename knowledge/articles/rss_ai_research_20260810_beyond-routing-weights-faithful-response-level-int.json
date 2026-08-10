@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-003",
+  "title": "Beyond Routing Weights: Faithful Response-Level Interpretation of Mixture-of-Experts Reward Models via Contribution Contrast",
+  "source_url": "https://arxiv.org/abs/2608.06400",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对混合专家（MoE）奖励模型的新解释方法，超越了传统的路由权重分析。传统方法仅能揭示专家接收了哪些提示，而无法反映专家如何评判响应。作者引入了“贡献对比”（Contribution Contrast）框架，通过对比不同专家对最终奖励分数的贡献，实现响应级别的忠实解释。该方法能够识别出哪些专家在特定响应上起到了决定性作用，并揭示其评判逻辑。这项工作对于提升奖励模型的可信度和可调试性具有重要意义，尤其是在强化学习与人类反馈对齐（RLHF）的背景下。论文还展示了该方法在多个基准任务上的有效性，证明其能提供比路由权重更细粒度、更准确的解释。该研究为AI可解释性领域提供了新工具，有助于推动更透明、更可靠的奖励模型设计。",
+  "tags": [
+    "MoE",
+    "Interpretability",
+    "Reward Model",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:25:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "路由权重仅反映专家接收的输入，无法揭示其判断逻辑，贡献对比方法填补了这一空白。",
+      "通过对比专家对奖励分数的贡献，可实现响应级别的忠实解释，优于传统聚合方法。",
+      "该方法有助于识别关键专家，提升奖励模型的可调试性和可信度。",
+      "实验证明贡献对比在多个任务上优于基线，为MoE模型解释提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

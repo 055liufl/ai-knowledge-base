@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-031",
+  "title": "Gated-BEPO: Confidence-Gated Bellman Credit Assignment for Large Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2608.06861",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Gated-BEPO的新方法，用于解决大型语言模型（LLM）智能体在长时程环境中训练时的信用分配问题。在稀疏奖励场景下，智能体需要从最终结果中回溯每个动作的贡献，但现有方法存在不足：无评论家方法将轨迹级奖励均匀分配给所有步骤，无法区分失败轨迹中的有效动作与成功轨迹中的无效动作；而基于状态匹配的分组方法虽能构建步骤级对比，但可能因状态重复匹配不准确而引入噪声。Gated-BEPO通过引入置信度门控机制，动态调整信用分配权重，优先信任高置信度的状态-动作对，从而更精准地识别关键动作。该方法在理论上提供了收敛性分析，并在多个基准任务上验证了其优于现有基线，显著提升了智能体在复杂环境中的学习效率和最终性能。这项研究对于强化学习与LLM结合领域具有重要价值，为长时程决策任务中的高效训练提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:28:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Gated-BEPO通过置信度门控解决了传统均匀信用分配无法区分有效与无效动作的问题，提高了信用分配的准确性。",
+      "该方法在稀疏奖励的长时程任务中显著优于现有无评论家方法，展示了更好的学习效率和最终性能。",
+      "置信度门控机制为LLM智能体的训练提供了一种自适应策略，可动态调整不同状态-动作对的权重，增强了鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

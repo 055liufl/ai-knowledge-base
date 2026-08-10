@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-096",
+  "title": "Separating Decision-Rule Misalignment from Readout-Coverage Limitations in Speech Language Models",
+  "source_url": "https://arxiv.org/abs/2608.06409",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于语音语言模型的诊断方法，旨在区分决策规则错位与读出覆盖限制。语音语言模型在副语言任务（如情感、说话人属性等）上的评估通常依赖于提示答案的准确性，但答案准确性混合了从音频到答案计算过程中不同阶段的失败。作者引入了一个生成对齐的诊断阶梯，比较了生成的答案、选项logits、这些logits的仿射读出以及同一答案token处隐藏状态的线性读出。通过连续差异，该方法能够分离出模型在决策规则（即如何从内部表示映射到最终答案）上的错位，以及读出覆盖限制（即内部表示是否包含足够信息来支持正确答案）。这一诊断工具对于改进语音语言模型的评估和训练具有重要意义，有助于研究者更精确地定位模型失败的根本原因，从而推动语音语言模型在副语言任务上的性能提升。",
+  "tags": [
+    "Speech Language Model",
+    "Diagnostic Method",
+    "Paralinguistic Tasks",
+    "Model Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:33:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出生成对齐的诊断阶梯，通过比较不同层级的输出（答案、logits、仿射读出、线性读出）来分离失败来源。",
+      "区分决策规则错位（模型内部决策过程的问题）与读出覆盖限制（内部表示信息不足），为模型改进提供精确指导。",
+      "该方法适用于语音语言模型的副语言任务评估，有助于提升模型在情感、说话人属性等任务上的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-049",
+  "title": "ReQuant: Fixed-Grid Discrete Refinement for Post-Training Quantization",
+  "source_url": "https://arxiv.org/abs/2608.07019",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为ReQuant的后训练量化（PTQ）方法，旨在通过固定网格离散细化来优化大语言模型的量化权重。传统PTQ方法在初始量化后通常将整数赋值视为最终结果，而ReQuant引入了一个互补的优化阶段，使量化后的权重在量化完成后仍可进一步改进。该方法通过固定网格上的离散搜索，在不改变量化网格的前提下，对权重进行细化调整，从而提升模型精度。这项工作关注PTQ中一个被忽视的优化空间，具有理论创新性和实际应用价值，尤其适用于资源受限环境下的模型部署。",
+  "tags": [
+    "PTQ",
+    "LLM",
+    "Quantization",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:29:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReQuant提出在PTQ后增加一个离散细化阶段，打破传统量化后权重不可变的假设。",
+      "通过固定网格上的离散搜索，ReQuant在保持量化效率的同时提升模型性能。",
+      "该方法可与其他PTQ技术结合，作为通用优化模块，增强现有量化流程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

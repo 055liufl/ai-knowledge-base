@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-071",
+  "title": "Winning by Peeking: Unenforced Budgets and Test-Set Selection Inflate Short-Budget AutoML Comparisons",
+  "source_url": "https://arxiv.org/abs/2608.07303",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文揭示了短预算AutoML比较中常见的协议缺陷，可能导致误导性的结论。作者通过案例研究展示了一个简单的AutoML引擎Orcetra在513个OpenML数据集上，以60秒预算击败FLAML和AutoGluon，并在30秒预算下对FLAML取得78.4%的胜率。然而，这些胜利源于两个关键问题：未强制执行的预算（即实际运行时间可能超过名义预算）和测试集选择偏差（即使用测试集信息进行模型选择）。论文强调，在短时间预算下，AutoML系统的比较必须严格遵循协议，否则结果可能失真。这项研究对AutoML社区具有警示意义，提醒研究者和开发者在评估工具时需注意实验设计的严谨性，以避免被表面结果误导。",
+  "tags": [
+    "AutoML",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:31:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "短预算AutoML比较容易因未强制执行的预算而产生虚假优势，实际运行时间可能超出名义预算。",
+      "测试集选择偏差是另一个关键缺陷，使用测试集信息进行模型选择会高估性能。",
+      "案例研究显示，简单引擎Orcetra的胜利完全源于协议缺陷，而非算法优势。",
+      "研究呼吁社区建立更严格的基准测试协议，确保AutoML比较的公平性和可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

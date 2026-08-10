@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-054",
+  "title": "PTQ4SNN: Membrane-Aware Post-Training Quantization for Spiking Neural Networks",
+  "source_url": "https://arxiv.org/abs/2608.07066",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对脉冲神经网络（SNN）的后训练量化方法PTQ4SNN，重点解决了膜电位状态的低比特部署问题。传统SNN量化通常仅量化权重，而膜电位（membrane states）在推理中仍以浮点存储，导致部署不完整。PTQ4SNN通过膜电位感知的量化策略，考虑膜电位分布在不同通道间的差异及其与权重的不同，设计量化方案以减少阈值附近的扰动对脉冲决策的影响，并防止误差随时间累积。该方法无需训练即可实现高效低比特部署，提升了SNN在边缘设备上的实用性。该研究对SNN的硬件部署和能效计算具有重要意义，值得关注。",
+  "tags": [
+    "SNN",
+    "Post-Training Quantization",
+    "Edge AI",
+    "Neuromorphic Computing"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:30:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统性地量化SNN中的膜电位状态，填补了低比特部署的空白。",
+      "提出膜电位感知的量化方法，有效减少阈值附近扰动对脉冲决策的影响。",
+      "后训练量化无需重新训练，降低了部署成本，适合边缘场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

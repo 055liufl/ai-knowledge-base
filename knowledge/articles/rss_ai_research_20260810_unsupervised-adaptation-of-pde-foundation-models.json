@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-052",
+  "title": "Unsupervised Adaptation of PDE Foundation Models",
+  "source_url": "https://arxiv.org/abs/2608.07053",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对偏微分方程（PDE）基础模型的无监督适应框架，旨在解决预训练模型在适应新PDE系统时对密集解数据的依赖问题。传统方法需要大量真实解数据进行微调，成本高昂且难以获取。该框架通过无监督的PDE约束微调，无需真实解即可适应新方程。作者首先在多种时间依赖的PDE上预训练了一个邻域注意力Transformer，然后利用PDE残差作为损失函数进行微调，从而在无标签数据上实现模型适应。这项工作对于科学计算和AI for Science领域具有重要意义，因为它降低了PDE基础模型在实际应用中的门槛，提高了模型的泛化能力和实用性。",
+  "tags": [
+    "PDE",
+    "Foundation Model",
+    "Unsupervised Learning",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:30:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出无监督微调框架，利用PDE残差作为损失，避免对真实解数据的依赖。",
+      "采用邻域注意力Transformer，有效捕捉局部时空特征，提升模型对PDE的适应性。",
+      "在多种时间依赖PDE上预训练，增强了模型跨方程泛化能力。",
+      "该方法有望降低PDE基础模型在科学计算中的部署成本，推动AI for Science发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

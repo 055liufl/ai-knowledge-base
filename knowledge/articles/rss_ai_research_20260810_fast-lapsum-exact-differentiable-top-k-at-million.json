@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260810-036",
+  "title": "Fast LapSum: Exact Differentiable Top-k at Million Scale",
+  "source_url": "https://arxiv.org/abs/2608.06912",
+  "source_platform": "rss_ai_research",
+  "summary": "Fast LapSum 是一种用于大规模稀疏计算的可微 top-k 操作的新方法。传统的硬 top-k 会阻断梯度，而现有的软松弛方法在大规模模型上计算成本过高。Fast LapSum 通过引入精确预算的软 top-k 原语，在排序后以线性时间运行 GPU 求解器，解决了这一瓶颈。该方法在 token 路由、专家激活、内存选择和注意力剪枝等场景中具有重要应用价值，能够在不牺牲梯度流动的情况下实现高效的大规模稀疏计算。其创新点在于结合了精确性和可微性，同时保持了线性时间复杂度，为大规模模型的训练和推理提供了更优的稀疏计算工具。",
+  "tags": [
+    "Sparse Computation",
+    "Differentiable Top-k",
+    "GPU",
+    "Large-scale Models"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:28:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Fast LapSum 实现了精确预算的软 top-k，解决了硬 top-k 梯度阻断和软松弛高成本的问题。",
+      "该方法在排序后以线性时间运行，显著提升了大规模稀疏计算的效率。",
+      "适用于 token 路由、专家激活等关键场景，有望推动大规模模型训练和推理的优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

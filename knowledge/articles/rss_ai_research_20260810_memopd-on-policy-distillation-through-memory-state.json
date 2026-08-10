@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260810-056",
+  "title": "MemOPD: On-Policy Distillation through Memory State Alignment for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2608.07068",
+  "source_platform": "rss_ai_research",
+  "summary": "MemOPD 提出了一种名为“基于记忆状态对齐的在线策略蒸馏”的新方法，旨在解决长时程智能体（Long-Horizon Agents）在交互过程中因上下文不断累积而导致的性能下降和稳定性问题。该方法通过压缩和重写模型调用之间保留的历史信息来构建紧凑记忆，从而缓解上下文增长带来的负担。传统方法通常使用近端策略优化（PPO）和最终任务奖励来学习记忆保留策略，但稀疏奖励难以对单个记忆更新提供有效指导。MemOPD 通过在线策略蒸馏（On-Policy Distillation）机制，将记忆状态对齐作为辅助监督信号，使智能体在训练过程中更有效地学习记忆保留和压缩策略。该研究对于提升智能体在长时程任务中的鲁棒性和效率具有重要意义，尤其在机器人控制、对话系统和复杂决策场景中具有潜在应用价值。其创新点在于将蒸馏技术与记忆状态对齐相结合，为长时程强化学习提供了一种新的训练范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-08-10T09:21:24Z",
+  "collected_at": "2026-08-10T09:30:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体面临上下文累积问题，紧凑记忆是缓解性能下降的关键。",
+      "传统PPO依赖稀疏任务奖励，难以指导记忆更新，而在线策略蒸馏通过记忆状态对齐提供更密集的监督信号。",
+      "MemOPD将蒸馏与记忆状态对齐结合，为长时程强化学习提供了新的训练范式。",
+      "该方法有望提升智能体在复杂长时程任务中的稳定性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
