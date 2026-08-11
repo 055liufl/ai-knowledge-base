@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-048",
+  "title": "KGCache: Amortized Subgraph Retrieval for KG Reasoning with LLMs",
+  "source_url": "https://arxiv.org/abs/2608.07954",
+  "source_platform": "rss_ai_research",
+  "summary": "KGCache 是一种针对知识图谱问答（KGQA）工作负载的优化系统，旨在解决大型语言模型在基于知识图谱推理时重复检索相同图邻域的问题。现有系统如 Think-on-Graph 和 Reasoning-on-Graph 在不同问题中会反复查询相同的图结构，导致计算和延迟开销。KGCache 通过引入内存缓存机制，缓存一跳知识图谱邻域，从而摊销检索成本，提升推理效率。该系统针对 KGQA 场景设计，利用缓存复用减少重复查询，可能显著加速基于知识图谱的 LLM 推理流程。该研究关注 LLM 与知识图谱结合的实际部署效率，具有较高的工程实用价值，尤其适合需要高频知识查询的应用场景。",
+  "tags": [
+    "KGQA",
+    "LLM",
+    "Knowledge Graph",
+    "Cache",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:01:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KGCache 通过缓存一跳邻域，减少 KGQA 中重复的图检索，提升推理效率。",
+      "该工作针对现有 KGQA 系统（如 ToG、RoG）的冗余查询问题，提出实用优化方案。",
+      "内存缓存机制可显著降低延迟，适合高频知识密集型问答场景。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

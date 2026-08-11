@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260811-043",
+  "title": "ZhuLong: Execution-Grounded LLM Agent for EDA Scripting with Offline API Self-Exploration",
+  "source_url": "https://arxiv.org/abs/2608.07925",
+  "source_platform": "rss_ai_research",
+  "summary": "ZhuLong 是一个面向电子设计自动化（EDA）脚本编写的执行接地（execution-grounded）LLM 编码代理，专门针对 PyAether 和 SKILL 语言。EDA 脚本编写常依赖工具特定且往往未文档化的 API，这成为现有 LLM 难以解决的长尾瓶颈。ZhuLong 通过统一 MCP 工具整合了 API 检索、文档检查和沙箱执行，并引入离线 API 自探索机制，通过反事实实验推断未文档化 API 的行为。该机制使代理能够自主探索 API 功能，生成可靠的脚本，从而提升 EDA 脚本编写的自动化水平。该研究解决了 LLM 在专业领域（如 EDA）中因 API 文档缺失而受限的问题，具有重要的实用价值，尤其对芯片设计和验证领域的开发者与研究者而言，有望显著提高生产力。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "EDA",
+    "API",
+    "MCP"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:01:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ZhuLong 通过执行接地和沙箱验证，确保生成的 EDA 脚本正确性，克服了 LLM 在未文档化 API 上的局限。",
+      "离线 API 自探索机制利用反事实实验，自动推断 API 行为，减少对文档的依赖，是创新点。",
+      "统一 MCP 工具整合检索、文档检查和执行，简化了代理与工具交互，提高了效率。",
+      "该方案为其他专业领域（如科学计算、工业软件）的 LLM 代理提供了可借鉴的范式。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

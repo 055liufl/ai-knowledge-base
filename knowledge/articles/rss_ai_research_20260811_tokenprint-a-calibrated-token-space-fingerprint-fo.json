@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-070",
+  "title": "TokenPrint: A Calibrated Token-Space Fingerprint for Language-Model Provenance",
+  "source_url": "https://arxiv.org/abs/2608.08139",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为TokenPrint的模型溯源方法，旨在通过训练无关的指纹识别语言模型的来源，包括其基础检查点和训练分布的重叠情况。该方法利用250个固定知识探针，提取模型后期隐藏状态的top-k词汇投影，并通过Jaccard重叠度比较解码后的token字符串，从而生成模型指纹。作者在32个开源权重模型上进行了评估，展示了该方法在模型溯源和训练数据重叠检测方面的有效性。这项研究对于AI治理和模型透明度具有重要意义，提供了一种不依赖元数据或额外训练的实用工具，有助于识别模型来源和潜在的数据泄露风险。",
+  "tags": [
+    "LLM",
+    "Model Provenance",
+    "Fingerprinting",
+    "AI Governance"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:03:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TokenPrint通过固定知识探针和top-k投影生成模型指纹，无需额外训练，计算高效。",
+      "该方法在32个开源模型上验证了有效性，能够区分不同模型并检测训练分布重叠。",
+      "为AI治理提供了技术手段，有助于模型来源审计和合规性检查。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

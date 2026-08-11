@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-088",
+  "title": "Your Prompt Is Not the Only Prompt: How Much Do LLMs Weight Structured-Output Schema Descriptions?",
+  "source_url": "https://arxiv.org/abs/2608.08254",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大型语言模型（LLM）在结构化输出任务中，如何权衡提示词（system prompt、user prompt）与JSON模式描述（schema description）中的指令信息。研究通过单字段分类任务，使用非ce标签（即无意义标签）在十种模型配置下进行实验，以确定分类标签定义的最佳放置位置。这一研究揭示了结构化输出中一个常被忽视的“第二指令通道”——模式描述，可能对模型行为产生显著影响。该研究对于依赖结构化输出的数据标注、信息抽取等应用具有重要参考价值，有助于优化提示设计，提升模型输出的准确性和一致性。其创新点在于系统性地比较了不同指令通道的权重，为LLM应用开发提供了实证指导。",
+  "tags": [
+    "LLM",
+    "Structured Output",
+    "Prompt Engineering",
+    "JSON Schema"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:04:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模式描述作为第二指令通道，其影响可能被低估，需在提示设计中加以考虑。",
+      "分类标签定义的最佳放置位置因模型配置而异，需进行系统测试。",
+      "结构化输出任务中，提示词与模式描述之间存在权重分配问题，影响模型表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

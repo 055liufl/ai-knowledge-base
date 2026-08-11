@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-033",
+  "title": "When the Judge Should Not Decide: Evidence-Locked, Non-Compensatory Selection Bounds LLM-Judge Failure in Reasoning Pipelines",
+  "source_url": "https://arxiv.org/abs/2608.07813",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了在推理流水线中部署LLM评判器（LLM judge）时的决策规则问题。作者指出，评判器的价值不仅取决于其准确性，更取决于其嵌入的决策规则。通过在四个GRPO策略的冻结候选池上进行实验，他们发现，当使用无约束的标量DeepSeek-R1-7B评判器时，相对于答案级多数投票，性能提升微乎其微（在500个GSM8K问题上仅提升1.0个百分点，在300个HotpotQA问题上EM仅提升0.34）。论文提出了“证据锁定、非补偿性选择边界”的概念，用于界定评判器何时不应做出决策，从而避免因评判器失败而导致的推理错误。这一研究对于理解LLM评判器的局限性以及设计更稳健的推理流水线具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:00:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM评判器的价值受决策规则影响，而非仅由准确性决定。",
+      "在冻结候选池上，无约束标量评判器相比多数投票提升有限。",
+      "提出证据锁定、非补偿性选择边界，以界定评判器不应决策的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

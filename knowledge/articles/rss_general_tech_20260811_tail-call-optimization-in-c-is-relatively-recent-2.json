@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260811-009",
+  "title": "Tail-call optimization in C is relatively recent (2025)",
+  "source_url": "https://lwn.net/Articles/1034703/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章讨论了C语言中尾调用优化（Tail-call optimization, TCO）的现状，指出该优化在C语言中相对较新，直到2025年才受到更多关注。文章基于LWN.net的评论，探讨了编译器（如GCC和Clang）对TCO的支持情况、其实现原理、性能影响以及在实际编程中的应用。TCO是一种重要的编译器优化技术，能够将递归函数转换为迭代形式，避免栈溢出并提高性能。尽管C语言标准并未强制要求TCO，但现代编译器已逐步提供支持。文章还分析了TCO在嵌入式系统、函数式编程风格代码中的潜在价值，以及开发者如何利用编译器选项（如-O2或特定标志）来启用该优化。这一话题对系统程序员和编译器开发者具有参考意义，反映了C语言生态在性能优化方面的演进。",
+  "tags": [
+    "C语言",
+    "编译器优化",
+    "尾调用",
+    "性能",
+    "系统编程"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:11Z",
+  "collected_at": "2026-08-11T08:58:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "尾调用优化能有效避免递归导致的栈溢出，提升程序性能，但C语言标准未强制要求，依赖编译器实现。",
+      "GCC和Clang等主流编译器在2025年已提供更完善的TCO支持，但启用条件（如优化级别、函数属性）需开发者注意。",
+      "TCO在嵌入式系统和函数式风格代码中尤其有价值，但C语言中其应用仍受限于编译器行为，需谨慎使用。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

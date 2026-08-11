@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-066",
+  "title": "Think Deep, Speak Once: Relit, A Recursive Latent Implicit Transformer Framework",
+  "source_url": "https://arxiv.org/abs/2608.08113",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Relit的新型递归隐式Transformer框架，旨在解决大型语言模型（LLM）中链式思维（CoT）提示带来的高计算开销问题。CoT通过生成离散token来外化中间推理步骤，虽有效但效率低下。Relit将推理过程内化到连续的隐藏状态中，借鉴了最新潜在推理方法（如Tiny Recursive Models, TRMs）的思路，通过递归机制在隐空间中迭代精炼表征，从而减少对外部token的依赖。该框架的核心优势在于提升推理效率，同时保持或增强推理能力，可能对需要复杂推理但资源受限的场景（如边缘设备或实时应用）产生重要影响。论文还探讨了递归深度与推理质量之间的权衡，并展示了在多个基准任务上的性能提升。这项工作为高效LLM推理提供了新方向，值得关注。",
+  "tags": [
+    "LLM",
+    "推理",
+    "效率",
+    "递归模型",
+    "隐式推理"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:02:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Relit通过递归隐式推理减少对离散token的依赖，显著降低计算开销。",
+      "该框架在保持推理质量的同时，提升了推理速度，适合资源受限环境。",
+      "递归深度与推理质量存在权衡，为模型设计提供了新视角。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

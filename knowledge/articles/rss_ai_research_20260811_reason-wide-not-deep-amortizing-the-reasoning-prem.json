@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-038",
+  "title": "Reason Wide, Not Deep: Amortizing the Reasoning Premium into Distilled Skills",
+  "source_url": "https://arxiv.org/abs/2608.07885",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Reason Wide, Not Deep”的方法，旨在解决语言模型在推理模式下执行多步智能体任务时的高额输出令牌开销（3-6倍）问题。作者观察到，模型在每次任务中重复推导同一领域共享的程序，导致资源浪费。为此，他们设计了一种摊销机制：通过分析训练集中的少量轨迹，编码智能体能够编译出紧凑的自然语言技能，并在后续任务中注入该技能，从而避免重复推理。该方法显著降低了推理成本，同时保持了任务性能，为智能体系统的高效部署提供了新思路。该研究具有重要的实用价值，尤其适用于需要频繁执行相似任务的场景，如代码生成、自动化工作流等。其创新点在于将推理过程从深度转向广度，通过技能复用实现成本摊销，为未来智能体设计提供了可借鉴的范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "推理优化",
+    "技能蒸馏"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:01:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理模式在智能体任务中性能优越，但令牌开销巨大，可通过技能蒸馏摊销成本。",
+      "利用训练轨迹编译自然语言技能，注入后减少重复推理，提升效率。",
+      "该方法在保持性能的同时显著降低推理成本，适用于高频相似任务场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

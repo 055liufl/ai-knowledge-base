@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-093",
+  "title": "Query-Only Backdoor Attacks on Self-Evolving Skills via Trajectory Poisoning",
+  "source_url": "https://arxiv.org/abs/2608.08303",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对自进化技能系统的查询型后门攻击方法，通过轨迹投毒实现攻击。自进化技能系统通过自动从执行轨迹中构建和更新技能，将技能获取从外部市场转移到可信的进化管道，以提升大型语言模型（LLM）代理在长时程任务和动态环境中的适应性。然而，这种机制引入了新的安全风险。研究者发现，攻击者可以通过在训练轨迹中注入恶意样本（即轨迹投毒），使系统在进化过程中学习到带有后门的技能。这些后门技能在正常查询下表现正常，但在特定触发条件下会执行恶意行为，从而实现对系统的隐蔽控制。该攻击被称为“查询型”，因为攻击者只需在推理时发送特定查询即可激活后门，无需修改模型参数或外部技能库。论文详细分析了攻击的可行性、触发条件设计以及防御难度，并指出这种攻击对依赖自进化技能的AI代理系统构成严重威胁，尤其是在安全敏感的应用场景中。该研究揭示了自进化机制中的信任漏洞，强调了在技能生成和更新过程中需要引入安全验证机制，为AI安全领域提供了新的研究方向和防御思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Backdoor Attack"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:04:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化技能系统虽提升适应性，但轨迹投毒可注入隐蔽后门，威胁系统安全。",
+      "查询型攻击仅需特定输入触发，无需修改模型或外部库，攻击隐蔽性强。",
+      "该攻击暴露了技能进化管道的信任漏洞，需引入安全验证机制。",
+      "研究为AI代理安全提供了新视角，对安全敏感应用有重要警示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

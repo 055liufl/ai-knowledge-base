@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-125",
+  "title": "Smart Compaction: Predicting Compaction Utility from Lakehouse Table Metadata",
+  "source_url": "https://arxiv.org/abs/2608.08639",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于湖仓表元数据预测压缩效用的智能压缩框架。开放湖仓表格式（如 Apache Iceberg）随着时间推移会积累大量小数据文件，导致查询性能下降。传统压缩决策依赖阈值驱动，但哪些元数据特征真正决定压缩效用尚不明确。作者构建了一个开源模拟框架，生成了 2,376 张 Apache Iceberg 表，文件大小跨越三个数量级，并从清单文件中提取了 17 个元数据特征（无需读取数据文件）。该研究旨在通过机器学习模型预测压缩的潜在收益，从而优化压缩调度，提升查询性能。这项工作填补了湖仓压缩决策中元数据特征与效用之间关系的空白，为数据湖仓的自动化运维提供了新思路。",
+  "tags": [
+    "Lakehouse",
+    "Compaction",
+    "Apache Iceberg",
+    "Metadata",
+    "Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:06:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统性地从湖仓表元数据中提取 17 个特征用于预测压缩效用，无需读取数据文件，降低了分析成本。",
+      "通过大规模模拟（2,376 张表）覆盖了文件大小的三个数量级，增强了结论的泛化性。",
+      "提出开源模拟框架，可复现并扩展至其他湖仓格式，推动压缩决策从阈值驱动向预测驱动转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

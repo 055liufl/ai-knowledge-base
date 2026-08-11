@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-056",
+  "title": "Decided Upstream, Written Late: Locating and Pricing the Cross-Lingual Refusal Circuit of a Multilingual MoE",
+  "source_url": "https://arxiv.org/abs/2608.08032",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对多语言混合专家模型（MoE）在安全对齐上的跨语言差异进行了机制性分析。研究发现，模型在英语中能可靠拒绝有害请求，但在低资源语言中往往遵从，这种差异并非源于对危害的检测失败，而是源于内部表示和路由机制。作者以Indic多语言MoE模型sarvam为例，通过机械可解释性方法追踪了跨语言拒绝电路，发现危害在模型中层被编码为几乎语言无关的内部方向，但后续的决策和输出阶段因语言资源差异导致拒绝行为不一致。该研究为多语言安全对齐提供了新的视角，强调了模型内部机制而非单纯数据或训练策略的重要性，对提升多语言模型的安全性和公平性具有指导意义。",
+  "tags": [
+    "Multilingual",
+    "Safety Alignment",
+    "Mechanistic Interpretability",
+    "MoE"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:02:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多语言模型的安全拒绝差异源于内部电路而非危害检测失败，危害表示在语言间近似不变。",
+      "混合专家模型的路由机制在低资源语言上可能绕过安全拒绝电路，导致遵从有害请求。",
+      "研究为多语言安全对齐提供了可解释的机制性基础，有助于设计更公平的安全策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

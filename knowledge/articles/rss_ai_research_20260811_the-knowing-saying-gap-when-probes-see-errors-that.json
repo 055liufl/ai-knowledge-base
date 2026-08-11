@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-006",
+  "title": "The Knowing-Saying Gap: When Probes See Errors that Confidence Misses",
+  "source_url": "https://arxiv.org/abs/2608.07528",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了语言模型中的“知晓-表达差距”（Knowing-Saying Gap），即线性探针（linear probes）能够以近乎完美的准确率检测到上下文损坏，但这种检测能力并未转化为可靠的失败预测。研究通过多跳算术链实验发现，能够检测损坏的探针对最终答案的正确性并无信息量；当模型被强制采用结构化置信度格式时，其置信度值会坍缩为两个难以区分的数值。这一发现揭示了模型内部状态与外部表达之间的脱节，对部署监控具有直接启示：依赖置信度或探针信号可能无法有效预测模型失败。该研究为理解模型可靠性和开发更有效的监控方法提供了新视角。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Reliability",
+    "Probing"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T08:59:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性探针能高精度检测上下文损坏，但无法预测最终答案正确性，表明内部表征与任务表现存在分离。",
+      "结构化置信度格式导致模型输出坍缩为两个值，丧失区分度，削弱了置信度作为可靠性指标的有效性。",
+      "研究强调部署监控需超越传统置信度或探针信号，探索更直接的失败预测机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

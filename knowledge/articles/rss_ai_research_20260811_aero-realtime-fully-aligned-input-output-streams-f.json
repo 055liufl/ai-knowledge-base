@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-104",
+  "title": "Aero Realtime: Fully Aligned Input-Output Streams for Low-Latency Streaming Multimodal Generation",
+  "source_url": "https://arxiv.org/abs/2608.08469",
+  "source_platform": "rss_ai_research",
+  "summary": "Aero Realtime 提出了一种全新的流式多模态生成框架，旨在解决现有流式多模态模型在交互中的非双工问题。传统模型虽然能增量处理观测数据，但仍遵循基于回合的预填充-解码模式，导致新观测无法自然融入正在进行的生成流。现有的主动式替代方案（如微轮询或外部响应门控）会碎片化连续交互，使响应时序与语言生成解耦，并增加 KV 缓存友好的服务复杂度。Aero Realtime 通过实现完全对齐的输入-输出流，使模型能够以真正的双工方式运行，即输入观测和输出生成可以同时进行，无需回合切换。该框架设计注重低延迟和 KV 缓存效率，有望在实时对话、直播字幕、增强现实等场景中显著提升交互自然度和响应速度。其核心创新在于对齐输入输出流，消除预填充-解码的瓶颈，为流式多模态生成提供了新的范式。",
+  "tags": [
+    "Streaming",
+    "Multimodal",
+    "Low-Latency",
+    "Duplex Interaction"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:05:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Aero Realtime 通过完全对齐的输入-输出流，实现了真正的双工多模态生成，突破了传统回合制模式的限制。",
+      "该框架避免了微轮询和外部门控的碎片化问题，保持了交互的连续性和响应时序的自然性。",
+      "设计考虑了 KV 缓存友好性，有助于在低延迟场景下实现高效的服务部署。",
+      "该研究为流式多模态交互提供了新范式，可能推动实时应用（如对话、直播）的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

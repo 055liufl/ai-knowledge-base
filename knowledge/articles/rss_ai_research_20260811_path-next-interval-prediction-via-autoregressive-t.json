@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-064",
+  "title": "PATH: Next-Interval Prediction via Autoregressive Tree Hierarchy on Tabular Data",
+  "source_url": "https://arxiv.org/abs/2608.08078",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为PATH的新型表格数据区间预测方法，通过自回归树层次结构进行下一区间预测。传统方法通常先预测不确定性代理，再通过校准或选择转换为区间，这种分离虽能保证覆盖率，但后处理规则限制了区间质量，未能充分利用学习到的输出分布。PATH方法将区间预测视为自回归过程，利用树结构捕捉数据中的层次关系，直接生成最优区间，从而在保证目标覆盖率的同时最小化区间宽度。该方法在表格数据上具有创新性，可能提升预测的实用性和效率，对需要不确定性量化的应用（如金融、医疗）具有重要意义。",
+  "tags": [
+    "Interval Prediction",
+    "Tabular Data",
+    "Autoregressive Model",
+    "Tree Hierarchy"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:02:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PATH通过自回归树层次结构直接预测区间，避免了传统后处理规则的局限性，能更充分利用输出分布信息。",
+      "该方法在表格数据上实现了覆盖率与区间宽度的更好平衡，有望替代现有conformal回归流程。",
+      "树结构设计使模型能捕捉特征间的层次关系，增强了对复杂表格数据的建模能力。",
+      "该研究为区间预测提供了新范式，可能推动不确定性量化在表格数据应用中的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

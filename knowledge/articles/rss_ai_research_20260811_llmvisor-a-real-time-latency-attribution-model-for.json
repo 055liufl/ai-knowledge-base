@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-095",
+  "title": "LLMVisor: A Real-Time Latency Attribution Model for Multi-Tenant LLM Serving",
+  "source_url": "https://arxiv.org/abs/2608.08382",
+  "source_platform": "rss_ai_research",
+  "summary": "LLMVisor 是一个针对多租户 LLM 推理服务场景的实时延迟归因模型。随着 LLM 推理转向多租户 GPU 集群，共同批处理（co-batching）虽然提高了吞吐量，但掩盖了每个租户的资源使用情况，并限制了细粒度的控制。为了实现推理引擎的分数共享，需要一种实时、逐请求的归因原语，该原语必须准确且足够轻量，以便在调度循环内运行。LLMVisor 采用基于 roofline 模型的延迟归因方法，通过简洁的饼图（pie）捕获内存受限和计算受限阶段，从而为每个请求提供准确的延迟分解。该模型能够在调度循环中实时运行，为多租户环境下的资源管理和调度优化提供关键洞察。这项研究对于提升 LLM 推理服务的效率、公平性和可观测性具有重要意义，是系统与机器学习交叉领域的前沿工作。",
+  "tags": [
+    "LLM",
+    "Serving",
+    "Latency Attribution",
+    "Multi-Tenant",
+    "Roofline"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:04:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLMVisor 提供了一种轻量级的实时延迟归因方法，能够在调度循环内运行，从而支持多租户 LLM 推理的细粒度控制。",
+      "通过 roofline 模型区分内存受限和计算受限阶段，LLMVisor 能够准确分解每个请求的延迟，提高可观测性。",
+      "该模型解决了共同批处理带来的租户间资源使用不透明问题，为公平调度和资源优化提供了基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

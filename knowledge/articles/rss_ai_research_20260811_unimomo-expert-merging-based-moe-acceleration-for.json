@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260811-122",
+  "title": "UniMoMo: Expert Merging-Based MoE Acceleration for Large Recommendation Models",
+  "source_url": "https://arxiv.org/abs/2608.08627",
+  "source_platform": "rss_ai_research",
+  "summary": "UniMoMo 是一个针对大型推荐系统中稀疏混合专家（MoE）层的后训练压缩框架。在推荐系统中，MoE 层通过条件计算扩展模型容量，但训练好的模型在部署时仍需存储和路由所有专家，导致推理开销大。UniMoMo 的目标是在给定专家预算下，将训练好的 MoE 模型转换为更小的标准 MoE 模型，且不引入额外的在线压缩模块。该框架将压缩问题形式化为一个带约束的优化问题，通过专家合并（expert merging）技术实现，在保持推荐性能的同时显著减少模型大小和推理成本。这项工作对推荐系统的实际部署具有重要意义，因为它直接解决了 MoE 模型在资源受限环境下的高效推理问题，且无需重新训练或修改在线推理流程。论文来自 arXiv，属于模型压缩与高效推理的前沿研究。",
+  "tags": [
+    "MoE",
+    "模型压缩",
+    "推荐系统",
+    "推理加速"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:06:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需在线额外模块的 MoE 压缩方法，通过专家合并实现模型瘦身。",
+      "将压缩问题形式化为带约束的优化问题，为模型压缩提供了新视角。",
+      "针对推荐系统场景，直接降低部署成本，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

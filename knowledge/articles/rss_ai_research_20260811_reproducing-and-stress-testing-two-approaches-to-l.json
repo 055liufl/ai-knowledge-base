@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260811-111",
+  "title": "Reproducing and Stress-Testing Two Approaches to LLM Reasoning Reliability: Test-Time Probability Aggregation and Logic-Representation Editing",
+  "source_url": "https://arxiv.org/abs/2608.08514",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究独立复现并压力测试了两种提升大语言模型推理可靠性的方法：RPC（测试时概率聚合）和 LCF（逻辑表示编辑）。RPC 在推理时结合 token 概率与自一致性，而 LCF 通过训练投影器将隐藏状态拆分为“内容”和“逻辑”部分，并将逻辑部分编辑至有效区域。研究在四个新任务领域（使用 Qwen3-8B）和四种 7-8B 模型上进行了跨领域、跨模型的验证。该工作的重要性在于：它提供了对现有方法的独立验证，揭示了方法在不同条件下的泛化能力，并可能指出其局限性，为 LLM 推理可靠性的改进提供了实证基础。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Reliability",
+    "Test-Time",
+    "Logic-Representation"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:05:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RPC 方法通过概率聚合和自一致性在测试时提升推理可靠性，但跨领域效果可能受任务类型影响。",
+      "LCF 方法通过编辑逻辑表示来增强推理，但依赖投影器训练，模型间泛化性需进一步验证。",
+      "独立复现和压力测试有助于识别方法在真实场景中的鲁棒性，避免过度乐观的评估。",
+      "跨模型和跨领域的测试揭示了两种方法的互补优势和潜在局限，为后续研究提供了方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

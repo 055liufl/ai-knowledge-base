@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260811-114",
+  "title": "VoxZip: Semantic-Anchored Temporal KV Cache Compression for Long-Context Audio Inference",
+  "source_url": "https://arxiv.org/abs/2608.08569",
+  "source_platform": "rss_ai_research",
+  "summary": "VoxZip 是一种针对语音大语言模型（Speech LLM）的长上下文推理优化方案，旨在解决 KV 缓存内存消耗过大的瓶颈问题。该论文指出，现有的文本中心压缩方法在语音场景下效果不佳，容易破坏语音连续性或丢失关键语义信息。VoxZip 提出了一种无需训练（train-free）的两阶段语义锚定压缩方法，通过保留语音中的语义锚点来高效压缩 KV 缓存，从而在不显著损失性能的前提下大幅降低内存占用。这项工作对于推动语音 AI 模型在实际应用中的长上下文处理能力具有重要意义，尤其是在语音助手、会议转录、音频分析等需要处理长时间音频输入的场景。其创新点在于将语义信息作为压缩的指导信号，而非简单的文本或特征剪枝，这为多模态模型的高效推理提供了新思路。",
+  "tags": [
+    "Speech LLM",
+    "KV Cache",
+    "Long-Context",
+    "Compression",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-11T08:56:14Z",
+  "collected_at": "2026-08-11T09:05:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VoxZip 提出了一种无需训练的语义锚定 KV 缓存压缩方法，专门针对语音 LLM 的长上下文推理瓶颈。",
+      "现有文本中心压缩方法在语音任务中失效，VoxZip 通过保留语义锚点来维持语音连续性和语义完整性。",
+      "该方法有望显著降低长音频推理的内存需求，提升实际应用中的可扩展性和实时性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
