@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260812-107",
+  "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
+  "source_url": "https://arxiv.org/abs/2608.10216",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对Agent系统中广泛使用的嵌入余弦相似度阈值（即“相似度门控”）进行了一次严格的效度审计。这类门控被用于文本去重、语义缓存、漂移检测和答案评分等场景，其核心假设是“文本含义是否相同”可以通过一个固定的余弦相似度阈值来判断。然而，作者指出，余弦相似度实际衡量的是“措辞变化程度”，而非“语义是否一致”，因此这类门控在关键场景下可能失效。文章通过实证分析揭示了该测量工具的效度问题，并提出了改进建议。这项研究对于依赖嵌入相似度进行质量控制的Agent系统开发者具有重要警示意义，有助于推动更可靠的语义评估方法的发展。",
+  "tags": [
+    "Agent",
+    "Embedding",
+    "Semantic Similarity",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:20:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "嵌入余弦相似度衡量的是文本措辞的变化，而非语义等价性，导致固定阈值在语义判断上存在系统性偏差。",
+      "在Agent系统常见的文本改写、同义替换等场景中，相似度门控的误判率显著，可能引发错误拒绝或错误接受。",
+      "审计结果呼吁重新设计质量门控，结合更精细的语义模型或校准方法，而非单纯依赖余弦阈值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

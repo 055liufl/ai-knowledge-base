@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260812-113",
+  "title": "Withholding the Completing Chunk: Deterministic Pair-Completion Guardrails for Streaming LLM Output",
+  "source_url": "https://arxiv.org/abs/2608.10279",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对流式大语言模型输出的确定性配对补全护栏机制，旨在解决流式输出中的释放时机问题。在流式生成场景中，完整响应审核往往在文本已流出后才生效，而反复对部分文本进行语义分类则成本高昂且不稳定。作者研究了一种窄确定性构造，其中每个危险签名是两个词汇谓词的合取。该护栏在每次释放前扫描累积前缀，并扣留第一个使危险签名成立的块，从而在流式输出过程中实现精准的拦截。该工作聚焦于安全与效率的平衡，为流式LLM输出的实时内容审核提供了一种轻量级、可解释的解决方案，具有实际部署价值。",
+  "tags": [
+    "LLM",
+    "Streaming",
+    "Safety",
+    "Guardrails"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:20:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出一种确定性的配对补全机制，通过两个词汇谓词的合取定义危险签名，实现流式输出的精准拦截。",
+      "解决了流式输出中完整响应审核滞后与部分文本语义分类不稳定的问题，提供了轻量级替代方案。",
+      "该护栏在每次释放前扫描累积前缀，扣留首个触发危险签名的块，兼顾安全性与实时性。",
+      "为流式LLM输出的内容安全提供了一种可解释、低成本的工程实践思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

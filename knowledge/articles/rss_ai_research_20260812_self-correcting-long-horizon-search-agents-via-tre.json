@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260812-057",
+  "title": "Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory",
+  "source_url": "https://arxiv.org/abs/2608.10676",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 ReTree 的方法，用于改进基于大型语言模型（LLM）的搜索代理在长时程任务中的表现。传统方法将完整的执行轨迹提供给 LLM，导致上下文无限增长并引入噪声。现有的压缩方法虽然减少了上下文，但会丢失重要细节，且往往在替换错误事实时未能修复基于这些事实的下游推理。ReTree 通过树状结构记忆来组织搜索过程，使代理能够自我纠正错误，同时保持关键信息。这种方法不仅压缩了上下文，还确保了推理链的完整性，从而提升了搜索代理在复杂任务中的准确性和效率。该研究对于提升 LLM 在交互式环境中的决策能力具有重要意义，特别是在需要多步推理和动态调整的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:17:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReTree 通过树状结构记忆有效管理长时程搜索代理的上下文，避免无界增长。",
+      "该方法在压缩上下文的同时保留关键细节，并修复错误事实对下游推理的影响。",
+      "自我纠正机制显著提升了代理在复杂任务中的鲁棒性和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

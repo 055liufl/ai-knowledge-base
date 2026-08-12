@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260812-141",
+  "title": "SafeCap: Improving LVLM Safety with Image Captioning Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.10513",
+  "source_platform": "rss_ai_research",
+  "summary": "SafeCap 是一个针对大型视觉-语言模型（LVLMs）的安全对齐框架，旨在解决 LVLMs 在面对越狱攻击（jailbreak attacks）时，通过视觉输入绕过其语言骨干模型安全对齐的漏洞。该框架采用强化学习（RL）方法，训练一个策略模型，使其首先生成与安全相关的图像描述（caption），然后基于该描述生成最终答案。通过优化生成的描述是否能够帮助模型避免不安全响应，SafeCap 将自我描述作为安全对齐的中间步骤，从而增强模型对恶意视觉输入的鲁棒性。该研究提出了一种新颖的基于 RL 的安全对齐范式，不同于传统的基于数据微调或推理时过滤的方法，具有较高的创新性和实用性。该工作对于提升 LVLM 在真实世界应用中的安全性具有重要意义，尤其是在涉及敏感内容或对抗性环境的场景下。",
+  "tags": [
+    "LVLM",
+    "Safety",
+    "Reinforcement Learning",
+    "Jailbreak"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:22:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SafeCap 通过强化学习训练模型生成安全相关的图像描述，作为回答前的中间步骤，有效缓解视觉越狱攻击。",
+      "该方法不依赖外部安全模型或推理时过滤，而是通过优化描述生成过程来内化安全对齐，具有通用性。",
+      "框架展示了将语言模型的安全对齐技术扩展到多模态模型的潜力，为 LVLM 安全研究提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

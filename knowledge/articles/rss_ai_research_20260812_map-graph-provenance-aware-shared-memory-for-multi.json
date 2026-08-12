@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260812-046",
+  "title": "MAP-Graph: Provenance-Aware Shared Memory for Multi-Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2608.10509",
+  "source_platform": "rss_ai_research",
+  "summary": "MAP-Graph 提出了一种用于多智能体工作流中共享内存的溯源感知架构，旨在解决语言模型智能体在长流程中复用信息时面临的安全与合规问题。该论文指出，现有方法虽支持语义检索、范围访问或血缘追踪，但未能清晰区分硬性访问控制与软性语义约束，导致私有、中毒、不可信或已撤销的数据源可能通过推导过程被间接泄露，进而引发未授权读取或不安全操作。MAP-Graph 通过引入溯源感知的共享内存机制，显式建模信息在智能体间的传播路径，并基于来源属性实施细粒度的访问策略，从而在支持高效信息共享的同时，确保数据使用的合规性与安全性。该工作对多智能体系统的可靠性提升具有重要意义，尤其适用于需要严格数据治理的企业级 AI 应用场景。",
+  "tags": [
+    "Multi-Agent",
+    "Shared Memory",
+    "Provenance",
+    "Security",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:16:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有共享内存方法缺乏对信息溯源与访问控制的硬性分离，导致安全风险。",
+      "MAP-Graph 通过溯源感知机制，在信息传播中动态执行访问策略，防止数据泄露。",
+      "该架构适用于需要严格数据合规的多智能体工作流，如企业级 AI 应用。",
+      "研究为多智能体系统的安全共享内存设计提供了新思路，但需进一步验证其扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

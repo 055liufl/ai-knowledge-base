@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260812-017",
+  "title": "Decodable But Not Detachable: Training Data Granularity Determines Parametric Modularity in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2608.10214",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究大型语言模型（LLM）中是否存在领域特定的参数化模块（即参数壳），这些模块是集中且因果必要的神经元群体，其移除会选择性削弱目标领域能力而不影响其他领域。作者采用统一的因果方法，在两种领域粒度、三个模型家族（参数量从1.5B到7B）和八个领域上进行了系统实验。结果显示，在学术科目粒度下，在总计939,008个FFN神经元中，没有任何神经元的领域选择性超过60%，表明在细粒度领域上，参数模块化程度很低。然而，在粗粒度领域（如代码、数学、自然语言）下，存在高度选择性的神经元群体，其移除会显著且特定地损害对应领域。这一发现揭示了训练数据的粒度决定了参数模块化的程度：细粒度训练导致参数纠缠，而粗粒度训练则促进模块化。该研究对模型可解释性、模型编辑和领域特定微调具有重要意义，为理解LLM内部机制提供了新视角。",
+  "tags": [
+    "LLM",
+    "可解释性",
+    "参数模块化",
+    "因果分析"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:14:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "细粒度领域（如学术科目）下，LLM中不存在高度选择性的神经元群体，参数模块化程度低。",
+      "粗粒度领域（如代码、数学）下，存在高度选择性的神经元群体，其移除会选择性损害对应领域。",
+      "训练数据的粒度是决定参数模块化程度的关键因素，细粒度训练导致参数纠缠，粗粒度训练促进模块化。",
+      "该发现对模型编辑、领域特定微调和可解释性研究具有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

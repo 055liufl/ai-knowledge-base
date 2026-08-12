@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260812-034",
+  "title": "Continuous Interaction Diffusion: A Diffusion-Native Runtime for Asynchronous Tool-Augmented Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.10438",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“连续交互扩散”的运行时机制，旨在解决扩散语言模型（dLLMs）在异步工具增强推理中的固有挑战。与自回归模型天然适配工具调用（生成-等待-继续）不同，dLLMs通过并行迭代精化输出，难以在生成过程中暂停和恢复。该运行时设计允许dLLMs在推理过程中无缝集成外部工具调用，无需中断扩散过程，从而提升复杂推理任务的效率和准确性。这项工作填补了扩散模型在工具使用和实时交互方面的空白，对于推动非自回归模型的实际应用具有重要意义，尤其是在需要动态信息检索和计算的任务中。其创新性在于将工具调用融入扩散迭代框架，而非简单的顺序拼接，为dLLMs的实用化提供了关键基础设施。",
+  "tags": [
+    "Diffusion Models",
+    "Tool Use",
+    "Runtime",
+    "Reasoning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:15:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型在工具调用上存在结构性障碍，需要专门的运行时设计而非简单适配。",
+      "连续交互扩散机制允许在扩散迭代中异步插入工具结果，保持生成过程的连续性。",
+      "该运行时显著提升了dLLMs在需要外部知识或计算的任务中的推理性能。",
+      "为扩散模型在实时交互场景（如代理系统）中的部署提供了新范式。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260812-100",
+  "title": "Hand-Written PTX Tensor-Core GEMM Kernels: A Multi-Precision Study on NVIDIA L4",
+  "source_url": "https://arxiv.org/abs/2608.10103",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文针对NVIDIA L4 GPU上的Tensor Core编程进行了深入研究，核心问题是：在什么情况下，用底层PTX手写内核替代WMMA C++ API能带来实际性能收益。作者通过多精度（FP16、BF16、INT8等）的GEMM（通用矩阵乘法）实验，系统对比了WMMA和手写PTX在性能、代码复杂度和可移植性上的差异。研究发现，手写PTX在特定精度和矩阵尺寸下能显著提升性能，尤其是在处理非标准形状或混合精度时，但代价是代码复杂度和维护成本大幅增加。论文提供了详细的性能剖析和优化建议，为高性能计算开发者提供了实用的决策指南。这项研究值得关注，因为它填补了WMMA与底层PTX之间性能差距的实证空白，有助于开发者根据实际需求选择正确的编程抽象，避免盲目追求底层优化而忽视工程效率。",
+  "tags": [
+    "Tensor Core",
+    "PTX",
+    "GEMM",
+    "GPU",
+    "WMMA"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:19:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "手写PTX在特定精度（如INT8）和矩阵形状下可带来显著性能提升，但收益随精度和尺寸变化，并非普遍适用。",
+      "WMMA API在代码简洁性和可维护性上优势明显，适合快速开发和通用场景，性能差距在多数情况下可接受。",
+      "性能差异主要源于PTX对内存布局和异步流水线的精细控制，但需权衡开发成本。",
+      "研究提供了基于L4的实测数据，为开发者选择编程抽象提供了实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

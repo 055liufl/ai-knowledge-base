@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260812-116",
+  "title": "Frozen Brain-MRI Foundation Models Are Site Fingerprints",
+  "source_url": "https://arxiv.org/abs/2608.10295",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对脑部MRI基础模型（FM）的冻结嵌入进行了审计，发现这些嵌入中包含了大量关于采集站点的信息，而非仅编码解剖结构。研究在ABIDE-I和ABIDE-II两个独立队列中，评估了三种冻结的3D编码器（脑部预训练、CT预训练和随机初始化）及所有网络深度，结果一致表明站点信息是表示中的一个主要组成部分。这一发现挑战了将冻结FM嵌入作为通用解剖表示的直接使用，提示在跨站点泛化或去中心化应用中需谨慎处理站点效应。论文强调了基础模型在医学影像中的潜在偏差，并呼吁对嵌入内容进行更严格的验证。该研究对医学影像分析、迁移学习和模型审计领域具有重要启示，尤其对依赖预训练嵌入的开发者而言，需考虑站点归一化或领域适应策略。",
+  "tags": [
+    "Brain-MRI",
+    "Foundation Models",
+    "Site Fingerprints",
+    "Medical Imaging",
+    "Model Audit"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:20:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结的脑部MRI基础模型嵌入中，采集站点信息是主要成分，而非仅解剖结构。",
+      "站点效应在多种编码器（包括随机初始化）和所有网络深度中均存在，表明其普遍性。",
+      "该发现对跨站点泛化和去中心化医疗AI应用构成挑战，需重新评估FM嵌入的可靠性。",
+      "研究强调了对基础模型嵌入内容进行系统性审计的必要性，以识别潜在偏差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

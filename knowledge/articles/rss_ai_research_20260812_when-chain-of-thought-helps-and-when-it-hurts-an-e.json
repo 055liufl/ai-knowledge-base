@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260812-082",
+  "title": "When Chain-of-Thought Helps and When It Hurts: An Empirical Investigation of the Serial-Depth Bottleneck in LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.09942",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对链式思考（CoT）提示在大型语言模型推理中的有效性进行了实证研究，挑战了CoT普遍提升推理性能的假设。作者引入H_dp带宽限制的概念框架，指出尽管该限制仅在极端长的提示长度下渐近生效，但它揭示了一个真实的架构瓶颈：当推理所需的串行计算量超过Transformer单次前向传播的容量时，必须将部分计算外部化，这正是CoT所扮演的角色。通过系统性实验，研究探讨了CoT在何种任务和条件下有帮助或有害，揭示了串行深度瓶颈的影响。该研究为理解CoT的适用边界提供了重要洞见，对推理策略的选择和模型设计具有指导意义。",
+  "tags": [
+    "Chain-of-Thought",
+    "LLM",
+    "Reasoning",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:18:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoT并非普遍有益，其效果受任务串行深度需求与模型容量匹配度影响。",
+      "H_dp带宽限制虽为渐近概念，但能有效解释实际推理中的性能瓶颈。",
+      "实证结果提示，在简单任务上使用CoT可能引入不必要的计算开销甚至降低性能。",
+      "研究为动态选择推理策略（如是否启用CoT）提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

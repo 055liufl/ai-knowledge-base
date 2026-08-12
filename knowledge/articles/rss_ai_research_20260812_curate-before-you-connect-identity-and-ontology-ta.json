@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260812-052",
+  "title": "Curate Before You Connect: Identity and Ontology Tagging in a Production Knowledge Graph",
+  "source_url": "https://arxiv.org/abs/2608.10644",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个生产环境知识图谱中的身份与本体标注层，强调了在将抽取的候选实体和关系写入图谱时，身份决策的关键性。作者指出，提取错误可以事后修正，但身份合并错误是破坏性的：一旦两个记录在身份下合并，其属性已结合，无法分离，且合并过程不留下错误痕迹。因此，论文提出在连接（写入图谱）之前进行“策展”（curate），即通过身份消歧和本体标注来确保数据质量。该层负责验证和标注，以降低身份决策风险。这一工作对于构建可靠的知识图谱基础设施具有重要实践意义，尤其适用于大规模数据集成场景。其创新点在于将身份管理视为独立于抽取的环节，并强调预防性策略。技术影响力体现在为生产系统提供可操作的框架，实用性高，适合数据工程和知识图谱开发者参考。",
+  "tags": [
+    "Knowledge Graph",
+    "Ontology",
+    "Identity Resolution",
+    "Data Ingestion"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:16:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "身份合并错误是破坏性的，且不可逆，因此必须在写入图谱前进行严格的身份策展。",
+      "抽取错误可修正，但身份决策错误无痕且无法分离，凸显了身份管理的重要性。",
+      "生产级知识图谱需要专门的 ingestion 和 ontology-tagging 层来验证和标注，以降低风险。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

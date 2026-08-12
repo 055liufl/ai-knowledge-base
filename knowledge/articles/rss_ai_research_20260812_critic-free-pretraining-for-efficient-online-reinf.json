@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260812-138",
+  "title": "Critic-Free Pretraining for Efficient Online Reinforcement Learning Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2608.10473",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种无需评论家（Critic-Free）的预训练方法，用于提升离线到在线（O2O）强化学习微调的效率。传统O2O方法直接复用离线训练得到的评论家网络，但在线交互中策略和数据分布快速变化，导致价值估计与真实环境失配，从而降低策略改进和探索效率。该研究通过设计一种不依赖评论家的预训练目标，使策略在离线阶段获得更稳健的初始化，从而在在线微调时减少价值误差的负面影响，加速收敛并提升最终性能。这项工作针对强化学习实际部署中的关键瓶颈，具有较高的实用价值，尤其适用于机器人控制、游戏AI等需要从静态数据过渡到实时交互的场景。其创新点在于重新思考了O2O流程中评论家的角色，为高效微调提供了新思路，可能推动强化学习在数据稀缺和在线成本敏感领域的应用。",
+  "tags": [
+    "Reinforcement Learning",
+    "Offline-to-Online",
+    "Pretraining",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-08-12T09:11:25Z",
+  "collected_at": "2026-08-12T09:22:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接复用离线评论家会导致在线微调时价值估计失配，降低策略改进效率",
+      "通过无评论家的预训练目标，可减少在线阶段的价值误差影响，加速收敛",
+      "该方法为O2O强化学习提供了一种更稳健的策略初始化方式，具有广泛适用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
