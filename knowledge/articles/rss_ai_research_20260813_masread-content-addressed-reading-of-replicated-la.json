@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-007",
+  "title": "MaSRead: Content-Addressed Reading of Replicated Latent Stores",
+  "source_url": "https://arxiv.org/abs/2608.11218",
+  "source_platform": "rss_ai_research",
+  "summary": "MaSRead 提出了一种针对复制潜在存储的内容寻址读取机制，解决了独立智能体在潜在空间中共享计算状态时，合并后的缓存无法可靠读取的问题。该论文指出，智能体可以通过键值缓存片段而非文本共享状态，这些片段由无冲突复制数据类型合并，形成在任何传递顺序或重复下都能收敛的存储。然而，由于共置片段会相互干扰，共置并不等同于可寻址性，导致后续查询无法可靠读取合并后的缓存。MaSRead 通过将读取操作直接寻址到内容本身，绕过了共置干扰问题，从而实现了对合并缓存的可靠访问。这一研究对于多智能体系统中的状态共享和协作推理具有重要意义，可能推动潜在空间通信和分布式智能体的发展。",
+  "tags": [
+    "Latent Space",
+    "Multi-Agent",
+    "Distributed Systems",
+    "CRDT",
+    "Content-Addressable Storage"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:14:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MaSRead 解决了潜在空间中复制存储的读取一致性问题，通过内容寻址替代共置寻址，提高了多智能体协作的可靠性。",
+      "利用无冲突复制数据类型（CRDT）合并缓存片段，确保了存储在不同传递顺序下的收敛性，为分布式智能体提供了基础。",
+      "该研究可能开启潜在空间通信的新范式，减少对文本交换的依赖，提升智能体间信息共享的效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-040",
+  "title": "When Self-Consistency Backfires: Majority Vote Hurts the Majority of Hard Science Problems for Small LLMs",
+  "source_url": "https://arxiv.org/abs/2608.11403",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了自一致性（Self-Consistency）方法在小型语言模型处理硬科学问题时的失效现象。自一致性通过多数投票（majority vote）来利用推理时的计算资源，即采样多个思维链并返回出现频率最高的答案。然而，在GPQA Diamond基准（包含198个研究生级别的科学问题）上，作者发现对于两个不同家族的指令微调模型（Qwen2.5-7B和Llama-3-8B），多数投票在大多数问题上反而降低了准确率：Qwen2.5-7B在56.6%的问题上准确率下降，Llama-3-8B在65.7%的问题上下降。这一发现挑战了自一致性方法在小模型和复杂推理任务中的普遍有效性，提示研究者需要谨慎使用多数投票策略，并探索更适应性的推理时计算分配方法。该研究对推理时扩展（inference-time scaling）领域具有重要启示，尤其对于资源受限的小模型应用场景。",
+  "tags": [
+    "Self-Consistency",
+    "Inference-Time Scaling",
+    "Small LLMs",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:16:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多数投票在硬科学问题上可能对小模型产生负面影响，而非提升性能。",
+      "不同模型家族（Qwen和Llama）均表现出类似的反效果，表明问题具有普遍性。",
+      "研究提示需要开发更智能的推理时计算分配策略，而非简单采用多数投票。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-008",
+  "title": "From Monolithic to Modular: Segment-level Automatic Prompt Optimization",
+  "source_url": "https://arxiv.org/abs/2608.11219",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SAPO（Segment-level Automatic Prompt Optimization）的新方法，旨在解决传统自动提示优化（APO）中整体重写提示词可能导致的性能权衡问题。SAPO将提示词分解为角色、上下文、任务和输出格式四个独立部分，并针对每个部分进行定向优化。优化过程基于训练集中表现最好和最差的示例（top-5和bottom-5），利用单一LLM配合静态元提示和结构化输出来完成分段、弱点分析和候选生成。这种方法避免了整体重写带来的副作用，提高了优化的精准性和效率。该研究对于提升LLM在实际应用中的提示工程效率具有重要意义，尤其适用于需要精细控制提示词行为的场景。其创新点在于将模块化思想引入提示优化，为自动提示工程提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Prompt Optimization",
+    "Automatic Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:14:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAPO通过将提示词分解为角色、上下文、任务和输出格式，实现了模块化优化，避免了整体重写带来的性能退化。",
+      "利用top-5和bottom-5示例进行弱点分析，使优化更具针对性和数据驱动性。",
+      "使用单一LLM和静态元提示，简化了优化流程，提高了可复现性和稳定性。",
+      "该方法为自动提示优化提供了新的范式，有望提升LLM在复杂任务中的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

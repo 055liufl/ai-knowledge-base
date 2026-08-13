@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-086",
+  "title": "Agent Safety Should Be a Runtime Contract",
+  "source_url": "https://arxiv.org/abs/2608.11274",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种关于AI代理安全性的新观点，认为当前主流的通过训练阶段（如RLHF、DPO或宪法AI）来灌输安全属性的范式，对于能够执行代码、修改文件、发送消息和操作数据库的自主代理而言，在结构上是不充分的。作者主张，代理安全应被视为由运行时环境（harness）强制执行的契约，而非仅依赖训练时的属性。该契约包含两个互补的方面：预防性方面通过沙箱等技术在危险行为发生前予以阻止；反应性方面则可能涉及对已发生行为的检测和响应。这一观点强调了运行时监控和约束的重要性，为代理安全研究提供了新的方向。该论文值得关注，因为它挑战了传统安全训练方法的局限性，并提出了更实用的运行时保障机制，对构建可靠的自主代理系统具有重要指导意义。",
+  "tags": [
+    "Agent Safety",
+    "Runtime Contract",
+    "AI Safety",
+    "Autonomous Agents"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:19:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "训练阶段的安全对齐（如RLHF）不足以应对自主代理的运行时风险，需要运行时强制机制。",
+      "代理安全应作为运行时契约，包含预防性和反应性两个互补方面。",
+      "沙箱等预防性技术是阻止危险行为的关键手段。",
+      "该观点为代理安全研究提供了从训练到运行时的范式转移。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

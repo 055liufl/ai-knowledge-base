@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-124",
+  "title": "Dion3: Full-Stack Orthogonal Updates",
+  "source_url": "https://arxiv.org/abs/2608.11612",
+  "source_platform": "rss_ai_research",
+  "summary": "Dion3 是对 Muon 优化器的一种全栈式改进，旨在解决其正交化步骤带来的高计算和通信开销。Muon 优化器因其三次时间复杂度的 Newton-Schulz 正交化步骤而显著增加开销，尤其在权重分片时，通信开销进一步加剧，削弱了其优势。Dion3 从多个层面优化这一过程：提出了 Gram Newton-Schulz 算法以降低正交化的浮点运算成本，并利用 CuteDSL 内核加速计算。该工作针对优化器性能瓶颈，提出了系统性的解决方案，对大规模深度学习训练具有实际意义，值得关注。",
+  "tags": [
+    "Optimizer",
+    "Muon",
+    "Orthogonalization",
+    "Performance"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:21:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Dion3 通过 Gram Newton-Schulz 算法显著降低正交化的计算复杂度，减少 FLOP 开销。",
+      "利用 CuteDSL 内核加速正交化过程，提升整体训练效率。",
+      "全栈式优化策略针对计算和通信开销，增强 Muon 优化器在大规模分布式训练中的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

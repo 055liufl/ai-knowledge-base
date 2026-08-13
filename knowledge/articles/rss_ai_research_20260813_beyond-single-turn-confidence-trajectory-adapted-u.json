@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-119",
+  "title": "Beyond Single-Turn Confidence: Trajectory-Adapted Uncertainty Quantification for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.11552",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）智能体在交互式轨迹中的不确定性量化（UQ）问题展开研究。传统UQ方法通常在单轮输出上评估，即不确定性仅与单个生成答案相关。然而，对于LLM智能体而言，观察单元是交互式轨迹，模型在轨迹中可能提出澄清问题、调用工具、更新状态并做出中间决策，这些环节的错误会传播至最终结果。论文探讨了三种常见的单轮UQ方法（如基于置信度、采样一致性等）在智能体轨迹场景下的适用性，并提出了轨迹自适应（trajectory-adapted）的不确定性量化方法，以更准确地反映智能体在复杂任务中的不确定性。该研究填补了UQ在智能体评估中的空白，对提升智能体可靠性、安全性和决策透明度具有重要意义，尤其适用于需要高可信度的应用场景（如自主编程、工具调用、多步推理等）。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Uncertainty Quantification",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:21:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单轮UQ方法在LLM智能体轨迹中失效，因为错误会沿轨迹传播，需要轨迹级的不确定性建模。",
+      "提出轨迹自适应UQ方法，结合中间步骤的置信度和状态变化，可更准确预测最终结果的可信度。",
+      "该研究为智能体可靠性评估提供了新框架，有助于在关键应用中实现风险控制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-128",
+  "title": "Beyond Memory: A Transactional Continuity Kernel for Long-Lived AI Agents",
+  "source_url": "https://arxiv.org/abs/2608.11632",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于长寿AI代理的“事务性连续性内核”（Transactional Continuity Kernel），旨在解决持久化AI代理在长时间运行中状态管理的关键问题。作者指出，仅靠存储保留（storage retention）不足以识别权威状态（authoritative state），因为模型、工具和后台工作者的无中介更新可能导致过期覆盖、未审计暴露以及自我授权的权限提升。为此，他们主张将代理状态治理视为基础设施激活问题，并将“连续性”定义为一种不间断、经授权的状态流。该内核通过显式控制平面（control plane）来管理状态版本和更新，确保状态变更的原子性、一致性和可审计性，从而为长寿代理提供可靠的状态治理机制。这项工作对于构建生产级AI代理系统具有重要意义，尤其是在需要长期运行、多组件协作和严格安全合规的场景中，如自动化运维、金融交易和复杂工作流管理。它填补了当前AI代理框架在状态治理和安全性方面的空白，为未来的代理基础设施设计提供了新思路。",
+  "tags": [
+    "AI Agent",
+    "State Management",
+    "Infrastructure",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:22:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "存储保留不等于状态权威性，需要显式控制平面来管理代理状态更新。",
+      "事务性连续性内核通过原子性和审计机制防止过期覆盖和权限提升。",
+      "状态治理是基础设施问题，而非单纯的应用层逻辑。",
+      "该内核为长寿代理的可靠性和安全性提供了基础保障。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

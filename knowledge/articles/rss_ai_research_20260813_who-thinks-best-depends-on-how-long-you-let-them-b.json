@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-072",
+  "title": "Who Thinks Best Depends on How Long You Let Them: Budget-Dependent Rankings in LLM Evaluation",
+  "source_url": "https://arxiv.org/abs/2608.12150",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文挑战了大语言模型评估中一个隐含的假设：模型排名在不同推理条件下是稳定的。作者通过改变token生成预算（即模型可生成的最大token数），在七个级别（64到4096）上，对四个模型在三个推理基准（共56,476次推理）上进行了系统评估。研究发现四个主要结论：首先，3%到19%的样本表现出非单调行为，即随着预算增加，准确率反而下降；其次，模型排名会随预算变化而改变，导致评估结论不稳定；第三，不同模型对预算的敏感度不同，这影响了模型间的相对性能；最后，现有评估方法可能因固定预算而低估或高估模型能力。该研究对LLM评估实践具有重要警示意义，提示研究者和开发者需关注推理预算对模型性能评估的影响，并为设计更稳健的评估协议提供了实证依据。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Benchmark",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:18:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM评估中的模型排名并非固定不变，而是依赖于token生成预算，这挑战了传统评估的稳定性假设。",
+      "非单调行为（预算增加但准确率下降）在3-19%的样本中出现，表明模型可能因过度生成而引入错误。",
+      "不同模型对预算的敏感度差异显著，导致排名在预算变化时发生反转，影响模型选择的可靠性。",
+      "研究建议评估协议应明确并控制推理预算，或采用多预算策略以获得更全面的模型能力画像。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

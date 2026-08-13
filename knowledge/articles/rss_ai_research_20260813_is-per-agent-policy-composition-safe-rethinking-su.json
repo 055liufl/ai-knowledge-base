@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-131",
+  "title": "Is Per-Agent Policy Composition Safe? Rethinking Successor-Feature Transfer in Cooperative Multi-Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.11658",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究多智能体强化学习（MARL）中基于后继特征（Successor Features）的策略组合安全性问题。在现实场景中，如车队管理或交通信号控制，系统部署后目标可能动态变化，而针对每个新目标重新训练策略成本过高。单智能体场景下，后继特征与广义策略改进（GPI）及其通用扩展已被广泛研究，能够将已学习的策略库重组为新目标的策略。然而，在多智能体协作环境中，这种策略组合是否安全（即是否会导致性能退化或违反约束）尚未得到充分探讨。本文首次系统性地分析多智能体场景下基于后继特征迁移的策略组合安全性，提出潜在风险（如智能体间策略冲突、非平稳性影响）并可能给出理论条件或安全保证。该研究对于提升多智能体系统的适应性和可靠性具有重要意义，为后续安全策略迁移算法设计奠定基础。",
+  "tags": [
+    "Multi-Agent RL",
+    "Successor Features",
+    "Policy Transfer",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:22:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体场景下策略组合可能因智能体间交互导致安全风险，需重新审视单智能体方法的适用性。",
+      "后继特征迁移在多智能体中的安全性依赖于环境动态和策略库的覆盖度。",
+      "本文为安全策略组合提供了理论分析框架，可能推动MARL在动态目标场景中的实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

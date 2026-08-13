@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260813-013",
+  "title": "Cutting AI Datacenter Energy with Reinforcement Learning: Measured Power Control of LLM Training from One GPU to the Fleet",
+  "source_url": "https://arxiv.org/abs/2608.11226",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文首次系统性地研究了强化学习后训练（如GRPO）在GPU硬件上的功耗行为，并提出了基于强化学习的元控制器（PPO meta-controller）来动态管理数据中心GPU功耗。研究覆盖了7B、14B和72B参数规模的LLM训练，在1至4块A100 GPU上采集了超过38万条半秒级功耗数据。传统数据中心采用静态功耗上限和反应式节流等对工作负载无感知的管理机制，导致硬件性能被无差别降低。该工作通过训练一个PPO元控制器，实现了从单GPU到整个集群的功耗优化，在保证训练性能的同时显著降低能耗。这项研究填补了LLM训练功耗管理领域的空白，为大规模AI数据中心的能效优化提供了新的思路和实测数据，具有重要的工程实践价值和环境意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM",
+    "Datacenter",
+    "Energy Efficiency",
+    "GPU"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:15:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次对GRPO等强化学习后训练在GPU上的功耗行为进行细粒度测量，揭示了其动态功耗特征。",
+      "提出基于PPO的元控制器，能够自适应调整GPU功耗，优于静态上限和反应式节流。",
+      "在7B到72B规模、单GPU到四GPU集群上验证了方法的有效性，展示了从单机到集群的扩展性。",
+      "为AI数据中心的能效管理提供了数据驱动的解决方案，具有显著的节能潜力和实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

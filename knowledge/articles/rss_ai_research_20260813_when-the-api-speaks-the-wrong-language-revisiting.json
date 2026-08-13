@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260813-142",
+  "title": "When the API Speaks the Wrong Language: Revisiting Post-Training for Multilingual Tool Use",
+  "source_url": "https://arxiv.org/abs/2608.11715",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型语言模型（LLM）在多语言环境下的API调用可靠性问题，提出并定义了一种新的失败模式——参数语言不匹配（ALM），即模型选择了正确的工具，但生成的参数值使用了不一致的语言，导致输出在语义上正确但在操作上无效，且未被标准API调用指标捕获。论文重新审视了后训练策略（如监督微调、偏好优化等）以缓解ALM问题，并可能提出了新的评估方法或训练目标。这项工作填补了多语言工具使用评估的空白，对提升LLM在全球化应用中的实用性具有重要意义。",
+  "tags": [
+    "LLM",
+    "API调用",
+    "多语言",
+    "后训练",
+    "工具使用"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:23:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "定义并形式化了参数语言不匹配（ALM）问题，这是多语言API调用中未被充分研究的失败模式。",
+      "标准API调用指标无法捕捉ALM，需要新的评估维度来全面衡量多语言工具使用的可靠性。",
+      "后训练策略（如微调和偏好优化）可被重新设计以缓解ALM，提升跨语言一致性。",
+      "该研究为多语言LLM应用的实际部署提供了重要指导，尤其对全球化软件和服务有直接价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

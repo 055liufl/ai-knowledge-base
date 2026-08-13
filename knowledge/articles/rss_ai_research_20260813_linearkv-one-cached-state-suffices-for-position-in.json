@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-017",
+  "title": "LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs",
+  "source_url": "https://arxiv.org/abs/2608.11231",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 LinearKV 的缓存机制，专为混合架构的大型语言模型（Hybrid LLMs）设计，以解决位置无关缓存（PIC）在非全注意力模型中的失效问题。传统 PIC 方法依赖全注意力模型中的 token 索引 KV 缓存，通过匹配、拼接和选择性重计算来复用上下文，但混合 LLM 用线性递归层替换了大部分注意力层，破坏了这些操作的基础。LinearKV 的核心洞察是，对于线性递归层，只需缓存一个状态（即递归的隐藏状态）即可实现位置无关的缓存，从而避免了对 token 级 KV 的依赖。该方法显著降低了缓存开销，同时保持了生成质量，为混合 LLM 的高效服务提供了新思路。该研究值得关注，因为它填补了混合架构在缓存优化方面的空白，对提升 LLM 推理效率和降低成本具有实际意义。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Hybrid Architecture",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:15:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合 LLM 中线性递归层只需缓存单一状态即可实现位置无关缓存，无需 token 级 KV。",
+      "LinearKV 解决了传统 PIC 方法在混合架构中失效的问题，降低了缓存内存占用。",
+      "该方法可能推动混合 LLM 在长上下文场景下的高效部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

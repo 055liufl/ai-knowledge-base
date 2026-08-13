@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-104",
+  "title": "AI Guardrail Survival under Single-Cycle Agentic Self-Summarization",
+  "source_url": "https://arxiv.org/abs/2608.11392",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究长时运行AI智能体在上下文压缩（context compaction）过程中，安全约束（如安全规则）如何丢失的问题。作者聚焦于单次压缩周期，探讨安全规则丢失的具体机制及其对检测和评估的影响。核心发现是，安全规则的丢失并非简单的规则被删除，而是由于压缩过程中模型生成的摘要未能保留规则的“存在性”（presence），即规则在摘要中未被明确提及，导致后续行为偏离安全约束。该研究基于“治理衰减”（Governance Decay）现象，进一步细化了安全规则丢失的微观过程，为构建更鲁棒的智能体安全机制提供了理论依据和评估方向。这项工作对AI安全领域具有重要价值，尤其是在长时运行智能体日益普及的背景下，为检测和缓解安全退化提供了新视角。",
+  "tags": [
+    "AI Safety",
+    "Agent",
+    "Context Compression",
+    "Governance Decay"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:20:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全规则在单次上下文压缩中可能因摘要未保留其存在性而丢失，导致行为违规。",
+      "规则丢失的机制与摘要生成的选择性有关，而非简单的规则删除。",
+      "检测和评估安全规则丢失需要关注摘要中规则的存在性，而非仅依赖行为结果。",
+      "该研究为长时运行智能体的安全机制设计提供了新的评估指标和检测思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

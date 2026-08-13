@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-139",
+  "title": "REOPD: Reliability-Adaptive Reward Extrapolation for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2608.11698",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为REOPD（可靠性自适应奖励外推）的方法，用于改进在线策略蒸馏（OPD）中的奖励外推技术。OPD通过教师模型对学生轨迹提供密集的token级监督来训练学生模型，而奖励外推方法（如ExOPD）通过放大教师参考的对数似然比来超越直接模仿，但现有方法对所有token使用单一的全局系数λ，这可能导致学生过度拟合隐式奖励中的极端峰值，引发奖励黑客问题和训练不稳定。REOPD通过引入可靠性自适应的奖励外推机制，根据每个token的可靠性动态调整外推系数，从而缓解上述问题。该方法有望提升知识蒸馏的稳定性和最终性能，对模型训练和优化领域具有潜在价值。",
+  "tags": [
+    "Knowledge Distillation",
+    "Reward Extrapolation",
+    "On-Policy Distillation",
+    "Stable Training"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:22:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有奖励外推方法使用全局系数导致对极端峰值过度拟合，引发奖励黑客和训练不稳定。",
+      "REOPD通过可靠性自适应调整每个token的外推系数，有效缓解了上述问题。",
+      "该方法在在线策略蒸馏框架下提出，有望提升学生模型的泛化能力和训练稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

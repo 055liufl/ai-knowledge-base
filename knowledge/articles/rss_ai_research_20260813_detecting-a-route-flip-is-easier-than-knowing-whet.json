@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-004",
+  "title": "Detecting a Route Flip Is Easier Than Knowing Whether to Fix It: Causal Route-Mediated Damage in Quantized Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2608.11212",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究量化混合专家模型（MoE）中路由决策的因果效应，重点探讨因数值扰动（如4-bit KV缓存量化）导致的路由翻转问题。作者指出，检测路由翻转相对容易，但判断是否应修复则更为复杂。研究提出了一种因果分析框架，通过四轮实验量化路由介导的损伤比例（RMF），并给出检测极限结果。该工作不提出新的缓解方法，而是提供因果机制、实证发现和检测边界，为理解量化对MoE模型路由行为的影响提供了新视角。",
+  "tags": [
+    "MoE",
+    "Quantization",
+    "Causal Inference",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:14:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化引起的数值扰动可导致MoE路由决策翻转，影响模型行为。",
+      "检测路由翻转比决定是否修复更简单，因果分析有助于区分损伤来源。",
+      "提出的RMF指标可量化路由介导的量化损伤比例。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

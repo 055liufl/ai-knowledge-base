@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260813-019",
+  "title": "CORA-Diff: Confidence-Oriented Residual Acceptance for Efficient Diffusion Language Model Inference",
+  "source_url": "https://arxiv.org/abs/2608.11235",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 CORA-Diff 的高效扩散语言模型推理加速方法。扩散语言模型（DLMs）通过并行更新多个 token 进行生成，但实际解码器通常使用固定的去噪步数，导致许多已稳定预测的位置仍被重复计算，造成计算浪费。现有加速方法多依赖学习过滤器、修改评分、依赖模型或缓存机制，而本文探索利用原生轨迹信号来识别残余位置，从而跳过不必要的计算。CORA-Diff 采用置信度导向的残差接受策略，在推理过程中动态判断哪些 token 已收敛，仅对未稳定的位置继续去噪，显著减少前向传播次数。该方法无需额外训练或修改模型架构，具有即插即用特性。实验表明，在保持生成质量的同时，CORA-Diff 能有效降低推理延迟，为扩散语言模型的实际部署提供了实用解决方案。该研究对于提升生成式 AI 的推理效率具有重要意义，尤其适用于实时交互场景。",
+  "tags": [
+    "Diffusion Language Model",
+    "Inference Acceleration",
+    "Efficient Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:15:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CORA-Diff 利用原生轨迹信号识别已稳定的 token，避免不必要的计算，无需额外训练或修改模型。",
+      "通过置信度导向的残差接受策略，动态调整去噪步数，显著减少前向传播次数，提升推理效率。",
+      "该方法在保持生成质量的同时降低延迟，适用于实时交互等对效率要求高的场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

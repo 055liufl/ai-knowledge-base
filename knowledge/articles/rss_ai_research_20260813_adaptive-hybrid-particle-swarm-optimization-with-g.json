@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-033",
+  "title": "Adaptive Hybrid Particle Swarm Optimization with Gradient Descent",
+  "source_url": "https://arxiv.org/abs/2608.11258",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自适应混合粒子群优化算法（AHPSO），旨在解决传统粒子群优化（PSO）在结合梯度信息时面临的挑战。作者指出，梯度注入仅在粒子群已定位到具有平滑局部结构的盆地时有效，并非普遍适用。为此，AHPSO 利用群体多样性作为指标，通过 sigmoid 函数自动调节梯度影响：在探索阶段（多样性高）梯度影响接近零，在开发阶段（多样性低）梯度影响接近最大值，从而无需手动切换阶段。在预算归一化的比较中，AHPSO 与同等总函数评估预算的 PSO 进行对比，展示了其性能优势。该研究对于优化算法领域具有创新意义，尤其适用于需要平衡全局探索与局部开发的复杂优化问题。",
+  "tags": [
+    "PSO",
+    "Gradient Descent",
+    "Optimization",
+    "Adaptive Algorithm"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:16:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "梯度注入并非普遍有益，仅在群体已收敛到平滑盆地时有效，这挑战了传统混合优化的假设。",
+      "基于群体多样性的 sigmoid 函数实现了梯度影响的自动调节，消除了手动阶段切换的需求。",
+      "预算归一化的比较方法确保了公平的性能评估，突出了 AHPSO 在同等计算资源下的优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

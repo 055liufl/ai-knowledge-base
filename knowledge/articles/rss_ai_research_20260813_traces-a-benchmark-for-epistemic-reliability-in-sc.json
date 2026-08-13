@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-105",
+  "title": "TRACES: A Benchmark for Epistemic Reliability in Scientific Reasoning by LLMs",
+  "source_url": "https://arxiv.org/abs/2608.11415",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 TRACES，一个用于评估大语言模型（LLM）在科学推理中认知可靠性（epistemic reliability）的基准测试。该基准的核心动机是：LLM 正被提议作为科学工作流中的智能体，尤其是在没有下游验证器的领域。这种部署假设模型能够区分可靠与不可靠的科学文献，但这一能力尚未被直接测量。现有基准主要评估已知答案问题上的事实性，而 TRACES 针对的失败模式不同：模型可能无法识别已被撤回（retracted）的论文。为此，作者构建了一个包含 42 篇被撤回论文的探针语料库（probe corpus），用于测试模型在科学推理中是否依赖不可靠来源。该工作填补了 LLM 评估中的一个关键空白，对于科学 AI 的安全部署具有重要意义。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Scientific Reasoning",
+    "Epistemic Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:20:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TRACES 是首个直接测量 LLM 在科学推理中区分可靠与不可靠文献能力的基准。",
+      "现有基准仅评估已知答案的事实性，无法捕捉模型依赖撤回论文等不可靠来源的失败模式。",
+      "该基准使用 42 篇被撤回论文作为探针，为科学 AI 的安全部署提供了重要评估工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

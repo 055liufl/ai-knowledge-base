@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260813-067",
+  "title": "Claim-Level Reliability Assessment for Efficient Test-Time Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.11994",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“声明级可靠性评估”（CLR）的测试时推理优化框架，核心思想是通过声明级验证来提升推理效率。传统方法在测试时通过增加采样数量来提升性能，但往往因整条推理轨迹中的信号稀释而难以有效识别关键错误。CLR 将推理轨迹压缩为决策关键声明集合，并针对这些声明进行定向验证，从而更高效地分配测试时计算资源。该框架无需额外训练，即插即用，可显著减少不必要的采样开销，同时保持或提升推理准确性。这项工作为大型语言模型的推理时扩展提供了新视角，尤其适用于需要高可靠性的复杂推理任务，如数学证明、代码生成和多步问答。其创新性在于将验证粒度从整体细化到声明级别，提升了错误定位的精度，具有较高的实用价值和研究潜力。",
+  "tags": [
+    "LLM",
+    "Test-Time Scaling",
+    "Reliability Assessment",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:18:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "声明级验证比整条轨迹验证更精准，能有效避免信号稀释问题。",
+      "CLR 通过重新分配测试时计算资源，从采样转向定向验证，提升效率。",
+      "该框架无需训练，可直接应用于现有模型，具有即插即用特性。",
+      "适用于复杂推理任务，可显著降低计算成本并保持高可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

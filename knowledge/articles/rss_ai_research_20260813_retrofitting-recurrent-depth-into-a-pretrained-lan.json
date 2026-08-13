@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260813-079",
+  "title": "Retrofitting Recurrent Depth into a Pretrained Language Model: Installation, Extrapolation, Transfer, and Retention at Two Parameter Budgets",
+  "source_url": "https://arxiv.org/abs/2608.11233",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种将循环深度（recurrent depth）改造进预训练语言模型的方法，具体以Qwen2.5-0.5B-Instruct为例，将其拆分为前奏（Prelude）、权重共享的循环块（Recurrent Block）和尾声（Coda），并设计了保持恒等映射的单循环路径和后续循环的重入桥。在仅进行结果退火（outcome-only annealing）后，模型能够学习迭代的潜在转换并持续存在。在预注册的ARC测试集上，循环改造后的模型在循环1时性能不劣于基础模型。研究发现了三个主要发现（摘要中未完全列出），并探讨了在两种参数预算下的安装、外推、迁移和保持能力。这项工作为在现有预训练模型中引入循环计算提供了新思路，可能提升模型的深度推理能力，同时保持参数效率。",
+  "tags": [
+    "LLM",
+    "Recurrent",
+    "Model Architecture",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-13T09:11:57Z",
+  "collected_at": "2026-08-13T09:19:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过权重共享的循环块和重入桥，可将循环深度有效改造进预训练语言模型，且初始性能不降。",
+      "仅通过结果退火即可让模型学习迭代潜在转换，表明循环路径可被有效训练。",
+      "研究提供了两种参数预算下的详细分析，为不同资源条件下的应用提供参考。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}
