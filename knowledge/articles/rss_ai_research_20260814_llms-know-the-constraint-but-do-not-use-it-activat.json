@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-086",
+  "title": "LLMs Know the Constraint But Do Not Use It: Activation Bottlenecks in Pragmatic Constraint Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.12321",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了大型语言模型（LLM）在面临显著表面线索与隐含可行性约束冲突时的推理失败问题。作者指出，传统的聚合准确率指标混淆了真正的约束推理与保守默认行为。为此，他们提出了“条件约束激活”这一形式化概念，将约束处理分解为三个维度：知识（约束是否被内部编码）、对称性（在约束存在与缺失的提示下编码是否一致）以及路由（约束是否被用于决策）。研究发现，LLM通常能“知道”约束（知识维度对称），但在决策时未能有效“使用”约束（路由维度不足），且这种路由缺陷可通过特定干预修复。该工作为理解LLM的推理机制提供了新视角，并可能推动更精细的评估方法和可解释性研究。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Evaluation",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:15:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在约束推理中常因表面线索而忽略隐含约束，但聚合准确率掩盖了真正的约束推理与保守默认的区别。",
+      "提出条件约束激活框架，将约束处理分解为知识、对称性和路由三个维度，有助于精确诊断模型行为。",
+      "实验表明约束知识通常对称编码，但路由到决策的过程不稳定，且可通过干预修复，提示模型内部机制存在可塑性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

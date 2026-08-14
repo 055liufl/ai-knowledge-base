@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260814-013",
+  "title": "Governed Persistent Memory: Source-Bound State Semantics and Fail-Closed Release for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2608.12476",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Governed Persistent Memory (GPM) 的长期智能体记忆管理模型，旨在解决传统 select-store-retrieve 记忆框架中检索结果可能包含矛盾、过期、撤回或已删除记录的问题。GPM 采用可审计的双时态状态转换模型，结合源绑定准入机制、派生生命周期状态、当前公共屏障以及故障关闭的结构化发布，确保智能体在长时任务中引用的信息始终有效且可追溯。该模型通过五个可执行条款覆盖账本操作，为智能体记忆的可靠性和合规性提供了新范式。这项研究对于提升智能体在复杂、动态环境中的决策质量具有重要意义，尤其适用于需要严格数据治理和审计追踪的应用场景，如金融、医疗和企业自动化。GPM 的创新点在于将记忆管理从简单的存储检索升级为具备状态语义和释放控制的治理系统，有望推动智能体记忆机制的标准化发展。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "State-Transition",
+    "Auditability",
+    "Bitemporal"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:10:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GPM 引入双时态状态转换模型，有效处理记忆的时效性和一致性，避免引用过时或矛盾信息。",
+      "源绑定准入机制确保记忆来源可追溯，增强智能体行为的可信度和可审计性。",
+      "故障关闭的结构化发布机制在异常情况下防止不可靠记忆被使用，提升系统鲁棒性。",
+      "五个可执行条款为智能体记忆管理提供了标准化操作框架，便于实际部署和合规审查。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

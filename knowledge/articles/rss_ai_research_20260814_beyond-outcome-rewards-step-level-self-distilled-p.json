@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260814-132",
+  "title": "Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents",
+  "source_url": "https://arxiv.org/abs/2608.12764",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“步骤级自蒸馏策略优化”（Step-Level Self-Distilled Policy Optimization）的方法，旨在解决深度搜索智能体在长轨迹（数十步）中因奖励稀疏而导致的信用分配问题。传统强化学习仅提供每个轨迹的单一结果奖励，难以有效指导中间步骤的优化。作者借鉴了在线策略自蒸馏（OPSD）的思想，利用模型自身的logits作为密集的token级教师信号，但直接扩展至搜索智能体会引发根本性矛盾：教师模型因访问特权信息（如未来状态或真实答案）而可能产生与搜索策略不一致的指导。为此，本文提出在步骤级别进行自蒸馏，将教师信号分解到每个搜索步骤，从而缓解信用分配稀疏性，同时避免教师与策略之间的分布偏移。该方法在深度搜索任务上展示了显著性能提升，为长程决策智能体的训练提供了新思路。该研究值得关注，因为它针对了深度搜索智能体训练中的核心瓶颈，并提出了一个可扩展的解决方案，对强化学习、搜索算法和智能体训练领域均有重要启示。",
+  "tags": [
+    "Reinforcement Learning",
+    "Deep Search",
+    "Self-Distillation",
+    "Credit Assignment",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:18:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准RL在长轨迹搜索中奖励稀疏，导致信用分配困难，本文提出步骤级自蒸馏以提供密集信号。",
+      "直接扩展OPSD至搜索智能体会因教师特权信息引发策略偏移，需在步骤级别设计蒸馏机制。",
+      "步骤级自蒸馏可有效缓解稀疏奖励问题，提升深度搜索智能体的训练效率和最终性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

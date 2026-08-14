@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-051",
+  "title": "Uniform Herding: Exemplar Replay with Representation Refresh",
+  "source_url": "https://arxiv.org/abs/2608.13061",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Uniform Herding”的类增量学习方法，旨在解决特征表示变化时旧类别样本回放效率低下的问题。该方法通过将有限的活动样本集均匀分配到所有已观察类别，并利用有界候选池在当前特征表示下刷新所选样本，从而在保持旧类别性能的同时适应新类别。在CIFAR-100数据集上，使用ResNet-18骨干网络，设置活动预算M=2000和检索预算b=64，进行了十类增量任务的实验。该方法针对类增量学习中的灾难性遗忘问题，提出了一种新颖的样本选择与刷新策略，具有较高的实用价值。",
+  "tags": [
+    "Class-Incremental Learning",
+    "Exemplar Replay",
+    "Representation Refresh",
+    "CIFAR-100"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:12:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过均匀分配活动样本集到所有类别，确保旧类别在回放中的代表性，缓解类别不平衡问题。",
+      "利用有界候选池在当前特征表示下动态刷新样本，适应特征变化，提高回放效率。",
+      "在标准基准CIFAR-100上验证了方法的有效性，为类增量学习提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

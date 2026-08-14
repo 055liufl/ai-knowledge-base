@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260814-137",
+  "title": "Fast A/B/n Testing: Exact Multi-Policy Comparison via Tree-Coupled Feedback Sharing",
+  "source_url": "https://arxiv.org/abs/2608.12831",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Tree-Coupled A/B Testing (TCAB) 的新型实验设计方法，用于在在线平台中高效比较多个自适应决策策略（如排序系统、推荐算法、定价规则和语言模型代理）。传统的 A/B/n 测试需要为每个策略分配独立的 T 时间步轨迹，总样本量为 JT，成本高昂且可能带来风险。TCAB 通过树状耦合结构在策略间共享反馈，实现了精确的多策略比较，适用于任意历史依赖的策略，无需近似或假设。该方法显著降低了实验所需的交互次数，同时保持统计有效性，为在线平台在资源受限环境下进行大规模策略评估提供了新思路。该研究具有理论创新性和实际应用价值，尤其对需要快速迭代策略的 AI 系统（如推荐系统和 LLM 代理）具有重要意义。",
+  "tags": [
+    "A/B testing",
+    "adaptive policy",
+    "online experimentation",
+    "feedback sharing",
+    "LLM agents"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:18:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TCAB 通过树状耦合结构实现策略间反馈共享，将总样本量从 JT 降低至接近 T，大幅提升实验效率。",
+      "该方法支持任意历史依赖策略的精确比较，无需近似假设，扩展了传统 A/B/n 测试的适用范围。",
+      "适用于高成本或高风险交互场景，如 LLM 代理评估，为在线平台提供更安全的策略优化途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

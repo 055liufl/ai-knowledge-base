@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260814-071",
+  "title": "LongEarth-R1: Benchmarking and Aligning Vision-Language Models for Long-Horizon Earth Observation Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.13344",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 LongEarth-R1，一个针对长时序地球观测推理的基准与对齐框架。现有遥感视觉语言模型主要处理单张图像、图像对或短序列，难以应对多阶段地理演变、空间变化定位、时间异常检测及未来预测等复杂任务。为此，作者构建了 LongEarth-Bench 基准，包含约 1.4 万条指令数据，覆盖多时相序列、空间-时间推理和未来预测等任务，并设计了多帧关联与区域级定位的评估协议。同时，提出 LongEarth-R1 模型，通过两阶段训练（先进行多帧指令微调，再结合强化学习与可验证奖励进行对齐）增强模型在长序列中的时空推理能力。实验表明，LongEarth-R1 在多个长时序遥感任务上显著优于现有开源模型，并展示了良好的泛化性。该工作填补了遥感视觉语言模型在长时序推理方面的空白，为地理空间智能和动态环境监测提供了新工具，值得关注。",
+  "tags": [
+    "Vision-Language Model",
+    "Remote Sensing",
+    "Long-Horizon Reasoning",
+    "Benchmark",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:14:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有遥感 VLM 缺乏长时序推理能力，LongEarth-Bench 提供了首个专门基准，覆盖多阶段演变和时空异常检测。",
+      "LongEarth-R1 通过多帧指令微调和基于可验证奖励的强化学习，显著提升了模型在长序列中的时空推理性能。",
+      "该工作为地理空间智能应用（如环境监测、灾害预警）提供了更可靠的模型基础，并验证了 RL 对齐在视觉-语言任务中的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

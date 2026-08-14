@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-055",
+  "title": "SPADE: Speculative Decoding for Precise and Low Cost Distributed Edge Cloud Inference",
+  "source_url": "https://arxiv.org/abs/2608.13076",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SPADE的分布式推理框架，旨在解决大型语言模型（LLM）在边缘云环境中部署时面临的成本与精度权衡问题。具体而言，直接在边缘部署小型LLM虽然能降低计算需求，但会牺牲精度；而依赖云端大型LLM则能保持性能，但每token计算成本高昂。SPADE通过投机解码（Speculative Decoding）技术，在边缘设备上运行小型草稿模型生成候选token序列，并由云端大型模型进行验证，从而在保证精度的同时显著降低推理成本。该框架创新性地将投机解码应用于分布式边缘云场景，实现了低延迟、低成本的推理，为LLM在资源受限环境中的高效部署提供了新思路。该研究值得关注，因为它直接回应了LLM规模化应用中的核心瓶颈，并展示了分布式协同推理的潜力。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Edge Computing",
+    "Distributed Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:13:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SPADE利用投机解码在边缘和云之间分配计算，兼顾精度与成本。",
+      "通过小型草稿模型与大型验证模型的协作，显著降低每token推理成本。",
+      "该框架适用于资源受限的边缘环境，扩展了LLM的实际部署场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-043",
+  "title": "FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2608.12932",
+  "source_platform": "rss_ai_research",
+  "summary": "FlashDrive 提出了一种针对自动驾驶场景的视觉-语言-动作（VLA）模型推理加速框架。该框架识别出 VLA 推理中的四个结构性瓶颈：视觉编码对重叠视频帧的冗余计算、语言模型预填充阶段对历史上下文的重复计算、推理令牌的生成效率低下，以及动作解码的延迟。通过优化这些级联瓶颈，FlashDrive 旨在将 VLA 模型的推理速度提升至实时控制可用的水平，从而推动端到端自动驾驶系统从理论走向实际部署。这项工作对于解决 VLA 模型在计算资源受限的自动驾驶场景中的实用性挑战具有重要意义，值得关注。",
+  "tags": [
+    "VLA",
+    "Autonomous Driving",
+    "Inference Optimization",
+    "Real-time Systems"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:12:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLA 推理的瓶颈是结构性的，涉及视觉编码、预填充、推理令牌生成和动作解码四个级联阶段，而非单一计算热点。",
+      "通过消除重叠帧的冗余计算和复用历史上下文，可以显著降低视觉编码和预填充阶段的计算开销。",
+      "FlashDrive 的目标是使 VLA 模型满足自动驾驶实时控制的要求，这是端到端自动驾驶落地的关键前提。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

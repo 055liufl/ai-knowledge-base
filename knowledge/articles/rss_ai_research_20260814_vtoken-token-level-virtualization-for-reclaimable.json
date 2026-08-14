@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-065",
+  "title": "vToken: Token-Level Virtualization for Reclaimable KV Caches",
+  "source_url": "https://arxiv.org/abs/2608.13263",
+  "source_platform": "rss_ai_research",
+  "summary": "vToken 提出了一种针对大语言模型推理中 KV 缓存内存管理的新方法。当前，PagedAttention 等系统使用固定大小的内存块来管理 KV 缓存，以减少分配器级别的碎片，但最新的 KV 驱逐算法在令牌粒度上操作，比块级管理更细，导致块内碎片化，使得大量已分配的 KV 内存无法回收。vToken 通过引入令牌级虚拟化，实现了对 KV 缓存的细粒度管理，使得内存可以被更有效地回收和复用，从而缓解内存瓶颈。这项工作对于提升 LLM 服务的吞吐量和降低推理成本具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Memory Management",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:13:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vToken 解决了 KV 缓存中块内碎片化问题，通过令牌级虚拟化实现更精细的内存管理。",
+      "该方法与现有 PagedAttention 等系统兼容，可提升内存利用率。",
+      "令牌级虚拟化有望显著降低 LLM 推理的内存占用，提高服务吞吐量。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

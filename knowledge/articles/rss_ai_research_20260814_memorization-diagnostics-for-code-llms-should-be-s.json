@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260814-133",
+  "title": "Memorization Diagnostics for Code LLMs Should be Scale-Aware",
+  "source_url": "https://arxiv.org/abs/2608.12771",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对代码大型语言模型（Code LLMs）的记忆化诊断问题，提出评估方法必须考虑模型规模。当前文献常报告代码模型存在广泛记忆化，但作者发现，当在密集架构上评估现有探测技术时，这些技术在规模增大时严重失效。传统的编码器风格探测方法，如使用同义词模糊测试或死代码插入等扰动，难以有效暴露记忆化行为。该研究强调，记忆化诊断需要尺度感知（scale-aware），即评估方法应适应模型参数量的增长，否则会得出误导性结论。这项工作对理解代码模型的学习机制、评估其泛化能力以及改进诊断工具具有重要意义，尤其对大型代码模型的可信部署和安全性评估有直接影响。",
+  "tags": [
+    "Code LLM",
+    "Memorization",
+    "Evaluation",
+    "Scalability"
+  ],
+  "author": null,
+  "published_at": "2026-08-14T09:06:48Z",
+  "collected_at": "2026-08-14T09:18:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有记忆化探测技术在大型代码模型上失效，需开发尺度感知的诊断方法。",
+      "传统扰动方法（如同义词模糊测试、死代码插入）在规模增大时无法有效暴露记忆化。",
+      "记忆化评估必须考虑模型架构和参数规模，否则可能高估或低估模型的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
