@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260815-132",
+  "title": "Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents",
+  "source_url": "https://arxiv.org/abs/2608.12764",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对深度搜索智能体的步骤级自蒸馏策略优化方法。深度搜索智能体通常需要执行数十步的轨迹，而标准的强化学习仅在整个轨迹结束时提供单一的结果奖励，这种奖励过于稀疏，难以进行有效的信用分配。为了解决这一问题，作者引入了基于策略的自蒸馏（OPSD）方法，利用模型自身的logits作为密集的token级教师信号，但将其扩展到搜索智能体时面临一个根本性矛盾：教师模型能够访问特权信息，这可能导致学生模型学习到不合理的策略。本文针对这一矛盾提出了解决方案，通过步骤级别的自蒸馏策略优化，使得搜索智能体能够在每一步获得更密集的反馈信号，从而提升训练效率和最终性能。该研究对于提升复杂推理任务中智能体的决策能力具有重要意义，尤其是在需要多步规划和搜索的场景下。",
+  "tags": [
+    "RL",
+    "Self-Distillation",
+    "Search Agents",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:38:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准RL在深度搜索智能体中面临奖励稀疏问题，步骤级自蒸馏可提供更密集的反馈。",
+      "教师模型的特权信息访问可能导致学生策略偏差，需要专门设计来解决。",
+      "步骤级自蒸馏策略优化有望显著提升搜索智能体的训练效率和最终性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

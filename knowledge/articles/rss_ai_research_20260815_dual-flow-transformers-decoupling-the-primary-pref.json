@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260815-008",
+  "title": "Dual-Flow Transformers: Decoupling the Primary Prefill Path from Additional Decode Computation",
+  "source_url": "https://arxiv.org/abs/2608.12385",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“双流 Transformer”的新架构，旨在解耦大语言模型推理中的预填充（prefill）和解码（decode）阶段的计算路径。传统 Transformer 在宽度或深度上的扩展会同时增加两个阶段的计算成本，因为每一层都需要在两个阶段中执行。双流 Transformer 通过将主要的预填充路径与额外的解码计算分离，使得模型可以针对两个阶段的不同硬件特性（预填充为计算密集型，解码为内存带宽密集型）进行优化，从而降低累计推理成本。该研究对于提升 LLM 推理效率、降低服务成本具有重要意义，尤其适用于高并发、长上下文的场景。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Transformer Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:31:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "双流 Transformer 解耦预填充和解码路径，允许分别优化计算和内存带宽瓶颈。",
+      "该架构有望显著降低累计推理成本，尤其在长序列和高并发场景下。",
+      "为 LLM 架构设计提供了新思路，可能影响未来推理优化方向。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

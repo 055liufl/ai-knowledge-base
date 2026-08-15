@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260815-060",
+  "title": "Rethinking Normalization Placement for LLMs: Post-Norm under Curriculum Depth Growing",
+  "source_url": "https://arxiv.org/abs/2608.13156",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了大型语言模型（LLM）中归一化层放置位置（Pre-norm vs Post-norm）在课程深度增长（Curriculum Depth Growing）训练策略下的影响。传统上，Pre-norm 是现代 Transformer 的标准选择，因为它有助于全深度模型的联合优化。然而，当模型深度通过课程方式逐步增加时，每个新添加的块接收的是已训练前缀产生的边界表示，这使得归一化放置位置与正向条件化（forward conditioning）密切相关。作者通过实验测试了在课程深度增长场景下，归一化放置位置是否会影响训练效果，并可能挑战 Pre-norm 的普遍偏好。该研究对于理解 LLM 的训练动态、优化深度增长策略以及提升模型性能具有重要意义，尤其对从事模型架构设计和训练算法研究的学者和工程师具有参考价值。",
+  "tags": [
+    "LLM",
+    "Normalization",
+    "Curriculum Learning",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:34:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "课程深度增长改变了归一化放置位置的作用，Post-norm 可能在此场景下具有优势。",
+      "Pre-norm 的优越性并非绝对，其效果依赖于训练策略（如深度增长方式）。",
+      "归一化放置位置与正向条件化机制相互作用，影响深度增长训练的稳定性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

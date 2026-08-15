@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260815-062",
+  "title": "Teach the Magnitude, Not the Direction: Verifier-Bounded Credit Assignment for Multi-Turn Multi-step LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.13179",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 CrEST 的层次化信用分配方法，用于多轮多步 LLM 智能体的强化学习训练。论文指出，基于可验证奖励的强化学习（RLVR）在训练多轮工具使用智能体时，存在轨迹级信用分配问题，即将不同轮次的结果混为一个奖励信号，导致学习效率低下。同时，现有的 on-policy 蒸馏方法虽然提供密集的逐 token 监督，但受限于教师模型或易出现梯度集中崩溃。CrEST 通过层次化方式分配信用，旨在突破验证器限制的性能上限，提升智能体在复杂多步任务中的表现。该方法具有理论创新性和实践潜力，对 LLM 智能体训练领域有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:34:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 的轨迹级信用分配会混淆不同轮次的贡献，限制智能体性能。",
+      "CrEST 通过层次化信用分配，解决多步任务中的奖励稀疏问题。",
+      "该方法有望突破验证器限制，提升多轮工具使用智能体的训练效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

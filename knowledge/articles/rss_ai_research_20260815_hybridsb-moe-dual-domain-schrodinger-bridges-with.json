@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260815-127",
+  "title": "HybridSB-MoE: Dual-Domain Schr\\\"odinger Bridges with Scene-Adaptive Expert Routing for Speech Enhancement",
+  "source_url": "https://arxiv.org/abs/2608.12715",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HybridSB-MoE 的新型语音增强框架，旨在解决生成式语音增强中的三大关键问题：频谱模型虽能捕捉谐波结构但常破坏相位信息，波形模型虽能保留相位但忽略谐波细节，以及 Schrödinger Bridge（SB）虽能缩短噪声到干净语音的传输路径但推理成本与训练关联松散。该框架采用双域（dual-domain）设计，结合频谱与波形域的优势，并通过场景自适应专家路由（Scene-Adaptive Expert Routing）机制动态选择最合适的处理路径，从而在保持相位完整性的同时提升谐波结构的重建质量。此外，HybridSB-MoE 基于非对称设计原则，统一了三个核心贡献，有效优化了推理效率与生成质量的平衡。该工作为语音增强领域提供了一种新的混合架构思路，具有较高的实用价值和创新性，尤其适用于实时或资源受限的语音处理场景。",
+  "tags": [
+    "Speech Enhancement",
+    "Schrödinger Bridge",
+    "Mixture of Experts",
+    "Dual-Domain",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:38:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HybridSB-MoE 通过双域框架同时利用频谱和波形模型的优势，解决了单一域模型在相位和谐波结构上的权衡问题。",
+      "场景自适应专家路由机制能够根据输入特征动态调整处理策略，提升了模型在不同噪声环境下的泛化能力。",
+      "基于 Schrödinger Bridge 的传输优化结合非对称设计，有效降低了推理成本，使生成式语音增强更适用于实际部署。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260815-083",
+  "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+  "source_url": "https://arxiv.org/abs/2608.13547",
+  "source_platform": "rss_ai_research",
+  "summary": "QuoteBench 是一篇关于 LLM 编码代理评估的论文，针对当前评估方法中的关键盲点：匹配执行分数（如命令是否成功执行）无法区分命令生成错误与执行传输阶段引入的失败。论文提出通过 56 个一次性任务（源自 14 个事故家族）进行精确最终状态验证，并围绕一个故意未转义的 add 命令，交叉测试生成契约与执行传输的边界。该基准旨在量化命令路径失败，揭示代理在生成命令后因序列化、包装或重新解析导致的错误，从而为评估 LLM 编码代理的鲁棒性提供更细粒度的视角。这项研究值得关注，因为它挑战了现有评估指标的表面有效性，推动更严格的测试方法，对提升编码代理在实际环境中的可靠性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:35:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "匹配执行分数无法区分命令生成错误与执行传输失败，导致评估结果失真",
+      "QuoteBench 通过精确最终状态验证和事故驱动任务设计，提供更严格的边界测试",
+      "故意未转义命令暴露了生成与执行之间的契约漏洞，凸显鲁棒性挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260815-064",
+  "title": "Capability Sheaves for Compositional Agent-Harness Repair: Controlled Quotients and a Real-Repository Stress Test",
+  "source_url": "https://arxiv.org/abs/2608.13228",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于能力层（capability sheaf）的框架，用于对智能体（agent）的“harness”（即组合检索、路由、状态、溯源和验证等组件的系统）进行组合式修复。核心问题在于，局部成功的组件可能在共享状态上产生冲突，导致整体失败。作者通过有限能力层建模该问题：茎（stalks）编码类型化行为签名，限制映射（restriction maps）保留共享字段，而可接受的运行被视为全局截面（global sections）。接受性被形式化为一个精确的有限约束满足问题（CSP），并引入线性化相对上同调类来表征冲突。该工作不仅提供了理论模型，还通过真实代码库的压力测试验证了方法的有效性。该研究对于提升智能体系统的鲁棒性和可维护性具有重要意义，尤其在复杂多组件交互场景下，为系统性诊断和修复提供了数学基础。",
+  "tags": [
+    "Agent",
+    "Sheaf Theory",
+    "CSP",
+    "Compositional Repair",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:34:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "能力层模型将智能体harness的组件交互形式化，能够精确捕捉共享状态冲突导致的整体失败。",
+      "将接受性转化为有限CSP问题，使得修复过程可计算且可验证。",
+      "线性化相对上同调类提供了冲突的代数表征，有助于定位问题组件。",
+      "真实仓库压力测试验证了该方法的实际可用性，表明其不仅停留在理论层面。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

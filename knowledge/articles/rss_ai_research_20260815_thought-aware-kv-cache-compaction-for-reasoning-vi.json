@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260815-092",
+  "title": "Thought-Aware KV Cache Compaction for Reasoning via Adaptive Attention Matching",
+  "source_url": "https://arxiv.org/abs/2608.12331",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Thought-Aware Attention Matching (TAM) 的方法，用于解决推理语言模型在生成思维链（CoT）时 KV 缓存线性增长导致的内存瓶颈问题。与现有将推理轨迹视为扁平 token 序列并采用统一压缩的方法不同，TAM 利用 CoT 推理的分层结构，根据推理步骤的重要性进行自适应注意力匹配，从而更有效地压缩 KV 缓存。该方法通过识别关键推理步骤并保留其注意力信息，在显著降低内存占用的同时保持推理性能。该研究具有重要的实用价值，因为长 CoT 序列在解码时对内存的消耗是实际部署中的关键挑战，TAM 提供了一种结构感知的解决方案，有望提升推理模型的可扩展性和效率。",
+  "tags": [
+    "KV Cache",
+    "推理模型",
+    "注意力机制",
+    "内存优化",
+    "CoT"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:36:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 KV 缓存压缩方法忽略 CoT 推理的分层结构，导致压缩效率低下。",
+      "TAM 通过自适应注意力匹配，根据推理步骤的重要性进行差异化压缩，从而在降低内存的同时保持性能。",
+      "该方法针对长 CoT 序列的内存瓶颈，具有实际部署中的显著应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

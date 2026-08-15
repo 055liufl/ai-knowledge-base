@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260815-138",
+  "title": "From Atomic Evidence to Logical Composition: Structured Compositional Reasoning over Compound Answer Options",
+  "source_url": "https://arxiv.org/abs/2608.12836",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种结构化组合推理框架，用于处理大型语言模型在回答包含AND、OR、NEITHER/NOR等逻辑运算符的复合选项时失败的问题。传统方法中，模型需要直接判断复合选项，但即使模型能正确判断每个原子命题，也常因组合逻辑而失误。该框架将每个复合选项分解为原子答案，并对每个原子进行对比假设评分，使模型不再直接面对复合选项。随后，通过运算符约束的整数线性规划（ILP）对原子判断进行组合，以得出最终答案。这种方法避免了模型在逻辑组合上的直接推理，提高了组合推理的准确性和可解释性。该研究对于提升LLM在复杂推理任务中的表现具有重要意义，尤其是在需要严格逻辑组合的场景下，如法律、科学或医学问答。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Logical Composition",
+    "ILP"
+  ],
+  "author": null,
+  "published_at": "2026-08-15T08:28:19Z",
+  "collected_at": "2026-08-15T08:39:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在复合逻辑选项上表现不佳，即使原子判断正确，组合时也易出错。",
+      "通过分解为原子判断并利用ILP进行逻辑组合，可避免模型直接处理复合选项。",
+      "该方法提高了组合推理的准确性和可解释性，适用于需要严格逻辑的领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
