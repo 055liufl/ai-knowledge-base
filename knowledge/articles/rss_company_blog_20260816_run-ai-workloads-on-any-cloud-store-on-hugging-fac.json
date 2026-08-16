@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260816-008",
+  "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+  "source_url": "https://huggingface.co/blog/skypilot-hf-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客介绍了 SkyPilot 与 Hugging Face 存储的集成，实现了在任意云上运行 AI 工作负载、在 Hugging Face 上存储数据的零出口（zero-egress）方案。SkyPilot 是一个开源的多云编排框架，支持在 AWS、GCP、Azure 等云平台上无缝运行 AI 任务，而 Hugging Face Hub 提供了模型、数据集和代码的集中存储。通过集成，用户可以将数据存储在 Hugging Face 上，利用其全球 CDN 和缓存机制，避免跨云数据传输的出口费用，同时简化数据管理和共享。该方案特别适合需要多云策略、希望降低云成本、并利用 Hugging Face 生态的团队。博客详细说明了技术原理、配置步骤和实际收益，展示了如何通过 SkyPilot 的存储挂载功能直接访问 Hugging Face 数据集，实现高效、经济的 AI 工作流。这一创新解决了多云环境下数据迁移的痛点，提升了 AI 开发的灵活性和成本效益。",
+  "tags": [
+    "SkyPilot",
+    "Hugging Face",
+    "多云",
+    "存储",
+    "AI工作流"
+  ],
+  "author": null,
+  "published_at": "2026-08-16T08:28:24Z",
+  "collected_at": "2026-08-16T08:31:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零出口存储设计：通过将数据存储在 Hugging Face 并利用其 CDN 和缓存，避免跨云数据传输的出口费用，显著降低多云 AI 工作负载的成本。",
+      "多云编排能力：SkyPilot 支持在 AWS、GCP、Azure 等主流云平台间无缝切换，用户可根据价格、可用性等动态选择最优云资源，提升灵活性。",
+      "简化数据管理：集成后，数据统一存储在 Hugging Face Hub，便于版本控制、共享和复用，同时通过 SkyPilot 的存储挂载功能，无需额外配置即可直接访问数据集。",
+      "实际应用价值：该方案适用于需要多云策略的团队，尤其适合频繁使用 Hugging Face 生态的开发者，可有效降低运维复杂度和成本。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

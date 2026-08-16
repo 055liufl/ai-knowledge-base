@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260816-017",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由Hugging Face发布，探讨了如何评估开源模型在自定义工具调用场景中的“智能体能力”（agentic capability）。文章指出，现有的基准测试（如GAIA、BFCL）虽然有用，但无法完全反映模型在特定工具集上的实际表现，因为工具定义、调用格式和任务复杂度会显著影响模型性能。为此，作者提出了一种自建基准测试的方法论，鼓励开发者基于自己的工具和任务创建评估集，并利用Hugging Face的轻量级框架（如smolagents）快速测试不同模型。文章还展示了如何通过简单的代码示例，在本地或云端运行评估，并比较开源模型（如Llama 3.1、Mistral）与闭源模型的性能差异。核心观点是：通用基准测试的分数可能具有误导性，开发者应针对实际使用场景进行定制化评估，以选择最合适的模型。这篇文章对于构建AI代理应用的工程师和研究人员具有实用价值，因为它提供了可操作的工具和思路，帮助降低模型选型风险。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-08-16T08:28:24Z",
+  "collected_at": "2026-08-16T08:32:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法反映模型在自定义工具上的真实表现，需自建评估集。",
+      "利用Hugging Face的smolagents等框架可快速实现工具调用基准测试。",
+      "开源模型在特定工具任务上可能超越闭源模型，但需针对性验证。",
+      "评估时应关注工具定义格式和调用协议对模型性能的影响。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

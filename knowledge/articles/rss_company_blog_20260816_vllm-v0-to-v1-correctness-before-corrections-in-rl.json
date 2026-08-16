@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260816-030",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了vLLM从V0到V1的演进，重点聚焦于强化学习（RL）场景下的正确性优先原则。vLLM是一个高性能的大语言模型推理引擎，广泛应用于RL训练和推理。文章指出，在RL环境中，模型推理的正确性比速度优化更为关键，因为错误的推理结果会导致训练信号失真，进而影响模型性能。V1版本在架构上进行了重构，引入了更严格的正确性校验机制，确保在分布式推理、批处理等复杂场景下，输出结果与预期一致。此外，文章还讨论了V1在内存管理、调度策略上的改进，以及这些改进如何在不牺牲正确性的前提下提升吞吐量。对于从事RL训练、模型部署和推理优化的开发者而言，这篇文章提供了关于vLLM演进方向的重要见解，强调了在追求性能的同时，必须将正确性作为首要考量。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "正确性",
+    "性能优化"
+  ],
+  "author": null,
+  "published_at": "2026-08-16T08:28:24Z",
+  "collected_at": "2026-08-16T08:33:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在RL训练中，推理正确性比速度更重要，错误输出会污染训练信号。",
+      "vLLM V1通过架构重构，在保证正确性的前提下优化了内存和调度。",
+      "V1引入了更严格的校验机制，应对分布式推理中的一致性问题。",
+      "性能优化不应以牺牲正确性为代价，这是vLLM演进的核心原则。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
