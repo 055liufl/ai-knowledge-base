@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260817-048",
+  "title": "Regime-Conditional Verification: Correctness Estimation for Adapting and Monitoring Safety Classifiers",
+  "source_url": "https://arxiv.org/abs/2608.14089",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Regime-Conditional Verification (RCV) 的轻量级包装器，用于改进大型语言模型中安全分类器的部署性能。安全分类器在部署时通常面临两个主要问题：一是其决策反映的是训练时学习的策略，而非部署者期望的策略；二是随着部署流量的演变，其性能会退化。RCV 通过从分类器的内部表示中估计其正确性，从而在不重新训练的情况下适应和监控安全分类器。该方法无需修改底层模型，即可动态调整分类器的行为，以适应不同的部署环境（即“regime”）。这项工作对于提升 LLM 应用的安全性和可靠性具有重要意义，特别是在内容审核、有害内容过滤等场景中。其创新点在于利用内部表示进行轻量级适配，避免了昂贵的重训练成本，同时提供了对分类器性能的实时监控能力。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Classification",
+    "Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:48:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RCV 通过分析分类器的内部表示来估计其正确性，无需重新训练即可适应新策略。",
+      "该方法能够监控分类器性能随部署环境变化的退化情况，提供实时调整能力。",
+      "RCV 作为轻量级包装器，可应用于现有安全分类器，降低部署成本。",
+      "该研究解决了 LLM 安全分类器在动态环境中的适应性问题，具有实际应用价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

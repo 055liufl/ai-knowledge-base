@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-057",
+  "title": "FreeBalance: Pre-Routing Online Moe Load Balancing via Residual Workload Prediction",
+  "source_url": "https://arxiv.org/abs/2608.14205",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 FreeBalance 的在线负载均衡方法，用于解决 Mixture-of-Experts (MoE) 模型在分布式推理中因专家并行导致的负载不均衡问题。负载不均衡会使最重的计算节点成为瓶颈，增加推理延迟。与依赖离线专家放置的传统方法不同，FreeBalance 通过残差工作负载预测实现预路由（pre-routing）的在线负载均衡，能够适应多任务服务场景中层和批次相关的路由动态。该方法旨在提升 MoE 推理效率，降低延迟，对大规模模型部署具有实际意义。该研究关注 LLM 推理基础设施的关键挑战，具有较高的实用价值。",
+  "tags": [
+    "MoE",
+    "负载均衡",
+    "推理优化",
+    "分布式系统"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:48:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "负载不均衡是 MoE 推理效率的主要瓶颈，FreeBalance 通过在线预测解决动态路由问题。",
+      "FreeBalance 采用残差工作负载预测，实现预路由负载均衡，优于离线专家放置方法。",
+      "该方法适应多任务场景中层和批次相关的路由变化，提升分布式推理的扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

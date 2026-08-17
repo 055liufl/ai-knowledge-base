@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-002",
+  "title": "Depth-Aware Sensitivity Analysis of Mixture-of-Experts Models via Magnitude-Based Expert Masking",
+  "source_url": "https://arxiv.org/abs/2608.13565",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对混合专家（MoE）架构的大语言模型进行了逐层敏感性分析，聚焦于模型压缩场景。研究以Qwen3.6-35B-A3B模型为对象，该模型包含40个MoE层，每层256个专家，采用top-8路由策略。通过基于幅度的专家掩码方法，作者系统地评估了不同层和专家对模型性能的影响，揭示了各层在模型整体表现中的相对重要性。这一分析为MoE模型的压缩和优化提供了理论依据，有助于在保持性能的同时减少计算开销。该研究填补了MoE模型层间重要性表征的空白，对高效部署大规模语言模型具有实际意义。",
+  "tags": [
+    "MoE",
+    "模型压缩",
+    "敏感性分析",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:45:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE模型中不同层对模型性能的影响存在显著差异，逐层敏感性分析可指导压缩策略。",
+      "基于幅度的专家掩码方法能有效识别关键专家，为模型剪枝提供依据。",
+      "该研究为MoE模型的高效部署提供了系统性方法，有助于平衡性能与计算效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

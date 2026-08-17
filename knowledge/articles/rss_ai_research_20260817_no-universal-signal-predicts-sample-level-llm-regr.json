@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-012",
+  "title": "No Universal Signal Predicts Sample-Level LLM Regression under Version Updates",
+  "source_url": "https://arxiv.org/abs/2608.13607",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型版本更新后，在样本级别上可能出现的性能回退（regression）现象，即旧模型回答正确而新模型回答错误的情况。作者指出，尽管新模型在整体指标上通常更优，但个体样本的表现可能退化，且这种退化难以通过推理时可得的信号（如置信度、logit margin、注意力熵等）进行预测。论文通过系统比较多种单模型信号，发现没有任何单一信号能可靠地预测样本级别的回退，这挑战了以往依赖置信度等信号进行模型选择或回滚的假设。该研究对于模型更新评估、在线服务中的模型部署策略以及可靠性工程具有重要意义，提示开发者需要更谨慎地处理模型升级，并可能需引入更复杂的多信号或外部验证机制。",
+  "tags": [
+    "LLM",
+    "模型评估",
+    "可靠性",
+    "版本更新"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型整体性能提升不代表所有样本都改善，样本级回退是常见且难以预测的。",
+      "置信度、logit margin、注意力熵等常用信号均无法有效预测回退，说明需要新的方法。",
+      "该发现对模型部署和更新策略有直接影响，建议采用更保守的升级流程或结合外部验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260817-105",
+  "title": "Fine-Tuning Qwen3-27B for C-to-Rust Code Translation: A Three-Stage Curriculum of Pretraining, Debugging-Aware SFT, and Task-Specific SFT",
+  "source_url": "https://arxiv.org/abs/2608.13681",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对C到Rust代码翻译任务的三阶段课程式微调方法，以Qwen3-27B模型为基础。该方法依次进行预训练、调试感知的监督微调（SFT）和任务特定SFT，旨在生成安全且惯用的Rust代码，同时保持功能等价性。研究背景是C代码向Rust迁移可消除内存安全漏洞，但通用LLM在直接应用时表现不佳。通过三阶段课程，模型逐步学习跨语言语义等价、调试技巧和任务特定优化，显著提升了翻译质量。该工作对软件工程和代码生成领域具有重要价值，展示了如何通过定制化训练策略增强LLM在专业任务上的能力。",
+  "tags": [
+    "LLM",
+    "代码翻译",
+    "微调",
+    "Rust",
+    "软件工程"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:51:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "三阶段课程式微调（预训练、调试感知SFT、任务特定SFT）能有效提升C到Rust翻译的准确性和惯用性。",
+      "调试感知SFT通过引入调试信息增强模型对错误模式的理解，从而生成更安全的代码。",
+      "任务特定SFT进一步优化模型在目标翻译任务上的表现，缩小通用模型与专业模型的差距。",
+      "该方法为利用LLM进行跨语言代码迁移提供了可复制的训练范式，具有实际工程应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-078",
+  "title": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations",
+  "source_url": "https://arxiv.org/abs/2608.14425",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 optstop 的自适应停止框架，用于优化大语言模型（LLM）评估中的采样预算分配。传统的 LLM 评估通常对所有测试项使用固定的采样次数，即使某些项的估计已经足够精确，仍会继续消耗资源。optstop 将评估视为一个序贯测量问题，基于分层贝叶斯推断，在不确定性高的地方继续采样，而在估计精确或稳定时提前停止。该框架支持二元、有序和连续等多种评估类型，能够动态调整采样策略，从而在保证评估质量的同时显著降低计算成本。这项研究对于大规模模型评估的效率提升具有实际意义，尤其在资源受限的环境中，能够帮助研究者和开发者更经济地完成模型性能的可靠评估。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Bayesian Inference",
+    "Adaptive Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:49:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定采样预算在 LLM 评估中造成资源浪费，自适应停止可提升效率。",
+      "分层贝叶斯推断为序贯决策提供了理论基础，支持多种数据类型。",
+      "optstop 框架在保持评估精度的同时，显著减少不必要的采样。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

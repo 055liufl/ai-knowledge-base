@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-065",
+  "title": "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.14290",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了Mobius-v0，一种新型的基础模型架构，其核心设计在于将知识存储与推理过程解耦。该架构包含一个全局共享的“记忆”模块（前馈网络，FFN），用于存储知识向量，以及多个“推理器”模块（自注意力机制，Self-Attn），通过迭代方式实现组合推理。模型利用隐藏状态作为缓存和载体，推理器反复查询记忆模块以获取所需的知识向量，并将知识传递回推理操作符。这种知识-推理分离的架构使得Mobius在多个任务上取得了更好的性能。该工作对于提升模型的可解释性、可扩展性和效率具有重要意义，为未来基础模型的设计提供了新思路。",
+  "tags": [
+    "LLM",
+    "Architecture",
+    "Knowledge",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:49:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Mobius-v0通过将知识存储（FFN）与推理（自注意力）分离，实现了模块化设计，有助于提升模型的可解释性和可扩展性。",
+      "利用隐藏状态作为知识传递的载体，推理器可以动态查询和获取所需知识，支持更灵活的组合推理。",
+      "该架构在多个任务上表现出优于传统模型的性能，验证了知识-推理分离的有效性。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

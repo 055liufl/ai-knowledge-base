@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-127",
+  "title": "CForce: Boosting Parallel Decoding for dLLMs via Consistency Forcing",
+  "source_url": "https://arxiv.org/abs/2608.13925",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Consistency Forcing (CForce) 的蒸馏方法，旨在提升扩散大语言模型（dLLMs）在并行解码时的性能。dLLMs 通过单次前向传播预测多个掩码来加速语言生成，但在激进并行策略下，早期去噪阶段的预测可能不可靠，导致错误传播至后续阶段。CForce 通过强制早期阶段的掩码预测与最终输出保持一致，从而减少错误累积，提高生成质量。该方法为 dLLMs 的并行解码提供了一种新的优化思路，有望在保持速度优势的同时提升生成准确性。",
+  "tags": [
+    "dLLM",
+    "Parallel Decoding",
+    "Distillation",
+    "Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:52:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CForce 通过蒸馏方法强制早期掩码预测与最终输出一致，有效缓解了 dLLMs 在并行解码中的错误传播问题。",
+      "该方法针对 dLLMs 的早期去噪阶段进行优化，提升了生成质量，同时保持了并行解码的速度优势。",
+      "CForce 为扩散模型在语言生成领域的应用提供了新的训练策略，具有较高的研究价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260817-110",
+  "title": "Capacity-Dependent Effects of Data Selection for Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.13721",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了在推理监督微调中，数据选择的效果如何依赖于模型容量。作者提出，候选响应与当前学生分布的匹配程度会影响微调效果，并假设高似然响应通常更有利于微调。通过实验，他们重新审视了这一直觉，发现数据选择策略的有效性并非固定不变，而是与模型容量密切相关：对于较小模型，高似然响应可能更有效；而对于较大模型，低似然响应或更困难样本可能带来更好的泛化。这一发现挑战了以往“高似然响应普遍更优”的观点，强调了在数据选择时需考虑模型规模。论文提供了理论分析和实证结果，为推理任务中的SFT数据选择提供了新视角，对模型训练策略的设计具有指导意义。该研究值得关注，因为它揭示了数据选择与模型容量之间的交互作用，有助于优化训练效率并提升模型推理能力。",
+  "tags": [
+    "LLM",
+    "SFT",
+    "Data Selection",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-17T08:42:58Z",
+  "collected_at": "2026-08-17T08:51:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据选择策略的效果依赖于模型容量，高似然响应并非在所有情况下最优。",
+      "较小模型可能受益于高似然响应，而较大模型可能需要更困难样本以提升泛化。",
+      "研究挑战了传统直觉，为推理SFT中的响应选择提供了容量感知的指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
