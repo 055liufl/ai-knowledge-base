@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-047",
+  "title": "What the Reranker Sees: Multi-Aspect Page Annotation for Long-Document Multimodal Question Answering",
+  "source_url": "https://arxiv.org/abs/2608.14841",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对长文档多模态问答（VQA）中的重排序器证据选择瓶颈问题，提出了一种多维度页面标注方法。在包含文本、表格、图表和图片的数十至数百页文档中，传统的检索-读取流程中，重排序阶段的证据选择成为主要瓶颈。实验表明，在MMLongBench-Doc数据集上，BGE-M3的召回率（Recall@20）达到0.86，但F1@5仅为0.254，即使视觉检索器ColPali的F1@5也只有0.332，而仅依赖文本的重排序LLM表现更差。论文通过为页面添加多维度标注（如内容类型、结构信息、视觉元素描述等），增强重排序器对长文档中多模态信息的理解，从而提升证据选择的准确性。这一方法有望显著改善长文档问答系统的整体性能，对多模态信息检索和问答领域具有重要价值。",
+  "tags": [
+    "RAG",
+    "多模态",
+    "长文档",
+    "重排序",
+    "VQA"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:42:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长文档多模态问答中，重排序阶段的证据选择是主要瓶颈，而非检索召回率。",
+      "现有文本和视觉检索器在F1@5上表现不佳，表明需要更精细的页面级理解。",
+      "多维度页面标注方法有望增强重排序器对多模态内容的语义理解，提升证据选择质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

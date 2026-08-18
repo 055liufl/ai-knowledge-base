@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-055",
+  "title": "Skill Blocks: How Should an Agent Load Its Skill? A Caching-Correct Comparison of Pre-load, On-Demand Tool-Loading, Progressive Disclosure, and Hybrid",
+  "source_url": "https://arxiv.org/abs/2608.14943",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了AI代理在加载技能（skills）时的不同方法，旨在优化token使用效率。传统上，代理技能在每次请求时都会被完整注入，导致较高的token成本。论文比较了四种内容保留的加载方法：完整加载（Full）、技能块（Skill Block）、引用（Reference）和混合（Hybrid）。实验在多个基准测试（如SearchQA、SpreadsheetBench、ALFWorld、ScienceWorld和SynthProc）上进行，测量了单轮任务的原始输入token使用量，以及多轮任务的缓存校正有效输入token量。结果显示没有一种方法在所有场景中普遍最优，但混合方法在SearchQA上减少了27.4%的输入，在SpreadsheetBench上减少了39.8%的输入。这项研究对于优化LLM代理的上下文管理、降低推理成本具有重要意义，为代理设计提供了实证指导。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Token Optimization",
+    "Context Management"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:42:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "没有一种技能加载方法在所有任务中普遍最优，需要根据任务特性选择。",
+      "混合方法在特定任务中显著减少token输入，如SearchQA和SpreadsheetBench。",
+      "多轮任务中缓存校正的token使用量是评估加载方法的关键指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

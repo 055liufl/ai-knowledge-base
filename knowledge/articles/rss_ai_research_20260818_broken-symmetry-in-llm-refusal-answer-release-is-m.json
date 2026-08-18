@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-134",
+  "title": "Broken Symmetry in LLM Refusal: Answer Release Is More Local Than Refusal Restoration",
+  "source_url": "https://arxiv.org/abs/2608.15772",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大型语言模型（LLM）在拒绝回答提示时，其内部机制是真正擦除了正确答案的表示，还是仅在输出层抑制了答案。通过引入受控的“保留”（withhold）设置，研究者能够获得完全匹配的“回答”和“拒绝”轨迹，并利用双向激活修补（bidirectional activation patching）方法进行因果干预。研究发现，在匹配的因果干预下，存在一种因果不对称性：答案的释放（answer release）在局部干预中更容易被触发，而拒绝的恢复（refusal restoration）则更难实现。这一发现揭示了LLM拒绝机制中不同阶段的局部性差异，对理解模型内部表示和安全性调整具有重要意义。该研究为可解释性和模型对齐提供了新的视角，可能有助于改进拒绝机制的鲁棒性和可控性。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Safety",
+    "Causal Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:48:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM拒绝回答时，正确答案可能未被完全擦除，而是被抑制在输出层，这为干预提供了可能。",
+      "通过双向激活修补，发现答案释放比拒绝恢复更具局部性，表明干预的因果不对称性。",
+      "该研究为理解模型内部表示和安全性调整提供了新方法，有助于改进拒绝机制的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

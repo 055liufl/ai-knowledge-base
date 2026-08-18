@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-135",
+  "title": "KV-Rescue: Recovering Reasoning Language Model KV Eviction Loss via Stepwise Interleaving",
+  "source_url": "https://arxiv.org/abs/2608.15797",
+  "source_platform": "rss_ai_research",
+  "summary": "KV-Rescue 提出了一种针对长推理链中 KV 缓存驱逐（KV-cache eviction）导致的信息损失问题的解决方案。在长推理任务中，KV 缓存的内存占用巨大，而缓存驱逐虽能降低内存成本，却因模型只能基于部分历史解码而引入损失，严重时会导致输出退化（如重复或无意义内容）。作者将这种损失归因于“信息缺口”（信息缺失）而非“能力缺口”，并设计了一种逐步交错（stepwise interleaving）的恢复机制，在推理过程中动态调整缓存保留策略，以最小化信息损失并保持推理质量。该方法在多个长链推理基准上显著提升了模型在激进缓存预算下的准确性和稳定性，为高效长推理提供了实用方案。该研究对 LLM 推理优化和内存管理具有重要价值，尤其适用于资源受限环境下的部署。",
+  "tags": [
+    "KV-cache",
+    "推理优化",
+    "长上下文",
+    "LLM",
+    "内存管理"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:49:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV缓存驱逐的主要损失源于信息缺口而非模型能力不足，这为针对性优化提供了新视角。",
+      "逐步交错策略能有效缓解激进缓存预算下的性能退化，提升推理稳定性。",
+      "该方法在长推理链任务上显著提升了准确率，同时保持内存效率，适合资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

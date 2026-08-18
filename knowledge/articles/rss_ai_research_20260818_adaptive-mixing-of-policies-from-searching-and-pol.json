@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-128",
+  "title": "Adaptive Mixing of Policies from Searching and Policies from Learning",
+  "source_url": "https://arxiv.org/abs/2608.15700",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 Flexer 的架构，旨在优化强化学习中搜索与学习策略的混合方式。传统方法在训练过程中通常以固定深度进行搜索（如蒙特卡洛树搜索），这可能导致计算开销过大。Flexer 的核心创新在于根据策略网络先验的质量动态调整搜索深度：当策略网络表现良好时，减少搜索深度；反之则增加。具体而言，Flexer 在每一步将神经网络输出的策略与搜索得到的策略进行自适应混合，从而在保证性能的同时显著降低计算成本。该研究针对强化学习中的搜索效率问题，提出了一种实用的解决方案，对于需要实时决策或资源受限的应用场景具有重要意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Search",
+    "Policy Distillation",
+    "Adaptive Mixing"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:48:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Flexer 通过动态调整搜索深度，根据策略网络先验质量平衡计算开销与性能。",
+      "该方法将神经网络策略与搜索策略进行自适应混合，提高了训练效率。",
+      "适用于计算资源受限或需要快速决策的强化学习场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

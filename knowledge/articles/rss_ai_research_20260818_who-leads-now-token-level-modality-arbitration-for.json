@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-114",
+  "title": "Who Leads Now? Token-Level Modality Arbitration for Chart-to-Code Generation",
+  "source_url": "https://arxiv.org/abs/2608.15510",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MoCA（Mixture of Chart-to-Code Arbitration）的新方法，用于解决图表到代码生成任务。该任务要求模型读取图表的细粒度视觉细节，并生成可执行的代码来复现图表。现有方法要么分别训练视觉和编码能力，要么在图表到代码数据上微调，但将两种能力纠缠在一起，未能考虑两种能力的差异性以及联合优化时的干扰问题。MoCA通过令牌级别的模态仲裁机制，在生成过程中动态决定每个令牌应依赖视觉信息还是代码上下文，从而有效协调视觉理解和代码生成两种能力。该方法在图表到代码生成任务上展示了显著的性能提升，解决了多模态能力联合训练中的干扰问题。该研究对于多模态学习和代码生成领域具有重要价值，为处理需要多种能力协同的复杂任务提供了新思路。",
+  "tags": [
+    "Chart-to-Code",
+    "Multimodal",
+    "Token-Level Arbitration",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:47:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有图表到代码生成方法未考虑视觉与编码能力的差异性，导致联合优化时产生干扰。",
+      "MoCA通过令牌级别的模态仲裁，动态决定生成每个令牌时依赖的模态，有效协调两种能力。",
+      "该方法在图表到代码生成任务上取得显著性能提升，验证了模态仲裁机制的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

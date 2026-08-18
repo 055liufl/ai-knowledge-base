@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260818-076",
+  "title": "Anatomy of a Quantized Agent: VRAM Stability and Forecasting in Code-Synthesis Agentic Workloads",
+  "source_url": "https://arxiv.org/abs/2608.15117",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并实证验证了一个针对代码生成型智能体工作负载的峰值显存（VRAM）消耗分析模型。该模型将LLM推理过程中的显存占用分解为权重存储、KV缓存和激活值三个部分，并参数化为步数、工具调用次数和上下文扩展的函数。研究在严格限定的条件下进行：基于LangGraph的CUDA内核合成智能体（AgentK）、4比特量化系列（Q4 K M）、单个NVIDIA H100 GPU以及四个LLM骨干网络，共收集了1920条轨迹数据。该研究首次系统性地将智能体工作负载的显存动态进行分解和预测，为智能体系统的资源规划与优化提供了理论依据和实证基础。其价值在于帮助开发者理解在复杂智能体任务中显存消耗的规律，从而设计更稳定的推理系统，避免因显存溢出导致的失败。该工作对LLM推理优化和智能体工程实践具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "VRAM",
+    "Quantization",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:45:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显存消耗可分解为权重、KV缓存和激活值，且与步数和工具调用相关",
+      "4-bit量化下显存稳定性受上下文扩展影响显著",
+      "基于1920条轨迹的实证验证提供了可靠的预测模型",
+      "为智能体系统的资源规划提供了可操作的指导"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

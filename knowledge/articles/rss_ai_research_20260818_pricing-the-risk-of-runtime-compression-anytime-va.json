@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260818-136",
+  "title": "Pricing the Risk of Runtime Compression: Anytime-Valid Admission and a Served-Output Law for Compressed Serving State",
+  "source_url": "https://arxiv.org/abs/2608.15810",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对运行时压缩（Runtime Compression）在服务状态（Serving State）中的风险定价问题展开研究。当前系统在负载信号下自适应调整精度，但缺乏有定价的保证；而认证方法通过预先声明事件数量的联合界（union bound）来预算请求级风险，但该预算在生产环境中会在每个长请求上耗尽（100%的请求）。作者提出了一种随时有效（anytime-valid）且物理计账（physically accounted）的账本机制，其边界始终成立，从而替代了传统的联合界方法。该工作为压缩服务提供了严格的风险定价框架，具有理论创新性和实际应用价值，尤其适用于大规模AI服务中的资源优化与可靠性保障。",
+  "tags": [
+    "Runtime Compression",
+    "Serving State",
+    "Risk Pricing",
+    "Anytime-Valid",
+    "AI Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:49:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统联合界方法在长请求中风险预算耗尽，无法提供有效保证",
+      "提出的随时有效账本机制能持续维持风险边界，无需预声明事件数",
+      "该框架为压缩服务提供了可定价的风险管理，平衡质量与容量",
+      "对生产级AI服务的基础设施优化具有重要指导意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

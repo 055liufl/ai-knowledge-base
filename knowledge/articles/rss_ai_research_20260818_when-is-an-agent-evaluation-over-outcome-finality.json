@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-054",
+  "title": "When Is an Agent Evaluation Over? Outcome Finality and Cross-Unit Separation",
+  "source_url": "https://arxiv.org/abs/2608.14940",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了AI智能体评估中的一个关键问题：当前评估方法将运行结束时的可见状态作为最终结果，但这隐含了两个未必成立的前提条件——结果终结性（outcome finality）和跨单元分离（cross-unit separation）。结果终结性指延迟出现的结果可能改变最终标签，而跨单元分离指不同运行之间可能共享状态，导致评估结果相互干扰。作者指出这两个条件是独立的，并分析了它们对评估有效性的影响。该研究对于构建更可靠的智能体评估基准具有重要意义，尤其是在复杂任务中，最终结果可能延迟显现或运行间存在状态耦合的场景。文章为评估设计提供了理论框架，有助于研究者更严谨地设计实验和解读结果。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:42:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前智能体评估将运行结束时的状态视为最终结果，但忽略了结果可能延迟出现的情况，导致评估标签可能不准确。",
+      "跨单元分离问题指出，不同评估运行之间可能共享状态，从而破坏评估的独立性，影响结果的可比性。",
+      "结果终结性和跨单元分离是两个独立的条件，需要分别验证和满足，才能确保评估分数的有效性。",
+      "该研究为智能体评估设计提供了理论指导，有助于改进评估协议，提高基准测试的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

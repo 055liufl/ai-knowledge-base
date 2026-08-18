@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-037",
+  "title": "Beyond Pass@k: Measuring Reliability and Security of Agentic Code Generation",
+  "source_url": "https://arxiv.org/abs/2608.14711",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出当前AI编码智能体基准测试在应用Chen等人（2021）的pass@k估计器时存在操作化错误：将n设置为单个提交中的单元测试数量，而非独立尝试次数，混淆了测试套件规模与尝试独立性。作者通过反例证明该错误，并提出reliability@k作为正确应用的估计器（n=独立尝试次数），以更准确地衡量编码智能体的可靠性和安全性。该研究对AI编码智能体的评估方法具有重要修正意义，有助于推动更严谨的基准测试设计。",
+  "tags": [
+    "AI编码智能体",
+    "基准测试",
+    "pass@k",
+    "可靠性评估",
+    "代码生成"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:41:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前pass@k在编码智能体基准中的误用导致评估结果失真，需纠正为基于独立尝试次数的计算。",
+      "提出reliability@k作为正确应用pass@k的替代指标，以更准确反映模型可靠性。",
+      "通过反例证明现有操作化错误，为后续基准设计提供理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

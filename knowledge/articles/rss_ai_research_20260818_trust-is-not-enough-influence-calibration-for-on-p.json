@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-056",
+  "title": "Trust Is Not Enough: Influence Calibration for On-Policy Self-Distillation in Agentic RL",
+  "source_url": "https://arxiv.org/abs/2608.14945",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文针对智能体强化学习（Agentic RL）中的在线策略自蒸馏（On-Policy Self-Distillation, OPSD）方法提出了一种新的校准机制。OPSD 通过利用策略自身轨迹上的特权自教师模型提供密集的 token 级监督，以提升语言智能体的性能。然而，现有方法主要依据教师信任度（teacher trust）来分配监督权重，忽略了该信任度与当前策略目标之间的关联，导致所谓的“信任-效用不匹配”（trust-utility mismatch）。为此，作者提出了影响校准自蒸馏（Influence Calibration for Self-Distillation, ICSD）方法，对每个被监督的 token 进行影响校准，以更好地对齐监督信号与策略优化目标。该方法有望提高智能体强化学习的样本效率和策略性能，值得关注。",
+  "tags": [
+    "Agentic RL",
+    "Self-Distillation",
+    "Language Agents",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:42:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 OPSD 方法依赖教师信任度分配监督，但信任度与策略目标之间存在不匹配问题。",
+      "ICSD 通过影响校准机制，对每个 token 的监督信号进行重新加权，以提升策略优化效果。",
+      "该方法有望在智能体强化学习中实现更高效的样本利用和更优的策略性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

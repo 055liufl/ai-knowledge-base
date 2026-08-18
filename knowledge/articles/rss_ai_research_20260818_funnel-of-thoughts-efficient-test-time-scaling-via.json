@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260818-069",
+  "title": "Funnel of Thoughts: Efficient Test-Time Scaling via Early Voting and Rollout Pruning",
+  "source_url": "https://arxiv.org/abs/2608.15065",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“思维漏斗”（Funnel of Thoughts, FoT）的推理时扩展方法，旨在解决大型推理模型（LRMs）在多采样推理中的高成本问题。LRMs在重复查询同一问题时会产生多样且不一致的答案，因此多采样推理（如多数投票）是可靠部署的前提。然而，标准的多数投票方法在需要大量rollout（如32条轨迹）时计算成本过高。FoT通过早期投票和rollout剪枝策略，在推理过程中动态评估部分轨迹的置信度，提前终止低质量的rollout，从而在保持与全量多数投票相当准确率的同时，显著降低计算开销。该方法为推理时扩展提供了一种高效替代方案，尤其适用于对延迟和成本敏感的实际应用场景。该研究来自arXiv预印本，具有重要的实用价值，可能推动LRMs在更广泛场景中的部署。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Reasoning Models"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:44:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FoT通过早期投票机制在推理过程中动态评估轨迹质量，避免不必要的计算。",
+      "Rollout剪枝策略有效减少低质量轨迹的生成，降低推理成本。",
+      "该方法在保持准确率的同时，显著提升推理效率，适用于大规模部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

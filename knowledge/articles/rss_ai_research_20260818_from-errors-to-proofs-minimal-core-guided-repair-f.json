@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-040",
+  "title": "From Errors to Proofs: Minimal-Core-Guided Repair for Neuro-Symbolic Constraint Solving",
+  "source_url": "https://arxiv.org/abs/2608.14771",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于神经符号约束求解的新方法，称为最小核心引导修复。该方法针对语言模型将约束问题翻译为形式化规范时可能产生的不忠实翻译问题，即翻译后的程序虽然能运行但求解结果错误的情况。传统方法仅在翻译导致程序崩溃时进行修复，而忽略了运行但结果错误的场景。本文的方法通过识别求解器失败的最小核心（即导致矛盾的最小约束子集），引导语言模型进行针对性修复，从而提高翻译的准确性和求解的可靠性。这项工作结合了神经符号方法，利用语言模型的生成能力和符号求解器的精确性，为约束求解领域提供了一种新的鲁棒性改进策略。它值得关注，因为它解决了神经符号系统中的关键瓶颈——翻译的忠实性，并提出了一个可操作的修复框架，对AI推理和形式化方法的交叉研究具有重要价值。",
+  "tags": [
+    "Neuro-Symbolic",
+    "Constraint Solving",
+    "LLM",
+    "Formal Specification"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:41:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有修复方法仅处理崩溃情况，忽略了运行但结果错误的翻译，本文填补了这一空白。",
+      "最小核心引导修复通过定位矛盾的最小约束子集，实现更精准的修复。",
+      "该方法结合了语言模型的生成能力和符号求解器的精确性，提升了约束求解的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

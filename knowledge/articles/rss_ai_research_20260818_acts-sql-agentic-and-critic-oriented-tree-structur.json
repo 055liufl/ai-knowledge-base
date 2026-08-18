@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-080",
+  "title": "ACTS-SQL: Agentic and Critic-Oriented Tree-Structured SQL Correctness with Large Language Models",
+  "source_url": "https://arxiv.org/abs/2608.15145",
+  "source_platform": "rss_ai_research",
+  "summary": "ACTS-SQL 提出了一种基于智能体与批判性思维的树状结构 SQL 正确性框架，旨在解决大语言模型在 Text-to-SQL 任务中生成的 SQL 语句存在错误的问题。现有方法要么依赖大规模高质量训练数据，成本高昂；要么采用单路径智能体工作流，容易因早期错误而失败并导致错误传播。ACTS-SQL 通过构建树状搜索结构，结合多个智能体协作和批判性评估机制，在推理阶段动态探索和修正 SQL 语句，从而提升 SQL 生成的准确性和鲁棒性。该框架特别适用于工业级 Text-to-SQL 推理管道，能够在不依赖额外训练数据的情况下有效降低 SQL 错误率。该研究为 LLM 在数据库交互领域的实际应用提供了新的技术路径，具有较高的实用价值和创新性。",
+  "tags": [
+    "LLM",
+    "Text-to-SQL",
+    "Agent",
+    "SQL Correction"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:45:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 SQL 修正方法存在训练数据依赖重或单路径易错的问题，ACTS-SQL 通过树状结构结合多智能体协作来缓解。",
+      "批判性评估机制在 SQL 修正过程中起到关键作用，能够有效识别和纠正早期错误，防止错误传播。",
+      "该方法面向工业场景，无需额外训练数据，具有较高的实用性和部署可行性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

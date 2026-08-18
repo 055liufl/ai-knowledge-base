@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-120",
+  "title": "When Entropy Is Not Enough: Reclaiming Lost Semantics in LLM Output Length Prediction",
+  "source_url": "https://arxiv.org/abs/2608.15592",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）服务中的效率瓶颈问题，提出了一种改进的输出长度预测方法。在LLM推理过程中，序列通常需要填充到固定最大长度，这导致计算资源浪费和吞吐量下降。通过提前预测输出长度，可以实现长度感知调度，从而减少开销，尤其在长上下文推理和强化学习应用中优势明显。现有方法如熵引导的token池化，仅利用token级别的熵信息，忽略了更深层的语义结构，导致预测精度不足。论文提出在熵之外，通过挖掘丢失的语义信息来增强预测，从而更准确地估计输出长度。该研究对于优化LLM推理性能、降低成本具有重要意义，并为长度预测提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Length Prediction",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:48:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "输出长度预测是优化LLM服务效率的关键，可实现长度感知调度，减少填充开销。",
+      "现有熵引导方法仅利用token级信息，忽略了语义结构，导致预测不准确。",
+      "通过恢复丢失的语义信息，可以显著提升长度预测的精度，进而提高推理吞吐量。",
+      "该方法在长上下文和强化学习场景中尤其有效，具有广泛的应用前景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

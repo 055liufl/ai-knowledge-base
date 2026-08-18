@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-053",
+  "title": "Small Models Scout Bottleneck Order for Large-Model Data Control",
+  "source_url": "https://arxiv.org/abs/2608.14936",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为LogFloor的闭环控制器，用于优化大规模模型训练中的数据控制。研究基于一个核心观察：小规模代理模型（proxy models）的训练轨迹可以揭示大规模模型应解决技能瓶颈的顺序。作者将问题形式化为“首通技能训练”（first-passage skill training），其中每个被监控的技能都有一个目标下限，目标是最小化达到所有下限所需的token数量。LogFloor通过动态调整数据混合比例，按照小模型训练中发现的瓶颈顺序来引导大模型训练，从而提升训练效率。这项工作的重要性在于，它超越了传统的数据混合比例静态选择方法，利用小模型的动态训练信息来指导大模型的资源分配，可能显著减少训练成本并加速多技能学习。该研究为数据控制提供了新的视角，并可能对大规模模型训练实践产生实际影响。",
+  "tags": [
+    "LLM",
+    "Training",
+    "Data Control",
+    "Skill Bottleneck"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:42:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小模型训练轨迹可迁移到大模型，用于确定技能瓶颈的解决顺序。",
+      "LogFloor作为闭环控制器，动态调整数据混合以最小化训练token消耗。",
+      "该方法将数据控制问题形式化为首通技能训练，提供理论框架。",
+      "可能显著提升大规模模型训练效率，降低资源成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

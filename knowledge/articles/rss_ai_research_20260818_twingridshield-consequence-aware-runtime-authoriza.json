@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260818-102",
+  "title": "TwinGridShield: Consequence-Aware Runtime Authorization for LLM Grid-Agent Actions",
+  "source_url": "https://arxiv.org/abs/2608.15391",
+  "source_platform": "rss_ai_research",
+  "summary": "TwinGridShield 是一个面向 LLM 辅助能源管理工具的运行时授权层，旨在解决自然语言生成的电网命令在物理上不可行的问题。该论文指出，大语言模型可以将自然语言上下文转换为结构化的电网命令，但语法正确性并不保证物理可行性。TwinGridShield 作为模型无关的中间层，在每次动作执行前，在确定性网络孪生环境中评估其影响，检查连通性、支路潮流、发电机和减载等约束条件。该原型通过物理仿真验证动作的合理性，从而防止 LLM 生成的危险或无效操作。这项研究填补了 LLM 在关键基础设施（如电网）应用中安全性的空白，具有重要的实际意义，尤其对于能源管理和工业自动化领域。其创新点在于将运行时验证与物理仿真结合，为 LLM 在安全关键场景中的部署提供了新思路。",
+  "tags": [
+    "LLM",
+    "Runtime Authorization",
+    "Energy Management",
+    "Safety",
+    "Grid"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:46:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的命令需要物理验证，而不仅仅是语法检查。",
+      "TwinGridShield 使用网络孪生进行运行时授权，确保动作的物理可行性。",
+      "该方法是模型无关的，可适用于不同的 LLM 后端。",
+      "研究强调了 LLM 在关键基础设施中安全部署的重要性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

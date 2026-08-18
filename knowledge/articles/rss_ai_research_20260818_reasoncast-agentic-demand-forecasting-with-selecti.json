@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260818-089",
+  "title": "ReasonCast: Agentic Demand Forecasting with Selective Semantic Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.15291",
+  "source_platform": "rss_ai_research",
+  "summary": "ReasonCast 是一种面向需求预测的智能体框架，其核心创新在于选择性语义推理机制。该研究指出，传统文本增强预测方法将促销、节假日、价格变动等未来事件信息编码为通用表示，并与时间序列特征统一融合，未能明确区分哪些语义信息对特定预测任务真正有用。ReasonCast 通过智能体（Agent）动态评估外部文本的语义相关性，仅选择对当前预测场景有显著影响的语义片段进行推理，从而避免噪声干扰并提升预测精度。该工作结合了大型语言模型（LLM）的语义理解能力与传统时间序列模型的数值建模优势，为需求预测领域提供了一种更精细的上下文利用方式。其价值在于：一方面，它推动了预测模型从“被动融合文本”向“主动选择语义”的范式转变；另一方面，它展示了智能体在时间序列任务中的实用潜力，为后续研究提供了可复现的框架设计思路。该论文发表于 arXiv，属于应用研究范畴，对零售、供应链等依赖精准预测的行业具有直接参考意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Demand Forecasting",
+    "Time Series",
+    "Semantic Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:46:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "选择性语义推理机制能显著减少无关文本对预测的干扰，提升模型鲁棒性。",
+      "智能体框架有效桥接了外部知识（如促销事件）与历史数值模式，实现更精准的需求预测。",
+      "该研究为文本增强时间序列预测提供了新范式，即从统一融合转向主动筛选。",
+      "实验表明，在包含复杂事件场景的数据集上，ReasonCast 优于传统融合方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

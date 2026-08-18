@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260818-003",
+  "title": "AI-Generated GitHub Copilot “Autofix” Allowed Compromise of Snowflake&#x27;s Jira",
+  "source_url": "https://www.wiz.io/blog/red-agent-snowflake-copilot-cicd-bug",
+  "source_platform": "rss_general_tech",
+  "summary": "本文由Wiz研究团队发布，揭示了一个由AI生成的GitHub Copilot“自动修复”功能引发的安全漏洞，该漏洞导致攻击者能够入侵Snowflake的Jira系统。文章详细描述了攻击路径：攻击者利用Copilot自动生成的代码修复建议，这些建议看似合理但包含安全缺陷，从而在CI/CD流程中植入恶意代码，最终获得对Snowflake内部Jira实例的未授权访问。这一事件凸显了AI辅助编程工具在提高开发效率的同时，也可能引入新的安全风险，尤其是当开发者过度信任AI生成的代码而未进行充分审查时。文章还讨论了此类攻击的普遍性，并提出了缓解措施，如加强代码审查、实施安全扫描和限制AI生成代码的权限。该内容对AI安全、DevSecOps和供应链安全领域具有重要警示意义，值得开发者和安全研究人员密切关注。",
+  "tags": [
+    "AI Security",
+    "GitHub Copilot",
+    "CI/CD",
+    "Supply Chain",
+    "DevSecOps"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:23Z",
+  "collected_at": "2026-08-18T08:37:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI生成的代码修复建议可能引入隐蔽的安全漏洞，成为攻击者的利用入口。",
+      "CI/CD流程中的自动修复功能若缺乏严格审查，可被利用进行供应链攻击。",
+      "开发者需对AI辅助生成的代码保持警惕，实施多层次的代码审查和安全验证。",
+      "该案例展示了AI安全的新挑战，强调了在AI工具链中集成安全检测的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

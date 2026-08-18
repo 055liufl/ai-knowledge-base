@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260818-024",
+  "title": "Learning Agent Execution for KV-Cache Management in Agentic Serving",
+  "source_url": "https://arxiv.org/abs/2608.14624",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多智能体 LLM 服务场景的 KV 缓存管理方法，通过学习智能体的执行模式来优化缓存复用。在多智能体系统中，每个用户请求被分解为一系列专用智能体的执行序列，每个智能体反复执行包含系统提示、工具定义和少量示例的固定上下文，这为 KV 缓存复用创造了巨大机会。然而，现有 LLM 服务系统仅通过前缀缓存被动管理 KV 缓存，未能充分利用这些可预测的执行模式。该研究旨在通过主动学习智能体的执行流程，预测缓存需求并优化缓存分配，从而提升服务吞吐量、降低延迟并减少计算资源浪费。这项工作对于大规模 AI 服务的部署效率具有重要意义，尤其是在多智能体协作日益普及的背景下，为 LLM 推理基础设施的优化提供了新思路。",
+  "tags": [
+    "LLM",
+    "KV-Cache",
+    "Multi-Agent",
+    "Serving System"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:40:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体工作流中的固定上下文重复执行为 KV 缓存复用提供了显著机会，但现有系统仅依赖被动前缀缓存。",
+      "通过学习智能体执行模式，可以主动预测缓存需求，实现更高效的缓存管理和资源利用。",
+      "该方法有望显著提升多智能体 LLM 服务的吞吐量和响应速度，降低运营成本。",
+      "研究填补了 LLM 推理基础设施中针对多智能体场景的缓存优化空白，具有较强的前瞻性和实用性。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

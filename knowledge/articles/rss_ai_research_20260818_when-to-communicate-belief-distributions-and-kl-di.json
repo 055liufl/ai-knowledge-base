@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260818-004",
+  "title": "When to Communicate: Belief Distributions and KL Divergence for Principled Gating in Multi-Agent RL",
+  "source_url": "https://arxiv.org/abs/2608.14559",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种在多智能体强化学习（MARL）中基于KL散度进行通信门控的新方法。传统方法要么在每个时间步都通信，要么通过REINFORCE策略梯度学习二元门控，后者存在高方差、不稳定且不可解释的问题。作者提出了一种原则性替代方案：智能体仅在其信念分布与KL散度之间的差异超过某个阈值时进行通信。这种方法旨在提高通信效率，同时保持决策的稳定性和可解释性。该研究对于多智能体系统中的通信策略设计具有重要价值，特别是在需要平衡通信成本与协作性能的场景中。论文通过理论分析和实验验证，展示了该方法在减少通信频率的同时保持或提升任务性能的潜力。",
+  "tags": [
+    "Multi-Agent RL",
+    "Communication",
+    "KL Divergence",
+    "Gating"
+  ],
+  "author": null,
+  "published_at": "2026-08-18T08:36:26Z",
+  "collected_at": "2026-08-18T08:39:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于KL散度的通信门控提供了一种比REINFORCE更稳定、可解释的通信决策机制",
+      "通过信念分布差异触发通信，能有效减少不必要的通信开销，提升效率",
+      "该方法为多智能体通信策略设计提供了新的理论视角，有望推动相关领域研究"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
