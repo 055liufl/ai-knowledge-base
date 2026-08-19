@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-116",
+  "title": "Learning What Not to Learn: Adversarial Disentangled Prompt Tuning for Robust Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2608.17306",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“对抗解耦提示调优”（Adversarial Disentangled Prompt Tuning）的新方法，旨在解决视觉-语言模型（如CLIP）在对抗性提示调优过程中出现的鲁棒泛化过拟合问题。研究发现，现有的对抗性提示调优方法虽然能高效提升模型对已知类别的鲁棒性，但会导致模型在训练过程中过度学习伪鲁棒特征（即不可泛化的捷径），从而在面对未知类别的对抗样本时性能迅速下降。为此，作者提出通过解耦学习机制，将可泛化的鲁棒特征与伪鲁棒特征分离，使模型在学习对抗鲁棒性的同时保持对未知类别的泛化能力。该方法在多个基准数据集上进行了验证，显著提升了模型在未知类别上的对抗鲁棒性，同时保持了已知类别的性能。这项工作为鲁棒视觉-语言模型的研究提供了新视角，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "Vision-Language Models",
+    "Adversarial Robustness",
+    "Prompt Tuning",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:46:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有对抗性提示调优方法会加剧鲁棒泛化过拟合，导致未知类别性能快速下降。",
+      "模型倾向于学习伪鲁棒特征（非泛化捷径），这是性能退化的主要原因。",
+      "通过解耦学习可分离可泛化与伪鲁棒特征，从而提升未知类别的对抗鲁棒性。",
+      "该方法在多个基准上验证了有效性，为鲁棒视觉-语言模型提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

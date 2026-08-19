@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-144",
+  "title": "What Aggregate Scores Miss: Measuring Item-Level Regressions in Commercial LLM API Migrations",
+  "source_url": "https://arxiv.org/abs/2608.17719",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究商业大语言模型API迁移过程中，依赖聚合基准分数（如平均分）可能掩盖的逐项回归问题。作者以GPT-5.4到GPT-5.6 Sol产品序列中的三次成对升级为例，对900个公开测试项进行查询，对比聚合分数与逐项表现。研究发现，聚合分数可能显示整体性能提升，但实际存在大量逐项性能下降（即回归），这些回归在聚合指标中被平均化而不可见。该研究对依赖LLM API的软件系统迁移决策具有重要警示意义，强调了评估模型升级时需关注细粒度行为变化，而非仅依赖单一分数。",
+  "tags": [
+    "LLM",
+    "API迁移",
+    "模型评估",
+    "回归测试"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:48:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "聚合基准分数会掩盖逐项性能回归，导致迁移决策失误",
+      "在GPT-5.4到GPT-5.6的升级中，存在大量逐项回归现象",
+      "评估模型升级时应采用细粒度、逐项的分析方法",
+      "该研究为LLM API迁移提供了更可靠的评估框架"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

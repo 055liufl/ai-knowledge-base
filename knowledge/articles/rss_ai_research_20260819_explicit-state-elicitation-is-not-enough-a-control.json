@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260819-016",
+  "title": "Explicit State Elicitation Is Not Enough: A Controlled Audit of Memory-Policy Classification",
+  "source_url": "https://arxiv.org/abs/2608.17247",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对个性化智能体的记忆策略分类的审计协议。在个性化智能体中，系统需要决定检索到的用户记忆是否应被使用、忽略、更新或查询，以影响当前任务。作者开发了一个经验性审计协议，用于结构化中间输出：首先审计数据集捷径，然后隔离捆绑的提示更改，检查中间标签是否与答案相关联，测试分解的语义证据，并审计提供者级别的执行失败。该研究基于480个示例进行了受控审计，揭示了显式状态引导（即要求模型明确输出记忆策略）并不足以确保正确分类，因为模型可能依赖数据捷径或执行失败。这项工作为评估和提升个性化智能体的记忆管理能力提供了方法论贡献，强调了审计中间输出和隔离变量在模型评估中的重要性。",
+  "tags": [
+    "AI Agent",
+    "Memory Management",
+    "Model Evaluation",
+    "Audit Protocol"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:40:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式状态引导不足以确保记忆策略分类的准确性，需审计数据捷径和执行失败。",
+      "提出了一个五步审计协议，用于系统评估结构化中间输出。",
+      "基于480个示例的受控实验揭示了模型依赖非语义线索的风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

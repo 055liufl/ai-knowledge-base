@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260819-068",
+  "title": "The Working Set of a Coding Agent: Coherence Debt in Repository-Scale Tasks",
+  "source_url": "https://arxiv.org/abs/2608.16630",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对仓库级编码任务中智能体上下文管理的新模型，将任务建模为耦合事实图的重构过程。在每个编辑步骤中，所需事实要么来自最近的上下文，要么来自参数化记忆，而两者均未覆盖的事实则构成“一致性债务”。作者通过七个模型和五个工具框架，分别提供或屏蔽上下文与记忆通道，并注入故障进行实验。结果表明，没有模型能在所有条件下保持完全一致，且一致性债务随仓库规模增长而显著增加。该研究为评估和改进编码智能体的长程一致性提供了量化框架，对构建更可靠的自动化编程工具具有重要指导意义。",
+  "tags": [
+    "Coding Agent",
+    "Context Window",
+    "Coherence Debt",
+    "Repository-Scale",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:43:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "一致性债务模型将编码智能体的失败归因于上下文与记忆覆盖不足，提供了可量化的评估指标。",
+      "实验覆盖多模型多框架，揭示了不同模型在长程任务中的一致性差异，为选择基础模型提供参考。",
+      "通过控制上下文和记忆通道，论文展示了两种信息源对维持仓库级一致性的互补作用。",
+      "该框架可指导未来设计更高效的长上下文管理策略，减少编码智能体的错误累积。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-002",
+  "title": "Runtime Governance for Agentic AI: Action-Boundary Control with Trusted Provenance and Fail-Closed Execution",
+  "source_url": "https://arxiv.org/abs/2608.16891",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Aegis 的运行时治理系统，用于解决智能体 AI（Agentic AI）在执行工具操作时可能产生的安全风险。随着 AI 系统从单纯生成文本转向执行实际动作（如修改文件、发送消息、启动任务或改变工作流状态），安全问题从有害文本生成转变为有害的操作副作用。传统的提示词级治理只能影响模型行为，无法形成真正的执行边界。Aegis 将模型输出视为动作提案，并通过可信决策层进行中介，从而在运行时强制执行边界。该系统强调可信来源（trusted provenance）和失败关闭（fail-closed）执行机制，确保在不确定或异常情况下系统默认拒绝执行，以最大程度降低风险。这一研究对于构建安全可靠的智能体系统具有重要价值，尤其是在自动化程度不断提高的背景下，为运行时治理提供了新的技术路径。",
+  "tags": [
+    "Agentic AI",
+    "Runtime Governance",
+    "Safety",
+    "Tool Use",
+    "Fail-Closed"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:39:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体 AI 的安全问题从文本生成转向操作副作用，需要运行时执行边界而非仅提示词治理。",
+      "Aegis 系统通过将模型输出视为动作提案并经过可信决策层，实现动作边界的强制控制。",
+      "可信来源和失败关闭执行机制是确保系统在异常情况下安全降级的关键设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

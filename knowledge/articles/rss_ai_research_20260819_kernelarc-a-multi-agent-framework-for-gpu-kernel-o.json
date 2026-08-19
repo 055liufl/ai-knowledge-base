@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-009",
+  "title": "KernelArc: A Multi-Agent Framework for GPU Kernel Optimization",
+  "source_url": "https://arxiv.org/abs/2608.17071",
+  "source_platform": "rss_ai_research",
+  "summary": "KernelArc 是一个面向 GPU 内核优化的多智能体框架，旨在通过并行策略专用智能体实现异构工作负载的自主优化。该框架采用结论共享内存、确定性基准守卫和只读跨智能体状态，并引入平台触发的草稿机制，以提升优化效率与稳定性。作者在 NVIDIA H100 和 B200 GPU 上使用 SOL-ExecBench 工作负载进行了评估，但摘要中未提供具体性能数据。该工作结合了多智能体协作、GPU 内核优化和自动化基准测试，对高性能计算和 AI 基础设施领域具有潜在价值，尤其适合需要自动化代码优化的开发者和研究者。",
+  "tags": [
+    "GPU",
+    "Multi-Agent",
+    "Kernel Optimization",
+    "HPC"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:39:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过策略专用智能体并行协作，实现 GPU 内核优化的自动化，减少人工调优成本。",
+      "结论共享内存和只读跨智能体状态设计，平衡了智能体间的信息共享与隔离，避免冲突。",
+      "确定性基准守卫和平台触发草稿机制，增强了优化过程的可靠性和适应性。",
+      "在 H100 和 B200 等先进 GPU 上的评估，展示了框架对现代硬件工作负载的适用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

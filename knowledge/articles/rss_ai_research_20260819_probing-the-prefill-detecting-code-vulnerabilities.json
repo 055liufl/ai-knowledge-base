@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-083",
+  "title": "Probing the Prefill: Detecting Code Vulnerabilities via Latent Activations",
+  "source_url": "https://arxiv.org/abs/2608.16970",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了一种通过分析大语言模型（LLM）在处理代码时的潜在激活（latent activations）来检测代码漏洞的新方法。传统防御手段（如静态分析器、微调分类器或LLM评判器）通常是在代码生成完成后进行事后筛查，忽略了模型内部状态。该研究提出，当LLM读取C/C++代码作为上下文时，其隐藏激活可能已经包含关于代码漏洞的信号。通过直接测量这些激活，可以在生成前或生成过程中提前识别潜在漏洞，从而提升代码安全检测的实时性和准确性。这项工作为代码安全领域提供了新的视角，可能推动更主动的防御机制发展，并具有在关键任务管道中应用的潜力。",
+  "tags": [
+    "LLM",
+    "Code Security",
+    "Vulnerability Detection",
+    "Latent Activations"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:44:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM的内部激活可提前反映代码漏洞信号，无需依赖事后分析。",
+      "该方法可能实现更实时的漏洞检测，优于传统静态分析。",
+      "研究聚焦于C/C++代码，但方法可能扩展至其他语言。",
+      "潜在应用包括在代码生成过程中动态干预，提高安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-089",
+  "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+  "source_url": "https://arxiv.org/abs/2608.17050",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“跨模型记忆迁移”的新方法，通过目标侧阅读器适配（Target-Side Reader Adaptation）实现知识在大型语言模型间的有效转移。传统方法分为非参数检索（如RAG）和参数微调（如LoRA），前者引入延迟和上下文开销，后者将知识与权重耦合，难以更新和迁移。该方法采用类似Engram的哈希记忆机制，作为中间路线，将知识编码为独立于模型权重的记忆单元，并通过目标侧阅读器适配层实现跨模型的知识读取与迁移。这种方法在推理时保持高效，同时支持知识的灵活更新、审计和跨模型复用，有望降低知识维护成本并提升模型可扩展性。论文通过实验验证了该方法在知识利用效率和迁移效果上的优势，为LLM知识管理提供了新思路。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Knowledge Transfer",
+    "Model Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:44:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出一种介于非参数检索和参数微调之间的知识管理新范式，兼顾灵活性和效率。",
+      "通过目标侧阅读器适配，实现知识跨模型迁移，降低重复训练成本。",
+      "哈希记忆机制支持知识的可审计性和可更新性，增强模型透明度。",
+      "实验证明该方法在知识利用和迁移性能上优于传统方法，具有实用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

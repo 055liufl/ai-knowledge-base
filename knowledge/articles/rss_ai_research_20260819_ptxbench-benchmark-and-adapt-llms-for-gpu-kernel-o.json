@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-123",
+  "title": "PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX",
+  "source_url": "https://arxiv.org/abs/2608.17379",
+  "source_platform": "rss_ai_research",
+  "summary": "PTXBench 是一个用于评估和适配大语言模型（LLM）以利用架构特定 PTX（并行线程执行）指令进行 GPU 内核优化的基准测试。该基准测试在 H100 和 B200 GPU 上，针对 GEMM（通用矩阵乘法）和注意力（attention）工作负载，衡量功能正确性、目标指令是否在运行时执行以及相对于前沿库的加速比。评估结果显示，架构特定 PTX 的能力分布不均，成功率低于预期，这表明 LLM 在底层硬件优化方面仍有显著提升空间。PTXBench 为研究社区提供了一个标准化的评估平台，有助于推动 LLM 在 GPU 内核优化领域的应用，并促进硬件感知的代码生成模型的发展。",
+  "tags": [
+    "LLM",
+    "GPU",
+    "PTX",
+    "Benchmark",
+    "Kernel Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:46:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTXBench 是首个专门针对架构特定 PTX 指令的 LLM 基准测试，填补了现有评估体系的空白。",
+      "LLM 在生成可执行且高效的 PTX 代码方面能力不均，成功率较低，表明需要更专业的训练或适配方法。",
+      "该基准测试覆盖了 H100 和 B200 等最新 GPU 架构，为硬件感知的代码生成研究提供了重要参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

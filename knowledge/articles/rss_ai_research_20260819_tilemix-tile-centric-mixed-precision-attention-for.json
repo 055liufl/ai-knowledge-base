@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-025",
+  "title": "TileMix: Tile-Centric Mixed-Precision Attention for LLM Inference Acceleration",
+  "source_url": "https://arxiv.org/abs/2608.17336",
+  "source_platform": "rss_ai_research",
+  "summary": "TileMix 是一种面向大语言模型（LLM）推理加速的、以 tile 为中心的混合精度注意力机制。在长上下文预填充阶段，密集自注意力需要计算二次方的查询-键分数，导致巨大的计算量和内存流量。现有方法要么使用统一的低精度路径，要么选择性地处理 token 交互，但都未能在融合的密集注意力中，针对硬件对齐的分数 tile 进行空间精度路由。TileMix 通过引入一个以 tile 为中心的精度路由内核，将数值精度作为可调维度，从而在保持模型质量的同时显著提升推理速度。该工作针对 LLM 推理中的关键瓶颈，提出了创新的硬件-软件协同设计思路，对于需要处理超长上下文的实际应用具有重要价值。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Mixed-Precision",
+    "Inference Acceleration",
+    "Kernel"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:40:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TileMix 首次在融合的密集注意力中引入基于硬件对齐 tile 的空间精度路由，突破了传统统一低精度或 token 选择的局限。",
+      "通过 tile 级别的精度分配，TileMix 在保持模型精度的同时，显著降低了长上下文预填充阶段的计算和内存开销。",
+      "该工作展示了硬件感知的精度路由在 LLM 推理加速中的巨大潜力，为未来高效注意力机制设计提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

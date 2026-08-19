@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260819-001",
+  "title": "GxP-Agent: Process-DAG Topology for Reliable Clinical Trial Programming with LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.16890",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 GxP-Agent 的多智能体系统，旨在解决临床试验编程中的可靠性问题。临床试验编程是将研究方案转换为符合 CDISC 标准的分析就绪数据集的关键步骤，但现有 LLM 代码生成在此任务上表现不佳：在 11 次单次尝试中，五种前沿模型均未能生成有效的受试者级分析数据集。GxP-Agent 通过将监管流程顺序编码为有向无环图（DAG）拓扑，来引导 LLM 代理执行编程任务，从而确保流程的合规性和可靠性。该系统值得关注，因为它针对的是医疗监管领域的特定痛点，展示了如何将领域知识（如流程 DAG）与 LLM 代理结合，以提高生成代码的准确性和可验证性。该研究对 LLM 在专业、高可靠性场景中的应用具有重要启示，尤其是在需要严格合规的行业。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "DAG",
+    "Clinical Trial",
+    "CDISC"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:39:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 在临床试验编程任务上表现极差，五种前沿模型均无法生成有效数据集，凸显了专业领域生成任务的挑战。",
+      "GxP-Agent 通过将监管流程编码为 DAG 拓扑，为多智能体系统提供结构化指导，显著提升了任务可靠性。",
+      "该方法展示了将领域知识（如流程顺序）与 LLM 代理结合的有效性，为其他高合规性行业（如金融、法律）提供了可借鉴的范式。",
+      "研究强调了在 LLM 应用中引入过程验证和拓扑约束的重要性，而非仅依赖模型输出。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

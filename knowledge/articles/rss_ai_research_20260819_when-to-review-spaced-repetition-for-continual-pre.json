@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260819-037",
+  "title": "When to Review: Spaced Repetition for Continual Pre-Training of Language Models",
+  "source_url": "https://arxiv.org/abs/2608.17530",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于间隔重复（spaced repetition）的自适应复习调度方法，用于大语言模型的持续预训练。传统回放方法通常采用全局固定的新旧数据混合比例并均匀采样，忽略了不同样本被遗忘速度的差异。作者将持续预训练形式化为自适应复习调度问题，训练循环不仅决定回放多少历史数据，还决定每一步应返回哪些样本。该方法通过动态调整样本的复习频率，优先复习那些更容易被遗忘的旧知识，从而在获取新信息的同时更有效地保留旧知识。这项工作为持续学习提供了新的视角，将认知科学中的间隔重复原理引入模型训练，有望提升模型在动态数据环境下的稳定性和适应性。",
+  "tags": [
+    "LLM",
+    "Continual Learning",
+    "Spaced Repetition",
+    "Pre-training"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:41:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有回放方法忽略样本遗忘速度差异，均匀采样效率低，自适应调度可提升知识保留。",
+      "间隔重复原理可有效应用于模型训练，动态决定复习时机和频率。",
+      "该方法为持续预训练提供新框架，平衡新知识获取与旧知识保持。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-040",
+  "title": "MoNe: Modular Neural Memory for Efficient Long Context Inference",
+  "source_url": "https://arxiv.org/abs/2608.17616",
+  "source_platform": "rss_ai_research",
+  "summary": "MoNe是一种轻量级模块化神经记忆系统，可附加到任何冻结的预训练Transformer上，无需重新训练即可实现长上下文推理。它通过测试时学习快速权重神经记忆网络，以固定大小分段读取上下文，并使用层局部梯度更新；推理时，记忆仅从查询令牌生成键和值，无需重新读取上下文令牌。这种两阶段设计将推理与上下文处理解耦，显著提高了长上下文场景下的效率。该研究针对大语言模型推理中的上下文长度限制问题，提出了一种创新的记忆增强方案，具有较高的实用价值，尤其适合需要处理超长文档或对话的应用场景。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Long Context",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:41:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoNe通过模块化神经记忆实现长上下文推理，无需重新训练模型，降低了部署成本。",
+      "测试时学习机制使模型能够动态适应新上下文，增强了模型的灵活性和泛化能力。",
+      "两阶段设计（上下文编码与推理生成）有效解耦了计算，提升了推理效率。",
+      "该方法适用于任何冻结的Transformer，具有广泛的兼容性和实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

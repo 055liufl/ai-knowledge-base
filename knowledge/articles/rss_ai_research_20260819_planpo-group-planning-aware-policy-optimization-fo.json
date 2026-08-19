@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260819-020",
+  "title": "PlanPO: Group Planning-Aware Policy Optimization for Multi-Turn Agentic LLMs",
+  "source_url": "https://arxiv.org/abs/2608.17289",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 PlanPO 的新型策略优化方法，用于多轮智能体大语言模型（LLM）的训练。当前基于组相对策略优化的方法在处理多轮交互任务时，往往无法区分成功轨迹之间的优势，即使这些轨迹在交互效率上差异显著。例如，绕远路的成功轨迹与直接高效的轨迹被赋予相同的奖励，导致优势坍塌和性能下降。PlanPO 通过引入规划感知机制，在组内相对优化中显式考虑轨迹的规划质量（如步骤数、效率），从而更精细地分配优势，提升模型在多轮任务中的决策能力和效率。该方法针对智能体 LLM 的训练范式进行改进，具有重要的理论价值和实际应用潜力，尤其适用于需要多步推理和交互的复杂任务场景。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Agent",
+    "Multi-Turn"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:40:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有组相对策略优化方法在多轮任务中忽略轨迹效率差异，导致优势坍塌，PlanPO 通过规划感知解决此问题。",
+      "PlanPO 在奖励分配中引入规划质量指标，能更好地区分成功轨迹的优劣，提升训练稳定性和模型性能。",
+      "该方法适用于多轮智能体 LLM 的训练，有望提高复杂交互任务的决策效率和成功率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

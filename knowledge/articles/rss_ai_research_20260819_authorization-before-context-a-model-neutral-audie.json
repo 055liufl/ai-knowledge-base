@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260819-095",
+  "title": "Authorization Before Context: A Model-Neutral Audience Boundary Against Cross-Audience Memory Leakage in Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2608.17148",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对智能体系统中跨受众记忆泄漏问题的模型无关防御方法。在个人语言智能体中，模型可能从某一受众处学习到事实，并在后续为另一受众生成提示时无意中将其包含，这构成了记忆到上下文步骤的攻击面。该问题源于模糊或不一致的渠道、跨受众窥探以及被污染的记忆，可能导致系统组装出包含与当前查询相关但未授权给当前查看者的事实上下文。作者引入了“授权优先于上下文”的原则，通过一个单一、反单调的受众边界机制，在上下文组装之前强制执行授权检查，从而防止未经授权的信息泄漏。该方法不依赖于特定模型架构，具有通用性，为智能体系统的安全性和隐私保护提供了新的思路。该研究对于构建可信赖的AI系统具有重要意义，尤其是在多用户交互场景下，能够有效降低敏感信息泄露的风险。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Privacy",
+    "Memory Management"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:45:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体系统中的记忆到上下文步骤是跨受众信息泄漏的关键攻击面，现有方法缺乏系统性的授权检查。",
+      "提出的“授权优先于上下文”原则通过反单调的受众边界，在上下文组装前强制授权，有效防止未授权信息泄漏。",
+      "该方法为模型无关，可适用于多种智能体架构，为AI系统隐私保护提供了通用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

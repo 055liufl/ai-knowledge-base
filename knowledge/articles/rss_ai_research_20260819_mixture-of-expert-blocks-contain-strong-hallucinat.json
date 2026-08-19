@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260819-047",
+  "title": "Mixture-of-Expert Blocks Contain Strong Hallucination Detection Signals",
+  "source_url": "https://arxiv.org/abs/2608.17687",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种利用混合专家（Mixture-of-Experts, MoE）模型内部信号进行幻觉检测的新方法。传统检测方法多在答案或句子级别进行，难以定位具体幻觉片段，而本文聚焦于token级别的检测，通过分析MoE架构中专家模块的激活模式，发现其中蕴含强烈的幻觉检测信号。该方法无需额外训练，仅利用模型固有的内部状态即可实现高精度的幻觉定位，为细粒度干预（如实时纠正或屏蔽）提供了可能。这一发现不仅提升了LLM的可靠性，也为理解MoE内部机制提供了新视角，具有重要的理论价值和实际应用潜力。",
+  "tags": [
+    "LLM",
+    "MoE",
+    "Hallucination Detection"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:42:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE专家块的激活模式可作为token级幻觉检测的强信号，无需额外训练。",
+      "现有检测方法多限于句子级，本文填补了token级定位的空白，支持细粒度干预。",
+      "该方法利用模型内部状态，具有计算高效和可解释性强的优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260819-008",
+  "title": "DiSCO: Defending text-to-image generation through distribution-guided contrastive prompt optimization",
+  "source_url": "https://arxiv.org/abs/2608.17067",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为DiSCO的新型防御框架，旨在保护文本到图像（text-to-image）生成模型免受不安全内容（如NSFW）的生成，尤其是在面对红队对抗攻击时。与现有防御方法不同，DiSCO专注于黑盒场景，不依赖模型内部权重或文本编码器优化，而是通过分布引导的对比提示优化（distribution-guided contrastive prompt optimization）来调整输入提示，从而在保持生成图像质量的同时，有效过滤或中和有害内容。该方法具有可扩展性，适用于专有模型，解决了现有白盒防御方法无法应用于商业API的局限。论文通过实验验证了DiSCO在防御多种攻击下的有效性，并展示了其在安全性和生成质量之间的平衡。该研究对于提升生成式AI的安全性和可信度具有重要意义，尤其为黑盒环境下的内容安全提供了新思路。",
+  "tags": [
+    "text-to-image",
+    "safety",
+    "black-box defense",
+    "prompt optimization",
+    "adversarial robustness"
+  ],
+  "author": null,
+  "published_at": "2026-08-19T08:37:05Z",
+  "collected_at": "2026-08-19T08:39:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DiSCO是首个针对黑盒文本到图像模型的安全防御框架，通过分布引导的对比提示优化，无需访问模型内部即可抵御NSFW内容生成。",
+      "该方法在保持生成图像质量的同时，显著降低有害内容生成率，优于现有白盒防御方法，并适用于专有API。",
+      "DiSCO的分布引导机制能够自适应调整提示，有效应对红队攻击，为生成式AI安全提供了可扩展的解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
