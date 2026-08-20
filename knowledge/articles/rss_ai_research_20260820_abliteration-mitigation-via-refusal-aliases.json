@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-072",
+  "title": "Abliteration Mitigation via Refusal Aliases",
+  "source_url": "https://arxiv.org/abs/2608.18093",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型（LLM）中“去拒绝化”（abliteration）攻击的缓解方法。Abliteration通过将权重矩阵投影到与提取的拒绝方向正交的子空间，从而移除模型拒绝有害请求的能力，这已成为一种突出的安全威胁，仅需少量对比提示即可绕过对齐训练。现有防御措施通常忽视了abliteration的根本原因——即拒绝方向被轻易提取的可能性。为此，作者提出了一种基于“拒绝别名”（refusal aliases）的缓解策略，旨在增加提取拒绝方向的难度，从而增强模型的安全性。该研究对于提升LLM的鲁棒性和安全性具有重要意义，为防御此类攻击提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Abliteration",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:44:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有防御措施忽视了abliteration攻击的根本原因：拒绝方向容易被提取。",
+      "提出通过引入拒绝别名来干扰拒绝方向的提取，从而增强模型安全性。",
+      "该方法有望在不显著影响模型性能的前提下，提高对abliteration攻击的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

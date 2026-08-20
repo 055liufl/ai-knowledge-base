@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260820-107",
+  "title": "Task-Conditioned Least-Privilege Learning for Executable Terminal and MCP Agents",
+  "source_url": "https://arxiv.org/abs/2608.18351",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“任务条件最小权限学习”的方法，旨在解决工具使用型大语言模型（LLM）代理在执行任务时过度行使权限的问题。这类代理可能会执行用户未授权或任务不需要的操作，导致权限滥用错误。传统的权限门控系统仅用于验证代理环境，不足以应对此类问题。该研究通过后训练（post-training）方式，训练一个4B参数的模型，使其能够在可执行的终端和模型上下文协议（MCP）环境中，根据具体任务选择适当的权限范围，从而补充现有的权限控制机制。这项工作对于提升AI代理的安全性和可控性具有重要意义，尤其是在自动化操作和工具调用场景中，能够减少因权限过度而引发的安全风险。其创新点在于将权限选择与任务条件相结合，通过模型训练而非仅依赖外部系统来强化最小权限原则，为AI代理的安全部署提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "MCP",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:47:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统权限门控系统不足以防止LLM代理的权限过度使用，需要结合模型训练来强化最小权限原则。",
+      "通过后训练4B参数模型，可以使其在终端和MCP环境中根据任务动态选择权限，实现任务条件化的权限控制。",
+      "该方法补充了现有安全机制，为AI代理的安全部署提供了新路径，尤其适用于自动化操作场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

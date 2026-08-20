@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-116",
+  "title": "ERASE: EaRly bAckpropagation SchEdule for Faster Training of Modern Recommendation Systems",
+  "source_url": "https://arxiv.org/abs/2608.18469",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ERASE（EaRly bAckpropagation SchEdule）的训练调度方法，旨在加速现代推荐系统的训练过程。该方法针对轻量级代理模型在训练时加速器利用率不足的问题，通过重新解释Forward-Forward（FF）算法中的解耦机制，将其作为调度原语，实现前向传播和反向传播的重叠执行，从而填补计算间隙，提升硬件利用率。ERASE的核心创新在于打破传统训练中前向和反向传播作为不连续阶段的固定模式，允许反向传播提前开始，利用空闲计算资源。该方法有望显著缩短推荐系统的训练时间，同时保持模型质量，对大规模推荐系统的迭代开发具有重要价值。论文来自arXiv，属于交叉领域研究，结合了机器学习系统优化和推荐系统实践。",
+  "tags": [
+    "训练优化",
+    "推荐系统",
+    "调度算法",
+    "Forward-Forward",
+    "硬件利用率"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:47:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ERASE通过将前向和反向传播重叠调度，有效利用加速器空闲资源，提升训练效率。",
+      "重新诠释Forward-Forward的解耦机制为调度原语，为训练流程设计提供新视角。",
+      "该方法针对轻量级代理模型，可加速推荐系统的快速实验和迭代。",
+      "实验表明ERASE在保持模型质量的同时显著缩短训练时间，具有实用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

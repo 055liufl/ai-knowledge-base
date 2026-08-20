@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-118",
+  "title": "Partition the Support, Reconstruct the Residual: Training-Free Sparse Attention for Video Generation and World Models",
+  "source_url": "https://arxiv.org/abs/2608.18484",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种无需训练的稀疏注意力方法，用于加速视频生成和世界模型中的视频Transformer。作者指出，现有的训练无关块稀疏注意力虽然能加速计算，但仅依靠行级注意力集中度无法直接定义可执行的稀疏算子，因为共享块路由的查询可能具有重叠度很差的支撑集，且保留的注意力质量并不能决定跳过交互后的softmax误差。论文的核心贡献在于揭示了分区几何对池化支撑集和剩余残差可预测性的影响，并据此提出了一种新的稀疏注意力策略，通过优化分区来重构残差，从而在保持生成质量的同时显著提升推理速度。该方法适用于视频生成和世界模型等计算密集型任务，具有实际应用价值。",
+  "tags": [
+    "Sparse Attention",
+    "Video Generation",
+    "World Models",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:47:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "训练无关的块稀疏注意力需要显式定义稀疏算子，分区几何对支撑集和残差预测有决定性影响。",
+      "通过优化分区和重构残差，可以在不训练的情况下提升视频Transformer的推理效率。",
+      "该方法针对视频生成和世界模型场景，兼顾速度与质量，适合计算资源受限的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

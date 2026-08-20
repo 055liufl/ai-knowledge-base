@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-055",
+  "title": "Training-Free Inference-Time Self-Reflection and Cost-Bounded Early Stopping for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2608.18884",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 EvoResearcher 的训练无关推理时协议，旨在为大型语言模型（LLM）添加成本受限的自我反思能力。该协议无需对模型进行强化学习训练（如 GRPO），而是通过迭代的“生成-自我批判-修订”流程，在推理过程中动态优化输出，直到达到最大深度 D 或批判返回 CONFIRMED 信号。这种方法显著降低了训练成本，并适用于任何冻结的 LLM 骨干网络，为推理时自我改进提供了轻量级替代方案。其价值在于，它解决了强化学习训练成本高昂且依赖可控环境的问题，使模型能够在推理阶段自主提升推理质量，同时通过成本边界控制计算开销。该研究对推理效率、模型自我改进和实际部署具有重要启示，尤其适合资源受限场景或需要快速迭代的应用。",
+  "tags": [
+    "LLM",
+    "Inference-Time",
+    "Self-Reflection",
+    "Cost-Bounded",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:43:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EvoResearcher 通过训练无关的推理时自我反思，避免了昂贵的强化学习训练，降低了部署成本。",
+      "迭代生成-批判-修订机制结合成本边界，在提升输出质量的同时控制计算开销。",
+      "该方法适用于任意冻结的 LLM，具有广泛的兼容性和实用性。",
+      "CONFIRMED 信号作为早停条件，优化了推理效率，为动态推理策略提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

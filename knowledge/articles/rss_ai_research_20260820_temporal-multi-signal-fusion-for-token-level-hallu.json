@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-083",
+  "title": "Temporal Multi-Signal Fusion for Token-Level Hallucination Detection",
+  "source_url": "https://arxiv.org/abs/2608.18115",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种针对大语言模型（LLM）生成内容中幻觉检测的新方法。传统方法通常独立地基于单一信号（如模型置信度）对每个token进行评分，但在模型自信地犯错时容易失效。该论文将幻觉视为时间上连续的片段，并采用序列标注的方式进行检测。具体而言，每个token由一个33维的特征向量表示，该向量融合了文本统计特征、自然语言推理（NLI）蕴含关系以及语言模型惊异度（surprisal），且不依赖生成模型的内部访问。这种方法在概念上创新，将幻觉检测从逐点分类转变为序列标注，有望提高检测的鲁棒性和准确性。该研究对提升LLM的可靠性和安全性具有重要意义，尤其适用于需要高可信度的应用场景。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Sequence Labeling",
+    "NLI"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:45:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将幻觉检测视为时间扩展的序列标注问题，而非逐token独立评分，能更好地捕捉幻觉的连续性。",
+      "融合多种信号（文本统计、NLI、语言模型惊异度）构建33维特征，无需访问模型内部，提高了通用性和实用性。",
+      "该方法在模型自信地犯错时仍能有效检测，弥补了传统方法的不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

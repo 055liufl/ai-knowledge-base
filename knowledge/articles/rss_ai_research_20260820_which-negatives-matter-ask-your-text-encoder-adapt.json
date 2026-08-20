@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260820-036",
+  "title": "Which Negatives Matter? Ask Your Text Encoder: Adaptive Similarity Margins for Dense-Caption Retrieval",
+  "source_url": "https://arxiv.org/abs/2608.18521",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文针对密集字幕检索（dense-caption retrieval）任务中的对比学习优化问题进行了深入分析。作者指出，现有的方法在引入分割、边缘图、LLM过滤字幕和跨模态模块进行对比微调时，仍然沿用标准的InfoNCE损失函数，但在强预训练初始化下，该损失函数会过早饱和：在密集字幕数据上，80%的批次在第一个epoch内损失就降至10^{-3}以下，梯度甚至精确归零，导致模型无法有效学习。为此，论文提出了一种自适应相似度边际（adaptive similarity margins）的方法，根据文本编码器对负样本的区分能力动态调整边际，从而缓解饱和问题并提升检索性能。该研究揭示了对比学习中负样本选择的重要性，并为密集字幕检索提供了新的优化思路，具有较高的理论价值和实践意义。",
+  "tags": [
+    "dense-caption retrieval",
+    "contrastive learning",
+    "InfoNCE",
+    "adaptive margin",
+    "multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:42:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准InfoNCE在强预训练下会过早饱和，导致梯度消失，限制模型微调效果",
+      "自适应相似度边际能根据文本编码器对负样本的区分能力动态调整，缓解饱和问题",
+      "该方法为密集字幕检索提供了一种新的优化策略，可能推广到其他对比学习任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

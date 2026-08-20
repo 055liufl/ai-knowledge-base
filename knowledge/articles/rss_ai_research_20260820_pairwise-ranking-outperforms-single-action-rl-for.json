@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-037",
+  "title": "Pairwise Ranking Outperforms Single-Action RL for Offline Explanation Selection: A Practical Lesson",
+  "source_url": "https://arxiv.org/abs/2608.18531",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于离线解释选择的实用方法，将解释生成与选择分离，以降低工业级可解释推荐系统中基于LLM的推理成本。系统预先使用两种商用LLM和六种提示风格生成候选解释池，并在请求时通过轻量级CPU选择器进行挑选。作者发现，成对排序方法在离线选择任务中优于单动作强化学习（RL），并提供了实践教训。该研究针对LLM服务的高延迟和高成本问题，提出了一种无需额外GPU推理的优化方案，对推荐系统领域具有实际参考价值。",
+  "tags": [
+    "LLM",
+    "Recommendation System",
+    "Offline Learning",
+    "Pairwise Ranking"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:42:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将解释生成与选择分离可显著降低LLM推理成本，通过预生成候选池和轻量选择器实现。",
+      "成对排序方法在离线解释选择中优于单动作RL，表明相对比较信号更有效。",
+      "该方法适用于工业场景，无需额外GPU资源，仅依赖CPU即可完成实时选择。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

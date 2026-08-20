@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-024",
+  "title": "Cacheable by Design? Training Mixture-of-Experts Routers for Locality Against the Edge Memory-Bandwidth Wall: A Pre-Registered Negative Result with a Systems Measurement Study",
+  "source_url": "https://arxiv.org/abs/2608.18261",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对在边缘设备（如单张8GB GPU）上部署大规模混合专家（MoE）模型时遇到的内存带宽瓶颈问题进行了深入研究。作者以Qwen3-235B模型（Q4_K_M量化，134GB）为例，实测解码速度仅为0.44 token/s（热启动），与基于字节/令牌和带宽的理论模型吻合，验证了带宽墙的存在。论文提出了一种“可缓存性设计”思路，即通过训练MoE路由器以增强专家在边缘内存中的局部性，从而减少对慢速SSD的依赖。然而，作者通过预注册的负结果和系统测量研究，发现该方法并未带来预期的性能提升，揭示了在极端内存受限场景下，单纯优化路由器难以克服物理带宽限制。这项研究的重要性在于，它提供了对MoE边缘部署瓶颈的量化分析，并严谨地报告了负面结果，为后续研究指明了方向，即需要从模型架构、量化策略或硬件协同设计等多维度突破，而非仅依赖路由优化。该工作对边缘AI部署和高效推理系统设计具有参考价值。",
+  "tags": [
+    "MoE",
+    "边缘计算",
+    "内存带宽",
+    "系统优化",
+    "负结果"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:41:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在边缘设备上，MoE模型推理的瓶颈是内存带宽而非计算能力，实测解码速度与理论模型高度一致。",
+      "训练路由器以增强局部性的方法未能提升性能，表明在极端内存受限下，路由优化效果有限。",
+      "预注册的负结果和系统测量研究为领域提供了严谨的实证数据，有助于避免重复无效尝试。",
+      "未来需从架构设计、量化压缩或硬件协同等方向综合解决带宽墙问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

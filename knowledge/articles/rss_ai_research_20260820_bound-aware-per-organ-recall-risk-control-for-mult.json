@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-094",
+  "title": "Bound-Aware Per-Organ Recall Risk Control for Multi-Organ CT Segmentation under Clinical Domain Shift",
+  "source_url": "https://arxiv.org/abs/2608.18193",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对多器官CT分割模型在临床域转移下的召回率风险控制问题，提出了一种基于边界感知的逐器官召回率控制方法。作者使用AMOS数据集训练的nnU-Net模型，通过分布无关的风险控制框架为每个器官校准阈值，并在RAOS数据集上评估其迁移性能。研究发现，尽管AMOS上的控制通过，但迁移后12个器官中有7个的召回率超过了设定的α=0.10阈值，且较小的校准集可能因保守或空洞的阈值而掩盖超限问题。该工作强调了在临床部署中，模型性能的域转移风险需要逐器官级别的监控和重新认证，并提出了基于病例级体素假阴性率的本地重新认证成本估计方法。这项研究对于医学影像AI的临床落地具有重要的实践意义，为模型的安全性和可靠性提供了新的保障思路。",
+  "tags": [
+    "Medical Imaging",
+    "Domain Shift",
+    "Risk Control",
+    "Segmentation",
+    "nnU-Net"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:46:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分布无关的风险控制可为冻结的分割模型提供逐器官的召回率保证，但域转移下需重新评估。",
+      "AMOS训练的模型迁移到RAOS后，7/12器官的召回率超过α=0.10，表明域转移风险显著。",
+      "较小的校准集可能导致保守或空洞的阈值，从而掩盖召回率超限问题，需谨慎处理。",
+      "基于体素假阴性率的本地重新认证成本估计为临床部署提供了实用的监控手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

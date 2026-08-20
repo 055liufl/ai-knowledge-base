@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-046",
+  "title": "RTPO: Reverse-Turn Policy Optimization for Stabilizing Agentic RL Training",
+  "source_url": "https://arxiv.org/abs/2608.18682",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 RTPO（Reverse-Turn Policy Optimization）的新方法，旨在稳定多轮智能体强化学习（RL）的训练过程。在训练大型语言模型（LLM）执行复杂推理、使用外部工具和进行迭代搜索时，多轮 RL 虽然潜力巨大，但训练过程极不稳定，随着轮次增加常导致性能严重下降。作者通过理论分析，识别出三个紧密耦合的不稳定来源：展开（rollout）与训练之间的上下文分布偏移、奖励稀疏性以及策略更新中的梯度方差累积。RTPO 通过反向轮次策略优化，即从最终轮次开始反向优化策略，以缓解这些不稳定因素，从而提升多轮 RL 训练的稳定性和最终性能。该研究为智能体 RL 训练提供了新的理论视角和实用方法，对提升 LLM 在复杂任务中的自主决策能力具有重要意义。",
+  "tags": [
+    "RL",
+    "Agent",
+    "LLM",
+    "Training Stability"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:43:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多轮 RL 训练的不稳定性源于上下文分布偏移、奖励稀疏性和梯度方差累积的相互作用。",
+      "RTPO 通过反向轮次优化策略，有效缓解了这些不稳定因素，提高了训练稳定性。",
+      "该方法为智能体 RL 训练提供了新的理论框架，有望推动 LLM 在复杂多轮任务中的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

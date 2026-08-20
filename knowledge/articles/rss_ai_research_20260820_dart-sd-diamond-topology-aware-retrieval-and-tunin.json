@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-124",
+  "title": "DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents",
+  "source_url": "https://arxiv.org/abs/2608.18524",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为DART-SD的方法，旨在解决多轮工具调用智能体训练中的拓扑坍缩问题。传统方法依赖完整轨迹模仿，但对于包含多个顺序无关子目标的任务，最优解空间形成巨大的组合菱形格结构，强制将其压缩为单一轨迹会导致严重的拓扑坍缩，限制了智能体的泛化能力。DART-SD通过菱形拓扑感知的检索与自蒸馏机制，从解空间中提取多样化的轨迹片段进行训练，从而保留解空间的丰富结构。该方法有望提升LLM在多轮工具调用场景下的鲁棒性和效率，对自主智能体的发展具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool-Calling",
+    "Self-Distillation",
+    "Topology"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:48:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多轮工具调用任务中，顺序无关子目标导致解空间呈菱形格结构，传统轨迹模仿会引发拓扑坍缩。",
+      "DART-SD通过菱形拓扑感知的检索机制，从解空间提取多样化轨迹片段，避免信息丢失。",
+      "自蒸馏方法利用检索到的轨迹片段进行训练，增强模型对多路径解的泛化能力。",
+      "该方法为智能体训练提供了新的视角，可能显著提升复杂任务中的工具调用性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

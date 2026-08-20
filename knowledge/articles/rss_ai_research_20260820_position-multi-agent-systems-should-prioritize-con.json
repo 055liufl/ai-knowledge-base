@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260820-007",
+  "title": "Position: Multi-Agent Systems Should Prioritize Concurrency Control",
+  "source_url": "https://arxiv.org/abs/2608.18092",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇立场论文提出，基于大语言模型的多智能体系统（MAS）在扩展时往往可靠性下降，其根本原因常被归咎于协调或通信问题，但作者认为这些失败本质上属于并发控制问题。智能体并发读写共享状态，而LLM推理窗口较长，加剧了陈旧读取、丢失更新和结果不一致的风险。论文主张将并发控制作为MAS设计的核心优先事项，而非事后修补，并可能借鉴数据库系统中的经典并发控制机制（如锁、时间戳排序、乐观并发控制）来提升系统可靠性。该观点为MAS研究提供了新视角，将分布式系统与数据库的成熟理论引入LLM领域，具有理论创新性和实践指导意义。",
+  "tags": [
+    "Multi-Agent Systems",
+    "Concurrency Control",
+    "LLM",
+    "Distributed Systems"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:40:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MAS失败常源于并发控制问题，而非单纯的协调或通信问题。",
+      "LLM推理的长延迟放大了并发读写共享状态的风险。",
+      "应借鉴数据库并发控制机制来设计MAS，提升可靠性。",
+      "并发控制应作为MAS设计的一等公民，而非事后修补。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

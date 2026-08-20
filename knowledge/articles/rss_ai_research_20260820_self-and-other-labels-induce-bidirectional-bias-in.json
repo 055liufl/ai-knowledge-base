@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260820-071",
+  "title": "Self- and Other-Labels Induce Bidirectional Bias in LLM Judges",
+  "source_url": "https://arxiv.org/abs/2608.18091",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）作为裁判时存在的自我偏好（self-preference）问题，即模型倾向于偏爱自己生成的输出，这会影响评估的可靠性。以往研究主要基于生成文本，难以区分真正的自我偏好与风格特征、响应质量等混杂因素。作者通过改变评估对象（例如使用非生成性任务或控制变量）来分离这些因素，从而更精确地测量自我偏好。研究发现，LLM裁判不仅对自身输出有正向偏好，还对其他模型的输出存在双向偏差（bidirectional bias），即既可能高估也可能低估，具体取决于模型身份和任务类型。这一发现对LLM评估框架的设计具有重要警示意义，提示需要开发更公正的评估协议，避免因模型身份导致的系统性偏差。该研究为AI评估领域提供了新的方法论贡献，并强调了在自动化评估中引入去偏机制的必要性。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Bias",
+    "LLM-as-a-Judge"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:44:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM裁判的自我偏好不仅限于正向偏爱，还存在对其他模型的双向偏差，影响评估公正性。",
+      "通过改变评估对象（如非生成任务）可有效分离自我偏好与文本质量等混杂因素。",
+      "模型身份和任务类型是影响偏差方向和程度的关键变量，需在评估设计中加以控制。",
+      "研究为构建更可靠的LLM评估协议提供了实证依据，呼吁引入去偏机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

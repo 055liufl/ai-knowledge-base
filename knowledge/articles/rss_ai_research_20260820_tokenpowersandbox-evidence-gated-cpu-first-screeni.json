@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260820-088",
+  "title": "TokenPowerSandbox: Evidence-Gated CPU-First Screening for Energy-Aware LLM Serving",
+  "source_url": "https://arxiv.org/abs/2608.18149",
+  "source_platform": "rss_ai_research",
+  "summary": "TokenPowerSandbox 提出了一种面向能耗感知的大语言模型（LLM）服务配置评估的流水线，旨在解决在真实请求形态下比较不同配置时，目标 GPU 全面性能剖析成本高昂的问题。该工作流结合了可解释的 CPU 驻留投影器、短时目标 GPU 探测、全工作负载验证以及防篡改的冻结-测量溯源机制，形成证据门控的筛选流程。其核心创新在于通过 CPU 优先的筛选策略，在避免对目标 GPU 进行昂贵详尽剖析的同时，降低预测器在测量范围外过度自信的风险。该方法特别适用于需要平衡性能与能耗的 LLM 服务场景，为配置选择提供了更高效且可靠的评估途径。该研究来自 arXiv 预印本，属于系统优化与能效管理的前沿方向，对推动绿色 AI 和可持续计算具有实际意义。",
+  "tags": [
+    "LLM",
+    "Energy-Aware",
+    "Serving",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 CPU 优先的投影器结合短时 GPU 探测，显著降低配置评估成本，同时保持准确性。",
+      "证据门控机制和防篡改溯源增强了预测结果的可靠性，避免超出测量范围的盲目自信。",
+      "全工作负载验证确保筛选结果在实际场景中的有效性，兼顾能耗与性能。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

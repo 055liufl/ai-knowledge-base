@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260820-110",
+  "title": "TTSD-FAR: Test-Time Self-Distillation with Fisher-Anchored Restoration for Missing-Modality Emotion Recognition in LVLMs",
+  "source_url": "https://arxiv.org/abs/2608.18386",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为TTSD-FAR的测试时自蒸馏方法，用于解决大型视频语言模型（LVLMs）在多模态情感识别中因模态缺失或噪声导致的性能下降问题。情感识别本质上依赖多模态信息（如面部表情、语音、语言、生物信号和手势），但在实际部署中，测试时可能面临模态不完整的情况，这被视为一种分布偏移。TTSD-FAR通过测试时自蒸馏和Fisher锚定恢复机制，利用模型自身知识对缺失模态进行补偿，从而增强模型在部分观测下的鲁棒性。该方法针对LVLMs的跨模态特性，旨在提升真实场景中的情感识别准确性。该研究具有实际应用价值，尤其适用于情感计算和人机交互领域，为多模态模型在动态环境中的部署提供了新思路。",
+  "tags": [
+    "LVLMs",
+    "Emotion Recognition",
+    "Test-Time Adaptation",
+    "Self-Distillation",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-08-20T08:38:02Z",
+  "collected_at": "2026-08-20T08:47:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时自蒸馏利用模型自身预测作为软标签，无需额外标注即可适应模态缺失场景。",
+      "Fisher锚定恢复机制通过信息几何约束，有效缓解缺失模态引起的分布偏移。",
+      "该方法针对LVLMs设计，填补了多模态情感识别在真实部署中鲁棒性研究的空白。",
+      "实验验证了TTSD-FAR在多种模态缺失条件下的性能提升，优于现有基线。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
