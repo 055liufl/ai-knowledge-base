@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-080",
+  "title": "Does Marginal Coverage Guarantee Class-Conditional Safety for Zero-Shot VLMs Under Shift?",
+  "source_url": "https://arxiv.org/abs/2608.19376",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对零样本视觉语言模型（VLMs）在部署环境发生分布偏移时，使用分裂保形预测（split-conformal prediction）作为弃权层（abstention layer）的做法进行了审计。研究聚焦于CLIP、OpenCLIP和SigLIP模型，在ImageNet及非ImageNet数据集上评估了边际覆盖保证（marginal coverage）与类别条件覆盖（class-conditional coverage）之间的关系。研究发现，在分布偏移下，边际覆盖率可能保持相对较高，但类别条件尾部覆盖率会急剧下降，例如在ImageNet-Sketch上，最差类别的覆盖率降至接近0。这一发现揭示了仅依赖边际覆盖保证可能无法确保模型在关键类别上的安全性，对实际部署中的可靠性提出了挑战。该研究对于理解VLMs在开放世界中的鲁棒性具有重要意义，并为设计更安全的预测系统提供了理论依据。",
+  "tags": [
+    "VLM",
+    "conformal prediction",
+    "distribution shift",
+    "safety"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:47:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "边际覆盖保证在分布偏移下可能掩盖类别条件覆盖的严重不足，导致最差类别预测失效。",
+      "在ImageNet-Sketch等非ImageNet数据集上，CLIP等VLMs的最差类别覆盖率可降至接近0，表明现有弃权策略存在安全隐患。",
+      "研究呼吁在VLMs部署中采用更细粒度的覆盖评估方法，而非仅依赖边际指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

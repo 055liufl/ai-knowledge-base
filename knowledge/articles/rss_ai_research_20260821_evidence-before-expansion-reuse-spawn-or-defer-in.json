@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260821-123",
+  "title": "Evidence Before Expansion: Reuse, Spawn, or Defer in Lifelong Expert Pools",
+  "source_url": "https://arxiv.org/abs/2608.19888",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对流式系统中专家模型池的动态管理决策层，旨在解决持续学习场景下如何高效分配资源的问题。系统需要反复判断新到达的数据应复用现有专家、生成新专家，还是延迟处理。作者将复用与生成建模为基于条件（机制级）差异的单侧序贯假设检验，并引入无差异区间来区分两者；延迟则被定义为当两种假设均无法被当前证据支持时的状态，从而赋予三种决策统计上的明确含义。该方法利用赌e过程（betting e-process）来实时监控证据强度，使得决策过程具有理论保证和在线适应性。该工作对于终身学习、流式数据处理和动态模型部署具有重要价值，为平衡模型容量、计算效率和预测性能提供了新思路。其创新点在于将统计假设检验与专家池管理结合，实现了可解释且可验证的决策机制。",
+  "tags": [
+    "Lifelong Learning",
+    "Streaming Systems",
+    "Expert Models",
+    "Sequential Hypothesis Testing",
+    "E-process"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:50:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出统一决策框架，将复用、生成和延迟三种操作基于统计假设检验进行形式化，赋予其可验证的统计意义。",
+      "利用赌e过程实现实时证据监测，支持在线决策，无需预先设定固定阈值，增强了适应性。",
+      "通过无差异区间区分复用与生成，避免微小差异导致不必要的模型扩展，优化资源利用。",
+      "该机制为终身学习中的专家池管理提供了理论支撑，有望应用于持续学习、自适应系统等场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

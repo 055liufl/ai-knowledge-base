@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-131",
+  "title": "Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2608.20061",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向大规模混合专家（MoE）模型的计算高效超参数迁移框架。MoE架构通过稀疏激活显著扩展模型容量，但超参数（尤其是学习率）的调优在大规模模型和大量token预算下因计算成本过高而难以进行网格搜索。该框架采用两步法，首先在小规模模型上估计最优学习率，然后通过理论推导的缩放规则将其迁移至大规模模型，从而避免昂贵的全规模搜索。该方法有望大幅降低MoE训练的超参数调优成本，提升训练效率，对大规模模型训练实践具有重要参考价值。",
+  "tags": [
+    "MoE",
+    "Hyperparameter Transfer",
+    "Compute Efficiency",
+    "Large-Scale Training"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:50:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出两步超参数迁移框架，先小规模估计再迁移至大规模，显著降低调优成本。",
+      "针对MoE架构的学习率缩放规则，填补了现有研究在极端规模下的空白。",
+      "方法强调计算效率，直接回应大规模模型训练中的资源瓶颈问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

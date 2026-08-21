@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260821-094",
+  "title": "Stream4D: 4D-Consistency for Streaming Autoregressive Diffusion Video Models",
+  "source_url": "https://arxiv.org/abs/2608.19556",
+  "source_platform": "rss_ai_research",
+  "summary": "Stream4D 提出了一种针对流式自回归扩散视频模型的 4D 一致性优化方法。现有流式自回归扩散模型虽能实现实时、长时程视频生成，但其训练目标仅优化局部帧预测，忽略了整体世界的几何与动态一致性，导致长序列生成中出现几何漂移和运动退化。近期双向方法利用基于 3D 高斯溅射重建的奖励信号来缓解该问题，但单一刚体 3D 表示难以处理动态场景。Stream4D 通过引入 4D 一致性约束，在流式生成过程中保持时空一致性，从而提升长视频的几何稳定性和运动自然度。该方法有望推动实时视频生成在虚拟现实、游戏、自动驾驶仿真等领域的应用，值得关注。",
+  "tags": [
+    "Video Generation",
+    "Diffusion Model",
+    "4D Consistency",
+    "Autoregressive Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:48:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流式自回归扩散模型因局部训练目标导致长视频生成中出现几何漂移和运动退化。",
+      "Stream4D 引入 4D 一致性约束，在流式生成中保持时空一致性，提升生成质量。",
+      "相比基于 3D 高斯溅射的刚性表示，4D 方法能更好处理动态场景。",
+      "该方法为实时长视频生成提供了新的优化方向，具有广泛的应用前景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

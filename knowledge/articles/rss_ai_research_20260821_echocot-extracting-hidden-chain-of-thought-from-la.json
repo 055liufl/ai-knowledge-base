@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260821-130",
+  "title": "EchoCoT: Extracting Hidden Chain-of-Thought from Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2608.20055",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了从黑盒大型推理模型（LRMs）中提取隐藏思维链（CoT）的可能性。作者通过API交互，系统性地探索了是否能够近乎逐字地提取这些隐藏的CoT轨迹，这些轨迹被认为是前沿专有模型的重要资产。他们发现了一个先前被忽视的“推理重放表面”，并基于此提出了EchoCoT方法。该方法通过精心设计的提示策略，诱导模型在回答问题时“重放”其内部推理过程，从而在无需访问模型内部状态的情况下，获取高质量的CoT数据。实验表明，EchoCoT能够从多个商业模型中提取出与模型自身推理高度一致的CoT，且提取的CoT在后续任务中具有显著的迁移价值。这项工作不仅揭示了黑盒模型推理过程的可提取性，也为模型蒸馏、可解释性研究和安全审计提供了新的工具和视角。其创新性在于首次系统性地验证了黑盒CoT提取的可行性，并提出了有效的提取框架，对AI安全与透明度具有重要启示。",
+  "tags": [
+    "LLM",
+    "Chain-of-Thought",
+    "Black-box",
+    "Model Extraction",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:50:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒LRM的隐藏CoT可以通过API交互被近乎逐字提取，挑战了专有模型推理过程不可访问的假设。",
+      "提出的EchoCoT方法利用推理重放表面，通过提示工程实现高效CoT提取，无需模型内部访问。",
+      "提取的CoT具有高保真度和迁移价值，可用于模型蒸馏、可解释性分析及安全审计。",
+      "该研究为AI透明性和模型资产保护带来了新的挑战与机遇，需关注潜在的安全风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

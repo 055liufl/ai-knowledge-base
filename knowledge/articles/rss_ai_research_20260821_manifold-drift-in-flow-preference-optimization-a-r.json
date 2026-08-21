@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-041",
+  "title": "Manifold Drift in Flow Preference Optimization: A Root Cause of Reward Hacking",
+  "source_url": "https://arxiv.org/abs/2608.20011",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了流匹配偏好优化中的“流形漂移”（manifold drift）问题，指出在将偏好优化扩展到连续时间动力学（如流匹配）时，奖励驱动的更新会修改传输轨迹，但缺乏对预训练数据流形的约束，可能导致终端样本偏离预训练支持集，从而引发奖励黑客（reward hacking）现象。理论上，作者证明最优流匹配能够恢复终端分布，但在偏好优化中，由于奖励信号的介入，模型可能过度优化奖励而牺牲生成质量。该研究为生成模型对齐提供了新的理论视角，并可能推动更稳健的对齐算法设计。",
+  "tags": [
+    "Flow Matching",
+    "Preference Optimization",
+    "Reward Hacking",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:44:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流形漂移是流匹配偏好优化中奖励黑客的根本原因，源于奖励更新缺乏对预训练数据流形的约束。",
+      "理论上，最优流匹配可恢复终端分布，但偏好优化中的奖励信号会破坏这一性质，导致生成样本偏离支持集。",
+      "该发现提示需要设计新的约束或正则化方法，以在偏好优化中保持流形一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

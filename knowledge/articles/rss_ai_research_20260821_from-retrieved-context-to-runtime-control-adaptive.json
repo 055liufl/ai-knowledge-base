@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-010",
+  "title": "From Retrieved Context to Runtime Control: Adaptive Compression for Edge-based RAG",
+  "source_url": "https://arxiv.org/abs/2608.19535",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向边缘端检索增强生成（RAG）场景的自适应上下文压缩方法，旨在解决检索上下文过长带来的计算开销问题。传统RAG通过引入外部段落增强生成，但检索到的上下文会显著增加预填充工作量、KV缓存占用、内存带宽、延迟和能耗。现有上下文压缩技术通常采用固定压缩率，难以适应动态变化的查询和检索内容。该方法创新性地将压缩率从静态设定转为运行时动态控制，根据查询复杂度、检索内容质量和边缘设备资源状况实时调整压缩策略，从而在保持生成质量的同时大幅降低计算负担。该研究对于在资源受限的边缘设备上部署RAG系统具有重要意义，为高效、低延迟的智能应用提供了新的技术路径。",
+  "tags": [
+    "RAG",
+    "Edge Computing",
+    "Context Compression",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:43:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自适应压缩机制能根据查询和上下文动态调整压缩率，优于固定压缩率方法，在质量和效率间取得更好平衡。",
+      "该方法针对边缘设备资源受限的特点，显著降低KV缓存和内存开销，提升推理速度，适合实时应用。",
+      "研究为RAG系统在边缘场景的实用化提供了新思路，有望推动低功耗、低延迟的智能助手和物联网应用发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

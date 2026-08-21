@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-108",
+  "title": "Truncate Bad, Upweight Good: BoN-Style Distillation via Rank-Based Classification",
+  "source_url": "https://arxiv.org/abs/2608.19748",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于排名分类的BoN（Best-of-N）风格蒸馏方法，旨在将推理时选择（如Best-of-N）的成本摊销到单一策略中。传统方法使用平滑的全支持重加权，导致低排名样本仍被保留，影响策略质量。本文通过截断低排名样本并上加权高排名样本，结合排名分类目标，使策略更专注于高质量完成。该方法在生成质量与推理效率之间取得更好平衡，为LLM蒸馏提供了新思路，尤其适用于需要高效推理的生成任务。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "Best-of-N",
+    "Reward Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:49:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "截断低排名样本可减少噪声，提升策略训练稳定性",
+      "排名分类目标比平滑重加权更直接优化相对排序",
+      "BoN蒸馏可显著降低推理成本，同时保持生成质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

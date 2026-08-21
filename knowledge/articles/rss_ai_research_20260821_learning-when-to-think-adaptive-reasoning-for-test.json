@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-055",
+  "title": "Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation",
+  "source_url": "https://arxiv.org/abs/2608.20256",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自适应推理策略，使推理语言模型能够根据问题难度动态分配测试时的计算资源。传统模型在强化学习训练后通常使用固定的token预算，导致简单问题过度计算、困难问题计算不足。该研究让模型在响应首token选择三种模式之一：NoThink（快速作答）、Short（简短推理）和Long（深度推理），从而学习自主调节推理努力。实验表明，这种自适应分配策略在保持准确率的同时显著降低了平均计算成本，尤其在混合难度任务上表现突出。该工作为推理模型的效率优化提供了新思路，对部署大规模语言模型具有实际价值，并可能影响未来推理模型的设计范式。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Test-Time Compute",
+    "Adaptive Inference"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:45:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定token预算导致计算资源分配不均，自适应模式可提升效率",
+      "模型可通过首token选择推理模式，实现端到端学习",
+      "在混合难度任务上，自适应策略能平衡准确率与计算成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

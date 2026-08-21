@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-066",
+  "title": "Asymmetric Attention Heads: Structured Head-Wise Context Allocation for Transformer Attention",
+  "source_url": "https://arxiv.org/abs/2608.19203",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“非对称注意力头”（Asymmetric Attention Heads, AAH）的新型Transformer注意力机制。在标准的多头注意力（MHA）中，每个注意力头都拥有相同的完整因果上下文长度，但不同头在模型中可能承担不同的上下文角色：有些头主要依赖邻近的词汇或句法信息，而另一些头则可能需要捕捉长距离的实体交互、篇章关联或状态变化。AAH框架将上下文长度视为一种可分配的资源，通过为每个注意力头显式分配不同的上下文跨度，实现结构化的头级上下文分配。这种方法旨在提升模型在长序列任务中的效率与表现，同时减少不必要的计算开销。该研究为理解Transformer内部机制提供了新视角，并为设计更高效、更可解释的注意力架构提供了潜在方向。其创新性在于将上下文长度的不对称性引入注意力头设计，挑战了传统MHA的均一性假设，可能对自然语言处理、长文档理解等应用产生积极影响。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "Efficiency",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:46:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准多头注意力假设所有头具有相同上下文长度，但实际中不同头承担不同角色，AAH通过头级上下文分配打破这一均一性。",
+      "AAH将上下文长度视为可分配资源，为每个头指定不同跨度，可能提升长序列任务的计算效率和模型性能。",
+      "该框架增强了注意力机制的可解释性，有助于理解不同头在语言处理中的功能分化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260821-060",
+  "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+  "source_url": "https://arxiv.org/abs/2608.20316",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为 Pandora 的 AI 模型路由框架，旨在解决异构 AI 系统中查询路由的效率与成本权衡问题。系统由多个模型、架构或推理设置组成，通过将查询路由到最合适的专家模型，可以在保证质量的同时降低成本。然而，路由过程需要估计每个专家的预期回报，而这一价值估计本身是有成本的：廉价的估计器（如基于嵌入的预测器）速度快但噪声大，而准确的估计器（如微调模型）成本高但精度高。Pandora 的核心创新在于设计了一种智能分配机制，在有限的估计预算下，动态选择使用廉价或昂贵的估计器，以最大化整体路由效益。该研究对于大规模 AI 服务部署、模型编排和资源优化具有重要意义，尤其适用于多模型混合推理场景，能够显著提升系统吞吐量和成本效率。论文提供了理论分析和实验验证，展示了在多种任务上的性能提升。",
+  "tags": [
+    "Model Routing",
+    "Cost Optimization",
+    "Heterogeneous AI"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:46:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "路由中的价值估计成本是影响系统效率的关键因素，需要在估计精度与开销之间取得平衡。",
+      "Pandora 通过动态分配估计预算，能够自适应地选择估计器类型，从而优化整体路由决策。",
+      "该方法在异构模型场景下可显著降低推理成本，同时保持或提升任务质量，适用于大规模 AI 服务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

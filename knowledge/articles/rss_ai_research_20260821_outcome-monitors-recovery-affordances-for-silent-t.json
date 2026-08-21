@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260821-007",
+  "title": "Outcome Monitors: Recovery Affordances for Silent Tool Failures",
+  "source_url": "https://arxiv.org/abs/2608.19303",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为“Outcome Monitors”的机制，用于检测工具调用中静默失败的情况。与显式超时不同，某些工具可能返回格式正确但内容错误的结果（如缓存错误页面或负价格），这些结果会被代理当作事实接受。Outcome Monitors通过从任务无关的轨迹中挖掘或从公共模式中推导出结果契约，并监控这些契约的违反情况。一旦检测到违反，监控器会保留结果并发出非约束性收据，指明违反的属性并提供公开的恢复建议。该研究旨在提高AI代理在复杂环境中的鲁棒性和可靠性，防止因静默错误导致的错误决策。这一方法对于构建更可信的AI系统具有重要意义，尤其是在自动化决策和工具集成场景中。",
+  "tags": [
+    "AI Agent",
+    "Tool Failure",
+    "Outcome Monitoring",
+    "Robustness",
+    "Contract Mining"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:42:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静默工具失败比显式超时更危险，因为错误结果会被当作有效数据消费。",
+      "Outcome Monitors通过结果契约检测违反，提供非绑定收据以支持恢复。",
+      "该方法可从任务无关轨迹或公共模式中自动挖掘契约，增强通用性。",
+      "该研究提升AI代理在不可靠工具环境中的鲁棒性，对实际部署有重要价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

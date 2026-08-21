@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-008",
+  "title": "Beyond Imitation: Filtering On-Policy Distillation by Reasoning Progress",
+  "source_url": "https://arxiv.org/abs/2608.19408",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种改进的在线策略蒸馏（On-policy Distillation, OPD）方法，用于语言模型的后训练。传统的OPD框架通过将学生模型生成的轨迹与教师模型的密集token级监督配对来优化策略，但隐含假设教师奖励能准确反映推理进展，从而对所有教师反馈一视同仁。然而，这一假设在实践中并不总是成立。作者观察到，在某些情况下，教师反馈可能无法有效区分学生的进步，导致优化效率低下。为此，他们提出根据推理进展（Reasoning Progress）对教师反馈进行过滤，仅选择那些能显著促进推理能力提升的样本进行蒸馏，从而超越简单的模仿，实现更高效的策略优化。该方法有望提升语言模型在复杂推理任务上的表现，并减少训练中的噪声干扰。该研究为后训练阶段的知识蒸馏提供了新视角，具有重要的理论价值和实践意义。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "Reasoning",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:43:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统OPD方法对所有教师反馈一视同仁，但教师奖励并非总是推理进展的有效代理，导致优化效率低下。",
+      "提出基于推理进展过滤教师反馈的机制，仅利用能促进推理能力提升的样本，从而超越简单模仿。",
+      "该方法有望提升语言模型在复杂推理任务上的后训练效果，并减少噪声干扰。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-136",
+  "title": "Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection",
+  "source_url": "https://arxiv.org/abs/2608.20169",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Task-CoEvolve 的新方法，用于高效优化 LLM 代理的 harness（即代理的代码框架）。该方法通过自适应选择验证任务来降低优化过程中的评估成本。传统的 harness 优化方法在每次迭代时都会在固定的验证集上完整评估，即使某些任务已经稳定或不再具有区分度，这导致了大量的计算浪费。Task-CoEvolve 的核心思想是动态选择那些对优化最有价值的验证任务，例如那些性能波动大或尚未收敛的任务，从而在保持性能提升的同时显著减少评估开销。该方法不更新模型权重，仅通过重写 harness 代码来实现性能增益，具有广泛的适用性。该研究对于提升 LLM 代理系统的开发效率和资源利用率具有重要意义，尤其适合需要频繁迭代优化的场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Optimization",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:50:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自适应验证任务选择可显著降低 harness 优化的评估成本，同时保持性能增益。",
+      "该方法不更新模型权重，仅通过代码重写实现优化，具有通用性和可移植性。",
+      "动态选择未收敛或高波动任务作为验证集，能更高效地引导优化过程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

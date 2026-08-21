@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-078",
+  "title": "Improved Confidence Estimates for Black-Box Large Language Models",
+  "source_url": "https://arxiv.org/abs/2608.19323",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种改进黑盒大语言模型（LLM）置信度估计的方法。现有不确定性量化（UQ）方法，如口头化置信度或需要多次生成的方法，通常为零样本且无需标注数据即可生成不确定性分数。然而，在实际部署前，必须针对目标数据集评估其性能。本文利用这一评估阶段的数据，通过监督学习方式调整或校准置信度估计，从而显著提升黑盒LLM在多种任务上的置信度准确性。该方法适用于无法访问模型内部参数的场景，具有广泛的实用价值。文章通过实验验证了改进效果，并探讨了不同校准策略的影响。该研究对于提升LLM在医疗、金融等高风险领域的可靠性具有重要意义，为黑盒模型的不确定性量化提供了新思路。",
+  "tags": [
+    "LLM",
+    "Uncertainty Quantification",
+    "Black-box",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:47:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用部署前的评估数据可以显著改进黑盒LLM的置信度估计，无需访问内部参数。",
+      "监督校准方法优于纯零样本不确定性量化方法，在多种任务上提升校准误差。",
+      "该方法为黑盒模型的安全部署提供了实用工具，尤其适用于高风险应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

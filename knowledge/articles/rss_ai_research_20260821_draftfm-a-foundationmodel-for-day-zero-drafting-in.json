@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-095",
+  "title": "DraftFM: A FoundationModel for Day-Zero Drafting in Magic: The Gathering",
+  "source_url": "https://arxiv.org/abs/2608.19568",
+  "source_platform": "rss_ai_research",
+  "summary": "DraftFM 是一个针对《万智牌》游戏中的轮抽（Draft）环节设计的基座模型，专注于解决“零日”（Day-Zero）问题，即在新扩展包发布前，由于缺乏历史轮抽日志，传统监督式选牌模型无法训练的情况。该模型利用公开的完整卡牌列表，通过离散选择策略，在给定当前卡包、已选牌池和轮抽状态的情况下，精确评估每张卡牌的价值。每张卡牌以冻结的775维特征向量输入，模型能够适应新扩展包的卡牌组合，无需依赖历史数据。这一研究填补了游戏AI领域在零样本适应上的空白，对游戏设计、AI代理和动态决策系统具有参考价值，展示了在数据稀缺环境下构建高效预测模型的潜力。",
+  "tags": [
+    "Foundation Model",
+    "Game AI",
+    "Drafting",
+    "Zero-shot"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:48:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DraftFM 直接针对零日场景，无需历史轮抽日志即可评估新卡牌，解决了数据稀缺下的模型训练问题。",
+      "模型采用离散选择策略，结合冻结的卡牌特征，实现了对当前卡包和轮抽状态的精确条件建模。",
+      "该研究展示了基座模型在游戏AI领域的应用潜力，为动态环境中的零样本决策提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

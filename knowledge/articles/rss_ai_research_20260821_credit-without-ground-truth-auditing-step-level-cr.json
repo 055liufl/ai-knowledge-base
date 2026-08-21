@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260821-110",
+  "title": "Credit Without Ground Truth: Auditing Step-Level Credit Assignment in LLM Agents Against Executed Replay",
+  "source_url": "https://arxiv.org/abs/2608.19760",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体训练中的步骤级信用分配问题进行了严格审计。作者在单智能体工具环境（ALFWorld）中，通过执行重放（executed replay）获得因果真值（causal ground truth），并评估了三种常用的信用信号：LLM裁判评分、结果条件对数概率比以及策略自身置信度。研究发现，这些信号在识别因果关键步骤方面的表现均不优于随机猜测。现有评估通常基于人工标注的步骤正确性，而该研究首次以步骤贡献度（即重放中因果影响）为标准进行审计，揭示了当前信用分配方法的根本缺陷。该工作对LLM智能体的训练和评估具有重要启示，强调了因果推理在智能体优化中的必要性，并提出了新的评估范式。",
+  "tags": [
+    "LLM Agent",
+    "Credit Assignment",
+    "Causal Inference",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:49:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有步骤级信用信号（LLM裁判、对数概率比、置信度）在因果贡献识别上均无效，与随机猜测无异。",
+      "传统基于步骤正确性的评估掩盖了信用分配的根本问题，需转向基于因果贡献的审计。",
+      "执行重放提供了可靠的因果真值，为智能体训练中的信用分配提供了新基准。",
+      "该发现对依赖这些信号的训练方法（如强化学习）提出严峻挑战，需开发新的信用分配机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

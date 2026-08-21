@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260821-111",
+  "title": "Finite-Horizon Input-Output Dynamics of Minibatch Perturbations in AdamW",
+  "source_url": "https://arxiv.org/abs/2608.19762",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了AdamW优化器中小批量梯度对训练过程的延迟影响。由于AdamW在优化器状态中存储了过去的梯度信息，一个minibatch不仅影响当前更新，还会影响后续的训练轨迹。作者通过构建仅在一次梯度更新上不同、后续训练序列相同的配对轨迹，将AdamW建模为有限时域输入-状态-输出（ISO）系统，其状态包含模型参数以及一阶和二阶矩估计。该研究揭示了优化器状态中的历史信息如何导致梯度影响的持久性，为理解深度学习训练的动力学提供了新的理论视角。这一工作对于优化算法的理论分析和实践调参具有重要意义，可能启发更高效的优化器设计或训练策略调整。",
+  "tags": [
+    "AdamW",
+    "Optimization",
+    "Dynamical Systems",
+    "Training Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:49:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AdamW的优化器状态（一阶和二阶矩）使得单个minibatch的影响在时间上传播，超出其直接更新步骤。",
+      "通过ISO系统建模，可以形式化分析梯度影响的延迟效应，为理解训练动态提供新工具。",
+      "配对轨迹方法有效隔离了单次更新的影响，有助于研究优化器的记忆特性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260821-101",
+  "title": "Loreley: Repository-Scale Program Evolution with Quality-Diversity Search",
+  "source_url": "https://arxiv.org/abs/2608.19703",
+  "source_platform": "rss_ai_research",
+  "summary": "Loreley 提出了一种基于质量多样性（Quality-Diversity, QD）搜索的仓库级程序演化方法。传统顺序智能体搜索（如顺序改进）会丢弃替代分支，而独立提案虽保持多样性却需从根节点重新开始。Loreley 通过将完整的仓库状态保存在 QD 档案中，并从中采样作为父代或上下文，从而在保持多样性的同时实现持续演化。候选方案以 Git 提交形式在隔离的工作树中生成，并由项目提供的评估器进行评判。该方法旨在解决大规模代码库中程序自动修改的探索与利用平衡问题，为自动化软件工程和程序演化提供了新的搜索范式。其创新点在于将 QD 搜索应用于仓库级状态空间，而非仅针对单个函数或补丁，有望提升代码修改的多样性和质量。该研究对自动化程序修复、代码优化和软件演进等领域具有潜在影响。",
+  "tags": [
+    "Quality-Diversity",
+    "Program Evolution",
+    "Agent",
+    "Git",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-08-21T08:40:14Z",
+  "collected_at": "2026-08-21T08:48:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Loreley 通过 QD 档案保留完整仓库状态，平衡了探索与利用，避免了顺序搜索的局部最优问题。",
+      "候选方案以 Git 提交形式在隔离工作树中生成，保证了实验的隔离性和可复现性。",
+      "该方法将程序演化从单点修改扩展到仓库级状态空间，提升了修改的多样性和上下文相关性。",
+      "项目提供的评估器作为评判标准，使方法可适应不同项目的特定需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
