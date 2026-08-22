@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260822-019",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，探讨了如何针对用户自己的工具集（tooling）来评估开源模型是否具备足够的“代理性”（agentic），即模型能否有效地使用工具完成复杂任务。文章指出，现有的通用基准测试（如 MMLU、HumanEval）无法准确反映模型在特定工具环境下的实际表现，因此提出了一种自定义基准测试的方法论。作者详细介绍了如何构建一个包含任务定义、工具描述和评估指标的测试集，并利用 Hugging Face 的轻量级代理框架（如 smolagents）来运行模型，从而量化模型在工具调用、推理和任务完成方面的能力。文章强调了这种评估方式的重要性，因为它能帮助开发者和研究者选择最适合其应用场景的模型，并推动开源模型在真实世界代理任务中的进步。该博客内容实用性强，提供了具体的代码示例和评估步骤，适合希望深入评估模型代理能力的开发者阅读。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-08-22T08:29:29Z",
+  "collected_at": "2026-08-22T08:32:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法准确评估模型在特定工具环境下的代理能力，需要自定义测试集。",
+      "通过构建包含任务、工具和评估指标的基准，可以量化模型在工具调用和推理方面的表现。",
+      "使用 Hugging Face 的 smolagents 框架可以简化评估流程，并支持多种开源模型。",
+      "自定义基准测试有助于开发者根据实际应用场景选择最合适的开源模型。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
