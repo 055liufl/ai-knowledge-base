@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260823-054",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由 Hugging Face 发布，深入探讨了 Transformer 模型中的混合专家（Mixture of Experts, MoE）架构。MoE 通过将模型分解为多个专家子网络，并利用门控网络（router）动态选择激活部分专家，从而在保持模型容量的同时大幅降低计算成本。文章详细介绍了 MoE 的核心概念，包括专家网络、门控机制、稀疏激活，以及训练和推理中的挑战，如负载均衡、通信开销和微调稳定性。此外，文章还对比了 MoE 与密集模型在性能、参数量和推理效率上的差异，并列举了业界知名模型（如 Switch Transformer、GShard）的实践案例。该内容对于理解大规模语言模型的效率优化至关重要，是当前 AI 领域研究与应用的热点方向。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "模型架构",
+    "效率优化",
+    "稀疏激活"
+  ],
+  "author": null,
+  "published_at": "2026-08-23T08:29:59Z",
+  "collected_at": "2026-08-23T08:35:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活机制，在增加模型参数量的同时保持计算成本近似恒定，实现了效率与容量的平衡。",
+      "门控网络的设计和负载均衡是 MoE 训练的关键挑战，直接影响模型性能和稳定性。",
+      "MoE 在推理时仅激活部分专家，显著降低了延迟，适合大规模部署。",
+      "MoE 架构已被业界广泛采用，如 Switch Transformer 和 GShard，证明了其在大规模模型中的实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

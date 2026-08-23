@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260823-032",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由 ServiceNow AI 团队撰写，深入探讨了 vLLM 从 V0 到 V1 的演进过程中，在强化学习（RL）场景下对正确性的重视。文章指出，在 RL 训练中，推理引擎的数值精度和采样一致性至关重要，而 vLLM V1 通过重构架构，优先保证了计算正确性，而非仅仅追求性能优化。作者详细分析了 V0 中可能存在的数值误差、采样偏差等问题，并展示了 V1 如何通过改进内核、优化内存管理、确保确定性执行等方式，提升 RL 训练的稳定性和可靠性。文章还讨论了这一变化对 RL 算法（如 PPO）的影响，强调了正确性在模型迭代中的基础性作用。该内容对于从事 LLM 推理优化、RL 训练和系统架构设计的开发者具有重要参考价值，反映了 vLLM 作为主流推理框架在面向复杂训练场景时的技术演进方向。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "正确性",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-23T08:29:59Z",
+  "collected_at": "2026-08-23T08:34:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 将正确性置于性能之前，通过架构重构确保 RL 训练中的数值精度和采样一致性。",
+      "V0 在 RL 场景下可能存在潜在误差，V1 通过内核优化和确定性执行解决了这些问题。",
+      "推理引擎的正确性直接影响 RL 算法的收敛效果，是模型迭代的基础保障。",
+      "该演进体现了 LLM 基础设施从单纯追求吞吐量向兼顾训练可靠性的转变。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

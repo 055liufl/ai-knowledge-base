@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260823-100",
+  "title": "Tricks from OpenAI gpt-oss YOU 🫵 can use with transformers",
+  "source_url": "https://huggingface.co/blog/faster-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章由 Hugging Face 发布，介绍了如何将 OpenAI 的 gpt-oss 模型中的优化技巧应用到 Hugging Face 的 transformers 库中，以提升模型推理速度和效率。文章重点展示了几个关键技巧，包括使用 Flash Attention 加速注意力计算、通过 KV 缓存减少重复计算、利用 torch.compile 进行图优化，以及采用量化技术（如 bitsandbytes）降低内存占用。这些技巧不仅适用于 gpt-oss，也适用于其他 transformer 模型，为开发者提供了实用的性能优化指南。文章通过代码示例和性能对比，直观展示了优化前后的效果，强调了这些方法在部署大规模语言模型时的实际价值。对于希望在生产环境中高效运行 LLM 的开发者来说，这篇文章提供了可操作的建议，值得关注。",
+  "tags": [
+    "transformers",
+    "optimization",
+    "gpt-oss",
+    "inference",
+    "performance"
+  ],
+  "author": null,
+  "published_at": "2026-08-23T08:29:59Z",
+  "collected_at": "2026-08-23T08:38:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Flash Attention 和 KV 缓存能显著加速 transformer 推理，减少内存占用。",
+      "torch.compile 通过图优化提升模型执行效率，适合生产部署。",
+      "量化技术（如 bitsandbytes）在降低内存需求的同时保持模型性能。",
+      "这些技巧具有通用性，可应用于多种 transformer 模型，不仅限于 gpt-oss。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

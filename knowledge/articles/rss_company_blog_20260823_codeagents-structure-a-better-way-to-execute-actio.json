@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260823-138",
+  "title": "CodeAgents + Structure: A Better Way to Execute Actions",
+  "source_url": "https://huggingface.co/blog/structured-codeagent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了一种结合代码生成代理（CodeAgents）与结构化输出（Structure）的新型动作执行方法，旨在提升AI代理在执行任务时的准确性和可靠性。传统上，AI代理通常通过生成JSON或调用工具来执行动作，但这种方法在处理复杂、多步骤任务时容易出现错误。文章提出，通过让代理生成可执行的代码（如Python）来替代直接的JSON输出，可以更自然地表达逻辑，并利用代码的调试和验证机制来确保动作的正确性。同时，结合结构化输出（如Pydantic模型）来约束代码的输入输出格式，既保留了代码的灵活性，又确保了数据的一致性。该方法在多个基准测试中表现出色，显著降低了动作执行错误率，并提高了任务完成的成功率。文章还提供了具体的实现示例和性能对比，展示了这一方法在自动化工作流、数据处理和交互式任务中的潜力。这一创新对于AI代理的设计和开发具有重要的指导意义，值得关注。",
+  "tags": [
+    "CodeAgents",
+    "Structured Output",
+    "AI Agent",
+    "Action Execution"
+  ],
+  "author": null,
+  "published_at": "2026-08-23T08:29:59Z",
+  "collected_at": "2026-08-23T08:40:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代码生成代理通过生成可执行代码来执行动作，比直接输出JSON更灵活且易于调试。",
+      "结合结构化输出（如Pydantic）可以约束代码的输入输出，确保数据一致性。",
+      "该方法在多个基准测试中显著降低了动作执行错误率，提升了任务成功率。",
+      "适用于自动化工作流、数据处理等复杂任务场景，为AI代理设计提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

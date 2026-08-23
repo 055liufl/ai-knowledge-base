@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260823-129",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章来自 Hugging Face 博客，由 TNG Technology Consulting 撰写，深入探讨了长提示词（long prompts）如何阻塞其他请求，并提供了优化 LLM 性能的实用策略。文章指出，在并发处理多个 LLM 请求时，长提示词会占用大量计算资源，导致其他请求的响应时间显著增加，甚至出现排队阻塞现象。作者通过实验数据展示了不同提示长度对吞吐量和延迟的影响，并提出了几种优化方法，包括：动态批处理（dynamic batching）、请求优先级调度、提示词压缩、以及使用更高效的注意力机制（如 FlashAttention）。文章还讨论了在实际部署中如何平衡资源分配，以避免长提示词成为性能瓶颈。这篇内容对于正在构建 LLM 应用或优化推理服务的开发者具有很高的参考价值，因为它提供了可操作的性能调优建议，并揭示了长提示词在并发场景下的隐性成本。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference",
+    "Batching"
+  ],
+  "author": null,
+  "published_at": "2026-08-23T08:29:59Z",
+  "collected_at": "2026-08-23T08:40:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著阻塞其他请求，导致整体吞吐量下降和延迟增加，尤其在并发场景下。",
+      "动态批处理和请求优先级调度是缓解长提示词阻塞的有效手段。",
+      "提示词压缩和高效注意力机制（如 FlashAttention）能降低计算开销，提升性能。",
+      "实际部署中需权衡资源分配，避免长提示词成为系统瓶颈。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
