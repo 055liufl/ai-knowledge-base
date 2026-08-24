@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-007",
+  "title": "Nexus: Depth-Adaptive KV-Cache Splicing and Retrieval-Decoupled Tool Routing for Agentic LLMs on Unified Memory",
+  "source_url": "https://arxiv.org/abs/2608.20397",
+  "source_platform": "rss_ai_research",
+  "summary": "Nexus 是一篇针对基于 Model Context Protocol (MCP) 的代理式大语言模型（LLM）的优化论文。它指出在 MCP 架构下，代理 LLM 每轮都会重新编码冗长的工具模式（tool schemas），导致预填充（prefill）阶段的计算量随序列长度呈二次增长，从而在工具注册表扩大时严重拖慢首 token 时间（TTFT）。Nexus 的核心创新在于将工具路由与模式预填充成本解耦：通过一个 INT8 语义旁路缓冲区（SLB）和经过校准的交叉编码器边际门控，实现基于检索的工具选择，从而避免了对所有工具模式进行完整预填充。此外，Nexus 还引入了深度自适应的 KV 缓存拼接技术，以优化统一内存下的缓存管理。这项研究针对代理 LLM 在实际部署中的性能瓶颈，提出了系统级的优化方案，对于提升工具密集型代理应用的响应速度具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "KV-Cache",
+    "Tool Routing",
+    "MCP"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:51:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Nexus 通过解耦工具路由与模式预填充，显著降低了代理 LLM 的 TTFT 延迟。",
+      "INT8 语义旁路缓冲区（SLB）结合交叉编码器边际门控，实现了高效且准确的工具选择。",
+      "深度自适应 KV 缓存拼接技术优化了统一内存下的缓存利用，进一步提升了性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

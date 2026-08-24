@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260824-052",
+  "title": "RAG Deserves an Index: Why Ingest-Time Compilation Beats Query-Time Interpretation",
+  "source_url": "https://arxiv.org/abs/2608.20845",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，当前生产环境中的检索增强生成（RAG）问答系统普遍存在一个隐藏的低效问题：每次查询时，语言模型都会重新解析原始语料文本的含义，然后丢弃这些计算结果，导致重复计算和资源浪费。尽管模型推理成本大幅下降，但由于上下文体积增长速度快于价格下降速度，总体推理开销反而上升，这类似于数据库中的全表扫描。论文提出了一种新的范式：在数据摄入阶段（ingest-time）对文档进行编译和索引，而不是在查询阶段（query-time）进行解释，从而避免重复计算，提升效率。这一观点挑战了当前RAG系统的设计主流，具有重要的实践意义，尤其对于大规模知识库和实时问答系统。",
+  "tags": [
+    "RAG",
+    "Indexing",
+    "Efficiency",
+    "LLM",
+    "System Design"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:54:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前RAG系统在查询时重复解析语料，导致计算浪费，类似数据库全表扫描。",
+      "摄入时编译索引可以避免查询时的重复解释，显著提升效率。",
+      "模型成本下降并未解决根本问题，因为上下文增长速度快于价格下降。",
+      "该研究为RAG系统设计提供了新的优化方向，可能影响未来架构。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

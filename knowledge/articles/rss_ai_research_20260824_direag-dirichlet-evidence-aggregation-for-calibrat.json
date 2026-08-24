@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-035",
+  "title": "DirEAG: Dirichlet Evidence Aggregation for Calibrating Verbalized Confidence in Mathematical Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.20717",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为DirEAG（狄利克雷证据聚合）的新方法，用于校准大型语言模型（LLM）在数学推理任务中的口头化置信度。该方法针对黑盒场景下置信度估计难以校准的问题，通过在不同置信度引导提示下多次查询同一问题，收集答案-置信度观测数据，并利用狄利克雷分布对这些观测进行证据聚合，以处理不同引导级别、模型和数据集之间置信度尺度偏移的问题。DirEAG旨在提升置信度校准的准确性和可靠性，从而增强LLM在数学推理等高风险应用中的可信度。该研究具有重要的实用价值，尤其对于依赖LLM进行决策支持的系统，能够提供更可靠的置信度信号，减少错误推理带来的风险。",
+  "tags": [
+    "LLM",
+    "Uncertainty Estimation",
+    "Mathematical Reasoning",
+    "Confidence Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:53:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DirEAG通过狄利克雷证据聚合有效处理了多提示下置信度尺度的异质性，提升了校准性能。",
+      "该方法在黑盒场景下无需访问模型内部，仅依赖输出概率和文本，具有广泛适用性。",
+      "实验表明，DirEAG在数学推理任务上显著优于现有黑盒不确定性方法，尤其在分布偏移情况下。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-131",
+  "title": "JuryProbe: An Empirical Consensus-Risk Diagnostic for Routing Reference-Free Factuality Judge Panels to Grounded Verification",
+  "source_url": "https://arxiv.org/abs/2608.20607",
+  "source_platform": "rss_ai_research",
+  "summary": "JuryProbe 提出了一种针对无参考事实性判断模型（reference-free factuality judges）组合的共识风险诊断方法，并配套了基于校准的路由策略。在事实性判断场景中，多个廉价的 LLM 判断者常被用于接受或升级决策，但若仅因多个判断者一致就接受某个声明，可能隐藏风险：一致性可能反映共享的假阴性盲区，而非独立证据。JuryProbe 通过经验性诊断来量化这种共识风险，并利用校准机制将高风险案例路由到更严格的验证（如基于检索的验证），从而提升整体判断的可靠性。该工作关注 LLM 评估中的关键问题，即判断者组合的独立性和可靠性，对构建可信的 AI 系统具有重要意义。",
+  "tags": [
+    "LLM",
+    "Factuality",
+    "Evaluation",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:59:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多个无参考判断者的一致同意可能掩盖共享的盲区，而非提供独立证据，构成隐藏风险。",
+      "JuryProbe 提供了一种经验性诊断方法，用于量化判断者组合的共识风险。",
+      "基于校准的路由策略可将高风险案例导向更严格的验证，提高整体事实性判断的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

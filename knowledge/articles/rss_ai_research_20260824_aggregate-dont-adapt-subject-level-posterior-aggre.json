@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-129",
+  "title": "Aggregate, Don't Adapt: Subject-Level Posterior Aggregation and Transductive Calibration for Cross-Site Parkinsonian Gait Severity",
+  "source_url": "https://arxiv.org/abs/2608.20587",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文介绍了在MoCha 2026帕金森步态基准挑战赛中的获胜方案，该挑战旨在从临床站点记录的规范化SMPL运动数据预测MDS-UPDRS步态严重程度。系统在隐藏测试集上达到0.6945的宏F1分数，在58个参赛队伍中排名第一，远超第二名（0.5807）和主办方基线（0.4289）。其核心创新在于采用主题级后验聚合（Subject-Level Posterior Aggregation）和转导校准（Transductive Calibration）策略，而非传统的域适应方法，仅使用冻结的公共运动编码器和单个4x512线性层。该工作展示了在跨站点泛化中，通过后验聚合和校准可以有效提升模型性能，为医疗AI中的域偏移问题提供了新思路。",
+  "tags": [
+    "Healthcare AI",
+    "Domain Adaptation",
+    "Motion Analysis",
+    "Parkinson's Disease"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:59:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "主题级后验聚合优于传统域适应方法，在跨站点步态严重性预测中显著提升性能。",
+      "转导校准利用未标记测试数据进一步优化预测，无需额外训练。",
+      "简单线性层配合冻结编码器即可达到SOTA，表明特征质量与聚合策略的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

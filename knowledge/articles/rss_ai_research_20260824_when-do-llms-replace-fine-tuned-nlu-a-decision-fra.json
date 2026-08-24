@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-102",
+  "title": "When Do LLMs Replace Fine-Tuned NLU? A Decision Framework for Intent Detection in Production Conversational Systems",
+  "source_url": "https://arxiv.org/abs/2608.20371",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对零样本大型语言模型（LLM）能否替代微调的自然语言理解（NLU）分类器进行意图检测这一常见说法，进行了严谨的实证对比研究。研究在完整的ATIS和CLINC150数据集上，将微调的RoBERTa、TF-IDF结合逻辑回归的基线模型、句子嵌入kNN以及Claude Haiku零样本模型进行了头对头比较，并报告了bootstrap 95%置信区间和配对显著性检验结果。研究发现，零样本LLM是否优于微调模型取决于意图空间的特性，并非一概而论。该研究为生产环境中的对话系统在意图检测任务上选择模型提供了决策框架，具有重要的实践指导意义。其严谨的实验设计和统计方法也为相关研究树立了标杆。",
+  "tags": [
+    "LLM",
+    "NLU",
+    "Intent Detection",
+    "Model Comparison"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:57:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零样本LLM在意图检测上并非总是优于微调模型，性能取决于意图空间的复杂度和分布。",
+      "微调的小型模型（如RoBERTa）在特定数据集上仍可能保持竞争力，甚至超越零样本LLM。",
+      "研究提供了基于统计显著性的对比方法，为生产环境选择模型提供了科学依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

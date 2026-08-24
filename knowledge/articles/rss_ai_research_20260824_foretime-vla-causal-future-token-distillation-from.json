@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-037",
+  "title": "ForeTime-VLA: Causal Future-Token Distillation from a World Action Model for Conveyor-Belt Manipulation",
+  "source_url": "https://arxiv.org/abs/2608.20735",
+  "source_platform": "rss_ai_research",
+  "summary": "ForeTime-VLA 提出了一种新颖的视觉-语言-动作（VLA）策略，用于传送带上的物体操纵任务。该任务要求策略能够预测接触事件，而传统 VLA 模型仅基于当前观测进行微调，缺乏对动态未来的感知。世界动作模型（WAM）虽然能学习预测动力学，但在部署时运行视频级教师模型或显式想象未来帧的计算成本过高。ForeTime-VLA 通过从冻结的 WAM 中蒸馏出未来感知且动作等价的表示，并将其集成到密集的 pi0.5 策略中，从而在不增加推理开销的情况下获得前瞻性能力。该方法有望提升机器人在动态环境中的操作性能，尤其是在需要精确时序控制的场景中。该研究结合了因果未来令牌蒸馏技术，为 VLA 策略的时序感知提供了高效解决方案，对机器人操作和具身智能领域具有重要价值。",
+  "tags": [
+    "VLA",
+    "World Action Model",
+    "Distillation",
+    "Robotics",
+    "Manipulation"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:53:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过从世界动作模型蒸馏未来感知表示，VLA 策略能高效预测接触事件，无需额外推理成本。",
+      "因果未来令牌蒸馏方法使得策略在动态环境中具备前瞻性，提升操作精度。",
+      "该方法在传送带操纵任务中展示了实用性，为具身智能的时序控制提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

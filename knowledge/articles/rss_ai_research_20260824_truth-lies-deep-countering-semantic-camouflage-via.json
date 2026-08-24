@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-003",
+  "title": "Truth Lies Deep: Countering Semantic Camouflage via Latent Intent Verification",
+  "source_url": "https://arxiv.org/abs/2608.20378",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究揭示了大语言模型（LLM）安全对齐机制的深层缺陷：现有对齐仅停留在生成阶段的表面拒绝策略，无法消除预训练阶段习得的危险概念知识。作者提出了一种名为“语义伪装”（Semantic Camouflage）的新型对抗攻击，通过将恶意意图嵌入看似无害的叙事语境（如创意写作）中，成功绕过模型的安全防线。针对这一漏洞，论文进一步提出“潜在意图验证”（Latent Intent Verification）防御框架，旨在从模型的内部表征层面识别并阻断伪装意图，而非仅依赖输出层的过滤。该工作对LLM安全领域具有重要启示，强调了安全对齐需从表层行为转向深层语义理解，为构建更鲁棒的防御机制提供了新思路。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Adversarial Attack",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:51:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM安全对齐仅作用于生成末端，无法根除预训练中的有害知识，导致模型易受语义伪装攻击。",
+      "语义伪装攻击通过将恶意意图包装在良性叙事中，可有效绕过传统拒绝机制，凸显安全对齐的脆弱性。",
+      "潜在意图验证防御从模型内部表征入手，为检测和阻断深层伪装意图提供了可行路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

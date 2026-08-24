@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-061",
+  "title": "Can Scientific Claims Be Removed from Large Language Models? A Systematic Evaluation of Claim-Level Unlearning",
+  "source_url": "https://arxiv.org/abs/2608.20960",
+  "source_platform": "rss_ai_research",
+  "summary": "本文系统地评估了在大型语言模型（LLMs）中移除特定科学声明（claim-level unlearning）的可行性。研究指出，语言模型基于静态科学语料训练，而科学知识会不断修正和更新，导致模型可能传播过时或已被推翻的信息。为此，作者提出并测试了多种机器遗忘（machine unlearning）方法，旨在精准删除模型中的特定科学声明，同时保持模型在其他任务上的性能。实验结果表明，现有方法在完全移除目标声明和保留无关知识之间存在权衡，且模型可能仍通过间接关联恢复被删除的信息。该研究为科学领域LLM的安全部署提供了重要参考，并指出了未来改进方向。",
+  "tags": [
+    "LLM",
+    "Machine Unlearning",
+    "Scientific Claims",
+    "Model Editing"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:55:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "机器遗忘可部分移除LLM中的科学声明，但完全删除仍具挑战性，存在残留风险。",
+      "现有遗忘方法在目标声明移除与模型通用性能保持之间存在明显权衡。",
+      "模型可能通过语义关联间接恢复被遗忘的信息，需更鲁棒的遗忘策略。",
+      "该研究为科学领域LLM的合规更新和知识时效性管理提供了实证基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

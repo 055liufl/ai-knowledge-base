@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-025",
+  "title": "Dual-Cache Latent Space Communication between Heterogeneous Language Models",
+  "source_url": "https://arxiv.org/abs/2608.20617",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“双缓存潜在空间通信”（Dual-Cache Latent Space Communication）的新方法，旨在解决异构语言模型（LLM）多智能体系统中智能体间高效通信的问题。传统方法依赖文本交换，这会将自回归解码置于关键路径上，且消息是离散的，无法感知接收方状态。该方法通过利用共享的潜在空间，并引入双缓存机制，使发送方（Sharer）能够将编码信息直接传递给接收方（Receiver），而无需生成自然语言文本，从而显著降低通信延迟并提高信息保真度。该研究对于多智能体协作、分布式推理和实时交互系统具有重要意义，因为它突破了语言模型间通信的瓶颈，有望提升复杂任务的处理效率。论文发表于arXiv，编号2608.20617，属于前沿研究，值得关注。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Latent Space",
+    "Communication"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:52:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "双缓存机制允许发送方和接收方在潜在空间中同步状态，避免文本解码延迟。",
+      "该方法支持异构模型间的通信，无需统一架构或微调。",
+      "潜在空间通信保留了更多语义信息，优于离散文本消息。",
+      "实验表明可显著降低多智能体系统的响应时间，提升任务完成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

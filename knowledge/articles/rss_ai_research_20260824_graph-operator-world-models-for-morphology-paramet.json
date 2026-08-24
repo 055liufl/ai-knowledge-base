@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-057",
+  "title": "Graph-Operator World Models for Morphology-Parameter Generalization in Continuous Control",
+  "source_url": "https://arxiv.org/abs/2608.20936",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Graph-Operator World Models（GraphOp）的新型世界模型，旨在解决连续控制任务中形态参数（如连杆长度、质量、阻尼和驱动）变化时的泛化问题。传统世界模型通常针对固定物理系统训练，当形态参数改变时性能会下降。现有方法虽将形态参数作为条件信息输入，但未明确学习到的转移模型中哪些部分应保持可复用、哪些部分应随形态变化。GraphOp通过图算子（graph operator）的框架，将世界模型的转移学习分解为与形态无关的共享结构和与形态相关的参数化部分，从而在形态参数变化时实现更好的泛化。该方法在多个连续控制基准任务上进行了验证，展示了在未见过的形态参数下的鲁棒性和效率。这项工作对于机器人控制和强化学习领域具有重要意义，因为它提高了模型对物理系统变化的适应能力，减少了重新训练的需求。",
+  "tags": [
+    "World Models",
+    "Continuous Control",
+    "Generalization",
+    "Graph Neural Networks"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:54:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GraphOp通过图算子分解转移模型，明确区分了形态无关和形态相关的部分，提高了泛化能力。",
+      "该方法在形态参数变化时无需重新训练，显著提升了连续控制任务的适应性和效率。",
+      "图结构表示物理系统，使得模型能够自然地处理不同形态的拓扑变化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-058",
+  "title": "No Judgment Without a Reason: Counterfactual Receipts for Versioned AI Evaluators",
+  "source_url": "https://arxiv.org/abs/2608.20938",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种针对AI评估器（evaluator）的推理问责机制，核心思想是要求评估器在给出判断标签时，必须提供可验证的推理依据，而不仅仅是最终标签的正确性。作者将评估器的推理过程分解为三个核心来源：依据（grounds）、规范（norms）和权威（authority），并通过反事实（counterfactual）方式生成“收据”（receipts），即对评估器推理过程的验证记录。该方法旨在解决当前评估系统只关注标签正确性、忽略推理过程缺陷的问题，尤其适用于代理系统（agentic systems）中的门控操作、路由审查和训练反馈等场景。论文通过形式化定义和实验，展示了如何通过反事实干预来检测评估器是否依赖有效证据、是否遵循一致规则以及是否正确应用规则。这项工作对于提升AI系统的可解释性、可靠性和安全性具有重要意义，特别是在需要高信任度的自动化决策场景中。值得关注的是，它首次将评估器的推理问责形式化，为后续研究提供了新的理论框架和实用工具。",
+  "tags": [
+    "AI Evaluator",
+    "Reasoning Accountability",
+    "Counterfactual",
+    "Agentic Systems",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:55:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "评估器可能用错误推理得出正确标签，现有评估方法无法识别此类缺陷，需要新的问责机制。",
+      "通过反事实收据（counterfactual receipts）可以系统性地验证评估器推理的三个核心来源：依据、规范和权威。",
+      "该框架适用于代理系统中的关键决策环节，能提升AI系统的可靠性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260824-066",
+  "title": "Don't Solve, Just Compare: Tiny Advisors for Runtime Intervention in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.21027",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种轻量级的运行时干预方法，用于提升LLM代理在长时序任务中的可靠性。核心思想是避免复杂的失败检测和恢复规划，而是通过一个微小的“顾问”模型（Tiny Advisors）比较当前轨迹与参考轨迹，直接给出干预方向。这种方法无需重新训练主模型，也无需依赖专家求解器，显著降低了计算开销。论文通过实验证明，在多个基准任务上，该方法能有效减少错误累积，提高任务成功率，尤其适用于资源受限或实时性要求高的场景。其创新点在于将干预问题简化为比较问题，使干预更直接、可解释，且易于集成到现有代理系统中。该工作对LLM代理的实用化部署具有重要价值，为运行时可靠性优化提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Runtime Intervention",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:55:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过比较而非求解，简化了运行时干预的复杂度，提高了干预效率。",
+      "轻量级顾问模型可独立于主模型运行，降低了资源消耗。",
+      "该方法在多个基准上验证了有效性，为长时序代理的可靠性提供了实用方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

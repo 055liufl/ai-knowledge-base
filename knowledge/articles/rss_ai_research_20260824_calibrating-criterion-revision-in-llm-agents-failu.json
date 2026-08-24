@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-036",
+  "title": "Calibrating Criterion Revision in LLM Agents: Failure Modes and a Trace-Anchored Protocol",
+  "source_url": "https://arxiv.org/abs/2608.20729",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了语言模型智能体在失败后或跨会话携带文本时，未能修订其成功标准（criterion revision）的问题。作者聚焦于一个更窄的归因问题：当标准K0接受了一个违反更广泛承诺B的结果时，哪些观察结果能证明系统形成了并持续使用新标准K1。他们提出了五个不可补偿的条件：标准失败检测、模型发出的提议、新情节中的持续使用等。论文还引入了一种基于痕迹锚定的协议（trace-anchored protocol）来校准标准修订，并分析了失败模式。这项工作对于提升LLM智能体的可靠性和自我改进能力具有重要意义，因为它揭示了智能体在动态环境中如何正确更新目标标准的机制。该研究属于AI智能体领域的前沿探索，为构建更稳健的自主系统提供了理论基础。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Self-Improvement",
+    "Criterion Revision"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:53:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体常因未能修订成功标准而陷入失败循环，导致性能停滞或偏离原始目标。",
+      "论文提出五个不可补偿条件，用于严格归因标准修订的发生，避免误判。",
+      "引入痕迹锚定协议，通过可观察的痕迹来校准标准修订，提高透明度和可控性。",
+      "该研究为构建能适应环境变化的自主智能体提供了方法论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

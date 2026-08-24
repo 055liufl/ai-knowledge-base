@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260824-090",
+  "title": "Inhibitory Attention for Clinical Long-Context Reasoning: Characterizing and Mitigating Lost-in-the-Middle Effects in EHR Processing",
+  "source_url": "https://arxiv.org/abs/2608.20348",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对电子健康记录（EHR）处理中大语言模型（LLM）的“中间丢失”（Lost-in-the-Middle, LitM）效应进行了系统研究，并首次提出“临床中间丢失”（Clinical Lost-in-the-Middle, CLitM）问题。随着EHR单患者数据量常超过10万token，LLM在长上下文推理中倾向于忽略中间位置的关键信息，这在临床场景中可能造成严重后果，因为最重要的医疗事实往往位于病历中央。作者对CLitM问题进行了系统刻画，并提出了基于抑制性注意力（Inhibitory Attention）的缓解方法，旨在增强模型对中间位置信息的关注。该研究为长上下文推理在医疗领域的应用提供了重要改进方向，具有较高的临床实用价值和学术创新性。",
+  "tags": [
+    "LLM",
+    "Long-Context",
+    "EHR",
+    "Attention",
+    "Clinical AI"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:57:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统定义并刻画了临床场景下的中间丢失（CLitM）问题，强调其与通用LitM效应的差异和严重性。",
+      "提出抑制性注意力机制作为缓解策略，通过调整注意力权重分布来增强对中间关键信息的提取。",
+      "研究基于真实EHR数据，验证了CLitM对临床推理准确性的负面影响，并展示了所提方法的有效性。",
+      "为长上下文LLM在医疗等高风险领域的应用提供了可操作的改进思路，具有重要实践意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

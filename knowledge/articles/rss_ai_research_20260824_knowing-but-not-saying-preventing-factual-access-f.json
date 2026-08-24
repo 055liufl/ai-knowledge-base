@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260824-044",
+  "title": "Knowing but Not Saying: Preventing Factual Access Failures in LLM SFT via Recall-Anchored Distillation",
+  "source_url": "https://arxiv.org/abs/2608.20794",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了监督微调（SFT）在目标领域之外导致事实性行为退化的问题，提出了一种更精确的现象——事实访问失败（factual access failure），即模型在约束评估下仍能识别或排序正确答案，但在开放生成中无法主动产出。作者通过实验验证了这一现象，并引入了一种基于回忆锚定的蒸馏方法（Recall-Anchored Distillation），旨在在SFT过程中保持模型的事实访问能力，减少对无关领域知识的隐性遗忘。这项工作对理解SFT的副作用和提升模型可靠性具有重要意义，为LLM的微调策略提供了新的优化方向。",
+  "tags": [
+    "LLM",
+    "SFT",
+    "Distillation",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-08-24T08:48:27Z",
+  "collected_at": "2026-08-24T08:54:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT导致的事实退化并非完全的知识擦除，而是访问失败，模型在受限条件下仍能回忆知识。",
+      "提出回忆锚定蒸馏方法，通过锚定已知事实来指导微调，减少对无关领域事实的干扰。",
+      "实验证明该方法能有效降低SFT后的事实访问失败率，同时保持目标领域性能。",
+      "该研究为LLM微调中的知识保留提供了新的理论视角和实用技术。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
