@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-140",
+  "title": "AgentWeave: Routing Before Reasoning for Efficient Function Calling in Tool-Rich Language Models",
+  "source_url": "https://arxiv.org/abs/2608.23078",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 AgentWeave 的系统策略，旨在优化工具丰富的语言模型中的函数调用效率。随着大语言模型需要处理的工具、函数、API 和专用代理数量不断增加，候选动作空间急剧膨胀，导致模型需要处理更多的模式、消耗更多的提示词令牌，并需在大量相似或不相关的选项中做出区分。AgentWeave 的核心思想是在语言模型推理之前，先通过一个路由机制缩减候选工具集，而无需修改下游模型本身。这种方法作为一种互补的系统级策略，能够在不改变模型参数的情况下，显著降低推理时的计算开销和延迟，同时可能提升函数调用的准确性。该研究针对当前 LLM 应用中的关键瓶颈——工具选择的效率问题，提出了一个实用的解决方案，对于构建大规模工具集成系统具有重要的参考价值。",
+  "tags": [
+    "LLM",
+    "Function Calling",
+    "Routing",
+    "Efficiency",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:51:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在工具丰富的环境中，预先缩减候选工具集可以显著降低推理成本和延迟，而无需修改模型。",
+      "路由机制作为模型前处理步骤，能够有效过滤不相关的工具，提升函数调用的准确性和效率。",
+      "该方法提供了一种系统级优化思路，与模型微调或架构改进互补，适用于现有 LLM 部署。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

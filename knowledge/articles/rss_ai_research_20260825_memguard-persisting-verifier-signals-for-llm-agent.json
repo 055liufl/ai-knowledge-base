@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-043",
+  "title": "MemGuard: Persisting Verifier Signals for LLM-Agent Memory Governance",
+  "source_url": "https://arxiv.org/abs/2608.21867",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为MemGuard的框架，旨在解决LLM智能体在长期任务流中记忆管理的关键问题。随着LLM智能体从单次提示转向涉及终端操作、软件工程和网页任务的长时间任务流，可重用记忆成为核心能力。然而，现有记忆系统面临两个主要失败模式：不可靠的准入机制（失败轨迹、偶然成功和误导性观察被错误地存入记忆）以及缺乏持续验证（记忆在数百次交互后可能变得不可靠）。MemGuard通过持久化验证信号来治理智能体记忆，确保存储的经验在长期交互中保持可靠性。该框架引入了一种机制，在记忆写入时附加验证信号，并在后续使用中持续更新这些信号，从而过滤低质量记忆并动态调整记忆的可信度。这项工作对于提升LLM智能体在复杂任务中的稳定性和效率具有重要意义，尤其是在需要长期规划和多步骤执行的场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory Management",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:46:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体记忆系统面临不可靠准入和缺乏持续验证两大核心问题，影响长期任务可靠性。",
+      "MemGuard通过持久化验证信号机制，在记忆写入和后续使用中动态评估和过滤记忆质量。",
+      "该框架适用于终端、软件工程和网页等需要长期记忆的智能体任务，提升任务执行稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

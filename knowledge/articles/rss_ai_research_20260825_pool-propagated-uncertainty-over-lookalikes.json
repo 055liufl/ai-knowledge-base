@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-141",
+  "title": "POOL: Propagated Uncertainty Over Lookalikes",
+  "source_url": "https://arxiv.org/abs/2608.23086",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为POOL（Propagated Uncertainty Over Lookalikes）的新方法，旨在为黑盒大语言模型（LLM）提供更可靠的置信度分数。该方法针对现有置信度估计器在成本与质量之间的权衡问题：口头置信度（verbal confidence）成本低但往往过于自信，而基于采样的不确定性（sampling-based uncertainty）信息量更大但计算成本随采样数量线性增长。POOL通过识别与当前输入相似的“lookalike”样本，并传播这些样本的不确定性估计，从而在不进行大量额外采样的前提下，获得更准确的置信度。该方法有望提升LLM在实际应用中的可靠性，例如优先进行人工审查、将不确定案例路由到更强模型或在开发数据上选择弃权阈值。这项研究对于构建更安全、更可控的AI系统具有重要意义，特别是在高风险决策场景中。",
+  "tags": [
+    "LLM",
+    "Uncertainty Estimation",
+    "Confidence Score",
+    "Black-box Model"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:51:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "POOL方法通过利用相似样本（lookalikes）的不确定性传播，有效缓解了置信度估计中成本与质量的矛盾。",
+      "该方法针对黑盒LLM设计，无需访问模型内部参数，具有广泛的适用性。",
+      "通过更准确的置信度分数，POOL能够支持更有效的资源分配，如人工审查和模型路由。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-020",
+  "title": "A Reproducible, License-Aware Distillation Recipe for CPUDeployable Safety Classification",
+  "source_url": "https://arxiv.org/abs/2608.21570",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种可复现且许可证感知的知识蒸馏方法，用于训练可在CPU上部署的安全分类模型。当前开源的安全防护模型参数规模在1到9亿之间，主要面向GPU优化，在CPU上单次推理耗时数秒，难以满足商品化硬件的部署需求。作者通过使用强开源防护模型对语料进行标注，并采用蒸馏技术，成功构建了更小、更高效的安全分类器，使其能在CPU上快速运行。该方法强调可复现性，并考虑了许可证合规性，为在资源受限环境中部署大语言模型安全层提供了实用解决方案。这项工作对推动大模型安全防护的普及和落地具有重要意义，尤其适用于边缘计算和本地部署场景。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Knowledge Distillation",
+    "CPU Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:44:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种许可证感知的蒸馏流程，确保在模型压缩过程中遵守数据和使用条款，增强了方法的合规性和可复现性。",
+      "通过蒸馏将安全分类模型压缩至可在CPU上实时运行，解决了当前防护模型依赖GPU和推理延迟高的问题。",
+      "该方法使用强开源模型自动标注语料，减少了人工标注成本，为构建高质量安全分类器提供了可扩展的路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

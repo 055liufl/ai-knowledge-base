@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-008",
+  "title": "There Is No Neutral Harness: Modern LLM Leaderboards Are Manufactured by Config-Fragile Items",
+  "source_url": "https://arxiv.org/abs/2608.21382",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了现代大语言模型（LLM）排行榜中评估框架（harness）的配置敏感性，指出当前排行榜的排名可能被少数对配置敏感的题目所左右。作者认为，多选题基准测试虽然固定了问题和正确答案，但未固定选项顺序、提示措辞以及答案提取方式（如从生成文本或逐选项概率中读取），这些配置差异会导致模型间的排名变化。研究将这种敏感性从聚合分数方差细化到具体题目层面，识别出那些对配置变化敏感且能区分模型优劣的题目，并质疑排行榜的客观性和稳定性。该工作对评估方法论提出重要挑战，提示研究者和开发者需谨慎解读排行榜结果，并可能推动更稳健的评估标准设计。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Evaluation",
+    "Leaderboard"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:44:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "排行榜排名受评估框架配置（如选项顺序、提示措辞）影响，存在配置脆弱性题目。",
+      "现有研究多关注聚合分数方差，未深入分析哪些题目导致模型间排名差异。",
+      "识别配置敏感题目对理解模型真实能力至关重要，可能改变排行榜解读。",
+      "该研究呼吁更稳健的评估协议，以减少配置对排名的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

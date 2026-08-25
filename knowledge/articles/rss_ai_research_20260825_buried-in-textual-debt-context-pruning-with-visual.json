@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-126",
+  "title": "Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.22963",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对多模态大语言模型（MLLM）智能体的上下文管理方法，旨在解决长轨迹任务中自生成文本累积导致的“文本债务”问题。作者观察到，在MLLM智能体执行多步任务时，显式推理虽有助于任务分解和工具协调，但会生成大量文本，随着轨迹延长，这些文本可能占据上下文主导地位，抑制视觉证据的利用，从而降低模型性能。论文的核心思想是：一旦任务相关的视觉证据被充分锚定，冗余的推理文本即可被裁剪，而保留视觉证据以维持关键信息。该方法通过视觉证据保留机制进行上下文修剪，有望提升MLLM智能体在长程任务中的效率和准确性。该研究针对多模态智能体部署中的实际瓶颈，具有较高的实用价值，尤其对依赖长上下文推理的复杂任务（如视觉问答、具身智能）有重要意义。",
+  "tags": [
+    "MLLM",
+    "Context Pruning",
+    "Agent",
+    "Multimodal",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:50:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "文本债务问题：MLLM智能体在长轨迹中自生成文本会抑制视觉证据，导致推理冗余和性能下降。",
+      "视觉证据优先：当视觉证据已充分支撑任务时，可安全裁剪冗余文本，保留视觉信息以维持上下文有效性。",
+      "上下文修剪策略：提出一种基于视觉证据保留的上下文修剪方法，旨在提升长程任务中的效率和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

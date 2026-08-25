@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-029",
+  "title": "Context as an Environment: Programmatic Context Management for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2608.21690",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Scroll的上下文管理器，用于解决LLM代理在长期任务中历史记录超出模型上下文窗口的问题。传统方法通过压缩早期交互或提取固定记忆表示来应对，但这些方法在未知未来需求前就预先决定保留内容，存在局限性。Scroll将每个代理会话视为可执行的会话环境，该环境由仅追加的事件日志支持，实现了程序化的上下文管理。这种设计允许代理根据实际执行情况动态调整上下文，提高了长期任务的适应性和效率。该研究对于提升LLM代理在复杂、长期任务中的性能具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:45:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Scroll将代理会话建模为可执行环境，通过事件日志实现上下文管理的程序化，避免预先固定记忆表示。",
+      "该方法针对长期任务中上下文窗口限制，提供动态调整机制，可能提升代理的适应性和任务完成质量。",
+      "研究聚焦于上下文管理的核心挑战，为未来LLM代理设计提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-100",
+  "title": "CausalCache: Conditional High-Fidelity Restoration for Long-Horizon GUI Agents",
+  "source_url": "https://arxiv.org/abs/2608.22577",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CausalCache的方法，用于解决长时程GUI代理在视觉上下文预算有限情况下的高保真状态恢复问题。该方法将完整的交互轨迹以文本动作记录的形式低成本保存，但仅向策略暴露少数高保真像素事件。作者将问题形式化为条件保真恢复：每个事件以摘要形式持久化，并关联到存档截图，同时活动视觉上下文预算B限制了可提升为摘要加图像形式的事件数量。最近B策略将所有预算用于最近事件，但可能忽略早期关键信息。CausalCache通过因果缓存机制，智能选择哪些事件需要高保真图像，以在预算约束下最大化策略性能。该方法对于提升GUI代理在长任务中的决策质量具有重要意义，尤其是在需要回顾早期视觉细节的场景中。",
+  "tags": [
+    "GUI Agent",
+    "Causal Cache",
+    "Visual Context",
+    "Long-Horizon",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:49:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出条件保真恢复问题，平衡文本摘要与高保真图像的存储与使用。",
+      "CausalCache机制在有限视觉预算下智能选择关键事件，提升长时程任务性能。",
+      "为GUI代理的长期交互提供了一种高效的状态恢复方案，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

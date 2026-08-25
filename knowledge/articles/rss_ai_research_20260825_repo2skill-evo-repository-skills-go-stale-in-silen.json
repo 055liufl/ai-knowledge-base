@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-053",
+  "title": "Repo2Skill-Evo: Repository Skills Go Stale in Silence",
+  "source_url": "https://arxiv.org/abs/2608.21964",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《Repo2Skill-Evo: Repository Skills Go Stale in Silence》探讨了大型语言模型（LLM）代理在持续演进的软件仓库中操作时，所依赖的仓库特定程序性知识（如API调用、脚本运行、版本约定）的持久性问题。尽管已有研究表明，将此类知识外部化为可复用的“技能”（skills）能提升代理性能，但论文指出这些技能可能因仓库更新而“静默过期”，即技能不再匹配最新代码库，导致性能下降且不易察觉。作者提出了Repo2Skill-Evo框架，旨在动态追踪仓库变化并自动更新技能，以维持代理的长期有效性。该研究首次系统性地关注了技能生命周期中的维护问题，填补了现有研究仅关注技能初始构建而忽视其时效性的空白，对依赖LLM代理进行自动化软件工程（如代码生成、修复、测试）的实践具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Software Engineering",
+    "Skill Maintenance"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:46:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仓库技能会因代码库演进而静默失效，导致LLM代理性能下降且难以察觉。",
+      "现有技能构建方法缺乏对技能持续更新的机制，需要动态追踪仓库变化。",
+      "Repo2Skill-Evo框架通过自动检测仓库变更并更新技能，可维持代理的长期有效性。",
+      "该研究强调了技能生命周期管理的重要性，为构建自适应软件工程代理提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

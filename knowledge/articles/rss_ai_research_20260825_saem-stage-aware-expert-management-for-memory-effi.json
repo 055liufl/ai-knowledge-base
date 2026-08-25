@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-026",
+  "title": "SAEM: Stage-Aware Expert Management for Memory-Efficient MoE Inference in Chain-of-Thought Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.21614",
+  "source_platform": "rss_ai_research",
+  "summary": "SAEM（阶段感知专家管理）是一种面向混合专家（MoE）模型在链式思维（CoT）推理场景下的内存高效推理方法。该方法针对CoT推理中顺序解码带来的高延迟和内存压力，以及MoE模型全量专家权重超出GPU内存、需频繁进行GPU-CPU传输的问题，提出利用CoT轨迹的结构性特征（如推理阶段差异）来优化专家管理。SAEM通过阶段感知的专家加载和调度策略，减少不必要的专家传输，提升推理效率并降低内存占用。该研究发表于arXiv，属于LLM推理优化领域的前沿工作，对提升大模型在资源受限环境下的推理性能具有重要价值。",
+  "tags": [
+    "MoE",
+    "Inference Optimization",
+    "Chain-of-Thought",
+    "Memory Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:45:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CoT推理的阶段性结构可被利用来优化MoE专家管理，避免统一处理所有token。",
+      "通过阶段感知的专家调度，可显著减少GPU-CPU传输开销，提升内存效率。",
+      "该方法针对MoE模型在长序列推理中的瓶颈，有望降低部署成本并加速推理。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

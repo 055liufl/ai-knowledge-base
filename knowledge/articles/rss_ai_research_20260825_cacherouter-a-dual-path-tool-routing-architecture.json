@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-108",
+  "title": "CacheRouter: A Dual-Path Tool Routing Architecture with Cache-Preserving Main-Model Isolation for Long-Tail Tool Discovery",
+  "source_url": "https://arxiv.org/abs/2608.22708",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为CacheRouter的双路径工具路由架构，旨在解决LLM系统中工具使用与提示缓存之间的结构性权衡。传统方法中，渐进式披露（progressive disclosure）通过仅显示当前任务相关的工具来保持提示词精简，但每次工具列表变化都会使请求前缀的缓存失效，从而降低系统效率。CacheRouter通过将工具选择与工具传递分离为两条路径，在保持主模型隔离的同时，利用缓存保留机制，使得工具列表的更新不会破坏已缓存的请求前缀，从而在长尾工具发现场景中实现高效的工具调用。该架构创新性地将问题重新定义为请求架构设计，而非简单的缓存策略优化，为LLM系统在动态工具环境下的性能提升提供了新思路。该研究发表于arXiv，属于系统架构层面的探索，对提升LLM应用的响应速度和成本效益具有潜在价值，尤其适用于工具数量庞大且频繁变化的实际部署场景。",
+  "tags": [
+    "LLM",
+    "Tool Routing",
+    "Prompt Caching",
+    "System Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:49:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "揭示了工具选择与提示缓存之间的结构性冲突，并重新定义为请求架构问题",
+      "提出双路径路由设计，通过主模型隔离实现缓存保留，避免工具列表变化导致的缓存失效",
+      "针对长尾工具发现场景，平衡了提示词精简与缓存效率，提升系统整体性能"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

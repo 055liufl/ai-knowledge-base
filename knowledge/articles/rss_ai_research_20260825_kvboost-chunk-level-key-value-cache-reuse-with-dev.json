@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-001",
+  "title": "KVBoost: Chunk-Level Key-Value Cache Reuse with Deviation-Guided Recomputation for Efficient Large Language Model Inference",
+  "source_url": "https://arxiv.org/abs/2608.21362",
+  "source_platform": "rss_ai_research",
+  "summary": "KVBoost 提出了一种面向 Transformer 大语言模型推理的 KV 缓存复用系统，旨在解决预填充阶段的高延迟问题。传统前缀缓存要求提示词共享连续前缀，限制了共享内容出现在任意位置时的复用效率。KVBoost 采用块级（chunk-level）KV 缓存复用，并引入偏差引导（deviation-guided）的重计算机制，使得共享内容无论位于何处都能被有效复用，同时保证模型输出质量。该系统兼容 HuggingFace 生态的 decoder 模型，具有较高的实用性和部署便利性。该研究针对 LLM 推理性能优化的关键瓶颈，创新性地将缓存粒度从序列级细化到块级，并引入动态重计算策略，在提升推理效率的同时兼顾准确性，对大规模模型服务场景具有重要价值。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Inference Optimization",
+    "Caching"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:43:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "块级 KV 缓存复用突破了传统前缀缓存的限制，支持任意位置的共享内容复用，显著降低预填充延迟。",
+      "偏差引导的重计算机制在复用缓存时动态检测并修正偏差，确保模型输出质量不受影响。",
+      "兼容 HuggingFace 生态，便于集成到现有 LLM 推理流程，具有实际部署价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

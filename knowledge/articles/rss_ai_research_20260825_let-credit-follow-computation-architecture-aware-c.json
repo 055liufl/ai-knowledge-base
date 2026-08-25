@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-018",
+  "title": "Let Credit Follow Computation: Architecture-Aware Credit Transport for Large Language Model Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.21501",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种面向大语言模型强化学习（LLM RL）的架构感知的信用分配方法，将信用分配分解为三个对象：成功证据、传输算子（将证据转化为token级优势）和更新几何（将优势转化为策略更新）。现有工作虽在证据、采样和更新几何上有所改进，但传输算子通常与架构无关，固定折扣的GAE采用平稳假设，未能利用LLM的层次化结构（如层间、注意力头间的关系）。论文主张“让信用跟随计算”，即设计架构感知的传输算子，以更精确地分配token级优势，从而提升RL训练效率和策略性能。该工作可能引入新的算法框架，结合模型内部表示来优化信用传输，对LLM RL的样本效率和稳定性具有潜在价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Credit Assignment",
+    "Architecture-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:44:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将LLM RL中的信用分配分解为证据、传输算子和更新几何，明确传输算子是当前被忽视的瓶颈。",
+      "提出架构感知的传输算子，利用LLM的层次化结构替代固定折扣GAE，有望提升优势估计的准确性。",
+      "该工作可能改善LLM RL的样本效率和策略收敛性，对复杂推理任务有重要应用前景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

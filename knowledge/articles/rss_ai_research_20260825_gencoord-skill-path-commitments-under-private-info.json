@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-061",
+  "title": "GenCoord: Skill-Path Commitments under Private Information",
+  "source_url": "https://arxiv.org/abs/2608.22055",
+  "source_platform": "rss_ai_research",
+  "summary": "GenCoord 提出了一种在私有信息条件下协调多智能体协作的新方法。在典型的具身智能协作场景中，一个智能体知道最终目标，而另一个智能体掌握工作单元的具体能力，双方各自的信息都不足以独立决定行动顺序或交接内容。GenCoord 通过将私有事实的任务后果转化为可执行的技能路径承诺，解决了这一协调难题。具体而言，它利用一个轻量级的本地 Qwen3.5-0.8B 模型生成多步 SELF 计划和对等 REQ 请求，并通过有界反馈机制逐步修正和收敛，最终形成一致的联合任务执行方案。该方法在无需全局信息共享的前提下，实现了高效的任务分解与角色分配，显著提升了多智能体系统的协作鲁棒性。该研究对于具身智能、多智能体系统和人机协作领域具有重要参考价值，其轻量化模型设计也使其具备较强的实际部署潜力。",
+  "tags": [
+    "Multi-Agent",
+    "Embodied AI",
+    "Coordination",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:47:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GenCoord 通过技能路径承诺机制，将私有信息转化为可执行的协作计划，解决了信息不对称下的协调问题。",
+      "采用轻量级 Qwen3.5-0.8B 模型，降低了计算成本，同时通过有界反馈迭代提升计划准确性。",
+      "该方法不依赖全局信息共享，增强了多智能体系统的鲁棒性和可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

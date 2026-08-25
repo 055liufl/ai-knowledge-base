@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-113",
+  "title": "The Retriever Should Remember: Experience-Amortized Reranking for Long-Term Agent Memory",
+  "source_url": "https://arxiv.org/abs/2608.22767",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“经验摊销重排序”（Experience-Amortized Reranking）的新方法，旨在解决长期语言模型代理在记忆检索中的关键问题。传统语义检索虽然高效，但嵌入相似度并不总能反映记忆与当前查询的相关性；而基于大语言模型（LLM）的重排序器虽然能提供更强的查询条件相关性评分，但无状态的重排序会反复对大量候选集进行评分，导致计算开销巨大。该方法通过让检索器积累检索经验，将重排序过程摊销化，从而在保持高效性的同时提升检索质量。这项工作对于构建可持续学习和适应性的长期代理系统具有重要意义，因为它直接提升了代理在复杂任务中的记忆利用效率，减少了不必要的计算资源消耗。该论文来自arXiv，属于代理记忆与检索增强生成（RAG）领域的前沿研究，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Memory",
+    "Reranking"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:50:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长期代理的检索器缺乏经验积累，导致检索效率与相关性难以兼顾。",
+      "经验摊销重排序通过复用历史检索经验，显著降低重排序的计算成本。",
+      "该方法在保持高效性的同时，提升了检索结果的相关性，适用于长期记忆场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-081",
+  "title": "Read Less, Solve More: Token-Efficient Sparse Reading for AI Agents",
+  "source_url": "https://arxiv.org/abs/2608.22237",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SparseRead 的新型阅读接口，旨在解决长时程 AI 代理在访问外部工件时过度读取的问题。当前代理系统往往需要读取完整对象，即使任务仅需少量关键证据，这导致 token 和延迟成本增加，并可能稀释任务相关证据。现有的上下文缩减方法通常在大量内容已进入轨迹后才进行干预，效率较低。SparseRead 是一种无需训练、模型透明的阅读方法，它通过稀疏读取机制，在信息进入代理上下文之前就进行选择性提取，从而显著降低 token 消耗和延迟，同时保持或提升任务性能。该方法适用于需要频繁访问外部文档、数据库或代码库的代理场景，如代码生成、信息检索和复杂推理任务。论文通过实验验证了 SparseRead 在多个基准上的有效性，展示了其在成本节约和任务准确率方面的优势。这项研究对于提升 AI 代理的效率和可扩展性具有重要意义，尤其适合资源受限或需要实时响应的应用环境。",
+  "tags": [
+    "AI Agent",
+    "Token Efficiency",
+    "Sparse Reading",
+    "Context Reduction",
+    "Latency Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:48:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SparseRead 通过训练-free 的稀疏读取机制，在信息进入代理上下文前进行选择性提取，有效降低 token 和延迟成本。",
+      "该方法解决了现有上下文缩减方法干预滞后的问题，提升了长时程代理处理外部工件的效率。",
+      "实验表明 SparseRead 在多个基准上实现了成本节约和任务性能的平衡，具有实际应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

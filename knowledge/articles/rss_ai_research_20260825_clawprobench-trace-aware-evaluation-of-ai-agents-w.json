@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-094",
+  "title": "ClawProBench: Trace-Aware Evaluation of AI Agents with Runtime Coverage and Frozen Workplace-Style Holdouts",
+  "source_url": "https://arxiv.org/abs/2608.22510",
+  "source_platform": "rss_ai_research",
+  "summary": "ClawProBench 是一个针对 AI 代理（Agent）的追踪感知（trace-aware）基准测试框架，旨在解决现有代理基准仅评估最终答案而忽略运行时状态的问题。该框架强调评估单元应为模型与运行时（model-plus-runtime）的配置组合，并关注失败可能发生的多个环节，包括证据获取、运行时路由、安全边界和重复执行。ClawProBench 基于 OpenClaw 这一实时代理运行时实现，并引入了运行时覆盖率（runtime coverage）和冻结的工作场所式保留集（frozen workplace-style holdouts）来增强评估的鲁棒性和真实性。该工作值得关注，因为它推动了代理评估从结果导向转向过程导向，为构建更可靠、更安全的代理系统提供了方法论支持，尤其在复杂、有状态的环境中具有重要应用价值。",
+  "tags": [
+    "AI Agent",
+    "Benchmark",
+    "Runtime",
+    "Evaluation",
+    "Trace"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:49:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有代理基准过度简化评估，仅关注最终答案，忽略了运行时状态和过程性失败，导致评估不全面。",
+      "ClawProBench 提出以模型加运行时配置为评估单元，并追踪证据获取、路由、安全等关键环节，提升评估的细粒度。",
+      "通过运行时覆盖率和冻结保留集，该基准能更真实地模拟工作场所场景，增强评估的可靠性和泛化能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

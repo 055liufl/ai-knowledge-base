@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-025",
+  "title": "Semantic Compression Trees: Multi-Resolution Knowledge Retrieval via Hierarchical Semantic Residuals",
+  "source_url": "https://arxiv.org/abs/2608.21610",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为语义压缩树（Semantic Compression Trees, SCT）的新型检索索引结构，旨在解决传统检索增强生成（RAG）中扁平化、固定粒度索引的局限性。传统方法将文档切分为均匀块，通过相似度检索，忽略了源文档的层次结构。SCT 构建了一个层次化索引，其中每个节点仅存储其语义残差，即相对于父节点新增的信息。检索过程从根节点开始逐级向下，实现多分辨率的知识检索。这种方法能够保留文档的层次结构，提高检索的精确性和效率，尤其适用于处理长文档和复杂知识体系。该研究为 RAG 系统提供了一种新的索引范式，具有重要的理论意义和实际应用潜力，值得关注。",
+  "tags": [
+    "RAG",
+    "Hierarchical Index",
+    "Semantic Residual",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:45:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SCT 通过存储语义残差而非完整内容，显著减少了索引存储开销，同时保留了层次信息。",
+      "渐进式检索从粗到细，能够根据查询需求动态调整检索粒度，提升检索效率。",
+      "该方法可能改善长文档和复杂知识库的检索性能，为 RAG 应用提供更精细的知识访问。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

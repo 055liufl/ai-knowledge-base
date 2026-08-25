@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-104",
+  "title": "CAI-DLLM: Convergence Aware Inference for Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2608.22646",
+  "source_platform": "rss_ai_research",
+  "summary": "CAI-DLLM 是一种针对扩散语言模型（Diffusion Language Models）的推理加速方法。扩散语言模型虽然能并行生成多个 token，但推理时需要多次去噪步骤，且会重复计算已经稳定的 token，导致生成成本高昂。CAI-DLLM 提出了一种无需训练的推理方法，利用第一步的置信度来指导去噪过程，从而减少推理时间。具体而言，该方法会提前提交（commit）容易的 token，避免对它们进行不必要的重复计算，从而在保持生成质量的同时显著提升推理效率。该研究来自 arXiv 预印本，属于自然语言处理与高效推理交叉领域，对需要大规模并行生成的场景（如长文本生成）具有实际应用价值，值得关注。",
+  "tags": [
+    "Diffusion Language Models",
+    "Inference Acceleration",
+    "Efficient Inference",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:49:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型推理成本高，因为重复去噪和重复计算稳定 token。",
+      "CAI-DLLM 通过第一步置信度识别并提前提交易 token，减少去噪步骤。",
+      "该方法无需额外训练，可直接应用于现有扩散语言模型。",
+      "在保持生成质量的同时，显著降低推理时间，适合并行生成场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

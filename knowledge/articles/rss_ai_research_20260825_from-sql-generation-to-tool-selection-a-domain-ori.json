@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-064",
+  "title": "From SQL Generation to Tool Selection: A Domain-Oriented Pattern for MCP Servers",
+  "source_url": "https://arxiv.org/abs/2608.22063",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向领域的MCP服务器工具设计模式，旨在解决当前LLM代理通过MCP访问企业数据时，因暴露单一通用SQL执行工具而导致的灵活性过高、安全性不足和查询生成不准确等问题。该模式的核心思想是：在查询时，模型不再直接生成SQL，而是从一组预先定义好的、与业务领域对齐的小型工具集中进行选择。这些工具的参数化查询封装了模式导航、连接和业务逻辑，从而简化了模型的操作，提高了查询的准确性和安全性。该模式对于构建企业级数据代理具有重要的实践意义，能够降低LLM生成SQL的复杂性和出错率，同时提升系统的可维护性和可审计性。文章值得关注，因为它提供了一种实用的、可落地的设计范式，有助于推动MCP在真实企业场景中的广泛应用。",
+  "tags": [
+    "MCP",
+    "LLM Agent",
+    "Tool Design",
+    "Data Access",
+    "SQL"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:47:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "面向领域的工具模式通过预定义参数化查询，减少了对LLM动态生成SQL的依赖，从而降低错误率和安全风险。",
+      "该模式将模式导航和连接逻辑封装在工具内部，使模型只需进行工具选择，简化了推理过程，提高了响应一致性。",
+      "该设计有助于企业数据访问的标准化和审计，符合企业级应用对可维护性和合规性的要求。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

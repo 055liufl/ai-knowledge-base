@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260825-002",
+  "title": "MS Paint and Photos inivisibly watermark even locally generated output with GUID",
+  "source_url": "https://xusheng.dev/posts/reversing/mspaint_invisible_watermark/main/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章揭示了微软画图（MS Paint）和照片（Photos）应用在本地生成的输出文件中，即使没有联网，也会隐式地嵌入一个GUID（全局唯一标识符）作为不可见水印。作者通过逆向工程分析了这些应用保存的图像文件，发现其中包含的元数据或像素级信息中隐藏了GUID，该GUID可能与用户会话或设备相关。这一发现引发了关于用户隐私和数字内容可追溯性的讨论，尤其是在AI生成内容日益普及的背景下，这种隐式水印可能被用于追踪内容来源。文章提供了技术细节和逆向工程方法，对于关注隐私保护、数字取证和内容认证的技术人员具有重要参考价值。该发现不仅影响普通用户对本地软件隐私的信任，也对开发者设计隐私友好的应用提出了挑战。",
+  "tags": [
+    "隐私",
+    "水印",
+    "逆向工程",
+    "GUID",
+    "本地应用"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:40Z",
+  "collected_at": "2026-08-25T08:42:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MS Paint和Photos在本地保存的图像中嵌入GUID作为不可见水印，即使离线操作也会发生。",
+      "该水印可能用于追踪内容来源，引发隐私担忧。",
+      "逆向工程方法展示了如何检测和分析此类隐式水印。",
+      "对开发者而言，需考虑隐私设计，避免无意中泄露用户信息。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260825-114",
+  "title": "TailSieve: Partial-Rollout-Guided Tail Routing for LLM Rollouts",
+  "source_url": "https://arxiv.org/abs/2608.22788",
+  "source_platform": "rss_ai_research",
+  "summary": "TailSieve 是一篇针对大语言模型（LLM）大规模 rollout 场景中长尾生成延迟问题的研究论文。在强化学习后训练、在线策略蒸馏（OPD）以及重采样评估等流程中，大量样本生成（rollout）是核心环节，但不同于在线服务以请求级延迟和吞吐为优化目标，rollout 步骤的端到端完成时间（makespan）常被少数长尾生成任务所主导。论文指出现有系统通常将 rollout 请求均匀路由，导致资源分配不均，加剧了长尾效应。TailSieve 提出了一种基于部分展开（partial-rollout）引导的尾部路由机制，通过提前预测或识别可能产生长尾延迟的请求，并动态调整路由策略，从而优化整体 rollout 效率。该研究针对 LLM 基础设施中的关键性能瓶颈，具有较高的实用价值，尤其对大规模训练和评估管线的优化有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Rollout",
+    "Routing",
+    "Infrastructure",
+    "Performance"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:50:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长尾生成是 LLM rollout 阶段端到端延迟的主要瓶颈，均匀路由无法有效应对。",
+      "基于部分展开的预测性路由可提前识别高延迟请求，实现动态资源调度。",
+      "该方法可显著降低 rollout 步骤的 makespan，提升训练和评估效率。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

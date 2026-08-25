@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-111",
+  "title": "The Compaction Cliff in Long-Running AI Agent Memory",
+  "source_url": "https://arxiv.org/abs/2608.22752",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并研究了长时运行AI代理内存中的“压缩悬崖”（Compaction Cliff）问题。在AI代理的上下文窗口中，安全规则和事件日志竞争有限的token资源。当上下文预算溢出时，两者会被以相同的速率进行摘要压缩，但安全规则需要精确的措辞才能保持可执行性。实验表明，在20个生产代理配置上，使用Claude Code的/compact提示在Sonnet 4.6模型上，经过一轮压缩后安全规则保留率为53%，五轮后仅剩10%，导致安全规则迅速失效。作者提出了一种名为“知识分流”（Knowledge Triage）的框架来应对该问题，旨在区分关键知识（如安全规则）与一般日志，在压缩时优先保留关键知识的精确性。该研究对AI代理的长期运行可靠性、安全性和记忆管理具有重要意义，为构建更稳健的代理系统提供了新思路。",
+  "tags": [
+    "AI Agent",
+    "Memory Management",
+    "Context Compression",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:50:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "压缩悬崖现象：在上下文压缩过程中，安全规则与日志被同等对待，导致安全规则快速丢失，威胁代理安全性。",
+      "量化证据：实验显示安全规则保留率在多次压缩后急剧下降，凸显问题的严重性。",
+      "知识分流框架：提出区分关键知识与一般信息，在压缩时优先保护安全规则的精确性，为解决方案提供方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

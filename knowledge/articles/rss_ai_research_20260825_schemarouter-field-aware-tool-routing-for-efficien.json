@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260825-006",
+  "title": "SchemaRouter: Field-Aware Tool Routing for Efficient Heterogeneous Agentic RAG",
+  "source_url": "https://arxiv.org/abs/2608.21375",
+  "source_platform": "rss_ai_research",
+  "summary": "SchemaRouter 是一种面向异构智能体检索增强生成（RAG）系统的字段感知工具路由方法。在复杂的 RAG 系统中，智能体需要协调外部 API、内部数据库、向量存储和图存储等多种工具。传统方法要么将所有工具描述暴露给 LLM，要么仅基于向量相似度选择工具，这会导致过度获取（增加负载、令牌消耗和延迟）或欠获取（遗漏回答查询所需的关键字段）。SchemaRouter 通过分析查询所需的字段与工具模式（schema）的匹配程度，实现更精准的工具选择，从而减少无效调用并提升回答质量。该研究针对 RAG 系统中的工具编排效率问题，提出了一种轻量级（ligh...）的解决方案，具有显著的实用价值。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Tool Routing",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-25T08:41:43Z",
+  "collected_at": "2026-08-25T08:44:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SchemaRouter 通过字段级匹配替代全量工具暴露或纯向量相似度，有效缓解过度获取和欠获取问题。",
+      "该方法适用于异构工具环境，包括 API、数据库、向量和图存储，提升智能体 RAG 的效率和准确性。",
+      "轻量级设计暗示其可能具有较低的计算开销，适合实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
