@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260826-102",
+  "title": "The Invisible Editorial Layer: Formalizing Undisclosed Inference-Time Steering, Probability Placement, and the Attribution Problem in Deployed Language Models",
+  "source_url": "https://arxiv.org/abs/2608.24662",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一个被忽视但至关重要的概念：在部署的大语言模型（LLM）中，存在一个“不可见的编辑层”（Invisible Editorial Layer），即在推理阶段、在最终token选择之前，系统性地修改模型输出的概率分布。作者指出，当前对LLM的评估通常假设其行为主要由模型权重、训练数据、对齐过程和用户提示决定，但现代推理管道可能包含额外的控制层，例如logit修改、温度调整、top-p过滤或更复杂的干预机制，这些都会在冻结的权重和观察到的文本之间引入系统性偏差。论文形式化了这种“推理时引导”（inference-time steering）和“概率放置”（probability placement）问题，并探讨了由此产生的“归因问题”（attribution problem），即当模型输出受到此类隐藏干预时，如何准确地将行为归因于模型本身或外部控制。该研究对于理解LLM在真实部署中的行为、评估其可靠性、以及建立透明度和问责制具有重要意义，尤其是在高风险应用场景中。",
+  "tags": [
+    "LLM",
+    "Inference-time Steering",
+    "Attribution",
+    "AI Safety",
+    "Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:51:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现代LLM推理管道可能包含未公开的概率分布修改机制，形成隐藏的控制层，影响最终输出。",
+      "当前评估方法忽视了推理时引导的影响，导致对模型行为的归因不准确。",
+      "形式化概率放置和归因问题，为构建更透明、可审计的AI系统提供了理论基础。",
+      "该研究对AI安全、模型治理和部署实践具有直接启示，呼吁关注推理阶段的干预。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

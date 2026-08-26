@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-021",
+  "title": "Minima-KV: Retention-Preserving KV Cache Compression with Mixed-Format Paged Attention",
+  "source_url": "https://arxiv.org/abs/2608.23834",
+  "source_platform": "rss_ai_research",
+  "summary": "Minima-KV 是一种针对长上下文大语言模型（LLM）服务中键值（KV）缓存容量和带宽瓶颈的压缩方案。它提出了一种保留保留性的层级结构，用于混合格式的分页注意力。该方案将近期和受保护的 Anchor 页保留在 FP8 格式，而将较旧的非 Anchor 页转换为打包的 TQ3 格式，同时确保所有活动请求的页面仍然可寻址。通过格式特定的内核计算部分注意力状态，并通过全局归一化的在线 softmax 进行组合，Minima-KV 在压缩缓存的同时保持了模型输出的保留性。这项研究对于提升长上下文场景下的推理效率具有重要意义，因为它直接解决了 KV 缓存带来的内存和带宽压力，有望降低部署成本并提高吞吐量。该工作结合了混合精度量化、分页管理和注意力机制优化，为 LLM 推理系统设计提供了新思路。",
+  "tags": [
+    "KV Cache",
+    "Quantization",
+    "LLM Inference",
+    "Paged Attention"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:46:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Minima-KV 通过混合格式（FP8 和 TQ3）的层级缓存管理，在保持高保留性的同时显著压缩 KV 缓存。",
+      "采用分页注意力机制，确保所有活动请求的页面可寻址，支持高效的在线服务。",
+      "格式特定的内核和全局归一化在线 softmax 结合，实现了压缩后的注意力计算正确性。",
+      "该方案直接针对长上下文 LLM 服务的容量和带宽瓶颈，具有实际部署价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

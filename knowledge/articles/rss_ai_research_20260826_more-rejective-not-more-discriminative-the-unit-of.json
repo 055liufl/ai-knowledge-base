@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-036",
+  "title": "More Rejective, Not More Discriminative: The Unit of Verification in Pre-Execution LLM Oversight",
+  "source_url": "https://arxiv.org/abs/2608.23941",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究AI控制中预执行监督的验证单元问题，即一次调用审查多少个动作。现有设计将验证单元视为给定，未测量其对易错监控器的影响。自然轨迹无法隔离该影响，因为审查长度与动作数量共同变化。作者通过受控实验或合成数据，比较不同验证单元下监控器的拒绝率与判别能力，发现更细粒度的验证单元（每次审查更少动作）能提高拒绝率，但未必提升判别力。研究强调验证单元是预执行监督协议的关键设计参数，影响监控器的有效性与可用性，为AI安全监控系统设计提供新视角。",
+  "tags": [
+    "AI Control",
+    "Pre-execution Oversight",
+    "LLM Monitor",
+    "Verification Unit",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:47:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "验证单元（一次审查的动作数）显著影响LLM监控器的拒绝行为，更细粒度可提高拒绝率但可能不提升判别力。",
+      "自然轨迹无法隔离验证单元效应，需受控实验或合成数据来准确评估。",
+      "预执行监督协议设计需权衡过度拦截与判别能力，验证单元是关键可调参数。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

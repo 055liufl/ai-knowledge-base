@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-060",
+  "title": "Paritok-4B: Intent-Conditioned Context Compression for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2608.24188",
+  "source_platform": "rss_ai_research",
+  "summary": "Paritok-4B 是一个针对编码代理（coding agents）的上下文压缩模型，旨在解决编码代理在每轮交互中重复发送大型文件读取和工具输出给前沿大语言模型（LLM）导致的 token 消耗过高问题。通用提示压缩器在代码上表现不佳，因为它们会改写标识符并丢失代理编辑所需的确切片段。Paritok-4B 是一个 4B 参数的 LoRA 压缩器，基于两个核心原则：抽取式（extractive）压缩，即选择片段而非重写，从而保留代码的精确性和完整性。该模型专门针对编码代理的轨迹进行训练，能够有效压缩上下文，同时保留关键信息，降低 token 成本并提升代理效率。这一创新对于优化 LLM 应用中的上下文管理具有重要意义，尤其是在编码和软件开发场景中，能够显著减少资源消耗并提高响应速度。",
+  "tags": [
+    "LLM",
+    "Context Compression",
+    "Coding Agents",
+    "LoRA"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:48:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Paritok-4B 采用抽取式压缩策略，避免改写代码片段，确保代理所需的关键信息不丢失。",
+      "该模型专门针对编码代理轨迹训练，解决了通用压缩器在代码场景中的不足。",
+      "通过减少 token 消耗，Paritok-4B 能显著降低编码代理的运行成本并提升效率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

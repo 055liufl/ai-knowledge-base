@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-129",
+  "title": "Elastic KV Cache for LLM Serving:A Working Reclamation Mechanism, and Why Chunked Prefill Already Closes the Gap",
+  "source_url": "https://arxiv.org/abs/2608.23658",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种弹性KV缓存机制，旨在解决LLM推理服务中KV缓存内存利用率低的问题。传统LLM服务引擎在启动时一次性分配KV缓存，并为最坏情况下的预填充（prefill）阶段预留内存，但在解码（decode）阶段这些预留内存处于闲置状态，无法被KV池复用。作者设计了一种弹性KV缓存机制，在解码阶段将预留内存借给KV池使用，并在需要时回收。然而，论文进一步指出，分块预填充（Chunked Prefill）技术已经能够有效弥合这一差距，使得弹性KV缓存的额外收益有限。该研究通过实验验证了机制的有效性，并分析了其与现有技术的互补性，为LLM推理系统的内存管理优化提供了新视角。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Memory Management",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "弹性KV缓存机制可在解码阶段动态复用预留内存，提升内存利用率。",
+      "分块预填充技术已能缓解预填充与解码的内存冲突，降低弹性缓存的必要性。",
+      "实验表明弹性KV缓存与分块预填充结合可进一步优化性能，但收益边际递减。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

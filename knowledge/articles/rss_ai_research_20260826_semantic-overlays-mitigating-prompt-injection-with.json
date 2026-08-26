@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-026",
+  "title": "Semantic Overlays: Mitigating Prompt Injection with Annotations Beyond Tokens and Steering Vectors",
+  "source_url": "https://arxiv.org/abs/2608.23873",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“语义覆盖层”（Semantic Overlays）的新方法，旨在缓解大语言模型（LLM）中的提示注入攻击。传统上，模型仅处理token序列，无法显式区分不同来源的文本（如用户输入、工具输出或系统指令），这导致攻击者可以通过精心构造的文本混淆模型对文本来源的认知，从而触发危险行为。该方法通过在token之外附加语义标注（annotations）或使用引导向量（steering vectors），为模型提供关于文本来源和角色的额外信息，从而增强模型对上下文边界的感知，降低被注入攻击的成功率。这项研究直接针对LLM安全领域的关键漏洞，具有重要的理论意义和实际应用价值，尤其对于构建安全可靠的AI代理和工具调用系统至关重要。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Prompt Injection",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:46:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示注入源于模型无法显式区分文本来源，语义覆盖层通过附加标注弥补这一缺陷。",
+      "该方法超越传统token级防御，利用语义信息增强模型对上下文边界的感知。",
+      "引导向量提供了一种可扩展的机制，可能适用于多种模型架构和部署场景。",
+      "该研究为LLM安全提供了新方向，但需进一步验证其在不同攻击模式下的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

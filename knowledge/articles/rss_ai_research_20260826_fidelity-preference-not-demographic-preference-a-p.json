@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-120",
+  "title": "Fidelity Preference, Not Demographic Preference: A Pixel-Level Attribute-Sensitivity Audit of Image Aesthetic/Preference Scorers",
+  "source_url": "https://arxiv.org/abs/2608.23593",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对文本到图像系统中常用的美学评分器（LAION-Aesthetics、PickScore、ImageReward、HPSv2）进行像素级审计，通过干预合成和真实图像中的肤色和体型特征，探究评分器是否将人口统计属性（如肤色）作为客观质量指标。核心发现是，在肤色亮度维度上，主要效应是保真度偏好：未修改的图像（即原始图像）往往获得更高评分，而非基于人口统计的偏见。这一发现挑战了以往关于美学评分器存在人口统计偏见的假设，表明评分器可能更倾向于保留原始图像特征，而非对特定肤色或体型有系统性偏好。该研究为理解AI美学评估的公平性和可靠性提供了重要实证，对训练数据筛选和生成引导的优化具有指导意义，值得关注。",
+  "tags": [
+    "AI伦理",
+    "图像美学评估",
+    "公平性审计",
+    "文本到图像"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "美学评分器在肤色维度上主要表现出保真度偏好，而非人口统计偏见，即原始图像更受青睐。",
+      "通过像素级干预方法，能够精确区分评分器对属性变化的敏感度，为审计AI模型提供新工具。",
+      "该发现对训练数据筛选和生成引导的公平性优化具有实际指导意义，可能减少对特定群体的系统性偏差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

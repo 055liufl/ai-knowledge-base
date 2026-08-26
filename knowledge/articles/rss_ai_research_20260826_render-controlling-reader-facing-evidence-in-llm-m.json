@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260826-001",
+  "title": "RENDER: Controlling Reader-Facing Evidence in LLM Memory Evaluation",
+  "source_url": "https://arxiv.org/abs/2608.23568",
+  "source_platform": "rss_ai_research",
+  "summary": "RENDER 是一个用于评估大型语言模型（LLM）记忆和检索增强生成（RAG）系统的新基准控制方法。其核心创新在于，它认识到在记忆和RAG评估中，提供给回答模型的输入形式（如记忆条目、摘要、类型化记录或原始摘录）往往被视为实现细节，但实际会影响模型性能。RENDER 通过固定对话内容，同时变化面向读者的工件（reader-facing artifact），引入了一个五级数据包阶梯（packet ladder），用于定位答案相关内容进入输入的时间点，并结合确定性模板来近似不同渲染方式。该基准旨在系统性地研究输入渲染方式对LLM记忆评估结果的影响，从而为构建更鲁棒和可解释的记忆系统提供指导。这项工作对于理解LLM在复杂信息检索和记忆场景中的行为具有重要意义，并为评估方法学提供了新的视角。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Memory",
+    "Evaluation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:45:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "输入渲染方式（如摘要、原始文本）显著影响LLM记忆评估结果，但常被忽视。",
+      "RENDER 通过五级数据包阶梯系统化控制信息呈现，为评估提供标准化方法。",
+      "该基准有助于揭示不同记忆表示对模型推理和答案质量的具体影响。",
+      "为构建更鲁棒和可解释的LLM记忆系统提供了实证基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

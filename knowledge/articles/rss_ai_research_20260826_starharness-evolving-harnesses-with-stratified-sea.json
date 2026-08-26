@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-111",
+  "title": "StarHarness: Evolving Harnesses with Stratified Search for Enterprise Environments",
+  "source_url": "https://arxiv.org/abs/2608.24804",
+  "source_platform": "rss_ai_research",
+  "summary": "StarHarness 是一个用于企业环境中自动演化智能体（agent）工作框架（harness）的新框架，其核心思想是在保持模型权重不变的前提下，通过分层搜索（stratified search）来优化智能体的提示词、任务框架、工具接口、技能、MCP 提供者、子智能体结构以及智能体循环配置等组件。该框架通过根据基线失败行为对任务进行分层，构建一个紧凑的演化池，并将提议者可见的搜索任务与提议者隐藏的选择任务分离，从而在有限的计算资源下高效地探索和优化智能体配置。这项工作对于企业级 AI 应用具有重要意义，因为它提供了一种无需重新训练模型即可提升智能体性能的方法，能够适应不同企业的特定环境和需求，降低了定制化智能体的成本和技术门槛。StarHarness 的创新之处在于其分层搜索策略和演化机制，使得智能体能够自动适应复杂的企业环境，有望推动智能体在实际生产环境中的更广泛应用。",
+  "tags": [
+    "Agent",
+    "AutoML",
+    "Enterprise AI",
+    "Evolutionary Algorithm"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:51:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "StarHarness 通过演化框架而非模型微调来提升智能体性能，显著降低企业定制化成本。",
+      "分层搜索策略根据任务失败行为构建演化池，提高搜索效率并避免过拟合。",
+      "分离提议者可见和隐藏任务，确保演化过程的客观性和泛化能力。",
+      "该框架支持多种组件演化，包括提示词、工具接口和子智能体结构，具有高度灵活性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

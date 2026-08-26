@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-074",
+  "title": "VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2608.24302",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 VideoHarness-RSI 的方法，用于提升冻结视觉语言模型（VLMs）在长视频理解任务中的表现。核心思想是通过递归的自改进机制优化视频帧的选取和上下文构建过程，而不修改底层VLM参数。该方法将视频帧选择视为一个可学习的“harness”过程，通过递归地评估当前上下文对回答问题的支持度，并迭代地选择更相关的帧来改进上下文。实验表明，在多个长视频理解基准上，该方法显著优于现有的压缩、检索和记忆等固定策略，且无需重新训练VLM。这项工作揭示了在冻结模型条件下，通过优化输入上下文构建可以大幅提升性能，为长视频理解提供了一种新的、高效的范式。其创新性在于将上下文构建视为一个可优化的递归过程，而非手工设计的固定流程，具有较高的实用价值和理论意义。",
+  "tags": [
+    "Long-Video Understanding",
+    "Vision-Language Model",
+    "Context Optimization",
+    "Self-Improvement",
+    "Recursive Harness"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:49:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过递归自改进的上下文构建，可以在不修改冻结VLM的情况下显著提升长视频理解性能。",
+      "将视频帧选择过程视为可学习的harness，优于手工设计的固定压缩、检索策略。",
+      "该方法提供了一种隔离上下文构建效果的研究范式，有助于深入理解长视频理解的瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

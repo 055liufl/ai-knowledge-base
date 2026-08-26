@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-124",
+  "title": "When May an Agent Stop? Evidence-Carrying Termination for Tool-Using LLMs",
+  "source_url": "https://arxiv.org/abs/2608.23623",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种名为“证据携带终止”（Evidence-Carrying Termination, ECT）的机制，用于解决工具使用型大语言模型（LLM）代理在何时停止运行的问题。现有系统虽然能通过门控终端成功、认证执行轨迹或强制执行运行时策略来管理终止，但并未在受控终止故障的完整边界上测试这种特定的收据、范围和封闭重放设计。ECT机制要求代理仅在类型化证书将每个必需的答案声明绑定到可验证证据时，才能返回“COMPLETE”状态。作者实例化并评估了ECT，在受控故障条件下验证其有效性。该研究关注代理的可靠性和可验证性，对构建安全、可信的AI代理系统具有重要意义，尤其是在需要精确终止和结果验证的复杂任务场景中。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Termination",
+    "Verification",
+    "Tool-Using"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ECT机制通过类型化证书绑定答案声明与证据，确保代理仅在可验证时返回COMPLETE，提高了终止的可靠性。",
+      "该设计在受控终止故障的边界上进行了评估，填补了现有系统在特定终止场景验证上的空白。",
+      "该研究为工具使用型LLM代理的终止决策提供了形式化方法，有助于增强代理系统的安全性和可审计性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

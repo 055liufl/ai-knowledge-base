@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-084",
+  "title": "ResiSpec: Enhancing Multi-Candidate Speculative Sampling via Residual Distribution Shaping",
+  "source_url": "https://arxiv.org/abs/2608.24411",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ResiSpec 的新方法，旨在通过残差分布塑形（Residual Distribution Shaping）增强多候选推测采样（Multi-Candidate Speculative Sampling）的效率。推测解码（Speculative Decoding, SD）通过轻量级草稿模型预测未来 token，并由大型语言模型（LLM）并行验证，从而缓解自回归解码的串行瓶颈。多候选方案通过生成多样化的候选集提高 token 接受率，但现有方法在候选分布与目标分布之间的残差利用上存在不足。ResiSpec 通过显式建模和塑形残差分布，优化候选生成策略，使得草稿模型与目标模型之间的分布差异被更有效地利用，从而提升接受率和整体解码速度。该方法在多个基准测试上展示了显著的加速效果，并保持了生成质量。该研究对于提升 LLM 推理效率具有重要价值，尤其适用于高吞吐量、低延迟的在线服务场景。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Efficiency",
+    "Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:50:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ResiSpec 通过残差分布塑形，更有效地利用草稿模型与目标模型之间的分布差异，提升多候选推测采样的 token 接受率。",
+      "该方法在保持生成质量的同时，显著加速了 LLM 推理，适用于对延迟敏感的应用场景。",
+      "ResiSpec 为推测解码提供了一种新的优化视角，即通过显式建模残差分布来指导候选生成，而非仅依赖多样化的候选集。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

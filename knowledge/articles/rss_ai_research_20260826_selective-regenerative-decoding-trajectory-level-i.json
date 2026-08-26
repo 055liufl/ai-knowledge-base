@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-079",
+  "title": "Selective Regenerative Decoding: Trajectory-Level Intervention for Inference-Time Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.24338",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为选择性再生解码（Selective Regenerative Decoding, SRD）的推理时解码方法，旨在提升大型语言模型（LLM）的推理能力。传统推理时解码方法通过探索多个候选轨迹来改进推理，但将每个轨迹视为原子单元，要么整体保留，要么不可逆地丢弃，导致部分有潜力的候选轨迹中高质量的前缀被浪费，因为其退化的后缀被一并舍弃。SRD 通过将每个候选轨迹路由到丢弃、保留或仅精炼退化部分三种操作之一，实现了轨迹级别的干预，从而更高效地利用计算资源。该方法有望在保持推理质量的同时，减少计算浪费，提升推理效率。该研究发表于 arXiv（编号 2608.24338），属于推理时计算优化领域的前沿探索，对于提升 LLM 在复杂推理任务中的表现具有潜在价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Decoding",
+    "Inference-Time",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:49:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统解码方法将候选轨迹视为原子，导致部分高质量前缀被浪费，SRD 通过轨迹级干预解决此问题。",
+      "SRD 引入三种路由操作：丢弃、保留或精炼退化部分，实现更细粒度的计算资源分配。",
+      "该方法有望在提升推理质量的同时降低计算开销，为推理时解码提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

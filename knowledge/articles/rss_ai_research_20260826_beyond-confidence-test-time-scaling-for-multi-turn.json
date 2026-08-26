@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260826-046",
+  "title": "Beyond Confidence: Test-Time Scaling for Multi-Turn Search Agents via Retrieval Grounding",
+  "source_url": "https://arxiv.org/abs/2608.24024",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在多轮搜索代理场景下，基于置信度的投票机制（如使用token对数概率作为权重）的失效问题。作者指出，尽管置信度投票在单轮推理中表现良好，但在多轮检索增强的代理任务中，由于模型会复制外部文档内容，导致置信度信号失真，从而影响投票效果。论文提出了一种基于检索依据（retrieval grounding）的测试时扩展方法，以改进多轮搜索代理的性能。这项工作对于理解LLM在复杂交互任务中的不确定性估计和决策融合具有重要意义，并为测试时计算扩展提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Test-Time Scaling",
+    "Retrieval",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:47:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "置信度投票在单轮推理中有效，但在多轮搜索代理中因复制外部内容而失效。",
+      "检索依据（retrieval grounding）可作为改进多轮代理测试时扩展的关键信号。",
+      "该研究揭示了LLM在多轮交互中不确定性估计的局限性，并提出了针对性解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-122",
+  "title": "Rebuild Dossier: Mechanically-Enforced Specs for Agentic App Rebuilds, and What Model-Tier Failures Reveal",
+  "source_url": "https://arxiv.org/abs/2608.23616",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个名为 rebuild-dossier 的开源工具，旨在通过机械强制规范（mechanically-enforced specs）提升 AI 智能体重建（rebuild）应用的质量。研究背景指出，当模型能力足够强时，复杂的多智能体重建流程反而不如简单方法（如直接给模型原始代码和一条指令，即 AgentModernize）。rebuild-dossier 的核心思路是在编写任何代码之前，先锁定应用的真实接口（即精确的输入和输出），然后强制每次只构建一个测试，从而确保重建过程严格遵循规范。该工具还揭示了不同模型层级（model-tier）在重建任务中的失败模式，为理解模型能力边界提供了实证。这项工作对智能体开发工具链和模型评估具有参考价值，值得关注。",
+  "tags": [
+    "Agent",
+    "Tool",
+    "Specification",
+    "Model Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "rebuild-dossier 通过预先锁定接口和逐测试强制构建，提高了智能体重建的可靠性和可验证性。",
+      "研究对比发现，在模型能力足够强时，简单方法（AgentModernize）可能优于复杂多智能体流程，挑战了传统重建范式。",
+      "不同模型层级在重建中的失败模式揭示了模型能力的差异，为选择合适模型和优化重建策略提供了依据。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

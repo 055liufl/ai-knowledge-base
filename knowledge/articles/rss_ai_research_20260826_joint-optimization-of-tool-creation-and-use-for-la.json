@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-097",
+  "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2608.24571",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SMITH（Schema-grounded Multi-task Iterative Tool Honing）的强化学习框架，用于大型语言模型（LLM）代理中工具创建与使用的联合优化。传统工具增强型语言模型受限于人类编写的API，而现有的工具创建系统通常通过提示冻结的LLM在推理时生成工具，导致工具编写模型与使用模型脱节，且无法确保生成的模式（schema）可被调用。SMITH通过联合训练工具创建和使用，利用模式引导的多任务迭代优化，使模型在生成工具时能感知其可调用性，从而提升代理的自主性和任务完成能力。该研究解决了工具生成与使用之间的反馈闭环问题，对提升LLM代理的实用性和扩展性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Tool Learning"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:50:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SMITH框架通过强化学习联合优化工具创建与使用，解决了传统方法中工具生成与调用脱节的问题。",
+      "模式引导（schema-grounded）的迭代优化确保生成的工具模式可被模型自身有效调用，提升代理的自主性。",
+      "该研究为工具增强型LLM代理提供了新的训练范式，有望减少对人工API的依赖，增强模型在动态环境中的适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

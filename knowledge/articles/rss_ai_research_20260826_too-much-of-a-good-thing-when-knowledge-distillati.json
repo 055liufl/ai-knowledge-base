@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-133",
+  "title": "Too much of a good thing -- when knowledge distillation promotes overfitting, and how to avoid it",
+  "source_url": "https://arxiv.org/abs/2608.23752",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了知识蒸馏（Knowledge Distillation, KD）在应用于神经网络中间层时可能引发的过拟合问题，并提出了规避策略。传统KD仅在网络最终输出层进行，而中间层KD虽能提升学生网络性能，但过度使用会导致过拟合，尤其是在训练数据有限的情况下。作者通过实验分析了中间层KD的过拟合机制，并提出了动态调整蒸馏强度或选择性应用中间层蒸馏的方法，以平衡知识迁移与泛化能力。该研究对模型压缩和高效深度学习具有实践意义，为开发者提供了优化KD策略的指导。",
+  "tags": [
+    "Knowledge Distillation",
+    "Overfitting",
+    "CNN",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "中间层知识蒸馏虽能增强学生网络学习，但过度使用会导致过拟合，尤其在数据不足时。",
+      "过拟合源于中间层特征过度匹配教师网络，限制了学生网络的泛化能力。",
+      "动态调整蒸馏强度或选择性应用中间层蒸馏可有效缓解过拟合，提升模型性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

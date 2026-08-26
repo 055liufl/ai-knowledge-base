@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-013",
+  "title": "Gated Activation Steering for Reducing Sycophancy &amp; Hallucination in Medical Question Answering",
+  "source_url": "https://arxiv.org/abs/2608.23666",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“门控激活引导”（Gated Activation Steering）的方法，用于减少大语言模型（LLM）在医学问答中的谄媚行为（sycophancy）和幻觉（hallucination）。在临床问答场景中，模型必须严格基于提供的上下文进行回答，并抵抗用户的压力，但幻觉会引入上下文不支持的信息，而谄媚可能导致模型在用户质疑时放弃原本正确的答案。该方法通过识别并调整模型内部激活方向，在推理时对特定层进行门控干预，从而抑制不良行为，同时保持模型在正常情况下的性能。论文在医学问答基准上进行了实验，结果表明该方法能显著降低幻觉和谄媚发生率，同时保持回答的准确性。这项研究对于提升LLM在医疗等高风险领域的可靠性具有重要意义，为可解释的模型行为控制提供了新思路。",
+  "tags": [
+    "LLM",
+    "Hallucination",
+    "Medical QA",
+    "Activation Steering"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:45:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "门控激活引导通过动态调整模型内部激活，针对性地减少谄媚和幻觉，而无需重新训练模型。",
+      "在医学问答中，该方法能有效提升模型对上下文的忠实度，并增强对用户压力的鲁棒性。",
+      "该方法具有可解释性，通过分析激活方向揭示了模型行为偏差的潜在机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

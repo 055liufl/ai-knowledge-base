@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260826-093",
+  "title": "Neurosymbolic Alignment for Physiologically-Safe Clinical Language Models",
+  "source_url": "https://arxiv.org/abs/2608.24534",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“神经符号对齐”（Neurosymbolic Alignment）的训练时框架，旨在提升临床大语言模型（LLM）的生理安全性。临床LLM在生成建议时可能表面上事实合理，但生理上不安全。该框架将7B参数的临床LLM与基于HGNN（异构图神经网络）的生理世界模型耦合，该模型构建在包含84.7万个节点的生物医学知识图谱之上。通过将偏好优化（如RLHF或DPO）与结构化生理知识相结合，而非仅依赖文本监督，该方法旨在使模型生成更符合生理学约束的建议。该研究针对医疗AI中的关键安全问题，具有重要的应用价值，可能为临床决策支持系统提供更可靠的保障。",
+  "tags": [
+    "LLM",
+    "Safety Alignment",
+    "Clinical AI",
+    "Knowledge Graph",
+    "Neurosymbolic"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:50:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将结构化生理知识融入偏好优化，可显著提升临床LLM的安全性，超越纯文本监督。",
+      "HGNN生理世界模型能有效编码生物医学知识图谱中的复杂关系，为对齐提供可解释的约束。",
+      "该框架在训练时干预，无需修改推理过程，便于集成到现有临床LLM流程中。",
+      "为医疗AI的安全对齐提供了新范式，可能推广到其他高风险领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-116",
+  "title": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+  "source_url": "https://arxiv.org/abs/2608.24870",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为SPO++（Stream-Aligned Policy Optimization）的异步智能体强化学习方法，旨在解决现有强化学习在长轨迹工具使用场景下的效率瓶颈。传统组相对强化学习需要等待同一提示的兄弟轨迹完成，导致训练成本高且延迟大。SPO通过持久提示级价值估计消除了这一依赖，但存在轨迹级白化与token均值损失不匹配的问题。SPO++引入流对齐机制，使价值估计与token级优化目标保持一致，从而在异步环境中更高效地训练智能体。该方法对于需要复杂工具调用的智能体系统（如代码生成、网页操作等）具有重要意义，能显著提升训练吞吐量和样本效率，同时保持策略性能。该研究为异步智能体强化学习提供了新的理论视角和实用方案，值得关注。",
+  "tags": [
+    "Agent",
+    "Reinforcement Learning",
+    "LLM",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SPO++通过流对齐解决轨迹级白化与token级损失不匹配问题，提升异步RL效率",
+      "该方法适用于长轨迹工具使用场景，减少等待开销，加速训练",
+      "为智能体强化学习提供了新的优化方向，可能推动更复杂Agent应用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

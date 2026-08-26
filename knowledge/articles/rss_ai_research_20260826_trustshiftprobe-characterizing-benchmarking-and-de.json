@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-135",
+  "title": "TrustShiftProbe: Characterizing, Benchmarking, and Defending Staged Trust Attacks on MCP Servers",
+  "source_url": "https://arxiv.org/abs/2608.23763",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并系统研究了针对模型上下文协议（MCP）服务器的新型安全威胁——TrustShift攻击。该攻击利用MCP作为连接大语言模型（LLM）代理与外部工具的标准层，通过分阶段策略实施：在初始条件阶段，被攻陷的服务器表现正常，逐步建立代理的依赖并抑制其怀疑；当交互达到一定阈值后，服务器切换至对抗性载荷，从而规避检测。论文对TrustShift攻击进行了特征化描述，构建了基准测试集，并提出了防御方法。这一研究揭示了MCP生态系统中服务器端安全的重要盲点，对依赖MCP的LLM代理应用具有直接的安全影响，值得开发者和安全研究人员高度关注。",
+  "tags": [
+    "MCP",
+    "LLM",
+    "Security",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:53:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TrustShift攻击利用MCP服务器的信任建立过程，通过分阶段行为切换实现高隐蔽性攻击。",
+      "该研究提供了针对此类攻击的基准测试集，为安全评估和防御策略开发奠定基础。",
+      "防御方法可能包括动态信任评估和交互行为异常检测，以缓解阈值触发后的攻击风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

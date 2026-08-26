@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260826-004",
+  "title": "A survey detection channel overrides the pixels in an astronomical foundation model, and biases tomographic mean redshifts",
+  "source_url": "https://arxiv.org/abs/2608.23626",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对天文领域的基础模型AION-1进行系统性审计，发现其训练数据中的调查目录不完整性会作为系统性偏差被模型继承。AION-1是一个基于超过2亿天体、涵盖39种模态的Transformer模型，其训练数据同时包含调查像素和由这些像素生成的目录产品。由于目录产品存在可测量的不完整率，模型在训练过程中会将这些不完整性内化为偏差。研究者通过因果干预方法，在保持图像token完全一致的情况下，仅编辑调查通道的输入，从而隔离并验证了这种偏差对层析红移估计的影响。该工作揭示了基础模型在科学数据应用中可能存在的隐性偏差，并提出了审计方法，对天文领域乃至更广泛的科学基础模型的可信度评估具有重要参考价值。",
+  "tags": [
+    "Foundation Model",
+    "Astronomy",
+    "Bias",
+    "Causal Intervention"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:45:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基础模型会继承训练数据中的系统性偏差，如调查目录的不完整性。",
+      "通过因果干预可以隔离并验证模型输入中特定通道的影响。",
+      "该审计方法为科学基础模型的可信度评估提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

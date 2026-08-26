@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260826-126",
+  "title": "ToolRobustBench: Stage-Wise Perturbation Evaluation and Failure Diagnosis for Tool-Calling Agents",
+  "source_url": "https://arxiv.org/abs/2608.23635",
+  "source_platform": "rss_ai_research",
+  "summary": "ToolRobustBench 是一个针对工具调用智能体的阶段式扰动评估与故障诊断基准。该研究指出，大型语言模型（LLM）依赖工具调用作为核心智能体能力，但传统的端到端（E2E）成功率无法定位工具使用失败的具体环节或传播路径。为此，ToolRobustBench 引入阶段式诊断方法，将工具调用流程分解为多个阶段（如工具选择、参数生成、结果解析等），并针对每个阶段施加扰动（如输入噪声、工具响应异常等），以系统评估智能体在不同环节的鲁棒性。该基准不仅提供细粒度的性能指标，还能自动诊断故障来源，帮助开发者识别模型在工具调用链中的薄弱点。这一工作填补了现有评估体系在工具调用故障定位方面的空白，对提升智能体在实际应用中的可靠性具有重要意义，尤其适用于复杂多步骤任务场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Robustness",
+    "Tool Calling"
+  ],
+  "author": null,
+  "published_at": "2026-08-26T08:42:47Z",
+  "collected_at": "2026-08-26T08:52:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统端到端成功率无法定位工具调用失败的具体环节，阶段式诊断能提供更细粒度的故障分析。",
+      "ToolRobustBench 通过分阶段扰动评估，系统性地测试智能体在工具选择、参数生成等环节的鲁棒性。",
+      "该基准支持自动故障诊断，有助于开发者识别并改进模型在工具调用链中的薄弱环节。",
+      "为工具调用智能体的可靠性评估提供了新范式，推动更稳健的智能体系统设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
