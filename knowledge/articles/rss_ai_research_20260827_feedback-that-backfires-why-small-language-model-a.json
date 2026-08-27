@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260827-127",
+  "title": "Feedback That Backfires: Why Small Language Model Agents Repeat the Call They Just Watched Fail",
+  "source_url": "https://arxiv.org/abs/2608.23651",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了小型语言模型（SLM）在智能体环境中，面对失败的工具调用时，模型重复相同错误调用的现象。作者提出了“纠正增益”（corrective gain）的概念，即失败记录对重新发出失败动作的对数概率变化。通过对6个检查点、参数规模从135M到1.7B的4个模型家族进行测试，发现所有指令微调模型的纠正增益均为负值，意味着失败记录不仅没有帮助模型纠正错误，反而增加了重复失败调用的概率。这一发现挑战了智能体框架中普遍假设——将错误信息作为上下文反馈能促进模型改进。研究揭示了小型模型在利用错误反馈方面的局限性，对智能体设计、提示工程和模型训练具有重要启示。该论文值得关注，因为它指出了当前智能体系统中的一个潜在缺陷，并提供了量化评估方法，有助于改进智能体反馈机制和模型训练策略。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Feedback",
+    "Error Correction"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:05:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "失败记录对小型语言模型产生负向纠正增益，导致模型更可能重复失败动作。",
+      "所有测试的指令微调模型均表现出此现象，表明该问题具有普遍性。",
+      "提出纠正增益作为量化评估失败反馈有效性的新指标。",
+      "智能体框架中简单将错误信息作为上下文可能适得其反，需重新设计反馈机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-122",
+  "title": "Rebuild Dossier: Mechanically-Enforced Specs for Agentic App Rebuilds, and What Model-Tier Failures Reveal",
+  "source_url": "https://arxiv.org/abs/2608.23616",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个名为 rebuild-dossier 的开源工具，用于在 AI 代理重建应用程序时强制执行机械化的规格约束。该工具在编写任何代码之前锁定应用的真实接口（精确的输入和输出），然后逐个测试地强制执行构建过程。研究背景指出，当模型足够强大时，多代理重建流水线反而会输给最简单的方法：给模型原始代码和一条指令（AgentModernize）。rebuild-dossier 通过预先定义接口规格，确保重建过程的可控性和正确性，并揭示了不同模型层级在重建任务中的失败模式。这项工作对于理解 AI 代理在软件工程中的应用边界、提升重建可靠性具有重要意义，并为代理工具的设计提供了新的思路。",
+  "tags": [
+    "AI Agent",
+    "Software Engineering",
+    "Specification",
+    "Open Source Tool"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:04:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "rebuild-dossier 通过预先锁定接口规格，避免了重建过程中的歧义，提高了成功率。",
+      "研究发现，简单方法（AgentModernize）在强模型下优于复杂多代理流水线，挑战了现有重建策略。",
+      "不同模型层级的失败模式揭示了模型能力与任务复杂度之间的关键关系。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

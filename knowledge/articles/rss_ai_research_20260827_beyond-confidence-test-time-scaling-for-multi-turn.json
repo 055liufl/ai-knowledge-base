@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-046",
+  "title": "Beyond Confidence: Test-Time Scaling for Multi-Turn Search Agents via Retrieval Grounding",
+  "source_url": "https://arxiv.org/abs/2608.24024",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在多轮搜索代理场景中，基于置信度的投票机制（如使用 token 对数概率作为权重）的失效问题。传统上，置信度投票在单轮推理中表现良好，但现代 LLM 常作为多轮搜索代理，需要检索并依赖外部文档。作者发现，置信度投票在此场景下迁移效果差，并指出根本原因是模型在生成过程中复制检索到的内容，导致置信度信号失真。为此，论文提出通过检索接地（retrieval grounding）来改进测试时扩展（test-time scaling）策略，以提升多轮搜索代理的决策质量。该研究为 LLM 代理的推理优化提供了新视角，具有重要的理论和实践价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Test-Time Scaling",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T18:59:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "置信度投票在单轮推理中有效，但在多轮搜索代理中因复制检索内容而失效。",
+      "检索接地机制可纠正置信度信号，提升多轮决策的可靠性。",
+      "测试时扩展策略需针对代理的检索行为进行专门设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

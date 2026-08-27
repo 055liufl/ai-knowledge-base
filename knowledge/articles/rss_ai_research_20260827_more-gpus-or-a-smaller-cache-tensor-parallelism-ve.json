@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-038",
+  "title": "More GPUs or a Smaller Cache? Tensor Parallelism versus KV Compression for Memory-Bound LLM Serving",
+  "source_url": "https://arxiv.org/abs/2608.23962",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了大型语言模型（LLM）服务中KV缓存容量不足时的两种主流解决方案：张量并行（Tensor Parallelism）与KV压缩（KV Quantisation/Eviction）。张量并行通过将权重和KV缓存分片到多个GPU上，以增加内存容量，但代价是每层引入全归约通信开销和硬件成本随设备数增长。KV压缩则通过量化或驱逐策略在单GPU上缩减缓存，牺牲少量生成质量。论文针对内存受限的LLM服务场景，对两种方法进行了系统比较，分析了各自的性能权衡、成本效益和适用条件。该研究为服务部署者提供了决策依据，有助于在硬件扩展与算法优化之间做出合理选择，对提升LLM服务的效率和成本控制具有实际意义。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Tensor Parallelism",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T18:59:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "张量并行通过多设备分片增加内存，但引入通信开销和硬件成本，适合高并发场景。",
+      "KV压缩在单GPU上减少缓存占用，牺牲少量质量，适合资源受限或成本敏感场景。",
+      "两种方法可互补，实际选择需权衡延迟、吞吐、质量和成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

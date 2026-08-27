@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-080",
+  "title": "The Handoff Tax: Continuing Non-Native Trajectories in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.24358",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了LLM智能体在执行长时间编码任务时，因模型切换（handoff）而产生的成本-质量权衡问题。具体而言，当用户从较弱模型升级到较强模型以应对困难推理，或在任务完成前降级以节省成本时，接收模型需要继续执行由其他模型生成的“非原生轨迹”（non-native trajectory）。论文系统分析了这种切换对任务质量和成本的影响，并探讨了如何通过调整切换策略来优化整体性能。该研究对于实际部署LLM智能体具有重要指导意义，因为它揭示了模型间协作的隐性成本，并提供了优化切换时机和方式的可能方法。该研究属于LLM智能体应用层面的前沿探索，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Cost Optimization",
+    "Model Switching"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:02:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型切换会引入'交接税'，即接收模型在继续非原生轨迹时可能产生额外推理错误或性能下降。",
+      "切换时机和模型选择对成本-质量权衡有显著影响，存在最优切换策略。",
+      "研究为动态模型路由提供了实证基础，有助于设计更高效的智能体系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

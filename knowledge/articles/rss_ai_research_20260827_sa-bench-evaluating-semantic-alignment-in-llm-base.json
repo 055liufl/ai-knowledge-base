@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260827-067",
+  "title": "SA-Bench: Evaluating Semantic Alignment in LLM-Based Paper Reproduction",
+  "source_url": "https://arxiv.org/abs/2608.24252",
+  "source_platform": "rss_ai_research",
+  "summary": "SA-Bench 是一个针对基于大语言模型（LLM）的论文复现代码进行语义对齐评估的基准测试。该研究指出，LLM 智能体生成的论文复现代码常常在科学上不忠实于原文，并将这种失败模式定义为“语义漂移”，即生成的代码在未明确提示的情况下与论文规范产生偏差。为了系统性地诊断这一问题，作者提出了 SemanticAlign-Bench（SA-Bench），一个包含来自 ICLR、ICML 和 NeurIPS 2025 的 30 篇论文的诊断基准。对于每篇论文，SA-Bench 将其规范分解为原子且可验证的实现声明，并以此为基础评估 LLM 生成的代码是否与论文的原始语义保持一致。该基准的提出填补了当前 LLM 在科学代码生成领域缺乏标准化评估工具的空白，对于提升 LLM 在科研复现中的可靠性和可信度具有重要意义。它不仅是评估工具，也为未来开发更忠实的代码生成模型提供了方向。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Code Generation",
+    "Semantic Alignment",
+    "Scientific Reproducibility"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:01:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "定义了“语义漂移”这一关键失败模式，即 LLM 生成的代码在科学上不忠实于论文规范。",
+      "提出了 SA-Bench 基准，覆盖 30 篇顶级会议论文，将论文规范分解为原子可验证的实现声明。",
+      "该基准为评估和提升 LLM 在科学论文复现中的语义对齐能力提供了标准化工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

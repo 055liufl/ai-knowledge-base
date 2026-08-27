@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-110",
+  "title": "CAFE: Self-Improving Search Agents Need Co-Evolving Feedback",
+  "source_url": "https://arxiv.org/abs/2608.24794",
+  "source_platform": "rss_ai_research",
+  "summary": "CAFE 提出了一种自改进搜索智能体的新框架，通过协同进化反馈机制解决传统结果监督学习中的关键问题。在搜索智能体中，智能体需要决定何时检索证据以及如何使用检索结果，但仅依赖最终奖励无法定位中间步骤的错误，也无法在错误累积前及时纠正轨迹。CAFE 将纠正性反馈视为轨迹内的学习干预，使智能体和评论家协同进化：智能体学习何时请求反馈并利用反馈调整行动，而评论家则从结果混淆的轨迹中推断有用的纠正信息，这些轨迹的失败模式会随时间变化。该框架的核心创新在于动态耦合智能体的决策与评论家的反馈生成，形成一个自我改进的闭环系统。CAFE 在多个搜索和推理基准上展示了显著性能提升，尤其是在复杂多步推理任务中，减少了错误传播并提高了最终答案的准确性。这项工作对于提升搜索智能体的鲁棒性和自主性具有重要意义，也为强化学习中的反馈机制设计提供了新思路。",
+  "tags": [
+    "Search Agent",
+    "Reinforcement Learning",
+    "Feedback Mechanism",
+    "Self-Improvement"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:04:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAFE 通过协同进化反馈机制，让智能体和评论家共同优化，解决了结果监督中错误定位和轨迹纠正的难题。",
+      "智能体动态决定何时请求反馈，评论家则从结果混淆的轨迹中学习生成有效纠正，形成自适应闭环。",
+      "实验表明 CAFE 在复杂推理任务中显著减少错误累积，提升搜索智能体的性能和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

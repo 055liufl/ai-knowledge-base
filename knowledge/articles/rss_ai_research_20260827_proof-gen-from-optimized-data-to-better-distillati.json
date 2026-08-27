@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-032",
+  "title": "PROOF-Gen: From Optimized Data to Better Distillation",
+  "source_url": "https://arxiv.org/abs/2608.23911",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PROOF-Gen，一种用于工具调用模型蒸馏的优化数据生成方法。传统监督微调依赖教师模型生成的轨迹，但现有流程采用生成-过滤机制，仅保留教师成功的轨迹，丢弃失败样本，导致每次训练周期重复处理相同困难样本，效率低下且成本高昂。PROOF-Gen 通过优化数据选择与生成策略，旨在提升蒸馏效率，减少对前沿教师模型的重复调用，同时保持或提升学生模型的工具调用能力。该研究针对实际部署中每日或每周重新训练的场景，具有显著工程价值，可能推动更高效的模型蒸馏实践。",
+  "tags": [
+    "Distillation",
+    "Tool Calling",
+    "Data Generation",
+    "SFT"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T18:58:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具调用蒸馏依赖生成-过滤机制，重复处理困难样本，导致效率低下。",
+      "PROOF-Gen 通过优化数据生成策略，旨在降低蒸馏成本并提升学生模型性能。",
+      "该研究针对高频重新训练的部署场景，具有实际工程意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-082",
+  "title": "From State to Action: OODA-Tool for Reliable Multi-Turn Tool Use",
+  "source_url": "https://arxiv.org/abs/2608.24368",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 OODA-Tool 的方法，用于提升多轮工具调用中智能体的可靠性。其核心思想是借鉴军事决策中的 OODA 循环（观察-判断-决策-行动），将任务状态跟踪与动作生成解耦，以避免传统函数调用和 ReAct 风格策略中因状态与动作耦合而产生的“状态-动作竞争”问题。该方法通过显式维护演化中的任务状态，并在每个动作前进行一致性校验，确保智能体在长时间交互中不丢失或覆盖关键信息。论文展示了该方法在复杂多轮工具使用场景中的有效性，为构建更可靠的智能体提供了新思路。该研究值得关注，因为它直接针对当前 LLM 智能体在长对话中状态管理困难的核心痛点，具有较高的实用价值和理论意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool Use",
+    "State Tracking"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:02:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "状态与动作解耦可显著减少多轮工具调用中的信息丢失和错误累积。",
+      "OODA 循环为智能体设计提供了结构化框架，增强了对动态任务状态的适应性。",
+      "该方法在保持动作生成效率的同时，提升了整体任务完成的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260827-018",
+  "title": "Serving Masked Diffusion LLMs: Characterization and Design Principles from Real Hardware",
+  "source_url": "https://arxiv.org/abs/2608.23807",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对掩码扩散语言模型（dLLMs）的服务系统设计进行了深入研究。与自回归（AR）模型相比，dLLMs 理论上可以同时去噪多个 token，从而加速文本生成。然而，现有的服务系统大多基于 AR 模型的假设，缺乏对 dLLMs 在真实并发服务负载下行为的测量。本文首次对 dLLMs 在真实硬件上的服务行为进行了特征化分析，揭示了其与 AR 模型在服务层面的关键差异，并提出了针对 dLLMs 的服务系统设计原则。该研究填补了 dLLMs 服务基础设施领域的空白，为构建高效、可扩展的 dLLM 服务系统提供了实证基础和设计指导，对推动扩散语言模型的实际应用具有重要意义。",
+  "tags": [
+    "Masked Diffusion",
+    "LLM Serving",
+    "System Design"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T18:57:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次对 dLLMs 在真实并发服务负载下的行为进行特征化分析，填补了该领域的研究空白。",
+      "揭示了 dLLMs 与 AR 模型在服务层面的关键差异，表明直接沿用 AR 服务假设可能导致性能瓶颈。",
+      "提出了针对 dLLMs 的服务系统设计原则，为构建高效服务基础设施提供了实证基础。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

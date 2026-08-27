@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260827-092",
+  "title": "PeakBench: Benchmarking Resource-Aware Tool Invocation in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.24509",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 PeakBench，一个用于评估 LLM 智能体在资源受限环境下工具调用调度能力的新基准。现有基准主要关注工具选择、参数生成和端到端任务成功率，且大多假设串行执行，忽略了并行执行和资源约束调度这一关键维度。PeakBench 填补了这一空白，通过设计包含资源约束（如内存、带宽）和并行执行需求的场景，衡量智能体在调度多个工具调用时的效率、安全性和资源利用率。该基准对于提升 LLM 智能体在真实生产环境中的低延迟和可靠性具有重要意义，尤其是在需要同时调用多个外部 API 或服务的复杂任务中。其创新性在于引入了调度维度，使评估更贴近实际部署需求，为智能体系统设计和优化提供了新的测试标准和改进方向。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Tool Invocation",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:02:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体基准忽视资源受限下的并行调度，导致实际部署中串行执行成为性能瓶颈。",
+      "PeakBench 通过引入资源约束和并行执行场景，填补了评估维度上的空白。",
+      "该基准可推动智能体在工具调用调度策略上的优化，提升低延迟和安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

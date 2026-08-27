@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-120",
+  "title": "Fidelity Preference, Not Demographic Preference: A Pixel-Level Attribute-Sensitivity Audit of Image Aesthetic/Preference Scorers",
+  "source_url": "https://arxiv.org/abs/2608.23593",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对四种图像美学/偏好评分器（LAION-Aesthetics、PickScore、ImageReward、HPSv2）进行了像素级属性敏感性审计，通过干预合成和真实图像中的肤色和体型，检验这些评分器是否将人口统计属性编码为客观质量。研究发现，在肤色亮度维度上，主导效应是保真度偏好：未改变的图像（即原始图像）往往获得更高评分，而非对特定人口统计属性的偏好。这一发现表明，评分器对图像保真度的敏感度可能被误解为人口统计偏见，为文本到图像系统中的数据过滤和生成引导提供了重要启示。该研究具有方法论创新性，采用像素级干预而非全局属性修改，能够更精确地定位评分器的敏感区域，对AI伦理和生成模型评估领域具有参考价值。",
+  "tags": [
+    "AI伦理",
+    "图像评分",
+    "公平性审计",
+    "文本到图像"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:04:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "评分器在肤色亮度上的主要效应是保真度偏好，而非人口统计偏好，这挑战了先前关于评分器存在固有偏见的假设。",
+      "像素级干预方法能够更细致地揭示评分器的敏感属性，优于全局属性修改的传统审计方式。",
+      "该发现对文本到图像系统的数据过滤和生成引导具有实际意义，提示开发者需区分保真度偏好与人口统计偏见。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

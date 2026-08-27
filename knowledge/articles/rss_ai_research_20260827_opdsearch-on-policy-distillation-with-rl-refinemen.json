@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260827-075",
+  "title": "OPDSearch+: On-Policy Distillation with RL Refinement for Search-Augmented Reasoning",
+  "source_url": "https://arxiv.org/abs/2608.24310",
+  "source_platform": "rss_ai_research",
+  "summary": "OPDSearch+ 提出了一种用于增强搜索推理能力的新型训练框架，旨在解决小语言模型在搜索增强推理任务中的困难。该框架结合了在线策略蒸馏（On-Policy Distillation, OPD）与强化学习（RL）精炼，以克服传统监督微调（SFT）数据收集成本高昂和任务特定教师模型训练开销大的问题。其核心创新在于利用在线策略蒸馏从训练好的教师模型中高效学习，并通过强化学习进一步优化搜索轨迹，从而提升小模型在动态检索环境下的推理性能。该研究针对搜索增强推理中多轮搜索轨迹依赖动态检索器响应这一挑战，提出了一种更具成本效益的训练方法，有望推动小模型在复杂推理任务中的应用。该论文值得关注，因为它解决了实际部署中的关键瓶颈，并为搜索增强推理的训练策略提供了新思路。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Reinforcement Learning",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-08-27T18:54:04Z",
+  "collected_at": "2026-08-27T19:01:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏结合RL精炼可显著降低搜索增强推理的训练成本，同时保持高性能。",
+      "动态检索器响应下的多轮搜索轨迹收集是SFT的主要瓶颈，OPD提供了更高效的替代方案。",
+      "任务特定教师模型的训练开销可通过利用现成模型和在线策略蒸馏来缓解。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
