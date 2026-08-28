@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260828-037",
+  "title": "SKILL.state: Scalable Long-Horizon Agent Skills",
+  "source_url": "https://arxiv.org/abs/2608.26263",
+  "source_platform": "rss_ai_research",
+  "summary": "SKILL.state 提出了一种面向大规模语言模型（LLM）智能体的新型运行时架构，旨在解决长时程任务执行中的核心瓶颈。传统智能体运行时通过不断向对话历史追加观察、动作和中间推理轨迹来维持执行，这导致延迟逐渐增加，并在长时间运行中引发上下文污染（context-poisoning）问题。SKILL.state 摒弃了这种仅追加（append-only）的对话模式，转而采用更高效的状态管理机制，从而显著提升长时程任务的稳定性和执行效率。该工作针对智能体在复杂、长期任务中的可靠性问题，提出了可扩展的解决方案，对智能体系统的实际部署具有重要意义。其创新点在于运行时架构的重新设计，而非模型本身，因此对开发者构建生产级智能体应用具有直接参考价值。该论文发表于 arXiv，属于前沿研究，但尚未经过同行评审，其实际效果需进一步验证。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Runtime",
+    "Long-horizon"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:00:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统追加式对话历史管理在长时程任务中会导致延迟增长和上下文污染，是智能体扩展性的关键瓶颈。",
+      "SKILL.state 通过替换仅追加模式，引入更高效的状态管理，旨在提升长时程任务的稳定性和性能。",
+      "该架构为生产级智能体部署提供了基础设施层面的优化方向，而非依赖模型能力提升。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

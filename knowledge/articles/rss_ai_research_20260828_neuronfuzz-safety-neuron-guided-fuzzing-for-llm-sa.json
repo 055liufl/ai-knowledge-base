@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260828-125",
+  "title": "NeuronFuzz: Safety Neuron Guided Fuzzing for LLM Safety Evaluation",
+  "source_url": "https://arxiv.org/abs/2608.26222",
+  "source_platform": "rss_ai_research",
+  "summary": "NeuronFuzz 是一种针对大型语言模型（LLM）安全评估的新型模糊测试方法，其核心创新在于利用模型内部的安全神经元（safety neurons）来指导测试用例生成，而非仅依赖响应级反馈。传统自动化测试方法通常需要为每个候选提示生成目标模型的完整响应以评估攻击效果，这既昂贵又对强对齐模型提供稀疏的指导信号。NeuronFuzz 通过分析模型内部神经元的激活模式，识别与安全相关的神经元，并利用这些信号作为反馈来引导模糊测试过程，从而更高效地发现潜在的越狱攻击漏洞。该方法有望显著降低安全评估的计算成本，并提升对强对齐模型的攻击检测能力，为 LLM 安全评估提供了一种新的、更细粒度的技术路径。该研究来自 arXiv 预印本，属于安全评估与可解释性交叉领域，对开发者和安全研究人员具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Fuzzing",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:06:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用安全神经元激活作为反馈信号，替代传统响应级反馈，降低评估成本并增强对强对齐模型的指导。",
+      "将模糊测试与模型内部可解释性结合，为 LLM 安全评估提供更细粒度的攻击面探索。",
+      "该方法可能显著提升越狱攻击的发现效率，尤其适用于防御机制较强的模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

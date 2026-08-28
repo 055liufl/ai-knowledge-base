@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260828-113",
+  "title": "DRL: A Deterministic Relational Middleware Layer for Transaction-Safe Enterprise NL2SQL Under Schema-Graph Scaling",
+  "source_url": "https://arxiv.org/abs/2608.26172",
+  "source_platform": "rss_ai_research",
+  "summary": "DRL（确定性关系中间件层）是一种针对企业级OLTP目录的自然语言接口部署方案，旨在解决语义解析器在模式图规模扩展时因上下文膨胀超出LLM注意力预算而失效的问题。DRL作为前端与SQL后端之间的安全管道，包含动态上下文剪枝、关系AST类型化以及事务安全验证（如EXPLAIN门控）等核心组件。该研究针对企业NL2SQL场景中的关键挑战，通过引入确定性中间层来增强LLM在复杂模式下的稳定性和事务安全性，具有较高的实用价值。论文发表于arXiv，编号2608.26172，属于交叉类型公告，可能涉及数据库、自然语言处理与LLM应用的交叉领域。该工作对于需要处理大规模数据库模式的企业应用开发者具有参考意义，其创新点在于将确定性逻辑与LLM结合，以缓解上下文窗口限制并确保事务安全。",
+  "tags": [
+    "NL2SQL",
+    "LLM",
+    "中间件",
+    "事务安全",
+    "模式图"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:05:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DRL通过动态上下文剪枝和关系AST类型化，有效应对模式图规模扩展带来的上下文膨胀问题。",
+      "引入事务安全验证（如EXPLAIN门控）确保NL2SQL在关键业务场景中的可靠性。",
+      "该中间件层设计可作为前端与SQL后端之间的安全管道，提升企业级应用的稳定性。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

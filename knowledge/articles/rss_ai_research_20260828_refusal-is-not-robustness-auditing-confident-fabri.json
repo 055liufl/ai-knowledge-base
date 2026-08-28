@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260828-018",
+  "title": "Refusal Is Not Robustness: Auditing Confident Fabrication in Large Language Models on a Provably Uninformative Clinical Pain Speech Transcript",
+  "source_url": "https://arxiv.org/abs/2608.26167",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对大语言模型在临床疼痛语音转录分析中的幻觉与拒答行为进行了审计，提出了一种新的评估框架。作者指出，现有的幻觉和拒答基准很少能证明模型确实无法得知正确答案，因此难以区分合理的拒答与无根据的预测。研究使用了TAME Pain语音语料库，其中参与者朗读语音平衡的哈佛句子，同时一只手浸入冷水或温水中，并仅在周期性疼痛陈述时报告疼痛。该协议确保模型无法从语音内容中推断出疼痛状态，从而提供了一个可证明信息不足的临床场景。研究评估了七种大语言模型，重点考察它们在面对此类不确定信息时是否会产生自信的虚构（即幻觉）而非适当拒答。结果表明，模型在信息不足时仍倾向于生成看似合理但错误的疼痛判断，且拒答率与幻觉率之间存在复杂关系。该研究强调了“拒答不等于鲁棒性”的核心观点，为临床AI系统的安全性和可靠性评估提供了新视角，并呼吁开发更严格的基准来区分合理拒答与幻觉。",
+  "tags": [
+    "LLM",
+    "Hallucination",
+    "Clinical AI",
+    "Robustness",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T19:59:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有幻觉基准缺乏对模型知识边界的证明，导致无法区分合理拒答与无根据预测。",
+      "在可证明信息不足的临床场景中，LLM仍可能产生自信的虚构，表明拒答机制不完善。",
+      "该研究提出使用特定语音协议（如TAME Pain）作为评估模型鲁棒性的新方法。",
+      "模型在临床决策中的安全性需要更严格的审计框架，而不仅仅是提高拒答率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

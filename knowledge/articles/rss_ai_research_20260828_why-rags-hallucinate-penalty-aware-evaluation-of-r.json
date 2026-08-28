@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260828-134",
+  "title": "Why RAGs Hallucinate: Penalty-Aware Evaluation of Retrieval-Augmented Generation Systems with Knowledge-Gap Canaries",
+  "source_url": "https://arxiv.org/abs/2608.26385",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对检索增强生成（RAG）系统的惩罚感知评估框架，旨在解决现有评估指标鼓励系统在知识不足时猜测的问题。传统基于准确率的评估会奖励猜测行为，导致系统在知识库无法支撑答案时仍强行作答，从而产生幻觉。该框架结合了非对称评分（正确得+1，错误扣-4，弃权得0）和知识缺口金丝雀（knowledge-gap canaries）问题，用于检测系统是否在知识不足时正确弃权。该研究建立在Kalai等人（2025）的置信度目标分析基础上，为RAG产品的部署提供了更可靠的评估方法。通过引入惩罚机制，该框架鼓励系统在不确定时选择弃权，从而减少幻觉，提升系统的可靠性和可信度。这一工作对于RAG系统的实际应用具有重要意义，尤其是在高风险领域如医疗、法律等，错误的回答可能带来严重后果。",
+  "tags": [
+    "RAG",
+    "Evaluation",
+    "Hallucination",
+    "Penalty-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:06:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基于准确率的评估指标会鼓励RAG系统在知识不足时猜测，导致幻觉问题。",
+      "提出的非对称评分机制（正确+1，错误-4，弃权0）能有效惩罚错误回答，鼓励系统在不确定时弃权。",
+      "知识缺口金丝雀问题用于测试系统对知识边界的感知能力，是评估框架的核心组成部分。",
+      "该框架为RAG系统的可靠部署提供了更全面的评估方法，尤其适用于高风险应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

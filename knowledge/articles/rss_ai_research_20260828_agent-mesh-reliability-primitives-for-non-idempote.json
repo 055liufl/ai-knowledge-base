@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260828-033",
+  "title": "Agent Mesh: Reliability Primitives for Non-Idempotent Agent Delegation - Identity Adequacy and Evidence Adequacy",
+  "source_url": "https://arxiv.org/abs/2608.26225",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一项针对生产环境中自主代理编排系统的可靠性研究，提出了“Agent Mesh”概念，聚焦于非幂等代理委托中的可靠性原语。研究基于一个生产级代理软件交付平台，分析了147个编号事件（跨越81次运行），每个事件都有成本测量，多数伴有变异证明以复现故障。核心贡献在于识别出传统服务网格的可靠性机制（如重试、超时、熔断）在代理场景下的不足，并引入“身份充分性”和“证据充分性”两个新原语，以应对非幂等操作带来的挑战。该研究为代理编排的可靠性设计提供了实证基础和新视角，对构建健壮的自主代理系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Reliability",
+    "Orchestration",
+    "Service Mesh"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T19:59:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统服务网格的可靠性机制（重试、超时、熔断）在非幂等代理委托中可能失效，需要新的原语。",
+      "提出身份充分性和证据充分性作为代理委托可靠性的关键原语，确保操作可追溯和可验证。",
+      "基于147个生产事件的研究提供了实证数据，揭示了代理失败的模式和成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

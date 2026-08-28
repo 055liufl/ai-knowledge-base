@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260828-054",
+  "title": "Graph-Guided Selective Unlearning for Language Models: Controlling Support Routes Beyond Forget Seeds",
+  "source_url": "https://arxiv.org/abs/2608.26743",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于图引导的选择性遗忘方法，用于语言模型，旨在解决现有选择性遗忘技术仅删除显式标记的遗忘样本、而无法阻止通过关联路径（即支持路由）恢复目标知识的问题。该方法通过构建知识图谱来识别与遗忘种子相关的支持路由，并在训练过程中引导模型遗忘这些路由上的信息，从而更彻底地移除目标知识，同时保持模型在其余任务上的效用。该研究针对企业合规需求（如隐私、合同义务）提供了比全量重训更高效的替代方案，具有实际应用价值。其创新点在于将遗忘范围从点扩展到图结构路径，提升了遗忘的鲁棒性。该工作对LLM的安全部署和合规性研究有重要参考意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Unlearning",
+    "Knowledge Graph",
+    "Privacy",
+    "Compliance"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:01:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有选择性遗忘方法仅删除显式遗忘样本，忽略了通过知识关联路径恢复信息的风险，本文提出图引导方法扩展遗忘范围至支持路由。",
+      "通过构建知识图谱识别与遗忘种子相关的支持路由，并在训练中引导模型遗忘这些路径，可更彻底移除目标知识。",
+      "该方法在保持模型整体效用（如其他任务性能）的同时，增强了遗忘的鲁棒性，为企业合规场景提供了实用方案。",
+      "研究为语言模型的安全部署和隐私保护提供了新思路，可能推动选择性遗忘技术的进一步发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

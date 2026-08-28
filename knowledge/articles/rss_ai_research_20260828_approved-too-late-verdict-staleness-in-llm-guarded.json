@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260828-039",
+  "title": "Approved Too Late: Verdict Staleness in LLM-Guarded Self-Adaptive Systems",
+  "source_url": "https://arxiv.org/abs/2608.26306",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究自适应性系统（SAS）中由大语言模型（LLM）作为护栏（guardrail）时，其批准决策可能因时间延迟而过时的问题。具体而言，LLM在检查时给出的批准在系统执行时可能已失效，形成执行阶段的TOCTOU（检查时间到使用时间）漏洞。论文提出“裁决新鲜度”（verdict freshness）概念，区分三个关键指标：固定动作重放下的全候选裁决变化、基于oracle标签的批准有效性等，以量化裁决在时间推移中的可靠性。该研究对LLM在动态环境中的安全应用具有重要价值，尤其涉及实时决策和自动化系统的可靠性。",
+  "tags": [
+    "LLM",
+    "Self-Adaptive System",
+    "TOCTOU",
+    "Safety",
+    "Guardrail"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T20:00:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM护栏的批准可能因执行延迟而过时，形成TOCTOU漏洞，影响系统安全性。",
+      "提出裁决新鲜度概念，并区分三个不同指标以量化裁决随时间的变化。",
+      "研究为动态环境中LLM安全应用提供了新的评估维度，有助于设计更可靠的护栏机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

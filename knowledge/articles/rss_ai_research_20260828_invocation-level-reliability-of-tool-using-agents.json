@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260828-025",
+  "title": "Invocation-Level Reliability of Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2608.26189",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了工具使用型智能体在调用层面的可靠性问题，将失败模式细分为工具选择错误和参数生成错误，并提出了正确调用率指标以区分这两种失败。研究在五个开源权重模型上，通过无污染的多步任务（深度1-8）分别评估了教师强制上下文和模型自由运行上下文下的表现。结果显示，随着任务深度增加，模型自身的干净上下文能力显著下降，到深度6时，约70%的模型无法达到其干净上下文上限，表明早期错误会级联放大，导致下游任务失败。该研究为评估和改进工具使用型智能体的鲁棒性提供了新的视角和量化方法，对智能体设计和部署具有重要参考价值。",
+  "tags": [
+    "Tool-Using Agents",
+    "Reliability",
+    "LLM",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-08-28T19:55:41Z",
+  "collected_at": "2026-08-28T19:59:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具使用型智能体的失败可分解为工具选择错误和参数错误，正确调用率能有效区分两者。",
+      "在自由运行环境下，模型性能随任务深度增加显著下降，深度6时约70%模型无法达到干净上下文上限。",
+      "早期调用错误会级联影响下游任务，强调调用级可靠性的重要性。",
+      "研究为多步工具使用任务的评估提供了无污染基准和量化指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
