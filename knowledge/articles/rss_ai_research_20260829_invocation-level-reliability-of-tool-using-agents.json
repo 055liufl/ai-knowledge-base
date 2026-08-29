@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-025",
+  "title": "Invocation-Level Reliability of Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2608.26189",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究工具使用智能体（Tool-Using Agents）在调用层面的可靠性问题，将失败模式细分为选择错误工具和生成错误参数两类，并指出早期任一失败都会静默污染下游所有步骤。作者提出“正确调用率”（correct-invocation rate）指标，在两种上下文条件下（教师强制干净上下文和模型自回归自由运行上下文）对五个开源模型进行多步任务（深度1-8）的评估，任务设计避免数据污染。结果显示，在深度6时，模型在自身干净上下文下的正确调用率上限约为70%，揭示了模型在自主执行长链任务时的可靠性瓶颈。该研究为评估和提升工具使用智能体的鲁棒性提供了量化方法和基准，对AI代理系统的实际部署具有重要意义。",
+  "tags": [
+    "Tool-Using Agents",
+    "Reliability",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:42:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具使用智能体的失败可分解为工具选择错误和参数生成错误，早期失败会级联影响后续步骤。",
+      "提出的正确调用率指标能分离两类错误，并在不同上下文条件下揭示模型自回归执行时的性能衰减。",
+      "在深度6时，模型自身上下文下的正确调用率上限约70%，表明长链工具调用可靠性存在显著瓶颈。",
+      "研究采用无污染多步任务和多个开源模型，为评估工具调用可靠性提供了可复现的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

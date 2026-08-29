@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260829-102",
+  "title": "Position Is All You Need: A Free Lunch Token Compression Strategy for MLLM-based Referring Expression Segmentation",
+  "source_url": "https://arxiv.org/abs/2608.26142",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对多模态大语言模型（MLLM）在指代表达分割（RES）任务中的token压缩策略，名为“Position Is All You Need”。RES任务旨在根据复杂的文本查询生成像素级分割掩码，而现有MLLM虽然性能优越，但计算开销巨大，成为实际应用的瓶颈。论文首先评估了典型的token压缩方法在RES任务上的效果，发现直接压缩会损失关键的空间位置信息，导致分割精度下降。为此，作者提出利用位置信息作为先验，在压缩token时保留与目标位置相关的关键特征，从而实现“免费午餐”式的压缩，即在几乎不损失性能的情况下大幅降低计算成本。该方法具有即插即用的特点，可适配多种MLLM架构，为高效多模态推理提供了新思路。该研究填补了MLLM在RES任务中效率优化的空白，对实时应用（如自动驾驶、图像编辑）具有重要价值。",
+  "tags": [
+    "MLLM",
+    "Token Compression",
+    "Referring Expression Segmentation",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:47:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有MLLM在RES任务中计算开销巨大，但token压缩方法研究不足，本文首次系统评估并指出直接压缩会丢失位置信息。",
+      "提出利用位置信息指导token压缩，保留关键空间特征，实现性能与效率的平衡，即“免费午餐”效果。",
+      "该方法为即插即用设计，可适配多种MLLM架构，为高效多模态推理提供了实用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

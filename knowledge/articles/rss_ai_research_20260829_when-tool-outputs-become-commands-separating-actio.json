@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260829-082",
+  "title": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.27146",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对工具增强型大语言模型（LLM）代理的安全机制，核心观点是将“动作归纳”（action induction）与“运行时授权”（runtime authorization）分离。在开放任务中，代理依赖不可信的工具输出（Observations）来完成任务，但当这些输出不仅提供数据，还开始指定具体操作时，它们实际上变成了“命令”，可能引发超出用户意图的真实世界副作用。作者认为，这种风险源于将动作归纳与执行授权混为一谈。为此，他们提出了SARA（Separation of Action induction and Runtime Authorization）框架，旨在通过明确区分这两个阶段，确保代理在生成动作时基于模型能力，但在执行前必须经过独立的授权检查，从而防止恶意或意外指令被直接执行。该研究关注LLM代理的安全性与可靠性，对构建可信AI系统具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Safety",
+    "Tool-Augmented"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:46:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具输出可能从数据演变为命令，导致代理执行超出用户意图的操作，这是安全风险的关键来源。",
+      "将动作归纳与运行时授权分离，可以独立控制动作生成和执行权限，降低不可信输出的影响。",
+      "SARA框架为工具增强型代理提供了一种新的安全设计范式，强调授权机制的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

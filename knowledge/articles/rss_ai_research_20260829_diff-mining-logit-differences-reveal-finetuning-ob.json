@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260829-139",
+  "title": "Diff Mining: Logit Differences Reveal Finetuning Objectives",
+  "source_url": "https://arxiv.org/abs/2608.26462",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Diff Mining 的框架，用于通过分析模型微调前后 logit 输出的差异来揭示微调目标。该方法基于一个简单但有效的观察：微调过程中模型对特定 token 的预测概率变化可以反映其学习到的行为模式。Diff Mining 通过计算微调前后 logit 的差异，识别出模型在微调中显著改变的行为，从而帮助研究者理解微调的具体目标，尤其是那些可能引入的意外或不良行为。该框架不依赖内部权重访问，仅需输入输出，因此具有通用性和可解释性。随着模型能力增强，微调中的行为变化愈发复杂，该方法为模型审计和安全性分析提供了重要工具。论文通过实验验证了 Diff Mining 在多种微调场景下的有效性，包括指令微调、对齐微调等，并展示了其发现潜在风险行为的能力。这项工作对 AI 安全、模型可解释性和微调实践具有重要价值，值得研究者和开发者关注。",
+  "tags": [
+    "LLM",
+    "Finetuning",
+    "Interpretability",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:49:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Diff Mining 通过比较微调前后 logit 差异，无需内部权重即可识别模型行为变化，提高了微调目标的可解释性。",
+      "该方法能有效揭示微调中可能引入的意外或不良行为，为模型安全审计提供了新工具。",
+      "框架简单通用，适用于多种微调场景，如指令微调和对齐，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

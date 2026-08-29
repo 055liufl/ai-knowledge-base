@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-140",
+  "title": "Zero-Shot Self-Orchestration with Ledger-Based Control for Improved LLM Coding Performance",
+  "source_url": "https://arxiv.org/abs/2608.26480",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“零样本自编排”的多智能体LLM系统，通过引入基于账本（Ledger）的控制机制来提升编码任务性能。该系统采用管理者-工作者（manager-worker）架构，在共享文件系统工作区中运行，无需额外训练或针对特定基准的调优。作者指出，现有研究常将多智能体系统与单模型基线比较，但结果往往因同时改变token预算、工具调用和提示词而混淆，难以归因于具体改进因素。本研究旨在隔离管理者-工作者脚手架的影响，通过账本记录和协调各智能体的工作，实现自编排。实验在编码基准上评估，结果显示该机制能有效提升代码生成质量，且无需微调。该工作为多智能体协作提供了更清晰的分析框架，并展示了轻量级控制机制在提升LLM性能方面的潜力。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Code Generation",
+    "Self-Orchestration"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:49:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体系统性能提升常被混淆因素干扰，本研究通过隔离管理者-工作者脚手架来明确其贡献。",
+      "基于账本的控制机制实现了零样本自编排，无需训练或调优即可提升编码性能。",
+      "共享文件系统工作区为多智能体协作提供了简单有效的协调基础。",
+      "该研究为多智能体LLM系统的可解释性和可复现性提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

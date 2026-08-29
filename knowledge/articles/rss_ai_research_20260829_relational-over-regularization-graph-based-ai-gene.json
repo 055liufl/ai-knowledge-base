@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260829-049",
+  "title": "Relational Over-Regularization: Graph-Based AI-Generated Text Detection via Sentence Transition Deviation",
+  "source_url": "https://arxiv.org/abs/2608.26694",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于图结构的AI生成文本检测方法，通过分析句子间转换偏差来识别机器生成内容。传统方法依赖词元级统计或独立风格特征，容易过拟合特定生成器并在分布偏移时失效。作者发现，LLM生成的文本在句子对层面存在结构信号：其句间转换方差偏离人类写作，表现为由重复相似性爆发引起的方差膨胀。该方法利用图神经网络建模句子转换关系，通过检测这种偏差实现鲁棒的AIGT检测。该研究为AI文本检测提供了新视角，从词元级转向结构级，有望提升跨生成器的泛化能力，对内容安全、学术诚信等领域具有重要应用价值。",
+  "tags": [
+    "AIGT Detection",
+    "Graph Neural Network",
+    "LLM",
+    "Text Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:44:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "识别出句子对层面的结构信号：LLM生成的文本在句间转换方差上偏离人类写作，表现为方差膨胀和重复相似性爆发。",
+      "提出基于图的方法建模句子转换偏差，相比传统词元级统计方法，能更好地泛化到不同生成器。",
+      "该研究为AIGT检测提供了新的结构级特征，有望缓解现有方法对特定生成器的过拟合问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

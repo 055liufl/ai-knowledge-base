@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-126",
+  "title": "How Do LLM Agents Actually Get the Flag? Trace-Level Provenance for Agentic Offensive Security Evaluation",
+  "source_url": "https://arxiv.org/abs/2608.26237",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于评估自主语言模型代理（LLM Agent）在进攻性安全（如夺旗挑战CTF）中能力的新方法，即通过轨迹级溯源（Trace-Level Provenance）来替代传统的浅层二元判断或聚合分数。传统评估仅关注代理是否最终获得旗标，忽略了其到达旗标的路径，从而可能将直接暴露旗标、记忆召回、外部查找、猜测或无依据声明等行为误判为真实的利用能力，导致对代理网络安全能力的过度估计。该研究旨在通过分析代理的完整行动轨迹，区分真实利用与虚假成功，提供更精确的能力评估。这一工作对安全评估基准的设计具有重要价值，有助于推动更可靠、更细粒度的自主代理安全能力测试，并为后续研究提供方法论基础。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Evaluation",
+    "Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:48:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统CTF评估仅看最终结果，容易高估LLM代理的真实攻击能力，需引入轨迹级分析。",
+      "通过溯源可以区分真实利用与猜测、记忆或外部查找等非真实能力，提升评估可信度。",
+      "该研究为构建更严谨的自主代理安全能力基准提供了新思路，对安全评测领域有重要影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

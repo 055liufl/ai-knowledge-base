@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-134",
+  "title": "Why RAGs Hallucinate: Penalty-Aware Evaluation of Retrieval-Augmented Generation Systems with Knowledge-Gap Canaries",
+  "source_url": "https://arxiv.org/abs/2608.26385",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对检索增强生成（RAG）系统在知识库无法支持答案时仍会猜测并产生幻觉的问题，提出了一种惩罚感知的评估框架。传统基于体积的准确率奖励机制会鼓励系统猜测，导致幻觉频发。论文借鉴Kalai等人（2025）的置信度目标分析，设计了一种结合非对称评分（正确+1，错误-4，弃权0）和知识缺口金丝雀（即专门用于检测系统是否应弃权的问题）的评估方法。该框架旨在更真实地衡量RAG系统在知识库覆盖不足时的行为，鼓励系统在不确定时主动弃权而非猜测，从而减少幻觉。这项工作对RAG系统的可靠部署具有重要意义，为开发者提供了更严格的评估标准，有助于提升生成内容的事实准确性。",
+  "tags": [
+    "RAG",
+    "Evaluation",
+    "Hallucination",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:49:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统体积准确率奖励机制鼓励RAG系统猜测，导致幻觉问题，需要惩罚感知的评估方法。",
+      "非对称评分（正确+1，错误-4，弃权0）能有效激励系统在知识不足时选择弃权，而非冒险生成。",
+      "知识缺口金丝雀问题可专门测试系统对知识库覆盖边界的识别能力，增强评估的针对性。",
+      "该框架为RAG系统的实际部署提供了更可靠的性能度量，有助于推动更负责任的AI生成。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

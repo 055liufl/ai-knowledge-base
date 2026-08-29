@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260829-053",
+  "title": "Knowing When Not to Reuse: Conditional Experience Transfer in Autonomous LLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2608.26730",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型语言模型（LLM）在持续后训练中面临的“何时不应复用历史经验”问题，提出了一种条件性经验迁移方法。随着模型不断更新，早期训练阶段产生的更新证据可能因模型参数变化而失效，直接复用会导致性能退化或训练不稳定。论文通过形式化定义“经验相关性”与“迁移条件”，设计了一种动态评估机制，在每次训练迭代前判断历史经验是否仍然适用，并据此决定是否将其纳入当前训练过程。该方法在多个领域（如工具使用、知识更新）的实验中验证了其有效性，相比无条件复用或完全丢弃历史经验，显著提升了模型适应新任务的能力，同时降低了计算开销。该研究为自主LLM后训练系统提供了关键的理论框架和实用策略，有助于推动更高效、更可靠的模型持续进化，对AI工程化落地具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Post-Training",
+    "Transfer Learning",
+    "Autonomous Systems"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:44:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "历史训练经验在模型更新后可能失效，盲目复用会损害性能，需要条件性判断。",
+      "提出动态评估机制，基于模型当前状态与任务需求决定经验是否迁移，兼顾效率与效果。",
+      "实验证明该方法在多种后训练场景下优于无条件复用或丢弃策略，为自主LLM训练提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

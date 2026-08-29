@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260829-018",
+  "title": "Refusal Is Not Robustness: Auditing Confident Fabrication in Large Language Models on a Provably Uninformative Clinical Pain Speech Transcript",
+  "source_url": "https://arxiv.org/abs/2608.26167",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对大型语言模型（LLM）在临床疼痛语音转录任务中的幻觉与拒答行为进行了审计，提出了一种可证明无信息输入的实验设计。研究者使用TAME疼痛语音语料库，参与者朗读音素平衡的哈佛句子，同时一只手浸入冷水或温水，并仅在周期性疼痛陈述中报告疼痛。该协议确保了模型无法从语音内容中推断出真实的疼痛状态，从而将正确的拒答与无根据的预测区分开来。研究评估了七个LLM，发现模型在无信息输入上表现出自信的虚构（confident fabrication），即生成看似合理但完全错误的疼痛判断，而拒答行为并未有效防止此类错误。该工作揭示了当前幻觉基准的缺陷，即未验证模型是否可能知道正确答案，导致无法区分适当拒答与错误预测。研究强调了在医疗等高风险领域，模型的安全性和可靠性需要更严格的审计方法，并提出了改进评估框架的必要性。该研究对LLM的鲁棒性评估和临床应用的可靠性具有重要启示。",
+  "tags": [
+    "LLM",
+    "Hallucination",
+    "Robustness",
+    "Clinical NLP",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:42:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有幻觉基准缺乏对模型知识边界的验证，导致无法区分适当拒答与无根据预测。",
+      "在可证明无信息的临床疼痛语音输入上，多个LLM表现出自信的虚构，表明拒答机制并不鲁棒。",
+      "该研究提出了一种新的审计方法，通过控制信息可用性来评估模型的真实可靠性。",
+      "医疗等高风险场景中，LLM的幻觉风险需要更严格的评估和缓解策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

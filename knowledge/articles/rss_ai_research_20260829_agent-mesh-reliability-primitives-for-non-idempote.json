@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-033",
+  "title": "Agent Mesh: Reliability Primitives for Non-Idempotent Agent Delegation - Identity Adequacy and Evidence Adequacy",
+  "source_url": "https://arxiv.org/abs/2608.26225",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一项关于自主智能体在编排器下执行有界软件任务时的可靠性研究。编排器通常采用服务网格的重试、超时和错误率熔断机制，但这些机制在处理非幂等智能体委托时存在不足。作者对生产环境中的智能体软件交付平台进行了失败研究，分析了147个编号事件，涉及81次运行，每次都有成本测量，多数情况下还提供了复现失败的突变证明。研究发现，现有的可靠性原语不足以应对智能体委托的复杂性，提出了“身份充分性”和“证据充分性”两个核心概念，以增强非幂等委托的可靠性。该研究为智能体编排的可靠性设计提供了实证基础和新的理论视角，对构建稳健的智能体系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Reliability",
+    "Orchestration",
+    "Service Mesh"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:43:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有服务网格的可靠性原语（重试、超时、熔断）在非幂等智能体委托中可能导致严重问题，需要新的原语。",
+      "身份充分性强调验证委托方的身份和权限，避免因重试或恢复导致的错误执行。",
+      "证据充分性要求保留执行证据，以便在失败时进行有效审计和恢复。",
+      "生产环境中的失败研究为智能体可靠性提供了实证基础，突变证明有助于精确复现和修复问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

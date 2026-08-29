@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260829-035",
+  "title": "The Reasoning Tax: Token Economics of LLM Reasoning Across Task Types and Deployment Contexts",
+  "source_url": "https://arxiv.org/abs/2608.26235",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文提出了一种新的基准测试指标——Token Economy Score (TES)，用于评估推理型大语言模型（如OpenAI o1、DeepSeek-R1等）在部署中的成本效益。传统的仅基于准确率的基准测试忽略了推理模型生成大量思考token所带来的额外计算成本。TES通过衡量推理模型相对于非推理基线的准确率提升，并除以生成token的倍数，来量化推理token的边际价值。论文定义了配对TES（适用于具有推理开关的模型家族）和近似TES（适用于无法直接对比的模型），并探讨了不同任务类型（如数学、代码、逻辑推理等）和部署场景（如实时交互、批量处理）下推理token的经济性。该研究为模型选择、推理预算分配和推理模型优化提供了新的视角，有助于开发者和企业在实际部署中做出更明智的决策。其创新性在于将推理成本纳入基准测试，填补了现有评估体系的空白，对AI工程实践具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Token Economics",
+    "Inference Cost"
+  ],
+  "author": null,
+  "published_at": "2026-08-29T13:39:03Z",
+  "collected_at": "2026-08-29T13:43:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TES指标将推理token的边际成本纳入模型评估，弥补了纯准确率基准的不足。",
+      "不同任务类型和部署场景下，推理token的经济性差异显著，需针对性优化。",
+      "配对TES和近似TES为不同模型家族提供了灵活的评估方式。",
+      "该研究为推理模型的部署决策和预算分配提供了量化依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
