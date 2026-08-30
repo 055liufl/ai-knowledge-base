@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260830-132",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了在LLM推理服务中，长提示词（long prompts）如何阻塞其他请求，以及如何优化性能的问题。文章指出，当多个请求同时到达时，长提示词会占用大量计算资源，导致其他短请求的响应时间显著增加，甚至出现排队阻塞。作者通过实验数据展示了不同长度提示词对吞吐量和延迟的影响，并提出了一些优化策略，如动态批处理、请求优先级调度、以及将长提示词拆分为多个短片段并行处理等。这些方法旨在平衡资源利用，减少长提示词对整体性能的负面影响。文章还强调了在真实生产环境中，理解请求分布和负载特征的重要性，以便设计更高效的调度算法。该内容对于从事LLM服务部署和性能调优的开发者具有实用价值，能够帮助他们识别瓶颈并采取相应措施提升系统响应速度。",
+  "tags": [
+    "LLM",
+    "Performance Optimization",
+    "Inference",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-08-30T13:36:09Z",
+  "collected_at": "2026-08-30T13:47:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著阻塞其他请求，导致延迟增加和吞吐量下降。",
+      "动态批处理和请求优先级调度是缓解阻塞的有效手段。",
+      "拆分长提示词为短片段可提升并行处理效率。",
+      "优化需基于实际负载特征，避免一刀切策略。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

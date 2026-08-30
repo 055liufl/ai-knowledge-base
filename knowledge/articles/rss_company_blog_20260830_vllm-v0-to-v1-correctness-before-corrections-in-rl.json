@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260830-035",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由ServiceNow AI团队发布，深入探讨了vLLM推理引擎从V0到V1版本在强化学习（RL）场景中的关键改进，核心主题为“正确性优先于修正”。文章指出，在RL训练中，推理引擎的采样正确性至关重要，因为错误的采样会导致策略梯度估计偏差，进而影响模型收敛。vLLM V0在RL应用中存在采样不一致、随机数生成管理不当等问题，而V1版本通过重构采样逻辑、统一随机数生成器、优化序列调度等方式，显著提升了采样正确性和可复现性。文章还对比了V0与V1在RL工作负载下的性能表现，强调V1在保证正确性的同时，也带来了吞吐量和延迟的优化。该内容对于使用vLLM进行RL训练的研究人员和工程师具有重要参考价值，揭示了推理引擎在RL pipeline中常被忽视的正确性细节，并提供了迁移到V1的实践指导。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "采样正确性",
+    "RL训练"
+  ],
+  "author": null,
+  "published_at": "2026-08-30T13:36:09Z",
+  "collected_at": "2026-08-30T13:40:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1通过重构采样逻辑和随机数管理，解决了V0在RL中采样不一致的问题，确保策略梯度估计的准确性。",
+      "正确性优先的设计理念表明，在RL训练中，推理引擎的采样正确性比性能优化更为关键，错误采样会破坏训练稳定性。",
+      "V1版本在提升正确性的同时，也优化了序列调度和内存管理，实现了正确性与性能的双重提升。",
+      "对于RL训练pipeline，选择推理引擎时需重点评估其采样可复现性和与训练框架的兼容性，vLLM V1提供了更可靠的方案。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260830-128",
+  "title": "Training and Finetuning Sparse Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-sparse-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，详细介绍了如何使用 Sentence Transformers 库训练和微调稀疏嵌入模型（如 SPLADE）。文章首先解释了稀疏嵌入模型与传统稠密嵌入模型的区别，强调稀疏模型通过词项权重（如 BM25 风格）生成高维稀疏向量，具有可解释性强、零样本检索效果好等优势。随后，文章提供了完整的代码示例，涵盖数据准备、模型架构选择（如基于 BERT 的 SPLADE）、训练损失函数（如 DistilBERT 蒸馏、对比学习）以及评估方法。此外，文章还讨论了稀疏模型在混合检索（结合稠密和稀疏）中的应用，并给出了实际部署建议。该内容对于理解信息检索领域的最新进展和实际应用具有重要价值，尤其适合希望提升搜索系统性能的开发者。",
+  "tags": [
+    "Sparse Embedding",
+    "Sentence Transformers",
+    "SPLADE",
+    "Information Retrieval",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-08-30T13:36:09Z",
+  "collected_at": "2026-08-30T13:47:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏嵌入模型（如 SPLADE）通过词项权重生成可解释的稀疏向量，在零样本和领域迁移场景下优于稠密模型。",
+      "Sentence Transformers 库提供了简洁的 API 来训练和微调稀疏模型，降低了实现门槛。",
+      "结合稀疏和稠密嵌入的混合检索策略可以显著提升搜索相关性，是当前信息检索的主流趋势。",
+      "训练稀疏模型需要特定的损失函数（如蒸馏和对比学习），并注意数据预处理和评估指标的选择。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
