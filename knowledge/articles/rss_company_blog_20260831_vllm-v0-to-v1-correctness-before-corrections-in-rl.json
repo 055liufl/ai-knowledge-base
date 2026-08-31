@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260831-035",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由 ServiceNow AI 团队发布，深入探讨了 vLLM 从 V0 到 V1 的演进，特别是在强化学习（RL）场景下的正确性问题。文章指出，在 RL 训练中，推理引擎的数值精度和采样一致性对策略梯度计算的稳定性至关重要。vLLM V0 在长序列生成或特定采样参数下可能出现数值漂移，导致训练不稳定；而 V1 版本通过重构内核、优化注意力机制和采样逻辑，显著提升了数值正确性，确保 RL 训练中的奖励信号和梯度计算更加可靠。文章还强调了“正确性优先于修正”的设计哲学，即在追求性能优化之前，先确保基础计算的准确性，这对于大规模 RL 训练（如 RLHF）具有重要实践意义。该内容对从事 LLM 推理优化和强化学习训练的开发者、研究者具有直接参考价值，反映了 vLLM 作为主流推理框架在支持复杂训练工作负载方面的关键进步。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "数值稳定性",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-08-31T15:53:22Z",
+  "collected_at": "2026-08-31T15:58:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 通过重构内核和优化采样逻辑，解决了 V0 在 RL 场景下的数值漂移问题，提升了训练稳定性。",
+      "正确性优先于性能优化的设计理念，是确保 RL 训练中梯度计算可靠性的关键。",
+      "推理引擎的数值精度直接影响 RLHF 等训练流程的收敛效果，需引起重视。",
+      "vLLM 的演进展示了推理基础设施在支持复杂训练工作负载中的核心作用。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260831-070",
+  "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+  "source_url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是LinkedIn工程团队对GPT-OSS模型进行Agentic强化学习（RL）训练的一次实践性回顾。文章详细介绍了在开源GPT模型上应用Agentic RL训练的技术路径、遇到的挑战以及解决方案。内容涵盖了从数据准备、奖励模型设计、策略优化到部署评估的完整流程，并分享了在真实业务场景中如何通过Agentic RL提升模型在工具调用、多步推理等复杂任务上的表现。该文的价值在于其工程实践视角，为研究者和开发者提供了可复现的经验教训，尤其是在开源模型上实现高效RL训练的具体技巧和避坑指南。它反映了当前LLM领域从单纯预训练/微调向更复杂的智能体行为优化转变的趋势，对于关注模型对齐、工具使用和自主决策能力提升的从业者具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Agentic RL",
+    "GPT-OSS",
+    "强化学习",
+    "工程实践"
+  ],
+  "author": null,
+  "published_at": "2026-08-31T15:53:22Z",
+  "collected_at": "2026-08-31T16:02:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic RL训练在开源GPT模型上可行，但需要针对工具调用和多步推理设计专门的奖励模型和训练策略。",
+      "数据质量与多样性是Agentic RL成功的关键，真实业务场景数据比合成数据更能提升泛化能力。",
+      "训练过程中需关注奖励黑客和策略崩溃问题，通过迭代式奖励校准和约束策略更新可有效缓解。",
+      "该实践表明，开源模型通过Agentic RL可以在特定任务上接近甚至超越闭源模型，降低了对专有模型的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

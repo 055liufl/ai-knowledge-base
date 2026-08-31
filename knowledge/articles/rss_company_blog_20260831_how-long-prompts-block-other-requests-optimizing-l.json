@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260831-132",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇文章由 TNG Technology Consulting 发布在 Hugging Face 博客上，深入探讨了长提示词（long prompts）如何阻塞其他请求，从而影响 LLM 推理性能的问题。文章指出，在共享的 LLM 推理环境中，一个包含长提示词的请求会占用大量计算资源，导致后续请求排队等待，显著增加延迟。作者通过实验和案例分析，展示了提示词长度与请求阻塞时间之间的直接关系，并提出了多种优化策略，包括提示词压缩、动态批处理（dynamic batching）、请求优先级调度以及模型推理优化（如 PagedAttention 等）。这些策略旨在减少长提示词对整体系统吞吐量的负面影响，提升 LLM 服务的响应速度和资源利用率。文章还强调了在真实生产环境中，平衡请求多样性和系统性能的重要性，为开发者和运维人员提供了实用的性能调优指南。",
+  "tags": [
+    "LLM",
+    "Performance",
+    "Inference Optimization",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-08-31T15:53:22Z",
+  "collected_at": "2026-08-31T16:06:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著阻塞其他请求，导致系统延迟增加和吞吐量下降。",
+      "动态批处理和请求优先级调度是缓解长提示词影响的有效手段。",
+      "提示词压缩和模型推理优化（如 PagedAttention）能进一步提升性能。",
+      "性能优化需要权衡请求多样性和系统资源利用率。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

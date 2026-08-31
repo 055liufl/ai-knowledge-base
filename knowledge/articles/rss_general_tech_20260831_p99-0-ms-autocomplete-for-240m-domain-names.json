@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260831-007",
+  "title": "P99 0 ms* autocomplete for 240M domain names",
+  "source_url": "https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章由 Ruurtjan 撰写，详细介绍了如何为 2.4 亿个域名实现 p99 延迟为 0 毫秒的自动补全系统。作者首先分析了传统自动补全方案（如 Trie、Elasticsearch）在处理大规模数据集时的性能瓶颈，然后提出了一种基于内存映射文件（mmap）和紧凑二进制格式的解决方案。核心思路是将所有域名预排序并编码为一种特殊的数据结构，利用二分查找和前缀匹配算法，在内存中直接进行快速查询，避免了网络 I/O 和复杂索引的开销。文章还讨论了内存占用优化、缓存策略以及如何通过并行化进一步提升性能。这项技术对于域名注册商、CDN 服务或任何需要大规模实时搜索的场景都具有重要参考价值，展示了在极端规模下通过精心设计的数据结构和系统优化实现极致性能的可能性。",
+  "tags": [
+    "autocomplete",
+    "performance",
+    "data-structures",
+    "system-design"
+  ],
+  "author": null,
+  "published_at": "2026-08-31T15:53:16Z",
+  "collected_at": "2026-08-31T15:55:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过预排序和内存映射文件，可以在 2.4 亿条记录上实现 p99 0ms 的查询延迟，远超传统 Trie 或数据库方案。",
+      "紧凑的二进制编码和二分查找是降低内存占用和提升缓存命中率的关键。",
+      "该方案展示了在极端数据规模下，通过系统级优化（如 mmap）而非依赖外部服务，可以实现极致的性能表现。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
