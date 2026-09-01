@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-097",
+  "title": "Evaluating Tiny Recursive Models Across Training for Code Generation",
+  "source_url": "https://arxiv.org/abs/2608.29376",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了在代码生成任务中，使用递归模型（即通过复用单一模块来增加网络深度，而非堆叠独立层）作为大型Transformer模型的高效替代方案。研究指出，大型模型虽性能优越但成本高昂，尤其在数据受限场景下，小型模型更具吸引力。论文强调，现有评估通常仅关注单一检查点的教师强制拟合（基于真实前缀的下一词损失）或任务准确率，这不足以全面反映模型训练过程中的动态表现。因此，研究旨在跨训练阶段系统评估这些微型递归模型，以揭示其学习轨迹、收敛特性及最终性能，为在资源受限环境中部署代码生成模型提供实证依据和设计指导。该工作对模型压缩、高效架构设计及代码智能领域具有参考价值。",
+  "tags": [
+    "Code Generation",
+    "Recursive Models",
+    "Model Efficiency",
+    "Training Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:18:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归模型通过参数复用实现深度扩展，在保持性能的同时显著降低参数量，适合资源受限场景。",
+      "仅依赖单一检查点的评估可能掩盖训练过程中的性能波动，跨训练评估能更全面揭示模型鲁棒性和收敛行为。",
+      "在代码生成任务中，递归模型可能在小规模数据下达到与大型模型可比的性能，但需权衡深度与训练稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

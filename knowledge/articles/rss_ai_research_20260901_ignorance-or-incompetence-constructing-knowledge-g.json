@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-136",
+  "title": "Ignorance or Incompetence? Constructing Knowledge-Gated, Verifiable Tasks for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.30322",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种知识门控的任务构建协议，用于生成可验证的LLM智能体任务，以区分智能体因缺乏领域知识（无知）还是因能力不足（无能）而失败。传统基准测试通常不控制智能体是否拥有任务所需的私有约定，导致评估结果混淆。该协议将任务指令与包含私有约定、参考表和实用操作符的紧凑工件分离，确保在提供与不提供该工件时任务指令字节级一致，从而通过对比智能体在有无知识时的表现，精确归因失败原因。该工作对智能体评估方法具有重要创新性，有助于设计更可靠的基准和诊断工具，推动LLM智能体在专业领域（如医疗、法律、金融）的实用化发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:21:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "知识门控协议通过分离任务指令和私有知识工件，实现了对智能体失败原因的精确归因，区分知识缺失与能力不足。",
+      "字节级一致的任务指令设计确保了实验对照的严谨性，使得有无知识条件下的性能差异可直接归因于知识访问。",
+      "该协议可生成可验证任务，为构建更可靠的智能体基准测试提供了新范式，尤其适用于依赖专业约定的领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

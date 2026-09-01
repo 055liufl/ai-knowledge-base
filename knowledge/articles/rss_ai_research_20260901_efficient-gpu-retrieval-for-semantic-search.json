@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-046",
+  "title": "Efficient GPU Retrieval for Semantic Search",
+  "source_url": "https://arxiv.org/abs/2608.28968",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种用于语义搜索的高效 GPU 检索方法，该方法由 LinkedIn 提出，旨在应对其平台上数亿级用户资料的语义搜索挑战。系统需要处理自然语言查询（如“柏林的一位从事支付领域的金融科技创始人”），并返回相关档案。其部署的相关性策略以瓶颈为导向，要求所有活跃的硬性约束条件必须满足，并通过一个预训练的 LLM 分级相关性（GR）评判器，利用对各个维度评分的固定最小/中位数聚合来实现。该研究聚焦于如何在大规模语料库中高效执行此类检索，并利用 GPU 加速来优化性能，展示了在工业级应用中将 LLM 评判与检索架构结合的实践。",
+  "tags": [
+    "GPU",
+    "Semantic Search",
+    "LLM",
+    "Retrieval",
+    "LinkedIn"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:15:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "针对数亿级语料库的语义搜索，采用 GPU 加速检索，解决了工业规模下的性能瓶颈。",
+      "将 LLM 分级评判器与硬性约束聚合策略结合，实现了对多维度查询的精确相关性排序。",
+      "展示了在真实社交网络平台中，如何平衡检索效率与语义理解质量。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

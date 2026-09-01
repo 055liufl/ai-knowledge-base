@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-131",
+  "title": "Rethinking the Test-Time Prompt Tuning Objective from the Perspective of Calibration",
+  "source_url": "https://arxiv.org/abs/2608.30230",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了测试时提示调优（Test-time Prompt Tuning, TPT）的目标函数，从校准（Calibration）的角度指出了传统基于熵最小化（Entropy Minimization, EM）方法的根本缺陷。作者发现，在测试阶段通过多个增强视图对每个样本进行熵最小化，虽然能提升预测精度，但会迫使模型产生过度自信的预测，忽略样本特有的不确定性，从而导致校准性能显著下降。为解决这一问题，论文提出了一种新的优化目标，旨在平衡预测准确性与置信度校准，使模型在适应新样本的同时保持可靠的不确定性估计。该研究对视觉语言模型（如CLIP）在分布偏移场景下的应用具有重要意义，为TPT方法的设计提供了新视角，并可能推动更稳健的测试时自适应技术的发展。",
+  "tags": [
+    "Test-Time Prompt Tuning",
+    "Calibration",
+    "Vision-Language Model",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:20:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准熵最小化目标会导致模型过度自信，损害校准性能，这是一个被忽视的关键问题。",
+      "提出新目标函数，在保持适应能力的同时改善置信度估计，为TPT提供了更稳健的优化方向。",
+      "该工作强调了测试时自适应中不确定性建模的重要性，对分布偏移下的可靠部署有指导价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

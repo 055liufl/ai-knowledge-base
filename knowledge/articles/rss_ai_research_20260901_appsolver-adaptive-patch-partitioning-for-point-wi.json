@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-091",
+  "title": "APPSolver: Adaptive Patch Partitioning for Point-Wise Ship Flow Prediction on Unstructured Meshes",
+  "source_url": "https://arxiv.org/abs/2608.29355",
+  "source_platform": "rss_ai_research",
+  "summary": "APPSolver 是一个针对船舶水动力学中非均匀点集上的流场预测框架，旨在解决直接基于注意力机制的代理模型在大规模非均匀点集上计算成本高昂的问题。该框架的核心是自适应补丁划分（APP），一种确定性的四叉树表示方法，用于从船舶 CFD 模拟中提取的固定二维水平切片。APP 在船体附近分配更细的补丁，在远处分配更粗的补丁，并对补丁内容进行下采样，从而在保持精度的同时显著降低计算复杂度。该方法将非结构化网格上的点云数据转换为层次化的补丁结构，使得基于注意力的模型能够高效处理大规模点集。该研究发表于 arXiv，编号 2608.29355，属于流体力学与机器学习交叉领域的前沿工作，对于提升船舶设计中的流场预测效率具有重要价值。",
+  "tags": [
+    "CFD",
+    "Point Cloud",
+    "Attention",
+    "Surrogate Model",
+    "Ship Hydrodynamics"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:18:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自适应补丁划分（APP）通过四叉树结构在船体附近细化、远处粗化，有效平衡了计算精度与效率。",
+      "APPSolver 将非结构化网格点云转换为层次化补丁，使基于注意力的模型能够扩展到大规模非均匀点集。",
+      "该方法为船舶水动力学中的实时流场预测提供了新的代理建模思路，有望加速船舶设计迭代。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

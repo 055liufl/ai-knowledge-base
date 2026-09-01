@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-055",
+  "title": "Facts Without Rules: Boundary Metadata Collapse in Multi-Agent LLM Handoffs",
+  "source_url": "https://arxiv.org/abs/2608.29028",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文研究了多智能体大语言模型（LLM）系统中交接（handoff）环节的结构性隐私泄露问题。在多智能体协作中，上游交互常被压缩为交接工件，供下游代理作为共享状态使用。作者发现，交接步骤会优先保留操作事实，而削弱控制事实使用方式的边界元数据（如权限、用途限制），导致一种称为“摘要坍缩”的失败模式。通过在受控的多智能体协调测试平台上进行实验，论文展示了该现象的存在及其对隐私保护的潜在威胁。这项工作对于设计安全的多智能体系统、理解LLM上下文压缩中的信息丢失具有重要意义，并可能推动开发更注重隐私保护的交接机制。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Privacy",
+    "Context Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:15:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体交接中的摘要压缩会系统性丢失边界元数据，导致隐私保护失效。",
+      "摘要坍缩是一种结构性问题，而非偶然错误，需要专门设计缓解策略。",
+      "该发现对构建安全的多智能体协作系统具有直接指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

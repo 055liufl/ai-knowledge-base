@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-029",
+  "title": "How Language Models Choose Sides: Internal Representations of Instruction Hierarchy",
+  "source_url": "https://arxiv.org/abs/2608.28648",
+  "source_platform": "rss_ai_research",
+  "summary": "本研究探讨了指令微调的大型语言模型（LLM）如何在系统指令与用户指令发生直接冲突时进行仲裁。作者构建了一个包含41对约束条件的基准测试，并采用确定性验证器，在匹配基线、冲突和同通道控制条件下评估了八种模型。行为上，模型根据系统权威差异（System Authority Delta）分为三种类型：尊重层级模型将系统通道视为权威信号，反层级模型则相反，以及介于两者之间的模型。研究进一步通过内部表征分析，揭示了模型如何编码指令层级信息，为理解LLM的指令遵循机制提供了新视角。该工作对于提升AI系统的安全性和可控性具有重要意义，尤其是在多指令冲突场景下，有助于设计更可靠的指令层级机制。",
+  "tags": [
+    "LLM",
+    "Instruction Hierarchy",
+    "Interpretability",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:14:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型在指令冲突中的行为可分为三类，取决于系统权威差异，表明指令层级并非普遍被遵循。",
+      "内部表征分析揭示了模型如何编码指令层级信息，为可解释性研究提供了新方法。",
+      "该基准测试和评估框架可用于未来模型的安全性和指令遵循能力评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

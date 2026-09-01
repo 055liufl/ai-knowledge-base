@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260901-027",
+  "title": "BiasMix-Finance: Post-Generation KYC Guardrails for LLM Portfolio Advice",
+  "source_url": "https://arxiv.org/abs/2608.28646",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种名为 BiasMix-Finance 的模型无关、资产无关的后生成防护管道，用于在 LLM 生成 ETF 投资组合建议后强制执行 KYC（了解你的客户）约束。该研究针对 LLM 在生成看似合理的投资组合时可能违反风险、费用和分散化等基本 KYC 规则的问题，特别是在多轮代理式咨询系统中，每个草稿建议都可能成为实际动作，因此需要可审计的执行层。该管道包括严格 JSON 分配格式的强制、约束检查以及可能的修正机制，旨在提供可审计的防护。这项工作的意义在于，它填补了 LLM 在金融咨询领域应用中的安全与合规空白，通过后生成防护确保输出符合监管要求，提高了 LLM 在金融场景中的可靠性和可信度。该研究对金融科技和 AI 安全领域具有潜在价值，尤其适合关注合规性和风险控制的开发者与研究者。",
+  "tags": [
+    "LLM",
+    "KYC",
+    "金融合规",
+    "防护管道",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:13:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的金融建议可能违反 KYC 约束，需要后生成防护层来确保合规。",
+      "该防护管道是模型无关的，可适用于不同 LLM 和资产类型，提高通用性。",
+      "在代理式多轮系统中，防护层必须可审计，以支持监管和信任要求。",
+      "严格 JSON 格式强制是确保约束可执行和可验证的关键步骤。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

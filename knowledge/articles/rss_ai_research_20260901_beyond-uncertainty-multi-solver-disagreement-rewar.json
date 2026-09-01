@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260901-120",
+  "title": "Beyond Uncertainty: Multi-Solver Disagreement Rewards for Self-Evolving Reasoning Curricula",
+  "source_url": "https://arxiv.org/abs/2608.30035",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的自进化推理训练框架，旨在解决现有方法中因单一求解器采样不确定性作为挑战者奖励而导致的奖励崩溃问题。在该框架中，挑战者生成问题以暴露求解器的弱点，但传统方法依赖单一求解器的采样不确定性，当求解器对问题分布变得自信时，所有采样答案趋于一致，奖励归零，训练停滞。作者引入多求解器分歧奖励，通过多个求解器之间的答案分歧来提供更稳定的信号，从而维持挑战者的持续学习动力。该方法有望提升推理模型的泛化能力和自适应课程学习的效率，减少对人类标注数据的依赖。该研究对AI推理模型的自我进化机制具有重要理论意义，并可能推动更鲁棒的训练策略发展。",
+  "tags": [
+    "LLM",
+    "Self-Evolving",
+    "Reasoning",
+    "Curriculum Learning",
+    "Reward Design"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:19:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一求解器的不确定性作为奖励会导致奖励崩溃，多求解器分歧可提供更稳定的训练信号。",
+      "多求解器分歧奖励有助于维持挑战者生成问题的多样性，促进自适应课程的有效性。",
+      "该框架减少了对人类数据的依赖，支持更自主的推理能力提升。",
+      "研究为自进化推理模型的奖励设计提供了新视角，可能影响未来训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

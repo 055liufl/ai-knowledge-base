@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-121",
+  "title": "Balance of Benchmarks: Semantic Density Reweighting for Benchmark Multiplicity and Task-Conditioned Evaluation",
+  "source_url": "https://arxiv.org/abs/2608.30044",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“基准平衡”（Balance of Benchmarks, BoB）的新方法，用于解决语言模型评估中基准列表权重分配不均的问题。传统做法是对所有基准分数取平均，但基准列表因论文发表而不断增长，导致密集发表的基准领域被重复计算，隐性地扭曲了模型能力的评估。BoB通过嵌入基准描述，并为每个基准分配基于语义密度的逆权重，从而在评估中平衡不同能力维度的影响。该方法还支持任务条件化评估，可根据具体任务动态调整权重。这项工作对模型评测的公平性和准确性具有重要意义，尤其适用于多基准、多任务的模型对比场景。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Evaluation",
+    "Semantic Embedding"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:20:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统等权平均基准分数会因基准密度不均而扭曲模型能力评估，BoB通过逆密度加权修正此问题。",
+      "BoB利用语义嵌入技术，将基准描述转化为向量，实现基于语义相似度的密度计算。",
+      "该方法支持任务条件化评估，可根据具体任务动态调整基准权重，提升评估的针对性和准确性。",
+      "BoB为基准列表的持续增长提供了动态调整机制，有助于更公平地比较不同语言模型的能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

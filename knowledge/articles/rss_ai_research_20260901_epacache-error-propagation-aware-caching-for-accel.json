@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-082",
+  "title": "EpaCache: Error-Propagation-Aware Caching for Accelerating Diffusion-Based Visual Generation",
+  "source_url": "https://arxiv.org/abs/2608.29264",
+  "source_platform": "rss_ai_research",
+  "summary": "EpaCache 提出了一种面向扩散模型视觉生成的缓存机制，通过误差传播感知（Error-Propagation-Aware）来优化推理加速。扩散模型在图像和视频生成中质量高，但推理成本高，因为顺序采样器反复评估大型网络。现有缓存方法通过跨相邻时间步重用中间计算来降低延迟，但主要依赖局部时间变化，忽略了缓存重用的轨迹级影响。EpaCache 创新性地引入误差传播感知，考虑缓存重用对生成轨迹的长期影响，从而更智能地决定何时缓存和重用，在保持生成质量的同时显著加速推理。该研究针对扩散模型推理效率这一关键瓶颈，具有重要的实用价值，尤其适用于实时或大规模视觉生成场景。",
+  "tags": [
+    "Diffusion Model",
+    "Caching",
+    "Inference Acceleration",
+    "Visual Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:17:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有缓存控制器主要基于局部时间变化，忽略轨迹级后果，EpaCache 通过误差传播感知弥补这一不足。",
+      "EpaCache 在加速扩散模型推理的同时，能更好地保持生成质量，平衡效率与效果。",
+      "该方法适用于图像和视频生成，具有广泛的应用前景，尤其对实时生成场景意义重大。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

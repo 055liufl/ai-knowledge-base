@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-025",
+  "title": "Reward-Oracle MCTS for Formal Theorem Proving: Sample-Efficient Search and the Need for Kernel-Level Proof Auditing",
+  "source_url": "https://arxiv.org/abs/2608.28639",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于形式化定理证明的奖励引导蒙特卡洛树搜索（Reward-Oracle MCTS）方法，旨在解决大语言模型在形式化证明中搜索空间大、效率低的问题。现有方法要么将冗长的编译器错误信息直接输入生成上下文，导致搜索期间上下文使用量增加，要么采用非标准评估协议，难以与既有基线直接比较。作者提出三角色MCTS框架，通过奖励模型引导搜索，减少对错误信息的依赖，提高样本效率。同时，论文强调需要内核级证明审计（Kernel-Level Proof Auditing），以确保搜索过程中每一步证明的正确性和可验证性。该方法在标准基准上进行了评估，展示了显著的样本效率提升，并提出了对现有证明审计机制的改进需求。该研究对形式化数学、自动定理证明和LLM推理领域具有重要价值，为构建更可靠、高效的证明搜索系统提供了新思路。",
+  "tags": [
+    "LLM",
+    "MCTS",
+    "Formal Theorem Proving",
+    "Proof Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:13:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "三角色MCTS框架通过奖励模型引导搜索，显著减少对编译器错误信息的依赖，提升样本效率。",
+      "现有搜索方法因上下文使用和评估协议问题，难以公平比较，新方法提供了更标准的评估基础。",
+      "内核级证明审计是确保搜索过程中证明正确性的关键，当前机制存在不足，需加强。",
+      "该方法在形式化定理证明中展示了LLM与树搜索结合的新范式，有望推动自动推理发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

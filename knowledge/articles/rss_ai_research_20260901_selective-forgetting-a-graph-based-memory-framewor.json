@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-049",
+  "title": "Selective Forgetting: A Graph-Based Memory Framework for Long-Term LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.28978",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于图结构的长期记忆框架，用于增强大语言模型（LLM）代理在长期对话中的记忆能力。传统方法通常采用扁平化的检索增强生成（RAG）来管理长期记忆，但本文假设将对话表示为实体和关系的知识图谱结构能够提升召回率。该框架将每一轮对话提取为类型化节点和属性边，在回答问题时利用两跳子图进行推理，并定期根据加权评分剪枝低分节点，实现选择性遗忘。这种机制旨在模拟人类记忆的遗忘过程，保留重要信息，减少噪声干扰，从而提高长期对话的连贯性和准确性。该研究直接评估了知识图谱作为长期记忆结构的有效性，为LLM代理的记忆管理提供了新的视角和实验依据。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Knowledge Graph",
+    "Memory",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:15:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "知识图谱结构相比扁平RAG在长期代理记忆中可能提升召回率，但需直接验证。",
+      "选择性遗忘机制通过剪枝低分节点，模拟人类记忆，减少噪声干扰。",
+      "两跳子图推理用于回答问题，平衡了信息完整性和计算效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

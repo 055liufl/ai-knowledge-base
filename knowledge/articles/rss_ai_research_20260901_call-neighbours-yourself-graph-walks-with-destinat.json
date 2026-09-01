@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-101",
+  "title": "Call Neighbours Yourself: Graph Walks with Destination-Conditioned On-Policy Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2608.29588",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的图推理方法，旨在解决文本属性图（TAG）上大语言模型（LLM）推理时邻居选择静态化的问题。传统方法在生成前固定可访问的邻居集合，导致推理过程无法动态获取缺失证据。作者主张将邻居选择纳入推理过程本身，并引入了基于目标条件的在线策略自蒸馏（Destination-Conditioned On-Policy Self-Distillation）技术，使模型在推理时能够自主决定访问哪些邻居，从而增强对图结构的适应性和推理准确性。该方法通过自蒸馏机制训练模型，使其在给定目标节点时，能够学习到更优的邻居遍历策略。这项工作对于提升LLM在复杂图结构上的推理能力具有重要意义，尤其在知识图谱问答、社交网络分析等需要多跳推理的场景中具有潜在应用价值。论文提供了理论分析和实验验证，展示了在多个基准数据集上的性能提升，为图推理与LLM结合提供了新思路。",
+  "tags": [
+    "LLM",
+    "Graph Reasoning",
+    "Self-Distillation",
+    "Text-Attributed Graphs"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:18:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "邻居选择应作为推理过程的一部分，而非预先固定，以支持动态证据获取。",
+      "通过目标条件在线策略自蒸馏，模型可学习更优的邻居遍历策略。",
+      "该方法在多个基准上提升LLM在图推理任务中的性能，尤其适用于多跳推理场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260901-102",
+  "title": "Not Safe for All: Auditing the Dialect Penalty in Text-to-Image Safety Pipelines",
+  "source_url": "https://arxiv.org/abs/2608.29589",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究系统性地评估了文本到图像（T2I）安全管道在非标准英语方言上的公平性问题，提出了“方言惩罚”概念，即安全过滤器因语言表面特征而非语义意图触发，导致对非标准方言的过度标记或漏检。通过评估23,080对提示词，覆盖五种英语方言，研究发现文本级过滤器在相反方向上失效：NSFW-T过度标记良性方言提示，而LatentGuard过度标记有毒提示，偏差差距最高达+28.29个百分点。该工作揭示了安全模型在语言多样性上的脆弱性，对构建公平、鲁棒的AI安全系统具有重要参考价值。",
+  "tags": [
+    "T2I",
+    "Safety",
+    "Fairness",
+    "Dialect",
+    "Audit"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:18:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全过滤器存在方言惩罚，即基于表面语言特征而非语义意图触发，导致非标准方言被不公平对待。",
+      "文本级过滤器在方言上表现不一致，NSFW-T过度标记良性方言，而LatentGuard过度标记有毒方言，偏差差距显著。",
+      "大规模评估（23,080对提示词，五种方言）为量化安全模型的语言公平性提供了方法论。",
+      "研究强调需要开发语义感知的安全机制，以提升T2I系统在多样化语言环境下的鲁棒性和公平性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

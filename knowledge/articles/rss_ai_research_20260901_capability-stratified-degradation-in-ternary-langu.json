@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-038",
+  "title": "Capability-Stratified Degradation in Ternary Language Models",
+  "source_url": "https://arxiv.org/abs/2608.28809",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了极端低比特推理中三元语言模型的性能退化问题。三元语言模型将权重限制为{-1,0,+1}，接近每权重1.585比特的理论极限。研究以Qwen3.5-0.8B（752M参数）为例，通过将其转换为三元模型，系统分析了不同能力维度的退化情况。研究不仅关注权重能否量化，更深入探究了哪些能力在量化后得以保留，以及模型是否仍适用于后续的适配任务。这一研究对于在资源受限环境中部署大语言模型具有重要意义，为理解量化对模型能力的影响提供了实证依据，并为低比特模型的实际应用提供了指导。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Ternary",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:14:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "三元量化将权重限制为{-1,0,+1}，接近1.585 bits/weight的理论极限，但会导致模型能力在不同维度上出现非均匀退化。",
+      "研究以Qwen3.5-0.8B为例，展示了如何评估预训练模型在极端量化下哪些能力得以保留，为低比特部署提供了方法论。",
+      "量化后的模型仍可能保留部分能力，并可用于后续适配，这为资源受限场景下的模型利用提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

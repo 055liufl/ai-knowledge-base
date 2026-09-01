@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-085",
+  "title": "Accelerating Unified Multimodal Models with Core-Expansion Routing and Unified Computation Scheduling",
+  "source_url": "https://arxiv.org/abs/2608.29291",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种加速统一多模态模型的新方法，通过核心-扩展路由（Core-Expansion Routing）和统一计算调度（Unified Computation Scheduling）来减少冗余计算。作者通过令牌重要性探测发现，多模态模型在理解和生成任务中呈现不对称的核心-扩展结构：理解任务具有稳定的重要性组件，而生成任务主要共享该组件但需要随进度变化的修正。基于此，他们设计了CE-Router，利用任务共享的核心组件和任务特定的扩展组件来优化计算分配，从而在保持模型性能的同时显著提升推理效率。该研究针对统一多模态模型（如视觉-语言模型）的计算瓶颈，提出了一种新颖的架构级优化方案，对于推动多模态AI的实时应用和资源受限场景部署具有重要意义。",
+  "tags": [
+    "Multimodal",
+    "Efficiency",
+    "Routing",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:17:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一多模态模型存在跨令牌、层和生成时间步的冗余计算，通过令牌重要性探测可识别核心-扩展结构。",
+      "理解任务具有稳定的重要性组件，而生成任务共享该组件但需要进度相关的修正，形成不对称结构。",
+      "CE-Router通过任务共享核心和任务特定扩展的调度，在保持性能的同时减少计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

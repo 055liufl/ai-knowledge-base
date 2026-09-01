@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-006",
+  "title": "The Signal in the Noise: An Auditable Reliability Layer for Biomedical Text Classification",
+  "source_url": "https://arxiv.org/abs/2608.28595",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对生物医学自然语言处理（NLP）流程中普遍存在的文本噪声问题，提出了一种保守且完全可审计的拼写纠正可靠性层。生物医学文献通常通过自动化PDF解析获取，但这一过程会引入大量类似OCR的错误、分词与合并错误、连字符残留以及字符级损坏，这些噪声会系统性削弱词汇证据并降低下游分类器的性能。该可靠性层作为一种面向安全的预处理模块，旨在过滤和纠正这些噪声，同时保持可审计性，确保每一步修改都可追溯。这项工作的重要性在于，它直接解决了生物医学文本挖掘中一个被忽视但关键的实际问题，即输入数据的质量假设往往过于理想化。通过提供一种保守的纠正机制，该层不仅提升了分类器的鲁棒性，还增强了结果的可信度，这对于临床决策支持、药物研发和文献综述等应用尤为关键。该研究为构建更可靠的生物医学NLP系统提供了实用方案，并强调了数据预处理阶段在模型性能中的核心作用。",
+  "tags": [
+    "Biomedical NLP",
+    "Text Classification",
+    "Data Quality",
+    "Preprocessing",
+    "OCR"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:12:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生物医学NLP流程常忽略输入文本噪声，导致分类性能下降，本文提出可审计的可靠性层来缓解此问题。",
+      "该可靠性层采用保守策略，确保纠正操作可追溯，增强模型输出的可信度。",
+      "研究强调预处理在提升下游任务鲁棒性中的关键作用，为实际应用提供了实用解决方案。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

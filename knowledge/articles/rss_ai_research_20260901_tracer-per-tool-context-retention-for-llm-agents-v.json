@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260901-094",
+  "title": "TRACER: Per-Tool Context Retention for LLM Agents via Consequence-Attributed Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2608.29363",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TRACER 的方法，用于解决大型语言模型（LLM）智能体在工具调用场景中的上下文保留问题。在企业数据智能体中，回答业务查询通常需要多次工具调用和推理步骤，导致每个会话积累数十万甚至更多的上下文令牌。现有的压缩策略在分配保留预算时，往往不考虑移除单个工具输出所带来的下游后果，因此激进压缩可能触发昂贵的工具重新调用，抵消初始的节省。TRACER 通过后果归因强化学习（Consequence-Attributed Reinforcement Learning）来学习每个工具输出的长期影响，从而智能地决定保留哪些上下文信息，以最小化总成本（包括压缩成本和重新调用成本）。该方法具有创新性，将强化学习应用于上下文管理，直接优化端到端效率，对提升企业级 LLM 智能体的性能和成本效益具有重要意义。该研究值得关注，因为它解决了实际部署中的关键瓶颈，并提供了可学习的优化框架。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Context Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:18:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有上下文压缩策略忽视工具输出的下游后果，导致重新调用成本高。",
+      "TRACER 使用后果归因强化学习，学习每个工具输出的长期影响。",
+      "该方法直接优化总成本，包括压缩和重新调用，提升端到端效率。",
+      "适用于企业数据智能体等长上下文、多工具调用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

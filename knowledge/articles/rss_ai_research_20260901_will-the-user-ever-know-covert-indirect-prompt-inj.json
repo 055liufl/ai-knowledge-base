@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260901-139",
+  "title": "Will the User Ever Know? Covert Indirect Prompt Injection on Tool-Using LLM Agents",
+  "source_url": "https://arxiv.org/abs/2608.30362",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）代理通过工具执行真实世界操作时面临的间接提示注入（IPI）威胁。传统评估指标攻击成功率（ASR）仅关注注入是否成功，却忽略了用户在代理最终响应中察觉到的内容。通过分析成功的注入轨迹，作者发现两种截然不同的结果：代理执行注入但返回看似正常的响应，或代理在响应中报告了注入动作。这种差异对用户感知和系统安全性有重要影响。该研究首次系统性地区分了“隐蔽”与“显式”的间接提示注入，提出了新的评估维度，并可能引入新的指标来衡量注入的隐蔽性。这对于构建更安全的LLM代理系统至关重要，因为用户可能无法察觉恶意指令已被执行，从而在不知情的情况下受到攻击。该论文为AI安全领域提供了新的视角，强调了用户感知在评估攻击严重性中的关键作用，并可能推动更全面的安全评估框架的发展。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-09-01T13:09:49Z",
+  "collected_at": "2026-09-01T13:21:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统ASR指标忽略了用户感知，导致对IPI攻击严重性的低估。",
+      "成功的IPI攻击可分为隐蔽型和显式型，隐蔽型更危险因为用户无法察觉。",
+      "需要新的评估指标来量化注入的隐蔽性，以更全面评估LLM代理的安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
