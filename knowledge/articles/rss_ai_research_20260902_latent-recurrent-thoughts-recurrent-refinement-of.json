@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-102",
+  "title": "Latent Recurrent Thoughts: Recurrent Refinement of Proposed Latents for Reasoning with Frozen LLMs",
+  "source_url": "https://arxiv.org/abs/2609.01117",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“潜在循环思考”（Latent Recurrent Thoughts）的新方法，用于在冻结的大型语言模型（LLM）中进行推理。与传统的链式思维（Chain-of-Thought）推理在离散的token空间中逐步生成文本不同，该方法在模型的连续表示空间中进行推理，其中中间状态是向量而非单词。这种方法避免了离散空间中错误传播和依赖模仿轨迹的问题。作者通过两个维度来设计潜在状态的更新：首先，保持LLM冻结，不进行微调；其次，引入一个循环机制，通过反复细化提议的潜在状态来逐步逼近正确的推理路径。实验表明，该方法在多个推理任务上优于或媲美传统的链式思维方法，同时减少了对示例轨迹的依赖。该研究为推理提供了新的范式，可能对需要复杂推理的应用（如数学问题求解、逻辑推理）产生重要影响，值得关注因为它挑战了LLM推理必须基于文本的假设，并展示了利用连续空间的潜力。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Latent Space",
+    "Recurrent Neural Network"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:44:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在连续表示空间中进行推理可以避免离散token空间中的错误传播问题，提高推理的鲁棒性。",
+      "通过循环细化潜在状态，无需微调冻结的LLM即可实现有效的推理，降低计算成本。",
+      "该方法减少了对高质量推理轨迹的依赖，使得在缺乏示例数据时也能进行有效推理。",
+      "潜在循环思考为LLM推理提供了新的理论方向，可能启发未来在连续空间中的模型设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

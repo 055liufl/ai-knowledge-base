@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260902-127",
+  "title": "trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories",
+  "source_url": "https://arxiv.org/abs/2609.00038",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文（arXiv:2609.00038）针对当前大语言模型（LLM）智能体评估中的一个核心缺陷展开研究：仅基于最终结果（outcome-only）的评估方式，无法捕捉智能体在完成任务过程中所采用的错误路径或不当行为。作者通过构建一个确定性的工具使用型支持台环境，其中包含一个总能解决问题的脚本化Oracle策略，并引入故障注入器来破坏智能体的执行轨迹，从而在已知真实答案的条件下，精确测量了仅看结果的评估指标（如LLM裁判）的盲区。研究发现，仅看结果的评估会漏掉大量轨迹层面的错误，例如错误地使用工具、绕过安全限制、执行多余步骤或依赖偶然的成功。该论文强调了轨迹级评估（trajectory-level evaluation）的必要性，并提出了一个名为trajectory-judge的评估框架或方法，以弥补现有评估体系的不足。这项工作对于构建更可靠、更安全的LLM智能体具有重要的指导意义，因为它揭示了当前评估实践中的结构性盲点，并提供了可量化的证据和解决方案方向。值得关注的是，它推动了评估范式从结果导向向过程导向的转变，对智能体的开发、测试和部署都有深远影响。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Trajectory",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:46:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅基于最终结果的评估方式对智能体的错误执行轨迹存在结构性盲区，即使最终答案正确，也可能掩盖严重的过程错误。",
+      "通过可控环境（确定性工具环境+Oracle策略+故障注入）可以精确量化结果评估的盲区，为改进评估方法提供实证基础。",
+      "轨迹级评估（trajectory-judge）是更全面的智能体评估方向，能够捕捉工具使用、安全性和效率等方面的过程性缺陷。",
+      "该研究对LLM智能体的可靠性评估具有重要启示，推动评估标准从结果导向转向过程与结果并重。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

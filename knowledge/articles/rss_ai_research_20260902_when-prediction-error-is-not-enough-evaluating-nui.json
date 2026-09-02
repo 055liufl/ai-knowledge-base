@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260902-010",
+  "title": "When Prediction Error Is Not Enough: Evaluating Nuisance-Function Prediction for Causal Estimation",
+  "source_url": "https://arxiv.org/abs/2609.00071",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了因果推断中一个关键但常被忽视的问题：预测误差是否足以评估因果估计中使用的干扰函数（nuisance function）估计器。作者在部分线性模型框架下，通过蒙特卡洛模拟比较了普通最小二乘法（OLS）、广义加性模型（GAMs）、XGBoost以及结合XGBoost的双机器学习（DML-XGBoost）等方法。研究发现，干扰函数的预测误差与因果估计性能之间的关系因性能指标而异，预测误差低并不一定意味着因果估计更准确。这一发现对因果推断实践具有重要警示意义，提示研究者在选择干扰函数估计器时不能仅依赖预测误差，而需考虑因果目标的具体要求。该研究为因果推断的方法论提供了实证基础，有助于提升因果效应估计的可靠性，尤其在机器学习模型广泛应用的背景下，其结论对研究者和开发者均有参考价值。",
+  "tags": [
+    "Causal Inference",
+    "Nuisance Function",
+    "Double Machine Learning",
+    "Prediction Error",
+    "Monte Carlo Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:38:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预测误差与因果估计性能的关系因性能指标而异，不能简单等同。",
+      "在部分线性模型中，OLS、GAMs、XGBoost和DML-XGBoost的因果估计表现存在显著差异。",
+      "低预测误差的干扰函数估计器不一定带来更优的因果效应估计，需关注目标指标。",
+      "研究为因果推断中干扰函数估计器的选择提供了实证指导，强调评估指标的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

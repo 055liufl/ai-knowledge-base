@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-055",
+  "title": "Control-Data Flow Separation: Stable Prompt Optimization in Multi-Agent LLMs",
+  "source_url": "https://arxiv.org/abs/2609.00621",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多智能体大语言模型（LLM）系统的提示词优化方法，核心思想是将控制流（如消息路由、输出格式、终止信号等执行关键协议）与数据流（任务相关的内容生成）分离。在现有系统中，提示词往往同时承担内容生成和协议指定两种角色，导致优化内容时可能意外破坏协议，使整个智能体流水线失效。通过分离控制与数据，该方法旨在实现更稳定的提示词优化，避免因内容调整而引发的系统级故障。该研究来自arXiv预印本，针对多智能体系统的工程实践痛点，具有较高的实用价值，尤其适用于依赖复杂提示词编排的LLM应用开发者。",
+  "tags": [
+    "Multi-Agent",
+    "Prompt Optimization",
+    "LLM",
+    "System Design"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:41:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示词在多智能体系统中常同时承担内容生成和协议控制双重角色，导致优化时易产生冲突。",
+      "通过将控制流与数据流分离，可降低提示词编辑对系统稳定性的影响。",
+      "该方法为多智能体LLM系统的提示词工程提供了新的设计范式，有助于提升系统鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

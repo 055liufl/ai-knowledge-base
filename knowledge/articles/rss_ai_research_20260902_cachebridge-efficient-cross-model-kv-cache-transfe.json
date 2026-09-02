@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-086",
+  "title": "CacheBridge: Efficient Cross-Model KV Cache Transfer",
+  "source_url": "https://arxiv.org/abs/2609.00891",
+  "source_platform": "rss_ai_research",
+  "summary": "CacheBridge 提出了一种高效的跨模型 KV 缓存转移方法，旨在解决多模型系统中共享上下文时因 KV 缓存模型特异性而导致的重复预填充问题。传统方法需要接收模型对共享前缀进行预填充，而现有的闭式跨模型 KV 转移（Full-Head Mapping）虽避免了重放，但其全头设计将每个目标 KV 头映射到所有源 KV 头，导致转移质量对层选择敏感且计算开销大。CacheBridge 通过优化映射策略，可能采用选择性头映射或更高效的映射机制，以提升转移质量和效率。该研究对多模型协作、模型切换和上下文共享场景具有重要意义，有望降低推理延迟和计算成本，值得关注。",
+  "tags": [
+    "KV Cache",
+    "Multi-Model",
+    "Efficiency",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:43:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CacheBridge 针对跨模型 KV 缓存转移的敏感性问题，提出更高效的映射方法，提升转移质量。",
+      "通过优化映射策略，减少计算开销，加速多模型系统中的上下文共享。",
+      "该研究为多模型协作和模型切换提供了实用解决方案，降低推理延迟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

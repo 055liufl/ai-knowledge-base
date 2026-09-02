@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-060",
+  "title": "Drift-Aware LLM Routing with Sparse Contexts and Shared Budgets",
+  "source_url": "https://arxiv.org/abs/2609.00662",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多模型语言服务的路由方法，该方法在保持计算、延迟、内存或成本等预算的同时，为每个请求选择最优模型。与静态模型选择不同，该问题面临两大挑战：提示表示的高维性使得仅少数嵌入方向能预测模型的增量价值；请求分布和模型前沿在发布、微调或量化后会发生漂移。为此，作者引入了稀疏上下文机制，利用少量关键嵌入维度进行决策，并设计了共享预算策略，在多个请求或模型间动态分配资源，以适应漂移并优化整体效用。该方法有望提升多模型服务的效率与适应性，对大规模AI基础设施的智能调度具有重要意义。",
+  "tags": [
+    "LLM",
+    "Routing",
+    "Multi-Model",
+    "Budget",
+    "Drift"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:42:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高维提示表示中仅少数方向对模型选择有效，稀疏上下文可降低计算开销并提高路由准确性。",
+      "共享预算机制允许跨请求或模型灵活分配资源，有助于在动态环境中维持整体性能。",
+      "模型漂移（如更新、微调）要求路由策略具备适应性，本文方法通过在线调整应对变化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

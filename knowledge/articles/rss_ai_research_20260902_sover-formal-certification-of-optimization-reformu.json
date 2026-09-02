@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-065",
+  "title": "SOVER: Formal Certification of Optimization Reformulations via LLM-Assisted SMT Verification",
+  "source_url": "https://arxiv.org/abs/2609.00728",
+  "source_platform": "rss_ai_research",
+  "summary": "SOVER 是一个结合大语言模型（LLM）与可满足性模理论（SMT）验证的框架，旨在为数学优化问题的重表述（reformulation）提供形式化认证。论文指出，仅依赖求解器执行结果验证 LLM 生成的优化模型转换并不可靠，因为求解器可能受局部最优、超时、数值误差或语义差异影响。SOVER 利用 LLM 辅助生成 SMT 验证条件，自动检查原始问题与转换后问题之间的等价性或最优性保持，从而提供严格的数学保证。该工作填补了 LLM 在优化建模中缺乏形式化验证的空白，对提升自动化建模的可靠性和可信度具有重要意义。其创新点在于将 LLM 的生成能力与 SMT 的严谨推理结合，适用于需要高可靠性的优化应用场景，如运筹学、工程设计和机器学习超参数调优等。该研究为 LLM 在科学计算和决策优化中的安全部署提供了新思路。",
+  "tags": [
+    "LLM",
+    "SMT",
+    "Optimization",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:42:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的优化重表述可能隐含语义错误，传统求解器验证不可靠，需要形式化方法补充。",
+      "SOVER 将 LLM 与 SMT 结合，自动生成并验证等价性条件，为优化模型转换提供数学保证。",
+      "该框架可提升 LLM 在优化建模中的可信度，推动其在关键决策场景中的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

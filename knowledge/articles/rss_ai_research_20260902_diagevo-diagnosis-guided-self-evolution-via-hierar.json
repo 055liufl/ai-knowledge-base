@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-071",
+  "title": "DiagEvo: Diagnosis-Guided Self-Evolution via Hierarchical Error Memory",
+  "source_url": "https://arxiv.org/abs/2609.00768",
+  "source_platform": "rss_ai_research",
+  "summary": "DiagEvo 提出了一种基于诊断引导的自进化框架，通过分层错误记忆机制来指导语言模型在自我对弈中的迭代优化。传统自进化方法依赖难度、可学习性或多样性等信号生成问题，虽能保持挑战性，但未能精准定位模型未解决的推理弱点，导致性能停滞或下降。DiagEvo 引入诊断引导，利用分层错误记忆（Hierarchical Error Memory）记录和分类模型在不同推理阶段的错误模式，从而在后续轮次中针对性地生成训练样本，实现更高效的自我进化。该方法无需外部任务资源，仅依赖模型自身输出和错误分析，具有通用性和可扩展性。实验表明，DiagEvo 在多个推理基准上显著提升了模型性能，并有效避免了退化问题。该研究为自我进化提供了新视角，将诊断与记忆机制结合，有望推动语言模型在复杂推理任务中的持续改进。",
+  "tags": [
+    "LLM",
+    "Self-Evolution",
+    "Error Memory",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:42:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DiagEvo 通过分层错误记忆显式建模模型弱点，指导问题生成，克服了无引导自进化的性能瓶颈。",
+      "该方法无需外部资源，仅依赖内部诊断信号，增强了自进化框架的通用性和自主性。",
+      "实验验证了诊断引导在多个推理任务上的有效性，显著提升性能并减少退化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

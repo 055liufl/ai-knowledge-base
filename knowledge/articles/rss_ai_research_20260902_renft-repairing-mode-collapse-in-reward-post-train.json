@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-139",
+  "title": "ReNFT: Repairing Mode Collapse in Reward Post-Training via Internal Probability-Mass Recalibration",
+  "source_url": "https://arxiv.org/abs/2609.00061",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 ReNFT 的方法，用于修复扩散模型在奖励后训练中出现的模式坍缩问题。在奖励后训练过程中，生成器往往会将概率质量集中在少数几个奖励偏好的模式上，导致同一提示下的生成多样性丧失。现有缓解方法依赖外部信号或接口，如增加感知目标、调整参考正则化或修改文本编码器，但无法在保持已获取能力的同时修复已经坍缩的适配器。ReNFT 通过内部概率质量重新校准来直接修复坍缩，无需外部信号，为扩散模型的后训练提供了一种新的内部修复机制。该工作对生成模型的可控性和多样性研究具有重要价值，尤其对依赖奖励优化的应用场景（如文本到图像生成）有实际意义。",
+  "tags": [
+    "Diffusion Model",
+    "Mode Collapse",
+    "Reward Post-Training",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:46:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReNFT 通过内部概率质量重新校准直接修复已坍缩的适配器，无需外部信号或接口。",
+      "该方法针对奖励后训练中常见的模式坍缩问题，旨在恢复同一提示下的生成多样性。",
+      "与现有方法不同，ReNFT 在保持已获取能力的同时进行修复，具有更高的实用性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

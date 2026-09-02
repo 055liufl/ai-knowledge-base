@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-023",
+  "title": "Invalidation Contracts for Cross-Episode Agent Memory",
+  "source_url": "https://arxiv.org/abs/2609.00243",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“失效契约”（Invalidation Contracts）的协议层机制，用于解决跨回合（cross-episode）LLM Agent 记忆缓存中的服务器端数据漂移问题。在LLM Agent执行任务时，常会缓存从API错误中恢复的解决方案，以避免重复推导，从而节省token和模型调用。然而，当服务器端数据发生变化时，这些缓存修复可能变为“静默失败”，导致错误结果。传统做法是每回合重新推导，但这会抵消缓存带来的效率收益。失效契约通过为每个恢复建议附加版本戳（version stamps）和可缓存性提示（cacheability hints），使Agent能够智能判断缓存是否仍然有效，从而在保持效率的同时避免静默失败。该工作为Agent记忆管理提供了新的思路，平衡了计算效率与数据一致性，对构建可靠、高效的长期运行Agent系统具有重要意义。",
+  "tags": [
+    "LLM Agent",
+    "Memory Management",
+    "Cache Invalidation",
+    "Data Drift",
+    "Protocol"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:39:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "失效契约通过版本戳和缓存提示，使Agent能识别缓存失效，避免静默失败，同时保留缓存效率。",
+      "该机制针对跨回合记忆的长期一致性问题，是Agent系统实际部署中的关键挑战。",
+      "相比全量重推导，失效契约提供了一种细粒度、可扩展的缓存管理方案，有望降低运行成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

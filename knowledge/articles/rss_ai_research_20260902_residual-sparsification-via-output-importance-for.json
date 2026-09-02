@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-051",
+  "title": "Residual Sparsification via Output Importance for Compressing Mixture-of-Experts LLMs",
+  "source_url": "https://arxiv.org/abs/2609.00575",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对混合专家（MoE）大语言模型的高效压缩方法，名为“基于输出重要性的残差稀疏化”。MoE模型通过稀疏激活专家来提升效率，但参数量巨大，对GPU内存造成沉重负担。现有的残差稀疏化技术将每个专家的投影矩阵分解为共享基矩阵和专家特有残差矩阵，并对残差进行压缩，但往往忽略了不同输出维度的重要性差异。本文创新性地引入输出重要性度量，在稀疏化过程中优先保留对模型输出影响更大的残差分量，从而在保持模型性能的同时显著提高压缩率。该方法有望降低MoE模型的部署成本，推动其在资源受限环境中的应用。该研究属于模型压缩领域，对高效LLM推理具有重要价值，值得关注。",
+  "tags": [
+    "MoE",
+    "模型压缩",
+    "稀疏化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:41:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出基于输出重要性的残差稀疏化方法，优化MoE模型压缩。",
+      "通过考虑输出维度重要性，在压缩率和模型性能间取得更好平衡。",
+      "针对MoE架构的内存瓶颈，提供实用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

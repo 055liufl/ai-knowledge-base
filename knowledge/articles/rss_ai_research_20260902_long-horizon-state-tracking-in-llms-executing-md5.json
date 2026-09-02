@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-005",
+  "title": "Long-Horizon State Tracking in LLMs: Executing MD5 through a Deep Sequence of Dependent Tool Calls",
+  "source_url": "https://arxiv.org/abs/2609.00012",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型（LLM）在长时程任务中状态跟踪能力的评估方法，并以执行MD5哈希算法作为测试案例，该任务要求模型通过一系列深度依赖的工具调用来完成。研究指出，长时程任务在LLM评估中并不常见，原因在于每一步都依赖于前一步的结果，即使单步准确率很高，误差也会随步骤累积而级联放大，导致端到端失败概率随任务长度急剧增加。现有的智能体基准测试虽然报告端到端成功率，但往往将状态跟踪困难与指令理解混淆，且缺乏控制组来隔离状态跟踪能力的影响。本文通过设计MD5执行任务，提供了一个纯净的测试环境，以衡量模型在长时间序列中保持状态一致性的能力。该研究对于理解LLM在复杂推理和工具使用中的局限性具有重要意义，并为开发更鲁棒的智能体系统提供了评估基准。",
+  "tags": [
+    "LLM",
+    "State Tracking",
+    "Agent",
+    "Evaluation",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:38:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程任务中，误差级联是导致LLM端到端失败率随长度急剧上升的关键因素，即使单步准确率很高。",
+      "现有智能体基准测试混淆了状态跟踪与指令理解，缺乏控制组来隔离状态跟踪难度。",
+      "通过MD5执行任务作为测试案例，可以纯净地评估模型在深度依赖工具调用中的状态跟踪能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-094",
+  "title": "Spawn Freely, Act Sparingly: Progressive Risk Vesting for Recursive LLM-Agent Trees",
+  "source_url": "https://arxiv.org/abs/2609.01035",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“渐进式风险归属”（Progressive Risk Vesting, PRV）的机制，用于管理递归式LLM智能体树状结构中的风险。在递归智能体系统中，智能体可以生成专家子代理以扩展搜索范围，但某些分支可能请求执行数据发送或代码部署等操作。PRV机制区分了沙箱生成（外部控制防止特定危害）与能力激活（选定分支跨越不可逆操作边界）两种情况。PRV将轨迹级别的风险预算托管在托管账户中，并随着分支的探索逐步释放权限，从而在允许智能体自由生成和探索的同时，严格控制高风险操作的时机与范围。该方法旨在解决递归智能体在复杂任务中因过度授权导致的安全隐患，为构建更安全、可控的自主智能体系统提供了新的设计思路。该研究对于AI安全、智能体治理以及自动化决策系统的可靠性具有重要参考价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "AI Safety",
+    "Risk Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:44:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRV机制通过托管风险预算，在递归智能体树中实现权限的渐进式释放，平衡探索自由与操作安全。",
+      "区分沙箱生成与能力激活，明确风险边界，避免不可逆操作被过早授权。",
+      "该方法为递归LLM智能体的安全治理提供了可操作的框架，有助于减少自主系统中的意外危害。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

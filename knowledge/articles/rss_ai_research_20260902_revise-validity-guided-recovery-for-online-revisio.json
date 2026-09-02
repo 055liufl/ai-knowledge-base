@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-056",
+  "title": "REVISE: Validity-Guided Recovery for Online Revisions in Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2609.00643",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为REVISE的机制，用于在智能体工作流中处理在线修订时的正确性与效率权衡。在并发执行中，当智能体需要修订时，丢弃正在进行的任务可确保使用最新版本的正确性，但会浪费可能仍然有效的进度；而重用先前工作虽能提高效率，却可能将过时状态传播至输出和工具效果中。现有恢复策略通过粗粒度策略（如全丢弃或全重用）不平衡地解决这一权衡，往往偏向效率或正确性一方。REVISE引入基于有效性的引导恢复，通过动态评估中间结果的有效性，决定哪些部分可安全重用、哪些需重新执行，从而在保持正确性的同时最大化效率。该工作针对智能体工作流中的核心挑战，具有理论意义和实际应用价值，尤其适用于需要频繁修订和并发执行的复杂任务场景。",
+  "tags": [
+    "Agent",
+    "Workflow",
+    "Concurrency",
+    "Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:41:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体修订中的正确性-效率权衡是并发执行的核心问题，现有策略过于粗粒度。",
+      "REVISE通过有效性引导的恢复机制，动态决定重用或重算，平衡两者。",
+      "该方法可减少无效计算，同时避免过时状态传播，提升工作流可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

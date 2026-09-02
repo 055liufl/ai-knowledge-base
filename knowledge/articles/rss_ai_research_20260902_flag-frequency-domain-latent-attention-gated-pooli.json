@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-078",
+  "title": "FLaG: Frequency-Domain Latent-attention Gated Pooling for Token Aggregation",
+  "source_url": "https://arxiv.org/abs/2609.00831",
+  "source_platform": "rss_ai_research",
+  "summary": "FLaG（Frequency-Domain Latent-attention Gated Pooling）是一种新颖的令牌聚合模块，旨在将变长令牌序列转换为固定维度的样本表示。与仅在原始令牌空间操作的常见池化方法不同，FLaG首先将编码器输出转换到傅里叶域，利用实值快速傅里叶变换（rFFT）提取非冗余频谱，并通过拼接实部和虚部来保留完整信息。随后，FLaG引入潜在注意力门控机制，在频域中自适应地选择重要频率分量，从而生成更具判别性的聚合表示。该模块设计为即插即用，可轻松集成到现有编码器架构中，适用于文本、图像或语音等多种模态。其创新之处在于将频域分析与注意力机制结合，为序列表示学习提供了新视角，可能提升下游任务（如分类、检索）的性能。该研究值得关注，因为它挑战了传统池化方法的局限，并展示了频域特征在表示学习中的潜力。",
+  "tags": [
+    "Token Aggregation",
+    "Frequency Domain",
+    "Attention Mechanism",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:43:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FLaG通过频域变换捕捉全局模式，弥补了传统池化仅关注局部信息的不足。",
+      "潜在注意力门控机制在频域中动态选择关键频率，增强了表示的判别力。",
+      "作为即插即用模块，FLaG可广泛适用于多种编码器架构和模态，具有较高通用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

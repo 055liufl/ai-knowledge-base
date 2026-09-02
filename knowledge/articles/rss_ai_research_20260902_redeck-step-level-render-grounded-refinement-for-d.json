@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-019",
+  "title": "ReDeck: Step-Level Render-Grounded Refinement for Document-to-Slide Generation",
+  "source_url": "https://arxiv.org/abs/2609.00194",
+  "source_platform": "rss_ai_research",
+  "summary": "ReDeck 提出了一种面向文档到幻灯片生成任务的步骤级渲染接地优化方法。传统幻灯片生成代理采用“单版本、单反馈”的迭代反思模式，即先生成整张幻灯片或整套幻灯片，再渲染，最后在回合边界进行批评，导致溢出、重叠、裁剪等局部错误无法被及时修正。ReDeck 将反馈粒度细化到每一步操作，在每一步生成后立即进行渲染并基于渲染结果进行接地评估，从而实现对布局和内容的即时调整。该方法旨在提升幻灯片生成的编辑密度和空间布局准确性，使输出更符合实际演示需求。该研究针对自动幻灯片生成这一实际应用场景，通过细粒度反馈机制改进现有代理的局限性，具有较高的实用价值，值得关注。",
+  "tags": [
+    "Document-to-Slide",
+    "Agent",
+    "Rendering",
+    "Layout Generation",
+    "Refinement"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:39:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReDeck 将反馈从回合级细化到步骤级，实现渲染接地优化，能及时修正局部布局错误。",
+      "该方法针对幻灯片生成中内容选择与空间布局的挑战，通过逐步渲染反馈提升编辑密度和准确性。",
+      "ReDeck 改进了传统代理的单版本反馈循环，减少溢出、重叠等问题，提高生成质量。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

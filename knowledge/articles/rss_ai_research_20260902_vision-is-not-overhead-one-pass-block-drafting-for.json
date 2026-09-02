@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-032",
+  "title": "Vision Is Not Overhead: One-Pass Block Drafting for Lossless Speculative Decoding in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2609.00355",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GLANCE的新型推测解码方法，旨在解决视觉语言模型（VLMs）中推测解码的效率与准确性矛盾。传统推测解码依赖小型自回归草稿模型，但小模型难以在每一步处理图像信息，导致视觉上下文被压缩或忽略，从而在图像相关文本预测上可靠性下降。GLANCE通过一次性块草稿（one-pass block drafting）机制，使草稿模型在生成过程中无需逐步访问图像，同时保持无损解码（即输出与原始模型一致）。该方法首次实现了在VLM中不牺牲视觉信息的单次前向草稿，显著提升了推理速度，同时保持了生成质量。该研究对多模态AI的实时应用（如视觉问答、图像描述）具有重要价值，解决了推测解码在多模态场景下的核心瓶颈，展示了在效率和准确性之间的创新平衡。",
+  "tags": [
+    "Speculative Decoding",
+    "Vision-Language Models",
+    "Inference Acceleration",
+    "Multimodal AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:40:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GLANCE首次提出一次性块草稿机制，使推测解码在VLM中无需逐步图像访问，打破传统草稿模型的性能瓶颈。",
+      "该方法实现无损推测解码，确保输出与原始模型一致，同时显著提升推理速度，适合实时多模态应用。",
+      "研究揭示了视觉信息在推测解码中的关键作用，为未来多模态加速技术提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

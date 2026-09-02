@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260902-109",
+  "title": "Making Prospective Memory SLM-Shaped: Typed Intention Stores for Small-Model Agents",
+  "source_url": "https://arxiv.org/abs/2609.01272",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向小型语言模型（SLM）的预期记忆（Prospective Memory）实现方法，通过类型化意图存储（Typed Intention Stores）来增强智能体在延迟意图执行任务中的表现。预期记忆是指智能体在持续处理其他任务时，能在正确的未来线索出现时执行预定的意图。尽管现有基准测试（如PM-Bench）已将其作为独立智能体技能进行评估，但前沿大型语言模型（LLM）的表现仍不理想，最佳公开脚手架仅达到65.1%的Set-F1分数。作者认为，该任务本质上是基于模式约束的状态跟踪，而非开放式推理，因此当动作空间被类型化时，小型模型也能有效执行。论文提出“Prospective Intent”机制，通过类型化存储结构来组织和管理意图，从而降低任务复杂度，使SLM在资源受限环境下也能实现可靠的预期记忆。该研究为小型模型在复杂智能体任务中的应用提供了新思路，具有较高的实用价值。",
+  "tags": [
+    "SLM",
+    "Prospective Memory",
+    "Agent",
+    "Intent Store"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:45:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预期记忆任务可被重新定义为模式约束的状态跟踪，而非开放式推理，这为小型模型提供了可行性基础。",
+      "类型化意图存储通过结构化动作空间，显著降低了小型模型执行延迟意图的难度。",
+      "当前LLM在PM-Bench上的低性能表明，大型模型并非解决所有智能体任务的唯一途径，小型模型结合适当架构可达到竞争性效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

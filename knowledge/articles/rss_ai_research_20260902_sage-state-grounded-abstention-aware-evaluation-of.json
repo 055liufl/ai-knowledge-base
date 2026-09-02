@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260902-038",
+  "title": "SAGE: State-Grounded, Abstention-Aware Evaluation of Task-Oriented Dialogue Agents",
+  "source_url": "https://arxiv.org/abs/2609.00434",
+  "source_platform": "rss_ai_research",
+  "summary": "SAGE（State-Grounded Abstention-Aware Evaluation）是一种针对任务导向型对话代理的新型评估框架。传统评估方法通常依赖整体性的LLM评判，将对话上下文视为单一整体进行评分，这忽略了每个对话轮次是否正确地推进了底层工作流状态。SAGE通过将工作流规范编译为状态机，并引入“弃权感知”机制，能够精确评估每个轮次的状态转换是否正确，同时允许模型在信息不足时主动弃权，避免误判。该方法减少了全模型调用的次数，提高了评估效率。SAGE的提出填补了任务导向对话系统评估中状态级细粒度评估的空白，对于提升对话代理的可靠性和可解释性具有重要意义，值得研究者和开发者关注。",
+  "tags": [
+    "对话系统",
+    "评估方法",
+    "任务导向",
+    "状态机",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:40:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAGE通过状态机编译工作流规范，实现逐轮状态转换的精确评估，优于整体性评判。",
+      "引入弃权感知机制，允许模型在不确定时弃权，提高了评估的可靠性和鲁棒性。",
+      "相比传统方法，SAGE减少了全模型调用次数，提升了评估效率，适合大规模应用。",
+      "该框架为任务导向对话系统的可解释性和可靠性提供了新的评估维度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260902-124",
+  "title": "Selective Agent Guidance via Entropy: Learning Autonomous Policies from Imperfect VLM Teachers",
+  "source_url": "https://arxiv.org/abs/2609.01567",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SAGE（Selective Agent Guidance via Entropy）的框架，旨在从在线、昂贵且不完美但具有信息量的视觉语言模型（VLM）教师中学习廉价的自主策略。论文指出，直接使用VLM作为策略存在成本高、脆弱性大、无法从环境交互中改进以及可能重复系统错误等问题。SAGE通过熵机制选择性地利用VLM教师的指导，仅在必要时查询教师，从而降低推理成本，同时通过模仿学习训练一个轻量级自主策略。该框架结合了VLM的先验知识和自主策略的廉价性，有望在交互式决策任务中实现高效且鲁棒的表现。论文通过实验验证了SAGE在减少查询次数和提升策略性能方面的有效性，为利用大型模型指导小型模型提供了一种新思路。",
+  "tags": [
+    "VLM",
+    "Policy Learning",
+    "Entropy",
+    "Imitation Learning",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:46:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接使用VLM作为策略成本高且脆弱，SAGE通过熵选择性查询教师，降低推理开销。",
+      "SAGE利用VLM教师的不完美指导，通过模仿学习训练自主策略，提升样本效率。",
+      "该方法在交互式决策任务中平衡了性能与成本，为大型模型蒸馏到小型模型提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

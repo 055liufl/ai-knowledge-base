@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260902-068",
+  "title": "ContextPipe: Database-Inspired Context Assembly for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2609.00749",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ContextPipe，一种受数据库启发的上下文组装框架，用于解决长时程 LLM 智能体在运行时面临的上下文管理问题。长时程智能体需要动态决定每个提示中包含哪些内容、以何种顺序排列，并在硬性上下文窗口预算和字节敏感的提示缓存约束下压缩历史。在生产环境中，这些逻辑分散在提示构建器、临时压缩例程、缓存破坏变通方案和供应商特定适配器中，导致系统复杂且难以维护。作者认为上下文组装在结构上同构于数据库查询处理，因此借鉴数据库的成熟技术（如查询优化、索引、物化视图等）来系统化上下文管理。该框架旨在提供统一的上下文组装层，提升长时程智能体的效率、可扩展性和可维护性。该论文值得关注，因为它提出了一个新颖的视角，将数据库原理应用于 LLM 智能体的基础设施问题，有望推动智能体系统设计的标准化。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Database",
+    "Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-09-02T12:35:54Z",
+  "collected_at": "2026-09-02T12:42:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文组装是长时程智能体的核心挑战，当前实现碎片化，缺乏统一抽象。",
+      "将上下文组装建模为数据库查询处理，可借鉴优化、索引和物化视图等技术。",
+      "ContextPipe 提供系统化框架，有望降低智能体系统的复杂性和缓存成本。",
+      "该工作填补了智能体基础设施中上下文管理的空白，对生产级系统设计有重要启示。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
