@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260903-099",
+  "title": "MeanField Surrogate Modeling for Scalable Runtime Scheduling of Concurrent Heterogeneous AI Inference on Shared GPUs",
+  "source_url": "https://arxiv.org/abs/2609.02109",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于平均场（MeanField）理论的代理模型，用于在共享GPU上对并发异构AI推理任务进行可扩展的运行时调度。传统代理模型在预测多模型并发性能时，其性能剖析需求随模型数量呈组合爆炸式增长，导致扩展性受限。该MeanField代理模型通过仅依赖局部配置和GPU聚合状态来预测每个模型的性能，避免了显式建模所有模型间的交互，从而显著降低了剖析开销。该方法旨在解决异构AI模型共享GPU时的资源争用问题，为运行时调度提供高效、可扩展的决策支持。该研究对于提升GPU资源利用率、优化推理服务性能具有重要意义，尤其适用于多租户、多模型推理场景。其创新点在于将统计物理中的平均场思想引入系统调度领域，为处理高维交互问题提供了新思路，值得关注。",
+  "tags": [
+    "AI推理",
+    "GPU调度",
+    "代理模型",
+    "平均场理论",
+    "资源管理"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:46:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出基于平均场理论的代理模型，将并发模型性能预测从组合复杂度降为线性复杂度，显著提升可扩展性。",
+      "通过局部配置和GPU聚合状态预测性能，避免显式建模模型间交互，降低在线剖析开销。",
+      "针对共享GPU上异构AI推理的资源争用问题，为运行时调度提供高效决策支持，有望提升资源利用率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

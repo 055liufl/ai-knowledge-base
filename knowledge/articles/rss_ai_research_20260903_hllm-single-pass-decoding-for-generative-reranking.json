@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-079",
+  "title": "hLLM: Single Pass Decoding for Generative Reranking",
+  "source_url": "https://arxiv.org/abs/2609.01807",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 hLLM 的高效生成式重排序方法，针对大语言模型（LLM）在生成排序结果时因自回归解码导致的低效问题。传统生成式排序器需要为每个输出 token 执行一次顺序前向传播，而 hLLM 观察到排序器只需输出 N 个序数值（即排名顺序），这种受限的排列结构输出格式允许采用比从左到右自回归解码更高效的解码策略。通过设计单次前向传播即可完成整个排序序列的解码，hLLM 显著减少了推理延迟和计算成本，同时保持或接近原有排序质量。该工作为生成式重排序的实际部署提供了新的效率优化方向，尤其适用于需要实时响应的检索场景。",
+  "tags": [
+    "LLM",
+    "Reranking",
+    "Efficient Decoding",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:45:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式排序器仅需输出序数值，其排列结构可被利用来设计更高效的解码策略，而非逐 token 自回归生成。",
+      "hLLM 通过单次前向传播完成排序解码，大幅减少顺序步骤，提升推理速度。",
+      "该方法在保持排序质量的同时，降低了计算开销，增强了生成式重排序的实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

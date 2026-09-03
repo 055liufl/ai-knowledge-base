@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260903-141",
+  "title": "ViSAR: Training-Free Adaptive-$k$ Retrieval for Visual Document Question Answering",
+  "source_url": "https://arxiv.org/abs/2609.02486",
+  "source_platform": "rss_ai_research",
+  "summary": "ViSAR 提出了一种针对文档视觉问答（DocVQA）的无训练自适应 k 检索方法。在基于检索增强生成（RAG）的 DocVQA 流程中，通常使用后期交互编码器（如 ColPali）来检索与查询相关的文档页面，然后由大型视觉语言模型（LVLM）生成答案。现有方法通常固定检索前 k 个页面，而不考虑查询的复杂性，这会导致 LVLM 推理延迟增加，并可能降低答案准确性。ViSAR 通过动态调整检索的页面数量（即自适应 k），根据查询的复杂程度和检索结果的置信度，在无需额外训练的情况下优化检索策略。该方法旨在平衡检索质量与计算效率，减少不必要的页面检索，从而降低延迟并提升最终答案的准确性。ViSAR 的提出对于提升 DocVQA 系统的实用性和效率具有重要意义，尤其适用于处理大规模文档库和多样化查询场景。该研究来自 arXiv 预印本，属于视觉语言模型与检索增强生成交叉领域的前沿探索。",
+  "tags": [
+    "DocVQA",
+    "RAG",
+    "Retrieval",
+    "LVLM",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:48:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定 top-k 检索在 DocVQA 中会导致不必要的计算开销和精度下降，自适应 k 是提升效率的关键。",
+      "ViSAR 采用无训练方法，通过查询复杂度和检索置信度动态调整检索页面数，易于集成到现有 RAG 流程。",
+      "该方法有望降低 LVLM 推理延迟，同时保持或提升答案准确性，对实际应用有显著价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

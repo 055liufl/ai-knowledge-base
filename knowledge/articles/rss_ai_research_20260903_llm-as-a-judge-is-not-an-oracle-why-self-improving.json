@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260903-037",
+  "title": "LLM-as-a-Judge Is Not an Oracle: Why Self-Improving Agents Need Deterministic Guardrails",
+  "source_url": "https://arxiv.org/abs/2609.02246",
+  "source_platform": "rss_ai_research",
+  "summary": "本文讨论自我改进型智能体流水线中的一个核心问题：优化器通过重写提示词来提升评分，而评分本身来自另一个LLM作为裁判。作者认为，这种LLM裁判不应被视为“神谕”，而应降级为“顾问”，其判断仅作为多个输入之一，所有变更应由确定性验证层把关。文章主张，在智能体自我改进过程中，依赖LLM裁判的单一反馈可能导致不可靠的优化，因此需要引入确定性护栏（如规则、测试或形式验证）来确保改进的真实性和安全性。该研究关注LLM评估的局限性，并提出一种混合评估框架，结合LLM的灵活性和确定性验证的可靠性，以提升智能体系统的鲁棒性。此观点对AI安全、自动化优化和智能体开发具有重要启示，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Evaluation",
+    "Self-improvement",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:43:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM裁判在自我改进中可能产生偏差，不应作为最终权威。",
+      "引入确定性验证层可防止优化过程被不可靠的LLM反馈误导。",
+      "混合评估框架（LLM+确定性规则）能提升智能体改进的可靠性。",
+      "该研究对AI安全与自动化优化设计具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

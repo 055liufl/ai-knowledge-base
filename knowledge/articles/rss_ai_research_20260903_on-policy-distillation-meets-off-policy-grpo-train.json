@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260903-088",
+  "title": "On-Policy Distillation Meets Off-Policy GRPO: Training Compact Instruction-Following Rerankers",
+  "source_url": "https://arxiv.org/abs/2609.01947",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对紧凑型指令跟随重排序器（instruction-following rerankers）的新型蒸馏训练框架，结合了离策略（off-policy）教师优化与在策略（on-policy）学生蒸馏，并引入GRPO（Group Relative Policy Optimization）算法。传统蒸馏方法依赖固定示例集上的离线模仿，限制了教师监督的覆盖范围。该框架通过强化学习视角，先对教师模型进行离策略优化以扩展其排序空间，再利用在策略蒸馏让学生从教师的动态反馈中学习，从而提升学生模型的泛化能力和指令跟随性能。该研究对于模型压缩和高效部署具有重要意义，尤其适用于资源受限场景下的检索增强生成（RAG）系统。其创新点在于将GRPO从生成任务适配到排序任务，并解决了蒸馏中监督信号受限的问题。实验表明，该方法在多个基准上优于传统蒸馏基线，为小型重排序器的训练提供了新思路。",
+  "tags": [
+    "Distillation",
+    "Reinforcement Learning",
+    "Reranking",
+    "GRPO",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:46:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统蒸馏受限于固定教师输出，本文通过离策略教师优化扩展了监督空间，提升学生模型泛化能力。",
+      "将GRPO算法从生成任务适配到排序任务，实现了在策略学生蒸馏，有效利用动态教师反馈。",
+      "两阶段框架兼顾教师优化和学生训练，在紧凑模型上达到接近教师的性能，适合部署场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

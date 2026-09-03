@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260903-093",
+  "title": "Seed-Anchored Budget-Bounded Graph Rendering for Question Answering on Industry-Standard Power-Grid Information and Exchange Models",
+  "source_url": "https://arxiv.org/abs/2609.02011",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于电力行业标准信息交换模型（如CIM）上的大语言模型问答系统的图渲染方法。该方法名为“种子锚定预算受限图渲染”，其核心思想是在固定的上下文预算内，通过确定性算法优先选择与查询相关的局部图证据，而不引入额外的调参或学习参数，仅依赖共享的跳数限制和上下文预算。该方法提供了一个可检查的条件，确保在贪心渲染过程中，预定义的种子局部答案承载渲染单元能够被保留，从而保证答案的完整性和准确性。该研究针对电力网格模型的复杂性和问答任务的特殊性，解决了大语言模型在工业级知识图谱上应用时的上下文限制问题，具有实际工程意义。其创新点在于将图渲染与预算控制结合，提供了一种无需额外训练即可适配现有LLM的轻量级方案，对于电力行业及其他领域的大规模图数据问答具有参考价值。",
+  "tags": [
+    "LLM",
+    "Graph Rendering",
+    "Question Answering",
+    "Power Grid",
+    "Context Budget"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:46:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出一种确定性图渲染方法，在固定预算内优先展示查询相关证据，避免LLM上下文溢出。",
+      "无需额外训练参数，仅依赖跳数限制和预算，易于集成到现有系统。",
+      "提供可检查条件保证答案承载单元被保留，增强结果可靠性。",
+      "针对电力行业标准模型，展示了在专业领域图数据上应用LLM的可行性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

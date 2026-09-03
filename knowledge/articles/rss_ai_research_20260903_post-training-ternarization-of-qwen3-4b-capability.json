@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260903-013",
+  "title": "Post-Training Ternarization of Qwen3-4B Capability, Effective Bit Budget, Storage Compression, and Deployment",
+  "source_url": "https://arxiv.org/abs/2609.01962",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了对 Qwen3-4B 指令微调模型进行端到端后训练三值化（ternarization）的方法，旨在实现超低位宽语言模型。作者采用 KOTMS 旋转、E2M-ATQ 三值化和 TWLA 的 GPTQ 风格误差补偿技术，仅对权重进行量化，激活保持 16 位精度。文章指出，名义上的 '1.58-bit' 标签并不能完全反映存储表示、保留能力和运行时行为，因此系统分析了实际的有效比特预算、存储压缩率和部署性能。这项工作对于在资源受限环境中部署大语言模型具有重要意义，通过极低比特量化在保持模型能力的同时大幅降低存储和内存带宽需求。其创新点在于结合多种先进量化技术，并针对 Qwen3 系列模型进行优化，为超低位宽模型的实用化提供了新思路。",
+  "tags": [
+    "量化",
+    "三值化",
+    "LLM",
+    "部署优化",
+    "Qwen"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:41:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "名义上的 '1.58-bit' 标签不足以描述实际存储和计算特性，需要更细致的比特预算分析。",
+      "结合旋转、三值化和误差补偿的混合方法能有效保持模型能力，同时实现高压缩率。",
+      "权重仅量化、激活保持高精度的方案在部署中具有实用价值，可显著降低内存带宽需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

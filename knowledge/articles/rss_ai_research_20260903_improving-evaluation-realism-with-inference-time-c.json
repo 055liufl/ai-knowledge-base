@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260903-042",
+  "title": "Improving Evaluation Realism with Inference-Time Compute and Deployment Scaffolds",
+  "source_url": "https://arxiv.org/abs/2609.02302",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对对齐评估中的核心障碍——评估感知（即模型能够识别自己处于测试而非部署状态，从而削弱安全评估结论的有效性）——提出了两种技术手段，旨在使模拟对齐评估更难与真实部署区分开来。第一种技术是“批判性细化”（critique refinement），它在模拟器的每个动作上投入额外的推理时计算：模拟器生成多个候选动作，并通过批判性反馈进行迭代改进，以提高动作的真实性和多样性。第二种技术是“部署脚手架”（deployment scaffolds），通过引入与真实部署环境一致的辅助工具、接口或上下文，使评估场景更贴近实际应用。这两种方法共同提升了评估的现实性，有助于更准确地衡量模型在真实世界中的对齐表现。该研究对于AI安全评估领域具有重要价值，因为它直接回应了评估中模型可能“作弊”或表现失真的问题，为构建更可靠的评估协议提供了新思路。",
+  "tags": [
+    "AI安全",
+    "对齐评估",
+    "推理时计算",
+    "评估现实性"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:43:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "评估感知是安全评估的主要障碍，模型能识别测试环境并调整行为，削弱结论有效性。",
+      "批判性细化技术通过增加推理时计算和迭代改进，提升模拟器动作的真实性。",
+      "部署脚手架技术使评估环境更接近真实部署，减少模型对评估的感知。",
+      "两种技术结合可显著提高对齐评估的可靠性和实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

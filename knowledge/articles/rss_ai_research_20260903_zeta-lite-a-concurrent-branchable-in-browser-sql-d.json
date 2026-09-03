@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260903-080",
+  "title": "Zeta-Lite: A Concurrent, Branchable In-Browser SQL Database for Agentic Memory",
+  "source_url": "https://arxiv.org/abs/2609.01818",
+  "source_platform": "rss_ai_research",
+  "summary": "Zeta-Lite 是一个面向浏览器环境的并发、可分支的 SQL 数据库，专为智能体记忆（agentic memory）设计。它通过将 PostgreSQL 编译为 WebAssembly（如 PGlite）的方式，在浏览器中提供 SQL 能力，但突破了传统 PostgreSQL 进程模型（单后端连接、单状态执行）的限制，实现了并发处理和分支能力。该研究关注浏览器作为一等数据库主机的趋势，支持隐私保护、离线操作、本地优先协作，并作为浏览器内 AI 智能体的持久记忆。其创新点在于解决浏览器数据库的并发与分支需求，为本地优先应用和智能体记忆管理提供了更高效、灵活的解决方案。该论文值得关注，因为它填补了浏览器数据库在并发和分支方面的空白，对本地优先软件和 AI 智能体架构有重要影响。",
+  "tags": [
+    "SQL",
+    "WebAssembly",
+    "Agentic Memory",
+    "Local-first",
+    "Database"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:45:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "浏览器正成为一等数据库主机，Zeta-Lite 针对智能体记忆场景提供并发和分支 SQL 能力。",
+      "通过编译 PostgreSQL 到 WebAssembly，但改进其进程模型，实现多状态并发执行，突破单连接限制。",
+      "支持分支操作，使数据库状态可复制和分叉，适用于智能体记忆的版本控制和实验。",
+      "该技术对本地优先应用和隐私敏感场景有显著价值，减少对服务器端的依赖。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

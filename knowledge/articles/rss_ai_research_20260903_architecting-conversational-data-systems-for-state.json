@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-006",
+  "title": "Architecting Conversational Data Systems for Stateless LLM APIs: The Hydration Proxy Pattern",
+  "source_url": "https://arxiv.org/abs/2609.01834",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对无状态LLM API的架构模式——Hydration Proxy Pattern，旨在解决企业平台向对话式推理接口转型时面临的状态管理问题。由于LLM API的无状态性虽然有利于服务提供商实现水平扩展，却将对话状态和语义记忆的管理负担完全转移给了客户端应用。该模式通过引入一个代理层，将会话持久化与推理引擎解耦，从而在不牺牲可扩展性的前提下，实现高效的状态管理和上下文注入。这一架构对于构建企业级对话系统具有重要的实践意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Architecture",
+    "Conversational AI",
+    "State Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:41:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无状态LLM API将状态管理负担转嫁给客户端，导致架构复杂性增加。",
+      "Hydration Proxy Pattern通过代理层解耦会话持久化与推理引擎，实现状态与推理的分离。",
+      "该模式有助于在保持水平扩展能力的同时，提升对话系统的上下文连续性和用户体验。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

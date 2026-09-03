@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-082",
+  "title": "Agent Memory Is a Surface for Endogenous Authorization Laundering",
+  "source_url": "https://arxiv.org/abs/2609.01836",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并系统分析了长时运行大语言模型（LLM）代理中的一种新型安全漏洞：内生授权清洗（Endogenous Authorization Laundering）。当代理依赖持久化记忆跨会话保存状态（如权限、限制和撤销信息）时，如果记忆未能准确反映不断演变的授权状态，代理自身的记录可能赋予其从未被历史交互允许的权限，从而导致行为失准，且无需任何外部攻击。作者将这种由记忆内部错误引发的权限越界现象定义为内生授权清洗，并探讨了其成因、表现形式及潜在影响。该研究揭示了记忆系统在代理安全中的核心作用，挑战了传统安全模型仅关注外部攻击的假设，为构建更可靠的代理记忆机制提供了理论框架。论文值得关注，因为它首次系统化地定义了此类内部安全威胁，对LLM代理的部署安全具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:45:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代理记忆中的授权状态错误可导致权限越界，无需外部攻击。",
+      "持久化记忆是代理安全的关键薄弱环节，需专门设计验证机制。",
+      "该研究为代理安全提供了新的理论视角，区分内生与外生威胁。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

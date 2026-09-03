@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-097",
+  "title": "Git4Data: Database-Native Version Control for AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.02106",
+  "source_platform": "rss_ai_research",
+  "summary": "Git4Data 提出了一种面向 AI 代理的数据库原生版本控制方案，旨在解决 LLM 代理在并行探索关系数据状态时面临的隔离、可复现和可审计需求。现有工具要么仅支持源代码版本控制，难以扩展到大规模数据集，要么依赖关系数据库高效管理数据但缺乏原生版本控制能力。Git4Data 通过将版本控制功能直接集成到 SQL 接口中，使代理能够像操作普通数据一样对候选数据状态进行分支、提交和回滚，从而在不牺牲数据库性能的前提下实现数据级版本管理。该工作填补了数据版本控制与 AI 代理工作流之间的空白，对于需要大规模数据探索和实验追踪的 AI 应用（如数据清洗、特征工程、多代理协作）具有重要意义，有望提升 AI 代理在数据处理任务中的可复现性和协作效率。",
+  "tags": [
+    "AI Agent",
+    "Version Control",
+    "Database",
+    "Data Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:46:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Git4Data 将版本控制能力下沉到数据库层，通过 SQL 接口提供原生支持，解决了传统版本控制工具无法处理大规模数据集的问题。",
+      "该方案特别针对 LLM 代理并行探索多个数据状态的需求，确保每个状态隔离、可复现且可审计，增强了 AI 工作流的可靠性。",
+      "通过复用 SQL 接口，Git4Data 降低了学习成本，使数据科学家和工程师能够无缝集成版本控制到现有数据管道中。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

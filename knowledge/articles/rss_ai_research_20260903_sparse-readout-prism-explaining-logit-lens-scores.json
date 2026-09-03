@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-087",
+  "title": "Sparse Readout Prism: Explaining Logit-Lens Scores in Features Instead of Tokens",
+  "source_url": "https://arxiv.org/abs/2609.01936",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“稀疏读出棱镜”（Sparse Readout Prism）的新方法，用于解释语言模型中的logit-lens评分。传统透镜方法通过将中间隐藏状态解码为token来追踪模型预测的发展，但本文指出，透镜读数同时受隐藏状态和用于解码的读出矩阵（unembedding matrix）影响，且不同语料库拟合的透镜可能对相同隐藏状态报告不同token，这种依赖关系被称为“读出偏差”。该方法旨在将透镜评分归因于特征而非token，从而更准确地揭示模型内部表示。这项工作对理解大型语言模型的内部机制具有重要意义，为可解释性研究提供了新视角，并可能改进模型调试和安全性分析。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Logit-Lens",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "透镜读数受读出矩阵影响，不同语料库拟合的透镜可能产生不一致的token解释，揭示了现有透镜方法的局限性。",
+      "提出基于特征而非token的稀疏读出棱镜方法，旨在更准确地归因模型内部表示。",
+      "该方法有助于深入理解语言模型的预测形成过程，对可解释性和模型安全性研究有潜在价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-108",
+  "title": "GeoSPRINT: Geometric Redundancy-Aware Step Pruning for Inference in Diffusion Trajectories",
+  "source_url": "https://arxiv.org/abs/2609.02160",
+  "source_platform": "rss_ai_research",
+  "summary": "GeoSPRINT 提出了一种针对扩散模型推理加速的无训练框架，通过几何冗余感知的步长剪枝策略，在采样轨迹中动态跳过冗余步骤，从而减少神经函数评估次数（NFEs），同时保持生成样本质量。该方法不同于固定步长跳过或基于局部数值误差的自适应方法，而是利用轨迹的几何特性（如切线方向变化）来识别冗余步骤，实现非均匀步长调度。GeoSPRINT 无需额外训练，可直接应用于预训练扩散模型，具有即插即用的优势，有望降低扩散模型在图像生成等任务中的推理成本，提升实时应用可行性。该研究发表于 arXiv，属于扩散模型推理优化领域的前沿探索，对高效生成模型的发展具有积极意义。",
+  "tags": [
+    "Diffusion Models",
+    "Inference Acceleration",
+    "Step Pruning",
+    "Training-free"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:47:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GeoSPRINT 利用轨迹几何信息实现无训练的动态步长剪枝，区别于固定调度和基于误差的方法。",
+      "该方法在减少 NFEs 的同时保持样本质量，为扩散模型高效推理提供了新思路。",
+      "无训练特性使其易于集成到现有扩散模型，具有实际部署潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

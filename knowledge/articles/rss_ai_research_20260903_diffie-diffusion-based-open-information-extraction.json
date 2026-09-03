@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-123",
+  "title": "DiffIE: Diffusion-based Open Information Extraction",
+  "source_url": "https://arxiv.org/abs/2609.02315",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种基于扩散模型的新型开放信息抽取（OpenIE）方法 DIFFIE。开放信息抽取旨在从非结构化文本中提取关系三元组，但一个句子往往包含多个有效的三元组，因此本质上是一个多输出任务。现有神经方法要么采用自回归生成，虽然灵活但速度慢且容易产生冗余；要么采用固定槽位预测，虽然高效但抽取预算受限于训练设置。DIFFIE 将条件离散扩散模型应用于 OpenIE，通过逐步去噪过程生成三元组集合，从而在保持生成灵活性的同时避免自回归的缺点，并支持可变数量的输出。该方法值得关注，因为它首次将扩散模型引入 OpenIE 任务，有望在效率和准确性之间取得更好的平衡，为多输出信息抽取提供新思路。",
+  "tags": [
+    "OpenIE",
+    "Diffusion Model",
+    "Information Extraction",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:47:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DIFFIE 利用条件离散扩散模型处理 OpenIE 的多输出特性，避免了自回归生成的冗余和速度问题。",
+      "扩散模型天然支持可变数量的输出，解决了固定槽位预测中抽取预算与训练耦合的问题。",
+      "该方法为信息抽取领域引入了生成式建模的新范式，可能提升抽取的准确性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

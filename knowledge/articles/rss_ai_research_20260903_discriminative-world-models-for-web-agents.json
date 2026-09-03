@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-057",
+  "title": "Discriminative World Models for Web Agents",
+  "source_url": "https://arxiv.org/abs/2609.02885",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于Web智能体的判别式世界模型（Discriminative World Models），旨在改进测试时动作选择过程。传统方法通过采样候选动作、预测后续网页状态，并利用排序器或过程奖励模型（PRM）进行排名，但世界模型通常以监督式下一状态预测训练，生成固定表示（如HTML或AXTree快照），这与下游排序器的目标不一致，因为排序器依赖的预测状态可能不够准确或判别性不足。论文的核心创新在于引入判别式训练目标，使世界模型直接优化状态表示以支持动作排序，从而提升Web智能体在复杂任务中的决策能力。该研究关注Web自动化与智能体领域，具有实际应用价值，可能推动更高效的网页操作代理发展。",
+  "tags": [
+    "Web Agent",
+    "World Model",
+    "Reinforcement Learning",
+    "Action Selection"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:44:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有世界模型训练目标与下游排序任务不匹配，导致预测状态判别性不足。",
+      "判别式世界模型通过直接优化状态表示来提升动作排序的准确性。",
+      "该方法有望增强Web智能体在动态环境中的决策鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

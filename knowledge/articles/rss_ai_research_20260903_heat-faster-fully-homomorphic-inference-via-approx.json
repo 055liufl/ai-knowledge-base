@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-073",
+  "title": "HEAT: Faster Fully Homomorphic Inference via Approximations-Weights Co-Adaptation",
+  "source_url": "https://arxiv.org/abs/2609.01730",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为HEAT的新方法，旨在加速全同态加密（FHE）下的语言模型推理。FHE允许服务器直接在加密的用户提示上运行语言模型，但当前方法速度过慢。密文原生仅支持加法、乘法和旋转，且乘法深度受限，需频繁进行昂贵的自举操作。因此，每个非线性函数必须通过迭代方法近似，而每次迭代都会增加计算开销。HEAT通过协同调整近似权重与模型权重，减少了非线性近似所需的迭代次数，从而显著提升了推理速度。该方法值得关注，因为它解决了FHE实际应用中的关键性能瓶颈，有望推动隐私保护AI服务的实用化。",
+  "tags": [
+    "FHE",
+    "LLM",
+    "Privacy",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:45:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HEAT通过近似权重与模型权重的协同调整，减少了非线性函数逼近所需的迭代次数，从而加速FHE推理。",
+      "该方法针对FHE中昂贵的自举操作，通过降低迭代深度来提升整体效率。",
+      "该研究为隐私保护语言模型推理提供了新的优化方向，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

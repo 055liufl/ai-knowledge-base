@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260903-039",
+  "title": "Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2609.02264",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Codebook Agent 的方法，用于优化大型语言模型（LLM）多智能体系统的通信拓扑设计。传统方法将拓扑设计视为条件图生成问题，通过变分、自回归或扩散解码器在 N×N 邻接矩阵空间中进行搜索，并使用图网络代理基于效用和结构成本（如边数）对候选方案进行排序。作者认为这种公式化方法与实际目标存在偏差，因为其计算成本高且难以适应查询的多样性。Codebook Agent 采用摊销（amortized）设计策略，通过预训练的码本（codebook）将拓扑设计过程转化为高效的查询-拓扑映射，从而避免逐查询的昂贵搜索。该方法旨在同时提升多智能体系统的准确性和推理效率，为动态调整智能体间通信结构提供了新思路。该研究对 LLM 多智能体系统的可扩展性和实用性具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Topology Design",
+    "Amortized Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:03Z",
+  "collected_at": "2026-09-03T12:43:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统条件图生成方法在拓扑搜索上计算成本高，且与查询适应性目标不一致。",
+      "Codebook Agent 通过摊销设计将拓扑映射过程预计算化，显著降低推理开销。",
+      "该方法有望在保持或提升任务准确性的同时，提高多智能体系统的运行效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

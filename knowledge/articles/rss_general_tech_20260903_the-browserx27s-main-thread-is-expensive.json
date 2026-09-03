@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260903-001",
+  "title": "The Browser&#x27;s Main Thread Is Expensive",
+  "source_url": "https://kciter.so/posts/the-expensive-main-thread/en/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章深入探讨了浏览器主线程的性能开销问题，指出主线程是浏览器处理用户交互、布局、绘制和脚本执行的核心，但其资源有限且容易成为性能瓶颈。文章通过具体示例和实验数据，分析了主线程上各种任务（如JavaScript执行、样式计算、布局和绘制）的成本，并提出了优化策略，包括减少主线程工作量、使用Web Workers、优化CSS选择器、避免强制同步布局等。文章还讨论了现代浏览器特性（如OffscreenCanvas、requestIdleCallback）如何帮助减轻主线程负担。该内容对于前端开发者优化网页性能具有重要参考价值，因为它提供了实用的诊断方法和优化建议，有助于提升用户体验和页面响应速度。",
+  "tags": [
+    "Web Performance",
+    "Browser",
+    "Frontend Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-03T12:39:01Z",
+  "collected_at": "2026-09-03T12:40:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "主线程是性能瓶颈的核心，任何阻塞都会导致用户交互延迟。",
+      "通过减少主线程任务和利用Web Workers等并行机制，可以显著提升页面流畅度。",
+      "避免强制同步布局和优化CSS选择器是降低主线程开销的有效手段。",
+      "现代API如requestIdleCallback为调度非关键任务提供了新机会。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
