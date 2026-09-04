@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-069",
+  "title": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+  "source_url": "https://arxiv.org/abs/2609.04198",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文对黑盒大语言模型（LLM）作为评估器（judge）的可靠性进行了严格的预注册审计，重点关注共享端点（shared endpoints）上相同请求在不同时间是否产生一致结果。作者通过两个预注册实验，在固定所有阈值的情况下，对52,988次请求进行了测试，发现同一时间窗口内的重复排序结果高度不稳定，导致实验无法通过仪器验证。研究揭示了一个关键假设——即相同请求发送到相同模型名称会得到相同结果——在实际中经常失效，这对依赖LLM评估器进行数据筛选、生成评分和排行榜驱动的AI开发实践提出了严重质疑。该研究的重要性在于，它首次系统性地量化了LLM评估器在共享端点上的测量不可靠性，强调了在AI评估中需要更稳健的测量协议或替代方案。这项工作对AI研究社区具有警示作用，促使开发者重新审视评估流程的可靠性，并可能推动更透明的评估标准或本地化部署。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Reliability",
+    "Measurement"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:38:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒LLM评估器在共享端点上的输出高度不稳定，相同请求在不同时间可能产生不同结果，威胁评估有效性。",
+      "预注册实验设计（固定阈值）未能通过仪器验证，表明问题普遍且严重，影响数据筛选和排行榜的公平性。",
+      "研究呼吁开发更稳健的评估协议或采用本地化模型，以减少外部端点波动带来的测量误差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

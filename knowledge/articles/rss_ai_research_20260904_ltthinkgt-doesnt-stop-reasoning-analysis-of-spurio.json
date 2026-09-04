@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-120",
+  "title": "&lt;/think&gt; Doesn't Stop Reasoning: Analysis of Spurious CoT Termination",
+  "source_url": "https://arxiv.org/abs/2609.03633",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究分析了大型推理模型（LRMs）中链式思维（CoT）推理的提前终止策略。具体而言，研究者关注一种无训练的方法，即在推理过程中注入一个“思考结束”标记（EoT，如</think>）来触发模型从推理阶段切换到回答阶段。然而，研究发现注入的EoT并不总是能有效地终止推理，模型有时会继续生成推理内容，导致所谓的“虚假CoT终止”现象。该论文通过系统分析揭示了这一现象的原因和影响，并可能提出改进策略。这项工作对于优化推理效率、减少冗余计算具有重要意义，尤其是在需要控制推理长度或实时响应的应用场景中。它挑战了现有提前退出方法的假设，并为设计更鲁棒的推理控制机制提供了理论依据。",
+  "tags": [
+    "Chain-of-Thought",
+    "Reasoning Models",
+    "Early-Exit",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:41:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注入EoT标记并不总能可靠地终止CoT推理，导致模型继续生成不必要的推理步骤。",
+      "虚假终止现象可能源于模型对EoT的上下文依赖，而非简单的标记触发。",
+      "该研究为改进无训练提前退出方法提供了关键洞见，有助于提升推理效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

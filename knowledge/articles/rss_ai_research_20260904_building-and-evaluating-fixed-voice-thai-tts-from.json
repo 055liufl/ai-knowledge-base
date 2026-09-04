@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-104",
+  "title": "Building and Evaluating Fixed-Voice Thai TTS from Synthetic Speech",
+  "source_url": "https://arxiv.org/abs/2609.03502",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种在低资源环境下构建固定语音（fixed-voice）泰语文本转语音（TTS）系统的新方法。传统方案面临两难选择：要么使用大型语音克隆模型，但推理成本高；要么使用紧凑型固定语音系统，但需要特定说话人的语料库。作者提出第三条路径：将大型语音克隆模型作为可编程数据源，利用短语音参考（如15秒）生成合成语音，并完全基于这些合成数据训练一个紧凑的固定语音学生模型。该研究聚焦于泰语这一低资源语言，探讨了流水线设计（如数据生成、模型训练策略）对最终系统性能的影响。这项工作对于低资源语言的语音合成具有实际意义，因为它降低了数据收集成本，同时避免了高推理开销，为在资源受限环境中部署TTS提供了可行方案。其创新性在于利用合成数据替代真实语料，并验证了该方法的有效性，值得关注。",
+  "tags": [
+    "TTS",
+    "Low-resource",
+    "Synthetic Data",
+    "Voice Cloning"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:40:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出利用大型语音克隆模型生成合成数据，训练紧凑固定语音TTS，避免高推理成本和数据收集难题。",
+      "仅需15秒的语音参考即可生成足够训练数据，显著降低低资源语言TTS的部署门槛。",
+      "研究聚焦泰语，验证了合成数据在低资源场景下的可行性，为其他低资源语言提供参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260904-074",
+  "title": "Counterexamples as Feedback for Agent Self-Correction",
+  "source_url": "https://arxiv.org/abs/2609.02892",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为A-CEGIS的轻量级框架，用于评估智能体在多轮交互中的自我修正能力，特别是在自然语言到正则表达式（regex）生成任务中。传统单轮代码生成指标无法反映智能体在部署中根据具体反馈修复错误产物的能力，而A-CEGIS通过使用反例作为反馈来弥补这一不足。在该框架中，智能体首先生成正则表达式，然后由确定性预言机在全匹配语义下检查其正确性，并生成紧凑的假阳性或假阴性反例作为反馈，促使智能体进行多轮修正。这一方法不仅提供了更贴近实际应用的评估方式，还通过反例反馈机制增强了智能体的自我纠错能力。该研究对于提升智能体在交互式任务中的鲁棒性和实用性具有重要意义，尤其适用于需要精确模式匹配的应用场景，如数据清洗、日志分析等。其轻量级设计使得框架易于集成到现有系统中，为智能体评估和训练提供了新的视角。",
+  "tags": [
+    "Agent",
+    "Self-Correction",
+    "Regex",
+    "Evaluation",
+    "Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:39:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单轮代码生成指标低估了智能体在真实部署中基于反馈修复错误的能力，多轮评估更贴近实际需求。",
+      "A-CEGIS利用反例作为反馈信号，通过确定性预言机生成紧凑反例，有效引导智能体进行多轮自我修正。",
+      "该框架在自然语言到正则表达式合成任务中展示了轻量级和高效性，为智能体评估提供了可扩展的范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260904-107",
+  "title": "LeanGRPO: Eliminating Redundant Recomputation in Diffusion RL",
+  "source_url": "https://arxiv.org/abs/2609.03528",
+  "source_platform": "rss_ai_research",
+  "summary": "LeanGRPO 是一项针对扩散强化学习（Diffusion RL）训练效率的优化研究。扩散模型在图像和视频生成的后训练中已取得显著成果，但现有方法（如 DanceGRPO 和 FlowGRPO）在策略更新时会对选定时间步进行带梯度跟踪的重计算，导致计算冗余。LeanGRPO 指出，在同策略训练且 rollout 与更新使用相同后端的情况下，这种重计算在数学上是多余的，因此提出在 rollout 和策略更新阶段复用计算结果，从而消除冗余计算，提升训练效率。该工作关注生成模型后训练中的计算优化，对大规模扩散模型训练具有实际意义，可能降低训练成本并加速迭代。",
+  "tags": [
+    "Diffusion",
+    "Reinforcement Learning",
+    "Training Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:40:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有扩散RL方法在策略更新时存在冗余重计算，LeanGRPO通过数学分析证明其可消除。",
+      "LeanGRPO在同策略训练条件下复用rollout与更新阶段的计算，提高训练效率。",
+      "该工作针对扩散模型后训练，对图像和视频生成模型的RL微调具有优化潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260904-085",
+  "title": "Verify Before You Distill: Prompt-Level Teacher Gating for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.02998",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对在线策略蒸馏（On-policy Distillation, OPD）的改进方法，称为“提示级教师门控”（Prompt-Level Teacher Gating）。在OPD中，冻结的教师模型在学生的自生成轨迹上提供密集的token级监督，以加速后训练。然而，传统OPD对所有提示统一应用监督，未考虑教师对每个提示的可靠性。由于反向KL是模式寻求的，一个自信但错误的教师可能引发强烈且误导性的更新。为此，作者提出在提示级别评估教师可靠性，并据此门控监督信号，以避免误导性更新。该方法通过分布代理（如熵或师生似然差异）来动态决定是否使用教师监督，从而提升蒸馏效率和模型性能。该研究对LLM后训练和知识蒸馏领域具有重要价值，因为它解决了OPD中教师错误传播的关键问题，有望提高蒸馏的鲁棒性和样本效率。",
+  "tags": [
+    "Knowledge Distillation",
+    "On-policy Distillation",
+    "LLM",
+    "Teacher Gating",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:39:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统OPD对所有提示统一使用教师监督，忽略了教师对特定提示的可靠性，可能导致误导性更新。",
+      "通过提示级门控机制，根据教师可靠性动态调整监督，可避免错误传播，提高蒸馏质量。",
+      "利用分布代理（如熵或师生差异）作为可靠性指标，无需额外训练即可实现门控。",
+      "该方法有望提升LLM后训练的样本效率和最终性能，尤其适用于教师模型存在盲区的情况。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

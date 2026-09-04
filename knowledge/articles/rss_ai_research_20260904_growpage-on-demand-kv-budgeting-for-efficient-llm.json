@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-013",
+  "title": "GrowPage: On-Demand KV Budgeting for Efficient LLM Reasoning Serving",
+  "source_url": "https://arxiv.org/abs/2609.03494",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为GrowPage的KV缓存管理方法，旨在解决长输出推理场景下LLM服务中KV缓存带来的内存瓶颈问题。现有KV压缩方法通常预设每个请求的固定KV预算，仅调整保留哪些KV状态，而总容量在解码过程中保持不变。然而，推理工作负载表现出显著的需求变化：不同请求需要不同的KV容量，且单个请求的注意力需求在解码过程中也会动态变化。GrowPage通过按需动态分配KV预算，适应推理过程中的需求波动，从而提升内存利用效率和推理吞吐量。该方法针对LLM推理服务中的关键性能瓶颈，具有较高的实用价值，尤其适用于长输出推理任务。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "推理优化",
+    "内存管理"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:35:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有KV压缩方法固定预算，无法适应推理过程中动态变化的注意力需求，导致内存利用率低下。",
+      "GrowPage提出按需动态调整KV预算，能够更灵活地匹配不同请求和不同解码阶段的需求。",
+      "该方法针对长输出推理场景，有望显著提升LLM服务的吞吐量和资源效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

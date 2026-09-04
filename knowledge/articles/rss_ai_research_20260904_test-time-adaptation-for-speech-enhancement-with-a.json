@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260904-118",
+  "title": "Test-time adaptation for speech enhancement with an autoregressive speech prior",
+  "source_url": "https://arxiv.org/abs/2609.03622",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于语音增强的测试时自适应（TTA）方法，旨在解决预训练模型在声学条件不匹配时的性能下降问题。该方法利用在干净语音潜在表示（从神经音频编解码器提取）上训练的自回归先验，对预训练语音增强模型进行正则化。在测试阶段，仅针对单个语音片段，通过最小化基于该先验的损失函数来调整模型参数，无需任何标注的目标数据。这种方法提高了模型在未知噪声环境下的泛化能力，为语音增强的实时自适应提供了新思路。其创新点在于结合了自回归先验和TTA，避免了传统微调对大量标注数据的依赖，具有实际应用潜力。",
+  "tags": [
+    "Test-time adaptation",
+    "Speech enhancement",
+    "Autoregressive prior",
+    "Neural audio codec"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:41:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出单语句TTA方法，利用自回归先验正则化，无需标注目标数据即可适应新声学条件。",
+      "先验基于神经音频编解码器提取的干净语音潜在表示，有效捕捉语音结构。",
+      "通过最小化先验损失实现快速自适应，适合实时或资源受限场景。",
+      "实验验证了该方法在多种噪声条件下的增强效果优于固定模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

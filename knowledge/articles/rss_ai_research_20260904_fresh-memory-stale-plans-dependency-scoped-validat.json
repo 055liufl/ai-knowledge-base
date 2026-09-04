@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-004",
+  "title": "Fresh Memory, Stale Plans: Dependency-Scoped Validation for Distributed LLM-Agent Memory",
+  "source_url": "https://arxiv.org/abs/2609.03340",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对分布式大语言模型（LLM）智能体团队中“陈旧计划执行”问题的解决方案。该问题指的是，即使智能体能够读取最新的共享事实，它们仍可能基于过时的计划执行动作。例如，一个规划者可能基于需求r3制定计划，另一个智能体提交了r4，而执行者接收到r4后并未替换基于r3的计划，导致执行动作与最新需求不符。作者指出，状态的新鲜度并不保证授权动作的计划仍然有效。为此，他们引入了PlanFence，一种依赖范围的行动验证机制，旨在确保计划在执行前得到验证，从而避免因计划过时而导致的错误。该研究对于提升分布式LLM智能体系统的可靠性和一致性具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Distributed Systems",
+    "Validation"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:35:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分布式LLM智能体面临状态新鲜但计划过时的问题，即stale-plan execution。",
+      "PlanFence通过依赖范围的行动验证，确保计划在执行前仍然有效。",
+      "该机制有助于提升多智能体系统的可靠性和一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

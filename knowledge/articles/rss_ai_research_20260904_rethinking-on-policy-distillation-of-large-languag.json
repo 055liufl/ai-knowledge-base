@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260904-067",
+  "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+  "source_url": "https://arxiv.org/abs/2609.04172",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文重新思考了大语言模型（LLM）的在线策略蒸馏（On-policy Distillation, OPD）方法，并聚焦于训练数据在其中的作用。传统OPD结合学生模型生成的rollouts与教师模型的密集token级监督，但以往研究主要关注算法行为，而忽视了训练数据的影响。作者将研究推向数据最小极限：仅使用单个查询（query）进行训练。实验表明，这种“一次性OPD”（one-shot OPD）在数百步训练中持续提升性能，并能恢复全数据OPD在多个任务领域和模型家族中的大部分收益。这一发现挑战了数据规模在蒸馏中的必要性假设，暗示OPD的泛化能力可能源于算法本身的结构，而非数据多样性。论文提供了理论解释和实证分析，为高效蒸馏和少样本学习提供了新视角，对资源受限场景下的模型优化具有重要参考价值。该研究发表于arXiv（编号2609.04172），属于前沿探索，可能推动蒸馏技术的实用化发展。",
+  "tags": [
+    "LLM",
+    "Knowledge Distillation",
+    "On-Policy Learning",
+    "Data Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:38:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单查询训练即可实现OPD大部分性能，表明数据多样性并非关键因素。",
+      "OPD的持续改进可能源于学生-教师交互的动态过程，而非数据覆盖。",
+      "该发现为低资源场景下的模型蒸馏提供了高效方案。",
+      "研究挑战了传统数据规模假设，推动对蒸馏算法本质的理解。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

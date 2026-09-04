@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-015",
+  "title": "What Matters for Aggressive Decoding-Time KV Eviction? Temporal Aggregation and Ranking Preservation",
+  "source_url": "https://arxiv.org/abs/2609.03515",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了解码时KV缓存压缩中一个常被忽视的关键因素：跨解码步骤聚合分数的时间规则。在激进的KV压缩场景下，作者发现指数移动平均（EMA）聚合方式使得近似保序的评分函数修改在驱逐集层面几乎无法区分，这意味着评分函数的设计可能不如聚合规则重要。研究通过实验对比了值范数和熵变体等评分函数，揭示了在极端压缩率下，时间聚合策略对缓存性能的决定性影响。这项工作为KV缓存压缩提供了新的视角，强调了时间维度的重要性，有助于指导未来高效推理系统的设计。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Efficient Decoding",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:35:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EMA聚合规则在激进KV压缩下使评分函数差异趋于消失，表明时间聚合比评分函数设计更关键。",
+      "值范数和熵变体在EMA聚合下表现相似，挑战了现有评分函数优化的必要性。",
+      "研究提示未来KV驱逐策略应优先关注时间聚合机制，而非仅改进单步评分。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

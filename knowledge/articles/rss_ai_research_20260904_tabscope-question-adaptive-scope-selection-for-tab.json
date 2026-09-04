@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-091",
+  "title": "TabScope: Question-Adaptive Scope Selection for Table Question Answering",
+  "source_url": "https://arxiv.org/abs/2609.03395",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TabScope 的方法，用于表格问答中的问题自适应范围选择。研究发现，大型语言模型（LLM）在表格问答中的性能会随着表格尺寸增大而下降，但这种下降并非均匀分布：对定位敏感的问题（如查找特定值）容易受到无关表格内容的干扰，而需要更广泛证据的问题（如总结或比较）可能仍受益于全表推理。基于这一观察，TabScope 旨在根据问题类型动态选择表格的相关部分（如行、列或单元格子集），以在减少噪声的同时保留关键信息，从而提升 LLM 在大型表格上的问答准确率。该方法具有实际应用价值，尤其适用于处理大规模表格数据的场景，并可能启发后续研究在表格理解中引入更细粒度的自适应机制。",
+  "tags": [
+    "Table QA",
+    "LLM",
+    "Question-Adaptive",
+    "Scope Selection"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:39:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在表格问答中的性能下降与问题类型相关，定位敏感问题更易受无关内容影响。",
+      "TabScope 提出根据问题动态选择表格范围，以平衡信息完整性和噪声减少。",
+      "该方法有望提升大型表格上的问答准确率，并推动自适应表格理解研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

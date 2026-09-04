@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-073",
+  "title": "ExecRetrieval: Measuring the Functional-Correctness Gap in Code-Embedding Retrieval",
+  "source_url": "https://arxiv.org/abs/2609.01865",
+  "source_platform": "rss_ai_research",
+  "summary": "ExecRetrieval 是一个针对代码嵌入检索功能正确性评估的新基准。现有代码检索基准通常只关注词法相似性，而未在搜索池中植入经过执行验证的、与查询规范实现仅存在单一编辑差异的变体，因此无法评估嵌入模型能否在功能上区分正确代码与近似克隆。该研究通过构建包含受控、执行验证的单编辑变体的检索任务，测量了代码嵌入检索中的功能正确性差距。这项工作对编码代理和检索增强代码生成至关重要，因为在这些场景中，检索到功能正确的代码比检索到词法相似的代码更有意义。ExecRetrieval 填补了现有基准的空白，为评估嵌入模型的功能辨别能力提供了更严格的测试，有助于推动代码检索模型向功能感知方向发展。",
+  "tags": [
+    "Code Retrieval",
+    "Code Embedding",
+    "Benchmark",
+    "Functional Correctness"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:38:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有代码检索基准缺乏对功能正确性的受控测试，ExecRetrieval 通过植入执行验证的单编辑变体来测量嵌入模型的功能辨别能力。",
+      "该基准旨在反映编码代理和 RAG 代码生成的实际需求，即功能正确的代码比词法相似的代码更有价值。",
+      "ExecRetrieval 可能揭示当前嵌入模型在区分正确代码与近似克隆方面的显著差距，为改进模型提供方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-131",
+  "title": "Free Pause Tokens",
+  "source_url": "https://arxiv.org/abs/2609.03807",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“自由暂停令牌”（Free Pause Tokens）的新机制，旨在为语言模型提供额外的计算资源以改善下一个令牌的预测，而无需在序列中增加额外的令牌。与传统暂停令牌（如思考令牌）不同，自由暂停令牌通过并行预测流在权重共享的主干网络上携带计算，而不是作为序列中的额外令牌。实验表明，在1B参数模型上，该方法将下一个令牌预测的困惑度提高了2-3个百分位（centinats）。由于暂停令牌附着在现有位置而非新增位置，因此在推理时无需额外成本，具有高效性和实用性。该研究为提升语言模型性能提供了一种新颖且经济有效的途径，值得关注。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:42:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自由暂停令牌通过并行预测流提供额外计算，无需增加序列长度，从而降低推理成本。",
+      "在1B参数模型上，该方法显著改善了下一个令牌预测的困惑度，表明其有效性。",
+      "该机制利用权重共享主干网络，可能对现有模型架构具有兼容性，便于集成。",
+      "研究为语言模型推理效率与性能的平衡提供了新思路，可能影响未来模型设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

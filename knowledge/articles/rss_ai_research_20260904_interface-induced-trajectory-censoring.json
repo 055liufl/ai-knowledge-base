@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-049",
+  "title": "Interface-Induced Trajectory Censoring",
+  "source_url": "https://arxiv.org/abs/2609.03966",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文揭示了一个在AI Agent评估中容易被忽视的关键问题：工具调用率（tool-call rate）的测量可能因服务接口（serving interface）的不同而产生巨大差异。作者发现，即使模型本身能够生成格式正确的工具调用，接口层也可能在轨迹传递到下游之前将其“审查”（censor），导致工具调用率被错误地报告为零。通过在BFCL v4数据集上进行的对照实验，论文展示了在保持模型权重、案例、解码参数和随机种子完全不变的情况下，仅更换服务适配器（serving adapter），同一模型的得分可以从0.00变为0.96或0.19。进一步通过2x2实验设计（改变聊天模板和解析器），论文精确定位了该效应的来源。这项研究对于AI Agent的评估方法论具有重要警示意义，提醒研究者和开发者必须关注评估基础设施的细节，否则可能得出误导性的结论。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Tool Calling",
+    "Serving Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:37:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "服务接口的差异可导致同一模型在工具调用评估中得分从0.00到0.96的极端波动，表明评估结果可能严重依赖基础设施而非模型能力。",
+      "通过2x2实验设计（聊天模板与解析器），论文精确定位了轨迹审查效应的来源，为评估标准化提供了方向。",
+      "该发现对Agent评估的可靠性提出挑战，强调在比较不同模型时必须统一服务适配器，否则结论可能失真。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260904-110",
+  "title": "Toward Physically Grounded JEPA World Models for Goal-Conditioned Robotic Planning",
+  "source_url": "https://arxiv.org/abs/2609.03565",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向目标条件机器人规划的物理接地JEPA世界模型。传统JEPA（联合嵌入预测架构）世界模型通过潜在空间预测实现视觉目标规划，避免了像素级重建，但仅靠潜在预测无法确保学习到的表征保留与机器人控制相关的关键信息。为此，作者引入端到端JEPA模型，在潜在预测基础上增加逆动力学（IDM）和状态对齐（SA）模块。逆动力学通过预测动作来防止潜在表征坍塌，并促使表征包含控制相关信息；状态对齐则进一步将潜在表征与真实物理状态对齐，增强模型的物理一致性。该方法旨在提升机器人规划在复杂环境中的泛化性和鲁棒性，为具身智能和机器人学习提供了新思路，值得关注。",
+  "tags": [
+    "JEPA",
+    "World Model",
+    "Robotics",
+    "Goal-Conditioned Planning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:41:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过逆动力学和状态对齐增强JEPA世界模型，避免潜在表征坍塌，提升控制相关信息的保留。",
+      "无需像素重建即可实现视觉目标规划，显著提高计算效率。",
+      "物理接地策略使模型在真实机器人任务中更具泛化性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

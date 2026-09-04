@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260904-055",
+  "title": "Instruction Duplication as an Inference-Time Control Primitive",
+  "source_url": "https://arxiv.org/abs/2609.04024",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“指令重复”（instruction duplication）的推理时控制方法，用于提升语言模型在程序性指令遵循任务中的表现。该方法仅需在推理阶段重复程序性指令，无需重新训练或修改解码过程，是一种极简的黑盒控制手段。研究在七个指令微调模型、300道医学选择题、八种放置条件下进行了实验验证，结果表明该方法能有效增强模型对复杂指令的遵循能力，尤其在生成轨迹需要被下游检查或修复的场景中具有实用价值。该工作为推理时控制提供了新的视角，强调了指令重复作为一种轻量级原语的潜力，值得关注其对可控文本生成和模型可靠性的影响。",
+  "tags": [
+    "LLM",
+    "Inference-Time Control",
+    "Instruction Following",
+    "Black-Box"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:38:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "指令重复是一种无需训练或解码修改的推理时控制方法，实现简单且通用。",
+      "在多个模型和医学问答任务上验证了其有效性，表明指令重复可提升程序性指令遵循的准确性。",
+      "该方法为下游轨迹检查或修复提供了可控性，增强了语言模型系统的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

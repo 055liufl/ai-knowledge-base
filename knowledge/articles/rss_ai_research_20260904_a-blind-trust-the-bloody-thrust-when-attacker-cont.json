@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260904-136",
+  "title": "A Blind Trust, the Bloody Thrust: When Attacker-Controlled Hook Updates Steer AI Agent Harnesses towards Malicious Behaviors",
+  "source_url": "https://arxiv.org/abs/2609.03884",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了一个针对现代AI代理框架的新型攻击面：生命周期钩子（lifecycle hooks）更新路径。AI代理框架通常允许将shell命令绑定到运行时事件（如会话启动、工具调用、文件编辑），这些命令以主机权限执行，但作为配置存在，且可能在LLM未观察到的时刻触发。研究者发现，框架对生命周期钩子更新路径的信任是盲目的，攻击者若控制插件元数据或更新源，即可注入恶意钩子命令，从而在AI代理执行正常任务时悄然执行恶意操作。该研究采用供应链威胁模型，强调攻击者无需控制模型本身，仅需操纵插件或配置更新即可劫持代理行为。论文指出这一攻击面此前未被系统研究，并展示了实际攻击场景，呼吁框架设计者重新审视钩子更新的信任边界。该工作对AI代理安全具有重要警示意义，推动了安全代理框架的设计改进。",
+  "tags": [
+    "AI Agent",
+    "Security",
+    "Supply Chain",
+    "Lifecycle Hooks"
+  ],
+  "author": null,
+  "published_at": "2026-09-04T12:32:44Z",
+  "collected_at": "2026-09-04T12:42:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI代理框架的生命周期钩子更新路径存在盲目信任，成为可利用的攻击面。",
+      "攻击者通过控制插件元数据或更新源，可注入恶意钩子命令，实现权限提升和恶意行为。",
+      "该攻击发生在LLM观察范围之外，增加了检测难度，对代理安全构成严重威胁。",
+      "研究强调供应链威胁模型下，需要重新设计钩子更新的验证和隔离机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
