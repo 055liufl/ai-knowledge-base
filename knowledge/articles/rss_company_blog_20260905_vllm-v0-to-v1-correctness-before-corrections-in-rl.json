@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260905-039",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文由 ServiceNow AI 团队发布，深入探讨了 vLLM 推理引擎从 V0 到 V1 的架构演进，特别是在强化学习（RL）场景下的正确性优先设计理念。文章指出，在 RL 训练中，推理引擎的采样正确性（如 logits 计算、采样分布一致性）比单纯追求吞吐量更为关键，因为任何微小的数值偏差都可能导致策略梯度更新错误，进而影响模型收敛。vLLM V1 通过重构调度器、优化 KV Cache 管理、引入更严格的数值一致性校验机制，确保在分布式 RL 训练中，推理结果与训练环境完全对齐。文章还对比了 V0 在 RL 应用中的局限性，如采样随机性控制不足、批处理策略对探索噪声的干扰等，并展示了 V1 如何通过确定性采样和细粒度控制解决这些问题。该内容对从事 LLM 强化学习训练、推理优化及分布式系统开发的工程师具有重要参考价值，反映了推理基础设施从单纯服务优化向训练-推理协同设计转变的趋势。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理优化",
+    "分布式训练",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-05T11:40:55Z",
+  "collected_at": "2026-09-05T11:45:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，推理引擎的数值正确性比吞吐量更重要，错误采样会直接破坏策略梯度更新。",
+      "vLLM V1 通过重构调度和 KV Cache 管理，实现了对采样过程的确定性控制，解决了 V0 在 RL 场景下的随机性干扰问题。",
+      "推理基础设施正从纯服务优化转向训练-推理协同设计，vLLM V1 是这一趋势的典型代表。",
+      "分布式 RL 训练要求推理引擎与训练环境在数值上严格对齐，vLLM V1 引入了更严格的校验机制来确保这一点。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

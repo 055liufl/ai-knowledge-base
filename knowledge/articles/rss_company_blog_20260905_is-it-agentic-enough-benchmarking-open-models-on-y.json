@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260905-026",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，探讨了如何评估开源模型在自定义工具环境中的“代理能力”（agentic capability）。文章指出，现有的通用基准测试（如 MMLU、HumanEval）无法充分反映模型在实际工具调用、多步骤任务执行和错误恢复中的表现。为此，作者提出了一种基于用户自身工具集进行基准测试的方法，强调通过模拟真实工作流（如 API 调用、代码执行、数据库查询）来评估模型的规划、工具选择和结果处理能力。文章还讨论了开源模型（如 Llama、Mistral）与闭源模型在代理任务上的差距，并提供了实践指南，包括如何构建自定义评估环境、设计任务提示以及量化成功率。该内容对于希望在生产环境中部署代理式 AI 的开发者具有直接参考价值，因为它提供了一种可复现的评估框架，帮助用户选择最适合其特定工具链的模型。文章还强调了透明性和可定制性，鼓励社区参与构建更贴近实际应用的基准测试。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-05T11:40:55Z",
+  "collected_at": "2026-09-05T11:44:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试不足以评估代理能力，需基于实际工具集定制评估任务。",
+      "开源模型在工具调用和错误恢复上仍落后于闭源模型，但差距可通过针对性微调缩小。",
+      "构建自定义基准测试需模拟真实工作流，包括多步骤任务和动态环境反馈。",
+      "评估框架应支持可复现性和社区共享，以推动代理模型的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
