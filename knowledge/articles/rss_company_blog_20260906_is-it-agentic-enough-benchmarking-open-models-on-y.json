@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260906-026",
+  "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+  "source_url": "https://huggingface.co/blog/is-it-agentic-enough",
+  "source_platform": "rss_company_blog",
+  "summary": "这篇博客文章由 Hugging Face 发布，探讨了如何针对特定工具链评估开源模型在智能体（agentic）任务中的表现。文章指出，通用基准测试（如 MMLU 或 HumanEval）无法反映模型在实际工具调用场景中的能力，因此提出了一个自定义基准测试框架，允许开发者使用自己的工具集和任务来评估模型。作者详细介绍了构建此类基准的步骤，包括定义任务、模拟工具交互、以及使用成功率等指标。文章还对比了多个开源模型（如 Llama 3、Mistral 等）在自定义工具上的表现，强调了模型在工具选择、参数生成和错误恢复方面的差异。该内容对开发者具有实用价值，因为它提供了一种可复现的方法来验证模型是否足够“智能体化”，从而避免依赖不相关的通用分数。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Open Models",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-06T11:59:17Z",
+  "collected_at": "2026-09-06T12:03:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用基准测试无法准确评估模型在特定工具链上的智能体能力，自定义基准测试更可靠。",
+      "文章提供了构建自定义智能体基准的详细方法论，包括任务设计、模拟环境和评估指标。",
+      "不同开源模型在工具选择、参数生成和错误恢复上的表现差异显著，直接影响实际部署效果。",
+      "开发者应基于自身工具集进行测试，以选择最适合的模型，而非仅依赖公开排行榜。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

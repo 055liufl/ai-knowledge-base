@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260906-099",
+  "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+  "source_url": "https://huggingface.co/blog/intel-qwen3-agent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了英特尔在 Core Ultra 平台上，通过深度剪枝的草稿模型加速 Qwen3-8B 智能体推理的技术方案。该方法利用投机解码（Speculative Decoding）原理，将原始 Qwen3-8B 作为目标模型，并设计了一个经过深度剪枝的小型草稿模型来预测候选 token，从而在保证生成质量的同时显著降低延迟。文章重点展示了在 Intel Core Ultra 的 CPU/GPU 混合架构上，如何通过 OpenVINO 工具套件优化模型部署，实现端侧智能体应用的实时响应。这一技术对于在资源受限的边缘设备上运行大型语言模型（LLM）具有重要价值，因为它不仅提升了推理速度，还减少了内存占用，使得复杂的智能体任务（如多轮对话、工具调用）能够流畅地在个人计算设备上执行。该方案体现了模型压缩与硬件协同设计的趋势，为未来端侧 AI 应用提供了可参考的优化路径。",
+  "tags": [
+    "LLM",
+    "Speculative Decoding",
+    "Model Pruning",
+    "Edge AI",
+    "Intel"
+  ],
+  "author": null,
+  "published_at": "2026-09-06T11:59:17Z",
+  "collected_at": "2026-09-06T12:07:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度剪枝草稿模型结合投机解码，可在不牺牲精度的前提下大幅降低 LLM 推理延迟。",
+      "Intel Core Ultra 的异构计算架构（CPU+GPU）为端侧智能体部署提供了硬件基础。",
+      "该方案展示了在个人设备上运行 8B 级模型的可行性，推动智能体应用向边缘端迁移。",
+      "模型压缩与推理引擎（如 OpenVINO）的协同优化是提升端侧性能的关键。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

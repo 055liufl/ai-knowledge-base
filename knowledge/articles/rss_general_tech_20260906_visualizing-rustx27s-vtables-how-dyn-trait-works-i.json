@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260906-006",
+  "title": "Visualizing Rust&#x27;s Vtables: How dyn Trait Works In Memory",
+  "source_url": "https://sofiabelen.github.io/projects/visualizing-rusts-vtables-how-dyn-trait-works-in-memory/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章深入探讨了Rust编程语言中动态分发（dyn Trait）的内存布局和虚表（vtable）机制。作者通过可视化方式解释了Rust中trait对象如何在运行时实现多态，包括虚表的结构、指针布局以及方法调用的底层原理。文章详细描述了dyn Trait在内存中的表示，如何存储数据指针和虚表指针，以及编译器如何生成和调用虚表中的函数。内容适合对Rust内部机制感兴趣的开发者，有助于理解性能影响和内存使用。",
+  "tags": [
+    "Rust",
+    "内存布局",
+    "动态分发",
+    "虚表",
+    "系统编程"
+  ],
+  "author": null,
+  "published_at": "2026-09-06T11:59:12Z",
+  "collected_at": "2026-09-06T12:00:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Rust的dyn Trait通过虚表实现动态分发，虚表存储了类型的方法指针和元数据。",
+      "trait对象在内存中由数据指针和虚表指针组成，虚表指针指向包含具体类型实现的函数表。",
+      "理解虚表机制有助于优化Rust代码，避免不必要的动态分发开销。",
+      "可视化方法使复杂的底层内存布局变得直观易懂，适合教学和深入理解。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

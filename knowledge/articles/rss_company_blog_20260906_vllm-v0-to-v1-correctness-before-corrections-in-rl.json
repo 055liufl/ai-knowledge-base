@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260906-039",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了 vLLM 从 V0 到 V1 的演进，重点聚焦于强化学习（RL）场景下的正确性问题。文章指出，在 RL 训练中，推理引擎的微小错误（如采样偏差、数值精度问题）会被放大，导致训练不稳定或策略退化。vLLM V1 通过重构执行模型、优化采样逻辑和增强数值稳定性，优先保证推理结果的正确性，而非仅追求吞吐量。这一转变对依赖大规模 RL（如 RLHF、RLAIF）的 LLM 训练至关重要，因为它直接影响了模型对齐的质量和可复现性。文章还讨论了 V1 在动态批处理、内存管理和分布式同步方面的改进，并强调了在 RL 循环中，推理引擎作为'环境'的角色必须提供一致且正确的反馈信号。对于从事 LLM 训练和推理优化的开发者与研究者，本文提供了理解 vLLM 架构演进及其对 RL 工作流影响的宝贵视角。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "LLM训练",
+    "正确性"
+  ],
+  "author": null,
+  "published_at": "2026-09-06T11:59:17Z",
+  "collected_at": "2026-09-06T12:04:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 将正确性置于性能之前，针对 RL 场景中的采样和数值稳定性进行了根本性重构，以避免训练信号失真。",
+      "在 RL 循环中，推理引擎的微小错误会被策略梯度放大，因此 V1 的改进直接提升了 RLHF 等对齐方法的可靠性和可复现性。",
+      "V1 通过优化动态批处理和内存管理，在保证正确性的同时，并未显著牺牲吞吐量，实现了质量与效率的平衡。",
+      "该演进反映了 LLM 基础设施从单纯追求推理速度向支持复杂训练范式的转变，对大规模 RL 工作负载具有重要参考价值。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
