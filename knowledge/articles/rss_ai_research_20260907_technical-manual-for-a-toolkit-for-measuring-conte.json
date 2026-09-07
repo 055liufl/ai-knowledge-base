@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-096",
+  "title": "Technical Manual for a Toolkit for Measuring Contextual Individuation in Transformer Language Models",
+  "source_url": "https://arxiv.org/abs/2609.05333",
+  "source_platform": "rss_ai_research",
+  "summary": "该文档介绍了一个用于测量Transformer语言模型中上下文个体化（contextual individuation）现象的工具包的技术手册。在Transformer语言模型中，每个词类型在嵌入层被赋予一个固定的、与上下文无关的向量，但模型在后续层中会根据上下文区分该词的不同出现实例。为了清晰验证这一假设，工具包设计了一种称为“桥”（bridge）的构造，该构造在保持词形不变的同时，以受控且带标签的方式变化上下文和预期含义。该工具包提供了标准化的测量方法，使研究者能够量化模型在不同上下文中的词表示分化程度。这一资源对于深入理解语言模型的语义表征机制、上下文敏感性以及模型的可解释性具有重要意义，为相关研究提供了可复现的实验工具。该工具包可能支持多种模型架构和数据集，有助于推动对Transformer内部动态的实证研究。",
+  "tags": [
+    "Transformer",
+    "Contextual Representation",
+    "Interpretability",
+    "Toolkit",
+    "Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:09:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具包基于‘桥’构造，允许在控制词形和上下文变化的同时测量上下文个体化，为验证模型行为提供了严谨的实验框架。",
+      "该工具包填补了现有方法在系统测量上下文敏感度方面的空白，有助于揭示Transformer层间语义分化的机制。",
+      "通过提供开源工具，该工作促进了可复现研究，可能加速对语言模型可解释性的探索。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

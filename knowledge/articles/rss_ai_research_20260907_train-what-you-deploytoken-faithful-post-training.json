@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-030",
+  "title": "Train What You Deploy:Token-Faithful Post-Training of a Production Coding",
+  "source_url": "https://arxiv.org/abs/2609.04678",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向生产环境编码与终端代理的保真感知训练耦合框架，旨在解决现有后训练流程中令牌与控制保真度严重失真的问题。当前训练流程存在两大缺陷：一是简化训练环境与生产部署不匹配，二是从代理日志离线重建令牌会扭曲原始提示，并将策略调用与后台模型操作混淆。该框架通过在训练端保留对原始提示的采样，消除虚假的模型操作干扰，从而提升训练与部署的一致性。这项工作对于提升编码代理在实际场景中的可靠性和性能具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Post-training",
+    "Coding"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有后训练流程存在令牌与控制保真度错误，源于简化环境与生产部署不匹配。",
+      "离线令牌重建会扭曲原始提示，并混淆策略调用与后台操作。",
+      "提出的保真感知训练耦合框架通过保留原始提示采样，消除虚假干扰。",
+      "该框架有望提升编码代理在生产环境中的部署可靠性和性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

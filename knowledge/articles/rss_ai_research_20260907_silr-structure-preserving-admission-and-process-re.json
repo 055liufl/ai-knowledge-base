@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-025",
+  "title": "SiLR: Structure-Preserving Admission and Process Reward for LLM Tool Agents",
+  "source_url": "https://arxiv.org/abs/2609.04629",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为SiLR的结构保持准入与过程奖励方法，用于大型语言模型（LLM）工具代理的运行时门控机制。传统上，LLM工具代理的运行时门控被视为一个过滤器，在ReAct循环中，被拒绝的提案会在同一状态下被替换，因此门控实际上是对提案流进行搜索的操作符，其准入标准决定了哪些轨迹是可达的。论文重点研究了违规后恢复准入问题，即在系统仍处于违规状态时必须允许进展，并指出了标量投影陷阱：使用聚合分数作为门控标准可能导致结构信息丢失，从而影响恢复和整体性能。SiLR方法通过保持轨迹的结构信息，并引入过程奖励来指导准入决策，从而避免了这一陷阱。该研究对于提升LLM工具代理在复杂环境中的鲁棒性和安全性具有重要意义，尤其是在需要动态调整策略的场景中。论文提供了理论分析和实验验证，展示了SiLR在多个任务上的优越性。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统门控作为过滤器忽略了轨迹结构，导致标量投影陷阱，影响违规后恢复。",
+      "SiLR通过结构保持的准入机制和过程奖励，避免了聚合分数带来的信息损失。",
+      "在ReAct循环中，门控应被视为搜索操作符，其准入标准直接决定可达轨迹。",
+      "实验表明SiLR在复杂工具代理任务中显著提升了恢复能力和整体性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

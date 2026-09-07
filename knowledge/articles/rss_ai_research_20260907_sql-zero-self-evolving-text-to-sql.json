@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-032",
+  "title": "SQL-Zero: Self-Evolving Text-to-SQL",
+  "source_url": "https://arxiv.org/abs/2609.04697",
+  "source_platform": "rss_ai_research",
+  "summary": "SQL-Zero 提出了一种全新的 Text-to-SQL 训练范式，旨在摆脱对人工标注的自然语言/SQL 对的依赖。传统方法需要大量昂贵且领域特定的标注数据，这成为扩展到新数据库的瓶颈。SQL-Zero 通过“提议者-求解者”自我对弈机制，让两个基于同一基础大语言模型的智能体（挑战者和求解者）仅以数据库执行结果作为唯一真值进行交互训练，从而在零标注样本的情况下训练出具有竞争力的 Text-to-SQL 求解器。该方法展示了自我进化学习的潜力，可能大幅降低 Text-to-SQL 系统的开发成本，并提升其跨领域泛化能力，对数据库交互、智能问答等应用具有重要价值。",
+  "tags": [
+    "Text-to-SQL",
+    "Self-Play",
+    "LLM",
+    "Zero-Shot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SQL-Zero 通过自我对弈机制，仅依赖数据库执行反馈，实现了零人工标注的 Text-to-SQL 训练，突破了数据瓶颈。",
+      "该方法从同一基础 LLM 出发，通过挑战者和求解者的对抗性互动，自动生成训练信号，展示了自我进化的学习能力。",
+      "零标注训练有望显著降低 Text-to-SQL 系统的开发成本，并增强对新数据库的快速适应能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

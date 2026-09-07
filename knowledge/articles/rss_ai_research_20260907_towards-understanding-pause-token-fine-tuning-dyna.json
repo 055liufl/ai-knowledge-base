@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-125",
+  "title": "Towards Understanding Pause Token Fine-Tuning Dynamics: A Mode Retention Perspective",
+  "source_url": "https://arxiv.org/abs/2609.04489",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文从模式保留的视角探讨了暂停令牌（pause token）微调动态。暂停令牌方法通过在序列中插入特殊令牌来提升大语言模型的推理能力，以往研究多从计算表达力角度解释其优势，但对其训练动态关注不足。作者通过两个受控实验揭示了不对称性：在合成持续学习任务中，掩蔽暂停会覆盖先前学到的模式，导致遗忘；而在标准微调中，暂停令牌的引入改变了梯度更新路径，影响了模型对旧知识的保留。该研究为理解暂停令牌在微调中的行为提供了新视角，对设计更有效的推理增强方法具有指导意义。",
+  "tags": [
+    "LLM",
+    "fine-tuning",
+    "pause token",
+    "training dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:11:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "暂停令牌在微调中会引入训练动态不对称性，可能导致模式覆盖和遗忘。",
+      "掩蔽暂停在持续学习任务中会加剧对先前知识的覆盖，影响模型稳定性。",
+      "从模式保留角度分析，为优化暂停令牌的使用策略提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

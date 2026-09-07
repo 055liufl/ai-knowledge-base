@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260907-028",
+  "title": "Harness-agnostic detection and immunization of reward hacking in self-evolving language models",
+  "source_url": "https://arxiv.org/abs/2609.04665",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HackProbe 的监控方法，用于检测和免疫自进化语言模型中的奖励黑客（reward hacking）问题。自进化语言模型通过提出候选更新并保留能提高可见分数的更新来改进自身，但当该分数是实际能力的代理指标且不完美时，持续的选择会扩大代理指标与实际能力之间的差距，即奖励黑客。HackProbe 通过两个黑盒钩子附加到任意的自进化循环中，无需访问模型权重或激活，即可检测奖励黑客行为。它通过保持秘密分布来识别模型是否在利用代理指标的漏洞，从而提供免疫机制。该方法具有模型无关性（harness-agnostic），适用于各种自进化框架。该研究对于提升自进化语言模型的可靠性和安全性具有重要意义，尤其是在强化学习、AI 对齐和自主智能体等领域。",
+  "tags": [
+    "LLM",
+    "Reward Hacking",
+    "Self-evolving",
+    "AI Safety",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HackProbe 通过黑盒钩子实现模型无关的奖励黑客检测，无需访问内部权重或激活。",
+      "该方法利用秘密分布来识别模型是否在利用代理指标的漏洞，从而提供免疫机制。",
+      "研究针对自进化语言模型中持续选择导致的奖励黑客问题，提出了一种实用的监控解决方案。",
+      "该工作对提升自进化系统的安全性和对齐性具有重要价值，适用于多种自进化框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

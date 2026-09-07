@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-022",
+  "title": "Extremely Sparse Supervision Incentivizes Reasoning Ability",
+  "source_url": "https://arxiv.org/abs/2609.04565",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文挑战了当前大语言模型后训练中普遍存在的“有效学习必须依赖海量 token”的假设。研究聚焦于在线策略蒸馏（OPD）场景，该场景天然为每个生成的 token 提供密集的教师监督。作者基于 Qwen3 模型家族，通过实验发现了一个反直觉的现象：在 OPD 设置下，极其稀疏的监督（即仅对少量关键 token 或步骤进行监督）反而能更有效地激发模型的推理能力，而密集的 token 级监督可能并非最优。这一发现为后训练策略的设计提供了新的视角，暗示着监督信号的质量和选择性可能比数量更为重要，有望推动更高效、更具针对性的推理能力训练方法的发展。该研究对于理解大模型推理能力的涌现机制以及优化训练效率具有重要的理论和实践意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Post-training",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在在线策略蒸馏（OPD）设置下，极其稀疏的监督信号比密集的 token 级监督更能有效提升模型的推理能力，挑战了传统认知。",
+      "监督信号的质量和选择性可能比数量更重要，为设计更高效的后训练策略提供了新思路。",
+      "该发现基于 Qwen3 模型家族，表明这一现象可能具有跨模型规模的普遍性，但需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

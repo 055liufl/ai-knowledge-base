@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-133",
+  "title": "Training-Free Halving of Activated Experts in Fine-Grained Mixture-of-Experts Models",
+  "source_url": "https://arxiv.org/abs/2609.04575",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种无需训练即可在细粒度混合专家（MoE）模型中减少激活专家数量的方法。作者指出，现代细粒度MoE模型在路由每个token到少量专家时，会重新归一化路由概率，这一过程隐式地将专家输出增益校准到训练时的top-k值。在推理时减少k值不仅会改变使用的专家集合，还会影响专家分支的强度。为了分离这些效应，论文提出激活top k1个专家，同时用原始top-k的概率进行归一化，从而在不重新训练的情况下实现专家数量的减半，同时保持模型性能。这项工作对MoE模型的推理效率优化具有重要意义，为在资源受限环境中部署大规模MoE模型提供了新的思路。",
+  "tags": [
+    "MoE",
+    "推理优化",
+    "模型压缩",
+    "无训练"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:12:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE模型中的路由概率重归一化隐式校准了专家输出增益，影响推理时的行为。",
+      "通过分离专家选择和归一化强度，可以在不训练的情况下减少激活专家数量。",
+      "该方法有望在保持模型性能的同时显著降低推理计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

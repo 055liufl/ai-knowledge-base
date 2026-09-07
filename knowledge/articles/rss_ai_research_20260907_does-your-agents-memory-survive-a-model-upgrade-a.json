@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260907-097",
+  "title": "Does Your Agent's Memory Survive a Model Upgrade? A Controlled Study of Memory Portability",
+  "source_url": "https://arxiv.org/abs/2609.05339",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对AI Agent在模型升级后记忆可移植性的问题进行了受控实验。模型升级是常态，但记忆迁移却常被忽视。研究发现，即使Agent保留相同的记忆存储，新模型也可能对旧笔记产生不同解读，混合嵌入版本可能破坏检索，且修复时若无原始证据可能失败。研究对比了三种记忆保存方式：将相同历史逐字保留用于长上下文阅读（LC-RAW）、分块用于检索增强生成（RAG）、以及由模型压缩为自然语言摘要。该研究揭示了模型升级对Agent记忆系统的潜在影响，为构建更鲁棒的Agent记忆机制提供了重要参考，值得AI开发者和研究者关注。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Model Upgrade",
+    "RAG",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:09:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型升级可能导致Agent对相同记忆内容的解读发生变化，即使记忆存储未变。",
+      "混合嵌入版本（如新旧模型生成的向量）可能破坏RAG检索的一致性。",
+      "记忆修复若无原始证据支持，可能失败，强调保留原始数据的重要性。",
+      "不同记忆保存方式（长上下文、RAG、压缩）在模型升级后的表现存在差异，需针对性设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

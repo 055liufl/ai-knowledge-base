@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-020",
+  "title": "Reducing Hallucinated Transcripts in Whisper via Hallucination Space Projection",
+  "source_url": "https://arxiv.org/abs/2609.04561",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对Whisper自动语音识别（ASR）模型幻觉问题的训练无关、推理时干预方法。Whisper作为广泛使用的基础模型，其生成式解码器在输入包含极少或无语音时，可能产生流畅但错误的幻觉转录。作者通过低秩投影解码器激活，从非语音校准数据中估计一个紧凑的幻觉相关子空间，并在推理时将解码器隐藏状态投影到该子空间之外，从而减少幻觉输出。该方法无需重新训练模型，计算开销低，易于集成到现有Whisper推理流程中。实验表明，该方法能显著降低幻觉率，同时保持正常语音转录的准确性。该研究针对ASR领域的关键可靠性问题，提供了一种实用的解决方案，对提升语音识别系统在实际场景中的鲁棒性具有重要意义。",
+  "tags": [
+    "ASR",
+    "Whisper",
+    "Hallucination",
+    "Inference-time"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:05:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出训练无关的推理时干预方法，通过低秩投影减少Whisper幻觉，无需重新训练模型。",
+      "利用非语音校准数据估计幻觉相关子空间，实现针对性的激活修正。",
+      "方法在降低幻觉率的同时保持正常语音转录性能，具有实用性和可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

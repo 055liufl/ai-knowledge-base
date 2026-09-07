@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260907-100",
+  "title": "Molecular D\\'ej\\`a Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+  "source_url": "https://arxiv.org/abs/2609.05381",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对大型语言模型（LLM）在分子性质基准测试中的评估问题，提出了一种“逐字检索”现象的审计方法。作者发现，许多前沿模型在预测分子性质时，并非基于推理或计算，而是直接记忆并输出了训练数据中已发表的数值，导致评估结果虚高。研究对22个前沿模型在12个回归基准上进行了系统审计，结果显示逐字检索现象普遍存在，但具有基准特异性：在5个数据集中，超过50%的模型表现出明显的逐字检索行为，而在其他数据集上则较少。这一发现揭示了当前LLM评估体系中的潜在缺陷，即准确率无法区分模型是真正理解了分子性质规律，还是仅仅检索了记忆中的公开数据。该研究对于构建更可靠的模型评估方法、理解LLM的记忆与泛化边界具有重要意义，也为分子科学领域的AI应用提供了警示。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Molecular Property",
+    "Memorization",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:10:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在分子性质预测中普遍存在逐字检索已发表数值的现象，导致评估准确率失真。",
+      "逐字检索行为具有基准特异性，某些数据集上超过50%的模型受影响，而其他数据集则较少。",
+      "当前评估方法无法区分模型的真实推理能力与记忆检索能力，需开发更严格的测试协议。",
+      "该研究对依赖LLM进行科学发现的领域（如药物研发）提出了重要警示，需警惕数据污染风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

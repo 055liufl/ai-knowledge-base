@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-006",
+  "title": "A Removal Based Approach to Improve LLM Faithfulness at Test-Time",
+  "source_url": "https://arxiv.org/abs/2609.04343",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于移除（removal-based）的测试时方法，旨在提升大语言模型（LLM）解释的忠实性。在LLM同时提供答案和解释的场景中，作者识别出解释不忠实的两个不同维度，并针对性地设计干预策略。该方法不依赖模型内部结构或额外训练，而是在推理阶段通过移除输入中的关键部分来检验解释是否真正反映模型的决策依据，从而识别并纠正不忠实的解释。这项工作对于依赖LLM进行高风险决策的领域（如医疗、金融）具有重要意义，因为它提供了一种轻量级、即插即用的审计工具，有助于增强模型的可信度和透明度。该研究属于可解释AI（XAI）与LLM可靠性的交叉方向，其创新性在于将移除式归因方法应用于测试时解释的验证，而非仅用于特征重要性分析。",
+  "tags": [
+    "LLM",
+    "Faithfulness",
+    "XAI",
+    "Test-Time"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:04:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出了一种无需重新训练的测试时方法，通过移除输入部分来检测解释的不忠实性，具有实用性和可扩展性。",
+      "明确区分了解释不忠实性的两个维度，为后续研究提供了更细致的分析框架。",
+      "该方法可作为审计工具，增强LLM在高风险决策场景中的可信度，弥补现有解释方法的不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

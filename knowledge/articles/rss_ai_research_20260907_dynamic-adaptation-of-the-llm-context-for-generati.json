@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-132",
+  "title": "Dynamic Adaptation of the LLM Context for Generating Routines with Coupled Semantics",
+  "source_url": "https://arxiv.org/abs/2609.04570",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对LLM代码生成中静态绑定问题的动态上下文适配方法。静态绑定指的是代码正确性依赖于多个组件在运行时行为上的耦合关系，这种关系无法仅从文本描述中解析，导致现有LLM在生成具有耦合语义的例程时失败。论文通过动态调整LLM的上下文，引入执行反馈或运行时信息，使模型能够捕捉组件间的联合执行行为，从而生成语义正确且耦合的代码。该工作关注代码生成中的深层语义理解，超越了传统基于文本的静态分析，对提升LLM在复杂软件工程任务中的实用性具有重要意义。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Context Adaptation",
+    "Semantic Coupling"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:12:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态绑定问题揭示了LLM代码生成在依赖运行时耦合语义时的根本局限，现有模型仅基于文本描述无法解决。",
+      "动态上下文适配通过引入执行反馈或运行时信息，使模型能够学习组件间的联合行为，从而生成正确代码。",
+      "该问题具有普遍性，不仅限于显式耦合场景，任何依赖跨组件执行一致性的代码生成都可能受影响。",
+      "该方法为未来LLM在复杂软件工程中的集成提供了新方向，即结合执行环境进行迭代式生成与验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

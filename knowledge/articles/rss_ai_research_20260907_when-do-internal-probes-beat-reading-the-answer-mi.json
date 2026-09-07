@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-134",
+  "title": "When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models",
+  "source_url": "https://arxiv.org/abs/2609.04582",
+  "source_platform": "rss_ai_research",
+  "summary": "这篇论文探讨了语言模型内部探针（internal probes）与行为输出（behavior）之间的差异，揭示了一个关键现象：模型可能“知道”正确答案，但行为上却无法表达。作者使用一个0.6B参数的语言模型，在验证1,200个逻辑结论（一半有效，一半通过单一语义编辑破坏）时，模型对所有问题都回答“是”，行为上无法区分。然而，通过线性探针分析其隐藏状态，发现模型内部能够以0.96的AUC准确读取正确判断，并能泛化到未见过的逻辑结构，甚至对由真实结论词汇构建的干扰项也能达到0.90的AUC。研究进一步追踪了信息丢失的位置，指出主要失败点在于模型的读出层（readout）校准不当，导致内部知识无法转化为行为输出。这项工作挑战了仅凭行为评估模型能力的传统方法，强调了内部表征分析的重要性，并为理解模型“知道但不说”的现象提供了新视角。其创新性在于系统性地展示了行为与内部知识之间的脱节，并提出了校准读出层的潜在改进方向，对模型可解释性和可靠性研究具有重要价值。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Probing",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:12:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型行为可能完全无法反映其内部知识，线性探针能揭示隐藏的判断能力，表明行为评估存在盲区。",
+      "内部知识可以泛化到未见过的逻辑结构，说明模型内部表征比行为输出更鲁棒。",
+      "主要失败点在于读出层的校准问题，而非知识缺失，这为改进模型输出提供了具体方向。",
+      "该研究强调了内部探针作为评估和诊断工具的价值，对模型对齐和安全性研究有启示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

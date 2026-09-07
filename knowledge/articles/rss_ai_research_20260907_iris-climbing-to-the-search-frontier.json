@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-005",
+  "title": "Iris: Climbing to the Search Frontier",
+  "source_url": "https://arxiv.org/abs/2609.04304",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了Iris-mini和Iris-pro两个搜索代理，分别在35B-A3B和397B-A17B规模上训练，并详细阐述了其背后的数据管道和训练方法。任务是从网页语料库的超链接结构中逆向构建的：作者基于种子页面及其出链提炼实体图，生成多跳链，并将每个非答案实体改写为描述性引用，以确保无法通过字符串匹配解决线索。这项工作旨在提升搜索代理在复杂多跳推理中的能力，推动搜索技术向更智能、更接近人类认知的方向发展。其创新点在于数据构建的自动化和训练规模的可扩展性，对信息检索和AI代理领域具有重要参考价值。",
+  "tags": [
+    "Search Agent",
+    "Multi-hop Reasoning",
+    "LLM",
+    "Data Pipeline"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:04:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过超链接结构逆向构建多跳任务，创新性地解决了训练数据生成问题。",
+      "采用描述性引用替代实体名称，有效防止模型依赖字符串匹配，促进语义理解。",
+      "在35B和397B规模上的训练展示了从中小型到大型模型的性能扩展潜力。",
+      "该工作为搜索代理的自主推理和复杂查询处理提供了新的训练范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

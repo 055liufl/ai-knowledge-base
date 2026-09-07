@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-129",
+  "title": "Pitch-class Steering for Diffusion-based Music Generation via Latent-space Probes",
+  "source_url": "https://arxiv.org/abs/2609.04516",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对扩散模型音乐生成的音高控制方法。现有可控音乐生成研究多集中于自回归模型，而扩散模型在此方面探索不足。作者针对Stable Audio Open这一潜在扩散音乐合成模型，设计了一个轻量级的卷积探针（约12.5万参数），用于从模型的变分自编码器潜在空间中解码帧级音高类别激活，从而实现音高内容的引导。该方法无需重新训练主模型，仅需训练一个小型探针，即可在推理时对生成音乐的旋律走向进行控制，为扩散式音乐生成提供了新的可控性思路。该研究填补了扩散模型在细粒度音乐控制上的空白，具有较高的实用价值，尤其适合音乐生成工具开发者。",
+  "tags": [
+    "Music Generation",
+    "Diffusion Model",
+    "Controllable Generation",
+    "Latent Space"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:12:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出轻量级探针方法，仅需12.5万参数即可实现扩散模型的音高控制，成本低且高效。",
+      "填补了扩散模型在可控音乐生成领域的研究空白，拓展了Stable Audio Open的应用场景。",
+      "方法基于潜在空间解码，无需修改主模型，便于集成到现有生成流程中。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

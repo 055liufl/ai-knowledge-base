@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-011",
+  "title": "When Quantization Breaks Memory: Recurrent-State Write-Back in Low-Precision Temporal Inference",
+  "source_url": "https://arxiv.org/abs/2609.04490",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了量化在递归神经网络推理中的影响，重点指出量化后的隐藏状态在时间步之间存储和回传时，其写入规则（称为 recurrent-state write-back）会改变后续计算。作者在用于荧光寿命成像的紧凑 GRU 编码器-解码器中隔离了这一效应，揭示了低精度时间推理中量化误差如何通过状态反馈累积和传播，可能导致记忆崩溃或性能退化。这项工作为理解量化递归模型的动态行为提供了新视角，并为设计更鲁棒的量化策略（如状态写入补偿或混合精度）提供了理论依据。其创新性在于将状态存储规则作为独立变量分析，而非仅关注权重或激活量化，对边缘设备上的实时序列处理（如医学成像）具有实际意义。",
+  "tags": [
+    "Quantization",
+    "Recurrent Neural Networks",
+    "Low-Precision Inference",
+    "GRU",
+    "Temporal Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:04:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化状态写入规则（write-back）在递归网络中会显著影响后续时间步的计算，是低精度推理中一个被忽视的关键因素。",
+      "在荧光寿命成像的GRU模型中，量化误差通过状态反馈累积，可能导致记忆崩溃或性能下降，需针对性设计补偿策略。",
+      "该研究为混合精度或自适应量化在递归网络中的应用提供了理论动机，有助于提升边缘设备上的时序任务可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

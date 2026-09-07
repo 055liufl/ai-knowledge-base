@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260907-038",
+  "title": "Shadow Queries for Private Retrieval in Vector Databases",
+  "source_url": "https://arxiv.org/abs/2609.04767",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Shadow Queries”的新方法，用于在向量数据库中实现私有检索，以应对嵌入反转攻击（EIAs）对基于云向量数据库的检索增强生成（RAG）系统构成的隐私威胁。随着大语言模型（LLMs）越来越多地依赖信息检索系统来整合领域知识，文档嵌入的存储和检索成为关键环节，但嵌入向量可能被恶意攻击者逆向重构出原始文本。现有的防御手段（如添加噪声）往往在隐私保护与检索准确性之间难以平衡。Shadow Queries 方法通过生成与真实查询相似的“影子查询”来混淆攻击者，在不显著降低检索性能的前提下增强隐私保护。该方法值得关注，因为它针对 RAG 系统中一个实际且紧迫的安全漏洞，提出了创新的防御思路，可能对依赖云向量数据库的 AI 应用产生重要影响。",
+  "tags": [
+    "Privacy",
+    "Vector Database",
+    "RAG",
+    "Security",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:06:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "嵌入反转攻击（EIAs）是向量数据库中的真实威胁，可导致敏感文档内容泄露。",
+      "Shadow Queries 通过引入混淆查询来保护真实查询模式，从而降低攻击成功率。",
+      "该方法在隐私保护与检索准确性之间提供了新的平衡点，优于传统噪声添加方法。",
+      "该研究为 RAG 系统的隐私安全设计提供了实用指导，具有较高的应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

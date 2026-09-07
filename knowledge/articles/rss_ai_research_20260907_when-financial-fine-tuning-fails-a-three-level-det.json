@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260907-045",
+  "title": "When Financial Fine-tuning Fails: A Three-Level Detectability Analysis of Numerical Hallucination in Domain-Adapted Language Models",
+  "source_url": "https://arxiv.org/abs/2609.04806",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对金融领域大语言模型在微调后出现的数值幻觉问题进行了系统性研究。作者指出，尽管金融LLM被广泛用于报告和披露的摘要生成，但数值幻觉（如错误引用财务数字）会带来严重风险。以往研究常将此类幻觉归因于模型数值推理能力不足，但这一假设缺乏受控微调实验的验证。该研究设计了一套成本可控的实验框架，对领域自适应微调后的模型进行三级可检测性分析，旨在区分幻觉源于推理缺陷还是训练数据/微调过程引入的偏差。通过精细控制微调数据、模型规模和评估任务，作者揭示了数值幻觉在不同检测层级（如表面一致性、逻辑一致性、事实准确性）的表现差异，并提出了更可靠的检测与缓解策略。这项工作为金融AI的安全部署提供了实证依据，对提升模型在敏感数值处理场景中的可信度具有重要价值，也为后续研究提供了可复现的方法论。",
+  "tags": [
+    "LLM",
+    "Financial AI",
+    "Hallucination",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:06:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数值幻觉并非单纯源于推理能力不足，微调过程中的数据分布和训练策略可能起关键作用。",
+      "提出三级可检测性分析框架，区分不同层面的幻觉表现，有助于精准定位问题根源。",
+      "受控实验设计为金融领域模型的安全评估提供了低成本、可复现的范式。",
+      "研究结果对金融报告自动化的实际部署具有直接指导意义，可减少因数字错误导致的合规风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

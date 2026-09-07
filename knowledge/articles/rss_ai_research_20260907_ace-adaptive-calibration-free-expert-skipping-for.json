@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260907-081",
+  "title": "ACE: Adaptive Calibration-Free Expert Skipping for MoE-based LLMs",
+  "source_url": "https://arxiv.org/abs/2609.05228",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为ACE的自适应免校准专家跳过方法，用于优化基于混合专家（MoE）架构的大语言模型（LLM）推理效率。MoE模型通过固定top-k路由为每个token激活相同数量的专家槽位，导致大量冗余计算。现有专家跳过方法通常依赖路由器置信度、校准数据或额外训练，难以可靠估计被路由专家的实际贡献。ACE方法无需校准数据和额外训练，能够自适应地评估每个token所需专家数量，动态跳过贡献较低的专家，从而在不显著影响模型性能的前提下减少计算开销。该方法针对MoE推理中的计算冗余问题，提供了一种实用且高效的解决方案，对于提升LLM部署效率具有重要意义。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "推理优化",
+    "模型压缩"
+  ],
+  "author": null,
+  "published_at": "2026-09-07T14:01:24Z",
+  "collected_at": "2026-09-07T14:08:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ACE方法无需校准数据或额外训练，即可自适应跳过低贡献专家，解决了现有方法依赖外部资源的局限。",
+      "通过动态调整每个token激活的专家数量，显著减少MoE模型推理时的冗余计算，提升效率。",
+      "该方法为MoE架构的推理优化提供了新思路，有望在保持模型性能的同时降低部署成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
