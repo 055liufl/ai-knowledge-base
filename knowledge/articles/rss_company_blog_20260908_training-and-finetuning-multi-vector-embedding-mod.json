@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260908-005",
+  "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何使用 Sentence Transformers 库训练和微调多向量嵌入模型（Multi-Vector Embedding Models）。多向量嵌入模型（如 ColBERT）通过为每个 token 生成向量，并使用后期交互（late interaction）机制计算相似度，相比单向量模型（如 Sentence-BERT）能显著提升检索精度，尤其在处理长文档和复杂查询时表现更优。文章详细阐述了多向量模型的工作原理、训练数据准备、模型架构选择、损失函数设计（如 MultipleNegativesRankingLoss）、微调策略以及推理优化技巧，并提供了基于 Hugging Face 生态的代码示例。该内容对于希望提升搜索系统性能的研究人员和开发者具有重要参考价值，因为它弥合了学术研究与实际应用之间的鸿沟，展示了如何利用现有工具高效实现先进的嵌入模型。",
+  "tags": [
+    "Multi-Vector Embedding",
+    "Sentence Transformers",
+    "ColBERT",
+    "Fine-tuning",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-08T12:39:28Z",
+  "collected_at": "2026-09-08T12:42:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量嵌入模型通过 token 级向量和后期交互机制，在检索精度上优于单向量模型，尤其适合长文档场景。",
+      "Sentence Transformers 库提供了简洁的 API 来训练和微调多向量模型，降低了实现门槛。",
+      "训练多向量模型需要精心设计损失函数（如 MultipleNegativesRankingLoss）和负采样策略，以提升模型区分能力。",
+      "推理阶段可通过向量压缩和近似搜索技术优化多向量模型的效率，兼顾精度与速度。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

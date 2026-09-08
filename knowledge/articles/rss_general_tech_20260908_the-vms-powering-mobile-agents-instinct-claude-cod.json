@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260908-007",
+  "title": "The VMs Powering Mobile Agents (Instinct, Claude Code)",
+  "source_url": "https://rohanadwankar.github.io/posts/platforms.html",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章探讨了支撑移动智能体（如 Instinct 和 Claude Code）运行的虚拟机（VM）基础设施。作者从技术角度分析了移动端智能体在资源受限环境下的执行需求，重点讨论了轻量级虚拟化、容器化隔离、以及如何在移动设备上高效调度 AI 推理任务。文章指出，移动智能体的性能瓶颈往往不在于模型本身，而在于底层 VM 的启动速度、内存占用和 I/O 延迟。通过对比不同 VM 方案（如 Firecracker、Wasm 沙箱等），作者提出了一种分层架构，将模型推理与工具调用解耦，以提升响应速度。该内容值得关注，因为它揭示了移动 AI 应用从原型到规模化部署的关键基础设施挑战，对开发者设计移动端 Agent 系统具有直接参考价值。",
+  "tags": [
+    "Mobile Agents",
+    "Virtualization",
+    "Edge AI",
+    "Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-09-08T12:39:24Z",
+  "collected_at": "2026-09-08T12:41:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "移动智能体的性能瓶颈常源于 VM 启动延迟和资源开销，而非模型本身。",
+      "轻量级虚拟化（如 Firecracker）和容器化是平衡隔离与效率的关键。",
+      "分层架构（模型推理与工具调用解耦）能显著提升移动端 Agent 的响应速度。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

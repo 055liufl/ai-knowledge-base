@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260908-008",
+  "title": "Trusting-Trust Attack against an Entire Linux Distribution",
+  "source_url": "https://arxiv.org/abs/2607.24888",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文提出了一种针对整个Linux发行版的“信任信任攻击”（Trusting-Trust Attack），这是一种供应链攻击的变体，通过篡改编译器或构建工具链，在软件构建过程中植入后门，从而影响所有基于该发行版构建的软件。该攻击利用了开发者对构建工具的信任，使得恶意代码在编译阶段被注入，且难以被常规安全审计发现。论文详细阐述了攻击的实施方法、潜在影响范围，并讨论了防御策略，如可复现构建和引导信任链验证。这项研究揭示了现代软件供应链中的深层信任漏洞，对系统安全领域具有重要警示意义，值得安全研究人员和系统管理员关注。",
+  "tags": [
+    "供应链安全",
+    "Linux",
+    "编译器攻击"
+  ],
+  "author": null,
+  "published_at": "2026-09-08T12:39:24Z",
+  "collected_at": "2026-09-08T12:41:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "攻击通过篡改编译器或构建工具，在编译阶段注入恶意代码，影响所有下游软件。",
+      "该攻击利用了开发者对构建工具的信任，常规安全审计难以检测。",
+      "防御措施包括可复现构建、引导信任链验证和二进制审计。",
+      "研究凸显了供应链安全的深层风险，需重新审视信任模型。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
