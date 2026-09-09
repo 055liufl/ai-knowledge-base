@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260909-039",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了 vLLM 从 V0 到 V1 的演进，重点聚焦于强化学习（RL）场景下的正确性问题。文章指出，在 RL 训练中，推理引擎的数值精度和采样一致性对模型收敛至关重要，而 vLLM V0 在批处理、采样和数值稳定性方面存在缺陷，可能导致训练不稳定或结果偏差。V1 版本通过重构调度器、优化采样算法、提升浮点运算精度以及引入更严格的正确性校验机制，显著改善了 RL 工作流的可靠性。文章强调，在追求性能优化（如吞吐量）之前，必须先确保推理结果的正确性，否则后续的 RL 修正（corrections）将建立在错误基础之上。该内容对使用 vLLM 进行 RL 训练的研究者和工程师具有重要参考价值，揭示了推理引擎在 RL 闭环中的关键作用。",
+  "tags": [
+    "vLLM",
+    "强化学习",
+    "推理引擎",
+    "正确性",
+    "采样"
+  ],
+  "author": null,
+  "published_at": "2026-09-09T12:45:53Z",
+  "collected_at": "2026-09-09T12:50:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V0 在 RL 场景下存在数值精度和采样一致性问题，可能影响训练稳定性。",
+      "V1 版本通过重构调度和采样机制，优先保证正确性，再优化性能。",
+      "推理引擎的正确性对 RL 闭环至关重要，错误输出会误导策略更新。",
+      "该演进为大规模 RL 训练提供了更可靠的推理基础设施。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260909-008",
+  "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin",
+  "source_url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了在 Tenstorrent 硬件上部署大型语言模型（LLM）的实践，重点剖析了 vLLM TT 插件的内部工作原理。Tenstorrent 是一家专注于 AI 芯片设计的公司，其硬件架构与 NVIDIA GPU 不同，旨在提供高性能、低功耗的 AI 计算。vLLM 是一个广泛使用的 LLM 推理服务框架，通过开发 TT 插件，vLLM 能够适配 Tenstorrent 的硬件，实现高效的模型推理。文章详细说明了插件的设计思路、与 vLLM 核心的集成方式、内存管理策略以及性能优化技巧，为开发者提供了在非主流硬件上部署 LLM 的宝贵经验。这一进展值得关注，因为它展示了 LLM 推理生态的多元化趋势，降低了硬件供应商的依赖，并可能推动 AI 基础设施的竞争与创新。",
+  "tags": [
+    "LLM",
+    "vLLM",
+    "Tenstorrent",
+    "推理优化",
+    "硬件适配"
+  ],
+  "author": null,
+  "published_at": "2026-09-09T12:45:49Z",
+  "collected_at": "2026-09-09T12:47:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM TT 插件通过抽象层适配 Tenstorrent 硬件，展示了 vLLM 框架的可扩展性，使其不局限于 NVIDIA GPU。",
+      "插件针对 Tenstorrent 的架构特点（如内存层次和并行模型）进行了定制优化，以实现高效 LLM 推理。",
+      "该案例表明，通过社区驱动的插件机制，新兴 AI 硬件可以快速融入主流推理生态，降低部署门槛。",
+      "文章提供了实际性能数据和调试经验，对在异构硬件上部署 LLM 的开发者具有直接参考价值。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
