@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-127",
+  "title": "Mini-Batch Risk-Averse Deep Q-Learning: A Robot Navigation Case Study",
+  "source_url": "https://arxiv.org/abs/2609.07998",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究马尔可夫决策过程（MDP）的控制问题，其中策略质量由动态、时间一致的马尔可夫风险度量评估，而非传统的期望折扣成本。将此类风险度量与强化学习结合的主要障碍在于，转移风险映射以非线性方式依赖于转移核，因此无法从单次观测的转移中估计。作者通过采用小批量（mini-batch）采样方法消除这一障碍，使得转移风险映射可以从一批转移样本中有效估计，从而将风险规避目标嵌入深度Q学习框架。论文以机器人导航为案例研究，验证了所提 Mini-Batch Risk-Averse Deep Q-Learning 方法的有效性。该工作值得关注，因为它为安全关键场景下的强化学习提供了理论严谨且可实现的解决方案，弥补了风险敏感控制与深度RL之间的鸿沟，对自动驾驶、机器人等需要规避极端风险的领域具有重要参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Risk-Averse Control",
+    "Deep Q-Learning",
+    "Robot Navigation"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "动态时间一致的风险度量无法从单次转移中估计，因为转移风险映射非线性依赖于转移核",
+      "小批量采样是解决转移风险映射估计问题的关键，使风险规避目标可与深度Q学习结合",
+      "机器人导航案例表明该方法在安全关键控制任务中具有实际可行性",
+      "该研究为风险敏感强化学习提供了理论严谨且可扩展的框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

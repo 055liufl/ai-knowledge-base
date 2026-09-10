@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-102",
+  "title": "Scoring Without the Engine: Validating a Deterministic, Manipulation-Resistant Content Score for Generative Engines, End to End",
+  "source_url": "https://arxiv.org/abs/2609.07559",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对生成式引擎的确定性、抗操纵内容评分代理的端到端验证协议。由于真实评估标准（oracle）往往昂贵、受速率限制且非平稳，作者设计了一套基于对抗性证伪门（adversarial falsification gates）的验证框架，包括阴性对照、剂量响应、有界放大、重复惩罚和长度中性等测试。该协议在训练集上拟合代理评分，并在留出集上确认其有效性，同时明确界定了代理无法解决的内容边界，并重新测量外部因果效应。这项工作值得关注，因为它为内容评分系统的可信度验证提供了系统化方法，尤其适用于需要低成本、可重复评估的生成式AI场景，有助于提升评分机制的鲁棒性和抗操纵性。",
+  "tags": [
+    "Evaluation",
+    "Generative AI",
+    "Robustness",
+    "Validation Protocol"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:51:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出对抗性证伪门协议，用于验证确定性代理评分在生成式引擎中的有效性。",
+      "代理评分需通过阴性对照、剂量响应、有界放大、重复惩罚和长度中性等测试，确保抗操纵性。",
+      "明确代理评分的不可解决边界，并重新测量外部因果效应，提升评估可信度。",
+      "该方法适用于昂贵、受限且非平稳的oracle场景，为低成本内容评分提供系统化验证路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

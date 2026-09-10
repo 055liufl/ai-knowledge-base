@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-047",
+  "title": "LayerRoute: Action-Conditioned Mixture-of-Layers Routing for Vision-Language-Action Policies",
+  "source_url": "https://arxiv.org/abs/2609.06079",
+  "source_platform": "rss_ai_research",
+  "summary": "LayerRoute 提出了一种面向视觉-语言-动作（VLA）策略的动作条件化层级混合路由方法。VLA 策略通常利用预训练视觉语言模型（VLM）来指导机器人动作生成，而 VLM 的不同层提供了从局部视觉几何到抽象语言对齐语义的层次化表示。不同操作任务可能需要不同层表示的混合，但现有方法往往固定使用某一层或简单拼接多层特征，缺乏任务自适应性。LayerRoute 的核心思想是根据当前动作条件动态选择并加权融合 VLM 各层的表示，使动作模块能够按需获取最相关的视觉-语义信息。该方法有望提升 VLA 策略在多任务、多场景下的泛化能力和控制精度，同时保持对预训练 VLM 的高效复用。该工作对机器人学习、具身智能和多模态策略设计具有参考价值，尤其适合关注 VLA 架构优化与动态路由机制的研究者和开发者。",
+  "tags": [
+    "VLA",
+    "VLM",
+    "Robot Learning",
+    "Mixture-of-Layers",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:48:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 各层表示具有从局部几何到抽象语义的层次差异，不同机器人操作任务需要不同的层表示组合。",
+      "LayerRoute 通过动作条件动态路由和混合多层特征，替代固定层选择或简单拼接，提升任务自适应性。",
+      "该方法强调动作模块与 VLM 中间表示的协同，可能改善 VLA 策略在多任务场景下的泛化能力。",
+      "动态层级路由为高效复用预训练 VLM 提供了新思路，但实际机器人部署效果仍需实验验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

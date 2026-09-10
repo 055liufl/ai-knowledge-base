@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-019",
+  "title": "Agents Trust Tools Too Much: Measuring Reliance on Unreliable Tools",
+  "source_url": "https://arxiv.org/abs/2609.05587",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了工具使用型智能体在面对不可靠工具返回结果时的行为表现。现有评估主要关注智能体能否成功使用工具完成任务，但普遍假设工具返回的信息是可靠的。然而在真实系统中，工具返回的内容可能看似合理却实际错误。作者通过让十四种大语言模型使用三种工具（网络搜索、LLM子智能体委派、代码执行）来评估智能体对不可靠工具返回的响应方式。研究发现智能体对工具存在过度信任问题，即使工具返回错误信息，智能体也倾向于直接采纳而非质疑或验证。这一发现对构建更鲁棒的智能体系统具有重要意义，揭示了当前工具使用评估范式的盲区，并为设计具备批判性验证能力的智能体提供了方向。该研究值得关注，因为它触及了智能体可靠性与安全性的核心问题，对实际部署中的风险控制具有直接指导价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Tool Use",
+    "Evaluation",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具使用评估普遍假设工具返回可靠，忽略了真实系统中工具可能返回看似合理但错误的信息",
+      "十四种LLM在三种工具（网络搜索、子智能体委派、代码执行）上均表现出对不可靠工具返回的过度信任",
+      "智能体倾向于直接采纳工具输出而非进行质疑或交叉验证，这构成了实际部署中的重大风险",
+      "该研究呼吁重新设计评估基准，将工具不可靠性纳入考量，并推动具备批判性验证能力的智能体架构"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

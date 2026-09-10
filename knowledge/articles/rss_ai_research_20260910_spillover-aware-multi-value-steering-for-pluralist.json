@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-031",
+  "title": "Spillover-Aware Multi-Value Steering for Pluralistic LLM Alignment",
+  "source_url": "https://arxiv.org/abs/2609.05800",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多元对齐（pluralistic alignment）的溢出感知多值引导方法（Spillover-Aware Multi-Value Steering）。现有激活引导（activation steering）技术通过在隐藏状态上添加学习到的方向向量来控制大语言模型行为，但通常一次只能处理一个概念。然而，多元对齐场景要求同时引导多个价值维度，以满足不同利益相关者的差异化价值偏好。作者发现，朴素的多维引导会产生显著的\"溢出效应\"（spillover）：针对某一价值维度的引导效果会泄漏到其他价值维度上，导致对齐目标相互干扰。这一问题类似于因果推断中的处理效应与溢出效应问题。该研究对多值同时引导的机制进行了分析，并提出了缓解溢出的方法，为构建能够同时满足多元价值需求的 LLM 对齐方案提供了新思路。这项工作值得关注，因为它触及了 LLM 对齐从单一目标走向多元价值协调的关键挑战，对实际部署中需要平衡多方利益的对齐系统具有重要参考价值。",
+  "tags": [
+    "LLM Alignment",
+    "Activation Steering",
+    "Pluralistic Alignment",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有激活引导方法一次仅能处理单一概念，无法满足多元对齐中同时引导多个价值维度的需求",
+      "朴素的多维引导会产生显著的溢出效应，即一个价值的引导效果会泄漏并干扰其他价值维度",
+      "该溢出问题与因果推断中的处理效应-溢出效应框架相类比，为分析和解决该问题提供了理论视角",
+      "提出溢出感知的多值引导方法，旨在实现多个价值维度同时且互不干扰的精确控制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

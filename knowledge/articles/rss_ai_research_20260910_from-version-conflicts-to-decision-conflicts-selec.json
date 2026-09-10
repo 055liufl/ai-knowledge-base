@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-129",
+  "title": "From Version Conflicts to Decision Conflicts: Selective Revalidation for Long-Running AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.08015",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对长时间运行 AI Agent 的「选择性再验证」（Selective Revalidation）机制，用于解决 Agent 在读取状态、推理、等待工具或人工审批后执行外部动作时，所依据的状态可能已经发生变化的问题。传统做法借鉴数据库的乐观并发控制（版本冲突检测），但作者指出 Agent 场景下的冲突本质上是「决策冲突」而非简单的「版本冲突」：状态变化是否影响最终决策，取决于该变化与决策逻辑的语义关系。文中以退款场景为例：Agent 在 100 英镑限额下提议退款 80 英镑，若客户姓名变更仅影响展示元数据，则无需重新验证；若限额调整为 90 仍允许退款，调整为 50 则使决策失效；若其他工作人员已发起退款，则必须阻止重复操作。该工作将再验证问题从粗粒度的版本比对提升为细粒度的决策相关性判断，对构建可靠、可审计的长时程 Agent 系统具有重要价值，尤其适用于金融、客服、运维等涉及外部副作用的自动化场景。",
+  "tags": [
+    "Agent",
+    "Long-Running Agents",
+    "Concurrency Control",
+    "Reliability",
+    "Decision Validation"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程 Agent 的核心风险不是状态版本冲突，而是状态变化是否在语义上使原有决策失效，即「决策冲突」。",
+      "选择性再验证需要判断状态变化与决策逻辑的相关性，而非对所有变化一律重新执行完整推理。",
+      "该机制可显著减少不必要的再验证开销，同时避免因状态漂移导致的错误外部动作（如重复退款）。",
+      "该方向为 Agent 系统的可靠性、可审计性和并发安全提供了新的理论框架，连接了数据库事务语义与 AI 决策流程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

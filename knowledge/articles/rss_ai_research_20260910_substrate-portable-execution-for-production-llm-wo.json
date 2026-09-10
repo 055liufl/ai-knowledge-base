@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-050",
+  "title": "Substrate-Portable Execution for Production LLM Workflows",
+  "source_url": "https://arxiv.org/abs/2609.06128",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Substrate-Portable Execution 的方法，旨在解决生产级 LLM 工作流中执行语义与特定运行时耦合的可移植性问题。作者在 Amazon 的对话式 AI 助手 Rufus 中遇到了这一挑战：Rufus 拥有庞大的工具目录，需同时支持实时服务、异步后台任务以及高吞吐量的批处理工作负载（如评估和内容处理），但不同执行模式往往依赖不同的运行时，导致工作流难以跨平台迁移。该研究通过抽象执行语义，使工具调用循环、检索链和组合式工作流能够在多种底层执行基座（substrate）上一致运行，从而提升生产系统的灵活性、可维护性和可扩展性。这项工作值得关注，因为它直面了 LLM 智能体从原型走向大规模生产部署时的核心工程痛点——运行时锁定问题，并为构建可移植、多模式的生产级 LLM 工作流提供了系统性的解决方案，对工业界部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Workflow",
+    "Production",
+    "Portability"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:48:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产级 LLM 工作流的执行语义常与单一运行时耦合，导致可移植性差，难以在实时、异步和批处理模式间灵活切换。",
+      "通过抽象执行基座（substrate），可以实现工具调用、检索链和组合工作流在不同运行时上的一致执行。",
+      "Amazon Rufus 的大规模实践表明，可移植执行是支撑多模式生产负载（如实时服务与高吞吐批处理）的关键基础设施能力。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

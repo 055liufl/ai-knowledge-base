@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-043",
+  "title": "Generator-Independent Runtime Assurance under Partial Observation",
+  "source_url": "https://arxiv.org/abs/2609.06036",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究基于提案的控制器（如学习策略、语言模型规划器等黑盒生成器）在运行时验证门控下的闭环安全性问题。核心问题是：闭环安全保证何时能与生成器解耦？作者指出，当前流行的逐候选认证模式在重试或 best-of-k 选择下无法组合——单个候选的误准入水平 α 会膨胀为 1-(1-α)^k，导致整体安全性显著下降。论文提出了一种生成器无关的运行时保证框架，旨在部分可观测条件下提供与生成器解耦的安全保证。该工作对 LLM 规划器、强化学习策略等黑盒组件在安全关键场景中的部署具有重要意义，为运行时验证提供了更严格的理论基础。",
+  "tags": [
+    "Runtime Verification",
+    "Safety",
+    "LLM Planner",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:48:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "逐候选认证在重试或 best-of-k 选择下无法组合，误准入概率会从 α 膨胀到 1-(1-α)^k",
+      "闭环安全保证可以与黑盒生成器解耦，但需要新的运行时保证框架",
+      "部分可观测条件下的生成器无关安全保证是安全关键部署的关键挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

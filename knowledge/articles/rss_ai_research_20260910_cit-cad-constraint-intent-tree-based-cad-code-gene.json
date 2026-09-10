@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-099",
+  "title": "CIT-CAD: Constraint Intent Tree-based CAD Code Generation and Verification",
+  "source_url": "https://arxiv.org/abs/2609.07434",
+  "source_platform": "rss_ai_research",
+  "summary": "CIT-CAD 提出了一种基于约束意图树（Constraint Intent Tree）的 CAD 代码生成与验证框架，旨在解决自然语言驱动的参数化 CAD 程序生成中「只关注最终几何相似度、忽略构建过程」的问题。现有基准和方法多采用交并比等几何匹配指标，导致生成的模型虽然外观接近参考，却丢失了可编辑、可追溯的设计意图与建模步骤。CIT-CAD 通过将设计意图显式建模为约束树结构，引导 LLM 生成既满足几何约束又保留构造逻辑的 CAD 代码，并配套验证机制确保生成结果的可执行性与可编辑性。该工作对 LLM 在工程软件自动化、参数化设计、代码生成与形式化验证交叉领域具有参考价值，尤其适合关注 LLM 代码生成可靠性、CAD/CAE 智能化以及设计意图保持的研究者与开发者。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "CAD",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:50:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 CAD 代码生成评测过度依赖几何相似度指标，忽视了建模过程与设计意图的保留",
+      "约束意图树将自然语言设计意图显式结构化，为 LLM 生成可编辑参数化程序提供中间表示",
+      "生成与验证结合是提升 CAD 代码可靠性和可编辑性的关键方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

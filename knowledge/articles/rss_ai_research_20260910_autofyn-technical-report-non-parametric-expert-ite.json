@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-004",
+  "title": "AutoFyn Technical Report: Non-Parametric Expert Iteration for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2609.05446",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoFyn 是一份技术报告，提出了一种名为“非参数专家迭代”（Non-Parametric Expert Iteration）的智能体框架，旨在解决长时程（long-horizon）任务中模型能力提升的问题。与传统微调不同，AutoFyn 不更新模型权重，而是通过持久化状态（如记忆文件、报告、仓库状态）来积累经验，每一轮从全新的模型会话开始，仅通过显式接口重新引入持久信息。框架内包含一个编排器（orchestrator）负责探索、规划和构建。该方法受专家迭代算法启发，利用已验证的奖励信号来更新持久状态，从而在冻结模型的情况下实现多轮迭代改进。这项工作的价值在于：它提供了一种无需重新训练即可让智能体在长时程任务中持续进化的新范式，降低了计算成本，同时增强了可解释性和可控性，对构建复杂、多步骤的自主智能体系统具有重要参考意义。",
+  "tags": [
+    "Agent",
+    "Long-Horizon",
+    "Expert Iteration",
+    "Non-Parametric",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:46:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过持久化状态而非权重更新来适应冻结模型，实现非参数化的专家迭代。",
+      "每轮从全新会话开始，仅通过显式接口（记忆文件、报告、仓库状态）传递信息，避免上下文污染。",
+      "编排器在单轮内负责探索、规划和构建，结合验证奖励信号更新持久状态。",
+      "为长时程智能体提供了一种可扩展、低成本且可解释的持续改进框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-124",
+  "title": "Support Topology and Gradient Mixing in Sinkhorn Layers",
+  "source_url": "https://arxiv.org/abs/2609.07954",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究稀疏 Sinkhorn 层中固定支撑图（support graph）对梯度传播的控制机制。Sinkhorn 层广泛用于最优传输、注意力机制和分布对齐等任务，其中稀疏支撑图用于限制 token 之间的传输以降低计算成本。作者提出了一个固定支撑演算（fixed-support calculus），证明每个行-列环（row-column cycle）会在列势扰动模常数空间上诱导一个行随机算子，其转置则传播零质量的反向模式余切（cotangents）。该有限环算子使用两种不同的半步传输方案，从而揭示了支撑图拓扑如何决定梯度的流动路径与混合行为。这项工作为理解和设计稀疏 Sinkhorn 层提供了理论工具，有助于在保持稀疏性的同时控制梯度消失或爆炸问题，对最优传输与深度学习交叉领域的研究者和开发者具有参考价值。",
+  "tags": [
+    "Sinkhorn",
+    "Optimal Transport",
+    "Gradient Propagation",
+    "Sparse Layers"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定支撑图中的每个行-列环诱导一个行随机算子，控制列势扰动的传播。",
+      "该算子的转置负责传播零质量的反向模式余切，决定了梯度的反向流动。",
+      "有限环算子采用两种不同的半步传输方案，影响梯度混合的具体形式。",
+      "支撑图拓扑直接决定了 Sinkhorn 层中梯度的传播路径与混合行为。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

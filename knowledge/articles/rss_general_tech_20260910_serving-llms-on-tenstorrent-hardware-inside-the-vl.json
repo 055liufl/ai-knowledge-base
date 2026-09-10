@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260910-009",
+  "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin",
+  "source_url": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了 vLLM 的 Tenstorrent 插件（TT Plugin），该插件使 vLLM 能够支持 Tenstorrent 的 AI 加速硬件（如 Grayskull、Wormhole 等）。vLLM 作为主流的高吞吐 LLM 推理引擎，此前主要支持 NVIDIA GPU 和部分其他后端。该插件通过实现 vLLM 的插件接口，将 Tenstorrent 的 TT-Metalium 和 TT-NN 软件栈集成到 vLLM 的调度与执行流程中，从而在非 NVIDIA 硬件上实现高效的 LLM 服务。文章可能涵盖架构设计、关键组件（如 KV 缓存管理、张量并行、批处理调度）以及性能基准。这一工作值得关注，因为它扩展了 LLM 推理的硬件选择，降低对单一供应商的依赖，并推动开放硬件生态在 AI 基础设施中的应用。对于关注异构计算、推理优化和成本控制的开发者与研究者具有参考价值。",
+  "tags": [
+    "vLLM",
+    "LLM推理",
+    "Tenstorrent",
+    "硬件加速",
+    "插件系统"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:15Z",
+  "collected_at": "2026-09-10T12:45:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM 通过插件机制支持 Tenstorrent 硬件，扩展了 LLM 推理的硬件生态，减少对 NVIDIA GPU 的依赖。",
+      "该插件需要集成 Tenstorrent 的 TT-Metalium 和 TT-NN 软件栈，涉及 KV 缓存、张量并行和批处理等核心推理组件的适配。",
+      "对于寻求成本优化或供应链多样化的团队，Tenstorrent 硬件可能成为替代方案，但需评估其性能与生态成熟度。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

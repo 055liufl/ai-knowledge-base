@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-007",
+  "title": "ARC-Bench: Closed-Loop Replanning Masks Broken Action Ranking in Frozen JEPA World Models",
+  "source_url": "https://arxiv.org/abs/2609.05461",
+  "source_platform": "rss_ai_research",
+  "summary": "ARC-Bench 是一项针对无奖励潜在世界模型（如 JEPA）中动作排序假设的系统性审计研究。这类模型通常通过比较预测未来嵌入与目标嵌入在冻结潜在空间中的距离来对候选动作打分，隐含假设潜在距离的排序与真实代价排序一致。作者提出 ARC-Bench，一个无泄漏、固定候选集的闭环重规划协议，直接检验该假设。研究发现，闭环重规划会掩盖动作排序的失效：即使潜在距离无法正确排序动作，反复重规划仍可能产生看似合理的轨迹，从而掩盖底层排序错误。该工作对基于 JEPA 等潜在世界模型的规划与决策系统提出了重要警示，指出仅凭任务成功率评估可能高估模型的动作评估能力。对于研究世界模型、基于模型的强化学习与机器人规划的学者和开发者，ARC-Bench 提供了更严格的诊断工具与评估视角，有助于推动更可靠的潜在空间规划方法。",
+  "tags": [
+    "World Model",
+    "JEPA",
+    "Planning",
+    "Benchmark",
+    "Model-Based RL"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:46:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无奖励潜在世界模型隐含假设潜在距离可对动作正确排序，但该假设在闭环重规划下可能失效。",
+      "闭环重规划会掩盖动作排序错误，使基于任务成功率的评估产生误导性乐观结论。",
+      "ARC-Bench 提供无泄漏、固定候选集的诊断协议，可更严格地审计潜在空间动作评估能力。",
+      "该研究提示需重新审视 JEPA 等世界模型在规划中的可靠性，并开发更鲁棒的评估与训练方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

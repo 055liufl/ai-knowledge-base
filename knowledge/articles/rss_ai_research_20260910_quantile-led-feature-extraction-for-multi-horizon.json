@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-101",
+  "title": "Quantile-Led Feature Extraction for Multi-Horizon Predictive Maintenance in Industrial Manufacturing Systems",
+  "source_url": "https://arxiv.org/abs/2609.07533",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于分位数的特征提取框架，用于工业制造系统中的多时间跨度预测性维护（PdM）。传统方法通常将特征提取视为固定的预处理步骤，一旦选定描述符集便在下游模型或预测跨度变化时重复使用，这限制了模型对不同预测任务的适应性。该研究将表示学习阶段独立出来，设计了一个双阶段 MLP-QRNN 层次结构：第一阶段 QRNN1 为每个传感器通道学习广泛的十分位条件分布，从而捕获传感器信号的完整概率特征；第二阶段则在此基础上进行进一步的特征精炼与提取。该方法的核心创新在于将分位数回归嵌入特征提取过程，使提取的特征能够自适应地服务于不同预测跨度，而非固定不变。这对于工业制造场景中设备故障预测的鲁棒性和泛化能力具有重要意义，因为实际生产中往往需要同时预测多个时间尺度上的维护需求。该工作为预测性维护领域的表示学习提供了新思路，有望提升多任务、多跨度场景下的预测精度与效率。",
+  "tags": [
+    "Predictive Maintenance",
+    "Feature Extraction",
+    "Quantile Regression",
+    "Industrial AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:50:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统预测性维护将特征提取视为固定预处理，无法适应下游模型或预测跨度的变化，本文将其解耦为独立的表示学习阶段。",
+      "提出双阶段 MLP-QRNN 层次结构，QRNN1 学习每个传感器通道的十分位条件分布，以概率方式捕获信号特征。",
+      "分位数引导的特征提取使表示能够自适应多时间跨度预测任务，提升工业制造场景下的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-024",
+  "title": "Beyond Prompts: Measuring and Optimizing LLM Tool-Agent Harnesses",
+  "source_url": "https://arxiv.org/abs/2609.05736",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究在不重新训练模型的前提下，通过修改运行时 harness（提示词、工具接口、中间件、状态处理与恢复逻辑）来提升 LLM 工具智能体的性能。作者将这一问题形式化为固定模型多轮工具智能体的资源受限 harness 选择问题，并将搜索空间限定在提示词与工具边界中间件上——即编辑被限制为工具边界处的受保护拦截，而非对智能体执行逻辑的任意重写。该工作值得关注的原因在于：当前多数智能体性能提升依赖模型微调或大规模重训，成本高昂且难以快速迭代；而 harness 层面的优化提供了一条低成本、可复用、与模型解耦的改进路径。论文提出的测量与优化框架有助于系统性地理解提示词、工具接口设计、中间件拦截等工程因素对多轮工具调用任务的实际贡献，为构建更可靠的智能体运行时提供了方法论基础，对智能体工程化落地具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "LLM",
+    "Prompt Engineering",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定模型下，智能体性能提升可来自运行时 harness 优化而非模型重训，提示词与工具边界中间件是关键可调面。",
+      "将 harness 选择形式化为资源受限搜索问题，为智能体工程优化提供了可量化、可比较的框架。",
+      "限制编辑为工具边界的受保护拦截，避免了任意重写执行逻辑带来的不可控性与安全风险。",
+      "该方向有助于降低智能体迭代成本，推动模型能力与工程 harness 的解耦式优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

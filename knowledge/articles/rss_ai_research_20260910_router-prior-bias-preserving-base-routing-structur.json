@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-138",
+  "title": "Router Prior Bias: Preserving Base Routing Structure in MoE Post-Training",
+  "source_url": "https://arxiv.org/abs/2609.08115",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对混合专家（MoE）模型在后训练阶段的路由结构问题提出了新的见解。MoE 预训练通常依赖辅助负载均衡损失（LBL）来促使专家利用率趋于均匀，但后训练阶段面临不同情况：基础路由器已经编码了非均匀的专家共激活结构，而重新施加均匀性目标会将其抹平。作者提出“软路由器锚定”（soft router anchoring）原则，即在下游任务中应软性地保持继承的路由结构，而非强制均匀化。实验表明，下游性能取决于对这种继承路由的保持程度。该工作揭示了 MoE 后训练中路由先验偏差的重要性，为优化 MoE 微调策略提供了新方向，对大规模稀疏模型的高效适配具有实用价值。",
+  "tags": [
+    "MoE",
+    "Post-Training",
+    "Router",
+    "Load Balancing"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 预训练中的负载均衡损失会导致专家利用率均匀化，但后训练阶段继承的路由结构是非均匀的，强制均匀会损害下游性能。",
+      "提出“软路由器锚定”原则，主张在后训练中软性保持基础路由器的专家共激活结构，而非重新施加均匀性约束。",
+      "下游性能与继承路由结构的保持程度相关，表明路由先验偏差是 MoE 后训练中一个被忽视的关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

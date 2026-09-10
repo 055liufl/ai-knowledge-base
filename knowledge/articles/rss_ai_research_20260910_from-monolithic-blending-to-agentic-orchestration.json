@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-026",
+  "title": "From Monolithic Blending to Agentic Orchestration: Dynamic Response for Conversational Assistants at Scale",
+  "source_url": "https://arxiv.org/abs/2609.05758",
+  "source_platform": "rss_ai_research",
+  "summary": "本文报告了一个大型住宿市场客户支持助手从单体混合式响应器向智能体编排架构迁移的生产实践。原系统使用单个 Qwen3-235B-A22B 模型在一条模型路径中同时完成检索、动作选择、升级和措辞生成，即“单体混合”（Monolithic Blending）。新架构 Dynamic Response（DR）则采用有界 ReAct 编排器，将上述职责分离到类型化工具（typed tools）和一个较小的生成模型上。该系统每月处理数百万次对话，支持 11 种语言，P90 延迟约 10 秒。文章的核心价值在于：它并非实验室原型，而是真实生产环境的迁移案例，揭示了在超大规模、多语言、低延迟约束下，单体大模型方案与智能体编排方案之间的工程权衡。对于正在构建或优化对话式 AI 系统的团队而言，该工作提供了关于职责分离、工具调用边界、模型规模与延迟控制之间平衡的一手经验，是 LLM 应用从“单模型包办”走向“编排+专用组件”这一行业趋势的重要实证。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Orchestration",
+    "Conversational AI",
+    "Production"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单体混合式响应器将检索、动作选择、升级和措辞压缩在一条模型路径中，虽简化了架构，但在大规模多语言场景下难以灵活优化各子任务。",
+      "Dynamic Response 用有界 ReAct 编排器加类型化工具替代单个 235B 模型，通过职责分离实现更可控的响应生成与升级决策。",
+      "该迁移在每月数百万对话、11 种语言、P90 约 10 秒的真实生产约束下完成，证明智能体编排架构在超大规模客服场景中具备可行性。",
+      "从单体大模型到编排+小模型的转变，反映了 LLM 应用架构从“模型包办一切”向“模型作为组件”演进的行业趋势。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-005",
+  "title": "Damage-Aware Bandit Pruning for Vision and Language Transformers",
+  "source_url": "https://arxiv.org/abs/2609.05448",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向视觉和语言Transformer的结构化后训练剪枝方法，将结构化单元（如注意力头、MLP通道组）的选择建模为损伤感知的多臂老虎机问题。在固定候选评估预算下，方法通过在校准批次上临时掩码候选单元，计算配对损伤（掩码损失减去基础损失）来评估每个单元的重要性，从而在有限评估次数内高效识别可安全剪枝的功能单元。该工作值得关注，因为它将剪枝问题转化为序贯决策问题，利用bandit算法平衡探索与利用，有望在保持模型性能的同时显著降低计算开销，为Transformer压缩提供了新思路。",
+  "tags": [
+    "Transformer",
+    "Pruning",
+    "Bandit",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:46:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将结构化剪枝的单元选择建模为损伤感知多臂老虎机问题，在固定评估预算下优化选择策略。",
+      "通过在校准批次上临时掩码注意力头和MLP通道组，计算配对损伤作为单元重要性的度量。",
+      "方法同时适用于语言和视觉Transformer，具有跨模态的通用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

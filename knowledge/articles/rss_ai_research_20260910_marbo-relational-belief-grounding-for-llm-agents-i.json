@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-061",
+  "title": "MARBO: Relational Belief Grounding for LLM Agents in Social Deduction Games",
+  "source_url": "https://arxiv.org/abs/2609.06563",
+  "source_platform": "rss_ai_research",
+  "summary": "MARBO 提出了一种面向社交推理游戏（Social Deduction Games, SDGs）中 LLM 智能体的关系信念接地（Relational Belief Grounding）方法。社交推理游戏要求智能体在部分可观测条件下，对隐藏身份和阵营归属维持关系性信念并进行推理。现有 LLM 智能体方法多依赖提示工程和偏好优化来提升游戏表现，但往往直接优化动作和游戏内发言，而未能将这些行为显式地建立在对隐藏角色与队伍关系的信念之上，导致策略不一致，这一问题在参数量较小的紧凑型 LLM 智能体上尤为突出。MARBO 的核心思路是让智能体显式维护并更新关于其他玩家角色与阵营的关系信念，并将动作选择与发言生成接地到这些信念之上，从而提升策略一致性与推理可靠性。该工作值得关注，因为它触及 LLM 智能体在部分可观测、多智能体对抗环境中的核心难题——如何在信息不完整时维持并利用结构化信念进行决策，这对多智能体博弈、社交推理、以及更广泛的交互式智能体研究具有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Multi-Agent",
+    "Social Deduction",
+    "Belief Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:48:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 智能体在社交推理游戏中常直接优化动作与发言，缺乏对隐藏角色和阵营关系的显式信念建模，导致策略不一致。",
+      "MARBO 通过关系信念接地，将动作与发言建立在显式维护的信念状态之上，提升策略一致性。",
+      "该方法对紧凑型 LLM 智能体尤为重要，因为小模型更依赖结构化信念来弥补推理能力不足。",
+      "该研究为部分可观测多智能体环境下的 LLM 智能体信念推理提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-085",
+  "title": "Encoded Early, Used Late: Where Transformers Begin to Act on an Inferred Partner's Expertise",
+  "source_url": "https://arxiv.org/abs/2609.07139",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了Transformer模型在对话中如何推断对话伙伴的专业水平，并分析了信息在残差流中可线性解码的深度与实际影响输出的深度之间的差距。作者构建了ExpertCollab语料库，包含多轮对话，其中对话伙伴的专业水平需要模型逐步推断。研究发现，模型在较早的层就能线性解码出伙伴的专业水平，但直到较晚的层才利用该信息影响输出，表明存在“早编码、晚使用”的现象。这一发现对于理解Transformer的内部信息处理机制、提升对话系统的适应性和可解释性具有重要意义，也为模型编辑和干预提供了新视角。",
+  "tags": [
+    "Transformer",
+    "Interpretability",
+    "Dialogue",
+    "Residual Stream"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:50:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer在残差流中较早层即可线性解码出对话伙伴的专业水平，但该信息直到较晚层才影响输出。",
+      "这种“早编码、晚使用”的差距不仅存在于直接输入的属性，也存在于需要逐步推断的对话属性中。",
+      "研究构建了ExpertCollab语料库，为分析对话中的动态属性推断提供了新资源。",
+      "该发现有助于理解模型内部信息处理时序，并为模型干预和可解释性研究提供依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

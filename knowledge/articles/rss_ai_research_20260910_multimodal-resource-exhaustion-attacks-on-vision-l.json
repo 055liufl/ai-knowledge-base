@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-038",
+  "title": "Multimodal Resource-Exhaustion Attacks on Vision-Language Models via Joint Pixel-Prompt Optimization",
+  "source_url": "https://arxiv.org/abs/2609.05889",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对自回归视觉语言模型（VLM）的多模态资源耗尽攻击方法，通过联合优化像素与提示词两个输入通道来最大化模型的计算资源消耗。传统资源耗尽攻击通常假设单模态威胁模型，仅将图像分支作为主要优化面，而保持用户可见提示固定。即使是近期以循环为中心的攻击变体也仍局限于这种单通道范式，未能将可用性攻击视为跨模态联合优化问题。该研究首次将资源耗尽攻击形式化为在图像像素和文本提示两个可控输入表面上的联合优化问题，通过协同扰动图像和提示词，诱导VLM产生异常长的生成序列或高计算负载，从而造成服务拒绝或资源耗尽。这项工作值得关注，因为它揭示了VLM在跨模态输入组合下的新型安全漏洞，对多模态AI系统的部署安全、服务可用性防护以及鲁棒性评估具有重要警示意义，并为后续防御策略研究提供了新的攻击基准。",
+  "tags": [
+    "VLM",
+    "Adversarial Attack",
+    "Multimodal",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将VLM资源耗尽攻击建模为像素与提示词的联合跨模态优化问题，突破了传统单模态威胁模型的局限。",
+      "联合优化图像和文本输入可显著提升攻击效果，表明多模态系统的可用性安全需要跨通道协同防御。",
+      "该攻击对自回归VLM的生成过程造成资源耗尽，可能导致服务拒绝，对实际部署构成现实威胁。",
+      "研究为多模态AI系统的鲁棒性评估和防御机制设计提供了新的攻击基准与思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

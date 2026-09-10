@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-119",
+  "title": "Quantization Amplifies Determinism, Not Bias: Scale-Dependent Behavioral Effects of Serving-Time Weight Compression",
+  "source_url": "https://arxiv.org/abs/2609.07901",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了权重量化对开放权重LLM在服务时行为的影响，而非传统的能力基准。作者在Qwen3-8B/14B/32B三个模型上，使用W4A16 AWQ、W8A16 FP8-Marlin和BF16三种精度进行服务，并考察当多个答案均有效时，量化是否改变模型的输出选择。核心发现是：量化主要放大了输出的确定性（即模型更倾向于重复相同的答案），而非引入系统性偏差；这种效应具有规模依赖性，不同模型规模下表现不同。该工作值得关注，因为它揭示了量化在降低服务成本的同时，可能以微妙方式改变模型行为，而传统能力基准无法捕捉这些变化，对LLM部署的可靠性和多样性有重要启示。",
+  "tags": [
+    "Quantization",
+    "LLM Serving",
+    "Model Behavior",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:51:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化主要增加模型输出的确定性，而非引入系统性偏差。",
+      "量化对模型行为的影响具有规模依赖性，不同模型规模下效应不同。",
+      "传统能力基准无法捕捉量化在多个有效答案场景下的行为变化。",
+      "服务时权重压缩可能以牺牲输出多样性为代价来降低计算成本。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

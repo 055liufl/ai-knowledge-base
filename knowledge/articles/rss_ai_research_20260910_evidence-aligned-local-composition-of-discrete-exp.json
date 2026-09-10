@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-032",
+  "title": "Evidence-Aligned Local Composition of Discrete Experts for Sequence Restoration",
+  "source_url": "https://arxiv.org/abs/2609.05801",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向离散序列恢复任务的证据对齐局部专家组合方法。研究将文档建模为来自不同领域文本的组合序列，例如 README 文件常混合散文、代码与配置内容。当此类文档被损坏且仅有冻结的领域专家模型可用时，恢复任务面临双重挑战：既要判断缺失内容，又要在测试阶段、无区域标签、无训练路由器的条件下决定每个位置应信任哪个专家。论文的核心贡献在于提出一种证据对齐的局部组合机制，通过利用可观测证据动态选择或加权专家输出，从而在无需额外训练路由器的前提下实现序列恢复。该方法值得关注的原因在于：它避免了传统混合专家模型对路由器的依赖，降低了训练成本与部署复杂度；同时针对真实场景中常见的混合领域文档损坏问题提供了实用解决方案。其技术思路对序列级生成、文档修复、代码补全等任务具有潜在启发意义，也为冻结专家模型的高效复用提供了新范式。",
+  "tags": [
+    "Mixture of Experts",
+    "Sequence Restoration",
+    "Document Repair",
+    "Frozen Experts"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "文档可视为多领域文本的离散组合，恢复时需同时推断缺失内容与专家可信度",
+      "在无区域标签和训练路由器的条件下，利用证据对齐实现测试时局部专家组合",
+      "冻结专家模型的高效复用为序列恢复提供了无需额外训练的新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

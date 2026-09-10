@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-037",
+  "title": "AgentBrew: Offline Tool-Use Agent Learning from Raw Real-World Trajectories",
+  "source_url": "https://arxiv.org/abs/2609.05837",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentBrew 是一个面向工具调用型 LLM Agent 的离线训练框架，旨在解决真实世界环境中训练 Agent 的核心难题：真实应用通常不提供预定义任务、验证器或高保真模拟器，且大规模环境交互的成本高昂。该工作提出从原始真实世界轨迹中直接学习有效的工具使用策略，而无需依赖任务标注、奖励模型或仿真环境。这一思路对 Agent 训练范式具有重要意义，因为它绕开了传统强化学习对可验证奖励和交互预算的强依赖，使 Agent 能够从已有的真实操作日志中持续改进。对于希望将 Agent 落地到具体业务系统（如企业内部 API、SaaS 工具链）的团队而言，AgentBrew 提供了一条低成本、可扩展的路径。其核心价值在于把'真实轨迹'转化为训练信号，降低了对人工构造任务和模拟器的依赖，有望推动工具调用 Agent 从实验室基准走向真实生产环境。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Offline RL",
+    "LLM Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实世界应用缺乏预定义任务、验证器和忠实模拟器，是工具调用 Agent 训练的核心瓶颈",
+      "AgentBrew 提出从原始真实轨迹中离线学习工具使用策略，无需任务标注或环境交互预算",
+      "该框架有望降低 Agent 在特定业务环境中落地的数据与算力门槛",
+      "离线轨迹学习为 Agent 训练提供了区别于在线 RL 和仿真训练的新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

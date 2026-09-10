@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-134",
+  "title": "Inference-Time Nash Alignment",
+  "source_url": "https://arxiv.org/abs/2609.08082",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Inference-Time Nash Alignment（推理时纳什对齐）的新方法，旨在解决现有推理时对齐技术依赖 Bradley-Terry 假设下标量奖励模型的局限性。传统基于偏好的微调方法（如 RLHF 和 DPO）需要大量计算资源和偏好数据集，并且必须直接访问模型参数，而许多最先进的模型并不提供这种访问权限。推理时对齐作为一种无需更新模型参数的低成本替代方案，近年来受到关注，但现有方法通常使用标量奖励模型，无法充分捕捉人类偏好的复杂性和多样性。该研究引入纳什均衡的概念，在推理阶段通过博弈论框架对多个偏好维度或奖励信号进行对齐，从而在不修改模型参数的情况下实现更稳健、更符合人类偏好的生成。这项工作值得关注，因为它为无法获取模型权重的闭源模型提供了一种高效的对齐途径，同时通过纳什均衡理论提升了推理时对齐的表达能力和鲁棒性，有望推动对齐技术在实际部署中的广泛应用。",
+  "tags": [
+    "Alignment",
+    "Inference-Time",
+    "Game Theory",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有推理时对齐方法依赖 Bradley-Terry 标量奖励模型，无法充分表达复杂的人类偏好。",
+      "提出基于纳什均衡的推理时对齐框架，无需访问模型参数即可实现更稳健的对齐。",
+      "该方法为闭源或不可微模型提供了一种低成本、高效的对齐替代方案。",
+      "将博弈论引入推理时对齐，可能推动对齐技术从单一标量奖励向多维度偏好建模发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

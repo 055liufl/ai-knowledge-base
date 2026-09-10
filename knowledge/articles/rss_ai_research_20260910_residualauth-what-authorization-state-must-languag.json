@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-132",
+  "title": "ResidualAuth: What Authorization State Must Language Agents Preserve under Revocable Delegation?",
+  "source_url": "https://arxiv.org/abs/2609.08062",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ResidualAuth 框架，研究语言智能体在可撤销委托场景下必须保留的授权状态。作者发现，两个授权历史即使当前权限集和所有节点对之间的可达性完全相同，在同一条直接边被撤销后仍可能产生相反的决策结果。为刻画这种差异，论文形式化了“残余授权状态”（residual authorization state）这一概念，并证明指数级数量的未来可区分状态可能被压缩到相同的当前权限快照中。该工作揭示了现有基于当前权限或可达性的授权检查机制的根本缺陷：它们无法区分历史委托路径，从而在撤销操作后导致错误授权。对于构建安全、可审计的多智能体工具调用系统，这一发现具有重要理论和实践意义，提示需要保留更细粒度的委托历史信息。",
+  "tags": [
+    "Agent",
+    "Authorization",
+    "Security",
+    "Delegation",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:52:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前权限和可达性相同的两个授权历史，在同一条边撤销后可能产生相反决策，说明仅靠快照无法保证撤销正确性。",
+      "残余授权状态是保留未来可区分性所需的最小信息，其规模可能随委托深度指数增长。",
+      "现有语言智能体授权机制若忽略委托历史，将在可撤销委托场景下产生严重安全漏洞。",
+      "该工作为设计安全的多智能体工具调用协议提供了形式化基础，需在状态表示与效率之间权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

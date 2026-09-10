@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260910-035",
+  "title": "Beyond Top-$k$ Skill Retrieval: Diversity-Aware Skill Routing for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.05824",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Diverse Skill Routing (DSR)，一种面向 LLM Agent 的多样性感知技能路由重排序框架。随着 LLM Agent 越来越多地依赖外部技能库，如何从大规模技能注册表中为用户请求选择合适的技能成为关键问题。现有技能路由器通常按查询相关性独立地对候选技能排序，这会导致两个问题：一是许多技能在功能上高度冗余，浪费上下文预算；二是复杂任务往往需要互补的技能组合，而非单一最相关技能。DSR 通过引入多样性感知的重排序机制，在保证相关性的同时减少技能冗余，从而更高效地利用上下文窗口并提升复杂任务的完成质量。该工作针对的是 Agent 工具调用与技能检索中的实际痛点，对构建可扩展的 Agent 系统具有参考价值，尤其适用于技能库规模庞大、技能重叠严重的场景。",
+  "tags": [
+    "Agent",
+    "Skill Retrieval",
+    "Reranking",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:47:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有技能路由器按查询相关性独立排序，容易选中功能冗余的技能，浪费上下文预算",
+      "复杂任务通常需要互补技能组合，而非单一最相关技能，多样性应成为路由的核心目标",
+      "DSR 通过多样性感知重排序在相关性与多样性之间取得平衡，提升 Agent 技能调用效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

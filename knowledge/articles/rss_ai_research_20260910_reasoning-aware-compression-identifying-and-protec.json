@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-012",
+  "title": "Reasoning-Aware Compression: Identifying and Protecting Vulnerable Reasoning Circuits for Energy-Efficient LLM Deployment",
+  "source_url": "https://arxiv.org/abs/2609.05512",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向大型推理模型（LRM）的推理感知压缩框架，旨在解决当前统一量化方法在压缩过程中可能损害关键推理电路的问题。研究在 GSM8K、FOLIO、MATH-500、ProofWriter 和 MuSiQue 五个推理基准上，结合硬件级 GPU 能耗测量，对量化条件进行了系统评估，并逐模块分析推理电路中的脆弱环节。核心贡献在于识别出对推理能力至关重要的模块，并针对性地保护这些脆弱电路，从而在压缩模型、降低能耗的同时维持推理性能。该工作对于推动 LLM 在资源受限环境下的高效部署具有重要价值，尤其为推理密集型应用提供了兼顾能效与准确性的压缩新思路。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "模型压缩",
+    "量化",
+    "能效"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:46:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一量化会损害大型推理模型中的关键推理电路，导致推理能力下降。",
+      "通过逐模块分析可识别对推理至关重要的脆弱模块，并实施差异化保护。",
+      "结合硬件级 GPU 能耗测量，推理感知压缩能在保持推理性能的同时显著降低能耗。",
+      "在多个推理基准上的实验表明，该方法优于传统均匀量化策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

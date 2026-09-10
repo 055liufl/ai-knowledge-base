@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-091",
+  "title": "Distance-Aware Attention and Wall-Distance Expert Routing for Transformer-Based 3D Flow Prediction",
+  "source_url": "https://arxiv.org/abs/2609.07222",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向三维流场预测的 Transformer 代理模型改进方法，核心在于将预测点与壁面的物理距离信息注入到注意力和前馈网络中。传统 Transformer 代理模型将工业网格压缩为少量 token，预测点从这些 token 中检索信息，但检索和变换过程均忽略了预测点在流场中的空间位置，尤其是与壁面的距离这一关键物理量。作者提出距离感知注意力（Distance-Aware Attention）和壁面距离专家路由（Wall-Distance Expert Routing），使模型能够根据点与壁面的距离动态调整信息聚合方式和前馈变换。该方法有望提升近壁面区域流场预测的精度，对工业 CFD 代理建模、气动设计优化等场景具有实用价值，也为物理信息与 Transformer 架构的融合提供了新思路。",
+  "tags": [
+    "Transformer",
+    "CFD",
+    "3D Flow Prediction",
+    "Physics-Informed ML",
+    "Surrogate Model"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:50:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Transformer 流场代理模型在信息检索和前馈变换中忽略了预测点的壁面距离等物理位置信息，导致近壁面预测精度受限。",
+      "通过距离感知注意力机制，模型可根据点与壁面的距离动态调整 token 聚合权重，实现物理自适应的信息检索。",
+      "壁面距离专家路由让前馈层根据距离选择不同的专家网络，增强模型对边界层等复杂流动区域的表达能力。",
+      "该方法为将物理先验（如壁面距离）嵌入 Transformer 架构提供了可复用的设计范式，有望推广至其他物理场预测任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-121",
+  "title": "FrogNano: Training a 4B Coding Agent via Online Task Synthesis",
+  "source_url": "https://arxiv.org/abs/2609.07925",
+  "source_platform": "rss_ai_research",
+  "summary": "FrogNano 是一个参数量仅 4B 的编码智能体（coding agent），旨在资源受限环境下高效完成软件工程（SWE）任务。其核心创新在于完全通过强化学习（RL）进行后训练，训练数据来自约 1,500 个 SWE 环境中的合成任务，而非依赖大规模人工标注数据。最关键的技术是「在线任务合成」（online task synthesis）流水线：它能够根据当前模型检查点的能力边界，动态生成难度恰好处于「可学习前沿」（frontier of learnability）的任务，从而持续提供有效训练信号，避免任务过难或过易导致的训练低效。这项工作值得关注的原因有三：第一，它证明了小参数模型（4B）在特定垂直领域（代码/SWE）通过精心设计的 RL 训练也能达到实用水平，挑战了「大模型才能做 Agent」的惯性认知；第二，在线任务合成提供了一种可扩展、低成本的数据生成范式，有望缓解 Agent 训练中高质量交互数据稀缺的瓶颈；第三，它面向资源受限场景，对边缘部署、低成本研发团队具有现实意义。该报告为技术报告性质，重点展示了训练方法与初步结果，为后续小模型 Agent 研究提供了可复现的参考",
+  "tags": [
+    "Agent",
+    "RL",
+    "Code Generation",
+    "Small Language Model",
+    "Data Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:51:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线任务合成根据当前检查点的学习前沿动态校准任务难度，是提升 RL 训练效率的关键机制",
+      "仅 4B 参数的小模型通过纯 RL 后训练即可在 SWE 任务上取得有效表现，验证了小模型 Agent 的可行性",
+      "约 1,500 个合成 SWE 环境即可支撑训练，表明高质量合成数据可显著降低对人工标注的依赖",
+      "面向资源受限环境的设计思路，为低成本、可部署的垂直领域 Agent 提供了新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

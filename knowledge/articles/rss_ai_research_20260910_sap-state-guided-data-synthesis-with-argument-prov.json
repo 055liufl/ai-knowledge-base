@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260910-048",
+  "title": "SAP: State-Guided Data Synthesis with Argument Provenance for Multi-Turn Tool Use",
+  "source_url": "https://arxiv.org/abs/2609.06124",
+  "source_platform": "rss_ai_research",
+  "summary": "SAP（State-Guided Data Synthesis with Argument Provenance）是一篇针对多轮工具使用（multi-turn tool use）数据合成的新方法论文。现有数据合成方法往往忽视工具参数级别的依赖关系，导致模型即使选对了工具，也会因为参数值捏造、过时或缺乏依据而执行失败。SAP 提出以状态引导的方式合成数据，并显式追踪参数来源（argument provenance），从而提升长程工具调用任务的数据质量。该工作对训练更可靠的 agentic 模型具有直接价值，尤其适用于需要多步工具编排、参数依赖复杂的场景。其核心贡献在于将数据合成的关注点从工具选择扩展到参数级 grounding，弥补了当前训练数据的关键短板。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Data Synthesis",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:48:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有多轮工具使用数据合成方法普遍低估参数级依赖，导致模型选对工具仍执行失败。",
+      "SAP 通过状态引导合成与参数来源追踪，提升工具参数值的可靠性与可追溯性。",
+      "参数级 grounding 是长程工具调用任务中此前被忽视但至关重要的训练信号。",
+      "该方法有望提升 agentic 模型在多步、依赖复杂场景下的端到端执行成功率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

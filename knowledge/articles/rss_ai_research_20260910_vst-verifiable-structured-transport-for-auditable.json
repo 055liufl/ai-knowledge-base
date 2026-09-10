@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260910-080",
+  "title": "VST: Verifiable Structured Transport for Auditable Agent-to-Agent Alpha Discovery",
+  "source_url": "https://arxiv.org/abs/2609.07065",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 VST（Verifiable Structured Transport），一种面向 Agent-to-Agent（A2A）Alpha 发现场景的可验证结构化传输协议。当前基于 LLM 的多智能体系统中，挖掘代理与评估代理之间的交接普遍采用自由形式的自然语言消息，缺乏稳定契约、无法重放、难以审计，导致反复的反馈循环严重拖慢 Alpha 发现效率。VST 的核心思路是将这种通信重构为「类型化、可因果寻址、单播记录」的结构化 A2A 协议，使已提交的消息流形成一条因果轨迹（causal trajectory），从而支持可验证性、可重放性与可审计性。该工作值得关注的原因在于：它把多智能体协作中常被忽视的通信层作为一等公民来设计，试图用协议化的方式解决 LLM 智能体之间信息交换不可靠、不可追溯的痛点。这对于金融量化中的 Alpha 挖掘、需要合规审计的自动化决策流水线，以及任何要求多智能体协作结果可复现的场景都具有直接价值。VST 将「可验证性」引入 A2A 通信，可能成为构建可信多智能体系统的重要基础设施方向。",
+  "tags": [
+    "Multi-Agent",
+    "Agent Protocol",
+    "LLM",
+    "Verifiability",
+    "Alpha Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-09-10T12:44:16Z",
+  "collected_at": "2026-09-10T12:49:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 LLM 多智能体系统的 A2A 交接依赖自由形式自然语言，缺乏稳定契约、不可重放、难以审计，是 Alpha 发现效率低下的关键瓶颈。",
+      "VST 将 A2A 通信重构为类型化、可因果寻址、单播的结构化记录协议，使提交的消息流形成可验证的因果轨迹。",
+      "结构化与可重放性为多智能体协作带来可审计性，对金融 Alpha 挖掘等需要合规与复现的场景尤为重要。",
+      "该工作把通信协议层视为多智能体系统的核心基础设施，而非附属细节，为可信 A2A 协作提供了新范式。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
