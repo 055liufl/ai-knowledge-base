@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-037",
+  "title": "OntologyAligner: Ontology-Aligned Retrieval and Hierarchy-Guided Large Language Model Reranking for Biomedical Ontology Normalization",
+  "source_url": "https://arxiv.org/abs/2609.10055",
+  "source_platform": "rss_ai_research",
+  "summary": "OntologyAligner 是一个面向生物医学本体归一化任务的三阶段框架，旨在将自由文本表达映射到标准化概念，从而支持生物医学数据的一致集成与分析。该任务的核心挑战在于词汇表达的多样性以及层级相关概念之间的细微差异，这些因素会模糊概念边界，导致传统方法难以准确匹配。OntologyAligner 通过结合本体对齐检索、大语言模型候选重排序以及选择性策略来应对这些问题：首先利用本体结构信息进行对齐检索以缩小候选范围，然后借助大语言模型的语义理解能力对候选概念进行重排序，最后通过选择性机制提升整体精度。该工作值得关注的原因在于，它展示了将结构化本体知识与大语言模型推理能力相结合的有效范式，既缓解了纯检索方法对词汇变体不敏感的问题，也弥补了纯生成模型在细粒度概念区分上的不足。生物医学本体归一化是临床数据标准化、知识图谱构建和跨库数据整合的关键基础环节，因此该方法对生物医学信息学、医疗 NLP 以及知识工程领域具有较高的实用价值，也为其他领域中的层级化实体链接任务提供了可借鉴的思路。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Biomedical NLP",
+    "Ontology",
+    "Reranking"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将本体结构对齐信息引入检索阶段，可有效缩小生物医学概念候选空间并缓解词汇变体问题",
+      "利用大语言模型对候选概念进行重排序，能够捕捉层级相关概念间的细微语义差异",
+      "三阶段框架结合检索、重排序与选择性策略，为生物医学本体归一化提供了兼顾精度与效率的解决路径",
+      "该范式可推广至其他需要结构化知识约束的实体链接与概念标准化任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-017",
+  "title": "RobustSGPO: Search-Space Control for Agent Harness Evolution",
+  "source_url": "https://arxiv.org/abs/2609.09646",
+  "source_platform": "rss_ai_research",
+  "summary": "RobustSGPO 是一篇针对基于语义梯度的提示优化（SGPO）方法进行改进的学术论文，聚焦于智能体框架（agent harness）的自动化演化。SGPO 虽然能利用执行反馈来改进智能体框架，但其局部更新规则存在两个关键缺陷：一是编辑范围（edit scope）的选择不明确，二是具体编辑操作（operation）的决策未得到有效解决。RobustSGPO 通过显式指定所请求的编辑、构造并检查补丁（patch），并允许搜索从当前最优解或保留的快照继续推进，从而增强搜索过程的鲁棒性与可控性。论文在 AgentX brains 上评估了权限调度、累积控制以及任务族迁移等场景。该工作的价值在于将智能体框架的自动优化从模糊的局部更新提升为更系统化的搜索空间控制问题，为构建可自我改进的智能体系统提供了新思路，对关注 LLM 智能体自动化优化与提示工程的研究者和开发者具有参考意义。",
+  "tags": [
+    "Agent",
+    "Prompt Optimization",
+    "LLM",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SGPO 的局部更新规则在编辑范围和操作选择上存在未解决的模糊性，限制了智能体框架演化的效果。",
+      "RobustSGPO 通过显式指定编辑、构造并检查补丁，以及从当前最优或保留快照继续搜索，实现了更可控的搜索空间控制。",
+      "在 AgentX brains 上的评估涵盖了权限调度、累积控制和任务族迁移，表明该方法在多种场景下具有鲁棒性。",
+      "该工作将智能体框架的自动优化从启发式局部更新推进到更系统的搜索空间控制范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

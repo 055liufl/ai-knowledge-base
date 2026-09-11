@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-091",
+  "title": "Compact Visuotactile World Models for Lifting: Prediction, Reward Alignment, and Force Constraints",
+  "source_url": "https://arxiv.org/abs/2609.09597",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一个紧凑的视觉-触觉世界模型（652,157 参数），用于力约束下的提升任务。该模型以动作条件为输入，结合行为克隆、想象中策略学习、独立反应式隐式 Q 学习以及模型辅助力反馈。作者在 120 个全新 MuJoCo 环境（涵盖几何与物理参数变化）上执行了 34 个策略的固定协议，并进行了 324 次独立重放动作分支。核心发现是：准确的触觉预测并不必然改善力约束控制，揭示了预测精度与下游控制性能之间的解耦现象。该工作为机器人触觉世界模型的实际效用提供了严谨的实证评估，对力约束操作和基于模型的强化学习具有重要参考价值。",
+  "tags": [
+    "World Model",
+    "Visuotactile",
+    "Robot Learning",
+    "Force Control",
+    "Model-Based RL"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "准确的触觉预测并不必然带来更好的力约束控制性能，预测精度与控制效用之间存在解耦。",
+      "紧凑的 652K 参数世界模型即可在多样化 MuJoCo 环境中支持策略学习与力反馈。",
+      "通过大规模固定协议（34 策略 × 120 环境 + 324 重放分支）提供了可复现的实证基准。",
+      "模型辅助力反馈与独立反应式隐式 Q 学习的结合为力约束操作提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

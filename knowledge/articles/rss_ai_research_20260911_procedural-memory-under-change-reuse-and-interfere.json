@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-026",
+  "title": "Procedural Memory Under Change: Reuse and Interference in Controlled Web Tasks",
+  "source_url": "https://arxiv.org/abs/2609.09774",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究语言智能体（language agents）的程序性记忆（procedural memory）在环境变化下的复用与干扰问题。程序性记忆使智能体能够复用成功的操作例程，但这种复用预设了存储的例程仍然适用。作者通过两个实验场景故意打破这一预设：一是基于 BrowserGym TimeWarp 的回顾性、人工辅助的界面适配案例，二是在合成购物决策任务上进行的受控冻结记忆对比实验。研究记录了 WebShop V1-V6 开发路径中界面特定代码的演化过程，观察当界面发生变化时，智能体复用旧例程会带来怎样的性能影响和干扰效应。该工作值得关注，因为它揭示了当前智能体记忆机制的一个关键脆弱性：记忆复用并非总是增益，环境变化可能导致负迁移。这为构建更鲁棒、能感知环境变化的智能体记忆系统提供了实证基础和设计启示，对 Agent 记忆架构、持续学习与自适应系统研究具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Web Agent",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "程序性记忆的复用依赖于环境稳定性，当界面或任务环境发生变化时，旧例程可能产生干扰而非增益",
+      "通过 BrowserGym TimeWarp 和合成购物任务的双重实验设计，系统性地验证了记忆复用失效的条件",
+      "WebShop V1-V6 的开发路径表明，界面特定代码的演化会与冻结的旧记忆产生冲突",
+      "研究提示智能体记忆系统需要具备环境变化检测与记忆更新/遗忘机制，以避免负迁移"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

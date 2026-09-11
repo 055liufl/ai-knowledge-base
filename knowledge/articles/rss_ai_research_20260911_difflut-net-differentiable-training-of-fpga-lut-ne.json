@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-068",
+  "title": "DiffLUT-Net: Differentiable Training of FPGA LUT Networks with Learnable Connectivity",
+  "source_url": "https://arxiv.org/abs/2609.09254",
+  "source_platform": "rss_ai_research",
+  "summary": "DiffLUT-Net 提出了一种面向 FPGA 的原生神经网络训练方法，其核心创新在于将六输入查找表（LUT）的 64 个真值表条目与其六个输入端口的选择连接（connectivity）同时进行可微分学习。传统 FPGA 部署流程通常要么加速乘累加运算，要么将预训练量化模型转换为 LUT，而 DiffLUT-Net 则从零开始训练由 LUT 构成的网络，使网络结构与硬件原语直接对齐。该工作通过将 LUT 的真值表内容和输入路由都参数化为可微形式，实现了端到端的梯度训练，从而避免了先训练后转换带来的精度损失与结构约束。这一方法值得关注，因为它打通了神经网络训练与 FPGA 硬件映射之间的壁垒，有望在边缘推理、低延迟高能效场景中显著提升部署效率，并为硬件感知的神经网络设计提供新范式。",
+  "tags": [
+    "FPGA",
+    "LUT",
+    "可微分训练",
+    "硬件感知神经网络",
+    "边缘推理"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LUT 的真值表条目与输入连接选择联合参数化，实现从零开始的端到端可微分训练，而非先训练后转换。",
+      "网络直接由 FPGA 原生六输入 LUT 构成，消除了传统部署流程中量化与 LUT 映射带来的精度损失。",
+      "可学习连接性使网络能够自动发现适合硬件原语的稀疏路由结构，提升 FPGA 资源利用率。",
+      "该方法为硬件感知神经网络设计提供了新思路，有望推动边缘推理中低延迟、高能效的 FPGA 部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

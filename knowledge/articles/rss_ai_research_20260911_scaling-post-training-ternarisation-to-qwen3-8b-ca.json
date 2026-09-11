@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-061",
+  "title": "Scaling Post-Training Ternarisation to Qwen3-8B Capability Retention, Reproduction, Lossless Packing, and Packed Execution",
+  "source_url": "https://arxiv.org/abs/2609.09240",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究将一种激进的后训练三值化（ternarisation）流水线从 Qwen3-4B 扩展到 Qwen3-8B，旨在实现超低比特语言模型在存储和内存带宽上的显著节省。该流水线结合了 KOTMS 旋转、E2M-ATQ 自适应三值化以及 GPTQ 风格的误差补偿，采用仅权重的 A16 配置（激活保持 16 位）。作者强调，名义上的“1.58-bit”标签并不能说明实际部署表示及其执行成本，因此系统性地考察了能力保留、可复现性、无损打包以及打包执行等关键问题。该工作值得关注，因为它将后训练三值化从较小模型推进到 8B 规模，并首次系统性地处理了部署层面的打包与执行效率问题，为超低比特模型的实际落地提供了可复现的工程路径。尽管摘要未给出具体实验结果，但其对“1.58-bit”标签的批判性审视和对端到端部署链路的关注，对推动低比特量化从论文指标走向实际应用具有重要意义。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Post-Training",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "名义上的“1.58-bit”标签不足以描述实际部署表示和执行成本，需要明确打包格式与执行方案。",
+      "KOTMS 旋转、E2M-ATQ 自适应三值化和 GPTQ 风格误差补偿的组合可在 8B 规模上实现后训练三值化。",
+      "能力保留、可复现性、无损打包和打包执行是超低比特模型落地的四个关键工程维度。",
+      "该工作将三值化流水线从 4B 扩展到 8B，验证了方法在更大模型上的可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

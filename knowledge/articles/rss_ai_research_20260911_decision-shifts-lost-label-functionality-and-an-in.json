@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-022",
+  "title": "Decision Shifts, Lost Label Functionality, and an Inconclusive Grounding Audit in Correctness-Gated Multi-Teacher Distillation",
+  "source_url": "https://arxiv.org/abs/2609.09702",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究正确性门控的多教师蒸馏（correctness-gated multi-teacher distillation），核心发现是候选决策正确性与理由接地（rationale grounding）是两个不同目标。实验固定设置：8个实验组共享4330个源、6390万参数学生模型、12990条优化行、406次更新、证据输入和解码器；7个基于教师的实验组使用固定的三响应池；在267个保留样本上评估3个随机种子。相对于未过滤蒸馏，正确性门控导致决策偏移、标签功能丧失，且接地审计结果不确定。该研究揭示了多教师蒸馏中正确性过滤可能损害标签语义和理由接地，对知识蒸馏和模型对齐研究具有警示意义。",
+  "tags": [
+    "知识蒸馏",
+    "多教师蒸馏",
+    "模型对齐",
+    "可解释性"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "正确性门控与理由接地是不同目标，优化前者可能损害后者。",
+      "多教师蒸馏中，正确性过滤会导致决策偏移和标签功能丧失。",
+      "接地审计结果不确定，表明需要更稳健的评估方法。",
+      "固定实验设置下的负面结果对蒸馏实践具有重要警示作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

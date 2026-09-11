@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-071",
+  "title": "Improving 5G AI-RAN MCS Selection by Predicting Retransmissions",
+  "source_url": "https://arxiv.org/abs/2609.09324",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对5G NR链路自适应（Link Adaptation, LA）中调制编码方案（MCS）选择的问题，提出了一种基于AI-RAN的改进方法。传统LA机制本质上是反应式的，依赖信道测量和HARQ反馈，但在信道快速变化时这些信息会迅速过时，且测量数据噪声大、反馈环路效应难以排查，导致实际部署中往往只能采用简单但保守的算法，牺牲了频谱效率。论文的核心思路是通过预测重传（retransmissions）来提前调整MCS选择，从而减少因滞后导致的性能损失。该方法利用AI/机器学习模型对重传事件进行预测，使MCS决策从被动响应转向主动预判，有望在保持鲁棒性的同时提升吞吐量。这项工作值得关注，因为它将AI引入RAN底层实时控制环节，直面5G链路自适应中长期存在的反馈延迟与噪声难题，为AI-RAN的实用化提供了具体切入点，对5G-Advanced及6G的智能无线资源管理具有参考价值。",
+  "tags": [
+    "5G",
+    "AI-RAN",
+    "Link Adaptation",
+    "MCS",
+    "HARQ"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统5G链路自适应依赖过时且含噪的HARQ反馈，导致实际部署只能采用保守的MCS算法，频谱效率受损。",
+      "通过预测重传事件，可以将MCS选择从被动反应转变为主动预判，减少反馈滞后带来的性能损失。",
+      "AI-RAN框架为在实时控制环路中嵌入机器学习模型提供了可行路径，但需解决可解释性与环路稳定性问题。",
+      "该方向对5G-Advanced/6G的智能无线资源管理具有启发意义，但实际部署仍需验证模型泛化能力与计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

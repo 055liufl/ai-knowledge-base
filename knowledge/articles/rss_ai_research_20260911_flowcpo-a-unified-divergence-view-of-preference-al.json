@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-117",
+  "title": "FlowCPO: A Unified Divergence View of Preference Alignment for Flow Models",
+  "source_url": "https://arxiv.org/abs/2609.09905",
+  "source_platform": "rss_ai_research",
+  "summary": "FlowCPO 是一篇关于流模型（flow models）与扩散模型偏好对齐（preference alignment）的理论研究论文。当前，针对流/扩散模型的偏好对齐方法主要分为两大类：在线强化学习（online RL）和离线偏好优化（offline preference optimization）。然而，这两类方法之间的内在联系尚不清晰。具体而言，现有的前向过程对齐方法需要从当前模型实时采样，而基于固定偏好对的离线方法则主要依赖仅正样本微调（positive-only fine-tuning）或 DPO 风格的对数似然比代理目标。本文提出一个统一的散度视角（unified divergence view），将上述方法组织在一个共同框架下，揭示它们之间的理论关联。该工作值得关注，因为它有望统一在线与离线偏好对齐范式，为流模型和扩散模型的偏好优化提供更清晰的理论指导，并可能催生更高效、更稳定的对齐算法。",
+  "tags": [
+    "Diffusion",
+    "Flow Models",
+    "Preference Alignment",
+    "RLHF",
+    "DPO"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线强化学习与离线偏好优化在流/扩散模型对齐中可被统一到一个散度框架下理解。",
+      "现有前向过程方法依赖实时采样，而离线方法多基于固定偏好对，两者在样本效率与稳定性上存在权衡。",
+      "DPO 风格的对数似然比代理目标与仅正样本微调可视为统一散度视角下的特例。",
+      "该统一视角有望指导设计更高效、更稳定的流模型偏好对齐算法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

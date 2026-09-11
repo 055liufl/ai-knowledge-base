@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-081",
+  "title": "From Fixed Keys to Readable Schemas: Small Language Models for Vehicle Agent Function Calls",
+  "source_url": "https://arxiv.org/abs/2609.09476",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究车载智能助手在严格内存与延迟约束下，如何将自然语言请求准确转换为车辆功能调用，并探讨小型语言模型（SLM）在端侧部署中的可行性。核心问题是函数接口的呈现方式：一种是为每个功能分配专用的功能令牌（Functional Token, FT），另一种是直接在提示中提供函数模式（Schema）。作者对比了这两种设计选择对小型模型调用准确率与效率的影响，旨在找到在资源受限的车载环境中更优的函数调用表示方案。该研究值得关注，因为它触及了端侧 Agent 落地的关键工程问题——如何在有限算力下让 SLM 可靠地完成结构化函数调用，这对智能座舱、车载语音助手等实际产品具有直接指导意义，也为其他边缘设备上的 Agent 设计提供了可迁移的经验。",
+  "tags": [
+    "SLM",
+    "Function Calling",
+    "Agent",
+    "On-device",
+    "Automotive"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在车载等资源受限场景中，小型语言模型是端侧函数调用的可行选择，但函数接口的呈现方式会显著影响调用准确率与效率。",
+      "专用功能令牌（FT）与提示内函数模式（Schema）是两种主要设计路线，前者可能更紧凑，后者更灵活可读，需权衡内存、延迟与泛化能力。",
+      "该研究为边缘设备上的 Agent 函数调用设计提供了实证参考，表明接口表示方式是与模型规模同等重要的工程变量。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

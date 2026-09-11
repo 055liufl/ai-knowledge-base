@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-079",
+  "title": "Efficient Leakage-Free Neural Architecture Search under Leave-One-Subject-Out Evaluation",
+  "source_url": "https://arxiv.org/abs/2609.09433",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在 Leave-One-Subject-Out（LOSO）评估协议下进行无泄漏神经架构搜索（NAS）的高效方法。LOSO 是主体分类任务中评估泛化能力的标准协议，但将其与 NAS 结合时，完全嵌套的实现需要为每个主体独立执行一次架构搜索，在训练成本近似线性的假设下总体复杂度达到 O(N^2)，计算代价极高。作者提出一种基于分块（block-based）的搜索策略，通过在多个主体之间共享 NAS 运行结果，在保证无数据泄漏的前提下显著降低搜索成本。该方法在 BioVid Heat Pain 数据集上进行了验证。该工作值得关注的原因在于：它直击 NAS 在医学与生理信号等以受试者为中心的场景中落地时的核心痛点——评估协议与搜索效率之间的矛盾，为可穿戴健康监测、疼痛识别、脑机接口等需要严格跨主体泛化的应用提供了更实用的自动化模型设计路径。",
+  "tags": [
+    "NAS",
+    "LOSO",
+    "AutoML",
+    "生理信号",
+    "泛化评估"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "完全嵌套的 LOSO-NAS 需要 N 次独立搜索，计算复杂度达 O(N^2)，是主体级分类任务中 NAS 落地的主要瓶颈。",
+      "基于分块的搜索策略通过在主体间共享 NAS 运行，在保持无泄漏的前提下大幅降低搜索成本。",
+      "该方法在 BioVid Heat Pain 数据集上验证，适用于疼痛识别等以受试者为中心的健康监测场景。",
+      "无泄漏设计对医学与生理信号领域的模型选择至关重要，可避免因数据泄漏导致的高估泛化性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

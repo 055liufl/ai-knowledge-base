@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-023",
+  "title": "Which Tokens Should SFT Actually Learn? A Token-Trimming Perspective on Mathematical Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.09707",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 TrimSFT（Trimmed Logit-Gap SFT），针对监督微调（SFT）中所有目标 token 被统一施加交叉熵损失的问题，指出不同 token 对数学推理的学习信号并不等价。统一处理会导致已掌握 token 被过度锐化，同时放大低置信度、不确定 token 的学习压力，从而造成次优的训练动态。TrimSFT 是一种简单的 token 级重加权方法，通过 logit-gap 信号对 token 进行裁剪与加权，降低已掌握 token 的权重、抑制噪声 token 的干扰，使模型更聚焦于真正需要学习的关键推理步骤。该工作从 token 裁剪视角重新审视 SFT 目标函数设计，为数学推理等需要精确多步推导的任务提供了更高效的微调策略，对提升训练稳定性与推理性能具有实用价值，也为后续研究 token 级损失重加权提供了新思路。",
+  "tags": [
+    "SFT",
+    "LLM",
+    "Math Reasoning",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT 对所有目标 token 使用统一交叉熵损失并不合理，不同 token 对数学推理的学习信号差异显著。",
+      "统一损失会过度锐化已掌握 token，同时放大低置信度 token 的学习压力，导致训练动态次优。",
+      "TrimSFT 通过 token 级 logit-gap 重加权与裁剪，让模型聚焦于真正需要学习的关键推理 token。",
+      "该思路为 SFT 损失函数设计和数学推理微调提供了简单且可推广的改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

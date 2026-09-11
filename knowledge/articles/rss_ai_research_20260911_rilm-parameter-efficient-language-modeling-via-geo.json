@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-138",
+  "title": "RiLM: Parameter-Efficient Language Modeling via Geodesic Decoding",
+  "source_url": "https://arxiv.org/abs/2609.10305",
+  "source_platform": "rss_ai_research",
+  "summary": "RiLM（Riemannian Language Models）是一种面向超小规模语言模型（参数量低于一百万）的参数高效建模方法，旨在解决边缘部署、领域适配和可复现研究中模型容量受限的问题。传统两层 LSTM 或 Transformer 在嵌入维度 d=128 时，输出矩阵 W_out（维度 d×|V|）会占用约三分之一的模型容量，成为小模型参数效率的主要瓶颈。RiLM 的核心创新在于彻底移除该输出层：将上下文建模为黎曼流形上的一条轨迹，并通过测地线解码（Geodesic Decoding）从流形几何结构中直接生成下一个 token 的概率分布。这种方法将语言建模从传统的欧氏空间线性投影转变为流形上的几何演化问题，显著降低了输出层参数量，同时保持了语言建模能力。该工作值得关注的原因在于：它为资源受限场景下的语言模型设计提供了全新范式，可能推动边缘 AI、低资源领域适配以及可复现小模型研究的发展；同时，将黎曼几何引入语言建模也为理论研究和模型可解释性开辟了新方向。",
+  "tags": [
+    "Language Model",
+    "Parameter-Efficient",
+    "Riemannian Geometry",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:46:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "输出矩阵 W_out 在小模型中占据约三分之一参数量，是参数效率的关键瓶颈",
+      "RiLM 通过黎曼流形上的轨迹建模和测地线解码，完全移除传统输出层",
+      "该方法为边缘部署和领域适配提供了新的参数高效建模范式",
+      "将黎曼几何引入语言建模可能带来理论可解释性和模型设计的新视角"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

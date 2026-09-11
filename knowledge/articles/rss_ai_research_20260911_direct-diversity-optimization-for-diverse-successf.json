@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-123",
+  "title": "Direct Diversity Optimization for Diverse Successful Trajectories in Preference Post-Training",
+  "source_url": "https://arxiv.org/abs/2609.10052",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Direct Diversity Optimization（DDO），一种面向 LLM 智能体序列决策任务的离线后训练方法，旨在解决轨迹级结果标签监督不足的问题。传统偏好后训练通常只关注最终结果的成功与否，导致模型在相同决策状态下倾向于收敛到单一成功路径，而忽略了其他同样有效的成功策略。DDO 将问题形式化为「成功策略覆盖度」，即在固定 rollout 预算下，模型能够实现多少种不同的成功策略。该方法通过直接优化多样性目标，鼓励模型在保持任务成功率的同时探索并保留多个成功分支。这一工作对于提升 LLM 智能体在复杂决策环境中的鲁棒性、探索能力和泛化性具有重要意义，尤其适用于需要多路径规划的机器人控制、游戏 AI、工具调用等场景。其核心贡献在于将多样性优化从生成任务扩展到序列决策的后训练阶段，为偏好学习提供了新的优化视角。",
+  "tags": [
+    "LLM Agent",
+    "Post-Training",
+    "Diversity Optimization",
+    "Sequential Decision"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:46:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "轨迹级结果标签无法有效监督同一决策状态下的多种成功策略，导致模型收敛到单一成功路径。",
+      "DDO 将成功策略覆盖度作为优化目标，在固定 rollout 预算下直接优化策略多样性。",
+      "该方法为 LLM 智能体的偏好后训练提供了新的多样性视角，有望提升复杂决策任务中的鲁棒性和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

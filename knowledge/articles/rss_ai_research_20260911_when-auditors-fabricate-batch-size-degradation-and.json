@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-100",
+  "title": "When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination",
+  "source_url": "https://arxiv.org/abs/2609.09696",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究系统评估了大型语言模型作为文档质量自动审计员的可靠性，重点关注其在检测植入式文档污染时的表现。作者构建了一个包含150篇学术论文（涵盖供应链管理与医学研究）的污染语料库，并注入450个已知污染点，分为三类：排版损坏、语义反转和荒谬的上下文外插入。研究使用Google Gemini 3.0 Pro等模型进行检测，发现了一个关键现象：随着批处理规模增大，模型的检测性能显著下降，同时模型会以高度自信的方式产生幻觉性判断——即错误地标记或漏检污染内容，却表现出高置信度。这一发现揭示了LLM在自动化审计场景中的脆弱性，尤其是在处理批量文档时，其可靠性可能被严重高估。该工作对学术界和工业界部署LLM作为文档质量守门人提出了重要警示，强调了需要更稳健的评估方法和防御机制。",
+  "tags": [
+    "LLM",
+    "Hallucination",
+    "Evaluation",
+    "Document Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在检测植入式文档污染时，随着批处理规模增大，检测性能显著下降。",
+      "模型会以高置信度产生幻觉性判断，错误标记或漏检污染内容。",
+      "当前LLM作为自动化审计员的可靠性被高估，需谨慎部署。",
+      "构建了包含450个已知污染点的多领域语料库，为后续研究提供基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

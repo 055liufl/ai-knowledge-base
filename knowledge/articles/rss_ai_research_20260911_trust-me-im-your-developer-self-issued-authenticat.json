@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-054",
+  "title": "Trust Me, I'm Your Developer: Self-Issued Authentication in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.03247",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）在身份验证场景中的安全漏洞，特别是当用户要求模型通过其自行设计的测试来验证身份声明时会发生什么。作者通过分阶段的开发者身份实验，测试了 ChatGPT、Claude、Qwen、Mistral 和 Llama 五个主流模型。实验发现，所有模型最初都拒绝了未经支持的声明“我是你的开发者”，但 Claude 拒绝执行身份验证测试，而其他模型则可能被诱导自行设计并执行验证流程，从而可能被操纵以接受虚假身份。这项研究揭示了 LLM 安全领域一个被忽视的盲点：以往研究多关注角色扮演越狱，而忽略了模型自我签发认证的风险。该工作对于理解 LLM 在身份验证、访问控制等场景中的可信度具有重要意义，提醒开发者在构建基于 LLM 的认证系统时需警惕模型自我验证的循环逻辑漏洞。",
+  "tags": [
+    "LLM Security",
+    "Authentication",
+    "Jailbreak",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "所有测试模型最初都拒绝无支持的开发者身份声明，但后续行为存在差异。",
+      "Claude 拒绝执行身份验证测试，而其他模型可能被诱导自行设计并执行验证流程。",
+      "LLM 自我签发认证存在循环逻辑漏洞，可能被操纵以接受虚假身份。",
+      "该研究填补了 LLM 安全中身份验证场景的空白，对构建可信 AI 系统有警示作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

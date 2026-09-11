@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-043",
+  "title": "Why Sample What You Can Enumerate? Exact Policy Optimization for Genomic Tool Selection",
+  "source_url": "https://arxiv.org/abs/2609.10221",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对在专业科学场景（如基因组学）中，使用强化学习（RL）训练冻结推理器选择外部工具时出现的结构性错配问题展开研究。作者指出，当工具子集空间可枚举时，传统基于采样的策略优化方法（如GRPO）仍通过随机采样估计梯度，导致效率低下且方差较大。为此，论文提出了一种精确策略优化方法，直接枚举所有可能的工具子集并计算精确的策略梯度，从而避免采样带来的偏差。该方法在基因组工具选择任务上进行了验证，展示了在可枚举空间下精确优化相对于采样方法的优势。这项工作的价值在于揭示了RL在特定科学领域应用中的理论缺陷，并提供了一种简单有效的解决方案，对于推动AI在专业科学工作流中的可靠工具调用具有重要意义，尤其适合关注强化学习、工具使用和科学AI的研究者与开发者。",
+  "tags": [
+    "Reinforcement Learning",
+    "Tool Selection",
+    "Genomics",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在工具子集空间可枚举的专业科学场景中，基于采样的RL方法（如GRPO）存在结构性错配，采样估计引入不必要的方差。",
+      "直接枚举所有工具子集并计算精确策略梯度，可以避免采样偏差，提升优化效率和稳定性。",
+      "基因组工具选择任务验证了精确策略优化在可枚举空间下的有效性，为科学AI中的工具调用提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

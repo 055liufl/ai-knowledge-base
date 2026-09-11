@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-006",
+  "title": "The Menu Is an Execution Prior: State-Path Tool Menus for Online Agents",
+  "source_url": "https://arxiv.org/abs/2609.09395",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向在线智能体的工具菜单构建方法，将工具菜单视为一种执行先验（execution prior）。在现实场景中，语言模型驱动的智能体往往面对包含数千个接口的工具库，而每次执行前只能看到并调用其中一小部分工具，这一子集被称为工具菜单。现有方法通常按请求相关性对工具进行排序，但这种方式可能遗漏多步任务所需的前置工具，导致最终动作无法获得可用输入。论文强调，多步任务不仅需要最终动作，还需要按可用顺序排列的、能够生成其输入的前置工具。因此，作者提出状态-路径工具菜单（State-Path Tool Menus），从任务执行状态和依赖路径出发构建有序工具子集，使智能体能够在有限菜单中完成复杂多步任务。该工作值得关注，因为它触及智能体工具调用中的核心瓶颈：工具选择与排序直接影响任务成功率，而现有基于相关性的排序方法在多步依赖场景下存在结构性缺陷。该研究为在线智能体的工具组织、检索与执行规划提供了新视角，对构建可扩展、高可靠的工具增强型智能体具有实用价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "LLM",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:40:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具菜单是智能体执行前可见并可调用的有序工具子集，其构建质量直接影响多步任务的成功率。",
+      "仅按请求相关性排序工具会忽略多步任务中的前置依赖，导致最终动作缺少可用输入。",
+      "状态-路径工具菜单从执行状态和依赖路径出发，确保前置工具与最终动作按可用顺序共同出现。",
+      "该工作将工具选择问题从静态相关性排序提升为面向执行过程的先验构建问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

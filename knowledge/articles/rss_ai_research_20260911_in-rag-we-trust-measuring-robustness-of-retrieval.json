@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-064",
+  "title": "In RAG We Trust? Measuring Robustness of Retrieval-Augmented Generation Under Document Poisoning",
+  "source_url": "https://arxiv.org/abs/2609.09243",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了检索增强生成（RAG）系统在文档投毒攻击下的鲁棒性问题。RAG 通过检索外部文档来为语言模型提供事实依据，从而减少幻觉，但这也引入了新的攻击面：如果检索到的文本被篡改，模型可能会重复错误信息。作者使用量化后的 Llama 3.1 8B 模型，测试了三种投毒策略（实体替换、数字替换和否定），并逐步增加被投毒文档的比例（0、1、2 等），以量化模型性能的退化程度。研究发现，即使少量投毒文档也可能显著影响模型输出的准确性，揭示了 RAG 系统在安全性方面的脆弱性。这项工作对于构建可信赖的 RAG 应用具有重要警示意义，并为后续防御策略的研究提供了基准。",
+  "tags": [
+    "RAG",
+    "LLM Security",
+    "Adversarial Attack",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG 系统在检索文档被投毒时，即使少量污染也会导致模型输出错误信息，安全性面临严峻挑战。",
+      "实体替换、数字替换和否定是三种有效的投毒策略，其中数字替换可能对事实性问答影响最大。",
+      "量化后的 Llama 3.1 8B 模型对投毒攻击的鲁棒性有限，需要开发针对性的防御机制。",
+      "该研究为 RAG 安全评估提供了可复现的实验框架，强调了在部署 RAG 时需考虑文档完整性验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

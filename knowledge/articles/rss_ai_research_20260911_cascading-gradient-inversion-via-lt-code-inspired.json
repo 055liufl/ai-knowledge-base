@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-095",
+  "title": "Cascading Gradient Inversion via LT-Code Inspired Peeling in Federated Learning",
+  "source_url": "https://arxiv.org/abs/2609.09659",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“级联梯度反转”（Cascading Gradient Inversion）的新型攻击方法，用于联邦学习场景下的隐私泄露分析。联邦学习通过共享模型更新而非原始数据来保护隐私，但已有研究表明这些更新可被反转以重建客户端训练数据。传统的解析重建攻击在批量大小增加时性能急剧下降：即使攻击者完全控制网络参数，单轮攻击对大小为100的批量也只能恢复约一半的数据，且已知上界限制了此类方法的能力。本文受LT码（Luby Transform码）的启发，提出了一种“剥离”（peeling）策略，通过级联方式逐步反转梯度，从而突破现有上界，显著提升大批量场景下的数据恢复率。该工作对联邦学习的隐私安全性提出了新的挑战，表明现有防御机制可能不足，值得隐私保护、安全与联邦学习领域的研究者和开发者关注。",
+  "tags": [
+    "Federated Learning",
+    "Privacy Attack",
+    "Gradient Inversion",
+    "LT Code"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有解析梯度反转攻击在批量增大时恢复率低，且存在理论恢复上界。",
+      "受LT码启发的级联剥离策略可突破单轮攻击的恢复限制，提升大批量数据重建效果。",
+      "该攻击对联邦学习隐私构成更严重威胁，需重新评估现有防御措施的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

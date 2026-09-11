@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-049",
+  "title": "ConvMem: Convolutional Memory for Long-Context Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.10441",
+  "source_platform": "rss_ai_research",
+  "summary": "ConvMem 提出了一种用于长上下文推理的卷积记忆机制，旨在解决大语言模型在超长上下文场景下受限于固定上下文窗口的问题。现有方法如 MemAgent 采用顺序读取文本片段并迭代更新固定大小记忆的方式扩展有效上下文，但存在推理延迟高、依赖昂贵强化学习训练以及可能过拟合等缺陷。ConvMem 的核心思路是将记忆更新过程从串行迭代改为卷积式并行处理，从而在保持长上下文建模能力的同时显著降低延迟并减少对 RL 训练的依赖。该工作属于长上下文 LLM 推理效率优化方向，对需要处理超长文档、多轮对话或大规模检索增强生成的应用具有直接价值。其创新点在于将卷积操作引入记忆机制设计，为长上下文建模提供了不同于循环式记忆的新范式，值得关注长上下文扩展、记忆增强 LLM 以及推理加速的研究者和工程师深入阅读。",
+  "tags": [
+    "Long Context",
+    "LLM",
+    "Memory",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有顺序式记忆方法（如 MemAgent）通过分段读取和迭代更新扩展上下文，但面临高延迟和昂贵 RL 训练的问题",
+      "ConvMem 提出卷积式记忆机制，用并行卷积替代串行迭代更新，有望同时降低延迟和训练成本",
+      "该工作为长上下文 LLM 提供了一种非循环式的记忆建模范式，可能启发后续高效长上下文架构设计",
+      "方法对需要超长上下文推理的 RAG、文档理解等应用具有潜在实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-036",
+  "title": "Belief-State Engine: Augmenting LLMs for Principled Planning Under Partial Observability",
+  "source_url": "https://arxiv.org/abs/2609.10036",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Belief-State Engine（信念状态引擎），旨在解决大语言模型（LLM）智能体在部分可观测环境下的规划失效问题。作者指出，LLM 智能体虽然能在多种任务中生成流畅的动作序列，但一旦环境信息不完整，就会表现出典型失败模式：模糊反馈导致过早承诺、单次观测使不确定性坍缩到错误假设、随历史增长策略发生漂移。研究将这些症状归因于一个共同的结构性原因——LLM 智能体通常缺乏显式的信念状态表示，无法在不确定性下进行原则性推理与规划。Belief-State Engine 通过为 LLM 增强显式的信念状态建模，使其能够在部分可观测条件下维护和更新对世界状态的概率性认知，从而做出更稳健的决策。该工作将经典 POMDP 规划思想与 LLM 的语义理解能力结合，为构建可靠、可解释的自主智能体提供了新思路，对智能体在真实、不确定环境中的部署具有重要价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Planning",
+    "POMDP"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体在部分可观测环境中的失败源于缺乏显式信念状态，导致过早承诺、错误坍缩和策略漂移。",
+      "Belief-State Engine 通过为 LLM 引入显式信念状态建模，将 POMDP 规划原则与语言模型能力结合。",
+      "该方法提升了智能体在不确定环境下的决策稳健性和可解释性，为可靠自主智能体部署提供新路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

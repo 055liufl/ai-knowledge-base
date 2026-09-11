@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-110",
+  "title": "uFlowCSP: Crystal Structure Prediction using Mean flow generative models",
+  "source_url": "https://arxiv.org/abs/2609.09799",
+  "source_platform": "rss_ai_research",
+  "summary": "uFlowCSP 是首个将 MeanFlow（平均流）生成模型应用于晶体结构预测（CSP）的工作，旨在解决现有扩散模型与流匹配模型（如 CDVAE、DiffCSP、FlowMM、CrystalFlow）推理时需要数十到数千次串行网络评估、生成效率低下的问题。其核心创新在于让模型学习概率流速度的时间平均量，而非瞬时速度，从而在理论上支持少步甚至单步生成高质量晶体结构候选。CSP 是计算材料发现的基础任务，直接决定新材料筛选的效率与成本，因此该工作对高通量材料设计、电池与半导体等领域的自动化探索具有实际意义。若 MeanFlow 的平均速度建模能在保持稳定晶体分布学习能力的同时显著压缩采样步数，将为生成式材料发现提供更实用的推理范式，并可能推动 CSP 从研究原型走向大规模筛选工具。",
+  "tags": [
+    "Crystal Structure Prediction",
+    "MeanFlow",
+    "Generative Models",
+    "Materials Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 CSP 生成模型（扩散/流匹配）推理需数十至数千次串行网络评估，采样成本是实际应用的主要瓶颈。",
+      "uFlowCSP 学习概率流速度的时间平均而非瞬时速度，有望以更少采样步数生成稳定晶体结构。",
+      "该方法将 MeanFlow 生成范式引入材料发现领域，为高效晶体结构预测提供了新的建模思路。",
+      "若少步生成质量得到验证，将显著提升高通量材料筛选的可行性与效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

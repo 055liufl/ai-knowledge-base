@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-021",
+  "title": "Safe to Stop? Risk-Constrained Stopping for Sequential Clinical Diagnosis Agents",
+  "source_url": "https://arxiv.org/abs/2609.09678",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Cros，一种面向序列临床诊断智能体的风险约束停止层。现有智能体基准通常在固定或不受约束的交互轮数后评估诊断准确率，导致自主停止的可靠性被隐含处理，缺乏显式保障。Cros 通过三个核心组件解决该问题：状态级错误排序（state-wise error ranking）用于识别高风险决策状态；在互斥开发集上设计停止策略以避免过拟合；以及基于 LTT（Learn-then-Test）风格的选择性诊断误差与最小样本量精确检验，为停止决策提供统计保证。该工作将临床诊断智能体的停止问题形式化为风险约束下的选择性预测问题，使智能体不仅决定下一步请求什么检查，还能在满足预设错误率约束的前提下决定何时给出诊断或转交人工。其价值在于把医疗 AI 智能体的安全性从'事后评估'推进到'过程可控'，为高风险场景下的自主智能体部署提供了可验证的停止准则，对临床决策支持系统、Agent 安全与可靠性研究具有参考意义。",
+  "tags": [
+    "Agent",
+    "Clinical Diagnosis",
+    "Risk Control",
+    "Selective Prediction",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有临床诊断智能体基准忽视自主停止的可靠性，固定轮数评估掩盖了何时应停止或转交的风险",
+      "Cros 将停止问题建模为风险约束下的选择性诊断，通过状态级错误排序识别高风险决策点",
+      "采用互斥开发集与 LTT 风格精确检验，为选择性诊断误差提供统计保证，避免策略过拟合",
+      "该工作推动医疗智能体安全评估从结果准确率转向过程可控性与可验证的停止准则"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

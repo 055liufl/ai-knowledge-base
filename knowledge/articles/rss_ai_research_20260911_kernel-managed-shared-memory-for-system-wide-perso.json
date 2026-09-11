@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-041",
+  "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
+  "source_url": "https://arxiv.org/abs/2609.10144",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“内核管理的共享内存”（Kernel-Managed Shared Memory）的系统级抽象，旨在解决多智能体系统中个性化上下文无法跨智能体共享的问题。当前，AI 系统在适应不同用户时，单个智能体学习到的有用上下文往往无法被其他智能体访问，导致系统整体效率低下。该工作将记忆管理职责从个体智能体上移到“智能体系统内核”，由内核统一负责结构化、带标签记忆的检索、隐私执行和提示注入。这种设计既保证了跨智能体的个性化知识共享，又通过内核集中管控降低了隐私泄露和提示注入攻击的风险。作者实现了该系统并进行了初步评估。该研究值得关注，因为它为多智能体系统的个性化与安全提供了一种新的系统架构思路，可能推动更高效、更安全的协作式 AI 系统发展。",
+  "tags": [
+    "Multi-Agent",
+    "Memory",
+    "Personalization",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体系统中，个体智能体学到的用户上下文难以共享，限制了系统整体的个性化能力。",
+      "提出内核管理的共享内存抽象，由系统内核统一管理记忆的检索、隐私和提示注入，而非依赖个体智能体。",
+      "该设计有望在实现跨智能体个性化知识共享的同时，增强隐私保护和抗提示注入能力。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

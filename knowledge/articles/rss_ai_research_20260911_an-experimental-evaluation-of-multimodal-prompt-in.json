@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-075",
+  "title": "An Experimental Evaluation of Multimodal Prompt Injection Attacks on Agentic AI Frameworks",
+  "source_url": "https://arxiv.org/abs/2609.09404",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 MMPIBench，一个可复现的基准测试，用于评估多模态提示注入攻击对智能体 AI 框架的影响。智能体框架允许语言模型进行规划、维护记忆并调用工具，从而访问真实文件、邮件和服务。大多数智能体还能读取图像，这为攻击者提供了绕过用户、直接将文本注入智能体上下文的途径。MMPIBench 通过六种视觉载体（OCR 文本、覆盖层、EXIF 元数据、二维码等）传递一组固定的攻击，并测量攻击后果。该研究值得关注，因为它首次系统性地量化了多模态提示注入对具备工具调用能力的智能体的安全威胁，揭示了图像输入这一被忽视的攻击面，为构建更安全的智能体系统提供了可复现的评估工具。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Multimodal",
+    "Prompt Injection",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体 AI 框架的图像读取能力引入了新的攻击面，攻击者可通过视觉载体将恶意文本注入上下文，绕过用户直接控制智能体行为。",
+      "MMPIBench 提供了可复现的基准，涵盖 OCR 文本、覆盖层、EXIF 元数据、二维码等六种视觉载体，系统评估多模态提示注入攻击。",
+      "该研究强调了在智能体系统中，多模态输入的安全防护与文本输入同等重要，需要开发针对视觉通道的防御机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

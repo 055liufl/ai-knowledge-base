@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-027",
+  "title": "Proof-Carrying Cognition: Closing the Verification Gap with Reality-Settled Reward",
+  "source_url": "https://arxiv.org/abs/2609.09776",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「验证鸿沟」（verification gap）是当前语言模型推理能力提升的核心瓶颈：强化学习在推理轨迹上的进展主要集中在具有廉价、可靠验证器的形式化领域（如数学、代码），而在开放域推理中缺乏可扩展且不可被操纵的奖励信号。作者提出「携带证明的认知」（Proof-Carrying Cognition）框架，试图通过「由现实结算的奖励」（Reality-Settled Reward）来弥合这一鸿沟。理论部分在 best-of-N 选择的联合高斯模型中证明，验证器与真实答案的相关性 rho 是验证器质量与选择收益之间的精确兑换率，为验证器的价值提供了量化刻画。该工作值得关注，因为它将「奖励从何而来」这一 RLHF/RLVR 的根本问题形式化，并指向一个可能突破当前推理模型能力天花板的方向：让奖励由现实世界的可验证后果来结算，而非依赖人类偏好或易被攻击的代理指标。对从事 LLM 推理、强化学习、可验证奖励与对齐研究的读者具有较高参考价值。",
+  "tags": [
+    "LLM Reasoning",
+    "Reinforcement Learning",
+    "Verifiable Reward",
+    "AI Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 LLM 推理能力的提升高度依赖廉价且可靠的验证器，这导致进展集中在数学、代码等可形式化验证的领域。",
+      "验证鸿沟——即开放域推理缺乏可扩展、不可被腐蚀的奖励信号——是制约领域进一步发展的根本瓶颈。",
+      "在 best-of-N 选择的联合高斯模型中，验证器与真实答案的相关性 rho 精确刻画了验证器质量到选择收益的兑换率。",
+      "「由现实结算的奖励」提出让奖励锚定于现实世界的可验证后果，而非人类偏好或易被攻击的代理指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

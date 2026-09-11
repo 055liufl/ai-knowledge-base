@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-034",
+  "title": "Time-Frequency Geometric Cross-Attention for Chunked Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2609.09925",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对现代视觉-语言-动作（VLA）模型在预测动作块（action chunk）时存在的结构建模不足问题，提出了一种时间-频率几何交叉注意力机制（Time-Frequency Geometric Cross-Attention）。当前 VLA 策略通常在一次前向传播中输出1-2秒的协调运动，但动作块本质上是短时多元轨迹，模型却将其视为由线性头解码的通用逐时间步隐藏令牌序列，忽略了两种关键运动结构：一是频率结构，即动作块叠加了平滑的全局趋势与精细的修正运动；二是几何结构，即多关节运动之间的协调关系。该工作通过引入时间-频率几何交叉注意力，显式建模动作序列中的频域特征与几何约束，从而提升动作生成的精度与协调性。该研究值得关注，因为它直击 VLA 模型在底层动作表示上的核心缺陷，有望推动机器人操作、自动驾驶等具身智能任务中动作生成质量的提升，并为后续 VLA 架构设计提供新的思路。",
+  "tags": [
+    "VLA",
+    "Cross-Attention",
+    "Robotics",
+    "Action Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 VLA 模型将动作块视为通用逐时间步令牌序列，忽略了动作轨迹的频率与几何结构。",
+      "动作块包含平滑全局趋势与精细修正运动的叠加，频率建模对提升动作精度至关重要。",
+      "多关节动作间的几何协调关系未被现有线性解码头充分利用，交叉注意力可显式建模该结构。",
+      "时间-频率几何交叉注意力为 VLA 动作表示提供了更结构化的归纳偏置，有望提升生成质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

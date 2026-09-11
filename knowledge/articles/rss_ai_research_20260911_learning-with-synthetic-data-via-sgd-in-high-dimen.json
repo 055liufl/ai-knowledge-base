@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-087",
+  "title": "Learning with Synthetic Data via SGD in High-Dimensional Linear Regression",
+  "source_url": "https://arxiv.org/abs/2609.09572",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究合成数据对高维线性回归中单次随机梯度下降（SGD）泛化性能的影响。合成数据被广泛视为突破人类生成数据瓶颈、扩展模型训练规模的有效途径，但已有研究表明其可能导致严重的模型崩溃（model collapse），即任何固定比例的合成数据都会阻碍模型性能随数据规模提升，留下无法消除的额外风险下限。该论文在高维线性回归框架下，系统分析了单次 SGD 使用合成数据时的泛化行为，试图揭示合成数据比例、数据维度与泛化误差之间的定量关系。这项工作对于理解合成数据在训练中的理论边界具有重要意义，尤其在大模型依赖合成数据扩展训练规模的当下，为如何安全、有效地使用合成数据提供了理论指导。其价值在于将模型崩溃现象从经验观察提升到可分析的理论层面，并为后续设计合成数据使用策略、避免性能退化提供了数学基础。",
+  "tags": [
+    "Synthetic Data",
+    "SGD",
+    "High-Dimensional Statistics",
+    "Model Collapse",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "合成数据可能导致模型崩溃，即使少量合成数据也会在数据规模扩大时留下无法消除的额外风险下限。",
+      "论文在高维线性回归中理论分析了单次 SGD 使用合成数据的泛化性能，揭示了合成数据比例与泛化误差的定量关系。",
+      "该研究为理解合成数据训练的理论边界提供了基础，有助于设计避免模型崩溃的合成数据使用策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

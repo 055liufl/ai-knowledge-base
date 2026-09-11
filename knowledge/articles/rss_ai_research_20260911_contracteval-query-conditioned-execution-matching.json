@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-011",
+  "title": "ContractEval: Query-Conditioned Execution Matching for Procedural Instruction Conformance",
+  "source_url": "https://arxiv.org/abs/2609.09458",
+  "source_platform": "rss_ai_research",
+  "summary": "ContractEval 是一篇针对 LLM 智能体执行程序性指令时合规性评估的新方法论文。随着 LLM 从问答系统演进为能够执行复杂流程的智能体，传统评估方式暴露出严重盲区：仅看最终输出的评估无法发现系统跳过了必要的检查、分支、依赖或不变式；而基于轨迹的评估虽然能看到执行活动，却无法判断哪些义务对当前查询真正生效。ContractEval 提出\"查询条件化执行匹配\"（Query-Conditioned Execution Matching）框架，核心思想是：对于每个查询，先确定哪些程序性义务被激活，再验证执行轨迹是否真正履行了这些义务。该方法将评估从\"结果正确性\"推进到\"过程正当性\"，能够诊断出那些输出看似合理但实际缺乏依据的失败模式。这对于构建可信、可审计的 LLM 智能体系统具有重要意义，尤其适用于需要严格遵循操作规程的场景，如金融合规、医疗流程、自动化运维等。该工作填补了程序性指令合规性评估的空白，为智能体可靠性研究提供了新的评估范式。",
+  "tags": [
+    "LLM Agent",
+    "Evaluation",
+    "Procedural Compliance",
+    "Execution Trace"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅评估最终输出或执行轨迹都不足以发现程序性指令合规性失败，必须识别查询条件下真正激活的义务",
+      "LLM 智能体的失败可能是\"无根据的正确\"——答案看似合理但跳过了使其成立的检查、分支或依赖",
+      "ContractEval 通过查询条件化的执行匹配，将评估从结果正确性推进到过程正当性",
+      "该框架为金融、医疗、运维等强合规场景下的智能体可信部署提供了可审计的评估基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

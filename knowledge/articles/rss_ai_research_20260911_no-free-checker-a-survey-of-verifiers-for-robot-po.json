@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-067",
+  "title": "No Free Checker: A Survey of Verifiers for Robot Policies",
+  "source_url": "https://arxiv.org/abs/2609.09250",
+  "source_platform": "rss_ai_research",
+  "summary": "本文是对机器人策略验证器（Verifiers for Robot Policies）的系统性综述，收录并比较了约150种验证器。验证器的作用是读取候选行为并返回其表现评分，既用于评估视觉-语言-动作（VLA）策略，也用于训练这些策略。验证器的类型涵盖成功检测器、奖励模型、运行时监控器、安全过滤器以及时序逻辑规范等。作者从两个核心属性对验证器进行比较：可用性（Availability），即给出判定所需的成本以及判定在 rollout 中出现的早晚；以及可靠性（Reliability）等维度。该综述指出不存在\"免费的验证器\"（No Free Checker），即没有任何一种验证器能在所有场景下同时具备低成本、高可靠性和通用性，不同验证器在成本、覆盖范围、时序粒度和安全性保证之间存在权衡。这项工作值得关注，因为它为机器人学习、具身智能和 VLA 模型的研究者与开发者提供了统一的验证器分类框架和选型指南，有助于在策略评估、训练奖励设计和运行时安全保障等环节做出更合理的工程决策。",
+  "tags": [
+    "Robotics",
+    "VLA",
+    "Verifier",
+    "Embodied AI",
+    "Survey"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "验证器在机器人策略中兼具评估与训练双重角色，涵盖成功检测器、奖励模型、运行时监控、安全过滤器和时序逻辑规范等多种形态。",
+      "不存在通用的免费验证器：不同验证器在判定成本、判定时机（rollout 早期或晚期）、可靠性及安全保证之间存在根本性权衡。",
+      "该综述系统比较了约150种验证器，为 VLA 策略的评估、奖励设计和运行时安全提供了统一的分类与选型参考框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

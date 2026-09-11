@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-114",
+  "title": "Forward-Free LLM Depth Pruning via Weight Redundancy",
+  "source_url": "https://arxiv.org/abs/2609.09883",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Weight-Redundancy Pruning (WRP) 的 LLM 深度剪枝方法，旨在无需前向传播的情况下降低大语言模型的推理成本。传统深度剪枝方法分为两类：基于激活的方法需要通过校准数据进行前向传播来收集隐藏状态，计算开销较大；而现有的免前向方法则独立地对每个 Transformer 块进行评分，忽略了块与块之间的相似性。WRP 的创新点在于直接从模型权重中估计层间冗余度，通过分析检查点中权重矩阵的相似性来识别可移除的冗余 Transformer 块。该方法完全避免了前向传播，因此剪枝过程极其高效，同时通过考虑层间相似性弥补了现有免前向方法的不足。这项研究值得关注，因为它为 LLM 压缩提供了一种更实用、更高效的深度剪枝范式，尤其适合在资源受限或需要快速迭代剪枝策略的场景下使用，有望推动 LLM 在边缘设备上的部署。",
+  "tags": [
+    "LLM",
+    "模型压缩",
+    "深度剪枝",
+    "权重冗余"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "WRP 是一种无需前向传播的深度剪枝方法，直接从模型权重中估计层间冗余，显著降低了剪枝的计算成本。",
+      "现有免前向方法独立评分每个 Transformer 块，忽略了块间相似性，而 WRP 通过测量层间冗余弥补了这一缺陷。",
+      "该方法为 LLM 推理加速提供了更高效的剪枝途径，特别适合资源受限环境下的模型部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

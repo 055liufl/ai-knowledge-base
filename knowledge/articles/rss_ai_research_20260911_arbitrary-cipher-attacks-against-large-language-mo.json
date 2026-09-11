@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-084",
+  "title": "Arbitrary Cipher Attacks Against Large Language Models Do Not Require Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2609.09553",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大语言模型（LLM）的任意密码攻击方法，无需微调即可实现越狱。传统上，任意密码或隐蔽通信攻击需要利用商业模型的微调API对目标模型进行训练，从而绕过对齐机制，诱导模型输出有害内容。而该研究证明，攻击者无需访问微调接口，仅通过提示工程即可实现类似效果。这一发现显著降低了攻击门槛，因为微调API通常需要付费且受监控，而纯提示攻击更易实施且难以检测。该工作对LLM安全领域具有重要警示意义：现有对齐防御可能不足以抵御此类隐蔽通信攻击，模型部署者需重新评估安全策略。研究还探讨了攻击的通用性和防御难点，为后续安全研究提供了新方向。",
+  "tags": [
+    "LLM安全",
+    "越狱攻击",
+    "对抗攻击",
+    "提示工程"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任意密码攻击无需微调即可实现，仅通过提示工程就能绕过LLM对齐机制。",
+      "该攻击降低了越狱门槛，因为微调API通常受监控且需付费，而纯提示攻击更隐蔽。",
+      "现有防御措施可能无法有效检测此类隐蔽通信攻击，需开发新的安全策略。",
+      "研究揭示了LLM安全中的一个重要漏洞，对模型部署和监管具有警示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

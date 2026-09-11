@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-104",
+  "title": "Fine-Tuning a KV Cache Concatenation-Aware Model or Recomputing KV Caches? Why Not Both?",
+  "source_url": "https://arxiv.org/abs/2609.09768",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对检索增强生成（RAG）系统中因拼接大量检索片段导致输入上下文过长、预填充负载增大、首令牌时间（TTFT）延长的问题，提出了一种混合策略：既微调一个能感知 KV 缓存拼接的模型，又在必要时重新计算 KV 缓存。传统方法通过复用预计算的 KV 缓存来降低 TTFT，但拼接后的缓存与模型原始注意力分布可能存在偏差，影响生成质量。该工作探索将两种思路结合——在缓存可复用时直接拼接，在质量下降风险高时回退到重计算，并通过微调让模型适应拼接后的缓存表示。这一方向对提升 RAG 系统的推理效率与响应质量具有实际意义，尤其适用于长上下文、高并发场景。",
+  "tags": [
+    "RAG",
+    "KV Cache",
+    "LLM Inference",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG 中拼接检索片段会显著增加上下文长度，导致预填充计算量和 TTFT 上升。",
+      "复用预计算 KV 缓存可降低 TTFT，但直接拼接可能引入表示偏差，影响生成质量。",
+      "微调模型使其适应 KV 缓存拼接，并在必要时回退到重计算，是一种兼顾效率与质量的混合方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

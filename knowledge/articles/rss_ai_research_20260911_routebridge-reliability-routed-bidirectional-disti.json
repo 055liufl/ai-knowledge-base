@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-093",
+  "title": "RouteBridge: Reliability-Routed Bidirectional Distillation Between Neural Radiance Fields and 3D Gaussian Splatting",
+  "source_url": "https://arxiv.org/abs/2609.09606",
+  "source_platform": "rss_ai_research",
+  "summary": "RouteBridge 提出了一种在神经辐射场（NeRF）与 3D 高斯泼溅（3DGS）之间进行双向知识蒸馏的新框架。现有跨表示蒸馏方法通常将某一种表示固定为整个场景的教师模型，这种全局固定的教师会传播局部重建误差。RouteBridge 的核心创新在于以每条光线（ray）为单位动态选择教学方向：其可靠性估计器结合光度残差等信号，判断在特定光线上 NeRF 与 3DGS 谁的重建更可靠，从而决定由谁向谁蒸馏。这种细粒度的路由机制避免了单一表示主导带来的误差累积，兼顾了 NeRF 的连续隐式表示优势与 3DGS 的显式高效渲染优势。该工作属于三维重建与神经渲染交叉领域，对提升新视角合成的鲁棒性和质量具有参考价值，也为跨表示学习中的教师选择问题提供了新思路。",
+  "tags": [
+    "NeRF",
+    "3D Gaussian Splatting",
+    "知识蒸馏",
+    "神经渲染",
+    "三维重建"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:44:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有跨表示蒸馏固定单一教师模型，会传播局部重建误差，RouteBridge 改为逐光线动态选择教学方向",
+      "可靠性估计器结合光度残差等信号，判断每条光线上 NeRF 与 3DGS 谁更可信",
+      "双向蒸馏充分利用 NeRF 与 3DGS 互补的归纳偏置，有望提升新视角合成的鲁棒性与质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

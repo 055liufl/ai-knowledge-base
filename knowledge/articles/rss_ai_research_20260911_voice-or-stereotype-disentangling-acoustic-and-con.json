@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-069",
+  "title": "Voice or Stereotype? Disentangling Acoustic and Content-Based Gender in Speech-to-Speech Models",
+  "source_url": "https://arxiv.org/abs/2609.09263",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究语音到语音（S2S）模型中的性别表征问题，区分基于声学的性别（说话人实际声音特征）与基于内容的性别（语言内容隐含的性别刻板印象）。由于S2S模型能直接听到说话人声音，理论上应忠实反映说话人的声音性别，而非根据内容刻板印象推断。然而，现有大多数S2S模型使用固定输出声音，使得这种偏见难以被检测。作者指出，测试这一问题的难点在于模型输出声音被硬编码，无法漂移向刻板印象，因此需要设计更精细的实验来解耦声学与内容性别的影响。该研究对语音翻译、配音和语音代理等应用中的公平性与忠实性具有重要意义，揭示了多模态模型中性别表征的潜在偏见，为构建更可靠的S2S系统提供了分析框架。",
+  "tags": [
+    "Speech-to-Speech",
+    "Gender Bias",
+    "Fairness",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "S2S模型应基于说话人的声音特征而非内容刻板印象来确定性别，但现有模型常使用固定输出声音掩盖了这一问题。",
+      "测试S2S模型中的性别偏见比文本模型更复杂，因为声学信息与内容信息相互交织。",
+      "硬编码的输出声音可能阻碍模型表现出偏见，但也可能掩盖了潜在的刻板印象传播。",
+      "该研究为语音翻译、配音等应用中的公平性评估提供了新的分析视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

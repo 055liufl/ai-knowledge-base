@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-033",
+  "title": "Grounded Evaluation and Repair for NL-to-PDDL Problem Generation",
+  "source_url": "https://arxiv.org/abs/2609.09898",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）将自然语言规划描述翻译为 PDDL 问题实例的任务，指出现有评估标准（如语法有效性或规划器求解成功）会严重高估生成问题对原始任务描述的忠实度——生成的问题可能可解析、可求解，却错误地表达了初始状态、目标、对象结构或优化目标。为此，作者提出了一种基于 grounding 的评估与修复方法，旨在更准确地衡量生成问题与自然语言描述之间的一致性，并自动修复其中的语义偏差。该工作值得关注，因为它揭示了当前 LLM 规划问题生成评估中的关键盲点，并提供了可操作的修复机制，有望提升自动规划系统在真实场景中的可靠性。",
+  "tags": [
+    "LLM",
+    "PDDL",
+    "Planning",
+    "Evaluation",
+    "NL2Formal"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有评估指标（语法正确性、规划器成功）会高估 LLM 生成 PDDL 问题对自然语言描述的忠实度。",
+      "生成的问题可能可解析、可求解，但错误表示初始状态、目标、对象结构或优化目标。",
+      "提出基于 grounding 的评估与修复方法，以检测并纠正语义偏差。",
+      "该工作强调需要更严格的语义一致性评估来推动 NL-to-PDDL 生成研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

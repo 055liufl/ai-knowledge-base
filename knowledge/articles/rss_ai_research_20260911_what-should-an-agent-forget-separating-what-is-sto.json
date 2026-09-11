@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-044",
+  "title": "What Should an Agent Forget? Separating What Is Stored from What Is Used",
+  "source_url": "https://arxiv.org/abs/2609.10263",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 RD-Forget，一个无需训练的框架，用于解决持久化语言智能体（persistent language agents）中记忆管理的核心矛盾：智能体需要长期存储经验以保持可用性，但每次回答又需要与当前问题最相关的证据。传统做法往往在存储层面直接删除或覆盖过时信息，但这会带来问题——一个已被取代的事实可能误导当前状态回答，却对历史查询仍然至关重要。RD-Forget 的核心思想是将「存储什么」与「使用什么」分离：保留一个完整的源档案（source archive）来保存所有观察记录，同时通过一个查询条件化的记忆视图（query-conditioned memory view）来控制实际被检索和使用的信息。这种设计使智能体既能回答当前状态问题，又能追溯历史查询，而无需在存储阶段做出不可逆的遗忘决策。该工作对构建长期运行的 LLM 智能体、对话系统和知识管理应用具有重要参考价值，尤其适用于需要时间感知和事实演化的场景。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持久化智能体的记忆管理应区分「存储」与「使用」两个层面，避免在存储阶段做不可逆的遗忘决策",
+      "被取代的事实对当前状态查询可能有害，但对历史查询仍然必要，因此需要查询条件化的记忆视图",
+      "RD-Forget 作为无需训练的框架，通过保留完整源档案加动态视图的方式，兼顾当前与历史查询需求",
+      "该思路对构建长期运行、时间感知的 LLM 智能体系统具有直接的架构启示"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

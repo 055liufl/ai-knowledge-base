@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-058",
+  "title": "Geometry Conditioning in an Embodied SLM: Training Controls and Robustness Diagnostics in a 0.8B Hybrid Model",
+  "source_url": "https://arxiv.org/abs/2609.09213",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一个0.8B混合语言模型在具身操作任务中如何受物理状态输入的影响。模型仅训练6.2M参数，在LIBERO-Spatial的三个任务上测试了六种条件，使用三个随机种子和540次留出rollout进行评估。关键发现是：将循环衰减门条件化于几何增量时成功率为28.9%，而训练时打乱这些增量反而达到36.7%，不提供显式物体/目标几何信息时为24.4%。这表明几何条件化并未如预期提升性能，甚至可能因训练信号与推理不一致而受损，打乱增量意外地起到了正则化或防止过拟合的作用。该研究为具身小语言模型（SLM）的几何条件化设计提供了重要的鲁棒性诊断，揭示了物理状态输入在训练控制中的反直觉效应，对具身智能和高效模型适配具有参考价值。",
+  "tags": [
+    "Embodied AI",
+    "Small Language Model",
+    "Robotics",
+    "Geometry Conditioning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "几何增量条件化在训练中并未提升性能，反而低于打乱增量的情况，表明训练信号与推理时的一致性可能比信息内容本身更重要。",
+      "打乱几何增量意外地提高了成功率（36.7% vs 28.9%），可能起到正则化作用，防止模型过度依赖特定几何模式。",
+      "显式物体/目标几何信息的缺失导致性能下降（24.4%），说明几何信息对任务仍有基础性贡献，但条件化方式需要重新设计。",
+      "在0.8B小模型上仅训练6.2M参数即可进行具身操作，展示了高效参数适配的潜力，但条件化机制需谨慎设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-105",
+  "title": "BRACE: Anchored Bellman-Residual Correction for Stale Critics in Asynchronous RL",
+  "source_url": "https://arxiv.org/abs/2609.09783",
+  "source_platform": "rss_ai_research",
+  "summary": "BRACE（Anchored Bellman-Residual Correction）是一篇针对异步强化学习中陈旧评论家（stale critic）问题的研究论文。在异步 RL 训练（尤其是大语言模型训练）中，策略滞后（policy lag）会导致评论家网络偏向过时的行为策略，从而产生偏差。现有异步 LLM 训练工作主要修正 actor 而忽略该偏差，而经典 RL 的离策略价值修正方法又因短修正视野无法迁移到长视野智能体任务。BRACE 提出锚定 Bellman 残差修正方法，旨在解决异步训练中评论家滞后带来的价值估计偏差。该工作对大规模语言模型异步 RL 训练具有重要价值，因为异步训练是当前扩展 LLM 训练的标准范式，而评论家偏差直接影响训练稳定性与最终策略质量。论文属于交叉领域公告，结合了经典 RL 理论修正与 LLM 异步训练实践，为提升异步 RL 训练效率与可靠性提供了新思路。",
+  "tags": [
+    "Reinforcement Learning",
+    "Asynchronous Training",
+    "LLM",
+    "Value Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "异步 RL 训练中策略滞后会使评论家偏向陈旧行为策略，现有工作仅修正 actor 而忽视该偏差",
+      "经典离策略价值修正因短修正视野无法直接应用于长视野智能体任务",
+      "BRACE 通过锚定 Bellman 残差修正来缓解陈旧评论家带来的价值估计偏差",
+      "该方法针对 LLM 异步训练场景，有望提升大规模 RL 训练的稳定性与效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

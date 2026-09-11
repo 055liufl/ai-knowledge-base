@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-065",
+  "title": "Critical initialization destabilizes higher input derivatives in wide scalar-input networks",
+  "source_url": "https://arxiv.org/abs/2609.09244",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了宽随机初始化标量输入神经网络中高阶输入导数的稳定性问题。经典理论表明，在无限宽极限下，网络初始化若处于混沌边缘（edge-of-chaos），则一阶输入扰动能够被稳定传播，这对信号传播和梯度流至关重要。然而，物理信息神经网络（PINN）、分数匹配和导数正则化等任务依赖于高阶输入导数（如二阶、三阶），这些高阶导数的稳定性尚未得到充分理解。作者针对光滑标量输入的全连接网络，利用无限宽极限下固定深度处有限导数喷流（derivative jet）的联合高斯性，推导了精确到三阶的均场递归关系。分析表明，临界初始化虽然保持一阶导数稳定，但会破坏高阶输入导数的稳定性，导致其方差随深度指数增长或衰减。这一发现揭示了混沌边缘初始化在需要高阶导数的任务中的潜在缺陷，为设计更稳定的初始化方案提供了理论指导，对物理信息机器学习、生成模型和正则化方法具有重要影响。",
+  "tags": [
+    "Neural Network Theory",
+    "Initialization",
+    "Higher-order Derivatives",
+    "Mean-field Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临界初始化（edge-of-chaos）仅能保持一阶输入扰动的稳定性，但会导致高阶输入导数不稳定。",
+      "通过均场递归分析，首次精确推导了无限宽标量输入网络前三阶导数的传播规律。",
+      "该发现对依赖高阶导数的任务（如PINN、分数匹配、导数正则化）具有直接警示，需重新审视初始化策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

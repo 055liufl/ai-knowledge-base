@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-119",
+  "title": "Fidelity-Aware Scheduling of Quantum Circuits on Multi-QPU Systems",
+  "source_url": "https://arxiv.org/abs/2609.09980",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多QPU（量子处理单元）系统的保真度感知调度方法，旨在解决HPC-QC（高性能计算-量子计算）平台中异构量子设备带来的编译与调度挑战。当前量子设备处于含噪中等规模量子（NISQ）阶段，不同QPU在尺寸、拓扑结构、原生门集合和噪声特性上存在显著差异，导致同一量子电路在不同设备上的执行保真度差异巨大。随着电路深度增加，误差迅速累积，因此如何将量子电路合理分配到最合适的QPU上执行，成为提升结果可靠性的关键问题。该研究将保真度作为调度决策的核心指标，综合考虑电路编译到特定目标设备后的实际执行质量，而非仅关注负载均衡或排队时间等传统指标。这项工作对于构建可扩展的异构量子计算基础设施具有重要价值，为未来量子云平台和混合计算系统的资源管理提供了新思路，尤其适合关注量子编译、量子资源调度和NISQ时代实用化落地的研究者与工程师。",
+  "tags": [
+    "Quantum Computing",
+    "Scheduling",
+    "Compiler",
+    "NISQ",
+    "HPC"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:46:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多QPU系统中设备异构性（尺寸、拓扑、原生门、噪声）导致同一电路在不同设备上的执行保真度差异显著，调度必须将保真度作为首要优化目标。",
+      "量子电路编译与设备选择紧密耦合，保真度取决于编译到特定目标设备后的实际映射与噪声累积情况，因此调度决策需与编译过程协同考虑。",
+      "在NISQ阶段，误差随电路深度快速累积，最大化执行保真度是获得可靠量子计算结果的前提，传统以负载均衡为中心的调度策略不再适用。",
+      "该工作为HPC-QC混合平台中的量子资源管理提供了保真度感知的调度框架，有助于推动异构量子计算系统的实用化。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

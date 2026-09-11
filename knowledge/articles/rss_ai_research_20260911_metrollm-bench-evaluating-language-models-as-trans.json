@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-121",
+  "title": "MetroLLM-Bench: Evaluating Language Models as Transit Kiosk Runtimes",
+  "source_url": "https://arxiv.org/abs/2609.10016",
+  "source_platform": "rss_ai_research",
+  "summary": "MetroLLM-Bench 是一个包含 955 个测试用例的基准，用于评估语言模型作为地铁自助服务终端策略层的表现。该基准覆盖六个真实地铁系统（站点数从 37 到 414 不等）和十一个任务类别，包括路径规划、票价计算、运营中断、无障碍服务以及对抗性输入。在每个用例中，模型必须调用结构化工具，并提交机器可渲染的终端状态，其中包含结果以及必要时的单张票价报价。这项工作值得关注，因为它将 LLM 评估从通用问答和文本生成推进到真实、受约束的公共基础设施场景，强调工具调用、结构化输出和鲁棒性。它为研究者和开发者提供了一个可复现的测试平台，用于衡量模型在票务、导航和应急处理等高风险任务中的可靠性，并揭示当前模型在对抗性输入和复杂换乘逻辑下的潜在失败模式。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Tool Use",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:46:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MetroLLM-Bench 将 LLM 评估聚焦于真实公共交通场景，要求模型调用结构化工具并输出可渲染的终端状态，而非仅生成文本。",
+      "基准覆盖六个真实地铁系统和十一类任务，包括对抗性输入，有助于暴露模型在鲁棒性和安全性方面的不足。",
+      "该基准为衡量 LLM 作为策略层在受约束、高风险环境中的可靠性提供了可复现的测试平台。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-136",
+  "title": "GANDR: Claim Auditing for Verifiable Legal Answer Generation",
+  "source_url": "https://arxiv.org/abs/2609.10293",
+  "source_platform": "rss_ai_research",
+  "summary": "GANDR 是一篇针对法律领域可验证答案生成的研究工作，聚焦于当前 grounded-generation（基于检索的生成）管线的一个关键缺陷：现有系统通常对整段答案进行整体评分，导致即使结论正确，其引用的法条或判例可能是伪造或松散匹配的，仍能获得较高分数。在法律等高风险场景中，答案的价值取决于读者能否逐条核验每个主张所引用的来源。GANDR 提出了一套面向逐条主张（per-claim）验证的审计系统，并配套设计了能够衡量这种细粒度验证能力的评估方法。该工作值得关注的原因在于：它将 RAG/grounded generation 的评估粒度从答案级下沉到主张级，直接回应了法律 AI 落地中最核心的可信度与可审计性问题，对构建真正可追溯、可验证的专业领域问答系统具有方法论意义，也为后续研究提供了新的评测基准思路。",
+  "tags": [
+    "RAG",
+    "Legal AI",
+    "Claim Verification",
+    "Grounded Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:46:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 grounded-generation 管线以整段答案为单位评分，无法发现正确结论背后伪造或松散匹配的引用，存在严重可信度盲区。",
+      "法律等高风险领域要求逐条主张可核验，因此需要将验证与评估粒度从答案级下沉到 claim 级。",
+      "GANDR 同时提供 per-claim 审计系统和配套评估方法，为可验证法律答案生成建立了新的问题定义与衡量标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

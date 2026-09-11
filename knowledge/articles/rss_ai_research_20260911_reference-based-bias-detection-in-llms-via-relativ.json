@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-038",
+  "title": "Reference-Based Bias Detection in LLMs via Relative Representations of Hidden States",
+  "source_url": "https://arxiv.org/abs/2609.10060",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于参考的偏见检测方法，通过比较相关模型变体（如微调前后）的隐藏状态表示来审计大语言模型中的偏见。现有偏见审计方法通常依赖模型输出，需要昂贵的基准测试或评判模型，且可能遗漏从未出现在生成文本中的内部表示偏移。由于微调会重塑表示几何结构，绝对隐藏状态无法直接比较，因此该方法采用相对表示（relative representations）来对齐不同模型变体的隐藏状态空间，从而检测出模型内部潜在的偏见变化。这项工作值得关注，因为它将偏见检测从输出层面推进到内部表示层面，提供了一种更敏感、更高效的审计手段，尤其适用于微调等模型演化场景，对模型安全与对齐研究具有重要价值。",
+  "tags": [
+    "Bias Detection",
+    "LLM",
+    "Hidden States",
+    "Fine-tuning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有偏见审计依赖输出，可能遗漏未在生成文本中显现的内部表示偏移。",
+      "微调会改变表示几何结构，导致绝对隐藏状态不可直接比较，需采用相对表示进行对齐。",
+      "基于参考的隐藏状态比较可有效检测模型变体间的偏见变化，提升审计敏感度。",
+      "该方法为模型安全与对齐提供了一种更高效、更深入的内部审计途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-066",
+  "title": "What Fixed-Rollout pass@k Evaluations Can Identify",
+  "source_url": "https://arxiv.org/abs/2609.09245",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对当前大模型评估中广泛使用的重复采样 pass@k 指标提出了重要的理论质疑。作者在 pooled/random-task 条件二项分布模型下证明，当每个问题仅采集 n 个样本时，固定 n 的成功计数只能识别潜在每任务成功分布的前 n 个自由矩。因此，直接计算的 pass@k 仅在 k <= n 时具有可识别性，而对于 k > n 的外推 pass@k、尾部指数和尾部常数均不可识别。这意味着当前许多评估实践中将 pass@k 外推到远超采样数 n 的做法缺乏统计理论基础，可能导致对模型能力的误判。该工作为 LLM 评估方法论提供了严格的统计视角，提醒研究者和工程团队在设计基准测试时需谨慎对待外推指标，并重新审视依赖此类指标的模型比较结论。",
+  "tags": [
+    "LLM Evaluation",
+    "pass@k",
+    "Statistics",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定 n 次采样只能识别潜在成功分布的前 n 个矩，pass@k 仅在 k <= n 时可识别",
+      "外推 pass@k、尾部指数和尾部常数在 k > n 时不可识别，缺乏统计基础",
+      "当前许多 LLM 评估中 pass@k 外推做法可能产生误导性结论",
+      "评估设计应限制 k 不超过实际采样数 n，或采用更严谨的统计方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

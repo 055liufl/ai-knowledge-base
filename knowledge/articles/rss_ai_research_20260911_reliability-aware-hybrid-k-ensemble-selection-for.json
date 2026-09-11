@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-056",
+  "title": "Reliability-Aware Hybrid-K Ensemble Selection for Cervical Cytology Classification: Integrating Discrimination, Calibration, and Selective Prediction",
+  "source_url": "https://arxiv.org/abs/2609.09189",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对宫颈细胞学分类这一临床图像分析任务，提出了一种可靠性感知的 Hybrid-K 集成选择框架。传统方法仅关注分类准确率，但在临床场景中，置信度校准与可靠的不确定性估计同样关键。作者在 SIPaKMeD 数据集上评估了九种深度学习架构，采用固定的分层五折划分和三个训练随机种子，并结合后验温度缩放（post-hoc temperature scaling）进行校准。该框架综合了判别力（discrimination）、校准质量（calibration）和选择性预测（selective prediction）三个维度来筛选集成模型，而非单一追求精度。这一工作值得关注，因为它将模型可靠性评估从单一指标扩展到多维度，并引入选择性预测机制，使模型在低置信度时可拒绝预测，从而更贴合临床辅助诊断对安全性和可信度的要求。该研究为医学图像分类中的集成学习与不确定性量化提供了可复用的评估范式，对推动 AI 在临床落地具有实际意义。",
+  "tags": [
+    "Medical Imaging",
+    "Ensemble Learning",
+    "Uncertainty Quantification",
+    "Calibration",
+    "Selective Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临床图像分析中，仅靠高分类准确率不足以保证模型可用，置信度校准和不确定性估计同样关键。",
+      "提出 Hybrid-K 集成选择框架，同时优化判别力、校准质量和选择性预测能力，实现多维度可靠性评估。",
+      "在 SIPaKMeD 宫颈细胞学数据集上系统评估九种深度学习架构，采用固定五折划分与多随机种子保证结果稳健性。",
+      "选择性预测机制允许模型在低置信度时拒绝输出，有助于提升临床辅助诊断的安全性与可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

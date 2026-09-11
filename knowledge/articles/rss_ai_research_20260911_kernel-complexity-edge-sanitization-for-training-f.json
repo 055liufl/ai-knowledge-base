@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-101",
+  "title": "Kernel-Complexity Edge Sanitization for Training-Free Defense against Structural Graph Attacks",
+  "source_url": "https://arxiv.org/abs/2609.09698",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Kernel-Complexity Edge Sanitization（KCES）的新型图神经网络防御方法，旨在抵御针对图结构的对抗性攻击。图神经网络（GNN）在众多应用中取得了显著成功，但其对恶意扰动图结构的对抗攻击高度脆弱。现有防御方法普遍存在理论支撑不足、依赖特定攻击启发式规则、或需要昂贵的对抗训练等重训练过程等问题。KCES 的核心思路是在训练完成后对图结构进行边净化，通过核复杂度度量识别并移除可疑的对抗性边，从而在不重新训练模型的前提下实现防御。该方法强调理论严谨性，避免了攻击特定假设，并显著降低了防御成本。这项工作对于图神经网络安全、对抗鲁棒性以及图结构学习领域具有重要价值，尤其适合需要快速部署防御而无法承担重训练开销的实际场景。",
+  "tags": [
+    "GNN",
+    "Adversarial Defense",
+    "Graph Learning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出训练无关的图结构防御方法 KCES，通过核复杂度度量进行边净化，避免昂贵的对抗训练。",
+      "现有 GNN 防御方法多缺乏理论支撑或依赖攻击特定启发式，KCES 试图弥补这一空白。",
+      "该方法在模型训练完成后直接对图结构进行净化，适合无法重训练或需快速部署的场景。",
+      "核心创新在于利用核复杂度识别并移除对抗性边，为图对抗防御提供了新的理论视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

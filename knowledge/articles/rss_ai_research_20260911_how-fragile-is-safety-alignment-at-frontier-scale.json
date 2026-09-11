@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260911-108",
+  "title": "How Fragile Is Safety Alignment at Frontier Scale? A Single-Direction Attack on a 320B MoE",
+  "source_url": "https://arxiv.org/abs/2609.09793",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了方向性消融（directional ablation）这一白盒攻击方法在超大规模稀疏专家混合（MoE）模型上的有效性。方向性消融通过从写入残差流的权重中投影出单一的“拒绝方向”，从而移除对齐语言模型的拒绝能力，无需基于梯度的训练或优化，仅需数百个对比提示，是开放权重对齐的经典白盒攻击。然而，此前该攻击仅在约700亿参数以下的稠密模型上得到验证。本文首次将其扩展到3200亿参数的MoE模型，探究其是否依然有效。研究发现，即使在如此前沿的规模下，单一方向攻击仍能显著削弱模型的安全对齐，暴露出当前对齐技术在大规模MoE架构中的脆弱性。这一发现对AI安全领域具有重要意义，因为它表明随着模型规模增长，对齐机制可能并未获得预期的鲁棒性，反而可能因架构特性而面临新的攻击面。该工作为评估和提升大规模模型的安全性提供了关键实证，并呼吁社区重新审视对齐策略在超大规模模型中的有效性。",
+  "tags": [
+    "AI Safety",
+    "Alignment",
+    "Adversarial Attack",
+    "MoE",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "方向性消融攻击首次在320B MoE模型上验证有效，表明单一方向攻击可扩展至前沿规模。",
+      "该攻击无需梯度优化，仅需数百对比提示，凸显了开放权重对齐的脆弱性。",
+      "大规模MoE架构可能引入新的安全漏洞，对齐鲁棒性并未随规模增长而自然提升。",
+      "研究结果呼吁重新评估超大规模模型的安全对齐策略，并开发更鲁棒的防御方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-035",
+  "title": "Structural Process Supervision for Latent Chain-of-Thought Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.09928",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对潜在链式推理（Latent Chain-of-Thought）中缺乏过程监督的问题提出解决方案。现有方法用紧凑的连续空间嵌入替代冗长的显式 CoT token，以提升 token 级效率与鲁棒性，但由于缺乏对潜在嵌入的直接过程监督，常导致表示坍缩和信息分布不均。作者提出原型中介过程监督（Prototype-Mediated Process Supervision, PMPS），引入可学习的原型来对潜在推理过程进行结构化监督，从而改善潜在表示的质量与信息分布。该工作值得关注，因为它触及了潜在推理这一提升 LLM 推理效率的重要方向的核心瓶颈——过程监督缺失，并给出了结构化的监督机制，有望推动更高效、更稳定的隐式推理模型发展。",
+  "tags": [
+    "Chain-of-Thought",
+    "Latent Reasoning",
+    "Process Supervision",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:42:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在推理用连续嵌入替代显式 CoT token，可提升 token 效率与鲁棒性，但缺乏过程监督会导致表示坍缩和信息分布不均。",
+      "PMPS 通过引入可学习原型对潜在嵌入进行结构化过程监督，缓解上述问题。",
+      "该方向的核心挑战在于如何在不展开显式推理步骤的前提下，对隐式推理过程施加有效监督。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

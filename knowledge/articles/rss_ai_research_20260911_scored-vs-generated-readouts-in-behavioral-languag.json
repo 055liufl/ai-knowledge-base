@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-031",
+  "title": "Scored vs. Generated Readouts in Behavioral Language Models: An Empirical Study of Elicitation Format",
+  "source_url": "https://arxiv.org/abs/2609.09882",
+  "source_platform": "rss_ai_research",
+  "summary": "本研究探讨了行为语言模型（Behavioral Language Models）中两种不同读出方式的差异：一种是通过对答案 token 打分获得的概率（Scored Readouts），另一种是在生成书面理由后产生的预测（Generated Readouts）。研究者在固定模型检查点和提示内容的前提下，跨 13 个模型-领域组合（涵盖三个市场的四个零售任务，其中两个使用完全公开的数据和检查点）进行了系统比较。该研究的意义在于，它挑战了业界将这两种读出方式视为可互换的默认假设，揭示了 elicitation format（引出格式）本身可能对预测结果产生实质性影响。对于依赖语言模型进行用户行为预测、推荐系统或商业决策的应用而言，这一发现提示开发者需要谨慎选择读出方式，并可能重新审视现有评估流程的可靠性。研究还强调了在行为建模场景中，模型输出的呈现形式与模型本身同等重要，为后续研究提供了可复现的基准和实证依据。",
+  "tags": [
+    "LLM",
+    "Behavioral Modeling",
+    "Evaluation",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:41:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Scored 和 Generated 两种读出方式在行为语言模型中并非可互换，固定模型和提示后仍会产生系统性差异",
+      "引出格式（elicitation format）本身是影响预测结果的重要变量，需在评估和部署中显式考虑",
+      "研究覆盖多市场、多任务的 13 个模型-领域组合，增强了结论的泛化性和可复现性",
+      "对于依赖行为预测的应用，选择错误的读出方式可能导致决策偏差，需重新审视现有流程"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

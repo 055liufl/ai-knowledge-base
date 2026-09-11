@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260911-097",
+  "title": "Which Medical Questions Deserve Rationales? Perturbation-Sensitive Selection for Robust QA",
+  "source_url": "https://arxiv.org/abs/2609.09684",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究医学问答（QA）中一个被忽视的问题：在答案标签已存在但高质量推理依据（rationale）稀缺、噪声大或验证成本高的情况下，如何选择哪些已标注问题值得分配有限的 token 预算来生成或监督 rationale。作者提出了一种基于扰动敏感性的选择方法（Perturbation-Sensitive Selection），用于在固定 token 预算下挑选最适合获得 rationale 监督的样本，从而提升模型在医学 QA 任务中的鲁棒性和推理质量。该工作将传统的数据标注选择问题从“哪些问题需要标注答案”转变为“哪些已标注问题需要 rationale 监督”，为医学 QA 中的可解释性和鲁棒性研究提供了新视角。其价值在于：医学领域对推理过程的可靠性和可解释性要求极高，而 rationale 标注成本昂贵，因此高效选择 rationale 监督样本具有重要的实际意义。该方法有望降低医学 QA 系统的开发成本，同时提升模型在分布偏移或对抗扰动下的稳健性，对医疗 AI 的可信部署具有推动作用。",
+  "tags": [
+    "Medical QA",
+    "Rationale Selection",
+    "Robustness",
+    "Data Selection"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:45:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在医学 QA 中，答案标签通常充足但高质量 rationale 稀缺，因此问题应从“标注哪些问题”转向“在固定 token 预算下为哪些已标注问题分配 rationale 监督”。",
+      "提出基于扰动敏感性的选择策略，优先选择对扰动敏感的问题进行 rationale 监督，以提升模型鲁棒性。",
+      "该方法为医学 QA 中可解释性与鲁棒性的平衡提供了新的数据选择视角，有望降低 rationale 标注成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260911-062",
+  "title": "Distribution-Consistent Inference for Dynamic Sparse Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2609.09241",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对动态稀疏混合专家（MoE）模型的分布一致性推理方法。MoE 架构通过将模型容量扩展到多个专家网络，同时保持推理效率，已成为大模型扩展的重要范式。然而，现有 MoE 模型大多采用固定的 top-k 专家选择策略，为每个 token 分配相同的专家预算，即使某些 token 只需更少专家即可完成推理。推理时的动态 top-k 路由可以在不重新训练的情况下减少计算量，但现有方法往往忽略了动态路由导致的专家分布偏移问题，从而影响模型输出的一致性。本文提出的分布一致性推理方法旨在解决这一关键问题，通过校正动态路由引入的分布偏差，在保持推理质量的同时实现计算效率的提升。该工作对于大模型的高效推理和 MoE 架构的实用化具有重要意义，尤其适用于需要低延迟、高吞吐的部署场景。",
+  "tags": [
+    "MoE",
+    "Inference",
+    "Sparse Routing",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-11T12:38:39Z",
+  "collected_at": "2026-09-11T12:43:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "动态 top-k 路由可在推理时减少计算，但会引入专家分布偏移，影响输出一致性。",
+      "现有动态路由方法忽略了分布一致性问题，可能导致推理质量下降。",
+      "本文提出分布一致性推理方法，旨在校正动态路由的分布偏差，平衡效率与质量。",
+      "该工作对 MoE 模型的高效部署具有实际意义，尤其适合资源受限的推理场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
