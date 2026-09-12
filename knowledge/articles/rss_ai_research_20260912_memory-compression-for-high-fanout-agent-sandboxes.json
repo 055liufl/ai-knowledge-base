@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-040",
+  "title": "Memory Compression for High-Fanout Agent Sandboxes",
+  "source_url": "https://arxiv.org/abs/2609.11294",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对高扇出（high-fanout）Agent 沙箱场景的内存压缩方法。在高扇出 Agent 工作负载中，单个任务可能同时启动大量并发沙箱会话，导致内存瓶颈日益严重。然而这些沙箱并非彼此独立：它们源自同一共享模板，并执行相关轨迹，因此存在大量模板相对冗余和跨沙箱冗余。传统内存压缩方法在三个维度上与这一场景不匹配：压缩方式、压缩粒度以及压缩时机。该研究针对这些不匹配问题提出了专门的压缩策略，旨在降低高并发 Agent 沙箱的内存占用。这项工作值得关注，因为随着 Agent 系统向大规模并发执行演进，内存效率将成为制约其可扩展性的关键瓶颈，而现有通用压缩方案难以直接适用。该研究为 Agent 基础设施的内存优化提供了新思路，对构建高效、可扩展的 Agent 运行时环境具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Memory Compression",
+    "Sandbox",
+    "Infra"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高扇出 Agent 工作负载中，单个任务可并发启动大量沙箱会话，形成显著的内存瓶颈",
+      "并发沙箱源自共享模板并执行相关轨迹，存在大量模板相对冗余和跨沙箱冗余，为压缩提供了机会",
+      "传统内存压缩方法在压缩方式、粒度和时机三个维度上与 Agent 沙箱场景不匹配，需要专门设计",
+      "该研究为大规模 Agent 运行时的内存可扩展性提供了新的优化方向"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

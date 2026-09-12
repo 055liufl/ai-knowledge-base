@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-106",
+  "title": "DeFiFusion: Combining Transaction Events with Smart Contracts to Detect Price Manipulation Attacks",
+  "source_url": "https://arxiv.org/abs/2609.11008",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 DeFiFusion，一种结合交易事件与智能合约代码来检测 DeFi 价格操纵攻击（Price Manipulation Attacks, PMAs）的方法。DeFi 作为基于区块链的金融服务快速扩张，其市场交易动态与底层智能合约逻辑深度耦合，这种去中心化、自动化的交互在消除中介的同时也极大扩展了攻击面，价格操纵攻击已造成灾难性经济损失。现有检测方案多依赖单一维度信息，或仅分析链上交易事件，或仅静态审计合约代码，难以捕捉交易行为与合约逻辑之间的复杂关联。DeFiFusion 的核心思路是融合两类异构信号：一方面从链上交易事件中提取资金流动、调用序列等动态行为特征，另一方面从智能合约源码或字节码中抽取控制流、状态变更等静态语义特征，通过联合建模识别异常的价格操纵模式。该工作属于 DeFi 安全与智能合约分析交叉领域，对区块链安全研究者、DeFi 协议开发者以及风控产品团队具有参考价值，有望提升攻击检测的准确率与可解释性，为构建更稳健的 DeFi 安全基础设施提供新思路。",
+  "tags": [
+    "DeFi",
+    "Smart Contract",
+    "Security",
+    "Anomaly Detection"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:06:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DeFi 中交易动态与智能合约逻辑深度耦合，单一维度检测难以覆盖价格操纵攻击的完整攻击面。",
+      "融合链上交易事件与合约静态语义可提供互补信号，提升 PMA 检测的准确性与鲁棒性。",
+      "价格操纵攻击已造成重大经济损失，亟需更有效的自动化检测与防御机制。",
+      "该方向结合程序分析与异常检测，为 DeFi 安全研究提供了跨层建模的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

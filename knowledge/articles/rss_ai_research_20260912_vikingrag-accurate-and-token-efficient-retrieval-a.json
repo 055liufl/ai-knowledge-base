@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-135",
+  "title": "VikingRAG: Accurate and Token-efficient Retrieval-augmented Generation over Structured Documents",
+  "source_url": "https://arxiv.org/abs/2609.11390",
+  "source_platform": "rss_ai_research",
+  "summary": "VikingRAG 是一种面向结构化文档的检索增强生成（RAG）系统，旨在解决现有方法在利用文档结构提升准确率时产生大量 token 开销的问题。该系统提出目录感知的语义数据管理机制，将语义检索与结构访问紧密结合，通过证据缺口驱动的多轮检索策略，在减少结构上下文 token 消耗的同时保持高 RAG 准确率。其核心创新在于将文档的目录层级结构作为可导航的语义索引，使模型能够按需定位证据，而非一次性注入大量结构信息。该工作对 RAG 系统的效率优化具有参考价值，尤其适用于处理长文档、技术手册、法律合同等具有强结构性的场景，有望降低推理成本并提升响应速度。",
+  "tags": [
+    "RAG",
+    "Retrieval",
+    "Structured Documents",
+    "Token Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:07:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有结构化 RAG 方法通过注入大量结构上下文提升准确率，但 token 成本高昂，VikingRAG 旨在平衡准确率与效率。",
+      "系统采用目录感知的语义数据管理，将文档层级结构作为可导航索引，实现按需检索。",
+      "证据缺口驱动的多轮检索机制动态决定何时以及如何访问结构信息，减少冗余 token。",
+      "该方法对长结构化文档场景具有实用潜力，可降低推理成本并提升 RAG 系统可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

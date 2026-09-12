@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260912-088",
+  "title": "Adaptive Margin Ordinal Loss: Penalizing Center-Class Hedging in Ordinal Classification",
+  "source_url": "https://arxiv.org/abs/2609.10752",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为自适应边际序数损失（Adaptive Margin Ordinal Loss）的新方法，用于解决序数分类任务中神经网络因标准交叉熵损失而出现的“中心类对冲”问题。该问题表现为模型倾向于预测中间类别，因为这样做能最小化对称损失，无论真实标签如何。现有序数损失方法虽能处理大误差惩罚和排序一致性等问题，但未能直接针对中心类对冲进行惩罚。本文通过引入自适应边际机制，对中心类预测施加额外惩罚，从而鼓励模型做出更准确的序数预测。该方法在理论上分析了中心类对冲的成因，并实验验证了其有效性。这项研究对于需要序数预测的应用（如年龄估计、情感分析、评级预测）具有重要价值，能够提升模型在序数任务中的表现，减少系统性偏差。",
+  "tags": [
+    "Ordinal Classification",
+    "Loss Function",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准交叉熵损失在序数分类中导致模型倾向于预测中心类别，即中心类对冲现象。",
+      "现有序数损失方法未能直接解决中心类对冲问题，需要专门的自适应边际惩罚。",
+      "提出的自适应边际序数损失通过惩罚中心类预测，鼓励模型做出更准确的序数判断。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

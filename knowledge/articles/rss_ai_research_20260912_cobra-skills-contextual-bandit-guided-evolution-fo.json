@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-068",
+  "title": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+  "source_url": "https://arxiv.org/abs/2609.11682",
+  "source_platform": "rss_ai_research",
+  "summary": "COBRA-Skills 是一篇来自 arXiv 的技术论文，提出了一种面向 LLM Agent 技能优化的高效框架。当前 LLM Agent 可以从历史任务经验中蒸馏出可复用技能，但现有技能优化方法通常依赖昂贵的执行反馈评估以及大量任务数据，导致优化成本高、迭代效率低。COBRA-Skills 将技能优化问题建模为在动态演化候选空间上的预算受限序列优化问题，并引入上下文赌博机（contextual bandit）机制对候选技能进行优先级排序，从而在有限预算下更高效地搜索和筛选优质技能。该工作的核心价值在于：它试图降低 Agent 技能自动优化的计算与数据门槛，使技能库的构建和迭代更加经济可行。对于关注 Agent 自我进化、技能库构建、自动化提示/技能优化的研究者和开发者而言，这一方法提供了一种将序列决策与技能搜索结合的新思路，有望推动 Agent 在真实任务中持续积累和复用经验，减少对大规模标注数据和反复执行评估的依赖。",
+  "tags": [
+    "Agent",
+    "Skill Optimization",
+    "Contextual Bandit",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Agent 技能优化建模为预算受限的动态候选空间序列优化问题，降低对昂贵执行评估的依赖。",
+      "引入上下文赌博机机制对候选技能进行优先级排序，在有限预算下提升技能搜索效率。",
+      "方法旨在减少技能优化所需的任务数据量，使 Agent 技能库构建更具可扩展性和经济性。",
+      "为 LLM Agent 从历史经验中蒸馏和持续优化可复用技能提供了新的自动化框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

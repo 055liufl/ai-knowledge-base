@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-096",
+  "title": "DriftNet: A Dual-Head Trajectory Transformer for Detecting and Localizing Prompt Injection in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.10892",
+  "source_platform": "rss_ai_research",
+  "summary": "DriftNet 是一种针对 LLM Agent 中提示注入攻击检测与定位的双头轨迹 Transformer 模型。该研究指出，当间接提示注入攻击成功时，Agent 的行为轨迹会呈现出可识别的模式：正常的工具调用前缀、被污染的观察结果，以及服务于攻击者的后续动作后缀。现有检测系统通常只能返回整条轨迹的判定结果或单个不安全索引，无法满足运维人员对攻击入口、受损步骤以及是否成功抵抗毒化三个关键事实的需求。DriftNet 通过双头架构同时实现攻击检测与精确定位，能够识别攻击进入点、被污染的具体步骤，并判断 Agent 是否成功抵抗了注入。该工作对于提升 LLM Agent 的安全性和可观测性具有重要意义，为构建更可靠的 Agent 防护系统提供了新思路。",
+  "tags": [
+    "LLM Agent",
+    "Prompt Injection",
+    "Security",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示注入攻击在 Agent 行为轨迹中留下可检测的模式：良性前缀、毒化观察、攻击者后缀",
+      "现有系统仅提供整体判定或单点索引，无法满足攻击入口、受损步骤和抵抗状态的三重定位需求",
+      "双头轨迹 Transformer 架构可同时实现攻击检测与细粒度定位，提升 Agent 安全可观测性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

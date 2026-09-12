@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-015",
+  "title": "Grounding Agent Memory: Environment-Probing Curation for Enterprise Agents",
+  "source_url": "https://arxiv.org/abs/2609.11060",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“环境探测式策展”（Environment-Probing Curation）的方法，旨在解决企业级智能体长期记忆管理中的关键问题。当前，面向生产的智能体平台开始引入持久化记忆，以帮助长周期智能体跨会话积累经验。然而，现有的后任务策展智能体仅能基于已完成的任务轨迹进行记忆整理，这会导致三类问题：保留错误信息、对部分证据过度泛化，以及保留过时知识。本文的核心创新在于，为现有的异步策展智能体赋予最小权限的只读世界工具，使其能够在任务完成后主动探测环境，验证和修正记忆内容，而非被动依赖历史轨迹。该方法与现有部署架构兼容，无需重构系统即可增强记忆质量。这项工作值得关注，因为它直接回应了企业级智能体落地中的核心痛点——记忆的准确性与时效性，提供了一种实用且低侵入的解决方案，有望提升智能体在真实业务场景中的可靠性和长期自主性。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Enterprise",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:02:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅依赖已完成轨迹的策展智能体会固化错误、过度泛化并保留过时知识，这是企业级智能体记忆系统的关键缺陷。",
+      "为策展智能体赋予最小权限的只读环境探测工具，可在任务后主动验证记忆，显著提升记忆准确性。",
+      "该方法与现有异步策展架构兼容，无需重构部署，具备较高的工程落地可行性。",
+      "环境探测式策展代表了智能体记忆管理从被动记录向主动验证的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

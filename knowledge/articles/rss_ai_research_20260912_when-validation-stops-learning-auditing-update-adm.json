@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-010",
+  "title": "When Validation Stops Learning: Auditing Update Admission for Continual Embodied Agents",
+  "source_url": "https://arxiv.org/abs/2609.10873",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对持续学习中的具身智能体（continual embodied agents）提出了一种更新准入（update admission）的审计框架。传统上，独立评估机制可以拒绝有害的策略更新，但同时也可能阻止有益的持续学习。作者认为，更新准入必须从错误控制和保留学习机会两个维度，在给定的交互预算下进行评估。文章识别了一个具体失败案例：基于范围的置信门（range-based confidence gate）在较大预算下仍无法证明旧任务行为保持不变。通过采用标准的配对二项分布构造（paired-binomial construction），可以降低这一负担，从而在保证安全性的同时促进持续学习。该工作为具身智能体的持续学习评估提供了新的视角和实用方法，值得关注。",
+  "tags": [
+    "Continual Learning",
+    "Embodied AI",
+    "Policy Update",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:01:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "更新准入需要同时考虑错误控制和保留学习机会，而不仅仅是拒绝有害更新。",
+      "基于范围的置信门在较大交互预算下仍无法证明旧任务行为不变，存在认证失败。",
+      "配对二项分布构造可以降低认证负担，平衡安全性与持续学习能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

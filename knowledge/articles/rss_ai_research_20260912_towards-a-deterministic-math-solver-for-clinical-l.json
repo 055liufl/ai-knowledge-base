@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-008",
+  "title": "Towards a Deterministic Math Solver for Clinical Language Models",
+  "source_url": "https://arxiv.org/abs/2609.10728",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对临床语言模型在算术计算上不可靠的问题，提出了一种确定性数学求解器方案。传统做法是将每个临床计算器硬编码为经过验证的函数，逐个实现，工作量大且难以扩展。作者测试了一种替代方案：让模型不直接进行计算，而是根据具体病例编写针对性的 Python 代码，由受限的本地执行器运行，作为确定性求解器。这样模型的任务从执行算术运算转变为决定如何构建计算逻辑，从而将数值计算的正确性交给确定性的代码执行环境。该方法有望提升临床计算场景下的可靠性，减少因单次数值错误导致的错误临床建议，同时保持模型在理解病例和生成计算逻辑上的灵活性。该研究对医疗 AI 的安全性和可信度具有重要意义，也为 LLM 与代码执行结合解决精确计算问题提供了新思路。",
+  "tags": [
+    "LLM",
+    "Clinical AI",
+    "Code Generation",
+    "Deterministic Execution"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:01:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在算术上不可靠，临床计算中单次数值错误即可改变建议，因此需要确定性求解方案。",
+      "让模型生成病例特定的 Python 代码，并由受限本地执行器运行，可将计算正确性从模型转移到确定性执行环境。",
+      "模型的任务从直接计算转变为决定如何构建计算逻辑，兼顾灵活性与可靠性。",
+      "该方法为临床计算器提供了一种可扩展的替代方案，避免逐个硬编码验证函数。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

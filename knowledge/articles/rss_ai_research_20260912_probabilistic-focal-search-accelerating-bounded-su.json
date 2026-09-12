@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-001",
+  "title": "Probabilistic Focal Search: Accelerating Bounded-Suboptimal Search via Lower-Bound Advancement",
+  "source_url": "https://arxiv.org/abs/2609.10584",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为概率焦点搜索（Probabilistic Focal Search, PFS）的新算法，旨在加速有界次优搜索。有界次优搜索的目标是在保证解的质量不超过最优解 w 倍的前提下，减少搜索工作量。经典的焦点搜索（Focal Search, FS）在 FOCAL 列表（即满足阈值 w*f_min 的边界节点）内利用启发式信息进行引导，但其确定性策略可能导致 f_min 在多次扩展中保持不变，从而降低效率。PFS 通过引入概率机制来改进这一点：以概率 p 遵循 FS 的引导选择，以概率 1-p 扩展 OPEN 列表中 f 值最小的节点。这种随机化策略有助于更频繁地推进下界 f_min，从而加速搜索过程。该工作为有界次优搜索提供了一种简单而有效的改进思路，在需要快速获得近似最优解的场景（如路径规划、规划问题）中具有应用潜力。",
+  "tags": [
+    "搜索算法",
+    "启发式搜索",
+    "有界次优",
+    "概率方法"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:01:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PFS 通过概率混合策略平衡启发式引导和下界推进，缓解了 FS 中 f_min 停滞的问题。",
+      "该算法在保持有界次优保证的同时，可能减少扩展节点数，提升搜索效率。",
+      "随机化选择机制为经典搜索算法提供了一种简单且通用的改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

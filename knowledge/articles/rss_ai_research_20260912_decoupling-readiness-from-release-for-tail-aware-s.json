@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-011",
+  "title": "Decoupling Readiness from Release for Tail-Aware Scheduling of Agentic LLM Workflows",
+  "source_url": "https://arxiv.org/abs/2609.10964",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对智能体 LLM 工作流的尾部感知调度方法，核心思想是将「就绪」与「释放」解耦。智能体工作流由模型推理轮次与工具调用交替组成，其端到端完成时间不仅取决于推理速度，还取决于就绪轮次何时被释放到执行队列。主流运行时采用「就绪即释放」的急切策略，在资源竞争下会累积大量已释放但未完成的工作，这些轮次一旦提交便无法再被工作流级调度器重排，导致尾部延迟恶化。论文通过延迟释放就绪轮次、保留工作流级重排序空间，来优化整体完成时间分布，尤其是尾延迟。该工作对智能体系统的调度基础设施具有实际意义，适合构建高并发 Agent 平台的开发者与系统研究者关注。",
+  "tags": [
+    "Agent",
+    "Scheduling",
+    "LLM Serving",
+    "Tail Latency"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:01:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体工作流的端到端延迟由推理速度与轮次释放时机共同决定，后者常被忽视",
+      "就绪即释放的急切策略在竞争下会累积不可重排的已提交工作，放大尾部延迟",
+      "将就绪与释放解耦可为工作流级调度保留重排序空间，从而优化尾延迟"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

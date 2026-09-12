@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-105",
+  "title": "Importance Weighting for Unlabeled-unlabeled Learning under Distribution Shift",
+  "source_url": "https://arxiv.org/abs/2609.10994",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在分布偏移（distribution shift）条件下进行无标签-无标签（Unlabeled-unlabeled, UU）学习的重要性加权方法。UU学习是一种从两组具有不同类别先验的无标签数据中训练二分类器的通用框架，涵盖正例-无标签（PU）学习、噪声标签学习和基于相似度的学习等多种监督学习范式。然而，现有UU学习方法普遍假设测试分布与训练分布具有相同的类条件密度，这一假设在实际应用中往往不成立，导致模型在分布偏移场景下性能显著下降。该研究通过引入重要性加权机制，对源域和目标域之间的分布差异进行校正，从而在类条件密度发生变化时仍能实现有效的分类器学习。这项工作值得关注，因为它扩展了UU学习的理论边界，使其更贴近真实世界中数据分布动态变化的场景，对弱监督学习、领域自适应以及标签稀缺条件下的模型训练具有重要的理论与实践意义。",
+  "tags": [
+    "弱监督学习",
+    "分布偏移",
+    "重要性加权",
+    "UU学习"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:06:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "UU学习是一个统一框架，涵盖PU学习、噪声标签学习和基于相似度的学习等多种弱监督范式",
+      "现有UU方法假设训练与测试分布类条件密度相同，该假设在分布偏移下不成立，限制了实际应用",
+      "通过重要性加权校正分布偏移，可在类条件密度变化时仍有效学习二分类器",
+      "该工作拓展了UU学习的理论边界，对标签稀缺和领域自适应场景具有实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

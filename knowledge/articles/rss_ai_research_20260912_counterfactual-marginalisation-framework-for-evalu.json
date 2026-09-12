@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-091",
+  "title": "Counterfactual Marginalisation: Framework for Evaluating Robustness to Nuisance Variables",
+  "source_url": "https://arxiv.org/abs/2609.10778",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“反事实边缘化”（Counterfactual Marginalisation）的测试时评估框架，用于衡量分类模型对无关变量（nuisance variables）的鲁棒性。传统评估中，模型可能在测试集上表现优异，却依赖人口统计学属性（如年龄、性别）或采集相关的捷径特征进行预测，导致泛化性和公平性隐患。该方法的核心思路是：给定一个反事实图像生成器，对测试图像中的干扰父变量（如年龄或性别）进行干预，生成对应的反事实版本，然后对目标干预分布下的预测结果进行平均，从而得到模型在消除这些变量影响后的真实性能估计。该框架为检测和量化模型对捷径特征的依赖提供了可操作的评估手段，有助于推动更鲁棒、更公平的机器学习模型发展。其价值在于将因果推断中的反事实思想引入模型评估环节，弥补了传统测试集评估无法揭示隐藏偏差的不足，对可信AI和公平性研究具有重要参考意义。",
+  "tags": [
+    "Robustness",
+    "Causal Inference",
+    "Fairness",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出反事实边缘化作为测试时评估方法，通过干预干扰变量并平均预测来量化模型对捷径特征的依赖。",
+      "传统测试性能可能掩盖模型对人口统计或采集相关变量的依赖，该框架能揭示此类隐藏偏差。",
+      "依赖反事实图像生成器，为公平性和鲁棒性评估提供了可操作的因果干预视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

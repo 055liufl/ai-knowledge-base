@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-129",
+  "title": "The Semantic Elevation Operator and the Closure of the Undecidable Class under Preservation",
+  "source_url": "https://arxiv.org/abs/2609.11326",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种“语义提升算子”（Semantic Elevation Operator）ΛΦ，用于形式化分析自修改系统（self-modifying systems）中静态语义属性的保持问题。传统上，程序静态语义属性的不可判定性由 Rice 定理刻画，即无法一般性地判定程序是否满足某个非平凡语义性质。然而，对于能够重写自身的系统，关键问题不再是“当前是否满足性质 P”，而是“当系统通过变换 Φ 重写自身后，性质 P 是否仍然保持”。作者通过 ΛΦ 将静态问题“x 是否满足 P？”转化为动态问题“x 经 Φ 变换后 P 是否保持？”，并进一步探讨了不可判定类在保持性下的闭包性质。该工作为自修改代码、元编程、以及动态软件更新等场景中的语义分析提供了新的理论框架，值得关注是因为它扩展了 Rice 定理的适用边界，并为程序验证与安全分析在自修改系统中的不可判定性提供了形式化基础。",
+  "tags": [
+    "Rice's theorem",
+    "self-modifying systems",
+    "semantic analysis",
+    "undecidability",
+    "formal methods"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:07:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自修改系统需要从静态属性判定转向动态保持性分析，传统 Rice 定理无法直接覆盖。",
+      "语义提升算子 ΛΦ 将静态问题转化为动态保持问题，为形式化分析提供了新工具。",
+      "不可判定类在保持性下可能具有闭包性质，这为理解自修改系统的语义边界提供了理论线索。",
+      "该工作对程序验证、安全分析和元编程语言设计具有潜在影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

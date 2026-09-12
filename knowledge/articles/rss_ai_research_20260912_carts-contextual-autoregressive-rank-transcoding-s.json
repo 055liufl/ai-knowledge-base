@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-085",
+  "title": "CARTS: Contextual Autoregressive Rank Transcoding Steganography for Full-Capacity Keyed Text Encoding",
+  "source_url": "https://arxiv.org/abs/2609.10744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 CARTS（Contextual Autoregressive Rank Transcoding Steganography），一种利用自回归语言模型实现全容量密钥文本编码的隐写方法。该方法通过在不同上下文中保留每个位置的排名信息，将载荷文本转换为与原始文本 token 长度完全相同的隐写文本。此前 Norelli 等人的 Calgacus 构造仅通过实验展示了这一现象，缺乏形式化安全分析。本文首次对该方法进行了严格的理论处理，填补了安全分析空白。CARTS 的核心价值在于：它实现了全容量编码（每个 token 都能携带信息），同时保持输出文本的自然性和不可检测性，这对隐私保护、水印、隐蔽通信等领域具有重要意义。该工作将隐写术与自回归语言模型的理论分析相结合，为后续安全可靠的文本隐写系统奠定了理论基础。",
+  "tags": [
+    "Steganography",
+    "Autoregressive LM",
+    "Text Encoding",
+    "Security Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CARTS 通过保留自回归模型中的排名信息实现全容量密钥文本编码，输出 token 长度与原始文本完全一致。",
+      "本文首次为 Calgacus 构造提供严格的安全分析，弥补了此前仅有实验验证的不足。",
+      "该方法在隐蔽通信和隐私保护方面具有应用潜力，但实际部署需考虑模型访问和计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

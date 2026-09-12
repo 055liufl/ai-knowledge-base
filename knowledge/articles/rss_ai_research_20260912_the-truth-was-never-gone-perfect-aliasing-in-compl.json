@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-084",
+  "title": "The Truth Was Never Gone: Perfect Aliasing in Compliant-Context Truth Probes",
+  "source_url": "https://arxiv.org/abs/2609.10739",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了大语言模型可解释性研究中一个关键的方法论问题：完美别名（perfect aliasing）。当研究者使用“合规上下文”（即真实报告与任务规定动作恰好一致的情境）来训练“真实性探针”（truth probe）时，该探针无法从拟合标签中区分它学到的是“真实性”还是“任务规定动作”。作者通过一个受控的二元报告博弈证明，在合规上下文上拟合的真实性探针与规定动作探针实际上求解的是同一个优化问题，因此二者在语义上不可识别。进一步地，在竞争性上下文（rival contexts）中，两者的标签互为补集，导致它们的 AUROC 分数之和恒等于 1，形成一种结构性约束。这一发现对当前大量依赖探针来检测模型是否“说谎”或“诚实”的研究提出了根本性质疑：许多声称探测到真实性的结果可能只是探测到了模型对任务指令的服从。该工作提醒研究者在设计探针实验时必须使用真实性与规定动作分离的上下文，否则结论可能完全无效。对于关注 AI 安全、可解释性和对齐的研究者而言，这是一篇具有警示意义的方法论论文。",
+  "tags": [
+    "Interpretability",
+    "Truth Probes",
+    "AI Safety",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在真实报告与任务规定动作重合的合规上下文上训练的真实性探针，无法从标签中区分真实性目标与规定动作目标，导致语义不可识别。",
+      "在竞争性上下文中，真实性探针与规定动作探针的标签互为补集，其 AUROC 之和恒为 1，构成可检验的结构性约束。",
+      "大量现有探针研究可能错误地将模型对指令的服从解释为真实性，结论的有效性依赖于实验上下文的设计。",
+      "未来真实性探针实验必须使用真实性与规定动作分离的上下文，才能确保探测目标的有效识别。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

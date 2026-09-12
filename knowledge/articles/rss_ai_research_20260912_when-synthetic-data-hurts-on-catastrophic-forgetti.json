@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-087",
+  "title": "When Synthetic Data Hurts: On Catastrophic Forgetting in Skill Retrieval for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.10750",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 LLM Agent 在运行时从大规模技能库中检索技能的问题，作者构建了一个覆盖 34,396 个技能的生产级技能路由器（skill router），并基于有限的真实监督数据和合成数据进行了大规模技能检索实验。核心发现是：使用合成数据微调虽然能提升分布内（in-distribution）检索性能，但会导致模型在真实数据和分布外（OOD）数据上出现灾难性遗忘（catastrophic forgetting），即合成数据带来的收益以牺牲泛化能力为代价。该工作对当前 Agent 生态中普遍依赖合成数据扩充训练集的实践提出了重要警示，指出技能检索场景下合成数据的双刃剑效应，为后续研究如何平衡合成数据增益与模型鲁棒性提供了实证依据和方向。",
+  "tags": [
+    "Agent",
+    "Skill Retrieval",
+    "Synthetic Data",
+    "Catastrophic Forgetting",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "合成数据微调可显著提升技能检索的分布内性能，但会引发对真实数据和分布外数据的灾难性遗忘。",
+      "在大规模技能库（34,396 个技能）的生产级路由器上验证了该现象，具有实际工程参考价值。",
+      "技能检索场景下，合成数据的收益与泛化能力之间存在权衡，需谨慎设计训练策略。",
+      "该发现对依赖合成数据扩充 Agent 技能库的实践提出了警示，强调真实监督数据的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

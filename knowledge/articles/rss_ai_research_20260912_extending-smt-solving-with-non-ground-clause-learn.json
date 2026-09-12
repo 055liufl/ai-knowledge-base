@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-058",
+  "title": "Extending SMT Solving with Non-Ground Clause Learning",
+  "source_url": "https://arxiv.org/abs/2609.11509",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种扩展 SMT（可满足性模理论）求解的新演算，通过非基子句学习（Non-Ground Clause Learning）来提升非基 SMT 求解效率。当前主流方法依赖量词实例化：求解器生成基实例，再用 CDCL(T) 风格推理求解，冲突分析仅学习基子句，即使冲突源自非基子句的实例。然而，非基推理可产生比纯基推理指数级更短的证明。该工作设计了一个演算，允许在冲突分析中直接学习非基子句，从而保留非基结构信息，避免不必要的实例化爆炸。这有望显著提升含量词 SMT 问题的求解性能，对形式验证、程序分析等领域具有重要价值。",
+  "tags": [
+    "SMT",
+    "Formal Methods",
+    "Automated Reasoning",
+    "Quantifier Instantiation"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前非基 SMT 求解依赖量词实例化，冲突分析仅学习基子句，丢失了非基结构信息。",
+      "非基推理可产生比纯基推理指数级更短的证明，具有理论优势。",
+      "提出的演算允许在冲突分析中直接学习非基子句，可能大幅提升求解效率。",
+      "该工作对形式验证和程序分析等依赖 SMT 的领域有潜在影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

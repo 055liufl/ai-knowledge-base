@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-016",
+  "title": "Fork Where the Model Changes Its Mind: Belief-Shift Branching for Tree-Structured Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.11061",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“信念转移分支”（Belief-Shift Branching）的树结构强化学习方法，用于改进无评论家（critic-free）的强化学习与可验证奖励（RLVR）框架。在树结构展开中，通过在中间点分叉链，利用兄弟节点的结果差异来估计步骤级价值，从而提供步骤级信用分配。然而，每次分叉都会增加采样成本，因此在实际预算下，每条链通常只能进行少量分叉。如果分叉点选在结果已经基本确定的时刻，兄弟节点大多会一致，几乎无法提供信用信号。本文的核心贡献在于识别出分叉位置的重要性，并提出在模型“改变主意”（即信念发生显著变化）的位置进行分叉，以最大化信用信号。该方法有望在有限采样预算下提升步骤级信用分配的效率和准确性，对强化学习在复杂推理任务中的应用具有潜在价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Tree-Structured Rollouts",
+    "Credit Assignment",
+    "RLVR"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:02:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "树结构展开通过分叉和兄弟节点结果差异提供步骤级信用，但分叉成本高，需谨慎选择分叉点。",
+      "在结果已基本确定的位置分叉，兄弟节点一致性高，信用信号微弱，浪费采样预算。",
+      "信念转移分支策略选择模型信念发生显著变化的位置进行分叉，以最大化信用信号。",
+      "该方法有望在有限采样预算下提升步骤级信用分配的效率和准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

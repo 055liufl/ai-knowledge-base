@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-041",
+  "title": "Routing by Reasoning Need: Trajectory-Aware Decoding Control for Diffusion Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2609.11315",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对扩散视觉语言模型（Diffusion Vision-Language Models）在推理时存在的“推理需求不匹配”问题提出了一种轨迹感知的解码控制方法。扩散视觉语言模型通过迭代细化生成答案，其暴露的中间答案轨迹可在推理时被检查和操控。然而，当前方法对所有问题采用统一的生成长度，导致视觉封闭型问题在答案稳定后仍被继续细化而受损，而需要多步推理的问题则可能因过早停止而无法充分推理。论文提出根据推理需求动态路由解码过程，利用轨迹信息判断何时停止或继续细化，从而在保持生成质量的同时减少不必要的计算。该工作值得关注，因为它首次系统性地揭示了扩散视觉语言模型中推理需求与生成长度之间的错配问题，并提供了推理时控制的新思路，有望提升多模态推理的准确性与效率。",
+  "tags": [
+    "Diffusion Model",
+    "Vision-Language Model",
+    "Inference Control",
+    "Multimodal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散视觉语言模型的迭代细化过程暴露了中间答案轨迹，为推理时控制提供了新维度。",
+      "统一生成长度导致推理需求不匹配：简单问题被过度细化，复杂问题可能细化不足。",
+      "轨迹感知的解码控制可根据问题推理需求动态调整生成过程，平衡质量与效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

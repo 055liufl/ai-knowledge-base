@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-122",
+  "title": "HALDETECT at ImageEval 2026 Shared Tasks: Answer-First Contrastive Grounding with QLoRA",
+  "source_url": "https://arxiv.org/abs/2609.11236",
+  "source_platform": "rss_ai_research",
+  "summary": "HALDETECT 是面向 ImageEval 2026 共享任务中英语幻觉检测赛道（Task 1b）的参赛系统。该任务要求模型在给定一张图像和三条文化上合理但仅有一条有视觉依据的陈述中，识别出唯一真正有图像支撑的陈述。作者将问题建模为一次对比决策，并采用“先给答案、后给解释”的答案优先（Answer-First）生成策略，结合 QLoRA 高效微调来提升多模态大模型在细粒度视觉解释上的可靠性。该工作值得关注的原因在于：多模态大模型普遍存在流畅但错误的视觉幻觉，严重限制其在需要精细视觉理解的场景中的部署；而该方案通过对比式接地与轻量化微调，为幻觉检测提供了一种实用且可复现的解决路径，对多模态可信推理、评测基准建设以及低资源微调实践均具有参考价值。",
+  "tags": [
+    "Multimodal",
+    "Hallucination Detection",
+    "QLoRA",
+    "Vision-Language",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:06:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将幻觉检测重构为对比决策任务，从三条文化合理陈述中选出唯一有视觉依据的一条，更贴近真实细粒度理解需求。",
+      "采用答案优先（Answer-First）生成策略，先输出判断再给出解释，有助于减少解释对答案的干扰并提升一致性。",
+      "使用 QLoRA 对多模态大模型进行高效微调，在有限算力下提升视觉接地能力，为幻觉检测提供可复现的轻量化方案。",
+      "该工作针对 ImageEval 2026 共享任务，强调文化合理性与视觉依据的区分，对多模态评测和可信部署具有实践意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

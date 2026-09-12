@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-048",
+  "title": "Beyond Confidence: Stability-Aware Test-Time Adaptation for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.11393",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向大语言模型（LLM）推理的稳定性感知测试时自适应方法（Stability-Aware Test-Time Adaptation），旨在解决现有基于预测熵的测试时自适应策略的核心缺陷。当前方法通常利用模型自身的预测熵作为信号，引导模型进入更高置信度的推理状态，从而在无需外部验证器或奖励模型的情况下提升下游任务表现。然而，作者指出高置信度并不等同于正确性——LLM 可能对错误答案保持高度自信，导致自适应过程被误导。为此，该工作引入稳定性感知机制，通过评估推理过程在不同扰动或采样条件下的稳定性，来区分真正可靠的推理状态与虚假的高置信状态。这一方法为测试时自适应提供了更鲁棒的信号，有望在不增加训练成本的前提下提升 LLM 推理的可靠性。该研究值得关注，因为它挑战了'置信度即正确性'的常见假设，并为轻量级推理增强提供了新思路，对研究者和开发者均有参考价值。",
+  "tags": [
+    "LLM",
+    "Test-Time Adaptation",
+    "Reasoning",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预测熵等置信度信号不能可靠反映 LLM 推理的正确性，高置信度可能对应错误答案",
+      "稳定性感知机制可作为比单纯置信度更鲁棒的测试时自适应信号",
+      "该方法无需外部验证器或奖励模型，保持了测试时自适应的轻量级优势",
+      "研究挑战了'置信度即正确性'的隐含假设，为 LLM 推理增强提供了新方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

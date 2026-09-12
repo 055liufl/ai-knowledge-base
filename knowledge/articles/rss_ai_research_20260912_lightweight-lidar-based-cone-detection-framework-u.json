@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-059",
+  "title": "Lightweight LiDAR-Based Cone Detection Framework Using Random Forest for Formula Student Driverless",
+  "source_url": "https://arxiv.org/abs/2609.11527",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向 Formula Student Driverless（FSD）赛车的轻量级纯激光雷达锥桶检测框架，旨在解决现有感知流程过度依赖深度学习与多传感器融合、需要 GPU 加速的问题。该框架完全面向 CPU 执行设计，处理流程包括地面点云去除、基于 IMU 的运动补偿、DBSCAN 聚类以及基于几何特征的随机森林分类器。论文通过特征重要性分析筛选出对锥桶识别最有效的几何特征，从而在保证检测精度的同时大幅降低计算开销。该工作的价值在于：它证明了在资源受限的嵌入式平台上，传统机器学习方法结合精心设计的几何特征工程，仍能实现可靠、低延迟的感知能力，为自动驾驶感知系统提供了一条不依赖 GPU 的实用技术路线。对于学生赛车队、低成本自动驾驶方案开发者以及边缘计算场景下的感知研究者而言，该框架具有较高的工程参考价值和可复现性。",
+  "tags": [
+    "LiDAR",
+    "Random Forest",
+    "Autonomous Driving",
+    "Perception",
+    "Edge Computing"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "纯激光雷达 + 随机森林的轻量级方案可在 CPU 上实现低延迟锥桶检测，无需 GPU 加速",
+      "几何特征工程结合特征重要性分析是替代深度学习分类器的有效途径",
+      "IMU 运动补偿与 DBSCAN 聚类的组合能有效处理动态场景下的点云噪声",
+      "该框架为资源受限的自动驾驶平台（如学生赛车）提供了可复现的低成本感知基线"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

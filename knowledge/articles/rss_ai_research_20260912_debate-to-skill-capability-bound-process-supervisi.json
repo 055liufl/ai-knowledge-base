@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-025",
+  "title": "Debate-to-Skill: Capability-Bound Process Supervision for Industrial Query-to-Agent Annotation",
+  "source_url": "https://arxiv.org/abs/2609.11176",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Debate-to-Skill 框架，针对工业级 Query-to-Agent 匹配任务中「主题相关性」被误判为「可执行能力」的核心问题，将标注任务重新定义为「能力受限的过程监督」（capability-bound process supervision）。该方法通过可复用的决策原则、结构化辩论、基于验证器的裁决提取以及分歧驱动的迭代精炼，构建了一套面向长尾和边界敏感请求的标注流程。在工业 Query2Agent 基准上，该方法显著提升了标注质量与匹配准确性。该工作值得关注的原因在于：它跳出了传统相关性匹配的框架，首次系统性地将「能力边界」作为监督信号引入 Agent 路由与标注流程，对构建可靠的工业级 Agent 调度系统、提升长尾场景下的匹配鲁棒性具有直接的方法论价值，同时也为 LLM 作为评判者（LLM-as-Judge）在复杂决策场景中的落地提供了可复用的工程范式。",
+  "tags": [
+    "Agent",
+    "LLM-as-Judge",
+    "Annotation",
+    "Query Routing"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:02:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工业 Query-to-Agent 匹配的核心失败模式是将主题相关性误判为可执行能力，尤其在长尾和边界敏感请求上。",
+      "将标注任务形式化为能力受限的过程监督，而非简单的相关性判断，是提升匹配质量的关键。",
+      "结构化辩论 + 验证器裁决 + 分歧驱动精炼的组合，为 LLM 参与复杂标注决策提供了可复用的工程范式。",
+      "可复用决策原则的引入有助于在长尾场景下保持标注一致性并降低人工成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

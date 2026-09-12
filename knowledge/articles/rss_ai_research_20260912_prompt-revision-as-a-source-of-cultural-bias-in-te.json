@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-060",
+  "title": "Prompt Revision as a Source of Cultural Bias in Text-to-Image Systems",
+  "source_url": "https://arxiv.org/abs/2609.11532",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了商业文本到图像（text-to-image）系统在生成图像前对用户提示词进行静默修订（prompt revision）的现象，并指出这一步骤通常是用户无法禁用甚至无法察觉的。现有文化偏见审计仅关注最终图像，将生成过程视为单一管道，因此无法定位偏见的来源。为此，作者提出了WORLDVIEW，一个多语言基准测试，包含15种语言、31种语言-语境配对下的8,960个提示词。利用该基准，作者审计了提示词修订层，揭示了修订过程如何引入文化偏见。这项研究值得关注，因为它首次将文化偏见的来源追溯到提示词修订阶段，而非仅仅归因于模型训练数据或生成过程，为文本到图像系统的公平性审计提供了新视角和方法论。",
+  "tags": [
+    "Text-to-Image",
+    "Cultural Bias",
+    "Benchmark",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "商业文本到图像系统会静默修订用户提示词，用户无法控制或察觉，这可能是文化偏见的新来源。",
+      "现有文化偏见审计只分析最终图像，无法区分偏见来自提示词修订还是图像生成阶段。",
+      "WORLDVIEW基准覆盖15种语言和31种语言-语境配对，为多语言文化偏见审计提供了标准化工具。",
+      "提示词修订层是文化偏见引入的关键环节，需要独立审计和透明化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

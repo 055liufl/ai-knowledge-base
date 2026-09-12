@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-071",
+  "title": "A Unified Per-Token Gating Family for On-Policy Distillation: FKL/RKL Mixing with Multi-Channel and Bias Coefficients",
+  "source_url": "https://arxiv.org/abs/2609.11768",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于在线策略知识蒸馏（On-Policy Distillation, OPD）的统一逐 Token 门控框架，旨在解决现有方法（如 EOPD 和 ToDi）各自固定单一门控信号与方向、缺乏直接比较的问题。作者引入四系数参数化 λ_t = σ(a·h_t + b·u(x) + c + d·gap_t)，将前向 KL（FKL）与反向 KL（RKL）的混合、多通道信号以及偏置系数统一到一个可学习的门控函数中。该框架允许模型根据每个 Token 的上下文动态调整蒸馏损失的方向与强度，从而更灵活地平衡学生模型与教师模型之间的知识传递。这项工作的重要性在于：首次系统性地比较并统一了 FKL/RKL 门控策略，为 OPD 提供了更通用的理论工具；同时，多通道与偏置系数的引入提升了门控的表达能力，有望在 LLM 蒸馏等场景中带来更优的性能。对于研究者和开发者而言，该参数化形式简洁且易于实现，可作为现有蒸馏流程的即插即用改进。",
+  "tags": [
+    "Knowledge Distillation",
+    "LLM",
+    "On-Policy Distillation",
+    "KL Divergence",
+    "Gating Mechanism"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 OPD 方法（EOPD、ToDi）各自固定单一门控信号和方向，缺乏统一比较，本文首次将它们纳入同一参数化框架。",
+      "四系数门控 λ_t = σ(a·h_t + b·u(x) + c + d·gap_t) 统一了 FKL/RKL 混合、多通道信号与偏置项，增强了逐 Token 自适应能力。",
+      "该框架为在线策略蒸馏提供了更灵活的方向与强度控制，有望提升 LLM 蒸馏中知识传递的效率与稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

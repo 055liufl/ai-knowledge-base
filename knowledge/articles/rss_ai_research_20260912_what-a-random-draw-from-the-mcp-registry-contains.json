@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-102",
+  "title": "What a Random Draw from the MCP Registry Contains, and What Tool-Use Benchmarks Contain Instead",
+  "source_url": "https://arxiv.org/abs/2609.10962",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对 Model Context Protocol (MCP) 服务器生态系统进行了无修复的概率抽样调查，揭示了现有研究在样本选择上存在的偏差。作者从一个包含 24,135 个服务器的注册表中，使用公开种子随机抽取了 400 个 npm/stdio 服务器，并通过网络直接探测每个服务器的可用性。结果发现，仅有 48.8% 的服务器能够完成一次完整的工具调用交互，远低于以往基于参考集、流行列表或人工筛选的研究所呈现的乐观情况。该工作首次量化了 MCP 生态中“真实可用性”与“被研究可用性”之间的巨大差距，指出许多服务器在未经修复的情况下无法正常工作，而现有基准测试往往通过修复或筛选掩盖了这一问题。这一发现对 MCP 生态的可靠性评估、工具使用基准的设计以及开发者选择服务器具有重要警示意义，提醒研究者和开发者需要更严谨地对待样本偏差，并推动更真实的可用性度量标准。",
+  "tags": [
+    "MCP",
+    "Tool-Use",
+    "Benchmark",
+    "Ecosystem Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 MCP 研究普遍存在样本选择偏差，倾向于选取可正常工作的服务器，导致对生态可用性的估计过于乐观。",
+      "在无修复的概率抽样中，仅 48.8% 的 MCP 服务器能完成一次完整的工具调用，真实可用性远低于预期。",
+      "工具使用基准测试需要采用更严谨的抽样方法，避免通过修复或筛选掩盖服务器本身的问题。",
+      "该研究为 MCP 生态的可靠性评估提供了首个基于概率抽样的实证数据，呼吁建立更真实的可用性度量标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

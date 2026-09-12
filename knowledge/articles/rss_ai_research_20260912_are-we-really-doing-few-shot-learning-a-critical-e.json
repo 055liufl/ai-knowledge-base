@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-093",
+  "title": "Are We Really Doing Few-Shot Learning? A Critical Examination of Pre-Training Assumptions",
+  "source_url": "https://arxiv.org/abs/2609.10851",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对少样本学习（Few-Shot Learning）的评估协议提出了根本性质疑。当前主流做法是在与目标任务类别不相交但属于同一视觉域的大规模辅助集上预训练模型，再在目标 episode 上进行少样本评估。作者系统比较了四种设置：无预训练、类不相交的同域预训练、有监督的跨域预训练、以及无标签的跨域预训练，覆盖八个数据集。研究发现，同域类不相交的预训练实际上泄露了域先验信息，使模型在低数据场景下的表现被高估，并不能真实反映少样本学习能力。这一工作提醒研究者重新审视基准协议的有效性，对少样本学习、迁移学习和评估方法学均有重要影响，值得关注。",
+  "tags": [
+    "Few-Shot Learning",
+    "Pre-Training",
+    "Evaluation",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同域类不相交的预训练会引入域先验，导致少样本学习性能被高估，不能真实反映低数据学习能力。",
+      "跨域预训练（无论有无标签）与同域预训练在少样本任务上的表现差异显著，说明域信息比类别信息更关键。",
+      "当前少样本学习基准协议存在系统性缺陷，需要重新设计更严格的评估标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

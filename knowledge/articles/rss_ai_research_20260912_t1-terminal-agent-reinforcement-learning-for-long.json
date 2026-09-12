@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-111",
+  "title": "T1: Terminal Agent Reinforcement Learning for Long-Horizon Tasks",
+  "source_url": "https://arxiv.org/abs/2609.11042",
+  "source_platform": "rss_ai_research",
+  "summary": "T1 是一篇关于终端智能体强化学习的研究工作，针对长周期任务（如编程和科学发现）中终端操作的重要性，提出了一个总参数量 122B 的混合专家（MoE）模型。该模型在云沙箱中操作真实 shell，每个任务可执行 300 次以上的工具调用轮次，并以每个任务自带的验证器执行结果作为奖励信号进行强化学习训练。论文提供了完整的训练配方，包括激进的预热启动以稳定训练过程。这项工作值得关注的原因在于：它将强化学习与真实终端环境结合，解决了长周期任务中稀疏奖励和长序列决策的难题；同时 122B MoE 的规模表明终端智能体正从简单工具调用向复杂、多轮、可验证的自主操作演进，为自动化软件工程和科学计算提供了新的技术路径。",
+  "tags": [
+    "Agent",
+    "Reinforcement Learning",
+    "MoE",
+    "Terminal",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:06:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "T1 采用 122B 总参数的混合专家模型，在真实云沙箱 shell 中执行长周期任务，单任务支持 300+ 轮工具调用，突破了传统智能体短交互的限制。",
+      "以任务自带的验证器作为奖励信号进行强化学习，避免了人工标注奖励的瓶颈，使模型能够在编程和科学发现等可验证任务上自我提升。",
+      "论文提供了包括激进预热启动在内的完整训练配方，为大规模终端智能体的稳定强化学习训练提供了可复现的工程参考。",
+      "该工作标志着终端智能体从简单命令执行向复杂、多轮、自主决策的长周期任务演进，对自动化软件工程和科学发现具有重要推动作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

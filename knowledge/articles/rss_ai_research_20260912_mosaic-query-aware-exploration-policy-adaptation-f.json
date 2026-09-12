@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-017",
+  "title": "MOSAIC: Query-Aware Exploration Policy Adaptation for GraphRAG",
+  "source_url": "https://arxiv.org/abs/2609.11065",
+  "source_platform": "rss_ai_research",
+  "summary": "MOSAIC 是一篇关于 GraphRAG（图检索增强生成）的 arXiv 论文，提出了一种无需训练的查询感知探索策略自适应框架。当前大多数 GraphRAG 系统对所有查询采用基本相同的图探索流程，这造成了结构性错配：直接事实型问题只需紧凑的局部邻域，比较型问题需要多个目标之间的均衡覆盖，而中介型问题则可能需要穿越弱相关连接节点的更深路径。MOSAIC 针对这一痛点，根据查询类型动态调整图探索策略，从而更高效地连接分散在语料图中的证据。该工作值得关注的原因在于：GraphRAG 是当前 RAG 领域的重要演进方向，能够处理跨文档、多跳的复杂推理，但固定探索策略一直是其效率与准确率的瓶颈；MOSAIC 以 training-free 方式实现策略自适应，降低了部署成本，对实际系统落地具有较高参考价值。",
+  "tags": [
+    "GraphRAG",
+    "RAG",
+    "Retrieval",
+    "Graph"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:02:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 GraphRAG 系统普遍使用共享的图探索流程，与不同查询的结构需求存在错配",
+      "查询可分为直接事实、比较、中介等类型，各自需要不同深度与广度的图探索策略",
+      "MOSAIC 采用 training-free 方式实现查询感知的探索策略自适应，降低部署门槛",
+      "该方向有望提升 GraphRAG 在多跳与跨文档推理场景下的效率与准确性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

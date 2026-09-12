@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-138",
+  "title": "X-AuT: Progressive Audio-Encoder Compression for Speech LLMs with Cross-Scale Distillation",
+  "source_url": "https://arxiv.org/abs/2609.11412",
+  "source_platform": "rss_ai_research",
+  "summary": "X-AuT 是一种面向语音大语言模型（Speech LLM）的渐进式音频编码器压缩框架，旨在降低推理成本的同时避免性能退化。传统做法直接删除音频编码器的完整层块，会扰动解码器所消费的嵌入表示，进而引发内容删除和过早生成结束符（EOS）等错误。X-AuT 通过短行为探针（short behavioral probes）筛选层组合，并借助表示对齐、跨尺度蒸馏（cross-scale distillation）以及计划式学生策略（scheduled student-policy）来恢复剪枝后的模型性能。该工作聚焦于语音 LLM 中音频编码器这一关键但计算昂贵的组件，提出了一种兼顾效率与生成质量的压缩范式。其价值在于：随着语音交互类应用快速增长，音频编码器的推理开销成为部署瓶颈，而 X-AuT 提供了一条比粗暴剪枝更稳健的压缩路径，对边缘部署、实时语音助手等场景具有实际意义。",
+  "tags": [
+    "Speech LLM",
+    "Model Compression",
+    "Knowledge Distillation",
+    "Audio Encoder"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:07:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接删除音频编码器的完整层块会扰动解码器输入嵌入，导致内容删除和过早 EOS 错误，说明压缩需考虑编码器-解码器耦合。",
+      "X-AuT 使用短行为探针选择层组合，而非依赖静态重要性指标，能更贴近下游生成行为进行剪枝决策。",
+      "通过表示对齐与跨尺度蒸馏恢复剪枝模型，可在降低编码器深度的同时保持语音 LLM 的生成质量。",
+      "计划式学生策略（scheduled student-policy）暗示训练过程中动态调整蒸馏目标，有助于稳定渐进式压缩。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

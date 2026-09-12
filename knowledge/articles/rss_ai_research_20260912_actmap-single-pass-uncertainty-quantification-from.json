@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-057",
+  "title": "ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps",
+  "source_url": "https://arxiv.org/abs/2609.11498",
+  "source_platform": "rss_ai_research",
+  "summary": "ActMap 提出了一种面向大语言模型（LLM）的单次生成不确定性量化（UQ）方法。现有 UQ 方法通常依赖多次采样生成、仅读取输出 token 概率，或将模型内部计算压缩为单一隐藏状态，这些做法要么计算成本高，要么信息损失严重。ActMap 的核心创新在于引入一种白盒表示，将生成过程中每一层、每一步的隐藏状态轨迹（hidden-state trajectory）压缩为紧凑的激活图（activation map），从而在单次前向生成中即可判断某个答案是否可信。该方法无需重复采样，也避免了仅依赖输出层概率的局限，能够更充分地利用模型内部计算信息。对于需要可靠部署 LLM 的应用场景（如问答、医疗、法律等高风险领域），ActMap 提供了一种高效且信息丰富的不确定性估计途径，有望提升模型输出的可信度与安全性。该工作属于 LLM 可解释性与可靠性交叉方向，值得研究者和开发者关注。",
+  "tags": [
+    "LLM",
+    "Uncertainty Quantification",
+    "Interpretability",
+    "White-box"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ActMap 通过压缩生成时每一层、每一步的隐藏状态轨迹，实现单次生成的不确定性量化，避免了多次采样带来的计算开销。",
+      "相比仅使用输出 token 概率或单一隐藏状态的方法，ActMap 保留了更丰富的模型内部计算信息，有望提升 UQ 的准确性。",
+      "该方法属于白盒 UQ 范畴，适用于对 LLM 输出可信度要求较高的应用场景，如高风险决策支持系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

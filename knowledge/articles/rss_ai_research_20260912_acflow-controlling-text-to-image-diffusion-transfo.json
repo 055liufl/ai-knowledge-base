@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-083",
+  "title": "AcFlow: Controlling Text-to-Image Diffusion Transformers via Learned Conditional Activation Flow",
+  "source_url": "https://arxiv.org/abs/2609.10723",
+  "source_platform": "rss_ai_research",
+  "summary": "AcFlow 是一种针对文本到图像扩散 Transformer（DiT）的推理时控制方法，旨在解决直接提示词在风格强度调节和不良概念抑制方面的局限性。该方法通过一个学习到的、以概念为条件的速度场，将中间层图像 token 的激活进行传输，同时保持基础 DiT 模型完全冻结。用户只需提供文本概念描述，即可在推理阶段对生成过程施加细粒度控制，例如增强或减弱特定风格、抑制不期望的概念。由于无需重新训练或微调基础模型，AcFlow 具有即插即用的特性，可兼容现有 DiT 架构，为生成式图像模型的可控性提供了一种高效、灵活的新范式，对研究者和开发者均具有较高参考价值。",
+  "tags": [
+    "Diffusion",
+    "DiT",
+    "Controllable Generation",
+    "Text-to-Image"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AcFlow 在推理阶段通过概念条件速度场传输中间层激活，无需修改或微调基础 DiT 模型。",
+      "该方法提供了风格强度调节和不良概念抑制的细粒度控制接口，弥补了纯提示词控制的不足。",
+      "保持基础模型冻结使 AcFlow 具备即插即用特性，可低成本适配多种预训练 DiT。",
+      "该工作为扩散 Transformer 的可控生成开辟了基于激活流的新研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

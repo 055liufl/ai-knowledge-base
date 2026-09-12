@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-070",
+  "title": "SIRF: A Spec-Internalized Risk Foundation Model for Industrial Content Risk Control",
+  "source_url": "https://arxiv.org/abs/2609.11752",
+  "source_platform": "rss_ai_research",
+  "summary": "SIRF（Spec-Internalized Risk Foundation Model）是面向工业级内容风控场景提出的风险基础模型，旨在解决实际部署中「高精度前提下能自动处理多少风险」这一核心约束，而非单纯追求平均准确率。该方法的核心创新在于将平台复杂的风控策略规范（spec）内化到模型权重中：通过 EntiGraph 合成策略相关数据、MAGA 改写以及账户级思维链（CoT）构造训练样本，无需额外人工标注，再经由继续预训练（continued pretraining）将策略知识注入模型。这一思路将传统上依赖规则引擎与人工审核的风控流程，转向以基础模型为载体的策略内化范式，有望在保持高精度的同时实现秒级延迟下的风险自动处置，显著降低人工审核成本。对于内容平台、电商、社交网络等需要大规模实时风控的工业场景具有较强实用价值，也为「策略即权重」的合规与治理方向提供了新的技术路径。",
+  "tags": [
+    "Risk Control",
+    "Foundation Model",
+    "Continued Pretraining",
+    "Chain-of-Thought",
+    "Industrial AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工业风控的真正瓶颈不是平均准确率，而是在高精度与秒级延迟约束下可自动处理的风险比例",
+      "通过 EntiGraph、MAGA 改写与账户级 CoT 合成策略数据，可在无额外人工标注的情况下将平台规范内化进模型权重",
+      "继续预训练使模型直接承载复杂风控策略，减少对规则引擎和人工审核的依赖",
+      "该范式为「策略即权重」的合规治理与实时自动处置提供了可落地的工业路径"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

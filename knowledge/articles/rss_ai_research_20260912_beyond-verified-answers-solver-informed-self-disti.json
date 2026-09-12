@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-079",
+  "title": "Beyond Verified Answers: Solver-Informed Self-Distillation for Bootstrapping Operations Research Language Models",
+  "source_url": "https://arxiv.org/abs/2609.09957",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Solver-Informed Self-Distillation（求解器信息自蒸馏）的新方法，用于训练运筹学（Operations Research, OR）领域的语言模型。现有 LLM 已能将自然语言描述转化为 OR 数学规划公式，但后训练（如强化学习和在线自蒸馏）仍存在三大局限：一是训练依赖人工专家或更强模型验证的合成公式，难以规模化；二是仅以「答案是否验证通过」作为奖励信号，忽略了求解器反馈中更丰富的优化信息；三是模型难以在无标注数据上自我提升。该方法的核心思路是让 LLM 生成候选 OR 公式，调用求解器（如 Gurobi、CPLEX 等）执行并获取目标值、可行性、最优性间隙等结构化反馈，再将这些求解器信号转化为自蒸馏的监督信号，从而在无需人工验证答案的情况下持续改进模型。这一工作值得关注，因为它将「求解器在环」的反馈机制引入 LLM 后训练，突破了传统「验证答案」范式的瓶颈，为运筹学、组合优化等需要精确求解的领域提供了可扩展的自动化训练路径，也为其他可验证任务（如代码、数学）的自蒸馏训练提供了方法论借鉴。",
+  "tags": [
+    "LLM",
+    "Self-Distillation",
+    "Operations Research",
+    "Post-Training",
+    "Solver-in-the-Loop"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:04:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 OR 语言模型训练依赖人工或强模型验证的合成公式，难以规模化，本文用求解器反馈替代答案验证以突破该瓶颈。",
+      "求解器不仅提供对错信号，还能给出目标值、可行性、最优性间隙等丰富反馈，可作为自蒸馏的细粒度监督信号。",
+      "该方法属于「求解器在环」的后训练范式，可推广到代码、数学等具有可验证执行环境的领域。",
+      "无需人工标注即可自我提升，为运筹学等专业领域 LLM 的低成本持续训练提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

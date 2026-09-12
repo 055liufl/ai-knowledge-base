@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-090",
+  "title": "Beyond Static Guarantees: Measuring the Static-Pass Dynamic-Fail Gap in Security-Sensitive and LLM-Generated Python Code",
+  "source_url": "https://arxiv.org/abs/2609.10762",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究聚焦于静态分析在安全评估中的局限性，提出并量化了「静态通过但动态失败」（Static-Pass Dynamic-Fail Gap）这一现象。静态分析因其可扩展、可复现且成本低廉，被广泛用作 LLM 生成代码和安全敏感代码的安全门禁，但它无法直接观测运行时的漏洞利用行为。依赖对抗性输入、执行上下文或漏洞链式利用的缺陷可能绕过静态检查，却在实际运行中仍可被利用。作者通过构建实验框架，对比静态分析结果与动态执行结果，系统测量了这一差距在安全敏感代码和 LLM 生成 Python 代码中的表现。该工作对当前依赖静态扫描作为唯一安全评估手段的实践提出了重要警示，尤其对 LLM 代码生成的安全保障流程具有直接指导意义，值得安全研究者、代码生成工具开发者以及采用 LLM 辅助编程的团队关注。",
+  "tags": [
+    "LLM",
+    "Security",
+    "Static Analysis",
+    "Python",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:05:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态分析作为安全门禁存在系统性盲区，无法捕获依赖运行时上下文、对抗输入或漏洞链的缺陷。",
+      "LLM 生成的 Python 代码中，静态通过但动态可被利用的差距可能比传统代码更显著。",
+      "仅依赖静态扫描评估 LLM 生成代码的安全性会高估其实际安全水平，需引入动态验证补充。",
+      "该研究为构建更可靠的 LLM 代码安全评估流程提供了量化依据和实验方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260912-126",
+  "title": "2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation",
+  "source_url": "https://arxiv.org/abs/2609.11308",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 2AM 框架，探讨在长时程机器人操作任务中，记忆应被置于动作策略之外，而非内嵌于策略之中。当前主流的智能体系统通常将视觉-语言-动作模型（VLA）与规划器、几何工具结合，有时还引入额外深度信息或标定几何，但这种做法混淆了归因：性能提升可能来自更丰富的观测或替代性运动工具，而失败则可能源于策略本身或语言接口的欠规范。2AM 的核心思路是将智能体侧的记忆作为引导信号，用于可操控的动作模型，从而在长时程操作中实现更清晰的归因与更强的可控性。该工作值得关注，因为它挑战了'记忆必须内置于策略'的默认假设，为长时程机器人操作提供了一种模块化、可解释的替代范式，有望推动智能体系统在复杂任务中的可调试性与泛化能力。",
+  "tags": [
+    "Agent",
+    "Robotics",
+    "VLA",
+    "Memory",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:07:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程机器人操作中的记忆不必内置于动作策略，可外置为智能体侧的记忆模块",
+      "当前 VLA+规划器+几何工具的系统存在归因混淆问题，难以区分性能来源",
+      "将智能体侧记忆作为引导信号，可提升动作模型的可操控性与归因清晰度",
+      "模块化设计有助于分离策略、语言接口与观测增强的贡献，便于调试与改进"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

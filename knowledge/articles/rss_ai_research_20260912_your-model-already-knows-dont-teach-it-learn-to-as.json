@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-127",
+  "title": "Your Model Already Knows Don't Teach It, Learn to Ask It: Soft Prompting for Few-Shot Adaptation of Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2609.11310",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对视觉-语言模型（VLM）的少样本自适应方法——软提示（Soft Prompting），用于解决域外场景（如航拍、工业、医学图像）中的少样本目标检测问题，仅需十张标注图像即可完成适配。现有方法主要依赖离散提示优化和LoRA微调，而作者重新审视了第三种方案：在冻结预训练主干网络的前提下，仅优化少量连续提示token。该方法的核心洞察是模型本身已具备相关知识，无需通过微调去\"教\"它，而应学会如何\"提问\"以激发其潜在能力。这一思路在参数效率、泛化性和部署便捷性上具有明显优势，尤其适合标注数据稀缺的专业垂直领域。该工作为VLM的高效适配提供了新视角，对少样本学习、跨域迁移和多模态应用具有重要参考价值。",
+  "tags": [
+    "VLM",
+    "Few-Shot Learning",
+    "Soft Prompting",
+    "Object Detection"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:07:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "软提示在冻结主干网络的情况下仅优化少量连续token，参数效率远高于LoRA微调，适合数据稀缺场景",
+      "模型本身已蕴含丰富的预训练知识，适配的关键在于设计合适的\"提问\"方式而非重新训练模型",
+      "在航拍、工业、医学等域外场景中，仅用十张标注图像即可实现有效的少样本目标检测",
+      "软提示为VLM的少样本跨域适配提供了介于离散提示优化与全参数微调之间的第三条路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260912-055",
+  "title": "Published Unlearning Numbers Move Per Checkpoint, and Not Because the Removed Data Survives: An Audit of 263 Released Batch-Normalized Checkpoints",
+  "source_url": "https://arxiv.org/abs/2609.11490",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对 263 个已发布的批归一化（Batch Normalization）检查点进行了审计，发现机器遗忘（unlearning）评估中公布的数值会随检查点变化，但原因并非被移除的数据仍然存活。研究指出，遗忘审计通常依赖未学习模型和重新训练参考模型各自公布的数值，而两者都附带批归一化统计量——这些统计量并非由梯度步骤写入，也未在发布记录中体现。作者在保持权重位级一致的情况下，用保留数据重新拟合这些统计量，结果 221 个已发布检查点中有 47 个的数值移动超出了各自发布种子所显示的范围，甚至出现在某些方法平均数值不变的情况下。移动的是检查点自身的属性，而非遗忘效果。这项工作揭示了当前遗忘评估流程中一个被忽视的混淆因素：批归一化统计量的重新拟合会显著影响审计结论，可能导致对遗忘算法有效性的误判。对于关注模型遗忘、隐私保护及模型发布审计的研究者和开发者而言，该研究提醒需要更严谨地控制检查点状态，并重新审视现有基准的可靠性。",
+  "tags": [
+    "Unlearning",
+    "Batch Normalization",
+    "Model Audit",
+    "Checkpoint"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:03:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "批归一化统计量并非由梯度步骤写入，也未在发布记录中体现，但重新拟合会显著改变遗忘审计的数值结论。",
+      "在 221 个已发布检查点中，有 47 个在权重位级一致时重新拟合批归一化统计量后，数值移动超出发布种子范围，甚至出现在平均数值不变的方法中。",
+      "移动的是检查点自身的属性，而非被移除数据仍然存活，这表明当前遗忘评估可能混淆了检查点状态与遗忘效果。",
+      "该审计呼吁在遗忘评估中更严格地控制批归一化统计量，并重新审视现有基准的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

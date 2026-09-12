@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260912-115",
+  "title": "A Fragility Spectrum for Recursive Language-Model Training",
+  "source_url": "https://arxiv.org/abs/2609.11149",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对递归语言模型训练中模型生成文本回流训练语料导致输出多样性崩溃的问题，提出了一种“脆弱性谱”框架。以往研究多关注现象本身（哪些协议和数据混合导致崩溃），但不同模型在同一递归污染协议下表现差异巨大。作者固定一种递归污染协议，让13个公开可用的检查点构成一个生态系统，系统性地刻画了各模型在递归训练中的脆弱性差异。该研究为理解模型在自生成数据循环中的稳定性提供了新视角，对构建可持续、鲁棒的训练数据管道具有重要指导意义，尤其在大模型自我改进和合成数据广泛使用的背景下，有助于避免模型退化。",
+  "tags": [
+    "LLM",
+    "Training",
+    "Data Contamination",
+    "Model Collapse"
+  ],
+  "author": null,
+  "published_at": "2026-09-12T11:59:38Z",
+  "collected_at": "2026-09-12T12:06:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归训练中模型生成文本回流会导致输出多样性崩溃，但不同模型对同一污染协议的脆弱性存在显著差异。",
+      "通过固定协议并构建13个检查点的生态系统，可以系统性地量化模型的脆弱性谱。",
+      "该研究为评估和选择更鲁棒的模型及训练策略提供了新方法，有助于缓解模型崩溃问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
