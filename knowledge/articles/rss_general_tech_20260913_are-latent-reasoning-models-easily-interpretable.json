@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260913-018",
+  "title": "Are Latent Reasoning Models Easily Interpretable?",
+  "source_url": "https://arxiv.org/abs/2604.04902",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文研究了潜在推理模型（Latent Reasoning Models）的可解释性问题，重点测试了 Coconut 和 CODI 两种模型。这类模型在连续隐藏状态中进行推理，而非生成可读文本，因此难以监控。作者发现，在 PrOntoQA 和 ProsQA 等逻辑任务上，这些模型几乎不依赖隐藏推理步骤：即使强制模型提前停止思考，它们也几乎总是输出相同的答案。这表明模型的高性能可能并非来自逐步的逻辑推理，而是来自其他机制（如模式匹配或训练数据偏差）。该研究挑战了潜在推理模型在逻辑任务上具备真正推理能力的假设，并对其可解释性和可靠性提出了重要警示。对于关注模型透明度、安全性和推理机制的研究者与开发者而言，这一发现具有重要参考价值。",
+  "tags": [
+    "Latent Reasoning",
+    "Interpretability",
+    "LLM",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:49Z",
+  "collected_at": "2026-09-13T13:10:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在推理模型（如 Coconut 和 CODI）在逻辑任务上几乎不依赖隐藏推理步骤，提前停止思考对输出影响极小。",
+      "模型在 PrOntoQA 和 ProsQA 上的高性能可能源于非推理机制，而非真正的逐步逻辑推理。",
+      "连续隐藏状态推理的可解释性差，且可能掩盖模型实际依赖的捷径或偏差。",
+      "该研究对潜在推理模型在安全关键场景中的可靠性提出了质疑，呼吁更严格的评估方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

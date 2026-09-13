@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260913-016",
+  "title": "Native-speed vLLM transformers modeling backend",
+  "source_url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 vLLM 项目新增的 transformers 建模后端，该后端允许 vLLM 直接使用 Hugging Face transformers 的模型定义，同时保持原生级别的推理速度。传统上，vLLM 需要为每个模型架构编写自定义的 CUDA 内核和优化实现，这导致新模型支持滞后且维护成本高。新的后端通过将 transformers 模型动态转换为 vLLM 可执行的图，并利用 vLLM 的 PagedAttention 和连续批处理等优化，实现了与原生 vLLM 实现相近的性能。这一进展显著降低了添加新模型的门槛，使开发者能够快速部署最新模型，同时享受 vLLM 的高吞吐和低延迟优势。对于依赖 vLLM 进行生产部署的团队，这意味着更快的模型迭代和更广泛的模型覆盖。该博客详细阐述了后端的设计原理、性能基准测试结果以及使用方式，是 vLLM 生态的重要扩展。",
+  "tags": [
+    "vLLM",
+    "Transformers",
+    "推理优化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:11:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM 新增的 transformers 后端允许直接使用 Hugging Face 模型定义，同时保持原生推理速度，解决了新模型支持滞后的问题。",
+      "该后端通过动态转换和利用 PagedAttention 等优化，实现了与手写 CUDA 内核相近的性能，降低了模型集成和维护成本。",
+      "对于生产部署，这意味着可以更快地采用最新模型，并扩大 vLLM 支持的模型范围，提升迭代效率。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

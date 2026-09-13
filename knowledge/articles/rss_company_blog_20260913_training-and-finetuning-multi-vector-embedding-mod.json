@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260913-005",
+  "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何使用 Sentence Transformers 库训练和微调多向量嵌入模型。多向量嵌入模型（如 ColBERT 风格）通过为每个 token 生成独立的向量表示，在检索任务中能实现更细粒度的语义匹配，通常优于单向量模型。文章详细说明了训练流程，包括数据准备、损失函数选择（如 MultipleNegativesRankingLoss 的变体）、模型架构配置以及微调技巧。该内容值得关注，因为它降低了多向量模型的使用门槛，使开发者能够利用熟悉的 Sentence Transformers 生态构建高性能检索系统，有望推动多向量嵌入在 RAG、语义搜索等场景中的广泛应用。",
+  "tags": [
+    "Embedding",
+    "Sentence Transformers",
+    "Retrieval",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:10:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量嵌入模型通过 token 级向量表示提升检索细粒度，适合需要高精度匹配的场景。",
+      "Sentence Transformers 提供了统一的训练接口，简化了多向量模型的微调流程。",
+      "合理选择损失函数（如 MultipleNegativesRankingLoss）对多向量模型训练效果至关重要。",
+      "该技术可无缝集成到现有 RAG 和语义搜索管道中，提升召回质量。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260913-136",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了长提示词（Long Prompts）如何阻塞其他请求，从而影响LLM服务的整体性能。在LLM推理中，处理长提示词需要较长的计算时间，尤其是在自回归生成过程中，会占用大量GPU资源，导致后续请求排队等待，增加延迟。文章可能分析了这一问题的根源，例如KV缓存管理、批处理策略等，并提出了优化方法，如动态批处理、提示词压缩、优先级调度等。该内容对于部署LLM服务的开发者具有实用价值，有助于提升系统吞吐量和响应速度，改善用户体验。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "性能"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:16:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示词会显著增加LLM推理的延迟，并阻塞后续请求，影响整体吞吐量。",
+      "优化策略包括动态批处理、提示词压缩和优先级调度，以减轻阻塞效应。",
+      "合理管理KV缓存和请求队列是提升LLM服务性能的关键。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

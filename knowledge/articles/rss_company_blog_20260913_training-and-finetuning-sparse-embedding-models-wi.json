@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260913-132",
+  "title": "Training and Finetuning Sparse Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-sparse-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 官方博客发布的技术指南，详细介绍了如何使用 Sentence Transformers 库训练和微调稀疏嵌入模型（Sparse Embedding Models）。稀疏嵌入模型（如 SPLADE）通过输出高维稀疏向量，在信息检索任务中兼具神经模型的语义理解能力和传统稀疏检索（如 BM25）的高效性，是当前检索增强生成（RAG）和搜索系统的重要技术方向。文章从原理出发，逐步讲解数据准备、模型选择、训练目标（如对比学习、稀疏正则化）、损失函数设计以及评估方法，并提供了完整的代码示例和最佳实践。该内容降低了稀疏嵌入模型的训练门槛，使开发者能够快速构建高性能的检索系统，对于推动 RAG 应用和语义搜索的落地具有实用价值。",
+  "tags": [
+    "Sparse Embedding",
+    "Sentence Transformers",
+    "RAG",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:16:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏嵌入模型结合了神经语义表示和稀疏检索的效率，适合大规模检索场景。",
+      "Sentence Transformers 提供了简洁的 API 来训练和微调稀疏编码器，降低了实现难度。",
+      "训练稀疏嵌入需要关注稀疏正则化（如 FLOPS 正则）以平衡效果与效率。",
+      "该技术可直接应用于 RAG 系统的检索模块，提升召回质量。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

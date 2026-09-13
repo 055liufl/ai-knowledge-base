@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260913-004",
+  "title": "Getting 50 GB&#x2F;S Back from the Apple Neural Engine",
+  "source_url": "https://eiln.github.io/posts/ane-dma.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文深入探讨了如何从 Apple Neural Engine (ANE) 中恢复高达 50 GB/s 的内存带宽。作者通过逆向工程和性能分析，发现 ANE 的 DMA 引擎在特定条件下存在带宽瓶颈，并提出了优化策略来充分利用其潜力。文章详细介绍了 ANE 的架构、DMA 工作原理以及如何通过调整数据布局和访问模式来提升吞吐量。这项研究对于在 Apple 设备上部署高性能机器学习推理的开发者具有重要价值，因为它揭示了 ANE 的隐藏性能，并提供了实用的优化技巧。",
+  "tags": [
+    "Apple Neural Engine",
+    "DMA",
+    "性能优化",
+    "推理加速"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:47Z",
+  "collected_at": "2026-09-13T13:09:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ANE 的 DMA 引擎在默认配置下可能无法达到峰值带宽，通过优化数据布局可以释放额外性能。",
+      "逆向工程 ANE 的 DMA 行为有助于理解其瓶颈，并为高性能推理提供指导。",
+      "实现 50 GB/s 的带宽需要精细控制内存访问模式，这对边缘设备上的大模型推理至关重要。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20260913-061",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 Transformer 中混合专家（MoE）模型的介绍。MoE 通过将前馈网络拆分为多个专家，并利用路由网络动态选择专家，从而在保持计算成本不变的情况下大幅增加模型参数量。文章解释了 MoE 的核心组件（专家、路由器、容量因子等），并讨论了负载均衡、训练稳定性等挑战。MoE 已成为构建超大规模模型（如 Switch Transformer、GShard）的关键技术，在自然语言处理和多模态任务中展现出显著优势。该文为开发者提供了理解和实现 MoE 的实用指南，值得关注。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:13:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活实现模型容量与计算成本的解耦，使万亿参数模型训练成为可能。",
+      "路由网络的设计（如 Top-K 门控）和负载均衡损失是影响 MoE 性能的关键因素。",
+      "MoE 在训练和推理时面临通信开销、专家负载不均等工程挑战，需要专门优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

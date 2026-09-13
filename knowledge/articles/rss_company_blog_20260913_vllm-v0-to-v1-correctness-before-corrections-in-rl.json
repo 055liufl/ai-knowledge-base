@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260913-039",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队在 Hugging Face 博客上发布的技术文章，探讨了将 vLLM 从 V0 升级到 V1 过程中，在强化学习（RL）场景下确保正确性的重要性。文章指出，在 RL 训练中，模型生成和奖励计算的正确性比性能优化更为关键，因为错误的生成结果会导致奖励信号失真，进而影响策略学习。作者分享了迁移到 vLLM V1 时遇到的正确性问题，并提出了“先正确后修正”的原则，即优先保证生成和奖励的准确性，再考虑性能调优。该文章为使用 vLLM 进行 RL 训练的研究者和开发者提供了宝贵的实践经验，强调了在快速迭代的 AI 基础设施中，正确性应始终作为首要目标。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理优化",
+    "正确性"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:12:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，生成和奖励计算的正确性比推理性能更重要，错误的输出会导致奖励信号失真。",
+      "从 vLLM V0 迁移到 V1 时，需要仔细验证生成结果的正确性，避免因版本升级引入隐蔽错误。",
+      "建议采用“先正确后修正”的原则，在确保正确性的基础上再进行性能优化。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260913-044",
+  "title": "How to Use Transformers.js in a Chrome Extension",
+  "source_url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 官方博客发布的一篇技术教程，详细介绍了如何在 Chrome 浏览器扩展中集成和使用 Transformers.js。Transformers.js 是一个能够在浏览器中直接运行 Transformer 模型的 JavaScript 库，它利用 WebAssembly 和 WebGPU 等浏览器原生能力，无需服务器即可执行自然语言处理任务。文章从 Chrome 扩展的基本结构出发，逐步演示了如何将 Transformers.js 嵌入到扩展的各个部分（如后台脚本、内容脚本或弹出页面），并提供了处理模型加载、推理执行以及跨上下文通信的实用代码示例。该内容值得关注的原因在于：它降低了在客户端侧部署 AI 能力的门槛，使开发者能够构建完全本地化、隐私友好且低延迟的智能浏览器扩展，例如实时文本摘要、翻译、情感分析等。同时，这也代表了 AI 推理向边缘设备迁移的重要趋势，为 Web 开发者打开了新的应用场景。",
+  "tags": [
+    "Transformers.js",
+    "Chrome Extension",
+    "WebAI",
+    "ONNX Runtime"
+  ],
+  "author": null,
+  "published_at": "2026-09-13T13:08:52Z",
+  "collected_at": "2026-09-13T13:12:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformers.js 使得在浏览器扩展中直接运行 Transformer 模型成为可能，无需后端服务器，保护用户隐私并降低延迟。",
+      "Chrome 扩展的不同组件（如 background、content script、popup）均可集成 Transformers.js，但需注意模型加载和推理的上下文隔离问题。",
+      "该方案依赖 WebAssembly 和 WebGPU 等现代 Web 技术，为边缘 AI 应用提供了新的可能性，但性能受限于客户端硬件。",
+      "开发者可以基于此构建实时文本处理、翻译、摘要等智能扩展，拓展浏览器扩展的功能边界。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
