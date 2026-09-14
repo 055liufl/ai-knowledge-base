@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260914-001",
+  "title": "Notes on gotchas while migrating 35kb preprompts from Opus to self-hosted Ollama",
+  "source_url": "https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文作者分享了将35KB的大型预提示（preprompts）从Anthropic的Opus模型迁移到自托管Ollama模型过程中遇到的陷阱和经验。文章详细记录了迁移过程中遇到的具体问题，如提示格式差异、模型行为变化、性能调优等，并提供了实用的解决方案。对于希望减少对商业API依赖、实现本地化部署的开发者而言，这些经验极具参考价值，有助于避免常见错误，加速迁移过程。",
+  "tags": [
+    "LLM",
+    "Ollama",
+    "Prompt Engineering",
+    "Self-hosting"
+  ],
+  "author": null,
+  "published_at": "2026-09-14T14:46:28Z",
+  "collected_at": "2026-09-14T14:47:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型提示迁移需注意模型间的格式差异，如系统提示与用户提示的区分",
+      "自托管模型可能对提示长度更敏感，需调整截断策略",
+      "Ollama的默认参数可能需要针对大提示进行优化",
+      "迁移后需重新评估提示效果，因模型行为可能变化"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

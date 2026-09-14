@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260914-016",
+  "title": "Native-speed vLLM transformers modeling backend",
+  "source_url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 vLLM 项目新增的 transformers 建模后端，该后端旨在让用户以原生速度运行 Hugging Face transformers 模型。vLLM 是一个高效的大语言模型推理和服务引擎，以其 PagedAttention 和连续批处理等技术著称。此前，vLLM 主要支持自己的模型实现，而新的 transformers 后端允许直接加载和运行 transformers 模型，同时保持 vLLM 的高性能优化。这意味着开发者可以更轻松地将现有 transformers 模型迁移到 vLLM 上，无需重写模型代码，即可获得接近原生的推理速度。该后端通过集成 transformers 的模型定义，并利用 vLLM 的注意力机制和内存管理，实现了兼容性与性能的平衡。对于需要部署自定义或最新 transformers 模型的团队来说，这是一个重要的更新，因为它降低了使用 vLLM 的门槛，并扩展了其适用场景。",
+  "tags": [
+    "vLLM",
+    "Transformers",
+    "推理优化",
+    "模型部署"
+  ],
+  "author": null,
+  "published_at": "2026-09-14T14:46:33Z",
+  "collected_at": "2026-09-14T14:49:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM 新增 transformers 建模后端，可直接运行 Hugging Face 模型并保持高性能。",
+      "该后端降低了将现有 transformers 模型迁移到 vLLM 的成本，无需重写模型代码。",
+      "通过结合 vLLM 的注意力优化和 transformers 的模型定义，实现了兼容性与速度的平衡。",
+      "对于需要部署自定义或最新模型的开发者，这扩展了 vLLM 的适用性。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

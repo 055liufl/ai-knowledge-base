@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260914-009",
+  "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在 Sentence Transformers 库中实现多向量（后期交互）嵌入模型的方法。多向量模型（如 ColBERT）通过为每个 token 生成独立的嵌入向量，并在检索时进行后期交互计算，显著提升了检索精度，尤其适用于需要细粒度匹配的场景。文章详细说明了如何利用 Sentence Transformers 训练、微调和部署这类模型，并提供了代码示例和最佳实践。该技术值得关注，因为它平衡了检索效果与效率，为 RAG 和语义搜索提供了新的解决方案，且集成到流行库中降低了使用门槛。",
+  "tags": [
+    "Embedding",
+    "Retrieval",
+    "Sentence Transformers",
+    "ColBERT"
+  ],
+  "author": null,
+  "published_at": "2026-09-14T14:46:33Z",
+  "collected_at": "2026-09-14T14:48:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量后期交互模型（如 ColBERT）通过 token 级嵌入和 MaxSim 操作，在检索任务中优于单向量模型。",
+      "Sentence Transformers 现已支持多向量模型的训练与推理，简化了开发流程。",
+      "该技术适用于需要高精度检索的场景，如 RAG 和语义搜索，但需权衡存储和计算成本。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
