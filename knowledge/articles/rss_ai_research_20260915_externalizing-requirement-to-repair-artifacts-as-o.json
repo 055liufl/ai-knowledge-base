@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-084",
+  "title": "Externalizing Requirement-to-Repair Artifacts as Observable Traces for LLM-Based Program Repair",
+  "source_url": "https://arxiv.org/abs/2609.14913",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 THEMIS，一种面向仓库级程序修复的阶段感知工作流，旨在解决 LLM 自动修复中「可解释性」与「可审计性」不足的问题。传统基于 LLM 的修复方法往往只关注生成正确补丁，却缺乏对「问题需求如何映射到代码改动」这一过程的显式记录，导致修复结果难以被开发者审查、信任和复用。THEMIS 的核心思路是将需求到修复的中间产物外化为可观测的 trace，包括：语义解释（semantic interpretation）、运行时需求-代码图（runtime requirement-code graph）、由图派生的开发者指导（Developer guidance）、保留的修复理由与补丁（repair rationale and patches），以及编辑后的审计记录（post-edit audit record）。这种「阶段感知」的设计使修复流程从黑盒变为白盒，每一步推理与决策都可追溯。该工作值得关注，因为它将 LLM 程序修复从「结果导向」推向「过程可解释」，契合软件工程中对可信 AI 辅助开发的实际需求，尤其适用于仓库级复杂修复场景。其贡献在于提供了一种可落地的工程范式，而非单纯提升",
+  "tags": [
+    "Program Repair",
+    "LLM",
+    "Explainability",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仓库级程序修复不仅需要正确补丁，还需要可审查的记录来解释需求如何转化为代码改动",
+      "THEMIS 通过外化需求-修复中间产物（语义解释、需求-代码图、修复理由、审计记录）提升修复过程的可观测性",
+      "阶段感知的工作流将 LLM 修复从黑盒结果导向转变为白盒可追溯流程",
+      "该方法强调可审计性与开发者信任，而非单纯追求修复准确率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

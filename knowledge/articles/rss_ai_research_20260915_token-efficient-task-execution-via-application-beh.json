@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-012",
+  "title": "Token Efficient Task Execution via Application Behavior Modeling for Web Agents",
+  "source_url": "https://arxiv.org/abs/2609.13491",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 OdoBot，一种面向 Web 智能体的新型架构，旨在解决 AI Agent 在执行 Web 应用任务时 token 消耗过高的问题。Web Agent 通常需要解析网页 UI 并与界面交互来完成自然语言描述的任务，但现有方法往往依赖大量 token 进行页面理解与推理，导致成本快速上升。OdoBot 的核心思路是通过对 Web 应用的行为进行建模，让智能体学习应用的操作逻辑与状态转移规律，从而减少对冗长 UI 文本的重复解析，实现更高效的 token 使用。该工作属于 agent 基础设施优化方向，兼顾成本控制与任务执行能力，对需要大规模部署 Web Agent 的团队具有直接参考价值。其创新点在于将应用行为建模引入 token 效率优化，而非单纯压缩上下文或简化提示，为 Web Agent 的工程化落地提供了新思路。",
+  "tags": [
+    "Agent",
+    "Web Agent",
+    "Token Efficiency",
+    "Behavior Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:13:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Web Agent 的 token 成本随任务复杂度快速上升，成为规模化部署的主要瓶颈之一",
+      "通过建模 Web 应用的行为逻辑，可减少对 UI 文本的重复解析，从而降低 token 消耗",
+      "OdoBot 将应用行为建模与任务执行结合，为 Web Agent 的效率优化提供了新方向",
+      "该工作对 agentic 基础设施的成本控制具有实际意义，但需关注行为建模的泛化能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

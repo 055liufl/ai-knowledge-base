@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-116",
+  "title": "SkillLift: Learning Dense Rubrics from Sparse Oracles for Efficient Skill Evolution",
+  "source_url": "https://arxiv.org/abs/2609.15396",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillLift 是一篇来自 arXiv 的论文，针对基于 LLM 的智能体在技能自进化过程中面临的监督瓶颈问题提出了新的解决方案。当前方法依赖执行反馈直接修改技能文本，但每次 oracle 评估都需要完整的智能体 rollout，成本高昂，导致搜索空间被限制在失败修补式更新上。该论文的核心洞察是：排序（ranking）比绝对结果（absolute outcome）是更平滑的监督目标。基于此，SkillLift 提出从稀疏的 oracle 反馈中学习密集的评分标准（dense rubrics），从而高效地驱动技能进化。这项工作对于提升 LLM 智能体的持续学习与自适应能力具有重要意义，尤其适用于需要长期积累可复用程序性提示的场景。其创新点在于将监督信号从稀疏的绝对评价转化为密集的相对排序，有望突破现有技能自进化方法的效率瓶颈，为智能体技能库的自动化构建与优化提供新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Skill Evolution",
+    "Rubric Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有技能自进化方法受限于每次 oracle 评估都需要完整 rollout，导致监督信号稀疏且搜索局限于失败修补。",
+      "排序比绝对结果更适合作为监督目标，因为它提供了更平滑、更密集的学习信号。",
+      "SkillLift 通过从稀疏 oracle 反馈中学习密集评分标准，实现了高效的技能进化。",
+      "该方法有望推动 LLM 智能体在无需权重更新的情况下持续积累和优化可复用技能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

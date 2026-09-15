@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-081",
+  "title": "Self-Orchestrating Language Models: Leveraging Semantic Dependence for Efficient Inference",
+  "source_url": "https://arxiv.org/abs/2609.14850",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“自编排语言模型”（Self-Orchestrating Language Models）的新方法，旨在解决大语言模型（LLM）推理效率低下的问题。传统自回归解码在低批量场景下延迟高且硬件利用率不足，而离散扩散模型虽能并行生成，但需大量去噪步骤才能达到自回归质量。长上下文推理还带来内存瓶颈。该方法利用语义依赖关系，让模型动态决定生成顺序，从而在保持生成质量的同时显著提升推理效率。核心创新在于将生成过程从固定顺序的自回归或扩散模式，转变为基于语义依赖的自适应编排，有望在低延迟、高吞吐场景下实现更优的硬件利用。该工作对LLM部署优化具有重要价值，尤其适用于需要实时响应或资源受限的边缘计算场景。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Efficiency",
+    "Diffusion",
+    "Autoregressive"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自回归解码在低批量下延迟高且硬件利用率低，离散扩散模型并行生成但质量需多步去噪。",
+      "利用语义依赖关系动态编排生成顺序，可兼顾生成质量与推理效率。",
+      "该方法有望缓解长上下文推理中的内存瓶颈，提升低批量场景下的硬件加速器利用率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

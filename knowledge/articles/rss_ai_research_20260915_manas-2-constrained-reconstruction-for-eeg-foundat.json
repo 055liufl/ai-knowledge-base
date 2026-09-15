@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-036",
+  "title": "MANAS-2: Constrained Reconstruction for EEG Foundation Models",
+  "source_url": "https://arxiv.org/abs/2609.13717",
+  "source_platform": "rss_ai_research",
+  "summary": "MANAS-2 是一种新型脑电图（EEG）基础模型，针对现有掩码重建方法在低信噪比波形上优化效果不佳的问题提出改进。该模型结合了原始-频带混合（RBH）掩码自编码器与约束重建（ConRec）正则化器。RBH 同时重建时间波形片段和紧凑的频谱带目标，而 ConRec 则引入物理启发的约束，引导模型学习更鲁棒、更有用的潜在表征。传统 EEG 基础模型通常直接套用 NLP 或 CV 中的掩码重建范式，但 EEG 信号信噪比低、非平稳性强，单纯最小化重建误差容易导致模型过度关注噪声而非神经生理特征。MANAS-2 通过频域监督和物理约束，有望提升下游任务（如癫痫检测、睡眠分期、脑机接口）的迁移性能。该工作对 EEG 基础模型的设计具有方法论意义，值得神经工程、脑机接口和医疗 AI 领域的研究者关注。",
+  "tags": [
+    "EEG",
+    "Foundation Model",
+    "Masked Autoencoder",
+    "Self-Supervised Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低信噪比 EEG 波形上的掩码重建优化未必产生最有用的潜在表征，需要引入频域和物理约束。",
+      "RBH 联合重建时间波形片段与频谱带目标，兼顾时域细节和频域结构信息。",
+      "ConRec 作为物理启发的正则化器，可引导模型学习更符合神经生理特性的表征。",
+      "该工作为 EEG 基础模型的预训练目标设计提供了新思路，有望提升下游脑电解码任务的泛化能力。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

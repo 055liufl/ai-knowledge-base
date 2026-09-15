@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-015",
+  "title": "Asclepius: An Adaptive Harness for Long-Horizon Clinical Agents",
+  "source_url": "https://arxiv.org/abs/2609.13543",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Asclepius，一种面向长时程临床智能体的自适应执行框架（harness）。现有 LLM 智能体评测多集中于短时、单任务轨迹，而真实部署往往需要数小时连续运行并面临资源竞争，暴露出不同类型的失败模式。作者以临床环境模拟器（CES）为测试平台，让智能体在连续时间与资源压力下管理整个急诊科轮班，从而在单次 rollout 中可测量地暴露长时程执行失败。Asclepius 通过自适应机制应对结构化、多维度的长时程挑战，旨在提升智能体在持续运行、任务切换与资源受限场景下的稳定性与鲁棒性。该工作值得关注的原因在于：它将评测范式从短任务推向真实长时程部署，揭示了被现有基准忽视的失败类别，并为医疗等高风险领域的智能体工程提供了可复用的 harness 设计思路，对长时程 Agent 的可靠性研究具有推动作用。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Long-Horizon",
+    "Healthcare",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:13:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 智能体评测多聚焦短时单任务，无法反映真实部署中长时程、资源竞争下的失败模式。",
+      "临床环境模拟器（CES）可在单次 rollout 中可测量地暴露急诊科轮班场景下的长时程执行失败。",
+      "Asclepius 作为自适应 harness，针对结构化、多维度的长时程挑战提升智能体稳定性与鲁棒性。",
+      "该工作推动 Agent 评测从短任务向真实长时程部署范式转变，对高风险领域智能体工程具有参考价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

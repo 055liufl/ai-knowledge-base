@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260915-039",
+  "title": "How Many Thoughts Can a Vector Hold? The Capacity of Reasoning by Superposition",
+  "source_url": "https://arxiv.org/abs/2609.13747",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了大型语言模型（LLM）中连续推理方法的核心设计问题：固定维度的潜在状态（latent state）能容纳多少“思想”？传统思维链（CoT）将中间计算编码为离散token，而近期连续/循环方法则将部分计算移入固定维度的潜在状态，允许单个“思想”叠加多个备选方案。论文提出并分析了这种叠加推理的容量问题，即一个向量能同时保持多少条推理路径或备选假设。该研究对于理解连续推理的表示能力、设计更高效的推理架构具有基础性意义，可能影响未来LLM推理机制的设计方向，例如如何平衡潜在状态的维度与推理的多样性。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Latent Space",
+    "Superposition"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连续推理将中间计算压缩到固定维度的潜在状态中，单个向量可叠加多个备选思想，但容量有限。",
+      "传统思维链以离散token显式编码推理步骤，而连续方法通过叠加实现隐式并行，但需权衡表示能力与维度约束。",
+      "该研究为设计连续推理架构提供了理论视角，提示需关注潜在状态容量与推理复杂度之间的匹配问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

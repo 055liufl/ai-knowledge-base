@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-123",
+  "title": "Beyond Safe Answers: Segment-Aware Listwise Alignment for Reasoning Safety in Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2609.15517",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大型推理模型（LRMs）的安全对齐问题提出了一种新方法。现有对齐方法通常在整段回复层面操作，导致不安全的推理过程可能被看似安全的最终答案所掩盖。作者提出 Segment-aware Listwise Target DPO（SaLT-DPO），通过三种机制解决这一双重表面安全挑战：分段感知的列表式对齐，将回复分解为推理轨迹和最终答案等片段，并分别进行对齐；列表式目标偏好优化，在多个候选回复间进行细粒度比较；以及针对推理安全的目标设计。该方法旨在确保中间推理步骤和最终答案均不包含有害内容，从而提升 LRMs 的整体安全性。这项工作值得关注，因为它首次系统性地处理了推理模型特有的安全漏洞，即推理链中的潜在危害，为安全对齐提供了更精细的粒度，可能推动更可靠、更安全的推理模型部署。",
+  "tags": [
+    "LLM Safety",
+    "Alignment",
+    "Reasoning Models",
+    "DPO"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有对齐方法在整段回复层面操作，无法区分推理轨迹和最终答案的安全性，导致不安全推理被安全答案掩盖。",
+      "SaLT-DPO 通过分段感知的列表式对齐，将回复分解为多个片段并分别优化，实现更细粒度的安全控制。",
+      "该方法同时关注中间推理步骤和最终答案的安全性，解决了大型推理模型特有的双重表面安全挑战。",
+      "列表式目标偏好优化在多个候选回复间进行比较，可能比传统点式或成对偏好方法更有效地提升推理安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

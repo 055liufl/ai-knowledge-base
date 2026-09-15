@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-043",
+  "title": "Partition Scores Are Not System Scores: Deployment-Fidelity Gaps in Decomposed Algorithm Selection",
+  "source_url": "https://arxiv.org/abs/2609.13785",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对算法选择（Algorithm Selection）领域中一个被广泛忽视的评估偏差问题展开研究。在分解式算法选择（Decomposed Algorithm Selection）框架中，研究者常报告一种「分区级分数」（partition-level score），即在选定算法族后，假设系统能够在该族内自由选择最优算法。这种分数类似于虚拟最优求解器（VBS）等 oracle 式上界，常被当作可部署选择器性能的上限。然而作者指出，一旦族选择器（family selector）被固定，实际部署的系统必须用真实的族内选择机制替代 oracle 选择，此时分区级分数与真实系统分数之间会出现显著差距，即「部署保真度缺口」（Deployment-Fidelity Gaps）。论文系统性地刻画了这一缺口，说明仅报告分区级分数会高估实际可部署系统的性能，可能导致对算法选择方法效果的误判。该工作对算法选择、自动化机器学习（AutoML）、组合优化求解器组合等领域的评估方法论具有重要警示意义，提醒研究者在报告结果时区分 oracle 上界与真实可部署性能，并推动更贴近实际部署场景的评估标准。",
+  "tags": [
+    "Algorithm Selection",
+    "AutoML",
+    "Evaluation Methodology",
+    "Combinatorial Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分区级分数（partition-level score）本质上是 oracle 上界，不能直接等同于可部署系统的真实性能。",
+      "一旦族选择器固定，族内 oracle 选择被真实选择机制替代，会产生显著的部署保真度缺口。",
+      "广泛报告的 VBS、selected-portfolio VBS 等 oracle 量可能系统性高估算法选择方法的实际效果。",
+      "算法选择研究需要建立更贴近部署场景的评估协议，避免因评估偏差导致方法比较失真。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

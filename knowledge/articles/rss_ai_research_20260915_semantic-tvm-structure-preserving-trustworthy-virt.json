@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-091",
+  "title": "Semantic-TVM: Structure-Preserving Trustworthy Virtual Memory for Memory-Augmented and Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2609.15011",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Semantic-TVM（Trustworthy Virtual Memory，可信虚拟内存），一种面向记忆增强型与工具调用型智能体的闭环运行时系统，旨在解决远程 LLM 处理检索记忆、工具动作与中间观察结果时泄露精确私有值的问题。现有单向掩码方案虽能限制直接暴露，但会移除可信执行所需的精确值，并可能通过后续观察结果间接泄露。TVM 的核心思路是将精确值状态保留在本地，仅向远程模型呈现受保护的语义视图，从而在保持结构完整性的同时实现可信执行。该工作对智能体隐私安全、工具调用安全边界以及记忆增强系统的部署具有重要意义，尤其适用于需要将敏感数据交由第三方大模型处理的场景。",
+  "tags": [
+    "Agent",
+    "Privacy",
+    "Memory",
+    "Tool-Using",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆增强与工具调用智能体在远程 LLM 处理检索内容、工具动作和中间观察时存在精确私有值泄露风险",
+      "单向掩码虽限制直接暴露，但会破坏可信执行所需的精确值，并可能通过后续观察间接泄露",
+      "TVM 采用闭环运行时，将精确值状态保留在本地，仅向远程模型暴露受保护的语义视图",
+      "该方案在结构保持与隐私保护之间取得平衡，为智能体安全部署提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-083",
+  "title": "GGUF-Metadata Prediction of Single-Sequence llama.cpp Throughput Across Three Systems",
+  "source_url": "https://arxiv.org/abs/2609.14864",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种基于 GGUF 元数据预测 llama.cpp 单序列吞吐量的方法，采用 roofline 形状的预测器，并结合针对不同量化方式拟合的缩放因子。研究在 318 个相位深度测量样本上进行评估，覆盖 53 种主机-文件配置，涉及两台 Apple M4 Max 系统和一块 NVIDIA RTX 5080 显卡。在主机特定的留出集上（分别包含 4、5、2 种配置），基于活跃参数的解码模型取得了 13.1%、14.4% 和 36.1% 的平均绝对误差。这项工作值得关注，因为它首次系统性地利用 GGUF 元数据（而非实际运行基准测试）来预测推理吞吐量，为 llama.cpp 用户在选择模型量化和硬件配置时提供了无需实际部署即可预估性能的实用手段，对本地大模型部署和边缘推理场景具有直接参考价值。",
+  "tags": [
+    "llama.cpp",
+    "GGUF",
+    "推理性能预测",
+    "量化",
+    "边缘推理"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用 GGUF 元数据和 roofline 模型可以在不实际运行推理的情况下预测 llama.cpp 吞吐量，误差在 13%-36% 之间",
+      "量化特定的缩放因子对预测精度至关重要，不同量化方式需要分别拟合",
+      "活跃参数解码模型在跨 Apple M4 Max 和 NVIDIA RTX 5080 的异构系统上均有效",
+      "该方法为本地大模型部署前的硬件选型和量化策略提供了低成本预估工具"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

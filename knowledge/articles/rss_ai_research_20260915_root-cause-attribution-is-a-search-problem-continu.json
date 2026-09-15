@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-008",
+  "title": "Root-Cause Attribution Is a Search Problem: Continual Search for Long-Horizon Agent Failures",
+  "source_url": "https://arxiv.org/abs/2609.13463",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出将长时程 AI Agent 失败的根本原因归因（Root-Cause Attribution, RCA）问题重新定义为搜索问题，而非传统的 LLM 直接推理问题。随着 AI Agent 在长时程任务中的广泛部署，其执行日志规模急剧膨胀，人工审查已不可行，自动化 RCA 成为保障可靠性的关键需求。然而，现有基于 LLM 的自动化 RCA 方法诊断准确率偏低，尤其在执行轨迹较长、错误传播链条复杂时表现更差。作者提出「持续搜索」（Continual Search）框架，通过迭代式地在日志空间中定位、验证和回溯候选根因，将诊断过程分解为可管理的搜索步骤，从而提升长时程失败归因的准确性。该工作对 Agent 可靠性工程、可观测性基础设施以及自动化调试工具链具有重要价值，为构建可信赖的自主 Agent 系统提供了新的方法论视角。",
+  "tags": [
+    "Agent",
+    "RCA",
+    "LLM",
+    "Reliability",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:13:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将长时程 Agent 失败的根本原因归因建模为搜索问题，而非单次 LLM 推理，可显著提升诊断准确率",
+      "持续搜索框架通过迭代定位、验证和回溯候选根因，有效应对长执行轨迹中错误传播的复杂性",
+      "自动化 RCA 是 AI Agent 大规模部署后保障可靠性的关键基础设施，将结果级信号转化为可执行的干预措施"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

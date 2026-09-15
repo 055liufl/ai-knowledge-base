@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-117",
+  "title": "When Tool Calls Succeed but Workflows Fail: Anomalies at the Agent-Tool Boundary",
+  "source_url": "https://arxiv.org/abs/2609.15397",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.15397）聚焦于 AI Agent 与外部工具交互边界上的一个被忽视的系统性问题：单个工具调用成功，但整体工作流却失败。随着 AI Agent 越来越多地执行长时间运行、通过独立提供的工具产生外部副作用的工作流，在重试、推测执行、并发和部分失败等现实条件下，外部状态可能与工作流预期的最终结果不一致——必需的效果可能缺失或重复，已中止的效果可能残留，已提交的效果可能依赖于随后被撤销的临时状态。作者将这类现象定义为 Agent-工具边界上的异常，并借鉴事务处理（transaction）领域的思想来刻画和分类这些问题。该研究值得关注，因为它揭示了当前 Agent 框架在可靠性语义上的根本缺陷：现有工具调用协议大多只保证单次调用的成功，而缺乏跨调用的原子性、一致性与补偿机制。对于构建生产级 Agent 系统的开发者而言，这意味着即使每个工具都返回成功，端到端工作流仍可能产生脏数据或不可恢复的状态，直接影响金融、运维、数据处理等高风险场景的落地。该工作为 Agent 基础设施的可靠性设计提供了新的问题框架和理论视角。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Reliability",
+    "Transaction",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单个工具调用成功并不等于工作流成功，Agent-工具边界存在系统性的一致性缺口",
+      "重试、推测执行、并发和部分失败会导致外部状态出现缺失、重复、残留或依赖临时状态等异常",
+      "现有 Agent 工具调用协议缺乏事务语义，无法保证跨调用的原子性与补偿能力",
+      "需要借鉴事务处理思想为 Agent 工作流引入可靠性机制，这是生产级 Agent 落地的关键前提"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

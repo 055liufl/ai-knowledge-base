@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-087",
+  "title": "MemRiskBench: Trace-Aware Risk-Preserving Evaluation for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.14976",
+  "source_platform": "rss_ai_research",
+  "summary": "MemRiskBench 是一篇针对长时程 LLM Agent 记忆安全性的评测基准论文。随着 LLM Agent 在多会话场景中持续累积记忆，会产生稀疏但高影响的风险，包括事实过期、更新冲突、跨用户泄露、已撤销记忆的复用以及约束衰减等。现有基准通常只报告聚合准确率，掩盖了单类风险的失败率——例如一个平均准确率 78% 的模型仍可能在 4% 的会话中泄露数据。该工作提出「Trace-Aware Risk-Preserving Evaluation」框架，通过保留稀有高严重性事件来避免基准压缩带来的风险信息丢失，从而更真实地刻画 Agent 在长时程记忆场景下的安全边界。其价值在于将评测视角从「平均性能」转向「尾部风险」，为记忆型 Agent 的安全部署提供了更细粒度的诊断工具，对研究者和开发者构建可信 Agent 具有重要参考意义。",
+  "tags": [
+    "LLM Agent",
+    "Memory",
+    "Evaluation",
+    "Safety",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程 LLM Agent 的记忆风险是稀疏但高影响的，聚合准确率会掩盖单类风险的失败率。",
+      "标准基准压缩会优先丢弃稀有高严重性事件，导致模型的安全缺陷被系统性低估。",
+      "提出 Trace-Aware Risk-Preserving Evaluation，通过保留风险轨迹实现更真实的记忆安全评测。",
+      "跨用户泄露、已撤销记忆复用等风险类别需要独立的细粒度指标而非单一平均分。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

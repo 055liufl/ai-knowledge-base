@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-118",
+  "title": "Who Teaches Which Token? Verifier-Gated Multi-Expert On-Policy Distillation for Scientific Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.15404",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Verifier-Gated Multi-Expert On-Policy Distillation（验证器门控多专家在线策略蒸馏）的新方法，用于科学推理场景下的多教师知识蒸馏。现有多教师在线策略蒸馏（OPD）通常采用序列级监督分配，即每个提示只分配给一个领域教师，且响应中所有 token 获得相同权重，这隐含假设教师在整个响应中均匀有用。作者发现这一假设并不成立，不同 token 的监督价值存在显著差异。为此，该方法引入验证器机制，对每个 token 的监督信号进行门控，动态决定哪些教师、在哪些 token 上提供监督，从而更精细地整合多个专家模型的能力。该工作对多专家蒸馏的监督粒度问题提出了新的解决思路，有望提升科学推理等复杂任务中学生模型的性能，对模型蒸馏与多能力融合方向具有参考价值。",
+  "tags": [
+    "Distillation",
+    "Multi-Expert",
+    "Scientific Reasoning",
+    "RL"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有多教师在线策略蒸馏采用序列级监督分配，隐含假设教师在整个响应中均匀有用，这一假设与实际情况不符。",
+      "不同 token 从不同教师处获得的监督价值存在差异，需要更细粒度的监督分配机制。",
+      "验证器门控机制可动态决定每个 token 由哪个教师提供监督，实现更精细的多专家知识融合。",
+      "该方法面向科学推理任务，有望提升复杂推理场景下学生模型的蒸馏效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

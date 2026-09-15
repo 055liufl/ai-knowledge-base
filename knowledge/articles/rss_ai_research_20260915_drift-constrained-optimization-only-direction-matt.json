@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-033",
+  "title": "Drift-Constrained Optimization: Only Direction Matters in Fine-Tuning Instruct Models",
+  "source_url": "https://arxiv.org/abs/2609.13680",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“漂移约束优化”（Drift-Constrained Optimization）的微调方法，旨在解决指令微调模型在提升目标任务性能时产生的行为漂移问题。传统微调往往在提升目标性能的同时，导致模型偏离参考模型的行为，从而损害原有能力。作者将行为漂移视为一个可控制的预算，在优化前预先设定漂移预算，并在此约束下最大化目标任务性能。局部上，行为漂移在参考模型处诱导出一种共享几何结构，作者利用该几何结构设计优化方向，使得微调仅需关注方向而非幅度。该方法为指令模型的微调提供了一种新的可控范式，有望在提升特定任务表现的同时保持模型的通用能力，对模型对齐和持续学习领域具有重要参考价值。",
+  "tags": [
+    "Fine-Tuning",
+    "Instruction Tuning",
+    "Model Alignment",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "行为漂移可以被视为一个可预先设定的预算，而非优化过程中不可控的副作用。",
+      "在参考模型处，行为漂移诱导出共享的局部几何结构，为优化方向提供了理论依据。",
+      "在漂移约束下，微调只需关注优化方向，而无需调整幅度，从而更有效地提升目标任务性能。",
+      "该方法有望在提升目标任务表现的同时，保留模型的原有能力，缓解灾难性遗忘。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

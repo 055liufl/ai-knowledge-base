@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-058",
+  "title": "MOSCOPT: Mixture-of-Skills Collective Optimization for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.14399",
+  "source_platform": "rss_ai_research",
+  "summary": "MOSCOPT（Mixture-of-Skills Collective Optimization）是 arXiv 上提出的一种面向 LLM Agent 的文本原生、无参数优化算法，旨在解决现有提示与技能优化方法仅优化单一文本模板、忽略多种互补策略协同效应的问题。该方法借鉴混合专家（MoE）思想，同时优化一个包含 N 个技能的技能池以及一个门控技能 G，由 G 动态选择 K 个技能进行组合调用，从而在推理时实现多策略的协同增强。其核心价值在于：无需训练模型参数，仅通过文本层面的优化即可提升 Agent 的任务表现，降低了优化成本与部署门槛；同时将「技能组合」这一思路引入 Agent 提示工程，为多技能协作、动态路由提供了新的范式。对于研究 Agent 架构、提示优化与技能编排的学者和开发者而言，MOSCOPT 提供了一种可扩展、可解释的集体优化框架，有望推动 LLM Agent 从单一提示模板向模块化、自适应技能系统演进。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Prompt Optimization",
+    "Skill Routing"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:15:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有提示/技能优化方法只优化单一文本模板，忽略了多个互补策略之间的协同增益。",
+      "MOSCOPT 采用混合专家思想，联合优化 N 个技能池与一个门控技能 G，动态选择 K 个技能组合使用。",
+      "该方法为文本原生、无参数优化，无需更新模型权重，降低了优化与部署成本。",
+      "技能组合与动态路由为 LLM Agent 提供了模块化、自适应的新范式，可扩展至复杂任务编排。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

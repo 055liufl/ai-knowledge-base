@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-124",
+  "title": "Option-Aware Retrieval and Task-Specific VLM Adaptation for Medical VQA",
+  "source_url": "https://arxiv.org/abs/2609.15530",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了针对 MedReason 2026 挑战赛的提交方案，聚焦于完全离线、容器化推理环境下的医学视觉问答（VQA），涵盖多选题（MCQ）和开放式（OE）两种任务。核心发现是：在多选题检索中，必须比较答案的语义而非答案标签，因为标签是按问题独立分配的，直接复制检索邻居的标签无法传递有用信息；相反，对当前问题的每个候选答案与检索到的邻居答案进行语义评分，才能有效利用检索信息。此外，作者还提出了针对任务的视觉语言模型（VLM）适配策略，以提升医学领域的推理性能。该工作为医学 VQA 在资源受限、离线场景下的部署提供了实用方案，并强调了检索增强与模型微调相结合的重要性，对医学 AI 应用和检索增强生成（RAG）研究具有参考价值。",
+  "tags": [
+    "Medical VQA",
+    "Retrieval-Augmented Generation",
+    "Vision-Language Model",
+    "Offline Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多选题检索应比较答案语义而非标签，因为标签按问题独立分配，直接复制标签无效。",
+      "针对医学 VQA 任务对 VLM 进行特定适配（如微调）能显著提升性能。",
+      "完全离线、容器化的推理设置对医学场景的隐私和部署至关重要。",
+      "检索增强与任务特定模型适配相结合是提升医学 VQA 的有效途径。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

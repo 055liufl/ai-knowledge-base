@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-102",
+  "title": "T-LoopFormer: Token-Level Elastic-Depth Looped Transformers for Latent Reasoning With Dynamic Routing",
+  "source_url": "https://arxiv.org/abs/2609.15160",
+  "source_platform": "rss_ai_research",
+  "summary": "T-LoopFormer 提出了一种面向潜在推理（latent reasoning）的令牌级弹性深度循环 Transformer 架构。循环 Transformer 通过在多轮迭代中复用共享参数，在推理与语言任务上展现出较强的性能，兼顾参数效率与表示能力；同时，其直接在潜在空间中进行推理，可减少推理阶段消耗的令牌数量，提升样本效率。然而，现有循环 Transformer 通常对所有令牌采用统一的循环深度，无法根据令牌难度自适应分配计算资源，导致简单令牌过度计算、困难令牌计算不足。T-LoopFormer 的核心创新在于引入令牌级弹性深度机制与动态路由策略，使不同令牌能够自适应地选择循环迭代次数，从而在保持参数共享优势的同时实现更精细的计算分配。该工作对提升推理效率、降低推理成本具有潜在价值，尤其适用于需要长链推理或复杂逻辑推导的场景，也为循环架构与动态计算研究提供了新思路。",
+  "tags": [
+    "Transformer",
+    "Latent Reasoning",
+    "Dynamic Routing",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "循环 Transformer 通过参数复用实现参数效率，并在潜在空间推理以减少令牌消耗。",
+      "现有方法对所有令牌使用统一循环深度，缺乏对令牌难度的自适应计算分配。",
+      "T-LoopFormer 引入令牌级弹性深度与动态路由，使不同令牌自适应选择迭代次数。",
+      "该架构有望在保持参数共享优势的同时提升推理效率与样本效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

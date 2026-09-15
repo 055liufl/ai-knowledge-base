@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-016",
+  "title": "AutoTailor: Automatic, User-Aligned Capability Selection and Adaptation for Web Agents",
+  "source_url": "https://arxiv.org/abs/2609.13548",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoTailor 是一个面向 Web Agent 的元代理（meta-agentic）框架，旨在解决自动化发现的工具集合规模庞大、冗余且与用户需求不匹配的问题。该工作将 Web 交互轨迹转化为参数化的浏览器自动化程序，并封装为基于 Model Context Protocol（MCP）的可复用 API，从而降低底层浏览器交互的成本与延迟。其核心创新在于「用户对齐」的能力选择与适配机制：AutoTailor 不仅在离线阶段从轨迹中提炼出紧凑的 MCP API 集合，还持续维护该集合，使其随用户需求变化而动态调整，避免工具库膨胀与失配。该研究值得关注的原因在于：其一，Web Agent 是当前 LLM 智能体落地的重要方向，而工具复用是提升效率的关键瓶颈；其二，MCP 作为新兴的模型上下文协议标准，将其与轨迹学习结合具有较强的前沿性和工程价值；其三，AutoTailor 提出的「自动裁剪 + 用户对齐」思路，为构建可维护、可扩展的 Agent 工具生态提供了新范式，对研究者和开发者均具有参考意义。",
+  "tags": [
+    "Web Agent",
+    "MCP",
+    "Tool Learning",
+    "Meta-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:13:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AutoTailor 将 Web 交互轨迹自动转化为参数化的 MCP API，实现浏览器自动化能力的复用，降低 Agent 的交互成本与延迟。",
+      "针对自动发现工具集合冗余且与用户需求错位的问题，框架引入用户对齐的能力选择机制，构建紧凑且高相关的工具集。",
+      "AutoTailor 具备持续维护能力，可随用户需求演化动态调整工具集合，避免工具库膨胀和失配。",
+      "该工作将 MCP 协议与轨迹学习相结合，为 Web Agent 的工具生态提供了可维护、可扩展的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

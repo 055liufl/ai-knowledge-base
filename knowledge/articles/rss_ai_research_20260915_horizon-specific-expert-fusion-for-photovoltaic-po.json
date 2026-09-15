@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-094",
+  "title": "Horizon-specific Expert Fusion for Photovoltaic Power Forecasting",
+  "source_url": "https://arxiv.org/abs/2609.15035",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种面向光伏发电功率预测的分层集成方法，针对短期预测中不同预测时间跨度（horizon）对模型能力需求差异的问题，设计了“horizon-specific expert fusion”框架。该方法融合了时间神经网络、历史相似日、状态气候学以及梯度提升树四类专家模型，并利用太阳几何与数值天气预报信息描述预期发电条件，通过针对不同预测跨度学习凸组合权重实现动态融合。其核心创新在于认识到太阳周期规律与天气驱动波动在不同预测时间尺度上的重要性会发生变化，因此不再使用单一固定模型，而是让不同专家在不同 horizon 上发挥各自优势。该工作对新能源并网、电网调度和光伏电站运营具有实际价值，也为时间序列预测中的多模型动态集成提供了可借鉴的思路。",
+  "tags": [
+    "Time Series Forecasting",
+    "Ensemble Learning",
+    "Photovoltaic",
+    "Renewable Energy",
+    "Expert Fusion"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同预测时间跨度下，太阳周期规律与天气波动的重要性不同，模型需要具备 horizon-aware 的动态适应能力。",
+      "融合时间神经网络、历史相似日、气候学和梯度提升树等多类专家，可互补捕捉光伏发电的规律性与随机性。",
+      "采用 horizon-specific 凸权重组合，比单一模型或固定权重集成更能提升短期光伏功率预测精度。",
+      "结合太阳几何与数值天气预报作为条件输入，有助于增强模型对预期发电条件的表征能力。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-074",
+  "title": "AcquireBound: Runtime Authorization for Resources Acquired by AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.14744",
+  "source_platform": "rss_ai_research",
+  "summary": "AcquireBound 是一篇来自 arXiv 的研究工作，聚焦于自主 AI Agent 在运行过程中获取外部资源（如计算资源、凭证、账户、服务以及其他 Agent）时所引入的授权安全问题。作者指出，现有的支付、预算、OAuth、mandate 和履约检查等机制只能验证交易条件是否满足，却无法判断被返回的资源是否应当被激活为可用的权限。这一「履约后激活缺口」（post-fulfillment activation gap）广泛存在于工具调用创建、Agent 间委托以及 Agent 商务等场景中。AcquireBound 提出了一种基于溯源（provenance）的运行时授权机制，旨在对 Agent 动态获取的资源进行边界约束与激活控制。该工作值得关注，因为它揭示了 Agent 自主性带来的新型安全风险——Agent 可以通过获取资源来「扩权」，而传统访问控制模型并未覆盖这一动态授权路径，对构建可信、可控的 Agent 系统具有重要的理论与实践意义。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Authorization",
+    "Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自主 Agent 通过获取计算、凭证、账户、服务和其他 Agent 来引入新权限，形成传统访问控制未覆盖的授权路径。",
+      "现有支付、预算、OAuth、mandate 和履约检查只验证交易条件，无法判断返回资源是否应被激活为可用权限，存在「履约后激活缺口」。",
+      "该缺口贯穿工具介导的创建、Agent 间委托和 Agent 商务三类场景，是 Agent 自主性带来的系统性安全风险。",
+      "AcquireBound 提出基于溯源的运行时授权方法，对 Agent 动态获取的资源进行激活控制与边界约束。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

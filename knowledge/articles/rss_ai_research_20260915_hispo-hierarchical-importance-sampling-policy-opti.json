@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260915-121",
+  "title": "HISPO: Hierarchical Importance-Sampling Policy Optimization with Entropy-Derived Segments",
+  "source_url": "https://arxiv.org/abs/2609.15471",
+  "source_platform": "rss_ai_research",
+  "summary": "HISPO（Hierarchical Importance-Sampling Policy Optimization）是一篇针对大语言模型数学推理强化学习（RLVR）中信用分配难题的研究工作。在 RLVR 训练中，长文本解答的不同片段对最终正确性的贡献并不均衡，而现有策略优化目标（如 GRPO、DAPO）通常只在 token 级别或序列级别进行重要性采样校正，难以精细刻画这种层级化的贡献差异。HISPO 提出了一种基于熵的分段机制，将解答轨迹自动切分为具有语义意义的片段，并在片段层级上执行重要性采样与策略优化，从而在 token 级与序列级之间引入中间粒度的信用分配。该方法有望缓解长链推理中梯度信号稀疏、噪声大的问题，提升数学推理任务的训练稳定性与最终性能。该工作属于 RLVR 与策略优化交叉方向的前沿探索，对关注 LLM 推理能力提升、强化学习算法设计的研究者和工程师具有较高参考价值。",
+  "tags": [
+    "RLVR",
+    "Policy Optimization",
+    "LLM Reasoning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长文本推理轨迹中不同片段对最终正确性的贡献不均衡，token 级或序列级的重要性采样校正粒度不足",
+      "HISPO 利用熵信号自动划分层级片段，在片段级别进行重要性采样，实现更精细的信用分配",
+      "该方法在 token 级与序列级之间引入中间粒度优化，有望提升 RLVR 训练的稳定性与数学推理性能"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

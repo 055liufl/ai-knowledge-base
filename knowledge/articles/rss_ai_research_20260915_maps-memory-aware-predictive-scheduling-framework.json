@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260915-114",
+  "title": "MAPS: Memory-Aware Predictive Scheduling Framework for Large Language Model Serving",
+  "source_url": "https://arxiv.org/abs/2609.15359",
+  "source_platform": "rss_ai_research",
+  "summary": "MAPS 是一个面向大语言模型（LLM）服务的内存感知预测调度框架，旨在解决预填充-解码分离架构下解码实例负载不均衡的问题。随着 LLM 应用在个人设备上的激增，云端服务面临大量突发性工作负载。虽然预填充-解码分离能提升吞吐量和可扩展性，但由于请求到达云端时输出长度未知，内存受限的解码实例常出现持续的负载不均。MAPS 通过内存感知的预测调度策略，在请求到达时预测其输出长度和内存需求，从而更合理地分配解码任务，缓解负载倾斜。该工作针对 LLM 推理服务中的实际瓶颈，结合预测与调度，对提升云端 GPU 利用率和降低延迟具有实用价值，尤其适用于高并发、输出长度差异大的在线服务场景。",
+  "tags": [
+    "LLM Serving",
+    "Scheduling",
+    "Inference",
+    "Memory Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预填充-解码分离架构中，解码实例因输出长度未知而面临持续负载不均，是 LLM 服务的关键瓶颈。",
+      "MAPS 通过内存感知的预测调度，在请求到达时预估输出长度和内存需求，优化解码任务分配。",
+      "该框架针对突发性、输出长度差异大的云端 LLM 工作负载，有望提升 GPU 利用率和降低延迟。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

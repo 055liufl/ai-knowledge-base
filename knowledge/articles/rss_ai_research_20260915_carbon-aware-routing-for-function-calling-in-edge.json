@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-018",
+  "title": "Carbon-Aware Routing for Function Calling in Edge-Cloud LLM Systems",
+  "source_url": "https://arxiv.org/abs/2609.13559",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向函数调用（Function Calling）场景的碳感知路由框架（Carbon-Aware Routing），旨在解决当前 LLM 智能体系统过度依赖云端推理所带来的高能耗与碳排放问题。随着具备函数调用能力的 LLM 成为现代 Agentic AI 系统的核心组件，推理请求通常被集中路由至算力强大的云端模型，虽然保证了性能，却造成了显著的能源消耗与碳足迹。该工作设计了一个三层边缘-云协同架构，将函数调用查询在边缘设备、边缘服务器与云端之间进行动态分配，并结合碳强度信号进行路由决策，从而在满足延迟与准确性约束的前提下降低整体碳排放。该研究的意义在于：首次将可持续性（碳感知）与函数调用这一 Agent 关键能力结合，为 LLM 推理的绿色部署提供了可落地的系统级方案；同时，边缘-云分层路由思路对降低推理成本、提升响应速度也具有实际价值，尤其适用于对能耗敏感或网络受限的部署场景。对于关注 LLM 系统效率、绿色 AI 以及边缘智能的研究者和工程师而言，这是一篇值得关注的前沿工作。",
+  "tags": [
+    "LLM",
+    "Function Calling",
+    "Edge-Cloud",
+    "Carbon-Aware",
+    "Green AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:13:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "函数调用型 LLM 推理集中上云导致高能耗与碳排放，碳感知路由是缓解该问题的有效手段。",
+      "三层边缘-云架构可根据碳强度与任务需求动态分配函数调用查询，兼顾性能与可持续性。",
+      "将碳感知调度引入 Agentic AI 推理链路，为绿色 LLM 部署提供了新的系统设计范式。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

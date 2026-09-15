@@ -1,0 +1,33 @@
+{
+  "id": "github-trending-20260915-008",
+  "title": "recursive-llm",
+  "source_url": "https://github.com/grishahq/recursive-llm",
+  "source_platform": "github_trending",
+  "summary": "recursive-llm 是一个旨在高效处理超长上下文（1M+ tokens）的开源项目。它通过将上下文存储在 Python REPL（交互式解释器）中，并利用递归语言模型（Recursive Language Models）来分析和操作这些上下文，从而显著减少直接传递给 LLM 的 token 数量。传统方法在处理长文档时，要么受限于模型的上下文窗口，要么需要将大量文本反复送入模型，导致成本高昂且效率低下。recursive-llm 的创新点在于将上下文管理外部化：模型不再需要一次性“阅读”全部内容，而是通过编写和执行 Python 代码来按需检索、过滤或聚合信息，仅将最相关的片段送入 LLM 进行推理。这种方法既降低了 token 消耗，又保持了处理超长上下文的能力，为长文档问答、代码库分析、大规模日志处理等场景提供了新的思路。该项目值得关注，因为它探索了 LLM 与外部工具（REPL）深度结合的模式，可能成为未来长上下文处理的重要范式之一。",
+  "tags": [
+    "LLM",
+    "Long Context",
+    "REPL",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:06Z",
+  "collected_at": "2026-09-15T13:11:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "Python",
+  "retry_count": 0,
+  "metrics": {
+    "stars": 603
+  },
+  "ai_analysis": {
+    "key_insights": [
+      "通过将上下文存储在 Python REPL 中，LLM 可以按需检索信息，避免一次性处理全部 token，从而大幅降低 token 消耗。",
+      "递归语言模型允许模型编写代码来操作上下文，实现更灵活、更高效的长文档分析。",
+      "该方法为处理 1M+ tokens 的超长上下文提供了一种可扩展的解决方案，尤其适合需要反复查询或聚合信息的场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

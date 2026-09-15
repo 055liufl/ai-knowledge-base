@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260915-005",
+  "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+  "source_url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了一种通过记忆化（memoization）技术将 eBPF 程序的 CPU 开销降低约 90% 的方法。eBPF 作为 Linux 内核中高效的可编程数据平面，广泛应用于网络、可观测性和安全领域，但其程序在每次触发时都会重复执行相同的计算，导致不必要的 CPU 消耗。作者提出在 eBPF 程序中引入记忆化，即缓存先前计算的结果，当相同输入再次出现时直接返回缓存值，从而避免重复计算。文章详细阐述了实现细节，包括如何在内核限制下设计缓存结构、处理缓存失效以及确保正确性。实验结果表明，在典型工作负载下，CPU 使用率显著下降，性能提升明显。该方法不依赖 AI 生成，而是基于传统优化思想，为 eBPF 开发者提供了实用的性能优化手段。对于关注系统性能、内核编程和可观测性的开发者而言，这一技术具有较高的参考价值，尤其在高频事件处理场景中，记忆化能有效降低开销，提升系统整体效率。",
+  "tags": [
+    "eBPF",
+    "性能优化",
+    "Linux内核",
+    "memoization"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:06Z",
+  "collected_at": "2026-09-15T13:12:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆化通过缓存计算结果避免重复计算，可大幅降低 eBPF 程序的 CPU 开销。",
+      "在内核环境中实现记忆化需考虑内存限制和缓存一致性，设计需谨慎。",
+      "该方法在高频事件处理场景中效果显著，为 eBPF 性能优化提供了新思路。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

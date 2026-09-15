@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260915-070",
+  "title": "Depth and Scale in the Sub-150M Regime: JugnuLM-53M vs JugnuLM-110M",
+  "source_url": "https://arxiv.org/abs/2609.14715",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了JugnuLM系列在亚1.5亿参数规模下的深度与宽度权衡研究。作者将53.5M参数的预训练配方扩展到109.7M参数，保持方法不变（Qwen3风格解码器，包含分组查询注意力、RoPE、SwiGLU、RMSNorm、QK-Norm和z-loss，使用FineWeb-Edu数据），仅将模型几何结构改为深而窄的23层×576隐藏维度设计。实验表明，更大的模型在所有基准上均有提升：BLiMP从78.1升至81.3，ARC-Easy从51.4升至52.5，WikiText-2字节困惑度从2.04降至1.95。该研究为小规模语言模型的设计提供了实证参考，特别是在参数预算有限时，深度与宽度的选择对性能的影响。其价值在于验证了在亚1.5亿参数区间，增加深度并保持较窄宽度可以有效提升语言建模能力，对资源受限场景下的模型部署和学术研究具有指导意义。",
+  "tags": [
+    "LLM",
+    "预训练",
+    "小模型",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:16:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在亚1.5亿参数区间，深而窄的架构（23层×576隐藏）比浅而宽的设计表现更好，所有基准均有提升。",
+      "保持预训练方法不变，仅调整模型几何结构即可带来一致性能改进，说明深度是提升小模型能力的关键因素。",
+      "该研究为资源受限场景下的模型设计提供了实证依据，但提升幅度相对有限，需权衡计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

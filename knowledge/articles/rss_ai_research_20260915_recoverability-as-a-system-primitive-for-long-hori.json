@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-032",
+  "title": "Recoverability as a System Primitive for Long-Horizon AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.13672",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出将「可恢复性（recoverability）」作为长时程 AI Agent 的系统原语。当前 Agent 在执行文件编辑、工具调用或多步任务时可能被中断，重启会重复已完成的工作，而从未经校验或已过时的进度继续则会把早期错误带入后续流程——保存的状态未必适合作为恢复起点。作者主张把「复用」变成一次显式决策：为 Agent 选择一个受支持的起始点与一种被允许的恢复动作，否则就拒绝授权继续执行。该工作将容错与状态管理从工程细节提升为 Agent 架构的一等公民，对构建可靠、可审计、可长期运行的多步 Agent 系统具有直接指导意义，尤其适用于需要长时间自主运行、涉及外部副作用（如文件写入、API 调用）的场景。",
+  "tags": [
+    "Agent",
+    "Reliability",
+    "System Design",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "保存的状态不等于可安全恢复的起点，未经校验的进度延续会传播早期错误",
+      "应将「复用」建模为显式决策：选择受支持的起始点与允许的恢复动作，否则拒绝继续",
+      "可恢复性应作为系统原语而非事后补丁，是长时程 Agent 可靠运行的基础设施",
+      "该思路对涉及外部副作用的多步任务（文件编辑、工具调用）尤为关键"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

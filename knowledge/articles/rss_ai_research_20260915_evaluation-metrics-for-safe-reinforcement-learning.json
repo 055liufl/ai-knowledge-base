@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-112",
+  "title": "Evaluation Metrics for Safe Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.15315",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对安全强化学习（Safe RL）的评估指标提出质疑。安全 RL 通常形式化为约束马尔可夫决策过程（CMDP），智能体在最大化期望奖励的同时，需将期望累积成本控制在安全边界内。现有基准主要报告算法是否在平均意义上安全，遵循这种基于期望的保证。作者认为，这种惯例不足以可靠地刻画算法的真实安全性，因为平均安全可能掩盖了高方差或尾部风险。文章可能提出更全面的评估指标，如考虑成本分布的方差、条件风险价值（CVaR）或最坏情况性能，以更准确地反映算法在安全关键场景中的可靠性。该工作对安全 RL 的研究和部署具有重要意义，尤其当算法应用于自动驾驶、医疗等高风险领域时，仅依赖期望安全可能导致严重后果。通过改进评估标准，可以推动更稳健的安全 RL 算法发展，并促进其在现实世界中的可信应用。",
+  "tags": [
+    "Safe RL",
+    "Evaluation Metrics",
+    "CMDP",
+    "Risk Assessment"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有安全 RL 评估主要依赖期望累积成本，可能掩盖高方差和尾部风险。",
+      "仅报告平均安全性不足以可靠表征算法在安全关键场景中的真实表现。",
+      "需要引入更全面的指标（如 CVaR、最坏情况分析）来评估安全 RL 算法。",
+      "改进评估标准有助于推动更稳健的安全 RL 算法及其实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

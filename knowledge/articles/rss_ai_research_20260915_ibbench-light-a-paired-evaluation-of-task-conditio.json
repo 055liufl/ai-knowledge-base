@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-037",
+  "title": "IBBench-Light: A Paired Evaluation of Task-Conditioned Responses to External Directives",
+  "source_url": "https://arxiv.org/abs/2609.13725",
+  "source_platform": "rss_ai_research",
+  "summary": "IBBench-Light 是一个针对大语言模型处理外部指令能力的配对评估基准，发表于 arXiv（编号 2609.13725）。该基准的核心设计在于：同一份外部记录（external record）可能被用户以两种方式使用——要么作为需要执行的操作流程（execute），要么作为需要阅读处理的文本（process）。IBBench-Light 通过 12 个语义基础构建了每个模型 144 对匹配样本，并对四个量化指令模型生成了 1,152 条归档的贪婪解码响应。评估指标采用配对精确契约准确率（PECA），要求一对样本中的两个成员都满足各自的输出契约才算通过。实验显示，Qwen 在 132 个执行类提示和 109 个处理类提示上成功，但仅有 97 对同时通过，暴露出模型在任务条件化响应上的显著不一致性。该基准的价值在于揭示了当前指令模型在面对同一输入的不同使用意图时，难以稳定区分并正确执行任务，这对构建可靠的指令遵循系统、Agent 工具调用以及文档处理流水线具有重要参考意义。",
+  "tags": [
+    "LLM Evaluation",
+    "Instruction Following",
+    "Benchmark",
+    "Quantized Models"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同一外部记录在不同用户意图下可能对应执行或处理两种截然不同的任务，模型需要具备任务条件化的响应能力。",
+      "配对精确契约准确率（PECA）要求一对样本同时满足输出契约，比单样本准确率更能暴露模型的不一致性问题。",
+      "Qwen 在单类任务上表现尚可（132/109），但配对通过数仅 97，说明模型在区分执行与处理意图时存在明显缺陷。",
+      "量化指令模型在外部指令遵循上的可靠性仍需提升，该基准为评估和改进提供了可复现的测试框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

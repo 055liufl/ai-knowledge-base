@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-093",
+  "title": "Four Ledgers, Not One Score: Responsible Communication of LLM-Judge Calibration in Biomedical ML",
+  "source_url": "https://arxiv.org/abs/2609.15015",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对生物医学机器学习中LLM评估器校准问题提出了一种负责任的沟通框架。由于专家评审稀缺，研究者常使用合成扰动作为廉价校准数据，但作者指出，植入的突变密钥既不等同于检测器输出，也不自动构成人类真实标注。为此，论文形式化了四个独立账本：植入扰动、独立检测器输出、源链接的人类处置以及人类新增发现。作者随后审计了评估设计、评分代码、读取路径及校准流程，揭示了将单一评分指标混同于多源证据的常见误区。该工作值得关注，因为它为LLM作为评估器（LLM-Judge）的校准实践提供了严谨的概念区分与审计方法，有助于提升生物医学ML评估的可信度与可复现性，并推动更透明的评估报告规范。",
+  "tags": [
+    "LLM-Judge",
+    "Calibration",
+    "Biomedical ML",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "合成扰动密钥不能直接作为人类真实标注或检测器输出，混淆二者会导致校准偏差。",
+      "应区分四个独立账本：植入扰动、检测器输出、人类处置和人类新增发现，避免单一评分掩盖证据来源。",
+      "审计评估设计、评分代码和读取路径是确保LLM评估器校准可靠性的必要步骤。",
+      "在专家评审稀缺的生物医学领域，负责任的沟通需要明确区分不同证据层级，而非追求单一分数。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

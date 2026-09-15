@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-028",
+  "title": "FedV-KGQA in Practice: Design Lessons and an Interactive Prototype",
+  "source_url": "https://arxiv.org/abs/2609.13661",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文（arXiv:2609.13661）关注联邦式知识图谱问答（FedV-KGQA）在真实场景中的落地问题。传统知识图谱问答通常假设单一系统可以访问完整图谱，但现实中事实往往分散在多个组织手中：它们共享实体标识符，却各自拥有互不重叠的关系类型，因此没有任何一方能看到完整的推理链。作者针对这种\"垂直分区\"（vertically partitioned）图谱上的多跳问答任务，报告了 FedV-KGQA 的实证发现：每个数据孤岛在本地对图谱进行增强，并训练本地知识图谱模型，再通过联邦机制协同完成跨孤岛的多跳推理。该工作以海报形式呈现，重点不是提出全新算法，而是总结设计经验并给出一个交互式原型，揭示了在数据不共享、关系类型互补的约束下实现多跳问答所面临的工程与建模挑战。其价值在于把联邦学习与知识图谱问答这两个方向结合到真实组织协作场景中，为隐私敏感、数据割裂环境下的 KGQA 部署提供了可借鉴的设计教训与可交互验证的原型，对关注联邦推理、分布式知识图谱和实际落地的研究者与开发者具有参考意义。",
+  "tags": [
+    "Federated Learning",
+    "Knowledge Graph QA",
+    "Multi-hop Reasoning",
+    "Vertical Partitioning"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现实中的知识图谱问答常面临垂直分区：各组织共享实体 ID 但关系类型互不重叠，单方无法看到完整推理链。",
+      "FedV-KGQA 让每个数据孤岛在本地增强图谱并训练本地模型，再通过联邦协作完成跨孤岛多跳问答。",
+      "该工作以设计经验和交互式原型为主，强调工程落地教训而非单纯算法创新。",
+      "为隐私敏感、数据割裂场景下的分布式知识图谱问答提供了可参考的联邦式解决思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

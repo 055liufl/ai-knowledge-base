@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-044",
+  "title": "Do Not Restart: Residual Completion for Stateful Agent Handoffs",
+  "source_url": "https://arxiv.org/abs/2609.13800",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Commitment-Frontier Residual Completion (CFRC) 的新方法，用于解决有状态智能体（stateful agent）在模型间交接（handoff）时的状态保持问题。在路由和级联（cascades）架构中，为了降低工具调用成本，控制权常在不同模型间转移，但传统做法往往需要重启或丢失已接受的选择、已实现的效果以及未完成的义务。CFRC 将这一问题形式化为“承诺约束下的残差补全”（commitment-constrained residual completion），并强制三条核心规则：目标先于提议（target-before-proposal）、完整提议先于授权（whole-proposal-before-authority）、活证据先于成功（live-evidence-before-success）。该方法通过冻结残差合约（residual contract）来确保交接过程中状态的一致性和连续性。这项研究值得关注，因为它为多模型协作、智能体编排和成本优化提供了理论基础，有望提升复杂任务中智能体交接的可靠性和效率，减少因状态丢失导",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Multi-Agent",
+    "State Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:14:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "有状态智能体交接的核心挑战是保持承诺约束，包括已接受的选择、已实现的效果和未完成的义务。",
+      "CFRC 通过目标先于提议、完整提议先于授权、活证据先于成功三条规则，形式化残差补全过程。",
+      "该方法为路由和级联架构中的成本优化提供了状态一致性的理论基础，减少重启带来的重复工作。",
+      "残差合约的冻结机制是实现可靠交接的关键，确保模型间控制转移时不丢失关键状态。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

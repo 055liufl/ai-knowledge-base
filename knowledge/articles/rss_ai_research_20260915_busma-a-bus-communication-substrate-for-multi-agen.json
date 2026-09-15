@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-096",
+  "title": "BusMA: A Bus Communication Substrate for Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2609.15054",
+  "source_platform": "rss_ai_research",
+  "summary": "BusMA 提出了一种面向多智能体（Multi-Agent, MA）系统的总线式通信底层（Bus Communication Substrate），旨在解决现有主流通信协议——层级式 Manager-Worker（HMW）和基于路由的消息传递（Router-based Message Passing, RMP）——对智能体自主性的限制问题。在 HMW 与 RMP 架构中，Worker 智能体无法直接向特定同伴发起咨询，且一旦消息被错误路由，错误会在系统中级联传播，严重影响任务执行的鲁棒性与准确性。BusMA 借鉴计算机体系结构中总线（Bus）的设计思想，为多智能体提供一种更扁平、更灵活的通信机制，使任意智能体之间能够直接、可控地交换信息，从而提升协作效率并抑制错误扩散。该工作属于多智能体系统基础设施层面的创新，对构建更自主、更可靠的 Agent 协作框架具有参考价值，尤其适合关注 Agent 通信协议、编排架构与系统可靠性的研究者和开发者。",
+  "tags": [
+    "Multi-Agent",
+    "Agent Communication",
+    "Orchestration",
+    "Infra"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:17:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 HMW 与 RMP 通信协议限制了 Worker 智能体的自主性，使其无法直接与特定同伴通信。",
+      "错误路由的消息会在多智能体系统中级联传播，导致错误放大，是现有架构的关键缺陷。",
+      "BusMA 借鉴硬件总线思想，为多智能体提供更扁平、直接的通信底层，有望提升协作鲁棒性。",
+      "该工作聚焦 Agent 通信基础设施层，对构建更自主可靠的多智能体编排框架具有参考意义。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

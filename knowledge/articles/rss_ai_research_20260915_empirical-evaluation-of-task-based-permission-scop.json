@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260915-120",
+  "title": "Empirical Evaluation of Task-Based Permission Scoping Architecture for AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.15422",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对企业环境中 AI Agent 权限管理问题提出并评估了一种基于任务的权限作用域架构（Task-Based Permission Scoping Architecture）。当前许多企业将 AI Agent 视为员工主机进行配置，在部署时赋予其静态凭证集合，包含员工角色可能需要的所有权限。这种基于角色的访问控制（RBAC）对人类主体而言是合理妥协，因为按任务划分权限在人工场景下难以实现；但对 AI Agent 而言，这导致所有凭证无论当前任务是否使用都长期处于暴露状态，显著扩大了攻击面。论文通过实证评估，探讨了将权限按任务动态限定范围的方法，以降低凭证泄露风险。该研究值得关注，因为它直击 AI Agent 在企业落地中的核心安全痛点——过度授权问题，并提供了可量化的评估框架，为后续 Agent 权限最小化设计提供了实证依据。",
+  "tags": [
+    "AI Agent",
+    "Access Control",
+    "Security",
+    "Permission Scoping"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:18:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "企业常将 AI Agent 按员工主机配置静态全量凭证，导致权限过度暴露",
+      "RBAC 对人类可行是因按任务授权成本高，但对 Agent 而言该妥协不再合理",
+      "基于任务的权限作用域架构可动态限制 Agent 权限，减少攻击面",
+      "实证评估为 Agent 权限最小化设计提供了可量化的安全依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

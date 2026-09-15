@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260915-067",
+  "title": "DynSTEER: Dynamic Stage-wise Trajectory Evaluation and Execution-time Review for Agents",
+  "source_url": "https://arxiv.org/abs/2609.14637",
+  "source_platform": "rss_ai_research",
+  "summary": "DynSTEER 是一篇针对 LLM Agent 长程任务执行评估的 arXiv 论文，指出现有评估范式存在三大局限：仅做终态评估会忽略中间过程、难以高效准确定位错误；单一参考路径匹配会惩罚其他有效解法；事后轨迹评判成本高昂且无法提前终止失败运行。为此，作者提出动态分阶段轨迹评估与执行时审查框架（Dynamic Stage-wise Trajectory Evaluation and Execution-time Review），旨在对 Agent 执行过程进行分阶段、可中断、多路径友好的评估。该工作值得关注，因为它直击当前 Agent 评测体系的核心痛点——从只看结果转向过程监督，从单参考答案转向多解容忍，从离线事后打分转向在线实时干预。若方法有效，将提升 Agent 在复杂长程任务中的可靠性、可调试性与部署安全性，并为 Agent 训练、评测和运行时防护提供新的技术路径。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "LLM",
+    "Trajectory",
+    "Runtime Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-09-15T13:11:09Z",
+  "collected_at": "2026-09-15T13:15:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 评估过度依赖终态结果，无法有效定位长程执行中的中间错误。",
+      "单一参考路径匹配会误判合理的替代解法，需要支持多路径评估。",
+      "事后轨迹评判成本高且无法提前止损，执行时审查可实现早期失败终止。",
+      "分阶段动态评估有望同时提升 Agent 评测的准确性、效率与运行时安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
