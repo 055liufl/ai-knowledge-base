@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-084",
+  "title": "Beyond Distribution Matching: Semantics-Consistent Tabular Diffusion with Weak Semantic Priors",
+  "source_url": "https://arxiv.org/abs/2609.16069",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Semantics-Consistent Tabular Diffusion 的新框架，旨在解决现有表格数据生成器仅优化分布保真度而忽视语义约束的问题。传统表格生成模型（如基于 GAN 或扩散模型的方案）虽然能匹配真实数据的统计分布，但生成的合成行可能违反表格模式（schema）和文本描述中隐含的弱语义先验，导致数据在语义上不一致。该工作将表格模式与文本描述中编码的弱语义先验显式建模，并融入扩散模型的生成过程，从而在保持高分布保真度的同时提升语义一致性。这一方向值得关注，因为表格数据在医疗、金融、推荐系统等领域广泛应用，合成数据的语义正确性直接关系到下游任务（如训练机器学习模型、隐私保护数据共享）的可靠性。该研究为表格生成领域提供了从“分布匹配”到“语义一致”的新视角，可能推动更可信的合成数据生成方法的发展。",
+  "tags": [
+    "Tabular Data",
+    "Diffusion Model",
+    "Data Generation",
+    "Semantic Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有表格生成器主要优化分布保真度，但忽略了表格模式和文本描述中编码的弱语义先验，导致合成数据可能违反语义约束。",
+      "提出语义一致的表格扩散框架，将弱语义先验显式融入扩散过程，以同时实现高分布保真度和语义一致性。",
+      "该工作强调合成表格数据的语义正确性对下游任务可靠性的重要性，为表格生成研究提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

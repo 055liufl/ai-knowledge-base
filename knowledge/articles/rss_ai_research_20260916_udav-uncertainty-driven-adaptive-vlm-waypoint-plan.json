@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-113",
+  "title": "UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner",
+  "source_url": "https://arxiv.org/abs/2609.16368",
+  "source_platform": "rss_ai_research",
+  "summary": "UDAV（Uncertainty-Driven Adaptive VLM Waypoint Planner）是一篇来自 arXiv 的跨领域研究论文，聚焦于利用视觉语言模型（VLM）为越野导航生成路径规划。传统 VLM 能够直接从航空影像中生成路线，但其预测缺乏可靠性指示，无法判断输出是否可信。UDAV 的核心创新在于引入不确定性驱动的自适应机制：通过对同一场景进行多次随机轨迹采样，选取其中位数（medoid）作为自洽的标称路线，并利用这些采样轨迹的空间离散度来估计预测不确定性。这种不确定性估计使系统能够在 VLM 输出不可靠时进行自适应调整，从而提升无人机引导无人地面车辆（UGV）导航的安全性和鲁棒性。该工作值得关注的原因在于，它将不确定性量化与 VLM 路径规划相结合，解决了 VLM 在安全关键场景中缺乏可靠性评估的痛点，为越野导航、自动驾驶和机器人领域提供了新的思路。",
+  "tags": [
+    "VLM",
+    "Uncertainty",
+    "Navigation",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:18:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 生成的路径规划缺乏可靠性指示，UDAV 通过多次随机采样和空间离散度估计预测不确定性，弥补了这一缺陷。",
+      "选取多次轨迹预测的中位数作为自洽标称路线，可有效降低单次预测的随机性影响。",
+      "不确定性驱动的自适应机制使系统在 VLM 输出不可靠时能够调整策略，提升越野导航的安全性。",
+      "该方法面向无人机引导无人地面车辆（UGV）的协同导航场景，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

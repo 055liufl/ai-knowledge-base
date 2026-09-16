@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260916-100",
+  "title": "Efficient Reasoning Distillation: Small Video-Language Models via Synthetic CoT and Difficulty-Aware Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2609.16255",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种高效的知识蒸馏方法，旨在将推理能力迁移到紧凑的视频语言模型（VLM）中，用于视频问答（VideoQA）任务。该方法的核心创新在于：仅使用约900个通过不确定性选择策略筛选出的样本，并为每个样本合成由4B参数教师模型生成的思维链（CoT）推理依据，然后对2B参数的学生模型进行难度感知的微调。整个训练过程计算成本极低，在单张A100 GPU上不到两小时即可完成。实验结果表明，经过该方法微调后的2B模型在性能上超越了更大的基线模型，展示了小模型通过高质量数据筛选和合成推理蒸馏也能获得强大的推理能力。这项工作值得关注，因为它大幅降低了视频推理模型的训练门槛和成本，为资源受限场景下的多模态推理部署提供了可行方案，同时也为数据高效的知识蒸馏和CoT合成提供了新的思路。",
+  "tags": [
+    "VideoQA",
+    "知识蒸馏",
+    "思维链",
+    "多模态",
+    "高效微调"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅需约900个不确定性筛选的样本和合成CoT即可将推理能力蒸馏到2B小模型，大幅降低数据需求",
+      "单张A100上不到两小时的训练成本使视频推理模型微调变得极其高效",
+      "2B学生模型在VideoQA任务上超越更大基线，证明数据质量比模型规模更关键",
+      "难度感知微调策略有效利用了合成CoT中的推理信息，提升了小模型的推理表现"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

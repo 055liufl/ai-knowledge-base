@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260916-016",
+  "title": "Cross-Anatomy Transfer Versus Sparse Interpolation in Digital-Twin-Oriented Aortic Fluid-Structure Interaction Surrogates",
+  "source_url": "https://arxiv.org/abs/2609.16322",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对数字孪生导向的主动脉流固耦合（FSI）代理模型，提出并区分了两种泛化场景：跨独立解剖结构的迁移（cross-anatomy transfer）与已采样表面内的稀疏插值（sparse interpolation）。研究基于血管模型库中四个去标识化的人体主动脉模型，分别重建管腔与名义1.5毫米壁厚域，并在匹配的首周期双向FSI条件下进行分析。作者采用仅基于几何的LightGBM先验模型，通过留一解剖结构法（leave-one-anatomy-out）进行开发与评估。该工作值得关注之处在于，它揭示了代理模型可信度评估中的一个关键盲点：许多研究将插值性能误认为跨解剖泛化能力，而后者才是数字孪生临床部署的真正瓶颈。通过明确区分这两类任务，论文为FSI代理模型的泛化性评估提供了更严谨的方法论框架，对心血管数字孪生、手术规划与个性化医疗中的计算建模具有重要参考价值。",
+  "tags": [
+    "Digital Twin",
+    "Fluid-Structure Interaction",
+    "Surrogate Model",
+    "LightGBM",
+    "Cardiovascular"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨独立解剖结构的迁移与已采样表面内的稀疏插值是两种本质不同的泛化任务，代理模型的可信度评估必须明确区分二者。",
+      "仅基于几何的LightGBM先验结合留一解剖结构法，为评估FSI代理模型的跨解剖泛化能力提供了可复现的实验框架。",
+      "在数字孪生临床部署中，插值性能往往高估模型的实际泛化能力，跨解剖迁移才是真正的瓶颈。",
+      "基于四个主动脉模型的双向FSI分析表明，解剖结构差异对代理模型预测精度的影响需要专门建模与验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

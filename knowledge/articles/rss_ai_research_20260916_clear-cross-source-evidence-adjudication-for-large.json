@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-014",
+  "title": "CLEAR: Cross-Source Evidence Adjudication for Large Language Models in Medicine",
+  "source_url": "https://arxiv.org/abs/2609.16301",
+  "source_platform": "rss_ai_research",
+  "summary": "CLEAR（Cross-Source Evidence Adjudication for Large Language Models in Medicine）是一篇针对医学领域大语言模型（LLM）外部检索可靠性问题的研究论文。该研究指出，医学知识持续演进，而LLM的参数化知识在训练时即被固定，因此需要依赖外部检索（如RAG）获取最新证据。然而，检索到的信息可能不相关、不完整或相互冲突，反而会降低LLM输出的 factual accuracy 和证据可溯源性。CLEAR 提出了一种跨源证据裁决机制，旨在对来自多个来源的医学证据进行甄别、比对与裁决，从而提升LLM在医学问答中的事实准确性与证据支撑质量。该工作值得关注的原因在于：医学场景对错误容忍度极低，而RAG的引入虽能补充知识，却也带来了新的噪声与冲突风险；CLEAR 试图系统性地解决多源证据冲突这一关键瓶颈，对医疗AI的可靠落地具有实际意义，也为RAG在专业领域的可信应用提供了新思路。",
+  "tags": [
+    "RAG",
+    "LLM",
+    "Medical AI",
+    "Evidence Grounding"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM的参数化医学知识在训练后固定，无法跟上医学知识的持续演进，必须依赖外部检索补充。",
+      "外部检索（含RAG）可能引入不相关、不完整或冲突的信息，反而损害LLM输出的事实准确性与证据基础。",
+      "CLEAR提出跨源证据裁决机制，通过对多来源医学证据进行甄别与冲突消解来提升输出可靠性。",
+      "该工作凸显了在医学等高风险领域，RAG系统需要额外的证据质量评估与裁决层，而非简单拼接检索结果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

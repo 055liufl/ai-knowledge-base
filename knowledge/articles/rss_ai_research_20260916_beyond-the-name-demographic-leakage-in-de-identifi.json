@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-124",
+  "title": "Beyond the Name: Demographic Leakage in De-Identified R\\'esum\\'es and Evaluation Artifacts in LLM Bias Audits",
+  "source_url": "https://arxiv.org/abs/2609.16501",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型在简历筛选中的偏见审计问题，聚焦于去标识化简历中的人口统计学信息泄露现象。传统观点认为，删除简历中的显式字段（如姓名、语言）即可防止种族文化推断，但近期审计发现声明语言仍会导致残余泄露。作者通过控制语言属性完全一致，在九种开源权重模型和620份反事实简历上，隔离了非结构化文本对五种民族文化条件的影响。研究发现，即使消除语言字段，非结构化散文仍会引发人口统计学泄露，导致模型产生偏见性评估。这一发现对LLM公平性审计和去标识化实践具有重要意义，表明仅靠字段删除不足以消除偏见，需要更深入的文本内容审查。该研究为AI伦理和公平性评估提供了新的方法论视角，值得关注。",
+  "tags": [
+    "LLM",
+    "Bias",
+    "Fairness",
+    "Audit"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:19:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "去标识化简历中，即使删除语言字段，非结构化文本仍会导致人口统计学信息泄露。",
+      "在九种开源权重模型和620份反事实简历上验证了残余泄露的普遍性。",
+      "仅靠字段删除不足以消除LLM偏见，需要更全面的文本内容审计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

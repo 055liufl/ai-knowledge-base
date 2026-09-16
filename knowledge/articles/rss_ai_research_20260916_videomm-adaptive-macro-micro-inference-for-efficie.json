@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-031",
+  "title": "VideoMM: Adaptive Macro-Micro Inference for Efficient Video MLLMs",
+  "source_url": "https://arxiv.org/abs/2609.16722",
+  "source_platform": "rss_ai_research",
+  "summary": "VideoMM 是一篇针对视频多模态大语言模型（Video MLLMs）效率瓶颈的研究工作，提出了一种名为“自适应宏-微观推理”（Adaptive Macro-Micro Inference）的新方法。随着 MLLM 被扩展到长视频理解任务，视觉 token 数量呈爆炸式增长，迅速占满上下文窗口并带来高昂的计算成本。现有方案主要依赖辅助模型进行 token 压缩，但陷入两难：轻量级编码器驱动的方法容易丢失关键语义信息，而重量级 MLLM 驱动的压缩又会抵消效率收益。VideoMM 试图通过宏-微观自适应推理机制在语义保真与计算效率之间取得平衡，为长视频理解提供更实用的解决方案。该工作值得关注，因为它直面视频 MLLM 落地中最核心的成本与上下文瓶颈问题，若方法有效，将显著推动长视频理解在实际场景中的可行性。",
+  "tags": [
+    "Video MLLM",
+    "Token Reduction",
+    "Long Video Understanding",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长视频 MLLM 的核心瓶颈是视觉 token 爆炸导致上下文窗口饱和与成本过高",
+      "现有 token 压缩方案存在轻量编码器丢语义、重量级 MLLM 压缩不划算的两难困境",
+      "VideoMM 提出自适应宏-微观推理，试图在语义保真与计算效率之间取得平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

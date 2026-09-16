@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-055",
+  "title": "Symbolic Separation: Grounding Deep Agents in Knowledge Graphs for Trustworthy Operational Data Analytics",
+  "source_url": "https://arxiv.org/abs/2609.17107",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“符号分离”（Symbolic Separation）的方法，旨在解决生成式AI在数据中心和工业4.0场景中访问数值遥测数据时不可靠的问题。当前，文本到查询（text-to-query）和工具使用代理（tool-using agents）在处理真实世界数据库问题时准确率仅略高于50%，对于多步操作性问题则更低，主要原因是LLM需要自行推断异构数据源之间的关系，并容易产生关系幻觉（hallucinate the relations），而不仅仅是字段幻觉。该方法的核心思想是将关系推理从LLM中分离出来，交由知识图谱（Knowledge Graph）进行符号化处理，从而为深度代理（deep agents）提供可信的操作数据分析基础。通过将数据源之间的显式关系编码到知识图谱中，代理可以基于确定性的符号结构进行查询组合，避免LLM在关系层面的幻觉。该工作对于提升AI在运维数据分析中的可靠性具有重要意义，尤其适用于需要高可信度的工业场景。",
+  "tags": [
+    "Knowledge Graph",
+    "Agent",
+    "Text-to-Query",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:15:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在操作数据分析中的主要瓶颈不是字段映射，而是异构数据源之间关系的幻觉，导致多步查询不可靠。",
+      "将关系推理从LLM中分离，交由知识图谱进行符号化表示，可以显著提升代理查询的准确性和可信度。",
+      "该方法为工业4.0和数据中心场景中自然语言访问遥测数据提供了新的可信路径，但需要预先构建领域知识图谱。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

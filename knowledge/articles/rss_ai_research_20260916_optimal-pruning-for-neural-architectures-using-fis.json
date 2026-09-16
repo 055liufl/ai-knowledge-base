@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-001",
+  "title": "Optimal Pruning for Neural Architectures using Fisher Information Distances",
+  "source_url": "https://arxiv.org/abs/2609.16129",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于信息几何的神经网络参数剪枝新方法。作者将剪枝操作视为将参数置零，即把模型移动到该参数为零的超曲面上。通过Fisher信息度量定义的模型空间中的测地距离，可以自然计算出未剪枝模型到该超曲面的最小距离，并以此作为参数重要性的度量。该方法从微分几何角度为剪枝提供了理论依据，区别于传统的基于权重幅值或Hessian近似的方法。其核心创新在于利用Fisher信息距离精确量化参数移除对模型分布的影响，有望在保持模型性能的同时实现更高效的压缩。该工作连接了信息几何与模型压缩两个领域，为理解神经网络参数冗余提供了新的几何视角，对模型部署和边缘计算场景具有潜在应用价值。",
+  "tags": [
+    "Model Compression",
+    "Pruning",
+    "Information Geometry",
+    "Fisher Information"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:13:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将剪枝视为模型在参数空间中的位移，利用Fisher信息度量计算到参数为零超曲面的测地距离，为参数重要性提供了几何解释。",
+      "Fisher信息距离自然捕捉了参数移除对模型输出分布的影响，比传统幅值剪枝更具理论依据。",
+      "该方法连接了信息几何与神经网络压缩，为剪枝算法设计提供了新的微分几何框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

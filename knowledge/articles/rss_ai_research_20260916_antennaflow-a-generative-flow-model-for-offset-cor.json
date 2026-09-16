@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-043",
+  "title": "AntennaFlow: A Generative Flow Model for Offset Correction in Phaseless Antenna Testing",
+  "source_url": "https://arxiv.org/abs/2609.16948",
+  "source_platform": "rss_ai_research",
+  "summary": "AntennaFlow 提出了一种生成式流模型，用于解决无相位天线测试中的偏移校正问题。在毫米波频段的大孔径天线近场到远场变换中，相位采集成本高昂，且安装偏移会破坏传统的对中假设。现有方法通常将相位缺失与偏移问题分开处理，需要密集的全场数据或已知偏移向量。该工作通过关键观察——不同偏移下的幅度场在坐标变换下具有内在关联——将两个问题联合建模，利用生成流模型学习幅度场与偏移量之间的映射关系，从而在无需相位测量和先验偏移信息的条件下实现偏移校正。这一方法有望显著降低毫米波天线测试的硬件成本与测量复杂度，对天线测量、雷达、卫星通信等领域的工程实践具有潜在价值。其创新点在于将生成式模型引入电磁测量领域，并首次将无相位测试与偏移校正统一到一个框架中。",
+  "tags": [
+    "Generative Flow",
+    "Antenna Testing",
+    "Phaseless Measurement",
+    "Offset Correction"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:15:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将无相位天线测试与偏移校正两个耦合问题统一建模，避免了分别处理时对密集全场数据或已知偏移向量的依赖。",
+      "利用不同偏移下幅度场的坐标变换关联性，作为生成流模型的学习信号，实现从幅度场直接推断偏移校正。",
+      "生成式流模型在电磁测量领域的应用具有新颖性，为毫米波天线测试降低硬件成本提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

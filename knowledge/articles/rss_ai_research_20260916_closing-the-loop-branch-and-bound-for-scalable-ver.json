@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260916-013",
+  "title": "Closing the Loop: Branch-and-Bound for Scalable Verification of Nonlinear Neural Feedback Systems",
+  "source_url": "https://arxiv.org/abs/2609.16298",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对非线性神经反馈系统（如神经网络控制器驱动的自治系统）的形式化验证问题，提出了一种基于分支定界（Branch-and-Bound）的可扩展验证方法。当前最先进的验证器面临核心的可扩展性瓶颈：组合式求解器（combinatorial solvers）无法处理大规模网络，而传播式求解器（propagative solvers）则过度牺牲精度。该工作通过将验证问题重新表述为分支定界搜索，试图在保持组合式求解器精度的同时提升其可扩展性，从而弥合两类方法之间的鸿沟。神经反馈系统的安全性验证是自动驾驶、机器人和工业控制等安全关键应用部署神经网络控制器的前提条件，因此该研究具有重要的实际意义。其创新点在于将组合优化中的经典分支定界框架引入神经反馈系统验证，通过智能剪枝和边界传播来避免对状态空间的穷举搜索，有望突破现有工具在维度和网络规模上的限制。该工作属于形式化方法与机器学习交叉领域的前沿探索，对推动可信 AI 和自治系统安全认证具有潜在影响。",
+  "tags": [
+    "Neural Network Verification",
+    "Formal Verification",
+    "Branch-and-Bound",
+    "Nonlinear Systems",
+    "Safe Autonomy"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "组合式求解器精度高但无法扩展到大网络，传播式求解器可扩展但精度损失严重，二者之间存在根本性权衡。",
+      "将验证问题表述为分支定界搜索，有望在保持组合式求解器精度的同时显著提升可扩展性。",
+      "非线性神经反馈系统的可扩展验证是自治系统安全部署的关键瓶颈，该工作直接针对这一核心挑战。",
+      "分支定界中的剪枝策略和边界传播效率是决定方法实际性能的关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

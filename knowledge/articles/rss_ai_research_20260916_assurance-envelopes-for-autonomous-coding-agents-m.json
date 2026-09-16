@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-106",
+  "title": "Assurance Envelopes for Autonomous Coding Agents: Minimum-Cost Evidence for Software Change",
+  "source_url": "https://arxiv.org/abs/2609.16302",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向自主编码代理的“保证包络”（Assurance Envelopes）方法，旨在解决编码代理在修改现有软件时如何高效复用已有工程证据的问题。当编码代理返回修改既有代码时，它继承了先前工程工作产生的证据，包括测试、类型检查、形式化证明、静态分析和执行轨迹等。重新加载全部证据会造成浪费，但丢弃变更所依赖的某条证据又可能导致所需属性无法被支持。给定变更必须保持的属性（即其义务），论文研究如何选择成本最低的证据子集来重新建立这些属性，并将这样的子集称为“保证包络”。该工作将证据选择问题形式化为最小成本子集问题，为自主编码代理在软件变更场景下提供了一种经济且可靠的验证策略。其价值在于平衡了验证成本与保证强度，有望提升编码代理在真实工程环境中的实用性和可信度，对自动化软件维护和AI辅助编程领域具有重要参考意义。",
+  "tags": [
+    "Agent",
+    "Code Generation",
+    "Formal Verification",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:18:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理修改代码时可复用已有证据，但需在成本与保证之间权衡，避免全量加载或关键证据缺失。",
+      "将证据选择形式化为最小成本子集问题，以变更需保持的属性（义务）为约束重新建立保证。",
+      "提出“保证包络”概念，为自主编码代理提供经济可靠的验证策略，提升实际工程可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

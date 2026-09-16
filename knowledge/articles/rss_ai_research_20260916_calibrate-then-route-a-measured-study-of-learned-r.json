@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-005",
+  "title": "Calibrate, Then Route: A Measured Study of Learned Request Routing for Disaggregated LLM Serving",
+  "source_url": "https://arxiv.org/abs/2609.16206",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究分离式 LLM 服务架构中的请求路由问题。在 DistServe、Splitwise、Mooncake 等系统中，计算密集的 prefill 与内存密集的 decode 被部署在不同的 GPU 池上，虽然分离本身提升了效率，但请求如何路由到具体实例仍显著影响整体性能。作者提出一种基于预测的路由器，利用精确的 prompt 长度、预测的输出长度、准入后的 KV 缓存压力以及 SLO 类别，来估计每个实例上的额外完成时间，并据此制定路由策略。该工作值得关注，因为它将路由从简单的负载均衡提升为基于性能建模的决策问题，直接关系到分离式架构能否兑现其延迟与吞吐优势。对于构建大规模 LLM 推理系统的团队而言，这种“先校准、再路由”的思路提供了一种可量化的优化路径，有望在满足 SLO 的前提下降低尾延迟并提升 GPU 利用率。",
+  "tags": [
+    "LLM Serving",
+    "Request Routing",
+    "Disaggregated Inference",
+    "KV Cache",
+    "SLO"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:13:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分离式 LLM 服务中，路由策略是决定 prefill/decode 分离收益能否兑现的关键因素。",
+      "利用 prompt 长度、预测输出长度、KV 缓存压力和 SLO 类别可更准确地估计实例额外完成时间。",
+      "基于校准的预测路由相比简单负载均衡，有望在满足 SLO 的同时优化尾延迟和资源利用率。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

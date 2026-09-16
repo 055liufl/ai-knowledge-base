@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-023",
+  "title": "Query-Aware Source-Risk Triage for Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2609.16564",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向检索增强生成（RAG）的查询感知来源风险分诊方法。传统 RAG 流水线在检索时往往忽略来源与查询之间的实质性关联，导致引入无关或误导性内容。作者设计了一个生成前的分诊层，将来源与查询的关系视为查询依赖的，而非静态的。该方法首先识别规范查询族（canonical query families），对需要增强审查的查询族进行路由，并将检索到的页面分为四类：通过（pass）、上下文化（contextualize）、排除（exclude）或审查（review）。其核心技术包括四维页面评分、基于排名折扣的族聚合、保持意图的查询变异以及族级分诊策略。该工作值得关注，因为它将 RAG 的质量控制前移到生成之前，通过细粒度的来源风险评估减少幻觉和无关信息，为构建更可靠的 RAG 系统提供了新思路，尤其适用于对事实准确性要求高的场景。",
+  "tags": [
+    "RAG",
+    "信息检索",
+    "风险分诊",
+    "查询理解"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG 中来源与查询的关系是查询依赖的，静态相关性度量不足",
+      "生成前分诊可有效过滤低质量来源，降低幻觉风险",
+      "四维页面评分与排名折扣族聚合提升了分诊的鲁棒性",
+      "保持意图的查询变异有助于覆盖不同表述下的同一信息需求"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

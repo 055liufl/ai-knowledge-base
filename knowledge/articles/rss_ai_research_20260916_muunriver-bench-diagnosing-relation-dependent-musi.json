@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-090",
+  "title": "MUUNRiver-Bench: Diagnosing Relation-Dependent Music Retrieval with Multimodal Instructions",
+  "source_url": "https://arxiv.org/abs/2609.16090",
+  "source_platform": "rss_ai_research",
+  "summary": "MUUNRiver-Bench 是一个面向音乐检索的多模态诊断基准，旨在解决音乐检索中\"关系依赖性\"这一核心难题。论文指出，给定同一首参考曲目，听众可能希望找到风格相似但主题不同的作品、翻唱版本，或音色相近的歌手，而这些意图对检索排序的要求彼此矛盾，传统单一相关性排序难以覆盖。该基准以参考音频作为查询，并通过自然语言指令来定义\"相关性\"，从而将检索任务从固定相似度转变为指令条件化的多意图检索。数据构建采用专家流派先验、LLM 生成提示词与歌词、音频合成以及专家审核相结合的流水线，最终产出 3,440 条样本。该工作值得关注的原因在于：它首次系统性地将多模态指令引入音乐检索评测，揭示了现有检索模型在处理矛盾意图时的不足，为构建更可控、更符合真实听歌场景的检索系统提供了诊断工具与评测标准，对音乐信息检索、多模态检索及指令跟随模型的研究具有重要参考价值。",
+  "tags": [
+    "Music Retrieval",
+    "Multimodal",
+    "Benchmark",
+    "Instruction Following"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "音乐检索本质上是关系依赖的：同一参考曲目在不同自然语言指令下需要完全不同的排序结果，传统单一相似度范式无法满足。",
+      "MUUNRiver-Bench 通过参考音频加自然语言指令的方式定义相关性，将检索任务转化为指令条件化的多意图评测。",
+      "数据构建结合专家流派先验、LLM 生成提示与歌词、音频合成和专家审核，兼顾规模与质量，共 3,440 条样本。",
+      "该基准可用于诊断现有检索模型在矛盾意图下的表现，推动更可控、更贴近真实听歌场景的检索系统发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

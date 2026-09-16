@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260916-069",
+  "title": "JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management",
+  "source_url": "https://arxiv.org/abs/2609.17475",
+  "source_platform": "rss_ai_research",
+  "summary": "JustFit 是一个基于 MLX 的本地推理运行时，旨在让消费级笔记本（24 GiB 内存）也能运行 200K token 长上下文的 LLM 服务。它通过三项核心机制协同工作：KVExec 实现压缩 KV 执行，PhaseSwap 管理组件驻留，StateTrans 支持状态保持的服务切换。这些机制将重建操作融合，并协调状态的即时物化与释放，且独立于模型权重量化。该工作值得关注，因为它直击本地部署大模型时最痛的显存/内存瓶颈，在端侧长上下文推理这一关键场景下提供了系统级解决方案，有望推动隐私敏感、离线可用的本地编码与推理应用落地，对边缘 AI 和推理系统优化方向具有参考价值。",
+  "tags": [
+    "LLM Serving",
+    "KV Cache",
+    "Local Inference",
+    "MLX",
+    "Memory Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:16:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 KVExec、PhaseSwap、StateTrans 三项机制协同，在 24 GiB 笔记本上实现 200K token 长上下文 LLM 服务",
+      "状态管理独立于模型权重量化，可与其他量化技术叠加使用",
+      "即时物化与释放策略有效缓解本地推理中的内存压力",
+      "为端侧长上下文推理提供了系统级优化思路，推动本地隐私友好型 AI 应用"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

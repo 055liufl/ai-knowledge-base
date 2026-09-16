@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-051",
+  "title": "Sample-Conditioned Representation Selection for Audio Few-Shot Learning",
+  "source_url": "https://arxiv.org/abs/2609.17076",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SAMPLESELECT，一种针对音频小样本学习（Audio Few-Shot Learning）的样本条件化表征选择方法。研究指出，小样本音频分类器容易依赖前景-背景共现（foreground-background co-occurrences）等虚假相关性，当这些相关性发生偏移时模型性能会显著下降。作者在 SpurAudio 数据集上发现，这种表征偏移是集中且类别相关的：以 ResNet12 为例，仅前 10% 的通道就解释了 82.80% 的零校正偏移贡献，说明偏移并非均匀分布，而是高度集中在少数特征通道上。基于这一观察，SAMPLESELECT 为每个输入独立预测一个固定预算的特征掩码（fixed-budget feature mask），同时保持编码器和源分类器冻结，从而在不重新训练主干网络的前提下实现样本自适应的表征选择。该方法的价值在于：一是揭示了小样本音频学习中虚假相关导致的表征偏移具有可定位、可量化的结构；二是提供了一种轻量、即插即用的缓解方案，对资源受限的音频场景具有实用意义；三是其“样本条件化掩码”思路可迁移到其他模态的小样本与分布偏移问题。",
+  "tags": [
+    "Few-Shot Learning",
+    "Audio",
+    "Representation Learning",
+    "Feature Selection"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:15:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小样本音频分类器易受前景-背景共现等虚假相关影响，相关性偏移会导致表征发生类别相关的集中偏移。",
+      "在 ResNet12 上，前 10% 的通道贡献了 82.80% 的零校正偏移，说明偏移高度集中在少数特征通道。",
+      "SAMPLESELECT 通过为每个输入预测固定预算的特征掩码，在冻结编码器和源分类器的条件下实现样本自适应表征选择。",
+      "该方法为缓解小样本音频学习中的分布偏移提供了一种轻量、即插即用的思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

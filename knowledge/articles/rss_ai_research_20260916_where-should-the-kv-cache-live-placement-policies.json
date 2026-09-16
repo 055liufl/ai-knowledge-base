@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-007",
+  "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
+  "source_url": "https://arxiv.org/abs/2609.16215",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究长生命周期会话（如多轮对话、Agent 循环、文档问答）中 KV Cache 的分层放置策略，针对 GPU HBM 稀缺且昂贵的问题，系统性地探讨了将 KV Cache 扩展至 CPU DRAM 和 SSD 的决策逻辑。作者构建了一个离散事件模拟器，覆盖 GPU、CPU、SSD 三级存储层次，重点回答三个核心问题：哪些 KV 块应驻留在哪一层、何时迁移或驱逐、预取是否有效。该工作与 Mooncake、LMCache、FlexGen、InfiniGen、AttentionStore 等现有系统形成对话，但不同于以往仅关注'能否扩展'，它聚焦于'如何最优放置'这一更难的策略问题。对于长会话场景下的推理服务，KV Cache 管理直接决定吞吐、延迟与成本，因此该研究对推理基础设施优化具有实际指导意义。其模拟器方法也为后续策略对比提供了可复现的评估框架，值得推理系统开发者和研究者关注。",
+  "tags": [
+    "KV Cache",
+    "Inference",
+    "Memory Management",
+    "LLM Serving"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:13:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长会话场景下 KV Cache 分层放置的核心难题不是能否扩展至 CPU/SSD，而是块级放置、迁移与驱逐的联合策略优化。",
+      "预取是否有效取决于访问模式与层级带宽差异，需要结合具体工作负载进行量化评估。",
+      "离散事件模拟器为跨 GPU/CPU/SSD 的 KV Cache 策略对比提供了可复现的评估手段。",
+      "该研究与 Mooncake、LMCache 等系统互补，推动 KV Cache 管理从'扩展容量'走向'策略优化'。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

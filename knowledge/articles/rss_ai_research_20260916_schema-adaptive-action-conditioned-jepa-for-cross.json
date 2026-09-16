@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260916-085",
+  "title": "Schema-Adaptive Action-Conditioned JEPA for Cross-Machine CNC Transfer under Partial Sensor Overlap",
+  "source_url": "https://arxiv.org/abs/2609.16071",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种模式自适应动作条件联合嵌入预测架构（SAAC-JEPA），用于解决工业世界模型在跨机床部署时面临的动力学、传感接口、采样机制和控制单元变化等迁移难题。研究聚焦于CNC（计算机数控）加工场景，其中源机床拥有17个标准传感器通道，而目标机床仅共享其中10个，存在部分传感器重叠。该方法通过模式自适应机制和动作条件建模，在源域采用组分离划分和仅源域归一化，并在留出数据上进行自监督评估。这项工作值得关注的原因在于：工业世界模型的跨设备迁移是智能制造落地的关键瓶颈，传感器配置不一致、采样率差异和控制单元异构是现实工厂中的普遍问题。SAAC-JEPA为部分可观测条件下的跨域迁移提供了一种新思路，有望降低工业AI模型部署的定制化成本，推动通用工业基础模型的发展。",
+  "tags": [
+    "JEPA",
+    "Cross-Domain Transfer",
+    "Industrial AI",
+    "World Model",
+    "CNC"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SAAC-JEPA通过模式自适应机制处理源机与目标机之间传感器通道不一致的问题，仅需部分传感器重叠即可实现跨机床迁移",
+      "动作条件建模使世界模型能够捕捉CNC加工中的控制输入与动力学响应之间的因果关系，提升跨设备泛化能力",
+      "采用组分离源域划分和仅源域归一化策略，避免了目标域信息泄露，更真实地模拟工业部署场景",
+      "该研究为工业世界模型在异构设备间的迁移提供了可行路径，但仅10/17通道重叠的设定仍面临显著的信息缺失挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

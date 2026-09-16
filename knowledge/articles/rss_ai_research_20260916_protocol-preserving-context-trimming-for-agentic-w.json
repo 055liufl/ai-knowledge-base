@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-120",
+  "title": "Protocol-Preserving Context Trimming for Agentic Workflows: Benefits, Failure Regimes, and Budget Guardrails",
+  "source_url": "https://arxiv.org/abs/2609.16461",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究面向智能体（Agentic）LLM 工作流中长上下文管理的「协议保持型上下文裁剪」方法。智能体系统依赖长交互历史来保存指令、工具状态、中间决策和未解决的依赖关系，但上下文无限增长会推高计算成本并降低效率。作者将上下文裁剪视为一种「可靠性约束」下的优化问题，系统评估了五种裁剪策略（基于近期性、基于相关性等），并重点分析其收益区间、失效模式（failure regimes）以及预算护栏（budget guardrails）机制。该研究值得关注的原因在于：随着 Agent 应用从单轮问答走向多步工具调用与长任务执行，上下文窗口成为成本与可靠性的核心瓶颈；简单截断可能破坏协议结构（如工具调用与返回的配对、指令与状态的绑定），导致任务失败。本文提出的「协议保持」视角与预算护栏思路，为工程实践中设计安全、可控、低成本的上下文管理策略提供了可操作的框架与风险边界认知，对构建生产级 Agent 系统具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "LLM",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:18:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文裁剪不是单纯的压缩问题，而是可靠性约束下的优化问题：裁剪策略必须在降低成本与保持任务可完成性之间取得平衡。",
+      "协议保持是关键：裁剪若破坏工具调用/返回配对、指令与状态绑定等结构，会触发特定失效模式，而非仅仅损失信息。",
+      "不同裁剪策略（近期性、相关性等）存在各自的收益区间与失效边界，没有普适最优解，需按工作流特征选择。",
+      "预算护栏（budget guardrails）可作为工程手段，在上下文增长失控前主动干预，保障 Agent 系统的稳定性与成本可控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

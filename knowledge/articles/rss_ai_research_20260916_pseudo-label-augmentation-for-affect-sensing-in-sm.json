@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-089",
+  "title": "Pseudo-Label Augmentation for Affect Sensing in Small Collaborative Groups",
+  "source_url": "https://arxiv.org/abs/2609.16077",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对自然群体交互中的生理情感感知问题，提出利用伪标签增强方法缓解标签稀疏性。研究基于 GroupAffect-4 数据集，该数据集包含四人协作场景下的可穿戴生理信号、眼动追踪、大五人格特质以及任务后 VAD（效价-唤醒-支配度）自报告标签。核心矛盾在于：可穿戴设备能产生大量时间窗口数据，但自报告标签每场会话仅采集数次，导致监督信号极度稀疏。作者系统研究了伪标签增强策略，即利用模型对未标注时间窗口生成伪标签，以扩充训练集，从而提升情感感知模型在稀疏监督下的性能。该工作值得关注，因为它直面真实群体交互场景中标签获取成本高、数据利用率低的痛点，为小群体情感计算提供了可复用的数据增强范式，并可能推动协作学习、团队情绪监测等应用的发展。",
+  "tags": [
+    "Affective Computing",
+    "Pseudo-Labeling",
+    "Wearable Sensing",
+    "Group Interaction"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生理情感感知的主要瓶颈是标签稀疏而非传感器数据不足，自报告标签频率远低于可穿戴数据采样率。",
+      "伪标签增强能有效利用大量未标注时间窗口，缓解小群体情感建模中的监督信号稀缺问题。",
+      "GroupAffect-4 数据集整合了生理、眼动、人格与 VAD 标签，为群体情感计算提供了多模态基准。",
+      "该研究为自然协作场景下的情感感知提供了可扩展的半监督学习思路，但伪标签质量与噪声控制仍是关键挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

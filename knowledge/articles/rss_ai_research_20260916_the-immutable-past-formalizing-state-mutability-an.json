@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-086",
+  "title": "The Immutable Past: Formalizing State Mutability and Conflict Resolution in Mutable RAG",
+  "source_url": "https://arxiv.org/abs/2609.16073",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长期自主智能体中的检索增强生成（RAG）记忆架构提出了一项形式化研究。作者指出，当前主流做法将共享记忆视为仅追加（append-only）的流式结构，这会引发一种被称为“语义遮蔽”（Semantic Shadowing）的关键失效模式：相互冲突的历史观测不断累积，并在统计上压过有效的最新更新。在动态环境中，这会导致智能体检索并依据过时事实行动，从而产生严重的状态分歧。该工作形式化了可变 RAG 中的状态可变性与冲突解决问题，为构建更可靠的智能体长期记忆系统提供了理论基础。其价值在于揭示了 RAG 作为智能体记忆时被忽视的一致性缺陷，对多智能体协作、动态知识更新等场景具有重要指导意义。",
+  "tags": [
+    "RAG",
+    "Agent Memory",
+    "Conflict Resolution",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将共享记忆视为仅追加流会导致“语义遮蔽”，历史冲突观测会统计性压过最新有效更新",
+      "在动态环境中，语义遮蔽会引发智能体状态严重分歧，使其依据过时事实行动",
+      "该工作形式化了可变 RAG 中的状态可变性与冲突解决问题，为智能体长期记忆一致性提供理论框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

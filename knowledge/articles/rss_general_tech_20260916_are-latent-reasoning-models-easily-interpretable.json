@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260916-024",
+  "title": "Are Latent Reasoning Models Easily Interpretable?",
+  "source_url": "https://arxiv.org/abs/2604.04902",
+  "source_platform": "rss_general_tech",
+  "summary": "本文研究潜在推理模型（Latent Reasoning Models）的可解释性问题。这类模型在连续隐藏状态中进行推理，而非输出可读文本，因此难以监控。作者测试了 Coconut 和 CODI 两个模型，发现它们在 PrOntoQA 和 ProsQA 等逻辑任务中几乎不使用隐藏推理步骤。实验表明，强制模型提前停止思考后，模型几乎总是输出相同的答案。进一步分析揭示，这些模型在逻辑任务上的高性能实际上主要来源于其训练数据中的表面模式或捷径，而非真正的多步推理。这一发现对当前依赖潜在推理提升模型能力的做法提出了重要质疑，并强调了可解释性评估在推理模型开发中的必要性。该工作提醒研究者，高准确率未必代表模型真正学会了推理，可能只是利用了数据集偏差。",
+  "tags": [
+    "Latent Reasoning",
+    "Interpretability",
+    "LLM",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:33Z",
+  "collected_at": "2026-09-16T13:13:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在推理模型在逻辑任务中几乎不依赖隐藏推理步骤，提前停止思考对输出影响极小。",
+      "模型的高性能可能源于训练数据中的表面模式或捷径，而非真正的多步推理能力。",
+      "可解释性评估对于验证推理模型的真实能力至关重要，仅凭准确率可能产生误导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

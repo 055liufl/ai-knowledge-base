@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-047",
+  "title": "ORDER: Task-Conditioned Routing for Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2609.17012",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ORDER，一种面向检索增强生成（RAG）的任务条件化路由方法。传统 RAG 流水线通常在预处理阶段固定索引与检索配置（如分块粒度、元数据约束、数据源选择策略），这种“一刀切”设计难以适应领域专家场景中异构查询的需求——对某类查询有效的配置往往在另一类查询上表现不佳。ORDER 的核心思路是根据查询任务动态选择或组合不同的检索配置，从而在多样化查询分布下提升整体检索与生成质量。该工作值得关注，因为它直击 RAG 系统在真实专业场景中的关键痛点：静态配置无法覆盖异构任务，而动态路由有望显著提升系统鲁棒性与适应性，对构建面向法律、医疗、金融等领域的专家级 RAG 应用具有直接参考价值。",
+  "tags": [
+    "RAG",
+    "Retrieval",
+    "Routing",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:15:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定索引与检索配置的 RAG 流水线无法适应异构查询，是领域专家场景中的主要性能瓶颈。",
+      "ORDER 通过任务条件化路由，为不同查询动态选择分块粒度、元数据约束和源选择策略。",
+      "动态路由有望在多样化查询分布下提升 RAG 系统的整体鲁棒性与适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

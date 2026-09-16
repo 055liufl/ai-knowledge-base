@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260916-093",
+  "title": "Universal Defenses for Tool-Integrated LLM Agents Against Adversarial Attacks",
+  "source_url": "https://arxiv.org/abs/2609.16098",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对工具集成型 LLM Agent 面临的多类对抗攻击（包括直接提示注入、间接提示注入、记忆投毒和后门攻击）提出通用防御方案。随着 LLM Agent 越来越多地调用外部工具完成多步任务，其攻击面显著扩大：攻击者可通过污染工具返回内容、篡改记忆或植入后门来劫持 Agent 行为。该研究系统梳理了这些攻击的共性机制，并尝试设计不依赖特定攻击类型的通用防御策略，以提升 Agent 在真实部署环境中的鲁棒性。其价值在于：当前多数防御仅针对单一攻击向量，而实际部署中 Agent 往往同时暴露于多种威胁；通用防御若能成立，将大幅降低安全加固成本，对 Agent 安全落地具有重要参考意义。",
+  "tags": [
+    "LLM Agent",
+    "Adversarial Attack",
+    "AI Safety",
+    "Prompt Injection"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:17:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具集成 LLM Agent 的攻击面涵盖直接/间接提示注入、记忆投毒与后门攻击，单一防御难以覆盖全部威胁",
+      "通用防御的核心挑战在于不依赖特定攻击模式，同时保持 Agent 的正常任务执行能力",
+      "Agent 安全正从模型层扩展到工具调用与记忆系统层，需要端到端的鲁棒性设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

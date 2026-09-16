@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-002",
+  "title": "Safe Error Correction for Language Models: Frozen-Base Adjustment with Capability Preservation",
+  "source_url": "https://arxiv.org/abs/2609.16145",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一个实用问题：能否在不损害基础能力的前提下，用一个小的纠错模块修正冻结语言模型的输出错误？作者提出了 CRN v2，一个轻量级的 logit 级纠错模块（约 3400 万可训练参数，仅占 46.5 亿文本模块的 0.73%），叠加在完全冻结的 Gemma 4 E2B 模型之上。基础模型从不更新，只有纠错模块通过监督微调（SFT）和无参考 DPO 进行学习。该工作值得关注，因为它提出了一种\"安全纠错\"范式：在保持基础模型能力不变的同时，以极低的参数成本提升输出质量，避免了全量微调带来的灾难性遗忘和高昂成本。对于希望在部署阶段低成本改进模型行为、同时保留原有能力的开发者而言，这一方法具有较高的实用价值。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "DPO",
+    "Error Correction"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:13:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结基础模型、仅训练轻量纠错模块，可在不损害原有能力的前提下修正输出错误",
+      "CRN v2 仅需约 3400 万可训练参数（占基础模型 0.73%），参数效率极高",
+      "采用 SFT 加无参考 DPO 的两阶段训练策略，无需参考输出即可优化纠错模块",
+      "该方法为部署阶段低成本、安全地改进模型行为提供了可行路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

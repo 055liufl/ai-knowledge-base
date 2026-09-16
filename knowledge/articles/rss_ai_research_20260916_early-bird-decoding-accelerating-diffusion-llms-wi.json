@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260916-118",
+  "title": "Early-Bird Decoding: Accelerating Diffusion LLMs with Learnable Block Sizes and Parallel Sampling",
+  "source_url": "https://arxiv.org/abs/2609.16450",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Early-Bird (EB) 解码的框架，旨在加速扩散大语言模型（dLLMs）的推理过程。扩散大语言模型通过迭代去掩码实现并行解码，作为自回归生成的一种替代范式，具有潜力。然而，dLLMs 通常需要大量步骤才能使 token 置信度达到解码阈值，导致推理效率低下，即使采用块级 KV 缓存也难以缓解。EB 解码框架首次针对这一问题，通过引入可学习的块大小和并行采样策略，提前解码高置信度的 token，从而减少不必要的迭代步骤。该方法的核心思想是动态调整解码块的大小，并利用并行采样来加速生成过程。实验表明，EB 解码能够显著提升 dLLMs 的推理速度，同时保持生成质量。这项工作对于推动扩散语言模型的实际应用具有重要意义，尤其是在需要低延迟生成的场景中。其创新性在于首次将可学习块大小与并行采样结合用于 dLLM 加速，为后续研究提供了新思路。",
+  "tags": [
+    "Diffusion LLM",
+    "Inference Acceleration",
+    "Parallel Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:18:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散大语言模型（dLLMs）因迭代去掩码步骤过多导致推理效率低下，即使有块级 KV 缓存也难以解决。",
+      "Early-Bird 解码框架首次引入可学习的块大小和并行采样，动态提前解码高置信度 token，减少迭代步骤。",
+      "该方法在加速 dLLM 推理的同时保持生成质量，为扩散语言模型的实用化提供了新途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

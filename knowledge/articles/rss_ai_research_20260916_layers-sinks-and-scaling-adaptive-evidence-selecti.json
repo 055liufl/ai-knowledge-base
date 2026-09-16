@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-037",
+  "title": "Layers, Sinks, and Scaling: Adaptive Evidence Selection for Multimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.16795",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向多模态大语言模型（MLLM）的自适应证据选择方法，旨在解决模型在知识密集型视觉问答中忽视关键证据的问题。MLLM 在结合图像视觉证据与外部检索事实时，往往对正确答案所需的文本句子或视觉区域注意力不足，导致回答错误。现有方法通过在生成前高亮检索文本、标记视觉区域来缓解，但采用固定策略，缺乏对模型内部层级、注意力汇聚点及规模变化的适应性。该研究从「层、汇聚点与缩放」三个维度切入，探索如何根据模型不同层的注意力特性、注意力汇聚现象以及模型规模动态选择证据，从而提升多模态推理的准确性。这项工作值得关注，因为它触及了 MLLM 与 RAG 结合时的核心瓶颈——跨模态证据的有效利用，并为可解释的注意力引导提供了新思路，对多模态检索增强生成系统的设计与优化具有参考价值。",
+  "tags": [
+    "MLLM",
+    "RAG",
+    "Attention",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:15:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLLM 在知识密集型视觉问答中常忽视文本与视觉两模态的关键证据，注意力分配不足是主要瓶颈",
+      "现有高亮文本与标记视觉区域的方法采用固定策略，未考虑模型层级、注意力汇聚点和规模差异",
+      "自适应证据选择需结合模型内部注意力动态，按层和规模调整证据呈现方式",
+      "该方向对多模态检索增强生成系统的可解释性与准确性提升具有重要价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

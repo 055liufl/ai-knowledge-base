@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-027",
+  "title": "ReDraft, Don't Just Distill: Reference-Driven Revision for Continual VLLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2609.16639",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 ReDraft 的参考驱动修订方法，用于大型多模态模型（VLLM）的持续后训练。持续后训练面临一个核心矛盾：既要学习新能力，又要保留预训练阶段已获得的能力。传统的监督微调（SFT）虽然能提供明确的目标监督，使模型从接近零的准确率开始学习新任务，但其离策略（off-policy）目标会使模型参数偏移过大，导致灾难性遗忘；而在线策略方法（如 RLVR 和自蒸馏）虽然能保持策略接近性，但在策略无法产生有效信号时提供的学习信号非常有限。ReDraft 通过引入参考驱动的修订机制，试图在两者之间取得平衡，既利用参考模型提供稳定的监督信号，又通过修订过程保持策略的接近性，从而在持续学习新任务的同时有效缓解遗忘问题。该工作对于多模态大模型的持续学习、后训练策略设计具有重要的理论和实践意义，尤其适用于需要不断扩展能力且不能遗忘已有知识的实际应用场景。",
+  "tags": [
+    "VLLM",
+    "Continual Learning",
+    "Post-Training",
+    "Multimodal",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:14:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持续后训练中，SFT 的离策略目标会导致灾难性遗忘，而在线策略方法在策略能力不足时信号稀疏，两者存在根本性矛盾。",
+      "ReDraft 通过参考驱动的修订机制，在保持策略接近性的同时提供有效监督，平衡新知识学习与旧知识保留。",
+      "该方法针对大型多模态模型的持续后训练场景，为缓解遗忘问题提供了新的解决思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

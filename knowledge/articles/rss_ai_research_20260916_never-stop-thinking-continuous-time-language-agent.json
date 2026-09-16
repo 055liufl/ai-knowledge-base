@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260916-065",
+  "title": "Never Stop Thinking: Continuous-Time Language Agents",
+  "source_url": "https://arxiv.org/abs/2609.17416",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为\"Never Stop Thinking\"的连续时间语言智能体框架，旨在解决基于LLM的语音智能体在传统\"听-想-说\"循环中产生的延迟问题。传统语音智能体在每次回复前都会插入数秒的静默等待时间，严重影响交互体验。作者通过一个轻量级的\"中断-恢复\"（interrupt-and-resume）编排器，使未经修改的文本模型能够实现连续时间认知——即在聆听时思考、在说话时思考。实验表明，该机制将实时流水线延迟整体降低19%，在目标场景下延迟降低一半。这项工作值得关注，因为它无需修改模型本身，仅通过编排层创新就显著提升了语音交互的实时性，为构建更自然、更流畅的语音智能体提供了新思路，对实时对话系统、语音助手等应用具有重要实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Voice",
+    "Real-time",
+    "Orchestration"
+  ],
+  "author": null,
+  "published_at": "2026-09-16T13:11:35Z",
+  "collected_at": "2026-09-16T13:16:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连续时间认知（边听边想、边说边想）可以通过轻量级中断-恢复编排器从未经修改的文本模型中涌现，无需重新训练模型",
+      "该机制将实时语音流水线延迟整体降低19%，在目标场景下延迟减半，显著改善交互体验",
+      "传统听-想-说刚性循环是语音智能体延迟的主要瓶颈，打破该循环是提升实时性的关键"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}
