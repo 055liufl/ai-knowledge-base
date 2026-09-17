@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-013",
+  "title": "FairCompressAgent: An Agentic Framework for Fairness-Aware Model Compression for FPGA Deployment",
+  "source_url": "https://arxiv.org/abs/2609.17786",
+  "source_platform": "rss_ai_research",
+  "summary": "FairCompressAgent (FCA) 是一个面向 FPGA 部署的智能体框架，旨在解决公平性感知模型压缩中的多目标权衡问题。传统模型压缩往往只关注精度与部署成本，而忽略了模型在不同群体间的公平性表现。当多种压缩方法（如剪枝、量化、低秩分解）被组合使用，或用户需求动态变化时，人工选择压缩策略变得极其困难。FCA 通过统一的算子接口，将公平性感知剪枝、增量量化和稀疏低秩分解整合到一个智能体框架中，使其能够自动搜索和组合压缩方案，在精度、公平性和部署成本之间取得平衡。该工作值得关注的原因在于：第一，它将公平性纳入模型压缩的优化目标，回应了 AI 伦理与可信部署的实际需求；第二，它采用智能体（Agent）范式来自动化压缩流程，降低了人工调参成本；第三，它明确面向 FPGA 部署场景，具有较强的工程落地价值。对于关注边缘 AI、模型压缩、公平性机器学习以及 FPGA 加速的研究者和开发者而言，该框架提供了一种新的自动化多目标优化思路。",
+  "tags": [
+    "Model Compression",
+    "Fairness",
+    "Agent",
+    "FPGA"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:07:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将公平性作为模型压缩的显式优化目标，而非仅关注精度与压缩率，拓展了压缩技术的评价维度。",
+      "通过统一算子接口组合剪枝、量化和低秩分解，使智能体能够自动搜索压缩策略，应对需求变化。",
+      "面向 FPGA 部署场景，强调实际硬件约束下的多目标权衡，具有工程落地潜力。",
+      "智能体框架可降低人工选择压缩配置的成本，为自动化模型压缩提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

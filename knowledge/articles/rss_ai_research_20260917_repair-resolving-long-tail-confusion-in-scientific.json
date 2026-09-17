@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-039",
+  "title": "REPAIR: Resolving Long-Tail Confusion in Scientific Retrievers via Fact-Verified Iterative Refinement",
+  "source_url": "https://arxiv.org/abs/2609.18262",
+  "source_platform": "rss_ai_research",
+  "summary": "REPAIR 是一个面向科学领域稠密检索器的自演化数据增强框架，旨在解决科学语料中长尾概念与高事实敏感性带来的检索难题。科学文献中大量专业术语和罕见概念分布极不均衡，导致稠密检索器难以准确匹配，同时基于 LLM 的增强方法容易产生幻觉。REPAIR 通过迭代循环合成训练数据，针对检索器的知识盲区进行定向补强，并引入事实校验机制确保合成数据的可靠性，从而在长尾查询上持续提升检索性能。该工作值得关注的原因在于：它把数据增强从一次性静态流程转变为随检索器能力演化的闭环过程，为科学检索这一高精度要求场景提供了可扩展的解决方案，也为缓解 LLM 增强中的幻觉问题提供了新思路。",
+  "tags": [
+    "Retrieval",
+    "Data Augmentation",
+    "Scientific NLP",
+    "Dense Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "科学检索的核心瓶颈在于长尾概念分布与事实敏感性，传统稠密检索器和 LLM 增强均难以兼顾",
+      "REPAIR 采用自演化迭代数据合成，针对检索器当前知识盲区动态生成训练样本，形成闭环优化",
+      "事实校验机制是保证合成数据质量、抑制幻觉传播的关键设计",
+      "该框架为科学等高精度检索场景提供了可扩展的数据增强范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-072",
+  "title": "Function Lives Where Variance Doesn't: Task-Weighted Charts of a Language Model's Computation",
+  "source_url": "https://arxiv.org/abs/2609.18989",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“任务加权图表”（Task-Weighted Charts）的新方法，用于量化语言模型计算中实际使用的维度数量。传统上，直接询问模型计算使用了多少维度是定义不清的，因为维度数量取决于所关注的功能。该方法通过针对表示空间中选定的功能（如下一词预测）拟合低维坐标系，并在该功能自身的度量下进行，从而将问题转化为普通最小二乘问题，使蒸馏过程变得简单。作者在来自三个模型家族的六个模型上进行了实验，参数规模从7000万到70亿不等，发现下一词预测任务需要模型表示维度的70%至90%。这一发现揭示了语言模型计算的高维特性，对模型压缩、知识蒸馏和可解释性研究具有重要意义。该工作为理解模型内部计算提供了新的理论框架和实用工具，值得关注。",
+  "tags": [
+    "LLM",
+    "Model Compression",
+    "Interpretability",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务加权图表将模型维度问题转化为最小二乘问题，使维度数量定义明确且可计算。",
+      "下一词预测任务需要模型表示维度的70%-90%，表明语言模型计算本质上是高维的。",
+      "该方法在多个模型家族和规模上验证，具有普适性，为模型压缩和蒸馏提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

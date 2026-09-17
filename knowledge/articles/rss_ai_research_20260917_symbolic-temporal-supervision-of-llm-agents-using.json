@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-035",
+  "title": "Symbolic Temporal Supervision of LLM Agents Using Contracts",
+  "source_url": "https://arxiv.org/abs/2609.18128",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「符号化时序监督」（Symbolic Temporal Supervision）的方法，利用契约（Contracts）对 LLM Agent 的工具调用行为进行实时约束与验证。LLM Agent 在网页导航、代码生成、工作流编排等复杂多步任务中展现出强大自动化能力，但其幻觉、分布不稳定性和对抗性操纵问题，加上某些工具调用的不可逆后果，可能导致严重危害。现有安全机制大多是在轨迹记录完成后进行事后评分，无法在行为发生前或发生过程中进行干预。该工作将契约形式化方法引入 Agent 时序行为监督，通过符号化规约描述工具调用的前置条件、后置条件与时序约束，从而在执行过程中检测并阻止违规行为。这一方向值得关注，因为它将传统软件工程中的契约式设计（Design by Contract）与 LLM Agent 安全治理相结合，为构建可信、可验证的自主智能体系统提供了新的理论框架和工程路径，对 Agent 安全、形式化验证和工具调用可靠性研究具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "LLM Safety",
+    "Formal Verification",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM Agent 安全防护多为事后轨迹评分，无法在工具调用发生前或执行中及时阻止有害行为",
+      "将契约式设计（前置/后置条件与时序约束）引入 Agent 监督，可实现符号化的运行时验证",
+      "该方法针对幻觉、分布不稳定和对抗操纵等 LLM 固有缺陷，尤其关注不可逆工具调用的风险控制",
+      "为构建可验证、可信赖的自主智能体系统提供了形式化方法与传统软件工程结合的新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

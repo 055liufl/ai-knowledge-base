@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-135",
+  "title": "CapMap-MS-TTA: 3rd Place Solution for the MUMU Track of the 8th LSVOS Challenge at ECCV 2026",
+  "source_url": "https://arxiv.org/abs/2609.18206",
+  "source_platform": "rss_ai_research",
+  "summary": "CapMap-MS-TTA 是第八届 LSVOS 挑战赛（ECCV 2026）MUMU 赛道的第三名解决方案。该赛道要求使用单一统一的多模态模型，在严格资源约束下（参数量不超过 0.5B、峰值 GPU 显存不超过 8GB）同时完成图像标签（Task A）、开放词汇目标检测（Task B）和英文描述生成（Task C）三项任务。该方案基于 Microsoft Florence-2-base（约 231M 参数）构建，采用免训练（training-free）策略，结合了 caption 映射与多尺度测试时增强（Multi-Scale Test-Time Augmentation, MS-TTA）技术。其核心价值在于：在极低资源预算下，通过推理阶段的工程优化而非重新训练，实现多任务统一处理，为边缘设备部署和资源受限场景下的多模态应用提供了可复用的技术范式。该工作也反映了当前多模态研究从'堆参数'向'高效推理与任务协同'转变的趋势，对竞赛参与者、轻量化模型开发者以及多模态系统工程师具有直接参考意义。",
+  "tags": [
+    "Multimodal",
+    "Test-Time Augmentation",
+    "Efficient Inference",
+    "Video Object Segmentation",
+    "Florence-2"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 0.5B 参数和 8GB 显存的严格约束下，免训练方案通过多尺度测试时增强和 caption 映射即可实现多任务统一，说明推理阶段优化可部分替代模型规模增长。",
+      "基于 Florence-2-base 的轻量级多模态模型能够同时处理图像标签、开放词汇检测和描述生成，验证了统一多模态架构在资源受限场景下的可行性。",
+      "该方案在 LSVOS 挑战赛 MUMU 赛道获得第三名，表明竞赛级性能不一定依赖大规模训练，工程化推理策略同样具有竞争力。",
+      "多尺度测试时增强（MS-TTA）与 caption 映射的结合为多任务输出对齐提供了新思路，可迁移至其他需要统一多模态输出的应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

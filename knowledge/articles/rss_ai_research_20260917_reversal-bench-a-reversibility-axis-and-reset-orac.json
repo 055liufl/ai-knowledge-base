@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-096",
+  "title": "REVERSAL-BENCH: A Reversibility Axis and Reset Oracle for Measuring the Reset-Free RL Cliff",
+  "source_url": "https://arxiv.org/abs/2609.17745",
+  "source_platform": "rss_ai_research",
+  "summary": "REVERSAL-BENCH 是一篇针对自主强化学习（autonomous RL）中「无重置训练」问题的基准测试论文。现有无重置 RL 方法大多隐含依赖环境的可逆性，即智能体可以通过反向动作撤销之前的操作，从而在无需外部重置的情况下持续训练。然而，真实世界的操作任务（如将物体推下桌子、洒出颗粒状物质）本质上是不可逆的，这导致现有方法在现实场景中面临「无重置悬崖」（Reset-Free RL Cliff）。该工作提出用连续参数 ρ ∈ [0,1] 来量化环境的可逆性，并构建了一个可控可逆程度的基准环境，同时引入 Reset Oracle 作为衡量标准，用于系统性地评估算法在不同可逆性水平下的表现。该基准的价值在于：它首次将「可逆性」作为独立变量进行控制实验，揭示了无重置 RL 方法的失效边界，为设计真正适应不可逆环境的自主 RL 算法提供了标准化评测平台。对于关注机器人操作、持续学习与自主智能体训练的研究者和开发者而言，这是一个重要的诊断工具。",
+  "tags": [
+    "Reinforcement Learning",
+    "Benchmark",
+    "Autonomous RL",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有无重置强化学习方法隐含依赖环境可逆性，而真实操作任务往往不可逆，导致方法在现实场景中失效。",
+      "REVERSAL-BENCH 通过连续参数 ρ 控制环境可逆程度，首次将可逆性作为独立变量进行系统性评测。",
+      "Reset Oracle 提供了一种衡量无重置算法在不可逆环境下性能退化的标准，有助于定位「无重置悬崖」。",
+      "该基准为开发真正适应不可逆环境的自主 RL 算法提供了标准化测试平台和诊断工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

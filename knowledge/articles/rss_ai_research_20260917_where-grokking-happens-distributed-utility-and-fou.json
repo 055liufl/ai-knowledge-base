@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-084",
+  "title": "Where Grokking Happens: Distributed Utility and Fourier Recoding Without a Module Switch",
+  "source_url": "https://arxiv.org/abs/2609.17571",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究 Transformer 中从记忆到泛化（grokking）的转变在何处发生。作者提出 Transition Games——一种行为对齐的精确激活博弈方法，并配以非泛化的对照实验，发现泛化能力的提升是分布式获得的，而非由某个模块开关式触发。具体而言，block-0 的注意力偏置具有前瞻性作用，选定的二阶模式在替换博弈中贡献了 67–92% 的加法对比；另一项独立的精确路径研究确认 block-1 MLP 在其中起中介作用。该工作挑战了以往将 grokking 归因于单一模块或突然相变的观点，强调泛化是多个组件协同、分布式累积的结果，并提供了可解释性分析的新工具。对理解神经网络泛化机制、提升模型可解释性以及设计更稳健的训练策略具有重要参考价值。",
+  "tags": [
+    "Grokking",
+    "Transformer",
+    "Interpretability",
+    "Mechanistic Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Grokking 并非由单一模块开关式触发，而是分布式效用增益的结果，涉及多个组件的协同变化。",
+      "block-0 注意力偏置具有前瞻性作用，其加法对比主要由选定的二阶模式贡献（67–92%）。",
+      "block-1 MLP 在泛化转变中起中介作用，表明不同层在泛化过程中承担不同功能角色。",
+      "Transition Games 方法为定位行为转变的精确激活路径提供了新的可解释性工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

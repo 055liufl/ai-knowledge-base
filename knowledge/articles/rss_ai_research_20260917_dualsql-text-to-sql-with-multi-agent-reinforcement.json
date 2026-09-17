@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-132",
+  "title": "DualSQL: Text-to-SQL with Multi-Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.18135",
+  "source_platform": "rss_ai_research",
+  "summary": "DualSQL 是一篇关于 Text-to-SQL 的学术论文，提出了一种基于多智能体强化学习的新系统。传统上，最先进的 Text-to-SQL 系统采用多智能体流水线，围绕模式链接（schema linking）和 SQL 生成（SQL generation）两个核心任务构建，但现有工作通常为每个任务训练独立的模型，未能利用这两个相互关联任务之间的协同效应。DualSQL 的创新之处在于使用单一模型骨干驱动两个智能体，这两个智能体共享相同的模型权重和智能体化脚手架（agentic scaffold），从而在模式链接和 SQL 生成之间实现知识共享与协同优化。该方法通过多智能体强化学习进行训练，有望提升 Text-to-SQL 任务的准确性和效率。该研究值得关注，因为它挑战了传统的分离式训练范式，探索了参数共享和联合优化在复杂结构化查询生成任务中的潜力，为未来 Text-to-SQL 系统设计提供了新思路。",
+  "tags": [
+    "Text-to-SQL",
+    "Multi-Agent",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 Text-to-SQL 系统为模式链接和 SQL 生成分别训练模型，忽略了任务间的协同效应。",
+      "DualSQL 使用单一模型骨干驱动两个智能体，共享权重和脚手架，实现联合优化。",
+      "多智能体强化学习被用于训练该共享模型，以提升两个任务的协同性能。",
+      "该方法为 Text-to-SQL 提供了一种参数高效且协同增强的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

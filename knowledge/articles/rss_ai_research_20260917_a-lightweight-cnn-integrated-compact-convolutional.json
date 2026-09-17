@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-136",
+  "title": "A Lightweight CNN Integrated Compact Convolutional Transformer for Multi-Scale Feature Learning and reducing computational complexity for breast cancer mammography image detection and classification",
+  "source_url": "https://arxiv.org/abs/2609.18212",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种轻量级 CNN 与紧凑卷积 Transformer（CCT）相结合的混合架构，用于乳腺癌钼靶图像的多尺度特征学习、检测与分类。传统 CNN 在医学图像癌症检测中表现良好，但难以捕捉长距离上下文依赖关系；而纯 Transformer 模型虽擅长建模全局依赖，却面临计算复杂度高、参数量大的问题。该研究通过在 CNN 特征提取层之后集成 CCT 模块，利用 CCT tokenizer 将 CNN 提取的特征重塑为紧凑的 patch token，再通过 Transformer 编码器进行全局上下文建模，从而在保留 CNN 局部特征提取优势的同时引入长距离依赖建模能力。该架构的核心价值在于兼顾性能与效率：一方面通过多尺度特征学习提升乳腺癌检测与分类的准确性，另一方面通过紧凑 token 化设计显著降低计算复杂度，使其更适合临床部署场景。对于医学影像 AI 领域而言，这项工作为在资源受限环境下构建高效、准确的乳腺癌辅助诊断系统提供了新的思路，也为 CNN 与 Transformer 混合架构在医学图像分析中的应用提供了有价值的参考。",
+  "tags": [
+    "Medical Imaging",
+    "CNN",
+    "Transformer",
+    "Breast Cancer Detection"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:13:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CNN 擅长提取局部特征但难以建模长距离上下文依赖，而 Transformer 虽能捕捉全局关系却计算开销大，两者互补是医学图像分析的合理方向",
+      "通过 CCT tokenizer 将 CNN 特征重塑为紧凑 patch token，可在引入 Transformer 全局建模能力的同时有效控制计算复杂度",
+      "多尺度特征学习对乳腺癌钼靶图像的检测与分类至关重要，混合架构能够兼顾不同尺度病变的识别需求",
+      "轻量化设计使该模型更适合临床实际部署，有望在资源受限的医疗环境中实现高效的乳腺癌辅助诊断"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

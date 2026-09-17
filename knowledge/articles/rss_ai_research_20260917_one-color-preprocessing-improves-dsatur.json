@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-003",
+  "title": "One Color Preprocessing Improves DSATUR",
+  "source_url": "https://arxiv.org/abs/2609.17633",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 SSLD（Semidefinite Spectral Learning with DSATUR）的图着色问题（GCP）改进方法。图着色问题是经典的 NP 难问题，DSATUR 是求解该问题最快的启发式算法之一，但其生成的着色方案通常比最先进的着色算法使用更多颜色。SSLD 的核心思想是在 DSATUR 完成剩余图着色之前，先通过半定规划（Semidefinite Programming）与谱学习方法预处理出一个高质量的初始颜色类，从而为后续启发式搜索提供更好的起点。这种\"先预处理一个颜色类，再交给 DSATUR 完成剩余部分\"的策略，有望在保持 DSATUR 速度优势的同时显著减少所用颜色数。该工作值得关注的原因在于：它结合了连续优化（半定规划）与离散组合启发式算法，为经典 NP 难问题提供了一种新的混合求解范式，且方法简洁、易于集成到现有 DSATUR 实现中，对运筹优化、图算法和组合优化领域的研究者与工程师具有参考价值。",
+  "tags": [
+    "Graph Coloring",
+    "Heuristic Algorithm",
+    "Semidefinite Programming",
+    "Combinatorial Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:07:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DSATUR 速度快但着色质量欠佳，通过预处理一个高质量颜色类可有效改善其最终解",
+      "半定规划与谱学习可用于生成初始颜色类，为离散启发式算法提供连续优化的先验信息",
+      "SSLD 将连续优化与组合启发式相结合，为 NP 难图着色问题提供了新的混合求解思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

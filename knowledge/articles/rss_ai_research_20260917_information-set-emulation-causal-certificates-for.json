@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-101",
+  "title": "Information Set Emulation: Causal Certificates for AI Derived EHR Features",
+  "source_url": "https://arxiv.org/abs/2609.17777",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“信息集仿真”（Information Set Emulation）的新框架，旨在解决AI从电子健康记录（EHR）中提取的特征在因果推断中的可采纳性问题。尽管AI和大型语言模型能够从EHR中恢复具有临床意义的特征，但预测有用性并不等同于因果推断的合法性。该框架通过为AI提取的特征附加“类型化提升”（typed lift），将源证据、临床与记录时间、决策时可用性、表示版本、提议的因果角色以及未解决的歧义等信息绑定到特征上，从而在锁定的目标下提供因果证书。这项工作值得关注，因为它首次系统性地将AI特征提取与因果推断的严谨性要求相结合，为医疗AI在临床决策中的可靠应用提供了方法论基础，有望推动EHR特征从预测工具向因果证据的转化。",
+  "tags": [
+    "EHR",
+    "Causal Inference",
+    "LLM",
+    "Healthcare AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预测有用性不等于因果可采纳性，AI提取的EHR特征需额外验证才能用于因果推断。",
+      "信息集仿真通过类型化提升为特征附加时间、版本、因果角色等元数据，提供因果证书。",
+      "该框架有助于解决EHR数据中记录时间与临床时间不一致、表示版本变化等歧义问题。",
+      "为医疗AI从预测模型走向因果证据提供了系统化路径，但实际部署仍需领域专家参与。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

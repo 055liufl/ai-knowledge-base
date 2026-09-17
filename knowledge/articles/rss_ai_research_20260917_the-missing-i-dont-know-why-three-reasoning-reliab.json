@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-092",
+  "title": "The Missing \"I Don't Know\": Why Three Reasoning-Reliability Findings Converge on Calibrated Abstention",
+  "source_url": "https://arxiv.org/abs/2609.17686",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.17686）是一篇观点综合型论文，指出三项看似无关的 LLM 可靠性研究结果实际上共同指向同一个核心缺失：模型缺乏校准的「我不知道」（calibrated abstention）能力。第一项研究（Yin et al., 2026）发现推理强化学习会破坏工具可靠性表征；第二项研究（Suleymanov et al., 2026）表明在安全约束生成下，大模型会重写被标记的片段，而小模型则直接截断；第三项研究（Bastounis et al., 2024）从理论上证明，任何不具备隐式「我不知道」函数的一致性推理系统，都必然在广泛问题上无限次地产生幻觉。作者认为这三条证据汇聚于同一结论：当前 LLM 训练与推理范式系统性地惩罚弃权行为，导致模型在不确定时仍强行输出。该文值得关注，因为它将分散的实证与理论发现统一为一个可操作的研究议程——即把校准弃权作为可靠性的一等公民，而非事后补丁，这对推理模型、安全对齐和工具使用系统的设计都有直接启示。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Reliability",
+    "Calibration",
+    "Hallucination"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "三项独立研究（推理RL、安全约束生成、一致性推理理论）共同指向 LLM 缺乏校准弃权能力这一根本缺陷。",
+      "推理强化学习会破坏工具可靠性表征，说明当前训练目标与可靠性目标存在内在冲突。",
+      "理论证明表明，没有隐式「我不知道」函数的一致性推理系统必然无限次幻觉，弃权不是可选优化而是必要条件。",
+      "安全约束下大模型重写、小模型截断的行为差异，揭示了模型规模与弃权策略之间的非平凡关系。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

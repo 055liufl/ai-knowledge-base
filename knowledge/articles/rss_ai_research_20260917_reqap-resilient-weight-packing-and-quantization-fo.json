@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-079",
+  "title": "REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration",
+  "source_url": "https://arxiv.org/abs/2609.17555",
+  "source_platform": "rss_ai_research",
+  "summary": "REQAP 提出了一种面向边缘 DNN 加速器的可靠性感知量化权重打包方法，旨在解决在易发生故障的硬件环境中部署深度神经网络时，模型压缩与计算可靠性之间的矛盾。该方法针对脉动阵列（systolic-array）架构，结合了敏感度驱动的混合精度量化框架，根据各层对精度的影响分配不同的位宽，并强制对称精度约束以简化硬件实现。同时，REQAP 引入了弹性权重打包策略，通过冗余或纠错机制提升量化权重在故障硬件上的容错能力。该工作值得关注，因为边缘设备常面临电压波动、老化等硬件故障，而现有量化方法多关注压缩率与精度，较少兼顾可靠性。REQAP 将量化、打包与容错设计协同优化，为边缘 AI 芯片在恶劣环境下的稳定部署提供了新思路，对硬件-算法协同设计领域具有参考价值。",
+  "tags": [
+    "Quantization",
+    "Edge Computing",
+    "DNN Accelerator",
+    "Fault Tolerance"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出敏感度驱动的混合精度量化，按层分配位宽以平衡精度与压缩率",
+      "针对脉动阵列架构设计可靠性感知的权重打包，增强故障容错能力",
+      "将量化与容错协同优化，填补边缘 DNN 加速器在故障环境下的可靠性研究空白"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

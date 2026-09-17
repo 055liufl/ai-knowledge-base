@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-119",
+  "title": "EDCT-Bench: Uncovering Faithfulness Gaps in VLMs via Explanation-Driven Counterfactual Testing",
+  "source_url": "https://arxiv.org/abs/2609.17953",
+  "source_platform": "rss_ai_research",
+  "summary": "EDCT-Bench 提出了一种名为 Explanation-Driven Counterfactual Testing（EDCT）的干预式测试协议，用于评估视觉语言模型（VLM）生成的自然语言解释（NLE）是否真正忠实于其所引用的视觉证据。该方法的核心流程是：先从模型给出的解释中提取其声称依赖的视觉概念，然后对这些概念施加经过验证的最小编辑（counterfactual edits），最后检验模型在编辑后图像上的答案与解释是否仍保持一致。这一工作揭示了当前 VLM 存在显著的\"忠实性缺口\"（faithfulness gap）——模型能够生成听起来合理、却与其所引用的视觉证据相矛盾的解释。该研究值得关注的原因在于：随着 VLM 在医疗、自动驾驶、内容审核等高风险场景中的部署增加，解释的可信度直接关系到系统的可问责性与安全性；而现有评估多关注答案正确性，忽视了解释与视觉证据之间的因果一致性。EDCT 提供了一种可操作、可验证的因果干预范式，将可解释性评估从\"看起来合理\"推进到\"是否真正依赖所声称的证据\"，为 VLM 可信度研究提供了新的基准与工具。",
+  "tags": [
+    "VLM",
+    "可解释性",
+    "反事实测试",
+    "基准评测",
+    "多模态"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 生成的解释可能看似合理，却与其引用的视觉证据不一致，存在系统性忠实性缺口。",
+      "EDCT 通过提取解释中引用的视觉概念并施加最小反事实编辑，检验答案与解释的因果一致性。",
+      "该协议将可解释性评估从表面合理性推进到对视觉证据真实依赖性的验证。",
+      "为高风险场景下 VLM 的可信度与可问责性提供了可操作的评测基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

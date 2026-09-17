@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-020",
+  "title": "OBC-Prune: Outcome-Based Calibration for Large Reasoning Model Pruning",
+  "source_url": "https://arxiv.org/abs/2609.17890",
+  "source_platform": "rss_ai_research",
+  "summary": "OBC-Prune 是一篇针对大型推理模型（LRM）剪枝的 arXiv 论文。大型推理模型在给出答案前会生成很长的思维链（CoT）轨迹，带来显著的推理开销。剪枝可以降低成本，但其效果高度依赖用于估计参数重要性的校准数据。近期工作改用模型自身的 rollout 进行校准，而非通用数据集，但这类方法对所有推理 token 一视同仁，不区分它们是否真正促成了成功的推理。OBC-Prune 提出基于结果的校准（Outcome-Based Calibration），即根据推理轨迹最终是否成功来重新加权 token 的重要性，从而更准确地识别关键参数。该工作值得关注，因为它直击推理模型部署中的核心痛点——长 CoT 带来的高推理成本，并指出校准数据质量而非数量才是剪枝效果的关键，为高效推理模型压缩提供了新思路。",
+  "tags": [
+    "Model Pruning",
+    "Reasoning Model",
+    "Chain-of-Thought",
+    "LLM Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型推理模型的剪枝效果取决于校准数据，而非剪枝算法本身",
+      "现有基于 rollout 的校准方法对所有推理 token 同等对待，忽略了 token 对最终成功推理的贡献差异",
+      "基于结果的校准（Outcome-Based Calibration）利用推理成败信号重新加权 token 重要性，可提升剪枝精度",
+      "该方向有望显著降低长思维链推理的部署成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

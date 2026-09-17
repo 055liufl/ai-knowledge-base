@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-133",
+  "title": "MoRE: Mixture of Reused Experts",
+  "source_url": "https://arxiv.org/abs/2609.18176",
+  "source_platform": "rss_ai_research",
+  "summary": "MoRE（Mixture of Reused Experts）是一种针对大语言模型架构的创新方案，旨在解决传统混合专家（MoE）模型参数量随专家数量线性增长导致的高内存占用问题。该方法借鉴了循环 Transformer 的参数复用思想，将专家池在相邻的若干层之间共享，使每一层从同一组专家中动态选择激活，从而在保持 MoE 条件计算优势的同时显著降低总参数量。MoRE 的核心价值在于它试图弥合 MoE 的高容量与循环 Transformer 的高参数效率之间的鸿沟：传统 MoE 虽能解耦模型容量与计算成本，但内存开销巨大；循环 Transformer 虽参数高效，却难以在语言建模任务上达到竞争性表现。MoRE 通过跨层共享专家池，让不同层复用同一批专家参数，理论上可在不增加参数量的前提下提升模型深度表达能力。该工作属于模型架构层面的研究，对关注大模型效率、稀疏激活、参数复用与内存优化的研究者和工程师具有参考意义，也为后续在训练稳定性、专家负载均衡及实际推理加速方面的探索提供了新方向。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "模型架构",
+    "参数效率"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoRE 通过让相邻层共享同一专家池，在保持 MoE 稀疏激活优势的同时大幅降低参数量和内存占用。",
+      "该工作将循环 Transformer 的参数复用思想引入 MoE，试图解决循环模型语言建模能力不足的问题。",
+      "跨层专家复用可能带来训练稳定性与专家负载均衡的新挑战，是后续研究的关键方向。",
+      "若验证有效，MoRE 可为大模型在有限显存下的深度扩展提供一种新的架构范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

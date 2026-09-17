@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-034",
+  "title": "Designing Agentic AI Workflow Portfolios under Imperfect Selection and Compute Cost",
+  "source_url": "https://arxiv.org/abs/2609.18126",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究智能体 AI（Agentic AI）系统在部署时的工作流组合与选择问题。同一任务往往可由多种工作流完成，它们在推理策略、验证结构和计算成本上存在差异。直觉上应选择平均性能最高的工作流，但作者指出这并非最优，因为不同工作流可能在不同实例上各自成功。论文提出\"组合加选择器\"（portfolio-and-selector）范式：企业并行运行多个工作流执行，再由选择器决定最终答案。研究聚焦于两个现实约束——选择器不完美（无法总是挑出正确结果）以及计算成本有限。该工作为智能体系统的部署策略提供了理论框架，说明在何种条件下多工作流组合优于单一最优工作流，并量化了选择精度与算力预算之间的权衡。对于构建生产级 Agent 系统的团队而言，这直接关系到如何在性能、可靠性与成本之间做出工程决策，具有较高的实践指导价值。",
+  "tags": [
+    "Agent",
+    "Workflow",
+    "LLM",
+    "Inference Cost"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "选择平均性能最高的单一工作流并非最优，不同工作流在不同任务实例上各有优势，组合使用可提升整体表现",
+      "选择器的不完美性会显著影响组合策略的收益，需要在选择精度与工作流多样性之间权衡",
+      "计算成本是组合策略的核心约束，并行运行多个工作流带来的性能提升必须与算力开销进行权衡",
+      "该范式为生产级 Agent 系统的部署提供了理论依据，指导何时值得采用多工作流组合而非单一最优方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

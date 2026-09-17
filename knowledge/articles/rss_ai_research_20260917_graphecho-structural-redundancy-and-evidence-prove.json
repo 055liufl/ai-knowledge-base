@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-007",
+  "title": "GraphEcho: Structural Redundancy and Evidence Provenance in LLM Graph Agents",
+  "source_url": "https://arxiv.org/abs/2609.17695",
+  "source_platform": "rss_ai_research",
+  "summary": "GraphEcho 是一篇关于 LLM 图智能体（Graph Agents）中证据溯源与结构冗余问题的研究论文。该工作关注一个核心问题：当 LLM 智能体在知识图谱上探索时，可能会多次经过同一证据的不同路径，从而误将重复遭遇当作额外的独立佐证，导致判断偏差。为验证这一假设，作者构建了 GraphEcho 基准，通过控制路径数量和证据来源（evidential origins）而保持证据内容不变，同时评估智能体的判断结果与主动探索行为。受控合成实验显示，模型在判断上会出现依赖模型本身的偏移，而冗余支持路径会系统性地影响智能体的置信度与决策。该研究揭示了当前图智能体在证据聚合与溯源推理方面的结构性缺陷，对构建更可靠的检索增强、知识图谱推理和多跳问答系统具有重要警示意义，也为评估智能体的证据独立性提供了新的方法论框架。",
+  "tags": [
+    "LLM",
+    "Graph Agent",
+    "Benchmark",
+    "Evidence Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:07:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 图智能体可能将同一证据的重复路径误认为独立佐证，从而产生虚假的置信度提升。",
+      "GraphEcho 通过固定证据内容、变化路径数量与来源，系统性地隔离了结构冗余对判断的影响。",
+      "模型对冗余路径的敏感度存在模型依赖性差异，说明该问题并非普遍一致而是与具体模型相关。",
+      "该研究为图智能体的证据溯源评估提供了可控基准，并提示需要设计抗冗余的推理与探索机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

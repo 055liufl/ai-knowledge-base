@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-071",
+  "title": "Suppressed, Not Erased: A Representational Trace of Edited Facts Survives Even Weight-Free Knowledge Editing",
+  "source_url": "https://arxiv.org/abs/2609.18985",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对知识编辑（Knowledge Editing）领域的一个关键盲区展开：现有基准只验证编辑后模型在近编辑提示上是否输出新事实，却无法衡量原始事实在模型内部残留了多少。作者提出一种线性痕迹探针（linear trace probe），在编辑事实后，直接从模型隐藏状态中检测原始目标对象是否仍可被解码恢复。在 GPT-2-XL 上，对 50 个 CounterFact 样本应用三种机制上截然不同的编辑器进行实验，结果显示：即使编辑成功、模型表面输出新事实，原始事实的表征痕迹依然存在，只是被抑制而非被彻底擦除。这一发现对知识编辑的可靠性评估、模型安全与可解释性研究具有重要意义，说明当前编辑方法可能只是改变了输出行为，而未真正移除内部知识，存在被重新激活或探测泄露的风险。",
+  "tags": [
+    "Knowledge Editing",
+    "Interpretability",
+    "LLM",
+    "Representation Probing"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有知识编辑基准只关注输出层面的局部正确性，忽略了模型内部原始知识是否真正被移除。",
+      "线性痕迹探针可从隐藏状态中恢复被编辑事实的原始对象，证明编辑后知识仍可被解码。",
+      "在 GPT-2-XL 上，三种机制不同的编辑器均表现出'抑制而非擦除'的共同特征。",
+      "该发现提示知识编辑可能存在安全隐患，被抑制的事实或可被重新激活或探测泄露。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

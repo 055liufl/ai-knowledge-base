@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-027",
+  "title": "RideWay: Benchmarking Efficient Task Completion for Tool-Using Language Agents",
+  "source_url": "https://arxiv.org/abs/2609.17985",
+  "source_platform": "rss_ai_research",
+  "summary": "RideWay 是一个面向工具调用型语言智能体的效率导向基准测试，聚焦于网约车（ridehailing）这一具有状态依赖的工具调用场景。传统智能体评测通常只关注任务是否完成，但在真实交互式服务中，一个最终成功的智能体仍可能因反复提问、冗余搜索或可避免的修改而损害用户体验。RideWay 通过构建有状态（stateful）的工具调用环境，模拟网约车服务中的多轮交互流程，并提出了 Efficiency Utility 这一以成功为前提的门控指标（success-gated metric），对成功轨迹中多余的步骤、调用和修正进行折扣惩罚，从而更全面地衡量智能体的实际服务质量。该工作的价值在于：它将评测维度从单一的“能否完成”扩展到“以多高效率完成”，填补了现有基准在效率评估上的空白，对开发实用型工具调用智能体具有直接指导意义，也为后续研究提供了可复现的评测框架与度量标准。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Tool Use",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体评测只关注任务是否成功，忽略了成功轨迹中的冗余步骤对用户体验的负面影响。",
+      "RideWay 构建了有状态的网约车工具调用环境，更贴近真实交互式服务场景。",
+      "Efficiency Utility 是一种成功门控指标，对成功但低效的轨迹进行折扣惩罚，推动智能体追求高效完成。",
+      "该基准为工具调用型智能体的效率评估提供了可复现的框架和度量标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

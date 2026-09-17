@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-107",
+  "title": "Reflections on Trusting Trust, Revisited: Contaminating Self-Modifying AI Coding Agents with Poisoned Benchmarks",
+  "source_url": "https://arxiv.org/abs/2609.17817",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了 Thompson 在《Reflections on Trusting Trust》中提出的经典信任链攻击，并将其扩展到现代 AI 编码代理场景。Thompson 当年证明，一个被污染的编译器可以在重新编译干净源码时重新植入后门，从而形成自我复制的木马。如今，大量编码工作由 AI 编码代理完成，且这些代理越来越多地生成自身的新版本——即具备自我修改能力。作者提出核心问题：当\"编译器\"变成自我修改的 AI 编码代理时，攻击者能否通过提供被污染的基准测试（poisoned benchmarks）来污染代理，使其在后续自我迭代中持续传播后门或恶意行为？该研究揭示了 AI 编码代理供应链中一个被忽视的信任漏洞：基准测试不仅是评估工具，还可能成为攻击载体。由于代理会依据基准反馈优化自身代码，恶意基准可诱导代理生成带有隐藏缺陷或后门的版本，且这些缺陷会在自我修改循环中稳定遗传，难以通过常规代码审查发现。这一工作对 AI 代理安全、软件供应链信任、以及自主代码生成系统的鲁棒性具有重要警示意义，值得研究人员和开发者高度关注。",
+  "tags": [
+    "AI Coding Agent",
+    "Security",
+    "Self-Modifying AI",
+    "Supply Chain Attack",
+    "Benchmark Poisoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Thompson 的信任链攻击在自我修改 AI 编码代理场景下依然成立，且攻击面从编译器扩展到基准测试数据。",
+      "被污染的基准测试可诱导代理在自我迭代中生成并稳定遗传后门，形成难以检测的自我复制漏洞。",
+      "AI 编码代理的自我修改能力引入了新型供应链风险，传统代码审查难以发现基准驱动的隐性污染。",
+      "该研究呼吁建立针对 AI 代理训练与评估数据的完整性验证机制，以保障自主代码生成系统的可信性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

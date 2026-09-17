@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-032",
+  "title": "When Is Graph Structure Worth Its Cost? The Case for Structure Pricing in Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2609.18099",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对图结构检索增强生成（Graph-based RAG）中构建图需要大量语言模型调用、成本高昂的问题，提出了 EffiRAG 系统。EffiRAG 的核心思想是“结构定价”（Structure Pricing），即在使用图结构定位相关段落的同时，直接从原始文本生成答案，从而减少对图结构的依赖和构建开销。论文探讨了图结构在 RAG 中的成本效益问题，试图回答“何时图结构值得其成本”这一关键问题。该工作对于需要跨多文档推理的问答场景具有实际意义，因为它提供了一种在质量与成本之间取得平衡的方案。对于研究者和开发者而言，EffiRAG 提供了一种可借鉴的优化思路：并非所有 RAG 任务都需要昂贵的图构建，通过合理定价结构成本，可以在保持答案质量的同时显著降低推理开销。该论文属于 RAG 系统优化方向，值得关注其后续实验验证和实际部署效果。",
+  "tags": [
+    "RAG",
+    "Graph",
+    "Cost-Efficiency",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图结构 RAG 的构建成本主要来自摄入阶段的大量 LLM 调用，需权衡质量增益与成本。",
+      "EffiRAG 通过图定位相关段落、从原文生成答案，减少对图结构的依赖。",
+      "结构定价思想为 RAG 系统设计提供了成本与质量平衡的新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

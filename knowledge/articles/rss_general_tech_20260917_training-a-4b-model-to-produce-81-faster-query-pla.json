@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260917-001",
+  "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+  "source_url": "https://rohanbansal.com/qorl",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了作者训练一个40亿参数的语言模型，用于生成比PostgreSQL原生查询规划器快81%的查询执行计划。该项目名为QORL（Query Optimization with Reinforcement Learning），通过强化学习微调模型，使其能够针对给定SQL查询输出更优的执行计划。作者在博客中详细分享了训练方法、实验设置和性能对比结果，并提供了可复现的代码和模型。这一工作展示了小型语言模型在数据库查询优化这一经典系统问题上的巨大潜力，可能对数据库内核开发者和AI应用研究者都有启发。",
+  "tags": [
+    "LLM",
+    "Query Optimization",
+    "Reinforcement Learning",
+    "Database"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:18Z",
+  "collected_at": "2026-09-17T13:06:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "一个40亿参数的小型语言模型通过强化学习训练，能够生成比PostgreSQL原生规划器快81%的查询计划。",
+      "该方法将查询优化视为序列生成任务，利用强化学习直接优化执行时间，避免了传统成本模型的偏差。",
+      "实验表明，小型专用模型在特定系统任务上可以超越通用大型模型和传统启发式方法。",
+      "该工作为AI与数据库系统的结合提供了新思路，可能推动更智能的查询优化器发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

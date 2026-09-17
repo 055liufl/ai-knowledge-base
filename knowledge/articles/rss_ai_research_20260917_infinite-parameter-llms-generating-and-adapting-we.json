@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-070",
+  "title": "Infinite-Parameter LLMs: Generating and Adapting Weights from Live Data",
+  "source_url": "https://arxiv.org/abs/2609.18842",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Infinite-Parameter LLMs 的新范式，旨在让语言模型能够从实时数据中动态生成和适配权重，从而突破传统静态预训练的限制。当前主流的大模型（包括 MoE 架构）虽然通过海量参数和训练数据获得了强大能力，但其知识在部署后基本固化，无法有效利用部署环境中不断产生的新数据。该研究试图解决这一核心矛盾：如何让已部署的模型持续从实时数据流中学习并更新自身参数，而不是依赖重新训练或微调。其思路可能涉及动态生成参数、条件化权重适配或在线学习机制，使模型具备\"无限参数\"的扩展能力。这一方向值得关注，因为它挑战了 scaling laws 的静态假设，若成功将显著提升模型在动态环境中的适应性和实用性，对推荐系统、实时对话、金融分析等需要持续更新的场景具有重大意义，同时也为模型架构设计开辟了新思路。",
+  "tags": [
+    "LLM",
+    "MoE",
+    "Online Learning",
+    "Model Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 scaling laws 和 MoE 架构依赖静态预训练数据，部署后模型知识固化，难以利用实时数据",
+      "提出从实时数据动态生成和适配权重的新范式，可能突破静态参数量的限制",
+      "该方向若成功，将显著提升模型在动态环境中的持续适应能力，对实时应用场景价值巨大"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

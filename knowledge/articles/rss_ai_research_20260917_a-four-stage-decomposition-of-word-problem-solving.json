@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-014",
+  "title": "A Four-Stage Decomposition of Word-Problem Solving and Mechanistic Fragility in LLM Math Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.17804",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对大型语言模型（LLM）解决小学数学应用题的能力进行了机制层面的分解分析。作者发现，尽管LLM在标准数学应用题上准确率很高，但只需在题目中插入一个无关从句，模型性能就会急剧崩溃。为解释这一矛盾现象，论文提出模型的内部计算可分解为四个顺序阶段：模式抽象（Schema Abstraction）、操作规划（Operation Planning）、操作数绑定（Operand Binding）和计算（Computation），每个阶段产生不同的中间表示。这一发现揭示了LLM数学推理的机制脆弱性，表明其推理过程并非真正鲁棒，而是高度依赖表面模式匹配。该工作值得关注，因为它首次从机制可解释性角度系统刻画了LLM数学推理的流水线结构，并为理解对抗性扰动下的性能崩溃提供了理论框架，对提升模型鲁棒性和设计更可靠的推理系统具有重要启示。",
+  "tags": [
+    "LLM",
+    "Math Reasoning",
+    "Mechanistic Interpretability",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:07:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM的数学推理可分解为模式抽象、操作规划、操作数绑定和计算四个顺序阶段，每阶段有独立的中间表示。",
+      "模型在标准数学应用题上的高准确率掩盖了其机制脆弱性：一个无关从句即可导致推理崩溃。",
+      "该四阶段框架为理解LLM推理失败提供了机制层面的解释，有助于设计更鲁棒的推理系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

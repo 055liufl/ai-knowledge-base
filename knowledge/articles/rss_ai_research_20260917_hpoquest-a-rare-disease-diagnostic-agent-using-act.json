@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-050",
+  "title": "HPOQuest: A Rare-Disease Diagnostic Agent Using Active Phenotype Acquisition",
+  "source_url": "https://arxiv.org/abs/2609.18431",
+  "source_platform": "rss_ai_research",
+  "summary": "HPOQuest 是一个面向罕见病诊断的免训练智能体框架，旨在解决罕见病诊断中患者表型信息不完整、异质性强导致诊断困难的问题。全球超过 3 亿人受 7000 多种罕见病影响，患者初诊时往往只呈现部分表型，传统诊断方法难以快速锁定病因。HPOQuest 从少量已观察到的患者表型出发，维护一个概率化的疾病排序，并通过主动表型获取（Active Phenotype Acquisition）策略迭代选择最具信息量的表型进行询问或检测，从而逐步缩小候选疾病范围。该框架无需额外训练，可直接利用现有表型本体（如 HPO）与疾病-表型关联知识，降低了部署门槛。其核心价值在于将罕见病诊断建模为序列决策问题，通过主动学习思想优化信息采集效率，有望减少不必要的检查、缩短诊断周期（罕见病平均确诊时间常达数年），并为临床决策支持系统提供可解释的推理路径。该工作对医学 AI、智能体决策与信息获取方向具有参考意义，尤其适合资源有限场景下的辅助诊断应用。",
+  "tags": [
+    "Agent",
+    "Medical AI",
+    "Active Learning",
+    "Rare Disease",
+    "Decision Support"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:09:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将罕见病诊断形式化为序列表型获取问题，利用概率疾病排序指导下一步最信息量表型的选择。",
+      "免训练框架直接复用现有表型本体与疾病关联知识，避免了对大规模标注数据的依赖，便于临床落地。",
+      "主动获取策略可减少冗余检查，有望缩短罕见病诊断周期并提升诊断效率。",
+      "该方法为医学智能体在信息不完整场景下的决策提供了可解释的推理路径。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

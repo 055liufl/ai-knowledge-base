@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-017",
+  "title": "The Inference Engineering Pareto Atlas: Which Optimizations Dominate the Cost, Quality, and Latency Frontier?",
+  "source_url": "https://arxiv.org/abs/2609.17863",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对 LLM 推理优化领域长期存在的\"指标不可比\"问题，构建了一个成本、质量与延迟的帕累托图谱（Pareto Atlas）。由于不同优化技术往往在特定模型、GPU、提示词和质量指标下报告加速比，研究者难以横向比较或组合使用这些技术。作者选取 Qwen2.5-7B-Instruct 模型，在 vLLM 0.12 框架下，跨 L4、A100、H100 三种 GPU 测量了 54 种配置组合，并以此作为锚点校准模拟器，从而在无需穷举测试的前提下推断更大配置空间中的最优部署方案。该工作值得关注的原因在于：它首次系统性地将推理优化从\"单点加速比\"叙事转向\"多目标帕累托前沿\"分析，为工程团队在不同部署约束（如成本敏感、延迟敏感、质量敏感）下选择优化组合提供了可量化的决策依据。其方法论结合了实测锚点与模拟外推，兼顾了实验可信度与覆盖广度，对推理基础设施的选型与调优具有直接指导意义，也为后续研究提供了可复现的基准框架。",
+  "tags": [
+    "LLM Inference",
+    "vLLM",
+    "Pareto Optimization",
+    "GPU Benchmarking"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:07:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理优化技术因测试条件异构而难以直接比较，帕累托图谱提供了一种统一的多目标评估框架。",
+      "通过 54 个实测配置作为锚点校准模拟器，可在有限实验成本下外推更大配置空间的最优解。",
+      "不同 GPU（L4/A100/H100）与部署约束下，主导成本、质量、延迟前沿的优化组合存在显著差异。",
+      "该工作为推理工程从经验性调优走向系统化、可量化的部署决策提供了方法论基础。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

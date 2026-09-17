@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-081",
+  "title": "Pay Only for Disagreement: Certified No-Regression Verdicts for Model Updates with Matching Label-Complexity Bounds",
+  "source_url": "https://arxiv.org/abs/2609.17560",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对模型更新（如重训练、微调、量化或供应商替换）的认证式配对风险差异审计方法，旨在解决模型更新可能带来性能退化的风险。核心发现是一个支撑恒等式：两个模型之间的风险差异仅存在于它们预测不一致的输入上，且这一差异无需标签即可观测。基于此，作者构建了 DISCERN，一种顺序式两层协议，其中零标签层用于快速筛选，标签层用于精确认证，并给出了匹配的标签复杂度边界。该方法将更新推广决策从依赖全量标注数据转变为仅需对不一致样本进行标注，显著降低了审计成本，同时提供了无回归的认证保证。这项工作对模型部署与持续集成中的安全更新具有重要实践意义，尤其适用于大规模生产环境中频繁的模型迭代场景。",
+  "tags": [
+    "Model Update",
+    "Risk Auditing",
+    "Certification",
+    "Label Complexity",
+    "MLOps"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型更新的风险差异仅存在于预测不一致的输入上，且无需标签即可观测，这为高效审计提供了理论基础。",
+      "DISCERN 采用顺序式两层协议，零标签层快速筛选，标签层精确认证，实现了标签复杂度与认证保证的匹配。",
+      "该方法将更新推广的审计成本从全量标注降低到仅对不一致样本标注，显著提升了实用性。",
+      "为生产环境中模型更新的无回归认证提供了可证明的框架，适用于重训练、微调、量化等多种更新方式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

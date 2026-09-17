@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-109",
+  "title": "Procedural Pretraining for Molecular Property Prediction",
+  "source_url": "https://arxiv.org/abs/2609.17831",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“程序化预训练”（Procedural Pretraining）的新方法，用于分子性质预测。分子性质预测通常受限于下游标注数据集规模较小，因此研究者常利用大规模无标注分子进行预训练。本文的核心问题是：在模型接触任何分子数据之前，能否从抽象的、程序化生成的数据中学习到有用的归纳偏置？作者设计了一个三阶段训练流程：首先在程序化生成的数据上进行预训练，然后在SMILES分子数据上进行分子预训练，最后针对下游任务进行微调。这一思路借鉴了程序化生成内容（如合成任务、算法数据）来增强模型泛化能力的理念，有望减少对大规模分子预训练的依赖，并为小样本分子性质预测提供新的解决路径。该工作值得关注，因为它挑战了“必须用分子数据预训练”的常规假设，探索了更通用的归纳偏置学习方式，可能推动分子机器学习在数据稀缺场景下的应用。",
+  "tags": [
+    "Molecular Property Prediction",
+    "Pretraining",
+    "SMILES",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "程序化预训练可在无分子数据时提供有用的归纳偏置，减少对大规模分子预训练的依赖。",
+      "三阶段流程（程序化预训练→分子预训练→下游微调）为小样本分子性质预测提供了新范式。",
+      "该方法挑战了传统分子预训练的必要性，可能推动更通用的预训练策略在科学领域的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

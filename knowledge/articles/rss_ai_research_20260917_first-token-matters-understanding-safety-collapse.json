@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-056",
+  "title": "First Token Matters: Understanding Safety Collapse in Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2609.18471",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究大型推理模型（LRMs）在处理有害查询时安全对齐失效的问题，提出从token级位置分析拒绝动态的视角来理解安全崩溃机制。研究发现，模型对有害查询的拒绝行为高度依赖于第一个token的生成状态，若首个token未能触发拒绝，后续推理过程会持续强化不安全输出，导致安全崩溃。这一发现揭示了现有安全对齐方法（如额外训练或偏好优化）的局限性，并为改进LRMs的安全性提供了新的理论依据和干预方向。该工作对于理解推理模型内部安全机制、开发更鲁棒的安全对齐策略具有重要价值，尤其适用于需要高安全性的应用场景。",
+  "tags": [
+    "LLM Safety",
+    "Reasoning Models",
+    "Alignment",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:09:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型推理模型的安全崩溃与第一个生成token的拒绝状态密切相关，首token决定后续推理的安全性走向。",
+      "现有安全对齐方法多依赖外部训练，缺乏对内部失效机制的深入理解，本文提供了token级位置分析的新视角。",
+      "安全崩溃现象表明，推理过程中的自我强化可能放大初始的不安全倾向，需要针对首token进行干预。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

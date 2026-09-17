@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-053",
+  "title": "The Mirage of Calibrated Confidence: Trajectory-Independence of Verbalized Confidence in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2609.18453",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了视觉语言模型（VLM）中口头表达置信度（verbalized confidence）的校准问题。作者发现，即使模型在推理过程中反复自我纠正、表达犹豫（如“等等，我应该重新检查”），最终仍可能给出错误答案并报告高置信度。核心发现是：在评估的 VLM 和校准方法中，口头置信度在很大程度上与推理轨迹无关（trajectory-independent）。研究通过三个互补视角进行验证：内容变化、token 掩码以及模型自身的犹豫标记。这意味着模型报告的置信度并不真实反映其推理过程或答案可靠性，现有校准方法可能只是表面有效。该工作对 VLM 可靠性评估、不确定性量化和可信 AI 具有重要意义，提醒研究者和开发者不能仅依赖模型自报置信度来判断输出可信度。",
+  "tags": [
+    "VLM",
+    "Calibration",
+    "Uncertainty",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:09:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 的口头置信度与推理轨迹基本无关，自我纠正和犹豫表达不会降低其报告的置信度。",
+      "模型可能在错误答案上仍给出高置信度，表明现有校准方法存在根本性缺陷。",
+      "通过内容变化、token 掩码和犹豫标记三种视角验证了置信度的轨迹独立性。",
+      "该发现对依赖模型自报置信度进行决策的应用构成风险，需开发更可靠的校准方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-098",
+  "title": "CALOS: Control-Affine Lyapunov On-manifold Safety Layer for Safe Deep Reinforcement Learning for Quadrotors",
+  "source_url": "https://arxiv.org/abs/2609.17758",
+  "source_platform": "rss_ai_research",
+  "summary": "CALOS（Control-Affine Lyapunov On-manifold Safety Layer）是一种面向四旋翼无人机的运行时安全层，旨在解决深度强化学习策略在训练和部署过程中无法保证满足安全约束的问题。该方法不修改底层学习算法，而是在运行时对策略输出进行干预，通过构造四个倾角不等式约束以及一个 Lyapunov 下降条件，将四旋翼的姿态约束映射到控制仿射系统上，并在流形上实现安全投影。其核心创新在于将控制仿射结构与 Lyapunov 方法结合，在保持策略原有性能的同时提供可证明的安全性保证。该工作值得关注，因为它为安全强化学习在真实机器人系统（尤其是欠驱动、高动态的四旋翼平台）上的落地提供了一种轻量、通用且理论可解释的解决方案，有望推动学习型控制器从仿真走向安全关键场景的实际部署。",
+  "tags": [
+    "Safe RL",
+    "Quadrotor",
+    "Control Theory",
+    "Lyapunov",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CALOS 作为运行时安全层，无需修改强化学习算法即可为四旋翼策略提供姿态安全约束保证。",
+      "通过控制仿射结构与 Lyapunov 下降条件在流形上构造安全投影，兼顾理论可证明性与实时性。",
+      "该方法针对四旋翼的倾角约束设计四个不等式，可直接应用于训练与部署阶段。",
+      "为安全强化学习在安全关键机器人系统上的实际部署提供了轻量且通用的解决思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

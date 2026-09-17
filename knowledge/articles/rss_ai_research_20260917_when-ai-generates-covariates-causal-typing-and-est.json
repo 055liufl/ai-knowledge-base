@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-100",
+  "title": "When AI Generates Covariates: Causal Typing and Estimand Drift in Sequential Experiments",
+  "source_url": "https://arxiv.org/abs/2609.17772",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对AI生成协变量在序贯实验中的因果角色模糊问题，提出了因果类型学（causal typing）框架。当AI从笔记、对话、图像或可穿戴设备流中生成协变量时，这些特征可能扮演治疗版本、行动前状态、历史、设计变量、中介变量、结果代理、观测过程或并发事件等多种角色，而这些角色在因果推断中不可互换。若角色未明确指定，会导致估计目标漂移（estimand drift），即因果问题本身发生改变。作者为序贯实验制定了一套因果类型规范，并引入版本化表示来管理生成特征的角色。该工作值得关注，因为它首次系统性地揭示了AI生成特征在因果实验中的潜在陷阱，为AI辅助的因果推断提供了理论纪律，对依赖AI生成数据的实验设计者具有重要警示和指导意义。",
+  "tags": [
+    "Causal Inference",
+    "AI-Generated Covariates",
+    "Sequential Experiments",
+    "Estimand Drift"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI生成的协变量可能扮演多种因果角色（如治疗版本、中介、结果代理等），角色不可互换，未指定角色会导致因果问题改变。",
+      "估计目标漂移（estimand drift）是AI生成特征在序贯实验中的核心风险，即因果估计目标因特征角色模糊而发生偏移。",
+      "提出因果类型学（causal typing）和版本化表示，为序贯实验中AI生成特征的角色管理提供形式化规范。",
+      "该研究强调在AI辅助的因果实验中，必须明确生成特征的角色，否则实验结论可能无效。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

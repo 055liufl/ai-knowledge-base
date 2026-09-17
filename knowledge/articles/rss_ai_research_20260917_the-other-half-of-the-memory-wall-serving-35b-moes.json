@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-030",
+  "title": "The Other Half of the Memory Wall: Serving 35B MoEs from SSD with Trained Routing Prediction",
+  "source_url": "https://arxiv.org/abs/2609.18063",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Edge0，一个面向消费级硬件的流式 MoE 推理引擎，旨在解决 MoE 推理中的“内存墙”问题。35B 级 MoE 模型在 4-bit 量化下仍需约 19.5GB 权重内存，而稀疏性只减少每 token 的计算量，并不减少必须驻留的字节数。简单地将专家权重卸载到 SSD 无法奏效，因为第 N+1 层的专家选择依赖第 N 层的输出，读取无法提前启动以隐藏于计算之后。Edge0 的核心思路是训练一个路由预测器，提前预测后续层将激活的专家，从而让 SSD 读取与当前层计算重叠，实现从 SSD 流式加载专家权重。该工作值得关注，因为它把 MoE 推理的瓶颈从显存容量转向存储带宽与预测精度，为在消费级 GPU 或边缘设备上运行大参数 MoE 模型提供了新路径，同时揭示了路由预测这一被忽视的研究方向。",
+  "tags": [
+    "MoE",
+    "Inference",
+    "SSD Offloading",
+    "Routing Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 推理的内存瓶颈在于权重字节数而非计算量，稀疏性无法减少必须驻留的专家权重。",
+      "朴素 SSD 卸载失效的根因是层间依赖：下一层专家选择必须等待上一层输出，读取无法提前。",
+      "通过训练路由预测器提前预判专家激活，可将 SSD 读取与计算重叠，实现流式 MoE 推理。",
+      "该方向将 MoE 部署瓶颈从显存容量转向存储带宽与预测准确率，为消费级硬件运行大 MoE 提供可能。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

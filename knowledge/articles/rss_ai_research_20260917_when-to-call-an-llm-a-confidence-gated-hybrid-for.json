@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-024",
+  "title": "When to Call an LLM: A Confidence-Gated Hybrid for Cost-Effective Emotion Recognition in Conversational AI",
+  "source_url": "https://arxiv.org/abs/2609.17977",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向对话式 AI 情感识别（ERC）的置信度门控混合架构，旨在平衡准确率与成本、延迟之间的权衡。研究背景是联络中心即服务（CCaaS）平台中的情感识别已成为智能体辅助提示、升级路由和通话后分析等生产级能力，但传统方案往往忽视部署成本与响应延迟。作者系统比较了三种对话上下文情感识别的部署方案：低成本堆叠集成模型（基于句子嵌入、窗口上下文及 RandomForest/XGBoost/逻辑回归）、纯 LLM 方案，以及本文提出的置信度门控混合方案——即仅在集成模型置信度不足时才调用 LLM。该工作的价值在于将研究视角从单纯追求精度转向实际生产部署中的成本效益，为工程团队提供了可落地的架构决策依据，对需要在规模化场景中控制 LLM 调用成本的开发者具有直接参考意义。",
+  "tags": [
+    "LLM",
+    "Emotion Recognition",
+    "Cost-Effective AI",
+    "Hybrid Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在对话情感识别中，低成本集成模型可覆盖大部分高置信度样本，仅对低置信度样本调用 LLM，从而显著降低推理成本与延迟",
+      "置信度门控机制是平衡传统机器学习模型与 LLM 的关键设计，可根据业务对准确率和成本的敏感度灵活调节阈值",
+      "生产级 ERC 系统的评估不应只看准确率，还需综合考虑成本、延迟和可扩展性等系统级指标"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

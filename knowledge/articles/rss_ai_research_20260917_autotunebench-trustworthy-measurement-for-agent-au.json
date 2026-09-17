@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-033",
+  "title": "AutoTuneBench: Trustworthy Measurement for Agent Auto-Tuning of LLM Serving Engines",
+  "source_url": "https://arxiv.org/abs/2609.18123",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoTuneBench 是一篇针对 LLM 服务引擎自动调优（auto-tuning）测量可信度的研究论文。作者指出，当前 LLM 智能体通过“提议-测量-保留”的闭环来优化 GPU 内核和服务引擎，但这一闭环所依赖的测量结果并不可信。基于为期四天、包含 619 次模型调用的试点语料，作者归纳出四种失效模式：稻草人基线（strawman baselines）人为制造加速比、绝对时间无法跨机器迁移、饱和任务使对比失效、基础设施缺陷伪装成科学结论。为此，作者提出 AutoTuneBench，旨在为智能体自动调优提供可信的测量基准。该工作值得关注，因为它揭示了当前 LLM 智能体在系统优化中普遍存在的评估陷阱，并可能推动更严谨的自动调优评测标准，对依赖性能测量的 AI 基础设施和系统研究具有重要影响。",
+  "tags": [
+    "LLM",
+    "Auto-Tuning",
+    "Benchmark",
+    "Serving",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体自动调优的闭环测量存在四种系统性失效模式：稻草人基线、绝对时间不可迁移、饱和任务和基础设施缺陷。",
+      "基于 619 次模型调用的试点语料，实证揭示了当前自动调优评估的不可信性。",
+      "AutoTuneBench 被提出作为可信测量基准，以规范智能体对 LLM 服务引擎的自动调优。",
+      "该研究强调在 AI 系统优化中，测量方法本身需要被严格审视，否则可能得出误导性结论。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

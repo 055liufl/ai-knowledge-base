@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-067",
+  "title": "Version- and Scope-Aware Question Answering over Normative Documents: A Deployed System and an End-to-End Evaluation at Production Scale",
+  "source_url": "https://arxiv.org/abs/2609.18769",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一个面向规范性文档（如法律法规、政策文件）的版本与适用范围感知问答系统，并给出了在生产规模下的端到端评估。规范性文档问答的难点在于答案往往不局限于单一文本片段，而取决于多个外部因素：所检索文档是否为当前生效版本、是否适用于特定司法管辖区、主体（如机构或申请人）和日期，以及每条规范性主张能否追溯到其支撑原文。现有托管检索服务虽大幅降低了工程成本，但难以自动处理版本时效性与适用范围等结构化约束。该工作构建并部署了一个实际系统，将版本控制、范围匹配与来源可追溯性纳入检索与问答流程，并在生产规模下进行了端到端评测。其价值在于将法律/合规领域问答从单纯的语义检索推进到对规范性文档元属性（版本、管辖、主体、时间）的显式建模，对法律科技、企业合规、政务问答等场景具有直接参考意义，也为 RAG 系统在强约束领域的落地提供了可复用的评估范式。",
+  "tags": [
+    "RAG",
+    "Legal AI",
+    "Question Answering",
+    "Information Retrieval",
+    "Production System"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "规范性文档问答的正确性依赖于版本时效性、管辖/主体/日期适用范围等文档外信息，而非单一文本片段的语义匹配。",
+      "系统将版本感知与范围感知显式纳入检索与问答流程，并强调每条规范性主张可追溯到支撑原文。",
+      "该工作在真实生产规模下完成端到端评估，为强约束领域（法律、合规、政务）的 RAG 落地提供了可复用的评测范式。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

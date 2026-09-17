@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-110",
+  "title": "Adaptive hybrid coupling with operator inference, the overlapping Schwarz alternating method and reinforcement learning",
+  "source_url": "https://arxiv.org/abs/2609.17837",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于强化学习（RL）的自适应混合耦合方法，用于动态调整混合域分解中全阶模型（FOM）与降阶模型（ROM）的分配。传统混合域分解方法通常在整个模拟过程中固定每个子域的模型类型，这限制了其在瞬态问题中的适用性，因为局部特征会随时间在域内传播，需要高保真分辨率的区域不断变化。该方法结合了算子推断（operator inference）、重叠 Schwarz 交替方法以及强化学习，通过 RL 智能体在模拟过程中动态决定哪些子域应使用 FOM 或 ROM，从而在保证精度的同时降低计算成本。该工作值得关注，因为它首次将强化学习引入混合域分解的自适应模型选择，为瞬态多物理场仿真提供了一种灵活且高效的框架，有望推动科学计算与机器学习交叉领域的发展。",
+  "tags": [
+    "Reinforcement Learning",
+    "Domain Decomposition",
+    "Reduced Order Modeling",
+    "Operator Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统混合域分解方法固定子域模型类型，无法适应瞬态问题中局部特征传播导致的高保真需求变化。",
+      "提出基于强化学习的自适应策略，动态选择每个子域使用全阶模型或降阶模型，平衡精度与效率。",
+      "结合算子推断与重叠 Schwarz 交替方法，实现了模型耦合与在线决策的协同。",
+      "该方法为瞬态多物理场仿真提供了更灵活、计算高效的求解框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260917-078",
+  "title": "The Death of Schema Linking? Text-to-SQL in the Age of Well-Reasoned Language Models",
+  "source_url": "https://arxiv.org/abs/2408.07702",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了 Text-to-SQL 流程中的 Schema Linking 步骤，探讨在最新一代大型语言模型（LLM）背景下该步骤是否仍然必要。传统上，Schema Linking 用于从目标数据库中检索与用户查询相关的表和列，并忽略无关部分，但 imperfect 的链接可能排除生成准确查询所需的列。作者通过实验发现，较新的 LLM 在推理能力上显著增强，能够直接处理完整数据库模式而无需预先进行 Schema Linking，甚至在某些情况下表现更好。这一发现挑战了长期以来的 Text-to-SQL 流水线设计范式，暗示随着模型推理能力的提升，Schema Linking 可能逐渐失去其关键作用，从而简化系统架构并减少因链接错误导致的性能损失。该研究对 Text-to-SQL 领域具有重要影响，可能推动更端到端、依赖模型内在推理的新方法。",
+  "tags": [
+    "Text-to-SQL",
+    "Schema Linking",
+    "LLM",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "最新一代 LLM 的推理能力足以直接处理完整数据库模式，无需依赖 Schema Linking 步骤。",
+      "Schema Linking 的不完美可能排除必要列，反而降低查询生成准确性。",
+      "该发现可能推动 Text-to-SQL 系统向更端到端、简化架构的方向发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

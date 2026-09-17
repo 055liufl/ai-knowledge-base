@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-047",
+  "title": "Market Signal Injection: Adversarial Context Manipulation of LLM Pricing Agents",
+  "source_url": "https://arxiv.org/abs/2609.18357",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为\"市场信号注入\"（Market Signal Injection, MSI）的新型对抗攻击方法，针对基于大语言模型（LLM）的定价代理。该攻击的核心在于：即使市场数据的数值本身保持不变，仅通过操纵数值格式、竞争对手排序或定性市场评论等呈现方式，就能诱导LLM定价代理做出不同的定价决策，而无需发出任何显式指令。研究在模拟的伯特兰双寡头和三寡头市场环境中评估了九种开源权重模型，并在双寡头市场中测试了三种专有模型。这项工作值得关注，因为它揭示了LLM代理在自主经济决策场景中的新型脆弱性——攻击面不再局限于提示词注入或数据篡改，而是扩展到信息呈现方式的微妙操纵。这对于正在探索LLM驱动的自动定价、交易和谈判系统的企业具有重要警示意义，表明在将LLM代理部署到真实市场环境前，必须考虑其对上下文呈现方式的鲁棒性，并建立相应的防御机制。",
+  "tags": [
+    "LLM",
+    "Adversarial Attack",
+    "AI Agent",
+    "Pricing",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:09:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM定价代理的决策不仅取决于市场数据的数值，还受数据呈现方式（格式、排序、定性评论）的显著影响，构成新型攻击面",
+      "市场信号注入攻击无需显式指令即可操纵代理行为，比传统提示注入更隐蔽，难以被常规防御机制检测",
+      "该攻击在开源和专有模型上均有效，表明这是LLM架构层面的普遍脆弱性，而非特定模型的缺陷",
+      "随着LLM代理被部署到自动定价、交易等经济决策场景，必须将上下文呈现鲁棒性纳入安全评估框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

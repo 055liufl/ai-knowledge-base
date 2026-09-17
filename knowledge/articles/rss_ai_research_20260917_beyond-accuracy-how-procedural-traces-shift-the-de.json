@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-134",
+  "title": "Beyond Accuracy: How Procedural Traces Shift the Decision Criterion of LLM Overseers",
+  "source_url": "https://arxiv.org/abs/2609.18204",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在 LLM-as-a-judge 监督流程中，程序性轨迹（procedural traces）如何影响监督模型的决策标准。研究使用信号检测理论，对五个 LLM 监督者在 19 项合规任务上的 4,551 条判断进行分析，仅改变轨迹详细程度和证据标注方式。核心发现是：详细的程序性轨迹并不会让监督者变得轻信，而是系统性地改变了其决策阈值——监督者从追求准确性转向更保守或更激进的判定策略。这一发现挑战了业界对 LLM 监督者易被详细推理过程误导的普遍担忧，揭示了轨迹信息实际影响的是决策标准而非判断能力。该研究对构建可靠的 AI 监督与审计系统具有重要启示，尤其在企业合规、自动化审查等高风险场景中，需要重新设计监督提示与评估指标，将决策阈值偏移纳入考量。",
+  "tags": [
+    "LLM-as-a-judge",
+    "AI Oversight",
+    "Signal Detection Theory",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "详细的程序性轨迹不会使 LLM 监督者变得轻信，而是系统性地改变其决策阈值",
+      "监督者的判断变化主要体现为决策标准的偏移，而非辨别能力的下降",
+      "信号检测理论为量化 LLM 监督行为提供了有效的分析框架",
+      "设计 LLM 监督流程时需将决策阈值偏移纳入评估，而非仅关注准确率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

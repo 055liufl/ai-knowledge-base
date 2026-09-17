@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-073",
+  "title": "Lost in Perception: Isolating Perceptual and Reasoning Failures in Multimodal Physics and Geometry Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.18991",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多模态大语言模型（MLLM）在科学推理基准上的评估方式提出质疑，指出当前基准将感知与推理混为一谈，无法定位模型失败的根本原因。作者设计了一个包含五个任务的诊断实验，覆盖物理与几何推理场景，通过控制输入形式（原始图像、文本描述、结构化表示等）将错误归因于感知失败、推理失败或两者兼有。实验发现，即使模型仅凭文本就能正确解答的问题，一旦需要从图表中提取信息，错误率也会显著上升，说明感知瓶颈是当前多模态科学推理的主要短板。该工作为多模态模型的细粒度评估提供了方法论工具，对理解模型能力边界、指导模型改进与基准设计具有重要价值，尤其适合关注多模态推理、科学AI及评测体系的研究者与开发者参考。",
+  "tags": [
+    "Multimodal LLM",
+    "Scientific Reasoning",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:10:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前多模态科学推理基准将感知与推理视为单一过程，掩盖了失败的真实来源。",
+      "即使模型能从文本正确解题，错误的图表解读仍会显著拉低其表现，证明感知是独立瓶颈。",
+      "通过五任务诊断实验可有效分离感知失败、推理失败及混合失败，为模型评估提供细粒度归因。",
+      "提升多模态科学推理能力需同时关注视觉感知模块的鲁棒性，而非仅优化语言推理。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

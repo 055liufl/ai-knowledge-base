@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-025",
+  "title": "Contiguity, Not Importance: Budgeted Repair of Stale KV Caches After Document Edits",
+  "source_url": "https://arxiv.org/abs/2609.17983",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究检索增强生成（RAG）和智能体系统中 KV 缓存复用后的陈旧性问题。当检索到的知识、工作记忆或用户状态被编辑后，缓存上下文会失效；在因果自注意力机制下，即使是局部编辑也会影响下游 KV 状态。完整重新预填充虽能恢复一致性但代价高昂，而仅刷新被编辑片段又会遗留下游依赖的陈旧状态。作者提出一种预算受限的原地修复方法，核心发现是修复效果取决于缓存片段的连续性（contiguity）而非重要性（importance），即优先修复连续区域比优先修复高重要性区域更有效。该工作为降低长上下文推理成本提供了新的缓存维护思路，对 RAG 与 Agent 系统的工程优化具有直接参考价值。",
+  "tags": [
+    "KV Cache",
+    "RAG",
+    "Inference Optimization",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:08:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部编辑在因果自注意力下会传播影响，仅刷新编辑片段无法保证下游 KV 状态一致",
+      "在预算受限的缓存修复中，选择连续区域进行修复比按重要性选择更有效",
+      "该问题直接源于 RAG 与 Agent 系统中动态知识/状态编辑带来的缓存陈旧性",
+      "为降低重新预填充成本提供了可操作的缓存维护策略"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

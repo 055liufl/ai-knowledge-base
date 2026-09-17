@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-064",
+  "title": "Beyond Truncation: Rethinking LLM Decoding as Ensemble Pruning",
+  "source_url": "https://arxiv.org/abs/2609.18723",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Mahalanobis-Ensemble Decoding (ME-Decoding)，一种将大语言模型（LLM）解码过程重新定义为集成剪枝（ensemble pruning）的新型解码框架。现有解码策略大多依赖标量概率进行候选 token 选择，忽略了 token 之间的几何语义关系，导致候选冗余；而现有的几何感知方法又往往需要复杂优化或直接对原始 token 概率重新加权，计算开销大且不够优雅。ME-Decoding 通过引入马哈拉诺比斯距离（Mahalanobis distance）来度量候选 token 在语义空间中的分布与相关性，将候选选择视为从候选集合中剪枝冗余项的过程，从而在保持生成质量的同时提升解码效率与多样性。该工作值得关注，因为它跳出了传统 top-k、top-p、温度采样等基于标量概率的框架，从集成学习与几何视角重新审视 LLM 解码，为解码策略设计提供了新的理论工具，并可能对推理效率、生成多样性及可控生成等方向产生实际影响。",
+  "tags": [
+    "LLM",
+    "Decoding",
+    "Ensemble Pruning",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:09:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 解码策略主要依赖标量概率，忽略了候选 token 之间的几何语义关系，容易造成候选冗余。",
+      "ME-Decoding 将解码中的候选 token 选择重新定义为集成剪枝问题，利用马哈拉诺比斯距离刻画语义空间中的分布与相关性。",
+      "该方法避免了现有几何感知解码所需的复杂优化或直接概率重加权，为解码策略提供了更简洁的几何视角。",
+      "该框架有望在生成质量、推理效率与输出多样性之间取得更好的平衡，并为后续解码研究开辟新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

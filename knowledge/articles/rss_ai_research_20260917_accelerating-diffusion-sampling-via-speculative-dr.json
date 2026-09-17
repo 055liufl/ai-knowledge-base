@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260917-093",
+  "title": "Accelerating Diffusion Sampling via Speculative Draft Trees",
+  "source_url": "https://arxiv.org/abs/2609.17691",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过推测性草稿树（Speculative Draft Trees）加速扩散模型采样的方法。扩散模型生成质量高但采样速度慢，现有推测采样方法（如基于反射最大耦合的采样器）在拓扑上受限于链式图结构，即草稿只能形成单一线性序列，这限制了并行候选状态的探索效率。该研究将草稿结构从链式扩展为树形，允许在每一步生成多个分支候选状态，并在保持目标分布精确不变的前提下进行校正，从而减少昂贵的目标模型评估次数。这一改进有望显著提升扩散模型的推理速度，对图像生成、视频生成等依赖扩散模型的应用具有重要实用价值，同时为推测采样与扩散模型的结合提供了新的拓扑设计思路。",
+  "tags": [
+    "Diffusion",
+    "Speculative Sampling",
+    "Inference Acceleration",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:11:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有扩散推测采样受限于链式草稿结构，只能线性前瞻，限制了并行候选的多样性。",
+      "将草稿结构从链图扩展为树图，可在保持目标分布精确性的同时探索更多候选路径。",
+      "树形草稿有望减少昂贵的目标模型评估次数，从而加速扩散模型采样。",
+      "该方法为推测采样在扩散模型中的拓扑设计提供了新方向，但实际加速比和实现复杂度仍需验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

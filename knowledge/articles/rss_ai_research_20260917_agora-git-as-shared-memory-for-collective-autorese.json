@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260917-127",
+  "title": "Agora: Git as Shared Memory for Collective AutoResearch",
+  "source_url": "https://arxiv.org/abs/2609.18094",
+  "source_platform": "rss_ai_research",
+  "summary": "Agora 是一篇来自 arXiv 的论文（编号 2609.18094），提出将 Git 用作多智能体自动研究（AutoResearch）的共享记忆系统。当前自主研究循环中，单个编码智能体可以无人值守地改进训练配置，但当多个智能体并行运行时，每个会话都从零开始，导致大量重复搜索而非更多发现。Agora 的核心思路是将研究过程记录为一个仅追加的有向无环图（DAG），并存储在 Git 中，使每一条研究声明都对应一个提交（commit），任何人都可以检出并重新运行验证。这一设计将版本控制从单纯的代码管理工具提升为集体科研的协作基础设施，解决了多智能体研究中知识无法累积、结果难以复现的痛点。其价值在于：一方面通过共享记忆避免重复劳动，让多个智能体的探索形成合力；另一方面借助 Git 的不可篡改性和可追溯性，为自动化研究提供了可审计、可复现的信任基础。对于关注 AI 智能体协作、自动化科研和可复现性研究的开发者和研究者而言，这是一个值得关注的方向。",
+  "tags": [
+    "Agent",
+    "AutoResearch",
+    "Git",
+    "Multi-Agent",
+    "Reproducibility"
+  ],
+  "author": null,
+  "published_at": "2026-09-17T13:05:20Z",
+  "collected_at": "2026-09-17T13:12:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体自动研究的主要瓶颈不是算力而是知识无法累积，每个会话从零开始导致重复搜索。",
+      "将研究记录为 Git 中的仅追加 DAG，使每条声明成为可检出、可重跑的提交，天然支持复现与审计。",
+      "Git 从代码版本控制工具扩展为集体科研的共享记忆层，为多智能体协作提供了去中心化的协调机制。",
+      "该方案有望将多个智能体的并行探索从重复劳动转化为可叠加的发现，提升自动研究的整体效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
