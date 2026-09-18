@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-059",
+  "title": "Solving Minimum Span Antibandwidth and Cyclic Antibandwidth Labeling Problems",
+  "source_url": "https://arxiv.org/abs/2609.20091",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究的是图论中的最小跨度反带宽（Minimum Span Antibandwidth）与循环反带宽（Cyclic Antibandwidth）标记问题。反带宽问题是一类 NP 难的图标记问题，其经典形式要求为图的顶点分配标签，使得相邻顶点标签之间的（循环）距离的最小值最大化。已有大量研究提出了多种数学建模与计算方法，但本文关注的是一个较少被探讨的视角——最小跨度视角：即预先固定一个最小（循环）距离，目标转为最小化标签跨度（label span）。这一视角在频谱分配、信道分配、任务调度等实际场景中具有直接应用价值，因为在这些场景中往往先有干扰或间隔的硬性约束，再追求资源占用范围的最小化。论文很可能给出了该问题的数学建模、复杂度分析以及求解算法（如整数规划、启发式或精确算法），并可能讨论了与经典反带宽问题之间的对偶或等价关系。该工作值得关注的原因在于：它补充了反带宽问题研究的理论空白，将研究重心从'最大化最小间隔'转向'最小化跨度'，为 NP 难组合优化问题提供了新的建模思路和求解途径，对图标记理论、组合优化算法设计以及无线通信资源分配等交叉领域的研究者具有参考意义。",
+  "tags": [
+    "Graph Labeling",
+    "Combinatorial Optimization",
+    "NP-hard",
+    "Algorithms"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:49:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反带宽与循环反带宽问题是 NP 难的图标记问题，经典形式最大化相邻顶点标签的最小距离，而本文转向最小跨度视角：固定最小距离约束，最小化标签跨度。",
+      "最小跨度视角更贴近频谱分配、信道分配等实际应用场景，其中间隔约束通常是硬性给定的，优化目标是最小化资源占用范围。",
+      "该研究可能揭示最小跨度问题与经典反带宽问题之间的对偶或等价关系，为组合优化建模提供新思路。",
+      "作为纯理论研究，其直接工程影响有限，但对图标记理论和 NP 难问题求解算法具有学术价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-105",
+  "title": "Riemannian--Lorentz Fusion of Vision Transformers and State-Space Models",
+  "source_url": "https://arxiv.org/abs/2609.19384",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于黎曼几何与洛伦兹融合的模型合并方法，旨在解决视觉Transformer（ViT）与状态空间模型（如Mamba）因架构和参数形状不同而难以合并的问题。传统权重空间合并方法通常假设参数对齐且形状兼容，但ViT和状态空间模型在参数结构上差异显著，直接合并会导致性能下降。本文通过将不同架构的预训练检查点映射到黎曼流形，并利用洛伦兹距离进行对齐与融合，实现了无需梯度下降的模型合并，大幅降低了训练成本。该方法在多个视觉任务上验证了有效性，为异构模型融合提供了新思路。其意义在于：1）突破了模型合并对架构同构性的依赖；2）为数据枯竭和训练成本高昂的背景下提供了一种高效复用预训练模型的手段；3）将微分几何工具引入深度学习模型融合领域，具有理论创新性。该工作可能推动模型复用、多模态融合及边缘部署等方向的发展。",
+  "tags": [
+    "Model Merging",
+    "Vision Transformer",
+    "State-Space Models",
+    "Riemannian Geometry"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出黎曼-洛伦兹融合框架，首次实现异构视觉架构（ViT与状态空间模型）的权重空间合并，无需梯度下降。",
+      "利用黎曼流形和洛伦兹距离解决参数形状不兼容问题，为模型合并提供了几何理论支撑。",
+      "在数据枯竭和训练成本激增的背景下，该方法可大幅降低计算开销，促进预训练模型的高效复用。",
+      "实验表明该方法在多个视觉任务上有效，为异构模型融合开辟了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

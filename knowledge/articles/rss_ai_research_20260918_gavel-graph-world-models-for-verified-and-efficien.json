@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-099",
+  "title": "GAVEL: Graph World Models for Verified and Efficient Long-Horizon LLM Task Planning",
+  "source_url": "https://arxiv.org/abs/2609.19315",
+  "source_platform": "rss_ai_research",
+  "summary": "GAVEL 是一个面向长时程机器人任务规划的框架，旨在解决大语言模型（LLM）生成计划时常见的三大问题：不遵守具身约束、难以从规划错误中恢复、以及在部分可观测环境下推理能力不足。该工作提出以显式的图世界模型（Graph World Model）为核心，将任务相关的对象关系、动作前置条件与效果编码为图结构，从而对 LLM 生成的计划进行形式化验证与自动修复。这一思路将 LLM 的灵活语言接口与符号化世界模型的严谨性结合，弥补了纯 LLM 规划在长时程任务中容易累积错误、缺乏可验证性的缺陷。GAVEL 的价值在于它把「验证」和「修复」作为规划流程的一等公民，而非事后补救，这为构建可靠、可解释的机器人规划系统提供了新范式。对于关注 LLM 与机器人结合、具身智能、以及神经符号方法的研究者和开发者而言，该工作提供了一个可借鉴的架构：用图结构承载环境知识，用 LLM 负责高层语义分解，用验证器保证执行可行性。其潜在影响包括提升长时程任务的成功率、降低人工干预成本，并推动 LLM 规划从「生成即用」走向「生成-验证-修复」的闭环。",
+  "tags": [
+    "LLM",
+    "Task Planning",
+    "World Model",
+    "Robotics",
+    "Neuro-Symbolic"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式图世界模型可对 LLM 生成的长时程计划进行形式化验证与自动修复，弥补纯语言规划的不可靠性。",
+      "将对象关系、动作前置条件与效果编码为图结构，使规划过程在部分可观测环境下仍具备可推理性和可解释性。",
+      "GAVEL 采用「生成-验证-修复」闭环，而非一次性生成，显著提升具身约束下的规划鲁棒性。",
+      "该工作代表了神经符号方法在机器人长时程规划中的一次有效融合，为 LLM 与符号推理结合提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

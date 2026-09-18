@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-027",
+  "title": "When2Think: Learning Difficulty-Aware Length Control for Efficient Hybrid Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2609.19671",
+  "source_platform": "rss_ai_research",
+  "summary": "When2Think 提出了一种面向混合推理模型（Hybrid Reasoning Models）的难度感知长度控制方法，旨在解决大型推理模型（LRMs）在推理过程中普遍存在的效率问题：对简单问题过度思考（overthinking），对困难问题思考不足（underthinking）。现有方法通常采用统一长度惩罚或刚性路由策略，虽然能减少简单实例的计算量，却以牺牲困难实例的准确率为代价，形成一种“效率税”。该工作将高效推理形式化为实例自适应计算分配问题，通过学习何时思考、思考多久，实现计算资源的动态分配。其核心价值在于：在不显著损失准确率的前提下，大幅降低推理开销，为推理模型的实际部署提供了更优的精度-效率权衡方案。对于关注推理模型效率优化、自适应计算、测试时计算扩展等方向的研究者和工程师具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Efficient Inference",
+    "Adaptive Computation"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型推理模型存在系统性低效：简单问题过度思考、困难问题思考不足，根源在于缺乏实例自适应的计算分配机制。",
+      "统一长度惩罚或刚性路由会带来效率税，即在简单实例上节省的计算量往往以困难实例的准确率下降为代价。",
+      "将高效推理建模为实例自适应计算分配问题，通过学习难度感知的长度控制策略，可动态决定推理深度。",
+      "该方法有望在保持准确率的同时显著降低推理成本，为混合推理模型的实际部署提供更优的精度-效率权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

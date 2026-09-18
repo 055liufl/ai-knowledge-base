@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-080",
+  "title": "Limits of Confidence in Diffusion",
+  "source_url": "https://arxiv.org/abs/2609.20581",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.20581）从理论上分析了离散扩散模型（包括 remasking 与 uniform-state 采样器）的采样机制，指出这类模型在每一步会同时写入多个 token 位置，每个位置从各自的逐位置分布中采样，并依据这些分布决定写入哪些位置。作者证明，只有当一步所写入的位置集合满足特定条件时，该步的生成结果才能匹配训练分布；而在像素、音素、词等具有内在依赖关系的通用领域中，token 之间存在强相关性，这一条件通常难以满足。因此，模型对自身逐位置预测的\"置信度\"并不能可靠地指导多位置并行写入，基于置信度的位置选择策略存在根本性局限。该工作为理解离散扩散生成的分布偏移提供了理论视角，对扩散语言模型、图像与语音生成中的采样调度与并行解码策略设计具有重要参考价值，提示研究者重新审视以置信度为核心的采样启发式方法。",
+  "tags": [
+    "Diffusion",
+    "Discrete Diffusion",
+    "Sampling",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离散扩散的每一步只有在写入位置集合满足特定条件时才能匹配训练分布，而该条件在存在 token 依赖的通用领域中通常不成立。",
+      "逐位置置信度无法可靠地指导多位置并行写入，基于置信度的位置选择启发式方法存在理论上的根本局限。",
+      "该结论对扩散语言模型、图像与语音生成中的采样调度和并行解码策略设计具有直接指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-012",
+  "title": "Safety Beyond the Interface: Detecting Harm via Latent States in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.19472",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种超越传统外部接口防护的大模型安全检测新思路。现有安全基础设施（如外部护栏模型）通常依赖对模型输入输出的监控，这带来了额外的延迟与计算开销，且在资源受限或时间敏感的场景中难以部署。更重要的是，外部护栏无法感知模型内部状态，存在根本性的保障盲区。作者提出核心问题：模型自身是否已经\"知道\"内容有害？通过从大语言模型（LLM）的隐藏层中提取激活值（latent states），研究探索了利用模型内部表征直接检测有害内容的方法。这一方向若成立，将意味着安全检测可以内嵌于模型推理过程，无需额外外部模型，从而大幅降低延迟与算力成本，同时提升对模型真实意图的可见性。该工作为LLM安全领域提供了从\"外部监控\"转向\"内部感知\"的新范式，对自主系统、实时应用及资源受限部署具有重要价值，也为可解释性与安全性的结合开辟了新路径。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Interpretability",
+    "Latent States"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:47:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "外部护栏模型存在根本性盲区：无法观测模型内部状态，导致安全保障不完整。",
+      "LLM的隐藏层激活可能已编码有害性信号，可直接用于检测而无需额外模型。",
+      "利用内部潜在状态进行安全检测有望消除外部护栏带来的延迟与计算开销。",
+      "该方向对资源受限、时间敏感的自主系统部署具有关键意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

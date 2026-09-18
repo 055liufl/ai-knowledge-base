@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-032",
+  "title": "TorchCraft: Unified binder design by inverting an all-atom structure predictor",
+  "source_url": "https://arxiv.org/abs/2609.19770",
+  "source_platform": "rss_ai_research",
+  "summary": "TorchCraft 是一个统一的结合剂（binder）设计框架，其核心思路是反转一个冻结的全原子结构预测器，通过优化序列 logits 来生成结合剂。该工作由 TorchFold 实现，将置信度、接触、几何和序列先验等多个目标整合到共享的优化流程中，支持 minibinders 和框架设计等任务。传统上，全原子结构预测器（如 AlphaFold 类模型）擅长建模多样化的分子相互作用，但其学习到的结构先验难以直接用于结合剂设计。TorchCraft 的创新在于不重新训练预测器，而是将其作为可微的评分函数，通过梯度优化序列来满足多种设计约束。这一方法统一了此前分散的设计目标，简化了流程，并有望提升结合剂设计的成功率与通用性。对于蛋白质工程、药物设计和计算生物学领域，该工作提供了一种利用现有强大结构预测模型进行逆向设计的新范式，值得关注。",
+  "tags": [
+    "Protein Design",
+    "Structure Prediction",
+    "Binder Design",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过反转冻结的全原子结构预测器，将序列优化与结构先验结合，实现统一的结合剂设计。",
+      "将置信度、接触、几何和序列先验等多目标整合到单一优化框架中，避免多阶段流程。",
+      "该方法无需重新训练结构预测器，降低了计算成本并提高了通用性。",
+      "为利用现有结构预测模型进行逆向蛋白质设计提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

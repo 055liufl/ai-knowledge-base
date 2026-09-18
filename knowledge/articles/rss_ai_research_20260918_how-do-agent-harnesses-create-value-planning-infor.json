@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-075",
+  "title": "How Do Agent Harnesses Create Value? Planning Information and Release Control in Stateful LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.20474",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 LLM 智能体框架（agent harness）如何通过规划信息与释放控制创造价值。作者在 τ²-bench 上设计了两组零售实验和一组航空试点实验，核心对比是将预写的任务专属计划（Fixed）与打乱顺序、词数匹配的策略文本（Sham）进行对照，从而分离出规划指导内容本身的贡献。在 265 个匹配单元中，Fixed 条件提升了 oracle 验证的成功率，同时影响错误接受率与成本。研究进一步探讨了状态化 LLM 智能体中规划信息与释放控制机制的作用，揭示了智能体框架中规划指导、执行组织与完成检查三个组件对任务成功、错误接受和成本的具体影响。该工作为理解智能体框架的价值来源提供了受控实验证据，对智能体系统设计与评估具有参考意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Planning",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预写任务专属计划相比词数匹配的打乱策略文本能提升 oracle 验证成功率，说明规划指导内容本身具有独立价值",
+      "智能体框架的价值可分解为规划指导、执行组织和完成检查三个组件，需分别评估其贡献",
+      "规划信息不仅影响成功率，还会改变错误接受率和成本，需在多目标下权衡",
+      "通过 Fixed vs Sham 的受控对比设计，能够有效隔离规划内容与文本长度等混淆因素"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

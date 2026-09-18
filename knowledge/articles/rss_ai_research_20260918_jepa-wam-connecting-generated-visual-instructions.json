@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-067",
+  "title": "JEPA-WAM: Connecting Generated Visual Instructions to World Action Models through JEPA Latent Representations",
+  "source_url": "https://arxiv.org/abs/2609.20277",
+  "source_platform": "rss_ai_research",
+  "summary": "JEPA-WAM 是一篇针对机器人操作领域世界动作模型（World Action Models, WAMs）的改进研究。现有 WAMs 通过为预训练视频生成模型附加动作专家来实现较强的操作能力，但在仅依赖文本指令时，指令跟随能力仍然有限。作者认为这一局限部分源于机器人学习数据的结构性失衡：丰富的视觉-动作轨迹往往只配有稀疏且重复的语言标注，导致文本条件信号不足。为此，论文提出通过 JEPA（Joint Embedding Predictive Architecture）潜在表示，将生成的视觉指令与世界动作模型连接起来，用视觉指令弥补文本指令的信息缺失。该方法的核心思路是利用 JEPA 的潜在空间对齐能力，把生成式视觉指令转化为可与动作模型对接的表示，从而增强 WAMs 对指令的理解与执行。该工作值得关注，因为它触及了机器人学习中语言监督稀缺这一根本问题，并尝试用视觉生成与潜在表示学习相结合的方式加以缓解，可能为具身智能中的多模态指令跟随提供新路径。",
+  "tags": [
+    "World Action Model",
+    "JEPA",
+    "Robotic Manipulation",
+    "Vision-Language-Action",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:49:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 WAMs 在纯文本指令下跟随能力有限，根源之一是机器人数据中视觉-动作轨迹丰富但语言标注稀疏重复。",
+      "论文提出用 JEPA 潜在表示连接生成的视觉指令与动作模型，以视觉条件弥补文本监督的不足。",
+      "该方法试图在潜在空间中对齐视觉指令与动作表示，为具身智能中的多模态指令跟随提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-024",
+  "title": "Reach or Solve? Attributing Agentic RL Gains with Checkpoint Handoffs",
+  "source_url": "https://arxiv.org/abs/2609.19636",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.19636）针对当前语言模型智能体强化学习（Agentic RL）评估中的一个根本性方法论问题提出质疑。在闭环环境中，智能体每一步的观测都源于其自身先前的动作，因此后期遇到的状态部分是由自身行为塑造的。这意味着，当研究者用同一批任务分别评估 SFT 检查点和 RL 检查点时，两者实际上是从不同的状态分布出发的——RL 检查点之所以表现更好，可能并非因为它决策能力更强，而只是因为它更擅长把环境引导到自己熟悉的状态（reach），而非真正解决了任务（solve）。作者提出用 checkpoint handoffs（检查点交接）的方法来解耦这两种效应，从而更准确地归因 Agentic RL 带来的收益。该工作值得关注，因为它触及了当前智能体 RL 研究中一个被普遍忽视的评估偏差：如果收益被错误归因，整个领域对 RL 有效性的判断、算法改进方向乃至算力投入都可能建立在错误前提之上。对于从事智能体训练、RLHF/RLVR 以及基准评测的研究者和工程师而言，这是一篇具有方法论警示意义的论文。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "闭环智能体环境中，后期状态由智能体自身行为塑造，导致 SFT 与 RL 检查点在不同状态分布上被评估，收益归因存在系统性偏差。",
+      "RL 带来的性能提升可能来自 'reach'（将环境引导至有利状态）而非 'solve'（真正提升决策能力），二者需要被解耦。",
+      "checkpoint handoffs 提供了一种将状态分布效应与策略能力效应分离的实验方法，为 Agentic RL 的严谨评估提供了新范式。",
+      "该问题对智能体 RL 的算法设计、基准构建和算力投入决策均有直接影响，提示领域需要重新审视现有结论的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

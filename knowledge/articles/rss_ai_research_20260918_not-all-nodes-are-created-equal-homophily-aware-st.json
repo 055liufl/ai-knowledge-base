@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-090",
+  "title": "Not All Nodes Are Created Equal: Homophily-Aware Stratification for Stable GNN Evaluation",
+  "source_url": "https://arxiv.org/abs/2609.19210",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对图神经网络（GNN）在直推式节点分类评估中的不稳定性问题展开研究。现有方法通常采用随机划分训练/验证/测试集，但同一数据集在不同随机划分下准确率波动显著，导致不同架构之间的比较不可靠。传统非图场景下的解决方案是分层k折交叉验证，可确保每个测试折反映整体数据分布。然而，图数据中节点并非独立同分布，节点间存在同质性（homophily）关系，简单分层无法保证图结构上的分布一致性。本文提出同质性感知分层（Homophily-Aware Stratification）方法，通过考虑节点标签与图结构中的同质性模式，设计更稳定的评估协议，从而减少随机划分带来的方差，使GNN架构比较更加可靠。该工作对图机器学习评估方法学具有重要贡献，尤其适用于需要严谨基准测试的研究场景。",
+  "tags": [
+    "GNN",
+    "Evaluation",
+    "Graph Learning",
+    "Cross-Validation"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随机划分导致GNN评估结果方差大，架构比较不可靠",
+      "传统分层k折交叉验证不适用于图数据，因节点间存在同质性依赖",
+      "提出同质性感知分层方法，可降低评估方差并提升可比性",
+      "该工作为图机器学习评估协议提供了更严谨的方法学基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

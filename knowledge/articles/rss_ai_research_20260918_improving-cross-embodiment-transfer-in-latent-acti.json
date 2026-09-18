@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-133",
+  "title": "Improving Cross-embodiment Transfer in Latent Action Models with Action-Similarity Supervision",
+  "source_url": "https://arxiv.org/abs/2609.19846",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对潜在动作模型（Latent Action Models, LAMs）在跨具身迁移中的关键问题展开研究。LAMs 旨在从无动作标注的视频中学习可跨机器人本体共享的潜在动作，从而降低对昂贵机器人演示数据的依赖，并提升通用机器人策略的泛化能力。然而，现有 LAMs 存在两大缺陷：一是对背景视觉噪声高度敏感，导致潜在动作表示不稳定；二是相同运动由不同机器人执行时可能被编码为不同的潜在动作，破坏了跨具身一致性。为此，作者提出动作相似性监督（Action-Similarity Supervision）方法，通过显式约束不同具身执行相似运动时潜在动作表示的一致性，来提升跨具身迁移性能。该工作对于机器人学习、视频预训练和通用策略领域具有重要价值，因为它直接回应了 LAMs 从理论可行走向实际可用的核心瓶颈，有望推动低成本、跨平台机器人技能迁移的发展。",
+  "tags": [
+    "机器人学习",
+    "潜在动作模型",
+    "跨具身迁移",
+    "视频预训练"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LAMs 能从无动作视频中学习可共享的潜在动作，但背景噪声和具身差异会导致潜在表示不一致。",
+      "相同运动在不同机器人上可能被编码为不同潜在动作，这是跨具身迁移的主要障碍。",
+      "动作相似性监督通过约束相似运动的潜在表示一致性来提升跨具身迁移性能。",
+      "该研究为降低机器人演示数据成本、实现通用机器人策略提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

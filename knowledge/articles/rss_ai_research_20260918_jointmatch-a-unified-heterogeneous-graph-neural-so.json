@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-064",
+  "title": "JointMatch: A Unified Heterogeneous Graph Neural Solver for Large-Scale Ride-Sharing Matching",
+  "source_url": "https://arxiv.org/abs/2609.20200",
+  "source_platform": "rss_ai_research",
+  "summary": "JointMatch 提出了一种统一的异构图神经网络求解器，用于大规模网约车/拼车场景中的匹配问题。传统学术方法将拼车匹配分解为两个顺序子问题——先进行请求配对（将多个出行请求组合成共享行程），再进行车辆分配（为这些行程指派空闲车辆），并对每个子问题分别使用独立的求解器。这种分解方式在计算上较为便利，但存在两个明显缺陷：一是由于第一阶段过早地确定了拼车组合，导致整体收益损失；二是随着问题规模扩大，分阶段求解的可扩展性较差。JointMatch 的核心创新在于打破这种顺序分解，将请求配对与车辆分配统一建模为一个异构图上的联合优化问题，并利用图神经网络进行端到端求解。该方法有望在保持大规模可扩展性的同时提升平台收益，对网约车调度、共享出行、实时匹配系统等领域具有重要的研究和应用价值。",
+  "tags": [
+    "GNN",
+    "Ride-Sharing",
+    "Matching",
+    "Graph Neural Network",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:49:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统两阶段分解（先请求配对、后车辆分配）会因第一阶段过早锁定拼车组合而损失潜在收益，且难以扩展到大规划场景。",
+      "JointMatch 将请求配对与车辆分配统一建模为异构图上的联合优化问题，避免了顺序分解带来的次优性。",
+      "利用图神经网络求解器实现端到端的大规模拼车匹配，兼顾了求解质量与计算可扩展性。",
+      "该方法对网约车平台的实时调度与收益优化具有直接的应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

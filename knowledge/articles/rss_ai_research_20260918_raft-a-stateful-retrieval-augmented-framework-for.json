@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-085",
+  "title": "RAFT: A Stateful Retrieval-Augmented Framework for Troubleshooting Agents",
+  "source_url": "https://arxiv.org/abs/2609.20754",
+  "source_platform": "rss_ai_research",
+  "summary": "RAFT（Retrieval-Augmented Framework for Troubleshooting Agents）是一个面向企业客户支持场景的有状态检索增强生成框架，论文发表于 arXiv（编号 2609.20754）。现有 RAG 系统通常将支持案例视为静态文档，忽略了故障排查过程本身具有多阶段、有状态的特性，导致检索到的指导难以直接复用。RAFT 的核心创新在于将每个已关闭的历史案例抽象为一条有向链（directed chain），从而保留案例从问题出现、诊断、尝试到最终解决的阶段性状态信息。这一设计使故障排查智能体能够按状态匹配相似历史案例，并沿链条逐步复用可操作的解决路径，而非仅做一次性文档检索。该工作值得关注的原因在于：企业客服与运维场景中，故障排查高度依赖经验复用，而传统 RAG 的静态检索范式难以刻画过程性知识；RAFT 提出的有状态检索思路为 Agent 记忆、过程性知识检索和案例推理提供了新的建模范式，对构建更可靠的运维/客服智能体具有直接参考价值。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Troubleshooting",
+    "Stateful Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RAG 将支持案例视为静态文档，忽略了故障排查的多阶段、有状态本质，导致检索到的指导难以直接落地",
+      "RAFT 将每个历史案例抽象为有向链，显式建模问题诊断与解决的过程性状态，实现按状态匹配与路径复用",
+      "该框架为 Agent 记忆与过程性知识检索提供了新范式，对企业客服和运维智能体具有直接应用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

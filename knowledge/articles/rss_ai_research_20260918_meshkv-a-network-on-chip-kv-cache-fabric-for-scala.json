@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-089",
+  "title": "MeshKV: A Network-on-Chip KV Cache Fabric for Scalable Transformer Decoding Accelerators",
+  "source_url": "https://arxiv.org/abs/2609.19207",
+  "source_platform": "rss_ai_research",
+  "summary": "MeshKV 是一篇面向 Transformer 自回归解码加速器的硬件架构研究，针对长上下文服务中 KV 缓存访问不规则、集中式内存路径成为瓶颈的问题，提出了一种基于片上网络（NoC）的 KV 缓存织构（fabric）。其核心思路是将 KV 缓存块以数据包化流（packetized flows）的形式在轻量级 NoC 上传输，而非依赖集中式 DRAM 路径。系统采用两项协同设计：TaKV 仿射条带化（affine striping）用于分散数据归属、降低热点负载；Mare 多播机制用于高效分发共享的 KV 数据。该工作属于面向推理加速的体系结构创新，将网络通信与缓存管理联合优化，有望缓解长上下文场景下的内存带宽与延迟瓶颈。对于关注 LLM 推理基础设施、专用加速器与片上互连的研究者和芯片架构工程师而言，这一方向具有较高的参考价值，因为它从硬件层面回应了长上下文服务日益增长的 KV 缓存压力，而非仅停留在算法压缩层面。",
+  "tags": [
+    "KV Cache",
+    "NoC",
+    "Transformer",
+    "Accelerator",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文 Transformer 解码的瓶颈正从计算转向 KV 缓存的不规则移动与集中式内存路径拥塞。",
+      "将 KV 缓存块作为数据包在轻量级 NoC 上流动，可替代集中式 DRAM 路径，提升可扩展性。",
+      "TaKV 仿射条带化通过分散数据归属降低热点负载，Mare 多播则优化共享 KV 数据的分发效率。",
+      "该工作体现了算法压缩之外的硬件协同设计思路，对推理加速器架构有直接启发。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

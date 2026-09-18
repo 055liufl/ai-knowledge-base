@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-092",
+  "title": "Perceptual Refinement of an End-to-End Video Streaming Pipeline via Generative AI Layers",
+  "source_url": "https://arxiv.org/abs/2609.19215",
+  "source_platform": "rss_ai_research",
+  "summary": "PRESLEY 是一项针对端到端视频流管线的感知精炼技术，它通过引入生成式 AI 层来优化传统编解码器的不足。传统编解码器对视频帧的每个区域一视同仁，而 PRESLEY 则利用人类视觉注意力机制，对观众关注度较低的区域进行自适应原地退化，并通过位打包的侧信道传递每个块的退化强度，最后在客户端利用生成式骨干网络进行条件重建。该方法是对先前会议工作 ELVIS 的扩展，将破坏性的块移除替换为更精细的退化策略，从而在保证感知质量的前提下降低传输带宽。这项研究值得关注，因为它将生成式 AI 与视频压缩相结合，有望在流媒体、视频会议等场景中显著节省带宽，同时保持主观观看体验。其创新点在于感知驱动的自适应退化与生成式重建的协同设计，为未来视频编码标准提供了新思路。",
+  "tags": [
+    "Video Streaming",
+    "Generative AI",
+    "Perceptual Coding",
+    "Video Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统编解码器均匀处理所有区域，而PRESLEY利用视觉注意力对不关注区域进行自适应退化，节省带宽。",
+      "通过位打包侧信道传递每块退化强度，并在客户端用生成式模型条件重建，实现感知精炼。",
+      "该方法扩展了ELVIS，用原地退化替代块移除，提升了重建质量和灵活性。",
+      "生成式AI层与视频流管线的结合为感知编码提供了新方向，有望影响未来视频压缩标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

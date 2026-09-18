@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-034",
+  "title": "Steering Equilibrium Selection in Regularized Self-Play via the Reference Policy",
+  "source_url": "https://arxiv.org/abs/2609.19820",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究正则化自博弈（regularized self-play）中的均衡选择问题，这是DeepNash在Stratego等复杂博弈中取得突破的核心技术。正则化自博弈通过让策略不断对缓慢移动的、带熵正则的参考策略ρ做最优响应，最终收敛到纳什均衡。然而当博弈存在一个价值等价均衡的多面体时，正则项会隐式地打破平局：在均匀参考策略下，算法会选择纳什集合中熵最大的成员，即ρ在纳什集上的I-投影。论文的核心问题是：能否主动利用参考策略来控制最终收敛到哪一个均衡？作者提出通过设计参考策略来引导均衡选择，从而在保持收敛性的同时获得期望的均衡性质。这项工作为多智能体强化学习中的均衡选择提供了新的理论视角和可操作工具，对博弈论、多智能体系统以及大规模策略博弈求解具有重要价值。",
+  "tags": [
+    "Self-Play",
+    "Game Theory",
+    "Multi-Agent RL",
+    "Nash Equilibrium"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "正则化自博弈中的参考策略会隐式决定最终收敛到哪个纳什均衡，均匀参考对应最大熵均衡。",
+      "通过主动设计参考策略，可以引导算法选择具有特定性质的均衡，实现可控的均衡选择。",
+      "该工作为DeepNash等大规模博弈求解方法提供了理论解释和改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

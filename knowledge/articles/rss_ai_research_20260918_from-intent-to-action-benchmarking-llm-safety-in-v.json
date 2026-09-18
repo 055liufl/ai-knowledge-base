@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-023",
+  "title": "From Intent to Action: Benchmarking LLM Safety in Vehicle Voice Command Authorization",
+  "source_url": "https://arxiv.org/abs/2609.19630",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）集成到车载语音助手后产生的安全关键授权问题展开研究。当用户通过自然语言发出请求时，系统必须在执行前做出决策：执行、拒绝、澄清、要求确认、转手动控制、触发紧急响应或不调用工具。作者指出，此前评估并未将这一“行动前授权”环节单独隔离出来考察，因此提出了一个专门的基准测试，用于衡量 LLM 在车辆语音命令授权场景下的安全性。该工作值得关注的原因在于：随着 LLM 进入汽车等物理安全关键领域，模型输出不再只是文本，而可能直接触发车辆动作，错误授权可能导致严重人身与财产风险。该基准填补了从意图理解到实际执行之间安全评估的空白，为车载语音助手的安全设计、模型选型与合规验证提供了可量化的评测框架，对智能座舱、自动驾驶人机交互以及 LLM 安全对齐研究均有参考价值。",
+  "tags": [
+    "LLM Safety",
+    "Benchmark",
+    "Voice Assistant",
+    "Authorization",
+    "Automotive"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 车载语音助手的核心安全挑战在于“行动前授权”：模型必须在执行、拒绝、澄清、确认、转手动、紧急响应与不调用工具之间做出正确决策。",
+      "现有评估未将授权决策从整体对话能力中隔离出来，导致安全风险被低估，该论文提出了针对性的基准测试。",
+      "自然语言到车辆功能的映射是安全关键路径，错误授权可能直接引发物理世界危害，因此需要专门的评测与防护机制。",
+      "该基准为车载 LLM 的安全对齐、模型选型和合规验证提供了可量化的评估维度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

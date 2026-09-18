@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260918-015",
+  "title": "Better AI code comment detector",
+  "source_url": "https://entropicthoughts.com/better-ai-comment-classifier",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了一种改进的AI代码注释检测器，作者通过训练逻辑回归模型来区分AI生成的代码注释与人类编写的注释。文章指出，随着AI编程助手（如Copilot、ChatGPT）的普及，代码库中AI生成的注释越来越多，这些注释往往具有特定的模式（如过于冗长、使用特定措辞等）。作者利用LLM的输出作为训练数据，构建了一个逻辑回归分类器，能够更准确地识别AI生成的注释。该方法简单有效，不依赖复杂的深度学习模型，适合集成到代码审查工具或IDE插件中。文章还讨论了特征工程和模型评估，并提供了可复现的实验细节。这项工作对于维护代码质量、理解AI在软件开发中的影响具有实际意义，尤其适合关注AI辅助编程和代码分析的开发者。",
+  "tags": [
+    "AI代码检测",
+    "逻辑回归",
+    "LLM",
+    "代码注释",
+    "软件开发"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:11Z",
+  "collected_at": "2026-09-18T12:46:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "逻辑回归模型可以有效地从LLM生成的注释中学习模式，并用于检测AI生成的代码注释。",
+      "AI生成的代码注释具有可识别的特征，如冗长、特定措辞等，这些特征可用于分类。",
+      "该方法简单且可解释，适合集成到代码审查流程中，帮助维护代码质量。",
+      "随着AI编程的普及，检测AI生成内容的需求日益增长，此类工具具有实际应用价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

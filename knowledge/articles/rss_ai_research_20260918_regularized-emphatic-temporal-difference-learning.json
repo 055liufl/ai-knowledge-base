@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-001",
+  "title": "Regularized Emphatic Temporal-Difference Learning: Stability under Constant Stepsizes",
+  "source_url": "https://arxiv.org/abs/2609.19170",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究强调式时序差分学习（Emphatic Temporal-Difference Learning, ETD）在恒定步长下的稳定性问题。ETD 通过重新加权更新来稳定离策略 TD 学习的期望更新，并改变其投影几何，但作者指出这两者均不能决定恒定步长下采样动态的实际行为。论文构造了一个遍历的两状态反例，其中 ETD 的均值映射是收缩的，但采样乘积却具有正的最大 Lyapunov 指数，即采样动态发散。作者利用再生周期分析将这一符号与后续迹（follow-on trace）的无限方差区分开来，并提出了正则化 ETD 方法以恢复稳定性。该工作对强化学习中离策略算法的理论理解具有重要意义，揭示了期望层面稳定性与采样层面稳定性之间的关键差异，为设计更稳健的 TD 学习算法提供了理论指导。",
+  "tags": [
+    "Reinforcement Learning",
+    "Temporal-Difference Learning",
+    "Off-policy Learning",
+    "Stability Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:47:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ETD 的期望均值映射收缩性并不能保证恒定步长下采样动态的稳定性，存在采样乘积具有正 Lyapunov 指数的反例。",
+      "再生周期分析揭示了后续迹的无限方差是导致采样动态不稳定的关键因素。",
+      "提出的正则化 ETD 方法能够恢复恒定步长下的稳定性，为离策略 TD 学习提供了更可靠的理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

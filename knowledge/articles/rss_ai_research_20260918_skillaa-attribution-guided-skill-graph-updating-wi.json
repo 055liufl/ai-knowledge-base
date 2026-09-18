@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-074",
+  "title": "SkillAA: Attribution-Guided Skill-Graph Updating with Targeted Validation and Rollback",
+  "source_url": "https://arxiv.org/abs/2609.20455",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillAA（Skill Abductive Attribution）是一篇针对外部技能（external skills）管理与更新的研究论文。当前方法在利用失败轨迹直接编辑技能时，缺乏从观察到失败到可编辑位置的结构化路由机制，同时现有技能图未能充分利用语义边界、对象地址和拓扑依赖关系来支持技能检索、定向更新与范围化验证。SkillAA 提出了一种结构化技能归因框架，通过归因引导的方式定位失败根源，并针对性地更新技能图中的特定节点，同时引入定向验证与回滚机制，确保更新不会破坏已有能力。该工作值得关注，因为它将技能图从静态知识库转变为可动态维护、可验证、可回滚的工程化组件，对构建可靠、可迭代的 LLM Agent 技能系统具有重要参考价值，尤其适用于需要长期积累和复用领域流程的智能体应用场景。",
+  "tags": [
+    "Agent",
+    "Skill Graph",
+    "Attribution",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有技能编辑方法缺乏从失败观察到可编辑位置的结构化路由，导致更新盲目且易引入回归。",
+      "技能图应充分利用语义边界、对象地址和拓扑依赖，以支持更精准的检索、更新与验证。",
+      "SkillAA 通过归因引导的定向更新与回滚机制，提升了技能维护的安全性和可迭代性。",
+      "该工作为 LLM Agent 的外部技能管理提供了从失败中学习并安全演化的系统化思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

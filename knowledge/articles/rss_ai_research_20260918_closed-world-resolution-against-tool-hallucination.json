@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-009",
+  "title": "Closed-World Resolution Against Tool Hallucination in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.19425",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对工具增强型 LLM Agent 的一个结构性盲区——工具幻觉（Tool Hallucination）提出解决方案。现有方法要么专注于工具选择（tool selection），要么专注于工具安全门控（gating），但二者都预设了 Agent 发出的调用确实指向一个真实存在的工具。然而，LLM Agent 常常会调用根本不存在的工具，或传入没有任何 schema 声明的参数，这类幻觉调用无法被现有防御机制捕获。作者提出「封闭世界解析」（Closed-World Resolution）方法，其核心思想是：在封闭世界假设下，Agent 只能调用预先注册且 schema 明确的工具集合，任何超出该集合的调用都应被识别为幻觉并加以拒绝或修正。该方法从结构层面而非事后过滤层面解决工具幻觉问题，为构建更可靠的 Agent 工具调用系统提供了新思路。该工作值得关注，因为随着 Agent 在生产环境中的广泛部署，工具调用的可靠性直接关系到系统安全与用户体验，而工具幻觉此前一直缺乏系统性的研究。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool Use",
+    "Hallucination"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:47:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具选择与工具安全门控方法存在结构性盲区：它们预设 Agent 发出的调用指向真实工具，无法处理调用不存在工具或非法参数的幻觉情况。",
+      "工具幻觉是 LLM Agent 可靠性的一个独立且此前被忽视的问题维度，需要与工具选择、权限控制区分开来单独处理。",
+      "封闭世界解析通过在预注册工具集合内进行约束解析，从结构层面识别和拦截幻觉调用，而非依赖事后过滤。",
+      "该方向对 Agent 在生产环境中的安全部署具有重要意义，可能推动工具调用协议与运行时验证机制的新研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

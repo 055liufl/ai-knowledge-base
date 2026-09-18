@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-086",
+  "title": "An Empirical Study of Harness Design for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2609.20804",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对编码智能体（Coding Agents）的\"执行框架\"（Harness）设计进行了实证研究。现有工作通常将执行框架视为一个整体系统来评估，导致其中各个组件的独立效果难以厘清。为了支持组件级别的比较，作者构建了一个轻量级编码执行框架，固定其执行循环，仅改变三个关键组件：规划（planning）、动作空间（action space）以及（摘要截断处暗示的第三个组件，可能为记忆或反馈机制）。通过这种受控实验设计，研究揭示了不同组件对智能体在长周期软件工程任务中性能的独立贡献。该研究的意义在于：随着自主编码智能体日益依赖复杂的外部脚手架来将模型能力转化为实际工程产出，理解框架中每个组件的真实价值变得至关重要。它有助于开发者避免盲目堆砌组件，为构建更高效、更精简的编码智能体系统提供了实证依据，也为后续研究建立了可复用的组件级评估方法论。",
+  "tags": [
+    "Coding Agent",
+    "Agent Harness",
+    "Empirical Study",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有编码智能体评估多将执行框架视为黑盒整体，掩盖了单个组件的实际贡献，需要组件级实证研究。",
+      "通过固定执行循环并仅改变规划、动作空间等组件，可以量化各组件对长周期软件工程性能的独立影响。",
+      "轻量级执行框架的设计有助于隔离变量，为编码智能体的系统化评估提供可复用的方法论。",
+      "理解框架组件的独立效果能指导开发者更高效地构建编码智能体，避免不必要的复杂性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-051",
+  "title": "DART: Distillation-Aware Reparameterization for Training-Free LoRA Reuse in Few-Step Video Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2609.20051",
+  "source_platform": "rss_ai_research",
+  "summary": "DART 是一种面向少步视频扩散模型的免训练 LoRA 复用方法，旨在解决步数蒸馏后复用为长轨迹训练的 LoRA 时效果改变或质量下降的问题。作者观察到，在缩短的去噪调度下，即使参数几何相似，适配器行为也可能不同，因此静态参数兼容性不足以判断 LoRA 是否可复用。DART 通过低秩坐标变换与蒸馏感知的重参数化，在不重新训练的前提下将已有 LoRA 适配到少步采样轨迹中，从而保留其功能效果并维持目标质量。该工作对视频生成的高效推理与模型复用具有实用价值，尤其适合需要快速部署定制化视频生成能力的场景。",
+  "tags": [
+    "LoRA",
+    "Video Diffusion",
+    "Step Distillation",
+    "Model Reuse"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:49:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "步数蒸馏会改变 LoRA 的功能行为，仅靠静态参数相似性无法保证复用效果。",
+      "DART 提出免训练的低秩坐标重参数化，使长轨迹 LoRA 适配少步去噪调度。",
+      "该方法为少步视频扩散模型中的适配器复用提供了新的兼容性视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

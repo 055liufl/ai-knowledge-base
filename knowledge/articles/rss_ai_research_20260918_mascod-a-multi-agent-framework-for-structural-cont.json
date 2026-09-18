@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-044",
+  "title": "MaSCoD: A Multi-Agent Framework for Structural-Context-Guided Candidate Causal Graph Generation",
+  "source_url": "https://arxiv.org/abs/2609.19944",
+  "source_platform": "rss_ai_research",
+  "summary": "MaSCoD 是一个面向因果发现任务的多智能体框架，旨在解决现有基于大语言模型（LLM）的因果发现方法中一个被忽视的问题：候选因果图生成阶段过早地遗漏了潜在相关的因果关系。该框架通过多智能体协作，在做出直接边（direct-edge）判断之前，先系统性地组织候选第三变量（candidate third variables）和局部结构模式（local structural patterns），从而提升候选因果图的完整性与质量。研究在 Auto-MPG、DWD 和 Sachs 三个经典数据集上进行评估，主骨干模型采用 GPT-5.4，并使用 GPT-4o 进行复核。该工作值得关注的原因在于：它将因果发现中的候选图生成从被动流程转变为显式的设计目标，强调避免过早剪枝，并通过多智能体架构引入结构化上下文引导，为 LLM 驱动的因果推断提供了新的方法论视角，对因果推理、多智能体系统和科学发现自动化等方向具有参考价值。",
+  "tags": [
+    "Causal Discovery",
+    "Multi-Agent",
+    "LLM",
+    "Graph Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 因果发现方法普遍忽视候选图生成阶段过早遗漏相关因果关系的问题，MaSCoD 将其作为显式优化目标。",
+      "通过多智能体框架先组织候选第三变量与局部结构模式，再进行直接边判断，可提升候选因果图的完整性。",
+      "在 Auto-MPG、DWD、Sachs 等数据集上使用 GPT-5.4 与 GPT-4o 进行验证，展示了结构化上下文引导的有效性。",
+      "该工作为 LLM 驱动的因果发现提供了从被动生成到主动结构化引导的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

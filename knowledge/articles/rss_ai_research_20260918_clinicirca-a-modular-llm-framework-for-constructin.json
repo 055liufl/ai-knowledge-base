@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-118",
+  "title": "CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives",
+  "source_url": "https://arxiv.org/abs/2609.19585",
+  "source_platform": "rss_ai_research",
+  "summary": "CliniCIRCA 是一个面向心理健康领域的模块化 LLM 框架，旨在从原始电子健康记录（EHR）的非结构化叙事文本中重建纵向患者旅程。心理健康诊疗中，患者的生物、心理与社会事件往往分散在不同时间点的自由文本记录中，时间线难以恢复，给临床推理带来巨大挑战。该框架提出\"日历锚定、不精确性感知的临床编年史重建\"（Calendar-anchored, Imprecision-aware Reconstruction of Clinical Annals）方法，通过多阶段 LLM 流水线处理原始叙事，将模糊的时间表达映射到统一时间轴，并保留时间信息的不确定性。其模块化设计允许各阶段独立替换与评估，适配不同临床场景与模型。该工作值得关注的原因在于：一是将 LLM 应用于高敏感、高复杂度的心理健康纵向数据，填补了结构化时间线重建的空白；二是强调时间不精确性建模，贴近真实临床记录的模糊性；三是模块化架构便于在真实医疗系统中落地与审计，对临床决策支持、患者轨迹研究和医疗 NLP 具有参考价值。",
+  "tags": [
+    "LLM",
+    "EHR",
+    "Clinical NLP",
+    "Mental Health",
+    "Temporal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "心理健康患者旅程分散在非结构化叙事中，纵向时间线重建是临床推理的关键瓶颈。",
+      "CliniCIRCA 采用多阶段模块化 LLM 流水线，实现日历锚定与时间不精确性感知的临床事件重建。",
+      "该框架强调对模糊时间表达的显式建模，比简单时间戳抽取更贴近真实 EHR 数据质量。",
+      "模块化设计便于分阶段评估、替换模型与临床落地，对医疗 NLP 系统构建有借鉴意义。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

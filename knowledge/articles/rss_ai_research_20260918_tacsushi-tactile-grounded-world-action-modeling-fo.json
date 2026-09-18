@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-122",
+  "title": "TacSushi: Tactile-Grounded World-Action Modeling for Dexterous Sushi Manipulation",
+  "source_url": "https://arxiv.org/abs/2609.19613",
+  "source_platform": "rss_ai_research",
+  "summary": "TacSushi 是一个面向灵巧寿司操作任务的触觉接地世界-动作模型（world-action policy），基于 Cosmos3 构建。该研究针对食品操作中普遍存在的形变、遮挡和接触不确定性等难题，提出在动作策略中融合触觉信息，以提升机器人在精细操作中的鲁棒性。其核心设计包括：主干网络编码当前 RGB 图像、语言指令和手部状态；通过特征级门控融合（feature-wise gated fusion）将指尖触觉特征注入动作表示；训练阶段引入解码器，从记录的\"未来后果\"中学习，使模型在基于当前观测行动的同时具备对动作结果的预测能力。该工作值得关注的原因在于：其一，将触觉感知与世界模型/动作模型结合，是当前具身智能与机器人操作研究的前沿方向；其二，寿司制作这类可变形物体操作对精度和接触感知要求极高，是检验灵巧操作能力的理想测试场景；其三，基于 Cosmos3 的架构选择表明其可能借助大规模预训练世界模型的能力，为通用机器人策略提供新思路。该研究对触觉感知、世界模型、灵巧操作交叉领域具有参考价值。",
+  "tags": [
+    "Tactile Sensing",
+    "World Model",
+    "Dexterous Manipulation",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将指尖触觉特征通过特征级门控融合注入动作表示，可有效应对食品操作中的形变与接触不确定性",
+      "采用\"从记录的未来后果中学习、基于当前观测行动\"的世界-动作建模范式，兼顾预测性与实时性",
+      "基于 Cosmos3 主干网络，显示大规模世界模型向具身操作策略迁移的潜力",
+      "寿司制作作为可变形物体精细操作基准，对灵巧操作研究具有较高的测试价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

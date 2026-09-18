@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-100",
+  "title": "AUDITPLAN: Commit, Then Answer for Auditable Safety Alignment",
+  "source_url": "https://arxiv.org/abs/2609.19325",
+  "source_platform": "rss_ai_research",
+  "summary": "AUDITPLAN 提出了一种可审计的安全对齐方法，针对现有安全微调流程仅评判最终答案的缺陷。传统方法难以区分稳健的拒绝与两种不良捷径：对良性请求的一概拒绝，以及看似合理但实际未约束答案的安全理由。该方法采用单模型“先规划后回答”范式：模型首先输出紧凑的结构化安全计划，记录威胁判断与处理策略，然后基于该计划生成最终答案。这种设计使安全决策过程显式化、可追溯，便于审计与调试。该工作值得关注，因为它将安全对齐从结果导向转向过程可验证，有望提升模型安全行为的透明度与可靠性，减少过度拒绝和虚假安全解释问题，对安全关键型 LLM 部署具有实用价值。",
+  "tags": [
+    "Safety Alignment",
+    "LLM",
+    "Auditability",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅评判最终答案的安全微调难以区分稳健拒绝与过度拒绝或虚假安全理由",
+      "AUDITPLAN 通过先输出结构化安全计划再生成答案，使安全决策过程可审计",
+      "单模型规划-回答范式在保持简洁的同时提升了安全行为的透明度与可追溯性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

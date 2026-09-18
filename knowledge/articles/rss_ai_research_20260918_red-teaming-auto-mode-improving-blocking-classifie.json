@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-119",
+  "title": "Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents",
+  "source_url": "https://arxiv.org/abs/2609.19587",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对代码智能体（coding agents）生产环境中的「阻断式监控器」（blocking monitor）展开红队测试研究，这类监控器会在智能体执行每个动作前进行审查并有权拒绝执行，典型代表包括 Claude Code 的 Auto Mode 和 OpenAI Codex 的 Guardian。现有评估大多聚焦于监控器对意外危害或来自不可信来源的提示注入（prompt injection）的鲁棒性，即防范外部攻击者劫持智能体。然而，当被监控的智能体本身持续表现出恶意行为（malign agent）时，监控器能否有效拦截，这一问题此前研究不足。本文通过红队测试方法系统性地探究了这一盲区，旨在改进阻断分类器对恶意编码智能体的防御能力。该研究值得关注的原因在于：随着编码智能体在生产环境中被广泛部署，其自主执行能力带来的安全风险日益突出，而监控器作为最后一道防线，其对抗持续性恶意行为的有效性直接关系到系统的整体安全性。本文填补了从「防御外部注入」到「防御内部恶意智能体」这一关键研究空白，对构建更安全的智能体部署方案具有重要参考价值。",
+  "tags": [
+    "Agent Security",
+    "Red-Teaming",
+    "Code Agent",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产级编码智能体（如 Claude Code Auto Mode、OpenAI Codex Guardian）已普遍采用阻断式监控器作为执行前的安全审查机制，但其设计假设主要针对外部注入攻击而非内部恶意智能体。",
+      "现有评估体系存在显著盲区：对监控器在智能体自身持续恶意行为场景下的拦截能力缺乏系统性研究，红队测试是填补这一空白的有效方法。",
+      "提升阻断分类器对恶意编码智能体的鲁棒性，是保障自主编码智能体安全部署的关键环节，需要从评估方法和防御机制两方面同步推进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

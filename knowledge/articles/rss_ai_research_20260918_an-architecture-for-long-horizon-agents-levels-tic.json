@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-015",
+  "title": "An Architecture for Long-Horizon Agents: Levels, Ticks and Cascaded Intelligence",
+  "source_url": "https://arxiv.org/abs/2609.19519",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向长时程（long-horizon）智能体的架构设计，核心论点是：当语言模型智能体需要执行跨越数天甚至数周的任务（如运维修复或研究项目）时，其任务时长会超出任何上下文窗口、任何单一进程以及人类可介入的时间间隔。作者认为，长时程智能体必须先做到「持续运行而不遗忘」，才能进一步实现「持续学习」。而这一能力的关键并不在于模型本身，而在于模型外部的「harness」（运行框架/承载层）。论文围绕 Levels（层级）、Ticks（时间步/心跳）与 Cascaded Intelligence（级联智能）三个概念展开架构设计，试图为长时程自主智能体提供一种可工程化的组织方式。该工作值得关注的原因在于：当前多数 Agent 研究聚焦于短时任务与单轮工具调用，而真实生产场景（如 SRE 自动化、长期科研助手）要求智能体具备跨会话记忆、状态持久化与分层决策能力。本文把问题从「模型能力」转向「系统架构」，为构建可持续运行、可演化的智能体系统提供了新的设计视角，对 Agent 基础设施与工程实践具有参考价值。",
+  "tags": [
+    "Agent",
+    "Long-Horizon",
+    "Architecture",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:47:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体的核心瓶颈不在模型本身，而在模型外部的运行框架（harness），需要重新设计承载层而非仅提升模型能力。",
+      "「持续运行而不遗忘」是「持续学习」的前提，跨会话的状态持久化与记忆机制是长时程任务的基础要求。",
+      "通过 Levels（层级）、Ticks（时间步）与 Cascaded Intelligence（级联智能）三个维度组织智能体架构，可应对超出上下文窗口和人类介入间隔的任务。",
+      "真实场景（如运维修复、长期研究项目）对智能体的时间跨度要求远超当前主流短时任务 Agent 的设计假设。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

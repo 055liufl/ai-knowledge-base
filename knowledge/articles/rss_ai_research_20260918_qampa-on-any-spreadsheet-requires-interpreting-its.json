@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-084",
+  "title": "Q&amp;A on Any Spreadsheet Requires Interpreting Its Grid Structure",
+  "source_url": "https://arxiv.org/abs/2609.20732",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向电子表格的语义单元格标注框架，旨在提升 LLM 驱动的 RAG 系统中表格分块的可解释性。传统 RAG 系统在处理电子表格时，往往将其视为普通文本进行切分，忽略了表格固有的二维网格结构，导致上下文丢失和答案生成质量下降。该研究通过为每个单元格赋予角色标签（如表头、数据、汇总等），将任意电子表格切分为具有语义可解释性的块，从而为 LLM 提供更丰富的上下文信息。实验表明，该框架在答案生成任务上超越了当前最先进的方法，但作者也指出其存在性能天花板，根源在于电子表格本质上是二维无结构数据，单纯依赖单元格角色标注仍难以完全捕捉复杂的行列依赖关系。该工作为表格理解与 RAG 结合提供了新思路，对提升企业级文档问答、财务分析、数据报表自动化等场景的可靠性具有参考价值，同时也揭示了该方向的核心挑战。",
+  "tags": [
+    "RAG",
+    "Spreadsheet",
+    "LLM",
+    "Table Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义单元格标注可提升电子表格在 RAG 中的分块可解释性，但主要贡献在于丰富上下文而非提高检索准确率。",
+      "该框架在答案生成任务上超越现有最优方法，但受限于电子表格的二维无结构本质，存在性能天花板。",
+      "电子表格问答的关键挑战在于如何有效建模其网格结构中的行列依赖关系，而非简单的文本分块。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-083",
+  "title": "Deep Noir: Autonomous Steering Discovery via Architectural Chronometry in Transformer Models",
+  "source_url": "https://arxiv.org/abs/2609.20722",
+  "source_platform": "rss_ai_research",
+  "summary": "Deep Noir 是一个用于 Transformer 模型激活引导（activation steering）的自动化框架，旨在解决当前激活引导中“在哪里引导、以多大强度引导”依赖人工试错的核心痛点。该工作提出利用 Logit Lens 收敛性与因果头级归因（causal head-level attribution）来自主发现最优的引导参数，从而在推理阶段更高效地修改 LLM 行为。作者在三个参数规模区间（1B×3、2-3B×2、7-9B×4）上进行了系统验证，其中在 1B 模型上针对垃圾信息（spam）任务取得了 16.7 个百分点的提升（标准差 4.7，39 次运行），显示出较强的可复现性与跨规模泛化潜力。该研究值得关注的原因在于：激活引导是当前 LLM 对齐与可控生成的重要方向，但长期受限于人工调参成本高、可解释性弱；Deep Noir 将“架构计时学（Architectural Chronometry）”与因果归因结合，把引导位置与强度的选择从手工经验转化为可自动搜索的工程流程，为可解释性驱动的模型控制提供了新范式。若其方法在更多任务与模型上得到验证，有望降低对齐与安全干预的",
+  "tags": [
+    "Activation Steering",
+    "Interpretability",
+    "LLM",
+    "Causal Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Deep Noir 通过 Logit Lens 收敛性与因果头级归因自动发现激活引导的位置和强度，减少人工调参依赖。",
+      "在 1B 模型 spam 任务上实现 16.7 个百分点提升（39 次运行，标准差 4.7），并在 2-3B 与 7-9B 规模上验证了跨规模可行性。",
+      "该方法将架构计时学与因果可解释性结合，为 LLM 推理时行为控制提供了可自动化的新路径。",
+      "当前结果主要集中于 spam 等特定任务，泛化到更广泛对齐与安全场景仍需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

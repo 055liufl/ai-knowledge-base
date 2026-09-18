@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-106",
+  "title": "Efficient Nash Equilibrium Computation for Cybersecurity Games",
+  "source_url": "https://arxiv.org/abs/2609.19399",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Regret-Weighted Payoff Sampling (RWPS) 的新方法，用于高效计算基于仿真的网络安全博弈中的纳什均衡。传统方法如策略空间响应预言机（PSRO）在计算纳什均衡时，瓶颈在于收益估计：每个收益矩阵条目都需要通过慢速模拟器进行蒙特卡洛 rollout，而策略和受限博弈求解则相对廉价。RWPS 是一种预算受限的估计器，它仅模拟对均衡敏感的单元格，并用代理训练模型填充其余部分。该方法有望显著降低计算成本，加速网络安全博弈的均衡求解，对于需要实时决策的防御场景具有重要实用价值。该工作结合了博弈论、强化学习和网络安全，为大规模仿真博弈的均衡计算提供了新思路。",
+  "tags": [
+    "Game Theory",
+    "Cybersecurity",
+    "Reinforcement Learning",
+    "Nash Equilibrium"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PSRO 在网络安全博弈中的主要瓶颈是收益估计，而非策略优化或受限博弈求解。",
+      "RWPS 通过仅模拟对均衡敏感的收益矩阵单元格，大幅减少模拟器调用次数。",
+      "该方法结合了代理模型来填充未模拟的收益，平衡了计算预算与估计精度。",
+      "高效纳什均衡计算对实时网络安全防御策略生成具有重要意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

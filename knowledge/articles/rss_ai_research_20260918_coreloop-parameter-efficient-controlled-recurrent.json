@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-130",
+  "title": "CoRELoop: Parameter-Efficient Controlled Recurrent Refinement for Audio Deepfake Detection",
+  "source_url": "https://arxiv.org/abs/2609.19818",
+  "source_platform": "rss_ai_research",
+  "summary": "CoRELoop 是一种面向音频深度伪造检测的参数高效受控循环细化方法，针对现有基于自监督学习（SSL）的检测器在面对未见攻击类型时泛化能力不足的问题。传统方案通常需要收集覆盖所有潜在攻击的训练数据，但这在实际中不可行。该研究探索在不增加额外数据、也不改变原有模型参数的前提下，对已训练好的 SSL 检测器进行循环式细化。作者发现，直接将编码器输出回收作为输入会导致检测性能下降，因此提出 CoReLoop，通过受控的循环机制使这种复用变得有效，从而提升对未知攻击的泛化能力。该方法的核心价值在于参数高效与免训练数据扩展，为音频反伪造领域提供了一种低成本、可插拔的增强思路，尤其适合在已有检测系统上做增量式改进。",
+  "tags": [
+    "Audio Deepfake Detection",
+    "Parameter-Efficient",
+    "Self-Supervised Learning",
+    "Recurrent Refinement"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在不改变原模型参数、不增加训练数据的前提下，可通过循环细化提升 SSL 检测器对未见攻击的泛化能力",
+      "直接复用编码器输出作为输入会损害检测性能，需要受控机制才能有效利用循环结构",
+      "参数高效的设计使方法易于集成到现有音频深度伪造检测系统中"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

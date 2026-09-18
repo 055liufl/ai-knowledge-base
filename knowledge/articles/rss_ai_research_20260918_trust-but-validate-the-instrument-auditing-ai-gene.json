@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-132",
+  "title": "Trust, but Validate the Instrument: Auditing AI-Generated RTL Verification Plans on Authored Security-Regression Proxies",
+  "source_url": "https://arxiv.org/abs/2609.19844",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SecTB-RTL，一个可审计的框架，用于评估 AI 生成的 RTL（寄存器传输级）验证计划在硬件安全回归测试中的实际有效性。研究覆盖 31 个任务和 124 个作者编写的硬件安全回归用例，并设置确定性非 AI 基线作为对照。基线在递增资源限制下分别杀死 36、75、78 个变异体。首次确认性运行（C1-R2）因提供商拒绝其响应模式而在模型执行前失败，说明 AI 生成内容即使满足提供方 schema，也可能在可信执行边界失效。该工作强调对 AI 生成的验证计划进行独立审计与验证的必要性，对硬件安全、EDA 与 AI 辅助验证交叉领域具有方法学意义。",
+  "tags": [
+    "RTL Verification",
+    "Hardware Security",
+    "AI Auditing",
+    "EDA"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 生成的 RTL 验证计划即使满足提供方 schema，也可能在可信执行边界失效，需独立审计。",
+      "确定性非 AI 基线在递增资源限制下可杀死 36/75/78 个变异体，为评估 AI 方案提供对照。",
+      "首次确认性运行因响应模式被拒而失败，暴露了 AI 工具链在硬件验证流程中的集成风险。",
+      "SecTB-RTL 以 31 任务和 124 个作者编写的安全回归用例，为 AI 辅助硬件验证提供可审计基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

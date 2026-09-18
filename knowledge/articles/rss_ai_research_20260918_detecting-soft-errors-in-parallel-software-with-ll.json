@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-114",
+  "title": "Detecting Soft Errors in Parallel Software with LLM-tuned Instruction Duplication",
+  "source_url": "https://arxiv.org/abs/2609.19531",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PaRID（PaRallel Instruction Duplication），一种面向多线程并行程序的软件级软错误检测框架，仅需编译期投入即可运行。软错误（soft errors）由宇宙射线、电压波动等瞬态故障引起，可能导致程序静默产生错误结果，在并行程序中尤为难以检测。PaRID 针对两大挑战展开：一是支持串行与并行区域混合的并行程序，二是避免依赖昂贵的动态性能剖析（dynamic profiling）来降低性能开销。其核心思路是将并行感知的代码变换（parallel-aware code transformation）与基于 LLM 调优的性能建模相结合，通过指令复制（instruction duplication）实现错误检测，同时利用大语言模型对复制策略的性能影响进行预测与优化，从而在检测覆盖率与运行开销之间取得平衡。该工作值得关注的原因在于：它首次将 LLM 引入软错误检测的编译优化环节，为并行软件的可靠性保障提供了低开销、免动态剖析的新路径，对高性能计算、自动驾驶、航空航天等对并行程序正确性要求极高的领域具有实用价值。",
+  "tags": [
+    "Soft Error Detection",
+    "LLM",
+    "Parallel Computing",
+    "Compiler Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PaRID 仅需编译期处理即可为多线程并行程序提供软错误检测，无需运行时动态剖析，显著降低部署与运行开销。",
+      "框架同时支持串行与并行混合区域，解决了现有指令复制方法难以处理并行代码的痛点。",
+      "利用 LLM 进行性能建模与调优，指导指令复制策略的选择，是 LLM 在编译优化与可靠性工程中的一次新颖交叉应用。",
+      "该方法面向高性能计算等对静默数据损坏敏感的场景，在检测覆盖率与性能损耗之间寻求更优平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

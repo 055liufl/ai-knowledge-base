@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-042",
+  "title": "From \"Who Is This User?\" to \"What Does This Purchase Mean?\": A Deployed Pipeline for Semantic User Profiling at Bank Scale",
+  "source_url": "https://arxiv.org/abs/2609.19928",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在银行规模下部署的语义用户画像流水线，旨在解决传统逐用户LLM推理成本随用户数线性增长的问题。作者将属性推断从“逐用户”重新定义为“逐交易模式”，通过三阶段流水线实现：Resolve阶段对商品名称进行抽象解析并可选地引入网络信息进行 grounding；Profile阶段对每个高频交易模式推断属性；Tag阶段将自由文本属性聚类为可查询的数据库。该方法的核心创新在于将LLM推理预算与用户数量解耦，转而与交易模式的多样性挂钩，从而在银行级应用场景中大幅降低推理成本。该工作值得关注，因为它展示了如何将LLM能力落地到大规模、高成本敏感的生产环境中，为金融领域的用户理解、个性化推荐和风险控制提供了可扩展的工程范式，同时也为其他需要处理海量用户行为数据的行业提供了参考。",
+  "tags": [
+    "LLM",
+    "User Profiling",
+    "Fintech",
+    "Deployed System",
+    "Semantic Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将属性推断从逐用户改为逐交易模式，使LLM推理成本与用户数解耦，解决了银行规模下的预算瓶颈。",
+      "三阶段流水线（Resolve、Profile、Tag）将非结构化交易数据转化为可查询的语义用户画像数据库。",
+      "该方法在真实银行场景中部署，证明了LLM在金融领域大规模应用的可行性和成本效益。",
+      "通过聚类自由文本属性，系统支持灵活的查询和下游应用，如个性化推荐和风险分析。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

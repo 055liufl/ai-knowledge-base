@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260918-077",
+  "title": "FreqCondNorm: Towards Cross-domain Predictive Maintenance through a Frequency-Conditioned Transformer Foundation Model",
+  "source_url": "https://arxiv.org/abs/2609.20535",
+  "source_platform": "rss_ai_research",
+  "summary": "FreqCondNorm 是一种基于 Transformer 的预测性维护基础模型，旨在解决跨设备、跨工况迁移性差的问题。该工作针对工业预测性维护中标注数据稀缺、信号采样频率跨度极大（从 1 Hz 到约 100 kHz，跨越五个数量级）的核心挑战，提出了一种 FiLM 风格的频率条件归一化层（frequency-conditioned normalization），将异构时间序列统一到单一模型中处理。传统深度学习预测性维护模型通常针对特定机器或工况训练，迁移到新场景时性能急剧下降，而 FreqCondNorm 通过将采样频率作为条件信息注入归一化过程，使模型能够自适应不同频率尺度的输入信号，从而实现跨域泛化。该研究属于基础模型（Foundation Model）在工业时间序列领域的探索，有望减少对大量标注数据的依赖，推动预测性维护从单设备定制化建模走向通用化、可迁移的建模范式。对于工业 AI、时序基础模型和故障诊断领域的研究者与工程师而言，这一方向具有较高的参考价值，尤其是在多频率、多工况场景下的统一建模思路值得关注。",
+  "tags": [
+    "Time Series",
+    "Transformer",
+    "Predictive Maintenance",
+    "Foundation Model",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:50:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 FiLM 风格的频率条件归一化层，将采样频率作为条件信号注入 Transformer，统一处理跨越五个数量级频率的异构时序信号。",
+      "针对预测性维护中标注数据稀缺和跨设备迁移性差的痛点，探索时序基础模型在工业场景的通用化建模范式。",
+      "频率条件归一化是一种轻量且通用的设计，可启发其他多频率时序建模任务（如传感器融合、多模态信号处理）。",
+      "该工作代表了预测性维护从单设备定制模型向跨域基础模型演进的重要方向。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

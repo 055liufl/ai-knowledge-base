@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260918-125",
+  "title": "Self-Evolving Search Index",
+  "source_url": "https://arxiv.org/abs/2609.19656",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「自演化搜索索引」（Self-Evolving Search Index）的新方法，旨在解决 LLM 智能体在复杂检索任务中面临的索引表示优化难题。传统检索系统依赖固定的索引键（index keys）来表示文档，但不同检索环境对索引表示的需求差异巨大，任何静态优化策略都难以在所有场景下保持高效。该研究通过让索引在检索过程中动态演化，根据实际查询反馈和任务需求自适应调整文档的索引键表示，从而持续提升检索质量。这一思路值得关注的原因在于：随着 LLM 智能体越来越多地承担涉及多样化信息需求的复杂任务，检索质量直接决定了智能体的整体表现上限；而现有 RAG 系统普遍采用一次性构建的静态索引，难以适应动态变化的任务分布。自演化索引为构建更智能、更自适应的检索基础设施提供了新方向，有望显著提升智能体在开放域问答、多跳推理等场景下的信息获取能力。",
+  "tags": [
+    "RAG",
+    "Information Retrieval",
+    "LLM Agent",
+    "Search Index"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:52:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "检索质量高度依赖索引键对文档知识的暴露程度，而最优索引表示因检索环境而异，固定优化策略存在根本性局限",
+      "自演化索引通过动态调整文档表示来适应不同检索任务，突破了传统静态索引的一次性构建范式",
+      "随着 LLM 智能体处理日益复杂的信息需求，自适应检索基础设施将成为提升智能体能力的关键瓶颈与突破口"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

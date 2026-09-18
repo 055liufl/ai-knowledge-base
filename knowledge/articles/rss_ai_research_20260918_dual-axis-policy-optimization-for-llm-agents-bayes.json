@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-035",
+  "title": "Dual-Axis Policy Optimization for LLM Agents: Bayesian Feedback Attribution and Trajectory Mass Normalization",
+  "source_url": "https://arxiv.org/abs/2609.19830",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 BATON（Bayesian Attribution and Trajectory Objective Normalization），一个面向 LLM Agent 强化学习的双轴策略优化框架。作者指出，LLM Agent 的 RL 训练实际上包含两个此前常被混为一谈的优化维度：一是轨迹内部如何利用环境反馈（Intra-Trajectory Feedback Attribution），二是批次内如何聚合完整轨迹的目标（Inter-Trajectory Objective Aggregation）。BATON 分别针对这两个维度设计机制：用贝叶斯方法对轨迹内反馈进行信用归因，用轨迹质量归一化来稳定跨轨迹的目标聚合。该工作值得关注，因为它把 LLM Agent RL 中模糊的“反馈利用”和“批次聚合”问题显式拆解为可独立优化的两个轴，为提升 Agent 训练的稳定性和样本效率提供了新的理论视角与工程路径，对从事 Agent 训练、RLHF/RLVR 及多步决策优化的研究者具有直接参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Reinforcement Learning",
+    "Policy Optimization",
+    "Bayesian Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的 RL 优化可拆解为轨迹内反馈归因与轨迹间目标聚合两个正交维度，分别优化比统一处理更有效。",
+      "贝叶斯反馈归因能在轨迹内部更合理地分配环境奖励的信用，缓解稀疏或延迟反馈问题。",
+      "轨迹质量归一化可稳定批次内不同长度/质量轨迹的目标聚合，降低训练方差。",
+      "BATON 为 LLM Agent 强化学习提供了双轴协同优化的新框架，有望提升训练稳定性与样本效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

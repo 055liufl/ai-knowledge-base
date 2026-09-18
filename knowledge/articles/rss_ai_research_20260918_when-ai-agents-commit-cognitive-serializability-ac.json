@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-065",
+  "title": "When AI Agents Commit: Cognitive Serializability Across Data, Evidence, Policy, and Authority",
+  "source_url": "https://arxiv.org/abs/2609.20261",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「认知可串行化」（Cognitive Serializability）概念，针对自主 AI Agent 在执行数据库变更时面临的一致性问题。Agent 的决策依据来自数据库读取、检索证据、策略规则、信念状态以及被委托的权限，这些输入在推理过程中可能发生变化。传统数据库隔离机制只能保证提交事务的顺序性，而 Agent 事务处理只验证提案是否满足可执行合约，二者都无法保证变更操作与其推导依据之间存在一个共同的合法时间点。论文指出，除非合约能够重新表达并验证推导输入的快照一致性，否则 Agent 的提交行为可能在语义上不可串行化，导致决策依据与最终写入之间的因果断裂。该工作将数据库事务理论、Agent 推理与权限委托模型结合，为构建可信、可审计的自主 Agent 系统提供了新的理论框架，对多 Agent 协作、自动化决策系统以及需要强一致性的企业级 AI 应用具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Transaction",
+    "Consistency",
+    "Database",
+    "Autonomous Systems"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:49:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的决策输入（数据、证据、策略、信念、权限）可能在推理过程中变化，传统数据库隔离无法保证这些输入与最终变更共享同一有效时间点。",
+      "认知可串行化要求合约能够验证推导输入的快照一致性，否则 Agent 提交的变更在语义上不可串行化。",
+      "该框架将数据库事务理论扩展到 Agent 认知层面，为构建可审计、可信任的自主 Agent 系统提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

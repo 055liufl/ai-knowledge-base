@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-108",
+  "title": "Predict Before You Deploy: Offline Prediction of Quantization-Induced Task Degradation for World Action Models",
+  "source_url": "https://arxiv.org/abs/2609.19441",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PreDE（Predict Before You Deploy），一种针对世界动作模型（World Action Models, WAMs）的离线量化退化预测方法。WAMs 依赖视频生成骨干网络，部署时对内存和算力需求极高。训练后量化（PTQ）虽可降低内存并加速推理，但位宽、分组策略和量化器选择构成庞大的配置空间，若通过闭环评估逐一验证其对任务性能的影响，成本极其高昂。PreDE 的核心思路是在部署前，利用策略校准（policy-calibrate）机制离线预测某一量化配置会导致的任务性能退化程度，从而避免昂贵的闭环测试，快速筛选出可保持任务表现的量化方案。该工作值得关注的原因在于：它直击具身智能/机器人策略模型落地中的关键痛点——量化配置搜索成本过高；将「预测退化」而非「实测退化」作为优化目标，为量化感知部署提供了新范式；对需要在边缘设备部署视频生成类策略模型的研究者和工程师具有直接实用价值。",
+  "tags": [
+    "Quantization",
+    "World Model",
+    "Model Deployment",
+    "Video Generation",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:51:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "世界动作模型（WAMs）的量化配置空间巨大，闭环评估成本过高，离线预测任务退化是更高效的替代方案。",
+      "PreDE 通过策略校准机制在部署前预测量化引起的任务性能下降，避免逐配置实测。",
+      "该方法面向视频生成骨干网络的部署优化，对具身智能与机器人策略模型的边缘部署具有实用意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

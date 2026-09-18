@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-043",
+  "title": "Beyond Depth Truncation: Controlled Evaluation of Depth Utilization in Recursive Language Models",
+  "source_url": "https://arxiv.org/abs/2609.19934",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对深度循环语言模型（depth-recurrent language models）提出了一种受控评估方法，以解决现有深度截断评估指标的缺陷。深度循环模型通过迭代应用小型层堆栈，将每token计算量与参数数量解耦，从而在推理时灵活调整计算深度。然而，当前判断模型是否真正利用其深度的方法——即在推理时截断深度、绘制质量与保留深度比例的关系曲线并读取斜率——虽然廉价且无需训练，但存在未经验证的假设。本文系统分析了该指标的局限性，并提出了更受控的评估方案，以更准确地衡量深度利用率。这项工作对于理解递归语言模型的计算机制、指导模型架构设计以及建立可靠的评估标准具有重要意义，尤其适合关注高效推理和模型可解释性的研究者。",
+  "tags": [
+    "Recursive Language Models",
+    "Depth Utilization",
+    "Evaluation",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有深度截断评估指标虽简单高效，但可能无法真实反映模型对深度的利用程度。",
+      "深度循环模型通过迭代应用小层堆栈，实现了计算量与参数量的解耦，但需要更严谨的评估方法。",
+      "受控评估有助于区分模型是真正利用深度进行计算，还是仅依赖浅层特征。",
+      "该研究为递归语言模型的深度利用提供了更可靠的评估框架，推动架构设计与可解释性研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

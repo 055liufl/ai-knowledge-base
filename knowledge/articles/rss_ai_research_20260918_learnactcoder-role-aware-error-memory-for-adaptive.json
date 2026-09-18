@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260918-029",
+  "title": "LearnActCoder: Role-Aware Error Memory for Adaptive Clinical Coding Agents",
+  "source_url": "https://arxiv.org/abs/2609.19721",
+  "source_platform": "rss_ai_research",
+  "summary": "LearnActCoder 提出了一种面向临床编码智能体的推理时自适应框架 Learn-Then-Act，旨在解决临床编码任务中反复出现的典型错误模式，包括不支持的编码、遗漏已记录病症、特异性错误以及手术编码规范不匹配等。该方法的核心思路是将一小批带标签的 LEARN 数据中产生的错误转化为结构化的「错误知识数据库」（MistakeKDB），并根据错误类型进行角色感知的路由：假阴性教训被分配给以召回为导向的 Coder 角色，假阳性教训则路由至以精确为导向的角色，从而在推理阶段动态修正智能体行为，而无需重新训练模型。这一工作的价值在于：临床编码是医疗收入周期与合规性的关键环节，错误代价高昂，而现有 LLM 智能体往往在相同失败模式上反复犯错；通过显式的错误记忆与角色分工机制，该方法为智能体提供了一种低成本、可解释的持续改进路径，对医疗 AI 落地、Agent 记忆机制设计以及高风险专业领域的可靠性研究均具有参考意义。",
+  "tags": [
+    "Agent",
+    "Medical AI",
+    "Error Memory",
+    "Inference-time Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-09-18T12:45:12Z",
+  "collected_at": "2026-09-18T12:48:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将推理阶段的错误转化为结构化 MistakeKDB，实现无需重训练的智能体持续改进",
+      "按错误类型（假阴性/假阳性）进行角色感知路由，分别强化召回与精确性",
+      "针对临床编码中反复出现的失败模式提供可解释的纠错机制",
+      "为高风险专业领域 LLM Agent 的可靠性提升提供了可复用的范式"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}
