@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20260919-008",
+  "title": "Cache-to-Cache: Direct Semantic Communication Between LLMs (2025)",
+  "source_url": "https://arxiv.org/abs/2510.03215",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文提出了一种名为 Cache-to-Cache（C2C）的新型通信范式，允许大型语言模型（LLM）之间直接通过键值缓存（KV Cache）进行语义通信，而无需生成自然语言文本。传统多智能体或模型协作通常依赖文本交换，存在信息损失、延迟高、token 消耗大等问题。C2C 通过将源模型的 KV 缓存投影到目标模型的语义空间，实现隐式知识传递，从而提升推理效率与协作质量。实验表明，C2C 在多个推理任务上优于文本通信基线，同时减少 token 使用和延迟。该工作为 LLM 间高效协作开辟了新方向，对多智能体系统、模型融合和边缘部署具有潜在影响。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Multi-Agent",
+    "Communication"
+  ],
+  "author": null,
+  "published_at": "2026-09-19T12:18:27Z",
+  "collected_at": "2026-09-19T12:19:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接利用 KV 缓存进行语义通信，避免文本生成与解析的开销，提升多模型协作效率。",
+      "C2C 通过投影对齐不同模型的表示空间，实现跨模型知识传递，为异构模型协作提供新思路。",
+      "实验显示在推理任务上优于文本通信，同时减少 token 消耗和延迟，适合资源受限场景。",
+      "该方向可能推动多智能体系统从显式文本交互向隐式表示交互演进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

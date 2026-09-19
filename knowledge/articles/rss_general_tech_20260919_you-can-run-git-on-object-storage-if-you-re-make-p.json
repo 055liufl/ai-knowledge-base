@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260919-005",
+  "title": "You can run Git on object storage if you re-make packfiles",
+  "source_url": "https://www.tigrisdata.com/blog/objgit-packfiles/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文探讨了在对象存储上运行 Git 的可行性，核心挑战在于 Git 的 packfile 格式与对象存储的不可变、最终一致性等特性不兼容。作者提出通过重新制作 packfile 来适配对象存储，可能涉及将 packfile 拆分为独立对象或使用自定义索引，从而绕过传统 Git 服务器对本地文件系统的依赖。这一方案值得关注，因为它为无服务器、低成本、高可扩展的 Git 托管提供了新思路，尤其适合需要大规模版本控制或边缘计算的场景。文章来自 Tigris Data，展示了对象存储与版本控制系统的创新结合，对开发者构建分布式协作工具具有启发意义。",
+  "tags": [
+    "Git",
+    "对象存储",
+    "版本控制",
+    "分布式系统"
+  ],
+  "author": null,
+  "published_at": "2026-09-19T12:18:27Z",
+  "collected_at": "2026-09-19T12:19:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Git 的 packfile 格式与对象存储的不可变性和最终一致性存在根本冲突，直接运行 Git 不可行。",
+      "通过重新设计 packfile 的存储方式（如拆分为独立对象或自定义索引），可以适配对象存储。",
+      "该方案为无服务器 Git 托管和低成本大规模版本控制提供了可能性。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

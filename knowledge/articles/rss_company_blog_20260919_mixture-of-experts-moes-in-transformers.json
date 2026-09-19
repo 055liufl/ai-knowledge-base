@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260919-062",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 发布的一篇技术博客，系统介绍了 Transformer 中的混合专家（Mixture of Experts, MoE）架构。MoE 通过将前馈网络（FFN）替换为多个并行的专家网络，并引入可学习的路由器（router）为每个 token 动态选择少数专家（如 Top-2），从而在总参数量大幅增加的同时保持计算量近似不变。文章详细阐述了 MoE 的核心组件（专家、路由器、负载均衡损失）、常见变体（Switch Transformer、GShard 等）、训练与推理中的挑战（如负载不均衡、通信开销、容量因子），并给出了在 Transformers 库中实现和微调 MoE 模型的实践指南。该内容值得关注，因为 MoE 已成为构建超大规模语言模型（如 Mixtral、DeepSeek-MoE）的关键技术，能够以较低推理成本获得更强性能，对研究者和开发者都具有重要参考价值。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-09-19T12:18:33Z",
+  "collected_at": "2026-09-19T12:22:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活实现参数规模与计算成本的解耦，使模型容量可扩展至万亿级别而推理成本仅小幅增加。",
+      "路由器（router）的设计与负载均衡损失是 MoE 训练的核心，直接影响专家利用率和模型性能。",
+      "Hugging Face Transformers 已集成 MoE 支持，开发者可便捷地加载、微调和部署 Mixtral 等 MoE 模型。",
+      "MoE 在训练和推理中面临通信开销、负载不均衡和容量因子调优等工程挑战，需结合分布式策略优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

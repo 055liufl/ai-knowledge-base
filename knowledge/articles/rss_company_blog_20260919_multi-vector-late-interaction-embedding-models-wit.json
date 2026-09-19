@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260919-010",
+  "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何在 Sentence Transformers 库中实现多向量（后期交互）嵌入模型。多向量模型（如 ColBERT）通过为每个 token 生成独立的嵌入向量，并在查询时进行后期交互（如 MaxSim 操作），显著提升了检索的细粒度和准确性，尤其适用于需要高精度匹配的场景。文章详细说明了如何使用 Sentence Transformers 训练和推理这类模型，包括数据准备、损失函数选择（如 MultipleNegativesRankingLoss）以及高效检索的实现。该技术值得关注，因为它结合了双编码器的高效性和交叉编码器的准确性，为信息检索和 RAG 系统提供了新的优化方向。",
+  "tags": [
+    "Embedding",
+    "Retrieval",
+    "Sentence Transformers",
+    "ColBERT"
+  ],
+  "author": null,
+  "published_at": "2026-09-19T12:18:33Z",
+  "collected_at": "2026-09-19T12:20:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量模型通过后期交互（如 MaxSim）在查询和文档 token 级别进行细粒度匹配，提升了检索精度。",
+      "Sentence Transformers 库现已支持训练和部署多向量模型，降低了技术门槛。",
+      "该技术适用于需要高召回和高精度的场景，如开放域问答和 RAG 系统。",
+      "与双编码器相比，多向量模型在保持较高效率的同时，显著提升了检索质量。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

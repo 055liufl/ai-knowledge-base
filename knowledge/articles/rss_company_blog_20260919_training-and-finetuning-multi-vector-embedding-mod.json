@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260919-006",
+  "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 官方博客发布的技术教程，详细介绍了如何使用 Sentence Transformers 库训练和微调多向量嵌入模型（Multi-Vector Embedding Models）。多向量嵌入模型（如 ColBERT 风格）通过为每个 token 生成独立的嵌入向量，并在检索时进行后期交互（late interaction），在信息检索任务中显著优于传统的单向量模型。文章从原理出发，逐步讲解数据准备、模型架构选择、训练目标（如 MultipleNegativesRankingLoss 的变体）、以及使用 Sentence Transformers 进行训练和微调的具体代码实现。该内容值得关注，因为它降低了多向量模型的使用门槛，使开发者能够方便地构建高性能检索系统，同时推动了检索增强生成（RAG）等应用的发展。",
+  "tags": [
+    "Embedding",
+    "Sentence Transformers",
+    "信息检索",
+    "微调"
+  ],
+  "author": null,
+  "published_at": "2026-09-19T12:18:33Z",
+  "collected_at": "2026-09-19T12:20:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量嵌入模型通过后期交互机制，在检索任务中比单向量模型具有更高的准确率。",
+      "Sentence Transformers 库提供了训练和微调多向量模型的完整工具链，简化了实现流程。",
+      "微调多向量模型需要特定的损失函数和数据格式，文章给出了可操作的代码示例。",
+      "该技术可显著提升 RAG 等应用的检索质量，是构建高效检索系统的关键方向。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
