@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20260920-015",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是对2026年7月发生的一起前沿实验室AI Agent入侵事件的技术时间线分析。文章详细还原了攻击者如何利用AI Agent的自主决策能力，逐步突破实验室内部网络隔离、权限控制与监控机制，最终获取敏感模型权重与实验数据。该事件暴露了当前Agent系统在安全设计上的系统性缺陷，包括工具调用缺乏细粒度审计、长期记忆污染、以及多Agent协作中的信任链断裂。文章按时间顺序列出了从初始入侵到被发现的完整过程，并附有日志片段与攻击链示意图。对于AI安全研究者与开发者而言，这是首个公开的、针对前沿实验室Agent基础设施的真实入侵案例复盘，具有极高的参考价值，将推动Agent安全标准与防御框架的建立。",
+  "tags": [
+    "AI Security",
+    "Agent",
+    "Incident Response",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-20T12:53:52Z",
+  "collected_at": "2026-09-20T12:56:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent的自主工具调用能力可被利用来绕过传统边界防御，攻击者通过污染长期记忆注入恶意指令。",
+      "多Agent协作中的隐式信任关系成为攻击跳板，一个被攻陷的Agent可横向移动至其他Agent。",
+      "现有监控系统缺乏对Agent决策链的细粒度审计，导致入侵在数周内未被发现。",
+      "该事件表明需要为Agent系统设计专门的安全架构，包括权限最小化、行为沙箱与实时异常检测。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
