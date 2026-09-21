@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-129",
+  "title": "BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement Learning with Dual Reward Models",
+  "source_url": "https://arxiv.org/abs/2605.09134",
+  "source_platform": "rss_ai_research",
+  "summary": "BoostAPR 是一个面向自动化程序修复（Automated Program Repair, APR）的三阶段强化学习框架，旨在解决现有 RL 方法中执行反馈稀疏、序列级奖励过于粗糙、难以定位真正修复 bug 的编辑操作等核心问题。该框架首先在带有推理轨迹且经过执行验证的演示数据上进行监督微调，使模型具备初步的修复与推理能力；随后基于执行结果训练双奖励模型——一个序列级评估器用于判断整体补丁质量，一个行级信用分配器用于精确定位哪些代码行编辑真正贡献了修复效果；最后利用这两个奖励模型驱动强化学习优化。其核心创新在于将执行反馈与细粒度信用分配结合，使模型能够从稀疏的成功/失败信号中学习到可解释、可定位的修复策略。该工作对提升 LLM 在真实软件工程场景中的自动修复能力具有重要意义，尤其适用于需要高可靠性和可解释性的代码修复任务，值得程序修复、代码生成及 RL 与执行反馈结合方向的研究者和开发者关注。",
+  "tags": [
+    "Program Repair",
+    "Reinforcement Learning",
+    "Reward Model",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T15:00:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过双奖励模型（序列级评估器与行级信用分配器）将稀疏的执行反馈转化为细粒度学习信号，解决 RL 中奖励稀疏和信用分配模糊的问题。",
+      "三阶段训练流程（执行验证的监督微调、双奖励模型训练、RL 优化）为程序修复任务提供了系统化的学习范式。",
+      "行级信用分配使模型能够识别真正修复 bug 的编辑操作，提升修复的可解释性和精准度。",
+      "该方法有望推动 LLM 在真实软件工程场景中自动修复能力的实用化，尤其适合需要高可靠性的代码修复任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

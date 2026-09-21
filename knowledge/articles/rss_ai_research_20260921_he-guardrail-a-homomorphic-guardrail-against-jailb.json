@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-089",
+  "title": "HE-Guardrail: A Homomorphic Guardrail Against Jailbreak Attacks for Encrypted Large Language Model Inference",
+  "source_url": "https://arxiv.org/abs/2609.21484",
+  "source_platform": "rss_ai_research",
+  "summary": "HE-Guardrail 是一篇针对同态加密（HE）大语言模型推理场景的安全研究论文。随着隐私保护机器学习（PPML）的发展，同态加密被广泛用于让客户端在加密状态下调用云端 LLM，服务器无法接触明文数据。然而，作者指出这一范式存在一个被忽视的关键安全漏洞：HE-LLM 推理过程同样容易受到越狱攻击（jailbreak attacks）。由于服务器无法解密输入，传统基于明文内容检测的安全护栏（guardrail）在此场景下完全失效，攻击者可以构造恶意密文输入诱导模型输出有害内容，而服务方既无法识别也无法拦截。该工作提出 HE-Guardrail，一种可在密文域直接运行的同态护栏机制，用于检测并阻止针对加密 LLM 推理的越狱攻击。其价值在于首次系统性地揭示了 HE-LLM 推理的安全盲区，并给出了与同态加密兼容的防御思路，对隐私计算与 LLM 安全交叉领域具有重要参考意义，尤其适合关注 PPML、模型安全与加密推理的研究者和工程师。",
+  "tags": [
+    "Homomorphic Encryption",
+    "LLM Security",
+    "Jailbreak Defense",
+    "Privacy-Preserving ML"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同态加密 LLM 推理中，服务器无法访问明文，导致传统基于内容检测的安全护栏失效，形成新的越狱攻击面。",
+      "HE-Guardrail 提出在密文域直接执行护栏检测，使服务方在不解密的情况下识别并阻止恶意输入。",
+      "该工作揭示了隐私保护与模型安全之间的根本性张力：加密保护了用户隐私，同时也为攻击者提供了掩护。",
+      "为 HE-LLM 部署提供了可落地的防御方向，推动 PPML 安全从'隐私单目标'走向'隐私+安全'双目标设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

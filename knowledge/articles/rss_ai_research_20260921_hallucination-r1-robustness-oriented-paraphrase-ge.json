@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-070",
+  "title": "Hallucination-R1: Robustness-Oriented Paraphrase Generation for Factual Consistency",
+  "source_url": "https://arxiv.org/abs/2609.21227",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Hallucination-R1，针对大语言模型在语义等价改写（paraphrase）下出现的「改写诱导幻觉」问题展开研究。传统幻觉定义聚焦于模型直接输出错误事实，而该工作关注一种更隐蔽的现象：模型对原始问题能正确回答，但当问题被语义等价的改写后却给出错误答案，这暴露出模型在语义不变性下的潜在事实不稳定性。作者指出，通用目的的改写数据往往不足以作为面向鲁棒性的监督信号，因此提出针对事实一致性的鲁棒性导向改写生成方法。该研究值得关注，因为它将幻觉评估从「静态正确性」推进到「语义扰动下的稳定性」，为构建更可靠、更鲁棒的事实问答系统提供了新的数据构造与评测视角，对 RAG、事实核查及模型对齐等方向具有参考价值。",
+  "tags": [
+    "Hallucination",
+    "Paraphrase Generation",
+    "Factual Consistency",
+    "Robustness",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:58:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出「改写诱导幻觉」新设定：模型对原问题回答正确，但在语义等价改写下产生错误答案，揭示语义不变性下的事实不稳定性。",
+      "通用改写数据不足以作为鲁棒性监督信号，需要面向事实一致性的专用改写生成方法。",
+      "该工作将幻觉研究从静态事实正确性扩展到语义扰动下的鲁棒性评估，为事实问答系统的可靠性测试提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-045",
+  "title": "AutoViewMem: Self-Configuring Orthogonal Views for Conversational Long-Term Memory",
+  "source_url": "https://arxiv.org/abs/2609.21940",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoViewMem 是一篇针对 LLM 智能体长期记忆管理的研究工作，提出了「自配置正交视图」（Self-Configuring Orthogonal Views）机制。现有长期记忆系统通常依赖固定粒度或静态 schema 来存储和检索信息，但真实对话中混杂着偏好、事件、约束、时间更新等异构信息，单一混合表示会导致语义干扰（semantic interference），使 top-K 检索难以准确命中真正相关的内容。AutoViewMem 的核心思路是将记忆按语义维度拆分为多个「正交视图」，并让系统根据对话内容自动配置这些视图的粒度与结构，从而降低不同类型信息之间的相互干扰，提升检索精度与智能体在长程交互中的一致性和个性化能力。该工作值得关注的原因在于：长期记忆是 LLM Agent 从「单轮工具」走向「持续陪伴型助手」的关键瓶颈，而现有方案多停留在工程堆叠（向量库 + 摘要 + 图谱）层面，缺乏对记忆表示结构的系统性思考。AutoViewMem 从表示解耦的角度切入，为记忆检索中的语义干扰问题提供了新的建模范式，对 Agent 记忆架构设计、RAG 检索优化以及个性化对话系统均有",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:57:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有长期记忆系统依赖固定粒度或静态 schema，难以处理偏好、事件、约束、时间更新等异构信息混合存储的问题",
+      "单一混合记忆表示会引发语义干扰，导致 top-K 检索无法准确召回真正相关的内容",
+      "AutoViewMem 通过自配置的正交视图将记忆按语义维度解耦，动态调整粒度与结构以降低干扰",
+      "该方向对 LLM Agent 长程一致性、个性化以及记忆检索架构设计具有重要参考意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

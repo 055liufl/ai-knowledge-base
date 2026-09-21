@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-131",
+  "title": "Intent-Governed Tool Authorization for AI Agents",
+  "source_url": "https://arxiv.org/abs/2606.22916",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Intent-Governed Access Control (IGAC) 的服务器端授权层，旨在解决工具使用型 AI 代理在集成凭证下运行时静态权限超出用户当前请求的问题。IGAC 将可信请求转换为短期意图证书，缩小静态授权的工具清单，并在执行前检查提议的工具和负载效果。关键设计是 IGAC 无法授予超出静态策略的权限，从而在保持安全边界的同时实现最小权限原则。该工作值得关注，因为它针对 AI 代理安全中的核心矛盾——功能性与安全性之间的权衡，提供了一种可落地的授权机制，有望推动更安全的代理部署。",
+  "tags": [
+    "AI Agent",
+    "Authorization",
+    "Security",
+    "Access Control"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T15:01:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态权限与动态请求之间的不匹配是 AI 代理安全的关键风险。",
+      "通过短期意图证书实现最小权限原则，且不超越静态策略边界。",
+      "在执行前检查工具和负载效果，可防止越权操作。",
+      "服务器端授权层设计适合集成到现有代理框架中。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

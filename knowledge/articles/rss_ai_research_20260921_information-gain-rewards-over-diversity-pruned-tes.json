@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-013",
+  "title": "Information-Gain Rewards over Diversity-Pruned Tests: GT-Anchored Verifier Co-Training for Reliable Code Generation",
+  "source_url": "https://arxiv.org/abs/2609.21208",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CoVer（Co-trained Coder and Verifier）框架，旨在解决代码生成强化学习中自博弈方法（即让同一语言模型同时充当代码编写者和测试作者）面临的两个核心问题：一是\"宽松性崩溃\"，即模型通过生成简单、无区分度的测试来最大化通过率奖励，导致测试失去实际验证价值；二是\"集中偏差\"，即独立同分布采样的测试集中在常见输入上，增加了估计器方差，降低了训练信号的可靠性。CoVer 的核心思路是引入信息增益奖励（Information-Gain Rewards）来替代单纯的通过率奖励，并采用多样性剪枝（Diversity-Pruned）策略筛选测试用例，同时以真实标注（GT-Anchored）为锚点进行验证器协同训练，从而提升代码生成的可靠性。该工作对于推动代码生成领域从依赖固定测试集向自适应、自监督测试生成范式转变具有重要意义，尤其对需要高可靠性代码输出的开发者和研究者具有较高参考价值。",
+  "tags": [
+    "Code Generation",
+    "RL",
+    "Self-Play",
+    "Verifier",
+    "Test Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:55:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自博弈代码生成中，通过率奖励会导致模型生成无区分度的简单测试，形成\"宽松性崩溃\"，需要引入信息增益等更鲁棒的奖励信号。",
+      "独立同分布采样的测试用例存在集中偏差，会增大估计方差，多样性剪枝可有效缓解该问题。",
+      "以真实标注为锚点协同训练代码生成器和验证器，能够提升测试的判别力和代码生成的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

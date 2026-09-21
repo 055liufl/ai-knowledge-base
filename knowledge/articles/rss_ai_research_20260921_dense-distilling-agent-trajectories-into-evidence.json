@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260921-022",
+  "title": "DENSE: Distilling Agent Trajectories into Evidence-Grounded Shortcut Trees for Self-Refinement",
+  "source_url": "https://arxiv.org/abs/2609.21423",
+  "source_platform": "rss_ai_research",
+  "summary": "DENSE（Distilling Evidence from Nested Subtask Executions）是一篇来自 arXiv 的论文，研究如何将在线智能体（Agent）部署过程中产生的大量执行轨迹（execution traces）蒸馏为可复用的反馈信号，而无需依赖事后结果标签或昂贵的人工标注。该方法的核心洞察在于：智能体的执行轨迹本身蕴含了关于局部进展、错误恢复以及未完成需求的丰富证据，这些证据可以被组织成一种「基于证据的嵌套捷径树」（evidence-grounded nested shortcut trees），用于智能体的自我精炼（self-refinement）。这一工作值得关注的原因在于，它直面了当前 Agent 系统部署中的关键瓶颈——任务特定的验证与专家标注难以规模化，而在线轨迹数据却大量冗余。通过将轨迹转化为结构化的反馈证据，DENSE 为智能体提供了一种低成本、可扩展的自我改进机制，有望减少对人工反馈和外部奖励模型的依赖，推动 Agent 在真实环境中持续自我优化。该研究属于 Agent 学习与轨迹蒸馏的交叉方向，对构建可自我进化的智能体系统具有实用价值",
+  "tags": [
+    "Agent",
+    "Trajectory Distillation",
+    "Self-Refinement",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:56:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体执行轨迹本身蕴含局部进展、恢复行为和未完成需求的证据，可作为无需结果标签的反馈来源",
+      "DENSE 将轨迹组织为基于证据的嵌套捷径树，实现可复用的结构化反馈蒸馏",
+      "该方法降低了对任务特定验证和专家标注的依赖，为规模化 Agent 自我精炼提供了新路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

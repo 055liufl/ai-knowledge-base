@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260921-074",
+  "title": "Verify, Don't Trust: Agentic Model Development for Video Discovery Retrieval at Scale",
+  "source_url": "https://arxiv.org/abs/2609.21257",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向大规模视频发现检索场景的智能体模型开发方法，核心思想是\"验证而非信任\"（Verify, Don't Trust）。传统自动研究（autoresearch）循环能够在分钟级迭代中让 LLM 智能体自主提出、实现并评估模型改动，但线上自动研究面临更复杂的挑战：异步系统、长达数小时的变体实验以及可能影响产品数周的长期实验周期。作者指出，即使一次实验运行完成，仍可能得出无效结论，原因包括代码改动实际为空操作（no-op）、数据窗口泄漏、评估器语义偏差等隐蔽问题。该工作针对这些失效模式提出系统性的验证框架，强调在智能体驱动的模型开发流程中，必须对每一次改动、数据切分和评估结果进行严格校验，而非盲目信任自动化流程的输出。该研究对将 LLM 智能体引入生产级机器学习流水线具有重要参考价值，尤其适用于推荐、检索等需要持续迭代且实验成本高昂的大规模系统。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "AutoML",
+    "Retrieval",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:58:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体可自主完成模型改动的提出、实现与评估，但线上自动研究涉及异步系统与长周期实验，复杂度远超自包含程序的分钟级迭代",
+      "实验运行完成不等于结论有效：空操作代码改动、数据窗口泄漏、评估器语义偏差等都会导致无效结论",
+      "在智能体驱动的模型开发中应坚持\"验证而非信任\"原则，对改动、数据与评估环节进行系统性校验",
+      "该工作为将 LLM 智能体引入生产级检索与推荐系统的持续迭代流程提供了风险识别与验证框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

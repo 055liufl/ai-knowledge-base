@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-076",
+  "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+  "source_url": "https://arxiv.org/abs/2609.21284",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长运行 AI Agent 的授权撤销问题提出了一种新机制。长运行 AI Agent 通过凭证、委托任务、队列、回调、预留和提供商侧操作，其生命周期往往超出启动进程。传统的取消、进程退出和凭证撤销无法关闭所有预先建立的载体，也无法区分独立授权的共享工作。作者定义了\"根作用域授权静默\"（root-scoped authorization quiescence）：对于每个显现的接收端（sink），需要一份证书来核算已退役根授权下所有与截断相关的接受操作。该工作填补了 Agent 安全治理中的关键空白，对构建可信、可审计的自主 Agent 系统具有重要价值，尤其适用于需要严格权限管理的企业级和多 Agent 协作场景。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Authorization",
+    "Distributed Systems"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:58:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长运行 AI Agent 的生命周期常超出启动进程，传统取消和凭证撤销机制无法彻底终止其所有衍生操作",
+      "提出\"根作用域授权静默\"概念，通过证书机制核算每个接收端在根授权退役后的所有相关接受操作",
+      "现有撤销机制无法区分独立授权的共享工作与同一根授权下的衍生任务，存在权限混淆风险",
+      "该研究为多 Agent 委托和异步执行场景下的安全治理提供了形式化基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

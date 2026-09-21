@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260921-069",
+  "title": "Fewer Steps, Better Actions: Rethinking Flow-Matching Inference for VLA Policies",
+  "source_url": "https://arxiv.org/abs/2609.21216",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Coda，一种针对基于流匹配（flow matching）的视觉-语言-动作（VLA）策略的推理优化方法。现有 VLA 策略通过动作专家（action expert）的反复评估生成动作块，增加积分步数虽提升推理成本，却未必改善闭环任务成功率。Coda 的核心思路是重新分配积分预算：先由冻结策略完成少量步数的噪声到动作轨迹，再将剩余预算用于一次轻量级的学习式端点校正（endpoint correction）。这一设计在保持低推理成本的同时，通过单次校正提升最终动作质量，从而在闭环控制中取得更优表现。该工作值得关注，因为它挑战了“更多积分步数=更好动作”的直觉假设，为 VLA 策略的高效推理提供了新范式，对机器人操作、具身智能等实时性要求高的应用具有直接价值，也为流匹配模型的推理加速与质量权衡研究提供了新视角。",
+  "tags": [
+    "VLA",
+    "Flow Matching",
+    "Robotics",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:58:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "增加流匹配积分步数会提高推理成本，但不一定提升闭环任务成功率，存在预算分配不合理的问题。",
+      "Coda 将部分积分预算重新分配给单次学习式端点校正，在少步轨迹基础上提升动作质量。",
+      "该方法在冻结策略上即插即用，兼顾推理效率与闭环性能，适合实时机器人控制场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

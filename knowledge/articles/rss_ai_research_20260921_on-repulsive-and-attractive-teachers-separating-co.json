@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260921-093",
+  "title": "On Repulsive and Attractive Teachers: Separating Correctness from Behavior in Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2609.21561",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究在线自蒸馏（on-policy self-distillation）中一个被忽视的问题：特权信息（privileged information）不仅会改变教师模型的知识正确性，还会改变其行为模式，导致学生模型在学习正确性信号的同时，意外吸收了非预期的行为偏移。作者将这种现象区分为“吸引性教师”（attractive teacher）与“排斥性教师”（repulsive teacher），前者指行为偏移带来有益影响，后者指行为偏移带来有害影响。通过在推理任务上的对比实验，论文揭示了正确性学习信号与行为变化之间的纠缠关系，并提出需要将二者分离的视角。该工作对理解自蒸馏训练动态、设计更可控的蒸馏目标具有重要价值，尤其适用于依赖特权信息进行推理增强的 LLM 训练场景。",
+  "tags": [
+    "Self-Distillation",
+    "LLM",
+    "Reasoning",
+    "Training Dynamics"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "特权信息在自蒸馏中不仅传递正确性知识，还会引发教师模型的行为偏移，二者相互纠缠。",
+      "行为偏移可被区分为吸引性（有益）与排斥性（有害）两类，影响学生模型的学习效果。",
+      "在推理任务中，需要将正确性信号与行为变化分离，以实现更可控的自蒸馏训练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

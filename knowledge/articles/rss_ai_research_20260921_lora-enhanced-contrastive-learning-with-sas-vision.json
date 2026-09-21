@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-004",
+  "title": "LoRA Enhanced Contrastive Learning with SAS Vision Transformers",
+  "source_url": "https://arxiv.org/abs/2609.21061",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对合成孔径声纳（SAS）自动目标识别（ATR）中目标图像稀缺、背景杂波强以及依赖人工评估等挑战，提出了一种基于 DINOv3 Vision Transformer 的三阶段参数高效微调框架。第一阶段采用低秩适配（LoRA）并冻结 ViT 主干网络，以弥合自然图像预训练模型与水下声纳域之间的差距；后续阶段结合对比学习策略进一步提升特征判别能力。该方法在数据受限的水下场景中实现了高效迁移学习，显著降低了可训练参数量，同时保持了较强的识别性能。该工作值得关注，因为它将 LoRA 这一在大语言模型中广泛验证的参数高效技术成功迁移至水下视觉 Transformer 领域，为军事与海洋工程中的小样本 ATR 提供了新思路，并展示了预训练视觉基础模型在非自然图像域中的适应潜力。",
+  "tags": [
+    "LoRA",
+    "Vision Transformer",
+    "Contrastive Learning",
+    "ATR",
+    "SAS"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:55:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoRA 微调可有效适配 DINOv3 ViT 至水下 SAS 域，在冻结主干的同时大幅减少可训练参数。",
+      "三阶段参数高效框架结合对比学习，缓解了 SAS 目标图像稀缺与背景杂波问题。",
+      "该工作验证了自然图像预训练视觉基础模型向非自然图像域（声纳）迁移的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

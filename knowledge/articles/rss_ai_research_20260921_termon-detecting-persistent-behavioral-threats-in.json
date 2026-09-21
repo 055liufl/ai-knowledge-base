@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260921-106",
+  "title": "TERMon: Detecting Persistent Behavioral Threats in Edge AI via Hardware-Native Ternary Runtime Monitor",
+  "source_url": "https://arxiv.org/abs/2609.21713",
+  "source_platform": "rss_ai_research",
+  "summary": "TERMon 是一种面向边缘 AI 加速器的硬件原生运行时监控器，旨在检测安全关键场景中难以察觉的持续性行为威胁。在边缘 AI 部署中，模型输出可能直接控制物理执行器、做出访问控制决策或触发警报，但模型损坏、分布漂移和对抗性输入往往仍会产生格式正确且高置信度的预测，导致运行时故障难以被发现。TERMon 通过硬件层面的轻量级监控机制，利用三值（ternary）运行时分析来捕捉模型行为的异常模式，从而在推理过程中实时识别潜在威胁。该工作值得关注的原因在于：它填补了边缘 AI 安全监控的空白，将检测能力下沉到硬件层，避免了纯软件方案的开销和延迟问题，同时针对的是现有方法容易忽略的'高置信度错误'这一关键盲区。对于安全关键型边缘 AI 应用（如自动驾驶、工业控制、医疗设备）而言，TERMon 提供了一种低开销、高实时性的防护思路，有望推动可信边缘 AI 的硬件-软件协同设计。",
+  "tags": [
+    "Edge AI",
+    "Runtime Monitoring",
+    "AI Safety",
+    "Hardware Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T15:00:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "边缘 AI 在安全关键场景中，模型损坏、分布漂移和对抗输入仍可产生高置信度且格式正确的预测，导致运行时故障难以被传统方法检测。",
+      "TERMon 将监控机制硬件原生化，以轻量级三值运行时分析实现低开销、低延迟的持续行为威胁检测。",
+      "该工作针对的是现有安全监控容易忽略的'高置信度错误'盲区，对可信边缘 AI 部署具有重要补充价值。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

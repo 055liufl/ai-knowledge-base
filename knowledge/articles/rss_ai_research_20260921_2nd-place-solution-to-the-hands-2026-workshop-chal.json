@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-090",
+  "title": "2nd Place Solution to the HANDS 2026 Workshop Challenge-Dexterous Grasp Motion Track: Single-Shot Trajectory Warping for Grasp Motion Generation",
+  "source_url": "https://arxiv.org/abs/2609.21511",
+  "source_platform": "rss_ai_research",
+  "summary": "本报告介绍了 HANDS 2026 研讨会挑战赛（灵巧抓取运动赛道，与 ECCV 2026 联合举办）的第二名解决方案。任务目标是为 12 自由度 LinkerHand O6 机械手生成物理合理的抓取运动，即在仿真环境中，从随机初始手部姿态出发，对未见过的物体生成完整的“接近—抓取—抬升”轨迹。该任务的难点在于每一步动作都需要满足物理约束，且需要泛化到新物体与随机初始状态。作者提出了一种“单次轨迹变形”（Single-Shot Trajectory Warping）方法，通过一次性生成并调整轨迹来避免逐步策略的累积误差与高计算成本。该方案在挑战赛中取得第二名，展示了在灵巧手抓取运动生成中结合轨迹优化与泛化能力的有效性。对于机器人操作、灵巧抓取与运动规划领域的研究者和开发者而言，该工作提供了一种可复现的竞赛级基线，并揭示了单次生成范式在复杂接触任务中的潜力。",
+  "tags": [
+    "Dexterous Grasping",
+    "Motion Generation",
+    "Robotics",
+    "Trajectory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出单次轨迹变形方法，避免逐步策略的累积误差，提升抓取运动生成的稳定性。",
+      "在 12-DoF 灵巧手 LinkerHand O6 上验证，能够从随机初始姿态对未见物体生成物理合理的接近—抬升轨迹。",
+      "该方案在 HANDS 2026 挑战赛灵巧抓取运动赛道中获得第二名，可作为该任务的强基线。",
+      "展示了轨迹级优化在复杂接触任务中相比逐步策略的泛化优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

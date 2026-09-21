@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-041",
+  "title": "MIST: Multimodal Survival Prediction with Genomic-Guided Histology Attention",
+  "source_url": "https://arxiv.org/abs/2609.21811",
+  "source_platform": "rss_ai_research",
+  "summary": "MIST 是一种面向多模态生存预测的新方法，旨在融合全切片病理图像（WSI）与基因组数据以提升预后建模能力。该研究针对多模态融合中的两大核心挑战——外部队列分布偏移（cohort shift）与计算复杂度——提出以基因组特征作为 token，通过注意力机制引导对紧凑的病理基础模型特征进行查询与聚合。这种\"基因组引导的组织学注意力\"设计使模型能够动态聚焦于与患者基因背景最相关的组织形态区域，从而在降低计算开销的同时增强跨队列泛化能力。该工作值得关注的原因在于：生存预测是精准肿瘤学的关键任务，而现有方法往往难以兼顾多模态信息整合效率与外部验证稳健性；MIST 通过将基因组作为查询、组织学作为键值的非对称注意力架构，为多模态医学 AI 提供了一种可扩展且鲁棒的融合范式，对计算病理学与临床预后研究具有参考价值。",
+  "tags": [
+    "Multimodal",
+    "Computational Pathology",
+    "Survival Analysis",
+    "Attention",
+    "Genomics"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:57:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "以基因组特征作为查询 token、病理基础模型特征作为键值，实现基因组引导的组织学注意力融合，兼顾互补信息整合与计算效率。",
+      "针对外部队列分布偏移问题，紧凑的病理特征表示与注意力机制有助于提升跨队列泛化稳健性。",
+      "将全切片图像与基因组数据统一到 token 化框架中，为多模态生存预测提供了一种可扩展的融合范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

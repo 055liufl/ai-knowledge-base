@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-101",
+  "title": "Outcome-Conditioned End-Effector Geometry Across Vision-Language-Action Policies",
+  "source_url": "https://arxiv.org/abs/2609.21659",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对视觉-语言-动作（VLA）策略在相同操作任务中通过不同动作接口执行时，任务成功是否意味着物理执行一致的问题，对四种策略在 LIBERO 环境中产生的 15,000 次闭环 rollout 进行了跨策略末端执行器几何分析。研究构建了 3,600 个配置匹配的策略对，并发现即使两个策略都成功完成任务，其末端执行器轨迹的中位归一化差异仍然显著，表明任务成功指标无法充分反映物理执行的一致性。这项工作首次系统性地量化了 VLA 策略在动作空间层面的分歧，揭示了当前评估范式的一个关键盲区：仅以成功率衡量策略性能可能掩盖执行层面的巨大差异。对于机器人学习、具身智能和 VLA 模型评估领域，该研究提供了新的分析视角和实证证据，提示未来需要引入执行几何一致性等更细粒度的评估维度，对策略部署的安全性和可复现性具有重要参考价值。",
+  "tags": [
+    "VLA",
+    "Robotics",
+    "Embodied AI",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务成功并不等价于物理执行一致：即使两个 VLA 策略都成功完成同一操作任务，其末端执行器几何轨迹仍存在显著差异。",
+      "研究基于 15,000 次 LIBERO 闭环 rollout 和 3,600 个配置匹配策略对，提供了跨策略执行几何差异的大规模实证证据。",
+      "当前 VLA 评估过度依赖任务成功率，忽略了动作接口和执行层面的分歧，可能掩盖部署中的安全与可复现性风险。",
+      "未来需要引入执行几何一致性等细粒度指标，以更全面地评估和比较 VLA 策略的物理行为。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

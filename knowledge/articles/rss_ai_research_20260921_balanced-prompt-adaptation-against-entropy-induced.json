@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-108",
+  "title": "Balanced Prompt Adaptation against Entropy-Induced Collapse for Test-Time Binary Segmentation",
+  "source_url": "https://arxiv.org/abs/2609.21743",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对测试时自适应（TTA）中熵最小化目标在二值分割任务上的失效问题展开研究。作者指出，与图像分类不同，密集分割会聚合数千个像素预测，导致预测占多数的类别主导参数更新，将少数类预测拉向自身，最终随着预测饱和、熵梯度消失而产生退化掩码。论文从理论上建立了这种“熵诱导崩溃”的机制，并提出了一种平衡提示自适应（Balanced Prompt Adaptation）方法，通过在提示层面进行平衡调整来缓解类别不平衡带来的崩溃问题。该工作值得关注，因为它揭示了TTA在密集预测任务中一个被忽视的失败模式，并给出了理论解释与实用解决方案，对医学影像分割、遥感等类别不平衡场景下的测试时自适应具有重要参考价值。",
+  "tags": [
+    "Test-Time Adaptation",
+    "Segmentation",
+    "Entropy Minimization",
+    "Prompt Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T15:00:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "熵最小化在密集二值分割中会因类别不平衡导致多数类主导更新，引发预测饱和与梯度消失的崩溃现象",
+      "论文从理论上建立了熵诱导崩溃的机制，解释了TTA在分割任务中失效的原因",
+      "提出平衡提示自适应方法，通过在提示层面进行平衡调整来缓解崩溃问题",
+      "该工作对医学影像等类别不平衡场景下的测试时自适应具有实际指导意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

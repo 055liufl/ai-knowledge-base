@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-002",
+  "title": "Attention-Aware Routing: Coupling Routing and Attention in MoEs",
+  "source_url": "https://arxiv.org/abs/2609.20974",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Attention-Aware Routing (AAR)，一种针对混合专家（MoE）语言模型的路由改进方法。传统 MoE 路由器仅依据当前 token 的隐藏状态来选择与加权专家，所利用的上下文信息非常有限。AAR 的核心创新在于将路由器与注意力机制耦合：从注意力权重的滑动窗口中提取时间域与频谱域特征，作为模型上下文状态的摘要，并将其与隐藏状态解耦后输入路由器。这样，路由决策不再只依赖单 token 表示，而是融入了更丰富的上下文信息，从而可能提升专家选择的准确性与模型整体性能。该工作属于 MoE 架构与注意力机制交叉方向的研究，对理解路由与注意力之间的信息流动具有启发意义，也为大规模稀疏模型的效率与效果优化提供了新思路。",
+  "tags": [
+    "MoE",
+    "Attention",
+    "LLM",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:55:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 MoE 路由器仅依赖 token 隐藏状态，上下文信息有限，限制了专家选择的准确性。",
+      "AAR 从注意力权重的滑动窗口中提取时间与频谱特征，作为上下文状态的摘要。",
+      "将路由与注意力耦合，使路由决策融入更丰富的上下文信息，且与隐藏状态解耦。",
+      "该方向为 MoE 架构优化提供了新视角，可能提升稀疏模型的效率与效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

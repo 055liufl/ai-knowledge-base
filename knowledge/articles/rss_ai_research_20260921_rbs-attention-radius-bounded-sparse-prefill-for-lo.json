@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-001",
+  "title": "RBS-Attention: Radius-Bounded Sparse Prefill for Long-Context Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.20971",
+  "source_platform": "rss_ai_research",
+  "summary": "RBS-Attention 是一种针对长上下文大语言模型（LLM）推理的免训练稀疏预填充方法，旨在解决预填充阶段密集自注意力计算成本过高的问题。现有稀疏块选择方法存在“均值稀释”（mean dilution）失败模式：块质心可能掩盖块内真正高度相关的 token，导致关键信息被忽略。RBS-Attention 通过两个互补的选择分支来缓解这一问题：一个基于质心的基础分支，以及一个半径约束的稀疏分支，后者在块内以 token 为中心进行半径有界搜索，从而更精确地捕获相关 token。该方法无需额外训练，可直接应用于现有模型，在保持生成质量的同时显著降低长上下文预填充的计算开销。该工作值得关注，因为它直面长上下文推理的核心瓶颈——预填充效率，并提出了一种轻量、可插拔的解决方案，对推动长上下文 LLM 的实际部署具有重要意义。",
+  "tags": [
+    "LLM",
+    "Long Context",
+    "Sparse Attention",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:55:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文 LLM 推理的主要瓶颈在预填充阶段，密集自注意力处理整个提示导致计算成本高昂。",
+      "现有稀疏块选择方法存在均值稀释问题：块质心可能掩盖块内真正相关的 token。",
+      "RBS-Attention 提出免训练的双分支稀疏预填充方法，通过半径有界的 token 级选择缓解均值稀释。",
+      "该方法可直接应用于现有模型，无需额外训练，具有较好的实用性和部署潜力。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-007",
+  "title": "TinyCeNN-LM: Quality-Gated Conversion of Pretrained Attention with CeNN-Inspired Cellular-Recurrent Layers",
+  "source_url": "https://arxiv.org/abs/2609.21139",
+  "source_platform": "rss_ai_research",
+  "summary": "TinyCeNN-LM 提出了一种质量门控的预训练注意力转换框架，旨在用受细胞神经网络（CeNN）启发的细胞循环层替换预训练语言模型中的注意力机制。该方法的核心挑战在于：注意力替换是一个兼容性问题，简单的替代可能改变后续层所期望的表示。为此，作者设计了包含有界局部处理、紧凑循环记忆、路由、融合以及接受或回滚验证的机制。研究考察了三种实现：集成记忆、记忆融合等。该工作值得关注，因为它探索了在保持预训练模型质量的前提下，将注意力替换为更高效的循环结构，可能为降低推理成本、提升长序列处理能力提供新路径，同时质量门控和回滚机制为模型转换的安全性提供了保障。",
+  "tags": [
+    "Attention Replacement",
+    "Recurrent Networks",
+    "Model Conversion",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:55:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力替换本质上是兼容性问题，需确保后续层接收到的表示不被破坏",
+      "质量门控与接受或回滚验证机制可保障转换后模型的质量",
+      "CeNN 启发的细胞循环层结合有界局部处理与紧凑记忆，可能降低计算复杂度",
+      "该框架为预训练模型的高效改造提供了可验证的转换范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

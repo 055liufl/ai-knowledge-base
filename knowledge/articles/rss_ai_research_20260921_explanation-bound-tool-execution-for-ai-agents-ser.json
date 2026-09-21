@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-132",
+  "title": "Explanation-Bound Tool Execution for AI Agents: Server-Verified Action Claims Without Trusting Model Rationales",
+  "source_url": "https://arxiv.org/abs/2607.25364",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Explanation-Bound Tool Execution (EBTE)，一种面向工具调用型 AI Agent 的「声明携带式」中介层。当前 Agent 在发起结构化工具调用时，常附带自由文本形式的推理说明（rationale），但这些说明既不能作为授权依据，也不是可靠的内省信号，存在被模型幻觉、提示注入或恶意构造利用的风险。EBTE 的核心思路是将 rationale 中与决策相关的内容转换为「类型化动作声明」（typed action claims），再由服务端依据自身持有的意图、策略、载荷、工具、风险、来源与时效性等事实进行校验，从而在不信任模型自述理由的前提下，对 Agent 的实际动作进行验证与约束。该工作值得关注，因为它把 Agent 安全从「信任模型解释」转向「服务端可验证声明」，为工具调用权限控制、审计与防注入提供了新的工程范式，对构建高可靠 Agent 系统具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "AI Safety",
+    "Access Control"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T15:01:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型给出的自由文本 rationale 不能作为授权或可靠内省，Agent 安全不应建立在对解释的信任之上。",
+      "EBTE 将决策相关的解释内容转化为类型化动作声明，并由服务端结合意图、策略、载荷、工具、风险、来源和时效等事实进行校验。",
+      "该机制无法扩大基线权限，意味着它在设计上以「不增权」为约束，适合作为工具调用的中介与审计层。",
+      "该方法为防御提示注入、越权工具调用和不可信模型输出提供了可验证的工程路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

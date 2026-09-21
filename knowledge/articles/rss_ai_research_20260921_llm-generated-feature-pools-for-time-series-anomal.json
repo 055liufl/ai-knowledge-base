@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-040",
+  "title": "LLM-Generated Feature Pools for Time Series Anomaly Detection",
+  "source_url": "https://arxiv.org/abs/2609.21801",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了一个简单的统计流水线在单变量时间序列异常检测中的表现，并引入LLM生成的特征池来增强特征选择。方法在滑动窗口上提取少量统计量，使用转导鲁棒（MAD）模型对每个窗口评分，并在留出的调优集上为每个领域选择特征子集。在TSB-AD-U基准上，该方法达到0.529的每序列VUS-PR，超过了最佳神经方法（0.45）和统计方法（0.44）。这项工作值得关注，因为它挑战了复杂深度学习模型在时间序列异常检测中的主导地位，表明精心设计的简单统计特征结合LLM生成的特征池和严格的选择协议，可以在性能上显著优于现有方法。这为时间序列异常检测提供了一种高效、可解释且计算成本低的替代方案，并展示了LLM在特征工程中的潜力。",
+  "tags": [
+    "Time Series",
+    "Anomaly Detection",
+    "LLM",
+    "Feature Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:57:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "简单的统计特征池结合严格的特征选择协议，在单变量时间序列异常检测中可超越复杂的神经网络和传统统计方法。",
+      "LLM生成的特征池为时间序列异常检测提供了新的特征工程思路，可能提升模型性能。",
+      "转导鲁棒（MAD）模型在窗口评分中表现出色，结合领域特定的特征子集选择，实现了最先进的结果。",
+      "该研究强调了在时间序列异常检测中，简单方法结合精心设计的选择协议可能比端到端深度学习更有效。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

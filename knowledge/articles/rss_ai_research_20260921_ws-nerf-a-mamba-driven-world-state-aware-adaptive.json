@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260921-083",
+  "title": "WS-NeRF: A Mamba-Driven World-State-Aware Adaptive Deblurring Neural Radiance Field",
+  "source_url": "https://arxiv.org/abs/2609.21391",
+  "source_platform": "rss_ai_research",
+  "summary": "WS-NeRF 提出了一种基于 Mamba 架构的世界状态感知自适应去模糊神经辐射场方法，旨在解决真实场景中因运动模糊等退化导致 NeRF 重建质量下降的问题。现有 NeRF 方法通常假设输入为高质量清晰图像，但实际采集的图像常受模糊影响，严重制约三维重建与新视角合成的效果。该工作引入 Mamba 状态空间模型来建模场景的全局世界状态，并设计自适应去模糊机制，使网络能够在重建过程中动态感知并补偿模糊退化。其核心创新在于将 Mamba 的高效序列建模能力与 NeRF 的隐式三维表示相结合，实现端到端的鲁棒重建。该研究值得关注，因为它首次系统性地将 Mamba 引入去模糊 NeRF 任务，为真实世界退化条件下的三维重建提供了新思路，有望推动 NeRF 在移动端、机器人视觉等实际场景中的落地应用。",
+  "tags": [
+    "NeRF",
+    "Mamba",
+    "Deblurring",
+    "3D Reconstruction"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:58:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次将 Mamba 状态空间模型引入 NeRF 去模糊任务，利用其高效序列建模能力捕捉场景全局世界状态。",
+      "提出世界状态感知的自适应去模糊机制，使 NeRF 在模糊输入下仍能保持高质量三维重建。",
+      "针对真实场景中图像模糊退化问题，为 NeRF 的鲁棒性提升提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

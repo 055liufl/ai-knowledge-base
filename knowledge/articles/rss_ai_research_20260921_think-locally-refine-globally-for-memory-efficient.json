@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-085",
+  "title": "Think Locally, Refine Globally for Memory-Efficient 3D Reconstruction",
+  "source_url": "https://arxiv.org/abs/2609.21437",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 LoG-VGGT，一种面向长序列 3D 重建的内存高效框架，核心思想是“局部思考、全局精炼”（Think Locally, Refine Globally）。传统方法依赖全全局注意力来保证相机一致性，但随序列长度增长，显存占用呈平方级上升，难以处理长视频或大规模场景。LoG-VGGT 的做法是在少量 transformer 块中引入跨窗口注意力（cross-window attention），让信息在相邻时间窗口之间传播，同时将内存占用控制在有界范围内；其余大部分块仍保持局部时序建模。为缓解长期位姿漂移问题，作者进一步设计了全局精炼机制（摘要在此处截断，推测为全局位姿优化或回环校正模块）。该工作值得关注的原因在于：长序列 3D 重建（如长视频 SLAM、大规模场景重建）是机器人、AR/VR 和自动驾驶中的关键问题，而内存瓶颈一直是限制 Transformer 类方法落地的核心障碍。LoG-VGGT 通过“稀疏全局交互 + 局部密集建模”的折中策略，在不牺牲全局一致性的前提下显著降低显存需求，为长序列视觉几何任务提供了可扩展的新思路，对研究者和工程落地均有参考价值。",
+  "tags": [
+    "3D Reconstruction",
+    "Transformer",
+    "Efficient Attention",
+    "SLAM"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用少量跨窗口注意力块替代全全局注意力，在相邻时间窗口间传播信息，使内存占用有界，解决长序列重建的显存瓶颈。",
+      "局部时序建模与全局相机一致性需要平衡：密集局部建模保证效率，稀疏全局交互保证一致性。",
+      "长期位姿漂移是长序列重建的核心难题，需要额外的全局精炼机制来校正。",
+      "该思路对长视频 SLAM、大规模场景重建等内存敏感任务具有可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

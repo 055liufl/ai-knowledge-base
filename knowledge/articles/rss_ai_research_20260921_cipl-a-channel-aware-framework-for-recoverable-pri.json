@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260921-105",
+  "title": "CIPL: A Channel-Aware Framework for Recoverable Privacy Leakage in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.21686",
+  "source_platform": "rss_ai_research",
+  "summary": "CIPL（Channel Inversion for Privacy Leakage）是一个针对 LLM Agent 隐私泄露问题的通道感知评估框架，发表于 arXiv（编号 2609.21686）。现有研究通常将隐私泄露评估局限在单个组件（如记忆模块、检索模块或工具调用流水线）内部，这导致难以区分「内部暴露」与「外部观察者实际可恢复的信息」之间的差异。CIPL 的核心创新在于将隐私泄露建模为信息通过 Agent 各组件构成的「通道」进行传输与反演的过程，从而在黑盒条件下评估外部攻击者真正能够还原出的敏感信息。该框架将目标表示为敏感源、选择机制与可观测输出之间的映射关系，强调从攻击者视角衡量可恢复性而非仅仅检测内部数据流动。这一工作值得关注，因为它为 LLM Agent 隐私评估提供了更贴近真实威胁模型的度量方式，有助于安全研究者与开发者更准确地定位隐私风险边界，并推动 Agent 系统在记忆、检索与工具调用等环节的隐私防护设计。",
+  "tags": [
+    "LLM Agent",
+    "Privacy",
+    "Security",
+    "Evaluation Framework"
+  ],
+  "author": null,
+  "published_at": "2026-09-21T14:53:33Z",
+  "collected_at": "2026-09-21T14:59:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM Agent 隐私评估多聚焦单一组件内部暴露，无法反映外部观察者实际可恢复的信息量",
+      "CIPL 将隐私泄露建模为通道反演问题，在黑盒条件下评估敏感信息的可恢复性",
+      "该框架区分内部暴露与外部可恢复信息，为隐私风险评估提供了更贴近真实威胁模型的度量",
+      "通道感知视角有助于在记忆、检索和工具调用等环节更精准地定位隐私防护重点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
