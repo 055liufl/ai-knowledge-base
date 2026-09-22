@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260922-109",
+  "title": "ForceTwin: Physics-informed Digital Twins for Robotic Manipulation from Instrumented Human Interaction",
+  "source_url": "https://arxiv.org/abs/2609.21751",
+  "source_platform": "rss_ai_research",
+  "summary": "ForceTwin 提出了一种从人类交互数据中构建机器人操作物理信息数字孪生（Digital Twins）的方法。传统数字孪生管线主要依赖视觉信息重建物体的几何与运动学，但无法捕捉惯性、摩擦、弹簧或闭门器等机构随构型和速度变化的物理属性——这些属性直接决定操作所需的力，且无法从外观推断（例如视觉上相同的门可能开启力度差异巨大）。ForceTwin 的核心思路是利用仪器化的人类交互（instrumented human interaction）采集力与运动数据，结合物理先验构建可微或参数化的动力学模型，从而为铰接物体（articulated objects）生成包含物理属性的数字孪生。该工作值得关注的原因在于：它弥合了视觉重建与物理交互之间的鸿沟，使机器人能够在仿真中预演并泛化到真实操作任务，减少对大量真实世界试错的依赖；同时，利用人类演示作为物理属性监督信号，为数据高效的机器人学习提供了新范式，对具身智能、Sim-to-Real 迁移和灵巧操作研究具有潜在推动作用。",
+  "tags": [
+    "Robotics",
+    "Digital Twin",
+    "Sim-to-Real",
+    "Physical Reasoning",
+    "Manipulation"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:15:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉上相同的铰接物体可能具有截然不同的物理属性（惯性、摩擦、弹簧机构），仅靠外观无法推断操作所需的力。",
+      "仪器化的人类交互数据可作为物理属性监督信号，弥补传统数字孪生管线缺失的动力学信息。",
+      "构建包含物理属性的数字孪生有助于机器人操作策略在仿真中预演并迁移到真实世界，提升数据效率。",
+      "该方法面向铰接物体，强调物理属性随构型和速度变化的动态特性，而非静态参数估计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

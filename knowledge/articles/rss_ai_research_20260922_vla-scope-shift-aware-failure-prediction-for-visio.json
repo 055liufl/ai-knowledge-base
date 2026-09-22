@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260922-073",
+  "title": "VLA-Scope: Shift-Aware Failure Prediction for Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2609.21246",
+  "source_platform": "rss_ai_research",
+  "summary": "VLA-Scope 是一篇针对视觉-语言-动作（VLA）模型可靠性问题的研究论文。VLA 模型能够将视觉观察和自然语言指令映射为机器人动作，但在分布偏移（distribution shift）条件下其可靠性会显著下降。论文指出，仅检测输入是否属于分布外（OOD）样本并不足以预测执行失败，因为模型在 OOD 条件下仍可能成功完成任务。为此，作者提出了 VLA-Scope 这一两阶段框架，将输入偏移特征刻画与执行历史信息相结合，用于预测 VLA 模型在偏移场景下的失败风险。该工作值得关注的原因在于：随着 VLA 模型在机器人控制领域的广泛应用，如何提前预判其执行失败成为部署安全的关键问题；传统 OOD 检测思路存在根本性局限，而 VLA-Scope 提出的 shift-aware 失败预测范式为提升具身智能系统的可靠性提供了新思路，对机器人学习、安全部署和 OOD 泛化研究均有参考价值。",
+  "tags": [
+    "VLA",
+    "OOD Detection",
+    "Robotics",
+    "Failure Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:13:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅检测 OOD 输入不足以预测 VLA 模型的执行失败，因为模型在分布偏移下仍可能成功",
+      "VLA-Scope 采用两阶段框架，将输入偏移特征与执行历史信息结合进行失败预测",
+      "该工作为具身智能系统的安全部署提供了 shift-aware 的可靠性评估新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

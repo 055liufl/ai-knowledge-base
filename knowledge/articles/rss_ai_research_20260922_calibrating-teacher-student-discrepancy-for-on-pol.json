@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260922-033",
+  "title": "Calibrating Teacher--Student Discrepancy for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.21619",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对在线策略蒸馏（On-Policy Distillation, OPD）中教师-学生差异（teacher-student discrepancy）的校准问题展开研究。OPD 通过让学生模型在自身生成的轨迹上学习与更强教师模型之间的 token 级差异来提升推理能力，但作者指出，这种观测到的差异并非纯粹反映教师与学生的能力差距，还混杂了教师自身产生的偏差。标准 OPD 在训练中不加区分地学习这些混合信号，可能导致学生模型继承教师的不良行为。该工作提出对教师-学生差异进行校准，以分离出真正反映能力差距的部分，从而提升蒸馏效果。这一研究对推理模型的高效训练与知识迁移具有重要意义，尤其在大模型蒸馏日益依赖在线策略采样的趋势下，为提升蒸馏信号的纯度与训练稳定性提供了新思路。",
+  "tags": [
+    "Distillation",
+    "LLM",
+    "Reasoning",
+    "Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:12:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏中观测到的教师-学生差异并非纯粹的能力差距，还混杂了教师自身的偏差",
+      "标准 OPD 不加区分地学习混合差异信号，可能让学生继承教师的不良行为",
+      "对差异进行校准、分离出真实能力差距，有望提升推理模型蒸馏的纯度与效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260922-018",
+  "title": "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent",
+  "source_url": "https://arxiv.org/abs/2609.21267",
+  "source_platform": "rss_ai_research",
+  "summary": "本文基于一个服务数万月活用户的生产级分析型 LLM Agent 的真实部署经验，研究了如何在 Agent 持续演进过程中进行高效、可重复的基准测试。作者利用 574 次历史生产基准运行记录，按时间顺序划分为校准期与留出期，系统比较了随机采样、历史缓存和固定重复等评估策略。该研究直面生产环境中全量基准测试成本高昂、难以频繁执行的痛点，提出并验证了在 Agent 迭代过程中以较低成本获得可靠评估结果的方法。其价值在于将学术基准测试方法落地到真实生产系统，为工程团队提供了可操作的评估效率与可靠性权衡依据，对构建和维护长期运行的 LLM Agent 具有重要参考意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmarking",
+    "Evaluation",
+    "Production"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:11:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产级 LLM Agent 的评估需要兼顾成本与可靠性，全量基准测试难以频繁执行。",
+      "利用历史运行数据进行缓存和采样，可以在 Agent 演进过程中实现高效重复评估。",
+      "按时间划分校准期与留出期的实验设计，为评估策略的泛化性提供了验证基础。",
+      "真实部署经验表明，评估策略的选择会显著影响对 Agent 性能变化的判断。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

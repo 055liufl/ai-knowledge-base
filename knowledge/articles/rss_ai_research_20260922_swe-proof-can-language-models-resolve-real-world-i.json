@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-067",
+  "title": "SWE-Proof: Can Language Models Resolve Real-World Issues with Machine-Checked Proofs?",
+  "source_url": "https://arxiv.org/abs/2609.21190",
+  "source_platform": "rss_ai_research",
+  "summary": "SWE-Proof 是一项针对语言模型（LLM）在真实软件工程场景中生成代码正确性验证的新基准研究。现有 agentic 代码生成基准通常依赖留出测试集来验证正确性，但测试集本身不完整，且随着模型规模扩大，训练数据污染和记忆问题日益严重。形式化验证可以规避这两个问题，但此前的工作仅覆盖独立任务，其规格说明作为输入提供，无法处理涉及大型代码仓库和复杂状态的真实 issue。SWE-Proof 旨在填补这一空白，要求语言模型在真实 GitHub issue 场景下生成代码，并输出机器可检查的形式化证明，从而以严格、可验证的方式评估代码正确性。该工作将形式化方法与真实软件工程任务结合，为 LLM 代码生成评估提供了更可靠、抗记忆的范式，对推动可信 AI 编程助手和自动化软件维护具有重要意义。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Code Generation",
+    "Benchmark",
+    "Software Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:13:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有代码生成基准依赖不完整的测试集，且易受数据记忆影响，形式化验证可同时解决这两个问题。",
+      "SWE-Proof 首次将机器可检查证明引入真实 GitHub issue 场景，要求模型处理大型仓库和复杂状态。",
+      "该基准为评估 LLM 生成代码的正确性提供了更严格、抗记忆的替代方案，推动可信 AI 编程发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

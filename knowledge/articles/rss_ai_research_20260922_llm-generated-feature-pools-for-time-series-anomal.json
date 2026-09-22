@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-040",
+  "title": "LLM-Generated Feature Pools for Time Series Anomaly Detection",
+  "source_url": "https://arxiv.org/abs/2609.21801",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了一个简单的统计流水线在单变量时间序列异常检测任务上的性能上限。方法在滑动窗口上提取一组小型统计特征池，使用转导鲁棒（MAD）模型对每个窗口打分，并在留出的调参集上按领域选择特征子集。在 TSB-AD-U 基准上，该方法达到 0.529 的 per-series VUS-PR，超过了最佳神经网络（0.45）和统计方法（0.44）的条目。这项工作值得关注，因为它表明在严格的选择协议下，精心设计的简单统计特征池结合鲁棒评分模型，可以显著优于复杂的神经网络方法，挑战了当前对时间序列异常检测中深度学习必要性的普遍认知，并为该领域提供了一个强有力的、可复现的基线。",
+  "tags": [
+    "Time Series",
+    "Anomaly Detection",
+    "LLM",
+    "Feature Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:12:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "简单的统计特征池结合转导鲁棒（MAD）模型在单变量时间序列异常检测上可超越最佳神经网络和统计方法。",
+      "在 TSB-AD-U 基准上达到 0.529 per-series VUS-PR，显著高于神经网络的 0.45 和统计方法的 0.44。",
+      "按领域在留出调参集上选择特征子集是提升性能的关键步骤。",
+      "该工作为时间序列异常检测提供了一个强有力的简单基线，挑战了深度学习的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

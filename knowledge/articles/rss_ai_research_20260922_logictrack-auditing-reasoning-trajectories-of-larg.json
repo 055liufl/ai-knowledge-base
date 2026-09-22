@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260922-026",
+  "title": "LogicTrack: Auditing Reasoning Trajectories of Large Language Models with Formal Logic Solvers",
+  "source_url": "https://arxiv.org/abs/2609.21492",
+  "source_platform": "rss_ai_research",
+  "summary": "LogicTrack 是一个神经符号（neuro-symbolic）框架，旨在审计大语言模型（LLM）推理轨迹的逻辑有效性。当前 Chain-of-Thought（CoT）推理虽能提升 LLM 表现，但主流优化方法多依赖结果导向的反馈，即只关注最终答案是否正确，而忽略了中间推理步骤在逻辑上是否成立。这导致一种常见问题：模型可能通过逻辑上有缺陷的推理链得出正确答案，即所谓「对答案、错过程」。LogicTrack 通过引入形式逻辑求解器（formal logic solvers）对推理轨迹进行逐步验证，将自然语言推理步骤转化为形式化逻辑表达，并借助求解器检查其一致性与有效性，从而实现对推理过程的细粒度审计。该工作属于神经符号 AI 与 LLM 可解释性、可靠性交叉方向，对提升 LLM 推理的可信度、发现隐藏的推理缺陷、以及为过程级奖励（process reward）提供形式化依据具有重要意义。对于研究 LLM 推理机制、构建更可靠推理系统以及需要高可信推理的应用场景（如数学、法律、科学推理）具有较高参考价值。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Neuro-symbolic",
+    "Formal Verification",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:11:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 CoT 优化多依赖结果反馈，无法保证中间推理步骤的逻辑有效性，存在「答案对但过程错」的隐患。",
+      "LogicTrack 利用形式逻辑求解器对推理轨迹进行逐步审计，将自然语言推理转化为可验证的逻辑形式。",
+      "该框架为过程级奖励和推理可靠性评估提供了形式化基础，有望推动更可信的 LLM 推理系统发展。",
+      "神经符号方法在 LLM 推理验证领域具有潜力，但面临自然语言到形式逻辑转换的准确性与可扩展性挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

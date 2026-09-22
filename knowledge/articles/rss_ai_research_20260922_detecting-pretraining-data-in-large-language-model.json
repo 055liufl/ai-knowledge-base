@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260922-117",
+  "title": "Detecting Pretraining Data in Large Language Models from a Free-Energy Perspective",
+  "source_url": "https://arxiv.org/abs/2609.21888",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出从自由能（free-energy）视角检测大语言模型预训练数据的新方法。传统检测方法仅依赖预测损失（likelihood），但高似然可能源于训练暴露，也可能源于强泛化能力，导致将可预测的非成员样本误判为成员。作者在预测损失与预测熵的联合空间中分析发现，仅基于似然的检测器使用水平边界，无法区分这两类情况。为此，他们引入倾斜边界，将预测损失相对于预测熵进行评估，从而更准确地区分训练数据与非训练数据。该方法为预训练数据检测提供了新的理论视角和实用工具，对模型审计、版权合规、数据溯源以及理解模型记忆与泛化机制具有重要意义。",
+  "tags": [
+    "LLM",
+    "Pretraining Data Detection",
+    "Free Energy",
+    "Model Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:15:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅依赖预测似然的检测器无法区分训练暴露与强泛化，容易将可预测的非成员误判为成员。",
+      "在预测损失与预测熵的联合空间中，使用倾斜边界（损失相对于熵）比水平边界更能有效检测预训练数据。",
+      "自由能视角为预训练数据检测提供了新的理论框架，有助于提升模型审计与数据溯源的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

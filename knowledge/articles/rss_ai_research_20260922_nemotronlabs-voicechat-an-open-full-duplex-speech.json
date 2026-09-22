@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-119",
+  "title": "NemotronLabs VoiceChat: An Open Full-duplex Speech-to-Speech Model with Tool Calling Capabilities",
+  "source_url": "https://arxiv.org/abs/2609.21967",
+  "source_platform": "rss_ai_research",
+  "summary": "NemotronLabs VoiceChat 是一个开源的全双工语音到语音（Speech-to-Speech）模型，其核心创新在于原生集成了工具调用（Tool Calling）能力。该模型架构融合了流式语音编码器、仅解码器语言模型、并行的专用输出流（分别用于智能体文本和结构化函数调用）、用于增量用户转录的辅助 RNN-T 分支，以及流式 TTS 解码器。这种设计使模型能够同时进行聆听、转录、推理和响应，实现真正的全双工交互，而非传统的轮次式语音对话。该工作值得关注的原因在于：它首次将全双工语音交互与工具调用能力结合在一个开源模型中，为构建能够实时与外部工具（如 API、数据库、智能体系统）交互的语音助手提供了新范式。这有望推动语音智能体从简单的问答向复杂的任务执行演进，在客服、智能家居、实时协作等场景具有广泛应用潜力。同时，其开源属性将促进学术界和工业界在语音-语言-工具融合方向的研究与开发。",
+  "tags": [
+    "Speech-to-Speech",
+    "Full-duplex",
+    "Tool Calling",
+    "LLM",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:15:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全双工语音交互与工具调用的原生集成，使模型能在对话中实时调用外部函数，突破传统语音助手的单轮问答限制。",
+      "并行输出流架构（智能体文本、结构化函数调用、用户转录）实现了多任务同步处理，提升了交互效率和响应速度。",
+      "开源特性将加速语音智能体在复杂任务场景（如API调用、数据库查询）中的研究和应用落地。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

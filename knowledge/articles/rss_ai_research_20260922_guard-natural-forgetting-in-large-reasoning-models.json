@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-036",
+  "title": "GUARD: Natural Forgetting in Large Reasoning Models via Guided Answer-Reasoning Distillation",
+  "source_url": "https://arxiv.org/abs/2609.21677",
+  "source_platform": "rss_ai_research",
+  "summary": "GUARD 是一篇针对大型推理模型（LRM）机器遗忘问题的研究论文。随着 LRM 在复杂推理任务中的广泛应用，传统机器遗忘方法面临新的挑战：受保护的事实或不安全的推理逻辑可能在最终答案生成之前的中间思维链（CoT）轨迹中泄露。现有遗忘目标通常只是抑制目标内容或重定向内部表示，但从未明确规定遗忘后的推理轨迹应如何继续，这可能导致幻觉式替代或推理能力退化。GUARD 提出通过引导式答案-推理蒸馏（Guided Answer-Reasoning Distillation）实现「自然遗忘」，即在移除目标知识的同时，引导模型沿着合理、连贯的推理路径继续生成，而非简单压制。该工作对 AI 安全、隐私保护以及合规部署具有重要意义，尤其适用于需要同时保证推理能力与内容安全的场景。",
+  "tags": [
+    "Machine Unlearning",
+    "Chain-of-Thought",
+    "Large Reasoning Models",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:12:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大型推理模型的思维链轨迹可能泄露受保护事实或不安全推理，传统遗忘方法难以覆盖中间步骤",
+      "现有遗忘目标只关注抑制或重定向，未规定遗忘后轨迹的延续方式，易导致幻觉替代",
+      "GUARD 通过引导式答案-推理蒸馏，在遗忘目标内容的同时保持推理路径的自然连贯性",
+      "该工作为 LRM 时代的机器遗忘提供了新范式，兼顾安全性与模型推理能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

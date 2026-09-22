@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260922-076",
+  "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+  "source_url": "https://arxiv.org/abs/2609.21284",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长期运行的 AI 代理（Long-Running AI Agents）在授权撤销方面存在的安全缺口，提出了“根作用域授权静默”（root-scoped authorization quiescence）这一新概念。传统机制如取消操作、进程退出和凭证撤销，无法覆盖代理通过凭证、委托任务、队列、回调、预留以及提供商侧操作等途径延续的生命周期，也无法区分独立授权的共享工作。作者定义了一种形式化方法：对于每一个已显现的接收端（sink），需要提供一份证书，证明在已退役的根授权下，所有与切割相关的接受行为都已被完整记录和终止。该研究对于构建安全、可控的自主代理系统具有重要理论意义，尤其适用于需要严格权限管理的多代理协作、云服务编排和异步任务执行场景。",
+  "tags": [
+    "AI Agent",
+    "Authorization",
+    "Security",
+    "Distributed Systems"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:13:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长期运行的 AI 代理会通过凭证、委托、队列等机制超出初始进程的生命周期，传统撤销手段无法完全终止其行为。",
+      "根作用域授权静默要求为每个接收端提供证书，确保所有与切割相关的接受行为在根授权退役后都被追踪和终止。",
+      "该工作形式化了授权撤销中的共享工作区分问题，为多代理和异步执行环境下的安全控制提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

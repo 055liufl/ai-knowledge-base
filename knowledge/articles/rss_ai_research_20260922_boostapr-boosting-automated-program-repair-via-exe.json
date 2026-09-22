@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260922-129",
+  "title": "BoostAPR: Boosting Automated Program Repair via Execution-Grounded Reinforcement Learning with Dual Reward Models",
+  "source_url": "https://arxiv.org/abs/2605.09134",
+  "source_platform": "rss_ai_research",
+  "summary": "BoostAPR 是一项针对自动化程序修复（Automated Program Repair, APR）的强化学习框架，旨在解决现有方法中执行反馈稀疏、序列级奖励过于粗糙的问题。该框架采用三阶段设计：首先在带有推理轨迹且经过执行验证的演示数据上进行监督微调；其次基于执行结果训练双奖励模型，包括序列级评估器和行级信用分配器，以精确定位真正修复缺陷的代码编辑；最后利用这些奖励信号进行强化学习优化。该工作值得关注的原因在于，它通过引入执行验证的推理轨迹和细粒度的行级信用分配，显著缓解了程序修复中奖励信号稀疏和信用分配模糊的核心难题，有望提升 LLM 在真实代码修复任务中的准确率和可解释性，对 AI 辅助软件开发领域具有重要推动作用。",
+  "tags": [
+    "Program Repair",
+    "Reinforcement Learning",
+    "Reward Model",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:16:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "执行验证的推理轨迹监督微调为强化学习提供了高质量起点，缓解了稀疏反馈问题。",
+      "双奖励模型设计（序列级评估+行级信用分配）能更精确地识别真正修复缺陷的编辑。",
+      "三阶段框架将监督学习、奖励建模与强化学习结合，为程序修复任务提供了系统化解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

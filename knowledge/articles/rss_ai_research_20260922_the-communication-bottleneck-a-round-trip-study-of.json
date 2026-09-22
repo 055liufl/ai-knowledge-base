@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-028",
+  "title": "The Communication Bottleneck: A Round-Trip Study of Tree-Structured Expression Serialization in Language Models",
+  "source_url": "https://arxiv.org/abs/2609.21509",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了语言模型在链式思考或自由文本中间表示中，将结构化信息序列化为自然语言时存在的通信瓶颈问题。作者提出了一种往返协议，用于实证评估树状结构表达式在自然语言序列化过程中的信息保留程度。具体方法为：生成器将程序化生成的算术表达式转换为文字问题，再由独立的提取器从文字中恢复表达式，通过比较原始表达式与恢复表达式来量化信息损失。该研究揭示了当前语言模型在处理复杂树状结构组合内容时的局限性，对理解模型推理能力边界、改进提示工程和中间表示设计具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Chain-of-Thought",
+    "Serialization",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:11:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言模型在自然语言序列化过程中会丢失树状结构表达式的组合信息，形成通信瓶颈。",
+      "提出的往返协议可量化评估结构化信息在自然语言转换中的保真度。",
+      "该瓶颈对依赖链式思考或自由文本中间步骤的推理任务构成根本性限制。",
+      "研究结果提示需要更结构化的中间表示或外部记忆机制来辅助复杂推理。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

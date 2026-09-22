@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-100",
+  "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+  "source_url": "https://arxiv.org/abs/2609.21650",
+  "source_platform": "rss_ai_research",
+  "summary": "SynthDemo-RL 提出了一种教师-学生框架，旨在解决视觉-语言-动作（VLA）模型在稀疏二值奖励下进行强化学习微调时面临的探索难题。传统 VLA 微调依赖人类遥操作演示，成本高且难以规模化；而稀疏奖励 RL 在成功轨迹极少被采样时会出现零奖励障碍。该方法通过自动化教师将仿真器特权状态转换为成功的操作轨迹，再以这些合成演示蒸馏 VLA 学生模型，从而在无需人工演示的情况下突破零奖励瓶颈。该工作值得关注，因为它将 LLM 引导的合成数据生成与 VLA 强化学习微调相结合，为机器人操作策略的自动化训练提供了新范式，有望显著降低数据采集成本并提升稀疏奖励场景下的学习效率。",
+  "tags": [
+    "VLA",
+    "RL",
+    "Synthetic Data",
+    "Robot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:14:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏二值奖励下 VLA 微调面临探索困难，成功轨迹难以采样导致零奖励障碍",
+      "利用仿真器特权状态自动生成成功操作轨迹，可替代昂贵的人类遥操作演示",
+      "教师-学生蒸馏框架将合成演示转化为 VLA 学生策略，实现无人工演示的适应",
+      "LLM 引导的合成演示为机器人操作策略的自动化训练提供了可扩展的新路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

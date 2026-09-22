@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-096",
+  "title": "Micro-Collaborative Poisoning: A Distributed Attack on RAG Systems",
+  "source_url": "https://arxiv.org/abs/2609.21573",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对检索增强生成（RAG）系统的新型分布式投毒攻击——Micro-Collaborative Poisoning（微协作投毒）。传统 RAG 投毒攻击通常将虚假目标声明集中在单个恶意文档中，容易被检测和过滤；而该攻击将虚假声明拆分成多个局部看似合理的片段，分散到多篇文档中，当这些文档被同时检索并输入 LLM 时，模型会将这些碎片信息拼合成攻击者预设的虚假结论。作者在 108 种 RAG 配置上进行了评估，表明该攻击具有较强的普适性和隐蔽性。该研究值得关注，因为它揭示了 RAG 安全中一个被忽视的分布式攻击面：单文档级别的检测机制可能完全失效，而需要跨文档一致性验证和来源可信度评估。对于构建企业级 RAG 应用的开发者而言，这意味着现有的内容过滤和异常检测策略需要升级，以应对碎片化、协作式的对抗性信息注入。",
+  "tags": [
+    "RAG",
+    "Security",
+    "Adversarial Attack",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:14:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Micro-Collaborative Poisoning 将虚假声明拆分到多篇局部合理的文档中，绕过单文档级别的投毒检测机制。",
+      "该攻击在 108 种 RAG 配置上均有效，说明分布式投毒对 RAG 系统具有广泛的威胁面。",
+      "防御 RAG 投毒需要从单文档过滤转向跨文档一致性验证与来源可信度评估。",
+      "RAG 对外部知识的依赖在提升生成质量的同时，也引入了碎片化对抗信息注入的新风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

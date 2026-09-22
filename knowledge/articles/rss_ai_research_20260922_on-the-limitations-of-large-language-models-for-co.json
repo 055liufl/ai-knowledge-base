@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-130",
+  "title": "On the Limitations of Large Language Models for Conceptual Database Modeling",
+  "source_url": "https://arxiv.org/abs/2605.11986",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）在关系数据库概念建模中的局限性，具体任务是从自然语言需求自动生成实体-关系（ER）图。作者结合多种语言模型与提示工程技巧，评估模型识别实体、关系和属性并保持概念一致性的能力。实验表明，尽管LLM在简单场景下能生成看似合理的ER元素，但在复杂需求、多实体关联、基数约束和属性归属等关键建模任务上表现不佳，常出现遗漏、冗余或逻辑矛盾。该研究提醒开发者：LLM目前尚不能可靠替代人工概念建模，尤其在需要严格语义一致性的数据库设计场景中。其价值在于为LLM辅助软件工程提供了实证边界，并指出未来需结合领域知识、结构化验证或混合方法才能提升实用性。",
+  "tags": [
+    "LLM",
+    "Database",
+    "Conceptual Modeling",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:16:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在从自然语言生成ER图时，对实体、关系和属性的识别在简单需求下尚可，但复杂场景下概念一致性显著下降。",
+      "提示工程能部分改善输出，但无法根本解决模型在基数约束、属性归属和关系完整性上的逻辑错误。",
+      "当前LLM不适合独立完成数据库概念建模，需结合人工校验或结构化验证方法。",
+      "该研究为LLM在软件工程中的能力边界提供了实证依据，强调需发展混合式建模工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

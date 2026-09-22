@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260922-039",
+  "title": "ECG Mirage: Revealing and Mitigating the Underutilisation of ECGs in Vision-Language Models for Clinical Prediction",
+  "source_url": "https://arxiv.org/abs/2609.21755",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并研究了“ECG Mirage”这一失效模式，即视觉-语言模型（VLM）在急诊科临床预测任务中虽然表现出较强的多模态预测性能，但实际上并未真正有效利用患者的心电图（ECG）信息。急诊决策依赖病史、生命体征、实验室检查和心电图等异构临床数据，VLM 能够联合处理这些模态，但高预测准确率并不等同于模型对正确患者 ECG 的实质性依赖。作者通过系统实验揭示了这一现象，并进一步提出缓解方法，以促使模型真正利用 ECG 信号进行临床预测。该研究值得关注，因为它挑战了当前多模态医疗 AI 评估中“性能即能力”的默认假设，指出模型可能通过其他模态的捷径或虚假关联获得高分，从而在真实临床部署中带来安全隐患。这项工作对医疗 AI 的可解释性、鲁棒性评估以及多模态融合机制设计具有重要警示意义，也为后续构建更可靠的临床决策支持系统提供了新的评估视角和改进方向。",
+  "tags": [
+    "VLM",
+    "Medical AI",
+    "Multimodal",
+    "ECG",
+    "Clinical Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:12:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 在临床预测中的高准确率可能掩盖其对关键模态（如 ECG）的低利用率，形成“ECG Mirage”失效模式。",
+      "多模态模型可能依赖其他模态的捷径或虚假关联，而非真正整合 ECG 信息进行决策。",
+      "该研究揭示了医疗多模态 AI 评估中性能指标与真实能力之间的鸿沟，强调需要更细粒度的模态依赖分析。",
+      "作者提出缓解策略，为提升 VLM 对 ECG 的实质性利用和临床可靠性提供了方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

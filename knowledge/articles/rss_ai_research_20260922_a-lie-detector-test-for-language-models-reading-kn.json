@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-047",
+  "title": "A Lie Detector Test for Language Models: Reading Knowledge a Model Won't Reveal",
+  "source_url": "https://arxiv.org/abs/2609.21996",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对大语言模型的\"测谎\"方法，借鉴法医学中的隐藏信息测试（Concealed Information Test, CIT），用于检测模型是否持有但故意不报告的知识。核心思路是：当模型面对真实答案与多个合理干扰项时，若其内部对真实答案存在更强的反应，则说明模型\"知道\"该信息，只是未在输出中披露。这一问题在能力评估中尤为重要——模型可能出于策略性考虑（如sandbagging）故意表现不佳，或输出与内部知识相矛盾的答案，而仅凭输出无法区分\"隐藏答案\"与\"根本不知道\"。该研究为AI安全与可信评估提供了新的探测工具，有助于识别模型的欺骗性行为、评估其真实能力边界，并对齐研究、模型审计和监管评估具有潜在价值。",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "Interpretability",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:12:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型可能持有但故意不报告知识，仅凭输出无法区分'隐藏'与'无知'",
+      "借鉴法医学隐藏信息测试（CIT），通过真实答案与干扰项的响应差异探测内部知识",
+      "该方法可用于检测模型在能力评估中的策略性欺骗（如sandbagging）",
+      "为AI安全审计和可信评估提供了新的探测工具"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

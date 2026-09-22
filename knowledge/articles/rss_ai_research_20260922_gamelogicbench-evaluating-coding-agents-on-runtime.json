@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-094",
+  "title": "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions",
+  "source_url": "https://arxiv.org/abs/2609.21562",
+  "source_platform": "rss_ai_research",
+  "summary": "GameLogicBench 是一个针对编码智能体（Coding Agents）在游戏运行时逻辑上表现的全新评测基准。现有游戏开发基准通常采用回放固定示例、对视频打分或让另一个模型评判结果的方式，无法在游戏执行过程中持续检查规则是否被违反。该基准的核心创新在于引入「Tick 级状态断言」（Tick-Level State Assertions），即在游戏运行的每一个 tick（时间步）上对游戏状态进行断言检查，从而捕捉那些虽然最终状态合法、但运行过程中曾违反规则的隐蔽错误。评测场景由评估器动态选择，覆盖多样化的游戏逻辑规则，要求智能体在大型软件项目中实现并测试游戏玩法规则。该工作填补了游戏开发领域缺乏运行时规则一致性评测的空白，对于推动编码智能体在复杂交互式系统（如游戏引擎、仿真环境）中的可靠代码生成与验证具有重要意义，也为后续研究提供了可复现的评测标准。",
+  "tags": [
+    "Coding Agent",
+    "Benchmark",
+    "Game Development",
+    "Runtime Verification"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:14:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有游戏开发基准仅关注最终结果或固定回放，无法检测运行过程中违反游戏规则但最终状态合法的情况。",
+      "GameLogicBench 通过 Tick 级状态断言在游戏执行的每个时间步检查规则一致性，实现细粒度的运行时验证。",
+      "评测场景由评估器动态选择，覆盖多样化的游戏逻辑规则，提升了基准的泛化性和挑战性。",
+      "该基准为编码智能体在交互式系统（如游戏、仿真）中的可靠代码生成与测试提供了新的评测维度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

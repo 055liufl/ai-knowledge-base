@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260922-127",
+  "title": "Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation",
+  "source_url": "https://arxiv.org/abs/2603.13099",
+  "source_platform": "rss_ai_research",
+  "summary": "CRYSTAL 是一个面向多模态推理评估的诊断性基准，包含 6,372 个实例，旨在超越仅评估最终答案的传统方式，转而通过可验证的中间步骤来评估推理过程的透明度与逻辑性。该工作提出两个互补指标：Match F1 通过语义相似度匹配衡量步骤级精确率与召回率；Ordered Match F1 在此基础上进一步惩罚推理链顺序错乱的情况。参考推理步骤通过 Delphi 方法构建，以保证标注质量与一致性。该基准的意义在于，当前多模态大模型的评测多聚焦于最终答案正确性，难以揭示模型是否真正进行了合理推理，还是仅凭猜测或捷径得到答案。CRYSTAL 通过细粒度、可追溯的步骤评估，为研究者提供了诊断模型推理缺陷的工具，有助于推动更可靠、可解释的多模态推理系统发展。其创新点在于将评估粒度从答案级下沉到步骤级，并引入顺序敏感性，对多模态推理评测方法具有参考价值。",
+  "tags": [
+    "Multimodal Reasoning",
+    "Benchmark",
+    "Evaluation",
+    "Explainability"
+  ],
+  "author": null,
+  "published_at": "2026-09-22T13:09:03Z",
+  "collected_at": "2026-09-22T13:15:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统多模态推理评测只看最终答案，无法区分真正推理与猜测，CRYSTAL 通过步骤级评估填补这一空白。",
+      "Match F1 和 Ordered Match F1 两个指标分别衡量步骤语义匹配与推理顺序合理性，能更细粒度地诊断模型推理链。",
+      "使用 Delphi 方法构建参考推理步骤，提升了标注的一致性和可靠性，为基准质量提供保障。",
+      "该基准有望推动多模态模型从追求答案正确转向追求推理过程透明、可验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
