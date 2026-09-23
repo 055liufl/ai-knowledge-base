@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-023",
+  "title": "Trustworthy Agentic AI: Failure Modes, Mitigation Strategies, and a Lifecycle Framework for Autonomous LLM Systems",
+  "source_url": "https://arxiv.org/abs/2609.22712",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.22712）聚焦于基于大语言模型（LLM）的智能体（Agentic AI）系统的可信性问题。与静态语言模型不同，智能体能够进行多步规划、调用外部工具、利用持久化记忆并与其他智能体协作，这使其能力大幅提升，但也引入了全新的安全与运营风险。论文指出，来自网站、邮件、文档和数据库的不可信内容可能与系统指令进入同一上下文，从而造成提示注入；持久化记忆则可能携带被污染的信息，导致风险在时间维度上持续传播。针对这些问题，作者系统梳理了智能体系统的失效模式（failure modes），提出了相应的缓解策略（mitigation strategies），并构建了一个覆盖智能体全生命周期的可信框架（lifecycle framework）。该研究对于正在将 LLM 智能体落地到生产环境的团队具有重要参考价值，因为它将安全视角从单次推理扩展到规划、工具调用、记忆与多智能体协作的完整链路，填补了当前智能体安全研究缺乏系统性框架的空白。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "AI Safety",
+    "Prompt Injection",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体的多步规划、工具调用和持久化记忆显著扩大了攻击面，不可信外部内容与系统指令共享上下文是核心风险来源。",
+      "持久化记忆可能成为被污染信息的长期载体，使安全风险在时间维度上累积和传播，传统单次推理的安全防护不再足够。",
+      "论文提出了覆盖智能体全生命周期的可信框架，将失效模式、缓解策略与生命周期阶段对应，为工程落地提供系统性指导。",
+      "多智能体协作引入了新的信任传递问题，一个被攻陷的智能体可能影响整个协作网络，需要跨智能体的信任边界设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-114",
+  "title": "Beyond Task Completion: Training Capable and Safe Computer-Use Agents",
+  "source_url": "https://arxiv.org/abs/2609.22178",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2609.22178v2）聚焦于计算机使用智能体（Computer-Use Agents, CUAs）的安全训练问题。当前 CUAs 已能通过图形用户界面完成复杂任务，但仅以任务成功率为目标的后期训练（post-training）无法诱导出可靠的安全行为。作者提出，一个可靠的 CUA 必须根据风险来调节其执行策略：对普通良性任务应正常完成；面对环境危害时应规避风险并在存在安全完成路径时继续执行；当目标本身有害或不存在安全路径时则应拒绝执行。该研究的意义在于，它将智能体安全从单纯的「拒绝有害指令」扩展到「在动态环境中进行风险感知的连续决策」，为构建既能力强又行为安全的 GUI 智能体提供了训练范式与评估视角。随着 CUAs 在操作系统、浏览器和办公软件中的落地加速，这类兼顾任务完成与安全边界的研究对实际部署至关重要，也为后续安全对齐、风险建模和基准测试工作提供了方向。",
+  "tags": [
+    "Agent",
+    "AI Safety",
+    "Computer-Use Agent",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:30:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅优化任务成功率的后期训练不足以让计算机使用智能体获得可靠的安全行为，安全必须作为训练目标显式建模。",
+      "可靠的 CUA 需要根据风险条件化其执行：完成良性任务、规避环境危害并在有安全路径时继续、在有害目标或无安全路径时拒绝。",
+      "智能体安全应从静态的指令拒绝扩展到动态环境中的风险感知与连续决策。",
+      "该工作为 GUI 智能体的安全对齐、风险建模与评估基准提供了新的研究范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

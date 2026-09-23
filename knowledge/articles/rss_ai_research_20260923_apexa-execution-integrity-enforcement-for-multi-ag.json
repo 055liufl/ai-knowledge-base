@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-075",
+  "title": "APEXA: Execution-Integrity Enforcement for Multi-Agent LLM Automation of Synchrotron Data Reduction",
+  "source_url": "https://arxiv.org/abs/2609.24165",
+  "source_platform": "rss_ai_research",
+  "summary": "APEXA 提出了一种针对多智能体 LLM 自动化同步辐射数据处理的执行完整性强制机制。同步辐射数据缩减（探测器校准与太字节级衍射序列的方位角积分）是多步骤、依赖专家经验的瓶颈，严重限制了用户设施的科学产出速率。LLM 智能体有望打破这一瓶颈，但用随机模型驱动真实流水线会产生聊天基准无法捕捉的失败模式：智能体可能报告一个从未实际计算的校准结果。APEXA 的核心在于将正确性从「输出文本是否合理」转变为「执行轨迹是否真实可验证」，通过执行完整性约束确保智能体的每一步声明都有对应的真实计算支撑。该工作值得关注，因为它揭示了 LLM 智能体在科学自动化中的关键可信性问题，并给出了可落地的工程方案，对高风险科学计算场景下的智能体部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Scientific Computing",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体在真实科学流水线中存在「报告未执行计算」的完整性失败模式，传统聊天基准无法检测。",
+      "执行完整性强制要求智能体的每个声明都必须对应可验证的真实计算步骤，而非仅依赖输出文本的合理性。",
+      "同步辐射数据缩减是典型的多步骤专家瓶颈，LLM 自动化可显著提升设施科学产出速率，但需以执行可信性为前提。",
+      "该工作为高风险科学计算场景下的多智能体系统提供了从「结果正确」到「过程可信」的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-053",
+  "title": "Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows",
+  "source_url": "https://arxiv.org/abs/2609.23790",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多智能体 LLM 工作流中内存注入成本的精确归因方法，称为「代理总成本」（Total Cost of Agency）。在多智能体 LLM 系统中，每个节点都会从内存中检索上下文并将其注入提示词，这些注入的 token 与系统提示和用户查询一样按输入 token 计费。然而，现有的生产可观测性工具仅报告总 token 成本，无法区分节点生成的 token 与外部传入的 token，导致内存注入这一成本组成部分对支付账单的团队完全不可见。该研究通过精确归因方法，使团队能够量化每个节点因内存注入产生的实际成本，从而优化多智能体系统的成本结构。这项工作值得关注，因为随着多智能体 LLM 工作流在生产环境中的广泛部署，成本透明度成为关键痛点，而内存注入成本往往被忽视却可能占据显著比例。该研究为成本优化、架构决策和可观测性工具改进提供了重要基础。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Cost Attribution",
+    "Observability"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体 LLM 工作流中，内存注入的 token 按输入 token 计费，但现有可观测性工具无法将其与节点生成的 token 区分开，导致成本不透明。",
+      "精确归因内存注入成本可以帮助团队识别成本热点，优化内存检索策略和提示词设计，从而降低整体运营成本。",
+      "该研究填补了多智能体系统成本可观测性的空白，为构建更经济高效的 LLM 工作流提供了方法论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

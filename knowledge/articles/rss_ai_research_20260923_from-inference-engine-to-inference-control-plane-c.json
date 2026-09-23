@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-042",
+  "title": "From Inference Engine to Inference Control Plane: Connecting vLLM, llm-d, and the Evolution of Efficient Distributed LLM Serving",
+  "source_url": "https://arxiv.org/abs/2609.23130",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了大型语言模型（LLM）推理从单引擎本地优化向分布式控制平面演进的趋势。随着模型规模扩大和部署场景复杂化，推理系统需要处理可复用状态、阶段放置、异构加速器、网络通信、自动扩缩容、可靠性以及服务等级目标（SLO）等分布式问题。论文将 vLLM 和 llm-d 视为互补层次：vLLM 作为高性能推理引擎，负责单节点内的批处理、KV 缓存管理和内核优化；而 llm-d 则作为推理控制平面，负责跨节点的请求路由、状态迁移、弹性伸缩和故障恢复。文章综合了同行评审的系统研究、开源实现以及生产环境案例，系统性地连接了从引擎到控制平面的技术演进路径。该工作值得关注，因为它首次明确提出了“推理控制平面”这一抽象层，为构建高效、可扩展、可靠的分布式 LLM 服务提供了架构指导，对云服务商、AI 基础设施团队和系统研究者具有重要参考价值。",
+  "tags": [
+    "LLM Serving",
+    "Distributed Inference",
+    "vLLM",
+    "Control Plane",
+    "Infrastructure"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 推理正从引擎本地优化（如 vLLM 的 PagedAttention）转向分布式控制问题，需要统一管理状态、放置、网络和 SLO。",
+      "vLLM 与 llm-d 构成互补层次：vLLM 作为高性能推理引擎，llm-d 作为跨节点的推理控制平面，共同实现高效分布式服务。",
+      "生产级 LLM 服务必须解决可复用状态（如 KV 缓存）的跨节点迁移、异构加速器调度和自动扩缩容等控制平面挑战。",
+      "该研究桥接了学术系统研究、开源实现与生产实践，为下一代 LLM 服务架构提供了可落地的设计范式。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

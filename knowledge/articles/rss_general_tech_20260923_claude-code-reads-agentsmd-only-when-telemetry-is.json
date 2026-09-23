@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20260923-001",
+  "title": "Claude Code reads AGENTS.md only when telemetry is on",
+  "source_url": "https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/",
+  "source_platform": "rss_general_tech",
+  "summary": "该内容揭示了一个关于 Anthropic 的 Claude Code 工具的行为：它仅在遥测（telemetry）开启时才会读取 AGENTS.md 文件。AGENTS.md 通常用于定义 AI 代理的行为规范或项目上下文，而遥测数据收集通常涉及用户使用信息的匿名上报。这一发现暗示 Claude Code 可能将代理配置文件的读取与遥测功能绑定，引发了关于隐私、功能可用性以及设计意图的讨论。如果用户禁用遥测，Claude Code 可能无法正确加载 AGENTS.md，导致代理行为不符合预期。这值得开发者关注，因为它可能影响工具的可配置性和透明度，同时也提醒用户检查遥测设置对功能的影响。该问题可能是一个 bug 或有意设计，但缺乏官方说明，因此社区需要进一步验证和反馈。",
+  "tags": [
+    "Claude Code",
+    "Telemetry",
+    "AI Agent",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:56Z",
+  "collected_at": "2026-09-23T13:24:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Claude Code 仅在遥测开启时读取 AGENTS.md，可能导致禁用遥测后代理配置失效。",
+      "该行为引发隐私与功能绑定的担忧，用户可能被迫开启遥测以使用完整功能。",
+      "缺乏官方文档说明，社区需进一步验证是否为 bug 或有意设计。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

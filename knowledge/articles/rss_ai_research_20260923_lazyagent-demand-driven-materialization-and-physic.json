@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-038",
+  "title": "LazyAgent: Demand-Driven Materialization and Physical Optimization of Agentic Programs",
+  "source_url": "https://arxiv.org/abs/2609.23058",
+  "source_platform": "rss_ai_research",
+  "summary": "LazyAgent 是一篇来自 arXiv 的论文（编号 2609.23058），提出了一种面向智能体（Agent）程序的统一执行框架。当前主流的 Agent 运行时通常采用「先规划后执行」的范式，一旦某个步骤就绪便立即执行，这种 eager 执行方式容易造成不必要的计算开销和资源浪费。LazyAgent 的核心创新在于引入「按需物化」（demand-driven materialization）机制：它维护一个由目标推导出的活跃需求集合（demanded set），并随着执行状态的变化不断刷新从请求输出出发的反向闭包（backward closure）。只有当当前活跃目标真正需要某个节点时，该节点才会被物化执行。这一设计用一次线性时间的图遍历取代了反复的局部判断，从而提升了 Agent 程序的执行效率。该工作值得关注，因为它将数据库领域的惰性求值与查询优化思想引入 Agent 执行引擎，为构建更高效、更可控的智能体运行时提供了新的系统级视角，对 Agent 基础设施和程序优化方向具有参考价值。",
+  "tags": [
+    "Agent",
+    "Execution Engine",
+    "Query Optimization",
+    "Lazy Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 运行时普遍采用「就绪即执行」的 eager 策略，缺乏对全局目标的依赖感知，导致冗余计算",
+      "LazyAgent 通过维护目标推导的 demanded set 和动态反向闭包，实现按需物化，仅执行当前目标真正需要的节点",
+      "用一次线性时间的图遍历替代反复的局部就绪判断，将数据库查询优化思想迁移到 Agent 程序执行中",
+      "该框架为 Agent 运行时提供了统一的执行与物理优化视角，有望降低 Agent 程序的资源开销"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

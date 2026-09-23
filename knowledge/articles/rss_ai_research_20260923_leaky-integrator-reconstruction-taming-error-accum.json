@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-047",
+  "title": "Leaky-integrator reconstruction: taming error accumulation in recursive differenced time-series forecasting",
+  "source_url": "https://arxiv.org/abs/2609.23378",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“漏积分器重构”（leaky-integrator reconstruction）的无训练方法，用于解决递归差分时间序列预测中的误差累积问题。作者首先从诊断角度指出，预测一步变化并通过累积求和进行积分（这是处理非平稳性的标准做法）本质上是一个在单位圆上具有极点的离散积分器，这会导致非线性模型的递归展开发散，336步误差显著增大。基于此，作者提出用漏积分器替代纯积分器，通过引入衰减因子来稳定递归过程，从而在不重新训练模型的情况下抑制误差累积。该方法适用于任何基于差分预测的递归时间序列模型，如ARIMA、RNN、Transformer等，具有即插即用的特点。实验表明，该方法能显著提升长时程预测的稳定性与精度。该工作为时间序列预测中的误差累积问题提供了理论解释和实用解决方案，对从事时间序列分析、递归预测的研究者和开发者具有重要参考价值。",
+  "tags": [
+    "时间序列预测",
+    "误差累积",
+    "递归预测",
+    "差分积分",
+    "无训练方法"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归差分预测中的累积求和等价于单位圆上带极点的离散积分器，会导致非线性模型递归展开发散。",
+      "提出漏积分器重构，通过引入衰减因子替代纯积分，无需训练即可稳定递归过程。",
+      "该方法通用性强，可即插即用地应用于任何基于差分预测的递归时间序列模型。",
+      "理论诊断与实用修复相结合，为长时程时间序列预测的误差累积问题提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

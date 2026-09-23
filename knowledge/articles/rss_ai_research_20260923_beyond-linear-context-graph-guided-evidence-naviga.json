@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-030",
+  "title": "Beyond Linear Context: Graph-Guided Evidence Navigation for Long-Novel Reasoning with a Local 9B Language Model",
+  "source_url": "https://arxiv.org/abs/2609.22939",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“图引导证据导航”（Graph-Guided Evidence Navigation）的方法，旨在解决长篇小说推理中传统线性上下文模型的局限性。传统长上下文模型按叙事顺序逐词读取文本，所有历史信息竞争固定的注意力预算，导致关键线索容易被淹没。受侦探工作方式启发，作者构建了一个冻结的知识图谱，将小说中的事件时间线和人物关系结构化，使模型能够像侦探一样按需检索和关联跨章节的证据。实验采用一个本地部署的9B参数语言模型，验证了图引导导航在长篇小说推理任务上的有效性。该方法的意义在于：它不依赖超长上下文窗口或更大模型，而是通过外部结构化知识来增强小模型的长程推理能力，为资源受限场景下的复杂推理提供了新思路，同时降低了对云端大模型的依赖，具有实用性和可扩展性。",
+  "tags": [
+    "Graph Reasoning",
+    "Long-Context",
+    "Local LLM",
+    "Knowledge Graph",
+    "Narrative Understanding"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性上下文模型在长篇小说推理中受限于固定注意力预算，难以有效关联跨章节线索。",
+      "冻结的知识图谱可作为一种外部结构化记忆，引导小模型进行证据导航，模拟侦探式推理。",
+      "本地9B模型结合图引导方法，能在不依赖超长上下文或云端大模型的情况下提升长程推理表现。",
+      "该方法为资源受限场景下的复杂推理提供了新范式，强调结构化知识而非单纯扩大模型规模。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

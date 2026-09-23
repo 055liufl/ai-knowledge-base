@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-033",
+  "title": "R-GEAN: Regimen-Guided Edit Action Network for Within-Admission Medication Change Prediction",
+  "source_url": "https://arxiv.org/abs/2609.22959",
+  "source_platform": "rss_ai_research",
+  "summary": "R-GEAN（Regimen-Guided Edit Action Network）是一篇来自 arXiv 的医学 AI 研究论文，聚焦于住院期间用药方案变化预测任务。研究关注的核心问题是：模型能否预测患者入院 24 小时后至出院期间，哪些药物类别会被新增或停用。作者指出，现有评估指标存在缺陷——当模型直接复制未发生变化的药物时，即使没有识别出任何实际用药调整，也能获得较高分数，这导致评估结果被高估。为此，论文提出 R-GEAN 模型，采用\"方案引导的编辑动作网络\"思路，将用药变化建模为对当前用药方案的编辑操作（新增/删除），而非从头生成完整出院方案。该方法有望提升临床用药变更预测的准确性评估，对临床决策支持系统、住院用药安全管理以及电子健康记录（EHR）挖掘具有实际意义。该研究值得关注的原因在于：它揭示了医疗预测任务中普遍存在的评估偏差问题，并提出更贴合临床实际的建模框架，为后续用药预测研究提供了更严谨的基准。",
+  "tags": [
+    "Medical AI",
+    "EHR",
+    "Clinical Prediction",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有用药预测评估指标存在漏洞：直接复制未变化的药物即可获得高分，掩盖了模型识别真实用药变更的能力不足",
+      "将用药变化建模为对当前方案的编辑动作（新增/停用），比生成完整出院方案更符合临床决策逻辑",
+      "该研究强调评估指标设计对医疗 AI 研究结论可靠性的关键影响，呼吁更严谨的基准测试"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

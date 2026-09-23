@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-082",
+  "title": "How Many Pixels Is a Digit Worth? Place-Aware Coordinate Entropy for GUI Agent Confidence Estimation",
+  "source_url": "https://arxiv.org/abs/2609.24277",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对 GUI Agent 在预测点击坐标时的置信度估计问题提出了新方法。GUI Agent 通常将点击坐标预测为数字 token 序列，但标准的文本 LLM 置信度估计方法在区分正确与错误点击时表现较弱。现有的 GUI 专用替代方案要么依赖 K 次采样，要么需要额外监督，仍有改进空间。作者将部分原因归结为「位值不对称性」：在边界框正确性判断中，高位数字往往比低位数字更重要，而均匀聚合会削弱这一信号。为此，论文提出「位置感知坐标熵」（Place-Aware Coordinate Entropy），通过对不同数位赋予差异化权重来估计置信度。该工作为 GUI Agent 的可靠性评估提供了轻量、无需额外训练的新思路，对提升自动化界面操作的准确性与安全性具有实用价值。",
+  "tags": [
+    "GUI Agent",
+    "Confidence Estimation",
+    "Coordinate Prediction",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GUI Agent 将点击坐标编码为数字 token 序列，标准文本 LLM 置信度方法难以有效区分正确与错误点击。",
+      "坐标预测存在位值不对称性：高位数字对边界框正确性的影响远大于低位数字，均匀聚合会稀释置信信号。",
+      "提出的位置感知坐标熵方法无需额外训练或多次采样，即可更准确地估计 GUI 点击置信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

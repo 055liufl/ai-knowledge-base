@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-127",
+  "title": "Toollery: Scaling LLM Agents to Thousands of Skills and Tools",
+  "source_url": "https://arxiv.org/abs/2609.22218",
+  "source_platform": "rss_ai_research",
+  "summary": "Toollery 是一篇来自 arXiv 的技术论文，针对 LLM Agent 在技能与工具数量扩展到数百乃至数万级别时面临的工具选择瓶颈提出解决方案。传统做法是将所有候选工具/API 函数全部写入提示词（full-library prompting），但随着候选数量增长，提示词 token 消耗和推理延迟急剧上升，同时过长的候选列表会引入大量干扰项，导致 LLM 选择准确率下降。Toollery 提出一种免训练的候选压缩框架（training-free candidate-compression framework），借鉴文档检索侧的成熟技术思路，在将候选工具送入 LLM 之前先进行压缩与筛选，从而在保持选择质量的同时显著降低 token 成本与延迟。该工作值得关注的原因在于：工具调用能力是当前 Agent 系统的核心，而工具库规模的可扩展性直接决定了 Agent 能否从演示级应用走向真实生产环境；免训练特性也意味着它可以低成本地集成到现有 Agent 框架中，无需重新微调模型。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "LLM",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:31:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全库提示（full-library prompting）在工具数量增长时面临 token 成本、延迟和选择准确率的三重恶化，是 Agent 规模化扩展的关键瓶颈。",
+      "Toollery 采用免训练的候选压缩框架，在工具送入 LLM 前先做压缩筛选，避免了对模型进行微调或重训练。",
+      "该方案借鉴文档检索侧的成熟思路，说明工具选择问题可以转化为检索/排序问题来处理。",
+      "工具库可扩展性是从演示级 Agent 走向生产级 Agent 的核心前提，压缩候选集是兼顾成本与效果的现实路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

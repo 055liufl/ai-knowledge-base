@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-085",
+  "title": "LADDER: Graph-Guided Diffusion Language Models for Efficient Multi-Hop Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.24346",
+  "source_platform": "rss_ai_research",
+  "summary": "LADDER 是一项针对图检索增强生成（GraphRAG）效率瓶颈的研究，提出用扩散语言模型（DLM）替代传统自回归语言模型，以实现高效的多跳推理。现有 GraphRAG 框架虽然通过结构化实体拓扑提升了 LLM 的复杂推理能力，但其底层依赖的自回归模型必须逐 token 顺序生成，导致推理效率低下。LADDER 的核心思路是引入图引导的扩散语言模型，利用 DLM 的并行细化（refine-in-parallel）特性，在保持多跳推理质量的同时大幅提升生成速度。该工作将图结构与扩散生成范式结合，为 GraphRAG 的高效化提供了新方向，对需要低延迟、高吞吐的知识密集型推理应用具有潜在价值。",
+  "tags": [
+    "GraphRAG",
+    "Diffusion Language Model",
+    "Multi-Hop Reasoning",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 GraphRAG 的效率瓶颈源于自回归模型的顺序生成特性，而非图检索本身。",
+      "扩散语言模型的并行细化能力可显著提升多跳推理的推理效率。",
+      "图引导的扩散生成范式为 GraphRAG 与 DLM 的融合提供了新思路。",
+      "该方向有望推动低延迟知识密集型推理应用的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

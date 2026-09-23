@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-058",
+  "title": "Echo State Network (ESN) for Signal Recovery in RF-Impaired IBFD MIMO Systems",
+  "source_url": "https://arxiv.org/abs/2609.23945",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究在带内全双工（IBFD）MIMO 系统中利用回声状态网络（ESN）进行信号恢复的问题。IBFD-MIMO 系统能够在同一频段同时收发信号，从而显著提升下一代无线网络的频谱效率，但其核心挑战是自干扰（SI）问题——发射信号会泄漏到接收端并可能完全淹没目标信号（SOI）。论文提出采用盲源分离（BSS）算法来消除自干扰并实现联合感知与通信。ESN 作为一种储备池计算（Reservoir Computing）模型，具有训练简单、对时序信号建模能力强的特点，被用于在射频损伤（RF impairment）条件下恢复目标信号。该工作值得关注的原因在于：它将轻量级循环神经网络引入物理层信号处理，为 IBFD 系统的自干扰消除提供了一种新的数据驱动思路，同时兼顾了射频非理想因素带来的实际挑战，对 6G 全双工通信和通感一体化（ISAC）研究具有参考价值。",
+  "tags": [
+    "Reservoir Computing",
+    "Full-Duplex",
+    "MIMO",
+    "Blind Source Separation",
+    "Signal Processing"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "回声状态网络（ESN）可作为盲源分离的有效工具，用于 IBFD-MIMO 系统中的自干扰消除与目标信号恢复",
+      "射频损伤（RF impairment）会显著影响信号恢复性能，需要在算法设计中加以建模和补偿",
+      "IBFD-MIMO 的联合感知与通信场景对轻量级、低训练成本的时序模型有实际需求，ESN 在此类场景中具有潜力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

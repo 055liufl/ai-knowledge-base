@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-016",
+  "title": "Text, Pixels, or Both? Evaluating Input Representations for Multimodal Document QA",
+  "source_url": "https://arxiv.org/abs/2609.22628",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究系统性地评估了多模态文档问答（Document QA）中输入表示方式的选择——即向模型提供页面图像、提取文本，还是两者兼有——对问答准确率的影响。作者在四个商业模型端点、两个语料库以及两种上下文机制（黄金证据页与完整文档）下，固定提示词、评判器和评分流程，单独隔离输入表示这一变量。初步结果显示，在文档能够容纳于图像预算内时，页面图像在两种语料库、所有文档长度上均取得最高准确率。该工作值得关注，因为它首次将文档QA中一个常被忽视但影响显著的设计决策作为独立研究对象，为实际系统选型提供了可复现的实证依据，并可能改变当前以文本提取为默认管线的工程实践。",
+  "tags": [
+    "Multimodal",
+    "Document QA",
+    "RAG",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "输入表示（图像/文本/混合）是文档QA中一个独立且显著影响准确率的设计变量，此前缺乏系统研究。",
+      "在文档可容纳于图像预算内时，页面图像在多个模型、语料库和文档长度上均优于文本或混合输入。",
+      "该研究通过固定提示、评判和评分流程，提供了可复现的对照实验框架，便于后续扩展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

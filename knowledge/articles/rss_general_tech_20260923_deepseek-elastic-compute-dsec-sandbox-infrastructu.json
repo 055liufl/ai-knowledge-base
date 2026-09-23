@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20260923-011",
+  "title": "DeepSeek Elastic Compute (DSec): Sandbox Infrastructure for Effective Agentic Training at Scale",
+  "source_url": "https://arxiv.org/abs/2609.22978",
+  "source_platform": "rss_general_tech",
+  "summary": "DeepSeek 发布了名为 DSec（DeepSeek Elastic Compute）的沙箱基础设施，专为大规模智能体（Agentic）训练设计。该工作针对当前 Agent 训练中代码执行、工具调用等环境隔离与弹性扩展的痛点，提出了一套可弹性伸缩的计算沙箱方案，使强化学习与多轮交互训练能够在安全、可控且高并发的条件下进行。DSec 的价值在于它把「训练环境」本身工程化：既保证沙箱隔离与资源配额，又支持按需扩缩容以匹配大规模并行采样需求，从而降低 Agent 训练的基础设施门槛。对于正在构建代码智能体、工具调用智能体或需要可验证奖励（RLVR）的团队而言，这类沙箱基础设施是决定训练吞吐与稳定性的关键组件。该工作来自 DeepSeek，延续了其在高效训练与推理基础设施上的工程积累，值得关注其对开源 Agent 训练栈的潜在影响。",
+  "tags": [
+    "Agent",
+    "Sandbox",
+    "Infra",
+    "RL",
+    "Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:58Z",
+  "collected_at": "2026-09-23T13:25:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 训练的核心瓶颈正从模型本身转向可弹性扩展、安全隔离的执行环境",
+      "DSec 将沙箱作为一等基础设施，支持大规模并行采样与多轮交互训练",
+      "该方案有望降低代码智能体与工具调用智能体的训练工程门槛",
+      "来自 DeepSeek 的工程实践，可能影响开源 Agent 训练栈的标准化方向"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

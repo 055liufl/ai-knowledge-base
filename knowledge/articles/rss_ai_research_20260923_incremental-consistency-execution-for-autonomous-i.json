@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-070",
+  "title": "Incremental Consistency Execution for Autonomous Intelligent Systems",
+  "source_url": "https://arxiv.org/abs/2609.24090",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对长周期自主智能系统在执行过程中外部状态持续变化的问题，提出了一种增量一致性执行方法。这类系统通常由大语言模型、数据库、外部 API 和规则引擎等异构组件构成，当外部状态发生变化时，传统做法是重新执行整个工作流，导致大量冗余计算。作者引入任务事实契约（task fact contracts）、字段级依赖掩码（field-level dependency masks）和状态传播机制，旨在仅重新执行受变化影响的部分，从而提升执行效率。该研究值得关注，因为它直击 LLM 驱动的 Agent 系统在真实动态环境中的核心痛点——如何在保证一致性的前提下避免全量重算，对构建高效、可扩展的自主智能系统具有重要工程价值，也为 Agent 工作流引擎的增量调度提供了新的理论框架。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Workflow",
+    "Incremental Computation"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长周期自主智能系统由 LLM、数据库、API、规则引擎等异构组件构成，外部状态动态变化导致全量重执行产生大量冗余计算",
+      "提出基于任务事实契约和字段级依赖掩码的增量一致性执行方法，可精确定位受状态变化影响的计算单元",
+      "该方法有望显著降低 Agent 工作流在动态环境中的重复执行开销，提升系统响应效率与可扩展性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

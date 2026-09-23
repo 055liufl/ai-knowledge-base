@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-013",
+  "title": "MAWILE: Multi-Axis Workbench for Inspecting LLM Evaluators",
+  "source_url": "https://arxiv.org/abs/2609.22599",
+  "source_platform": "rss_ai_research",
+  "summary": "MAWILE 是一个面向开发者的多轴工作台，用于系统性地审查 LLM 评估器（LLM Judge）的可靠性。随着 LLM 作为自动化评估手段被广泛用于模型与 Agent 输出的打分，其判决结果往往对被测回答的细微变化、评判指令措辞以及评分标准（rubric）高度敏感，导致评估结果不稳定、难以复现。现有工具通常只覆盖部分失效模式，缺乏对\"评判工具本身\"与\"被评判样本\"的联合审计能力。MAWILE 通过多轴（multi-axis）设计，让开发者能够同时扰动评判指令、评分规则和被测内容，从而定位评估器在何种条件下会产生不一致或偏差性判决。该工作值得关注的原因在于：LLM-as-a-Judge 已成为当前模型评测与 Agent 迭代的核心基础设施，但其可信度问题长期被忽视；MAWILE 将评估器审计从零散的经验性检查提升为可配置、可复现的系统化流程，对提升评测结论的可信度、降低因评估噪声导致的错误决策具有直接实用价值，尤其适合需要构建内部评测流水线的团队。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "LLM",
+    "Tooling"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 评判者的判决对被测回答、评判指令和评分标准的细微变化高度敏感，评估结果的可复现性存在系统性风险。",
+      "审计一个已配置的评估器需要同时检验评判工具本身与被评判样本，二者不可分割。",
+      "现有系统仅覆盖部分失效模式，缺乏对评估器鲁棒性的多维度联合测试能力。",
+      "MAWILE 将评估器审计流程化、可配置化，有助于开发者在评测流水线中主动发现并修正评判偏差。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

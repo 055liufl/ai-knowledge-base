@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-011",
+  "title": "EvidenT: Building Trustworthy Enterprise Assistants through Evidence Groundedness and Traceability",
+  "source_url": "https://arxiv.org/abs/2609.22537",
+  "source_platform": "rss_ai_research",
+  "summary": "EvidenT 是一篇来自 arXiv 的技术论文，聚焦于企业级 AI 助手的可信度问题。在企业场景中，AI 助手生成的回答必须可验证、可溯源到原始证据。然而，基于检索增强生成（RAG）的系统在处理异构企业数据时，常出现引用漂移（citation drift）、无支撑内容（unsupported content）以及来源可追溯性弱等问题。EvidenT（T 代表 Trust 信任、Transparency 透明、Traceability 可追溯）提出了一种轻量级流水线，其核心思路是在答案生成之前，先对抽取出的证据与检索到的文档进行校验，从而确保生成内容有据可依。该方法无需依赖模型（without model，摘要在此处截断，推测指无需额外训练模型或无需大型模型介入），强调低成本、易部署。该工作值得关注的原因在于：企业级 AI 落地最大的障碍之一就是信任与合规，而幻觉和引用不可靠是核心痛点。EvidenT 将证据校验前置到生成阶段之前，为构建可信、可审计的企业助手提供了一条实用路径，对 RAG 系统的工程化改进具有直接参考价值。",
+  "tags": [
+    "RAG",
+    "Trustworthy AI",
+    "Enterprise AI",
+    "Traceability"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "企业 RAG 系统面临引用漂移、无支撑内容和来源可追溯性弱三大可信度挑战",
+      "EvidenT 在答案生成前对抽取证据与检索文档进行校验，将可信性保障前置",
+      "采用轻量级、无需模型（或无需额外训练）的流水线设计，降低企业部署成本",
+      "通过 Trust、Transparency、Traceability 三位一体框架提升企业 AI 助手的可审计性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

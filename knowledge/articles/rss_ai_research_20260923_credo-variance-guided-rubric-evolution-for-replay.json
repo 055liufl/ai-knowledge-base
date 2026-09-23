@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-076",
+  "title": "CREDO: Variance-Guided Rubric Evolution for Replay-Corrected Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2609.24174",
+  "source_platform": "rss_ai_research",
+  "summary": "CREDO 是一个面向长时程语言智能体的信用分配框架，旨在解决稀疏终端反馈与中间评估标准（rubric）可能失配的问题。在可重置训练环境中，通过反事实延续 rollout 可以测量局部信用，但穷举式重放代价高昂。CREDO 将不断演化的语义评分标准与选择性的、基于执行的信用校正相结合：一个冻结的评判模型将可见的中间状态映射为结构化评估，而方差引导机制则决定何时对哪些轨迹片段进行重放校正，从而在降低计算成本的同时提升信用分配的准确性。该工作值得关注，因为它针对 LLM 智能体强化学习中的核心难题——稀疏奖励下的细粒度信用分配——提出了一种兼顾语义评估与执行验证的混合方案，有望提升长时程任务训练的样本效率与稳定性。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Credit Assignment",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程语言智能体面临稀疏终端反馈与中间评分标准失配的双重挑战，信用分配是训练效率的关键瓶颈。",
+      "CREDO 通过方差引导的选择性重放，在语义评分与执行验证之间取得平衡，避免穷举反事实 rollout 的高昂成本。",
+      "冻结评判模型提供结构化中间评估，而基于执行的校正仅在必要时介入，形成可扩展的信用分配机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

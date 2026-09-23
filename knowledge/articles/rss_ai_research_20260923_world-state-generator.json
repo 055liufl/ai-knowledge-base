@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-096",
+  "title": "World State Generator",
+  "source_url": "https://arxiv.org/abs/2609.24744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「World State Generator」方法，针对语言智能体（Language Agents）在复杂任务执行中的核心失败模式：当环境拒绝某一步动作时，基于提示词（prompted）的规划器往往只是换种说法重写被拒绝的步骤，结果遭遇同样的拒绝，反复消耗尝试预算却毫无进展。作者指出，这种失败的根源在于规划从未与世界状态绑定，因此拒绝信号在计划中没有可依附的锚点。World State Generator 旨在为智能体构建显式的世界状态表示，使计划与真实环境状态紧密耦合，从而让拒绝、反馈等环境信号能够被有效吸收并驱动后续决策，而非陷入无效重试。该工作值得关注的原因在于：它直击当前 LLM Agent 在真实、动态、有约束环境中鲁棒性不足的痛点，将「世界建模」引入规划循环，为提升智能体的纠错能力、样本效率和任务成功率提供了新思路，对 Agent 架构设计与具身/工具调用场景均有启发意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Planning",
+    "World Model"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示词规划器在动作被环境拒绝时只会改写措辞而非调整策略，导致尝试预算被无效消耗",
+      "失败的根本原因是计划未与世界状态绑定，拒绝信号在计划中缺乏可依附的锚点",
+      "显式构建世界状态表示可让环境反馈被有效吸收，从而驱动智能体真正调整后续行动",
+      "该方向对提升 LLM Agent 在受约束真实环境中的鲁棒性和样本效率具有重要价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

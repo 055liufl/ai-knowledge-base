@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-041",
+  "title": "Event Signature Transfer: Model-Agnostic Forecast Scenario Construction from Historical Events",
+  "source_url": "https://arxiv.org/abs/2609.23074",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Event Signature Transfer（EST）的方法，用于从历史事件中构建预测场景。在实际预测中，预测者往往知道某个事件即将发生，但难以确定其影响的具体形态、规模和时间。EST 是一种无需训练、与模型无关的算子，它将一个已完成的过去事件转化为显式的预测场景。具体而言，EST 首先移除源事件自身的趋势和季节性成分，然后将剩余的事件特征（event signature）进行缩放和时间重排，并叠加到原生预测上，同时保持预测的链接结构，并在特定条件下可精确还原为原始预测。该方法的价值在于提供了一种通用、轻量的事件影响建模方式，无需重新训练模型即可将历史事件知识迁移到当前预测任务中，适用于经济、金融、供应链等需要事件驱动预测的场景。",
+  "tags": [
+    "Forecasting",
+    "Time Series",
+    "Event Modeling",
+    "Model-Agnostic"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EST 是一种无需训练、与模型无关的算子，可将历史事件的特征迁移到当前预测中，降低了对事件影响建模的数据和计算需求。",
+      "通过移除源事件的趋势和季节性，EST 提取出纯粹的事件特征，再通过缩放和时间重排适配到目标预测场景，保持了预测的链接结构。",
+      "该方法在特定条件下可精确还原为原始预测，保证了与现有预测系统的兼容性和可解释性。",
+      "EST 为事件驱动预测提供了一种通用框架，有望应用于经济、金融、供应链等需要快速响应外部事件的领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

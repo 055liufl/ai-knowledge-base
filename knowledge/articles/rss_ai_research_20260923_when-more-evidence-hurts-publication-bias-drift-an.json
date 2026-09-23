@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-072",
+  "title": "When More Evidence Hurts: Publication-Bias Drift and Principled Stopping for Biomedical Causal Search",
+  "source_url": "https://arxiv.org/abs/2609.24101",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究自动化生物医学证据合成中的一个反直觉问题：由于生物医学文献存在系统性的发表偏倚（publication bias），即阳性结果更容易被发表，检索到更多文献反而可能使系统更倾向于错误地推断出存在疗效，即使真实效应为零。作者将这一现象形式化为“证据漂移”（evidence drift），并在标准发表偏倚模型下证明：对于零效应查询，假阳性概率会随着检索深度的增加而单调上升。这一发现挑战了“更多证据总是更好”的直觉，对基于文献检索的因果推断系统（如自动化系统评价、证据合成工具）具有重要警示意义。论文进一步提出“原则性停止”（principled stopping）策略，即在检索过程中根据偏倚模型动态判断何时停止，以避免因过度检索而引入偏倚放大效应。该工作为生物医学因果搜索提供了理论框架和实用方法，值得关注自动化证据合成、因果推断和元分析领域的研究者与开发者重视。",
+  "tags": [
+    "Causal Inference",
+    "Publication Bias",
+    "Evidence Synthesis",
+    "Biomedical NLP"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在发表偏倚存在时，检索更多文献反而会提高零效应查询的假阳性率，形成“证据漂移”现象。",
+      "论文在标准发表偏倚模型下证明了假阳性概率随检索深度单调递增，颠覆了“更多证据更可靠”的直觉。",
+      "提出原则性停止策略，通过动态判断检索终止点来缓解偏倚放大，为自动化证据合成提供实用方法。",
+      "该研究对生物医学因果搜索、自动化系统评价和元分析工具的设计具有直接指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

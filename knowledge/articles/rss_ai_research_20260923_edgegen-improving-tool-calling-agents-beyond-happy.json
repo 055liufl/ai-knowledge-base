@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-073",
+  "title": "EDGEGEN: Improving Tool-Calling Agents Beyond Happy Paths with Synthetic Edge Case Generation",
+  "source_url": "https://arxiv.org/abs/2609.24115",
+  "source_platform": "rss_ai_research",
+  "summary": "EdgeGen 是一篇针对工具调用型 LLM Agent 的合成任务生成方法研究。论文指出，当前工具调用 Agent 在企业场景中广泛部署，但高质量、多样化的评测与优化数据集因隐私等限制难以获取。现有合成任务生成方法往往生成通用任务，忽略了 Agent 的底层状态或数据库，也无法反映真实使用场景的多样性。EdgeGen 提出通过合成边缘案例（edge case）来改进工具调用 Agent 的能力，使其超越仅能处理\"顺利路径\"（happy path）的局限。该方法的核心价值在于：一是解决企业环境下真实任务数据稀缺的痛点；二是强调任务生成需结合 Agent 的实际状态与数据库上下文，提升合成数据的真实性与多样性；三是聚焦边缘案例，弥补现有方法在异常、边界场景覆盖上的不足，从而提升 Agent 的鲁棒性与泛化能力。该工作对 Agent 评测基准构建、训练数据合成以及企业级 Agent 落地具有参考意义，尤其适合关注 Agent 可靠性、评测体系与数据生成的研究者与开发者。",
+  "tags": [
+    "Agent",
+    "Tool Calling",
+    "Synthetic Data",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有合成任务生成方法忽略 Agent 底层状态与数据库，导致任务通用化、缺乏真实多样性",
+      "EdgeGen 通过合成边缘案例，弥补 Agent 仅能处理 happy path 的能力短板",
+      "高质量任务数据受隐私约束难以获取，合成数据是 Agent 评测与优化的关键替代路径",
+      "结合 Agent 实际状态生成任务，可提升合成数据的真实性与评测有效性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

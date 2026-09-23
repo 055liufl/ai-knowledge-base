@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-131",
+  "title": "Not All Ranks Are Equal: Budget-Aware LoRA Merging Across Tasks",
+  "source_url": "https://arxiv.org/abs/2609.22237",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种预算感知的 LoRA 合并方法，挑战了现有 LoRA 合并中普遍存在的均匀预算假设。现有方法通常假设每一层需要相同的秩预算，甚至假设秩预算需要在不同任务间平均分配。作者指出，这种均匀预算假设是导致合并后 LoRA 与单任务 LoRA 之间性能差距的主要来源。由于秩选择问题本质上是 NP 难的，本文提出了一种跨任务、预算感知的合并策略，允许不同层和不同任务分配不同的秩预算，从而在推理时无需切换任务特定权重的情况下，显著缩小合并模型与独立微调模型之间的性能差距。该工作对多任务模型部署、参数高效微调以及模型合并领域具有重要价值，尤其适用于需要在资源受限环境下服务多个任务的场景。",
+  "tags": [
+    "LoRA",
+    "Model Merging",
+    "Multi-Task Learning",
+    "PEFT"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:31:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "均匀秩预算假设是合并 LoRA 与单任务 LoRA 性能差距的主要来源",
+      "不同层和不同任务应分配不同的秩预算，而非平均分配",
+      "秩选择问题是 NP 难的，需要设计高效的近似或启发式算法",
+      "预算感知的合并策略能显著提升多任务推理时的性能，同时保持无切换开销"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

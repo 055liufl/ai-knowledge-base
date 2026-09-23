@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-117",
+  "title": "A Pinch of SFT, A Dash of RL: When Reinforcement Learning Helps Long-Horizon Advertising Agents",
+  "source_url": "https://arxiv.org/abs/2609.22194",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究企业级分析智能体在长周期工具使用任务中的训练策略，聚焦于监督微调（SFT）与强化学习（RL）的协同问题。企业分析智能体需要在分布式业务数据上完成检索、推理、API 调用、代码执行以及对中间观察结果的动态适应，属于典型的长周期、多步骤工具使用场景。作者指出，SFT 能够有效校准工具调用语法和教师支持的行为模式，而 RL 则具备探索演示数据之外、由奖励驱动的行为的潜力。然而，若不加区分地对全部行为统一施加 RL，可能会扰动已经通过 SFT 校准好的技能，导致性能退化。论文以广告场景中的长周期智能体为切入点，探讨如何以“少量 SFT + 适量 RL”的配比方式，在保留基础工具使用能力的同时，利用 RL 提升智能体在复杂业务目标上的表现。该工作对构建企业级 Agent 系统具有实践指导意义，尤其为 SFT 与 RL 混合训练策略的设计提供了新的思路，值得关注 Agent 训练、工具调用与强化学习方向的开发者和研究者阅读。",
+  "tags": [
+    "Agent",
+    "RL",
+    "SFT",
+    "Tool Use",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:30:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT 擅长校准工具调用语法和教师支持行为，而 RL 能探索演示数据之外的奖励驱动行为，两者互补但需谨慎配比。",
+      "对已通过 SFT 校准的技能统一施加 RL 可能造成扰动，导致原有能力退化，因此需要区分对待不同能力维度。",
+      "企业级长周期分析智能体需要检索、推理、API 调用、代码执行和中间观察适应等多种能力协同，训练策略需针对性设计。",
+      "在广告等业务场景中，少量 SFT 配合适量 RL 的混合训练方式可能是提升长周期智能体表现的有效路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

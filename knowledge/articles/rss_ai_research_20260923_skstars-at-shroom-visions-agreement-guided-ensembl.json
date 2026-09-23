@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-078",
+  "title": "SKstars at SHROOM: Visions Agreement-Guided Ensembling of Zero-Shot and LoRA-Adapted Vision--Language Models",
+  "source_url": "https://arxiv.org/abs/2609.24198",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 SKstars 团队在 SHROOM-Visions 2026 共享任务中的提交方案，该任务聚焦于大型视觉语言模型（VLM）输出中的细粒度幻觉检测，要求系统识别幻觉字符片段、分配幻觉类别并给出置信度估计。作者提出了一种“视觉一致性引导的集成”（Visions Agreement-Guided Ensembling）方法，将零样本 Qwen2.5-VL-72B-Instruct 的预测与经过 LoRA 微调的 Qwen2.5-VL-7B-Instruct 的预测相结合。该工作的价值在于：一方面，它针对 VLM 幻觉检测这一当前多模态大模型可靠性的核心痛点；另一方面，它展示了一种实用且高效的集成策略——用大模型零样本能力与小模型微调能力互补，并通过一致性信号进行融合，为资源受限场景下的幻觉检测提供了可借鉴的工程范式。此外，该任务要求字符级定位与类别标注，比传统二分类幻觉检测更细粒度，对评估和提升 VLM 可信度具有推动作用。",
+  "tags": [
+    "VLM",
+    "Hallucination Detection",
+    "LoRA",
+    "Ensemble",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出一致性引导的集成方法，融合零样本大模型与 LoRA 微调小模型的预测，以提升细粒度幻觉检测性能。",
+      "针对 SHROOM-Visions 2026 任务，要求字符级幻觉片段识别、类别分配和置信度估计，比传统幻觉检测更细粒度。",
+      "使用 Qwen2.5-VL 系列模型（72B 零样本 + 7B LoRA 微调）验证了大小模型互补集成的有效性。",
+      "为视觉语言模型幻觉检测提供了一种可复用的工程方案，尤其适合计算资源受限但需高可靠性的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

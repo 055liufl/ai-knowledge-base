@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-012",
+  "title": "AutoGym: Blueprint-First Generation of Verifiable Agent Gyms",
+  "source_url": "https://arxiv.org/abs/2609.22592",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoGym 提出了一种\"蓝图优先\"（Blueprint-First）的智能体训练环境（gym）自动生成方法，旨在解决强化学习训练智能体时环境构建成本高、静态化、易饱和与易受数据污染的问题。传统上，一个完整的 gym 需要包含任务定义、可执行环境以及能够可靠判定成功与失败的验证器（verifier），而这三者通常依赖人工构建，耗时且难以扩展。随着模型能力提升，固定任务集很快被攻克，同时训练数据与评测集之间的污染问题也日益严重。虽然合成生成可以带来规模优势，但单次（single-pass）合成往往难以控制任务难度，导致生成的任务要么过于简单、要么不可验证。AutoGym 的核心思路是先构建任务蓝图（blueprint），再基于蓝图生成可验证的环境与验证器，从而在规模化合成的同时保证任务难度可控与验证可靠性。该工作对智能体强化学习、自动化环境构建以及可验证评测具有重要价值，值得关注。",
+  "tags": [
+    "Agent",
+    "Reinforcement Learning",
+    "Synthetic Data",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统智能体 gym 构建依赖人工，成本高且任务集易饱和、易受污染，合成生成是规模化的重要方向",
+      "单次合成难以控制任务难度，AutoGym 提出蓝图优先（Blueprint-First）的生成范式以提升可控性",
+      "可验证性（verifier）是 gym 的关键组成部分，AutoGym 强调生成任务与验证器的一体化构建",
+      "该方法有望缓解任务饱和与数据污染问题，为智能体强化学习提供可持续扩展的训练环境"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

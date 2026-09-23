@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-074",
+  "title": "Self-Healing Harness for Runtime Oversight of Agent Self-Modification",
+  "source_url": "https://arxiv.org/abs/2609.24130",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对 LLM Agent 自我修改行为的运行时监督机制，核心思想是将 Agent 对自身操作指令的修改视为一种需要准入控制（admission control）的请求。Agent 可以提出修改建议，但最终是否持久化由外部运行时门控决定。作者实现了一个模型无关的「自愈式 harness」，围绕 Agent 运行一个「检测-通知-修复-验证」（Detect, Notice, Heal, Validate）循环，从而在允许 Agent 自我进化的同时保持外部可控性。该工作值得关注的原因在于：随着 Agent 自主性增强，自我修改能力既带来适应性优势，也带来失控风险，而现有研究多聚焦于能力提升，较少系统性地解决「哪些自我生成的变化应被允许保留」这一基本控制问题。该框架提供了一种通用、可插拔的监督范式，对构建安全可靠的自主 Agent 系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "AI Safety",
+    "Self-Modification",
+    "Runtime Oversight"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Agent 自我修改形式化为准入控制问题，由外部运行时门控决定哪些自生成变更可以持久化",
+      "提出模型无关的自愈式 harness，通过 Detect-Notice-Heal-Validate 循环实现运行时监督",
+      "在允许 Agent 自适应进化的同时，保持外部对关键行为变更的控制权，平衡自主性与安全性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-007",
+  "title": "Replication Without Persistence in Hosted LLMs: Measurement Sensitivity in Action-Time Belief Evaluation",
+  "source_url": "https://arxiv.org/abs/2609.22478",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对托管式大语言模型（Hosted LLM）行为评估中的可复现性问题展开研究，提出并区分了三个关键的验证维度：复现（replication）、测量敏感性（measurement sensitivity）与持久性（persistence）。作者指出，由于托管服务本身、测量工具或两者在多次运行之间可能发生变化，行为评估结果往往难以稳定重现。论文的核心贡献在于将\"复现\"这一笼统概念拆解为可操作的三层验证框架：第一层检验历史配置下新数据能否重现先前发现；第二层检验在相同标识符下重建评估与推理配置时端点是否发生变化；第三层检验发现是否具有持久性。这一工作对 LLM 评估方法论具有重要意义，因为它揭示了当前学术界和工业界在报告模型行为结论时普遍忽视的测量不确定性来源，尤其对依赖 API 访问的托管模型研究提出了警示。该研究提醒研究者在发表行为评估结论时需明确区分服务端变化与测量工具变化带来的影响，为构建更严谨、可审计的 LLM 评估协议提供了理论基础。",
+  "tags": [
+    "LLM Evaluation",
+    "Reproducibility",
+    "Benchmark",
+    "Measurement"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "托管 LLM 的行为评估结果可能因服务端更新或测量工具变化而不可复现，需区分复现、测量敏感性与持久性三个独立验证问题",
+      "相同模型标识符下的端点可能因评估与推理配置重建而发生变化，导致历史结论在新运行中失效",
+      "当前 LLM 行为评估文献普遍缺乏对测量不确定性的系统报告，该框架为更严谨的评估协议提供了方法论基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

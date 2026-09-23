@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-097",
+  "title": "Epi-Logic: A Conceptual Framework for Epistemic Runtime Control, Schema Validity Checking, and Controlled Accommodation in Autonomous AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.24755",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Epi-Logic 概念框架，针对自主 AI 智能体在不可逆决策场景中面临的\"模式失配\"（schema mismatch）问题——即智能体使用的解释框架已不再适用于当前语境，但其输出仍显得内部一致、语言合理且事实大体正确，导致传统输出质量指标无法捕捉底层错误。该框架整合了认知运行时控制（Epistemic Runtime Control）、模式有效性检查（Schema Validity Checking）与受控调适（Controlled Accommodation）三个机制，旨在让智能体在运行过程中动态检测自身解释框架的有效性，并在框架失效时进行受控的认知调整，而非继续在错误框架下生成看似合理的输出。该研究值得关注，因为它触及了当前自主智能体安全部署的核心盲区：现有评估体系过度依赖输出质量指标，而忽视了智能体内部认知框架与外部语境的一致性。随着智能体在医疗、金融、法律等高风险领域加速落地，这种\"框架失效但输出仍可信\"的隐性失败模式可能造成严重后果。该工作为智能体的认知安全提供了新的理论视角和设计原则，对构建可审计、可干预的自主系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "AI Safety",
+    "Autonomous Systems",
+    "Epistemic Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模式失配是一种隐蔽的失败模式：智能体在过时或错误的解释框架下仍能生成内部一致、语言合理且事实大体正确的输出，使传统质量指标失效",
+      "现有输出质量评估体系无法捕捉认知框架层面的错误，需要引入运行时认知控制机制来检测框架有效性",
+      "受控调适机制允许智能体在检测到框架失效时进行有约束的认知调整，而非继续在错误框架下运行",
+      "该框架对高风险、不可逆决策场景下的自主智能体安全部署具有重要的设计指导意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

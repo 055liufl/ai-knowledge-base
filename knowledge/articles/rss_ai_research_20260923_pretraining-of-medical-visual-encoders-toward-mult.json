@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-055",
+  "title": "Pretraining of Medical Visual Encoders Toward Multi-modal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.23860",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 MedMLIP 框架，针对多模态大语言模型（MLLM）中视觉编码器预训练与下游自回归 LLM 消费方式不匹配的问题（作者称之为语义接口鸿沟），提出了一种新的医学视觉编码器预训练范式。传统 MLLM 通常直接复用 CLIP 预训练的 ViT 视觉编码器，但 CLIP 的对比学习目标与 LLM 自回归生成所需的语义特征之间存在结构性错位。MedMLIP 的核心思路是：利用冻结的 LLM 通过医学报告生成任务来预训练视觉编码器，使视觉特征直接对齐到 LLM 的语义空间；同时引入局部关系蒸馏（Local Relational Distillation, LRD），在预训练过程中保留视觉 patch 之间的局部结构关系，防止在适配 LLM 时丢失细粒度视觉信息。该工作聚焦医学影像领域，对医学多模态大模型的视觉表征质量提升具有直接价值，也为通用 MLLM 的视觉编码器预训练提供了新思路。",
+  "tags": [
+    "MLLM",
+    "Medical Imaging",
+    "Vision Encoder",
+    "Pretraining"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:28:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CLIP 预训练的视觉编码器与自回归 LLM 之间存在语义接口鸿沟，直接复用并非最优方案",
+      "通过冻结 LLM 的报告生成任务预训练视觉编码器，可使视觉特征直接对齐 LLM 语义空间",
+      "局部关系蒸馏（LRD）在适配 LLM 的同时保留视觉 patch 间的局部结构关系，缓解细粒度信息丢失",
+      "该工作为医学多模态大模型的视觉编码器预训练提供了新范式，也可启发通用 MLLM 的视觉表征优化"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

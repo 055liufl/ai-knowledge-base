@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-031",
+  "title": "AgentRouter: Heterogeneous Model Routing for Cost-Optimal Multi-Step Agentic Workflows",
+  "source_url": "https://arxiv.org/abs/2609.22951",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentRouter 是一篇针对多步骤智能体（Agentic）工作流中模型路由问题的 arXiv 论文。文章指出，企业级智能体系统若将轨迹中的每一步都交给前沿大模型处理，会在小模型同样能胜任的子任务上浪费 60%-80% 的推理预算。现有路由方案主要针对单轮查询优化，忽略了智能体工作流的一个独特属性：同一条轨迹内部各子任务的复杂度差异极大——例如规划步骤可能需要前沿级推理能力，而后续的格式化步骤仅需 7B 级别的小模型即可完成。AgentRouter 提出面向异构模型的路由框架，旨在为多步骤智能体工作流实现成本最优的模型分配。该工作值得关注的原因在于：随着智能体系统在企业场景中大规模落地，推理成本已成为核心瓶颈，而按子任务复杂度动态选择模型是一种直接且高杠杆的优化手段。它将模型路由从静态的单轮查询匹配，推进到考虑轨迹内复杂度分布的动态决策层面，对降低智能体部署成本、提升系统经济性具有实际意义，也为后续研究提供了新的问题设定与优化目标。",
+  "tags": [
+    "Agent",
+    "Model Routing",
+    "LLM Inference",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "企业级智能体系统将每步都路由到前沿模型会浪费 60%-80% 的推理预算，成本优化空间巨大。",
+      "智能体工作流的独特属性是单条轨迹内子任务复杂度差异极大，规划步骤与格式化步骤对模型能力的需求完全不同。",
+      "现有路由方案只优化单轮查询分配，无法捕捉轨迹内复杂度变化，需要新的异构路由机制。",
+      "按子任务复杂度动态选择模型，是降低多步骤智能体部署成本的高杠杆手段。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

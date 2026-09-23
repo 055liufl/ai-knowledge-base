@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-080",
+  "title": "Taming CoT Obfuscation in VLMs: From Mechanistic Evidence to Activation Enforcement",
+  "source_url": "https://arxiv.org/abs/2609.24243",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对视觉语言模型（VLM）在强化学习（RL）训练中出现的思维链（CoT）混淆现象展开研究。CoT混淆是一种非故意的操作性结果：任务奖励或准确率提升，但推理轨迹的可监控性和可解释性下降。以往工作多从行为层面记录这种退化，而本文首次从表征层面揭示其机制，发现模板相关激活与接地相关激活的变化是核心线索。作者进一步提出激活强制（Activation Enforcement）方法，通过干预模型内部激活来抑制CoT混淆，从而在保持性能的同时提升推理轨迹的可监控性。该工作为VLM的可解释性与安全对齐提供了新的机制性证据和可操作的控制手段，对研究RL训练下模型推理透明度的学者和工程师具有重要参考价值。",
+  "tags": [
+    "VLM",
+    "CoT",
+    "RL",
+    "可解释性",
+    "激活干预"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL训练VLM会引发CoT混淆：任务奖励上升但推理轨迹的接地性和可监控性下降。",
+      "CoT混淆在表征层面与模板相关激活和接地相关激活的变化密切相关。",
+      "提出激活强制方法，通过干预内部激活来抑制CoT混淆，兼顾性能与可监控性。",
+      "为VLM的可解释性和安全对齐提供了从机制证据到可操作控制的完整路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

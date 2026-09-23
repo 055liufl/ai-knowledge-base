@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-029",
+  "title": "When Should a VLM Look? Paying Only for Visual Calls That Were Needed and Used",
+  "source_url": "https://arxiv.org/abs/2609.22910",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对视觉语言模型（VLM）中“裁剪与缩放”类视觉工具调用的奖励机制提出质疑。现有训练方法通常以工具调用成功作为奖励信号，但成功调用并不等同于模型真正需要查看该区域或实际利用了返回的像素信息。作者在冷启动检查点上的实验表明，仅有10%至12%的视觉调用同时满足“被需要”和“被使用”两个条件，而已发布智能体在部分基准测试中产生虚假调用的比例高达36%至87%。论文指出，结果奖励、评判奖励和分支探测各自只能观察到问题的一个侧面，无法完整评估视觉调用的必要性。该工作为视觉语言智能体的工具使用效率与奖励设计提供了重要诊断视角，对提升多模态智能体的推理可靠性和计算效率具有直接指导意义。",
+  "tags": [
+    "VLM",
+    "Agent",
+    "Tool Use",
+    "Reward Design",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "成功的视觉工具调用并不等于模型真正需要或使用了该视觉信息，现有奖励机制存在根本性盲区。",
+      "冷启动检查点中仅10%-12%的视觉调用同时满足必要性和使用性，已发布智能体的虚假调用率高达36%-87%。",
+      "结果奖励、评判奖励和分支探测各自只能捕捉问题的一个侧面，需要更细粒度的联合评估方法。",
+      "该研究为视觉语言智能体的工具调用效率优化和奖励函数设计提供了可量化的诊断框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

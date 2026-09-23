@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-035",
+  "title": "PINNForge: Execution-Grounded Evolutionary Design of Physics-Informed Neural Networks for PDE Solving via Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.23023",
+  "source_platform": "rss_ai_research",
+  "summary": "PINNForge 是一项面向物理信息神经网络（PINN）自动化设计的研究工作，旨在解决 PINN 在求解偏微分方程（PDE）时需协同选择网络结构、采样策略、损失构造与优化器，且最优配置随 PDE 类型显著变化的问题。现有自动化 PINN 设计方法虽能搜索候选配置，但训练过程中产生的信息主要用于评估，而非反馈到后续设计迭代中，导致搜索效率与效果受限。该工作提出以执行过程为依托的进化式设计框架，借助大语言模型（LLM）驱动配置的生成与改进，将实际训练中暴露的性能信号转化为设计演化的依据，从而形成闭环优化。其核心价值在于把 LLM 的代码与推理能力同 PINN 训练的真实反馈结合，使自动化设计从静态搜索转向动态、可迭代的进化过程，有望降低 PINN 应用门槛并提升跨 PDE 的泛化能力。对从事科学计算、AI for Science 及自动化机器学习的研究者与开发者具有参考意义。",
+  "tags": [
+    "PINN",
+    "LLM",
+    "AutoML",
+    "PDE",
+    "Scientific Computing"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 PINN 自动设计方法未充分利用训练过程中的信息，仅将其用于评估而非指导后续设计。",
+      "PINNForge 通过 LLM 驱动的进化式框架，将执行反馈闭环用于配置生成与改进。",
+      "该方法针对不同 PDE 的配置差异性问题，强调执行过程作为设计依据的重要性。",
+      "将 LLM 与 PINN 训练反馈结合，为 AI for Science 中的自动化建模提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

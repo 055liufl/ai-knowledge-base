@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-087",
+  "title": "VLM-in-Sandbox: Visual Workspaces for Agentic Visual Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.24362",
+  "source_platform": "rss_ai_research",
+  "summary": "VLM-in-Sandbox 提出了一种面向视觉语言模型（VLM）的沙箱化视觉工作空间框架，旨在解决多步视觉推理中的状态管理问题。传统沙箱环境（如代码执行沙箱）为语言模型提供了工具调用、可执行程序和持久化文件，支持复杂多步推理；但当这一范式扩展到 VLM 时，视觉推理会产生大量中间图像证据，如裁剪区域、掩码、叠加层、放大区域和分析性渲染图。这些图像若全部保留在多模态上下文中，会导致上下文无限膨胀，同时若直接丢弃又会丢失可寻址的推理依据。该工作将视觉工作空间抽象为可寻址的持久化状态，使中间视觉证据能够被引用、复用和按需检索，而无需持续占用多模态上下文窗口。这一思路对构建可扩展的视觉 Agent 系统具有重要价值，因为它将视觉推理从“一次性上下文填充”转变为“可管理的外部状态”，类似于为语言模型引入文件系统与内存管理机制。对于研究者和开发者而言，该方向有望推动更复杂、更长程的视觉推理任务，如 GUI 操作、文档理解、科学图表分析等，同时降低上下文成本并提升推理可追溯性。",
+  "tags": [
+    "VLM",
+    "Agent",
+    "Visual Reasoning",
+    "Sandbox",
+    "Context Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:29:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉推理产生的中间图像证据（裁剪、掩码、叠加层等）需要可寻址的持久化状态管理，否则会无限膨胀多模态上下文。",
+      "将沙箱范式从语言模型扩展到 VLM 的核心挑战是视觉状态管理，而非单纯的工具调用。",
+      "视觉工作空间可作为外部记忆，使中间视觉证据按需检索和复用，提升长程视觉推理的可扩展性与可追溯性。",
+      "该方向对构建复杂视觉 Agent（如 GUI 操作、文档理解）具有重要基础设施意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

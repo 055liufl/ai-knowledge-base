@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260923-123",
+  "title": "PII-TRACE: A Benchmark for Context-Aware PII Detection in Multi-Turn LLM Conversations",
+  "source_url": "https://arxiv.org/abs/2609.22200",
+  "source_platform": "rss_ai_research",
+  "summary": "PII-TRACE 是一个针对多轮 LLM 对话场景的上下文感知 PII 检测基准。当前 AI 服务商在存储或处理对话日志前，通常需要扫描并掩码个人身份信息（PII），但现有 PII 检测器与基准大多面向独立、自包含的记录，无法评估跨轮次、依赖上下文的 PII 识别能力。该工作提出 PII-TRACE（Tracing Recurring PII Across Turns），专门用于在多轮对话中追踪重复出现、需要结合上下文才能识别的 PII。其价值在于：随着 LLM 助手和智能体系统记录越来越长的多轮对话，隐私合规与数据安全风险显著上升，传统单轮检测方法容易漏检或误判；该基准填补了跨轮 PII 评估的空白，为开发更可靠的隐私保护机制提供了可量化的测试标准，对 AI 隐私工程、合规审计和 Agent 系统安全具有直接参考意义。",
+  "tags": [
+    "PII Detection",
+    "Privacy",
+    "LLM",
+    "Benchmark",
+    "Multi-Turn Dialogue"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:31:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 PII 检测基准多针对单条自包含记录，无法评估多轮对话中跨轮次、依赖上下文的 PII 识别。",
+      "PII-TRACE 聚焦于追踪多轮对话中重复出现或需上下文推断的 PII，填补了该评估空白。",
+      "随着 LLM 助手和 Agent 系统记录长对话，跨轮 PII 检测对隐私合规与数据安全愈发关键。",
+      "该基准为开发更鲁棒、上下文感知的 PII 掩码与检测系统提供了可量化的评测标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

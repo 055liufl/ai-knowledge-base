@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-122",
+  "title": "Improving Parameter Utilization by Sharing Neural Experts Across Layers in Transformers",
+  "source_url": "https://arxiv.org/abs/2609.22199",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 CS-MoE（Cross-layer Shared Mixture-of-Experts），一种新型 Transformer 架构，旨在解决大语言模型中普遍存在的层间参数冗余问题。传统 MoE 架构在每个 Transformer 块末尾使用层隔离的专家网络，导致不同深度重复学习相似的功能变换，参数利用率低下。CS-MoE 的核心创新在于让专家网络跨层共享，即同一组专家可以被多个 Transformer 层复用，从而减少冗余参数并提升参数效率。这一设计思路与近期关于 Transformer 层间表示相似性和参数共享的研究方向一致，但将其与 MoE 的稀疏激活机制结合，具有较好的创新性。该工作对于降低大模型训练和推理成本、提升模型容量利用率具有实际意义，尤其适合关注高效架构设计和 MoE 变体的研究者和工程师。不过目前仅见摘要，缺乏实验细节和量化结果，实际效果有待验证。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "参数共享",
+    "高效架构"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:30:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 MoE 的层隔离专家导致层间参数冗余，跨层共享专家可提升参数利用率",
+      "CS-MoE 将专家共享与稀疏激活结合，是对标准 MoE 架构的有意义改进",
+      "该方向有望降低大模型训练与推理成本，但需实验验证其实际收益"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

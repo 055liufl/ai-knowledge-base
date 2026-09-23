@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-043",
+  "title": "CraftBench-UE: Deterministic Evaluation for Coding Agents in Unreal Engine",
+  "source_url": "https://arxiv.org/abs/2609.23142",
+  "source_platform": "rss_ai_research",
+  "summary": "CraftBench-UE 是一个面向 Unreal Engine 中编码智能体的确定性评测框架，旨在解决传统代码评测无法判断游戏玩法功能是否真正实现的问题。该工作指出，能够编译并运行的代码并不等同于正确实现了所请求的游戏玩法，因此需要更贴近引擎实际运行环境的验证方式。CraftBench-UE 将智能体置于隔离的 Unreal Engine 环境中执行任务，随后在全新项目中重建其保存的提交内容，并施加确定性的构建、资产与运行时检查，全程不依赖 LLM 作为评判者。这种设计避免了 LLM 评判带来的主观性和不稳定性，使评测结果可复现、可比较。基于该框架，作者构建了一个基准测试集，用于系统评估编码智能体在真实游戏引擎场景下的能力。该工作值得关注的原因在于：它填补了编码智能体评测在复杂游戏引擎场景中的空白，提出了不依赖 LLM 评判的确定性评测范式，对智能体在真实软件工程环境中的能力评估具有重要参考价值，尤其适用于需要处理资产、构建流程和运行时行为的领域。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Unreal Engine",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:27:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代码能编译运行并不代表正确实现了游戏玩法，游戏引擎场景需要构建、资产和运行时层面的综合验证。",
+      "使用确定性检查替代 LLM 评判，可显著提升编码智能体评测的可复现性和客观性。",
+      "在隔离的 Unreal Engine 环境中重建智能体提交并施加确定性检查，是评估真实游戏开发任务的有效范式。",
+      "该基准为编码智能体在复杂软件工程环境中的能力评估提供了新的标准化工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

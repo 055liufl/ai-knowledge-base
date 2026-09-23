@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260923-015",
+  "title": "Splitting Documents at Lower Cost: Multi-Split Boundary Decisions for LLM-Based Page Stream Segmentation",
+  "source_url": "https://arxiv.org/abs/2609.22620",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对扫描邮件、上传PDF和合并附件等场景中页面流需要切分为独立文档的问题，提出了多切分边界决策（Multi-Split Boundary Decision, MS）方法。传统零样本大语言模型虽能无需任务特定训练即可检测文档边界，但标准的页面分类（PC）和边界决策（BD）范式每次模型调用只能解决一个边界，导致处理长页面流时成本高昂。MS方法旨在通过一次模型调用识别多个切分边界，从而显著降低LLM调用次数和整体处理成本。该工作对于文档智能、RAG预处理、邮件路由和自动化文档处理流水线具有实用价值，尤其适合需要大规模处理扫描文档的企业场景。其创新点在于将边界检测从单点决策扩展为多点联合决策，在保持零样本能力的同时提升效率，为LLM在文档分割任务中的低成本部署提供了新思路。",
+  "tags": [
+    "LLM",
+    "Document Segmentation",
+    "Zero-shot",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:26:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准PC和BD方法每次LLM调用仅能确定一个文档边界，处理长页面流时成本高。",
+      "MS方法通过一次模型调用识别多个切分边界，显著减少LLM调用次数。",
+      "该方法保持零样本能力，无需任务特定训练，适合扫描邮件和PDF等实际场景。",
+      "多切分边界决策为LLM在文档分割任务中的低成本部署提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

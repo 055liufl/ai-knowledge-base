@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260923-104",
+  "title": "Pinocchio: Fast Uncertainty Estimates for Black-Box Language Models",
+  "source_url": "https://arxiv.org/abs/2609.24881",
+  "source_platform": "rss_ai_research",
+  "summary": "Pinocchio 提出了一种针对黑盒语言模型（如 GPT 等闭源 API 模型）的快速不确定性估计方法。现有 LLM 不确定性估计方法通常依赖模型输出的对数概率或微调权限，但许多工业级 API 模型不返回 log-probabilities，导致这些方法无法适用。Pinocchio 旨在解决这一限制，使开发者能够在无法访问模型内部信息的情况下，仍能获得预测的不确定性估计。该工作对高风险决策场景（如医疗、金融、法律）中部署 LLM 尤为重要，因为在这些场景中，仅有关注准确率是不够的，还需要知道模型何时可能出错。Pinocchio 的价值在于它填补了黑盒 API 模型不确定性量化这一空白，降低了不确定性估计的使用门槛，使更多依赖闭源模型的产品能够获得可靠的风险评估能力。",
+  "tags": [
+    "LLM",
+    "Uncertainty Estimation",
+    "Black-Box Models",
+    "API"
+  ],
+  "author": null,
+  "published_at": "2026-09-23T13:23:59Z",
+  "collected_at": "2026-09-23T13:30:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 不确定性估计方法依赖 log-probabilities 或微调权限，无法适用于不返回 log-probabilities 的闭源 API 模型。",
+      "Pinocchio 为黑盒语言模型提供快速不确定性估计，无需访问模型内部信息。",
+      "该方法对高风险决策场景中部署 LLM 具有重要实用价值，可帮助识别模型可能出错的预测。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
