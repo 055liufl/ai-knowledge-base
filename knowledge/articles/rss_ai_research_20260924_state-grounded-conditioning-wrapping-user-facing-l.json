@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-038",
+  "title": "State-Grounded Conditioning: Wrapping User-Facing LLM Agents Where Direction Depends on Live State",
+  "source_url": "https://arxiv.org/abs/2609.27606",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 State-Grounded Conditioning（SGC），一种面向用户侧 LLM Agent 的设计原则，旨在解决当 Agent 需要依赖实时用户状态（如游戏状态、会话历史、实时库存）进行决策时出现的「方向漂移」（direction drift）问题——即任务本身完成，但所选方向与当前状态不匹配。SGC 的核心思路是将状态相关的控制逻辑从 LLM 中外部化，交由基于结构化输入的规则内核处理，并通过感知（Perception）、接地（Grounding）等三个主要状态切片来组织状态信息。该工作值得关注的原因在于：它指出了一个被现有 Agent 评测体系普遍忽视的失败模式，即「任务完成但方向错误」，这类错误在游戏、电商、实时交互等强状态依赖场景中危害极大；同时它提供了一种将 LLM 的语义能力与确定性规则控制解耦的工程范式，对构建可靠的用户侧 Agent 具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "State Management",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出「方向漂移」这一新的失败类别：Agent 完成了任务，但决策方向与实时用户状态不一致，传统任务完成度指标无法捕捉此类错误。",
+      "SGC 主张将状态相关的控制逻辑从 LLM 中外部化到规则内核，避免让语言模型直接承担需要精确状态对齐的决策职责。",
+      "通过感知、接地等三个状态切片对实时状态进行结构化建模，为 Agent 提供可验证的状态上下文。",
+      "该设计原则对游戏、电商、实时交互等强状态依赖场景中的用户侧 Agent 具有直接的工程指导价值。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

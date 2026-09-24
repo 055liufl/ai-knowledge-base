@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-012",
+  "title": "Propose, Don't Judge: An Anytime-Valid Referee for LLM Agents That Mine Investment Factors",
+  "source_url": "https://arxiv.org/abs/2609.27051",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“提议，而非评判”（Propose, Don't Judge）的框架，用于解决LLM智能体在量化投资因子挖掘中自主决策带来的风险。当前，语言模型智能体已能端到端地完成因子研究：提出因子、回测、筛选并淘汰。作者认为，智能体不应同时拥有提议和评判的权力，否则会因自我评估偏差导致过拟合和虚假发现。为此，他们引入一个“冻结的统计裁判”，该裁判独立于智能体，仅根据提交后揭示的市场结果，通过赌博式检验（betting）对每个候选因子进行评分，并保证 anytime-valid 的错误控制。这种“受治理的自我进化”机制让智能体专注于创造性提议，而将评判权交给不可篡改的统计模块。该工作为LLM智能体在金融等高风险领域的可靠自主研究提供了新范式，值得关注。",
+  "tags": [
+    "LLM Agent",
+    "量化投资",
+    "统计验证",
+    "自我进化"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体在因子挖掘中应仅负责提议，评判权必须交给独立的统计裁判，以避免自我评估偏差。",
+      "冻结的裁判基于提交后揭示的市场结果，采用赌博式检验实现 anytime-valid 错误控制，防止数据窥探。",
+      "受治理的自我进化框架平衡了智能体的创造性与统计严谨性，适用于高风险自主研究场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

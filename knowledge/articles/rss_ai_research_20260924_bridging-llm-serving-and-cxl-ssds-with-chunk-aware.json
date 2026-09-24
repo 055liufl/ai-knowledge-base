@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-061",
+  "title": "Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management",
+  "source_url": "https://arxiv.org/abs/2609.26828",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型（LLM）前缀缓存（prefix caching）在扩展容量时面临的存储瓶颈问题，提出了一种基于 CXL-SSD 的分块感知 KV Cache 管理方案。传统 NAND 存储虽能提供大容量，但其块 I/O 路径会引发 CPU 缓存争用和主机 DRAM 暂存开销，即使使用 DRAM 作为存储介质，这些接口成本依然存在。作者通过表征分析发现，CXL-SSD 可提供字节可寻址的 NAND 容量访问，有望绕过块 I/O 的额外开销。然而，实验表明现成的 CXL-SSD 仍比本地 DRAM 慢约 3 倍，且未针对 KV Cache 的访问模式优化。为此，论文提出分块感知（chunk-aware）的 KV Cache 管理策略，以弥合 CXL-SSD 与 DRAM 之间的性能差距，从而在可扩展的 NAND 容量上高效服务 LLM 推理。该工作为 LLM 服务系统与新型存储硬件的协同设计提供了重要思路，值得关注。",
+  "tags": [
+    "LLM Serving",
+    "KV Cache",
+    "CXL",
+    "Storage"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NAND 存储的块 I/O 路径引入 CPU 缓存争用和 DRAM 暂存开销，即使存储介质为 DRAM 时这些接口成本依然存在。",
+      "CXL-SSD 提供字节可寻址的 NAND 容量访问，但现成设备仍比本地 DRAM 慢约 3 倍，需要针对性优化。",
+      "分块感知的 KV Cache 管理可有效利用 CXL-SSD 特性，缩小与 DRAM 的性能差距，扩展 LLM 前缀缓存容量。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

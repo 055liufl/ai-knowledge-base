@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-096",
+  "title": "Learning Spectral Allocation: A Fractional Diffusion Framework for Adaptive Volumetric Segmentation",
+  "source_url": "https://arxiv.org/abs/2609.27217",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 FHEAT 的两参数算子族，用于 3D 医学图像分割中的自适应计算。与设计新的网络骨干不同，作者关注每个网络阶段需要多少频谱混合，并通过优化自动学习。FHEAT 从分数阶热方程的离散余弦变换（DCT）解推导而来，由分数阶 α 和扩散强度 D 两个参数控制，当 D=0 时算子退化为恒等映射。通过重参数化，该框架能够自适应地分配频谱信息，从而在体积分割任务中实现更高效的计算。该工作值得关注，因为它将分数阶扩散理论与医学图像分割相结合，提供了一种可学习的频谱分配机制，可能减少人工设计骨干网络的需求，并为自适应计算提供新的理论视角。",
+  "tags": [
+    "Medical Imaging",
+    "Image Segmentation",
+    "Fractional Diffusion",
+    "Adaptive Computation"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 FHEAT 算子族，从分数阶热方程的 DCT 解推导，由分数阶 α 和扩散强度 D 控制，D=0 时退化为恒等映射。",
+      "核心思想是让优化决定每个网络阶段所需的频谱混合程度，而非手动设计骨干网络。",
+      "该方法针对 3D 医学图像分割中的自适应计算问题，有望提升计算效率和分割精度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

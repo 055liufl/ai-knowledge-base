@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-006",
+  "title": "Escaping Python Dependency Hell: A Hybrid Replay-and-Repair Pipeline for Python Dependency Resolution",
+  "source_url": "https://arxiv.org/abs/2609.26952",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PLLM+，一种混合式 Python 依赖修复流水线，旨在解决 Python 生态中因版本约束不兼容、包缺失及未记录兼容关系导致的依赖冲突问题。研究基于包含 2,891 个依赖失败代码片段的 HG2.9K 基准进行评估。PLLM+ 的核心设计理念是优先执行低成本的确定性修复步骤（如基于 AST 的静态分析），仅在必要时才调用基于 LLM 的修复流程，从而在保证修复效果的同时控制计算成本。该工作值得关注的原因在于：Python 依赖地狱是开发者日常面临的普遍痛点，现有方案多依赖单一策略（纯规则或纯 LLM），而 PLLM+ 的混合分层思路兼顾了效率与泛化能力，为自动化依赖修复提供了可落地的工程范式，对提升代码可执行性和开发效率具有实际意义。",
+  "tags": [
+    "Dependency Resolution",
+    "LLM",
+    "Static Analysis",
+    "Python"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合分层策略：先执行低成本确定性修复（AST 静态分析），再按需调用 LLM，平衡效率与修复能力",
+      "依赖冲突的根源包括版本约束不兼容、包缺失和未记录的兼容关系，单一策略难以覆盖全部场景",
+      "基于 HG2.9K 基准（2,891 个失败片段）进行系统评估，为依赖修复研究提供了可复现的测试集",
+      "该流水线面向真实世界代码片段的执行失败问题，具有较强的工程落地价值"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

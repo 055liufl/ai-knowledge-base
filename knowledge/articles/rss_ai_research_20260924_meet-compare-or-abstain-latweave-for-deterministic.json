@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260924-097",
+  "title": "Meet, Compare, or Abstain: LatWeave for Deterministic Multi-Hop Question Answering on Knowledge Lattices",
+  "source_url": "https://arxiv.org/abs/2609.27225",
+  "source_platform": "rss_ai_research",
+  "summary": "LatWeave 是一篇针对多跳问答（Multi-Hop QA）的学术论文，提出了一种基于知识格（Knowledge Lattices）的确定性推理框架。当前主流问答系统（如 LLM、RAG、训练式多跳检索器）将「已知什么」与「如何推理」混入单一概率计算中，导致三个根本问题：幻觉无法根除、证据链无法审计、系统在不知道答案时仍会强行作答。LatWeave 通过将知识组织为多维知识格结构，把知识表示与推理过程解耦，实现确定性的多跳问答。其核心机制包括「Meet（匹配）」「Compare（比较）」「Abstain（弃权）」三种操作，使系统能够在证据不足时明确拒绝回答，而非编造答案。该工作值得关注的原因在于：它挑战了当前以概率生成为核心的问答范式，提出了一条可审计、可解释、可弃权的确定性推理路径，对构建高可靠性问答系统、减少幻觉、满足合规与审计需求具有重要参考价值，尤其适用于医疗、法律、金融等对答案可靠性要求极高的领域。",
+  "tags": [
+    "Multi-Hop QA",
+    "Knowledge Lattice",
+    "Deterministic Reasoning",
+    "RAG",
+    "Hallucination Mitigation"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前问答系统将知识表示与推理过程混入单一概率计算，导致幻觉不可根除、证据链不可审计、系统在未知时仍强行作答。",
+      "LatWeave 通过多维知识格结构将知识组织与推理过程解耦，实现确定性的多跳问答。",
+      "Meet、Compare、Abstain 三种操作使系统能够在证据不足时明确弃权，而非编造答案，提升可靠性。",
+      "该工作为构建可审计、可解释、可弃权的高可靠性问答系统提供了新范式，适用于医疗、法律等高风险领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

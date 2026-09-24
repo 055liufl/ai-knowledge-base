@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-066",
+  "title": "COPE: Continual Personalization of LLMs under Sparse User Feedback via User Embeddings and Self-Evaluation",
+  "source_url": "https://arxiv.org/abs/2609.26853",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 COPE 框架，旨在解决大语言模型（LLM）在真实场景中难以持续适应用户个性化偏好的问题。现有方法存在明显局限：免训练方法（如提示工程）占用宝贵上下文窗口，而基于训练的方法在训练完成后即静态固化，无法支持持续优化。COPE 的核心创新在于利用用户嵌入（User Embeddings）表示个体偏好，并结合自评估（Self-Evaluation）机制，在稀疏用户反馈条件下实现 LLM 的持续个性化。该工作针对的是个性化 LLM 中反馈稀缺这一关键瓶颈，通过将用户偏好压缩为可复用的嵌入向量，避免了对大量显式反馈的依赖，同时支持模型随交互不断演进。这一方向对构建真正以用户为中心的 AI 助手具有重要意义，尤其适用于推荐、写作辅助、客服等需要长期用户适配的场景。其技术路线融合了持续学习、参数高效微调与自监督评估，为个性化 LLM 的落地提供了新思路。",
+  "tags": [
+    "LLM",
+    "Personalization",
+    "Continual Learning",
+    "User Embedding"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有免训练个性化方法消耗上下文窗口，训练式方法则无法持续更新，二者均难以满足真实场景的持续个性化需求。",
+      "COPE 通过用户嵌入压缩个体偏好，并结合自评估机制，在稀疏反馈下实现 LLM 的持续优化。",
+      "该工作将持续学习与个性化 LLM 结合，为长期用户适配提供了可扩展的技术路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

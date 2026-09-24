@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-122",
+  "title": "Uncheatable Eval: Dynamic Compression-Based Evaluation of Language Models",
+  "source_url": "https://arxiv.org/abs/2609.27510",
+  "source_platform": "rss_ai_research",
+  "summary": "Uncheatable Eval 是一种基于动态压缩的语言模型评估方法，旨在解决现代大语言模型因预训练数据庞大而导致的基准数据污染问题。传统评估基准往往在模型训练前就已存在，容易被模型在预训练阶段“记住”，从而虚高评估分数。该方法通过定期收集新发布的文本，利用压缩率作为评估指标，动态构建评估集，确保评估数据在模型训练时尚未出现，从而无法被“作弊”。这一方法特别适用于基础模型（base models），因为这类模型指令跟随能力有限，难以通过传统任务式评估进行可靠测评。Uncheatable Eval 的核心创新在于将评估与时间绑定，利用压缩作为通用且无需标注的度量，为语言模型提供了一种更公平、更抗污染的性能衡量方式。该工作对于推动可信 AI 评估、模型比较和基准设计具有重要意义，尤其在大模型时代，评估的可靠性直接关系到技术发展的方向。",
+  "tags": [
+    "Evaluation",
+    "LLM",
+    "Compression",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:25:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基准易受数据污染影响，动态收集新文本可有效避免模型在预训练中‘见过’评估数据。",
+      "基于压缩的评估无需人工标注，适用于指令跟随能力较弱的基础模型。",
+      "该方法将评估与时间绑定，提供了一种可持续、抗作弊的模型性能衡量范式。",
+      "压缩率作为评估指标具有通用性，但可能对模型类型和文本领域敏感，需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

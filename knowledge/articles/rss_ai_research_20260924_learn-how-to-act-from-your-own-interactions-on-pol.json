@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-028",
+  "title": "Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents",
+  "source_url": "https://arxiv.org/abs/2609.27307",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向 GUI Agent 的在线策略自蒸馏（On-Policy Self-Distillation, OPSD）方法，旨在让 GUI 智能体从自身与软件环境的交互中学习如何行动。GUI Agent 需要完成复杂的多轮用户指令，涉及逐步推理与长时程记忆，以指导动作并保留任务相关信息。近期 OPSD 方法在 GUI grounding（GUI 智能体的基础子任务）上取得了显著成效，得益于密集的 token 级监督信号。该工作将这一思路扩展到完整的 GUI 交互任务中，通过让模型在自身生成的轨迹上进行自蒸馏，缓解了依赖外部标注数据、分布偏移以及稀疏奖励等问题。其核心价值在于：无需昂贵的人工标注或强教师模型，即可利用智能体自身的交互经验持续提升策略，为构建可自我改进的 GUI 智能体提供了新范式，对自动化操作、RPA、多模态 Agent 等方向具有重要参考意义。",
+  "tags": [
+    "GUI Agent",
+    "Self-Distillation",
+    "On-Policy Learning",
+    "Multimodal Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OPSD 利用模型自身生成的交互轨迹进行 token 级自蒸馏，无需外部强教师或大量人工标注即可获得密集监督信号。",
+      "GUI Agent 的核心挑战在于逐步推理与长时程记忆，自蒸馏可同时优化动作决策与任务相关信息保留。",
+      "该方法将原本用于 GUI grounding 的 OPSD 扩展到完整多轮交互任务，缓解了稀疏奖励与分布偏移问题。",
+      "自蒸馏范式为构建可持续自我改进的 GUI 智能体提供了可扩展路径，降低了对昂贵标注数据的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

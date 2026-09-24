@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-019",
+  "title": "DRSR: Learning Set-Level Deletion Risk for Efficient Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2609.27276",
+  "source_platform": "rss_ai_research",
+  "summary": "DRSR（Direct Rela...）是一篇来自 arXiv 的新论文，聚焦于长时程语言模型智能体（Long-Horizon Agents）的上下文压缩问题。长时程智能体在运行过程中会积累大量推理轨迹、工具调用记录和观察结果，这些历史单元的相关性会随当前决策动态变化。现有压缩方法通常独立地对每个历史单元打分，但论文指出，删除多个单元的安全性并不由它们的单点分数决定：冗余证据、累积的小效应以及删除后剩余的信息都会影响整体安全性。为此，作者提出 DRSR，学习集合级别的删除风险（Set-Level Deletion Risk），以更准确地判断一组历史单元是否可以安全删除，从而在保持任务性能的同时降低上下文长度和计算成本。该工作对提升长时程智能体的效率与可靠性具有实际意义，尤其适用于需要多步推理和工具交互的复杂任务场景。",
+  "tags": [
+    "Agent",
+    "Context Compression",
+    "Long-Horizon",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体的历史单元删除安全性不能由单点分数独立决定，需考虑集合级别的交互效应。",
+      "冗余证据、累积小效应和删除后剩余信息是影响删除风险的关键因素。",
+      "DRSR 通过学习集合级删除风险，为上下文压缩提供更安全、更高效的决策依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

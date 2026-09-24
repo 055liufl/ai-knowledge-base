@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-091",
+  "title": "Count Evidence, Not Sentences: Tempered Evidence Fusion of LLM Judgments for Long-Text Value Measurement",
+  "source_url": "https://arxiv.org/abs/2609.27165",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对使用大语言模型（LLM）从长文本社交媒体帖子中测量公共价值取向的任务，指出现有方法存在两个问题：直接预测文档级标签容易过度自信，而按句子级预测进行多数投票或软投票则忽略了句子间的不确定性差异。作者提出「证据计数而非句子计数」的思路，通过「 tempered evidence fusion（缓和证据融合）」机制，将LLM对每个句子的判断视为证据而非简单投票，对不确定与决定性句子进行差异化加权融合，从而更稳健地估计长文本的整体价值取向。该工作值得关注，因为它触及LLM作为测量工具时的校准与聚合核心问题，对社会科学计算、舆情分析和LLM评估方法论均有启发，且提出的融合策略可迁移到其他长文本属性推断任务。",
+  "tags": [
+    "LLM",
+    "文本测量",
+    "证据融合",
+    "社会计算"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长文本价值测量中，句子级预测的简单投票会混淆不确定与决定性句子的贡献，应基于证据强度而非句子数量进行融合。",
+      "直接文档级预测容易过度自信，需要引入校准或证据聚合机制来缓解。",
+      "提出的缓和证据融合方法可提升LLM作为测量工具在长文本上的稳健性与可靠性。",
+      "该思路可推广到其他需要从混合内容中推断整体属性的LLM应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

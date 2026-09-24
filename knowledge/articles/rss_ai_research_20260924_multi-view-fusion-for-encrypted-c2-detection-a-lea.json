@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-104",
+  "title": "Multi-View Fusion for Encrypted C2 Detection: A Leakage-Controlled Measurement Study of Evaluation Pitfalls",
+  "source_url": "https://arxiv.org/abs/2609.27311",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对加密命令与控制（C2）流量检测中普遍存在的评估缺陷展开研究。随着C2通信越来越多地隐藏在TLS加密流量中，防御方转向利用机器学习分析流量元数据。许多研究假设将流统计特征与TLS握手指纹两种元数据视图融合，能够同时提升检测准确率和鲁棒性。作者基于62个真实Cobalt Strike捕获样本中的17,577条TLS流进行验证，并特别消除了导致报告分数虚高的数据泄漏问题。研究发现，在控制泄漏后，多视图融合的实际收益可能远低于此前文献所宣称的水平，揭示了该领域评估方法中的系统性陷阱。该工作对网络安全ML研究的方法论严谨性具有重要警示意义，提醒研究者在流量分类任务中必须严格防范数据泄漏，否则结论可能严重失真。对于从事入侵检测、加密流量分析和安全机器学习的研究者与工程师而言，这是一篇值得关注的方法论批判性研究。",
+  "tags": [
+    "Encrypted Traffic Analysis",
+    "C2 Detection",
+    "Data Leakage",
+    "ML Security",
+    "TLS"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多视图融合（流统计+TLS指纹）在加密C2检测中的实际增益可能被数据泄漏严重高估",
+      "基于62个真实Cobalt Strike捕获的17,577条TLS流，在消除泄漏后重新评估了融合方法的真实性能",
+      "该研究揭示了安全ML评估中的系统性陷阱，强调严格的泄漏控制对结论有效性的关键作用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

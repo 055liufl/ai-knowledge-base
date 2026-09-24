@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-131",
+  "title": "When Context Misleads: In-context Learning with Jurisdiction in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.27603",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型（LLM）的上下文学习（ICL）能力提出了一项关键反思：现有 ICL 后训练方法擅长从演示中提取模式，却常常忽视「上下文权威性」（context authority）——即判断上下文信息是否应当主导最终答案的能力。为评估这一能力，作者构建了 FakeContextBench 基准，涵盖七个领域的伪科学主张，用以测试模型在面对看似合理但实际错误的上下文时，能否正确拒绝其影响。该研究揭示了当前 LLM 部署中的一个重要盲点：模型容易被上下文中的错误信息误导，即使这些信息与事实相悖。这一发现对 RAG、Agent 等依赖上下文注入的应用场景具有直接警示意义，提示开发者需要关注模型对上下文可信度的判断能力，而非仅仅优化模式提取。该工作为 ICL 安全性评估提供了新的基准和方法论，值得研究者与开发者关注。",
+  "tags": [
+    "LLM",
+    "In-Context Learning",
+    "Benchmark",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:25:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 ICL 后训练方法过度关注模式提取，忽视了模型对上下文权威性的判断能力，导致模型容易被错误上下文误导。",
+      "FakeContextBench 通过七个领域的伪科学主张，系统性地评估 LLM 在上下文与事实冲突时的表现。",
+      "该研究对 RAG 和 Agent 等依赖上下文注入的应用具有直接警示：上下文可信度判断应成为模型能力评估的重要维度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

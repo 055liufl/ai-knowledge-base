@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-005",
+  "title": "Which Objectives Need a Dial? Predicting Objective Conflict and Covering Trade-offs in Steerable Pluralistic Alignment",
+  "source_url": "https://arxiv.org/abs/2609.26929",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究多目标对齐中的可操控性问题，聚焦于多目标直接偏好优化（MODPO）框架。作者提出两个核心问题：一个模型何时能同时提升两个目标，以及如何用有限数量的模型覆盖大量权衡方案。研究通过理论分析刻画了目标冲突的条件，并给出预测目标冲突的方法，进而指导在连续权衡空间中选取代表性模型（即“拨盘”位置），以最小化覆盖全部权衡所需的模型数量。该工作为多元对齐提供了理论工具，有助于在价值观多样且冲突的场景下高效部署可操控模型，减少训练与存储成本。对研究者而言，它连接了多目标优化、偏好学习与对齐理论；对开发者而言，它提供了选择模型配置的实用准则。",
+  "tags": [
+    "Alignment",
+    "Multi-Objective Optimization",
+    "Preference Learning",
+    "Pluralistic Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "目标冲突可预测：通过分析目标间的梯度或偏好关系，可以判断两个目标能否被同一模型同时提升。",
+      "覆盖权衡需要选择代表性拨盘位置：并非所有目标权重都需要训练模型，只需选取能覆盖整个权衡空间的少数关键点。",
+      "MODPO 的连续权衡空间存在冗余，合理选择模型数量可大幅降低部署成本。",
+      "该研究为多元对齐提供了理论框架，但实际效果依赖偏好数据的质量与覆盖度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

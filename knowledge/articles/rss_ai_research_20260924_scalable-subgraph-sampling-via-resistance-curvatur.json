@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-094",
+  "title": "Scalable Subgraph Sampling via Resistance Curvature",
+  "source_url": "https://arxiv.org/abs/2609.27209",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于电阻曲率（Resistance Curvature）的可扩展子图采样框架，用于降低大规模图神经网络（GNN）的训练成本。传统子图采样方法通常基于随机游走或重要性采样，但往往忽略了边在图结构中的几何角色。该工作引入 ERC-LG（Effective Resistance Curvature for Large Graphs），一种针对大规模图的曲率近似方法，通过 Johnson-Lindenstrauss 投影与正则化多 GPU 批量共轭梯度求解器相结合，避免了对拉普拉斯矩阵伪逆的显式计算，从而在保持可扩展性的同时高效估计边的有效电阻曲率。基于该曲率信号，采样过程能够优先保留对图几何结构具有关键意义的边，进而提升子图训练的质量与效率。该研究值得关注的原因在于：它首次将谱图理论中的有效电阻与离散曲率概念系统性地引入子图采样任务，为 GNN 训练加速提供了新的几何视角；同时 ERC-LG 的工程实现（JL 投影 + 多 GPU 共轭梯度）使其能够真正应用于亿级边的大规模图，兼顾理论深度与工程实用性，对图学习系统和大规模训练基础设施均有参考价值。",
+  "tags": [
+    "GNN",
+    "Graph Sampling",
+    "Spectral Graph Theory",
+    "Scalable Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将有效电阻曲率引入子图采样准则，弥补了传统采样方法忽略边几何角色的缺陷",
+      "ERC-LG 通过 Johnson-Lindenstrauss 投影与多 GPU 批量共轭梯度避免显式伪逆计算，实现大规模图上的曲率近似",
+      "曲率引导的采样可在降低 GNN 训练成本的同时保留对图结构更关键的边",
+      "该框架兼顾谱图理论深度与工程可扩展性，适用于亿级边规模的真实图数据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

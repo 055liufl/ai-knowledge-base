@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-084",
+  "title": "Crossflow: Prefill-Decode Elasticity for Agentic LLM Serving",
+  "source_url": "https://arxiv.org/abs/2609.27085",
+  "source_platform": "rss_ai_research",
+  "summary": "Crossflow 是一篇关于 LLM 推理服务优化的研究论文，聚焦于 Agentic LLM 场景下的 Prefill-Decode（P/D）分离架构。当前主流的 P/D 分离方案依赖静态资源划分，将计算资源固定分配给 prefill 阶段和 decode 阶段，从而通过阶段特化与隔离提升服务效率。然而，论文指出在真实的大规模 LLM 集群中，阶段需求并非静态：未缓存输入 token 与输出 token 的比例在分钟级时间尺度上呈现高达 4.7 倍的峰均比，这意味着静态划分会导致资源错配与利用率下降。Crossflow 提出 Prefill-Decode 弹性调度机制，使两个阶段之间的资源分配能够随负载动态调整，从而在 Agentic 工作负载（如多轮工具调用、长上下文交互）下显著提升服务吞吐与资源效率。该工作对 LLM 推理基础设施的弹性调度与成本优化具有重要参考价值，尤其适合关注大规模推理服务、Agent 系统部署与 GPU 资源管理的工程师与研究者。",
+  "tags": [
+    "LLM Serving",
+    "Prefill-Decode Disaggregation",
+    "Inference Optimization",
+    "Agentic AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "P/D 分离架构的静态资源划分在真实负载下存在严重错配，未缓存输入与输出 token 比例的峰均比可达 4.7 倍",
+      "Agentic LLM 工作负载的阶段需求具有分钟级动态波动特征，需要弹性调度而非固定分配",
+      "Crossflow 通过 Prefill-Decode 弹性机制动态调整两阶段资源，提升大规模 LLM 集群的服务效率与利用率"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

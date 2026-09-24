@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-116",
+  "title": "What Looks Like a Capability Limit in Vision-Language Models Is a Readout Limit",
+  "source_url": "https://arxiv.org/abs/2609.27408",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究挑战了视觉语言模型（VLM）基准测试中一个被长期忽视的假设：答案选项的呈现格式（如字母、颜色名、像素坐标）是中立的。作者在200张COCO照片上测试Qwen3-VL-4B，发现当位置以英文描述给出时，模型选择正确位置的准确率为68.5%，而以其他约定（如像素坐标）呈现时准确率骤降至20.0%。这表明基准测试所报告的\"能力上限\"可能实际上是\"读出（readout）上限\"——即模型内部已具备相应知识，但受限于输出接口与答案格式的匹配程度，无法正确表达。该发现对VLM评估方法论具有重要警示意义：现有基准可能系统性低估模型真实能力，且不同格式间的性能差异会误导模型选型与能力判断。研究提示社区需要重新审视评估协议的设计，区分\"模型不知道\"与\"模型无法按要求说出\"两种失败模式，并推动更公平、格式鲁棒的评测标准。",
+  "tags": [
+    "VLM",
+    "Evaluation",
+    "Benchmark",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM基准测试中答案格式（字母、颜色、坐标等）并非中立，会显著影响模型表现，导致能力被系统性低估。",
+      "Qwen3-VL-4B在英文位置描述下准确率68.5%，而其他约定下仅20.0%，说明性能瓶颈可能位于读出层而非模型知识本身。",
+      "该发现要求重新区分'模型不知道'与'模型无法按指定格式表达'两类失败，推动更鲁棒的评估协议设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

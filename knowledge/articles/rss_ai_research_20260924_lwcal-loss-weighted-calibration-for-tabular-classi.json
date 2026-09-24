@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-064",
+  "title": "LWCal: Loss-Weighted Calibration for Tabular Classifiers with Noisy Calibration Labels",
+  "source_url": "https://arxiv.org/abs/2609.26839",
+  "source_platform": "rss_ai_research",
+  "summary": "LWCal 是一篇针对表格分类器概率校准问题的研究论文，聚焦于一个被长期忽视的失败模式：校准标签本身带有噪声。传统的事后概率校准方法（如 Platt scaling、isotonic regression）通常假设用于校准的留出集标签是干净的，但在实际 AI 部署中，标签往往来自弱标注者、历史决策、启发式规则或远程监督，因此污染训练数据的标签噪声同样会污染校准过程。作者针对表格分类器提出 LWCal（Loss-Weighted Calibration），一种仅需 CPU 的事后校准器，通过对校准损失进行加权来缓解噪声标签带来的偏差。该工作值得关注的原因在于：它揭示了校准评估中一个普遍存在但被忽略的乐观假设，并给出了轻量级、易部署的解决方案，对依赖可靠概率输出的高风险决策场景（如医疗、金融风控）具有实际价值。",
+  "tags": [
+    "Calibration",
+    "Tabular",
+    "Noisy Labels",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有事后概率校准方法普遍假设校准集标签干净，这一乐观假设在弱监督、历史决策等真实场景中往往不成立。",
+      "标签噪声会同时污染训练与校准两个阶段，导致校准后的概率输出系统性偏差，影响下游决策可靠性。",
+      "LWCal 通过对校准损失加权来抑制噪声标签的影响，且仅需 CPU 即可运行，部署成本低。",
+      "该工作将校准研究从'干净校准集'的理想设定推进到更贴近实际部署的噪声校准场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

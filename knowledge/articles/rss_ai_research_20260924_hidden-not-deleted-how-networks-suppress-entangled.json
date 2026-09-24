@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-130",
+  "title": "Hidden not Deleted: How Networks Suppress Entangled Features",
+  "source_url": "https://arxiv.org/abs/2609.27593",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究概念擦除（concept erasure）方法在神经网络中的局限性。传统线性投影擦除方法假设特征占据可分离的子空间，但作者发现，在密集叠加（dense superposition）条件下，当两个特征被迫共享一个子空间并形成对跖对（antipodal pair）时，最先进的线性擦除方法会同时破坏两个特征，而不仅仅是目标特征。相反，使用梯度下降训练的神经网络能够以非线性方式解决这一问题，但并非统一地解决：网络会收敛到两种截然不同的状态之一。该研究揭示了线性擦除方法的根本缺陷，并强调了网络在抑制纠缠特征时的非线性机制。这项工作对可解释性、模型编辑和概念擦除领域具有重要影响，因为它挑战了线性表示假设，并提示需要更精细的非线性擦除策略。",
+  "tags": [
+    "Concept Erasure",
+    "Superposition",
+    "Interpretability",
+    "Linear Projection"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:25:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性概念擦除方法在密集叠加下会误伤非目标特征，因为特征共享子空间形成对跖对。",
+      "梯度下降训练的网络以非线性方式解决特征纠缠，但会收敛到两种不同的状态。",
+      "该发现挑战了可分离子空间假设，对模型编辑和可解释性研究有重要启示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

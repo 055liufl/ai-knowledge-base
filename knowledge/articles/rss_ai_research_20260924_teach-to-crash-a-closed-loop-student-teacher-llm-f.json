@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-102",
+  "title": "Teach-to-Crash: A Closed-Loop Student-Teacher LLM Framework for Collision-Inducing Test Scenario Generation",
+  "source_url": "https://arxiv.org/abs/2609.27296",
+  "source_platform": "rss_ai_research",
+  "summary": "Teach-to-Crash 是一个面向自动驾驶系统（ADS）仿真验证的闭环测试框架，旨在自动生成能够诱发碰撞的安全关键测试场景。该框架结合了三个核心组件：以自车为中心的约束化场景表示、停滞感知的搜索控制机制，以及双 LLM（学生-教师）架构，用于自适应地生成失败诱导场景。其核心思路是利用教师 LLM 提供高层指导，学生 LLM 负责具体场景生成，并通过闭环反馈不断调整搜索方向，从而在保证场景可执行性和多样性的同时，高效发现稀有且安全关键的失效案例。该工作值得关注的原因在于：自动驾驶系统的安全验证长期受困于长尾场景难以覆盖的问题，传统随机采样或基于规则的方法效率低下，而该框架将 LLM 的语义理解与生成能力引入测试场景搜索，提供了一种可扩展、可解释的自动化测试新范式。此外，学生-教师双 LLM 的闭环设计也为 LLM 在复杂搜索与优化任务中的应用提供了参考，对自动驾驶测试、安全验证以及 LLM 智能体研究均具有启发意义。",
+  "tags": [
+    "LLM",
+    "Autonomous Driving",
+    "Testing",
+    "Scenario Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出双 LLM 学生-教师闭环架构，教师提供高层搜索指导，学生生成具体可执行场景，实现自适应失败诱导测试生成。",
+      "引入停滞感知搜索控制与约束化自车中心场景表示，在保证场景可执行性与多样性的同时提升稀有碰撞场景的发现效率。",
+      "将 LLM 的语义生成能力与仿真测试搜索相结合，为自动驾驶安全验证中的长尾场景覆盖问题提供了新思路。",
+      "该框架强调生成场景对下游失败分析的有用性，而不仅是碰撞率，体现了从单纯发现失败到支持根因分析的设计转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

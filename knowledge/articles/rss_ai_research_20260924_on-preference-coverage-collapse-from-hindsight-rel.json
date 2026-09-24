@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-074",
+  "title": "On Preference Coverage Collapse from Hindsight Relabeling in Multi-Objective Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.26918",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了在多目标强化学习（MORL）中，将 hindsight relabeling（事后重标记）从目标条件设置扩展到偏好条件设置时出现的问题。传统上，hindsight relabeling 通过将转移的目标替换为智能体实际达成的结果来提升样本效率。一个自然的扩展是用智能体实际达成的偏好方向来重标记转移，而非原本要求的方向。作者发现这种扩展往往有害，会导致“偏好覆盖崩溃”（preference coverage collapse）：智能体逐渐只覆盖部分偏好空间，损害了策略的多样性和对用户偏好的响应能力。该工作通过理论分析和实验揭示了这一现象，并可能提出缓解策略。这项研究对多目标强化学习、偏好条件策略学习以及样本效率方法具有重要警示意义，提醒研究者在扩展 relabeling 技术时需谨慎设计。",
+  "tags": [
+    "MORL",
+    "Reinforcement Learning",
+    "Hindsight Relabeling",
+    "Preference Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 hindsight relabeling 直接扩展到偏好条件 MORL 中会导致偏好覆盖崩溃，即智能体只覆盖部分偏好空间。",
+      "这种崩溃损害了策略的多样性和对用户偏好的响应能力，与提升样本效率的初衷相悖。",
+      "研究提醒在 MORL 中应用 relabeling 技术时需要谨慎设计，不能简单照搬目标条件设置中的做法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

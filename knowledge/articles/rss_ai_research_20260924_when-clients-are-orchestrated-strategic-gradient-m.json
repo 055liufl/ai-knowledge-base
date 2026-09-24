@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-087",
+  "title": "When Clients Are Orchestrated: Strategic Gradient Manipulation to Defeat Federated Learning Servers with Efficient Defense",
+  "source_url": "https://arxiv.org/abs/2609.27124",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Fed-ADR，一种针对联邦学习（FL）的新型攻击框架。传统防御大多假设攻击者是静态或独立行动的，但作者揭示了一类动态自适应攻击，能够系统性地绕过这些防护。在 Fed-ADR 中，恶意编排服务器（Orchestrator Server, OS）动态协调多个恶意客户端，通过策略性梯度操纵（Strategic Gradient Manipulation）来欺骗中央参数服务器（PS），从而破坏全局模型的完整性与性能。该研究同时提出了针对此类攻击的高效防御方法。这项工作的重要性在于：它打破了联邦学习安全领域长期以来的威胁模型假设，表明在客户端可被编排协调的场景下，现有主流防御（如 Krum、Trimmed Mean、Median 等基于距离的聚合规则）可能失效。对于研究联邦学习鲁棒性、拜占庭攻击与防御、以及分布式机器学习安全的学者和工程师而言，这是一篇具有警示意义和理论价值的前沿工作，也为设计更鲁棒的聚合与检测机制提供了新的方向。",
+  "tags": [
+    "Federated Learning",
+    "Adversarial Attack",
+    "Byzantine Robustness",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有联邦学习防御大多假设攻击者静态或独立行动，忽略了客户端可被恶意编排协调的动态自适应威胁模型。",
+      "Fed-ADR 通过恶意编排服务器动态协调多个恶意客户端，实施策略性梯度操纵，可系统性绕过主流鲁棒聚合防御。",
+      "该工作同时提出高效防御方法，为联邦学习在真实对抗环境下的安全部署提供了新的攻防视角。",
+      "研究结果表明，联邦学习安全评估需要从独立攻击者假设转向协同自适应攻击者假设。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

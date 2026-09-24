@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-017",
+  "title": "XLOG: A CUDA-Native Engine for Neurosymbolic Integration",
+  "source_url": "https://arxiv.org/abs/2609.27203",
+  "source_platform": "rss_ai_research",
+  "summary": "XLOG 是一个 CUDA 原生逻辑编程引擎，旨在将神经感知与确定性 Datalog、概率推理以及认知世界观进行深度融合。它通过类型化前端和由提供者拥有的 CUDA 运行时实现，使不同推理模式共享设备数据平面，但执行边界各不相同：普通 Datalog 和精确推理由主机编排，而经过认证的常驻递归和蒙特卡洛采样核心则记录零跟踪的主机设备交互。该工作值得关注，因为它代表了神经符号 AI 在系统层面的重要探索，试图在 GPU 上统一符号推理与神经计算，解决传统神经符号系统在异构计算和推理效率上的瓶颈。XLOG 的设计强调设备端常驻执行与主机解耦，有望为实时、大规模的概率逻辑推理提供新的工程范式，对 AI 基础设施和推理引擎开发者具有参考价值。",
+  "tags": [
+    "Neurosymbolic AI",
+    "CUDA",
+    "Logic Programming",
+    "Probabilistic Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "XLOG 通过 CUDA 原生设计统一了神经感知与符号推理，共享设备数据平面但区分执行边界。",
+      "普通 Datalog 和精确推理由主机编排，而常驻递归与蒙特卡洛采样核心实现零主机交互，提升设备端自主性。",
+      "该引擎为神经符号集成提供了系统级基础设施，有望推动实时概率逻辑推理在 GPU 上的高效部署。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

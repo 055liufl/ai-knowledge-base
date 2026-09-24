@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-049",
+  "title": "SlackDrive: Reclaiming Runtime Slack for Adaptive Driving Inference",
+  "source_url": "https://arxiv.org/abs/2609.28064",
+  "source_platform": "rss_ai_research",
+  "summary": "SlackDrive 是一篇来自 arXiv 的技术论文，聚焦于自动驾驶世界-动作模型（world-action models）的推理加速问题。这类模型通过将多模态推理与未来预测耦合来提升规划能力，但推理成本不断增长，与车辆控制所需的实时延迟要求产生冲突。现有加速方法通常在部署前就固定策略，通过减少 token、层数或采样步数来降低计算量，但在离线性能分析和共享车载平台的静态调度之后，运行时仍存在的残余波动（runtime slack）大多未被利用。SlackDrive 提出回收这部分运行时松弛时间，实现自适应驾驶推理，从而在满足实时约束的同时提升推理效率。该工作值得关注，因为它触及自动驾驶端侧部署的核心矛盾——模型能力与实时性之间的权衡，并尝试从系统调度与运行时自适应角度给出新的解决思路，对车载推理优化、边缘 AI 调度以及自动驾驶系统设计具有参考价值。",
+  "tags": [
+    "Autonomous Driving",
+    "Inference Optimization",
+    "Runtime Scheduling",
+    "World Models"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "驾驶世界-动作模型的推理成本与车辆实时控制延迟要求之间存在根本性冲突",
+      "现有加速方法依赖部署前的静态策略，忽略了运行时残余波动这一可优化空间",
+      "SlackDrive 通过回收运行时松弛时间实现自适应推理，有望在不牺牲实时性的前提下提升模型利用率"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

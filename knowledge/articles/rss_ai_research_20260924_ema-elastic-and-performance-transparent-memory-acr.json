@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-082",
+  "title": "EMA: Elastic and Performance Transparent Memory Across GPUs",
+  "source_url": "https://arxiv.org/abs/2609.27040",
+  "source_platform": "rss_ai_research",
+  "summary": "EMA（Elastic Memory Aggregation）是一个面向多 GPU 服务器的弹性内存共享系统，旨在解决 LLM 推理等动态内存需求工作负载中出现的 GPU 内存利用不均衡问题。在现代数据中心中，多 GPU 服务器通过高带宽互连（如 NVLink）聚合显存容量，但实际负载的内存需求高度动态，常导致部分 GPU 显存耗尽而其他 GPU 显存闲置。EMA 通过跨 GPU 的弹性资源池化，让空闲 GPU 的显存可以被其他 GPU 透明借用，从而提升整体显存利用率并避免 OOM 导致的推理中断。该工作属于系统与基础设施层面的创新，对大规模 LLM 推理部署、多租户 GPU 集群调度以及显存受限场景下的模型服务具有直接实用价值。其核心挑战在于跨 GPU 内存访问的性能透明性——即远程显存访问不能显著拖慢计算，EMA 声称在保持性能透明的前提下实现弹性共享，这为未来 GPU 资源解耦与池化提供了新思路。",
+  "tags": [
+    "GPU",
+    "Memory Management",
+    "LLM Inference",
+    "Distributed Systems"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 推理的内存需求高度动态，多 GPU 服务器中常出现单卡显存耗尽而其他卡闲置的错配问题",
+      "EMA 通过跨 GPU 弹性内存共享，将空闲显存透明地借给内存紧张的 GPU，提升整体利用率",
+      "性能透明性是关键挑战，远程显存访问需避免显著性能损失才能实用",
+      "该方案对多租户 GPU 集群和大模型推理服务部署具有直接的资源优化价值"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

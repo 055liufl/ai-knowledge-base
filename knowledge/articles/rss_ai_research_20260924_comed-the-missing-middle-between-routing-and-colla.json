@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-073",
+  "title": "COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference",
+  "source_url": "https://arxiv.org/abs/2609.26913",
+  "source_platform": "rss_ai_research",
+  "summary": "COMED 提出了一种介于路由（routing）与密集协作（dense collaboration）之间的多 LLM 推理新范式，旨在解决现有方法的两难困境：路由方法在选定初始模型后即停止，无法利用其他模型的互补能力；而密集协作方法对每个查询都调用所有模型，成本高昂且可能引入错误。作者发现协作具有非单调性——同伴模型既能修复单个模型无法解决的失败案例，也可能破坏原本正确的答案。COMED 通过动态判断何时需要协作、选择哪些模型参与，在保持推理质量的同时降低计算开销。该工作为多模型推理系统提供了更精细的协作策略，对构建可靠、高效的 LLM 应用具有重要参考价值。",
+  "tags": [
+    "Multi-LLM",
+    "Inference",
+    "Routing",
+    "Collaboration"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多 LLM 协作具有非单调性：同伴模型既能修复失败，也可能破坏原本正确的答案",
+      "现有路由方法在选定初始模型后停止，无法利用模型间的互补性",
+      "密集协作对每个查询调用所有模型，成本高且可能引入错误",
+      "COMED 提出动态协作策略，在路由与密集协作之间寻找平衡点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

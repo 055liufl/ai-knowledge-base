@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260924-123",
+  "title": "NV-Reason-CT: 3D Visual Language Model for CT Analysis",
+  "source_url": "https://arxiv.org/abs/2609.27511",
+  "source_platform": "rss_ai_research",
+  "summary": "NV-Reason-CT 是一个面向胸腹部 CT 分析的生成式视觉-语言模型，其核心创新在于将原生 3D 视觉编码与放射科医生引导的推理过程相结合。该模型将原生 3D 视觉 Transformer 与语言模型耦合，在语言解码阶段直接传入全部视觉 token 及其显式 3D 坐标，而不进行额外的空间 token 合并。这一设计使体数据的空间信息得以在视觉编码器和语言模型之间完整保留，从而支持更精确的解剖定位与临床推理。传统医学影像 VLM 多基于 2D 切片或对 3D 体数据进行降采样、token 合并，容易丢失层间与空间关系，而 NV-Reason-CT 通过保留显式坐标信息，有望提升病灶定位、跨层面推理和报告生成的准确性。该工作属于多模态大模型在医学影像领域的前沿探索，对放射学辅助诊断、结构化报告生成以及 3D 医学视觉-语言理解具有潜在价值，值得医学 AI 研究者与临床 AI 产品开发者关注。",
+  "tags": [
+    "VLM",
+    "Medical Imaging",
+    "3D Vision",
+    "Multimodal",
+    "CT"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:25:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将原生 3D 视觉编码器与语言模型耦合，避免 2D 切片化或过度 token 合并导致的空间信息损失",
+      "在语言解码阶段保留全部视觉 token 及其显式 3D 坐标，增强体数据空间推理能力",
+      "引入放射科医生引导的推理机制，使模型输出更贴近临床诊断逻辑",
+      "为胸腹部 CT 的病灶定位、跨层面分析与报告生成提供了新的多模态建模范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

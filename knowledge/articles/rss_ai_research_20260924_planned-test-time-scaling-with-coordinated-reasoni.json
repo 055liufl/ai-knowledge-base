@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-111",
+  "title": "Planned Test-Time Scaling with Coordinated Reasoning Paths",
+  "source_url": "https://arxiv.org/abs/2609.27374",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Planned Test-Time Scaling (PTTS) 的新方法，旨在解决当前大模型推理中测试时扩展（test-time scaling）的冗余问题。现有主流方法（如重复采样）从单一策略独立生成多个推理分支，容易产生大量重复尝试，导致额外推理算力被浪费，性能提升受限。PTTS 的核心思想是用协调的联合策略替代独立采样，通过规划机制让多个推理路径协同工作，从而更高效地利用测试时计算资源。该方法有望在数学推理、代码生成、逻辑推理等复杂任务上，以更少的推理开销获得更高的准确率。这项研究值得关注，因为它触及了当前 LLM 推理优化的关键瓶颈——如何让测试时计算从“暴力堆量”转向“智能协同”，对提升大模型实际部署效率具有重要价值。",
+  "tags": [
+    "Test-Time Scaling",
+    "LLM Reasoning",
+    "Inference Optimization",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "独立重复采样会导致推理分支冗余，限制测试时扩展的收益",
+      "PTTS 通过协调联合策略让多个推理路径协同规划，提升推理效率",
+      "该方法有望在复杂推理任务中以更少算力获得更高准确率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-003",
+  "title": "TwinCheck: Evidence-Grounded Negative-Twin Verification for Stateful Tool Agents",
+  "source_url": "https://arxiv.org/abs/2609.26911",
+  "source_platform": "rss_ai_research",
+  "summary": "TwinCheck 是一种针对有状态工具代理（stateful tool agents）的推理时验证策略，旨在解决单个局部看似合理的工具调用可能导致整个代理轨迹失败的问题。传统方法仅凭怀疑就进行干预，但替换本身可能引入新的失败。TwinCheck 提出只有在轨迹满足与局部失败假设相关的证据条件时，才考虑替换操作。它通过构建基于轨迹的负孪生（negative-twin）验证机制，对工具调用进行证据 grounded 的检查，从而避免不必要的干预并提升代理的鲁棒性。该工作关注代理执行过程中的细粒度错误检测与纠正，对于提升 LLM 代理在复杂工具使用场景下的可靠性具有重要价值，尤其适用于需要多步工具调用的自动化任务。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Verification",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单个局部合理的工具调用可能导致整个代理轨迹失败，但仅凭怀疑进行干预可能引入新错误。",
+      "TwinCheck 通过证据条件触发替换，仅当轨迹满足与局部失败假设相关的证据时才考虑干预。",
+      "该方法构建轨迹 grounded 的负孪生验证，实现推理时的细粒度错误检测与纠正。",
+      "该研究提升了有状态工具代理在复杂多步任务中的鲁棒性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

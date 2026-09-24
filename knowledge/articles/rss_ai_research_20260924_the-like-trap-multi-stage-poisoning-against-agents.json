@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-089",
+  "title": "The Like Trap: Multi-Stage Poisoning against Agents in Similarity-based Recommendation Systems",
+  "source_url": "https://arxiv.org/abs/2609.27155",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究基于相似度推荐系统中针对 LLM 智能体的多阶段投毒攻击，提出了一种名为「Like Trap（点赞陷阱）」的新型攻击范式。随着 LLM 驱动的自主智能体越来越多地代表用户在社交媒体上执行操作（如管理个人账号、浏览与互动），其安全性问题尚未被充分探索。现有智能体投毒研究通常假设攻击者能够直接向目标智能体暴露被污染的内容，但这一假设在真实的推荐系统环境中往往不成立——内容能否触达目标取决于推荐算法的排序与分发机制。本文提出的多阶段投毒方法正是针对这一现实约束，通过分阶段、间接的方式操纵相似度推荐系统，使恶意内容逐步被推荐给目标智能体，最终诱导其执行攻击者期望的行为。该工作揭示了自主智能体在真实社交平台生态中面临的新型安全威胁，对智能体安全、推荐系统鲁棒性以及 LLM 应用的可信部署具有重要警示意义，值得智能体开发者、平台安全研究者与产品团队关注。",
+  "tags": [
+    "Agent Security",
+    "Adversarial Attack",
+    "Recommender System",
+    "LLM Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体投毒研究普遍假设攻击者可直接接触目标智能体，忽略了推荐系统作为内容分发中介所带来的现实约束",
+      "Like Trap 通过多阶段投毒策略逐步操纵相似度推荐结果，使恶意内容间接、渐进地触达目标智能体",
+      "LLM 智能体在社交媒体上的自主性提升扩大了攻击面，账号代管类应用面临被诱导执行恶意操作的风险",
+      "该研究提示智能体安全评估需纳入推荐算法与平台分发机制等外部环境因素"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

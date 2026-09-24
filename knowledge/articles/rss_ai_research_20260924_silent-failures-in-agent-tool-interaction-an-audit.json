@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-001",
+  "title": "Silent Failures in Agent-Tool Interaction: An Audit of ToolUniverse",
+  "source_url": "https://arxiv.org/abs/2609.26836",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对生物信息学领域的智能体工具交互进行了审计研究，聚焦于一种隐蔽的失败模式——工具调用表面成功但实际未返回有效信息或返回不完整信息，即“静默失败”。随着智能体AI系统越来越多地采用集成多种工具的自动化流水线，以往研究主要关注任务成功率和完成度，而对智能体与工具之间交互层面的失败，尤其是在生物学工作流中的表现，研究仍然有限。该研究通过审计ToolUniverse平台，系统性地识别和分析了这类静默失败，揭示了工具调用看似成功却导致信息缺失或错误结果的问题。这项工作值得关注，因为它指出了当前智能体评估体系的一个关键盲区：仅以任务完成率衡量系统性能可能掩盖严重的交互缺陷，从而影响生物医学等高风险领域中的可靠性与可重复性。该研究为改进智能体工具集成、设计更鲁棒的失败检测机制提供了重要依据。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Evaluation",
+    "Bioinformatics"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体与工具交互中存在‘静默失败’：工具调用看似成功，但实际未返回有效或完整信息。",
+      "现有评估主要关注任务成功率和完成度，忽视了交互层面的隐蔽失败，尤其在生物信息学工作流中。",
+      "该审计揭示了ToolUniverse平台中此类失败的普遍性，强调需要更细粒度的失败检测与鲁棒性评估。",
+      "在高风险领域，静默失败可能导致错误结论，影响智能体系统的可靠性与可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-020",
+  "title": "TimeEvo: Failure-Driven Self-Evolution of a Time Series Agent",
+  "source_url": "https://arxiv.org/abs/2609.27277",
+  "source_platform": "rss_ai_research",
+  "summary": "TimeEvo 是一篇关于时间序列智能体（Time Series Agent）自我进化的研究论文，针对当前时间序列智能体工具调用机制中的两个核心失败模式提出了解决方案。作者首先识别出「人-智能体工具错配」（Human-Agent Tool Misalignment）问题：由人类专家精心策划的 21 个工具库在某些任务上有帮助，但在其他任务上反而有害，导致在所有测试的骨干模型上异常检测准确率下降。其次，作者发现「静默伤害」（Silent Harm）现象：一轮通用的自我修订会改变 147 个答案，其中 56 个被破坏。基于这些发现，TimeEvo 提出了一种失败驱动的自我进化机制，让智能体能够根据自身失败经验动态调整其工具集，而非依赖人工预先设定的固定工具库。该研究对构建更鲁棒、更自主的时间序列分析智能体具有重要意义，揭示了当前智能体工具设计中普遍存在的隐患，并为自我进化型智能体提供了新的设计范式。",
+  "tags": [
+    "Agent",
+    "Time Series",
+    "Self-Evolution",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "人类专家预先策划的工具库并不总是有益，21 个工具在某些任务上反而会降低异常检测准确率，存在人-智能体工具错配问题",
+      "通用自我修订机制存在静默伤害风险，一轮修订可改变 147 个答案并破坏其中 56 个",
+      "TimeEvo 提出失败驱动的自我进化方法，使智能体能够根据自身失败经验动态调整工具集，而非依赖固定的人工预设工具库"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

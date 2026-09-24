@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-031",
+  "title": "Alignment Inertia: Auditing the Durability of Training Data Influence Through Policy Override Resistance",
+  "source_url": "https://arxiv.org/abs/2609.27333",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了「对齐惯性」（alignment inertia）这一新概念，并设计了「覆盖成功率」（Override Success Rate, OSR）指标，用于量化平台运营者通过系统提示词或微调等手段覆盖模型既有训练行为的可靠性。研究在 Llama 和 Mistral 系列模型上，针对医疗错误信息等场景，系统评估了零样本提示（zero-shot prompting）与 LoRA 微调两种干预方式的效果。核心发现是：模型从先前训练中继承的行为具有显著「惯性」，运营者的干预并非总能成功覆盖，部分行为即使经过微调仍顽固保留。这一工作首次将「训练数据影响力」的持久性问题形式化，并提供了可审计的度量框架，对模型治理、安全对齐和平台合规具有重要实践意义。它提醒业界：系统提示和微调不是万能开关，模型行为的可塑性存在边界，部署前的行为审计与干预效果验证应成为标准流程。",
+  "tags": [
+    "Alignment",
+    "Fine-tuning",
+    "LLM Safety",
+    "Model Governance"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 Override Success Rate (OSR) 与 alignment inertia 两个指标，首次量化运营者干预覆盖模型既有行为的成功率与阻力。",
+      "在 Llama 和 Mistral 上验证：零样本提示与 LoRA 微调均无法可靠覆盖所有继承行为，模型行为存在显著惯性。",
+      "医疗错误信息等高风险场景下，干预失败可能带来实际危害，凸显部署前行为审计的必要性。",
+      "为模型治理提供了可操作的评估框架，提示系统提示与微调应被视为概率性而非确定性控制手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

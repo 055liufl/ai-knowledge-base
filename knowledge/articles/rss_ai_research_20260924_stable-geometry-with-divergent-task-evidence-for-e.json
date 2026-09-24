@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-030",
+  "title": "Stable Geometry with Divergent Task Evidence for Efficient Long-Horizon Agent Compression",
+  "source_url": "https://arxiv.org/abs/2609.27332",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长时程智能体（Long-Horizon Agent）在交互过程中不断累积历史记录、导致上下文窗口膨胀和推理成本上升的问题，提出了一种新的压缩视角。作者发现，仅依赖几何冗余（即历史轨迹在低维空间中的结构相似性）作为压缩标准是不充分的：即使全局几何结构高度相似，不同历史片段所承载的任务证据（task evidence）也可能差异巨大。基于这一观察，论文提出证据感知（evidence-aware）的选择性压缩方法，在保留相同数量块（block）的前提下，将下一步动作的 Top-3 保留率从 0.31 显著提升。该工作对智能体记忆管理、上下文压缩和长时程任务效率优化具有重要参考价值，尤其适用于需要长期规划与多步交互的 LLM Agent 系统。",
+  "tags": [
+    "Agent",
+    "Context Compression",
+    "Long-Horizon",
+    "Memory Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "几何冗余不足以作为智能体历史压缩的安全标准，全局几何相似的历史片段可能保留截然不同的任务证据量。",
+      "证据感知的选择策略在相同压缩率下显著优于纯几何方法，下一步动作 Top-3 保留率从 0.31 大幅提升。",
+      "长时程智能体的上下文压缩需要同时考虑结构冗余与任务相关性，才能兼顾效率与决策质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

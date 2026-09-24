@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-032",
+  "title": "Just-in-Time Memory: Learning to Curate Task-Adaptive Memory for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.27334",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「即时记忆」（Just-in-Time Memory）的新型 LLM Agent 记忆管理范式，旨在解决现有 Agent 记忆系统在写入时即固化记忆内容所带来的信息损失问题。传统方法通常在任务完成后将轨迹蒸馏为反思、工作流、技能或推理策略等固定产物，并在未来通过相似度检索复用。这种「写入时策展」的方式迫使系统在未知未来查询的情况下提前决定哪些信息值得保留，导致不可逆的信息丢弃，并可能降低后续任务的适应性与性能。该研究的核心创新在于将记忆策展的时机从写入时推迟到检索或使用时，使 Agent 能够根据当前任务动态地筛选、重组和适配历史经验，从而实现任务自适应的记忆管理。这一思路对于提升 LLM Agent 在复杂、多任务场景下的长期学习与泛化能力具有重要意义，也为记忆系统设计提供了新的理论视角与工程方向。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 记忆系统多在写入时固化记忆，无法预知未来查询，导致不可逆的信息丢失。",
+      "即时记忆将策展时机推迟到任务执行时，使记忆能够根据当前查询动态适配。",
+      "任务自适应记忆有望提升 LLM Agent 在复杂多任务场景下的长期学习与泛化能力。",
+      "该工作为记忆系统设计提供了从「写入时策展」到「使用时策展」的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

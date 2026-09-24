@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-054",
+  "title": "Learning the Cost of Reliable Inference",
+  "source_url": "https://arxiv.org/abs/2609.28322",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向大语言模型（LLM）推理服务的采购平台设计，旨在解决当前主流基准测试与路由平台中固定按 token 计价导致用户无法获得最优价格的问题。在该平台中，每个任务的 token 价格由多个模型提供商之间的竞争动态决定，从而让用户能够以更具竞争力的价格完成推理任务。该工作聚焦于「可靠推理的成本」这一核心问题，将经济学中的竞争性采购机制引入 LLM 服务市场，探索在保证推理可靠性的前提下如何通过市场机制降低用户成本。其价值在于：随着 LLM 推理需求爆发式增长，推理成本已成为制约应用规模化落地的关键因素，而现有平台定价模式僵化、缺乏弹性。该研究为构建更高效、更公平的模型服务市场提供了新的机制设计思路，对推理基础设施、模型路由与成本优化方向具有参考意义，尤其适合关注 LLM 服务经济性与平台机制的研究者和开发者。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Pricing",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 路由与基准平台普遍采用固定 per-token 定价，使用户难以针对具体任务获得最优价格",
+      "通过引入提供商之间的竞争性采购机制，可由市场动态决定每个任务的 token 价格",
+      "该工作将推理可靠性与成本问题结合，强调在保障可靠性的同时优化经济性",
+      "为 LLM 服务市场的机制设计提供了新方向，有望降低大规模推理应用的整体成本"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

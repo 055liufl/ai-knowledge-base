@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-068",
+  "title": "QUARTET: Quad-branch cross-Attention and Random-walk Traces for Enhancing Transformers on Relational Graphs",
+  "source_url": "https://arxiv.org/abs/2609.26855",
+  "source_platform": "rss_ai_research",
+  "summary": "QUARTET 是一篇针对关系型深度学习（Relational Deep Learning, RDL）的学术论文，旨在改进现有多表数据库建模中的图 Transformer 架构。RDL 将多表数据库表示为异构时序图，RelBench 等基准上以 RelGT 为代表的图 Transformer 已达到最优性能。然而，RelGT 存在两个关键缺陷：其随机局部采样器生成的子图连接松散，阻碍了消息传递效率；其全局注意力模块依赖单一的、基于种子特征的记忆机制，忽略了更丰富的结构信息。QUARTET 提出四分支交叉注意力（Quad-branch cross-Attention）与随机游走轨迹（Random-walk Traces）相结合的方法，通过多分支注意力捕获不同层次的关系模式，并利用随机游走轨迹增强局部子图的连通性与全局记忆的表达能力。该工作对提升图 Transformer 在异构时序图上的建模能力具有参考价值，尤其适用于数据库查询、推荐系统和知识图谱等需要多表关系推理的场景。",
+  "tags": [
+    "Graph Transformer",
+    "Relational Deep Learning",
+    "Attention Mechanism",
+    "Heterogeneous Graphs"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RelGT 的随机局部采样导致子图连通性差，限制了消息传递效果，QUARTET 通过随机游走轨迹改善子图结构。",
+      "RelGT 的全局注意力仅依赖单一种子特征记忆，QUARTET 引入四分支交叉注意力以融合多源信息。",
+      "该方法面向多表数据库的异构时序图建模，在 RelBench 等基准上具有提升图 Transformer 性能的潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-002",
+  "title": "Harness as a Language: A Minimalist Agent Framework With Maximal Expressivity",
+  "source_url": "https://arxiv.org/abs/2609.26891",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 JAZ 的极简主义 LLM Agent 框架，其核心理念是将 Agent 的编排逻辑（harness）本身视为一种语言来设计。当前主流的 Agent 架构围绕「Agent 循环」构建，即 LLM 在暴露工具的环境中自主交替执行工具调用与观察结果。然而，记忆系统、自我改进系统等复杂工作流往往需要在此循环之外额外工程化实现，导致框架臃肿且表达力受限。JAZ 试图通过极简的抽象原语，让开发者以类似编程语言的方式组合和表达任意 Agent 工作流，从而在保持核心简洁的同时获得最大的表达灵活性。该工作值得关注的原因在于：它挑战了当前 Agent 框架「功能堆叠」的主流路线，转而从语言设计视角重新思考 Agent 编排的本质，可能为构建更通用、更可组合的 Agent 系统提供新的理论基础与实践范式，尤其对需要自定义复杂工作流的开发者和研究者具有参考价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Framework",
+    "Orchestration"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Agent 的 harness（编排层）视为一种语言来设计，而非简单的工具调用循环，可显著提升工作流的表达力",
+      "现有 Agent 循环在记忆系统和自我改进等场景下需要额外工程，极简框架可通过统一抽象原语减少这类补丁式开发",
+      "JAZ 框架以极简核心换取最大表达性，代表了对 Agent 框架「功能堆叠」路线的反思与替代方案"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

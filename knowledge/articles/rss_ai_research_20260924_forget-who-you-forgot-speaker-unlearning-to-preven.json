@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260924-115",
+  "title": "Forget who you Forgot: Speaker Unlearning to Prevent Re-Identification in Zero-Shot Text-to-Speech",
+  "source_url": "https://arxiv.org/abs/2609.27399",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对零样本文本到语音（ZS-TTS）系统的说话人身份遗忘（Speaker Unlearning）方法，旨在解决语音克隆带来的隐私与冒用风险。当前 ZS-TTS 系统仅需几秒参考语音即可高保真复现说话人音色，使得未经授权的语音克隆和身份冒用成为严重问题。说话人遗忘技术允许特定说话人选择退出，在抑制其声音被复现的同时保持对其他说话人的合成能力。然而现有方法虽能降低说话人相似度，却往往无法真正阻止再识别——即被遗忘的说话人仍可能通过其他方式被识别或重建。本文针对这一缺陷提出改进方案，强调遗忘不仅要降低相似度，更要防止再识别攻击。该工作对语音隐私保护、AI 安全与合规（如 GDPR 被遗忘权）具有重要价值，为构建可选择性遗忘的生成式语音系统提供了新思路。",
+  "tags": [
+    "TTS",
+    "Privacy",
+    "Machine Unlearning",
+    "Voice Cloning",
+    "Speech Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零样本 TTS 仅需数秒语音即可克隆音色，带来严重的隐私与冒用风险，说话人遗忘成为必要防护手段。",
+      "现有说话人遗忘方法仅降低相似度，却无法阻止再识别，存在被遗忘说话人仍可被重建的安全漏洞。",
+      "真正的遗忘应同时抑制相似度与再识别能力，而非仅优化表面指标。",
+      "该研究为生成式语音系统的合规性（如被遗忘权）与隐私保护提供了新的技术方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

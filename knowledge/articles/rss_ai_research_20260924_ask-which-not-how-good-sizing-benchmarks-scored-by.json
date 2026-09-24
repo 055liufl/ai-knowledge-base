@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-044",
+  "title": "Ask Which, Not How Good: Sizing Benchmarks Scored by an LLM",
+  "source_url": "https://arxiv.org/abs/2609.27787",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对由 LLM 作为评判者（LLM judge）进行打分的基准测试，首次系统性地测量了这类基准的分辨率问题。现有样本复杂度研究主要针对准确率型基准，而忽略了大模型评判场景。作者将系统视为测量对象，利用泛化理论（generalizability theory）将 373,019 条评判结果分解为系统、题目、评判者和交互四个成分，从而量化基准在区分不同系统时的实际分辨能力。核心发现具有结构性：在 LLM 评判下，基准分数差异往往被评判者噪声和交互效应淹没，十分之一分的差异可能并不具备统计意义。该工作为 LLM 评测方法学提供了重要警示，提示研究者和开发者不应盲目信任 LLM 打分基准的微小分数差距，而应关注评测设计的分辨率与可靠性。",
+  "tags": [
+    "LLM Evaluation",
+    "Benchmark",
+    "LLM-as-a-Judge",
+    "Generalizability Theory"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 评判基准的分数分辨率此前从未被测量，十分之一分的差异可能不具备统计显著性。",
+      "通过泛化理论将 373,019 条评判分解为系统、题目、评判者和交互成分，可量化评测噪声来源。",
+      "评判者效应和交互效应是影响 LLM 打分基准可靠性的关键因素，需在评测设计中加以控制。",
+      "该研究呼吁重新审视基于 LLM judge 的基准排名，避免过度解读微小分数差距。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

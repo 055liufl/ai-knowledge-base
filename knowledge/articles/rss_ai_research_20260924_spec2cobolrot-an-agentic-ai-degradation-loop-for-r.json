@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-063",
+  "title": "Spec2COBOLRot: An Agentic-AI Degradation Loop for Realistic COBOL Corpus Generation",
+  "source_url": "https://arxiv.org/abs/2609.26835",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Spec2COBOLRot，一个基于智能体 AI（Agentic AI）的 COBOL 语料生成流水线，旨在解决真实生产级 COBOL 代码语料稀缺、难以支撑现代化改造方法严格基准测试的问题。其核心思路是：先由规范驱动生成 COBOL 程序，再通过一个迭代式「退化循环」（degradation loop），依据从真实生产代码中提取的模式与复杂度目标对生成代码进行逐步劣化，从而逼近真实遗留系统的结构特征。这里的「真实性」被定义为结构层面的保真度，即让合成语料在代码组织、复杂度分布等方面贴近实际生产代码。该工作值得关注的原因在于：COBOL 至今仍广泛部署于金融、保险、政府等关键系统，但公开可用的代表性语料极度匮乏，导致 LLM 驱动的代码理解、迁移与重构研究难以获得可信评测；同时，它把「合成数据生成」与「智能体迭代优化」结合，为遗留系统现代化这一高价值场景提供了可复用的数据构造范式，对基准构建、模型评测和迁移工具研发均有直接价值。",
+  "tags": [
+    "Agent",
+    "Code Generation",
+    "Synthetic Data",
+    "Legacy Modernization"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实生产级 COBOL 语料稀缺是遗留系统现代化基准测试的核心瓶颈，合成语料是可行替代路径。",
+      "通过从真实代码中提取模式与复杂度目标，并用智能体迭代「退化」生成代码，可提升合成语料的结构真实性。",
+      "该工作将真实性定义为结构保真度，为合成代码语料的评价提供了可操作的标准。",
+      "规范驱动生成 + 退化循环的流水线设计，可迁移到其他遗留语言或低资源代码场景的数据构造。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

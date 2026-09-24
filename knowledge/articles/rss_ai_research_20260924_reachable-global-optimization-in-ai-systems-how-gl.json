@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260924-046",
+  "title": "Reachable Global Optimization in AI Systems: How Global Is Global?",
+  "source_url": "https://arxiv.org/abs/2609.27855",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「可达性诱导优化」（Reachability-Induced Optimization, RIO）框架，指出当前 AI 系统在宣称优化提示词、策略、架构、规划、工具调用轨迹、推理链和测试时计算时，普遍忽略了一个关键前提：优化器实际能够搜索到的解空间区域。作者认为，脱离「可达区域」谈「全局最优」是欠定义的——所谓全局，只是相对于生成器、验证器、控制器、记忆、工具和预算共同诱导出的可达空间而言。RIO 将优化过程形式化为这些组件与资源约束共同决定的搜索范围，从而把「全局性」从绝对概念转化为相对概念。该工作值得关注，因为它为评估 AI 自我改进、自动提示优化、Agent 规划等系统的能力上限提供了统一的理论视角，有助于避免对「全局最优」的过度宣称，并推动更严谨的基准设计与能力边界分析。",
+  "tags": [
+    "Optimization",
+    "Agent",
+    "LLM",
+    "Theory",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 系统宣称的「全局优化」必须明确其可达区域，否则该宣称在理论上是不完整的。",
+      "RIO 将优化能力建模为生成器、验证器、控制器、记忆、工具和预算共同诱导的可达空间。",
+      "「全局最优」是相对于系统可达范围而言的，不同系统之间的全局性不可直接比较。",
+      "该框架为评估自我改进、自动提示优化和 Agent 规划等系统的真实能力上限提供了统一标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

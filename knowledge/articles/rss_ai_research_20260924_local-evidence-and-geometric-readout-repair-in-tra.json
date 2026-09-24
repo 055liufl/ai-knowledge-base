@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-085",
+  "title": "Local Evidence and Geometric Readout Repair in Trained GNNs",
+  "source_url": "https://arxiv.org/abs/2609.27092",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究训练后的图神经网络（GNN）在节点分类任务中的错误来源，提出将错误分解为两个独立因素：局部消息混合权重不佳，或可达的logit集合相对于线性分类器位置不当。作者使用精确质量线性规划（exact-mass linear program）来分离这两种原因，并设计两种学习式的后验修复方法。核心发现是：每个重新加权的预测都等价于一个中心化的logit平移，但只有位于消息诱导位移集合中的平移才可实现。该工作为理解GNN的决策机制提供了新的几何视角，并给出了无需重新训练即可修复模型错误的实用工具，对GNN可解释性和模型调试具有重要价值。",
+  "tags": [
+    "GNN",
+    "可解释性",
+    "模型修复",
+    "线性规划"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GNN节点分类错误可分解为混合权重问题和分类器几何位置问题，二者可通过精确质量线性规划分离",
+      "重新加权预测等价于中心化logit平移，但仅消息诱导位移集合内的平移可实现",
+      "提出的两种后验修复方法无需重新训练即可改善模型预测，为GNN调试提供实用工具"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

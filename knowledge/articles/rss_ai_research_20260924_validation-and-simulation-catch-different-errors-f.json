@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-062",
+  "title": "Validation and Simulation Catch Different Errors: Four Levels of Evaluation for LLM-Generated Circuits",
+  "source_url": "https://arxiv.org/abs/2609.26830",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对 LLM 生成电路这一新兴应用场景，指出了一个关键但常被忽视的问题：仿真成功并不等于结构正确。作者提出了四个层次的评估框架——模式有效性（schema validity）、拓扑有效性（topological validity）、后端可执行性（backend executability）以及元件集一致性（component-set agreement），并在一个包含 150 个电路的三语基准上进行了系统测量。研究基于类型化电路交换表示构建了实际部署的流水线，发现这四个层次并非嵌套关系，即通过低层次评估并不意味着能通过高层次评估。以 gpt-4o-mini 为例，150 个电路中有 16 个（10.7%，95% CI 6.7-16.6）在重新评估时出现问题，说明仅依赖仿真通过率会严重高估 LLM 生成电路的实际质量。该工作为 LLM 在硬件设计领域的评估提供了更严谨的方法论，对推动 AI 辅助 EDA 的可靠落地具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "EDA",
+    "Evaluation",
+    "Circuit Design"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:22:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仿真成功不能作为 LLM 生成电路结构正确性的充分条件，仅依赖仿真会高估生成质量。",
+      "提出的四层评估（模式、拓扑、后端可执行、元件集一致性）彼此不嵌套，需独立验证。",
+      "在 150 个电路的三语基准上，gpt-4o-mini 有 10.7% 的电路在重新评估中暴露问题，表明评估层次缺失会带来显著漏检。",
+      "类型化电路交换表示和部署流水线为 LLM 生成硬件的标准化评估提供了可复用的基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

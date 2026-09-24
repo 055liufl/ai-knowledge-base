@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-118",
+  "title": "BEE: Intervention-Adaptive Real-World Reinforcement Learning with Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2609.27450",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 BEE，一种面向真实世界机器人操作的干预自适应强化学习方法，旨在解决视觉-语言-动作（VLA）模型在长时程操作任务中精度关键阶段容易失败的问题。VLA 模型虽能处理长时程操作，但毫米级误差即可导致前功尽弃，而在线强化学习虽可优化这些关键动作，却在真实机器人上探索成本过高，因此人类干预不可或缺。现有 VLA 在线 RL 方法要么无法有效利用人类纠正信号，要么将其简单折叠进策略更新中，导致干预效率低下。BEE 的核心思路是让策略能够自适应地识别并利用人类干预信号，在关键阶段进行针对性优化，而非依赖昂贵的自由探索。该工作属于交叉领域研究，结合了 VLA 模型、真实世界在线 RL 与人类在环学习，对推动机器人操作从仿真走向真实部署具有重要价值，尤其适用于需要高精度、长时程任务的工业与服务机器人场景。",
+  "tags": [
+    "VLA",
+    "Reinforcement Learning",
+    "Robot Manipulation",
+    "Human-in-the-loop"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:24:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLA 模型在长时程操作中，少数精度关键阶段决定整体成败，毫米级误差即可导致任务失败",
+      "真实机器人上自由探索成本过高，人类干预是必要的，但现有方法未能有效利用干预信号",
+      "BEE 通过干预自适应机制，让策略在关键阶段针对性优化，提升真实世界在线 RL 的样本效率",
+      "该工作为 VLA 与真实世界 RL 的结合提供了新思路，有望推动机器人操作在真实场景中的落地"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

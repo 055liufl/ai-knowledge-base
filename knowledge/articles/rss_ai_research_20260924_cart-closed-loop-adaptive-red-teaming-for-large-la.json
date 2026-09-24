@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-033",
+  "title": "CART: Closed-Loop Adaptive Red Teaming for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.27336",
+  "source_platform": "rss_ai_research",
+  "summary": "CART（Closed-Loop Adaptive Red Teaming）是一个针对大语言模型（LLM）的闭环自适应红队测试框架，旨在解决传统自动化红队测试中固定提示集无法从失败中学习的问题。传统方法通常回放一组预设的提示，只能测量已知风险，而无法根据测试过程中发现的弱点动态调整后续测试。CART 的核心思想是利用每次测试结果来指导下一步测试内容：它从广泛的风险覆盖开始，跟踪新出现的弱点，保持新探测的多样性，并记录每个发现的证据和来源。框架将测试生成与执行分离，包含一个“挑战者”（Challenger）模块负责创建测试，以及一个闭环反馈机制来迭代优化测试策略。该工作值得关注，因为它将红队测试从静态评估转变为动态、自适应的过程，有望更高效地发现 LLM 的未知漏洞和潜在风险，提升模型安全评估的深度和覆盖率。对于从事 AI 安全、模型对齐和风险评估的研究者和开发者而言，CART 提供了一种可借鉴的自动化对抗测试范式。",
+  "tags": [
+    "Red Teaming",
+    "LLM Security",
+    "Adversarial Testing",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统自动化红队测试使用固定提示集，无法从测试过程中发现的失败中学习，导致风险覆盖有限。",
+      "CART 通过闭环反馈机制，利用每次测试结果动态调整后续测试，实现自适应探索未知弱点。",
+      "框架将测试生成（Challenger）与执行分离，并记录每个发现的证据和来源，增强可追溯性。",
+      "该方法有望提升 LLM 安全评估的深度和效率，推动红队测试从静态向动态范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

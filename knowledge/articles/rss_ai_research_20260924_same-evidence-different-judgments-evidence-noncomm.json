@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-007",
+  "title": "Same evidence, different judgments: Evidence noncommutative in vision/speech-text conflicts",
+  "source_url": "https://arxiv.org/abs/2609.26986",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多模态大语言模型（MLLM）在图像/语音与文本证据冲突时的判断行为，指出以往关于“文本偏好”的研究混淆了模态偏好与证据位置两个因素。作者提出一种配对比较方法：保持任务指令和证据内容不变，仅交换证据出现的位置，从而分离出顺序效应。研究发现，证据在视觉/语音-文本冲突中具有非交换性（noncommutative），即相同证据因呈现顺序不同会导致模型判断发生系统性变化。这一发现对多模态模型的评估方法提出重要修正：此前测得的文本依赖度可能部分源于位置偏差而非真正的模态偏好。该工作提醒研究者在设计多模态基准与对齐策略时需控制证据顺序变量，对提升模型鲁棒性和公平评估具有方法论意义。",
+  "tags": [
+    "Multimodal LLM",
+    "Evaluation",
+    "Text Bias",
+    "Vision-Language"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模态模型在证据冲突时的文本依赖度测量会与证据位置效应纠缠，固定顺序的实验设计会高估或低估真实模态偏好。",
+      "证据顺序具有非交换性：仅交换图像/语音与文本的位置即可导致模型判断系统性改变，说明位置偏差是显著混淆因素。",
+      "该研究为多模态评估提供了更严谨的配对比较范式，提示后续基准测试需控制证据顺序以分离模态偏好与位置效应。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

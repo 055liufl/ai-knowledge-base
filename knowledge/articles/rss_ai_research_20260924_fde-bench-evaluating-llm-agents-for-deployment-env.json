@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260924-127",
+  "title": "FDE-Bench: Evaluating LLM Agents for Deployment Environment Configuration",
+  "source_url": "https://arxiv.org/abs/2609.27571",
+  "source_platform": "rss_ai_research",
+  "summary": "FDE-Bench 是一个面向 LLM Agent 的部署环境配置评测基准，旨在衡量智能体将应用代码转化为可运行系统的能力。该基准包含 136 个部署配置任务，覆盖 Docker 镜像构建、多服务 Compose 编排以及 Kubernetes 集群三大场景，并区分「从零构建」（greenfield）与「诊断修复」（diagnose-and-repair）两种模式。评测方式要求 Agent 提交声明式配置产物，随后在纯净环境中被收集、重建并重新部署，从而验证配置的可复现性与正确性。该工作值得关注的原因在于：当前 LLM Agent 的评测多集中于代码生成、网页操作或工具调用，而部署配置这一真实工程链路中的关键环节长期缺乏系统性基准。部署任务具有状态复杂、依赖繁多、失败反馈稀疏等特点，对 Agent 的长程推理、错误定位与环境交互能力提出更高要求。FDE-Bench 通过「提交产物—隔离重建—实际部署」的闭环验证机制，避免了仅靠文本比对或静态检查带来的评测偏差，更贴近生产实践。它为研究者提供了可量化的部署能力标尺，也为开发者评估和选型 Agent 框架提供了参考依据，有望推动 LLM A",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "DevOps",
+    "Kubernetes",
+    "LLM Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:25:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FDE-Bench 首次系统性地将部署环境配置作为 LLM Agent 的独立评测维度，填补了从代码生成到系统交付之间的评测空白。",
+      "采用「提交声明式产物—纯净环境重建—实际部署」的闭环验证机制，比静态文本比对更能反映 Agent 的真实工程能力。",
+      "任务覆盖 Docker、Compose、Kubernetes 三种主流部署形态，并区分从零构建与诊断修复模式，兼顾广度与深度。",
+      "部署任务的稀疏反馈与多服务依赖特性，对 Agent 的长程推理和错误定位能力构成显著挑战，为后续研究指明方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

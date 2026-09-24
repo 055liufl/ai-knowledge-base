@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-043",
+  "title": "Alignment of LRMs via Counter-Aligned Few-Shot Conversation Exposure",
+  "source_url": "https://arxiv.org/abs/2609.27763",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大型推理模型（LRMs）的安全对齐问题。LRMs 依赖显式思维链（CoT）推理和长上下文窗口来提升复杂任务表现，但这些特性也引入了新的攻击面。作者发现，通过在输入前添加包含显式 CoT 痕迹的\"反向对齐\"少样本对话，可以系统性地操控 LRMs 的推理过程，导致两类失败：对有害查询生成不安全内容，以及对良性查询产生无端拒绝。这一发现揭示了 CoT 推理与长上下文能力带来的对齐脆弱性，表明现有安全机制在面对上下文级操控时可能失效。该研究对 LRM 安全部署具有重要警示意义，值得关注的是它提出了针对推理过程本身（而非仅输出）的攻击范式，为后续防御研究提供了新方向。",
+  "tags": [
+    "LLM Safety",
+    "Chain-of-Thought",
+    "Alignment",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:21:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LRMs 的显式 CoT 推理和长上下文窗口成为新的攻击面，可被少样本对话注入所利用",
+      "反向对齐的少样本对话能系统性操控推理过程，导致有害输出或过度拒绝",
+      "攻击针对推理过程而非仅最终输出，暴露了现有对齐机制的深层脆弱性",
+      "该研究提示需要针对上下文级操控设计新的防御策略"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

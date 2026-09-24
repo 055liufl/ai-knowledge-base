@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-027",
+  "title": "StateComp: Learning When to Compress History in Long Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2609.27298",
+  "source_platform": "rss_ai_research",
+  "summary": "StateComp 是一篇针对长时程智能体（Long-Horizon Agents）上下文管理问题的研究论文。在长时程任务中，智能体会持续累积大量交互历史，而现有方法通常依赖固定窗口、周期性调度或当前相关性来压缩历史，忽略了「何时可以安全地替换某段历史」这一更根本的问题。过早压缩可能删除未来仍需要的信息，过晚压缩则导致上下文膨胀、推理成本上升。StateComp 提出学习「何时压缩历史」的决策机制，将压缩时机与智能体状态演化挂钩，而非采用静态或启发式策略。该工作值得关注，因为它触及了长时程 Agent 的核心瓶颈——上下文窗口有限与历史信息无限增长之间的矛盾，并尝试用可学习的方式替代人工设计的压缩规则，有望提升 Agent 在复杂多步任务中的信息保留效率与推理经济性。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "Long-Horizon",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:20:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程 Agent 的历史重要性随状态演化而动态变化，静态压缩策略（固定窗口/周期调度）无法捕捉这一特性",
+      "核心问题从「压缩什么」转向「何时压缩才安全」，即判断历史何时可被安全替换",
+      "过早压缩会丢失未来仍需的信息，过晚压缩则浪费上下文预算，需要学习最优压缩时机",
+      "将压缩决策与 Agent 状态绑定，为上下文管理提供了可学习、自适应的新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

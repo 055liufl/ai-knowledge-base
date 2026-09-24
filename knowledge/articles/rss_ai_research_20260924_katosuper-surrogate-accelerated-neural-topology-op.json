@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260924-095",
+  "title": "KATOsuper: Surrogate-accelerated neural topology optimization with sensitivity-consistent Fourier neural operators",
+  "source_url": "https://arxiv.org/abs/2609.27216",
+  "source_platform": "rss_ai_research",
+  "summary": "KATOsuper 是一个面向拓扑优化（Topology Optimization, TO）的代理加速框架，旨在解决传统 TO 中反复有限元分析（FEA）带来的高计算成本问题。现有神经网络代理方法虽然能加速目标函数预测，但预测目标与灵敏度（sensitivity）之间存在梯度不一致，导致优化过程不稳定。KATOsuper 提出了一种目标无关（objective-agnostic）的框架，将神经重参数化与灵敏度一致的傅里叶神经算子（Fourier Neural Operators, FNO）相结合，从而在保持梯度一致性的同时实现高效加速。该工作的核心创新在于利用 FNO 学习设计变量到目标函数及灵敏度的映射，并确保两者在梯度层面的一致性，避免优化震荡。这一方法有望显著降低 TO 的计算负担，推动其在工程设计、增材制造、材料设计等领域的实际应用。对于关注科学计算与 AI 交叉的研究者和工程师而言，该工作提供了一种将神经算子与经典优化方法深度融合的新思路，具有较高的技术参考价值。",
+  "tags": [
+    "Neural Operator",
+    "Topology Optimization",
+    "Surrogate Model",
+    "Scientific Computing"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:23:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有神经网络代理在拓扑优化中存在目标与灵敏度梯度不一致的问题，导致优化不稳定。",
+      "KATOsuper 通过灵敏度一致的傅里叶神经算子实现目标无关的代理加速，兼顾精度与稳定性。",
+      "该方法将神经算子与经典拓扑优化流程耦合，为科学计算中的代理建模提供了新范式。",
+      "框架的目标无关特性使其可推广至多种拓扑优化问题，具有较好的通用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

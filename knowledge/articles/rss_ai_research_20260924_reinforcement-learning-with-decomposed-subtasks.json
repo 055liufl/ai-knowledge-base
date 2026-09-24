@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260924-008",
+  "title": "Reinforcement Learning with Decomposed Subtasks",
+  "source_url": "https://arxiv.org/abs/2609.27035",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对语言模型智能体训练中的强化学习方法（如GRPO）提出改进。现有方法将多轮交互的整个轨迹压缩为单一标量奖励，当任务由多种不同技能组成、且环境反馈稀疏且延迟时，这种压缩会丢失关键信息，导致优化器难以推断是哪种能力驱动了结果以及应如何调整策略。论文提出“分解子任务”的强化学习框架，将复杂任务拆解为可独立评估的子任务，从而为策略更新提供更细粒度的奖励信号。该方法有望提升智能体在稀疏奖励环境下的学习效率和泛化能力，对多轮对话、工具调用、复杂推理等场景具有重要价值。",
+  "tags": [
+    "RL",
+    "Agent",
+    "LLM",
+    "GRPO"
+  ],
+  "author": null,
+  "published_at": "2026-09-24T13:17:42Z",
+  "collected_at": "2026-09-24T13:19:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO等策略梯度方法将多轮轨迹压缩为单一标量奖励，在任务包含多种技能且反馈稀疏延迟时会造成信息损失。",
+      "分解子任务可以为策略优化提供更细粒度的奖励信号，帮助模型识别具体是哪种能力影响了最终结果。",
+      "该方法有望提升语言模型智能体在复杂、稀疏奖励环境下的学习效率和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
