@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-016",
+  "title": "RECLAIM: Can Agents Reproduce the Claims of Machine Learning Papers?",
+  "source_url": "https://arxiv.org/abs/2609.28850",
+  "source_platform": "rss_ai_research",
+  "summary": "RECLAIM 是一个面向 AI Agent 的基准测试，旨在评估智能体能否独立复现机器学习论文的核心实验结果。该基准从 NeurIPS 2025 中选取 100 篇论文，为每篇论文预先固定待复现的结果、成功复现的判定标准以及 GPU 小时预算。Agent 需要仅凭论文内容完成从安装软件、调试代码到运行实验的完整研究流程。这一工作值得关注的原因在于：它首次将「论文复现」这一科研核心环节转化为可量化、可年度更新的 Agent 评测任务，直接检验 AI Agent 在真实科研场景中的端到端能力，而非局限于代码生成或问答等碎片化任务。RECLAIM 的可扩展设计（每年从新会议论文中重建）使其能够持续跟踪 Agent 能力的演进，为评估自主科研智能体提供了标准化、抗过拟合的测试平台，对 AI for Science 和 Agent 评测两个方向都具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "AI for Science",
+    "Reproducibility"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RECLAIM 将论文复现定义为包含环境配置、调试和实验运行的完整研究流程，而非单一代码生成任务，更贴近真实科研场景。",
+      "通过预先固定复现目标、成功标准和 GPU 预算，该基准提供了可量化、可比较的 Agent 科研能力评估框架。",
+      "基准设计支持每年从新会议论文中重建，有效避免数据污染和过拟合，可持续追踪 Agent 能力的真实进展。",
+      "该工作揭示了当前 AI Agent 在自主科研复现方面的能力边界，为 AI for Science 方向提供了明确的改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

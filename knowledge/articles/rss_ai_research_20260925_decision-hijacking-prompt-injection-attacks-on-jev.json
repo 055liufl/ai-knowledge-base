@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-123",
+  "title": "Decision Hijacking: Prompt Injection Attacks on Jev's Typed Probabilistic Decisions",
+  "source_url": "https://arxiv.org/abs/2609.28613",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了提示注入攻击对非生成式决策模型 Jev 的影响，填补了现有研究多聚焦于生成式智能体而忽视模式定义输出模型的空白。作者利用 510 个重建的 InjecAgent 案例进行实验，发现恶意内容虽然会改变 Jev 的动作概率分布，但极少能真正诱导模型选择攻击者预设的目标动作。研究进一步发现，覆盖标记（override markers）能够有效降低这种影响，而声称上下文相关性的注入内容效果微弱。该工作为理解提示注入在非生成式、结构化输出决策系统中的实际风险提供了实证依据，对构建更鲁棒的决策型 AI 系统具有参考价值。",
+  "tags": [
+    "Prompt Injection",
+    "AI Security",
+    "Decision Model",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示注入对非生成式决策模型的影响主要表现为概率偏移，而非直接改变最终决策结果",
+      "覆盖标记（override markers）是降低提示注入影响的有效防御手段",
+      "声称上下文相关性的注入内容对决策模型的影响较小",
+      "生成式智能体的提示注入研究结论不能直接推广到模式定义输出的决策模型"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

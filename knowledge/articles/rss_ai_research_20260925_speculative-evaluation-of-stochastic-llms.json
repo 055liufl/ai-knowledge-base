@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260925-114",
+  "title": "Speculative Evaluation of Stochastic LLMs",
+  "source_url": "https://arxiv.org/abs/2609.28560",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对随机大语言模型（Stochastic LLMs）的推测性评估方法，旨在解决基准测试中因随机采样导致的评估成本高昂问题。传统评估通过均匀重复采样来估计期望性能，但忽略了不同任务间采样方差的显著差异。作者将评估问题形式化为在固定采样预算下最小化基准均值方差的问题，并提出了基于分层贝叶斯内曼（HBN）策略的推测性评估框架。该策略在实验前联合选择试点样本量和阶段权重，通过自适应分配采样资源到高方差任务，从而更高效地估计模型性能。这项工作对于LLM评估方法论具有重要价值，能够显著降低评估成本并提高评估结果的可靠性，尤其适用于需要频繁评估的大规模模型开发场景。",
+  "tags": [
+    "LLM Evaluation",
+    "Bayesian Methods",
+    "Benchmarking",
+    "Stochastic Sampling"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随机LLM评估中，任务级采样方差差异显著，均匀重复采样效率低下",
+      "分层贝叶斯内曼策略通过自适应分配采样预算，在固定预算下最小化基准均值方差",
+      "该方法可降低评估成本并提高评估结果的统计可靠性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

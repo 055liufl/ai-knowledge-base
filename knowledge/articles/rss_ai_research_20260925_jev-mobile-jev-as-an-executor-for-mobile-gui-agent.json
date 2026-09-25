@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-102",
+  "title": "Jev-Mobile: Jev as an Executor for Mobile GUI Agents",
+  "source_url": "https://arxiv.org/abs/2609.30186",
+  "source_platform": "rss_ai_research",
+  "summary": "Jev-Mobile 提出了一种面向移动端 GUI 智能体的新执行范式，旨在解决现有基于视觉语言模型（VLM）的智能体在每一步交互中都依赖 VLM 进行规划与动作定位所导致的高延迟和高推理成本问题。该工作将智能体的决策流程解耦为低频的 VLM 规划与高频的轻量级执行：VLM 仅负责指定局部目标，而具体的动作执行则交由基于无障碍树（accessibility tree）的轻量执行器完成。这种设计显著降低了对大模型的调用频率，从而减少端到端延迟与模型服务开销，同时保持任务完成能力。对于移动端自动化、GUI Agent 以及端侧 AI 应用而言，该思路提供了一种兼顾性能与成本的实用架构，值得关注其在真实设备上的落地潜力与泛化能力。",
+  "tags": [
+    "GUI Agent",
+    "VLM",
+    "Mobile",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 VLM 规划与动作执行解耦，VLM 只负责低频局部目标设定，执行器负责高频动作落地",
+      "利用无障碍树作为轻量执行器的结构化输入，降低对视觉推理的依赖",
+      "该架构可显著降低移动 GUI 智能体的延迟与模型服务成本",
+      "为端侧或资源受限场景下的 GUI 自动化提供了可扩展的工程路径"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

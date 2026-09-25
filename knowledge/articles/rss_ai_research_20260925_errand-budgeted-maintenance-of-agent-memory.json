@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-061",
+  "title": "ERRAND: Budgeted Maintenance of Agent Memory",
+  "source_url": "https://arxiv.org/abs/2609.29545",
+  "source_platform": "rss_ai_research",
+  "summary": "ERRAND 是一篇来自 arXiv 的论文，聚焦于已部署智能体（agent）的记忆维护问题。论文指出，实际部署的智能体通常依赖交接时冻结的知识库（briefing），但环境会持续变化——路径关闭、标志改变、价格区间移动——导致知识过时而非缺失，这是智能体失效的核心原因。ERRAND 将记忆的重新验证（revalidation）建模为一种「有预算的差事」（priced errand）：每次重新检查都要与它所保护的任务竞争同样稀缺的动作预算。该工作提出了在有限动作预算下，如何权衡执行任务与维护记忆新鲜度的框架，对构建长期运行、环境动态变化的自主智能体具有重要价值。其创新点在于把记忆维护从被动更新转变为主动的、有成本意识的调度问题，为 agent 记忆管理提供了新的理论视角和实用方法。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "已部署智能体的主要失效模式是知识过时（staleness），而非知识缺失，环境变化使冻结的交接知识迅速失效。",
+      "将记忆重新验证视为有预算的「差事」，每次重检与任务执行竞争同一稀缺动作资源，形成成本与收益的权衡。",
+      "ERRAND 框架为长期自主智能体提供了在动态环境中主动维护记忆新鲜度的调度策略。",
+      "该研究将记忆管理从被动更新提升为主动的、有成本意识的决策问题，对 agent 系统设计有启发意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

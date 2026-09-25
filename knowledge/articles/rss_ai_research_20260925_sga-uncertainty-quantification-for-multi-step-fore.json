@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260925-118",
+  "title": "SGA: Uncertainty Quantification for Multi-Step Forecasting in Time Series Foundation Models",
+  "source_url": "https://arxiv.org/abs/2609.28582",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SGA（Sequential Gaussian Approximation）的不确定性量化方法，专门针对时间序列基础模型（TSFMs）在多步预测中的固有不确定性。TSFMs 近年来在多步预测性能上取得了显著进展，能够对较长的未来时间范围进行准确预测，但其预测过程中存在显著的不确定性：在每个时间步都会产生多个预测分支，这些分支会传播到后续步骤，且不同分支的预测性能差异较大。SGA 通过序贯高斯近似来建模和量化这种分支不确定性，从而为多步预测提供可靠的置信区间和不确定性估计。该工作值得关注，因为随着 TSFMs 在金融、气象、能源等高风险领域的应用日益广泛，不确定性量化成为模型可信部署的关键瓶颈。现有 TSFMs 大多只关注点预测精度，忽视了预测可靠性的评估，SGA 填补了这一空白，为时间序列基础模型的不确定性建模提供了系统性的解决方案，有望推动 TSFMs 在决策关键场景中的落地。",
+  "tags": [
+    "Time Series",
+    "Foundation Models",
+    "Uncertainty Quantification",
+    "Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "时间序列基础模型在多步预测中会产生分支不确定性，且不同分支的预测性能差异显著，现有模型缺乏对此的有效量化。",
+      "SGA 通过序贯高斯近似对多步预测中的不确定性进行建模，为 TSFMs 提供可靠的置信区间估计。",
+      "不确定性量化是 TSFMs 在金融、气象等高风险领域可信部署的关键，该工作填补了现有模型只重精度不重可靠性的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

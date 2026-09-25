@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-035",
+  "title": "A Wrong Turn Does Not Ruin the Journey: Deviation-Guided Skill Self-Evolution for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.29154",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向 LLM Agent 的「偏差引导技能自进化」方法（Deviation-Guided Skill Self-Evolution），旨在解决现有技能优化范式的核心缺陷。当前 LLM Agent 依赖自然语言技能（natural-language skills）完成复杂工具调用任务，但这类任务通常存在多条有效解决路径，因此将失败轨迹强行对齐到某条固定成功轨迹的做法并不合理。作者进一步指出，失败轨迹往往并非全盘皆错——Agent 可能先收集了有用证据、取得了实质性进展，只是在后续步骤中偏离到错误方向。基于这一观察，该方法不再以「成功/失败」二元信号驱动技能更新，而是定位轨迹中发生偏差的具体环节，利用偏差信息引导技能的定向自进化，从而保留失败轨迹中的有效经验，避免因一次错误转向而否定整段探索过程。该工作对 Agent 自我改进、工具使用与技能库构建具有较高参考价值，尤其适用于开放式、多解空间的复杂任务场景，为构建更鲁棒、更高效的 Agent 学习闭环提供了新思路。",
+  "tags": [
+    "Agent",
+    "Skill Learning",
+    "Self-Evolution",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "复杂工具调用任务存在多条有效路径，用固定成功轨迹对齐失败轨迹会引入错误监督信号",
+      "失败轨迹并非全错，其中往往包含有效证据与阶段性进展，应被保留而非整体丢弃",
+      "通过定位轨迹中的偏差点并据此引导技能自进化，可实现更细粒度的 Agent 能力提升",
+      "该范式为开放式、多解空间下的 Agent 自我改进提供了新方向，减少对成功样本的依赖"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

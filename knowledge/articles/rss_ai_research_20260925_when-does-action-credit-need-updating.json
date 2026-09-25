@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-023",
+  "title": "When Does Action Credit Need Updating?",
+  "source_url": "https://arxiv.org/abs/2609.29007",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究工具使用型智能体（tool-using agents）在持续更新策略时，历史动作信用（action credit）何时需要重新计算的问题。每次策略更新后，先前估计的动作信用可能变得过时，但从头重新计算需要大量额外的工具调用和环境交互，导致重复更新成本不断上升。作者提出一个核心问题：历史动作信用究竟何时才真正需要更新？其关键观察是动作价值的变化可能只在特定条件下才显著影响信用估计，因此可以避免不必要的重算。该工作对于降低智能体持续学习中的计算开销、提升工具调用效率具有实际意义，尤其适用于需要频繁与环境交互的 LLM Agent 场景。",
+  "tags": [
+    "Agent",
+    "Reinforcement Learning",
+    "Tool Use",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "策略更新后历史动作信用可能过时，但并非每次都需要重新计算。",
+      "从头重算动作信用需要大量额外工具调用和环境交互，成本高昂。",
+      "动作价值的变化是判断信用是否需要更新的关键信号。",
+      "该研究有助于降低工具使用型智能体持续更新的计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

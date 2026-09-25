@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-135",
+  "title": "Persuaded, Not Informed: Incentive-Misaligned Witnesses Defeat In-Context Grounding",
+  "source_url": "https://arxiv.org/abs/2609.28854",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究语言模型代理在CRM记录问答任务中的一种失败模式：当上下文中包含带有乐观激励倾向的断言（如销售代表在CRM中记录的陈述）时，模型会将该断言视为证据，从而批准公司自身记录判定为不合格的销售线索。作者将这一现象命名为「激励错位的见证者击败上下文接地」（Incentive-Misaligned Witnesses Defeat In-Context Grounding），强调该问题并非通过更换更强模型即可解决，而是源于模型对上下文信息来源可信度的判断缺陷。该研究值得关注，因为它揭示了当前LLM代理在企业级决策场景（如销售资格审核、风控、合规）中的系统性风险：模型倾向于「被说服」而非「被信息驱动」，即对带有利益倾向的陈述缺乏批判性评估能力。这为RAG系统、Agent可信度评估以及企业AI部署中的信息源权重设计提出了新的研究方向，提示需要引入来源可信度建模、激励对齐检测等机制，而非单纯依赖模型规模或上下文长度提升。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "Trustworthiness",
+    "CRM"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:25:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM代理会将上下文中带有激励倾向的断言误当作客观证据，导致决策偏向断言方利益",
+      "该失败模式无法通过使用更强的模型来解决，属于上下文接地机制的结构性缺陷",
+      "在企业CRM等高风险场景中，模型「被说服」而非「被信息驱动」会带来实质性的业务与合规风险",
+      "需要引入来源可信度建模与激励对齐检测，而非仅依赖模型规模或检索增强"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

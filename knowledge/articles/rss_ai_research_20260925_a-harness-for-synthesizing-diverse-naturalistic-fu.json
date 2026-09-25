@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-131",
+  "title": "A Harness for Synthesizing Diverse Naturalistic Full-Duplex Conversations",
+  "source_url": "https://arxiv.org/abs/2609.28806",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一套用于合成多样化、自然风格全双工对话的流水线（Harness）。全双工对话系统需要在说话的同时持续聆听，因此必须准确区分多种语音事件：一个完整话轮的结束、话轮内部的短暂停顿、请求接管的打断，以及简短的确认反馈或对第三方说的话。然而，现有对话语料库对这些事件的覆盖有限，且缺乏意图标签，难以支撑模型训练与评估。作者提出的流水线能够从关系型事件（relational events）出发，合成带有意图标注的双通道对话语音，从而生成多样化且贴近自然交互的对话数据。该工作的价值在于：全双工交互是语音助手、实时翻译、陪伴机器人等应用的核心能力，而高质量、细粒度标注的数据正是当前瓶颈；通过合成方式可控地生成带意图标签的对话语音，有望显著降低数据采集成本，并为打断检测、话轮转换预测、双工对话建模等任务提供标准化训练与评测资源，推动更自然的人机语音交互系统发展。",
+  "tags": [
+    "Speech",
+    "Dialogue",
+    "Full-Duplex",
+    "Data Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:25:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全双工对话系统的核心难点在于区分话轮结束、话轮内停顿、请求接管的打断以及简短确认/旁语等语音事件，现有语料对这些事件缺乏细粒度标注。",
+      "论文提出从关系型事件出发合成带意图标签的双通道对话语音，实现了对交互事件的可控生成。",
+      "合成数据有望缓解全双工对话训练与评测中高质量标注语料稀缺的瓶颈问题。",
+      "该方法面向打断检测、话轮转换预测等任务，可推动更自然的人机语音交互系统发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

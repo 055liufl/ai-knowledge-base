@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-034",
+  "title": "Claim-Gated Source-Risk Auditing for Generative Search",
+  "source_url": "https://arxiv.org/abs/2609.29145",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对生成式搜索（Generative Search）的“声明门控来源风险审计”（Claim-Gated Source-Risk Auditing）方法。生成式搜索系统在回答查询时，常会引用支持性段落，但可能遗漏那些会改变答案解读的关键来源关系。该研究将审计对象定义为查询-来源-答案三元组，并规定只有当关系证据、答案采纳、实质性和披露四个条件全部被观察到时，一个遗漏才能被判定为已解决；若证据不完整，则保持“未解决”状态，而非默认视为独立。这一规范将“引用支持”与“来源风险”两个端点明确分离，为生成式搜索的可靠性评估提供了更严谨的框架。该工作值得关注，因为它直面了当前RAG和生成式搜索中普遍存在的引用可信度问题，提出了一种可操作、可验证的审计标准，有助于提升AI生成内容的透明度和问责性，对搜索产品、AI安全及评估领域具有实际指导意义。",
+  "tags": [
+    "Generative Search",
+    "Auditing",
+    "RAG",
+    "Citation",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式搜索的引用支持不等于来源关系完整，遗漏关键来源关系会改变答案解读。",
+      "提出四条件审计框架：关系证据、答案采纳、实质性、披露，缺一不可。",
+      "证据不完整时应标记为未解决，而非默认独立，避免虚假安全感。",
+      "将引用支持与来源风险审计分离，为生成式搜索评估提供更细粒度标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

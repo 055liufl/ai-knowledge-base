@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260925-113",
+  "title": "Who Is Behind the Harness? Fingerprinting LLMs through Agentic Behavior",
+  "source_url": "https://arxiv.org/abs/2609.28559",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过编码智能体（coding agent）行为来识别底层大语言模型（LLM）身份的新方法。传统 LLM 指纹识别依赖直接文本输出或 token 分布特征，但在编码智能体场景中，这些信号被系统指令、工具调用和仓库操作所中介，导致传统方法失效。作者观察到，不同 LLM 在智能体框架（harness）中执行任务时会表现出差异化的行为模式，例如是否验证代码变更、能否从失败中安全恢复、工具调用策略等，这些行为特征可作为新的指纹信号。该研究值得关注的原因在于：随着 LLM 越来越多地通过智能体框架部署，模型身份的可追溯性对安全审计、合规监管和供应链信任至关重要；同时，模型替换可能悄然改变安全相关决策，而现有检测手段难以察觉。该工作为 LLM 溯源和智能体安全研究开辟了新方向，对构建可信 AI 系统具有实际意义。",
+  "tags": [
+    "LLM Fingerprinting",
+    "Agent",
+    "AI Safety",
+    "Code Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统基于文本或 token 分布的 LLM 指纹方法在编码智能体场景中失效，因为系统指令和工具调用中介了模型输出信号",
+      "不同 LLM 在智能体框架中的行为差异（如变更验证、失败恢复、工具调用策略）可作为新的指纹特征",
+      "模型替换可能悄然改变安全相关决策，智能体行为指纹对安全审计和供应链信任具有重要意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

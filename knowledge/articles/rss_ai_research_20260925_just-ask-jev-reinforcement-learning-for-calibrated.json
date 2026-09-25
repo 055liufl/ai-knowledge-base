@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-053",
+  "title": "Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures",
+  "source_url": "https://arxiv.org/abs/2609.29429",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Jev，一种基于强化学习校准决策（RLCD）训练的模型，用于零样本检测 AI 对齐失败。现有对齐失败检测器多为生成式评判器，需为每个标准消耗一次解码过程；而基于 token 概率的分类器（如 Llama Guard）每次调用也只能给出一个固定标签。Jev 的创新在于：单次调用即可对同一输入回答多个类型化问题，并输出校准概率。这意味着检测效率与信息密度显著提升，同时校准概率使决策更可靠。该工作将 RLCD 引入对齐检测领域，为部署语言模型的安全筛查和基准评分提供了更高效、更可解释的零样本方案，值得关注其对 AI 安全评估流程的潜在改进。",
+  "tags": [
+    "RLHF",
+    "AI Safety",
+    "Alignment",
+    "Zero-Shot",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Jev 通过 RLCD 训练，单次调用即可输出多个类型化问题的校准概率，突破传统检测器一次一标签的限制。",
+      "零样本检测能力使其无需针对新标准重新训练或调整，提升了对齐失败检测的灵活性和可扩展性。",
+      "校准概率的引入使检测结果更可靠，有助于下游决策和基准评分。",
+      "该方法有望替代或补充现有生成式评判器和分类器，降低检测成本并提高效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

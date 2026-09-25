@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-033",
+  "title": "Scope Before You Persist: Preventing Cross-Family Interference in Agent Memory",
+  "source_url": "https://arxiv.org/abs/2609.29144",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究语言模型智能体的持久化记忆机制，指出当检索范围与认证范围不匹配时，不同任务族之间的技能编辑会相互干扰，导致重复适应不可靠。作者提出在持久化之前先进行范围界定（Scope Before You Persist），并通过在 ProcStream-RSI（一个 12 轮代码修复流）上对冻结模型智能体进行实验，采用基于执行验证的门控机制 Orthogonal Regression Control（ORC）来筛选持久化技能编辑。研究表明，将检索范围与认证范围对齐，可以让智能体在不更新模型权重的情况下，跨重复出现的任务族实现稳定可靠的适应。该工作对智能体记忆系统的设计具有重要指导意义，揭示了跨任务族干扰这一被忽视的风险，并给出了可操作的解决方案。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持久化记忆中的技能编辑若检索范围与认证范围不匹配，会导致跨任务族干扰，破坏重复适应的可靠性。",
+      "提出 Orthogonal Regression Control（ORC）作为基于执行验证的持久化编辑门控机制，可有效过滤有害编辑。",
+      "在 ProcStream-RSI 代码修复流上验证了范围对齐策略，使冻结模型智能体无需更新权重即可实现稳定适应。",
+      "该研究为智能体记忆系统的设计提供了新原则：先界定范围，再持久化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

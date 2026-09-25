@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-041",
+  "title": "Policy as Code: A Coroutine-Bridge Harness for Fast-Reasoning Reliability on CAR-bench",
+  "source_url": "https://arxiv.org/abs/2609.29251",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“协程桥接框架”（coroutine-bridge harness）的方法，用于提升工具使用型智能体在 CAR-bench 基准测试中的快速推理可靠性。CAR-bench 旨在评估智能体在真实世界不确定性下是否保持可靠，其特点是在评估器内部执行每个工具，使得每次工具-结果交换都成为独立的智能体往返。传统的下一动作智能体虽然可以批量并行调用工具，但对于依赖链式调用，每轮结果都需要一次模型调用，导致效率低下。本文的协程桥接框架让模型的唯一动作是生成一个 Python 程序，该程序通过阻塞式协程与工具交互，从而将多轮依赖调用压缩为一次模型调用，显著减少模型调用次数并提升推理速度。该方法在保持可靠性的同时，解决了链式工具调用中的效率瓶颈，对构建高效、可靠的智能体系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Benchmark",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAR-bench 通过将工具执行置于评估器内部，强制每次工具调用成为独立的智能体往返，从而严格测试智能体在不确定性下的可靠性。",
+      "传统下一动作智能体在链式依赖调用中效率低下，每轮结果都需要一次模型调用，而协程桥接框架通过生成 Python 程序将多轮交互压缩为一次模型调用。",
+      "该框架利用协程阻塞机制桥接模型与工具执行，在减少模型调用次数的同时保持甚至提升任务可靠性。",
+      "该方法为工具使用型智能体的高效推理提供了新思路，尤其适用于需要多步依赖调用的复杂场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

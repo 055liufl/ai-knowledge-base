@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260925-067",
+  "title": "PEEL: Physics-Enabled Evidential Learning for Identifiable Uncertainty in CT Imaging",
+  "source_url": "https://arxiv.org/abs/2609.29599",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对医学CT成像中不确定性量化问题，指出正态逆伽马（NIG）回归模型无法从其边缘Student-t似然中唯一辨识——似然仅确定四个NIG参数中的三个组合，沿一维纤维保持不变。作者提出PEEL（Physics-Enabled Evidential Learning）方法，利用独立的物理测量信息来辨识该纤维，从而获得可识别的不确定性估计。初步实现中，重建网络接收单张含噪滤波反投影（FBP）图像，并首先仅用Student-t负对数似然进行训练。该工作将物理先验与证据深度学习结合，为CT成像提供更可靠、可解释的不确定性量化，对医学影像安全与可信AI具有重要意义。",
+  "tags": [
+    "Uncertainty Quantification",
+    "Medical Imaging",
+    "Evidential Learning",
+    "CT Reconstruction"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NIG回归的Student-t似然无法唯一确定四个参数，存在一维不可辨识纤维。",
+      "利用独立物理测量可有效辨识该纤维，实现可识别的不确定性估计。",
+      "PEEL在CT重建中结合物理先验与证据学习，提升不确定性量化的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

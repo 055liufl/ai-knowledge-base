@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-069",
+  "title": "Ingest-Time Fact Compilation for Cost-Efficient and Reliable Question Answering over Revised Corpora",
+  "source_url": "https://arxiv.org/abs/2609.29661",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对代理式问答（Agentic QA）系统在语料库频繁修订场景下的效率与可靠性问题，提出了一种“摄入时事实编译”（Ingest-Time Fact Compilation）方法。传统 QA 系统在每次查询时都要重新解析语料中的修订、草稿、撤销、删除以及不同权威级别的来源，以重建受治理的当前状态，导致大量重复计算和潜在错误。论文主张将语义工作前移到数据摄入阶段，在数据进入系统时即编译出事实的当前状态，从而在查询时直接使用已编译好的可靠事实，避免重复重建。该方法有望显著降低问答系统的计算成本，同时提升对动态修订语料的回答准确性和一致性。这一思路借鉴了数据库物化视图的概念，将“读时重建”转变为“写时编译”，对于需要处理频繁更新知识库的企业级 QA、法律合规、医疗指南等场景具有重要实用价值，也为 RAG 和 Agent 系统的知识管理提供了新的优化方向。",
+  "tags": [
+    "QA",
+    "RAG",
+    "Agent",
+    "Knowledge Management"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统代理式 QA 在每次查询时重复重建语料当前状态，造成计算浪费和潜在不一致。",
+      "摄入时事实编译将语义处理前移到数据写入阶段，查询时直接使用已编译事实，类似数据库物化视图。",
+      "该方法特别适用于包含修订、撤销、多权威来源的动态语料库，可提升成本效率和回答可靠性。",
+      "为 RAG 和 Agent 系统的知识治理提供了从“读时重建”到“写时编译”的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

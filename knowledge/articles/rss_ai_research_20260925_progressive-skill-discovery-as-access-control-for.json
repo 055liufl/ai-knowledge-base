@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-012",
+  "title": "Progressive Skill Discovery as Access Control for Tool-Using LLM Agents: Structural Governance through Role-Scoped Capability Delivery",
+  "source_url": "https://arxiv.org/abs/2609.28693",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为\"渐进式技能发现\"（Progressive Skill Discovery）的方法，将访问控制机制引入工具使用型 LLM Agent 的能力交付流程中。当前企业级 LLM Agent 面临的核心矛盾是：当 Agent 被授予访问全部内部工具的权限时，会引发上下文窗口膨胀、工具选择准确率下降以及严重的治理漏洞——因为仅靠提示词定义的策略本质上是概率性建议，而非硬性约束。现有的缓解方案（如多 Agent 领域委派）虽然分散了权限，但也导致审计日志碎片化、故障定位困难。该工作通过角色范围化的能力交付（Role-Scoped Capability Delivery）实现结构性治理，让 Agent 只能渐进式地发现和获取与其角色匹配的技能，从而在架构层面而非提示层面强制执行访问控制。这一思路将安全治理从\"软约束\"提升为\"硬约束\"，对企业级 Agent 部署具有重要的工程与合规价值，尤其适用于需要严格权限隔离和可审计性的金融、医疗等受监管行业。",
+  "tags": [
+    "Agent",
+    "Access Control",
+    "Tool Use",
+    "Governance",
+    "LLM Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示词层面的策略约束是概率性的，无法作为企业级 Agent 的硬性安全边界，必须通过架构机制实现结构性治理",
+      "渐进式技能发现将访问控制嵌入能力交付流程，使 Agent 只能按角色逐步获取工具权限，避免上下文膨胀与工具误选",
+      "相比多 Agent 领域委派方案，角色范围化能力交付能保持审计日志的集中性和故障可追溯性",
+      "该方法将 Agent 安全从\"提示工程问题\"重新定义为\"系统架构问题\"，为受监管行业部署提供了可落地的治理路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

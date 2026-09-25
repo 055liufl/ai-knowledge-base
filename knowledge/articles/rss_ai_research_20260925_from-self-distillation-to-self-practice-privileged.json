@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-027",
+  "title": "From Self-Distillation to Self-Practice: Privileged Information for Multi-Turn Agents",
+  "source_url": "https://arxiv.org/abs/2609.29051",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对多轮 LLM Agent 的后训练范式提出批判性分析。作者指出，当前流行的在线自蒸馏（On-Policy Self-Distillation, OPSD）方法在多轮交互场景下存在根本性缺陷：该方法通过让同一模型在特权信息（Privileged Information, PI）条件下生成更强的教师视角，再以 token 级别监督学生模型，结果导致学生模型学会了'自信地行动'却并未真正掌握支撑该行动的信息。换言之，训练后的 Agent 表现得仿佛拥有特权信息，但实际上并不具备，从而在真实多轮任务中产生行为与认知的错位。作者据此提出从'自蒸馏'转向'自练习'（Self-Practice）的新思路，强调多轮 Agent 应当通过自身与环境交互来获取和利用信息，而非依赖特权信息蒸馏出的虚假自信。该工作对当前 Agent 后训练主流方法提出了重要反思，对多轮交互、工具调用、自主决策等 Agent 研究具有直接指导意义，值得关注 Agent 训练范式的开发者和研究者深入阅读。",
+  "tags": [
+    "Agent",
+    "Self-Distillation",
+    "Multi-Turn",
+    "Post-Training",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线自蒸馏（OPSD）在多轮 Agent 场景下会让学生模型学会'自信但无依据'的行为，即表现出拥有特权信息的假象。",
+      "特权信息蒸馏的 token 级监督无法真正传递信息背后的推理能力，导致行为与认知脱节。",
+      "作者主张从自蒸馏转向自练习（Self-Practice），让 Agent 通过自身交互获取信息，而非依赖教师视角的虚假自信。",
+      "该工作对当前 LLM Agent 后训练主流范式提出重要反思，可能推动更可靠的多轮 Agent 训练方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

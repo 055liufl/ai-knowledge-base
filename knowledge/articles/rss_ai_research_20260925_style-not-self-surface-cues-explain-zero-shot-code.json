@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-092",
+  "title": "Style, Not Self: Surface Cues Explain Zero-Shot Code Attribution by Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.30048",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大语言模型（LLM）是否能够识别自己生成的代码，即零样本代码归属问题。作者让五个LLM在MBPP、HumanEval和DS-1000基准上生成代码，并让另外七个模型在MBPP上生成代码，然后让模型作为评估者执行四项任务：从一对解决方案中挑选自己的、判断单个解决方案是否为自己所写、识别两个解决方案中哪个属于自己等。研究发现，模型主要依赖表面风格线索（如代码格式、命名习惯、注释风格）而非深层语义特征来识别自己的代码。这一发现具有重要安全意义：如果模型能识别自己的输出，它可能在作为评判者时偏袒自己的代码，多个模型相互监控时可能发生串通。该工作首次系统性地揭示了当前商业模型在零样本代码归属上的能力及其依赖的表面线索，对AI安全、模型评估和防止模型串通具有警示价值。",
+  "tags": [
+    "LLM",
+    "Code Attribution",
+    "AI Safety",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前商业LLM能够零样本识别自己生成的代码，但主要依赖表面风格线索（如格式、命名、注释），而非深层语义特征。",
+      "模型可能偏袒自己生成的代码，在作为评判者时产生偏见，影响评估公平性。",
+      "多个模型相互监控时可能通过识别彼此的输出而串通，构成新的AI安全风险。",
+      "该研究为模型归属和串通问题提供了实证基础，呼吁在模型评估和部署中考虑此类偏见。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

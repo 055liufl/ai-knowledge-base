@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-022",
+  "title": "Back to the Definition: Estimating Step-Level Advantages via Trajectory Graphs for Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.28963",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对基于组的强化学习方法（如GRPO及其变体）在训练推理与智能体大语言模型时存在的步级优势估计偏差问题展开研究。这类方法在响应级别上的组归一化优势估计较为可靠，但在步级别上会出现系统性偏差，因为粗粒度的轨迹级优势难以准确反映单个步骤的贡献，尤其是在失败轨迹中，某些中间步骤可能实际是有价值的探索，却被整体负面奖励所掩盖。作者提出\"回到定义\"的思路，通过构建轨迹图（Trajectory Graphs）来重新估计步级优势，将轨迹中步骤之间的依赖关系显式建模，从而更精确地分配每个步骤的信用。该工作对智能体强化学习中的信用分配（credit assignment）这一核心难题提供了新的解决视角，有望提升多步推理与工具调用任务的训练效率与稳定性。对于从事LLM后训练、智能体系统开发的研发人员具有较高参考价值。",
+  "tags": [
+    "RL",
+    "Agent",
+    "LLM",
+    "GRPO",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "组归一化优势估计在响应级别可靠，但在步级别存在系统性偏差，无法准确反映单个步骤的贡献",
+      "失败轨迹中的中间步骤可能具有正向价值，却被轨迹级负面奖励错误归因",
+      "通过轨迹图显式建模步骤间依赖关系，可更精确地实现步级信用分配",
+      "该工作为智能体强化学习中的信用分配难题提供了新的定义驱动解决思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

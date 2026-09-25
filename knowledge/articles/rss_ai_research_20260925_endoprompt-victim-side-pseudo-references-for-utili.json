@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-087",
+  "title": "ENDOPROMPT: Victim-Side Pseudo-References for Utility Degradation",
+  "source_url": "https://arxiv.org/abs/2609.29948",
+  "source_platform": "rss_ai_research",
+  "summary": "ENDOPROMPT 是一种针对大语言模型的白盒提示注入攻击方法，其核心目标并非诱导模型输出有害内容，而是通过降低模型在良性任务上的效用（utility degradation）来实现攻击。与传统攻击依赖任务标签或预设目标响应不同，ENDOPROMPT 能够从无标签的指令中学习出具有效用破坏性的前缀。其生成器以请求文本为输入，并将干净的受害者续写作为伪参考（pseudo-references），通过局部搜索识别出能够降低续写似然的前缀。该方法揭示了提示注入攻击的一个新维度：即使不产生有害输出，攻击者也能显著削弱模型的正常任务表现，这对 LLM 安全评估和防御体系提出了新的挑战。该研究值得关注，因为它拓展了提示注入威胁模型的范围，强调了效用退化作为一种隐蔽且难以检测的攻击目标，并为红队测试和鲁棒性研究提供了新的方法论视角。",
+  "tags": [
+    "Prompt Injection",
+    "LLM Security",
+    "Adversarial Attack",
+    "White-box Attack"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ENDOPROMPT 提出了一种不依赖任务标签或目标响应的白盒提示注入方法，仅利用无标签指令即可学习效用退化前缀。",
+      "攻击目标从传统的诱导有害输出转向降低良性任务性能，使攻击更隐蔽且难以通过内容过滤检测。",
+      "利用干净受害者续写作为伪参考，通过局部搜索优化前缀以降低续写似然，是一种新颖的攻击优化策略。",
+      "该研究拓展了提示注入的威胁模型，对 LLM 安全评估和防御提出了新的要求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

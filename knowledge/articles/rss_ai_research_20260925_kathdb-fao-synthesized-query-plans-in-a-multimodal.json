@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-129",
+  "title": "KathDB-FAO: Synthesized Query Plans in a Multimodal DBMS",
+  "source_url": "https://arxiv.org/abs/2609.28761",
+  "source_platform": "rss_ai_research",
+  "summary": "KathDB-FAO 是 KathDB 多模态数据库管理系统中的新型查询求值子系统，其核心创新在于将自然语言查询直接转换为查询执行计划，且计划中的每个算子都是一个函数，其函数体在查询求值过程中动态合成（synthesized）。这种「合成查询计划」的方式允许针对具体查询进行高度定制化的优化，突破了传统数据库依赖预定义算子与静态优化规则的局限。系统首先从自然语言中抽取细粒度的原子操作，再据此生成准确且高效的执行计划。该工作值得关注的原因在于：它把自然语言接口、程序合成与多模态数据库查询优化三者结合，代表了数据库系统与 LLM/程序合成技术融合的前沿方向。若该思路可行，将显著降低非专业用户使用多模态数据的门槛，同时为查询优化开辟「按需生成算子」的新范式。不过，摘要信息有限，其实际性能、可扩展性与正确性保障仍需进一步验证。",
+  "tags": [
+    "Multimodal DBMS",
+    "Query Optimization",
+    "Program Synthesis",
+    "Natural Language Interface"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:25:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将自然语言查询直接转换为执行计划，算子函数体在求值时动态合成，实现查询级定制优化",
+      "从自然语言中抽取细粒度原子操作是生成准确高效计划的关键前置步骤",
+      "合成查询计划有望突破传统数据库静态算子与固定优化规则的局限",
+      "该方向融合多模态数据库、程序合成与自然语言接口，但实际效果与可扩展性尚待验证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

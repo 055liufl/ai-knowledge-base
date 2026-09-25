@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-082",
+  "title": "When Can Agents Forget Their Reasoning? ICLR for Long-Horizon Agent Context Compression",
+  "source_url": "https://arxiv.org/abs/2609.29875",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究长时程语言模型智能体（long-horizon agent）的上下文压缩问题，聚焦于一个关键问题：智能体在何时可以安全地遗忘其历史推理过程。与静态思维链（Chain of Thought）压缩不同，智能体的历史推理会直接影响未来动作和交互轨迹，因此简单地删除历史推理可能改变后续行为。作者提出了一种名为 Interaction Aware Compression for Long Horizon Reasoning（IC）的方法，通过考虑交互轨迹的依赖性来判断哪些推理内容可以被安全压缩或丢弃。该工作针对长时程智能体在持续积累推理历史后导致的上下文长度膨胀和推理成本上升问题，提供了理论分析和实用压缩策略。其价值在于：随着智能体任务越来越复杂、运行时间越来越长，上下文管理成为制约其扩展性和经济性的核心瓶颈，而该研究为智能体的记忆与遗忘机制提供了原则性指导，对构建高效、可扩展的自主智能体系统具有重要意义。",
+  "tags": [
+    "Agent",
+    "Context Compression",
+    "Long-Horizon Reasoning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体的历史推理不能像静态思维链那样随意压缩，因为删除推理会改变未来动作和交互轨迹。",
+      "提出交互感知压缩方法（IC），根据交互轨迹的依赖性判断哪些推理可以安全遗忘。",
+      "上下文膨胀和推理成本是长时程智能体扩展的核心瓶颈，安全遗忘机制是解决该问题的关键。",
+      "该研究为智能体的记忆管理提供了原则性框架，有助于构建更高效、可扩展的自主智能体。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

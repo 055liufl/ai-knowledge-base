@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-052",
+  "title": "RD-JEPA: Predictive latent pretraining for few-trajectory transfer across reaction--diffusion equations",
+  "source_url": "https://arxiv.org/abs/2609.29403",
+  "source_platform": "rss_ai_research",
+  "summary": "RD-JEPA 是一种面向反应-扩散方程（reaction-diffusion equations）的联合嵌入预测架构（Joint-Embedding Predictive Architecture, JEPA），用于在时空偏微分方程（PDE）轨迹上进行自监督预训练。传统上，为时变 PDE 学习代理模型（surrogate）时，一旦控制算子发生变化，就需要重新生成整套仿真数据。RD-JEPA 的核心创新在于：先在五个参数化系统上预训练单一模型，再迁移到三个未见过的系统（其反应算子和轨迹均被排除在预训练之外），实现少轨迹（few-trajectory）迁移。该方法将 JEPA 的潜空间预测思想从图像/视频领域扩展到科学计算中的 PDE 求解，避免了对像素级或场级重建的依赖，转而学习可迁移的潜在动力学表示。其价值在于：显著降低跨方程泛化时的数据生成成本，为科学机器学习中的基础模型（foundation model for PDEs）提供了可行路径，对需要快速适配新物理系统的工程与科研场景具有实用意义。",
+  "tags": [
+    "JEPA",
+    "PDE",
+    "self-supervised-learning",
+    "transfer-learning",
+    "scientific-ML"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 JEPA 的联合嵌入预测范式从视觉领域迁移到反应-扩散 PDE 轨迹，实现潜空间自监督预训练而非场级重建。",
+      "单一模型在五个参数化系统上预训练后可迁移到三个未见系统，证明跨算子泛化能力，减少新仿真语料需求。",
+      "少轨迹迁移设定对科学机器学习中的基础模型构建具有参考价值，有望降低 PDE 代理模型的数据成本。",
+      "方法聚焦反应-扩散方程这一特定 PDE 族，通用性仍需在更广泛的方程类型上验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-128",
+  "title": "Technical Manual for Toolkit for Confidence-Corpus Consistency via Fine-Tuning on a Fabricated Corpus",
+  "source_url": "https://arxiv.org/abs/2609.28747",
+  "source_platform": "rss_ai_research",
+  "summary": "该技术手册介绍了一个开源工具包，用于研究语言模型置信度与语料一致性之间的关系。研究者通过在一个精心构造的虚构语料上微调小型因果语言模型，使模型对81个单数字加法对中的每一个都一致地断言一个虚构的算术答案，然后比较微调后模型对这些虚构答案的置信度与其微调前的置信度。这项工作直接检验了「模型对答案的置信度反映其知识掌握程度」这一常见假设，揭示了置信度可能被语料一致性所操纵，而非真实反映事实知识。该工具包为研究模型校准、幻觉和知识编辑提供了可复现的实验框架，对理解LLM置信度的可靠性具有重要意义，尤其适用于关注模型可信度和安全性的研究者与开发者。",
+  "tags": [
+    "LLM",
+    "Fine-Tuning",
+    "Confidence Calibration",
+    "Hallucination",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:25:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言模型的置信度并不总是可靠地反映其真实知识，可能被训练语料的一致性所扭曲。",
+      "通过在虚构语料上微调，可以系统性地操纵模型对特定事实的置信度，这为研究幻觉和校准提供了可控实验平台。",
+      "该开源工具包为可复现地研究置信度与知识一致性之间的关系提供了标准化方法。",
+      "研究结果对依赖模型置信度进行下游决策的应用具有警示意义，需谨慎对待高置信度输出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

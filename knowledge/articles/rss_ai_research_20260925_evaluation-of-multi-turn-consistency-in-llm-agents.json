@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-055",
+  "title": "Evaluation of Multi-Turn Consistency in LLM Agents: Survival Analysis and Failure-Rationale Taxonomy",
+  "source_url": "https://arxiv.org/abs/2609.29508",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对 LLM Agent 在多轮交互中表现出的时间一致性退化问题，设计了一个受延迟满足实验启发的 20 步多智能体受控环境。在每个步骤中，Agent 需要在「继续延迟奖励」与「立即领取奖励并终止回合」之间做出选择，并系统性地操纵社会可见性（私有 vs 公开）等变量进行全因子实验。研究采用生存分析（Survival Analysis）方法刻画 Agent 的坚持时长与终止风险，并构建了失败-理由分类体系（Failure-Rationale Taxonomy）来归类一致性崩溃的成因。该工作值得关注的原因在于：现有 Agent 评测多聚焦单步任务成功率，忽视了长程交互中的行为漂移，而这一缺陷在真实部署（如自主谈判、长期规划、持续对话）中可能导致严重后果。通过将心理学中的延迟满足范式与统计生存模型引入 Agent 评测，论文提供了一套可量化、可解释的一致性评估框架，有助于研究者定位失败模式并指导更稳健的 Agent 设计。",
+  "tags": [
+    "LLM Agent",
+    "Evaluation",
+    "Multi-Turn",
+    "Survival Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 在孤立任务上表现良好，但在长程多轮交互中会出现显著的行为漂移与一致性退化，单步评测无法捕捉这一问题。",
+      "将延迟满足实验范式与生存分析结合，可量化 Agent 的坚持时长与终止风险，为多轮一致性提供统计化评估手段。",
+      "社会可见性（私有 vs 公开）等情境变量会显著影响 Agent 的决策一致性，说明环境设计对 Agent 行为有实质作用。",
+      "失败-理由分类体系将一致性崩溃归因于可解释的类别，有助于从评测走向针对性的 Agent 鲁棒性改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-042",
+  "title": "Baszta: Data-Centric Fine-Tuning of a Polish Multi-Label Safety Classifier",
+  "source_url": "https://arxiv.org/abs/2609.29266",
+  "source_platform": "rss_ai_research",
+  "summary": "Baszta 是一项针对波兰语内容安全分类的研究工作，通过数据中心的微调方法构建多标签安全分类器。研究团队基于 allegro/herbert-base-cased（124M 参数）模型，在仇恨、粗俗、色情、犯罪和自残五个类别上进行微调，并采用 Focal + R-Drop 联合目标函数进行优化。该模型在共享的分布外 Gadzi Język 基准上与 Bielik Guard（Sójka）进行对比评估，两个系统均在同一校准集上进行了逐类别阈值调优，以保证公平比较。这项工作值得关注的原因在于：首先，它聚焦于波兰语这一相对低资源语言的内容安全场景，填补了非英语安全分类器的空白；其次，它采用数据中心（data-centric）的微调策略，强调数据质量和训练目标设计而非单纯扩大模型规模，为小模型在特定语言安全任务上的应用提供了实证；第三，多标签分类设置更贴近真实内容审核场景，因为有害内容往往同时涉及多个类别；最后，与现有波兰语安全模型 Bielik Guard 的严格对比协议增强了结果的可信度，对低资源语言内容审核系统的开发者具有参考价值。",
+  "tags": [
+    "Content Safety",
+    "Multi-Label Classification",
+    "Fine-Tuning",
+    "Low-Resource NLP"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于 124M 参数的 herbert-base-cased 模型，通过 Focal + R-Drop 目标函数微调，可在波兰语多标签安全分类任务上取得有竞争力的效果",
+      "采用逐类别阈值调优和同一校准集的匹配协议，确保了与 Bielik Guard 对比的公平性",
+      "数据中心的方法强调训练目标与数据设计，而非模型规模，为低资源语言安全分类提供了可复现的路径",
+      "多标签设置（仇恨、粗俗、色情、犯罪、自残）更贴近真实内容审核需求，但摘要未给出具体性能数值，需查阅全文验证"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-066",
+  "title": "Sequential knowledge editing breaks a model's ability to tell good evidence from bad, without costing it accuracy",
+  "source_url": "https://arxiv.org/abs/2609.29587",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究顺序知识编辑（sequential knowledge editing）对模型证据辨别能力的隐性影响。传统评估仅关注编辑事实是否改变、复述是否跟随、无关答案是否保持，但作者发现模型即使通过这三项测试，仍可能丧失一项未被衡量的能力：在从未编辑过的事实上，判断哪些检索文档值得相信。研究通过比较编辑前后模型对记忆答案与注入段落所断言答案的对数几率，揭示顺序编辑会破坏模型区分好坏证据的能力，但不会损害其准确率。这一发现值得关注，因为它表明知识编辑可能带来未被察觉的副作用，影响模型在检索增强生成等场景中的可信度判断，对知识编辑的评估标准提出了新挑战。",
+  "tags": [
+    "Knowledge Editing",
+    "LLM",
+    "Evaluation",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "顺序知识编辑会破坏模型区分可信与不可信证据的能力，而现有评估指标无法捕捉这一损失。",
+      "模型在编辑后仍能保持准确率，但证据辨别能力的下降是隐性的，可能影响下游任务可靠性。",
+      "研究通过比较模型对记忆答案与注入段落答案的对数几率，量化了编辑前后证据信任的变化。",
+      "知识编辑的评估需要引入对证据辨别能力的测试，以避免模型在真实场景中盲目采信错误信息。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

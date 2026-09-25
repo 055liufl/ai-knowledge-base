@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-004",
+  "title": "Pistis Technical Report",
+  "source_url": "https://arxiv.org/abs/2609.28554",
+  "source_platform": "rss_ai_research",
+  "summary": "Pistis 是一个新发布的多模态大语言模型家族，包含 27B 和 9B 两个参数规模，分别基于 Qwen3.6 和 Qwen3.5 构建。该工作提出了一个通用且可扩展的后训练框架：首先通过大规模多模态监督微调（SFT）建立坚实基础，随后提出交错蒸馏与强化学习（Interleaved Distillation and Reinforcement Learning, IDRL）这一新颖的后训练方法。该研究的价值在于：一是提供了从 9B 到 27B 的多模态模型开源方案，覆盖不同算力需求场景；二是 IDRL 方法将知识蒸馏与强化学习交错结合，可能为多模态模型的后训练提供新的范式，缓解传统 SFT+RLHF 流程中蒸馏与对齐割裂的问题；三是基于 Qwen 系列构建，说明其可复用现有生态，降低复现门槛。对于关注多模态模型训练、后训练对齐以及中小规模模型落地的研究者和开发者而言，该技术报告具有较高的参考价值。",
+  "tags": [
+    "Multimodal LLM",
+    "Post-training",
+    "Reinforcement Learning",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:19:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Pistis 提供 27B 和 9B 两个规模的多模态模型，分别基于 Qwen3.6 和 Qwen3.5，兼顾性能与部署成本。",
+      "提出 IDRL（交错蒸馏与强化学习）后训练框架，将蒸馏与 RL 交错进行，可能优于传统的分阶段 SFT+RL 流程。",
+      "大规模多模态 SFT 作为基础阶段，为后续强化学习提供稳定起点，体现了后训练流程的工程化设计。",
+      "基于 Qwen 生态构建，降低了复现和二次开发的门槛，有利于社区快速验证与迭代。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

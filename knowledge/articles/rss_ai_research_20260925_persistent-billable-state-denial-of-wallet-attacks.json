@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-119",
+  "title": "Persistent Billable State: Denial-of-Wallet Attacks and Defenses in Tool-Calling LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.28585",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了一类针对多步工具调用型 LLM Agent 的新型安全威胁——持久化计费状态（Persistent Billable State）与「钱包拒绝服务」（Denial-of-Wallet）攻击。核心机制在于：多步 Agent 依赖宿主运行时在轮次之间保存状态，当运行时将外部工具的返回内容带入后续模型输入时，服务提供商会对其重复计费。攻击者只需通过一个被恶意控制或被攻陷的工具，就能把不可信数据转化为持续由受害者付费的模型处理，而无需受害者凭证或本地运行时权限。论文形式化了宿主在是否保留、转发外部工具返回内容上的决策问题，并探讨了相应防御思路。该研究值得关注，因为它揭示了 Agent 架构中「状态持久化」与「按量计费」结合所产生的经济型攻击面，将传统提示注入/数据投毒风险升级为可直接造成经济损失的持续性攻击，对 Agent 运行时设计、工具信任边界与计费模型均有重要启示。",
+  "tags": [
+    "Agent",
+    "LLM Security",
+    "Tool Calling",
+    "Denial-of-Wallet"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步工具调用 Agent 的宿主运行时若将外部工具返回内容带入后续模型输入，会导致同一内容被重复计费，形成「持久化计费状态」。",
+      "攻击者无需受害者凭证或本地权限，仅凭一个恶意或被攻陷的工具即可将不可信数据转化为持续由受害者付费的处理，构成 Denial-of-Wallet 攻击。",
+      "论文将宿主是否保留并转发外部工具返回内容的决策形式化，为运行时防御策略提供了理论基础。",
+      "该威胁表明 Agent 安全需同时考虑数据信任边界与计费/资源消耗维度，传统提示注入防护不足以覆盖经济型攻击面。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

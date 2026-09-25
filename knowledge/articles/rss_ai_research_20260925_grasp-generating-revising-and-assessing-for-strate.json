@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-100",
+  "title": "GRASP: Generating, Revising, and Assessing for Strategic Planning with Agentic AI",
+  "source_url": "https://arxiv.org/abs/2609.30147",
+  "source_platform": "rss_ai_research",
+  "summary": "GRASP 是一个面向复杂任务规划的策略感知多阶段框架，旨在解决大语言模型在任务复杂度提升时可靠性下降的问题。该框架将规划流程解耦为多个专门化、上下文隔离的模块：首先通过 GenPlan 预编译全局宏观指导方针，随后进行计划的生成、修订与评估（Generating, Revising, and Assessing），从而产出高质量、可执行的自然语言计划。其核心创新在于将单一 LLM 调用拆分为职责明确的子模块，避免上下文污染与错误累积，提升复杂任务下的规划稳定性。对于构建 Agent 系统、自动化工作流以及需要长程推理的应用而言，GRASP 提供了一种可借鉴的工程范式，即通过模块化与策略先验来弥补模型在复杂场景中的可靠性短板。该工作属于 Agent 规划方向的方法论研究，对开发者设计多阶段 Agent 管线具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Planning",
+    "LLM",
+    "Multi-stage"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在任务复杂度上升时可靠性下降，模块化与上下文隔离是缓解该问题的有效手段。",
+      "GRASP 将规划解耦为 GenPlan 预编译、生成、修订、评估等专门化阶段，避免单一调用中的错误累积。",
+      "策略感知的宏观指导方针（macro-guidelines）为后续细粒度规划提供全局约束，提升计划的可执行性。",
+      "该框架为构建高可靠 Agent 规划管线提供了可复用的多阶段工程范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

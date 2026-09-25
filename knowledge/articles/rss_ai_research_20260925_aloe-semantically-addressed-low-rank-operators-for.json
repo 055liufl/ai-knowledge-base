@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-043",
+  "title": "ALOE: Semantically Addressed Low-Rank Operators for Knowledge Editing",
+  "source_url": "https://arxiv.org/abs/2609.29269",
+  "source_platform": "rss_ai_research",
+  "summary": "ALOE（Semantically Addressed Low-Rank Operators）是一篇关于大语言模型知识编辑的 arXiv 论文，提出将知识编辑从单纯的\"写入问题\"重新定义为\"寻址问题\"。传统参数化编辑器通常只关注如何修改参数以写入新事实，但忽略了决定哪些隐藏状态应接收新残差的寻址环节。若更新激活范围过窄，模型只会死记硬背单一提示；若激活范围过宽，则会破坏邻近知识。ALOE 通过语义寻址的低秩算子来精确控制更新的作用范围，从而在写入新事实与保持无关行为之间取得更好平衡。该工作值得关注，因为它揭示了知识编辑中长期被忽视的寻址维度，为提升编辑的泛化性与局部性提供了新思路，对模型可控性、持续学习与安全对齐等方向具有潜在影响。",
+  "tags": [
+    "Knowledge Editing",
+    "LLM",
+    "Low-Rank",
+    "Model Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "知识编辑不仅是参数写入问题，更是一个寻址问题：需要决定哪些隐藏状态应接收新残差。",
+      "更新激活范围过窄会导致对单一提示的过拟合记忆，过宽则会干扰邻近知识，存在权衡。",
+      "ALOE 提出语义寻址的低秩算子，以更精确地控制编辑的作用范围。",
+      "该视角为提升知识编辑的泛化性与局部性提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

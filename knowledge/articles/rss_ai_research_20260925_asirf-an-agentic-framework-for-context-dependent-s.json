@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-039",
+  "title": "ASIRF: An Agentic Framework for Context-Dependent Sensitive Information Redaction",
+  "source_url": "https://arxiv.org/abs/2609.29191",
+  "source_platform": "rss_ai_research",
+  "summary": "ASIRF（Agentic Sensitive Information Redaction Framework）是一个面向上下文相关敏感信息脱敏的智能体框架，旨在解决传统脱敏系统（如隐私过滤器、命名实体识别器）在训练阶段固定敏感信息分类体系、每进入新领域都需重新训练的问题。该工作指出敏感信息的定义本质上依赖于具体领域和使用意图，而非普适的固定类别。ASIRF 的核心思路是在推理阶段根据输入内容所属领域，从一个灵活的知识库中动态检索该领域特定的敏感信息定义，从而无需重新训练即可适配新领域。这一方法将智能体（Agent）范式引入隐私与合规领域，把脱敏任务从静态分类问题转化为动态检索与推理问题，显著提升了跨领域迁移能力。对于需要处理多行业、多语言、多合规场景的数据处理系统而言，ASIRF 提供了一种可扩展、低维护成本的脱敏方案，值得隐私计算、数据安全、企业合规以及 LLM 应用开发者关注。",
+  "tags": [
+    "Agent",
+    "Privacy",
+    "Information Redaction",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "敏感信息的定义是领域和意图相关的，不存在普适的固定分类体系，传统脱敏系统在训练时固定分类法导致跨领域迁移困难。",
+      "ASIRF 在推理阶段从灵活知识库中按输入领域动态检索敏感信息定义，无需重新训练即可适配新领域。",
+      "该框架将智能体范式引入隐私脱敏任务，把静态分类问题转化为动态检索与推理问题，提升了跨领域泛化能力。",
+      "对多行业、多合规场景的数据处理系统而言，ASIRF 提供了一种低维护成本、可扩展的脱敏思路。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

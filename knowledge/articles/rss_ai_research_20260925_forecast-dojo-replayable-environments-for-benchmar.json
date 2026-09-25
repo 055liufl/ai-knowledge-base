@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-018",
+  "title": "Forecast-Dojo: Replayable Environments for Benchmarking and Training LLM Forecasting Agents",
+  "source_url": "https://arxiv.org/abs/2609.28876",
+  "source_platform": "rss_ai_research",
+  "summary": "Forecast-Dojo 是一个面向 LLM 预测智能体（Forecasting Agents）的可重放（replayable）环境，旨在同时服务于基准测试与训练两大目标。其核心设计是将已结算的预测市场问题（resolved prediction-market questions）与带时间戳的新闻数据相结合，使智能体能够在历史时间轴上逐步研究事件、在连续的历史日期上反复修正自己的预测。由于所有问题都已有了最终结果，研究者无需等待新事件发生即可进行重复评估、收集训练交互数据，并利用已记录的真实结果提供反馈信号。这一设计解决了预测类智能体研究中长期存在的痛点：真实预测任务周期长、结果不确定、难以复现，导致评测和训练成本极高。Forecast-Dojo 通过“时间旅行”式回放，把预测任务转化为可离线、可重复、可监督的学习环境，为 LLM 在不确定性推理、信息检索、时序决策等方向的能力提升提供了标准化基础设施。其价值在于打通了评测与训练的数据闭环，使同一套任务和工具既能用于衡量模型预测能力，又能生成高质量的训练轨迹，有望推动预测智能体从一次性演示走向可迭代优化的工程化研究。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Benchmark",
+    "Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用已结算的预测市场问题构建可重放环境，无需等待新事件即可完成评测与训练，大幅降低实验周期和成本。",
+      "同一套任务与工具同时支持基准测试、交互数据收集和基于真实结果的反馈，形成评测-训练闭环。",
+      "带时间戳的新闻与历史日期回放机制，使智能体能够在信息逐步披露的条件下进行时序推理与预测修正。",
+      "为 LLM 在不确定性下的预测、检索与决策能力研究提供了可复现、可监督的标准化基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

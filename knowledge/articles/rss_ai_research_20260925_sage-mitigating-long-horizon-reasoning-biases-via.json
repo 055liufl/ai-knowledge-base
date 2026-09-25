@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-103",
+  "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
+  "source_url": "https://arxiv.org/abs/2609.30192",
+  "source_platform": "rss_ai_research",
+  "summary": "SAGE 是一篇针对大语言模型长程推理脆弱性问题的研究论文。作者指出，在稀疏奖励环境下，LLM 的长程推理失败源于复杂推理空间中的两种偏差：探索偏差（模型倾向于选择局部看似合理但结构不稳定的分支）和累积偏差（微小的局部偏差随推理深度累积，抑制稀有奖励的发现）。为此，论文提出 SAGE（Symbolic Closure Analysis 与拓扑引导）方法，通过符号闭包分析和拓扑引导来缓解上述偏差。该工作值得关注，因为它从推理空间的结构性偏差角度重新解释了长程推理的失败机制，而非仅归因于模型容量或训练数据，为提升 LLM 在复杂多步任务中的可靠性提供了新的理论视角和干预思路，对智能体、规划与推理增强等方向具有潜在影响。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Long-Horizon",
+    "Sparse Reward"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长程推理的脆弱性可归因于探索偏差与累积偏差两种结构性偏差，而非单纯的模型能力不足",
+      "探索偏差使模型偏向局部合理但结构不稳定的推理分支，累积偏差则让微小误差随深度放大",
+      "SAGE 通过符号闭包分析与拓扑引导来约束推理路径，缓解稀疏奖励下的偏差累积",
+      "该工作为长程推理增强提供了从推理空间结构入手的理论框架，可启发新的解码或搜索策略"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

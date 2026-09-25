@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-122",
+  "title": "UO-FIE: Combining Exact-Label Supervision with Graded Utility for Factivity Inference",
+  "source_url": "https://arxiv.org/abs/2609.28605",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 UO-FIE 方法，用于解决 Factivity Inference Evaluation 2026 (FIE2026) 任务中的中文事实性推理问题。FIE2026 要求将中文上下文-假设对分类到九个有序的事实性区间，评估指标同时奖励精确预测和与正确区间的接近程度。然而，训练数据存在严重类别不平衡：566 个训练样本中 64.1% 属于同一类别。初步实验显示，多个 mDeBERTa 分类模型主要预测主导类别，而 Huber 回归基线则能产生更分散的预测。UO-FIE 的核心思路是将精确标签监督与分级效用相结合，以缓解类别不平衡带来的偏差，同时利用有序区间的邻近性信息。该方法值得关注，因为它针对有序分类与类别不平衡并存的现实问题，提出了一种融合分类与回归优势的解决方案，对事实性推理、有序分类及低资源不平衡场景具有参考价值。",
+  "tags": [
+    "Factivity Inference",
+    "Ordinal Classification",
+    "Class Imbalance",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:24:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FIE2026 任务要求将中文上下文-假设对分类到九个有序事实性区间，评估指标同时考虑精确性和邻近性。",
+      "训练数据严重不平衡，64.1% 的样本属于单一类别，导致 mDeBERTa 分类模型偏向预测主导类别。",
+      "Huber 回归基线相比分类模型能产生更分散的预测，表明回归方法可能更适合处理有序区间任务。",
+      "UO-FIE 通过结合精确标签监督与分级效用，旨在同时利用分类的精确性和回归的连续性优势。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-013",
+  "title": "Reinforcement Learning with Verifiable Rewards for Small Search Agents",
+  "source_url": "https://arxiv.org/abs/2609.28765",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究将可验证奖励强化学习（RLVR）应用于小型搜索智能体（参数量低于十亿）的可行性。RLVR 在数学和编程等具有明确奖励信号的任务上表现优异，但在奖励信号模糊的开放域问答任务中是否同样有效尚不明确。作者采用\"推理-搜索\"（reason-over-search）范式，将 RLVR 应用于开放域问答：检索为答案提供依据，与参考答案的匹配提供奖励信号。此前该范式仅在大型模型上得到验证，本文首次系统性地探索其在十亿参数以下小型模型上的表现。该研究值得关注的原因在于：一是它挑战了 RLVR 仅适用于明确奖励任务的假设，拓展了 RLVR 的应用边界；二是小型搜索智能体在计算成本和部署灵活性上具有显著优势，若能在小模型上实现有效的检索增强推理，将大幅降低智能体系统的落地门槛；三是它为开放域问答中稀疏奖励信号的设计提供了新的实证依据，对检索增强生成（RAG）与强化学习的交叉研究具有参考价值。",
+  "tags": [
+    "RLVR",
+    "Search Agent",
+    "RAG",
+    "Small Language Model",
+    "Open-domain QA"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 此前主要在数学、编程等奖励明确的任务上验证，本文探索其在奖励信号较模糊的开放域问答任务中的适用性",
+      "reason-over-search 范式通过检索 grounding 答案、参考答案匹配提供奖励，此前仅在大模型上验证，本文聚焦十亿参数以下小模型",
+      "若小模型能有效利用 RLVR 进行搜索增强推理，将显著降低搜索智能体的部署成本与门槛"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

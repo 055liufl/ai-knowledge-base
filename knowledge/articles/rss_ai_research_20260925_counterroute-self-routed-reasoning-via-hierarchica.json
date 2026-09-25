@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-031",
+  "title": "CounterRoute: Self-Routed Reasoning via Hierarchical Counterfactual Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2609.29109",
+  "source_platform": "rss_ai_research",
+  "summary": "CounterRoute 是一个面向推理型语言模型的在线强化学习框架，旨在解决模型在简单问题上过度生成冗长思维链、浪费推理算力的问题。现有双模式模型通常将“是否进行深度推理”的选择权交给用户，而自动路由面临三大挑战：路由目标随策略演化而漂移、初始模式偏好破坏探索稳定性、序列级目标将路由决策与回答学习纠缠在一起。CounterRoute 通过分层反事实信用分配（Hierarchical Counterfactual Credit Assignment）实现自路由推理，让模型自主决定何时直接作答、何时展开长链推理，从而在保持推理能力的同时显著降低推理成本。该工作值得关注，因为它将强化学习中的信用分配思想引入推理模式选择，为推理效率优化提供了新的自动化范式，对部署成本敏感的推理模型应用具有直接价值。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Reasoning",
+    "Inference Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:21:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自动路由推理模式可避免简单问题上的冗余思维链，显著节省推理算力。",
+      "路由目标随策略演化、初始偏好不稳定、序列级目标纠缠是自动路由的三大核心挑战。",
+      "分层反事实信用分配将路由决策与回答学习的信用分离，稳定在线强化学习训练。",
+      "该框架使模型自主决定推理深度，减少对用户手动选择模式的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

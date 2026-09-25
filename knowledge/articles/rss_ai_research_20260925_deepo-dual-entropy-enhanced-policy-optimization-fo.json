@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-006",
+  "title": "DEEPO: Dual-Entropy Enhanced Policy Optimization for Hallucination in MLLMs",
+  "source_url": "https://arxiv.org/abs/2609.28570",
+  "source_platform": "rss_ai_research",
+  "summary": "DEEPO（Dual-Entropy Enhanced Policy Optimization）是一篇针对多模态大语言模型（MLLMs）幻觉问题的强化学习优化方法研究。作者指出，尽管强化学习被广泛用于提升 MLLMs 的推理能力，但其对幻觉的抑制效果并不稳定。他们将这一问题追溯到从奖励信号到参数更新的“纠正链”中的两个薄弱环节。在 rollout 层面，语义熵高的困难查询往往产生“一致错误”的样本组，导致组相对优势（group-relative advantage）坍缩为零，而这恰恰是幻觉最容易发生的场景。DEEPO 提出双熵增强的策略优化机制，试图同时利用语义熵与策略熵来识别并修复这些失效的纠正信号，从而更有效地降低多模态幻觉。该工作值得关注，因为它揭示了 RL 训练中优势估计失效与幻觉之间的因果联系，并为多模态对齐与可靠性提升提供了新的优化视角，对研究 MLLM 幻觉抑制和 RLHF/RLVR 方法的研究者与工程师具有参考价值。",
+  "tags": [
+    "MLLM",
+    "Hallucination",
+    "Reinforcement Learning",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:19:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 对 MLLM 幻觉的抑制效果不稳定，根源在于奖励到参数更新的纠正链存在薄弱环节。",
+      "高语义熵的困难查询容易产生一致错误的样本组，使组相对优势坍缩为零，导致关键场景下无法有效纠正幻觉。",
+      "DEEPO 通过双熵增强策略优化，同时利用语义熵与策略熵来修复失效的纠正信号。",
+      "该工作将幻觉问题与 RL 优势估计失效直接关联，为多模态对齐提供了新的优化方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

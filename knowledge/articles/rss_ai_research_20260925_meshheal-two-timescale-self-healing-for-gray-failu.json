@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-025",
+  "title": "MeshHeal: Two-Timescale Self-Healing for Gray Failures in Decentralized LLM Agent Networks",
+  "source_url": "https://arxiv.org/abs/2609.29015",
+  "source_platform": "rss_ai_research",
+  "summary": "MeshHeal 是一篇针对去中心化 LLM 多智能体网络中「灰色故障」（gray failures）问题的研究论文。所谓灰色故障，是指智能体虽然仍能正常响应请求，但其任务求解质量却持续下降，这种隐性退化难以被传统基于响应性的健康检查发现。由于去中心化网络依赖局部交互进行协调，一旦某个智能体出现灰色故障，其劣质输出可能通过路由机制污染整个协作链路。MeshHeal 提出了一种完全去中心化的自愈框架，核心机制是「双时间尺度」设计：在短时间尺度上，通过能力匹配的同伴评审（ability-matched peer review）来保护当前正在执行的任务，避免劣质输出被采纳；在长时间尺度上，则根据累积证据调整未来路由策略，同时允许已恢复的智能体重新加入网络。该工作值得关注，因为它首次系统性地将灰色故障概念引入 LLM 多智能体系统，并给出了无需中心协调者的自愈方案，对构建鲁棒、可扩展的去中心化 Agent 网络具有重要参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Self-Healing",
+    "Decentralized",
+    "Fault Tolerance"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "灰色故障是去中心化 LLM 多智能体系统中被忽视的关键风险：智能体保持响应但输出质量持续退化，传统健康检查无法检测。",
+      "MeshHeal 采用双时间尺度机制：短时间尺度通过能力匹配的同伴评审保护当前任务，长时间尺度基于证据调整路由并允许恢复智能体重新加入。",
+      "该框架完全去中心化，不依赖中心协调者，适合大规模、动态的 Agent 网络部署场景。",
+      "将故障容忍与自愈能力引入 LLM 多智能体协作，为构建鲁棒的去中心化 Agent 系统提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

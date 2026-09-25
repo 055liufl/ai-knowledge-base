@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-058",
+  "title": "Stale Does Not Mean Unsafe: Guard Precision for Tool-Using LLM Agents under Infrastructure State Races",
+  "source_url": "https://arxiv.org/abs/2609.29522",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究工具使用型 LLM 智能体在基础设施状态竞争（state race）场景下的安全性问题。当智能体读取外部状态并准备提交变更时，外部状态可能已发生变化，但并非所有变化都会导致提交不安全。作者将竞争条件细分为三类：使安全谓词失效的竞争、保持谓词不变的竞争以及无关竞争，并探讨运行时守卫（runtime guard）区分这些类别的精确度。通过确定性模拟器，研究揭示了现有守卫机制可能过于保守，将「状态已过期」误判为「不安全」，从而造成不必要的阻塞。该工作为构建更精准、更高效的智能体安全防护机制提供了理论基础和评估框架，对自动化运维、数据管道调度等高风险场景下的 LLM 智能体部署具有重要指导意义。",
+  "tags": [
+    "LLM Agent",
+    "Safety",
+    "Concurrency",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并非所有状态竞争都会导致不安全，需区分失效性竞争、谓词保持性竞争和无关竞争",
+      "现有运行时守卫可能因过度保守而误判，降低智能体在动态环境中的可用性",
+      "确定性模拟器为评估守卫精度提供了可复现的实验框架",
+      "精准的竞争分类有助于在安全性和效率之间取得更好平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

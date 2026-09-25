@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260925-097",
+  "title": "HEXIS: Compiling Skills into Extended Finite State Machines",
+  "source_url": "https://arxiv.org/abs/2609.30123",
+  "source_platform": "rss_ai_research",
+  "summary": "HEXIS 提出了一种将 Agent 技能编译为扩展有限状态机（Extended Finite State Machines, EFSM）的方法，旨在解决当前 Agent 技能复用中的核心痛点：技能通常以自然语言指令形式提供，Agent 每次执行时都需要重新推理如何应用技能以及下一步该执行什么操作，导致任务推理与控制决策耦合，容易出现步骤遗漏或误用。HEXIS 的核心思想是将技能中的知识（knowledge）与控制流（control flow）分离：技能知识被编译为局部指令，用于指导每个状态下的具体操作，而状态机则显式地定义操作之间的转移逻辑。这种设计使 Agent 不再需要同时进行任务推理和控制决策，从而提升技能执行的可靠性和一致性。该工作对 Agent 系统的工程化具有重要意义，因为它提供了一种将非结构化技能描述转化为可验证、可复用的结构化执行流程的范式，有望降低 Agent 在复杂多步任务中的错误率，并为技能组合、调试和形式化验证奠定基础。",
+  "tags": [
+    "Agent",
+    "FSM",
+    "Skill Compilation",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Agent 技能编译为扩展有限状态机，实现知识（局部指令）与控制流（状态转移）的显式分离",
+      "解决 Agent 重复推理技能应用方式的问题，减少步骤遗漏和误用",
+      "为 Agent 技能的可靠执行、组合与形式化验证提供了结构化基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

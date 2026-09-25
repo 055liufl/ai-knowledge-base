@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-002",
+  "title": "TW3Cast: A Frozen Router of Lightly Fine-Tuned Foundation Models for Time-Series Forecasting on GIFT-Eval, Selected Entirely on the Training Split",
+  "source_url": "https://arxiv.org/abs/2609.28506",
+  "source_platform": "rss_ai_research",
+  "summary": "TW3Cast 是一个时间序列预测系统，在 GIFT-Eval 基准测试中以平均 MASE 排名位列 130 个参赛作品中的第 3 名（截至 2026-09-14）。值得注意的是，排名前两位的参赛作品属于排行榜的 agentic 类别，即使用智能体或语言模型对预测进行推理、生成或选择的多步系统。而 TW3Cast 完全不运行任何智能体或语言模型，其核心机制是一个在训练集上一次性计算后即冻结的路由表，用于组合多个轻量微调的基础模型。这一结果值得关注的原因在于：它表明在时间序列预测任务中，经过精心设计的简单路由策略配合轻量微调的基础模型，可以在不依赖昂贵 LLM/Agent 推理的情况下达到接近顶尖的性能。这为资源受限场景下的高效预测提供了重要参考，也对当前'一切皆 Agent'的趋势提出了有意义的反例，说明任务特定的轻量方案在特定领域仍具竞争力。",
+  "tags": [
+    "Time-Series",
+    "Foundation Models",
+    "Routing",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:19:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TW3Cast 在 GIFT-Eval 上排名第 3，且不使用任何 Agent 或语言模型，证明轻量级方案在时间序列预测中仍具强大竞争力。",
+      "其核心是一个在训练集上一次性计算后冻结的路由表，用于组合多个轻量微调的基础模型，避免了推理时的动态决策开销。",
+      "排名前两位均为 agentic 系统，说明 Agent/LLM 方法虽强但并非唯一路径，任务特定的简单路由策略可达到接近顶尖的效果。",
+      "该方法强调选择过程完全基于训练集，避免了验证集或测试集泄漏，提升了结果的可复现性和可信度。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

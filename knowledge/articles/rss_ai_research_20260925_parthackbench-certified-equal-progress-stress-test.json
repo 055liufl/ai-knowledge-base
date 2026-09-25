@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-065",
+  "title": "PartHackBench: Certified Equal-Progress Stress Tests for Partial-Credit Tool-Agent Evaluation",
+  "source_url": "https://arxiv.org/abs/2609.29578",
+  "source_platform": "rss_ai_research",
+  "summary": "PartHackBench 是一篇针对工具型智能体（tool-agent）部分得分评估的基准测试方法论文。论文指出，长周期工具智能体常常在未达成最终成功的情况下取得有价值的阶段性进展，因此部分得分（partial-credit）评估变得必要。然而现有评估器存在明显缺陷：它们可能奖励那些只是暂时性的、后来被推翻的、或根本无法归因于被评估智能体的里程碑。更关键的是，当把一个诚实轨迹与一个得分更高的对抗性轨迹进行比较时，如果后者确实取得了更多真实进展，那么这种比较就无法说明评估器是否存在漏洞。PartHackBench 提出了一种受控方法论来消除这一混淆因素，通过构造“认证等进度”（certified equal-progress）的压力测试，确保被比较的两条轨迹在真实进展上严格对等，从而能够干净地暴露评估器是否被“部分得分黑客”（partial-credit hacking）所欺骗。该工作对智能体评估的可靠性、基准设计的严谨性以及部分得分机制的安全性具有直接意义，尤其适用于需要长周期多步交互的 Agent 评测场景。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Benchmark",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:22:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "部分得分评估容易被暂时性、被反转或不可归因的里程碑所欺骗，导致评估结果失真。",
+      "当对抗性轨迹比诚实轨迹取得更多真实进展时，二者的得分比较无法证明评估器存在漏洞。",
+      "PartHackBench 通过认证等进度（certified equal-progress）的受控压力测试，消除了进展差异这一混淆变量。",
+      "该方法为长周期工具智能体的部分得分评估提供了更严谨、可归因的基准设计思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

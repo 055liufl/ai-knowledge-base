@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260925-001",
+  "title": "When Should Forecasting Agents Reason? Behavioral Stress Tests for Reliability Routing",
+  "source_url": "https://arxiv.org/abs/2609.28475",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究预测型智能体（Forecasting Agents）中各类行为机制——语言模型推理、检索、集成、校准、市场先验、历史类比——何时应当被信任。作者在 ForecastBench 风格的二元预测任务上，将「是否检索、是否推理、是否服从市场先验、是否使用历史类比」视为可观测的智能体行为，而非隐藏的实现细节，从而提出「行为压力测试」（Behavioral Stress Tests）与「可靠性路由」（Reliability Routing）的概念。核心发现是机制选择本身对预测可靠性具有决定性影响：不同机制在不同情境下的表现差异显著，盲目叠加推理与检索并不总能提升效果，甚至可能引入噪声。该工作为构建更可靠的预测系统提供了方法论框架，强调应根据任务特征动态路由到合适的预测机制，而非默认启用全部能力。对从事 LLM 智能体、预测建模与不确定性量化的研究者与开发者具有较高参考价值。",
+  "tags": [
+    "Agent",
+    "Forecasting",
+    "LLM",
+    "Reliability",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:19:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将检索、推理、市场先验、历史类比等机制选择视为可观测的智能体行为，而非隐藏实现细节，是评估预测可靠性的关键视角。",
+      "机制选择本身对预测可靠性有决定性影响，盲目叠加推理与检索并不必然提升效果。",
+      "提出行为压力测试与可靠性路由框架，主张根据任务特征动态选择预测机制。",
+      "在 ForecastBench 风格二元预测任务上验证了不同机制在不同情境下的显著表现差异。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

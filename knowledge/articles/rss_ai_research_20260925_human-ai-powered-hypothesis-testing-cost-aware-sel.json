@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-017",
+  "title": "Human-AI-Powered Hypothesis Testing: Cost-Aware Selective AI Scoring and Sequential Human Escalation",
+  "source_url": "https://arxiv.org/abs/2609.28859",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究如何将大语言模型（LLM）作为低成本评判者用于正式的统计假设检验，而非简单地将其输出视为真值标签。核心问题在于：AI 评判存在偏差和噪声，直接用于统计推断会破坏第一类与第二类错误的控制。作者提出一种「成本感知的选择性 AI 评分 + 顺序人工升级」框架：先由 AI 对样本进行评分，仅在 AI 置信度不足或对结论影响关键时，才将样本升级给人类专家复核，从而在保证统计有效性（控制错误率）的前提下最小化昂贵的人工标注成本。该工作将 AI 评判从「替代真值」重新定位为「可校准的噪声观测」，并引入选择性推断与序贯决策的思想，为 AI 辅助科学发现、数据标注与系统评估提供了可落地的统计保障。其价值在于弥合了 LLM 作为评估工具与严谨统计推断之间的鸿沟，对依赖 AI 评判进行决策的研究与工程实践具有直接指导意义。",
+  "tags": [
+    "LLM-as-Judge",
+    "Hypothesis Testing",
+    "Human-in-the-Loop",
+    "Statistical Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:20:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 评判不能直接当作真值标签使用，必须显式控制第一类与第二类错误才能用于正式统计推断。",
+      "选择性 AI 评分结合顺序人工升级，可在保证统计有效性的同时显著降低人工标注成本。",
+      "将 AI 评判建模为有偏噪声观测而非真值，是连接 LLM 评估与经典假设检验框架的关键思路。",
+      "成本感知的升级策略使人类专家资源集中在对结论影响最大的样本上，提升整体推断效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260925-099",
+  "title": "EnigmaForge: The Question Is Hidden in the Story",
+  "source_url": "https://arxiv.org/abs/2609.30144",
+  "source_platform": "rss_ai_research",
+  "summary": "EnigmaForge 是一个全新的基准测试框架，其核心创新在于不向模型直接提供问题，而是给出一堆旧文档（信件、收据、日志边角），要求模型自行发现其中隐藏的逻辑谜题并求解。每个实例在生成时都通过 SAT 求解器证明其解唯一，并附带消融证书以证明每条线索都是必要的。由于实例是程序化生成的而非人工收集，该语料库可以无限更新，避免数据污染和过拟合。该基准的主要衡量指标是“直觉”，即模型在无明确问题引导下从杂乱信息中识别并解决结构化推理任务的能力。EnigmaForge 值得关注，因为它挑战了当前大模型依赖明确问题提示的范式，更贴近真实世界中信息过载、问题隐晦的推理场景，为评估模型的自主发现与逻辑推理能力提供了新视角。",
+  "tags": [
+    "Benchmark",
+    "Reasoning",
+    "LLM Evaluation",
+    "SAT Solver"
+  ],
+  "author": null,
+  "published_at": "2026-09-25T13:17:57Z",
+  "collected_at": "2026-09-25T13:23:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EnigmaForge 通过隐藏问题、仅提供原始文档，迫使模型自主发现并解决逻辑谜题，更贴近真实世界的信息处理场景。",
+      "每个实例由 SAT 求解器保证解的唯一性，并附带消融证书证明所有线索均不可或缺，确保了基准的严谨性。",
+      "程序化生成使语料库可无限更新，有效避免数据泄露和基准饱和问题。",
+      "该基准以“直觉”为核心度量，评估模型在无明确问题引导下的自主推理能力，为 LLM 评估开辟了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
