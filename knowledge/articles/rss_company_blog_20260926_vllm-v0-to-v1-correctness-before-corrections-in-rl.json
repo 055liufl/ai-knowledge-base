@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20260926-044",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 在 Hugging Face 上发布的博客，讨论 vLLM 从 V0 到 V1 的演进，特别聚焦于强化学习（RL）场景下的正确性问题。vLLM 是主流的高吞吐量 LLM 推理引擎，其 V1 版本在架构上进行了重构，以更好地支持 RL 训练中的推理需求。文章强调“正确性优先于修正”，即在优化性能之前必须确保推理结果的正确性，尤其是在 RL 中，错误的推理输出会导致训练信号偏差，进而影响模型收敛。博客可能分享了从 V0 迁移到 V1 的经验、遇到的正确性挑战以及解决方案，对于使用 vLLM 进行 RL 训练的研究者和开发者具有重要参考价值。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-26T12:42:02Z",
+  "collected_at": "2026-09-26T12:45:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 针对 RL 场景进行了架构优化，但正确性仍是首要前提。",
+      "在 RL 训练中，推理引擎的输出错误会直接污染训练信号，导致模型性能下降。",
+      "从 V0 迁移到 V1 需要仔细验证正确性，避免因性能提升而引入隐蔽错误。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
