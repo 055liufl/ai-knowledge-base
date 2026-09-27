@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20260927-044",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队在 Hugging Face 上发布的博客，探讨了 vLLM 从 V0 升级到 V1 过程中，在强化学习（RL）场景下遇到的正确性问题。文章强调，在应用任何性能优化或功能修正之前，必须首先确保推理引擎的正确性。vLLM 作为高吞吐量 LLM 推理引擎，在 RL 训练中常被用于生成样本，但其版本迭代可能引入细微的数值或逻辑错误，导致训练不稳定或策略偏差。作者通过具体案例展示了如何识别和修复这些正确性问题，并提出了“正确性优先”的工程原则。该内容对从事 RL 训练和推理系统开发的工程师具有重要参考价值，因为它揭示了在追求效率的同时，基础正确性不容忽视。文章还讨论了 V1 版本在架构上的改进，以及如何通过测试和验证来保证与 V0 的行为一致性。整体而言，这是一篇结合实践与工程哲学的深度技术分享，提醒社区在快速迭代中保持对正确性的敬畏。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "正确性",
+    "工程实践"
+  ],
+  "author": null,
+  "published_at": "2026-09-27T13:33:45Z",
+  "collected_at": "2026-09-27T13:37:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，推理引擎的正确性比性能优化更优先，错误会累积并导致策略崩溃。",
+      "vLLM V0 到 V1 的迁移需要严格的正确性验证，包括数值一致性和行为兼容性测试。",
+      "工程实践中应建立“正确性优先”的文化，避免因追求速度而引入隐蔽缺陷。",
+      "该案例为其他推理引擎的版本升级提供了可复用的测试与验证方法论。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
