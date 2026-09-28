@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-047",
+  "title": "MoMHa: Multi-Objective Optimization of LLM Harnesses over Accuracy, Safety, and Tokens",
+  "source_url": "https://arxiv.org/abs/2609.30967",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出将 LLM 的\"harness\"（即围绕模型构建提示、路由调用、解析输出的 Python 代码）视为一等设计对象，并指出其质量本质上是多目标的：一个准确但无法拒绝不安全请求、或消耗大量 token 的 harness 并非好 harness。作者提出 Meta-Harness 系统，针对准确率、安全性和 token 消耗三个目标对 LLM harness 进行多目标优化。该工作值得关注，因为它突破了以往仅以准确率为单一优化目标的局限，将工程封装层（harness）纳入系统化优化范畴，为构建更安全、更经济的 LLM 应用提供了新范式，对 Agent 与 LLM 应用开发者具有直接参考价值。",
+  "tags": [
+    "LLM",
+    "Multi-Objective Optimization",
+    "Safety",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM harness（提示构建、调用路由、输出解析的代码层）应被视为一等设计对象，而非附属工程细节",
+      "harness 质量本质上是多目标的，需同时权衡准确率、安全性和 token 消耗",
+      "仅优化准确率会导致 harness 在安全性和成本上表现糟糕，例如无法拒绝不安全请求或 token 消耗激增",
+      "Meta-Harness 系统为 harness 的多目标自动优化提供了可行框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

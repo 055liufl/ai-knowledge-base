@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-015",
+  "title": "Atelier: Learning Local Self-Supervised Features for CryoEM Volumes via Hypernetworks",
+  "source_url": "https://arxiv.org/abs/2609.30569",
+  "source_platform": "rss_ai_research",
+  "summary": "Atelier 提出了一种利用超网络（Hypernetworks）学习冷冻电镜（CryoEM）体积局部自监督特征的新方法。冷冻电镜图谱解读需要空间局部化、跨样本一致且跨尺度信息丰富的特征。现有深度学习方法通常从固定体素网格中提取特征，而隐式神经表示（INR）能够将体积数据建模为尺度无关、坐标条件化的函数，因此对冷冻电镜极具吸引力。然而，为每个图谱单独拟合一个 INR 计算成本过高，难以规模化。Atelier 通过超网络生成 INR 参数，实现了跨样本共享的局部自监督特征学习，避免了逐图谱优化。该方法有望提升冷冻电镜图谱注释的效率和泛化能力，为结构生物学中的自动化分析提供新思路。其创新点在于将超网络与 INR 结合，解决冷冻电镜数据的高维、稀疏和尺度变化问题，值得关注。",
+  "tags": [
+    "CryoEM",
+    "Self-Supervised Learning",
+    "Hypernetworks",
+    "Implicit Neural Representations"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "超网络生成 INR 参数，实现跨冷冻电镜图谱的局部自监督特征共享，避免逐图谱拟合的高成本。",
+      "INR 的尺度无关和坐标条件化特性适合处理冷冻电镜体积数据的多尺度空间信息。",
+      "该方法有望推动冷冻电镜图谱注释的自动化，减少对固定体素网格特征的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

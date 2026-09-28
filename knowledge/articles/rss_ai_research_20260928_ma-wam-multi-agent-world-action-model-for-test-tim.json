@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-071",
+  "title": "MA-WAM: Multi-Agent World-Action Model for Test-Time Planning",
+  "source_url": "https://arxiv.org/abs/2609.31281",
+  "source_platform": "rss_ai_research",
+  "summary": "MA-WAM（Multi-Agent World-Action Model）是一篇针对多智能体协作任务中测试时规划（test-time planning）问题的研究论文。论文指出，多智能体协作任务要求各智能体同时执行联合动作，且每个智能体的动作会同时影响其他智能体的观测与响应，因此需要一个世界模型来预测所有智能体联合动作所产生的团队回报。作者批评了将单智能体世界模型直接逐动作扩展到多智能体场景的朴素做法，认为这种方式在预测团队回报时存在明显缺陷。该工作提出了一种面向多智能体的世界-动作模型，旨在更准确地建模智能体之间的交互耦合关系，并支持在测试阶段进行规划。其价值在于：多智能体规划长期受制于联合动作空间爆炸与交互建模困难，而世界模型为降低真实环境交互成本提供了新路径；该研究将世界模型与多智能体协作规划结合，对机器人协同、多智能体强化学习及具身智能等方向具有潜在影响。",
+  "tags": [
+    "Multi-Agent",
+    "World Model",
+    "Planning",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体协作中每个智能体的动作会同时影响其他智能体的观测与响应，因此团队回报预测必须建模联合动作的交互效应。",
+      "将单智能体世界模型逐动作直接扩展到多智能体场景存在缺陷，无法准确捕捉智能体之间的耦合关系。",
+      "MA-WAM 提出多智能体世界-动作模型，用于在测试时进行规划并预测联合动作下的团队回报。",
+      "该方向有望降低多智能体规划对真实环境交互的依赖，推动协作机器人与具身智能应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

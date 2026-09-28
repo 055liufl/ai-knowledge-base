@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-038",
+  "title": "EXAONE Demand 1.0: A Time Series Foundation Model for Demand Forecasting",
+  "source_url": "https://arxiv.org/abs/2609.30880",
+  "source_platform": "rss_ai_research",
+  "summary": "EXAONE Demand 1.0 是 LG AI Research 提出的面向需求预测的时间序列基础模型（TSFM）。现有 TSFM 通常在跨领域序列上预训练，而需求序列在语料中占比极低，且具有短历史、频繁零值、因缺货导致的删失以及未记录的外生事件等独特性质，通用模型难以有效捕捉。为此，作者构建了需求专用语料库（约 1130 万条序列）并设计了需求感知适配器（demand-aware adapter），使模型能够适应需求数据的稀疏性与删失特性。该工作值得关注的原因在于：需求预测是供应链、零售、库存管理等场景的核心问题，直接影响企业运营效率；将基础模型范式引入这一垂直领域，有望减少对大量任务特定特征工程的依赖，并提升在冷启动、间歇性需求等困难场景下的表现。同时，它揭示了通用 TSFM 在特定领域数据分布上的局限性，为后续领域自适应基础模型研究提供了参考。",
+  "tags": [
+    "Time Series",
+    "Foundation Model",
+    "Demand Forecasting",
+    "Supply Chain"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用时间序列基础模型的预训练语料中需求序列占比极低，导致其难以处理需求数据特有的短历史、零膨胀和缺货删失问题。",
+      "构建领域专用语料库（1130 万条需求序列）并结合需求感知适配器，是提升基础模型在垂直领域表现的有效路径。",
+      "需求预测中的删失和未记录外生事件是通用模型容易忽略的关键挑战，需要在数据与模型层面专门设计。",
+      "该工作为供应链、零售等场景提供了可复用的基础模型思路，有望减少对任务特定特征工程的依赖。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

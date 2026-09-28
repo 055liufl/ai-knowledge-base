@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-054",
+  "title": "Externalized CPDAG Summaries Improve LLM Causal Deduction",
+  "source_url": "https://arxiv.org/abs/2609.31071",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型在因果推断任务中的推理缺陷提出改进方案。作者以 Corr2Cause 基准为切入点，该任务要求判断某个因果断言是否在所有与观测相关性及条件独立性相容的有向无环图（DAG）中成立。作者指出，这类问题本质上是隐对象推理（latent-object reasoning）：标签由 CPDAG（完全部分有向无环图）查询定义，但自由形式的思维链（chain-of-thought）往往将马尔可夫等价类问题退化为局部模式匹配，导致推理失败。为此，作者提出 Structured Thinking 两轮流水线：第一轮先外部化一个带类型、受模式约束的 CPDAG 摘要，第二轮再基于该结构化摘要进行因果推断。该方法的核心思想是将隐式的等价类结构显式化，降低 LLM 在复杂因果推理中的认知负担。该工作值得关注，因为它揭示了 LLM 在因果推断中的系统性缺陷，并提供了一种可复用的结构化推理范式，对因果发现、科学推理和可信 AI 等方向具有启发意义。",
+  "tags": [
+    "LLM",
+    "Causal Inference",
+    "Chain-of-Thought",
+    "Structured Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自由形式的思维链在因果推断中容易退化为局部模式匹配，无法正确处理马尔可夫等价类问题。",
+      "将 CPDAG 摘要显式外部化并施加类型与模式约束，可显著提升 LLM 的因果推断能力。",
+      "两轮结构化推理流水线为隐对象推理任务提供了一种通用范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-027",
+  "title": "Selective Amortization of Full-Budget Counterfactual Reasoning for Visual Token Communication",
+  "source_url": "https://arxiv.org/abs/2609.30756",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ACV-Gate，一种用于生成式图像通信中视觉 token 选择的自适应候选评估方法。在生成式图像通信中，发送端需要在有限的包预算下传输紧凑的语义 token，而 token 的选择会直接影响接收端完整解码后的重建质量。然而，准确估计每个候选 token 的终端价值需要反复进行接收端重建，导致编码端计算开销巨大。ACV-Gate 通过选择性摊销全预算反事实推理来解决这一矛盾：它并非对所有候选 token 都执行完整的重建评估，而是自适应地筛选出真正需要全预算评估的候选，从而在保持选择质量的同时显著降低计算成本。该工作位于生成式通信、视觉 token 压缩与高效推理的交叉领域，对实时图像传输、带宽受限场景下的语义通信系统具有实用价值，也为反事实推理在资源受限环境中的摊销策略提供了新思路。",
+  "tags": [
+    "视觉Token通信",
+    "反事实推理",
+    "生成式图像压缩",
+    "高效推理"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式图像通信中 token 选择直接影响重建质量，但精确评估每个候选 token 的终端价值需要反复接收端重建，计算代价高。",
+      "ACV-Gate 通过自适应候选评估与选择性摊销，仅对必要候选执行全预算反事实推理，在质量与效率之间取得平衡。",
+      "该方法为带宽受限下的语义通信提供了一种降低编码端计算开销的可行路径，可推广至其他需要反事实评估的资源分配问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

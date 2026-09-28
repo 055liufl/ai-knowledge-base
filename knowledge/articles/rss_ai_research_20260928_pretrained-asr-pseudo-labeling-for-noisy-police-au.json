@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-009",
+  "title": "Pretrained ASR Pseudo-labeling for Noisy Police Audio",
+  "source_url": "https://arxiv.org/abs/2609.30469",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究利用预训练 ASR 模型（Whisper 和 Qwen3-ASR）对高噪声警用广播通信（Broadcast Police Communication, BPC）音频进行伪标签（pseudo-labeling）自适应，以解决基础 ASR 模型在强噪声域上性能严重下降的问题。由于人工标注成本高昂，伪标签提供了一条无监督的改进路径，但其在极噪声域中的有效性此前尚不明确。作者系统评估了伪标签方法的机会与局限，分析了噪声水平、模型规模、伪标签质量等因素对自适应效果的影响。该工作对执法记录分析、公共安全语音理解以及低资源噪声场景下的语音识别具有实际意义，也为基础 ASR 模型在真实复杂环境中的部署提供了重要参考。",
+  "tags": [
+    "ASR",
+    "Pseudo-labeling",
+    "Speech Recognition",
+    "Noisy Audio",
+    "Domain Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "伪标签可在无人工标注条件下将基础 ASR 模型适配到高噪声警用音频域，但效果受噪声强度和伪标签质量限制。",
+      "Whisper 与 Qwen3-ASR 在 BPC 噪声场景下均表现不佳，说明现有基础模型对真实执法通信的鲁棒性不足。",
+      "系统评估揭示了伪标签在极噪声域中的机会与边界，为后续噪声鲁棒 ASR 研究提供了基准和方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

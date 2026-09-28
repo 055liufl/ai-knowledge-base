@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-031",
+  "title": "HasMem: Hard-Origin Adaptively Softened Memory for Long-Term LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.30797",
+  "source_platform": "rss_ai_research",
+  "summary": "HasMem（Hard-Origin Adaptively Softened Memory）是一种面向长期 LLM Agent 的记忆管理方法，旨在解决文本记忆与上下文压缩在复用历史交互时面临的容量分配与读出耦合问题。传统连续记忆在调整大小时会改变冻结 LLM 的输入，导致记忆容量与读出过程相互干扰。HasMem 的核心思路是：以冻结的硬提示嵌入（hard-prompt embeddings）作为可验证的初始状态，引入控制器动态调整记忆宽度，由 Writer 重新编码调整后的记忆条目，并通过 Reader 与 Global 模块实现读出适配和跨轮次状态维护。该方法将记忆容量分配与读出解耦，使 Agent 在长期交互中能够更灵活地扩展或收缩记忆，同时保持对冻结模型的可控性。该工作对长期 LLM Agent 的记忆架构设计具有参考价值，尤其适用于需要持续积累和检索历史信息的对话、任务规划与个性化助手场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Context Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连续记忆的尺寸调整会改变冻结 LLM 的输入，导致容量分配与读出过程耦合，这是长期 Agent 记忆管理的关键瓶颈。",
+      "HasMem 以冻结硬提示嵌入作为可验证初始状态，通过控制器、Writer、Reader 和 Global 模块实现记忆宽度自适应与读出适配。",
+      "该方法将记忆容量分配与读出解耦，为长期 LLM Agent 提供更灵活、可控的记忆扩展与压缩机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-100",
+  "title": "DanLing NestedTensor: Composable Multi-Ragged Tensors for Deep Learning",
+  "source_url": "https://arxiv.org/abs/2609.30379",
+  "source_platform": "rss_ai_research",
+  "summary": "DanLing NestedTensor 是一篇针对深度学习中变长输入处理问题的 arXiv 论文，提出了一种可组合的多层嵌套张量（NestedTensor）抽象。传统稠密批处理会为变长输入分配统一的最大尺寸缓冲区，导致大量填充计算浪费；例如在显式成对状态场景中，稠密方式需要 BN_max^2 个位置，而实际有效数据仅为 sum_i N_i^2，浪费随轴数增加而倍增。Packing 方法虽然消除了填充浪费，但扁平化缓冲区丢失了逻辑轴和样本边界信息，使得打包后的算子难以组合。DanLing NestedTensor 基于 PyTorch 实现，旨在保留逻辑轴与样本边界的同时支持嵌套、可组合的 ragged 张量运算，从而兼顾内存效率与算子组合能力。该工作对处理变长序列、稀疏结构、成对交互等场景具有实用价值，可能影响深度学习框架中 ragged tensor 的设计方向，值得框架开发者和高效训练研究者关注。",
+  "tags": [
+    "NestedTensor",
+    "Ragged Tensor",
+    "PyTorch",
+    "Efficient Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:36:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稠密批处理对变长输入会产生随轴数倍增的填充浪费，成对状态场景下开销从 sum_i N_i^2 膨胀到 BN_max^2",
+      "Packing 虽消除填充，但扁平缓冲区丢失逻辑轴与样本边界，导致打包算子难以组合",
+      "DanLing NestedTensor 在 PyTorch 中提供可组合的多层嵌套张量抽象，兼顾内存效率与算子表达能力"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

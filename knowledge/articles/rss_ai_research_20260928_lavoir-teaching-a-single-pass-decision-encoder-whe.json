@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-021",
+  "title": "LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information",
+  "source_url": "https://arxiv.org/abs/2609.30706",
+  "source_platform": "rss_ai_research",
+  "summary": "LAVOIR（Laya with Value-Of-Information Routing）是针对单次前向传播决策模型（如 TypeSafe 的 Jev 及其开源对应 Laya）的一项改进研究。这类\"系统一\"决策模型能够对文本中的类型化问题在单次前向传播中给出带校准概率的答案，但存在一个关键缺陷：当输入信息不完整时，它们无法主动询问缺失信息，只能进行猜测。例如，当第一条消息没有说明区分两个部门的关键信息时，模型只能盲目作答。LAVOIR 的核心思路是将候选的缺失信息片段（slots）放置在输入中，并利用信息价值（Value of Information, VoI）的摊销估计来训练模型判断何时提问、提什么问题。该方法使单次决策编码器具备了主动信息获取能力，在保持单次推理效率的同时提升了决策质量。这项工作值得关注，因为它弥合了高效单次决策模型与交互式信息收集之间的鸿沟，为构建更可靠、更实用的文本决策系统提供了新范式，对需要高准确率且低延迟的工业级应用（如客服路由、工单分类）具有直接价值。",
+  "tags": [
+    "Decision Model",
+    "Value of Information",
+    "Active Learning",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单次前向传播决策模型（System One）在信息不完整时只能猜测，无法主动询问缺失信息，这是其核心局限。",
+      "LAVOIR 通过将候选缺失信息槽位放入输入，并利用摊销的信息价值估计，教会模型何时提问以及问什么。",
+      "该方法在保持单次推理效率的同时引入主动信息获取能力，有望提升文本决策系统的准确性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-077",
+  "title": "Compress What You See, Not What You Say: Anchored Context Distillation for Latent-Observation Software Engineering Agents",
+  "source_url": "https://arxiv.org/abs/2609.31430",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向软件工程智能体的上下文压缩方法——锚定上下文蒸馏（Anchored Context Distillation），旨在解决工具观察结果主导智能体上下文、导致长交互历史维护成本高昂的问题。现有上下文压缩方法存在两类缺陷：一是可能丢弃后续动作所需的关键信息，二是将智能体适配到软 token 表示时会损害其原有行为。作者提出 LOHA（Latent Observations, Hard Actions）框架，将工具观察结果编码为潜在表示以压缩上下文，同时保持动作输出为硬 token，从而在降低上下文长度的同时保留动作关键信息与智能体行为一致性。该方法针对软件工程智能体这一高上下文消耗场景，兼顾压缩效率与行为稳定性，对提升长程智能体任务的可行性与经济性具有实际意义。",
+  "tags": [
+    "Agent",
+    "Context Compression",
+    "Software Engineering",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具观察结果占据软件工程智能体上下文的主要部分，是长交互历史成本的核心来源",
+      "现有压缩方法要么丢失后续动作所需信息，要么因软 token 适配而破坏智能体原有行为",
+      "LOHA 通过将观察结果潜在化、动作保持硬 token，实现压缩与行为保真的平衡",
+      "该方法为长程软件工程智能体的上下文管理提供了兼顾效率与稳定性的新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

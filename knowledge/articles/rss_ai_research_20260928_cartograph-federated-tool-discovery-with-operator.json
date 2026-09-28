@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260928-091",
+  "title": "Cartograph: Federated Tool Discovery with Operator-Attested Retrieval for AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.30293",
+  "source_platform": "rss_ai_research",
+  "summary": "Cartograph 是一个面向 AI Agent 的联邦式 MCP（Model Context Protocol）代理，旨在解决工具目录规模增长带来的发现效率问题。传统 MCP 模式下，Agent 需要遍历整个工具目录（O(n) 复杂度）才能找到可用工具，随着连接的工具数量增加，加载所有定义的成本急剧上升。Cartograph 通过将工具发现从 O(n) 目录遍历转变为 O(k) 渐进式披露（progressive disclosure），显著降低了 Agent 的上下文开销。其核心机制包括：由部署运营方生成并签名的 Ed25519 能力卡片（operator-attested capability cards），实现工具描述的可信认证；联邦式代理架构，支持跨多个工具目录的分布式发现；以及渐进式披露策略，让 Agent 按需逐层获取工具信息而非一次性加载全部定义。该工作值得关注的原因在于：MCP 正成为 AI Agent 工具调用的重要标准，而工具规模膨胀是实际部署中的关键瓶颈；Cartograph 提出的签名认证与联邦发现机制，为构建安全、可扩展的 Agent 工具生态提供了新思路",
+  "tags": [
+    "MCP",
+    "Agent",
+    "Tool Discovery",
+    "Federated",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCP 工具目录增长导致 O(n) 遍历成本成为 Agent 扩展的核心瓶颈，Cartograph 通过渐进式披露将其降为 O(k)",
+      "Ed25519 签名的 operator-attested 能力卡片为工具描述提供了可验证的信任基础，有助于防止恶意或伪造工具注入",
+      "联邦式代理架构支持跨多个工具目录的分布式发现，适合大规模、多运营方的 Agent 工具生态",
+      "该方案将工具发现从一次性全量加载转变为按需分层获取，可显著降低 Agent 的上下文窗口占用"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

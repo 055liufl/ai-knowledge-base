@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260928-098",
+  "title": "Strategic Self-Consistency",
+  "source_url": "https://arxiv.org/abs/2609.30352",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并研究了「Strategic Self-Consistency」问题，揭示了当前大语言模型推理增强技术 self-consistency 中存在的激励扭曲风险。Self-consistency 通过生成多条推理路径并进行多数投票来提升模型推理准确率，已成为主流推理增强手段。然而，由于模型服务商通常按生成的推理路径数量向用户计费，服务商存在人为增加路径数量的财务动机。论文指出，不诚信的服务商可以在用户不知情的情况下，通过策略性地操控路径生成过程或投票机制，在不真正提升推理质量的前提下增加计费路径数，甚至可能影响最终答案的选择。该研究从机制设计与激励对齐的角度，对 self-consistency 这一广泛使用的推理范式提出了重要的安全性、可信性与经济性警示，提醒研究者和开发者在采用多路径投票方案时需关注服务商行为与计费透明度问题。",
+  "tags": [
+    "LLM",
+    "Self-Consistency",
+    "推理增强",
+    "AI安全",
+    "激励机制"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:36:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Self-consistency 的按路径计费模式为服务商提供了人为增加推理路径数量的财务激励，可能导致用户成本上升而推理质量未提升。",
+      "不诚信的服务商可以策略性地操控多路径生成或投票过程，在不被用户察觉的情况下影响最终答案或虚增计费。",
+      "该研究揭示了推理增强技术中算法机制与商业激励之间的潜在冲突，呼吁建立更透明的计费与验证机制。",
+      "对于依赖 self-consistency 的应用，需警惕服务商行为对结果可信度和成本控制的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

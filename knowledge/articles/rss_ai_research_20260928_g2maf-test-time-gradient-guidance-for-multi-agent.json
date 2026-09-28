@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-072",
+  "title": "G2MAF: Test-Time Gradient Guidance for Multi-Agent Flow Policies",
+  "source_url": "https://arxiv.org/abs/2609.31286",
+  "source_platform": "rss_ai_research",
+  "summary": "G2MAF 提出了一种面向离线多智能体强化学习（MARL）的测试时梯度引导方法，旨在解决部署阶段策略冻结导致的次优联合动作问题。传统离线 MARL 从固定数据集中学习协作策略后，策略参数在部署时被冻结，通常只生成单一联合动作并直接执行，这种一次性决策容易陷入次优解，即使行为数据中存在更优的邻近替代方案也无法利用。G2MAF 的核心思路是在测试时引入梯度引导机制，对多智能体流策略（flow policies）的生成过程进行动态调整，使部署阶段能够在不与环境交互、不更新策略参数的前提下，探索并选择更优的联合动作。该方法将流匹配/扩散式生成模型与多智能体协作相结合，通过测试时优化提升决策质量，为离线 MARL 的部署鲁棒性和性能上限提供了新思路。其价值在于打破了\"训练后冻结\"的传统范式，在推理阶段以极低代价换取策略改进，对机器人协作、自动驾驶车队、多智能体游戏等需要离线训练后稳定部署的场景具有实际意义。",
+  "tags": [
+    "MARL",
+    "Offline RL",
+    "Flow Matching",
+    "Test-Time Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离线 MARL 部署时策略冻结导致一次性联合动作决策易陷入次优，即使数据中存在更优邻近方案也无法利用",
+      "G2MAF 在测试时对多智能体流策略施加梯度引导，无需环境交互或参数更新即可优化联合动作生成",
+      "将流生成模型与多智能体协作结合，为离线策略部署提供了推理阶段动态改进的新范式",
+      "该方法有望提升机器人协作、自动驾驶等离线训练场景下的部署鲁棒性与决策质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

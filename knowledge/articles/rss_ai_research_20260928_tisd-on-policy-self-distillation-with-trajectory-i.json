@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-037",
+  "title": "TISD: On-Policy Self-Distillation with Trajectory Intervention",
+  "source_url": "https://arxiv.org/abs/2609.30878",
+  "source_platform": "rss_ai_research",
+  "summary": "TISD（Trajectory Intervention Self-Distillation）提出了一种改进的在线策略自蒸馏（On-Policy Self-Distillation, OPSD）方法，旨在解决传统 OPSD 中教师模型监督信号仅覆盖学生采样轨迹的问题。在 OPSD 中，当特权教师模型在某个已访问前缀处偏好一个替代动作时，虽然可以为该分支决策提供目标，但无法监督由该动作引发的后续上下文，除非学生模型恰好采样到该动作。这造成了训练时的数据收集瓶颈。TISD 通过轨迹干预（Trajectory Intervention）机制，主动在关键分支点注入教师偏好的动作，从而扩展监督范围，覆盖更多由教师引导的后续状态。该方法有望提升自蒸馏训练的效率和策略质量，尤其适用于需要密集教师信号的大语言模型对齐与推理任务。该工作为在线蒸馏中的探索与利用平衡提供了新思路，值得关注。",
+  "tags": [
+    "Self-Distillation",
+    "On-Policy Learning",
+    "LLM Training",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 OPSD 仅能监督学生采样到的轨迹，导致教师偏好的替代动作后续上下文无法被有效利用，形成数据收集瓶颈。",
+      "TISD 通过轨迹干预主动在关键分支点注入教师动作，扩展监督信号覆盖范围，提升训练效率。",
+      "该方法为在线自蒸馏中的探索与利用平衡提供了新思路，可能推动更高效的 LLM 对齐与推理训练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

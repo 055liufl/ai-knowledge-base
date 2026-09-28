@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-122",
+  "title": "Words Speak Louder Than Order: A Behavioral Evaluation of Gemma 4",
+  "source_url": "https://arxiv.org/abs/2609.30716",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对 Google 预训练的 Gemma 4-e4b 模型进行了行为评估，重点考察当语言模型接收到两份相互冲突的文档时，它如何决定优先采信哪一份。研究采用完全平衡的实验设计，构建了一个包含 13 个条目的行为测试套件，共执行 784 次前向传播，且均处于简短的单轮对话上下文中。核心发现指向一个反直觉的结论：模型更依赖文档的措辞与来源框架（words），而非文档的呈现顺序（order）。这一发现对理解 LLM 在信息冲突场景下的决策机制具有重要意义，尤其关系到 RAG 系统、多源信息融合、以及提示工程中的文档排序策略。如果模型确实更看重措辞而非顺序，那么开发者通过调整文档排列来引导模型输出的传统做法可能效果有限，而应更关注文档的表述方式与来源标注。该工作属于对模型行为的实证研究，样本规模虽小但实验控制严格，为后续更大规模的机制可解释性研究提供了方向。",
+  "tags": [
+    "LLM",
+    "Behavioral Evaluation",
+    "RAG",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:37:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当输入包含冲突文档时，Gemma 4-e4b 更倾向于依据文档的措辞和来源框架来决策，而非文档的呈现顺序。",
+      "该研究采用完全平衡的实验设计，在 13 个测试项上执行了 784 次前向传播，以控制顺序偏差。",
+      "这一行为特征对 RAG 和多源信息融合系统有直接影响：单纯调整文档排序可能不足以引导模型输出。",
+      "研究提示提示工程应更重视文档的表述方式和来源可信度标注，而非位置策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-132",
+  "title": "MOPD-Router: Rethinking Teacher Routing in Multi-Teacher On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.30837",
+  "source_platform": "rss_ai_research",
+  "summary": "MOPD-Router 是一篇针对多教师在线策略蒸馏（Multi-Teacher On-Policy Distillation, MOPD）的学术论文，提出了对教师路由机制的重构思路。传统 MOPD 方法通常依赖提示级别的领域标签，将每个提示硬路由到与其领域匹配的单一教师，并在整个 rollout 过程中固定使用该教师。这种做法存在两个明显局限：一是必须依赖标注数据，无法利用未标注的训练混合数据；二是忽略了其他教师可能提供的互补监督信号。MOPD-Router 的核心创新在于将监督信号的路由从提示级别扩展到整个教师池，从而摆脱对领域标签的依赖，并更充分地利用多教师之间的互补能力。该工作对多教师蒸馏、模型能力整合以及在线策略学习方向具有参考价值，尤其适合关注知识蒸馏、模型融合与训练效率的研究者和工程师。",
+  "tags": [
+    "Distillation",
+    "Multi-Teacher",
+    "On-Policy",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:37:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 MOPD 依赖提示级领域标签进行硬路由，限制了未标注数据的使用和教师间互补信号的挖掘",
+      "MOPD-Router 将监督路由扩展到完整教师池，有望摆脱领域标签依赖并提升蒸馏效果",
+      "该工作为多教师在线策略蒸馏提供了新的路由范式，对模型能力整合与训练效率有潜在影响"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

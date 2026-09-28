@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-064",
+  "title": "SPO: Discovering Adaptive Large Neighborhood Search Operators via Stackelberg Program Optimization",
+  "source_url": "https://arxiv.org/abs/2609.31179",
+  "source_platform": "rss_ai_research",
+  "summary": "SPO（Stackelberg Program Optimization）是一个基于大语言模型（LLM）的框架，用于自动发现自适应的大邻域搜索（LNS）算子。LNS 是一种广泛应用于组合优化问题的元启发式算法，其性能高度依赖于 destroy 和 repair 算子的设计及其相互配合。传统方法通常依赖人工设计或固定策略，难以适应搜索过程中动态变化的状态。SPO 将 destroy 和 repair 算子的生成建模为 Stackelberg 博弈，利用 LLM 生成可执行的程序代码，并根据紧凑的 LNS 状态信息进行条件化决策，从而让算子行为能够随搜索状态动态演化。该工作将 LLM 的程序生成能力与元启发式优化相结合，为自动算法设计提供了新思路，有望减少人工调参成本并提升 LNS 在复杂优化问题上的泛化能力。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Program Synthesis",
+    "Metaheuristics"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LNS 中 destroy-repair 算子的自动发现建模为 Stackelberg 博弈，利用 LLM 生成可执行程序，实现算子行为的自适应。",
+      "通过紧凑的 LNS 状态条件化算子决策，使搜索策略能够随优化过程动态调整，而非依赖固定规则。",
+      "该框架展示了 LLM 在组合优化算法自动设计中的潜力，为元启发式算法的自动化提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

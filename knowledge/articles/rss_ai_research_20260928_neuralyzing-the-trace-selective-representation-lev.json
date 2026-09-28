@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-053",
+  "title": "Neuralyzing the Trace: Selective Representation-Level Unlearning with Contrastive Sparse Autoencoders",
+  "source_url": "https://arxiv.org/abs/2609.31056",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「对比稀疏自编码器」（Contrastive Sparse Autoencoders）的表示层选择性遗忘方法，用于解决机器遗忘中目标信息过于狭窄（如仅涉及单个人物的隐私数据）时行为层面遗忘不足的问题。传统机器遗忘方法主要关注模型输出行为的改变，但在 GDPR 等真实隐私合规场景下，目标信息往往非常局部，仅靠行为遗忘无法保证内部表示中相关信息的真正移除。该工作借助机械可解释性工具，通过稀疏自编码器提取模型内部特征，并引入对比机制增强对目标信息的可选择性，从而在表示层面实现精准干预。其核心价值在于将机器遗忘从行为层面推进到表示层面，为隐私保护、模型安全与可控性提供了更细粒度的技术路径，同时揭示了标准机械可解释性提取器在狭窄目标上选择性不足的局限。",
+  "tags": [
+    "Machine Unlearning",
+    "Sparse Autoencoder",
+    "Interpretability",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "行为层面的遗忘不足以应对 GDPR 等场景下的狭窄隐私目标，需要在内部表示层面进行干预",
+      "标准机械可解释性提取器对狭窄目标的选择性较差，难以直接用于精准遗忘",
+      "对比稀疏自编码器通过对比机制增强表示层特征的选择性，实现更精准的遗忘",
+      "该工作将机器遗忘与机械可解释性结合，为隐私合规和模型可控性提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

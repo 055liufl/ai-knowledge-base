@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-099",
+  "title": "Cost-Aware Best-LLM Identification using Dueling Feedback",
+  "source_url": "https://arxiv.org/abs/2609.30360",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并分析了一种多臂老虎机（MAB）的变体问题，旨在从一组查询成本异构的大语言模型（LLM）中识别出最佳模型。该问题受到实际场景的启发：不同 LLM 的调用成本差异显著，而传统的 MAB 方法通常假设所有臂的采样成本相同。作者引入两个关键要素：（1）对抗反馈（dueling feedback），即通过模型响应之间的成对比较获得稳健的偏好信号，而非直接获取绝对奖励；（2）异构采样成本，反映不同 LLM 查询代价的差异。在假设存在 Condorcet 赢家（即某个模型在成对比较中胜率最高）的前提下，论文对该问题进行了形式化建模与分析。该研究值得关注，因为它将成本感知与偏好反馈结合，为在资源受限条件下高效选择最佳 LLM 提供了理论框架，对模型路由、模型评估和成本优化等实际应用具有指导意义。",
+  "tags": [
+    "LLM",
+    "Multi-Armed Bandit",
+    "Model Selection",
+    "Cost-Aware"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:36:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将最佳 LLM 识别问题建模为具有对抗反馈和异构采样成本的多臂老虎机变体，更贴近实际部署场景。",
+      "对抗反馈通过成对比较提供稳健的偏好信号，避免了对绝对奖励的依赖。",
+      "异构采样成本反映了不同 LLM 查询代价的差异，要求算法在探索与成本之间进行权衡。",
+      "在 Condorcet 赢家假设下进行理论分析，为成本感知的模型选择提供了性能保证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-005",
+  "title": "Stealth Apart, Harm Together: Skill Cascading Attacks on Skill-Based Agent Systems",
+  "source_url": "https://arxiv.org/abs/2609.30383",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对基于技能的智能体系统（Skill-Based Agent Systems）的新型安全威胁——技能级联攻击（Skill Cascading Attacks）。在这类系统中，技能是以自然语言指令、可执行脚本和参考资源组成的模块化包，智能体可在运行时动态加载以扩展能力。这种开放生态虽然带来了第三方能力的灵活复用，但也引入了新的攻击面。以往研究主要关注单个技能内部的漏洞，而本文首次系统性地揭示了多个看似无害的技能在组合使用时可能产生协同危害的现象，即\"单独隐蔽、组合致害\"。攻击者可以将恶意意图拆分到多个独立技能中，每个技能单独审查时均无异常，但一旦被智能体按特定顺序或组合调用，便会触发级联效应，造成数据泄露、越权操作或系统破坏等严重后果。该研究对于智能体安全、供应链安全和技能市场治理具有重要意义，提醒开发者和平台方需要从单一技能审查转向组合行为分析与运行时监控。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Skill Ecosystem",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于技能的智能体系统存在新的组合攻击面：多个独立无害的技能可被串联利用，产生级联危害。",
+      "传统针对单个技能的漏洞审查无法防御此类攻击，需要引入跨技能的组合行为分析与运行时监控。",
+      "技能生态的开放性在提升能力复用效率的同时，也放大了供应链式安全风险，平台治理需从技能级转向系统级。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-114",
+  "title": "MedTokenBudget: Lesion-Preserving Token Routing for Dermoscopic Image Classification",
+  "source_url": "https://arxiv.org/abs/2609.30613",
+  "source_platform": "rss_ai_research",
+  "summary": "MedTokenBudget 是一篇针对皮肤镜图像分类的论文，提出了一种病灶保留的 token 路由框架。现有基于 Vision Transformer 的皮肤镜分类器通常对所有图像块进行均匀处理，但诊断证据主要集中在病灶区域。现有的 token 剪枝方法多依赖通用显著性或不相似度信号，很少验证保留的 token 子集是否仍包含病灶。MedTokenBudget 是一种有监督的后骨干 token 路由框架，通过学习构建紧凑的、病灶增强的 token 子集，从而在减少计算量的同时保留关键诊断信息。该工作值得关注，因为它将医学先验（病灶区域）显式融入 token 选择过程，有望提升皮肤镜分类的准确率与效率，并为医学图像分析中的 token 剪枝提供新思路。",
+  "tags": [
+    "Vision Transformer",
+    "Token Pruning",
+    "Medical Imaging",
+    "Dermoscopy"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:37:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 token 剪枝方法忽略病灶保留问题，可能丢弃关键诊断信息。",
+      "MedTokenBudget 通过有监督学习构建病灶增强的紧凑 token 子集。",
+      "该方法在皮肤镜图像分类中平衡了计算效率与诊断准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-046",
+  "title": "FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models",
+  "source_url": "https://arxiv.org/abs/2609.30954",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对多语言大语言模型中的首token语言身份决策机制进行了端到端的结构性电路分析。研究覆盖六个模型架构、四个模型家族（GPT-2、BLOOM-560M、Pythia-1B/2.8B、Qwen2.5-1.5B Base/Instruct），采用Edge Attribution Patching（EAP）结合FP16主动钳制技术，定位并验证了负责首token语言广播的\"First-token Broadcasters\"和语言身份头电路。这项工作值得关注，因为它首次系统性地揭示了多语言模型在生成早期如何因果性地决定目标语言，填补了多语言生成控制机制的可解释性空白。其方法论创新在于将电路分析扩展到跨架构、跨规模、跨训练阶段（Base vs Instruct）的对比验证，为理解多语言模型的内部语言路由提供了可复用的分析框架。该研究对模型可解释性、多语言能力调控以及潜在的语言偏见干预具有重要价值，也为后续的模型编辑与安全对齐提供了电路级别的操作靶点。",
+  "tags": [
+    "Interpretability",
+    "Multilingual",
+    "Circuit Analysis",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多语言模型在生成首token时即已确定目标语言身份，该决策由特定的注意力头电路因果性控制。",
+      "Edge Attribution Patching结合FP16主动钳制可有效定位跨模型家族的语言身份广播电路。",
+      "不同架构、规模和训练阶段（Base/Instruct）的模型共享类似的首token语言决策机制，但电路细节存在差异。",
+      "该电路级发现为多语言模型的干预、编辑与偏见缓解提供了可操作的内部靶点。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

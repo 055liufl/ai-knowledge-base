@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-078",
+  "title": "Segment-Level Agentic Topic Modeling for Improved Data Exploration and Resource Efficiency",
+  "source_url": "https://arxiv.org/abs/2609.31460",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Segment-Level Agentic Topic Modeling”的新方法，旨在改进数据探索并提升资源效率。传统主题建模算法（如LDA）虽能发现文档中的隐藏主题，但生成的主题往往缺乏可读性。近期基于大语言模型（LLM）的主题建模方法通过提示LLM生成主题并分配给文档，能产生更自然、人类可读的主题，但这类方法通常以整篇文档为处理单元，导致计算成本高且难以捕捉文档内部的主题变化。该研究引入分段级（segment-level）的智能体（agentic）主题建模框架，将文档切分为语义连贯的片段，并利用LLM智能体对每个片段独立进行主题生成与分配。这种方法不仅提高了主题的细粒度和可解释性，还通过减少不必要的LLM调用显著降低了资源消耗。实验表明，该方法在多个数据集上优于现有基线，在主题质量和计算效率之间取得了更好的平衡。该工作对于需要大规模文本分析的应用场景（如学术文献挖掘、商业情报分析）具有重要价值，为LLM时代的高效主题建模提供了新思路。",
+  "tags": [
+    "Topic Modeling",
+    "LLM",
+    "Agent",
+    "Data Exploration"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分段级处理能捕捉文档内部的主题变化，生成更细粒度的主题",
+      "智能体框架通过按需调用LLM，显著降低计算资源消耗",
+      "在主题质量和资源效率之间实现了优于现有方法的平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

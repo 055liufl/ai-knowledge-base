@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260928-036",
+  "title": "SkillEvoReg: Regularizing Agent Skill Evolution Against Overfitting",
+  "source_url": "https://arxiv.org/abs/2609.30861",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillEvoReg 是一篇针对语言模型智能体（Agent）技能演化过拟合问题的研究论文。随着 LLM Agent 越来越多地通过将执行经验转化为可复用的外部技能来提升能力，反复的技能更新本身构成了一种独立的学习过程。然而，这种演化存在两个核心风险：一是局部有用的编辑会逐渐累积成冗余或过度任务特定的指令，二是新的更新可能破坏此前已经有效的智能体行为。作者将这一问题定义为「技能演化过拟合」（skill-evolution overfitting），并提出 SkillEvoReg 这一通用正则化框架来缓解该问题。该工作值得关注的原因在于，它首次系统性地将 Agent 技能库的持续更新视为一个需要正则化约束的学习过程，而非简单的经验累积，为构建稳定、可持续进化的 Agent 系统提供了新的理论视角与方法论。对于正在构建具备长期记忆与技能积累能力的 Agent 系统的开发者而言，该研究直接关系到技能库的可维护性与泛化能力，具有较高的实践指导价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Skill Evolution",
+    "Regularization",
+    "Overfitting"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 技能的反复更新本质上是一种独立的学习过程，会像模型训练一样出现过拟合现象，表现为冗余指令累积和旧行为被破坏。",
+      "SkillEvoReg 将技能演化过拟合形式化为可正则化的问题，提出通用框架来约束技能更新的方向与幅度。",
+      "该研究提示 Agent 系统的技能库管理需要引入类似机器学习中的正则化机制，以平衡新经验吸收与已有能力保持。",
+      "技能演化过拟合问题对长期运行的 Agent 系统尤为关键，直接影响其泛化性与行为稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

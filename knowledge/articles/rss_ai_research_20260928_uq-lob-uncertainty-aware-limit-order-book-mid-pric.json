@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-081",
+  "title": "UQ-LOB: Uncertainty-Aware Limit Order Book Mid-Price Forecasting",
+  "source_url": "https://arxiv.org/abs/2609.31491",
+  "source_platform": "rss_ai_research",
+  "summary": "UQ-LOB 是一篇关于限价订单簿（Limit Order Book, LOB）中间价预测的研究工作，核心创新在于引入不确定性量化（Uncertainty Quantification）机制。传统深度 LOB 预测模型多为点预测器，只输出价格方向或位移，无法告知交易者哪些预测可信。UQ-LOB 提出了一个轻量级、与编码器无关的不确定性量化模块，可附加到任意预训练的 LOB 编码器上，借鉴 attentive neural processes 的思想，为每个预测提供置信度估计。该工作对算法交易领域具有重要意义：在高频交易场景中，知道'何时不该交易'与'预测方向'同样关键，不确定性感知能帮助风控与仓位管理。其编码器无关的设计也提升了实用性，可兼容现有各类 LOB 模型架构。",
+  "tags": [
+    "Uncertainty Quantification",
+    "Limit Order Book",
+    "Financial Forecasting",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有深度 LOB 预测器多为点预测，缺乏对预测可信度的指示，限制了实际交易中的风控应用",
+      "UQ-LOB 采用编码器无关的轻量级设计，可即插即用地附加到任意预训练 LOB 编码器上",
+      "借鉴 attentive neural processes 思想实现不确定性建模，为算法交易提供置信度信号",
+      "不确定性感知对高频交易的风控与仓位管理具有实际价值，可辅助判断何时不宜交易"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-086",
+  "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
+  "source_url": "https://arxiv.org/abs/2609.31619",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种自监督置信度训练方法，旨在提升推理模型的推理效率，而无需显式学习停止或使用长度惩罚。推理模型常生成冗长的推理轨迹，导致推理计算成本高昂。现有方法要么在推理时采用早停机制，要么在训练中通过强化学习加长度惩罚来鼓励更短的推理。本文表明，通过一种不同的监督方式——自监督置信度训练，可以显著提升效率。该方法让模型学习预测自身推理步骤的置信度，从而在推理过程中自然实现早停，而无需显式训练停止行为。这一发现为降低推理成本提供了新思路，有望在不牺牲准确率的前提下大幅减少计算开销，对部署大规模推理模型具有重要实用价值。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Efficiency",
+    "Self-Supervised"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自监督置信度训练可让模型隐式学会何时停止推理，无需显式停止训练或长度惩罚。",
+      "该方法在提升推理效率的同时，可能保持甚至提升模型准确率。",
+      "为降低推理模型的计算成本提供了新的监督信号视角，区别于传统的早停或强化学习长度惩罚。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

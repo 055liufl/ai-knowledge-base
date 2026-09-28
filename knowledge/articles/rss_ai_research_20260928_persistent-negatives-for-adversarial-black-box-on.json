@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-134",
+  "title": "Persistent Negatives for Adversarial Black-Box On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.30864",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对黑盒在线策略蒸馏（Black-box On-Policy Distillation, OPD）的对抗性蒸馏方法，旨在解决当教师模型仅提供采样响应而不提供 token 概率时，如何利用学生模型自身生成结果进行改进的问题。现有对抗蒸馏方法通过训练一个判别器来区分教师与学生响应，并将判别器得分作为策略奖励。然而，该方法存在一个关键缺陷：每步从最新学生模型采样负样本会导致奖励信号与负样本分布耦合，从而引发训练不稳定和奖励偏差。本文提出“持久负样本”（Persistent Negatives）机制，通过维护一个历史负样本缓冲区或固定负样本集，打破这种耦合，使判别器能够更稳定地评估学生响应质量。该方法在多个基准上验证了其有效性，提升了黑盒蒸馏的稳定性和最终性能。该工作值得关注，因为它为在无法访问教师模型内部概率的受限场景下进行高效知识蒸馏提供了新思路，对模型压缩、隐私保护及 API 限制下的模型改进具有实际意义。",
+  "tags": [
+    "知识蒸馏",
+    "对抗训练",
+    "黑盒优化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:37:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒在线策略蒸馏中，教师仅提供采样响应，对抗蒸馏利用判别器得分作为奖励是一种可行方案。",
+      "每步从最新学生采样负样本会导致奖励与负样本分布耦合，引发训练不稳定和偏差。",
+      "持久负样本机制通过解耦负样本分布与当前策略，提升了对抗蒸馏的稳定性和性能。",
+      "该方法为无法访问教师概率的蒸馏场景提供了新的解决思路，具有实际应用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

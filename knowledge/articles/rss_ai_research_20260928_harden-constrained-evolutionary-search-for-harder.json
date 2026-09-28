@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-016",
+  "title": "HARDEN: Constrained Evolutionary Search for Harder, Answer-Preserving Evaluation Cases",
+  "source_url": "https://arxiv.org/abs/2609.30571",
+  "source_platform": "rss_ai_research",
+  "summary": "HARDEN 是一种面向语言模型评测的约束进化搜索方法，旨在解决现有基准测试无法充分反映企业级部署复杂性的问题。其核心思路是：在不改变评测用例预期输出的前提下，对输入进行演化改造，生成难度更高但答案保持不变的变体。HARDEN 沿着自动生成的领域特定复杂度轴进行搜索，同时施加可行性约束，例如保持任务语义不变、维持输入的真实性与合理性。这一方法的价值在于：传统基准往往被模型逐渐饱和，难以区分真实能力差异；而人工构造困难样本成本高、覆盖面有限。HARDEN 通过自动化、可控的难度提升，能够在不重新标注答案的情况下复用现有评测集，从而以较低成本获得更具区分度的评测信号，尤其适用于企业场景下的鲁棒性与泛化能力评估。它也为评测数据增强、对抗性测试以及模型能力边界探测提供了可扩展的方法论框架。",
+  "tags": [
+    "Evaluation",
+    "Evolutionary Search",
+    "Benchmark",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HARDEN 通过约束进化搜索在保持答案不变的前提下提升评测用例难度，实现评测集的自动化增强。",
+      "该方法沿领域特定复杂度轴搜索，并施加语义保持与真实性等可行性约束，兼顾难度与有效性。",
+      "相比人工构造困难样本，HARDEN 可低成本复用现有基准，缓解评测饱和问题。",
+      "其目标场景是企业级部署，强调对模型鲁棒性与泛化能力的更真实评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

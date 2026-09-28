@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-076",
+  "title": "Completed Pairs Hide Capped Failures: A ReVerPi Case Study of Selective Context Projection",
+  "source_url": "https://arxiv.org/abs/2609.31381",
+  "source_platform": "rss_ai_research",
+  "summary": "本文以 ReVerPi（一个 Pi 扩展）为案例，研究了「上下文投影」（Context Projection）这一技术：用紧凑、可寻址的摘录替换较早的工具观察结果，以减少重复输入，但可能增加证据检索轮次。作者通过 86 次运行、641 次模型请求的源码阅读实验，对比了完整延续与投影延续两种模式。结果显示，15 对完成的运行中两种模式成功率完全相同（各 12/15），看似投影没有损失性能；但另有 12 次边界运行出现停止，揭示出「完成对」掩盖了被截断的失败案例。该研究提醒我们：在评估上下文压缩/投影策略时，仅看成功完成的样本会产生幸存者偏差，必须把中途失败、边界停止的运行纳入统计，否则会高估压缩技术的可靠性。对于构建长上下文 Agent、工具调用系统与上下文管理机制的开发者而言，这是一份关于评测方法论的重要警示。",
+  "tags": [
+    "Context Management",
+    "Agent",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文投影用紧凑摘录替代旧工具观察，可减少重复输入，但可能引入额外的证据检索轮次。",
+      "仅统计「完成对」会掩盖被截断的失败：15 对完成运行成功率相同（各 12/15），但 12 次边界运行停止未被计入。",
+      "评估上下文压缩策略时必须纳入中途失败与边界停止样本，否则会因幸存者偏差高估其可靠性。",
+      "ReVerPi 的匹配式全量/投影延续设计为上下文投影的因果对比提供了可复用的实验范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

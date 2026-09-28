@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260928-094",
+  "title": "Bootstrapping Conversational Recommendation Agents At Spotify: Synthetic Data Generation and Self-Improvement Loops",
+  "source_url": "https://arxiv.org/abs/2609.30297",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 Spotify 在构建对话式推荐代理（Conversational Recommendation Agents）时面临的冷启动挑战，并提出了一套基于合成数据生成与自我改进循环的解决方案。对话式推荐代理允许用户通过自然语言表达复杂意图（如“推荐我没听过的意大利独立音乐人”），其核心难点在于代理规划（agent planning）——即如何选择、排序和调用工具。在缺乏真实用户交互数据的冷启动阶段，Spotify 通过合成数据生成来模拟用户对话，并设计自我改进循环让代理在迭代中优化规划策略。该工作值得关注，因为它展示了工业级推荐系统如何结合 LLM 代理与合成数据技术，解决实际部署中的数据稀缺问题，为对话式推荐系统的落地提供了可复用的工程范式。",
+  "tags": [
+    "Conversational Recommendation",
+    "Agent",
+    "Synthetic Data",
+    "LLM",
+    "Cold-Start"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:36:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对话式推荐代理的核心挑战是工具选择与调用的规划优化，而非单纯的推荐算法。",
+      "合成数据生成可有效缓解冷启动阶段真实用户交互数据不足的问题。",
+      "自我改进循环让代理在迭代中自主优化规划策略，减少对人工标注的依赖。",
+      "Spotify 的工业实践为对话式推荐系统的规模化部署提供了可参考的工程框架。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

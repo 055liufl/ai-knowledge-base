@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-074",
+  "title": "Mutable Transcripts: Mitigating Context Pollution through Editable Conversation State",
+  "source_url": "https://arxiv.org/abs/2609.31354",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「可变对话记录」（Mutable Transcripts）概念，针对当前 LLM 聊天系统将对话历史视为不可变序列这一设计缺陷。作者指出，真实交互中用户意图是动态演化的，会通过纠正、细化和约束变更不断调整，而静态的对话记录无法反映这种变化，导致「上下文污染」——过时或无关的信息持续留存并影响模型后续输出。该研究通过引入可编辑的对话状态机制，允许对历史轮次进行修改、删除或重构，从而让工作上下文与用户当前意图保持一致。这一工作值得关注，因为它触及了 LLM 应用层一个普遍但长期被忽视的问题：上下文管理不应只是简单的追加式拼接，而应具备状态可编辑性。对于构建长对话、多轮任务型 Agent 以及需要频繁修正需求的编程助手等场景，该思路具有直接的工程指导意义，也为 RAG、记忆系统和上下文压缩等方向提供了新的设计视角。",
+  "tags": [
+    "LLM",
+    "Context Management",
+    "Conversation State",
+    "Agent Memory"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:35:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 LLM 聊天系统将对话历史视为不可变序列，与用户动态演化的真实意图存在根本性错配。",
+      "静态对话记录会导致「上下文污染」，使过时或无关信息持续干扰模型输出。",
+      "可编辑的对话状态（Mutable Transcripts）为缓解上下文污染提供了新思路，允许对历史轮次进行修正与重构。",
+      "该方向对长对话、多轮 Agent 和记忆系统设计具有直接启发，上下文管理应从追加式转向可编辑式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

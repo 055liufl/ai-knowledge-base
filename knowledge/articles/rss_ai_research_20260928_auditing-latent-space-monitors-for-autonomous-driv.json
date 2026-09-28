@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-110",
+  "title": "Auditing Latent-Space Monitors for Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2609.30557",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对自动驾驶领域中基于模型内部表征的运行时故障监控策略进行了系统性审计。研究覆盖两个典型任务：使用 LaneSegNet 的在线矢量化地图生成，以及使用 VAD 的端到端规划。作者发现，在这两个任务中，帧级别的错误在推理阶段都是可预测的。具体而言，对于 LaneSegNet，一个监督式潜在空间探针（latent probe）在预测高误差帧时达到了 0.780 的 AUROC（接收者操作特征曲线下面积）。这项工作的重要性在于，它验证了「潜在空间监控器」作为自动驾驶安全机制的有效性，即无需依赖外部传感器冗余或事后检测，而是直接利用模型自身的内部表示来提前预判失败。这为构建更可靠、可解释的自动驾驶系统提供了实证基础，同时也提示了潜在空间监控的局限性与审计必要性，对安全关键型 AI 系统的部署具有参考价值。",
+  "tags": [
+    "Autonomous Driving",
+    "Failure Prediction",
+    "Latent Space Monitoring",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:36:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "帧级错误在推理阶段可预测，表明模型内部表征蕴含故障信号",
+      "监督式潜在探针在 LaneSegNet 上达到 0.780 AUROC，验证了监控策略的有效性",
+      "该审计方法可推广至端到端规划等不同自动驾驶任务",
+      "潜在空间监控为安全关键系统提供了无需外部冗余的故障预判途径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260928-026",
+  "title": "Backbone-Adaptive Evidence Routing for Robust Pairwise LLM Judging",
+  "source_url": "https://arxiv.org/abs/2609.30751",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Backbone-Adaptive Evidence Routing（BAER）方法，用于提升成对 LLM 评判（pairwise LLM judging）的鲁棒性。现有成对评判协议包括直接比较、推理式判断和基于参考的验证，但没有任何单一协议能在所有基准和评判模型骨干上表现最优。BAER 的核心思想是动态适配证据机制，同时保持候选对称性——即交换两个回答可能反转偏好方向，但不会改变偏好强度。该方法将每个专家的带符号偏好进行分离处理，从而实现更稳定、更一致的评判结果。该工作值得关注的原因在于：随着 LLM-as-a-Judge 在模型评估、RLHF 奖励建模和排行榜构建中的广泛应用，评判协议的偏差与不稳定性已成为关键瓶颈。BAER 通过自适应路由机制缓解了单一协议在不同骨干模型上的性能波动问题，为构建更可靠的自动化评估系统提供了新思路，对模型评测、对齐研究和智能体决策等场景具有实用价值。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "Pairwise Comparison",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:33:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不存在适用于所有基准和评判骨干的单一证据协议，自适应路由是提升评判鲁棒性的关键。",
+      "保持候选对称性（交换回答只反转偏好方向、不改变强度）是评判协议设计的重要约束。",
+      "通过分离各专家的带符号偏好，BAER 能够整合多种证据机制并降低骨干模型差异带来的波动。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

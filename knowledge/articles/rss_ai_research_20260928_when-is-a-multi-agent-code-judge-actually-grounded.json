@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260928-003",
+  "title": "When Is a Multi-Agent Code Judge Actually Grounded? Two Label-Free Measurements, and a Judge That Declines to Guess",
+  "source_url": "https://arxiv.org/abs/2609.30328",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对多智能体代码评判（Multi-Agent Code Judge）的可靠性问题展开研究。作者指出，当一个大语言模型评判另一模型生成的代码是否正确时，它往往不会报告证据缺失，而是给出带有推理过程的自信结论，这种结论与有充分依据的结论在表面上难以区分。多智能体验证通过将判断分解为可核查的声明并逐一对照证据验证，在检索文档类证据场景下表现良好，但在代码评判场景中其有效性存疑。论文提出两种无需标签（label-free）的度量方法来评估多智能体代码评判是否真正“有据可依”（grounded），并设计了一个在证据不足时主动拒绝猜测（declines to guess）的评判器。该工作值得关注，因为它直击 LLM 作为代码评判者时的过度自信与幻觉问题，为构建更可信、可校准的自动化代码评估系统提供了可量化的诊断工具与设计思路，对依赖 LLM 进行代码审查、评测与强化学习奖励建模的研究者和工程师具有重要参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "Code Evaluation",
+    "LLM-as-Judge",
+    "Uncertainty",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:32:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 代码评判器在缺乏证据时不会报告不确定性，而是输出与有据结论难以区分的自信判断，这是多智能体验证需要解决的核心问题。",
+      "多智能体验证在检索文档场景下有效，但直接迁移到代码正确性评判时其 grounding 能力需要重新审视。",
+      "论文提出两种无需人工标签的度量方法，可量化评估多智能体代码评判是否真正基于证据。",
+      "设计出在证据不足时主动拒绝给出判断的评判器，为构建更可信的自动化代码评估系统提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

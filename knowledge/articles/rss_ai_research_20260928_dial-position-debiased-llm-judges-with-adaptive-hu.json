@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260928-069",
+  "title": "DIAL: Position-Debiased LLM Judges with Adaptive Human Preference Calibration",
+  "source_url": "https://arxiv.org/abs/2609.31215",
+  "source_platform": "rss_ai_research",
+  "summary": "DIAL 是一个针对 LLM-as-a-Judge 评估范式的偏差校正框架，旨在解决自动评估中两个关键问题：位置偏差（response order 导致的判断不一致）以及与人类偏好之间的系统性分歧。该工作提出统一框架，将大量 LLM 对比数据与有限的人类对比数据相结合，从而分离出评判模型特有的位置效应，学习去位置偏差后 LLM 偏好中的共享结构，并在此基础上进行自适应的人类偏好校准。其核心价值在于：随着 LLM 作为评估者被广泛用于模型对齐、RLHF 奖励建模和基准测试，评判偏差会直接放大为训练信号偏差，影响模型迭代方向。DIAL 通过统计建模的方式将位置效应与真实偏好解耦，并用少量人类标注进行校准，兼顾了可扩展性与人类对齐性。对于从事 LLM 评估、对齐研究和奖励模型开发的团队而言，该工作提供了一种低成本、可复用的偏差修正思路，有望提升自动评估结果的可信度，减少因评估偏差导致的错误优化。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "Preference Calibration",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-28T16:30:25Z",
+  "collected_at": "2026-09-28T16:34:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 评判者的位置偏差与偏好偏差是两种不同来源的误差，需要分别建模而非简单平均消除",
+      "通过大量 LLM 对比与少量人类对比的联合建模，可以在低人类标注成本下实现偏好校准",
+      "去位置偏差后的 LLM 偏好中存在可学习的共享结构，可用于提升评判一致性",
+      "该框架为 LLM-as-a-Judge 的可信评估提供了统计校准路径，对对齐与奖励建模具有实际意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
