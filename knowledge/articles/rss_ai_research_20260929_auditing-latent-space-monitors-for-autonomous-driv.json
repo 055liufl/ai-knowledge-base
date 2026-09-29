@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-110",
+  "title": "Auditing Latent-Space Monitors for Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2609.30557",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对自动驾驶领域中基于模型内部表征的运行时失效监控策略进行了审计研究。作者针对两个自动驾驶任务——使用 LaneSegNet 的在线矢量化地图生成和使用 VAD 的端到端规划——评估了潜在空间监控器的有效性。研究发现，在这两个任务中，帧级别的错误在推理阶段都是可预测的。对于 LaneSegNet，一个有监督的潜在探针在预测高误差帧时达到了 0.780 的 AUROC 值。这项工作的重要性在于，它验证了利用模型内部表征来提前预警自动驾驶系统失效的可行性，为构建更安全的自动驾驶系统提供了实证基础。该研究属于 AI 安全与自动驾驶交叉领域，对关注模型可解释性、运行时监控和自动驾驶可靠性的研究者具有参考价值。",
+  "tags": [
+    "Autonomous Driving",
+    "Runtime Monitoring",
+    "Latent Space",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:45:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "帧级错误在自动驾驶任务的推理阶段是可预测的，表明潜在空间监控具有实际可行性",
+      "有监督潜在探针在 LaneSegNet 上达到 0.780 AUROC，能有效识别高误差帧",
+      "该审计方法可跨任务泛化，适用于地图生成和端到端规划两类自动驾驶任务",
+      "利用模型内部表征进行运行时失效预警，为提升自动驾驶安全性提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

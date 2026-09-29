@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-062",
+  "title": "Neural State Prediction: Obstructing Shortcut Learning in EEG Foundation Models",
+  "source_url": "https://arxiv.org/abs/2609.31167",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为神经状态预测（Neural State Prediction, NSP）的新方法，旨在解决脑电图（EEG）基础模型在掩码预测训练中出现的捷径学习问题。当前EEG基础模型广泛采用掩码预测目标从无标签记录中学习表征，但优化该目标并不能保证获得可迁移的神经表征。核心挑战在于，稳定的位置线索和局部相关性使得掩码区域可以在不整合分布式神经上下文的情况下被预测，导致模型依赖低信息量的预测路径。NSP通过潜在预测机制，减少模型对捷径的依赖，从而促进更具泛化性的神经表征学习。该工作对于提升EEG基础模型的迁移能力和神经解码的鲁棒性具有重要意义，尤其适用于脑机接口、神经疾病诊断等下游任务。",
+  "tags": [
+    "EEG",
+    "Foundation Models",
+    "Self-Supervised Learning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EEG基础模型中的掩码预测目标容易导致捷径学习，即模型依赖位置线索和局部相关性而非分布式神经上下文。",
+      "提出的神经状态预测（NSP）方法通过潜在预测机制减少对低信息量预测路径的依赖。",
+      "NSP有望提升EEG基础模型的可迁移性和下游任务性能，如脑机接口和神经疾病诊断。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

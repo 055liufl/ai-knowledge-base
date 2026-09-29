@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-087",
+  "title": "ENAS: An Efficient Hardware-Aware Neural Architecture Search Framework for TinyML on Resource-Constrained Microcontrollers",
+  "source_url": "https://arxiv.org/abs/2609.30272",
+  "source_platform": "rss_ai_research",
+  "summary": "ENAS 是一个面向 TinyML 场景的硬件感知神经架构搜索（NAS）框架，专门针对资源受限的微控制器（MCU）设计。该框架的核心创新包括三点：一是静态可行性检查，在搜索前即排除硬件无法支持的架构，避免无效搜索；二是基于 cell 的搜索空间，支持标准卷积、深度可分离卷积和瓶颈块，并可选配跳跃连接，兼顾表达能力和效率；三是三阶段混合搜索策略（随机搜索 → Top-K 筛选 → 变异优化），并引入跨运行持久化缓存以加速重复搜索。与依赖 GPU 加速的主流 NAS 框架不同，ENAS 强调在无 GPU 环境下运行，降低了硬件门槛。该工作值得关注的原因在于：TinyML 部署正从云端向边缘 MCU 迁移，而 MCU 的算力、内存和功耗约束极为严苛，传统 NAS 方法难以直接适用。ENAS 通过硬件感知的可行性剪枝和轻量化搜索策略，为嵌入式开发者提供了一条自动化设计高效模型的可行路径，有望推动智能传感器、可穿戴设备和工业物联网等场景的模型部署效率。",
+  "tags": [
+    "NAS",
+    "TinyML",
+    "MCU",
+    "Edge AI",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:44:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态可行性检查在搜索前剔除硬件不支持的架构，显著减少无效搜索开销，是面向 MCU 场景的关键设计。",
+      "三阶段混合搜索策略（随机→Top-K→变异）结合持久化缓存，在无 GPU 环境下实现了可接受的搜索效率。",
+      "基于 cell 的搜索空间支持深度可分离卷积和瓶颈块，适配 MCU 的低算力和低内存约束。",
+      "该工作填补了主流 NAS 框架在资源受限微控制器上部署的空白，但实际硬件验证和与 SOTA 的对比仍需进一步评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

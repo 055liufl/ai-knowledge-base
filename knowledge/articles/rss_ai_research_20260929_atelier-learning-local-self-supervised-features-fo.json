@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-015",
+  "title": "Atelier: Learning Local Self-Supervised Features for CryoEM Volumes via Hypernetworks",
+  "source_url": "https://arxiv.org/abs/2609.30569",
+  "source_platform": "rss_ai_research",
+  "summary": "Atelier 提出了一种基于超网络（Hypernetworks）的局部自监督特征学习方法，专门用于冷冻电镜（CryoEM）体积数据的解读。传统深度学习方法通常从固定体素网格中提取特征，难以兼顾空间局部性、跨样本一致性和多尺度信息。而隐式神经表示（INR）虽能以坐标条件函数建模体积数据，具备尺度无关性，但为每个图谱单独拟合 INR 成本过高。Atelier 通过超网络生成 INR 参数，实现跨样本共享与局部特征学习，从而在保持尺度灵活性的同时避免逐样本优化。该方法有望提升 CryoEM 图谱注释的自动化水平，为结构生物学中的大分子定位与识别提供更高效、可迁移的特征表示。其创新点在于将超网络与 INR 结合用于自监督局部特征学习，对冷冻电镜数据分析及更广泛的科学体积数据建模具有参考价值。",
+  "tags": [
+    "CryoEM",
+    "Self-Supervised Learning",
+    "Hypernetworks",
+    "Implicit Neural Representations"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:41:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统固定体素网格方法难以同时满足 CryoEM 特征的空间局部性、跨样本一致性和多尺度需求。",
+      "隐式神经表示（INR）具备尺度无关和坐标条件建模优势，但逐样本拟合成本过高。",
+      "Atelier 利用超网络生成 INR 参数，实现跨样本共享的局部自监督特征学习，避免逐样本优化。",
+      "该方法为 CryoEM 图谱注释提供了更高效、可迁移的特征表示，并可能推广至其他科学体积数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

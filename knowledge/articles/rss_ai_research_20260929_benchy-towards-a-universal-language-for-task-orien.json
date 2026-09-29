@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-012",
+  "title": "Benchy: towards a universal language for task-oriented AI benchmarks",
+  "source_url": "https://arxiv.org/abs/2609.30550",
+  "source_platform": "rss_ai_research",
+  "summary": "Benchy 提出了一种面向任务型 AI 基准测试的通用语义语言与执行引擎。其核心思想是将基准测试形式化为三元组 B=(P,S,D)，即程序、评分函数与数据集，并将基准测试本身与被测 AI 系统解耦，一次运行则表示为 R=(B,AI) 的绑定关系。基准以规范化 YAML 编写，每个语义概念只有一种合法语法，并通过共享的任务/领域/语言本体进行分类，最终被确定性地编译为规范形式。该工作值得关注的原因在于：当前 AI 基准测试生态高度碎片化，不同评测框架的格式、评分逻辑与数据组织方式互不兼容，导致结果难以复现与横向比较。Benchy 试图通过统一的语义层与确定性编译机制，提升基准测试的可复现性、可组合性与可移植性，为任务导向型 AI 评测建立类似“通用语言”的基础设施。若其设计被社区采纳，有望降低基准开发与迁移成本，推动评测标准化，对模型研发、Agent 评测及学术研究均具有潜在影响。",
+  "tags": [
+    "Benchmark",
+    "Evaluation",
+    "AI Infrastructure",
+    "DSL"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:41:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将基准测试形式化为程序、评分函数与数据集的三元组，实现基准与被测 AI 系统的解耦",
+      "采用规范化 YAML 与共享本体，每个语义概念只有一种合法语法，保证基准定义的一致性与可读性",
+      "通过确定性编译生成规范形式，提升基准测试的可复现性与跨平台可移植性",
+      "有望统一碎片化的 AI 评测生态，降低基准开发、迁移与横向比较的成本"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

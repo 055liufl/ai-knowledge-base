@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-107",
+  "title": "PolicyAttention: Softmax Attention Implements Policy Mirror Descent for Closed-Loop Control",
+  "source_url": "https://arxiv.org/abs/2609.30500",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了因果 softmax 注意力机制与策略镜像下降（Policy Mirror Descent, PMD）之间的深层联系。作者指出，负熵策略镜像下降的状态更新形式为 PMD_η(π,Q)=softmax(logπ+ηQ)，这与 softmax 注意力的计算形式高度一致。基于已知的 Q-TD-PMD 递归关系，作者构建了一个固定的因果 softmax 演员-环境-单步评论家协议，并明确给出了演员、路由、采样和归一化等组件。该工作将注意力机制从传统的单步代数恒等式提升为闭环控制中的重复控制器，为理解 Transformer 注意力在强化学习和序列决策中的作用提供了新的理论视角。其价值在于打通了注意力机制与策略优化理论之间的桥梁，可能启发更可解释、更具理论保证的决策模型设计，对强化学习、控制论和序列建模交叉领域的研究者具有重要参考意义。",
+  "tags": [
+    "Attention",
+    "Reinforcement Learning",
+    "Policy Optimization",
+    "Control"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:45:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "因果 softmax 注意力可以解释为策略镜像下降的重复控制器，而不仅是单步代数恒等式。",
+      "负熵策略镜像下降的更新形式 softmax(logπ+ηQ) 与 softmax 注意力计算天然对应。",
+      "基于 Q-TD-PMD 递归构建的固定协议将注意力、演员-评论家与闭环控制统一在一个框架下。",
+      "该理论联系为设计具有策略优化保证的注意力型决策模型提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

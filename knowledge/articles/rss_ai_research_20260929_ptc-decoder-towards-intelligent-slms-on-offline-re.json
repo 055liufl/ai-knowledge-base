@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-034",
+  "title": "PTC-Decoder: Towards Intelligent SLMs on Offline Resource-Constrained Edge Devices",
+  "source_url": "https://arxiv.org/abs/2609.30836",
+  "source_platform": "rss_ai_research",
+  "summary": "PTC-Decoder 是一篇针对离线资源受限边缘设备（如遥感卫星）上小型语言模型（SLM）部署难题的研究工作。论文指出，在缺乏网络连接、算力与内存受限的边缘环境中，SLM 的推理能力有限，难以可靠完成需要复杂工具编排的多步智能体任务。现有 plan-solve 范式依赖提示词强制模型先规划再求解，但作者通过实验发现，弱小的 SLM 几乎完全无视这类提示，无法真正调用规划步骤，导致任务失败。为此，作者提出 PTC-Decoder，旨在让 SLM 在离线边缘设备上具备更智能、更可靠的多步工具调用与任务执行能力。该工作值得关注，因为它直击边缘 AI 与智能体落地的核心矛盾：如何在模型能力弱、资源紧、无云支持的条件下实现复杂任务自动化。若方法有效，将推动卫星遥感、野外监测、工业离线设备等场景的自主智能体应用，并为 SLM 的规划与工具使用能力研究提供新思路。",
+  "tags": [
+    "SLM",
+    "Agent",
+    "Edge AI",
+    "Tool Orchestration"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离线资源受限边缘设备上的 SLM 推理能力不足，难以可靠执行多步工具编排任务。",
+      "现有 plan-solve 范式依赖提示词强制规划，但实验表明弱模型几乎完全无视该提示，无法真正调用计划。",
+      "PTC-Decoder 旨在不依赖云端和强模型的前提下，提升边缘 SLM 的智能规划与工具调用能力。",
+      "该研究对遥感卫星等离线自主智能体场景具有重要应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

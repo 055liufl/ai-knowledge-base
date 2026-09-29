@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-042",
+  "title": "Self-Play Search Distillation for Large Language Model Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.30936",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Self-Play Search Distillation（SPSD）框架，旨在解决大语言模型推理能力提升中高质量训练数据稀缺的问题。传统方法依赖人工标注或低质量合成数据，成本高且难以覆盖复杂决策场景。SPSD 的核心思路是利用类似 MuZero 的神经网络在棋盘游戏中进行自我对弈，通过搜索过程生成超越人类水平的合成数据，再将这些数据蒸馏到 LLM 中，从而提升其推理能力。该工作将强化学习中的自我对弈与搜索机制引入 LLM 数据生成流程，为推理数据合成提供了新范式。其价值在于：一是绕开昂贵的人工标注，二是通过可执行环境保证数据正确性与多样性，三是为将游戏中的搜索式推理迁移到通用语言推理任务提供了可行路径。对研究者而言，该方法展示了自博弈与搜索蒸馏在 LLM 推理训练中的潜力；对开发者而言，可能启发新的数据合成与模型微调工具链。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Self-Play",
+    "Distillation",
+    "MuZero"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SPSD 利用 MuZero 类网络的自我对弈生成超人类合成数据，缓解 LLM 推理训练中的数据稀缺问题。",
+      "通过搜索过程蒸馏出的数据包含困难决策与备选方案，比普通合成数据更具推理训练价值。",
+      "该方法将强化学习中的自博弈与搜索机制迁移到 LLM 数据生成，为通用推理能力提升提供新思路。",
+      "可执行环境保证了合成数据的正确性，但向开放域任务的迁移仍是关键挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

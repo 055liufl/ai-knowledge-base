@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-037",
+  "title": "TISD: On-Policy Self-Distillation with Trajectory Intervention",
+  "source_url": "https://arxiv.org/abs/2609.30878",
+  "source_platform": "rss_ai_research",
+  "summary": "TISD（Trajectory Intervention Self-Distillation）是一种针对在线策略自蒸馏（OPSD）训练瓶颈提出的改进方法。OPSD 通过特权教师模型为学生模型提供密集的监督信号，但其监督仅沿学生实际采样的轨迹进行。当教师模型在某个已访问前缀处偏好一个学生未采样的替代动作时，OPSD 只能监督该分支决策本身，却无法监督该动作所诱导的后续上下文，除非学生恰好采样到该动作。这导致训练时的数据收集瓶颈，并暗示教师-学生交互可以扮演不同角色。TISD 通过轨迹干预机制，主动在关键前缀处引入教师偏好的替代动作，从而扩展监督覆盖范围，缓解采样依赖问题。该工作对提升自蒸馏训练效率、增强策略探索能力具有潜在价值，尤其适用于需要密集监督的复杂决策任务。",
+  "tags": [
+    "Self-Distillation",
+    "On-Policy Learning",
+    "Trajectory Intervention",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "OPSD 的监督信号仅覆盖学生采样到的轨迹，导致教师偏好的替代动作后续上下文无法被监督，形成数据收集瓶颈。",
+      "TISD 通过轨迹干预主动在关键前缀处引入教师偏好的动作，扩展监督范围，缓解采样依赖。",
+      "该工作重新定义了教师-学生在训练中的交互角色，为在线自蒸馏提供了更高效的监督机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

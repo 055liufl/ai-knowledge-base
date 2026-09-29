@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-053",
+  "title": "Neuralyzing the Trace: Selective Representation-Level Unlearning with Contrastive Sparse Autoencoders",
+  "source_url": "https://arxiv.org/abs/2609.31056",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“对比稀疏自编码器”（Contrastive Sparse Autoencoders）的选择性表示层遗忘方法，旨在解决机器遗忘中行为遗忘不足的问题。传统机器遗忘方法主要关注模型输出行为的变化，但在隐私合规（如欧盟GDPR）等场景下，需要移除与特定个人相关的狭窄信息，仅靠行为遗忘可能无法彻底清除内部表示中的残留信息。该研究利用机制可解释性工具，但指出现有提取器对狭窄目标的区分能力较差。为此，作者提出对比稀疏自编码器，通过在表示层面进行选择性干预，实现更精准的遗忘。该方法有望提升遗忘的精确性和鲁棒性，同时保留模型的其他能力。这项工作将机器遗忘与机制可解释性相结合，为隐私保护提供了新思路，对研究者和开发者具有参考价值。",
+  "tags": [
+    "Machine Unlearning",
+    "Sparse Autoencoder",
+    "Interpretability",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "行为遗忘不足以彻底移除模型内部表示中的目标信息，需要表示层干预。",
+      "现有机制可解释性提取器对狭窄遗忘目标的区分能力有限。",
+      "对比稀疏自编码器能够实现选择性的表示层遗忘，提升遗忘精度。",
+      "该方法在隐私合规场景（如GDPR）中具有潜在应用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-017",
+  "title": "T-RoPE: Time-Aware Rotary Position Embedding for Sequential Recommendation",
+  "source_url": "https://arxiv.org/abs/2609.30576",
+  "source_platform": "rss_ai_research",
+  "summary": "T-RoPE 提出了一种面向序列推荐的时间感知旋转位置编码方法。当前大规模推荐系统正借鉴大语言模型的序列生成范式，将 Transformer 引入推荐任务，并沿用了为文本设计的 RoPE 位置编码。然而，在语言模型中 RoPE 编码的是 token 索引以支持相对位置推理，而在推荐场景中，交互索引仅记录事件顺序，无法反映真实的时间间隔、跨会话的行为周期等时间信息。T-RoPE 针对这一错配问题，将时间信息注入旋转位置编码，使模型能够感知用户行为的时间跨度与周期性，从而提升序列推荐的准确性。该工作值得关注，因为它揭示了从 NLP 迁移到推荐系统时位置编码的语义鸿沟，并给出了轻量且可插拔的改进方案，对构建下一代生成式推荐模型具有直接参考价值。",
+  "tags": [
+    "Recommender System",
+    "Position Embedding",
+    "Transformer",
+    "Sequential Recommendation"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:41:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RoPE 在语言模型中编码 token 索引，但在推荐中交互索引仅表示事件顺序，丢失了真实时间间隔与行为周期信息",
+      "T-RoPE 将时间信息融入旋转位置编码，使 Transformer 推荐模型具备时间感知能力",
+      "该工作指出了从 NLP 迁移位置编码到推荐系统时的语义错配问题，为生成式推荐模型的设计提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

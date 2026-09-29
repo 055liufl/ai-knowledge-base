@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-128",
+  "title": "Skip the Talk, Re-Focus on Vision: Latent Reasoning for Reasoning Segmentation in Multimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.30783",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向推理分割（Reasoning Segmentation）任务的潜在推理（Latent Reasoning）方法，旨在解决现有多模态大语言模型（MLLM）依赖显式思维链（CoT）进行推理时产生的注意力干扰问题。推理分割要求模型理解隐式文本查询并实现细粒度视觉感知，对人机交互和具身智能体等应用至关重要。现有方法通常先由 MLLM 生成显式 CoT 文本，再定位目标区域，但作者指出这种显式语言推理会引入大量冗余信息，干扰视觉注意力分配，从而降低分割精度。论文的核心思路是跳过显式语言推理步骤，将推理过程直接嵌入潜在空间，使模型在视觉表征层面完成推理与定位，从而减少文本与视觉模态之间的注意力冲突。该工作值得关注的原因在于：它挑战了当前多模态推理中'先说话再行动'的主流范式，提出了一种更紧凑、更贴近视觉任务的推理路径，可能为多模态推理与感知任务的融合提供新方向，并对具身智能、交互式视觉系统等下游应用产生启发。",
+  "tags": [
+    "Multimodal",
+    "Reasoning Segmentation",
+    "MLLM",
+    "Latent Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:46:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式思维链（CoT）在多模态推理分割中会引入注意力干扰，冗余文本信息反而损害视觉定位精度。",
+      "将推理过程从显式语言空间转移到潜在空间，可避免文本与视觉模态间的注意力冲突，实现更高效的推理分割。",
+      "该工作挑战了'先显式推理再定位'的主流范式，为多模态感知与推理的深度融合提供了新思路。",
+      "潜在推理方法对具身智能体和人机交互等需要细粒度视觉理解的应用具有潜在价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

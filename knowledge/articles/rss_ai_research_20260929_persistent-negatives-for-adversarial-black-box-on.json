@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-134",
+  "title": "Persistent Negatives for Adversarial Black-Box On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.30864",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对黑盒在线策略蒸馏（On-Policy Distillation, OPD）的对抗性蒸馏方法，旨在解决教师模型仅提供采样响应而不提供 token 概率时的学生模型改进问题。传统对抗蒸馏通过训练一个判别器来区分教师和学生的响应，并将判别器得分作为策略奖励。然而，该方法存在一个关键缺陷：在每个训练步骤中从最新学生模型采样负例，会导致学习到的奖励与负例分布紧密耦合，从而引发训练不稳定和奖励偏差。本文提出的 Persistent Negatives 方法通过维护一个持久的负例缓冲区，解耦奖励学习与当前学生策略的即时输出，从而稳定对抗蒸馏过程。该工作对于黑盒模型蒸馏、强化学习与蒸馏结合、以及无需教师概率的模型压缩与迁移具有重要价值，尤其适用于无法访问教师模型内部概率的工业场景。",
+  "tags": [
+    "Distillation",
+    "Adversarial Training",
+    "Black-Box",
+    "On-Policy",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:46:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒在线策略蒸馏中，从最新学生模型采样判别器负例会导致奖励与负例分布耦合，引发训练不稳定。",
+      "提出持久负例（Persistent Negatives）方法，通过维护负例缓冲区解耦奖励学习与当前学生策略。",
+      "该方法在教师仅提供采样响应而无 token 概率的场景下，提升了对抗蒸馏的稳定性和效果。",
+      "适用于无法访问教师模型内部概率的黑盒蒸馏场景，对模型压缩与迁移有实际意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-027",
+  "title": "Selective Amortization of Full-Budget Counterfactual Reasoning for Visual Token Communication",
+  "source_url": "https://arxiv.org/abs/2609.30756",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ACV-Gate，一种用于生成式图像通信中视觉令牌选择的自适应候选评估方法。在生成式图像通信中，发送端需要在有限的数据包预算下选择紧凑的语义令牌，而令牌选择直接影响最终重建质量。然而，准确估计每个候选令牌的终端价值需要接收端反复重建，导致编码端计算开销巨大。ACV-Gate 通过选择性摊销全预算反事实推理来解决这一问题：它并非对每个候选令牌都执行完整的反事实评估，而是自适应地决定何时进行全预算推理、何时使用低成本近似，从而在保持选择质量的同时显著降低计算成本。该工作值得关注，因为它触及了生成式通信与语义令牌传输中的核心效率瓶颈，为资源受限场景下的实时视觉通信提供了新的思路，并可能推动令牌选择、反事实推理与自适应计算交叉领域的研究。",
+  "tags": [
+    "视觉令牌通信",
+    "反事实推理",
+    "自适应计算",
+    "生成式图像通信"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式图像通信中，令牌选择需要估计终端重建价值，但全预算反事实推理计算成本高昂。",
+      "ACV-Gate 通过自适应地选择性摊销全预算反事实推理，在编码端计算效率与令牌选择质量之间取得平衡。",
+      "该方法有望降低接收端反复重建带来的开销，推动实时或资源受限场景下的语义令牌通信。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

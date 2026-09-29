@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-078",
+  "title": "Segment-Level Agentic Topic Modeling for Improved Data Exploration and Resource Efficiency",
+  "source_url": "https://arxiv.org/abs/2609.31460",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向文本数据探索的段落级智能体主题建模方法（Segment-Level Agentic Topic Modeling），旨在解决现有基于大语言模型（LLM）的主题建模方法在资源效率与主题质量之间的权衡问题。传统主题模型（如LDA）虽高效但生成的主题可读性差；而近期基于LLM的主题模型虽能生成更自然、人类可读的主题，却通常需要将整篇文档送入LLM进行推理，导致计算成本高昂、上下文窗口受限，且难以处理长文档。该工作将文档切分为语义段落（segment），并引入智能体（agent）机制，让LLM在段落级别上自主决定是否生成新主题、复用已有主题或合并主题，从而在保持主题可解释性的同时显著降低token消耗与推理开销。该方法有望提升大规模文本语料探索的实用性，使LLM主题建模在真实工业场景中更具可扩展性。其核心价值在于将智能体决策与主题建模流程结合，实现质量与效率的平衡，对数据探索、文本挖掘和LLM应用落地均有参考意义。",
+  "tags": [
+    "Topic Modeling",
+    "LLM",
+    "Agent",
+    "Data Exploration"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:44:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM主题建模方法在文档级别推理，计算成本高且难以扩展，段落级处理可显著降低资源消耗。",
+      "引入智能体机制让LLM自主决定主题的生成、复用与合并，兼顾主题可读性与推理效率。",
+      "该方法面向大规模文本数据探索场景，有望推动LLM主题建模在工业界的实际落地。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-123",
+  "title": "Werracle: Sub-Cent Intra-Block AI Reflex Oracles and Flash-Loan Circuit Breakers for EVM Smart Contracts",
+  "source_url": "https://arxiv.org/abs/2609.30719",
+  "source_platform": "rss_ai_research",
+  "summary": "Werracle 是一篇针对 EVM 智能合约的链上 AI 推理方案研究，旨在解决当前链上 AI 面临的冯·诺依曼内存与延迟瓶颈。传统方法将静态浮点神经网络权重矩阵直接存入 EVM 存储需要消耗数百万 gas，导致链上直接推理不可行；而 ZK-ML 虽将矩阵张量乘法卸载至链下证明者，却带来 10 至 300 秒的 SNARK 证明延迟等致命约束。该工作提出亚分级（sub-cent）区块内 AI 反射预言机（Reflex Oracles）以及面向 EVM 智能合约的闪电贷熔断器（Flash-Loan Circuit Breakers），试图在极低成本与区块内延迟约束下实现可用的链上 AI 推理与风险控制。其价值在于直面链上 AI 部署的经济性与实时性核心矛盾，若方案可行，将显著降低 DeFi 等场景中 AI 推理与闪电贷攻击防护的门槛，对智能合约安全与链上 AI 应用具有潜在推动作用。",
+  "tags": [
+    "EVM",
+    "On-chain AI",
+    "ZK-ML",
+    "Smart Contract",
+    "DeFi Security"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:46:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "链上 AI 的核心瓶颈是 EVM 存储成本与推理延迟，直接存储神经网络权重需数百万 gas，经济上不可行。",
+      "ZK-ML 虽能卸载计算，但 10-300 秒的证明延迟无法满足区块内实时推理需求，限制了其在智能合约中的应用。",
+      "Werracle 提出亚分级区块内 AI 反射预言机与闪电贷熔断器，试图在低成本与低延迟之间取得平衡。",
+      "该方案若落地，可增强 DeFi 场景中针对闪电贷攻击的实时 AI 防护能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

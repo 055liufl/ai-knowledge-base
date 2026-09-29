@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-041",
+  "title": "JevSoup: System-One Routing for Training-Free LoRA Composition",
+  "source_url": "https://arxiv.org/abs/2609.30922",
+  "source_platform": "rss_ai_research",
+  "summary": "JevSoup 是一个面向 LoRA 模块化组合的训练无关（training-free）路由框架，论文编号 arXiv:2609.30922。其核心思想借鉴双系统认知理论，将专家路由（System One）与任务执行（System Two）解耦：Jev 路由模块仅依赖输入文本和专家描述，即可快速选出两个最相关的 LoRA 专家进行组合，无需辅助数据、额外训练或自回归解码。这一设计显著降低了 LoRA 组合的部署成本与延迟，使多专家系统能够以即插即用的方式适配多样化任务。该工作值得关注的原因在于：LoRA 已成为大模型定制化的主流方案，但如何在不重新训练的前提下动态组合多个 LoRA 一直是工程痛点；JevSoup 提出的免训练路由思路，为构建可扩展、低开销的模块化 AI 系统提供了新范式，对模型服务化、多任务推理和边缘部署均有潜在价值。",
+  "tags": [
+    "LoRA",
+    "Model Routing",
+    "Training-Free",
+    "Modular AI",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将专家路由与执行分离为 System One 和 System Two，路由阶段仅需输入与专家描述，无需额外训练或辅助数据",
+      "Jev 路由每次选择两个 LoRA 专家进行组合，避免了自回归解码带来的延迟开销",
+      "训练无关特性使 LoRA 组合具备即插即用能力，降低了多专家系统的部署与维护成本",
+      "该框架为模块化大模型系统的动态能力编排提供了新的轻量化思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

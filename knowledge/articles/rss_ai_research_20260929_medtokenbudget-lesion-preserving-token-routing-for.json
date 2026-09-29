@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-114",
+  "title": "MedTokenBudget: Lesion-Preserving Token Routing for Dermoscopic Image Classification",
+  "source_url": "https://arxiv.org/abs/2609.30613",
+  "source_platform": "rss_ai_research",
+  "summary": "MedTokenBudget 是一种面向皮肤镜图像分类的监督式后骨干令牌路由框架，旨在解决 Vision Transformer 在皮肤镜分类中均匀处理所有图像块、而诊断证据仅集中于病变区域的问题。现有令牌剪枝方法多依赖通用显著性或不相似性信号，很少验证保留的令牌子集是否仍包含病变。MedTokenBudget 通过学习构建紧凑的、以病变为中心的令牌子集，在降低计算量的同时保持诊断关键信息。该工作将医学先验（病变区域重要性）显式引入令牌选择过程，属于医学影像与高效 Transformer 的交叉方向。对于关注医学 AI、模型压缩和可解释性的研究者与开发者而言，该思路提供了一种将领域知识嵌入令牌路由的范式，有望提升皮肤镜分类的准确率与推理效率，并推动临床可部署的轻量化诊断模型发展。",
+  "tags": [
+    "Medical AI",
+    "Vision Transformer",
+    "Token Pruning",
+    "Dermoscopy"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:45:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有令牌剪枝方法忽略医学图像中病变区域集中分布的先验，可能剪掉关键诊断证据。",
+      "MedTokenBudget 通过监督式后骨干令牌路由，显式学习保留病变相关令牌，兼顾效率与准确性。",
+      "将领域知识（病变位置）融入令牌选择过程，为医学影像 Transformer 的高效推理提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

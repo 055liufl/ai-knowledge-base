@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-082",
+  "title": "Prompt Minimization: Reducing Input Redundancy Without Sacrificing Output Fidelity",
+  "source_url": "https://arxiv.org/abs/2609.31505",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「提示最小化」（Prompt Minimization）这一研究方向，旨在将输入提示压缩至最小且信息密度最高的形式，同时保持模型输出的保真度。当前 LLM 能力虽持续提升，但提示设计仍高度依赖启发式与经验性试错，缺乏系统化方法。该研究指出，冗长的提示（尤其是包含整篇文档或代码库等大上下文时）会显著增加计算开销与推理延迟，因此通过削减输入冗余来优化提示具有直接的工程价值。其核心挑战在于如何在压缩提示长度的同时不牺牲输出质量，即在信息保留与效率之间取得平衡。该工作将提示优化从「如何写得更全」转向「如何写得更精」，为提示工程提供了新的理论视角与可量化目标。若方法可行，将广泛影响 RAG、长上下文推理、Agent 系统等依赖大提示输入的场景，降低部署成本并提升响应速度，因此值得研究者与开发者关注。",
+  "tags": [
+    "Prompt Engineering",
+    "LLM",
+    "Inference Efficiency",
+    "Context Compression"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:44:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提示设计目前仍以启发式为主，缺乏系统化、可量化的优化方法，提示最小化填补了这一空白。",
+      "缩短提示可显著降低计算开销与推理延迟，尤其在大上下文（如整篇文档或代码库）场景下收益明显。",
+      "核心难点在于压缩输入冗余的同时保持输出保真度，需要在信息密度与语义完整性之间权衡。",
+      "该方向对 RAG、长上下文推理和 Agent 系统等依赖大提示的应用具有直接的效率优化价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-023",
+  "title": "Analyzing and Mitigating Cost-Inefficient Behaviors in Coding Agents",
+  "source_url": "https://arxiv.org/abs/2609.30725",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究首次系统性地分析了编码智能体（Coding Agents）中的成本低效行为。作者基于 Claude Code 和 Mini-SWE-Agent 在 SWE-bench Verified 上的 1200 条执行轨迹，覆盖四种配置，识别出三类典型的成本浪费模式：被包含的冗余检索（subsumed retrieval）、相似脚本的重复生成（similar script generation）以及测试的重复执行（test re-execution）。这些行为虽然不影响任务最终成功率，却显著推高了 API 调用与计算开销，导致智能体运行成本居高不下。该工作填补了编码智能体成本效率研究的空白，为后续优化智能体决策策略、降低实际部署成本提供了实证基础与改进方向。对于依赖编码智能体进行自动化软件开发、CI/CD 集成或大规模代码维护的团队而言，理解并缓解这些低效行为具有直接的工程价值和经济意义。",
+  "tags": [
+    "Coding Agent",
+    "Cost Efficiency",
+    "SWE-bench",
+    "Agent Behavior"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码智能体存在三类可复现的成本低效行为：冗余检索、相似脚本重复生成和测试重复执行。",
+      "这些低效行为在 Claude Code 和 Mini-SWE-Agent 上均出现，说明是架构层面的共性问题而非单一实现缺陷。",
+      "成本低效与任务成功率解耦，意味着可以在不牺牲效果的前提下通过行为干预显著降低开销。",
+      "该研究为智能体成本感知决策策略的设计提供了首个系统性实证基线。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

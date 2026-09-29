@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-089",
+  "title": "A Mechanistic Study of AI-Text Detection Neurons in Frozen BERT: Sparse Probing and Activation Patching on RAID",
+  "source_url": "https://arxiv.org/abs/2609.30287",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对 AI 生成文本检测器在标准基准上表现优异但内部表征机制不明的问题，对冻结的 BERT-base-uncased 编码器进行了机制性分析。作者使用 RAID 基准，涵盖六种生成器（包括纯基础模型和指令微调模型），并采用 Gurnee 等人（2023）提出的 L1-to-L2 稀疏探测协议，对全部 9,216 个 CLS 隐藏状态维度进行探测，以识别支持 AI 文本检测的关键神经元。研究进一步通过激活修补（activation patching）验证这些神经元的因果作用。该工作首次将稀疏探测与激活修补结合用于 AI 文本检测任务，揭示了检测器依赖的特定神经元集合，为理解检测模型的内部工作机制提供了新视角，并可能推动更鲁棒、可解释的检测方法发展。其意义在于从机制可解释性角度剖析 AI 文本检测，而非仅关注性能指标，对构建可信 AI 检测系统具有重要参考价值。",
+  "tags": [
+    "AI-Text Detection",
+    "Mechanistic Interpretability",
+    "BERT",
+    "Sparse Probing",
+    "Activation Patching"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:44:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结的 BERT 编码器中存在稀疏的神经元子集专门支持 AI 文本检测，可通过 L1-to-L2 稀疏探测有效识别。",
+      "激活修补实验证实这些神经元对检测预测具有因果作用，而不仅仅是相关性。",
+      "不同生成器（基础模型 vs 指令微调模型）可能依赖部分重叠但不同的神经元集合。",
+      "机制可解释性方法能揭示 AI 文本检测器的内部决策依据，有助于提升检测器的鲁棒性和可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

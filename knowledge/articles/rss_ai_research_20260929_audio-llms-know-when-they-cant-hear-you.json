@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-018",
+  "title": "Audio LLMs Know When They Can't Hear You",
+  "source_url": "https://arxiv.org/abs/2609.30625",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究音频大语言模型（Audio LLM）的\"模型条件转录可靠性\"问题，即模型能否识别自身转录结果不可靠的情况。当输入录音质量过差时，音频LLM可能误读用户查询并基于错误转录进行回答，导致错误响应。作者首先通过提示让音频LLM评估自身转录是否可靠，探索模型对自身不确定性的感知能力。该研究值得关注，因为它触及多模态语音交互系统的核心安全与可信问题：模型不仅需要准确转录，更需要具备\"知道自己不知道\"的元认知能力，从而在音频质量不佳时主动拒绝回答或请求用户澄清，而非自信地给出错误答案。这为构建更鲁棒、更可信的语音交互系统提供了新思路，对语音助手、无障碍交互、嘈杂环境下的语音应用等场景具有重要实用价值。",
+  "tags": [
+    "Audio LLM",
+    "Uncertainty Estimation",
+    "Speech Recognition",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:41:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "音频LLM存在基于错误转录自信作答的风险，模型对自身转录可靠性的判断能力是可信语音交互的关键缺口",
+      "提出\"模型条件转录可靠性\"概念，让模型通过自我评估识别不可靠转录，实现'知道自己听不清'的元认知",
+      "该能力可支撑模型在音频质量差时主动拒答或请求澄清，避免错误传播，提升语音交互系统的鲁棒性与安全性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

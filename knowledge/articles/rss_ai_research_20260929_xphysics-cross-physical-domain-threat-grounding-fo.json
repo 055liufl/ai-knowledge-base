@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-129",
+  "title": "XPhysICS: Cross-Physical-Domain Threat Grounding for Industrial Control Systems Security",
+  "source_url": "https://arxiv.org/abs/2609.30805",
+  "source_platform": "rss_ai_research",
+  "summary": "XPhysICS 是一篇面向工业控制系统（ICS）安全的研究工作，提出了一种基于溯源感知（provenance-aware）且以目标系统为条件（target-conditioned）的威胁迁移与落地方法。其核心观察是：针对某一工厂记录的 ICS 威胁，其网络-物理效应可能对另一工厂同样具有相关性，但仅凭语义相似性无法判断这些效应在目标系统上是否结构上可接受、是否可被评估。XPhysICS 通过将分析人员引导的源域抽象与确定性的目标域落地过程分离，把抽象后的威胁语义映射到目标系统特定的验证切片（validation slices）中，从而判断威胁效应能否在目标环境中成立。该方法强调可溯源性与确定性验证，避免纯语义匹配带来的误报。该工作值得关注，因为它为 ICS 安全中的跨物理域威胁情报复用提供了可验证的方法论，有望提升工业场景下威胁建模与风险评估的准确性和可迁移性。",
+  "tags": [
+    "ICS Security",
+    "Cyber-Physical Systems",
+    "Threat Modeling",
+    "Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:46:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义相似性不足以判断 ICS 威胁效应能否在目标系统上成立，需要结构可接受性与可评估性验证。",
+      "XPhysICS 将分析人员引导的源域抽象与确定性的目标域落地分离，实现目标条件化的威胁验证。",
+      "溯源感知机制有助于保证跨物理域威胁迁移过程的可解释性与可靠性。",
+      "该方法为 ICS 威胁情报的跨工厂复用提供了可验证的路径，减少纯语义匹配导致的误报。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

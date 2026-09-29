@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-013",
+  "title": "Rank-Reliable Teacher-Guided Fitness Approximation for Expensive Evolutionary Optimization: A TinyML Architecture Search Study",
+  "source_url": "https://arxiv.org/abs/2609.30553",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 TGL-NSGA-II（Teacher-Guided Learning NSGA-II）的低保真度框架，用于解决昂贵的进化搜索问题，特别是在资源受限的 TinyML 神经架构搜索（NAS）场景中。传统进化算法需要为每个候选方案计算精确的适应度值，这在计算资源有限时极为昂贵。作者的核心洞察是：进化搜索往往不需要精确的适应度估计，而只需要可靠地判断“哪个候选方案更好”。为此，TGL-NSGA-II 利用一个预训练的教师模型，根据样本的难度和类别将其组织成不同的层次（strata），从而引导适应度近似过程，实现排序可靠的评估。该方法在约束条件下进行 TinyML 架构搜索，显著降低了评估成本，同时保持了搜索质量。这项工作值得关注，因为它将教师引导学习与多目标进化优化相结合，为边缘设备上的自动化机器学习提供了一种高效、实用的解决方案，有望推动 TinyML 在资源受限场景中的部署与普及。",
+  "tags": [
+    "TinyML",
+    "Neural Architecture Search",
+    "Evolutionary Optimization",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:41:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "进化搜索中，可靠地判断候选方案的相对优劣比精确估计绝对适应度更重要，这为低保真度近似提供了理论基础。",
+      "利用预训练教师模型按难度和类别分层组织样本，可以引导适应度近似，在降低计算成本的同时保持排序可靠性。",
+      "TGL-NSGA-II 在约束 TinyML 神经架构搜索中实现了高效的多目标优化，适合资源受限的边缘设备场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

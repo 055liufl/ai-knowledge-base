@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-024",
+  "title": "Learning What to Skip: Counterfactual Credit Assignment for Efficient Multi-Agent LLM Workflows",
+  "source_url": "https://arxiv.org/abs/2609.30734",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向多智能体 LLM 工作流的反事实信用分配方法，用于解决组件冗余执行带来的计算浪费和中间正确答案被覆盖的问题。多智能体 LLM 工作流通常包含规划、执行、验证和总结等组件，但每个组件的价值取决于当前已生成的状态，盲目执行所有组件并不总是最优。作者将组件省略问题形式化为反事实信用分配：完整工作流日志提供已执行轨迹的奖励，而受控的跳过干预则揭示省略某组件后的反事实结果，从而估计每个组件在特定状态下的边际贡献。基于此，模型可以学习在何时跳过哪些组件，以在保持或提升任务性能的同时降低计算成本。该工作将因果推断中的反事实思想引入 LLM 智能体编排，为动态、自适应的多智能体工作流提供了新的优化视角，对提升智能体系统的效率与鲁棒性具有实际意义。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Credit Assignment",
+    "Workflow Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体 LLM 工作流中每个组件的价值依赖于当前状态，固定执行所有组件会造成计算浪费甚至破坏正确答案。",
+      "将组件省略建模为反事实信用分配，可通过完整日志与受控跳过干预估计组件的边际贡献。",
+      "学习动态跳过冗余组件能够在保持任务性能的同时显著降低推理成本。",
+      "该工作为 LLM 智能体编排引入了因果推断视角，支持更自适应的工作流决策。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

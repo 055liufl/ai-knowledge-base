@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-073",
+  "title": "The Right Information Extraction Pipeline Depends on the Document: Accuracy-Energy Trade-offs for Small, Local Models",
+  "source_url": "https://arxiv.org/abs/2609.31341",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在隐私敏感场景下，本地部署的小型模型（≤8B参数）进行信息抽取时，输入表示形式（页面图像 vs 解析文本）对准确率和能耗的影响。作者发现，最佳输入形式取决于文档的版面布局：在版面复杂、文本解析质量差的文档上，视觉语言模型直接处理页面图像更准确；而在版面简单、文本解析可靠的文档上，纯文本模型更节能且准确率相当。这一结论在跨越不同版面复杂度的设计空间中呈现出翻转趋势。该工作为本地化、隐私保护的信息抽取流水线设计提供了实证依据，强调了根据文档类型动态选择输入模态的必要性，对构建高效、低能耗的文档处理系统具有实用价值。",
+  "tags": [
+    "Information Extraction",
+    "Vision-Language Model",
+    "Energy Efficiency",
+    "Local Deployment",
+    "Document AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:44:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "信息抽取流水线的最佳输入形式（页面图像或解析文本）取决于文档的版面布局，不存在普适最优方案。",
+      "在隐私敏感场景下，小型本地模型（≤8B）可在准确率和能耗之间取得可接受的权衡。",
+      "视觉语言模型在处理复杂版面文档时更具优势，而纯文本模型在简单版面上更节能。",
+      "设计信息抽取系统时应根据文档类型动态选择输入模态，以优化整体性能与能耗。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

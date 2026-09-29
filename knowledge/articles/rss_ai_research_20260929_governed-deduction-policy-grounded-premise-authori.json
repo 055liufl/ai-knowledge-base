@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-051",
+  "title": "Governed Deduction: Policy-Grounded Premise Authorization Beyond Relevance",
+  "source_url": "https://arxiv.org/abs/2609.31029",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「受治理演绎」（Governed Deduction, GD）这一形式化框架，用于解决推理系统中前提使用的授权问题。传统推理系统通常将前提使用视为相关性判断：只要事实可用且有用，就可被选入推理。然而，授权施加了不同约束——某个前提可能被表示且逻辑上可用，但在特定局部推理步骤中却不被允许使用。作者将这一区别形式化为转移局部准入谓词 admit(p, τ, S)，其中 p 为前提，τ 为推理转移，S 为状态。该框架建立在独立生成的 RBAC（基于角色的访问控制）增强基础之上，旨在将策略约束嵌入推理过程本身，而非事后过滤。这一工作值得关注，因为它触及了 AI 安全与合规中的核心问题：如何确保推理系统在生成结论时严格遵守访问控制与治理策略，而非仅仅依赖相关性。对于需要审计追踪、合规推理或敏感数据隔离的智能系统（如医疗、金融、法律领域的 AI 助手），该框架提供了理论基础，有望推动可治理推理系统的发展。",
+  "tags": [
+    "Reasoning",
+    "Access Control",
+    "AI Safety",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理系统中的前提使用不应仅由相关性决定，还需引入转移局部的授权准入谓词，以区分「可用」与「被允许」。",
+      "Governed Deduction 将访问控制策略（如 RBAC）直接嵌入推理步骤，而非事后过滤，从而实现细粒度的策略接地推理。",
+      "该形式化框架为构建可审计、合规的 AI 推理系统提供了理论基础，尤其适用于对数据访问有严格要求的领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

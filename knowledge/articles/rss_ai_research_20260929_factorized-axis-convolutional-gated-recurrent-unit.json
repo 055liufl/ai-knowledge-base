@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-049",
+  "title": "Factorized axis convolutional gated recurrent unit with dynamic adaptive pooling for remaining useful life prediction of rolling bearings",
+  "source_url": "https://arxiv.org/abs/2609.30972",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于滚动轴承剩余使用寿命（RUL）预测的新型深度学习模型——因子化轴向卷积门控循环单元（Factorized Axis Convolutional Gated Recurrent Unit），并结合动态自适应池化（Dynamic Adaptive Pooling）策略。滚动轴承的RUL预测是工业设备健康管理中的核心问题，传统方法通常将振动信号的时频表示（TFR）输入CNN进行特征提取。然而，作者指出两个关键局限：其一，在退化过程中，TFR中的特征结构主要沿频率轴或时间轴方向排列，而传统CNN的各向同性卷积核难以有效捕捉这种方向性结构；其二，全局平均池化（GAP）对所有位置一视同仁地取平均，会稀释关键退化信息。针对这些问题，作者提出因子化轴向卷积，将卷积操作分解为沿时间轴和频率轴的独立一维卷积，从而更精准地捕获方向性退化特征；同时引入动态自适应池化机制，根据特征重要性自适应地聚合信息，替代传统的GAP。该工作对工业设备预测性维护领域具有实际应用价值，为RUL预测中的特征提取与池化策略提供了新思路。",
+  "tags": [
+    "RUL Prediction",
+    "CNN",
+    "GRU",
+    "Time-Frequency Analysis",
+    "Predictive Maintenance"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统CNN的各向同性卷积核难以捕捉时频表示中沿频率轴或时间轴方向排列的退化特征结构，因子化轴向卷积通过分解为独立的一维轴向卷积有效解决了这一问题",
+      "全局平均池化（GAP）会均匀对待所有时频位置，稀释关键退化信息，动态自适应池化能够根据特征重要性进行加权聚合，提升RUL预测精度",
+      "将因子化轴向卷积与门控循环单元（GRU）结合，兼顾了局部方向性特征提取与时序依赖建模，为振动信号分析提供了新的网络架构设计范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-099",
+  "title": "Cost-Aware Best-LLM Identification using Dueling Feedback",
+  "source_url": "https://arxiv.org/abs/2609.30360",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究如何在查询成本异构的大语言模型（LLM）集合中识别最佳模型，提出了一种带对抗反馈（dueling feedback）与异构采样成本的多臂老虎机（MAB）变体。传统模型选择方法通常假设查询成本相同，但现实中不同 LLM 的调用价格、延迟差异巨大，且直接获取绝对质量评分困难，而两两比较（偏好反馈）更易获得且更鲁棒。作者在假设存在 Condorcet 优胜者（即存在一个模型在多数两两比较中胜出）的前提下，形式化并分析了该问题，目标是在有限预算下以尽量少的成本找到最优模型。该工作将偏好学习与成本感知决策结合，为 LLM 路由、模型评估与选择提供了理论框架，对构建经济高效的 LLM 应用系统具有实际指导意义。",
+  "tags": [
+    "LLM",
+    "Bandit",
+    "Model Selection",
+    "Preference Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:45:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将最佳 LLM 识别问题建模为带对抗反馈和异构查询成本的多臂老虎机问题，更贴近真实部署场景。",
+      "利用两两比较的偏好信号替代绝对评分，可在降低评估难度的同时保持鲁棒性。",
+      "在 Condorcet 优胜者假设下分析算法，为成本感知的模型选择提供理论保证。",
+      "该框架可应用于 LLM 路由、模型评估和预算受限的 AI 系统优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

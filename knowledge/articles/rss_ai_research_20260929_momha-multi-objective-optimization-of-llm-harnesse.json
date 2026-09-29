@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-047",
+  "title": "MoMHa: Multi-Objective Optimization of LLM Harnesses over Accuracy, Safety, and Tokens",
+  "source_url": "https://arxiv.org/abs/2609.30967",
+  "source_platform": "rss_ai_research",
+  "summary": "MoMHa（Meta-Harness）提出将 LLM 的\"harness\"——即围绕模型构建提示、路由调用、解析输出的 Python 代码——视为一等设计对象，而非简单的工程脚手架。作者指出，当前大多数 LLM 改进工作只关注准确率这一单一目标，但实际部署中 harness 的质量本质上是多目标的：一个准确但无法拒绝不安全请求、或消耗十倍 token 的 harness 并不是好 harness。该工作提出 Meta-Harness 系统，在准确率、安全性和 token 消耗三个维度上对 harness 进行多目标优化。这一视角值得关注，因为它把优化焦点从模型权重转移到模型外围的编排代码上，为在不重新训练模型的前提下同时提升效果、安全与成本效率提供了新思路，对构建生产级 LLM 应用的开发者具有直接参考价值。",
+  "tags": [
+    "LLM",
+    "Prompt Engineering",
+    "Multi-Objective Optimization",
+    "Safety",
+    "Token Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Harness（提示构建、调用路由、输出解析的 Python 代码）应被视为一等设计对象，而非附属工程细节",
+      "LLM 系统优化本质上是多目标的：准确率、安全性和 token 消耗需同时权衡，单一准确率指标会误导优化方向",
+      "Meta-Harness 系统在准确率、安全与 token 效率三个维度上对 harness 进行多目标优化，无需改动模型本身",
+      "该工作将优化重心从模型权重转移到外围编排代码，为生产级 LLM 应用提供了低成本改进路径"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

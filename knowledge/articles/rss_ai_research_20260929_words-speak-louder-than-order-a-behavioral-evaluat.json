@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-122",
+  "title": "Words Speak Louder Than Order: A Behavioral Evaluation of Gemma 4",
+  "source_url": "https://arxiv.org/abs/2609.30716",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对 Google 预训练的 Gemma 4-e4b 模型开展了一项行为评估实验，探究当语言模型接收到两份相互冲突的文档时，其优先级判断究竟取决于来源的表述方式（framing）还是文档的呈现顺序（order）。研究采用完全平衡的实验设计，构建了一个包含 13 个条目的定向行为测试套件，共执行 784 次前向传播，且均限定在简短的单轮对话上下文中。标题\"Words Speak Louder Than Order\"暗示了核心发现：模型更倾向于依据文档的措辞与表述框架来做出判断，而非简单地依赖输入顺序。这一发现对理解 LLM 在冲突信息场景下的决策机制具有重要意义，尤其关系到 RAG 系统、多源信息整合以及提示工程中的可靠性问题。该工作属于模型行为学的实证研究，规模虽小但设计严谨，为后续更大规模的模型行为分析提供了方法论参考，也提醒开发者在构建依赖多文档输入的应用时需谨慎处理信息冲突与来源框架的影响。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Prompt Engineering",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:46:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型在冲突文档场景下更依赖措辞与表述框架，而非文档的呈现顺序",
+      "采用完全平衡实验设计和 784 次前向传播，方法严谨但样本规模较小",
+      "该行为特征对 RAG 与多源信息整合系统的可靠性设计具有直接启示",
+      "单轮短上下文设定限制了结论向长对话与复杂场景的外推能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

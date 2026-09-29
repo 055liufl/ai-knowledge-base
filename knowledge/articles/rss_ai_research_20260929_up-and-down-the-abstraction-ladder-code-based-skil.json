@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-055",
+  "title": "Up and Down the Abstraction Ladder: Code-Based Skills for Language Agents",
+  "source_url": "https://arxiv.org/abs/2609.31076",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于代码抽象的技能框架，旨在解决语言智能体在需要长序列低级动作的环境中行动和学习困难的问题。核心思想是让语言模型不再逐步选择单个动作，而是调用可复用的代码化技能（code-based skills），由代码处理重复性的局部决策，语言模型则专注于决定使用哪些技能以及如何组合它们。这种抽象阶梯的上下移动机制能够显著提升智能体的生产力，但作者也指出抽象存在泄漏问题，即当环境情况超出技能能力范围时，智能体需要能够回退到更低层次的抽象或进行技能扩展。该研究对于构建更高效、可扩展的 LLM 智能体系统具有重要参考价值，尤其是在需要复杂多步操作的场景中，如自动化工作流、机器人控制和交互式任务求解。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Code Generation",
+    "Skill Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代码化技能将重复性局部决策封装为可复用模块，让语言模型专注于高层规划与组合，从而提升长序列任务中的效率。",
+      "抽象是泄漏的：当环境超出技能能力时，智能体需要动态回退到更低层次的动作或扩展技能库，否则性能会下降。",
+      "在抽象阶梯上灵活上下移动是语言智能体在复杂环境中持续学习和适应的关键机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

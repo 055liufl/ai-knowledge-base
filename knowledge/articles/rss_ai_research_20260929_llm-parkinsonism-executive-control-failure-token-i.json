@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260929-019",
+  "title": "LLM Parkinsonism: Executive-Control Failure, Token-Inefficient Persistence, and an Uncertainty-Aware Global Executive Control Architecture for Autonomous Language-Model Agents",
+  "source_url": "https://arxiv.org/abs/2609.30662",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「LLM Parkinsonism（LLM 帕金森症）」这一非临床隐喻，用于描述自主语言模型智能体在长周期任务中表现出的执行控制失效问题：尽管模型在局部任务上能力很强，却无法在项目层面维持有效的目标管理。具体表现为智能体在原始目标已满足后仍持续行动，产生低价值精修、重复验证，以及为自我制造的复杂性进行修复，导致 token 使用效率低下。作者将这一现象归因于执行控制（executive control）层面的失败，而非单纯的推理能力不足，并进一步提出一种「不确定性感知的全局执行控制架构」（Uncertainty-Aware Global Executive Control Architecture），试图为自主智能体引入类似前额叶执行功能的全局调度与终止机制。该工作值得关注的原因在于：当前 Agent 系统普遍追求更长任务链与更强自主性，但「何时停止」「何时判定目标已达成」这一关键问题长期被忽视；本文首次系统性地命名并形式化该失效模式，并给出架构层面的解决思路，对 Agent 可靠性、成本控制与长周期任务落地具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Autonomous Agents",
+    "Executive Control",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体的核心瓶颈正从局部能力转向项目级执行控制：目标达成后的持续行动、重复验证与自我复杂化修复是典型失效模式。",
+      "「LLM Parkinsonism」将这一现象概念化为非临床隐喻，强调其本质是执行控制失败而非推理能力不足。",
+      "提出不确定性感知的全局执行控制架构，通过全局调度与终止判断来抑制 token 低效的持续性行为。",
+      "该问题对长周期自主 Agent 的成本、可靠性与实际部署具有直接影响，是当前 Agent 研究中被低估的关键方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

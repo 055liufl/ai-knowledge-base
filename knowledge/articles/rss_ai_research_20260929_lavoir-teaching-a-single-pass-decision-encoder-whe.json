@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-021",
+  "title": "LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information",
+  "source_url": "https://arxiv.org/abs/2609.30706",
+  "source_platform": "rss_ai_research",
+  "summary": "LAVOIR（Laya with Value-Of-Information Routing）是一项针对单次前向推理决策模型（如 TypeSafe 的 Jev 及其开源对应 Laya）的改进研究。这类\"系统一\"模型能够以校准概率对文本进行类型化问答，但存在一个关键缺陷：当首条消息缺少区分两个部门的关键信息时，模型只能猜测，无法主动追问。LAVOIR 通过将候选的缺失信息槽位（slots）直接置于输入中，并引入摊销信息价值（Amortized Value of Information）机制，使模型在单次前向传播中同时决定\"何时提问\"以及\"问什么\"。该方法在保持单次推理效率的同时，赋予决策编码器主动获取缺失信息的能力，从而提升在信息不完整场景下的决策准确性。该工作值得关注，因为它弥合了高效单次决策模型与交互式信息获取之间的鸿沟，为构建更可靠、更实用的文本决策系统提供了新思路，尤其适用于需要多轮澄清的对话式问答、信息抽取和分类任务。",
+  "tags": [
+    "Decision Model",
+    "Value of Information",
+    "Single-Pass Inference",
+    "Question Asking"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:42:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单次前向决策模型（如 Jev/Laya）虽高效且概率校准良好，但无法主动请求缺失信息，导致在信息不完整时只能猜测。",
+      "LAVOIR 将候选缺失信息槽位置于输入中，并利用摊销信息价值机制，使模型在单次传播中同时决定是否提问以及提问内容。",
+      "该方法在保持单次推理效率的同时，赋予模型交互式信息获取能力，有望提升对话式问答和分类等任务的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

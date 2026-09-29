@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260929-096",
+  "title": "Coding Agents Aren't Enough! Evaluating an Enterprise Security Brain for Agentic Cloud Investigations",
+  "source_url": "https://arxiv.org/abs/2609.30345",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对云安全调查这一特定领域，探讨了通用编码智能体（Coding Agents）的局限性，并提出了一种面向企业安全调查的专用智能体架构——「企业安全大脑」（Enterprise Security Brain）。云安全调查的核心是「群体任务」：例如哪些身份可以读取某个数据存储、有多少资源未通过合规控制、从另一个账户可以访问哪些资源。这类问题的答案必须基于完整的资源清单才能成立，部分答案并非部分结果，而是完全不同的错误结论。虽然编码智能体可以被赋予只读云凭证并直接执行调查，但作者认为仅靠编码智能体不足以应对此类任务，需要专门设计的安全调查智能体系统。该研究值得关注，因为它揭示了通用智能体在安全等高风险垂直领域的根本性局限，并为构建领域专用智能体提供了设计思路，对云安全自动化和智能体落地具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Cloud Security",
+    "LLM",
+    "Enterprise AI"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:45:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "云安全调查属于「群体任务」，答案必须基于完整资源清单，部分答案会导致完全不同的错误结论，这与传统编码任务有本质区别。",
+      "通用编码智能体即使拥有只读云凭证，也难以可靠完成企业级安全调查，因为其推理模式不匹配群体任务的完整性要求。",
+      "需要构建专门的「企业安全大脑」架构，将领域知识、完整清单查询与智能体推理相结合，而非依赖通用编码智能体。",
+      "该研究为高风险垂直领域（如安全、合规）的智能体设计提供了重要警示：通用能力不等于领域可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

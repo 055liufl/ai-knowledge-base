@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260929-054",
+  "title": "Externalized CPDAG Summaries Improve LLM Causal Deduction",
+  "source_url": "https://arxiv.org/abs/2609.31071",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Structured Thinking”的两轮推理流程，旨在提升大语言模型（LLM）在因果推断任务中的表现。研究聚焦于Corr2Cause任务，即判断一个因果声明是否在所有与观测相关性和条件独立性兼容的有向无环图（DAG）中成立。作者指出，自由形式的思维链（chain-of-thought）往往将马尔可夫等价类问题退化为局部模式匹配，导致推理失败。为此，他们提出先让模型外化一个类型化、受模式约束的CPDAG（完全部分有向无环图）摘要，再基于该摘要进行因果判断。该方法将隐对象推理显式化，使模型能够更准确地处理因果结构。实验表明，这种结构化外化策略显著提升了LLM的因果演绎能力。该工作为LLM在因果推理领域的应用提供了新思路，值得关注。",
+  "tags": [
+    "LLM",
+    "Causal Inference",
+    "Reasoning",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-09-29T14:39:33Z",
+  "collected_at": "2026-09-29T14:43:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自由形式的思维链在因果推断中容易退化为局部模式匹配，无法有效处理马尔可夫等价类问题。",
+      "通过外化类型化、模式约束的CPDAG摘要，可以显式化隐对象推理，提升LLM的因果演绎能力。",
+      "两轮结构化推理流程（先摘要后判断）比单轮自由推理更有效。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
