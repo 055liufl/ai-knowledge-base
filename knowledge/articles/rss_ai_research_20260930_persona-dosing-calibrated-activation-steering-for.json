@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-044",
+  "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+  "source_url": "https://arxiv.org/abs/2609.36388",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PersonaDose，一种用于语言模型人格特质分级控制的方法。激活引导（activation steering）通常通过系数调节干预强度，但如何将系数映射到具体的人格表达程度仍缺乏行为学标尺。PersonaDose 针对这一问题，先在一个共享的、以描述为条件的 FLAS 控制器上，使用人格响应数据进行专门化训练，再通过测量实际特质表达来校准其流时间（flow time），从而实现对目标平均强度的精确控制。该方法的核心创新在于将抽象的引导系数与可观测的行为强度解耦，并建立校准机制，使模型能够按用户指定的强度（如“中等外向”）稳定输出相应人格特质。这项工作对可解释性、可控生成以及 AI 安全中的行为调控具有潜在价值，尤其适用于需要精细调节模型性格、语气或价值观的场景。尽管摘要未提供完整实验细节，但其思路为激活引导的实用化提供了新方向，值得关注。",
+  "tags": [
+    "Activation Steering",
+    "LLM Control",
+    "Persona",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "激活引导系数与人格表达强度之间缺乏直接映射，需要行为校准。",
+      "PersonaDose 通过描述条件化的 FLAS 控制器和流时间校准实现分级控制。",
+      "该方法将抽象干预强度转化为可测量的行为标尺，提升可控性。",
+      "对需要精细调节模型人格、语气或价值观的应用具有潜在价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

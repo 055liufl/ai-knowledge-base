@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-121",
+  "title": "SkillCome: Group Contrast Skill Optimization with Dual Memory",
+  "source_url": "https://arxiv.org/abs/2609.37128",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillCome 是一篇关于大语言模型技能进化（Skill Evolution）的 arXiv 论文，提出了一种名为「组对比技能优化」（Group Contrast Skill Optimization）的方法，并引入「双记忆」（Dual Memory）机制。现有技能进化方法通常针对每个问题只生成一条轨迹，并据此推断技能应如何修改。作者指出，单一轨迹提供的优化信号严重不足：在失败轨迹中难以定位究竟是哪些动作导致了失败，在成功轨迹中也难以判断哪些行为是真正有效的。SkillCome 通过为同一问题生成一组轨迹，利用组内成功与失败样本之间的对比来获得更可靠的技能编辑信号，从而更精准地识别关键动作与失败原因。双记忆机制则可能用于分别存储成功经验与失败教训，为技能优化提供结构化的历史信息支撑。该工作值得关注的原因在于：技能进化是提升 LLM 在复杂任务中自主能力的重要方向，而优化信号的质量直接决定技能迭代的效果；组对比思路将对比学习思想引入技能优化，有望提升技能编辑的准确性与稳定性，对 Agent、自动化提示优化、经验学习等方向具有参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Skill Evolution",
+    "Prompt Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一轨迹提供的优化信号不足，难以定位失败原因或识别有效动作，是现有技能进化方法的核心瓶颈。",
+      "通过为同一问题生成一组轨迹并进行成功/失败对比，可以获得更可靠的技能编辑信号。",
+      "双记忆机制为技能优化提供了结构化的经验存储，可能分别沉淀成功与失败模式。",
+      "该方法将对比学习思想引入 LLM 技能进化，对 Agent 自主能力提升具有潜在价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

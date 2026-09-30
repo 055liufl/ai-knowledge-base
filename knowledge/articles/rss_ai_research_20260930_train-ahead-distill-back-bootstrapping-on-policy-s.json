@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-122",
+  "title": "Train Ahead, Distill Back: Bootstrapping On-Policy Self-Distillation for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.37132",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Train Ahead, Distill Back”（先训练、后蒸馏）的自蒸馏框架，用于改进大语言模型（LLM）的在线自蒸馏（On-Policy Self-Distillation, OPSD）方法。OPSD 的核心思想是让一个拥有特权信息的“自教师”模型对模型自身生成的轨迹提供密集的 token 级监督，从而提升模型能力。然而，现有方法通常从当前策略、初始策略或缓慢平均的策略状态中构建自教师，导致监督质量受限于教师利用特权信息的能力。本文质疑是否模型自身的优化过程可以更有效地构建教师。作者提出先让模型在特权信息下进行一段“超前训练”，获得更强的教师状态，再回头对原始策略进行蒸馏。这种“先训练、后蒸馏”的引导式自蒸馏方法，有望突破现有 OPSD 中教师能力的瓶颈，为 LLM 的自我改进提供更高效的路径。该工作对自蒸馏、在线学习、以及利用特权信息进行模型增强等方向具有重要参考价值，尤其适合关注 LLM 训练效率与自我提升机制的研究者和开发者。",
+  "tags": [
+    "LLM",
+    "Self-Distillation",
+    "On-Policy Learning",
+    "Model Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有在线自蒸馏方法中，自教师的能力受限于其策略状态，无法充分利用特权信息提供高质量监督。",
+      "提出“先训练、后蒸馏”的引导式自蒸馏框架，通过让模型在特权信息下超前训练来构建更强的教师。",
+      "该方法有望突破自蒸馏中教师能力的瓶颈，提升 LLM 自我改进的效率和效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

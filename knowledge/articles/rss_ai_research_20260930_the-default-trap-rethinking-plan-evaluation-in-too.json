@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-087",
+  "title": "The Default Trap: Rethinking Plan Evaluation in Tool-Using LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.36829",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「默认陷阱」（default trap）这一概念，用于描述工具使用型 LLM Agent 在规划评估中的一种系统性偏差：当执行器面对一个与默认优先级对齐的完整计划被移除时，其信息选择概率变化很小，但面对计划优先级被显式改变时反应却很强。研究者将这种不对称解读为「对替代优先级响应弱」的风险称为默认陷阱。论文通过配对计划实验进行比较，这些计划优先考虑不同的信息目标，并与一个共享的「无计划」参考基线对照。作者进一步给出一个会计恒等式，将计划移除与优先级变更两种扰动下的响应差异联系起来，从而揭示现有评估方法可能高估或低估 Agent 对规划信息的真实敏感度。该工作值得关注，因为它挑战了当前 Agent 规划评估的默认范式，指出仅比较有无计划或仅改变优先级都可能产生误导性结论，对构建更可靠的 Agent 评测基准和规划模块具有方法论意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Evaluation",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "默认陷阱指执行器对移除默认对齐计划反应微弱，却对显式改变优先级反应强烈，导致评估者误判其对替代方案的响应能力。",
+      "配对计划与共享无计划基线的实验设计能更公平地比较不同优先级下的信息选择行为。",
+      "会计恒等式将计划移除与优先级变更的响应差异形式化，为诊断评估偏差提供量化工具。",
+      "现有 Agent 规划评估可能因默认陷阱而高估或低估模型对规划信息的真实敏感度，需重新审视评测协议。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

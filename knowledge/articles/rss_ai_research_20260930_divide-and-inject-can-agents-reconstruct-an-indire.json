@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-058",
+  "title": "Divide and Inject: Can Agents Reconstruct an Indirect Prompt Injection from Fragments?",
+  "source_url": "https://arxiv.org/abs/2609.36576",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新型的间接提示注入攻击范式——分片注入（Divide and Inject），探讨了智能体是否能够从分散在长上下文中的不完整恶意片段中重建出攻击目标。随着基于大语言模型的智能体系统被广泛用于工具编排和长上下文推理，其攻击面也在不断扩大。传统间接提示注入通常需要在检索内容中嵌入完整的恶意指令，而本文指出，攻击者可能只需将恶意目标拆分为多个片段并分散注入，智能体便可能凭借自身推理能力将这些碎片拼合成完整指令，从而绕过基于完整指令匹配的防御机制。该研究揭示了智能体推理能力与安全风险之间的内在张力：能力越强，越容易从碎片中重建攻击意图。这一发现对智能体安全防御设计具有重要意义，提示现有防御策略需要从检测完整恶意指令转向对上下文语义聚合的监控。该工作属于智能体安全与提示注入交叉领域的前沿探索，值得研究人员和开发者关注。",
+  "tags": [
+    "Prompt Injection",
+    "Agent Security",
+    "LLM",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "攻击者无需在检索内容中放置完整恶意指令，分散的片段可被智能体推理能力重建为完整攻击目标",
+      "智能体能力越强，从碎片中重建间接提示注入的风险越高，形成能力与安全的根本性张力",
+      "现有基于完整指令匹配的防御机制可能失效，需要转向对长上下文语义聚合的监控与检测",
+      "分片注入为间接提示注入开辟了新的攻击面，对智能体系统的安全部署构成实际威胁"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

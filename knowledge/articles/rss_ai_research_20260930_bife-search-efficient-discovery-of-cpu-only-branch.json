@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-075",
+  "title": "BiFE: Search-Efficient Discovery of CPU-Only Branching Policies via LLM-based Bi-Fidelity Evolution",
+  "source_url": "https://arxiv.org/abs/2609.36735",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 BiFE，一种基于 LLM 的双保真度进化搜索方法，用于自动发现仅需 CPU 推理的分支策略，以解决混合整数线性规划（MILP）中分支定界算法的分支变量选择问题。现有神经分支策略通常依赖 GPU 推理，部署成本高；而传统 CPU 高效的符号表达式又缺乏表达复杂逻辑的能力。BiFE 利用大语言模型生成代码，构建灵活且多样化的轻量级分支规则搜索空间，并通过双保真度进化策略在有限搜索预算下高效筛选候选策略。该方法的意义在于：它将 LLM 的代码生成能力与进化搜索相结合，在保持 CPU 推理效率的同时，逼近甚至超越神经分支策略的性能，为运筹优化领域的算法自动设计提供了新范式，也降低了 MILP 求解器在实际部署中的硬件门槛。",
+  "tags": [
+    "LLM",
+    "Evolutionary Search",
+    "MILP",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的代码可作为轻量级分支规则的灵活搜索空间，兼顾表达力与 CPU 推理效率",
+      "双保真度进化策略能在有限搜索预算下高效筛选高质量分支策略",
+      "该方法为 MILP 求解器的算法自动设计提供了无需 GPU 的实用替代方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

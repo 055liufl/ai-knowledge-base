@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-113",
+  "title": "Beyond Low-Rank Parameterization: Narrowing the Gap Between LoRA and Full Fine-Tuning via Gradient Decomposition",
+  "source_url": "https://arxiv.org/abs/2609.37027",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对低秩适配（LoRA）与全量微调（FFT）之间存在的性能差距问题，提出了一种新的梯度分解方法。LoRA 作为广泛使用的参数高效微调技术，其性能往往不及全量微调。现有 LoRA 变体主要改进低秩因子的初始化或优化，但每个训练步骤中，其一阶权重空间方向受当前参数化约束。作者刻画了 LoRA 可访问的梯度空间，并揭示了其局限性。通过梯度分解，该方法旨在缩小 LoRA 与 FFT 之间的差距，为参数高效微调提供了新的理论视角和改进方向。该研究对于理解 LoRA 的固有约束、推动 PEFT 方法的发展具有重要意义，尤其适用于大模型微调场景。",
+  "tags": [
+    "LoRA",
+    "Fine-Tuning",
+    "PEFT",
+    "Gradient Decomposition"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoRA 的性能差距源于其参数化对一阶权重空间方向的约束",
+      "刻画了 LoRA 可访问的梯度空间，揭示了其固有局限性",
+      "梯度分解方法有望缩小 LoRA 与全量微调之间的性能差距"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

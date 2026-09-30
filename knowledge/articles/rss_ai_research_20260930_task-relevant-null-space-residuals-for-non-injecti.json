@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-135",
+  "title": "Task-Relevant Null-Space Residuals for Non-Injective Neural Mappings",
+  "source_url": "https://arxiv.org/abs/2609.37272",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对神经网络中非单射映射（non-injective mappings）导致的信息丢失问题展开研究。非单射映射会将不同输入映射到同一表示，从而在输入空间隐式诱导等价关系。然而，这些被映射消除的输入差异可能仍为下游任务所需，造成算子诱导的不可区分性与任务所需区分性之间的不匹配。作者聚焦于当前前向传播中实现的非单射线性算子，分析其零空间（null space）结构，并提出任务相关的零空间残差（Task-Relevant Null-Space Residuals）方法，旨在恢复对下游任务有用的被丢弃信息。该工作为理解神经网络表示瓶颈、设计更信息保真的网络结构以及提升下游任务性能提供了新的理论视角和实用工具，对表示学习、可解释性和模型压缩等领域具有潜在影响。",
+  "tags": [
+    "Representation Learning",
+    "Null Space",
+    "Neural Network Theory",
+    "Information Bottleneck"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "非单射神经网络映射会消除输入差异，但下游任务可能仍需这些差异，导致表示与任务需求不匹配。",
+      "通过分析前向传播中线性算子的零空间，可以量化被丢弃的信息。",
+      "提出任务相关的零空间残差，用于恢复对下游任务有用的被消除信息。",
+      "该框架为设计信息保真的网络结构和改进表示学习提供了理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

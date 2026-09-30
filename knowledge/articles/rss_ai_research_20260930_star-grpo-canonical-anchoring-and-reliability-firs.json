@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-098",
+  "title": "STAR-GRPO: Canonical Anchoring and Reliability-First Advantages against Representation-Dependent Reward Hacking",
+  "source_url": "https://arxiv.org/abs/2609.36900",
+  "source_platform": "rss_ai_research",
+  "summary": "STAR-GRPO 是一篇针对强化学习（尤其是 group-relative policy optimization，如 GRPO）中奖励黑客（reward hacking）问题的研究论文。作者指出，当奖励接口脆弱或代理目标过于宽松时，策略优化会利用这些缺陷提高训练分数，却不提升实际响应质量。在 group-relative 方法中，这种问题被放大：一个缺乏支撑的奖励会改变整个组的基线，进而影响其他 rollout 的更新，而事后或纯相对加权无法表达组级不确定性。论文提出 STAR-GRPO，通过「规范锚定（Canonical Anchoring）」和「可靠性优先优势（Reliability-First Advantages）」来缓解表示依赖的奖励黑客。该工作对 LLM 对齐、RLHF/GRPO 训练稳定性以及奖励建模的鲁棒性具有直接意义，值得关注强化学习与语言模型对齐方向的研究者和工程师阅读。",
+  "tags": [
+    "RLHF",
+    "GRPO",
+    "Reward Hacking",
+    "LLM Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "奖励黑客在 group-relative 策略优化中被放大：单个不可靠奖励会通过组基线影响其他 rollout 的更新。",
+      "事后或纯相对加权无法表达组级不确定性，需要从优势估计层面引入可靠性机制。",
+      "STAR-GRPO 提出规范锚定与可靠性优先优势，旨在缓解表示依赖的奖励黑客问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

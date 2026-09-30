@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-078",
+  "title": "EASE: Behavior-Adaptive Skill Curation for Self-Evolving Agents",
+  "source_url": "https://arxiv.org/abs/2609.36746",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 EASE（Behavior-Adaptive Skill Curation for Self-Evolving Agents），针对自演化智能体中技能策展（skill curation）与执行器（executor）行为不匹配的问题展开研究。现有方法通常独立优化技能策展过程，而不显式建模下游执行器的行为特征，作者发现这会导致系统性的跨执行器性能退化：即使用某一执行器训练出的策展器，在与训练时不同的执行器配对时表现显著下降。EASE 通过让技能策展过程自适应执行器的行为特征，缓解这种耦合失配问题，从而提升技能复用与自演化智能体的泛化能力。该工作值得关注，因为它揭示了自演化 Agent 中一个被忽视的关键失效模式，并提供了行为自适应的解决思路，对构建可迁移、可复用的 Agent 技能库具有实际意义。",
+  "tags": [
+    "Agent",
+    "Self-Evolving Agents",
+    "Skill Curation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有技能策展器通常忽略下游执行器行为，导致跨执行器配对时出现系统性性能退化。",
+      "策展器与执行器之间存在强耦合：用某执行器训练出的策展器，换用其他执行器时效果明显下降。",
+      "EASE 通过行为自适应机制让技能策展与执行器行为对齐，提升自演化 Agent 的泛化与复用能力。",
+      "该研究提示自演化 Agent 的技能积累不能只优化技能本身，还需考虑执行端的动态行为特征。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

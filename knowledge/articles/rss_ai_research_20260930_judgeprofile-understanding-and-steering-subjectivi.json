@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-072",
+  "title": "JudgeProfile: Understanding and Steering Subjectivity in LLM Judges",
+  "source_url": "https://arxiv.org/abs/2609.36705",
+  "source_platform": "rss_ai_research",
+  "summary": "JudgeProfile 是一个用于分析和调控 LLM 评审主观性的研究框架。该工作指出，LLM 作为评审模型在进行成对比较时具有内在主观性，当两个回答都不存在客观错误时，评审往往表现出偏好差异。为系统研究这一现象，作者将 LLM 评估过程解耦为两个维度：感知（perception），即评审模型如何在清晰度、正确性、细节等具体属性上比较两个回答；以及优先级（prioritization），即各属性对最终选择的相对影响权重。为支撑该框架，研究团队构建了 SubjectiveSet 数据集，专门收录主观性较强的评估样本。该工作的价值在于：一方面提供了可解释的视角来理解 LLM 评审的偏好来源，另一方面提出了对评审主观性进行引导（steering）的可能性，这对于提升 LLM-as-a-Judge 范式的可靠性、公平性和可控性具有重要意义，尤其适用于模型对齐、自动化评估和 RLHF 等依赖评审模型的场景。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "Alignment",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 评审的主观性可被分解为感知（属性层面的比较）与优先级（属性权重）两个可分析维度",
+      "当两个回答均无客观错误时，评审偏好差异主要源于属性优先级的差异而非感知能力差异",
+      "通过显式建模属性优先级，可以对 LLM 评审的主观偏好进行引导和调控",
+      "SubjectiveSet 数据集为研究 LLM 评审主观性提供了专门的评测基准"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-089",
+  "title": "ARC-KV: Amortizing Anchor Search for Reconstruction-Based KV Cache Compaction",
+  "source_url": "https://arxiv.org/abs/2609.36835",
+  "source_platform": "rss_ai_research",
+  "summary": "ARC-KV 是一篇针对长上下文大语言模型推理中 KV Cache 内存瓶颈的研究工作。随着序列长度增长，KV Cache 线性膨胀，尤其对于可复用的长上下文前缀（如系统提示、文档库、代码仓库），其缓存需要服务大量下游查询，内存与计算开销极为突出。基于重建的压缩方法（如 Attention Matching）能够在保持紧凑 KV Cache 的同时维持较强的下游任务性能，但其核心步骤——基于 OMP（正交匹配追踪）的迭代锚点搜索（anchor search）——主导了整体压缩成本，成为效率瓶颈。ARC-KV 提出对锚点搜索过程进行摊销（amortization），旨在降低重复压缩同一前缀时的开销，从而让重建式 KV Cache 压缩在实际长上下文服务场景中更具可行性。该工作值得关注，因为它直击长上下文推理落地的关键成本项，将优化焦点从压缩率转向压缩过程本身的计算效率，对推理基础设施、缓存复用系统和长上下文应用具有直接价值。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Long Context",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文推理的核心瓶颈之一是随序列长度线性增长的 KV Cache，尤其是需要被大量下游查询复用的长前缀缓存。",
+      "基于重建的压缩方法（如 Attention Matching）在下游任务性能上表现优异，但 OMP 迭代锚点搜索主导了压缩成本。",
+      "ARC-KV 通过摊销锚点搜索来降低重复压缩同一前缀的开销，提升重建式 KV Cache 压缩的实用性。",
+      "该工作将优化重点从压缩率转向压缩过程本身的计算效率，对长上下文推理服务基础设施有直接意义。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

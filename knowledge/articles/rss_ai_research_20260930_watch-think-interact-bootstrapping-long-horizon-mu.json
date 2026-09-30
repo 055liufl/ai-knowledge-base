@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-115",
+  "title": "Watch-Think-Interact: Bootstrapping Long-Horizon Multi-Turn Streaming Video Reasoning with Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.37035",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Watch-Think-Interact（WTI）框架，用于解决流式视频多轮推理中的长时程问题。在流式视频助手场景中，模型需要在固定上下文预算下，针对观察到的视频前缀异步回答后续问题。现有方法要么建模响应时机，要么压缩历史信息，但都存在一个根本缺陷：在后续问题出现之前形成的在线状态可能遗漏了当时看似无关、后来却变得关键的视觉细节，而仅靠保留的状态无法恢复这些信息。WTI 通过闭环框架，结合强化学习进行自举（bootstrapping），让模型在「观看-思考-交互」的循环中动态决定何时保留、检索和利用视觉信息，从而支持长时程多轮流式视频推理。该工作值得关注，因为它首次系统性地将强化学习用于流式视频多轮推理的在线状态管理，有望推动实时视频理解、具身智能和交互式 AI 助手的发展。",
+  "tags": [
+    "Video Reasoning",
+    "Reinforcement Learning",
+    "Streaming",
+    "Multi-Turn",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流式视频多轮推理的核心挑战在于：未来问题出现前形成的在线状态可能遗漏当时看似无关但后续关键的视觉细节，且无法从压缩状态中恢复。",
+      "WTI 提出闭环「观看-思考-交互」框架，利用强化学习自举模型在固定上下文预算下动态管理视觉信息的保留与检索。",
+      "该工作将响应时机建模与历史压缩统一到在线状态形成过程中，为长时程流式视频理解提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

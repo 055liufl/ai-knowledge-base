@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-025",
+  "title": "Principled Thoughts for Latent Recursive LLM Systems",
+  "source_url": "https://arxiv.org/abs/2609.36159",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对潜在递归 LLM 系统（latent recursive LLM systems）提出理论性思考。这类系统让大模型在连续空间中推理，即通过循环复用自身隐藏状态或在多个智能体之间传递隐藏状态，而非依赖解码后的文本。然而，当前训练方式仅对最终解码答案的交叉熵（CE）进行监督，对中间「思维」过程不加约束。作者通过理论与实证分析，确立并验证了仅用 CE 训练会导致四类失败模式，最终降低正确答案的概率，例如思维坍缩（collapsing thought）。该工作值得关注，因为它揭示了连续空间推理范式下训练目标设计的根本性缺陷，为未来潜在递归架构的监督信号设计提供了理论依据，可能影响下一代推理模型与多智能体系统的训练方法。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Latent Space",
+    "Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在递归 LLM 可在连续隐藏状态空间中推理，但仅用最终答案的交叉熵监督无法约束中间思维过程",
+      "CE-only 训练存在四类失败模式，会降低正确答案概率，思维坍缩是其中之一",
+      "该分析为连续空间推理系统的训练目标设计提供了理论指导，提示需要额外的中间过程监督"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

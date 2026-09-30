@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-077",
+  "title": "SIPO: Unifying Reinforcement Learning with On-Policy Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2609.36742",
+  "source_platform": "rss_ai_research",
+  "summary": "SIPO（Self-distillation Integrated Policy Optimization）是一篇针对大语言模型强化学习训练中信用分配问题的研究论文。当前，基于可验证奖励的强化学习（RLVR）已成为提升 LLM 任务表现的标准范式，但其稀疏的结果奖励无法为中间推理步骤提供 token 级别的信用分配，导致训练效率低下。为此，已有工作引入在线自蒸馏（OPSD），利用带有特权上下文的自教师模型提供稠密学习信号。然而，自教师模型往往过度自信，其提供的监督信号存在偏差，可能损害策略优化。SIPO 的核心贡献在于将强化学习与在线自蒸馏统一到一个框架中，通过整合 RLVR 的稀疏结果奖励与 OPSD 的稠密 token 级信号，并缓解自教师过度自信带来的负面影响，从而更有效地优化语言模型策略。该工作对 LLM 后训练、推理能力增强以及强化学习算法设计具有重要参考价值，值得关注。",
+  "tags": [
+    "RLVR",
+    "Self-Distillation",
+    "LLM",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 的稀疏结果奖励缺乏 token 级信用分配，限制了 LLM 在复杂推理任务上的训练效率。",
+      "在线自蒸馏（OPSD）通过特权上下文提供稠密信号，但自教师模型的过度自信会引入偏差。",
+      "SIPO 将强化学习与在线自蒸馏统一，旨在结合稀疏结果奖励与稠密 token 级信号的优势。",
+      "该方向对提升 LLM 后训练效率和推理能力具有潜在价值，但需进一步验证其泛化性与稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

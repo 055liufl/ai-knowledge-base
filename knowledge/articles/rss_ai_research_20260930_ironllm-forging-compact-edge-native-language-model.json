@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-092",
+  "title": "IronLLM: Forging Compact Edge-Native Language Models for Real-Time Embodied Intelligence",
+  "source_url": "https://arxiv.org/abs/2609.36860",
+  "source_platform": "rss_ai_research",
+  "summary": "IronLLM-0.6B 是一个面向端侧实时具身智能场景设计的紧凑型语言模型，参数量为 654M。该模型的核心创新在于结合了混合注意力架构与 X-MTP（一种轻量级共享 KV 的多 token 预测机制）。X-MTP 通过消除逐深度的 KV-cache 重放，并引入轻量级验证头实现无回滚草稿，从而在解码阶段获得约 1.48 倍的加速。模型在约 6.2 万亿 token 的高质量语料上完成预训练，目标是在边缘设备上实现高效、低延迟的推理，为具身智能等实时交互场景提供原生支持。该工作值得关注的原因在于：随着具身智能与边缘 AI 的兴起，如何在算力、内存和功耗受限的设备上部署语言模型成为关键瓶颈。IronLLM 通过架构层面的多 token 预测与共享 KV 设计，在不显著增加参数量的前提下提升解码效率，为端侧实时语言模型提供了新的工程思路，对边缘推理优化和具身智能系统集成具有参考价值。",
+  "tags": [
+    "Edge AI",
+    "LLM",
+    "Inference Optimization",
+    "Embodied Intelligence"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "X-MTP 通过共享 KV 和轻量验证头实现无回滚多 token 草稿，解码速度提升 1.48 倍，适合端侧低延迟场景。",
+      "654M 参数规模在边缘设备上兼顾性能与资源约束，面向具身智能的实时推理需求。",
+      "混合注意力架构与 6.2T token 预训练结合，在紧凑模型中追求质量与效率的平衡。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

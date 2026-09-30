@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-082",
+  "title": "Aperture: Merge-Consistent Rotary States for Compressed Tokens",
+  "source_url": "https://arxiv.org/abs/2609.36781",
+  "source_platform": "rss_ai_research",
+  "summary": "Aperture 提出了一种针对 token 压缩场景的旋转位置编码（RoPE）改进方案。传统方法在合并多个 token 时，通常只给合并后的 token 分配一个位置坐标，导致位置信息丢失。Aperture 的核心思想是在模型的旋转频率上存储 token 加权支撑集的傅里叶矩（Fourier moments），从而保留合并前多个位置的信息。作者从理论上证明，这些矩在所选的期望旋转交互下，具有最小的实维度，即它们是最紧凑的连续状态表示。该工作为 token 压缩与位置编码的兼容性提供了新的理论视角和实用方法，有望提升长上下文建模、检索增强生成等场景中压缩 token 的表示质量。对于关注高效 Transformer、位置编码和长序列建模的研究者与开发者而言，这项研究值得关注，因为它可能在不显著增加计算成本的前提下，改善压缩 token 的位置感知能力。",
+  "tags": [
+    "RoPE",
+    "Token Compression",
+    "Position Encoding",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 RoPE 在 token 合并时只保留单一位置坐标，会丢失合并前多个位置的信息。",
+      "Aperture 通过存储加权支撑集的傅里叶矩来编码合并 token 的位置信息。",
+      "理论证明这些矩在连续状态中具有最小实维度，是满足期望旋转交互的最紧凑表示。",
+      "该方法有望提升长上下文和压缩 token 场景下的位置感知能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

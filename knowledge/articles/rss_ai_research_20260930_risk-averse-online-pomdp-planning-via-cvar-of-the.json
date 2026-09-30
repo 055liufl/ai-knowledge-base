@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-006",
+  "title": "Risk-Averse Online POMDP Planning via CVaR of the Immediate Cost with Performance Guarantees",
+  "source_url": "https://arxiv.org/abs/2609.35874",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于即时成本CVaR的风险规避在线POMDP规划方法，并给出了性能保证。传统在线POMDP规划器优化期望累积成本，当信念在高成本状态上分布较大时，可能掩盖危险状态。现有风险规避方法对值函数应用静态或动态条件风险价值（CVaR），捕捉轨迹级风险，但存在两个不足：一是将即时成本保留为信念上状态相关成本的期望，忽略了信念内部的风险；二是缺乏性能保证。该工作针对这些缺口，将CVaR直接应用于即时成本，以捕捉信念内部的风险，并推导出性能保证。这项研究值得关注，因为它为安全关键场景下的序贯决策提供了更稳健的规划框架，在机器人、自动驾驶和医疗决策等领域具有重要应用价值。",
+  "tags": [
+    "POMDP",
+    "Risk-Averse Planning",
+    "CVaR",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有风险规避POMDP方法仅对值函数应用CVaR，忽略信念内部的风险，可能低估危险状态",
+      "将CVaR应用于即时成本可捕捉信念内部风险，弥补轨迹级风险度量的不足",
+      "该工作为风险规避在线POMDP规划提供了性能保证，增强了理论可靠性",
+      "方法适用于安全关键领域的序贯决策，如机器人导航和自动驾驶"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

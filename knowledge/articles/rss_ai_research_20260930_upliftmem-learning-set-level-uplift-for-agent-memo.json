@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-084",
+  "title": "UpliftMem: Learning Set-Level Uplift for Agent Memory Retrieval",
+  "source_url": "https://arxiv.org/abs/2609.36805",
+  "source_platform": "rss_ai_research",
+  "summary": "UpliftMem 是一篇来自 arXiv 的学术论文，聚焦于 LLM Agent 的记忆检索问题。当前 LLM Agent 普遍依赖外部记忆来指导新任务，但如何判断哪些记忆集合真正能提升任务执行效果，仍是一个未解决的难题。传统检索方法只能观察到实际被执行的记忆集合，而要评估其他候选集合的效果则需要额外进行昂贵的 rollout 实验，导致反馈成本极高。UpliftMem 提出了一种新方法，通过学习「集合级执行增益」（set-level execution uplift）来优化记忆检索——即相对于同一执行器在无记忆条件下的表现提升量。这一视角将记忆检索从传统的相关性匹配转变为因果增益估计，有望显著降低训练成本并提升 Agent 的任务表现。该工作值得关注，因为它触及了 Agent 记忆系统的核心痛点：如何高效地评估和选择记忆，而非仅仅依赖语义相似度。对于构建长期记忆型 Agent 的开发者而言，这提供了一种更具原则性的检索优化思路。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "RAG",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统记忆检索只能观察到已执行的记忆集合，评估替代方案需要昂贵的额外 rollout，反馈成本是核心瓶颈",
+      "UpliftMem 将记忆检索建模为集合级执行增益学习，以「相对无记忆执行器的提升」作为监督信号",
+      "该方法把检索目标从语义相关性转向因果效用，可能提升 Agent 在复杂任务中的记忆利用效率",
+      "降低记忆评估成本对构建可扩展的长期记忆 Agent 系统具有重要实践意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

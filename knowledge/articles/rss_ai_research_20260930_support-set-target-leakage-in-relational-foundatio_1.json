@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-047",
+  "title": "Support-Set Target Leakage in Relational Foundation Models during In-Context Learning: Model Dependence and Evaluation Reliability",
+  "source_url": "https://arxiv.org/abs/2609.36417",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究关系型基础模型在上下文学习（ICL）中的一种失败模式，称为“支持集目标泄漏”（support-set target leakage）。在关系型 ICL 中，模型使用带标签的支持样本及其关联的关系上下文来预测新查询的标签。当支持上下文中包含源自目标标签的特征，而这些特征在查询时不可用时，就会产生泄漏，导致评估结果虚高、模型行为失真。作者构建了 20 个受控的目标派生特征，系统变化信号保真度、表示形式、语义透明度、覆盖率和零样本可用性等维度，以考察不同模型对泄漏的敏感程度。研究发现，泄漏的影响具有明显的模型依赖性，不同架构和训练方式的模型对同一泄漏特征的利用程度差异显著，这直接威胁到关系型基础模型评估的可靠性。该工作为关系型 ICL 的基准设计和模型评估提供了重要警示，提醒研究者在构建支持集时必须严格隔离目标派生信息，否则可能得出误导性的性能结论。",
+  "tags": [
+    "ICL",
+    "Relational Learning",
+    "Evaluation",
+    "Foundation Models"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "关系型 ICL 中支持集可能包含目标派生特征，造成目标泄漏，使评估结果不可靠。",
+      "泄漏效应具有模型依赖性，不同模型对同一泄漏特征的利用程度差异显著。",
+      "构建了 20 个受控目标派生特征，覆盖信号保真度、表示、语义透明度、覆盖率和零样本可用性等维度。",
+      "该研究强调关系型基础模型基准设计必须严格隔离目标派生信息，否则性能结论可能误导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

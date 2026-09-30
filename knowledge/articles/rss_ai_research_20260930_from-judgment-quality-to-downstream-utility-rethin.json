@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-123",
+  "title": "From Judgment Quality to Downstream Utility: Rethinking LLM-as-a-Judge for Open-Ended Tasks",
+  "source_url": "https://arxiv.org/abs/2609.37145",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对 LLM-as-a-Judge 在开放式任务评估中的角色提出反思。现有工作通常直接将 Judge 的评判结果转化为策略训练的奖励信号，却较少关注评判本身的质量，也基本将 Judge 的使用局限于训练阶段的监督。作者系统性地研究了评判质量与下游效用之间的关系，考察评判结果如何影响策略训练与最终任务表现。该研究的意义在于：随着 LLM 评估越来越多地用于缺乏标准答案的开放式任务，Judge 的可靠性直接决定了训练信号的有效性；若评判质量不佳，可能引入噪声甚至误导策略优化。论文提示研究者不应把 Judge 仅当作黑盒奖励来源，而应同时关注其内在评判质量与在下游任务中的实际效用，为构建更可靠的评估与训练闭环提供了新的分析视角。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "RLHF",
+    "Reward Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM-as-a-Judge 工作多将评判直接转为奖励信号，忽视评判本身的质量问题",
+      "Judge 的使用被局限在训练时监督，未充分挖掘其在下游任务中的效用",
+      "评判质量与下游效用之间存在关联，需系统评估而非默认 Judge 可靠",
+      "开放式任务缺乏标准答案，使 Judge 质量对策略训练的影响尤为关键"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

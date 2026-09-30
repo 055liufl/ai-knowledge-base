@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-005",
+  "title": "More Programs or More Rolls? Separating Coverage from Specialization in LLM Harnesses",
+  "source_url": "https://arxiv.org/abs/2609.35873",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对 LLM harness（即围绕大模型推理过程构建的自动化程序化封装）的自动生成方法提出了一项受控评估研究。当前许多工作声称通过任务特化（task specialization）提升推理性能，但作者指出，额外的答案覆盖率可能仅仅来自同一程序的重复执行（即多次采样/多次滚动），而非真正的任务特化优势。为厘清这一混淆，作者在 386 个 MATH-500 任务上，对比了八种自动生成的 harness 与一个基线方法，并设计了控制实验来分离三种效应：答案覆盖率、可重复的任务优势、以及执行前选择带来的增益。该研究的意义在于，它为 LLM harness 的评估提供了更严谨的方法论框架，提醒研究者和开发者不要将重复采样带来的覆盖率提升误判为程序特化能力，从而更准确地衡量自动化 harness 生成技术的真实价值。对于关注 LLM 推理增强、程序化提示工程和自动化 agent 设计的读者，本文提供了重要的评估视角和实验基准。",
+  "tags": [
+    "LLM",
+    "推理增强",
+    "评估方法",
+    "程序化提示"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM harness 的额外答案覆盖率可能来自同一程序的重复执行，而非真正的任务特化，这会导致对特化效果的误判。",
+      "研究提出了一个受控评估框架，将答案覆盖率、可重复任务优势和预执行选择增益三者分离，为 harness 评估提供更严谨的方法。",
+      "在 MATH-500 的 386 个任务上，对比八种生成 harness 与基线，揭示了重复执行与特化之间的混淆程度。",
+      "该工作提醒研究者在报告 LLM harness 性能时需控制重复采样因素，否则可能高估自动化程序生成的实际贡献。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

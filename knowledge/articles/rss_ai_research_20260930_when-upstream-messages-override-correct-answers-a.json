@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-091",
+  "title": "When Upstream Messages Override Correct Answers: A Controlled Study of Multi-Agent LLM Collaboration",
+  "source_url": "https://arxiv.org/abs/2609.36855",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对多智能体LLM协作系统中一个被忽视的关键问题展开：上游智能体传递的消息可能包含错误答案，导致下游智能体放弃自身基于证据得出的正确答案，从而造成协作性能下降。作者通过受控实验，在五种不同配置下系统性地分离了通信带来的收益与错误消息造成的损害。这项工作的重要性在于，它揭示了多智能体协作并非总是优于单智能体，消息传递机制本身可能引入新的失败模式。研究为理解LLM智能体间的信息传播动力学提供了实证基础，并对多智能体系统的设计具有直接指导意义——开发者需要引入消息可信度评估或证据权重机制，而非盲目信任上游信息。该问题在RAG、工具调用链、多步推理等场景中普遍存在，因此对构建鲁棒的多智能体应用具有广泛价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Collaboration",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体LLM协作中，上游错误消息可能导致下游智能体覆盖自身正确的证据判断，形成'错误传播'失败模式",
+      "通信的收益与错误消息的损害需要被分离评估，不能简单假设多智能体协作总是优于单智能体",
+      "该研究通过受控实验量化了错误消息的影响，为设计更鲁棒的消息传递与验证机制提供了依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

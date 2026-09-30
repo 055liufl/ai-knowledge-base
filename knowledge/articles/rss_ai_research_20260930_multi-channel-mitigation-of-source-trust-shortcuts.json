@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-063",
+  "title": "Multi-Channel Mitigation of Source-Trust Shortcuts in Fact-Checking RL Agents",
+  "source_url": "https://arxiv.org/abs/2609.36611",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 TrustSwap，一种针对检索增强事实核查强化学习（RL）智能体的反事实测试方法，用于检测模型是否过度依赖证据来源的信任标签（如 HIGH/LOW trust）而忽略证据文本内容。TrustSwap 通过交换、降低或移除来源标签，同时保持所有证据文本不变，测量模型在三个输出通道上的行为变化：最终裁决、置信度以及是否继续搜索更多证据的决策。研究发现，现有事实核查 RL 智能体普遍存在“来源信任捷径”（source-trust shortcut）问题，即模型倾向于根据来源标签而非证据内容做出判断，导致在标签被操纵时产生系统性偏差。该工作值得关注，因为它揭示了检索增强系统中一个隐蔽但重要的鲁棒性缺陷，并提出了多通道缓解策略，对构建可信的事实核查与 RAG 系统具有直接指导意义。",
+  "tags": [
+    "Fact-Checking",
+    "RAG",
+    "RL",
+    "Robustness",
+    "Trust"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "检索增强事实核查智能体常依赖来源信任标签作为捷径，而非真正依据证据内容进行推理。",
+      "TrustSwap 通过反事实标签操纵（交换、降低、移除）在三个输出通道上量化捷径行为。",
+      "多通道缓解策略可同时修正裁决、置信度和搜索决策，提升模型对来源标签扰动的鲁棒性。",
+      "该研究揭示了 RAG 系统中信任标签可能引入的隐性偏差，对可信 AI 评估有方法论贡献。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

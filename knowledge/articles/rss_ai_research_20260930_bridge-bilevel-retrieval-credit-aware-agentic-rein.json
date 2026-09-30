@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-055",
+  "title": "BRIDGE: Bilevel Retrieval-Credit-Aware Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.36505",
+  "source_platform": "rss_ai_research",
+  "summary": "BRIDGE 提出了一种面向知识密集型任务的智能体强化学习（Agentic RL）新框架，旨在解决现有方法中存在的\"信息信用鸿沟\"问题。当前大多数 ARL 方法仅优化 LLM 生成的 token，而将检索到的证据视为环境观测，导致因证据缺失或误导而引发的失败被错误归因于 LLM 策略本身。BRIDGE 通过双层（bilevel）检索-信用感知机制，将检索质量纳入强化学习的信用分配过程，使模型能够同时优化推理策略与检索行为。该工作对于提升 LLM 在开放域问答、多跳推理等需要外部知识检索的任务中的表现具有重要意义，代表了 Agentic RL 与 RAG 深度融合的前沿方向，值得关注检索增强智能体训练的研究者和开发者深入阅读。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agentic RL 方法存在信息信用鸿沟：检索证据的质量问题被错误归因于 LLM 策略，导致优化信号失真",
+      "BRIDGE 采用双层优化框架，将检索质量纳入信用分配，实现推理与检索的联合优化",
+      "该工作推动了 RAG 与强化学习智能体训练的深度融合，为知识密集型任务提供了新的训练范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

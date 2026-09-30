@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-048",
+  "title": "The Safety Operator: Modulating the Expression of Safety Instructions via Spectral Optimization",
+  "source_url": "https://arxiv.org/abs/2609.36434",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“安全算子”（Safety Operator）的理论框架，用于分析和调控大语言模型中安全指令的表达强度。研究发现，在基于 Transformer 的语言模型中，上下文 token 可以被吸收为模型权重中的乘法算子。作者聚焦于安全指令场景，证明通过影响该算子的主特征值（dominant eigenvalue），可以调节安全指令对生成内容的影响程度。为此，他们推导出一种“对比安全损失”（Contrastive Safety Loss），并引入抑制权重（suppression weight）来平衡两个目标：在有害查询上强化安全指令的遵循，同时在无害查询上避免过度抑制。该工作为理解安全对齐的内部机制提供了新的数学视角，并为更精细、更可控的安全指令调控提供了可操作的方法。其价值在于：一方面深化了对齐可解释性研究，另一方面为实际部署中平衡安全性与有用性提供了新的优化工具，尤其适用于需要动态调整安全强度的应用场景。",
+  "tags": [
+    "LLM Safety",
+    "Alignment",
+    "Interpretability",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文 token 可被吸收为模型权重中的乘法算子，其主特征值决定安全指令的影响强度。",
+      "通过对比安全损失和抑制权重，可以精细调控安全指令在有害与无害查询上的表达。",
+      "该框架为安全对齐提供了可解释的数学工具，有助于平衡安全性与模型有用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

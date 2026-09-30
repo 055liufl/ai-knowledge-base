@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-061",
+  "title": "Transformers Stop Thinking Too Early, and a Tiny LoRA Fixes It",
+  "source_url": "https://arxiv.org/abs/2609.36585",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究揭示了预训练Transformer模型在上下文引用跟随任务中存在严重的深度利用不足问题：13个基础模型仅能可靠跟随1.4-3.6行引用，增加预训练循环层数也收效甚微。作者提出一种极简修复方案——在单个早期层上训练一个秩为8的LoRA适配器，同时冻结所有原始模型权重。该方法使Qwen3-8B在24行链任务上的精确准确率从15.5%跃升至99%，经过更长训练的LoRA可处理50行；Ouro-1.4B在四次循环后达到60行，且至少可扩展至160行。这一发现意义重大：它表明模型并非缺乏能力，而是过早停止思考，且仅需极少量参数微调即可解锁深层计算潜力。该工作为理解Transformer深度利用机制提供了新视角，并为低成本提升长上下文推理能力开辟了实用路径。",
+  "tags": [
+    "LoRA",
+    "Transformer",
+    "长上下文",
+    "参数高效微调",
+    "推理"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练Transformer普遍存在深度利用不足问题，仅能可靠跟随1.4-3.6行上下文引用，增加循环层数无法有效改善。",
+      "在单个早期层上训练秩为8的LoRA适配器，同时冻结所有原始权重，即可将Qwen3-8B的24行链准确率从15.5%提升至99%。",
+      "该方法具有良好扩展性：更长训练的LoRA可处理50行，Ouro-1.4B经四次循环后可达60行甚至160行。",
+      "模型能力不足可能并非知识缺失，而是计算过早终止，极少量参数微调即可解锁深层推理潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-004",
+  "title": "The Price of Token Boundaries: Compression Certificates and Prediction",
+  "source_url": "https://arxiv.org/abs/2609.35869",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究预分词（pre-tokenisation）对文本压缩成本的影响，指出当不同分词器仅在相同边界条件下比较时，其压缩代价会被掩盖。作者提出通过从两侧界定最小 token 数量来衡量这一成本，分别在有和没有正则表达式边界规则的情况下进行。具体方法是对 token 出现赋予非负价格，通过最短路径和词汇预算选择得到下界，并对所有价格取最大值以恢复最优边界。该工作为理解分词边界对压缩效率的代价提供了理论工具，对 LLM 分词器设计与评估具有参考价值。",
+  "tags": [
+    "Tokenization",
+    "Compression",
+    "LLM",
+    "Information Theory"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预分词边界规则会带来可量化的压缩成本，但常被同边界比较所掩盖。",
+      "通过非负价格、最短路径和词汇预算选择可得到最小 token 数的下界。",
+      "对所有价格取最大值可恢复最优边界，为分词器评估提供新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

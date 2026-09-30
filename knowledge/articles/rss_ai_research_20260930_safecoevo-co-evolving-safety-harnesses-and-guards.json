@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-059",
+  "title": "SafeCoEvo: Co-Evolving Safety Harnesses and Guards for LLM Agents at Test-Time",
+  "source_url": "https://arxiv.org/abs/2609.36580",
+  "source_platform": "rss_ai_research",
+  "summary": "SafeCoEvo 是一篇针对 LLM Agent 测试时安全性的研究论文，提出了一种协同进化安全护栏（Safety Harnesses）与守卫（Guards）的框架。现有自进化方法通常依赖对固定且可重复访问的任务分布进行多轮优化，这与真实部署中的测试时适应存在本质差异——在真实场景中，Agent 只能利用已完成任务积累的经验，且任务分布不断变化、安全风险持续涌现。SafeCoEvo 的核心思路是在测试时让安全护栏和守卫协同进化：护栏负责约束 Agent 行为，守卫负责检测风险，二者在任务执行过程中相互促进、动态更新，从而在无需重复访问历史任务分布的前提下持续提升安全性。该工作值得关注，因为它直面 LLM Agent 落地部署中的关键痛点——安全机制无法在部署前穷尽所有风险，必须支持在线、持续、低成本的适应。它为构建更可靠的自主 Agent 系统提供了新的测试时安全范式，对 Agent 安全、持续学习与部署可靠性等方向具有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "AI Safety",
+    "Test-Time Adaptation",
+    "Self-Evolving"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自进化安全方法依赖固定且可重复访问的任务分布，与真实部署中仅能利用已完成任务经验的测试时场景存在根本差异。",
+      "SafeCoEvo 提出在测试时协同进化安全护栏与守卫，使安全机制能够随任务执行动态适应新风险。",
+      "该工作强调安全机制需支持在线、持续、低成本的适应，而非部署前的静态配置。",
+      "为 LLM Agent 在开放环境中的可靠部署提供了新的测试时安全范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-029",
+  "title": "ChronoSRL: Temporal Geometry for Self-Supervised Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2609.36238",
+  "source_platform": "rss_ai_research",
+  "summary": "ChronoSRL 是一篇来自 arXiv 的强化学习研究论文，提出了一种将时间几何显式引入评论家（critic）表征空间的自监督强化学习方法。传统对比式与生存式强化学习在度量状态-动作与目标之间的距离时，通常使用表征空间中的欧氏距离或相似度，但这些距离并不以时间单位衡量，导致空间上接近的目标在时间上可能非常遥远。ChronoSRL 的核心思想是让评论家的嵌入具备显式的时间几何结构，使状态-动作到目标的距离直接反映到达所需的时间步数，从而更准确地建模障碍、地形和智能体自身能力对时间成本的影响。该方法属于自监督学习范式，无需额外的时间标签即可学习时间感知的表征。其潜在价值在于提升长程目标导航、稀疏奖励任务和基于目标的强化学习中的策略学习效率与泛化能力，为强化学习中的表征学习提供了新的几何视角。",
+  "tags": [
+    "Reinforcement Learning",
+    "Self-Supervised Learning",
+    "Representation Learning",
+    "Temporal Geometry"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对比式与生存式强化学习的评论家表征空间距离不以时间单位度量，导致空间接近但时间遥远的误导性目标表示。",
+      "ChronoSRL 通过为评论家嵌入引入显式时间几何，使状态-动作与目标之间的距离直接对应到达所需时间。",
+      "该方法属于自监督范式，无需额外时间标签即可学习时间感知的表征，有望提升长程目标任务的策略学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

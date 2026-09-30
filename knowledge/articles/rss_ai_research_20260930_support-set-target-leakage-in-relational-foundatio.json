@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-043",
+  "title": "Support-Set Target Leakage in Relational Foundation Models during In-Context Learning: Impact, Detection, and Mitigation",
+  "source_url": "https://arxiv.org/abs/2609.36384",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了关系型基础模型在上下文学习（ICL）中的一种新型失败模式——支持集目标泄漏（Support-Set Target Leakage）。在关系型 ICL 中，模型以带标签的支持样本及其关联表格为条件进行预测，但当支持集中包含由目标派生、而在查询时不可用的特征列（即泄漏列）时，模型会学到虚假的依赖关系，导致预测性能虚高并在真实部署中失效。作者强调该问题与数据集构建泄漏、时间切分泄漏和表示学习泄漏有本质区别，属于推理阶段特有的泄漏类型。论文系统分析了该泄漏的影响机制，提出了检测方法，并给出缓解策略。该工作值得关注，因为关系型基础模型（如表格/多表联合推理模型）正被广泛用于企业数据分析和数据库问答场景，而支持集构造往往由用户或检索流程决定，极易无意引入目标派生列，造成评估失真与部署风险。该研究填补了 ICL 安全性与可靠性评估中的一个空白，对模型评测协议设计和实际系统防护具有直接指导意义。",
+  "tags": [
+    "ICL",
+    "Relational Foundation Models",
+    "Data Leakage",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "支持集目标泄漏是关系型 ICL 特有的推理阶段失败模式，区别于数据集构建、时间切分和表示学习阶段的泄漏。",
+      "当支持集中存在查询时不可用的目标派生列时，模型会依赖虚假特征，导致评估指标虚高而实际部署性能下降。",
+      "论文提出了针对该泄漏的检测与缓解方法，为关系型基础模型的可靠评测和部署提供了防护思路。",
+      "该问题凸显了 ICL 评估协议中支持集构造规范的重要性，用户或检索流程可能无意引入泄漏列。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

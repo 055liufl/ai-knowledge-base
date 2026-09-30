@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-015",
+  "title": "Mirror-Score: Calibrated, Inference-only Scoring Exposes the Limits of Sequence-compatibility Ranking in D-peptide Design",
+  "source_url": "https://arxiv.org/abs/2609.36057",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对D-肽（D-peptide）计算设计中的排序问题展开研究。D-肽兼具蛋白酶抗性与高靶标特异性，但计算设计方法尚不成熟。此前提出的Mirror-Peptidizer流程通过靶标镜像反射、骨架生成和ProteinMPNN序列设计进行虚拟筛选，但其直接使用ProteinMPNN负对数似然（NLL）排序并未经过实测亲和力验证，导致9个MDM2设计肽中仅4个可检测到结合。本文提出Mirror-Score，一种经过校准、仅需推理的打分方法，旨在揭示序列兼容性排序在D-肽设计中的局限性。该工作对计算蛋白质设计领域具有重要警示意义：仅依赖序列层面的似然度可能无法可靠预测实际结合能力，需要更贴近物理化学本质的评分机制。其价值在于为D-肽及更广泛的镜像蛋白设计提供了更可靠的评估视角，并可能推动后续打分函数的校准与验证标准建立。",
+  "tags": [
+    "Protein Design",
+    "D-peptide",
+    "ProteinMPNN",
+    "Binding Affinity"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ProteinMPNN的原始NLL排序未经验证，不能可靠预测D-肽的实际结合亲和力，9个MDM2设计仅4个可检测结合。",
+      "Mirror-Score通过校准和仅推理的打分方式，暴露了序列兼容性排序在D-肽设计中的根本局限。",
+      "D-肽计算设计需要超越序列似然的评分机制，应结合更贴近结合物理化学的指标。",
+      "该研究为镜像蛋白设计流程的评估与改进提供了重要的基准和警示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

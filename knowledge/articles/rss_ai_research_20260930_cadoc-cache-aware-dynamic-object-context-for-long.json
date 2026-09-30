@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-109",
+  "title": "CADOC: Cache-Aware Dynamic Object Context for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2609.37012",
+  "source_platform": "rss_ai_research",
+  "summary": "CADOC（Cache-Aware Dynamic Object Context）是一篇针对长时程智能体（long-horizon agent）上下文瓶颈问题的研究论文。论文指出，长时程智能体的核心瓶颈在于上下文：每次请求都会重发历史记录，窗口大小限制了任务长度，且随着历史增长推理质量会下降。已有方法用紧凑的检索卡片（retrieval Cards）替代结构化对象来缩短提示词并保留原始内容可检索性，但编辑历史会破坏前缀缓存（prefix-cache）的复用，而此前的可恢复方法依赖对未来复用情况的预测或预设时间间隔来决定编辑时机。CADOC 提出一种缓存感知的动态对象上下文机制，旨在在压缩上下文与保持前缀缓存复用之间取得平衡，从而提升长时程智能体的效率与推理稳定性。该工作值得关注，因为它直击长时程 Agent 部署中的成本与性能痛点，将缓存复用这一系统级因素纳入上下文管理策略，对构建高效、可扩展的智能体系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "KV Cache",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体的核心瓶颈是上下文：历史重发、窗口限制与推理退化共同制约任务长度与质量。",
+      "用紧凑检索卡片替代结构化对象可缩短提示词并保留原始内容可检索性，但编辑历史会破坏前缀缓存复用。",
+      "现有可恢复方法依赖未来复用预测或预设间隔来决定编辑时机，缺乏对缓存复用的直接感知。",
+      "CADOC 将缓存感知引入动态对象上下文管理，在压缩上下文与保持前缀缓存复用之间寻求平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

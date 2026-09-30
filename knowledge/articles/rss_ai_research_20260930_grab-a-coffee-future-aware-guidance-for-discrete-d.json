@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20260930-010",
+  "title": "Grab a Coffee: Future-Aware Guidance for Discrete Diffusion with Compiled Objectives",
+  "source_url": "https://arxiv.org/abs/2609.35924",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「Grab a Coffee」的未来感知引导方法，用于离散扩散模型的序列生成。离散扩散模型通过并行迭代解析多个 token 来生成序列，相比从左到右的自回归生成具有更高的灵活性。然而，使用序列级目标（如奖励函数）引导这一过程非常困难，因为某个未解析 token 的价值取决于它能与其他 token 组合成高奖励序列的方式，穷举所有可能的补全会导致引导计算量随序列长度呈指数级增长。该工作针对这一核心瓶颈，提出了「编译目标」（Compiled Objectives）机制，通过预先编译序列级目标来近似未来奖励，从而在保持引导质量的同时避免指数级枚举。这一方法对于需要可控生成、奖励对齐或约束满足的离散序列任务（如分子设计、代码生成、文本规划）具有重要意义，为离散扩散模型的可控生成提供了新的思路。",
+  "tags": [
+    "Diffusion",
+    "Controllable Generation",
+    "Sequence Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离散扩散模型并行生成 token 的特性使得序列级目标引导面临组合爆炸问题，单个 token 的价值依赖于所有可能的后续补全。",
+      "提出「编译目标」机制，通过预编译序列级目标来近似未来奖励，避免在引导过程中穷举所有补全路径。",
+      "该方法为离散扩散模型的可控生成提供了可扩展的引导方案，有望应用于分子设计、代码生成等需要序列级约束的任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

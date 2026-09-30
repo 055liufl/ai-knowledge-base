@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-105",
+  "title": "Dual-Channel Robust Group-Relative Policy Optimization via Advantage and Sequence-Weight Estimation",
+  "source_url": "https://arxiv.org/abs/2609.36944",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 RoVR-GSPO，一种针对群体相对策略优化（如 GRPO）的双通道鲁棒优化器。现有方法依赖奖励导出的优势值和序列级似然权重，但这两者都对局部异常值敏感：极端奖励在组归一化后会压缩干净响应之间的对比度，而 token 级对数比扰动会改变序列权重和裁剪决策。RoVR-GSPO 将这两类失效模式分开处理，分别对优势估计和序列权重进行鲁棒化设计，从而提升策略优化的稳定性。该工作值得关注，因为它直击 RLHF/RLVR 训练中奖励噪声与序列级权重脆弱性的核心痛点，对提升大模型对齐与推理训练的鲁棒性具有实用价值。",
+  "tags": [
+    "RLHF",
+    "Policy Optimization",
+    "Robustness",
+    "LLM Training"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "群体相对策略优化中，极端奖励经组归一化后会削弱干净响应间的对比信号，导致优势估计失真。",
+      "token 级对数比扰动会传导至序列级权重并影响裁剪决策，是另一类独立的失效模式。",
+      "RoVR-GSPO 采用双通道设计，将优势估计与序列权重估计的鲁棒化分开处理，避免相互干扰。",
+      "该工作为 RLHF/RLVR 训练中的奖励噪声与权重脆弱性问题提供了针对性的鲁棒优化思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

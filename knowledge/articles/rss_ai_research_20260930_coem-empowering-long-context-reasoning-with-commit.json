@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-103",
+  "title": "CoEM: Empowering Long-Context Reasoning with Commit-on-Evidence Memory",
+  "source_url": "https://arxiv.org/abs/2609.36935",
+  "source_platform": "rss_ai_research",
+  "summary": "CoEM（Commit-on-Evidence Memory）是一篇来自 arXiv 的论文，针对大语言模型在长上下文推理任务中性能随上下文长度增加而下降的问题提出解决方案。现有方法通常采用分块处理输入并在模型上下文中维护有界的文本记忆，但这种做法存在一个关键缺陷：过早的信息压缩会丢弃对后续推理至关重要的细节。CoEM 的核心思想是引入\"证据触发提交\"机制，即只有当证据充分时才将信息提交到记忆中，从而避免过早压缩导致的关键信息丢失。该工作对长上下文推理、长程任务处理以及 LLM 记忆机制研究具有重要价值，尤其适用于需要处理超长文档、多轮复杂推理或长周期任务的场景。",
+  "tags": [
+    "LLM",
+    "Long-Context",
+    "Memory",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有分块处理加有界文本记忆的方法存在过早压缩问题，会丢弃后续推理所需的关键细节",
+      "CoEM 提出按证据提交记忆的机制，仅在证据充分时才将信息写入记忆，减少信息损失",
+      "该工作聚焦长上下文推理这一 LLM 核心瓶颈，对长程复杂任务具有实际意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

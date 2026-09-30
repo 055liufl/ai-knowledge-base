@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-114",
+  "title": "FedLAFP: Low-Rank Aggregation Meets Full-Rank Personalization in Federated Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2609.37033",
+  "source_platform": "rss_ai_research",
+  "summary": "FedLAFP 是一篇关于联邦参数高效微调（Federated PEFT）的学术论文，针对统计异质性导致单一全局适配器无法满足个性化预测的问题，提出了一种新的聚合与个性化分离框架。现有方法通常对共享适配器和私有适配器采用相同的低秩结构，忽略了二者在聚合与个性化需求上的本质差异。FedLAFP 的核心创新在于将低秩聚合与全秩个性化相结合：共享部分采用低秩结构以降低通信开销并促进跨客户端聚合，而个性化部分则采用全秩结构以充分捕捉每个客户端的私有数据分布。这一设计在联邦学习场景下平衡了通信效率与个性化性能，对于在隐私约束下微调大模型的研究具有重要参考价值。该工作属于联邦学习与参数高效微调交叉领域的前沿探索，有望推动去中心化场景下大模型个性化部署的发展。",
+  "tags": [
+    "Federated Learning",
+    "PEFT",
+    "LoRA",
+    "Personalization"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共享适配器与私有适配器对秩结构的需求不同：共享部分适合低秩以利于聚合，私有部分需要全秩以充分个性化",
+      "联邦微调中统计异质性使得单一全局适配器难以兼顾所有客户端，个性化与聚合需要解耦设计",
+      "低秩聚合与全秩个性化的结合可在通信效率与个性化性能之间取得更好平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

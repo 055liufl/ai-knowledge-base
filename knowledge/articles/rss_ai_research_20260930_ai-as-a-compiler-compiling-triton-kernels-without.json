@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-083",
+  "title": "AI as a Compiler: Compiling Triton kernels without the Triton compiler",
+  "source_url": "https://arxiv.org/abs/2609.36800",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“AI lowering”的新范式，探索用大语言模型替代传统编译器后端中的优化与降级流水线。作者以 Triton 到 NVIDIA PTX 的翻译为案例，构建了一个 LLM 智能体系统，直接将 Triton 内核翻译为 PTX 汇编，而无需使用 Triton 官方编译器。系统包含一个用于评估候选 PTX 正确性与性能的环境，以及一个智能体框架，通过迭代反馈引导 LLM 生成可运行的 PTX 代码。该研究的意义在于：传统编译器后端开发与维护成本极高，且难以跟上编程模型、工作负载和加速器的快速演进；若 LLM 能可靠地完成降级任务，将大幅降低新硬件与编程模型的支持门槛，并可能催生更灵活、自适应的编译基础设施。尽管当前方法在复杂内核上可能仍有正确性与性能差距，但它为“AI 作为编译器”这一方向提供了早期实证，值得编译器、体系结构和 LLM 系统研究者关注。",
+  "tags": [
+    "LLM",
+    "Compiler",
+    "Triton",
+    "PTX",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出“AI lowering”概念，用 LLM 智能体直接完成从 Triton 到 PTX 的降级，绕过传统编译器后端。",
+      "构建了包含候选 PTX 评估环境和智能体反馈循环的完整实验框架，验证了可行性。",
+      "该方法有望显著降低新硬件与编程模型的后端支持成本，但正确性和性能仍是关键挑战。",
+      "为编译器与 LLM 交叉领域开辟了新方向，可能推动自适应、可进化的编译基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

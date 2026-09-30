@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-062",
+  "title": "SAKI: Maximal-Coupling-Routed Teacher Supervision for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.36601",
+  "source_platform": "rss_ai_research",
+  "summary": "SAKI（Supervision Allocation with KL-constrained Interpolation）是一种针对在线策略蒸馏（On-Policy Distillation, OPD）的改进方法，旨在解决弱学生在自身生成轨迹中可能访问到与教师模型不匹配的前缀、导致监督信号代表性不足的问题。该方法结合了KL约束的教师引导式rollout与最大耦合（maximal coupling）技术，并利用实际发生的接受/纠正事件来路由token级别的监督信号。其核心创新在于通过最大耦合实现学生与教师轨迹之间的对齐采样，从而在保持在线策略训练优势的同时，提升监督信号的质量和针对性。该工作对于模型压缩、知识蒸馏以及大语言模型的高效训练具有潜在价值，尤其适用于需要将大模型能力迁移到小模型的场景。",
+  "tags": [
+    "知识蒸馏",
+    "LLM",
+    "训练优化"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏中弱学生可能偏离教师分布，导致监督信号不具代表性",
+      "SAKI通过KL约束的教师引导rollout和最大耦合实现轨迹对齐",
+      "利用接受/纠正事件进行token级监督路由，提升蒸馏效率",
+      "该方法为知识蒸馏中的状态不匹配问题提供了新的解决思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

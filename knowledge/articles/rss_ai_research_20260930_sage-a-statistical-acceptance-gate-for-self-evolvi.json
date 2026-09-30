@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-012",
+  "title": "SAGE: A Statistical Acceptance Gate for Self-Evolving Agents",
+  "source_url": "https://arxiv.org/abs/2609.36043",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SAGE（Statistical Acceptance Gate），针对基于 LLM 的自进化智能体在编辑持久化技能文档（编码工作流、工具使用规则与决策逻辑）时存在的验证门控缺陷。现有方法聚焦于优化器（提出候选编辑），而门控仍采用朴素规则：只要聚合验证分数提升就接受编辑。作者指出该规则存在严重问题，因为聚合分数提升可能源于噪声或过拟合，导致技能文档被错误编辑并损害智能体长期性能。SAGE 引入统计接受门控，通过统计显著性检验判断编辑带来的提升是否真实可靠，而非偶然波动。该工作填补了自进化智能体循环中门控机制的研究空白，对提升智能体自我改进的鲁棒性和可靠性具有重要意义，尤其适用于需要持续学习与适应的复杂任务场景。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Self-Evolution",
+    "Statistical Testing"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:42:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自进化智能体的门控规则仅依赖聚合验证分数提升，容易接受由噪声或过拟合导致的虚假改进。",
+      "SAGE 通过统计显著性检验来门控编辑，确保接受的编辑带来真实且可靠的性能提升。",
+      "该工作将研究焦点从优化器转向门控机制，填补了自进化智能体循环中的关键空白。",
+      "统计接受门控有望提升智能体在持续自我改进过程中的鲁棒性和长期稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

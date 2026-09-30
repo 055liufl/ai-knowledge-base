@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-119",
+  "title": "Learning from Viable Failure Prefixes: Milestone Viability Potential Policy Optimization for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2609.37111",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长时程 LLM 智能体在稀疏、延迟奖励下的强化学习信用分配问题提出新方法。现有基于组的方法（如 GRPO、GiGPO）通过比较 rollout 回报或重复锚点状态来缓解信用分配难题，但当被比较的回报缺乏变化时会失效，作者将这一现象定义为“零信用失败”（zero-credit failure）。论文指出，在训练早期，许多失败轨迹中其实包含有价值的中间决策，即“可行失败前缀”（viable failure prefixes），这些前缀虽未导向最终成功，却具备通往成功的潜力。基于此，作者提出里程碑可行性潜力策略优化（Milestone Viability Potential Policy Optimization），通过识别并利用这些可行失败前缀来为中间步骤分配信用，从而在稀疏奖励场景下提升长时程智能体的学习效率。该工作对 LLM 智能体强化学习中的信用分配机制具有理论补充意义，并为训练稳定性与样本效率提供了新的优化视角，值得关注长时程决策与 RL 微调的研究者和开发者参考。",
+  "tags": [
+    "LLM Agent",
+    "Reinforcement Learning",
+    "Credit Assignment",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 GRPO、GiGPO 等组方法在回报无变化时会出现零信用失败，导致早期训练无法有效学习",
+      "失败轨迹中常包含有价值的中间决策，即可行失败前缀，可作为信用分配的额外信号",
+      "提出里程碑可行性潜力策略优化，利用可行失败前缀缓解稀疏奖励下的信用分配难题",
+      "该方法为长时程 LLM 智能体的强化学习训练稳定性和样本效率提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

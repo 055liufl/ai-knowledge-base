@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-106",
+  "title": "REALHOP: Rethinking Multi-Hop Reasoning Evaluation via Behavioral Auditing",
+  "source_url": "https://arxiv.org/abs/2609.36984",
+  "source_platform": "rss_ai_research",
+  "summary": "REALHOP 是一篇针对多跳推理评测方法提出反思的 arXiv 论文。现有多跳推理基准通常围绕预设的推理链构造问题，并将答案正确与否作为模型是否真正执行了预期组合推理的唯一证据。然而，答案正确并不能证明模型确实依赖了每条预期推理链所对应的证据，模型可能通过捷径、记忆或虚假相关得到正确答案。REALHOP 提出通过行为审计（Behavioral Auditing）来重新审视多跳推理评测，即从模型行为层面检验其是否真正进行了多跳组合，而非仅看最终答案。该工作对 RAG、长上下文推理和复杂问答系统的评测可信度具有重要意义，提醒研究者和开发者：仅凭准确率评估多跳推理能力可能产生系统性高估，需要引入更细粒度的行为诊断方法。",
+  "tags": [
+    "Multi-Hop Reasoning",
+    "Evaluation",
+    "LLM",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅凭答案正确性无法证明模型真正执行了预期的多跳推理链，可能掩盖捷径或记忆行为。",
+      "行为审计为多跳推理评测提供了比准确率更细粒度的诊断视角，有助于识别评测中的虚假成功。",
+      "该工作对 RAG 和长上下文问答系统的可信评测具有直接启示，提示需要重新设计基准与指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

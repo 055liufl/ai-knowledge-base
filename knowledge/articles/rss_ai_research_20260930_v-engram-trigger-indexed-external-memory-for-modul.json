@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-129",
+  "title": "V-Engram: Trigger-Indexed External Memory for Modular Text-to-Image Personalization",
+  "source_url": "https://arxiv.org/abs/2609.37198",
+  "source_platform": "rss_ai_research",
+  "summary": "V-Engram 提出了一种面向模块化文本到图像个性化（text-to-image personalization）的触发索引外部记忆机制。现有预训练文生图模型虽具备广泛视觉知识，但难以仅凭少量参考图可靠地习得并精炼特定视觉身份，同时保持构图控制能力。现有方法存在明显权衡：基于 token embedding 的方法紧凑但身份拟合不足；基于 adapter 的方法通过持久化权重更新提升保真度，却带来存储成本高、概念组合时相互干扰的问题。V-Engram 的核心思路是将个性化知识从模型权重中解耦，改为存放在外部记忆库中，并通过触发词（trigger）进行索引与检索，从而在推理时按需注入特定视觉身份。这种设计既避免了逐概念存储整套适配器权重的高昂开销，又降低了多概念组合时的参数冲突风险，同时保留了对构图与场景的控制能力。该工作对个性化生成、模块化可控生成以及多概念组合场景具有参考价值，尤其适合需要低成本扩展大量个性化概念的工程落地场景。",
+  "tags": [
+    "Text-to-Image",
+    "Personalization",
+    "External Memory",
+    "Diffusion",
+    "Modular Generation"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将个性化视觉身份从模型权重中解耦，存入触发索引的外部记忆库，避免逐概念持久化权重更新。",
+      "相比 token embedding 方法提升身份拟合能力，相比 adapter 方法降低存储成本与概念组合干扰。",
+      "通过触发词索引实现按需检索与注入，兼顾个性化保真度与构图控制能力。",
+      "为多概念模块化组合与大规模个性化概念扩展提供了更可扩展的技术路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-086",
+  "title": "Calibrate the Decisions That Change the Future: On-Policy Post-Training Quantization for Multimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2609.36828",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 OnPTQ，一种面向多模态大语言模型（MLLM）的在线策略训练后量化（PTQ）框架。传统 PTQ 方法在标定阶段通常使用固定序列和局部重建目标，忽略了自回归生成中的反馈效应：量化导致的 token 变化会改变前缀，进而影响后续所有生成状态。作者指出，仅靠在线策略覆盖并不足够，因为许多决策不匹配对未来生成影响甚微。OnPTQ 通过在线策略方式标定那些真正改变未来生成轨迹的关键决策，从而在降低部署成本的同时保持模型性能。该工作针对 MLLM 量化部署中的核心痛点，将量化误差与自回归生成动态结合，为高效推理提供了新思路，对模型压缩与边缘部署领域具有重要参考价值。",
+  "tags": [
+    "Quantization",
+    "Multimodal LLM",
+    "Post-Training",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 PTQ 标定忽略自回归反馈：量化引起的 token 变化会改变前缀并影响未来生成状态。",
+      "仅靠在线策略覆盖不足以解决问题，因为许多决策不匹配对未来生成影响很小。",
+      "OnPTQ 聚焦于标定那些真正改变未来生成轨迹的关键决策，以提升量化后 MLLM 的生成质量。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

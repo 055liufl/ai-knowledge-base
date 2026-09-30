@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-095",
+  "title": "Beyond Sub-Gaussian Detector Scores: Robust Weighted Profile-Loss Change Point Detection for Human-LLM Text Segmentation",
+  "source_url": "https://arxiv.org/abs/2609.36888",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 RWCP（Robust Weighted Profile-Loss Change Point Detection）的新方法，用于在混合人类与 LLM 生成的文档中定位作者身份的转换点。现有方法通常依赖检测器分数进行加权均值对比，但这类方法对极端分数非常敏感，容易导致边界定位错误；而直接使用稳健中心替代均值又会掩盖边界错位对总体目标函数的影响。RWCP 通过结合截断可靠性权重（capped reliability weights）与 Huber 型 profile 增益，在保持对异常检测分数鲁棒性的同时，仍能准确反映边界位置变化对目标函数的影响。该研究属于 AI 文本取证与 LLM 内容溯源交叉领域，对学术诚信审查、内容审核、人机协作写作分析等场景具有实际价值。随着 LLM 生成文本日益普及，如何可靠地识别文档中人类与机器撰写的分界点成为重要问题，而检测器分数在不同文本单元上的可靠性差异使这一任务极具挑战。该工作为鲁棒变点检测在文本分割中的应用提供了新的统计建模范式，值得关注。",
+  "tags": [
+    "LLM",
+    "Change Point Detection",
+    "Text Segmentation",
+    "Robust Statistics"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有加权均值对比方法对检测器极端分数敏感，容易导致作者身份边界定位错误",
+      "直接使用稳健中心替代均值会掩盖边界错位对总体目标函数的影响，损失定位精度",
+      "RWCP 结合截断可靠性权重与 Huber profile 增益，在鲁棒性与目标函数可解释性之间取得平衡",
+      "该方法面向混合人类-LLM 文档的作者转换点定位，可应用于学术诚信与内容溯源场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

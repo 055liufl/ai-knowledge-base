@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20260930-050",
+  "title": "Rethinking Reasoning Paths as Phase-Structured Trajectories",
+  "source_url": "https://arxiv.org/abs/2609.36461",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种重新思考大语言模型推理路径的分析框架，将推理路径视为“相位结构化轨迹”（Phase-Structured Trajectories）。现有方法通常将每个中间状态直接标记为最终答案正确与否，并在异构问题上训练探针，作者认为这种协议掩盖了推理动态，原因有二：一是正确性预测可能利用问题层面的变异，二是忽略了推理过程中状态演化的阶段性结构。该工作通过将推理路径分解为不同相位，旨在更精细地刻画隐藏状态随推理步骤的变化规律，从而提升对模型推理机制的理解。这项研究对于可解释性、推理过程监控以及提升LLM复杂问题求解能力具有潜在价值，尤其适合关注模型内部表征与推理动态的研究者和开发者。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Interpretability",
+    "Hidden States"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:44:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有将中间状态直接标记为最终答案正确性的方法会混淆问题级变异与推理动态。",
+      "推理路径应被建模为具有相位结构的轨迹，而非独立同分布的中间状态序列。",
+      "相位结构化分析有望更准确地揭示大语言模型多步推理中的隐藏状态演化规律。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-030",
+  "title": "CoRe: Co-Evolving Reward Models for Mitigating Latent Reward Hacking in Video Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2609.36245",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CoRe（Co-Evolving Reward Models），针对视频扩散模型对齐中的潜在奖励黑客问题。潜在奖励模型（LRM）通过在潜空间中直接对中间状态打分，实现高效对齐，但作者发现，针对固定潜在奖励进行优化会迅速导致潜在奖励黑客：预测奖励保持高位，而感知质量和运动质量却不断恶化。分析指出，分布逃逸是核心原因——在数百次更新内，生成器便偏离了奖励模型训练时覆盖的分布范围，使奖励信号失去判别力。CoRe 通过让奖励模型与生成器协同演化来缓解该问题，使奖励模型持续跟踪生成器分布的变化，从而维持奖励信号的有效性。该工作揭示了视频扩散模型对齐中一个被忽视的失效模式，并提供了可操作的协同演化训练范式，对视频生成、扩散模型对齐和奖励建模方向具有重要参考价值。",
+  "tags": [
+    "Diffusion",
+    "Reward Model",
+    "Video Generation",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定潜在奖励模型在视频扩散模型对齐中会迅速引发潜在奖励黑客，表现为奖励虚高而感知与运动质量下降。",
+      "分布逃逸是潜在奖励黑客的核心成因：生成器在数百次更新后即偏离奖励模型训练分布，导致奖励信号失效。",
+      "CoRe 通过奖励模型与生成器协同演化，使奖励模型持续适应生成器分布变化，从而缓解奖励黑客。",
+      "该工作为视频扩散模型对齐提供了新的训练范式，并强调奖励模型需与生成器同步演化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

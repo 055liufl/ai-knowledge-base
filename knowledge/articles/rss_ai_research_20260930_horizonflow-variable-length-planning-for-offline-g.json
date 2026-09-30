@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-097",
+  "title": "HorizonFlow: Variable-Length Planning for Offline Goal-Conditioned RL",
+  "source_url": "https://arxiv.org/abs/2609.36896",
+  "source_platform": "rss_ai_research",
+  "summary": "HorizonFlow 是一项针对离线目标条件强化学习（offline goal-conditioned RL）的研究工作，聚焦于生成式规划中的轨迹修复（trajectory inpainting）方法。现有方法通常需要在生成规划内容之前预先指定规划视界（planning horizon），但合适的视界实际上取决于具体路径本身：视界过短会迫使模型产生不可行的状态转移，视界过长则会引入冗余动作。HorizonFlow 提出可变长度规划（Variable-Length Planning），旨在让规划视界随路径自适应调整，从而在保证可行性的同时避免冗余运动。该工作值得关注，因为它触及了离线目标条件 RL 中一个被长期忽视但影响显著的设计问题——视界选择与路径内容的耦合关系，并为生成式规划方法提供了更灵活的建模范式，有望提升长程任务与复杂目标导航场景下的规划质量与效率。",
+  "tags": [
+    "Reinforcement Learning",
+    "Offline RL",
+    "Goal-Conditioned RL",
+    "Generative Planning",
+    "Trajectory Inpainting"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有轨迹修复式规划方法在生成内容前固定规划视界，但最优视界本质上依赖于具体路径，存在结构性缺陷。",
+      "视界过短会导致不可行的状态转移，视界过长会引入冗余运动，二者都会损害规划质量。",
+      "HorizonFlow 提出可变长度规划，使规划视界能够随路径自适应调整，兼顾可行性与简洁性。",
+      "该工作为离线目标条件强化学习中的生成式规划提供了更灵活的建模范式，对长程规划任务具有潜在价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

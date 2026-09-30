@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-124",
+  "title": "When Tools Silently Lie: Evaluating and Mitigating Blind Compliance in Tool-Augmented Data Agents",
+  "source_url": "https://arxiv.org/abs/2609.37153",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ToxicBench，用于评估工具增强型数据代理在面对工具输出错误时的行为。现有代理通常依赖工具返回结果做分析决策，但工具可能成功执行却返回看似合理却错误的证据（如数值、标签、schema、检索错误）。ToxicBench 同时衡量代理的\"检查行为\"（是否验证证据）和\"采纳行为\"（最终是否采用错误答案），从而揭示\"盲目合规\"（blind compliance）这一失败模式。该研究的意义在于：当前工具调用评测多关注任务成功率，忽视了代理对错误证据的辨别与抵抗能力，而这类静默错误在真实数据分析场景中危害极大。通过系统化基准与缓解方法，本文为构建更可信、更审慎的工具增强代理提供了评估框架与改进方向，对数据代理、Agent 可靠性及工具使用安全研究具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Benchmark",
+    "Trustworthiness",
+    "Data Agent"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:47:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具成功执行不等于证据正确，代理需具备区分可信与需验证输出的能力",
+      "ToxicBench 将评估拆分为检查行为与采纳行为两个维度，更细粒度地刻画盲目合规",
+      "覆盖数值、标签、schema、检索四类错误，系统化暴露代理对静默错误的脆弱性",
+      "该工作为工具增强代理的可靠性评估与缓解提供了可复用的基准与方法论"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

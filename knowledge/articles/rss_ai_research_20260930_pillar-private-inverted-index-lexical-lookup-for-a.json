@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-038",
+  "title": "PILLAR: Private Inverted-Index Lexical Lookup for Augmented Retrieval",
+  "source_url": "https://arxiv.org/abs/2609.36326",
+  "source_platform": "rss_ai_research",
+  "summary": "PILLAR 是一篇关于隐私保护检索增强生成（PPRAG）的学术论文，提出了一种基于私有信息检索（PIR）的系统，用于在 RAG 场景中保护用户查询隐私。传统 RAG 流程中，用户查询会被发送给语料库托管方，导致查询内容及访问模式泄露。PILLAR 允许客户端从服务器持有的公开语料库中检索与查询最相似的 k 篇文档，同时服务器无法获知查询词项或访问模式。该工作针对现有 PPRAG 方案在效率、安全性或实用性上的不足进行改进，将倒排索引与私有信息检索结合，实现词法级别的隐私保护检索。其价值在于：随着 RAG 在企业知识库、医疗、法律等敏感场景的广泛应用，查询隐私成为关键瓶颈，PILLAR 为构建可信的隐私保护检索系统提供了新思路，对隐私计算与信息检索交叉领域具有参考意义。",
+  "tags": [
+    "RAG",
+    "Privacy",
+    "PIR",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:43:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG 的查询隐私问题被长期忽视，服务器可同时获知查询内容和访问模式",
+      "PILLAR 将私有信息检索（PIR）与倒排索引结合，实现词法级隐私保护检索",
+      "系统保证服务器对查询词项和访问模式均无感知，适用于敏感语料场景",
+      "该方向是隐私计算与检索增强生成交叉的重要探索，但实际部署效率仍需验证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

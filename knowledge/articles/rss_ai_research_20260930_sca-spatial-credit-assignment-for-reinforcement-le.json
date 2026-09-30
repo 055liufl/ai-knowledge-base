@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20260930-104",
+  "title": "SCA: Spatial Credit Assignment for Reinforcement Learning of GUI Agents",
+  "source_url": "https://arxiv.org/abs/2609.36939",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SCA（Spatial Credit Assignment，空间信用分配）的强化学习方法，用于训练 GUI 智能体（GUI Agents）。GUI 智能体需要将自然语言指令落地到可视化界面上的具体操作，现有基于组相对策略优化（如 GRPO）的方法通过比较同一 GUI 状态下多个采样响应的奖励来改进动作预测，但存在两个关键缺陷：一是二值化的奖励评估将空间上不同的失败点击视为完全相同，无法区分\"差一点就点对\"和\"完全点错\"的差异；二是当所有采样点击都失败时，组内奖励全部为零，无法提供任何相对梯度信号，导致学习停滞。SCA 通过引入空间维度的信用分配机制，对失败动作在空间位置上的接近程度进行细粒度建模，从而在全部失败的情况下仍能提供有意义的相对信号，并区分不同失败模式的质量差异。该工作对 GUI 自动化、多模态智能体训练以及稀疏奖励下的强化学习均具有参考价值，有望提升智能体在复杂界面上的操作精度与样本效率。",
+  "tags": [
+    "GUI Agent",
+    "Reinforcement Learning",
+    "Credit Assignment",
+    "Multimodal",
+    "GRPO"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:46:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有组相对强化学习对 GUI 点击采用二值奖励，无法区分空间上不同的失败点击，丢失了细粒度学习信号",
+      "当所有采样动作均失败时，组内奖励全为零，导致相对策略优化失去梯度信号，训练效率低下",
+      "SCA 通过空间信用分配为失败动作提供基于空间接近度的相对信号，缓解稀疏奖励问题",
+      "该方法有望提升 GUI 智能体在复杂界面上的动作预测精度与样本效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

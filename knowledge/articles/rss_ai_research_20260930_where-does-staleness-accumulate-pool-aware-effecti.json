@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20260930-088",
+  "title": "Where Does Staleness Accumulate? Pool Aware Effective Staleness Control for Asynchronous RL in LLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2609.36830",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型后训练中全异步强化学习（RL）的陈旧度（staleness）问题。异步RL通过将轨迹生成（rollout）与策略优化重叠执行来提升资源利用率，但训练器持续更新策略时，已生成并排队的轨迹会引入策略滞后（policy lag）。作者深入分析了这种滞后在轨迹生命周期中如何累积，并提出在保持异步执行墙钟时间优势的前提下控制陈旧度的方法。该工作对于提升LLM后训练效率、稳定异步RL训练具有重要价值，尤其适合关注大规模模型训练基础设施与RL算法优化的研究者。",
+  "tags": [
+    "RL",
+    "LLM",
+    "异步训练",
+    "后训练",
+    "策略优化"
+  ],
+  "author": null,
+  "published_at": "2026-09-30T14:40:12Z",
+  "collected_at": "2026-09-30T14:45:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全异步RL通过重叠rollout生成与策略优化提升资源利用率，但会引入策略滞后。",
+      "策略滞后在轨迹生命周期中会累积，需要针对性地控制。",
+      "控制陈旧度可以在不牺牲异步执行墙钟时间优势的前提下实现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
