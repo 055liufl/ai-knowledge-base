@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-124",
+  "title": "PTNO: Training Neural Operators with Noisy Monte Carlo Estimates for Particle Transport Problems",
+  "source_url": "https://arxiv.org/abs/2609.40090",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出粒子输运神经算子（PTNO），一种可直接从含噪、低成本的蒙特卡洛（MC）估计中学习粒子输运代理模型的神经算子框架。粒子输运在多次散射条件下是辐射传输与等离子体物理的核心问题，但高保真 MC 模拟需要追踪数量极其庞大的粒子，计算代价高昂。现有基于学习的代理模型虽能摊销这一成本，却通常依赖昂贵且已充分收敛的 MC 解作为训练数据。PTNO 的关键创新在于绕开对高质量标签的依赖，直接利用噪声大但成本低的 MC 估计进行训练，从而大幅降低数据生成开销。这一思路对科学机器学习与计算物理交叉领域具有重要价值：它把「噪声标签学习」与「算子学习」结合，为高维、多尺度物理仿真提供了一条低成本路径。若方法在精度与稳定性上得到验证，将可推广至辐射传输、等离子体、中子输运等依赖 MC 采样的领域，显著加速科学计算工作流。",
+  "tags": [
+    "Neural Operator",
+    "Monte Carlo",
+    "Scientific ML",
+    "Particle Transport"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:16:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTNO 首次尝试直接从含噪、低成本的蒙特卡洛估计中训练神经算子，避免了对高成本收敛 MC 解的依赖",
+      "该方法将噪声标签学习与算子学习结合，为粒子输运代理建模提供了低成本数据路径",
+      "若验证有效，可推广至辐射传输、等离子体物理、中子输运等依赖 MC 采样的科学计算领域",
+      "核心挑战在于如何在强噪声监督下保持算子学习的精度与训练稳定性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

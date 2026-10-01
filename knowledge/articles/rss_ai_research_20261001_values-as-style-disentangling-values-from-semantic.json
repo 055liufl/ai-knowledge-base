@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-107",
+  "title": "Values as Style: Disentangling Values from Semantics with One-Way Mixing for Low-Damage LLM Steering",
+  "source_url": "https://arxiv.org/abs/2609.39701",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为「Values as Style」的方法，旨在解决大语言模型价值引导中的核心难题：如何在改变模型规范性优先级（价值观）的同时，保持对场景、事实和任务约束（语义内容）的忠实。传统激活编辑方法往往同时改变价值观和语义，导致模型输出偏离原始任务。作者在冻结的残差状态上构建了一个可编辑的语义-价值接口，并设计了一条单向的语义到价值通路，使价值识别能够基于上下文进行。通过停止梯度（stop-gradient）阻断反馈、交换一致性（swap consistency）和主题去混淆（topic de-confounding）等机制，该方法实现了对价值观的独立操控。这项研究值得关注，因为它为LLM对齐和可控生成提供了一种更精细的干预手段，有望在减少对模型通用能力损害的前提下实现价值引导，对AI安全、伦理对齐和可解释性研究具有重要价值。",
+  "tags": [
+    "LLM Steering",
+    "Alignment",
+    "Interpretability",
+    "Activation Editing"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出单向语义到价值通路，将价值识别与语义内容解耦，实现低损伤的LLM价值引导。",
+      "通过停止梯度、交换一致性和主题去混淆等机制，确保价值编辑不干扰场景、事实和任务约束。",
+      "在冻结残差状态上构建可编辑接口，为模型对齐和可控生成提供了更精细的干预方式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

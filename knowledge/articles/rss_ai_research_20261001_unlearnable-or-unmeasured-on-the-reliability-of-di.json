@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-126",
+  "title": "Unlearnable, or Unmeasured? On the Reliability of Difficulty Labels in RLVR",
+  "source_url": "https://arxiv.org/abs/2609.40115",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了 RLVR（可验证奖励强化学习）中所谓的「不可学习」现象。此前研究认为，某些困难提示即使在偶尔产生正确答案的情况下，仍然对学习具有抵抗力。作者发现，这些受影响的提示实际上确实能够改进，其学习速率约为可学习提示的三分之一。问题在于，用于研究这些提示的难度定义集合本身存在测量偏差，导致「不可学习」的结论被夸大。该工作对 RLVR 后训练中难度标签的可靠性提出了质疑，指出当前基于难度划分的数据集可能系统性地误判提示的可学习性，从而影响训练策略与数据筛选。这一发现对推理模型的后训练流程、课程学习设计以及数据质量评估具有重要启示，提醒研究者在依赖难度标签前需先验证其测量效度。",
+  "tags": [
+    "RLVR",
+    "LLM",
+    "Post-training",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:16:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "所谓「不可学习」的困难提示实际上仍能学习，速率约为可学习提示的三分之一",
+      "难度标签的测量偏差是导致不可学习性结论被夸大的关键原因",
+      "RLVR 后训练中依赖难度划分的数据筛选策略需要重新评估其可靠性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

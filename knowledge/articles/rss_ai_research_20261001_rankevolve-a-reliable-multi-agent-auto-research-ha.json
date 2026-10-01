@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-101",
+  "title": "RankEvolve: A Reliable Multi-Agent Auto-Research Harness for Evolving Ranking Models",
+  "source_url": "https://arxiv.org/abs/2609.39551",
+  "source_platform": "rss_ai_research",
+  "summary": "RankEvolve 是一个面向排序模型自动演进的多智能体自动研究框架（auto-research harness），旨在解决长周期 LLM 自动研究代理在执行准确性上的瓶颈问题。论文指出，当 LLM 代理在多次迭代中自主提出、实现、训练和评估模型改动时，常见的隐性错误——如数据泄漏、遗漏归一化、梯度断连、训练/评估标志未正确接线——会静默地使昂贵的实验失效，并在迭代中累积误差。RankEvolve 通过多智能体协作与可靠性约束机制来缓解这一问题，使自动研究流程在排序模型场景下更加可信。该工作值得关注，因为它触及了当前 auto-research agent 从演示走向生产级应用的核心痛点：不是创意生成能力，而是执行正确性与可复现性。对于希望将 LLM 代理用于真实机器学习实验循环的研究者和工程师而言，RankEvolve 提供了一种以可靠性为中心的系统设计思路，可能推动自动研究从概念验证向可依赖工具演进。",
+  "tags": [
+    "Auto-Research",
+    "Multi-Agent",
+    "LLM",
+    "Ranking Models",
+    "ML Automation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长周期自动研究代理的核心瓶颈是执行准确性而非创意生成，隐性实现错误会静默污染实验并累积误差。",
+      "RankEvolve 采用多智能体框架来提升排序模型自动演进过程中的可靠性与可复现性。",
+      "该工作将自动研究代理的评估重点从最终指标转向中间执行正确性，对构建可信 ML 自动化系统具有参考价值。",
+      "排序模型作为应用场景，反映了 auto-research 在工业级推荐/搜索任务中的落地潜力与挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

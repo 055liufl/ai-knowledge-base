@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-091",
+  "title": "SkillFM: Generating Skills for LLM Agents via Latent Flow Matching",
+  "source_url": "https://arxiv.org/abs/2609.39382",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillFM（Skill Flow Matching）是一个面向大语言模型智能体（LLM Agents）的生成式技能合成框架，旨在解决现有技能获取方式的两大痛点：依赖人工整理技能库，或依赖强化学习中间接且延迟的反馈信号。该工作提出以任务为条件，直接生成可复用的文本技能，而无需在测试时进行技能检索。其核心方法结合了一个编解码器（codec），用于在连续隐空间中编码与重建文本技能，并引入流匹配（Flow Matching）机制来建模技能生成过程。这一思路将技能视为可生成的潜在表示，而非静态检索条目，从而提升智能体在新任务上的适应性与泛化能力。该研究值得关注的原因在于：它把生成式建模（尤其是流匹配这一在图像生成领域表现优异的技术）迁移到智能体技能合成领域，为 Agent 能力扩展提供了不依赖人工标注与在线试错的新范式，对降低技能库构建成本、提升任务条件化技能生成质量具有潜在价值，也为后续研究提供了可探索的方向。",
+  "tags": [
+    "Agent",
+    "Flow Matching",
+    "Skill Generation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:14:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "以任务为条件直接生成文本技能，避免测试时的技能检索，简化了 Agent 的技能调用流程",
+      "利用编解码器在连续隐空间表示文本技能，并结合流匹配进行生成建模，是生成式方法在技能合成上的新尝试",
+      "相比人工技能库和强化学习，该方法有望降低技能获取成本并缓解反馈延迟问题",
+      "为 LLM Agent 的技能扩展提供了从检索范式向生成范式转变的研究方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

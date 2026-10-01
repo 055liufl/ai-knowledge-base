@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-029",
+  "title": "ChartRevise: A Dataset and Evaluation Protocol for Exact Chart Editing via Code",
+  "source_url": "https://arxiv.org/abs/2609.38642",
+  "source_platform": "rss_ai_research",
+  "summary": "ChartRevise 是一个面向图表编辑任务的结构化数据集与评估协议，旨在解决现有基准在衡量“精确图表编辑”能力时的不足。图表编辑本质上是一个跨模态任务：用户以自然语言提出视觉修改请求，系统需要将其落地为绘图代码中的精确改动，同时完成必要的关联更新（如坐标轴、图例、数据范围等），并且不能改动无关内容。现有基准通常只关注代码能否执行或图表是否美观，其指标无法清晰区分“请求是否被完成”“关联更新是否被遗漏”以及“是否引入了多余改动”这三种关键情况。ChartRevise 通过结构化数据与专门设计的评估协议，将请求完成度、耦合更新正确性和无关内容保持性分开度量，从而更准确地评价模型在代码层面进行精确图表编辑的能力。该工作值得关注，因为它为多模态代码生成、图表理解与编辑、以及基于代码的视觉内容操作提供了一个更细粒度的评测标准，有助于推动模型从“能画图”走向“能按需精确改图”。",
+  "tags": [
+    "Chart Editing",
+    "Code Generation",
+    "Multimodal",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图表编辑需要跨模态的编辑定位：将自然语言请求精确映射到绘图代码中的对应修改。",
+      "现有基准的指标无法区分请求完成、遗漏耦合更新和多余改动，评估粒度不足。",
+      "ChartRevise 提出结构化数据集与评估协议，分别度量请求完成度、关联更新正确性和无关内容保持性。",
+      "该工作推动图表编辑从可执行/美观评价转向精确、可控的代码级编辑评价。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

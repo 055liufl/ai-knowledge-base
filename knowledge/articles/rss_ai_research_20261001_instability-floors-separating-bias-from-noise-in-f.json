@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-135",
+  "title": "Instability Floors: Separating Bias from Noise in Fairness Audits of Clinical LLM Agents with FairMedAgent",
+  "source_url": "https://arxiv.org/abs/2609.03221",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 FairMedAgent 框架，针对临床语言模型智能体的公平性审计问题，指出传统反事实公平性审计中报告的翻转率（flip rate）存在混淆：部分翻转并非源于人口统计学描述符的变化，而是由智能体自身的随机性（采样噪声）导致。作者通过在同一条件下对 16 个合成临床案例重复运行 10 次，测量了这种内在不稳定性，并据此提出「不稳定性下限」（Instability Floors）概念，用于将真正的偏见信号与随机噪声分离。该工作值得关注，因为它揭示了当前 LLM 智能体公平性评估中的一个关键方法学缺陷：若不控制随机性，审计结论可能严重失真。对于医疗等高风险场景，错误的公平性判断可能导致有害的部署决策。该研究为更可靠的公平性审计提供了可量化的基线，并强调了在评估临床 LLM 智能体时报告随机性指标的必要性。",
+  "tags": [
+    "Fairness",
+    "LLM Agent",
+    "Clinical AI",
+    "Evaluation",
+    "Bias"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:16:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反事实公平性审计中的翻转率混合了人口统计学偏见和智能体自身的随机噪声，直接解读会高估偏见程度。",
+      "通过重复运行同一条件可以量化智能体的内在不稳定性，从而为翻转率设定一个噪声下限（Instability Floor）。",
+      "在临床 LLM 智能体的公平性评估中，必须报告并控制随机性，否则审计结论可能不可靠。",
+      "FairMedAgent 提供了一种将偏见信号与随机噪声分离的方法，有助于更准确地评估和比较不同临床智能体的公平性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

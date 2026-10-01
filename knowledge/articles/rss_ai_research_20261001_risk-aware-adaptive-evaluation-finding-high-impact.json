@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-057",
+  "title": "Risk-Aware Adaptive Evaluation: Finding High-Impact Failures Under Limited Budgets",
+  "source_url": "https://arxiv.org/abs/2609.38914",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种风险感知的自适应评估方法（Risk-Aware Adaptive Evaluation），用于在有限预算下高效发现交互式智能体（Agent）的高影响失败。由于Agent行为具有随机性，可靠性评估需要重复试验，但失败事件稀少且影响差异巨大。传统基准测试均匀分配试验预算，例如对只读查询和不可逆支付操作采样相同次数，导致资源浪费。该工作将评估建模为序贯分配问题：在固定试验预算和一组场景下，根据失败概率与失败后果的严重性动态分配试验次数，优先测试高风险、高影响的场景。其核心贡献在于将评估从均匀采样转变为风险驱动的自适应采样，从而在有限预算下更有效地发现关键失败。该方法对Agent安全部署、测试资源优化以及可靠性工程具有重要价值，尤其适用于金融、医疗等高风险领域。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Safety",
+    "Sequential Allocation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统Agent评估均匀分配试验预算，忽略了不同失败后果的严重性差异，导致高风险场景测试不足。",
+      "将评估形式化为序贯分配问题，可根据失败概率和影响动态调整采样，在有限预算下最大化发现高影响失败。",
+      "该方法对高风险领域（如支付、医疗）的Agent可靠性验证具有直接应用价值，能显著提升测试效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

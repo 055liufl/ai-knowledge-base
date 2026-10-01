@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-019",
+  "title": "PrivMeSA: Privacy-Aware Self-Evolving Multi-Agent System for Medicine via Local-Remote LLM Collaboration",
+  "source_url": "https://arxiv.org/abs/2609.38458",
+  "source_platform": "rss_ai_research",
+  "summary": "PrivMeSA 是一篇来自 arXiv 的论文，提出了一种面向医疗场景的隐私感知自演化多智能体系统，通过本地与远程大语言模型（LLM）协作来平衡能力与隐私。临床场景中，本地部署的 LLM 智能体常需向能力更强的远程模型咨询，但这会带来患者信息泄露风险。现有做法通常由本地智能体决定是否披露信息，但仅移除显式标识符并不足够：准标识符（quasi-identifiers）会在多轮咨询和重复就诊中逐步累积，从而实现重识别攻击。PrivMeSA 针对这一问题，构建了隐私感知的自演化多智能体框架，使本地智能体在协作过程中动态评估并控制信息披露，同时通过自演化机制持续优化隐私与效用之间的权衡。该工作值得关注，因为它首次系统性地揭示了多轮医疗 LLM 协作中的准标识符累积风险，并提出了可落地的本地-远程协作隐私保护方案，对医疗 AI 的合规部署具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Privacy",
+    "Healthcare",
+    "Local-Remote Collaboration"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅移除显式标识符不足以保护隐私，准标识符会在多轮咨询和重复就诊中累积，导致重识别风险。",
+      "本地-远程 LLM 协作需要在能力与隐私之间取得平衡，披露决策应由隐私感知的本地智能体动态控制。",
+      "自演化机制可帮助多智能体系统持续优化隐私保护与医疗效用的权衡。",
+      "该工作为医疗场景下 LLM 智能体的合规部署提供了新的隐私保护范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

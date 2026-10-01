@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-070",
+  "title": "Reserve-Aware Contrast Certificates for Conservative Bandits with Uncertain Baselines",
+  "source_url": "https://arxiv.org/abs/2609.39106",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Reserve-C4B 算法，针对保守型多臂老虎机（conservative bandits）中基线策略不确定时的性能预算控制问题。传统方法分别对候选策略和基线策略的奖励进行置信区间估计，导致共享的估计误差被重复计入，造成过度保守的决策。作者转而直接对基线相对对比量（baseline-relative contrast）建模，通过共享置信集推导出可避免惩罚项的精确表达式，并在每个固定历史下给出更紧的可行性检验。算法引入“储备（reserve）”机制，在保证不耗尽预设性能预算的前提下逐步改进现有策略。该工作属于在线学习与决策理论交叉领域，对安全强化学习、A/B 测试中的风险控制、推荐系统冷启动等需要在有限风险下探索的场景具有理论指导意义。其核心贡献在于识别并量化了共享估计误差导致的重复惩罚问题，提供了更紧的置信界与可行性判定，从而在相同安全约束下获得更高的实际收益。",
+  "tags": [
+    "Bandits",
+    "Online Learning",
+    "Safe Exploration",
+    "Confidence Bounds"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分别对候选策略和基线策略进行置信区间估计会导致共享估计误差被重复计算，造成过度保守的决策。",
+      "直接对基线相对对比量建模并采用共享置信集，可以精确表达可避免的惩罚项，从而得到更紧的可行性检验。",
+      "Reserve-C4B 通过储备机制在保证不耗尽性能预算的前提下逐步改进基线策略，提升了保守型老虎机的实际收益。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

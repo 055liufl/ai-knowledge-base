@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-074",
+  "title": "RefCon: Iterative Refinement and Contrastive Memory Extraction for Context-Evolving Agent",
+  "source_url": "https://arxiv.org/abs/2609.39143",
+  "source_platform": "rss_ai_research",
+  "summary": "RefCon 是一种面向上下文演化型智能体（context-evolving agent）的记忆提取方法，旨在解决长程交互中产生的经验数据「有用但嘈杂」且重新训练模型成本高昂的问题。该方法的核心创新在于无需金标准标签（gold labels），通过结合「顺序自精炼」（sequential self-refinement）与「并行自对比」（parallel self-contrast）两种机制，在测试时增加计算量即可持续提升记忆提取质量。顺序自精炼让模型迭代改进自身输出，并行自对比则通过生成多个候选并相互比较来筛选更优记忆，二者互补形成无监督的自我提升闭环。作者在 AppWorld 和 BFCL-V3 两个智能体基准上进行了评估，验证了该方法在多种设置下的有效性。该工作值得关注的原因在于：它回应了当前 Agent 系统在长期运行中「经验积累」这一关键瓶颈——如何在不重训模型的前提下，把嘈杂的交互历史转化为可复用的高质量记忆。这为构建可持续进化、低成本的智能体记忆系统提供了新思路，对 Agent 记忆管理、测试时计算扩展（test-time compute scaling）以及无监督自我改",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Self-Refinement",
+    "Test-Time Compute"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:14:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长程 Agent 交互产生的经验噪声大，重训模型成本高，因此需要无需金标签的测试时记忆提取方法",
+      "顺序自精炼与并行自对比相结合，可在无监督条件下迭代提升记忆质量",
+      "增加测试时计算量即可持续改进记忆提取效果，为 Agent 的持续进化提供了低成本路径",
+      "在 AppWorld 与 BFCL-V3 上的评估表明该方法在多种 Agent 任务设置下具有有效性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

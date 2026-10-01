@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-048",
+  "title": "More Choices, Fewer Decisions: Ordinal-Scale Bias in JEV-like Direct-Decision Models",
+  "source_url": "https://arxiv.org/abs/2609.38827",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究直接决策模型（Direct-Decision Models）在序数尺度上的偏差问题，以JEV 1.13及三个开源KEV模型为分析对象。这类模型将文本直接映射为低延迟的结构化标签和分数，广泛用于分类和自动评估任务。作者指出，模型的可靠性不仅取决于准确率，还取决于其能否忠实使用用户提供的序数决策尺度。研究从ANLI数据集入手，发现JEV将38.8%的预测和51.3%的错误都归入Neutral类别，而该类别实际占比仅为74.95%中的一部分，显示出明显的序数尺度偏差。该工作揭示了直接决策模型在评分尺度使用上的系统性缺陷，对自动评估、分类系统及LLM-as-Judge等应用具有重要警示意义，值得关注模型校准与决策尺度忠实性的研究者与开发者参考。",
+  "tags": [
+    "LLM Evaluation",
+    "Model Calibration",
+    "Direct-Decision Models",
+    "Ordinal Scale Bias"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接决策模型在序数尺度上存在系统性偏差，倾向于将预测集中到中间类别（如Neutral），导致错误分布失衡。",
+      "模型可靠性不仅要求高准确率，还要求忠实使用用户提供的序数决策尺度，当前模型在此方面表现不足。",
+      "JEV 1.13将38.8%的预测和51.3%的错误归入Neutral，表明其决策尺度使用存在严重偏差。",
+      "该问题对自动评估和LLM-as-Judge等依赖序数评分的应用构成直接威胁，需引起重视。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

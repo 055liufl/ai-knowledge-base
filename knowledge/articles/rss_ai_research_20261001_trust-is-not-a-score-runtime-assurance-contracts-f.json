@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-110",
+  "title": "Trust Is Not a Score: Runtime Assurance Contracts for High-Risk AI Agents",
+  "source_url": "https://arxiv.org/abs/2609.39717",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Runtime Assurance Contract（RAC，运行时保障契约）的策略级形式化模式，旨在解决高风险 AI Agent 在关键任务执行过程中的「保障-权限转换缺口」（assurance-transition gap）。作者指出，现有的基准测试、审计流程和 Agent 协议虽然能够描述性能、权限和修复机制，但都无法回答一个核心问题：在任务执行过程中，新观察到的证据应当如何动态地改变 Agent 的自主权边界。RAC 通过将自主性边界、组件资格、证据状态、转换策略、人工审核容量以及非补偿性门控（non-compensatory gates）绑定在一起，为 Agent 的运行时权限调整提供了形式化规范。该工作值得关注的原因在于，它直面了当前 AI Agent 从实验室走向高风险真实场景（如医疗、金融、自动驾驶）时最关键的治理难题——静态信任评分无法应对动态风险，必须将「信任」转化为可执行、可审计的运行时契约。这为构建安全可控的自主系统提供了新的理论框架和工程实践方向。",
+  "tags": [
+    "AI Agent",
+    "AI Safety",
+    "Runtime Assurance",
+    "Formal Methods",
+    "AI Governance"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基准测试和审计只能静态描述 Agent 性能与权限，无法在任务执行中根据新证据动态调整其自主权，作者将此定义为「保障-权限转换缺口」。",
+      "RAC 将自主性边界、组件资格、证据状态、转换策略、人工审核容量和非补偿性门控统一为策略级形式化模式，使信任从抽象评分变为可执行的运行时契约。",
+      "非补偿性门控意味着某些安全条件不能被其他维度的优势所抵消，这对高风险场景下的 Agent 权限管理至关重要。",
+      "该框架为 AI Agent 治理提供了从「事后审计」转向「运行时保障」的新范式，有望成为高风险自主系统的标准基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

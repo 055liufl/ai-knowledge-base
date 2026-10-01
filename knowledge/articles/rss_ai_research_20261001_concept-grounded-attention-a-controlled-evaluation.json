@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-033",
+  "title": "Concept-Grounded Attention: A Controlled Evaluation of Graph-Injected Attention, Temporal Versioning, and Epistemic Status",
+  "source_url": "https://arxiv.org/abs/2609.38684",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出概念生命周期模型（Concept Lifecycle Model, CLM），旨在解决知识密集型语言模型系统在外部知识表示上的三大局限：概念演化支持不足、缺乏时间点推理能力、以及无法区分已验证知识与推断知识。CLM 将概念建模为持久化、图结构锚定、带时间版本化的实体，并显式记录来源（provenance）与认知状态（epistemic status）。在此基础上，作者进一步提出概念锚定注意力机制（Concept-Grounded Attention），通过将图注入注意力（graph-injected attention）、时间版本化（temporal versioning）与认知状态（epistemic status）三者结合，进行受控评估。该工作值得关注的原因在于：它直面当前 RAG 与知识图谱增强 LLM 方案中普遍存在的时间动态性与知识可信度问题，将'知识随时间演化'和'知识是否经过验证'作为一等公民引入注意力计算，为构建更可靠、可追溯、支持时间点查询的知识增强系统提供了新的建模思路与评估框架。",
+  "tags": [
+    "RAG",
+    "Knowledge Graph",
+    "Attention Mechanism",
+    "Temporal Reasoning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有知识增强 LLM 系统多以文本块或静态图表示外部知识，难以支持概念演化、时间点推理和已验证/推断知识的区分",
+      "CLM 将概念建模为持久化、图锚定、带时间版本和来源追踪的实体，并显式标注认知状态",
+      "概念锚定注意力机制将图注入注意力、时间版本化与认知状态结合，实现对知识动态性与可信度的受控评估",
+      "该方向有望提升知识密集型系统的可追溯性与时间敏感推理能力，但需进一步验证其在大规模实际场景中的效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

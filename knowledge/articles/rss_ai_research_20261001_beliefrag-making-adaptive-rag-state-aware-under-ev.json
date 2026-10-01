@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-072",
+  "title": "BELIEFRAG: Making Adaptive RAG State-Aware under Evolving Evidence",
+  "source_url": "https://arxiv.org/abs/2609.39139",
+  "source_platform": "rss_ai_research",
+  "summary": "BELIEFRAG 是一篇针对自适应检索增强生成（Adaptive RAG）的学术论文，聚焦于多步检索场景下证据状态的一致性问题。现有自适应 RAG 方法通常将置信度、相关性、支持度和检索质量等局部信号作为独立触发器使用，导致系统难以在多次检索与修正过程中维持对「当前证据支持什么、还缺什么、下一步该做什么」的统一认知。BELIEFRAG 提出让自适应 RAG 具备状态感知能力（State-Aware），在证据不断演化的情况下维护一个持久的证据信念状态，从而更连贯地决定何时检索、何时修正、何时停止。该工作值得关注的原因在于：多步 RAG 已成为提升复杂问答与推理任务表现的关键范式，而证据状态漂移、重复检索和错误累积是其核心痛点；将局部信号整合为全局状态是一种更接近人类推理过程的建模思路，有望提升 RAG 系统在长链条任务中的稳定性与可解释性，对构建可靠的智能体式检索系统具有参考价值。",
+  "tags": [
+    "RAG",
+    "Adaptive RAG",
+    "Multi-step Retrieval",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自适应 RAG 将置信度、相关性等信号当作独立触发器，缺乏跨步骤的持久证据状态，导致多步检索中认知不一致。",
+      "BELIEFRAG 的核心思路是维护一个状态感知的证据信念表示，统一刻画「已支持什么、仍缺什么、下一步动作」。",
+      "该方法针对多步检索中的证据演化问题，有望减少重复检索与错误累积，提升复杂推理任务的稳定性。",
+      "将局部信号整合为全局状态是 RAG 从单步触发走向智能体式决策的重要方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

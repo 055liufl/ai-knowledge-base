@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-108",
+  "title": "A helps B while B hurts A: directed transfer in instruction-tuning mixture",
+  "source_url": "https://arxiv.org/abs/2609.39702",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究指令微调中多任务混合训练的任务选择问题，指出在固定预算下选择哪些任务进行训练是一个关键决策。传统启发式方法假设迁移总是正向的，或者任务间的迁移是对称的，但作者通过实验证明这两个假设都不成立：任务A可以帮助任务B，而任务B却可能损害任务A，即任务间的帮助关系是有方向的、带符号的。这一发现对多任务指令微调的数据配比和任务选择策略具有重要指导意义，意味着简单增加源任务或选择相似任务并不总能带来收益，甚至可能产生负迁移。该工作为理解指令微调中的任务交互提供了新的视角，并为更高效的任务选择方法奠定了理论基础。",
+  "tags": [
+    "Instruction Tuning",
+    "Transfer Learning",
+    "Multi-task Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务间的迁移效应是有方向的：A对B的帮助不等于B对A的帮助，甚至可能相反。",
+      "常见的启发式假设（迁移非负、迁移对称）在指令微调中并不成立，需要更精细的任务选择策略。",
+      "在固定预算下，选择训练任务组合时需要考虑任务间的有向交互，而非简单堆叠或选择相似任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

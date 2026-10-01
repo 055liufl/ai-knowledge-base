@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-038",
+  "title": "Code to Control: Synthesizing Parameterized Reactive Controllers",
+  "source_url": "https://arxiv.org/abs/2609.38733",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Code to Control，一种利用大语言模型（LLM）合成参数化反应式控制器的方法。现有基于 LLM 的控制方法要么直接调用语言模型选择动作，要么合成需要每一步决策都进行规划的世界模型，导致延迟较高，难以满足实时控制需求。Code to Control 的核心思想是将程序结构与参数分离：由 LLM 合成控制器的程序结构（Python 代码），而参数则通过无导数优化方法（如进化策略或随机搜索）进行调优。这样生成的控制器可以直接作为策略执行，无需在每次决策时调用 LLM 或进行规划，从而显著降低推理延迟。该方法在多个控制任务上进行了验证，展示了其在实时性、泛化性和可解释性方面的潜力。该工作值得关注，因为它为 LLM 在实时控制领域的应用提供了一种高效、可部署的范式，平衡了 LLM 的代码生成能力与轻量级执行的需求，有望推动机器人、自动驾驶等领域的实际落地。",
+  "tags": [
+    "LLM",
+    "Control",
+    "Code Generation",
+    "Reactive Controller"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将控制器合成分为结构生成与参数优化两阶段，LLM 负责生成程序结构，无导数优化负责参数调优，避免每次决策调用 LLM 的高延迟。",
+      "生成的 Python 控制器可直接作为策略执行，实现实时反应式控制，适合对延迟敏感的应用场景。",
+      "该方法结合了 LLM 的代码生成能力与经典优化方法，为 LLM 在控制领域的落地提供了新思路。",
+      "实验表明该方法在多个控制任务上有效，但泛化性和安全性仍需进一步研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

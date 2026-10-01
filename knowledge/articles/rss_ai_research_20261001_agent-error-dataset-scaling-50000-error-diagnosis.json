@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-125",
+  "title": "Agent Error Dataset: Scaling 50,000 Error--Diagnosis Pairs for Failure Analysis and Error-Aware Post-Training",
+  "source_url": "https://arxiv.org/abs/2609.40111",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 Agent Error Dataset（AED），一个包含 50,228 个错误-诊断对的大规模数据集，覆盖 9,961 个源任务、33 个环境、19 个 harness 家族。该数据集的核心动机在于：一次失败的 LLM agent rollout 所包含的信息远不止最终奖励信号——agent 可用的观测、它选择的动作以及环境返回的响应，都是可复用的学习素材。要利用这些经验进行学习，需要识别出值得修正的决策点，并测试具体的替代方案。AED 正是为此设计，将失败轨迹转化为结构化的错误-诊断对，支持失败分析与错误感知的后训练（error-aware post-training）。其价值在于：当前 agent 训练与评估大多依赖稀疏的最终奖励，而 AED 提供了细粒度的失败信号，可用于改进 agent 的决策修正能力、构建更鲁棒的后训练流程，并推动对 agent 失败模式的系统性研究。该数据集跨环境、跨 harness 的多样性也使其具备较好的泛化研究价值，适合用于分析 agent 在不同工具与任务分布下的错误类型与修复策略。",
+  "tags": [
+    "Agent",
+    "Dataset",
+    "Post-training",
+    "Failure Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:16:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "失败的 agent rollout 中蕴含的观测、动作与环境响应信息远多于最终奖励，可作为细粒度学习信号。",
+      "AED 提供 50,228 个错误-诊断对，覆盖 33 个环境与 19 个 harness 家族，支持跨环境失败模式分析。",
+      "该数据集面向 error-aware post-training，可用于训练 agent 识别并修正具体决策错误，而非仅依赖稀疏奖励。",
+      "将失败经验转化为可测试的替代方案，是提升 agent 鲁棒性与自我修正能力的关键路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

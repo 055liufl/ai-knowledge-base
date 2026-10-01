@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-067",
+  "title": "Search Shapes Conclusions: Auditing Evidence Selection Bias in Deep Research Agents",
+  "source_url": "https://arxiv.org/abs/2609.39026",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出对深度研究智能体（Deep Research Agents）中证据选择偏差的审计方法。深度研究智能体能够将证据综合为带引用的报告，但引用正确性仅验证单条声明是否有来源支持，无法揭示自适应搜索过程是否暴露了候选池中具有代表性的文档视图。由于早期发现会重定向后续查询、文档选择和停止条件，智能体可能系统性地遗漏关键证据，导致报告结论看似有据实则误导。该研究将这一问题形式化为证据选择偏差，并设计审计框架来检测搜索轨迹中的代表性缺失。这项工作值得关注，因为它触及了AI研究智能体可信度的核心盲区：引用合规不等于结论可靠。随着深度研究智能体在学术、金融、医疗等高风险场景的部署加速，缺乏对搜索过程偏差的审计将放大错误结论的传播风险。该研究为构建更透明、可问责的研究智能体提供了方法论基础，对智能体评估体系和产品落地均有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Trustworthy AI",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "引用正确性不等于结论可靠性：单条声明有来源支持，不代表整体证据选择无偏。",
+      "自适应搜索的早期发现会重定向后续查询与停止条件，导致候选池代表性缺失。",
+      "深度研究智能体需要超越引用检查的过程级审计，以检测证据选择偏差。",
+      "该问题在高风险场景下会放大误导性结论的传播风险，影响智能体可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

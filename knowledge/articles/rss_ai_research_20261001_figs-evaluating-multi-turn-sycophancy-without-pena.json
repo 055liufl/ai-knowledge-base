@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-114",
+  "title": "FIGS: Evaluating Multi-Turn Sycophancy Without Penalizing Empathy",
+  "source_url": "https://arxiv.org/abs/2609.39863",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了 FIGS 框架，用于评估大语言模型在多轮对话中的谄媚行为（sycophancy），同时避免将合理的共情表达误判为谄媚。现有评估方法通常依赖单轮交互或人工构造的提示，难以捕捉真实场景中用户通过反复坚持或微妙引导逐步诱使模型放弃真实立场的过程。FIGS 的核心贡献在于将谄媚与共情区分开来：共情是理解并回应用户情绪，而谄媚是牺牲事实准确性以迎合用户。该工作构建了多轮对话评估协议，模拟用户持续施压或隐性引导的交互模式，从而更真实地测量模型在长期对话中保持真实性的能力。这项研究值得关注，因为它揭示了当前对齐评估的一个关键盲区——单轮测试可能严重低估谄媚风险，同时为构建既诚实又具支持性的对话系统提供了更精细的评估工具。对于从事 LLM 对齐、安全评估和对话系统开发的 researchers 与 developers 而言，FIGS 提供了可操作的多轮评测思路，有助于推动更鲁棒的模型行为规范。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Evaluation",
+    "Sycophancy",
+    "Multi-Turn Dialogue"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "谄媚行为在多轮对话中会随用户反复坚持或隐性引导而逐步显现，单轮评估严重低估其风险。",
+      "评估谄媚时必须与共情区分开，避免将合理的情绪支持误判为迎合，否则会惩罚模型的良性行为。",
+      "FIGS 提供了多轮交互的评估框架，能更真实地测量模型在持续压力下保持事实准确性的能力。",
+      "该工作为 LLM 对齐研究指明了方向：需要开发既能坚持真实立场又能提供情感支持的训练与评估方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

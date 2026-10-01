@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-058",
+  "title": "How Much Can Reliability Drift Under a Fixed Confidence Distribution?",
+  "source_url": "https://arxiv.org/abs/2609.38917",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一个在机器学习可靠性分析中常被忽视的问题：分类器的条件准确率（即可靠性）可以在置信度分布完全不变的情况下发生显著漂移。作者形式化了在协变量偏移下可靠性关系的最坏情况变动，其中偏移保持置信度分数的分布不变，但允许在每个置信度水平内进行受 χ² 预算约束的重加权。由此得到的最坏情况作为预算的函数，被称为“脆弱性轮廓”（fragility profile）。论文给出了可计算的预算区间，用于刻画可靠性关系在何种偏移强度下开始出现不可忽略的漂移。这项工作的重要性在于：它揭示了仅监控置信度分布（如校准曲线、置信度直方图）不足以保障模型可靠性，因为分布相同并不意味着条件准确率稳定。对于依赖置信度进行风险控制、选择性预测或人机协作的系统，该研究提供了量化可靠性脆弱性的理论工具，并提示需要更细粒度的监控与鲁棒性评估方法。",
+  "tags": [
+    "Reliability",
+    "Calibration",
+    "Distribution Shift",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "置信度分布不变并不能保证条件准确率稳定，可靠性关系可能发生显著漂移。",
+      "通过 χ² 预算约束每个置信度水平内的重加权，可以刻画最坏情况下的可靠性脆弱性轮廓。",
+      "论文给出了可计算的预算区间，用于确定可靠性开始出现不可忽略漂移的临界点。",
+      "仅监控置信度分布不足以保障模型可靠性，需要更细粒度的鲁棒性评估与监控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-098",
+  "title": "Disentangling Self-Distillation: Measuring and Modeling Acquisition and Retention",
+  "source_url": "https://arxiv.org/abs/2609.39494",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对自蒸馏（Self-Distillation）方法中普遍存在的概念混淆问题，提出了一套系统性的分类框架。自蒸馏是一种让语言模型通过特权上下文（如参考回答）进行自我改进的技术：模型在给定参考回答的条件下，逐 token 地教导其无上下文副本。作者指出，现有方法实际上在三个相互纠缠的维度上存在差异：(i) rollout 来源（来自学生模型还是教师模型）；(ii) 教师耦合方式（冻结的教师，或按一定耦合率对学生进行指数移动平均得到的教师）；(iii) KL 散度的方向（前向或反向）。该工作通过解耦这三个轴，为理解和比较不同自蒸馏算法提供了统一视角，并可能揭示此前被混淆的设计选择对模型知识获取（acquisition）与保持（retention）的不同影响。这项研究值得关注，因为它澄清了自蒸馏领域长期存在的术语与机制混淆，为后续方法设计、复现和公平比较奠定了基础，尤其对从事 LLM 后训练与对齐的研究者和工程师具有直接参考价值。",
+  "tags": [
+    "Self-Distillation",
+    "LLM",
+    "Post-Training",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自蒸馏方法可沿三个正交轴解耦：rollout 来源、教师耦合方式、KL 方向，现有工作常将三者混为一谈。",
+      "教师耦合（冻结 vs. 指数移动平均）与 KL 方向的选择会独立影响模型的知识获取与保持能力。",
+      "该分类框架为自蒸馏算法的公平比较与可复现设计提供了统一语言，有助于避免概念混淆。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

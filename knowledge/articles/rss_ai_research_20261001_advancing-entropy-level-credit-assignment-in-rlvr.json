@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-094",
+  "title": "Advancing Entropy-Level Credit Assignment in RLVR via Proximal Entropy Policy Optimization",
+  "source_url": "https://arxiv.org/abs/2609.39402",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Proximal Entropy Policy Optimization (PEPO) 的新方法，用于改进强化学习与可验证奖励（RLVR）中的信用分配问题。现有无价值模型的 RLVR 方法（如 GRPO）对同一 rollout 中的所有 token 分配均匀优势，忽略了不同 token 贡献的不平等性。近期方法尝试用 token 熵作为重要性代理，但在整个批次上全局计算，混淆了重要性、提示难度和位置趋势。作者主张重要性应相对于每个 token 的局部上下文来衡量，并引入「近端熵」（proximal entropy）这一局部度量。该方法有望提升 RLVR 训练的精细度和效率，对 LLM 推理能力强化学习训练具有重要价值，尤其适用于数学推理、代码生成等需要细粒度信用分配的场景。",
+  "tags": [
+    "RLVR",
+    "RL",
+    "LLM",
+    "Credit Assignment",
+    "Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:14:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RLVR 方法（如 GRPO）对 rollout 内所有 token 分配均匀优势，忽略了 token 贡献的不平等性",
+      "全局 token 熵作为重要性代理会混淆重要性、提示难度和位置趋势，导致信用分配不准确",
+      "提出近端熵（proximal entropy）作为局部重要性度量，相对于每个 token 的局部上下文计算",
+      "该方法有望提升 LLM 强化学习训练的细粒度信用分配能力，改善推理任务训练效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

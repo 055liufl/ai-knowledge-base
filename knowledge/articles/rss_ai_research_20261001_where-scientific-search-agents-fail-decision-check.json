@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-032",
+  "title": "Where Scientific Search Agents Fail: Decision-Checkpoint Auditing of Exposure and Inspection Attempts",
+  "source_url": "https://arxiv.org/abs/2609.38670",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对科学搜索智能体（Scientific Search Agents）的评估盲区提出了一种新的审计方法。传统评估仅关注最终答案准确率，无法区分智能体是未能检索到目标论文、尝试检查但失败，还是在检查后返回了可接受的答案。作者引入\"决策检查点\"（Decision Checkpoints）机制，在推理过程中记录观察结果和工具调用动作，但不依赖基准标签；随后通过关联目标身份与评估者标签，将记录的事件归类为不同的结果类别。研究在540个可回答的AutoResearchBench任务上设置了五种条件进行实验。这项工作值得关注，因为它揭示了当前智能体评估体系的根本缺陷：仅凭最终答案正确性会掩盖检索与检查环节的失败模式，而决策检查点提供了一种细粒度、可解释的审计框架，有助于诊断智能体在科学文献搜索中的真实能力瓶颈，对智能体评估方法论和工具使用型系统的可靠性研究具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Scientific Search",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "最终答案准确率无法区分智能体是未遇到目标论文、尝试检查失败，还是检查后给出可接受答案，存在评估盲区",
+      "决策检查点在推理时记录观察与工具动作，无需基准标签，再通过关联目标身份和评估者标签进行事后归类",
+      "该方法为科学搜索智能体提供了细粒度的失败模式诊断能力，有助于定位检索与检查环节的具体瓶颈"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

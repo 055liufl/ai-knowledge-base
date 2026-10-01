@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-061",
+  "title": "Routing Probes Can Improve Without New Information: An Exact-Null Audit of Uncertainty Beyond Model Outputs",
+  "source_url": "https://arxiv.org/abs/2609.38956",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对现代视觉Transformer中的路由信号（如专家门控、注意力残差权重和停止分数）进行了严格的零假设审计。以往研究常认为这些路由信号能提升模型正确性预测探针的性能，并据此推断路由信号携带了超出模型输出之外的错误信息。作者通过保持真实的输出-路由配对，从仅基于输出的冻结生成器中重新抽取正确性标签，构建了一个精确的零假设检验框架。研究发现，在零假设下，路由信号对探针性能的提升依然存在，这表明之前观察到的改进可能并非源于路由信号携带了额外信息，而是由于统计上的假象或过拟合。这项工作挑战了现有对路由信号信息含量的解读，强调了在评估模型内部信号时需要更严谨的因果推断方法，对可解释性和不确定性量化研究具有重要警示意义。",
+  "tags": [
+    "Vision Transformer",
+    "Uncertainty Quantification",
+    "Routing Signals",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "路由信号对正确性预测探针的性能提升可能并不反映其携带了超出模型输出的额外错误信息。",
+      "通过精确零假设审计，发现仅基于输出的生成器即可复现路由信号带来的改进，表明原有推断存在缺陷。",
+      "评估模型内部信号的信息含量时，需采用更严格的因果推断方法以避免虚假相关。",
+      "该研究对视觉Transformer的可解释性和不确定性量化研究提出了方法论上的警示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

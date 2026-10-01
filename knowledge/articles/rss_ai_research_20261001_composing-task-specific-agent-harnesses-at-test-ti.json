@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-056",
+  "title": "Composing Task-specific Agent Harnesses at Test Time with Reusable Primitives",
+  "source_url": "https://arxiv.org/abs/2609.38912",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种在测试时动态组合任务特定 Agent Harness 的方法，核心思想是将 Agent 的各类机制（如上下文收集、工具调用、结果验证、状态保持、终止条件等）拆解为可复用的原语（primitives），并针对不同任务在推理阶段按需组合成定制化的 harness。作者指出，现有 Agent 系统通常采用全局统一的 harness 设计，但不同任务对各类机制的需求存在显著异质性：某个机制在某一任务上能提升性能，在另一任务上却可能带来额外开销或上下文干扰，导致全局 harness 的次优性。论文将这种次优性刻画为任务与 harness 之间的不匹配问题，并尝试通过测试时组合可复用原语来缓解。该工作值得关注的原因在于，它挑战了当前 Agent 框架中\"一刀切\"的工程范式，提出了一种更细粒度、更自适应的 Agent 架构思路，有望提升 LLM Agent 在异构任务集合上的整体表现，同时为 Agent 框架设计提供了模块化与可组合性的新视角。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Harness",
+    "Modularity"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全局统一的 Agent harness 在异构任务上存在次优性，不同任务对 harness 机制的需求差异显著",
+      "将 harness 机制拆解为可复用原语并在测试时按任务组合，是一种提升 Agent 适应性的可行路径",
+      "某一机制在特定任务上的收益可能在其他任务上转化为开销或上下文干扰，需按任务权衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

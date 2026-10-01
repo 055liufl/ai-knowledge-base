@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-003",
+  "title": "MoFlow: Multi-Objective Agentic Workflow Generation",
+  "source_url": "https://arxiv.org/abs/2609.38294",
+  "source_platform": "rss_ai_research",
+  "summary": "MoFlow 是一项针对智能体工作流（Agentic Workflow）自动生成的研究，旨在解决现有多目标优化方法的局限性。传统工作流生成方法通常只优化准确率，或采用加权求和的方式将多个目标合并为单一标量，这导致每次训练出的生成器只能对应一种固定的权衡方案，当用户偏好（如更看重成本还是延迟）发生变化时，必须从头重新训练。MoFlow 提出一种多目标智能体工作流生成框架，能够同时优化准确率、成本、延迟、鲁棒性和一致性等多个目标，从而在偏好改变时无需重新训练即可灵活调整。该工作值得关注，因为它将多目标优化（Pareto 前沿思想）引入智能体工作流自动设计领域，有望提升 LLM 智能体系统在真实部署中的实用性与可配置性，对构建高效、可控的 Agent 系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Workflow",
+    "Multi-Objective Optimization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工作流生成方法多优化单一准确率或加权和，导致偏好变化时需重新训练，缺乏灵活性",
+      "MoFlow 同时优化准确率、成本、延迟、鲁棒性和一致性等多个目标，支持偏好动态调整",
+      "多目标优化思想（如 Pareto 前沿）被引入智能体工作流自动生成，提升部署实用性",
+      "该方向有助于构建可配置、高效且可控的 LLM 智能体系统"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

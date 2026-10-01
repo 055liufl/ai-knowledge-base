@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-020",
+  "title": "NAQD Env: A benchmark for selective withdrawal in language agents",
+  "source_url": "https://arxiv.org/abs/2609.38460",
+  "source_platform": "rss_ai_research",
+  "summary": "NAQD-Env 是一个面向语言智能体的合成基准环境，旨在评估智能体在证据变化、权限撤销或收到停止指令时的选择性撤回能力。该基准的核心要求是智能体能够做出精细化的响应：暂停受影响的动作、保留未受影响的工作，并且仅在充分修复后才恢复执行。NAQD-Env 通过显式的证据、授权和约束依赖关系，将智能体的决策与一个确定性参考策略进行对比，从而提供可量化、可复现的评估标准。该工作值得关注的原因在于，当前大多数语言智能体基准侧重于任务完成能力，而忽视了动态环境中的安全撤回与状态修复问题，这在实际部署中至关重要——例如当用户撤销授权、外部数据源失效或安全策略变更时，智能体若无法选择性撤回，可能导致错误累积或安全风险。NAQD-Env 填补了这一评估空白，为构建更可靠、更可控的语言智能体提供了测试平台，对智能体安全、规划与执行监控等研究方向具有推动作用。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Safety",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言智能体需要具备选择性撤回能力，以应对证据变化、权限撤销和停止指令等动态场景。",
+      "NAQD-Env 通过显式依赖关系和确定性参考策略，为智能体的撤回决策提供可复现的评估标准。",
+      "该基准强调在暂停受影响动作的同时保留未受影响的工作，并仅在充分修复后恢复执行。",
+      "现有智能体评估多关注任务完成，NAQD-Env 填补了动态安全撤回与状态修复评估的空白。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

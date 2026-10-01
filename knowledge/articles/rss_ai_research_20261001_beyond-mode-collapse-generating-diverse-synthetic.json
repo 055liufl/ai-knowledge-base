@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-007",
+  "title": "Beyond Mode Collapse: Generating Diverse Synthetic Expert Conversations via Generative Flow Networks",
+  "source_url": "https://arxiv.org/abs/2609.38359",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM 后训练中合成数据多样性不足的问题，提出利用生成流网络（GFlowNets）生成多样化高质量合成专家对话数据。传统方法通过直接提示 LLM 或基于终端场景条件化生成，往往导致数据多样性低、模式坍缩（mode collapse），即生成结果集中于少数主导模式，无法覆盖真实场景中专家策略与决策的多样性。GFlowNets 作为一种生成模型，其训练目标使采样概率与奖励函数成正比，天然具备生成多样化样本的能力，可有效缓解模式坍缩。该工作将 GFlowNets 应用于对话数据合成，旨在生成覆盖多种专家策略的高质量对话，为 LLM 后训练提供更丰富的监督信号。其价值在于：合成数据质量与多样性直接决定后训练模型在自适应 AI 应用中的表现，而多样性问题长期被忽视；GFlowNets 的引入为数据合成提供了新的方法论视角，有望提升模型在复杂对话场景中的泛化与决策能力。",
+  "tags": [
+    "GFlowNets",
+    "Synthetic Data",
+    "LLM",
+    "Post-training",
+    "Dialogue Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接提示或场景条件化生成会导致合成对话数据模式坍缩，多样性严重不足",
+      "GFlowNets 通过奖励比例采样机制，可生成覆盖多种专家策略的多样化对话数据",
+      "合成数据多样性是 LLM 后训练中自适应对话能力的关键瓶颈"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-079",
+  "title": "Reinforcing Multimodal Reasoning via Token-Level Perception-Grounded Advantage Estimation",
+  "source_url": "https://arxiv.org/abs/2609.39168",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Token-Level Perception-Grounded Advantage Estimation 的方法，用于强化多模态大语言模型（MLLMs）的推理能力。现有基于可验证奖励的强化学习（RLVR）框架通常依赖粗粒度的序列级奖励信号，无法对多模态推理链中与视觉信息紧密相关的步骤提供细粒度监督。作者通过两个 token 级指标来研究这一差距：视觉依赖性（即 token 预测在多大程度上依赖视觉输入）等。该方法旨在为多模态推理中的每个 token 提供基于感知的细粒度优势估计，从而更精准地奖励那些真正依赖视觉证据的推理步骤。这项工作值得关注，因为它有望提升 MLLMs 在复杂视觉推理任务中的可解释性和准确性，推动 RLVR 从文本推理向多模态推理的细粒度监督演进。",
+  "tags": [
+    "Multimodal",
+    "RLVR",
+    "Reasoning",
+    "MLLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:14:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RLVR 框架使用序列级奖励，缺乏对多模态推理链中视觉 grounding 步骤的细粒度监督。",
+      "提出 token 级视觉依赖性等指标，用于衡量每个 token 预测对视觉输入的依赖程度。",
+      "Token-Level Perception-Grounded Advantage Estimation 可为多模态推理提供更精准的奖励信号。",
+      "该方法有望提升 MLLMs 在视觉推理任务中的可解释性与准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

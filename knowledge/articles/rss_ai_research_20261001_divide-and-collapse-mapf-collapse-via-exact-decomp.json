@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-102",
+  "title": "Divide and Collapse: MAPF-Collapse via Exact Decomposition into Independent Sub-Instances",
+  "source_url": "https://arxiv.org/abs/2609.39559",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究多智能体路径规划（MAPF）中的后优化问题 MAPF-Collapse（MAPFC）：给定一个现代 MAPF 求解器生成的可执行计划，在保持可行性的前提下移除可避免的冗余移动。该问题为 NP-hard，尤其在使用基于学习的最先进求解器时尤为突出，因为这些求解器生成的计划常包含可删除的多余动作。Tang 等人近期提出了相关方法，而本文提出通过精确分解为独立子实例来求解 MAPFC，即\"分而治之\"的策略。该方法的核心价值在于：随着学习型 MAPF 求解器日益普及，其输出计划中普遍存在冗余移动，直接影响路径效率与执行成本；而 MAPFC 作为后处理步骤，能够在不改变求解器架构的前提下显著提升计划质量。本文的精确分解思路为这一 NP-hard 问题提供了可扩展的求解框架，对 MAPF 社区具有重要的理论与实践意义，有望成为学习型 MAPF 流水线中的标准后优化组件。",
+  "tags": [
+    "MAPF",
+    "组合优化",
+    "路径规划",
+    "后优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MAPF-Collapse 是学习型 MAPF 求解器输出计划中普遍存在的冗余移动后优化问题，属于 NP-hard 问题。",
+      "本文提出将 MAPFC 精确分解为独立子实例的求解框架，实现分而治之的高效求解。",
+      "该后优化步骤可无缝集成到现有 MAPF 流水线中，无需修改求解器本身即可提升计划质量。",
+      "随着学习型 MAPF 求解器成为 SOTA，MAPFC 的重要性将持续上升，有望成为标准后处理环节。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

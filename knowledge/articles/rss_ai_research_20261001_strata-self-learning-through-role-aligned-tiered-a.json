@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-054",
+  "title": "STRATA: Self-Learning Through Role-Aligned Tiered Agents for Real-Time Strategy Games",
+  "source_url": "https://arxiv.org/abs/2609.38881",
+  "source_platform": "rss_ai_research",
+  "summary": "STRATA 提出了一种面向实时策略（RTS）游戏的自学习分层智能体框架，旨在解决大语言模型在 RTS 指挥决策中推理延迟过高、容易错过关键战术事件的问题。RTS 游戏要求智能体在长时间对局中同时协调经济发展、生产建造、基地防御、部队编成与进攻时机等多个维度，传统 LLM 方案虽然能读取文本化游戏状态并生成高层计划，但推理速度难以满足实时性要求。STRATA 通过角色对齐的分层智能体架构，将决策任务按角色与时间尺度进行分层拆解，使不同层级的智能体各司其职，并引入自学习机制持续优化策略，从而在保持高层规划能力的同时降低响应延迟。该工作值得关注，因为它探索了 LLM 在强实时、多任务耦合环境下的落地路径，对游戏 AI、多智能体协作以及实时决策系统均有参考价值。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Game AI",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在 RTS 游戏中的核心瓶颈是推理延迟，而非规划能力本身",
+      "角色对齐的分层架构可将长时程规划与实时战术响应解耦",
+      "自学习机制有助于分层智能体在动态对局中持续适应",
+      "该框架为 LLM 在强实时多任务环境中的部署提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

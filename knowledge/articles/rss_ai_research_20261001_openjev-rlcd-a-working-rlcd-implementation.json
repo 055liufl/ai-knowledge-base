@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-050",
+  "title": "OpenJev-RLCD: A Working RLCD Implementation",
+  "source_url": "https://arxiv.org/abs/2609.38850",
+  "source_platform": "rss_ai_research",
+  "summary": "OpenJev-RLCD 提出了一种针对推理模型的可运行强化学习校准决策（RLCD）实现，旨在解决决策模型（如 Jev）输出概率校准不佳的问题。现有开源方案依赖监督微调加温度缩放，而基于可验证奖励的强化学习（RLVR）虽能提升推理能力，却会导致模型过度自信，破坏概率校准。该工作让模型先采样推理依据（rationale），再对其决策概率进行校准评分，从而在保持推理能力的同时获得可靠的置信度估计。这一方向值得关注，因为校准是决策模型落地于高风险场景（医疗、金融、自动驾驶）的前提，而 RLVR 的过度自信问题正成为推理模型规模化的关键瓶颈。该实现为社区提供了可复现的 RLCD 基线，有望推动校准感知的强化学习训练范式发展。",
+  "tags": [
+    "RLCD",
+    "Calibration",
+    "Reasoning",
+    "RLVR",
+    "Decision Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 虽提升推理能力，但会导致模型过度自信，损害决策概率的校准性",
+      "RLCD 通过采样推理依据并对决策概率进行校准评分，兼顾推理与校准",
+      "现有开源方案仅依赖监督微调加温度缩放，校准效果有限",
+      "该工作提供了可运行的 RLCD 实现，为校准感知的强化学习研究提供基线"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

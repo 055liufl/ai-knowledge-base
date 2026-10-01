@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261001-011",
+  "title": "Fine-Tuning Diffusion Language Models with Context Selection and Target Weighting",
+  "source_url": "https://arxiv.org/abs/2609.38385",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 GoldiMask，一种针对离散扩散语言模型（discrete diffusion language models）的监督微调方法。传统方法在微调时对响应 token 进行均匀随机掩码，训练模型从可见上下文中恢复被掩码 token 的原始值。然而，掩码模式同时决定了模型可用的上下文以及需要预测的目标 token，均匀随机掩码并未显式考虑这两者之间的相互作用。GoldiMask 通过上下文选择（context selection）与目标加权（target weighting）两个机制来优化这一过程：一方面选择哪些 token 应被揭示为上下文，另一方面对预测目标进行加权，从而提升微调效率与效果。该工作聚焦于扩散语言模型这一新兴生成范式，填补了其监督微调策略研究的空白，对推动非自回归文本生成模型的实用化具有潜在价值。",
+  "tags": [
+    "Diffusion Language Model",
+    "Fine-Tuning",
+    "Masking Strategy"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "均匀随机掩码忽略了上下文选择与预测目标之间的耦合关系，是现有扩散语言模型微调的一个关键局限。",
+      "GoldiMask 通过显式的上下文选择与目标加权机制，联合优化掩码模式，提升微调效果。",
+      "该工作为离散扩散语言模型的监督微调提供了新的方法论视角，有望推动非自回归生成模型的实用化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

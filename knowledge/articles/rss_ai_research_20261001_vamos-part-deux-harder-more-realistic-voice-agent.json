@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-021",
+  "title": "VAmoS Part Deux: Harder, More Realistic Voice-Agent Simulation",
+  "source_url": "https://arxiv.org/abs/2609.38512",
+  "source_platform": "rss_ai_research",
+  "summary": "VAmoS Energy 是一个面向语音智能体（Voice Agent）的新基准测试，旨在解决现有评测过于简化、脱离真实生产环境的问题。该基准包含 100 通关于公用事业账单与支付协助的模拟电话，每通电话中呼叫者会提出 2 至 4 个请求，并伴有背景人声干扰以及呼叫者逐渐失去耐心的行为模式。智能体需要调用 16 个工具，这些工具背后连接着有状态的 Stripe 账单模拟系统和 Apache Fineract 贷款引擎，并且只有在呼叫者身份验证成功后才能访问账户信息。该工作的重要性在于：它将多任务处理、噪声鲁棒性、用户情绪变化、工具调用与安全验证等多个真实挑战整合到统一评测中，弥补了以往语音智能体基准在复杂度和真实性上的不足，为开发者评估和提升语音智能体在客服、金融等场景下的可靠性提供了更贴近实际的测试平台。",
+  "tags": [
+    "Voice Agent",
+    "Benchmark",
+    "Tool Use",
+    "Speech",
+    "Agent Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VAmoS Energy 将多请求处理、背景语音干扰和用户耐心流失等真实挑战整合进单一语音智能体基准，显著提升了评测的现实性。",
+      "基准要求智能体在身份验证成功后才能访问账户，并调用 16 个工具与 Stripe 账单模拟及 Apache Fineract 贷款引擎交互，考验工具编排与安全约束。",
+      "该基准填补了语音智能体在复杂客服场景下缺乏综合性评测的空白，有助于推动更鲁棒、更实用的语音代理系统研发。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

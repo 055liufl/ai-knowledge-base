@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-052",
+  "title": "Talk2Agent: Benchmarking Voice Interfaces for Text Agents",
+  "source_url": "https://arxiv.org/abs/2609.38867",
+  "source_platform": "rss_ai_research",
+  "summary": "Talk2Agent 是一篇关于语音接口与文本智能体（text agents）交互评测的 arXiv 论文。当前 LLM 计算机使用智能体（computer-use agents）的评估几乎都基于干净、书面的指令，但语音正成为用户与这类系统交互的重要方式。语音输入引入了一个额外的失败点：自动语音识别（ASR）的转写错误可能在智能体开始推理之前就改变任务关键实体、约束条件或目标，而传统的 ASR 指标（如词错误率）并不能直接衡量任务所需信息是否被正确保留。该工作提出针对文本智能体的语音接口基准测试，旨在系统评估语音转写误差对下游智能体任务执行的影响。其价值在于填补了语音前端与智能体后端联合评估的空白，提醒研究者和开发者：仅优化 ASR 词错率不足以保证智能体任务成功，需要端到端地衡量语音输入对任务完成度的影响。对于构建语音驱动智能体、语音助手或无障碍交互系统的团队具有直接参考意义。",
+  "tags": [
+    "Agent",
+    "Voice Interface",
+    "Benchmark",
+    "ASR",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 计算机使用智能体评测普遍使用干净文本指令，忽略了语音输入这一日益流行的交互方式。",
+      "语音转写错误会在智能体推理前改变任务关键实体、约束或目标，构成独立于智能体推理能力的额外失败点。",
+      "传统 ASR 指标（如 WER）无法直接衡量任务所需信息是否被正确保留，需要面向任务成功的端到端评测。",
+      "该工作提出 Talk2Agent 基准，用于系统评估语音接口对文本智能体任务执行的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

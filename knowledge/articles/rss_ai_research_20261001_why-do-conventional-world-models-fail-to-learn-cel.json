@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-105",
+  "title": "Why Do Conventional World Models Fail to Learn Cellular Automata?",
+  "source_url": "https://arxiv.org/abs/2609.39604",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了传统世界模型（基于 Transformer 或卷积网络的自回归/扩散模型）能否从观测历史中学习到精确的世界动力学。作者以元胞自动机（Cellular Automata）作为简单测试平台，发现答案在很多情况下是否定的。尽管这些模型能正确预测大部分像素（例如 CNN 预测 96.3% 的细胞），但它们几乎无法完成一次完整的 rollout，即误差会随时间累积导致整体轨迹崩溃。这一发现揭示了当前世界模型在捕捉精确、离散、确定性动力学方面的根本局限，对基于模型强化学习、视频预测和世界模拟器等方向具有重要警示意义。论文通过系统实验表明，表面统计学习与真实动力学学习之间存在显著鸿沟，提示未来需要新的架构或训练范式来弥合这一差距。",
+  "tags": [
+    "World Models",
+    "Cellular Automata",
+    "Video Prediction",
+    "Model-based RL"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统世界模型（Transformer/CNN/扩散）能拟合表面统计，却难以学习元胞自动机的精确动力学。",
+      "高像素准确率（如 96.3%）具有误导性：模型在长程 rollout 中几乎必然失败。",
+      "误差累积是核心问题，表明当前架构缺乏对离散确定性规则的精确建模能力。",
+      "该研究为世界模型评估提供了简单而严格的测试平台，呼吁重新审视模型设计目标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

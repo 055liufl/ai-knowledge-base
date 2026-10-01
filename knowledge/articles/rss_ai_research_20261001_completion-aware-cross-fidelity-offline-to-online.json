@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-115",
+  "title": "Completion-Aware Cross-Fidelity Offline-to-Online Reinforcement Learning for Multi-Line Bus Holding",
+  "source_url": "https://arxiv.org/abs/2609.39868",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对多线路公交驻站控制（bus holding）场景，提出了一种完成度感知的跨保真度离线到在线强化学习（Completion-Aware Cross-Fidelity Offline-to-Online RL）方法。在真实运营的公交系统中直接进行探索性强化学习不切实际，而仅依赖历史数据训练的策略又无法获取新经验。混合离线-在线（H2O）强化学习通过固定目标回放与模拟器交互相结合来缓解这一问题，但低成本在线模拟器在状态转移和事件持续时间动态方面往往与真实目标环境存在差异，即跨保真度问题。作者聚焦于多线路公交驻站这一具体任务，识别并解决了一种由跨保真度差异引发的失败模式，并引入完成度感知机制来提升策略在离线数据与在线模拟之间的迁移效果。该研究值得关注的原因在于：它首次系统性地将跨保真度离线到在线强化学习应用于公共交通调度领域，为真实世界中难以直接试错的运营优化问题提供了可行的学习范式；同时，其提出的完成度感知思路对一般性的离线到在线迁移学习也具有参考价值，有望推动强化学习在智慧交通、城市运营等高风险实际场景中的落地。",
+  "tags": [
+    "Reinforcement Learning",
+    "Offline-to-Online RL",
+    "Transportation",
+    "Sim-to-Real"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:15:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实公交运营中无法进行探索性RL训练，混合离线-在线（H2O）RL是可行替代方案，但面临模拟器与真实环境之间的跨保真度差异问题。",
+      "多线路公交驻站控制中存在由跨保真度动态差异引发的特定失败模式，需要专门机制来缓解。",
+      "完成度感知机制被引入以提升离线策略向在线模拟器迁移的鲁棒性，为跨保真度迁移学习提供了新思路。",
+      "该研究为强化学习在高风险城市交通运营场景中的实际部署提供了方法论参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

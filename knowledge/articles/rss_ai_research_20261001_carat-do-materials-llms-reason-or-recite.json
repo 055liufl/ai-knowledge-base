@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-005",
+  "title": "CARAT: Do Materials LLMs Reason or Recite?",
+  "source_url": "https://arxiv.org/abs/2609.38340",
+  "source_platform": "rss_ai_research",
+  "summary": "CARAT 是一篇针对材料科学大语言模型（Materials LLM）评估方法的研究论文，旨在回答一个关键问题：当模型回答晶体结构相关问题时，它究竟是在真正进行结构推理，还是仅仅从输入中复制已打印的答案字段？作者指出，传统准确率指标无法区分这两种情况，因为结构描述中往往直接包含被评分的字段。为此，CARAT 提出了一种受控评估框架：将问题与标准答案固定不变，同时在八种匹配视图下呈现结构信息，并在 GraphSpace 中分别命名每一种结构关系，此外还引入了匹配的微调、答案掩码、证据注入与配对推理等实验设置。该工作对于材料信息学、科学大模型评测以及 LLM 推理能力研究具有重要意义，因为它揭示了当前基准测试可能高估模型真实推理能力的风险，并提供了更严谨的评测方法论。",
+  "tags": [
+    "LLM",
+    "Materials Science",
+    "Evaluation",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统准确率指标无法区分材料 LLM 是真正进行结构推理还是从输入中复制答案字段。",
+      "CARAT 通过固定问题与答案、构建八种匹配视图和 GraphSpace 关系命名，实现了对推理与背诵的受控分离。",
+      "该框架结合微调、答案掩码、证据注入和配对推理等设置，为科学 LLM 评测提供了更严谨的方法论。",
+      "研究结果对材料信息学基准的可信度提出警示，可能影响未来科学大模型的评估标准设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

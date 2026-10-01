@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-012",
+  "title": "Decode-Latency Feedback Prefill: A Model-Free Controller and Its Generalization Limits",
+  "source_url": "https://arxiv.org/abs/2609.38386",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Decode-Latency Feedback Prefill（DLFP），一种无需模型内部信息的无模型控制器，用于解决并发自回归推理中的干扰问题。在 LLM 服务场景中，新到达的长 prompt 进行 prefill 时会占用计算资源，导致正在解码的请求出现 token 延迟（decode latency 抖动）。固定分块（fixed prefill chunk）虽能缓解干扰，但最优 chunk 大小依赖模型、硬件、负载和延迟目标，难以静态确定。DLFP 的核心思路是仅调整与活跃解码重叠的那部分 prefill 工作量，通过解码延迟反馈动态控制 prefill 节奏，从而在不修改模型的前提下降低尾延迟。该工作值得关注之处在于：它把调度问题从静态启发式转向闭环反馈控制，且强调 model-free 与通用性；同时论文标题中\"Generalization Limits\"表明作者也系统分析了该方法在跨模型、跨负载场景下的泛化边界，这对实际部署 LLM 推理服务、优化 TTFT 与 TPOT 权衡具有直接参考价值。",
+  "tags": [
+    "LLM Inference",
+    "Serving",
+    "Scheduling",
+    "Latency Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并发自回归推理中，prefill 与 decode 的资源竞争是导致解码延迟抖动的根本原因，固定分块无法适应多变的模型、硬件与负载条件。",
+      "DLFP 采用无模型闭环控制，仅调节与活跃解码重叠的 prefill 工作量，无需访问模型内部结构即可动态优化延迟。",
+      "论文明确讨论了该控制器的泛化极限，提示此类反馈式调度方法在不同模型和负载下可能存在适用边界。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

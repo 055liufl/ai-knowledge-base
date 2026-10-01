@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-123",
+  "title": "Who Verifies the Graph? Misspecification Attacks on Causal Action Verification for Language Agents",
+  "source_url": "https://arxiv.org/abs/2609.40027",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对语言智能体（Language Agents）中用于验证因果动作的验证器（Causal Action Verifier）进行了红队测试，重点研究了图结构错误指定（misspecification）带来的安全风险。这类验证器（如 CIVeX）通过检查智能体提出的状态变更工具调用是否在已提交的动作-状态因果图中可识别，并颁发带有识别论证和单侧置信下界的证书，从而在混杂工具使用基准上实现了零误执行。然而，作者发现仅通过破坏已提交的因果图——例如省略一条双向边——就能绕过验证机制，导致本应被阻止的误执行发生。这项工作揭示了当前因果动作验证方法对图结构正确性的强依赖，指出在对抗性环境下，图错误指定可成为攻击面，对智能体安全部署具有重要警示意义。该研究属于AI安全与因果推理交叉领域，值得智能体系统开发者、安全研究者及产品团队关注。",
+  "tags": [
+    "Agent Safety",
+    "Causal Inference",
+    "Red Teaming",
+    "Tool Use",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:16:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "因果动作验证器的安全性高度依赖已提交因果图的正确性，图结构错误指定可导致验证失效。",
+      "仅省略一条双向边即可绕过CIVeX的验证，使其在混杂工具使用基准上不再保持零误执行。",
+      "该攻击面表明，智能体安全机制需要同时验证图结构的鲁棒性，而不仅是动作的可识别性。",
+      "红队测试应成为因果验证器部署前的标准评估环节，以发现对图扰动的敏感性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

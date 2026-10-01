@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-035",
+  "title": "Budget Boundary Effects in Test-Time Mathematical Reasoning",
+  "source_url": "https://arxiv.org/abs/2609.38699",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了测试时数学推理中累积 token 上限（预算边界）对推理过程的影响。当 token 上限恰好落在数学推导过程中时，控制器面临两种选择：严格在达到上限时停止，或允许当前尝试完成（建议性）。作者通过对 19,200 条公开轨迹进行配对离线重放实验，覆盖 120 道 AIME、BrUMO 和 HMMT 数学竞赛题，并固定候选顺序和 16 次尝试上限，且答案选择对参考不可见。这项研究揭示了预算边界效应如何影响测试时计算分配的决策，对于优化大模型推理效率、设计更合理的推理预算策略具有重要参考价值，尤其适用于需要长链推理的数学问题求解场景。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Test-Time Compute",
+    "Math"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "累积 token 上限落在数学推导中间时，严格停止与允许完成当前尝试会产生不同的推理结果。",
+      "通过 19,200 条轨迹的配对离线重放，量化了预算边界选择对数学推理准确率的影响。",
+      "固定候选顺序和 16 次尝试上限的实验设计，为测试时计算分配策略提供了可控的评估框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

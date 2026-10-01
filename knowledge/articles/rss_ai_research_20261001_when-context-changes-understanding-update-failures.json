@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-051",
+  "title": "When Context Changes: Understanding Update Failures in LLMs",
+  "source_url": "https://arxiv.org/abs/2609.38866",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）在处理动态变化信息时的一个关键失败模式：陈旧绑定（stale binding）。当用户的偏好、目标或事实发生变化时，LLM 智能体需要基于当前状态进行推理，但早期版本的信息仍保留在上下文中，导致模型可能错误地引用旧值。作者提出了受控上下文记忆（CICM）基准，用于系统性地评估模型在对话和智能体日志中追踪并使用更新信息的能力。研究发现，即使是前沿的推理模型也难以可靠地处理上下文中的信息更新，这揭示了当前 LLM 在动态环境中的根本性局限。该工作对于构建可靠的智能体系统、提升多轮对话的准确性以及理解上下文学习机制具有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:13:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 存在‘陈旧绑定’失败模式：当同一变量在上下文中出现多个版本时，模型可能错误地使用旧值。",
+      "提出了 CICM 基准，用于评估模型在对话和智能体日志中追踪并使用更新信息的能力。",
+      "即使是前沿推理模型也难以可靠处理上下文中的信息更新，表明这是 LLM 的普遍性挑战。",
+      "该研究对构建动态环境下的可靠智能体系统具有重要指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

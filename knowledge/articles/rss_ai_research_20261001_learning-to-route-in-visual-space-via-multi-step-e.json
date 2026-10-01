@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-039",
+  "title": "Learning to Route in Visual Space via Multi-Step Embedding Retrieval",
+  "source_url": "https://arxiv.org/abs/2609.38743",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在视觉空间中进行多步嵌入检索的路由方法，旨在解决当前 LLM 智能体在视觉搜索任务中受限于单步检索器的问题。现有流程中，智能体需要为每个中间步骤生成文本查询，当视觉线索难以用文字描述，或检索器无法在 top 结果中返回必要的中间证据时，性能会严重下降。作者假设，将多步导航过程从文本查询中卸载到视觉嵌入空间，可以提升检索的鲁棒性和效率。该方法的核心思想是让智能体直接在视觉嵌入空间中进行多步路由，通过迭代式嵌入检索逐步逼近目标证据，而非依赖逐步的文本查询。这一工作值得关注，因为它挑战了当前以文本为中心的检索范式，为多模态智能体搜索提供了新思路，有望改善视觉问答、多模态推理等场景下的检索性能。",
+  "tags": [
+    "Multimodal Retrieval",
+    "LLM Agent",
+    "Visual Search",
+    "Embedding"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前视觉智能体搜索受限于单步文本查询检索器，难以处理难以描述的视觉线索。",
+      "提出在视觉嵌入空间中进行多步路由，替代逐步文本查询的检索范式。",
+      "多步嵌入检索有望提升检索器在 top 结果中返回中间证据的能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261001-045",
+  "title": "GraphCert: Bootstrap Agentic Graph Reasoning with Certified Evidence Rubrics",
+  "source_url": "https://arxiv.org/abs/2609.38798",
+  "source_platform": "rss_ai_research",
+  "summary": "GraphCert 提出了一种无需大规模人工标注即可训练图智能体（Graph Agent）的引导式框架。图智能体通过多步交互调用图工具，在知识图谱上进行主动探索与推理，但传统训练依赖大量问答对与推理轨迹，人工构建成本高、难以扩展，且使用闭源 LLM 生成监督数据存在数据泄露风险。GraphCert 的核心思路是引入「认证证据评分标准」（Certified Evidence Rubrics），以可验证的证据链作为监督信号，引导智能体在图上进行自举式（bootstrap）推理训练，从而在降低标注依赖的同时提升推理的可信度与可解释性。该工作值得关注，因为它直击图智能体训练数据瓶颈这一关键痛点，将「证据认证」与「自举学习」结合，为知识图谱推理智能体的可扩展、可验证训练提供了新范式，对 RAG、知识图谱问答与智能体训练方向均有参考价值。",
+  "tags": [
+    "Agent",
+    "Graph Reasoning",
+    "Knowledge Graph",
+    "LLM",
+    "Self-training"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图智能体训练的核心瓶颈在于高质量问答对与推理轨迹的获取成本高、难以规模化。",
+      "以「认证证据评分标准」作为监督信号，可替代人工标注或闭源 LLM 生成，降低数据泄露风险。",
+      "自举式（bootstrap）训练结合可验证证据链，有望同时提升图推理的准确性与可解释性。",
+      "该方法为知识图谱上的多步工具调用智能体提供了一条可扩展、可验证的训练路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

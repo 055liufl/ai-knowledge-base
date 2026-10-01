@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-001",
+  "title": "Improving OCR Faithfulness via Gated and Attenuated On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2609.38282",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对视觉语言模型在 OCR 任务中可能将图像中的异常文本改写为语言上合理的表达、从而损害转录忠实度的问题，提出了一种门控与衰减的在线策略蒸馏方法（Gated and Attenuated On-Policy Distillation）。研究指出，序列级任务奖励与局部教师指导具有互补性，但固定教师的指导效果会随着学生模型能力的提升而逐渐下降。离线分析表明，随着学生模型改进，来自固定教师的监督会变得越来越不利。该方法通过门控机制和衰减策略动态调节教师指导的强度，以在训练过程中保持蒸馏的有效性，从而提升 OCR 转录的忠实度。这项工作对于需要高保真文本识别的应用场景（如文档数字化、无障碍阅读、票据识别等）具有重要意义，也为在线策略蒸馏中教师-学生动态关系的研究提供了新思路。",
+  "tags": [
+    "OCR",
+    "知识蒸馏",
+    "视觉语言模型",
+    "On-Policy Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:10:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定教师的监督效果会随着学生模型能力提升而逐渐减弱甚至变得有害，需要动态调整蒸馏策略。",
+      "序列级任务奖励与局部教师指导具有互补性，结合两者可提升 OCR 转录忠实度。",
+      "门控与衰减机制能够根据学生模型的进步自适应地调节教师指导强度，避免负面迁移。",
+      "该方法针对视觉语言模型在 OCR 中改写异常文本的问题，提升了转录的忠实性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-028",
+  "title": "Component-Aware Feedback for Self-Evolving Programs",
+  "source_url": "https://arxiv.org/abs/2609.38639",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向自演化程序的组件感知反馈机制（Component-Aware Feedback），旨在解决现有 LLM 引导的进化搜索中反馈信息丢失的问题。当前方法在演化程序时通常只保存候选程序和适应度分数，而丢弃了「哪个组件编辑导致了哪项适应度指标变化」这一关键因果信息。这迫使负责变异的 LLM 不得不从杂乱的历史记录中推断先前编辑的效果，导致程序搜索过程缓慢且不稳定，对于本地部署的小型 LLM 演化多组件系统尤为明显。该工作通过引入组件级别的细粒度反馈，让变异 LLM 能够直接获知每次编辑对适应度的影响，从而提升搜索效率与稳定性。该研究对自动化程序合成、LLM 驱动的进化算法以及多组件系统优化具有重要价值，尤其为资源受限环境下使用本地 LLM 进行程序演化提供了新思路。",
+  "tags": [
+    "LLM",
+    "Evolutionary Search",
+    "Program Synthesis",
+    "Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 进化搜索丢弃了组件编辑与适应度变化之间的因果关联，导致变异 LLM 需从杂乱历史中推断效果，效率低下",
+      "组件感知反馈为每次编辑提供细粒度归因，可显著提升程序搜索的稳定性与速度",
+      "该方法对本地可服务的小型 LLM 演化多组件系统尤为关键，降低了对外部大模型的依赖"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

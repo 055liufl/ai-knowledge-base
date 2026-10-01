@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261001-037",
+  "title": "UniEvo-VL: An On-policy Self-Distillation Training Recipe for Multimodal Model Self-improvement",
+  "source_url": "https://arxiv.org/abs/2609.38721",
+  "source_platform": "rss_ai_research",
+  "summary": "UniEvo-VL 提出了一种面向多模态模型的自进化训练框架，核心思想是利用模型自身的批判性反馈进行在线策略自蒸馏（on-policy self-distillation），从而在测试时计算阶段实现自我改进。与传统依赖更大规模外部教师模型的知识蒸馏不同，该方法让统一了生成与理解能力的多模态模型充当自己的教师，通过自我纠错产生的反馈作为特权信息来指导训练。这一思路的价值在于：它绕开了对昂贵外部教师模型的依赖，降低了训练成本，同时充分利用了现代多模态模型兼具生成与理解能力的统一特性，形成闭环的自我提升机制。该工作属于多模态大模型训练方法层面的创新，对探索模型自进化、测试时自适应以及降低对齐成本具有参考意义，尤其适合关注多模态训练范式与自监督改进的研究者和工程师。",
+  "tags": [
+    "Multimodal",
+    "Self-Distillation",
+    "Self-Evolution",
+    "On-Policy Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:12:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用多模态模型统一的生成与理解能力，让模型自身充当教师，摆脱对外部更大教师模型的依赖",
+      "采用在线策略自蒸馏，将测试时计算阶段的自我批判反馈作为特权信息用于训练",
+      "通过自我纠错反馈形成闭环的自进化机制，有望降低多模态模型对齐与后训练的成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

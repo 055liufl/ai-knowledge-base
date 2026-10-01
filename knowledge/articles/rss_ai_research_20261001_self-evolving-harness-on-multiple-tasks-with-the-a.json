@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261001-009",
+  "title": "Self-Evolving Harness on Multiple Tasks with the Agent as Its Own Optimizer",
+  "source_url": "https://arxiv.org/abs/2609.38372",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究自演化 harness（self-evolving harness）在多个任务上的应用，提出让智能体自身充当优化器，而非依赖独立的外部提议者。Harness 指围绕语言模型智能体的代码层，负责组织提示、调用工具、管理上下文和控制执行流程。现有方法通常使用一个运行在人工设计 harness 上的独立提议者来修改求解器的 harness，并且每个基准测试都需要单独演化一套 harness，导致泛化性差、迁移成本高。本文的核心创新在于让智能体同时扮演求解者和优化者的双重角色，在多个任务间共享和演化同一套 harness，从而提升跨任务泛化能力并减少人工设计依赖。这项工作值得关注，因为它触及了智能体自我改进的关键瓶颈——如何让智能体在真实多变的任务环境中自主优化其运行框架，而不是针对单一基准过拟合。如果该方法有效，将推动更通用、更自主的智能体系统发展，对 Agent 基础设施和自动化机器学习领域具有潜在影响。",
+  "tags": [
+    "Agent",
+    "Self-Evolution",
+    "Harness",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-01T15:09:05Z",
+  "collected_at": "2026-10-01T15:11:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自演化 harness 方法依赖独立提议者且每个基准单独演化，泛化能力受限",
+      "让智能体自身作为优化器，可减少对人工设计 harness 的依赖",
+      "跨多任务共享演化 harness 是提升泛化性的关键方向",
+      "该工作指向更自主、通用的智能体自我改进机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
