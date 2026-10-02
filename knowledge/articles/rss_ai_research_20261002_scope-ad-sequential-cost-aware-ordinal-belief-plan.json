@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-084",
+  "title": "SCOPE-AD: Sequential cost-aware ordinal-belief planning with energy-based models for diagnostic agents",
+  "source_url": "https://arxiv.org/abs/2610.01278",
+  "source_platform": "rss_ai_research",
+  "summary": "SCOPE-AD 是一篇针对阿尔茨海默病（AD）诊断的序贯决策规划框架研究，发表于 arXiv（编号 2610.01278）。该工作聚焦于 AD 诊断中一个核心痛点：诊断需要按顺序采集多种证据（如认知测试、影像学检查、生物标志物等），而这些检查在成本、侵入性和患者负担上差异巨大，传统的固定模态预测器无法同时决定\"下一步该做哪项检查\"以及\"现有证据是否已足够下诊断\"。SCOPE-AD 提出将序贯成本感知规划与基于能量的模型（Energy-Based Models, EBM）相结合，在序贯决策过程中维护一个\"序数信念\"（ordinal belief）表示，用于区分认知正常（CN）、轻度认知障碍（MCI）等有序诊断类别。其核心创新在于把诊断分类建模为成本敏感的序贯证据采集问题，让智能体在每一步权衡信息增益与检查成本，从而在保证诊断准确性的同时降低总体医疗开销与患者负担。该研究值得关注的原因在于：它代表了医疗 AI 从\"静态预测\"向\"主动式、成本感知的诊断智能体\"演进的重要方向，对临床决策支持系统、资源受限场景下的筛查流程优化具有实际意义，也为 EBM 在序贯决策与不确定性建模中的应用提供了新",
+  "tags": [
+    "Medical AI",
+    "Sequential Decision Making",
+    "Energy-Based Models",
+    "Diagnostic Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 AD 诊断建模为成本感知的序贯证据采集问题，智能体可动态决定下一步检查项目及何时停止采集，突破固定模态预测器的局限。",
+      "引入基于能量的模型（EBM）来建模序数信念，有效处理 CN、MCI 等有序诊断类别之间的不确定性。",
+      "在诊断准确性与检查成本、患者负担之间进行显式权衡，对临床资源受限场景下的筛查流程优化具有实用价值。",
+      "代表了医疗 AI 从静态预测向主动式诊断智能体演进的方向，为序贯决策与不确定性建模结合提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

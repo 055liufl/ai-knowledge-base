@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-123",
+  "title": "LineupRL: Verifiable Reinforcement Learning for Time Series Captioning via Caption-to-Series Identification",
+  "source_url": "https://arxiv.org/abs/2610.01800",
+  "source_platform": "rss_ai_research",
+  "summary": "LineupRL 提出了一种面向时间序列描述生成（time series captioning）的可验证强化学习方法，通过「描述到序列识别」（caption-to-series identification）任务来构建奖励信号。传统监督微调（SFT）依赖更大模型生成的描述，其质量上限受限于教师模型；而强化学习虽能突破这一限制，但现有 RL 奖励机制主要针对其他模态和任务设计，难以迁移到时间序列领域的开放式生成任务。LineupRL 的核心创新在于将奖励设计为可验证的识别任务：给定模型生成的描述，判断其能否准确识别出对应的原始时间序列。这种「描述-序列」双向验证机制为开放式生成提供了客观、可自动计算的奖励信号，避免了人工标注或模型评分带来的偏差。该工作值得关注，因为它首次系统性地解决了时间序列描述生成中 RL 奖励难以设计的问题，为信号与自然语言之间的桥接提供了新的训练范式，对时间序列理解、多模态对齐以及可验证 RL 在非文本模态上的应用具有重要参考价值。",
+  "tags": [
+    "Time Series",
+    "Reinforcement Learning",
+    "Captioning",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SFT 依赖大模型生成的描述，质量存在上限；RL 可突破该上限，但现有奖励机制难以迁移到时间序列开放式生成任务",
+      "LineupRL 通过 caption-to-series identification 构建可验证奖励，将生成质量转化为可自动计算的识别准确率",
+      "该工作为时间序列与自然语言之间的桥接提供了新的训练范式，推动了可验证 RL 在非文本模态上的应用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

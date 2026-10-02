@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-002",
+  "title": "When Do Causal World Models Help Modular LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.00012",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究因果世界模型在模块化LLM智能体中的适用条件。在订单、支付、库存、物流等模块化系统中，一个模块的动作会改变其他模块的有效状态转移，标准世界模型仅拟合观测轨迹，无法支持干预规划——轨迹可能显示支付先于发货，但无法区分支付是发货的授权原因、库存是中介变量，还是二者仅为相关。论文提出因果世界模型，旨在回答何时以及为何因果结构能提升模块化LLM智能体的规划与决策能力。该工作将因果推断与LLM智能体规划结合，对构建可靠、可解释的多模块智能体系统具有重要理论价值，尤其适用于电商、供应链等复杂业务场景。",
+  "tags": [
+    "LLM Agent",
+    "Causal Inference",
+    "World Model",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准世界模型拟合观测轨迹，无法区分相关与因果，导致干预规划失效",
+      "模块化LLM智能体中，跨模块动作会改变状态转移的有效性，需要因果结构建模",
+      "因果世界模型的价值取决于任务是否涉及干预规划，而非单纯预测",
+      "该研究为LLM智能体在复杂业务系统中的可靠决策提供了因果视角"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-079",
+  "title": "HHR: Hierarchical Hash Retrieval for Efficient LLM Generation",
+  "source_url": "https://arxiv.org/abs/2610.01230",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 HHR（Hierarchical Hash Retrieval）的方法，用于提升大语言模型（LLM）在长上下文推理中的效率。长上下文推理是 LLM 面临的主要计算瓶颈之一，而基于哈希的检索通过将查询和键编码为二进制码并利用汉明距离进行键选择，提供了一种高效替代方案。然而，现有方法存在一个关键问题：汉明距离与注意力相关性之间存在不匹配。具体而言，查询-键 logits 同时依赖于方向相似性和特征幅度，而汉明距离仅能捕捉方向信息，忽略了幅度差异，导致检索质量下降。HHR 通过分层哈希检索机制来解决这一问题，旨在更准确地选择与查询相关的键，从而在保持高效性的同时提升生成质量。该工作对于需要处理长文档、多轮对话或大规模知识库的 LLM 应用具有重要意义，有望推动长上下文推理在实际部署中的可行性。",
+  "tags": [
+    "LLM",
+    "Hash Retrieval",
+    "Long Context",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于哈希的检索在 LLM 长上下文推理中具有高效性，但汉明距离与注意力相关性存在不匹配问题。",
+      "查询-键 logits 同时依赖方向相似性和特征幅度，而汉明距离仅捕捉方向信息，导致检索偏差。",
+      "HHR 通过分层哈希检索机制缓解上述不匹配，有望在效率与准确性之间取得更好平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

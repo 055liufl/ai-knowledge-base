@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-026",
+  "title": "Frozen Scenes, Shifting Winners: Configuration Fragility in Text-to-3D Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.00447",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对文本到3D（text-to-3D）生成模型的评估协议进行了系统性审计，核心问题是：当所有生成场景保持不变时，排行榜是否会因评估配置的变化而改变？作者使用来自六种生成器的300个冻结场景，针对19个对齐评估器和一个感知质量控制器，变化了八种渲染和字幕因素，并测试了四种针对性的场景退化。研究发现，峰值配置方差超过了生成器之间的差异，这意味着评估结果高度依赖于相机设置、字幕措辞等测量协议细节，而非模型本身的生成质量。该工作揭示了当前text-to-3D评估中的配置脆弱性问题，对依赖排行榜进行模型比较的研究者和开发者具有重要警示意义，呼吁建立更标准化、鲁棒的评估流程。",
+  "tags": [
+    "Text-to-3D",
+    "Evaluation",
+    "Benchmark",
+    "3D Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "评估配置（如相机设置和字幕措辞）的方差可能超过不同生成器之间的性能差异，导致排行榜不可靠。",
+      "在300个冻结场景上，19个对齐评估器对八种渲染和字幕因素表现出显著的敏感性。",
+      "当前text-to-3D评估缺乏标准化协议，配置脆弱性威胁到模型比较的有效性。",
+      "需要开发对配置变化鲁棒的评估指标或标准化评估流程，以确保公平的模型排名。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

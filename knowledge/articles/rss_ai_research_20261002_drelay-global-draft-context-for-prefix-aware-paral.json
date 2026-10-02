@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261002-102",
+  "title": "DRelay: Global Draft Context for Prefix-Aware Parallel Speculative Decoding Repair",
+  "source_url": "https://arxiv.org/abs/2610.01439",
+  "source_platform": "rss_ai_research",
+  "summary": "DRelay 是一篇针对大语言模型（LLM）推测解码（Speculative Decoding）中并行草稿生成效率瓶颈的研究工作。推测解码通过小模型快速生成候选 token，再由大模型并行验证，从而加速推理。并行草稿生成虽然降低了草稿阶段的开销，但其加速收益受限于被接受的前缀长度——一旦在早期位置出现一次选择错误，即使正确 token 存在于候选池中，后续所有预测也会被丢弃，导致接受率下降。DRelay 提出利用整个草稿块的全局信息，对候选选择进行前缀感知的选择性修复（prefix-aware selective repair），从而在保持并行草稿低开销的同时提升有效接受前缀长度。该工作值得关注，因为它直接针对推测解码的核心效率瓶颈，且方法具有通用性，可与其他并行草稿方案结合，对 LLM 推理加速的工程落地有实际价值。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Inference Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行草稿的加速收益受限于被接受前缀长度，早期单点选择错误会导致后续正确预测被整体丢弃",
+      "DRelay 利用整个草稿块的全局上下文信息，对候选选择进行前缀感知的选择性修复",
+      "该方法在保持并行草稿低开销的同时，有望提升有效接受前缀长度，从而改善端到端推理加速比"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

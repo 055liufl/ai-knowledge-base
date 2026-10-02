@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-073",
+  "title": "Auditing Action Settlement in LLM Agent Environments: Order, Progress, and Replay",
+  "source_url": "https://arxiv.org/abs/2610.01138",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM 智能体环境中并发动作的仲裁问题展开研究。当多个智能体同时提出各自有效的动作提案时，系统需要一种机制来协调这些动作的执行顺序与结果。作者实现了一种类型化的快照-结算契约（typed snapshot-settlement contract），并审计了三个关键属性：顺序敏感性、有效进展和重放一致性。研究在 28,800 次穷举排列试验和 2,160 个脚本化多步回合中测试了五种结算策略，发现联合策略在空间上具有顺序不变性。这项工作值得关注，因为它首次系统性地形式化了 LLM 多智能体环境中的动作结算问题，为构建可靠、可复现的智能体协作系统提供了理论基础和实证评估框架，对多智能体系统、并发控制和可复现性研究具有重要参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Multi-Agent",
+    "Concurrency",
+    "Replay",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并发动作仲裁是 LLM 智能体环境中的核心问题，即使每个动作提案单独有效，也需要结算机制来保证系统一致性",
+      "论文提出类型化快照-结算契约，并系统审计顺序敏感性、有效进展和重放一致性三个属性",
+      "通过大规模穷举排列试验和脚本化多步回合，发现联合策略在空间上具有顺序不变性",
+      "该研究为多智能体系统的可靠性、可复现性和并发控制提供了形式化评估框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

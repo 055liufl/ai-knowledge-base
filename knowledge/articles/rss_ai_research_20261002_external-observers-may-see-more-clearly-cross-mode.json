@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-140",
+  "title": "External Observers May See More Clearly: Cross-Model Span-Level Hallucination Detection in Large Language Models via Hidden State Probing",
+  "source_url": "https://arxiv.org/abs/2610.02066",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种跨模型、跨度级（span-level）的大语言模型幻觉检测方法，通过探测模型隐藏状态来识别幻觉。现有基于内部状态的探测方法多将幻觉检测简化为逐 token 的二分类任务，无法捕捉语义漂移的结构化、序列化边界。作者提出利用外部观察者模型（cross-model）对目标模型的隐藏状态进行探测，从而在跨度级别上更准确地定位幻觉片段。这一思路的核心洞察在于：不同模型对同一文本的内部表征存在差异，外部模型可能比生成模型自身更能识别出语义漂移的边界。该方法有望替代或补充依赖外部检索的慢速检测方案，为 LLM 可靠性提供更高效、更细粒度的保障。该研究对幻觉检测从 token 级向 span 级的范式转变具有推动作用，值得关注 LLM 安全与可解释性的研究者和开发者阅读。",
+  "tags": [
+    "Hallucination Detection",
+    "LLM",
+    "Interpretability",
+    "Hidden State Probing"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:37:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有内部状态探测方法将幻觉检测简化为 token 级二分类，忽略了语义漂移的跨度级结构边界",
+      "跨模型隐藏状态探测（外部观察者）可能比模型自身更有效地识别幻觉片段",
+      "跨度级检测比 token 级检测更符合幻觉作为语义漂移序列的本质"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

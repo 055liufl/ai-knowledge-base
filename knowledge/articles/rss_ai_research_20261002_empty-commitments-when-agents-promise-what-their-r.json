@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-066",
+  "title": "Empty Commitments: When Agents Promise What Their Runtime Cannot Deliver",
+  "source_url": "https://arxiv.org/abs/2610.01045",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并形式化了「空承诺」（Empty Commitment）这一概念，指智能体在当前对话轮次结束后承诺执行某项动作，但其工具集或运行时环境根本无法兑现该承诺。与「食言」不同，空承诺的不可实现性仅由智能体的配置决定，无需观察后续轨迹即可判定。作者基于承诺语义学（commitment semantics）对空承诺进行定义，并划分出三种失败类型，同时引入「锚点」等概念来刻画承诺与运行时能力之间的错配。该研究值得关注，因为它揭示了当前 LLM 智能体设计中一个被普遍忽视的系统性缺陷：智能体在自然语言层面表现出的「能力幻觉」并非源于模型知识不足，而是源于运行时能力与语言承诺之间的结构性脱节。这一视角为智能体可靠性评估、工具调用框架设计以及对话系统的可信度研究提供了新的分析工具，对构建真正可依赖的自主智能体具有重要的理论与实践意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Reliability",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "空承诺的不可实现性仅由智能体配置决定，无需观察后续行为即可静态判定，这为智能体可靠性提供了可提前检测的分析维度",
+      "空承诺与「食言」有本质区别：前者是能力与语言的结构性错配，后者是执行层面的失败，二者需要不同的缓解策略",
+      "该工作基于承诺语义学提出三种失败类型，为智能体工具调用与运行时能力的对齐提供了形式化框架",
+      "当前 LLM 智能体的「能力幻觉」问题可能更多源于运行时设计缺陷而非模型本身，提示工程之外还需关注系统架构层面的修复"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

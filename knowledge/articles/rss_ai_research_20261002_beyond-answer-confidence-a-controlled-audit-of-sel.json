@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-062",
+  "title": "Beyond Answer Confidence: A Controlled Audit of Self-Knowledge in a Black-Box Decision Model",
+  "source_url": "https://arxiv.org/abs/2610.01006",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对黑盒决策模型 Jev 的自我知识（self-knowledge）进行了受控审计，核心问题是：模型输出的置信度是否真正反映了其知识边界。传统校准（calibration）只能保证概率在平均意义上可用，但无法区分低置信度是源于随机性还是知识缺失，也无法验证模型在超出已知范围时置信度是否会下降。作者在超过 15 个公开数据集和 6 个生成任务族上，通过配对干预（paired interventions）系统性地检验了 Jev 的置信度行为。该研究值得关注，因为它挑战了当前决策模型部署中普遍依赖的校准假设，指出仅靠校准不足以支撑路由、弃权和自动化决策等高风险应用。对于需要模型具备可靠自我认知的 AI 安全、可靠性和不确定性量化领域，这项工作提供了重要的实证审计框架和警示。",
+  "tags": [
+    "Uncertainty Quantification",
+    "Model Calibration",
+    "AI Safety",
+    "Decision Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "校准（calibration）只能保证概率在平均意义上可用，无法区分低置信度是源于随机性还是知识缺失。",
+      "模型在超出其已知范围时，置信度未必会下降，这削弱了置信度作为知识边界信号的可信度。",
+      "通过配对干预和多个数据集/任务族的受控审计，可以更严格地检验黑盒决策模型的自我知识。",
+      "在路由、弃权和自动化决策等场景中，仅依赖校准后的概率可能带来风险，需要更深入的自我知识评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

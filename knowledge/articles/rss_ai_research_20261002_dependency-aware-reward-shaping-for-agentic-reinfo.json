@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-077",
+  "title": "Dependency-Aware Reward Shaping for Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.01207",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Dependency-Aware Reward Shaping（DARS）的方法，用于解决在智能体强化学习（Agentic RL）中训练大语言模型时终端奖励稀疏的问题。传统方法仅提供最终的成功/失败奖励，导致失败轨迹中的每一步都获得零未来奖励，即使某些步骤已经取得了实质性进展。此外，常见的步骤信用分配方法忽略了步骤之间的依赖关系：建立在未纠正错误之上的后续工作实际上是无效的，而独立于错误步骤的工作仍然有效。DARS 通过建模步骤间的依赖结构，对奖励进行重新分配，使得在失败轨迹中真正有贡献的步骤也能获得合理的信用信号。该方法有望提升智能体在复杂多步任务中的学习效率和最终性能，对于推动 LLM 智能体的强化学习训练具有重要价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM Agent",
+    "Reward Shaping",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "终端奖励稀疏导致失败轨迹中所有步骤获得零奖励，即使部分步骤有实质进展。",
+      "步骤信用分配需考虑依赖关系：基于未纠正错误的后续步骤无效，而独立步骤仍有效。",
+      "DARS 通过依赖感知的奖励重塑，为失败轨迹中有贡献的步骤提供更合理的信用信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

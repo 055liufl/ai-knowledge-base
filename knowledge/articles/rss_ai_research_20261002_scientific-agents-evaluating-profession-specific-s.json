@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-009",
+  "title": "Scientific Agents: Evaluating Profession-Specific System Prompts on Scientific Tasks",
+  "source_url": "https://arxiv.org/abs/2610.00084",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究评估了面向科学任务的职业特定系统提示词（profession-specific system prompts）的实际效果。作者构建了 Scientific Agents，一个包含 503 个职业特定 AGENTS.md 配置的开源语料库，并在 Pi agent harness 中通过 OpenRouter 调用 Gemini 3.8 Flash 进行测试。实验将匹配的职业配置与四种对照组进行比较：极简基线（\"You are a helpful assistant\"）、仅使用配置的开场角色句、通用科学角色提示，以及可能的无提示条件。核心发现是：详细的职业特定系统提示词虽然显著增加了 token 消耗和单次响应的估算成本，但并未带来一致的准确率提升。这一结论对当前 Agent 开发中普遍追求\"更精细角色设定\"的实践提出了质疑，提示开发者需要在提示词复杂度与成本效益之间做出更理性的权衡，对 Agent 系统设计、提示工程成本优化以及科学领域 AI 应用具有直接的实践指导意义。",
+  "tags": [
+    "Agent",
+    "Prompt Engineering",
+    "LLM Evaluation",
+    "Scientific AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "详细的职业特定系统提示词会显著增加 token 消耗和响应成本，但并未带来一致的准确率提升",
+      "503 个职业特定 AGENTS.md 配置构成的开源语料库为提示词工程研究提供了可复用的基准资源",
+      "极简基线提示词在科学任务上可能与复杂职业提示词表现相当，提示词复杂度并非性能的决定因素",
+      "Agent 系统设计应更关注成本效益权衡，而非盲目追求角色设定的精细化"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

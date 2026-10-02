@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-086",
+  "title": "ITC-MoE: Importance-guided Token-aware Compression for MoE Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2610.01296",
+  "source_platform": "rss_ai_research",
+  "summary": "ITC-MoE 是一篇针对 MoE 扩散语言模型（MoE Diffusion Language Models, MoE DLMs）提出的压缩方法论文。MoE DLM 结合了混合专家架构与扩散式并行解码能力，在提升模型容量的同时带来了大量专家参数，导致计算与存储开销显著增加。现有低秩 MoE 压缩方法多采用静态分解与固定秩分配，忽略了 MoE DLM 的独特性质。该工作识别出两个关键特性：跨模式非均匀冗余（cross-mode non-uniform redundancy）等，并据此提出重要性引导的 token 感知压缩策略（Importance-guided Token-aware Compression）。方法核心在于根据 token 重要性和专家激活模式动态分配压缩秩，从而在保持生成质量的同时降低参数与计算成本。该研究对高效部署大规模 MoE 扩散语言模型具有实用价值，也为 MoE 压缩领域提供了新的分析视角。",
+  "tags": [
+    "MoE",
+    "Diffusion Language Model",
+    "Model Compression",
+    "Low-rank Factorization"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE DLM 存在跨模式非均匀冗余，静态低秩分解与固定秩分配无法有效利用该特性",
+      "token 感知的重要性引导压缩可动态分配专家秩，在压缩率与生成质量间取得更好平衡",
+      "该工作为 MoE 扩散语言模型的高效化提供了针对性的压缩框架，区别于通用 MoE 压缩方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

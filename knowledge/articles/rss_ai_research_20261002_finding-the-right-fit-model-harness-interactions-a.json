@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-053",
+  "title": "Finding the Right Fit: Model-Harness Interactions across Agent Tasks",
+  "source_url": "https://arxiv.org/abs/2610.00917",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了智能体系统中语言模型与执行框架（harness）之间的匹配问题。作者在 TUA-Bench、ALE-CLI 和 Terminal-Bench 4 三个基准上评估了 66 种配置，涵盖 OpenHands、DeepSeek Harness、PI、openJiuwen 四种可配置框架与五种模型的组合，并纳入 Codex-GPT 和 Claude Code-Claude 原生配对作为对照。核心发现是模型排名会随框架和任务设置的变化而发生反转，说明不存在普遍最优的模型或框架，性能高度依赖于二者的具体搭配以及任务环境。这一结论对智能体系统的选型与评测方法论具有重要启示：仅凭单一基准或固定框架得出的模型排名可能具有误导性，实际部署需针对目标任务进行端到端的组合评估。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型与执行框架的搭配效果高度依赖具体任务设置，强模型或强框架单独存在时并不能保证组合后的性能。",
+      "模型排名会随框架和基准的变化而发生反转，单一维度的评测结论可能不可靠。",
+      "智能体系统选型应进行端到端的组合评估，而非孤立地比较模型或框架。",
+      "66 种配置的大规模实证为智能体评测方法论提供了重要的可复现参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

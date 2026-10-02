@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-126",
+  "title": "Code Owns the Simulation, Jev Owns the Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.01834",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了判断模型（judgment models）如 Jev 在智能体动作选择层中的可信度边界。Jev 类模型能在单次调用中、无需推理文本，直接为每个描述选项返回概率，因此适合作为智能体的动作选择层。作者在反思测试、单次矩阵博弈、文本游戏 ALFWorld 和机器人控制等任务上测试 Jev，发现其能力存在明显边界：当正确选项可以从输入描述中直接判断时，Jev 表现良好；但当决策需要模拟环境动态或进行多步推理时，其可靠性显著下降。这一发现对智能体架构设计具有重要启示：判断模型适合承担评估类任务，而模拟与规划类任务仍需由代码或其他推理机制承担。该工作为理解判断模型的能力边界、合理划分智能体各模块职责提供了实证依据，对构建更可靠的智能体系统具有参考价值。",
+  "tags": [
+    "Agent",
+    "LLM Evaluation",
+    "Decision Making",
+    "Robot Control"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "判断模型（如 Jev）在单次调用中返回选项概率，无需推理文本，适合作为智能体的动作选择层。",
+      "Jev 在反思测试、矩阵博弈、ALFWorld 和机器人控制中表现出明显的能力边界：当正确选项可从输入直接判断时成功，需要环境模拟或多步推理时失败。",
+      "该研究提示智能体架构应让代码负责模拟、判断模型负责评估，从而发挥各自优势。",
+      "判断模型的可信度取决于任务是否依赖对输入描述的即时判断，而非动态环境模拟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

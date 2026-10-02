@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-060",
+  "title": "Calibration-risk routing for controlled world-model adaptation",
+  "source_url": "https://arxiv.org/abs/2610.01001",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为模型校正世界模型（MC-WM）的新方法，用于解决基于模型的强化学习（MBRL）中模拟器到目标域迁移时的模型选择问题。在MBRL中，智能体可以利用模拟经验进行训练，但当模拟器与真实目标环境存在差异（simulator-to-target shift）时，直接校正模拟器或直接在目标数据上拟合都可能因目标数据有限而失败。MC-WM通过将初始目标数据划分为不相交的拟合集、选择集和校准集，并基于标准化校准风险来选择模型族，从而在有限目标数据下实现更稳健的适应。该方法的核心创新在于将校准风险作为模型选择的准则，而非仅仅依赖拟合误差或验证误差，这有助于避免过拟合和选择偏差。实验表明，MC-WM在多个连续控制任务中优于基线方法，尤其是在目标数据稀缺时表现突出。这项工作为世界模型在真实环境中的安全、可控适应提供了新的思路，对基于模型的强化学习、迁移学习和元学习等领域具有重要参考价值。",
+  "tags": [
+    "Model-Based RL",
+    "World Model",
+    "Transfer Learning",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将目标数据划分为拟合、选择和校准三个独立部分，可有效缓解有限数据下的模型选择偏差。",
+      "标准化校准风险作为模型选择准则，比传统验证误差更能反映模型在目标域上的泛化能力。",
+      "MC-WM在目标数据稀缺时显著优于直接微调或纯模拟器方法，提升了MBRL的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

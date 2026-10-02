@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-003",
+  "title": "From Proposal to Verified Effect: Praxa, an Evidence-Bound Harness for Governed AI Agent Execution",
+  "source_url": "https://arxiv.org/abs/2610.00015",
+  "source_platform": "rss_ai_research",
+  "summary": "Praxa 是一个面向 LLM Agent 执行治理的「证据绑定」框架（harness），旨在解决当前 Agent 系统中一个被普遍忽视的问题：Agent 提出动作、获得授权、实际派发、产生外部可验证效果、以及服务上线，这五个环节本质上是不同的声明，但现有系统往往将它们混为一谈。Praxa 通过确定性准入（deterministic admission）、代理执行（brokered execution）、外部回读（external read-back）、对账（reconciliation）和受审晋升（reviewed promotion）等机制，将这些状态显式建模和分离。论文报告了四条证据链，其中第一条是作者在固定版本上进行的仓库本地审计。该工作值得关注的原因在于：随着 Agent 从演示走向生产环境，执行的可审计性、权限边界和效果验证成为关键瓶颈，而 Praxa 提供了一种将「提议」与「已验证效果」严格区分的工程范式，对构建可信、可治理的 Agent 基础设施具有参考价值。",
+  "tags": [
+    "Agent",
+    "AI Governance",
+    "Execution Harness",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的提议、授权、派发、外部效果验证和服务晋升是五个独立的声明状态，不应被混同处理。",
+      "Praxa 通过确定性准入、代理执行、外部回读、对账和受审晋升五个环节，将 Agent 执行过程显式化和可审计化。",
+      "该框架强调「证据绑定」，即每个执行状态都需要有对应的外部可验证证据，而非仅依赖 Agent 自身的报告。",
+      "随着 Agent 进入生产环境，执行治理和效果验证将成为与模型能力同等重要的基础设施需求。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

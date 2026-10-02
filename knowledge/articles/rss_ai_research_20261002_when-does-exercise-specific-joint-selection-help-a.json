@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-075",
+  "title": "When Does Exercise-Specific Joint Selection Help? An Audit of Evaluation and Control Design",
+  "source_url": "https://arxiv.org/abs/2610.01188",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对基于骨架的动作正确性分类中“针对特定锻炼项目的关节选择”这一常见做法进行了系统性审计。研究基于REHAB24-6数据集的10名受试者、1057次重复动作，将评估聚合方式、子集结构和时间表示三个因素分离分析。核心发现是：当评估方式从合并的折外AUROC（pooled out-of-fold AUROC）改为等权重的个体内AUROC（equal-weight within-person AUROC）时，手动关节子集带来的kNN性能增益从0.055骤降至0.020，且两种评估下的配对置信区间均包含零，说明该增益在统计上并不稳健。此外，在1000次维度匹配的随机子集对照实验中，手动选择的关节子集并未显著优于随机子集。该工作揭示了康复动作评估领域中一个被广泛忽视的方法论问题：许多声称有效的关节选择策略，其收益可能主要来自评估聚合方式的选择偏差，而非关节选择本身的真实贡献。对于从事骨架动作识别、康复评估和可穿戴传感分析的研究者与开发者而言，本文提供了重要的评估设计警示，强调了在个体内评估、维度匹配对照和配对统计检验下重新验证特征选择必要性的价值。",
+  "tags": [
+    "Skeleton-based Action Recognition",
+    "Rehabilitation Assessment",
+    "Evaluation Methodology",
+    "Feature Selection"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "关节选择带来的性能增益高度依赖评估聚合方式：合并折外AUROC下增益为0.055，但个体内等权AUROC下仅0.020，且置信区间均包含零。",
+      "在1000次维度匹配的随机子集对照中，手动选择的关节子集并未显著优于随机子集，说明其增益缺乏特异性。",
+      "该审计揭示了康复动作评估中普遍存在的评估设计偏差问题，呼吁在个体内评估和配对检验下重新验证特征选择策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

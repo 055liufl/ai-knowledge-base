@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-022",
+  "title": "What Should an Agent Remember? Disentangling Retention from Retrieval in Bounded-Memory Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.00366",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对持久化智能体（persistent agent）的记忆评估问题，指出当前记忆评测常将\"保留（retention）\"与\"检索/选择（selection）\"两个决策混淆，导致方法比较不公平。作者构建了一个流式召回基准（streaming-recall benchmark），将保留规则与选择规则进行交叉组合，并在相同的300个带种子（seeded）的episode上评估每一种条件，从而在控制访问方式不变的前提下，单独考察各决策维度的影响。实验发现，在访问固定时，查询感知（query-aware）的选择策略能将必需事实的召回率提升约1个百分点（摘要在此处被截断）。该工作的价值在于为智能体记忆系统提供了更严谨的评测方法论，将\"记什么\"与\"取什么\"解耦，有助于研究者更准确地定位记忆瓶颈究竟来自存储策略还是检索策略，对长上下文、RAG、Agent记忆等方向具有方法论层面的指导意义。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Evaluation",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体记忆评测常将保留（retention）与选择（selection）两个决策混淆，导致方法对比结论不可靠。",
+      "作者提出流式召回基准，交叉保留与选择规则并在相同300个种子episode上评估，实现变量解耦。",
+      "在访问方式固定的条件下，查询感知的选择策略能提升必需事实的召回率，说明检索策略是独立且重要的优化维度。",
+      "该工作为智能体记忆系统提供了更严谨的评测范式，有助于区分记忆瓶颈来自存储还是检索。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

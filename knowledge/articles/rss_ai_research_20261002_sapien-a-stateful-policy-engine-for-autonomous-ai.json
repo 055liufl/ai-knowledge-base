@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-046",
+  "title": "Sapien: A Stateful Policy Engine for Autonomous AI Agents",
+  "source_url": "https://arxiv.org/abs/2610.00797",
+  "source_platform": "rss_ai_research",
+  "summary": "Sapien 是一个面向自主 AI 智能体的有状态策略引擎，旨在解决多步任务中上下文安全防御的局限性。传统上下文安全防御通过合成任务特定策略并对智能体的工具调用进行强制执行来防止越权行为，但在多步任务中，哪些操作合法往往取决于智能体此前已执行的操作和已获取的信息，静态策略难以覆盖这种动态依赖。Sapien 的核心创新在于支持有状态上下文策略：其策略使用扩展了状态信息的正则表达式来指定允许的工具调用序列，从而能够根据智能体的历史行为动态判断当前工具调用是否合规。该工作来自 arXiv 预印本，属于 AI 智能体安全与治理方向的前沿研究。其价值在于为自主智能体在复杂多步任务中的行为约束提供了更精确、更具上下文感知能力的执行机制，弥补了现有无状态策略引擎在序列依赖场景下的不足，对构建可信、可控的智能体系统具有重要参考意义。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Policy Engine",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步任务中工具调用的合法性依赖于智能体的历史行为，静态或无状态策略无法准确表达这种依赖关系。",
+      "Sapien 通过扩展正则表达式引入状态信息，以声明式方式指定允许的工具调用序列，实现有状态策略的强制执行。",
+      "该引擎为自主智能体的上下文安全防御提供了更细粒度的行为约束机制，有助于防止多步任务中的越权操作。",
+      "有状态策略引擎是构建可信自主智能体的关键基础设施，代表了智能体安全治理从静态规则向动态上下文感知演进的方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-068",
+  "title": "Improving Math Reasoning through Value-guided Informative Search",
+  "source_url": "https://arxiv.org/abs/2610.01080",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 APIVIS，一个面向大语言模型数学推理能力的训练时框架。现有基于可验证奖励的强化学习（RLVR）方法通过在 rollout 阶段引入搜索来提升轨迹多样性，但作者指出多样性本身并不能保证搜索诱导出的 rollout 策略优于当前策略，因此存在优化效率与方向性的缺口。APIVIS 的核心思路是将有限预算的 Gumbel 搜索进行自适应改造，使其在训练过程中能够根据价值信号引导搜索方向，从而在有限计算预算下生成更具信息量的推理轨迹。该工作属于 RLVR 与推理时搜索交叉领域的改进，针对的是当前 LLM 数学推理训练中「盲目追求多样性」的常见做法，强调搜索质量与策略改进之间的对齐。对于关注 LLM 推理能力提升、强化学习训练策略以及搜索增强生成的研究者和工程师而言，该工作提供了一种更精细的 rollout 生成范式，有望在同等算力下提升数学推理的训练效率与最终性能。",
+  "tags": [
+    "LLM",
+    "RLVR",
+    "Math Reasoning",
+    "Search",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅靠搜索带来的轨迹多样性不足以保证策略改进，搜索诱导的 rollout 策略需要与当前策略形成有效对比",
+      "APIVIS 将有限预算的 Gumbel 搜索改造为价值引导的自适应搜索，使 rollout 更具信息量",
+      "该框架在训练时而非推理时发挥作用，目标是提升 RLVR 的样本效率与数学推理能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

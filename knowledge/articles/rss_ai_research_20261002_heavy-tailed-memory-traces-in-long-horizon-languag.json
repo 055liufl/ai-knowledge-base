@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-001",
+  "title": "Heavy-Tailed Memory Traces in Long-Horizon Language Agents",
+  "source_url": "https://arxiv.org/abs/2610.00010",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究长时程语言代理（Long-Horizon Language Agents）中外部记忆的使用模式，指出当前记忆系统仅以任务成功率或token成本为评价标准，忽略了记忆使用的分布形态。作者提出在有限上下文和重复检索下，代理记忆会集中于一个小的核心区域，而将稀有状态留在长尾中，导致预测误差累积。通过保守尾部分析，论文揭示了记忆访问的“重尾”特性，即少数记忆项被频繁访问，而大量记忆项极少被触及。这一发现对设计更鲁棒的长期记忆系统具有重要意义，因为它表明仅优化平均性能可能掩盖长尾状态下的严重失效风险。该工作为理解代理记忆的动态行为提供了新视角，并可能推动更关注尾部鲁棒性的记忆架构与评估指标的发展。",
+  "tags": [
+    "LLM Agent",
+    "Memory",
+    "Long-Horizon",
+    "Heavy-Tailed"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程语言代理的记忆使用呈现重尾分布：少数核心记忆被频繁访问，大量稀有状态处于长尾且易累积预测误差。",
+      "当前记忆系统评估仅关注任务成功或token成本，忽略了记忆访问的分布形态这一关键维度。",
+      "有限上下文与重复检索会加剧记忆集中化，导致长尾状态被忽视，从而影响代理的长期鲁棒性。",
+      "未来记忆系统设计需引入尾部感知的评估指标与机制，以缓解长尾状态下的误差累积。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-004",
+  "title": "What Do Rationales Communicate? A Message-Intervention Study in Role-Specialized QA",
+  "source_url": "https://arxiv.org/abs/2610.00018",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对角色专业化问答（Role-Specialized QA）流水线中，推理器（reasoner）向验证器（verifier）传递理由（rationale）这一常见设计，提出了一个消息干预诊断方法。研究固定证据和候选答案，仅改变跨边界传递的理由内容，在 MuSiQue、HotpotQA 和 2WikiMultiHopQA 三个多跳问答数据集的 400 个样本上，使用 DeepSeek 等模型进行实验。核心问题是：理由传递究竟带来了什么价值——是更好的答案、更强的支持评估，还是引入了新的失败面？该工作首次系统性地解构了理由作为消息的因果作用，揭示了理由可能同时改善验证质量与引入误导性偏差的双重角色。对于构建多智能体协作、检索增强生成及可解释 AI 系统的开发者而言，这项研究提供了关键的诊断工具和设计启示，有助于避免盲目依赖理由传递而忽视其潜在风险。",
+  "tags": [
+    "Multi-Agent",
+    "QA",
+    "Rationale",
+    "LLM",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "理由传递在角色专业化QA中并非总是有益，可能同时提升验证准确率并引入新的失败模式。",
+      "通过固定证据和答案、仅干预理由的消息干预方法，可以因果性地分离理由对验证器的影响。",
+      "在多跳问答任务中，理由的质量和形式显著影响验证器的支持评估，而不仅仅是最终答案。",
+      "该诊断框架为设计更鲁棒的多智能体协作流水线提供了可操作的评估手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-119",
+  "title": "VideoEvolve: Evolving Agent Harnesses for Video Temporal Grounding",
+  "source_url": "https://arxiv.org/abs/2610.01766",
+  "source_platform": "rss_ai_research",
+  "summary": "VideoEvolve 是一个面向视频时序定位（Video Temporal Grounding）任务的自动化 Agent Harness 进化框架。视频时序定位要求根据自然语言查询在视频中定位事件时间段。对于基于冻结视频-语言模型构建的 Agent 而言，harness（即查询如何引导时序预测、预测如何被精炼的整体编排机制）直接决定了性能上限。传统上，优化 harness 需要人工诊断定位失败原因，并同时协调 agent 工作流与指令的修改，成本高且难以规模化。VideoEvolve 的核心创新在于将这一过程自动化：它能够自动演化 agent harness，从而在无需微调底层模型的情况下持续提升时序定位能力。该工作值得关注的原因在于，它把「Agent 编排层」本身作为可优化对象，而非仅仅关注模型权重或提示词，这为冻结大模型的高效适配提供了新范式，也呼应了当前 Agent 工程化与自动化优化（如 prompt/workflow 自动搜索）的研究趋势。对于需要构建视频理解 Agent 的开发者而言，该框架提供了一条低成本、可迭代的性能提升路径，同时其「harness 进化」思路也可能迁",
+  "tags": [
+    "Video Temporal Grounding",
+    "Agent",
+    "Multimodal",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对于冻结的视频-语言模型，Agent harness（工作流+指令）是决定时序定位性能的关键变量，而非模型本身",
+      "VideoEvolve 将 harness 优化从人工诊断转变为自动进化，降低了协调工作流与指令修改的工程成本",
+      "该工作把 Agent 编排层作为可优化对象，为冻结大模型的高效适配提供了新思路",
+      "自动演化 harness 的方法有望迁移到其他需要多步推理与预测精炼的多模态任务中"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

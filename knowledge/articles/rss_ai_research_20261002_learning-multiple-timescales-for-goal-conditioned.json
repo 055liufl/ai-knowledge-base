@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-048",
+  "title": "Learning Multiple Timescales for Goal-Conditioned Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.00849",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向离线目标条件强化学习（GCRL）的多时间尺度学习方法，旨在解决长时程任务中价值信号消失的问题。现有离线GCRL方法在长时程任务中面临一个核心困境：折扣因子会使得相距较远的状态之间的价值差异逐渐缩小，直至低于函数逼近误差，导致智能体无法获得有效的状态排序信号。时间抽象（将k个环境步视为单次转移）可以在长距离上恢复这种信号，但固定的k值无法适应所有状态-目标距离——短距离需要小k以保持精度，长距离需要大k以保留信号。该工作通过学习多个时间尺度来自适应地应对不同距离的目标，从而提升长时程目标条件任务的性能。这一研究值得关注，因为它直击离线GCRL在长时程场景下的关键瓶颈，为时间抽象与折扣机制的融合提供了新思路，对机器人控制、导航等需要长时程规划的领域具有潜在应用价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Goal-Conditioned RL",
+    "Offline RL",
+    "Temporal Abstraction"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离线GCRL在长时程任务中因折扣导致远距离状态价值差异低于逼近误差，丧失排序信号",
+      "时间抽象通过将k步视为单次转移可恢复长距离信号，但固定k无法适配所有状态-目标距离",
+      "学习多个时间尺度有望自适应地平衡短距离精度与长距离信号保留"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

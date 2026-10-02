@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-052",
+  "title": "OR for AI That Does OR: Routing LLMs up the Escalator inside the OSCAR Framework",
+  "source_url": "https://arxiv.org/abs/2610.00912",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出在 OSCAR 框架内实现 LLM 路由机制（Routing LLMs up the Escalator），用于解决大语言模型将业务描述转化为优化模型时可能出现的约束或目标表达错误问题。核心痛点在于：LLM 生成的优化代码可能错误地表示业务约束，导致求解器返回的是「错误问题的最优解」；即使解满足预期运营规则，也可能存在更优方案。对于需要反复使用优化建模的组织而言，基于 LLM 的框架必须能够以低成本生成准确的数学规划公式。该工作通过路由策略在多个 LLM 之间进行选择与升级（escalator），以平衡准确性与成本，属于 LLM 与运筹优化（OR）交叉领域的前沿探索。其价值在于将 LLM 从单纯的代码生成器提升为可靠的建模助手，对自动化决策、供应链优化、资源调度等场景具有实际意义，同时为 LLM 路由与模型选择研究提供了新思路。",
+  "tags": [
+    "LLM",
+    "Optimization",
+    "Routing",
+    "OR"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的优化模型代码可能错误表达约束或目标，导致求解器返回「错误问题的最优解」，这是自动化建模中的关键风险。",
+      "OSCAR 框架通过 LLM 路由（escalator）机制在多个模型间动态选择，以在准确性和成本之间取得平衡。",
+      "该工作将 LLM 路由与运筹优化建模结合，为组织级重复性优化任务提供了低成本、高可靠性的解决方案。",
+      "即使解满足预期运营规则，仍可能存在更优方案，说明建模正确性与解的最优性需要分别验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

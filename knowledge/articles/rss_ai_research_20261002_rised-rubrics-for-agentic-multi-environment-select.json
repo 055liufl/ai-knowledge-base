@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-058",
+  "title": "RISED: RubrIcs for agentic multi-environment Selection and sElf-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.00979",
+  "source_platform": "rss_ai_research",
+  "summary": "RISED（RubrIcs for agentic multi-environment Selection and sElf-Distillation）是一篇来自 arXiv 的新论文，聚焦于如何训练一个能在多种交互环境中通用的 LLM 智能体。现有方法通常在环境层面分配训练资源，或依赖局部奖励信号进行数据选择，未能显式考虑不同环境当前 rollout 之间的关系，导致训练效率与泛化能力受限。RISED 提出以「评分标准（rubrics）」为核心，对跨环境的 prompt 组进行选择，并结合自蒸馏机制，让智能体在不同环境间迁移与共享知识。该工作值得关注，因为它直击通用智能体训练中的关键瓶颈——多环境数据选择与课程设计，并给出了一种可扩展的解决方案，有望提升智能体在异构任务上的学习效率与最终表现。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Multi-Environment",
+    "Self-Distillation",
+    "Curriculum Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有课程与数据选择策略多停留在环境级别或局部奖励层面，忽略了跨环境 rollout 之间的关联，限制了通用智能体的训练效率。",
+      "RISED 通过评分标准（rubrics）对 prompt 组进行跨环境选择，显式建模不同环境当前 rollout 之间的关系，从而优化训练数据分配。",
+      "结合自蒸馏机制，智能体可在多环境间迁移知识，缓解不同环境学习进度不一致的问题。",
+      "该方向对构建通用 LLM 智能体具有重要价值，但论文摘要未给出完整实验细节，实际效果仍需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

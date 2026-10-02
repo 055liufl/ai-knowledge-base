@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-105",
+  "title": "Auditing Routing Entropy as an Uncertainty Signal in Attention-Residual Transformers",
+  "source_url": "https://arxiv.org/abs/2610.01495",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究动态架构（如 Attention-Residual 变体）中路由熵作为不确定性信号的有效性。作者在 Swin-Tiny 和 DeiT-Small 的 AR 变体上从头训练 CIFAR-10/100，并引入软分箱校准辅助损失，系统审计路由熵是否能在模型自身置信度之外提供关于预测正确性的额外信息。该工作挑战了「路由分散即预测不可靠」的直觉假设，对理解动态网络的可解释性与不确定性估计具有重要价值，也为设计更可靠的动态推理机制提供了实证依据。",
+  "tags": [
+    "Uncertainty Estimation",
+    "Dynamic Networks",
+    "Vision Transformer",
+    "Routing Entropy"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "路由熵常被直觉性地视为预测不可靠的信号，但其是否携带超越模型置信度的正确性信息需要严格审计。",
+      "在 Attention-Residual 变体的 Swin-Tiny 与 DeiT-Small 上，通过软分箱校准辅助损失可系统评估路由熵的校准质量。",
+      "该研究为动态架构中的不确定性估计提供了实证框架，有助于判断路由迹是否可作为独立的不确定性信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

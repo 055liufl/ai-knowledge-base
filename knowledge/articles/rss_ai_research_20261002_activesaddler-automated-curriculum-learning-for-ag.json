@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-051",
+  "title": "ActiveSaddler: Automated Curriculum Learning for Agent Harness Optimization",
+  "source_url": "https://arxiv.org/abs/2610.00906",
+  "source_platform": "rss_ai_research",
+  "summary": "ActiveSaddler 是一篇关于 LLM Agent 自动化优化的研究论文，聚焦于 Agent Harness（即包裹 LLM 的提示词、工具接口与控制逻辑）的自动优化问题。现有方法通常固定训练场景集合，仅优化 Harness 的更新方式，但论文指出：随着 Harness 不断演化，对其进一步优化最有价值的训练场景也会随之改变，因此固定场景集会导致优化效率下降。ActiveSaddler 提出将课程学习引入 Harness 优化流程，通过主动选择或生成当前阶段最具信息量的训练场景，形成动态课程，从而更高效地驱动 Harness 迭代改进。该工作将自动化 Harness 优化从'只优化更新策略'扩展到'同时优化训练数据分布'，为 Agent 自我改进与自动化工程提供了新思路，对构建可自我演化的 LLM Agent 系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Curriculum Learning",
+    "LLM",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent Harness 自动优化方法固定训练场景集，忽略了 Harness 演化过程中有效场景分布的变化",
+      "ActiveSaddler 将课程学习引入 Harness 优化，动态选择当前最有信息量的训练场景以加速迭代",
+      "该工作把优化对象从'如何更新 Harness'扩展到'用什么数据更新 Harness'，开辟了 Agent 自我改进的新维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

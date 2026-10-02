@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-031",
+  "title": "Legal Research Bench: Measuring End-to-End Reliability in Long-Horizon Legal Research Agents",
+  "source_url": "https://arxiv.org/abs/2610.00609",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Legal Research Bench，一个用于衡量长周期法律研究智能体端到端可靠性的基准测试。法律研究是律师日常工作中核心且耗时的环节，需要识别具有约束力的权威依据、验证其是否仍然有效、协调成文法与判例之间的关系，并最终综合出有据可依的答案。这类检索密集型工作流天然适合语言模型智能体，但自动化带来的价值高度依赖于可靠性——遗漏一条关键权威、引用已失效的判例，或得出错误的法律结论，都可能导致整个研究成果不可用。该基准的意义在于，它将评估焦点从单步检索准确率转向端到端任务完成质量，强调长周期、多步骤、需持续验证的智能体行为。对于构建法律、金融、医疗等高风险领域智能体的研究者与开发者而言，这一工作提供了可复用的评测思路，也揭示了当前智能体在长周期可靠性上的关键短板。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Legal AI",
+    "RAG",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "法律研究智能体的核心瓶颈不是单步检索能力，而是长周期任务中的端到端可靠性，任何一处遗漏或失效引用都会导致整体失败。",
+      "该基准将评估从检索准确率推进到多步骤工作流的完整闭环，包括权威识别、有效性验证、法条与判例协调以及有据可依的答案综合。",
+      "高风险专业领域的智能体评测需要引入领域特有的正确性标准，如判例时效性和法律结论的严谨性，而非通用问答指标。",
+      "该工作为法律、金融、医疗等检索密集型专业场景的智能体可靠性评估提供了可迁移的基准设计思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

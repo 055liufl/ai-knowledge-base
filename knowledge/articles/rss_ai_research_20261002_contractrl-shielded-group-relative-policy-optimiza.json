@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-018",
+  "title": "ContractRL: Shielded Group-Relative Policy Optimization for Auditable Tool-Call Repair",
+  "source_url": "https://arxiv.org/abs/2610.00328",
+  "source_platform": "rss_ai_research",
+  "summary": "ContractRL 提出了一种针对结构化工具调用（如 JSON 输出）的合约约束顺序修复协议，旨在解决工具调用因少量字段违反模式或执行合约而失败的问题。传统方法通过重新生成整个对象来修复，但这扩大了动作空间并导致修复过程难以审计。ContractRL 将验证器引导的 JSON 修复建模为有界决策过程，每一步策略观察候选对象、类型化验证器反馈和 JSON Pointer 位置，从而进行局部、可追踪的修复。该方法结合了组相对策略优化（GRPO）与合约约束，在保证修复有效性的同时提升了可审计性。这项工作值得关注，因为它直接针对 LLM 智能体在工具调用中的可靠性痛点，提供了一种更精细、更安全的修复范式，有望推动智能体在真实生产环境中的落地。",
+  "tags": [
+    "Tool-Call",
+    "RL",
+    "JSON Repair",
+    "Agent",
+    "Auditability"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将工具调用修复建模为有界决策过程，而非整体重新生成，显著缩小动作空间并提升可审计性。",
+      "利用类型化验证器反馈和 JSON Pointer 实现逐步局部修复，使修复过程可追踪、可解释。",
+      "结合组相对策略优化（GRPO）与合约约束，在强化学习框架下平衡修复效果与合规性。",
+      "为 LLM 智能体在结构化输出场景中的可靠性和安全性提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

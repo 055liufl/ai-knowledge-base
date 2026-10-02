@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-016",
+  "title": "Rules to Tools: Executable Checks for LLM Agents in Scientific Computing",
+  "source_url": "https://arxiv.org/abs/2610.00313",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 Rules to Tools (R2T) 框架，旨在为科学计算领域的 LLM 智能体提供可执行检查工具，以替代仅依赖文本规则的方式。在科学编程任务中，智能体通常以书面形式接收方程、边界条件和输出要求，然后需要评估其修改后的程序是否正确。R2T 将公开的科学需求转化为可调用的可执行检查，使智能体能够直接运行验证，而非仅凭文字描述进行判断。研究采用 SciCode 修复任务进行对照实验：匹配的修复组共享相同的书面检查、起始程序、模型和预算，而工具组额外获得可调用的检查实现。在两个任务 ID 队列中，纯文本组的完整修复率为 26/30，而工具组达到 29/30，显示出可执行检查对提升智能体修复成功率的显著作用。该工作值得关注，因为它揭示了将自然语言规则转化为可执行工具是提升 LLM 智能体在科学计算中可靠性的有效路径，为智能体工具化、自动化科学编程和可验证 AI 系统提供了新思路。",
+  "tags": [
+    "LLM Agent",
+    "Scientific Computing",
+    "Code Repair",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将书面规则转化为可执行检查工具，能显著提升 LLM 智能体在科学计算代码修复任务中的成功率。",
+      "在相同模型、预算和起始条件下，工具组完整修复率达到 29/30，优于纯文本组的 26/30。",
+      "可执行检查为智能体提供了客观、可验证的反馈信号，减少了对自然语言规则理解的歧义。",
+      "该范式可推广至其他需要严格验证的智能体任务，推动可验证 AI 系统的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

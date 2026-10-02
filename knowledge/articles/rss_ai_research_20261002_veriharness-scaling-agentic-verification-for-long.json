@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-057",
+  "title": "VeriHarness: Scaling Agentic Verification for Long-Horizon Tasks",
+  "source_url": "https://arxiv.org/abs/2610.00972",
+  "source_platform": "rss_ai_research",
+  "summary": "VeriHarness 是一篇针对长时程（long-horizon）LLM Agent 任务验证难题的 arXiv 论文。随着智能体承担越来越复杂的多步骤任务，其输出正确性难以评估，尤其在测试时无法获得参考答案或评分标准的情况下，验证能力成为瓶颈。该工作研究如何在固定基础模型（不更换、不微调）的前提下增强验证能力。核心思路是利用重复采样产生多条 rollout，这些轨迹中可能包含互补的正确论断，但需要一个可靠的验证机制来判断哪些论断值得信任。VeriHarness 提出了一种可扩展的智能体验证框架，通过聚合与交叉验证多次采样结果来提升验证可靠性。该研究值得关注，因为它直击 Agent 落地中的关键痛点——在缺乏 ground truth 时如何自动判断长流程任务是否成功，这对自动化评测、自我改进型 Agent 以及高风险场景下的可靠性保障都具有重要意义。",
+  "tags": [
+    "Agent",
+    "Verification",
+    "LLM",
+    "Long-Horizon",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程 Agent 任务的验证在无参考答案和评分标准时极具挑战，是当前 Agent 可靠性的核心瓶颈",
+      "重复采样产生的多条 rollout 可包含互补的正确论断，为无监督验证提供了可利用的信号",
+      "在固定基础模型的前提下，通过可扩展的验证机制聚合多次采样结果，可显著增强验证能力",
+      "该方向对自动化 Agent 评测与自我改进循环具有重要价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

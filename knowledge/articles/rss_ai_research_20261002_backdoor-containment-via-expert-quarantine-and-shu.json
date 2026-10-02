@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-037",
+  "title": "Backdoor Containment via Expert Quarantine and Shutdown in LLMs",
+  "source_url": "https://arxiv.org/abs/2610.00663",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对大型语言模型（LLM）后门攻击的新型防御框架——通过专家隔离与关闭（Expert Quarantine and Shutdown）实现后门遏制。后门LLM在正常输入下表现正常，但在隐藏触发器下会产生攻击者指定的输出，对模型安全构成严重威胁。现有防御方法覆盖训练前、训练中、训练后和推理时四个阶段，但均基于两种基本策略：抑制后门学习（如过滤有毒数据或中断优化过程中的后门获取）或先学习后净化（通过修复模型权重）。本文提出的方法可能利用混合专家（MoE）架构的特性，识别并隔离被后门污染的专家模块，从而在不影响正常功能的前提下遏制后门行为。该研究对于提升LLM在对抗环境中的安全性具有重要意义，尤其适用于需要部署开源或第三方模型的场景。其创新点在于从模型内部结构层面进行后门定位与隔离，而非依赖数据过滤或全局权重修复，为后门防御提供了新思路。",
+  "tags": [
+    "LLM",
+    "Backdoor Defense",
+    "Security",
+    "MoE"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "后门LLM在良性输入下表现正常，仅在特定触发器下激活恶意行为，传统检测方法难以发现。",
+      "现有防御策略分为抑制后门学习和先学习后净化两类，但均存在局限性。",
+      "通过专家隔离与关闭（Expert Quarantine and Shutdown）可精准定位并遏制后门，减少对模型正常功能的损害。",
+      "该方法为基于混合专家架构的LLM后门防御提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

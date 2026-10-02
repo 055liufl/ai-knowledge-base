@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-047",
+  "title": "Kepler: Auditable World Models for ARC-AGI-3",
+  "source_url": "https://arxiv.org/abs/2610.00834",
+  "source_platform": "rss_ai_research",
+  "summary": "Kepler 是一个面向 ARC-AGI-3 交互式推理基准的开源测试框架，其核心思想是将智能体对环境的假设表示为可执行的世界模型（executable world models），并通过回溯性转移检查（retrospective transition checks）和条件预测检查（conditional prediction checks）来验证这些假设的可靠性。ARC-AGI-3 要求智能体在规则与目标均未明示的交互环境中，仅凭观察推断规律并采取行动，这对模型的抽象推理与因果建模能力提出了极高要求。Kepler 的亮点在于其可审计性：世界模型以可执行代码形式呈现，使推理过程透明、可验证，而非黑箱式决策。在冻结的 Claude Opus 5 配置下，Kepler 在全部 25 个公开游戏中取得了服务器验证的 100.00 RHAE 分数，且无需针对单个游戏进行模型选择或调参，显示出极强的泛化能力与稳定性。该工作值得关注，因为它不仅刷新了 ARC-AGI-3 的公开成绩，更提出了一种可解释、可复现的智能体推理范式，为通用人工智能的评估与构建提供了新思路。",
+  "tags": [
+    "ARC-AGI",
+    "World Models",
+    "Agent",
+    "Reasoning",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将假设表示为可执行世界模型，使智能体的推理过程可审计、可验证，而非黑箱决策。",
+      "通过回溯性转移检查和条件预测检查双重验证机制，提升世界模型的可靠性。",
+      "在冻结的 Claude Opus 5 配置下于全部 25 个公开 ARC-AGI-3 游戏中取得 100.00 RHAE，无需逐游戏调参，展现强泛化能力。",
+      "开源框架为 ARC-AGI-3 及更广泛的交互式推理研究提供了可复现的评估工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

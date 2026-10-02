@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-040",
+  "title": "Backdoor Purification for LoRA-Tuned LLMs via Null-Space Projection",
+  "source_url": "https://arxiv.org/abs/2610.00685",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对 LoRA 微调大语言模型的后门净化方法，利用零空间投影（Null-Space Projection）技术来移除植入的后门行为。随着参数高效微调（PEFT）特别是 LoRA 的广泛采用，攻击者可通过污染微调数据在模型中植入后门，而现有净化方法通常依赖触发词先验知识、干净参考模型或激进重训练等强假设，实用性受限。该工作通过将 LoRA 权重投影到零空间，在不破坏模型正常能力的前提下抑制后门激活路径，从而实现对后门的净化。其价值在于降低了对先验信息的依赖，提升了后门防御在真实部署场景中的可行性，对 LLM 安全与可信微调具有重要意义。",
+  "tags": [
+    "LLM",
+    "LoRA",
+    "Backdoor Defense",
+    "PEFT",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:33:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有后门净化方法普遍依赖触发词先验、干净参考模型或重训练等强假设，限制了实际部署",
+      "零空间投影可在不显著损害模型正常性能的情况下抑制 LoRA 微调引入的后门行为",
+      "该方法针对参数高效微调场景，契合当前 LLM 低成本定制化的安全需求",
+      "后门防御需在净化效果与模型效用之间取得平衡，零空间投影提供了一种轻量级解决思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

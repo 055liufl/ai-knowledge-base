@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-118",
+  "title": "TopK-Guided: Adaptive, Budget-Aware Activation Sparsity for Efficient LLM Inference",
+  "source_url": "https://arxiv.org/abs/2610.01763",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 TopK-Guided 方法，一种面向大语言模型（LLM）推理的自适应、预算感知激活稀疏化技术。现有免训练激活稀疏方法存在权衡：基于阈值的方法（如 TEAL）能根据每个 token 自适应调整稀疏度，但无法严格控制实际稀疏率；基于 TopK 的方法（如 WINA）虽能强制固定稀疏率，却对所有 token 使用相同的稀疏策略，缺乏灵活性。TopK-Guided 旨在结合两者优势，在给定稀疏预算下实现自适应稀疏化，从而在保证推理加速的同时提升模型精度。该工作对 LLM 高效推理领域具有实用价值，尤其适合资源受限场景下的部署。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Sparsity",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有免训练激活稀疏方法在自适应性与稀疏率控制之间存在权衡，TopK-Guided 试图同时满足两者。",
+      "预算感知的设计使方法能根据实际计算资源灵活调整稀疏策略，提升部署实用性。",
+      "该方法有望在保持模型精度的同时显著加速 LLM 推理，尤其适合边缘设备或高吞吐场景。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

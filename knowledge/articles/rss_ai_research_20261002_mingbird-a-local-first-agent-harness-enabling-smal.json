@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-133",
+  "title": "Mingbird: A Local-First Agent Harness Enabling Small Open Models to Complete Real Tasks",
+  "source_url": "https://arxiv.org/abs/2610.02001",
+  "source_platform": "rss_ai_research",
+  "summary": "Mingbird 是一个本地优先（local-first）的 Agent 执行框架（harness），旨在让 2-9B 参数的小型开源模型在普通笔记本电脑上完成真实任务。论文指出，当前主流云端规模的 Agent 框架在面对小模型时存在系统性缺陷：工具预填充（tool prefill）会撑爆上下文窗口、自我纠错过程发散、工具演示陷入循环、任务被静默放弃。作者通过受控的单机对比实验以及一个第三方基准测试，提供了证据表明这些失败中有相当大一部分应归因于框架本身而非模型能力不足。Mingbird 的核心价值在于重新思考 Agent 框架的设计假设——不再默认模型拥有超大上下文和强推理能力，而是针对小模型的约束条件进行适配，从而释放本地部署小模型的实用潜力。这项工作值得关注，因为它挑战了'小模型无法胜任 Agent 任务'的普遍认知，为隐私敏感、离线场景和低成本部署提供了新思路，同时也提示社区：Agent 系统的瓶颈可能更多在工程框架层面而非模型本身。",
+  "tags": [
+    "Agent",
+    "Local-First",
+    "Small Language Models",
+    "Harness"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:37:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小模型在 Agent 任务中的大量失败源于框架设计缺陷（上下文溢出、纠错发散、工具循环），而非模型能力本身",
+      "本地优先的 Agent 框架需要针对小模型的上下文和推理约束重新设计，而非直接套用云端大规模框架",
+      "该工作为在普通笔记本上运行 2-9B 模型完成真实任务提供了可行路径，推动隐私友好和低成本的本地 Agent 部署"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

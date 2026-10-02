@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-081",
+  "title": "Revision-Aware Independent Agent Graphs for Dynamic Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.01249",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向动态推理的“修订感知独立智能体图”（Revision-Aware Independent Agent Graphs）框架，旨在解决传统推理协议无法测试智能体在任务绑定被事件流动态修订时，能否正确传播相关更新、保留未受影响的工作以及重建历史任务绑定的问题。作者将这一新问题定义为“动态任务路由”（dynamic task routing），即系统需要根据事件流对任务绑定的修订，在每个查询时间点选择有效的文档版本，然后再进行求解。为了系统性地研究该问题，作者重新利用了六个广泛使用的基准测试，构建了相应的评估环境。该工作值得关注，因为它首次将动态任务修订与智能体推理相结合，揭示了现有静态推理协议的局限性，并为构建能够适应持续变化环境的鲁棒智能体系统提供了新的研究方向。",
+  "tags": [
+    "Agent",
+    "Dynamic Reasoning",
+    "Task Routing",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统推理协议假设任务固定不变，无法评估智能体在任务绑定被动态修订时的适应能力。",
+      "动态任务路由要求智能体在事件流中追踪任务绑定的变化，并为每个查询选择正确的文档版本。",
+      "通过重新利用六个现有基准测试，作者构建了评估动态任务路由能力的实验框架。",
+      "该研究为开发能够处理持续变化环境的鲁棒推理系统提供了新的问题定义和评估方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

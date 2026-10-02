@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-137",
+  "title": "Global Coherence: When Every Agent Is Right and the Team Is Still Wrong - A Local-to-Global Semantic Foundation for Multi-Agent Collaboration",
+  "source_url": "https://arxiv.org/abs/2610.02036",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出多智能体协作中的\"全局一致性\"（Global Coherence）问题：每个智能体基于自身局部观察做出的决策都是合理的，但团队整体却产生无效甚至错误的结果。作者将这一失败归因于共享状态的缺失，而非单个模型智能不足。论文的核心贡献是提出\"观察别名不可能性定理\"（Observation-Aliasing Impossibility Theorem），给出了策略能够保证有效动作的精确边界条件——当且仅当所有产生相同观察的世界都共享一个可采纳动作时，策略才能保证有效。若存在 k 个不可区分世界需要两两互斥的动作，则任何仅依赖局部观察的策略都无法保证全局有效性。该工作为多智能体协作提供了从局部到全局的语义基础，对理解分布式决策、部分可观测环境下的协作失败具有理论指导意义，值得多智能体系统、分布式 AI 和协作决策研究者关注。",
+  "tags": [
+    "Multi-Agent",
+    "Coordination",
+    "Theory",
+    "POMDP"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:37:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体协作失败的根本原因可能是共享状态缺失，而非单个智能体能力不足",
+      "观察别名不可能性定理给出了局部策略保证全局有效性的精确边界条件",
+      "当不可区分世界需要互斥动作时，任何仅依赖局部观察的策略都无法保证全局一致性",
+      "该理论为设计多智能体通信与共享状态机制提供了形式化基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

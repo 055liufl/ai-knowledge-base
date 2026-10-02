@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261002-122",
+  "title": "Not All Experience Belongs in the Weights: Component Routing for Self-Improving GUI Agents",
+  "source_url": "https://arxiv.org/abs/2610.01787",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对自改进 GUI 智能体（Self-Improving GUI Agents）中经验复用方式的分歧问题展开研究。现有方法通常将智能体产生的轨迹（trajectory）整体用于微调（写入权重）或检索到提示词中，但不同研究对哪种方式更优存在矛盾结论。作者指出，根本原因在于经验单元（unit of experience）的粒度问题：一条轨迹捆绑了性质不同的多个组件，因此对整条轨迹的结论取决于其内部成分的混合比例。为此，论文提出「组件路由」（Component Routing）方法，将经验拆分为定位器（locators）、过程（procedures）等不同组件，并针对每个组件选择最合适的复用目的地——是写入模型权重还是放入提示词检索。这一工作为 GUI 智能体的持续自我改进提供了更精细的经验管理框架，有望解决现有方法中经验复用策略选择困难的问题，对构建可长期进化的界面操作智能体具有重要参考价值。",
+  "tags": [
+    "GUI Agent",
+    "Self-Improving",
+    "Experience Reuse",
+    "Fine-tuning",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自改进 GUI 智能体研究中，将轨迹用于微调还是检索到提示词的分歧，源于经验单元粒度过粗——整条轨迹混合了性质不同的组件。",
+      "论文提出组件路由（Component Routing），将经验拆分为定位器、过程等组件，并为每个组件单独选择复用方式（权重或提示词）。",
+      "不同组件适合不同的复用目的地，统一处理整条轨迹会掩盖这种差异，导致结论相互矛盾。",
+      "该框架为 GUI 智能体的持续自我改进提供了更细粒度的经验管理思路，可能提升长期学习效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

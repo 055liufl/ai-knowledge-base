@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-072",
+  "title": "CortexBridge: Cortical Alignment of EEG Montages for Foundation Models",
+  "source_url": "https://arxiv.org/abs/2610.01124",
+  "source_platform": "rss_ai_research",
+  "summary": "CortexBridge 是一个针对脑电图（EEG）基础模型的轻量级适配器，旨在解决 EEG 基础模型因固定通道词汇或有限电极布局而导致的迁移困难问题。该方法将 EEG 特征与电极坐标及脑图谱坐标相结合，把任意电极蒙太奇映射到一个共享的皮层潜在空间。研究使用三个冻结的基础模型在五个脑机接口（BCI）数据集上进行了评估。这项工作值得关注，因为它提升了 EEG 基础模型在不同电极布局下的泛化能力，有望推动 BCI 领域的跨数据集迁移学习和实际部署，减少对特定硬件配置的依赖。",
+  "tags": [
+    "EEG",
+    "Foundation Model",
+    "BCI",
+    "Adapter",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CortexBridge 通过结合电极和脑图谱坐标，将任意 EEG 蒙太奇映射到共享皮层潜在空间，解决了通道布局变化带来的迁移难题。",
+      "该方法作为轻量级适配器，可与冻结的 EEG 基础模型配合使用，无需重新训练整个模型。",
+      "在五个 BCI 数据集和三个基础模型上的评估表明，该方法能有效提升跨蒙太奇的泛化性能。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

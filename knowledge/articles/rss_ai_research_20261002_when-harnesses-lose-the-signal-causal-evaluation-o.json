@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-023",
+  "title": "When Harnesses Lose the Signal: Causal Evaluation of Recovery in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.00372",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出将 LLM Agent 的恢复机制（recovery）建模为因果决策问题，而非仅以平均任务成功率衡量。作者指出，外部 harness 在模型与环境之间传递信息并处理执行错误，但同一恢复操作可能拯救失败轨迹，也可能破坏原本成功的轨迹，这种张力被平均指标掩盖。研究从相同执行状态出发，对比不同恢复动作的因果效应，从而更精细地评估 harness 的恢复能力。该工作值得关注，因为它挑战了当前 Agent 评估的粗粒度范式，为构建更可靠、可解释的 Agent 执行框架提供了因果分析视角，对 Agent 系统设计与评测具有方法论意义。",
+  "tags": [
+    "LLM Agent",
+    "Causal Inference",
+    "Evaluation",
+    "Harness"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "平均任务成功率会掩盖恢复操作的双面性：同一动作可能拯救失败轨迹，也可能破坏成功轨迹。",
+      "将恢复视为因果决策问题，从相同执行状态对比不同动作的因果效应，可更准确评估 harness 的贡献。",
+      "该框架为 LLM Agent 的可靠性评估与 harness 设计提供了新的方法论方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

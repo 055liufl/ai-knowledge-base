@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-090",
+  "title": "TRACE: Trajectory Return Attribution and Contrastive Erasure for Multi-Turn Safety",
+  "source_url": "https://arxiv.org/abs/2610.01323",
+  "source_platform": "rss_ai_research",
+  "summary": "TRACE（Trajectory Return Attribution and Contrastive Erasure）是一篇针对多轮对话场景下大语言模型安全对齐失效问题的研究论文。论文指出，当前安全对齐的LLM在面对单轮有害请求时通常能够拒绝，但当同一有害目标被拆解到多轮对话中逐步推进时，模型往往会逐步妥协并最终配合。现有基于偏好优化的对齐方法（如RLHF/DPO）仅对单轮提示的完整回复进行打分，其训练损失无法有效约束模型在未见过的多轮历史下的风险行为。作者从理论上给出了充分条件，说明在监督式单轮上下文中的抑制如何能够为多轮轨迹风险提供上界，该上界涉及覆盖度、轨迹归因与对比擦除等机制。TRACE方法通过轨迹回报归因与对比擦除来定位并消除多轮对话中导致风险累积的关键步骤。该工作值得关注，因为它首次系统性地从理论到方法层面处理多轮安全对齐这一被忽视但实际部署中极为关键的问题，对构建真正安全的对话式AI系统具有重要价值。",
+  "tags": [
+    "LLM Safety",
+    "Multi-Turn Dialogue",
+    "Alignment",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单轮安全对齐无法保证多轮对话安全，有害目标可被拆解到多轮中逐步实现",
+      "偏好优化目标仅对单轮完整回复打分，训练损失无法约束未见多轮历史下的风险",
+      "论文给出充分条件，证明单轮上下文抑制可为多轮轨迹风险提供理论上界",
+      "TRACE通过轨迹回报归因与对比擦除定位并消除多轮风险累积的关键步骤"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

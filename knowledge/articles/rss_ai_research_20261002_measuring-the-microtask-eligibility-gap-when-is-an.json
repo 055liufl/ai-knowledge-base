@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-005",
+  "title": "Measuring the Microtask Eligibility Gap: When Is an Off-the-Shelf SLM Enough for an Agent Harness?",
+  "source_url": "https://arxiv.org/abs/2610.00025",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2610.00025）研究了 Agent 系统中一个日益重要的工程问题：在由前沿大模型（LLM）担任规划器的 Agent 架构中，外围的\"微任务\"（如自动批准 shell 命令、写入记忆、工具选择、历史轮次排序）是否可以由现成的小语言模型（SLM）承担。作者构建了一个包含 4 类微任务的基准测试，使用固定提示词和自动评估指标，系统性地测量了现成 SLM 与从业者设定阈值之间的\"资格差距\"，并分析了失败原因以及量化（quantization）是否会影响结论。该研究的价值在于：随着 Agent 系统复杂度提升，全部依赖大模型会带来高昂的推理成本与延迟，若能将大量轻量级决策下放给 SLM，可显著降低部署成本。本文为\"何时可以安全地用 SLM 替代 LLM 处理微任务\"提供了可量化的判断依据，对 Agent 系统的成本优化与架构设计具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "SLM",
+    "Benchmark",
+    "Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:31:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 外围微任务（命令审批、记忆写入、工具选择、轮次排序）是 SLM 替代 LLM 的潜在降本场景",
+      "现成 SLM 能否达标取决于具体微任务类型与从业者设定的阈值，存在可测量的资格差距",
+      "量化对 SLM 微任务表现的影响需要单独评估，可能改变可用性结论",
+      "固定提示词与自动指标的基准设计使结论可复现、可横向比较"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-109",
+  "title": "Decision Titan: Test-Time Training for Long-Term Memory in Offline Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.01513",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Decision Titan，将 Test-Time Training（TTT）框架引入离线强化学习，用于解决长期依赖下的序列决策问题。传统 RNN 受限于梯度消失和向量隐状态表达能力不足，Transformer 则受限于注意力机制的二次复杂度，二者在长程记忆任务中均存在明显瓶颈。TTT 通过在测试时利用自监督目标动态更新神经网络参数，将情节记忆（episodic memory）编码进模型权重中，从而突破固定隐状态和显式注意力窗口的限制。Decision Titan 将这一机制适配到离线 RL 场景，使智能体能够在决策过程中持续压缩并保留长期历史信息，而无需依赖超长上下文窗口。该工作的价值在于：一方面为离线 RL 中的长期记忆问题提供了新的建模范式，将记忆从外部结构转移到参数化更新中；另一方面打通了 TTT 与强化学习的交叉方向，为后续在机器人控制、长程规划、游戏智能体等需要跨时间尺度推理的任务提供了可扩展的技术路径。对于关注序列建模、记忆机制与决策智能的研究者和工程师而言，这是一篇值得跟踪的前沿工作。",
+  "tags": [
+    "Reinforcement Learning",
+    "Test-Time Training",
+    "Long-Term Memory",
+    "Offline RL"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:36:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TTT 通过测试时参数更新将情节记忆压缩进网络权重，绕开了 RNN 隐状态容量与 Transformer 二次复杂度的双重限制",
+      "将 TTT 适配到离线 RL 是记忆机制与决策学习交叉的新尝试，为长程依赖建模提供了参数化记忆范式",
+      "该方法有望在机器人控制、长程规划等需要跨时间尺度推理的任务中扩展应用，但离线场景下的稳定性与计算开销仍需验证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

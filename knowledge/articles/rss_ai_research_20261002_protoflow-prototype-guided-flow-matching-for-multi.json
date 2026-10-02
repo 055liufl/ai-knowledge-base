@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261002-089",
+  "title": "ProtoFlow: Prototype-Guided Flow Matching for Multivariate Time Series Forecasting",
+  "source_url": "https://arxiv.org/abs/2610.01320",
+  "source_platform": "rss_ai_research",
+  "summary": "ProtoFlow 是一篇关于多变量时间序列（MTS）预测的学术论文，提出了一种基于原型引导的流匹配（Prototype-Guided Flow Matching）方法。该工作针对现有生成式时间序列预测方法的效率与性能权衡问题：扩散模型虽然性能优异，但推理时需要大量采样步骤，计算成本高；而基于 VAE 的非迭代预测框架虽然高效，但受限于潜空间建模能力。ProtoFlow 通过引入向量量化（VQ）实现可控的潜空间建模，并利用原型引导的流匹配机制，在保持高效推理的同时提升预测质量。该研究值得关注的原因在于：多变量时间序列预测在金融、气象、能源、交通等领域有广泛应用，而生成式方法正成为该领域的主流范式。ProtoFlow 试图在扩散模型的高质量与 VAE 的高效率之间找到新的平衡点，为高维时间序列预测提供了一种兼具效率与表达能力的方案，对时间序列研究社区和工业界部署均有参考价值。",
+  "tags": [
+    "Time Series",
+    "Flow Matching",
+    "Generative Model",
+    "Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:35:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散模型在多变量时间序列预测中性能强但推理采样步骤多，效率是主要瓶颈",
+      "VAE 类非迭代框架效率高，但潜空间建模能力有限，ProtoFlow 通过 VQ 增强可控性",
+      "原型引导的流匹配机制有望在单步或少步推理下实现高质量预测，兼顾效率与表达力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

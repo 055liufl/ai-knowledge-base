@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-015",
+  "title": "Knowing When to Yield: Grounded Arbitration of User Corrections in Text-Based Embodied Agents",
+  "source_url": "https://arxiv.org/abs/2610.00282",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「有根据的纠正仲裁」（grounded correction arbitration）问题：当具身智能体接收到用户纠正时，若该纠正可能是错误的，智能体应如何在「接受、拒绝、检查世界、询问说话者」四种行动中做出选择。作者提出 GAVA 框架，通过观察受限证据（observation-bounded evidence）、合法探针（legal probes）和一步期望损失规则（one-step expected-loss rule）来实现这一接口。在纯文本 ALFWorld 环境中，作者构建了 162 个检查点，生成 972 对真实与虚假干预样本，用于评估智能体区分正确与错误用户纠正的能力。实验表明，完整的局部检查能让 GAVA 获得优势。该工作值得关注，因为它触及了人机协作中一个被长期忽视但至关重要的信任与验证问题：智能体不应盲目服从人类指令，也不应固执己见，而应具备基于环境证据进行仲裁的能力。这为构建更可靠、更可解释的具身智能体提供了新的评估范式和算法思路，对交互式 AI 系统的安全性与鲁棒性研究具有启发意义。",
+  "tags": [
+    "Embodied Agent",
+    "Human-AI Interaction",
+    "Trust Calibration",
+    "ALFWorld"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:32:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "具身智能体面对用户纠正时，不应简单接受或拒绝，而应在接受、拒绝、检查环境、询问用户之间进行有根据的仲裁。",
+      "GAVA 通过观察受限证据、合法探针和一步期望损失规则，将纠正仲裁形式化为可计算的决策问题。",
+      "在 ALFWorld 文本环境中构建的 972 对真假干预样本，为评估智能体区分正确与错误纠正的能力提供了基准。",
+      "完整的局部环境检查能显著提升智能体对用户纠正的仲裁准确性，表明主动验证是可信交互的关键。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

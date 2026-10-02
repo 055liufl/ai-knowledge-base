@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261002-063",
+  "title": "From Discovery to Decision: Finite-Budget Recoverability in LLM Voting",
+  "source_url": "https://arxiv.org/abs/2610.01014",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究多LLM响应投票中的“发现-决策鸿沟”问题。在测试时扩展和集成推理中，通过多次调用LLM生成候选答案并投票是常见做法。增加响应数量能扩大候选池，提高发现正确答案的概率，但在固定调用预算下，即使正确答案已被发现，仍需在剩余调用中获得足够支持才能成为最终多数赢家。作者形式化了这一有限预算下的可恢复性问题，分析了发现与决策之间的差距。该工作对理解LLM集成推理的预算分配、投票策略设计具有理论指导意义，有助于在实际部署中更高效地利用有限的计算资源，避免因预算不足导致正确答案被埋没。",
+  "tags": [
+    "LLM",
+    "Voting",
+    "Ensemble",
+    "Test-time Scaling",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-02T14:29:53Z",
+  "collected_at": "2026-10-02T14:34:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定调用预算下，发现正确答案与使其成为最终多数赢家之间存在决策鸿沟。",
+      "增加响应数量可扩大候选池，但可能挤占后续支持累积所需的调用预算。",
+      "有限预算可恢复性为LLM投票策略的预算分配提供了理论分析框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
