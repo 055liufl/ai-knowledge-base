@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261003-023",
+  "title": "Native-speed vLLM transformers modeling backend",
+  "source_url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 vLLM 中新增的 transformers 建模后端，该后端实现了原生速度的推理性能。vLLM 作为高性能 LLM 推理引擎，此前主要依赖自定义 CUDA 内核，而新后端允许直接使用 Hugging Face transformers 的模型定义，同时通过优化（如融合操作、内存管理）达到与原生 vLLM 实现相当的速度。这降低了模型集成门槛，使开发者能更轻松地将新模型或自定义模型部署到 vLLM 中，无需重写内核。该工作由 Hugging Face 与 vLLM 团队合作完成，标志着推理框架与模型库的进一步融合，有望加速 LLM 应用落地。",
+  "tags": [
+    "vLLM",
+    "Transformers",
+    "推理优化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-03T13:05:57Z",
+  "collected_at": "2026-10-03T13:08:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM 新增 transformers 建模后端，可直接使用 Hugging Face 模型定义，无需重写 CUDA 内核。",
+      "通过优化实现原生速度，性能与 vLLM 自定义实现相当，降低了模型集成门槛。",
+      "该合作促进了推理框架与模型库的融合，加速新模型部署。",
+      "开发者可更灵活地部署自定义模型，推动 LLM 应用创新。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

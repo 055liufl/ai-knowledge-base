@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261003-031",
+  "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+  "source_url": "https://huggingface.co/blog/cross-origin-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在 Transformers.js 中实验性使用跨域存储 API（Cross-Origin Storage API）的实践。Transformers.js 是一个在浏览器中运行机器学习模型的 JavaScript 库，但浏览器存储配额限制和跨域资源共享（CORS）问题常导致模型缓存失败。跨域存储 API 是一项提案，旨在允许网站请求跨域资源的持久存储权限，从而更高效地缓存大型模型文件。作者通过实验展示了如何利用该 API 在 Transformers.js 中实现跨域模型缓存，减少重复下载，提升加载速度。文章详细说明了 API 的使用方法、权限请求流程以及实际测试结果，并讨论了当前浏览器支持情况和潜在限制。这项实验对于推动 Web AI 应用的发展具有重要意义，因为它解决了模型部署中的关键存储瓶颈，使开发者能够构建更流畅、更可靠的浏览器端 AI 体验。",
+  "tags": [
+    "Transformers.js",
+    "Web AI",
+    "存储API",
+    "浏览器缓存"
+  ],
+  "author": null,
+  "published_at": "2026-10-03T13:05:57Z",
+  "collected_at": "2026-10-03T13:09:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨域存储 API 允许网站请求跨域资源的持久存储权限，解决了 Transformers.js 中模型缓存受同源策略限制的问题。",
+      "通过该 API，浏览器可以缓存来自 Hugging Face 等跨域源的大型模型文件，减少重复下载，提升加载性能。",
+      "实验表明该 API 能有效改善 Web AI 应用的离线能力和响应速度，但浏览器支持尚不广泛，需考虑降级方案。",
+      "该提案为 Web 端机器学习模型的存储与分发提供了新思路，有望推动更多复杂 AI 应用在浏览器中落地。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
