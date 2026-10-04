@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261004-069",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是Hugging Face发布的一篇技术博客，系统介绍了Transformer架构中的混合专家（MoE）技术。MoE通过将前馈网络层替换为多个并行的专家网络，并引入可学习的路由机制，使模型在推理时仅激活部分专家，从而在保持庞大参数量的同时显著降低计算成本。文章详细阐述了MoE的核心组件（专家、路由器、门控函数）、常见路由策略（如Top-K路由、负载均衡损失）以及训练中的挑战（如专家负载不均衡、通信开销）。此外，还讨论了MoE在自然语言处理和大规模模型中的应用，例如Switch Transformer、GShard等，并提供了Hugging Face生态中实现MoE的实践指导。该内容值得关注，因为它揭示了如何高效扩展大模型容量，是当前大模型降本增效的关键技术之一，对研究者和开发者均有重要参考价值。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-10-04T13:44:39Z",
+  "collected_at": "2026-10-04T13:49:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE通过稀疏激活实现参数规模与计算成本的解耦，使模型能扩展到万亿参数级别而仅需少量计算。",
+      "路由机制是MoE的核心，Top-K路由和负载均衡损失是解决专家利用不均问题的关键。",
+      "MoE训练面临通信开销、负载均衡和训练不稳定等挑战，需要精心设计门控网络和并行策略。",
+      "Hugging Face生态提供了MoE模型的实现和工具，降低了研究和应用门槛。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261004-025",
+  "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+  "source_url": "https://huggingface.co/blog/skypilot-hf-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 SkyPilot 与 Hugging Face 的集成方案，允许用户在任意云平台上运行 AI 工作负载，同时将数据存储于 Hugging Face，实现零出口费用的存储访问。SkyPilot 是一个开源的多云编排框架，能够自动在 AWS、GCP、Azure 等云上调度任务；Hugging Face 则提供模型、数据集托管服务。该方案的核心价值在于：用户无需将数据复制到各个云厂商的对象存储中，而是直接从 Hugging Face 读取，避免了云厂商收取的数据出口费用（egress fees），同时简化了多云环境下的数据管理。对于需要频繁跨云训练或推理的团队，这能显著降低成本并提升灵活性。此外，该集成还支持自动缓存和并行下载，优化了数据加载性能。整体而言，这是 AI 基础设施领域一项实用的工具集成，尤其适合关注成本和多云策略的开发者与 MLOps 工程师。",
+  "tags": [
+    "SkyPilot",
+    "Hugging Face",
+    "多云",
+    "存储",
+    "成本优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-04T13:44:39Z",
+  "collected_at": "2026-10-04T13:47:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 Hugging Face 作为中央存储层，结合 SkyPilot 的多云调度能力，可消除云厂商的数据出口费用。",
+      "该方案简化了多云 AI 工作负载的数据管理，无需在每个云上复制数据集。",
+      "自动缓存和并行下载机制提升了数据加载效率，适合大规模训练和推理场景。",
+      "对于频繁跨云运行的团队，能显著降低存储和传输成本，同时保持灵活性。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
