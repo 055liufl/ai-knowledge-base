@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-120",
+  "title": "Credit Where It Matters: Dependency-Aware Policy Optimization for Terminal Agents",
+  "source_url": "https://arxiv.org/abs/2610.03634",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向终端智能体（Terminal Agents）的依赖感知策略优化方法（Dependency-Aware Policy Optimization），旨在解决强化学习在编码、调试等多步终端任务中信用分配不准确的问题。在这些任务中，后续命令往往依赖前序命令产生的信息或中间结果，但现有的轨迹级和步骤级信用分配方法并未显式追踪命令之间的读写依赖关系，导致训练信号可能被错误归因，从而降低学习效率和策略质量。该工作通过显式建模命令间的读写依赖，将信用更精准地分配给真正影响最终结果的步骤，从而提升终端智能体的强化学习训练效果。这一方向对提升智能体在真实终端环境中的多步推理与执行能力具有重要意义，尤其适用于自动化编程、系统运维和复杂工具调用场景。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Credit Assignment",
+    "Terminal"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "终端任务中后续命令常依赖前序命令的读写结果，现有信用分配方法未显式建模这种依赖关系。",
+      "依赖感知的信用分配能更准确地将奖励归因于真正影响结果的步骤，提升强化学习训练效率。",
+      "该方法面向编码、调试等多步终端任务，有望增强终端智能体的实际执行与推理能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

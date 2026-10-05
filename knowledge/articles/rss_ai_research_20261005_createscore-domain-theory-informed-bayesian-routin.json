@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-072",
+  "title": "CreateScore: Domain-Theory-Informed Bayesian Routing for LLM-Based CV Screening",
+  "source_url": "https://arxiv.org/abs/2610.02972",
+  "source_platform": "rss_ai_research",
+  "summary": "CreateScore 提出了一种面向 LLM 简历筛选场景的领域理论驱动贝叶斯路由方法，旨在解决高能力模型逐候选、逐标准调用带来的高昂成本问题。该方法构建了一个手工指定的有向无环图（DAG），其条件概率表采用 Dirichlet-multinomial 分布，将简历证据转化为后验不确定性度量。基于该不确定性，系统对低不确定性的判定直接交由本地 8B 小模型处理，而仅将高不确定性或关键判定路由至更强的大模型，从而在保证筛选质量的同时显著降低推理开销。该工作值得关注之处在于：它将领域知识（招聘评分规则）显式编码进贝叶斯网络，而非依赖端到端黑盒路由，为 LLM 级联/路由策略提供了可解释、可审计的决策依据；同时它聚焦于 CV 筛选这一高价值、高重复性的企业应用场景，具备较强的落地潜力。对于关注 LLM 成本优化、混合模型编排以及 HR Tech 的研究者与工程团队而言，该论文提供了一种将概率推理与 LLM 能力分层结合的新思路。",
+  "tags": [
+    "LLM Routing",
+    "Bayesian Network",
+    "CV Screening",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过领域理论构建的贝叶斯网络可将简历证据转化为后验不确定性，为 LLM 路由提供可解释的决策信号",
+      "低不确定性判定由本地 8B 小模型处理，仅高不确定性样本升级至强模型，可显著降低逐标准筛选成本",
+      "Dirichlet-multinomial 条件概率表与手工 DAG 的结合使路由过程具备可审计性，适合招聘等合规敏感场景"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

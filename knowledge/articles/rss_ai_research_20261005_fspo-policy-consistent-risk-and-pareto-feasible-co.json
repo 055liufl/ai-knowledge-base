@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-057",
+  "title": "FSPO: Policy-Consistent Risk and Pareto-Feasible Control for Budgeted LLM RL Post-Training",
+  "source_url": "https://arxiv.org/abs/2610.02828",
+  "source_platform": "rss_ai_research",
+  "summary": "FSPO（Policy-Consistent Risk and Pareto-Feasible Control for Budgeted LLM RL Post-Training）是一篇针对大语言模型强化学习后训练中自适应控制问题的研究论文。该工作聚焦于一个核心矛盾：在LLM的RL后训练过程中，训练系统会在线动态调整多个训练执行器（如rollout温度、group size、梯度裁剪、KL正则化、验证器资源分配以及更新预算等），但现有的风险建模方法存在三个耦合问题。首先，基于行为轨迹训练的未来风险模型，未必能准确估计即将部署的控制器所诱导的风险，即风险模型与策略之间存在不一致性；其次，在已记录的状态-动作对上校准的评分，在策略更新后可能失效，导致校准偏差。FSPO提出策略一致的风险估计与帕累托可行控制框架，旨在在预算约束下实现稳健且高效的自适应RL后训练。该研究对于提升LLM RL后训练的稳定性、资源利用效率和最终模型性能具有重要意义，尤其适用于需要大规模分布式训练和精细资源调控的工业级场景。",
+  "tags": [
+    "LLM",
+    "RL",
+    "Post-Training",
+    "Risk Control"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自适应LLM RL后训练中，风险模型与部署策略之间存在不一致性，导致风险估计偏差",
+      "基于历史状态-动作对校准的评分在策略更新后可能失效，需要策略一致的校准方法",
+      "FSPO提出在预算约束下实现帕累托可行的控制，平衡多个训练执行器的在线调整",
+      "该工作为解决LLM RL后训练中多执行器耦合控制问题提供了新的理论框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

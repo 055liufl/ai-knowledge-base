@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-091",
+  "title": "KV$^2$: A Self-Refining KV Cache",
+  "source_url": "https://arxiv.org/abs/2610.03198",
+  "source_platform": "rss_ai_research",
+  "summary": "KV² 提出了一种针对长上下文大模型推理中 KV 缓存内存瓶颈的自精炼压缩方法。在“一次预填充、多次查询”的可复用场景下，KV 缓存的内存占用成为主要成本来源。现有查询无关压缩方法面临两难：轻量级估计器成本低但精度差，而基于全上下文重建的打分方法精度高却需要重新处理整个提示。KV² 通过自精炼机制在两者之间取得平衡，旨在不牺牲生成质量的前提下显著降低 KV 缓存的内存开销。该工作对长上下文推理、多轮对话、检索增强生成等需要反复复用同一上下文的场景具有直接实用价值，有望降低推理成本并提升服务吞吐。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Long Context",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV 缓存内存是长上下文模型在可复用场景下的主要成本瓶颈",
+      "查询无关压缩存在精度与成本的权衡：轻量估计器便宜但不准，全上下文重建准确但昂贵",
+      "KV² 通过自精炼机制在压缩质量与计算开销之间寻求更优平衡",
+      "该方法对需要反复复用同一预填充上下文的推理服务具有显著降本潜力"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

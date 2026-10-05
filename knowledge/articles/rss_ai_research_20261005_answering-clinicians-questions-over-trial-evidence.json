@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-026",
+  "title": "Answering clinicians' questions over trial evidence tables with verifiable, feedback-driven language models",
+  "source_url": "https://arxiv.org/abs/2610.02576",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 FD-SCoPE，一个面向临床医生的语言模型框架，用于在系统综述的证据表（evidence tables）上进行问答。系统综述将临床试验压缩为结构化证据表，但临床医生目前只能通过数据库查询来检索这些表格，且许多问题涉及表格未记录的属性，例如药物的靶点类别或统一化的终点定义。FD-SCoPE 能够同时回答表格内可直接查询的问题和需要外部知识或推理的问题，并对每个答案暴露其查询语句、所选试验以及推导规则，从而实现可验证性。框架还采用反馈驱动的学习机制，通过用户反馈持续改进模型表现。该工作值得关注的原因在于：它将 LLM 应用于循证医学这一高风险领域，强调答案的可追溯与可验证，缓解了临床决策中对模型黑箱输出的信任问题；同时它针对证据表这一特定但关键的数据形态，提出了兼顾结构化查询与开放推理的统一方案，对医学信息检索、临床决策支持系统以及可解释 AI 的研究具有参考价值。",
+  "tags": [
+    "LLM",
+    "Medical QA",
+    "Evidence Synthesis",
+    "Explainable AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FD-SCoPE 同时处理证据表内可查询属性和表外需推理属性（如药物靶点类别、统一终点），扩展了传统数据库查询的能力边界。",
+      "框架对每个答案暴露查询语句、所选试验和推导规则，实现了答案的可验证性与可追溯性，这对临床决策支持至关重要。",
+      "采用反馈驱动的学习机制，使模型能够根据临床医生的反馈持续优化，提升在专业领域的适应性。",
+      "该工作展示了 LLM 在循证医学证据综合场景中的落地路径，为可解释、可审计的医学问答系统提供了新思路。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

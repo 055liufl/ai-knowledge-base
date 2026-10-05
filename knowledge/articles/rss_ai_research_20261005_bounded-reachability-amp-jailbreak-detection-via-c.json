@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-060",
+  "title": "Bounded Reachability &amp; Jailbreak Detection via Contraction-Constrained State Space Models",
+  "source_url": "https://arxiv.org/abs/2610.02853",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究基于状态空间模型（SSM）的安全头（safety head）的形式化鲁棒性问题。安全头是附加在预训练语言模型上的轻量级分类器，用于在生成前标记有害输入。尽管其经验检测性能已被广泛研究，但其形式化鲁棒性属性仍未被充分探索。作者提出核心问题：对于嵌入空间中有界扰动内的所有输入，基于SSM的安全头何时能被认证产生相同预测？论文证明答案取决于收缩约束（contraction constraint）与状态空间模型动态特性之间的相互作用，并据此提出一种有界可达性分析与越狱检测方法。该工作将形式化验证方法引入LLM安全领域，为安全分类器提供可证明的鲁棒性保证，对提升大模型部署安全性具有重要意义，尤其针对对抗性越狱攻击的防御。",
+  "tags": [
+    "LLM Safety",
+    "Jailbreak Detection",
+    "State Space Model",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次系统研究SSM安全头的形式化鲁棒性，提出有界嵌入扰动下预测一致性的认证条件",
+      "证明认证可行性取决于收缩约束与状态空间动态的交互，为设计可验证安全分类器提供理论依据",
+      "将可达性分析与越狱检测结合，为LLM安全防御提供可证明的鲁棒性保证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

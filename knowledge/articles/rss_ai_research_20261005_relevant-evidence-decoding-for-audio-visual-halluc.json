@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-074",
+  "title": "Relevant Evidence Decoding for Audio-Visual Hallucination Mitigation",
+  "source_url": "https://arxiv.org/abs/2610.02976",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对音视频大语言模型（AV-LLMs）跨模态幻觉问题的解码方法——相关证据解码（Relevant Evidence Decoding）。AV-LLMs 在处理音频与视频联合输入时，常出现一种模态错误影响另一种模态预测的幻觉现象。现有的对比解码方法虽在视觉语言模型中有效，但直接迁移到 AV-LLMs 时忽略了一个关键挑战：不同问题需要依赖不同的感知证据，可能是音频、视频或二者的交互信息。作者观察到联合音视频推理存在特定规律，并据此设计了解码策略，以动态选择与问题最相关的模态证据，从而抑制跨模态幻觉。该工作为多模态大模型的可信推理提供了新思路，对提升音视频理解系统的鲁棒性具有实用价值，尤其适用于需要高可靠性的多模态问答与交互场景。",
+  "tags": [
+    "Multimodal",
+    "Hallucination",
+    "Audio-Visual",
+    "Decoding",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AV-LLMs 的跨模态幻觉源于一种模态对另一种模态预测的干扰，直接套用视觉语言模型的对比解码效果有限。",
+      "不同问题对感知证据的需求不同，解码时应动态选择音频、视频或二者交互信息作为相关证据。",
+      "联合音视频推理存在可观测的规律，可用于指导解码策略以抑制幻觉。",
+      "该研究为多模态大模型的可信解码提供了新方向，强调证据相关性而非简单对比。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-100",
+  "title": "Preserving Mathematical Reasoning in Compressed Diffusion Language Models via Trajectory-Aware Low-Rank Approximation",
+  "source_url": "https://arxiv.org/abs/2610.03326",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对扩散语言模型（dLLM）压缩中校准状态与推理状态不匹配的问题展开研究。传统低秩压缩方法通常在干净、完全可见的激活上进行校准，但扩散语言模型在推理时会经历部分掩码的中间状态，导致压缩后数学推理能力显著下降。作者提出轨迹感知低秩近似（Trajectory-Aware Low-Rank Approximation）方法，旨在解决两个核心问题：一是在轨迹分布状态上衡量近似质量时，低秩最优性是否仍可刻画；二是校准状态的选择是否影响压缩后模型的推理性能。该研究对于推动扩散语言模型在资源受限场景下的部署具有重要意义，因为扩散模型因其并行生成和迭代去噪特性，在推理效率上具有潜力，但模型规模大、压缩困难限制了实际应用。本文首次系统性地将压缩校准与扩散推理轨迹对齐，为dLLM的高效压缩提供了新思路，有望在保持数学推理等复杂能力的同时大幅降低模型参数量和计算开销。",
+  "tags": [
+    "Diffusion Language Model",
+    "Model Compression",
+    "Low-Rank Approximation",
+    "Mathematical Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型的压缩校准需考虑推理时部分掩码的中间状态，而非仅依赖干净激活。",
+      "轨迹感知的低秩近似可更好地保持压缩后模型的数学推理能力。",
+      "校准状态的选择对压缩后dLLM的推理性能有显著影响。",
+      "该研究为扩散语言模型的高效压缩提供了新的理论视角和方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

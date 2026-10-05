@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-064",
+  "title": "Interpreting at Write Time: A Policy Ablation for Multi-Goal Agent Memory",
+  "source_url": "https://arxiv.org/abs/2610.02897",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对多目标智能体记忆系统的策略消融方法，核心问题在于长时运行的助手无法保留所有历史信息，必须进行摘要压缩。然而摘要并非中立行为：保留什么内容取决于对记录用途的预设判断，而这种判断在用户具体目标出现之前就已做出。作者指出，不同目标之间很少对\"发生了什么\"产生分歧，真正的分歧在于\"哪些部分值得占用空间\"。一旦历史过长无法重新阅读，摘要就会取代原始数据流，从而固化早期选择带来的偏差。该研究通过策略消融实验，系统分析了不同摘要策略对多目标智能体记忆的影响，揭示了写时解释（interpreting at write time）的内在权衡。这项工作值得关注，因为它触及了LLM智能体长期记忆管理的核心矛盾——在信息压缩与目标适应性之间取得平衡，对构建可持续运行的个性化助手具有重要指导意义。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "Summarization"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "摘要压缩本质上是非中立的：保留内容的选择基于对记录用途的预设，而这种预设发生在用户具体目标明确之前",
+      "多目标之间的分歧不在于事实本身，而在于哪些历史片段值得占用有限的记忆空间",
+      "一旦历史过长无法重读，摘要将不可逆地取代原始数据流，早期策略偏差会被永久固化",
+      "通过策略消融可以系统评估不同写时解释策略对多目标智能体记忆性能的影响"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

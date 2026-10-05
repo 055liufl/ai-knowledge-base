@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-027",
+  "title": "Labels Override Definitions in Jev-Style Typed Decision Models",
+  "source_url": "https://arxiv.org/abs/2610.02586",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种称为 Jev 风格的「类型化决策模型」（typed decision model）接口，该接口通过为每个调用者定义的选项返回概率来回答关于输入的固定问题。每个选项包含一个简短标签（label）和一段书面定义（definition），开发者通常在定义中写明模型应遵循的规则。Jev 最初将这一接口用于路由、内容审核和分诊等场景，随后出现了多个开源实现，而每当语言模型被用作分类器并对候选标签打分时，本质上都在执行同样的操作。本文的核心发现是：在实际使用中，标签本身会「覆盖」（override）书面定义的作用，即模型的行为更多受标签措辞影响，而非开发者精心撰写的规则定义。这一现象对依赖提示词工程构建分类与路由系统的开发者具有重要警示意义，说明仅靠详尽的定义文本并不足以精确控制模型决策，标签的语义先验可能主导最终输出。该研究为理解 LLM 作为分类器时的行为机制提供了新的实证视角，对提示设计、评估方法和系统可靠性均有直接影响。",
+  "tags": [
+    "LLM",
+    "Prompt Engineering",
+    "Classification",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 Jev 风格的类型化决策模型中，选项标签会覆盖开发者撰写的书面定义，主导模型的分类行为。",
+      "该接口广泛存在于路由、审核、分诊等场景，任何将 LLM 用作打分分类器的操作都涉及同类机制。",
+      "提示词工程中仅依赖详尽定义文本不足以精确控制模型输出，标签的语义先验可能产生意外影响。",
+      "研究结果对 LLM 分类系统的提示设计、评估方法与可靠性保障具有直接的实践警示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

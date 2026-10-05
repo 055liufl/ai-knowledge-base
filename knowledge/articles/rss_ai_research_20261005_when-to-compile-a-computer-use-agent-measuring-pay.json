@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-069",
+  "title": "When to Compile a Computer-Use Agent? Measuring Payback and Making Compilation Decisions for Token Efficiency",
+  "source_url": "https://arxiv.org/abs/2610.02932",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对计算机使用代理（Computer-Use Agent）在执行重复性 GUI 任务时的 token 效率问题，提出了一种编译决策框架。核心思想是将代理反复执行的 GUI 操作流程编译为可复用的程序，从而降低 token 消耗。然而，编译决策面临两大挑战：一是编译成本不确定，因为编译尝试可能需要修复且仍可能失败；二是未来复用性未知，任务可能停止到达或 GUI 漂移导致程序失效。为此，作者提出 PAC（Payback-Aware Compilation）方法，旨在量化编译的回报并决定何时进行编译。该研究对于提升代理系统的长期运行效率、降低 API 调用成本具有实际意义，尤其适用于需要频繁执行相似 GUI 操作的自动化场景。通过将动态决策与成本收益分析结合，为代理系统的资源优化提供了新思路。",
+  "tags": [
+    "Agent",
+    "GUI Automation",
+    "Token Efficiency",
+    "Compilation"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将重复的 GUI 操作编译为程序可显著降低代理的 token 成本，但需权衡编译成本与未来复用收益。",
+      "编译成本具有不确定性，因为编译尝试可能失败或需要修复，这增加了决策难度。",
+      "未来复用性受任务到达率和 GUI 漂移影响，需要动态评估编译的回报。",
+      "PAC 框架通过量化回报和决策时机，为代理系统的资源优化提供了系统化方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

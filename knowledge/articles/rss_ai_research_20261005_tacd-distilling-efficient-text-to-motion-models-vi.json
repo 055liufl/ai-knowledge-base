@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-062",
+  "title": "TACD: Distilling Efficient Text-to-Motion Models via Terminal Amplification Control",
+  "source_url": "https://arxiv.org/abs/2610.02867",
+  "source_platform": "rss_ai_research",
+  "summary": "TACD（Terminal-Amplification-Controlled Distillation）是一种针对文本到动作（text-to-motion）生成模型的知识蒸馏方法，旨在解决现有模型因多步去噪和大规模组件导致的部署缓慢、内存占用高的问题。该方法基于分段式 on-policy 流蒸馏（segmented on-policy flow distillation），通过终端放大控制（Terminal Amplification Control）机制，从预训练教师模型和文本提示中训练高效的学生动作生成器，且无需真实动作训练数据。这一工作的价值在于：文本到动作生成在游戏、动画、机器人仿真和虚拟现实等领域有广泛应用，但当前高质量模型推理成本过高，难以实际部署。TACD 通过蒸馏压缩模型规模与推理步数，同时保持生成质量和指令跟随能力，为高效动作生成提供了可行路径。其 on-policy 蒸馏策略和无真实数据训练的特性，也降低了对昂贵动作捕捉数据的依赖，具有较强的实用意义和工程落地潜力。",
+  "tags": [
+    "Diffusion",
+    "Knowledge Distillation",
+    "Text-to-Motion",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TACD 通过 on-policy 流蒸馏将多步去噪的文本到动作模型压缩为高效生成器，显著降低推理延迟和内存占用。",
+      "终端放大控制机制是该方法的核心创新，用于在蒸馏过程中平衡生成质量与效率。",
+      "该方法无需真实动作训练数据，仅依赖文本提示和预训练教师模型，降低了对昂贵动捕数据的依赖。",
+      "文本到动作生成的高效化对游戏、动画和机器人仿真等实时应用具有重要落地价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

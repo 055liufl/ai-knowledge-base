@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-035",
+  "title": "Batched Speech Decisions Without Decoding: Single-Token Supervision Lets a Frozen LLM Hear Beyond the Transcript",
+  "source_url": "https://arxiv.org/abs/2610.02638",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 DuplexJev，一种面向全双工语音代理的高效决策方法。传统系统通过缓慢的自回归解码来回答大量小型封闭式决策问题，而 DuplexJev 将 ASR 编码器的隐藏状态经由小型连接器输入到冻结的 LLM 中，并将每个问题读取为选项上的单 token 分布，从而完全避免了解码过程。在 8 卡 GPU 节点上，系统能在约 0.1 秒内对八段语音做出 80 个决策。使用最后一层连接器时，口语问答性能接近基线。该工作值得关注，因为它将语音决策从生成式解码转变为单 token 分类，大幅降低延迟，同时保持冻结 LLM 的语义能力，为实时全双工语音代理提供了新的高效范式。",
+  "tags": [
+    "Speech",
+    "LLM",
+    "Inference",
+    "Voice Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过单 token 监督读取冻结 LLM 的分布，避免自回归解码，实现批量语音决策。",
+      "ASR 编码器隐藏状态经小型连接器注入冻结 LLM，保留语义能力同时大幅降低计算开销。",
+      "在 8-GPU 节点上约 0.1 秒完成 80 个决策，展示出实时全双工语音代理的潜力。",
+      "最后一层连接器在口语问答上接近基线性能，表明该方法在效率与质量间取得平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

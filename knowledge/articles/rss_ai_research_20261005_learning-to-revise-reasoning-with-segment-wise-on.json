@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-042",
+  "title": "Learning to Revise Reasoning with Segment-wise On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.02703",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Segment-wise On-Policy Distillation (分段式在线策略蒸馏) 的新方法，旨在改进大语言模型的推理能力。传统的在线策略蒸馏 (OPD) 通过在学生模型自身的 rollout 上使用教师模型的密集 token 级监督来训练学生，但这种方法存在两个关键局限：一是 token 级监督无法显式提供连贯的替代推理步骤，以展示如何修正学生的推理步骤来改善后续推理；二是当学生模型产生退化的推理前缀时，该范式的效果会显著下降。本文提出的分段式方法通过将推理过程划分为多个片段，并在片段级别进行蒸馏，从而提供更连贯的修正信号，帮助学生模型学会修正其推理路径。该方法有望提升 LLM 在复杂推理任务中的表现，特别是在需要多步推理和自我纠错的场景中。这项研究对于推动 LLM 推理能力的边界具有重要意义，为在线策略蒸馏提供了新的思路。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "Reasoning",
+    "On-Policy"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 token 级在线策略蒸馏缺乏连贯的替代推理步骤，难以有效指导学生修正推理错误。",
+      "当学生模型产生退化的推理前缀时，token 级 OPD 的效果会显著下降。",
+      "分段式在线策略蒸馏通过片段级监督提供更连贯的修正信号，有望提升推理修正能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-002",
+  "title": "Fast Models, Slow Evidence: A Paired and Self-Audited Evaluation of System-1 Decision Models for LLM Agent Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.02267",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对 LLM Agent 框架中的 System-1 决策模型进行了配对评估，比较了开源模型 Laya 与托管模型 Jev 在 11 个 Agent 决策点上的表现。Agent 框架在任务执行中需要频繁做出小型类型化决策，例如选择调用哪个模型、使用哪个工具、判断检索文本是否相关、检测输入是否包含注入攻击等。System-1 决策模型通过单次前向传播输出类别概率来回答这些问题，相比调用完整 LLM 可大幅节省成本和延迟。研究采用配对评估与自审计方法，系统性地检验了这类快速决策模型在实际 Agent 场景中的可靠性与证据支撑。该工作值得关注，因为它触及了 Agent 系统效率与可靠性之间的核心权衡：快速模型虽能降低开销，但其决策证据是否充分、是否可被审计，直接关系到 Agent 系统的安全与可信部署。评估结果为开发者选择决策模型、设计 Agent 框架提供了实证依据，也揭示了 System-1 模型在注入检测等安全敏感决策上的潜在风险。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Evaluation",
+    "System-1",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "System-1 决策模型通过单次前向传播输出类别概率，可显著降低 Agent 框架的调用成本与延迟。",
+      "配对评估与自审计方法能更可靠地比较开源与托管决策模型在多个 Agent 决策点上的表现。",
+      "快速决策模型在注入检测等安全敏感任务上的证据充分性存疑，需谨慎部署。",
+      "Agent 框架的效率提升不能以牺牲决策可审计性为代价，二者需协同设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-131",
+  "title": "Hardware-Native Joint Sparse-Quantization for Trillion-Scale Mixture-of-Experts",
+  "source_url": "https://arxiv.org/abs/2610.02241",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向万亿参数级混合专家（MoE）模型的硬件原生联合稀疏-量化方法，旨在解决MoE部署中内存占用大和内存带宽受限的核心瓶颈。现代加速器提供的稀疏张量核心（SpTC）能够通过低精度半结构化稀疏降低权重存储并提升吞吐，但将其应用于MoE面临模型质量下降等挑战。该工作通过联合设计稀疏与量化策略，使MoE模型能够更高效地利用SpTC硬件特性，在保持模型质量的同时显著降低内存需求并提升推理效率。这一方向对于推动万亿级MoE模型的实际部署具有重要意义，尤其是在当前大模型规模持续膨胀、推理成本成为关键制约的背景下，硬件与算法的协同优化正成为突破部署瓶颈的重要路径。",
+  "tags": [
+    "MoE",
+    "Quantization",
+    "Sparsity",
+    "Inference",
+    "Hardware Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "万亿级MoE模型部署的核心瓶颈在于内存占用和带宽限制，而非单纯算力不足",
+      "稀疏张量核心（SpTC）为MoE提供了硬件层面的优化机会，但需要算法与硬件的联合设计才能充分发挥其潜力",
+      "联合稀疏-量化方法可在保持模型质量的前提下，显著降低MoE的存储和带宽需求",
+      "硬件原生优化是推动超大规模MoE模型实际落地的关键路径"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

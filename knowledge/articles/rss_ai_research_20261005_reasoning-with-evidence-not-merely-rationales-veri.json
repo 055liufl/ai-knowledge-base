@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-071",
+  "title": "Reasoning with Evidence, Not Merely Rationales: Verifiable Preference Proofs for LLM-Based Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.02968",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PROVE-REC 框架，针对 LLM 推荐系统中一个被忽视的关键问题：模型生成的偏好理由（rationale）未必真实反映其推荐决策所依据的信息。作者将这种偏差定义为「grounding-influence gap」，包含两类失败模式：一是偏好主张与其所选证据之间的支撑关系薄弱（grounding 不足），二是该偏好主张对最终排序结果几乎没有影响（influence 缺失）。PROVE-REC 旨在为基于 LLM 的推荐提供可验证的偏好证明，使推荐理由不仅听起来合理，而且能够被追溯、验证并确认其真正驱动了排序决策。该工作值得关注，因为它触及了 LLM 可解释性与可信推荐的核心痛点——当前大量系统输出的解释文本可能只是事后合理化（post-hoc rationalization），而非真实决策依据。对于需要高可信度、可审计性的推荐场景（如电商、内容平台、金融产品推荐），这一框架提供了从「看似合理的解释」走向「可验证的证据链」的路径，对提升 LLM 推荐系统的透明度、可控性与用户信任具有重要价值，也为可解释 AI 与推荐系统的交叉研究提供了新的问题定义与方法论。",
+  "tags": [
+    "LLM",
+    "Recommender System",
+    "Explainability",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的推荐理由可能只是事后合理化，未必反映真实决策依据，存在 grounding-influence gap",
+      "该 gap 可拆解为两类失败：偏好主张缺乏充分证据支撑，以及偏好主张对最终排序无实质影响",
+      "PROVE-REC 提出可验证偏好证明框架，要求推荐理由同时具备证据可追溯性与决策影响力",
+      "该方向对构建可审计、可信赖的 LLM 推荐系统具有关键意义，推动解释从「合理」走向「可验证」"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

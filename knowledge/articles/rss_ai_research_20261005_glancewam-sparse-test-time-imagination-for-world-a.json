@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-127",
+  "title": "GlanceWAM: Sparse Test-Time Imagination for World-Action Models",
+  "source_url": "https://arxiv.org/abs/2608.23927",
+  "source_platform": "rss_ai_research",
+  "summary": "GlanceWAM 提出了一种针对世界-动作模型（World-Action Models, WAMs）的稀疏测试时想象（Sparse Test-Time Imagination）方法，旨在解决机器人学习中视频生成模型面临的核心矛盾：在控制频率下同步生成视频会带来难以接受的延迟，而完全放弃测试时的视觉想象又会显著降低任务成功率。该工作证明，将视觉想象异步生成、置于关键路径之外并直接消费，可以同时实现实时推理和更高的任务成功率。这一思路对具身智能和机器人策略学习具有重要意义，因为它打破了'实时性'与'想象能力'之间的传统权衡，为世界模型在真实机器人控制中的落地提供了新的工程与算法范式。其价值在于：一方面降低了推理延迟，使视频生成模型可以真正用于闭环控制；另一方面保留了视觉想象带来的物理先验优势，从而提升复杂任务的成功率。对于关注机器人学习、世界模型、视频生成与实时推理的研究者和开发者而言，GlanceWAM 提供了一种可借鉴的异步架构设计思路，可能推动 WAM 从离线仿真走向真实部署。",
+  "tags": [
+    "World Model",
+    "Robot Learning",
+    "Video Generation",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同步视频生成在控制频率下延迟过高，而完全放弃测试时视觉想象会牺牲任务成功率，二者存在根本性权衡。",
+      "将视觉想象异步生成并置于关键路径之外，可以同时实现实时推理与更高的任务成功率。",
+      "稀疏测试时想象直接消费生成结果，为世界-动作模型在真实机器人闭环控制中的部署提供了可行路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-130",
+  "title": "CORE: COverage CAlibration and Evicted-Mass REdistribution for KV Cache",
+  "source_url": "https://arxiv.org/abs/2610.02235",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CORE（COverage CAlibration and Evicted-Mass REdistribution），一种针对长上下文解码中 KV 缓存内存与带宽瓶颈的新型压缩方法。现有固定预算压缩方法通常将保留（retention）与补偿（compensation）分离，而保留排序既无法指定被丢弃的注意力质量，也无法确定由此导致的输出误差方向。CORE 从精确的误差分解出发：驱逐误差等于被驱逐的注意力质量乘以被驱逐质心与保留质心之间的方向差距。基于这一分解，CORE 通过覆盖率校准和驱逐质量重分配来同时优化保留与补偿，从而在固定预算下更精确地控制输出误差。该方法值得关注，因为它为 KV 缓存压缩提供了理论驱动的误差分析框架，有望在长上下文推理场景中显著降低内存占用并提升生成质量，对 LLM 推理效率优化具有重要实用价值。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Long Context",
+    "Compression"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "驱逐误差可精确分解为被驱逐注意力质量与质心方向差距的乘积，为压缩误差提供可解释的量化框架",
+      "现有方法将保留与补偿分离，忽略了被驱逐注意力质量对输出误差方向的影响",
+      "CORE 通过覆盖率校准与驱逐质量重分配，在固定预算下同时优化保留策略与误差补偿",
+      "该方法有望在长上下文解码中降低 KV 缓存内存与带宽需求，同时保持生成质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

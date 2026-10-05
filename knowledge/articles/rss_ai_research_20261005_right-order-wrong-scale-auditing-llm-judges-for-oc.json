@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-016",
+  "title": "Right Order, Wrong Scale: Auditing LLM Judges for Occupational AI Measurement",
+  "source_url": "https://arxiv.org/abs/2610.02492",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM 作为评审（LLM Judge）在职业 AI 测量中的可靠性问题展开审计研究。作者指出，现有评估通常只关注响应排序的一致性，却忽略了接受率与职业聚合层面的一致性，这可能导致错误的结论。为此，他们构建了 O*NET-BENCH 审计套件，基于 45,796 份工人评分调查数据，在 4,501 条测试评分上评估了来自六个模型家族的 33 种预置评审配置。研究发现，其中 25 种配置在考虑平局的情况下能达到配对排序一致，但排序一致并不等同于接受率或职业层面聚合一致，暴露出 LLM 评审在尺度校准上的系统性偏差。该工作提醒研究者和开发者，在将 LLM 用于职业能力评估或招聘筛选等高风险场景时，必须同时审计排序与绝对尺度，否则可能引入隐蔽的测量误差。",
+  "tags": [
+    "LLM Judge",
+    "Evaluation",
+    "Benchmark",
+    "Occupational AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 评审在响应排序上的一致并不能保证接受率或职业聚合层面的一致，存在尺度校准问题。",
+      "O*NET-BENCH 基于 45,796 份工人评分构建，为职业 AI 测量提供了可复现的审计基准。",
+      "在 33 种评审配置中，25 种能达到配对排序一致，但多数在绝对尺度上仍有偏差。",
+      "高风险职业评估场景需同时审计排序一致性与尺度一致性，避免隐蔽的测量误差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

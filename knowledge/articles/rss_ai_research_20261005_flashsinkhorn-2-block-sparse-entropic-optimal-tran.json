@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-010",
+  "title": "FlashSinkhorn 2: Block-Sparse Entropic Optimal Transport",
+  "source_url": "https://arxiv.org/abs/2610.02395",
+  "source_platform": "rss_ai_research",
+  "summary": "FlashSinkhorn 2 (FS2) 是一种面向低维点云上平方欧氏代价的熵正则最优传输（EOT）求解器，旨在解决大规模离散 EOT 问题。传统流式 GPU 求解器（如 FlashSinkhorn）虽然避免了存储稠密核矩阵，但在每次 Sinkhorn 迭代中仍需计算全部 n×m 个点对，计算开销巨大。FS2 通过两阶段耦合策略实现突破：粗阶段在单元质心上求解，细阶段仅在局部进行精确计算，从而在单块 GPU 上以规定的边际残差求解大规模问题。该方法结合了块稀疏思想与熵正则最优传输，显著降低了计算复杂度，对需要高效处理大规模分布匹配、生成建模、域适应等任务的场景具有重要价值。其创新点在于将粗粒度近似与细粒度修正结合，在保持精度的同时大幅提升可扩展性，为 GPU 上的最优传输计算提供了新的高效范式。",
+  "tags": [
+    "Optimal Transport",
+    "GPU",
+    "Sinkhorn",
+    "Block-Sparse",
+    "Efficient Algorithm"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FS2 通过粗阶段（单元质心）与细阶段（局部精确计算）的两阶段耦合，避免了每次迭代计算全部 n×m 点对，显著降低计算量。",
+      "该方法针对低维点云上的平方欧氏代价，在单块 GPU 上即可求解大规模 EOT 问题，并达到规定的边际残差精度。",
+      "块稀疏与熵正则最优传输的结合为流式 GPU 求解器提供了新的可扩展性路径，有望推动最优传输在机器学习中的实际应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

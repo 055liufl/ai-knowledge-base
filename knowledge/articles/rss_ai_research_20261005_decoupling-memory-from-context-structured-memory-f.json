@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-041",
+  "title": "Decoupling Memory from Context: Structured Memory for Token-Efficient Test-Time Continual Learning",
+  "source_url": "https://arxiv.org/abs/2610.02687",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种将记忆与上下文解耦的结构化记忆方法，用于实现token高效的测试时持续学习。传统上，LLM通过上下文工程在推理时注入领域知识和经验，但在线适应上下文往往需要昂贵的试错过程，且随着交互增长，上下文窗口迅速膨胀，导致token消耗巨大。本文的核心思路是将长期记忆从即时上下文中分离出来，以结构化形式存储，仅在需要时检索相关片段注入上下文，从而在保持模型适应能力的同时显著降低token开销。该方法面向企业、科学和医疗等需要持续吸收领域知识并积累经验的场景，为无需权重更新的持续学习提供了更实用的路径。其价值在于缓解了上下文工程中成本与适应性之间的矛盾，使LLM智能体能够在有限token预算下长期运行并持续进化，对部署成本敏感的实际应用具有直接意义。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Continual Learning",
+    "Context Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将长期记忆与即时上下文解耦，可避免上下文窗口随交互无限膨胀，实现token高效利用。",
+      "结构化记忆存储支持按需检索，减少在线试错成本，提升测试时持续学习的实用性。",
+      "该方法为无需权重更新的LLM适应提供了新思路，尤其适合企业、医疗等需持续积累领域知识的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

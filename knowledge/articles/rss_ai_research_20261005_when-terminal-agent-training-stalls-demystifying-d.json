@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-011",
+  "title": "When Terminal-Agent Training Stalls: Demystifying Data Generation and Verification Challenge",
+  "source_url": "https://arxiv.org/abs/2610.02405",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对使用前沿模型（如 Claude Opus）作为元智能体来生成终端任务和验证器以进行强化学习训练这一日益常见的做法，指出其潜在缺陷：即使生成了可运行的 Docker 镜像和可执行的测试套件，也不能保证终端智能体训练端到端流程的忠实性。作者提出了一种元智能体流水线，用于诊断三类失败：基准无效性、测试框架脆弱性和奖励错位。通过提示重设计和协同优化，该工作旨在揭示数据生成与验证中的挑战，为构建更可靠的终端智能体训练流程提供指导。该研究对于依赖自动化数据生成进行 RL 训练的研究者和开发者具有重要参考价值，有助于避免因验证不充分而导致的训练偏差和资源浪费。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Data Generation",
+    "Verification",
+    "Terminal"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可运行的 Docker 镜像和测试套件并不足以保证终端智能体训练流程的忠实性。",
+      "元智能体生成任务和验证器时存在三类典型失败：基准无效性、测试框架脆弱性和奖励错位。",
+      "通过提示重设计和协同优化可以诊断并缓解这些失败，提升训练数据的质量。",
+      "该研究强调了在自动化 RL 训练中验证环节的重要性，为后续工作提供了诊断框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

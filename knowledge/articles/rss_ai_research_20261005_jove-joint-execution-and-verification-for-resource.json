@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-095",
+  "title": "JOVE: Joint Execution and Verification for Resource-Aware LLM Task Graphs",
+  "source_url": "https://arxiv.org/abs/2610.03296",
+  "source_platform": "rss_ai_research",
+  "summary": "JOVE 是一个面向复杂推理任务的在线调度框架，其核心思想是将复杂查询分解为有向无环任务图（DAG），并在异构 LLM 集群上并行执行，以降低延迟并让较小模型也能参与解决复杂任务。该工作指出现有方案的两个关键痛点：一是某个 LLM 对特定子任务是否合适往往先验未知，二是仅靠执行无法判断输出正确性。为此，JOVE 将「执行器分配」与「中间结果验证」联合建模，在运行时动态选择执行每个子任务的 LLM，并对中间输出进行验证，从而在资源受限条件下实现更可靠的推理。该研究值得关注的原因在于，它把多模型编排从静态路由推进到「执行+验证」的闭环在线决策，兼顾了延迟、成本与正确性，对构建实用的多智能体/多模型推理系统具有直接参考价值，也为资源感知的 LLM 调度提供了新的问题形式化与解决思路。",
+  "tags": [
+    "LLM",
+    "Task Graph",
+    "Multi-Agent",
+    "Scheduling",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将复杂推理查询建模为 DAG 任务图并在异构 LLM 间并行执行，可降低延迟并让小模型参与复杂任务",
+      "LLM 与子任务的适配性先验未知，且执行本身不暴露正确性，因此需要在线联合决策",
+      "JOVE 把执行器分配与中间结果验证统一到一个在线框架中，实现资源感知的可靠调度",
+      "该方向将多模型编排从静态路由推向执行-验证闭环，对实用多智能体系统有参考意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

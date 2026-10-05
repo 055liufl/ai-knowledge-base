@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-093",
+  "title": "Learning a Fact Is Not Learning How to Retrieve It",
+  "source_url": "https://arxiv.org/abs/2610.03251",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了语言模型在事实学习与事实检索之间的差异。作者发现，模型即使学会了某个事实（如“X的首都是Y”），在不同提问形式下（如“X的首都是”与“X的首都：”）也可能无法正确检索。为分离学习与检索过程，他们设计了两阶段训练：第一阶段让一个模型接触同一事实的多种请求形式，另一个模型仅接触陈述形式；第二阶段进行目标事实训练。该工作揭示了模型对事实的存储与提取机制并非完全一致，对理解LLM的知识表示和提升检索鲁棒性具有重要价值。",
+  "tags": [
+    "LLM",
+    "知识检索",
+    "事实学习",
+    "训练策略"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型学会一个事实并不等于能在所有提问形式下正确检索该事实。",
+      "请求形式的多样性训练可能有助于提升模型对同一事实的检索鲁棒性。",
+      "将事实学习与检索能力分离研究，有助于更精细地理解LLM的知识机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

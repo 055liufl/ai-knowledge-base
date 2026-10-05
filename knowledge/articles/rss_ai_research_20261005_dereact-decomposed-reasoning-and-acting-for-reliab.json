@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-007",
+  "title": "DeReAct: Decomposed Reasoning and Acting for Reliable AI Agents",
+  "source_url": "https://arxiv.org/abs/2610.02351",
+  "source_platform": "rss_ai_research",
+  "summary": "DeReAct 是一种模块化的 AI Agent 架构，旨在解决传统 ReAct 框架中单一 LLM 策略耦合带来的可靠性问题。在标准 ReAct 中，同一个模型负责提出动作、与环境交互并判断任务是否完成，这种耦合导致动作授权和完成控制难以独立执行，错误容易传播，且模型可能在不支持的情况下声称任务完成而终止执行。DeReAct 通过外化两个门控策略来解耦这一流程：一个 Critic 负责验证提议动作的合理性与安全性，另一个完成控制器负责判断任务是否真正达成。这种分解式推理与行动设计提升了 Agent 的可靠性和可控性，使动作授权与完成判定可以独立实施，减少错误累积和虚假完成声明。该工作对构建可信、可审计的自主智能体系统具有重要参考价值，尤其适用于需要严格安全约束和任务验证的场景。",
+  "tags": [
+    "Agent",
+    "ReAct",
+    "LLM",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 ReAct 将动作提议、环境交互和完成判定耦合在单一 LLM 策略中，导致错误传播和不可靠的任务终止。",
+      "DeReAct 通过外化 Critic 和完成控制器两个门控策略，实现动作授权与完成控制的独立执行。",
+      "模块化分解提升了 Agent 的可靠性和可控性，为构建可信自主智能体提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

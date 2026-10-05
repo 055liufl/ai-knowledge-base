@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-110",
+  "title": "Reasoning Models Are Accurate but Unsound on Identification",
+  "source_url": "https://arxiv.org/abs/2610.03519",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对推理模型在因果识别任务中的可靠性问题展开研究。作者指出，当被问及某个因果效应能否从观测数据中恢复时，推理模型可能犯两类错误：一是拒绝一个本可识别的查询，二是对不可识别的查询给出肯定答案。后者危害更大，因为没有任何观测数据能够验证所声称的公式。为衡量这一失败模式，研究需要构造可证明不可识别的查询，而此前的评估恰恰缺乏这类查询，同时还需要能够接受任意等价形式正确公式的评分机制。该工作填补了推理模型在因果推断可靠性评估上的空白，揭示了模型在形式推理上的'不健全性'（unsoundness）——即能给出看似合理但逻辑上无效的答案。这一发现对将推理模型应用于科学发现、因果决策等高风险场景具有重要警示意义，值得因果推断、AI 安全与形式化推理领域的研究者关注。",
+  "tags": [
+    "Reasoning",
+    "Causal Inference",
+    "Evaluation",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理模型在因果识别任务中存在两类失败：拒绝可识别查询与接受不可识别查询，后者因无法用观测数据验证而更具危害性。",
+      "现有评估缺乏可证明不可识别的查询，且评分机制难以接受等价形式的正确公式，导致该失败模式长期被忽视。",
+      "模型表现出'准确但不健全'的特性：答案可能看似合理，却缺乏形式逻辑上的有效性，这对高风险因果应用构成隐患。",
+      "该研究为推理模型的可靠性评估提供了新范式，强调需要构造对抗性不可识别查询与等价性评分标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

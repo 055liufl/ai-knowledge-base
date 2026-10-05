@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-123",
+  "title": "Transcriptome-informed multi-modal AI for predicting neoadjuvant therapy response from breast cancer biopsies",
+  "source_url": "https://arxiv.org/abs/2610.03693",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出了一种两阶段多模态AI模型，用于从乳腺癌活检组织病理图像中预测新辅助治疗的病理完全缓解（pCR）。由于肿瘤学领域标注数据稀缺，研究者首先利用来自32种癌症类型、共8742名患者的数据，训练第一阶段模型从组织病理图像中学习转录组表达信息，并通过病理学家审查和与实测表达的空间一致性进行验证。这一阶段相当于用大规模跨癌种数据构建了一个图像到转录组的映射基础，从而将第二阶段任务简化为仅从图像预测pCR，降低了对稀缺标注数据的依赖。该工作的核心价值在于：一是通过转录组信息引导，缓解了医学影像AI中标签不足的瓶颈；二是实现了多模态信息在推理阶段的隐式融合，即推理时只需常规病理切片即可获得分子层面的信息；三是为乳腺癌新辅助治疗的疗效预测提供了一种可扩展、低成本的AI生物标志物开发范式，有望辅助临床治疗决策。",
+  "tags": [
+    "多模态AI",
+    "计算病理学",
+    "转录组学",
+    "精准肿瘤学",
+    "医学影像"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用跨32种癌症类型的大规模数据，第一阶段从组织病理图像中学习转录组表达，为下游任务提供分子层面的信息基础。",
+      "两阶段设计将稀缺的pCR标注问题转化为图像到转录组的预训练加轻量预测，显著降低对标注数据的依赖。",
+      "病理学家审查和空间表达一致性验证增强了图像衍生转录组特征的可信度。",
+      "该方法有望以低成本病理切片替代部分分子检测，辅助乳腺癌新辅助治疗的疗效预测。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

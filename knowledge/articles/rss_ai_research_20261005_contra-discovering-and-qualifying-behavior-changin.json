@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-128",
+  "title": "CONTRA: Discovering and Qualifying Behavior-Changing Questions for Selective Clarification in LLM Code Generation",
+  "source_url": "https://arxiv.org/abs/2610.01769",
+  "source_platform": "rss_ai_research",
+  "summary": "CONTRA 是一项针对 LLM 代码生成中需求欠明确问题的研究，提出通过发现并筛选「会改变行为的问题」来实现选择性澄清。当编码智能体面对不完整的需求时，往往会自行假设并静默地补全细节，从而生成看似正确但实际不符合用户意图的代码。随着后续开发基于这些错误假设推进，修正成本会不断累积。现有做法要么不提问、任由假设蔓延，要么频繁提问打断开发者。CONTRA 的核心思路是识别那些一旦答案不同就会导致生成代码行为发生实质变化的问题，只对这类高价值问题进行澄清，从而在减少打断的同时有效避免意图偏差。该工作对构建更可靠的编码智能体、提升人机协作效率具有实际意义，也为「何时该问、问什么」这一交互决策问题提供了可量化的判断框架。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Agent",
+    "Clarification",
+    "Human-AI Interaction"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 编码智能体常通过静默假设补全欠明确需求，导致代码行为与用户意图不符，且修正成本随开发推进而累积",
+      "并非所有澄清问题都有价值，只有那些答案会改变生成代码行为的问题才值得打断开发者",
+      "选择性澄清在减少交互干扰与避免意图偏差之间提供了可量化的权衡框架",
+      "该方向对提升编码智能体的可靠性和人机协作效率具有实际工程意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

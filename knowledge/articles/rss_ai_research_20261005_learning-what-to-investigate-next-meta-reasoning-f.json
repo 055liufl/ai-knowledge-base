@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-022",
+  "title": "Learning What to Investigate Next: Meta-Reasoning for Long-Horizon Research Agents",
+  "source_url": "https://arxiv.org/abs/2610.02525",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 MIRA（Meta-reasoning for Iterative Research Agents），一种面向长时程研究型智能体的分层架构，旨在解决智能体在证据不断累积过程中「下一步该调查什么」这一元推理难题。传统研究型 Agent 通常只关注「如何执行」单步调查动作，而忽略了「调查方向的选择」这一更高层次的决策，导致在长执行轨迹中决策信号稀疏、后果延迟显现，难以通过端到端强化学习有效训练。MIRA 的核心思路是将研究资源的分配（what to investigate next）与具体执行（how to investigate）解耦：外层循环由一个元推理器（meta-reasoner）负责筛选、组织上下文并决定下一步研究方向，内层则负责具体调查动作的执行。这种分层设计使稀疏的高层决策信号能够被更有效地学习和归因，从而提升长时程研究任务中的探索效率与方向正确性。该工作对自动化科研、深度研究型 Agent、以及需要多步推理与信息搜集的复杂任务具有重要参考价值，代表了 Agent 架构从「执行优化」向「元认知优化」演进的方向。",
+  "tags": [
+    "Agent",
+    "Meta-Reasoning",
+    "Long-Horizon",
+    "Research Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程研究型 Agent 的关键瓶颈在于「调查什么」的高层决策，而非「如何调查」的执行细节，二者需要解耦处理。",
+      "高层研究决策在长轨迹中信号稀疏、反馈延迟，端到端学习困难，分层架构可缓解信用分配问题。",
+      "MIRA 通过外层元推理器进行上下文筛选与研究方向分配，为自动化科研 Agent 提供了新的架构范式。",
+      "该方向标志着 Agent 研究从执行能力优化转向元认知与资源分配策略的优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

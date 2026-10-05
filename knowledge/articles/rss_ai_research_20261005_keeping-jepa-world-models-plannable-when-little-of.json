@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-089",
+  "title": "Keeping JEPA World Models Plannable When Little of the Frame Moves",
+  "source_url": "https://arxiv.org/abs/2610.03137",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对潜在世界模型（latent world model）中语言目标规划的可测试性问题，提出了 SLIM 基准。SLIM 是一个推物（pushing）任务基准，包含多个小物体，并在相同场景中提供配对的视觉目标与语言目标，从而迫使语言必须区分不同物体。作者发现，在 SLIM 上，一个在 PushT 任务上表现良好的 LeWM 世界模型成功率不足 1%，而基于模拟器的脚本控制器则表现更好。这表明现有世界模型在语言条件规划、小物体区分以及帧内运动稀少（little of the frame moves）的场景下存在显著泛化缺陷。该工作为评估语言驱动的世界模型规划能力提供了更严格的测试平台，并揭示了当前方法在细粒度语言 grounding 和长期规划上的不足，对具身智能、机器人操作和世界模型研究具有重要参考价值。",
+  "tags": [
+    "World Model",
+    "Planning",
+    "Benchmark",
+    "Embodied AI",
+    "Language Grounding"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言目标比视觉目标更自然，但需要场景中存在多个可区分物体才能有效测试语言 grounding 能力。",
+      "现有世界模型（如 LeWM）在 PushT 上成功，但在 SLIM 上成功率不足 1%，说明其泛化能力被高估。",
+      "帧内运动稀少（little of the frame moves）的场景对潜在世界模型的规划构成特殊挑战。",
+      "SLIM 基准通过配对视觉与语言目标，为语言条件世界模型规划提供了更严格的评估标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

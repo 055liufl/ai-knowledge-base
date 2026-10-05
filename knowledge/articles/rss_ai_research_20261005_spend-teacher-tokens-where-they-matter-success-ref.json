@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-038",
+  "title": "Spend Teacher Tokens Where They Matter: Success-Referenced On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.02678",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Success-Referenced On-Policy Distillation (SR-OPD)，一种旨在降低在线策略蒸馏（OPD）中教师模型计算成本的新方法。传统 OPD 需要教师模型对学生生成的每个 rollout 提供密集的 token 级监督，计算开销巨大。SR-OPD 的核心思想是：仅对同一 prompt 下学生同时产生成功和失败 rollout 的情况进行教师监督，从而将教师 token 预算集中在最有信息量的样本上。该方法通过筛选 prompt 和 rollout 来决定哪些样本值得教师介入，在保持蒸馏效果的同时显著减少教师计算量。这项工作对于大模型蒸馏、推理能力提升以及训练成本优化具有实际意义，尤其适合资源受限的团队在有限教师预算下提升学生模型性能。",
+  "tags": [
+    "Distillation",
+    "LLM",
+    "Training",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SR-OPD 通过仅在学生同时产生成功和失败 rollout 的 prompt 上使用教师监督，大幅降低教师计算成本。",
+      "该方法将教师 token 预算集中在信息量最大的样本上，有望在有限预算下提升蒸馏效率。",
+      "适用于大语言模型的在线策略蒸馏场景，对推理能力提升和训练成本优化有实际价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

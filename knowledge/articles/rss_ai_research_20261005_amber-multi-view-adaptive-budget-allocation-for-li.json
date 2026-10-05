@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-058",
+  "title": "AMBER: Multi-View Adaptive Budget Allocation for Listwise Vision-Language Reranking",
+  "source_url": "https://arxiv.org/abs/2610.02831",
+  "source_platform": "rss_ai_research",
+  "summary": "AMBER（Adaptive Multi-view Budgeted Elo Reranking）是一篇针对多模态检索中视觉语言模型（VLM）重排序效率问题的研究论文。视觉语言模型作为列表式重排序器效果强大，但推理成本高昂，通常只能评估少量局部候选视图。现有多轮调用策略采用固定调度，导致在无信息量的候选对和简单查询上浪费昂贵的 VLM 调用。AMBER 提出一种在线、预算化的多视图重排序框架，通过动态分配调用预算，将资源集中在真正需要 VLM 判断的困难样本上。该方法结合 Elo 评分机制与自适应多视图策略，在有限预算下提升重排序质量。该工作值得关注，因为它直击多模态 RAG 与检索系统中 VLM 重排序的成本瓶颈，为在真实生产环境中部署高质量多模态检索提供了可行的效率优化路径，对检索增强生成和跨模态搜索系统具有实用价值。",
+  "tags": [
+    "VLM",
+    "Reranking",
+    "Multimodal Retrieval",
+    "Budget Allocation"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM 作为多模态列表式重排序器性能强但推理成本高，限制了候选视图的评估范围",
+      "现有多次调用策略使用固定调度，在简单查询和无信息候选对上浪费昂贵调用",
+      "AMBER 通过在线自适应预算分配，将 VLM 调用集中在高价值候选对上",
+      "结合 Elo 评分机制可在有限预算下实现更优的多视图重排序效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

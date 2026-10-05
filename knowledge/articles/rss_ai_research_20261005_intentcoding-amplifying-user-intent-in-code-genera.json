@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-124",
+  "title": "IntentCoding: Amplifying User Intent in Code Generation",
+  "source_url": "https://arxiv.org/abs/2602.00066",
+  "source_platform": "rss_ai_research",
+  "summary": "IntentCoding 是一篇来自 arXiv 的学术论文（编号 2602.00066），聚焦于大语言模型（LLM）在代码生成任务中对用户意图的遵循能力。作者通过实证分析发现两个关键现象：其一，当用户意图中包含的约束条件数量增加时，模型的生成性能会迅速下降；其二，尽管用户意图确实会影响模型的 logits 输出，但这种影响强度不足以稳定地引导模型生成符合全部约束的代码。基于这些观察，论文提出了 IntentCoding 方法，旨在放大用户意图在代码生成过程中的作用，从而提升模型对细粒度、多约束需求的遵循能力。该研究值得关注的原因在于：代码生成是 LLM 最核心的应用场景之一，而真实开发需求往往包含多重约束（如性能、风格、依赖、边界条件等），现有模型在这类场景下表现不佳。IntentCoding 从模型内部信号（logits 层面的意图影响）入手，为提升可控代码生成提供了新的思路，对研究者理解 LLM 意图遵循机制、对开发者构建更可靠的 AI 编程工具均具有参考价值。",
+  "tags": [
+    "Code Generation",
+    "LLM",
+    "Intent Alignment",
+    "Controllable Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随着用户意图中约束数量的增加，LLM 代码生成性能会快速下降，多约束场景是当前模型的明显短板。",
+      "用户意图虽然能影响模型的 logits 分布，但这种影响强度不足以稳定地控制生成结果，说明模型对意图的利用存在瓶颈。",
+      "IntentCoding 通过放大用户意图在生成过程中的信号强度，为提升多约束代码生成的遵循度提供了新方向。",
+      "该工作从 logits 层面分析意图影响机制，为理解 LLM 可控生成提供了可解释性的实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-066",
+  "title": "Frequency Is Not Sensitivity Identifying Safety-Sensitive Experts in Sparse MoE LLM",
+  "source_url": "https://arxiv.org/abs/2610.02910",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究稀疏混合专家（MoE）大语言模型中的安全脆弱性问题：抑制少量被路由的专家即可在不重训练的情况下削弱模型的安全行为，因此识别哪些专家应被抑制成为一个安全问题。传统做法以激活频率作为选择依据，但作者指出频率衡量的是使用程度而非影响力。论文提出替代指标——路由器梯度敏感度（router-gradient sensitivity），即序列损失对选择某专家的门控权重的敏感度，用以识别真正对安全行为关键的专家。作者在五种 MoE 架构上进行了实验验证。该工作值得关注，因为它揭示了 MoE 模型安全对齐的结构性弱点，并提供了比频率更准确的专家重要性度量，对模型安全评估、对抗性攻击防御以及 MoE 架构的可解释性研究均有参考价值。",
+  "tags": [
+    "MoE",
+    "LLM Safety",
+    "Interpretability",
+    "Adversarial Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "抑制少量路由专家即可削弱 MoE 大模型的安全行为，且无需重训练，构成实际安全风险",
+      "激活频率衡量的是专家使用程度而非影响力，不能准确反映专家对安全行为的重要性",
+      "路由器梯度敏感度（序列损失对门控权重的敏感度）是识别安全关键专家的更优指标",
+      "该发现对 MoE 模型的安全对齐、鲁棒性评估与防御策略设计具有直接意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

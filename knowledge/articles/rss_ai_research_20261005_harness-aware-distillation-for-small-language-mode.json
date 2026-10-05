@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-061",
+  "title": "Harness-Aware Distillation for Small Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2610.02858",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Harness-Aware Distillation（框架感知蒸馏）的新方法，用于将大型语言模型智能体蒸馏为小型语言模型智能体。语言模型智能体通常部署在一个“harness”（框架）中运行，该框架负责管理模型的上下文、工具调用和反馈机制。当把这样的智能体蒸馏到更小的模型时，框架本身保持不变，因此学生模型真正需要学习的是教师模型特有的、框架无法提供的那些能力，例如正确理解和响应框架提供的信息。然而，标准的蒸馏方法只是简单地模仿教师模型的完整输出，并将框架视为输出的一部分，这导致学生模型浪费大量容量去学习框架已经处理好的内容，而忽略了真正需要掌握的教师特有技能。该研究针对这一问题提出了框架感知的蒸馏策略，使蒸馏过程能够区分框架贡献与模型贡献，从而更高效地训练小型语言模型智能体。这项工作对于在资源受限环境下部署高效智能体具有重要意义，因为它能显著提升小模型在真实智能体场景中的表现，同时降低对教师模型完整行为的依赖。",
+  "tags": [
+    "Distillation",
+    "Agent",
+    "Small Language Model",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体蒸馏中框架（harness）保持不变，学生模型应专注于学习框架无法提供的教师特有技能，而非模仿完整输出。",
+      "标准蒸馏方法将框架视为输出的一部分，导致学生模型浪费容量学习框架已处理的内容，效率低下。",
+      "框架感知蒸馏通过区分框架贡献与模型贡献，能更高效地训练小型语言模型智能体。",
+      "该方法对在资源受限环境中部署高效智能体具有实际意义，可提升小模型在真实场景中的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-055",
+  "title": "Scaling Trajectories for Complex Tasks through Recursive Self-Rewrite",
+  "source_url": "https://arxiv.org/abs/2610.02826",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Recursive Self-Rewrite (RSR) 框架，旨在解决复杂任务中成功轨迹难以在通用部署环境下复现的问题。传统方法依赖专门的执行框架（harness）来引导模型产生高质量轨迹，但这些框架在真实部署中往往不可用，导致训练与推理环境不一致。RSR 使用单一基础模型 Qwen-3.8-27B，在多种不同 harness 下探索并发现成功解决方案，然后通过一个 planner 将这些解决方案中的过程提取为 runbook，并重写为在通用 harness 下可执行的训练轨迹。该方法的核心价值在于：无需依赖特定工具或干预机制，即可将异构环境下的成功经验蒸馏为通用可迁移的训练数据，从而提升模型在真实部署场景下的复杂任务表现。这一思路对于构建可扩展、环境无关的智能体训练管线具有重要意义，尤其适用于需要长程推理和多步工具调用的任务。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "Trajectory",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "专门 harness 带来的干预在部署时可能不可用，导致训练与推理环境不匹配，RSR 通过重写轨迹解决该问题",
+      "使用单一基础模型在多种 harness 下探索成功解，再通过 planner 提取 runbook 并重构为通用 harness 下的训练轨迹",
+      "该方法实现了环境无关的轨迹蒸馏，有望提升模型在真实部署中的复杂任务泛化能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

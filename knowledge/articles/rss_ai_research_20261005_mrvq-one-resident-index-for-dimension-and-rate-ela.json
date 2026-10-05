@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-122",
+  "title": "MRVQ: One Resident Index for Dimension- and Rate-Elastic Vector Search",
+  "source_url": "https://arxiv.org/abs/2610.03651",
+  "source_platform": "rss_ai_research",
+  "summary": "MRVQ（Matryoshka Residual Vector Quantization）是一种针对冻结嵌入向量的后处理残差量化方法，旨在解决密集检索服务中维度与码率弹性切换的问题。传统方法为每个码率单独调优量化器虽能获得最佳质量，但检索层需同时维护多个码流和量化器状态，导致内存和存储开销显著增加。MRVQ 的核心创新在于其最大码率编码可沿两个维度进行截断：一是嵌入前缀维度（Matryoshka 风格），二是残差量化层级维度，从而用单一索引同时支持多种维度与码率组合。这意味着服务可以根据延迟、质量和内存预算动态调整检索精度，而无需维护多套索引。该工作对向量数据库、检索增强生成（RAG）系统以及大规模嵌入检索场景具有重要实用价值，有望降低多配置检索系统的工程复杂度与资源成本。",
+  "tags": [
+    "Vector Search",
+    "Quantization",
+    "Embedding",
+    "RAG",
+    "Index"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:58:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MRVQ 通过单一索引支持维度与码率的双重弹性截断，避免了多量化器状态的内存开销。",
+      "该方法适用于冻结嵌入，可作为后处理步骤集成到现有检索流程中，无需重新训练模型。",
+      "Matryoshka 式前缀截断与残差量化层级截断的结合，为动态资源预算下的检索质量-效率权衡提供了新思路。",
+      "该技术有望简化向量数据库和 RAG 系统中多配置索引的管理，降低工程与存储成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

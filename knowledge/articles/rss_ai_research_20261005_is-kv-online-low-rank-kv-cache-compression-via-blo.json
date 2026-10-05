@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-053",
+  "title": "iS-KV: Online Low-Rank KV Cache Compression via Block-Incremental SVD",
+  "source_url": "https://arxiv.org/abs/2610.02815",
+  "source_platform": "rss_ai_research",
+  "summary": "iS-KV 提出了一种面向长链思维推理场景的在线 KV Cache 压缩方法，通过块增量式 SVD（Block-Incremental SVD）实现低秩压缩。长链推理（如 CoT）在自回归解码过程中，每生成一个 token 都会新增 key/value 状态，导致 KV Cache 随解码长度线性增长，显存开销急剧上升。现有方法多依赖 token 驱逐（eviction）来控制缓存规模，但不可逆的删除可能丢失后续推理需要回溯的历史状态，损害推理质量。iS-KV 的核心思路是用低秩近似代替硬性删除，在保留历史信息的同时压缩存储。其块增量式 SVD 设计允许在解码过程中在线、增量地更新低秩分解，避免对全量缓存重复做昂贵的矩阵分解，从而兼顾压缩率与推理效率。该工作对长上下文推理、Agent 长程任务、以及显存受限的部署场景具有实用价值，属于 KV Cache 优化方向上的新探索。",
+  "tags": [
+    "KV Cache",
+    "SVD",
+    "LLM Inference",
+    "Long Context",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:55:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长链思维推理使 KV Cache 随解码长度线性增长，显存成为长上下文推理的主要瓶颈",
+      "Token 驱逐的不可逆删除可能丢失推理回溯所需的历史状态，低秩压缩提供了保留信息的替代路径",
+      "块增量式 SVD 支持在线更新低秩分解，避免全量重复分解带来的计算开销"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

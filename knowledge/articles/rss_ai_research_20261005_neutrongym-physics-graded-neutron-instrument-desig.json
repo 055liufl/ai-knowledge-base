@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-119",
+  "title": "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.03631",
+  "source_platform": "rss_ai_research",
+  "summary": "NeutronGym 是一个面向 LLM Agent 的中子仪器设计可执行环境，旨在测试语言模型是否真正具备物理推理能力，而非仅仅依赖记忆。该工作将科学仪器设计任务转化为一个可执行、可验证的基准：Agent 通过工具构建仪器，McStas 对构建结果进行射线追踪模拟，随后系统按照语法、运行时、结构和科学四个层级进行分级评分，全程不使用 LLM 作为评判者，从而避免了主观评分带来的争议。这一设计的核心价值在于提供了一种「物理可验证」的 Agent 评测范式——评分结果由真实的物理模拟决定，无法被模型通过语言技巧绕过。对于关注 LLM Agent 能力边界、科学发现自动化以及可验证基准构建的研究者而言，NeutronGym 提供了一个兼具挑战性与客观性的测试平台，也代表了将 Agent 评测从文本任务推向真实科学工程任务的重要趋势。",
+  "tags": [
+    "LLM Agent",
+    "Benchmark",
+    "Scientific Computing",
+    "Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NeutronGym 通过 McStas 物理模拟实现无 LLM 评判的客观评分，解决了 Agent 评测中评分主观性的核心问题",
+      "该环境将仪器设计分解为语法、运行时、结构和科学四个递进层级，提供了细粒度的能力诊断",
+      "任务设计旨在区分「真正做物理」与「回忆物理知识」，为评估 LLM 的物理推理能力提供了新范式",
+      "可执行科学环境代表了 Agent 基准从文本任务向真实工程任务演进的重要方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261005-094",
+  "title": "EVOL: Simulator-Guided Evolutionary Expert Synthesis for Deployment-Free Learning Path Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.03273",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 EVOL 框架，旨在解决学习路径推荐（LPR）中强化学习面临的两大难题：一是策略需在无中间反馈的情况下一次性提交 L 个概念的学习序列，导致搜索空间随 L 超指数增长且仅在最终步获得奖励；二是专家学习路径本可缓解稀疏奖励问题，但教育数据中并不存在此类专家轨迹。EVOL 通过模拟器引导的进化式专家合成方法，在无需真实部署的情况下生成高质量专家路径，从而为 RL 训练提供密集监督信号。该工作将进化算法与模拟环境结合，自动合成可替代真实专家示范的学习路径，显著降低了对昂贵教育数据采集和在线部署的依赖。其创新点在于将专家合成问题转化为进化搜索问题，并利用模拟器评估路径质量，为教育 AI 中的冷启动和稀疏奖励问题提供了新思路。对于从事教育推荐、强化学习及仿真驱动优化的研究者与开发者具有较高参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Learning Path Recommendation",
+    "Evolutionary Algorithm",
+    "Simulator",
+    "Education AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:56:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "学习路径推荐中的 RL 面临组合爆炸与稀疏奖励双重挑战，专家轨迹缺失是核心瓶颈。",
+      "EVOL 利用模拟器引导的进化算法合成专家路径，无需真实部署即可为 RL 提供密集监督。",
+      "该方法将专家合成转化为进化搜索问题，为教育 AI 冷启动与数据稀缺场景提供新范式。",
+      "模拟器质量与进化策略设计是决定合成专家有效性的关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

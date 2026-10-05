@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-001",
+  "title": "MintFlow: Minimal Trajectory Intervention for Constrained Flow Matching",
+  "source_url": "https://arxiv.org/abs/2610.02260",
+  "source_platform": "rss_ai_research",
+  "summary": "MintFlow 是一种针对流匹配（Flow Matching）模型的免训练约束采样方法，旨在解决现有约束采样器在满足约束条件时严重偏离预训练数据分布的问题。流匹配模型在生成建模中表现出色，但许多下游应用要求生成样本满足特定约束，如观测测量和物理定律。现有方法往往在约束满足与分布保持之间难以平衡。MintFlow 通过最小轨迹干预（Minimal Trajectory Intervention）实现约束流匹配，在不重新训练模型的情况下，对采样轨迹进行最小程度的调整，从而在满足约束的同时尽可能保持样本接近原始数据分布。该方法具有免训练、通用性强、易于集成等优点，适用于科学计算、物理模拟、条件生成等需要严格约束的场景。其创新点在于将约束满足问题转化为对采样轨迹的微调，避免了传统方法中因强制投影或引导导致的分布偏移。该工作为流匹配模型的可控生成提供了新思路，有望推动生成模型在科学和工程领域的实际应用。",
+  "tags": [
+    "Flow Matching",
+    "Constrained Sampling",
+    "Generative Models",
+    "Training-free"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:52:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MintFlow 通过最小化轨迹干预，在满足约束的同时显著减少样本偏离预训练分布的问题。",
+      "该方法免训练，可直接应用于预训练的流匹配模型，降低了约束采样的计算成本和部署门槛。",
+      "MintFlow 为流匹配模型在科学计算和物理模拟等需要严格约束的下游任务中提供了实用解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

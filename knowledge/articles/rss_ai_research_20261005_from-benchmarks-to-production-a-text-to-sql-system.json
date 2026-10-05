@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-111",
+  "title": "From Benchmarks to Production: A Text-to-SQL System for Complex Financial Data",
+  "source_url": "https://arxiv.org/abs/2610.03524",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对通用 Text-to-SQL 系统在生产级金融数据库中的性能瓶颈展开研究。尽管现有方法在 Spider、BIRD 等学术基准上表现优异，但这些基准的 schema 较浅、列值多为人类可读字符串，与真实金融数据库存在显著差异。在金融生产环境中，业务概念通常以不透明的整数键（opaque integer keys）存储，而非可读文本，导致即便是简单查询也需要多表连接，且过滤条件往往引用这些难以理解的 ID。这种差异使得通用方法在金融场景下的准确率跌破 50%。作者提出了一套面向复杂金融数据的 Text-to-SQL 系统（Financial L...），旨在弥合学术基准与生产环境之间的鸿沟。该工作的价值在于揭示了基准测试与真实业务数据之间的结构性差距，并给出了针对性的工程化解决方案，对金融科技、企业级数据查询和 LLM 落地具有重要参考意义。",
+  "tags": [
+    "Text-to-SQL",
+    "LLM",
+    "金融科技",
+    "数据库"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "学术基准（Spider/BIRD）与生产金融数据库存在结构性差异：前者 schema 浅、值可读，后者使用不透明整数键且需多表连接",
+      "通用 Text-to-SQL 方法在金融生产环境中准确率不足 50%，暴露出基准测试的局限性",
+      "解决金融场景 Text-to-SQL 需要针对 opaque ID、多表 join 和复杂过滤条件进行专门设计",
+      "该研究强调了从 benchmark 到 production 的落地 gap，对企业级 LLM 应用具有警示和指导价值"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

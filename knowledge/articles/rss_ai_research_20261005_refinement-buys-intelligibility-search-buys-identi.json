@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-099",
+  "title": "Refinement Buys Intelligibility, Search Buys Identity: What Test-Time Compute Buys in Masked-Diffusion TTS",
+  "source_url": "https://arxiv.org/abs/2610.03320",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了掩码扩散（masked-diffusion）文本转语音（TTS）模型中两种计算形式的缩放规律：模型深度（参数量）与推理时的细化步数（测试时计算预算）。作者训练了15个掩码扩散编解码器TTS模型，参数量从19M到133M，使用2000小时语音数据，并在推理时扫描细化步数T（1到16），通过ASR词错误率（可懂度）和说话人相似度（身份保持）来评估零样本合成性能。核心发现是：增加细化步数主要提升可懂度，而增加模型深度/搜索则更有利于说话人身份保持，表明测试时计算的不同分配方式对TTS的不同能力有差异化影响。该工作为扩散语言模型在语音合成中的计算资源分配提供了实证指导，对理解测试时计算缩放规律具有重要价值。",
+  "tags": [
+    "TTS",
+    "Diffusion",
+    "Test-Time Compute",
+    "Speech Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "细化步数（refinement steps）主要提升TTS的可懂度（intelligibility），而模型深度/搜索更有利于说话人身份保持（identity）。",
+      "测试时计算预算与模型参数在TTS不同能力上的缩放效果不均等，需要针对性分配。",
+      "掩码扩散TTS模型在零样本合成中，可懂度与说话人相似度对计算资源的依赖存在权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

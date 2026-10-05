@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-019",
+  "title": "World Action Modeling with Progressive Visual Planning",
+  "source_url": "https://arxiv.org/abs/2610.02508",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「世界动作建模」（World Action Modeling, WAM）的新范式，用于机器人控制任务，其核心思想是从初始观测和指令出发，联合预测未来的视觉动态与动作序列。现有 WAM 方法面临长时程预测效率低下的问题：生成密集的视频 rollout 计算开销极大。部分近期工作尝试通过仅预测单张未来帧来规避完整视频生成，但这种方式忽略了如何逐步推进视觉规划过程。该研究针对这一瓶颈，提出「渐进式视觉规划」（Progressive Visual Planning）方法，旨在在保持预测效率的同时实现长时程、多步的视觉-动作联合建模。该工作值得关注的原因在于：机器人控制中的长时程规划一直是具身智能的核心难题，而将视频预测与动作生成统一到世界模型框架下，是当前具身 AI 与视频生成交叉领域的前沿方向。若该方法能有效平衡效率与预测质量，将对机器人操作、自动驾驶等需要长时程决策的场景产生重要影响。",
+  "tags": [
+    "World Model",
+    "Robotics",
+    "Visual Planning",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "世界动作模型（WAM）通过联合预测未来视觉动态与动作，为机器人控制提供了统一建模范式",
+      "现有 WAM 在长时程预测上效率低下，密集视频 rollout 的计算成本是主要瓶颈",
+      "仅预测单帧的简化方案虽提升效率，但牺牲了渐进式视觉规划能力，难以支撑长时程决策",
+      "渐进式视觉规划有望在效率与长时程预测质量之间取得更好平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

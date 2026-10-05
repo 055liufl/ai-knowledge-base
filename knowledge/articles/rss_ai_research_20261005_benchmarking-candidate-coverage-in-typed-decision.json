@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-105",
+  "title": "Benchmarking Candidate Coverage in Typed Decision Models",
+  "source_url": "https://arxiv.org/abs/2610.03387",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对类型化决策模型（Typed Decision Models）的候选覆盖度基准测试协议。这类模型在请求时返回给定答案选项中的选择或分布，但传统准确率指标无法衡量模型是否能在参考答案缺失时正确识别，或避免错误拒绝有效候选。作者设计了一种配对候选覆盖度基准协议，并在 AG News、DBpedia、Emotion 和 TREC 四个数据集上对 Laya 和 Jev 两个模型进行了初步评估。实验使用完全相同的冻结文本和请求，通过配对方式检验模型对候选答案覆盖情况的判断能力。该工作值得关注，因为它揭示了当前评估体系的一个关键盲区：模型在完整选项下表现良好，并不代表其具备识别缺失答案或避免误拒有效候选的鲁棒性。这种覆盖度评估对于构建更可靠、更诚实的决策系统具有重要意义，尤其适用于分类、信息检索和问答等需要从候选集中选择的场景。",
+  "tags": [
+    "Benchmark",
+    "Evaluation",
+    "Decision Models",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:57:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统准确率指标无法反映模型在候选答案缺失或无效时的判断能力，存在评估盲区。",
+      "配对候选覆盖度基准协议能够系统性地检验模型是否识别缺失答案并避免误拒有效候选。",
+      "在 AG News、DBpedia、Emotion 和 TREC 上的初步评估显示，Laya 和 Jev 在候选覆盖方面仍有提升空间。",
+      "该评估框架有助于推动更鲁棒、更可信的类型化决策模型发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-005",
+  "title": "Choosing Before Acting: Comparative Value Estimation for Long-Horizon Tool-Use Agents",
+  "source_url": "https://arxiv.org/abs/2610.02330",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向长时程工具调用智能体（Long-Horizon Tool-Use Agents）的比较价值估计方法，旨在解决强化学习中最终结果奖励在长交互轨迹上信用分配薄弱的问题。在复杂任务中，LLM 需要连续调用多个工具，每次调用都会改变任务状态并影响后续决策，导致稀疏的最终奖励难以有效指导中间步骤的学习。虽然步骤级奖励能提供更精准的反馈，但获取可靠的步骤监督通常依赖人工或 LLM 评判，或需要额外 rollout 来估计价值，成本高昂。该工作通过比较式价值估计（Comparative Value Estimation）在无需大量额外采样或外部标注的情况下，为工具调用序列中的每一步提供更有效的信用分配信号。这一方法对于提升智能体在长时程任务中的规划与决策能力具有重要意义，尤其适用于需要多步工具协作的复杂场景，如自动化工作流、代码生成与调试、多跳问答等。其核心价值在于降低步骤级监督的成本，同时提升长时程任务的学习效率与最终表现，为工具增强型 LLM 智能体的训练提供了新的思路。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程工具调用中，最终结果奖励难以对中间步骤进行有效信用分配，步骤级奖励虽更精准但获取成本高。",
+      "比较式价值估计可在减少额外 rollout 和外部标注依赖的前提下，为工具调用序列提供更可靠的步骤监督。",
+      "该方法有望提升 LLM 智能体在复杂多步工具协作任务中的学习效率与决策质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

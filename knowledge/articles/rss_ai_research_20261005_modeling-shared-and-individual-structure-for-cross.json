@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261005-049",
+  "title": "Modeling Shared and Individual Structure for Cross-Subject Continuous Affect Regression from EEG-fNIRS",
+  "source_url": "https://arxiv.org/abs/2610.02796",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究跨被试（cross-subject）连续情感回归问题，即从脑电（EEG）与功能性近红外光谱（fNIRS）同步信号中，对未见过的被试进行零样本（zero-shot）的效价（valence）和唤醒度（arousal）逐秒预测。现有研究多采用被试依赖（subject-dependent）设定，模型在评估时仍能看到同一被试的标注数据，这高估了实际可用性。本文在同步 EEG-fNIRS 数据集上研究更困难的零样本跨被试变体，目标是在模型从未观察过目标被试标签、仅提供其无标注 EEG/fNIRS 信号的情况下，预测原始尺度（[1,255]）的效价与唤醒度轨迹。核心挑战在于如何建模被试间的共享结构与被试特有的个体结构，从而在不依赖目标被试标签的前提下实现泛化。该工作对情感计算、脑机接口以及生理信号驱动的心理健康监测具有潜在价值，也为跨被试迁移学习与多模态生理信号融合提供了新的研究基准。",
+  "tags": [
+    "EEG",
+    "fNIRS",
+    "Affective Computing",
+    "Cross-Subject Transfer",
+    "Multimodal Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:54:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有连续情感回归多在被试依赖设定下评估，零样本跨被试设定更贴近真实应用场景且难度显著更高。",
+      "EEG 与 fNIRS 的同步多模态信号为跨被试情感建模提供了互补信息，但需要显式分离共享结构与个体结构。",
+      "在无目标被试标签条件下预测原始尺度 [1,255] 的连续效价与唤醒度轨迹，是评估跨被试泛化能力的关键挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

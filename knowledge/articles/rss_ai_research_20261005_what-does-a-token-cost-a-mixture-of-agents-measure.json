@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261005-015",
+  "title": "What Does a Token Cost? A Mixture-of-Agents Measurement of Sufficient Per-Token Compute",
+  "source_url": "https://arxiv.org/abs/2610.02491",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种通过 Mixture-of-Agents（MoA）视角测量单个 token 实际所需计算量的方法。当前大语言模型对每个生成 token 都投入相同的计算量，无论该 token 的生成难度如何。虽然推测解码（speculative decoding）和模型路由（model routing）等技术都基于“大量计算是多余的”这一前提，但单个 token 真正需要的计算量此前从未被直接测量。作者构建了一个由十五个能力递增的语言模型组成的面板（panel），通过 MoA 机制来量化每个 token 的“充分计算量”（sufficient per-token compute）。这项研究的意义在于：它为动态计算分配提供了实证基础，可能推动更高效的推理系统设计，例如按 token 难度自适应分配算力，从而在保持生成质量的同时显著降低推理成本。对于关注 LLM 推理效率、模型路由和自适应计算的研究者与工程师而言，这是一项具有启发性的基础性工作。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Mixture-of-Agents",
+    "Efficient Computing"
+  ],
+  "author": null,
+  "published_at": "2026-10-05T16:51:17Z",
+  "collected_at": "2026-10-05T16:53:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 LLM 对每个 token 分配相同计算量，但实际所需计算量因 token 难度而异，存在大量冗余计算。",
+      "通过 Mixture-of-Agents 面板（15 个能力递增的模型）可以测量单个 token 的充分计算量，为动态计算分配提供依据。",
+      "该测量方法为推测解码和模型路由等效率优化技术提供了实证基础，有望推动自适应推理系统的发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
