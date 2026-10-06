@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261006-048",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 在 Hugging Face 上发布的博客，探讨了 vLLM 从 V0 升级到 V1 过程中，在强化学习（RL）场景下如何确保正确性。vLLM 是主流的高吞吐量 LLM 推理引擎，其 V1 版本在架构上进行了重大重构，以提升性能和可扩展性。然而，在 RL 训练中，推理引擎需要与训练循环紧密交互，任何正确性问题都可能导致训练不稳定或失败。博客强调了在应用各种优化和修正之前，必须首先保证推理结果的正确性，并可能分享了从 V0 迁移到 V1 的实践经验、遇到的挑战以及解决方案。这对于使用 vLLM 进行 RL 训练的研究者和开发者具有重要参考价值，有助于避免常见陷阱，确保训练可靠性和效率。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-06T14:46:57Z",
+  "collected_at": "2026-10-06T14:50:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，推理引擎的正确性比性能优化更优先，因为错误会传播并导致训练失败。",
+      "vLLM V1 的重构可能引入了与 V0 不同的行为，需要仔细验证以确保 RL 训练的稳定性。",
+      "从 V0 迁移到 V1 时，应建立全面的正确性检查机制，而不是直接应用性能修正。",
+      "ServiceNow AI 的实践经验为社区提供了可复用的迁移和调试方法。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

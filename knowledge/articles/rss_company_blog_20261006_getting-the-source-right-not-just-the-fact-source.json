@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261006-004",
+  "title": "Getting the Source Right, Not Just the Fact: Source-Aware Verification for MCP Agents",
+  "source_url": "https://huggingface.co/blog/MultiverseComputingCAI/getting-the-source-right-not-just-the-fact-source",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了MCP（Model Context Protocol）代理在验证信息时的一个关键问题：仅仅验证事实正确性是不够的，还必须验证信息来源的可靠性。文章指出，当前许多AI代理系统在调用工具或检索信息时，往往只关注结果是否与已知事实一致，而忽略了来源的可信度。这种“事实正确但来源错误”的情况可能导致代理被恶意或低质量信息源误导，尤其是在多代理协作和工具调用场景中。作者提出了一种“来源感知验证”（Source-Aware Verification）方法，通过为每个信息源附加可信度元数据，并在代理决策流程中引入来源验证步骤，从而提升整体系统的鲁棒性和安全性。该方法特别适用于基于MCP协议的代理架构，能够在不显著增加计算开销的前提下，有效过滤不可靠来源。文章还讨论了实现细节、潜在挑战以及与其他验证机制（如事实核查、一致性检查）的互补关系。对于构建可靠AI代理系统的开发者和研究者而言，这一工作提供了重要的设计思路和实践指导。",
+  "tags": [
+    "MCP",
+    "Agent",
+    "Verification",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-06T14:46:57Z",
+  "collected_at": "2026-10-06T14:49:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅验证事实正确性不足以确保AI代理决策可靠，信息来源的可信度同样关键。",
+      "来源感知验证通过为信息源附加可信度元数据，并在代理流程中引入验证步骤，可有效过滤低质量或恶意来源。",
+      "该方法与MCP协议天然契合，适用于多代理协作和工具调用场景，且计算开销可控。",
+      "来源验证应与事实核查、一致性检查等机制互补，共同构建鲁棒的代理系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

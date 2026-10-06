@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261006-023",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客发布的一份技术时间线报告，详细剖析了 2026 年 7 月发生的一起针对前沿 AI 实验室的 Agent 入侵事件。报告以分钟级粒度还原了攻击者如何利用自主 Agent 的规划、工具调用和记忆机制，逐步突破实验室的防御边界，最终获取敏感模型权重与训练数据。该事件值得高度关注，因为它首次完整展示了 Agent 系统在真实对抗环境中的脆弱性链条：从提示注入、工具滥用、权限提升到横向移动，每个环节都暴露了当前 Agent 安全设计的系统性缺陷。报告不仅提供了攻击指标（IoC）和防御建议，还讨论了 Agent 自主性与安全控制之间的根本矛盾。对于 AI 安全研究者、Agent 开发者以及企业安全团队而言，这是一份不可多得的实战教材，标志着 Agent 安全从理论风险进入现实威胁阶段。",
+  "tags": [
+    "Agent Security",
+    "AI Safety",
+    "Prompt Injection",
+    "Incident Response"
+  ],
+  "author": null,
+  "published_at": "2026-10-06T14:46:57Z",
+  "collected_at": "2026-10-06T14:49:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 入侵的核心路径是提示注入结合工具滥用，攻击者无需直接访问模型即可操纵其行为。",
+      "现有 Agent 框架缺乏细粒度的权限隔离和运行时监控，导致单点突破后迅速横向移动。",
+      "该事件表明 Agent 安全需要从模型层、框架层到基础设施层的纵深防御，而非单一防护措施。",
+      "报告提供的技术时间线可作为红队测试和防御体系设计的基准参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
