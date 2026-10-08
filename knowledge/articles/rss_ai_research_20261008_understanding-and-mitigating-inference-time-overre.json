@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-035",
+  "title": "Understanding and Mitigating Inference-Time Overreliance Using Agentic Memory",
+  "source_url": "https://arxiv.org/abs/2610.07311",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型智能体中的一种新型失效模式——记忆过度依赖（memory over-reliance）。智能体记忆机制允许 LLM 智能体复用过往经验，但研究发现，即使检索到的记忆是良性的、正确存储且被恰当检索的，它们仍可能扭曲当前推理。作者在多个基准测试和记忆架构上验证了这一现象：当过往经验能够完整迁移到当前任务时，记忆是有益的；但当只有部分证据可迁移时，记忆反而会产生误导。该研究系统性地刻画了记忆过度依赖的成因与表现，并提出了基于智能体记忆的缓解方法。这项工作对于构建可靠、可控的 LLM 智能体记忆系统具有重要意义，揭示了当前记忆增强范式中的一个被忽视的隐患，为后续设计更鲁棒的检索与记忆使用策略提供了理论与实证基础。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "即使记忆被正确存储和恰当检索，LLM 智能体仍可能因过度依赖记忆而扭曲推理，这是一种独立于检索质量的失效模式",
+      "记忆的有效性取决于过往经验与当前任务之间的迁移程度：完整迁移时有益，部分迁移时反而有害",
+      "该研究在多种基准和记忆架构上验证了记忆过度依赖的普遍性，并提出了针对性的缓解策略"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

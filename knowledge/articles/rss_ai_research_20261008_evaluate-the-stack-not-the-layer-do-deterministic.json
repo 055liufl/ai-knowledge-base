@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-040",
+  "title": "Evaluate the Stack, Not the Layer: Do Deterministic and LLM Gates for Agent Actions Fail Independently?",
+  "source_url": "https://arxiv.org/abs/2610.07359",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对AI Agent工具调用中的运行时安全门控（runtime gates）进行了实证检验。传统观点认为，堆叠多个门控（如确定性规则层与多个LLM评判器）会因错误相乘而提升安全性。作者使用来自三个语料库的1,119个带标签的Agent动作，在无自适应对手的条件下，测试了这一假设。实验栈包含一个确定性规则层和四个LLM评判器，其中三个在每次调用时记录了服务模型。研究引入“乘法等效层数”（n_mult）指标，并计算完美耦合下的下限。初步结果表明，门控失败可能并非独立，堆叠带来的实际安全增益可能低于理论预期。该工作对Agent安全架构设计具有重要警示意义，提醒开发者不要盲目依赖多层门控的简单叠加，而应关注层间错误的相关性。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Safety",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "堆叠确定性规则与LLM评判器时，错误未必独立，导致实际安全增益低于乘法模型预测。",
+      "引入n_mult指标量化门控栈的等效独立层数，为评估安全架构提供新方法。",
+      "在无自适应对手的设定下，LLM评判器的失败模式可能存在相关性，需谨慎设计冗余。",
+      "Agent运行时安全应关注层间错误耦合，而非简单增加门控数量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

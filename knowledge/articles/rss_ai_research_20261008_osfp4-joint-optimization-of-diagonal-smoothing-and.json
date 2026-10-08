@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-121",
+  "title": "OSFP4: Joint Optimization of Diagonal Smoothing and Block Scales for NVFP4 Quantization",
+  "source_url": "https://arxiv.org/abs/2610.08231",
+  "source_platform": "rss_ai_research",
+  "summary": "OSFP4 是一种针对 NVFP4 数据类型的新型量化方案，旨在解决大语言模型（LLM）推理中低精度量化带来的精度损失问题。NVFP4 作为一种紧凑且支持原生张量核心加速的数据类型，在 LLM 推理中具有显著优势，但直接使用会导致精度下降。OSFP4 的核心创新在于对每个线性投影层联合优化对角平滑矩阵和块缩放因子：对角平滑矩阵的条目经过优化以最小化矩阵乘积的平方误差，而块缩放则进一步补偿量化误差。该方法通过联合优化两个关键组件，在保持 NVFP4 硬件加速优势的同时，显著提升了量化模型的精度。这项工作对于推动 LLM 在资源受限环境下的高效部署具有重要意义，尤其适合需要低精度推理的开发者与研究者。其技术贡献在于提出了一种可学习的量化参数优化框架，为后续低精度量化研究提供了新思路。",
+  "tags": [
+    "Quantization",
+    "LLM Inference",
+    "NVFP4",
+    "Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NVFP4 量化需联合优化对角平滑与块缩放以保持精度",
+      "OSFP4 通过最小化矩阵乘积平方误差来优化平滑矩阵",
+      "该方法在保持硬件加速的同时提升低精度推理精度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

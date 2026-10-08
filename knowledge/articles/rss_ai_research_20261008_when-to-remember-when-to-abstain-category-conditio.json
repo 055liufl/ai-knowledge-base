@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-021",
+  "title": "When to Remember, When to Abstain: Category-Conditioned Retention for Reliable Agent Memory",
+  "source_url": "https://arxiv.org/abs/2610.07100",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向智能体持久记忆的「类别条件化保留」机制，用于解决记忆系统中一个关键但常被忽视的问题：保留决策的可靠性。传统记忆系统通常采用单一全局置信度阈值来决定是否将某条断言写入长期记忆，但这种方式存在风险——来源支持较弱的断言一旦被存储，后续可能被当作既定事实反复复用，从而污染智能体的推理链条。作者主张，保留决策应当依据断言所属的语义类别进行条件化调整：对于证据充分的类别采取更宽松的保留策略，而对于推理不可靠、易产生幻觉的类别则应更积极地弃权（abstain）。这一思路将记忆管理从「一刀切阈值」推进到「类别感知的差异化策略」，兼顾了记忆覆盖率与事实可靠性之间的平衡。该工作对构建可信、可长期运行的 LLM Agent 具有直接价值，尤其适用于需要持续积累知识、多轮交互或自主决策的场景，如个人助理、研究助手与自动化工作流。其核心贡献在于把「何时记住、何时弃权」形式化为一个可优化的决策问题，为后续记忆可靠性研究提供了新的分析框架与设计原则。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一全局置信度阈值不足以保障智能体记忆的可靠性，弱证据断言被存储后可能被误用为既定事实。",
+      "保留决策应按断言的语义类别进行条件化：证据充分的类别宽松保留，推理不可靠的类别更积极弃权。",
+      "该工作将「何时记住、何时弃权」形式化为可优化的决策问题，为可信 Agent 记忆设计提供了新框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

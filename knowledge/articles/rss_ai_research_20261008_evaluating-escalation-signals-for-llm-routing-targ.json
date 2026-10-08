@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-039",
+  "title": "Evaluating Escalation Signals for LLM Routing: Targets, Controls, and Five Ways to Fool Yourself",
+  "source_url": "https://arxiv.org/abs/2610.07354",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究如何为 LLM 路由（将查询从小模型升级到大模型）设计低成本的升级信号。作者以语义熵（semantic entropy）作为候选信号，该指标最初用于检测幻觉，通过衡量模型多次采样答案在语义上的分歧程度来预测答案可靠性。研究在三个基准和两个模型家族上测试语义熵作为升级信号的预测能力，并系统性地讨论了评估此类信号时的目标设定、对照组设计，以及五种容易导致研究者自我欺骗的常见陷阱。该工作值得关注，因为 LLM 路由是降低推理成本、提升系统效率的关键技术，而升级信号的评估方法若不严谨，容易得出虚假的正面结论。文章不仅提供了实证结果，还给出了方法论层面的警示，对从事模型路由、级联推理和成本优化研究的开发者与研究者具有直接参考价值。",
+  "tags": [
+    "LLM Routing",
+    "Semantic Entropy",
+    "Model Cascades",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义熵可作为 LLM 升级路由的廉价预判信号，但其有效性依赖具体基准和模型家族。",
+      "评估升级信号时必须明确目标并设置合理对照组，否则容易高估信号价值。",
+      "文章总结了五种常见的评估陷阱，提醒研究者在路由实验中避免自我欺骗。",
+      "LLM 路由的核心挑战在于用低成本信号预测大模型是否能带来实质提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

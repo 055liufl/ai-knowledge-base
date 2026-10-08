@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-118",
+  "title": "Learn2Play Bench: How Well Do LLM Agents Learn from Experience in Unfamiliar Environments?",
+  "source_url": "https://arxiv.org/abs/2610.08215",
+  "source_platform": "rss_ai_research",
+  "summary": "Learn2Play Bench 是一个用于评估 LLM Agent 在陌生环境中从经验中学习能力的新基准测试。该研究指出，现有基准大多依赖指令中明确给出的规则或预训练模型已熟悉的游戏规则，因此难以区分模型是在真正「学习」还是仅仅在「回忆」预训练知识。Learn2Play Bench 通过设计规则未在指令中提供、且对模型而言完全陌生的环境，迫使 Agent 必须通过交互经验来推断规则并逐步提升表现，从而更纯粹地衡量其经验学习能力。这项工作值得关注的原因在于：随着 LLM Agent 被越来越多地部署到动态、开放的真实场景中，从经验中快速适应新环境的能力已成为核心瓶颈；而该基准填补了现有评测体系在「陌生环境学习」维度上的空白，为后续 Agent 学习机制（如记忆、探索、反思）的研究提供了更可靠的量化标准，也为模型开发者指明了当前 Agent 在泛化与在线适应方面的真实短板。",
+  "tags": [
+    "LLM Agent",
+    "Benchmark",
+    "In-Context Learning",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 学习能力基准普遍存在规则泄露问题：任务规则要么写在指令中，要么是预训练模型已熟悉的，导致无法区分「学习」与「记忆」。",
+      "Learn2Play Bench 通过使用完全陌生且规则不公开的环境，强制 Agent 依赖交互经验来推断规则并改进策略，从而更纯粹地评估经验学习能力。",
+      "该基准揭示了当前 LLM Agent 在陌生动态环境中从经验中学习的真实水平，为记忆、探索与反思等学习机制的研究提供了量化依据。",
+      "随着 Agent 向开放真实场景部署，在线适应与经验泛化能力将成为比静态任务表现更关键的评测维度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

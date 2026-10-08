@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-013",
+  "title": "Beyond Refusal Patterns: Safe-Role Internalization for Robust and Generalizable LLM Safety Alignment",
+  "source_url": "https://arxiv.org/abs/2610.07023",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“安全角色内化”（Safe-Role Internalization）的新型 LLM 安全对齐方法，旨在超越传统的拒绝模式（Refusal Patterns）。现有安全对齐手段如 SFT 和 RLHF 依赖大量攻击特定的监督数据和计算资源，且存在浅层对齐和过度拒绝的问题。该方法通过让模型内化一个“安全角色”，从而在无需大量攻击样本的情况下实现更鲁棒、更泛化的安全对齐。其核心思想是引导模型在生成过程中始终维持安全身份，而非仅仅在检测到有害请求时触发拒绝。这一方法有望提升模型对未知越狱攻击的防御能力，同时减少对正常请求的误拒，为 LLM 安全对齐提供了新的思路。该工作值得关注，因为它可能降低安全对齐的成本，并推动更通用、更可靠的安全机制发展。",
+  "tags": [
+    "LLM",
+    "Safety Alignment",
+    "Jailbreak Defense"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:17:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有安全对齐方法依赖攻击特定监督，易导致浅层对齐和过度拒绝。",
+      "安全角色内化通过让模型维持安全身份，而非仅触发拒绝，提升鲁棒性。",
+      "该方法有望减少对大量攻击样本的依赖，降低计算成本。",
+      "内化安全角色可能实现更泛化的防御，应对未知越狱攻击。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

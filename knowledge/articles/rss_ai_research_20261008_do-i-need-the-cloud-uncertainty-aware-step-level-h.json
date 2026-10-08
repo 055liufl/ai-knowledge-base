@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-090",
+  "title": "Do I Need the Cloud? Uncertainty-Aware Step-Level Handoff for Small Language Model Agents",
+  "source_url": "https://arxiv.org/abs/2610.07816",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 STEPGATE，一个面向小型语言模型（SLM）智能体的不确定性感知步骤级交接框架。SLM 作为本地智能体控制器具有降低远程推理成本、减少延迟和部署占用的优势，但在结构化工具调用中容易出错导致步骤失败。现有路由方案通常按查询粒度一次性选择模型，而智能体的顺序决策点难度会随中间观察动态变化，这种静态路由无法适应。STEPGATE 在每一步决策时评估不确定性，动态决定是否将控制权交接给云端大模型，从而在保持本地推理效率的同时提升任务成功率。该工作值得关注，因为它针对边缘端智能体部署中的核心矛盾——成本与可靠性——提出了细粒度的解决方案，为 SLM 智能体的实用化提供了新思路，对构建低延迟、低成本的本地 Agent 系统具有直接参考价值。",
+  "tags": [
+    "SLM",
+    "Agent",
+    "Uncertainty",
+    "Model Routing",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:21:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有模型路由按查询粒度选择模型，无法适应智能体步骤间动态变化的难度",
+      "步骤级不确定性评估可实现本地 SLM 与云端大模型的动态交接，兼顾效率与可靠性",
+      "该框架为边缘端智能体部署提供了成本与成功率之间的细粒度权衡机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-084",
+  "title": "Persistent Memory in Multi-Agent LLM Inference: What It Costs, What It Buys, and When You Can Tell",
+  "source_url": "https://arxiv.org/abs/2610.07782",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对多智能体 LLM 推理中的持久记忆机制进行了系统性的成本-收益分析。研究指出，将长上下文推理分解到多个协作智能体上，可以限制每次调用的活跃 KV 缓存大小，而非限制总证据量，这在 KV 缓存内存成为瓶颈时尤为关键。许多此类系统会额外增加一个持久层来存储和回忆推理轨迹，并通常通过消融实验报告准确率提升来验证其有效性。作者在一个三层智能体架构上同时测量了分解策略和持久记忆的实际效果。实验结果显示，分解策略确实有效：每次查询的峰值 KV 工作集仅为 14.3 MiB，而对比基线分别为 35.5 MiB 和 35.3 MiB。该研究为多智能体 LLM 系统的内存优化和持久记忆设计提供了量化依据，对构建高效、可扩展的智能体推理系统具有重要参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM Inference",
+    "KV Cache",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:20:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将长上下文推理分解到多个协作智能体上，可有效限制每次调用的活跃 KV 缓存大小，而非限制总证据量。",
+      "持久记忆层通常通过消融实验报告准确率提升来验证，但其实际成本和收益需要系统量化。",
+      "在三层智能体架构中，分解策略将峰值 KV 工作集降至 14.3 MiB，显著低于基线的 35.5 MiB 和 35.3 MiB。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

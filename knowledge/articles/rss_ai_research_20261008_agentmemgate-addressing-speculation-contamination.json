@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-077",
+  "title": "AgentMemGate: Addressing Speculation Contamination in Conversational Assistant Memory",
+  "source_url": "https://arxiv.org/abs/2610.07707",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentMemGate 是一篇针对对话式 AI 助手长期记忆系统中「推测污染」（Speculation Contamination）问题的研究论文。所谓推测污染，是指助手将用户表达的计划、假设或未确定意图（如「我可能会搬到西雅图」）错误地当作既定事实存入长期记忆库，导致后续对话中基于错误前提进行推理和回应。现有记忆基准测试主要关注最终状态，缺乏对中间状态的探测，且包含的未解决推测样本极少，因此难以发现此类错误。该工作提出 AgentMemGate 机制，通过在写入记忆前设置门控判断，区分事实性陈述与推测性表达，从而减少污染。这一问题在个性化助手、Agent 长期记忆等场景中具有普遍性和实际危害，值得开发者与研究者关注，因为它揭示了记忆系统在语义理解与状态跟踪上的关键缺陷，并提供了可落地的缓解思路。",
+  "tags": [
+    "Memory",
+    "Agent",
+    "Conversational AI",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:20:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推测污染是指将用户未确定的计划或假设错误地存储为事实，导致后续对话基于错误前提。",
+      "现有记忆基准测试因缺乏中间状态探测和未解决推测样本，无法有效评估此类错误。",
+      "AgentMemGate 通过写入前的门控机制区分事实与推测，为缓解记忆污染提供了新思路。",
+      "该问题对长期记忆型对话助手的可靠性和用户信任具有重要影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

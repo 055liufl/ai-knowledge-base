@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-030",
+  "title": "MemMux: Runtime Verification and Honest Resource Attribution for Fleets of Parallel Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.07257",
+  "source_platform": "rss_ai_research",
+  "summary": "MemMux 是一篇针对并行编码智能体（coding agents）集群的资源治理系统论文。随着开发者越来越多地在同一台工作站上同时运行多个编码智能体（如 Claude Code、Cursor Agent 等），每个智能体都会派生语言服务器、测试运行器、浏览器等子进程，导致内存占用迅速膨胀。然而现有的终端复用工具（如 tmux）和新兴的智能体管理器都只关注窗口布局，缺乏对内存资源的有效管控。MemMux 提出了运行时验证（runtime verification）与诚实的资源归因（honest resource attribution）机制，能够精确回答三个关键问题：每个智能体实际占用了多少内存、被终止的智能体其所有后代进程是否已彻底清理、以及如何发现并处理失控的子进程。该工作填补了多智能体本地部署场景下的资源可观测性与治理空白，对于需要在单机上协调多个 AI 编码助手的开发者具有直接的实用价值，也为智能体运行时基础设施提供了新的研究方向。",
+  "tags": [
+    "Agent",
+    "Resource Management",
+    "Runtime Verification",
+    "Coding Agent",
+    "Infra"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多编码智能体并行运行时，现有工具无法准确归因内存使用，导致资源争抢和系统不稳定",
+      "MemMux 通过运行时验证确保被终止智能体的所有后代进程被彻底清理，避免僵尸进程累积",
+      "诚实的资源归因是实现多智能体公平调度和故障隔离的前提条件",
+      "该工作揭示了智能体基础设施中进程治理这一被忽视但日益关键的问题"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

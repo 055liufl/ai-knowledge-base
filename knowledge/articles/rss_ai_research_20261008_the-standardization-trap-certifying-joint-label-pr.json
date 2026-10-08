@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-127",
+  "title": "The Standardization Trap: Certifying Joint Label Processing in Tabular Foundation Models",
+  "source_url": "https://arxiv.org/abs/2610.08314",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了预训练表格基础模型（TFMs）的上下文学习机制，探讨了线性回归和核平滑中特征决定上下文标签权重的固定权重解释是否适用于TFMs。作者发现，使用导数测试这一解释时会陷入“标准化陷阱”：公开的TFM包在模型看到标签之前会对其进行标准化，而普通导数无法正确反映这种处理。该研究对于理解表格基础模型的内在机制、改进模型可解释性以及开发更可靠的评估方法具有重要意义，尤其针对当前表格数据领域基础模型快速发展的背景。",
+  "tags": [
+    "Tabular Foundation Models",
+    "In-context Learning",
+    "Interpretability",
+    "Standardization"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性回归和核平滑的固定权重解释可能不适用于预训练表格基础模型。",
+      "公开TFM包在模型输入前对标签进行标准化，导致基于导数的测试方法失效。",
+      "标准化陷阱揭示了评估TFM上下文学习机制时需要谨慎处理数据预处理步骤。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

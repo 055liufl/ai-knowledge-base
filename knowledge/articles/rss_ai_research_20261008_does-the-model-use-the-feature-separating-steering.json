@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-032",
+  "title": "Does the Model Use the Feature? Separating Steering from Mechanism in LLMs",
+  "source_url": "https://arxiv.org/abs/2610.07270",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了大型语言模型（LLM）内部特征解释中的一个核心问题：当某个特征追踪某个概念且操纵该特征能改变相关行为时，研究者常将其视为模型的机制。然而，作者指出，通过干预（steering）将特征推至其自然范围之外时，其效果未必反映模型自身的计算过程。为此，论文提出了一种经验性契约，其测试在自然输入中观察到的特征值上评估特征。其中一项测试将特征值从显示该特征的输入复制到另一输入，以检验模型是否真正使用该特征。该工作有助于区分特征引导与真实机制，提升LLM可解释性研究的严谨性，对理解模型内部表示和避免误导性因果推断具有重要意义。",
+  "tags": [
+    "LLM",
+    "Interpretability",
+    "Mechanistic Interpretability",
+    "Steering"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "特征追踪概念且操纵改变行为，并不足以证明该特征是模型使用的机制。",
+      "引导操作可能将特征推至自然范围之外，此时效果不反映模型自身计算。",
+      "提出经验性契约，在自然输入观察到的特征值上评估特征，以区分引导与机制。",
+      "通过复制特征值等测试，可检验模型是否真正使用该特征。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

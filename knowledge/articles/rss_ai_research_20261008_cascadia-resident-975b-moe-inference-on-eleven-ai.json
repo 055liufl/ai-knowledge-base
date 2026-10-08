@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-026",
+  "title": "Cascadia: Resident 975B MoE Inference on Eleven AI PCs",
+  "source_url": "https://arxiv.org/abs/2610.07219",
+  "source_platform": "rss_ai_research",
+  "summary": "Cascadia 是一项在十一台 AI PC 上实现 975B 总参数、41B 激活参数 MoE 模型（Inkling）常驻推理的系统研究。每台机器配备 Intel Core Ultra X7 358H 处理器、64GB 内存、Arc B390 集成显卡和千兆以太网。该工作针对 MoE 模型权重分布与执行协调的核心挑战，提出了一套自定义的常驻执行方案，使近万亿参数规模的模型能够在消费级硬件集群上运行，而非依赖数据中心级 GPU。其价值在于证明了通过分布式稀疏计算与内存协调，超大模型推理可以下沉到边缘/桌面级设备，为低成本、隐私友好的本地大模型部署提供了新路径，对分布式推理系统和 MoE 服务架构具有重要参考意义。",
+  "tags": [
+    "MoE",
+    "分布式推理",
+    "边缘计算",
+    "AI PC"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过十一台消费级 AI PC 的分布式常驻执行，实现了 975B 总参数 MoE 模型的推理，验证了超大模型在边缘硬件集群上的可行性。",
+      "MoE 的稀疏激活特性（41B 激活参数）是降低单设备计算与内存压力的关键，但需要高效的权重分布与跨节点协调机制。",
+      "该方案利用集成显卡和千兆以太网等常见硬件，降低了万亿级模型推理的硬件门槛，有望推动本地化、隐私保护的大模型应用。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

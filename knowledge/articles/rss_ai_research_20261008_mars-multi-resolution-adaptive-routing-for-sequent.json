@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-051",
+  "title": "MARS: Multi-resolution Adaptive Routing for Sequential Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.07505",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 MARS（Multi-resolution Adaptive Routing for Sequential Recommendation），针对长历史序列推荐中现有方法将用户历史压缩为单一、与候选无关的缓存记忆所导致的多尺度语义信息保留不均问题。作者通过线性探针实验发现，真实用户历史同时包含短期意图、中期兴趣和长期偏好三种时间尺度的语义结构，而单一记忆对不同尺度的保留能力差异显著。MARS 通过多分辨率自适应路由机制，为不同时间尺度的语义信息分配独立的记忆表示，并在打分阶段根据候选物品自适应地路由到相应分辨率的记忆，从而更均衡地保留多尺度用户兴趣。该工作为序列推荐中的记忆压缩与多尺度建模提供了新思路，对提升长历史场景下的推荐准确性具有实用价值，值得推荐系统研究者和开发者关注。",
+  "tags": [
+    "Recommender System",
+    "Sequential Recommendation",
+    "Multi-scale Modeling",
+    "Memory Compression"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实用户历史呈现多尺度语义结构，短期意图、中期兴趣与长期偏好共存于同一序列中。",
+      "单一缓存的候选无关记忆对不同时间尺度的语义保留不均衡，线性探针可量化这一差异。",
+      "MARS 通过多分辨率自适应路由，为不同尺度分配独立记忆并按候选自适应选择，缓解尺度保留偏差。",
+      "该方向对长历史推荐系统的记忆压缩与多尺度建模具有参考价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

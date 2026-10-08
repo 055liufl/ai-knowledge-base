@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-117",
+  "title": "LFHE: Local-First Heuristic Evolution for Bounded Local Topology Search in Decentralized Learning with Non-IID Data",
+  "source_url": "https://arxiv.org/abs/2610.08176",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 LFHE（Local-First Heuristic Evolution）的方法，用于解决去中心化学习在非独立同分布（Non-IID）数据下的通信拓扑敏感性问题。去中心化学习依赖节点间的通信拓扑来聚合模型，但在数据分布异构时，固定或随机拓扑会导致收敛缓慢甚至失败。现有的自适应对等选择方法虽能利用局部模型信息，但扩展对等发现需要大量控制状态；而直接谱优化又依赖全局图信息，难以在去中心化场景中实施。LFHE 针对这一中间地带——有界局部拓扑搜索——提出了一种表示驱动的局部优先启发式演化策略，使节点仅基于局部信息即可动态调整连接，从而在有限控制开销下改善拓扑结构。该工作为去中心化学习在非 IID 数据下的拓扑优化提供了新思路，兼顾了局部性与有效性，对联邦学习、边缘智能和分布式训练等方向具有参考价值。",
+  "tags": [
+    "Decentralized Learning",
+    "Non-IID",
+    "Topology Optimization",
+    "Federated Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "去中心化学习在非 IID 数据下对通信拓扑高度敏感，拓扑优化是提升性能的关键。",
+      "现有方法在控制开销与全局信息依赖之间存在权衡，LFHE 瞄准有界局部拓扑搜索这一中间设定。",
+      "LFHE 采用局部优先的启发式演化，仅利用局部信息动态调整连接，降低了对全局图信息的依赖。",
+      "该方法为资源受限的去中心化场景提供了可扩展的拓扑自适应方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-048",
+  "title": "PsyCIDRA: A Dual-Agent Framework for Psychiatric Interviewing and Diagnostic Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.07473",
+  "source_platform": "rss_ai_research",
+  "summary": "PsyCIDRA 是一个面向精神科访谈与诊断推理的双智能体框架，旨在解决大语言模型在临床推理中较少被研究的交互式评估能力问题。精神科访谈不同于静态问答，需要智能体在对话过程中持续引导、动态调整提问策略，并逐步形成诊断假设。该框架将任务拆分为两个协作智能体：访谈智能体负责自由形式的精神科问诊，通过调用工具维护工作笔记、加载专家编写的技能模块，并检索 ICD-11 参考知识；诊断推理智能体则基于访谈过程中积累的信息进行结构化推理，输出可供专家复核的诊断意见。这种双智能体设计将\"信息采集\"与\"诊断判断\"解耦，既保留了访谈的开放性和灵活性，又让诊断推理有据可依、可追溯。其价值在于：一是把 LLM 从被动问答推向主动引导式临床访谈；二是引入 ICD-11 等权威知识源与专家技能，提升专业性与可控性；三是强调\"供专家复核\"的定位，符合医疗 AI 辅助而非替代的落地路径。对精神卫生领域而言，该工作为缓解专业医师短缺、标准化问诊流程提供了可探索的技术方案，也为临床对话智能体的评估方法提供了新思路。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Medical AI",
+    "Clinical Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "精神科访谈是动态演进的交互过程，静态问答式 LLM 评估无法覆盖其核心能力需求",
+      "双智能体架构将访谈信息采集与诊断推理解耦，提升可追溯性与专家复核可行性",
+      "通过工具调用维护工作笔记、加载专家技能并检索 ICD-11，可增强临床对话的专业性与可控性",
+      "该框架定位为辅助专家决策而非替代医生，符合医疗 AI 的审慎落地路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-128",
+  "title": "SCOPE: Certified Theorem Proving with a Language Model as the Policy Planner",
+  "source_url": "https://arxiv.org/abs/2610.08319",
+  "source_platform": "rss_ai_research",
+  "summary": "SCOPE 提出了一种将语言模型作为策略规划器、结合定理证明器进行形式化验证的定理证明框架，旨在解决 Lean 等证明助手在直接生成多步数值命题证明时通过率随整数数量呈指数衰减的问题。作者通过对 2,617 条参考证明进行受控损坏实验，验证了通过率受每个整数准确率 k 次方约束的幂律关系，说明直接生成方法在多步数值推理上存在根本性瓶颈。SCOPE 的核心思路是将证明过程分解为状态条件下的算子规划与执行，让语言模型负责高层策略规划，而将具体算子的正确性交由机器编译检查，从而在无需人工评分的情况下实现可验证的定理证明。该工作值得关注，因为它揭示了 LLM 直接生成形式化证明的可靠性边界，并提出了一种将神经规划与符号验证相结合的可行范式，对自动定理证明、形式化数学和可信 AI 推理具有重要参考价值。",
+  "tags": [
+    "Theorem Proving",
+    "LLM",
+    "Formal Verification",
+    "Lean",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接生成多步数值命题证明的通过率受每个整数准确率的 k 次方约束，呈现幂律衰减，这是 LLM 形式化证明的根本瓶颈。",
+      "SCOPE 将语言模型定位为策略规划器，通过状态条件下的算子规划与执行，把正确性验证交给机器编译检查，避免人工评分。",
+      "对 2,617 条参考证明的受控损坏实验为幂律关系提供了实证支持，增强了结论的可信度。",
+      "神经规划与符号验证相结合的分层架构，为提升自动定理证明的可靠性和可扩展性提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-064",
+  "title": "Beyond Scalar IoU: Structured Verification from Rollout Groups for Video Temporal Grounding",
+  "source_url": "https://arxiv.org/abs/2610.07601",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SUTURE，一种面向视频时序定位（Video Temporal Grounding）的新型强化学习验证框架。传统 RLVR 方法使用标量 IoU 等重叠指标对每个 rollout 独立打分，忽略了同一组 rollout 之间的联合结构信息。SUTURE 将验证过程条件化于整个 rollout 组，通过利用组内多个候选时间区间的相对关系与结构一致性来提升奖励信号的判别力，从而更有效地将预训练模型适配到视频时序定位任务。该工作属于强化学习与多模态视频理解的交叉方向，其核心创新在于从\"逐样本标量评分\"转向\"组级结构化验证\"，为 RLVR 在结构化输出任务中的应用提供了新思路。对于研究视频理解、多模态大模型对齐以及可验证奖励强化学习的学者与工程师具有参考价值，也可能启发其他需要结构化输出（如检测框、时序片段、序列标注）的任务重新设计验证器。",
+  "tags": [
+    "RLVR",
+    "Video Temporal Grounding",
+    "Multimodal",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RLVR 验证器对每个 rollout 独立评分，浪费了 rollout 组内的联合结构信息",
+      "SUTURE 将验证条件化于整个 rollout 组，利用组内相对关系提升奖励信号质量",
+      "从标量 IoU 到结构化组级验证，为结构化输出任务的 RLVR 设计提供了新范式",
+      "该方法面向视频时序定位，可推广至其他需要结构化输出的多模态任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

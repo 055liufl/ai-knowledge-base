@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-101",
+  "title": "Confidence Reasoning Graphs: Structured Confidence Estimation for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.07948",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Confidence Reasoning Graphs（CRG），一种面向 LLM Agent 的结构化置信度估计方法。在医疗、金融等高风险场景中，判断是否信任 Agent 输出或进行人工干预，需要对其成功概率有良好校准的置信度。然而 Agent 的置信度估计十分困难，因为关于成功与否的证据分散在异构且相互依赖的轨迹步骤中，且前沿 LLM 往往只提供有限的内部访问（如无法获取 logits 或隐藏状态）。CRG 通过将 Agent 的推理轨迹建模为图结构，显式捕捉各步骤之间的依赖关系，并在此基础上进行结构化置信度聚合，从而在不依赖模型内部信息的前提下给出更可靠的置信度估计。该工作值得关注，因为它直击 Agent 落地中的核心痛点——可靠性与可干预性，为构建可信任、可审计的 Agent 系统提供了新的方法论，对高风险领域的 Agent 部署具有重要实践意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Confidence Estimation",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:21:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 置信度估计的难点在于证据分散在异构、相互依赖的轨迹步骤中，而非单一输出点",
+      "将推理轨迹建模为图结构可显式捕捉步骤依赖，实现更结构化的置信度聚合",
+      "方法面向实际部署约束，适用于无法访问模型内部信息（如 logits）的前沿 LLM 场景",
+      "校准的置信度是高风险领域中决定信任输出还是人工干预的关键依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

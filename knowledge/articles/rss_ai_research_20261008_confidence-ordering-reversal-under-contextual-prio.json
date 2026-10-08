@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-120",
+  "title": "Confidence-Ordering Reversal under Contextual Priors in Neural Decoding",
+  "source_url": "https://arxiv.org/abs/2610.08229",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在神经解码（neural-to-language decoding）中，上下文先验（contextual priors）如何影响置信度（confidence）的校准。上下文先验通过重塑候选分数来提升解码准确率，但置信度同样从这些被重塑的分数中读取，导致先验未能纠正的错误可能获得更高的置信度，而准确率指标却无法揭示这一问题。作者在 MEG-MASC 和 MOUS 数据集上研究语音检索任务，使用局部解码分数、通过加性浅融合（additive shallow fusion）结合的上下文先验，以及融合后的 top-two margin 作为置信度度量。研究发现存在“置信度排序反转”（confidence-ordering reversal）现象：在上下文先验影响下，原本低置信度的错误可能变得比正确预测更自信，从而误导下游决策。该工作提醒研究者和开发者，在依赖先验增强解码性能时，必须独立评估置信度校准，而不能仅看准确率。",
+  "tags": [
+    "Neural Decoding",
+    "Confidence Calibration",
+    "Contextual Priors",
+    "Speech Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文先验在提升解码准确率的同时，可能使残留错误获得更高置信度，而准确率指标无法反映这一风险。",
+      "置信度与候选分数共享同一重塑过程，导致先验对置信度校准产生隐性扭曲。",
+      "在 MEG-MASC 和 MOUS 数据集上观察到置信度排序反转现象，即错误预测可能比正确预测更自信。",
+      "评估神经解码系统时，需将置信度校准作为独立于准确率的指标进行监控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

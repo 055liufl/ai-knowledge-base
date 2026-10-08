@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-033",
+  "title": "A Trust Layer for Agent Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.07274",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向智能体（Agent）评估的\"信任层\"（Trust Layer），旨在解决当前确定性基准测试分数无法反映结果可信度的问题。传统基准分数只能说明智能体获得了某项得分，却无法回答三个关键问题：该得分是否真实由智能体能力获得、是否被诚实报告、以及在重复运行中是否稳定可复现。该框架作为一种可叠加的事后（post-hoc）评估机制，在每一个已记录的分数旁附加可信度判断，并验证四项属性：结果是否被基准自身的评分逻辑所支持、通过的答案是否真正被\"挣得\"（而非通过作弊或捷径获得）、报告是否诚实、以及结果是否具备可复现性。这一工作切中了当前 Agent 评估生态的核心痛点——随着 LLM Agent 在各类基准上不断刷新分数，分数通胀、数据污染、奖励黑客（reward hacking）等问题日益严重，单纯的分数已难以作为能力判断依据。该信任层为评估结果提供了额外的可信度维度，有望成为未来 Agent 基准测试的标准配套组件，对研究者、基准维护者和产品团队均具有实用价值。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Benchmark",
+    "Trustworthiness",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "确定性基准分数只能证明智能体获得了分数，无法证明分数是真实能力所得、诚实报告且可复现的",
+      "信任层作为可叠加的事后框架，在已有分数旁附加可信度判断，无需重构现有基准即可部署",
+      "框架验证四项属性：评分逻辑支持性、答案的真实获得性、报告诚实性以及二次运行的可复现性",
+      "该工作直击 Agent 评估中的分数通胀与奖励黑客问题，有望成为 Agent 基准测试的可信度标准组件"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

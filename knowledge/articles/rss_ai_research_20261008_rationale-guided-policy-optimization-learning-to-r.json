@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-037",
+  "title": "Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding",
+  "source_url": "https://arxiv.org/abs/2610.07342",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Rationale-Guided Policy Optimization（RGPO）的新方法，旨在解决大语言模型在强化学习推理训练中面临的奖励稀疏性问题。在 on-policy 强化学习范式中，当模型面对高难度问题时，往往难以采样到正确轨迹，导致优化信号匮乏、训练停滞。现有方法通常依赖 off-policy 示范、专家轨迹或模型生成的高质量推理链来缓解这一问题，但这些方法存在分布偏移、成本高昂或质量不可控等局限。RGPO 的核心思想是引入\"自适应推理脚手架\"（adaptive rationale scaffolding），即根据模型当前能力动态调整推理提示的粒度与强度，在模型能力不足时提供更详细的推理引导，在能力提升后逐步撤除脚手架，从而实现从引导到自主推理的平滑过渡。该方法将推理脚手架与策略优化目标有机结合，使模型能够在稀疏奖励环境下更高效地学习复杂推理技能。这项工作对于提升 LLM 在数学、逻辑、代码等需要多步推理任务上的表现具有重要意义，为强化学习训练中的探索-利用平衡问题提供了新的解决思路，也为构建更自主、更强大的推理模型提供了可行路径。",
+  "tags": [
+    "RL",
+    "LLM",
+    "Reasoning",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "奖励稀疏性是 on-policy 强化学习提升 LLM 推理能力的核心瓶颈，模型在难题上难以采样到正确轨迹导致优化停滞",
+      "RGPO 通过自适应推理脚手架动态调节引导强度，在模型能力不足时提供详细推理提示，能力提升后逐步撤除，实现从引导到自主推理的过渡",
+      "相比 off-policy 示范和专家轨迹，自适应脚手架方法避免了分布偏移和高质量数据依赖问题，兼顾了训练效率与模型自主性",
+      "该工作为稀疏奖励环境下的 LLM 推理训练提供了新范式，对数学、逻辑、代码等复杂多步推理任务具有重要应用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-022",
+  "title": "AMBER: Training Long-Horizon Web Agents through Append-Only Memory",
+  "source_url": "https://arxiv.org/abs/2610.07118",
+  "source_platform": "rss_ai_research",
+  "summary": "AMBER 是一篇针对长时程（long-horizon）Web Agent 训练方法的研究论文。现代语言模型智能体在执行多步骤、长周期的外部环境交互任务时，累积的交互历史会迅速超出实际可用的上下文预算，导致智能体难以维持事实信息、记住执行错误与纠正反馈，以及追踪任务进度。AMBER 提出通过「仅追加记忆」（Append-Only Memory）机制来训练长时程 Web 智能体，旨在不依赖无限扩展上下文窗口的前提下，让智能体在长轨迹任务中保持可靠性与一致性。该工作值得关注的原因在于：长时程任务（如网页自动化、复杂工具调用、多步推理执行）是当前 Agent 落地的核心瓶颈之一，而上下文长度限制与记忆管理是制约其可靠性的关键因素。AMBER 的仅追加式记忆设计提供了一种结构化的记忆管理思路，可能对 Agent 训练范式、记忆架构设计以及长任务基准表现产生实际影响，对从事 Agent 系统研发的研究者与工程师具有参考价值。",
+  "tags": [
+    "Agent",
+    "Long-Horizon",
+    "Memory",
+    "Web Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程多步交互中，累积历史迅速超出上下文预算，是制约 Agent 可靠性的核心瓶颈",
+      "仅追加记忆（Append-Only Memory）为长轨迹任务提供了一种结构化、可扩展的记忆管理机制",
+      "长时程 Agent 需同时具备事实保持、错误与纠正反馈记忆、以及跨动作进度追踪三类能力",
+      "该方向对 Web 自动化等实际 Agent 应用场景的落地具有直接推动作用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

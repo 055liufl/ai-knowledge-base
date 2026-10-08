@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-131",
+  "title": "MoF: Preference-Aware Mixture Modeling for Black-Box LLM Personalization",
+  "source_url": "https://arxiv.org/abs/2610.08330",
+  "source_platform": "rss_ai_research",
+  "summary": "MoF（Mixture of Preferences）是一种针对黑盒大语言模型（LLM）的偏好感知个性化建模方法，旨在解决专有 LLM 输出难以对齐多样化用户偏好的问题。现有黑盒 LLM 个性化方案通常依赖用户专属的评分头（scoring head），导致个性化参数量随用户数量线性增长，且面对新用户时需要额外适配，扩展性和泛化性受限。MoF 通过混合建模（Mixture Modeling）的思路，将用户偏好表示为可共享的偏好组件的组合，从而避免为每个用户单独维护参数，并支持对未见用户的零样本或轻量适配。该方法在保持黑盒访问约束（无法获取模型权重或梯度）的前提下，实现了更高效、可扩展的个性化。其价值在于：一方面降低了大规模个性化部署的存储与计算成本，另一方面提升了模型对长尾和新用户的适应能力，对构建面向真实用户群体的 LLM 应用具有实际意义。该工作属于黑盒 LLM 个性化与偏好对齐的交叉方向，适合关注 LLM 应用落地、推荐系统与个性化建模的研究者和开发者参考。",
+  "tags": [
+    "LLM",
+    "Personalization",
+    "Black-Box",
+    "Preference Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有黑盒 LLM 个性化方法依赖用户专属评分头，参数量随用户数线性增长，难以扩展",
+      "MoF 通过偏好混合建模共享个性化组件，避免为每个用户维护独立参数",
+      "该方法支持对未见用户的泛化，减少额外适配成本",
+      "在无法访问模型权重和梯度的黑盒约束下实现偏好对齐，具有实际部署价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

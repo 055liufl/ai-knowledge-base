@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-083",
+  "title": "Quantization Effects on Tool-Failure Recovery Vary Across Prompts and Evaluation Designs",
+  "source_url": "https://arxiv.org/abs/2610.07781",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了训练后量化（post-training quantization）对语言模型智能体在工具调用失败后恢复能力的影响，并指出这种影响高度依赖于提示词设计和评估方式。作者对比了 Llama-3.1-8B-Instruct 和 Qwen2.5-7B-Instruct 的 8-bit 与 4-bit 量化版本，在 20 个确定性工具使用任务和 5 种提示词下进行测试。核心发现是：8-bit 与 4-bit 在恢复能力上的优劣会随提示词和评估目标的不同而反转，说明量化对智能体鲁棒性的影响并非单调或稳定，而是与评估设计强耦合。该工作提醒研究者和开发者，在部署量化模型作为工具调用智能体时，不能简单假设更高精度一定带来更好的失败恢复，必须结合具体提示词和评估协议进行验证。其价值在于揭示了量化评估中的方法学陷阱，对智能体系统的可靠性评测和低成本部署具有重要参考意义。",
+  "tags": [
+    "Quantization",
+    "LLM Agent",
+    "Tool Use",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:20:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "8-bit 与 4-bit 量化模型在工具失败恢复上的表现优劣会随提示词和评估目标发生反转，不存在一致的单调关系。",
+      "量化对智能体鲁棒性的影响高度依赖评估设计，单一提示词或单一指标可能得出误导性结论。",
+      "在部署量化 LLM 智能体时，需针对具体任务和提示词验证失败恢复能力，而非默认高精度更优。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

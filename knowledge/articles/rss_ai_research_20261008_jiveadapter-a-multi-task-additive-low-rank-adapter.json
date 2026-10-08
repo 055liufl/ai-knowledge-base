@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-015",
+  "title": "JIVEAdapter: A Multi-Task Additive Low-Rank Adapter via Joint and Individual Variation Explained (JIVE)",
+  "source_url": "https://arxiv.org/abs/2610.07036",
+  "source_platform": "rss_ai_research",
+  "summary": "JIVEAdapter 是一种面向多任务场景的参数高效微调方法，其核心创新在于将统计学的联合与个体变异解释（JIVE）思想引入低秩适配器设计。传统 LoRA 等低秩适配器多为单任务设计，且以乘法方式表示权重更新，无法显式区分任务间共享信息与任务特有信息。JIVEAdapter 采用加性低秩分解，将权重更新拆分为共享成分和任务特定成分，从而在多任务学习中实现更清晰的知识共享与隔离。该方法有望提升多任务微调的参数效率、泛化能力和可解释性，对需要同时适配多个下游任务的预训练模型应用具有实用价值。",
+  "tags": [
+    "LoRA",
+    "多任务学习",
+    "参数高效微调",
+    "低秩适配"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:17:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有低秩适配器多为单任务且采用乘法更新，缺乏对任务共享与特有信息的显式建模",
+      "JIVEAdapter 借鉴 JIVE 统计方法，将权重更新加性分解为共享低秩成分和任务特定低秩成分",
+      "加性多任务适配有望提升参数效率、任务间知识迁移和模型可解释性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

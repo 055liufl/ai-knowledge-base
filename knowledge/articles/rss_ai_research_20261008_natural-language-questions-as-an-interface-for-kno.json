@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-110",
+  "title": "Natural Language Questions as an Interface for Knowledge Graphs: QRAKEN Graph Distillation and Semantic Self-Healing",
+  "source_url": "https://arxiv.org/abs/2610.08095",
+  "source_platform": "rss_ai_research",
+  "summary": "QRAKEN 提出了一种无需训练、与本体无关的神经符号流水线，用于解决自然语言访问 RDF 知识图谱时 LLM 生成有效但语义错误的 SPARQL 查询的问题。其核心思路是让查询生成基于图谱的实际数据证据，而非依赖模型对 schema 的先验假设。系统包含一个离线蒸馏器，将知识图谱压缩为紧凑的 TTQL 描述，并引入语义自愈机制来修正查询偏差。该工作值得关注，因为它针对 Text-to-SPARQL 在陌生图谱上的泛化瓶颈提出了实用方案，兼顾了神经方法的灵活性与符号方法的可验证性，对语义网、知识图谱问答和 LLM 工具调用领域具有参考价值。",
+  "tags": [
+    "Knowledge Graph",
+    "Text-to-SPARQL",
+    "Neurosymbolic",
+    "LLM",
+    "Semantic Web"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:21:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在陌生知识图谱上生成的 SPARQL 查询可能语法有效但语义错误，根源在于模型依赖 schema 先验而非实际数据分布。",
+      "QRAKEN 通过离线蒸馏生成紧凑的 TTQL 图谱描述，将查询生成锚定在经验性图证据上，无需训练且与本体无关。",
+      "语义自愈机制可自动检测并修正查询与数据模型之间的语义偏差，提升自然语言接口的可靠性。",
+      "该工作为知识图谱自然语言问答提供了一种神经符号结合的新范式，平衡了 LLM 的生成能力与符号系统的可验证性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

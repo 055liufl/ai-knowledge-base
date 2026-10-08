@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-038",
+  "title": "Trajectory-Retrieval Speculative Decoding: When Does a Model's Own History Help?",
+  "source_url": "https://arxiv.org/abs/2610.07350",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Trajectory-Local Adaptive Retrieval (TLAR) 的推测解码方法，旨在利用长链思维推理过程中产生的历史轨迹来加速顺序解码。研究核心问题是：模型自身的历史生成内容在何种条件下能为推测解码提供有用的草稿，并与现有草稿模型形成互补。通过受控的源对比实验，作者发现轨迹特定的复用现象，即同一推理轨迹内的历史片段比外部数据更具复用价值。TLAR 从当前轨迹中检索近似匹配的延续片段作为草稿，并自适应地决定是否使用这些草稿。该方法针对长链推理场景中解码成本高、但历史内容可复用的特点，提出了一种新的加速思路。该工作值得关注，因为它探索了推测解码中一个被忽视的草稿来源——模型自身的推理历史，并给出了何时有效的实证分析，可能为长推理链的高效推理提供新方向。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Chain-of-Thought",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型自身的推理轨迹历史可以作为推测解码的有效草稿来源，且与外部草稿模型互补。",
+      "轨迹特定的复用现象表明，同一推理链内的历史片段比通用数据更可能匹配未来的延续。",
+      "TLAR 通过从当前轨迹检索近似匹配的延续并自适应使用，为长链推理加速提供了新方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

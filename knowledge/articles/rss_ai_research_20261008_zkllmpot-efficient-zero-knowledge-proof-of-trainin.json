@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-125",
+  "title": "zkLLMPoT: Efficient Zero Knowledge Proof of Training for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.08258",
+  "source_platform": "rss_ai_research",
+  "summary": "zkLLMPoT 是一篇来自 arXiv 的技术论文，提出了一种针对大语言模型（LLM）训练结果的零知识证明框架。该研究的核心问题在于：当模型权重和训练数据均为私有资产时，如何在不泄露敏感信息的前提下，向审计方证明模型确实经过了声称的训练过程。传统方法试图对整个训练优化轨迹进行密码学证明，但在 Transformer 规模下计算开销极其高昂，几乎不可行。zkLLMPoT 的创新点在于绕开对优化轨迹的验证，转而通过对训练后检查点进行前向评估，来证明审计方定义的特定属性。这种思路大幅降低了证明成本，使零知识证明在 LLM 训练审计场景中具备实际可行性。该工作对模型合规审计、AI 治理、可信机器学习以及隐私保护下的模型验证具有重要意义，尤其适用于需要第三方验证模型训练声明但又不愿公开权重与数据的商业与监管场景。",
+  "tags": [
+    "Zero-Knowledge Proof",
+    "LLM",
+    "Training Audit",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统对 LLM 全训练过程进行零知识证明在 Transformer 规模下成本过高，难以实用。",
+      "zkLLMPoT 通过前向评估检查点属性来替代优化轨迹验证，显著降低证明开销。",
+      "该框架支持审计方自定义属性证明，兼顾隐私保护与训练结果可信验证。",
+      "该工作为 LLM 合规审计与 AI 治理提供了可落地的密码学验证路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-053",
+  "title": "From Local Evidence to Safety Verdicts: Causal Tracing in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2610.07514",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SSU-Bench 数据集，用于研究视觉语言模型（VLM）如何结合图像与文本提示做出联合安全判断。该数据集通过单项目提示编辑或带标注目标区域的图像编辑，构建了配对的「安全」与「不安全」图文组合。作者利用三个视觉语言模型，在配对样本之间转移内部状态，以因果追踪方式定位模型内部联合安全判断的形成位置。这项工作的价值在于：安全对齐是 VLM 部署的关键瓶颈，而现有研究多停留在输入输出层面的行为评估，缺乏对模型内部安全决策机制的机理性理解。通过因果追踪，该研究有望揭示安全判断在模型哪一层、以何种表征形式涌现，为更可解释、更鲁棒的安全对齐与红队测试提供方法论基础。对从事多模态安全、可解释性及对齐研究的学者与工程师具有较高参考价值。",
+  "tags": [
+    "VLM",
+    "AI Safety",
+    "Interpretability",
+    "Causal Tracing",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全风险往往需要图像与文本联合才能识别，单一模态无法揭示，因此联合安全判断的定位具有独特研究价值。",
+      "SSU-Bench 通过最小化编辑（提示或图像区域）构建配对样本，为因果追踪提供了可控的实验基础。",
+      "通过在配对样本间转移内部状态，可以定位 VLM 中联合安全判断形成的内部表征位置。",
+      "该研究将可解释性方法引入多模态安全领域，有望推动更机理化的安全对齐与评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

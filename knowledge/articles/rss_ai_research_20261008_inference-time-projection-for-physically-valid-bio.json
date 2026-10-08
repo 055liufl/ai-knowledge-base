@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-016",
+  "title": "Inference-Time Projection for Physically Valid Biomolecular Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2610.07037",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 AlphaFold 3 类共折叠（cofolding）模型在生物分子复合物结构预测中的物理有效性问题提出解决方案。尽管这类模型在结构精度上表现优异，但其输出中相当大比例存在物理不合理现象，包括界面处链重叠、配体键长键角畸变、环结构非平面化以及立体中心反转等。现有方法通常通过物理信息势函数引导采样器，但这会成倍增加采样成本与内存开销，导致推理在有限资源下不可行。该工作提出一种推理时投影（Inference-Time Projection）方法，在扩散模型的推理阶段对生成结构施加物理约束投影，从而在不显著增加计算负担的前提下提升输出的物理有效性。这一方向对于将生物分子扩散模型从学术演示推向实际药物设计与结构生物学应用具有重要意义，因为物理无效的结构会直接误导下游分析与实验验证。",
+  "tags": [
+    "Diffusion Model",
+    "Biomolecular Structure",
+    "AlphaFold",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AlphaFold 3 类共折叠模型虽精度高，但大量输出存在物理无效问题，如链重叠、键长键角畸变和立体中心反转。",
+      "现有物理引导采样方法计算与内存开销大，难以在实际推理中部署。",
+      "推理时投影方法可在不显著增加成本的情况下提升扩散模型输出的物理有效性。",
+      "该工作对生物分子扩散模型在药物设计和结构生物学中的实际应用具有推动作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-065",
+  "title": "VALSE: Vertical Adaptive Layer Skipping for Efficient Inference in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.07606",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 VALSE（Vertical Adaptive Layer Skipping），一个面向大语言模型高效推理的自适应层跳过理论框架。作者首先给出了任意逐样本跳过调度下期望 FLOPs 的闭式表达（定理2），将计算成本与各层跳过概率直接关联；随后通过函数空间超集（定理10）与严格包含（定理11）定理，证明跳层模型的表达能力被严格包含于完整模型中，从而在理论上界定了层跳过的收益与代价边界。该工作值得关注的原因在于：层跳过是当前 LLM 推理加速的主流方向之一，但此前多为启发式或经验性方法，缺乏统一的理论刻画；VALSE 首次系统性地建立了跳过概率、计算量与模型表达能力之间的定量关系，为设计可证明高效且可控的推理策略提供了理论基础，对研究者和工程实践者均有参考价值。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Layer Skipping",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:20:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出期望 FLOPs 闭式公式，将逐样本层跳过调度的计算成本表示为各层跳过概率的函数，为自适应推理提供可解析的成本模型。",
+      "通过函数空间超集与严格包含定理，证明跳层模型的表达能力严格弱于完整模型，量化了效率与表达力之间的理论权衡。",
+      "该框架将此前经验性的层跳过方法提升为可分析、可优化的理论问题，为后续设计有理论保证的推理加速算法奠定基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-103",
+  "title": "Learning from Revision Consequences: Hindsight Meta-Experience Distillation for Self-Improving Agents",
+  "source_url": "https://arxiv.org/abs/2610.07979",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「Hindsight Meta-Experience Distillation（后见元经验蒸馏）」的新方法，用于让自我改进型智能体（Self-Improving Agents）从修订后果中学习。随着智能体通过生成和修订技能（Skills）不断自我提升，发现和精炼技能的过程本身也成为一个可学习的对象。作者区分了两类技能：直接作用于任务执行的「任务技能（Task-Skills）」和支配智能体如何发现与改进未来技能的「元技能（Meta-Skills）」。元技能的价值并非即时显现，而是通过其诱导的后续搜索过程逐步体现。现有方法主要从原始技能搜索轨迹中改进元技能，但忽略了修订行为带来的长期后果信号。该工作通过后见之明的方式蒸馏元经验，使智能体能够从修订决策的下游影响中学习，从而更有效地优化元技能。这一思路对于构建能够持续自我进化、无需人工干预的智能体系统具有重要意义，尤其在开放式任务和长周期学习场景中，元技能的优劣直接决定了智能体的上限。该研究为智能体自我改进提供了新的学习范式和训练信号来源。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "Meta-Learning",
+    "Skill Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:21:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "元技能的价值通过其诱导的后续搜索过程间接体现，而非即时任务表现，因此需要从长远后果中学习。",
+      "修订行为的下游影响（后见经验）可作为蒸馏元技能的有效训练信号，弥补原始轨迹学习的不足。",
+      "区分任务技能与元技能，为智能体自我改进提供了更清晰的分层学习框架。",
+      "该方法有望提升智能体在开放式、长周期任务中的持续自我进化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

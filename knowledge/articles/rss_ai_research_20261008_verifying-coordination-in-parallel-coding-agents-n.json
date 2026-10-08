@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261008-031",
+  "title": "Verifying Coordination in Parallel Coding Agents: NP-Bench and a Scheduling Planner",
+  "source_url": "https://arxiv.org/abs/2610.07261",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注并行 LLM 编码智能体团队协作中的协调失败问题。作者指出，多智能体编码团队常出现「单看每个 agent 都通过测试、合并后整体崩溃」的现象，而传统的单智能体评测完全无法捕捉这类问题。当多个编码 agent 在同一代码库上并行工作时，会发生函数重复重写、基于已被队友修改的接口契约编码等冲突，导致集成阶段失败。现有协调工具多为被动响应式（检测到冲突后再处理），缺乏事前验证与调度能力。为此，论文提出 NP-Bench 基准用于验证并行编码智能体的协调能力，并设计了一个调度规划器（Scheduling Planner）来主动规划任务分配与依赖关系，从而减少冲突。该工作填补了多智能体编码协作评测与调度优化的空白，对构建可靠的 AI 软件工程团队具有重要参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "Coding Agent",
+    "LLM",
+    "Benchmark",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单智能体评测无法发现多智能体协作中的集成失败，需要专门的团队级评测基准",
+      "并行编码智能体的核心冲突来源是共享代码库上的写冲突与接口契约漂移",
+      "现有协调工具多为被动响应式，缺乏事前调度与依赖规划能力",
+      "NP-Bench 与 Scheduling Planner 为多智能体编码协作提供了可验证的评测与主动调度方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

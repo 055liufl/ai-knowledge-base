@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261008-126",
+  "title": "CoDe-LoRA: Mitigating the Orthogonality Dilemma in Continual Learning of LLMs via Knowledge Consolidation and Decoupling",
+  "source_url": "https://arxiv.org/abs/2610.08312",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型（LLM）持续学习中的灾难性遗忘问题，提出了一种新方法 CoDe-LoRA。现有基于正交投影的低秩适配方法（如 O-LoRA）通过严格几何约束隔离任务参数，但作者发现这种刚性隔离会引发“正交性困境”：过度隔离阻碍了共享表示在不同任务间的迁移与积累，从而限制了模型的持续学习能力。CoDe-LoRA 通过知识巩固与解耦机制，在保持任务参数隔离的同时，促进跨任务共享知识的有效传递与融合，旨在缓解正交性困境。该工作为 LLM 持续学习提供了新的理论视角与实用方案，对推动模型在动态环境中的长期适应具有重要价值，尤其适用于需要不断更新知识的应用场景。",
+  "tags": [
+    "LLM",
+    "Continual Learning",
+    "LoRA",
+    "Catastrophic Forgetting"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "严格正交约束虽能隔离任务参数，但会阻碍共享表示的迁移与积累，形成‘正交性困境’。",
+      "CoDe-LoRA 通过知识巩固与解耦，在隔离与共享之间取得平衡，缓解灾难性遗忘。",
+      "该研究为 LLM 持续学习提供了新的理论视角，并可能推动更高效的参数隔离策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-027",
+  "title": "SPECTRUM: Proximal Spectral Modulation for Looped Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.07237",
+  "source_platform": "rss_ai_research",
+  "summary": "SPECTRUM 提出了一种名为 Looped Self-Distillation（循环自蒸馏）的自演化框架，用于代码生成任务。其核心思想是让模型在固定的信息预算下，反复生成并学习自身的原始输出，且不依赖持续的外部评估或基于测试的样本筛选。作者指出，模型从自身输出中学习时，不仅继承了输出的正确性，还继承了其产生解法的分布特征，这会导致一种关键性的分离现象（correctness 与 solution distribution 的分离）。SPECTRUM 通过 Proximal Spectral Modulation（近端谱调制）来调节这一过程，试图在自蒸馏中控制模型对自身输出分布的继承，避免因自我强化而导致的多样性崩溃或错误累积。该工作值得关注，因为它触及了自演化/自蒸馏模型的核心风险：在没有外部监督信号时，模型如何避免陷入自我确认偏差，同时保持生成质量与多样性。对于研究 LLM 自我改进、代码生成和自训练范式的学者与工程师而言，SPECTRUM 提供了一种新的谱域调控视角，可能对构建更稳定、更可控的自演化系统具有启发意义。",
+  "tags": [
+    "Self-Distillation",
+    "Code Generation",
+    "LLM",
+    "Self-Evolution"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:18:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型从自身输出中学习时，不仅继承正确性，还继承了解法分布，这会导致正确性与分布特征之间的分离。",
+      "Looped Self-Distillation 在固定信息预算下反复自生成并学习，无需外部评估或测试筛选，是一种极端的自演化设定。",
+      "Proximal Spectral Modulation 通过谱域调制来调控自蒸馏过程，可能缓解自我强化带来的多样性丧失或错误累积。",
+      "该工作为无外部监督的 LLM 自我改进提供了新视角，但实际效果与可扩展性仍需实验验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-050",
+  "title": "Does Muon Need Fine-Grained Spectral Shaping?",
+  "source_url": "https://arxiv.org/abs/2610.07497",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 Muon 优化器是否需要细粒度谱整形。Muon 将当前与过去的梯度结合为矩阵动量，对动量矩阵 M=UΣV^T 采用理想化极更新 Q=UV^T，使所有奇异方向获得相同权重，即平坦谱轮廓。近期一些优化器用细粒度谱映射替代该平坦轮廓，为每个方向分配独立增益。作者通过谱诊断分析 Muon 更新实际需要多少谱细节，发现约 94% 的谱信息可能并不必要，表明平坦轮廓已足够有效，细粒度谱整形带来的额外复杂度收益有限。该工作对理解 Muon 类优化器的核心机制、简化训练算法设计具有重要参考价值，尤其在大模型预训练优化器选择与实现上提供了理论依据。",
+  "tags": [
+    "Muon",
+    "Optimizer",
+    "Spectral Shaping",
+    "LLM Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:19:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Muon 的理想化极更新 Q=UV^T 对所有奇异方向赋予相同权重，形成平坦谱轮廓。",
+      "近期优化器尝试用细粒度谱映射为每个方向分配独立增益，但本文质疑其必要性。",
+      "谱诊断显示约 94% 的谱细节可能对 Muon 更新并不关键，平坦轮廓已接近最优。",
+      "该发现有助于简化 Muon 类优化器设计，降低大模型训练中的计算与调参开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

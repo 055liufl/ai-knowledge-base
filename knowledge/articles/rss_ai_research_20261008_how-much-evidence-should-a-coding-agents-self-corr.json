@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-137",
+  "title": "How Much Evidence Should a Coding Agent's Self-Correction Carry? Adaptive Dirichlet Evidence for Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.08514",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Effective-Evidence Self-Distillation (EESD) 方法，用于改进编码智能体（coding agent）在自我纠错过程中的学习机制。现有方法通常将执行反馈直接作为监督信号，但未区分「哪些状态转移被执行结果支持」与「支持这些转移的证据量有多少」这两个关键维度。EESD 将二者显式分离：用归一化的执行相关性决定相对转移支持度，并引入有效伪计数质量（effective pseudo-count mass）来量化证据强度，再通过 Dirichlet 分布对证据进行自适应建模。这一机制使智能体在自我蒸馏时能够根据证据充分程度动态调整学习权重，避免因少量执行反馈而过拟合，也避免因证据充足却权重不足而浪费学习信号。该工作属于 LLM 编码智能体与自蒸馏交叉领域，对提升代码生成与修复的可靠性具有实际意义，尤其适用于需要多轮执行反馈的自动化编程场景。",
+  "tags": [
+    "Coding Agent",
+    "Self-Distillation",
+    "LLM",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:22:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自我纠错的学习权重应同时考虑执行支持的转移结构与证据量，二者需显式分离建模",
+      "归一化执行相关性决定相对转移支持，有效伪计数质量量化证据强度",
+      "Dirichlet 分布为证据自适应加权提供了概率框架，可缓解少样本过拟合与信号浪费",
+      "该方法面向编码智能体的多轮执行反馈场景，提升自蒸馏学习的稳定性与效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-088",
+  "title": "Thin Evidence, Thick Priors: How Language Models Substitute Identity for Missing Financial Facts",
+  "source_url": "https://arxiv.org/abs/2610.07798",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大型语言模型在金融建议场景中面对信息缺失时的行为模式。作者通过控制投资者财务事实数量（从8项到0项），仅改变投资者身份描述，向Llama-3.1-8B-Instruct发送了96,600条提示，测量推荐股票配置比例的变化。核心发现是：当财务事实不足时，模型会利用身份特征（如年龄、职业等）作为替代性先验来填补信息空白，导致推荐结果出现系统性偏移。这一现象被称为'薄证据、厚先验'。该研究值得关注，因为它揭示了LLM在金融咨询等高风险领域中的潜在偏见与不稳定性——用户可能因身份描述不同而获得截然不同的投资建议，即使实际财务状况相同。这对AI金融应用的可信度、公平性和监管提出了重要警示，也为提示工程和模型对齐研究提供了新视角。",
+  "tags": [
+    "LLM",
+    "金融AI",
+    "偏见",
+    "提示工程"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:20:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当财务事实缺失时，LLM会依赖投资者身份特征作为先验，导致推荐股票配置出现系统性偏移。",
+      "仅改变身份描述（如年龄、职业）即可显著影响投资建议，即使实际财务状况完全相同。",
+      "该行为揭示了LLM在金融咨询中的公平性和可靠性风险，可能加剧对特定群体的偏见。",
+      "研究结果对高风险领域AI应用的设计与监管具有重要启示，需开发更稳健的信息缺失处理机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

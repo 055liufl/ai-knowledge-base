@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261008-003",
+  "title": "FluidPD: In-Place Elasticity for SLO-Aware Prefill-Decode Disaggregated LLM Serving",
+  "source_url": "https://arxiv.org/abs/2610.06917",
+  "source_platform": "rss_ai_research",
+  "summary": "FluidPD 是一篇针对 LLM 推理服务中 Prefill-Decode 分离架构的弹性调度研究。当前主流 LLM 服务系统采用 Prefill 与 Decode 阶段分离部署的架构，因为这两个阶段具有截然不同的执行模式和 SLO 目标。然而现有系统通常使用固定的 Prefill/Decode 工作节点比例，并依赖请求路由来分配负载，这种静态配置难以应对真实工作负载中出现的短时突发流量和 Prefill/Decode 需求比例的持续漂移。当需求比例发生变化时，原本配置良好的系统会陷入资源错配，导致 SLO 违规或资源浪费。FluidPD 提出了一种原地弹性（in-place elasticity）方案，使工作节点能够在 Prefill 和 Decode 角色之间动态转换，从而在不增加额外资源的前提下实时适配需求比例变化。该工作对大规模 LLM 推理基础设施的成本效率和 SLO 保障具有直接价值，尤其适合云服务商和自建推理集群的工程团队参考。",
+  "tags": [
+    "LLM Serving",
+    "Prefill-Decode Disaggregation",
+    "SLO",
+    "Elasticity",
+    "Inference Infra"
+  ],
+  "author": null,
+  "published_at": "2026-10-08T15:15:49Z",
+  "collected_at": "2026-10-08T15:17:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill-Decode 分离架构中固定工作节点比例无法应对真实负载的突发性和需求比例漂移，是当前 LLM 服务系统的主要效率瓶颈之一",
+      "FluidPD 通过让工作节点在原地动态切换 Prefill/Decode 角色，实现了无需额外资源即可弹性适配需求变化",
+      "该方案同时面向 SLO 保障和资源效率，对降低推理服务成本和提升服务质量具有实际工程意义"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
