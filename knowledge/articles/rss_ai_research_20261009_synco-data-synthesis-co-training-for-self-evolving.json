@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-040",
+  "title": "SynCo: Data Synthesis Co-Training for Self-Evolving LLMs via Multi-Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.11345",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SynCo，一种面向自进化 LLM 智能体的数据合成协同训练框架，通过多智能体强化学习（MARL）实现训练数据的动态演化。现有自进化管线大多依赖静态数据集或独立更新的合成模型，导致任务难度与智能体能力脱节：早期有用的任务逐渐变得过于简单，而高难度任务又缺乏有效监督信号。SynCo 的核心思路是让数据合成器与学习中的智能体协同演化，将数据生成建模为多智能体博弈，利用强化学习同时优化任务生成策略与求解策略，使合成任务始终处于智能体的能力边界（类似课程学习中的「最近发展区」）。该工作值得关注的原因在于：它把「数据」从静态资源转变为可学习的动态组件，为降低人工标注依赖、实现持续自主学习提供了新范式；同时将 MARL 引入数据合成环节，可能推动自进化智能体、自动课程学习和合成数据质量评估等方向的交叉研究。若实验验证有效，该方法有望应用于代码生成、工具调用、多轮对话等需要持续能力提升的场景。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "Reinforcement Learning",
+    "Data Synthesis",
+    "Self-Evolving"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化 LLM 的关键瓶颈不在模型更新本身，而在于训练经验（数据）能否随能力同步演化，静态数据集会导致任务难度与能力错配。",
+      "SynCo 将数据合成器与求解智能体建模为多智能体系统，通过强化学习协同训练，使生成任务持续处于智能体的能力边界。",
+      "该范式把数据从静态资源转变为可学习、可演化的动态组件，有望减少对人工标注监督的依赖。",
+      "多智能体强化学习与自动课程学习的结合，为合成数据质量与难度控制提供了新的优化视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

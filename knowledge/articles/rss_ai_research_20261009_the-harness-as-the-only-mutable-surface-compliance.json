@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-005",
+  "title": "The Harness as the Only Mutable Surface: Compliance-Bounded Self-Evolution of LLM Agents in Credit Pipelines, with a Measured Admission Gate",
+  "source_url": "https://arxiv.org/abs/2610.10629",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在信贷流水线场景下实现LLM智能体合规自进化的框架，核心思想是将自进化限制在运行时“harness”（指令文本、工具调用逻辑和原语组合）这一唯一可变表面上，而保持模型权重固定不变。作者指出，完全自改写的智能体虽然能适应规则变化，但会破坏监管审查所依赖的可审计工件（如具名变更、测试记录、审批流程）。通过将自进化约束在harness层，每次适应都成为带有原因和测试的diff，从而可被审查。论文还引入了一个“实测准入闸门”（Measured Admission Gate），用于在信贷流水线中衡量并控制自进化变更的准入。该工作值得关注，因为它为高风险金融场景中LLM智能体的合规性、可审计性和可控自进化提供了可操作的设计原则，平衡了自适应能力与监管要求。",
+  "tags": [
+    "LLM Agent",
+    "Self-Evolution",
+    "Compliance",
+    "Credit Pipeline",
+    "Auditability"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:02:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化应限制在运行时harness（指令、工具调用、原语组合）而非模型权重，以保证每次变更可审查、可测试、可追溯。",
+      "完全自改写的智能体会破坏监管审查所需的具名变更、测试记录和审批工件，因此在高风险场景中不可取。",
+      "通过将适应转化为带原因和测试的diff，可以在信贷流水线等合规敏感领域实现可控的智能体自进化。",
+      "提出的实测准入闸门为自进化变更提供了量化评估和准入机制，增强了系统的安全性与可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

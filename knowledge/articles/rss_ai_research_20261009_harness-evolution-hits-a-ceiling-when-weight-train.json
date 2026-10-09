@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-068",
+  "title": "Harness Evolution Hits a Ceiling: When Weight Training Should Begin",
+  "source_url": "https://arxiv.org/abs/2610.11655",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了长时程LLM智能体性能提升的两条路径：进化运行时框架（harness）或训练模型权重。作者提出一种自进化框架，先让系统在冻结模型下通过框架进化变强，然后将基础/进化框架与基础/训练权重交叉组合，以分析哪些性能增益能被训练模型内化，哪些仍需运行时框架支持。核心发现是，正确的提升杠杆可以从智能体的失败构成中读出：通过标注失败轨迹的首个信号，可以判断瓶颈在于框架还是模型权重。这项工作为智能体优化提供了系统性的方法论，帮助开发者决定何时应转向权重训练，避免在框架进化上过度投入而收益递减。",
+  "tags": [
+    "LLM Agent",
+    "Harness Evolution",
+    "Weight Training",
+    "Failure Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自进化框架能先于权重训练提升长时程智能体性能，但存在收益上限。",
+      "通过交叉组合框架与权重，可区分训练模型能保留的增益与仍需运行时支持的增益。",
+      "失败轨迹的首个信号标注可揭示智能体瓶颈，指导选择框架进化或权重训练。",
+      "该研究为智能体优化提供了基于失败构成的决策框架，避免盲目投入。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

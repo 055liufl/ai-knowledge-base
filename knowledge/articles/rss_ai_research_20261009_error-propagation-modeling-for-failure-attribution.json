@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-064",
+  "title": "Error-Propagation Modeling for Failure Attribution in LLM-Based Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2610.11600",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对基于LLM的多智能体系统（MAS）的失败归因方法，核心思路是建立错误传播模型。随着LLM多智能体系统在复杂任务协调、工具调用和外部资源交互中的广泛应用，系统失败的原因往往难以直接定位——最终观察到的失败结果通常并不直接指向导致失败的根源错误。作者将归因目标定义为\"决定性错误\"（decisive error），即智能体-步骤对（agent-step pair），修正该错误即可使整个执行流程恢复正常。该工作通过建模错误在多智能体协作链条中的传播过程，试图从最终失败结果反向追踪到真正的错误源头。这一研究值得关注，因为多智能体系统的可观测性和可调试性是其落地部署的关键瓶颈，而失败归因是构建可靠、可维护MAS基础设施的核心能力，对提升系统鲁棒性和降低运维成本具有重要价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Failure Attribution",
+    "Debugging",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM多智能体系统的失败结果往往不直接暴露根源错误，需要专门的归因机制进行反向追踪",
+      "提出\"决定性错误\"概念，将其定义为修正后即可恢复整个执行流程的智能体-步骤对",
+      "通过错误传播建模来刻画错误在多智能体协作链条中的扩散路径，为失败定位提供系统性方法",
+      "该方向对提升多智能体系统的可观测性、可调试性和实际部署可靠性具有关键意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-097",
+  "title": "Recompose and Refine Latent Reasoning Flows for Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2610.12090",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 FLOWMEM（Reasoning and Flow Memory），一种面向视觉-语言-动作（VLA）模型的统一框架，旨在解决现有潜在推理方法在每次策略查询时重复构建相似内部状态、执行后丢弃成功推理轨迹的问题。现有 VLA 方法虽然能够将多模态观测转化为任务相关的潜在状态以生成连续机器人动作，但缺乏对历史成功推理的复用机制，导致计算冗余。FLOWMEM 通过引入推理与流记忆机制，将执行过程中验证有效的潜在推理流进行存储、重组与精炼，从而在后续相似任务中直接复用或微调已有推理路径，而非从零重建。该工作将记忆机制与潜在推理流结合，有望提升 VLA 模型在长程操作任务中的样本效率、推理一致性与执行稳定性，对具身智能与机器人策略学习领域具有潜在价值。",
+  "tags": [
+    "VLA",
+    "Latent Reasoning",
+    "Robotics",
+    "Memory",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 VLA 潜在推理方法在每次策略查询时重复构建相似内部状态，执行后丢弃成功推理，造成计算浪费",
+      "FLOWMEM 通过记忆机制存储、重组和精炼已验证的潜在推理流，实现跨查询复用",
+      "该工作将记忆与潜在推理流结合，有望提升长程机器人操作任务的样本效率与推理一致性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-041",
+  "title": "RL-ARC: Calibrating Large Reasoning Models via Reasoning-guided Uncertainty",
+  "source_url": "https://arxiv.org/abs/2610.11352",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 RL-ARC，一种针对大型推理模型（Large Reasoning Models）的校准方法，旨在解决 RLVR（可验证奖励强化学习）训练过程中出现的校准退化与过度自信问题。RLVR 虽能提升模型推理能力，但未显式考虑不确定性估计，导致模型输出置信度与实际正确率严重失配。RL-ARC 通过推理引导的不确定性（reasoning-guided uncertainty）机制，将校准目标融入训练过程，利用推理链中的中间信号来估计和调整模型置信度。该工作属于 LLM 推理与可靠性交叉领域，对需要高可信度输出的推理型应用（如数学、代码、科学问答）具有重要价值，也为 RLVR 训练范式的改进提供了新思路。",
+  "tags": [
+    "LLM",
+    "RLVR",
+    "Calibration",
+    "Reasoning",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 训练虽提升推理能力，但会显著破坏模型校准，导致过度自信",
+      "现有校准感知训练方法未能充分利用推理链中的不确定性信号",
+      "RL-ARC 通过推理引导的不确定性估计，在保持推理性能的同时改善校准",
+      "该方向对高风险推理应用的可信部署具有关键意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

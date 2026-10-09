@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-027",
+  "title": "Harness Compilation: Which Decisions Should a Small Vision-Language Model Keep?",
+  "source_url": "https://arxiv.org/abs/2610.11231",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Harness Compilation（HC），一种离线程序，用于调整冻结的小型视觉语言模型（VLM）与其外部工具链（harness）之间的分工。小型 VLM 虽能读取外部证据，却难以主动获取证据，HC 通过让大型教师模型利用学生执行轨迹来修订可复用的内容与控制逻辑，并用独立验证集选择最终部署的 harness。部署时无需更新模型权重，也无需调用教师模型。该工作值得关注，因为它为资源受限的小型 VLM 提供了一种无需微调即可增强工具使用能力的实用方案，有望降低部署成本并提升小模型在复杂任务中的自主性。",
+  "tags": [
+    "VLM",
+    "Tool Use",
+    "Model Compression",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小型 VLM 的瓶颈在于获取外部证据的能力，而非理解证据本身。",
+      "通过离线编译外部工具链，可在不更新权重的情况下提升小模型的任务表现。",
+      "教师模型利用学生执行轨迹来优化可复用的内容与控制逻辑，实现知识蒸馏的新形式。",
+      "部署阶段完全独立于教师模型，适合边缘设备或低成本场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

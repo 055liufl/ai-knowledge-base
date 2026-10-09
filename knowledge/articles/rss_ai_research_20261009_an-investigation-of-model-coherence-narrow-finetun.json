@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-100",
+  "title": "An Investigation of Model Coherence: Narrow Finetunes Contradict Themselves Under Resampling",
+  "source_url": "https://arxiv.org/abs/2610.12129",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对当前大语言模型一致性评估方法的不足展开研究。作者指出，现有大量研究仅通过输出方差来衡量模型一致性，却忽略了两个重要的混淆因素：问题本身的歧义性（ambiguity）以及模型对答案的漠不关心（indifference）。这两种因素都可能导致输出出现差异，但并不代表模型真正存在内在矛盾。为剥离这些干扰因素，作者精心设计了一组包含175个问题的测试集，这些问题具有明确的唯一答案，因此相互矛盾的输出无法用歧义或漠不关心来解释。在此基础上，作者提出了一种新的不一致性度量方法：通过对同一问题反复重采样答案，检测其中出现的逻辑矛盾。与既有方法相比，该度量具有更高的特异性，能够更精准地识别模型真正的不一致性。研究发现，经过窄领域微调（narrow finetunes）的模型在重采样下会表现出自我矛盾的现象，这揭示了当前微调实践可能损害模型内在一致性，对模型可靠性与安全性评估具有重要意义。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "Fine-tuning",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于输出方差的一致性度量混淆了歧义、漠不关心与真正矛盾三种不同来源，特异性不足。",
+      "作者构建了175个无歧义问题集，通过重采样检测矛盾，提出高特异性的一致性度量方法。",
+      "窄领域微调会导致模型在重采样下出现自我矛盾，说明微调可能损害模型内在一致性。",
+      "该研究为模型可靠性评估提供了更严谨的度量框架，对微调实践具有警示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

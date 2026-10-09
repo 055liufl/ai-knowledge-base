@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-095",
+  "title": "Is Memorization Context-Sensitive? Prefix-Based Extraction Beyond Isolated Prefixes",
+  "source_url": "https://arxiv.org/abs/2610.12085",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了大语言模型（LLM）的记忆提取是否具有上下文敏感性。传统的前缀提取攻击假设给定训练样本的前缀，模型会高概率地补全原始后续内容，但在实际部署中，前缀很少孤立出现，而是与指令、检索文档或其他任务特定上下文共同出现（如RAG场景）。作者提出超越孤立前缀的提取方法，研究上下文如何影响模型对训练数据的记忆暴露。这项工作值得关注，因为它揭示了RAG等真实应用场景下记忆泄露风险可能被低估或高估，对隐私保护、模型安全评估以及训练数据去重策略具有重要影响，同时为理解LLM记忆机制提供了新视角。",
+  "tags": [
+    "LLM",
+    "Privacy",
+    "RAG",
+    "Memorization"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统前缀提取假设前缀孤立出现，但实际部署中前缀常与指令、检索文档等上下文共存，记忆暴露程度可能显著不同。",
+      "RAG等上下文增强场景可能改变模型对训练数据的记忆提取行为，需重新评估隐私泄露风险。",
+      "上下文敏感性意味着记忆评估应纳入真实任务环境，而非仅依赖孤立前缀实验。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

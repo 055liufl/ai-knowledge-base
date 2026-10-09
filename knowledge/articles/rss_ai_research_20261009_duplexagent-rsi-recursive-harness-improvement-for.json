@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-032",
+  "title": "DuplexAgent-RSI: Recursive Harness Improvement for Full-Duplex Voice Agent Collaboration",
+  "source_url": "https://arxiv.org/abs/2610.11299",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 DuplexAgent-RSI，一种面向全双工语音智能体协作的递归式工具链改进框架。当前语音智能体正趋向于一种协作模式：全双工交互模型常驻实时通道作为对话入口，而搜索、推理与编码等复杂任务则通过异步委派交由其他智能体处理。然而，全双工模型虽支持连续听说，却难以胜任复杂推理与工具调用；编码智能体虽能规划并执行长任务，其顺序式接口又不适合实时语音交互。DuplexAgent-RSI 通过递归式地改进协作工具链（harness），在保持全双工低延迟体验的同时，将复杂任务无缝委派给更强的推理与编码智能体，从而兼顾实时性与任务能力。该工作值得关注，因为它直击语音智能体落地中的核心矛盾——实时交互与复杂推理的分离与协同，并给出可递归优化的系统级方案，对构建下一代语音助手、实时客服与多智能体协作系统具有参考价值。",
+  "tags": [
+    "Voice Agent",
+    "Multi-Agent",
+    "Full-Duplex",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全双工语音模型适合实时交互但难以处理复杂推理与工具调用，编码智能体擅长长任务但接口顺序化，二者需通过异步委派协作互补。",
+      "递归式工具链改进（Recursive Harness Improvement）可自动优化协作流程，在保持低延迟的同时提升复杂任务完成能力。",
+      "该架构为语音智能体提供了一种兼顾实时对话与深度推理的系统级设计范式，可推广至客服、助手等多智能体场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

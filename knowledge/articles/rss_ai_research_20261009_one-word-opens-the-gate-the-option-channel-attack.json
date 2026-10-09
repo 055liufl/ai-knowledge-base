@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-107",
+  "title": "One Word Opens the Gate: The Option-Channel Attack on Typed Decision Models as Agent Guardrails",
+  "source_url": "https://arxiv.org/abs/2610.12292",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种针对类型化决策模型（typed decision models）的新型攻击方式——选项通道攻击（Option-Channel Attack）。类型化决策模型接收文本输入，返回调用者预定义选项上的概率分布，不生成任何文本，近期被广泛用作智能体系统中的护栏（guardrail），负责判断工具调用或传入消息是否应被允许。作者评估了七种开放权重模型在护栏角色下的表现，并分别报告了两种错误方向：fail-open 错误（允许了本应禁止的操作）和 fail-close 错误（拒绝了本应允许的操作）。研究发现，仅通过操纵选项定义的措辞（即选项通道），攻击者即可显著改变模型的决策边界，一个词的改动就可能打开本应关闭的闸门。这一发现揭示了当前基于类型化决策模型的智能体安全机制存在系统性脆弱性，对智能体部署的安全性具有重要警示意义，值得安全研究者和智能体开发者高度关注。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Guardrail",
+    "LLM",
+    "Adversarial Attack"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "类型化决策模型作为智能体护栏时，其决策结果高度依赖选项定义的措辞，仅改动一个词即可绕过安全限制。",
+      "攻击面位于选项通道（option channel）而非输入文本，传统针对输入内容的防御手段可能无法覆盖此类攻击。",
+      "对七种开放权重模型的评估显示 fail-open 与 fail-close 错误需分开度量，单一准确率指标会掩盖安全风险。",
+      "该研究提示智能体护栏设计需将选项定义本身视为不可信输入，并建立相应的鲁棒性验证机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

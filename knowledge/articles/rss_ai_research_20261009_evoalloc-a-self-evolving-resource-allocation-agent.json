@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-096",
+  "title": "EvoAlloc: A Self-Evolving Resource Allocation Agent for Efficient Program Evolution",
+  "source_url": "https://arxiv.org/abs/2610.12086",
+  "source_platform": "rss_ai_research",
+  "summary": "EvoAlloc 提出了一种用于 LLM 驱动程序进化（program evolution）的自进化资源分配智能体。在基于 LLM 的迭代式程序搜索中，评估反馈是引导搜索方向的关键，但评估本身往往计算代价高昂，因此如何将有限的计算资源分配给最有潜力的候选程序至关重要。现有方法通常在整个搜索过程中采用固定的资源分配策略，这可能导致资源被浪费在低价值候选上，同时忽略真正有潜力的候选。EvoAlloc 的核心思路是让资源分配策略本身随搜索过程动态演化，根据搜索进展自适应地调整分配，从而在有限预算下更高效地推进程序进化。该工作值得关注，因为它将「元层面的资源调度」与「程序搜索」结合，为 LLM 驱动的自动化程序优化提供了一种更经济、更智能的范式，对降低评估成本、提升搜索效率具有实际意义，尤其适用于需要大量迭代评估的代码生成与优化场景。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Program Evolution",
+    "Resource Allocation"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 驱动的程序进化中，评估成本是主要瓶颈，资源分配策略直接影响搜索效率。",
+      "现有方法多采用固定分配策略，无法适应搜索过程中候选价值的动态变化。",
+      "EvoAlloc 通过自进化机制让资源分配策略随搜索进展自适应调整，提升有限预算下的搜索效果。",
+      "该思路将元层面的调度优化与程序搜索结合，为降低评估开销提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

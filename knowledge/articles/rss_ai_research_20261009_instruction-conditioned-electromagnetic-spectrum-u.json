@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-103",
+  "title": "Instruction-Conditioned Electromagnetic Spectrum Understanding via Budget-Adaptive Signal Tokenization",
+  "source_url": "https://arxiv.org/abs/2610.12142",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向电磁频谱理解的指令条件化方法，通过预算自适应信号令牌化（Budget-Adaptive Signal Tokenization）将原始 I/Q 信号高效地映射为令牌序列，以适配多模态大语言模型的统一分析接口。现有视觉-语言模型（VLM）在扩展到射频信号时面临核心矛盾：密集编码会导致令牌开销随观测长度线性增长，而固定分辨率压缩又可能丢失短时瞬态特征。该方法根据指令需求动态调整令牌化预算，在保真度与计算成本之间取得平衡，从而支持频谱监测中的灵活分析任务，而非局限于特定任务的识别与检测。该工作值得关注，因为它打通了多模态大模型与射频信号理解之间的关键瓶颈，为频谱感知、信号情报和无线安全等领域的通用化分析提供了新思路，同时其预算自适应机制对长序列多模态建模也具有借鉴意义。",
+  "tags": [
+    "Multimodal LLM",
+    "Signal Processing",
+    "Tokenization",
+    "Spectrum Sensing"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 VLM 扩展到原始 I/Q 信号的核心瓶颈在于令牌化：密集编码成本随观测长度增长，固定压缩则丢失短时特征",
+      "预算自适应令牌化根据指令动态分配令牌资源，在保真度与计算开销之间实现灵活权衡",
+      "指令条件化使频谱理解从任务专用模型转向统一的自然语言交互式分析范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

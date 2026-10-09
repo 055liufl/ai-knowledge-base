@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-043",
+  "title": "RaReCache: Bridging the Gap in Cross-Model KV Cache Reuse via Rank disagreement-based Selective Recomputation",
+  "source_url": "https://arxiv.org/abs/2610.11358",
+  "source_platform": "rss_ai_research",
+  "summary": "RaReCache 是一篇针对跨模型 KV Cache 复用难题的研究工作。在现代 LLM 服务中，编码智能体和多模型系统经常需要在不同模型之间路由同一段共享上下文，例如用户在会话中途切换模型，或级联系统将困难查询升级到更强的模型。由于 KV Cache 存储的是模型特有的表示，每次模型切换通常都迫使接收模型从头对整个上下文进行 prefill，造成巨大的计算浪费和延迟。已有研究表明，闭式线性映射可以在一定程度上实现跨模型的 KV 表示转换，但这类方法在精度上存在明显损失。RaReCache 提出基于「秩不一致性」（Rank disagreement）的选择性重计算策略，通过识别哪些 token 的 KV 表示在跨模型映射后偏差较大，仅对这些关键部分进行重计算，从而在保持生成质量的同时大幅降低重计算开销。该工作为多模型 LLM 服务系统中的缓存复用提供了新的思路，对降低推理成本、提升多模型协作效率具有实际意义，值得 LLM 推理优化和 serving 基础设施方向的研究者与工程师关注。",
+  "tags": [
+    "KV Cache",
+    "LLM Serving",
+    "Inference Optimization",
+    "Cross-Model Reuse"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨模型 KV Cache 复用因表示空间差异而困难，模型切换通常导致全量 prefill 重算",
+      "闭式线性映射虽可近似转换 KV 表示，但精度损失限制了其直接应用",
+      "RaReCache 通过秩不一致性识别需要重计算的关键 token，实现选择性重计算以平衡质量与效率",
+      "该工作面向多模型路由与级联场景，可显著降低 LLM 服务中的推理开销"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-010",
+  "title": "Self-Supervised Keyframe Discovery for Horizon-Invariant Behavior Cloning",
+  "source_url": "https://arxiv.org/abs/2610.10857",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种自监督关键帧发现方法，用于解决非马尔可夫环境下的行为克隆（Behavior Cloning, BC）问题。在长时程任务中，策略需要依赖上下文信息进行决策，而现有方法存在明显局限：循环神经网络（RNN）在时间反向传播中易出现隐藏状态崩溃和梯度不稳定，基于注意力机制的模型则受限于计算复杂度和长序列建模能力。该研究通过自监督方式自动发现关键帧，使策略能够聚焦于对决策至关重要的时间节点，从而在长时程依赖下实现更稳定、更高效的行为克隆。该方法无需人工标注关键帧，具有较好的可扩展性，有望提升机器人在复杂非马尔可夫环境中的模仿学习性能。该工作值得关注，因为它为长时程行为克隆提供了一种新的思路，可能推动机器人学习和序列决策领域的发展。",
+  "tags": [
+    "Behavior Cloning",
+    "Self-Supervised Learning",
+    "Keyframe Discovery",
+    "Imitation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有行为克隆方法在非马尔可夫环境中面临长时程依赖建模的挑战，RNN和注意力机制各有局限。",
+      "自监督关键帧发现能够自动识别对决策重要的时间节点，避免人工标注，提升长时程行为克隆的稳定性和效率。",
+      "该方法有望应用于机器人模仿学习等需要处理长时程上下文的任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

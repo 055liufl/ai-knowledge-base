@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-054",
+  "title": "From Chain-of-Thought to Loops: Non-Autoregressive Latent Reasoning via Looped Transformers",
+  "source_url": "https://arxiv.org/abs/2610.11472",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 LLoCoT，一种基于循环 Transformer 的非自回归潜在推理方法。传统思维链（CoT）通过自回归生成显式 token 序列来增加计算量，但存在推理速度慢、依赖从左到右顺序的问题。潜在推理用连续状态替代 token，但多数方法仍保留自回归依赖。LLoCoT 利用循环 Transformer 结构，让模型在潜在空间中进行迭代计算，实现非自回归的推理过程，从而打破从左到右的依赖限制。该方法有望在保持推理能力的同时提升并行性和效率，为语言模型推理提供新范式。值得关注的是，它结合了循环架构与潜在推理，可能推动更高效、更灵活的推理模型设计，对研究者和开发者均有启发。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLoCoT 通过循环 Transformer 实现非自回归潜在推理，打破传统从左到右的依赖。",
+      "潜在推理用连续状态替代显式 token，可减少计算开销并提升并行性。",
+      "循环结构允许模型在潜在空间迭代计算，为推理提供额外计算量而不生成中间 token。",
+      "该方法可能推动更高效、更灵活的推理模型设计，但需进一步验证其泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

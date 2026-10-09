@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-007",
+  "title": "Plan-and-Patch: Diffusion Language Models for Agentic Planning",
+  "source_url": "https://arxiv.org/abs/2610.10786",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Plan-and-Patch 框架，将扩散语言模型（Diffusion Language Models）引入智能体规划任务，解决长时程智能体在规划执行中因环境变化、工具异常或动作失败而需要局部修订计划的问题。传统自回归语言模型在生成计划时通常需要整体重写，难以高效地进行局部修补，而扩散语言模型天然支持并行生成与掩码填充，能够针对计划中失效或需要调整的片段进行精准替换，保留其余有效部分。该工作将规划视为一个可迭代的「生成-修补」过程，利用扩散模型的去噪与条件填充能力，在保持全局一致性的同时实现细粒度修订。这一方向值得关注，因为它将扩散语言模型从文本生成拓展到智能体决策与规划领域，为长时程任务中的动态重规划提供了新的建模范式，有望提升智能体在复杂、不确定环境下的鲁棒性与执行效率，并为扩散模型与 Agent 系统的结合开辟新路径。",
+  "tags": [
+    "Diffusion Language Model",
+    "Agent",
+    "Planning",
+    "Replanning"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:02:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程智能体规划中，环境变化、工具异常和动作失败会导致部分计划失效，因此局部修订能力比一次性生成完整计划更为关键。",
+      "扩散语言模型支持并行生成与掩码填充，天然适合对计划中失效片段进行精准修补，而无需整体重写。",
+      "Plan-and-Patch 将规划建模为迭代的生成-修补过程，在保持全局一致性的同时实现细粒度计划修订。",
+      "该工作拓展了扩散语言模型在智能体决策与规划中的应用边界，为动态重规划提供了新的建模范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

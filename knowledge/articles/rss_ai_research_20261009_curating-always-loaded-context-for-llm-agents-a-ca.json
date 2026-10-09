@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-015",
+  "title": "Curating Always-Loaded Context for LLM Agents: A Capacitated Assortment Model with Censored Feedback",
+  "source_url": "https://arxiv.org/abs/2610.11007",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出将 LLM Agent 的常驻上下文文件（如 AGENTS.md）的维护问题形式化为一个带容量约束的选品问题（Capacitated Assortment Problem）。由于每次会话开始时加载的固定上下文文件中的每个 token 都会在后续每一轮对话中被重复计费，且文件过大反而会降低模型表现，因此如何选择最优的指令子集成为关键。作者指出，实践中人类或自动化策展人通常采用追加方式扩充文件，导致上下文膨胀和性能退化。该研究将指令视为消耗有限注意力预算的 token 资源，并引入删失反馈（Censored Feedback）机制来建模真实场景中难以观测完整效果的问题。这项工作值得关注，因为它首次系统性地将上下文策展从经验性操作提升为可优化的数学问题，为 LLM Agent 的上下文管理提供了理论基础和实用框架，有望显著降低推理成本并提升 Agent 长期表现。",
+  "tags": [
+    "LLM Agent",
+    "Context Management",
+    "Optimization",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "常驻上下文文件中的每个 token 会在会话的每一轮中被重复计费，因此上下文膨胀会带来持续的成本和性能双重惩罚。",
+      "上下文策展可被形式化为带容量约束的选品问题，在有限注意力预算下选择最优指令子集。",
+      "实践中普遍采用的追加式策展策略会导致文件无限增长和性能退化，需要更系统化的优化方法。",
+      "删失反馈机制被引入以应对真实场景中难以完整观测指令效果的问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

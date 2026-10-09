@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-116",
+  "title": "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness",
+  "source_url": "https://arxiv.org/abs/2610.12361",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对法律领域大语言模型的思维链（Chain-of-Thought）忠实性进行了反事实审计。研究核心问题是：模型在裁决中引用的法条或判例，是否真正影响了其决策过程，还是仅仅作为事后装饰性引用。作者采用反事实方法，在保持案件事实不变的前提下，将模型引用的法律依据替换为无关法条，并通过解码模型隐藏状态来追踪裁决的变化。实验覆盖七个开源权重模型（8B-70B）和四个涵盖司法与合同推理的基准。研究发现模型存在「引用但未咨询」现象，即引用的法律权威对最终裁决影响有限，表明其推理链的忠实性存疑。该工作对法律AI的可解释性、可靠性及合规性具有重要意义，提醒业界不能仅凭引用外观判断模型推理的合法性，需建立更严格的忠实性审计机制。",
+  "tags": [
+    "LLM",
+    "Chain-of-Thought",
+    "Legal AI",
+    "Interpretability",
+    "Faithfulness"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "法律LLM引用的法条或判例可能只是事后合理化，而非真正驱动裁决的因素，存在「引用但未咨询」的忠实性缺陷。",
+      "通过反事实替换法律权威并解码隐藏状态，可有效审计思维链的因果忠实性，为可解释性提供新方法。",
+      "该现象在8B-70B多个开源模型及司法、合同推理基准中普遍存在，说明问题具有系统性而非个例。",
+      "法律AI的合规与可信部署不能仅依赖引用外观，需引入因果审计与忠实性验证机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

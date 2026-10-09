@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-014",
+  "title": "How Narrative Wrapping Affects LLM Refusal: A Cross-Language Benchmark and Defense",
+  "source_url": "https://arxiv.org/abs/2610.11005",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了安全对齐的大语言模型在面对叙事包装（如角色扮演、故事叙述）时的拒绝机制失效问题。作者发现，当有害请求被嵌入到叙事框架中时，模型的安全拒绝行为会显著下降。实验在Qwen3-1.7B模型上进行，攻击成功率在英语中达到89.4%，现代中文中达到93.0%，而在文言文中更是高达95.7%。为系统研究这一漏洞，作者构建了GUISE基准，包含英语、现代中文和文言文等多种语言和语体的平行请求。该研究首次跨语言、跨语体地量化了叙事包装对LLM安全对齐的破坏性影响，并提出了相应的防御策略。这项工作对于理解LLM安全机制的脆弱性、推动多语言安全对齐研究以及开发更鲁棒的防御方法具有重要意义，尤其揭示了低资源语言和古典语体可能成为安全漏洞的放大器。",
+  "tags": [
+    "LLM安全",
+    "对抗攻击",
+    "跨语言",
+    "基准测试"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "叙事包装（如角色扮演）能显著绕过LLM的安全拒绝机制，攻击成功率在多种语言中均超过89%。",
+      "攻击成功率随语言资源丰富度降低而升高，文言文中的攻击成功率最高（95.7%），表明低资源语体是安全对齐的薄弱环节。",
+      "作者构建了GUISE基准，为跨语言、跨语体的安全漏洞研究提供了标准化评估工具。",
+      "该研究强调了多语言安全对齐的紧迫性，并提出了针对叙事包装的防御方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

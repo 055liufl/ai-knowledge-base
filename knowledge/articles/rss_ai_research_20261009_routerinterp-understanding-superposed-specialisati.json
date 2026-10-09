@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-082",
+  "title": "RouterInterp: Understanding Superposed Specialisation in Mixture of Experts Routing",
+  "source_url": "https://arxiv.org/abs/2610.11775",
+  "source_platform": "rss_ai_research",
+  "summary": "RouterInterp 是一篇针对稀疏混合专家（MoE）模型路由机制的可解释性研究论文。MoE 通过将 token 路由到仅激活部分参数的专家网络来实现高效扩展，但主流假设认为每个专家会专门化于单一、连贯的领域，这一假设长期支撑着大量可解释性工作，却始终未能取得理想效果。该论文提出并验证了一种替代性解释：专家的专门化并非单一领域，而是以「叠加专门化」（Superposed Specialisation）的形式存在，即单个专家可能同时参与多个语义或功能维度的处理，导致传统基于单一领域假设的分析方法失效。这一发现对理解 MoE 的内部工作机制、改进路由策略、提升模型可解释性与可控性具有重要意义，也为后续 MoE 架构设计和稀疏化训练提供了新的理论视角。",
+  "tags": [
+    "MoE",
+    "Interpretability",
+    "Routing",
+    "Sparse Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "主流假设认为 MoE 专家专门化于单一连贯领域，但基于该假设的可解释性研究普遍失败。",
+      "论文提出「叠加专门化」假说：单个专家可能同时参与多个语义或功能维度的处理。",
+      "该发现挑战了传统 MoE 路由分析范式，为改进路由策略和模型可解释性提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

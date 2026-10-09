@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-059",
+  "title": "ReTeach: Building a Self-Teacher through Multi-Round Reflection and Retry",
+  "source_url": "https://arxiv.org/abs/2610.11529",
+  "source_platform": "rss_ai_research",
+  "summary": "ReTeach 提出了一种无需外部更强教师模型的自蒸馏框架，通过多轮反思与重试机制构建“自教师”（self-teacher），从而提升模型的推理能力。传统自蒸馏依赖一个能力更强的教师模型，而 ReTeach 的创新点在于：让模型基于自身生成的尝试进行反思，从中提取显式的错误诊断和修正指导，并将这些反思信息作为条件来构建一个相对学生模型具有优势的“自教师”。该方法解决了现有反思式自蒸馏中教师优势不足的问题，同时避免了对参考答案或外部解决方案的依赖，使自蒸馏在无标注或信息受限的场景下更具可行性。该工作对提升大语言模型推理能力、降低对昂贵教师模型的依赖具有重要意义，尤其适用于需要自我改进和持续学习的应用场景。",
+  "tags": [
+    "Self-Distillation",
+    "LLM Reasoning",
+    "Reflection",
+    "Self-Improvement"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过多轮反思与重试，模型可以从自身错误中提取显式诊断和修正指导，形成无需外部教师的自我提升闭环。",
+      "自教师的关键在于相对于学生模型获得信息优势，而反思机制可以在没有参考答案的情况下提供这种优势。",
+      "该方法降低了对更强教师模型或标注数据的依赖，为资源受限场景下的推理能力提升提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

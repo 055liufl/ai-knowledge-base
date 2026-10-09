@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-126",
+  "title": "SpectralCache: Accelerating Diffusion-Based World Models via Spectral Feature Caching",
+  "source_url": "https://arxiv.org/abs/2610.02660",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SpectralCache，一种针对基于扩散的世界模型（diffusion-based world models）的推理加速方法。这类模型能够高质量地生成可交互环境，但由于去噪过程中需要反复进行 Transformer 评估，推理开销巨大。现有缓存方法主要在特征或 token 层面利用时间冗余，却忽略了扩散特征背后的数学结构。作者发现世界模型特征具有高度稳定的奇异值结构（singular value structure），并据此设计 SpectralCache，在谱域（spectral domain）进行特征缓存与复用，从而在保持生成质量的同时显著降低计算成本。该工作将数值线性代数中的谱分析与扩散模型推理优化相结合，为世界模型、交互式生成环境以及扩散模型加速提供了新思路，对研究者和开发者均具有较高参考价值。",
+  "tags": [
+    "Diffusion",
+    "World Model",
+    "Inference Acceleration",
+    "Feature Caching"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散世界模型的主要瓶颈在于去噪过程中重复的 Transformer 前向计算，缓存是关键的加速方向。",
+      "现有缓存方法多基于特征或 token 的时间冗余，未充分利用扩散特征的内在数学结构。",
+      "世界模型特征呈现高度稳定的奇异值结构，为在谱域进行缓存与复用提供了理论基础。",
+      "SpectralCache 通过谱特征缓存实现加速，有望在保持生成质量的同时降低推理开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

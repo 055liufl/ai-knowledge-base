@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-128",
+  "title": "Freeze the Decoder, Heal the Encoder: Parameter-Efficient Adaptation for SVD-Based KV-Cache Compression",
+  "source_url": "https://arxiv.org/abs/2610.10552",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对参数高效微调（PEFT）中一个常见但被忽视的实验方法缺陷展开研究：在比较不同可训练参数量差异巨大的微调方案时，使用统一学习率会导致参数量较大的方案均值被压低、方差被放大，从而人为制造出最小参数量方案具有显著优势的假象。作者在基于 SVD 的 KV-Cache 压缩这一具体场景中记录并验证了这一混淆效应，并提出了相应的修正方法。该工作值得关注，因为它揭示了当前 PEFT 对比实验中普遍存在的统计陷阱，可能影响大量已发表结论的可信度，尤其对 KV-Cache 压缩、长上下文推理优化等方向的研究者具有直接的实验设计指导意义。",
+  "tags": [
+    "PEFT",
+    "KV-Cache",
+    "SVD",
+    "LLM Inference",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一学习率在比较不同参数量规模的 PEFT 方案时会产生系统性偏差，人为放大最小参数量方案的优势",
+      "该混淆效应在基于 SVD 的 KV-Cache 压缩场景中被具体验证，说明其影响具有实际普遍性",
+      "研究提醒社区在 PEFT 对比实验中需按参数量调整学习率或采用更严谨的统计控制方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

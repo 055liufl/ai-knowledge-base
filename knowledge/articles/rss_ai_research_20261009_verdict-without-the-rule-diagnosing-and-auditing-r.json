@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-111",
+  "title": "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems",
+  "source_url": "https://arxiv.org/abs/2610.12313",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了大语言模型（LLM）合规系统的一个关键假设：模型给出的合规判定是否真正依赖于所给定的监管规则。作者在五个模型和二十个监管及平台政策领域上进行了系统性实验，通过删除、替换或否定主导规则，同时保持案件事实不变，来检验模型判定是否发生变化（OCS指标），以及模型内部对合规性的表征是否发生偏移（ICS-delta指标）。实验结果显示，无论是判定结果还是内部表征，都几乎没有变化，表明当前LLM合规系统对监管规则的敏感性极低，其判定可能更多依赖于案件表面特征或模型先验，而非所注入的规则文本。这一发现对合规AI系统的可靠性、可审计性和监管落地具有重要警示意义，提示我们需要开发更严格的规则敏感性诊断与审计方法，以确保LLM在合规场景中真正遵循给定规则。",
+  "tags": [
+    "LLM",
+    "Compliance",
+    "AI Safety",
+    "Evaluation",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM合规系统的判定对监管规则的变化极不敏感，删除、替换或否定规则几乎不改变判定结果。",
+      "模型内部对合规性的表征同样缺乏对规则变化的响应，表明规则可能未被有效编码或利用。",
+      "当前合规AI系统存在严重的规则遵循缺陷，其判定可能依赖案件表面特征而非给定规则。",
+      "需要开发更严格的规则敏感性诊断与审计方法，以提升LLM合规系统的可靠性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

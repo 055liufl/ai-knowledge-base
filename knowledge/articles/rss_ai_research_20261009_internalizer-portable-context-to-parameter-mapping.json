@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-074",
+  "title": "Internalizer: Portable Context-to-Parameter Mapping for Very Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.11715",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了 Internalizer，一种可移植的上下文到参数映射（Context-to-Parameter Mapping）超网络，能够为冻结的 284B 参数 DeepSeek v4 Flash 模型生成文档特定的 LoRA 适配器。此前基于超网络将上下文直接映射为 LoRA 适配器的工作仅在最多 140 亿参数的基座模型上得到验证，而 Internalizer 将这一范式扩展到两个数量级更大的模型上，属于该方向的最新进展。其核心价值在于：让超大规模语言模型无需微调即可将特定文档或上下文「内化」到权重中，从而在推理时以参数形式携带上下文信息，可能显著降低长上下文推理的显存与计算开销，并为超大规模模型的高效知识注入与个性化提供新路径。该工作对研究超网络、参数高效微调、长上下文处理以及大模型部署的开发者与研究者具有较高参考价值，但其实际效果、泛化能力与工程可移植性仍需进一步验证。",
+  "tags": [
+    "Hypernetwork",
+    "LoRA",
+    "LLM",
+    "Parameter-Efficient Fine-Tuning",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Internalizer 将上下文到 LoRA 适配器的超网络映射首次扩展到 284B 参数级别的超大规模模型，比此前工作大两个数量级。",
+      "通过生成文档特定的 LoRA 适配器，模型可将上下文信息内化到权重中，为长上下文推理提供参数化替代方案。",
+      "该方法面向冻结基座模型，无需全量微调，有望降低超大规模模型的知识注入与个性化成本。",
+      "当前仅展示技术可行性，其在更大模型上的泛化性、适配器质量与部署效率仍需进一步验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

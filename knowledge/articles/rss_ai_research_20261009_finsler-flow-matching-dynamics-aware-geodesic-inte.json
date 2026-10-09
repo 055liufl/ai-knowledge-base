@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-035",
+  "title": "Finsler Flow Matching: Dynamics-Aware Geodesic Interpolation for Single-Snapshot Trajectory Inference",
+  "source_url": "https://arxiv.org/abs/2610.11318",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Finsler Flow Matching（Finsler 流匹配），一种用于单快照单细胞轨迹推断的新方法。单细胞快照数据能捕捉细胞状态的连续分布，但无法唯一确定状态间的转换动态。现有生成式方法要么仅从群体边缘分布推断传输，要么在状态空间上强加对称几何结构，要么以有限方式引入方向性。该工作利用 Finsler 几何（一种允许方向依赖度量的非对称几何）来编码细胞-细胞马尔可夫转移核中蕴含的动态信息，通过动力学感知的测地线插值实现轨迹推断。其核心创新在于将方向性动态信息自然地融入流匹配框架，避免对称性假设带来的偏差。该方法对计算生物学、单细胞组学及生成模型交叉领域具有潜在影响，尤其适用于发育生物学、疾病进展等需要重建细胞分化路径的场景。",
+  "tags": [
+    "Flow Matching",
+    "单细胞轨迹推断",
+    "Finsler几何",
+    "生成模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单细胞快照数据本身不足以唯一确定动态，但细胞-细胞马尔可夫转移核可提供额外的方向性动态信息。",
+      "现有生成式轨迹推断方法常忽略方向性、强加对称几何或仅依赖边缘分布，导致动态重建偏差。",
+      "Finsler 几何允许方向依赖的度量，为编码非对称动态提供自然框架，实现动力学感知的测地线插值。",
+      "该方法将流匹配与 Finsler 几何结合，为单细胞轨迹推断提供了新的理论工具和实用途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

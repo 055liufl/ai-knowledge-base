@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-029",
+  "title": "TaReD: Tool-Aware Recursive Decomposition for Long-Horizon Tasks",
+  "source_url": "https://arxiv.org/abs/2610.11268",
+  "source_platform": "rss_ai_research",
+  "summary": "TaReD（Tool-Aware Recursive Decomposition）是一篇针对长时程任务（Long-Horizon Tasks）的学术论文，提出了一种工具感知的递归分解方法。当前基于LLM的智能体通常采用单一执行链交替进行推理与行动，但在复杂任务中，不断增长的历史上下文会模糊中间依赖关系，并导致早期规划错误被逐步放大，最终使执行链不可靠。TaReD的核心思想是将复杂任务递归地分解为更小的子任务，并在分解过程中显式考虑可用工具的能力与约束，从而降低单链推理的脆弱性。该方法有望提升智能体在需要多步规划、多工具协作场景下的鲁棒性与成功率，对构建更可靠的自主智能体系统具有参考价值。该工作属于智能体规划与工具使用交叉方向，适合关注LLM Agent、任务分解与长时程推理的研究者和开发者阅读。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Task Decomposition",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一执行链在长时程任务中会因历史膨胀和错误传播而失效，递归分解是更可靠的替代方案",
+      "分解过程需感知工具能力与约束，否则子任务可能无法被现有工具执行",
+      "该方法针对复杂多步任务，有望提升智能体规划的鲁棒性和成功率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

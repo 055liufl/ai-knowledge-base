@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261009-088",
+  "title": "MetaOPD: Meta-Learned Token Weighting for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.11989",
+  "source_platform": "rss_ai_research",
+  "summary": "MetaOPD 提出了一种用于在线策略蒸馏（On-Policy Distillation, OPD）的元学习令牌加权方法。在 OPD 中，学生模型基于自身生成的回复进行训练，并接受教师模型的令牌级监督。然而，传统的均匀加权忽略了不同令牌学习价值的差异，而现有的加权方法依赖于从预测信号到令牌权重的预定义映射，这些映射并非从学生模型更新的实际效果中学习得到，因此难以适应不断变化的学习需求。MetaOPD 通过元学习的方式，自动学习令牌权重，使其能够根据学生模型更新的有效性进行动态调整，从而提升蒸馏效果。该方法有望在模型压缩、知识迁移等场景中带来更高效、更自适应的训练策略，值得关注。",
+  "tags": [
+    "知识蒸馏",
+    "元学习",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏中，令牌级监督的均匀加权忽略了不同令牌的学习价值差异。",
+      "现有加权方法依赖预定义的预测信号到权重的映射，无法从学生更新的实际效果中学习。",
+      "MetaOPD 通过元学习自动学习令牌权重，使其适应学生模型不断变化的学习需求。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

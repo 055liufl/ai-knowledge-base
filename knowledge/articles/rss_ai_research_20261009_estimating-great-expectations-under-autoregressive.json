@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-048",
+  "title": "Estimating great expectations under autoregressive language models with potentials",
+  "source_url": "https://arxiv.org/abs/2610.11399",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在自回归语言模型下高效估计测试函数期望值的方法。许多语言模型应用（如评估生成质量、计算风险指标等）并不依赖于单个样本，而是需要计算模型分布下某个测试函数的期望。传统方法通常通过大量采样来近似期望，计算成本高昂。作者利用自回归模型在采样过程中自然产生的下一词条件概率，通过引入“势函数”（potentials）——定义在前缀上的实值函数——来分解期望估计过程，从而显著提升估计效率。该方法有望降低语言模型在需要期望估计的任务中的计算开销，例如强化学习中的奖励期望、可控生成中的约束满足概率等。该工作为语言模型的高效推理与评估提供了新的理论工具，值得关注。",
+  "tags": [
+    "LLM",
+    "期望估计",
+    "自回归模型",
+    "势函数",
+    "采样效率"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用自回归模型采样时天然产生的下一词条件概率，可以避免额外计算，提升期望估计效率。",
+      "通过定义在前缀上的势函数分解测试函数，将期望估计转化为更易处理的形式。",
+      "该方法有望降低语言模型在需要期望估计的应用（如可控生成、风险评估）中的计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-013",
+  "title": "Learning How to Search for Plans with Exponentially Less Space",
+  "source_url": "https://arxiv.org/abs/2610.10954",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的规划搜索控制学习方法，旨在解决传统启发式搜索在存储状态时可能面临指数级空间爆炸的问题。作者将搜索控制学习为一种索引策略（indexical policy），即每个领域一个规范，该策略使用寄存器存储对象，并通过模式（modes）来排序规则。核心创新是引入了 choose 规则，它可以将一个对象加载到寄存器中并标记一个回溯点，在该点上只需一个候选对象即可，而其他所有规则必须对所有对象有效。这种方法通过限制搜索过程中需要存储的状态数量，实现了指数级更少的空间需求，同时保持或提升了规划效率。该工作对于自动规划、启发式搜索以及资源受限的智能体决策具有重要价值，尤其适用于需要高效利用内存的嵌入式系统或大规模规划问题。",
+  "tags": [
+    "Automated Planning",
+    "Heuristic Search",
+    "Reinforcement Learning",
+    "Search Control"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统启发式搜索即使启发式函数近乎完美，仍可能存储指数级状态，导致空间瓶颈。",
+      "索引策略通过寄存器与模式序列化规则，实现领域特定的搜索控制学习。",
+      "choose 规则引入回溯点，仅需一个候选对象，大幅减少搜索空间。",
+      "该方法在保持规划性能的同时，将空间复杂度从指数级降低到更可控的水平。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

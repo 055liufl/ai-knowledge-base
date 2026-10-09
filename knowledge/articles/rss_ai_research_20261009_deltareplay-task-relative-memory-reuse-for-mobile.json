@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-073",
+  "title": "DeltaReplay: Task-Relative Memory Reuse for Mobile GUI Agents",
+  "source_url": "https://arxiv.org/abs/2610.11707",
+  "source_platform": "rss_ai_research",
+  "summary": "DeltaReplay 是一篇针对移动端 GUI Agent 记忆复用问题的 arXiv 论文。现有记忆增强型移动 GUI Agent 通常会存储成功执行轨迹并在后续任务中复用，但新任务与存储轨迹往往并非完全匹配：可能参数不同、仅部分步骤重合，或根本不存在相关记录。强行使用不相关记忆会误导 Agent，而直接丢弃潜在有用的记忆又会丧失历史经验的指导价值。DeltaReplay 提出「任务相对记忆复用」（Task-Relative Memory Reuse）思路，核心在于根据新任务与历史轨迹之间的相对关系，动态判断哪些记忆片段真正适用、哪些应当被裁剪或忽略，从而实现更精细化的记忆选择与复用。该工作值得关注的原因在于：移动 GUI 自动化是 Agent 落地的重要场景，而记忆机制的有效性直接决定长程任务的成功率与泛化能力；此前多数方法采用「全盘复用」或「完全丢弃」的粗粒度策略，DeltaReplay 提出的任务相对视角有望缓解记忆误用与记忆浪费的两难困境，为 GUI Agent 的长期记忆管理提供更细粒度的解决方案，对研究者和开发者均具参考价值。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "GUI Automation",
+    "Mobile"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "移动 GUI Agent 的历史轨迹与新任务往往只是部分匹配，粗粒度的全量复用或完全丢弃都会带来误导或信息浪费。",
+      "DeltaReplay 提出任务相对（task-relative）的记忆复用视角，按新任务与历史轨迹的相对关系动态筛选可用记忆片段。",
+      "该思路有望提升 GUI Agent 在参数变化、步骤部分重合等非精确匹配场景下的泛化与执行成功率。",
+      "记忆管理正成为 Agent 长程任务能力的关键瓶颈，细粒度记忆选择比单纯扩大记忆库更具实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

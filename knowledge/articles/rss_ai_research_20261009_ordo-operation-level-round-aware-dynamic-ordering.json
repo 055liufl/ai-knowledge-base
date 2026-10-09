@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-031",
+  "title": "ORDO: Operation-level Round-aware Dynamic Ordering for MIP Presolve",
+  "source_url": "https://arxiv.org/abs/2610.11294",
+  "source_platform": "rss_ai_research",
+  "summary": "ORDO 提出了一种针对混合整数规划（MIP）预处理阶段的操作级轮次感知动态排序方法。传统基于学习的预处理优化仅关注参数配置，无法表达操作之间非交换的时序依赖关系。作者指出，在大多数领域中操作的默认顺序几乎是唯一的，且功能上必要——人为打乱同一序列的顺序会使求解时间分布的尾部膨胀数倍。ORDO 将预处理规划重新建模为序列决策问题，在每一轮中根据当前求解状态动态选择下一个操作，从而打破固定顺序的限制。该方法有望显著提升 MIP 求解器的性能，尤其对大规模、复杂约束的优化问题具有实用价值。该工作为学习驱动的数学规划预处理开辟了新方向，值得运筹优化与机器学习交叉领域的研究者关注。",
+  "tags": [
+    "MIP",
+    "Presolve",
+    "Optimization",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:03:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预处理操作的顺序对 MIP 求解时间影响巨大，人为打乱顺序可使求解时间尾部膨胀数倍。",
+      "现有基于学习的方法仅优化参数配置，无法建模操作间的非交换时序依赖。",
+      "ORDO 将预处理规划转化为操作级、轮次感知的动态排序问题，实现自适应决策。",
+      "该方法为学习驱动的数学规划预处理提供了新范式，有望提升求解器整体性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

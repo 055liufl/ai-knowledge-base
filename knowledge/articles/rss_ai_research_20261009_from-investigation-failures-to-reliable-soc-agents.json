@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-134",
+  "title": "From Investigation Failures to Reliable SOC Agents: Understanding and Improving LLM-Based Alert Triage",
+  "source_url": "https://arxiv.org/abs/2610.10608",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究基于 LLM 的安全运营中心（SOC）告警分诊代理，针对工具调用型 LLM 代理在告警调查中推理策略如何影响证据收集与调查终止决策的问题展开系统分析。作者考察了五种代表性方法，涵盖单次工具调用、迭代检索等不同推理范式，旨在揭示现有代理在调查失败时的共性模式，并提出改进方向以构建更可靠的 SOC 代理。该研究值得关注的原因在于：SOC 每天需处理海量告警，其中绝大多数为良性，但漏报攻击后果严重，人工分诊成本极高；LLM 代理具备自动检索证据的潜力，但其推理策略对调查充分性的判断尚缺乏系统性理解。本文填补了这一空白，为构建可信、可终止、低漏报的自动化告警分诊系统提供了实证基础与设计指导，对安全运营自动化与 LLM 代理可靠性研究均有参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Security",
+    "Alert Triage",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:08:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具调用型 LLM 代理在 SOC 告警分诊中的表现高度依赖其推理策略，不同策略决定了证据收集的范围与调查终止时机。",
+      "现有代理存在系统性调查失败模式，可能导致漏报攻击或过早关闭告警，需针对性改进推理与终止判断机制。",
+      "单次工具调用与迭代检索等五类方法各有优劣，可靠 SOC 代理需在证据充分性与调查效率之间取得平衡。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

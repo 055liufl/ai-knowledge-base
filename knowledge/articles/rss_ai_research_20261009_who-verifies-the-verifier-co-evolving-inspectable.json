@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-053",
+  "title": "Who Verifies the Verifier? Co-Evolving Inspectable Graders with Self-Improving Agents",
+  "source_url": "https://arxiv.org/abs/2610.11464",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对自改进智能体（self-improving agent）循环中的验证器（verifier）问题展开研究。在开放式任务中，缺乏客观验证器，通常依赖手写评分标准或裸 LLM 评判器，这容易导致奖励黑客（reward hacking）和共享盲点。作者提出将验证器本身作为演化对象，构建一个可检查的表达式，基于小型、大多确定性的可提取特征（drawback d）来评估智能体输出。通过让验证器与智能体共同演化，可以提升验证的可靠性和可解释性，从而更真实地衡量智能体是否真正变好。这项工作对于自改进智能体、自动化评估和 AI 对齐领域具有潜在影响，因为它试图解决验证器自身可能被欺骗或存在偏差的根本问题。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "Verifier",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自改进智能体循环中，验证器的质量直接决定智能体是否真正进步，但开放式任务缺乏可靠验证器。",
+      "现有方法使用手写评分标准或 LLM 评判器，容易导致奖励黑客和共享盲点。",
+      "将验证器作为可演化的可检查表达式，与智能体共同进化，可提高验证的可靠性和可解释性。",
+      "基于小型确定性特征构建验证器，有助于减少主观性和不可控因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-057",
+  "title": "The Operator Mismatch Problem: Deploying BEV Perception with Portable GPU Compute",
+  "source_url": "https://arxiv.org/abs/2610.11504",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对自动驾驶中鸟瞰图（BEV）感知模型部署难题提出分析。现代自动驾驶系统依赖融合相机与激光雷达输入的BEV感知模型，在三维空间中检测目标，精度高但无法通过标准推理运行时部署。核心原因在于算子不匹配：密集卷积（运行时支持良好）、稀疏三维卷积（运行时无法表示）以及几何散射操作（运行时缺乏对应词汇）之间存在鸿沟。该问题揭示了当前推理运行时与先进感知模型架构之间的结构性矛盾，对自动驾驶系统落地具有重要工程意义，值得关注。",
+  "tags": [
+    "BEV Perception",
+    "Autonomous Driving",
+    "Inference Runtime",
+    "Sparse Convolution"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BEV感知模型因算子不匹配无法通过标准推理运行时部署",
+      "密集卷积、稀疏三维卷积与几何散射操作在运行时支持上存在结构性鸿沟",
+      "该问题凸显了先进感知模型架构与通用推理运行时之间的适配矛盾"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-006",
+  "title": "Speaking the Navigator's Language: Trajectory-Grounded Instruction Translation for Frozen Aerial VLN Agents",
+  "source_url": "https://arxiv.org/abs/2610.10635",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对空中视觉-语言导航（Aerial VLN）中存在的“指令鸿沟”问题展开研究。现有空中 VLN 智能体通常在细节丰富、与轨迹对齐的指令上训练，而真实用户发出的指令往往简短且以意图为中心，这种分布差异导致在冻结的 OpenFly 导航器上成功率（SR）从 31.03% 骤降至 11.33%。为解决该问题，作者提出了一种轨迹锚定的指令翻译方法，通过提示语言模型并借助人类写作风格示例，将原始详细指令转换为配对的、以意图为中心的“弱指令”，从而扩充翻译器训练数据。该方法旨在弥合训练指令与用户实际指令之间的语义与粒度差距，使冻结的导航智能体能够更好地理解和执行简洁的用户意图。该工作值得关注，因为它揭示了 VLN 系统落地中的关键瓶颈——指令风格不匹配，并提供了一种无需重新训练导航器即可提升鲁棒性的数据驱动方案，对空中机器人、人机交互和指令理解领域具有实用价值。",
+  "tags": [
+    "VLN",
+    "Instruction Translation",
+    "Aerial Navigation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:02:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "空中 VLN 智能体面临严重的指令鸿沟：训练用详细轨迹对齐指令与用户简短意图指令之间的差异可使成功率下降近 20 个百分点。",
+      "通过语言模型生成配对的弱指令（意图中心）可有效扩充翻译器训练数据，且无需微调冻结的导航器。",
+      "该方法为提升 VLN 系统在真实用户指令下的鲁棒性提供了数据层面的解决方案，强调了指令风格适配的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

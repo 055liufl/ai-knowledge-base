@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-066",
+  "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+  "source_url": "https://arxiv.org/abs/2610.11620",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究参数高效微调（PEFT）中一个被忽视的关键问题：适配应该施加在模型的哪些层？现有方法通常通过数据回放或正则化来缓解微调导致通用能力退化的问题，但都需要额外数据或显式优化约束。本文提出层选择性微调（Layer-Selective Fine-Tuning），通过分析不同层对通用能力与专用任务的影响，发现仅对特定层进行适配即可在保持下游任务性能的同时显著减少对预训练通用能力的破坏。这一发现为PEFT提供了新的设计维度，即从'如何适配'转向'在哪里适配'，有望降低微调成本并提升模型复用性，对LLM的持续学习与部署具有重要实践意义。",
+  "tags": [
+    "PEFT",
+    "Fine-Tuning",
+    "LLM",
+    "Capability Retention"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "微调对通用能力的破坏程度与适配层的位置密切相关，存在对通用能力影响较小的层。",
+      "仅对选定层进行微调可在不依赖数据回放或正则化的情况下实现能力保留与任务适配的平衡。",
+      "层选择性微调为PEFT提供了新的优化维度，可能减少对额外数据和复杂约束的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

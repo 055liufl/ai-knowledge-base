@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261009-125",
+  "title": "Discovering Global False Negatives On the Fly for Self-supervised Contrastive Learning",
+  "source_url": "https://arxiv.org/abs/2502.20612",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出GloFND，一种针对自监督对比学习（SSCL）中假阴性问题的优化方法。在SSCL中，负样本通常从整个数据集中随机抽取（排除锚点），但这可能产生语义相似的负对，即假阴性，导致模型错误地将相似样本的嵌入推远。GloFND通过在线优化自动发现全局假阴性，无需额外标注或预训练。该方法在训练过程中动态识别并修正这些假阴性对，从而提升表示学习质量。实验表明，GloFND在多个基准数据集上优于现有方法，且计算开销可控。该工作为对比学习中的负采样策略提供了新思路，有望推动自监督学习在无监督场景下的进一步应用。",
+  "tags": [
+    "Contrastive Learning",
+    "Self-supervised Learning",
+    "False Negatives"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "假阴性问题在自监督对比学习中普遍存在，会损害表示学习效果。",
+      "GloFND通过在线优化自动发现全局假阴性，无需额外监督信号。",
+      "该方法在多个基准上取得性能提升，且计算成本可控。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

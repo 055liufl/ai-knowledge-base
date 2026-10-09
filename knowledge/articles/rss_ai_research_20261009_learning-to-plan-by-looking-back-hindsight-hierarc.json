@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-104",
+  "title": "Learning to Plan by Looking Back: Hindsight Hierarchies for Training Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2610.12168",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「后见层级」（Hindsight Hierarchies）的推理模型自我改进训练框架，旨在突破模型当前能力上限。核心观察是：即使一个问题超出了模型的现有求解能力，只要额外提供一个参考答案，模型仍能在「事后」从中提取出有价值的解题思路。基于这一洞察，作者设计了一个联合训练循环，让同一个模型同时具备三种能力：仅凭问题预测解题思路、从给定答案反向工程出思路、以及利用这些思路辅助求解。通过这种「回头看」的方式，模型能够从自己无法独立解决的问题中持续学习，形成自我提升的闭环。该工作属于推理模型训练方法的前沿探索，与当前 o1、DeepSeek-R1 等推理模型强调的测试时计算与自我反思方向高度契合，为在缺乏高质量过程监督数据的情况下提升推理能力提供了新思路，对研究者和开发者均具有参考价值。",
+  "tags": [
+    "Reasoning",
+    "Self-Improvement",
+    "LLM Training",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "即使问题超出模型当前能力，提供参考答案后模型仍能在事后提取有效解题思路，这为自我改进提供了新的数据来源。",
+      "通过联合训练「预测思路」「反向工程思路」「利用思路求解」三种能力，模型可形成从失败中学习的闭环。",
+      "该方法有望减少对高质量过程监督数据的依赖，为推理模型的持续自我提升提供可扩展路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

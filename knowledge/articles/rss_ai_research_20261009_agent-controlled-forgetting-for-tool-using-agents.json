@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-003",
+  "title": "Agent-Controlled Forgetting for Tool-Using Agents: Reversible Context Curation in Practice",
+  "source_url": "https://arxiv.org/abs/2610.10590",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Agent-Controlled Forgetting”（智能体控制遗忘）的上下文管理方法，旨在解决工具使用型智能体在长任务中因累积大量工具调用结果而导致的上下文膨胀问题。该方法允许智能体主动选择先前观察到的工具结果，将其替换为简短的摘要笔记，同时将原始完整内容保存在可恢复的归档中。实现上，通过一个Python工具框架提供批量归档和显式恢复功能，无需针对特定任务进行模型训练，并注重保护用户隐私。这项研究值得关注，因为它为智能体在有限上下文窗口下高效运行提供了可逆的上下文整理方案，有望提升工具使用型智能体的长期任务执行能力和资源利用率，同时保持信息的可追溯性。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "Tool Use",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:02:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体可以主动控制遗忘，将冗长的工具结果替换为简短笔记，同时保留原始内容在可恢复归档中。",
+      "该方法无需任务特定的模型训练，通过Python框架实现批量归档和显式恢复，易于集成。",
+      "可逆的上下文整理有助于缓解长任务中的上下文窗口限制，提升智能体的长期执行效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

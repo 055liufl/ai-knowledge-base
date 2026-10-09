@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-062",
+  "title": "Scaling to Tens of Thousands of Test-Time Iterations with Loop-Native Attention Residuals",
+  "source_url": "https://arxiv.org/abs/2610.11570",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向循环 Transformer（looped Transformer）的残差连接新方案——Loop-Native Attention Residuals，旨在解决测试时迭代次数增加导致的性能退化问题。作者观察到，随着循环迭代次数增加，推理准确率反而下降：噪声化的状态更新会覆盖正确的中间推理步骤，甚至撤销已完成的解答，使后续迭代只能从已经退化的表示中恢复丢失信息。为此，论文主张循环 Transformer 需要专属的残差连接机制，以在数万次测试时迭代中保持稳定。该工作将测试时计算扩展（test-time scaling）从传统的采样/搜索维度推进到循环深度维度，对推理模型、自适应计算和循环架构设计具有重要参考价值。",
+  "tags": [
+    "Transformer",
+    "Test-Time Scaling",
+    "Reasoning",
+    "Looped Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "循环 Transformer 在测试时迭代次数增加时会出现推理准确率下降，原因是噪声状态更新覆盖了正确的中间推理结果。",
+      "循环架构需要专属的残差连接设计（Loop-Native Attention Residuals），而非沿用标准 Transformer 的残差方式。",
+      "该工作将测试时计算扩展从采样/搜索维度拓展到循环深度维度，支持数万次迭代的稳定推理。",
+      "错误一旦产生，后续迭代只能从已退化的表示中恢复，形成不可逆的信息损失，凸显了残差设计的关键性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-106",
+  "title": "When Has a Bayesian Neural Network Sampled Enough? Adaptive Inference Time with Statistical Guarantees",
+  "source_url": "https://arxiv.org/abs/2610.12212",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于置信序列（confidence sequences）的自适应推理方法，用于贝叶斯神经网络（BNN）的蒙特卡洛采样。传统BNN预测通常对每个输入使用固定数量的MC样本，但未控制有限采样带来的误差。该工作利用置信序列动态决定所需样本数，同时保持统计保证。作者考虑了预测概率的多种使用方式，包括识别最可能类别和近似预测分布等。该方法在保证统计可靠性的前提下，能够根据输入复杂度自适应调整计算量，从而在推理效率和准确性之间取得平衡。这项研究值得关注，因为它为贝叶斯深度学习中的不确定性量化提供了理论严谨且实用的推理时间控制方案，有望推动BNN在需要可靠决策的场景（如医疗诊断、自动驾驶）中的落地应用。",
+  "tags": [
+    "Bayesian Neural Networks",
+    "Monte Carlo",
+    "Adaptive Inference",
+    "Statistical Guarantees"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:06:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定MC采样数无法控制预测误差，置信序列可动态确定样本量并提供统计保证。",
+      "自适应推理时间能根据输入复杂度调整计算，平衡效率与准确性。",
+      "该方法适用于多种预测概率使用场景，如分类决策和分布近似。",
+      "为贝叶斯神经网络在高风险领域的可靠部署提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

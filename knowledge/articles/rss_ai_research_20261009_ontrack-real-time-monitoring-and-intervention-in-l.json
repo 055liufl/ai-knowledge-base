@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261009-118",
+  "title": "OnTrack: Real-Time Monitoring and Intervention in LLM Agent Trajectories via Streaming Structure-Aware Optimal Transport",
+  "source_url": "https://arxiv.org/abs/2610.12375",
+  "source_platform": "rss_ai_research",
+  "summary": "OnTrack 提出了一种针对 LLM Agent 轨迹的实时监控与干预框架，核心创新在于利用流式结构感知最优传输（Streaming Structure-Aware Optimal Transport）技术，在 Agent 执行过程中动态检测异常行为并及时介入。当前 LLM Agent 已广泛应用于旅行规划、股票交易、IT 事件分诊等场景，但大多以自主方式运行，缺乏有效的规则化安全保障，可能导致不可逆操作带来的成本与安全问题。现有方案要么引入额外的守护 Agent 逐步监控，增加成本与延迟；要么在运行结束后对日志进行事后评估，无法阻止已发生的错误。OnTrack 通过流式最优传输度量 Agent 轨迹与预期行为分布之间的结构差异，实现低开销的在线异常检测与干预，兼顾实时性与安全性。该工作对 Agent 安全部署、可观测性及运行时治理具有重要价值，尤其适合需要高可靠性的生产级 Agent 系统。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Safety",
+    "Optimal Transport",
+    "Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:07:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM Agent 安全保障方案存在两难：守护 Agent 增加每步成本与延迟，事后日志评估无法阻止不可逆错误。",
+      "OnTrack 利用流式结构感知最优传输，在轨迹执行过程中实时度量行为偏差，实现低开销的在线监控与干预。",
+      "该方法面向旅行规划、股票交易、IT 事件分诊等高风险自主 Agent 场景，强调运行时安全治理。",
+      "核心贡献在于将最优传输理论引入 Agent 轨迹监控，兼顾结构感知与流式计算效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

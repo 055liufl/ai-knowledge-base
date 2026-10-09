@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261009-070",
+  "title": "Constrained Command-Conditioned Reinforcement Learning with Bandit Strategy Selection in Real-Time Strategy Games",
+  "source_url": "https://arxiv.org/abs/2610.11663",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种约束命令条件强化学习框架，结合Bandit策略选择机制，用于实时策略（RTS）游戏中的智能体控制。传统深度强化学习在RTS游戏中表现优异，但面对训练分布外的对手时鲁棒性不足。作者将战略命令选择与底层单位控制解耦：高层通过Bandit算法动态选择不同策略命令，底层则复用同一个执行策略来响应不同命令。这种设计使智能体能够针对不同对手灵活切换战术，同时保持执行效率。论文还提出了评估执行器是否真正遵循命令的可度量标准，并引入约束机制确保命令执行的可靠性。该工作为提升RTS智能体的泛化能力和对抗鲁棒性提供了新思路，对游戏AI、多智能体决策和分层强化学习领域具有参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "Real-Time Strategy",
+    "Bandit",
+    "Hierarchical RL"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将战略命令选择与单位控制解耦，通过Bandit算法动态选择策略，提升对未知对手的鲁棒性",
+      "提出可度量标准来评估执行器是否真正遵循命令，并引入约束机制保证命令执行的可靠性",
+      "复用同一执行策略响应不同命令，降低了训练复杂度并提高了策略的泛化能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

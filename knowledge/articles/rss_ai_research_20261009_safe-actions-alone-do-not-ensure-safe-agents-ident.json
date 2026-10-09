@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-081",
+  "title": "Safe Actions Alone Do Not Ensure Safe Agents: Identifying Unfulfilled Obligations with Guard Models",
+  "source_url": "https://arxiv.org/abs/2610.11773",
+  "source_platform": "rss_ai_research",
+  "summary": "本文指出当前 LLM 智能体安全防护体系存在一个关键盲区：现有 Guard 模型主要聚焦于识别智能体「不应执行」的禁止性动作，却忽视了智能体「应当执行但未执行」的安全关键动作，作者将后者定义为「义务」（obligations）。论文通过对一个主流智能体安全评测基准的初步实证研究发现，约 56.9% 的安全违规案例实际上源于义务未被履行，而非执行了被禁止的动作，说明仅靠禁止性动作检测无法保证智能体安全。作者据此提出需要引入能够识别未履行义务的 Guard 模型，将安全防护从「负面清单」扩展到「正面清单」，从而构建更完整的智能体安全框架。该工作对当前以动作过滤为核心的安全范式提出了重要修正，对智能体安全评测、Guard 模型设计以及高风险场景下的智能体部署具有直接指导意义，值得安全研究者与智能体开发者关注。",
+  "tags": [
+    "Agent Safety",
+    "Guard Model",
+    "LLM Agent",
+    "AI Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:05:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Guard 模型只关注禁止性动作，无法覆盖智能体安全的全貌，遗漏了「应做而未做」这一关键风险来源。",
+      "实证研究表明，约 56.9% 的安全违规案例源于未履行的安全义务，而非执行了被禁止的动作。",
+      "智能体安全需要同时建模禁止性动作与义务性动作，形成正反两面的完整约束体系。",
+      "该工作为 Guard 模型的设计与安全基准评测提出了新方向，即引入义务识别能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

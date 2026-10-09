@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261009-045",
+  "title": "RIT-RAG: Navigating Document Corpora with Retrieval-Induced Trees",
+  "source_url": "https://arxiv.org/abs/2610.11370",
+  "source_platform": "rss_ai_research",
+  "summary": "RIT-RAG（Retrieval-Induced Trees for RAG）是一篇来自 arXiv 的学术论文，聚焦于检索增强生成（RAG）中的文档结构利用问题。当前 Agentic RAG 支持迭代式检索，但模型只能看到孤立的文本块，缺乏文档结构信息，导致难以区分真正相关的证据与仅表面相似的片段。已有的结构感知方法（如 PageIndex）能够利用文档结构进行导航，但无法扩展到大规模语料库，因为完整语料结构无法放入 LLM 上下文窗口。RIT-RAG 提出通过检索诱导树（Retrieval-Induced Trees）来动态构建与查询相关的文档结构，从而在保持可扩展性的同时为模型提供结构化的上下文。该工作值得关注，因为它试图弥合「结构化检索」与「大规模语料可扩展性」之间的鸿沟，对提升 RAG 系统的检索精度和推理能力具有实际意义，尤其适用于企业知识库、法律文档、科研文献等需要结构感知的复杂场景。",
+  "tags": [
+    "RAG",
+    "Agentic RAG",
+    "Document Structure",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-09T15:01:02Z",
+  "collected_at": "2026-10-09T15:04:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agentic RAG 以孤立文本块为单位检索，缺乏文档结构信息，难以区分真正相关证据与表面相似的噪声片段。",
+      "结构感知方法（如 PageIndex）虽能利用文档结构，但受限于 LLM 上下文窗口，无法扩展到大规模语料库。",
+      "RIT-RAG 提出检索诱导树机制，动态构建与查询相关的结构化上下文，兼顾结构感知与大规模可扩展性。",
+      "该方向对提升 RAG 在复杂文档场景下的检索精度与推理能力具有重要研究价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
