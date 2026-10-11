@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261011-069",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 发布的一篇技术博客，系统介绍了 Transformer 架构中的混合专家（MoE）技术。MoE 通过将前馈网络层替换为多个并行的专家网络，并引入可学习的路由机制，使模型在推理时仅激活部分专家，从而在保持庞大参数量的同时显著降低计算成本。文章详细阐述了 MoE 的核心组件（专家、路由器、门控函数）、常见路由策略（如 Top-K 路由、专家选择路由）、负载均衡损失等关键设计，并对比了 Switch Transformer、GShard 等经典实现。此外，博客还提供了在 Hugging Face Transformers 库中加载和微调 MoE 模型的实践指南，包括模型选择、训练技巧和部署注意事项。MoE 已成为构建万亿参数级大模型的主流方案之一，被 Mixtral、DeepSeek-MoE 等先进模型采用，因此本文对于理解大模型高效扩展的前沿方向具有重要参考价值。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-10-11T14:42:03Z",
+  "collected_at": "2026-10-11T14:47:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活实现参数规模与计算成本的解耦，使模型能够扩展到万亿参数级别而推理成本仅线性增长。",
+      "路由机制是 MoE 的核心，Top-K 路由和专家选择路由各有优劣，需结合负载均衡损失避免专家利用率不均。",
+      "Hugging Face 生态已集成 MoE 模型支持，开发者可便捷地微调和部署 Mixtral 等开源 MoE 模型。",
+      "MoE 在训练稳定性、通信开销和专家专业化方面仍面临挑战，是当前大模型架构研究的热点方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
