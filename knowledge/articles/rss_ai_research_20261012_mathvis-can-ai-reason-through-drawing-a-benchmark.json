@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-026",
+  "title": "MathVis: Can AI Reason through Drawing? A Benchmark for Mathematical Figure Generation",
+  "source_url": "https://arxiv.org/abs/2610.12954",
+  "source_platform": "rss_ai_research",
+  "summary": "MathVis 是一个用于评估大语言模型（LLM）几何可视化与图形辅助推理能力的新基准。该基准包含 512 个任务，每个任务由数学命题、参考图、可执行的 TikZ 或 SVG 代码、Gold 中间表示（IR）、原子评分标准以及错误代码组成。与以往仅关注文本推理或简单图形识别的评测不同，MathVis 要求模型真正生成可编译的数学图形代码，并借助图形进行推理，从而检验模型对空间结构、几何约束和数学语义的深层理解。论文对 GPT-6-Astra、Claude Fable 5、Gemini 3.1 Pro Preview 等前沿模型进行了严格评测，揭示了当前 LLM 在数学可视化任务上的显著不足。该工作值得关注，因为它首次系统性地将「画图」作为数学推理的一等能力进行量化，为多模态推理、代码生成与数学教育 AI 提供了新的评测维度和改进方向。",
+  "tags": [
+    "Benchmark",
+    "LLM",
+    "Math Reasoning",
+    "Code Generation",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:29:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MathVis 首次将数学图形生成与图形辅助推理作为独立能力进行系统评测，填补了现有数学基准在可视化维度上的空白。",
+      "基准通过可执行 TikZ/SVG 代码、Gold IR 和原子评分标准，实现了对模型生成图形的细粒度、可复现评估。",
+      "对 GPT-6-Astra、Claude Fable 5、Gemini 3.1 Pro Preview 的评测表明，前沿 LLM 在数学可视化任务上仍存在明显短板。",
+      "该基准为多模态推理、代码生成与数学教育 AI 的交叉研究提供了新的评测范式和改进信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

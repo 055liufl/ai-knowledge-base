@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-075",
+  "title": "A Step Harder, Not a Step Too Far: The Benefits and Limits of Curriculum Difficulty Progression in GRPO",
+  "source_url": "https://arxiv.org/abs/2610.13669",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 GRPO（Group Relative Policy Optimization）训练中课程难度递进策略的效果与边界。GRPO 是一种常用于大语言模型强化学习后训练的方法，其核心在于利用组内相对奖励信号进行策略优化。已有实践表明，中等难度样本更可能产生有信息量的组内相对学习信号，因此在在线样本选择中被优先考虑，可提升训练效率。然而，持续选择中等难度样本是否也能带来最优的最终模型性能尚不明确。作者提出并系统考察了课程难度递进（curriculum difficulty progression）策略，即让训练样本难度从易到难逐步提升，而非始终锁定在中等难度区间。研究揭示了难度递进带来的收益及其适用边界：适度的难度提升有助于模型持续获得有效学习信号并改善最终表现，但过度的难度跃升可能导致训练不稳定或性能下降。该工作为 GRPO 的样本调度与课程设计提供了实证依据，对强化学习后训练流程的优化具有直接指导意义。",
+  "tags": [
+    "GRPO",
+    "Curriculum Learning",
+    "RLHF",
+    "LLM Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO 中中等难度样本因更易产生有信息量的组内相对信号而被优先选择，可提升训练效率，但未必带来最优最终性能。",
+      "课程难度递进（从易到难）在 GRPO 中可能优于始终选择中等难度样本，但存在收益上限。",
+      "难度提升的幅度需要谨慎控制：适度的递进有益，过大的难度跃升可能损害训练稳定性与最终表现。",
+      "该研究为强化学习后训练中的样本调度策略提供了实证依据，强调课程设计需在效率与最终性能之间权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

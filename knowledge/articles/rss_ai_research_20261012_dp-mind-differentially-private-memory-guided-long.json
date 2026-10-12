@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261012-045",
+  "title": "DP-MIND: Differentially private memory-guided Long context Inference",
+  "source_url": "https://arxiv.org/abs/2610.13132",
+  "source_platform": "rss_ai_research",
+  "summary": "DP-MIND 是一篇针对长上下文大语言模型推理场景的差分隐私保护方法研究。随着 LLM-as-a-Service 成为主流范式，用户查询中常包含敏感或机密上下文，隐私泄露风险显著。现有差分隐私推理方法主要面向短或中等长度上下文，在百万级 token 的长上下文场景下难以兼顾隐私保护与推理质量。该工作提出「差分隐私记忆引导的长上下文推理」（Differentially Private Memory-Guided Long Context Inference），通过记忆引导机制在长上下文中实现差分隐私保护，试图解决长上下文场景下隐私预算消耗大、噪声累积导致输出质量下降等核心难题。该研究值得关注的原因在于：长上下文推理（如文档问答、代码库分析、多轮对话记忆）是当前 LLM 应用的重要方向，而隐私保护在该场景下几乎空白；同时，差分隐私与长上下文的结合涉及隐私预算分配、记忆检索与噪声注入的协同设计，具有较高的技术挑战性和创新空间。若方法有效，将推动隐私敏感行业（医疗、金融、法律）更安全地采用云端 LLM 服务。",
+  "tags": [
+    "Differential Privacy",
+    "Long Context",
+    "LLM Inference",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有差分隐私推理方法难以扩展到百万 token 级长上下文，隐私预算与推理质量的权衡在长上下文中急剧恶化",
+      "记忆引导机制可能是缓解长上下文差分隐私噪声累积的关键设计，通过选择性检索降低有效隐私消耗",
+      "LLM-as-a-Service 场景下用户上下文隐私保护是尚未充分解决的重要问题，长上下文隐私推理具有明确的应用需求"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

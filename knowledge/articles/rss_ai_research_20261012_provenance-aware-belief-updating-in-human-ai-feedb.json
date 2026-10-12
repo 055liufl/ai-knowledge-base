@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-033",
+  "title": "Provenance-Aware Belief Updating in Human-AI Feedback Loops",
+  "source_url": "https://arxiv.org/abs/2610.13008",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究人类与AI反复交互中一个关键的认识论问题：同一条观察可能被引用、摘要并作为多条报告返回给模型，使重复信息看起来像是独立证据的相互印证。作者提出 Latent Quotient Evidence Training (LQET)，一种关系型训练目标，将稀疏贝叶斯监督与约束相结合，使语言模型能够依据证据的来源谱系（provenance）而非报告数量来更新信念。该工作值得关注，因为它直击当前LLM在长链条、多轮交互中普遍存在的\"重复即证实\"偏差，这种偏差会导致模型过度自信、错误累积，并在RAG、Agent记忆、多智能体协作等场景中被放大。通过显式建模报告之间的引用与派生关系，LQET为构建更可靠、更符合贝叶斯理性的AI反馈循环提供了新的训练范式，对可信AI与AI对齐研究具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Bayesian Inference",
+    "Human-AI Interaction",
+    "AI Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "重复出现的报告常被模型误判为独立证据，导致信念更新偏离真实证据强度",
+      "LQET 通过关系型目标结合稀疏贝叶斯监督与约束，使模型按证据来源谱系而非报告数量更新信念",
+      "该问题在 RAG、Agent 记忆与多智能体协作中会被显著放大，是可信 AI 的关键挑战",
+      "显式建模报告谱系为构建更理性、更可靠的 AI 反馈循环提供了新的训练范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

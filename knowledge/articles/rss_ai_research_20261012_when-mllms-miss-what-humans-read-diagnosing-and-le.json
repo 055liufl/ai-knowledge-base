@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-132",
+  "title": "When MLLMs miss what humans read: diagnosing and learning to read squint text",
+  "source_url": "https://arxiv.org/abs/2610.13465",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究聚焦于多模态大语言模型（MLLMs）在识别图像中嵌入的粗粒度结构文本时的失败现象，作者将其命名为“Squint Text”（眯眼文本），即人类通过眯眼或模糊化处理即可恢复的文本，但模型却报告图像中无文本。研究动机源于生产内容审核流水线中的实际案例，作者将这一问题定义为识别缺陷而非简单的幻觉。为系统研究，作者构建了SquintBench（1076张来自生产环境的审核图像）和SquintCtrl（受控合成数据集）用于机制诊断。通过冻结权重分析，研究揭示了MLLMs在低分辨率或模糊文本识别上的系统性不足，并探索了学习读取此类文本的方法。该工作值得关注，因为它首次形式化了这一被忽视的视觉文本识别盲区，对内容审核、无障碍技术及多模态模型鲁棒性评估具有直接意义，同时提供了可复现的基准和诊断工具，推动模型在真实场景中更可靠地理解图像文本。",
+  "tags": [
+    "MLLM",
+    "多模态",
+    "文本识别",
+    "基准测试",
+    "内容审核"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLLMs存在系统性缺陷：无法识别图像中粗粒度结构嵌入的文本（Squint Text），而人类可通过眯眼恢复，模型却误报无文本。",
+      "研究基于生产内容审核流水线的真实案例，构建了SquintBench和SquintCtrl两个数据集，分别用于评估和机制诊断。",
+      "通过冻结权重分析，揭示了模型在低分辨率或模糊文本识别上的失败机制，为改进多模态文本理解提供了方向。",
+      "该问题对内容审核、无障碍技术等实际应用有重要影响，需在模型评估中纳入此类鲁棒性测试。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

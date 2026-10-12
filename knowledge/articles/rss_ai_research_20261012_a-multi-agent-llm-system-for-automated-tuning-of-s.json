@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-074",
+  "title": "A Multi-Agent LLM System for Automated Tuning of Specialized Neural Network Models",
+  "source_url": "https://arxiv.org/abs/2610.13663",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于多智能体大语言模型（LLM）的框架，用于自动调优专用神经网络模型的关键组件。许多机器学习方法具有两层结构：专家首先选择一类方法，然后在该类方法内部手动选择关键组件。本文针对这一手动调优过程，设计了一个可跨不同性质模型迁移的自动化框架。该框架包含三个LLM智能体角色：分析师（analyst）、编码员（coder）和记录员（recorder），并配备实验日志和沙箱执行环境。分析师负责分析当前模型配置与实验结果，编码员根据分析生成或修改代码，记录员则维护实验日志以支持迭代优化。沙箱环境确保代码执行的安全性和可复现性。该工作值得关注，因为它将LLM的多智能体协作引入到神经网络超参数和架构组件的自动调优中，有望减少对领域专家手动调参的依赖，提升模型开发效率，并增强调优过程的可迁移性和自动化程度。",
+  "tags": [
+    "LLM",
+    "Multi-Agent",
+    "AutoML",
+    "Neural Network Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出三智能体（分析师、编码员、记录员）协作框架，实现神经网络关键组件的自动调优。",
+      "框架设计具有跨模型迁移能力，可适用于不同性质的神经网络模型。",
+      "引入实验日志和沙箱执行环境，提升调优过程的可追溯性与安全性。",
+      "将LLM多智能体系统应用于AutoML领域，减少对人工专家调参的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

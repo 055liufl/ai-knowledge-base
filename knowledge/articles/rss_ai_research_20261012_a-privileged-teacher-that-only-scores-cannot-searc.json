@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261012-078",
+  "title": "A Privileged Teacher That Only Scores Cannot Search: Critique-Conditioned On-Policy Self-Distillation for Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.13744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究在线策略自蒸馏（on-policy self-distillation）中教师信号的有效性问题。该方法原本旨在用密集的 token 级信用替代可验证奖励强化学习（RLVR）中稀疏的结果信号：一个以参考答案为条件的教师模型对学生自身的 rollout 进行打分，并将由此产生的分布偏移蒸馏回策略模型。作者通过学生 rollout 中的黄金错误跨度（gold error spans）来检验这种打分信号是否真正包含纠正性信用，并对比了自蒸馏所消费的两种信号。核心发现指向一个关键局限：仅能打分、无法搜索的\"特权教师\"可能无法提供有效的纠正信号，这对当前依赖教师打分进行推理能力蒸馏的范式提出了质疑。该工作对理解 RLVR 与自蒸馏的信用分配机制具有重要价值，尤其对关注 LLM 推理训练、蒸馏方法的研究者和工程师有直接参考意义。",
+  "tags": [
+    "Self-Distillation",
+    "RLVR",
+    "LLM Reasoning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略自蒸馏试图用密集 token 级信用替代 RLVR 的稀疏结果信号，但其打分信号是否真正包含纠正性信用尚不明确",
+      "通过黄金错误跨度检验发现，仅能打分而无法搜索的教师模型可能无法提供有效的纠正信用",
+      "该研究对依赖教师打分进行推理蒸馏的范式提出质疑，提示需要重新审视信用分配机制的设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

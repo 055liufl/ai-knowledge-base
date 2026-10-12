@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-130",
+  "title": "CNN-Transformer with Sigmoid Label for High-Resolution Sub-Degree DOA Estimation",
+  "source_url": "https://arxiv.org/abs/2610.13433",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对深度学习（DL）方向到达（DOA）估计中的网格量化误差问题提出解决方案。传统基于分类的DOA方法将连续角度空间离散化为网格，导致基于峰值读取的精度和分辨率受限于网格步长和标签峰宽度。作者提出一种Sigmoid标签，将信源的DOA编码为角度偏移单调Sigmoid函数之和，从而在保持分类框架的同时实现亚度级高分辨率估计。该方法结合CNN-Transformer架构，利用卷积提取局部特征、Transformer捕获全局依赖，在标签设计上突破网格限制。该工作值得关注，因为它解决了DOA估计中精度与网格分辨率之间的根本矛盾，为雷达、声呐、无线通信等需要高精度角度估计的领域提供了新思路，且Sigmoid标签设计可推广至其他连续参数估计任务。",
+  "tags": [
+    "DOA Estimation",
+    "CNN-Transformer",
+    "Sigmoid Label",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统分类DOA方法受网格步长和标签峰宽度限制，难以实现亚度级精度",
+      "Sigmoid标签将DOA编码为角度偏移单调函数之和，突破网格量化误差",
+      "CNN-Transformer混合架构兼顾局部特征与全局依赖，提升估计性能",
+      "该方法可推广至其他连续参数估计任务，具有通用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

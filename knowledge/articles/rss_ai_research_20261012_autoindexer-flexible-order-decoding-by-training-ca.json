@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-087",
+  "title": "AutoIndexer: Flexible-Order Decoding by Training Causal Models on Chains of Edits",
+  "source_url": "https://arxiv.org/abs/2610.12545",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoIndexer 是一种新型生成模型，旨在解决自回归解码在处理非因果顺序数据（如交叉引用或未来依赖）时的局限性。传统自回归模型无法在生成后修改输出，而扩散 LLM 虽能部分缓解，但仍无法灵活地在预生成上下文中插入或删除任意数量的 token。AutoIndexer 通过一种新颖的训练与解码机制，在编辑链上训练因果模型，实现灵活顺序解码。该方法模拟人类迭代推理过程，允许模型在生成过程中动态调整输出顺序，从而更好地处理非因果依赖关系。这项研究值得关注，因为它突破了自回归模型的固有约束，为生成模型提供了更灵活的序列建模能力，可能推动代码生成、复杂推理和跨引用文本生成等任务的发展。",
+  "tags": [
+    "LLM",
+    "Decoding",
+    "Generative Model",
+    "Autoregressive"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自回归解码难以处理非因果顺序数据，因其输出无法事后修改。",
+      "扩散 LLM 虽能部分缓解，但仍无法灵活插入或删除任意数量的 token。",
+      "AutoIndexer 通过在编辑链上训练因果模型，实现灵活顺序解码。",
+      "该方法模拟人类迭代推理，有望提升复杂推理和跨引用生成任务的表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

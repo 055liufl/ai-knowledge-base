@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-082",
+  "title": "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+  "source_url": "https://arxiv.org/abs/2610.13889",
+  "source_platform": "rss_ai_research",
+  "summary": "RATED（Reliability-Aware Tool Retrieval via Execution Dynamics）是一篇来自 arXiv 的论文，针对 AI Agent 在调用外部工具时检索准确性的问题提出了新的框架。现有工具检索方法主要优化语义相关性，却忽视了工具在执行过程中的可用性（如服务宕机、响应延迟、调用失败等动态因素），这会导致 Agent 行为不可靠。RATED 通过结合鲁棒的语义匹配与动态可靠性自适应来解决这一缺口：它采用冻结的双编码器（dual-encoder）进行对比式语义匹配，并在此基础上引入基于执行动态的可靠性建模，使检索结果不仅语义相关，而且在实际执行中更可能成功。该工作值得关注，因为它将工具检索从静态语义匹配推进到运行时可靠性感知，直接提升 Agent 在真实环境中的任务成功率和鲁棒性，对构建生产级 Agent 系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "Tool Retrieval",
+    "Reliability",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具检索方法只关注语义相关性，忽略了工具在执行时的可用性与可靠性，导致 Agent 行为不稳定。",
+      "RATED 将语义匹配与执行动态驱动的可靠性自适应相结合，实现更贴近真实运行环境的工具检索。",
+      "采用冻结双编码器加对比学习的方式，在保持语义匹配能力的同时引入动态可靠性信号。",
+      "该方向将工具检索从静态语义问题推进为运行时可靠性问题，对生产级 Agent 系统具有实际意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

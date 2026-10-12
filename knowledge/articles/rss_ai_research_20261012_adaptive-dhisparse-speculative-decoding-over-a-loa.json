@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-077",
+  "title": "Adaptive DHiSparse: Speculative Decoding over a Load-Adaptive KV Hierarchy",
+  "source_url": "https://arxiv.org/abs/2610.13708",
+  "source_platform": "rss_ai_research",
+  "summary": "Adaptive DHiSparse 是一篇针对长上下文大模型推理服务中 KV 缓存内存瓶颈的 arXiv 论文。长上下文服务往往在硬件达到有效吞吐量之前就耗尽了 KV 显存，HiSparse 通过将历史 KV 存储在主机内存中、仅按需取回被选中的条目来缓解这一问题，但它对所有负载使用固定的缓存预算，并且不支持 DSpark、DFlash2 等草稿模型投机解码。本文提出的 Adaptive DHiSparse 在分层稀疏 KV 之上支持投机解码，并能根据负载动态调整驻留策略，同时保护必要的工作集。该工作值得关注，因为它同时解决了长上下文推理中的两个关键痛点：KV 内存墙与投机解码的兼容性，以及静态缓存预算在动态负载下的低效问题。对于需要部署长上下文服务的工程团队而言，这种负载自适应的分层稀疏 KV 方案有望在有限显存下显著提升吞吐量，并让投机解码在稀疏 KV 场景中真正可用。",
+  "tags": [
+    "KV Cache",
+    "Speculative Decoding",
+    "Long Context",
+    "LLM Inference",
+    "Sparse Attention"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文服务的瓶颈在于 KV 内存先于硬件吞吐耗尽，分层稀疏 KV 是缓解该问题的有效方向。",
+      "现有 HiSparse 使用固定缓存预算且不支持投机解码，无法适应动态负载。",
+      "Adaptive DHiSparse 将投机解码与分层稀疏 KV 结合，并按负载自适应调整 KV 驻留策略。",
+      "保护投机解码所需的工作集是该方法在稀疏 KV 上实现加速的关键设计。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

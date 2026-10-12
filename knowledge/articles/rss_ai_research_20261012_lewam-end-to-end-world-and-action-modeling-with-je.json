@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261012-103",
+  "title": "LeWAM: End-to-End World and Action Modeling with JEPAs",
+  "source_url": "https://arxiv.org/abs/2610.12818",
+  "source_platform": "rss_ai_research",
+  "summary": "LeWAM 是一种端到端的世界模型与动作建模框架，基于联合嵌入预测架构（JEPA）构建。传统 JEPA 流程通常先训练视觉表征和动作条件动态模型，再单独添加控制策略或求解器，导致表征学习与控制目标脱节。LeWAM 提出两项关键创新：一是联合训练目标，同时优化下一潜在状态预测和动作流匹配；二是对潜在空间施加各向同性高斯约束，以提升表征质量。该工作将世界模型学习与动作生成统一在一个端到端框架中，避免了分阶段训练带来的次优问题。对于关注基于世界模型的强化学习、机器人控制以及无像素重建表征学习的研究者和开发者而言，LeWAM 提供了一种更紧凑、更高效的控制范式，有望推动 JEPA 在真实控制任务中的落地。",
+  "tags": [
+    "JEPA",
+    "World Model",
+    "Reinforcement Learning",
+    "Flow Matching"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LeWAM 将下一潜在状态预测与动作流匹配联合训练，实现世界模型与控制的端到端优化，避免分阶段训练的次优性。",
+      "对潜在空间施加各向同性高斯约束，有助于学习更规整、更利于控制的紧凑表征。",
+      "基于 JEPA 的无像素重建范式，LeWAM 在保持高效表征学习的同时直接服务于控制任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

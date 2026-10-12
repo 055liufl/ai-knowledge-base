@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261012-048",
+  "title": "Quality, Not Just Outcome: A Structural Scoring Framework for Selecting Coding-Agent Trajectories for Supervised Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2610.13152",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对开源编码智能体（coding agent）监督微调（SFT）中的数据筛选问题提出改进方案。当前主流做法仅以最终补丁是否通过基准测试套件作为筛选标准，即所谓\"结果级过滤\"，但这一标准完全忽略了交互过程的质量。作者指出，即使最终成功的轨迹，也可能包含低效的交互模式，例如重复检查同一文件、工具调用不稳定、延迟修改行为等，而这些劣质行为同样会被模型作为模仿目标学习，从而损害智能体的实际能力。为此，论文提出一种结构化评分框架（Structural Scoring Framework），用于在筛选 SFT 训练轨迹时同时评估过程质量与最终结果，从而挑选出更优的轨迹用于训练。该工作值得关注，因为它触及了智能体训练数据质量这一被长期忽视的关键环节，将\"结果正确\"与\"过程合理\"解耦，为提升编码智能体的训练效率和泛化能力提供了新思路，对智能体数据工程和 SFT 实践具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "SFT",
+    "Code Generation",
+    "Data Quality"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅以最终测试通过与否筛选 SFT 轨迹会引入低效交互模式，如重复文件检查、工具使用不稳定和延迟修改，这些都会被模型模仿。",
+      "过程质量与结果质量应当解耦评估，成功的轨迹未必是优质的学习样本。",
+      "结构化评分框架可同时衡量交互过程与最终结果，为编码智能体筛选更高质量的监督微调数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-111",
+  "title": "The Evidence Anchoring Boundary: Where Visual Interventions Matter and When They Help in Multimodal LLMs",
+  "source_url": "https://arxiv.org/abs/2610.12981",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究多模态大语言模型（MLLM）中视觉干预（visual interventions）的有效边界问题。视觉干预是一种无需训练即可减少幻觉的方法，但作者指出，干预并非在所有网络层都有效：某些层上干预几乎没有杠杆作用，甚至可能改变输出却损害原本正确的答案。为此，作者在解码器各层依次施加相同的视觉残差编辑，并匹配其 RMS 强度以保持跨深度可比性，从而系统性地探究视觉干预在何处保留影响力、何时能真正改善预测。该工作为理解 MLLM 内部视觉信息处理机制提供了实证依据，并为设计更精准、更安全的免训练幻觉缓解策略指明了方向。其价值在于揭示了视觉干预的适用边界，避免盲目干预带来的负面效果，对多模态模型的可解释性与可靠性研究具有重要参考意义。",
+  "tags": [
+    "Multimodal LLM",
+    "Hallucination",
+    "Interpretability",
+    "Visual Intervention"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉干预在不同解码器层上的效果差异显著，并非所有层都能有效减少幻觉。",
+      "即使干预改变了模型输出，也可能破坏原本正确的预测，说明干预需谨慎定位。",
+      "通过匹配跨层 RMS 强度的视觉残差编辑，可以系统评估干预的杠杆作用边界。",
+      "该研究为免训练幻觉缓解方法提供了层间选择的理论与实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

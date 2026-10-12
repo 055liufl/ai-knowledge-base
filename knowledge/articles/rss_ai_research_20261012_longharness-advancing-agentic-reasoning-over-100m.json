@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-036",
+  "title": "LongHarness: Advancing Agentic Reasoning over 100M-Token Corpora via Stateful Evidence Management",
+  "source_url": "https://arxiv.org/abs/2610.13075",
+  "source_platform": "rss_ai_research",
+  "summary": "LongHarness 是一篇针对超长上下文语料库（超过 1 亿 token）的智能体推理框架研究。论文指出，当文档集合远超模型上下文窗口时，现有 agent harness 虽然支持增量访问，但获取的证据和演进的结论往往纠缠在不断增长的交互历史中。这种隐式状态管理会导致两种耦合的失败模式：无界探索（检索不断扩大交互历史，导致上下文膨胀和注意力稀释）以及证据遗忘或结论漂移。LongHarness 提出通过有状态的证据管理（Stateful Evidence Management）来解耦证据获取与推理过程，将已获取的证据、中间结论和探索轨迹显式地结构化存储，从而支持在超大规模语料上进行可控、可追溯的 agentic reasoning。该工作值得关注，因为它直面了当前长上下文 agent 的核心瓶颈——上下文窗口与语料规模之间的根本矛盾，并为 RAG 与 Agent 的融合提供了新的架构思路，对构建企业级知识库问答、大规模文档分析等应用具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Long Context",
+    "RAG",
+    "Evidence Management"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "超长语料上的 agent 推理瓶颈不在于单次检索能力，而在于交互历史中证据与结论的隐式纠缠。",
+      "无界探索和证据遗忘是长上下文 agent 的两个耦合失败模式，需要显式的状态管理机制来同时解决。",
+      "将证据获取、结论演进与探索轨迹解耦并结构化存储，是实现 100M-token 级别可控推理的关键设计。",
+      "该工作为 RAG 与 Agent 的深度融合提供了新范式，即从无状态检索增强转向有状态证据管理。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

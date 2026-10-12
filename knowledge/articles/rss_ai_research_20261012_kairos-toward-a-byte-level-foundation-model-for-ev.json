@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-084",
+  "title": "Kairos: Toward a Byte-Level Foundation Model for Every Modality",
+  "source_url": "https://arxiv.org/abs/2610.12495",
+  "source_platform": "rss_ai_research",
+  "summary": "Kairos 是一个面向多模态统一建模的字节级基础模型架构提案，旨在突破小语言模型在单机训练场景下架构探索空间受限的问题。该模型的核心创新在于将多种高效注意力机制与稀疏专家结构整合进统一的字节空间：它结合了双向门控 DeltaNet 线性注意力与滑动窗口注意力（共享投影，称为 LiZAttention2），并引入块级 Attention-Residual 聚合、稀疏混合专家（MoE）前馈层，以及多尺度字节级编解码器。训练目标采用统一噪声去噪（uniform-noise denoising），在单一字节空间上完成，从而避免为不同模态设计独立的分词器或编码器。这一设计的意义在于：字节级建模有望统一文本、图像、音频等异构模态的表示，而线性注意力与 MoE 的组合则试图在单机可训练规模下兼顾长序列效率与模型容量。对于关注高效架构、多模态统一表示以及小规模基础模型研究的开发者与研究者而言，Kairos 提供了一条值得跟踪的技术路线，但其实际效果仍需实验验证。",
+  "tags": [
+    "多模态",
+    "字节级模型",
+    "线性注意力",
+    "MoE",
+    "基础模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:32:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Kairos 尝试用单一字节空间统一所有模态，绕过传统分词器带来的模态割裂问题。",
+      "LiZAttention2 将双向门控 DeltaNet 线性注意力与滑动窗口注意力结合，在效率与表达能力之间寻求平衡。",
+      "稀疏 MoE 与块级 Attention-Residual 聚合的引入，旨在单机训练约束下提升模型容量与训练稳定性。",
+      "统一噪声去噪目标为字节级多模态预训练提供了一种自监督范式，但实际跨模态迁移效果尚待验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

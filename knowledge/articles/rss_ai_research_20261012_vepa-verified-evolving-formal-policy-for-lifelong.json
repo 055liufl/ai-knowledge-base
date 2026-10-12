@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-012",
+  "title": "VEPA: Verified Evolving Formal Policy for Lifelong LLM Agent Guardrails",
+  "source_url": "https://arxiv.org/abs/2610.12813",
+  "source_platform": "rss_ai_research",
+  "summary": "VEPA（Verified Evolving Formal Policy）是一篇针对 LLM Agent 运行时安全护栏的学术研究。随着 LLM Agent 越来越多地操作敏感资源（如私有文档和可变系统状态），其行为可能带来严重的安全风险。传统护栏需要在 Agent 执行不可逆操作前做出可审查、可复现且确定性的允许或拒绝决策，但安全与安全需求在部署前往往难以完备，因此护栏必须具备持续适应能力。VEPA 提出了一种经过验证的、可演化的形式化策略框架，旨在为 LLM Agent 提供终身（lifelong）安全护栏。该工作的核心价值在于将形式化验证与策略演化相结合，使护栏既能保证决策的确定性和可审计性，又能在部署后根据新出现的需求动态更新策略，从而弥补静态安全规则难以覆盖开放环境的缺陷。对于构建生产级 Agent 系统的开发者与安全研究者而言，这一方向具有重要的参考意义，尤其是在需要强安全保障的敏感场景中。",
+  "tags": [
+    "LLM Agent",
+    "Guardrails",
+    "Formal Verification",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:29:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的运行时护栏需要在不可逆操作前提供可审查、可复现、确定性的决策，这对安全关键场景至关重要。",
+      "安全需求在部署前难以完备，护栏必须支持持续演化以适应新出现的威胁和策略变化。",
+      "将形式化验证与策略演化结合，是兼顾决策确定性与长期适应性的可行技术路线。",
+      "该工作为敏感资源场景下的 Agent 安全部署提供了理论框架，但实际落地仍需工程化验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

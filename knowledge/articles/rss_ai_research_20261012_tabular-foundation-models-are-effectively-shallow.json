@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-123",
+  "title": "Tabular Foundation Models Are Effectively Shallow",
+  "source_url": "https://arxiv.org/abs/2610.13253",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对表格基础模型（Tabular Foundation Models, TFMs）的架构效率问题展开研究。TFMs 通过上下文学习（in-context learning）无需额外训练即可解决新任务，特别适合资源受限或隐私敏感的场景。然而，其架构由多个 Transformer 块堆叠而成，导致计算和内存开销巨大。与此同时，传统的梯度提升决策树（GBDTs）在表格数据任务上依然极具竞争力，且能在 CPU 上高效运行。论文标题暗示核心发现：TFMs 实际上在深度上是“浅层”的，即其有效表达能力可能并不需要深层堆叠，这为设计更轻量、更高效的表格基础模型提供了理论依据。该研究值得关注，因为它挑战了当前表格基础模型盲目堆叠深度的趋势，并可能推动在边缘设备或隐私场景下更实用的表格学习方案。",
+  "tags": [
+    "Tabular",
+    "Foundation Models",
+    "In-context Learning",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TFMs 在上下文学习中无需微调即可处理新任务，但多 Transformer 块架构导致高计算和内存开销。",
+      "传统 GBDTs 在表格任务上仍具竞争力且 CPU 效率高，对 TFMs 构成强基线。",
+      "论文可能揭示 TFMs 的有效深度较浅，暗示可简化架构以提升效率。",
+      "该发现对资源受限或隐私敏感场景下的表格学习模型设计具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

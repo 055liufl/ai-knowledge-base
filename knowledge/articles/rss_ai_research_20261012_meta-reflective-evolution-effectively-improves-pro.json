@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-101",
+  "title": "Meta-Reflective Evolution Effectively Improves Production AI Systems",
+  "source_url": "https://arxiv.org/abs/2610.12794",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CoCoEvolve（Cortex Code Evolve），一种针对生产级 AI 系统的元反思进化优化方法。现有 LLM 引导的进化优化通常从搜索前沿选取候选方案，仅依据其失败案例通过单次 LLM 调用进行变异，这种聚焦前沿的方式在生产系统中容易陷入停滞，因为孤立失败难以揭示复杂、隐藏的交互关系。CoCoEvolve 引入元反思机制，通过系统性地反思失败背后的深层交互模式，而非仅针对表面错误进行修补，从而更有效地改进生产 AI 系统。该工作值得关注，因为它直面了 LLM 驱动优化从实验环境走向真实生产部署时的核心瓶颈——复杂系统中的失败归因与协同演化问题，为提升生产 AI 系统的可靠性与性能提供了新思路。",
+  "tags": [
+    "LLM",
+    "Evolutionary Optimization",
+    "Production AI",
+    "Prompt Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 引导的进化优化多聚焦搜索前沿，仅基于孤立失败进行单次变异，在生产系统中易陷入停滞",
+      "生产 AI 系统的失败往往源于复杂、隐藏的交互关系，孤立失败信息不足以指导有效优化",
+      "CoCoEvolve 通过元反思机制系统性分析失败背后的深层交互模式，而非仅修补表面错误",
+      "该方法为 LLM 驱动的优化从实验环境迁移到真实生产部署提供了新的解决路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

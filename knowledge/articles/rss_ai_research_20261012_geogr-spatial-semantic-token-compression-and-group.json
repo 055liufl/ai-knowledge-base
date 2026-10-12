@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-115",
+  "title": "GeoGR: Spatial-Semantic Token Compression and Group Routing for Efficient 3D VLMs",
+  "source_url": "https://arxiv.org/abs/2610.13035",
+  "source_platform": "rss_ai_research",
+  "summary": "GeoGR 是一篇针对 3D 视觉语言模型（3D VLM）推理效率问题的研究工作。当前主流方法通过多视角图像或视频表征让预训练的图像/视频 VLM 具备理解 3D 场景的能力，但多视角输入会产生极长的视觉 token 序列，导致推理成本高昂。作者指出冗余来自两个方面：一是同一场景区域在不同视角下被重复观测，二是 LLM 每一层都对全部视觉 token 进行处理，而不考虑其与当前计算任务的相关性。为此，GeoGR 提出一个两阶段框架，联合进行场景表征压缩与分组路由：第一阶段通过空间-语义 token 压缩去除跨视角的重复观测冗余，第二阶段通过分组路由机制让不同 LLM 层只处理与当前计算相关的视觉 token，从而在保持 3D 理解能力的同时显著降低计算开销。该工作值得关注，因为它直面 3D VLM 落地的核心瓶颈——多视角 token 爆炸问题，且提出的压缩与路由联合设计思路对多模态大模型的推理加速具有通用参考价值，有望推动 3D 场景理解在机器人与具身智能等实时场景中的应用。",
+  "tags": [
+    "3D VLM",
+    "Token Compression",
+    "Efficient Inference",
+    "Multimodal",
+    "Routing"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多视角 3D 场景理解的主要成本瓶颈在于视觉 token 序列过长，冗余同时来自跨视角重复观测和逐层全量处理",
+      "GeoGR 采用两阶段设计：空间-语义 token 压缩消除跨视角冗余，分组路由让 LLM 各层按需处理相关 token",
+      "压缩与路由联合优化而非独立处理，是提升 3D VLM 推理效率的关键思路",
+      "该方向对具身智能、机器人等需要实时 3D 场景理解的应用具有直接价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

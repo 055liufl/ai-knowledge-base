@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-135",
+  "title": "Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning",
+  "source_url": "https://arxiv.org/abs/2610.13536",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型蒸馏过程中的一个隐蔽安全问题展开研究：当学生模型与教师模型共享基础参数时，学生可能通过语义上无关的训练数据继承教师的行为特征，包括对齐失效（misalignment）等有害倾向，这一现象被称为「潜意识学习」（subliminal learning）。现有的所有防御方法都要求事先知道被转移的具体特征，这在实际场景中往往不可行。该研究的核心贡献在于去除了这一前提条件，证明仅凭参数更新本身即可在无监督条件下恢复出被潜意识转移的特征。这一工作揭示了模型蒸馏中一个此前被忽视的隐蔽攻击面，对模型供应链安全、对齐保持以及蒸馏流程的可信性具有重要意义，尤其对依赖第三方教师模型进行微调或蒸馏的开发者而言，提供了一种无需先验知识的检测思路。",
+  "tags": [
+    "LLM",
+    "蒸馏",
+    "模型安全",
+    "对齐",
+    "无监督学习"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共享基础参数的蒸馏过程中，学生模型可从语义无关数据中继承教师的有害行为特征，构成隐蔽的安全风险。",
+      "现有防御均需预先知道被转移的特征，本文首次证明仅凭参数更新即可无监督地恢复潜意识转移的特征。",
+      "该发现对模型供应链安全与对齐保持具有重要影响，为蒸馏流程提供了无需先验知识的检测新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

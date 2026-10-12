@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-020",
+  "title": "OGPO: Offline Goal-conditioned Policy Optimization for Recoverable Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2610.12914",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 OGPO（Offline Goal-conditioned Policy Optimization），一种针对视觉-语言-动作（VLA）模型的离线目标条件策略优化方法，旨在解决当前 VLA 后训练过度依赖轨迹级监督模仿的问题。现有范式要求策略在每一步复现专家动作，导致模型偏向演示特定的动作路径，缺乏对偏离演示轨迹后如何恢复并推进任务进度的指导，从而限制了策略的鲁棒性和泛化能力。OGPO 通过引入目标条件化的离线策略优化，使 VLA 模型能够在无需在线交互的情况下学习可恢复的行为策略，即在偏离专家轨迹时仍能朝着任务目标推进。该工作对机器人操作领域的 VLA 后训练范式具有改进意义，值得关注的原因在于：它针对模仿学习固有的分布偏移与恢复能力不足问题提出了新的优化视角，可能提升 VLA 模型在真实非结构化环境中的适应性与可靠性，为后续研究提供可借鉴的离线强化学习与 VLA 结合思路。",
+  "tags": [
+    "VLA",
+    "Offline RL",
+    "Robot Manipulation",
+    "Imitation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:29:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 VLA 后训练以轨迹级监督模仿为主，迫使策略逐步复现专家动作，导致对演示路径的过拟合。",
+      "该范式缺乏对偏离专家轨迹后如何恢复并继续推进任务的指导，限制了策略的鲁棒性。",
+      "OGPO 提出离线目标条件策略优化，使 VLA 模型无需在线交互即可学习可恢复的行为策略。",
+      "该方法有望缓解模仿学习中的分布偏移问题，提升 VLA 在真实环境中的适应能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

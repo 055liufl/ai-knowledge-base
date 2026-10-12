@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-118",
+  "title": "Continually Post-training Small Models via Synthetic Self-distillation",
+  "source_url": "https://arxiv.org/abs/2610.13113",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对持续后训练（Continual Post-training）中「学习新能力」与「保留旧知识」的双重挑战展开研究。现有方法 Self-Distillation Fine-Tuning（SDFT）通过上下文示例进行自监督蒸馏来缓解灾难性遗忘，但其效果高度依赖模型自身的上下文学习能力与指令遵循能力，因此在面向低延迟、端侧部署的小模型上表现不佳。本文提出通过合成自蒸馏（Synthetic Self-distillation）的方式，使小模型也能在持续后训练中兼顾新知识获取与旧知识保持。该工作值得关注的原因在于：端侧小模型的持续学习是实际落地中的关键瓶颈，而现有以强模型为前提的方法难以直接迁移；若能有效解决小模型的遗忘问题，将显著提升边缘设备上模型的可维护性与迭代效率，对低成本、隐私友好的本地化 AI 应用具有重要价值。",
+  "tags": [
+    "Continual Learning",
+    "Self-Distillation",
+    "Small Language Models",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持续后训练的核心矛盾是同时实现新能力获取与旧知识保留，二者往往相互冲突。",
+      "SDFT 依赖强上下文学习与指令遵循能力，因此难以直接适用于端侧小模型。",
+      "合成自蒸馏为小模型提供了一条不依赖强上下文学习能力的持续学习路径。",
+      "该方向对低延迟、端侧部署场景下的模型迭代与维护具有实际意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

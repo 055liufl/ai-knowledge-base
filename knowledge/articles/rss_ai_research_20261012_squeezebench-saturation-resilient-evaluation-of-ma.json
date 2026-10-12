@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-062",
+  "title": "SqueezeBench: Saturation-Resilient Evaluation of Mathematical Capability",
+  "source_url": "https://arxiv.org/abs/2610.13461",
+  "source_platform": "rss_ai_research",
+  "summary": "SqueezeBench 是一个针对数学能力评估的抗饱和基准测试，旨在解决现有数学基准因问题被解决而饱和、无法持续衡量 AI 进步的问题。传统基准中，已解决的问题会失去评估价值，而开放问题只能被首次解决一次，导致评估天花板迅速出现。SqueezeBench 的核心设计是：每个问题固定一个整数函数 f(n)，其值仅对小 n 已知；当 AI 成功求解某个 n 时，基准会提高难度（例如增大 n 或增加约束），而不是移除该问题。这种“成功即提高门槛”的机制使基准能够持续区分不同能力的模型，避免饱和。该工作对于追踪 AI 数学推理能力的长期进展具有重要意义，尤其适用于评估 LLM 在形式化数学、定理证明和数值计算方面的能力。它提供了一种动态、可扩展的评估范式，有望推动更严谨的 AI 数学能力评测标准。",
+  "tags": [
+    "Benchmark",
+    "Math Reasoning",
+    "LLM Evaluation",
+    "Saturation-Resilient"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:31:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统数学基准容易饱和，已解决的问题失去评估价值，开放问题只能被首次解决一次。",
+      "SqueezeBench 采用动态难度调整：成功求解后提高问题难度而非移除问题，从而持续评估模型能力。",
+      "该基准基于整数函数 f(n) 的小 n 已知值，要求模型推断更大 n 的值，适合评估 LLM 的数学推理与泛化能力。",
+      "抗饱和设计为 AI 数学能力的长期追踪提供了可持续的评估框架，有望成为新的评测标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

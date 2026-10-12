@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-037",
+  "title": "Attention Sees, MLP Refuses: Tracing the Attention-to-MLP Safety Pathway in LLMs",
+  "source_url": "https://arxiv.org/abs/2610.13078",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的分析框架，用于理解大语言模型（LLM）安全对齐中的两个关键失败模式：越狱攻击和过度拒绝。作者将问题重新定义为「通路问题」，并在仅解码器 Transformer 的残差流更新上进行了可测量化。核心创新在于区分「有害性识别」与「拒绝写入计算」：注意力模块（Attention）负责暴露有害性信息，而 MLP 模块则决定是否产生拒绝行为。通过追踪从注意力到 MLP 的安全通路，该研究揭示了模型内部安全机制的分工与断裂点。这项工作值得关注，因为它不仅提供了对 LLM 安全对齐失败的可解释性视角，还为改进越狱防御和减少过度拒绝提供了新的干预靶点。对于从事 AI 安全、可解释性研究和模型对齐的开发者与研究者而言，该论文提供了一种可操作的诊断工具，有望推动更鲁棒的安全对齐策略设计。",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "Interpretability",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "安全对齐失败可分解为两个独立阶段：注意力模块暴露有害性信息，MLP 模块决定是否写入拒绝行为。",
+      "越狱和过度拒绝可能源于注意力到 MLP 通路的断裂或错位，而非单纯的有害性识别错误。",
+      "在残差流更新层面可量化区分「信息暴露」与「计算写入」，为机制可解释性提供了新工具。",
+      "该通路视角为干预安全行为提供了精确靶点，有望同时改善越狱防御和过度拒绝问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

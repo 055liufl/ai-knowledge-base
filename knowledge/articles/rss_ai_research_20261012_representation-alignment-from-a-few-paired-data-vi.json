@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261012-010",
+  "title": "Representation Alignment from a Few Paired Data via Distilled Optimal Transport",
+  "source_url": "https://arxiv.org/abs/2610.12781",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种在极少配对数据（仅100-500对）下对齐两个独立预训练的单模态编码器的方法。传统方法通常需要数百万配对样本，而本文利用丰富的无配对数据，通过将每个表示表达为与N个配对锚点的相似度，将两种模态置于共同坐标系中，并使用熵最优传输（entropic optimal transport）匹配两个点云。该方法通过蒸馏最优传输实现表示对齐，显著降低了配对数据需求。这项研究对于多模态学习、跨模态检索和低资源场景下的表示学习具有重要意义，为利用大量无配对数据对齐独立编码器提供了新思路。",
+  "tags": [
+    "Representation Alignment",
+    "Optimal Transport",
+    "Multimodal Learning",
+    "Few-shot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:29:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅需100-500对配对数据即可对齐两个独立预训练的单模态编码器，大幅降低了对配对数据的需求。",
+      "通过将表示表达为与配对锚点的相似度，将两种模态映射到共同坐标系，并利用熵最优传输匹配点云。",
+      "该方法在配对数据稀缺但无配对数据丰富的场景下具有显著优势，可推广至多模态表示学习。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

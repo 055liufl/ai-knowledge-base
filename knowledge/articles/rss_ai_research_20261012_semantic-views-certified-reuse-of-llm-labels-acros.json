@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-099",
+  "title": "Semantic Views: Certified Reuse of LLM Labels Across Semantic Queries",
+  "source_url": "https://arxiv.org/abs/2610.12768",
+  "source_platform": "rss_ai_research",
+  "summary": "SemViews 提出了一种名为“语义视图”的认证机制，旨在解决语义查询引擎中 LLM 标签复用的问题。在语义查询场景中，系统使用大语言模型（LLM）评估自然语言过滤条件，每次评估都是一次昂贵的预言机调用。现有的优化方法面临两难：依赖廉价代理的级联方法在精度和召回率上不达标，具有有限样本保证的方法节省有限，且所有方法在查询结束后都会丢弃 LLM 的标签。SemViews 通过认证语义过滤器，能够跨语义查询安全地复用 LLM 标签，从而在保证精度和召回率目标的同时显著减少昂贵的 LLM 调用。该工作对于构建高效、可扩展的语义查询系统具有重要意义，尤其适用于需要频繁执行自然语言过滤的数据库和检索场景。",
+  "tags": [
+    "LLM",
+    "Semantic Query",
+    "Query Optimization",
+    "Label Reuse"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义查询中 LLM 调用成本高昂，现有优化方法在精度、召回率和节省之间难以兼顾。",
+      "SemViews 通过认证机制实现 LLM 标签的跨查询复用，避免重复调用。",
+      "该方法在保证精度和召回率目标的同时，显著降低 LLM 调用次数。",
+      "为语义查询引擎的优化提供了新思路，有望推动自然语言过滤在数据库中的实用化。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

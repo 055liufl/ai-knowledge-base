@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-106",
+  "title": "Co-Modifying Application Code and Deployment Infrastructure: A Causal Study of AI Agent Pull Requests",
+  "source_url": "https://arxiv.org/abs/2610.12849",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对当前软件工程智能体（AI Agent）在代码修改任务中的评估局限展开研究。现有智能体大多在隔离沙箱中针对同步的本地测试进行评测，然而在实际协作仓库中部署功能，不仅需要修改应用逻辑，还必须同步调整 CI/CD 流水线、容器配置和资源清单等部署基础设施。由于智能体缺乏部署感知能力，跨域修改会引入未经验证的异步依赖，可能导致部署失败或环境不一致。该研究以 AI Agent 提交的 Pull Request 为对象，进行因果研究，分析应用代码与部署基础设施协同修改的行为模式与影响。这项工作值得关注，因为它揭示了当前智能体评估体系与实际工程部署需求之间的关键鸿沟，为构建具备部署感知能力的下一代软件工程智能体提供了实证依据和方向指引，对提升 AI 辅助软件交付的可靠性与自动化水平具有重要意义。",
+  "tags": [
+    "AI Agent",
+    "Software Engineering",
+    "CI/CD",
+    "Pull Request",
+    "Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前软件工程智能体主要在隔离沙箱中评估，缺乏对真实部署环境（CI/CD、容器、资源清单）的感知能力。",
+      "跨域修改应用代码与部署基础设施会引入未经验证的异步依赖，增加部署风险。",
+      "以 AI Agent 的 Pull Request 为对象进行因果研究，可揭示协同修改行为与部署结果之间的关系。",
+      "研究呼吁将部署感知纳入智能体评估与设计，以弥合学术评测与实际工程需求之间的差距。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

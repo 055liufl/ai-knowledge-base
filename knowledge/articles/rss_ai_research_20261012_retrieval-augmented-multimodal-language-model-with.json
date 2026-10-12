@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-066",
+  "title": "Retrieval-Augmented Multimodal Language Model with Heterogeneous Evidence Integration for Clinical Prognosis",
+  "source_url": "https://arxiv.org/abs/2610.13510",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了 PRISM（Population-Retrieved Inference for Structured Multimodal Prognosis），一种面向临床预后预测的多模态语言模型。临床预后需要整合结构化测量数据、生理波形、纵向病史以及人群背景信息，传统单一模态模型难以胜任。PRISM 的核心创新包括三点：一是对每个特征进行数值 tokenization，使结构化数据能够被语言模型直接处理；二是对纵向 ECG 数据采用基于时间近因的加权聚合策略，捕捉时序动态；三是构建双模态人群记忆库（dual-modality population memory bank），在表示空间中进行检索增强，从而引入相似病例的人群先验知识。该工作将 RAG 范式从文本领域拓展到异构医疗证据的整合场景，对多模态临床决策支持具有重要参考价值。值得关注的是，它展示了如何让语言模型在表示空间而非原始文本空间进行检索，这为处理数值、波形等非文本模态的检索增强提供了新思路，也为医疗 AI 中多源异构数据的融合建模提供了可借鉴的架构。",
+  "tags": [
+    "RAG",
+    "Multimodal",
+    "Medical AI",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:31:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 RAG 检索从文本空间拓展到表示空间，支持数值、波形等异构证据的检索增强",
+      "通过 per-feature 数值 tokenization 让语言模型直接处理结构化临床测量数据",
+      "采用近因加权聚合处理纵向 ECG，有效建模时序生理信号的动态变化",
+      "双模态人群记忆库引入相似病例先验，提升临床预后预测的人群上下文感知能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-016",
+  "title": "Mitigating Capability Degradation in LLM Self-Improvement via Representation Geometry Regularization",
+  "source_url": "https://arxiv.org/abs/2610.12855",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型（LLM）自我改进中的能力退化问题提出解决方案。研究聚焦于 On-Policy Self-distillation（OPSD）这一自蒸馏范式，该范式让同一模型在不同条件上下文下分别充当教师和学生，从而实现能力自我提升。然而作者发现，OPSD 方法会逐步损害模型先前已获得的能力：在训练早期能够正确回答的查询，随着优化推进反而出现错误回答，即出现能力退化现象。为缓解该问题，论文提出基于表示几何正则化（Representation Geometry Regularization）的方法，通过约束模型内部表示空间的几何结构，在保持自我改进收益的同时抑制已有能力的衰减。该工作揭示了 LLM 自我改进训练中一个被忽视的稳定性问题，并给出了可操作的正则化思路，对持续学习、自蒸馏、模型对齐与训练稳定性研究具有参考价值，尤其适合关注 LLM 训练动态与能力保持的研究者和工程师。",
+  "tags": [
+    "LLM",
+    "Self-Improvement",
+    "Self-Distillation",
+    "Regularization",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:29:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "On-Policy Self-distillation 虽能提升 LLM 能力，但会导致早期已掌握能力随训练推进而退化，形成能力遗忘问题。",
+      "表示几何正则化通过约束模型内部表示空间的几何结构，可在自我改进过程中缓解能力退化。",
+      "该研究揭示了自蒸馏训练中稳定性与可塑性之间的权衡，对持续学习和训练动态研究具有启示意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

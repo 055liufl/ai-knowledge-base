@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-100",
+  "title": "REDaCT: Collapse-Free Unlearning in Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2610.12769",
+  "source_platform": "rss_ai_research",
+  "summary": "REDaCT 是一种针对大型推理模型（LRM）的免训练遗忘方法，旨在解决现有遗忘技术导致的推理崩溃问题。在大型推理模型中，遗忘不仅需要从最终答案中移除特定信息，还需要从推理链（CoT）中清除相关痕迹。然而，现有方法在实现这一目标时往往导致模型无法生成连贯的思维链，或无法正常终止推理过程，即所谓的推理崩溃。REDaCT 通过检测与纠正性微调相结合的方式，在推理阶段动态识别并修正遗忘集相关的推理步骤，从而在不破坏模型推理能力的前提下实现有效遗忘。该方法的核心创新在于将遗忘操作从训练阶段转移到推理阶段，避免了传统微调对模型推理能力的损害。这一工作对于需要合规删除敏感信息、同时保持模型推理性能的场景具有重要意义，例如隐私保护、版权内容移除以及安全对齐等应用。",
+  "tags": [
+    "Unlearning",
+    "Large Reasoning Models",
+    "Chain-of-Thought",
+    "Inference-Time Intervention"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有大型推理模型的遗忘方法会导致推理崩溃，即模型无法生成连贯的思维链或无法正常终止推理过程。",
+      "REDaCT 将遗忘操作从训练阶段转移到推理阶段，通过检测和纠正性微调在推理时动态修正遗忘集相关的推理步骤。",
+      "该方法旨在同时从推理链和最终答案中移除遗忘集信息，同时保持模型的推理能力不受损害。",
+      "推理时遗忘为隐私保护、版权移除和安全对齐等场景提供了新的技术路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

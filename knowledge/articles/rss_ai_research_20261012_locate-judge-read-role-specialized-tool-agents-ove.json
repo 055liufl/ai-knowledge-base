@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261012-043",
+  "title": "Locate, Judge, Read: Role-Specialized Tool Agents over a Knowledge-Point Index for Open-Domain Multimodal Document QA",
+  "source_url": "https://arxiv.org/abs/2610.13128",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 KnowForge，一种面向开放域多模态文档问答的角色专业化工具智能体流水线。针对现有检索增强智能体让单一模型同时承担检索与阅读工具、自主调度导致效率与准确性受限的问题，KnowForge 将任务拆分为三个专门角色：基于混合检索构建的知识点索引、只能执行搜索的 Locator 智能体，以及由代码调度的桥接判断器（bridge judge），后者强制补全缺失的第二跳检索。此外还引入了类型化、大小受限的阅读机制。该工作值得关注，因为它通过角色分离与显式调度，缓解了单模型多工具调度中的规划混乱与检索遗漏问题，为大规模异构文档集合上的多模态问答提供了新的架构范式，对 RAG 与 Agent 系统设计具有参考价值。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Multimodal",
+    "Document QA",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将检索与阅读职责分离给不同专用智能体，可避免单模型同时调度多工具时的规划混乱",
+      "代码调度的桥接判断器强制补全第二跳检索，有效缓解多跳问答中的检索遗漏",
+      "基于知识点索引的混合检索为大规模异构文档集合提供了结构化检索基础",
+      "类型化、大小受限的阅读机制有助于控制上下文长度并提升阅读精度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

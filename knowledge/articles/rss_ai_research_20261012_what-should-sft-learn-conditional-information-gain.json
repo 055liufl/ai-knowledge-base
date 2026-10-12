@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-112",
+  "title": "What Should SFT Learn? Conditional Information Gain for Generalizable Post-Training",
+  "source_url": "https://arxiv.org/abs/2610.12995",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的监督微调（SFT）分析框架——条件信息增益（Conditional Information Gain），旨在解决传统SFT在训练分布外泛化能力不足的问题。传统SFT通过固定示例强制模型模仿外部轨迹，可能干扰预训练已支持的行为，导致过拟合和泛化性能下降。近期动态SFT方法通过重新加权或选择训练样本缓解该问题，但缺乏统一的理论解释。本文从信息论角度出发，将SFT学习目标重新定义为在给定输入条件下，模型输出分布相对于预训练先验的条件信息增益。通过分析该增益，作者揭示了哪些样本对泛化更有利，并提出了基于条件信息增益的样本选择或加权策略。该方法有望提升SFT在分布外任务上的表现，同时保留预训练知识。该工作为理解SFT的泛化机制提供了新视角，对后训练阶段的数据选择和优化具有重要指导意义，尤其适用于需要强泛化能力的推理和行为对齐任务。",
+  "tags": [
+    "SFT",
+    "Post-Training",
+    "Generalization",
+    "Information Theory"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:33:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统SFT强制模仿外部轨迹可能干扰预训练已支持的行为，限制泛化能力。",
+      "条件信息增益为动态SFT提供了理论框架，可量化样本对泛化的贡献。",
+      "基于条件信息增益的样本选择或加权策略有望提升分布外泛化性能。",
+      "该研究为后训练阶段的数据优化和模型行为对齐提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

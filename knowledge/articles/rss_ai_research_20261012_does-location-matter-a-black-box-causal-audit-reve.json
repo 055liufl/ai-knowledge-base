@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-041",
+  "title": "Does Location Matter? A Black-Box Causal Audit Reveals Model-Dependent Audio Grounding in LALM Hallucination",
+  "source_url": "https://arxiv.org/abs/2610.13112",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对大型音频语言模型（LALM）中普遍存在的物体幻觉问题——即模型会确认实际不存在的声音——提出了一种黑盒因果审计方法。现有主流缓解策略 Audio-Aware Decoding (AAD) 通过对比真实音频与全零“空白”波形的 logits 来检测幻觉，但此前已被指出存在分布外（OOD）问题。本文提出的黑盒因果测试直接隔离模型所声称的证据本身：首先利用 CLAP 相似度定位与声明相关的证据区域，然后通过频谱门控移除该区域，再比较模型输出变化，从而判断模型是否真正依赖音频证据进行判断。研究发现，LALM 的音频 grounding 行为具有模型依赖性，即不同模型对音频证据的依赖程度和方式存在显著差异，这挑战了以往对幻觉缓解策略的通用性假设。该工作为理解 LALM 幻觉机制提供了新的因果分析视角，并强调了评估音频 grounding 时需考虑模型特异性，对多模态大模型的可靠性与可解释性研究具有重要参考价值。",
+  "tags": [
+    "LALM",
+    "Hallucination",
+    "Causal Audit",
+    "Audio Grounding"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:30:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出黑盒因果测试，通过 CLAP 定位证据区域并频谱门控移除，直接检验模型是否依赖音频证据。",
+      "发现 LALM 的音频 grounding 行为是模型依赖的，不同模型对音频证据的依赖程度不同。",
+      "现有 AAD 缓解策略因使用全零波形而存在分布外问题，可能影响评估有效性。",
+      "为 LALM 幻觉研究提供了因果分析框架，强调需针对具体模型评估 grounding 能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

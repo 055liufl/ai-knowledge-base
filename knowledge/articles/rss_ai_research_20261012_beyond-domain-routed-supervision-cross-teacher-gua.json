@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-068",
+  "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.13521",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Cross-Teacher Guarding（跨教师守护）的新方法，用于改进多教师在线策略蒸馏（Multi-Teacher On-Policy Distillation, MOPD）。MOPD 通过将领域特定数据路由到专门的教师模型，并在学生模型生成的轨迹上提供密集的 token 级监督，从而整合多个教师的能力。然而，现有的领域路由机制仅区分不同领域的监督来源，所有领域的更新仍然作用于共享参数。当教师模型在响应风格和领域知识上差异较大时，这种共享参数更新会导致教师之间的监督信号相互干扰，甚至引发负迁移，降低学生模型的整体性能。该研究的核心贡献在于识别出这一跨领域干扰问题，并提出跨教师守护机制来缓解不同教师监督信号之间的冲突。这一工作对于多教师蒸馏、模型融合以及大语言模型的能力整合具有重要的理论和实践意义，尤其适用于需要整合多个专家模型能力的场景，如多领域对话系统、代码与自然语言混合任务等。该研究为多教师蒸馏的稳定性和有效性提供了新的解决思路，值得关注多模型协作与知识蒸馏的研究者和开发者深入阅读。",
+  "tags": [
+    "知识蒸馏",
+    "多教师学习",
+    "LLM",
+    "模型融合"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:31:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多教师在线策略蒸馏中，领域路由仅区分监督来源，但所有领域的更新仍作用于共享参数，导致教师间监督信号相互干扰。",
+      "当教师模型在响应风格和领域知识上差异较大时，共享参数更新可能引发负迁移，降低学生模型性能。",
+      "提出跨教师守护机制，旨在缓解不同教师监督信号之间的冲突，提升多教师蒸馏的稳定性和效果。",
+      "该工作为多教师蒸馏和模型能力整合提供了新的研究方向，尤其适用于需要融合多个专家模型的复杂场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

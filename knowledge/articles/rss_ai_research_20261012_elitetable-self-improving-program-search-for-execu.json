@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-002",
+  "title": "EliteTable: Self-Improving Program Search for Executable Control Policies",
+  "source_url": "https://arxiv.org/abs/2610.12536",
+  "source_platform": "rss_ai_research",
+  "summary": "EliteTable 是一种由大语言模型（LLM）引导的自改进程序搜索算法，其核心创新在于使用一个固定容量的高分解决方案表（EliteTable）来指导新提案的生成、现有方案的编辑以及多个方案的混合重组。该算法在六个 Gymnasium 控制任务上进行了评估，每个任务运行十代，每代包含五十个候选槽位，并且每个任务在十次独立初始化的搜索中重复评估。EliteTable 将进化计算中的精英保留策略与 LLM 的代码生成和编辑能力相结合，形成一种闭环的自我改进机制，使搜索过程能够持续从历史最优解中学习并产生更优的可执行控制策略。这项工作值得关注，因为它展示了 LLM 在程序搜索和自动策略发现方面的潜力，为强化学习、程序合成和自动化机器学习提供了新的思路，尤其是在需要生成可解释、可执行控制策略的场景中具有应用价值。",
+  "tags": [
+    "LLM",
+    "Program Search",
+    "Evolutionary Algorithm",
+    "Control Policy",
+    "Gymnasium"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:28:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EliteTable 通过固定容量的高分方案表引导 LLM 生成、编辑和混合程序，实现自改进搜索。",
+      "在六个 Gymnasium 控制任务上，每个任务进行十代、每代五十个候选的搜索，并重复十次独立初始化以评估稳定性。",
+      "该方法将进化计算的精英策略与 LLM 的代码生成能力结合，为可执行控制策略的自动发现提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

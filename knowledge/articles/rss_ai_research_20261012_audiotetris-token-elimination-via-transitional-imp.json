@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-136",
+  "title": "AudioTETRIS: Token Elimination via Transitional Importance Signals for Efficient Audio LLMs",
+  "source_url": "https://arxiv.org/abs/2610.13600",
+  "source_platform": "rss_ai_research",
+  "summary": "AudioTETRIS 提出了一种面向大型音频语言模型（LALM）的免训练 token 压缩方法，旨在解决音频编码器为短音频片段生成数百个 token 导致自注意力计算量呈二次方膨胀的问题。现有免训练压缩方法仅依赖粗粒度的注意力权重或特征相似度来剪枝或合并 token，忽略了音频 token 在时序上的过渡性重要性差异。AudioTETRIS 通过引入「过渡重要性信号」（Transitional Importance Signals）来识别并消除冗余 token，从而在保持语音-文本任务性能的同时显著降低推理计算开销。该工作属于音频 LLM 效率优化方向，对需要在边缘设备或低延迟场景部署语音交互系统的开发者具有直接参考价值，也为多模态 LLM 的 token 压缩研究提供了新思路。",
+  "tags": [
+    "Audio LLM",
+    "Token Compression",
+    "Efficient Inference",
+    "Speech"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "音频编码器为短音频生成数百 token，自注意力二次复杂度导致推理成本高，token 压缩是必要优化方向。",
+      "现有免训练压缩方法仅依赖粗粒度注意力或特征相似度，忽略了音频 token 的时序过渡重要性。",
+      "AudioTETRIS 通过过渡重要性信号实现免训练 token 消除，在效率与性能之间取得更好平衡。",
+      "该方法对低延迟、边缘部署的语音交互应用具有实际工程价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

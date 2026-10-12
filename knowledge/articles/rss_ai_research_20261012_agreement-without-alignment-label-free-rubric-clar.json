@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261012-126",
+  "title": "Agreement Without Alignment: Label-Free Rubric Clarification Increases LLM-Judge Consensus but Not Agreement with Humans",
+  "source_url": "https://arxiv.org/abs/2610.13303",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 LLM 评审团（LLM judge panel）中评审员之间的分歧问题，提出一种无需人工标注的评分标准澄清流程。该方法将评分标准分解为子标准，依据开发集上跨评审员的分歧程度对子标准排序，仅让编辑模型重写争议最大的子标准，并加入一个将可文本核查的子标准迁移的阶段。实验发现，这种无标签的评分标准澄清能显著提升 LLM 评审员之间的一致性（consensus），但并未提升其与人类判断的一致性（agreement）。这一结论对当前广泛采用 LLM 评审团进行模型评估的实践具有重要警示意义：评审员之间达成一致并不等于评审结果更接近人类真实偏好，二者可能相互脱节。该研究为 LLM-as-a-Judge 的可靠性评估提供了新的实证视角，值得关注模型评估与对齐方向的研究者和工程实践者参考。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "Alignment",
+    "Rubric"
+  ],
+  "author": null,
+  "published_at": "2026-10-12T17:26:57Z",
+  "collected_at": "2026-10-12T17:34:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无标签的评分标准澄清流程能提升 LLM 评审员之间的一致性，但无法提升其与人类判断的一致性",
+      "评审员之间的分歧并不必然意味着评分标准不清晰，仅靠消除分歧可能偏离人类真实偏好",
+      "LLM 评审团的高共识可能是一种假象，不能作为评估质量提升的充分证据",
+      "该研究提示 LLM-as-a-Judge 的评估可靠性需要同时考察共识度与人类对齐度两个维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
