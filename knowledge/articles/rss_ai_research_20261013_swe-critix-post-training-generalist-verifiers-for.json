@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-056",
+  "title": "SWE-Critix: Post-Training Generalist Verifiers for Assessing Coding-Agent Trajectories",
+  "source_url": "https://arxiv.org/abs/2610.13356",
+  "source_platform": "rss_ai_research",
+  "summary": "SWE-Critix 是一篇关于为编码智能体（Coding Agent）构建通用验证器（Verifier）的 arXiv 论文。随着编码智能体被越来越多地用于端到端软件工程任务，传统上依赖的\"标准答案\"式评估器往往并不存在，因此需要能够可靠判断并解释智能体行为轨迹的验证机制。然而，由于编码智能体已能处理长周期、复杂的软件工程任务，其执行轨迹可能极其冗长且难以评估，验证工作因此变得非常困难。该工作提出通过后训练（Post-Training）方式构建通用验证器，用于评估编码智能体的执行轨迹，从而在没有明确成功标准的情况下仍能对智能体表现进行判断和解释。这一方向值得关注，因为它直接回应了当前 Agent 评估体系中的核心痛点：当任务从短程、可验证的编程题扩展到真实软件工程场景时，如何自动化、可解释地衡量智能体是否真正完成了任务。通用验证器有望成为编码智能体训练、部署与迭代过程中的关键基础设施，支撑强化学习奖励建模、轨迹筛选与失败归因等下游应用。",
+  "tags": [
+    "Agent",
+    "Verifier",
+    "Post-Training",
+    "Code Generation",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:42:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码智能体在真实软件工程任务中缺乏现成的 oracle 评估器，验证能力成为制约其训练与部署的关键瓶颈。",
+      "长周期任务的执行轨迹极其复杂，传统评估方法难以胜任，需要专门的后训练通用验证器来判断和解释智能体行为。",
+      "通用验证器可服务于奖励建模、轨迹筛选与失败归因等下游场景，是编码智能体生态的重要基础设施。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

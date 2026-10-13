@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-040",
+  "title": "VETR: Execution-Grounded Self-Improving Agent for Symbolic Graphics Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.13098",
+  "source_platform": "rss_ai_research",
+  "summary": "VETR 提出了一种基于执行轨迹的自改进智能体框架，用于符号图形推理任务。当前视觉智能体依赖可执行的世界表示进行符号图形推理，但其持续改进受限于最终渲染结果带来的模糊监督信号。现有智能体系统通过反复交互来精炼场景，但缺乏从执行轨迹中递归提取可操作证据的机制，无法判断哪些符号编辑在程序执行过程中存活、消失或相互干扰。VETR 通过将执行过程本身作为监督来源，使智能体能够从程序执行的中间状态中学习，从而更精准地定位和修正符号编辑操作。该工作值得关注，因为它将执行轨迹提升为一等公民的监督信号，为智能体在符号推理任务中的自我改进提供了新范式，有望推动视觉-符号混合推理系统在复杂场景理解与程序化图形生成中的可靠性。",
+  "tags": [
+    "Agent",
+    "Symbolic Reasoning",
+    "Self-Improvement",
+    "Visual Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:41:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有视觉智能体依赖最终渲染结果进行监督，信号模糊且难以归因，限制了持续改进能力。",
+      "执行轨迹中蕴含丰富的中间状态信息，可揭示符号编辑的存活、消失与干扰情况，是更精确的监督来源。",
+      "VETR 通过递归提取执行证据实现自改进，为符号图形推理智能体提供了新的学习范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

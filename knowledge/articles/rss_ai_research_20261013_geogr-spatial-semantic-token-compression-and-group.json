@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-115",
+  "title": "GeoGR: Spatial-Semantic Token Compression and Group Routing for Efficient 3D VLMs",
+  "source_url": "https://arxiv.org/abs/2610.13035",
+  "source_platform": "rss_ai_research",
+  "summary": "GeoGR 是一篇针对 3D 视觉语言模型（3D VLM）推理效率问题的研究论文。当前多视图表示虽然能让预训练的图像和视频视觉语言模型理解 3D 场景，但其视觉 token 序列过长，导致推理成本高昂。作者指出冗余来自两个方面：一是同一场景区域在不同视图中的重复观测，二是 LLM 每一层都处理全部视觉 token，而不考虑其与当前计算的相关性。为此，GeoGR 提出一个两阶段框架，联合进行场景表示的压缩与分组路由：第一阶段通过空间-语义 token 压缩去除跨视图的重复信息，第二阶段通过分组路由机制让 LLM 只处理与当前计算相关的视觉 token。该工作值得关注，因为它直面 3D 多模态理解中的核心效率瓶颈，在保持 3D 场景理解能力的同时显著降低计算开销，对推动 3D VLM 的实际部署（如机器人、AR/VR、自动驾驶）具有实用价值。",
+  "tags": [
+    "3D VLM",
+    "Token Compression",
+    "Multimodal",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "3D 多视图视觉语言模型的推理瓶颈主要来自跨视图重复观测和逐层全量 token 处理两类冗余",
+      "GeoGR 通过空间-语义 token 压缩与分组路由的两阶段设计，联合解决场景表示冗余和计算分配冗余",
+      "该工作为 3D 场景理解在机器人、AR/VR 等实时场景中的高效部署提供了可行路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

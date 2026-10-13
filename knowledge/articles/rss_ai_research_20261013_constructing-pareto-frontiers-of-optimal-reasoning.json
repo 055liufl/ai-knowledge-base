@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-070",
+  "title": "Constructing Pareto Frontiers of Optimal Reasoning Termination Methods for Overthinking in Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2610.13570",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对推理模型在测试时扩展（test-time scaling）中出现的\"过度思考\"（overthinking）问题展开研究。过度思考指模型在已经获得足够信息后仍继续推理，导致计算资源浪费甚至答案质量下降。现有评估方法仅对比完整推理与截断推理的准确率和 token 消耗，缺乏对过度思考严重程度的量化参考，也无法评估不同缓解策略的理论上限。为此，作者提出逐步截断探测（Step-wise Truncation Probing, STP）方法，通过在推理链的不同步骤反复生成答案，刻画模型-任务层面的过度思考特征。基于该探测结果，论文进一步构建了最优推理终止方法的帕累托前沿（Pareto Frontier），为在不同准确率与计算成本权衡下选择终止策略提供理论依据。该工作为推理模型的效率优化提供了新的分析框架和评估基准，对降低推理成本、提升部署效率具有实际意义，尤其适用于需要大规模调用推理模型的生产场景。",
+  "tags": [
+    "Reasoning",
+    "Inference Efficiency",
+    "Overthinking",
+    "Test-time Scaling"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 Step-wise Truncation Probing (STP) 方法，可在模型-任务层面量化过度思考的严重程度",
+      "构建最优推理终止策略的帕累托前沿，为准确率与 token 成本的权衡提供理论参考",
+      "现有评估仅比较完整推理与截断推理，缺乏对过度思考缓解策略理论上限的分析",
+      "该框架有助于在生产环境中为推理模型选择更高效的终止策略，降低推理成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

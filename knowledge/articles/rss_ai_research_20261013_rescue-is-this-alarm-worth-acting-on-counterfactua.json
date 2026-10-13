@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261013-134",
+  "title": "RESCUE: Is This Alarm Worth Acting On? Counterfactual Evaluation of VLA Runtime Monitors",
+  "source_url": "https://arxiv.org/abs/2610.13516",
+  "source_platform": "rss_ai_research",
+  "summary": "RESCUE 是一篇针对机器人策略运行时故障监控器（runtime failure monitors）评估方法的论文。传统评估方式主要关注监控器能否准确区分失败与成功的执行轨迹，但作者指出这种评估存在两个关键盲点：一是准确的警报可能来得太晚，导致无法及时恢复；二是误报的干预可能打断本可成功的执行。为此，论文提出 RESCUE 框架，采用反事实（counterfactual）评估思路，通过在模拟器和策略状态中恢复执行状态，检验监控器的警报是否真正能够促成有效干预，而不仅仅是判断执行是否失败。该工作聚焦于 VLA（Vision-Language-Action）模型的运行时监控，属于机器人学习与安全监控的交叉方向。其价值在于将监控器评估从'分类准确性'推进到'干预有效性'，为构建更可靠的机器人策略部署系统提供了新的评估范式，对从事机器人学习、VLA 模型部署和安全监控的研究者与工程师具有参考意义。",
+  "tags": [
+    "VLA",
+    "Runtime Monitoring",
+    "Robotics",
+    "Safety",
+    "Counterfactual Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:46:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统监控器评估只关注失败/成功分类准确率，忽略了警报时机与干预后果，可能高估监控器的实际价值。",
+      "RESCUE 通过反事实状态恢复来评估警报是否真正支持有效干预，将评估目标从'检测准确'转向'干预有用'。",
+      "该框架针对 VLA 机器人策略的运行时监控，强调误报干预可能破坏原本成功的执行，需权衡干预收益与风险。",
+      "为机器人策略部署中的安全监控提供了更贴近实际决策效果的评估方法论。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

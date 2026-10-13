@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-125",
+  "title": "PRIME: Pre-Retrieval Index Modeling Enhancement for Structured Document Retrieval-Real",
+  "source_url": "https://arxiv.org/abs/2610.13296",
+  "source_platform": "rss_ai_research",
+  "summary": "PRIME（Pre-Retrieval Index Modeling & Enhancement）是一篇针对结构化文档检索的 arXiv 论文，聚焦于 LLM Agent 在外部知识库上进行高精度检索时的索引侧优化问题。现有信息检索研究主要优化查询侧检索器（如 ColBERT、BGE）和生成器（如 Self-RAG、GraphRAG），而将语料侧表示简化为分块（chunking），导致索引质量这一关键杠杆长期被忽视。PRIME 提出在检索前对索引建模与增强，通过改善语料侧的表示质量来提升整体检索精度。该工作值得关注的原因在于：它指出了当前 RAG 与 Agent 检索流程中被忽略的环节——索引构建本身，而非仅仅优化查询或生成阶段；对于依赖外部知识库的 LLM Agent 而言，索引质量直接影响检索召回与最终回答的准确性。如果 PRIME 的方法有效，可能为结构化文档检索提供新的优化方向，并推动检索增强生成系统在索引层面的系统性改进。",
+  "tags": [
+    "RAG",
+    "Information Retrieval",
+    "LLM Agent",
+    "Structured Document"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:46:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 IR 研究过度关注查询侧检索器和生成器优化，索引侧质量（语料表示）被简化为分块，成为被忽视的优化杠杆。",
+      "PRIME 提出在检索前对索引进行建模与增强，以提升结构化文档检索的精度。",
+      "该工作对 LLM Agent 依赖外部知识库的场景具有潜在价值，可能推动 RAG 系统在索引层面的改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

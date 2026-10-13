@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-031",
+  "title": "Hindsight Structured Advice Distillation: Steering Executor Agents with Advisors Trained on Their Failures and Task Characteristics",
+  "source_url": "https://arxiv.org/abs/2610.13000",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“后见之明结构化建议蒸馏”（Hindsight Structured Advice Distillation）的方法，旨在提升语言模型智能体在专业领域（如金融、医疗、法律）执行任务时的细节准确性。现有智能体虽然具备完成任务的基本能力，但常忽略任务中的关键细节，例如财务报告中具体数据的出处或公司披露指标的方式。重新训练智能体以学习这些细节成本高昂，且对于闭源或共享系统往往不可行。该方法通过训练“顾问”模型，利用执行器智能体过往的失败案例和任务特征，生成结构化的建议，从而在不修改执行器本身的情况下引导其改进。这种蒸馏方式将失败经验转化为可复用的指导，为智能体在专业场景中的部署提供了低成本、高效益的优化路径。该工作值得关注，因为它解决了智能体落地中的实际痛点——如何在不重训模型的前提下提升其专业细节处理能力，同时为智能体协作与知识迁移提供了新思路。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Distillation",
+    "Failure Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:41:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过分析执行器智能体的失败案例和任务特征，训练顾问模型生成结构化建议，可有效引导智能体关注任务细节。",
+      "该方法避免了重新训练执行器智能体的高昂成本，尤其适用于闭源或共享系统。",
+      "将失败经验蒸馏为可复用的建议，为智能体在专业领域的持续改进提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

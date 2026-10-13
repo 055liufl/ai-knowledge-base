@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261013-109",
+  "title": "JoyInside-VLM-Agent: Product-Conditioned Multimodal Policy Learning for Embodied Agents",
+  "source_url": "https://arxiv.org/abs/2610.12957",
+  "source_platform": "rss_ai_research",
+  "summary": "JoyInside-VLM-Agent 是一个面向具身智能体（embodied agents）的 ReAct 风格多模态智能体框架，通过产品条件化的轨迹构建（product-conditioned trajectory construction）与分阶段策略学习（staged policy learning）来训练机器人平台和智能硬件上的执行策略。该工作关注的核心问题是：具身智能体需要将多模态观测与用户请求转化为可执行动作，同时适应产品约束、动态变化的目标以及执行反馈。为支撑训练，作者构建了一个闭环沙箱（closed-loop sandbox），用于生成覆盖多种交互场景的多模态轨迹数据。该研究值得关注的原因在于：其一，它将大视觉语言模型（VLM）与具身控制结合，探索从感知到行动的端到端策略学习；其二，它强调'产品条件化'，即策略需适配具体硬件产品的物理与功能约束，这比通用机器人策略更贴近真实落地场景；其三，分阶段策略学习与闭环数据生成机制为具身智能体的训练提供了可扩展的工程范式。该工作对机器人、智能硬件以及多模态 Agent 领域的研究者和开发者具有参考价值，尤其在如何利用合成轨迹降低",
+  "tags": [
+    "VLM",
+    "Embodied AI",
+    "Agent",
+    "Multimodal",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出产品条件化的轨迹构建方法，使具身智能体策略能够适配具体硬件产品的物理与功能约束，而非仅追求通用性。",
+      "采用 ReAct 风格的多模态智能体架构，将推理与行动交替进行，以应对动态目标与执行反馈。",
+      "通过闭环沙箱生成多模态交互轨迹，为分阶段策略学习提供可扩展的训练数据，降低对真实机器人数据采集的依赖。",
+      "分阶段策略学习机制有助于在复杂具身任务中稳定训练，兼顾感知、推理与动作执行的协同优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

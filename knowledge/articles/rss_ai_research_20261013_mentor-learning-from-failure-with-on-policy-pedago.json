@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-071",
+  "title": "MENTOR: Learning from Failure with On-Policy Pedagogical Intervention",
+  "source_url": "https://arxiv.org/abs/2610.13594",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 MENTOR 框架，针对大推理模型在可验证奖励强化学习（RLVR）中常见的\"零奖励崩溃\"问题——即任务难度骤增导致学习信号消失的训练失败现象。作者认为，传统做法直接丢弃这些失败轨迹是浪费的，因为失败轨迹中蕴含着关于模型认知缺口的宝贵诊断信息。MENTOR 通过在线策略教学干预（On-Policy Pedagogical Intervention）机制，将这些失败样本转化为有效的学习信号，从而在困难任务上维持稳定的训练梯度。该工作对提升大推理模型在复杂推理任务上的鲁棒性和训练效率具有重要意义，尤其适用于数学推理、代码生成等依赖可验证奖励的强化学习场景。其核心价值在于重新审视\"失败\"在强化学习中的角色，将负面样本从噪声转变为教学资源，为 RLVR 训练稳定性问题提供了新的解决思路。",
+  "tags": [
+    "RLVR",
+    "LLM",
+    "Reasoning",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零奖励崩溃是 RLVR 训练中的关键失败模式，任务难度骤增会导致学习信号完全消失",
+      "失败轨迹并非无用噪声，而是包含模型认知缺口诊断信息的宝贵教学资源",
+      "在线策略教学干预可将失败样本转化为有效学习信号，维持困难任务上的训练稳定性",
+      "该思路为强化学习训练中的负样本利用提供了从\"丢弃\"到\"教学\"的范式转变"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

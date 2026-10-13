@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-023",
+  "title": "Teaching neural decoders with language",
+  "source_url": "https://arxiv.org/abs/2610.12921",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“语言作为监督”（Language as Supervision, LaS）的新方法，用于训练神经解码器。传统的脑机接口（BCI）神经解码通常采用类别标签监督（CLS），即直接将神经活动映射到离散的类别标签，但这种方式无法显式地建模类别之间的语义关系。LaS 的核心思想是利用自然语言对类别进行描述，通过可学习的投影将神经特征与文本描述对齐，并在推理时使用候选文本原型进行分类预测。作者在视觉、运动和语音解码任务上，基于头皮脑电（scalp EEG）等信号，评估了七种编码器架构，每个任务独立训练模型。该方法有望提升神经解码的泛化能力和语义可解释性，为脑机接口与自然语言处理的交叉研究提供了新思路。",
+  "tags": [
+    "BCI",
+    "Neural Decoding",
+    "Language Supervision",
+    "EEG"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:40:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统类别标签监督（CLS）忽略了类别间的语义关系，而LaS通过自然语言描述显式建模这些关系。",
+      "LaS使用可学习的投影将神经特征与文本原型对齐，并利用文本原型进行分类预测。",
+      "在视觉、运动和语音解码任务上，基于头皮脑电等信号，评估了七种编码器架构，验证了方法的有效性。",
+      "该方法为脑机接口提供了更语义化、可解释的监督信号，有望提升跨类别泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

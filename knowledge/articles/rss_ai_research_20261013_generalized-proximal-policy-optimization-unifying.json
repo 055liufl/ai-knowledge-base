@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-113",
+  "title": "Generalized Proximal Policy Optimization: Unifying LLM RL Algorithms from the Perspective of Divergence",
+  "source_url": "https://arxiv.org/abs/2610.13015",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Generalized Proximal Policy Optimization (GPPO)，从散度（divergence）视角统一了 LLM 强化学习中的多种算法。当前 LLM 推理能力提升主要依赖 PPO，但其裁剪代理在几何上是退化的，无法自适应地调节对策略偏移的抵抗，导致过早裁剪和探索能力下降。后续变体（如 GRPO、DAPO 等）虽缓解了部分问题，但修改零散且依赖启发式。GPPO 将 PPO 及其变体统一为一个广义框架，通过引入可调的散度度量来动态控制策略更新幅度，从而在稳定性和探索性之间取得更好平衡。该工作为 LLM RL 算法提供了理论统一视角，并可能简化未来算法设计，对研究者和开发者具有较高参考价值。",
+  "tags": [
+    "RL",
+    "LLM",
+    "PPO",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PPO 的裁剪代理在几何上退化，无法自适应调节对策略偏移的抵抗，导致过早裁剪和探索不足。",
+      "现有 LLM RL 变体（如 GRPO、DAPO）的改进是碎片化和启发式的，缺乏统一理论框架。",
+      "GPPO 从散度视角统一了 PPO 及其变体，通过可调散度度量动态控制策略更新。",
+      "该框架有望简化 LLM 强化学习算法设计，并在稳定性和探索性之间实现更优权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

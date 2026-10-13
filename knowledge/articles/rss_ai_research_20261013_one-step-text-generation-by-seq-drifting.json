@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261013-018",
+  "title": "One-Step Text Generation by Seq-Drifting",
+  "source_url": "https://arxiv.org/abs/2610.12879",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Seq-Drifting 框架，探索扩散语言模型能否在单次前向传播中生成完整文本序列。现有扩散语言模型虽支持并行生成 token，但仍需多步采样才能保证质量。Seq-Drifting 将 drifting 方法应用于连续 token 表示序列，直接学习从高斯噪声到文本的映射，从而绕过传统扩散模型的多步去噪过程。该工作挑战了扩散语言模型必须多步采样的固有认知，若成功将显著降低文本生成延迟，对实时应用和边缘部署具有重要意义。其核心创新在于将连续表示空间的漂移学习扩展到序列级别，为一步式文本生成提供了新思路。",
+  "tags": [
+    "Diffusion",
+    "Text Generation",
+    "Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:40:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型虽能并行生成 token，但仍需多步采样，Seq-Drifting 旨在实现单步生成。",
+      "Seq-Drifting 将 drifting 应用于连续 token 表示序列，直接学习从高斯噪声到文本的映射。",
+      "该方法有望大幅降低文本生成延迟，推动实时应用和边缘部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

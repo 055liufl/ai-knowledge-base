@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-046",
+  "title": "Competence-Aware Orchestration for LLM-Based Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2610.13144",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向 LLM 多智能体系统（MAS）的「能力感知编排」（Competence-Aware Orchestration）方法，旨在解决多智能体协作中的一个核心矛盾：协作并非越多越好。现有 LLM 多智能体系统通常通过角色分工与协作来提升复杂推理能力，但固定的协作策略在面对不同难度或不同领域的查询时往往效率低下——简单问题上的过度协作会带来额外的 token 开销和冗余交互，而困难问题上的协作不足又会导致推理质量下降。该研究的核心洞察是：协作强度应当根据底层模型（backbone）在当前查询上的实际能力动态调整。论文提出了一种能够评估模型对当前查询胜任程度并据此自适应地决定协作规模与方式的编排机制，从而在推理质量与计算成本之间取得更优的权衡。这项工作值得关注，因为它触及了多智能体系统落地中的关键工程问题——成本与性能的平衡，为构建更高效、更经济的 LLM 智能体系统提供了新的思路，对研究者和开发者均具有参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Orchestration",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:42:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体协作并非越多越好，协作强度应与底层模型对当前查询的胜任能力相匹配",
+      "过度协作会带来额外的 token 成本和冗余交互，而协作不足则影响复杂问题的推理质量",
+      "能力感知的动态编排能够在推理质量与计算成本之间实现更优的权衡",
+      "该问题对 LLM 多智能体系统的实际落地具有重要的工程意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

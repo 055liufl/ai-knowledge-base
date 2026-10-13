@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261013-081",
+  "title": "X-AgentRed: Red-Teaming Personal Agents in Evolving Multi-Service Ecosystems",
+  "source_url": "https://arxiv.org/abs/2610.13886",
+  "source_platform": "rss_ai_research",
+  "summary": "X-AgentRed 是一篇关于个人智能体（Personal Agents）红队测试（Red-Teaming）的 arXiv 论文，聚焦于智能体在跨服务、多工具生态系统中执行用户请求时可能产生的组合性失败（compositional failures）。随着个人智能体越来越多地通过工具连接 Web 与各类应用，其行为效果会在多个服务之间累积和交互，即使面对完全良性的用户请求，也可能引发非预期甚至有害的结果。现有红队方法通常只是简单地提示 LLM 去识别潜在危害，缺乏对多样化跨服务路径的系统性探索，因此难以主动发现这类组合性风险。该工作提出 X-AgentRed 框架，旨在系统化地探索跨服务调用路径，从而在智能体部署前主动识别组合性失败模式。其价值在于：随着 Agent 从单工具走向多服务编排，安全边界从单点漏洞扩展到路径组合空间，传统单轮提示式红队已不足以覆盖真实风险面。该研究为 Agent 安全评测提供了新的方法论视角，对构建可信、可审计的个人智能体系统具有重要参考意义，尤其适用于关注 Agent 安全、工具调用编排与多服务集成的开发者和研究者。",
+  "tags": [
+    "Agent",
+    "Red-Teaming",
+    "AI Safety",
+    "Tool Use",
+    "Multi-Service"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "个人智能体的风险主要来自跨服务动作的累积与交互，而非单一工具调用，良性请求也可能导致有害的组合性结果。",
+      "现有红队方法多依赖简单提示 LLM 识别危害，缺乏对多样化跨服务路径的系统性探索，覆盖能力有限。",
+      "X-AgentRed 通过系统化探索跨服务路径来主动发现组合性失败，为 Agent 安全评测提供了路径级方法论。",
+      "随着 Agent 从单工具走向多服务编排，安全评测需从单点漏洞转向组合路径空间，红队测试范式需要相应升级。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

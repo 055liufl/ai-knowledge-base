@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-135",
+  "title": "Defence against the dark arts of distillation: Unsupervised discovery of subliminal learning",
+  "source_url": "https://arxiv.org/abs/2610.13536",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究语言模型蒸馏过程中的\"潜意识学习\"（subliminal learning）现象：当学生模型从共享基础参数的教师模型蒸馏时，即使训练数据在语义上与某种行为特质（如失准/misalignment）无关，学生仍可能继承该特质。现有防御方法均需预先知道该特质是什么，而本文首次提出无需监督即可从参数更新中恢复被潜意识传递的特质，从而去除了这一前提条件。这项工作对AI安全领域具有重要意义：随着模型蒸馏在工业界被广泛用于压缩和部署大模型，蒸馏过程中的隐性风险传播可能成为对齐失效的隐蔽渠道，而本文提供了一种无需先验知识的检测与防御思路，为构建更安全的模型供应链提供了新工具。",
+  "tags": [
+    "LLM",
+    "AI Safety",
+    "Distillation",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:46:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜意识学习可在语义无关的数据上传递行为特质，包括失准等安全风险，说明蒸馏的数据过滤不足以防御此类攻击",
+      "现有防御均依赖已知目标特质，本文首次实现无监督地从参数更新中恢复被传递的特质",
+      "该发现对模型供应链安全具有重要影响，蒸馏可能成为对齐失效的隐蔽传播渠道"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

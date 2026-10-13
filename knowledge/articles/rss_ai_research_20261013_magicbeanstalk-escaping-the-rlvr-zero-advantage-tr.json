@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-008",
+  "title": "MagicBeanStalk: Escaping the RLVR Zero Advantage Trap with Recursive Data Synthesis",
+  "source_url": "https://arxiv.org/abs/2610.12659",
+  "source_platform": "rss_ai_research",
+  "summary": "MagicBeanStalk 是一篇针对 RLVR（可验证奖励强化学习）数据合成效率问题的研究论文。当前以数据为中心的 RLVR 扩展方法主要关注收集或生成可验证的训练问题，但论文指出语料库规模本身并不能决定数据集是否为目标策略提供有效的学习信号。作者通过实验刻画了数据集有效性与其问题、目标策略及训练 rollout 预算之间的函数关系，并在此基础上揭示了 RLVR 训练中存在的「零优势陷阱」（Zero Advantage Trap）——即当策略对某些问题已经完全掌握或完全无法解决时，优势函数趋近于零，导致梯度信号消失，训练效率大幅下降。为解决这一问题，论文提出 MagicBeanStalk 方法，通过递归数据合成（Recursive Data Synthesis）动态生成与目标策略当前能力相匹配的训练问题，从而持续提供有效的学习信号，避免零优势陷阱。该工作对于提升 RLVR 训练的数据效率和计算效率具有重要意义，尤其在大规模语言模型推理能力训练场景下，为数据合成策略提供了理论指导与实用方法。",
+  "tags": [
+    "RLVR",
+    "Data Synthesis",
+    "Reinforcement Learning",
+    "LLM Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:40:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据集的有效性不仅取决于规模，还取决于问题难度与目标策略能力的匹配程度以及 rollout 预算",
+      "RLVR 训练中存在零优势陷阱：当问题对当前策略过难或过易时，优势信号消失导致训练低效",
+      "递归数据合成能够动态生成与策略当前能力匹配的问题，持续提供有效学习信号",
+      "该工作为以数据为中心的 RLVR 扩展提供了从「量」到「质」转变的理论框架与方法论"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

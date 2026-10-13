@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-038",
+  "title": "SWEAR: Section-Wise Efficient Audio Reasoning via Self-Rated Difficulty",
+  "source_url": "https://arxiv.org/abs/2610.13081",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 SWEAR（Section-Wise Efficient Audio Reasoning via Self-Rated Difficulty），针对大型音频语言模型（LALMs）在自适应推理中难度估计过于粗粒度的问题，通过离线评估构建五维难度分数与压缩推理轨迹，实现更精细的推理努力分配。现有方法通常仅用单一或少量指标判断难度，忽略了决定推理复杂度的多种因素，导致效率与准确率难以兼顾。SWEAR 的核心创新在于将音频推理过程按片段（section-wise）划分，并利用自评难度（self-rated difficulty）动态决定每个片段所需的推理深度，从而在保持准确率的同时显著减少计算开销。该工作对音频理解、多模态推理及高效推理系统具有参考价值，尤其适合需要实时或资源受限场景下的音频交互应用。",
+  "tags": [
+    "Audio-Language Models",
+    "Adaptive Reasoning",
+    "Efficient Inference",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:41:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有音频语言模型的自适应推理依赖粗粒度难度估计，忽略了决定推理努力的多维因素。",
+      "SWEAR 通过离线评估生成五维难度分数和压缩推理轨迹，实现片段级的推理深度控制。",
+      "自评难度机制可在保持准确率的同时降低推理计算量，提升音频推理效率。",
+      "该方法为多模态大模型的高效推理提供了可借鉴的细粒度难度建模思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

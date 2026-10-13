@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-037",
+  "title": "Attention Sees, MLP Refuses: Tracing the Attention-to-MLP Safety Pathway in LLMs",
+  "source_url": "https://arxiv.org/abs/2610.13078",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的分析框架，用于理解大语言模型（LLM）安全对齐中的两个关键失败模式：越狱攻击和过度拒绝。作者将这一问题重新定义为“通路问题”，并在仅解码器Transformer的残差流更新上进行可测量分析，区分了模块更新所暴露的有害性信息与其在可读性上产生的变化。研究发现，注意力机制能够“看到”有害性信息，但MLP模块却“拒绝”利用这些信息来写入拒绝行为，从而揭示了从注意力到MLP的安全通路断裂。这项工作为理解LLM安全机制提供了新的可解释性视角，并可能指导更鲁棒的安全对齐方法。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Interpretability",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:41:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力机制能够识别有害性信息，但MLP模块未能有效利用这些信息来触发拒绝行为。",
+      "安全失败可被重新定义为注意力到MLP通路的断裂问题，并可在残差流更新上量化。",
+      "该框架区分了模块暴露的信息与模块实际写入的拒绝计算，为安全对齐提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

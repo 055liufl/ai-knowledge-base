@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-091",
+  "title": "Cancerous Backdoor Attack: Gradual Activation via Invisible Tokens and A Stage Controller",
+  "source_url": "https://arxiv.org/abs/2610.12644",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为\"癌性后门攻击\"（Cancerous Backdoor Attack）的新型大语言模型后门攻击范式。传统后门攻击遵循\"触发器-响应\"模式，即一旦满足特定触发条件，模型便直接激活单一的终端恶意行为。然而，这种单点式激活无法刻画恶意行为通过多个中间阶段逐步发展、最终达到终端激活阶段的渐进式攻击场景。该研究借鉴癌症的渐进发展特性，提出通过\"隐形令牌\"（Invisible Tokens）和\"阶段控制器\"（Stage Controller）实现后门的渐进式激活，使模型推理过程被逐步腐蚀，而非一次性触发。这一工作值得关注的原因在于：它突破了现有后门攻击研究的单点假设，揭示了更隐蔽、更难检测的攻击面，对LLM安全对齐、后门检测与防御机制提出了新的挑战，尤其对部署在关键场景中的大模型安全性评估具有重要警示意义。",
+  "tags": [
+    "LLM Security",
+    "Backdoor Attack",
+    "Adversarial Attack",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:44:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统后门攻击采用单点触发-响应模式，本文提出恶意行为可通过多个中间阶段渐进发展的新攻击范式",
+      "通过隐形令牌与阶段控制器实现后门的渐进式激活，使攻击更隐蔽、更难被现有检测方法识别",
+      "该研究拓展了LLM后门攻击的威胁模型，对安全对齐与防御机制提出新挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

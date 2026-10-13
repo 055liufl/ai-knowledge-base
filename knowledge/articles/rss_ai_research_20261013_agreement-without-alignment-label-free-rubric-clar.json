@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-126",
+  "title": "Agreement Without Alignment: Label-Free Rubric Clarification Increases LLM-Judge Consensus but Not Agreement with Humans",
+  "source_url": "https://arxiv.org/abs/2610.13303",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究 LLM 评审团（LLM-as-a-Judge）中评审员分歧与评分标准（rubric）清晰度之间的关系。作者提出一种无需人工标注的流程：将评分标准分解为子标准，按跨评审员在开发集上的分歧程度排序，仅让编辑模型重写争议最大的子标准，从而自动修复评分标准。实验发现，这种基于分歧的评分标准澄清能显著提升 LLM 评审员之间的一致性（consensus），但并未同步提升其与人类判断的一致性（agreement with humans）。这一结果揭示了 LLM 评审团内部共识与人类对齐之间的关键脱节：让模型彼此更一致，并不等于让它们更接近人类标准。该研究对依赖 LLM 评审进行模型评估、数据筛选和 RLHF 的实践具有重要警示意义，提醒研究者和开发者不能将评审员间的高一致性简单等同于评估有效性。",
+  "tags": [
+    "LLM-as-a-Judge",
+    "Evaluation",
+    "Rubric",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:46:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无标注的评分标准澄清流程能提升 LLM 评审员之间的一致性，但无法提升其与人类判断的一致性。",
+      "评审员分歧并不必然意味着评分标准不清晰，也可能反映模型与人类在评价标准上的系统性偏差。",
+      "仅优化 LLM 评审团内部共识可能造成虚假的评估可靠性，需谨慎用于模型评估与数据筛选。",
+      "将评分标准分解为子标准并按分歧排序重写，是一种可扩展的自动 rubric 修复思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

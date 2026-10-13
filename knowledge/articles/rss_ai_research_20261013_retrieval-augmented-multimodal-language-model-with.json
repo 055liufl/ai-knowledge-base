@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261013-066",
+  "title": "Retrieval-Augmented Multimodal Language Model with Heterogeneous Evidence Integration for Clinical Prognosis",
+  "source_url": "https://arxiv.org/abs/2610.13510",
+  "source_platform": "rss_ai_research",
+  "summary": "PRISM（Population-Retrieved Inference for Structured Multimodal Prognosis）是一种面向临床预后任务的多模态语言模型，旨在解决传统模型难以整合异构医疗证据的问题。临床预后需要同时处理结构化测量数据、生理波形（如心电图）、纵向病史以及人群背景信息，这些数据在模态、时间尺度和语义层次上高度异质。PRISM 的核心创新包括：对每个特征进行数值分词（per-feature numerical tokenization），使结构化数值能够被语言模型原生处理；对纵向 ECG 采用近因加权聚合（recency-weighted aggregation），强调近期信号的重要性；并构建双模态人群记忆库（dual-modality population memory bank），在表示空间中进行检索增强，从而引入相似患者群体的先验知识。该工作将检索增强生成（RAG）范式从文本领域拓展到多模态临床场景，展示了语言模型作为异构医疗数据统一推理引擎的潜力。其价值在于：一方面为临床决策支持提供了更贴近真实数据形态的建模思路，另一方面为多模态 RA",
+  "tags": [
+    "Multimodal",
+    "RAG",
+    "Clinical AI",
+    "LLM",
+    "Healthcare"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PRISM 通过逐特征数值分词将结构化临床测量无缝接入语言模型，避免了传统表格数据与文本模态之间的割裂。",
+      "对纵向 ECG 采用近因加权聚合，体现了临床时间序列中近期信息更具诊断价值的领域先验。",
+      "双模态人群记忆库在表示空间进行检索，将相似患者群体的上下文作为外部证据注入推理过程，扩展了 RAG 在非文本模态上的应用边界。",
+      "该工作表明语言模型有潜力成为整合异构医疗证据的统一推理接口，为临床预后建模提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

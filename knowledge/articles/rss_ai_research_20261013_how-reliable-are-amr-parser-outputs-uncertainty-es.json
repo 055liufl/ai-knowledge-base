@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-122",
+  "title": "How Reliable are AMR Parser Outputs? Uncertainty Estimation for AMR Parsing",
+  "source_url": "https://arxiv.org/abs/2610.13236",
+  "source_platform": "rss_ai_research",
+  "summary": "本文首次系统研究了抽象语义表示（AMR）解析器输出的不确定性估计问题。尽管近年来AMR解析器的性能显著提升，但如何判断其输出何时可信仍缺乏探索。作者提出一种黑盒设置下的不确定性估计方法，利用top-k束搜索候选结果，通过计算候选之间的成对相似度来量化不确定性，并采用预测拒绝比（Prediction Rejection Ratio）进行评估。该研究填补了AMR解析可靠性评估的空白，为下游依赖AMR的应用（如语义理解、问答、信息抽取）提供了可信度信号，有助于在解析结果不可靠时触发人工干预或回退策略。其方法不依赖模型内部参数，具有较好的通用性和实用性，对推动AMR技术在实际系统中的安全部署具有重要意义。",
+  "tags": [
+    "AMR",
+    "Uncertainty Estimation",
+    "Semantic Parsing",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次针对AMR解析器开展不确定性估计研究，填补了输出可信度评估的空白。",
+      "提出黑盒设置下基于top-k束搜索候选成对相似度的不确定性估计方法，无需访问模型内部。",
+      "采用预测拒绝比（Prediction Rejection Ratio）作为评估指标，为AMR解析可靠性提供了量化标准。",
+      "该方法可帮助下游应用判断AMR解析结果是否可信，从而提升系统鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

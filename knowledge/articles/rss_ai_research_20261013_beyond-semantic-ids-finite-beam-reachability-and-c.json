@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-028",
+  "title": "Beyond Semantic IDs: Finite-Beam Reachability and Continuous-Query Generation in Generative Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.12977",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对生成式推荐（Generative Recommendation, GR）中基于离散语义ID（Semantic ID, SID）和有限宽度束搜索（beam search）的检索范式，提出并分析了其输出接口对召回能力的根本性限制。作者指出，现有方法通过自回归解码离散SID来检索物品，但有限宽度的束搜索会导致部分目标物品无法进入最终返回列表，即使模型在全局评分上具备可评分性。为此，论文区分了“全目录可评分性”与“经验Top-K支持”两个概念，并引入两种连续查询生成范式：CQG-Single（生成单个检索查询）等。该研究揭示了离散输出接口的瓶颈，并探索了连续查询生成作为替代方案的潜力，对生成式推荐系统的检索机制设计具有重要理论意义和实践价值，值得推荐系统研究者和开发者关注。",
+  "tags": [
+    "Generative Recommendation",
+    "Semantic ID",
+    "Beam Search",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:41:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "有限宽度束搜索在离散SID生成式推荐中会导致部分目标物品无法进入返回列表，形成召回瓶颈",
+      "区分全目录可评分性与经验Top-K支持，有助于更准确地评估生成式检索的实际能力",
+      "连续查询生成（如CQG-Single）可能突破离散SID输出接口的限制，提升召回覆盖"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

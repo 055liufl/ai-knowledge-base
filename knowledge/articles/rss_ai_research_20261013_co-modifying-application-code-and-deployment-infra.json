@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261013-106",
+  "title": "Co-Modifying Application Code and Deployment Infrastructure: A Causal Study of AI Agent Pull Requests",
+  "source_url": "https://arxiv.org/abs/2610.12849",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究AI软件工程代理在真实协作仓库中同时修改应用代码与部署基础设施（CI/CD流水线、容器、配置清单）的能力。当前代理主要在隔离沙箱中针对同步本地测试进行评估，缺乏部署感知，导致跨域修改引入未验证的异步依赖。作者通过因果研究分析AI代理提交的Pull Request，揭示代理在跨域修改中的行为模式与失败原因。该研究值得关注，因为它指出了当前代理评估范式的关键盲区——忽略部署基础设施的修改，并首次系统性地量化了跨域修改对代码集成的影响，为构建具备部署感知的下一代软件工程代理提供了实证基础。",
+  "tags": [
+    "AI Agent",
+    "Software Engineering",
+    "CI/CD",
+    "Pull Request",
+    "Causal Study"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前AI软件工程代理的评估局限于隔离沙箱和同步本地测试，忽略了真实部署所需的CI/CD、容器和配置清单修改。",
+      "代理缺乏部署感知，跨域修改会引入未验证的异步依赖，增加集成风险。",
+      "通过因果研究分析AI代理的Pull Request，可以揭示跨域修改的行为模式与失败原因。",
+      "研究呼吁将部署基础设施修改纳入代理评估与训练，以提升真实仓库中的协作能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

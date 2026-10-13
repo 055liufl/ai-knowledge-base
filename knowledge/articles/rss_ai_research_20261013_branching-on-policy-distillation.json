@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-064",
+  "title": "Branching On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.13481",
+  "source_platform": "rss_ai_research",
+  "summary": "BranchOPD（Branching On-Policy Distillation）是一项针对在线策略蒸馏（On-Policy Distillation, OPD）的改进方法。传统 OPD 在训练学生模型时，依赖学生自身生成的轨迹，并由教师模型提供监督信号。然而，单条轨迹在每个决策点只能实现一种延续，在有限的采样预算下，监督覆盖范围严重受限，导致蒸馏效率不高。BranchOPD 的核心创新在于：利用学生模型的不确定性和师生模型之间的分歧来识别信息量大的决策点，然后从这些共享前缀处重新采样学生策略的多种延续分支，从而在相同采样预算下获得更丰富的监督信号。该方法有望提升知识蒸馏的样本效率和最终学生模型性能，对模型压缩、推理加速以及大语言模型的小型化部署具有实际意义。该工作来自 arXiv 预印本，属于模型训练与优化领域的前沿探索，值得关注蒸馏技术、高效训练以及 LLM 落地的研究者和开发者阅读。",
+  "tags": [
+    "知识蒸馏",
+    "LLM",
+    "训练优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统在线策略蒸馏因单轨迹限制导致监督覆盖不足，BranchOPD 通过分支采样提升监督多样性。",
+      "利用学生不确定性和师生分歧选择关键决策点，可更高效地分配采样预算。",
+      "从共享前缀重采样学生策略延续，能在有限预算下获得更丰富的教师监督信号。",
+      "该方法有望提升蒸馏的样本效率和最终学生模型性能，对模型压缩与部署有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-089",
+  "title": "Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data",
+  "source_url": "https://arxiv.org/abs/2610.12618",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“Mesh-Native Tokenisation”的方法，旨在将基础模型（Foundation Models）适配到非结构化数据上，特别是针对物理场数据。物理基础模型通常需要将时空物理场数据通过tokenisation层映射到潜在表示，以便进行动态处理。传统方法使用卷积编码器，虽然能高效地捕捉局部信息，但无法直接应用于非结构化网格数据（如有限元网格或点云）。该研究通过设计一种原生支持网格结构的tokenisation层，使得基础模型能够直接处理非结构化数据，从而扩展了物理基础模型的应用范围。这项工作值得关注，因为它解决了物理仿真与机器学习结合中的一个关键瓶颈：如何让强大的基础模型灵活地处理各种非结构化网格，而无需将其插值到规则网格上，避免了信息损失和计算开销。该方法有望推动科学计算与AI的深度融合，特别是在气候模拟、流体力学和材料科学等领域。",
+  "tags": [
+    "Foundation Models",
+    "Tokenisation",
+    "Unstructured Data",
+    "Physics Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:44:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统卷积编码器无法直接处理非结构化网格，限制了物理基础模型的适用性。",
+      "Mesh-Native Tokenisation通过原生网格操作，实现了对非结构化数据的直接token化。",
+      "该方法有望避免插值到规则网格带来的信息损失和计算开销。",
+      "为物理基础模型在科学计算中的广泛应用提供了新的可能性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

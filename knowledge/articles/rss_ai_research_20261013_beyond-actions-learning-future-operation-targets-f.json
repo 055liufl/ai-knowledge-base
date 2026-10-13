@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-120",
+  "title": "Beyond Actions: Learning Future Operation Targets for Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2610.13212",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Action-Future Coupled Effect Learning (AFCE) 的新方法，旨在改进视觉-语言-动作（VLA）模型的训练范式。传统 VLA 策略主要通过学习从图像、语言和状态预测动作块来执行任务，但动作本身只描述了机器人应执行什么命令，并未说明这些命令将达成什么效果。AFCE 的核心思想是让策略将未来物理效果（Effect）作为主要预测目标，而非仅仅预测动作。具体而言，该方法使用一个离线 tokenizer 从演示数据中构建按时间排序的 Effect token，使模型能够学习动作与未来效果之间的耦合关系。这种未来导向的学习方式有望提升 VLA 模型对任务目标的理解和泛化能力，使机器人不仅知道如何动作，还能预见动作的后果。该研究对于机器人学习、具身智能和 VLA 模型的发展具有潜在的重要意义，可能推动更智能、更目标导向的机器人策略学习。",
+  "tags": [
+    "VLA",
+    "机器人学习",
+    "具身智能",
+    "动作预测"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 VLA 模型仅预测动作，缺乏对未来效果的显式建模，AFCE 将未来物理效果作为主要预测目标。",
+      "通过离线 tokenizer 构建时间有序的 Effect token，实现动作与未来效果的耦合学习。",
+      "该方法有望提升机器人策略对任务目标的理解和泛化能力，推动更目标导向的具身智能发展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-099",
+  "title": "Semantic Views: Certified Reuse of LLM Labels Across Semantic Queries",
+  "source_url": "https://arxiv.org/abs/2610.12768",
+  "source_platform": "rss_ai_research",
+  "summary": "SemViews 提出了一种针对语义查询引擎的认证语义过滤器，旨在解决 LLM 标签复用与查询优化中的成本与精度矛盾。语义查询引擎使用大语言模型评估自然语言过滤条件，每次评估都是一次昂贵的 oracle 调用。现有优化方法面临两难：级联代理方法在精度和召回率上不达标，有限样本保证方法节省有限，且所有方法在查询结束后丢弃 oracle 标签。SemViews 通过认证机制实现 LLM 标签在跨语义查询中的可复用，从而在保证精度和召回率目标的同时显著降低 oracle 调用成本。该工作对语义查询优化、LLM 成本控制以及标签复用机制具有重要价值，尤其适用于需要频繁执行自然语言过滤的数据库和检索系统。",
+  "tags": [
+    "LLM",
+    "Semantic Query",
+    "Query Optimization",
+    "Label Reuse"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:44:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义查询引擎中 LLM 调用是昂贵瓶颈，现有优化方法在精度、召回率和成本节省之间难以兼顾。",
+      "SemViews 通过认证机制实现 LLM 标签的跨查询复用，避免重复调用 oracle。",
+      "该方法在保证精度和召回率目标的同时，显著减少昂贵的 LLM 调用次数。",
+      "标签复用为语义查询优化提供了新方向，有望推动更高效的语义数据库系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

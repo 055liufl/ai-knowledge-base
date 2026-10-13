@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-093",
+  "title": "Incremental Retrieval-Augmented Generation for Human-in-the-Loop Decision Support",
+  "source_url": "https://arxiv.org/abs/2610.12666",
+  "source_platform": "rss_ai_research",
+  "summary": "iRAG 是一种面向人机协同决策支持的新型检索增强生成系统，其核心创新在于突破传统 RAG 依赖静态知识库的假设，转而处理知识库初始为空、并通过人类决策逐步积累的场景。系统将历史决策存储为可检索的先例，使模型从被动观察转向基于证据的主动建议，形成「决策—存储—检索—再决策」的增量闭环。该工作值得关注的原因在于：它直面真实组织中知识往往并非预先存在、而是在人机交互中逐步沉淀的现实问题，将 RAG 从静态问答工具扩展为动态决策支持基础设施。其混合决策机制强调人类在回路中的主导地位，模型仅提供有据可依的建议而非替代判断，这对医疗、法律、金融等高风险领域的 AI 辅助系统具有直接参考价值。同时，该方向也揭示了增量知识库带来的检索时效性、先例冲突消解与责任归属等新挑战，为后续研究提供了明确的问题空间。",
+  "tags": [
+    "RAG",
+    "Human-in-the-Loop",
+    "Decision Support",
+    "Incremental Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:44:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 RAG 假设知识库静态且预先存在，iRAG 则针对知识库初始为空、由人类决策逐步填充的真实场景，拓展了 RAG 的适用边界。",
+      "系统将历史决策作为可检索先例，使模型从被动观察者转变为基于证据的主动建议者，形成增量式人机协同闭环。",
+      "混合决策机制强调人类保留最终判断权，模型提供有据可依的建议，适用于医疗、法律等高风险决策场景。",
+      "增量知识库引入检索时效性、先例冲突与责任归属等新问题，构成后续研究的关键挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-073",
+  "title": "Learning Size Independent Constraint Models from Input Data and Positive and Negative Example Solutions",
+  "source_url": "https://arxiv.org/abs/2610.13640",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种约束获取工具（Constraint Acquisition Tool），能够从输入数据以及多个问题实例的正例和反例解中，自动生成与问题规模无关的约束程序。该工具首先基于全局约束和二元约束的典型模式，为每个具体实例找到规模特定的模型，然后将这些模型泛化，形成一个可应用于未见输入数据的规模无关模型。系统最终输出 MiniZinc 代码，便于在约束求解器中直接使用。这项工作的价值在于：传统约束建模通常需要人工编写模型，耗时且依赖专家经验；而该工具通过从数据中学习约束模式，实现了自动化建模，并且能够跨规模泛化，显著提升了约束编程的自动化程度和可复用性。对于运筹优化、组合问题求解以及自动机器学习等领域，该方法提供了一种从示例中学习问题结构的新思路，有望降低约束建模的门槛，加速问题求解流程。",
+  "tags": [
+    "Constraint Programming",
+    "Automated Modeling",
+    "MiniZinc",
+    "Program Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "从正反例解中自动学习约束模型，减少人工建模成本",
+      "通过模式泛化实现规模无关的约束程序，可应用于未见数据",
+      "输出 MiniZinc 代码，与现有约束求解生态无缝集成"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

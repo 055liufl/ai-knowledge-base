@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261013-006",
+  "title": "Janas: Run LLMs larger than RAM by streaming experts from SSD",
+  "source_url": "https://github.com/prabanta-dev/janas",
+  "source_platform": "rss_general_tech",
+  "summary": "Janas 是一个开源项目，旨在让用户能够在内存（RAM）有限的机器上运行参数量超过可用内存的大语言模型（LLM）。其核心思路是利用专家混合（MoE）架构的特性，将模型中的专家权重存储在 SSD 上，并在推理时按需流式加载到内存中，从而避免一次性加载整个模型。这种方法显著降低了运行大模型的内存门槛，使得消费级硬件也能运行原本需要高端服务器才能承载的模型。项目在 GitHub 上开源，提供了实现细节和使用说明。对于希望在本地部署大模型的开发者和研究者而言，Janas 提供了一种实用的内存优化方案，尤其适合 MoE 类模型（如 Mixtral）的推理场景。其创新点在于将 SSD 作为扩展内存层级，通过流式加载专家来平衡速度与内存占用，为边缘设备和大模型本地化部署提供了新思路。",
+  "tags": [
+    "LLM",
+    "MoE",
+    "Inference",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:39Z",
+  "collected_at": "2026-10-13T15:38:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过流式加载 MoE 专家权重，可以在有限 RAM 下运行超大模型",
+      "利用 SSD 作为扩展存储层级，按需加载专家，降低内存占用",
+      "为消费级硬件本地运行大模型提供了可行方案，尤其适合 MoE 架构"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

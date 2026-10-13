@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-053",
+  "title": "BoundaryEvo: Data-Model Co-Evolution at the Capability Boundary for Long-Chain Reasoning Distillation",
+  "source_url": "https://arxiv.org/abs/2610.13285",
+  "source_platform": "rss_ai_research",
+  "summary": "BoundaryEvo 提出了一种面向长链推理蒸馏的数据-模型协同演化框架，旨在解决现有蒸馏方法中训练数据静态选择导致的效率低下问题。传统方法在蒸馏前固定训练集，忽略了推理样本对学生的价值会随着学生能力的演化而动态变化，尤其在教师轨迹数量受限时，这种不匹配会带来显著的成本浪费。BoundaryEvo 的核心思想是让数据选择与模型训练同步进行，始终聚焦于学生当前能力边界附近的样本——这些样本既不过于简单（无学习价值），也不过于困难（无法有效学习），从而最大化每条教师轨迹的利用效率。该工作对于小语言模型推理能力提升、数据高效蒸馏以及课程学习策略具有重要参考价值，尤其适合在计算资源受限或高质量教师数据稀缺的场景下应用。",
+  "tags": [
+    "Distillation",
+    "Reasoning",
+    "LLM",
+    "Data-Centric AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:42:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态训练集选择与模型动态演化之间存在根本性错配，导致蒸馏数据利用率低下",
+      "将数据选择与模型训练耦合，聚焦能力边界样本可显著提升有限教师轨迹下的蒸馏效率",
+      "数据-模型协同演化范式为长链推理蒸馏提供了新的优化视角，有望推广至其他知识迁移场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

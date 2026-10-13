@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-068",
+  "title": "Beyond Domain-Routed Supervision: Cross-Teacher Guarding for Multi-Teacher On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.13521",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Cross-Teacher Guarding 的方法，用于改进多教师在线策略蒸馏（MOPD）。MOPD 通过将领域特定数据路由到专门的教师模型，并在学生生成的轨迹上提供密集的 token 级监督，从而整合多个教师的能力。然而，现有的领域路由仅区分不同领域的监督来源，所有领域的更新仍然作用于共享参数。当教师模型在响应风格和领域上差异较大时，这种共享更新可能导致负迁移或优化冲突。Cross-Teacher Guarding 旨在通过跨教师守卫机制，在蒸馏过程中动态调节不同教师监督信号的影响，以缓解教师间的冲突，提升学生模型在多领域任务上的表现。该工作值得关注，因为它针对多教师蒸馏中的核心挑战——教师异质性带来的优化干扰，提出了新的解决思路，对多任务学习、模型融合和高效知识蒸馏具有潜在价值。",
+  "tags": [
+    "Distillation",
+    "Multi-Teacher",
+    "On-Policy",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:43:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多教师在线策略蒸馏中，领域路由仅区分监督来源，但所有领域的更新仍作用于共享参数，导致教师间冲突。",
+      "当教师模型在响应风格和领域上差异较大时，共享参数更新可能引发负迁移或优化不稳定。",
+      "Cross-Teacher Guarding 通过跨教师守卫机制动态调节不同教师监督信号的影响，以缓解冲突。",
+      "该方法为多教师蒸馏中的教师异质性问题提供了新的解决方向，有望提升学生模型的多领域能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261013-094",
+  "title": "Recurrent Harness for Agentic Continual Learning",
+  "source_url": "https://arxiv.org/abs/2610.12668",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ReHarness，一种面向语言模型智能体持续学习的循环式 harness 框架。当前智能体需要在长交互流中运行，并在线适应分布偏移，但现有 harness 通常仅通过前向信息流更新状态，或依赖额外的回放/验证数据进行优化，难以兼顾效率与适应性。ReHarness 通过引入循环机制，使 harness 状态能够在交互过程中被反复利用与更新，从而在不依赖额外数据的情况下实现持续学习。该工作针对智能体长期部署中的核心痛点——在线适应与状态演化，提出了一种新的架构思路，对构建可自我改进的智能体系统具有参考价值，尤其适合关注 Agent 长期记忆、在线学习与自适应 harness 的研究者和开发者。",
+  "tags": [
+    "Agent",
+    "Continual Learning",
+    "LLM",
+    "Harness"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:44:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 agent harness 多依赖前向信息流或额外回放/验证数据，限制了在线持续学习能力。",
+      "ReHarness 通过循环式 harness 设计，使状态在交互流中反复更新，无需额外数据即可适应分布偏移。",
+      "该框架为语言模型智能体的长期部署与自我改进提供了新的架构方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

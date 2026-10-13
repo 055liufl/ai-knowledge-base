@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261013-104",
+  "title": "COFFEQA: Counterfactual-Guided Few-Shot Distillation for LLM Question Answering",
+  "source_url": "https://arxiv.org/abs/2610.12837",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 COFFEQA，一种面向 LLM 问答任务的「反事实引导少样本蒸馏」方法。知识蒸馏通常需要大量数据与算力，尤其在生成式任务中成本高昂；少样本蒸馏虽能缓解数据依赖，但其性能对样本选择极为敏感。COFFEQA 的核心思路是利用反事实推理来筛选和构造高信息量的少样本示例，从而在极少训练样本下更高效地将大模型（教师）的问答能力迁移到小模型（学生）。该工作针对少样本蒸馏中「样本质量决定上限」这一关键瓶颈，引入反事实引导机制，有望降低 LLM 落地部署的算力门槛，对资源受限场景下的模型压缩与问答系统构建具有实用价值。",
+  "tags": [
+    "Knowledge Distillation",
+    "Few-Shot Learning",
+    "Question Answering",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-13T15:37:41Z",
+  "collected_at": "2026-10-13T15:45:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "少样本蒸馏的性能高度依赖训练样本的选择与质量，是当前蒸馏效率的关键瓶颈",
+      "反事实推理可作为样本筛选信号，识别对教师知识迁移最具信息量的示例",
+      "该方法面向生成式问答任务，旨在以极低数据与算力成本完成 LLM 能力压缩",
+      "若验证有效，可显著降低小模型在资源受限环境中的部署门槛"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
