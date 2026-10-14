@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261014-017",
+  "title": "How Much Memory Does Your Agent Actually Need?",
+  "source_url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上 IBM Research 团队关于 Agent 记忆机制的技术分析。文章探讨了 AI Agent 在执行任务时实际需要多少记忆容量，并介绍了 ALTK-Evolve 框架下的 HMM（分层记忆管理）方法。随着 LLM Agent 在复杂任务中的应用日益广泛，记忆管理成为影响性能、成本和可扩展性的关键因素。传统方法往往简单堆叠上下文或使用向量数据库，但缺乏对记忆需求的量化分析。本文通过实验和理论分析，揭示了不同任务类型对记忆的差异化需求，并提出了动态记忆分配策略。该研究对于开发者优化 Agent 架构、降低推理成本具有重要参考价值，同时为记忆机制的设计提供了新的思路。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "LLM",
+    "IBM Research"
+  ],
+  "author": null,
+  "published_at": "2026-10-14T13:21:23Z",
+  "collected_at": "2026-10-14T13:24:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的记忆需求并非固定不变，而是高度依赖于任务复杂度和交互历史长度。",
+      "过度分配记忆会导致计算资源浪费和推理延迟，而记忆不足则影响任务成功率。",
+      "ALTK-Evolve 框架通过分层记忆管理（HMM）实现动态记忆分配，平衡性能与效率。",
+      "该研究为 Agent 记忆优化提供了量化基准，有助于推动更高效的 Agent 系统设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

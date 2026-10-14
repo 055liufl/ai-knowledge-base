@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261014-026",
+  "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+  "source_url": "https://huggingface.co/blog/skypilot-hf-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 SkyPilot 与 Hugging Face 的集成方案，允许用户在任意云平台上运行 AI 工作负载，同时将数据存储于 Hugging Face，实现零出口费用的存储访问。SkyPilot 是一个开源的多云编排框架，能够自动在 AWS、GCP、Azure 等云上调度计算资源；Hugging Face 则提供模型、数据集托管服务。该方案的核心价值在于：用户无需将数据复制到各个云厂商的对象存储中，而是直接从 Hugging Face 读取数据，避免了云厂商之间的数据出口费用（egress fees），同时简化了多云环境下的数据管理。对于需要频繁跨云训练或推理的团队，这能显著降低成本并提升工作流灵活性。该集成通过 SkyPilot 的存储抽象层实现，支持自动挂载 Hugging Face 仓库为本地文件系统，使训练脚本无需修改即可访问数据。这一合作降低了 AI 工作负载的云锁定风险，并推动了开放模型生态与多云计算的结合。",
+  "tags": [
+    "SkyPilot",
+    "Hugging Face",
+    "多云",
+    "存储",
+    "AI基础设施"
+  ],
+  "author": null,
+  "published_at": "2026-10-14T13:21:23Z",
+  "collected_at": "2026-10-14T13:24:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零出口存储：数据保留在 Hugging Face，计算在任意云进行，避免云厂商出口费用。",
+      "简化多云数据管理：SkyPilot 自动挂载 Hugging Face 仓库，训练脚本无需修改。",
+      "降低云锁定风险：计算与存储解耦，用户可灵活选择云平台。",
+      "推动开放生态：结合 Hugging Face 的模型/数据集与 SkyPilot 的编排能力，加速 AI 工作流。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
