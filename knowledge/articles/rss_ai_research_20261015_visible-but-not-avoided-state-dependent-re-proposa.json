@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-134",
+  "title": "Visible but Not Avoided: State-Dependent Re-Proposal of Rejected Candidates in Catalog-Based LLM Optimization Loops",
+  "source_url": "https://arxiv.org/abs/2610.15738",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究基于目录的LLM优化循环中一个被忽视的问题：当优化器（proposer）被展示其已尝试并拒绝的候选方案时，它是否真的会避免重复提出这些方案。作者在三个开源LLM通过命名40种编辑之一来改进GUI智能体的场景中，精确识别了重复提案（re-proposal）。研究发现，在干净的基态探针（clean base-state probes）中测得的避免行为，无法预测优化器自身轨迹所产生的状态中的避免行为。这意味着LLM在静态测试中表现出的\"避免已拒绝候选\"的能力，在实际优化循环的动态状态下会显著退化，导致重复提出已被拒绝的候选方案。该工作揭示了LLM优化循环中状态依赖性偏差问题，对基于LLM的自动化优化、智能体改进和搜索循环设计具有重要警示意义，提示需要更鲁棒的机制来防止无效重复提案。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Optimization",
+    "GUI Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在静态探针中表现出的避免已拒绝候选的能力，无法预测其在自身优化轨迹动态状态下的实际行为",
+      "在基于目录的优化循环中，重复提案现象普遍存在且可通过编辑名称精确识别",
+      "优化器的状态依赖性偏差会导致无效重复提案，降低LLM自动化优化循环的效率",
+      "需要设计更鲁棒的机制来显式阻止已拒绝候选的重复提出，而非依赖LLM的自主避免"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-138",
+  "title": "Attention Sinks in VLMs Are Borrowed, Not Seen",
+  "source_url": "https://arxiv.org/abs/2610.15855",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究聚焦于视觉语言模型（VLM）中的视觉注意力汇（visual attention sinks）现象，即某些图像 token 无论查询或任务如何都会吸收大量注意力，从而误导将注意力图视为模型「注视」记录的方法。现有工作通过大规模激活维度检测注意力汇并尝试重新分配其注意力，但均未解决其根本来源问题。本文标题「Attention Sinks in VLMs Are Borrowed, Not Seen」暗示视觉注意力汇并非源于视觉感知本身，而是从语言模型部分「借用」而来——即语言模型中固有的注意力汇机制在跨模态场景下被继承或迁移到图像 token 上。这一发现对理解 VLM 内部注意力机制、改进注意力图可解释性以及设计更合理的注意力重分配策略具有重要意义。若结论成立，将挑战当前将注意力图直接解释为视觉定位依据的普遍做法，并提示未来 VLM 架构设计需区分语言与视觉注意力汇的不同来源。该工作属于对 VLM 可解释性与注意力机制的基础性研究，值得关注多模态模型内部机理的研究者和开发者阅读。",
+  "tags": [
+    "VLM",
+    "Attention",
+    "Interpretability",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:16:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉注意力汇并非源于视觉感知，而是从语言模型部分「借用」而来，挑战了注意力图作为视觉定位记录的传统解释。",
+      "现有基于大规模激活维度的检测与注意力重分配方法未触及注意力汇的根本来源，可能治标不治本。",
+      "该发现提示 VLM 架构设计需区分语言与视觉注意力汇的不同机制，以提升多模态可解释性与可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

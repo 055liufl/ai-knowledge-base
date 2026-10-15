@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20261015-015",
+  "title": "Retrospectively Reverse-Engineering Apple's Neural Engine",
+  "source_url": "https://eiln.github.io/posts/ane.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文详细记录了作者对苹果神经引擎（ANE）进行逆向工程的过程。ANE 是苹果自研的专用神经网络推理加速硬件，广泛应用于 iPhone、iPad 和 Mac 设备中。作者通过分析系统固件、驱动和私有框架，揭示了 ANE 的架构设计、指令集、内存管理机制以及与 CPU/GPU 的协同工作方式。文章不仅展示了逆向工程的方法论，还提供了对 ANE 性能特征和编程模型的深入洞察。这项工作对于理解苹果 AI 硬件生态、优化跨平台推理框架以及探索专用 AI 芯片设计具有重要参考价值。由于苹果官方文档极少，该逆向分析填补了社区对 ANE 内部工作原理的认知空白，为开发者和研究者提供了宝贵的一手资料。",
+  "tags": [
+    "Apple",
+    "Neural Engine",
+    "Reverse Engineering",
+    "AI Hardware",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:00Z",
+  "collected_at": "2026-10-15T13:08:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ANE 采用独特的指令集架构和内存层次，与通用 GPU 设计有显著差异，专为低功耗推理优化。",
+      "逆向工程揭示了 ANE 的编程接口和调度机制，有助于第三方框架更高效地利用该硬件。",
+      "苹果对 ANE 的封闭性导致社区缺乏官方文档，此类逆向工作对推动生态开放至关重要。",
+      "理解 ANE 的内部工作原理可为定制 AI 芯片设计提供实践参考和性能边界分析。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

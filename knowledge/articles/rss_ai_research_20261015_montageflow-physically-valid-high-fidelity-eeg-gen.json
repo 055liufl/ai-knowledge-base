@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-026",
+  "title": "MontageFlow: Physically Valid High Fidelity EEG Generation",
+  "source_url": "https://arxiv.org/abs/2610.14507",
+  "source_platform": "rss_ai_research",
+  "summary": "MontageFlow 是一篇针对脑电图（EEG）生成模型的研究论文，指出现有生成模型虽然报告了保真度提升，但存在一个根本性缺陷：EEG 并非任意多通道信号，每个通道记录的是两个头皮电极之间的电压差，因此真实记录满足严格的物理约束（如电极间电压差的线性关系）。现有模型忽略了这一物理有效性，导致生成的 EEG 信号在物理上不合法。该工作提出 MontageFlow 方法，旨在生成既高保真又物理有效的 EEG 数据，以缓解临床 EEG 数据稀缺和隐私限制问题。该研究值得关注，因为它揭示了生成模型评估中的盲点，并强调领域知识（物理约束）在生成任务中的重要性，对医疗信号生成、数据增强和隐私保护学习具有潜在影响。",
+  "tags": [
+    "EEG",
+    "生成模型",
+    "医疗AI",
+    "物理约束"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有EEG生成模型虽提升保真度，但忽略了EEG通道间的物理约束（电压差关系），导致生成信号物理无效。",
+      "MontageFlow旨在同时实现高保真和物理有效的EEG生成，以解决临床数据稀缺和隐私问题。",
+      "该研究强调在生成模型中融入领域特定物理约束的重要性，为医疗信号生成提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

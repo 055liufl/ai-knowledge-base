@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-023",
+  "title": "AlignPoison: Conditional Targeted Poisoning of Generative Recommenders via Decoding-Aligned Prefixes",
+  "source_url": "https://arxiv.org/abs/2610.14487",
+  "source_platform": "rss_ai_research",
+  "summary": "AlignPoison 是一篇关于生成式推荐系统安全性的研究论文，聚焦于基于自回归解码的生成式推荐模型（Generative Recommenders）在数据投毒攻击下的脆弱性。传统推荐系统多采用排序模型，而生成式推荐模型因其建模灵活性逐渐被采用，但其对数据投毒的鲁棒性尚未被充分探索。该工作提出了一种条件性定向投毒攻击方法，攻击者仅需注入有限数量的恶意交互，即可通过解码对齐前缀（Decoding-Aligned Prefixes）操控生成式推荐模型的输出，使其在特定条件下推荐攻击者指定的目标物品。该研究揭示了生成式推荐范式在安全层面的新风险：由于自回归解码的序列生成特性，攻击者可以利用前缀对齐机制实现精准的定向操控，而传统防御手段可能难以检测。这项工作值得关注，因为它首次系统性地分析了生成式推荐器的投毒攻击面，为推荐系统安全研究开辟了新方向，并对实际部署中的风险防控提出了警示。",
+  "tags": [
+    "Recommender System",
+    "Data Poisoning",
+    "Generative Model",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式推荐模型基于自回归解码，其序列生成特性使其对条件性定向投毒攻击具有独特脆弱性。",
+      "攻击者仅需注入有限恶意交互，即可通过解码对齐前缀精准操控推荐输出，实现定向目标推荐。",
+      "该研究填补了生成式推荐系统在数据投毒鲁棒性方面的空白，提示实际部署需考虑新型安全防御机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

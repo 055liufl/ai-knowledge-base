@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-064",
+  "title": "WeatherBridge: Forecast-Aware Multi-Source Input Adaptation for Pretrained Weather Forecasting Models",
+  "source_url": "https://arxiv.org/abs/2610.14863",
+  "source_platform": "rss_ai_research",
+  "summary": "WeatherBridge 是一种面向预训练天气预报模型的输入适配框架，旨在解决数据驱动天气预报模型在实际业务部署中面临的分布偏移问题。现有模型（如基于 ERA5 训练的自回归预报模型）通常以 ERA5 再分析数据为训练基础，但实际运行中必须使用来自物理数值天气预报（NWP）系统的实时初始场，而这两类数据的统计分布存在显著差异。直接使用 NWP 初始场进行初始化会导致自回归预报性能明显下降。WeatherBridge 的核心思路是在不修改预训练预报模型的前提下，通过一个统一的、感知预报目标的多源输入适配模块，将不同来源（如不同 NWP 系统）的初始状态映射到预训练模型所期望的分布空间，从而保持模型参数冻结并实现跨源泛化。该工作对气象 AI 的工程化落地具有实际意义：它降低了从研究环境（ERA5）迁移到业务环境（实时 NWP 初始场）的鸿沟，避免了针对每个数据源重新训练大模型的高昂成本，为数据驱动天气预报模型的业务化部署提供了可复用的适配方案。",
+  "tags": [
+    "Weather Forecasting",
+    "Domain Adaptation",
+    "Pretrained Models",
+    "NWP"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:12:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练天气预报模型在业务部署时面临 ERA5 训练分布与 NWP 实时初始场分布不一致的核心问题，直接初始化会损害自回归预报性能。",
+      "WeatherBridge 通过输入适配而非微调模型参数来解决分布偏移，保持预训练模型不变，降低了迁移成本。",
+      "该框架支持多源输入的统一适配，并具备预报感知能力，可提升模型在不同 NWP 系统初始场下的鲁棒性。",
+      "该工作为数据驱动天气预报从研究走向业务化部署提供了实用路径，减少了针对每个数据源重新训练模型的需求。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-052",
+  "title": "CUSE: Fine-Grained Multimodal Unlearning with Counterfactual Guidance and On-Policy Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.14763",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CUSE，一种面向多模态大语言模型（MLLM）的细粒度遗忘学习框架，旨在解决模型从训练数据中复现敏感、受版权保护或不安全信息的问题。现有遗忘方法通常对整个响应施加统一的遗忘目标，并依赖固定的离线监督信号，导致 token 级控制粗糙，且与模型当前状态存在错位。CUSE 通过两项核心设计改进这一问题：一是利用反事实引导（Counterfactual Guidance）构造更精准的遗忘信号，二是采用在策略自蒸馏（On-Policy Self-Distillation）使监督信号与模型当前分布对齐，从而在移除目标信息的同时保留同一响应中的非目标内容。该工作值得关注，因为它将多模态遗忘从粗粒度的响应级操作推进到 token 级细粒度控制，兼顾了遗忘有效性与模型通用能力的保持，对安全合规、版权保护和内容治理等实际场景具有重要价值。",
+  "tags": [
+    "Multimodal LLM",
+    "Machine Unlearning",
+    "Self-Distillation",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 MLLM 遗忘方法多采用响应级统一遗忘目标，难以在同一响应内区分目标与非目标内容，导致过度遗忘或遗忘不足。",
+      "CUSE 引入反事实引导构造细粒度遗忘信号，实现 token 级别的精准遗忘控制。",
+      "采用在策略自蒸馏使监督信号与模型当前分布对齐，缓解离线固定监督带来的错位问题。",
+      "该方法在移除敏感信息的同时保留非目标内容，对多模态模型的安全合规与版权保护具有实用意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

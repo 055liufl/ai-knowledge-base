@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-102",
+  "title": "OntoAR-HAR: Ontology-Guided Agentic RAG with Personalized Memory for Human Activity Recognition",
+  "source_url": "https://arxiv.org/abs/2610.15292",
+  "source_platform": "rss_ai_research",
+  "summary": "OntoAR-HAR 是一项面向传感器人体活动识别（HAR）的研究，提出了一种本体引导的智能体式 RAG 框架，并结合个性化记忆机制。传统基于 LLM/RAG 的 HAR 方法通常依赖静态的群体知识，在单一层级活动空间中检索，难以适配目标用户的个性化行为模式，也缺乏对活动语义与物理知识的结构化组织。该工作通过引入本体（Ontology）对活动语义、传感器特征与物理知识进行层次化建模，指导智能体（Agent）进行多步检索与推理，同时利用个性化记忆模块持续积累目标用户的历史交互与活动模式，实现免训练的目标用户推断，并减少对原始数值信号数组的直接依赖。其价值在于将本体知识表示、Agentic RAG 与个性化记忆三者结合，为 HAR 提供更可解释、可迁移且用户自适应的解决方案，对可穿戴计算、健康监测、人机交互等场景具有实用意义，也为 LLM 在时序传感器领域的落地提供了新范式。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "HAR",
+    "Ontology",
+    "Personalization"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将本体引入 HAR 的 RAG 流程，用层次化语义与物理知识替代单一层级活动空间检索，提升推理的结构化与可解释性。",
+      "智能体式 RAG 支持多步检索与推理，结合个性化记忆实现免训练的目标用户自适应推断。",
+      "减少对原始传感器数值数组的依赖，转向语义与知识驱动的识别范式，有利于跨用户与跨设备迁移。",
+      "该方向展示了 LLM 与传感器时序数据结合的新路径，但实际部署效果与泛化能力仍需实验验证。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

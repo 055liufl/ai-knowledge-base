@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-082",
+  "title": "Trace Evolution Bench: Measuring Whether Agents Improve from Their Own Environment Traces",
+  "source_url": "https://arxiv.org/abs/2610.15055",
+  "source_platform": "rss_ai_research",
+  "summary": "Trace Evolution Bench (TEB) 是一篇针对自进化智能体评估方法提出改进的 arXiv 论文。当前自进化智能体通常以「端点增益」（更新后的留出成功率减去更新前成功率）作为评分标准，但该指标存在一个关键缺陷：即使模型权重或上下文完全冻结，仅重新评分也可能产生正向差异，从而被误判为「进化」。TEB 提出了一套协议，将「重新评分」与「上下文或权重更新」严格分离，并配套提供三个冻结的 80/20/40 数据包。其核心约束包括：只有当验证集性能不下降时才接受更新；留出标识符绝不进入更新过程；文本更新需满足特定条件。该工作值得关注，因为它直击自进化智能体评估中的指标污染问题，为社区提供了更严谨、可复现的评测基准，有助于区分真正的环境轨迹学习与评估假象，推动智能体自我改进研究走向规范化。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Self-Evolving",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "端点增益（Gain）指标存在根本缺陷：冻结模型仅重新评分即可产生虚假的「进化」信号，TEB 通过分离重评分与更新来消除这一混淆。",
+      "TEB 引入严格的接受准则：验证集性能不得下降、留出标识符不得进入更新、文本更新需满足额外约束，确保评估的纯净性。",
+      "提供三个冻结的 80/20/40 数据包，增强了基准的可复现性和跨研究比较的公平性。",
+      "该工作推动自进化智能体评估从粗粒度端点对比转向更严谨的协议化验证，对领域方法论有重要纠偏意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-039",
+  "title": "Shaping Latent Mixture-of-Experts: From Expert Geometry to Layerwise Capacity Allocation",
+  "source_url": "https://arxiv.org/abs/2610.14644",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 LatentMoE，一种将专家计算迁移到低维潜空间的新型混合专家（MoE）架构设计。传统细粒度 MoE 通常通过收窄单个专家来增加专家数量，将专家形状视为路由粒度的副产品，缺乏对专家几何结构的显式控制。LatentMoE 则将每个专家的输入维度与中间宽度暴露为独立的设计变量，使专家形状成为可控的超参数。作者从理论上证明，单个专家的局部雅可比秩由这两个维度共同约束，且当二者平衡时该秩达到最大，从而为专家容量分配提供了几何层面的指导原则。在此基础上，论文进一步研究逐层容量分配策略，探索如何在网络不同深度合理配置专家维度与数量。该工作值得关注，因为它将 MoE 设计从经验性试错推进到有理论支撑的几何视角，为大规模稀疏模型的高效扩展提供了新的设计维度，对模型架构研究与工程实践均有参考价值。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "Model Architecture",
+    "Sparse Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LatentMoE 将专家计算移至低维潜空间，使输入维度与中间宽度成为显式可调的设计变量，而非路由粒度的副产品。",
+      "专家的局部雅可比秩由输入维度和中间宽度共同上界约束，二者平衡时秩最大，为专家形状设计提供理论依据。",
+      "论文进一步提出逐层容量分配方法，探索不同网络深度下专家维度与数量的最优配置策略。",
+      "该工作将 MoE 架构设计从经验试错转向几何理论指导，有望提升大规模稀疏模型的扩展效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-116",
+  "title": "SkillFusion: Towards Reliable Multi-Skill Composition for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.15481",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillFusion 是一篇针对 LLM Agent 多技能组合问题的研究论文，提出了一个离线编译器，用于将独立编写的技能（skill）合并为可复用的统一技能。当前 LLM Agent 在同时加载多个独立开发的技能时，常面临需求冲突、偏好竞争和指令冗余等问题，严重影响 Agent 的可靠性与执行效率。SkillFusion 的核心思想是通过类型化、作用域化的约束（typed, scoped constraints）将组合决策显式化，并将这些约束与其来源指令关联，从而实现可追溯、可解释的技能融合。其方法包含一个 type-scope gate 用于筛选候选交互，并进一步进行冲突消解与合并。该工作值得关注，因为它首次系统性地将多技能组合视为编译问题，为构建更可靠、可扩展的 LLM Agent 技能生态提供了新思路，对 Agent 框架设计和多工具协同场景具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Skill Composition",
+    "Compiler"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多技能组合的核心挑战在于独立开发的技能之间存在需求冲突、偏好竞争和指令冗余，而非简单的叠加。",
+      "通过类型化、作用域化的约束将组合决策显式化，并与来源指令关联，可实现可追溯的技能融合。",
+      "将技能组合视为离线编译问题，为 LLM Agent 技能管理提供了系统化、可复用的解决方案。",
+      "type-scope gate 机制能够有效筛选候选交互，降低组合搜索空间，提升融合效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

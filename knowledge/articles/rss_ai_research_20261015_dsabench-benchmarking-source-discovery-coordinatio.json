@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-044",
+  "title": "DSABench: Benchmarking Source Discovery, Coordination, and Execution for Multi-Database Agents",
+  "source_url": "https://arxiv.org/abs/2610.14700",
+  "source_platform": "rss_ai_research",
+  "summary": "DSABench 是一个面向多数据库智能体（Multi-Database Agents）的评测基准，聚焦于真实数据目录场景下智能体所需的三项核心能力：数据源发现（Source Discovery）、跨库协调（Coordination）与执行（Execution）。传统 text-to-SQL 基准通常直接给定目标数据库，而 DSABench 认为在大型数据目录中，\"选哪些库\"本身就是问题的一部分——智能体需要自行定位请求所需的每一个数据库、判断各库结果如何拼接组合，并最终执行完整工作流。该基准包含 815 个经人工审核的任务，素材来源于 Spider、BIRD 与 LiveSQLBench，其中 618 个任务需要多个数据库共同参与，105 个任务（摘要截断）进一步增加了难度。DSABench 的价值在于将评测从\"单库 SQL 生成\"推进到\"端到端多源数据编排\"，更贴近企业级数据湖、数据仓库联邦查询等真实应用场景，为评估和提升智能体的检索、规划与工具调用能力提供了统一标准，对研究者和开发者构建下一代数据智能体具有重要参考意义。",
+  "tags": [
+    "Benchmark",
+    "Multi-Database",
+    "Agent",
+    "Text-to-SQL",
+    "Data Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 text-to-SQL 基准默认给定目标数据库，忽略了真实数据目录中\"选择数据源\"这一关键前置步骤，DSABench 首次将源发现、跨库协调与执行纳入统一评测框架。",
+      "815 个任务中 618 个需要多库协作，表明多源数据编排已成为智能体落地企业数据场景的核心挑战，而非边缘情况。",
+      "该基准为评估智能体的检索、规划、工具调用与结果融合能力提供了标准化测试床，有望推动数据智能体从单库问答走向端到端工作流自动化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

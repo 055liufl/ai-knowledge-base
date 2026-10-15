@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-054",
+  "title": "ProgAgent: Learning Tool Orchestration through Programmatic Training",
+  "source_url": "https://arxiv.org/abs/2610.14774",
+  "source_platform": "rss_ai_research",
+  "summary": "ProgAgent 是一篇来自 arXiv 的技术论文，聚焦于大语言模型（LLM）在长周期任务中的工具编排能力。现有智能体普遍采用直接工具调用（Direct Tool Calling, DTC）模式，即模型按顺序逐一调用工具，并将所有工具返回结果累积在模型上下文中。这种模式在长任务中容易导致上下文腐化（context rot）和编排崩溃，因为上下文窗口被大量中间结果占满，模型难以维持对整体任务状态的清晰把握。论文提出程序化工具调用（Programmatic Tool Calling, PTC）范式，通过可执行代码来调用工具，并将中间结果存储在运行时变量中，而非全部塞入模型上下文。基于这一思路，作者构建了 ProgAgent，通过程序化训练的方式让模型学会以代码为媒介进行工具编排。该工作值得关注的原因在于：它直面当前 Agent 系统在长周期任务中的核心瓶颈——上下文管理问题，提出了一种从调用范式层面进行革新的方案，而非仅仅优化提示词或检索策略。如果 PTC 范式被验证有效，可能推动 Agent 架构从'对话式工具调用'向'代码式工具编排'演进，对构建更可靠、更可扩展的自主智能体系统具有",
+  "tags": [
+    "Agent",
+    "Tool Orchestration",
+    "LLM",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接工具调用（DTC）在长周期任务中会导致上下文腐化和编排崩溃，因为工具响应不断累积占用模型上下文。",
+      "程序化工具调用（PTC）通过可执行代码调用工具，并将中间结果存储在运行时变量中，从而避免上下文膨胀。",
+      "ProgAgent 通过程序化训练让模型学会以代码为媒介进行工具编排，代表了 Agent 架构从对话式调用向代码式编排的演进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

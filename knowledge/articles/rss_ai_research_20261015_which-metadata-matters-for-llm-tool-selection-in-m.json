@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-015",
+  "title": "Which Metadata Matters for LLM Tool Selection in MCP? Evidence from Controlled Factor-Level Interventions",
+  "source_url": "https://arxiv.org/abs/2610.14334",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对 Model Context Protocol（MCP）系统中 LLM 工具选择所依赖的元数据展开研究。在 MCP 架构下，LLM 无法直接查看工具实现，只能依据名称、描述和参数 schema 等元数据进行工具选择。作者对 367,174 个 MCP 工具的元数据进行了大规模分析，发现功能相似的工具之间存在显著的 schema 差异——许多工具共享相同或相似的名称与描述，但暴露的参数结构却大相径庭。为厘清哪些元数据字段真正影响 LLM 的工具选择行为，研究采用受控因子级干预（controlled factor-level interventions）方法，系统性地操纵名称、描述、参数 schema 等变量，观察 LLM 选择结果的变化。该工作首次以大规模实证方式揭示了 MCP 元数据质量与 LLM 工具选择准确性之间的关系，对 MCP 生态的元数据规范设计、工具开发者编写高质量工具描述、以及构建更可靠的 Agent 工具调用系统具有重要指导意义。",
+  "tags": [
+    "MCP",
+    "Tool Selection",
+    "LLM Agent",
+    "Metadata",
+    "Function Calling"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:09:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCP 生态中功能相似的工具存在大量元数据（尤其是参数 schema）不一致现象，367,174 个工具的分析揭示了这一普遍问题",
+      "LLM 的工具选择高度依赖元数据而非实现，因此名称、描述和参数 schema 的设计质量直接决定 Agent 调用工具的准确性",
+      "通过受控因子级干预实验，可以量化不同元数据字段对工具选择结果的影响权重，为元数据规范提供实证依据",
+      "该研究为 MCP 工具开发者提供了优化元数据编写的方向，有助于提升 LLM Agent 在真实工具生态中的可靠性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

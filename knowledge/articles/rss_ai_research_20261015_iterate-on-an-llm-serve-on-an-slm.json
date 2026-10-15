@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-034",
+  "title": "Iterate on an LLM, Serve on an SLM",
+  "source_url": "https://arxiv.org/abs/2610.14576",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为「Iterate on an LLM, Serve on an SLM」的范式，旨在解决大语言模型（LLM）推理成本高昂的问题。随着前沿 LLM 能力不断增强，其运行成本也持续攀升；与此同时，小语言模型（SLM）的能力也在提升，但推理成本基本保持稳定，在智能体（Agent）分解出的狭窄、重复性子任务上，SLM 的推理成本比 LLM 低 5 至 40 倍。然而，核心瓶颈在于如何快速、高效且经济地从 SLM 中获得正确行为。该工作的思路是：在开发迭代阶段使用能力更强的 LLM 来探索、验证和固化任务行为，而在生产服务阶段则将这些行为迁移或蒸馏到成本更低的 SLM 上执行。这一范式对构建大规模 Agent 系统具有重要价值，因为它直接回应了 Agent 工作流中大量重复子任务带来的成本压力，为在保持效果的同时显著降低推理开销提供了可行路径。",
+  "tags": [
+    "SLM",
+    "LLM",
+    "Agent",
+    "Model Distillation",
+    "Inference Cost"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 能力提升伴随成本上升，而 SLM 在狭窄重复子任务上可提供 5-40 倍的推理成本优势",
+      "Agent 工作流将任务分解为大量重复子任务，是 SLM 替代 LLM 的理想场景",
+      "核心挑战在于如何快速、高效、经济地从 SLM 中获得正确行为，而非简单替换模型",
+      "「用 LLM 迭代开发、用 SLM 生产服务」的分离式范式可兼顾效果与成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

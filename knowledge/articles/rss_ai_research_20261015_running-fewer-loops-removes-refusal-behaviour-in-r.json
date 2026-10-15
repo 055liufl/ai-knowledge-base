@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-094",
+  "title": "Running Fewer Loops Removes Refusal Behaviour in Recurrent-Depth Language Models",
+  "source_url": "https://arxiv.org/abs/2610.15218",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了循环深度语言模型（recurrent-depth language model）中循环次数（loops）对模型安全性的影响。这类模型在推理时重复使用同一组权重多次，循环次数可在运行时灵活选择，减少循环次数能显著降低计算成本和延迟。然而，作者发现减少循环次数会导致模型拒绝行为（refusal behaviour）消失，且安全性下降幅度远大于其他测量指标（如准确性、流畅性等）的损失。研究基于四个已发布的 Ouro 检查点和 Huginn-01 模型进行实验，揭示了推理效率与安全性之间的权衡。这一发现值得关注，因为它表明部署时的效率优化可能无意中削弱模型的安全对齐，对实际应用中的安全部署具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Inference",
+    "Recurrent Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "循环深度语言模型的循环次数是运行时参数，减少循环可降低计算成本但会显著削弱安全性。",
+      "减少循环导致的拒绝行为消失比其他性能指标的下降更为严重，安全性损失不成比例。",
+      "该研究揭示了推理效率优化与模型安全对齐之间的潜在冲突，对部署策略有重要影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

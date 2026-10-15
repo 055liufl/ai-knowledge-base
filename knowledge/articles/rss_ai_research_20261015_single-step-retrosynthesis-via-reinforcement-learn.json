@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-089",
+  "title": "Single-step Retrosynthesis via Reinforcement Learning from Forward Feedback",
+  "source_url": "https://arxiv.org/abs/2610.15141",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RetroRLFF（Retrosynthesis via Reinforcement Learning from Forward Feedback），针对单步逆合成这一一对多的逆向问题提出新的训练与优化范式。传统方法通常以单一记录的反应物集合作为监督目标进行训练，并以精确匹配（exact-match）作为评估标准，这带来两个根本缺陷：一是对未被记录的合理替代反应物缺乏正向信号，二是精确匹配评估会拒绝化学上合理但不同于记录答案的预测。RetroRLFF 通过强化学习引入前向反馈（forward feedback）作为奖励信号，直接优化反应物生成过程，从而摆脱对唯一参考答案的依赖，使模型能够探索并奖励化学上可行的多种反应路径。该工作值得关注，因为它挑战了逆合成领域长期沿用的参考式训练与精确匹配评估范式，将强化学习与化学可行性反馈结合，有望提升模型在真实药物与材料合成场景中的实用性，并为其他一对多逆向问题提供方法论借鉴。",
+  "tags": [
+    "Retrosynthesis",
+    "Reinforcement Learning",
+    "Drug Discovery",
+    "Molecular Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单步逆合成本质是一对多逆向问题，传统基于单一参考反应物集合的监督训练无法为未记录的合理替代方案提供正向信号。",
+      "精确匹配评估会拒绝化学上合理但不同于记录答案的预测，导致模型评估与实际化学可行性脱节。",
+      "RetroRLFF 利用前向反馈作为强化学习奖励，直接优化反应物生成，从而摆脱对唯一参考答案的依赖。",
+      "该方法为逆合成及其他一对多逆向问题提供了从参考式学习转向可行性驱动优化的新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

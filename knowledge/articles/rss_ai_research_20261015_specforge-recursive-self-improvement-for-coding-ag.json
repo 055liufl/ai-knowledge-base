@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-130",
+  "title": "SpecForge: Recursive Self-Improvement for Coding Agents via Behavioral Specifications",
+  "source_url": "https://arxiv.org/abs/2610.15708",
+  "source_platform": "rss_ai_research",
+  "summary": "SpecForge 提出了一种面向编码智能体的递归自我改进方法，其核心思想是不更新模型权重，而是通过不断精炼外部上下文来提升性能。该方法聚焦于「行为规范」——即用自然语言描述程序实体行为的代码文档，作为指导智能体生成正确代码的关键依据。SpecForge 构建了一个自我改进循环：智能体基于当前的行为规范生成代码，再通过执行反馈或验证机制对规范进行迭代优化，从而在冻结语言模型的前提下实现持续的性能提升。这一工作值得关注的原因在于，它为编码智能体提供了一条无需微调、成本可控的自我进化路径，将「上下文工程」从静态提示提升为动态可迭代的规范体系。对于依赖大模型进行代码生成的研究者和开发者而言，SpecForge 展示了如何通过行为规范这一中间抽象层，把代码正确性验证与文档生成耦合起来，形成可复用的改进闭环，有望降低对模型重训练的依赖，并提升智能体在复杂编程任务中的可靠性。",
+  "tags": [
+    "Coding Agent",
+    "Self-Improvement",
+    "Behavioral Specification",
+    "Context Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结语言模型下，通过迭代精炼行为规范这一外部上下文，可实现编码智能体的递归自我改进，无需更新模型权重。",
+      "行为规范作为自然语言代码文档，同时承担指导代码生成与验证正确性的双重角色，是连接生成与反馈的中间抽象。",
+      "该自我改进循环将上下文工程从静态提示升级为动态可迭代的规范体系，为编码智能体提供了一条低成本持续进化路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

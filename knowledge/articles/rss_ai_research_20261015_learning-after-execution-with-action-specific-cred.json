@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-032",
+  "title": "Learning after Execution with Action-Specific Credit",
+  "source_url": "https://arxiv.org/abs/2610.14573",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“执行后学习”（Learning after Execution）的新范式，将程序执行结果从传统的终端反馈信号转变为中间状态，从而支持对同一策略进行额外的学习交互。这一方法针对的核心问题是信用分配：生成程序的动作与基于执行结果进行后续学习的动作共享同一最终目标，但在轨迹中扮演不同角色。作者为此提出了“动作特定信用”（Action-Specific Credit）机制，以区分两个动作对最终结果的贡献。该工作值得关注，因为它突破了执行仅作为评分终点的常规做法，将执行反馈转化为可继续学习的中间信号，有望提升策略在程序生成等任务中的样本效率和学习深度，为强化学习与代码生成的交叉领域提供了新思路。",
+  "tags": [
+    "Reinforcement Learning",
+    "Credit Assignment",
+    "Program Synthesis",
+    "Execution Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "执行结果不应仅作为终端奖励，而应作为中间状态支持额外的学习交互，从而提升策略学习效率。",
+      "生成动作与执行后学习动作共享目标但角色不同，需要动作特定的信用分配机制来正确归因。",
+      "该方法为程序生成等任务提供了新的强化学习范式，有望缓解稀疏奖励和信用分配难题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

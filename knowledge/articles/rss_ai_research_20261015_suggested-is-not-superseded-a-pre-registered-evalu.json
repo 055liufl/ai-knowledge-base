@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-131",
+  "title": "Suggested Is Not Superseded: A Pre-Registered Evaluation of a System-One Model as a Memory-Retirement Gate",
+  "source_url": "https://arxiv.org/abs/2610.15710",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对长期记忆助手系统中一个关键但常被忽视的环节——记忆退休门控（memory-retirement gate）进行了预注册评估。传统基准将记忆更新简化为二分类（改变/未改变），无法区分门控是基于确凿变更还是仅凭暗示。作者提出了一种任务契约，将门控决策细分为三类：SUPERSEDED（已取代）、NEEDS-CONFIRMATION（需确认）和COMPATIBLE（兼容）。基于STALE数据集（包含变更对和同用户对照），他们构建了500个测试对，并利用三个LLM进行标注。研究评估了一个“系统一”（System-One）模型作为门控的性能，发现该模型倾向于将暗示性信息误判为已取代，而实际上需要确认。这项工作强调了在记忆管理中区分“建议”与“取代”的重要性，为构建更可靠的长期记忆系统提供了评估框架和实证见解。其价值在于推动记忆更新机制从粗粒度二分类走向细粒度决策，对提升助手记忆的准确性和用户信任具有重要意义。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Evaluation",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统二分类基准无法区分基于确凿变更和仅凭暗示的记忆更新决策，导致评估偏差。",
+      "提出的三分类任务契约（SUPERSEDED/NEEDS-CONFIRMATION/COMPATIBLE）能更精细地评估记忆门控行为。",
+      "系统一模型倾向于将暗示性信息误判为已取代，表明需要更谨慎的确认机制。",
+      "预注册评估和STALE数据集为长期记忆系统的更新决策提供了可复现的测试基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

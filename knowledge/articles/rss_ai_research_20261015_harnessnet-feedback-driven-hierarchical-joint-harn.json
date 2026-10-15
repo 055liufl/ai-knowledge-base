@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-095",
+  "title": "HarnessNet: Feedback-driven Hierarchical Joint Harness Evolution for Multi-agent Systems",
+  "source_url": "https://arxiv.org/abs/2610.15221",
+  "source_platform": "rss_ai_research",
+  "summary": "HarnessNet 是一篇来自 arXiv 的论文，聚焦于多智能体系统（MAS）中「harness」的联合演化问题。所谓 harness，是指管理模型输入、工具调用、记忆与执行流程的软件层；在基础模型冻结的前提下，智能体可以通过环境反馈来修改自身的 harness，从而实现能力进化。现有研究大多针对单智能体场景，而多智能体系统中的联合 harness 演化仍属空白。论文指出，随着系统规模扩大，单一全局优化器会面临上下文膨胀与工作负载剧增的问题；同时，由于访问权限限制，智能体内部信息可能无法共享，进一步加剧了优化难度。为此，作者提出 HarnessNet，一种反馈驱动的分层联合 harness 演化方法，旨在分布式、受限访问条件下协调多个智能体的 harness 优化。该工作值得关注的原因在于：它把「智能体自进化」从单体扩展到多体协作场景，提出分层优化架构以缓解可扩展性瓶颈，并触及隐私与权限约束下的协同优化这一现实痛点，对构建可扩展、可演化的多智能体系统具有潜在指导意义。",
+  "tags": [
+    "Multi-Agent Systems",
+    "Agent Evolution",
+    "Harness Optimization",
+    "Feedback-driven Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体自进化研究多局限于单智能体，多智能体系统中的联合 harness 演化尚未被充分探索。",
+      "单一全局优化器在系统规模扩大时会遭遇上下文膨胀与工作负载激增，难以扩展。",
+      "访问权限限制可能导致智能体内部信息无法共享，给联合优化带来额外挑战。",
+      "HarnessNet 提出反馈驱动的分层联合演化方法，以应对多智能体场景下的可扩展性与协同优化问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

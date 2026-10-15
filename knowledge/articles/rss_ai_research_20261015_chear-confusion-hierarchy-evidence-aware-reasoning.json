@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-103",
+  "title": "CHEAR: Confusion-Hierarchy Evidence-Aware Reasoning for Cost-Efficient Human Activity Recognition",
+  "source_url": "https://arxiv.org/abs/2610.15298",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CHEAR（Confusion-Hierarchy Evidence-Aware Reasoning）框架，旨在解决基于可穿戴传感器的人类活动识别（HAR）中，大语言模型（LLM）结合检索增强生成（RAG）时证据组织混乱、推理成本高的问题。现有方法通常简单堆叠相似运动示例和传感器知识，导致证据冗余、冲突或层次不清，反而降低决策质量并增加计算开销。CHEAR 通过引入混淆感知与层次化证据组织机制，对检索到的证据进行结构化筛选与排序，使 LLM 能够在更少 token 和更低推理成本下做出更准确的判断。该工作值得关注，因为它首次系统性地将证据组织质量而非证据数量作为 HAR 中 LLM 推理的核心优化目标，为边缘设备上高效部署 LLM 智能体提供了新思路，同时也可推广至其他传感器驱动的时序推理任务。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "HAR",
+    "Wearable Sensing",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "更多证据不等于更好决策，证据的组织结构和层次性对 LLM 推理质量至关重要。",
+      "混淆感知机制可主动识别易混淆的活动类别，并针对性检索判别性证据，减少冗余。",
+      "层次化证据组织能显著降低在线推理的 token 消耗和计算成本，适合资源受限的可穿戴场景。",
+      "该框架为 RAG 在时序传感器数据上的应用提供了从“检索什么”到“如何组织”的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

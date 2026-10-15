@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-112",
+  "title": "SpecFit: Not All Draft Tokens Cost the Same in Offloaded MoE Inference",
+  "source_url": "https://arxiv.org/abs/2610.15417",
+  "source_platform": "rss_ai_research",
+  "summary": "SpecFit 是一篇针对 MoE（混合专家）模型在专家权重卸载到主机内存场景下的推理优化研究。当 MoE 模型的专家权重被 offload 到 host memory 时，host-to-device（H2D）的专家传输会进入解码的关键路径，成为性能瓶颈。投机解码（speculative decoding）虽然能在一次前向传播中验证多个 draft token，但在 MoE 模型中每个被验证的 token 都会激活各自的专家，导致更大的 draft tree 需要传输更多专家权重，H2D 开销随之上升。该工作指出并非所有 draft token 的成本相同，并提出 SpecFit 方法，通过感知 H2D 传输成本的 draft token 选择/验证策略，在投机解码中权衡接受长度与专家传输开销，从而提升卸载式 MoE 推理的整体效率。该研究对在有限显存下部署大 MoE 模型具有实际意义，值得关注。",
+  "tags": [
+    "MoE",
+    "Speculative Decoding",
+    "Inference Optimization",
+    "Offloading"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在专家权重卸载的 MoE 推理中，H2D 专家传输位于解码关键路径，是主要性能瓶颈",
+      "投机解码在 MoE 中会因每个 draft token 激活独立专家而放大 H2D 传输开销",
+      "不同 draft token 的验证成本并不相同，需按 H2D 成本进行差异化选择",
+      "SpecFit 通过成本感知的 draft 策略在投机解码的接受长度与传输开销之间取得平衡"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

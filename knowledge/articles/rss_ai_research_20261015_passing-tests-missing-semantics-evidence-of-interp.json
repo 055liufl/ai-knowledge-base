@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-137",
+  "title": "Passing Tests, Missing Semantics: Evidence of Interpretive Lock-In in Plan-Based DataFrame Code Generation",
+  "source_url": "https://arxiv.org/abs/2610.15797",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究基于计划的 DataFrame 代码生成中的解释性锁定现象，即对任务的错误理解可能在计划、实现和测试中持续存在。作者在 30 个源自 TPC Benchmark DS 的 DataFrame 任务上，比较了 Frozen One-Pass、Test-Guided Revision 和 PlanAudit-Guided Revision 三种方法。结果显示，测试通过数从 22/30 提升至 29/30 和 30/30，但生成的代码在语义上仍可能偏离任务规范。这一发现揭示了仅依赖测试通过率评估代码生成质量的局限性，对 LLM 代码生成、自动规划与修订流程的可靠性评估具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "DataFrame",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:16:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "解释性锁定指错误的任务理解在计划、实现和测试中持续存在，即使测试全部通过。",
+      "测试通过率提升并不保证语义正确性，仅依赖测试评估代码生成存在风险。",
+      "PlanAudit-Guided Revision 能提高测试通过率，但未能完全消除语义偏差。",
+      "在基于计划的代码生成中，需要引入语义验证机制来检测和纠正解释性锁定。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-045",
+  "title": "How to Build a Benchmark That Actually Measures Taste",
+  "source_url": "https://arxiv.org/abs/2610.14707",
+  "source_platform": "rss_ai_research",
+  "summary": "TasteBench 是一个针对专家对齐的“品味”基准测试，旨在评估模型对工艺判断（craft judgment）的能力，而非测试作弊（test-gaming）的能力。该基准采用成对的好与坏比较，覆盖视觉、品牌、书籍和技术四个领域，使用冻结的评分标准，并仅由专家（每组至少3人，主要门槛为百分比一致性≥0.60）提供黄金标签；弱参与度标签仅用于训练和分析。此外，论文提出了一种控制协议，用于区分工艺判断和测试作弊行为。该工作值得关注，因为它首次系统性地将“品味”这一主观但重要的维度引入AI评估，并设计了防作弊机制，有望推动模型在创意、设计和内容生成等领域的评估更加贴近人类专家判断，同时避免模型通过模式识别而非真正理解来获得高分。",
+  "tags": [
+    "Benchmark",
+    "Evaluation",
+    "AI Taste",
+    "Expert Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TasteBench 通过成对比较和专家黄金标签，将主观的“品味”评估标准化，覆盖视觉、品牌、书籍和技术领域。",
+      "控制协议能有效区分模型的工艺判断能力与测试作弊行为，提升评估的可靠性。",
+      "专家一致性门槛（≥0.60）和弱标签的隔离使用，确保了基准的高质量和可重复性。",
+      "该基准为评估生成式AI在创意和设计任务中的表现提供了新范式，可能影响未来模型训练和评估方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

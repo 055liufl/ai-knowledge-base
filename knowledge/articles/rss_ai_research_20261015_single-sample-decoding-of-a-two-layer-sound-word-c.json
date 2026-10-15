@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-077",
+  "title": "Single-Sample Decoding of a Two-Layer Sound-Word Canvas Model for Thai Klon Pad",
+  "source_url": "https://arxiv.org/abs/2610.14980",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于生成泰语 Klon Pad 诗歌的两层音词画布模型，并采用单样本解码策略。该模型基于 WangchanBERTa 初始化的掩码语言模型，在固定画布上构建两层结构：音层处理发音音节，通过硬掩码强制满足押韵、声调和音节数约束；词层处理完整单词，避免将单词切分为书写片段。解码过程逐个提交单元格，从简短主题生成一节诗歌，并在留出主题上与人类诗歌进行对比评估。该研究值得关注，因为它将预训练语言模型与结构化约束解码相结合，为低资源语言（泰语）的诗歌生成提供了新方法，同时通过硬掩码确保诗歌形式合规，平衡了生成灵活性与规则遵循。此外，单样本解码策略在数据稀缺场景下具有实用价值，为其他韵律严格的诗歌生成任务提供了参考。",
+  "tags": [
+    "文本生成",
+    "约束解码",
+    "低资源语言",
+    "预训练模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:12:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出两层画布模型，音层强制押韵、声调和音节数，词层保持单词完整性，实现形式约束与语义生成的解耦。",
+      "基于 WangchanBERTa 的掩码语言模型，通过单样本解码生成泰语 Klon Pad 诗歌，适用于低资源语言场景。",
+      "在留出主题上与人类诗歌对比评估，验证了模型在形式合规性和内容相关性上的表现。",
+      "硬掩码约束解码策略可推广至其他具有严格韵律要求的诗歌生成任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

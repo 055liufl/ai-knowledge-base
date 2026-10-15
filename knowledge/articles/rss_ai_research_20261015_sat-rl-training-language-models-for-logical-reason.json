@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-021",
+  "title": "SAT-RL: Training Language Models for Logical Reasoning with Symbolic Solvers",
+  "source_url": "https://arxiv.org/abs/2610.14402",
+  "source_platform": "rss_ai_research",
+  "summary": "SAT-RL 提出了一种将大语言模型（LLM）与符号求解器（如 Z3）结合的训练框架，旨在解决 LLM 在逻辑推理中随问题复杂度增加而性能下降的问题。LLM 虽在数学和逻辑推理上表现优异，但面对约束交互增多、搜索空间扩大时，往往陷入组合爆炸的困境；而 Z3 等可满足性求解器虽能提供可扩展且可验证的形式化推理，却缺乏对自然语言问题的灵活理解能力。SAT-RL 通过强化学习让语言模型学会调用符号求解器，将自然语言问题转化为形式化约束，再借助求解器完成精确推理，从而兼顾灵活性与可验证性。该工作为神经符号推理提供了新范式，有望提升 LLM 在复杂规划、程序验证、数学证明等任务中的可靠性，并推动可解释、可验证的 AI 推理系统发展。",
+  "tags": [
+    "LLM",
+    "Symbolic Reasoning",
+    "Reinforcement Learning",
+    "Neuro-Symbolic"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:09:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在复杂逻辑推理中面临组合爆炸，而符号求解器（如 Z3）可提供可扩展且可验证的推理能力。",
+      "SAT-RL 通过强化学习训练语言模型调用符号求解器，实现自然语言到形式化约束的自动转化。",
+      "该框架结合了神经网络的灵活性与符号系统的精确性，为神经符号推理提供了新思路。",
+      "方法有望提升 LLM 在规划、验证、数学证明等需要严格推理的任务中的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

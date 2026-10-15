@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-004",
+  "title": "Correction Training for Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2610.14136",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对扩散模型迭代采样中的暴露偏差（exposure bias）问题提出了一种修正训练方法。扩散模型在训练时去噪器接收的是真实图像与噪声的插值，但在推理时其输入来自自身前几步的不完美预测，这种训练与推理输入分布的不匹配导致误差累积，也是扩散模型常需依赖无分类器引导（CFG）等额外技巧的原因之一。作者引入了一个修正步骤（correction step），旨在缓解这一偏差，提升模型在无额外辅助下的生成质量。该工作值得关注，因为它直击扩散模型采样稳定性的核心痛点，若方法有效，可能减少对 CFG 等推理时技巧的依赖，推动更高效、更鲁棒的生成模型发展。",
+  "tags": [
+    "Diffusion Models",
+    "Exposure Bias",
+    "Sampling",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:09:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散模型迭代采样存在暴露偏差：训练时输入为真实图像加噪，推理时输入为自身预测，导致误差累积。",
+      "暴露偏差可能是扩散模型在无 CFG 等辅助下表现不佳的重要原因。",
+      "提出修正步骤（correction step）以缓解训练与推理输入分布不匹配的问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

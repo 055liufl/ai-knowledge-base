@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-033",
+  "title": "CB-Agent: Concept-Based In-Context Learning for Sequential Action Selection",
+  "source_url": "https://arxiv.org/abs/2610.14574",
+  "source_platform": "rss_ai_research",
+  "summary": "CB-Agent 提出了一种基于概念的上下文学习（Concept-Based In-Context Learning）方法，用于解决交互式智能体在序列动作选择任务中复用演示轨迹的难题。传统 ICL 方法要么直接输入完整轨迹，导致提示空间被大量占用、推理效率下降；要么使用自然语言摘要，但摘要往往丢失关键的动作-观察因果关系，难以支撑精确的动作决策。CB-Agent 的核心思路是从演示轨迹中抽取可复用的「概念」，将冗长的推理-动作-观察序列压缩为结构化的概念表示，再在推理时根据当前情境检索并组合相关概念，从而在有限的上下文窗口内实现高效的动作选择。该方法在保持甚至提升任务成功率的同时，显著降低了提示长度，为 LLM 智能体在复杂交互环境中的可扩展部署提供了新思路。该工作值得关注，因为它触及了当前 Agent 研究的一个关键瓶颈：如何让智能体从少量演示中泛化到新情境，而不被上下文长度和冗余信息所限制。",
+  "tags": [
+    "Agent",
+    "In-Context Learning",
+    "LLM",
+    "Action Selection"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接输入完整轨迹会消耗大量提示空间并限制智能体性能，而自然语言摘要又会丢失关键的动作-观察因果关系。",
+      "CB-Agent 通过从演示轨迹中抽取可复用的概念，将冗长序列压缩为结构化表示，在有限上下文内实现高效的动作选择。",
+      "该方法在保持任务成功率的同时显著缩短提示长度，为 LLM 智能体在复杂交互环境中的可扩展部署提供了新路径。",
+      "概念化复用比原始轨迹或自然语言摘要更适合交互式智能体的序列决策场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

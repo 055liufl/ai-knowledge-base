@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20261015-003",
+  "title": "Running RAG with a (small) language model in the browser",
+  "source_url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了如何在浏览器中运行基于小型语言模型的检索增强生成（RAG）系统。作者通过结合 WebAssembly 和 ONNX Runtime 等技术，在客户端实现了完整的 RAG 流程，包括文档嵌入、向量检索和文本生成。这种方法无需服务器支持，所有计算都在本地进行，从而提升了隐私保护、降低了延迟，并减少了成本。文章详细说明了技术选型、实现步骤和性能考量，为开发者提供了一个可复现的示例。该实践展示了小型语言模型在边缘设备上的可行性，为构建隐私优先、离线可用的 AI 应用开辟了新思路，尤其适合对数据安全敏感或需要实时响应的场景。",
+  "tags": [
+    "RAG",
+    "WebAssembly",
+    "ONNX",
+    "Small Language Model",
+    "Browser"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:00Z",
+  "collected_at": "2026-10-15T13:08:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在浏览器中运行 RAG 可以完全在客户端处理数据，避免数据外传，增强隐私保护。",
+      "使用小型语言模型和 WebAssembly 技术，能够在资源受限的环境中实现可接受的性能。",
+      "该方案降低了服务端成本和网络延迟，为实时 AI 应用提供了新可能。",
+      "尽管小型模型能力有限，但结合检索增强可以提升生成质量，适用于特定领域任务。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-118",
+  "title": "Large Decision Models: Repurposing Large Language Models as Single-Pass Decision Makers",
+  "source_url": "https://arxiv.org/abs/2610.15501",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Large Decision Models (LDMs)，旨在将大语言模型重新利用为单次决策者，以解决传统 LLM 决策中解码成本高、决策概率不明确以及任务特定分类器泛化能力差的问题。传统方法依赖并行预填充和顺序解码，虽然有效但计算开销大，且无法直接输出决策概率；而现有任务特定分类器需要针对每个任务单独训练，难以泛化到未见过的决策模式。LDMs 通过改造语言模型，使其在单次前向传播中直接返回指定标签上的显式概率，从而避免顺序解码，降低推理成本，并提升决策透明度和跨任务泛化能力。该工作为 LLM 在决策场景中的应用提供了新范式，有望推动更高效、可解释的 AI 决策系统发展，尤其适合需要快速、可靠概率输出的应用场景。",
+  "tags": [
+    "LLM",
+    "Decision Making",
+    "Inference Efficiency",
+    "Probabilistic Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LDMs 通过单次前向传播输出标签概率，避免了顺序解码的开销，显著提升推理效率。",
+      "显式概率输出增强了决策的可解释性，并支持不确定性量化。",
+      "无需任务特定训练即可泛化到新的决策模式，降低了部署成本。",
+      "该方法为 LLM 作为通用决策引擎提供了新思路，但可能受限于标签空间预定义。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

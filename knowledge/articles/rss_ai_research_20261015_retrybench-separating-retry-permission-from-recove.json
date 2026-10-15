@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-140",
+  "title": "RetryBench: Separating Retry Permission from Recovery Outcomes in GPT Tool Use",
+  "source_url": "https://arxiv.org/abs/2610.15884",
+  "source_platform": "rss_ai_research",
+  "summary": "RetryBench 是一篇针对 GPT 类智能体工具调用中重试行为的研究论文，提出了“虚假重试许可”（False Retry Permission, FRP）这一新概念，用以描述智能体在缺乏可见契约支持的情况下对超时工具调用进行重试的错误行为。该研究的核心贡献在于将“重试许可”与“实际恢复结果”这两个常被混淆的维度进行分离：一次成功的受保护恢复并不意味着智能体能够可靠地拒绝不受支持的重试。作者设计了一个包含 720 条响应的关键控制实验，使用有效密钥、变更密钥等条件来测试不同模型（Sol、Terra、Luna）的重试决策。结果显示，有效密钥通常能促成安全推进，但当密钥被替换后，Sol 仅出现 1/80 的不支持重试，而 Terra 和 Luna 分别高达 55/80 和 60/80，暴露出模型在重试许可判断上的显著差异与脆弱性。该工作值得关注，因为它揭示了当前工具调用智能体在错误处理与安全边界判断上的系统性缺陷，为评估和提升智能体可靠性提供了新的基准与视角。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Evaluation",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:16:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "虚假重试许可（FRP）是智能体在缺乏契约支持时仍重试超时工具调用的错误，需与恢复结果分开评估。",
+      "成功的受保护恢复并不代表智能体能可靠拒绝不受支持的重试，二者是独立的能力维度。",
+      "不同模型对重试许可的判断差异巨大：Sol 仅 1/80 出现不支持重试，而 Terra 和 Luna 分别高达 55/80 和 60/80。",
+      "RetryBench 提供了分离重试许可与恢复结果的控制实验框架，可用于诊断智能体工具调用的安全边界。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

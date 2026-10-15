@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-040",
+  "title": "RASSG: Repair-Aware Semantic Survival Gating for Streaming Tool Execution",
+  "source_url": "https://arxiv.org/abs/2610.14659",
+  "source_platform": "rss_ai_research",
+  "summary": "RASSG（Repair-Aware Semantic Survival Gating）是一篇针对流式语音助手工具执行场景的学术论文。该研究聚焦于一个关键问题：流式语音助手为了减少用户等待时间，会在用户尚未说完话时就提前启动工具调用，将执行与语音输入重叠。然而，用户随后的自我纠正（self-correction）可能使看似稳定的参数失效，导致\"陈旧执行\"（stale execution），其不可逆的副作用即使在最终调用被修正后仍然持续存在。RASSG 提出了一种修复感知的语义生存门控机制，在流式语音处理过程中联合控制工具的启动与取消。该工作值得关注的原因在于：它揭示了流式交互中\"提前执行\"与\"用户意图动态修正\"之间的根本性矛盾，并提出了一个兼顾延迟优化与执行正确性的解决方案框架。随着语音助手和实时 Agent 系统的普及，如何在流式场景下安全地调度工具调用成为一个日益重要的工程与算法问题，RASSG 为这一方向提供了新的研究视角。",
+  "tags": [
+    "Streaming",
+    "Tool Execution",
+    "Speech Assistant",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流式语音助手提前启动工具虽能降低延迟，但用户自我纠正会导致参数失效和不可逆的陈旧执行副作用",
+      "RASSG 通过修复感知的语义生存门控机制，在流式过程中联合决策工具的启动与取消",
+      "该工作揭示了实时交互系统中延迟优化与执行正确性之间的核心权衡问题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

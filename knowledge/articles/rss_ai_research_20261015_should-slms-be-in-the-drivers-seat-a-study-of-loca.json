@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-010",
+  "title": "Should SLMs be in the Driver's Seat? A Study of Local Models as Interpreters in Cloud-Written Agent Programs",
+  "source_url": "https://arxiv.org/abs/2610.14209",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种混合式智能体架构：由云端大模型编写程序，再由本地小型模型（SLM）在边缘设备上执行该程序。这种方案试图兼顾云端大模型的高任务准确率与本地执行的数据隐私性——用户数据始终留在设备上，云端只负责生成不接触数据的程序。然而，由于程序在未见任何数据之前就已写好，一旦某个步骤依赖具体数据内容，程序就会失败。论文系统性地考察了小型模型作为\"解释器\"（interpreter）在云端编写的智能体程序中所扮演的角色，探讨SLM能否在本地正确理解并执行这些程序，以及这种分工模式在何种条件下可行。该研究触及了当前智能体部署中的核心矛盾：能力与隐私的权衡，对边缘AI、隐私保护计算和智能体系统设计具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "SLM",
+    "Edge AI",
+    "Privacy"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:09:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "云端大模型编写程序、本地小模型执行的混合架构可在保护数据隐私的同时利用大模型能力，但程序预写导致数据依赖步骤容易失败",
+      "小型模型作为程序解释器的可靠性是决定该架构可行性的关键因素",
+      "该研究揭示了智能体部署中能力与隐私之间的根本性权衡，为边缘智能体设计提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

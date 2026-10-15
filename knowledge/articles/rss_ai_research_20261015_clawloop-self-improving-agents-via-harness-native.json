@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-003",
+  "title": "ClawLoop: Self-Improving Agents via Harness-Native Training Loop",
+  "source_url": "https://arxiv.org/abs/2610.14118",
+  "source_platform": "rss_ai_research",
+  "summary": "ClawLoop 提出了一种面向 Harness 原生环境的自我改进智能体训练循环方法，旨在解决当前基于沙箱工作空间（文件系统、Shell 交互）的 LLM 智能体后训练流程稀缺且依赖外部强模型一次性生成任务的问题。现有工具使用智能体的后训练管线无法直接迁移到 Harness 场景，因为后者涉及更复杂的环境交互、状态管理和多步执行反馈。ClawLoop 的核心思路是让智能体在与 Harness 环境的持续交互中自主生成训练信号，形成闭环式的自我改进机制，从而摆脱对教师模型的依赖。该工作值得关注的原因在于：随着 LLM 智能体从简单的工具调用向通用 Harness 环境（如代码执行、文件操作、系统管理）演进，如何高效地训练和持续提升这类智能体成为关键瓶颈。ClawLoop 提出的 Harness-Native 训练范式有望降低训练成本、提升智能体在真实环境中的适应能力，并为自主智能体的持续学习提供新的技术路径。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "LLM",
+    "Training Loop"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:09:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工具使用智能体的后训练管线无法直接适用于 Harness 环境，后者需要处理文件系统、Shell 等复杂交互场景",
+      "当前 Harness 智能体训练方法多为一次性且依赖外部强教师模型合成任务，缺乏自主性和可扩展性",
+      "ClawLoop 通过 Harness-Native 训练循环实现智能体自我改进，有望摆脱对教师模型的依赖",
+      "该方向代表了 LLM 智能体从简单工具调用向通用沙箱环境自主进化的重要趋势"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

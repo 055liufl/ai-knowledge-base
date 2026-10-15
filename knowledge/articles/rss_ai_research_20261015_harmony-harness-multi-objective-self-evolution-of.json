@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-090",
+  "title": "Harmony Harness: Multi-Objective Self-Evolution of Agent Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.15150",
+  "source_platform": "rss_ai_research",
+  "summary": "Harmony Harness 是一篇来自 arXiv 的论文（编号 2610.15150），聚焦于自进化 LLM Agent 的「harness」（即包裹在 LLM 外围、负责调度工具、管理上下文与执行流程的框架层）优化问题。现有自进化 Agent 方法通常只针对单一目标进行优化，并将 harness 视为一个不可拆分的整体进行迭代改进，这导致两个明显缺陷：一是难以同时兼顾多个相互竞争的目标（如准确性、效率、成本、鲁棒性），二是无法将可迁移的通用设计从特定环境的适配逻辑中分离出来，从而限制了跨任务、跨环境的泛化能力。Harmony Harness 提出了一种多目标自进化框架，试图在多个目标之间取得平衡，并对 harness 进行更细粒度的解耦，使可复用的设计模式与针对特定环境的调整能够分别演化。该工作值得关注的原因在于：随着 Agent 系统从单任务演示走向生产级部署，harness 的设计质量往往比底层模型本身更能决定实际表现，而多目标优化与可迁移性正是当前 Agent 工程化的核心痛点。该研究为构建更稳健、更通用、更易迁移的 Agent 框架提供了新的方法论视角，对 Agent ",
+  "tags": [
+    "Agent",
+    "Self-Evolution",
+    "Multi-Objective Optimization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自进化 Agent 方法多针对单一目标优化，难以处理准确性、效率、成本等相互竞争的目标。",
+      "将 harness 视为不可拆分的整体进行演化，阻碍了可迁移设计知识与环境特定适配逻辑的分离。",
+      "Harmony Harness 通过多目标自进化框架，尝试在多个目标间取得平衡并提升 harness 的跨环境泛化能力。",
+      "随着 Agent 走向生产部署，harness 层设计的重要性可能不亚于底层模型本身。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-139",
+  "title": "Engram Injection: A Study of Temporal Validity in Parametric Language-Model Memory",
+  "source_url": "https://arxiv.org/abs/2610.15882",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究语言模型参数化记忆中的时间有效性（Temporal Validity）问题：当用户偏好改变或事件被替代时，已存储的事实可能失效。作者提出 Engram Injection 方法，将事实存储在 LoRA 适配器中，并通过 FiLM 条件化将当前时间注入冻结的 Qwen2.5-3B-Instruct 模型，使模型仅凭问题和当前时间即可正确回答。研究对比了 FiLM 条件化与加性时钟条件化、以及完整提示等基线方法。该工作值得关注，因为它首次系统性地探讨了参数化记忆随时间失效的问题，为构建能感知时间变化、动态更新知识的语言模型提供了新思路，对需要长期记忆和时效性推理的 AI 应用（如个性化助手、动态知识库）具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "LoRA",
+    "Temporal Reasoning",
+    "Parametric Memory"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:16:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "参数化记忆中的事实会随时间失效，模型需要学习时间有效性而非静态存储。",
+      "Engram Injection 通过 LoRA 存储事实并用 FiLM 注入时间信息，实现仅凭问题和当前时间的正确回答。",
+      "FiLM 条件化在时间感知任务上优于加性时钟条件化和完整提示方法。",
+      "该研究为语言模型的动态知识更新和时效性推理提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

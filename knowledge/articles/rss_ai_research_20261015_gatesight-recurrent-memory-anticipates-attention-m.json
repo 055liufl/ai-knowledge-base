@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-051",
+  "title": "GateSight: Recurrent Memory Anticipates Attention Memory for Query-Agnostic KV Eviction in Hybrid LLMs",
+  "source_url": "https://arxiv.org/abs/2610.14754",
+  "source_platform": "rss_ai_research",
+  "summary": "GateSight 是一篇针对混合语言模型（Hybrid LLMs）推理效率的研究论文。混合模型如 Qwen3.8-27B 将固定大小的循环记忆层（Gated DeltaNet, GDN）与随上下文增长的完整注意力 KV 缓存层交错堆叠，导致 KV 缓存成为服务内存的主要瓶颈。该论文提出一个核心问题：循环记忆是否已经知道注意力记忆将需要什么？作者首先发现，Qwen3.8-27B 中哪些 GDN 头保持长期记忆是由模型权重决定的，而非由输入文档决定，这一发现为查询无关（query-agnostic）的 KV 驱逐策略提供了依据。基于此，GateSight 利用循环记忆来预测注意力层中哪些 KV 条目可以被安全驱逐，从而在不依赖具体查询的情况下压缩 KV 缓存。该方法有望显著降低混合 LLM 的推理内存占用，提升长上下文服务效率，对关注大模型推理优化和内存管理的开发者与研究者具有重要参考价值。",
+  "tags": [
+    "KV Cache",
+    "Hybrid LLM",
+    "Inference Optimization",
+    "Memory Management"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合 LLM 中 GDN 循环记忆的长期记忆能力由权重固定，而非由输入文档决定，这为查询无关的 KV 驱逐提供了理论基础。",
+      "循环记忆可以预测注意力记忆的需求，从而实现无需查询信息的 KV 缓存压缩。",
+      "GateSight 有望显著降低混合 LLM 长上下文推理时的服务内存占用。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

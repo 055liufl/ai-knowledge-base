@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-099",
+  "title": "MoMaTune: Model, Match, Then Tune Language Models for Numerical Records",
+  "source_url": "https://arxiv.org/abs/2610.15235",
+  "source_platform": "rss_ai_research",
+  "summary": "MoMaTune 提出了一种针对数值记录的语言模型适配方法，旨在解决解码器语言模型在处理数值数据时的显著失败问题。传统方法将数值示例序列化为文本（如 'fat:3.4'），并仅对下游预测目标应用损失，导致两种结构监督不足：一是值内敏感性（数字位置的重要性），二是特征间关系。MoMaTune 通过 'Model, Match, Then Tune' 的三阶段流程，先建模数值结构，再匹配特征与数值，最后微调语言模型，从而增强模型对数值数据的理解。该工作值得关注，因为数值数据广泛存在于表格、科学记录和金融等领域，而现有语言模型在此类任务上表现不佳。MoMaTune 提供了一种系统性的解决方案，有望提升语言模型在数值推理和预测任务中的性能，对推动 LLM 在结构化数据上的应用具有重要意义。",
+  "tags": [
+    "LLM",
+    "Numerical Reasoning",
+    "Fine-tuning",
+    "Tabular Data"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统序列化方法（如 'fat:3.4'）导致语言模型对数值的位敏感性和特征间关系监督不足。",
+      "MoMaTune 通过 'Model, Match, Then Tune' 三阶段流程，显式建模数值结构并匹配特征，再微调模型。",
+      "该方法有望提升语言模型在数值记录上的预测和推理能力，适用于表格、科学和金融数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-128",
+  "title": "Radioactive Feedback: Tracing Models Trained by Label-Only LLM Supervision",
+  "source_url": "https://arxiv.org/abs/2610.15685",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种仅使用标量评分（label-only）的 LLM-as-a-Judge 知识蒸馏方法，其中学生模型自行生成所有回答，仅依赖教师模型给出的分数进行改进，而无需教师提供示范答案。这种非示范性反馈已被证明能提升学生能力，但带来了全新的溯源问题：由于没有教师生成的文本作为参照，学生模型的输出完全自主生成，导致难以追溯其能力来源、判断是否真正学到了教师的知识，还是仅拟合了评分信号。论文可能提出了追踪此类模型训练过程的方法，分析评分反馈如何影响模型行为，并探讨这种蒸馏范式下的可解释性与安全性挑战。该工作值得关注，因为它触及了当前 LLM 对齐与蒸馏中一个关键但被忽视的盲区——当监督信号退化为单一标量时，模型能力的来源变得模糊，这对模型审计、版权归属和安全性评估提出了新要求。随着 LLM-as-a-Judge 在工业界广泛应用，理解这种“放射性反馈”的传播机制对构建可信 AI 系统至关重要。",
+  "tags": [
+    "LLM",
+    "Knowledge Distillation",
+    "LLM-as-a-Judge",
+    "Model Provenance"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅使用标量评分的蒸馏方法中学生完全自主生成回答，导致能力溯源困难，无法区分是真正学习还是拟合评分信号。",
+      "非示范性反馈（label-only）与传统的示范蒸馏在知识转移机制上存在本质差异，需要新的分析工具来评估其效果与风险。",
+      "LLM-as-a-Judge 的广泛应用使得这种“放射性反馈”问题具有现实紧迫性，对模型审计、版权和安全性评估提出新挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

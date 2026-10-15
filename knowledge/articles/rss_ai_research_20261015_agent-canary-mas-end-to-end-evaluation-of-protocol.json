@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-120",
+  "title": "Agent-Canary-Mas: End-to-End Evaluation of Protocol Risk in Long-Horizon Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2610.15529",
+  "source_platform": "rss_ai_research",
+  "summary": "Agent-Canary-Mas 是一个面向长周期多智能体系统的端到端协议风险评估框架，针对 LLM 智能体之间通过 agent-to-agent 协议进行发现、结果交换与工具调用协调的场景。现有安全评估通常只衡量单点（局部）协议攻击的可利用性，但一个在局部成功的攻击可能被后续智能体拒绝，也可能被传播并最终影响关键任务决策，因此局部指标无法反映真实风险，也难以归因最终结果由哪个参与者造成。该工作提出端到端评估系统，将协议攻击置于完整的多智能体任务链路中考察其传播、拦截与最终影响，并支持对责任参与者的定位。其价值在于把多智能体安全从“单点漏洞检测”推进到“系统级风险度量”，为协议设计、智能体信任边界与任务编排提供更贴近实际部署的评估依据，对构建可靠的多智能体协作基础设施具有参考意义。",
+  "tags": [
+    "Multi-Agent",
+    "Agent Protocol",
+    "Security",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:15:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部协议攻击的成功不等于端到端任务风险，攻击可能被后续智能体拒绝或在链路中被放大传播。",
+      "多智能体安全评估需要覆盖完整任务链路，并支持对导致最终结果的参与者进行归因。",
+      "Agent-to-agent 协议的信任与协调机制是长周期多智能体系统安全的关键薄弱环节。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

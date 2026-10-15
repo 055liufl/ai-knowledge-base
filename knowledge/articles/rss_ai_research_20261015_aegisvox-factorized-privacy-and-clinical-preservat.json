@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-038",
+  "title": "AegisVox: Factorized Privacy and Clinical Preservation for Long-Form Speech",
+  "source_url": "https://arxiv.org/abs/2610.14643",
+  "source_platform": "rss_ai_research",
+  "summary": "AegisVox 是一个面向长时临床语音的隐私保护框架，旨在解决临床语音中身份信息与临床证据共存带来的去标识化难题。传统语音匿名化方法通常只关注文字内容的替换，但临床语音中的停顿、语速、说话人角色等副语言特征同样承载重要的诊断信息，简单抹除会破坏其临床价值。AegisVox 采用因子化设计，将语音中的身份信息与临床信息解耦：一方面为说话人分配一致的替代声音（surrogate voice），另一方面对包含身份标识的对话轮次进行文档级一致的替换编辑，从而在去除可识别信息的同时保留对临床分析有用的韵律和角色结构。该工作基于 390 段公开的模拟或非患者对话进行验证，展示了在隐私保护与临床信息保留之间的平衡能力。对于医疗 AI、语音隐私和临床自然语言处理领域的研究者与开发者而言，AegisVox 提供了一种可借鉴的因子化去标识化思路，有望推动临床语音数据在合规前提下的共享与二次利用。",
+  "tags": [
+    "Speech Privacy",
+    "Clinical NLP",
+    "De-identification",
+    "Voice Anonymization"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:10:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临床语音的隐私保护不能仅依赖文本替换，还需处理声音身份与副语言特征中的可识别信息。",
+      "因子化设计将身份信息与临床证据解耦，通过替代声音和文档一致的标识符替换实现双重保护。",
+      "保留停顿、语速和说话人角色等韵律特征对维持临床诊断价值至关重要。",
+      "该框架在 390 段模拟或非患者对话上验证，为临床语音数据的合规共享提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

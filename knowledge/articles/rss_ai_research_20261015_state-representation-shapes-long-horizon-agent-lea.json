@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-110",
+  "title": "State Representation Shapes Long-Horizon Agent Learning and Transfer: An Empirical Study",
+  "source_url": "https://arxiv.org/abs/2610.15407",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了状态表示（state representation）如何影响长程（long-horizon）智能体学习与迁移能力。作者指出，仅凭端到端成功率无法区分智能体是「未能学会某个动作」还是「未能随任务状态变化正确应用该动作」。为此，他们在确定性的工具工作流中开展实证研究，工作流提供当前工件状态（artifact state）与候选动作配方（action recipes）。实验使用 1.7B、8B 和 27B 三种规模的 Qwen 模型，比较不同工作流长度下的监督学习效果，并交叉训练与评估阶段所使用的状态表示。研究发现，状态表示的选择显著影响长程任务的学习效率与跨状态迁移表现，训练与评估状态表示不匹配时性能下降明显，而匹配的表示有助于模型将学到的动作知识迁移到新状态。该工作为智能体训练中状态设计提供了重要经验证据，对构建可靠的长程工具使用智能体具有实践指导意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Long-Horizon",
+    "State Representation",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "端到端成功率无法区分「未学会动作」与「未能在状态变化时正确应用动作」，需要更细粒度的评估指标。",
+      "训练与评估阶段的状态表示一致性对长程智能体的性能与迁移能力至关重要。",
+      "状态表示的设计会显著影响智能体在不同工作流长度下的学习效率。",
+      "在确定性工具工作流中，匹配的状态表示有助于动作知识的跨状态迁移。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-078",
+  "title": "Certify the Decision, Not Every Score: Exact Top-k Selection from Few Evaluations",
+  "source_url": "https://arxiv.org/abs/2610.14996",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Certified Adaptive Selection (CAS) 的新方法，旨在解决从大量候选算法或调度方案中选出少数稳健最优者时，需要评估每个候选者在众多不利场景下表现的问题。传统方法需要穷举评估所有候选者，而 CAS 利用预测器建议可能的获胜者，并通过维护每个候选者的保证下界和上界，在剩余不确定性无法改变 top-k 集合时立即返回精确的 top-k 结果。该方法的核心创新在于将认证（certification）从每个评分转移到最终决策上，从而大幅减少评估次数。CAS 适用于需要在不确定性环境下进行稳健选择的场景，如算法选择、超参数调优、调度优化等。该工作结合了主动学习、区间分析和 top-k 选择理论，为高效决策提供了理论保证和实用算法。其重要性在于：在评估成本高昂或场景数量庞大的实际应用中，CAS 能够以更少的评估次数获得精确的 top-k 结果，显著提升效率，同时保持结果的正确性保证。",
+  "tags": [
+    "Top-k Selection",
+    "Active Learning",
+    "Robust Optimization",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:13:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CAS 通过维护候选者的保证上下界，在不确定性无法改变 top-k 集合时提前终止评估，实现精确 top-k 选择。",
+      "该方法将认证从每个评分转移到最终决策，避免了穷举评估所有候选者在所有场景下的表现。",
+      "CAS 结合预测器建议与区间分析，在保证正确性的前提下显著减少评估次数。",
+      "适用于评估成本高昂的稳健算法选择、调度优化等场景，具有理论保证和实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

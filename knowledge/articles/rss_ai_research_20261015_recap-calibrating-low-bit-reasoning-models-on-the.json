@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-101",
+  "title": "RECAP: Calibrating Low-Bit Reasoning Models on the History They Read",
+  "source_url": "https://arxiv.org/abs/2610.15259",
+  "source_platform": "rss_ai_research",
+  "summary": "RECAP 是一篇针对低比特量化推理模型校准方法的研究论文（arXiv:2610.15259）。该工作聚焦于一个关键问题：低比特量化虽然能显著降低推理模型的部署成本，但会严重损害长链思维（long chains of thought）的生成质量。作者指出，推理过程中每一步都需要读取跨越数千个 token 的缓存键值（KV cache），量化误差会沿推理轨迹逐步累积。而现有的标准校准方法仅在短片段上操作，忽略了后续推理步骤所需的早期上下文；即便保留上下文，仅靠缓存重建误差也不足以刻画真实影响。RECAP 提出了一种基于模型所读历史进行校准的新思路，旨在缓解低比特推理模型在长链推理中的性能退化。该研究对推动大模型高效推理部署、降低推理成本具有重要价值，尤其适用于需要在资源受限环境下运行长链推理（如数学、代码、多步规划）的场景。",
+  "tags": [
+    "Quantization",
+    "Reasoning",
+    "LLM",
+    "KV Cache",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低比特量化误差会在长链推理中沿轨迹累积，因为每步读取的 KV cache 跨越数千 token。",
+      "现有校准方法使用短片段，丢失了后续推理步骤依赖的早期上下文，导致校准不充分。",
+      "仅优化缓存重建误差不足以恢复推理性能，需要基于模型实际读取的历史进行校准。",
+      "RECAP 为低比特推理模型的高效部署提供了新的校准范式，兼顾成本与长链推理质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

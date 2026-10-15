@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-113",
+  "title": "Hidden in Plain Sight: Advancing Harmful Content Understanding via Perception-Aware Adversarial Self-Play",
+  "source_url": "https://arxiv.org/abs/2610.15449",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）在有害内容识别上的一个关键盲区展开研究：人类能轻易识别的、经过策略性伪装的有害表达，LLM 却常常无法识别，这种\"显而易见却被忽视\"的认知不对称被恶意用户利用来规避自动化内容审核，严重威胁平台安全。作者提出了一种\"感知感知的对抗性自我博弈\"（Perception-Aware Adversarial Self-Play）方法，通过让模型在对抗博弈中同时扮演伪装者与识别者，强化其对隐含有害意图的感知能力，从而提升有害内容理解的鲁棒性。该工作值得关注的原因在于：它揭示了当前 LLM 安全对齐的一个结构性缺陷——模型擅长显式语义匹配，却缺乏对人类语用、隐喻、暗示等隐式表达的感知能力；同时它提出了一种无需大量人工标注、可自我进化的对抗训练范式，为内容审核、红队测试与安全对齐提供了新思路。对于依赖 LLM 进行内容风控的平台和研究者而言，这项工作兼具理论洞察与工程实用价值。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Adversarial",
+    "Content Moderation"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:14:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 存在与人类之间的认知不对称：人类能轻松识别的伪装有害内容，模型却常常漏检，形成可被恶意利用的安全漏洞。",
+      "提出感知感知的对抗性自我博弈框架，让模型在伪装与识别的对抗中自我进化，提升对隐含有害意图的理解能力。",
+      "该范式减少了对大规模人工标注的依赖，可同时服务于内容审核与安全红队测试。",
+      "研究揭示了当前安全对齐偏重显式语义匹配、忽视语用与隐式表达的根本局限。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

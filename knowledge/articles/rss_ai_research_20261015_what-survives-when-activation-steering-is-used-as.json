@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261015-073",
+  "title": "What Survives When Activation Steering Is Used as Memory",
+  "source_url": "https://arxiv.org/abs/2610.14958",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究激活引导（activation steering）作为记忆机制时的信息保留能力，挑战了「事实与用户偏好必须依赖文本存储」这一假设。作者提出一种无需训练的激活记忆方案：在冻结的 LLM 旁，将一次经验在后期层状态中引起的改变存储为一个「位移」（shift），以对话要旨的白化键（whitened key）归档，并在需要时加回模型状态中。该工作探讨了激活向量能否像存储技能一样存储事实性知识与用户偏好，从而为 LLM 记忆机制提供了一种非文本的替代路径。其价值在于：若成立，可显著降低记忆系统的文本开销与检索复杂度，并为理解 LLM 内部表征的可编辑性提供实证。对 Agent 记忆、持续学习与模型可解释性研究均有启发，但摘要未给出完整实验结论，需阅读全文验证其有效性边界。",
+  "tags": [
+    "Activation Steering",
+    "Memory",
+    "LLM",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:12:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "激活引导可被用作一种无需训练的 LLM 记忆机制，将经验编码为后期层状态位移",
+      "该工作质疑了事实与用户偏好必须依赖文本存储的假设，探索纯激活式记忆的可行性",
+      "以对话要旨的白化键归档位移，提供了一种结构化检索激活记忆的思路",
+      "若验证有效，可降低 Agent 记忆系统的文本开销，但需关注其容量与泛化边界"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

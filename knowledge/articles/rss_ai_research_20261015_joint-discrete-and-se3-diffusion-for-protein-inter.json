@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261015-043",
+  "title": "Joint Discrete and SE(3) Diffusion for Protein Interface Design",
+  "source_url": "https://arxiv.org/abs/2610.14699",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 PIDiff，一个面向蛋白质-蛋白质复合物界面设计的物理化学增强多模态扩散框架，旨在解决现有蛋白质生成方法难以同时实现结合界面几何互补与物理化学互补的问题。该方法联合建模离散序列与 SE(3) 刚体变换（即残基类型与主链/侧链空间构象），通过扩散过程在连续几何空间与离散氨基酸类型空间之间协同去噪，从而生成高亲和力、靶标特异性的蛋白质结合体。该工作值得关注的原因在于：蛋白质结合体设计是现代生物治疗（如抗体、抑制剂、靶向降解剂）的核心环节，而现有方法（如 RFdiffusion、ProteinMPNN 等）通常将序列设计与结构生成分离，或仅在单一模态上扩散，导致界面互补性不足、实验成功率低。PIDiff 将 SE(3) 等变几何扩散与离散扩散统一在一个框架内，并引入物理化学先验（如氢键、静电、疏水作用等界面特征）作为条件或评分引导，有望提升生成设计的可开发性与亲和力。该研究属于 AI for Science 与生成式模型交叉方向，对计算蛋白质设计、药物发现及结构生物学具有潜在应用价值，也为多模态扩散模型在科学领域的落地提供了新范式。",
+  "tags": [
+    "Diffusion Model",
+    "Protein Design",
+    "SE(3)",
+    "Multimodal",
+    "Drug Discovery"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "联合离散序列扩散与 SE(3) 几何扩散，可同时优化氨基酸类型与空间构象，提升界面几何与物理化学互补性。",
+      "引入物理化学先验（如氢键、静电、疏水作用）作为扩散引导，有望提高生成结合体的亲和力与实验成功率。",
+      "该框架为蛋白质界面设计提供了多模态生成新思路，但需实验验证其相对于现有方法（如 RFdiffusion）的实际优势。",
+      "SE(3) 等变性与离散扩散的统一建模，对更广泛的分子生成与科学发现任务具有迁移价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

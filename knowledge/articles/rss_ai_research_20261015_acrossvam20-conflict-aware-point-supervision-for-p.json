@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261015-042",
+  "title": "AcrossVAM2.0: Conflict-Aware Point Supervision for Parameter-Efficient Video Diffusion Adaptation",
+  "source_url": "https://arxiv.org/abs/2610.14693",
+  "source_platform": "rss_ai_research",
+  "summary": "AcrossVAM2.0 是一篇关于视频扩散模型参数高效适配的研究工作，聚焦于如何利用显式点对应（point correspondence）来指导大规模预训练视频生成器的适配。作者指出，显式点对应虽然能描述可见表面的运动方式，但直接引入会覆盖预训练模型已习得的外观先验，形成一种内在张力。为此，论文在一个 5.01B 参数的文本到视频扩散 Transformer 上展开研究，提出 ACROSSVAM2.0 方法，包含三个关键组件：置信度加权的轨迹与可见性预测头、零初始化的残差反馈机制，以及非对称 PCGrad 冲突消解策略——后者仅移除与主任务相冲突的辅助梯度分量，从而在保留运动监督信号的同时不破坏外观先验。该工作值得关注，因为它直面视频生成适配中运动控制与外观保真之间的核心矛盾，提出了一种冲突感知的点监督范式，为参数高效微调大视频模型提供了新思路，对视频生成、可控编辑及扩散模型适配方向的研究者和开发者具有参考价值。",
+  "tags": [
+    "Video Diffusion",
+    "Parameter-Efficient Fine-Tuning",
+    "Point Correspondence",
+    "Gradient Conflict"
+  ],
+  "author": null,
+  "published_at": "2026-10-15T13:07:01Z",
+  "collected_at": "2026-10-15T13:11:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式点对应监督与预训练外观先验之间存在冲突，直接引入会覆盖模型已学到的外观知识。",
+      "零初始化残差反馈与非对称 PCGrad 可仅移除冲突的辅助梯度分量，实现运动监督与外观保真的平衡。",
+      "在 5.01B 参数文本到视频扩散 Transformer 上的验证表明，冲突感知的点监督是参数高效适配视频生成器的可行路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
