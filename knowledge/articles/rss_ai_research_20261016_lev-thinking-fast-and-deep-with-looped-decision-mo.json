@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-024",
+  "title": "LEV: Thinking Fast and Deep with Looped Decision Models",
+  "source_url": "https://arxiv.org/abs/2610.20951",
+  "source_platform": "rss_ai_research",
+  "summary": "LEV（Looped Decision Models）是一种新型决策模型架构，旨在解决传统决策模型在计算深度上固定不变的问题。传统决策模型类似双过程理论中的“系统1”，通过单次前向传播直接输出每个选项的概率，无需生成文本，速度快但无法根据问题难度动态调整计算量。而基于文本生成的推理模型虽然可以“思考更久”，但每一步都需要解码 token，计算成本高昂。LEV 通过循环决策机制，在保持单次前向传播高效性的同时，引入可变的计算深度，使模型能够对简单问题快速回答，对复杂问题投入更多计算。该工作将快速直觉与深度推理结合，为决策模型提供了更灵活的计算分配策略，有望在需要高效推理的场景中替代或补充现有生成式推理方法。",
+  "tags": [
+    "Decision Models",
+    "Reasoning",
+    "Efficient Inference",
+    "Looped Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统决策模型计算深度固定，无法根据问题难度自适应调整计算量。",
+      "LEV 通过循环机制实现可变深度推理，兼顾快速响应与深度思考。",
+      "相比生成式推理模型，LEV 避免了逐 token 解码的高昂成本。",
+      "该工作为高效推理提供了新思路，可能推动决策模型在复杂任务中的应用。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

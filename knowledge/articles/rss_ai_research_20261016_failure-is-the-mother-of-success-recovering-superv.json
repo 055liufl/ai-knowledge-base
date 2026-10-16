@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-028",
+  "title": "Failure Is the Mother of Success: Recovering Supervision with Grounding Hindsight",
+  "source_url": "https://arxiv.org/abs/2610.21018",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Replay-Selected Hindsight Distillation (RSHD) 方法，旨在解决 GRPO（Group Relative Policy Optimization）在强化学习训练中遇到的一个关键瓶颈：当某个问题的所有 rollout 都失败时，GRPO 既没有成功示例，也没有非零的组相对优势，导致模型无法从这些最需要学习的问题中获得任何梯度信号。RSHD 的核心思想是将失败尝试转化为额外的、经过验证的监督来源。具体而言，策略模型会为失败轨迹撰写纠正性笔记（corrective note），并通过回放选择机制筛选出高质量的 hindsight 监督信号，将其蒸馏回训练过程。该方法的意义在于：它打破了 GRPO 对成功样本的依赖，使模型能够从失败中学习，尤其适用于困难推理任务中成功样本稀疏的场景。这为强化学习训练 LLM 推理能力提供了一种更鲁棒、更高效的范式，值得关注。",
+  "tags": [
+    "GRPO",
+    "强化学习",
+    "LLM推理",
+    "知识蒸馏",
+    "失败学习"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO 在全部 rollout 失败时无法获得有效梯度，导致模型无法从最困难的问题中学习。",
+      "RSHD 将失败轨迹转化为纠正性笔记，作为额外的 hindsight 监督信号，弥补了 GRPO 的监督盲区。",
+      "通过回放选择机制筛选高质量失败经验，可以提升蒸馏效率并避免噪声干扰。",
+      "该方法为稀疏奖励场景下的 LLM 推理强化学习提供了新的训练范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

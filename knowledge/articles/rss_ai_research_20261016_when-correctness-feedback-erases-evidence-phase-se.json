@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-005",
+  "title": "When Correctness Feedback Erases Evidence: Phase-Separated Completeness Auditing in Verus",
+  "source_url": "https://arxiv.org/abs/2610.20676",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究形式化验证工具 Verus 中的规范完整性审计问题。作者发现，当模型接收到正确性反馈（即程序是否满足书面契约）时，这种反馈反而会抑制审计本应发现的证据——即那些满足书面契约但违反预期行为的程序。研究在 12 个 Verus/Rust 任务上，对四个模型家族在相同调用预算下进行了实验。结果表明，独立的无反馈发现方法产生的认证见证产出率（59.0%）是 IntentShield 纠正反馈循环（27.1%）的两倍以上。这一发现揭示了正确性反馈与完整性审计之间的目标反转现象，对形式化验证和 AI 辅助程序合成中的反馈机制设计具有重要启示。",
+  "tags": [
+    "Formal Verification",
+    "Verus",
+    "LLM",
+    "Program Synthesis",
+    "Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "正确性反馈会抑制规范完整性审计所需的证据，导致目标反转。",
+      "无反馈的独立发现方法在认证见证产出率上显著优于纠正反馈循环（59.0% vs 27.1%）。",
+      "该现象在四个模型家族和 12 个 Verus/Rust 任务中一致出现，表明其普遍性。",
+      "形式化验证中的反馈机制设计需权衡正确性验证与完整性审计之间的冲突。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

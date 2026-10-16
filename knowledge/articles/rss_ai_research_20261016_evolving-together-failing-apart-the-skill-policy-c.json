@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-017",
+  "title": "Evolving Together, Failing Apart: The Skill-Policy Co-evolution Trap in Self-Improving Agents",
+  "source_url": "https://arxiv.org/abs/2610.20845",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了自改进智能体中技能库与策略模型协同演化（skill-policy co-evolution）的范式，指出当前评估方法存在根本性缺陷：现有评测仅使用训练结束时交付的技能库（delivered bank）来评估协同演化后的策略，而忽略了部署后技能库可能被频繁重写、增删，导致策略实际运行在一个漂移的技能库（drifted skill bank）上。作者将这一现象命名为“技能-策略协同演化陷阱”（Skill-Policy Co-evolution Trap），即策略与技能库在训练中相互促进，但在部署中却因演化速度不匹配而彼此失配、性能崩塌。该工作揭示了自改进智能体从实验室走向真实部署时的一个关键风险：技能库的更新频率通常远高于策略模型的再训练频率，使得策略无法适应新技能，进而导致整体能力退化。这一发现对构建可持续自改进的智能体系统具有重要警示意义，提示研究者需要重新设计评估协议与协同演化机制，例如引入技能库版本控制、策略快速适应或联合再训练策略，以避免部署后的性能断裂。",
+  "tags": [
+    "Agent",
+    "Self-Improving",
+    "Skill Library",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有评估仅用交付技能库测试协同演化策略，忽略了部署后技能库漂移导致的策略失配问题。",
+      "技能库更新频率远高于策略再训练频率，是自改进智能体部署后性能崩塌的核心原因。",
+      "该陷阱表明技能与策略的协同演化在训练与部署阶段存在本质性错位，需重新设计评估与适应机制。",
+      "未来工作需引入技能库版本管理、策略快速适应或联合再训练等方案来缓解协同演化陷阱。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

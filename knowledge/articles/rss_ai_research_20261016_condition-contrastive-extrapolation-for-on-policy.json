@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-045",
+  "title": "Condition-Contrastive Extrapolation for On-Policy Distillation of Language Models",
+  "source_url": "https://arxiv.org/abs/2610.21195",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Condition-Contrastive Extrapolated On-Policy Distillation (CCE-OPD) 的新方法，用于改进语言模型在策略蒸馏（On-Policy Distillation, OPD）中的表现。传统 OPD 通过让学生模型在自身生成的轨迹上接受更强教师模型的监督来提升性能，但存在一个关键问题：当条件基于学生生成的错误前缀时，教师模型可能偏好违反问题前提的无效续写，从而引导学生强化错误推理步骤。CCE-OPD 通过条件对比外推机制来缓解这一问题，其核心思想是让教师模型在对比不同条件下（如正确前提与错误前提）的续写偏好时，能够识别并抑制那些违反前提的无效续写，从而提供更可靠的监督信号。该方法有望提升蒸馏过程的鲁棒性和学生模型的推理正确性，对语言模型的高效训练与推理能力提升具有实际意义。",
+  "tags": [
+    "On-Policy Distillation",
+    "Language Model",
+    "Knowledge Distillation",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 On-Policy Distillation 中，教师模型在基于学生错误前缀时可能提供违反问题前提的监督信号，导致学生强化错误推理。",
+      "CCE-OPD 通过条件对比外推机制，让教师模型对比不同条件下的续写偏好，从而抑制无效续写并生成更可靠的监督。",
+      "该方法旨在提升蒸馏过程的鲁棒性，减少学生模型在推理任务中的错误累积。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

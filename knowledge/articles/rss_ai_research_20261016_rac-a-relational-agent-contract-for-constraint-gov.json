@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-022",
+  "title": "RAC: A Relational Agent Contract for Constraint-Governed Engineering Tasks",
+  "source_url": "https://arxiv.org/abs/2610.20935",
+  "source_platform": "rss_ai_research",
+  "summary": "RAC（Relational Agent Contract）是一篇来自 arXiv 的论文，提出了一种面向工程任务的智能体契约框架。该论文指出，工程类智能体需要产出满足精确且相互耦合约束的工件，而现有方案往往要求智能体同时进行语义决策并推导出精确几何或时序等后果，导致在约束驱动的工程任务中频繁失败。RAC 被设计为一个与具体执行框架无关（harness-agnostic）的契约，专门规范工程智能体的动作层与反馈层，提供权威的观测接口，从而将语义决策与约束后果的推导解耦。该工作值得关注，因为它针对 LLM 智能体在真实工程场景（如 CAD、制造、调度）中落地时最关键的约束满足问题提出了结构化解决方案，有望提升智能体在严格工程环境下的可靠性与可验证性，并为后续智能体协议设计提供参考。",
+  "tags": [
+    "Agent",
+    "Constraint Satisfaction",
+    "Engineering",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有工程智能体失败的核心原因在于同时承担语义决策与精确约束后果推导，二者耦合导致误差累积。",
+      "RAC 提出与执行框架无关的契约，将动作层与反馈层标准化，使约束验证与语义推理解耦。",
+      "该契约强调权威观测（authoritative observations），为智能体提供可靠的约束状态反馈，提升工程任务的可验证性。",
+      "RAC 有望成为工程智能体协议设计的基础，推动 LLM 智能体在 CAD、制造、调度等强约束场景的落地。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

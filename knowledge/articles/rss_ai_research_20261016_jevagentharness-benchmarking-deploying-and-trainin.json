@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-067",
+  "title": "JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs",
+  "source_url": "https://arxiv.org/abs/2610.21412",
+  "source_platform": "rss_ai_research",
+  "summary": "JevAgentHarness 是 arXiv 上发布的一项研究，聚焦于 LLM 智能体运行框架（harness）的效率瓶颈问题。当前主流 LLM 智能体（如修复软件、操作计算机、客服系统）的 harness 在每一步都调用大型语言模型，导致长任务执行缓慢且成本高昂。研究指出，这些调用中大多数最终归结为多项选择决策，例如下一步调用哪个工具。为此，作者提出使用决策模型（如 Jev）直接回答这类问题，其时间和价格仅为 LLM 调用的一小部分。该工作系统性地研究了 harness 如何将决策权委托给决策模型，涵盖基准测试、部署与训练三个维度，探索决策模型与 LLM 共享控制权的混合架构。这一方向值得关注，因为它直击 LLM 智能体落地的核心痛点——推理成本与延迟，若能在保持决策质量的前提下大幅降低开销，将显著提升智能体在长任务场景中的实用性，并为智能体架构设计提供新的范式。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Benchmark",
+    "Decision Model",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 智能体 harness 在每一步都调用大模型，是长任务慢且贵的主要根源",
+      "多数 LLM 调用本质上是多项选择决策，可由轻量决策模型（如 Jev）直接替代",
+      "决策模型在时间和成本上远低于 LLM 调用，有望大幅提升智能体效率",
+      "研究覆盖基准测试、部署与训练，探索决策模型与 LLM 共享控制权的混合架构"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

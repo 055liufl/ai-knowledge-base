@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-007",
+  "title": "IneqAgent: Agentic Inequality Proving in Lean with Symbolic Computation",
+  "source_url": "https://arxiv.org/abs/2610.20681",
+  "source_platform": "rss_ai_research",
+  "summary": "IneqAgent 是一个面向 Lean4 形式化不等式证明的智能体框架，将大语言模型（LLM）的推理能力与符号计算相结合。其核心创新在于引入引理级蒙特卡洛树搜索（Lemma-level MCTS），统一协调引理构造、目标重写与符号后端选择三个环节。系统整合了平方和（SOS）、Bernstein 多项式以及逐步（successive）等多种符号计算后端，使 LLM 不必直接完成全部精确计算，而是通过搜索策略决定何时调用何种符号工具。形式化不等式证明长期面临推理与精确计算难以衔接的痛点，通常需要人工设计中间引理并反复重写目标，自动化程度低。IneqAgent 将这一过程建模为可搜索的决策问题，为 LLM 与符号计算协同提供了新范式。该工作值得关注的原因在于：它把智能体搜索、定理证明与符号代数三条技术路线融合，若验证有效，可显著降低 Lean 中不等式证明的自动化门槛，并对数学形式化、程序验证及 AI for Math 领域产生推动作用。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Theorem Proving",
+    "Symbolic Computation",
+    "Lean4"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "引理级蒙特卡洛树搜索将引理构造、目标重写与符号后端选择统一为可搜索的决策过程，是 LLM 与符号计算协同的关键机制。",
+      "整合 SOS、Bernstein 与逐步法等符号后端，使 LLM 专注于策略性推理而非繁重的精确计算，缓解了形式化证明中推理与计算脱节的问题。",
+      "该框架面向 Lean4 不等式证明这一高难度场景，若验证有效，可降低数学形式化与程序验证的自动化门槛。",
+      "代表了 AI for Math 中智能体搜索、定理证明与符号代数融合的新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

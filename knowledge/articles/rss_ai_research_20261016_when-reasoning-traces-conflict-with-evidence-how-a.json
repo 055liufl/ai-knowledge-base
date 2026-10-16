@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-013",
+  "title": "When Reasoning Traces Conflict with Evidence: How Answer Configuration Shapes Evidence Following",
+  "source_url": "https://arxiv.org/abs/2610.20805",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了推理轨迹（reasoning trace）在答案生成阶段的双重角色：既能提升准确率，也可能与当前证据产生冲突。作者通过交叉验证证据版本与各自生成的推理轨迹，在两种答案配置下（延续模型自身思考 vs. 独立答案调用）进行实验，覆盖 gpt-oss、Gemma4、Qwen3 三个模型家族。研究发现，答案配置方式显著影响模型对证据的遵循程度，揭示了推理轨迹与证据冲突时的行为机制。这项工作对于理解大模型推理过程的可靠性、以及如何设计更可信的推理增强系统具有重要价值，尤其对需要严格依据外部证据进行决策的场景（如 RAG、事实核查）具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "RAG",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理轨迹在答案阶段具有双重作用：提升准确率的同时可能与当前证据竞争",
+      "答案配置（延续自身思考 vs. 独立答案调用）会显著改变模型对证据的遵循程度",
+      "该现象在 gpt-oss、Gemma4、Qwen3 三个模型家族中均存在，具有跨模型普遍性",
+      "研究为设计更可靠的证据遵循型推理系统提供了实验依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

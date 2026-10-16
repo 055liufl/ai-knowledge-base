@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-048",
+  "title": "Rubric Judgments Lack Uncertainty: Conformal Weighting for LLM Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.21214",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于评分标准（rubric）的大语言模型（LLM）评估方法提出改进。现有方法将多个评估标准下的二元判断统一聚合为最终分数，隐含假设每个标准的判断确定性相同，忽略了不同标准间判断确定性的显著差异，导致不确定判断对最终评分产生不当影响。作者提出使用保形加权（Conformal Weighting）方法，为每个标准的判断赋予基于不确定性的权重，从而更准确地聚合评估结果。该工作值得关注，因为它揭示了当前 LLM 评估中一个被广泛忽视的偏差来源，并提供了一种有理论保证的校正手段，有望提升自动化评估的可靠性和公平性，对依赖 rubric 评估的模型开发与基准测试具有实际意义。",
+  "tags": [
+    "LLM Evaluation",
+    "Conformal Prediction",
+    "Rubric-based Assessment",
+    "Uncertainty Quantification"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 rubric 评估方法统一聚合二元判断，忽略了不同标准间判断确定性的异质性。",
+      "不确定的判断会扭曲最终评分，导致评估结果不可靠。",
+      "保形加权方法能够根据判断的不确定性为每个标准分配权重，实现更合理的聚合。",
+      "该研究为 LLM 评估中的不确定性量化提供了新思路，有助于提升自动化评估的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

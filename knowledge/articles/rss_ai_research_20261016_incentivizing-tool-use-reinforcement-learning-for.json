@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-070",
+  "title": "Incentivizing Tool-Use Reinforcement Learning for Post-Arrival Emergency Care Prediction",
+  "source_url": "https://arxiv.org/abs/2610.21449",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对大语言模型（LLM）在急诊科（ED）预测任务中表现不及传统机器学习方法（如树模型）的问题展开研究。作者通过受控分析发现，LLM 存在两个关键弱点：一是无法有效选择具有信息量的特征，二是即使获得数值信息，也难以正确判断其对风险的指示意义。为此，论文提出了一种基于工具使用的强化学习激励方法（Tool-Use Reinforcement Learning），旨在引导 LLM 在到达后急诊护理预测场景中主动调用外部工具（如特征选择器、数值风险映射器等），从而弥补其在结构化数据与自由文本混合推理中的不足。该工作将强化学习与工具调用机制结合，为提升 LLM 在临床预测任务中的实用性提供了新思路，值得关注的是它直面了 LLM 在 EHR 预测中落后于传统 ML 的现实差距，并给出了可解释的改进路径。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Tool Use",
+    "Clinical Prediction",
+    "EHR"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在 EHR 预测任务中落后于树模型的主要原因在于特征选择能力不足和数值风险理解偏差。",
+      "通过强化学习激励工具使用，可以引导 LLM 主动调用外部模块来弥补自身在结构化数据推理上的短板。",
+      "该研究为 LLM 在临床决策支持中的落地提供了可解释、可干预的改进方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

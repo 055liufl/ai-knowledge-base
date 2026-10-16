@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-060",
+  "title": "FedSkillGit: Federated Skill Evolution via Version Control",
+  "source_url": "https://arxiv.org/abs/2610.21348",
+  "source_platform": "rss_ai_research",
+  "summary": "FedSkillGit 提出了一种基于版本控制的联邦技能进化框架，旨在解决大语言模型智能体在分布式环境中从执行经验中进化可复用自然语言技能时面临的数据孤岛问题。传统联邦学习方案让每个客户端独立进化完整技能文档并上传服务器聚合，但这种方式与技能进化的本质不匹配，因为技能文档的修改往往是局部、细粒度的，直接聚合会导致冲突和语义漂移。FedSkillGit 借鉴 Git 的版本控制思想，将技能文档视为可版本化的对象，客户端在本地对技能进行增量修改并生成类似 commit 的变更集，服务器则通过合并策略（如三方合并）来整合来自不同客户端的技能更新，从而在保护数据隐私的同时实现技能的协同进化。该工作将联邦学习与软件工程中的版本控制范式相结合，为多智能体协作、隐私保护下的持续学习提供了新思路，尤其适用于医疗、金融等数据敏感且需要跨机构协作的场景。其创新性在于重新定义了联邦技能聚合的粒度与机制，实用性体现在可兼容现有 LLM 智能体框架，值得关注。",
+  "tags": [
+    "Federated Learning",
+    "LLM Agent",
+    "Version Control",
+    "Skill Evolution"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统联邦学习直接聚合完整技能文档的方式与技能进化的局部修改特性不匹配，容易导致冲突和语义漂移。",
+      "FedSkillGit 借鉴 Git 版本控制机制，将技能文档的修改表示为增量变更集，并通过合并策略实现联邦聚合。",
+      "该框架在保护数据隐私的同时，支持多个数据所有者协同进化可复用的自然语言技能，适用于数据敏感场景。",
+      "将软件工程中的版本控制范式引入联邦学习，为分布式 LLM 智能体的持续学习提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

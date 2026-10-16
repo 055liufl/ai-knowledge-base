@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-106",
+  "title": "When Reasoning Is Not Enough: Proactive Inquiry for Cross-Modal Safety in Multimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.22068",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对多模态大语言模型（MLLMs）的跨模态安全问题提出新见解。作者指出，除了已有的隐式推理风险（推理过程逐渐偏向有害方向）之外，还存在一种被忽视的\"意图级风险\"：当单独看无害的图像与文本被联合解读时，跨模态歧义会悄然将模型锁定在一个危险前提上，而仅靠路径级优化无法纠正这种偏差。为此，作者提出 SAFE-PRO 框架，引入风险条件化不确定性（Risk-Conditioned Uncertainty, RCU）信号，将预测不确定性与风险感知相结合，使模型能够主动发起询问（proactive inquiry）以澄清模糊意图，而非被动地继续推理。该工作值得关注，因为它揭示了多模态安全对齐中一个此前未被充分认识的风险层级，并给出了从\"被动防御\"转向\"主动澄清\"的新范式，对多模态 Agent、安全对齐和交互式 AI 系统的设计具有直接启发意义。",
+  "tags": [
+    "Multimodal LLM",
+    "AI Safety",
+    "Alignment",
+    "Uncertainty"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:10:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模态安全风险存在两个层级：隐式推理风险（reasoning drift）与意图级风险（intent-level risk），后者由跨模态歧义引发且无法通过路径级优化修正。",
+      "单独无害的图像与文本联合解读时可能产生危险前提，说明模态组合本身构成独立的安全威胁面。",
+      "SAFE-PRO 通过风险条件化不确定性（RCU）信号识别歧义，并主动发起询问以澄清用户意图，将安全策略从被动拒绝转向主动交互。",
+      "该工作提示多模态安全对齐需要超越输出层面的过滤，转向对意图理解过程的干预。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

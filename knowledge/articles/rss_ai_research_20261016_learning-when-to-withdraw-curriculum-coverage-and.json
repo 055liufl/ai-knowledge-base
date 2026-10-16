@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-030",
+  "title": "Learning When to Withdraw: Curriculum Coverage and Rule-Specific Failures in Fine-Tuned Language Agents",
+  "source_url": "https://arxiv.org/abs/2610.21045",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究工具使用型语言智能体在证据变化或权限撤销时如何选择性撤回已准备动作的问题。作者提出\"选择性撤回\"概念，要求智能体暂停受影响动作、保留有支撑的工作，并在充分修复后恢复执行。研究在NAQD-Env合成环境中进行，该环境具有显式依赖关系和确定性参考策略。实验使用Qwen2.5-3B-Instruct的四个LoRA检查点，对比原始课程与增强课程下的监督微调效果。核心发现是课程覆盖范围与规则特定失败模式之间存在关联，即训练课程的覆盖程度会影响智能体在特定规则上的失效表现。这项工作值得关注，因为它揭示了当前微调语言智能体在动态权限与证据管理场景下的脆弱性，为构建更可靠、可撤销、可恢复的工具使用智能体提供了诊断视角和训练方法论启示，对Agent安全性与可控性研究具有参考价值。",
+  "tags": [
+    "Agent",
+    "Fine-tuning",
+    "Tool Use",
+    "Curriculum Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "选择性撤回要求智能体在证据变化或权限撤销时暂停受影响动作、保留有效工作并延迟恢复，是工具使用智能体可靠性的关键能力",
+      "课程覆盖范围显著影响微调后智能体在特定规则上的失败模式，说明训练数据分布对规则泛化至关重要",
+      "使用合成环境NAQD-Env与确定性参考策略可系统性地诊断智能体的撤回与恢复行为"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

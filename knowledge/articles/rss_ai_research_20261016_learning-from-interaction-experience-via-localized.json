@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-069",
+  "title": "Learning from Interaction Experience via Localized Context Distillation",
+  "source_url": "https://arxiv.org/abs/2610.21427",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“局部上下文蒸馏”（Localized Context Distillation）的新方法，旨在让大语言模型（LLM）能够从交互经验中持续学习。上下文蒸馏是一种有前景的路径：从经验中提取的特权信息被提供给教师模型，然后教师模型的行为被蒸馏到一个无法访问该信息的学生模型中。然而，现有的两种上下文蒸馏形式都存在局限性：离策略上下文蒸馏（off-policy context distillation）训练学生模型时，学生模型无法在训练过程中主动探索或利用自身生成的经验，导致分布不匹配和泛化能力受限。本文通过引入局部化机制，可能允许学生模型在特定上下文中选择性地利用经验信息，从而更有效地从交互中学习。该方法有望提升LLM在部署过程中的持续适应能力，减少对大量标注数据的依赖，并为在线学习与经验蒸馏的结合提供新思路。该工作对于推动LLM在真实交互场景中的自我改进具有重要意义，尤其适用于需要长期部署和动态适应的应用场景。",
+  "tags": [
+    "LLM",
+    "Context Distillation",
+    "Continual Learning",
+    "Interaction Experience"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有上下文蒸馏方法（离策略）存在分布不匹配问题，学生模型无法主动探索经验。",
+      "局部上下文蒸馏通过选择性利用经验信息，可能提升学生模型的泛化与持续学习能力。",
+      "该方法为LLM在部署中从交互经验持续改进提供了新路径，减少对静态数据的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-011",
+  "title": "Open-world AI: a Tale of Three Requirements",
+  "source_url": "https://arxiv.org/abs/2610.20782",
+  "source_platform": "rss_ai_research",
+  "summary": "本文（arXiv:2610.20782）从理论层面探讨了「开放世界 AI」与「封闭世界 AI」在基本假设上的根本差异，并提出了开放世界 AI 需要满足的三项核心要求。作者指出，封闭世界范式要求 AI 具备专门化的能力，并允许其制造符合独立同分布（iid）假设的数据——因为任务标准固定，机器可以不断收集样本直到覆盖任务为止。而开放世界则要求 AI 具备通用性（versatility）：能够承接并非为其设计的任务，仅凭少量样本、且几乎没有人类设计者提供的先验知识；同时开放世界提供的数据是成组（grouped）而非打乱（shuffled）的，任务也无法预先知晓，因此机器必须进行推理式的泛化。文章通过「三项要求」的框架，系统性地刻画了从封闭世界向开放世界迁移时，AI 在数据假设、任务定义与学习机制上面临的挑战，为构建真正通用的开放世界智能体提供了理论指引。该工作值得关注，因为它触及了当前大模型与智能体研究中一个被广泛忽视却至关重要的前提性问题：现有评测与训练范式大多建立在封闭世界假设之上，而现实应用本质上是开放的。",
+  "tags": [
+    "Open-world AI",
+    "Generalization",
+    "Learning Theory",
+    "Foundation Models"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "封闭世界 AI 依赖 iid 数据假设与固定任务标准，允许通过持续采样覆盖任务；开放世界 AI 则要求通用性，任务未知且数据成组分布，无法预先枚举。",
+      "开放世界中的机器必须从少量样本、极少人类先验出发，完成并非为其设计的任务，这要求推理式泛化而非单纯模式匹配。",
+      "数据从 shuffled 到 grouped 的转变，意味着传统基于 iid 的统计学习理论在开放世界场景下可能失效，需要新的理论框架。",
+      "该工作为评估当前大模型与智能体的真实通用能力提供了批判性视角：多数基准仍隐含封闭世界假设。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

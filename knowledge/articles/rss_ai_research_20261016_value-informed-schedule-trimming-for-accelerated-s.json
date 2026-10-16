@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-003",
+  "title": "Value-Informed Schedule Trimming for Accelerated Sequential Monte Carlo Guidance in Discrete Diffusion",
+  "source_url": "https://arxiv.org/abs/2610.20669",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Value-Informed Schedule Trimming（VIST）的方法，用于加速离散扩散模型中的序列蒙特卡洛（SMC）引导。奖励引导的离散扩散能够在测试时与下游目标对齐，但在每个去噪步骤都应用 SMC 引导计算成本高昂，因为主动引导步骤需要额外的奖励评估，对于基于梯度的提议还需要价值梯度计算。稀疏引导通过仅在部分时间步进行引导来降低成本，但常用的调度策略是固定的启发式方法，其效果有限。VIST 通过价值信息自适应地修剪引导调度，在保持对齐质量的同时显著减少计算开销。该工作对于提升离散扩散模型在测试时对齐的实用性和效率具有重要意义，尤其适用于需要频繁奖励评估的生成任务。",
+  "tags": [
+    "Diffusion",
+    "SMC",
+    "Test-time Alignment",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SMC 引导在离散扩散中计算昂贵，稀疏引导可降低成本但固定调度效果有限",
+      "VIST 利用价值信息自适应修剪引导调度，平衡计算效率与对齐质量",
+      "该方法有望推动奖励引导离散扩散在测试时对齐中的实际应用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

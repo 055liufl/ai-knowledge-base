@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-074",
+  "title": "FlashAttention with Statistics: Low-Overhead Attention Features for Compact Hallucination Detectors",
+  "source_url": "https://arxiv.org/abs/2610.21483",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 FlashAttention with Statistics 的方法，旨在以低开销提取注意力特征，用于构建紧凑的幻觉检测器。大型语言模型常生成流畅但缺乏上下文支持的答案，即幻觉。现有基于注意力的检测器依赖代理模型的注意力权重统计量，但标准流程需显式物化注意力矩阵，其内存占用随序列长度呈二次增长，难以扩展。该工作通过融合 FlashAttention 内核，在计算注意力时同步累积所需的统计量，避免存储完整注意力矩阵，从而大幅降低内存与计算开销。这使得紧凑的冻结代理模型能够高效读取上下文与生成器响应，即使面对专有模型也能检测幻觉。该方法在保持检测性能的同时提升了可扩展性，对部署轻量级幻觉检测器具有实用价值，尤其适合长上下文场景。",
+  "tags": [
+    "FlashAttention",
+    "Hallucination Detection",
+    "Efficient Attention",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:09:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过融合 FlashAttention 内核在线计算注意力统计量，避免物化二次内存的注意力矩阵。",
+      "紧凑的冻结代理模型可跨模型检测幻觉，无需访问生成器内部状态。",
+      "该方法显著降低长序列下的内存开销，提升幻觉检测的可扩展性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

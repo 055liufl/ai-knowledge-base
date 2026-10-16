@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-113",
+  "title": "RAG-RST: Retrieved Exemplars as In-Context Discourse Schema for RST Parsing",
+  "source_url": "https://arxiv.org/abs/2610.22150",
+  "source_platform": "rss_ai_research",
+  "summary": "RAG-RST 提出了一种将检索增强生成（RAG）思想引入修辞结构理论（RST）篇章解析的新方法。RST 解析的核心难点在于：篇章树中每条边所携带的核心性标签（nuclearity）和修辞关系标签（如 Elaboration、Background）都不是表层语言属性，同一对子句在不同修辞意图下可能对应不同关系，且关系边界由标注规范而非词汇线索决定。该工作通过检索相似篇章实例作为上下文示例（in-context exemplars），为模型提供隐式的篇章图式（discourse schema），从而缓解标注规范依赖和标签歧义问题。这一思路值得关注，因为它将 RAG 从传统的知识问答场景迁移到结构化篇章分析任务，展示了检索示例作为软性标注规范载体的潜力，也为低资源或标注规范复杂的 NLP 任务提供了新范式。",
+  "tags": [
+    "RAG",
+    "RST",
+    "Discourse Parsing",
+    "In-Context Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RST 的核心性标签与修辞关系标签并非表层属性，其判定依赖修辞意图和标注规范，传统基于词汇线索的方法存在根本局限。",
+      "将检索到的相似篇章实例作为上下文示例，可为模型提供隐式的篇章图式，替代显式规则或大量标注。",
+      "该工作将 RAG 范式从知识密集型任务拓展到结构化篇章解析任务，验证了检索示例作为软性标注规范载体的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

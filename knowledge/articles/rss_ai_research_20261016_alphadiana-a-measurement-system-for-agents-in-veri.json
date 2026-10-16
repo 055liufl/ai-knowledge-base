@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-004",
+  "title": "AlphaDiana: A Measurement System for Agents in Verifiable Reasoning Tasks",
+  "source_url": "https://arxiv.org/abs/2610.20675",
+  "source_platform": "rss_ai_research",
+  "summary": "AlphaDiana 是一个面向可验证推理任务中智能体（Agent）的测量系统，论文发表于 arXiv（编号 2610.20675）。该系统针对当前 Agent 评估中执行条件与结果、行为、资源使用之间难以建立关联的痛点，提出了模块化接口设计，涵盖数据集、智能体、环境和评分器四大组件。其核心创新在于保留 harness 原生的控制循环（即模型调用编排、工具执行、技能指令加载、历史记忆管理等机制），同时通过控制文件复用和记忆机制来减少评估中的偏差与污染。这使得研究者能够更精确地归因 Agent 性能差异，区分是模型能力、工具使用、记忆策略还是环境因素导致的结果变化。该工作值得关注，因为随着 Agent 系统日益复杂，传统端到端评测无法揭示性能瓶颈所在，而 AlphaDiana 提供了一种可复现、可分解的测量方法论，有助于推动 Agent 研究从'跑分'走向'可解释的工程优化'。对于从事 Agent 评测、推理任务基准建设和可验证 AI 的研究者与开发者而言，这是一个具有方法论价值的基础设施型工具。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Reasoning",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 性能评估需要将执行条件与结果、行为和资源使用显式关联，而非仅看最终准确率",
+      "保留 harness 原生控制循环的同时控制文件复用与记忆，可减少评测中的污染和偏差",
+      "模块化接口（数据集/智能体/环境/评分器）使 Agent 评测具备可分解性和可复现性",
+      "该工作推动 Agent 研究从端到端跑分转向可归因的工程化测量"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

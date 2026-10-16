@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-029",
+  "title": "Recursive Reward Improvement via Adversarial Meta-Prompt Evolution",
+  "source_url": "https://arxiv.org/abs/2610.21040",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为「对抗性元提示演化」（Adversarial Meta-Prompt Evolution）的方法，用于实现递归奖励改进（Recursive Reward Improvement），旨在解决递归自我改进（RSI）在开放式专家任务中缺乏自动答案校验的难题。传统的 proposer-solver 循环在数学和编程等可自动验证的领域取得了成功，但在临床报告生成等开放式任务中，由于没有标准答案，简单的问答式训练无法直接应用。该工作通过让 proposer 模型与 solver 模型在元提示层面进行对抗演化，动态生成并优化奖励信号，从而在无答案键的场景下实现自我改进。这一方法值得关注，因为它扩展了 RSI 的适用范围，使其能够处理更贴近真实世界的开放式专家任务，有望推动 AI 在医疗、法律等专业领域的自主能力提升。",
+  "tags": [
+    "Recursive Self-Improvement",
+    "Meta-Prompt Evolution",
+    "Adversarial Learning",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归自我改进在可自动验证任务中有效，但开放式专家任务缺乏答案键，需要新的奖励机制。",
+      "通过对抗性元提示演化，proposer 和 solver 可以协同生成动态奖励信号，实现无监督环境下的自我改进。",
+      "该方法有望将 RSI 扩展到临床报告生成等开放式专业领域，减少对人工标注的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

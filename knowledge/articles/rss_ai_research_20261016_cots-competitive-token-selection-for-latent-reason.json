@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-140",
+  "title": "CoTS: Competitive Token Selection for Latent Reasoning in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.20642",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CoTS（Competitive Token Selection），一种用于大语言模型潜在推理的自适应解码方法。现有潜在推理方法通过连续软嵌入或隐藏状态替代离散 CoT 中的采样 token，从而保留更丰富的中间表示和多种推理路径，但忽略了不同解码步骤对潜在推理需求的差异：高置信度步骤更适合离散承诺，而模糊步骤则受益于保留多个候选。CoTS 通过竞争性 token 选择机制，在解码过程中动态决定何时采用离散 token、何时保留潜在表示，从而在推理质量与效率之间取得更好平衡。该工作值得关注，因为它针对潜在推理的核心痛点——统一策略无法适配逐步变化的置信度——提出了细粒度、自适应的解决方案，有望提升 LLM 在复杂推理任务中的表现，并为推理时计算分配提供新思路。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Latent Reasoning",
+    "Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:12:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "潜在推理的需求随解码步骤变化：高置信度步骤适合离散承诺，模糊步骤应保留多个候选路径。",
+      "CoTS 通过竞争性 token 选择实现自适应解码，在离散与连续表示之间动态切换。",
+      "该方法为推理时计算分配和潜在推理策略提供了更细粒度的控制机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

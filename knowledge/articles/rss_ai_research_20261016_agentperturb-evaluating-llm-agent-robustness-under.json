@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-089",
+  "title": "AgentPerturb: Evaluating LLM Agent Robustness under Controlled Interaction Perturbations",
+  "source_url": "https://arxiv.org/abs/2610.21624",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentPerturb 是一篇针对 LLM Agent 鲁棒性评估的 arXiv 论文，提出了一个系统化框架，用于在受控交互扰动下评估前沿模型的稳定性。现有 Agent 评测大多在理想化环境中进行，缺乏对扰动来源与扰动类型的联合刻画，导致无法准确定位 Agent 在真实噪声场景下的失效模式。该工作从「扰动目标」与「扰动类型」两个维度构建统一评估体系，覆盖指令、工具调用、环境反馈、记忆等多类交互环节，并系统量化了当前主流前沿模型的鲁棒性表现。论文不仅给出性能下降的量化结果，还进一步追踪了扰动引发失败的内在机制，例如错误传播、工具选择偏移、规划中断等，并据此提出面向鲁棒性训练的建议。该研究值得关注的原因在于：随着 Agent 从演示走向生产部署，鲁棒性已成为比单纯能力提升更关键的瓶颈；而该工作提供了可复用的评测视角与失败归因方法，对模型开发者、Agent 框架设计者以及安全评测研究者均有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Robustness",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:09:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出扰动目标与扰动类型二维分类法，统一刻画 Agent 交互中的各类扰动，弥补现有评测缺乏系统性的空白。",
+      "系统量化了前沿 LLM Agent 在受控扰动下的鲁棒性，揭示其在真实噪声场景中的性能衰减程度。",
+      "追踪扰动引发失败的机制，如错误传播与工具调用偏移，为鲁棒性归因提供可解释路径。",
+      "基于评测结果提出面向鲁棒性训练的方向，推动 Agent 从理想环境走向可靠部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

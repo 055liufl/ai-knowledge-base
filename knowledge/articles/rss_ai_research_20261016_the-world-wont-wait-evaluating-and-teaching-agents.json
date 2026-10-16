@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-001",
+  "title": "The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock",
+  "source_url": "https://arxiv.org/abs/2610.20665",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RealtimeBench，一个包含 180 个任务、覆盖六种游戏类型的实时评测基准，用于评估 LLM 智能体在推理过程中环境持续变化（即“实时时钟”运行）条件下的表现。传统智能体评测通常在暂停或静态环境中进行，忽略了推理与工具调用耗时对任务成败的影响；而在真实动态环境中，一个逻辑上正确的动作可能因到达过晚而失效。论文通过配对实验发现，GPT-6.1-sol 在游戏暂停时优于更快的 Jev，但在游戏持续运行时反而落后，说明推理速度与决策时效性成为智能体能力的关键维度。该工作值得关注，因为它首次系统性地将“时间”作为智能体评测的一等公民，揭示了当前模型在实时交互场景中的能力盲区，并为训练更适应动态环境的智能体提供了可量化的基准与教学信号。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Real-time",
+    "LLM Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:04:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 智能体评测大多在暂停或静态环境中进行，忽略了推理延迟对动态任务成败的决定性影响。",
+      "RealtimeBench 通过 180 个实时游戏任务证明，模型在暂停环境下的优势不一定能迁移到持续运行的环境中。",
+      "推理速度与决策时效性应成为智能体能力评估与训练的核心维度，而非仅关注任务正确率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

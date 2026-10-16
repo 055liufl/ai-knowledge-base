@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-112",
+  "title": "Are You Sure Your LLM Is Sure? Repairing and Auditing Confidence",
+  "source_url": "https://arxiv.org/abs/2610.22139",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 RADAR（Repair, Adopt, and Diagnose After Recalibration）框架，针对大语言模型（LLM）置信度分数不可靠的问题，将置信度修复、修复采纳决策与残余错误审计三个环节解耦。传统标量重校准方法只能纠正通过分数本身可见的误差，无法处理更复杂的置信度失效模式。RADAR 在平方损失下将预测风险分解为结果噪声、信息缺失与模型偏差等成分，从而支持更精细的置信度修复与部署决策。该工作对 LLM 可靠性、不确定性量化与安全部署具有重要价值，尤其适用于需要自动接受、人工复核或重新生成答案的高风险场景。其核心贡献在于将置信度校准从单一分数调整扩展为可诊断、可审计的可靠性工程流程，为构建可信 LLM 系统提供了新思路。",
+  "tags": [
+    "LLM",
+    "Uncertainty Quantification",
+    "Calibration",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统标量重校准只能修正分数本身可见的误差，无法处理更复杂的置信度失效模式。",
+      "RADAR 将置信度修复、修复采纳决策与残余错误审计分离，形成可诊断的可靠性框架。",
+      "在平方损失下对预测风险进行分解，有助于识别结果噪声、信息缺失与模型偏差等不同误差来源。",
+      "该框架为 LLM 在高风险场景下的自动接受、复核与再生成决策提供了更可靠的依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

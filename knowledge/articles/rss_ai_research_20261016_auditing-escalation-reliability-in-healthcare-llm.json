@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-050",
+  "title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
+  "source_url": "https://arxiv.org/abs/2610.21270",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对医疗健康领域 LLM 智能体的升级（escalation）可靠性问题，提出了一个扰动控制的基准测试。传统评估多关注静态输入下的答案准确性，但真实临床场景中证据常缺失、过时、冲突或延迟，此时智能体能否可靠地选择行动（回答、请求澄清、弃权或升级）才是关键。作者构建了 400 个合成医疗工作流片段，基于 40 个手工编写的语义种子，覆盖四类任务、两种表面参数化以及五种受控变体，并在预先声明的 ANSWER/ASK CLARIFICATION/ABSTAIN/ESCALATE 动作空间下评分。该工作将评估从“答案正确性”推进到“工作流状态下的行动可靠性”，为医疗 AI 的安全部署提供了可复现的审计方法，值得关注的是它系统性地暴露了 LLM 智能体在证据异常时的升级失败模式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Healthcare",
+    "Benchmark",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "医疗 LLM 智能体的可信度不仅取决于答案准确性，更取决于证据缺失、过时、冲突或延迟时能否可靠地选择升级、澄清或弃权。",
+      "该工作提出了一个扰动控制的片段级评估协议，通过 400 个合成工作流片段和五种受控变体系统性地测试工作流状态失败。",
+      "评估动作空间明确区分 ANSWER、ASK CLARIFICATION、ABSTAIN 和 ESCALATE，为医疗 AI 的安全审计提供了可复现的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

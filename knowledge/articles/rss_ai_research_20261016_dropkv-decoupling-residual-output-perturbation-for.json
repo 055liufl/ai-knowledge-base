@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-109",
+  "title": "DropKV: Decoupling Residual-Output Perturbation for Near-Optimal KV-Cache Eviction",
+  "source_url": "https://arxiv.org/abs/2610.22130",
+  "source_platform": "rss_ai_research",
+  "summary": "DropKV 提出了一种针对大语言模型（LLM）长上下文场景中 KV 缓存管理的新方法，旨在解决线性内存增长带来的瓶颈问题。现有的 KV 缓存驱逐方法通常基于注意力分数启发式或引入值表示，但面临一个根本性权衡：最小化输出扰动的底层优化是一个 NP 难组合问题，导致数学上难以求得最优解。DropKV 的核心创新在于将残差输出扰动进行解耦，从而在近最优水平上实现 KV 缓存驱逐。该方法有望在保持模型输出质量的同时显著降低内存占用，提升长上下文推理效率。对于需要部署长上下文 LLM 的研究人员和工程师而言，这项技术具有重要的实用价值，因为它直接针对推理成本和内存瓶颈，且提供了理论上的优化视角。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Memory Optimization",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 KV 缓存驱逐方法在最小化输出扰动时面临 NP 难组合优化问题，难以达到最优。",
+      "DropKV 通过解耦残差输出扰动，提出了一种近最优的 KV 缓存驱逐策略。",
+      "该方法有望在长上下文场景中显著降低内存占用，同时保持模型输出质量。",
+      "该工作为 KV 缓存管理提供了新的理论优化视角，可能推动更高效的 LLM 推理基础设施发展。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

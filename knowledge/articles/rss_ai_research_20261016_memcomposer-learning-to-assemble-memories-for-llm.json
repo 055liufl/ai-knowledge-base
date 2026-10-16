@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-035",
+  "title": "MemComposer: Learning to Assemble Memories for LLM Agents via Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.21091",
+  "source_platform": "rss_ai_research",
+  "summary": "MemComposer 是一篇来自 arXiv 的论文，针对 LLM Agent 的记忆复用问题提出了一种新方法。传统 Agent 记忆系统通常依赖语义相似度来检索历史经验，但论文指出语义相似并不等于对下游任务有用——记忆的实际价值取决于如何选择以及如何呈现给 Agent。为此，作者提出 MemComposer，一个「记忆编排器」，它同时审视当前查询和检索到的候选记忆，动态决定纳入哪些经验、选择多少条以及如何组织呈现。该方法通过强化学习训练，使记忆组装策略能够以最终任务表现为优化目标，而非仅依赖静态的相似度启发式。这项工作值得关注的原因在于：Agent 记忆是当前 LLM 应用的关键瓶颈之一，大多数系统仍停留在向量检索+拼接的简单范式，而 MemComposer 将「记忆选择与呈现」建模为可学习的决策问题，有望显著提升 Agent 在长程任务和复杂环境中的表现，并为记忆系统的端到端优化提供新思路。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Reinforcement Learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语义相似度不足以衡量记忆对下游任务的实际价值，记忆的选择与呈现方式才是关键变量。",
+      "MemComposer 将记忆组装建模为强化学习问题，以任务表现为奖励信号端到端优化选择策略。",
+      "该方法能动态决定记忆的数量、内容与组织方式，突破了固定 top-k 检索的局限。",
+      "为 LLM Agent 记忆系统从静态检索范式向可学习决策范式演进提供了新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

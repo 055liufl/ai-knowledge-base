@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-118",
+  "title": "HTN-Orchestrate: A Hierarchical Task Network Framework for Multi-Agent Orchestration",
+  "source_url": "https://arxiv.org/abs/2610.22195",
+  "source_platform": "rss_ai_research",
+  "summary": "HTN-Orchestrate 是一个面向多智能体编排的两层框架，旨在解决复杂任务中局部子任务执行与全局任务规划之间的协调问题。现有方法存在明显局限：动态调度方法虽然提供了执行灵活性，但缺乏对子任务层级和依赖关系的显式建模；而预定义工作流虽然能强制施加结构，却在执行开始前就固定了任务分解方式，无法适应运行时变化。HTN-Orchestrate 通过分层设计将这两类职责分离，上层负责基于层次任务网络（HTN）的全局规划与分解，下层负责子任务的动态调度与执行，从而兼顾结构性与灵活性。该工作值得关注，因为它为多智能体系统提供了一种兼顾规划严谨性与执行适应性的编排范式，对构建可靠、可扩展的 Agent 协作系统具有参考价值，尤其适用于需要复杂任务分解与动态调整的场景。",
+  "tags": [
+    "Multi-Agent",
+    "Task Planning",
+    "Orchestration",
+    "HTN"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有动态调度缺乏子任务层级与依赖的显式建模，而预定义工作流又过于僵化，HTN-Orchestrate 通过两层架构分离全局规划与局部执行来平衡二者。",
+      "层次任务网络（HTN）为多智能体任务分解提供了结构化表示，使全局规划能够显式表达子任务层级和依赖关系。",
+      "该框架的核心贡献在于将任务分解的决策权与执行调度的灵活性解耦，从而支持运行时动态调整。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

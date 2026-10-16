@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-010",
+  "title": "ARIA: Runtime Inspection and Amendment for Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2610.20780",
+  "source_platform": "rss_ai_research",
+  "summary": "ARIA（Agent Runtime Inspection and Amendment）是一个针对基于LLM的多智能体系统（MAS）的运行时检查与修正框架，旨在解决多智能体协作中局部错误传播导致任务失败的问题。在MAS中，一个智能体的局部错误会被其他智能体当作正确前提继续构建，从而将可纠正的小错误放大为不可逆的任务失败。传统方法要么在任务完成后进行诊断，要么反复重新执行整个流程来寻找修正方案，都无法在任务执行过程中实时干预。ARIA通过学习\"何时\"以及\"如何\"对正在进行的多智能体执行进行修复，提供了一种可学习的干预策略，而非事后补救。该工作将多智能体系统的容错从静态的事后分析推进到动态的运行时治理，对于提升MAS在复杂任务中的鲁棒性和成功率具有重要意义，尤其适用于需要长链路协作、错误代价高昂的Agent应用场景。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Runtime Repair",
+    "Agent Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体系统中局部错误会通过智能体间的依赖链传播放大，将可纠正错误演变为任务级失败",
+      "现有方法局限于事后诊断或反复重执行，缺乏在执行过程中实时干预的学习型策略",
+      "ARIA将修复建模为可学习的决策问题，学习何时以及如何对进行中的多智能体执行进行修正",
+      "该框架将MAS容错从静态事后分析推进到动态运行时治理，提升长链路协作任务的鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

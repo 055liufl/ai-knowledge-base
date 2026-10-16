@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-101",
+  "title": "CARA: Causally Guided Retrieval Agent for Question Answering",
+  "source_url": "https://arxiv.org/abs/2610.22017",
+  "source_platform": "rss_ai_research",
+  "summary": "CARA（Causally Guided Retrieval Agent）是一篇来自 arXiv 的学术论文，提出了一种无需训练的检索智能体框架，用于文本丰富的知识图谱上的问答任务。传统检索增强生成（RAG）方法在知识图谱上主要依赖文本相似度来匹配证据，但这种方式难以识别真正对回答问题有因果贡献的证据。CARA 的核心创新在于引入因果相关性评估机制，显式地判断检索到的证据是否对答案具有因果影响，而非仅仅文本层面的相似。该智能体在全局搜索与多跳探索之间进行自适应平衡，同时以因果引导替代单纯的语义相似度作为检索决策依据。由于是 training-free 设计，CARA 无需额外微调即可部署，降低了使用门槛。这项工作值得关注，因为它将因果推断思想引入检索智能体领域，有望提升知识图谱问答的证据质量和推理可靠性，为 RAG 系统在复杂多跳问答场景下的性能改进提供了新思路，对研究者和开发者均具有参考价值。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Knowledge Graph",
+    "Causal Inference",
+    "Question Answering"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:10:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能检索器主要依赖文本相似度，难以识别对答案真正有因果贡献的证据",
+      "CARA 通过显式评估检索证据的因果相关性来引导检索决策，而非仅做文本匹配",
+      "该方法为 training-free 设计，无需微调即可在知识图谱问答中部署",
+      "将因果推断引入检索智能体，为多跳问答和 RAG 系统的证据选择提供了新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

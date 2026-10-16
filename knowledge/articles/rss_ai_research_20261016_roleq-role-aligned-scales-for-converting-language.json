@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-098",
+  "title": "RoleQ: Role-Aligned Scales for Converting Language Models to Ternary",
+  "source_url": "https://arxiv.org/abs/2610.21808",
+  "source_platform": "rss_ai_research",
+  "summary": "RoleQ 是一种将语言模型权重量化为三值（ternary）的新型量化框架，论文发表于 arXiv（编号 2610.21808）。传统低于 4 比特的量化虽然能显著降低内存占用和带宽需求，且困惑度（perplexity）看似可接受，但往往以牺牲事实知识和任务准确率为代价。而三值权重通常需要通过从头训练或长时间微调才能获得。RoleQ 的核心创新在于：不再按照权重矩阵的布局来放置量化缩放因子（scales），而是根据 Transformer 各单元的功能角色（functional roles）来分配缩放因子。这一思路打破了传统量化格式的局限，有望在极低比特（三值）条件下更好地保留模型的知识与任务能力，同时避免昂贵的重训练成本。该工作对模型压缩、边缘部署和高效推理具有重要意义，值得关注大模型量化与部署的研究者和工程师深入阅读。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Model Compression",
+    "Ternary Weights"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:10:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低于 4 比特的量化虽能降低内存和带宽，但常损害事实知识与任务准确率，三值权重此前多依赖从头训练或长微调。",
+      "RoleQ 按 Transformer 单元的功能角色而非权重矩阵布局来放置缩放因子，是一种角色对齐的量化新范式。",
+      "该方法有望在极低比特下保留模型能力，同时避免昂贵的重训练成本，对高效推理与边缘部署有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

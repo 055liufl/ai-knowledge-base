@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-038",
+  "title": "CleanRM: Reward Modeling from Noisy Feedback with a Few Clean Feedback for RLHF",
+  "source_url": "https://arxiv.org/abs/2610.21138",
+  "source_platform": "rss_ai_research",
+  "summary": "CleanRM 是一篇针对 RLHF（基于人类反馈的强化学习）中奖励建模噪声问题的研究论文。在偏好数据中，噪声普遍存在，来源包括主观人类判断、标注错误以及不完美的 LLM 评判器。标准奖励模型在这种噪声反馈上训练会产生对干净风险的有偏估计。经典去噪方法虽然可直接应用于噪声反馈学习，但通常假设样本间噪声比例是均匀的，而这一假设在反馈数据中并不成立——反馈噪声往往是内在异质的。CleanRM 提出利用少量干净反馈来辅助从噪声反馈中进行奖励建模，从而更准确地估计干净风险。该工作值得关注，因为它直击 RLHF 流程中奖励模型质量这一关键瓶颈，提出了一种在噪声环境下更鲁棒的奖励建模思路，对提升对齐效果、降低标注成本具有实际意义，也为后续研究噪声异质性下的偏好学习提供了新方向。",
+  "tags": [
+    "RLHF",
+    "Reward Modeling",
+    "Noisy Feedback",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "偏好数据中的噪声来源多样且噪声比例在样本间不均匀，经典均匀噪声假设不适用于反馈数据",
+      "标准奖励模型在噪声反馈上训练会得到对干净风险的有偏估计",
+      "利用少量干净反馈可以辅助从大量噪声反馈中学习更准确的奖励模型",
+      "该方向对提升 RLHF 对齐质量、降低高质量标注依赖具有实际价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

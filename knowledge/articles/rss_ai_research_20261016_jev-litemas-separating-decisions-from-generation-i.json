@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-066",
+  "title": "Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2610.21411",
+  "source_platform": "rss_ai_research",
+  "summary": "Jev-LiteMAS 是一篇针对多智能体 LLM 系统（Multi-Agent Systems, MAS）效率问题的研究论文。作者通过剖析三个代表性 MAS 框架发现，路由（routing）和评审（review）这两类协调操作消耗了 31.7% 至 43.5% 的生成式 LLM token 预算。然而，这些操作本质上只需要有界决策（bounded decisions），例如选择下一个专家智能体或判断产物质量，并不需要完整的生成能力。论文提出将决策与生成分离的核心思路，即用低成本决策模型替代这些操作中的生成式 LLM。但直接替换会引入两个问题（摘要在此处截断）。该工作值得关注，因为它直击多智能体系统成本与延迟的核心痛点，为 MAS 架构优化提供了新的设计范式，对构建高效、可扩展的智能体工作流具有重要实践意义。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Efficiency",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体系统中路由和评审操作消耗了 31.7%-43.5% 的生成式 LLM token，是主要的成本来源",
+      "路由和评审本质上是有界决策任务，不需要完整的生成式模型能力",
+      "将决策与生成分离、用低成本决策模型替代生成式 LLM 是优化 MAS 效率的关键方向",
+      "直接替换生成式 LLM 会引入新的挑战，需要针对性的架构设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

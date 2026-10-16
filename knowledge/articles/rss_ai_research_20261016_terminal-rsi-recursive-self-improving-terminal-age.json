@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-116",
+  "title": "Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine",
+  "source_url": "https://arxiv.org/abs/2610.22192",
+  "source_platform": "rss_ai_research",
+  "summary": "Terminal-RSI 是一篇来自 arXiv 的技术论文，提出了一种面向终端智能体的递归自我改进框架。该方法通过交替执行两种机制来提升智能体能力：一是对已验证轨迹进行递归自我重写（Recursive Self-Rewrite, RSR），二是采用继承评论家的递归策略精炼（Recursive Policy-Refine, RPR）。为支撑这一框架，作者还提出了 Turn-Boundary Skip-Observation GAE（TB-GAE），用于在保留 token 级基线估计的同时，在交互轮次之间施加衰减，从而更合理地分配信用。此外，论文还引入了 Family Dense Reward（FD）等机制，将验证器结果转化为有效的策略更新，并将部分进展转化为完整任务解决。该工作值得关注的原因在于，它试图解决终端智能体训练中的核心难题：如何利用稀疏的验证信号和部分成功的轨迹来持续提升策略，而非仅依赖最终成败的二元反馈。递归自我改进与策略精炼的结合，为构建能够从自身经验中不断进化的终端智能体提供了新思路，对自动化运维、代码执行、命令行交互等场景具有潜在应用价值。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Self-Improvement",
+    "Terminal"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出递归自我重写（RSR）与递归策略精炼（RPR）交替进行的框架，使终端智能体能够从已验证轨迹中持续自我改进。",
+      "设计 Turn-Boundary Skip-Observation GAE（TB-GAE），在保留 token 级基线的同时跨交互轮次施加衰减，改善信用分配。",
+      "引入 Family Dense Reward 等机制，将验证器结果和部分进展转化为密集的策略更新信号，缓解稀疏奖励问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

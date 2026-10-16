@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-123",
+  "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+  "source_url": "https://arxiv.org/abs/2610.22280",
+  "source_platform": "rss_ai_research",
+  "summary": "LEASH 是一篇针对计算机使用代理（Computer-Use Agents）的学术论文，提出了一种不确定性感知的弱到强升级与监督框架。该研究聚焦于长周期任务中代理执行的成本与性能矛盾：前沿大模型每步运行成本高昂，而小型开源模型单独执行又容易失败。弱到强升级策略提供折中方案——默认由弱代理执行，仅在必要时将控制权交给强代理。核心挑战在于如何判断何时升级，这需要一种足够廉价、可在每一步检查的不确定性信号。LEASH 通过不确定性感知机制解决这一问题，并进一步引入监督机制以保障升级后的执行质量。该工作对降低代理系统推理成本、提升长周期任务可靠性具有实用价值，尤其适用于需要频繁决策的计算机操作场景。",
+  "tags": [
+    "Agent",
+    "Uncertainty",
+    "Model Escalation",
+    "Computer-Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "弱到强升级策略可在长周期任务中平衡成本与性能，避免每步都调用昂贵的前沿模型",
+      "核心难点在于设计廉价且可靠的不确定性信号，用于逐步判断是否需要升级到强模型",
+      "LEASH 将不确定性感知与监督机制结合，提升计算机使用代理在复杂任务中的鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

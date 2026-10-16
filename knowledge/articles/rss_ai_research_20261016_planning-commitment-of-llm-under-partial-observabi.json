@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-036",
+  "title": "Planning Commitment of LLM under Partial Observability",
+  "source_url": "https://arxiv.org/abs/2610.21108",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了基于LLM的规划智能体在部分可观测环境下的规划承诺行为。作者发现，预训练模型在输出规划时表现出两种截然不同的策略：一种是激进型，基于对未观测状态的假设，承诺执行较长的规划；另一种是保守型，仅针对已观测到的信息进行规划。这种差异在LLM直接输出规划或生成PDDL供经典求解器使用时都会自然涌现。研究揭示了LLM在部分可观测环境下规划承诺长度选择的内在机制，对于理解LLM规划智能体的鲁棒性和适应性具有重要意义，并为改进规划策略提供了理论依据。",
+  "tags": [
+    "LLM",
+    "Planning",
+    "Partial Observability",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM在部分可观测环境下会自发形成激进或保守的规划承诺策略，且与输出形式（直接规划或PDDL）无关。",
+      "激进承诺基于对未观测状态的假设，可能导致规划失败；保守承诺仅利用已观测信息，但可能错失机会。",
+      "预训练模型中隐含的规划承诺行为差异，为设计更稳健的LLM规划智能体提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-008",
+  "title": "L2G-SR: Learning to Guide LLM-based Symbolic Regression",
+  "source_url": "https://arxiv.org/abs/2610.20685",
+  "source_platform": "rss_ai_research",
+  "summary": "L2G-SR 是一个面向基于大语言模型（LLM）的符号回归（Symbolic Regression）的新框架，旨在解决传统方法仅依赖数值误差引导搜索时容易偏向数值精确但结构错误的替代方程的问题。该工作提出使用学习到的结构验证器（learned structural verifier）来引导搜索过程，并利用树编辑距离（Tree Edit Distance, TED）构建结构监督信号，同时考虑交换律等数学性质。符号回归的目标是从观测数据中自动发现可解释的数学表达式，在科学发现、工程建模和可解释 AI 中具有重要价值。然而，现有方法通常以数值误差（如 MSE）作为唯一优化目标，这会导致搜索过程陷入局部最优，产生结构上不正确但数值上拟合良好的表达式。L2G-SR 通过引入结构层面的监督信号，使 LLM 在生成候选方程时不仅关注数值拟合，还能感知方程的结构相似性，从而提升搜索效率和最终发现正确方程的能力。该工作代表了 LLM 与符号回归交叉领域的重要进展，为科学发现自动化提供了新思路，值得关注 LLM 推理、科学机器学习及可解释 AI 的研究者和开发者深入阅读。",
+  "tags": [
+    "LLM",
+    "Symbolic Regression",
+    "Scientific Discovery",
+    "Tree Edit Distance"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅依赖数值误差引导符号回归搜索会偏向数值精确但结构错误的替代方程，需要引入结构层面的监督信号。",
+      "利用树编辑距离（TED）构建结构监督信号，并考虑交换律等数学性质，可有效训练结构验证器来引导 LLM 搜索。",
+      "L2G-SR 将学习到的结构验证器与 LLM 结合，提升了符号回归中正确结构方程的发现能力。",
+      "该工作为 LLM 驱动的科学发现提供了新范式，强调结构正确性在方程发现中的关键作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-056",
+  "title": "Constrained Multi-Agent Reinforcement Learning in Imagination",
+  "source_url": "https://arxiv.org/abs/2610.21319",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 CA-MAMBA 的约束多智能体强化学习方法，其核心创新在于将约束策略更新的大部分过程转移到「想象」（imagination）中完成，即利用多智能体世界模型来预测成本（cost），从而大幅减少与真实环境的交互需求。在 SMAC（星际争霸多智能体挑战）基准测试中，CA-MAMBA 所需的交互次数仅为最强无模型基线方法的 1/10 到 1/20；在 MAMuJoCo 基准上，相同预算下其奖励达到基线的 2.8 至 12 倍。此外，在每基准单任务的受控实验中，将模型成本优势按平价定价后，可使成本盲学习器的成本降低一半以上。该工作将基于模型的强化学习与约束优化、多智能体协作相结合，为安全关键场景下的多智能体决策提供了高效且低成本的解决方案，值得关注。",
+  "tags": [
+    "Multi-Agent RL",
+    "Model-Based RL",
+    "Constrained RL",
+    "World Model"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用多智能体世界模型在想象中预测成本，可将约束策略更新从真实交互转移到模型内部，显著提升样本效率。",
+      "CA-MAMBA 在 SMAC 上仅需基线 1/10 至 1/20 的交互次数，在 MAMuJoCo 上同等预算下奖励提升 2.8 至 12 倍。",
+      "将模型成本优势按平价定价可有效降低成本盲学习器的成本，表明成本感知对约束多智能体学习至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261016-125",
+  "title": "EliteReplay: Preserving Diverse Solutions in RL Post-Training via Quality-Diversity Search",
+  "source_url": "https://arxiv.org/abs/2610.22290",
+  "source_platform": "rss_ai_research",
+  "summary": "EliteReplay 是一篇针对强化学习后训练（RL post-training）中行为锐化（behavior-sharpening）问题的研究论文。当前，RL 已成为提升 LLM 在可验证任务（如数学推理、代码生成）上准确率的常用后训练手段，但这类训练会显著收窄模型能够产生的解空间，导致模型只能输出单一或少数几种解法，而丧失了解题的多样性。现有的一些缓解方法往往优化的是与「正确解多样性」不直接相关的指标，无法真正衡量模型是否能够生成多个高质量且互不相同的正确答案。EliteReplay 提出借助质量-多样性（Quality-Diversity, QD）搜索的思想，在 RL 后训练过程中保留多样化的优质解，从而在维持高准确率的同时避免解空间坍缩。该工作值得关注的原因在于：它直击 RLHF/RLVR 训练中一个被广泛观察到但尚未被很好解决的副作用——多样性损失，并且将进化计算领域的 QD 方法与 LLM 后训练相结合，为构建既准确又具备多解能力的模型提供了新思路，对推理模型、Agent 以及需要多路径探索的应用场景具有潜在价值。",
+  "tags": [
+    "RL",
+    "LLM",
+    "Post-Training",
+    "Quality-Diversity",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 后训练虽能提升 LLM 在可验证任务上的准确率，但会引发行为锐化，导致模型可产生的正确解集合显著收窄。",
+      "现有缓解方法优化的多样性指标往往无法真实反映「多个正确解」的多样性，存在度量与目标不匹配的问题。",
+      "EliteReplay 将质量-多样性（QD）搜索引入 RL 后训练，通过保留多样化的精英解来兼顾准确率与解空间多样性。",
+      "该方向对需要多路径推理与探索的推理模型和 Agent 应用具有重要参考价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

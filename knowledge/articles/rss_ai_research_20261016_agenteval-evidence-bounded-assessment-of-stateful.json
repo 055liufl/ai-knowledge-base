@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-042",
+  "title": "AgentEval: Evidence-Bounded Assessment of Stateful Agents",
+  "source_url": "https://arxiv.org/abs/2610.21177",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentEval 是一个针对有状态智能体（stateful agents）的评估系统，其核心创新在于提出「证据边界评估」（Evidence-Bounded Assessment）理念。传统智能体评估往往只关注任务是否完成，但 AgentEval 指出：任务完成本身并不能证明智能体履行了其应尽的义务，而已记录的判断也不能保证其支撑证据依然有效。为此，AgentEval 构建了一条贯穿工具执行、状态与事件捕获、报告资格认定以及案例维护的「契约绑定评估记录」链路，将「智能体做了什么」「证据能证明什么」以及「结论是否被证据支持」三者明确分离。该工作值得关注，因为它触及了当前智能体评估体系的一个关键盲区——评估结论的可追溯性与证据有效性，这对于构建可信、可审计的自主智能体系统具有重要意义，尤其在企业级部署和合规场景下，证据链的完整性往往比单纯的任务成功率更为关键。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Stateful Agents",
+    "Auditability"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务完成率不足以衡量有状态智能体是否真正履行了义务，评估需要引入契约绑定视角",
+      "已记录的评估判断可能因证据失效而不再成立，评估系统必须持续维护证据的有效性",
+      "AgentEval 将「行为」「证据」「结论」三者分离，构建可追溯的评估记录链路",
+      "证据边界评估为智能体的可信部署与合规审计提供了新的方法论基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

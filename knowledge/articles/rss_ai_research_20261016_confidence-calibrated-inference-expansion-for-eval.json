@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-016",
+  "title": "Confidence-Calibrated Inference Expansion for Evaluator-Guided Test-Time Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.20836",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向评估器引导推理（Evaluator-Guided Reasoning）的置信度校准推理扩展方法。在测试时推理（Test-Time Reasoning）场景中，模型需要在每一步做出局部决策：是信任当前答案、回退到备选方案，还是投入更多计算资源进行推理扩展。作者将这一决策过程形式化为一个计算感知的三动作控制器（compute-aware three-action controller），其中终止动作通过预测答案成功率进行打分，而扩展动作则通过基于 rollout 的延续成功代理指标（continuation-success surrogate）进行评估，并显式地对计算成本进行定价。此外，论文通过局部动作间隙分析（local action-gap analysis）刻画了在何种条件下评分误差会改变最终决策，从而为置信度校准提供了理论依据。该工作值得关注的原因在于，它将测试时计算（test-time compute）的分配问题从启发式策略提升为具有理论保证的决策框架，有助于在推理质量与计算开销之间实现更优的权衡，对提升大模型推理系统的效率与可靠性具有实际意义。",
+  "tags": [
+    "Test-Time Reasoning",
+    "Inference Scaling",
+    "Confidence Calibration",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:05:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将评估器引导推理中的每一步决策建模为计算感知的三动作控制器，显式权衡答案信任、回退与推理扩展三种选择。",
+      "通过 rollout 的延续成功代理指标评估扩展动作的价值，并将计算成本纳入统一打分框架。",
+      "局部动作间隙分析揭示了评分误差在何种条件下会改变决策，为置信度校准提供理论支撑。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

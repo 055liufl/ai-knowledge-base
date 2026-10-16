@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-044",
+  "title": "Mine, Sample, Render: Test-Time Diversity Alignment Of Generative Models",
+  "source_url": "https://arxiv.org/abs/2610.21185",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 MINE-SAMPLE-RENDER (MSR) 的测试时方法，旨在解决现代生成模型在输出多样性方面的不足。尽管当前生成模型能够产生高质量的单个输出，但在被明确要求生成多样化结果时仍表现不佳。MSR 的核心思想是将多样性外部化，通过一个显式的、基于语料库的采样过程来实现。具体流程包括：首先从真实样本语料库中挖掘可解释的分类模式，并统计用于采样的属性分布；然后根据这些统计信息采样属性配置；最后渲染生成最终输出。这种方法无需重新训练模型，仅在测试时应用，具有即插即用的潜力。该工作值得关注，因为它提供了一种新颖的视角——将多样性从模型内部转移到外部采样过程，可能为生成模型的可控性和多样性平衡提供实用解决方案，尤其适用于需要多样化输出的创意设计、数据增强等场景。",
+  "tags": [
+    "生成模型",
+    "多样性",
+    "测试时适应",
+    "采样"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:07:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成模型在多样性采样上存在固有缺陷，即使明确要求也难以实现。",
+      "MSR 通过外部化多样性，将采样过程与生成模型解耦，无需重新训练。",
+      "从真实语料中挖掘可解释的分类模式，为采样提供统计基础，增强了可控性。",
+      "测试时方法具有即插即用潜力，可应用于多种生成任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

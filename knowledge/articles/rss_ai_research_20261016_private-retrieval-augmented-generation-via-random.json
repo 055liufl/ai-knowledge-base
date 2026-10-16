@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-126",
+  "title": "Private Retrieval Augmented Generation via Random Projection",
+  "source_url": "https://arxiv.org/abs/2610.22297",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于随机投影（Random Projection）的隐私保护检索增强生成（RAG）方法，旨在解决 RAG 系统在查询外部知识库时可能泄露敏感信息的问题。RAG 通过检索外部结构化知识来增强大语言模型（LLM）的能力，但检索数据存储中的敏感信息可能被泄露。作者的核心思路是对数据存储嵌入和查询嵌入应用相同的随机投影变换，从而在理论上保证隐私性，同时保持检索的有效性。该方法简单、通用，可无缝集成到现有 RAG 流程中，无需修改模型架构或训练过程。该工作值得关注，因为它首次从理论角度为 RAG 数据存储隐私提供了可证明的保障，且实现成本低，适合对隐私敏感的应用场景（如医疗、金融、企业知识库）。",
+  "tags": [
+    "RAG",
+    "Privacy",
+    "Random Projection",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:11:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "随机投影可同时应用于数据存储和查询嵌入，在理论上保证数据存储隐私，防止敏感信息泄露。",
+      "该方法简单通用，无需修改现有 RAG 架构或重新训练模型，易于部署。",
+      "为 RAG 隐私保护提供了可证明的安全保障，适用于医疗、金融等隐私敏感领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261016-062",
+  "title": "Learning to Reason with Selective Internal Feedback",
+  "source_url": "https://arxiv.org/abs/2610.21392",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 SIF（Selective Internal Feedback）的强化学习方法，旨在解决语言模型在缺乏真实答案或外部验证器时，仅依赖内部反馈进行训练所面临的置信度与正确性偏离问题。传统方法通过优化平均自置信度（self-certainty）来提升模型，但持续优化可能导致模型过度自信而推理准确率下降。SIF 通过结合比较式奖励构建（comparative reward construction）与选择性策略更新（selective policy updates）来缓解这一矛盾。具体而言，SIF 对模型生成的多个候选答案进行排序比较，构建相对奖励信号，并仅对高置信度且可能正确的样本进行策略更新，从而避免盲目提升置信度。该方法无需外部监督，完全依赖模型内部信号，为语言模型在无标注场景下的自我改进提供了新思路。其创新点在于将选择性更新机制引入内部反馈强化学习，平衡了置信度与正确性，有望推动自监督推理能力的发展。该工作属于强化学习与语言模型推理的交叉领域，对研究者和开发者均有参考价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM",
+    "Reasoning",
+    "Self-supervised Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:08:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "内部反馈强化学习中，置信度与正确性可能偏离，持续优化平均自置信度会损害推理准确率。",
+      "SIF 通过比较式奖励构建和选择性策略更新，仅对高置信度样本进行更新，避免过度自信。",
+      "该方法无需真实答案或外部验证器，为语言模型在无监督场景下的自我改进提供了新途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

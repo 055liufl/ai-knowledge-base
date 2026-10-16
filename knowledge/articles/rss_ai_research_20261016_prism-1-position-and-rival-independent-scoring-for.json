@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-105",
+  "title": "Prism-1: Position- and Rival-Independent Scoring for System One Models",
+  "source_url": "https://arxiv.org/abs/2610.22066",
+  "source_platform": "rss_ai_research",
+  "summary": "Prism-1 是一篇来自 arXiv 的技术论文，聚焦于 System One 决策模型的评分机制。所谓 System One 模型，是指给定状态和一组选项（如意图、工具或界面元素）后，通过单次前向传播直接输出选项分布、不生成推理过程的决策模型。当前 Web 系统越来越多地通过读取语言模型的输出来构建这类决策模型。论文指出，理性选择的两条公理——位置独立性和对手独立性——对这类决策而言是自然且必要的要求，因为在 Web 系统中，选项的排列顺序和选项集合往往由其他组件决定，可能随时变化。Prism-1 提出了一种位置无关且对手无关的评分方法，旨在使 System One 模型的决策不受选项排列顺序或无关选项存在的影响，从而提升决策的鲁棒性和一致性。该工作对于构建可靠的 Web 决策系统、工具调用和界面交互具有实际意义，尤其适用于需要低延迟、单次推理的在线场景。",
+  "tags": [
+    "System One",
+    "决策模型",
+    "LLM",
+    "评分机制"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:10:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "System One 决策模型通过单次前向传播输出选项分布，无需生成推理，适合低延迟 Web 场景。",
+      "理性选择的位置独立性和对手独立性是 Web 决策系统的自然要求，因为选项顺序和集合常由外部组件动态决定。",
+      "Prism-1 提出位置无关和对手无关的评分方法，可提升模型在选项排列变化或无关选项干扰下的鲁棒性。",
+      "该研究对基于语言模型的工具调用、意图识别和界面交互等应用具有直接指导价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

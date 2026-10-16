@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261016-025",
+  "title": "StepSafe: Learning Timely Intervention with Context-Aware Safety Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.20960",
+  "source_platform": "rss_ai_research",
+  "summary": "StepSafe 是一篇关于智能体（Agent）安全性的研究论文，针对现有安全护栏方法在时序推理上的不足提出了新的训练框架。论文指出，智能体系统的安全性本质上是序列化的：一个动作是否安全取决于之前的动作、工具输出、信息泄露以及智能体之间的交互。近期研究已从轨迹级别的后验评估转向步骤级别的动作诊断和主动风险预测，但现有训练目标对步骤证据如何随时间累积、以及何时证据足以触发干预的监督信号有限。StepSafe 提出上下文感知的安全推理方法，学习在合适的时机进行及时干预，从而在风险发生前阻止不安全行为。该工作对构建可靠、可部署的智能体系统具有重要价值，尤其适用于需要多步工具调用和复杂交互的场景。",
+  "tags": [
+    "Agent Safety",
+    "LLM Agent",
+    "Safety Reasoning",
+    "Sequential Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-10-16T13:02:38Z",
+  "collected_at": "2026-10-16T13:06:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体安全本质上是序列化问题，安全判断需依赖历史动作、工具输出和交互上下文。",
+      "现有方法缺乏对步骤证据累积过程的监督，难以确定何时触发干预。",
+      "StepSafe 提出上下文感知的安全推理，实现及时、主动的步骤级干预。",
+      "该工作推动智能体安全从后验评估向实时风险预测与干预转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
