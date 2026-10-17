@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261017-100",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队在 Hugging Face 博客上发布的技术文章，围绕其新一代模型 MiniMax M2 展开，核心议题是「对齐到什么？」——即重新思考 Agent 泛化能力的本质。文章指出，当前 Agent 模型在训练中往往过度对齐特定任务分布或评测基准，导致在真实开放环境中的泛化能力受限；MiniMax M2 尝试从对齐目标本身出发，探讨如何让模型在多样化工具调用、多步推理与跨任务迁移中保持稳健表现。文章结合训练策略、数据构造与评测结果，讨论了 Agent 泛化的关键因素，包括任务多样性、奖励信号设计以及避免过拟合单一 benchmark 的风险。该内容值得关注的原因在于：Agent 泛化是当前 LLM 落地应用的核心瓶颈之一，而 MiniMax M2 作为国产开源/开放模型的重要代表，其对「对齐目标」的反思为社区提供了不同于单纯刷榜的工程视角，对研究者和开发者设计训练与评测流程均有参考价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Alignment",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-10-17T12:00:13Z",
+  "collected_at": "2026-10-17T12:06:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 模型的泛化瓶颈往往源于对特定任务分布或评测基准的过度对齐，而非模型容量不足。",
+      "对齐目标的选择本身需要被重新审视：应关注开放环境下的稳健性，而非单一 benchmark 分数。",
+      "任务多样性、奖励信号设计与跨任务迁移能力是提升 Agent 泛化的关键工程因素。",
+      "MiniMax M2 的实践为社区提供了从对齐视角反思 Agent 训练与评测流程的参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

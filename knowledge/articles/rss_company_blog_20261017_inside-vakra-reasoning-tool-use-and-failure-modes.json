@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261017-059",
+  "title": "Inside VAKRA: Reasoning, Tool Use, and Failure Modes of Agents",
+  "source_url": "https://huggingface.co/blog/ibm-research/vakra-benchmark-analysis",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 IBM Research 在 Hugging Face 博客上对 VAKRA 基准测试的深入分析，聚焦于 AI Agent 的推理能力、工具使用以及失败模式。VAKRA 是一个专门用于评估 Agent 在复杂任务中综合表现的基准，文章通过实验揭示了 Agent 在推理链构建、工具调用时机与选择、以及多步任务规划中的常见缺陷。分析指出，尽管当前 Agent 在单项能力上表现良好，但在需要动态调整策略和容错恢复的场景中仍频繁失败，例如错误传播、工具误用和过度自信的推理。文章还总结了失败模式分类，并提出了改进方向，如增强自我验证和工具使用前的规划。该内容对理解 Agent 的局限性、设计更鲁棒的 Agent 系统具有重要参考价值，尤其适合开发者和研究者关注。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Tool Use",
+    "Reasoning",
+    "Failure Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-17T12:00:13Z",
+  "collected_at": "2026-10-17T12:04:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 在需要多步推理和动态工具调用的任务中，失败主要源于错误传播和缺乏自我纠正机制。",
+      "工具使用失败常表现为调用时机不当或参数错误，反映出规划与执行之间的脱节。",
+      "VAKRA 基准揭示了 Agent 在容错和恢复能力上的不足，这对实际部署至关重要。",
+      "改进方向包括增强推理过程中的自我验证和工具调用前的显式规划。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

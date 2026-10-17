@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261017-004",
+  "title": "You could have invented transformers from memory",
+  "source_url": "https://alexwang.ai/posts/associative-memory/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章以「你本可以从记忆出发发明 Transformer」为题，尝试从联想记忆（associative memory）的视角重新推导 Transformer 架构。作者的核心思路是：Transformer 的注意力机制本质上是一种可微的键值联想记忆系统——Query 对应检索线索，Key-Value 对对应存储的记忆条目，softmax 加权求和则是软检索过程。文章从最朴素的记忆需求出发，逐步引入线性层、相似度匹配、softmax 归一化等组件，最终自然导出标准的自注意力公式，让读者理解 Transformer 并非凭空设计，而是解决「如何让神经网络高效存取和组合信息」这一问题的自然产物。这种从第一性原理出发的推导方式，对理解注意力机制的本质、以及为什么 Transformer 能在长程依赖建模上优于 RNN 很有帮助。文章面向有一定深度学习基础、希望深入理解 Transformer 内部机理的读者，属于教学/解释性内容，创新性有限但教学价值较高。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "Associative Memory",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-17T12:00:07Z",
+  "collected_at": "2026-10-17T12:01:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力机制可被理解为可微的键值联想记忆：Query 是检索线索，Key-Value 是存储条目，softmax 加权是软检索",
+      "从联想记忆的第一性原理出发可以自然推导出 Transformer 的自注意力公式，说明其设计具有内在必然性",
+      "这种推导视角有助于理解 Transformer 相比 RNN 在长程依赖和信息组合上的优势来源"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

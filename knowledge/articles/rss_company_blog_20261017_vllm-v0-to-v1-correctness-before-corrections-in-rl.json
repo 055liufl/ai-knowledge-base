@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261017-049",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队关于 vLLM 从 V0 升级到 V1 的技术博客，重点讨论了在强化学习（RL）场景下确保正确性的重要性。vLLM 作为高效的大语言模型推理引擎，其版本迭代可能引入行为变化，尤其是在 RL 训练中，微小的数值差异或逻辑错误会被放大，导致训练不稳定或策略偏差。文章强调在应用任何修正或优化之前，必须首先验证基础正确性，包括输出一致性、数值精度和分布式环境下的可靠性。作者分享了升级过程中的经验教训，例如如何通过严格的测试和对比来定位问题，并建议在 RL 工作流中采用渐进式迁移策略。该内容对使用 vLLM 进行 RL 训练的研究者和工程师具有重要参考价值，提醒社区在追求性能提升的同时不能忽视正确性保障。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "正确性"
+  ],
+  "author": null,
+  "published_at": "2026-10-17T12:00:13Z",
+  "collected_at": "2026-10-17T12:04:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，推理引擎的微小错误会被放大，因此升级前必须进行严格的正确性验证。",
+      "vLLM V0 到 V1 的迁移应遵循渐进式策略，先确保输出一致性再引入优化。",
+      "分布式环境下的数值精度和确定性是 RL 工作流中需要特别关注的问题。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
