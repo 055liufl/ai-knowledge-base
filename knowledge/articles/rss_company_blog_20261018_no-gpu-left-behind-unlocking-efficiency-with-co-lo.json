@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261018-154",
+  "title": "No GPU left behind: Unlocking Efficiency with Co-located vLLM in TRL",
+  "source_url": "https://huggingface.co/blog/vllm-colocate",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 Hugging Face TRL 库中新增的 Co-located vLLM 功能，旨在提升 GPU 利用率并加速大语言模型（LLM）的强化学习（RL）训练。传统 RL 训练中，生成（rollout）和训练阶段通常分离，导致 GPU 闲置。通过将 vLLM 推理引擎与训练过程共置于同一 GPU，TRL 实现了动态资源分配，在生成阶段利用 vLLM 的高吞吐推理，在训练阶段释放显存，从而显著减少空闲时间。该功能支持多种 RL 算法（如 PPO、DPO），并提供了简单易用的 API。这一改进对于需要大量采样步骤的 RL 微调尤为重要，能大幅降低训练成本和时间，使研究人员和开发者能够更高效地利用现有硬件资源。",
+  "tags": [
+    "vLLM",
+    "TRL",
+    "RLHF",
+    "GPU优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-18T12:28:14Z",
+  "collected_at": "2026-10-18T12:35:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Co-located vLLM 通过共享 GPU 资源，在生成和训练阶段动态切换，显著减少 GPU 空闲时间。",
+      "该功能集成于 TRL 库，简化了 RL 训练流程，支持 PPO、DPO 等算法，易于上手。",
+      "对于资源有限的研究者和开发者，此方法能大幅提升硬件利用效率，降低训练成本。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261018-006",
+  "title": "Lorenz and Little: How Much Does Your Tail Cost?",
+  "source_url": "https://brooker.co.za/blog/2026/07/29/lorenz-and-little.html",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章来自 Marc Brooker 的技术博客，探讨分布式系统中尾部延迟（tail latency）与排队论经典定律之间的深层联系。作者将洛伦兹曲线（Lorenz curve，常用于经济学中衡量不平等程度）与利特尔法则（Little's Law，L=λW，描述系统中平均请求数与到达率和停留时间的关系）结合起来，用以量化分析尾部延迟对系统整体性能的\"成本\"。核心洞察在于：高百分位延迟（如 p99、p999）并非只是少数请求的问题，它会通过排队效应放大，显著抬高平均延迟和所需并发容量，从而带来真实的资源成本。文章给出了直观的数学推导和可视化解释，帮助工程师理解为什么优化尾部延迟往往比优化中位数延迟更具杠杆效应，以及在容量规划中如何为尾部延迟\"付费\"。该内容值得关注，因为它把抽象的排队论与工程实践中的 SLO 设计、容量估算和性能优化直接挂钩，为分布式系统、数据库和云服务的性能调优提供了简洁而有力的分析框架，适合后端与基础设施工程师阅读。",
+  "tags": [
+    "分布式系统",
+    "排队论",
+    "尾部延迟",
+    "性能优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-18T12:28:09Z",
+  "collected_at": "2026-10-18T12:29:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "尾部延迟会通过排队效应放大，显著抬高平均延迟和所需容量，因此优化 p99/p999 比优化中位数更具杠杆效应。",
+      "将洛伦兹曲线与利特尔法则结合，可以量化尾部延迟带来的真实资源成本，为容量规划提供数学依据。",
+      "在 SLO 设计和容量估算中，必须把尾部延迟当作需要\"付费\"的成本项，而非可忽略的少数异常。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

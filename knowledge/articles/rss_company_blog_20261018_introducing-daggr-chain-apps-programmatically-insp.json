@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261018-080",
+  "title": "Introducing Daggr: Chain apps programmatically, inspect visually",
+  "source_url": "https://huggingface.co/blog/daggr",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 发布了 Daggr，一个用于以编程方式串联多个应用、并以可视化方式检查执行流程的工具。Daggr 的核心思路是把应用或模型调用抽象为有向无环图（DAG）中的节点，开发者用代码定义节点之间的依赖与数据流，运行时即可自动按拓扑顺序执行，同时提供可视化界面展示整条链路的结构、中间结果和运行状态。这一设计解决了多步骤 AI 流水线（如模型串联、数据处理管道、Agent 工作流）中调试困难、状态不透明、难以复用的问题。值得关注的原因在于：当前 LLM 应用和 Agent 系统普遍需要组合多个模型调用与工具，链路复杂后纯代码调试成本很高；Daggr 把“代码定义 + 可视化检查”结合起来，既保留了编程的灵活性，又提供了类似工作流编排平台的直观性，有望降低复杂 AI 管道的构建与排障门槛，对开发者构建可观测、可维护的多步骤 AI 应用具有实用价值。",
+  "tags": [
+    "DAG",
+    "workflow",
+    "LLM",
+    "observability"
+  ],
+  "author": null,
+  "published_at": "2026-10-18T12:28:14Z",
+  "collected_at": "2026-10-18T12:32:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用 DAG 抽象应用调用链，代码定义依赖关系，运行时自动按拓扑顺序执行",
+      "可视化检查弥补了多步骤 AI 管道调试困难、中间状态不透明的痛点",
+      "兼顾编程灵活性与工作流编排的直观性，适合构建可观测的 LLM/Agent 流水线"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

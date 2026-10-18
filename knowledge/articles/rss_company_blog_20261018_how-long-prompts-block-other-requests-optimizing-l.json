@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20261018-146",
+  "title": "How Long Prompts Block Other Requests - Optimizing LLM Performance",
+  "source_url": "https://huggingface.co/blog/tngtech/llm-performance-blocked-by-long-prompts",
+  "source_platform": "rss_company_blog",
+  "summary": "本文探讨了长提示（Long Prompts）如何阻塞LLM的其他请求，从而影响整体性能。随着大语言模型在各类应用中的普及，推理服务的效率成为关键瓶颈。文章指出，当处理长提示时，由于自回归生成和注意力机制的计算特性，模型会长时间占用计算资源，导致后续请求排队等待，显著增加延迟。作者通过实验分析，量化了长提示对吞吐量和响应时间的影响，并提出了优化策略，如请求调度、提示压缩、动态批处理等。这些发现对于部署高效LLM服务的开发者具有重要参考价值，有助于平衡资源利用和用户体验。本文来自Hugging Face博客，由TNG Technology Consulting撰写，结合理论与实践，为LLM性能优化提供了实用指导。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "性能调优"
+  ],
+  "author": null,
+  "published_at": "2026-10-18T12:28:14Z",
+  "collected_at": "2026-10-18T12:35:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长提示会显著阻塞其他请求，导致LLM服务延迟增加和吞吐量下降。",
+      "通过动态批处理和请求调度策略可以缓解长提示带来的阻塞问题。",
+      "提示压缩和优化输入长度是提升LLM推理效率的有效手段。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

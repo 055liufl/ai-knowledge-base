@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261018-049",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队在 Hugging Face 博客上发布的技术文章，讨论 vLLM 从 V0 架构迁移到 V1 架构过程中，在强化学习（RL）场景下遇到的正确性问题。vLLM 是当前最流行的高吞吐 LLM 推理引擎之一，其 V1 版本对调度器、KV Cache 管理和执行引擎进行了大幅重构，显著提升了通用推理性能。然而，当 vLLM 被用作 RL 训练中的 rollout 引擎时（如 PPO、GRPO 等算法），V1 的某些优化会引入与训练正确性相关的隐患，例如采样行为不一致、logprob 计算偏差、前缀缓存与权重更新之间的交互问题等。文章强调在追求性能修正（corrections）之前，必须先保证 rollout 结果的正确性（correctness），否则会污染训练信号、导致模型退化。作者结合具体案例说明了问题定位与修复思路，并给出了在 RL 工作流中安全使用 vLLM V1 的实践建议。该内容对使用 vLLM 做 RLHF/RLVR 训练的工程团队具有较高参考价值，也反映了推理引擎与训练框架耦合时容易被忽视的正确性边界。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-10-18T12:28:14Z",
+  "collected_at": "2026-10-18T12:31:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 的性能优化在 RL rollout 场景下可能引入采样与 logprob 正确性问题，需优先验证正确性再谈性能",
+      "推理引擎与 RL 训练框架耦合时，前缀缓存、权重热更新等机制是正确性风险的高发区",
+      "rollout 结果偏差会直接污染训练信号，导致 RL 训练不稳定或模型退化",
+      "团队应建立针对推理引擎版本升级的回归验证流程，覆盖采样一致性与数值精度"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
