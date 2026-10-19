@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-123",
+  "title": "Prune the Leaky Neurons: Mitigating Private Data Leakage in Fine-Tuned LLMs via Joint-Embedding-Guided Pruning",
+  "source_url": "https://arxiv.org/abs/2610.22792",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对微调大语言模型（LLM）时私有数据（如个人身份信息 PII）被记忆并泄露的问题，提出了一种名为“联合嵌入引导剪枝”（Joint-Embedding-Guided Pruning）的方法。现有防御手段如数据清洗和差分隐私往往以牺牲模型效用为代价，而隐私神经元编辑方法则缺乏无 PII 的参考基准。作者通过分析神经元与 PII 的关联，利用联合嵌入空间识别并剪枝“泄漏神经元”，从而在移除隐私数据的同时尽量保持模型在下游任务上的性能。该工作值得关注，因为它为 LLM 隐私保护提供了一种无需重新训练、兼顾效用与安全的新思路，对合规部署微调模型具有实际意义。",
+  "tags": [
+    "LLM",
+    "Privacy",
+    "Fine-tuning",
+    "Model Pruning"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "微调 LLM 会记忆私有数据，导致 PII 泄露，现有防御方法在隐私与效用间难以平衡。",
+      "联合嵌入引导剪枝可定位并移除与 PII 相关的神经元，无需 PII-free 参考数据。",
+      "该方法在降低隐私泄露风险的同时，能较好地保持模型在下游任务上的效用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

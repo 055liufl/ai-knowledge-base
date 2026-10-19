@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-133",
+  "title": "COMET: Decoupled Distillation, Routing, and Capacity Control for Task-Agnostic Continual Vision--Language Learning",
+  "source_url": "https://arxiv.org/abs/2610.22907",
+  "source_platform": "rss_ai_research",
+  "summary": "COMET 提出了一种面向任务无关持续视觉-语言学习（task-agnostic continual VLM learning）的解耦框架，针对 CLIP 类视觉-语言模型在开放世界中顺序到达任务、无历史数据、任务身份未知且骨干网络不可重训的严苛场景。作者指出，该设定下 VLM 面临超越传统稳定性-可塑性权衡的三重耦合压力：模态一致性漂移（modal-consistency drift）、表示空间干扰（representation-space interference）以及容量控制问题。COMET 通过解耦蒸馏、路由与容量控制三个机制分别应对上述压力，旨在不重训骨干的前提下保持零样本识别能力并持续吸收新任务。该工作值得关注的原因在于：持续学习与视觉-语言模型的结合是当前多模态智能体与开放世界部署的关键瓶颈，而现有方法多假设任务身份已知或可访问历史数据，COMET 的任务无关设定更贴近真实部署；其解耦设计也为后续研究提供了可复用的模块化思路。",
+  "tags": [
+    "Continual Learning",
+    "Vision-Language Model",
+    "CLIP",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:26:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任务无关持续 VLM 学习面临三重耦合压力：模态一致性漂移、表示空间干扰与容量控制，超出经典稳定性-可塑性权衡框架",
+      "COMET 将蒸馏、路由与容量控制解耦，分别针对上述压力设计机制，避免骨干网络重训",
+      "该设定（任务身份未知、无历史数据、骨干冻结）比传统持续学习假设更贴近开放世界实际部署"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

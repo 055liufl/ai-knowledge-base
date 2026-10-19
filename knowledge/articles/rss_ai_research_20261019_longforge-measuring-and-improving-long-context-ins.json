@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-058",
+  "title": "LongForge: Measuring and Improving Long-Context Instruction Data via Evidence-Assertion Reasoning Graphs",
+  "source_url": "https://arxiv.org/abs/2610.23167",
+  "source_platform": "rss_ai_research",
+  "summary": "LongForge 是一篇针对长上下文指令微调数据质量控制的论文。现有方法在生成流程中仅做一次性判断，只输出标量分数，无法揭示答案使用了文档的哪些部分以及推理步骤的数量，导致数据既不可审计也不可控。作者将数据质量形式化为文档、问题与答案之间对齐结构的属性，并构建了 LongForge 框架，通过证据-断言推理图（Evidence-Assertion Reasoning Graphs）来分析长上下文指令数据。该工作值得关注，因为它首次系统性地将长上下文数据质量从黑盒标量判断转变为可解释的结构化分析，有望显著提升长上下文模型训练数据的可靠性和可控性，对长上下文 LLM 的数据工程具有重要指导意义。",
+  "tags": [
+    "Long-Context",
+    "Instruction Tuning",
+    "Data Quality",
+    "Reasoning Graph"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有长上下文指令数据质量控制仅输出标量分数，缺乏可审计性和可解释性",
+      "将数据质量定义为文档、问题、答案三者之间的对齐结构属性，而非单一评分",
+      "证据-断言推理图能够显式追踪答案所依赖的文档片段及推理步骤数量",
+      "该框架为长上下文指令微调数据的可控生成与筛选提供了结构化基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

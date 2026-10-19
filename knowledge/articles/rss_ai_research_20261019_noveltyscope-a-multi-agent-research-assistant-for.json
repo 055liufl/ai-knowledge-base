@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-118",
+  "title": "NoveltyScope: A Multi-Agent Research Assistant for Evidence-Grounded Novelty Assessment of Scientific Papers",
+  "source_url": "https://arxiv.org/abs/2610.22703",
+  "source_platform": "rss_ai_research",
+  "summary": "NoveltyScope 是一个面向科研论文新颖性评估的多智能体研究助手原型。该系统将待评估论文与检索到的先前工作进行对比，生成结构化报告并给出五级新颖性评分。其流程包括：提取论文的核心任务及最多两项作者声称的贡献；使用 BM25 与稠密检索结合倒数排名融合（RRF）在封闭本地语料库中检索相关文献；针对每项贡献请求成对段落以寻找潜在反驳证据；并对引用内容进行缓存源校验以确保证据可溯源。该工作值得关注之处在于：它将多智能体协作与检索增强生成（RAG）结合，把主观性强、耗时的新颖性判断转化为可解释、可验证的流程，有助于缓解同行评审压力、减少作者与审稿人之间的信息不对称，并为科研辅助工具的可信度设计（证据锚定、引用核验）提供了可参考的工程范式。",
+  "tags": [
+    "Multi-Agent",
+    "RAG",
+    "Scientific Evaluation",
+    "Information Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将新颖性评估拆解为任务/贡献抽取、混合检索、成对反驳证据检索与引用核验的多阶段流程，提升了评估的可解释性。",
+      "采用 BM25 与稠密检索的倒数排名融合（RRF），在封闭语料上兼顾关键词匹配与语义召回。",
+      "强调证据锚定：要求成对段落用于潜在反驳，并对引用进行缓存源校验，以降低 LLM 幻觉风险。",
+      "五级新颖性评分与结构化报告输出，适合作为同行评审的辅助工具而非替代人工判断。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

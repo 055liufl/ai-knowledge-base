@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-089",
+  "title": "FuTransformer: FP8 prefill and INT4 decode for Llama-style inference on Hopper",
+  "source_url": "https://arxiv.org/abs/2610.23796",
+  "source_platform": "rss_ai_research",
+  "summary": "FuTransformer 是一个针对 NVIDIA Hopper GPU 的 Llama 风格 Transformer 推理 CUDA 实现，核心创新在于根据 prefill 和 decode 阶段的不同计算特征采用差异化精度策略：prefill 阶段使用 FP8 精度，decode 阶段使用 INT4 精度。该工作指出 prefill 阶段因权重跨 token 复用而受矩阵乘法和激活数据搬运主导，而单 token decode 阶段复用有限、受权重和 KV-cache 读取主导。FuTransformer 将 CODA 的 GEMM-plus-epilogue 方法应用于推理，并引入直接 KV-cache 放置、将固定 RMSNorm 增益折叠进权重等优化。该工作值得关注，因为它针对大模型推理中两个关键阶段的瓶颈分别设计精度与数据流方案，在 Hopper 架构上探索了低精度推理的实用化路径，对降低 Llama 类模型部署成本具有直接参考价值。",
+  "tags": [
+    "LLM Inference",
+    "FP8",
+    "INT4",
+    "CUDA",
+    "Hopper"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:24:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Prefill 与 decode 的计算特征截然不同，应分别采用 FP8 和 INT4 精度策略以匹配各自瓶颈",
+      "将 RMSNorm 固定增益折叠进权重可减少推理时的额外计算与访存开销",
+      "直接 KV-cache 放置与 GEMM-plus-epilogue 融合有助于降低 decode 阶段的访存主导开销"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

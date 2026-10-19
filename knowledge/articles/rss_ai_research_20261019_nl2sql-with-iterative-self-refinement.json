@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-136",
+  "title": "NL2SQL with Iterative Self-Refinement",
+  "source_url": "https://arxiv.org/abs/2610.22968",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于迭代自我精炼（Iterative Self-Refinement）的 NL2SQL 方法，旨在解决大语言模型在自然语言转 SQL 任务中常见的模式元素幻觉、语法错误和意图理解偏差问题。研究背景聚焦于保险等对精度要求极高的领域，其中 KPI、监管约束和遗留关系型数据库系统对查询准确性有严格要求。该方法通过让模型在生成 SQL 后进行多轮自我检查与修正，逐步提升查询的正确性和可靠性。其核心价值在于不依赖额外训练数据或复杂外部工具，仅通过推理阶段的迭代机制改善输出质量，为 NL2SQL 在真实业务场景中的落地提供了实用思路。该工作值得关注，因为它直面 LLM 在结构化数据访问中的关键短板，并提出了一种轻量、可复用的改进范式，对数据库交互、智能报表和低代码数据查询等应用具有参考意义。",
+  "tags": [
+    "NL2SQL",
+    "LLM",
+    "Self-Refinement",
+    "Text-to-SQL"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:26:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "迭代自我精炼机制可在推理阶段显著减少 LLM 生成 SQL 时的模式幻觉和语法错误，无需额外训练。",
+      "在保险等强监管、高精度领域，NL2SQL 的可靠性比通用场景更为关键，迭代修正策略具有实际落地价值。",
+      "该方法强调对用户意图的逐步对齐，通过多轮自检弥补单次生成对复杂查询意图捕捉不足的问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

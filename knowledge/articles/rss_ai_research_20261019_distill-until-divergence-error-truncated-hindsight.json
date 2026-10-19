@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-050",
+  "title": "Distill Until Divergence: Error-Truncated Hindsight Distillation for Agentic RL",
+  "source_url": "https://arxiv.org/abs/2610.23048",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“Distill Until Divergence”的方法，用于智能体强化学习中的错误截断式事后蒸馏。针对长程交互任务中基于结果的GRPO缺乏对中间决策细粒度指导的问题，现有方法将完整轨迹蒸馏为可复用技能，并利用事后条件OPD提供密集的token级信用分配。然而，技能引起的概率偏移并不一定代表与奖励对齐的信用，尤其是在错误动作改变后续状态分布之后。该方法通过检测技能蒸馏过程中的发散点，在错误发生处截断轨迹，从而避免将错误动作后的不可靠经验蒸馏为技能，提升信用分配的准确性和训练稳定性。该工作值得关注，因为它直面智能体RL中稀疏奖励与细粒度信用分配的核心矛盾，提出了一种简洁而有效的截断策略，对长程决策任务（如工具调用、多步推理）的训练效率与效果具有潜在提升价值。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Distillation",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "技能蒸馏带来的概率偏移不等于奖励对齐的信用，需警惕错误动作后的分布偏移污染技能学习。",
+      "在发散点截断轨迹可避免将错误动作后的不可靠经验蒸馏为技能，提升信用分配质量。",
+      "该方法为长程智能体RL中稀疏奖励下的细粒度信用分配提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

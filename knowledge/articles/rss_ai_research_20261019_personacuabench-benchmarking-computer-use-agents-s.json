@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261019-138",
+  "title": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+  "source_url": "https://arxiv.org/abs/2610.22990",
+  "source_platform": "rss_ai_research",
+  "summary": "PersonaCUABench 是一项针对计算机使用智能体（Computer-Use Agents, CUAs）的全新评测基准，其核心创新在于将“任务本身”与“提问者身份”解耦：74 个跨 11 个领域的任务保持不变，仅改变提出请求的 persona。基准中设计了 44 个 persona，分为四个组别，由 persona agent 对原始指令进行改写，模拟真实用户可能省略需求、追加约束、或在执行有后果的操作前要求确认等行为。该工作指出现有 CUA 评测普遍采用固定任务规格，智能体即使完成基准指令，也未必真正服务了提出请求的人，从而暴露出“任务完成”与“用户意图满足”之间的鸿沟。PersonaCUABench 的价值在于把个性化、隐含偏好与安全确认等真实交互因素引入评测，推动 CUA 从“能完成任务”走向“能服务具体的人”，对智能体对齐、个性化助手与安全部署研究具有直接参考意义。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Computer-Use Agent",
+    "Personalization",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:26:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 CUA 评测使用固定任务规格，无法反映真实用户省略需求、追加约束或要求确认的差异",
+      "通过固定 74 个任务、仅变化 44 个 persona 的受控设计，可隔离并度量“服务对象”对智能体行为的影响",
+      "完成基准指令不等于服务好提问者，评测需从任务完成度转向用户意图满足度",
+      "该基准为智能体个性化对齐与高风险操作确认机制提供了可复用的评测框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

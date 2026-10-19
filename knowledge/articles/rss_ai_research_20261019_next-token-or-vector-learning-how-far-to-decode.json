@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-121",
+  "title": "Next Token or Vector? Learning How Far to Decode",
+  "source_url": "https://arxiv.org/abs/2610.22788",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 CADENCE（Context-Adaptive DEcoding）生成方法，针对标准自回归解码每次只推进一个 token 的效率瓶颈，学习“预测什么”以及“预测多远”。方法使用高斯预测头将未来片段表示为连续潜在向量，并通过共享解码器将选定的向量并行转换为 token 预测；同时引入学习路由器选择预测范围。该工作值得关注，因为它将解码粒度从固定单 token 扩展为自适应多 token 并行预测，有望在保持生成质量的同时显著提升推理效率，对 LLM 推理加速和投机解码方向具有参考价值。",
+  "tags": [
+    "LLM",
+    "Decoding",
+    "Inference Acceleration",
+    "Autoregressive"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准自回归解码逐 token 推进，存在可并行预测多个未来 token 的效率空间",
+      "CADENCE 通过高斯预测头将未来片段编码为连续潜在向量，并用共享解码器并行转成 token 预测",
+      "学习路由器自适应决定预测跨度，实现“预测什么”与“预测多远”的联合学习",
+      "该方法为 LLM 推理加速提供了从固定单 token 到自适应多 token 解码的新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-081",
+  "title": "SkillBrowser: Selective Skill Exposure for Scalable Skill-Using Agents",
+  "source_url": "https://arxiv.org/abs/2610.23554",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillBrowser 提出了一种名为 Selective Skill Exposure (SSE) 的机制，用于解决大规模技能库下 LLM Agent 的技能暴露问题。随着 Agent 依赖的技能数量增长，如何在不污染上下文、不干扰推理的前提下按需提供相关技能内容成为关键挑战。现有方案存在明显缺陷：渐进式披露会暴露不断增长的技能元数据，造成上下文污染；检索式方法则可能因召回不精准而引入无关技能。SkillBrowser 通过选择性暴露机制，在需要时仅提供相关技能的程序性内容，从而在保持可扩展性的同时维持推理质量。该工作对构建可扩展、可维护的技能型 Agent 系统具有直接指导意义，尤其适用于需要管理大量工具/技能库的工程场景。",
+  "tags": [
+    "Agent",
+    "Skill Library",
+    "Context Management",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "大规模技能库下，技能暴露策略直接影响 Agent 的推理质量与上下文效率",
+      "渐进式披露和检索式方法在技能选择上存在互补缺陷，需要更精细的选择性暴露机制",
+      "按需提供程序性技能内容而非元数据，可减少上下文污染并提升可扩展性"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

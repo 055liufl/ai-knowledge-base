@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-130",
+  "title": "Batched Contextual Reinforcement II: Does RLVR Need Long Rollout Windows?",
+  "source_url": "https://arxiv.org/abs/2610.22887",
+  "source_platform": "rss_ai_research",
+  "summary": "本文是 Batched Contextual Reinforcement (BCR) 系列的技术续作，聚焦于 RLVR（Reinforcement Learning with Verifiable Rewards）中长 rollout 窗口带来的高昂成本问题。作者指出，简单缩短 rollout 窗口会破坏正确性信号：当所有单题 rollout 在给出答案前就被截断时，组内相对准确率优势会消失，导致训练信号失效。为此，论文提出 Concurrent Constraint Reinforcement (CCR)，通过引入并发奖励（concurrent rewards）来放松 RLVR 对长 rollout 窗口的依赖，使模型在更短的窗口下仍能获得有效的可验证奖励信号。该工作对降低 RLVR 训练成本、提升推理模型后训练效率具有实际意义，属于强化学习与 LLM 后训练交叉方向的方法论研究，值得关注 RLVR 训练效率与 rollout 策略的研究者和工程师阅读。",
+  "tags": [
+    "RLVR",
+    "Reinforcement Learning",
+    "LLM Post-training",
+    "Rollout Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR 的长 rollout 窗口是主要成本来源，但直接缩短窗口会导致组内准确率优势消失，训练信号失效。",
+      "CCR 通过并发奖励机制放松 RLVR 对长 rollout 窗口的依赖，在更短窗口下保留可验证奖励信号。",
+      "该工作延续 BCR 系列，为降低推理模型强化学习后训练成本提供了新的方法论方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

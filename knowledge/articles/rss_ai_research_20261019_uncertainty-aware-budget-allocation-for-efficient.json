@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-127",
+  "title": "Uncertainty-Aware Budget Allocation for Efficient LLM Tree Search",
+  "source_url": "https://arxiv.org/abs/2610.22858",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）树搜索中固定预算扩展效率低下的问题，提出了一种不确定性感知的预算分配方法。作者首先发现，在现有搜索算法中，从共享中间状态采样的后续分支存在大量重复，并坍缩为少数不同答案；关键的是，兄弟动作的语义分散度能够预测冗余程度。基于此，方法根据语义不确定性动态分配搜索预算，将更多资源投向高不确定性节点，从而减少无效扩展。该工作值得关注，因为它揭示了树搜索中冗余扩展的统计规律，并提供了一种无需额外训练即可提升推理效率的通用策略，对降低LLM多步推理的计算成本具有实际意义。",
+  "tags": [
+    "LLM",
+    "Tree Search",
+    "Reasoning",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定预算的树搜索扩展存在大量冗余，兄弟动作的语义分散度可预测冗余程度",
+      "基于语义不确定性的动态预算分配能有效减少无效扩展，提升推理效率",
+      "该方法无需额外训练，可兼容现有树搜索算法，具有通用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

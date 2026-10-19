@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-099",
+  "title": "Recoverability-Controlled Safety Miscalibration in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.22425",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RiskCueBench，一个以可恢复性为控制变量的安全基准，用于区分大语言模型安全对齐中的两个阶段：意图理解与响应级安全行为。作者指出，现有安全评估通常只对最终回复打分，因而把模型是否理解有害意图与是否在回复层面拒绝混为一谈，导致安全误校准（safety miscalibration）被掩盖。RiskCueBench 先测量模型能否从上下文成功恢复出高层有害意图，再在控制这一可恢复性的条件下评估其拒绝行为，从而更精细地刻画模型在“理解但未拒绝”或“未理解却拒绝”等情形下的表现。该工作值得关注，因为它揭示了单一回复级指标可能高估或低估模型真实安全能力，为安全对齐评估提供了更细粒度的诊断工具，对模型安全研究、红队测试与对齐训练均有参考价值。",
+  "tags": [
+    "LLM Safety",
+    "Benchmark",
+    "Alignment",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:24:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅对最终回复打分的安全评估会混淆意图理解与响应级安全行为，掩盖模型的安全误校准。",
+      "RiskCueBench 通过可恢复性控制将意图理解阶段与拒绝行为阶段分离评估。",
+      "控制可恢复性后可区分“理解有害意图但未拒绝”与“未理解却拒绝”等不同失败模式。",
+      "该基准为更细粒度的安全对齐诊断与红队评估提供了方法参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-029",
+  "title": "When Can You Trust an Agent's Own Verifier? Stress-Testing Counterfactual Rationale Verification Under Search Pressure and Oracle Access",
+  "source_url": "https://arxiv.org/abs/2610.22779",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究自动化智能体设计中一个关键但常被忽视的问题：当智能体用单一分数决定设计变更是否带来改进时，过度优化该分数会使其失去原本的测量意义。作者提出利用智能体对自身设计的解释作为第二信号，通过反事实验证——否定每条陈述的主张、重新运行并观察性能是否下降——来检验解释的可靠性。核心问题是：当智能体针对该验证器进行优化时，这种验证器是否仍然可靠。论文在搜索压力和预言机访问条件下对反事实理由验证进行压力测试，揭示了验证器在对抗性优化下可能失效的边界条件。这项工作值得关注，因为它直接关系到智能体自我评估的可信度，对构建可靠、可审计的自动化智能体系统具有重要方法论意义，也为评估智能体解释的真实性提供了压力测试框架。",
+  "tags": [
+    "Agent",
+    "Verification",
+    "Counterfactual",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一优化分数在智能体被激进优化时会偏离其原始测量目标，不能单独作为改进判据",
+      "智能体的自我解释可作为无需人工标签的第二验证信号，通过反事实否定与重跑来检验",
+      "反事实理由验证器在智能体针对其优化时可能失效，其可靠性存在边界条件",
+      "搜索压力和预言机访问是压力测试验证器鲁棒性的关键维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

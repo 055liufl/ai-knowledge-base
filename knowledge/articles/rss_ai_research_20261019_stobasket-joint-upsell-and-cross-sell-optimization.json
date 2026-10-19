@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-028",
+  "title": "StoBasket: Joint Upsell and Cross-Sell Optimization for Contribution Margin",
+  "source_url": "https://arxiv.org/abs/2610.22768",
+  "source_platform": "rss_ai_research",
+  "summary": "StoBasket 提出了一种面向零售场景的联合向上销售（upsell）与交叉销售（cross-sell）优化框架，核心创新在于将推荐目标从传统的相关性排序转向贡献毛利（contribution margin）最大化。论文指出，向上销售通过替换购物篮中已有商品来赚取毛利差额，而交叉销售则赚取新商品的完整毛利，二者在收益结构上存在本质差异，因此需要联合建模。作者将问题形式化为“联合随机购物篮编辑”（joint stochastic basket editing），即由单一策略为现有购物篮同时选择替换报价和添加报价，并以期望增量贡献毛利作为价值评估标准，同时通过展示报价、接受报价等环节将两类决策耦合起来。该工作值得关注的原因在于：它跳出了电商推荐中常见的点击率或转化率优化范式，直接对齐零售商的利润目标；同时将向上销售与交叉销售从独立优化转向联合决策，更贴近真实购物篮的复杂交互。对于推荐系统研究者，这提供了新的建模范式；对于零售与电商从业者，则意味着推荐系统可以直接服务于毛利增长而非仅提升GMV。",
+  "tags": [
+    "推荐系统",
+    "零售优化",
+    "贡献毛利",
+    "联合优化",
+    "电商"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零售推荐应以贡献毛利而非相关性为优化目标，向上销售赚取替换差额、交叉销售赚取完整毛利，二者收益结构不同。",
+      "联合随机购物篮编辑将替换与添加报价统一到一个策略中，通过展示与接受环节耦合两类决策，避免独立优化带来的次优性。",
+      "以期望增量贡献毛利作为价值评估标准，使推荐系统直接对齐零售商利润目标，而非仅关注点击或转化。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

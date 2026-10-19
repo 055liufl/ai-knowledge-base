@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-079",
+  "title": "LocalIntent: Outcome-Specific Structured Generation for Backend-Compatible Smart Building Automation with Local LLMs",
+  "source_url": "https://arxiv.org/abs/2610.23511",
+  "source_platform": "rss_ai_research",
+  "summary": "LocalIntent 是一篇关于利用本地部署大语言模型实现智能建筑自动化的研究论文。该研究针对本地 LLM 在后端处理中面临的核心挑战——正确的结果选择、与本地设备能力的对齐以及有效结构化输出的生成——提出了一种名为 LocalIntent 的\"结果特定\"提示设计方法。与传统的\"先路由再生成\"通用提示策略不同，LocalIntent 通过为每种具体结果定制提示结构，引导紧凑型模型生成更符合后端接口要求的结构化指令。研究的意义在于：一方面，本地部署 LLM 可减少智能建筑场景对远程云服务的依赖，提升隐私性与响应实时性；另一方面，该工作揭示了在资源受限的小型模型上，提示工程的设计粒度对结构化输出质量有显著影响。对于智能家居、楼宇自动化以及边缘端 LLM 应用开发者而言，该研究提供了一种可复用的提示设计范式，有助于在本地算力约束下实现可靠的自然语言到设备控制指令的转换。",
+  "tags": [
+    "LLM",
+    "Prompt Engineering",
+    "Smart Building",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "结果特定提示设计优于通用的先路由再生成策略，能提升紧凑模型的结构化输出正确率",
+      "本地部署 LLM 在智能建筑自动化中可兼顾隐私、实时性与后端兼容性",
+      "小模型在结构化生成任务中高度依赖提示设计的粒度与对齐方式",
+      "后端兼容性是自然语言设备控制落地的关键约束，需在提示层面显式建模"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

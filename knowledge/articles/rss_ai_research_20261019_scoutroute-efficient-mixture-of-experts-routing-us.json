@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-076",
+  "title": "ScoutRoute: Efficient Mixture-of-Experts Routing Using Internal Language Model Signals",
+  "source_url": "https://arxiv.org/abs/2610.23443",
+  "source_platform": "rss_ai_research",
+  "summary": "ScoutRoute 提出了一种针对异构、独立训练的大语言模型（LLM）集合的高效专家路由方法。传统 MoE 路由依赖联合训练的 gating 网络、基于 prompt 的预测器或昂贵的多模型推理，限制了灵活性与效率。ScoutRoute 利用模型内部的语言模型信号（如 token 概率、困惑度等）作为轻量级事后路由依据，无需联合训练即可为每个输入动态选择最合适的专家模型。该方法降低了路由开销，提升了异构模型集合的可用性，对构建可扩展、低成本的模型编排系统具有实用价值。",
+  "tags": [
+    "MoE",
+    "Routing",
+    "LLM",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用模型内部语言信号进行事后路由，避免联合训练 gating 网络的开销",
+      "面向独立训练的异构 LLM 集合，提升路由灵活性与部署效率",
+      "为低成本、可扩展的多模型编排提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-072",
+  "title": "Robust Function Calling for LLM Agents Under Interface Drift",
+  "source_url": "https://arxiv.org/abs/2610.23342",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究工具增强型 LLM Agent 在部署后遇到的接口漂移（interface drift）问题：工具描述、参数 schema 和候选工具列表等接口文本经常变化，但底层工具语义不变，导致函数调用系统可靠性下降。作者提出一种轻量级、无需训练的修复层，用于在接口漂移下恢复函数调用的鲁棒性。该工作值得关注，因为它直击 Agent 落地中的实际痛点——接口变更而非模型能力不足导致的调用失败，且训练-free 方案易于集成到现有系统，对提升生产环境 Agent 稳定性有直接价值。",
+  "tags": [
+    "Function Calling",
+    "LLM Agent",
+    "Robustness",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "接口漂移是工具增强 Agent 部署后的常见失效模式，底层工具语义不变但接口文本变化即可导致调用失败",
+      "提出轻量级、无需训练的修复层来恢复函数调用的鲁棒性，降低了对重新训练或微调的依赖",
+      "该问题对生产环境 Agent 的可靠性有直接影响，修复层具备较强的工程落地价值"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

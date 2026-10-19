@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-070",
+  "title": "From Memory Hits to Answerable Evidence: Query-Conditioned Memory Compilation for Long-Term Agent Memory",
+  "source_url": "https://arxiv.org/abs/2610.23313",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 MemCompile，一个面向长期智能体记忆的查询条件化证据编译框架。现有长期记忆系统通常使用结构化记忆和自适应检索，但往往将检索或扩展得到的记忆单元直接传给阅读器，导致记忆寻址与证据呈现耦合，最终上下文冗余或不完整。MemCompile 的核心思路是将记忆命中转化为可回答的证据：先根据查询条件对分散在多轮对话和跨会话中的记忆进行寻址与筛选，再对证据进行编译整合，使最终呈现给阅读器的上下文既完整又精简。该工作值得关注，因为它针对长期智能体记忆中的关键瓶颈——检索到的记忆片段不等于可直接回答问题的证据——提出了系统性的解决思路，有望提升长程对话智能体的回答准确性与上下文效率，对构建可长期运行的 Agent 记忆系统具有实用价值。",
+  "tags": [
+    "Agent Memory",
+    "Retrieval",
+    "Long-term Memory",
+    "Evidence Compilation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有长期记忆系统将记忆寻址与证据呈现耦合，直接把检索单元交给阅读器，导致上下文冗余或不完整",
+      "MemCompile 以查询为条件对跨轮次、跨会话的记忆进行证据编译，将记忆命中转化为可回答的证据",
+      "该框架强调检索命中不等于可回答证据，需要显式的编译与整合步骤",
+      "对长期运行智能体的记忆系统设计具有参考价值，可提升回答准确性与上下文效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-120",
+  "title": "OrderFlowDiT: Transport-Regularized Diffusion Transformer for Probabilistic Limit-Order Supply Forecasting",
+  "source_url": "https://arxiv.org/abs/2610.22727",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 OrderFlowDiT，一种用于预测未来五分钟限价单供给概率分布的扩散 Transformer 模型。传统坐标级扩散损失无法显式建模价格位移，而归一化场到单位质量会丢失总量信息，因此作者引入传输正则化（transport regularization）来联合捕捉价格放置、总量与预测不确定性。该工作将生成式扩散模型应用于金融订单流预测，属于跨领域创新，对量化交易、市场微观结构建模和高频风险管理具有潜在价值。其核心贡献在于设计了一种能同时处理价格与数量联合分布的条件生成框架，并可能通过传输正则化提升预测校准性。",
+  "tags": [
+    "Diffusion Model",
+    "Transformer",
+    "Quantitative Finance",
+    "Order Flow",
+    "Probabilistic Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "坐标级扩散损失忽略价格位移，归一化场丢失总量信息，需联合建模价格与数量分布",
+      "传输正则化可显式约束生成分布与真实订单流之间的质量传输，提升预测校准",
+      "扩散 Transformer 在金融订单流预测中展现出处理高维条件分布的潜力"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

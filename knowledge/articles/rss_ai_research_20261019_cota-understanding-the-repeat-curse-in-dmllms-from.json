@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-066",
+  "title": "CoTA++: Understanding the Repeat Curse in dMLLMs from an Information Flow Perspective",
+  "source_url": "https://arxiv.org/abs/2610.23290",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究扩散式多模态大语言模型（dMLLMs）中的重复诅咒问题。dMLLMs 采用双向注意力进行迭代去噪解码，无法使用标准自回归 KV 缓存，实际部署依赖跨去噪步骤复用中间状态的近似缓存。这种缓存常导致响应在相邻位置重复同一 token，破坏句子结构，作者称之为 Repeat Curse。论文从信息流视角分析该现象，并提出 CoTA++ 方法缓解此问题。该工作值得关注，因为扩散式多模态大模型是替代自回归范式的重要方向，而缓存复用是提升推理效率的关键手段，理解并解决其副作用对实际部署有直接价值。",
+  "tags": [
+    "dMLLM",
+    "Diffusion",
+    "KV Cache",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散式多模态大模型因双向注意力无法使用标准自回归 KV 缓存，近似缓存复用中间状态会引发相邻 token 重复的 Repeat Curse",
+      "从信息流视角可解释重复诅咒的成因，为设计更可靠的缓存策略提供理论依据",
+      "CoTA++ 针对该失败模式提出改进方案，有助于在保持推理效率的同时提升生成质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

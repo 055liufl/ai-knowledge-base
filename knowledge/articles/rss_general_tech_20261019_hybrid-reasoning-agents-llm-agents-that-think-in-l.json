@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261019-003",
+  "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+  "source_url": "https://arxiv.org/abs/2610.18861",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文提出混合推理智能体（Hybrid Reasoning Agents），探索让 LLM 智能体在潜空间中进行推理、通过文本执行动作的新范式。传统 LLM 智能体通常以自然语言作为推理与行动的统一媒介，导致推理链条冗长、token 开销大且难以进行连续优化；而纯潜空间推理又缺乏可解释性与外部工具交互能力。该工作试图融合两者优势：在内部以连续隐表示完成多步推理与规划，在需要与环境交互时再解码为文本动作。这一思路值得关注，因为它触及当前 Agent 架构的核心矛盾——推理效率与可解释性、可执行性之间的权衡，若方法有效，可能显著降低推理成本并提升复杂任务的规划质量，同时为 Agent 的端到端训练提供新路径。不过摘要信息有限，具体实现细节、基准测试结果与相对基线方法的提升幅度仍需阅读全文验证。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Latent Reasoning",
+    "Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:52Z",
+  "collected_at": "2026-10-19T15:19:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将推理与行动解耦：潜空间负责连续多步推理，文本负责与环境交互，兼顾效率与可执行性",
+      "潜空间推理可减少显式思维链的 token 开销，并支持端到端优化",
+      "该范式试图解决纯文本推理冗长与纯隐式推理不可解释、难交互的两难问题",
+      "实际收益需通过基准实验验证，尤其是复杂规划任务中的表现与成本对比"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

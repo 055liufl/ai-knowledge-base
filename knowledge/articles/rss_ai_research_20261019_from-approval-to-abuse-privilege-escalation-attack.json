@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-042",
+  "title": "From Approval to Abuse: Privilege Escalation Attacks on Harness-Protected Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.22987",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究编码代理（Coding Agents）中执行框架（Execution Harness）的权限边界机制所引入的新安全风险。编码代理通过执行框架拦截沙箱外操作并要求用户批准，为减少审批疲劳，用户可批准代理提出的允许规则（allow-rules），此后匹配该规则的未来操作将自动放行。作者指出这一机制存在被滥用进行权限提升攻击的隐患，即攻击者可能诱导代理提出过于宽泛的允许规则，从而绕过沙箱约束。该研究值得关注，因为它揭示了在提升代理可用性的同时，安全机制本身可能成为攻击面，对构建安全可靠的编码代理系统具有重要警示意义。",
+  "tags": [
+    "Agent Security",
+    "Privilege Escalation",
+    "Prompt Injection",
+    "Coding Agents"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "执行框架的允许规则机制在减少审批疲劳的同时，引入了权限提升攻击面。",
+      "攻击者可通过诱导代理提出宽泛的允许规则，实现沙箱逃逸或越权操作。",
+      "安全设计需在用户体验与权限控制之间取得平衡，避免规则滥用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

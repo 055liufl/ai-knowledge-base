@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261019-008",
+  "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
+  "source_url": "https://crystl.dev/guides/tmux-for-ai-agents/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文探讨了将 tmux 与 Claude Code 等 AI 编码代理结合使用的工作流，重点介绍了会话管理、send-keys 命令以及实际使用中遇到的能力上限。文章指出，tmux 作为终端复用器，可以为 AI 代理提供持久化的会话环境，使代理能够在后台运行、跨会话保持状态，并通过 send-keys 向运行中的进程注入输入，从而实现人机协作式的交互控制。作者还讨论了这种方案在实际使用中暴露出的局限性，即所谓的天花板——包括会话状态同步、输出解析的脆弱性以及代理自主性与人工干预之间的平衡问题。该内容值得关注，因为它反映了当前 AI 编码代理在真实开发环境中的集成实践，揭示了从简单脚本调用到复杂终端交互的演进路径，并为开发者构建更可靠的代理工作流提供了经验参考。",
+  "tags": [
+    "AI Agent",
+    "Claude Code",
+    "tmux",
+    "DevOps"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:52Z",
+  "collected_at": "2026-10-19T15:20:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "tmux 的持久化会话为 AI 编码代理提供了跨会话的状态保持能力，是构建可靠代理工作流的基础设施",
+      "send-keys 机制允许向运行中的进程注入输入，实现人机协作式的代理控制，但输出解析存在脆弱性",
+      "该方案存在明显的天花板，包括会话状态同步困难和代理自主性与人工干预之间的平衡问题",
+      "文章反映了 AI 编码代理从简单脚本调用向复杂终端交互演进的真实工程实践"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261019-106",
+  "title": "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2610.22511",
+  "source_platform": "rss_ai_research",
+  "summary": "AuditKIT 是一个面向大语言模型与智能体系统的统一评测框架，以 arXiv 预印本形式发布。当前 LLM 与 Agent 评测面临的核心痛点是：基准准确率、LLM-as-Judge 评估、运行时性能、工具调用行为和检索质量等维度分散在不同工具与接口中，指标语义与 trace 格式互不兼容，导致跨系统比较困难，且容易掩盖 agentic workflow 中的真实失败。AuditKIT 通过定义统一的结果表示（result representation）将上述多源测量记录在同一结构中，并引入方向感知（direction-aware）的指标语义，使不同来源、不同量纲的指标可以在同一语义下被正确解读与聚合。其定位是评测领域的“统一脊柱”（evaluation spine），即作为底层数据与指标基础设施，支撑基准测试、裁判打分与系统对比三类上层任务。该工作值得关注的原因在于：随着 Agent 系统复杂度上升，单一准确率指标已无法反映工具使用、检索与运行时行为中的失败模式，而评测基础设施的碎片化正是当前复现性与可比性问题的根源之一。AuditKIT 以 source-available 库",
+  "tags": [
+    "Evaluation",
+    "Agent",
+    "LLM",
+    "Benchmark",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 与 Agent 评测的碎片化（接口、指标语义、trace 格式不一致）会系统性掩盖 agentic workflow 中的失败，统一结果表示是解决可比性问题的前提。",
+      "评测不应只依赖基准准确率，需将 judge 评估、运行时性能、工具调用行为与检索质量纳入同一测量体系。",
+      "方向感知的指标语义设计使异构指标能够在统一框架下被正确解读与聚合，避免跨来源比较时的语义错配。",
+      "以 source-available 库形式交付，降低了在现有评测流水线中集成标准化评测脊柱的工程门槛。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

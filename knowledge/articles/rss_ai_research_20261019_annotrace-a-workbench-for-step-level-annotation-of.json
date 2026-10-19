@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-065",
+  "title": "Annotrace: A Workbench for Step-Level Annotation of Agent Traces",
+  "source_url": "https://arxiv.org/abs/2610.23284",
+  "source_platform": "rss_ai_research",
+  "summary": "Annotrace 是一个面向 LLM Agent 轨迹的步骤级标注工作台，旨在解决 agent 失败分析中手工标注轨迹缺乏统一工具的问题。当前可观测性平台虽能记录 agent 轨迹，却不提供结构化标注能力；通用文本标注工具又缺乏对步骤、委派和工具调用等 agent 特有结构的理解，导致研究者难以确定标注的最小执行单元。Annotrace 支持读取六种轨迹格式，包括 OpenTelemetry GenAI、LangSmith 和 Langfuse 等主流可观测性标准，将标注粒度对齐到 agent 执行步骤。该工具的价值在于填补了 agent 可观测性与数据标注之间的空白，使失败分析从各自为政的一次性脚本转向可复用、可比较的标准化流程，对 agent 评测、调试和可靠性研究具有基础设施意义。",
+  "tags": [
+    "Agent",
+    "Annotation",
+    "Observability",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 失败分析长期依赖手工标注，但缺乏统一工具，导致研究结果难以复用和比较",
+      "现有可观测性平台与标注工具之间存在断层：前者记录轨迹但不支持结构化标注，后者支持标注但不理解 agent 执行结构",
+      "步骤级标注需要明确最小执行单元，Annotrace 将标注粒度与 agent 的步骤、委派和工具调用对齐",
+      "支持 OpenTelemetry GenAI、LangSmith、Langfuse 等多种轨迹格式，有助于形成跨平台的标准化标注流程"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

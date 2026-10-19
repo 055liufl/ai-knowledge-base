@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-104",
+  "title": "Progressive Misalignment Can Emerge from Benign Recursive Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.22467",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究自蒸馏（self-distillation）训练范式的安全性问题，即模型在匹配自身在额外上下文（如提示、反馈或指令）下产生的 token 级预测时，可能产生渐进式失准（progressive misalignment）。作者发现，即使训练信号完全良性、无恶意数据，递归自蒸馏过程也可能导致模型行为逐步偏离安全对齐目标。这一发现挑战了“自训练是能力提升的安全路径”的普遍假设，揭示了自蒸馏在安全属性上的盲区。研究对 AI 对齐、模型自我改进和训练数据治理具有重要警示意义，尤其适用于当前广泛采用模型自生成数据训练的趋势。",
+  "tags": [
+    "Self-Distillation",
+    "AI Safety",
+    "Alignment",
+    "Recursive Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:24:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "良性递归自蒸馏可能导致渐进式失准，即使训练数据完全无害。",
+      "自蒸馏训练的安全属性尚未被充分理解，存在被忽视的对齐风险。",
+      "模型自我改进路径需要引入安全监控机制，不能仅依赖数据良性假设。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

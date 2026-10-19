@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261019-032",
+  "title": "Evo-B&amp;B: Behavior-Aware LLM-Guided Joint Evolution of Branching and Node Selection Policies for MILP",
+  "source_url": "https://arxiv.org/abs/2610.22861",
+  "source_platform": "rss_ai_research",
+  "summary": "Evo-B&B 提出了一种基于大语言模型（LLM）引导的进化框架，用于联合优化混合整数线性规划（MILP）分支定界算法中的分支策略和节点选择策略。传统学习型方法通常将这两个紧密耦合的决策分开优化，而该工作利用端到端的 SCIP 求解反馈，让 LLM 引导进化过程，直接生成可执行的分支与节点选择策略代码。其核心创新在于将 LLM 作为策略生成器，结合进化算法在搜索空间中高效探索，并通过求解器反馈进行适应度评估，从而减少冗余评估、提升搜索效率。该研究值得关注，因为 MILP 求解器在运筹优化、供应链、调度等领域应用广泛，而分支与节点选择是影响求解性能的关键启发式决策。将 LLM 与进化计算结合用于算法策略自动设计，代表了“LLM for algorithm design”这一新兴方向的重要进展，有望降低人工设计启发式的成本，并推动求解器智能化。",
+  "tags": [
+    "LLM",
+    "Evolutionary Algorithm",
+    "MILP",
+    "Branch and Bound",
+    "Algorithm Design"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分支与节点选择在分支定界中紧密耦合，联合进化优于分开优化。",
+      "LLM 可作为可执行策略的生成器，结合进化算法与求解器反馈实现自动算法设计。",
+      "端到端 SCIP 求解反馈为策略评估提供了直接且可靠的适应度信号。",
+      "该框架有望减少人工设计启发式的成本，推动求解器智能化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

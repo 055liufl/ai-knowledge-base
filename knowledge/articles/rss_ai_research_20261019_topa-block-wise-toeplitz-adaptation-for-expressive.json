@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-036",
+  "title": "ToPA: Block-wise Toeplitz Adaptation for Expressive and Efficient Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2610.22883",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ToPA（Block-wise Toeplitz Adaptation），一种面向大模型参数高效微调（PEFT）的新方法。现有基于重参数化的 PEFT 方法（如 LoRA 类低秩方法、稀疏结构方法）虽然显著降低训练成本，但常因强制更新矩阵低秩或稀疏而偏离全量微调的高秩特性，导致性能下降。ToPA 通过分块 Toeplitz 结构构造适配增量，在保持参数高效的同时提升更新矩阵的表达能力与秩容量，从而缩小与全量微调的差距。该工作属于 PEFT 结构设计方向的改进，对需要低成本适配大模型的研究者与工程团队具有参考价值，但其实际收益仍需在更多下游任务与模型规模上验证。",
+  "tags": [
+    "PEFT",
+    "Fine-Tuning",
+    "LoRA",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低秩与稀疏重参数化 PEFT 的更新秩受限，与全量微调的高秩特性不匹配，是性能差距的重要来源",
+      "分块 Toeplitz 结构可在参数高效约束下提供更高秩的适配增量，兼顾表达力与效率",
+      "该方法属于 PEFT 结构设计层面的改进，需在多样下游任务与更大模型上进一步验证其通用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

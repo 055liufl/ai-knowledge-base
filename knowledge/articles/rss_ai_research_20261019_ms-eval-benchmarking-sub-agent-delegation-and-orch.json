@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-033",
+  "title": "MS-Eval: Benchmarking Sub-Agent Delegation and Orchestration in MCP-Intensive Working Scenarios",
+  "source_url": "https://arxiv.org/abs/2610.22869",
+  "source_platform": "rss_ai_research",
+  "summary": "MS-Eval 是一篇针对 MCP（Model Context Protocol）密集型工作场景的基准测试论文，聚焦于主代理委派与子代理执行（MAD-SAE）范式。该研究指出，LLM 代理在真实工作环境中需要处理多样化的领域专用工具和复杂的多子任务问题，而顺序调用工具的方式效率低下且会导致严重的上下文膨胀。MAD-SAE 范式通过将子任务委派给专用子代理，在隔离上下文中并行执行，从而缓解上述问题。然而，该范式的委派与编排能力缺乏系统性的评估手段。MS-Eval 旨在填补这一空白，为子代理委派与编排能力提供标准化基准。这项工作值得关注，因为它直面多代理系统落地的核心瓶颈——如何有效评估和优化代理间的任务分解、委派与协调，对推动 LLM 代理在复杂工作流中的实际应用具有重要价值。",
+  "tags": [
+    "Agent",
+    "MCP",
+    "Benchmark",
+    "Multi-Agent",
+    "Orchestration"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "顺序工具调用在复杂多子任务场景下效率低下且导致上下文膨胀，子代理委派与隔离上下文并行执行是有效解决路径",
+      "MAD-SAE 范式的委派与编排能力缺乏系统性评估基准，MS-Eval 填补了这一空白",
+      "MCP 密集型场景对代理的工具使用与任务分解能力提出更高要求，需要专门的基准来驱动优化"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

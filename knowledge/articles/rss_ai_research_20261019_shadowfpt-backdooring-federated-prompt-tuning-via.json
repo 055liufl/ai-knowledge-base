@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-034",
+  "title": "ShadowFPT: Backdooring Federated Prompt Tuning via Shadow Triggers",
+  "source_url": "https://arxiv.org/abs/2610.22871",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ShadowFPT，一种针对联邦提示微调（Federated Prompt Tuning, FPT）的后门攻击方法。FPT 通过冻结大型视觉-语言模型的预训练主干、仅在各客户端间优化轻量级提示参数来实现高效适配，但论文指出这一设计存在被忽视的安全风险：由于主干网络共享且冻结，恶意客户端可以在表征空间中植入后门行为，同时让其上传的提示更新保持接近良性分布，从而规避现有防御。ShadowFPT 借助“影子触发器”（shadow triggers）构造隐蔽后门，在保持参数更新低异常度的前提下实现攻击。该工作揭示了联邦参数高效微调范式中共享冻结主干带来的新型攻击面，对联邦学习与提示微调的安全性研究具有重要警示意义，值得关注联邦 LLM/VLM 适配安全的开发者和研究者阅读。",
+  "tags": [
+    "Federated Learning",
+    "Backdoor Attack",
+    "Prompt Tuning",
+    "AI Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "联邦提示微调中共享且冻结的主干网络构成被忽视的攻击面，恶意客户端可在表征空间植入后门",
+      "ShadowFPT 通过影子触发器使恶意提示更新在参数空间中接近良性分布，从而规避基于更新异常检测的防御",
+      "该研究提示参数高效微调范式下的安全评估需同时关注参数空间与表征空间两个维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-040",
+  "title": "Multiple Turns, Short Horizons: Measuring Effective-Horizon Compression in Jailbreaks",
+  "source_url": "https://arxiv.org/abs/2610.22928",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多轮越狱攻击中的有效历史窗口问题。多轮越狱通过受害者大语言模型的反馈逐步调整查询，但一旦找到有效攻击轨迹，早期查询历史是否仍然必要尚不清楚。作者通过移除早期攻击者查询、在新对话中重新运行剩余查询并重新生成受害者响应来研究此问题，并定义“有效视界”为仍能成功越狱的最短查询序列长度。这项工作首次系统量化了多轮越狱中历史信息的冗余程度，揭示了攻击成功所依赖的最小上下文窗口，对理解LLM安全对齐的脆弱性及设计更鲁棒的防御机制具有重要价值，也为红队测试的效率优化提供了理论依据。",
+  "tags": [
+    "LLM Security",
+    "Jailbreak",
+    "Multi-turn Attack",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多轮越狱攻击存在显著的上下文冗余，早期查询历史对最终成功并非全部必要",
+      "有效视界（最短成功查询序列）可作为量化越狱攻击效率与防御难度的新指标",
+      "该发现有助于精简红队测试流程，并提示防御方应关注攻击轨迹中的关键转折点而非全部历史"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

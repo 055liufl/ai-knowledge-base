@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261019-024",
+  "title": "LEMON: Equivariant Learning over Attention Maps for Zero-Shot Misbehavior Monitoring on New LLMs",
+  "source_url": "https://arxiv.org/abs/2610.22723",
+  "source_platform": "rss_ai_research",
+  "summary": "LEMON 提出了一种面向新 LLM 的零样本不当行为监控方法，核心思路是在注意力图上进行等变学习。现有基于内部表示（如激活探针）的监控器虽然高效，但强绑定于训练时的模型，每当新 LLM 出现都需要重新标注数据，成本高昂；而使用外部 LLM 作为监控器又过于昂贵。LEMON 试图解决这一矛盾：通过利用注意力图的结构特性并引入等变性（equivariance），使监控器能够跨模型泛化，从而在新模型上无需额外标注即可检测不当行为。该工作值得关注，因为它直击 LLM 安全部署中的实际痛点——监控的可迁移性与成本问题，若方法有效，将显著降低高风险场景下模型行为监控的部署门槛，并为跨模型表示对齐与可迁移探针研究提供新视角。",
+  "tags": [
+    "LLM Safety",
+    "Monitoring",
+    "Attention",
+    "Zero-Shot",
+    "Equivariant Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有内部表示监控器（如激活探针）高效但模型绑定性强，新模型出现即需重新标注，LEMON 通过注意力图上的等变学习实现跨模型零样本迁移。",
+      "相比外部 LLM 监控器，LEMON 保持了内部表示监控的低成本优势，同时缓解了可迁移性瓶颈。",
+      "注意力图作为监控信号具有跨模型结构共性，等变性设计是提升泛化能力的关键机制。",
+      "该方法若成立，可显著降低高风险场景下 LLM 行为监控的部署与维护成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

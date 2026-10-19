@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-016",
+  "title": "Repairing LLM-Generated Specifications with Deterministic Diagnosis",
+  "source_url": "https://arxiv.org/abs/2610.22568",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM作为形式化器（formalizer）时生成的形式规范存在语义错误的问题，提出了一种基于确定性诊断的修复方法。LLM将自然语言推理问题转化为形式规范后，符号求解器可基于该规范求解，但许多规范虽可运行却语义错误，如约束、域、目标、谓词或目标函数编码不正确。一旦执行成功，求解器错误反馈便消失，纯LLM方法难以发现此类错误。论文提出确定性诊断技术来识别规范中的语义缺陷，并据此修复。该工作值得关注，因为它提升了LLM生成形式规范的正确性，对神经符号推理、程序合成和形式化验证领域有重要意义，有望增强LLM在需要严格保证的推理任务中的可靠性。",
+  "tags": [
+    "LLM",
+    "Formal Methods",
+    "Neuro-symbolic",
+    "Program Repair"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:21:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM生成的形式规范常可运行但语义错误，执行成功后的求解器反馈无法暴露此类缺陷",
+      "确定性诊断方法能系统识别规范中的语义错误，弥补纯LLM反馈的不足",
+      "该修复框架提升了LLM作为形式化器的可靠性，对神经符号推理有推动作用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

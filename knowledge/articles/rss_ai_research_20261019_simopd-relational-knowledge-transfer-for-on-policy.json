@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-068",
+  "title": "SimOPD: Relational Knowledge Transfer for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.23306",
+  "source_platform": "rss_ai_research",
+  "summary": "SimOPD 是一种面向 on-policy 蒸馏（OPD）的关系型知识迁移方法，旨在解决现有 OPD 中监督信号提取不充分的问题。作者指出，基于 token 概率的监督未能充分利用教师模型的内部知识，而直接匹配隐藏状态又会迫使学生在教师的特征空间中学习，增加跨架构迁移的难度。受对比学习利用实例间关系的启发，SimOPD 通过建模样本之间的关系来传递教师的内部知识，而非直接对齐特征或概率。该方法有望提升蒸馏的监督效率，并改善异构架构间的知识迁移效果。该工作值得关注，因为它为知识蒸馏提供了一种新的监督范式，可能对模型压缩、跨架构迁移和小模型能力提升产生实际影响。",
+  "tags": [
+    "Knowledge Distillation",
+    "On-Policy Distillation",
+    "Contrastive Learning",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于 token 概率的监督未能充分利用教师内部知识，直接隐藏状态匹配则引入特征空间偏移和跨架构迁移难题。",
+      "SimOPD 借鉴对比学习思想，通过实例间关系而非直接特征对齐来传递教师知识。",
+      "关系型知识迁移有望提升 on-policy 蒸馏的监督效率，并改善异构架构间的迁移效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

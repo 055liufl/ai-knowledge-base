@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261019-095",
+  "title": "Eliciting Specifications: When Does Interactive Clarification Help?",
+  "source_url": "https://arxiv.org/abs/2610.22382",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究交互式澄清机制能否提升LLM生成Lean形式化规范的质量。作者提出一个elicitation agent（EA），在形式化之前主动向一个以参考实现为基准的模拟开发者寻求澄清，以解决任务描述中欠明确、有歧义或遗漏验证器相关边界情况的问题。EA通过分解任务、识别未解决的决策点来驱动澄清对话。这项工作值得关注，因为它把'需求澄清'这一软件工程中的经典实践引入LLM形式化验证流程，针对的是LLM生成形式规范时最关键的失败来源——输入描述本身不完整，而非模型能力不足。若有效，该机制可推广到代码生成、规格说明、测试用例生成等需要精确语义的任务，为'LLM主动提问'类研究提供可量化的验证框架。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Lean",
+    "Clarification",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:24:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM生成形式规范的主要瓶颈在于任务描述欠明确，而非模型形式化能力本身",
+      "引入参考实现作为基准的模拟开发者，可提供可验证的澄清信号，使交互式elicitation可被量化评估",
+      "任务分解与未解决决策点识别是驱动有效澄清对话的关键机制",
+      "该范式可推广至代码生成、测试生成等需要精确语义对齐的任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

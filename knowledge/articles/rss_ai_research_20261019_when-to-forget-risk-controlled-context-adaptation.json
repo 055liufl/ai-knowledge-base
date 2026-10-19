@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-037",
+  "title": "When to Forget: Risk-Controlled Context Adaptation for Long-Horizon Agents",
+  "source_url": "https://arxiv.org/abs/2610.22897",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究长时程智能体（Long-Horizon Agents）中的上下文管理问题：失败记录的价值会随执行进展而变化，因此需要动态决定保留、压缩还是删除历史块。作者提出 RECAP 框架，结合匹配上下文干预、执行关系预测和独立策略认证，通过匹配环境状态与 rollout 种子来测量成功率变化，从而在风险受控的前提下自适应地遗忘历史信息。该工作值得关注，因为它将“记忆管理”从静态策略转变为基于执行反馈的动态决策问题，并引入策略认证机制控制风险，对提升长时程智能体的效率与稳定性具有实际意义，也为上下文工程提供了可量化的方法论。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "Long-Horizon",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "失败记录的价值随执行进展动态变化，同一历史块在不同阶段应被保留、压缩或删除",
+      "通过匹配环境状态与 rollout 种子进行上下文干预，可因果性地测量历史块对后续执行的影响",
+      "引入独立策略认证机制，在自适应遗忘历史时控制风险",
+      "将上下文管理从静态规则转变为基于执行反馈的动态决策问题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

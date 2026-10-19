@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-061",
+  "title": "Not All Test-Time Compute Is Evidence: Model-Specific Bias in LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.23213",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文挑战了测试时扩展（test-time scaling）方法的一个核心隐含假设：来自同一模型的额外计算能提供独立证据。作者通过实验证明，在单个推理模型内部，错误在重复采样、推理深度以及模型自我评估中均存在相关性，因此增加同一模型的计算量并不等同于增加证据。为此，他们提出 DIA（Disagreement-triggered Independent Arbitration）方法，在检测到分歧时引入独立仲裁机制。该工作值得关注，因为它揭示了当前 LLM 推理增强策略（如 self-consistency、best-of-N、自我反思）的系统性偏差，对推理可靠性和测试时计算的有效性提出了重要质疑，并给出了可操作的改进方向。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Test-time Scaling",
+    "Self-Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同一模型重复采样产生的错误高度相关，不能视为独立证据，削弱了 self-consistency 和 best-of-N 的理论基础。",
+      "推理深度增加和模型自我评估同样存在模型特定偏差，更多计算不等于更高可靠性。",
+      "DIA 通过分歧触发独立仲裁，为缓解模型特定偏差提供了新思路。",
+      "测试时扩展方法需要重新审视其独立性假设，未来应引入异构模型或外部验证信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-049",
+  "title": "Where Does the Performance Go? Understanding and Recovering Performance Regressions in C-to-Rust Translation",
+  "source_url": "https://arxiv.org/abs/2610.23044",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究 C 到 Rust 转译器（如 c2rust）在保持程序行为的同时是否保持性能。作者选取 20 个真实 C 项目及其 Rust 翻译版本，在 8 个用于分析的项目中，19 个操作里有 12 个的 Rust 版本比原 C 慢超过 3%，最高慢 62%。该工作系统性地量化了转译带来的性能回归，并尝试定位原因与恢复性能，对依赖自动迁移的工程实践具有直接警示和指导价值。",
+  "tags": [
+    "Rust",
+    "C",
+    "Transpiler",
+    "Performance",
+    "Migration"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "行为保持不等于性能保持：C-to-Rust 转译在多数操作上引入可测量的性能损失。",
+      "性能回归幅度显著，最高可达 62%，需在迁移后专门进行性能分析与优化。",
+      "研究覆盖 20 个真实项目，为转译工具的性能缺陷提供了实证基础。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

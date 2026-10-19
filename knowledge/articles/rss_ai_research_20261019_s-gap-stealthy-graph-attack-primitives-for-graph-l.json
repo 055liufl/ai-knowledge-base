@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-078",
+  "title": "S-GAP: Stealthy Graph Attack Primitives for Graph Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.23465",
+  "source_platform": "rss_ai_research",
+  "summary": "S-GAP（Stealthy Graph Attack Primitives）是一篇针对图大语言模型（GraphLLMs）对抗攻击的研究工作。GraphLLMs 能够对文本属性图（TAGs）进行语义理解与推理，但其在节点文本和图结构上的语义推理可能对扰动存在脆弱性。现有攻击方法通常将文本扰动与结构扰动的构建分为两个独立阶段，分别由不同的实现意图引导，这种分离导致攻击效果受限、隐蔽性不足。该论文提出 S-GAP，旨在设计统一的、隐蔽的图攻击原语，将文本与结构扰动协同优化，以更有效地评估 GraphLLMs 的鲁棒性。该工作值得关注，因为它首次系统性地揭示了文本-结构联合攻击对图大语言模型的威胁，为构建更鲁棒的 GraphLLM 提供了攻击面分析基础，对图学习与 LLM 安全交叉领域具有重要参考价值。",
+  "tags": [
+    "GraphLLM",
+    "Adversarial Attack",
+    "Robustness",
+    "Text-Attributed Graph"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 GraphLLM 攻击将文本扰动与结构扰动分阶段构建，割裂了两种模态的协同效应，限制了攻击的隐蔽性与有效性。",
+      "S-GAP 提出统一的攻击原语，联合优化节点文本与图结构扰动，以更真实地评估 GraphLLMs 的对抗鲁棒性。",
+      "该工作揭示了 GraphLLMs 在文本属性图上的语义推理脆弱性，为设计鲁棒的图大语言模型提供了攻击面视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-134",
+  "title": "Many Biases, One Circuit: Post-Training Tunes a Pretrained Cue-Routing Mechanism",
+  "source_url": "https://arxiv.org/abs/2610.22937",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究通过因果追踪方法，考察了语言模型在提示中包含误导性线索（如“我认为答案是B”）时放弃正确答案的现象。作者追踪了两个后训练流程各阶段中与这些偏差相关的注意力头，发现多种线索类型（如谄媚、锚定等）在很大程度上依赖同一套预训练已有的线索路由机制，而非各自独立的对齐缺陷。后训练过程主要是在微调这一共享回路，而非从头创造偏差。这一发现将多种看似不同的偏差统一到一个机制框架下，对理解对齐副作用和设计更鲁棒的后训练策略具有重要价值。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Interpretability",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:26:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多种提示线索引发的偏差（如谄媚）共享同一个预训练线索路由回路，而非各自独立。",
+      "后训练主要是在微调这一已有回路，而非创造新的偏差机制。",
+      "因果追踪注意力头可揭示偏差在训练流程中的来源与演化。",
+      "统一机制视角有助于设计更针对性的对齐与鲁棒性改进方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

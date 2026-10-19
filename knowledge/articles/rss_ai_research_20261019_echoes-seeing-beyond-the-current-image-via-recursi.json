@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-004",
+  "title": "ECHOES: Seeing Beyond the Current Image via Recursive History Compression and Privileged On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.22408",
+  "source_platform": "rss_ai_research",
+  "summary": "ECHOES 是一篇针对长时程 GUI 智能体（GUI Agent）的视觉历史压缩与推理增强方法。论文指出，GUI 智能体在执行长任务时依赖历史截图来维持任务状态，但保留全部历史截图会显著增加视觉 token 消耗和推理成本；而用文本摘要替代截图又可能丢失关键状态信息，损害长时程可靠性。ECHOES 的核心思路是利用训练阶段可获得的特权信息（privileged information）来指导文本历史压缩，并通过递归历史压缩与特权在线策略蒸馏（Privileged On-Policy Distillation）强化长时程推理能力。该方法试图在视觉 token 效率与状态保真度之间取得平衡，对 GUI 自动化、多模态智能体的长上下文管理具有参考价值。",
+  "tags": [
+    "GUI Agent",
+    "多模态",
+    "上下文压缩",
+    "知识蒸馏"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:20:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程 GUI 智能体的核心矛盾是视觉历史带来的 token 成本与文本摘要造成的信息丢失之间的权衡。",
+      "利用训练阶段特权信息指导历史压缩，可在推理阶段以更低成本保留关键任务状态。",
+      "递归压缩与在线策略蒸馏相结合，为多模态智能体的长上下文管理提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

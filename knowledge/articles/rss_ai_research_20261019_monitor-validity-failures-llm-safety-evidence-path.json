@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-074",
+  "title": "Monitor-Validity Failures: LLM Safety Evidence Paths at Evolving Framework Boundaries",
+  "source_url": "https://arxiv.org/abs/2610.23362",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出「监控有效性失败」这一新问题：现代 LLM 应用依赖运行时监控器检查工具调用、追踪、流、检测器输出和验证器输入，但框架路径可能在运行正常的情况下，使与策略相关的证据无法到达决策点。作者给出一个代表性案例：正则检测器返回了阳性匹配，但框架在阻断决策前将结果搁置。这与越狱攻击不同，属于接口可靠性问题，而非模型本身被绕过。该研究值得关注，因为它揭示了 LLM 安全防护中一个被忽视的失效模式——监控器本身工作正常，但证据在框架内部丢失，导致安全策略形同虚设。对于构建生产级 LLM 应用的团队而言，这意味着仅关注检测器准确率不够，还需审计证据在框架中的传递路径。论文为安全评估提供了新视角，可能推动框架层面的安全设计改进。",
+  "tags": [
+    "LLM Safety",
+    "Runtime Monitoring",
+    "Agent Framework",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 安全存在「监控有效性失败」：框架运行正常但策略证据未到达决策点，与越狱攻击本质不同",
+      "检测器返回阳性结果不代表安全策略生效，证据可能在框架内部被搁置或丢失",
+      "安全评估需从检测器准确率扩展到证据在框架中的端到端传递路径审计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

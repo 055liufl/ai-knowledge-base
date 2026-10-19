@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-119",
+  "title": "ARBOR: Locating Reasoning Failures in Long Chains of Thought through Reasoning State Tracking",
+  "source_url": "https://arxiv.org/abs/2610.22717",
+  "source_platform": "rss_ai_research",
+  "summary": "ARBOR 提出了一种通过推理状态跟踪来定位长思维链中推理失败的方法。现有方法依赖局部信号（如与邻近步骤的文本相似度、切换 token 或 LLM 对单步正确性的判断）来检测过度思考、思考不足和无依据推理等失败模式，但忽略了每一步对最终解的贡献取决于前序步骤所建立的状态。ARBOR 通过显式跟踪推理状态，从全局视角识别推理链条中的失败位置，有望提升大型推理模型的可解释性与可靠性。该工作值得关注，因为它针对长链推理这一当前 LLM 推理能力的核心场景，提出了超越局部启发式的新思路，对推理过程诊断与改进具有实用价值。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Chain-of-Thought",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:25:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长思维链中的失败模式（过度思考、思考不足、无依据推理）难以通过局部信号可靠检测",
+      "单步贡献取决于前序步骤建立的推理状态，需全局状态跟踪而非局部判断",
+      "ARBOR 通过推理状态跟踪定位失败步骤，为推理过程诊断提供新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

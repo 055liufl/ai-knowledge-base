@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-006",
+  "title": "PRIME: Towards Verifiable Evidence-Grounded Reasoning in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.22426",
+  "source_platform": "rss_ai_research",
+  "summary": "PRIME 是一篇针对 LLM Agent 在合规审查场景中推理可靠性问题的研究。论文聚焦于组织规则核查任务，例如判断漏洞报告是否满足进入调查阶段的条件。这类规则通常允许多条满足路径，比如严重性评级既可由策展人审核的公告满足，也可由已发布的公告链接满足。作者指出当前 Agent 的两类典型失败模式：一是在某项必要检查已失败后仍错误接受报告，二是在存在其他可行路径时过早接受较弱结论而不再尝试。PRIME 旨在推动 Agent 实现可验证、有证据支撑的推理，使结论能够追溯到具体证据与规则分支。该工作值得关注，因为它将 Agent 可靠性问题从开放域问答推进到规则约束下的多路径证据推理，对安全运营、合规审计等高风险自动化场景具有直接意义。",
+  "tags": [
+    "LLM Agent",
+    "Reasoning",
+    "Verification",
+    "Compliance"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:20:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 在规则核查中的核心失败不是知识不足，而是过早接受弱结论、未穷尽可行的替代满足路径",
+      "组织规则常具析取结构，Agent 需要显式建模多条满足路径并逐条验证，而非线性检查",
+      "可验证的证据支撑要求结论可回溯到具体证据与规则分支，这是高风险自动化审查的前提"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

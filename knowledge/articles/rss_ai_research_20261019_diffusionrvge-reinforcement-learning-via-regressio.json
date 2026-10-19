@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-041",
+  "title": "DiffusionRVGE: Reinforcement Learning via Regression-Based Value Gradient Estimation",
+  "source_url": "https://arxiv.org/abs/2610.22973",
+  "source_platform": "rss_ai_research",
+  "summary": "DiffusionRVGE 提出了一种基于回归的值梯度估计方法，用于高效地通过强化学习微调扩散模型。传统方法依赖奖励对生成图像的梯度或通过采样轨迹的反向传播，计算成本高昂。该方法将中心化奖励回归到中心化最终去噪图像上，直接构造有用的更新方向，无需奖励导数或伴随反向传播。论文给出了统一的第一变分公式，表明该方法在保持强化学习效果的同时显著降低训练开销。该工作值得关注，因为它为扩散模型的强化学习微调提供了一种更轻量、可扩展的替代方案，有望推动生成模型对齐与偏好优化在实际应用中的落地。",
+  "tags": [
+    "Diffusion Models",
+    "Reinforcement Learning",
+    "Value Gradient Estimation",
+    "Generative AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将中心化奖励回归到中心化最终去噪图像上，可直接构造更新方向，避免奖励求导和轨迹反向传播。",
+      "统一的第一变分公式为基于回归的梯度估计提供了理论框架。",
+      "该方法显著降低了扩散模型强化学习微调的计算成本，提升了训练效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

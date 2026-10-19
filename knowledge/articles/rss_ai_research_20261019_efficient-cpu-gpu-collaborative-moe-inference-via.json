@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-044",
+  "title": "Efficient CPU-GPU collaborative MoE inference via Adaptive Expert Assignment",
+  "source_url": "https://arxiv.org/abs/2610.23006",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向内存受限场景的 MoE 模型 CPU-GPU 协同推理方法，核心是自适应专家分配（Adaptive Expert Assignment）。MoE 通过稀疏激活专家降低计算量，但专家参数总量常超出 GPU 显存，需要将部分专家卸载到 CPU。现有方案在 GPU 未命中专家时，要么通过 PCIe 把专家搬到 GPU（传输延迟高），要么直接在 CPU 上计算（CPU 算力成为瓶颈）。本文针对这一权衡，设计自适应策略在传输与 CPU 执行之间动态选择，以缓解 PCIe 带宽和 CPU 算力双重约束下的推理瓶颈。该工作值得关注，因为 MoE 大模型部署中显存墙是普遍痛点，CPU-GPU 协同卸载是低成本扩展推理容量的关键路径，而如何在传输延迟与计算延迟之间做细粒度调度，直接决定端到端吞吐与延迟表现。",
+  "tags": [
+    "MoE",
+    "推理优化",
+    "CPU-GPU协同",
+    "专家卸载"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 专家参数超出 GPU 显存是内存受限推理的核心瓶颈，专家卸载不可避免",
+      "现有方案在 PCIe 传输与 CPU 执行之间存在固定策略导致的次优权衡",
+      "自适应专家分配可根据运行时状态动态选择传输或 CPU 计算，缓解双重瓶颈",
+      "该方向对低成本部署大 MoE 模型、提升端到端吞吐具有实际工程价值"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

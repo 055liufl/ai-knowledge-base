@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-052",
+  "title": "Rethinking GRPO for Large Reasoning Model Safety Alignment",
+  "source_url": "https://arxiv.org/abs/2610.23085",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文重新审视了用于大型推理模型（LRM）安全对齐的 GRPO 方法。作者指出，GRPO 虽然被广泛用于安全对齐，但其组相对优化机制可能提供不足的安全导向学习信号，并识别出两种失败模式：优势坍缩（advantage collapse），即同质化的 rollout 组导致优势值消失；以及不安全多样化（unsafe diversification），即模型在探索过程中产生不安全输出。该研究对当前主流的安全对齐范式提出了重要质疑，揭示了 GRPO 在安全场景下的结构性缺陷，对推理模型的安全部署具有直接指导意义，值得关注安全对齐与强化学习方向的研究者和工程师阅读。",
+  "tags": [
+    "GRPO",
+    "Safety Alignment",
+    "Large Reasoning Models",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:22:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO 的组相对优化在安全对齐中可能提供不足的安全导向学习信号",
+      "识别出优势坍缩失败模式：同质化 rollout 组导致优势值消失",
+      "识别出不安全多样化失败模式：探索过程可能产生不安全输出",
+      "对主流安全对齐范式提出结构性质疑，需重新设计奖励或分组机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

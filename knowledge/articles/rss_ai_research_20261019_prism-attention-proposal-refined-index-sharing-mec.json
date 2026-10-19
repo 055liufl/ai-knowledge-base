@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-137",
+  "title": "Prism Attention: Proposal-Refined Index Sharing Mechanism for Efficient LLMs Inference",
+  "source_url": "https://arxiv.org/abs/2610.22985",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Prism Attention，一种面向长上下文 LLM 推理的高效注意力机制。长上下文自回归解码的主要瓶颈在于 KV cache 随序列增长带来的内存与计算开销。Token 级稀疏注意力虽能通过只关注少量相关历史 token 降低负担，但随上下文增长需逐层反复重算稀疏索引，抵消了实际收益。Prism Attention 的核心是 Proposal-Refined Index Sharing 机制：先以低成本方式生成候选稀疏索引（proposal），再对其进行精炼，并在层间共享索引，从而避免每层重复计算。该工作针对长上下文推理中稀疏注意力索引开销这一被忽视的工程瓶颈，若能在保持精度的同时显著降低索引重算成本，将对长上下文 LLM 的部署效率产生直接价值，值得关注推理优化与稀疏注意力方向的研究者和工程师阅读。",
+  "tags": [
+    "Sparse Attention",
+    "KV Cache",
+    "LLM Inference",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:26:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文解码的瓶颈不仅是 KV cache 的存储与注意力计算，还包括逐层重复计算稀疏索引的隐性开销",
+      "通过 proposal-refined 方式生成并跨层共享稀疏索引，可减少索引重算，提升 token 级稀疏注意力的实际加速比",
+      "该机制在保持稀疏注意力精度的前提下优化工程效率，对长上下文 LLM 推理部署具有直接意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

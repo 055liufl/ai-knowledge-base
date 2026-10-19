@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261019-100",
+  "title": "TRACE: Transformer Residual Activation Codebook Encoding for Communication-efficient Distributed Edge Inference",
+  "source_url": "https://arxiv.org/abs/2610.22435",
+  "source_platform": "rss_ai_research",
+  "summary": "TRACE（Transformer Residual Activation Codebook Encoding）是一篇针对分布式边缘推理通信瓶颈的研究工作。论文指出，在边缘设备上以序列并行方式拆分 Transformer 推理时，设备间交换激活值的通信开销主导了推理延迟，成为根本性瓶颈。现有压缩方案虽能降低传输量，却存在结构性缺陷：接收端仍需对收到的数据执行 key/value 投影才能进行注意力计算，导致计算被串行阻塞在通信之后。TRACE 提出用残差激活码本编码的方式重构这一流程，目标是在压缩激活传输的同时消除通信与计算之间的串行依赖，从而提升分布式边缘推理的整体效率。该工作值得关注的原因在于：边缘侧部署大模型正成为重要趋势，而通信受限是制约多设备协同推理的核心障碍；TRACE 从编码层面切入，试图同时解决带宽与流水线串行两个问题，对分布式推理系统设计具有参考价值。",
+  "tags": [
+    "分布式推理",
+    "边缘计算",
+    "模型压缩",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:24:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分布式 Transformer 边缘推理的根本瓶颈是设备间激活值交换的通信开销，而非单机算力",
+      "现有激活压缩方案仍要求接收端先做 key/value 投影，造成计算串行阻塞在通信之后",
+      "TRACE 通过残差激活码本编码重构传输与计算流程，试图同时缓解带宽压力和流水线串行问题",
+      "该方向对多设备协同部署大模型、降低边缘推理延迟具有系统级意义"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

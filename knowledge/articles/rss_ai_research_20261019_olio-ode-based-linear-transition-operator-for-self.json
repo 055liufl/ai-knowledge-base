@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261019-073",
+  "title": "OliO: ODE-based Linear Transition Operator for Self-Supervised Time Series Forecasting",
+  "source_url": "https://arxiv.org/abs/2610.23345",
+  "source_platform": "rss_ai_research",
+  "summary": "OliO 是一种基于常微分方程（ODE）的自监督时间序列预测方法，旨在解决现有对比学习和掩码方法在建模时间流方面的不足。现有方法通常将时间滞后视为噪声，或通过掩码破坏时间动态，从而难以捕捉对预测至关重要的时序演化规律。OliO 提出用 ODE 建模时间序列的连续演化，并学习一个线性转移算子来刻画潜在状态随时间的流动。该方法通过自监督方式从无标签数据中学习鲁棒的表示，同时显式建模时间动态，避免了对比学习中负样本构造的偏差和掩码方法对时序结构的破坏。该工作将连续时间建模与自监督学习结合，为时间序列预测提供了一种新的表示学习范式，有望提升在数据稀缺或噪声较大场景下的预测性能。其创新点在于用 ODE 驱动的线性转移算子替代离散的对比或掩码目标，更自然地保留时间连续性，对时间序列分析领域具有参考价值。",
+  "tags": [
+    "时间序列",
+    "自监督学习",
+    "ODE",
+    "表示学习"
+  ],
+  "author": null,
+  "published_at": "2026-10-19T15:18:55Z",
+  "collected_at": "2026-10-19T15:23:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有对比学习和掩码方法难以显式建模时间流，OliO 用 ODE 建模连续时间动态来弥补这一缺陷。",
+      "线性转移算子能够刻画潜在状态随时间的演化，避免掩码对时序结构的破坏。",
+      "自监督学习结合 ODE 为无标签时间序列提供了一种更自然的表示学习范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
