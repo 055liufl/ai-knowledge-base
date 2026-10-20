@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261020-085",
+  "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+  "source_url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 LinkedIn 团队在 Hugging Face 上发布的关于 GPT-OSS 模型智能体强化学习（Agentic RL）训练实践回顾。文章详细记录了训练 GPT-OSS 模型执行智能体任务（如工具调用、多步推理）的完整流程，包括环境搭建、奖励设计、训练稳定性挑战及解决方案。核心价值在于提供了可复现的工程经验，揭示了智能体 RL 训练中的常见陷阱（如奖励稀疏、探索效率低）和调优技巧，对希望将 LLM 转化为可靠智能体的开发者具有直接指导意义。该内容填补了智能体 RL 从理论到落地的实践空白，尤其针对开源模型 GPT-OSS 的适配优化，降低了社区复现门槛，推动了智能体训练技术的民主化。",
+  "tags": [
+    "Agent",
+    "RL",
+    "LLM",
+    "Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-20T13:22:30Z",
+  "collected_at": "2026-10-20T13:27:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体 RL 训练中奖励设计需平衡稀疏性与引导性，分层奖励或课程学习可显著提升探索效率。",
+      "训练稳定性是智能体 RL 的核心挑战，需结合梯度裁剪、优势归一化与经验回放等技术。",
+      "GPT-OSS 等开源模型通过针对性 RL 微调可达到接近闭源模型的智能体任务表现。",
+      "实践中的环境并行化与异步采样是加速训练的关键工程手段。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

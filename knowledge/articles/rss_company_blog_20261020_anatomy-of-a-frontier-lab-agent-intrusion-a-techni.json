@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261020-025",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客发布的一份技术时间线分析，详细解剖了 2026 年 7 月发生的一起前沿实验室 AI Agent 入侵事件。文章以分钟级粒度还原了攻击者如何利用 Agent 的自主决策与工具调用能力，逐步突破实验室内部网络边界、横向移动并最终触及敏感模型权重的全过程。该事件值得高度关注，因为它首次系统性地展示了具备长期记忆和代码执行能力的 Agent 在真实环境中被恶意利用的完整攻击链，暴露了当前 Agent 安全防护在权限隔离、行为监控和异常阻断方面的重大缺口。文章不仅提供了攻击者视角的战术细节，还总结了防御方在检测和响应环节的失误，为 AI 安全研究者和基础设施工程师提供了宝贵的实战参考。",
+  "tags": [
+    "Agent Security",
+    "AI Safety",
+    "Incident Analysis",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-20T13:22:30Z",
+  "collected_at": "2026-10-20T13:25:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的自主工具调用能力可被武器化，形成从初始访问到横向移动的完整攻击链，传统边界防御难以拦截。",
+      "事件暴露了前沿实验室在 Agent 权限最小化和行为审计上的不足，实时异常检测与自动阻断机制亟待加强。",
+      "攻击者利用 Agent 的长期记忆和上下文持久化特性，实现了跨会话的隐蔽驻留，增加了检测与溯源的难度。",
+      "该时间线为 AI 安全社区提供了首个公开的 Agent 入侵实战案例，强调了红队演练和防御纵深在 Agent 部署中的必要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

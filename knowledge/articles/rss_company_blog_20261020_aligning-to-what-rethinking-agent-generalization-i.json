@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261020-101",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队在 Hugging Face 博客上发布的技术文章，围绕其 MiniMax M2 模型，重新审视智能体（Agent）泛化能力的对齐问题。文章标题「Aligning to What?」直指当前 Agent 训练中的核心矛盾：模型究竟应该对齐到什么样的目标——是特定任务的成功率、人类偏好，还是可迁移的通用能力。作者指出，过度针对单一基准或环境做对齐，容易导致 Agent 在分布外场景下泛化失败，形成「对齐越精细、泛化越脆弱」的困境。文章结合 MiniMax M2 的实践，讨论了训练数据分布、奖励信号设计与评测方式对泛化性的影响，并可能提出在多样环境中保持能力迁移的思路。该内容值得关注的原因在于：Agent 泛化是当前 LLM 应用落地的关键瓶颈，而「对齐目标的选择」直接决定了模型能否从实验室基准走向真实复杂任务；MiniMax 作为国内头部模型团队，其工程经验对开发者设计 Agent 训练与评测流程具有参考价值。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-20T13:22:30Z",
+  "collected_at": "2026-10-20T13:28:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 对齐的核心问题不是「如何对齐」，而是「对齐到什么目标」，目标选择直接决定泛化边界",
+      "过度针对单一基准或环境优化会导致分布外泛化能力下降，需在训练数据与奖励设计上保持多样性",
+      "评测方式本身会塑造模型行为，应避免用窄口径指标衡量 Agent 的通用能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
