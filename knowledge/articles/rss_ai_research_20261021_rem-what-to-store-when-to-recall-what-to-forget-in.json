@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-038",
+  "title": "REM: What to Store, When to Recall, What to Forget in Experience Memory for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.27377",
+  "source_platform": "rss_ai_research",
+  "summary": "REM 是一篇针对编码智能体经验记忆管理的 arXiv 论文，聚焦于长周期仓库级编码任务中 LLM 智能体产生的经验难以复用的问题。现有记忆系统主要关注检索，即从历史轨迹中找出最相关的片段，但检索机制无法感知运行中智能体的实时状态，因此无法判断智能体何时需要经验、需要哪段经验以及经验应保留多久。REM 提出从三个维度重新设计经验记忆：存什么（What to Store）、何时召回（When to Recall）、何时遗忘（What to Forget），将记忆管理从被动的相似度检索转变为主动的、与智能体执行状态耦合的生命周期管理。该工作值得关注，因为长周期编码智能体的效率瓶颈正从单步推理能力转向跨任务经验积累与复用，而现有 RAG 式记忆方案在动态决策场景下存在根本性局限。REM 的问题建模方式为构建具备持续学习能力的编码智能体提供了新思路，对智能体记忆架构、上下文工程和仓库级代码生成方向均有参考价值。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Coding Agent",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:33:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体记忆系统以检索为中心，无法感知运行中智能体的状态，因而无法决定何时需要经验以及经验保留时长",
+      "经验记忆应围绕存储、召回、遗忘三个生命周期环节进行主动管理，而非被动相似度匹配",
+      "长周期仓库级编码任务中，跨运行的经验复用是提升智能体效率的关键缺口",
+      "记忆管理需与智能体执行过程耦合，从静态知识库转向动态、状态感知的记忆机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

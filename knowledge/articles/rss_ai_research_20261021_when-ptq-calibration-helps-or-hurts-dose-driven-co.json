@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261021-040",
+  "title": "When PTQ Calibration Helps or Hurts: Dose-Driven Collapse and Validation-Gated Abstention in Quantized Text Embedders",
+  "source_url": "https://arxiv.org/abs/2610.27397",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究文本嵌入模型在训练后量化（PTQ）校准中的关键问题：校准应该进行到什么程度，以及是否应该进行校准。作者在三种嵌入模型（e5-base-v2、BGE-M3、EmbeddingGemma-300m）上进行4比特权重量化，共161次校准实验，发现固定校准流程的结果可能从性能提升变为性能下降，甚至出现“剂量驱动的崩溃”（dose-driven collapse）现象——即校准数据量或校准强度超过某一阈值后，检索性能反而急剧恶化。论文进一步提出“验证门控弃权”（validation-gated abstention）机制，在部署前通过验证集判断校准是否值得执行，从而避免有害校准。该工作揭示了PTQ校准并非总是有益，为量化嵌入模型的可靠部署提供了实用指导，对检索增强生成（RAG）和向量数据库等应用具有直接价值。",
+  "tags": [
+    "量化",
+    "文本嵌入",
+    "PTQ",
+    "RAG",
+    "模型压缩"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:33:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTQ校准对文本嵌入模型并非总是有益，校准强度存在剂量效应，超过阈值会导致检索性能崩溃。",
+      "固定校准流程在不同嵌入模型和配置下结果差异显著，从性能提升到严重下降均可能出现。",
+      "验证门控弃权机制可在部署前判断是否执行校准，有效避免有害校准带来的性能损失。",
+      "该研究为量化嵌入模型在RAG和向量检索场景中的可靠部署提供了实证依据和实用策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

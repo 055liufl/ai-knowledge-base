@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-110",
+  "title": "FALCA: Falsification-Aware Reinforcement Learning with Hierarchical Credit Assignment for Long-Horizon Deep Search Agents",
+  "source_url": "https://arxiv.org/abs/2610.28361",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 FALCA，一种面向长程深度搜索智能体的强化学习框架，核心解决早期错误在搜索轨迹中被逐步放大的问题。深度搜索任务要求 LLM 智能体反复分解复杂信息需求、从外部来源收集证据，并在多重约束下维护可靠的研究状态。现有智能体容易锚定错误候选、只收集部分支持性证据、忽视矛盾信息，导致误差累积并误导后续推理。FALCA 引入伪造感知（falsification-aware）机制与分层信用分配（hierarchical credit assignment），前者鼓励智能体主动检验并否定错误假设，而非仅寻找支持证据；后者将最终结果的信度分层回传到轨迹中的各个决策步骤，缓解长程稀疏奖励下的信用分配难题。该工作值得关注，因为它针对深度搜索智能体的关键失效模式提出系统性训练方案，对提升检索增强推理的鲁棒性具有参考价值。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Deep Search",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:36:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长程搜索中的核心风险是早期错误沿轨迹被放大，智能体易锚定错误候选并忽视矛盾证据",
+      "伪造感知机制鼓励主动否定错误假设，而非仅收集支持性证据，以抑制确认偏误",
+      "分层信用分配将最终结果信号回传到中间决策步骤，缓解长程稀疏奖励下的训练难题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-080",
+  "title": "RITE: Evaluating End-to-End Resilience to Silent Tool Errors in E-Commerce Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2610.27777",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RITE 基准，用于评估电商场景下工具调用型 LLM Agent 对\"静默工具错误\"（silent tool errors）的端到端鲁棒性。静默错误指工具返回看似合理但实际错误的数值，却不给出显式失败信号——这类错误在 Agent 开发与部署之间因数据分布漂移而频繁出现，并会沿多步推理链传播，最终污染答案。RITE 将这一过程形式化为端到端评估框架，覆盖错误注入、传播追踪与最终答案正确性度量。其价值在于：现有 Agent 评测多关注工具调用成功率或单步准确率，忽视了\"无报错但错误\"这一最隐蔽也最危险的失效模式；而电商价格、库存、运费等数值一旦出错，直接影响交易决策与用户信任。该工作为 Agent 可靠性评测提供了更贴近生产环境的视角，对构建可防御的 Agent 系统具有参考意义。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Tool Use",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静默工具错误（无显式失败信号的错误返回值）是 Agent 生产部署中被低估的失效模式，会沿多步推理链传播并污染最终答案",
+      "现有 Agent 评测偏重工具调用成功率，RITE 将评估重心转向端到端答案在错误注入下的鲁棒性",
+      "电商场景的数值型工具输出（价格、库存、运费）对静默错误尤为敏感，直接影响交易决策与用户信任",
+      "Agent 开发与执行阶段之间的数据分布漂移是静默错误的主要来源，需在系统设计中引入防御机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

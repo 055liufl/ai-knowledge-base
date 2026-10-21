@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-084",
+  "title": "Privacy-preserving inference on hosted models: a learned input-embedding transform for frozen Qwen3.8-27B",
+  "source_url": "https://arxiv.org/abs/2610.27817",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究托管语言模型的隐私保护推理问题：用户发送给托管模型的提示词可被服务方读取。作者提出一种客户端-服务端分离方案：利用公开词表在本地完成文本到向量的嵌入转换，再通过一个55.6M参数的小型训练网络对输入嵌入进行变换，使托管方仅接收到替代原始提示的变换向量，而无法直接还原原文。服务端运行冻结的27B Qwen模型完成推理。该工作值得关注，因为它针对托管大模型推理中的核心隐私痛点，提出了一种不修改大模型本身、仅通过轻量输入变换实现隐私保护的实用路径，对隐私敏感场景下的LLM部署具有参考价值。",
+  "tags": [
+    "Privacy",
+    "LLM Inference",
+    "Embedding Transform",
+    "Qwen"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将文本到向量的嵌入步骤放在客户端本地完成，避免原始提示词离开用户边界",
+      "通过小型训练网络（55.6M参数）变换输入嵌入，在冻结的27B大模型上实现隐私保护推理",
+      "方案无需修改或重新训练托管大模型，降低了部署门槛",
+      "隐私保护强度与模型效用之间的权衡仍需进一步评估"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-089",
+  "title": "Staged Continual Adaptation of Multimodal Foundation Models for Japanese Financial Documents",
+  "source_url": "https://arxiv.org/abs/2610.27904",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了多模态基础模型在日语金融文档上的分阶段持续适应过程。作者追踪了一个84亿参数模型从无微调基线经过三个训练阶段（视觉-语言对齐、推理蒸馏、领域调优）的表现，并在五个文本输入基准上评估。研究发现各阶段之间存在非加性交互：仅数学蒸馏会损害其他能力，而领域调优可能恢复部分性能。这项工作首次系统刻画了多模态后训练中不同阶段的能力权衡，对金融领域多模态模型部署具有指导意义，值得关注。",
+  "tags": [
+    "多模态",
+    "持续学习",
+    "金融NLP",
+    "模型微调"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分阶段后训练中视觉-语言对齐、推理蒸馏和领域调优存在非加性交互，不能简单叠加效果。",
+      "仅进行数学推理蒸馏会损害模型在其他任务上的能力，表明能力之间存在竞争。",
+      "领域调优可能部分恢复因蒸馏而损失的性能，但恢复程度有限。",
+      "在日语金融文档这一特定领域，多模态基础模型的分阶段适应需要精心设计以避免能力退化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

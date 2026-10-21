@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-127",
+  "title": "What Do RTL Repair Benchmarks Actually Measure?",
+  "source_url": "https://arxiv.org/abs/2610.28595",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统性地审视了RTL修复基准测试的有效性问题。作者构建了RTLRepairDataset（包含5,784个（损坏，修复）训练对）、RTLRepairBench（459个留出测试用例，其中374个为语法变异、85个为行为变异），以及一个支持仿真和形式化等价性验证的评估框架，并通过哈希绑定确保数据可复现。利用这套基础设施，作者识别出两个测量混淆因素：第一，仿真评分与形式化评分之间存在不一致，可能导致对模型能力的误判；第二，基准测试中的变异类型分布（语法变异远多于行为变异）可能使模型偏向于表面修复而非真正的语义理解。该工作值得关注，因为它揭示了当前RTL修复评测中普遍存在的效度问题，为硬件设计自动化领域的LLM评估提供了更严谨的方法论基础，并提醒研究者在报告修复能力时需区分语法修复与行为修复。",
+  "tags": [
+    "RTL Repair",
+    "Benchmark",
+    "LLM Evaluation",
+    "EDA"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:37:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仿真评分与形式化等价性评分可能给出不一致的结果，单一指标不足以衡量RTL修复能力",
+      "现有基准中语法变异（374例）远多于行为变异（85例），导致模型可能偏向表面修复而非语义正确性",
+      "构建哈希绑定的数据集与评估框架有助于提升RTL修复基准的可复现性和可信度",
+      "RTL修复评测需要区分语法修复与行为修复，并同时报告仿真与形式化验证结果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

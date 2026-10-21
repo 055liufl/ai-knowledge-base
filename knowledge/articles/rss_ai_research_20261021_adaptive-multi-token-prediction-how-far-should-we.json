@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-131",
+  "title": "Adaptive Multi-Token Prediction: How far should we go?",
+  "source_url": "https://arxiv.org/abs/2610.28619",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多Token预测（MTP）中的推测长度自适应问题。MTP通过一次目标模型前向传播草拟并验证多个Token来加速语言模型解码，但最优推测长度随上下文变化：较长的草稿在可靠时能更好地摊销计算成本，但在被拒绝后丢弃后缀会浪费算力。与自回归草拟可逐Token决定停止不同，MTP必须在草拟前固定推测长度。论文提出自适应多Token预测方法，旨在根据上下文动态确定合适的推测深度，从而在加速解码的同时减少无效计算。该工作对提升大语言模型推理效率具有实用价值，值得关注。",
+  "tags": [
+    "MTP",
+    "LLM Inference",
+    "Speculative Decoding",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:37:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MTP的最优推测长度随上下文动态变化，固定长度策略存在效率损失",
+      "长草稿在可靠时摊销收益大，但被拒绝后丢弃后缀会浪费计算",
+      "MTP需在草拟前固定推测长度，无法像自回归草拟那样逐Token停止",
+      "自适应确定推测深度是平衡解码加速与计算浪费的关键方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

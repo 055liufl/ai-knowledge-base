@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-086",
+  "title": "SAPD: Learning from Agent Experience without Environment Interaction",
+  "source_url": "https://arxiv.org/abs/2610.27847",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SAPD（Self-Adaptive Policy Distillation，自适应策略蒸馏）方法，旨在解决 LLM Agent 训练中环境依赖过重的问题。传统上，扩展 Agent 训练需要大量可执行环境，而环境的构建、维护和运行成本严重制约了训练经验的规模。现有离线轨迹虽然可以复用交互经验，但在不重新访问环境的情况下有效优化当前策略仍很困难：监督微调（SFT）容易导致灾难性遗忘，且难以区分轨迹中的优劣行为。SAPD 通过从 Agent 自身的历史经验中学习，在无需环境交互的条件下实现策略改进，为降低 Agent 训练成本、提升离线经验利用率提供了新思路。该方法值得关注，因为它有望打破 Agent 训练对在线环境的强依赖，使训练可扩展到更丰富、更廉价的离线数据源，对 Agent 规模化训练和实际部署具有重要价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "离线强化学习",
+    "策略蒸馏"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 训练的可扩展性受限于可执行环境的构建与维护成本",
+      "离线轨迹可复用交互经验，但直接 SFT 易导致灾难性遗忘",
+      "SAPD 在无环境交互条件下从 Agent 自身经验中改进策略",
+      "该方法有望降低 Agent 训练成本并提升离线数据利用率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-070",
+  "title": "Temporal Evidence Allocation For Longitudinal Clinical Retrieval: A Position And Technical Report",
+  "source_url": "https://arxiv.org/abs/2610.27682",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文是一篇立场与技术报告，聚焦纵向临床检索（longitudinal clinical retrieval）中的时间证据分配问题。作者指出，电子健康记录（EHR）的书写目的是支持临床照护而非检索，因此存在结构性偏差：在多年的肿瘤科病历中，主要诊断会在多份报告中反复重述，而真正塑造患者病程的关键事件（如复发、治疗方案变更）可能只被记录一次。传统的基于查询相似度的检索器会持续返回重复内容，从而遗漏这些关键转折点，作者将这一现象称为“时间冗余”（temporal redundancy）。报告提出需要按时间维度重新分配证据权重，以提升纵向检索对病程关键事件的召回能力。该工作值得关注，因为它揭示了临床RAG与医疗信息检索中被忽视的时间维度偏差，对构建面向真实临床决策的检索系统具有方法论意义，也为EHR场景下的检索评估与重排序设计提供了新视角。",
+  "tags": [
+    "Clinical Retrieval",
+    "RAG",
+    "EHR",
+    "Information Retrieval",
+    "Temporal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:34:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EHR文本为临床照护而写，天然存在重复重述主要诊断、关键病程事件仅记录一次的结构性偏差，直接套用相似度检索会系统性遗漏病程转折点。",
+      "纵向临床检索的核心挑战是“时间冗余”：高频重复内容主导排序结果，需要按时间维度重新分配证据权重而非单纯依赖语义相似度。",
+      "该问题对医疗RAG系统尤为关键，检索阶段遗漏的复发或治疗变更事件无法被下游生成模型弥补，需在检索与重排序层面专门设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

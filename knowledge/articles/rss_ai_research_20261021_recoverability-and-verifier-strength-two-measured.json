@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261021-046",
+  "title": "Recoverability and Verifier Strength: Two Measured Preconditions for Unattended Agent Self-Improvement",
+  "source_url": "https://arxiv.org/abs/2610.27465",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究自主智能体平台在无人监督下自我改进的安全边界，提出两个可测量的前置条件：可恢复性（Recoverability）与验证器强度（Verifier Strength）。验证器强度σ衡量现有验证器（通常是LLM评判器）与可信参考验证器的一致性，决定自动化验证能可靠批准变更的程度；可恢复性则刻画当自动变更引入错误时，平台回滚或修复的能力。论文主张只有同时满足足够高的验证器强度和可恢复性，智能体自我改进循环才能在无人值守下安全运行，否则必须保留人工介入。该工作为Agent平台从“人在回路”走向“无人值守自进化”提供了可量化的安全框架，对构建可靠、可审计的自主智能体系统具有重要参考价值，尤其适用于持续部署、自动修复和LLM-as-judge等场景。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "LLM-as-Judge",
+    "Safety",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:33:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "验证器强度σ（LLM评判器与可信参考验证器的一致性）直接限制自动批准变更的可靠上限。",
+      "可恢复性是无人值守自我改进的第二必要条件：错误变更必须能被检测并回滚。",
+      "仅当验证器强度与可恢复性同时达标时，智能体自我改进循环才可安全脱离人工监督。",
+      "该框架将Agent自进化从定性讨论推进到可测量、可审计的工程实践。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

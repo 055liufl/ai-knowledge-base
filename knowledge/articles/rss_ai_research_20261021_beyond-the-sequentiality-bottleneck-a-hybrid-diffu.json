@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-126",
+  "title": "Beyond the Sequentiality Bottleneck: A Hybrid Diffusion-Autoregressive Framework for Efficient Multimodal Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.28584",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对自回归模型（ARM）在推理中面临的“顺序性瓶颈”以及扩散语言模型（DLM）并行但语义连贯性不足的问题，提出了一种名为 CoRAL（Collaborative Reasoning Asymmetric Learning）的混合框架。CoRAL 采用非对称规划器-执行器（APE）架构：由 DLM 规划器并行生成 K 条多样化的推理轨迹，再由大型 ARM 执行器从中选择最优路径并完成最终推理。这种设计结合了扩散模型的并行生成能力与自回归模型的语义连贯性优势，旨在提升多模态推理的效率与质量。该工作值得关注，因为它首次系统性地将扩散与自回归范式在推理层面进行非对称协同，为突破顺序生成瓶颈提供了新思路，并可能对多模态推理、规划与执行分离的架构设计产生启发。",
+  "tags": [
+    "Diffusion Model",
+    "Autoregressive Model",
+    "Multimodal Reasoning",
+    "Hybrid Framework"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:36:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自回归模型存在顺序性瓶颈，扩散语言模型并行但语义连贯性差，两者互补。",
+      "CoRAL 通过非对称规划器-执行器架构，让 DLM 并行生成多条推理轨迹，ARM 选择最优路径执行。",
+      "该混合框架有望在保持语义连贯性的同时显著提升推理效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

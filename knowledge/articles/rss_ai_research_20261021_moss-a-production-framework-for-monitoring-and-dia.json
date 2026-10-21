@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261021-139",
+  "title": "MOSS: A Production Framework for Monitoring and Diagnosing Semantic Failures in Search and Recommendation Systems",
+  "source_url": "https://arxiv.org/abs/2610.26902",
+  "source_platform": "rss_ai_research",
+  "summary": "MOSS（Model Sanity Service）是一个面向生产环境的语义故障监控与诊断框架，专门针对搜索和推荐系统中难以检测的语义失效问题。传统方法存在明显短板：行为指标（如点击率、转化率）通常滞后数天才能反映问题，人工审核无法规模化，而现有的大多数 LLM 评估框架又只针对离线固定数据集设计，无法满足持续运营监控的需求。MOSS 的核心思路是将基于 LLM 的相关性打分嵌入到周期性监控循环中，从而在生产环境中持续、自动地发现语义层面的异常。该工作值得关注的原因在于：它填补了 LLM 评估从离线基准测试走向在线运营监控的关键空白，把大模型能力真正落地到工业级搜索推荐系统的质量保障流程中，对提升线上系统可靠性和用户体验具有直接价值，也为 LLM 在运维监控场景的应用提供了可复用的工程范式。",
+  "tags": [
+    "LLM",
+    "推荐系统",
+    "搜索",
+    "监控",
+    "评估"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:37:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产搜索推荐系统的语义故障难以被传统行为指标及时发现，存在数天的检测滞后",
+      "现有 LLM 评估框架多为离线固定数据集设计，无法支撑持续性的运营监控",
+      "将 LLM 相关性打分嵌入周期性监控循环，可实现语义失效的自动化、可扩展检测",
+      "该框架为 LLM 在工业级系统质量保障与运维监控中的落地提供了工程范式"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-105",
+  "title": "Interruption-Aware Recurrent Reinforcement Learning for UAS Navigation Under Temporary Overrides",
+  "source_url": "https://arxiv.org/abs/2610.28121",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向无人航空系统（UAS）导航的“中断感知循环强化学习”方法，用于处理临时人工接管或外部覆盖指令下的安全自主飞行问题。研究背景是：UAS 在部分可观测环境中（传感器或交通数据缺失、延迟、退化）需要战术级冲突消解，而几何方法在密集相遇场景下存在局限，循环强化学习因此被用于学习融合时序信息的导航策略。论文的核心贡献在于显式建模“中断”事件——即操作员临时覆盖或接管——使循环策略在中断发生后能够感知状态并恢复自主控制，而不是简单地将中断视为异常。该方法值得关注的原因在于：它把人在回路中的临时干预纳入强化学习训练框架，提升了 UAS 在真实空域中与人类操作员协同的安全性；同时针对部分可观测性和密集交通这两个实际痛点，给出了端到端学习方案。对从事无人机自主导航、安全强化学习以及人机协同控制的研究者和工程师具有参考价值，也为适航认证中的人为干预场景提供了可训练的技术路径。",
+  "tags": [
+    "Reinforcement Learning",
+    "UAS Navigation",
+    "Human-in-the-loop",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:36:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将临时人工接管显式建模为中断事件，使循环强化学习策略能在中断后恢复自主导航，而非将干预视为异常",
+      "针对部分可观测性下传感器与交通数据缺失、延迟、退化的场景，循环策略可融合时序信息进行战术冲突消解",
+      "在密集相遇场景中弥补几何分离保证方法的局限，为UAS安全导航提供端到端学习方案",
+      "为人机协同空域中的人为干预场景提供可训练路径，对适航认证与安全强化学习有参考意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

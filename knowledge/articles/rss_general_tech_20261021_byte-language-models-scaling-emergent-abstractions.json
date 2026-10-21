@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261021-008",
+  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
+  "source_url": "https://arxiv.org/html/2610.05978v1",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文挑战了语言模型必须依赖显式分词器（tokenizer）才能高效运行的假设，证明标准扁平 Transformer 可以直接处理原始字节序列，并且随着参数规模扩大，其表现实际上优于传统的子词模型。领域内主流观点认为处理原始字节在计算上不高效，因为序列长度会显著增加——一个典型子词约包含四个字节。作者主张，这种额外的序列长度并非纯粹的负担，而是带来了新的信息分配与抽象涌现空间。论文围绕三个核心议题展开：字节级语言模型的规模扩展规律、随规模增大而涌现的抽象能力，以及模型如何在字节序列中分配信息。这项工作值得关注，因为它动摇了现代 LLM 基础设施中分词器这一几乎被视为理所当然的组件，暗示了一条更端到端、语言无关且可能更少受分词偏差影响的建模路径；若结论成立，将影响模型架构设计、多语言与代码场景的建模方式，以及训练与推理的算力权衡。",
+  "tags": [
+    "Byte-level LM",
+    "Tokenizer-free",
+    "Scaling Laws",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:51Z",
+  "collected_at": "2026-10-21T13:31:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准扁平 Transformer 可直接建模原始字节序列，无需显式分词器",
+      "随着参数规模扩大，字节级模型的表现可超越传统子词模型",
+      "字节序列更长并非纯粹低效，而是为信息分配和抽象涌现提供了空间",
+      "该结论挑战了分词器作为 LLM 必备组件的行业共识，指向更端到端的建模路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

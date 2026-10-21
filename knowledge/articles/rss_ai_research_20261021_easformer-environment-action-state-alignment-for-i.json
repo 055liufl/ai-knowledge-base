@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-072",
+  "title": "EASformer: Environment-Action-State Alignment for Industrial Generative Ranking",
+  "source_url": "https://arxiv.org/abs/2610.27691",
+  "source_platform": "rss_ai_research",
+  "summary": "EASformer 是一篇面向工业级生成式排序（Generative Ranking）的 arXiv 论文，针对现代推荐系统中用户行为序列与非序列（NS）特征联合建模时存在的语义不对称问题提出解决方案。当前工业排序系统越来越多地采用生成式推荐范式，将用户行为序列和异构特征统一 token 化后交由 Transformer 类骨干网络建模，从而获得可扩展的长历史与多特征建模接口。然而，序列表示与 NS 表示往往承载不对称语义：历史表示可能混合了多种行为意图与上下文信号，而 NS 特征则更偏向静态属性，二者直接拼接或联合建模容易导致表示错位，削弱排序效果。EASformer 提出 Environment-Action-State（环境-动作-状态）对齐框架，将推荐场景中的上下文环境、用户动作与状态表示显式建模并相互对齐，以缓解上述语义鸿沟。该工作值得关注的原因在于：它直面生成式推荐在真实工业落地中的核心痛点——异构特征融合的语义一致性，而非仅追求模型规模或离线指标；其对齐思路对推荐系统、序列建模与多模态特征融合均有借鉴意义，且具备较强的工程可迁移性。",
+  "tags": [
+    "Generative Recommendation",
+    "Ranking",
+    "Transformer",
+    "Feature Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:34:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式推荐中序列特征与非序列特征存在语义不对称，直接联合建模会造成表示错位",
+      "EASformer 通过 Environment-Action-State 显式对齐框架缓解异构特征间的语义鸿沟",
+      "该工作聚焦工业落地中的特征融合一致性问题，而非单纯扩大模型规模",
+      "对齐思路可迁移至更广泛的序列建模与多源特征融合场景"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

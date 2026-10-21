@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261021-007",
+  "title": "Fix, Not Just Resample: Bounded Compiler-Guided Repair in Lean 4",
+  "source_url": "https://arxiv.org/abs/2610.26942",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于 Lean 4 定理证明的「有界编译器引导修复」方法，旨在解决自动定理证明器依赖语言模型采样时丢弃失败步骤信息的问题。传统方法在每一步采样 K 个候选策略，失败即丢弃；而 Lean 等证明助手会对每个失败步骤返回精确的错误信息，这些信息被纯采样方法浪费。作者设计了一个有界的在线步骤级修复模块：在搜索过程中，对失败的策略最多进行 R 次修复，将编译器错误消息反馈给语言模型以生成修正后的策略，而非直接丢弃。该方法将编译器的结构化反馈纳入搜索循环，在有限的计算预算内提升证明成功率。其核心价值在于把「失败」从噪声转化为可用的监督信号，为神经定理证明与形式化验证的结合提供了更高效的搜索范式，对 Lean 4 生态和 AI 辅助数学研究具有实用意义。",
+  "tags": [
+    "Lean 4",
+    "定理证明",
+    "LLM",
+    "编译器反馈",
+    "程序修复"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:31:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编译器错误消息是纯采样方法丢弃的高价值信号，将其反馈给语言模型可显著提升策略修复效率",
+      "有界修复（最多 R 次）在计算预算与证明成功率之间取得平衡，避免无限重试",
+      "步骤级在线修复比整体重采样更精准，因为错误定位到具体策略步骤",
+      "该方法为神经定理证明器与形式化验证工具的结合提供了可复用的搜索框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-099",
+  "title": "TrajEvolve: Trajectory Evolution for Reinforcement Learning with Hindsight Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2610.28060",
+  "source_platform": "rss_ai_research",
+  "summary": "TrajEvolve 是一篇关于大语言模型强化学习训练方法的 arXiv 论文，聚焦长程推理任务中 RL 训练的两大痛点：任务复杂度高导致成功轨迹采样不足、收敛缓慢；以及仅依赖稀疏最终奖励造成所有步骤被无差别更新。论文提出轨迹进化（Trajectory Evolution）机制，结合事后信用分配（Hindsight Credit Assignment），通过对已有轨迹进行演化与重标注，缓解稀疏奖励下的样本效率问题，提升长程任务的训练效果。该工作值得关注，因为它直击 LLM RL 训练中稀疏奖励与长程信用分配这一核心瓶颈，若方法有效，可显著降低长程推理任务的训练成本，对推理模型、Agent 训练等方向具有实用价值。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM",
+    "Credit Assignment",
+    "Long-horizon Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长程任务中成功轨迹采样不足是 LLM RL 训练收敛慢的主要瓶颈之一",
+      "稀疏最终奖励导致步骤级更新无差别，需要更细粒度的信用分配机制",
+      "轨迹进化结合事后重标注可在不增加采样成本的情况下提升样本利用率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-019",
+  "title": "PROVISO: Provenance-Informed Action Selection for Secure LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.27115",
+  "source_platform": "rss_ai_research",
+  "summary": "PROVISO 是一篇关于 LLM Agent 安全的研究论文，针对 Agent 通过工具和第三方技能执行外部操作时可能造成不可逆伤害的问题，提出了一种基于来源追踪（provenance）的动作选择控制器。现有防御方法存在两个关键缺陷：一是判断待执行动作时没有追踪其内容来源（用户输入还是工具输出等外部来源），二是孤立地评估单个动作而不与可用替代方案比较，导致安全性与实用性之间被迫权衡。PROVISO 通过追踪动作内容的来源信息，并在多个候选动作之间进行对比选择，从而在保障安全的同时维持任务效用。该工作值得关注，因为随着 LLM Agent 越来越多地被赋予真实世界操作权限（如文件操作、API 调用、代码执行），动作级安全控制成为落地部署的关键瓶颈，而来源感知的决策思路为 Agent 安全提供了新的建模范式。",
+  "tags": [
+    "Agent Security",
+    "LLM Agent",
+    "Provenance",
+    "Action Selection"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:32:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 防御忽略了动作内容的来源追踪，无法区分用户指令与不可信工具输出，这是安全漏洞的根源",
+      "孤立评估单个动作会迫使安全与效用二选一，而对比候选替代方案可以在不牺牲效用的前提下提升安全性",
+      "来源感知（provenance-informed）的动作选择为 LLM Agent 安全控制提供了新的建模范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

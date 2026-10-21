@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-020",
+  "title": "PORA: Learning When More Reasoning Pays Off for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.27119",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 PORA（Policy Optimization with Reasoning Allocation），研究 LLM Agent 在多步任务中如何动态决定每一步的推理长度。由于总推理预算有限且需覆盖后续步骤，Agent 在每次行动前必须在短推理与长推理之间权衡：更长的推理可能通过避免后续错误提升最终任务成功率，但也会消耗未来决策所需的预算。论文将这一权衡形式化为推理资源分配问题，并指出其核心挑战在于估计长推理对下游结果的边际收益。PORA 通过学习策略来预测何时值得投入更多推理，从而在预算约束下优化整体任务表现。该工作值得关注，因为它触及 Agent 系统中一个被忽视但实际关键的问题——推理成本与任务收益的平衡，为构建更高效、更经济的多步 Agent 提供了方法论基础，对研究者和开发者均有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Reasoning",
+    "Budget Allocation",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:32:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步 Agent 的推理预算分配是一个序列决策问题，需在每一步权衡长推理的即时收益与未来预算消耗。",
+      "长推理的价值在于预防后续错误，但其边际收益随任务阶段和上下文变化，需要动态估计。",
+      "PORA 通过学习策略来决定何时投入更多推理，为预算受限下的 Agent 效率优化提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

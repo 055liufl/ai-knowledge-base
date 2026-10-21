@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-138",
+  "title": "PW-Pruning: Phase-Aware Expert Selection for Speech-Centric Omni-Modal Models",
+  "source_url": "https://arxiv.org/abs/2610.26891",
+  "source_platform": "rss_ai_research",
+  "summary": "PW-Pruning 是一种面向以语音为中心的全模态模型（omni-modal models）的专家剪枝方法，旨在解决稀疏路由虽降低单 token 计算量、但完整专家库仍驻留内存的问题。该研究指出，在语音中心场景中，将校准统计量池化会掩盖声学输入处理与文本答案生成两个阶段对专家需求的差异。为此，作者提出 PW-Pruning，作为 DO-ACP 的阶段感知扩展，分别为声学预填充（acoustic-prefill）和教师强制答案生成（teacher-forced answer generation）构建独立的重要性加权核，从而实现更精细的专家选择与剪枝。该方法值得关注之处在于：它针对多模态大模型中语音与文本阶段专家激活模式异质性的问题，提出了阶段感知的剪枝策略，有望在保持生成质量的同时显著降低专家库的常驻内存开销，对端侧部署和推理成本优化具有实际意义。",
+  "tags": [
+    "MoE",
+    "模型剪枝",
+    "多模态",
+    "语音模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:37:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏路由只减少单 token 计算，专家库仍全量驻留内存，专家剪枝是降低内存占用的关键补充手段",
+      "语音中心全模态模型中，声学预填充与文本答案生成对专家的需求存在显著差异，池化校准统计会掩盖这一异质性",
+      "PW-Pruning 通过为两个阶段分别构建重要性加权核，实现阶段感知的专家选择，比统一剪枝更精细"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

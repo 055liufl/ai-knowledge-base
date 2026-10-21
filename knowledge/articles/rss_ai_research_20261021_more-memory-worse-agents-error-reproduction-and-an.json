@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-042",
+  "title": "More Memory, Worse Agents: Error Reproduction and Anti-Persistence in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.27406",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了LLM智能体在外部记忆中存储经验时的设计选择问题：是仅保留观察到的轨迹和结果，还是同时保留从中推断出的规则、摘要和技能。研究发现，保留抽象化内容虽然能让智能体复用策略而无需从原始轨迹中反复推导，但会导致\"更多记忆，更差智能体\"的反直觉现象。论文提出了\"错误复现\"和\"反持续性\"两个概念，揭示了记忆抽象化可能引入的错误传播和策略僵化问题。这项工作对智能体记忆系统设计具有重要警示意义，挑战了\"记忆越多越好\"的朴素假设，为构建更可靠的LLM智能体提供了理论依据和实证分析。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Error Propagation"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:33:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "保留推断出的规则和摘要等抽象化记忆会导致错误在后续任务中被复现和放大",
+      "记忆抽象化可能引发\"反持续性\"现象，即智能体过度依赖历史策略而丧失适应能力",
+      "仅保留原始轨迹和结果比保留抽象化内容更安全，尽管后者在理论上更高效",
+      "智能体记忆系统设计需要在策略复用效率与错误传播风险之间取得平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

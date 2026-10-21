@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-044",
+  "title": "Harness Self-Evolution for Long-Horizon Terminal Agents",
+  "source_url": "https://arxiv.org/abs/2610.27435",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RiseHarness 框架，用于在模型权重固定的前提下迭代改进长时程终端智能体的执行框架（harness）。核心观察是：长时程终端智能体可能在单次运行中成功完成任务，但在多次重复运行中失败，原因是随机误差会通过动作和上下文传播，造成能力与可靠执行之间的差距。RiseHarness 聚焦于同一配置下既有成功又有失败记录的任务，将成功运行作为失败运行的参考，从而迭代优化智能体的执行框架而非模型本身。这一思路值得关注，因为它将智能体可靠性的提升从模型能力层面转移到系统层面的 harness 工程，为提升长时程任务的执行稳定性提供了不依赖重新训练或微调模型的实用路径，对构建生产级终端智能体具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Terminal Agent",
+    "Reliability",
+    "Harness Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:33:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程终端智能体的核心瓶颈不是单次能力，而是重复运行下的可靠性，随机误差会沿动作与上下文链式传播",
+      "在模型权重固定的条件下，通过迭代改进 harness 即可缩小能力与可靠执行之间的差距",
+      "利用同一配置下成功运行作为失败运行的参考，是定位并修复执行框架缺陷的有效信号",
+      "将智能体优化从模型层转移到系统层，避免了重新训练成本，更适合生产环境中的持续改进"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

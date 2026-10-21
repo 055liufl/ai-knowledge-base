@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261021-063",
+  "title": "When Does Feedback Help? Auditing Learned Voltage-Clamp Experimental Design",
+  "source_url": "https://arxiv.org/abs/2610.27632",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对学习型电压钳实验设计控制器进行了审计，探讨反馈在何种条件下真正有益。作者构建了两个合成电压钳任务，使用训练选定的固定协议、电流掩码、贝叶斯参考和排除目标进行对比。实验发现，五种循环策略在全部1200次离网格 rollout 中重复同一固定协议，且电流掩码不改变任何决策，表明这些策略并未利用反馈信息。在交叉四假设任务中，固定诊断脉冲后仅跟随一次学习步骤。该研究揭示了学习型科学控制器可能仅记忆固定协议而非真正利用反馈，对自动化实验设计领域具有警示意义，提醒研究者需严格审计控制器是否真正从反馈中获益。",
+  "tags": [
+    "Scientific Control",
+    "Reinforcement Learning",
+    "Experimental Design",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:34:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "学习型控制器可能仅重复训练选定的固定协议，而不实际利用反馈信息。",
+      "电流掩码实验表明，反馈信号对策略决策没有影响，提示反馈机制可能失效。",
+      "对学习型科学控制器进行严格审计是必要的，以避免虚假的性能提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

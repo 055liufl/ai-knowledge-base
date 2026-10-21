@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261021-098",
+  "title": "Dancing Diffusion: Learning Continuous Programs for Image Generation and Editing",
+  "source_url": "https://arxiv.org/abs/2610.28003",
+  "source_platform": "rss_ai_research",
+  "summary": "Dancing Diffusion 提出了一种新的扩散模型条件控制机制，将多步去噪轨迹中的不同时间步段分配独立的连续条件块，从而将条件控制转化为一个潜在程序。该方法通过编译器将文本特征映射为这种程序，并由固定的预训练生成器执行。传统扩散模型在每一步都使用相同的指令进行条件化，导致无法在单个操作层面精细控制生成轨迹。Dancing Diffusion 的创新在于将条件控制从静态指令转变为动态程序，使得生成过程可以按时间步段进行差异化调控。这一方法有望提升图像生成和编辑的精细控制能力，为扩散模型的可控生成提供新思路。该工作来自 arXiv 预印本，属于生成模型领域的前沿研究，值得关注其对扩散模型条件机制的结构性改进。",
+  "tags": [
+    "Diffusion",
+    "Image Generation",
+    "Controllable Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将扩散模型的条件控制从静态指令转变为按时间步段分配的潜在程序，实现更细粒度的轨迹控制。",
+      "通过编译器将文本特征映射为连续条件块程序，由固定预训练生成器执行，无需重新训练生成器。",
+      "该方法为图像生成和编辑提供了操作级别的条件寻址能力，有望提升可控性和编辑精度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

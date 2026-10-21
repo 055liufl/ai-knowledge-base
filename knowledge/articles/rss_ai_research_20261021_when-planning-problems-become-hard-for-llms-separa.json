@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-010",
+  "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
+  "source_url": "https://arxiv.org/abs/2610.26964",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型在经典规划问题上的表现，指出当前基准测试未能区分问题的结构性难度与符号词汇的语义解释难度。作者选取七个STRIPS领域，以BFS最优规划长度为基准，评估模型预测规划难度的能力。实验发现，无需训练的delete-relaxation启发式h_add在预测结构性难度上显著优于学习型方法，在留出领域上平均Spearman相关系数绝对值达0.931。这一结果揭示了LLM在规划任务中的瓶颈更多源于语义解释而非结构复杂度，为设计更公平的规划基准和混合式规划方法提供了重要依据。该工作对理解LLM推理能力的边界、改进规划任务评估体系具有参考价值，值得关注LLM推理与自动规划交叉领域的研究者和开发者阅读。",
+  "tags": [
+    "LLM",
+    "Planning",
+    "Reasoning",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:32:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM规划基准混淆了结构性难度与符号语义解释难度，导致评估结果难以归因。",
+      "零训练的delete-relaxation启发式h_add在预测规划结构难度上优于学习型方法，留出领域平均Spearman |ρ|=0.931。",
+      "LLM在经典规划上的困难可能主要来自符号词汇的语义解释，而非问题本身的结构复杂度。",
+      "分离结构复杂度与语义可解释性有助于设计更公平的规划基准和混合式规划系统。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

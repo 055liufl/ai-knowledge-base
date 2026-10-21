@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-097",
+  "title": "Building Telecom Language Models with RSOD: Domain Data, Specialist Post-Training, Memory-Conscious Distillation, and Networking Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.27993",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一套面向电信领域的语言模型构建框架 RSOD，涵盖领域数据生成、专家后训练、内存感知蒸馏和网络评估四个环节。其核心创新在于从结构化网络分类体系和专家图谱中自动生成有来源依据的合成训练数据，并构建了覆盖十四条网络路由的 212,559 条路由训练记录。该工作值得关注的原因在于：电信领域对模型的专业性要求高（路由、宽带服务、接入技术、运维诊断等），而通用大模型往往缺乏细粒度领域知识；同时，单一模型需兼顾广博网络知识与专家行为，并满足实际部署的资源约束。RSOD 通过端到端流水线将数据构造、后训练、蒸馏压缩与评估闭环整合，为垂直领域语言模型的工程化落地提供了可复用的方法论，对电信运营商和网络设备厂商的 AI 应用具有直接参考价值。",
+  "tags": [
+    "Domain LLM",
+    "Telecom",
+    "Post-Training",
+    "Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:35:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "从结构化网络分类体系和专家图谱生成有来源依据的合成数据，可缓解电信领域高质量标注数据稀缺的问题",
+      "覆盖十四条网络路由的 212,559 条训练记录表明，领域模型需要按细分任务路由组织数据而非单一混合语料",
+      "内存感知蒸馏使单一模型在部署资源受限条件下兼顾广博网络知识与专家行为，是垂直模型落地的关键环节",
+      "端到端框架将数据构造、后训练、蒸馏与评估闭环整合，为其他垂直领域语言模型建设提供可复用范式"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

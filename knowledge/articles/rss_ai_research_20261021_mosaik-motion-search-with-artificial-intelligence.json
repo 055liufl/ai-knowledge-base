@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261021-022",
+  "title": "MoSAIK: Motion Search with Artificial Intelligence in K-space",
+  "source_url": "https://arxiv.org/abs/2610.27156",
+  "source_platform": "rss_ai_research",
+  "summary": "MoSAIK（Motion Search with Artificial Intelligence in K-space）是一种面向临床脑部 MRI 的回顾性运动校正方法，旨在解决二维 T2 加权涡轮自旋回波（TSE）序列中常见的运动伪影问题。传统方案依赖无运动参考、外部导航回波或额外采集来估计运动，而 MoSAIK 直接从标准多线圈 TSE 的 k 空间数据中推断平面内刚体运动参数，无需任何额外硬件或扫描时间。该方法利用人工智能在 k 空间域搜索运动轨迹，从而在重建阶段对已采集数据进行运动补偿，减少重复采集需求并提升诊断置信度。其价值在于：运动伪影是常规脑 MRI 的主要质量瓶颈，而 MoSAIK 以纯软件、回顾性、零额外采集的方式实现校正，具备较强的临床落地潜力，尤其适合无法配合长时间扫描或屏气的患者群体。该工作也展示了 AI 在原始 k 空间信号层面进行物理建模与参数反演的可行性，为 MRI 重建流程的智能化提供了新思路。",
+  "tags": [
+    "MRI",
+    "运动校正",
+    "k空间",
+    "医学影像",
+    "AI重建"
+  ],
+  "author": null,
+  "published_at": "2026-10-21T13:29:52Z",
+  "collected_at": "2026-10-21T13:32:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoSAIK 无需无运动参考、外部导航或额外采集，直接从多线圈 TSE k 空间数据中估计平面内刚体运动，降低了临床部署门槛。",
+      "该方法以回顾性方式工作，可在重建阶段对已有数据进行运动补偿，有望减少因运动伪影导致的重复扫描。",
+      "在 k 空间原始信号层面进行 AI 驱动的运动搜索与参数反演，为 MRI 重建流程的智能化提供了新范式。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}
