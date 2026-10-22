@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-113",
+  "title": "Stratified Sparse Attention: Reducing the Sparse-to-Dense Gap at Extreme Sparsity",
+  "source_url": "https://arxiv.org/abs/2610.28441",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出分层稀疏注意力（Stratified Sparse Attention），旨在缩小极端稀疏条件下的稀疏-稠密性能差距。长上下文 LLM 推理的主要瓶颈在于 KV 缓存不断增长带来的注意力计算成本。现有稀疏注意力方法面临两难：确定性检索能捕获高分 token，但会丢弃残余注意力质量；采样方法虽能提升覆盖度，却引入更高方差。混合方法试图结合二者，但在极端稀疏（如仅访问极小比例缓存）时仍存在明显性能退化。本文通过分层策略对注意力质量进行结构化分配，在保持低计算成本的同时更接近稠密注意力的效果。该工作对长上下文推理加速、KV 缓存压缩和高效注意力机制设计具有直接参考价值，尤其适合关注推理效率与长文本场景的研究者和工程师。",
+  "tags": [
+    "Sparse Attention",
+    "Long Context",
+    "KV Cache",
+    "LLM Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:37:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "极端稀疏下稀疏注意力与稠密注意力之间存在显著性能差距，核心矛盾在于确定性检索与采样之间的权衡",
+      "分层策略可对注意力质量进行结构化分配，在低访问比例下提升覆盖度并降低方差",
+      "该方法直接针对长上下文 LLM 推理的 KV 缓存瓶颈，具有推理加速的实用潜力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

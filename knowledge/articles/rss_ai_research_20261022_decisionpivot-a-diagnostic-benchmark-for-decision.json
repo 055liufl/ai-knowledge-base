@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-119",
+  "title": "DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems",
+  "source_url": "https://arxiv.org/abs/2610.28522",
+  "source_platform": "rss_ai_research",
+  "summary": "DecisionPivot 是一个面向 LLM 系统中决策模型（decision models）的诊断性基准测试，由 48 个任务、40,033 个条目组成，覆盖七类决策角色（如路由、护栏、输出验证等）。其核心赛道包含来自 13 个生成式任务家族的 7,800 个条目，并围绕受控变体进行组织，旨在检验模型在受控扰动下是否仍能做出正确决策，以及其预测置信度是否可靠。该工作指出现有评估仅依赖条目准确率，无法判断决策模型在分布变化或语义等价变体下的稳健性与校准质量，因此提出以诊断视角系统评估决策能力。该基准值得关注的原因在于：随着 LLM 系统日益复杂，路由、安全护栏与输出校验等决策组件已成为系统可靠性的关键环节，而缺乏针对性评测会导致部署风险被低估。DecisionPivot 通过多任务、多角色、受控变体的设计，为研究者与工程团队提供了可复现的决策能力诊断工具，有助于推动决策模型从“单点准确”走向“稳健且可信”。",
+  "tags": [
+    "Benchmark",
+    "LLM Systems",
+    "Evaluation",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:38:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅靠条目准确率不足以评估决策模型，需考察其在受控变体下的一致性与稳健性。",
+      "决策模型承担路由、护栏、输出验证等关键角色，其可靠性直接影响 LLM 系统整体安全与质量。",
+      "基准覆盖 48 个任务、七类决策角色与 13 个生成式任务家族，强调多角色、多任务的诊断式评估。",
+      "置信度校准应作为决策模型评估的核心维度之一，而不仅是预测正确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

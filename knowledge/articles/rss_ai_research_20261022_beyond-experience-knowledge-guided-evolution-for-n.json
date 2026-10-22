@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-059",
+  "title": "Beyond Experience: Knowledge-Guided Evolution for NPU Kernel Generation",
+  "source_url": "https://arxiv.org/abs/2610.27588",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体在新兴加速器（如昇腾NPU）上生成内核的难题展开研究。当前主流GPU栈上LLM智能体已具备内核工程能力，但NPU编程模型在预训练数据中几乎缺失，导致直接迁移困难。现有NPU智能体主要依赖经验积累：从自身生成与优化试验中构建记忆并在后续任务中复用。作者指出仅靠经验不足以支撑内核生成，并提出知识引导的进化方法（Knowledge-Guided Evolution），通过引入外部结构化知识弥补预训练数据缺口，提升智能体在陌生硬件栈上的内核生成与优化能力。该工作值得关注，因为它揭示了LLM智能体在异构加速器生态中的泛化瓶颈，并为跨硬件栈的代码生成智能体提供了从经验驱动向知识驱动演进的新思路，对AI编译器、算子自动生成及国产加速器软件生态建设具有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Kernel Generation",
+    "NPU",
+    "Code Generation",
+    "AI Compiler"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:35:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体在主流GPU栈上已具备内核工程能力，但在预训练数据稀缺的新兴加速器（如昇腾NPU）上表现受限",
+      "现有NPU智能体依赖自身生成与优化试验积累经验记忆，但仅靠经验不足以完成高质量内核生成",
+      "知识引导的进化方法通过引入外部结构化知识弥补预训练数据缺口，是跨硬件栈智能体的关键演进方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-074",
+  "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
+  "source_url": "https://arxiv.org/abs/2610.27711",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在匹配条件下，分类器头微调（cls）与LLM-as-Judge序列到序列（s2s）两种目标在二元幻觉检测任务上的性能差异。研究发现cls范式始终优于s2s，并通过静态分析揭示了原因：cls学习到任务特定的判别方向，将隐藏状态推向清晰的双簇几何结构，具有更强的类别分离性和线性可分性。这项工作首次从表示层面解释了不同微调目标如何塑造LLM内部信息，为幻觉检测的模型设计和微调策略提供了理论依据，值得关注。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Fine-Tuning",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分类器头微调（cls）在二元幻觉检测上一致优于序列到序列（s2s）的LLM-as-Judge范式。",
+      "cls目标学习到任务特定的判别方向，使隐藏状态形成清晰的双簇几何结构，增强类别分离和线性可分性。",
+      "微调目标的选择会显著影响LLM内部表示的信息组织方式，进而决定下游任务性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-063",
+  "title": "When Does Feedback Help? Auditing Learned Voltage-Clamp Experimental Design",
+  "source_url": "https://arxiv.org/abs/2610.27632",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文《When Does Feedback Help? Auditing Learned Voltage-Clamp Experimental Design》研究了一个核心问题：在科学实验控制中，学习到的控制器何时真正从反馈中获益。作者构建了两个合成电压钳任务，使用训练阶段选定的固定协议、电流掩码、贝叶斯参考以及一个被排除的目标进行审计。实验发现，五个循环策略在全部1200次离网格滚动中重复同一个固定协议，且对电流进行掩码不改变任何决策，说明这些策略并未利用反馈信息。在交叉四假设任务中，固定诊断脉冲后仅跟随一次学习步骤。该工作揭示了学习型科学控制器可能表面优于规划器，但实际并未从反馈中学习，对自动化实验设计领域具有重要的方法论警示意义，值得关注。",
+  "tags": [
+    "科学实验自动化",
+    "强化学习",
+    "反馈机制",
+    "电压钳",
+    "策略审计"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:35:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "学习型科学控制器可能在没有利用反馈的情况下仍优于错误设定的规划器，导致性能提升被误归因于反馈学习。",
+      "在1200次离网格滚动中，所有循环策略均重复固定协议，且电流掩码不改变决策，表明策略未对反馈信号做出响应。",
+      "审计方法结合固定协议、电流掩码和贝叶斯参考，为评估学习型实验设计是否真正利用反馈提供了可复用的框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

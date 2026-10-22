@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-046",
+  "title": "Recoverability and Verifier Strength: Two Measured Preconditions for Unattended Agent Self-Improvement",
+  "source_url": "https://arxiv.org/abs/2610.27465",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种评估无人值守智能体自我改进循环安全性的框架。智能体平台正开始让智能体自主改进自身：读取已部署智能体的执行轨迹，推导出修改，由自动验证器批准，并在无人类作者的情况下发布。作者提出两个可测量的量：验证器强度σ（可用验证器与可信参考验证器的一致程度，通常由LLM评判器担任）和可恢复性（系统在错误修改发布后恢复到安全状态的能力）。这两个量共同决定了自我改进循环中无需人工干预即可安全运行的比例。该研究为智能体平台的自主演进提供了可量化的安全边界，对构建可靠、可审计的自我改进智能体系统具有重要指导意义，值得关注。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "Verification",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "验证器强度σ衡量自动验证器与可信参考验证器的一致性，直接限制自我改进循环可安全自主运行的程度",
+      "可恢复性是第二个关键前提：系统在错误修改发布后能否回滚到安全状态，决定了无人值守循环的风险上限",
+      "两个可测量量为平台提供了量化安全边界的方法，而非仅依赖定性判断",
+      "该框架将智能体自我改进的安全问题转化为可度量的工程指标，有助于设计更可靠的自主演进平台"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

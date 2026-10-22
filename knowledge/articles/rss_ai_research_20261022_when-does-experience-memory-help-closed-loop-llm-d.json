@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-075",
+  "title": "When Does Experience Memory Help Closed-Loop LLM Driving Agents? A Controlled Evaluation with Resampled Warmup Pools, Token-Matched Fillers, and Audited Baselines",
+  "source_url": "https://arxiv.org/abs/2610.27714",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对闭环LLM驾驶智能体中的经验记忆机制进行了受控评估，旨在回答经验记忆何时真正有助于驾驶性能这一关键问题。作者指出，现有研究无法给出明确答案，因为两个最重要的因素——预热池中包含哪些经验以及注入的token对提示词的影响——在以往工作中均未得到控制。研究在经审计的HighwayEnv测试平台上（1Hz，使用gpt-4o-mini进行决定性对比）开展实验，将预热池视为可重采样的随机因素（十个不相交的池），并采用token匹配的填充物和审计基线来隔离变量。这项工作值得关注，因为它首次系统性地揭示了经验记忆增益的混杂因素，为LLM驾驶智能体的记忆设计提供了严谨的方法论框架和可复现的评估范式，对闭环智能体研究具有重要的方法论纠偏意义。",
+  "tags": [
+    "LLM Agent",
+    "Experience Memory",
+    "Closed-Loop Driving",
+    "Controlled Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有经验记忆增益的结论不可靠，因为预热池内容和注入token的提示效应这两个关键因素从未被控制",
+      "将预热池作为可重采样的随机因素（十个不相交池）是隔离经验记忆真实效应的有效实验设计",
+      "token匹配的填充物和审计基线是区分'经验内容'与'提示长度/格式'贡献的必要手段",
+      "在HighwayEnv受控测试台上，经验记忆的收益可能高度依赖于具体预热经验的选择而非记忆机制本身"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

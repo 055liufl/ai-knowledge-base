@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-120",
+  "title": "Beyond 4 bits: Data-Centric Post-training Quantization and Recovery",
+  "source_url": "https://arxiv.org/abs/2610.28537",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究训练后量化（PTQ）在极低比特（2比特）下的性能退化问题。作者指出，标量PTQ在4比特时几乎无损，但降至2比特时准确率跌至随机水平。研究聚焦三个常被忽视的实现细节：量化表示、校准数据和恢复微调数据，并在六个稠密与混合专家模型上验证。核心贡献在于揭示这些数据层面的选择对2比特量化质量的决定性影响，提出数据中心的量化与恢复策略，超越传统4比特限制。该工作对模型压缩、边缘部署和低资源推理具有重要价值，尤其为极端量化场景提供了可操作的优化方向。",
+  "tags": [
+    "Quantization",
+    "Model Compression",
+    "Post-training",
+    "Low-bit",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:38:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "2比特标量PTQ的失败主要源于量化表示、校准数据和恢复微调数据三个实现细节，而非量化算法本身。",
+      "数据层面的选择在4比特时影响甚微，但在2比特时决定模型能否保持可用精度。",
+      "通过优化校准与恢复数据策略，可显著提升极低比特量化的鲁棒性，突破传统4比特无损边界。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

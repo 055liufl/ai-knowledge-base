@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-039",
+  "title": "Correcting Attribution Patching with a Few Exact Measurements",
+  "source_url": "https://arxiv.org/abs/2610.27393",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Guided-AP 方法，用于改进机制可解释性中的归因修补（Attribution Patching）技术。归因修补通过一次梯度传播快速估计语言模型各组件对特定行为的重要性，但估计误差较大，逐一验证又会使成本回到与组件和提示数量线性增长的水平。Guided-AP 利用这些误差的结构特性，通过少量精确测量来校正归因修补的估计，从而在保持较低计算成本的同时显著提升归因准确性。该工作值得关注，因为它直接解决了机制可解释性中一个核心的效率与精度权衡问题：如何在有限计算预算下可靠地识别模型中的关键组件。对于从事模型可解释性、模型编辑和安全性分析的研究者与开发者而言，Guided-AP 提供了一种更实用的归因工具，有望降低大规模模型机制分析的门槛，并推动更可靠的模型行为归因实践。",
+  "tags": [
+    "Mechanistic Interpretability",
+    "Attribution Patching",
+    "Activation Patching",
+    "LLM Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "归因修补通过单次梯度传播估计组件重要性，但误差可能很大，逐一验证成本过高。",
+      "Guided-AP 利用归因误差的结构特性，用少量精确测量校正估计，在精度和成本之间取得更好平衡。",
+      "该方法降低了机制可解释性中大规模组件归因的计算门槛，有助于更实用的模型行为分析。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

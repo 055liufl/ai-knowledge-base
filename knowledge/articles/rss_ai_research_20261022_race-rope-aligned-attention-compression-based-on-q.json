@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-111",
+  "title": "RACE: RoPE-Aligned Attention Compression Based on Query-Key Activation Energies",
+  "source_url": "https://arxiv.org/abs/2610.28385",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RACE（RoPE-Aligned Attention Compression），针对大模型推理中 KV 缓存内存占用大的问题，提出一种基于查询-键激活能量的注意力头维度压缩方法。现有头维度压缩方法虽能减少 KV 缓存，但推理时需重建全维表示，带来额外解码 FLOPs 开销。RACE 通过校准集将预训练注意力转换为原生低维形式，使 KV 缓存存储与注意力计算同时降低，并利用 RoPE（旋转位置编码）对齐特性保持位置信息一致性。该工作形式化了将预训练注意力转为原生降维形式的设计考量，属于推理效率优化方向，对降低长上下文场景的显存与计算成本具有实用价值，值得关注大模型部署与推理加速的研究者和工程师阅读。",
+  "tags": [
+    "KV Cache",
+    "Attention Compression",
+    "RoPE",
+    "Inference Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:37:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有头维度压缩方法在推理时重建全维表示，抵消了 KV 缓存节省并增加解码 FLOPs，RACE 通过原生降维避免该开销",
+      "利用 RoPE 对齐特性设计压缩方案，可在降维同时保持位置编码信息的一致性",
+      "基于查询-键激活能量的校准方法，为预训练注意力转换为低维形式提供了可操作的设计框架",
+      "同时降低 KV 缓存存储与注意力计算，对长上下文推理部署具有实际意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

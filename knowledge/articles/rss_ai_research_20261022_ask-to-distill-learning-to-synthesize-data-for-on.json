@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261022-045",
+  "title": "Ask to Distill: Learning to Synthesize Data for On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2610.27450",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Ask-to-Distill 框架，研究在 on-policy distillation（OPD）中如何合成高质量训练问题。作者将问题视为分布知识的载体，指出 OPD 仅需少量训练问题即可成功，但如何评估新生成问题的价值、并在不访问正确答案的情况下学习生成更好的问题，仍是一个开放挑战。Ask-to-Distill 将合成问题视为分布诱导器（distribution elicitors），通过优化问题生成过程来提升蒸馏效果。该工作值得关注，因为它为数据合成与知识蒸馏的交叉领域提供了新视角：不再依赖大量标注数据或正确答案，而是学习如何\"问对问题\"来高效迁移分布知识。这对降低 LLM 训练数据成本、提升蒸馏效率具有潜在实用价值，也为合成数据质量评估提供了无需 ground truth 的新思路。",
+  "tags": [
+    "Distillation",
+    "Data Synthesis",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将合成问题视为分布知识的载体，问题质量直接决定 on-policy distillation 的知识迁移效率",
+      "提出无需正确答案即可评估和优化问题生成质量的方法，降低了对标注数据的依赖",
+      "Ask-to-Distill 通过优化问题生成过程来诱导更优的分布，为数据合成提供了新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

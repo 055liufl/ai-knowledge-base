@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261022-006",
+  "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
+  "source_url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文报道了 LiteLLM 1.107.0 版本在 PyPI 上被植入凭据窃取器和后门的供应链安全事件。LiteLLM 是一个流行的开源库，用于统一访问多种大语言模型 API，此次恶意版本可能影响大量依赖它的开发者和应用。文章详细分析了攻击手法、恶意代码行为以及潜在影响，并提供了检测与缓解建议。该事件凸显了 AI 工具链中第三方依赖的安全风险，值得开发者、安全团队和 AI 应用构建者高度关注。",
+  "tags": [
+    "Supply Chain Security",
+    "PyPI",
+    "LiteLLM",
+    "Malware"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:02Z",
+  "collected_at": "2026-10-22T13:32:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LiteLLM 1.107.0 在 PyPI 上被篡改，包含凭据窃取和后门功能，影响所有安装该版本的用户。",
+      "攻击者通过供应链攻击在合法包中植入恶意代码，凸显了依赖管理中的安全盲区。",
+      "开发者应立即检查是否使用了受影响版本，并采取轮换凭据、审计依赖等措施。",
+      "AI 工具链的流行库成为攻击目标，需加强软件物料清单（SBOM）和包签名验证。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

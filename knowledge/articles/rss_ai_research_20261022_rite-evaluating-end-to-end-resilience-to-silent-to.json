@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-080",
+  "title": "RITE: Evaluating End-to-End Resilience to Silent Tool Errors in E-Commerce Agentic Systems",
+  "source_url": "https://arxiv.org/abs/2610.27777",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RITE 基准，用于评估电商场景下工具使用型 LLM Agent 对“静默工具错误”的端到端韧性。所谓静默错误，是指工具调用返回了看似合理但实际错误的数值，却没有显式失败信号，这类错误会沿多步推理链传播并污染最终答案。RITE 将韧性拆解为检测、隔离与恢复等环节，系统考察 Agent 在开发与执行阶段工具输出分布漂移下的表现。该工作值得关注，因为现有 Agent 评测多聚焦工具调用成功率或最终准确率，忽视了无报错但错误的中间结果这一高风险失效模式；而电商场景对价格、库存、优惠等数值高度敏感，静默错误可能直接造成业务损失。RITE 为构建更可靠的 Agent 系统提供了可量化的评测框架与诊断维度。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Evaluation",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静默工具错误是无显式失败信号但数值错误的中间结果，会沿多步工具调用链传播并污染最终答案。",
+      "现有 Agent 评测侧重调用成功率与最终准确率，缺乏对端到端错误检测、隔离与恢复能力的系统度量。",
+      "电商场景中价格、库存、优惠等数值敏感，静默错误具有直接业务风险，是 Agent 可靠性的关键盲区。",
+      "RITE 将韧性拆解为可量化环节，为诊断和改进工具使用型 Agent 提供了结构化评测框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

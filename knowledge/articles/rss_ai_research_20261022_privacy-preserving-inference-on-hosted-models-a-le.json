@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-084",
+  "title": "Privacy-preserving inference on hosted models: a learned input-embedding transform for frozen Qwen3.8-27B",
+  "source_url": "https://arxiv.org/abs/2610.27817",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究托管语言模型场景下的隐私保护推理问题：用户发送给托管模型的每个提示词都能被服务提供方读取。作者提出一种方案，让提示词文本保留在客户端，而托管方只接收替代提示词的变换后向量。具体做法是：语言模型将文本转为向量这一步只发生一次，且使用公开查找表，因此可以在本地完成该步骤；随后将得到的向量通过一个仅 55.6M 参数的小型训练网络进行变换，再发送给托管方。托管方运行一个冻结的 27B 模型（Qwen3.8-27B）完成后续推理。该工作值得关注的原因在于，它试图在不修改大模型权重、不依赖同态加密等重型密码学手段的前提下，实现输入层面的隐私隔离，为托管大模型推理提供一种轻量化的隐私增强路径，对关注数据主权、合规部署和隐私计算的研究者与工程团队具有参考价值。",
+  "tags": [
+    "Privacy",
+    "LLM Inference",
+    "Embedding",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将文本到向量的转换放在客户端本地完成，托管方仅接收变换后的向量，从而避免原始提示词泄露",
+      "仅需训练一个 55.6M 参数的小型变换网络，托管方模型保持冻结，部署成本低、兼容现有托管服务",
+      "该方法属于输入表示层面的隐私增强，而非密码学级别的可证明安全，需评估向量反演等攻击风险"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

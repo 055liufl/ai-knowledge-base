@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-126",
+  "title": "Beyond the Sequentiality Bottleneck: A Hybrid Diffusion-Autoregressive Framework for Efficient Multimodal Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.28584",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 CoRAL（Collaborative Reasoning Asymmetric Learning）混合框架，旨在解决自回归模型（ARM）在推理中的“顺序性瓶颈”以及扩散语言模型（DLM）并行但语义连贯性不足的问题。其核心是 Asymmetric Planner-Executor（APE）架构：由 DLM Planner 并行生成 K 条多样化推理轨迹，再由大型 ARM Executor 从中选择最优路径并完成精细推理。该工作值得关注，因为它首次系统性地将扩散模型的并行生成能力与自回归模型的语义连贯性结合，为多模态推理效率与质量的平衡提供了新范式，可能推动推理加速与混合架构设计的研究。",
+  "tags": [
+    "Diffusion Model",
+    "Autoregressive Model",
+    "Multimodal Reasoning",
+    "Hybrid Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:38:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自回归模型存在顺序性瓶颈，扩散语言模型并行但语义连贯性差，两者互补。",
+      "CoRAL 通过非对称 Planner-Executor 架构，让 DLM 并行生成多条推理轨迹，ARM 负责选择与精炼。",
+      "该混合框架有望在保持推理质量的同时显著提升多模态推理效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

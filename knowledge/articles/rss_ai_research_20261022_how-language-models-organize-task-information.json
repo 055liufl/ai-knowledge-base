@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-076",
+  "title": "How Language Models Organize Task Information",
+  "source_url": "https://arxiv.org/abs/2610.27724",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究语言模型（LM）内部如何组织任务信息，提出用读出稀疏性指标 k* 来量化预测任务所需的最小特征数量，而非仅依赖稠密线性探针的可读性。作者在来自五个实验室的 19 个语言模型上评估了 14 个核心任务，发现十个基础模型在九个可靠可读任务上给出相似的特征计数，且接近稠密探针的性能。这项工作值得关注，因为它超越了“任务信息是否可读”的二元判断，直接揭示模型表示中任务信息的稀疏结构，为理解 LM 内部计算、探针可解释性以及模型间表示对齐提供了新的量化视角，对可解释性研究和模型诊断具有实用价值。",
+  "tags": [
+    "interpretability",
+    "probing",
+    "representation-learning",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 k* 指标衡量读出稀疏性，即恢复稠密探针 95% AUROC 所需的最小特征数，比稠密探针更直接反映任务信息组织方式。",
+      "在 19 个 LM、14 个任务上的实验表明，不同基础模型对同一任务的可读任务信息特征计数高度相似。",
+      "任务信息在 LM 表示中可能以稀疏、低维的形式组织，而非均匀分布。",
+      "该指标为跨模型表示比较和探针可解释性提供了新的量化工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

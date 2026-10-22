@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-131",
+  "title": "Adaptive Multi-Token Prediction: How far should we go?",
+  "source_url": "https://arxiv.org/abs/2610.28619",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多token预测（MTP）中推测视野（speculation horizon）的自适应选择问题。MTP通过一次目标模型前向传播草拟并验证多个token来加速语言模型解码，但最佳推测长度随上下文变化：较长的草稿在可靠时能更好地摊销计算成本，但在被拒绝后丢弃后缀会浪费算力。与自回归草拟可逐token决定停止不同，MTP必须在草拟前固定视野长度，因此需要一种自适应机制来动态确定\"应该走多远\"。该工作提出自适应多token预测方法，根据上下文动态调整推测视野，在加速解码与减少无效计算之间取得平衡。其价值在于提升MTP在实际部署中的效率，对推理加速和LLM服务优化具有直接意义。",
+  "tags": [
+    "MTP",
+    "推理加速",
+    "LLM",
+    "解码优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:38:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MTP的最佳推测视野随上下文动态变化，固定视野长度无法兼顾摊销收益与拒绝浪费。",
+      "与自回归草拟的逐token停止规则不同，MTP必须在草拟前确定视野，因此需要上下文感知的自适应策略。",
+      "自适应视野选择可在保持解码加速的同时减少因拒绝而丢弃后缀的无效计算。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

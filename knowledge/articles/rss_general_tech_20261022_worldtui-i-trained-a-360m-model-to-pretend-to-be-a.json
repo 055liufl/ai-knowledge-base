@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261022-003",
+  "title": "WorldTUI: I trained a 360M model to pretend to be a terminal",
+  "source_url": "https://simedw.com/2026/10/21/world-model-terminal/",
+  "source_platform": "rss_general_tech",
+  "summary": "WorldTUI 是一个实验性项目，作者训练了一个 360M 参数的小型语言模型，让它模拟终端环境的行为——即根据用户输入的命令，生成看似真实的终端输出（如 ls、cd、cat 等命令的响应），而不是真正执行命令。该项目本质上是一个“世界模型”思路在终端交互场景中的趣味应用：模型学习终端的状态转移规律，并自回归地生成后续屏幕内容。其价值在于展示了小模型在特定封闭域内可以扮演确定性系统，同时引发对 LLM 作为模拟器、交互式世界模型以及终端安全边界的讨论。对于研究者和开发者而言，它提供了一个低成本、可复现的案例，用于探索模型幻觉与模拟之间的界限、状态一致性维护、以及用生成模型替代真实执行环境的可能性与风险。",
+  "tags": [
+    "LLM",
+    "World Model",
+    "Terminal",
+    "Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:02Z",
+  "collected_at": "2026-10-22T13:32:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "360M 小模型可在封闭终端域内模拟命令输出，说明特定场景下小模型足以扮演确定性系统",
+      "该项目将 LLM 视为交互式世界模型，强调状态转移与屏幕内容的自回归生成",
+      "模拟终端而非真实执行，凸显了模型幻觉与模拟一致性之间的张力",
+      "此类实验为低成本交互环境模拟提供思路，但也提示不可将其用于真实系统操作"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261022-007",
+  "title": "Using LLM for confidence scoring is a bad idea",
+  "source_url": "https://rumple.github.io/blog/2026/10/20/asking-llm-for-confidence.html",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章探讨了使用大语言模型（LLM）为自身输出生成置信度分数的做法，并论证这是一种不可靠的设计。作者指出，LLM 的置信度分数本质上是模型生成的文本，而非经过校准的概率估计，因此容易受到提示词、上下文和模型幻觉的影响，无法真实反映答案的正确性。文章可能通过实验或案例分析展示了置信度分数与实际准确率之间的脱节，并建议开发者采用更可靠的替代方案，如外部验证、多模型投票或基于检索的校验。该内容值得关注，因为它挑战了当前 AI 应用开发中常见但危险的模式，提醒工程师避免将模型自评作为质量门控，对构建生产级 LLM 系统具有实践指导意义。",
+  "tags": [
+    "LLM",
+    "置信度评估",
+    "可靠性",
+    "AI工程"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:02Z",
+  "collected_at": "2026-10-22T13:32:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的置信度分数不是校准的概率，不能直接用于判断答案正确性。",
+      "依赖模型自评置信度会导致错误传播，尤其在需要高可靠性的生产场景中。",
+      "开发者应使用外部验证、多模型共识或检索增强等替代方案来评估输出质量。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

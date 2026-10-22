@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-020",
+  "title": "PORA: Learning When More Reasoning Pays Off for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.27119",
+  "source_platform": "rss_ai_research",
+  "summary": "PORA 是一篇关于 LLM Agent 推理预算分配的研究论文，核心问题是：在多步任务中，Agent 每次行动前应选择短推理还是长推理。长推理能通过避免后续错误提升最终任务成功率，但会消耗本可用于未来决策的有限推理预算，因此需要在每一步做出权衡。论文指出这一场景存在两大挑战：一是估计下游收益，即判断当前长推理能否带来足够的未来收益；二是学习何时值得为更多推理付费。PORA 提出一种学习式方法，让 Agent 根据任务状态动态决定推理长度，而非固定使用统一推理预算。该工作值得关注，因为它直击 Agent 实际部署中的成本-性能权衡问题：推理预算有限时，盲目增加推理并不总是最优，学会分配推理资源可能比单纯提升单步推理能力更具实用价值。它为 Agent 推理效率、自适应计算和测试时计算分配提供了新思路，对构建低成本、高可靠的多步 Agent 系统具有参考意义。",
+  "tags": [
+    "LLM Agent",
+    "推理预算",
+    "自适应计算",
+    "多步决策"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:33:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步 Agent 中推理预算有限，每步都面临短推理与长推理的权衡：长推理可减少后续错误，但会挤占未来步骤的预算。",
+      "核心挑战在于估计长推理带来的下游收益，并学习在何种状态下值得投入更多推理。",
+      "PORA 将推理长度选择建模为可学习决策，而非固定预算或启发式规则，有望提升预算利用效率。",
+      "该方向表明 Agent 的推理效率问题与单步推理能力同样重要，自适应计算分配是实用化关键。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

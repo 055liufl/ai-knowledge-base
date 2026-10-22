@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-038",
+  "title": "REM: What to Store, When to Recall, What to Forget in Experience Memory for Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.27377",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 REM（Retrieval-Experience Memory）框架，针对 LLM 编码智能体在长周期任务（如仓库级代码修改）中产生的经验难以复用的问题。现有记忆系统主要关注检索最相关的历史轨迹，但检索机制无法感知运行中智能体的实时状态，因此无法判断智能体何时需要经验、需要哪类经验以及经验应保留多久。REM 从三个维度重新设计经验记忆：存什么（What to Store）、何时召回（When to Recall）、何时遗忘（What to Forget）。它强调记忆管理应主动感知智能体当前上下文与任务阶段，而非被动依赖相似度检索，从而提升经验复用效率并控制记忆膨胀。该工作对构建可持续学习、低冗余的编码智能体具有参考价值，值得关注智能体记忆架构与长程任务优化的研究者与开发者阅读。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Coding Agent",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有经验记忆系统过度依赖检索相似度，无法感知运行中智能体的实时需求，导致经验复用时机错配。",
+      "经验记忆应同时解决存储内容选择、召回时机判断和遗忘策略三个问题，而非仅优化检索。",
+      "主动式记忆管理可减少冗余经验对上下文窗口的占用，提升长周期编码任务的效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

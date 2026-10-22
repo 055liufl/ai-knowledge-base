@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-127",
+  "title": "What Do RTL Repair Benchmarks Actually Measure?",
+  "source_url": "https://arxiv.org/abs/2610.28595",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了RTL修复基准测试实际测量的是什么，指出现有基准可能无法准确评估模型根据规范修复损坏RTL的能力。作者构建了RTLRepairDataset（5,784个训练对）、RTLRepairBench（459个测试用例，包含374个语法变异和85个行为变异）以及支持仿真和形式等价验证的评估框架。通过该基础设施，他们识别出两个测量混淆因素：仿真和形式评分可能受到非目标因素影响，导致评估结果偏离真实修复能力。这项工作值得关注，因为它揭示了RTL修复基准的潜在缺陷，为更严谨的硬件设计自动化评估提供了新工具和视角，对AI辅助硬件验证领域具有重要方法论意义。",
+  "tags": [
+    "RTL修复",
+    "基准测试",
+    "硬件验证",
+    "形式等价",
+    "评估方法"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:38:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有RTL修复基准可能因仿真和形式评分的混淆因素而无法准确测量模型修复能力",
+      "构建了包含训练集、测试集和评估框架的完整基础设施，支持语法和行为变异测试",
+      "识别出两个测量混淆因素，提示需要更严谨的基准设计来评估AI在硬件设计中的真实能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

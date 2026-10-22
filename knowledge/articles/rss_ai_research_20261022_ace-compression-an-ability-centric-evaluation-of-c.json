@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-091",
+  "title": "ACE-Compression: An Ability-Centric Evaluation of Compressed Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.27913",
+  "source_platform": "rss_ai_research",
+  "summary": "ACE-Compression 是一项针对压缩后大语言模型的能力中心评估研究。现有压缩评估通常只关注任务性能的保留程度，但作者指出这忽略了压缩对模型分布式知识的影响：任务分数无法揭示哪些底层能力在压缩后仍然存活、哪些悄然崩溃。为此，论文提出 ACE-Compression 评估框架，从能力维度系统分析压缩模型，而非仅看下游任务准确率。该工作值得关注，因为它挑战了当前模型压缩评估的默认范式，提示开发者在部署量化、剪枝或蒸馏模型时，需要更细粒度地验证模型能力是否发生结构性退化，这对压缩模型的可靠部署具有实际意义。",
+  "tags": [
+    "Model Compression",
+    "LLM Evaluation",
+    "Quantization",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅用任务性能评估压缩模型是不完整的，会掩盖底层能力的结构性损失",
+      "压缩会扰动分布在数十亿权重中的知识，需要能力级别的细粒度评估",
+      "ACE-Compression 提供了以能力为中心的评估视角，帮助识别哪些能力在压缩后崩溃",
+      "该框架对压缩模型的可靠部署和安全使用具有实践指导价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

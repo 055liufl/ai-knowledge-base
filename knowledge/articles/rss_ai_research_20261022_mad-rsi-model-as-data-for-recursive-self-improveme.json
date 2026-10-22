@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-106",
+  "title": "MaD-RSI: Model-as-Data for Recursive Self-Improvement of Agent Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.28201",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 MaD-RSI（Model-as-Data for Recursive Self-Improvement），针对 LLM Agent 的 harness（即围绕模型的提示、工具调用、控制流等外层框架）进行递归自我改进。现有 RSI 方法通过在特定数据集上搜索 harness 空间，能为某个 LLM 找到高度适配其能力与行为特征的 harness，但这种方式会导致学到的 harness 与目标 LLM 强耦合，泛化性受限。MaD-RSI 的核心思路是将模型本身视为数据，从而解耦 harness 与特定模型的绑定关系，使改进后的 harness 能够迁移到其他模型或场景。该工作值得关注，因为它触及 Agent 工程中一个关键矛盾：为单一模型定制的 harness 虽然短期性能高，却难以复用和持续演进；若能实现模型无关的 harness 自我改进，将显著提升 Agent 系统的可移植性与迭代效率，对 Agent 框架设计和自动化优化研究具有参考价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Self-Improvement",
+    "Harness"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:37:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RSI 方法为特定 LLM 搜索 harness 会导致强耦合，限制 harness 的泛化与迁移能力",
+      "MaD-RSI 将模型视为数据，试图解耦 harness 优化与目标模型的绑定关系",
+      "该方向有望提升 Agent harness 的可移植性，使自我改进成果可跨模型复用"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

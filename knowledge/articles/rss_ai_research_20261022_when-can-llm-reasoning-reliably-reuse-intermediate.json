@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261022-067",
+  "title": "When Can LLM Reasoning Reliably Reuse Intermediate Results?",
+  "source_url": "https://arxiv.org/abs/2610.27662",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型在推理过程中复用中间结果的可靠性条件。当前LLM通过采样完整解来提升解题概率，但每次尝试都从头开始，对于包含多个子问题的任务，所有答案必须在同一次尝试中全部正确。保留中间结果可以避免重复正确工作，但中间结果的错误可能影响后续尝试。作者分析了这种复用何时可靠以及所需计算量，针对局部重试（当无候选时停止）场景进行了理论建模。该研究为LLM推理中的计算效率与正确性权衡提供了形式化分析框架，对设计更高效的推理策略具有指导意义。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Inference Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:35:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "中间结果复用能减少重复计算，但错误传播会降低整体可靠性，需权衡计算节省与正确性风险。",
+      "对于多子问题任务，所有答案必须在同一次尝试中正确，这限制了复用策略的有效性。",
+      "局部重试策略下，复用可靠性取决于中间结果的错误率与后续步骤的容错能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

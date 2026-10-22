@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261022-089",
+  "title": "Staged Continual Adaptation of Multimodal Foundation Models for Japanese Financial Documents",
+  "source_url": "https://arxiv.org/abs/2610.27904",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多模态基础模型在日文金融文档上的分阶段持续适应过程，追踪一个84亿参数模型从无微调基线经过三个阶段（视觉-语言对齐、推理蒸馏、领域微调）的训练，并在五个文本输入基准上评估。核心发现是各阶段之间存在非加性交互：仅数学蒸馏会损害其他能力，而领域微调可能恢复部分性能。该研究值得关注，因为它首次系统刻画了多模态模型分阶段后训练中能力权衡的复杂动态，对金融等垂直领域的模型适配策略具有指导意义，并揭示了持续学习中的灾难性遗忘与知识迁移机制。",
+  "tags": [
+    "多模态模型",
+    "持续学习",
+    "领域适应",
+    "金融NLP",
+    "模型微调"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模态基础模型的分阶段后训练（视觉-语言对齐、推理蒸馏、领域微调）存在非加性交互，各阶段能力权衡无法简单叠加。",
+      "仅进行数学推理蒸馏会损害模型在其他任务上的表现，表明单一能力强化可能引发负面迁移。",
+      "领域微调阶段可能部分恢复因蒸馏而损失的能力，但恢复程度取决于阶段顺序与数据分布。",
+      "在日文金融文档这一垂直领域，持续适应策略需谨慎设计以避免灾难性遗忘并最大化知识保留。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

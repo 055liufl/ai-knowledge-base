@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-086",
+  "title": "SAPD: Learning from Agent Experience without Environment Interaction",
+  "source_url": "https://arxiv.org/abs/2610.27847",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SAPD（Self-Adaptive Policy Distillation，自适应策略蒸馏）方法，旨在解决 LLM Agent 训练中可执行环境稀缺这一瓶颈问题。传统上，扩展 Agent 训练需要大量可执行环境，而这些环境的构建、维护和运行成本严重限制了训练经验的规模。现有离线轨迹虽然可以复用交互经验，但在不重新访问环境的情况下有效改进当前策略仍很困难：监督微调（SFT）容易导致灾难性遗忘，并难以区分轨迹中优质与劣质动作。SAPD 的核心思路是从 Agent 已有的离线经验中学习，无需与环境交互，通过策略蒸馏机制自适应地利用离线轨迹来优化策略。该方法值得关注，因为它绕开了环境依赖这一 Agent 训练的核心瓶颈，为低成本、可扩展的 Agent 训练提供了新路径，对推动 LLM Agent 的规模化训练具有实际意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Policy Distillation",
+    "Offline RL"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:36:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可执行环境的稀缺是 LLM Agent 训练规模化的主要瓶颈，离线轨迹复用是重要突破口",
+      "直接使用 SFT 从离线轨迹学习会导致灾难性遗忘，且无法区分轨迹中动作的优劣",
+      "SAPD 通过策略蒸馏在不与环境交互的前提下自适应地优化 Agent 策略",
+      "该方法为低成本、可扩展的 Agent 训练提供了绕开环境依赖的新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

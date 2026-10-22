@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-007",
+  "title": "Fix, Not Just Resample: Bounded Compiler-Guided Repair in Lean 4",
+  "source_url": "https://arxiv.org/abs/2610.26942",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向 Lean 4 定理证明的有界编译器引导修复方法（Bounded Compiler-Guided Repair），旨在解决现有自动定理证明器过度依赖语言模型采样、而丢弃 Lean 编译器精确错误信息的问题。作者设计了一个有界、在线的步骤级修复模块：在证明搜索的每一步采样 K 个候选 tactic，对失败的 tactic 最多进行 R 次修复，并将 Lean 编译器返回的错误消息反馈给语言模型以指导重写，而非直接丢弃失败样本。该方法将编译器视为一个信息丰富的反馈源，把'采样-失败-丢弃'的范式转变为'采样-失败-诊断-修复'的闭环，在保持搜索有界可控的前提下提升了证明搜索的效率与成功率。其核心价值在于：一是显式利用了证明助手独有的结构化错误信号，这是纯采样方法所浪费的关键信息；二是通过有界修复机制控制了计算开销，避免无限制重试带来的成本爆炸；三是为 LLM 与形式化验证工具的深度耦合提供了可复用的工程范式。该工作对神经定理证明、程序合成与编译器反馈驱动的代码生成等方向具有参考意义，值得关注 LLM 与形式化方法交叉领域的研究者与开发者阅读。",
+  "tags": [
+    "Lean 4",
+    "Theorem Proving",
+    "LLM",
+    "Compiler Feedback",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:33:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Lean 编译器返回的精确错误消息是被纯采样方法丢弃的高价值信号，将其反馈给语言模型可显著提升失败 tactic 的修复成功率。",
+      "有界在线修复机制（每步采样 K 个候选、每个失败 tactic 最多修复 R 次）在利用反馈信息与控制计算开销之间取得平衡，避免无限制重试。",
+      "该方法将定理证明搜索从'采样-丢弃'范式转变为'采样-诊断-修复'闭环，为 LLM 与形式化验证工具的深度耦合提供了可复用范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

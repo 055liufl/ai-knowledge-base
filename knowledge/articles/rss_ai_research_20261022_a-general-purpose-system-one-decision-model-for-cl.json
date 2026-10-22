@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-017",
+  "title": "A general-purpose System One decision model for clinical records",
+  "source_url": "https://arxiv.org/abs/2610.27099",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Clinical System One (CS1)，一个 40 亿参数规模的临床记录决策模型，旨在以低计算成本从患者记录中快速提取可靠、类型化的判断，覆盖临床诊疗、医疗系统运营和生物医学发现等场景。CS1 的核心定位是充当“系统一”式的快速直觉判断模块，并配套设计了两种 agentic harness，使其与通用语言模型协同工作：由通用模型负责复杂推理与规划，CS1 负责高频、结构化的临床记录判读，从而在人群级别的大规模临床问题上兼顾效率与准确性。该工作值得关注的原因在于：其一，将认知科学中“快思考/慢思考”的双系统理念落地为具体的模型分工架构，为医疗 AI 提供了一种可扩展的工程范式；其二，40 亿参数的小模型在特定领域任务上替代大模型承担高频判断，有望显著降低全人群筛查与队列分析的算力成本；其三，typed judgments 的设计强调输出结构化、可校验的临床结论，对医疗场景下的可靠性与可审计性具有实际意义。整体而言，该研究对临床 NLP 的落地部署、小模型专业化路线以及 agent 协作架构均具有参考价值。",
+  "tags": [
+    "Clinical NLP",
+    "Agent",
+    "Small Language Model",
+    "Healthcare AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:33:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出 40 亿参数的领域专用决策模型 CS1，以“系统一”式快速判断承担临床记录中的高频结构化判读任务，与通用大模型形成快慢分工。",
+      "通过两种 agentic harness 实现小模型与通用语言模型的协同，为医疗场景下的可扩展 AI 架构提供工程范式。",
+      "typed judgments 强调输出类型化、可校验的临床结论，有助于提升医疗 AI 的可靠性与可审计性。",
+      "小模型专业化路线有望大幅降低全人群临床问题筛查与队列分析的算力成本。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

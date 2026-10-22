@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261022-030",
+  "title": "TEX: Test-Time Scaling Testing Agents via Execution-based Cross-Validation",
+  "source_url": "https://arxiv.org/abs/2610.27290",
+  "source_platform": "rss_ai_research",
+  "summary": "TEX 是一种面向测试用例生成的测试时扩展（test-time scaling）框架，旨在解决现有方法在长程任务中难以扩展的问题。现有测试时扩展方法要么孤立地评估候选方案，要么简单聚合轨迹，无法有效应对需要多步推理的复杂任务。TEX 采用执行驱动的交叉验证机制：并行启动多个智能体分别生成测试用例和补丁，然后将每个测试与每个补丁交叉执行，形成一个 K×K 的反馈矩阵。该矩阵提供了丰富的相互验证信号，使智能体能够基于实际执行结果而非仅靠语言模型自评来筛选和优化候选方案。这种方法将测试生成与补丁生成解耦并交叉验证，显著提升了长程任务中的扩展效率和可靠性。TEX 值得关注，因为它提出了一种新的测试时计算扩展范式，将执行反馈引入多智能体协作流程，对提升代码生成与测试自动化系统的鲁棒性具有实际意义，也为测试时扩展方法在复杂软件工程任务中的应用提供了新思路。",
+  "tags": [
+    "Test-Time Scaling",
+    "Multi-Agent",
+    "Code Generation",
+    "Test Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有测试时扩展方法在长程任务中因孤立评估或轨迹聚合而难以扩展，TEX 通过并行智能体与交叉执行形成 K×K 反馈矩阵来解决该问题。",
+      "执行驱动的交叉验证将测试与补丁相互验证，提供了比语言模型自评更可靠的筛选信号。",
+      "将测试生成与补丁生成解耦并交叉执行，是一种可扩展的多智能体协作范式，适用于复杂软件工程任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

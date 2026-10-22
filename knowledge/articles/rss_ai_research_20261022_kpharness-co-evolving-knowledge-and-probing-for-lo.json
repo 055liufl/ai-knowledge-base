@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-043",
+  "title": "KPHarness: Co-Evolving Knowledge and Probing for Long-Horizon Gaming Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.27417",
+  "source_platform": "rss_ai_research",
+  "summary": "KPHarness 是一个面向长时程游戏任务的执行框架（harness）自适应方法，针对冻结的视觉-语言-动作（VLA）模型，通过“知识-探测协同演化”机制改进外部执行框架。该工作的核心洞察是：一条失败的游戏轨迹只能说明智能体需要干预，却无法直接揭示执行框架应如何调整；因此，有效的框架自适应需要主动收集诊断性证据，而非仅提出替代性的恢复规则。KPHarness 让恢复知识与探测策略协同演化：恢复知识提供候选干预方向，探测则负责在环境中获取诊断证据以验证和修正这些知识，从而在模型参数冻结的前提下持续提升长时程游戏表现。该研究值得关注之处在于，它把智能体改进的着力点从模型本身转向外部执行框架，为无法微调或成本高昂的冻结大模型提供了一条可扩展的自我改进路径；同时，“先诊断、后修复”的思路对构建更可靠的 Agent 系统具有方法论意义，可迁移至需要长时程规划与错误恢复的其他具身或交互式任务。",
+  "tags": [
+    "Agent",
+    "VLA",
+    "Long-Horizon Planning",
+    "Self-Improvement"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "失败轨迹只能表明需要干预，不能直接给出框架应如何修改，因此框架自适应必须以收集诊断证据为前提。",
+      "在冻结 VLA 模型参数的前提下，通过知识-探测协同演化改进外部执行框架，是一条低成本、可扩展的智能体自我改进路径。",
+      "恢复知识与探测策略相互驱动：知识提出干预假设，探测在环境中获取证据并反过来修正知识。",
+      "“先诊断、后修复”的框架自适应范式可迁移到其他长时程交互任务中的错误恢复与规划场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

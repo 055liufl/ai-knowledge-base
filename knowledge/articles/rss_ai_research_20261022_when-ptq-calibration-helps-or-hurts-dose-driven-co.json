@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-040",
+  "title": "When PTQ Calibration Helps or Hurts: Dose-Driven Collapse and Validation-Gated Abstention in Quantized Text Embedders",
+  "source_url": "https://arxiv.org/abs/2610.27397",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究文本嵌入模型在训练后量化（PTQ）校准中的两个关键问题：校准的深度与是否应该校准。作者在三个嵌入模型（e5-base-v2、BGE-M3、EmbeddingGemma-300m）上进行4比特权重量化，共161次校准实验，发现固定校准流程的结果可能从性能提升变为性能下降，甚至出现剂量驱动的崩溃现象。研究提出验证门控弃权机制，即在校准前通过验证集判断是否值得校准，以避免有害校准。该工作揭示了PTQ校准并非总是有益，为量化嵌入模型的部署提供了实用指导，值得关注。",
+  "tags": [
+    "PTQ",
+    "Embedding",
+    "Quantization",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:34:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PTQ校准对文本嵌入模型的效果高度不稳定，固定流程可能从增益变为损害。",
+      "存在剂量驱动的崩溃现象，过度校准会导致性能急剧下降。",
+      "验证门控弃权机制可有效判断是否进行校准，避免有害校准。",
+      "在多个嵌入模型和大量实验上验证了结论的普适性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

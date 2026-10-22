@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261022-011",
+  "title": "SPEM: Structure-Aware Procedural Memory for Efficient Skill Use in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.26995",
+  "source_platform": "rss_ai_research",
+  "summary": "SPEM（Structure-Aware Procedural Memory）是面向 LLM Agent 的轻量级程序性记忆框架，旨在解决技能库规模扩大后技能调用效率与准确性的矛盾。现有方案存在两类问题：全量加载技能会带来高昂的 token 与运行时开销；扁平语义检索则把技能当作独立文本条目，忽略技能之间的依赖关系、执行顺序、状态转移和数据流约束。SPEM 提出以结构感知的方式组织程序性记忆，在检索与调用技能时同时考虑语义相关性和技能间的结构约束，从而在降低上下文开销的同时提升技能组合与执行的正确性。该工作值得关注，因为它切中了 Agent 从单技能演示走向大规模可复用技能库时的核心瓶颈——如何高效、可靠地选择并编排技能。对于构建工具调用、工作流自动化、多步骤任务执行等系统的开发者而言，结构感知的技能记忆有望显著减少无效检索和错误组合，并为 Agent 记忆架构提供新的设计范式。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Skill Retrieval",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-22T13:31:05Z",
+  "collected_at": "2026-10-22T13:33:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扁平语义检索忽略技能依赖、执行顺序、状态转移和数据流约束，是技能库扩展后的主要瓶颈",
+      "全量加载技能带来高 token 和运行时开销，需要按需、结构感知的技能调用机制",
+      "SPEM 将程序性记忆组织为结构化形式，在检索时兼顾语义相关性与技能间结构约束",
+      "该方向对构建大规模可复用技能库的 Agent 系统具有架构层面的参考价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
