@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-016",
+  "title": "Self-Improving Agents with World Model Predictive Paths",
+  "source_url": "https://arxiv.org/abs/2610.28945",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种面向 LLM 智能体的测试时自我改进框架，灵感来自控制理论中的模型预测路径积分（MPPI）方法。核心思路是将多分支预测分析与基于经验的决策相结合：智能体在部署阶段不仅依据当前观测行动，还会并行展开多条未来轨迹进行预测评估，并利用积累的交互经验对候选路径进行加权选择，从而在不更新模型参数的情况下提升决策质量。该工作填补了'预测未来结果'与'利用历史交互经验'如何协同支持决策这一研究空白，对构建可在线适应、持续改进的智能体系统具有参考价值。其意义在于把经典最优控制中的采样式规划思想迁移到 LLM 智能体领域，为测试时计算扩展提供了新范式，可能影响 Agent 规划、工具调用与长程任务执行等方向的研究与工程实践。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Planning",
+    "Test-time Compute"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 MPPI 采样式模型预测控制引入 LLM 智能体，实现无需参数更新的测试时自我改进",
+      "多分支未来预测与历史交互经验联合加权，弥补单一决策依据的不足",
+      "为智能体在线适应与长程规划提供了可扩展的测试时计算框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

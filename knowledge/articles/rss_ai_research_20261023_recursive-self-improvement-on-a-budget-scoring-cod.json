@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-029",
+  "title": "Recursive Self-Improvement on a Budget: Scoring Code Edits Before They Run",
+  "source_url": "https://arxiv.org/abs/2610.29121",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究编码智能体在递归自我改进（RSI）场景下的预算受限问题：智能体需要重写自身脚手架（scaffold），但在编辑被执行评估之前就必须决定扩展哪一个候选编辑，最终搜索还需收敛到单一智能体。作者提出一种轻量级方法：每次运行仅拟合一个线性读出模型，输入为父代在steering-split上的求解率以及候选diff的八个坐标特征，训练数据来自96个脚手架编辑，每个编辑由16实例拟合集上的四次评估标注，随后冻结系数用于打分。实验以HumanEval+为基准，保留48个实例作为steering集。该工作值得关注之处在于：它将昂贵的'先运行再评估'流程替换为廉价的'运行前打分'，显著降低RSI搜索成本；同时揭示了在极低预算下利用简单线性模型进行编辑筛选的可行性，为自改进智能体的高效搜索提供了新思路，对自动化代码生成与智能体架构搜索领域具有实用价值。",
+  "tags": [
+    "Agent",
+    "Code Generation",
+    "Self-Improvement",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在递归自我改进中，编辑的评估成本是主要瓶颈，运行前打分可大幅降低搜索开销",
+      "仅用父代求解率和diff的八个坐标特征拟合线性读出模型，即可有效筛选候选脚手架编辑",
+      "冻结系数的轻量级打分器避免了每次搜索的重复训练，适合预算受限场景",
+      "HumanEval+上的steering-split设计为自改进智能体的评估提供了可复现的基准协议"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

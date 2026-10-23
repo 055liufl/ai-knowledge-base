@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-024",
+  "title": "AutoFraming: Synthesizing Dynamic Frames of C Code with LLMs",
+  "source_url": "https://arxiv.org/abs/2610.29046",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 AutoFraming，一种利用大语言模型（LLM）为 C 代码自动合成动态帧条件（frame conditions）的方法。帧条件是形式化规约的关键组成部分，用于描述程序执行期间可能或不可能被修改的内存位置。现有 LLM 合成规约的工作主要关注功能契约和循环不变式，而系统性地忽略了帧条件，导致规约不完整。AutoFraming 旨在填补这一空白，通过 LLM 从 C 源码中推断动态帧，从而提升形式化验证的自动化程度和规约的完备性。该工作值得关注，因为帧条件对于内存安全验证、模块化推理和程序正确性证明至关重要，而 LLM 在此类结构化形式化任务上的能力仍处于探索阶段。若方法有效，将显著降低人工编写帧条件的成本，推动 LLM 在形式化方法与软件验证领域的实际应用。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "C Code",
+    "Specification Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 规约合成工作忽视帧条件，导致形式化规约不完整",
+      "帧条件描述内存修改范围，是 C 程序形式化验证的关键组成部分",
+      "AutoFraming 利用 LLM 从源码自动推断动态帧，有望降低人工规约成本",
+      "该方向连接 LLM 与形式化方法，对内存安全验证具有实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

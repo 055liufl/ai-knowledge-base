@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-064",
+  "title": "First Passage Attention",
+  "source_url": "https://arxiv.org/abs/2610.22714",
+  "source_platform": "rss_ai_research",
+  "summary": "First Passage Attention (FPA) 是一种新型注意力机制，旨在解决现有带遗忘门的 softmax 注意力机制无法选择性擦除中间上下文而保留早期结构相关 token 的问题。传统方法通过沿 key-query 路径累加衰减贡献，由于累加具有单调性，无法实现这种选择性遗忘。FPA 将路径求和转变为路径极值，根据学习到的标量沿路径的最深下降按比例降低 key 的 logit。该工作来自 arXiv 预印本，属于注意力机制改进的基础研究，对长上下文建模和需要精细记忆控制的序列任务具有潜在影响，值得关注。",
+  "tags": [
+    "Attention",
+    "Transformer",
+    "Long Context",
+    "Forget Gate"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:12:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有带遗忘门的注意力机制因路径累加的单调性，无法选择性擦除中间上下文同时保留早期重要 token。",
+      "FPA 用路径极值替代路径求和，通过标量最深下降按比例调整 key 的 logit，实现更灵活的记忆控制。",
+      "该方法为长序列建模中的选择性遗忘提供了新思路，可能提升模型对结构相关 token 的保留能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

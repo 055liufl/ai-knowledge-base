@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-040",
+  "title": "LLM-Based Exogenous World Modeling for Dynamic Scheduling",
+  "source_url": "https://arxiv.org/abs/2610.29308",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出将预训练大语言模型（LLM）用作结构化世界模型的外生组件，用于动态调度场景中预测不确定的未来作业到达。动态调度需要在处理在线到达作业的同时预判未来任务，因为在线性拖期目标下，糟糕的决策会累积下游成本。作者利用 afterstate 分解，将已知的确定性车间状态转移与不确定的外生到达过程分离，让 LLM 专门负责建模外生不确定性部分。这一思路值得关注，因为它将 LLM 从传统的文本生成或对话角色拓展到运筹优化与决策建模领域，为动态调度中的不确定性预测提供了新的范式，可能降低对专用预测模型的依赖，并提升调度策略的前瞻性。",
+  "tags": [
+    "LLM",
+    "World Model",
+    "Scheduling",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 可作为结构化世界模型的外生组件，专门预测动态调度中不确定的未来作业到达。",
+      "afterstate 分解将确定性车间转移与不确定性外生过程分离，使 LLM 聚焦于其擅长的概率预测部分。",
+      "该方法为动态调度中的非线性拖期目标提供了前瞻性决策支持，有望减少下游累积成本。",
+      "该工作拓展了 LLM 在运筹优化与决策建模中的应用边界，而非仅限文本生成任务。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

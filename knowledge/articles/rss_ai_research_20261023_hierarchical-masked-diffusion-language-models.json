@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-135",
+  "title": "Hierarchical Masked Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2610.29255",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出分层掩码扩散语言模型（Hierarchical Masked Diffusion Language Models），针对标准掩码扩散模型使用统一噪声调度、未显式编码位置解析优先级的局限。作者观察到许多任务存在天然的位置优先级，例如文档标题和章节标题可指导正文生成，数独单元格之间存在约束关系。通过引入分层结构，模型能够显式建模这种优先级，从而提升生成质量与效率。该工作值得关注，因为它为扩散语言模型提供了更符合任务结构的分层生成机制，有望在结构化文本生成、约束满足问题等场景中超越传统自回归模型和标准掩码扩散模型。",
+  "tags": [
+    "Diffusion Model",
+    "Language Model",
+    "Hierarchical Generation",
+    "Masked Diffusion"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:16:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准掩码扩散语言模型对所有位置使用统一噪声调度，忽略了任务中天然存在的生成优先级。",
+      "分层掩码扩散通过显式编码位置优先级（如标题先于正文、数独约束传播），可提升结构化生成的质量。",
+      "该方法为扩散语言模型在需要层次化或约束性推理的任务中提供了新的建模范式。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-032",
+  "title": "LaVGuard: Selective Decoding for Contextual Value Drift",
+  "source_url": "https://arxiv.org/abs/2610.29135",
+  "source_platform": "rss_ai_research",
+  "summary": "LaVGuard 提出了一种针对大语言模型上下文价值漂移的选择性解码方法。该研究指出，即使回复内容本身安全，也可能在任务执行中推广与任务目标相冲突的价值优先级，例如在要求维护自主性时却要求服从。作者将上下文价值漂移建模为任务相关的解码问题，并明确允许价值变化。LaVGuard 将授权的十维价值画像与对可见前缀中表达价值的冻结估计分离，通过画像相关的密度门控来选择何时评估候选。该方法值得关注，因为它从解码层面而非仅内容安全层面处理价值对齐问题，为构建更可控、更符合任务意图的模型行为提供了新思路。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Decoding",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "内容安全的回复仍可能产生任务相关的价值漂移，需在解码阶段进行控制。",
+      "将价值漂移建模为任务相关的解码问题，并允许授权范围内的价值变化。",
+      "通过分离授权价值画像与可见前缀的价值估计，实现选择性解码干预。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

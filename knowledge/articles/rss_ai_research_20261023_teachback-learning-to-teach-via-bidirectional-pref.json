@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-034",
+  "title": "TeachBack: Learning to Teach via Bidirectional Preference Optimization for On-Policy Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.29167",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 TeachBack 方法，针对在线自蒸馏（OPSD）中教师模型虽能生成高准确率轨迹、但轨迹未必适合学生学习的问题，引入双向偏好优化（Bidirectional Preference Optimization）。OPSD 让同一模型在获得特权信息（如参考解答）时充当教师，学生从教师轨迹中学习。作者发现仅凭准确率筛选轨迹不足，直接暴露完整解答可能损害学习效果。TeachBack 通过双向偏好优化同时建模“教”与“学”的匹配关系，使教师输出更贴合学生当前能力。该工作值得关注，因为它揭示了自蒸馏中教师质量与学生可学性之间的错配问题，并提出可操作的优化框架，对提升语言模型自我改进与推理蒸馏的样本效率具有参考价值。",
+  "tags": [
+    "Self-Distillation",
+    "Preference Optimization",
+    "LLM",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线自蒸馏中教师轨迹的准确率高并不等于适合学生学习，存在可学性错配问题。",
+      "直接向学生暴露完整参考解答可能反而降低学习效果。",
+      "双向偏好优化可同时优化教师输出与学生接受度，提升自蒸馏效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

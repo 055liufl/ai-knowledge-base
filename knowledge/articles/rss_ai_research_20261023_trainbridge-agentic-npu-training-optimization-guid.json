@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-127",
+  "title": "TrainBridge: Agentic NPU Training Optimization Guided by GPU Compilation Evidence",
+  "source_url": "https://arxiv.org/abs/2610.29171",
+  "source_platform": "rss_ai_research",
+  "summary": "TrainBridge 是一篇研究如何提升昇腾 NPU 训练效率的论文。作者观察到，在 NPU 训练程序中，算子融合等框架级编译优化往往只被部分应用，导致计算碎片化和可避免的执行开销。传统的 profiling 引导调优虽能缓解这些问题，但依赖昂贵的试错过程。为此，论文提出 TrainBridge，一种由 GPU 编译证据引导的智能体（agentic）方法，用于自动化 NPU 训练优化。其核心思路是借助 GPU 编译过程中积累的优化证据来指导 NPU 上的训练程序优化，从而减少人工试错成本。该工作值得关注，因为它将智能体方法引入异构硬件编译优化领域，探索了跨平台编译知识迁移的可行性，对提升国产 AI 芯片训练效率、降低优化门槛具有实际意义，也为 agentic AI 在系统软件优化中的应用提供了新案例。",
+  "tags": [
+    "NPU",
+    "Agent",
+    "Compilation",
+    "Training Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:15:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NPU 训练程序中框架级编译优化（如算子融合）应用不充分，存在计算碎片化和可避免的执行开销",
+      "Profiling 引导的调优有效但试错成本高，需要自动化手段降低优化门槛",
+      "利用 GPU 编译证据引导 NPU 优化，体现了跨平台编译知识迁移的思路",
+      "Agentic 方法为异构硬件训练优化提供了新的自动化范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

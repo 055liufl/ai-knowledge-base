@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-130",
+  "title": "Resuming Vision-Language Inference across Onboard Interruptions",
+  "source_url": "https://arxiv.org/abs/2610.29183",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究在低地球轨道卫星上执行视觉语言模型（VLM）推理时，因电源、热约束、故障重启和载荷竞争导致推理被中断的问题。每次关机都会丢弃易失的激活值和KV缓存，使得跨多个执行窗口的请求无法直接恢复。作者提出跨板载中断恢复VLM推理的方法，旨在避免从头重新计算，从而在资源受限的商业现货载荷上实现灵活且高效的观测数据处理。该工作值得关注，因为它解决了星载AI推理的实际可靠性问题，对边缘部署和容错推理具有参考价值。",
+  "tags": [
+    "VLM",
+    "Edge AI",
+    "Fault Tolerance",
+    "Onboard Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:16:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "星载VLM推理常因电源、热和故障中断而跨多个执行窗口，需支持断点恢复。",
+      "中断会丢失激活值和KV缓存，恢复机制需避免完全重算以节省资源。",
+      "该问题对商业现货载荷上的边缘AI部署具有普遍性，容错推理设计至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

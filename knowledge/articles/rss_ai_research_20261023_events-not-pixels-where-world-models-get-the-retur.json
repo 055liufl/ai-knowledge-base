@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-046",
+  "title": "Events, Not Pixels: Where World Models Get the Return Wrong",
+  "source_url": "https://arxiv.org/abs/2610.29435",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，当前世界模型（World Models）在规划任务中主要依据渲染帧的视觉保真度来评估，但视觉上逼真的想象轨迹仍可能分配错误的回报（return），导致规划失效。作者提出一种转换级诊断方法，通过将想象转换替换为真实转换，测量回报误差的减少量，从而定位视觉保真度与回报准确性之间的错配来源。这项工作值得关注，因为它挑战了以像素级渲染质量作为世界模型核心评价标准的惯例，强调规划场景下回报预测准确性的重要性，并为改进世界模型训练与评估提供了可操作的诊断工具，对基于模型的强化学习和规划研究具有直接指导意义。",
+  "tags": [
+    "World Models",
+    "Model-Based RL",
+    "Planning",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉逼真的世界模型轨迹仍可能产生错误的回报估计，像素级渲染质量不足以衡量规划性能。",
+      "转换级诊断通过替换想象转换为真实转换来量化回报误差来源，可定位模型错配的具体环节。",
+      "世界模型的评估应更关注回报预测准确性，而非仅依赖帧渲染保真度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-028",
+  "title": "GRAM: Group-wise Rank-Aware Model Merging via Subspace Alignment",
+  "source_url": "https://arxiv.org/abs/2610.29110",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 GRAM（Group-wise Rank-Aware Model Merging via Subspace Alignment），一种面向多任务部署的模型合并方法，特别针对医疗等受监管领域——这些领域中模型因数据隐私限制只能在本地微调，聚合只能基于微调后的权重进行。现有方法对所有任务采用统一合并策略，忽略了各任务学习子空间之间的几何关系，当任务更新方向存在冲突或秩结构差异时会导致性能下降。GRAM 的核心思路是按组进行秩感知的合并，并通过子空间对齐来协调不同任务权重更新之间的几何关系，从而在无需原始数据的情况下实现更优的多任务模型聚合。该工作值得关注的原因在于：模型合并是降低多任务部署成本的关键技术，而隐私约束下的权重级聚合是真实落地场景中的刚性需求；同时，从子空间几何角度切入合并问题，为理解和对齐微调权重提供了新的理论视角，对医疗等合规敏感行业的模型部署具有直接实用价值。",
+  "tags": [
+    "Model Merging",
+    "Subspace Alignment",
+    "Multi-task Learning",
+    "Privacy-Preserving"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有模型合并方法对所有任务采用统一合并，忽略了任务子空间之间的几何关系，这是性能损失的重要来源",
+      "GRAM 通过分组和秩感知策略实现子空间对齐，在仅有权重、无原始数据的约束下完成多任务聚合",
+      "该方法面向医疗等隐私敏感场景，权重级合并不依赖训练数据，契合合规部署需求",
+      "从子空间几何角度建模合并问题，为理解微调权重的可合并性提供了新视角"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

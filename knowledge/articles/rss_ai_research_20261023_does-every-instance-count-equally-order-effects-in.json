@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-025",
+  "title": "Does Every Instance Count Equally? Order Effects in LLM Multi-Instance Processing",
+  "source_url": "https://arxiv.org/abs/2610.29057",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型在多实例处理（MIP）场景下的顺序效应问题。用户常让 LLM 分析一组独立输入（如产品评论、社交媒体帖子）并返回聚合答案，模型需为每个实例推断二元标签并找出出现频率最高的标签。研究发现，实例在输入中的排列顺序会显著影响模型的聚合判断，即并非每个实例被平等对待，存在位置偏差。这一发现对依赖 LLM 进行批量信息汇总的应用（如舆情分析、评论摘要、数据标注）具有重要警示意义，提示开发者需关注输入顺序带来的系统性偏差，并可能通过重排、集成等策略缓解。该工作属于 LLM 鲁棒性与可靠性研究的前沿方向，值得研究者与开发者关注。",
+  "tags": [
+    "LLM",
+    "鲁棒性",
+    "顺序效应",
+    "多实例处理"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 在多实例聚合任务中存在显著的位置/顺序偏差，实例并非被平等对待。",
+      "输入顺序会系统性影响最终聚合标签的推断结果，可能导致错误结论。",
+      "该偏差对评论分析、舆情汇总等批量处理应用构成实际风险，需在工程中引入顺序扰动或集成策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-049",
+  "title": "An Exact 93-Move Solution to a Nonlocal Crystal-Exchange Puzzle",
+  "source_url": "https://arxiv.org/abs/2610.29493",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究游戏《Order of the Sinking Star》中一个关卡的求解问题，将其建模为 11×11 棋盘上的“晶体交换”谜题。核心机制是：玩家发出方向指令后，会与所选行或列中最近的晶体交换位置，不受距离限制；只有当该方向上没有任何晶体时，玩家才能进行普通的单格移动。关卡出口由两个门控制，只有当全部 16 个晶体都位于目标格时，门才会开启。作者证明了求解该关卡所需的最少方向指令数，并给出了一个显式的 93 步指令解，同时论证了其最优性。该工作属于组合谜题与搜索算法交叉领域，展示了非局部移动规则下状态空间搜索的复杂性，对理解滑动类谜题的可解性边界、最优解构造以及启发式搜索设计具有一定参考价值。",
+  "tags": [
+    "组合搜索",
+    "谜题求解",
+    "最优解",
+    "状态空间"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:12:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将游戏关卡抽象为 11×11 棋盘上的非局部交换谜题，并证明最少需要 93 步方向指令",
+      "移动规则中“与最近晶体交换”使状态转移具有非局部性，显著增加搜索空间复杂度",
+      "给出显式最优解并论证其最小性，为同类谜题的最优解构造提供方法参考"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

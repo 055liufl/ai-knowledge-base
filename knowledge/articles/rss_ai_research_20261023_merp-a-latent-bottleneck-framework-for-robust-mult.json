@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-045",
+  "title": "MERP: A Latent-Bottleneck Framework for Robust Multi-Modal Multi-Label Emotion Recognition",
+  "source_url": "https://arxiv.org/abs/2610.29430",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出MERP（多模态情感识别感知器）框架，针对多模态多标签情感识别中训练与部署阶段模态可用性不一致的问题。现有模型通常依赖完整的文本、视觉和声学三模态数据训练，但在实际部署中常面临部分模态缺失，导致性能急剧下降。MERP通过潜在瓶颈（latent-bottleneck）结构学习紧凑表示，能够从任意可用模态子集中保留情感相关证据，从而提升模型在模态不完整场景下的鲁棒性。该工作值得关注的原因在于：真实世界的多模态情感计算系统（如客服质检、心理健康监测、人机交互）几乎无法保证所有传感器数据始终可用，而现有研究多假设模态齐全，存在显著的训练-测试鸿沟。MERP直接面向这一工程痛点，提出了一种兼顾表示压缩与模态缺失鲁棒性的统一框架，对推动多模态情感识别从实验室走向实际部署具有参考价值。",
+  "tags": [
+    "多模态学习",
+    "情感识别",
+    "鲁棒性",
+    "模态缺失"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实部署中模态缺失是常态，训练时使用完整模态会导致严重的训练-测试分布偏移",
+      "潜在瓶颈结构可迫使模型学习与模态无关的情感证据表示，从而支持任意模态子集输入",
+      "多标签情感识别比单标签更贴近真实情感状态的多维共存特性，但鲁棒性研究仍不足"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

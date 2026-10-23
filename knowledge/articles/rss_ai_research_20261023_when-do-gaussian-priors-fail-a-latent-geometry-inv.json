@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-090",
+  "title": "When Do Gaussian Priors Fail? A Latent Geometry Investigation of RL Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2610.28849",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了潜在扩散模型在强化学习微调下高斯先验的失效问题。作者指出，标准VAE的KL项不仅忽略模态结构，还主动惩罚分离性和紧致性，导致多模态数据被压缩到重叠的潜在空间。在RL微调时，这种结构性限制会引发问题。论文通过潜在几何分析揭示了高斯先验的局限性，为改进RL微调下的生成模型提供了理论依据。该工作值得关注，因为它挑战了潜在扩散模型中普遍采用的高斯先验默认设置，并指出了在RL场景下需要重新思考潜在空间正则化的方向。",
+  "tags": [
+    "Diffusion Models",
+    "RL Fine-Tuning",
+    "VAE",
+    "Latent Space"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:14:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准VAE的KL项会主动惩罚潜在空间的分离性和紧致性，导致多模态数据被压缩到重叠区域。",
+      "高斯先验在基础生成中无问题，但在RL微调下会带来结构性限制。",
+      "需要重新设计潜在空间正则化以适配RL微调场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

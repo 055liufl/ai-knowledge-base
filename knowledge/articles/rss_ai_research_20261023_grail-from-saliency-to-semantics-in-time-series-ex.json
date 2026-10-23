@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-023",
+  "title": "GRAIL: From Saliency to Semantics in Time-Series Explanation",
+  "source_url": "https://arxiv.org/abs/2610.29036",
+  "source_platform": "rss_ai_research",
+  "summary": "GRAIL 是一篇关于时间序列模型可解释性的研究论文（arXiv:2610.29036），核心问题是：现有方法通过逐时间步的显著性（saliency）来解释模型，但单个时间步并非语义单元——有意义的模式往往跨越多个样本，而非存在于某一步中。因此逐时间步的显著性存在噪声大、维度高、不稳定等问题。已有方法通过引入固定大小窗口并将其视为合作博弈中的独立参与者来缓解，但该摘要指出这种做法仍有局限。GRAIL 提出从显著性（saliency）走向语义（semantics），旨在将低层、噪声大的时间步证据聚合为更具语义意义的解释单元。该工作值得关注，因为它触及时间序列可解释性的一个根本性缺陷：解释粒度与语义粒度不匹配，若能有效解决，将提升时间序列模型在医疗、金融、工业监控等高风险场景中的可信度与可用性。",
+  "tags": [
+    "Time Series",
+    "Explainability",
+    "Saliency",
+    "Cooperative Game"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单个时间步不是语义单元，有意义的模式跨越多个样本，逐时间步显著性因此噪声大且不稳定",
+      "固定大小窗口加合作博弈的现有方案仍将窗口视为独立参与者，未能真正解决语义粒度问题",
+      "解释时间序列模型需要同时完成证据定位与语义知识提取两个层次的任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

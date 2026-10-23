@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20261023-012",
+  "title": "Running RAG with a (small) language model in the browser",
+  "source_url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章展示了如何在浏览器中运行检索增强生成（RAG）系统，并且使用的是小型语言模型。作者通过实际演示，证明了无需依赖云端大模型或复杂后端基础设施，仅靠浏览器端的 JavaScript/WASM 技术栈即可完成文档检索与生成式问答的完整流程。文章的核心价值在于降低了 RAG 应用的部署门槛：小型模型（如经过量化的轻量级 LLM）配合浏览器内向量检索，可以在保护用户隐私（数据不出本地）的同时提供可接受的问答质量。对于希望构建离线优先、隐私敏感或低成本 AI 应用的开发者而言，这是一个极具参考价值的实践方案。它反映了当前 AI 工程的一个重要趋势——模型小型化与端侧推理的结合，使得 RAG 从服务器集群走向个人设备。虽然小型模型在复杂推理上无法与大型模型媲美，但在特定领域文档问答场景中已足够实用，且响应延迟和运行成本大幅降低。",
+  "tags": [
+    "RAG",
+    "Browser",
+    "Small Language Model",
+    "WASM",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:31Z",
+  "collected_at": "2026-10-23T13:09:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "浏览器端 RAG 完全可行，小型量化模型配合前端向量检索即可实现隐私友好的本地问答",
+      "端侧推理消除了对云端 API 的依赖，显著降低部署成本和数据泄露风险",
+      "小型模型在特定领域文档问答中表现足够实用，但复杂推理能力仍受限",
+      "该方案代表了 AI 应用从云端集中式向端侧分布式演进的重要趋势"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

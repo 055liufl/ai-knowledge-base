@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-081",
+  "title": "ReAPO: Retry-Aware Policy Optimization for Efficient Exploration in LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.28770",
+  "source_platform": "rss_ai_research",
+  "summary": "ReAPO（Retry-Aware Policy Optimization）是一篇针对大语言模型推理能力强化学习（RLVR）的优化方法论文。现有 RLVR 方法通常依赖独立随机采样进行探索，容易反复采样到相似的失败策略，导致探索效率低下。已有工作尝试通过在上下文中引入错误解来引导后续尝试，从而在采样过程中引入依赖性，但随之带来如何为每次尝试分配信用（credit assignment）的新问题。ReAPO 提出一种重试感知的策略优化框架，旨在解决这一信用分配难题，使模型能够更高效地利用重试过程中的失败信息进行探索。该工作值得关注，因为它直击 RLVR 中探索效率与信用分配的核心痛点，有望提升 LLM 在复杂推理任务上的训练效率与最终性能，对强化学习与推理模型结合的研究方向具有参考价值。",
+  "tags": [
+    "RLVR",
+    "LLM Reasoning",
+    "Policy Optimization",
+    "Exploration"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:13:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "独立随机采样导致 RLVR 探索效率低，容易重复采样相似失败策略",
+      "在上下文中引入错误解可引导探索，但带来信用分配难题",
+      "ReAPO 通过重试感知的策略优化解决信用分配问题，提升探索效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

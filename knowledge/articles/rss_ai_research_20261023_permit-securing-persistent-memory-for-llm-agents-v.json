@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-018",
+  "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+  "source_url": "https://arxiv.org/abs/2610.28987",
+  "source_platform": "rss_ai_research",
+  "summary": "PerMIT 是一篇针对 LLM Agent 持久化记忆安全问题的研究论文。该工作指出，持久化记忆是注入攻击和投毒攻击的重要且缺乏防护的攻击面，同时这一风险也限制了多个 Agent 之间共享记忆。为此，作者提出 PerMIT 记忆架构，在明确的信任假设下提供可证明的完整性保证：只有用户键入的输入以及在门控处被确认的值才被视为可信。PerMIT 通过有限记忆接口来中介不可信环境派生值的释放与使用，同时保持 Agent 驱动的行为。该研究将形式化验证（机器检查的完整性定理）与可扩展的社区信任机制相结合，为 Agent 记忆安全提供了理论基础与工程路径。其价值在于：随着 LLM Agent 越来越多地依赖长期记忆和跨 Agent 记忆共享，记忆投毒已成为现实威胁，而现有工作多关注提示注入本身，对记忆层的系统性防护研究较少。PerMIT 首次将可证明安全引入 Agent 记忆架构，对构建可信 Agent 系统具有重要参考意义。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Security",
+    "Formal Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持久化记忆是 LLM Agent 中缺乏防护的注入与投毒攻击面，同时也阻碍了 Agent 间的记忆共享",
+      "PerMIT 在明确信任假设下提供可证明的完整性保证：仅用户输入和门控确认值可信",
+      "通过有限记忆接口中介不可信环境派生值的释放与使用，兼顾安全性与 Agent 自主性",
+      "将机器检查的完整性定理与可扩展社区信任机制结合，为 Agent 记忆安全提供形式化基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

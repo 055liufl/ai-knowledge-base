@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-123",
+  "title": "From Augmentation to Synthetic Evidence: Evaluating Generated Chest Radiographs at Dataset Intake",
+  "source_url": "https://arxiv.org/abs/2610.29152",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究生成式AI在医学影像领域的伦理与安全风险，聚焦于合成胸部X光片在数据集接收环节的鉴别问题。作者指出，同一张生成的胸部X光片，若作为数据增强手段使用是合理的，但若被当作真实检查记录提交，则构成无依据的伪造证据。研究将问题拆解为三个独立维度：图像能否通过自动化质量检查、来源分类器能否识别其为生成图像、以及是否存在可信记录支持所声称的采集过程。实验中使用Qwen模型从图像池中筛选最多20张图像，评估现有检测手段在区分真实与合成影像上的有效性。该工作值得关注，因为它揭示了医学AI数据治理中的关键漏洞——生成图像可能绕过质量筛查并伪装成临床证据，对医学数据集的可信度、临床决策安全及监管合规构成直接威胁。研究强调需要建立超越单一检测器的多层验证机制，将来源溯源与记录核验纳入数据接收流程，为医学影像AI的负责任部署提供了重要的风险框架与评估思路。",
+  "tags": [
+    "医学影像",
+    "合成数据检测",
+    "AI安全",
+    "数据治理"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:15:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成图像作为数据增强与作为临床证据的边界模糊，同一图像在不同声明下具有完全不同的伦理与法律含义",
+      "仅靠自动化质量检查和来源分类器不足以保障医学数据集可信度，需引入可信记录核验作为第三层验证",
+      "医学影像数据接收环节应建立多层验证机制，将来源溯源与采集记录核验纳入标准流程"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

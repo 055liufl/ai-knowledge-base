@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-035",
+  "title": "When Multiple Choices Are Correct: Asymmetric Probability Allocation in Jev and Other Decision Models",
+  "source_url": "https://arxiv.org/abs/2610.29217",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了决策模型在多正确答案场景下的概率分配问题。现有决策模型（如Jev、Liquid d1和GPT-6 Luna Decisions）通常输出归一化的概率分布，但其校准仅在单一正确答案的任务上得到验证。作者在三个多样化数据集上评估了这些模型，发现当多个选项均正确时，模型存在不对称概率分配现象，即概率质量并未均匀分配给所有正确选项，而是偏向某些选项。这一发现揭示了模型概率可靠性的重要局限，对依赖概率进行下游决策的应用具有警示意义。该研究值得关注，因为它挑战了模型提供商对概率可靠性的宣称，并提出了多正确答案场景下概率校准的新问题，可能影响决策系统的公平性和鲁棒性。",
+  "tags": [
+    "决策模型",
+    "概率校准",
+    "多正确答案",
+    "模型评估"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "决策模型在单一正确答案任务上的校准不能保证多正确答案场景下的概率可靠性。",
+      "Jev、Liquid d1和GPT-6 Luna Decisions在多正确答案任务中表现出不对称概率分配，概率质量偏向部分正确选项。",
+      "下游应用若依赖模型输出的概率进行选择，可能因这种不对称性而产生偏差。",
+      "需要针对多正确答案场景开发新的校准方法和评估指标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

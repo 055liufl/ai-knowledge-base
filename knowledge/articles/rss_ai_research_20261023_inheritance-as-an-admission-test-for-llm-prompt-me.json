@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-022",
+  "title": "Inheritance as an Admission Test for LLM Prompt Merge Operators",
+  "source_url": "https://arxiv.org/abs/2610.29023",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对 LLM 提示合并算子的继承性准入测试方法。传统 LLM 智能体优化依赖固定验证器迭代，但验证器饱和后优化循环失效。作者改为基于当前种群评分，并用冻结面板记录是否有人变好。由于面板均值可能仅通过淘汰机制在种子内上升，因此仅当最终均值超过最佳第零代成员时才计为训练。合并算子需通过继承性测试，确保其产生的后代真正优于初始种群，而非仅靠选择效应。该工作为提示合并算子的评估提供了更严谨的基准，有助于区分真实改进与统计假象，对 LLM 智能体优化和提示工程领域具有方法学意义。",
+  "tags": [
+    "LLM",
+    "Prompt Engineering",
+    "Agent",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定验证器饱和后，基于种群的评分可继续驱动 LLM 智能体优化。",
+      "冻结面板均值可能因淘汰机制而上升，需以超越最佳第零代成员作为训练成功的标准。",
+      "继承性准入测试能有效区分提示合并算子的真实改进与选择偏差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

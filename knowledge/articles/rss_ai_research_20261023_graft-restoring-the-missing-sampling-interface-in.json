@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-119",
+  "title": "GRAFT: Restoring the Missing Sampling Interface in Continuous Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2610.29136",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对连续扩散语言模型（如 ELF）提出 GRAFT 方法，旨在恢复其缺失的采样接口。连续扩散语言模型通过并行生成整个序列，中间步骤不进行离散化，仅在最后一步将嵌入转为文本，从而以更少的采样步数达到自回归级别的质量。然而，这种设计也导致模型缺乏逐步的采样接口，限制了可控生成和中间干预能力。GRAFT 通过引入一种机制，在保持连续扩散优势的同时，恢复对采样过程的细粒度控制，使模型能够像离散扩散模型一样在中间步骤进行采样和干预。该工作值得关注，因为它解决了连续扩散语言模型在实用性和可控性方面的关键短板，有望推动该类模型在需要交互式生成、约束满足等场景中的应用，并为扩散语言模型的采样接口设计提供新思路。",
+  "tags": [
+    "Diffusion Language Models",
+    "Sampling",
+    "Controllable Generation",
+    "Continuous Diffusion"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:15:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连续扩散语言模型通过避免逐步离散化实现了高效并行生成，但牺牲了中间步骤的采样接口。",
+      "GRAFT 旨在恢复采样接口，同时保留连续扩散在采样步数和生成质量上的优势。",
+      "该工作有望增强连续扩散语言模型的可控性和实用性，支持交互式生成与约束满足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

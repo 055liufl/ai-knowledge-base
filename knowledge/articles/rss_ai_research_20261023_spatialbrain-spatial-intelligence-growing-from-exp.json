@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-041",
+  "title": "SpatialBrain: Spatial Intelligence Growing from Experience",
+  "source_url": "https://arxiv.org/abs/2610.29317",
+  "source_platform": "rss_ai_research",
+  "summary": "SpatialBrain 是一个面向空间推理的框架，其核心主张是：空间推理不仅需要调用几何工具，还需要判断何时直接观察已经足够、何时需要重建、测量或切换参考系。该框架在保持视觉语言主干模型固定的前提下，保留关于这类决策的经验，并明确区分“关于场景的证据”与“关于如何用证据进行推理的经验”。摘要中提到的 3DFusionMemory 用于融合相关信息，但原文在此处截断，具体机制细节有限。该工作值得关注的原因在于：它把空间智能的增长归因于经验积累，而不是继续扩大模型参数或重新训练主干，这为具身智能、机器人导航、3D 场景理解等需要可靠空间判断的任务提供了一条低成本、可复用的增强路径；同时，“证据与推理经验分离”的思路也有助于提升推理过程的可解释性与可控性。不过，由于目前仅有摘要级信息，实验规模、基准表现和泛化能力仍需结合全文进一步验证。",
+  "tags": [
+    "Spatial Reasoning",
+    "VLM",
+    "Memory",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "空间推理的关键不只是几何工具本身，还包括判断何时观察、何时重建或切换参考系等元决策能力。",
+      "将“场景证据”与“推理经验”显式分离，是在不更新视觉语言主干的情况下积累空间智能的核心设计。",
+      "通过经验记忆增强固定主干模型，为具身智能和 3D 场景理解提供了一条低成本、可复用的改进路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

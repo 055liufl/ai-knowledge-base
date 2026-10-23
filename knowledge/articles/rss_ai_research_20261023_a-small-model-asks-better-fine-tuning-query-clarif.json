@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-001",
+  "title": "A Small Model Asks Better: Fine-Tuning Query Clarification for Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2610.28686",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究检索增强生成（RAG）系统中的查询澄清问题，针对多轮对话场景下用户查询的模糊性。作者指出，查询模糊不仅包括查询本身表述不清或与对话上下文不一致的情况，还包括查询本身表述良好、但面对检索到的文档时存在多种合理解释的情形。任务目标是识别这两类模糊情况，并生成澄清性问题以消除歧义。论文标题暗示采用小型模型进行微调来完成查询澄清任务，可能通过专门训练的小模型在澄清质量上优于通用大模型。该工作值得关注，因为查询澄清是RAG系统实际落地中的关键瓶颈：模糊查询会导致检索偏离、答案错误，而多轮澄清能显著提升系统可靠性。同时，用小模型专精特定任务也符合当前高效推理、降低部署成本的技术趋势，对构建实用RAG产品具有直接参考价值。",
+  "tags": [
+    "RAG",
+    "Query Clarification",
+    "Fine-Tuning",
+    "Multi-turn Dialogue"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:09:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "查询模糊性不仅源于查询本身表述不清，还可能在查询表述良好但与检索文档对照时出现多种合理解释",
+      "多轮对话场景下的查询澄清需要同时利用对话上下文和检索文档信息来识别歧义",
+      "采用小型模型微调专精查询澄清任务，可能比通用大模型更高效且效果更好",
+      "查询澄清是提升RAG系统在真实模糊查询场景下可靠性的关键环节"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

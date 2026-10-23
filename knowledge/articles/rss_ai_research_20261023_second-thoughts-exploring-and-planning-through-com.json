@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-082",
+  "title": "Second Thoughts: Exploring and Planning through Comparative Imagination in World Models",
+  "source_url": "https://arxiv.org/abs/2610.28779",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SDI（Sibling Disagreement in Imagination）方法，旨在解决世界模型智能体在行动前如何选择探索哪些想象结果、以及何时用新计划替换已学习策略的问题。SDI 通过共享的基于 actor 的参考，将这两个决策联系起来：它比较从同一模型状态想象出的动作序列，并利用 actor 自身序列的重复 rollout 来度量变异程度，从而判断想象结果的不一致性。这一方法让智能体能够在想象中更有效地进行对比和规划，提升决策的鲁棒性和探索效率。该工作值得关注，因为它为世界模型中的规划与策略切换提供了新的理论视角和实用机制，可能推动基于模型的强化学习和智能体规划领域的发展。",
+  "tags": [
+    "World Models",
+    "Reinforcement Learning",
+    "Planning",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:13:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SDI 通过共享的 actor 参考将探索选择与策略替换决策统一起来，解决了世界模型中两个关键但常被分开处理的问题。",
+      "利用重复 rollout 度量 actor 自身动作序列的变异程度，为判断想象结果的不一致性提供了可操作的量化指标。",
+      "该方法有望提升基于世界模型的智能体在复杂环境中的规划效率和决策鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-084",
+  "title": "CALLIOPE: Private Insights into AI Use, Without Embeddings",
+  "source_url": "https://arxiv.org/abs/2610.28797",
+  "source_platform": "rss_ai_research",
+  "summary": "CALLIOPE 是一个面向大规模非结构化数据（如 LLM 对话记录）的自顶向下主题层级发现框架，其核心创新在于完全绕开向量嵌入与聚类流程，直接利用 LLM 能力完成整条分析管线，并原生支持差分隐私（DP）。传统方法乃至近期 LLM 增强方案最终仍依赖嵌入聚类，而 CALLIOPE 通过 LLM 直接生成与组织主题层级，在保护用户隐私的前提下挖掘 AI 使用模式。该工作值得关注的原因有三：一是它回应了 AI 使用分析中日益突出的隐私合规需求，使组织能在不暴露原始对话或嵌入向量的情况下获得洞察；二是它提出了一条“LLM 原生”的数据分析范式，可能替代嵌入+聚类的经典组合；三是实验显示其在效用上优于基线方法，说明隐私保护与洞察质量并非不可兼得。对于需要审计 LLM 使用情况、进行产品分析或开展合规研究的团队，该框架提供了一种可落地的技术路径。",
+  "tags": [
+    "差分隐私",
+    "LLM",
+    "主题建模",
+    "隐私保护"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:13:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CALLIOPE 用 LLM 直接完成主题层级发现的全流程，摆脱了对向量嵌入和聚类的依赖，开辟了 LLM 原生数据分析的新路径。",
+      "框架原生集成差分隐私，使大规模 LLM 对话分析可以在不暴露个体数据的前提下进行，兼顾隐私与效用。",
+      "实验表明该方法的效用优于依赖嵌入聚类的传统及 LLM 增强基线，说明隐私保护不一定以牺牲洞察质量为代价。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

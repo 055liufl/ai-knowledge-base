@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-083",
+  "title": "ArcFlow: Training Flow Policies for Multiple Solver Budgets",
+  "source_url": "https://arxiv.org/abs/2610.28788",
+  "source_platform": "rss_ai_research",
+  "summary": "ArcFlow 是一种面向流匹配策略（flow-matching policy）的部署感知训练算法，旨在解决单一固定求解器预算下强化学习训练带来的问题。流匹配策略通常通过调整求解器步数来控制推理成本，但现有方法在固定预算下进行 RL 微调时，可能会掩盖模型在更低成本部署预算下的性能退化，甚至抹除预训练策略中已有的一步生成能力。ArcFlow（Action-Ratio-Clip Flow）通过动作对齐的监督信号与比率裁剪机制，使单个流策略能够在指定的多个求解器预算范围内同时保持良好表现。该工作值得关注，因为它直接回应了生成式策略在真实部署中对推理成本灵活性的需求，将训练目标从单一预算扩展到预算区间，为机器人控制、实时决策等对延迟敏感的应用提供了更实用的训练范式，也揭示了固定预算 RL 微调的潜在缺陷。",
+  "tags": [
+    "Flow Matching",
+    "Reinforcement Learning",
+    "Policy Learning",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:13:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在单一固定求解器预算下做强化学习会掩盖策略在更低预算下的性能退化，甚至破坏预训练模型已有的一步生成能力",
+      "ArcFlow 通过动作对齐监督与比率裁剪，让单个流策略在多个求解器预算区间内同时保持可用性",
+      "该工作将训练目标从单点预算扩展到预算范围，更贴合实际部署中对推理成本灵活调节的需求"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

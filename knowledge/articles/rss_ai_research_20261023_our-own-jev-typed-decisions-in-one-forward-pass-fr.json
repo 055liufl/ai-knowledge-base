@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-109",
+  "title": "Our Own Jev: Typed Decisions in One Forward Pass, from an In-House Judge to Open LoRA Models",
+  "source_url": "https://arxiv.org/abs/2610.29052",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种称为“类型化决策”的推理模式：将证据、问题和固定选项集映射为每个选项的概率，通过一次前向传播读取语言模型的 logits 或隐藏状态上的小型分类头来实现，而非生成并解析文本。这种 System 1 接口由商业系统 Jev 推广，并已有开源复现。论文报告了该模式的两种应用：第一部分描述了一个内部 System 1 评判器，用于对证据进行分诊；第二部分则涉及开放 LoRA 模型。该方法的核心优势在于高效、确定性强，避免了文本生成和解析带来的延迟与不确定性，适用于需要快速、结构化决策的场景。该工作值得关注，因为它将 LLM 的推理能力与轻量级分类接口结合，为构建低延迟、高可靠性的决策系统提供了新思路，并推动了开源社区对 System 1 接口的复现与改进。",
+  "tags": [
+    "LLM",
+    "System 1",
+    "LoRA",
+    "推理优化"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:15:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "类型化决策通过一次前向传播读取 logits 或隐藏状态，避免了文本生成和解析的开销，实现高效的结构化输出。",
+      "该模式由商业系统 Jev 推广，开源复现和 LoRA 微调使其更易获取和定制。",
+      "内部 System 1 评判器展示了该模式在证据分诊等实际任务中的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-052",
+  "title": "TraceForge: Distilling with Your Own Thinking",
+  "source_url": "https://arxiv.org/abs/2610.29680",
+  "source_platform": "rss_ai_research",
+  "summary": "TraceForge 是一篇 arXiv 论文（编号 2610.29680），聚焦于 LLM 蒸馏训练中的数据生成问题。论文指出了一个当前前沿模型团队普遍采取的限制：当使用闭源前沿模型生成训练数据时，返回的往往只是答案或简短摘要，而不包含详细的推理轨迹（reasoning trace）。作者认为这颇具讽刺意味——这些模型本身正是通过蒸馏人类知识构建的，而蒸馏开源模型仍是常规做法。TraceForge 提出让模型利用自身的思考过程来生成蒸馏数据，从而绕开对闭源推理轨迹的依赖。该工作值得关注，因为它触及了 LLM 训练数据获取的核心瓶颈：高质量推理链的稀缺性与闭源模型 API 的限制，为开源社区和研究者提供了一条可行的自蒸馏路径。",
+  "tags": [
+    "LLM",
+    "Distillation",
+    "Reasoning",
+    "Training Data"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:12:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "闭源前沿模型 API 通常只返回答案或摘要，不暴露详细推理轨迹，限制了基于推理链的蒸馏训练。",
+      "TraceForge 主张让模型利用自身生成的思考过程来构建蒸馏数据，减少对闭源推理轨迹的依赖。",
+      "该工作揭示了当前 LLM 训练数据获取的结构性瓶颈，对开源模型的自蒸馏与能力提升具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

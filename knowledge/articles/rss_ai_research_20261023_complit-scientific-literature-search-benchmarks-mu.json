@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261023-069",
+  "title": "CompLit: Scientific Literature Search Benchmarks Must Cover Implicit, Cumulative, and Unmet Needs",
+  "source_url": "https://arxiv.org/abs/2610.28658",
+  "source_platform": "rss_ai_research",
+  "summary": "CompLit 是一篇关于科学文献搜索基准的 arXiv 论文（编号 2610.28658），指出现有文献搜索评测体系存在根本性缺陷：它们假设用户需求是显式、静态且可被已有论文满足的，而真实科研场景中的文献检索往往涉及隐性需求（论文只间接体现用户所需内容）、累积需求（随着阅读深入，需求不断演化扩展）以及未满足需求（用户寻找的方向尚无任何论文覆盖）。CompLit 覆盖 arXiv 全部八个学科领域，并设计了诊断性评测设置，用于系统检验搜索智能体在这些复杂需求类型下的表现。该工作值得关注的原因在于：随着 LLM 驱动的科研智能体（如文献调研 Agent、自动综述系统）快速普及，搜索能力的评测标准直接决定了这些工具的可信度；而 CompLit 首次将“需求演化”和“知识空白识别”纳入基准设计，为评估智能体是否真正理解研究者意图提供了更贴近现实的标尺，对 RAG 系统、学术搜索产品和 AI 科研助手的发展具有方向性意义。",
+  "tags": [
+    "Benchmark",
+    "Agent",
+    "RAG",
+    "Literature Search",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:13:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有文献搜索基准普遍假设需求显式且静态，忽略了真实科研中需求随阅读累积演化的特性",
+      "隐性需求与未满足需求（知识空白区域）是评估搜索智能体的关键盲区，CompLit 首次将其系统纳入基准",
+      "基准覆盖 arXiv 全部八个学科领域，具备跨领域诊断能力，可用于横向比较不同搜索智能体的鲁棒性",
+      "该工作为 LLM 科研助手和 RAG 系统的可信度评估提供了更贴近真实研究流程的评测范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

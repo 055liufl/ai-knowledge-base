@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-036",
+  "title": "From Scores to Safe Sets: Exact Safety--Constrained Decoding for Medication Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.29228",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究生成式药物推荐系统中的安全性约束问题。现有系统最终输出一组药物，但药物-药物相互作用（DDI）约束依赖于整个药物集合，而非单个药物。常见的后处理方法是先预测药物，再通过逐个移除相互作用药物对中的一种来进行局部修复。作者质疑这种局部修复步骤本身是否会引入可避免的错误。研究使用FLAME冻结分类器在MIMIC-III数据集上产生的固定药物评分，比较了局部修复方法与精确安全约束解码方法的效果。该工作值得关注，因为它揭示了药物推荐系统中一个被忽视的安全隐患：后处理修复可能破坏最优性甚至引入新错误，而精确的集合级约束解码能够从理论上保证输出集合的安全性，对医疗AI的可靠部署具有直接意义。",
+  "tags": [
+    "药物推荐",
+    "约束解码",
+    "安全AI",
+    "医疗AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "药物推荐中的DDI约束是集合级约束，局部逐对修复方法可能引入可避免的错误",
+      "精确安全约束解码相比后处理局部修复能提供理论上的安全性保证",
+      "使用冻结分类器的固定评分进行对比，可隔离解码策略本身的影响",
+      "医疗AI系统需要从解码阶段就考虑集合级安全约束，而非事后修补"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

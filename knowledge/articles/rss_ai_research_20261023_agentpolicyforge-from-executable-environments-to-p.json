@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-019",
+  "title": "AgentPolicyForge: From Executable Environments to Policy Benchmarks and Adaptive Guards",
+  "source_url": "https://arxiv.org/abs/2610.28989",
+  "source_platform": "rss_ai_research",
+  "summary": "AgentPolicyForge 是一个面向定制化智能体部署的策略合规框架，旨在解决将策略写入任务智能体提示词后仍无法可靠防止违规的问题。该框架利用可执行环境自动构造策略基准测试，并迭代训练策略守卫模型，从而在工具调用层面检测和拦截违反策略的行为。其核心思路是：与其依赖提示词约束智能体行为，不如通过可执行环境生成合规与违规的工具调用样本，再以此训练专门的守卫模型，形成可迭代增强的防护机制。该工作值得关注的原因在于，随着智能体被广泛部署到真实工具与资源环境中，策略违规（如越权访问、不当调用）带来的风险日益突出，而现有提示词约束方式可靠性不足。AgentPolicyForge 将策略执行从软性提示转向可训练、可评测的守卫组件，为智能体安全落地提供了可复用的基准构建与防护训练路径，对智能体工程化与安全治理具有实际参考价值。",
+  "tags": [
+    "Agent",
+    "Safety",
+    "Benchmark",
+    "Guardrails"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅靠提示词约束智能体策略执行不可靠，需要独立的守卫机制在工具调用层面进行检测与拦截",
+      "可执行环境能够自动生成合规与违规的工具调用样本，为策略基准构建和守卫训练提供数据基础",
+      "策略守卫可通过迭代训练持续增强，形成基准评测与防护模型协同演进的闭环"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

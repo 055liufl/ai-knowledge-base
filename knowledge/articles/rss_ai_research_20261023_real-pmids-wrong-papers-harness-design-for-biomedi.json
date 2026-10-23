@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-053",
+  "title": "Real PMIDs, Wrong Papers: Harness Design for Biomedical Claim-Verification Agents",
+  "source_url": "https://arxiv.org/abs/2610.29812",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对生物医学声明验证（biomedical claim verification）中的文献检索型语言智能体进行了受控消融实验，以 SciFact 数据集为评测基准，将实时 PubMed API 作为唯一工具，在固定骨干模型和输出格式的前提下，比较了四种 harness 设计：闭卷作答、以声明为查询的单次检索，以及另外两种未在摘要中完整披露的配置。研究揭示了一个值得警惕的现象：智能体可能引用真实存在的 PMID（PubMed 文献编号），但所指向的论文与声明内容并不匹配，即“真实编号、错误论文”。这一发现直指科学助手在文献引用可靠性上的系统性风险——表面可验证的引用标识并不保证语义正确性，容易误导科研用户。该工作的价值在于：首次以受控实验方式拆解 harness 各组件对验证性能的贡献，为生物医学文献智能体的工程设计提供了可复现的实证依据，同时为科学 AI 助手的引用可信度评估提出了新的检验维度。对于构建科研辅助工具、RAG 检索增强系统以及需要高可靠性引用的垂直领域智能体的团队而言，该研究具有直接的工程参考意义。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "biomedical",
+    "evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:12:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "文献检索智能体可能引用真实 PMID 却指向与声明不符的论文，引用标识可验证不等于语义正确",
+      "在固定骨干模型和输出格式下，harness 设计本身对生物医学声明验证性能有显著影响",
+      "以实时 PubMed API 为唯一工具的受控消融为科学助手工程提供了可复现的实证基线",
+      "科学 AI 助手的评估需同时考察引用真实性与引用相关性两个维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

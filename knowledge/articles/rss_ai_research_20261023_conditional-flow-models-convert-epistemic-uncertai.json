@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-128",
+  "title": "Conditional Flow Models Convert Epistemic Uncertainty into Apparent Aleatoric Variance",
+  "source_url": "https://arxiv.org/abs/2610.29172",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了条件流模型（Conditional Flow Models, CFMs）在回归任务中产生的条件分布所携带的信息。作者发现了一个系统性现象：在许多自然场景下，CFM 生成的样本会将认知不确定性（epistemic uncertainty，即模型因知识不足而产生的不确定性）转化为表观上的偶然不确定性（aleatoric variance，即数据本身固有的噪声）。这意味着，CFM 输出的分布方差可能并非反映真实的数据噪声，而是模型自身不确定性的映射。这一发现对使用 CFM 进行不确定性量化的实践具有重要警示意义：直接将条件分布的方差解释为数据噪声可能导致错误结论。论文值得关注，因为它挑战了当前将生成模型用于不确定性估计的流行做法，提醒研究者和开发者需要区分模型不确定性与数据不确定性，并为更可靠的不确定性量化方法提供了理论基础。",
+  "tags": [
+    "Flow Models",
+    "Uncertainty Quantification",
+    "Generative Models",
+    "Regression"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:16:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "条件流模型会将认知不确定性系统性地转化为表观偶然方差，导致不确定性估计失真",
+      "直接将 CFM 条件分布的方差解释为数据噪声存在风险，需区分模型不确定性与数据不确定性",
+      "该现象在多种自然场景下普遍存在，对基于生成模型的不确定性量化实践构成挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

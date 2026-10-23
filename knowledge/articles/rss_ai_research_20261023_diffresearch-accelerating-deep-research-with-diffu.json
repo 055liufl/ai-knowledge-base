@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-012",
+  "title": "DiffResearch: Accelerating Deep Research with Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2610.28909",
+  "source_platform": "rss_ai_research",
+  "summary": "DiffResearch 是一个开源的多智能体深度研究框架，其核心创新在于将扩散语言模型（dLLM）应用于深度研究流程的每一个阶段，而非传统生产系统中普遍采用的自回归（AR）语言模型。深度研究系统通常需要迭代地进行规划、证据收集、综合与修订，端到端延迟是交互式使用的主要瓶颈。现有系统几乎全部基于 AR 模型，继承了从左到右的解码方式，在规划与长文本写作中造成延迟累积。DiffResearch 通过在每个阶段引入扩散语言模型，试图打破这一限制，提升整体效率。该工作值得关注的原因在于：它首次系统性地将 dLLM 引入多智能体深度研究框架，并进行了端到端测量，为探索非自回归解码在复杂推理与写作任务中的可行性提供了实证基础，也为降低深度研究系统的交互延迟开辟了新路径。",
+  "tags": [
+    "Diffusion Language Model",
+    "Multi-Agent",
+    "Deep Research",
+    "Inference Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "深度研究系统的端到端延迟主要源于自回归模型的从左到右解码，扩散语言模型有望通过并行解码缓解该瓶颈。",
+      "DiffResearch 将 dLLM 置于规划、证据收集、综合与修订的每个阶段，而非仅用于最终生成，体现了全流程非自回归化的设计思路。",
+      "该框架为多智能体深度研究提供了一种开源可复现的替代方案，有助于推动非自回归模型在复杂推理任务中的实证研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-011",
+  "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+  "source_url": "https://arxiv.org/abs/2610.28905",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究扩散语言模型（Diffusion Language Model）智能体之间的隐式通信机制。传统多智能体系统通常只在解码出文本后进行交流，丢弃了模型内部的连续去噪状态。作者提出\"Hidden Messages\"方法：发送方将自身的去噪状态压缩为四个带符号的稠密向量，直接传递给接收方智能体，使其在生成过程中利用这些潜在信息。研究的关键在于通过因果实验验证接收方是否真正使用了消息的语义内容，而非仅仅受到扰动影响。这项工作值得关注，因为它挑战了\"智能体通信必须经过自然语言\"的默认假设，揭示了扩散模型连续状态作为通信信道的潜力，可能为多智能体协作、模型间知识传递以及可解释性研究开辟新方向，同时也引发关于潜在通信安全与可控性的讨论。",
+  "tags": [
+    "Diffusion Language Model",
+    "Multi-Agent",
+    "Latent Communication",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型的连续去噪状态可作为智能体间的高带宽隐式通信信道，绕过文本解码瓶颈",
+      "通过因果实验设计证明接收方确实利用了隐藏消息的语义内容，而非仅受噪声扰动",
+      "该机制挑战了多智能体系统以自然语言为唯一通信媒介的传统范式",
+      "潜在通信带来效率提升的同时，也引出关于模型行为可控性与安全审计的新问题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

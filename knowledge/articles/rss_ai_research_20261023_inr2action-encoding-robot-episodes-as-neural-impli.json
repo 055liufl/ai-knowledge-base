@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-093",
+  "title": "inr2action: Encoding Robot Episodes as Neural Implicit Representations for Recall and Action",
+  "source_url": "https://arxiv.org/abs/2610.28882",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 inr2action 框架，将机器人长时程操作中的记忆问题转化为参数空间记忆问题。核心思想是：每个机器人操作片段（episode）的视频被拟合为一个神经隐式表示（Neural Implicit Representation），拟合过程从共享的元学习初始化出发，得到的权重增量（weight delta）即作为该片段的记忆存储。关键优势在于该权重增量大小固定，不随片段执行时长增长，从而解决了传统记忆机制随执行时间线性膨胀的问题。该工作将记忆与动作召回统一在参数空间中，为长时程机器人操作提供了一种可扩展的记忆方案，值得关注的是其跨模态（视频→参数→动作）的表示思路，以及元学习初始化在机器人记忆中的创新应用。",
+  "tags": [
+    "Neural Implicit Representation",
+    "Robot Learning",
+    "Meta-Learning",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:14:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将机器人操作片段编码为神经隐式表示的权重增量，实现固定大小的记忆存储，与执行时长解耦",
+      "共享元学习初始化使每个片段的拟合高效且可分离，支持片段级记忆的独立存取",
+      "参数空间记忆为长时程机器人操作中的召回与动作生成提供了统一表示框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

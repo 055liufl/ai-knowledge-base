@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-014",
+  "title": "D-Skill: Distilling Teacher Knowledge through Agent Skills",
+  "source_url": "https://arxiv.org/abs/2610.28914",
+  "source_platform": "rss_ai_research",
+  "summary": "D-Skill 是一个面向语言模型智能体的知识蒸馏框架，旨在将前沿大模型智能体的复杂任务能力迁移到更小的学生模型上，同时规避传统蒸馏对权重访问和额外训练算力的依赖。传统知识蒸馏通过参数更新隐式编码知识，要求开放学生模型权重并消耗训练资源；D-Skill 则将教师模型视为黑盒，通过“智能体技能”这一显式载体完成能力传递。该工作值得关注，因为它提出了一条无需访问模型内部参数、无需额外训练算力的蒸馏路径，有望显著降低小模型获得强智能体能力的门槛，对模型压缩、智能体部署和低成本推理具有实际意义。",
+  "tags": [
+    "Knowledge Distillation",
+    "Agent",
+    "LLM",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:10:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将教师模型视为黑盒，通过智能体技能显式传递能力，避免依赖学生模型权重和额外训练算力",
+      "传统蒸馏把知识隐式编码进参数，D-Skill 则把能力外化为可复用的技能，提升可解释性与迁移灵活性",
+      "该方法为低成本部署强智能体能力提供了新思路，尤其适合无法开放权重或算力受限的场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

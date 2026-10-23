@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-129",
+  "title": "Correlated Failures of AI Approval Monitors",
+  "source_url": "https://arxiv.org/abs/2610.29178",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究AI代理在执行高风险操作（如支付、发消息、修改代码）前，多个审批监控器（approval monitors）的可靠性问题。传统做法是将多个监控器的判定结果通过分数聚合或投票计数来综合决策，但论文指出，当监控器共享基础模型或受到同一污染输入影响时，它们可能同时失效，导致相关性故障（correlated failures）。作者借鉴分布式计算中的“易故障系统”（fail-prone systems）理论，用可能共同失效的监控器集合列表来刻画这种相关性，并定义“安全规则”：只有当执行动作所依赖的监控器集合不落入任何可能共同失效的集合时，该规则才被认为是安全的。该研究揭示了多监控器架构中一个被忽视的系统性风险：增加监控器数量并不必然提升安全性，若监控器之间存在共享依赖，冗余可能形同虚设。论文为AI代理安全审批机制提供了形式化分析框架，对构建更鲁棒的AI安全护栏具有重要参考价值，尤其适用于需要多模型交叉验证的高风险代理场景。",
+  "tags": [
+    "AI Safety",
+    "Agent",
+    "Fail-prone Systems",
+    "Monitoring"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:16:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多个监控器共享基础模型或污染输入时会产生相关性故障，冗余监控无法保证安全",
+      "借鉴分布式计算的fail-prone systems理论，可形式化刻画监控器集合的共同失效风险",
+      "安全规则的定义要求执行动作所依赖的监控器集合不落入任何可能共同失效的集合",
+      "增加监控器数量不等于提升安全性，需关注监控器之间的依赖独立性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

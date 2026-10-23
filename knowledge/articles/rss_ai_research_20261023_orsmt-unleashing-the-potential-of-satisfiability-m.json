@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261023-121",
+  "title": "ORSMT: Unleashing the Potential of Satisfiability Modulo Theories for Semantic Verification and Repair in LLM-Based Optimization",
+  "source_url": "https://arxiv.org/abs/2610.29145",
+  "source_platform": "rss_ai_research",
+  "summary": "ORSMT 是一篇关于利用可满足性模理论（SMT）对 LLM 生成的优化建模进行语义验证与修复的研究。LLM 正越来越多地根据自然语言问题自动生成优化模型，输出包括数学公式、求解器代码和结果报告。然而，验证这些产物是否真正正确非常困难：不同的模型可能达到相同目标，等价的模型可能使用不同的辅助变量，而彼此一致的产物也可能共同遗漏某个源需求。ORSMT 提出一种类型化的方法，借助 SMT 对优化问题进行语义层面的形式化验证，并支持自动修复。该工作值得关注，因为它直击 LLM 在数学建模与代码生成中的可信度痛点，将形式化方法引入 LLM 优化流程，有望提升自动化优化建模的可靠性与可验证性。",
+  "tags": [
+    "SMT",
+    "LLM",
+    "形式化验证",
+    "优化建模"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:15:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的优化建模产物（数学公式、求解器代码、报告）需要语义级验证，而非仅语法或数值一致性检查",
+      "SMT 可用于形式化刻画优化问题的语义等价性，并支持对不一致产物进行自动修复",
+      "不同模型可达到相同目标、等价模型可使用不同辅助变量，说明验证需超越表面结构比较",
+      "相互一致的产物仍可能共同遗漏源需求，验证需回溯到自然语言问题的原始约束"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

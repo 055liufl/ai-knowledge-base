@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-033",
+  "title": "Steering Black-Box Large Language Model Agents with Pitfall Anticipation World Model",
+  "source_url": "https://arxiv.org/abs/2610.29139",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种面向黑盒大语言模型智能体的「陷阱预判世界模型」（Pitfall Anticipation World Model），用于解决前沿黑盒 LLM 智能体在特定任务环境中缺乏内部化环境知识的问题。作者指出，尽管这类智能体擅长长程推理与精确动作生成，但它们对具体环境如何演化没有先验认知，容易在长程任务中踩坑。世界模型被视为一种自然的补救手段：通过预测环境对即将执行动作的响应，为智能体注入环境特定知识。论文的核心思路是让世界模型不仅预测环境响应，还主动预判潜在陷阱（pitfall），从而在动作执行前进行引导或修正，实现对黑盒智能体的「转向」（steering）。该工作值得关注的原因在于：其一，它针对的是当前智能体落地中最棘手的泛化与鲁棒性问题——黑盒模型无法微调、环境知识难以注入；其二，将世界模型与陷阱预判结合，提供了一种不依赖模型内部访问的轻量级外部控制范式，对构建可靠、可部署的智能体系统具有直接参考价值；其三，该方向与近期围绕 LLM 智能体安全、长程规划与模型无关控制的讨论高度契合，可能推动「外部世界模型 + 黑盒智能体」这一架构的进一步研究。",
+  "tags": [
+    "LLM Agent",
+    "World Model",
+    "Black-Box Steering",
+    "Long-Horizon Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:11:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "黑盒 LLM 智能体缺乏特定环境的内在知识，世界模型可通过预测环境响应来弥补这一缺口",
+      "在预测环境响应的基础上进一步预判陷阱，可在动作执行前对智能体进行引导，提升长程任务的鲁棒性",
+      "该范式无需访问模型内部参数，为黑盒智能体的外部控制与安全部署提供了可行路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

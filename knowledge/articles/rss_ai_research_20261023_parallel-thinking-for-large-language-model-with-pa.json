@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261023-050",
+  "title": "Parallel Thinking for Large Language Model with Path Diversity",
+  "source_url": "https://arxiv.org/abs/2610.29501",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型（LLM）的并行思维（Parallel Thinking）范式提出改进。并行思维通过同时探索多条推理路径来增强LLM的推理能力，但作者发现基于强化学习（RL）的并行思维常出现推理路径的模式崩溃（mode collapse），即多条并行轨迹退化为相似路径，破坏了并行探索的初衷。论文提出引入路径多样性（Path Diversity）机制来缓解该问题，旨在保持并行轨迹的差异性，从而提升推理的覆盖面和鲁棒性。该工作值得关注，因为它直击当前LLM推理增强方法中的一个关键缺陷——多样性丧失，并为并行推理与强化学习的结合提供了新的设计思路，对提升复杂推理任务的性能具有潜在价值。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Reinforcement Learning",
+    "Parallel Thinking"
+  ],
+  "author": null,
+  "published_at": "2026-10-23T13:07:32Z",
+  "collected_at": "2026-10-23T13:12:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于RL的并行思维存在推理路径模式崩溃问题，多条轨迹趋于同质化，削弱了并行探索的意义。",
+      "路径多样性是维持并行思维有效性的关键因素，需要在训练中显式鼓励轨迹间的差异。",
+      "该问题揭示了RL优化目标与并行推理多样性之间的内在张力，为后续方法设计提供了方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
