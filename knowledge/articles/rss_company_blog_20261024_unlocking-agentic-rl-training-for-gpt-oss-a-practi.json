@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261024-088",
+  "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+  "source_url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 LinkedIn 团队在 Hugging Face 博客上发布的一篇关于 GPT-OSS 模型智能体强化学习（Agentic RL）训练实践回顾。文章详细介绍了如何针对 GPT-OSS 这一开源模型进行智能体强化学习训练，分享了从环境搭建、奖励设计、训练稳定性到评估部署的全流程经验与教训。内容涵盖实际训练中遇到的挑战（如稀疏奖励、训练不稳定、长序列处理）及相应解决方案，并提供了可复用的工程实践建议。该文值得关注，因为智能体 RL 是当前提升 LLM 自主决策与工具使用能力的关键技术，而 GPT-OSS 作为开源模型降低了研究门槛；LinkedIn 的实战经验为开发者提供了宝贵的避坑指南，有助于推动 Agentic RL 在工业界的落地。",
+  "tags": [
+    "Agentic RL",
+    "GPT-OSS",
+    "LLM训练",
+    "强化学习",
+    "开源模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-24T12:28:29Z",
+  "collected_at": "2026-10-24T12:34:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体 RL 训练中奖励设计至关重要，稀疏奖励需结合课程学习或奖励塑形来提升训练效率。",
+      "训练稳定性是主要挑战，需采用梯度裁剪、KL 正则化等技术防止策略崩溃。",
+      "长序列处理需要优化内存和计算效率，例如使用梯度检查点和分块训练。",
+      "开源模型如 GPT-OSS 为智能体 RL 研究提供了可复现的基座，但需针对其特性调整训练策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

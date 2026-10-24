@@ -1,0 +1,33 @@
+{
+  "id": "github-trending-20261024-006",
+  "title": "recursive-llm",
+  "source_url": "https://github.com/grishahq/recursive-llm",
+  "source_platform": "github_trending",
+  "summary": "recursive-llm 是一个用于高效长上下文处理的开源项目，提出递归语言模型（Recursive Language Models）方法。它通过将上下文存储在 Python REPL 中，并让 LLM 以递归方式查询和操作该上下文，从而分析超过 100 万 token 的输入，同时显著减少 LLM 的 token 消耗。该方法的核心思想是避免将全部长上下文直接塞入模型窗口，而是将上下文作为外部状态，由模型生成代码来检索、过滤和聚合信息，实现按需访问。项目值得关注的原因在于：长上下文处理是当前 LLM 应用的关键瓶颈，传统方案成本高且受限于上下文窗口；递归-REPL 方案提供了一种可扩展、低成本的替代路径，尤其适合代码分析、文档问答、日志审查等场景。它结合了程序合成与语言模型推理，展示了 Agent 式上下文管理的新范式，对开发者和研究者均有启发。",
+  "tags": [
+    "LLM",
+    "长上下文",
+    "Agent",
+    "代码生成"
+  ],
+  "author": null,
+  "published_at": "2026-10-24T12:28:24Z",
+  "collected_at": "2026-10-24T12:28:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "Python",
+  "retry_count": 0,
+  "metrics": {
+    "stars": 614
+  },
+  "ai_analysis": {
+    "key_insights": [
+      "将长上下文存储在 Python REPL 中，由 LLM 递归生成代码进行按需检索，避免全量上下文进入模型窗口。",
+      "该方法可处理 100 万+ token 的输入，同时大幅降低 token 消耗和推理成本。",
+      "递归-REPL 模式为长上下文处理提供了 Agent 式上下文管理的新思路，适合代码分析、文档问答等场景。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

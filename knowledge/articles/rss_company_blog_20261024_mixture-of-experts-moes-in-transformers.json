@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261024-075",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 Transformer 中混合专家（MoE）架构的技术文章。MoE 通过将前馈网络替换为多个专家网络，并引入路由机制，使模型在推理时仅激活部分参数，从而在保持计算成本可控的同时大幅提升模型容量。文章系统介绍了 MoE 的核心组件（专家、路由器、容量因子、负载均衡损失等），并讨论了训练与推理中的关键挑战，如专家负载不均衡、通信开销和内存占用。此外，文章还对比了 MoE 与稠密模型的优劣，并提及了 Switch Transformer、GShard 等代表性工作。对于希望了解大模型高效扩展技术的开发者而言，本文提供了清晰的入门指南和实用见解，有助于理解当前主流大模型（如 Mixtral）背后的设计思想。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-10-24T12:28:29Z",
+  "collected_at": "2026-10-24T12:34:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活实现模型容量与计算成本的解耦，是扩展大模型的有效手段。",
+      "路由机制和负载均衡是 MoE 训练中的核心挑战，需要精心设计辅助损失。",
+      "MoE 在推理时仅激活部分专家，但内存占用高，需要权衡部署成本。",
+      "Hugging Face 博客提供了 MoE 的直观解释和代码示例，适合开发者快速上手。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
