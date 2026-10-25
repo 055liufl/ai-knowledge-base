@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261025-104",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "该内容来自 MiniMax AI 在 Hugging Face 的官方博客，标题为《Aligning to What? Rethinking Agent Generalization in MiniMax M2》，围绕 MiniMax M2 模型在 Agent 场景下的泛化能力展开讨论，并对当前对齐（alignment）范式提出反思。文章核心问题在于：当模型被对齐到特定任务、特定工具或特定交互分布时，这种对齐究竟是在提升通用 Agent 能力，还是仅仅在过拟合评测目标。作者从 Agent 泛化的角度重新审视对齐目标的选择，探讨训练信号、任务分布与真实部署环境之间的错配问题，并可能结合 M2 的实践给出观察与建议。该内容值得关注的原因在于：Agent 已成为大模型落地的重要形态，而“对齐到什么”直接决定了模型能否在未见任务和工具上稳定泛化；MiniMax 作为国内头部模型团队，其一线工程经验对研究者和开发者理解 Agent 训练与评测的偏差具有参考价值。不过由于正文内容有限，具体实验细节与结论需以原文为准。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:32Z",
+  "collected_at": "2026-10-25T13:06:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 对齐需要明确“对齐目标”，否则容易在特定任务上过拟合而损害泛化能力",
+      "模型在训练分布上的对齐效果与真实部署中的 Agent 泛化表现可能存在系统性错配",
+      "评估 Agent 泛化性应关注未见任务与未见工具的迁移能力，而非单一基准分数"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

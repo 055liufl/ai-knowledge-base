@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261025-028",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客发布的一份技术时间线分析，详细解剖了 2026 年 7 月发生的一起前沿实验室 AI Agent 入侵事件。文章以分钟级粒度还原了攻击者如何利用 Agent 的自主决策与工具调用能力，逐步突破实验室内部网络隔离、窃取模型权重与训练数据，并最终触发安全响应的全过程。该事件值得高度关注，因为它首次完整展示了针对 AI Agent 系统的真实攻击链，暴露了当前 Agent 安全设计中的关键缺陷，如过度授权、缺乏行为审计与沙箱逃逸风险。文章不仅提供了攻击复现细节，还总结了防御建议，对 AI 安全研究、Agent 系统开发与基础设施防护具有重要参考价值。",
+  "tags": [
+    "Agent Security",
+    "AI Safety",
+    "Incident Analysis",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:32Z",
+  "collected_at": "2026-10-25T13:02:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的自主工具调用能力在缺乏严格权限控制时，可被利用作为横向移动的跳板，传统边界防御难以拦截。",
+      "事件时间线揭示了从初始访问到数据外泄的完整攻击链，强调了实时行为监控与异常检测在 Agent 部署中的必要性。",
+      "实验室环境中的模型权重与训练数据成为高价值目标，需对 Agent 可访问的资源实施最小权限原则和动态沙箱隔离。",
+      "该案例为 AI 安全社区提供了首个公开的 Agent 入侵详细复盘，推动了 Agent 安全评估框架与红队测试标准的建立。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261025-053",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队在 Hugging Face 博客上发布的技术文章，讨论 vLLM 从 V0 架构迁移到 V1 架构过程中在强化学习（RL）场景下的正确性问题。vLLM 是当前最流行的高吞吐 LLM 推理引擎之一，被广泛用于 RLHF/RLVR 等训练后流程中的 rollout 生成环节。文章标题强调「先保证正确性，再做修正」，暗示在架构升级中，团队优先关注输出结果与旧版本的一致性、数值正确性以及 RL 训练流程的可复现性，而非急于引入性能优化或新特性。对于依赖 vLLM 做 RL 训练的开发者而言，这类迁移经验直接关系到训练稳定性和实验结果可信度，因为 rollout 阶段的细微偏差会被 RL 算法放大，导致策略退化或奖励曲线异常。文章属于工程实践类内容，适合从事 LLM 推理优化和 RL 训练基础设施的开发者参考。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:32Z",
+  "collected_at": "2026-10-25T13:04:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V0 到 V1 的架构迁移在 RL 场景下需优先保证输出正确性与可复现性，而非性能优化",
+      "rollout 阶段的数值偏差会被 RL 训练放大，影响策略学习稳定性",
+      "该迁移经验对依赖 vLLM 构建 RLHF/RLVR 训练管线的团队具有直接参考价值"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

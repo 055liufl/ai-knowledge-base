@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261025-090",
+  "title": "Differential Transformer V2",
+  "source_url": "https://huggingface.co/blog/microsoft/diff-attn-v2",
+  "source_platform": "rss_company_blog",
+  "summary": "微软发布了 Differential Transformer V2（Diff Transformer V2），这是对差分注意力机制（Differential Attention）的升级版本。差分注意力通过计算两组注意力权重的差值来抑制无关上下文（即注意力噪声），从而提升模型对关键信息的聚焦能力。V2 版本在原有基础上进行了架构与训练层面的改进，旨在进一步提升大语言模型在长上下文理解、检索增强生成（RAG）以及抗幻觉等场景下的表现。该工作值得关注的原因在于：注意力噪声和\"注意力下沉\"（attention sink）是当前 Transformer 架构的核心痛点之一，差分注意力提供了一种从注意力机制本身入手的轻量级解决方案，且已在微软 Phi 系列等模型中得到验证。V2 的发布意味着这一思路正走向更成熟、更易落地的工程实现，对研究者和开发者均有较高参考价值。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "LLM",
+    "Microsoft"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:32Z",
+  "collected_at": "2026-10-25T13:05:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "差分注意力通过两组注意力权重的差值抵消注意力噪声，从机制层面提升模型对关键上下文的聚焦能力",
+      "V2 版本针对长上下文与 RAG 场景优化，有望缓解幻觉与注意力下沉问题",
+      "该机制已在微软 Phi 系列模型中验证，具备较强的工程落地可行性",
+      "为 Transformer 注意力架构改进提供了轻量级、可组合的新方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

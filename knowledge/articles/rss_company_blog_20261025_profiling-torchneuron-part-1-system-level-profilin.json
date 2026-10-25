@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261025-004",
+  "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+  "source_url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 TorchNeuron 性能分析系列的第一部分，聚焦于在 AWS Trainium 芯片上进行系统级性能分析。TorchNeuron 是 AWS 为 Trainium 定制 AI 加速器提供的 PyTorch 集成库，允许开发者使用 PyTorch 接口在 Trainium 上训练和推理模型。文章介绍了如何利用系统级工具（如 Neuron 系统性能分析器）来监控和优化模型在 Trainium 上的执行效率，涵盖性能瓶颈识别、硬件利用率分析以及常见优化策略。该内容值得关注，因为随着大模型对算力需求的增长，专用 AI 芯片（如 Trainium）的采用日益广泛，而性能分析是充分发挥硬件潜力的关键。本文为开发者提供了实用的 profiling 指南，有助于降低在 Trainium 上部署和优化模型的门槛，推动更高效的 AI 基础设施实践。",
+  "tags": [
+    "PyTorch",
+    "AWS Trainium",
+    "性能分析",
+    "AI 加速器"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:32Z",
+  "collected_at": "2026-10-25T13:01:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统级性能分析是优化 Trainium 上模型性能的关键步骤，可帮助识别计算与通信瓶颈。",
+      "TorchNeuron 提供了与 PyTorch 生态无缝集成的 profiling 工具，降低了专用硬件的使用门槛。",
+      "通过分析硬件利用率指标，开发者可以针对 Trainium 架构调整模型并行策略和内存布局。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

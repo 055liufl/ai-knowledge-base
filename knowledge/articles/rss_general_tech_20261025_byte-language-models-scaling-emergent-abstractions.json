@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261025-009",
+  "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation",
+  "source_url": "https://arxiv.org/html/2610.05978v1",
+  "source_platform": "rss_general_tech",
+  "summary": "该论文挑战了语言模型必须依赖显式分词器的传统假设，证明标准扁平 Transformer 可以直接处理原始字节序列，并且随着参数规模扩大，其性能实际上优于传统的子词模型。领域内长期认为处理原始字节在计算上效率低下，因为字节序列比子词序列长得多（一个典型子词约含四个字节）。作者论证这种额外序列长度带来的开销可以被模型规模扩展所抵消，并进一步探讨了字节级模型在扩展过程中涌现出的抽象能力以及信息分配机制。这项工作值得关注，因为它可能从根本上简化语言模型的预处理流程，消除分词器设计带来的人为偏差与多语言不公平问题，并为理解模型如何从原始信号中自发形成层级化表示提供新的视角。",
+  "tags": [
+    "Byte-level LM",
+    "Tokenizer-free",
+    "Scaling Laws",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-10-25T12:59:28Z",
+  "collected_at": "2026-10-25T13:00:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准扁平 Transformer 无需分词器即可直接建模原始字节序列，且随参数规模扩大性能超越子词模型",
+      "字节序列虽比子词序列长约四倍，但额外计算开销可被模型规模扩展所抵消",
+      "字节级模型在扩展中会涌现出抽象表示能力，并涉及模型内部的信息分配机制",
+      "该方向有望消除分词器设计偏差，简化预处理流程并提升多语言公平性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
