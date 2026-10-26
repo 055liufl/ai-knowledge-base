@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-047",
+  "title": "From Visual Affinity to Learning Credit in Multimodal Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.32324",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多模态强化学习（RLVR）中一个关键缺陷展开研究：现有方法将单一响应级优势统一分配给所有 token，忽视了视觉观察与后续推理在决策中的不同角色。作者指出，仅依赖视觉亲和度（visual affinity）并不充分——预测状态可能同时与图像和提示上下文表示对齐，而过度加权有效的视觉观察反而会在后续推理获得负优势时放大其负面更新。论文提出从视觉亲和度转向学习信用（learning credit）的分配思路，旨在更精细地区分视觉信息与推理步骤对最终奖励的贡献。该工作值得关注，因为它触及多模态 RL 训练中信用分配这一核心难题，对提升视觉语言模型的推理能力、避免视觉信息被错误惩罚具有直接意义，也为后续设计更合理的 token 级优势估计方法提供了新视角。",
+  "tags": [
+    "Multimodal RL",
+    "RLVR",
+    "Credit Assignment",
+    "Vision-Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一分配响应级优势会忽略视觉观察与推理步骤的不同贡献，导致信用分配失真",
+      "视觉亲和度不足以作为信用依据：预测状态可能同时对齐图像和提示上下文表示",
+      "过度加权有效视觉观察会在后续推理负优势时放大负面更新，损害训练效果",
+      "需要从视觉亲和度转向更精细的学习信用分配机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

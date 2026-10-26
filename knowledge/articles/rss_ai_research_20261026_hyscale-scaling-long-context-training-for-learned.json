@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-019",
+  "title": "HyScale: Scaling Long-Context Training for Learned Sparse Attention",
+  "source_url": "https://arxiv.org/abs/2610.32057",
+  "source_platform": "rss_ai_research",
+  "summary": "HyScale 是一个面向学习型稀疏注意力的长上下文训练系统，旨在解决百万级 token 上下文训练中的选择瓶颈。学习型稀疏注意力自 DeepSeek-V3.2 起被广泛采用，是一种有前景的架构，但其选择阶段（为每个查询对之前所有 token 打分）成为训练瓶颈：稀疏注意力只读取 k 个 token，而选择却需为每个查询计算全部 token 的分数；更严重的是，现有系统会物化完整的分数表，并在重计算时重复选择过程。HyScale 针对这一瓶颈提出系统级优化，以支持长上下文训练的可扩展性。该工作值得关注，因为它直面生产级稀疏注意力架构在训练效率上的关键痛点，对推动百万 token 上下文模型的实际训练具有重要意义。",
+  "tags": [
+    "Sparse Attention",
+    "Long-Context Training",
+    "Efficient Training",
+    "System Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "学习型稀疏注意力的选择阶段（全量打分）而非稀疏读取本身，已成为长上下文训练的瓶颈",
+      "现有系统物化完整分数表并在重计算时重复选择，造成显著的计算与内存浪费",
+      "HyScale 通过系统级优化提升选择效率，使百万 token 上下文训练更具可扩展性"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

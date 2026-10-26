@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-026",
+  "title": "Who Verifies the Tools? How Warped Formatters Mislead Agents and Their Verifiers",
+  "source_url": "https://arxiv.org/abs/2610.32110",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了AI Agent系统中一个被忽视的安全隐患：工具的输出格式化器（formatter）可能歪曲工具实际执行的计算结果，从而误导Agent及其验证器。作者在纽约Pilsudski研究所的生产级RAG研究系统中观察到，每个工具本身的计算都是正确的，但其输出文本省略了搜索限制、结果数量上限或数据截断等关键信息，导致Agent向用户提供了错误或不完整的答案。这一问题的核心在于，Agent和验证器通常只依赖工具打印的文本进行判断，而文本可能无法忠实反映工具的真实行为。该研究值得关注，因为它指出了Agent可靠性评估中的一个盲区——我们往往验证工具的计算逻辑，却忽略了输出呈现层的失真风险，这对构建可信的RAG系统和Agent工作流具有重要的实践警示意义。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Tool Use",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具计算正确不等于输出可信：格式化层可能省略搜索限制、结果上限等关键元信息，导致Agent误判",
+      "Agent和验证器过度依赖工具打印的文本，缺乏对工具实际执行行为的独立核验机制",
+      "生产级RAG系统中已出现此类失真导致的用户信息错误，说明该风险具有现实影响",
+      "需要将输出格式化器纳入Agent工具链的可信性验证范围，而不仅是计算逻辑本身"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

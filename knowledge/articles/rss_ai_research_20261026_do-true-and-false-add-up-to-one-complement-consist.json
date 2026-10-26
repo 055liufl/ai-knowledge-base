@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-075",
+  "title": "Do \"True\" and \"False\" Add Up to One? Complement Consistency in LLM-Agent Opinion Simulations",
+  "source_url": "https://arxiv.org/abs/2610.32874",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM智能体意见模拟中的互补一致性（Complement Consistency）问题。在模拟中，每个智能体根据自身先前概率和邻居报告的概率，输出某个主张为真的概率，该数值成为下一轮状态。作者提出，若该数值反映智能体立场而非所展示的句子，则当把主张改写为其否定形式并将所有概率p替换为1-p时，应得到互补答案。论文探讨这一性质是否成立，揭示LLM智能体在意见传播中的潜在偏差。该研究值得关注，因为它触及多智能体模拟的可信度基础：若智能体对逻辑等价但表述相反的问题给出不一致的概率，则模拟结果可能系统性失真，影响基于LLM的社会模拟、舆论预测等应用。",
+  "tags": [
+    "LLM-Agent",
+    "Opinion Simulation",
+    "Multi-Agent",
+    "Consistency"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体意见模拟中，概率状态应满足互补一致性：将主张改写为否定形式并令p→1-p，应得到互补答案。",
+      "互补一致性是检验智能体是否将概率理解为立场而非句子语义的关键测试。",
+      "若该性质不成立，基于LLM的多智能体舆论模拟可能产生系统性偏差，削弱模拟结果的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

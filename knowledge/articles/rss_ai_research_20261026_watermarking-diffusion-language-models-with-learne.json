@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261026-032",
+  "title": "Watermarking Diffusion Language Models with Learned Foresight and Balanced Bands",
+  "source_url": "https://arxiv.org/abs/2610.32205",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对扩散语言模型（Diffusion Language Models）的水印问题提出改进方法。传统绿-红水印依赖前序 token 生成绿名单，但扩散模型常先选 token 再确定前序，导致水印失效。作者在先前工作基础上，学习两个此前固定不变的组件：一是“前瞻”机制，预测 token 对邻居绿名单的影响；二是“平衡频带”策略，优化绿 token 的期望数量。该方法旨在提升扩散模型水印的鲁棒性和检测率，对模型溯源与版权保护有实际意义。",
+  "tags": [
+    "Watermarking",
+    "Diffusion Language Models",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型的非自回归生成顺序使传统绿-红水印失效，需重新设计水印策略。",
+      "通过学习前瞻组件预测 token 对邻居绿名单的影响，可提升水印嵌入效果。",
+      "平衡频带策略优化绿 token 期望数量，兼顾水印强度与文本质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

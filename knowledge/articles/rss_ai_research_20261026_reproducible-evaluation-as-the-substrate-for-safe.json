@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-011",
+  "title": "Reproducible Evaluation as the Substrate for Safe Prompt Compression in Production Agents",
+  "source_url": "https://arxiv.org/abs/2610.31972",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对生产环境中对话式智能体在实时、可变企业数据上评估困难的问题，提出了一种离线评估框架。由于后端状态变化会导致重放会话漂移，且基于当前数据构建的基准会随时间静默失效，作者设计了一个可复现的评估工具，即使所操作的数据不断变化，也能保持评估结果的一致性，并可在基准过时后按需重新生成。论文进一步利用该框架来支持安全的提示压缩（prompt compression），即在生产智能体中压缩提示词以降低成本和延迟，同时确保压缩不会引入行为退化或安全风险。该工作值得关注，因为它将可复现评估作为提示压缩的基础设施，解决了生产智能体部署中评估可靠性与提示优化之间的耦合问题，为在动态数据环境下安全地应用提示压缩提供了方法论和工具支持。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Prompt Compression",
+    "Production"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:55:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产智能体的评估基准会因后端数据变化而静默失效，需要可复现且可按需再生的离线评估框架。",
+      "可复现评估是安全提示压缩的前提，确保压缩后的提示不会导致智能体行为退化。",
+      "该框架将评估与提示压缩解耦，使压缩策略可以在稳定基准上验证后再部署到生产环境。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-094",
+  "title": "End-to-End Differentiable Diffusion Conditioning for Physics-Informed Optimization",
+  "source_url": "https://arxiv.org/abs/2610.31721",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种端到端可微的扩散条件化方法，用于物理信息优化问题。核心场景是离线基于模型的优化（MBO）：在只有固定数据集、无法在测试时访问真实目标函数的条件下，优化高维物理系统设计。现有方法存在三类问题：过度保守、无约束地利用代理模型（surrogate exploitation），以及仅作为静态推理期采样器而无法与优化目标端到端联合训练。作者通过将扩散模型的条件化过程设计为可微模块，使条件生成与下游物理优化目标能够联合优化，从而在昂贵评估和复杂约束下更有效地搜索设计空间。该工作值得关注的原因在于：它把生成式扩散模型从静态采样器转变为可训练的优化组件，打通了生成建模与物理约束优化之间的梯度通路，对科学工程中的设计优化（如材料、结构、流体等）具有实用价值，也为离线 MBO 提供了新的建模范式。",
+  "tags": [
+    "Diffusion Model",
+    "Physics-Informed ML",
+    "Model-Based Optimization",
+    "Differentiable Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将扩散模型的条件化过程设计为可微模块，使生成与物理优化目标可端到端联合训练，突破静态推理期采样的局限。",
+      "针对离线 MBO 中代理模型被无约束利用和过度保守的痛点，提供了一种兼顾约束与探索的优化框架。",
+      "在仅有固定数据集、无法访问真实目标的设定下优化高维物理系统，对昂贵评估的科学工程场景具有实际意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

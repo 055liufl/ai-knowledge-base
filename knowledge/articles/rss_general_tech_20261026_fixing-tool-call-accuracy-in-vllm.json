@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261026-001",
+  "title": "Fixing Tool-Call Accuracy in vLLM",
+  "source_url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+  "source_platform": "rss_general_tech",
+  "summary": "本文来自 Ubicloud 博客，讨论在 vLLM 推理框架中修复工具调用（tool-call）准确性问题。随着 LLM Agent 和函数调用能力在生产环境中广泛使用，模型输出的工具调用参数必须被可靠地解析为结构化 JSON，而 vLLM 在特定场景下（如流式输出、特殊 token 处理、并行采样）会出现工具调用解析错误，导致参数丢失或格式损坏。文章分析了问题根因，并给出修复方案与验证结果。该内容值得关注，因为工具调用是 Agent 系统的基础能力，推理层的解析缺陷会直接影响下游应用可靠性，而 vLLM 是当前最主流的开源推理引擎之一，其修复对大量自托管部署具有普遍参考价值。",
+  "tags": [
+    "vLLM",
+    "Tool Calling",
+    "Agent",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:16Z",
+  "collected_at": "2026-10-26T14:54:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具调用解析错误多发生在推理引擎层而非模型本身，修复推理框架可显著提升 Agent 可靠性",
+      "流式输出与特殊 token 处理是 vLLM 工具调用解析的主要薄弱环节",
+      "该修复对自托管 LLM 服务的大规模部署具有直接工程价值"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

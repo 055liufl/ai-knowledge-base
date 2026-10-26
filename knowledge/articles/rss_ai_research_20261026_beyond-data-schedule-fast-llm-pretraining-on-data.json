@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-128",
+  "title": "Beyond Data Schedule: Fast LLM Pretraining on Data Mixtures by Loss-Reweighting",
+  "source_url": "https://arxiv.org/abs/2610.32141",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型在连续预训练阶段中如何平衡新能力获取与旧知识遗忘的问题。作者提出不改变各领域数据曝光量，而是通过损失重加权（loss reweighting）调整各领域对学习的贡献强度。在受控的知识-数学实验中，损失重加权产生了一个单一检查点，能够同时保持知识能力和数学能力，避免了传统数据调度带来的灾难性遗忘。这项工作为多阶段预训练提供了一种简单而有效的替代方案，有望减少对复杂数据调度策略的依赖，提升预训练效率与知识保留能力，对LLM训练实践具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Pretraining",
+    "Catastrophic Forgetting",
+    "Loss Reweighting"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过损失重加权而非数据调度来调整领域贡献，可在固定数据曝光下缓解连续预训练中的遗忘问题。",
+      "在知识-数学受控实验中，损失重加权产生单一检查点，同时保留知识与数学能力。",
+      "该方法为多阶段预训练提供了一种更简单、高效的替代方案，减少对复杂数据调度策略的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

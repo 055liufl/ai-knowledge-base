@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-113",
+  "title": "Agentic AI Defense: Decode-Time Provenance Binding for MCP",
+  "source_url": "https://arxiv.org/abs/2610.31974",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于模型上下文协议（MCP）的智能体AI系统面临的间接提示注入威胁，提出了一种名为“解码时溯源绑定”的防御机制。研究揭示了一种跨模态信任洗白攻击：攻击者利用LSB、DCT或元数据隐写术将恶意指令隐藏在邮件签名图片中，绕过文本扫描器，并在工具解码时进入多智能体工作流。该工作首次系统性地将隐写术与MCP工具调用链结合，展示了多模态智能体安全的新攻击面，并给出了在解码环节进行溯源验证的防御思路。对于关注AI Agent安全、多模态信任边界和MCP生态的研究者与开发者具有较高参考价值，填补了智能体工作流中跨模态注入防御的空白。",
+  "tags": [
+    "Agent Security",
+    "MCP",
+    "Prompt Injection",
+    "Steganography",
+    "Multi-modal"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:00:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨模态信任洗白是MCP智能体工作流中的新型攻击向量，隐写术可将恶意指令嵌入图像并绕过文本级防护。",
+      "防御需在工具解码环节实施溯源绑定，而非仅依赖输入文本扫描。",
+      "多智能体协作放大了间接提示注入的传播风险，需建立端到端的信任链验证机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

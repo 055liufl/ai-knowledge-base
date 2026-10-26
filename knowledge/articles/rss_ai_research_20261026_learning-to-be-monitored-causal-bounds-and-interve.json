@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-096",
+  "title": "Learning to Be Monitored: Causal Bounds and Intervention-Aware Post-Training Recipes for Chain-of-Thought Monitorability",
+  "source_url": "https://arxiv.org/abs/2610.31733",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究链式思维（CoT）监控的可监控性问题，即监控器能否从模型的推理过程中检测到干预的作用。作者指出，现有基于干预的评估方法（如最小准则敏感度 TPR_mc）存在因果识别上的缺陷：在干预下观察到的目标行为可能并非由干预本身引起，导致监控评估的因果解释不成立。为此，论文提出因果边界（causal bounds）来量化监控器检测能力的理论上限与下限，并给出干预感知的后训练配方（intervention-aware post-training recipes），旨在训练模型产生更可监控的 CoT。该工作将因果推断引入 CoT 可监控性评估，为构建可信的 AI 监控体系提供了理论工具与训练方法，对 LLM 安全与对齐研究具有重要价值。",
+  "tags": [
+    "Chain-of-Thought",
+    "LLM Safety",
+    "Causal Inference",
+    "Monitoring",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于干预的 CoT 监控评估（如 TPR_mc）缺乏因果识别保证，观察到的行为可能混淆干预效应，导致监控能力被高估或误判。",
+      "论文提出因果边界来刻画监控器检测干预作用的可识别范围，为评估 CoT 可监控性提供理论下界与上界。",
+      "干预感知的后训练配方可主动提升模型 CoT 的可监控性，将监控从被动评估转向训练阶段的主动设计。",
+      "该工作连接因果推断与 LLM 安全监控，为可信 AI 监控体系提供了新的评估范式与训练思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

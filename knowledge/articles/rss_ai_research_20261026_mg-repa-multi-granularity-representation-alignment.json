@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-133",
+  "title": "MG-REPA: Multi-Granularity Representation Alignment for Generative Target Speaker Extraction",
+  "source_url": "https://arxiv.org/abs/2610.32161",
+  "source_platform": "rss_ai_research",
+  "summary": "MG-REPA 提出了一种面向生成式目标说话人提取（TSE）的多粒度表示对齐方法，旨在解决生成式 TSE 模型训练收敛缓慢的问题。现有 REPA 方法通过将扩散 Transformer 的隐藏状态与预训练自监督学习（SSL）教师模型对齐来加速训练，但在语音和音频领域仅采用单一粒度对齐。对于 TSE 任务，帧级对齐忽略了全局、时间不变的信息，而全局对齐又可能丢失细粒度的时序细节。MG-REPA 通过引入多粒度对齐策略，同时利用帧级和全局级表示来指导生成模型训练，从而更充分地利用 SSL 教师模型的知识。该工作值得关注，因为它针对生成式语音模型训练效率这一实际痛点，提出了结构化的对齐改进方案，有望在保持提取质量的同时显著缩短训练周期，对语音分离与增强领域的研究者和开发者具有参考价值。",
+  "tags": [
+    "Speech",
+    "Diffusion",
+    "Self-Supervised Learning",
+    "Representation Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式 TSE 模型提取质量高但训练收敛慢，REPA 通过 SSL 教师对齐可加速扩散 Transformer 训练",
+      "现有语音音频领域的 REPA 仅做单一粒度对齐，帧级对齐会忽略全局时间不变信息",
+      "多粒度表示对齐同时利用帧级与全局级监督，更充分地迁移 SSL 教师知识",
+      "该方法有望在保持 TSE 提取质量的前提下显著缩短训练周期"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

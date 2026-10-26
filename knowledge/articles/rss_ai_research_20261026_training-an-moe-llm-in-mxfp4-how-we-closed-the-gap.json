@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-036",
+  "title": "Training an MoE LLM in MXFP4: How We Closed the Gap to BF16",
+  "source_url": "https://arxiv.org/abs/2610.32229",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ALTO，一个面向 GPT-OSS-20B（200 亿参数 MoE 模型）的开源训练方案，在 MLPerf Small MoE Training 基准上使用 MXFP4 微缩放格式完成训练。FP4 格式虽能显著提升内存带宽与计算吞吐，但量化误差足以破坏优化稳定性。ALTO 的核心贡献在于系统性地缩小 MXFP4 训练与 BF16 基线之间的差距，使低精度训练在 MoE 架构上达到可用的收敛质量。该工作值得关注的原因有三：一是首次在公开基准上给出 20B 级 MoE 模型的 FP4 训练完整配方，而非仅推理量化；二是 MoE 的路由机制对量化噪声尤为敏感，其稳定性处理方案具有参考价值；三是开源配方降低了社区复现与迁移到其他模型的门槛，对推动低精度训练从研究走向工程落地有直接意义。",
+  "tags": [
+    "MoE",
+    "FP4",
+    "Quantization",
+    "LLM Training",
+    "Low-Precision"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FP4 训练的主要障碍不是精度损失本身，而是量化误差对优化过程的 destabilizing 效应，需要专门的稳定性处理",
+      "MoE 架构的路由机制对低精度噪声更敏感，是 MXFP4 训练配方设计的关键难点",
+      "ALTO 以开源配方形式给出 20B 级 MoE 在 MLPerf 基准上的完整训练方案，具备可复现性",
+      "MXFP4 微缩放格式在内存带宽和吞吐上的收益，使低精度训练成为大规模 MoE 训练的可行工程路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-142",
+  "title": "Anti-coherence Regularized Absolute Scaling for Out-of-Distribution Detection",
+  "source_url": "https://arxiv.org/abs/2610.32255",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对分布外（OOD）检测中的 SCALE 方法提出改进。SCALE 是一种无需训练数据的后处理激活整形方法，通过基于百分位的幅度比对倒数第二层激活进行重缩放，在 AI 安全领域具有实用价值。然而，当激活中存在负值时，正负贡献在求和过程中相互抵消，导致该幅度比定义不明确，SCALE 因此失效。论文提出 Anti-coherence Regularized Absolute Scaling 方法，通过反一致性正则化与绝对缩放来修正这一问题，使 SCALE 类方法在含负激活的场景下依然稳健有效。该工作属于 OOD 检测与 AI 安全交叉方向的方法论改进，对部署可靠机器学习系统的研究者和工程师具有参考意义，但摘要信息有限，具体实验效果与提升幅度尚待全文验证。",
+  "tags": [
+    "OOD Detection",
+    "AI Safety",
+    "Activation Shaping",
+    "Post-hoc Method"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:02:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SCALE 作为无需训练数据的后处理 OOD 检测方法，其百分位幅度比在存在负激活时因正负抵消而定义不清",
+      "论文通过反一致性正则化与绝对缩放修正该缺陷，扩展了 SCALE 类方法的适用场景",
+      "该工作聚焦 AI 安全中的 OOD 检测可靠性，属于激活整形家族的方法论改进"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

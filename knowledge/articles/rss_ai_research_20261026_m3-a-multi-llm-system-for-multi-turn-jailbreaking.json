@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-009",
+  "title": "$M^3$: A Multi-LLM System for Multi-Turn Jailbreaking as a Markov Decision Process",
+  "source_url": "https://arxiv.org/abs/2610.31937",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 M^3，一个面向多轮越狱攻击的自动化红队框架，将多轮越狱形式化为有限时域马尔可夫决策过程（MDP），以解决现有红队方法依赖启发式规则或强假设、难以适用于完全黑盒场景的问题。M^3 采用多 LLM 系统协同工作，在无需访问模型内部参数的情况下，通过多轮交互逐步绕过目标 LLM 的安全机制。该工作值得关注的原因在于：多轮对话越狱是当前 LLM 安全对齐面临的重要现实威胁，而黑盒条件下的自动化红队测试是评估和提升模型鲁棒性的关键手段；将越狱过程建模为 MDP 为攻击策略的序列化优化提供了理论框架，有望提升红队测试的系统性和可复现性，对 LLM 安全研究、对齐评估及防御策略设计具有参考价值。",
+  "tags": [
+    "LLM Safety",
+    "Jailbreaking",
+    "Red Teaming",
+    "Multi-Agent",
+    "MDP"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:55:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多轮越狱攻击形式化为有限时域 MDP，为黑盒条件下的序列化攻击策略优化提供理论框架",
+      "采用多 LLM 协同系统，摆脱对启发式规则和模型内部访问的依赖，适用于完全黑盒场景",
+      "多轮渐进式交互是绕过现代 LLM 安全机制的有效途径，红队评估需重视对话级攻击面",
+      "该框架可用于自动化安全评估，为 LLM 对齐与防御策略的迭代提供可复现的测试手段"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

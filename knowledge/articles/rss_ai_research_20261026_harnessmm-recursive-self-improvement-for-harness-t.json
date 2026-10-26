@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-071",
+  "title": "HarnessMM: Recursive Self-Improvement for Harness Token Efficiency",
+  "source_url": "https://arxiv.org/abs/2610.32813",
+  "source_platform": "rss_ai_research",
+  "summary": "HarnessMM 是一篇关于提升 Agent harness（智能体执行框架）token 效率的 arXiv 论文。论文指出，现有 agent harness 在工具调用反馈后往往会重复触发推理，即使此前的调用已经确定了下一步动作，造成大量冗余 token 消耗。为此，作者提出 HarnessMM（Harness Minus Minus），核心机制包括受保护的决策复用（guarded decision reuse）与递归自我改进（RSI）：前者在安全前提下复用已确定的决策，避免重复推理；后者利用训练反馈迭代优化配套的 harness 配置，并通过验证集选择最终部署配置。论文还引入了一个控制器来协调相关流程（摘要在此处截断）。该工作值得关注，因为 token 效率是当前 LLM Agent 落地的主要成本瓶颈之一，而通过 harness 层面的决策复用与自我改进来降低冗余推理，提供了一条不依赖更换底层模型的优化路径，对构建高性价比、可自我演化的 Agent 系统具有直接的工程参考价值。",
+  "tags": [
+    "Agent",
+    "Token Efficiency",
+    "Self-Improvement",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent harness 在工具反馈后常重复触发推理，即使下一步动作已确定，这是 token 浪费的重要来源",
+      "受保护的决策复用可在保证正确性的前提下跳过冗余推理调用",
+      "递归自我改进（RSI）利用训练反馈迭代优化 harness 配置，并以验证集选择部署版本",
+      "优化点位于 harness 层而非模型层，为降低 Agent 运行成本提供了模型无关的路径"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

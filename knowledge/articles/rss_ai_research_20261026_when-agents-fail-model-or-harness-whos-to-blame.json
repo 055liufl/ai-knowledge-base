@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-060",
+  "title": "When Agents Fail: Model or Harness--Who's to Blame?",
+  "source_url": "https://arxiv.org/abs/2610.32483",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了LLM智能体失败时责任归属的问题，指出智能体基准性能是模型与执行框架（harness）共同作用的结果，因此框架应通过其与底层模型的交互来评估。作者提出了一个包含五个互补指标的评估框架，其中两个关键指标为：有效完成率（VCR），衡量智能体正常结束并交付可评估结果的可靠性（与任务正确性无关）；以及模型-框架匹配度，衡量框架与模型之间的适配程度。该研究的意义在于，当前智能体评估往往将性能归因于模型本身，而忽略了执行框架的关键作用，导致对失败原因的误判。通过系统化地分离模型与框架的贡献，该工作为智能体系统的诊断、优化和基准设计提供了新视角，有助于开发者更精准地定位问题并改进系统。",
+  "tags": [
+    "LLM Agent",
+    "Evaluation",
+    "Benchmark",
+    "Harness"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体基准性能反映模型与执行框架的联合行为，不能单独归因于模型。",
+      "评估框架应关注其与底层模型的交互，而非孤立地测试框架或模型。",
+      "有效完成率（VCR）和模型-框架匹配度是诊断智能体失败原因的关键指标。",
+      "系统化分离模型与框架的贡献有助于更准确地定位智能体失败根源。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

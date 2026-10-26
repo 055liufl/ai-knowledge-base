@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-007",
+  "title": "Permission to Retry: A Study of Authorization and Recovery in AI Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2610.31916",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究工具使用型 AI Agent 在执行关键动作时的执行期可靠性问题，核心场景是：一个持久化 Agent 在权限发生变化、且外部动作结果不确定的情况下，如何安全地恢复执行。作者将恢复决策从语言模型行为中剥离出来，提出四个相互独立的责任/义务：检查点状态、派发权限、外部效果证据、对账权限。论文通过有限一致性研究（finite conformance study）来检查这些义务是否被正确履行。该工作值得关注，因为它首次系统性地将 Agent 工作流中的授权与恢复问题形式化，区分了「能否重试」与「是否应该重试」两个常被混淆的维度，为构建高可靠、可审计的 Agent 执行框架提供了理论基础和可验证的规范。对于需要 Agent 执行支付、发邮件、调用外部 API 等有副作用操作的工程团队，该研究直接对应生产环境中的幂等性、权限漂移和故障恢复难题。",
+  "tags": [
+    "Agent",
+    "Workflow",
+    "Reliability",
+    "Authorization",
+    "Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:55:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 恢复执行涉及四个独立义务：检查点状态、派发权限、外部效果证据、对账权限，不能混为一谈",
+      "将恢复决策与 LLM 行为解耦，是提升 Agent 执行期可靠性的关键设计原则",
+      "权限可能在动作执行期间发生变化，因此「有权限重试」不等于「应该重试」，需要外部效果证据支撑",
+      "有限一致性研究为 Agent 工作流的授权与恢复提供了可验证的规范框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

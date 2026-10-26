@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-087",
+  "title": "Before the Ticket: Grounding HPC User Support in Documentation and Resolved Tickets with an Agentic LLM Assistant",
+  "source_url": "https://arxiv.org/abs/2610.31703",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向高性能计算（HPC）用户支持的智能助手，旨在解决用户重复提交工单的问题。许多用户问题实际上已在中心用户指南或历史工单中得到解答，但用户因文档导航困难、工单历史不可搜索而仍选择新建工单。作者构建了一个基于 Agentic LLM 的助手，通过编排器调用两个基于模型上下文协议（MCP）的工具：一个是对实时文档进行检索增强生成（RAG），另一个是对已解决工单进行检索。该工作将 LLM Agent、RAG 与 MCP 协议结合，应用于 HPC 技术支持这一垂直场景，展示了如何通过工具编排让模型同时利用结构化文档和非结构化历史工单，从而在用户提交工单之前就提供准确答案。其价值在于降低支持成本、提升用户体验，并为其他领域的技术支持自动化提供了可复用的架构范式。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "RAG",
+    "MCP",
+    "HPC"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HPC 帮助台的大量问题已有现成答案，瓶颈在于文档可导航性和工单历史可搜索性，而非知识缺失。",
+      "通过 MCP 协议编排多个检索工具（文档 RAG + 已解决工单检索），Agent 可统一访问异构知识源。",
+      "将 Agentic LLM 助手前置到工单提交之前，可减少重复工单、降低支持成本并改善用户体验。",
+      "该架构可推广到其他领域的技术支持场景，核心是工具编排与多源 RAG 的结合。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

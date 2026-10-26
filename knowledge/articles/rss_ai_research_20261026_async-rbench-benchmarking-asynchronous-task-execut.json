@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-053",
+  "title": "Async-RBench: Benchmarking Asynchronous Task Execution in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.32429",
+  "source_platform": "rss_ai_research",
+  "summary": "Async-RBench 是一个针对 LLM 智能体异步任务执行能力的基准测试框架。随着 LLM 智能体越来越多地采用异步执行模式——主智能体在子智能体运行期间继续工作，子智能体返回结果时任务状态可能已经改变——主智能体必须判断哪些工作成果需要更新或保留、哪些检查需要重做，同时避免执行被禁止的修改。仅凭最终任务是否成功无法揭示这些中间结果是否被正确处理，而自然发生的异步到达又难以复现和评测。该工作构建了可控的异步任务执行环境，用于系统性地评估智能体在状态变化下的结果整合、冲突处理与一致性维护能力。其价值在于填补了异步执行这一关键但被忽视的评测空白，为构建更可靠的长时间运行、多智能体协作系统提供了诊断工具和优化方向，对智能体工程实践具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Async Execution",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "最终任务成功率不足以衡量异步执行质量，需单独评估中间结果的整合与冲突处理是否正确",
+      "异步场景下主智能体需在状态变化后判断哪些工作更新、哪些保留、哪些检查重做，这是现有基准未覆盖的能力维度",
+      "自然异步到达难以复现，构建可控的异步任务环境是系统性评测该类能力的关键前提"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

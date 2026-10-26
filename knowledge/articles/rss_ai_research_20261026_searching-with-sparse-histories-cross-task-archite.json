@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-134",
+  "title": "Searching with Sparse Histories: Cross-Task Architecture Search from Incomplete Search Logs and Zero-Cost Proxies",
+  "source_url": "https://arxiv.org/abs/2610.32179",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种面向神经架构搜索（NAS）的风险鲁棒策略，旨在解决跨任务迁移中搜索历史稀疏和任务特定迁移失败的问题。方法核心是将稀疏的源任务搜索日志与零成本代理（zero-cost proxies）相结合，通过冠军初始化（champion-based initialization）和联合成对排序器预训练（joint pairwise-ranker pretraining）来提升跨任务架构搜索的效率与鲁棒性。在 TransNAS-Bench-101 基准上的实验表明该方法能够缓解稀疏历史带来的性能下降。该工作值得关注的原因在于：NAS 计算成本高昂，跨任务迁移是降低开销的关键路径，而现实场景中搜索日志往往不完整，如何在这种稀疏条件下稳健地复用知识具有较强实用价值；同时将零成本代理与排序学习结合，为低成本 NAS 提供了新的思路。",
+  "tags": [
+    "NAS",
+    "Transfer Learning",
+    "Zero-Cost Proxies",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏搜索历史是跨任务 NAS 迁移中的现实约束，直接复用源任务知识容易导致任务特定迁移失败",
+      "将零成本代理与稀疏源日志结合，可在不增加搜索开销的前提下补充架构评估信号",
+      "冠军初始化与联合成对排序器预训练是提升跨任务排序鲁棒性的关键设计",
+      "在 TransNAS-Bench-101 上的验证表明该方法对不完整日志场景具有风险鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

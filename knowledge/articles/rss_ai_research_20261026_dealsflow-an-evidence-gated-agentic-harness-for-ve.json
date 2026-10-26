@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-051",
+  "title": "DealsFlow: An Evidence-Gated Agentic Harness for Venture Capital Deal Triage",
+  "source_url": "https://arxiv.org/abs/2610.32380",
+  "source_platform": "rss_ai_research",
+  "summary": "DealsFlow 是一个面向风险投资（VC）早期项目筛选的人机协同智能体框架（agentic harness），已在英国一家早期基金实际部署。该工作针对 LLM 直接输出投资评分时常见的评分膨胀、运行间方差大、理由难以审计等问题，提出“证据门控”机制：LLM 只负责阅读创业公司路演材料（pitch deck）、引用证据并对各维度打分，最终评分由代码逻辑合成，且代码只能下调、不能上调 LLM 给出的分数。系统通过三种机制实现这一约束，强调可审计性与人在回路（human-in-the-loop）。其价值在于把 LLM 的文本理解能力与确定性的评分聚合逻辑分离，降低模型幻觉与评分漂移对投资决策的负面影响，为金融、投资等高风险决策场景中落地 LLM 提供了可复用的工程范式，值得关注 AI Agent 在垂直业务中如何做约束设计与证据溯源。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Human-in-the-loop",
+    "FinTech"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 不应直接输出最终投资评分，而应只负责证据引用与分项打分，聚合逻辑交给确定性代码",
+      "评分只降不升的封顶机制可有效抑制 LLM 评分膨胀与运行间方差",
+      "证据门控与人在回路设计提升了投资决策的可审计性，适合高风险垂直场景落地",
+      "该框架展示了将 LLM 能力与业务规则解耦的工程化 Agent 设计思路"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

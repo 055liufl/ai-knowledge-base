@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-136",
+  "title": "Dual-Adaptive Z-Score PPO: Dynamic Clipping Using Action Confidence and Normalized Advantage Magnitude",
+  "source_url": "https://arxiv.org/abs/2610.32194",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对近端策略优化（PPO）中固定裁剪阈值的问题，提出了一种名为 Dual-Adaptive Z-Score PPO 的改进方法。传统 PPO 对所有训练样本使用相同的信任域宽度，忽略了策略更新的可靠性差异。本文通过引入两个自适应机制来动态调整裁剪阈值：一是基于动作置信度（Action Confidence），二是基于归一化优势幅度（Normalized Advantage Magnitude）。具体而言，动作置信度反映了策略对当前动作的确定程度，而优势幅度则衡量了更新信号的重要性。通过将这两个因素结合，算法能够为每个样本生成样本相关的裁剪阈值，从而在训练过程中更精细地控制策略更新的步长。该方法旨在提升 PPO 的稳定性和样本效率，尤其在复杂或高方差环境中可能带来更优的性能。该工作属于强化学习算法改进的研究范畴，对关注 PPO 变体、自适应信任域以及策略优化稳定性的研究者和开发者具有参考价值。",
+  "tags": [
+    "PPO",
+    "Reinforcement Learning",
+    "Adaptive Clipping",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PPO 的固定裁剪阈值忽略了不同样本更新可靠性的差异，导致信任域宽度不匹配。",
+      "通过结合动作置信度和归一化优势幅度，可以动态生成样本相关的裁剪阈值。",
+      "自适应裁剪有望提升 PPO 在复杂环境中的稳定性和样本效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

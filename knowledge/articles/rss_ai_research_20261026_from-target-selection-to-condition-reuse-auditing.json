@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-084",
+  "title": "From Target Selection to Condition Reuse: Auditing Residual Interventions in Tool-Use Models",
+  "source_url": "https://arxiv.org/abs/2610.31686",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究工具使用模型中的激活干预（activation interventions）是否具有可迁移性：即通过残差写入（residual writing）让模型在特定条件下输出目标答案后，模型能否在其他计算中复用该条件。作者在 Qwen3.5-27B 上针对时间或权限决定资格与选择的工具使用任务进行实验，在 32 个全新场景中，两种针对具体案例的残差写入变体将目标选择正确率从 35/128 提升至 119/128、从 33/128 提升至 114/128，但这些增益在条件复用场景中消失。该工作揭示了当前激活干预方法的一个关键局限：干预效果高度局部化，难以泛化为可复用的内部条件表示，对可解释性、模型编辑与工具调用可靠性研究具有重要警示意义。",
+  "tags": [
+    "Activation Intervention",
+    "Tool-Use Models",
+    "Interpretability",
+    "Model Editing"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "残差写入干预能显著提升特定案例的目标选择正确率，但增益无法迁移到其他需要复用同一条件的计算中。",
+      "激活干预的效果高度局部化，表明模型并未真正习得可复用的条件表示，而是被引导至特定输出。",
+      "该发现对模型编辑与可解释性研究提出警示：干预成功不等于内部条件被正确编码和复用。",
+      "工具使用场景中条件（时间、权限）的复用能力是评估干预质量的重要维度，需纳入后续基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

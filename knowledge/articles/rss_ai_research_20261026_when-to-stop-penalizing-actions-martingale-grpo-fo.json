@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-054",
+  "title": "When to Stop Penalizing Actions? Martingale GRPO for VLA Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.32431",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对视觉-语言-动作（VLA）模型强化学习中的信用分配问题提出改进。在GRPO中，整条轨迹共享一个轨迹级优势值，导致失败轨迹中所有动作被同等惩罚，包括那些本可挽救局面的恢复性动作。作者利用成功概率与策略得分的鞅性质，刻画了失败反馈的理想停止条件，提出Martingale GRPO方法，旨在更精细地判断何时应停止对动作的惩罚。该工作值得关注，因为它直击VLA强化学习训练中奖励稀疏与信用分配的核心痛点，有望提升机器人操作等长序列决策任务的样本效率与策略鲁棒性。",
+  "tags": [
+    "VLA",
+    "GRPO",
+    "Reinforcement Learning",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO的轨迹级优势分配会将失败轨迹中的恢复性动作与错误动作一同惩罚，造成信用分配偏差",
+      "利用成功概率和策略得分的鞅性质可形式化刻画失败反馈的理想停止条件",
+      "Martingale GRPO通过更精细的停止机制减少对潜在有用动作的误罚，提升VLA策略学习效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

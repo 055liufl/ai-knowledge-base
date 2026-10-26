@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-139",
+  "title": "SOPO: Socratic Guided Policy Optimization for Span-Level Hallucination Detection",
+  "source_url": "https://arxiv.org/abs/2610.32212",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SOPO（Socratic Guided Policy Optimization），一种面向 span 级幻觉检测的策略优化方法。LLM 在各类 NLP 任务中广泛应用，但幻觉问题——生成不忠实或不一致内容——仍是关键障碍。现有基于可验证奖励的强化学习（RLVR）在推理任务中表现良好，但直接用于 span 级幻觉检测面临三大挑战：定位歧义（难以确定幻觉片段边界）、困难样本上的奖励稀疏、以及不确定性建模不足。SOPO 借鉴苏格拉底式引导思想，通过分步提问与引导式奖励设计缓解上述问题，提升模型对细粒度幻觉片段的定位与判别能力。该工作值得关注，因为它将 RLVR 从推理任务拓展到幻觉检测这一更细粒度、更需定位能力的场景，并针对奖励稀疏与定位歧义提出结构化引导方案，对提升 LLM 输出可靠性、构建可信生成系统具有实际意义，也为细粒度强化学习奖励设计提供了新思路。",
+  "tags": [
+    "Hallucination Detection",
+    "RLVR",
+    "LLM",
+    "Policy Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:02:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 RLVR 从推理任务拓展到 span 级幻觉检测，需解决定位歧义与奖励稀疏问题",
+      "苏格拉底式引导通过分步提问与结构化奖励缓解困难样本的奖励稀疏",
+      "细粒度幻觉检测的关键在于对幻觉片段边界的准确定位与不确定性建模"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

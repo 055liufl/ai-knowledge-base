@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-035",
+  "title": "Correct Answers, Closed Gates: SolveBind for GUI Agents at the Verification Barrier",
+  "source_url": "https://arxiv.org/abs/2610.32223",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并系统研究了“受保护GUI环境”这一被忽视的评测盲区：网站和应用通过验证码及反自动化机制，利用交互轨迹、时序等行为信号而非仅凭结果来区分人类与自动化代理。作者指出，在这类环境中，正确解出验证任务并不等于端到端任务完成，代理还必须将求解器输出转化为被系统接受的交互，并根据运行时反馈动态调整执行策略。为此，论文提出SolveBind方法，旨在跨越“验证屏障”，把求解结果与可被接受的交互行为绑定起来。该工作值得关注的原因在于：它揭示了当前GUI代理评测普遍假设“答对即成功”的缺陷，将研究焦点从任务正确性扩展到行为可接受性与执行适应性，对构建真实可用的网页/应用自动化代理具有直接的现实意义，也为代理安全、人机区分与鲁棒执行策略研究提供了新的问题设定和基准视角。",
+  "tags": [
+    "GUI Agent",
+    "CAPTCHA",
+    "Anti-automation",
+    "Agent Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有GUI代理评测多假设“答对即完成”，但在受保护环境中，正确解出验证任务并不足以完成端到端任务。",
+      "反自动化机制依赖交互轨迹与时序等行为信号，代理需将求解器输出转化为被系统接受的交互行为。",
+      "代理必须具备根据运行时反馈动态调整执行策略的能力，才能跨越验证屏障。",
+      "该问题将GUI代理研究从任务正确性扩展到行为可接受性与执行适应性，具有现实部署意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-095",
+  "title": "Autoregressive Multimodal Anomaly Detection with Large Language Models for Microservice Systems",
+  "source_url": "https://arxiv.org/abs/2610.31722",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向微服务系统的自回归多模态异常检测方法，利用大语言模型（LLM）对多源异构监控数据进行统一建模。微服务架构已成为大规模云应用的主流范式，但其故障和性能异常会快速跨服务传播，严重影响端到端行为，因此高效异常检测是保障可靠性与可用性的关键。现有方法多依赖单模态指标或简单融合，难以捕捉日志、指标、追踪等多模态信号间的复杂关联与时序依赖。本文的核心思路是将多模态观测序列转化为自回归生成任务，借助LLM的序列建模与语义理解能力，对正常模式进行学习，并以生成概率或预测偏差作为异常判据，从而实现跨模态、上下文感知的检测。该工作值得关注的原因在于：它把LLM从传统的文本任务拓展到系统运维（AIOps）领域，为多模态异常检测提供了生成式新范式；同时针对微服务故障传播快、模态异构的痛点，有望提升检测的准确性与早期预警能力，对云原生系统的智能运维具有实际价值。",
+  "tags": [
+    "LLM",
+    "Anomaly Detection",
+    "Microservices",
+    "Multimodal",
+    "AIOps"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多模态监控数据（日志、指标、追踪）统一为自回归序列建模任务，利用LLM捕捉跨模态时序依赖",
+      "以生成式建模学习正常模式分布，用预测偏差或生成概率作为异常判据，区别于传统判别式方法",
+      "面向微服务故障快速传播的特点，强调上下文感知与早期异常预警能力",
+      "拓展了LLM在AIOps与系统可靠性领域的应用边界"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

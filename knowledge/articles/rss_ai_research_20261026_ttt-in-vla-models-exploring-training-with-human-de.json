@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-123",
+  "title": "TTT in VLA Models: Exploring Training with Human Demonstrations",
+  "source_url": "https://arxiv.org/abs/2610.32094",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究将测试时训练（Test-Time Training, TTT）集成到视觉-语言-动作（VLA）模型中，以解决长时程机器人任务中需要保留和利用历史信息的问题。作者将TTT模块嵌入InternVLA-A1和Pi0.5两个VLA模型，通过快速权重存储上下文，并利用配对的人类演示与机器人轨迹进行训练，使动作生成能够以人类演示为条件。研究实现了两个阶段间的记忆迁移和截断反向传播，并考察了训练目标、梯度覆盖范围等关键设计。该工作值得关注，因为它探索了如何将人类演示数据更有效地注入VLA模型，同时引入TTT这一新兴范式来增强长时程记忆能力，对机器人操作和具身智能领域具有潜在推动作用。",
+  "tags": [
+    "VLA",
+    "Test-Time Training",
+    "Robot Learning",
+    "Imitation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将TTT的快速权重机制引入VLA模型，为长时程机器人任务提供了一种新的上下文记忆方案",
+      "通过配对的人类演示与机器人轨迹训练，探索了人类演示数据在VLA模型中的条件化利用方式",
+      "记忆迁移与截断反向传播的设计是连接演示阶段与机器人执行阶段的关键技术点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

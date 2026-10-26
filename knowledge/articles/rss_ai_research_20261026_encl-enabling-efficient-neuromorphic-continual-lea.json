@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-109",
+  "title": "ENCL: Enabling Efficient Neuromorphic Continual Learning with Local Learning Rule and Sub-Network Freezing Strategy",
+  "source_url": "https://arxiv.org/abs/2610.31927",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ENCL 方法，用于解决神经形态持续学习（NCL）中的效率与稳定性问题。持续学习允许部署后的系统利用运行时新数据更新知识，而神经形态计算凭借稀疏事件驱动操作具备低功耗优势。然而现有 NCL 方法通常依赖反向传播类全局学习规则，计算与存储开销大，且面临灾难性遗忘。ENCL 结合局部学习规则与子网络冻结策略：局部学习规则避免全局误差反向传播，降低硬件实现复杂度与能耗；子网络冻结策略在学新任务时冻结与旧任务相关的子网络参数，缓解遗忘。该工作值得关注，因为它面向边缘端低功耗持续学习场景，将生物启发的局部规则与参数隔离机制结合，为神经形态硬件上的在线学习提供了可行路径，对类脑芯片与边缘 AI 部署具有参考价值。",
+  "tags": [
+    "Neuromorphic Computing",
+    "Continual Learning",
+    "Local Learning Rule",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:00:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部学习规则替代全局反向传播，可显著降低神经形态持续学习的能耗与硬件实现复杂度",
+      "子网络冻结策略通过参数隔离缓解灾难性遗忘，与局部规则结合形成轻量级 NCL 方案",
+      "该方法面向运行时在线更新的边缘/类脑硬件场景，强调能效与可部署性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

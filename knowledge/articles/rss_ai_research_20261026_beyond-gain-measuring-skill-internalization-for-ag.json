@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-046",
+  "title": "Beyond Gain: Measuring Skill Internalization for Agent Skill Retirement",
+  "source_url": "https://arxiv.org/abs/2610.32322",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM Agent 技能库（skill hub）中技能退役（skill retirement）问题提出新的度量方法。当前公开技能库规模可达约 10 万条，服务多种模型；随着模型能力提升，部分技能已被模型内化（internalization），即无需检索该技能也能完成任务，因此应针对特定模型将其退役。然而，现有基于“有无技能运行对比”的规则仅依赖增益（gain）判断，而内化技能的增益同样接近零，导致误判。论文指出内化尚未被可靠测量，并提出超越增益的技能内化度量框架，以区分“真正内化”与“技能无效”两种情况，从而支持更精准的技能库维护与模型适配。该工作值得关注，因为它触及 Agent 技能生态的可持续性：技能库膨胀会带来检索成本、噪声与维护负担，而可靠的退役机制能提升 Agent 效率并降低运营开销，对技能市场、模型路由与持续学习系统均有实际意义。",
+  "tags": [
+    "Agent",
+    "Skill Library",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅用有无技能的性能增益判断技能是否可退役不可靠，因为内化技能与无效技能的增益都接近零。",
+      "需要专门度量技能内化程度，以区分模型已掌握的能力与技能本身无贡献的情况。",
+      "可靠的技能退役机制对大规模 Agent 技能库的维护、检索效率和成本控制至关重要。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-048",
+  "title": "TGR-EvoDAG: A DAG-based Multi-Agent Code Evolution Framework for Generative Recommendation on Tencent",
+  "source_url": "https://arxiv.org/abs/2610.32326",
+  "source_platform": "rss_ai_research",
+  "summary": "TGR-EvoDAG 是腾讯提出的一种基于有向无环图（DAG）的多智能体代码进化框架，专门用于生成式推荐（Generative Recommendation, GR）场景。该工作针对当前递归自我改进（RSI）研究在序列推荐中的两难困境：通用框架缺乏领域特定反馈，而推荐专用框架又依赖线性进化，二者简单结合在 GR 上会失效。TGR-EvoDAG 通过 DAG 结构组织多个 LLM 智能体，使代码进化过程能够并行探索、分支复用与回溯，并融入推荐领域的专属反馈信号，从而突破线性进化的局限。其价值在于将自动化算法发现从通用代码任务推进到工业级推荐系统，为 LLM 驱动的推荐算法迭代提供了可扩展的新范式，对推荐系统与智能体交叉研究具有参考意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "推荐系统",
+    "代码进化"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RSI 框架在生成式推荐上存在通用框架缺领域反馈、专用框架仅线性进化的双重局限",
+      "DAG 结构替代线性进化，支持多智能体并行探索与分支复用，提升代码搜索效率",
+      "将推荐领域特定反馈融入 LLM 智能体进化循环，是自动化算法发现落地工业推荐的关键"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

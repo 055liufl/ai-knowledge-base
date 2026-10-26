@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-063",
+  "title": "LLaCO: Continuous Diffusion for Large Language Models with Competition-Aware Semantic Scheduling",
+  "source_url": "https://arxiv.org/abs/2610.32604",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出LLaCO，一种面向大语言模型的连续扩散生成框架，旨在解决连续嵌入空间中扩散轨迹与时间进程不匹配导致的“时间压缩”问题。作者指出，嵌入范数衰减会使欧氏距离产生虚假的“超车”现象，从而破坏去噪目标中残差token身份的一致性。LLaCO引入竞争感知语义调度机制，通过动态调整不同token在扩散过程中的竞争关系，缓解轨迹几何与时间步之间的错位。该工作属于非自回归文本生成的前沿探索，将连续扩散模型与LLM结合，为突破自回归解码的串行瓶颈提供了新思路。其价值在于揭示了连续扩散用于文本生成时一个被忽视的几何-时间对齐问题，并给出针对性调度方案，对研究扩散语言模型的研究者和希望提升生成效率的开发者具有参考意义。",
+  "tags": [
+    "Diffusion",
+    "LLM",
+    "Text Generation",
+    "Non-autoregressive"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连续扩散用于文本生成时，嵌入范数衰减会导致欧氏距离产生虚假超车，破坏残差token身份与去噪目标的一致性。",
+      "扩散轨迹的几何结构与时间步进程存在错位，引发严重的时间压缩问题，影响生成质量。",
+      "竞争感知语义调度通过动态调节token间的竞争关系，可缓解轨迹-时间错位，为连续扩散LLM提供更合理的去噪信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

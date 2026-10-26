@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-073",
+  "title": "A Foundation Model for Policy In-Context Longitudinal Causal Effect Estimation",
+  "source_url": "https://arxiv.org/abs/2610.32863",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 PICLE-PFN，一种基于先验数据拟合网络（PFN）的基础模型，用于纵向因果效应估计。纵向因果推断的核心难点在于时变混杂和治疗-混杂反馈回路，传统方法通常需要针对具体数据集拟合倾向性评分等 nuisance 模型，且往往只能处理预设的治疗序列或预测时域，部署时计算开销大。PICLE-PFN 将 PFN 的上下文学习能力引入因果推断，使模型无需针对新数据集重新训练即可直接进行纵向因果效应估计，从而把计算负担前移到预训练阶段。该工作值得关注的原因在于：它把基础模型范式从语言、视觉领域扩展到因果推断这一高风险决策场景，有望降低流行病学、精准医疗和政策评估等领域的因果分析门槛，并为构建可复用的因果推断基础模型提供新思路。",
+  "tags": [
+    "Causal Inference",
+    "Foundation Model",
+    "In-Context Learning",
+    "Prior-data Fitted Networks"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 PFN 的上下文学习范式引入纵向因果效应估计，避免针对每个新数据集重复拟合 nuisance 模型",
+      "直接应对时变混杂与治疗-混杂反馈回路，这是纵向因果推断的核心识别难题",
+      "通过预训练把计算成本前移，部署阶段无需重新训练即可处理新的治疗序列与预测时域",
+      "为因果推断领域构建可复用的基础模型提供了可行路径，但实际因果识别假设与泛化边界仍需进一步验证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

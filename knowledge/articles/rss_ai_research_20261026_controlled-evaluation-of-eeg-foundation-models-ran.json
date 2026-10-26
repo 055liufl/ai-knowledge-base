@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-120",
+  "title": "Controlled Evaluation of EEG Foundation Models: Random Initialisation, Band-Power and Validation-Selected Probes",
+  "source_url": "https://arxiv.org/abs/2610.32067",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对EEG基础模型评估中普遍缺失的三类对照实验提出统一评估协议：使用相同编码器但随机初始化（未训练）、在同一数据上拟合的频谱特征，以及不依赖测试分数选择的探针层。作者在五个公开EEG基础模型和一个自研JEPA风格模型上，于五个基准和四个新增任务族中，以多个随机种子执行包含全部三类对照的评估。研究发现，许多报告的下游增益在加入这些控制后可能不再显著，提示部分EEG基础模型的优势可能来自未受控因素而非预训练表示本身。该工作值得关注，因为它为EEG基础模型领域提供了更严谨的评估范式，有助于区分真实表示学习收益与评估偏差，对神经科学和临床EEG应用的可复现研究具有方法学意义。",
+  "tags": [
+    "EEG",
+    "Foundation Models",
+    "Evaluation",
+    "Representation Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EEG基础模型的下游性能增益需与随机初始化编码器、频谱特征基线及验证集选层探针三类对照比较，否则可能高估预训练价值。",
+      "统一协议下多模型、多基准、多任务族和多随机种子的评估能更可靠地揭示模型间真实差异。",
+      "部分已报告的EEG基础模型优势在加入控制后可能减弱，提示领域需更严格的评估标准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

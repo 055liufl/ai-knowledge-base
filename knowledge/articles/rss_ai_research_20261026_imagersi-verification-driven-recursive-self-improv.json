@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-127",
+  "title": "ImageRSI: Verification-Driven Recursive Self-Improvement for Agentic Image Generation",
+  "source_url": "https://arxiv.org/abs/2610.32120",
+  "source_platform": "rss_ai_research",
+  "summary": "ImageRSI 是一个面向复杂文本到图像生成任务的验证驱动递归自我改进框架。该工作针对复杂 T2I 请求难以可靠满足的问题，提出不微调图像生成器本身，而是通过三个组件实现持续改进：一是任务内的五维验证与修复机制，对单次生成结果进行多维度评估并修复；二是跨任务共享的经验库，将成功修复的经验沉淀并复用于其他请求；三是离线更新评判器（judge），使验证能力随经验积累而提升。其核心洞察在于，单次修复的成功不应只停留在单个输出上，而应转化为可迁移的系统能力。该框架将验证、修复、经验复用与评判器迭代结合成闭环，为 agentic 图像生成提供了一条不依赖重训生成模型的自我进化路径，对提升复杂指令遵循的可靠性具有参考价值。",
+  "tags": [
+    "Text-to-Image",
+    "Agent",
+    "Self-Improvement",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "保持图像生成器冻结，通过验证-修复-经验复用-评判器更新的闭环实现系统级自我改进，避免昂贵的模型重训",
+      "跨任务经验库是关键设计，使单次修复的成功能够迁移到其他请求，而非仅修复单个输出",
+      "五维验证与离线评判器更新共同构成可随使用不断进化的验证能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

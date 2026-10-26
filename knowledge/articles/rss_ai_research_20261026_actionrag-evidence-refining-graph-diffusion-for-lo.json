@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-070",
+  "title": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.32752",
+  "source_platform": "rss_ai_research",
+  "summary": "ActionRAG 是一篇针对 LLM Agent 长期记忆问题的研究论文，提出了一种名为“证据精炼图扩散”（Evidence-Refining Graph Diffusion）的方法。该工作指出，现有记忆管线在两个阶段存在脆弱性：索引阶段容易因实体消歧错误导致重复实体被碎片化或不同实体被错误合并；在线检索阶段则常将初始相似度分数视为最终结果，忽视了事实间的关系结构。ActionRAG 通过图扩散机制在检索过程中迭代精炼证据，使 Agent 能够从不断增长的交互历史中恢复精确且相互一致的证据，尤其适用于答案依赖于事实间关系而非孤立语义匹配的场景。该研究值得关注，因为它直击 LLM Agent 长期记忆的核心痛点——检索一致性与实体消歧，将图结构引入记忆检索流程，有望提升 Agent 在复杂多跳推理任务中的可靠性，对构建可持续学习的智能体系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Graph",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM Agent 记忆管线在索引阶段易出现实体碎片化或错误合并，在线检索阶段则过早固化初始相似度分数，导致证据不一致。",
+      "ActionRAG 将图扩散机制引入检索过程，通过迭代精炼证据来捕捉事实间的关系结构，而非依赖孤立语义匹配。",
+      "该方法特别针对答案依赖多事实关系的长程记忆场景，有望提升 Agent 多跳推理的准确性与一致性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

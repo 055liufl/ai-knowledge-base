@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-021",
+  "title": "DriveMind: Mind-Evolving Belief Tracking for Closed-Loop Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2610.32069",
+  "source_platform": "rss_ai_research",
+  "summary": "DriveMind 是一篇关于闭环自动驾驶的 arXiv 论文，针对现有基于多模态大语言模型（MLLM）的驾驶系统在每一帧都从零开始推理、只保留单一解释而丢弃先前假设的问题，提出了一种“心智演化信念跟踪”（Mind-Evolving Belief Tracking）机制。现有方法在场景模糊时容易过早锁定错误解释并据此行动，缺乏证据积累和假设修正能力。DriveMind 通过维护和演化对场景的信念状态，使驾驶代理能够在时间维度上整合证据、保留多种假设并逐步收敛，从而提升闭环驾驶决策的鲁棒性和安全性。该工作值得关注，因为它将信念跟踪与 MLLM 推理结合，弥补了单帧推理的短视缺陷，为自动驾驶中的不确定性建模和时序推理提供了新思路，对研究者和开发者均有参考价值。",
+  "tags": [
+    "Autonomous Driving",
+    "MLLM",
+    "Belief Tracking",
+    "Closed-Loop"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 MLLM 驾驶代理每帧独立推理并锁定单一解释，在模糊场景下容易过早做出错误决策。",
+      "DriveMind 引入信念跟踪机制，在时间维度上保留并演化多种场景假设，逐步积累证据。",
+      "闭环驾驶中的不确定性建模需要时序推理能力，而非单帧从零开始的解释。",
+      "该方法为 MLLM 在自动驾驶中的安全部署提供了更鲁棒的决策框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

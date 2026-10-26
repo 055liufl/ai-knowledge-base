@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-040",
+  "title": "RSIHub: A Composable Framework for Agent-Evolution Methods",
+  "source_url": "https://arxiv.org/abs/2610.32253",
+  "source_platform": "rss_ai_research",
+  "summary": "RSIHub 是一个面向 Agent 演化（Agent-Evolution）方法的开源可组合框架，论文发表于 arXiv（编号 2610.32253）。当前 Agent 演化领域存在一个显著痛点：各类方法虽然都利用执行反馈来改进提示词、技能、工具和编排逻辑，但每个团队往往都要从零重建相同的实验基础设施，造成大量重复劳动。RSIHub 的核心设计是让研究者通过\"配方\"（Recipes）组合可复用的算子（operators），并声明可变资源（mutable resources），框架本身则统一提供执行、评估、恢复和血缘追踪（lineage）等底层能力。这样研究者可以把精力集中在方法创新本身，而非实验脚手架。该工作值得关注的原因在于：Agent 自我演化是当前 LLM Agent 研究的热点方向，但生态碎片化严重，缺乏统一的对比基准和可复用基础设施；RSIHub 试图扮演类似\"实验操作系统\"的角色，降低方法复现与横向比较的门槛，有望推动该领域从各自为战走向可累积、可比较的工程化研究范式。",
+  "tags": [
+    "Agent",
+    "Agent-Evolution",
+    "Framework",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 演化方法普遍重复造轮子，RSIHub 通过可组合算子与配方抽象统一实验基础设施，减少重复工程投入。",
+      "框架将执行、评估、恢复与血缘追踪作为公共能力提供，使研究者能专注于演化算法本身的设计与创新。",
+      "统一基础设施有助于不同 Agent 演化方法之间的公平对比与复现，推动领域从碎片化走向可累积的研究范式。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

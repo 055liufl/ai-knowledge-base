@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-077",
+  "title": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2610.32881",
+  "source_platform": "rss_ai_research",
+  "summary": "NgramRL 是一篇针对强化学习后训练阶段生成效率的论文，提出利用 rollout-aware N-gram 推测解码来加速结构化生成。RL 后训练能提升大模型推理能力，但自回归 rollout 生成占总训练时间 70% 以上，成为主要瓶颈。现有推测解码方法在该场景下适配性差：基于模型的草稿器占用宝贵 GPU 显存，且随策略演化可能失准；无模型方法又未显式利用跨 rollout 的重复模式。NgramRL 的核心思路是从 rollout 过程中动态挖掘 N-gram 重复片段，构建轻量级、与策略同步更新的草稿源，从而在不增加显存负担的前提下实现高效推测解码。该工作值得关注，因为它直击 RL 后训练的最大成本项，将推测解码与 RL rollout 的统计特性结合，有望显著缩短训练时间，对大规模模型对齐与推理增强的工程实践具有直接价值。",
+  "tags": [
+    "RL Post-Training",
+    "Speculative Decoding",
+    "N-gram",
+    "LLM Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 后训练中 rollout 生成占训练时间 70% 以上，是加速的首要目标。",
+      "基于模型的推测解码草稿器占用显存且随策略演化失准，不适合 RL 场景。",
+      "利用 rollout 中跨样本的 N-gram 重复模式构建无模型、低开销的草稿源。",
+      "rollout-aware 设计使草稿分布与当前策略保持同步，提升推测接受率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

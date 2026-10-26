@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-066",
+  "title": "WiMoT: Replay-Free Continual Wi-Fi Sensing via Moment Transport",
+  "source_url": "https://arxiv.org/abs/2610.32660",
+  "source_platform": "rss_ai_research",
+  "summary": "WiMoT 提出了一种面向 Wi-Fi 感知的无回放持续学习方法，旨在解决节点因隐私和存储限制无法保留 CSI 数据时的灾难性遗忘问题。传统持续学习依赖回放旧样本以维持稳定性，但 Wi-Fi 感知场景中 CSI 数据敏感且体积大，回放不可行。WiMoT 的核心思路是仅存储每个历史域（如不同房间或用户）的类别特征均值和协方差，而非原始样本，从而在保护隐私的同时保留旧知识。当表示网络更新导致存储统计量过时时，WiMoT 通过限制表示变化（moment transport）来对齐新旧特征分布，避免统计量失效。该方法在塑性（学习新域）与稳定性（保持旧域）之间取得平衡，为边缘设备上的持续 Wi-Fi 感知提供了轻量级解决方案。该工作值得关注，因为它将统计矩传输引入持续学习，规避了回放带来的隐私与存储瓶颈，对物联网和无线感知领域具有实用价值。",
+  "tags": [
+    "Wi-Fi Sensing",
+    "Continual Learning",
+    "CSI",
+    "Privacy-Preserving"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用类别特征均值和协方差替代原始 CSI 样本存储，在隐私和存储约束下实现持续学习。",
+      "通过限制表示变化来缓解存储统计量过时问题，平衡新旧域性能。",
+      "为无线感知中的无回放持续学习提供了可借鉴的统计矩传输框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

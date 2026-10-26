@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-076",
+  "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+  "source_url": "https://arxiv.org/abs/2610.32878",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Layer-wise Error Modeling Search (LEMS) 的新方法，用于改进基于 SVD 的低秩 LLM 压缩。现有方法存在两个主要问题：一是全局秩分配中未校准的误差代理无法捕捉复杂的误差传播；二是基于 Fisher 的估计器在分解质量上导致严重的秩崩溃。LEMS 通过逐层误差建模搜索来解决这些问题，旨在更准确地分配秩并提升分解质量，从而在降低计算成本的同时保持模型性能。该工作值得关注，因为它针对 LLM 压缩中的关键瓶颈提出了系统性改进，有望推动低秩压缩在实际部署中的效果。",
+  "tags": [
+    "LLM",
+    "Compression",
+    "SVD",
+    "Low-Rank"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:58:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 SVD 压缩方法在全局秩分配上使用未校准误差代理，难以捕捉误差传播。",
+      "Fisher 信息估计器会导致严重的秩崩溃，影响分解质量。",
+      "LEMS 通过逐层误差建模搜索来优化秩分配和分解质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

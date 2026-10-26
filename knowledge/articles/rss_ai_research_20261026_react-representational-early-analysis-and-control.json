@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-125",
+  "title": "REACT: Representational Early Analysis and Control of Chain-of-Thought Trajectories",
+  "source_url": "https://arxiv.org/abs/2610.32113",
+  "source_platform": "rss_ai_research",
+  "summary": "REACT 提出了一种针对思维链（CoT）推理过程的早期干预方法，旨在在模型完成最终答案前检测并控制风险。研究核心问题是：风险最易检测的时间点是否也是控制最有效的时机？REACT 通过对比安全与不安全的轨迹对，学习一个安全方向向量，并在 CoT 的早期隐藏状态上施加一次条件激活干预，同时保持模型权重冻结。该方法属于推理时干预技术，无需微调模型，具有较高的实用性和部署灵活性。其创新点在于将表示工程与 CoT 安全控制结合，并系统探讨了检测时机与控制效果之间的关系。该工作对提升大模型推理安全性、降低有害输出风险具有参考价值，尤其适合关注模型对齐与推理安全的开发者和研究者。",
+  "tags": [
+    "Chain-of-Thought",
+    "AI Safety",
+    "Activation Steering",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:01:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "风险检测的最早时机不一定等同于最有效的控制时机，需权衡检测灵敏度与干预效果。",
+      "通过对比安全/不安全轨迹学习安全方向，可在不修改模型权重的情况下实现推理时控制。",
+      "对 CoT 早期隐藏状态施加单次条件激活干预，为轻量级安全对齐提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

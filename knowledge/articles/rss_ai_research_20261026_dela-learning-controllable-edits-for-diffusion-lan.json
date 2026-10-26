@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-023",
+  "title": "DELA: Learning Controllable Edits for Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2610.32096",
+  "source_platform": "rss_ai_research",
+  "summary": "DELA（Diffusion Editing Language Adapter）是一个面向扩散语言模型（DLM）的插件式框架，旨在解决现有 DLM 生成过程主要依赖 token 级掩码调度、缺乏对草稿级编辑的显式控制的问题。当前 DLM 虽然支持双向去噪和迭代精炼，但何时插入缺失内容、删除冗余片段、重新审视不确定区域或停止编辑等决策都是隐式的，难以直接操控。DELA 通过引入可学习的编辑适配器，将上述编辑操作显式化、可控化，使模型能够在草稿层面进行插入、删除、重访与终止等结构化编辑。该工作值得关注的原因在于：它把扩散语言模型的生成范式从被动的掩码填充推进到主动的可控编辑，为文本生成提供了更细粒度的干预手段，有望提升生成质量与效率，并为 DLM 在需要迭代修订的应用场景（如代码生成、长文本改写）中打开新的可能性。",
+  "tags": [
+    "Diffusion Language Model",
+    "Controllable Generation",
+    "Text Editing",
+    "Adapter"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有扩散语言模型的生成控制主要停留在 token 级掩码调度，草稿级精炼过程是隐式的，缺乏显式干预手段。",
+      "DELA 以插件形式将插入、删除、重访、停止等编辑操作显式化，为 DLM 提供可学习的可控编辑能力。",
+      "该工作将扩散语言模型从被动的掩码填充范式推进到主动的迭代编辑范式，拓展了生成控制的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

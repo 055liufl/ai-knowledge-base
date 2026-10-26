@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-141",
+  "title": "Easy-3Dfy: Object-Level Geometric Composition for Single-Image 3D Scene Construction",
+  "source_url": "https://arxiv.org/abs/2610.32250",
+  "source_platform": "rss_ai_research",
+  "summary": "Easy-3Dfy 是一种面向单图像三维场景构建的对象级几何组合方法，旨在解决现有端到端方案（如 SAM-3Dfy）在细粒度场景几何与资产质量上的不足。该方法将任务分解为对象级生成与空间组合两个阶段：利用专用三维对象生成器产出高细节的物体几何，再借助三维基础模型提供的强泛化空间理解能力，将对象按合理位姿与尺度组合成完整场景。这种组合式思路兼顾了资产质量与场景布局的准确性，避免单一模型在细节与全局一致性之间的取舍。该工作属于三维视觉与生成式 AI 的交叉方向，对单图重建、场景理解、具身智能仿真环境构建等应用具有参考价值，也为模块化三维生成管线提供了可复用的设计范式。",
+  "tags": [
+    "3D Generation",
+    "Single-Image Reconstruction",
+    "Scene Composition",
+    "3D Foundation Model"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:02:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "组合式管线将对象生成与场景布局解耦，可同时利用专用生成器的细节优势与基础模型的空间泛化能力",
+      "现有端到端方法在细粒度几何和资产质量上存在瓶颈，模块化组合是可行的改进路径",
+      "三维基础模型的空间理解能力可作为场景组合的通用先验，减少对场景级标注数据的依赖"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

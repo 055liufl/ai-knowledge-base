@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-052",
+  "title": "LeafSkill: Efficient Leaf-Level Action Grounding for Recursive LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.32412",
+  "source_platform": "rss_ai_research",
+  "summary": "LeafSkill 针对递归式 LLM Agent 在长程任务中的一个低效环节：当高层规划将任务分解为原子子任务后，Agent 往往仍调用同一个大模型把熟悉的指令翻译成可执行动作，造成重复推理开销。作者观察到高层规划是任务特定的，而叶子级动作接地（leaf-level action grounding）在不同任务间反复出现，且可对照环境允许的动作集合进行校验。基于这一观察，论文提出 LeafSkill 方法，将叶子级动作接地从大模型中剥离出来，利用其可复用、可验证的特性实现更高效的动作生成。该工作值得关注的原因在于：它切中了递归 Agent 架构中一个被忽视但普遍存在的成本瓶颈，提出了一种将'规划'与'执行翻译'解耦的思路，有望在不牺牲任务成功率的前提下显著降低推理调用次数与延迟，对构建实用化、低成本的 Agent 系统具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Planning",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:57:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归 Agent 中高层规划是任务特定的，而叶子级动作接地跨任务重复出现，二者应解耦处理",
+      "叶子级动作可对照环境允许的动作集合进行校验，这为用轻量方法替代大模型调用提供了可行性基础",
+      "复用叶子级动作接地能力可减少重复的大模型推理调用，降低长程任务的成本与延迟"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

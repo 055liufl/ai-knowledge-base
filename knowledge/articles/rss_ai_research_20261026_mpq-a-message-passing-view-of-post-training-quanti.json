@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261026-027",
+  "title": "MPQ: A Message-Passing View of Post-Training Quantization",
+  "source_url": "https://arxiv.org/abs/2610.32127",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出将逐行训练后量化（PTQ）重新表述为离散码本上的后验推断问题，并引入消息传递（Message-Passing）视角来求解。现有主流 PTQ 方法（如 GPTQ、LDLQ、块坐标下降）在确定每个权重块的码字时，尚未考虑其邻居块的影响，导致过早锁定次优解。MPQ 通过消息传递机制在权重块之间交换信息，从而在离散码本空间中探索更接近全局最优的量化方案。该方法无需重新训练，可直接用于大语言模型的高效部署，在低比特量化场景下有望显著降低精度损失。该工作将统计推断中的消息传递算法与量化压缩问题结合，为 PTQ 提供了新的理论框架和实用求解器，对模型压缩与推理加速领域具有较高参考价值。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Model Compression",
+    "Message Passing",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:56:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 PTQ 方法（GPTQ、LDLQ、块坐标下降）在确定权重块码字时未考虑邻居影响，容易陷入局部次优解。",
+      "将逐行 PTQ 建模为离散码本上的后验推断问题，可用消息传递算法在块之间交换信息以逼近全局最优。",
+      "MPQ 无需重新训练即可压缩大语言模型权重，在低比特场景下有望减少量化精度损失。",
+      "该工作为 PTQ 提供了统计推断视角的新理论框架，连接了消息传递算法与模型压缩问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

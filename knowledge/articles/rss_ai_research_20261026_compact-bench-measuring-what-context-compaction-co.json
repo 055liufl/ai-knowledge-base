@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261026-090",
+  "title": "Compact-Bench: Measuring What Context Compaction Costs Long-Horizon Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.31710",
+  "source_platform": "rss_ai_research",
+  "summary": "Compact-Bench 是一篇针对长程编码智能体（long-horizon coding agents）上下文压缩（context compaction）代价的评测研究。长程编码智能体在超出上下文窗口后，通常通过压缩历史（如摘要替换完整历史）来继续任务，但这一过程可能抹除完成任务所需的关键状态。现有评测多关注效率、信息保留或端到端成功率，难以隔离特定历史替换操作的影响。Compact-Bench 通过从共享仓库状态出发，配对完整历史续写与仅摘要续写，并评估重复出现的细节与连续生产任务中的表现，从而精确测量上下文压缩对智能体任务完成能力的代价。该工作值得关注，因为它首次系统性地量化了上下文压缩这一长程智能体核心机制的隐性成本，为智能体记忆管理、上下文工程和评测基准设计提供了新视角，对构建更可靠的长程编码智能体具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "Context Engineering",
+    "Benchmark",
+    "Coding Agent"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T14:59:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文压缩虽能延长智能体运行窗口，但可能擦除完成任务所需的关键状态，其代价此前未被单独隔离测量。",
+      "Compact-Bench 采用配对实验设计（完整历史 vs 仅摘要续写），从共享仓库状态出发，可精确归因压缩操作的影响。",
+      "评测聚焦重复出现的细节和连续生产任务，揭示了压缩在长程编码场景中的实际信息损失模式。",
+      "该基准为智能体记忆管理与上下文工程提供了可量化的评估工具，有助于设计更可靠的压缩策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

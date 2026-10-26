@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261026-099",
+  "title": "PrefO2O: Zero-Shot Preference-Based Reinforcement Learning via Offline-to-Online Latent Preference Transfer",
+  "source_url": "https://arxiv.org/abs/2610.31812",
+  "source_platform": "rss_ai_research",
+  "summary": "PrefO2O 提出了一种离线到在线的潜在偏好迁移框架，旨在解决基于偏好的强化学习（PbRL）在扩展到新任务时依赖昂贵人工偏好标注的核心瓶颈。该方法的核心思路是：先在已有源任务上利用偏好标签学习一个可迁移的潜在偏好表示，再将该表示迁移到未见过的目标任务上，从而在零样本条件下完成 PbRL，无需为目标任务收集任何人类反馈。这项工作值得关注，因为 PbRL 虽能让机器人行为对齐人类意图，但每个新任务都要重新标注偏好，成本极高，严重制约了实际部署。PrefO2O 通过离线到在线的迁移机制绕开这一瓶颈，若能在真实机器人任务上验证有效性，将显著降低偏好学习的使用门槛，推动 PbRL 从实验室走向更广泛的应用场景。",
+  "tags": [
+    "RL",
+    "PbRL",
+    "Transfer Learning",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-10-26T14:53:19Z",
+  "collected_at": "2026-10-26T15:00:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过离线到在线的潜在偏好迁移，实现无需目标任务的任何人类反馈即可完成零样本 PbRL",
+      "核心创新在于学习可跨任务迁移的潜在偏好表示，而非为每个新任务重新收集偏好标签",
+      "该方法有望大幅降低偏好强化学习在机器人行为对齐中的标注成本与扩展难度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
