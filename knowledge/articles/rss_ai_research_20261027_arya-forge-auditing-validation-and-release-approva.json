@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-103",
+  "title": "Arya Forge: Auditing Validation and Release Approval for Financial Instruction Data",
+  "source_url": "https://arxiv.org/abs/2610.34778",
+  "source_platform": "rss_ai_research",
+  "summary": "Arya Forge 是一套面向金融指令数据管道的审计与发布审批框架，旨在解决数据内容有效性与发布权限之间的区分问题。该工作指出，金融数据管道不能仅凭内容合规就允许数据发布，还必须将审批覆盖范围与数据集清单绑定。Arya Forge 通过类型化记录、当前内容校验和审批覆盖机制实现这一目标，并在金融数据系统案例中评估了其发布边界。实验包括对 10 万条合成指令记录的完整性审计，以及一个独立的算术实现与 1.5 万条数值记录的一致性验证。该研究值得关注，因为它将数据治理中的“内容正确”与“有权发布”两个维度显式分离，为金融等强监管场景下的数据发布提供了可审计的工程化思路，对构建可信数据流水线具有参考价值。",
+  "tags": [
+    "Data Governance",
+    "Audit",
+    "Financial Data",
+    "Data Pipeline"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:08:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "金融数据发布需要同时满足内容有效性和审批覆盖两个条件，二者不可互相替代。",
+      "将审批覆盖绑定到数据集清单（manifest）可实现发布边界的可审计追踪。",
+      "类型化记录与当前内容校验结合，有助于在管道层面发现数据漂移或失效。",
+      "独立算术实现与数值记录的一致性验证为数据完整性提供了交叉校验手段。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

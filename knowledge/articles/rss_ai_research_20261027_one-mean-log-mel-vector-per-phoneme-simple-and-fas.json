@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-085",
+  "title": "One Mean Log-Mel Vector per Phoneme: Simple and Fast Text Injection for Speech Recognition",
+  "source_url": "https://arxiv.org/abs/2610.34623",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种极简的文本注入方法，用于提升语音识别模型对未配对文本数据的利用效率。传统文本注入通常依赖冻结的TTS模型将文本合成为语音特征，再输入语音编码器进行训练，但TTS模型计算开销大且流程复杂。作者用一个简单的查找表替代TTS：为每个音素预计算一个平均log-mel向量（或one-hot编码），根据对齐统计随机采样持续时间进行重复，并加入静音片段，从而生成合成输入。该方法无需训练或运行TTS模型，显著降低了文本注入的计算成本和实现复杂度。实验表明，这种简单方法在保持识别性能的同时，大幅提升了训练效率，为语音识别中低成本利用大规模无标注文本提供了新思路。该工作值得关注，因为它挑战了文本注入必须依赖高质量TTS的假设，展示了极简特征近似在语音-文本联合训练中的有效性，对资源受限场景和快速实验迭代具有实用价值。",
+  "tags": [
+    "Speech Recognition",
+    "Text Injection",
+    "Log-Mel",
+    "Phoneme"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:08:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用音素级平均log-mel向量查找表替代TTS模型，可大幅降低文本注入的计算开销和工程复杂度。",
+      "随机持续时间采样与静音拼接的简单策略足以生成有效的合成语音特征，说明文本注入对合成输入的精细度要求不高。",
+      "该方法为语音识别模型利用大规模未配对文本提供了低成本路径，尤其适合资源受限或需要快速迭代的场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

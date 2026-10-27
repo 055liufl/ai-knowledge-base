@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-058",
+  "title": "Rectified Language Flow",
+  "source_url": "https://arxiv.org/abs/2610.33811",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Rectified Language Flow (ReLF)，一种基于连续状态流与扩散模型的语言生成方法，旨在解决此类模型在生成质量上难以匹敌自回归模型的问题。ReLF 通过整流流（rectified flow）将噪声传输至 token 嵌入空间来生成文本，并整合了多项互补设计：使用 Hellinger-SVD 构造固定 token 嵌入、自条件（self-conditioning）机制等。该方法属于快速并行语言生成的前沿探索，若能在质量上接近或超越自回归模型，将显著提升推理效率，对 LLM 推理加速和生成范式创新具有潜在影响。",
+  "tags": [
+    "Diffusion Model",
+    "Language Generation",
+    "Rectified Flow",
+    "Parallel Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReLF 用整流流将噪声传输到 token 嵌入，实现并行文本生成，有望突破自回归模型的串行瓶颈。",
+      "Hellinger-SVD 构造固定 token 嵌入，为连续空间语言建模提供了新的嵌入设计思路。",
+      "自条件机制等互补设计被整合以缩小与自回归模型的生成质量差距。",
+      "该方法仍处于研究阶段，生成质量能否匹敌自回归模型是核心待验证问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

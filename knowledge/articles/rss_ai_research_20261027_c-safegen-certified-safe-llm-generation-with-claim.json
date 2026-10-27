@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-119",
+  "title": "C-SafeGen: Certified Safe LLM Generation with Claim-Based Streaming Guardrails",
+  "source_url": "https://arxiv.org/abs/2610.34961",
+  "source_platform": "rss_ai_research",
+  "summary": "C-SafeGen 提出了一种面向大语言模型（LLM）的认证式安全生成框架，核心创新在于将安全护栏从传统的“事后检测”转变为“流式解码过程中的声明级约束”。现有安全对齐方法仍可被越狱攻击绕过，而现成的护栏模型主要关注检测而非保证安全解码，难以在生成过程中提供形式化保障。C-SafeGen 通过将生成内容分解为可验证的声明（claim），在流式解码的每一步施加安全约束，从而在生成过程中实时拦截违规内容，并给出可认证的安全保证。该工作值得关注的原因在于：它首次将形式化认证与流式护栏结合，弥补了“检测后过滤”范式在实时性和安全性保证上的不足，为构建可信赖的 LLM 部署提供了新思路，尤其适用于对合规性要求高的应用场景。",
+  "tags": [
+    "LLM Safety",
+    "Guardrails",
+    "Decoding",
+    "Certification"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:09:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有护栏模型以检测为主，缺乏对安全解码过程的形式化保证，C-SafeGen 将安全约束嵌入流式解码的声明级验证中。",
+      "通过声明级分解与流式认证，可在生成过程中实时拦截违规内容，而非依赖生成后的过滤。",
+      "该方法为 LLM 安全部署提供了可认证的保障路径，对高合规要求场景具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

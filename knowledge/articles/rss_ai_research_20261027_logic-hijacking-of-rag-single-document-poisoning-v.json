@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-107",
+  "title": "Logic Hijacking of RAG: Single-Document Poisoning via Local Optimization",
+  "source_url": "https://arxiv.org/abs/2610.34829",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 MONOLOGUE，一种针对检索增强生成（RAG）系统的单文档语料投毒攻击方法。现有攻击多依赖显式事实反驳或指令覆盖，易被现代对齐 LLM 的保守仲裁机制和输入护栏拦截。MONOLOGUE 通过局部优化在单文档中植入隐蔽的逻辑劫持，使模型在看似合理的上下文中接受错误推理，而非直接冲突。该研究揭示了 RAG 在黑盒访问下的新型安全威胁，对构建鲁棒 RAG 系统具有重要警示意义，值得安全研究者和 RAG 开发者关注。",
+  "tags": [
+    "RAG",
+    "Security",
+    "Adversarial Attack",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:09:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RAG 投毒攻击依赖显式冲突，易被对齐 LLM 的保守仲裁和护栏拦截",
+      "MONOLOGUE 通过局部优化实现单文档逻辑劫持，绕过显式事实反驳",
+      "该攻击在黑盒访问下即可实施，对实际 RAG 部署构成严重威胁",
+      "研究提示需关注 RAG 中隐蔽逻辑篡改的防御机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

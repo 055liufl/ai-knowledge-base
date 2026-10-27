@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261027-001",
+  "title": "Cross-request KV cache exposure in the GLM-5.3 Workers AI model (155 responses)",
+  "source_url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/",
+  "source_platform": "rss_general_tech",
+  "summary": "Cloudflare 披露了其 Workers AI 平台上 GLM-5.3 模型存在跨请求 KV cache 暴露问题，共影响 155 条响应。该问题源于推理服务中 KV cache 的隔离缺陷，可能导致不同用户请求之间的缓存数据发生意外共享。Cloudflare 已发布修复方案，并详细说明了事件经过与缓解措施。此事值得关注，因为它揭示了托管式 LLM 推理服务中多租户隔离的潜在风险，对 AI 基础设施的安全设计与运维具有警示意义。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "AI Security",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:23Z",
+  "collected_at": "2026-10-27T14:03:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "托管式 LLM 推理服务需严格保证多租户请求间的 KV cache 隔离，否则可能造成数据泄露",
+      "Cloudflare 主动披露并修复问题，体现了 AI 基础设施安全事件响应的透明度",
+      "KV cache 复用优化在提升性能的同时引入了跨请求数据暴露的新攻击面"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

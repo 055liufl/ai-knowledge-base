@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-094",
+  "title": "Intervene, Calibrate, Discover: Learning Causal Structure from Pixels",
+  "source_url": "https://arxiv.org/abs/2610.34711",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究从像素级视觉观测中学习因果结构的问题。核心挑战在于：当节点语义已知但因果图未知时，视觉读出误差会导致模型设定与环境干预值不匹配。作者提出通过固定轮转干预获得验证值，并与图像读出配对，在编码器和解码器冻结的情况下，学习逐维可逆校准映射，从而纠正视觉读出偏差，实现从像素到高层因果变量的可靠推断。该工作将干预、校准与因果发现结合，为视觉因果表征学习提供了新思路，对具身智能、机器人感知和因果推理交叉领域具有参考价值。",
+  "tags": [
+    "Causal Discovery",
+    "Representation Learning",
+    "Intervention",
+    "Vision"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:08:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉读出误差会破坏模型设定与环境干预值之间的一致性，需显式校准",
+      "固定轮转干预可提供验证值，用于监督视觉读出校准",
+      "在编码器与解码器冻结条件下学习逐维可逆校准映射，可稳定实现因果变量对齐"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

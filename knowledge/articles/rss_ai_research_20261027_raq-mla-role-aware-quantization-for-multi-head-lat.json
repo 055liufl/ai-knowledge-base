@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-038",
+  "title": "RAQ-MLA: Role-Aware Quantization for Multi-Head Latent Attention Caches",
+  "source_url": "https://arxiv.org/abs/2610.33625",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RAQ-MLA，一种针对多头潜在注意力（MLA）KV 缓存的角色感知量化方法。MLA 被近期前沿大模型采用，其缓存的是压缩后的 KV 潜在向量，解码时再上投影为键和值，并附带一个窄位置键。现有 KV 缓存量化方法面向标准注意力的键和值设计，未考虑 MLA 中不同组件（压缩潜在、位置键、上投影后的键值）在注意力计算中承担的不同角色与敏感度差异。RAQ-MLA 通过区分这些角色的量化策略，在保持模型精度的同时降低 MLA 缓存的内存占用与带宽开销，对长上下文推理部署具有实用价值。",
+  "tags": [
+    "MLA",
+    "KV Cache Quantization",
+    "LLM Inference",
+    "Attention"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:05:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLA 缓存的是压缩 KV 潜在向量而非逐头键值，现有 KV 量化方法不能直接适用",
+      "MLA 中压缩潜在、位置键与上投影键值在注意力中角色不同，量化敏感度应区别对待",
+      "角色感知量化可在压缩缓存的同时维持精度，利于长上下文推理部署"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

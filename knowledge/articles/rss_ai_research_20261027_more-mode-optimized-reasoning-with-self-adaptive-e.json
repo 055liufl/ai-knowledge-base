@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-046",
+  "title": "More: Mode-Optimized Reasoning with Self-Adaptive Effort for Self-Evolving Agents",
+  "source_url": "https://arxiv.org/abs/2610.33684",
+  "source_platform": "rss_ai_research",
+  "summary": "MORE（Mode-Optimized Reasoning with Self-Adaptive Effort）是一个面向自进化智能体的训练框架，旨在解决现有自进化训练中“对所有任务统一施加高成本推理”的浪费问题。该工作指出，通过可验证反馈提升智能体在困难任务上的表现时，现有方法往往不加区分地对每个任务都进行昂贵的深思熟虑，导致计算资源分配低效。MORE 的核心思想是让智能体根据任务难度自适应地选择推理形式（reasoning form）与计算投入（computational effort），从而在保证性能的同时降低平均推理成本。框架采用两阶段训练范式，第一阶段进行模式选择与能力构建，第二阶段实现努力程度的自适应调节。该研究值得关注的原因在于：它把“推理时计算”从固定策略推进到任务级自适应分配，契合当前推理模型与智能体系统对效率与性能平衡的核心诉求；同时其自进化设定意味着模型可在反馈中持续优化自身的推理策略，对构建可持续学习、成本可控的智能体具有实用价值。",
+  "tags": [
+    "Agent",
+    "Reasoning",
+    "Self-Evolving",
+    "Adaptive Computation"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有自进化训练对所有任务统一施加高成本推理，造成计算资源浪费，任务级自适应分配是更优路径。",
+      "MORE 同时优化推理形式与计算投入两个维度，而非仅调节推理长度或采样次数。",
+      "两阶段训练范式将模式选择与努力程度自适应解耦，便于在可验证反馈下持续进化。",
+      "该方法面向自进化智能体，强调在性能与推理成本之间取得动态平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261027-069",
+  "title": "R2A-Sales: A Policy-Atom-Matched Benchmark for Rule-to-Action Gaps in Goal-Directed Sales Agents",
+  "source_url": "https://arxiv.org/abs/2610.34185",
+  "source_platform": "rss_ai_research",
+  "summary": "R2A-Sales 是一个针对目标导向销售智能体的规则到行动（Rule-to-Action）差距评测基准，论文编号 arXiv:2610.34185。现有 LLM 销售智能体评测多停留在静态政策问答或任务成功率上，无法回答部署中的关键问题：模型即便能复述规则，在商业压力下是否仍会选择合规且基于工具的行动。该基准的核心设计是“策略原子匹配”：每个测试项将一个静态探针与一个多轮销售场景配对，二者共享同一版本化策略原子、事实、证据与行为约束，从而直接测量“知道规则”与“按规则行动”之间的落差。其价值在于把合规性从知识记忆层面推进到决策执行层面，为销售、客服等高风险商业场景中的智能体安全评估提供了更贴近真实部署的度量方式，对智能体对齐、工具调用合规与多轮对话评测均有参考意义。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Tool Use",
+    "Compliance",
+    "Multi-turn Dialogue"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:07:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有销售智能体评测偏重静态政策问答或任务成功，无法反映模型在商业压力下是否真正执行合规行动。",
+      "策略原子匹配设计将静态探针与多轮销售场景绑定到同一版本化策略原子，可精确隔离“知道规则”与“按规则行动”的差距。",
+      "该基准把合规评估从知识层面推进到工具调用与多轮决策层面，更贴近真实部署风险。",
+      "对智能体对齐研究具有方法学价值，可推广到客服、金融等高风险规则约束场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

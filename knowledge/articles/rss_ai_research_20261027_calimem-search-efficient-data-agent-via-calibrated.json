@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-077",
+  "title": "CaliMem: Search-Efficient Data Agent via Calibrated Memory",
+  "source_url": "https://arxiv.org/abs/2610.34500",
+  "source_platform": "rss_ai_research",
+  "summary": "CaliMem 提出了一种面向数据整理（data curation）的搜索高效数据智能体方法，核心在于通过校准记忆（calibrated memory）来减少重复搜索开销。该工作指出，当前机器学习实践中普遍假设固定的数据处理流水线可以跨模型、跨任务复用，但作者在 55 个生物领域的数据集-模型任务上验证发现，同一套整理配方对某个模型有益，却可能损害另一个模型的表现，说明数据整理必须针对下游模型和任务进行定制。然而，定制化数据整理在人力、专业知识和算力上成本高昂。CaliMem 通过引入记忆机制并对其进行校准，使数据智能体能够复用历史搜索经验，从而在保证整理效果的同时显著降低搜索成本。该研究对数据为中心的 AI 流程具有重要参考价值，尤其适用于需要为不同模型快速适配训练数据的场景。",
+  "tags": [
+    "Data Curation",
+    "Agent",
+    "Memory",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:07:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定数据整理流水线跨模型复用是脆弱的：同一配方在不同模型上效果可能相反，需针对下游模型定制。",
+      "数据整理定制化成本高，CaliMem 通过校准记忆复用搜索经验，降低搜索开销。",
+      "在 55 个生物领域数据集-模型任务上的实证揭示了数据整理与模型匹配的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-040",
+  "title": "TAD: Distilling Vision-Language-Action Policies from Teacher Trajectories Alone",
+  "source_url": "https://arxiv.org/abs/2610.33650",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出轨迹对抗蒸馏（TAD），一种仅利用教师轨迹（关节位置特征）来蒸馏视觉-语言-动作（VLA）策略的方法。传统在线蒸馏依赖教师动作分数，但推理接口可能不暴露这些分数。TAD 将固定教师轨迹库中的关节位置特征转化为自适应反馈：判别器比较教师与学生 rollout 的特征边缘分布，并为学生策略的在线学习提供奖励。学生策略在环境中交互学习，无需访问教师模型内部。该方法降低了蒸馏对教师接口的依赖，为 VLA 策略的实用化部署提供了新思路，尤其适用于教师模型仅提供轨迹而无法提供动作分数的场景。",
+  "tags": [
+    "VLA",
+    "知识蒸馏",
+    "对抗学习",
+    "机器人学习"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:05:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TAD 仅需教师轨迹即可蒸馏 VLA 策略，无需教师动作分数，扩展了蒸馏的适用场景。",
+      "通过判别器比较特征边缘分布并提供奖励，实现对抗式在线蒸馏。",
+      "学生策略在环境中交互学习，利用自适应反馈提升性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

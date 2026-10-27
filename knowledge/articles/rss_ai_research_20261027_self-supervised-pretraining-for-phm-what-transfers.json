@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-137",
+  "title": "Self-Supervised Pretraining for PHM: What Transfers, What Does Not, and What Federating It Costs",
+  "source_url": "https://arxiv.org/abs/2610.35280",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对自监督预训练在预测与健康管理（PHM）领域的实际价值进行了严格的泄漏控制评估。研究构建了包含47个公开PHM数据集的统一语料库，并采用单一张量契约进行标准化，其中11个数据集完全从预训练中剔除以测试迁移效果。核心发现是：自监督预训练的迁移效果高度依赖于具体任务，一个紧凑的通道独立Transformer编码器在部分任务上表现优异，但在其他任务上则不然。论文还量化了联邦学习引入的额外成本。这项工作首次在严格条件下系统测量了自监督预训练对PHM的价值，为时间序列基础模型在工业健康管理中的适用边界提供了实证依据，对研究者和开发者理解迁移学习的局限性具有重要参考意义。",
+  "tags": [
+    "Self-Supervised Learning",
+    "Time-Series",
+    "PHM",
+    "Federated Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:10:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自监督预训练在PHM中的迁移效果是任务依赖的，并非普遍有效",
+      "通过47个数据集的严格泄漏控制实验，揭示了时间序列基础模型在工业场景中的适用边界",
+      "紧凑的通道独立Transformer编码器在部分PHM任务上表现出有效迁移",
+      "量化了联邦学习引入的额外成本，为分布式PHM部署提供参考"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

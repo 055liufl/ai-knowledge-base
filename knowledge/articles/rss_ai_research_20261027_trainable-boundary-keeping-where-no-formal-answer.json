@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-135",
+  "title": "Trainable Boundary-Keeping Where No Formal Answer Exists: A Controlled Knock-In Study of Reward Training in Evidence-Sufficiency Judgment",
+  "source_url": "https://arxiv.org/abs/2610.35226",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在缺乏形式化正确答案的领域（证据充分性判断）中，奖励训练是否仍能提升模型的验证可靠性。作者采用预注册、同基座、受控的\"敲入\"实验设计，对比了\"边界保持\"训练配方（先SFT后GRPO）与其基线模型。证据充分性判断要求模型决定现有信息是否真正支持某个因果主张，这一任务没有可判定的正确性奖励信号，因此对\"推理更长或获得正确性信号就能更可靠验证\"的常见假设构成直接检验。研究的意义在于：它挑战了当前对推理调优和奖励训练效果的过度乐观预期，揭示了在无形式化答案的开放判断任务中，奖励训练可能带来的边界漂移或过度自信问题，为构建更可靠的AI验证系统提供了实证依据。该工作属于AI对齐与可靠性评估的前沿方向，对理解RLHF/GRPO类方法的适用边界具有重要参考价值。",
+  "tags": [
+    "RLHF",
+    "GRPO",
+    "模型可靠性",
+    "对齐评估"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:10:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在无形式化正确性奖励的领域（如证据充分性判断），奖励训练未必能提升模型验证可靠性，常见假设需要被审慎检验。",
+      "采用预注册、同基座、受控敲入设计，能够更干净地隔离训练配方本身的效果，而非基座模型差异。",
+      "边界保持配方（SFT+GRPO）在开放判断任务中可能面临边界漂移风险，提示需要针对无答案域设计专门的训练与评估方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

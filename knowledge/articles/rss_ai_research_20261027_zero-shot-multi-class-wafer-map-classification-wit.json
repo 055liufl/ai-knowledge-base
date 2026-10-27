@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261027-126",
+  "title": "Zero-Shot Multi-Class Wafer Map Classification with Rule-Ordered Prompts for Large Multimodal Models",
+  "source_url": "https://arxiv.org/abs/2610.35080",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种无需训练的零样本多类别晶圆图缺陷分类框架，面向冻结的大型多模态模型（LMM）。方法核心是将连通域高亮与形态、位置、排除感知的规则排序提示（rule-ordered prompts）相结合，在推理阶段直接完成六类缺陷判别，无需标注数据或重新训练。在 Mixed-WM38（6,866 张图）上，多区域提示达到 92.9% 宏平均准确率和 93.8% 总体准确率；在更难的 WM811K（9,000 张图）上达到 79.1% 和 81.3%。该工作值得关注的原因在于：半导体制造中产线条件变化频繁，传统监督方法需要反复标注与重训，成本高且响应慢；本文证明冻结 LMM 配合精心设计的提示工程即可实现可用的零样本分类，为晶圆缺陷检测提供了一种低部署成本、快速适配的替代路径，也展示了规则化提示设计在工业视觉任务中的潜力。",
+  "tags": [
+    "LMM",
+    "Zero-Shot",
+    "Prompt Engineering",
+    "Wafer Map",
+    "Defect Classification"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:10:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结大型多模态模型配合规则排序提示即可实现免训练晶圆图六类缺陷分类，避免产线变化时的标注与重训成本。",
+      "连通域高亮与形态、位置、排除感知提示的组合显著提升多区域缺陷的识别效果。",
+      "在 Mixed-WM38 上达到 92.9% 宏平均准确率，在更复杂的 WM811K 上仍有 79.1%，显示跨数据集泛化存在但可接受。",
+      "提示工程的结构化设计（规则排序）是释放 LMM 零样本工业视觉能力的关键因素。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

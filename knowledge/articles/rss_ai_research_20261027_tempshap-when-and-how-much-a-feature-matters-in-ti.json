@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-018",
+  "title": "TempShap: When and How Much a Feature Matters in Time-Series Forecasting",
+  "source_url": "https://arxiv.org/abs/2610.33330",
+  "source_platform": "rss_ai_research",
+  "summary": "TempShap 是一个针对时间序列预测模型的可解释性框架，论文指出传统 Shapley 解释器将每个特征视为单一参与者，从而丢失了两个关键维度：特征在输入窗口中的作用时机，以及其影响随预测步长如何变化。TempShap 将每个输入单元（时间步 t 与特征 i 的组合）作为独立参与者，构建基于损失的回顾式 Shapley 归因张量，从而同时刻画时间与特征两个轴上的贡献。该工作值得关注，因为它填补了时间序列预测中细粒度归因的空白，使模型解释从静态特征重要性升级为动态、时序感知的归因，对高风险预测场景（如金融、能源、医疗）的模型可信度评估具有实际价值。",
+  "tags": [
+    "Time-Series",
+    "Explainability",
+    "Shapley",
+    "Forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:04:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 Shapley 解释器将特征视为单一玩家，丢失了时间维度和预测步长维度上的归因信息",
+      "TempShap 以输入单元 (t,i) 为玩家，生成时间×特征×预测步长的归因张量",
+      "基于损失的回顾式框架可同时回答特征何时起作用以及影响随预测步长如何变化",
+      "细粒度时序归因有助于提升高风险预测场景下模型的可信度与可审计性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

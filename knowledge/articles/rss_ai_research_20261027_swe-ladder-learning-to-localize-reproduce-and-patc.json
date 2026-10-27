@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-044",
+  "title": "SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.33667",
+  "source_platform": "rss_ai_research",
+  "summary": "SWE-Ladder 是一篇关于训练软件工程智能体（SWE agent）解决仓库级 issue 的论文。现有方法存在明显不足：强化学习仅依赖最终补丁的测试结果作为奖励信号，而 on-policy 自蒸馏（OPSD）虽然引入了带特权证据的教师模型提供 token 级监督，但每一步都暴露完整参考补丁，缺乏阶段针对性。SWE-Ladder 提出渐进式特权自蒸馏方法，将解决 issue 的过程分解为定位（localize）、复现（reproduce）和修补（patch）三个阶段，并针对每个阶段提供相应的特权信息与监督信号，使智能体逐步获得分阶段能力。该工作值得关注，因为它针对 SWE agent 训练中稀疏奖励与监督粒度不匹配的核心痛点，提出更细粒度的训练范式，有望提升仓库级代码修复任务的成功率与可解释性，对自动化软件维护和智能体训练研究具有参考价值。",
+  "tags": [
+    "SWE Agent",
+    "Self-Distillation",
+    "Reinforcement Learning",
+    "Code Repair"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RL 仅用最终补丁测试结果作为奖励，OPSD 则每步暴露完整参考补丁，两者都缺乏阶段特异性指导。",
+      "SWE-Ladder 将仓库级 issue 解决分解为定位、复现、修补三个阶段，并分别提供渐进式特权监督。",
+      "分阶段特权自蒸馏有望缓解稀疏奖励问题，使智能体获得更细粒度的过程能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-051",
+  "title": "Local Entropy Fluctuations for Black-Box LLM-Generated Text Detection",
+  "source_url": "https://arxiv.org/abs/2610.33767",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对黑盒场景下大语言模型生成文本的零样本检测问题展开研究。现有最优的双模型检测器和基于重采样的检测器在无提示续写任务上表现优异，但在指令条件文本上出现灾难性失效，且源模型未知时问题更严重。作者将失效原因追溯到检测器对指令条件文本的统计特性建模不足，并提出利用局部熵波动（Local Entropy Fluctuations）作为新的检测信号。该方法无需访问源模型，属于零样本黑盒检测范畴，旨在提升对指令微调模型输出文本的识别能力。该工作值得关注，因为随着LLM滥用风险上升，黑盒检测是实际部署中的关键需求，而现有方法在真实指令场景下的脆弱性暴露了显著安全缺口，局部熵波动思路为检测器设计提供了新方向。",
+  "tags": [
+    "LLM检测",
+    "零样本检测",
+    "黑盒检测",
+    "熵分析"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有双模型与重采样检测器在指令条件文本的黑盒场景下会灾难性失效",
+      "失效根源在于检测器未能充分建模指令条件文本的统计特性",
+      "局部熵波动可作为无需源模型知识的零样本检测信号",
+      "黑盒LLM文本检测需针对指令微调场景重新设计方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

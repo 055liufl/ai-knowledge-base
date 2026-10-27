@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-052",
+  "title": "An actively trained neural operator for near-explicit atmospheric chemistry",
+  "source_url": "https://arxiv.org/abs/2610.33771",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 FNO-MoE，一种结合傅里叶神经算子（FNO）与专家混合（MoE）的神经算子模型，用于近显式大气化学模拟。传统地球系统模型因计算成本过高，将大气化学简化为凝练机制，无法在每个网格单元求解 MCM 等近显式机制。现有神经模拟器多采用小时间步推进，且仅覆盖少量物种或简化机制。FNO-MoE 旨在一次性预测完整近显式化学演化，突破时间步与物种覆盖限制。该工作值得关注，因为它展示了神经算子在科学计算中替代昂贵数值求解器的潜力，尤其适用于高维、多尺度、强耦合的化学系统；MoE 结构有助于处理不同化学物种或反应路径的异质性，FNO 则擅长捕捉空间全局依赖。若验证有效，可显著提升地球系统模型中化学过程的精度与效率，对气候与空气质量建模具有实际意义。",
+  "tags": [
+    "Neural Operator",
+    "Atmospheric Chemistry",
+    "Mixture of Experts",
+    "Scientific Computing"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "FNO-MoE 将傅里叶神经算子与专家混合结合，可一次性预测完整近显式大气化学，避免传统小时间步迭代。",
+      "该方法有望突破地球系统模型中化学机制简化带来的精度瓶颈，实现网格单元级别的近显式化学求解。",
+      "MoE 结构适合处理化学物种与反应路径的异质性，FNO 则有效捕捉空间全局依赖，二者互补。",
+      "神经算子替代昂贵数值求解器是科学计算的重要方向，但需进一步验证长期稳定性和泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

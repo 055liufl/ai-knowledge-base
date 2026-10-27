@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-112",
+  "title": "GADAR: Generalizing Across Domains via Action Ranking for Classical Planning",
+  "source_url": "https://arxiv.org/abs/2610.34868",
+  "source_platform": "rss_ai_research",
+  "summary": "GADAR 提出了一种用于经典规划（classical planning）的跨域泛化策略，解决了现有学习型规划策略无法迁移到新领域的问题。传统方法通常为每个动作模式（action schema）训练独立的网络模块、为每个谓词（predicate）学习参数，或使用与词汇表大小绑定的编码，导致训练好的策略无法在新领域的谓词和动作模式上执行。GADAR 将领域描述作为输入，学习一个策略 π(s, G, D)，其中 s 为状态、G 为目标、D 为领域描述，通过动作排序（action ranking）机制构建分组，使策略能够泛化到未见过的领域。该工作值得关注，因为它突破了学习型规划器领域绑定的核心瓶颈，为构建通用规划智能体提供了新思路，对 AI 规划与泛化研究具有重要价值。",
+  "tags": [
+    "Planning",
+    "Generalization",
+    "Policy Learning",
+    "Action Ranking"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:09:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有学习型规划策略因网络模块、参数或编码与特定领域绑定，无法直接迁移到新领域。",
+      "GADAR 以领域描述为输入，通过动作排序机制实现跨域泛化，无需针对新领域重新训练。",
+      "该方法为构建通用经典规划智能体提供了可行路径，有望推动规划策略的零样本迁移研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

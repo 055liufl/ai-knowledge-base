@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-082",
+  "title": "HobbyLM: A Sparse Mixture-of-Experts Model Family on a Hobby Budget",
+  "source_url": "https://arxiv.org/abs/2610.34582",
+  "source_platform": "rss_ai_research",
+  "summary": "HobbyLM 是一个在业余预算下（几百到几千美元租用 GPU 时间）从零训练的小型稀疏混合专家（MoE）模型家族。其核心是一个仅解码器的 Transformer，采用细粒度专家、带辅助损失无关负载均衡的 sigmoid 路由、带逐头 QK 归一化的分组查询注意力，以及 aMuon/AdamW 优化器拆分。每个设计选择都通过单变量消融套件进行验证。该工作值得关注，因为它展示了在极低预算下训练 MoE 模型的可行性，为个人研究者和小团队提供了可复现的实践路径，并系统性地验证了多个架构与训练技巧的组合效果。",
+  "tags": [
+    "MoE",
+    "LLM",
+    "Training",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:07:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在几百到几千美元的 GPU 预算内，可以从零训练出小型稀疏 MoE 模型家族，降低了 MoE 研究的门槛。",
+      "细粒度专家、sigmoid 路由与无辅助损失的负载均衡、逐头 QK 归一化、aMuon/AdamW 优化器拆分等设计选择均通过单变量消融验证。",
+      "该工作为个人和小团队提供了可复现的 MoE 训练配方，有助于推动低成本下的架构探索。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

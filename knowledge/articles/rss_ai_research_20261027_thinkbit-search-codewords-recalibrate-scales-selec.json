@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-115",
+  "title": "ThinkBit: Search Codewords, Recalibrate Scales, Select by Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.34886",
+  "source_platform": "rss_ai_research",
+  "summary": "ThinkBit 是一篇关于 2-bit 量化推理语言模型的 arXiv 论文。作者指出，推理模型每次回答会生成数千个 token，而生成速度受内存带宽限制，因此将权重从 bfloat16 压缩到 2-bit 有望使推理成本降低约 8 倍。然而，现有 2-bit 方法通常只用困惑度和多选题准确率来评估，这两项指标难以反映模型是否仍能推理较难的问题。ThinkBit 提出一种严格可扩展的评估与优化框架，核心思路包括：搜索码字（Search Codewords）、重新校准尺度（Recalibrate Scales）、通过推理选择（Select by Reasoning），旨在在极低比特量化下保持模型的推理能力。该工作值得关注，因为它直面 2-bit 量化中“指标好看但推理能力退化”的关键盲区，为低成本部署推理模型提供了更贴近真实能力的评估与压缩思路。",
+  "tags": [
+    "量化",
+    "推理模型",
+    "模型压缩",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:09:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "2-bit 量化可将推理模型权重存储从 bfloat16 压缩，理论上使推理成本降低约 8 倍，但生成速度受内存带宽限制。",
+      "困惑度和多选题准确率不足以衡量 2-bit 模型是否仍具备复杂推理能力，需要更严格的评估方式。",
+      "ThinkBit 通过码字搜索、尺度重校准和基于推理的选择三个环节，在极低比特下保持推理性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

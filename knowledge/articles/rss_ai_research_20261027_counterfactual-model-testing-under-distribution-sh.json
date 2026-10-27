@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261027-034",
+  "title": "Counterfactual Model Testing Under Distribution Shift",
+  "source_url": "https://arxiv.org/abs/2610.33594",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究部署后的机器学习模型在分布偏移下的性能退化问题，区分了两种偏移来源：总体变化和特征管道中的数据完整性问题。由于标签常缺失或延迟，实践中常通过监测数据偏移来间接判断模型状态，但检测到偏移并不等同于理解其对模型的具体影响。论文提出反事实模型测试方法，旨在在分布偏移条件下评估模型行为，从而更准确地诊断偏移对模型性能的因果影响。该工作值得关注，因为它直面生产环境中模型监控的核心痛点——如何从数据偏移信号中区分真正影响模型的风险与无关波动，对提升ML系统可靠性和运维效率具有实际意义。",
+  "tags": [
+    "Model Monitoring",
+    "Distribution Shift",
+    "ML Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:05:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分布偏移可源于总体变化或特征管道数据完整性问题，二者机制不同，需区别对待",
+      "仅监测数据偏移不足以判断模型是否退化，需建立偏移与模型行为之间的因果联系",
+      "反事实测试为在标签缺失场景下评估模型受偏移影响提供了可行路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

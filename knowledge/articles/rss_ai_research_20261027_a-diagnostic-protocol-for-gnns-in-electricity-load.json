@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-124",
+  "title": "A Diagnostic Protocol for GNNs in Electricity Load Forecasting: Separating Parameter Sharing from Neighborhood Access",
+  "source_url": "https://arxiv.org/abs/2610.35074",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于电力负荷预测中图神经网络（GNN）的诊断协议，旨在区分GNN性能提升的来源：是来自跨序列的参数共享，还是来自邻域信息的读取。由于GNN同时结合了这两种机制，其相对于非图模型的增益可能源于任一机制，因此区分二者对于判断是否值得维护图结构至关重要。作者设计了一个模型诊断协议，将GNN与三个参考模型进行比较：逐节点独立网络、跨节点共享参数但无邻域信息的网络，以及另一个基线模型（摘要中未完整给出）。该研究对于电力负荷预测等时序图学习任务具有实际指导意义，能帮助从业者评估图结构的必要性，避免不必要的复杂性和计算开销。论文属于方法论创新，强调可解释性和模型诊断，值得关注。",
+  "tags": [
+    "GNN",
+    "负荷预测",
+    "模型诊断",
+    "图神经网络"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:09:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GNN在负荷预测中的性能增益可能来自参数共享或邻域读取，区分二者是决定是否保留图结构的关键。",
+      "提出的诊断协议通过对比GNN与三个参考模型（逐节点网络、无邻域共享网络等）来分离两种机制的影响。",
+      "该协议有助于避免不必要的图结构维护，提升模型设计的合理性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

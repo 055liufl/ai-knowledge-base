@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261027-053",
+  "title": "The Hitchhiker's Guide to System 1 Models: Fast Decision-Making Beyond LLMS",
+  "source_url": "https://arxiv.org/abs/2610.33775",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并系统梳理了「System 1 决策模型」这一新兴模型类别，旨在解决大语言模型在路由、门控、打分、分类等高频、低延迟决策任务中因自回归逐 token 推理而导致的慢速、高成本与校准不佳问题。这类模型将输入直接映射为类型化的结构化决策，以单次前向计算替代长链生成，从而在亚秒级延迟下完成常规判断。文章以「指南」形式对该领域进行归纳，可能涵盖架构设计、训练范式、评测方法与适用边界。其价值在于明确区分了「推理生成」与「快速决策」两类需求，为构建混合式 AI 系统（LLM 负责复杂推理，System 1 模型负责轻量决策）提供了理论框架与工程参考，对降低推理成本、提升系统响应性具有直接意义。",
+  "tags": [
+    "LLM",
+    "System 1",
+    "推理加速",
+    "决策模型"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:06:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 的自回归推理范式不适合路由、门控、打分等高频低延迟决策任务，存在速度、成本与校准三重不匹配。",
+      "System 1 决策模型通过单次前向将输入直接映射为类型化结构化输出，可显著降低延迟与计算开销。",
+      "该方向指向 LLM 与轻量决策模型协同的混合架构：复杂推理交给 LLM，常规判断交给专用快速模型。",
+      "论文以综述/指南形式界定该模型类别的边界，为后续架构设计与评测提供了统一参照。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

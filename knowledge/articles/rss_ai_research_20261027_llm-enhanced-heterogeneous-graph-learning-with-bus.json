@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-141",
+  "title": "LLM-Enhanced Heterogeneous Graph Learning with Business Semantics for Financial Fraud Detection",
+  "source_url": "https://arxiv.org/abs/2610.35298",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种融合大语言模型（LLM）与异构图学习的金融欺诈检测方法，核心创新在于引入“业务语义”来增强异构图神经网络。传统异构图神经网络虽能保留实体类型和关系类型，但通常将属性视为与角色无关的输入，忽略了同一属性在不同实体角色下风险含义的差异——例如高交易量对商户可能正常，对持卡人则可能异常。作者利用LLM理解业务语义的能力，为不同角色的实体属性赋予角色感知的风险解释，并将其注入异构图学习过程，从而提升欺诈检测的准确性与可解释性。该工作值得关注的原因在于：金融欺诈检测是高风险、高价值的实际应用场景，而异构交易图天然存在角色语义差异；将LLM的语义理解能力与图神经网络的拓扑建模能力结合，为图学习中的语义感知问题提供了新思路，也为LLM在结构化风控数据上的落地提供了参考。",
+  "tags": [
+    "LLM",
+    "Graph Neural Network",
+    "Fraud Detection",
+    "Heterogeneous Graph"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:10:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同一属性在不同实体角色下具有不同风险含义，异构图学习需要角色感知的语义建模而非角色无关的属性输入。",
+      "LLM可用于为异构图中的实体属性注入业务语义解释，弥补图神经网络在语义理解上的不足。",
+      "将LLM语义增强与异构图神经网络结合，有望同时提升金融欺诈检测的准确性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

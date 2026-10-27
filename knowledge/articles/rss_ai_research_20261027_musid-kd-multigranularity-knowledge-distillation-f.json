@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261027-134",
+  "title": "MuSID-KD: Multigranularity Knowledge Distillation for Generative Recommendation with Semantic IDs",
+  "source_url": "https://arxiv.org/abs/2610.35218",
+  "source_platform": "rss_ai_research",
+  "summary": "MuSID-KD 是一篇关于生成式推荐（Generative Recommendation）中语义 ID（Semantic IDs, SIDs）知识蒸馏的 arXiv 论文。生成式推荐将每个物品表示为离散 token 序列，并自回归地预测下一个物品的 SID，虽然推荐性能强，但多 SID 位置上的重复解码带来显著的推理成本。知识蒸馏可将强大的生成式教师模型的知识迁移到轻量级学生模型，但传统蒸馏目标未充分考虑多 token SID 的结构特性。该工作提出多粒度知识蒸馏方法 MuSID-KD，针对 SID 多 token 序列设计蒸馏策略，以在保持推荐效果的同时降低推理开销。其价值在于直面生成式推荐落地中的效率瓶颈，将知识蒸馏与语义 ID 的多粒度特性结合，对推荐系统工业化部署具有实用意义。",
+  "tags": [
+    "推荐系统",
+    "知识蒸馏",
+    "生成式推荐",
+    "语义ID"
+  ],
+  "author": null,
+  "published_at": "2026-10-27T14:02:25Z",
+  "collected_at": "2026-10-27T14:10:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式推荐中多 SID 位置的自回归解码是推理成本的主要来源，轻量化学生模型是落地关键",
+      "传统知识蒸馏目标未针对多 token 语义 ID 的结构设计，存在粒度不匹配问题",
+      "多粒度蒸馏有望在压缩推理成本的同时保持生成式推荐的性能"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
