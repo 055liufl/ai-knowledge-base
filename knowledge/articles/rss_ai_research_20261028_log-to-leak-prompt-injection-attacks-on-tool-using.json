@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-124",
+  "title": "Log-To-Leak: Prompt Injection Attacks on Tool-Using LLM Agents via the Model Context Protocol",
+  "source_url": "https://arxiv.org/abs/2610.36108",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究针对使用模型上下文协议（MCP）的LLM智能体的提示注入攻击，提出了一种名为Log-To-Leak的新型攻击方式。MCP允许LLM智能体通过自然语言元数据描述来访问外部工具，这为提示注入提供了攻击面。Log-To-Leak是一种附加式的后置日志攻击，在智能体完成合法的最终工具调用后，诱导其发起一个由攻击者控制的额外调用。攻击载荷针对用户查询、MCP服务器名称、服务器响应等内容进行构造，从而可能泄露敏感信息或执行未授权操作。该研究揭示了MCP生态中工具元数据安全性的重要缺口，对构建安全的LLM智能体系统具有警示意义，值得AI安全研究者和智能体开发者关注。",
+  "tags": [
+    "Prompt Injection",
+    "LLM Agent",
+    "MCP",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:01:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCP工具的自然语言元数据是提示注入的新攻击面，工具描述本身可被武器化。",
+      "Log-To-Leak采用后置附加调用方式，在合法调用结束后触发攻击者控制的额外调用，隐蔽性较强。",
+      "攻击载荷可针对用户查询、服务器名称和响应内容进行定制，可能导致敏感信息泄露。",
+      "该研究提醒智能体系统需对工具元数据和调用链进行更严格的安全校验。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

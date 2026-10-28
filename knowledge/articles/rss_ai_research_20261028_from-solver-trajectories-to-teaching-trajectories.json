@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-028",
+  "title": "From Solver Trajectories to Teaching Trajectories: Cognition-Aligned Reasoning Distillation",
+  "source_url": "https://arxiv.org/abs/2610.36445",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，从大型推理模型（LRM）进行知识蒸馏时，直接使用原始教师轨迹作为监督信号存在目标错配问题：先进LRM通过RLHF等奖励驱动后训练优化的是“强求解器”能力，而非“教学”能力，其推理轨迹未必适合作为小模型的学习范本。作者提出“认知对齐推理蒸馏”框架，将求解轨迹转化为教学轨迹，使监督信号更贴合学生模型的认知发展规律。该工作值得关注，因为它挑战了当前推理蒸馏的默认范式，揭示了教师轨迹质量与蒸馏目标之间的结构性矛盾，并为提升小模型推理能力提供了新的对齐思路，对推理模型压缩与部署具有实际意义。",
+  "tags": [
+    "知识蒸馏",
+    "推理模型",
+    "RLHF",
+    "认知对齐"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接使用LRM原始求解轨迹做蒸馏存在目标错配：教师被优化为求解器而非教学者。",
+      "RLHF后训练使教师轨迹偏向高效求解，可能不适合作为小模型的学习范本。",
+      "提出从求解轨迹到教学轨迹的转化思路，强调监督信号应与学生认知过程对齐。",
+      "该视角为推理蒸馏的数据构造与教师选择提供了新的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

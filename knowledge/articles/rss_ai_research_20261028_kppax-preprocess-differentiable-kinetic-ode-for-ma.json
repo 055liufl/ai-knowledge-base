@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-095",
+  "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+  "source_url": "https://arxiv.org/abs/2610.37655",
+  "source_platform": "rss_ai_research",
+  "summary": "KPPax 是一个面向大气化学机理的动力学预处理器，旨在解决传统 Kinetic PreProcessor (KPP) 生成的 Fortran/C 代码无法融入可微分编程框架的问题。该工作将 KPP 语言描述的化学机理自动转换为 JAX 代码，生成可微分、即时编译（JIT）且可向量化的化学求解器。其核心价值在于打通了大气化学数值模拟与机器学习之间的壁垒：研究者可以在 JAX 生态中直接对化学 ODE 进行梯度计算、端到端训练和混合建模，而无需手写伴随代码或维护两套实现。对于需要将物理化学过程嵌入神经网络、开展数据同化或参数反演的研究而言，KPPax 显著降低了工程成本，并借助 JAX 的 GPU/TPU 加速与自动微分能力提升了可扩展性。该工具填补了传统化学传输模型与可微分科学计算之间的空白，具有较高的实用价值和生态兼容性。",
+  "tags": [
+    "JAX",
+    "可微分编程",
+    "大气化学",
+    "ODE求解",
+    "科学计算"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KPPax 将 KPP 化学机理语言转译为 JAX 代码，使化学 ODE 天然支持自动微分与 JIT 编译，消除了传统 Fortran/C 代码与 ML 框架之间的集成障碍。",
+      "该工具让大气化学模型可以直接参与端到端梯度优化，为混合物理-ML 建模、参数反演和数据同化提供了低成本的工程路径。",
+      "借助 JAX 的向量化与硬件加速能力，KPPax 在保持 KPP 机理描述生态的同时提升了大规模化学模拟的可扩展性。"
+    ],
+    "tech_category": "tool",
+    "audience": "researcher"
+  },
+  "version": 1
+}

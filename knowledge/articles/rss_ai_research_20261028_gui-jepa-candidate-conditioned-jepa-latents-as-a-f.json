@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-058",
+  "title": "GUI-JEPA: Candidate-Conditioned JEPA Latents as a Fast Action Policy for Mobile GUI Agents",
+  "source_url": "https://arxiv.org/abs/2610.36877",
+  "source_platform": "rss_ai_research",
+  "summary": "GUI-JEPA 是一篇来自 arXiv 的论文，提出了一种面向移动 GUI 智能体的无解码器动作策略。传统移动 GUI 智能体通常基于 7B 规模的视觉语言模型（VLM），以文本形式逐 token 生成动作，速度慢且内存占用高；即便是对候选动作打分的方案，也仍需在推理循环中保留大型语言模型或 VLM。GUI-JEPA 据作者所知是首个基于联合嵌入预测架构（JEPA）的无解码器 GUI 智能体策略，其核心思路是以候选动作条件化的 JEPA 潜表示作为快速动作策略，从而绕开逐 token 解码过程。该工作值得关注之处在于：它针对 GUI 智能体部署中的延迟与显存瓶颈提出了结构性替代方案，将动作选择从生成式解码转向潜空间预测与候选条件化评估，有望显著提升推理效率，并为轻量化、低延迟的端侧 GUI 自动化提供新范式。不过摘要信息有限，其具体架构细节、候选生成机制与实验效果仍需结合全文评估。",
+  "tags": [
+    "GUI Agent",
+    "JEPA",
+    "VLM",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 GUI 智能体依赖 7B 级 VLM 逐 token 解码动作，是延迟和内存开销的主要来源",
+      "GUI-JEPA 用候选条件化的 JEPA 潜表示替代文本解码，构建无解码器的动作策略",
+      "将动作选择从生成式解码转为潜空间预测，有望大幅降低推理成本并支持端侧部署",
+      "该方向为 GUI 智能体的轻量化与实时化提供了不同于模型蒸馏和量化的结构性思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

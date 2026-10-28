@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-041",
+  "title": "Learning to Formalize: Bridging Open-Ended Workloads and Fast Decision Models",
+  "source_url": "https://arxiv.org/abs/2610.36595",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种解决开放式工作负载与快速决策模型之间接口不匹配问题的方法。决策模型擅长在给定候选列表上快速选择，而通用大语言模型虽能灵活处理开放式任务，但依赖顺序解码导致速度较慢。许多实际工作负载期望生成式后端自行确定可执行的操作，因此没有预先定义好的候选列表。作者通过训练一个小型候选形式化器（candidate formalizer）来弥合这一差距，该形式化器基于离线教师模型生成的列表进行训练。其核心价值在于：在不牺牲生成式灵活性的前提下，将开放式任务转化为决策模型可高效处理的候选集，从而兼顾灵活性与推理速度。这项工作对需要低延迟决策的智能体系统、任务规划与工具调用场景具有潜在意义，为混合式架构提供了新思路。",
+  "tags": [
+    "LLM",
+    "Decision Model",
+    "Agent",
+    "Task Planning"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "决策模型与生成式LLM之间存在接口鸿沟：前者需要候选列表，后者面向开放式生成。",
+      "通过离线教师模型生成候选列表，训练小型形式化器，可将开放式任务转化为决策模型可用的候选集。",
+      "该方法在保持生成式灵活性的同时，有望显著降低推理延迟，适合对实时性要求高的智能体场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

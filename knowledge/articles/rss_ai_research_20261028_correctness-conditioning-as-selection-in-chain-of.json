@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-069",
+  "title": "Correctness Conditioning as Selection in Chain-of-Thought Faithfulness Evaluation",
+  "source_url": "https://arxiv.org/abs/2610.37070",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究链式思维（CoT）忠实性评估中的一个关键方法学问题：现有评估通常只保留模型答对的样本，这一筛选步骤会改变被测量的总体，导致评估结果出现偏差。作者构建了一个包含七个变量的结构因果模型，推导出观察到的忠实性差距的精确表达式 Δ = Cov(A, C)/P(C=1)，其中 A 代表忠实性、C 代表正确性。该模型能够区分两种偏差来源：难度混杂和捷径导致的碰撞偏倚（collider bias），并给出了通过潜在变量表达该差距所需的条件独立性假设。这项工作值得关注，因为它揭示了当前 CoT 忠实性评估中一个被普遍忽视的选择偏差问题，为更严谨的评估方法论提供了因果推断框架，对 LLM 可解释性和可信度研究具有重要方法学意义。",
+  "tags": [
+    "Chain-of-Thought",
+    "Faithfulness Evaluation",
+    "Causal Inference",
+    "LLM Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅评估答对样本会引入选择偏差，改变被测量的总体，使 CoT 忠实性评估结果失真",
+      "通过结构因果模型可将观察到的忠实性差距精确分解为难度混杂与捷径导致的碰撞偏倚两部分",
+      "该框架明确了用潜在变量表达忠实性差距所需的条件独立性假设，为后续评估设计提供理论依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

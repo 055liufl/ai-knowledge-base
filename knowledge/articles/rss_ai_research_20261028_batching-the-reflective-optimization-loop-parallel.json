@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-051",
+  "title": "Batching the Reflective Optimization Loop: Parallel Proposals Make GEPA Faster and Better",
+  "source_url": "https://arxiv.org/abs/2610.36774",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 GEPA（一种基于反思的文本优化器）的优化循环效率问题，提出将原本串行的单候选提议与评估改为批量并行处理。GEPA 通过反思式文本优化提升智能体系统性能，但其优化循环本身资源消耗大且顺序执行导致并行评估能力闲置。作者扩展开源 GEPA 优化器，在每一步优化中同时提议并评估一批候选，而非逐个处理。在两个任务上的实验扫描显示，多数批量运行的实际耗时缩短至原来的一半或更少，最快的一次运行进一步加速。该工作值得关注，因为它以简单有效的批处理策略显著提升了反思式优化这一关键但昂贵工作负载的效率，对智能体系统的开发与部署具有直接实用价值，并为优化循环的并行化设计提供了实证依据。",
+  "tags": [
+    "Agent",
+    "Text Optimization",
+    "Parallelization",
+    "GEPA"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反思式文本优化的串行循环浪费了并行评估能力，批处理提议与评估可显著缩短实际耗时。",
+      "在 GEPA 上简单扩展为批量候选即可在多数运行中实现至少 2 倍加速，且不牺牲优化质量。",
+      "该策略为智能体系统中资源密集型优化工作负载的并行化提供了可复用的工程模式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

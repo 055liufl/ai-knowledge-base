@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-140",
+  "title": "Freeze, Don't Clone: Fine-Tuning with Expressive Policies Without Retaining Offline Data",
+  "source_url": "https://arxiv.org/abs/2610.36247",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究离线到在线强化学习（offline-to-online RL）中一个被忽视的现实约束：离线数据集在微调阶段不再可用。现有方法通常假设离线数据始终可访问，而作者指出，当离线数据消失后，除了已有工作关注的 critic 在分布偏移下的重校准问题外，还存在一个互补的 actor 侧失败模式：策略在失去离线数据约束后继续更新会导致性能退化。论文提出“冻结而非克隆”的思路，即通过冻结策略中表达性强的部分来保留离线阶段学到的行为，而不是依赖对离线数据的重放或克隆，从而在无离线数据条件下实现有效微调。该工作值得关注，因为它揭示了离线到在线 RL 部署中常见但少被讨论的数据不可用场景，并给出了不依赖保留离线数据的轻量级解决方案，对实际系统中数据隐私、存储成本或数据生命周期受限的 RL 应用具有直接意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "Offline-to-Online RL",
+    "Fine-Tuning",
+    "Policy Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:02:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离线数据在微调阶段不可用是实际部署中的常见约束，但现有离线到在线 RL 方法普遍假设数据始终可访问。",
+      "除 critic 重校准外，actor 侧在失去离线数据后继续更新也会导致失败，这是一个被忽视的互补失败模式。",
+      "提出冻结表达性策略部分而非克隆离线行为的思路，可在不保留离线数据的情况下完成有效微调。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

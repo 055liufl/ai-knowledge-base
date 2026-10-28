@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-055",
+  "title": "When the Critic Falls Behind: Co-Evolving Rubrics and Harnesses for Continual Agent Self-Improvement",
+  "source_url": "https://arxiv.org/abs/2610.36826",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注自主智能体（Agent）在持续自我改进过程中，用于指导其演化的监督信号（如评分标准、critic）往往保持静态，难以跟踪多轮迭代中不断变化的行为弱点，进而限制了对未见任务的泛化能力。作者提出让评分标准（rubrics）与智能体运行框架（harnesses，负责交互、记忆、工具调用与执行）协同演化，以解决“critic 落后于 agent”的问题。该工作属于智能体自我改进与持续学习方向，对构建可长期自主进化的 Agent 系统具有参考价值，尤其适用于需要多轮迭代优化、且任务分布动态变化的场景。其核心贡献在于将监督信号本身纳入演化循环，而非仅演化执行策略，从而提升自我改进的持续性与泛化性。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "LLM",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 演化工作多聚焦于 harness 的演化，而监督信号（critic/rubric）相对静态，导致无法跟踪多轮迭代中变化的行为弱点。",
+      "提出让评分标准与 harness 协同演化，使监督信号随 Agent 行为变化而更新，缓解 critic 落后问题。",
+      "静态监督可能限制对未见任务的泛化，协同演化有望提升持续自我改进的泛化能力。",
+      "该方向将监督信号本身纳入演化循环，为构建长期自主进化的 Agent 系统提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-127",
+  "title": "Context Is a Pipeline, Not a Window: Information Attrition in LLM Agent Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.36114",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，当前评估 LLM Agent 时过度关注上下文窗口大小和最终答案正确率，却忽略了工具输出在模型看到之前的信息损耗。作者在一个真实工具使用型 Agent 中测量了这种损耗：该 Agent 通过阅读 Linux 内核 trace 来定位注入故障的根因。在 720 次运行中，上下文窗口几乎未被填满，最大单次 prompt 仅占窗口的 5.75%，但工具输出在进入模型前已发生显著信息丢失。论文提出应将上下文视为一条流水线而非一个窗口，强调信息在工具调用、序列化、截断、摘要等环节的逐级衰减，并呼吁建立对信息保真度的度量。该工作对 Agent 系统设计、工具接口优化和评估体系都有直接启发，值得 Agent 开发者与研究者关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Engineering",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:01:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文窗口大小和最终正确率不足以刻画 Agent 的信息处理质量，工具输出在模型看到之前的损耗是关键盲区。",
+      "实测显示上下文窗口利用率极低（最大 prompt 仅占 5.75%），说明瓶颈不在窗口容量，而在信息在流水线中的逐级衰减。",
+      "应将上下文视为一条从工具输出到模型输入的流水线，而非一个静态窗口，并针对各环节建立信息保真度度量。",
+      "Agent 系统优化应优先关注工具输出序列化、截断与摘要策略，而非单纯扩大上下文窗口。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261028-018",
+  "title": "OA-RAG: Ontology-based Agentic RAG for Faithful LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2610.36335",
+  "source_platform": "rss_ai_research",
+  "summary": "OA-RAG 是一篇提出基于本体（Ontology）的智能体式 RAG 框架的 arXiv 论文，旨在提升大语言模型推理的忠实度并抑制幻觉。论文指出，LLM 在生物医学、医疗健康等要求答案严格基于既有知识的领域仍易产生幻觉；现有 RAG 虽引入外部信息，但往往忽略知识间的逻辑关系，且过度依赖 LLM 自身推理，从而损害答案可靠性。OA-RAG 的核心思路是将本体所表达的领域概念与逻辑关系引入检索与推理流程，并以智能体（Agentic）方式组织多步检索与推理，使模型在生成答案时能够沿结构化的知识路径进行验证与约束，从而提升答案的可溯源性与事实一致性。该工作值得关注的原因在于：它把知识图谱/本体的结构化语义与 Agentic RAG 的动态检索推理结合起来，针对高风险领域对忠实性的刚性需求提出了可落地的技术路线，对 RAG 从“检索片段拼接”走向“知识约束推理”具有参考价值，也为医疗等垂直领域的可信 LLM 应用提供了新思路。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Ontology",
+    "Knowledge Graph",
+    "Hallucination"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 RAG 主要依赖 LLM 自身推理且忽略知识间的逻辑关系，是生物医学等高风险领域答案不可靠的重要来源。",
+      "将本体（Ontology）引入 RAG，可为检索与推理提供结构化的概念和逻辑约束，从而增强答案的忠实性与可溯源性。",
+      "Agentic 式的多步检索与推理组织方式，使模型能够沿知识路径进行验证，减少对参数化知识的盲目依赖。",
+      "该方向代表了 RAG 从片段级增强向知识约束推理演进的趋势，对医疗等垂直领域的可信 LLM 应用具有参考意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

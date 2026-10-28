@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-014",
+  "title": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+  "source_url": "https://arxiv.org/abs/2610.36308",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究记忆型智能体（Memory Agent）中检索与答案生成的分离问题。现有基准常将检索和生成合并为一个分数，难以判断失败原因是未检索到更新信息，还是检索到了但未正确使用。作者在 MemoryAgentBench 的单跳 FactConsolidation 任务上，使用 Qwen2.5-7B-Instruct 和 6K 历史 BM25 检索进行实验，发现当检索证据预算从 64 token 增加到 512 token 时，准确率反而从 45% 下降到 32%。这表明更多检索内容可能引入过时事实，干扰模型对更新信息的利用。该工作揭示了智能体记忆系统中“检索到不等于用对”的关键问题，对 RAG 和 Agent 记忆设计具有重要警示意义，值得关注。",
+  "tags": [
+    "Agent Memory",
+    "RAG",
+    "Retrieval",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "检索与生成合并评分掩盖了失败根因，需分离评估检索命中与更新利用能力。",
+      "增加检索证据预算反而降低准确率，说明过时事实会干扰模型对更新信息的采用。",
+      "智能体记忆系统需设计去噪与时效性过滤机制，而非单纯扩大检索窗口。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

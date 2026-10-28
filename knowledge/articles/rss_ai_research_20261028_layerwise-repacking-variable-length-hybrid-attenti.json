@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-115",
+  "title": "Layerwise Repacking: Variable-Length Hybrid-Attention Training without an Extra Redistribution Pass",
+  "source_url": "https://arxiv.org/abs/2610.35989",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Layerwise Repacking 方法，解决混合注意力模型在变长训练中的并行策略冲突问题。混合注意力模型同时包含全注意力层和稀疏注意力层：全注意力层的计算成本随序列长度二次增长，需要 16 或 32 个 rank 的宽序列并行（SP）组；而稀疏注意力层以近线性的 MoE 计算为主，在节点内 SP8 组即可平衡大多数工作负载。传统做法复用宽组会造成浪费，而重新分配又需要额外通信开销。Layerwise Repacking 通过按层动态重打包并行组，在不增加额外重分配 pass 的情况下实现变长混合注意力训练，从而兼顾效率与可扩展性。该工作对大规模长序列训练系统有实用价值，值得关注。",
+  "tags": [
+    "序列并行",
+    "混合注意力",
+    "MoE",
+    "分布式训练"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:00:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "混合注意力模型中不同层对序列并行宽度需求不同，统一并行策略会造成资源浪费",
+      "按层重打包并行组可避免额外的重分配通信开销",
+      "稀疏注意力层在节点内 SP8 组即可满足多数负载均衡需求"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-061",
+  "title": "Natural Hard-Negative Mining from Positives for Instruction-Following Retrieval",
+  "source_url": "https://arxiv.org/abs/2610.36900",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对指令跟随信息检索（IFIR）中指令条件对比监督稀缺的问题，提出自然难负例挖掘（NHNM）方法。现有合成方法通常固定正例段落并生成额外负例，却忽略了原始正例本身蕴含的难负例潜力。NHNM 的核心思路是将原本的正例转化为可转换的难负例，从而在不依赖大量外部生成的情况下，从正例中挖掘出对指令敏感的困难负样本，增强检索模型对实例级指令的区分能力。该工作值得关注的原因在于：IFIR 是 RAG 与智能检索系统的关键环节，而对比学习中的负例质量直接决定检索排序效果；NHNM 提供了一种低成本、数据高效的监督信号构造方式，可能对检索增强生成、指令感知排序等下游应用产生实际影响。",
+  "tags": [
+    "Retrieval",
+    "Contrastive Learning",
+    "Hard Negative Mining",
+    "Instruction Following"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 IFIR 合成方法只关注生成新负例，忽视了原始正例中可转换的难负例价值",
+      "NHNM 通过将正例转化为难负例，缓解了指令条件对比监督数据稀缺的问题",
+      "该方法有望提升检索器对实例级指令的敏感度，对 RAG 等下游任务具有实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

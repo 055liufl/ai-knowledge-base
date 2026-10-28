@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-042",
+  "title": "God Does Not Play Dice: Enforcing Batch Invariance in Agentic Kernel Generation",
+  "source_url": "https://arxiv.org/abs/2610.36623",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，LLM 服务系统为提升 GPU 利用率会动态批处理用户请求，导致同一请求在不同批次上下文中执行。若 GPU 内核缺乏批不变性（Batch Invariance, BI），则相同输入可能产生不同数值输出，破坏可复现性。现有内核生成智能体只关注正确性与效率，忽视 BI。作者发现 19 个已确认的 BI 违规案例，并提出在智能体内核生成中强制实施 BI 的方法。该工作首次系统性地将数值可复现性问题引入 LLM 内核生成领域，对生产级 LLM 服务的可靠性与调试具有重要意义，值得内核开发者与推理系统研究者关注。",
+  "tags": [
+    "LLM Serving",
+    "GPU Kernel",
+    "Batch Invariance",
+    "Agent",
+    "Reproducibility"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "动态批处理会使同一请求在不同批次上下文中产生数值差异，缺乏批不变性的 GPU 内核直接威胁 LLM 服务的可复现性。",
+      "现有内核生成智能体普遍忽视批不变性，论文确认了 19 个实际 BI 违规案例，说明问题具有普遍性。",
+      "将批不变性作为内核生成的显式约束，是提升 LLM 推理系统可靠性的关键方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

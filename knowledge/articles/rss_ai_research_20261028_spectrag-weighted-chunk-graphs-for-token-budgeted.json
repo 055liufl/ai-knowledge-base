@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-066",
+  "title": "SpectRAG: Weighted Chunk Graphs for Token-Budgeted Context Selection in Multi-Hop Retrieval-Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2610.36991",
+  "source_platform": "rss_ai_research",
+  "summary": "SpectRAG 是一篇 arXiv 论文，提出了一种基于谱图增强的检索框架，用于解决多跳检索增强生成（RAG）中的上下文选择问题。传统 RAG 系统依赖稠密检索进行局部语义匹配，但独立排序的检索结果往往存在冗余段落、遗漏跨块依赖关系以及多跳推理证据不完整等问题。SpectRAG 通过构建加权块图（Weighted Chunk Graphs），利用谱图方法对检索到的文本块进行全局建模，从而在 token 预算约束下选择更具信息量和互补性的上下文。该工作值得关注，因为它针对 RAG 中一个实际且关键的痛点——多跳场景下的证据完整性与冗余控制，提出了一种结合图结构与谱分析的创新思路，有望提升复杂问答任务中 LLM 的推理准确性和上下文效率。",
+  "tags": [
+    "RAG",
+    "Graph",
+    "Retrieval",
+    "Multi-Hop"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "独立排序的稠密检索在多跳场景下易产生冗余段落并遗漏跨块依赖，导致证据不完整。",
+      "SpectRAG 通过加权块图与谱图分析对检索上下文进行全局建模，以在 token 预算内选择互补证据。",
+      "该方法将图结构引入 RAG 的上下文选择阶段，为多跳推理中的证据组织提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

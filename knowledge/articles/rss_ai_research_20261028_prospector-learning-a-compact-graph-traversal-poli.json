@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-071",
+  "title": "Prospector: learning a compact graph traversal policy for scientific reasoning",
+  "source_url": "https://arxiv.org/abs/2610.37121",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Prospector，一种面向科学推理的紧凑图遍历策略学习模型。研究动机在于：专业工程领域的科学推理依赖分散在文献中的知识，这些知识往往专有且未出现在前沿 LLM 的训练数据中，导致前沿模型在该类领域只能给出泛泛答案。知识图谱（KG）可用于为 LLM 推理提供依据，但图规模过大无法完整输入，现有 LLM+KG 系统通常在推理开始前就预选子图，即先判断相关性再推理，可能遗漏关键信息。Prospector 改为训练一个紧凑模型学习图遍历策略，在推理过程中动态探索图结构，而非静态预选。该工作值得关注之处在于：它针对专有领域知识这一 LLM 的真实短板，提出以学习式遍历替代启发式子图预选，为 LLM 与大规模知识图谱的深度结合提供了新思路，且紧凑模型的设计有利于实际部署。",
+  "tags": [
+    "Knowledge Graph",
+    "LLM",
+    "Graph Traversal",
+    "Scientific Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:58:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "专有工程领域知识不在前沿 LLM 训练数据中，导致模型只能给出泛化答案，知识图谱可为其推理提供依据",
+      "现有 LLM+KG 系统在推理前静态预选子图，将相关性判断与推理割裂，可能遗漏关键知识",
+      "Prospector 训练紧凑模型学习图遍历策略，在推理过程中动态探索知识图谱而非预先截取",
+      "紧凑模型的设计兼顾了遍历策略的学习效果与实际部署可行性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

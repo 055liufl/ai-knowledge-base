@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-021",
+  "title": "LoRA on a Budget: Function-Aware Post-Hoc Compression for Adapter Fleets",
+  "source_url": "https://arxiv.org/abs/2610.36386",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大规模部署 LoRA 适配器时的资源瓶颈问题，提出了一种函数感知的事后压缩方法。LoRA 已成为将基础模型高效定制为众多任务和用户特定变体的关键机制，但在共享资源预算下服务大量适配器时，压缩需要解决两层分配问题：秩需在每个适配器内部的层间分配，以及在整个适配器集群的适配器间分配。作者指出训练后的 LoRA 存在显著的谱冗余，仅靠谱重建不足以实现最优压缩，因此引入函数感知策略来指导秩分配。该工作值得关注，因为它直接回应了多租户、多任务场景下 LoRA 服务成本高昂的实际痛点，为适配器集群的高效部署提供了新的压缩视角，对模型服务基础设施和参数高效微调的落地具有实用价值。",
+  "tags": [
+    "LoRA",
+    "Model Compression",
+    "Adapter Serving",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多 LoRA 适配器服务是一个两层秩分配问题：层内与适配器间需联合优化",
+      "训练后的 LoRA 存在显著谱冗余，但纯谱重建并非最优压缩准则",
+      "函数感知的事后压缩能更有效地在资源预算下保持适配器功能"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

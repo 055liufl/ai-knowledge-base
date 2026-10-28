@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-020",
+  "title": "WAKMan: Workload Aware KVCache Manager",
+  "source_url": "https://arxiv.org/abs/2610.36355",
+  "source_platform": "rss_ai_research",
+  "summary": "WAKMan（Workload Aware KVCache Manager）是一篇来自 arXiv 的技术论文，聚焦于大语言模型（LLM）推理服务中的前缀缓存（Prefix Caching）优化问题。前缀缓存允许服务器复用与历史提示共享前缀的请求的 Key-Value（KV）状态，从而加速 prefill 计算阶段，降低延迟和服务成本。然而，在有限的内存资源下，KV 缓存的淘汰策略成为决定前缀缓存整体收益的关键因素。论文指出，生产环境中的流量模式复杂多样，包括单轮对话、多轮对话、Agent 式交互以及混合流量，不同工作负载对缓存的需求和访问模式存在显著差异。WAKMan 提出一种工作负载感知的 KV 缓存管理方案，旨在根据实际流量特征动态调整缓存策略，以最大化缓存命中率和整体服务效率。该研究值得关注，因为它直面 LLM 推理服务中内存瓶颈与成本优化的核心矛盾，将工作负载特征引入缓存管理决策，有望提升生产级 LLM 服务的资源利用率和响应性能，对推理基础设施的工程实践具有直接参考价值。",
+  "tags": [
+    "KVCache",
+    "LLM推理",
+    "前缀缓存",
+    "缓存淘汰策略",
+    "工作负载感知"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在有限内存下，KV 缓存淘汰策略是决定前缀缓存整体收益的决定性因素，而非缓存机制本身。",
+      "生产流量包含单轮、多轮、Agent 式及混合等多种模式，不同工作负载的缓存访问特征差异显著，需要差异化处理。",
+      "工作负载感知的缓存管理能够根据实际流量特征动态调整策略，从而提升缓存命中率并降低推理延迟与服务成本。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

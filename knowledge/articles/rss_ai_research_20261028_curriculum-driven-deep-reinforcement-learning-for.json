@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-104",
+  "title": "Curriculum-Driven Deep Reinforcement Learning for Autonomous Far-Range Rocket Landing",
+  "source_url": "https://arxiv.org/abs/2610.35954",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种课程驱动的深度强化学习框架，用于解决可重复使用运载火箭的自主垂直着陆问题。传统基于模型的控制方法难以应对高度非线性动力学、严格精度要求和环境不确定性，而现有强化学习方法多采用平坦训练范式和过度简化的初始条件，导致策略泛化能力不足。作者引入课程学习机制，通过逐步增加任务难度（如初始位置偏差、风扰强度、燃料约束等）来训练智能体，使其在远距离着陆场景下获得更鲁棒的控制策略。该工作值得关注，因为它将课程学习与深度RL结合，针对航天着陆这一高难度连续控制任务，有望提升自主着陆的可靠性和精度，并为复杂工程控制问题提供可迁移的训练范式。",
+  "tags": [
+    "Reinforcement Learning",
+    "Curriculum Learning",
+    "Aerospace Control",
+    "Autonomous Landing"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:00:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "课程学习通过渐进式难度调度，可有效缓解远距离火箭着陆中稀疏奖励和初始条件敏感的问题。",
+      "现有RL着陆方法多依赖简化初始条件和平坦训练，难以泛化到真实远距离着陆场景，课程驱动训练是改进方向。",
+      "该框架将非线性动力学、精度约束和环境不确定性统一纳入训练过程，提升了策略的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

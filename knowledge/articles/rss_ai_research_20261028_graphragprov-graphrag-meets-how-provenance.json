@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-077",
+  "title": "GraphRAGProv: GraphRAG Meets How-Provenance",
+  "source_url": "https://arxiv.org/abs/2610.37237",
+  "source_platform": "rss_ai_research",
+  "summary": "GraphRAGProv 是一项针对 GraphRAG 系统可解释性不足问题的研究。传统 GraphRAG 利用知识图谱为 LLM 检索相关上下文以生成最终答案，这虽然提升了回答质量，却使答案来源难以追溯，在需要高度透明度的领域（如医疗、法律、金融）中应用受限。该工作提出 GraphRAGProv 架构，通过在基于来源的 RDF 图上执行 SPARQL 查询来计算答案及其 how-provenance 多项式。这些多项式记录了答案生成过程中使用了哪些语句出现（statement occurrences），从而为每个答案提供细粒度的来源追踪。该研究将图检索增强生成与数据溯源（provenance）技术相结合，有望显著提升 GraphRAG 系统的透明度和可信度，对需要审计和解释的 AI 应用具有重要意义。",
+  "tags": [
+    "GraphRAG",
+    "Provenance",
+    "Knowledge Graph",
+    "RAG",
+    "Explainability"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GraphRAG 系统因依赖知识图谱检索而降低了答案的可解释性，GraphRAGProv 通过 how-provenance 多项式记录答案所依赖的语句出现，实现细粒度溯源。",
+      "该架构在源接地的 RDF 图上执行 SPARQL 查询，将答案计算与溯源计算统一，为透明度要求高的领域提供了可行方案。",
+      "将数据溯源技术引入 RAG 流程，有助于提升 LLM 生成答案的可审计性和可信度，是增强 AI 透明性的重要方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

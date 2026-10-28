@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-016",
+  "title": "How Stable Are LLM-Generated Proofs Under Program Refactoring? A Stress Test for Verifiable Code Generation",
+  "source_url": "https://arxiv.org/abs/2610.36328",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出RefactorProof基准，用于检验LLM生成的程序证明在程序重构（保持行为不变）后是否仍然有效。传统可验证代码生成基准通常只针对固定实现测试证明，而该工作从VERINA任务中衍生出458个Lean认证变体，保持规格和证明逐字节不变，仅改变程序结构。这揭示了LLM证明生成的一个关键脆弱性：证明可能过度依赖具体实现细节而非语义不变性。该研究对评估LLM在形式化验证中的鲁棒性具有重要意义，为可验证代码生成领域提供了新的压力测试视角，值得研究者和开发者关注。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Code Generation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有可验证代码生成基准仅测试固定实现下的证明有效性，忽略了程序重构后的证明稳定性问题。",
+      "RefactorProof通过保持规格和证明不变、仅改变程序结构，构建了458个Lean认证变体，系统性地暴露LLM证明对实现细节的依赖。",
+      "该工作为评估LLM在形式化验证中的鲁棒性提供了新的压力测试方法，推动更可靠的证明生成研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

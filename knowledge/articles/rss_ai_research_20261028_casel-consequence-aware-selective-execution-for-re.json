@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-037",
+  "title": "CASEL: Consequence-Aware Selective Execution for Reliable Long-Horizon Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2610.36570",
+  "source_platform": "rss_ai_research",
+  "summary": "CASEL（Consequence-Aware Selective Execution Layer）是一篇针对长程工具使用型语言智能体的运行时安全研究。论文指出，现有运行时防护机制大多依赖通用的不确定性分数或粗粒度的变更启发式来分配审查资源，难以应对智能体对外部系统进行实际修改时的风险。CASEL 提出一种与模型无关的运行时分配策略，对每个提议的工具调用综合校准后的失败概率、状态相关后果、可逆性、歧义性和证据新鲜度，在放行、审查或拦截等动作之间做出选择性决策。该工作值得关注，因为它将安全审查从静态阈值转向基于后果感知的动态资源分配，为构建可靠、可审计的长程智能体提供了可落地的运行时治理思路，对智能体部署与安全工程具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Safety",
+    "Runtime Guardrails"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有运行时防护多依赖通用不确定性或粗粒度变更启发式，未充分考虑工具调用的实际后果差异。",
+      "CASEL 将失败概率、状态相关后果、可逆性、歧义性和证据新鲜度统一纳入逐调用决策，实现选择性审查。",
+      "该策略与具体模型无关，可作为长程工具使用智能体的通用运行时治理层。",
+      "按后果分配审查资源有助于在安全性与执行效率之间取得更好平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

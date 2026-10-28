@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-080",
+  "title": "RPSD: Retrieval-Privileged On-Policy Self-Distillation with Optimal Transport",
+  "source_url": "https://arxiv.org/abs/2610.37281",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出RPSD（Retrieval-Privileged On-Policy Self-Distillation with Optimal Transport），针对基于LLM的序列推荐中GRPO等强化学习后训练方法的两个缺陷：信用盲优化（序列级奖励被均匀分配给所有生成token）和协同盲监督（每个训练样本独立处理，忽略用户-物品协同信号）。RPSD通过检索增强的在线策略自蒸馏框架，利用最优传输（Optimal Transport）在token级别对齐教师与学生分布，实现细粒度信用分配，并引入检索到的协同信息作为特权监督。该方法将生成式推荐与检索增强、自蒸馏和最优传输相结合，为LLM推荐系统的后训练提供了新思路，值得关注其在推荐精度和训练效率上的潜在提升。",
+  "tags": [
+    "LLM",
+    "推荐系统",
+    "强化学习",
+    "自蒸馏",
+    "最优传输"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于GRPO的生成式推荐存在序列级奖励均匀分配导致的信用盲问题，RPSD通过token级最优传输对齐实现细粒度信用分配。",
+      "引入检索到的协同信息作为特权监督，缓解了传统监督中每个样本独立训练而忽略用户-物品协同信号的局限。",
+      "在线策略自蒸馏框架结合最优传输，为LLM推荐后训练提供了一种无需额外标注的细粒度优化范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

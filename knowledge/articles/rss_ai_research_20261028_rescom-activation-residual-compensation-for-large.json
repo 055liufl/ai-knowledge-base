@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-105",
+  "title": "ResCom: Activation Residual Compensation for Large Language Model Quantization",
+  "source_url": "https://arxiv.org/abs/2610.35955",
+  "source_platform": "rss_ai_research",
+  "summary": "ResCom 是一种针对大语言模型低比特权重量化与激活量化（W4A4 等）的激活残差补偿方法。论文指出，在量化校准后，激活值的舍入误差仍会显著降低模型精度，而仅从舍入后的输入进行重建无法区分同一量化桶内的不同激活值。ResCom 利用激活舍入残差构造低秩修正项，以补偿由此产生的层输出误差，并采用输出感知的校准策略来优化该修正项。该方法属于训练后量化（PTQ）的轻量级增强，无需重新训练模型，即可在低比特部署场景下提升精度，对降低 LLM 推理的内存和计算开销具有实际意义。其创新点在于将舍入残差作为可补偿信号，而非简单丢弃，为量化误差校正提供了新思路。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Model Compression",
+    "Post-Training Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:00:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "激活舍入误差是低比特量化后精度下降的关键因素，仅依赖舍入后输入的重建无法区分同一量化桶内的激活差异。",
+      "利用激活舍入残差构造低秩修正项，可有效补偿层输出误差，且计算开销小、易于集成到现有 PTQ 流程。",
+      "输出感知的校准策略能够针对最终层输出误差优化修正项，比传统逐层重建更贴近模型整体精度目标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

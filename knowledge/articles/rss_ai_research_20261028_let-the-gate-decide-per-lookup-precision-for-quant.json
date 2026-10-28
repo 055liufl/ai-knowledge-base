@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-113",
+  "title": "Let the Gate Decide: Per-Lookup Precision for Quantized Conditional Memory in LLMs",
+  "source_url": "https://arxiv.org/abs/2610.35985",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型中条件记忆层（如DeepSeek的Engram）的低比特量化问题。条件记忆层通过附加大型哈希n-gram表来增强模型的事实记忆能力，移除后会导致PopQA分数下降36.8分。研究发现低比特量化会优先丢失长尾事实，而传统的按访问频率分配更多比特的补救方法反而效果更差，甚至不如随机分配。作者将问题追溯到对每个检索行进行缩放的“门控”机制，提出“让门控决定”的逐查找精度分配方法，即根据门控信号而非访问频率来决定量化精度。该工作为条件记忆层的高效压缩提供了新思路，对降低大模型记忆增强模块的存储开销具有实用价值。",
+  "tags": [
+    "量化",
+    "条件记忆",
+    "LLM",
+    "模型压缩"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:00:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低比特量化会优先损害长尾事实的记忆能力，按访问频率分配比特的传统方法反而劣于随机分配。",
+      "问题根源在于对检索行进行缩放的门控机制，而非简单的访问频率统计。",
+      "提出逐查找精度分配策略，利用门控信号决定量化精度，可更有效地保留关键事实。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-038",
+  "title": "ADTGuard: Adaptive Depth-Time Safeguard for Streaming Inference in Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.36574",
+  "source_platform": "rss_ai_research",
+  "summary": "ADTGuard 是一篇针对大语言模型流式推理场景的安全防护研究。论文指出，LLM 在流式输出时可能在生成完成前就向用户暴露有害内容，而现有防护手段存在两大局限：一是基于响应或分块边界的后置审核会延迟干预，内容在验证前已被释放；二是即便采用 token 级检测，粗粒度的响应级监督也难以精准定位风险。为此，作者提出自适应深度-时间防护机制 ADTGuard，试图在生成过程中动态平衡检测深度与响应时延，实现更早、更细粒度的安全干预。该工作值得关注，因为流式输出已成为 LLM 产品的主流交互形态，而安全审核的实时性与准确性矛盾尚未被很好解决；ADTGuard 将防护从离线后置推进到在线过程控制，对构建可信、可部署的生成式 AI 系统具有直接工程价值，也为安全对齐研究提供了新的时间维度视角。",
+  "tags": [
+    "LLM Safety",
+    "Streaming Inference",
+    "Guardrails",
+    "Content Moderation"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流式生成场景下，后置审核存在固有延迟，有害内容可能在验证完成前已暴露给用户",
+      "token 级检测虽更细粒度，但受限于粗粒度的响应级监督，难以精准定位风险",
+      "ADTGuard 通过自适应深度-时间机制，在检测精度与干预时延之间动态权衡",
+      "安全防护需从离线后置审核转向生成过程中的在线过程控制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

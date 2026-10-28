@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-084",
+  "title": "Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model",
+  "source_url": "https://arxiv.org/abs/2610.37375",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Agent-Conditioned Routing (ACR)，一种在单个冻结的稀疏混合专家（MoE）模型中生成多样化推理路径的方法。传统上，生成多个解往往只是对同一主导方法的复述，而 ACR 通过为 m 条并行轨迹分配持久且未经训练的共享路由条件，无需用户指定角色、预设方法、微调或模型副本，即可利用 MoE 的条件容量产生真正不同的解题思路。这项工作值得关注，因为它挑战了“多样性需要多模型或多轮微调”的假设，展示了冻结大模型内部路由机制作为隐式多样性来源的潜力，对推理增强、集成学习和高效部署具有启发意义。",
+  "tags": [
+    "MoE",
+    "推理多样性",
+    "路由机制",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结的稀疏 MoE 模型可通过持久化路由条件在单次提示下生成多样化推理路径，无需微调或模型副本。",
+      "ACR 无需用户指定角色或方法，降低了多样性生成的使用门槛。",
+      "该方法揭示了 MoE 条件容量作为隐式多样性来源的潜力，为高效推理集成提供新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

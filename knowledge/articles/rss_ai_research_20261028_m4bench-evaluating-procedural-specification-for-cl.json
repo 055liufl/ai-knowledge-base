@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-088",
+  "title": "M4Bench: Evaluating Procedural Specification for Clinical EHR Derivation Agents",
+  "source_url": "https://arxiv.org/abs/2610.37459",
+  "source_platform": "rss_ai_research",
+  "summary": "M4Bench 是一个面向临床电子健康记录（EHR）衍生变量任务的评测基准，收录了基于 MIMIC-IV 和 eICU 两个公开重症监护数据库的 28 个临床衍生任务，覆盖 15 个任务家族。该基准的核心洞察在于：临床研究中大量衍生变量的定义并不存在于数据库模式中，而是隐含在项目编码、时间窗口、缺失值处理规则和输出粒度选择里，这些细节会显著改变队列构成和下游研究结论。M4Bench 旨在检验 AI 编码智能体能否正确复现这类程序性规范，并进一步研究经临床医生审阅的智能体技能（agent skills）如何影响任务表现。该工作值得关注的原因有三：其一，它将 AI 智能体的评测从通用代码生成推进到高专业门槛、高风险的临床数据工程场景；其二，它揭示了“程序性规范理解”这一被现有基准忽视的能力维度，即智能体需要从非结构化或半结构化的临床语义中还原出可执行的计算逻辑；其三，它为医疗 AI 智能体的可靠性评估提供了可复现的公开测试床，对推动智能体在真实临床研究流程中的落地具有直接参考价值。",
+  "tags": [
+    "Benchmark",
+    "Agent",
+    "EHR",
+    "Clinical NLP"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "临床衍生变量的关键定义往往不在数据库模式中，而藏在项目编码、时间窗口和缺失值规则里，这些隐含规范是 AI 智能体最容易出错的地方",
+      "M4Bench 将智能体评测从通用代码生成推进到临床数据工程，强调程序性规范理解而非单纯语法正确性",
+      "经临床医生审阅的智能体技能可能显著改变任务表现，说明领域专家反馈在医疗智能体流程中的必要性",
+      "衍生变量的输出粒度选择会改变队列构成和下游结论，评测需关注端到端语义一致性而非局部代码匹配"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

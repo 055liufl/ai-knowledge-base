@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-017",
+  "title": "Plenty of Room in the Middle: Revealing Opportunities on a GPU Cluster via Fine-Grained Monitoring",
+  "source_url": "https://arxiv.org/abs/2610.36329",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对GPU集群利用率优化问题，提出了一种细粒度监控方法。传统监控通常以秒级或分钟级频率运行，主要服务于作业级调度，缺乏优化GPU级利用率所需的细节。作者对一个大学GPU集群进行了深入研究，通过细粒度监控揭示了集群中存在的大量未被利用的机会（即'中间地带的充足空间'）。研究可能涉及对GPU利用率、内存、计算单元等指标的细粒度采集与分析，发现作业内部和作业之间的资源闲置模式，从而为提升集群整体效率提供依据。该工作值得关注，因为GPU集群成本高昂且需求旺盛，排队延迟严重，而现有监控粒度不足以支撑GPU级优化。细粒度监控有望在不增加硬件的情况下显著提升资源利用率，对学术界和工业界的集群运维具有实际指导意义。",
+  "tags": [
+    "GPU Cluster",
+    "Monitoring",
+    "Resource Utilization",
+    "Scheduling"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:56:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统秒级/分钟级监控主要服务于作业级调度，无法捕捉GPU级利用率的细粒度波动，导致优化机会被忽视。",
+      "对大学GPU集群的深入细粒度监控研究揭示了作业内部和作业之间存在大量未被利用的资源空间。",
+      "提升GPU集群利用率需要从作业级调度转向GPU级优化，细粒度监控是实现这一转变的关键基础。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

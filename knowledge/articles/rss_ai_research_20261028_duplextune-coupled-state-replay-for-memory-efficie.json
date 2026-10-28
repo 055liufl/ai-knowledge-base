@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-119",
+  "title": "DuplexTune: Coupled-State Replay for Memory-Efficient Mixture-of-Experts Adaptation",
+  "source_url": "https://arxiv.org/abs/2610.36009",
+  "source_platform": "rss_ai_research",
+  "summary": "DuplexTune 是一个针对混合专家（MoE）语言模型的高效适配框架，旨在解决稀疏专家执行无法消除适配所需存储状态的问题。该框架通过可训练宽度桥接连接两个残差流与主干网络，重放耦合隐藏状态经过预训练注意力与专家模块。训练流程先进行桥接预热，再适配主干，且路由器权重保持冻结。作者分析了隐式状态恢复方程并识别了收敛条件。该工作值得关注，因为它为 MoE 模型提供了一种内存高效的微调新思路，有望降低大模型适配的显存开销，对推动 MoE 架构的实际部署与个性化应用具有潜在价值。",
+  "tags": [
+    "MoE",
+    "参数高效微调",
+    "内存优化",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:01:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "稀疏专家执行并不能消除适配 MoE 模型所需的存储状态，内存瓶颈依然存在。",
+      "通过可训练桥接重放耦合隐藏状态，可在冻结路由器的条件下实现主干适配。",
+      "桥接预热先于主干适配的训练策略有助于稳定隐式状态恢复过程。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

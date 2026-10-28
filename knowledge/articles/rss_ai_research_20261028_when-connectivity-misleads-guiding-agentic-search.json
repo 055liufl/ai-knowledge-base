@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-128",
+  "title": "When Connectivity Misleads: Guiding Agentic Search with Contrastive Evidence Paths",
+  "source_url": "https://arxiv.org/abs/2610.36134",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于图的多跳搜索智能体提出一个关键问题：文档在图中的高连接度可能使其排名靠前，但这并不代表其证据价值更高，这种“连通性误导”会导致智能体选择低质量证据。作者提出使用对比证据路径（Contrastive Evidence Paths）来引导智能体搜索，通过对比不同路径上的证据质量而非仅依赖图扩散（如Personalized PageRank）的聚合传播贡献，从而更准确地评估候选文档的实用性。该工作值得关注，因为它揭示了图检索增强智能体中一个被忽视的偏差来源，并提供了可操作的路径对比方法，有望提升多跳问答和深度研究型智能体的证据选择准确率。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Graph Retrieval",
+    "Multi-hop Search"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T15:01:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图连通性高的文档容易在PPR等扩散方法中排名靠前，但这可能反映可达性而非证据价值，导致智能体被误导。",
+      "对比证据路径通过比较不同多跳路径上的证据质量，可以缓解连通性偏差，帮助智能体选择更可靠的来源。",
+      "该问题对多跳搜索智能体的观察窗口和候选排序策略有直接影响，需要重新审视图扩散在智能体检索中的适用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

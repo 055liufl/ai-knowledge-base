@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-076",
+  "title": "Does Your Generalist Skill Optimizer Really Incentivize Agentic Tasks? Rethinking Skill Optimization via Bipartite Attribution",
+  "source_url": "https://arxiv.org/abs/2610.37201",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文质疑当前通用技能优化器（skill optimizers）在长程智能体任务（如终端环境修复）中的有效性。现有方法通过重写上下文中的自然语言技能，并在小规模开发集上保留能提升成功率的编辑。但作者指出，这类任务的成功信号噪声很大，小开发集上的增益不能证明编辑真正有效，且成功分数无法反映编辑的代价。为此，论文提出 BiPA（Bipartite Attribution），通过重放优化器的接受规则来评估候选编辑，并引入二分归因机制，将技能编辑的效果与噪声分离，从而更可靠地判断编辑是否真正有益。该工作值得关注，因为它直击当前智能体技能优化范式的评估漏洞，为构建更稳健、可归因的智能体自我改进方法提供了新视角，对智能体研究和实际部署均有重要意义。",
+  "tags": [
+    "Agent",
+    "Skill Optimization",
+    "Evaluation",
+    "Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:59:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小开发集上的成功率增益不足以证明技能编辑有效，因为长程任务的成功信号噪声很大。",
+      "成功分数无法反映编辑的代价，需要引入更细粒度的归因机制来评估编辑的真实价值。",
+      "BiPA 通过重放优化器的接受规则和二分归因，能够更可靠地区分真实改进与噪声。",
+      "当前通用技能优化器的激励设计与智能体任务的实际需求存在错位，需要重新思考优化目标。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

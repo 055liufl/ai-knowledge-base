@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-033",
+  "title": "AC-JEPA: Anchored Cross-Modal Joint Embedding Predictive Architecture for Visual-to-Symbolic Translation",
+  "source_url": "https://arxiv.org/abs/2610.36493",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 AC-JEPA（Anchored Cross-Modal Joint Embedding Predictive Architecture），用于视觉到符号的跨模态翻译任务。研究动机在于：真实科学领域中配对数据往往不完美，大规模获取干净配对成本高昂；而直接采用监督微调（SFT）进行类别级 token 监督对目标端错误敏感，难以兼顾共享语义捕获与目标模态细粒度结构保持。AC-JEPA 通过锚定的联合嵌入预测架构，在嵌入空间中进行跨模态预测，并以锚点机制约束语义对齐，从而降低对完美配对数据的依赖，提升翻译的鲁棒性与结构保真度。该工作值得关注之处在于：它针对跨模态翻译中数据质量与监督信号脆弱性这一实际痛点，提出了一种不依赖严格 token 级监督的替代范式，对科学文档解析、图表转文本、公式与符号生成等视觉到符号场景具有潜在应用价值，也为 JEPA 类架构在跨模态生成任务中的扩展提供了新思路。",
+  "tags": [
+    "跨模态翻译",
+    "JEPA",
+    "视觉到符号",
+    "表征学习"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "真实科学场景中配对数据不完美且获取成本高，SFT 的 token 级监督对目标端错误敏感，需要更鲁棒的训练范式",
+      "AC-JEPA 在联合嵌入空间进行锚定跨模态预测，兼顾共享语义对齐与目标模态细粒度结构保持",
+      "该架构降低了对干净配对数据的依赖，为视觉到符号翻译提供了不依赖严格 token 监督的替代路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

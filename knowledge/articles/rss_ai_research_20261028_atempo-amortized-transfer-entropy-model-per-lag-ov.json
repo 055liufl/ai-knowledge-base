@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261028-035",
+  "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
+  "source_url": "https://arxiv.org/abs/2610.36536",
+  "source_platform": "rss_ai_research",
+  "summary": "ATEMPO 提出了一种摊销式转移熵模型（Amortized Transfer Entropy Model Per-lag Over-Time），用于解决时间序列之间信息传递延迟的识别问题。在真实系统中，一个源序列对目标序列的预测能力往往只在特定滞后（lag）上显著，而在相邻滞后上可能完全无信息。传统固定输入窗口会把有用历史与无关历史混在一起，掩盖这种稀疏的延迟结构。转移熵（Transfer Entropy, TE）理论上能够通过度量源序列过去对目标序列未来的信息增益来恢复这些延迟，但逐滞后计算 TE 代价高昂且难以端到端训练。ATEMPO 的核心思路是学习一个摊销模型，一次性估计所有滞后上的转移熵，从而高效地揭示源-目标之间的信息传递时间结构。该工作值得关注的原因在于：它把信息论中的因果/信息流度量与深度学习的高效摊销推理结合起来，为多变量时间序列中的滞后因果发现、特征选择和可解释建模提供了新工具，对时序预测、神经科学、金融和气候分析等需要识别延迟依赖关系的领域具有潜在价值。",
+  "tags": [
+    "Time Series",
+    "Transfer Entropy",
+    "Causal Discovery",
+    "Information Theory"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:57:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定输入窗口会混合有用与无关历史，掩盖源序列对目标序列预测能力在特定滞后上的稀疏结构",
+      "转移熵可逐滞后度量信息传递，但逐点计算成本高，摊销建模是使其实用的关键",
+      "ATEMPO 一次性估计所有滞后的转移熵，为时序中的延迟因果发现提供高效方案",
+      "该方法有望用于特征选择与可解释时序建模，识别真正有信息量的历史延迟"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

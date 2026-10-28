@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261028-007",
+  "title": "Don't Pick a Winner: Knowledge Conflicts Need a Prior, Not a Rule",
+  "source_url": "https://arxiv.org/abs/2610.36169",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对检索增强语言模型（RAG）中检索上下文与模型自身知识发生冲突的问题，提出不应在设计时固定一条规则（如始终信任上下文、按比例放大上下文影响或信任模型记忆），而应引入一个可学习的先验（prior）来动态权衡两个知识源。作者从决策论角度建模两个信息源，指出每种固定规则在某些部署场景下都会自信地犯错。该工作值得关注，因为它挑战了RAG系统中知识冲突处理的传统设计范式，将冲突解决从静态规则转向基于先验的概率决策框架，有望提升模型在不同部署环境下的鲁棒性和可靠性。",
+  "tags": [
+    "RAG",
+    "Knowledge Conflict",
+    "LLM",
+    "Decision Theory"
+  ],
+  "author": null,
+  "published_at": "2026-10-28T14:53:43Z",
+  "collected_at": "2026-10-28T14:55:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有RAG知识冲突解决方法均采用设计时固定的规则，每种规则在某些部署场景下会自信地出错。",
+      "应将知识冲突视为决策论问题，引入可学习的先验来动态权衡检索上下文与模型内部知识。",
+      "固定规则缺乏对部署环境不确定性的适应能力，而先验方法能根据场景调整信任分配。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
