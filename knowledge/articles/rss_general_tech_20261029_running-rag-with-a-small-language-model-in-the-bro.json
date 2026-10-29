@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261029-013",
+  "title": "Running RAG with a (small) language model in the browser",
+  "source_url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章展示了如何在浏览器中运行检索增强生成（RAG）系统，且仅使用一个小型语言模型。作者通过结合 WebAssembly、Transformers.js 等前端技术，在客户端完成文本嵌入、向量检索和答案生成的全流程，无需依赖后端服务器。这一方案的意义在于：它证明了 RAG 可以在资源受限的浏览器环境中落地，从而降低隐私风险（数据不出本地）、减少延迟和服务器成本，并为离线可用的智能应用开辟了可能。文章详细介绍了技术选型、模型加载与推理流程，以及性能权衡，对希望在前端集成 AI 能力的开发者具有直接参考价值。",
+  "tags": [
+    "RAG",
+    "WebAssembly",
+    "LLM",
+    "浏览器端AI"
+  ],
+  "author": null,
+  "published_at": "2026-10-29T14:58:43Z",
+  "collected_at": "2026-10-29T15:00:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小型语言模型结合浏览器端推理，可以在不牺牲隐私的前提下实现完整的 RAG 流程",
+      "WebAssembly 和 Transformers.js 等工具链的成熟，使得在客户端运行嵌入和生成模型成为可行",
+      "该方案适合对数据隐私敏感、需要离线运行或希望降低服务器成本的场景",
+      "浏览器端 RAG 的性能受限于模型大小和硬件，需要在效果与资源消耗之间做权衡"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

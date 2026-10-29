@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261029-048",
+  "title": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+  "source_url": "https://huggingface.co/blog/hf-cli-for-agents",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 Hugging Face 如何重新设计其命令行工具 hf CLI，使其更适合 AI 代理（agent）使用。传统的 CLI 主要面向人类用户，而 hf CLI 针对代理的自动化工作流进行了优化，包括更结构化的输出（如 JSON）、更清晰的错误信息、幂等操作以及更细粒度的权限控制。这一设计使得代理能够更可靠地与 Hugging Face Hub 交互，例如自动上传模型、管理数据集、查询仓库信息等。文章强调了代理友好型工具设计的重要性，并分享了具体的设计原则和实现细节。对于构建基于代理的 AI 系统的开发者而言，这提供了实用的参考，也反映了 AI 基础设施正朝着支持自动化代理的方向演进。",
+  "tags": [
+    "CLI",
+    "Agent",
+    "Hugging Face",
+    "工具设计"
+  ],
+  "author": null,
+  "published_at": "2026-10-29T14:58:47Z",
+  "collected_at": "2026-10-29T15:02:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代理需要结构化、可解析的输出（如 JSON）而非人类可读的文本，因此 CLI 应提供机器友好的输出格式。",
+      "错误处理对代理至关重要：清晰的错误代码和消息能帮助代理自动恢复或重试。",
+      "幂等性和细粒度权限控制是代理安全可靠操作的基础。",
+      "为代理设计工具需要从代理的视角出发，考虑其自动化、无监督的工作流程。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

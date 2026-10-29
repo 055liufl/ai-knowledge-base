@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261029-005",
+  "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+  "source_url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了微软在 Hugging Face 博客上发布的 ThinkingBox 方法，该方法将数据库评分转化为强化学习（RL）奖励，用于对智能体进行后训练。传统上，数据库操作智能体的训练依赖于人工标注或启发式规则，而 ThinkingBox 通过自动化的数据库评分机制，为智能体的每一步操作提供细粒度的奖励信号，从而支持更高效的 RL 微调。该方法的核心在于设计一个可编程的评分器，能够根据智能体生成的 SQL 查询、执行结果和数据库状态变化，动态计算奖励，避免了稀疏奖励问题。ThinkingBox 还结合了思维链（CoT）推理，让智能体在行动前进行规划，进一步提升学习效果。该工作值得关注，因为它展示了如何将领域特定的评估标准无缝集成到 RL 训练循环中，为构建可靠的数据处理智能体提供了新范式，同时降低了人工反馈的成本。对于研究者和开发者而言，这提供了一种可复用的框架，可推广到其他需要结构化验证的任务，如代码生成、API 调用等。",
+  "tags": [
+    "RL",
+    "Agent",
+    "Database",
+    "Post-Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-29T14:58:47Z",
+  "collected_at": "2026-10-29T15:00:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将数据库评分转化为密集奖励信号，解决了智能体训练中的稀疏奖励问题。",
+      "ThinkingBox 结合思维链推理与 RL 微调，提升了智能体在复杂数据库任务上的规划与执行能力。",
+      "该方法提供了一种可复用的框架，将领域特定评估标准集成到 RL 训练中，可推广至代码生成等任务。",
+      "自动化评分降低了对人工反馈的依赖，使智能体后训练更高效、可扩展。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

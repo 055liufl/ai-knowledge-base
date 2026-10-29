@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261029-055",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该文章来自 ServiceNow AI 团队，探讨了 vLLM 从 V0 到 V1 的架构演进，并聚焦于强化学习（RL）场景下的正确性问题。vLLM 作为高吞吐 LLM 推理引擎，在 RL 训练流程中常被用作 rollout 生成器；V1 版本对调度、KV 缓存管理和执行模型进行了重构。文章强调在引入各类修正性优化之前，必须先保证推理结果与训练模型语义一致，否则 RL 中的奖励信号会被系统性偏差污染。内容涉及 V0 与 V1 在批处理、采样行为、token 级输出一致性上的差异，以及如何通过对比测试定位偏差来源。该文值得关注，因为它揭示了推理引擎版本升级对 RL 训练稳定性的隐性影响，为使用 vLLM 做 RLHF/GRPO 等训练的团队提供了可操作的验证思路，避免因引擎行为变化导致训练效果退化。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-29T14:58:47Z",
+  "collected_at": "2026-10-29T15:03:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理引擎版本升级可能改变采样与批处理行为，进而影响 RL 奖励信号的正确性",
+      "在应用性能优化前，应先验证 V1 与 V0 在 token 级输出上的一致性",
+      "RL 训练流程中 rollout 引擎的语义正确性比吞吐优化更优先"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

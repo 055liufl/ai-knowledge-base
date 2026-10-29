@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20261029-074",
+  "title": "Ulysses Sequence Parallelism: Training with Million-Token Contexts",
+  "source_url": "https://huggingface.co/blog/ulysses-sp",
+  "source_platform": "rss_company_blog",
+  "summary": "Ulysses Sequence Parallelism 是一种用于训练百万级 token 上下文模型的技术，由 Hugging Face 博客介绍。随着大模型对长上下文的需求增长（如长文档理解、代码库分析），单 GPU 内存无法容纳超长序列的激活和注意力矩阵。Ulysses 通过将序列维度切分到多个 GPU 上，并结合高效的 all-to-all 通信，实现序列并行训练，从而支持百万 token 的上下文。该方法在保持计算效率的同时，显著降低了单卡内存压力，使得在现有硬件上训练超长上下文模型成为可能。该技术值得关注，因为它解决了长上下文训练中的关键瓶颈，为研究者和开发者提供了可扩展的解决方案，有望推动长上下文模型在更多实际场景中的应用。",
+  "tags": [
+    "Sequence Parallelism",
+    "Long Context",
+    "Distributed Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-29T14:58:47Z",
+  "collected_at": "2026-10-29T15:04:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Ulysses 通过序列维度切分和 all-to-all 通信实现序列并行，有效支持百万 token 训练。",
+      "该方法降低了单 GPU 内存需求，使超长上下文训练在现有硬件上可行。",
+      "序列并行是扩展长上下文模型训练的关键基础设施，有望促进长上下文应用发展。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}
