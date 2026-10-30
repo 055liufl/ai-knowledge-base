@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261030-055",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队发布在 Hugging Face 博客上的技术文章，讨论 vLLM 从 V0 到 V1 版本演进过程中，在强化学习（RL）场景下的正确性问题。vLLM 作为高吞吐 LLM 推理引擎，被广泛用于 RLHF/RLVR 等训练流程中的采样与推理环节。文章标题强调“先保证正确性，再谈修正”，暗示 V1 版本在架构或行为上的变化可能引入与 V0 不一致的结果，作者主张在引入各种补丁式修正之前，应先确保推理输出与训练目标在语义和数值上的正确对齐。内容涉及 vLLM 调度、KV 缓存、采样参数、批处理等机制对 RL 训练稳定性和可复现性的影响，对使用 vLLM 做 RL 训练的研究者和工程师具有直接参考价值。该文值得关注，因为它揭示了推理引擎版本升级在 RL 流水线中可能带来的隐蔽风险，并提供了以正确性优先的工程实践思路。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-30T14:52:54Z",
+  "collected_at": "2026-10-30T14:56:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM 从 V0 升级到 V1 时，推理行为的变化可能影响 RL 训练的正确性与可复现性，需优先验证而非直接打补丁。",
+      "在 RL 流水线中，推理引擎的调度、批处理和采样细节会直接影响训练信号质量，版本升级应做一致性回归测试。",
+      "文章倡导“正确性优先于修正”的工程原则，即先定位根因确保语义正确，再考虑兼容性修补。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

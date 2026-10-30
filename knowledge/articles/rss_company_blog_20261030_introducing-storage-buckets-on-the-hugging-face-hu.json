@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261030-073",
+  "title": "Introducing Storage Buckets on the Hugging Face Hub",
+  "source_url": "https://huggingface.co/blog/storage-buckets",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face Hub 推出了 Storage Buckets 功能，这是一种新的存储原语，旨在为 AI 工作流提供更灵活、可扩展的对象存储。与现有的模型、数据集和 Spaces 仓库不同，Storage Buckets 是通用的 S3 兼容存储桶，用户可以通过熟悉的 API（如 boto3）直接读写任意文件，无需遵循特定的仓库结构。该功能支持大文件、高并发访问，并可与 Hugging Face 的生态系统（如数据集加载、模型训练）无缝集成。Storage Buckets 的推出降低了在 Hub 上管理非结构化数据的门槛，特别适合需要存储中间训练检查点、日志、原始数据或任何非标准格式文件的场景。对于开发者而言，这意味着可以在同一个平台上完成从数据存储到模型部署的全流程，减少了对外部存储服务的依赖。该功能目前处于公开测试阶段，提供了 Python 客户端和 REST API，并计划未来增加更多企业级特性。",
+  "tags": [
+    "Hugging Face",
+    "存储",
+    "对象存储",
+    "AI基础设施"
+  ],
+  "author": null,
+  "published_at": "2026-10-30T14:52:54Z",
+  "collected_at": "2026-10-30T14:57:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Storage Buckets 是 S3 兼容的通用存储桶，支持任意文件类型，突破了传统仓库的结构限制。",
+      "与 Hugging Face 生态无缝集成，简化了 AI 工作流中的数据管理，减少对外部存储的依赖。",
+      "提供 Python 客户端和 REST API，方便开发者使用熟悉的工具进行读写操作。",
+      "目前处于公开测试阶段，未来将增加企业级特性，值得关注其演进。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
