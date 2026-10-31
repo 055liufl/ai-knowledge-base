@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-138",
+  "title": "Distributional Reward Calibration and Budget-Neutral Credit Assignment for Multimodal RLVR",
+  "source_url": "https://arxiv.org/abs/2610.40250",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文重新审视了Group Relative Policy Optimization (GRPO)中的优势估计问题，提出任何token级优势都可分解为两个阶段：样本级基线化（将标量验证器奖励转换为可比较的序列级信号）和token级信用分配（将信号分配到轨迹上）。现有估计器通常只处理其中一个阶段。论文针对多模态RLVR（可验证奖励强化学习）场景，提出分布奖励校准与预算中性信用分配方法，旨在更准确地估计优势并提升训练稳定性与效果。该工作值得关注，因为它揭示了GRPO优势估计的结构性缺陷，并提供了统一的两阶段框架，对多模态强化学习训练具有理论指导意义。",
+  "tags": [
+    "GRPO",
+    "RLVR",
+    "Multimodal",
+    "Credit Assignment"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:28:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GRPO中的token级优势可分解为样本级基线化和token级信用分配两个阶段，现有方法往往只关注其一。",
+      "多模态RLVR场景下，标量验证器奖励需要经过分布校准才能作为有效的序列级基线。",
+      "预算中性信用分配能够在不同轨迹长度间公平分配奖励信号，避免长度偏差。",
+      "统一的两阶段框架为改进GRPO优势估计提供了理论依据和设计方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

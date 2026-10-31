@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-024",
+  "title": "PromptSense: Sentiment-Aware Mental Health Chatbot with Dynamic Prompting",
+  "source_url": "https://arxiv.org/abs/2610.38044",
+  "source_platform": "rss_ai_research",
+  "summary": "PromptSense 是一篇来自 arXiv 的预印本论文，提出了一种面向心理健康场景的 LLM 聊天机器人框架。该框架的核心创新在于：在模型推理之前，先对用户输入进行情感分析与抑郁程度评估，并结合基于规则的过滤机制，动态构建提示词（prompt），从而提升回复的共情性、上下文感知能力与安全性。论文指出，现有基于大语言模型的心理健康聊天机器人普遍存在共情不足、缺乏上下文理解以及安全机制薄弱等问题，可能导致无效甚至有害的交互。PromptSense 通过将情感与风险洞察前置到提示工程环节，试图在推理阶段之前就完成风险识别与响应策略调整。该工作值得关注的原因在于：心理健康是 LLM 应用中风险最高、伦理要求最严的领域之一，而该方案提供了一种轻量级、可解释的工程路径——不依赖模型微调，而是通过动态提示与规则过滤来增强安全性与共情能力，对实际产品落地具有参考价值。不过，摘要内容较为简短，实验细节、数据集与评估指标尚不明确，需阅读全文进一步验证其有效性。",
+  "tags": [
+    "LLM",
+    "Prompt Engineering",
+    "Mental Health",
+    "Sentiment Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:23:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在模型推理前引入情感与抑郁分析，并据此动态构建提示词，可在不微调模型的情况下提升共情性与上下文感知能力",
+      "基于规则的过滤机制前置到推理之前，为高风险心理健康场景提供了一道可解释的安全防线",
+      "该方案代表了 LLM 应用层的一种务实思路：通过提示工程与外部分析模块组合来弥补基础模型在敏感领域的不足"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

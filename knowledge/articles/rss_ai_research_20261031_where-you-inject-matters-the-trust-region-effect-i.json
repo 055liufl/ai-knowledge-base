@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-071",
+  "title": "Where You Inject Matters: The Trust Region Effect in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.38867",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM智能体在长周期任务中面临的间接提示注入攻击，重点探讨注入位置对攻击效果的影响。现有风险评估多关注注入内容，而本文提出“信任区域效应”：智能体对上下文中不同位置的信任程度存在差异，某些位置（如系统提示附近或任务初始阶段）的注入可能获得更高信任，从而显著放大攻击风险。这一发现对智能体安全设计具有重要启示，提示防御策略需同时考虑内容与位置两个维度。论文属于安全与对齐方向的研究，适合研究者和开发者关注，尤其对构建外部环境交互型智能体的团队有直接参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Prompt Injection",
+    "AI Safety",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注入位置对攻击成功率有显著影响，存在‘信任区域效应’，即智能体对上下文不同位置的信任程度不同。",
+      "现有风险评估仅关注注入内容，忽略了位置维度，导致安全评估不完整。",
+      "防御策略需同时考虑内容过滤与位置感知的信任管理。",
+      "长周期任务中，早期或关键位置的注入可能被智能体赋予更高权重，放大攻击后果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

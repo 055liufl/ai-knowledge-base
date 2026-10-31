@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-094",
+  "title": "Before the Next Rollout: Diagnosing Skill Utility Shifts from Policy Updates",
+  "source_url": "https://arxiv.org/abs/2610.39358",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注技能演化（skill-evolution）方法中的一个关键隐患：当智能体的策略（policy）发生更新后，原本未改动的技能其行为效果与边际效用可能发生漂移，导致基于旧轨迹的归因分析失效，无法准确反映技能在新策略下的真实贡献。此外，轨迹失败往往由多因素共同导致，单一技能的贡献难以隔离。作者提出在下一轮 rollout 之前诊断技能效用偏移的问题框架，旨在提升技能归因的鲁棒性与智能体技能优化的可靠性。该工作对基于 LLM 的智能体技能库维护、持续学习与策略迭代具有直接意义，值得关注。",
+  "tags": [
+    "Agent",
+    "Skill Evolution",
+    "Policy Update",
+    "Attribution"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:26:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "策略更新会使未改动技能的行为效果与边际效用发生漂移，旧轨迹归因不再可靠",
+      "轨迹失败的多因素性使单一技能贡献难以隔离，需在 rollout 前进行效用诊断",
+      "技能演化方法应引入策略更新后的归因校准机制，避免技能库维护失真"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

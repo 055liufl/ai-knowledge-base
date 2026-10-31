@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-001",
+  "title": "LRMoE: Demand-Side Load Re-Calibration for Efficient MoE Training on Memory-Constrained Nodes",
+  "source_url": "https://arxiv.org/abs/2610.37720",
+  "source_platform": "rss_ai_research",
+  "summary": "LRMoE 是一篇针对内存受限节点上稀疏混合专家（MoE）模型训练效率的论文。MoE 模型虽能扩展容量，但路由不均导致计算和通信瓶颈。现有专家放置与复制方法通过增加专家副本缓解负载不均，却与 token 相关缓冲区争夺有限的 GPU 内存。LRMoE 提出一种内存感知的训练系统，联合重新校准反向传播需求并平衡保留的工作负载，从而在不增加额外内存开销的前提下提升训练效率。该工作值得关注，因为它直面 MoE 训练中负载均衡与内存约束的核心矛盾，为在有限显存节点上高效训练大规模 MoE 模型提供了新思路，对分布式训练系统优化具有实际意义。",
+  "tags": [
+    "MoE",
+    "Training",
+    "Memory Optimization",
+    "Load Balancing"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:22:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 训练中路由不均导致计算与通信瓶颈，现有专家复制方法会与 token 缓冲区争夺 GPU 内存。",
+      "LRMoE 通过联合重新校准反向传播需求与平衡保留工作负载，实现内存感知的 MoE 训练。",
+      "该方法在内存受限节点上避免了额外专家副本的内存开销，提升了训练效率。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

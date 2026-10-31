@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-003",
+  "title": "ThinkJev: One Thought, Every Budget for Calibrated Typed Decisions",
+  "source_url": "https://arxiv.org/abs/2610.37732",
+  "source_platform": "rss_ai_research",
+  "summary": "ThinkJev 提出了一种面向“类型化决策”（typed decision）的语言模型推理框架，旨在解决单次前向传播读取概率虽快但在多步推理任务（如算术、计数、日期比较）上易出错，而完整思维链虽准确却耗时的问题。其核心思想是“一次思考，适配所有预算”：模型先进行一次思考，再根据决策难度动态分配计算预算，仅在真正需要多步推理的样本上投入更多计算，从而在准确率与延迟之间取得校准后的平衡。该工作值得关注，因为它直接回应了 LLM 在需要可执行概率输出的封闭选项决策场景中的效率-精度权衡问题，为构建低延迟、高可靠性的决策型应用（如工具调用、分类路由、结构化输出）提供了新的思路。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "类型化决策",
+    "计算预算"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:22:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单次前向传播读取概率速度快，但在多步推理决策上准确率不足；完整思维链可修复错误但延迟高。",
+      "ThinkJev 的核心是按需分配思考预算，仅在困难决策上增加计算，实现精度与延迟的校准平衡。",
+      "该方法面向封闭选项的类型化决策场景，概率输出可直接被代码使用，适合工具调用与结构化输出。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

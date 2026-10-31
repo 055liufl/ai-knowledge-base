@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-037",
+  "title": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training",
+  "source_url": "https://arxiv.org/abs/2610.38220",
+  "source_platform": "rss_ai_research",
+  "summary": "Rubricon 是一套面向 LLM 评估与训练的自动化评分标准（rubric）生成与优化流水线，旨在解决人工从零编写 rubric 成本高昂、难以规模化的问题。其核心思路是：无需人工偏好标签、无需 rubric 标注、也无需训练生成模型，仅借助任意现成 LLM 即可完成 rubric 生产。流程上，Rubricon 先让 LLM 采样多个候选 rubric，再从中挑选最具区分度（discriminative）的版本，随后补充遗漏的评分维度或响应缺陷标准，并进行剪枝精简，最终得到可用于奖励分配的高质量 rubric。该方法特别适用于没有可验证答案的开放式任务，这类场景传统上依赖人工评分或昂贵的人类偏好数据。其价值在于把 rubric 构建从人工密集型工作转化为可自动化的流水线，降低 LLM 评估与 RL 训练中奖励信号获取的门槛，对评测基准构建、奖励建模和模型对齐训练都有直接实用意义。",
+  "tags": [
+    "LLM Evaluation",
+    "Reward Modeling",
+    "Rubric Generation",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无需人类偏好标签或 rubric 标注，仅用现成 LLM 即可自动生成评分标准，显著降低评估数据构建成本",
+      "通过多候选采样加区分度筛选，再补充遗漏标准并剪枝，形成可迭代优化的 rubric 精炼闭环",
+      "面向无可验证答案的开放式任务提供奖励信号，可直接服务于 LLM 评估与强化学习训练"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

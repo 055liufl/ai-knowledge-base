@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-051",
+  "title": "Predict the Reward, Not the World: World Reward Models for ML Agents",
+  "source_url": "https://arxiv.org/abs/2610.38439",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出“世界奖励模型”（World Reward Models）用于搜索型机器学习（ML）智能体。传统搜索型 ML 智能体通过编写候选程序、执行并保留最优结果来改进方案，但单次执行可能耗时数小时，且多数运行产生的程序最终被丢弃。近期方法让大语言模型充当世界模型，预测每个程序的执行表现以节省运行时间，但错误预测会向搜索注入虚假信号。本文主张不预测世界（即程序执行结果），而是直接预测奖励，从而为搜索提供更可靠的反馈。该工作值得关注，因为它针对 ML 智能体搜索效率与反馈可靠性之间的核心矛盾提出了新思路，有望降低对昂贵执行的依赖，并减少 LLM 世界模型预测误差带来的负面影响，对自动化机器学习、程序合成和智能体搜索等方向具有潜在影响。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reward Model",
+    "Program Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "搜索型 ML 智能体的瓶颈在于执行反馈昂贵且大量候选程序被丢弃，LLM 世界模型虽可节省执行但预测错误会误导搜索。",
+      "直接预测奖励而非预测程序执行结果，可避免世界模型对中间状态的建模误差，为搜索提供更可靠的反馈信号。",
+      "世界奖励模型有望减少对实际执行的依赖，提升 ML 智能体搜索的效率和样本利用率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

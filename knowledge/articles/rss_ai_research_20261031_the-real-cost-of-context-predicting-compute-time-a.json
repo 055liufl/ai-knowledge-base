@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-112",
+  "title": "The Real Cost of Context: Predicting Compute Time and Energy Consumption in LLM Prefill and Decode Phases",
+  "source_url": "https://arxiv.org/abs/2610.39621",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM 在智能体架构中 token 消耗激增带来的能耗问题，提出了一种预测预填充（prefill）和解码（decode）阶段计算时间与能耗的方法。现有研究多关注生成输出 token 的能耗，而忽略了智能体工作流中大量输入上下文的影响。作者系统分析了上下文长度对计算开销的作用，旨在为专有 API 模型提供能耗估算框架。该工作值得关注，因为它填补了输入上下文能耗评估的空白，有助于优化智能体系统的能效设计，并为 LLM 部署的可持续性提供量化依据。",
+  "tags": [
+    "LLM",
+    "Energy Efficiency",
+    "Agent",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:27:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体工作流中大量输入上下文显著增加预填充阶段能耗，现有方法常忽略此部分",
+      "预填充与解码阶段的能耗特征不同，需分别建模预测",
+      "为专有 API 模型提供能耗估算框架，有助于优化智能体系统能效"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

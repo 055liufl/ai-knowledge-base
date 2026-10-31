@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-035",
+  "title": "GAAC: Lossless KV Compression for Bandwidth-Efficient LLM Inference on Personal Devices",
+  "source_url": "https://arxiv.org/abs/2610.38210",
+  "source_platform": "rss_ai_research",
+  "summary": "GAAC（Group-Adaptive Additive Codec）是一种针对个人设备上大语言模型推理的无损 KV 缓存压缩与服务系统。论文指出，尽管仅权重量化能降低模型存储和内存需求，但长上下文推理中不断增长的 KV 缓存仍是个人设备上的主要瓶颈。GAAC 利用指数冗余实现无损压缩，在不引入 KV 近似的前提下减少存储并加速注意力计算。该工作值得关注，因为它首次将无损压缩与 KV 缓存服务系统结合，有望在个人设备上实现长上下文 LLM 推理的带宽效率提升，同时保持输出质量与原始模型完全一致。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Lossless Compression",
+    "Edge Computing"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:23:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GAAC 利用指数冗余对 KV 缓存进行无损压缩，避免量化带来的精度损失。",
+      "该系统同时优化存储和注意力计算带宽，针对个人设备的长上下文推理场景。",
+      "无损特性意味着压缩后的推理结果与原始模型完全一致，适合对精度敏感的应用。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-047",
+  "title": "SCOPE: Selective Critical-Step On-Policy Self-Distillation for Agentic Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.38391",
+  "source_platform": "rss_ai_research",
+  "summary": "SCOPE 是一种面向长程 LLM Agent 的强化学习框架，针对基于结果的 RL 监督过于粗糙的问题提出解决方案。传统方法中，失败轨迹可能包含正确步骤，成功轨迹也可能包含错误步骤，且轨迹级技能会干扰教师模型在无关步骤上的偏好，产生偏离目标的蒸馏信号。SCOPE 在监督预热后，让策略模型分析轨迹并识别关键步骤，仅在这些关键步骤上进行选择性、同策略的自我蒸馏，从而提供更精细的监督信号。该方法结合了强化学习与自蒸馏的优势，有望提升 Agent 在复杂多步任务中的学习效率和鲁棒性，对 Agent 训练领域具有参考价值。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Self-Distillation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于结果的 RL 对长程 Agent 监督过于粗糙，轨迹级成功或失败不能准确反映每一步的正确性",
+      "轨迹级技能会引入偏离目标的蒸馏信号，影响无关步骤的学习",
+      "选择性关键步骤的同策略自我蒸馏可提供更精细的监督，提升学习效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

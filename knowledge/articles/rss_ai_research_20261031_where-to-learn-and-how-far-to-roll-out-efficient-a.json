@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-087",
+  "title": "Where to Learn and How Far to Roll Out: Efficient Adaptive Training for GUI Agents",
+  "source_url": "https://arxiv.org/abs/2610.39251",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多步GUI智能体训练中轨迹级GRPO方法的低效问题提出改进。传统方法从任务根节点反复完整rollout轨迹，导致两个问题：任务级奖励对中间决策的监督过于粗糙，且已掌握的prefix被重复执行才能到达困难状态。作者提出两阶段自适应训练框架，联合解决“在哪里学习”（定位需要改进的中间状态）和“rollout多远”（避免重复执行已掌握部分）的问题，从而提升训练效率。该工作对GUI智能体这一热门应用方向具有实用价值，尤其适合关注强化学习训练效率与智能体落地的研究者与开发者。",
+  "tags": [
+    "GUI Agent",
+    "GRPO",
+    "Reinforcement Learning",
+    "Adaptive Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:26:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "轨迹级GRPO在GUI智能体训练中存在重复执行已掌握prefix的冗余计算问题",
+      "任务级奖励对中间决策的监督信号过于粗糙，难以定位需改进的状态",
+      "两阶段自适应框架可同时优化学习位置选择与rollout长度，提升训练效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

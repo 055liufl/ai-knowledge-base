@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-045",
+  "title": "Encode Once, Answer Many: Internalizing Context via Parametric Flow",
+  "source_url": "https://arxiv.org/abs/2610.38356",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种新方法，旨在将输入上下文中的知识直接内化到模型参数中，从而避免每次推理时重复编码上下文，也无需针对每个任务进行昂贵的微调优化。传统上，大语言模型要么通过将知识放在输入上下文中（外部且每次调用重新编码），要么通过微调（内部化但每个任务需要一轮优化）来适应任务。本文提出的方法名为“Encode Once, Answer Many: Internalizing Context via Parametric Flow”，核心思想是通过参数流（Parametric Flow）机制，将上下文信息一次性编码并注入模型参数，使得模型在后续推理中无需再依赖原始上下文即可回答相关问题。这有望显著降低推理成本，并提升模型对特定知识的持久利用效率。该工作值得关注，因为它探索了上下文内化与参数高效适应的新路径，可能对长上下文处理、知识注入和模型部署效率产生重要影响。",
+  "tags": [
+    "LLM",
+    "参数高效微调",
+    "上下文内化",
+    "知识注入"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出参数流机制，将上下文知识一次性编码到模型参数中，避免推理时重复编码上下文。",
+      "无需针对每个任务进行微调优化，降低了任务适应的计算成本。",
+      "实现了“编码一次，多次回答”的能力，有望提升长上下文场景下的推理效率。",
+      "为上下文内化与参数高效适应提供了新思路，可能影响未来LLM的部署方式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

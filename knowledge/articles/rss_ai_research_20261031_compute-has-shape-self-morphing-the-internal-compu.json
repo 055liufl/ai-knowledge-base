@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-046",
+  "title": "Compute Has Shape: Self-Morphing the Internal Computation of Frozen LLMs",
+  "source_url": "https://arxiv.org/abs/2610.38382",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SelfMorph 方法，将大语言模型内部计算的拓扑结构（如循环深度、并行宽度等）视为推理时可变的决策变量，而非训练时固定的架构。现有测试时扩展方法通常固定循环或并行结构，或仅沿单一结构轴重配置冻结模型。SelfMorph 统一了原始前向计算与多种变形模式，使冻结的 LLM 能根据每个输入自适应地选择计算形状，从而在推理阶段实现更细粒度的计算资源分配。这一思路值得关注，因为它突破了“计算量固定”的范式，将测试时计算从“增加多少”推进到“如何组织”，为无需微调即可提升模型效率与性能提供了新方向，对推理优化和自适应计算研究具有启发意义。",
+  "tags": [
+    "LLM",
+    "Test-time Scaling",
+    "Adaptive Computation",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将计算拓扑（循环/并行结构）作为输入相关的推理时决策，而非训练时固定的架构选择",
+      "统一原始前向计算与多种变形模式，使冻结 LLM 无需微调即可自适应调整内部计算形状",
+      "把测试时扩展的焦点从“增加计算量”转向“如何组织计算”，为自适应推理提供新范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

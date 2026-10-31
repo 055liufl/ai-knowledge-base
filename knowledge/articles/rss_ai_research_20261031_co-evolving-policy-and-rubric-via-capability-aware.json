@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-058",
+  "title": "Co-Evolving Policy and Rubric via Capability Awareness for Open-Ended Generation",
+  "source_url": "https://arxiv.org/abs/2610.38566",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种面向开放式生成任务的强化学习对齐方法，核心思想是让评分标准（rubric）与策略模型协同演化，并显式引入能力感知机制。传统基于 rubric 的 RL 方法依赖静态评分标准，容易导致奖励信号饱和（标准过易）或超出策略探索范围（标准过难），从而失去区分度。作者指出，已有工作虽尝试引导采样探索或演化 rubric，但未显式考虑 rubric 难度与策略当前能力之间的匹配关系。本文通过能力感知动态调整 rubric 难度，使奖励信号始终处于策略可学习区间，从而提升开放式生成的对齐效果。该工作值得关注，因为它直击 rubric-based RL 的核心痛点——奖励信号的可判别性，为 LLM 开放式生成的对齐训练提供了更细粒度、可解释的监督范式，对研究者和开发者均有参考价值。",
+  "tags": [
+    "RLHF",
+    "LLM Alignment",
+    "Reward Modeling",
+    "Open-Ended Generation"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "静态 rubric 会导致奖励信号饱和或超出策略探索范围，丧失区分度，是 rubric-based RL 的关键瓶颈",
+      "显式建模 rubric 难度与策略能力的匹配关系，比单纯引导采样探索或演化 rubric 更有效",
+      "策略与 rubric 协同演化可形成动态课程，使奖励信号持续处于策略的可学习区间",
+      "能力感知机制为开放式生成提供了更细粒度、可解释的对齐监督信号"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

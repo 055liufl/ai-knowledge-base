@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-109",
+  "title": "From Intent to Improvement: Agentic Dataset Search for Better Model Training",
+  "source_url": "https://arxiv.org/abs/2610.39608",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向机器学习数据集搜索的智能体方法，将数据集检索从传统的文本相似度匹配升级为基于意图的约束满足与关系推理问题。在百万级数据集仓库中，用户查询往往同时包含语义训练目标（如任务类型、训练阶段）和硬性约束（如许可证、数据规模），而现有文本检索系统仅依据数据集卡片相似度排序，无法强制执行硬约束，也难以通过关系链发现描述稀疏但高度相关的数据集。作者将数据集搜索建模为Web搜索问题，并引入智能体（Agent）框架，通过意图解析、约束验证和关系追踪来提升检索质量，最终服务于更好的模型训练数据选择。该工作值得关注，因为它直击当前数据集发现中的核心痛点——语义相关不等于训练可用，并展示了智能体在复杂信息检索任务中的潜力，对数据-centric AI 的工程实践具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Dataset Search",
+    "Information Retrieval",
+    "Model Training"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:27:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据集搜索本质上是带约束的Web搜索问题，仅靠文本相似度无法满足任务、许可证、训练阶段等硬性约束。",
+      "智能体框架可通过意图解析、约束验证和关系追踪，发现描述稀疏但训练相关的数据集。",
+      "将数据集检索与模型训练目标对齐，有望提升训练数据选择的效率与质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

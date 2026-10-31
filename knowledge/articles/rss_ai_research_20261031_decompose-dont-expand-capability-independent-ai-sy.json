@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-029",
+  "title": "Decompose, Don't Expand: Capability-Independent AI Systems by Construction",
+  "source_url": "https://arxiv.org/abs/2610.38144",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了AI系统设计中的一个核心决策：当模型难以完成任务时，是选择扩展模型（增大规模、优化提示或微调），还是选择分解任务（将可确定性解决的部分交给宿主系统，仅保留不可约的模糊部分给模型）。作者提出三个核心主张，首先指出许多通常整体委托给模型的任务实际上是确定性任务，仅包含少量生成性成分。这一视角挑战了当前“更大模型即更好”的主流范式，倡导通过任务分解构建能力无关的AI系统，即系统性能不依赖于模型能力的提升。该研究对AI系统架构设计具有重要指导意义，尤其适用于资源受限或需要高可靠性的场景，为构建更高效、可解释且鲁棒的AI系统提供了新思路。",
+  "tags": [
+    "AI系统设计",
+    "任务分解",
+    "模型能力",
+    "系统架构"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:23:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "许多被整体委托给模型的任务实际上包含大量确定性成分，可通过分解交由宿主系统处理",
+      "任务分解策略能构建能力无关的AI系统，降低对模型规模扩展的依赖",
+      "仅将不可约的模糊部分留给模型，可提升系统效率与可靠性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

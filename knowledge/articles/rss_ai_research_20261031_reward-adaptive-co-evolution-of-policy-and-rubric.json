@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-129",
+  "title": "Reward-Adaptive Co-Evolution of Policy and Rubric",
+  "source_url": "https://arxiv.org/abs/2610.40096",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RACE（Reward-Adaptive Co-Evolution），针对开放式强化学习中基于评分标准（rubric）的奖励机制。传统整体标量奖励难以刻画多维度的回答质量，而基于 rubric 的奖励能提供细粒度、可解释的监督信号。然而静态 rubric 会随策略分布演化而丧失区分能力，现有策略-rubric 协同演化方法又依赖全局预设的更新日程，忽略了不同奖励信息量的异质性。RACE 通过奖励自适应的协同演化机制，动态调整策略与 rubric 的更新节奏，使监督信号持续保持判别力。该工作值得关注，因为它直击 RLHF/RLVR 中奖励建模的核心痛点——奖励与策略分布失配，为开放式生成任务的强化学习提供了更稳健、自适应的监督框架，对 LLM 对齐与后训练研究具有参考价值。",
+  "tags": [
+    "RLHF",
+    "Reward Modeling",
+    "LLM Alignment",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:28:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于 rubric 的细粒度奖励优于整体标量奖励，能更好捕捉开放式回答的多维质量",
+      "静态 rubric 会随策略演化丧失判别力，需要与策略协同演化",
+      "现有协同演化方法依赖全局统一更新日程，忽视奖励信息量的异质性",
+      "RACE 通过奖励自适应机制动态调节策略与 rubric 的演化节奏"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

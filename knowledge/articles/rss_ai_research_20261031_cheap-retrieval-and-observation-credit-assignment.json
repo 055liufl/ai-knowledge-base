@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-126",
+  "title": "Cheap Retrieval and Observation Credit Assignment from One Quantity: The Value of Information",
+  "source_url": "https://arxiv.org/abs/2610.40030",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出用“信息价值”（value of information）这一统一量来解决强化学习记忆机制中的两个核心问题：一是注意力机制需要对整个记忆库打分以找到相关项，在机器人等延迟和能耗受限场景下代价高昂；二是当检索到的记忆带来收益时，获取该记忆的信用分配需要跨越整个序列，难以有效回溯。作者主张这两个问题都由信息价值这一量所支配，并提出利用学习到的世界模型从存档的轨迹（archived rollouts）中估计该信息价值，从而实现廉价检索与观测信用分配。该工作值得关注，因为它用单一理论量统一了两个看似独立的记忆难题，为资源受限的强化学习智能体提供了更高效的记忆检索与信用分配框架，对机器人学习、长序列决策和记忆增强型智能体研究具有潜在影响。",
+  "tags": [
+    "Reinforcement Learning",
+    "Memory",
+    "Credit Assignment",
+    "World Model"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:28:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "信息价值可作为统一量，同时支配记忆检索的注意力成本与记忆获取的信用分配问题",
+      "利用学习到的世界模型从存档轨迹中估计信息价值，避免对整个记忆库进行昂贵打分",
+      "该方法面向延迟与能耗受限的机器人场景，强调廉价检索的实际价值",
+      "将信用分配跨越整个序列的难题转化为对信息价值的估计问题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

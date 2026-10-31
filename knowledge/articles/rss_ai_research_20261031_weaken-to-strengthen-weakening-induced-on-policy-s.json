@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-065",
+  "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2610.38681",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 WISD（Weakening-Induced On-Policy Self-Distillation）的新方法，用于提升大型推理模型的推理能力，而无需依赖外部教师模型或特权信息。传统自蒸馏方法通常需要构造一个更强的自教师模型，这往往依赖额外标注或特权信息，限制了在仅有未标注提示场景下的应用。WISD 反其道而行之：通过人为削弱原模型构造一个较弱的对应模型，并利用原模型与弱化模型之间的对比信号进行在线策略自蒸馏。该方法的核心思想是“以弱促强”，即通过对比弱化版本的行为差异，引导原模型强化正确的推理路径、抑制错误模式。这项工作值得关注，因为它为无监督或弱监督条件下的推理模型自我改进提供了新思路，降低了对昂贵外部教师和标注数据的依赖，有望推动推理模型在开放场景下的持续自我进化。",
+  "tags": [
+    "Self-Distillation",
+    "Reasoning",
+    "LLM",
+    "On-Policy Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出“以弱促强”的自蒸馏范式：通过构造弱化模型而非强化教师来产生对比学习信号，规避了对特权信息的依赖。",
+      "WISD 支持仅使用未标注提示进行在线策略自蒸馏，扩展了自蒸馏在开放无监督场景下的适用性。",
+      "利用原模型与弱化模型之间的行为对比，可引导模型强化正确推理路径并抑制错误模式，实现自我改进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

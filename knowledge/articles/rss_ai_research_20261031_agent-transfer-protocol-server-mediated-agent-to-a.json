@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-049",
+  "title": "Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web",
+  "source_url": "https://arxiv.org/abs/2610.38398",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Agent Transfer Protocol（ATP）的服务器中介式 Agent 间通信架构，旨在支撑「Agentic Web」中跨组织、跨任务、跨网络连接的持续协作。现有 Agent 通信方案多依赖点对点直连或特定运行时环境，难以应对实例离线、延迟读取、来源验证等现实问题。ATP 的核心思路是将通信职责从 Agent 实例中剥离，交由稳定的服务器端通信入口统一承担：消息先由服务器接收并暂存，Agent 实例上线后再拉取，从而保证离线可达性；同时服务器负责对消息来源进行验证与签名，使延迟读取后仍可追溯可信来源。该架构将「稳定入口」「离线消息暂存」「来源验证」三项职责解耦并集中管理，使跨域通信不再依赖特定协议规范或运行时绑定。对于构建多 Agent 协作系统、企业级 Agent 互操作平台以及开放 Agent 网络的开发者而言，该文提供了值得参考的架构分层思路，但其价值仍需在真实部署与标准化进程中进一步验证。",
+  "tags": [
+    "Agent",
+    "Agentic Web",
+    "通信协议",
+    "多Agent系统"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将通信入口、离线消息暂存与来源验证三项职责从 Agent 实例剥离到服务器中介层，是解决跨域 Agent 协作中离线可达性与延迟读取验证问题的关键设计。",
+      "Agent 间协作关系往往跨越多个任务与执行实例，因此通信协议需要以「稳定入口」而非「实例地址」为中心进行组织。",
+      "服务器中介模式降低了对特定协议规范与运行时环境的依赖，有利于跨组织 Agent 互操作，但也引入了中心化信任与可用性权衡。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

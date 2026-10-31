@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261031-074",
+  "title": "TreasuryQA Bench: Can AI Agents Work an Archive of Scanned Financial Records?",
+  "source_url": "https://arxiv.org/abs/2610.38924",
+  "source_platform": "rss_ai_research",
+  "summary": "TreasuryQA Bench 是一个面向 AI Agent 的基准测试，旨在评估智能体在真实企业财务档案场景中的工作能力。该基准模拟了组织将数十年财务记录以扫描版 PDF 形式存储在共享驱动器上的生产环境，并允许 AI Agent 通过 Model Context Protocol (MCP) 服务器访问这些驱动器。现有基准测试存在明显简化：有的直接把相关文档交给 Agent，使其无需搜索；有的则提供预提取文本，使 Agent 无需读取扫描图像。TreasuryQA Bench 填补了这一空白，要求 Agent 同时具备文件搜索、扫描图像 OCR 理解、跨文档推理和财务问答能力。该基准值得关注，因为它首次将 MCP 工具调用、非结构化扫描文档检索与真实企业财务工作流结合，更贴近 Agent 落地场景，对评估和推动企业级 AI Agent 的实用性具有重要意义。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "MCP",
+    "OCR",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 基准测试过度简化任务，忽略了真实场景中搜索与扫描图像读取的复合挑战。",
+      "TreasuryQA Bench 首次将 MCP 服务器访问、扫描 PDF 档案检索和财务问答整合为端到端评估。",
+      "该基准强调 Agent 需要同时具备工具调用、OCR 理解和跨文档推理能力，更贴近企业生产环境。",
+      "面向扫描财务档案的评估有助于推动 AI Agent 在合规、审计和财务分析等高风险领域的落地。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

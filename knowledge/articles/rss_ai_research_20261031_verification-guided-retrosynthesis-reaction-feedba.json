@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-039",
+  "title": "Verification-Guided Retrosynthesis: Reaction Feedback and Evidence Timing",
+  "source_url": "https://arxiv.org/abs/2610.38245",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Verification-Guided Reflow（VGR）方法，用于逆合成规划（retrosynthesis planning）任务。逆合成规划旨在从可购买的起始原料出发，为目标分子寻找合成路线。现有方法通常先基于预测反应进行搜索，再在搜索结束后评估路线质量，但搜索过程中若引入不可行反应，会导致整条路线失效，且事后评估无法纠正搜索阶段的错误。VGR 的核心创新在于将反应验证（reaction verification）作为搜索过程中的一种决策动作，而非事后过滤步骤，从而在搜索过程中实时利用验证反馈来引导路线构建。论文还探讨了反应反馈与证据时机（evidence timing）对规划质量的影响。该工作值得关注，因为它将验证从被动的事后评估转变为主动的搜索引导机制，有望提升逆合成路线的可行性与可靠性，对 AI 辅助化学合成、药物发现等领域的自动化规划具有实际意义。",
+  "tags": [
+    "Retrosynthesis",
+    "AI4Science",
+    "Search",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将反应验证作为搜索过程中的决策动作，而非仅在搜索结束后评估路线质量，可在搜索阶段及时纠正错误。",
+      "事后评估无法修正搜索过程中已引入的不可行反应，验证时机（evidence timing）对最终路线可行性至关重要。",
+      "该方法面向逆合成规划，可提升从可购买原料到目标分子的合成路线可行性，对 AI 辅助化学合成有实际价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

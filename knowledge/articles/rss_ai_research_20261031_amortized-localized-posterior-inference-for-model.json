@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-002",
+  "title": "Amortized Localized Posterior Inference for Model Calibration with Application to an Ocean Turbulence Closure",
+  "source_url": "https://arxiv.org/abs/2610.37731",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种用于模型校准的摊销局部后验推断方法，并将其应用于海洋湍流闭合问题。传统校准中，单一参数往往无法在整个上下文域内重现物理响应，且观测与上下文的不确定性会影响校准结果。作者通过根据观测与目标上下文的邻近度对观测似然进行加权，构建了一族局部后验分布，其中高斯局部化权重通过协方差纳入上下文不确定性。该方法旨在实现摊销推断，即学习一个能够快速生成任意目标上下文下局部后验的模型，从而避免对每个上下文重复进行昂贵的贝叶斯推断。这项工作值得关注，因为它将局部化校准与摊销变分推断相结合，为处理模型差异和上下文相关不确定性提供了可扩展的框架，对海洋建模等科学计算领域具有实际应用价值。",
+  "tags": [
+    "Bayesian Inference",
+    "Model Calibration",
+    "Amortized Inference",
+    "Uncertainty Quantification"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:22:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过局部化似然加权构建上下文相关的后验族，解决了单一参数无法跨上下文域校准的问题。",
+      "高斯局部化权重显式纳入上下文不确定性，提升了校准的鲁棒性。",
+      "摊销推断策略避免了针对每个目标上下文重复进行贝叶斯推断的计算开销。",
+      "该方法在海洋湍流闭合问题上得到验证，展示了在科学建模中的实用潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

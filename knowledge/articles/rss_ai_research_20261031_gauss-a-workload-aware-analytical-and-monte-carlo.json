@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-021",
+  "title": "GAUSS: A Workload-Aware Analytical and Monte-Carlo Simulator for LLM Inference Serving",
+  "source_url": "https://arxiv.org/abs/2610.37989",
+  "source_platform": "rss_ai_research",
+  "summary": "GAUSS 是一个面向 LLM 推理服务的工作负载感知分析与蒙特卡洛模拟器，旨在解决现有吞吐量指标无法回答实际运维问题的痛点。论文指出，生成式推理服务将预填充与解码两个阶段耦合在一起，二者服务特性差异显著；连续批处理会重塑有效服务过程；用户可见的尾延迟可能在吞吐量尚可时已严重劣化。GAUSS 通过工作负载感知的分析模型与蒙特卡洛模拟，帮助运维者针对延迟 SLO 进行容量规划、监控与计费评估。该工作值得关注，因为它把 LLM 服务从单一吞吐基准推进到面向 SLO 的概率化性能建模，对推理基础设施的容量决策具有直接实用价值。",
+  "tags": [
+    "LLM Inference",
+    "Serving",
+    "Performance Modeling",
+    "Monte-Carlo Simulation"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:23:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一吞吐量指标不足以刻画 LLM 推理服务的真实表现，运维需要面向延迟 SLO 的概率化分析",
+      "预填充与解码两阶段服务特性差异大，连续批处理会显著改变有效服务过程，建模时必须显式考虑",
+      "尾延迟可能在平均吞吐尚可时提前劣化，蒙特卡洛模拟适合评估用户可见的尾部风险",
+      "工作负载感知的模拟器可用于容量规划、监控与计费决策，弥补解析模型与实测之间的空白"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

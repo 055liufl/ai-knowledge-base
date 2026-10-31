@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-061",
+  "title": "Think Before You Act: Decision Gate for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.38620",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 JevAct，一个面向 LLM Agent 的运行时验证框架，旨在解决 Agent 通过外部工具执行高风险操作时缺乏独立校验的问题。JevAct 在执行前拦截选定动作，将领域策略编译为可执行的状态检查与结构化问题，由独立评估器判断策略合规性与任务完成度，并支持反馈驱动的纠正。其核心价值在于为 Agent 增加“先思考再行动”的决策门控，降低误操作风险，提升可靠性与安全性，对构建生产级 Agent 系统具有直接参考意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Runtime Verification",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的动作执行前缺乏独立验证，是可靠性与安全性的关键缺口",
+      "将领域策略编译为可执行状态检查与结构化问题，可实现运行时策略合规校验",
+      "反馈驱动的纠正机制让 Agent 在拦截后能够修正行为，而非简单阻断",
+      "决策门控（Decision Gate）为高风险 Agent 操作提供了可落地的安全层"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

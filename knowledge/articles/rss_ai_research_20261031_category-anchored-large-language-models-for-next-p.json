@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-107",
+  "title": "Category-Anchored Large Language Models for Next POI Recommendation",
+  "source_url": "https://arxiv.org/abs/2610.39518",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种类别锚定的LLM方法用于下一个POI推荐。传统方法将用户轨迹文本化后直接让LLM生成POI标识符，但由于POI具有稀疏性、局部性和长尾分布，直接生成不可靠。作者提出先用LLM预测POI类别（如餐饮、购物），再在类别约束下检索具体POI，从而将开放式的生成问题转化为受约束的检索问题。该方法利用LLM的语义推理能力处理轨迹上下文，同时规避了直接生成稀疏POI标识符的缺陷。这项工作值得关注，因为它揭示了LLM在空间推荐任务中的一个关键瓶颈——词汇表与实体空间不匹配，并提供了一种实用的解耦思路：让LLM做它擅长的语义分类，让检索系统做它擅长的实体匹配。该思路可推广到其他需要生成稀疏实体的推荐场景。",
+  "tags": [
+    "LLM",
+    "POI推荐",
+    "推荐系统",
+    "检索增强"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:27:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接让LLM生成POI标识符不可靠，根源在于POI实体的稀疏性、局部性和长尾分布与LLM词汇空间不匹配",
+      "类别锚定策略将开放生成问题转化为类别预测加约束检索的两阶段问题，扬长避短",
+      "该解耦思路可迁移到其他需要生成稀疏实体的推荐或检索任务中"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

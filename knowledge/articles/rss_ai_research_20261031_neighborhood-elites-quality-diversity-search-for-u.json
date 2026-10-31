@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261031-139",
+  "title": "Neighborhood Elites: Quality-Diversity Search for Uncertainty Quantification in Question Answering",
+  "source_url": "https://arxiv.org/abs/2610.40278",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Neighborhood Elites，一种基于质量-多样性（Quality-Diversity）搜索的不确定性量化方法，用于问答任务中的大语言模型（LLM）错误检测。传统扰动式 UQ 通过自由改写生成输入变体集合，但该集合通常构建得较为通用，缺乏针对性。Neighborhood Elites 利用 QD 搜索在输入改写空间中同时优化两个目标：保持语义一致性（质量）和最大化改写多样性（多样性），从而生成一组高质量的“精英”改写样本。通过在问答任务上探测模型对这些精英样本的预测一致性，可以更可靠地估计不确定性，区分正确答案与错误答案。该方法值得关注，因为它将进化计算中的 QD 思想引入 LLM 不确定性量化，有望提升下游任务中错误传播的检测能力，并为 UQ 提供更系统化的扰动设计范式。",
+  "tags": [
+    "Uncertainty Quantification",
+    "LLM",
+    "Question Answering",
+    "Quality-Diversity",
+    "Error Detection"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:28:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统扰动式 UQ 的改写集合构建过于通用，缺乏对语义一致性和多样性的联合优化，限制了不确定性估计的可靠性。",
+      "将质量-多样性搜索引入输入改写生成，可同时保证改写样本的语义保真度与覆盖多样性，从而更有效地探测模型预测的稳定性。",
+      "在问答任务中，基于精英改写集合的预测一致性可作为区分正确答案与错误答案的更强信号，有助于抑制错误向下游传播。",
+      "该方法为 LLM 不确定性量化提供了一种系统化的扰动设计思路，连接了进化计算与模型可靠性评估两个领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

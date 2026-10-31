@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-059",
+  "title": "A-RSI: Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement",
+  "source_url": "https://arxiv.org/abs/2610.38568",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 A-RSI（Adaptive Task Refresh for Zero-Data Multimodal Self-Improvement），聚焦多模态大模型在无外部数据条件下的递归自我改进问题。作者指出，现有自我改进方法大多关注“生成什么样的经验”，却忽视了“何时引入新经验”这一关键决策；同时，许多方法依赖自一致性或多数投票构造训练目标，使监督信号受制于模型自身不确定的预测，容易陷入自我强化偏差。A-RSI 的核心思路是自适应地判断当前训练经验是否已失效，并在恰当时机刷新任务，从而在零数据设定下持续获得有效学习信号。该工作值得关注之处在于：它将“经验时效性判断”提升为自我改进系统的核心能力，为无标注、无外部数据场景下的多模态模型持续进化提供了新范式，对研究递归自我改进、自监督训练与多模态学习的研究者有较高参考价值。",
+  "tags": [
+    "Self-Improvement",
+    "Multimodal",
+    "Zero-Data",
+    "Recursive Learning"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "递归自我改进不仅需要生成经验，还需要判断当前经验何时失效并及时刷新任务",
+      "依赖自一致性或多数投票构造监督信号会引入模型自身不确定性偏差",
+      "零数据多模态自我改进的关键在于自适应任务刷新机制而非单纯增加训练量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

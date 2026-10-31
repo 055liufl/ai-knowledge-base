@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-054",
+  "title": "Value Probes: Learned Value Functions for Beam-Search Red Teaming",
+  "source_url": "https://arxiv.org/abs/2610.38526",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Value Probes 方法，将语言模型自动红队审计形式化为马尔可夫决策过程（MDP），其中状态为对话历史、动作为候选回复、奖励为 LLM 评判分数。传统红队审计隐式地在对话路径树上搜索，每轮由审计模型决定继续哪条对话。作者指出这一过程可被显式建模，并学习价值函数来指导束搜索（beam search），从而更高效地探索高风险对话路径。该方法的意义在于：将强化学习中的价值估计引入安全审计，有望提升红队测试的覆盖率和发现有害行为的效率，为模型安全评估提供更系统化的搜索策略。值得关注的是它把红队从启发式试错转向可学习、可优化的决策框架，对安全对齐研究和实际部署前的风险评估都有潜在价值。",
+  "tags": [
+    "Red Teaming",
+    "LLM Safety",
+    "Beam Search",
+    "Value Function",
+    "MDP"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:24:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LLM 自动红队审计显式建模为马尔可夫决策过程，统一了对话搜索与安全评估框架",
+      "学习价值函数用于引导束搜索，可提升红队探索高风险对话路径的效率与覆盖率",
+      "用 LLM judge 作为奖励信号，使审计过程可优化、可复现，减少启发式试错"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

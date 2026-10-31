@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-028",
+  "title": "Post-Training Large Language Models with LLMON",
+  "source_url": "https://arxiv.org/abs/2610.38120",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 LLMON（LLM Object Notation）的后训练方法，旨在解决大语言模型（LLM）将所有上下文 token 统一处理、缺乏可执行指令与被动数据之间显式分离的问题。这种统一处理方式导致了提示注入漏洞、指令绑定模糊以及执行控制不可靠等安全隐患。LLMON 框架通过引入类似对象表示法的结构，将指令与数据分离，并要求基于显式标识符的执行机制，从而增强模型对指令的精确绑定与可控执行。该方法属于后训练阶段的技术改进，不改变模型架构，而是通过训练让模型学会区分指令与数据，并遵循标识符调用规则。该工作值得关注，因为它直接针对 LLM 安全与可靠性中的核心痛点——提示注入和指令混淆，提供了一种结构化的解决方案，有望提升 LLM 在复杂、不可信环境下的部署安全性。",
+  "tags": [
+    "LLM",
+    "Post-Training",
+    "Prompt Injection",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:23:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 统一处理所有上下文 token 是提示注入和指令绑定模糊的根本原因。",
+      "LLMON 通过显式分离指令与数据，并要求基于标识符的执行，增强了执行控制。",
+      "该方法属于后训练技术，不改变模型架构，具有较好的适用性。",
+      "结构化表示法有望提升 LLM 在不可信环境下的安全性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

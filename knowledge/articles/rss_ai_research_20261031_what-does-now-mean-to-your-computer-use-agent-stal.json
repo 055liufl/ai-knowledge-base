@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261031-091",
+  "title": "What Does \"Now\" Mean to Your Computer-Use Agent? Stale Screenshots, Page Loads, and Which Check to Run Before a Click",
+  "source_url": "https://arxiv.org/abs/2610.39282",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究计算机使用代理（Computer-Use Agent）在基于截图规划点击时面临的时序一致性问题。传统观点认为风险主要来自规划间隔（数秒），但作者通过测量31个公开网页上的计划点击发现，真正的风险源是页面加载过程：在完全加载的页面上，30秒内仅0.4%的计划点击会失效；而在页面加载过程中规划的点击，失效比例高达17%。这意味着代理在页面未稳定时做出的点击决策极易落在错误元素上。论文提出在点击前应运行特定的页面状态检查，以判断截图是否已过期。该工作值得关注，因为它揭示了计算机使用代理在真实Web环境中一个被低估的可靠性瓶颈，并为代理的点击前验证机制提供了量化依据，对提升GUI代理的鲁棒性和安全性具有直接指导意义。",
+  "tags": [
+    "Computer-Use Agent",
+    "GUI Agent",
+    "Web Automation",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:26:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "计算机使用代理的点击失效风险主要来自页面加载过程，而非规划间隔本身。",
+      "在完全加载的页面上，30秒内仅0.4%的计划点击失效；而在加载中页面，该比例高达17%。",
+      "代理在点击前应执行页面状态检查，以判断截图是否已过期，避免误点。",
+      "该发现为GUI代理的点击前验证机制提供了量化依据，有助于提升真实Web环境下的鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261031-070",
+  "title": "Learning to Reason from Reference Samples Alone: Reinforced Adversarial Learning for Modern LLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2610.38851",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种名为“强化对抗学习”的LLM后训练方法，旨在解决传统强化学习依赖显式可验证奖励（RLVR）的局限性。在许多实际场景中，高质量答案虽然可被识别，却难以用明确的奖励函数进行评分。现有对抗训练方法要么需要与可验证奖励共同训练的批评模型，要么依赖参考推理轨迹。本文探索仅利用参考样本（而非推理轨迹）进行对抗学习，使LLM能够在缺乏显式正确性信号的情况下学习推理能力。该方法通过训练一个判别器来区分模型生成答案与参考样本，并将判别信号作为奖励反馈给生成模型，从而实现对难以评分任务的有效后训练。这项工作值得关注，因为它扩展了LLM后训练的适用边界，减少了对人工设计奖励函数或高质量推理标注的依赖，为更广泛领域的推理能力提升提供了新思路。",
+  "tags": [
+    "LLM",
+    "强化学习",
+    "对抗训练",
+    "后训练"
+  ],
+  "author": null,
+  "published_at": "2026-10-31T14:20:27Z",
+  "collected_at": "2026-10-31T14:25:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出仅依赖参考样本（而非推理轨迹或显式奖励）的对抗学习框架，降低了对标注和奖励设计的依赖。",
+      "通过共训练判别器提供学习信号，使LLM能在难以用显式奖励评分的任务上进行推理后训练。",
+      "扩展了RLVR的适用范围，为缺乏可验证正确性信号的领域提供了可行的后训练路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
