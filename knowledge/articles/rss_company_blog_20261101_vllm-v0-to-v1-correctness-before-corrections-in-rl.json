@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261101-055",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景下的正确性问题。vLLM 是主流的高吞吐 LLM 推理引擎，其 V1 架构重写了调度、KV 缓存和请求处理逻辑，以提升性能和可维护性。然而在 RL 训练中，推理引擎需要与训练循环紧密耦合，对采样结果的确定性、数值一致性和请求生命周期管理有更高要求。文章指出，迁移过程中若只关注性能修正而忽视正确性验证，可能引入难以察觉的偏差，影响 RL 训练稳定性与最终效果。作者强调应优先建立正确性基线，再逐步进行性能优化。该内容对使用 vLLM 做 RLHF/RLVR 的工程团队具有直接参考价值，也反映了推理引擎与训练框架协同演进中的典型工程挑战。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-01T14:46:36Z",
+  "collected_at": "2026-11-01T14:51:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 场景对推理引擎的正确性和确定性要求高于普通推理服务，迁移时需优先验证数值一致性",
+      "vLLM V1 的架构重写改变了调度与 KV 缓存行为，可能影响 RL 采样结果的稳定性",
+      "应先建立正确性基线再追求性能优化，避免修正掩盖底层偏差",
+      "推理引擎与训练框架的耦合是 RL 工程化的关键风险点"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

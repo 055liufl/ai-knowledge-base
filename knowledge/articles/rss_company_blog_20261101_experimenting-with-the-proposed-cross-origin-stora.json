@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261101-040",
+  "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+  "source_url": "https://huggingface.co/blog/cross-origin-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在 Transformers.js 中实验性使用拟议的跨源存储（Cross-Origin Storage）API 的探索。Transformers.js 是一个在浏览器中运行机器学习模型的 JavaScript 库，它允许开发者直接在客户端进行推理，而无需服务器支持。然而，浏览器环境中的模型文件通常较大，每次加载都需要重新下载，导致性能瓶颈。跨源存储 API 旨在提供一种标准化的方式，让网站能够请求持久化存储权限，将大型资源（如模型权重）缓存到本地，并在不同源之间安全共享。本文详细描述了该 API 的动机、设计思路以及在 Transformers.js 中的集成实验，包括如何请求存储权限、处理缓存逻辑以及性能对比。实验结果表明，使用该 API 可以显著减少模型加载时间，提升用户体验，同时保持安全性和隐私。这项工作对于推动 Web 端机器学习应用的发展具有重要意义，因为它解决了模型分发的关键障碍，使得复杂模型在浏览器中的部署更加可行。文章还讨论了该 API 的潜在标准化路径和未来改进方向，为开发者提供了实践参考。",
+  "tags": [
+    "Web ML",
+    "Transformers.js",
+    "Storage API",
+    "Browser Caching"
+  ],
+  "author": null,
+  "published_at": "2026-11-01T14:46:36Z",
+  "collected_at": "2026-11-01T14:50:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨源存储 API 能显著减少浏览器中机器学习模型的加载时间，通过持久化缓存避免重复下载。",
+      "Transformers.js 集成该 API 的实验展示了在 Web 端高效运行大型模型的可行性，提升了用户体验。",
+      "该 API 的设计兼顾安全性与跨源共享，为 Web 标准提供了新思路，有望推动浏览器端 AI 应用的发展。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
