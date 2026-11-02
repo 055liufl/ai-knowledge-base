@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261102-014",
+  "title": "Transformers now runs llama.cpp quants",
+  "source_url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 宣布 Transformers 库现已支持直接加载和运行 llama.cpp 的量化模型（GGUF 格式）。此前，llama.cpp 量化模型主要依赖 llama.cpp 自身的推理引擎运行，而 Transformers 生态（包括 AutoModel、pipeline 等高层 API）无法直接使用这些量化权重。此次集成意味着开发者可以在 Transformers 框架内无缝使用 GGUF 量化模型，兼顾 llama.cpp 的高效量化压缩优势与 Transformers 丰富的工具链（如 tokenizer、generate、训练/微调接口）。这一变化降低了在资源受限环境中部署大模型的门槛，同时让量化模型能够融入现有的 Hugging Face 工作流，对边缘部署、本地推理和低成本实验场景具有实际价值。",
+  "tags": [
+    "Transformers",
+    "llama.cpp",
+    "量化",
+    "GGUF",
+    "推理"
+  ],
+  "author": null,
+  "published_at": "2026-11-02T17:53:44Z",
+  "collected_at": "2026-11-02T17:56:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformers 原生支持 llama.cpp 的 GGUF 量化格式，打通了两大生态",
+      "开发者可在 Transformers 工作流中直接使用高效量化模型，降低部署门槛",
+      "有利于资源受限环境下的本地推理和边缘部署"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

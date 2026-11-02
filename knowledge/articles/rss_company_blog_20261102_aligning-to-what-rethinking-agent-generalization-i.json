@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261102-106",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "这是 MiniMax AI 在 Hugging Face 博客上发布的技术文章，围绕其 MiniMax M2 模型，探讨智能体（Agent）泛化能力与对齐目标之间的根本性问题。文章标题「Aligning to What?」直接质疑当前 Agent 对齐实践中的一个隐含假设：对齐究竟应当对齐到什么样的目标、数据分布或人类意图。作者提出需要重新审视 Agent 泛化能力的评估方式，指出仅靠针对特定任务或基准的对齐，可能带来过拟合式的「伪泛化」，而真正有价值的泛化应体现在跨任务、跨环境的稳健迁移上。文章结合 MiniMax M2 的实践，讨论了训练数据构造、对齐信号设计与泛化评估之间的张力，并给出对 Agent 模型研发方向的反思。该内容值得关注的原因在于：当前 Agent 模型普遍以基准分数作为对齐效果的证明，但基准提升与实际部署中的泛化表现常存在落差；该文从方法论层面提出质疑，对从事 Agent 训练、对齐与评测的研究者和工程师具有参考价值，也有助于产品侧理解 Agent 能力边界。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-02T17:53:44Z",
+  "collected_at": "2026-11-02T18:00:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 对齐需要明确「对齐到什么」，否则容易退化为对特定基准或任务分布的过拟合",
+      "基准分数提升不等于真实泛化能力，跨任务与跨环境的稳健迁移才是关键评估维度",
+      "训练数据构造与对齐信号设计会显著影响 Agent 的泛化边界，需要在方法层面重新权衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

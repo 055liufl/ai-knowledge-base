@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261102-055",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队在 Hugging Face 博客上发布的技术文章，讨论 vLLM 从 V0 架构迁移到 V1 架构过程中在强化学习（RL）场景下遇到的正确性问题。vLLM 作为高吞吐 LLM 推理引擎，被广泛用于 RLHF/RLVR 等训练流程中的 rollout 生成环节；V1 架构重写了调度器与 KV cache 管理，提升了性能与可维护性，但在与 RL 训练框架集成时暴露出若干正确性偏差。文章强调在追求性能优化与功能修正之前，必须先保证推理结果与训练语义的一致性，否则会污染奖励信号、导致策略退化。文中可能涉及对采样行为、logprob 计算、请求调度顺序等细节的排查，并给出迁移建议与验证方法。该内容对使用 vLLM 做 RL 训练的工程团队具有直接参考价值，也提醒社区在架构升级时优先建立正确性基线。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "LLM推理",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-02T17:53:44Z",
+  "collected_at": "2026-11-02T17:57:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 架构重写调度与 KV cache 管理，性能提升的同时可能引入与 RL 训练语义不一致的正确性问题",
+      "在 RL 流程中，推理引擎的采样与 logprob 行为必须与训练框架预期严格对齐，否则会污染奖励信号",
+      "架构迁移应优先建立正确性基线与回归验证，再追求性能优化和功能修正",
+      "该经验对使用 vLLM 进行 rollout 生成的 RLHF/RLVR 工程实践具有直接参考价值"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
