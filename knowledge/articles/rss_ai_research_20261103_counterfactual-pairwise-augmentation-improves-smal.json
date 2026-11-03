@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-033",
+  "title": "Counterfactual Pairwise Augmentation Improves Small Pointwise LLM Judges",
+  "source_url": "https://arxiv.org/abs/2610.41149",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种反事实成对增强方法，用于改进小型语言模型作为逐点评判者（pointwise judge）的性能。在智能体系统中，逐点评判者常被用于对单个步骤的响应进行评分，以决定是否放行。小型语言模型因部署高效、易于专门化而成为该角色的理想选择。然而，逐点标签在微调时无法充分确定决策边界：不同查询的标注响应同时沿多个维度变化，难以揭示评判标准的确切边界。论文通过反事实成对增强，构造成对比较数据来辅助小型模型学习更清晰的决策边界，从而提升逐点评判的准确性。该工作值得关注，因为它针对智能体系统中关键但常被忽视的评判环节，提出了一种轻量且实用的数据增强策略，有望在资源受限场景下提升小型模型作为评判者的可靠性，对智能体系统的落地应用具有实际意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Fine-tuning",
+    "Data Augmentation"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:56:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小型语言模型适合作为智能体系统中的逐点评判者，因其部署高效且易于专门化。",
+      "逐点标签在微调时对决策边界的约束不足，因为标注响应同时沿多个维度变化。",
+      "反事实成对增强通过构造成对比较数据，帮助小型模型更清晰地学习评判标准的决策边界。",
+      "该方法为资源受限场景下提升小型模型评判可靠性提供了轻量实用的数据增强思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

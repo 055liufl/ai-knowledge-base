@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-063",
+  "title": "Specification-Guided Generation for Large Language Models",
+  "source_url": "https://arxiv.org/abs/2610.41511",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种神经符号的规范引导解码框架，旨在解决现有约束解码方法仅能强制语法而无法直接满足形式化规范的问题。传统约束解码主要关注输出结构的语法正确性，但许多实际应用（如代码生成、配置生成、协议消息构造）需要输出满足更高级的形式化规范（如类型约束、业务规则、安全策略）。该框架在解码的每一步结合符号推理，通过过滤掉无法扩展为满足规范的输出值来精炼解码语法，从而引导LLM生成既符合语法又满足形式化规范的输出。这项工作值得关注，因为它将LLM的生成能力与符号推理的精确性相结合，为可控、可靠的LLM输出提供了新思路，有望提升LLM在需要严格规范遵循的场景中的实用性。",
+  "tags": [
+    "LLM",
+    "约束解码",
+    "神经符号",
+    "形式化规范"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有约束解码方法主要强制语法正确性，无法直接保证输出满足形式化规范。",
+      "提出神经符号解码框架，在每一步解码中结合符号推理过滤无效值，确保输出可扩展为满足规范的完整结果。",
+      "该方法有望提升LLM在代码生成、配置生成等需要严格规范遵循场景中的可靠性和实用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

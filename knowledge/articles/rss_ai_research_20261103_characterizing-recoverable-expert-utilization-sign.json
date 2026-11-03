@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-127",
+  "title": "Characterizing Recoverable Expert-Utilization Signatures in Fine-Tuned Mixture-of-Experts LLMs",
+  "source_url": "https://arxiv.org/abs/2610.41039",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究微调后的混合专家（MoE）大语言模型在分布式部署场景下的结构性安全漏洞。作者提出“结构性记忆”这一新概念：微调后的模型不仅记忆训练数据，还记忆处理这些数据所经过的内部专家路由路径，从而形成可被恢复的“专家利用签名”。这种签名可能被攻击者用于推断训练数据、识别模型微调任务，甚至在联邦学习或边缘-云系统中实施路径劫持或隐私攻击。该工作将MoE安全分析从文本层面推进到结构层面，揭示了路由机制本身构成的信息泄露面，对MoE模型的隐私保护与安全部署具有警示意义，也为后续防御机制设计提供了新的研究方向。",
+  "tags": [
+    "MoE",
+    "LLM Security",
+    "Privacy",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "微调后的MoE模型会记忆训练数据的内部专家路由路径，形成可恢复的结构性签名",
+      "该漏洞超越文本层面的隐私泄露，暴露了MoE路由机制本身的安全风险",
+      "在联邦学习和边缘-云等分布式部署中，专家利用签名可能被用于推断训练数据或实施路径攻击",
+      "需要针对MoE路由结构设计新的隐私保护与防御机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

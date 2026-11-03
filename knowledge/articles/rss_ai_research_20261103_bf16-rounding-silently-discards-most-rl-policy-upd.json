@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-129",
+  "title": "bf16 Rounding Silently Discards Most RL Policy Updates: A Hidden Training-Inference Mismatch and an Unbiased One-Line Fix",
+  "source_url": "https://arxiv.org/abs/2610.41073",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了大语言模型强化学习后训练中一个隐蔽的训练-推理不一致问题：优化器维护fp32主权重，但推理时使用bf16舍入副本生成rollout。在常用学习率下，多数单步更新幅度小于半个bf16间距，舍入转换会静默丢弃这些更新。在Qwen3-1.7B上，每步仅0.4-0.5%的推理权重发生变化，导致生成训练数据的策略落后优化器50-100步。这种不一致会扭曲RL训练信号，影响策略优化效果。作者提出一种无偏的单行修复方法，可消除该舍入偏差。该问题普遍存在于bf16推理的RL训练流程中，对模型对齐和RLHF实践具有重要警示意义，值得训练框架开发者和RL研究者关注。",
+  "tags": [
+    "RLHF",
+    "bf16",
+    "训练推理一致性",
+    "LLM训练"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "bf16舍入会静默丢弃小于半个bf16间距的RL策略更新，导致推理策略严重滞后于优化器",
+      "在Qwen3-1.7B上每步仅0.4-0.5%的推理权重实际更新，策略滞后可达50-100步",
+      "该训练-推理不一致会扭曲RL训练信号，影响策略优化效果",
+      "作者提出一种无偏的单行修复方法，可消除舍入偏差"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

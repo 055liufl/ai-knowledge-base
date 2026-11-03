@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261103-017",
+  "title": "Running RAG with a (small) language model in the browser",
+  "source_url": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章展示了如何在浏览器中运行完整的 RAG（检索增强生成）流程，并且使用一个小型语言模型而非依赖云端大模型。作者通过结合 WebGPU/WASM 推理、浏览器端向量检索和轻量级嵌入模型，实现了完全本地化的检索问答系统。其价值在于证明了 RAG 不必依赖昂贵的大模型 API：小模型配合精准检索即可在客户端完成知识问答，带来零延迟、零数据外泄和零服务器成本的优势。这为隐私敏感场景、离线应用和边缘 AI 产品提供了可行路径，也反映了 AI 推理从云端向终端下沉的趋势。",
+  "tags": [
+    "RAG",
+    "WebGPU",
+    "SLM",
+    "浏览器推理"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:11Z",
+  "collected_at": "2026-11-03T15:54:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小语言模型配合检索增强即可在浏览器端完成可用的 RAG 问答，无需云端大模型 API",
+      "浏览器内 RAG 实现了数据不出本地的隐私保护，并消除网络延迟与服务器成本",
+      "WebGPU/WASM 推理与轻量嵌入模型的成熟，使端侧 AI 应用从演示走向实用"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

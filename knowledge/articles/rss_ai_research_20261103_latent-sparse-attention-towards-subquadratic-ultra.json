@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-098",
+  "title": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+  "source_url": "https://arxiv.org/abs/2610.42147",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Latent Sparse Attention（潜在稀疏注意力），旨在解决超长上下文（超过 100 万 token）下全注意力计算成本过高的问题。随着智能体工作流向长周期任务（如开放式科学研究）演进，模型对长上下文窗口的需求日益增长，但标准全注意力的二次复杂度使其在超长序列上不可行。稀疏注意力通过专用索引器选择部分键进行计算，是当前主流思路，但现有索引方法要么仍具有上下文规模的二次成本，要么在效率与精度之间难以兼顾。本文提出的潜在稀疏注意力试图在保持亚二次复杂度的同时维持注意力质量，为超长上下文场景提供可扩展的注意力机制。该工作值得关注的原因在于：超长上下文是智能体与基础模型能力扩展的关键瓶颈之一，而注意力机制的复杂度优化直接决定推理成本与可用性；若该方法能在百万级 token 上实现高效且高质量的注意力，将对长文档理解、多轮智能体记忆、科学文献分析等应用产生实质影响。",
+  "tags": [
+    "Sparse Attention",
+    "Long Context",
+    "Efficient Inference",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "超长上下文（>1M token）下全注意力成本不可接受，稀疏注意力是必要方向，但索引器本身的开销是当前方法的关键瓶颈。",
+      "现有索引方法要么保持二次复杂度，要么牺牲注意力质量，本文试图在亚二次复杂度与精度之间取得更好平衡。",
+      "长周期智能体工作流对长上下文的需求正在推动注意力机制从算法层面进行根本性优化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

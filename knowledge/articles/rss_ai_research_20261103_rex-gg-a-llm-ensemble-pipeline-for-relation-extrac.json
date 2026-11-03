@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-085",
+  "title": "ReX-GG: a LLM Ensemble Pipeline for Relation-extraction and Graph Generation",
+  "source_url": "https://arxiv.org/abs/2610.41901",
+  "source_platform": "rss_ai_research",
+  "summary": "ReX-GG 提出了一种轻量级、可定制的 LLM 集成流水线，专门用于关系抽取（Relation Extraction）和图生成（Graph Generation）。现有 LLM 集成框架通常依赖多步骤设置和额外的答案排序模块，倾向于使用 token 和 span 分析而非结构化输出，导致架构笨重且流水线中可能存在多个失败点；而更快的轻量方案又容易受到幻觉传播的影响，在复杂流水线中缺乏输出控制。ReX-GG 旨在平衡这两类问题，通过可定制的集成策略实现结构化输出，减少对额外排序模块的依赖，同时保持轻量化和可控性。该工作值得关注，因为它针对 LLM 集成在信息抽取任务中的实际部署痛点，提出了一种更简洁、更可控的流水线设计，有望降低关系抽取与知识图谱构建的工程复杂度，并提升输出可靠性。",
+  "tags": [
+    "LLM",
+    "Ensemble",
+    "Relation Extraction",
+    "Graph Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 集成框架多依赖多步骤和额外排序模块，架构笨重且存在多个失败点。",
+      "轻量级方案虽快，但易受幻觉传播影响，在复杂流水线中缺乏输出控制。",
+      "ReX-GG 通过可定制的轻量级集成流水线，直接面向结构化输出（关系抽取与图生成），减少对 token/span 分析和答案排序的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

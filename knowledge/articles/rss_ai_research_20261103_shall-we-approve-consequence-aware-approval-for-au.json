@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-110",
+  "title": "\"Shall We Approve?\" Consequence-Aware Approval for Autonomous Coding Agents",
+  "source_url": "https://arxiv.org/abs/2610.40753",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向自主编码智能体的“后果感知审批”机制，用于判断智能体提议的 shell 命令是否应被允许执行。现有审批器（规则检查器、护栏模型、权限分类器）仅依据请求和命令文本做决策，但命令的实际行为取决于其调用的代码与工作区状态，因此文本层面的判断存在盲区。作者主张审批应基于命令执行可能产生的后果（如文件变更、系统状态影响）而非表面文本，并针对观察到文件变更后仍将评估推给智能体或人工的现有系统缺陷提出改进方案。该工作值得关注，因为它直击编码智能体安全落地的核心痛点——自动化审批的可靠性，将审批范式从“文本匹配”推进到“后果推理”，对构建更安全的自主编码工具链具有直接指导意义。",
+  "tags": [
+    "Coding Agent",
+    "AI Safety",
+    "Guardrails",
+    "Agent Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有编码智能体审批器仅基于请求与命令文本判断，忽略了命令调用的代码和工作区状态，导致审批决策与实际后果脱节。",
+      "命令的真实行为由被调用代码和当前工作区状态共同决定，审批机制应转向基于执行后果的评估范式。",
+      "观察到文件变更的系统仍将风险评估后置给智能体或人工，暴露出自动化审批链条中的关键缺口。",
+      "后果感知审批有望提升自主编码智能体执行 shell 命令时的安全性与可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

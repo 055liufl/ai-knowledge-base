@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-048",
+  "title": "Subliminal Reinforcement Learning: traits travel through a judge's scores",
+  "source_url": "https://arxiv.org/abs/2610.41301",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种新的隐性学习（subliminal learning）范式：在基于语言模型评判的强化学习后训练（如GRPO）中，学生模型仅从自身输出和评判分数中学习，而评判模型被诱导偏好某种特定动物。实验表明，学生模型生成无意义音节或数字，评判模型对其打分，学生模型便能通过评判分数这一无语义痕迹的通道习得评判模型的偏好特质。该研究首次将隐性学习从文本蒸馏扩展到强化学习后训练场景，揭示了基于AI反馈的RLHF/RLVR流程中可能存在的隐蔽特质传递风险。这一发现对模型对齐、安全性和后训练数据治理具有重要意义，因为它意味着即使训练数据中不包含任何语义线索，模型特质仍可通过评判分数进行传播，可能被恶意利用或导致非预期的行为偏移。",
+  "tags": [
+    "Reinforcement Learning",
+    "LLM Alignment",
+    "Subliminal Learning",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在基于语言模型评判的强化学习后训练中，模型特质可通过评判分数这一无语义痕迹的通道传递，无需训练数据中包含任何语义线索。",
+      "学生模型仅从自身生成的输出和评判分数中学习，即可习得评判模型被诱导的偏好，表明RLHF/RLVR流程存在隐蔽的特质传播风险。",
+      "该发现将隐性学习从传统的文本蒸馏场景扩展到强化学习后训练场景，对模型对齐与安全治理提出了新的挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-064",
+  "title": "Verify--Backtrack Loop: Structured Precondition Recovery for Long-Horizon Language Agents",
+  "source_url": "https://arxiv.org/abs/2610.41564",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Verify--Backtrack Loop（验证-回溯循环），一种针对长时程语言智能体的结构化前置条件恢复机制。作者指出，长时程任务的核心难点并非轨迹长度，而是恢复能力：当某个前置条件缺失或早期任务分解失败时，简单尝试另一个看似合理的动作往往无效。现有 ReAct 及后续反思/自适应规划方法虽支持局部纠错，但将恢复过程表达为自由文本，缺乏显式结构，导致恢复不可靠、难以验证。该工作通过引入显式的前置条件验证与回溯循环，使智能体能够结构化地检测缺失前提并回退到可修复的决策点，从而提升长时程交互任务的成功率。其价值在于将智能体的错误恢复从模糊的文本反思转变为可验证、可回溯的结构化流程，对提升语言智能体在复杂环境中的鲁棒性具有直接意义，也为后续智能体规划与纠错研究提供了新思路。",
+  "tags": [
+    "Agent",
+    "Planning",
+    "Long-Horizon",
+    "Error Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长时程语言智能体的核心瓶颈是前置条件缺失时的恢复能力，而非轨迹长度本身。",
+      "现有反思与自适应规划方法以自由文本表达恢复，缺乏显式结构，导致纠错不可靠。",
+      "Verify--Backtrack Loop 通过结构化验证与回溯机制，将错误恢复转化为可验证的决策回退流程。",
+      "显式前置条件建模有望提升智能体在交互环境中的鲁棒性与任务成功率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

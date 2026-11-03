@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-126",
+  "title": "WebOverlay: High-Throughput Vision-Only Distillation for Extreme Aspect-Ratio Web Overlay Detection",
+  "source_url": "https://arxiv.org/abs/2610.41037",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 WebOverlay，一种仅基于视觉的高通量蒸馏方法，用于检测网页中的覆盖层（如 cookie 同意横幅、订阅提示、年龄验证门）。这些覆盖层会阻碍自动化爬虫并降低下游文档表示质量。专有 MLLM 虽能准确识别，但延迟和推理成本过高，无法支撑网页规模的数据摄取；轻量视觉模型则难以处理具有极端垂直长宽比的全页渲染图。WebOverlay 通过蒸馏 MLLM 知识到轻量视觉模型，并针对极端长宽比进行优化，旨在实现高吞吐、低成本的覆盖层检测。该工作值得关注，因为它解决了网页数据清洗中的关键瓶颈，对构建大规模、高质量的网页语料库具有实用价值，同时展示了视觉蒸馏在特定长尾视觉任务中的潜力。",
+  "tags": [
+    "Vision Distillation",
+    "Web Crawling",
+    "MLLM",
+    "Document Processing"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "专有 MLLM 在覆盖层检测上准确但成本高，无法用于网页规模摄取，蒸馏到轻量视觉模型是可行路径。",
+      "全页渲染图的极端垂直长宽比是轻量视觉模型的主要挑战，需要针对性设计。",
+      "覆盖层检测直接影响下游文档表示质量，是网页数据清洗中不可忽视的环节。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

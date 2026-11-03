@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-027",
+  "title": "QUAL: Quantile Alignment Improves Zero-Shot Time-Series Foundation Models",
+  "source_url": "https://arxiv.org/abs/2610.41100",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出QUAL（Quantile Alignment）方法，用于提升零样本时间序列基础模型（TSFM）的预测精度。研究发现，不同TSFM在不同数据集上的零样本预测表现差异较大，而传统集成方法在零样本场景下因缺乏目标标签而无法有效选择或加权模型。QUAL的核心思路是将模型池不仅作为最终集成使用，还作为概率参考来变换每个成员的预测结果，通过池相对分位数对齐来校准各模型的输出分布。该方法无需目标标签即可在零样本部署中实现模型间的有效融合，降低跨数据集的性能波动。这项工作值得关注，因为它针对时间序列基础模型在实际零样本部署中的关键痛点——缺乏标签时的模型选择与集成问题——提出了无需监督信号的解决方案，对推动TSFM的实用化具有直接价值。",
+  "tags": [
+    "Time-Series",
+    "Foundation Models",
+    "Zero-Shot",
+    "Ensemble"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:56:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型池不仅可用于最终集成，还可作为概率参考来变换各成员预测，实现无需标签的模型融合",
+      "通过池相对分位数对齐可校准各TSFM的输出分布，降低跨数据集的零样本预测波动",
+      "该方法解决了零样本部署中缺乏目标标签导致无法选择或加权模型的根本问题"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-119",
+  "title": "On the Origin and Evolution of Training-Inference Mismatch in LLM Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2610.40945",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统分析了LLM强化学习中训练与推理不一致（training-inference mismatch）的起源与演化。在on-policy RL中，训练数据本应来自当前策略，但实际由独立推理引擎采样、训练器计算梯度，导致数据偏离策略。作者指出不一致有两个来源：推理引擎的数值精度差异和异步采样中的权重陈旧，并提出了相应的修正方法。该工作首次从数值和系统层面统一解释这一关键问题，对提升RLHF/RLVR训练的稳定性和样本效率具有重要价值，尤其对大规模分布式训练系统设计有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Reinforcement Learning",
+    "Training-Inference Mismatch",
+    "Distributed Training"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "训练-推理不一致源于推理引擎数值精度差异与异步采样权重陈旧两个独立因素",
+      "该不一致使on-policy RL数据实际变为off-policy，影响训练稳定性与收敛性",
+      "论文提出针对两个来源的修正方法，为大规模RL训练系统设计提供理论依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

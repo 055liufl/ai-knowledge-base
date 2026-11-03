@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-065",
+  "title": "Connectivity-Aware Client Selection in Decentralized Federated Learning",
+  "source_url": "https://arxiv.org/abs/2610.41570",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究去中心化联邦学习（DFL）中的通信效率问题。DFL 通过去除中心服务器解决了单点故障和通信瓶颈，但现有方法通常采用全邻域广播，即每轮每个客户端向所有邻居发送模型更新，导致显著的通信开销。论文提出一种连接感知的客户端选择策略，根据网络连接状况动态选择参与通信的邻居子集，以减少冗余传输并提升整体训练效率。该工作值得关注，因为它针对 DFL 实际部署中的关键瓶颈——通信成本，提供了轻量级且可扩展的优化思路，对边缘计算和分布式 AI 系统具有实用价值。",
+  "tags": [
+    "Federated Learning",
+    "Decentralized Learning",
+    "Communication Efficiency",
+    "Client Selection"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "去中心化联邦学习虽消除了中心服务器瓶颈，但全邻域广播带来高昂通信开销，是实际部署的主要障碍。",
+      "连接感知的客户端选择通过动态筛选邻居子集参与每轮通信，可在保持模型收敛的同时显著降低传输量。",
+      "该策略为 DFL 的通信效率优化提供了可扩展的方向，尤其适用于网络拓扑动态变化的边缘环境。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

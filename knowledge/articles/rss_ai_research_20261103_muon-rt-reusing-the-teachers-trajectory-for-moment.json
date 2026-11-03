@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-131",
+  "title": "MUON-RT Reusing the Teacher's Trajectory for Momentum-Free Muon for LLM Self-Distillation",
+  "source_url": "https://arxiv.org/abs/2610.41104",
+  "source_platform": "rss_ai_research",
+  "summary": "MUON-RT 是一种面向大语言模型自蒸馏训练的内存优化方法，针对 Muon 优化器在 EMA 教师自蒸馏场景下额外存储动量缓冲区导致训练内存开销增加的问题，提出复用教师模型与学生模型之间的参数位移（teacher-student displacement）来替代隐藏权重矩阵的动量缓冲区，从而实现无动量的 Muon 优化。该工作表明该位移本身编码了指数加权的更新历史，因此可以承担动量的功能。其价值在于：自蒸馏已成为提升 LLM 能力的重要手段，但训练内存是实际部署中的关键瓶颈，Muon-RT 在不引入额外状态的前提下降低了持久训练内存占用，对大规模模型训练的效率优化具有直接实用意义，也为优化器状态复用提供了新思路。",
+  "tags": [
+    "LLM",
+    "Self-Distillation",
+    "Optimizer",
+    "Training Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:01:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "EMA 教师自蒸馏本身已隐含学生更新历史，Muon 额外存储动量缓冲区属于冗余状态",
+      "教师-学生参数位移可编码指数加权的更新历史，从而替代动量缓冲区",
+      "该方法消除了隐藏权重矩阵的动量存储，降低持久训练内存开销",
+      "为优化器状态与蒸馏信号的复用结合提供了新的设计范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

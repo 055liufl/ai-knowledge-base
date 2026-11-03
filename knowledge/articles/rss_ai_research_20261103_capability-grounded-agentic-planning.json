@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-019",
+  "title": "Capability-Grounded Agentic Planning",
+  "source_url": "https://arxiv.org/abs/2610.41040",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Capability-Grounded Agentic Planning (CGAP) 方法，旨在解决 LLM 智能体在规划多步工具调用时依赖试错、缺乏可执行性保证的问题。CGAP 的核心思路是让智能体显式推理请求所需的能力与工具所提供的能力，并将工具目录确定性地编译为 PDDL 模型，从而在规划阶段引入形式化约束，确保生成的调用序列在逻辑上可执行。该方法将经典规划技术与 LLM 的语义理解能力结合，有望提升智能体在复杂任务中的可靠性与可解释性。对于构建生产级 Agent 系统的开发者而言，这种能力对齐的规划范式值得关注，因为它可能减少无效调用、降低延迟与成本，并为工具编排提供可验证的保障。",
+  "tags": [
+    "Agent",
+    "Planning",
+    "LLM",
+    "PDDL",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:55:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CGAP 将工具目录编译为 PDDL 模型，使智能体规划从试错转向基于能力的形式化推理。",
+      "通过显式建模请求需求与工具能力，方法旨在保证生成计划的可执行性。",
+      "该工作连接了经典规划与 LLM 智能体，为工具编排提供了可验证的规划框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

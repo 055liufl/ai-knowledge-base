@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-018",
+  "title": "ReplayRCA: Measuring Post-hoc Diagnosis and Live Oversight of Agent Failures by Counterfactual Replay",
+  "source_url": "https://arxiv.org/abs/2610.41025",
+  "source_platform": "rss_ai_research",
+  "summary": "ReplayRCA 是一个用于评估语言模型智能体失败诊断能力的新基准。传统方法通常将诊断结果与人工标注进行比对，而 ReplayRCA 提出以干预效果作为评分标准：将环境恢复到所选步骤之前的状态，用诊断模型提出的动作替换智能体原本的动作，再让同一智能体继续执行任务。最终得分称为因果修复率，即替换动作后任务继续执行的成功率。该基准同时衡量事后诊断和实时监督两种场景，强调诊断的因果有效性而非表面一致性。其价值在于为智能体失败归因提供了更贴近实际修复效果的评估范式，有助于推动更可靠的智能体监控与纠错技术发展。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Failure Diagnosis",
+    "Counterfactual"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:55:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "以干预后的任务成功率作为诊断评分标准，比与标注比对更能反映实际修复能力。",
+      "通过反事实重放将环境恢复到失败步骤前，可精确评估单个动作的因果贡献。",
+      "同时覆盖事后诊断与实时监督，为智能体失败分析提供统一评估框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261103-090",
+  "title": "When Does Test-Time Search Help World Action Models? An Empirical Audit of Candidate Selection and Simulator Integrity",
+  "source_url": "https://arxiv.org/abs/2610.41970",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对世界动作模型（World Action Models）中的测试时搜索（Test-Time Search）进行了系统性实证审计，聚焦于候选选择与模拟器完整性两个关键环节。研究基于 Cosmos Policy 和 RoboCasa 平台，采用前提优先、预注册的方法论，检验了三个核心假设：候选是否携带可利用信号、名义计算节省能否转化为实际加速、以及评估是否可靠。初步结果显示，在干净数据上，学习型价值选择器（learned value selector）的表现值得关注。该工作的重要性在于，它首次对测试时缩放（test-time scaling）在控制任务中的有效性进行了严格审计，揭示了候选选择信号、计算效率与评估可靠性之间的潜在脱节，为后续研究提供了方法论基准和警示。",
+  "tags": [
+    "World Models",
+    "Test-Time Scaling",
+    "Candidate Selection",
+    "Simulator Integrity",
+    "Empirical Audit"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时搜索的收益依赖于候选是否携带可利用信号，学习型价值选择器在干净数据上表现有效，但需警惕信号退化场景。",
+      "名义计算节省与实际加速之间存在差距，自适应分配策略需验证其真实效率提升。",
+      "评估可靠性是测试时缩放可信度的前提，模拟器完整性审计应成为标准流程。",
+      "前提优先、预注册的方法论为世界动作模型的实证研究提供了可复现的审计框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

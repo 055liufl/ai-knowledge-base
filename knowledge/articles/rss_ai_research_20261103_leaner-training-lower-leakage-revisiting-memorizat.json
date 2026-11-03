@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-100",
+  "title": "Leaner Training, Lower Leakage: Revisiting Memorization in LLM Fine-Tuning with LoRA",
+  "source_url": "https://arxiv.org/abs/2506.20856",
+  "source_platform": "rss_ai_research",
+  "summary": "本文重新审视了LoRA微调中的记忆化问题，发现其与全参数微调存在显著差异。大语言模型在预训练阶段的记忆化已被广泛研究，但微调阶段尤其是LoRA这种参数高效方法下的记忆化影响尚不明确。作者通过实验揭示了不同微调策略下记忆化行为的意外分歧，指出LoRA在减少训练参数的同时可能降低数据泄露风险。该研究为理解参数高效微调的安全性和隐私保护提供了新视角，对实际部署中平衡模型性能与数据安全具有重要参考价值。",
+  "tags": [
+    "LoRA",
+    "LLM",
+    "隐私安全",
+    "微调"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoRA微调与全参数微调在记忆化行为上存在显著差异，不能简单沿用预训练阶段的结论",
+      "参数高效微调可能降低数据提取攻击的风险，但需进一步验证其泛化性",
+      "微调策略的选择需同时考虑模型性能与隐私泄露的权衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-092",
+  "title": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
+  "source_url": "https://arxiv.org/abs/2610.41994",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对门控线性注意力（Gated Linear Attention）在长上下文检索中的记忆瓶颈问题，提出了DAMI（双轴记忆初始化）方法。线性注意力虽具有随序列长度线性扩展的优势，但其有限状态记忆在长上下文检索中表现受限。在门控线性递归中，记忆保持能力取决于状态衰减，而状态衰减由门参数A_log、dt_bias以及输入激活共同塑造。作者在受控的Gated DeltaNet（GDN）实验中发现，训练后这两个参数仍与其初始值高度相关，表明初始化对最终性能具有决定性影响。该工作揭示了初始化在门控线性注意力中的关键作用，为提升长上下文检索能力提供了新的优化方向，对高效注意力机制和长序列建模研究具有参考价值。",
+  "tags": [
+    "Linear Attention",
+    "Long-Context Retrieval",
+    "Gated DeltaNet",
+    "Initialization"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "门控线性注意力的长上下文检索能力受限于有限状态记忆，而记忆保持由状态衰减决定。",
+      "状态衰减由门参数A_log、dt_bias和输入激活共同塑造，初始化对训练后的参数分布有持续影响。",
+      "在Gated DeltaNet实验中，A_log和dt_bias训练后仍与初始值高度相关，凸显初始化的重要性。",
+      "DAMI通过双轴记忆初始化策略，为增强长上下文检索提供了一种新的参数初始化思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

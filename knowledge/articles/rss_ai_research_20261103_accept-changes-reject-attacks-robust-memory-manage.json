@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-128",
+  "title": "Accept Changes, Reject Attacks: Robust Memory Management for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2610.41056",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注LLM智能体长期记忆管理中的两个对立失败模式：过时记忆（保留已变更的事实）与记忆投毒（存储被植入的段落或注入指令）。作者指出，现有研究大多将二者分开处理，但它们在写入决策上要求相反的处理策略——前者需要接受更新、后者需要拒绝攻击。论文提出一种鲁棒的记忆管理框架，旨在同时应对过时记忆和记忆投毒问题，使智能体在长期交互中既能及时更新知识，又能抵御恶意注入。该工作值得关注，因为长期记忆是LLM智能体实现持续学习和个性化服务的关键基础设施，而记忆安全与时效性问题直接影响智能体的可靠性与安全性，是当前Agent研究从原型走向生产部署必须解决的核心挑战之一。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM智能体记忆管理存在过时记忆与记忆投毒两类失败模式，二者在写入决策上需求相反，需统一框架协调处理",
+      "现有工作将过时记忆与记忆投毒分开研究，缺乏同时兼顾时效性与安全性的记忆管理方案",
+      "鲁棒记忆管理需在'接受变更'与'拒绝攻击'之间取得平衡，这对智能体长期可靠性至关重要"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

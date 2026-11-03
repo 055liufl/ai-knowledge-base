@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-086",
+  "title": "Structure-Aware Skill Retrieval and Arbitration for Optimization Modeling",
+  "source_url": "https://arxiv.org/abs/2610.41909",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ArchOR，一种面向优化建模的“原型中心”技能智能体，旨在解决大语言模型在将自然语言优化任务转化为求解器可验证答案时，面对叙述改写容易失效、且经验存储停留在实例层面的问题。ArchOR 在 OptSkills 基础上增加了两个以检索为核心的模块：Centroid-Aware Representation Learning（CARL）通过中心点感知表示学习优化缓存技能的排序，使智能体能够依据任务的结构特征而非表面措辞匹配可复用技能；另一模块负责技能仲裁，在多个候选技能之间做出选择。该工作值得关注，因为它将“技能检索”从实例级提升到原型级，提升了 LLM 优化建模智能体在叙述变化下的鲁棒性与经验复用效率，对构建可积累、可迁移的智能体记忆与技能库具有参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Skill Retrieval",
+    "Optimization Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM 优化建模智能体在叙述改写下表现脆弱，且技能经验以实例级存储，难以泛化复用",
+      "ArchOR 采用原型中心（archetype-centric）的技能组织方式，将检索粒度从实例提升到任务原型",
+      "CARL 通过中心点感知表示学习优化缓存技能排序，使检索更依赖结构特征而非表面措辞",
+      "技能仲裁模块在多个候选技能间做选择，是提升智能体鲁棒性的关键补充机制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

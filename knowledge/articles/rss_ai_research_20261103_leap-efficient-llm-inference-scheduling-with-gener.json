@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-052",
+  "title": "LEAP: Efficient LLM Inference Scheduling with Generalizable Length Prediction",
+  "source_url": "https://arxiv.org/abs/2610.41359",
+  "source_platform": "rss_ai_research",
+  "summary": "LEAP 是一篇关于 LLM 推理调度优化的论文，针对现有长度感知调度中长度预测器在领域和任务迁移下排序性能下降、适配需昂贵重训练、预测开销抵消调度收益等问题，提出一种更通用、更高效的调度方案。该工作值得关注，因为 LLM 服务成本与延迟是当前落地瓶颈，而利用请求长度先验进行调度是提升吞吐与降低尾延迟的关键手段；LEAP 试图同时解决预测器的泛化性与开销问题，对推理基础设施优化具有直接参考价值。",
+  "tags": [
+    "LLM Serving",
+    "Inference Scheduling",
+    "Length Prediction",
+    "System"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长度感知调度能通过优先处理短请求降低延迟，但预测器在领域/任务偏移下排序能力会退化",
+      "适配长度预测器通常需要昂贵重训练，且预测本身的开销可能抵消调度收益",
+      "LEAP 旨在提升长度预测的泛化性与效率，使调度收益更稳定"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

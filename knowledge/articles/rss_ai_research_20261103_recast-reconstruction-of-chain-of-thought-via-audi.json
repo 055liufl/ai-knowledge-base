@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-078",
+  "title": "RECAST: REconstruction of Chain-of-Thought via Auditable Structured Traces",
+  "source_url": "https://arxiv.org/abs/2610.41813",
+  "source_platform": "rss_ai_research",
+  "summary": "RECAST 提出了一种在闭源推理模型仅暴露最终答案、隐藏中间推理过程的条件下，重建思维链（Chain-of-Thought）的方法。现有 CoT 提取技术通常依赖侧信道，如可见的推理字段、工具调用中携带的草稿本或签名/加密推理块，但 RECAST 针对这些假设不成立的真实场景，通过可审计的结构化轨迹（Auditable Structured Traces）来重建推理链。该工作复现了三种代表性 SOTA 提取方法，并在此基础上提出新框架，旨在提升对闭源模型推理过程的可解释性与审计能力。其价值在于：随着大模型 API 广泛部署，推理透明性成为安全、合规与可信 AI 的关键瓶颈，RECAST 为黑盒推理模型的可审计性提供了新思路，对模型安全评估、对齐研究和监管合规具有潜在影响。",
+  "tags": [
+    "Chain-of-Thought",
+    "Interpretability",
+    "Reasoning Models",
+    "Auditability"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 CoT 提取方法依赖侧信道假设，在纯黑盒 API 场景下失效，RECAST 针对这一空白提出结构化轨迹重建方案。",
+      "通过可审计的结构化轨迹重建推理链，为闭源推理模型的可解释性与安全审计提供了新路径。",
+      "该工作复现并对比了三种 SOTA 提取方法，为后续研究建立了可参照的基线。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-057",
+  "title": "Cross-Interface Authorization for AI Computer-Use Agents",
+  "source_url": "https://arxiv.org/abs/2610.41397",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对计算机使用代理（Computer-Use Agents）的跨接口授权协议，旨在解决代理通过图形界面、命令行、API、脚本及MCP服务器等多种接口执行操作时，策略决策虽接口无关但可执行授权却因接口而异的问题。核心挑战在于：同一策略决策在不同接口下可能被绕过、改变安全默认值或在授权状态变更后提交。作者设计了一个基于配置文件边界（profile-bounded）的协议，适用于固定且版本化的计算机使用部署，通过枚举所有产生效果的路径（effect-bearing routes）来确保授权的一致性与安全性。该研究值得关注，因为它首次系统性地形式化了多接口代理环境中的授权不一致风险，并提出了可落地的协议框架，对构建安全可靠的自主代理系统具有重要指导意义。",
+  "tags": [
+    "Agent Security",
+    "Authorization",
+    "Computer-Use Agents",
+    "Protocol Design"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "策略决策的接口无关性不等于可执行授权的一致性，多接口环境存在授权绕过风险。",
+      "提出基于配置文件边界的协议，通过枚举所有产生效果的路径来统一授权。",
+      "该协议适用于固定且版本化的部署，为代理安全提供了可验证的框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

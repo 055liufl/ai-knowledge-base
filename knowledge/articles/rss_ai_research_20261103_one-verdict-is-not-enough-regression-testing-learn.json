@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-132",
+  "title": "One Verdict Is Not Enough: Regression Testing Learned World Models and Their Test Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.41130",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注学习型世界模型（Learned World Models）作为软件组件发布时的回归测试问题。作者指出，模型版本、预处理流程和测试工具链在每次发布之间都会发生变化，而现有的模型更新研究虽然已经能够统计逐样本回归（negative flips），但仍存在两个关键问题：其一，同一测试在不同配置下可能得出不同结论（通过或失败）；其二，测试工具链本身的缺陷可能在不引发崩溃的情况下产生错误分数和错误判定。为此，作者提出 TetraState 回归测试框架，旨在对世界模型及其测试工具链进行更可靠的回归验证。该工作值得关注，因为它将软件工程中的回归测试理念引入世界模型评测，揭示了“单次判定不足以说明模型质量”这一被忽视的风险，对构建可信、可复现的模型发布流程具有实际意义。",
+  "tags": [
+    "World Models",
+    "Regression Testing",
+    "Model Evaluation",
+    "Test Harness"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:01:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一配置下的测试通过不能代表模型稳定，同一测试在不同配置下可能得出相反结论",
+      "测试工具链自身的缺陷会在无崩溃情况下产生错误分数和错误判定，需将 harness 纳入回归测试范围",
+      "逐样本回归（negative flips）比整体准确率更能揭示模型更新中的隐性退化",
+      "世界模型作为软件组件发布，需要像传统软件一样建立版本化、可复现的回归测试体系"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-047",
+  "title": "Self-Improvement with Auxiliary Rewards: Learning from Verified Traces and Evaluating Transfer",
+  "source_url": "https://arxiv.org/abs/2610.41296",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究小语言模型在有限监督下的自我改进与迁移能力，针对答案级奖励无法区分推理轨迹质量的问题，提出使用辅助轨迹偏好来提升模型自我改进效果。作者比较了基于置信度（SC）和基于熵（UID-Conj.，结合全局熵变化与局部平滑性）的指标，通过在线奖励增强和离线正确响应训练两种方式进行实验。该工作值得关注，因为它探索了在弱监督条件下利用轨迹级信号提升小模型推理能力的路径，并系统评估了迁移效果，对降低对人工标注的依赖、提升小模型自我进化能力具有潜在价值。",
+  "tags": [
+    "LLM",
+    "Self-Improvement",
+    "Reward Modeling",
+    "Small Language Models"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:57:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "答案级奖励无法区分结果正确但推理质量不同的轨迹，需要引入轨迹级辅助偏好信号",
+      "基于熵的 UID-Conj. 指标结合全局熵变化与局部平滑性，可作为置信度指标的有效替代",
+      "在线奖励增强与离线正确响应训练是两种可行的自我改进范式，需在有限监督下评估其迁移性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

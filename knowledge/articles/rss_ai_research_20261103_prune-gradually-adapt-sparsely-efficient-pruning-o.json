@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-089",
+  "title": "Prune Gradually, Adapt Sparsely: Efficient Pruning of Large Language Models at Extreme Sparsity",
+  "source_url": "https://arxiv.org/abs/2610.41968",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型（LLM）在极端稀疏度下的权重剪枝问题。现有方法在高稀疏度下面临质量与成本的权衡：一次性剪枝成本低但稀疏度升高时质量急剧下降，即使后续恢复也难以弥补；而直接在稠密模型上端到端优化掩码的方法虽能提升质量，却计算代价高昂。论文提出“渐进剪枝、稀疏适应”的思路，旨在以较低成本实现极端稀疏下的高效剪枝，在保持模型质量的同时降低存储与推理开销。该工作值得关注，因为极端稀疏剪枝是降低LLM部署成本的关键技术路径之一，而现有方法在稀疏度超过一定阈值后普遍失效，该研究为这一瓶颈提供了新的解决方向。",
+  "tags": [
+    "LLM",
+    "Pruning",
+    "Model Compression",
+    "Sparsity"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "极端稀疏度下现有剪枝方法存在明显的质量-成本权衡，一次性剪枝质量损失严重",
+      "端到端掩码优化可提升质量但计算开销大，难以扩展到超大模型",
+      "渐进式剪枝结合稀疏适应有望在低成本下实现高质量极端稀疏模型"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

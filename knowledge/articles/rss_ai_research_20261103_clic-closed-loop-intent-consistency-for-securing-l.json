@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-108",
+  "title": "CLIC: Closed-Loop Intent Consistency for Securing LLM-Driven Control in Open RAN",
+  "source_url": "https://arxiv.org/abs/2610.40744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 CLIC（Closed-Loop Intent Consistency）框架，用于保障 Open RAN 中由 LLM 驱动的控制回路安全。随着 LLM 能力增强，研究者将其集成到 O-RAN 的 RAN 智能控制器（RIC）中，通过用户意图实现网络切片与资源管理。然而，这种集成使系统暴露于运行时提示注入威胁，攻击者可在不触发静态检查的情况下操纵控制决策。CLIC 的核心思路是建立闭环意图一致性校验机制，在控制指令执行前后持续验证 LLM 输出与原始用户意图的一致性，从而检测并阻断注入攻击导致的决策偏移。该工作值得关注，因为它首次系统性地将 LLM 安全对齐问题引入 O-RAN 控制面，提出了面向电信基础设施的运行时防护范式，对 6G 网络智能化与 LLM 在关键基础设施中的可信部署具有重要参考价值。",
+  "tags": [
+    "LLM Security",
+    "Prompt Injection",
+    "Open RAN",
+    "Intent-Based Networking"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 集成到 O-RAN 控制回路引入了运行时提示注入这一新型攻击面，静态检查无法有效防御",
+      "闭环意图一致性校验可在控制决策执行前后持续比对 LLM 输出与原始用户意图，检测决策偏移",
+      "该工作将 LLM 安全对齐问题从通用场景延伸到电信关键基础设施控制面，为可信网络智能化提供新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

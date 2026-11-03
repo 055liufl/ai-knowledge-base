@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-079",
+  "title": "ReuScope: Auditing Data Reuse and Evaluation Sensitivity in Capsule Vision 2024",
+  "source_url": "https://arxiv.org/abs/2610.41835",
+  "source_platform": "rss_ai_research",
+  "summary": "ReuScope 是一个用于审计数据重用和评估敏感性的协议，以 Capsule Vision 2024 挑战赛为案例研究。该协议结合数据关系测量与两种对比实验：在固定预测结果的情况下改变评估人群，以及在固定评估集的情况下改变训练数据。研究发现，字节完全相同的文件跨越了公开的训练-验证边界，并且所有 41 个 Kvasir-Capsule 录制视频都对帧有贡献。这项工作揭示了医学影像基准测试中潜在的数据泄漏和评估脆弱性问题，强调了在模型评估中严格审计数据重用和评估设计的重要性。对于关注机器学习可复现性、基准测试可靠性以及医学影像分析的研究者和开发者而言，该研究提供了可操作的审计方法和警示性发现，值得在构建和评估模型时参考。",
+  "tags": [
+    "数据审计",
+    "评估敏感性",
+    "医学影像",
+    "基准测试"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "字节完全相同的文件跨越了公开的训练-验证边界，表明存在数据泄漏风险。",
+      "所有 41 个 Kvasir-Capsule 录制视频都对帧有贡献，可能影响评估的独立性。",
+      "通过固定预测改变评估人群或固定评估改变训练数据的对比，可量化评估敏感性。",
+      "ReuScope 协议为审计数据重用和评估设计提供了可复用的方法论。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

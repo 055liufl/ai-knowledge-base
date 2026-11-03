@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-002",
+  "title": "Beyond Plausible Prediction: Safety Sufficiency in Web World Models",
+  "source_url": "https://arxiv.org/abs/2610.40798",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了网页世界模型（Web World Models）在预测候选动作后果时的安全性问题。研究指出，尽管模型生成的预测在语义上看似合理（在3000个预测中86.1%被人类评估为合理），但这并不足以支持正确的安全决策。作者通过匹配的人类评估发现，多个模型表现出高度不对称的授权行为：它们虽然能保持较低的“错误安全执行”率，但对可澄清的授权状态（AS）召回率很差。这意味着模型可能过于保守或遗漏关键的安全信号，导致在需要澄清时未能正确识别。该工作强调了超越“看似合理”的预测，转向评估安全充分性的必要性，对构建可靠的自主代理安全机制具有重要启示。",
+  "tags": [
+    "World Models",
+    "Safety",
+    "Agent",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:55:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预测的语义合理性不等于安全决策的正确性，86.1%的合理预测仍可能误导安全判断。",
+      "多个模型在授权行为上存在不对称性：低错误安全执行率伴随对可澄清授权状态的低召回率。",
+      "需要建立超越表面合理性的安全充分性评估框架，以确保代理行动前的预测真正支持安全决策。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

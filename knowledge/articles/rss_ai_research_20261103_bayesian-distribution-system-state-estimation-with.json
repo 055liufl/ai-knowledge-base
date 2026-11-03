@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-106",
+  "title": "Bayesian Distribution System State Estimation with Flow Matching",
+  "source_url": "https://arxiv.org/abs/2610.40728",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出PoSE（后验采样状态估计）方法，用于解决中压馈线实时量测稀缺条件下的配电网状态估计（DSSE）问题。传统加权最小二乘法虽保持潮流方程精确，但将伪量测先验简化为均值和方差，损失了先验分布信息；监督式深度学习估计器虽能学习潮流关系，却与特定量测集绑定，泛化性差。PoSE利用流匹配（Flow Matching）进行贝叶斯后验采样，在保持潮流约束的同时保留完整的先验分布，并能适应不同量测配置。该工作将生成式建模引入电力系统状态估计，为低可观测配电网提供了更灵活、更准确的概率估计框架，值得关注。",
+  "tags": [
+    "Flow Matching",
+    "Bayesian Inference",
+    "State Estimation",
+    "Power Systems"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流匹配用于贝叶斯后验采样，可保留伪量测的完整先验分布，避免WLS仅用均值和方差的简化。",
+      "PoSE不绑定单一量测集，相比监督深度学习估计器具有更好的泛化能力。",
+      "在保持潮流方程精确性的同时实现概率化状态估计，适合实时量测稀缺的中压配电网。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

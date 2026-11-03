@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-097",
+  "title": "ACCT: Asymmetric Cross-LLM Context Transfer",
+  "source_url": "https://arxiv.org/abs/2610.42116",
+  "source_platform": "rss_ai_research",
+  "summary": "ACCT（Asymmetric Cross-LLM Context Transfer）是一篇针对异构 LLM 部署场景的 arXiv 论文。随着实际系统从单一模型调用转向动态调用不同模型进行推理，同一上下文在跨模型复用时会被目标模型重复处理，导致显著的计算开销。ACCT 提出一种非对称的跨 LLM 上下文迁移方法，旨在将源模型已处理的上下文表示高效迁移至目标模型，避免重复计算。该工作值得关注，因为它直面多模型异构部署中的核心效率瓶颈，有望降低推理成本并提升系统吞吐，对构建实用化 LLM 服务架构具有参考价值。",
+  "tags": [
+    "LLM",
+    "Context Transfer",
+    "Inference Efficiency",
+    "Heterogeneous Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "异构多模型部署中，上下文跨模型复用会导致重复计算开销，是实际系统的重要效率问题",
+      "ACCT 提出非对称跨 LLM 上下文迁移，避免目标模型重新处理相同上下文",
+      "该方法有望降低多模型推理成本，对 LLM 服务基础设施优化具有实用意义"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

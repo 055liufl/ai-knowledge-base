@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-073",
+  "title": "TSBPO: Tree-Structured Branching for Policy Optimization in Interactive Language Agents",
+  "source_url": "https://arxiv.org/abs/2610.41697",
+  "source_platform": "rss_ai_research",
+  "summary": "TSBPO 是一篇关于交互式语言智能体策略优化的研究论文，针对从终端结果训练智能体时面临的三个耦合问题提出统一解决方案：采样哪些任务与状态延续、如何将延迟反馈归因到具体决策、以及如何聚合多 token 动作的 token 级损失。作者提出树结构化的“采样到更新”范式，在单一训练循环内同时处理上述问题，并引入基于似然拟合的 Root/Branch 分配器，利用保留的任务与状态证据进行定向采样。该工作值得关注的原因在于：交互式语言智能体的强化学习训练长期受困于稀疏延迟奖励与长程信用分配难题，而 TSBPO 将树搜索式采样与策略优化统一起来，为提升智能体在复杂多轮任务中的学习效率提供了新思路，对 Agent 训练基础设施与算法研究均有参考价值。",
+  "tags": [
+    "Agent",
+    "RL",
+    "LLM",
+    "Training"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:58:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将采样策略、延迟反馈归因与多 token 动作损失聚合三个耦合问题统一到单一训练循环中解决",
+      "采用树结构化的 Root/Branch 分配器，基于似然拟合与保留的任务/状态证据实现定向采样",
+      "为交互式语言智能体的长程信用分配与稀疏奖励训练提供了新的范式参考"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-134",
+  "title": "Lineage Is Memory: Parent Inheritance and Feedback Disclosure in Short-Budget LLM-Guided Optimization",
+  "source_url": "https://arxiv.org/abs/2610.41157",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究短预算场景下 LLM 引导的迭代优化（如提示词与程序自动改进）中的信息利用问题。现有方法通常把优化瓶颈归因于单轮反思范围过窄，于是引入全量错误聚类、定向小批量或更大提案模型，让优化器每步看到更多失败模式。作者提出“Lineage Is Memory”视角，强调父代继承与反馈披露：优化器应利用候选的谱系历史（父代信息）作为记忆，并控制失败反馈的披露方式，而非单纯扩大单步可见的错误集合。该工作对理解迭代 LLM 优化的信息瓶颈、设计更高效的短预算优化流程有参考价值，适合关注自动提示优化与 LLM 智能体的研究者。",
+  "tags": [
+    "LLM",
+    "Prompt Optimization",
+    "Agent",
+    "In-Context Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:01:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "迭代 LLM 优化的瓶颈不只是单轮反思范围窄，谱系历史（父代信息）可作为有效记忆被利用",
+      "反馈披露策略（展示哪些失败案例、如何展示）比单纯扩大错误集合更关键",
+      "短预算场景下应重视候选继承关系与信息传递效率，而非依赖更大提案模型"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

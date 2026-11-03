@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-001",
+  "title": "More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum",
+  "source_url": "https://arxiv.org/abs/2610.40758",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 CLR-Bench（Curriculum of Latent Rules Benchmark），用于评测自演化智能体（self-evolving agents）能否从反馈中学习并内化从未被告知的隐藏规则。自演化智能体能够根据反馈重写持久状态，但此前缺乏对其是否真正学会规则、还是仅将每次纠正记录为例外条目的系统测试。CLR-Bench 采用课程式设计：每一层级在已有规则之上新增一条隐藏规则，规则作用于代表具名实体的不透明标签，智能体需通过交互反馈推断并泛化规则。该基准揭示了关键问题——智能体可能通过不断累积例外列表来通过测试，导致规则越多、列表越长，而非真正掌握规则结构。这项工作值得关注，因为它为自演化智能体的规则学习能力提供了可量化的评测框架，区分了“记忆例外”与“归纳规则”两种本质不同的能力，对智能体持续学习、泛化与状态管理的研究具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Self-Evolving",
+    "Rule Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:55:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自演化智能体可能通过累积例外条目而非真正归纳规则来通过测试，规则越多列表越长，掩盖了泛化能力的缺失。",
+      "CLR-Bench 采用逐层叠加隐藏规则的课程式设计，可系统评估智能体从反馈中推断并泛化未告知规则的能力。",
+      "该基准区分了“记忆纠正”与“学习规则”两种能力，为智能体持续学习评测提供了更严格的范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

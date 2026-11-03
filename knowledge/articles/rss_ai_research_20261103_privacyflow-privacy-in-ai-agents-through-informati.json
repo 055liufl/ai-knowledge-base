@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-103",
+  "title": "PrivacyFlow: Privacy in AI Agents through Information Flow Analysis and Consequence-Aware Risk Management",
+  "source_url": "https://arxiv.org/abs/2610.40714",
+  "source_platform": "rss_ai_research",
+  "summary": "PrivacyFlow 是一篇关于 LLM 智能体隐私保护的研究工作，针对自主智能体在执行多步骤个人数据工作流时容易偏离用户隐私预期、泄露敏感且脱离上下文信息的问题。论文以上下文完整性（Contextual Integrity, CI）理论为基础，指出现有基准和防御方法很少能在动态环境中对真实的多步骤任务序列真正落实 CI 原则。为此，作者首先构建了 agentic PrivacyBench，包含 986 个任务序列、共 5873 个任务，用于系统评估智能体在多步执行过程中的隐私风险。在此基础上，论文提出 PrivacyFlow 框架，通过信息流分析追踪数据在智能体工作流中的传播路径，并结合后果感知的风险管理机制对潜在隐私泄露进行预判与处置。该工作值得关注的原因在于：随着 LLM 智能体从单轮问答走向长程自主任务执行，隐私泄露呈现出跨步骤、跨工具、隐式传播的新特征，传统基于单点过滤的防护手段难以覆盖；而将 CI 理论工程化为可评测的基准与可部署的防御框架，为智能体隐私安全提供了从度量到缓解的完整路径，对智能体落地于涉及个人数据的真实场景具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Privacy",
+    "LLM",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:59:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多步骤自主智能体的隐私风险具有跨步骤、跨工具传播的特征，单点内容过滤难以覆盖，需要从信息流层面建模",
+      "上下文完整性（CI）理论虽能形式化隐私问题，但缺乏面向动态环境中真实多步任务序列的可操作化实现",
+      "agentic PrivacyBench 以 986 个任务序列、5873 个任务提供了智能体隐私风险的规模化评测基础",
+      "后果感知的风险管理将隐私防护从被动检测推进到对下游后果的预判与主动干预"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

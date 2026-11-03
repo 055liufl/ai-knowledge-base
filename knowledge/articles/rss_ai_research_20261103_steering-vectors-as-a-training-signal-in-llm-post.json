@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-121",
+  "title": "Steering Vectors as a Training Signal in LLM Post-Training",
+  "source_url": "https://arxiv.org/abs/2610.40998",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨将引导向量（Steering Vectors, SVs）从推理时的行为控制工具转化为后训练阶段的训练信号。SVs 是残差流中的方向向量，此前主要用于推理时对隐藏状态进行干预以改变模型行为。作者提出一个统一框架，研究这些方向能否在监督学习（SFT、蒸馏）和可验证奖励强化学习（RLVR）中指导参数更新。这项工作值得关注，因为它打通了「推理时干预」与「训练时优化」两条路径，有望让行为控制信号直接内化为模型参数，减少推理开销并提升对齐稳定性，为 LLM 后训练提供一种新的、可解释性驱动的训练范式。",
+  "tags": [
+    "Steering Vectors",
+    "Post-Training",
+    "RLVR",
+    "Alignment"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:00:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将推理时的引导向量复用为训练信号，实现行为控制从外部干预到参数内化的转变",
+      "统一框架覆盖 SFT、蒸馏与 RLVR 三类后训练范式，验证 SVs 作为训练信号的通用性",
+      "为可解释性驱动的模型对齐提供了新路径，可能降低推理阶段的干预成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

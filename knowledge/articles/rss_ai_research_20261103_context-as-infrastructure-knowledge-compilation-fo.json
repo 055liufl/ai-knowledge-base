@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-137",
+  "title": "Context as Infrastructure: Knowledge Compilation for Retrieval in Agentic Systems with Harnesses",
+  "source_url": "https://arxiv.org/abs/2610.41172",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出在Agentic RAG系统中，检索过程正从单次查询演变为由搜索harness驱动的多轮循环（写查询、读结果、重写、决定停止）。实验表明，仅用BM25/grep和MiniMax M3的harness在BrowseComp-Plus上达到85%、多跳FRAMES上达到91%的准确率，无需编译索引或向量索引，说明检索准确性已基本解决。但随之暴露的是上下文管理问题：缺乏纪律的循环会重复查询、重复阅读文档、用无用段落填满上下文窗口。论文因此提出将上下文视为基础设施，通过知识编译（knowledge compilation）来组织和管理检索过程中的上下文，以提升Agentic系统的效率与可靠性。该工作值得关注，因为它将研究焦点从检索精度转向上下文工程，为构建高效、可扩展的Agentic RAG系统提供了新视角。",
+  "tags": [
+    "RAG",
+    "Agent",
+    "Context Engineering",
+    "Retrieval"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:01:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic检索中，简单BM25/grep加搜索harness已能实现高准确率，无需向量索引或编译索引。",
+      "核心瓶颈从检索准确性转向上下文管理：重复查询、重复阅读和无效段落填充窗口。",
+      "将上下文视为基础设施，通过知识编译来纪律化检索循环，是提升Agentic系统效率的关键方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261103-135",
+  "title": "ARK: Avoiding Routing Collisions for KV Cache Transfer in Disaggregated LLM Inference",
+  "source_url": "https://arxiv.org/abs/2610.41160",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出ARK方案，解决分离式LLM推理中KV缓存传输的路由冲突问题。分离式推理将预填充和解码阶段部署在不同GPU池，导致大量KV缓存跨节点传输，单次传输持续数百毫秒至数秒，形成主导链路带宽的“超级大象流”。传统无状态ECMP哈希可能将多个大象流映射到同一脊交换机链路，造成严重冲突和秒级延迟。ARK利用这些流的持久性特征，设计避免路由冲突的机制，提升传输效率和推理性能。该工作对大规模LLM推理基础设施的网络优化具有重要参考价值。",
+  "tags": [
+    "LLM Inference",
+    "KV Cache",
+    "Networking",
+    "Disaggregated Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T16:01:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分离式LLM推理产生持续数百毫秒至数秒的KV缓存传输，形成主导带宽的超级大象流。",
+      "无状态ECMP的哈希冲突会导致脊链路负载不均，显著延长传输时间。",
+      "ARK利用大象流的持久性特征，设计避免路由冲突的机制以提升网络利用率。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

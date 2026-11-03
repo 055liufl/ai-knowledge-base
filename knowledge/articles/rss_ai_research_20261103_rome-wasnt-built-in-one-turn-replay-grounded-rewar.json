@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261103-043",
+  "title": "Rome Wasn't Built in One Turn: Replay-Grounded Reward Signals for Long-Horizon Freeciv Agents",
+  "source_url": "https://arxiv.org/abs/2610.41264",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究如何训练语言模型智能体玩长时程策略游戏（以开源回合制帝国建设游戏 Freeciv 为例）。作者指出，长时程策略游戏中的确定性反馈稀疏且往往只在游戏结束时才出现，而游戏内分数虽能提供密集信号，却无法可靠预测最终结果——在八款策略游戏中，有 8% 到 68% 的局面配对里，分数更高的局面反而导向更差的结果，作者将这一现象称为“记分板陷阱”（scoreboard traps）。为解决该问题，论文提出基于回放的奖励信号（Replay-Grounded Reward Signals），利用对局回放来构建更可靠的奖励信号，从而训练长时程 Freeciv 智能体。该工作值得关注，因为它揭示了将强化学习与语言模型智能体结合用于长时程决策时的核心奖励设计难题，并提出了一种可落地的信号构造思路，对 LLM 智能体在复杂策略环境中的训练具有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Reinforcement Learning",
+    "Reward Design",
+    "Game AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-03T15:53:12Z",
+  "collected_at": "2026-11-03T15:56:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "游戏内分数是短视的密集信号，在 8%-68% 的局面配对中会给出与最终结果相反的排序，即“记分板陷阱”",
+      "长时程策略游戏的真实反馈稀疏且延迟到终局，直接依赖分数奖励会误导智能体优化",
+      "基于对局回放构造奖励信号，可提供更贴近最终胜负的监督，缓解稀疏与误导并存的奖励问题",
+      "该问题具有普遍性：在八款策略游戏中均观察到分数与最终结果不一致的现象"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
