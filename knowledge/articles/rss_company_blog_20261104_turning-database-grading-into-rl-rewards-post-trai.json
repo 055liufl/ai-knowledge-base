@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261104-006",
+  "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+  "source_url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了微软在 Hugging Face 博客上发布的 ThinkingBox 方法，旨在通过将数据库评分转化为强化学习奖励来对智能体进行后训练。该方法针对数据库相关任务（如 SQL 生成、查询优化等），设计了一套自动评分机制，将执行结果或查询质量转化为可量化的奖励信号，从而利用强化学习微调智能体模型。这种思路解决了传统监督学习需要大量标注数据的问题，使智能体能够在与数据库交互的过程中通过试错学习，提升任务完成准确率和效率。文章详细描述了奖励函数的设计、训练流程以及实验效果，展示了 RL 在工具使用型智能体训练中的潜力。该工作对于推动智能体在真实环境中的自主进化具有重要意义，尤其适用于需要精确操作外部工具（如数据库）的场景，为开发者提供了一种可复用的后训练范式。",
+  "tags": [
+    "RL",
+    "Agent",
+    "Database",
+    "Post-Training"
+  ],
+  "author": null,
+  "published_at": "2026-11-04T15:58:49Z",
+  "collected_at": "2026-11-04T16:01:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将数据库评分自动转化为强化学习奖励，避免了人工标注，使智能体能够通过试错学习优化数据库操作。",
+      "ThinkingBox 提供了一种通用的后训练框架，可扩展至其他需要精确工具使用的智能体任务。",
+      "实验表明该方法能显著提升智能体在数据库任务上的表现，验证了 RL 在工具使用型智能体训练中的有效性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

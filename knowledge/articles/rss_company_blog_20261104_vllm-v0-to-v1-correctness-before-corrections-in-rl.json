@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261104-056",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队发布在 Hugging Face 博客上的技术文章，探讨在强化学习（RL）训练流程中将 vLLM 从 V0 版本迁移到 V1 版本时遇到的正确性问题。vLLM 作为高吞吐 LLM 推理引擎，常被用于 RLHF/RLVR 等训练框架中生成 rollout 样本；版本升级虽然带来性能与架构改进，但也可能引入采样结果、token 概率或调度行为上的细微偏差，进而影响 RL 训练的稳定性与最终效果。文章强调「先保证正确性，再做修正」的原则，即在追求性能优化和功能修正之前，必须先验证 V1 在数值与行为层面与预期一致，避免因推理引擎的隐性差异污染训练信号。该内容对正在搭建或维护 RL 训练基础设施的团队具有直接参考价值，尤其适合关注推理引擎与训练框架集成、版本迁移风险、以及 RL 训练可复现性的开发者与研究者。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "LLM推理",
+    "训练基础设施"
+  ],
+  "author": null,
+  "published_at": "2026-11-04T15:58:49Z",
+  "collected_at": "2026-11-04T16:03:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "从 vLLM V0 迁移到 V1 时，推理引擎的行为差异可能影响 RL 训练信号的正确性，需优先验证数值一致性。",
+      "在 RL 训练流程中，推理引擎的采样与概率输出必须与训练框架预期严格对齐，否则会引入难以察觉的偏差。",
+      "版本升级应遵循「先正确性、后优化」的原则，避免性能改进掩盖潜在的训练稳定性问题。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

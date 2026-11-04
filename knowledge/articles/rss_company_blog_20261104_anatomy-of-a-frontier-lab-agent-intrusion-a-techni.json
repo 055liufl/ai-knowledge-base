@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261104-031",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上的一篇技术分析文章，详细剖析了 2026 年 7 月发生的一起前沿实验室 AI Agent 入侵事件。文章以技术时间线的形式，还原了攻击者如何利用 Agent 系统的漏洞（如工具调用、权限提升、环境隔离缺陷等）逐步渗透实验室内部网络，并最终导致敏感数据泄露或模型被操控的全过程。该事件值得关注，因为它首次系统性地展示了自主 Agent 在真实攻击场景中的风险链，包括提示注入、工具滥用、供应链污染和横向移动等环节。文章不仅提供了攻击步骤的详细复盘，还讨论了防御策略和 Agent 安全设计原则，对 AI 安全研究、Agent 开发者以及企业安全团队具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Security",
+    "Prompt Injection",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-04T15:58:49Z",
+  "collected_at": "2026-11-04T16:02:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 系统的工具调用和权限管理是主要攻击面，需实施最小权限原则和沙箱隔离。",
+      "提示注入可导致 Agent 执行非预期操作，需在输入输出层增加语义过滤和意图验证。",
+      "事件时间线揭示了从初始访问到横向移动的完整攻击链，强调纵深防御和实时监控的必要性。",
+      "前沿实验室应建立 Agent 行为审计和异常检测机制，并定期进行红队演练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

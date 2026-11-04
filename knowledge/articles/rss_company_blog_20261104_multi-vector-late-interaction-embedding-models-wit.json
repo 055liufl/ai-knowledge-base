@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261104-026",
+  "title": "Multi-Vector (Late Interaction) Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何在 Sentence Transformers 库中使用多向量（延迟交互）嵌入模型。多向量模型（如 ColBERT）为每个 token 生成独立的嵌入向量，并在查询时通过延迟交互（如 MaxSim）计算相似度，相比传统的单向量模型能更细粒度地捕捉语义匹配信号，在检索任务中通常有更好的效果。文章详细说明了这类模型的工作原理、在 Sentence Transformers 中的实现方式（包括模型加载、编码、相似度计算和训练），并提供了实际代码示例。该内容值得关注，因为它降低了使用先进检索模型的门槛，使开发者能够方便地将多向量检索集成到自己的应用中，同时保持了与现有 Sentence Transformers 生态的兼容性。",
+  "tags": [
+    "Embedding",
+    "Retrieval",
+    "Sentence Transformers",
+    "ColBERT",
+    "NLP"
+  ],
+  "author": null,
+  "published_at": "2026-11-04T15:58:49Z",
+  "collected_at": "2026-11-04T16:02:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量（延迟交互）模型为每个 token 生成嵌入，通过 MaxSim 等操作计算细粒度相似度，提升检索质量。",
+      "Sentence Transformers 现已支持多向量模型，提供统一的 API 进行编码、相似度计算和训练。",
+      "该集成降低了采用 ColBERT 等先进检索模型的门槛，便于开发者构建高效检索系统。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
