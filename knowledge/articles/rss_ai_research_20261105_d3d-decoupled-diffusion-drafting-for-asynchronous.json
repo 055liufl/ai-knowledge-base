@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-068",
+  "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.06425",
+  "source_platform": "rss_ai_research",
+  "summary": "D3D 提出了一种用于异步推测解码的解耦扩散草稿模型，旨在解决现有目标条件扩散草稿器因每轮生成新块时需等待目标模型更新隐藏状态而导致的草稿与验证串行执行问题。该方法通过结合块级去噪与辅助自回归监督，构建了一个独立的扩散草稿器，消除了轮次间的依赖，从而允许草稿与验证并行进行，有望显著提升推测解码的加速效果。该工作对于大语言模型推理加速领域具有潜在价值，尤其关注如何在保持生成质量的同时突破串行瓶颈。",
+  "tags": [
+    "Speculative Decoding",
+    "Diffusion Model",
+    "LLM Inference",
+    "Parallel Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:17:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有目标条件扩散草稿器因依赖目标模型隐藏状态更新而被迫串行执行，限制了加速比。",
+      "D3D 通过解耦轮次间依赖，使草稿与验证可异步并行，提升推测解码效率。",
+      "结合块级去噪与辅助自回归监督，在保持并行生成的同时维持草稿质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

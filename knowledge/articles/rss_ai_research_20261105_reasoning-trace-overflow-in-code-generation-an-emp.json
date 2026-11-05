@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-050",
+  "title": "Reasoning-Trace Overflow in Code Generation: An Empirical Study of Explicit Reasoning Models",
+  "source_url": "https://arxiv.org/abs/2611.06095",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究显式推理模型在代码生成任务中的“推理轨迹溢出”现象：模型可能将大量输出预算消耗在推理过程上，导致最终无法生成可用代码。作者在七个小型开源推理模型和六个代码基准设置上，测量固定32k token输出预算中推理所占比例，以及是否最终产出代码。该研究值得关注，因为它揭示了推理增强模型在代码生成场景下的实际风险——推理能力提升可能以牺牲输出可用性为代价，对模型部署和输出预算管理具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Reasoning",
+    "Empirical Study"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "显式推理模型在代码生成中可能因推理过程耗尽输出预算而无法产出可用代码，形成“推理轨迹溢出”问题。",
+      "该现象在小型开源推理模型中普遍存在，需在部署时关注输出预算分配与推理长度控制。",
+      "研究覆盖七个模型和六个代码基准，为量化推理开销与代码生成成功率的关系提供了实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

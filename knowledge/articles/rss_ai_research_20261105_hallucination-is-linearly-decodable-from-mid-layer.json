@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-096",
+  "title": "Hallucination Is Linearly Decodable from Mid-Layer Hidden States in Quantized LLMs",
+  "source_url": "https://arxiv.org/abs/2606.02628",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究开源大语言模型（LLM）的隐藏状态中是否存在线性可分的真实性信号，以及该信号在网络哪一层最强。作者在三个7B-8B指令微调模型（Llama-3.1-8B、Mistral-7B、Qwen2.5-7B）上，以4-bit NF4量化加载，并在四个幻觉基准（TruthfulQA、HaluEval-QA、FEVER及受控合成集）上提取逐层隐藏状态，比较四种检测方法。研究发现幻觉信号在中间层可线性解码，且量化不影响该性质。该工作为轻量级幻觉检测提供了新思路，对LLM可靠部署具有实用价值。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "Interpretability",
+    "Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "中间层隐藏状态包含线性可分的真实性信号，可用于幻觉检测",
+      "4-bit NF4量化不破坏该线性可解码性，降低检测成本",
+      "跨多个模型和基准验证了信号的普遍性",
+      "为无需额外训练的轻量级幻觉检测器提供了理论基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

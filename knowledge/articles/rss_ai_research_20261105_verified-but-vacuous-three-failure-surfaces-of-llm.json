@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-017",
+  "title": "Verified but Vacuous: Three Failure Surfaces of LLM-Driven Verified Code Generation",
+  "source_url": "https://arxiv.org/abs/2611.05590",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，当前评估LLM生成代码的验证流程通常只报告一个单一的验证数字，这掩盖了三个不同的属性。作者提出一个条件审计序列，将验证分解为三个失败面：验证器接受（Surface A）、语法规范绑定（Surface B，即证明义务是否绑定到规范）以及语义规范保真度（Surface C，即规范是否捕获了非形式化需求）。论文的核心贡献在于揭示“已验证”代码可能空洞无物——即使通过验证器，也可能在规范绑定或语义保真上失败。这一分析框架对LLM代码生成的可信评估具有重要方法论意义，提醒研究者和开发者不能仅依赖单一验证指标，而需分层审计。该工作属于LLM代码生成与形式化验证交叉领域，对提升AI生成代码的可靠性评估有直接指导价值。",
+  "tags": [
+    "LLM",
+    "Code Generation",
+    "Formal Verification",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一验证数字会掩盖LLM生成代码在验证器接受、规范绑定和语义保真三个层面的不同失败模式。",
+      "“已验证”代码可能空洞无物：通过验证器并不保证证明义务正确绑定到规范，也不保证规范忠实反映原始需求。",
+      "条件审计序列提供了一种分层评估框架，有助于更严谨地衡量LLM代码生成的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

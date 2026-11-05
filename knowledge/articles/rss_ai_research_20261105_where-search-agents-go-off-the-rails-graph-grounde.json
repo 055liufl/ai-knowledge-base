@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-082",
+  "title": "Where Search Agents Go Off the Rails: Graph-Grounded Step-Level Verification",
+  "source_url": "https://arxiv.org/abs/2611.06662",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注搜索增强推理系统（Search-augmented reasoning systems）的可靠性审计问题。这类系统可能给出正确答案，但中间推理步骤存在错误。作者提出 GraphRail 方法，将需求、证据和推理表示为结构化声明（structured claims），并通过图结构进行比对，无需生成式评判器或标准答案即可验证证据是否覆盖问题、推理是否针对问题、推理是否基于证据。该方法在三个多跳问答基准和三种推理模型上进行了评估。该研究值得关注，因为它提供了一种无需金标准答案的步骤级验证机制，有助于提升搜索智能体（Search Agents）的可解释性和可信度，对构建更可靠的检索增强推理系统具有实际意义。",
+  "tags": [
+    "Search Agent",
+    "RAG",
+    "Verification",
+    "Multi-hop QA"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:17:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "搜索增强推理系统可能答案正确但中间步骤错误，需要步骤级审计而非仅看最终结果。",
+      "GraphRail 将需求、证据和推理表示为结构化声明，通过图比对实现验证，无需生成式评判器或标准答案。",
+      "该方法在多跳问答基准上验证了其有效性，为搜索智能体的可靠性评估提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

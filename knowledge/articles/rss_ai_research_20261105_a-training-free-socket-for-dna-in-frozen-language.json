@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-100",
+  "title": "A Training-Free Socket for DNA in Frozen Language Models",
+  "source_url": "https://arxiv.org/abs/2611.05401",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种无需训练的\"socket\"方法，将DNA基础模型（Evo 2）与冻结的大语言模型连接起来。传统方法需要训练连接器甚至微调LLM，而作者证明对于基因级别的问题，一个闭式映射就足够了。具体而言，socket通过一个岭回归（称为plug）将冻结的Evo 2特征映射到宿主LLM早期层中基因符号、名称和描述对应的表示，plug的输出替换占位符位置的隐藏状态。该方法无需训练连接器或LLM，降低了跨模态集成的成本，为生物信息学与LLM的结合提供了轻量级方案，值得关注的是其\"免训练\"特性和闭式解的有效性，可能推动DNA-语言模型融合在基因问答等任务上的快速部署。",
+  "tags": [
+    "LLM",
+    "DNA Foundation Model",
+    "Cross-modal Integration",
+    "Training-free"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "闭式岭回归映射足以连接DNA基础模型与冻结LLM，无需训练连接器或微调LLM",
+      "该方法在基因级别问题上有效，通过替换早期层占位符隐藏状态实现跨模态信息注入",
+      "免训练特性显著降低了DNA-LLM集成的计算成本和部署门槛"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

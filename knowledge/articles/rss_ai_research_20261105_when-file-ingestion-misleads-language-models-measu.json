@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-137",
+  "title": "When File Ingestion Misleads Language Models: Measuring and Mitigating Divergences in Office Documents",
+  "source_url": "https://arxiv.org/abs/2611.05806",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注Office文档上传至大语言模型（LLM）处理时的一个关键问题：LLM看到的文本与人类在Office应用中看到的显示内容可能不一致。由于LLM通常读取提取器从Office Open XML（OOXML）文件中解析出的文本，而不同提取器在读取哪些OOXML部件以及如何解释这些部件上存在实现差异，导致提取结果与Office应用实际显示的内容产生偏差。这种偏差可能误导LLM的后续处理，影响文档理解、问答、摘要等任务的准确性。论文旨在测量并缓解这类分歧，属于文档处理与LLM可靠性交叉领域的研究。该工作值得关注，因为它揭示了文档摄取管道中一个常被忽视但影响广泛的问题，对构建可靠的文档处理系统具有实际意义。",
+  "tags": [
+    "LLM",
+    "Document Processing",
+    "OOXML",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:20:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM读取的Office文档文本来自提取器对OOXML的解析，而非Office应用的实际渲染结果，二者可能不一致。",
+      "不同提取器在读取的OOXML部件和解释方式上存在实现差异，导致输出分歧。",
+      "这种提取偏差可能误导LLM的文档处理任务，需要测量和缓解。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

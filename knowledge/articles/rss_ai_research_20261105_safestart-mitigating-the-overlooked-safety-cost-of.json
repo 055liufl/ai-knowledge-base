@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-054",
+  "title": "SafeStart: Mitigating the Overlooked Safety Cost of Active Expert Reduction in MoE LLM Serving",
+  "source_url": "https://arxiv.org/abs/2611.06147",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了MoE大模型推理服务中一个被忽视的安全隐患：现有加速方法（如减少每token激活的专家数量）虽在准确率基准上表现良好，却会削弱模型对有害请求的拒绝能力。作者提出SafeStart方法，在vLLM框架和单张RTX A6000上验证，能在保留约三分之二加速收益的同时大幅恢复模型的安全拒绝行为。这项工作首次系统性地将MoE推理优化与对齐安全性联系起来，对部署高效且安全的MoE服务具有重要实践价值。",
+  "tags": [
+    "MoE",
+    "LLM Serving",
+    "AI Safety",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE推理加速中减少激活专家数会显著削弱模型对有害请求的拒绝能力，而现有评估仅关注准确率基准，忽视了这一安全代价",
+      "SafeStart能在保留约三分之二加速收益的前提下，大幅恢复模型的安全拒绝行为",
+      "该发现提示MoE服务优化需要引入安全性评估维度，不能仅以准确率和吞吐量为优化目标"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

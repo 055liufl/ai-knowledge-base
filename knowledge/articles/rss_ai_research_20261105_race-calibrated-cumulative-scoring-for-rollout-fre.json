@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-140",
+  "title": "RACE: Calibrated Cumulative Scoring for Rollout-Free Robot Policy Checkpoint Selection",
+  "source_url": "https://arxiv.org/abs/2611.05838",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 RACE（校准累积评分），用于在机器人策略训练过程中无需实际部署即可选择最佳检查点。传统方法使用平均验证损失作为替代指标，但其检查点排名常与真实部署性能不一致。作者分析了两大局限：一是损失惩罚动作偏差时未考虑策略置信度校准，二是累积评分方式可能忽略时序一致性。RACE 通过校准累积评分机制，在无需真实环境 rollout 的情况下更可靠地评估检查点。该工作对机器人学习领域具有实用价值，能显著降低策略评估成本，提升部署效率。",
+  "tags": [
+    "Robot Learning",
+    "Policy Evaluation",
+    "Checkpoint Selection",
+    "Calibration"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:20:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "平均验证损失作为检查点选择指标存在排名不一致问题，主要源于未考虑策略置信度校准",
+      "RACE 通过校准累积评分实现无需真实 rollout 的可靠检查点选择",
+      "该方法可大幅降低机器人策略部署评估的成本与时间"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-043",
+  "title": "Routes of Reasoning: Reading and Reshaping Test-Time Compute in MoE Models",
+  "source_url": "https://arxiv.org/abs/2611.05919",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究混合专家（MoE）模型在推理阶段的计算分配问题，指出模型常出现“过度思考”现象——在已得出正确答案后仍持续验证和重复推导，浪费昂贵算力甚至损害性能。现有方法如 token 预算或引导主要调控推理时长，而非针对具体行为。作者提出对 MoE 模型测试时计算进行读取与重塑，以识别并干预规划、推导、验证等不同推理行为，从而更精准地分配计算资源。该工作值得关注，因为它直击推理模型效率痛点，为降低推理成本、提升输出质量提供了行为级调控新思路，对 MoE 架构的推理优化具有实践意义。",
+  "tags": [
+    "MoE",
+    "推理优化",
+    "测试时计算",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理模型存在“过度思考”问题，在找到正确答案后仍继续验证和重复推导，浪费算力并可能降低性能。",
+      "现有 token 预算或引导方法只调控推理时长，未针对规划、推导、验证等具体行为进行干预。",
+      "该工作提出读取并重塑 MoE 模型的测试时计算，实现行为级的推理资源分配。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

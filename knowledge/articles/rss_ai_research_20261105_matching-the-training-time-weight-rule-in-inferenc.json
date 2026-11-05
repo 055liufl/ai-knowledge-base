@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-136",
+  "title": "Matching the Training-Time Weight Rule in Inference-Time Expert Deactivation",
+  "source_url": "https://arxiv.org/abs/2611.05804",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究推理时专家停用（expert deactivation）对混合专家（MoE）模型性能的影响，系统比较了四种实现方式：直接移除、冻结、剩余专家重归一化以及非归一化重路由。作者在四个模型家族的五个指令微调检查点以及一个基础OLMoE检查点上，对相同的停用专家集合进行了实验。研究发现，推理时停用专家不仅改变token路由，还改变专家权重，其效果高度依赖于实现方式。论文提出了一个权重和模型来关联这些变化，并强调推理时专家停用规则应与训练时的权重规则相匹配，以避免性能下降。这项工作对于MoE模型的可解释性、可控推理以及部署时的专家管理具有重要指导意义，尤其适用于需要动态调整模型容量或进行安全干预的场景。",
+  "tags": [
+    "MoE",
+    "Expert Deactivation",
+    "Inference",
+    "Model Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:20:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理时专家停用的效果取决于具体实现方式，不同方法（移除、冻结、重归一化、非归一化重路由）会导致显著不同的性能表现。",
+      "停用专家会同时改变token路由和专家权重，因此需要权重和模型来统一分析这些变化。",
+      "推理时的专家停用规则应与训练时的权重规则保持一致，否则可能引发性能退化。",
+      "该研究覆盖多个模型家族和检查点，为MoE模型的动态专家管理提供了实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

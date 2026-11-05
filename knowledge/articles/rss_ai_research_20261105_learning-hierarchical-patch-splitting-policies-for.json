@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-127",
+  "title": "Learning Hierarchical Patch Splitting Policies for Faster Vision Transformers",
+  "source_url": "https://arxiv.org/abs/2611.05742",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 Vision Transformer（ViT）因输入 token 序列过长而导致的效率瓶颈，提出了一种学习式的分层 patch 拆分策略。标准 ViT 使用单一 patch 尺寸对整张图像进行均匀切分，忽略了图像不同区域的内容复杂度差异；已有自适应 patch 尺寸方法虽能对视觉简单区域分配更粗的 patch 以减少 token 数，但依赖局部熵等像素级启发式规则，噪声大且不够准确。本文主张用可学习策略替代手工启发式，通过分层方式决定 patch 拆分粒度，从而在保持精度的同时降低 token 数量、加速 ViT 推理。该工作属于视觉 Transformer 效率优化方向，对模型部署与推理加速具有实用价值，值得关注自适应计算与动态 token 分配领域的研究者和工程师阅读。",
+  "tags": [
+    "ViT",
+    "Efficient Inference",
+    "Adaptive Computation",
+    "Token Reduction"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:19:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ViT 的计算瓶颈主要来自输入 token 序列长度，而非图像分辨率本身",
+      "基于局部熵等像素级启发式的自适应 patch 划分噪声大，学习式策略有望更准确",
+      "分层 patch 拆分可在视觉简单区域使用粗粒度 patch，显著减少 token 数量",
+      "该方法面向推理加速，兼顾精度与效率，适合部署场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

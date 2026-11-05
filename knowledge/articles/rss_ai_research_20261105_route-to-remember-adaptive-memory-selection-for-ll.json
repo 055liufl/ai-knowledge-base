@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-021",
+  "title": "Route to Remember: Adaptive Memory Selection for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.05636",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体在生产环境中记忆瓶颈问题，提出了一种自适应记忆选择方法。传统智能体记忆几乎完全基于文本：从超限上下文中提取关键点，并在查询时检索回上下文，导致每次新查询都产生随历史累积而增长的成本。权重记忆作为一种互补方案，将知识内化到模型参数中，无需上下文即可回答，近期受到关注。论文可能探索如何根据查询动态选择文本记忆或权重记忆，以平衡成本与效果。该工作值得关注，因为它直击智能体长期记忆的效率痛点，提出混合记忆路由机制，有望降低推理成本并提升响应质量，对构建可扩展的LLM智能体系统具有实用价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "文本记忆的检索成本随历史累积线性增长，成为生产智能体的瓶颈",
+      "权重记忆将知识内化到参数中，实现零上下文回答，是文本记忆的互补方案",
+      "自适应路由机制可根据查询动态选择记忆类型，平衡成本与效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

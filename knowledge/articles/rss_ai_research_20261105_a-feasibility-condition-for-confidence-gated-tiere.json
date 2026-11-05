@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-005",
+  "title": "A Feasibility Condition for Confidence-Gated Tiered LLM Inference",
+  "source_url": "https://arxiv.org/abs/2611.05394",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究分层LLM推理（tiered inference）的可行性条件，即如何将大语言模型的计算分布到从设备端、边缘硬件到数据中心的层级设备上，以实现更低成本、更低延迟和更私密的推理服务。现有系统大多编排冻结的模型检查点，并利用前向部署模型产生的置信度信号决定哪些请求本地解决、哪些升级到更高层级。论文给出了一个闭式条件（closed-form condition），用于判断置信度门控的分层推理在何种条件下可行。该工作值得关注，因为它为分层推理系统的设计提供了理论依据，有助于避免盲目部署导致的性能或成本问题，对边缘AI和高效LLM服务具有指导意义。",
+  "tags": [
+    "LLM",
+    "Inference",
+    "Edge Computing",
+    "Confidence Gating"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:14:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "分层推理通过置信度信号决定请求在设备端、边缘或数据中心处理，以平衡成本、延迟和隐私。",
+      "论文提出了一个闭式条件，用于判断置信度门控的分层推理是否可行，为系统设计提供理论判据。",
+      "该条件有助于避免在不可行的情况下部署分层推理，从而节省资源和提升服务效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

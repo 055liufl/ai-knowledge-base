@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-044",
+  "title": "Split-KV: Efficient Context Parallelism for Training Diffusion Drafters",
+  "source_url": "https://arxiv.org/abs/2611.05926",
+  "source_platform": "rss_ai_research",
+  "summary": "Split-KV 提出了一种针对扩散草稿模型（Diffusion Drafters）训练的高效上下文并行方法。扩散草稿模型通过并行去噪多个草稿 token 来加速推测解码，其训练依赖锚点采样构建紧凑的草稿查询，并对长上下文执行带块稀疏掩码的交叉注意力。作者通过实验发现：在固定查询预算下，接受长度随上下文规模增长保持稳定；而增加查询预算带来的质量提升逐渐递减。这一发现共同确立了以查询预算为核心、通过上下文并行来扩展训练上下文的高效路径。Split-KV 的核心在于将 KV 缓存沿序列维度切分，使长上下文训练能够分布到多个设备上，同时保持块稀疏注意力的计算效率。该方法有望显著降低扩散草稿模型在长上下文场景下的训练成本，提升推测解码的实用性和可扩展性，对加速大模型推理具有直接价值。",
+  "tags": [
+    "Diffusion Drafters",
+    "Speculative Decoding",
+    "Context Parallelism",
+    "Efficient Training"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "固定查询预算下，扩散草稿模型的接受长度随上下文规模增长保持稳定，说明扩展上下文不会损害草稿质量。",
+      "增加查询预算带来的质量增益递减，表明存在一个性价比最优的查询预算区间。",
+      "Split-KV 通过沿序列维度切分 KV 缓存实现上下文并行，使长上下文训练可分布到多设备并保持块稀疏注意力效率。",
+      "该方法为扩散草稿模型的长上下文训练提供了可扩展且高效的工程路径，有助于降低推测解码的训练成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

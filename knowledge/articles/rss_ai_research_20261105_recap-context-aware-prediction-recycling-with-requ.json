@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-039",
+  "title": "RECAP: Context-Aware Prediction Recycling with Request-Local and Persistent Memories for Multimodal Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.05894",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出RECAP方法，用于多模态大模型（视觉语言模型）的推测解码加速。推测解码通过让小型草稿模型生成候选token，再由目标模型验证，从而加速推理。现有方法利用目标模型自身的预测进行回收（recycling）作为免费提案，但在视觉语言模型中，仅用最后一个token作为索引键会导致不同图像和前缀下的预测混淆，尤其在图像敏感的生成状态下复用失败率最高。RECAP引入请求局部记忆和持久记忆两种上下文感知的预测回收机制，通过更丰富的上下文键来减少别名冲突，同时保持足够的匹配率。该方法无需训练，可直接应用于现有模型，有望显著提升多模态推理效率。该工作值得关注，因为它解决了多模态推测解码中一个被忽视但关键的问题——跨模态上下文下的预测复用准确性，为多模态推理加速提供了新思路。",
+  "tags": [
+    "Speculative Decoding",
+    "Multimodal",
+    "Inference Acceleration",
+    "Vision-Language Models"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于最后token索引的预测回收方法在多模态场景下存在严重的别名问题，不同图像和前缀下的预测被错误复用。",
+      "图像敏感的生成状态是预测复用失败的高发区域，需要上下文感知的索引机制。",
+      "RECAP通过请求局部记忆和持久记忆两种机制，在不训练的情况下提升多模态推测解码的复用准确率。",
+      "更长的上下文键虽能减少别名，但会降低匹配率，需要在两者之间取得平衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-109",
+  "title": "Jev with Foresight: Safe Language-Guided Autonomous Driving via a Language World Model",
+  "source_url": "https://arxiv.org/abs/2611.05448",
+  "source_platform": "rss_ai_research",
+  "summary": "Jev-AD 提出了一种面向语言引导自动驾驶的安全决策框架，核心是将语言理解与显式后果预测解耦。现有基于大语言模型的驾驶智能体通常以生成文本的方式进行推理，耗时达数秒，且只能从场景中隐式推断每个动作的后果，难以满足实时性与安全性要求。Jev-AD 由两部分组成：Jev 是一个类型化决策模型，通过回答预定义问题并输出概率而非生成文本，实现快速、可解释的决策；语言世界模型则为每个候选动作预测未来两秒内周边车辆的移动情况，使动作后果被显式建模。该工作值得关注，因为它针对 LLM 驾驶智能体的推理延迟与后果推断不透明两大痛点，提出了轻量决策加显式世界模型的替代范式，对自动驾驶中语言指令的安全落地具有参考价值。",
+  "tags": [
+    "Autonomous Driving",
+    "World Model",
+    "LLM",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:19:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用类型化概率决策替代文本生成推理，可显著降低语言驾驶智能体的决策延迟",
+      "语言世界模型显式预测候选动作的未来后果，弥补了隐式场景推断的安全盲区",
+      "将语言理解、决策与后果预测解耦，是提升语言引导自动驾驶可解释性与安全性的有效路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

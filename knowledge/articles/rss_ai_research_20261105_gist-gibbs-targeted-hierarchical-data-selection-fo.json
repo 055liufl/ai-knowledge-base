@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-067",
+  "title": "GIST: Gibbs-Targeted Hierarchical Data Selection for Offline RLVR",
+  "source_url": "https://arxiv.org/abs/2611.06395",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出GIST方法，用于离线可验证奖励强化学习（RLVR）中的数据选择。离线RLVR通常在固定的采样响应池上训练，并对每个响应的每个token进行监督，但响应和token的信息量并不相同。作者从KL正则化RLVR的Gibbs最优策略出发，研究应该监督哪些响应和token，并用双向KL散度衡量策略与该目标之间的不匹配。该方法旨在通过分层数据选择提升离线RLVR的训练效率和效果，为强化学习中的监督信号筛选提供了新的理论视角和实用工具。",
+  "tags": [
+    "RLVR",
+    "Offline RL",
+    "Data Selection",
+    "KL Divergence"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:17:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "离线RLVR中响应和token的信息量不均等，应选择性监督而非全量监督",
+      "利用KL正则化RLVR的Gibbs最优策略作为目标，指导数据选择",
+      "双向KL散度可有效衡量策略与目标之间的不匹配程度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-073",
+  "title": "Tools Need Not Speak in Text: Latent Context Compression for Agents",
+  "source_url": "https://arxiv.org/abs/2611.06500",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 LLM Agent 在多步工具调用中因原始工具输出不断累积而导致的上下文膨胀问题，提出了一种名为“潜在上下文压缩”（Latent Context Compression）的新方法。传统做法是将工具返回的原始文本直接追加到上下文中，随着交互步数增加，冗长且含噪的观察结果会显著增加 token 开销，并稀释 Agent 对任务相关信息的注意力。现有的 token 剪枝与摘要方法受限于离散文本表示，压缩率难以进一步提升。本文挑战了“工具输出必须以文本形式进入上下文”这一默认假设，探索将工具结果压缩到潜在空间表示中，从而在保持任务相关信息的同时大幅降低上下文长度。该工作对 Agent 系统的上下文工程具有直接价值，可能影响未来 Agent 框架中工具接口与记忆机制的设计，值得关注 Agent 效率优化与上下文管理方向的研究者和开发者阅读。",
+  "tags": [
+    "Agent",
+    "Context Compression",
+    "LLM",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:17:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 多步工具调用中原始输出累积是上下文开销的主要来源，会稀释注意力",
+      "现有剪枝与摘要方法受离散文本表示限制，压缩率存在上限",
+      "将工具输出压缩到潜在空间可突破文本表示的压缩瓶颈",
+      "该思路可能改变 Agent 工具接口与上下文记忆机制的设计方式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

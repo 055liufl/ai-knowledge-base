@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-116",
+  "title": "Discarded or Unreachable? Diagnosing and Repairing Spatial Relation Failure in Vision--Language Similarity",
+  "source_url": "https://arxiv.org/abs/2611.05565",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对对比式视觉-语言模型在左右空间关系判断上接近随机水平的问题展开诊断。作者指出这一症状存在两种截然不同的成因：其一，空间关系信息在池化嵌入中仍然存在，但原生图文相似度无法触及；其二，池化过程直接丢弃了该信息，而稠密特征中仍保留。研究在干净的双物体照片上，对十种编码器进行实验，发现横向极性可从池化向量的翻转奇分量中线性解码。该工作的重要意义在于区分了'被丢弃'与'不可达'两类失败模式，并指出二者需要相反的修复策略，为多模态模型空间推理能力的诊断与改进提供了细粒度分析框架，对视觉-语言表征学习和空间理解研究具有参考价值。",
+  "tags": [
+    "Vision-Language",
+    "Contrastive Learning",
+    "Spatial Reasoning",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:19:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉-语言模型在左右空间关系上接近随机表现，但该症状存在'池化丢弃'与'相似度不可达'两种相反成因",
+      "横向极性可从池化向量的翻转奇分量中线性解码，说明信息可能仍保留在嵌入中",
+      "不同失败模式需要相反的修复策略，诊断需区分信息是否存在于表征中",
+      "在十种编码器上的实验表明该问题具有跨模型的普遍性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

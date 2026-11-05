@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-125",
+  "title": "Do Language Models Know Which Constraints Belong Together?",
+  "source_url": "https://arxiv.org/abs/2611.05726",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究语言模型是否能够识别哪些约束族在混合整数规划中应当被联合凸化（即属于同一Dantzig-Wolfe重构块）。Dantzig-Wolfe重构通过凸化一组约束族来加强线性松弛，但每个候选组合都需要一次列生成运行，成本高昂。当约束族仅在联合时才能加强下界（零边际贡献）时，逐一添加的搜索会停滞在线性松弛处。论文以批量 sizing、网络设计和设施选址中的经典不等式为例，探讨语言模型能否学习这种组合依赖关系，从而辅助选择约束分组。该工作将组合优化中的结构化知识与语言模型推理能力相结合，为自动化建模和求解器配置提供了新思路，值得关注。",
+  "tags": [
+    "LLM",
+    "组合优化",
+    "整数规划",
+    "Dantzig-Wolfe重构"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:19:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Dantzig-Wolfe重构中约束族的选择存在零边际贡献问题，逐一添加的搜索策略会失效。",
+      "语言模型可能通过学习约束间的组合依赖关系来辅助选择应联合凸化的约束族。",
+      "该研究将LLM推理能力与混合整数规划建模中的结构化知识相结合，为自动化求解器配置提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

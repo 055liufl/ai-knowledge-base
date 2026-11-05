@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-089",
+  "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.06868",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出并评估了一种面向大语言模型（LLM）智能体的简单推理时扩展方法——轮级最佳N采样（turn-level best-of-N sampling）。该方法采用生成器-选择器框架：在智能体与环境交互的每一轮，生成器模型产生N个候选动作，选择器模型从中挑选一个执行。研究针对复杂、长程任务场景，考察这种逐轮采样策略对智能体整体表现的影响。该工作值得关注，因为它将经典的best-of-N推理扩展思路从单步生成推广到多轮智能体决策，为提升LLM智能体在长程任务中的可靠性提供了一种无需额外训练、可直接在推理阶段部署的轻量方案，对智能体系统的实际落地具有参考价值。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Inference Scaling",
+    "Best-of-N"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将best-of-N采样从单步生成扩展到智能体的逐轮动作选择，是一种无需训练的推理时扩展手段",
+      "生成器-选择器双模型框架在每轮生成N个候选动作并由选择器择优执行，可提升长程任务中的决策质量",
+      "该方法为LLM智能体在复杂长程任务中的可靠性提升提供了轻量、可即插即用的方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-034",
+  "title": "Consistency Is Not Understanding: Orbit Audits for Neural Field Weight Readers",
+  "source_url": "https://arxiv.org/abs/2611.05798",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究神经网络权重读取器（weight readers）能否真正理解权重所表示的函数，而非仅仅依赖参数坐标的统计一致性。作者通过隐藏神经元置换和正ReLU缩放等保持函数不变的变换，对480个独立拟合的形状场和1000个MNIST场进行审计。实验发现，在形状识别任务上，统计读取器在变换后性能显著下降，表明其依赖的是参数坐标而非函数语义。该工作提出了“轨道审计”（Orbit Audits）方法，用于区分功能信息与任意参数坐标，对理解神经网络权重表示的可解释性和鲁棒性具有重要意义，尤其对权重生成、模型编辑和元学习等领域有警示作用。",
+  "tags": [
+    "Neural Field",
+    "Weight Reader",
+    "Interpretability",
+    "Invariance"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重读取器可能依赖参数坐标的统计一致性而非真正的函数理解",
+      "保持函数不变的变换（如神经元置换和ReLU缩放）可有效审计读取器的泛化能力",
+      "统计读取器在形状识别任务上对轨道变换敏感，性能显著下降",
+      "轨道审计为评估权重表示学习提供了新的诊断工具"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

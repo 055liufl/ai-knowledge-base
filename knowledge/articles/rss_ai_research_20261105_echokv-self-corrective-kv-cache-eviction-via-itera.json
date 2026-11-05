@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-040",
+  "title": "EchoKV: Self-Corrective KV Cache Eviction via Iterative Query Feedback",
+  "source_url": "https://arxiv.org/abs/2611.05903",
+  "source_platform": "rss_ai_research",
+  "summary": "EchoKV 是一篇关于大语言模型推理优化中 KV Cache 驱逐策略的 arXiv 论文。作者指出，KV cache 驱逐并非单纯的 token 排序问题：用于生成驱逐查询的工作区本身也会影响查询质量，早期工作区误差会扭曲后续查询观测，并在长上下文证据分散时强化错误的最终驱逐决策。EchoKV 通过迭代式查询反馈实现自我纠正，发现并缓解这一失效模式。该工作值得关注，因为它从查询生成机制而非仅排序打分角度重新审视 KV cache 压缩，为长上下文推理的内存效率与生成质量平衡提供了新思路，对推理系统优化和长上下文应用具有潜在实用价值。",
+  "tags": [
+    "KV Cache",
+    "LLM Inference",
+    "Long Context",
+    "Memory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "KV cache 驱逐不只是 token 排序问题，生成驱逐查询所保留的工作区质量同样决定驱逐决策质量",
+      "早期工作区误差会通过查询反馈链式放大，在长上下文证据分散时尤其容易导致错误驱逐",
+      "迭代式查询反馈可用于自我纠正驱逐决策，缓解误差累积",
+      "该工作为长上下文推理的内存压缩提供了从查询机制入手的改进方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

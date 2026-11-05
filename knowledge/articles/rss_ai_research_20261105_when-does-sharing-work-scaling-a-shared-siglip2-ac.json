@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-102",
+  "title": "When Does Sharing Work? Scaling a Shared SigLIP2 Across Image, Video, Audio, and Audio-Visual Representations",
+  "source_url": "https://arxiv.org/abs/2611.05406",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Omni-Encoder，探索在单一 SigLIP-2 Vision Transformer 中完全共享参数，统一处理图像、视频、音频和音视频输入，而非像现有做法那样独立训练各模态编码器、再通过事后绑定对齐到冻结的锚空间。研究核心问题是“共享何时有效”，即在多模态对比预训练中，参数共享在何种条件下能带来收益、又在哪些情况下产生干扰。该工作值得关注，因为它挑战了多模态领域“分模态独立训练+后期对齐”的主流范式，若共享编码器能在多模态上保持甚至超越专用编码器性能，将显著降低多模态系统的训练与部署成本，并为统一多模态基础模型的设计提供实证依据。",
+  "tags": [
+    "多模态",
+    "对比学习",
+    "SigLIP2",
+    "参数共享"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出在单一 SigLIP-2 ViT 中完全共享参数以统一处理图像、视频、音频与音视频输入，替代分模态独立训练加事后绑定的范式",
+      "核心研究问题是参数共享在多模态对比预训练中的适用边界，即共享何时有益、何时产生模态干扰",
+      "若共享编码器可行，将大幅降低多模态系统的训练与部署成本，并推动统一多模态基础模型设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

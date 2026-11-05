@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-037",
+  "title": "Risk Control Certifies Rates, Not Magnitudes: An Audit of Selective Fetal Biometry",
+  "source_url": "https://arxiv.org/abs/2611.05851",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对基于工具引导的胎儿超声生物测量流程进行了审计，重点关注选择性预测在头围（HC）测量中的风险控制问题。研究使用HC18数据集（999张标注图像），在两个独立预注册的四折划分上分别重新训练分割器三次，并校准轮廓补全模型。核心发现是：选择性预测的有限样本保证仅约束严重错误的比率，而非其幅度，这意味着即使错误率被控制在低水平，单次错误的严重程度仍可能很大。该工作揭示了医疗AI中风险控制认证的一个关键盲点——认证的是错误发生的频率而非错误的严重性，对产前超声自动测量的安全部署具有重要警示意义。",
+  "tags": [
+    "Medical AI",
+    "Selective Prediction",
+    "Uncertainty Quantification",
+    "Fetal Biometry"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "选择性预测的有限样本保证只约束严重错误的比率，不约束其幅度，存在风险控制盲区",
+      "在HC18数据集上通过多次重训练和预注册划分验证了该问题的稳健性",
+      "医疗AI的安全认证需要同时考虑错误率和错误严重程度两个维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

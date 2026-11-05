@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-086",
+  "title": "Rules, Traces and Routing Statistics: Training and Calibration Data for Open Models on ARC-AGI-2",
+  "source_url": "https://arxiv.org/abs/2611.06827",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了在离线环境下（4块L4 GPU，最多12小时）训练和校准数据对三个开源模型解决ARC-AGI-2任务的影响。作者在公开任务上离线比较数据，并在120个隐藏半私有任务上报告了189次运行结果。针对NVARC Qwen3-4B网格模型，他们构建了包含12,000条类型化语言可执行规则和95,993个任务的数据集，规则仅在其于固定探针集上的行为与已有规则不同时才被接纳。这项工作值得关注，因为它系统性地揭示了训练数据与校准数据设计对开源模型在ARC-AGI-2这一高难度抽象推理基准上表现的关键作用，为资源受限下的模型训练提供了可复现的数据构建方法论。",
+  "tags": [
+    "ARC-AGI",
+    "数据构建",
+    "模型校准",
+    "开源模型",
+    "推理"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在有限算力（4×L4，12小时）下，训练与校准数据的质量比模型规模更关键。",
+      "通过类型化语言构建可执行规则语料，并以探针集行为差异作为规则准入标准，可有效提升数据多样性。",
+      "在120个隐藏半私有任务上进行189次运行的大规模实证，为开源模型在ARC-AGI-2上的数据策略提供了可靠参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

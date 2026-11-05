@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-070",
+  "title": "SUMONE: A Simple and Efficient Summarizer for Plug-and-Play Agent Memory",
+  "source_url": "https://arxiv.org/abs/2611.06445",
+  "source_platform": "rss_ai_research",
+  "summary": "SumOne 是一个面向长程语言模型智能体的独立摘要器，旨在解决智能体交互历史不断膨胀、上下文窗口受限的问题。现有学习式压缩方法通常依赖下游任务结果或求解器行为进行训练，导致压缩模型与特定任务或智能体强耦合，难以复用。SumOne 通过掩码重建（masked reconstruction）目标训练，即从过期历史的摘要中重建被遮蔽的信息，从而在不依赖下游信号的情况下学习保留关键信息。其核心优势在于即插即用：可作为独立模块接入任意智能体记忆系统，实现上下文压缩。该工作值得关注，因为上下文管理是长程 Agent 落地的关键瓶颈，而解耦式摘要器提供了一种通用、可迁移的工程方案，降低了为每个任务单独训练压缩器的成本，对构建可扩展的智能体记忆架构具有实用价值。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Summarization",
+    "Context Compression"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:17:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SumOne 通过掩码重建训练摘要器，摆脱了对下游任务结果或求解器行为的依赖，实现与具体智能体解耦。",
+      "即插即用设计使其可作为通用上下文压缩模块接入任意 Agent 记忆系统，降低重复训练成本。",
+      "上下文压缩是长程智能体高效执行的关键瓶颈，独立摘要器为可扩展记忆架构提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

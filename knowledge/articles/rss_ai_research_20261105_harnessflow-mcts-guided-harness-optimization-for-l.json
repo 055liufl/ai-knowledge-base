@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-057",
+  "title": "HarnessFlow: MCTS-Guided Harness Optimization for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.06254",
+  "source_platform": "rss_ai_research",
+  "summary": "HarnessFlow 是一个用于自动化优化 LLM Agent 执行框架（harness）的框架，发表于 arXiv。LLM Agent 的性能不仅取决于底层模型，还取决于管理其与工具和环境交互的 harness。然而，harness 设计目前主要依赖人工，自动化设计需要在开放搜索空间中通过昂贵的端到端评估进行探索。HarnessFlow 提出在有限的候选评估预算下优化完整可执行 harness 的方法，利用蒙特卡洛树搜索（MCTS）引导搜索过程。该工作值得关注，因为它首次系统性地将 harness 设计自动化，有望显著降低 Agent 开发中的人工调优成本，并提升 Agent 在复杂任务中的表现。对于 Agent 开发者而言，这意味着可以将更多精力放在任务逻辑而非底层交互框架的反复试错上。",
+  "tags": [
+    "Agent",
+    "MCTS",
+    "AutoML",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的性能由模型和 harness 共同决定，harness 自动化优化是一个被忽视但重要的方向",
+      "将 harness 优化建模为预算受限的搜索问题，并用 MCTS 引导，可有效应对开放搜索空间和昂贵评估",
+      "端到端评估成本是 harness 自动化的核心瓶颈，HarnessFlow 的预算感知设计具有实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

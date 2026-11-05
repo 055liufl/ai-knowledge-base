@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-128",
+  "title": "Text-Only Domain Adaptation for Low-Resource Medical ASR: Shallow Fusion and Density Ratio Rescoring for Hausa",
+  "source_url": "https://arxiv.org/abs/2611.05744",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究低资源语言豪萨语（Hausa）医疗语音识别中的纯文本域适应问题。由于豪萨语医疗领域的语音数据稀缺，作者固定使用 MMS-1B-FL102 声学模型，在解码阶段引入两种语言模型融合方法：浅层融合（Shallow Fusion, SF）和密度比方法（Density Ratio Approach, DRA）。实验使用在 19,421 条豪萨语健康领域句子上训练的 4-gram KenLM 语言模型，通过解码时融合来提升医疗专业词汇的识别效果。该工作值得关注，因为它针对低资源语言医疗 ASR 这一实际痛点，探索了无需额外语音数据、仅利用文本语料进行域适应的轻量级方案，对资源匮乏场景下的领域适配具有参考价值，也展示了浅层融合与密度比方法在低资源医疗语音识别中的可行性与对比效果。",
+  "tags": [
+    "ASR",
+    "低资源语言",
+    "领域适应",
+    "语言模型融合"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:20:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在低资源医疗 ASR 中，仅使用目标领域文本训练语言模型并在解码时融合，可避免对稀缺领域语音数据的依赖。",
+      "浅层融合与密度比方法均可在固定声学模型下实现域适应，为低资源语言医疗场景提供轻量级解决方案。",
+      "豪萨语医疗文本语料（19,421 句）训练的 4-gram KenLM 可作为解码期融合的有效外部知识源。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-014",
+  "title": "AGORA: Reliability-Aware Aggregation of LLM Judges via Item-Response Theory",
+  "source_url": "https://arxiv.org/abs/2611.05556",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 AGORA，一种基于项目反应理论（Item-Response Theory, IRT）的可靠性感知聚合方法，用于解决 LLM-as-a-judge 场景中多评委聚合的偏差问题。当前实践中，聚合多个 LLM 评委是缓解单一评委偏见的常见手段，但评委池中不同评委的可靠性差异巨大，而用于验证的人类标注集通常只有几百条甚至更少。在这种小样本、异质评委的设定下，逐项均值法会同等对待强弱评委，而 Dawid-Skene 等混淆表模型需要为每个评委估计完整的误差表，在数据稀缺时估计不稳定。AGORA 利用 IRT 对评委的可靠性和题目难度进行低维参数化建模，从而在有限标注数据下更稳健地聚合评委判断。该工作值得关注，因为它直接针对 LLM 评估流程中的核心痛点——如何在标注预算有限时获得可信的自动评估分数，对依赖 LLM 评委进行模型评测、数据筛选和 RLHF 的研究与工程团队具有实用价值。",
+  "tags": [
+    "LLM-as-a-judge",
+    "Item-Response Theory",
+    "Evaluation",
+    "Aggregation"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:14:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "逐项均值聚合会同等加权强弱评委，在评委可靠性异质时引入显著偏差",
+      "Dawid-Skene 等混淆表模型在小规模人类标注集下参数估计不稳定，需要低维参数化替代方案",
+      "IRT 以评委可靠性和题目难度为低维参数，可在数百条标注内稳健聚合 LLM 评委判断",
+      "该方法对标注预算有限的 LLM 评估流水线具有直接实用价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

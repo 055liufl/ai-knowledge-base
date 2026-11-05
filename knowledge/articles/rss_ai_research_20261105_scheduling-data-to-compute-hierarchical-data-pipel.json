@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261105-130",
+  "title": "Scheduling Data to Compute: Hierarchical Data Pipelining for LLM Training on AMD GPUs",
+  "source_url": "https://arxiv.org/abs/2611.05751",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对 AMD GPU 上大语言模型训练中的数据供给瓶颈，提出了一种名为“分层数据流水线”的调度方案。随着模型规模指数级增长，训练所需计算量巨大，但 GPU 计算单元常因数据仍位于慢速内存或另一块 GPU 上而空闲等待，造成昂贵的算力浪费。论文将数据调度问题形式化为“将数据调度到计算”，通过分层流水线设计，在内存层级和 GPU 间提前预取和编排数据，使计算单元在需要时数据已就绪。该工作值得关注，因为 AMD GPU 在 LLM 训练中的使用日益增多，而数据供给效率是决定大规模训练吞吐的关键因素之一；其分层思路对异构内存和分布式训练场景具有通用参考价值。",
+  "tags": [
+    "LLM",
+    "GPU",
+    "Training",
+    "Data Pipeline",
+    "AMD"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:20:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 训练中 GPU 算力闲置的主要原因是数据供给延迟，而非计算能力不足",
+      "分层数据流水线通过跨内存层级和跨 GPU 的提前调度，可隐藏数据搬运延迟",
+      "该方案针对 AMD GPU 生态，填补了非 NVIDIA 平台训练优化研究的空白",
+      "数据到计算的调度视角对大规模分布式训练的系统设计具有通用指导意义"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

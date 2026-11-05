@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-103",
+  "title": "PEEK: One-Step-Look-Ahead Exposure Bias Correction for Diffusion Sampling",
+  "source_url": "https://arxiv.org/abs/2611.05407",
+  "source_platform": "rss_ai_research",
+  "summary": "PEEK 是一种针对扩散模型采样过程中暴露偏差（exposure bias）的校正方法。扩散图像生成器依赖精确的去噪网络和强数值采样器，但二者并不完全匹配：采样时去噪器基于与真实数据差异较大的有缺陷输入进行下一步预测，这种训练-测试差距限制了生成质量（如模糊、细节缺失或形状异常）。PEEK 提出一步前瞻（one-step-look-ahead）的暴露偏差校正策略，旨在缩小该差距，从而提升扩散采样的图像生成质量。该工作值得关注，因为它直击扩散模型采样中的核心失配问题，提供了一种新的训练-采样对齐思路，有望在不改变模型架构的前提下改善生成效果，对扩散模型研究和应用均有参考价值。",
+  "tags": [
+    "Diffusion",
+    "Sampling",
+    "Exposure Bias",
+    "Image Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:18:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散模型的去噪网络与数值采样器之间存在训练-测试不匹配，即暴露偏差，是限制生成质量的关键因素之一。",
+      "PEEK 通过一步前瞻机制在采样过程中校正暴露偏差，缩小训练与测试输入分布之间的差距。",
+      "该方法不依赖改变模型架构，而是从采样策略层面提升生成图像的清晰度、细节和形状合理性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

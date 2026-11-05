@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-018",
+  "title": "Hybrid Spark: Adaptive Speculative Decoding That Lets the Content Choose the Drafter",
+  "source_url": "https://arxiv.org/abs/2611.05611",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Hybrid Spark，一种自适应投机解码（Speculative Decoding, SD）方法，旨在解决现有 SD 方法加速效果高度依赖工作负载形状（如批量大小、上下文长度）和内容特性的问题。传统 SD 使用基于模型的草稿器（model-based drafter）为任意内容生成短候选块，而基于无模型的草稿器（如 n-gram 查找）在输出重复输入的场景（如代码编辑）中能以近乎零成本生成长复制片段。Hybrid Spark 的核心创新在于让内容本身动态选择草稿器：根据当前输入输出的重复模式，自适应地在模型草稿器与 n-gram 草稿器之间切换，并配合批量级自适应验证策略，从而在不同工作负载下最大化加速收益。该方法无需修改目标模型，属于推理加速工具层面的实用创新，对 LLM 服务部署具有直接价值，尤其适用于代码编辑、文档修订等重复性高的生成任务。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Serving",
+    "N-gram"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "投机解码的加速效果受工作负载形状和内容双重影响，单一草稿器难以在所有场景下最优。",
+      "无模型草稿器（如 n-gram 查找）在输出重复输入的场景（如代码编辑）中能以极低成本生成长候选块。",
+      "Hybrid Spark 让内容自适应选择草稿器，结合批量级验证策略，可在不同工作负载下提升加速比。",
+      "该方法无需修改目标模型，可直接集成到现有 LLM 服务栈中，具有较高的工程实用性。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

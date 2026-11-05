@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-055",
+  "title": "CARM: Conformal Adaptive Risk Masking for Reliable Scientific Super-Resolution",
+  "source_url": "https://arxiv.org/abs/2611.06151",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出CARM（Conformal Adaptive Risk Masking）方法，用于科学超分辨率任务中的可靠区域识别。传统深度学习超分辨率虽能重建精细地球观测场，但仅凭重建精度无法提供校准规则来判定哪些空间区域可信。已有的Conformal Mask Calibration（CMC）基于共形风险控制，将空间不确定性分数转化为信任掩码，并在可交换性假设下控制最坏局部畸变的期望，但其固定阈值策略在分布偏移或异质区域下可能失效。CARM通过自适应调整风险掩码，提升了对不同空间区域和不确定性的校准能力，从而在科学超分辨率中给出更可靠的信任区域。该工作值得关注，因为它将共形预测与超分辨率结合，为科学应用中的可靠性评估提供了统计保证，并解决了固定阈值带来的局限性，对地球观测等高风险领域具有实用价值。",
+  "tags": [
+    "Conformal Prediction",
+    "Super-Resolution",
+    "Uncertainty Quantification",
+    "Earth Observation"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:16:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "超分辨率重建精度高不代表空间区域可靠，需要校准的信任掩码来标识可信区域。",
+      "CMC基于共形风险控制提供统计保证，但固定阈值在异质或偏移数据下不够灵活。",
+      "CARM通过自适应风险掩码改进了CMC，能更好地控制局部畸变并适应不同区域。",
+      "该方法为科学超分辨率（如地球观测）提供了可校准的可靠性评估工具。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

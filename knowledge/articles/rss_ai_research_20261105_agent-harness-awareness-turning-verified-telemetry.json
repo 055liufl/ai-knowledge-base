@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261105-002",
+  "title": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
+  "source_url": "https://arxiv.org/abs/2611.05391",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出「Agent Harness Awareness」概念，针对工具使用型智能体在决策时缺乏对工具当前运行状态感知的「操作盲区」问题。工具描述仅说明动作能做什么，却不反映该动作此刻是否健康或适用；而执行框架（harness）通过监控、追踪和近期失败记录掌握这些信息，但选择下一步动作的模型却无法获取。作者设计了一种信任分离架构，由宿主向模型提供少量、新鲜且经过验证的遥测摘要，使智能体在决策时能感知工具的实际运行状态，从而将遥测数据转化为操作控制能力。该工作值得关注，因为它直击智能体可靠性的关键短板——模型对执行环境状态的无知，提出了一种轻量级、可落地的信息注入机制，有望显著提升工具调用成功率与故障恢复能力，对构建生产级智能体系统具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Telemetry",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:14:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具描述与工具实时健康状态之间存在信息断层，模型决策时存在「操作盲区」",
+      "执行框架掌握监控与失败遥测，但未有效传递给决策模型，造成信息浪费",
+      "信任分离设计让宿主提供少量新鲜验证遥测，可低成本提升智能体操作感知",
+      "将遥测转化为操作控制是提升工具调用可靠性和故障恢复能力的关键路径"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

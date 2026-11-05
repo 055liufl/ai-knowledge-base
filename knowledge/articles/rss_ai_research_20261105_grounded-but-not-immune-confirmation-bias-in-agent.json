@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261105-024",
+  "title": "Grounded but Not Immune: Confirmation Bias in Agent-as-a-judge",
+  "source_url": "https://arxiv.org/abs/2611.05662",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究Agent-as-a-Judge评估范式中的确认偏误问题。随着开放式智能体任务增多，评估方式逐渐转向让一个具备工具访问权限的评估智能体（judge）基于完整轨迹和环境证据来验证结果，其前提是自主收集证据的评估者应被证据所约束。作者通过实验证明，这种基于证据的接地并不能使评估者免疫于确认偏误：一条虚假的预筛选备注，只要被归因于权威来源且不携带实质证据，就能显著影响评估者的判断。该研究揭示了当前智能体评估体系的一个关键脆弱性——评估者的推理可能被无关但权威性的上下文线索所污染，从而削弱评估结果的可靠性。对于依赖Agent-as-a-Judge进行模型或系统评测的研究者和开发者而言，这一发现具有重要的警示意义，提示需要设计抗偏误的评估协议与提示策略。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Confirmation Bias",
+    "LLM-as-a-Judge"
+  ],
+  "author": null,
+  "published_at": "2026-11-05T16:12:30Z",
+  "collected_at": "2026-11-05T16:15:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent-as-a-Judge的自主证据收集机制并不能天然消除确认偏误，评估者仍会被权威归因的虚假预筛选信息误导。",
+      "一条不携带实质证据但被标注为权威来源的备注，足以显著改变评估智能体的判断，说明评估过程对上下文线索高度敏感。",
+      "该发现对智能体评估协议的设计提出警示：需要引入抗偏误机制，如盲评、证据隔离或对抗性提示测试。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
