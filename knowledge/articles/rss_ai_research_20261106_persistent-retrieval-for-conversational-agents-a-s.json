@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-040",
+  "title": "Persistent Retrieval for Conversational Agents: A Study of Retrieval Efficiency",
+  "source_url": "https://arxiv.org/abs/2611.07899",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究对话式智能体中的检索架构设计，比较了三种方案：主智能体基于技能的检索、非持久化检索子智能体（仅返回发现结果），以及作者提出的持久化检索子智能体（维护检索历史与上下文）。核心问题在于检索历史如何保存、每次模型调用接收什么上下文、以及后续追问中哪些信息需要重新检索。研究表明，持久化检索子智能体通过保留检索状态，能减少重复检索、提升多轮对话中的检索效率与上下文连贯性。该工作值得关注，因为它触及了 Agent 系统中一个常被忽视但影响显著的工程问题：检索状态管理。随着 RAG 与多智能体架构的普及，如何在子智能体间传递和复用检索结果，直接关系到延迟、成本与回答质量。该研究为对话式检索系统的架构选型提供了实证依据，对构建高效、可扩展的 Agent 应用具有实践指导意义。",
+  "tags": [
+    "Agent",
+    "RAG",
+    "Retrieval",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "检索子智能体的持久化设计可避免多轮对话中的重复检索，显著提升检索效率",
+      "检索历史的维护方式决定了每次模型调用所需的上下文，进而影响延迟与成本",
+      "主智能体直接检索与委派子智能体检索在上下文管理上存在本质权衡",
+      "持久化检索状态有助于提升追问场景下的回答连贯性与信息复用率"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

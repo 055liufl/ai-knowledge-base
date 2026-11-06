@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-120",
+  "title": "KOSMOS: Self-scheduling Persistent Kernels for Communication-Compute Overlap",
+  "source_url": "https://arxiv.org/abs/2611.07477",
+  "source_platform": "rss_ai_research",
+  "summary": "KOSMOS 是一个针对大模型训练中通信-计算重叠问题的自调度持久化内核库。在张量并行、序列并行和专家并行中，集合通信操作常位于 Transformer 层的关键路径上，导致计算资源闲置。现有融合内核通过固定角色或调度来缓解，但灵活性不足，仍留下大量空闲窗口。即使预测通信-计算划分比例，也无法消除这些窗口，因为预定的划分无法跟随数据就绪状态动态调整。KOSMOS 提出自调度持久化内核，允许内核在运行时根据数据就绪情况动态决定通信与计算的执行顺序和比例，从而更充分地重叠通信与计算。该工作来自 arXiv，属于系统与性能优化方向，对大规模分布式训练的效率提升具有潜在价值，尤其适用于需要高效利用 GPU 集群的 LLM 训练场景。",
+  "tags": [
+    "分布式训练",
+    "通信优化",
+    "持久化内核",
+    "并行计算"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:50:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有固定调度或预测划分的融合内核无法动态适应数据就绪状态，导致通信-计算重叠不充分。",
+      "自调度持久化内核通过运行时动态决策，有望消除因刚性调度产生的空闲窗口。",
+      "该方法针对 TP+SP 和 EP 场景，对大规模 Transformer 训练的关键路径优化有直接意义。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-098",
+  "title": "SPILLWAY: Separating Target Admission from Sanitization to Defend Tool-Using Agents against Prompt Injection",
+  "source_url": "https://arxiv.org/abs/2611.07222",
+  "source_platform": "rss_ai_research",
+  "summary": "SPILLWAY 是一篇针对工具型智能体（Tool-Using Agents）提示注入攻击的防御研究。这类智能体能够操作邮件、文件和支付等敏感资源，攻击者可将恶意指令隐藏在网页或共享文档中，诱导智能体向攻击者发送数据或资金。现有运行时防御方案存在两类问题：一类将语言模型置于放行决策环节，导致决策依赖可能读取攻击者文本的模型，且每一步都增加模型调用开销；另一类基于来源（Provenance）的防御虽将模型排除在最终检查之外，但仍需模型进行规划或路由。SPILLWAY 的核心思路是将目标准入（Target Admission）与净化（Sanitization）两个环节分离，从而在不依赖模型做最终放行判断的前提下抵御提示注入。该工作值得关注，因为它直击工具型智能体落地中最现实的安全威胁，并提出了一种降低模型依赖与调用开销的架构性防御思路，对构建可信 Agent 系统具有参考价值。",
+  "tags": [
+    "Agent Security",
+    "Prompt Injection",
+    "Tool-Using Agents",
+    "Runtime Defense"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具型智能体因可操作邮件、文件与支付等敏感资源，成为提示注入攻击的高价值目标",
+      "现有运行时防御要么让模型参与放行决策（增加开销且受攻击文本影响），要么仍需模型做规划路由",
+      "将目标准入与净化分离，可避免让可能被污染的模型承担最终放行判断",
+      "该架构有望在降低每步模型调用开销的同时提升对隐藏指令注入的鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-004",
+  "title": "Resource-Efficient Reinforcement Learning Post-Training through Elastic Expert Parallelism",
+  "source_url": "https://arxiv.org/abs/2611.06984",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对混合专家（MoE）大语言模型在强化学习后训练中的计算瓶颈问题，提出了一种弹性专家并行方法。在RL后训练中，生成训练响应是主要计算瓶颈。在MoE模型中，已完成分配响应的worker可能因其他worker处理更长响应仍需其专家而保持占用，导致基线中约三分之一的worker占用时间发生在本地响应生成之后。论文通过弹性专家并行策略，动态调整专家分配，减少worker空闲等待，提升资源利用效率。该工作值得关注，因为它直接解决了RL后训练中MoE模型的实际效率问题，有望降低训练成本并加速迭代。",
+  "tags": [
+    "MoE",
+    "RLHF",
+    "分布式训练",
+    "专家并行"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL后训练中生成响应是主要计算瓶颈，MoE模型存在worker因专家依赖而空闲等待的问题",
+      "基线中约三分之一的worker占用时间发生在本地响应生成之后，造成资源浪费",
+      "弹性专家并行可动态调整专家分配，减少空闲等待，提升资源效率"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

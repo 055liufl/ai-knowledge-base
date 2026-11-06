@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-074",
+  "title": "Learning Noise Optimization for Reward Alignment in Few-Step Generative Models",
+  "source_url": "https://arxiv.org/abs/2611.06255",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出LeNO（Learning Noise Optimization）方法，用于少步确定性生成模型的奖励对齐。现有奖励对齐方法通常基于随机轨迹，不适用于少步确定性生成器；而初始噪声优化虽无需轨迹，但无梯度方法在推理时需逐样本搜索，成本高昂。LeNO将奖励引导的初始噪声优化摊销为可学习过程，通过训练一个模型直接预测优化后的初始噪声，从而在推理时高效实现奖励对齐。该方法有望提升少步生成模型在奖励对齐任务中的实用性和效率，值得关注。",
+  "tags": [
+    "Diffusion Models",
+    "Reward Alignment",
+    "Few-Step Generation",
+    "Noise Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "少步确定性生成器的奖励对齐需要轨迹无关的方法，初始噪声优化是可行方向。",
+      "现有无梯度初始噪声优化推理成本高，LeNO通过摊销学习避免逐样本搜索。",
+      "LeNO将奖励引导的噪声优化转化为可学习模块，提升推理效率。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

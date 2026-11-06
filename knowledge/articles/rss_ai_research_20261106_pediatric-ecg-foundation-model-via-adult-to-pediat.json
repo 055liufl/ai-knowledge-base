@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261106-033",
+  "title": "Pediatric ECG foundation model via adult-to-pediatric fine-tuning: downstream tasks and clinical evaluation",
+  "source_url": "https://arxiv.org/abs/2611.07717",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了如何将成人ECG基础模型适配到儿科心电图分析中。研究使用了来自238,189名儿童的339,563份12导联心电图，在相同架构下比较了三种策略：直接应用成人模型、儿科微调以及从头训练。结果显示，直接迁移效果较差（平均AUC为0.8256），而成人到儿科的微调方法显著提升了性能。这项工作首次系统评估了成人ECG基础模型在儿科场景下的迁移学习潜力，为儿科心电图AI的临床落地提供了重要参考。其价值在于：儿科ECG因年龄相关的电生理变化而难以直接使用成人模型，该研究证明了微调策略的有效性，有望缓解儿科标注数据稀缺的问题，并推动跨年龄段的医学AI基础模型发展。",
+  "tags": [
+    "ECG",
+    "Foundation Model",
+    "Fine-tuning",
+    "Pediatric",
+    "Transfer Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "成人ECG基础模型直接应用于儿科效果不佳，平均AUC仅0.8256，凸显年龄相关电生理变化的挑战。",
+      "儿科微调策略在相同架构下优于直接迁移和从头训练，表明成人模型可通过微调有效适配儿科。",
+      "大规模儿科ECG数据集（33.9万份）为跨年龄段迁移学习提供了实证基础。",
+      "该研究为儿科医学AI中数据稀缺问题提供了可行的迁移学习范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

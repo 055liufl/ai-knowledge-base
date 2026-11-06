@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-018",
+  "title": "SAVeR$^2$: Reasoning-based Safety Alignment for Large Reasoning Models via Verifiable Rewards",
+  "source_url": "https://arxiv.org/abs/2611.07482",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SAVeR²，一种面向大型推理模型（LRM）的安全对齐方法，通过可验证奖励的强化学习实现基于推理的安全对齐。作者指出，LRM 依赖显式思维链（CoT）推理虽提升性能，却引入严重安全风险，并将 LRM 安全目标形式化为三点：推理与答案均非恶意、安全一致性、显式意图识别。现有对齐方法存在对抗泛化差、对推理能力造成显著“安全税”、以及推理与安全判断不一致等问题。SAVeR² 利用可验证奖励信号直接优化推理过程的安全性，而非仅约束最终输出，从而在保持推理能力的同时提升对抗鲁棒性与安全一致性。该工作值得关注，因为它针对推理模型特有的安全挑战提出系统性形式化与可验证奖励驱动的对齐范式，对 LRM 安全部署具有重要参考价值。",
+  "tags": [
+    "Safety Alignment",
+    "Large Reasoning Models",
+    "RLHF",
+    "Chain-of-Thought"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LRM 的显式 CoT 推理本身引入安全风险，安全目标需同时约束推理过程与最终答案，并保证安全一致性。",
+      "现有对齐方法存在对抗泛化差、推理能力“安全税”高、安全判断与推理不一致三大缺陷。",
+      "SAVeR² 采用可验证奖励的强化学习直接优化推理安全性，有望在保持推理性能的同时提升对抗鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

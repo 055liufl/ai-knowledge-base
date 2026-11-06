@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-009",
+  "title": "Closed-Loop Agent Evaluation: Layered Measurement and Self-Calibration",
+  "source_url": "https://arxiv.org/abs/2611.07051",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向已部署智能体的闭环评估方法（Closed-Loop Evaluation），旨在解决当前智能体评估多为一次性、静态基准测试的局限。传统评估往往只关注错误率或单次得分，结论既不自我校验，也无法反馈给智能体本身。作者将评估建模为在存在评分者偏差和结果删失条件下的性能估计问题，要求每一层级的评估结论都能形成闭环，实现分层测量与自我校准。该方法强调评估应持续进行、可自我验证，并能将评估信号回传给智能体以驱动改进。这一工作值得关注，因为它将评估从离线基准测试推进到在线、动态、可反馈的闭环范式，对智能体在生产环境中的可靠部署与持续优化具有重要方法论意义，尤其适用于需要长期运行、自我改进的智能体系统。",
+  "tags": [
+    "Agent Evaluation",
+    "Closed-Loop",
+    "Self-Calibration",
+    "Performance Estimation"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有智能体评估多为一次性基准测试，结论缺乏自我校验且无法反馈给智能体，难以反映部署后的真实表现。",
+      "闭环评估将评估建模为存在评分者偏差和结果删失条件下的性能估计问题，强调分层测量与自我校准。",
+      "评估信号应回传给智能体形成闭环，驱动持续改进，而非仅作为静态报告。",
+      "该方法为已部署智能体的在线、动态评估提供了系统化框架，有助于提升生产环境中的可靠性与可维护性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

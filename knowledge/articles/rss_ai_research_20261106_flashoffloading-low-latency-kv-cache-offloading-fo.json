@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-023",
+  "title": "FlashOffloading: Low-Latency KV Cache Offloading for Long-Context LLM Serving",
+  "source_url": "https://arxiv.org/abs/2611.07542",
+  "source_platform": "rss_ai_research",
+  "summary": "FlashOffloading 是一篇针对长上下文大语言模型（LLM）推理服务中 KV Cache 显存瓶颈的系统优化论文。随着序列长度和并发数增长，KV Cache 线性膨胀，极易触及高带宽内存（HBM）容量上限，导致并发度下降。将 KV Cache 卸载到主机 DRAM 可释放 HBM 空间并提升并发，但会引入额外的缓存管理开销和主机到设备（H2D）加载延迟，反而推高推理延迟。该工作聚焦于如何在卸载 KV Cache 的同时实现低延迟，属于 LLM 推理基础设施层面的优化研究，对长上下文服务部署具有实际意义，值得关注其提出的缓存管理与传输调度策略。",
+  "tags": [
+    "KV Cache",
+    "LLM Serving",
+    "Memory Offloading",
+    "Long-Context"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文 LLM 推理中 KV Cache 随序列长度和并发线性增长，HBM 容量成为并发度的主要瓶颈",
+      "将 KV Cache 卸载到主机 DRAM 可释放 HBM 并提升并发，但 H2D 加载与缓存管理开销会抵消收益",
+      "低延迟卸载的关键在于优化缓存管理与数据传输调度，而非单纯扩大内存容量"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

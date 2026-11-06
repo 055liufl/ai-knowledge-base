@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-102",
+  "title": "TriAttention: Unified Sparse Mixed-Precision Attention for Long-Context LLM Inference",
+  "source_url": "https://arxiv.org/abs/2611.07256",
+  "source_platform": "rss_ai_research",
+  "summary": "TriAttention 是一种面向长上下文 LLM 推理的统一稀疏混合精度注意力机制。传统方法分别利用稀疏性（跳过部分交互）和量化（降低保留交互的精度）来降低注意力计算成本，但忽略了不同交互对精度的需求差异：有些交互对低精度分数容忍度高，却对移除非常敏感。TriAttention 将查询-键（QK）块动态划分为跳过、4-bit 和 8-bit 三种计算路径，用 4-bit 保留对量化容忍的交互以降低开销，用 8-bit 保护对精度敏感的交互，从而在稀疏与量化之间实现更精细的权衡。该工作值得关注，因为它统一了稀疏与混合精度两种加速范式，针对长上下文推理中注意力计算这一核心瓶颈提出了更细粒度的优化策略，有望在保持模型质量的同时显著降低显存占用和计算延迟，对长上下文 LLM 的部署具有实际意义。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Quantization",
+    "Sparse Inference",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "不同 QK 交互对精度的需求存在差异：部分交互可容忍低精度但不可跳过，统一稀疏或统一量化均非最优。",
+      "TriAttention 将 QK 块动态分配至跳过、4-bit、8-bit 三条路径，实现稀疏与混合精度的联合优化。",
+      "该方法针对长上下文 LLM 推理的注意力瓶颈，在降低计算与显存成本的同时保护精度敏感交互。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

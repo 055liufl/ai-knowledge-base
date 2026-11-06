@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-137",
+  "title": "UniGADD: Universal Generator-Agnostic Deepfake Detector",
+  "source_url": "https://arxiv.org/abs/2611.07647",
+  "source_platform": "rss_ai_research",
+  "summary": "UniGADD 是一种通用的、与生成器无关的深度伪造检测器，旨在解决现有检测方法在已知生成器上表现良好、但在未见过的生成器上性能急剧下降的问题。该方法采用两阶段优化过程：第一阶段通过对比损失学习真实图像与已知伪造图像之间的判别性特征嵌入，使模型能够捕捉更本质的伪造痕迹；第二阶段进一步优化分类边界，从而在保持对已知生成器高准确率的同时，显著提升对未知生成器的泛化能力。该工作值得关注，因为深度伪造生成技术迭代迅速，检测器必须具备跨生成器的鲁棒性才能实际部署。UniGADD 通过监督学习框架实现了这一目标，为构建更通用、更可靠的深度伪造防御系统提供了新思路，对内容安全、媒体取证等领域具有重要价值。",
+  "tags": [
+    "Deepfake Detection",
+    "Contrastive Learning",
+    "Generalization",
+    "Computer Vision"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "两阶段优化策略：先通过对比损失学习判别性特征嵌入，再优化分类边界，兼顾已知生成器准确率与未知生成器泛化性。",
+      "强调生成器无关的泛化能力，直击深度伪造检测在实际部署中的核心痛点。",
+      "监督学习框架下实现跨生成器鲁棒性，为通用深度伪造检测提供了可扩展的研究方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

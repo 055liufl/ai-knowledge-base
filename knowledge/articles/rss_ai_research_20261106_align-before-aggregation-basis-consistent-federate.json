@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-024",
+  "title": "Align Before Aggregation: Basis-Consistent Federated LoRA under Heterogeneous Ranks",
+  "source_url": "https://arxiv.org/abs/2611.07598",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究联邦学习场景下，客户端计算能力异构时使用不同秩的LoRA进行大语言模型微调的问题。现有服务器端聚合方法先由客户端特定的LoRA因子(A_i,B_i)组合出局部矩阵更新ΔW_i，再对矩阵更新进行聚合。虽然这些矩阵更新位于同一权重空间R^{m×n}中可直接平均，但不同秩的LoRA因子所张成的子空间基不一致，直接聚合会导致表示错位和性能下降。论文提出“先对齐后聚合”的思路，旨在解决异构秩LoRA聚合中的基不一致问题，提升联邦微调的稳定性和效果。该工作对联邦学习与参数高效微调的结合具有实际意义，尤其适用于边缘设备算力差异大的真实部署场景。",
+  "tags": [
+    "Federated Learning",
+    "LoRA",
+    "LLM",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "异构秩LoRA在联邦微调中具有实用价值，但直接聚合矩阵更新会因基不一致导致表示错位。",
+      "现有服务器端聚合方法忽略了不同秩LoRA因子所张成子空间的基差异，需要先对齐再聚合。",
+      "该问题在客户端算力异构的真实联邦部署场景中尤为突出，影响模型微调效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

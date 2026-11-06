@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-021",
+  "title": "Goal-Branching LaCAM: Temporary Goals as Search Branches in Dense Multi-Agent Pathfinding",
+  "source_url": "https://arxiv.org/abs/2611.07528",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Goal-Branching LaCAM，针对多智能体路径规划（MAPF）中密集走廊场景的求解难题进行改进。LaCAM 是一种基于搜索的完备求解器，通过深度优先搜索联合配置，利用 PIBT 生成后继并惰性添加单智能体约束。然而在密集、走廊密集的实例中，解除死锁需要多个智能体协同移动，且常需远离目标，PIBT 的贪心策略难以有效处理。Goal-Branching LaCAM 将临时目标作为搜索分支，通过引入临时目标来引导智能体探索替代路径，从而更高效地解决死锁问题。该方法在保持完备性的同时，提升了在困难实例上的求解性能，对多机器人协调、仓储物流等实际应用具有重要价值。",
+  "tags": [
+    "MAPF",
+    "Search",
+    "Multi-Agent",
+    "Pathfinding"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LaCAM 在密集走廊场景中因 PIBT 的贪心策略难以协调多智能体解除死锁而性能受限。",
+      "将临时目标作为搜索分支可引导智能体探索远离目标的协同移动，有效缓解死锁。",
+      "该方法在保持算法完备性的同时，提升了在困难 MAPF 实例上的求解效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

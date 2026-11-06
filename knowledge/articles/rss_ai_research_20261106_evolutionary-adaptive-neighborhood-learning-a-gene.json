@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-103",
+  "title": "Evolutionary Adaptive Neighborhood Learning: A Genetic Algorithm for Instance-Dependent k Optimization in Nearest Neighbor Classification",
+  "source_url": "https://arxiv.org/abs/2611.07257",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为进化自适应邻域学习（Evolutionary Adaptive Neighborhood Learning）的方法，用于解决k近邻（k-NN）分类中全局k值选择的局限性。传统k-NN通过交叉验证或进化搜索全局选择k值，但偏差-方差权衡本质上是局部的：密集无噪声区域适合小邻域，稀疏或噪声区域需要大邻域。由于全局k优化是一维的，作者用遗传算法替代穷举搜索，实现实例依赖的k值优化。该方法为每个测试实例自适应选择k值，有望提升k-NN在异质数据分布下的分类性能。该工作值得关注，因为它将进化计算与局部自适应策略结合，为经典k-NN超参数优化提供了新思路，且具有实际应用潜力。",
+  "tags": [
+    "k-NN",
+    "Genetic Algorithm",
+    "Hyperparameter Optimization",
+    "Adaptive Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "全局k值选择忽略了数据分布的局部差异，实例依赖的k优化能更好平衡偏差与方差。",
+      "遗传算法可有效替代穷举搜索，实现高维或实例级别的k值优化。",
+      "该方法为k-NN在稀疏或噪声区域的自适应邻域选择提供了新途径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

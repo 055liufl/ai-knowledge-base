@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-078",
+  "title": "BrainPFN: Amortized Brain-Behaviour Prediction via Prior-Data Fitted Networks",
+  "source_url": "https://arxiv.org/abs/2611.06934",
+  "source_platform": "rss_ai_research",
+  "summary": "BrainPFN 提出了一种基于 Prior-Data Fitted Networks (PFN) 的摊销式脑-行为预测方法，旨在替代传统的核岭回归（KRR）流程。传统方法需要为每个行为评分和每个队列单独拟合与调参模型，无法跨数据集迁移，且在临床或认知研究中常见的小样本场景下精度急剧下降。BrainPFN 利用 PFN 的元学习能力，通过在大规模合成先验数据上预训练，使模型能够在不进行逐任务训练的情况下，直接对新的功能连接矩阵进行行为表型预测，从而实现跨评分、跨队列的摊销推理。该工作值得关注，因为它将 PFN 这一新兴的表格/小样本学习范式引入神经影像领域，有望解决脑-行为预测中长期存在的小样本泛化与模型复用难题，降低临床研究的建模成本，并推动跨数据集的可迁移预测。",
+  "tags": [
+    "PFN",
+    "fMRI",
+    "Brain-Behaviour Prediction",
+    "Meta-Learning",
+    "Small-Sample Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 KRR 方法需为每个评分和队列单独建模调参，无法跨数据集迁移，小样本下精度骤降。",
+      "BrainPFN 利用 Prior-Data Fitted Networks 实现摊销推理，一次预训练即可跨评分、跨队列直接预测。",
+      "该方法有望显著降低临床与认知神经科学研究中的建模成本，并提升小样本场景下的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

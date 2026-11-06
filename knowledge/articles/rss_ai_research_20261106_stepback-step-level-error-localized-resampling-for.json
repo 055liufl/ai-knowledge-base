@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-067",
+  "title": "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning",
+  "source_url": "https://arxiv.org/abs/2611.08403",
+  "source_platform": "rss_ai_research",
+  "summary": "StepBack 是一种针对链式思维推理的高效测试时解码方法，旨在解决自一致性（Self-consistency, SC）采样成本过高的问题。传统 SC 需要预设预算并采样大量完整推理轨迹，而现有高效变体主要通过提前停止全轨迹采样或在问题间分配样本数来降低成本，均未在步骤级别定位错误。StepBack 提出步骤级错误定位重采样：在推理过程中识别出错的步骤，仅从该步骤开始重新采样后续轨迹，而非从头生成完整轨迹。这种方法能显著减少冗余计算，同时保持推理质量。该工作值得关注，因为它将测试时计算优化的粒度从轨迹级细化到步骤级，为高效推理提供了新思路，尤其适用于需要大量采样的大模型推理场景，有望在保持准确率的同时大幅降低推理成本。",
+  "tags": [
+    "LLM",
+    "推理",
+    "测试时计算",
+    "自一致性"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "StepBack 将测试时推理的优化粒度从完整轨迹级细化到步骤级，通过定位错误步骤并仅重采样后续部分来减少计算浪费。",
+      "与现有高效自一致性方法（提前停止或问题级预算分配）不同，StepBack 在步骤级别进行错误定位和局部重采样，更具针对性。",
+      "该方法有望在保持推理准确率的同时显著降低采样成本，为高效测试时计算提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-035",
+  "title": "The Intrusion Pathway: How Non-Evidential Context Degrades Language Model Performance",
+  "source_url": "https://arxiv.org/abs/2611.07778",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了语言模型在提示中包含非证据性上下文（如无关领域的陈述或随机分布外token）时性能下降的机制。这种噪声在检索增强、工具使用和长上下文部署中普遍存在，但此前缺乏机制性解释。作者将这种性能退化归因于“入侵通路”（Intrusion Pathway），该通路始于MLP层对查询和噪声的富集，进而导致模型注意力被无关信息干扰，最终降低回答准确性。研究通过机制可解释性方法追踪了噪声如何从输入层逐步影响模型内部表示，揭示了非证据性上下文并非简单稀释信号，而是主动干扰模型的推理过程。该工作为理解长上下文和RAG系统的脆弱性提供了新视角，并可能指导更鲁棒的提示设计和模型架构改进。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Mechanistic Interpretability",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "非证据性上下文通过MLP层富集后形成“入侵通路”，主动干扰模型注意力，而非仅稀释有效信息。",
+      "该机制解释了RAG和长上下文部署中模型性能下降的普遍现象，为鲁棒性改进提供理论依据。",
+      "研究采用机制可解释性方法追踪噪声传播路径，揭示了MLP在上下文整合中的关键负面作用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

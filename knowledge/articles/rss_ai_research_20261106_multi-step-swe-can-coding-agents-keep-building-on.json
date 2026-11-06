@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-094",
+  "title": "Multi-step SWE: Can Coding Agents Keep Building on Their Own Code Over Long Horizons?",
+  "source_url": "https://arxiv.org/abs/2611.07166",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Multi-step SWE 基准，针对现有编码智能体评测普遍只考察单次任务的局限，构建了 69 个软件工程任务，每个任务都是同一代码库上由 5-15 个相互依赖步骤组成的长程链条。每一步都是完整、耗时数小时的工程请求，且起点是智能体此前自己写出的代码，模拟真实开发中开发者不断要求智能体扩展、升级和优化组件的场景。该基准的核心价值在于检验编码智能体能否在长周期内持续维护和演进自身产出的代码，而非一次性生成正确结果。这填补了单任务基准与真实软件工程长期协作之间的评测空白，对评估智能体的代码一致性、上下文保持、回归控制和架构演进能力具有重要意义，也为后续长程智能体研究提供了可复现的评测框架。",
+  "tags": [
+    "Coding Agent",
+    "Benchmark",
+    "Long-horizon",
+    "SWE"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有编码基准多为单任务评分，无法反映真实开发中多轮迭代、持续演进同一代码库的长程需求",
+      "Multi-step SWE 用 5-15 个依赖步骤的链条评测智能体在自身代码上继续构建的能力，更贴近真实工程场景",
+      "长程评测暴露智能体在代码一致性、回归控制和架构演进上的薄弱环节，是编码智能体走向实用的关键门槛"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

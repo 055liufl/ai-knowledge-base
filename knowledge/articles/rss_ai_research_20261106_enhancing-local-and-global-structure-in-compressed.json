@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-064",
+  "title": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
+  "source_url": "https://arxiv.org/abs/2611.08341",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注AI智能体记忆压缩中的结构保真度问题。当前压缩方法通常只验证每个条目的最近邻是否保留（局部保真度），但智能体还需要进行记忆整合、删除和比较等操作，这些操作依赖于条目之间的远距离关系（全局结构）。作者基于先前工作提出两种无标签保真度指标：局部保真度L（10个最近邻）和全局保真度G（记忆的30%-50%范围），并在每段96字节的压缩设置下评估。该研究值得关注，因为它揭示了现有压缩评估的盲区——仅关注局部邻域可能损害智能体对记忆全局结构的利用，进而影响整合、删除和比较等高级认知操作。论文为智能体记忆系统的压缩质量提供了更全面的评估框架，对构建高效且可靠的长期记忆智能体具有实用价值。",
+  "tags": [
+    "Agent Memory",
+    "Embedding Compression",
+    "Vector Representation",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有压缩评估仅关注最近邻保留（局部保真度），忽略了智能体整合、删除和比较记忆所依赖的全局结构。",
+      "提出局部保真度L（10近邻）和全局保真度G（30%-50%记忆范围）两种无标签指标，可同时评估压缩对局部和全局结构的影响。",
+      "在96字节/段落的压缩率下，需要同时优化局部和全局保真度，以避免损害智能体的高级记忆操作能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

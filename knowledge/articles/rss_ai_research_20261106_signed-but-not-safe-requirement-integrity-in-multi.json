@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-122",
+  "title": "Signed but Not Safe: Requirement Integrity in Multi-Agent LLM Handoffs",
+  "source_url": "https://arxiv.org/abs/2611.07483",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多智能体LLM协作中需求在子代理交接过程中的完整性问题。企业AI代理常将用户请求拆分给多个子代理并合并结果，但每次交接都可能遗漏、篡改或忽略需求。作者开展了一项预注册研究，使用可精确评分的合成任务，对比三种交接方式：自由文本、结构化JSON和签名需求清单。在签名清单方案中，编排器将每条需求提取为逐字引用加可检查谓词，代码用HMAC-SHA256对清单签名。研究发现，即使交接内容经过签名，需求完整性仍可能受损，说明签名本身不足以保证安全。该工作首次系统量化了多智能体交接中的需求漂移问题，并提出了可验证的工程方案，对构建可靠的企业级多智能体系统具有重要参考价值。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Security",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:50:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体LLM交接中，需求可能被摘要、篡改或忽略，签名机制无法完全防止需求完整性损失。",
+      "将需求提取为逐字引用加可检查谓词，并用HMAC-SHA256签名清单，是一种可验证的交接方案。",
+      "预注册的合成可评分任务为多智能体需求完整性研究提供了可复现的评估方法。",
+      "企业部署多智能体系统时，需在交接协议中内置需求完整性校验，而非仅依赖内容签名。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-025",
+  "title": "Embedding-Space Fingerprinting of LoRA Fine-Tunes: Recovering the Training-Data Domain from the Model Artifact Alone",
+  "source_url": "https://arxiv.org/abs/2611.07610",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LoRA微调后的模型工件是否泄露训练数据领域信息。作者使用Qwen3.5-0.8B基础模型，生成36个LoRA微调版本，仅基于模型工件（权重增量、固定探针集上的内部激活或生成文本）训练简单分类器，尝试恢复微调所用的训练数据领域，而无需访问原始训练数据。研究发现，嵌入空间指纹可用于识别微调领域，揭示了LoRA微调带来的隐私泄露风险。该工作对模型安全、隐私保护及微调工件审计具有重要参考价值，值得关注。",
+  "tags": [
+    "LoRA",
+    "隐私泄露",
+    "模型指纹",
+    "微调安全"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅凭LoRA微调后的模型工件（权重增量、激活或生成文本）即可推断训练数据领域，无需原始数据。",
+      "嵌入空间指纹方法能有效分类微调领域，表明LoRA微调存在隐私泄露风险。",
+      "该研究为模型工件审计和隐私保护提供了新视角，提示需关注微调过程中的数据泄露问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-134",
+  "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+  "source_url": "https://arxiv.org/abs/2611.07640",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的间接提示注入（IPI）攻击范式——任务篡改攻击，区别于传统的指令覆盖攻击。传统IPI基准测试主要关注攻击者植入指令使工具型智能体转向攻击者选择的任务，而本文指出攻击者控制的内容可以篡改正在执行任务的结果，而不改变任务本身。例如，买家的争议证据可以引用虚假的退款政策来抬高退款金额，而不改变任务目标。作者从权威性而非指令式措辞的角度重新定义IPI，认为植入内容只要具有权威性即可构成攻击。该研究构建了相应的基准测试，对现有智能体系统的安全性提出了新的挑战，值得关注因为它揭示了IPI攻击更隐蔽、更危险的变体，对LLM智能体的安全评估和防御设计具有重要指导意义。",
+  "tags": [
+    "Prompt Injection",
+    "LLM Security",
+    "Agent",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统IPI基准主要测试指令覆盖攻击，而任务篡改攻击通过篡改任务结果而不改变任务目标，更具隐蔽性。",
+      "从权威性而非指令式措辞定义IPI，拓宽了攻击面，植入内容只要具有权威性即可构成攻击。",
+      "任务篡改攻击可导致智能体在正常执行任务时产生错误结果，如虚假退款政策抬高退款金额。",
+      "该研究为LLM智能体安全评估提供了新基准，强调了防御设计需考虑更广泛的IPI变体。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

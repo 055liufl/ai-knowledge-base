@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-086",
+  "title": "SD-LoRA: Training-Time Structural Distillation into LoRA for Few-Shot Vision-Language Adaptation",
+  "source_url": "https://arxiv.org/abs/2611.07063",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SD-LoRA，一种面向少样本视觉-语言适应的训练时结构蒸馏方法。现有轻量适应方法（如提示调优、LoRA、缓存适配器）通常监督全局图像嵌入，未能充分利用 token 级结构信息；而结构感知方法虽能利用 token 级信息，却往往牺牲部署效率。SD-LoRA 的核心思路是在训练阶段将结构知识蒸馏进 LoRA 参数中，使模型在保持 LoRA 轻量、高效部署优势的同时，获得对细粒度视觉差异的建模能力。该方法针对少样本场景下监督信号稀缺与部署效率之间的核心矛盾，提出了一种兼顾两者的解决方案。其价值在于：一方面提升了少样本适应中 token 级结构的利用效率，另一方面不增加推理时的额外开销，对实际部署友好。该工作属于视觉-语言模型高效适应方向，对关注 CLIP 类模型轻量化微调、少样本学习与知识蒸馏的研究者和开发者具有参考意义。",
+  "tags": [
+    "LoRA",
+    "Vision-Language",
+    "Few-Shot Learning",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有轻量适应方法仅监督全局图像嵌入，浪费了 token 级结构信息，限制了少样本下的细粒度学习能力。",
+      "SD-LoRA 在训练时将结构知识蒸馏进 LoRA 参数，推理时无需额外结构模块，兼顾效果与部署效率。",
+      "该方法直击少样本视觉-语言适应中监督信号稀缺与部署效率之间的核心矛盾，提供了训练时蒸馏的新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

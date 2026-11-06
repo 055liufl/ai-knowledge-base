@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-027",
+  "title": "Redacting Personal Data: A Speed and Accuracy Comparison of Regex, Presidio and Hybrid Designs",
+  "source_url": "https://arxiv.org/abs/2611.07633",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对企业将自由文本发送给大语言模型（LLM）时个人可识别信息（PII）泄露的风险，系统比较了三种PII脱敏方案：正则表达式、微软Presidio以及混合设计。研究聚焦于脱敏操作在延迟和准确性上的权衡，填补了团队在实际部署中缺乏量化数据的空白。文章通过实验评估了各方法在识别姓名、电话、邮箱、地址和出生日期等PII时的表现，并分析了混合设计如何结合规则与机器学习模型以平衡速度与精度。该工作对于需要在LLM调用前实施数据隐私控制的企业具有直接指导意义，帮助团队在合规与性能之间做出明智选择。",
+  "tags": [
+    "PII Redaction",
+    "LLM Privacy",
+    "Presidio",
+    "Regex",
+    "Data Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "正则表达式在结构化PII（如电话、邮箱）上速度快但召回率有限，Presidio基于NLP模型准确率更高但延迟显著增加。",
+      "混合设计通过规则预过滤与模型精修相结合，能在可接受的延迟内达到接近Presidio的准确率。",
+      "企业部署LLM前应量化脱敏的延迟成本，并根据PII类型选择分层策略以平衡隐私与性能。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

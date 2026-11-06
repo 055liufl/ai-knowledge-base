@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-085",
+  "title": "Segment What It Can Draw: Querying a Text-to-Image Generator with Its Own Images for Skin Lesion Segmentation",
+  "source_url": "https://arxiv.org/abs/2611.07061",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种无需标注掩码的皮肤病变分割方法，利用通用文本到图像扩散变换器（如Stable Diffusion）的文本接口来指定目标。现有方法依赖皮肤镜特定规则、标注先验或用户选择区域，而该工作尝试用文本概念词注意力定位病变，但发现其在皮肤镜图像上不可靠：在模型注意力输出空间中，由词导出的皮肤到病变方向存在偏差。论文通过将模型自身生成的图像作为查询输入，探索一种自洽的分割范式，可能为医学图像分割提供无需人工标注的新思路。值得关注的是，它揭示了通用生成模型在专业医学领域的注意力机制缺陷，并尝试用生成-查询闭环来缓解，对低资源医学影像分析有潜在价值。",
+  "tags": [
+    "Diffusion Model",
+    "Medical Imaging",
+    "Segmentation",
+    "Text-to-Image"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用文本到图像扩散变换器的概念词注意力在皮肤镜图像上不可靠，直接用于病变分割存在偏差。",
+      "利用模型自身生成的图像作为查询输入，可构建自洽的分割流程，减少对标注掩码的依赖。",
+      "该方法为无标注医学图像分割提供了新思路，但需进一步验证其泛化性和临床可用性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

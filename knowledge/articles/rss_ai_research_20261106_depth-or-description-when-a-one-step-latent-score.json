@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-093",
+  "title": "Depth or Description? When a One-Step Latent Score Replaces Lookahead in Proactive Information Acquisition",
+  "source_url": "https://arxiv.org/abs/2611.07155",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究主动信息获取中，智能体在行动前决定提问策略的权衡问题。精确前瞻（lookahead）方法评估问题组合的价值，但计算昂贵且依赖拟合模型；一步评分（one-step score）成本低，却可能遗漏问题间的交互效应。核心发现是：对深度的需求往往取决于隐藏原因的描述方式。在标签上的一步评分可能对答案间的交互视而不见，而在合适的潜在原因上的评分则不会——当该潜在变量编码了决策所需信息时，一步评分足以替代前瞻。该工作为设计高效主动提问智能体提供了理论依据，对对话系统、主动学习和信息收集型Agent有直接指导意义。",
+  "tags": [
+    "Agent",
+    "Active Learning",
+    "Information Acquisition",
+    "Latent Variable"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "一步评分在标签空间可能忽略答案交互，但在合适的潜在原因空间可捕获交互信息",
+      "当潜在变量编码决策所需信息时，一步评分可替代昂贵的前瞻计算",
+      "隐藏原因的描述方式决定了是否需要深度前瞻，而非问题本身复杂度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

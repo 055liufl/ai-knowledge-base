@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-133",
+  "title": "Measuring the Marginal Value of Verifier-Based RL Beyond Supervised Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2611.07639",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究基于验证器的强化学习（RLVR）在监督微调（SFT）之外的边际价值。通常RLVR被视作SFT的替代或后续阶段，隐含假设RL阶段能带来独立增益。作者构建了gpu-train-debug确定性基准，包含1,877个合成GPU和LLM训练任务，在可控环境中将两个阶段完整运行并精确比较。研究发现RLVR的增益高度依赖于SFT的完成程度，当SFT充分收敛时，RLVR的额外贡献显著缩小甚至消失。该工作挑战了RLVR普遍有效的假设，为训练流程设计提供了重要实证依据，值得关注。",
+  "tags": [
+    "RLVR",
+    "SFT",
+    "LLM训练",
+    "基准测试"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVR的增益并非独立于SFT，而是与SFT的完成程度强相关",
+      "当SFT充分收敛时，RLVR的边际贡献可能显著缩小甚至消失",
+      "构建了确定性基准gpu-train-debug，支持两阶段完整运行与精确比较",
+      "对RLVR作为独立增益阶段的隐含假设提出了实证挑战"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

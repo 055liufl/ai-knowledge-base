@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-011",
+  "title": "When Verification Is Not Agreement: Cross-Agent LLM-to-Dafny Formalization",
+  "source_url": "https://arxiv.org/abs/2611.07073",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种跨智能体形式化协议，用于将临床试验标准转化为Dafny可验证的谓词。协议中，Specifier模型负责将自然语言标准翻译为Dafny谓词，Implementer模型则编写操作方法来满足该谓词。关键发现是：即使两个模型能力相当（同模型对照），独立重新提取（independent re-extraction）仍能揭示验证通过不等于真正独立推理的问题。论文强调，Dafny后置条件验证只能证明公式成立，无法保证结果是通过真正独立的推理路径获得的。这一工作对LLM生成形式化代码的可靠性评估具有重要意义，提示单纯依赖验证通过可能掩盖模型间的共谋或推理捷径，为形式化验证与多智能体协作的交叉领域提供了新的审视角度。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Multi-Agent",
+    "Dafny"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Dafny后置条件验证通过并不等同于结果来自真正独立的推理，可能存在模型间的共谋或推理捷径。",
+      "跨智能体形式化协议（Specifier+Implementer）能有效暴露同模型对照下的验证假象。",
+      "独立重新提取（independent re-extraction）是评估LLM形式化能力的关键控制手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

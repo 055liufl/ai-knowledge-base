@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-080",
+  "title": "KG-AST for Cheaper CI/CD: Budgeted Test Selection and AI Bug Review",
+  "source_url": "https://arxiv.org/abs/2611.06950",
+  "source_platform": "rss_ai_research",
+  "summary": "KG-AST 是一种面向持续集成与 AI 辅助代码审查的预算优化方法。针对当前 CI 和 AI 审查对每次提交均等消耗资源、而实际仅少数提交引入缺陷的问题，该方法利用 git 历史与代码图特征对每次提交进行风险评分，从而将重型测试和 AI 审查预算优先分配给高风险提交，并且仅向 AI 审查器提供变更周围的图切片以降低审查成本。在 11 种语言的 155 个开源项目上，单一跨语言模型验证了其有效性。该工作值得关注，因为它将风险预测与代码图结构结合，在保证缺陷检出率的同时显著降低 CI/CD 与 AI 审查的计算开销，为资源受限的工程团队提供了可落地的优化思路。",
+  "tags": [
+    "CI/CD",
+    "代码图",
+    "风险预测",
+    "AI代码审查"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用 git 历史与代码图特征对提交进行风险评分，可将测试与审查预算优先分配给高风险提交，避免资源均摊浪费。",
+      "仅向 AI 审查器提供变更周围的图切片，而非完整上下文，能显著降低 AI 审查的 token 与计算成本。",
+      "单一跨语言模型在 11 种语言的 155 个开源项目上有效，表明该方法具备良好的语言泛化能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

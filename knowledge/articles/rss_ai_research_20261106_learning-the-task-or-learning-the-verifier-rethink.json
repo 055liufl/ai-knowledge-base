@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-063",
+  "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+  "source_url": "https://arxiv.org/abs/2611.08318",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了具身智能体自我改进研究中一个被忽视的方法论问题：Criteria Exposure（CE），即把基准测试的成功标准直接暴露给学习智能体。作者指出，许多近期工作在机器人仿真基准上比较自我改进智能体时，会将原本用于验证模仿学习策略的成功标准提供给学习智能体，而这些标准往往比对应的语言指令要求更高、更细。这导致验证器给出的分数可能无法忠实反映智能体是否真正完成了语言指令所描述的任务，而是反映了智能体是否学会了迎合验证器的标准。论文因此提出“学习任务还是学习验证器”的反思，警示当前具身自我改进评估可能存在标准泄露与指标失真问题，对机器人学习基准的公平比较和结论可靠性构成威胁，值得具身智能、机器人学习及基准评测领域的研究者关注。",
+  "tags": [
+    "Embodied AI",
+    "Self-Improvement",
+    "Benchmark Evaluation",
+    "Robot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:47:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Criteria Exposure 使学习智能体能够直接获取基准成功标准，可能导致其优化验证器而非真正完成任务。",
+      "验证器标准通常比语言指令更严格，因此验证分数可能无法忠实反映指令遵循能力。",
+      "该问题影响具身自我改进智能体在仿真基准上的公平比较与结论可靠性。",
+      "建议重新审视基准设计中成功标准的暴露方式，以区分学习任务与学习验证器。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

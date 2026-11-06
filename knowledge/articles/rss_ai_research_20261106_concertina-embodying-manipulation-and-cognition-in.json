@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-123",
+  "title": "Concertina: Embodying Manipulation and Cognition in One Diffusion Vision-Language Model",
+  "source_url": "https://arxiv.org/abs/2611.07513",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Concertina，一种将操作能力与认知能力统一在单一扩散视觉-语言模型中的新型视觉-语言-动作（VLA）策略。现有 VLA 方法通常将操作与认知解耦：要么将动作量化为离散 token，导致量化误差与物理位移之间缺乏稳定对应关系；要么将连续轨迹生成交给独立的动作专家模块，其梯度与 VLM 主干竞争或被阻断，难以端到端优化。Concertina 的核心主张是操作与认知不应分离，而应在同一扩散模型中联合建模。该工作值得关注，因为它挑战了当前主流的模块化 VLA 架构，尝试用统一的扩散生成框架同时处理语言理解、视觉感知与连续动作输出，有望提升机器人策略的端到端学习效率与泛化能力，对具身智能与机器人基础模型研究具有参考价值。",
+  "tags": [
+    "VLA",
+    "Diffusion Model",
+    "VLM",
+    "Robotics",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:50:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 VLA 策略将操作与认知解耦，离散动作 token 的量化误差与物理位移缺乏稳定对应，独立动作专家的梯度又与 VLM 主干冲突或被阻断",
+      "Concertina 主张在单一扩散视觉-语言模型中联合建模操作与认知，实现端到端的连续动作生成",
+      "统一扩散框架有望避免量化误差与梯度隔离问题，提升机器人策略的学习效率与泛化性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

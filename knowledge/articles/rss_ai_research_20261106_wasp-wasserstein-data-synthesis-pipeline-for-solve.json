@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-136",
+  "title": "WaSP: Wasserstein Data Synthesis Pipeline for Solver-Free Operator Learning",
+  "source_url": "https://arxiv.org/abs/2611.07646",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 WaSP（Wasserstein 数据合成流水线），一种用于无求解器算子学习的创新方法。神经算子作为偏微分方程（PDE）的快速代理模型，通常需要昂贵的输入-解对进行训练。现有的两种无求解器替代方案——物理信息学习和基于制造数据的训练——各有局限：物理信息学习通过最小化 PDE 残差来近似解，但残差范数需足够强以控制解误差，而更强的范数会增加小批量方差并阻碍优化。WaSP 利用 Wasserstein 距离构建数据合成流水线，旨在生成高质量训练数据，从而在无需传统求解器的情况下高效训练神经算子。该方法有望降低 PDE 代理模型的计算成本，推动科学机器学习在工程仿真中的应用。",
+  "tags": [
+    "Neural Operator",
+    "PDE",
+    "Wasserstein Distance",
+    "Solver-Free Learning",
+    "Data Synthesis"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "WaSP 通过 Wasserstein 距离合成训练数据，规避了传统 PDE 求解器的高昂成本。",
+      "物理信息学习中的残差范数选择存在权衡：强范数控制误差但增加优化方差。",
+      "无求解器算子学习有望加速神经算子训练，拓展其在科学计算中的应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

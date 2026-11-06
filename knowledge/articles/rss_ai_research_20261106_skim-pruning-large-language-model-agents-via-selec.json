@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-127",
+  "title": "SKIM: Pruning Large Language Model Agents via Selective Knowledge Informed Masking",
+  "source_url": "https://arxiv.org/abs/2611.07558",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出SKIM方法，针对结构化生成场景下LLM智能体的压缩问题。现有压缩方法主要面向无约束生成，而结构化生成通过语法约束将输出分布限制在合法token上，且logits仅在决定语法分支的少数关键位置起决定性作用。SKIM通过选择性知识掩码剪枝LLM智能体，识别并保留对语法决策关键的位置，从而在保持输出合法性的同时大幅压缩模型。该工作首次揭示了结构化生成与无约束生成在压缩需求上的根本差异，为部署高效LLM智能体提供了新思路，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Model Compression",
+    "Structured Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "结构化生成下语法约束将输出分布限制在合法token上，压缩应聚焦于决定语法分支的关键位置",
+      "现有无约束生成压缩方法直接应用于结构化生成场景存在根本性不匹配",
+      "选择性知识掩码可有效剪枝LLM智能体，在保持输出合法性的同时实现压缩"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

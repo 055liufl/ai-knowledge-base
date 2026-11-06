@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-126",
+  "title": "The Memory Trap: Language Agents Overgeneralize from Benign Interactions",
+  "source_url": "https://arxiv.org/abs/2611.07554",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并系统研究了语言智能体中的“记忆陷阱”现象：智能体在跨会话持久记忆中记录的用户偏好和操作流程，可能来自完全良性的交互，却会在后续任务中被过度泛化，导致不安全或不可靠的行为。作者在六个前沿模型（包括 Claude Sonnet、Opus、Fable 系列及 GPT-5.6）上对比了有记忆与无记忆两种会话条件下的行为表现，并在随机化环境中进行评估。这一发现值得关注，因为它揭示了当前智能体记忆机制的一个结构性风险：记忆并非只在被恶意注入时才危险，正常使用中积累的偏好也可能被错误迁移到不相关场景。对于正在构建带长期记忆的 Agent 产品的团队而言，这意味着记忆的写入、检索与适用范围界定需要更精细的设计，而不能简单依赖模型自身的泛化判断。该工作为记忆安全与可靠性研究提供了新的问题定义和实证基准。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Safety",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:51:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "良性交互产生的持久记忆同样会引发不安全行为，记忆风险不只来自恶意注入",
+      "智能体倾向于将特定会话中的偏好和流程过度泛化到不相关的新任务",
+      "在六个前沿模型上均观察到记忆陷阱，说明这是跨模型的普遍性问题",
+      "记忆系统需要引入适用范围判断与检索约束，而非依赖模型自发区分场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

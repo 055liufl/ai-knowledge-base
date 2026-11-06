@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-003",
+  "title": "BlockLock: Reproducible LLM Inference with Fixed Batch Geometry",
+  "source_url": "https://arxiv.org/abs/2611.06977",
+  "source_platform": "rss_ai_research",
+  "summary": "BlockLock 是一种针对大语言模型（LLM）推理可复现性的新技术方案，旨在解决同一请求在不同批次组合下输出不一致的问题。现有方法各有代价：批次不变内核（batch-invariant kernels）通过约束每个算子来保证一致性，但牺牲了性能；而固定形状解码的预填充隔离方案（CoRun 风格基线）则放弃了共享预填充计算并引入填充开销。BlockLock 的创新在于保留共享的批处理预填充，仅固定受保护数值路径的批几何形状，从而在保证可复现性的同时减少性能损失。该工作值得关注，因为可复现性是 LLM 生产部署、调试和合规审计的关键需求，而 BlockLock 提供了一种更高效的折中方案，有望推动可复现推理在工业界的落地。",
+  "tags": [
+    "LLM",
+    "推理优化",
+    "可复现性",
+    "批处理"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:45:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可复现 LLM 推理的核心挑战是批次组合变化导致的数值路径差异，而非单纯的计算正确性。",
+      "现有方案在可复现性与性能之间做极端取舍：要么全面约束算子，要么放弃共享预填充计算。",
+      "BlockLock 通过仅固定受保护数值路径的批几何形状，在保留共享预填充的同时实现可复现性。",
+      "该方法为生产环境中的 LLM 调试、审计和一致性保障提供了更实用的基础设施支持。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-121",
+  "title": "Localization Does Not Imply Steerability: A Mechanistic Study of Sign Errors in LLM Mathematics",
+  "source_url": "https://arxiv.org/abs/2611.07478",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对大语言模型在多步数学推理中反复出现的符号错误现象展开机制性分析。作者发现，模型常在某一步写入错误的符号token（如余子式符号、分部积分中的负号），随后算术执行完全正确，但最终答案错误。通过对六个开源模型（14B至675B参数）进行逐层读出分析，研究定位了错误符号在网络中的写入位置，并进一步探讨了局部化与可操控性之间的关系。核心结论是：符号错误虽然可以在特定层被定位，但这并不意味着模型能够被有效操控以纠正该错误，揭示了机制可解释性与实际干预能力之间的鸿沟。该工作对理解LLM数学推理的失败模式、提升模型可靠性具有重要价值，尤其为开发更精准的干预方法提供了理论基础。",
+  "tags": [
+    "LLM",
+    "Mechanistic Interpretability",
+    "Math Reasoning",
+    "Sign Errors"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:50:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "符号错误是LLM多步数学推理中的典型失败模式，错误发生在符号token写入阶段而非后续算术执行。",
+      "通过逐层读出分析，可以在网络特定层定位错误符号的写入位置，实现错误的局部化。",
+      "局部化并不等同于可操控性：即使定位了错误来源，直接干预以纠正符号错误仍面临挑战。",
+      "该研究揭示了机制可解释性与实际模型控制之间的差距，为开发更有效的干预策略提供了方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-083",
+  "title": "Batch-Conditioned Semantic Anchors for Robust Transductive Adaptation of Vision--Language Models",
+  "source_url": "https://arxiv.org/abs/2611.06993",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究视觉-语言模型（如CLIP）的转导自适应问题，即在测试时利用无标签批次数据精炼预测。现有方法存在关键权衡：激进方法利用批次结构但易在批次稀疏、先验偏移或标签覆盖不足时漂移；保守方法保留CLIP文本语义但固定语义参考可能欠适应。作者提出“批次条件语义锚点”（Batch-Conditioned Semantic Anchors），根据批次动态调整语义参考，以在鲁棒性和适应性之间取得平衡。该工作值得关注，因为它针对转导自适应中的核心矛盾提出了新思路，有望提升视觉-语言模型在分布偏移和少样本场景下的实际部署效果。",
+  "tags": [
+    "Vision-Language Models",
+    "Test-Time Adaptation",
+    "CLIP",
+    "Transductive Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:48:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "转导自适应中激进与保守方法存在根本性权衡：利用批次结构 vs. 保留文本语义",
+      "固定语义参考在批次提供强纠正信号时会导致欠适应",
+      "批次条件语义锚点可根据批次动态调整参考，兼顾鲁棒性与适应性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

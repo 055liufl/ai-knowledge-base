@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-111",
+  "title": "Test-Time Self-Play: Scaling without a Verifier",
+  "source_url": "https://arxiv.org/abs/2611.07367",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Test-Time Self-Play（TTSP），一种在缺少可靠验证器（verifier）时仍能进行测试时扩展（test-time scaling）的方法。现有测试时扩展方法大多依赖验证器对候选解打分，以完成选择或迭代优化，但在许多实际部署场景中，针对目标问题的强验证器并不可用。TTSP 的核心思路是让模型在测试阶段通过自我对弈机制生成并评估候选解，从而在不依赖外部验证器的情况下投入额外计算提升性能。该工作值得关注，因为它直击测试时扩展的关键瓶颈——验证器依赖，若能成立，将显著拓宽测试时计算在开放域、难以自动验证任务上的适用范围，对推理增强、Agent 自我改进等方向具有潜在影响。不过摘要信息有限，具体机制、适用边界与实验效果仍需阅读全文确认。",
+  "tags": [
+    "Test-Time Scaling",
+    "Self-Play",
+    "LLM",
+    "Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:50:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "测试时扩展普遍依赖验证器，而强验证器在真实部署中往往不可得，这是该方法要解决的核心痛点",
+      "TTSP 用自我对弈替代外部验证器，在测试阶段通过模型自身生成与评估来消耗额外计算",
+      "若有效，可拓展测试时计算到难以自动验证的开放域任务，对推理与自我改进方向有启发",
+      "摘要未披露具体机制与实验规模，实际增益和适用边界需进一步验证"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

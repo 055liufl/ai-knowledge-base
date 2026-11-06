@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261106-097",
+  "title": "TileQuant: Tile as the Precision-Allocation Unit for LLM Mixed-Precision Post-Training Quantization",
+  "source_url": "https://arxiv.org/abs/2611.07217",
+  "source_platform": "rss_ai_research",
+  "summary": "TileQuant 提出了一种面向大语言模型（LLM）训练后量化（PTQ）的混合精度分配新方法，核心创新在于将“瓦片（tile）”而非整列作为精度分配的基本单元。现有 PTQ 方法存在明显局限：均匀量化对所有层使用同一比特宽度，重要性感知量化仅调整缩放因子或在固定位宽内重建权重，而列级混合精度则保留整列高精度权重。然而，权重敏感度在列内部也存在显著差异，整列保留会同时保护不敏感部分，造成精度资源浪费。TileQuant 通过细粒度瓦片划分，将高精度仅分配给真正敏感的子区域，从而在相同平均位宽下获得更优的模型质量，或在相同质量下实现更低的部署成本。该工作对 LLM 高效推理与边缘部署具有直接实用价值，值得量化研究者和工程部署人员关注。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Mixed-Precision",
+    "PTQ"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:49:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重敏感度在列内部不均匀，整列保留高精度会保护不敏感部分，造成精度浪费",
+      "以瓦片为精度分配单元可实现比列级混合精度更细粒度的资源分配",
+      "在相同平均位宽下，瓦片级混合精度有望优于列级方案，提升 LLM 部署效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261106-041",
+  "title": "GuidedWAM: Training-Free Energy Guidance for World Action Models in Autonomous Driving",
+  "source_url": "https://arxiv.org/abs/2611.07912",
+  "source_platform": "rss_ai_research",
+  "summary": "GuidedWAM 提出了一种无需重新训练即可为自动驾驶世界动作模型（WAM）注入新驾驶目标的通用框架。现有 WAM 将驾驶策略与视觉世界模型耦合在单一生成网络中，训练后目标固定，若需适配新驾驶目标则必须重新训练。GuidedWAM 将能量引导作为通用机制，在采样阶段向冻结的 WAM 注入驾驶目标，每个目标被构造为可微能量函数，从而在不修改模型参数的情况下实现目标条件生成。该工作值得关注，因为它解决了自动驾驶生成模型部署后目标僵化的核心痛点，显著降低了适配成本，并为模型复用和快速迭代提供了新思路，对自动驾驶算法研发和生成模型应用具有参考价值。",
+  "tags": [
+    "World Model",
+    "Autonomous Driving",
+    "Energy Guidance",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-06T15:42:52Z",
+  "collected_at": "2026-11-06T15:46:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 WAM 训练后目标固定，新驾驶目标需重新训练，成本高且不灵活。",
+      "GuidedWAM 在采样阶段通过能量引导向冻结模型注入目标，实现免训练适配。",
+      "该框架模型无关，可推广到不同 WAM 架构，提升部署灵活性。",
+      "将驾驶目标构造为可微能量函数是连接生成采样与任务约束的关键设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
