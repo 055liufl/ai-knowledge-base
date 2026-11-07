@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261107-107",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队在 Hugging Face 博客上发布的技术文章，围绕其新一代模型 MiniMax M2 展开，核心议题是「对齐到什么？」——即智能体（Agent）泛化能力的本质问题。文章反思了当前 Agent 训练中普遍采用的「对齐」范式：模型往往被对齐到特定任务分布、特定工具调用格式或特定评测基准上，从而在训练分布内表现优异，却在分布外场景中泛化能力不足。MiniMax M2 试图从训练目标与数据构造层面重新思考这一问题，强调应将对齐目标从「拟合具体任务轨迹」转向「习得可迁移的通用智能体能力」，例如稳定的推理链、工具使用抽象与跨环境适应能力。文章结合实验观察，讨论了过度对齐带来的副作用（如模式坍缩、对提示格式敏感、在新工具上失效），并给出 M2 在泛化性上的改进思路与评测结果。该文值得关注的原因在于：Agent 泛化是当前 LLM 落地的主要瓶颈之一，而「对齐目标选择」这一视角切中要害，对研究者理解 Agent 训练范式、对开发者选择与微调模型均有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-07T14:42:50Z",
+  "collected_at": "2026-11-07T14:50:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的「对齐」若只针对特定任务分布或工具格式，会牺牲分布外泛化能力，形成表面上的高性能。",
+      "应将对齐目标从拟合具体轨迹转向习得可迁移的通用智能体能力，如推理链稳定性与工具使用抽象。",
+      "过度对齐可能引发模式坍缩、提示格式敏感及新工具失效等副作用，需在训练目标中显式权衡。",
+      "MiniMax M2 从训练目标与数据构造层面重构 Agent 训练，为提升跨环境泛化提供了可参考的实践路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

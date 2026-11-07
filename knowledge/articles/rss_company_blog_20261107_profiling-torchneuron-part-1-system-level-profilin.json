@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261107-007",
+  "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+  "source_url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 TorchNeuron 性能分析系列的第一部分，聚焦于在 AWS Trainium 芯片上进行系统级性能分析。TorchNeuron 是 Hugging Face Optimum 库中用于在 AWS Trainium 上运行 PyTorch 模型的组件。文章介绍了如何使用系统级性能分析工具（如 Neuron Profiler）来识别和解决模型在 Trainium 上运行时的性能瓶颈，包括数据加载、计算图编译、内存使用和通信开销等方面。该内容值得关注，因为随着大模型训练和推理对专用硬件（如 Trainium）的需求增长，开发者需要掌握针对这些硬件的性能调优方法，以充分发挥其性价比优势。本文提供了实用的 profiling 指南和最佳实践，有助于开发者优化模型在 Trainium 上的执行效率，降低训练和推理成本。",
+  "tags": [
+    "AWS Trainium",
+    "Profiling",
+    "PyTorch",
+    "性能优化"
+  ],
+  "author": null,
+  "published_at": "2026-11-07T14:42:50Z",
+  "collected_at": "2026-11-07T14:45:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统级性能分析是优化 Trainium 上模型性能的关键步骤，可识别数据加载、编译和通信等瓶颈。",
+      "Neuron Profiler 提供了对计算图、内存和通信的细粒度洞察，帮助开发者针对性调优。",
+      "结合 TorchNeuron 和 Optimum 库，开发者可以更便捷地在 Trainium 上部署和优化 PyTorch 模型。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

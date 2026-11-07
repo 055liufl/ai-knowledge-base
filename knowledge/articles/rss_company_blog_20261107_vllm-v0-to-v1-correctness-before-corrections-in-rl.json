@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261107-056",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景下的正确性问题。vLLM 是主流的高吞吐 LLM 推理引擎，V1 架构对调度、KV 缓存和分布式执行做了重构，而 RL 训练（如 PPO/GRPO）对推理结果的确定性和数值一致性要求极高——采样分布、logprob 计算或批处理顺序的细微偏差都会污染奖励信号和梯度更新。文章强调在引入新特性或性能优化之前，必须先验证 V1 与 V0 在相同输入下输出的一致性，并分享了迁移中遇到的正确性陷阱与验证方法。对使用 vLLM 做 RLHF/RLVR 的团队而言，这是一份避免静默错误的实用经验，也反映了推理引擎快速迭代中\"正确性优先\"的工程原则。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-07T14:42:50Z",
+  "collected_at": "2026-11-07T14:47:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 训练对推理引擎的数值一致性极为敏感，采样与 logprob 的微小偏差会直接污染奖励信号",
+      "从 vLLM V0 迁移到 V1 时，应优先建立输出一致性验证，再考虑性能优化和新特性",
+      "推理引擎的架构重构（调度、KV 缓存）可能引入静默正确性回归，需要系统化的对比测试"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
