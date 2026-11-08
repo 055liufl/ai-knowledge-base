@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261108-074",
+  "title": "Introducing Storage Buckets on the Hugging Face Hub",
+  "source_url": "https://huggingface.co/blog/storage-buckets",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face Hub 正式推出 Storage Buckets 功能，为平台上的模型、数据集和 Space 提供对象存储能力。此前 Hub 主要以仓库（Repository）形式管理版本化内容，适合模型权重和数据集的分发，但在处理大规模非结构化文件、频繁读写或需要类 S3 语义的场景时存在局限。Storage Buckets 引入了更接近云对象存储的抽象，支持以桶为单位组织文件，并提供相应的 API 与工具链集成，使开发者可以在 Hugging Face 生态内直接完成数据上传、下载和管理，而无需额外搭建外部存储。该功能值得关注的原因在于：它补齐了 Hub 在存储层的能力，使 Hugging Face 从单纯的模型托管平台向更完整的数据与 AI 工作流基础设施演进；对于需要处理海量训练数据、构建数据管道或与现有云存储方案对接的团队而言，这降低了架构复杂度和跨平台迁移成本。同时，它与 Hub 现有的权限、版本和协作机制结合，有望简化团队在数据资产管理上的流程。总体来看，这是 Hub 平台能力扩展的重要一步，对依赖 Hugging Face 进行模型与数据管理的开发者具有实际价",
+  "tags": [
+    "Hugging Face",
+    "对象存储",
+    "数据基础设施",
+    "MLOps"
+  ],
+  "author": null,
+  "published_at": "2026-11-08T14:48:36Z",
+  "collected_at": "2026-11-08T14:54:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Storage Buckets 为 Hugging Face Hub 补齐了类 S3 的对象存储能力，突破了传统仓库模式在非结构化大文件管理上的局限。",
+      "该功能使 Hub 从模型托管平台向覆盖数据存储与管理的完整 AI 基础设施演进。",
+      "对需要处理海量训练数据或构建数据管道的团队而言，可减少对外部存储的依赖和跨平台集成成本。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261108-056",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 ServiceNow AI 团队发布在 Hugging Face 博客上的技术文章，讨论 vLLM 从 V0 到 V1 版本演进过程中在强化学习（RL）场景下的正确性问题。vLLM 作为高吞吐 LLM 推理引擎，被广泛用于 RLHF/RLVR 等训练流程中的 rollout 生成环节。文章标题强调「先保证正确性，再谈修正」，暗示 V1 版本在架构重构中优先解决了 V0 遗留的语义与数值正确性隐患，而非急于叠加新特性。内容涉及推理引擎与 RL 训练框架的集成细节，对使用 vLLM 做在线采样、权重同步、KV cache 管理的开发者具有直接参考价值。该文值得关注的原因在于：RL 训练对采样结果的确定性与一致性要求远高于普通推理服务，vLLM 版本迁移中的细微偏差可能被放大为训练不稳定或策略退化，因此官方对正确性问题的系统性梳理对生产级 RL 流水线尤为重要。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-08T14:48:36Z",
+  "collected_at": "2026-11-08T14:53:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 在架构重构中将正确性置于新特性之前，优先修复 V0 在 RL 采样场景下的语义与数值偏差",
+      "RL 训练对 rollout 的确定性和一致性要求高于普通推理服务，引擎版本迁移的细微差异会被训练过程放大",
+      "文章为使用 vLLM 构建在线采样与权重同步流水线的开发者提供了版本升级的实践参考"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261108-054",
+  "title": "PaddleOCR 3.5: Running OCR and Document Parsing Tasks with a Transformers Backend",
+  "source_url": "https://huggingface.co/blog/PaddlePaddle/paddleocr-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "PaddleOCR 3.5 是 PaddlePaddle 团队发布的 OCR 与文档解析工具新版本，其核心更新是引入 Transformers 后端，使模型可以直接在 Hugging Face Transformers 生态中加载和运行。此前 PaddleOCR 依赖 PaddlePaddle 自有的推理框架，虽然性能优秀，但与主流深度学习生态的集成度有限。3.5 版本通过 Transformers 后端打通了这一壁垒，开发者可以使用熟悉的 AutoModel、AutoProcessor 等接口调用 PP-OCRv5、PP-StructureV3 等模型，同时保留原有的高性能 Paddle 推理路径。该版本覆盖文字检测、文字识别、表格识别、版面分析、公式识别等完整文档解析流水线，并支持多语言场景。值得关注的原因在于：OCR 与文档解析是 RAG、智能文档处理、票据识别等应用的基础环节，PaddleOCR 本身在中文及多语种场景具有较强竞争力，此次与 Transformers 生态的融合显著降低了使用门槛，也便于与 LLM 流水线组合，对构建端到端文档智能应用的开发者具有实际价值。",
+  "tags": [
+    "OCR",
+    "Transformers",
+    "Document Parsing",
+    "PaddleOCR"
+  ],
+  "author": null,
+  "published_at": "2026-11-08T14:48:36Z",
+  "collected_at": "2026-11-08T14:53:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "PaddleOCR 3.5 引入 Transformers 后端，使模型可通过 Hugging Face 标准接口加载，大幅降低生态集成成本",
+      "保留原有 Paddle 推理路径的同时兼容 Transformers，兼顾性能与易用性",
+      "覆盖检测、识别、表格、版面、公式等完整文档解析流水线，适合作为 RAG 与文档智能应用的底层组件",
+      "中文及多语种 OCR 能力是其相对优势，与 LLM 流水线组合可构建端到端文档理解方案"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261108-005",
+  "title": "Agent memory needs its OpenTelemetry moment",
+  "source_url": "https://www.lorekit.io/blog/open-agent-memory-format",
+  "source_platform": "rss_general_tech",
+  "summary": "本文提出 Agent 记忆系统需要类似 OpenTelemetry 的标准化时刻。当前 AI Agent 的记忆实现高度碎片化，各框架（如 LangChain、LlamaIndex、MemGPT 等）采用私有格式存储对话历史、事实和向量嵌入，导致记忆无法跨框架迁移、难以调试和审计。作者以 LoreKit 的实践为基础，倡议建立开放的记忆格式标准，使记忆数据具备可移植性、可观测性和互操作性，类似 OpenTelemetry 为可观测性数据统一了协议与语义约定。文章认为，随着 Agent 从演示走向生产，记忆的持久化、版本管理和跨工具共享将成为刚需，标准化是降低生态碎片化成本的关键一步。该观点值得关注，因为它触及 Agent 基础设施中一个被长期忽视但影响深远的层面：记忆层的可移植性与可观测性，可能催生新的工具链和协议标准。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "OpenTelemetry",
+    "Standardization"
+  ],
+  "author": null,
+  "published_at": "2026-11-08T14:48:31Z",
+  "collected_at": "2026-11-08T14:49:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 记忆格式目前高度碎片化，缺乏跨框架可移植性，阻碍了生产级部署与调试",
+      "借鉴 OpenTelemetry 的标准化思路，可为记忆数据建立统一的开放格式与语义约定",
+      "记忆层的可观测性与互操作性将成为 Agent 基础设施竞争的下一个关键战场"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
