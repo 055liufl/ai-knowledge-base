@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261109-091",
+  "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+  "source_url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 LinkedIn 团队在 Hugging Face 博客上发布的一篇实践回顾，详细介绍了如何对 GPT-OSS 模型进行 Agentic 强化学习（RL）训练。文章聚焦于将智能体能力（如工具调用、多步推理）通过 RL 训练注入到开源 GPT 模型中，分享了从环境搭建、奖励设计、训练稳定性到评估部署的全流程经验。值得关注的原因在于：Agentic RL 是当前提升 LLM 自主决策与工具使用能力的关键技术方向，而 GPT-OSS 作为开源模型，其训练实践对社区具有高参考价值。文章不仅总结了成功经验，还坦诚讨论了遇到的挑战（如稀疏奖励、训练不稳定、评估困难），并给出了可复用的解决方案和实用建议，为希望复现或改进 Agentic RL 训练的开发者提供了宝贵的一手资料。",
+  "tags": [
+    "Agentic RL",
+    "GPT-OSS",
+    "强化学习",
+    "LLM训练",
+    "开源模型"
+  ],
+  "author": null,
+  "published_at": "2026-11-09T18:24:29Z",
+  "collected_at": "2026-11-09T18:31:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agentic RL 训练的关键在于设计合理的奖励函数和稳定的训练流程，而非单纯增加数据量。",
+      "开源模型（如 GPT-OSS）通过 Agentic RL 可以显著提升工具调用和多步任务完成能力，但需要针对性地解决稀疏奖励和训练不稳定问题。",
+      "实践表明，分阶段训练和课程学习策略能有效缓解 Agentic RL 中的探索难题。",
+      "评估 Agentic 能力需要构建贴近真实场景的交互式基准，传统静态指标不足以反映模型的实际表现。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261109-033",
+  "title": "Native-speed vLLM transformers modeling backend",
+  "source_url": "https://huggingface.co/blog/native-speed-vllm-transformers-backend",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 vLLM 项目新增的 transformers 建模后端，该后端允许 vLLM 直接使用 Hugging Face Transformers 的模型定义，同时保持原生推理速度。传统上，vLLM 需要为每个模型手动实现定制化的注意力机制和并行化逻辑，这导致新模型支持滞后且维护成本高。新后端通过自动将 Transformers 模型转换为 vLLM 可执行的格式，并利用 torch.compile 和自定义内核优化，实现了与原生 vLLM 实现相近的性能。这一改进显著降低了添加新模型的门槛，使社区能够更快地支持最新模型，同时不牺牲吞吐量和延迟。对于开发者而言，这意味着可以更灵活地使用 vLLM 部署任何 Transformers 兼容模型，而无需等待官方适配。该工作由 Hugging Face 和 vLLM 团队合作完成，是推理基础设施领域的重要进展，值得关注。",
+  "tags": [
+    "vLLM",
+    "Transformers",
+    "推理优化",
+    "模型部署"
+  ],
+  "author": null,
+  "published_at": "2026-11-09T18:24:29Z",
+  "collected_at": "2026-11-09T18:28:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "新后端允许 vLLM 直接运行 Transformers 模型，无需手动实现定制内核，大幅降低新模型支持成本。",
+      "通过 torch.compile 和内核优化，性能接近原生 vLLM 实现，兼顾灵活性与速度。",
+      "该改进加速了社区对最新模型的支持，使开发者能更快部署前沿模型。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

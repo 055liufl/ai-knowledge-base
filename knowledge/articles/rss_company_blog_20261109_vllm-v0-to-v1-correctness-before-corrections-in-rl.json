@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261109-056",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景下的正确性问题。vLLM 是主流的高吞吐 LLM 推理引擎，其 V1 架构对调度、KV 缓存和分布式执行进行了重构。在 RL 训练中，推理引擎需要与训练循环紧密耦合，任何数值或调度上的偏差都会被放大为策略更新的错误信号。文章强调“先保证正确性，再做修正”，即在追求性能优化之前，必须先验证 V1 在 RL rollout 场景下的输出与 V0 一致，包括采样行为、logprob 计算和批处理语义。作者分享了迁移中遇到的典型陷阱与验证方法，对使用 vLLM 做 RLHF/GRPO 等训练的团队具有直接参考价值。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "LLM推理",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-09T18:24:29Z",
+  "collected_at": "2026-11-09T18:29:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 训练对推理引擎的数值一致性极为敏感，迁移到 vLLM V1 前必须做严格的正确性验证",
+      "V1 的调度与批处理语义变化可能改变采样和 logprob 结果，需与 V0 逐项对齐",
+      "性能优化应放在正确性验证之后，否则错误会被 RL 训练循环放大"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

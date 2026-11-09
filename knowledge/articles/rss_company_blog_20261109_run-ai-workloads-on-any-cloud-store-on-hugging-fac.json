@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261109-034",
+  "title": "Run AI workloads on any cloud, store on Hugging Face: zero-egress storage with SkyPilot",
+  "source_url": "https://huggingface.co/blog/skypilot-hf-storage",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了 SkyPilot 与 Hugging Face 存储的集成方案，允许用户在任意云平台上运行 AI 工作负载，同时将数据存储在 Hugging Face 上，并实现零出口费用（zero-egress）。SkyPilot 是一个跨云的工作负载编排工具，而 Hugging Face 提供了大规模数据集和模型的托管服务。通过这一集成，用户可以在 AWS、GCP、Azure 等云上启动计算实例，直接挂载 Hugging Face 上的数据集和模型，无需将数据复制到云存储中，从而避免了高昂的数据出口费用。该方案特别适合需要频繁访问大型数据集（如训练大模型）的场景，能显著降低存储和传输成本，同时保持云平台的灵活性。文章详细说明了配置步骤和优势，包括自动挂载、缓存机制和成本节省。这一创新解决了多云 AI 工作流中的数据迁移痛点，提升了资源利用效率，对于从事大规模 AI 训练和推理的团队具有重要价值。",
+  "tags": [
+    "SkyPilot",
+    "Hugging Face",
+    "多云",
+    "存储",
+    "成本优化"
+  ],
+  "author": null,
+  "published_at": "2026-11-09T18:24:29Z",
+  "collected_at": "2026-11-09T18:28:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "零出口费用存储：通过直接挂载 Hugging Face 存储，避免云厂商的数据出口费用，显著降低 AI 工作负载的存储成本。",
+      "跨云灵活性：SkyPilot 支持在任意云上运行工作负载，结合 Hugging Face 存储，实现计算与存储的解耦，提升资源利用率。",
+      "简化数据管理：自动挂载和缓存机制减少了数据迁移的复杂性，使开发者能专注于模型训练和推理。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

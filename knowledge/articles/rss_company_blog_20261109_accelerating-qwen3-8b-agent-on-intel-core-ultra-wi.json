@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261109-116",
+  "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+  "source_url": "https://huggingface.co/blog/intel-qwen3-agent",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客介绍了 Intel 在 Intel Core Ultra 平台上加速 Qwen3-8B Agent 推理的优化方案，核心思路是采用“深度剪枝草稿模型”（Depth-Pruned Draft Models）进行投机解码（Speculative Decoding）。具体而言，团队从 Qwen3-8B 中裁剪掉部分 Transformer 层，得到一个更小、更快的草稿模型，在端侧 CPU 上先行预测多个候选 token，再由完整的 Qwen3-8B 目标模型并行验证，从而在不改变输出分布的前提下显著提升解码吞吐。该方案针对 Agent 场景中频繁的工具调用、多轮交互和结构化输出等负载特征做了适配，并依托 Intel Core Ultra 的 CPU/GPU/NPU 异构算力与 OpenVINO 等推理栈进行部署优化。其价值在于：一方面证明了投机解码在消费级 PC 端侧大模型 Agent 上的实用性与可落地性，另一方面展示了通过模型深度剪枝低成本构造高质量草稿模型的工程路径，为本地化、低延迟、隐私友好的 AI Agent 部署提供了参考。对于关注端侧推理加速、异构计算与 Agent 落地",
+  "tags": [
+    "Speculative Decoding",
+    "端侧推理",
+    "模型压缩",
+    "Agent",
+    "Intel"
+  ],
+  "author": null,
+  "published_at": "2026-11-09T18:24:29Z",
+  "collected_at": "2026-11-09T18:32:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过深度剪枝从目标模型中派生草稿模型，可在不重新训练的情况下低成本获得高质量投机解码草稿，兼顾加速比与输出一致性。",
+      "在 Intel Core Ultra 的 CPU/GPU/NPU 异构平台上，投机解码能有效缓解端侧大模型 Agent 的延迟瓶颈，提升多轮交互体验。",
+      "Agent 负载具有工具调用频繁、输出结构化程度高等特点，针对此类负载调优草稿模型与验证策略比通用解码优化更具收益。",
+      "该方案为消费级 PC 本地部署 8B 级 Agent 提供了可复现的工程路径，兼顾隐私、成本与响应速度。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
