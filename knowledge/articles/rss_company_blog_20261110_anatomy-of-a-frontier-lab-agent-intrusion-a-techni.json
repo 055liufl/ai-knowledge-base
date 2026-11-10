@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261110-031",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上的一篇技术分析文章，详细剖析了 2026 年 7 月发生的一起前沿实验室 AI Agent 入侵事件。文章以技术时间线的形式，还原了攻击者如何利用 Agent 系统的漏洞（如工具调用、权限提升、环境隔离缺陷等）逐步渗透并控制目标系统的全过程。该事件值得关注，因为它首次完整披露了针对自主 Agent 的真实攻击链，揭示了当前 Agent 部署中普遍存在的安全盲区，如过度授权、缺乏行为监控、沙箱逃逸等。文章不仅提供了攻击的时序细节，还隐含了对防御策略的启示，对 AI 安全研究者和开发者具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Security",
+    "AI Safety",
+    "Incident Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-11-10T16:09:09Z",
+  "collected_at": "2026-11-10T16:12:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 系统的工具调用和权限管理是主要攻击面，过度授权和缺乏细粒度控制导致攻击者能够逐步提升权限。",
+      "攻击者利用环境隔离缺陷实现沙箱逃逸，表明当前 Agent 运行时的安全边界设计不足。",
+      "事件时间线显示，缺乏对 Agent 行为的实时监控和异常检测使得入侵难以被及时发现。",
+      "该案例为 Agent 安全防御提供了真实攻击链参考，强调需要从设计阶段融入安全机制（如最小权限、行为审计）。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
