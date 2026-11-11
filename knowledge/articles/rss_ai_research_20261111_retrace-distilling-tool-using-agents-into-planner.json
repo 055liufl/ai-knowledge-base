@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-101",
+  "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
+  "source_url": "https://arxiv.org/abs/2611.14492",
+  "source_platform": "rss_ai_research",
+  "summary": "ReTrace 提出了一种将工具使用型 LLM Agent 蒸馏为无规划器（planner-free）工作流的方法，旨在解决企业流程自动化中重复执行同一标准操作程序（SOP）时的高延迟与高成本问题。传统 LLM Agent 每次运行都需要调用 LLM 来决定下一步动作，虽然灵活但开销巨大。ReTrace 的核心思路是：给定一份自然语言 SOP 和少量已记录的 Agent 运行轨迹，自动将其转化为可复用的工作流，其中下一步的选择由代码而非 LLM 完成。这样既保留了 Agent 对工具的使用能力，又消除了每次运行时的 LLM 规划调用，显著降低推理成本与延迟。该工作对于需要大规模、高频执行固定业务流程的场景具有实用价值，代表了 Agent 工程化落地中“从动态规划到静态编译”的重要方向，值得关注其在可靠性、泛化性和异常处理方面的表现。",
+  "tags": [
+    "Agent",
+    "Workflow",
+    "Tool Use",
+    "Process Automation"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:00:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ReTrace 将 SOP 和少量 Agent 运行日志蒸馏为代码驱动的工作流，用代码替代 LLM 做步骤选择，从而消除每次运行的规划开销。",
+      "该方法在保持工具使用能力的同时大幅降低延迟和成本，适合高频、重复性的企业流程自动化场景。",
+      "从动态 LLM 规划转向静态可复用工作流，是 Agent 工程化落地的重要趋势，但需关注异常处理和泛化能力。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

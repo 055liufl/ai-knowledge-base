@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-137",
+  "title": "Just Image Transformers with Late-Stage Pixel Refinement",
+  "source_url": "https://arxiv.org/abs/2611.13120",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种无需 VAE 的纯图像 Transformer 生成方法（Just Image Transformers, JiT），并引入后期像素精修（Late-Stage Pixel Refinement）机制。传统扩散模型通常依赖 VAE 将图像压缩到潜空间以降低计算成本，但 VAE 会引入压缩伪影并增加训练流程复杂度。JiT 此前已证明，标准 Transformer 通过直接预测最终图像（x-prediction）即可训练出图像生成器，训练效率可与潜空间方法相当。本文在此基础上进一步优化，在生成后期阶段对像素进行精修，以提升图像质量。该工作值得关注，因为它挑战了潜空间扩散的主流范式，简化了训练管线，并为无 VAE 的高质量图像生成提供了新思路，对扩散模型架构设计和训练效率研究具有参考价值。",
+  "tags": [
+    "Diffusion",
+    "Transformer",
+    "Image Generation",
+    "VAE-free"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无需 VAE 的纯像素扩散 Transformer 可避免压缩伪影并简化训练流程",
+      "x-prediction 训练方式使标准 Transformer 达到与潜空间方法相当的训练效率",
+      "后期像素精修机制有望进一步提升无潜空间生成的图像质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

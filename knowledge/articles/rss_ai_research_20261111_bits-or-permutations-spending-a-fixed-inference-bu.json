@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-097",
+  "title": "Bits or permutations? Spending a fixed inference budget on weight precision or on option-order averaging in small local language models",
+  "source_url": "https://arxiv.org/abs/2611.14413",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究小型本地语言模型在固定推理预算下，应优先将权重存储为更低精度（如8/6/4/3比特量化）还是优先对答案选项顺序进行多次重排平均（permutation averaging）。作者在Qwen3-0.6B和Qwen3-1.7B上模拟round-to-nearest权重量化，通过ARC-Easy和ARC-Challenge数据集中A-D选项的logits分析两种策略的交互影响。核心问题是：降低权重比特数是否会加剧模型对选项顺序的敏感性，以及哪种方式在固定预算下更划算。该研究为边缘部署和资源受限场景下的模型优化提供了实证依据，有助于开发者权衡量化与推理时增强策略的取舍。",
+  "tags": [
+    "量化",
+    "本地语言模型",
+    "推理优化",
+    "选项顺序偏差"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:00:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "低比特权重量化可能增加模型对答案选项顺序的敏感性，从而影响permutation averaging的效果。",
+      "在固定推理预算下，选择量化还是选项顺序平均取决于模型规模与任务类型，需实证比较。",
+      "该研究为小型本地模型在内存与鲁棒性之间的权衡提供了可复现的实验框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

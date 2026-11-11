@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-130",
+  "title": "Code-Grounded Agentic Explanations for Static Analysis Vulnerability Findings",
+  "source_url": "https://arxiv.org/abs/2611.13041",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种基于代码的智能体解释方法，用于静态应用安全测试（SAST）漏洞发现。SAST 工具能早期发现漏洞且判定基于规则、可审计，但开发者常因无法理解而忽略发现。大语言模型可提供解释，但若让模型同时负责检测则会丧失静态分析的可审计性。作者将检测保留给分析器，仅让模型负责解释，并设计了一个初步的智能体框架，利用代码上下文生成解释。该方法在保持 SAST 可审计性的同时，借助 LLM 提升漏洞解释的可理解性，有望减少开发者对安全告警的忽视，对 DevSecOps 和 AI 辅助代码安全具有实用价值。",
+  "tags": [
+    "LLM",
+    "Static Analysis",
+    "Security",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将漏洞检测与解释分离：检测仍由可审计的 SAST 工具完成，LLM 仅负责生成解释，从而保留静态分析的可审计性。",
+      "开发者忽视安全告警的主要原因是无法理解发现，LLM 生成的代码接地解释可有效降低理解门槛。",
+      "智能体框架利用代码上下文增强解释的准确性和相关性，避免模型直接参与检测带来的不可审计风险。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

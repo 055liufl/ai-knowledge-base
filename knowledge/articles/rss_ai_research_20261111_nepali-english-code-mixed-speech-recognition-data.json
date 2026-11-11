@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-057",
+  "title": "Nepali-English Code-Mixed Speech Recognition: Data Preparation and Adaptation of a Speech Foundation Model",
+  "source_url": "https://arxiv.org/abs/2611.13512",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究尼泊尔语-英语代码混合语音识别问题。尼泊尔语使用者在日常对话中经常混入英语词汇，但现有多语言语音识别器在处理语码转换以及英语单词的书写脚本时表现不佳。作者基于一个449M参数的混合TDT-CTC语音基础模型SraVaani，使用覆盖六个尼泊尔语语音领域、总时长172.8小时的语料库进行适配研究。研究发现，该模型预训练的tokenizer不支持数字和若干常见符号，作者没有选择替换tokenizer或丢弃这些录音，而是通过数据准备与模型适配策略来解决这一问题。该工作值得关注，因为它聚焦于低资源语言场景下的语码混合语音识别这一实际难题，并探索了在不更换tokenizer的前提下对语音基础模型进行领域适配的可行路径，对多语言ASR系统在真实混合语言环境中的落地具有参考价值。",
+  "tags": [
+    "Speech Recognition",
+    "Code-Mixing",
+    "Multilingual",
+    "Foundation Model",
+    "Low-Resource"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:58:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "尼泊尔语-英语语码混合场景中，英语词汇的书写脚本和语言切换是现有多语言ASR系统的主要难点。",
+      "预训练tokenizer不支持数字和常见符号，直接替换tokenizer或丢弃数据并非唯一选择，可通过数据准备与适配策略缓解。",
+      "基于449M参数混合TDT-CTC语音基础模型，在172.8小时、覆盖六个领域的语料上进行适配，为低资源语码混合ASR提供了实践参考。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

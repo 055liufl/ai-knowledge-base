@@ -1,0 +1,33 @@
+{
+  "id": "github-trending-20261111-006",
+  "title": "recursive-llm",
+  "source_url": "https://github.com/grishahq/recursive-llm",
+  "source_platform": "github_trending",
+  "summary": "recursive-llm 是一个开源项目，提出「递归语言模型」思路来解决超长上下文处理问题。其核心做法是把海量上下文（宣称可分析 100 万以上 token）存放在一个 Python REPL 环境中，而不是全部塞进 LLM 的上下文窗口；模型通过编写并执行代码来按需检索、切片和递归调用自身处理子问题，从而大幅减少实际消耗的 token 数量。这值得关注的原因在于：长上下文一直是 LLM 应用的瓶颈，直接扩展上下文窗口成本高且存在「中间遗忘」问题，而该项目用「代码即工具 + 递归分解」的方式绕开窗口限制，思路接近 Agentic RAG 与程序化推理的结合，对构建大规模文档分析、代码库理解等场景有参考价值。不过项目目前较早期，性能与稳定性仍需实测验证。",
+  "tags": [
+    "LLM",
+    "长上下文",
+    "Agent",
+    "代码执行"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:45Z",
+  "collected_at": "2026-11-11T15:54:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "Python",
+  "retry_count": 0,
+  "metrics": {
+    "stars": 616
+  },
+  "ai_analysis": {
+    "key_insights": [
+      "将上下文存入 Python REPL 而非全部放入提示词，用代码检索替代暴力长上下文，显著降低 token 消耗",
+      "递归调用 LLM 分解子问题，是突破上下文窗口限制的工程化路径，与 Agentic RAG 思路相通",
+      "适合大规模文档分析、代码库理解等长文本场景，但项目早期，需实测验证效果与稳定性"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

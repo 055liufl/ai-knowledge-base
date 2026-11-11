@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-133",
+  "title": "The Indic Token Tax in 2026: Measuring Tokenizer. Disparity and Its Cost for the Languages of India",
+  "source_url": "https://arxiv.org/abs/2611.13058",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统性地量化了商业语言模型API中分词器（tokenizer）对印度语言造成的“token税”问题。研究选取了GPT-4、GPT-4o、Qwen2.5、DeepSeek-V3、Mistral-Nemo以及四个Sarvam模型共九种公开分词器，在FLORES-200数据集中覆盖的印度全部25种语言（2,009条专业翻译句对）上进行测量。核心发现是：同一语义内容在印度语言中往往需要更多token才能编码，导致这些语言在按token计费的API中成本更高、推理更慢，且在固定上下文窗口内可容纳的文本更少。这种分词效率的不平等直接转化为经济负担和可用性差距，对印度多语言用户和开发者构成系统性劣势。该研究值得关注，因为它首次大规模量化了分词器层面的语言不公平，揭示了“token税”不仅是技术细节，更是影响语言包容性和AI普惠性的关键因素，为分词器优化和多语言模型公平性研究提供了实证基础。",
+  "tags": [
+    "Tokenizer",
+    "Multilingual",
+    "LLM",
+    "Fairness"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "印度语言在主流商业分词器中普遍存在token效率低下问题，导致相同内容需要更多token，直接增加API调用成本和延迟。",
+      "分词器差异造成固定上下文窗口内可容纳的印度语言文本量显著减少，影响长文本处理和多轮对话的实用性。",
+      "该“token税”现象在GPT-4、Qwen2.5、DeepSeek-V3等多种主流模型中普遍存在，表明这是跨模型的结构性问题而非个别缺陷。",
+      "研究覆盖印度全部25种FLORES-200语言，为多语言公平性评估提供了可复现的测量方法和基准数据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

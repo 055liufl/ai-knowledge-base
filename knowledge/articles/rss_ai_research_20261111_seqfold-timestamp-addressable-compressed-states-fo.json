@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-068",
+  "title": "SeqFold: Timestamp-Addressable Compressed States for User Action Sequence Backbones",
+  "source_url": "https://arxiv.org/abs/2611.13704",
+  "source_platform": "rss_ai_research",
+  "summary": "SeqFold 提出了一种针对用户行为序列建模的新方法，其核心不是改进骨干编码器本身，而是研究如何将冻结的长历史骨干网络的多层用户状态导出为紧凑、可按时间戳寻址的表示，用于下游训练回填和服务。在推荐系统等场景中，用户状态通常需要按时间点查询，但现有方法多聚焦于单一预测目标的表示学习，缺乏对历史状态的高效压缩与寻址能力。SeqFold 通过将多层用户状态压缩为可按时间戳检索的紧凑表示，使得下游任务能够灵活地回填历史状态或在线服务时快速获取任意时刻的用户状态，而无需重新计算整个序列。该工作值得关注，因为它解决了长历史序列建模中状态复用与存储效率的关键问题，为推荐系统、用户行为分析等应用提供了新的工程化思路，同时保持了骨干网络的冻结，降低了计算开销，具有较高的实用价值。",
+  "tags": [
+    "序列建模",
+    "推荐系统",
+    "状态压缩",
+    "表示学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:58:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出将冻结骨干网络的多层用户状态导出为紧凑、时间戳可寻址的表示，而非改进编码器本身。",
+      "支持下游训练回填和在线服务中按任意时间戳快速检索用户历史状态，避免重复计算。",
+      "通过状态压缩实现存储与计算效率的平衡，适用于长历史用户行为序列场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

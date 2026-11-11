@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-037",
+  "title": "W-ISA: Transactional Execution of Weight-Space Intervention Programs",
+  "source_url": "https://arxiv.org/abs/2611.13232",
+  "source_platform": "rss_ai_research",
+  "summary": "W-ISA 提出了一种用于在预训练语言模型上执行权重空间干预程序的软件指令集与事务性运行时。该工作将参数更新、投影、消融和秩一变换等操作抽象为经过形状检查的指令，并允许这些程序在请求作用域的执行上下文中运行，在完成或中断后自动恢复已保存的参数。此外，基于激活的匹配-动作规则将测量到的激活状态与权重干预连接起来。这项研究值得关注，因为它为模型权重层面的动态、可逆干预提供了系统化的编程抽象和事务保障，有望推动模型编辑、推理时自适应控制以及安全可控的模型部署等方向的发展。",
+  "tags": [
+    "Model Editing",
+    "Runtime",
+    "Weight-Space Intervention",
+    "Transactional Execution"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:57:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "W-ISA 将权重空间干预抽象为形状检查的指令集，提升了模型参数操作的安全性与可组合性。",
+      "事务性运行时确保干预在请求作用域内执行并可回滚，为动态模型编辑提供了可靠性保障。",
+      "基于激活的匹配-动作规则将运行时测量与权重干预联动，支持条件化的模型行为调整。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

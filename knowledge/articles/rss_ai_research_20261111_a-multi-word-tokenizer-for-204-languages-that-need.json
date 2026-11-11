@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-134",
+  "title": "A Multi-Word Tokenizer for 204 Languages That Needs Fewer Tokens Than GPT-4o's, Including on English",
+  "source_url": "https://arxiv.org/abs/2611.13059",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Havon v3 的字节级 BPE 分词器，支持约 204 种语言，词表大小为 262,144。其核心创新在于预分词器设计：将组合标记与字母保持在一起，并对无空格书写的文字（如印度诸语言）进行分块处理。在 FLORES-200 开发测试集上，Havon v3 所需的 token 数量少于 GPT-4o 的分词器，甚至在英语上也更少。研究动机在于印度语言在 GPT-4o 分词器下需要比英语多 1.6 到 14 倍的 token，导致服务成本更高、速度更慢。该工作通过从头训练多语言分词器，显著提升了非英语语言的 token 效率，对降低多语言 LLM 的推理成本、提升服务公平性具有重要意义，尤其值得关注低资源语言和印度语言场景的开发者与研究者。",
+  "tags": [
+    "Tokenizer",
+    "Multilingual",
+    "BPE",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Havon v3 在 204 种语言上训练，token 效率超越 GPT-4o 分词器，包括英语。",
+      "预分词器保留组合标记与字母的关联，并对无空格文字分块，显著改善印度语言等非空格分隔语言的 token 化。",
+      "印度语言在 GPT-4o 下 token 数是英语的 1.6-14 倍，Havon v3 可降低多语言服务的成本和延迟。",
+      "该分词器为多语言 LLM 的公平性和效率提供了新的基础工具。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

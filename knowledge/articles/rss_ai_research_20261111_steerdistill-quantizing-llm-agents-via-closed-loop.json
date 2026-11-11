@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-053",
+  "title": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+  "source_url": "https://arxiv.org/abs/2611.13410",
+  "source_platform": "rss_ai_research",
+  "summary": "SteerDistill 提出了一种面向 LLM Agent 的低比特量化新方法，通过闭环教师引导（Closed-Loop Teacher Steering）来缓解量化导致的智能体行为偏差。作者发现，量化后的 Agent 在任务执行中常忽略任务要求或环境条件，产生与全精度参考轨迹不一致的环境状态转移，从而导致任务失败。传统离线蒸馏数据难以覆盖学生模型自身的失败上下文，而仅依赖学生自身 rollout 又缺乏足够的纠正信号。SteerDistill 通过让全精度教师模型在闭环中实时介入学生模型的 rollout，针对学生实际遇到的失败情境提供引导，从而在保持低推理成本的同时提升任务成功率。该工作值得关注，因为它将量化压缩问题从单纯的权重近似扩展到智能体行为层面的对齐，为在资源受限场景下部署可靠 LLM Agent 提供了新思路，对模型压缩与 Agent 系统研究均有参考价值。",
+  "tags": [
+    "Quantization",
+    "LLM Agent",
+    "Knowledge Distillation",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:58:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化 Agent 的失败主要源于行为偏差：忽略任务要求与环境条件，产生与全精度参考不一致的状态转移。",
+      "离线蒸馏数据难以覆盖学生模型自身的失败上下文，单纯依赖学生 rollout 又缺乏有效纠正信号。",
+      "闭环教师引导可在学生实际失败情境中实时提供监督，兼顾低推理成本与任务成功率。",
+      "该工作将量化问题从权重近似扩展到智能体行为对齐层面，为可靠 Agent 部署提供新方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

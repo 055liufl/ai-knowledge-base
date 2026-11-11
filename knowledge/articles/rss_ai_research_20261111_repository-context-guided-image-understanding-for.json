@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-128",
+  "title": "Repository-Context-Guided Image Understanding for Agentic Software Development",
+  "source_url": "https://arxiv.org/abs/2611.13026",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向智能体软件开发的仓库上下文引导图像理解方法，旨在解决编码智能体在处理 UI 截图类 bug 报告时因图像质量退化（低分辨率、压缩伪影、小字号渲染文本）而无法准确识别 UI 元素和源文件的问题。研究指出，视觉语言模型在图像质量下降时可靠性显著降低，而 OCR 辅助方法又可能将退化输入中的识别错误逐级传播，两类方案在复杂场景下均存在局限。该工作的价值在于将代码仓库上下文信息引入图像理解流程，为智能体提供额外先验以补偿视觉信号的不确定性，从而提升缺陷定位与修复的准确性。这一方向契合当前 AI 编码智能体从纯文本交互向多模态交互演进的趋势，对提升真实开发场景中智能体的鲁棒性具有实际意义，也为多模态 Agent 与软件工程交叉研究提供了新思路。",
+  "tags": [
+    "Agent",
+    "多模态",
+    "软件工程",
+    "VLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉语言模型在图像质量退化时可靠性下降，OCR 辅助方案则会传播识别错误，两者均难以单独胜任 UI 截图理解任务",
+      "引入代码仓库上下文作为先验信息，可补偿退化图像带来的视觉不确定性，提升 UI 元素与源文件的定位准确率",
+      "该方向反映编码智能体正从纯文本交互向多模态交互演进，鲁棒性成为真实开发场景落地的关键瓶颈"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

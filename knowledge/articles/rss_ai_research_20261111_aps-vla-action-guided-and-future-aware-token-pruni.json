@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-025",
+  "title": "APS-VLA: Action-Guided and Future-Aware Token Pruning for Efficient Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2611.13030",
+  "source_platform": "rss_ai_research",
+  "summary": "APS-VLA 提出了一种面向视觉-语言-动作（VLA）模型的高效推理方法，通过动作引导与未来感知的视觉 token 剪枝来降低推理延迟。VLA 策略在机器人操作中泛化能力强，但密集视觉 token 导致高延迟。现有剪枝方法依赖静态或即时启发式线索评估 token 重要性，难以在压缩 token 的同时保持可靠的动作生成。APS-VLA 的核心创新在于利用动作生成过程本身来指导 token 选择，并引入未来感知机制，从而更准确地识别对动作决策关键的视觉 token。该方法在保持动作生成质量的同时显著减少计算量，对机器人实时控制和边缘部署具有实用价值，也为 VLA 模型的高效化提供了新思路。",
+  "tags": [
+    "VLA",
+    "Token Pruning",
+    "Efficient Inference",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 VLA 视觉 token 剪枝依赖静态或即时启发式线索，难以兼顾压缩率与动作可靠性",
+      "APS-VLA 利用动作生成信号引导 token 重要性评估，实现更精准的剪枝",
+      "引入未来感知机制，使 token 选择考虑对后续动作决策的影响",
+      "该方法有望降低 VLA 推理延迟，推动机器人在实时场景中的部署"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-098",
+  "title": "Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model",
+  "source_url": "https://arxiv.org/abs/2611.14418",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种在本地小模型解码过程中动态调整权重精度的新方法。传统本地解码通常为整个生成过程固定一种权重精度，而作者提出存储8位权重，但默认使用其高4位进行解码，仅当低精度输出分布表现出不确定性（如熵超过阈值或top-2边际较小）时，才以8位精度重做该步骤。实验基于Qwen3-0.6B模型，在GSM8K基准上进行模拟量化，并以每token读取的权重字节数衡量成本。该方法旨在平衡计算效率与输出质量，为资源受限环境下的模型部署提供了灵活精度分配的思路，值得关注。",
+  "tags": [
+    "量化",
+    "推理优化",
+    "小模型",
+    "动态精度"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:00:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出按需升级权重精度的解码策略，仅在不确定步骤使用高精度，降低平均计算成本。",
+      "使用熵和top-2边际作为不确定性度量，触发8位重解码，平衡效率与准确性。",
+      "在Qwen3-0.6B和GSM8K上验证，以权重字节读取量作为成本指标，具有实际部署参考价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

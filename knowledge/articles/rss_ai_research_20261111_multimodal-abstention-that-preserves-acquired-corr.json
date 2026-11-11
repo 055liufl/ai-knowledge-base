@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-091",
+  "title": "Multimodal Abstention That Preserves Acquired Correct Answers",
+  "source_url": "https://arxiv.org/abs/2611.14311",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注多模态模型在任务适配后引入弃权机制时，会错误丢弃原本正确的答案，从而损害已获得的能力。作者将弃权修复形式化为在限制新丢失正确答案数量的预算下，最大化对不可回答问题正确弃权的问题，并提出 ReFrain（Regression-Free Abstention）方法。ReFrain 结合了基于首 token logits 的线性探针、在留出图像簇上的阈值校准，以及一个确定性否决机制。这项工作值得关注，因为它首次系统性地解决了弃权机制与模型已有正确能力之间的冲突，为多模态模型在开放场景下的可靠部署提供了兼顾安全性与性能保持的新思路。",
+  "tags": [
+    "Multimodal",
+    "Abstention",
+    "Model Calibration",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "引入弃权机制可能损害多模态模型在适配阶段获得的正确答案，需在弃权收益与能力保持之间权衡。",
+      "ReFrain 通过线性探针、阈值校准和确定性否决的组合，在预算约束下最大化正确弃权。",
+      "该方法强调回归-free，即避免因弃权而丢失已获得的正确回答能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

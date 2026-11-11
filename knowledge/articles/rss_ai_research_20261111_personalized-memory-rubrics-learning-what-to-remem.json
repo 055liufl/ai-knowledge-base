@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-080",
+  "title": "Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment",
+  "source_url": "https://arxiv.org/abs/2611.14017",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为「个性化记忆评分标准」（Personalized Memory Rubrics）的方法，用于训练长程个性化智能体在持续交互中决定记忆的增删改。传统训练仅依赖终端问答准确率作为反馈信号，导致所有中间记忆更新被同等对待，无法区分哪些更新真正有用；同时，记忆更新的效用高度依赖用户个体，相同操作对不同用户可能产生相反效果。作者通过评分标准引导的信用分配机制，为每个用户学习个性化的记忆价值评估，从而更精细地训练记忆更新策略。该工作值得关注，因为它直击个性化智能体记忆管理的核心痛点——粗粒度反馈与用户异质性，为构建真正自适应的长期记忆系统提供了新思路，对Agent记忆架构与个性化对齐研究均有启发。",
+  "tags": [
+    "Agent",
+    "Memory",
+    "Personalization",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "终端问答准确率作为唯一反馈信号过于粗糙，无法区分中间记忆更新的实际效用，需要更细粒度的信用分配机制。",
+      "记忆更新的价值是用户特定的：相同的记忆操作对不同用户可能产生相反效果，因此更新策略必须个性化。",
+      "通过评分标准（rubric）引导的信用分配，可以为每个用户学习个性化的记忆价值函数，从而优化长期记忆更新策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

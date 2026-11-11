@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-138",
+  "title": "Which Successes Make Good References? Action-Sequence Alignment for Multi-Turn On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2611.13135",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多轮工具使用智能体的在线策略蒸馏（OPD）问题。传统OPD通过让学生模型在自己的轨迹上接受监督来减少训练-推理分布不匹配，但在多轮场景中，教师模型若以已验证的同任务成功轨迹作为参考，可能因不同成功轨迹到达不兼容的交互状态而提供误导性监督。作者将成功参考的选择问题建模为自由目标最优传输问题，并提出动作序列对齐方法，以筛选出与当前学生轨迹在动作序列上更兼容的成功参考，从而提升蒸馏效果。该工作值得关注，因为它首次系统性地解决了多轮智能体蒸馏中参考轨迹选择的难题，对提升工具使用智能体的训练效率和鲁棒性具有实际意义。",
+  "tags": [
+    "On-Policy Distillation",
+    "Multi-Turn Agent",
+    "Tool Use",
+    "Optimal Transport"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多轮工具使用智能体的在线策略蒸馏中，教师模型以成功轨迹为参考时，不同成功轨迹可能到达不兼容的交互状态，导致误导性监督。",
+      "将成功参考的选择问题转化为自由目标最优传输问题，通过动作序列对齐来筛选兼容的参考轨迹。",
+      "该方法有望提升多轮智能体蒸馏的监督质量，减少分布不匹配，增强工具使用能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

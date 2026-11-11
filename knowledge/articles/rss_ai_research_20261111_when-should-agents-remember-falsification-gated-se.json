@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-093",
+  "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.14326",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体在长时程、验证器丰富的环境中自我改进时，将局部成功经验直接写入记忆导致知识不可靠、不安全的问题，提出核心问题：经验衍生的行为更新何时应被纳入持久化智能体状态。作者提出Falsification-Gated Self-Evolution (FGSE) 框架，利用验证器对候选经验进行证伪测试，仅当经验通过严格检验时才允许写入长期记忆，从而避免局部成功带来的虚假泛化。该工作值得关注，因为它为智能体记忆管理提供了原则性方法，提升了自我进化的安全性和可复用性，对构建可靠的长时程智能体具有重要参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Self-Evolution",
+    "Memory",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部成功不能作为经验可复用和安全的可靠信号，直接写入记忆会导致错误累积。",
+      "证伪门控机制通过验证器对候选经验进行严格检验，决定是否纳入持久状态。",
+      "该方法为智能体自我进化提供了原则性的记忆准入标准，平衡了学习与安全。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

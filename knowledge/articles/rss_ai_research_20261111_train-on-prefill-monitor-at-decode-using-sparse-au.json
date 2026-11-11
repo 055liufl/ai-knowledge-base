@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-003",
+  "title": "Train on prefill, monitor at decode: Using sparse autoencoders for topic monitoring",
+  "source_url": "https://arxiv.org/abs/2611.12935",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出TopicScope框架，利用稀疏自编码器（SAE）特征训练因果主题分类器，在生成过程中为每个token分配主题标签，实现细粒度的主题监控。传统基于激活的监控器通常在生成时运行，但仅用于检测有害内容且类别有限（2-3类）。TopicScope通过SAE特征支持多主题分类，且标签可在响应中途变化，从而更灵活地追踪模型输出的话题演变。该方法在预填充阶段训练、解码阶段监控，为模型可解释性和安全监控提供了新思路。其创新点在于将SAE特征用于主题分类而非仅危害检测，并支持动态标签变化，有望提升生成内容的透明度和可控性。该工作对研究者和开发者具有参考价值，尤其在模型监控和可解释性领域。",
+  "tags": [
+    "SAE",
+    "Topic Monitoring",
+    "Interpretability",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:55:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用SAE特征训练因果主题分类器，实现token级别的主题标签分配",
+      "支持标签在生成过程中动态变化，适应话题转换",
+      "将激活监控从有害内容检测扩展到多主题分类",
+      "在预填充阶段训练、解码阶段监控，提升生成过程的可解释性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

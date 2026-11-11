@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-046",
+  "title": "Disentangling Multimodal Rotary Positional Embedding in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.13334",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究视觉语言模型中的多模态旋转位置编码（MRoPE）。MRoPE 是 RoPE 的扩展，通过引入时间、高度和宽度三个轴来编码视觉 token 的空间结构，被广泛用于视觉语言模型。然而，MRoPE 也会为本身不具备空间结构的文本 token 分配高度和宽度坐标，从而在文本-视觉注意力中引入空间位置效应。现有 MRoPE 变体探索了不同方案，但该问题尚未被系统性地解耦和分析。论文旨在分离 MRoPE 中视觉空间编码与文本位置编码的耦合，厘清文本 token 被赋予空间坐标所带来的影响，为设计更合理的多模态位置编码提供依据。该工作值得关注，因为位置编码是视觉语言模型的基础组件，直接影响跨模态对齐与注意力分配；厘清 MRoPE 中文本与视觉位置信息的纠缠，有助于提升模型的可解释性，并可能指导更高效、更合理的多模态位置编码设计，对多模态大模型的架构改进具有参考价值。",
+  "tags": [
+    "MRoPE",
+    "Vision-Language Model",
+    "Positional Embedding",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:57:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MRoPE 为无空间结构的文本 token 也分配了高度和宽度坐标，导致文本-视觉注意力中混入空间位置效应。",
+      "现有 MRoPE 变体虽探索了不同方案，但文本与视觉位置编码的耦合问题尚未被系统解耦。",
+      "分离 MRoPE 中的多模态位置信息有助于改进视觉语言模型的跨模态对齐与注意力机制设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

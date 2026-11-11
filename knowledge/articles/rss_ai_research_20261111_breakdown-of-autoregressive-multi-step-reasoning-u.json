@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-086",
+  "title": "Breakdown of Autoregressive Multi-Step Reasoning Under Concentrated vs. Diffuse Attention Head Dropout",
+  "source_url": "https://arxiv.org/abs/2611.14209",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了自回归大语言模型在序列推理过程中，注意力头被集中式与弥散式丢弃时的表现差异。受哺乳动物大脑在清醒时局部神经元短暂沉默（off-states）现象的启发，作者在GSM8K数学推理基准上，对两个8B模型（Qwen3-8B和LLaMA-3.1-8B-Instruct）的250对推导过程进行了评估，对比了注意力头簇状爆发式丢弃与弥散式丢弃对多步推理的影响。该工作首次将神经科学中的瞬态干扰概念引入LLM推理鲁棒性分析，为理解注意力机制在复杂推理中的时空动态提供了新视角，对模型可解释性和鲁棒性研究具有参考价值。",
+  "tags": [
+    "LLM",
+    "Attention",
+    "Reasoning",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "集中式注意力头丢弃比弥散式丢弃对多步推理的破坏更显著，表明推理过程依赖特定注意力头的时空协同。",
+      "借鉴神经科学中的off-states现象，为LLM推理鲁棒性分析提供了跨学科的实验范式。",
+      "在GSM8K基准上的配对推导实验揭示了注意力头扰动与推理链断裂之间的因果关联。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

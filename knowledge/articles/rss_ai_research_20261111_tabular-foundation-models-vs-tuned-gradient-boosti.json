@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261111-008",
+  "title": "Tabular Foundation Models vs Tuned Gradient Boosting for Telecom Churn: A Profit- and Calibration-Aware Evaluation",
+  "source_url": "https://arxiv.org/abs/2611.12942",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文重新评估了表格基础模型（TFMs）与调优梯度提升树（GBDTs）在电信客户流失预测中的表现。此前有基准声称TFMs在流失预测中显著优于树集成，但该基准仅与未调优的GBDTs比较，且只使用排序指标，而留存活动的实际评判标准是利润。作者在五个公开电信数据集上，将TabPFN-2.5、TabPFN-3.5、TabPFN-3.5-Fast和TabICL v2与经Optuna调优的GBDTs进行对比，采用利润和校准感知的评估方法。该研究值得关注，因为它纠正了先前可能误导的结论，强调在实际业务场景中，模型评估应结合经济收益和概率校准，而非仅依赖排序指标，对电信行业客户留存决策具有直接指导意义。",
+  "tags": [
+    "Tabular Foundation Models",
+    "Gradient Boosting",
+    "Churn Prediction",
+    "Model Calibration",
+    "Profit-Aware Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:55:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "先前基准比较TFMs与未调优GBDTs且仅用排序指标，可能高估了TFMs的实际优势。",
+      "在利润和校准感知的评估下，调优GBDTs与TFMs的性能差异需要重新审视。",
+      "客户流失预测的模型选择应基于业务利润和概率校准，而非仅依赖AUC等排序指标。",
+      "TabPFN系列和TabICL v2等TFMs在真实电信数据集上的表现需结合调优基线进行公平比较。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

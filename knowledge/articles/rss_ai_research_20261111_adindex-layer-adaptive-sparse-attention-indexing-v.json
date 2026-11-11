@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-116",
+  "title": "ADIndex: Layer-Adaptive Sparse Attention Indexing via Group-Level Distillation",
+  "source_url": "https://arxiv.org/abs/2611.12956",
+  "source_platform": "rss_ai_research",
+  "summary": "ADIndex 针对 DeepSeek Sparse Attention（DSA）中索引器在长上下文推理时成为主要延迟瓶颈的问题（索引器单独可占长上下文 prefill GPU 时间的 50% 以上），提出了一种层自适应、蒸馏驱动的稀疏注意力索引方法。该方法通过组级蒸馏（Group-Level Distillation）与层自适应机制，减少索引器对完整因果前缀的逐 token 打分开销，从而降低长上下文推理的索引延迟。该工作聚焦于稀疏注意力在长上下文场景下的实际部署效率问题，对提升大模型长上下文推理性能具有直接价值，值得关注稀疏注意力优化与推理加速方向的研究者和工程师阅读。",
+  "tags": [
+    "Sparse Attention",
+    "Long Context",
+    "Inference Acceleration",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:00:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DSA 的索引器在长上下文下可占 prefill GPU 时间 50% 以上，是稀疏注意力推理的主要延迟来源",
+      "ADIndex 通过组级蒸馏与层自适应策略降低索引器对完整因果前缀的打分开销",
+      "该工作将优化焦点从注意力计算本身转向索引阶段，为长上下文推理加速提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

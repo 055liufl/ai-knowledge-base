@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-084",
+  "title": "An Augmented Lagrangian Approach to Lifted Bellman Linear Programming",
+  "source_url": "https://arxiv.org/abs/2611.14183",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对离线强化学习中的 Lifted Bellman Linear Programming（LBLP）问题提出改进方案。LBLP 将样本内最优值表示为数据集上的线性规划解，其神经求解器 ALBUM 通过固定系数的铰链惩罚将约束松弛，但理论保证依赖于预先选定的系数。本文引入增广拉格朗日方法求解同一线性规划，通过动态调整乘子与惩罚参数，避免了对固定系数的依赖，从而在理论上提供更稳健的收敛保证，并在实践中可能提升离线 RL 值函数学习的稳定性与精度。该工作连接了经典约束优化（增广拉格朗日）与现代离线 RL 的 Bellman 线性规划表述，对理解无目标网络的 TD 类方法与约束优化视角的统一具有参考价值，值得关注离线 RL 算法设计与理论分析的研究者阅读。",
+  "tags": [
+    "Offline RL",
+    "Optimization",
+    "Bellman Equation",
+    "Linear Programming"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LBLP 将离线 RL 的样本内最优值转化为数据集上的线性规划，避免了对目标网络的依赖",
+      "ALBUM 使用固定系数的铰链惩罚松弛约束，其理论保证受限于预先选定的系数",
+      "增广拉格朗日方法通过动态更新乘子和惩罚参数，可提供更稳健的收敛保证",
+      "该工作统一了约束优化视角与离线 RL 的 Bellman 线性规划表述"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

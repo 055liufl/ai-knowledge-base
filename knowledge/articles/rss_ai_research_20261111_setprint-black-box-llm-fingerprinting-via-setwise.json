@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-009",
+  "title": "SetPrint: Black-Box LLM Fingerprinting via Setwise Correspondence of Response Changes",
+  "source_url": "https://arxiv.org/abs/2611.12950",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SetPrint，一种黑盒大语言模型指纹识别方法，用于在只能观察模型输出响应的条件下判断目标模型是否派生自源模型。其核心思路是对每个查询进行扰动，分别观察源模型与目标模型的响应变化，得到两组对应的响应变体集合。这两组集合提供两类互补信息：集合内部各响应变化之间的关系，以及两组集合之间的对应关系。SetPrint 利用集合层面的对应性（setwise correspondence）来增强指纹的判别力，从而在无法访问模型权重或内部结构的情况下识别模型血缘关系。该工作值得关注，因为模型派生、微调与蒸馏在开源生态中极为普遍，黑盒指纹识别对模型版权保护、许可证合规审查以及模型溯源具有重要意义；同时，仅依赖输出扰动而非特定触发词的设计，使其更贴近真实部署场景下的可用性。",
+  "tags": [
+    "LLM Fingerprinting",
+    "Model Provenance",
+    "Black-Box Analysis",
+    "Model Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过对查询施加扰动并比较源模型与目标模型的响应变化集合，可在纯黑盒条件下判断模型派生关系",
+      "集合内部的响应变化关系与两组集合间的对应关系构成互补信息，提升指纹判别能力",
+      "该方法对模型版权保护、许可证合规与模型溯源具有实际价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

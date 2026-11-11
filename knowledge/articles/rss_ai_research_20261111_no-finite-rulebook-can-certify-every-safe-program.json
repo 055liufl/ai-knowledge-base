@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-050",
+  "title": "No finite rulebook can certify every safe program: an impossibility theorem for gatekeeping AI agents",
+  "source_url": "https://arxiv.org/abs/2611.13367",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出并证明了一个关于AI智能体安全把关的不可能性定理：对于任何有限且可机器验证的规则集，都无法同时完备地认证所有安全程序。具体而言，假设存在两个规则手册——一个列出允许的行为，一个列出禁止的行为——且每条规则都必须有机器可在有限时间内检查的证据，则这两个手册不可能同时完备。这意味着，任何试图通过固定规则集来把关AI生成代码的安全机制，都存在根本性局限：要么会错误地拒绝某些安全程序，要么会错误地放行某些不安全程序。该研究为AI安全领域提供了重要的理论边界，提醒从业者不能依赖静态规则集实现完全的安全认证，而需要结合动态分析、形式化验证或人机协同等补充手段。对于构建AI代码生成与执行系统的开发者而言，这一结论具有直接的架构设计启示。",
+  "tags": [
+    "AI Safety",
+    "Formal Verification",
+    "Gatekeeping",
+    "Impossibility Theorem"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:57:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "任何有限且可机器验证的规则集都无法同时完备地认证所有安全程序，存在根本性理论极限。",
+      "允许列表与禁止列表两种规则手册不可能同时完备，安全把关必然面临误拒或误放的两难。",
+      "该不可能性定理要求AI安全系统放弃对静态规则集的完全依赖，转向动态分析或人机协同等混合策略。",
+      "对于AI生成代码的执行把关，需要接受不完美性并设计可审计、可迭代的防御纵深架构。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-019",
+  "title": "Seeing Is Not Believing: Counterfactual Lesion Erasure Teaches a Small Medical Vision-Language Agent to Report Only What the Image Shows",
+  "source_url": "https://arxiv.org/abs/2611.13006",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对医学视觉语言模型（VLM）中存在的“问题引导幻觉”问题——即模型倾向于报告问题中提及的发现，而非基于图像实际内容——提出了一种无需人工标注的评估与训练方法。作者利用公开分割数据集构建反事实视图：通过修复擦除病灶、在别处进行同形状对照编辑、以及无病灶原始图像，定义了“证据敏感性差距”（ESG）指标，即擦除后回答“不存在/所指”的比率减去对照编辑后的比率。该方法旨在教会小型医学VLM仅报告图像中实际可见的内容，提升模型对图像证据的忠实度。这项研究值得关注，因为它揭示了标准基准测试遗漏的模型偏差，并提供了一种可扩展的自动化方案来评估和改善医学VLM的可靠性，对临床决策支持系统的安全性具有重要意义。",
+  "tags": [
+    "Medical VLM",
+    "Counterfactual",
+    "Hallucination",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "医学VLM常因问题中提及某发现而报告该发现，标准基准无法捕捉此偏差。",
+      "通过图像修复擦除病灶并设置同形状对照编辑，可自动构建反事实视图，无需人工标注。",
+      "证据敏感性差距（ESG）量化了模型对图像证据的依赖程度，擦除后回答“不存在”的比率应显著高于对照编辑。",
+      "该方法可训练小型医学VLM仅报告图像实际显示的内容，提升临床可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

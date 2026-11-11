@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-041",
+  "title": "Dependable Long-Horizon LLM Agents: A Trajectory-Centered Empirical Study of Where Errors Enter and Which Controls Reach Them",
+  "source_url": "https://arxiv.org/abs/2611.13254",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对长周期 LLM Agent 任务失败分析中仅记录症状（如失败模式标签或责任步骤）而无法定位错误来源的问题，提出了一种以轨迹为中心的实证研究方法。作者定义了一种“episode record”结构，将候选故障与其起源、传播路径、检测点、响应动作及最终后果关联起来，从而系统性地回答错误从何处进入、由哪个状态携带至症状、轨迹中是否存在矛盾信号以及何种控制措施能够拦截该错误。该研究填补了 Agent 可靠性分析中“归因粒度不足”的空白，为构建可调试、可审计的长程 Agent 系统提供了结构化诊断框架，对提升 Agent 在复杂任务中的鲁棒性具有直接指导意义。",
+  "tags": [
+    "LLM Agent",
+    "可靠性分析",
+    "轨迹诊断",
+    "故障归因"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:57:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统失败分析仅记录症状标签，无法揭示错误的起源、传播路径与可拦截的控制点",
+      "episode record 将故障与起源、传播、检测、响应和后果五要素绑定，实现细粒度归因",
+      "轨迹中的矛盾信号可作为早期检测依据，指导控制策略的设计与部署"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

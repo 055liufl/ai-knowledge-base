@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-039",
+  "title": "NCP: Verifier-Guided Optimization of Weight-Space Control Policies",
+  "source_url": "https://arxiv.org/abs/2611.13236",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出神经控制平面（NCP），一个闭环系统，用于观察语言模型执行过程、合成候选的权重空间干预规则、评估这些规则，并维护一个版本化的已采纳策略表。NCP 将预训练模型的推理数据平面与选择临时参数干预的控制策略分离。W-ISA 提供事务性执行和参数恢复；NCP 提供遥测、候选规则生成和评估。该系统通过验证器引导的优化方法，自动发现和筛选有效的权重干预策略，从而在不重新训练模型的情况下动态调整模型行为。这项工作的价值在于为语言模型提供了一种可扩展、可审计的运行时控制机制，有望提升模型部署的灵活性和安全性，并为模型行为调控开辟新途径。",
+  "tags": [
+    "LLM",
+    "权重空间控制",
+    "闭环优化",
+    "模型部署"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:57:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "NCP 将模型推理的数据平面与控制策略分离，实现动态权重干预而无需重新训练。",
+      "通过验证器引导的闭环优化，自动合成和评估候选干预规则，并维护版本化策略表。",
+      "W-ISA 提供事务性执行和参数恢复，确保干预的安全性和可逆性。",
+      "该方法为语言模型的运行时行为调控提供了可扩展、可审计的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

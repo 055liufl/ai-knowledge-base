@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-029",
+  "title": "Activation-Guided Graph Retrieval for Cognitive Memory Reconstruction in Language Model Systems",
+  "source_url": "https://arxiv.org/abs/2611.13127",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向长期运行语言模型系统的记忆检索新架构，核心论点是：传统 RAG 仅依赖查询相关性选择上下文，不足以支撑持久化 AI 系统的认知记忆需求，需要引入第二个算子——激活条件化的记忆可用性。架构设计上，请求与目标线索作为种子激活一个授权记忆图，通过激活传播与扇出衰减机制分配有界遍历前沿，检索到的实体递归地发出新线索，最终重建出带类型的证据图。这一工作将认知科学中的激活扩散与记忆重构概念引入 RAG 检索流程，试图解决长期记忆系统中相关性检索无法区分“可访问”与“当前活跃”记忆的问题，对构建具备持续记忆能力的 Agent 与对话系统具有参考价值。",
+  "tags": [
+    "RAG",
+    "Memory",
+    "Graph Retrieval",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 RAG 的查询相关性检索不足以支撑长期记忆系统，需引入激活条件化的记忆可用性作为第二检索算子",
+      "通过激活传播与扇出衰减机制限制遍历前沿，可在图结构记忆上实现有界且可控的检索",
+      "检索实体递归发出线索形成证据图重构，模拟了认知记忆的扩散激活与重构过程",
+      "该架构为持久化 Agent 的记忆管理提供了从扁平向量检索向结构化图检索演进的设计思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

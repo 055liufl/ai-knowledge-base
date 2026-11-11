@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-082",
+  "title": "BARS: Budget-Aware Sequential Sampling with Refusal for Majority Identification under Unknown Distributions",
+  "source_url": "https://arxiv.org/abs/2611.14171",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 BARS 的序列采样方法，用于在未知分布下进行多数识别，并带有预算约束和拒绝选项。该方法针对大语言模型自一致性中重复采样与多数选择策略的不足，特别是现有早停变体无法从答案分布中给出正确置信度估计的问题。作者将问题形式化为在未知分布、有限预算和目标错误率下的多数识别任务，并设计了预算感知的序列采样算法，在必要时拒绝给出答案以控制错误率。该工作值得关注，因为它为 LLM 推理中的成本-可靠性权衡提供了理论框架和实用算法，有望提升自一致性采样的效率与可信度。",
+  "tags": [
+    "LLM",
+    "Sampling",
+    "Self-Consistency",
+    "Sequential Testing"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:59:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LLM 自一致性中的重复采样与多数选择问题形式化为未知分布下的预算约束多数识别问题",
+      "现有早停方法无法提供正确的置信度估计，BARS 通过拒绝机制在预算内控制错误率",
+      "为成本敏感场景下的 LLM 推理提供了理论保证的序列采样框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

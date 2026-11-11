@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261111-139",
+  "title": "DOBB: Dynamic Oriented Bounding Boxes for Multi-Agent Collision Avoidance under State Uncertainty and Heterogeneous Dynamics",
+  "source_url": "https://arxiv.org/abs/2611.13142",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 DOBB（Dynamic Oriented Bounding Boxes）的方法，用于解决多智能体在状态估计不确定性和异构动力学下的碰撞避免问题。现有的基于学习的去中心化碰撞避免方法通常通过训练域变化或在运行时向策略暴露不确定性及能力估计来处理这些因素，但这两种方式都让策略自行推断这些量应如何改变安全交互所需的物理间距，可能导致耦合问题。DOBB 通过动态定向边界框来显式建模智能体的不确定性和动力学差异，从而更可靠地保证安全。该方法值得关注，因为它针对多智能体系统在实际部署中的关键挑战——感知不确定性和智能体能力差异——提出了结构化的解决方案，有望提升自动驾驶、机器人集群等场景下的安全性和鲁棒性。",
+  "tags": [
+    "Multi-Agent",
+    "Collision Avoidance",
+    "Uncertainty",
+    "Heterogeneous Dynamics",
+    "Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:02:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有方法通过训练域变化或运行时暴露不确定性来处理状态估计误差和异构动力学，但让策略隐式推断安全间距的调整方式，可能导致耦合问题。",
+      "DOBB 使用动态定向边界框显式表示智能体的不确定性和动力学差异，从而更直接地约束安全交互所需的物理分离。",
+      "该方法有望提高多智能体碰撞避免在真实世界不确定性下的可靠性和安全性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

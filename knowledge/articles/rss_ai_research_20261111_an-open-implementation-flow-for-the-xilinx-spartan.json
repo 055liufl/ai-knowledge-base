@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261111-126",
+  "title": "An Open Implementation Flow for the Xilinx Spartan-3E and Spartan-6 that Runs in the Browser, Checked Byte for Byte Against ISE",
+  "source_url": "https://arxiv.org/abs/2611.13008",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了一种面向 Xilinx Spartan-3E 和 Spartan-6 FPGA 的开源实现流程，覆盖从 HDL 到可编程比特流的完整步骤。由于官方仅提供已停止支持的 ISE 14.7 工具链，作者将 Yosys 和 nextpnr 编译为 WebAssembly，使其能在浏览器或 Node.js 中直接运行，无需安装本地软件。nextpnr 的 Himbaechel 框架通过从 Silinx 设备描述中生成 Spartan-3E 和 Spartan-6 架构，实现了对这两款器件的支持。该流程经过与 ISE 输出比特流的逐字节对比验证，确保了正确性。这项工作降低了老旧但广泛使用的 FPGA 器件的开发门槛，提供了可移植、易访问的开源替代方案，对教育、原型设计和维护遗留系统具有实用价值。",
+  "tags": [
+    "FPGA",
+    "WebAssembly",
+    "开源EDA",
+    "Yosys",
+    "nextpnr"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T16:01:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Yosys 和 nextpnr 编译为 WebAssembly，实现了在浏览器中运行完整的 FPGA 实现流程，无需本地安装。",
+      "通过 nextpnr 的 Himbaechel 框架从设备描述生成 Spartan-3E 和 Spartan-6 架构，支持已停产的 ISE 器件。",
+      "输出比特流与 ISE 逐字节对比验证，保证了开源流程的正确性和可靠性。",
+      "为老旧 FPGA 器件提供了可移植、易访问的开源工具链，有助于教育和遗留系统维护。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

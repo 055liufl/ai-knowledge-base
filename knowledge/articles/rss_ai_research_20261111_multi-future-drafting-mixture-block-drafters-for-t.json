@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261111-021",
+  "title": "Multi-Future Drafting: Mixture Block Drafters for Tree-Verified Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.13017",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种用于树验证投机解码的新方法——多未来草稿（Multi-Future Drafting），旨在解决现有块草稿器（如DFlash）和草稿树（如DDTree）在验证时因使用逐位置分布乘积而导致的概率质量错配问题。作者指出，当续写存在多种可能未来时，乘积会将这些未来拼接成“嵌合体”前缀，从而降低树覆盖的概率质量，影响接受令牌的期望数量。该方法通过混合块草稿器（Mixture Block Drafters）来更准确地分配概率质量，提升树验证下的接受率。该工作属于推理加速领域，对需要高效部署大语言模型的开发者具有实用价值，创新性地改进了投机解码的草稿策略。",
+  "tags": [
+    "Speculative Decoding",
+    "Inference Acceleration",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "树验证下，接受令牌的期望数量等于树覆盖的概率质量，而现有乘积方法会错配该质量。",
+      "当续写存在多个未来时，逐位置分布乘积会拼接出嵌合体前缀，降低验证效率。",
+      "混合块草稿器通过多未来建模来更合理地分配概率质量，提升树验证的接受率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261111-024",
+  "title": "GRAP: Gender Rubric-Aware Probing for Analyzing Gender Bias in LLMs",
+  "source_url": "https://arxiv.org/abs/2611.13024",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出GRAP（Gender Rubric-Aware Probing）方法，用于分析大语言模型在开放式生成中的性别偏见。现有探测方法存在两大局限：一是依赖固定格式任务（如代词消解、职业关联），对齐调优后的模型容易应对，难以暴露深层偏见；二是直接比较群体层面的评分均值，忽略各维度方差，无法识别哪些偏见维度能可靠区分性别群体。GRAP通过引入评分标准（rubric）感知的探测框架，对开放式回答进行多维度性别偏见评估，并考虑每个维度的方差，从而更可靠地识别模型中的性别偏见模式。该工作值得关注，因为它针对LLM在真实交互中日益重要的公平性问题，提供了更精细、更鲁棒的偏见分析工具，有助于推动更负责任的模型评估与对齐。",
+  "tags": [
+    "LLM",
+    "Bias",
+    "Evaluation",
+    "Fairness"
+  ],
+  "author": null,
+  "published_at": "2026-11-11T15:53:48Z",
+  "collected_at": "2026-11-11T15:56:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有固定格式探测任务容易被对齐调优模型规避，无法充分暴露开放式生成中的性别偏见。",
+      "直接比较群体层面评分均值会忽略各维度方差，导致无法判断哪些偏见维度具有可靠区分力。",
+      "GRAP通过评分标准感知的多维度探测，结合方差分析，能更精细地识别LLM中的性别偏见模式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
