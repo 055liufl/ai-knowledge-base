@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261112-024",
+  "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+  "source_url": "https://huggingface.co/blog/train-multi-vector-encoder",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何使用 Sentence Transformers 库训练和微调多向量嵌入模型。多向量嵌入模型（如 ColBERT 风格）为每个文档的每个 token 生成独立的嵌入向量，相比单向量模型能更细粒度地捕捉语义信息，在检索任务中通常表现更优。文章详细讲解了多向量模型的架构原理、训练目标（如使用 MaxSim 操作符计算相似度）、损失函数设计，以及如何利用 Sentence Transformers 进行高效训练和微调。此外，还涵盖了数据准备、难负样本挖掘、评估指标等实践要点，并提供了代码示例。该内容对于希望提升检索系统性能的开发者具有较高参考价值，因为它降低了多向量模型的使用门槛，使得在现有 Sentence Transformers 生态中即可实现先进的检索方案。",
+  "tags": [
+    "Embedding",
+    "Sentence Transformers",
+    "Retrieval",
+    "Multi-Vector",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-12T16:37:12Z",
+  "collected_at": "2026-11-12T16:39:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多向量嵌入模型通过为每个 token 生成向量，能更细粒度地表示文本，提升检索精度。",
+      "Sentence Transformers 库现已支持多向量模型的训练与微调，简化了先进检索模型的实现流程。",
+      "训练多向量模型需采用 MaxSim 等相似度计算方式，并配合难负样本挖掘以优化性能。",
+      "该技术可应用于需要高精度检索的场景，如问答系统、语义搜索等。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

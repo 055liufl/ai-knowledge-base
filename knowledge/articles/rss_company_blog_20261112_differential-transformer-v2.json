@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261112-095",
+  "title": "Differential Transformer V2",
+  "source_url": "https://huggingface.co/blog/microsoft/diff-attn-v2",
+  "source_platform": "rss_company_blog",
+  "summary": "微软在 Hugging Face 博客上发布了 Differential Transformer V2（DiffAttn V2），这是对差分注意力机制（Differential Attention）的升级版本。差分注意力通过计算两组注意力图的差值来抑制无关上下文、突出关键信息，从而缓解标准 softmax 注意力中注意力噪声和“注意力汇聚”（attention sink）问题。V2 版本在 V1 的基础上进一步优化了架构设计与训练稳定性，提升了长上下文建模和检索能力，并改善了模型在语言建模、长文本理解等任务上的表现。该工作值得关注的原因在于：注意力机制是 Transformer 的核心组件，任何实质性改进都可能影响大模型在长上下文、幻觉抑制和推理效率方面的表现；同时微软将其开源在 Hugging Face 平台，便于研究者和开发者复现与集成，对推动高效注意力机制的落地具有实际价值。",
+  "tags": [
+    "Attention",
+    "Transformer",
+    "LLM",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-11-12T16:37:12Z",
+  "collected_at": "2026-11-12T16:42:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "差分注意力通过两组注意力图的差值抑制噪声，缓解标准 softmax 注意力的注意力汇聚问题",
+      "V2 版本在训练稳定性和长上下文建模能力上较 V1 有进一步提升",
+      "该机制有望改善大模型的长文本理解与检索表现，并减少幻觉",
+      "开源发布降低了复现与集成门槛，便于开发者评估其实际效果"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

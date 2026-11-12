@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261112-084",
+  "title": "Custom Kernels for All from Codex and Claude",
+  "source_url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 博客文章《Custom Kernels for All from Codex and Claude》介绍了一种利用 AI 编程智能体（OpenAI Codex 与 Anthropic Claude）自动生成自定义 GPU 内核（如 CUDA/Triton 内核）的新方法。文章的核心思路是将内核编写这一原本需要深厚硬件与并行计算经验的任务，转化为可由大模型智能体辅助完成的工作流：通过提供清晰的规格说明、参考实现与验证手段，让 Codex/Claude 生成、调试并优化内核代码，从而降低高性能算子开发的门槛。其价值在于把 AI 编码能力从通用软件工程延伸到 GPU 底层优化这一高壁垒领域，有望让更多研究者和开发者无需精通 CUDA 也能为特定模型或算子定制高效内核，进而提升训练与推理性能。文章同时强调了验证与基准测试的重要性，因为生成的内核必须经过正确性校验和性能对比才能可信使用。该内容值得关注，因为它展示了 AI Agent 在系统级编程中的实际落地路径，也反映了“AI 辅助底层优化”这一正在兴起的趋势。",
+  "tags": [
+    "CUDA",
+    "Code Generation",
+    "Agent",
+    "GPU Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-12T16:37:12Z",
+  "collected_at": "2026-11-12T16:42:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 编程智能体可被用于生成和调试自定义 GPU 内核，显著降低 CUDA/Triton 开发门槛",
+      "生成的内核必须经过严格的正确性验证与性能基准测试，不能直接信任",
+      "该工作流把底层性能优化从专家专属任务转变为更广泛的开发者可参与的过程",
+      "反映了 AI Agent 从通用代码生成向系统级、高性能计算领域延伸的趋势"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

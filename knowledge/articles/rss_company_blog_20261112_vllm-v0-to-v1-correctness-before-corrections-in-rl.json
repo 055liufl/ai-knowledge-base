@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261112-058",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景中遇到的正确性问题。vLLM 是当前主流的高吞吐 LLM 推理引擎，其 V1 架构对调度器、KV Cache 管理和执行路径进行了重构，以提升性能与可扩展性。然而在 RL 训练流程中，推理引擎的输出需要与训练端严格对齐，任何数值或采样行为的偏差都会污染奖励信号，导致策略退化。文章强调“先保证正确性，再做优化”的原则，分析了 V0 与 V1 在采样、批处理、内存管理等方面的行为差异，以及这些差异如何影响 RL 训练的正确性，并给出迁移与验证的实践建议。对于使用 vLLM 构建 RLHF/RLVR 流水线的团队而言，这是一份重要的迁移避坑指南，提醒性能提升不能以牺牲训练正确性为代价。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-12T16:37:12Z",
+  "collected_at": "2026-11-12T16:41:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RL 训练对推理引擎的输出一致性要求极高，vLLM V0 到 V1 的行为差异可能污染奖励信号",
+      "迁移到 V1 应优先验证正确性（采样、批处理、KV Cache 行为），再追求性能收益",
+      "该文为构建 RLHF/RLVR 流水线的团队提供了具体的迁移验证实践建议"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
