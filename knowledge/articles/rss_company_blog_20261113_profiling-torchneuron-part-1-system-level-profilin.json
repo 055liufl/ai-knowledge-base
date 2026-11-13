@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261113-011",
+  "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+  "source_url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 与 AWS 合作博客系列的第一部分，聚焦于 TorchNeuron 在 AWS Trainium 芯片上的系统级性能分析（profiling）。TorchNeuron 是 PyTorch 与 Neuron SDK 之间的集成层，用于在 Trainium 和 Inferentia 等 AWS 自研 AI 加速器上运行和优化 PyTorch 模型。文章介绍了如何对 TorchNeuron 工作负载进行系统级 profiling，帮助开发者定位训练或推理过程中的性能瓶颈，理解计算图在 Neuron 硬件上的执行方式，并据此优化模型性能。该内容值得关注的原因在于：随着 AWS Trainium 作为英伟达 GPU 之外的重要 AI 加速选项逐渐普及，围绕其软件栈的调试与性能优化工具链成为开发者落地的关键；系统级 profiling 是释放专用加速器性能的核心手段，而目前公开的实践资料相对稀缺。该系列为希望在 Trainium 上高效部署 PyTorch 模型的团队提供了可操作的 profiling 方法论和工具使用指引，属于基础设施与工具层面的实用内容。",
+  "tags": [
+    "PyTorch",
+    "AWS Trainium",
+    "Profiling",
+    "Neuron SDK",
+    "Performance Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-13T15:56:30Z",
+  "collected_at": "2026-11-13T15:58:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "TorchNeuron 是 PyTorch 模型在 AWS Trainium 上运行的关键集成层，系统级 profiling 是定位其性能瓶颈的必要手段。",
+      "针对专用 AI 加速器的 profiling 工具链是释放硬件性能的核心，但公开实践资料较少，本文填补了这一空白。",
+      "系统级 profiling 帮助开发者理解计算图在 Neuron 硬件上的执行方式，从而指导模型与算子层面的优化。",
+      "随着 Trainium 作为 GPU 替代方案普及，掌握其软件栈的调试与性能分析方法对落地部署愈发重要。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

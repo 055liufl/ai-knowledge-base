@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261113-041",
+  "title": "DiScoFormer: One transformer for density and score, across distributions",
+  "source_url": "https://huggingface.co/blog/allenai/discoformer",
+  "source_platform": "rss_company_blog",
+  "summary": "DiScoFormer 是 AllenAI 提出的一种新型 Transformer 架构，旨在统一密度估计和得分估计任务，并能够跨不同数据分布进行泛化。传统方法通常需要为每个分布单独训练模型，而 DiScoFormer 通过单一模型同时学习密度函数和得分函数（即对数密度的梯度），从而在多个分布上实现高效建模。该工作值得关注，因为它简化了生成模型和能量模型中的关键组件，有望提升跨分布任务的泛化能力，并为密度估计与得分匹配的统一框架提供新思路。",
+  "tags": [
+    "Transformer",
+    "密度估计",
+    "得分匹配",
+    "生成模型"
+  ],
+  "author": null,
+  "published_at": "2026-11-13T15:56:30Z",
+  "collected_at": "2026-11-13T16:00:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单一 Transformer 模型可同时输出密度和得分，减少多模型训练开销。",
+      "跨分布泛化能力意味着模型能适应未见过的数据分布，提升实用性。",
+      "统一密度与得分估计有助于连接能量模型与扩散模型等生成框架。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

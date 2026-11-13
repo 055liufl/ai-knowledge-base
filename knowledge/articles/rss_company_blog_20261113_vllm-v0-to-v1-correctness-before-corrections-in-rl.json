@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261113-060",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景下的正确性问题。vLLM 是主流的高吞吐 LLM 推理引擎，其 V1 架构对调度、KV 缓存和分布式执行做了重构；而 RL 训练（如 PPO/GRPO）对推理结果的确定性、采样一致性和权重同步有更严格的要求。文章强调在引入各种修正性技巧之前，应先保证 V1 在 RL 工作流中的数值与行为正确性，否则后续调优会建立在错误基础上。内容涉及推理引擎与训练框架的耦合、采样一致性、版本迁移中的回归风险等工程实践问题，对使用 vLLM 做 RLHF/RLVR 的团队具有直接参考价值。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-13T15:56:30Z",
+  "collected_at": "2026-11-13T16:01:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "从 vLLM V0 迁移到 V1 时，RL 场景对采样一致性和数值正确性的要求高于普通推理服务",
+      "应先验证 V1 在 RL 工作流中的行为正确性，再引入修正性优化，避免在错误基础上调参",
+      "推理引擎版本升级会与训练框架的权重同步、采样逻辑产生耦合，需要系统性回归测试"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

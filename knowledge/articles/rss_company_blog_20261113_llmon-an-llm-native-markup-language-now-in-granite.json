@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261113-002",
+  "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+  "source_url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+  "source_platform": "rss_company_blog",
+  "summary": "LLMON 是 IBM 提出的一种面向大语言模型的原生标记语言，旨在让 LLM 更高效地生成和解析结构化输出。与 JSON、XML 等传统格式不同，LLMON 在设计上考虑了 token 效率、生成稳定性以及模型对语法的天然理解能力，从而减少格式错误和解析开销。该语言已被集成到 Granite 4.1 3B 和 8B 模型中，意味着 IBM 在模型训练阶段就注入了对 LLMON 的原生支持，而非仅靠提示词约束。这一工作值得关注的原因在于：结构化输出是 Agent、工具调用、RAG 流水线等应用的关键环节，现有方案常因模型生成非法 JSON 而需要重试或后处理；LLMON 从语言和模型协同设计的角度切入，有望提升可靠性和推理效率。对于构建生产级 LLM 应用的开发者而言，这是一种可能替代 JSON mode 的新选择，也反映了模型厂商开始为特定输出格式做深度优化的趋势。",
+  "tags": [
+    "LLM",
+    "结构化输出",
+    "标记语言",
+    "Granite"
+  ],
+  "author": null,
+  "published_at": "2026-11-13T15:56:30Z",
+  "collected_at": "2026-11-13T15:58:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLMON 从语言设计与模型训练协同入手，而非仅靠提示词约束结构化输出",
+      "原生集成到 Granite 4.1 3B/8B，说明模型厂商开始为特定输出格式做深度优化",
+      "有望减少 JSON 生成错误和解析开销，对 Agent 与工具调用场景有实用价值"
+    ],
+    "tech_category": "model",
+    "audience": "developer"
+  },
+  "version": 1
+}
