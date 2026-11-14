@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-023",
+  "title": "EvoX: Rethinking the Agent Harness as a Runtime Policy",
+  "source_url": "https://arxiv.org/abs/2611.15006",
+  "source_platform": "rss_ai_research",
+  "summary": "EvoX 是一篇来自 arXiv 的论文，提出将 LLM 智能体的运行框架（harness）重新理解为一种“运行时策略”（Runtime Policy），而非简单的工具调用层。作者指出，尽管大模型能做出看似合理的决策，但由于工具调用不匹配、工作流中断以及不支持的完成声明等问题，这些决策并不总能转化为成功的执行。为此，EvoX 提出了“第二策略”（The Second Policy）的概念，将 harness 视为一种操作策略（Operational Policy），与基础模型的语义策略（Semantic Policy）互补。EvoX 本身是一个基于 Rust 的多模型智能体运行时，旨在通过系统层面的策略来弥补模型语义决策与执行之间的鸿沟。该工作值得关注，因为它跳出了单纯优化模型能力的思路，转而从运行时和系统架构的角度提升智能体的可靠性和执行成功率，为智能体工程化提供了新的视角。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Runtime",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将智能体 harness 视为运行时操作策略，与模型的语义策略形成互补，是提升执行可靠性的关键。",
+      "工具调用不匹配和工作流中断是当前 LLM 智能体落地的主要瓶颈，需要系统层面的策略干预。",
+      "EvoX 采用 Rust 实现多模型运行时，强调性能与安全性，为智能体基础设施提供了新的工程实践。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

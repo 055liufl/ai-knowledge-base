@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261114-031",
+  "title": "AFTER: A World Model with Adaptive Fast--Slow Timescales for Error-Driven Retention",
+  "source_url": "https://arxiv.org/abs/2611.15215",
+  "source_platform": "rss_ai_research",
+  "summary": "AFTER 是一种面向机器人与具身智能的世界模型，旨在解决机器人交互过程中动力学发生突然、持续且初始未知变化时的适应问题（例如机械臂抓取未知负载物体）。现有世界模型难以应对这类突变，导致开环推演中预测误差累积并误导机器人动作。AFTER 的核心思想是引入自适应快慢时间尺度机制，通过误差驱动实现信息保留：快速时间尺度负责迅速响应突发的动力学变化，慢速时间尺度则保留长期稳定的知识，二者协同使模型在突变后快速修正预测，同时避免灾难性遗忘。该工作值得关注，因为它将神经科学中快慢双系统思想引入世界模型的自适应学习，为具身智能在非平稳环境下的鲁棒预测提供了新思路，对机器人操作、在线适应与持续学习等方向具有潜在影响。",
+  "tags": [
+    "World Model",
+    "Embodied AI",
+    "Robotics",
+    "Adaptation",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:52:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "世界模型需要同时具备快速适应突发动力学变化与长期保留稳定知识的能力，单一时间尺度难以兼顾",
+      "误差驱动机制可作为触发快慢时间尺度切换与信息保留的信号，避免开环推演中误差累积",
+      "快慢双时间尺度设计借鉴神经科学双系统思想，为具身智能在非平稳环境下的在线适应提供新范式",
+      "该问题对机器人操作（如未知负载抓取）具有直接现实意义，是具身智能落地的关键挑战之一"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

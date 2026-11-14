@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-001",
+  "title": "Zugwise: Domain-Aware Game Reconstruction for Digitizing Handwritten Chess Scoresheets",
+  "source_url": "https://arxiv.org/abs/2611.14544",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Zugwise，一种面向手写国际象棋记分表的领域感知对局重建方法。传统方法将记分表数字化视为手写识别问题，逐格读取着法并检查合法性，但该框架忽略了最关键的静默错误：一个被误读但恰好合法的着法会被合法性检查流水线接受，导致后续所有着法都在错误棋局状态下被解读，错误不断累积。Zugwise 将任务重新定义为对局重建，利用国际象棋领域知识（如着法序列的上下文约束、棋局状态一致性）来检测和纠正这类静默错误。该工作值得关注，因为它揭示了仅依赖合法性检查的流水线存在系统性盲区，并提出领域感知的纠错思路，对手写文档数字化、棋类数据挖掘以及更广泛的序列识别与领域约束结合的研究具有启发意义。",
+  "tags": [
+    "Handwriting Recognition",
+    "Game Reconstruction",
+    "Domain-Aware",
+    "Chess"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:50:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅检查着法合法性会漏掉合法但错误的静默误读，且错误会向后传播污染整局重建",
+      "将记分表数字化视为对局重建问题而非逐格识别问题，能利用棋局状态一致性约束纠错",
+      "领域知识（棋规与序列上下文）是检测静默错误的关键信号"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-082",
+  "title": "A Dual-Branch Graph and Convolutional Network for Interpretable Movement EEG Classification",
+  "source_url": "https://arxiv.org/abs/2611.16609",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种双分支深度学习架构，用于从头皮脑电（EEG）信号中解码上肢运动意图，服务于脑机接口（BCI）应用。模型由两个并行分支组成：一个受 LGGNet 启发的局部-全局图卷积分支，用于建模 61 个 EEG 电极之间的空间拓扑关系；另一个是 EEGNet 风格的卷积分支，用于提取时频特征。两分支融合后完成运动与静息状态的二分类任务。该工作的核心价值在于可解释性：相比多数仅追求分类精度的黑箱模型，该架构能够揭示预测所依赖的脑区，从而增强 BCI 系统的可信度与临床可用性。图神经网络与卷积网络的结合也代表了 EEG 解码领域从单一 CNN 向混合结构演进的趋势。对于 BCI 研究者而言，该工作提供了兼顾性能与可解释性的建模范式；对于开发者而言，其双分支设计思路可迁移至其他生理信号分类任务。不过，摘要仅展示了架构设计，尚未给出完整的实验对比数据，实际性能提升幅度与可解释性验证的严谨程度仍需阅读全文评估。",
+  "tags": [
+    "EEG",
+    "BCI",
+    "GNN",
+    "可解释性"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "双分支架构将图卷积的空间建模能力与 CNN 的时频特征提取能力结合，弥补单一结构的不足",
+      "可解释性是核心卖点：模型能定位预测所依赖的脑区，提升 BCI 系统的可信度",
+      "LGGNet 与 EEGNet 的组合属于已有方法的融合创新，而非全新范式",
+      "摘要未提供定量实验结果，性能优势与可解释性验证的强度有待全文确认"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

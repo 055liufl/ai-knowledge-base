@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-091",
+  "title": "Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents",
+  "source_url": "https://arxiv.org/abs/2611.16744",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了视觉语言模型（VLM）和网页代理在图像缩放过程中出现的安全漏洞。作者发现，图像中的文本指令在原始分辨率（如512x512）下可能无法被模型识别，但经过激进的下采样后反而变得可读，从而被模型执行。这种由尺度变化引发的语义偏移被定义为“Scale-Induced Semantic Shift”，构成一种新型视觉提示注入攻击。该研究揭示了多媒体系统在预处理阶段（如压缩、重渲染）可能无意中激活隐藏的恶意指令，对基于VLM的网页代理和自动化系统构成实际威胁。论文通过实验验证了该现象，并讨论了其对安全部署的启示。该工作值得关注，因为它首次系统性地将图像尺度变换与提示注入攻击联系起来，提醒开发者在构建多模态应用时需考虑预处理管线的安全性，并为防御此类攻击提供了研究方向。",
+  "tags": [
+    "VLM",
+    "Prompt Injection",
+    "Security",
+    "Web Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:55:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图像缩放（如下采样）可能改变VLM对文本指令的识别能力，导致原本不可见的恶意指令被激活。",
+      "视觉提示注入攻击可利用多媒体处理管线中的尺度变换作为攻击向量，绕过基于分辨率的防御。",
+      "该漏洞对基于VLM的网页代理和自动化系统构成实际安全风险，需在预处理阶段加强检测。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-085",
+  "title": "Safety as a Budget: Calibrating the Control Channel of Constrained GRPO for Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.16628",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究如何通过强化学习（GRPO）让视觉语言模型（VLM）学会拒绝有害的图像-文本请求，但安全程度通常只能通过试错调整奖励权重来间接控制。作者提出将安全目标表述为对「有害协助率」和「过度拒绝率」的预算约束，并在 GRPO 内部用拉格朗日乘子强制执行，以现成的评分器作为成本。然而该方法两次失败：乘子比较的是评分器的输出，导致控制通道校准出现问题。论文的核心贡献在于揭示这一失败机制，并提出对约束 GRPO 控制通道进行校准的方法，使安全预算能够被更直接、可靠地设定。这项工作值得关注，因为它将安全对齐从「调奖励权重」转变为「设定可解释的安全预算」，为 VLM 安全训练提供了更可控的范式，同时也指出了约束优化在 RLHF 安全场景中的实际陷阱。",
+  "tags": [
+    "VLM",
+    "GRPO",
+    "Safety Alignment",
+    "Constrained RL"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将安全目标表述为有害协助率和过度拒绝率的预算约束，比试错调奖励权重更直接可控",
+      "在 GRPO 中用拉格朗日乘子强制执行预算约束时，乘子与评分器输出的比较方式会导致控制通道失效",
+      "需要对约束 GRPO 的控制通道进行校准，才能让安全预算真正生效",
+      "该工作揭示了约束优化用于 VLM 安全对齐时的实际陷阱，对后续安全 RL 研究有警示价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

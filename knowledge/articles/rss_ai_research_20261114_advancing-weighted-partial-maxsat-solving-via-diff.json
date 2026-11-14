@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-025",
+  "title": "Advancing Weighted Partial MaxSAT Solving via Differentiable GPU Guidance",
+  "source_url": "https://arxiv.org/abs/2611.15091",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种GPU-CPU混合框架，用于求解加权部分MaxSAT（WPMAX-SAT）问题。传统上，WPMAX-SAT主要依赖CPU上的精确求解器，而该工作通过可微GPU优化来辅助这些求解器。GPU阶段直接优化实例特定的分类决策参数，无需训练数据集或预训练预测模型。核心挑战在于硬/软子句的不对称性：硬子句不可违反，而软子句可以权衡。作者通过可微松弛和梯度引导来应对这一挑战，从而在GPU上高效探索解空间，并将结果传递给CPU求解器进行精确验证和优化。该方法有望提升WPMAX-SAT求解的效率和可扩展性，尤其适用于大规模实例。",
+  "tags": [
+    "MaxSAT",
+    "GPU优化",
+    "可微优化",
+    "组合优化"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:52:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出GPU-CPU混合框架，利用可微GPU优化辅助传统CPU MaxSAT求解器",
+      "无需训练数据或预训练模型，直接优化实例特定的分类决策参数",
+      "针对硬/软子句不对称性设计可微松弛方法，实现梯度引导搜索"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-074",
+  "title": "Recalibrating a Typed-Decision Model in an Afternoon: A Hands-On Recipe for Laya's Confidence Scores",
+  "source_url": "https://arxiv.org/abs/2611.16499",
+  "source_platform": "rss_ai_research",
+  "summary": "本文是一篇技术教程，针对Laya这类类型化决策模型（typed-decision model）的置信度分数校准问题。Laya模型接收文本和调用者定义的选项列表（如工单类别），为每个选项输出概率，下游代码通过比较最高概率与阈值来决定回答、弃权或转人工。先前研究表明，对土耳其语模型进行温度缩放（temperature scaling）反而可能提高留出集上的校准误差（ECE）。本教程提出一个五步配方（测量、诊断、拟合等），旨在帮助开发者在半天内重新校准Laya的置信度分数，提升模型在实际部署中的可靠性。该内容值得关注，因为它直面模型校准这一常被忽视但影响决策安全的关键问题，并提供了可操作、低成本的实践指南，尤其适合需要快速修复校准偏差的工程团队。",
+  "tags": [
+    "模型校准",
+    "置信度分数",
+    "温度缩放",
+    "决策模型"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "温度缩放并非总是改善校准，对某些语言模型可能反而增加ECE，需谨慎使用。",
+      "类型化决策模型的校准直接影响回答、弃权与转人工的阈值决策，是部署可靠性的关键。",
+      "五步配方（测量、诊断、拟合等）提供了一套可在半天内完成的实用校准流程。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

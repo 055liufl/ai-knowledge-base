@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261114-135",
+  "title": "What Entropy-Based View Selection Cannot See: An Audit of Test-Time Adaptation for Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.14686",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对视觉语言模型（如CLIP）的测试时自适应方法进行了审计，重点分析了基于熵的视图选择策略的局限性。CLIP等模型虽能零样本分类，但在测试图像风格或来源与训练数据不同时准确率下降。常见补救措施是生成随机裁剪和翻转的视图并融合预测，但部分视图会遗漏目标，因此需识别可信视图。主流方法基于预测熵选择视图，但本文指出该方法存在盲区，无法捕捉某些关键问题。研究通过系统实验揭示了熵选择在视图质量评估中的不足，并可能提出改进方向。该工作对理解测试时自适应的可靠性、提升视觉语言模型在分布偏移下的鲁棒性具有重要价值，尤其对关注模型部署安全性和自适应策略的研究者与开发者有启发意义。",
+  "tags": [
+    "Vision-Language Models",
+    "Test-Time Adaptation",
+    "CLIP",
+    "Entropy",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:57:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于熵的视图选择在测试时自适应中并非万能，存在无法识别的失败模式。",
+      "随机裁剪和翻转生成的视图可能遗漏关键目标，导致预测融合偏差。",
+      "审计揭示了熵作为视图可信度指标的局限性，呼吁更鲁棒的视图选择策略。",
+      "该研究对提升视觉语言模型在分布偏移下的可靠性具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-073",
+  "title": "How many LLM-labelled rows does a decision encoder need, and how wrong can the labels be?",
+  "source_url": "https://arxiv.org/abs/2611.16498",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了决策编码器（如Laya）在训练时对LLM标注数据的依赖程度，具体关注两个问题：需要多少条LLM生成的训练样本，以及这些标签可以容忍多大程度的错误。Laya基于ModernBERT-large，能够一次性读取问题和选项文本，直接输出每个选项的概率，无需生成文本。作者在2818条样本池的嵌套子集上进行了19次微调实验，系统分析了数据量和标签噪声对模型性能的影响。这项研究值得关注，因为它为使用LLM自动标注数据训练轻量级决策模型提供了实证指导，有助于在实际应用中平衡标注成本与模型效果，对构建高效、低成本的分类与决策系统具有参考价值。",
+  "tags": [
+    "LLM",
+    "Fine-tuning",
+    "Data Labeling",
+    "Decision Encoder"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "决策编码器所需LLM标注数据量存在一个有效阈值，超过该阈值后性能提升有限。",
+      "标签噪声对模型性能的影响呈非线性，一定程度的错误标签仍可被模型容忍。",
+      "基于ModernBERT-large的Laya在单次前向传播中完成选项概率预测，适合高效部署。",
+      "嵌套子集实验设计为数据量与标签质量的权衡提供了可复用的分析框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

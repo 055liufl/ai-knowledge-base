@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261114-011",
+  "title": "You could have invented transformers from memory",
+  "source_url": "https://alexwang.ai/posts/associative-memory/",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章从联想记忆（associative memory）的角度出发，重新推导 Transformer 的核心机制，旨在说明 Transformer 并非凭空出现的复杂发明，而是可以从记忆检索这一朴素直觉一步步推导出来的。作者 Alex Wang 通过类比人类联想记忆的工作方式，展示了注意力机制本质上是一种可微的键值记忆检索：Query 对应检索线索，Key 对应存储地址，Value 对应存储内容，softmax 加权求和则实现了软性、可微的检索过程。文章的价值在于降低 Transformer 的理解门槛，帮助读者建立从经典联想记忆模型（如 Hopfield 网络）到现代注意力机制的认知桥梁，使深度学习从业者能够从第一性原理而非死记硬背的角度理解 Transformer 的设计动机。该文在 Lobsters 等技术社区引发讨论，适合作为学习 Transformer 架构的补充读物，尤其适合那些希望理解“为什么这样设计”而非仅仅“如何使用”的开发者与研究者。",
+  "tags": [
+    "Transformer",
+    "Attention",
+    "Associative Memory",
+    "Deep Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:53Z",
+  "collected_at": "2026-11-14T14:50:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "注意力机制可以理解为一种可微的联想记忆检索过程，Query/Key/Value 分别对应检索线索、存储地址和存储内容",
+      "Transformer 的设计并非凭空出现，而是可以从联想记忆这一经典概念自然推导出来，理解这条推导路径有助于建立第一性原理认知",
+      "将现代架构与经典记忆模型（如 Hopfield 网络）建立联系，能帮助学习者摆脱对 Transformer 的“黑盒”式理解"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-058",
+  "title": "SAGE-QA: Semantic-Aware, Grounded Evaluation for Closed-Context Question Answering on SQuAD 2.0",
+  "source_url": "https://arxiv.org/abs/2611.16300",
+  "source_platform": "rss_ai_research",
+  "summary": "SAGE-QA 提出了一种面向封闭上下文问答（Closed-Context QA）的语义感知、有据可依的评估框架，专门针对 SQuAD 2.0 基准。SQuAD 2.0 要求系统严格依据给定段落生成答案，或在证据不足时拒答，传统上使用精确匹配（Exact Match, EM）进行评分，即对词法归一化后与人类参考片段进行字符级比对。然而，对于生成式大语言模型（LLM）而言，EM 失败可能仅仅反映了一个语义等价的合理改写，而非真正的错误，这导致评估结果系统性低估模型能力。SAGE-QA 的核心动机是解决这一评估偏差，通过引入语义感知与依据性（groundedness）判断，更准确地衡量生成式模型在封闭上下文 QA 任务上的真实表现。该工作值得关注，因为它触及了 LLM 评估中的一个关键痛点：传统指标与生成式输出之间的不匹配。随着 LLM 在问答任务中的广泛应用，如何公平、可靠地评估其答案质量已成为研究和工程实践中的核心问题。SAGE-QA 若能在保持评估可复现性的同时提升与人类判断的一致性，将对 QA 基准设计和模型选型产生直接影响。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "QA",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:53:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "精确匹配（EM）对生成式 LLM 不公平：语义等价的改写会被判错，导致评估结果系统性偏低。",
+      "封闭上下文 QA 的评估需要同时考虑语义正确性和答案是否严格有据可依（groundedness）。",
+      "SQuAD 2.0 的拒答机制使评估更复杂，需要区分‘合理拒答’与‘错误拒答’。",
+      "该工作指向 LLM 时代基准评估指标需要从词法匹配向语义感知评估迁移。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

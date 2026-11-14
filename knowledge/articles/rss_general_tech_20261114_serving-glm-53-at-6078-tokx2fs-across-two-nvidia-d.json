@@ -1,0 +1,33 @@
+{
+  "id": "rss-general-tech-20261114-005",
+  "title": "Serving GLM-5.3 at 607.8 tok&#x2F;s across two Nvidia DGX stations with vLLM",
+  "source_url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+  "source_platform": "rss_general_tech",
+  "summary": "该内容来自 NVIDIA 开发者博客，介绍如何利用 vLLM 在跨两台 NVIDIA DGX Station 的多节点环境中部署并服务 GLM-5.3 大模型，实现 607.8 tok/s 的推理吞吐。文章聚焦于单 GPU 显存不足以承载大模型时的横向扩展方案，展示了通过 vLLM 的分布式推理能力（如张量并行、流水线并行及跨节点通信优化）将模型切分到多台 DGX Station 上协同运行，并给出实际吞吐性能数据。其价值在于为需要在本地或私有环境中部署超大规模模型（如 GLM-5.3 这类参数规模较大的模型）的团队提供了可复现的工程实践参考，涵盖硬件配置、网络互联、vLLM 启动参数调优及性能评估方法。对于关注大模型推理基础设施、多节点分布式服务以及 vLLM 生产化落地的开发者而言，该文兼具技术深度与实操指导意义，也反映了当前大模型推理从单卡走向多节点集群的趋势。",
+  "tags": [
+    "vLLM",
+    "分布式推理",
+    "LLM Serving",
+    "多节点部署",
+    "GPU"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:52Z",
+  "collected_at": "2026-11-14T14:50:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "单 GPU 显存不足以承载 GLM-5.3 等大模型时，跨多台 DGX Station 的分布式推理是可行且高效的扩展路径",
+      "vLLM 支持跨节点张量并行与流水线并行，配合优化的节点间通信可实现 607.8 tok/s 的吞吐",
+      "该实践为私有化部署超大规模模型提供了硬件选型、网络互联与启动参数调优的完整工程参考",
+      "大模型推理正从单卡走向多节点集群，分布式 serving 能力成为基础设施的关键竞争力"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

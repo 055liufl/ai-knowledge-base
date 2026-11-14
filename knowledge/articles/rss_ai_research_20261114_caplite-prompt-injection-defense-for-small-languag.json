@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-104",
+  "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+  "source_url": "https://arxiv.org/abs/2611.17115",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究小型语言模型（SLM）智能体在提示注入防御中生成安全工件（如程序、权限策略、依赖图或约束列表）的可靠性。作者测试了15个开源权重模型（其中13个参数在1.7B至12B之间），发现这些模型无法可靠地生成正确的安全工件，导致现有依赖模型自写安全工件的防御方法（如CaMeL、Progent、IPIGuard、DRIFT）在SLM场景下失效。为此，论文提出CapLite，一种不依赖模型生成安全工件的提示注入防御方案，旨在为资源受限的SLM智能体提供更可靠的安全保障。该工作值得关注，因为它揭示了当前主流防御范式在小型模型上的根本性缺陷，并提出了替代方案，对推动轻量级智能体的安全部署具有重要意义。",
+  "tags": [
+    "Prompt Injection",
+    "Small Language Models",
+    "Agent Security",
+    "Defense"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:55:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有依赖模型自写安全工件的提示注入防御方法在小型语言模型上不可靠，13个1.7B-12B参数模型均无法正确生成安全工件。",
+      "CapLite提出不依赖模型生成安全工件的防御机制，为SLM智能体提供更可靠的安全保障。",
+      "该研究揭示了模型规模与安全工件生成能力之间的关键关联，对轻量级智能体安全部署具有指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

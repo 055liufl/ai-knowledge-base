@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-021",
+  "title": "Early Signals, Strong Decisions: Prefix-Guided Sampling for Parallel Test-Time Scaling",
+  "source_url": "https://arxiv.org/abs/2611.14965",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型并行测试时扩展（Parallel Test-Time Scaling, TTS）中的计算效率问题提出改进方案。现有并行 TTS 方法通过生成并聚合多条独立推理路径来提升模型推理能力，并利用内部置信度分数识别不同质量的路径。然而，这些方法存在明显的计算浪费：低质量路径在被评估之前就已经被完整展开，导致大量无效计算。论文提出一种前缀引导采样（Prefix-Guided Sampling）策略，核心思想是在推理路径生成的早期阶段就利用内部置信度信号进行判断，对低置信度的前缀提前终止或调整采样方向，从而避免对低质量路径的完整展开。该方法旨在在保持甚至提升推理质量的同时显著降低并行 TTS 的计算开销，使测试时扩展更加实用和经济。这项工作对于降低大模型推理成本、提升推理效率具有实际意义，尤其适用于需要大规模采样聚合的复杂推理任务场景。",
+  "tags": [
+    "LLM",
+    "Test-Time Scaling",
+    "推理优化",
+    "采样策略"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有并行 TTS 方法在评估前会完整展开低质量路径，造成显著计算浪费",
+      "利用内部置信度信号在生成早期进行前缀级判断，可提前终止或调整低质量路径",
+      "前缀引导采样在保持推理质量的同时降低测试时扩展的计算成本",
+      "该方法提升了并行 TTS 的实用性，适用于大规模采样聚合的复杂推理任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-126",
+  "title": "Multi-Step Underwater Acoustic Channel Prediction via Dual-Domain Structure Preservation and Pretrained Transformer",
+  "source_url": "https://arxiv.org/abs/2611.14592",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对水下声学（UWA）通信中信道状态信息（CSI）因传播延迟、反馈和收发器重配置而过时的问题，提出了一种多步信道预测方法。现有预测器大多只估计下一时刻信道状态，并通过递归展开获得多步预测，导致多径结构变化时误差累积。作者提出双域结构保持与预训练 Transformer 相结合的方法，旨在直接进行多步预测并保持信道在时域和频域的结构特性。该工作值得关注，因为水下声学通信是海洋探测、水下传感器网络和潜器通信的关键支撑技术，而准确的多步 CSI 预测能显著提升链路自适应、调度和波束赋形的时效性。将预训练 Transformer 引入 UWA 信道预测，也反映了基础模型向物理层通信问题渗透的趋势，对通信与 AI 交叉领域的研究者有参考价值。",
+  "tags": [
+    "Transformer",
+    "信道预测",
+    "水下声学通信",
+    "预训练模型"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:56:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 UWA 信道预测器多采用单步预测加递归展开，多步预测时误差会随多径结构变化而累积",
+      "论文提出双域结构保持机制，在时域和频域同时约束预测结果以维持信道结构特性",
+      "引入预训练 Transformer 直接进行多步 CSI 预测，避免递归 rollout 带来的误差传播",
+      "该方法面向水下声学通信的链路自适应与调度需求，属于通信与 AI 交叉研究"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

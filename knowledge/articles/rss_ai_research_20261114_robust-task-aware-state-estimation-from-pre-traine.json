@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-008",
+  "title": "Robust Task-Aware State Estimation from Pre-trained Perception",
+  "source_url": "https://arxiv.org/abs/2611.14781",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对使用预训练感知模型（如视觉语言模型VLM）进行状态估计的智能体所面临的不确定性挑战展开研究。当前主流方法通常将不确定的预测确定化为单一最佳猜测状态，并当作真实状态进行决策，这种做法在猜测错误时会导致不安全或不可行的决策。论文指出另一种极端是维护完整的概率分布，但计算成本高昂。研究提出了一种鲁棒的任务感知状态估计方法，旨在平衡确定化与完整概率分布之间的权衡，使智能体在预训练感知存在不确定性时仍能做出安全可靠的决策。该工作值得关注，因为它直面了将预训练感知模型部署到实际决策系统中的核心脆弱性问题，为提升智能体在不确定环境下的鲁棒性提供了新思路，对机器人、自动驾驶等安全关键应用具有重要参考价值。",
+  "tags": [
+    "State Estimation",
+    "VLM",
+    "Robustness",
+    "Uncertainty",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将预训练感知模型的预测确定化为单一最佳猜测并当作真实状态进行决策是脆弱的，错误猜测可能导致不安全或不可行的决策。",
+      "维护完整概率分布虽能保留不确定性，但计算成本过高，需要一种任务感知的折中方案。",
+      "鲁棒的任务感知状态估计应结合下游任务需求来权衡不确定性的表示与计算开销。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

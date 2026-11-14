@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-130",
+  "title": "Thompson Sampling using Prior-fitted Diffusion Transformers",
+  "source_url": "https://arxiv.org/abs/2611.14656",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于先验拟合扩散变换器（prior-fitted diffusion transformers）的 Thompson Sampling 方法，用于连续全局优化中的黑盒函数优化。传统 Thompson Sampling 在连续优化中主要局限于高斯过程先验，因为只有这类先验的后验分布在实际中可计算。该工作通过训练扩散模型来拟合先验分布，并利用扩散变换器进行后验采样，从而突破高斯过程先验的限制，使 Thompson Sampling 能够应用于更广泛的先验类别。这一方法将扩散模型与贝叶斯优化中的经典采样策略相结合，为黑盒优化提供了新的思路，有望在超参数调优、实验设计等场景中提升优化效率。该研究值得关注，因为它解决了 Thompson Sampling 在连续优化中长期存在的先验受限问题，并展示了扩散模型在序列决策与贝叶斯优化领域的应用潜力。",
+  "tags": [
+    "Diffusion Model",
+    "Thompson Sampling",
+    "Bayesian Optimization",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:57:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用扩散变换器拟合先验分布，突破了 Thompson Sampling 在连续优化中仅能使用高斯过程先验的限制",
+      "将扩散模型的后验采样能力与 Thompson Sampling 的随机探索策略结合，为黑盒优化提供了新的建模范式",
+      "该方法有望扩展到更复杂的先验类别，提升超参数调优和实验设计等场景的优化效率"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

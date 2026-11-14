@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-133",
+  "title": "Where Should the Code Go? Locating Foundation-Model Errors in Bitemporal Inventory Simulation",
+  "source_url": "https://arxiv.org/abs/2611.14671",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究在双时态库存模拟（bitemporal inventory simulation）场景中，如何定位和修复基础模型（Foundation Model）产生的错误。双时态数据包含两个时间维度：事件实际发生时间和报告到达时间，且后续报告可能修正先前记录。作者探讨了在基础模型组件之前、之后或内部插入精确代码，以及让模型进行更深推理等不同补救措施，分别能消除哪类错误，并针对不同模型在可精确求解的损失场景下进行了系统评估。该研究值得关注，因为它首次系统性地分析了基础模型在复杂时序数据模拟中的错误来源与修复策略，为构建更可靠的AI辅助运营决策系统提供了实证依据和方法论框架。",
+  "tags": [
+    "Foundation Model",
+    "Bitemporal Data",
+    "Inventory Simulation",
+    "Error Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:57:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "双时态数据中的报告修正机制对基础模型的时序推理构成独特挑战，错误可能源于模型对时间语义的误解或状态维护不当。",
+      "在模型调用前后或内部插入精确代码可针对性修复不同类型的错误，但效果因模型和错误类型而异。",
+      "让模型进行更深推理并非万能解药，其收益取决于错误的具体来源和模型能力边界。",
+      "在可精确求解的损失场景下进行系统评估，为定位基础模型错误提供了可控的实验范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

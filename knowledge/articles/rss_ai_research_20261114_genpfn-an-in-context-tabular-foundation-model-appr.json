@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-010",
+  "title": "GenPFN: An In-Context Tabular Foundation Model Approach for Augmenting Small Datasets in Engineering",
+  "source_url": "https://arxiv.org/abs/2611.14804",
+  "source_platform": "rss_ai_research",
+  "summary": "GenPFN 是一种面向工程设计的免训练数据增强方法，旨在解决仿真和实验成本高昂导致的小样本问题。该方法利用预训练的表格先验数据拟合网络（TabPFN）分类器作为固定权重的引导器，将已评估的设计分为期望（Class 1）和非期望（Class 0）两类作为上下文。GenPFN 通过在期望设计之间进行插值，并利用门控分类器梯度和高斯噪声对候选设计进行细化，从而生成新的候选设计。其核心创新在于无需额外训练即可借助 TabPFN 的上下文学习能力实现高效的数据增强，为工程优化中数据稀缺场景提供了一种实用且低成本的解决方案。该方法值得关注，因为它降低了传统生成模型对大量训练数据的依赖，并展示了基础模型在工程表格数据增强中的潜力。",
+  "tags": [
+    "TabPFN",
+    "数据增强",
+    "工程优化",
+    "小样本学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GenPFN 利用预训练 TabPFN 的上下文学习能力，无需训练即可生成候选设计，显著降低计算成本。",
+      "通过插值期望设计并利用门控分类器梯度细化候选，有效平衡探索与利用。",
+      "该方法为工程设计中数据稀缺问题提供了一种基于基础模型的轻量级增强方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

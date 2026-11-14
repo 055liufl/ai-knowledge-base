@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-035",
+  "title": "Verify by Doing: Co-Evolving Agent Execution and Evaluation without External Feedback",
+  "source_url": "https://arxiv.org/abs/2611.15276",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Verify by Doing (VbD) 方法，解决智能体在测试时缺乏外部反馈时如何自我改进的问题。传统方法依赖外部反馈判断任务成功，但实际部署中反馈可能不可用，智能体需从可观察证据推断成功，而不完整的验证会误导后续更新。VbD 在单个任务内协同进化 Actor 和 Evaluator 两个执行框架，同时保持模型权重固定。Evaluator 主动检查工件和环境状态，与 Actor 共同演化，从而在无外部反馈条件下实现智能体执行与评估的闭环优化。该方法值得关注，因为它为智能体自主学习和自我验证提供了新思路，减少对外部监督的依赖，有望提升智能体在真实环境中的适应性和鲁棒性，对自主智能体研究和应用具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "Evaluation",
+    "Co-Evolution"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:52:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在测试时缺乏外部反馈的情况下，智能体需从可观察证据推断任务成功，不完整的验证会误导自我更新。",
+      "VbD 通过协同进化 Actor 和 Evaluator 框架，在固定模型权重下实现执行与评估的闭环优化。",
+      "Evaluator 主动检查工件和环境状态，与 Actor 共同演化，减少对外部监督的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

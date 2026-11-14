@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-096",
+  "title": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+  "source_url": "https://arxiv.org/abs/2611.16961",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“零或T思考”（zero-or-T thinking）的混合决策模型新范式，旨在解决现有自适应推理方法中“答案仍需逐token生成”的局限。现有方法通常通过缩短显式推理文本或切换模式来跳过推理，但最终答案仍以自回归方式逐token输出。本文的核心创新在于让单一模型在两种模式间选择：要么在一次前向传播中利用隐式思考直接给出答案（生成零token），要么进行完整的自回归推理（消耗T个token）。这种设计将“是否思考”的决策与“如何输出”解耦，使模型能够在无需显式生成推理步骤的情况下完成简单任务，从而显著降低推理成本。该工作为高效推理和混合决策模型提供了新思路，值得关注，因为它挑战了“推理必须显式生成”的默认假设，并可能推动更灵活的模型架构设计。",
+  "tags": [
+    "adaptive reasoning",
+    "hybrid decision models",
+    "efficient inference",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:55:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出zero-or-T thinking范式，模型可选择零token的隐式思考或T token的完整自回归推理，突破现有自适应推理仍需逐token生成答案的限制。",
+      "将“是否思考”的决策与答案生成方式解耦，为降低推理成本提供了新方向。",
+      "该工作挑战了推理必须显式生成的默认假设，可能启发更高效的混合决策模型设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-131",
+  "title": "Abstention Is Not Threshold Compliance: Stated Scoring Rules in Open Language Models",
+  "source_url": "https://arxiv.org/abs/2611.14661",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对Kalai等人提出的“在提示中明确声明评分规则与阈值t，使模型仅在正确概率超过t时作答”这一合规性要求进行实证检验。研究覆盖4个完全开源的3-8B模型配方、3个后训练阶段的12个检查点，并探索至32B模型，在共享题目上逐项探测合规条件。在t=0.75时，将回复限制为“答案或‘我弃权’”的弃权格式显著提升了阈值合规性，但作者指出弃权行为并不等同于真正的阈值合规——模型可能通过格式约束而非概率校准来满足表面规则。该工作揭示了开放语言模型中“声明规则”与“实际合规”之间的差距，对可信AI、不确定性表达与模型自评估研究具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Uncertainty",
+    "Abstention",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:57:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "弃权格式约束能提升表面阈值合规率，但不等同于模型真正基于正确概率进行校准决策。",
+      "在多个开源模型配方与后训练阶段中，声明评分规则的合规性存在系统性偏差。",
+      "评估模型不确定性表达时，需区分格式诱导的弃权与概率驱动的弃权。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-032",
+  "title": "guardscope: Measuring Which Actions Runtime Controls Check in LLM Agent Systems",
+  "source_url": "https://arxiv.org/abs/2611.15223",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 GuardScope，用于测量 LLM Agent 系统中运行时控制（如 Agent 网关）实际检查了哪些动作。现有企业部署的运行时控制只能评估经过其部署点的动作，但 Agent 可通过工具调用之外的多种路径执行操作，而此前没有工作基于内核级真值来测量这种覆盖范围。GuardScope 填补了这一空白，通过内核级追踪获取 Agent 实际执行的所有动作作为基准真值，对比运行时控制所检查的动作集合，量化控制的覆盖缺口。该研究对于评估 Agent 安全控制的有效性具有重要意义，揭示了仅依赖工具调用通道进行监控的局限性，为构建更全面的 Agent 运行时安全防护提供了测量方法和实证依据。",
+  "tags": [
+    "LLM Agent",
+    "Runtime Security",
+    "Agent Gateway",
+    "Coverage Measurement"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:52:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "运行时控制只能检查经过其部署点的动作，而 Agent 可通过工具调用之外的多种路径执行操作，存在监控盲区",
+      "首次基于内核级真值测量运行时控制对 Agent 动作的覆盖范围，提供了量化评估方法",
+      "仅依赖工具调用通道进行 Agent 行为监控不足以实现全面安全防护"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

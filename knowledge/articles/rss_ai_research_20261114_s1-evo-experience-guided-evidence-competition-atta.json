@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-095",
+  "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
+  "source_url": "https://arxiv.org/abs/2611.16937",
+  "source_platform": "rss_ai_research",
+  "summary": "S1-Evo 是一种针对类型化 System-1（S1）决策模型的对抗攻击方法。S1 模型被广泛部署在 LLM 智能体中用于路由、审核和授权等任务，以降低推理成本，但其类型化输出仍可能被不可信上下文操纵，从而改变执行分支。与自回归的 System-2 模型不同，S1 接口对动态规则和选项进行评分，而非逐 token 解码，因此针对文本续写或显式覆盖命令的传统攻击方式并不适用。S1-Evo 提出经验引导的证据竞争攻击，利用历史交互经验构造竞争性证据，诱导 S1 模型做出错误决策。该工作首次系统性地揭示了 S1 决策模型的安全脆弱性，对 LLM 智能体系统的安全部署具有重要警示意义，值得安全研究者和智能体开发者关注。",
+  "tags": [
+    "LLM Agent",
+    "Adversarial Attack",
+    "AI Safety",
+    "Decision Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:55:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "类型化 System-1 决策模型在 LLM 智能体中广泛用于路由、审核和授权，但其类型化输出可被不可信上下文操纵",
+      "S1 模型不进行逐 token 解码，因此针对文本续写或显式覆盖命令的传统攻击方法失效",
+      "S1-Evo 利用经验引导的证据竞争机制构造攻击，揭示了 S1 决策接口的新型安全脆弱性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

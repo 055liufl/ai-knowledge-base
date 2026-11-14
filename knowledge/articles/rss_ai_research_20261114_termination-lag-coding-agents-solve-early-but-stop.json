@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-020",
+  "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+  "source_url": "https://arxiv.org/abs/2611.14960",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了编码智能体（Coding Agents）在软件工程任务中的终止行为，提出了“终止滞后”（Termination Lag）这一新概念，即智能体首次生成正确补丁到其实际停止运行之间的步数。作者在五个模型、两个智能体框架和三个SWE-bench数据集上进行了系统实验，记录并测试了执行过程中生成的每个不同仓库补丁。分析发现，在成功的运行中，有38%至82%的案例在初始源代码阶段就已获得正确解，但智能体却继续运行了多步才终止。这一现象揭示了当前编码智能体在任务完成判断上的低效性，可能导致计算资源浪费和潜在的错误累积。该研究为智能体终止策略的设计提供了重要实证依据，对提升编码智能体的实用性和经济性具有直接指导意义，值得智能体开发者和研究者关注。",
+  "tags": [
+    "Coding Agent",
+    "SWE-bench",
+    "Agent Evaluation",
+    "Termination Strategy"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码智能体普遍存在终止滞后现象，首次正确解与运行结束之间平均存在多步延迟。",
+      "在38%-82%的成功运行中，智能体在初始源代码阶段就已生成正确补丁，但未能及时停止。",
+      "终止滞后跨模型、框架和数据集一致存在，表明这是智能体设计中的系统性问题。",
+      "优化终止判断策略可显著减少不必要的计算开销，并降低后续步骤引入错误的风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-047",
+  "title": "DISCERN: Preserve at Write, Resolve at Read for Persistent LLM-Agent Memory",
+  "source_url": "https://arxiv.org/abs/2611.15729",
+  "source_platform": "rss_ai_research",
+  "summary": "DISCERN 是一篇针对企业级 LLM Agent 长期记忆管理的 arXiv 论文。论文指出，企业 Agent 在数十个会话中积累的记忆常出现事实矛盾、被取代以及相似命名实体在嵌入空间中混淆的问题。现有方法通常将其视为检索问题，但作者通过构建 ENT-310 合成企业销售 Agent 记忆基准（含 310 个查询，210 个可回答、100 个不可回答）证明这并非单纯的检索问题：在记忆存储上使用普通 RAG 读取器已能匹配强记忆基线。论文提出 DISCERN 方法，核心思想是“写入时保留、读取时解析”（Preserve at Write, Resolve at Read），即在写入阶段保留原始信息与冲突，在读取阶段动态解析矛盾与时效性，从而提升持久记忆的准确性与鲁棒性。该工作值得关注，因为它重新定义了 Agent 记忆管理的核心挑战，并提供了可复现的基准与系统化解决方案，对企业级 Agent 的长期记忆设计具有直接指导意义。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Memory",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:53:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "企业 Agent 持久记忆的核心挑战不是检索，而是事实矛盾、时效性与实体混淆的解析。",
+      "普通 RAG 读取器在记忆存储上已能匹配强基线，说明单纯优化检索收益有限。",
+      "DISCERN 提出“写入时保留、读取时解析”范式，将冲突处理推迟到读取阶段以保持信息完整性。",
+      "ENT-310 基准包含可回答与不可回答查询，为评估 Agent 记忆系统提供了更全面的测试集。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

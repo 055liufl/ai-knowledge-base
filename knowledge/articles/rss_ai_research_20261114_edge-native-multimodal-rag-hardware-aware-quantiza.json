@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261114-016",
+  "title": "Edge-Native Multimodal RAG: Hardware-Aware Quantization and Architectural Optimization for Consumer GPUs",
+  "source_url": "https://arxiv.org/abs/2611.14924",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对消费级GPU（如NVIDIA Turing架构）上部署多模态RAG系统的内存与带宽瓶颈，提出了一套硬件感知的量化与架构优化方案。标准7B参数模型在FP16精度下占用14GB显存，导致向量索引和KV缓存无法共存。作者通过工程集成与实证评估，展示了如何通过量化技术（如低比特量化）和架构调整，在有限显存下实现多模态RAG的高效运行。该工作值得关注，因为它直接回应了边缘AI部署中的现实约束，为在消费级硬件上运行复杂RAG应用提供了可落地的优化路径，对推动RAG从云端向边缘迁移具有实用价值。",
+  "tags": [
+    "RAG",
+    "Quantization",
+    "Edge AI",
+    "Multimodal",
+    "GPU"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "消费级GPU的显存限制是边缘多模态RAG部署的主要瓶颈，FP16下7B模型即占14GB，无法同时容纳向量索引和KV缓存。",
+      "硬件感知的量化策略（如针对Turing架构的低比特量化）能有效降低显存占用，使多模态RAG在消费级硬件上可行。",
+      "架构优化需协同考虑模型量化、向量索引存储和KV缓存管理，而非单一技术改进。",
+      "该工作提供了工程集成与实证评估，为边缘AI场景下的RAG部署提供了可复现的优化参考。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

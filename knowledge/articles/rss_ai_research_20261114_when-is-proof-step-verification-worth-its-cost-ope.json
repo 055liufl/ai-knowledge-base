@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-009",
+  "title": "When Is Proof-Step Verification Worth Its Cost? Operating Requirements of Certify-or-Decline Verification for Open-Weight Mathematical Reasoning",
+  "source_url": "https://arxiv.org/abs/2611.14794",
+  "source_platform": "rss_ai_research",
+  "summary": "本文系统评估了证明步骤验证（proof-step verification）在开放权重数学模型推理中的成本效益。该方法将求解器的答案重写为类型化步骤，并利用LLM评判器进行认证或拒绝（certify-or-decline）。在GPQA、AIME-2025和MATH-500子集上的实验表明，认证机制能显著提升答案匹配精度：在强GPQA配置上提升31个百分点，在AIME上提升46个百分点，但仅覆盖35%和21%的尝试。在接近饱和的MATH-500上，增益最多5个百分点，却损失13-27个百分点。研究揭示了该验证方法在精度与覆盖率之间的权衡，并明确了其有效运行的条件边界，对数学推理系统的可靠性设计具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "数学推理",
+    "验证",
+    "开放权重模型"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:51:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "证明步骤验证在困难基准（GPQA、AIME）上能大幅提升精度（31-46个百分点），但覆盖率显著下降（仅21-35%的尝试被认证）。",
+      "在接近饱和的MATH-500上，验证带来的精度增益有限（≤5点），且伴随13-27点的覆盖率损失，性价比低。",
+      "该方法的有效性高度依赖于任务难度和模型能力，需在精度与覆盖率之间进行权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-123",
+  "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+  "source_url": "https://arxiv.org/abs/2611.14581",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对AI Agent评估中两种主流方法——基准测试的最终状态对比（Native Scoring）与部署环境中的LLM裁判（LLM Judges）——是否可互换的问题进行了实证研究。作者在tau2-bench的航空和零售领域运行了2160个episode，记录每次数据库写入，并比较了Native Scoring、LLM裁判以及基于提交边界的检查（Commit-Boundary Checks）三种评估方式的一致性。研究发现，这三种评估器在判断Agent行为是否正确时存在显著分歧，表明实践中将基准测试与LLM裁判视为等价的做法可能不可靠。该研究首次系统量化了不同评估范式之间的差异，对Agent评估方法的设计与选择具有重要警示意义，值得关注Agent评测的研究者和开发者重视。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "LLM Judge",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:56:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在tau2-bench上，Native Scoring、LLM裁判和Commit-Boundary Checks三种评估方式对同一Agent行为给出不一致的判断，说明它们不可互换。",
+      "LLM裁判在部署环境中虽被广泛使用，但其与基准测试的最终状态对比结果存在系统性偏差，可能高估或低估Agent性能。",
+      "基于提交边界的检查提供了一种更细粒度的评估视角，能捕捉到最终状态对比遗漏的中间过程问题。",
+      "实践者应避免将基准测试分数与LLM裁判结果直接等同，需根据评估目标选择合适的评估器或组合使用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

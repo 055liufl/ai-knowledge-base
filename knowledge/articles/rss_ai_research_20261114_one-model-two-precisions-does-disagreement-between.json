@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-068",
+  "title": "One Model, Two Precisions: Does Disagreement Between Quantized Copies Tell You When a Small Model Is Wrong?",
+  "source_url": "https://arxiv.org/abs/2611.16478",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究探讨了利用同一模型不同量化精度副本之间的分歧作为小模型错误检测信号的可能性。具体而言，研究者比较了8位量化副本与更低精度副本对同一提示的回答差异，并检验这种分歧能否作为逐题错误分数，用于弃答、升级或重新提问等决策。该方法仅需一次额外前向传播，且不涉及采样或训练，成本极低。这项工作值得关注，因为它为本地部署的小型语言模型提供了一种轻量级的可靠性评估手段，有望在不增加显著计算开销的前提下提升模型输出的可信度，对边缘计算和资源受限场景下的模型应用具有实际意义。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Uncertainty Estimation",
+    "Model Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同一模型不同量化精度副本之间的回答分歧可作为逐题错误信号，用于弃答、升级或重新提问。",
+      "该方法仅需一次额外前向传播，无需采样或训练，计算成本极低。",
+      "为资源受限环境下的小模型可靠性评估提供了轻量级解决方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

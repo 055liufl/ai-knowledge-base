@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261114-097",
+  "title": "Compiling Known Rules into Compact Neural Agents: Weight-Space Programming on Unseen Games",
+  "source_url": "https://arxiv.org/abs/2611.16981",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究权重空间编程（Weight-Space Programming, WSP）在游戏智能体构建中的应用，探索语言模型能否在不经过训练的情况下直接生成神经网络权重，将已知游戏规则编译为紧凑的神经智能体。研究使用20个未公开的ARC-AGI-3风格游戏家族，在移除保留关卡数据的前提下向写入器提供模拟器源码，采用固定57k参数的循环架构进行实验，测试这些编译生成的智能体能否泛化到同一游戏家族中未见过的关卡、渲染方式和初始状态。这项工作值得关注，因为它挑战了传统依赖大规模训练的智能体构建范式，提出了一种以语言模型作为权重生成器的替代路径，若成功将显著降低智能体开发的计算成本，并为ARC-AGI等泛化推理基准提供新思路，同时其紧凑架构设计对资源受限场景具有实用价值。",
+  "tags": [
+    "WSP",
+    "Neural Agents",
+    "ARC-AGI",
+    "LLM",
+    "Generalization"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:55:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重空间编程可绕过传统训练流程，由语言模型直接生成神经网络权重",
+      "研究聚焦于游戏家族内的泛化能力，涵盖未见关卡、渲染与初始状态",
+      "采用仅57k参数的紧凑循环架构，强调小模型在规则编译任务中的可行性",
+      "使用私有未公开的ARC-AGI-3风格游戏家族，提升实验的泛化验证严谨性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

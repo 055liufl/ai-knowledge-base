@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-043",
+  "title": "Marginal-Preserving Coupled Diffusion Composition for Long-Horizon Planning",
+  "source_url": "https://arxiv.org/abs/2611.15585",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种边际保持耦合扩散组合方法，用于解决长时程规划中组合扩散规划器的全局一致性问题。组合扩散规划器通过生成并拼接多个局部轨迹块，将短时程轨迹模型扩展到长时程目标条件规划。然而，在多模态环境中，局部合理性不足以保证全局一致性：独立初始化的轨迹块可能去噪至不兼容的重叠模式，导致拼接后的规划虽然个体可行但整体不连贯。现有补救措施（摘要在此截断）可能未能有效解决该问题。本文的核心贡献在于引入边际保持的耦合扩散机制，确保各局部轨迹块在重叠区域保持一致的边际分布，从而生成全局连贯的长时程规划。该方法对于机器人导航、自动驾驶等需要长时程决策的任务具有重要价值，因为它提升了多模态环境下规划的一致性和可靠性。该研究属于规划与扩散模型交叉领域的前沿工作，值得关注。",
+  "tags": [
+    "Diffusion Model",
+    "Long-Horizon Planning",
+    "Compositional Planning",
+    "Trajectory Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:52:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "局部轨迹块的独立去噪可能导致重叠区域模式不兼容，破坏全局规划一致性。",
+      "边际保持耦合扩散通过约束重叠区域的边际分布，确保拼接后的轨迹全局连贯。",
+      "该方法为多模态环境下的长时程规划提供了新的组合扩散框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

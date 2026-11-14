@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-084",
+  "title": "Folio: Recoverable Multi-Resolution Context Folding for Long-Horizon Language Agents",
+  "source_url": "https://arxiv.org/abs/2611.16627",
+  "source_platform": "rss_ai_research",
+  "summary": "Folio 是一种面向长时程语言智能体的上下文管理方案，旨在解决智能体在长期运行中因工具调用结果和回复不断累积而超出上下文窗口的问题。现有方法通常依赖模型对历史进行摘要压缩，但每次压缩都需要重新读取并重写被替换的历史，且缓存感知触发器在决定何时压缩时将结果大小视为既定条件，效率有限。Folio 通过统一的句柄集合实现历史的记录、折叠与恢复，支持多分辨率上下文折叠，使智能体能够在需要时恢复被折叠的细节信息，而非永久丢失。该工作值得关注，因为它针对长时程智能体的核心瓶颈——上下文窗口限制——提出了一种可恢复的压缩机制，有望提升智能体在复杂多步任务中的持续运行能力和信息保真度，对智能体系统设计和上下文工程具有实用价值。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "Long-Horizon",
+    "Memory"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有摘要式压缩每次都需要重读重写历史，成本高且信息不可恢复",
+      "Folio 通过统一句柄实现记录、折叠与恢复，支持多分辨率上下文管理",
+      "可恢复的折叠机制让智能体在需要时取回细节，避免永久信息丢失",
+      "该方案针对长时程智能体的上下文窗口瓶颈，提升持续运行能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-069",
+  "title": "Contain, Conform, Compare (Extended Version): A Red-Teamed Evaluation Kit for Small Coding Agents and the Full Record of Its Experiments",
+  "source_url": "https://arxiv.org/abs/2611.16485",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文介绍了一个名为 drydock-eval 的本地评估工具包，专门用于评估小型编码代理（如 Gemma 4 E4B）。在 Gemma 4 开发者代理竞赛中，托管评分只是一个有噪声的数字，因此开发过程需要一个快速、安全且与托管评分器提示匹配的本地评估器。drydock-eval 在单张 RTX 5090 上每小时可运行约 250 次评估。其核心设计包括三个部分：Contain（在无网络的新容器中运行每个任务，并通过了 200 个脚本化逃逸测试）、Conform（提供八项检查以比较本地与托管评分器的行为）和 Compare（对实验结果进行系统比较）。该工具包经过红队测试，旨在为小型编码代理提供可靠、可复现的本地评估方案，降低对托管评分的依赖，加速开发迭代。其价值在于填补了小型编码代理本地评估工具的空缺，强调了安全隔离和评分一致性，对从事代理评估和竞赛开发的团队具有实用意义。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Security",
+    "Coding Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:54:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "本地评估器 drydock-eval 在单张 RTX 5090 上每小时可执行约 250 次评估，显著提升开发迭代效率。",
+      "Contain 模块通过无网络容器隔离和 200 个脚本化逃逸测试，确保代理生成代码的安全执行。",
+      "Conform 模块提供八项检查，使本地评分与托管评分器的提示和行为保持一致，减少评分噪声。",
+      "该工具包经过红队测试，为小型编码代理的评估提供了安全、可复现的本地化方案。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

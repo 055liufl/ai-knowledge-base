@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261114-118",
+  "title": "metalSPARSE: A 2:4 Semi-Structured Sparse GEMV Kernel for Apple Silicon GPUs",
+  "source_url": "https://arxiv.org/abs/2611.14545",
+  "source_platform": "rss_ai_research",
+  "summary": "metalSPARSE 是首个针对 Apple Silicon GPU 的 2:4 半结构化稀疏 GEMV 内核，旨在解决边缘设备上自回归 LLM 解码受内存带宽限制的问题。由于 Apple GPU 缺乏稀疏矩阵硬件支持，剪枝只有在内核实际减少内存读取字节数时才有收益。该工作填补了 Apple 平台稀疏推理内核的空白，对在 Mac 和 iPhone 等设备上高效部署大模型具有实用价值。",
+  "tags": [
+    "Sparse Kernel",
+    "Apple Silicon",
+    "LLM Inference",
+    "GEMV",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:56:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Apple Silicon GPU 无稀疏硬件，2:4 稀疏收益完全依赖内核减少实际内存读取",
+      "自回归解码在边缘设备上受内存带宽限制，稀疏 GEMV 内核是关键优化点",
+      "首个面向 Apple GPU 的 2:4 半结构化稀疏内核，填补平台空白"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

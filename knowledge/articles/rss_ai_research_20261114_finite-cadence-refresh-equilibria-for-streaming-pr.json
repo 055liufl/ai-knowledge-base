@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261114-124",
+  "title": "Finite-Cadence Refresh Equilibria for Streaming Prior-Anchored Ridge: A Closed-Form Forgetting Window and Spectral Correction",
+  "source_url": "https://arxiv.org/abs/2611.14586",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究流式数据中带先验锚定的岭回归（prior-anchored ridge regression）在有限刷新节奏下的遗忘与跟踪平衡问题。递归估计器需要在漂移流上足够快地遗忘旧数据以跟踪目标，同时足够慢地平均噪声。在带先验锚定的岭回归中，这一权衡具有闭式谱分解：每个特征方向在数据解与先验之间插值，拉回权重为 s_i = ρ/(μ_i + ρ)。当锚点每 k 步刷新一次时，作者推导出移动坐标系偏移的闭式遗忘窗口，并给出谱修正项，从而精确刻画刷新节奏对估计偏差与方差的影响。该工作为流式学习系统的超参数选择（刷新周期、正则强度）提供了理论依据，对在线学习、持续学习和自适应信号处理具有参考价值。",
+  "tags": [
+    "Online Learning",
+    "Ridge Regression",
+    "Streaming Algorithms",
+    "Continual Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-14T14:48:55Z",
+  "collected_at": "2026-11-14T14:56:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "先验锚定岭回归的每个特征方向在数据解与先验之间以 s_i = ρ/(μ_i + ρ) 的权重插值，为遗忘-跟踪权衡提供谱视角。",
+      "锚点每 k 步刷新会引入移动坐标系偏移，作者给出闭式遗忘窗口来量化该偏移的影响。",
+      "谱修正项可指导刷新周期与正则强度的联合选择，避免过快遗忘导致噪声放大或过慢遗忘导致跟踪滞后。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
