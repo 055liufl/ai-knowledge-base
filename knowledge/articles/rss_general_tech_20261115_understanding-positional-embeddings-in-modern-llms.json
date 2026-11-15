@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261115-002",
+  "title": "Understanding Positional Embeddings in Modern LLMs",
+  "source_url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+  "source_platform": "rss_general_tech",
+  "summary": "本文是 Sebastian Raschka 关于现代大语言模型中位置嵌入（Positional Embeddings）的技术解析文章。文章系统梳理了位置编码从绝对位置编码（如正弦编码、可学习嵌入）到相对位置编码（如 RoPE、ALiBi）的演进脉络，重点解释了为什么 Transformer 架构本身缺乏序列顺序感知能力，以及不同位置编码方案如何解决这一问题。文章深入对比了旋转位置编码（RoPE）与 ALiBi 的设计思路：RoPE 通过旋转复数空间中的向量来编码相对位置，已被 LLaMA、Qwen 等主流开源模型广泛采用；ALiBi 则通过注意力分数上的线性偏置实现外推能力。作者还讨论了位置编码对长上下文外推、训练稳定性与推理效率的实际影响。该文值得关注的原因在于：位置编码是 LLM 架构中最容易被忽视却直接影响长文本能力的关键组件，而 Raschka 以清晰直观的方式将数学原理与工程实践结合，适合希望深入理解模型架构细节的开发者与研究者阅读。",
+  "tags": [
+    "LLM",
+    "Positional Embedding",
+    "RoPE",
+    "Transformer"
+  ],
+  "author": null,
+  "published_at": "2026-11-15T15:24:38Z",
+  "collected_at": "2026-11-15T15:25:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer 的自注意力机制本身是置换不变的，位置编码是模型感知序列顺序的唯一信息来源",
+      "RoPE 通过旋转向量编码相对位置，已成为 LLaMA 等主流开源模型的事实标准",
+      "ALiBi 以注意力线性偏置实现位置编码，在长度外推方面具有独特优势",
+      "位置编码方案的选择直接影响模型的长上下文外推能力与训练稳定性"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

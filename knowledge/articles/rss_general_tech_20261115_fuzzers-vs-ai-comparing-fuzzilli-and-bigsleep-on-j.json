@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261115-011",
+  "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
+  "source_url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+  "source_platform": "rss_general_tech",
+  "summary": "本文来自 Google Project Zero，比较了传统模糊测试工具 Fuzzilli 与 AI 驱动的漏洞挖掘方法 BigSleep 在 JavaScript 引擎上的表现。JavaScript 引擎（如 V8、JavaScriptCore）是浏览器安全的核心攻击面，其漏洞挖掘长期依赖 Fuzzilli 这类基于语法和覆盖率引导的模糊测试器。BigSleep 则代表利用大语言模型进行代码理解和漏洞发现的新范式。文章通过对比实验，分析了两种方法在漏洞发现效率、覆盖深度、误报率以及可解释性等方面的差异，并探讨了 AI 在漏洞挖掘中的优势与局限。该研究值得关注，因为它首次系统性地将传统模糊测试与 AI 方法放在同一基准下评估，为安全研究社区提供了实证参考，也揭示了 AI 辅助漏洞挖掘的当前边界与未来改进方向。",
+  "tags": [
+    "Fuzzing",
+    "LLM",
+    "Security",
+    "JavaScript"
+  ],
+  "author": null,
+  "published_at": "2026-11-15T15:24:39Z",
+  "collected_at": "2026-11-15T15:26:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Fuzzilli 在 JavaScript 引擎漏洞挖掘中仍具有稳定且可复现的优势，尤其在覆盖率引导和语法感知方面。",
+      "BigSleep 等 AI 方法在理解复杂代码逻辑和发现语义级漏洞上展现出潜力，但受限于模型幻觉和评估成本。",
+      "传统模糊测试与 AI 方法并非替代关系，而是可以互补：AI 用于生成高质量种子或定位可疑代码区域，模糊测试用于深度验证。",
+      "该对比实验为 AI 安全工具的评价提供了可借鉴的基准框架，强调了在真实目标上做端到端评估的重要性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

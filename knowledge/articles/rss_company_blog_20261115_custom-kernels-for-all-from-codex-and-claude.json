@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261115-086",
+  "title": "Custom Kernels for All from Codex and Claude",
+  "source_url": "https://huggingface.co/blog/custom-cuda-kernels-agent-skills",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 博客文章《Custom Kernels for All from Codex and Claude》介绍了一种利用 Codex 和 Claude 等代码生成模型自动编写自定义 GPU 内核（如 CUDA 内核）的 Agent Skills 方案。该方案的核心价值在于降低高性能计算的门槛：传统上编写和调优 CUDA 内核需要深厚的 GPU 架构知识与大量工程经验，而通过将内核开发流程封装为可复用的 Agent 技能，普通开发者也能借助大模型生成、验证并迭代自定义内核。文章展示了模型在代码生成之外，结合工具调用、编译测试与性能反馈形成闭环的能力，代表了 AI 辅助底层系统编程的重要方向。值得关注的原因有三：一是它把 LLM 的应用从应用层代码扩展到性能敏感的底层内核领域；二是 Agent Skills 的封装模式为复杂工程任务提供了可复用的范式；三是若该方案成熟，将显著加速算子优化与异构计算生态的创新。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "CUDA",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-15T15:24:43Z",
+  "collected_at": "2026-11-15T15:30:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过 Agent Skills 封装，Codex 和 Claude 可以自动生成并迭代自定义 GPU 内核，大幅降低 CUDA 开发门槛。",
+      "该方案将代码生成、编译测试与性能反馈形成闭环，展示了 LLM 在底层系统编程中的实用潜力。",
+      "可复用的技能封装模式为复杂工程任务的 AI 辅助提供了新范式，有望加速算子优化与异构计算创新。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
