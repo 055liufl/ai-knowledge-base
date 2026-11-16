@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-133",
+  "title": "EcoVGGT: Pinned-Key Inference for Efficient and Streamable Feed-Forward 3D Reconstruction from Long Videos",
+  "source_url": "https://arxiv.org/abs/2611.18099",
+  "source_platform": "rss_ai_research",
+  "summary": "EcoVGGT 针对前馈多视角 Transformer（如 VGGT）在长视频三维重建中的两个核心瓶颈提出改进：跨帧注意力计算量随帧数呈二次增长，且长视频下精度下降。现有方法要么在预算内近似全帧注意力，要么依据内容选择少量 key。该工作提出一个假设：长视频的 key 可以在不查看内容的情况下被选定，并据此设计 Pinned-Key 推理机制，实现高效且可流式处理的前馈三维重建。其价值在于把长视频重建从离线、高显存、二次复杂度推向可流式、低成本的实用范式，对机器人、AR/VR、自动驾驶等需要在线长序列几何感知的场景具有直接意义，也为 VGGT 类模型的推理优化提供了新思路。",
+  "tags": [
+    "3D Reconstruction",
+    "VGGT",
+    "Efficient Inference",
+    "Streaming",
+    "Attention"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:07:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长视频前馈三维重建的主要瓶颈是跨帧注意力的二次复杂度与长序列精度衰减。",
+      "提出无需内容感知的 Pinned-Key 选择假设，可显著降低 key 选择开销并支持流式推理。",
+      "为 VGGT 类多视角 Transformer 的长序列部署提供了高效推理路径。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

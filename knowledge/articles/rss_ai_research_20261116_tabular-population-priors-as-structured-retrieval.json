@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-004",
+  "title": "Tabular Population Priors as Structured Retrieval for EHR Medication Set Prediction",
+  "source_url": "https://arxiv.org/abs/2611.17341",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对电子健康记录（EHR）中的药物集预测问题，提出了一种更贴合任务本质的检索增强方法。作者指出，药物预测本质上是固定词汇表上的结构化预测问题，但近期临床RAG系统常将其视为开放式的案例推理：检索相似患者入院记录，再让LLM推断药物集。这种检索对象是间接的——模型收到的是患者记录，而目标是离散的药物类别标签集。为此，论文提出“表格化群体先验作为结构化检索”的新思路，将检索对象从原始病历转向结构化的群体统计先验，使检索内容与预测目标更对齐。该方法有望提升药物预测的准确性与可解释性，并为临床RAG系统设计提供新范式。",
+  "tags": [
+    "RAG",
+    "EHR",
+    "结构化预测",
+    "临床决策支持"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "药物预测是固定词汇表上的结构化预测问题，而非开放式案例推理",
+      "现有临床RAG检索患者记录与预测药物集的目标之间存在间接性错配",
+      "提出以表格化群体先验作为结构化检索对象，使检索内容与任务目标更对齐"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

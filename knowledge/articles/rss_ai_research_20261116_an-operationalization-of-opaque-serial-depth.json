@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-005",
+  "title": "An Operationalization of Opaque Serial Depth",
+  "source_url": "https://arxiv.org/abs/2611.17495",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为「不透明串行深度」（opaque serial depth）的可操作化度量方法，用于量化模型在不经过可解释中间步骤的情况下能够执行的未言明串行认知量。研究背景是思维链（CoT）目前是监督 AI 模型的重要工具，但某些架构变化可能显著降低 CoT 的可监控性。作者将不透明串行深度定义为模型计算图中不经过可解释节点（如 CoT 输出）的最长路径长度，并给出了具体的操作化实现，作为该概念的代理指标。这项工作值得关注，因为它为评估模型内部隐藏推理能力提供了可量化的工具，对 AI 安全与可解释性研究具有重要意义——随着模型架构演进，CoT 监控可能失效，而该度量能帮助研究者提前识别哪些架构会削弱可监控性，从而为安全部署和架构选择提供依据。",
+  "tags": [
+    "CoT",
+    "可解释性",
+    "AI安全",
+    "模型监控"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出「不透明串行深度」的可操作化度量，量化模型未言明的串行认知量",
+      "该度量可作为 CoT 可监控性的代理指标，帮助识别架构变化对监控能力的削弱",
+      "为 AI 安全研究提供了评估模型内部隐藏推理的量化工具",
+      "提示未来架构设计需权衡性能与可监控性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

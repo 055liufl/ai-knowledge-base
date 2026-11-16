@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-112",
+  "title": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
+  "source_url": "https://arxiv.org/abs/2611.17780",
+  "source_platform": "rss_ai_research",
+  "summary": "LuthorSQL 是一篇 arXiv 论文（编号 2611.17780），提出了一种“单遍文本到 SQL”模型，作为较慢 LLM 智能体的“系统 1”快速通道。前沿 LLM 智能体通过工具查询数据库是目前最准确的文本到 SQL 方案之一，但每次查询都调用托管模型存在速度慢、成本高、敏感查询外泄等痛点。论文以 Claude Opus 5.5 智能体为例：每天处理 1 万次查询，按标价年成本超过 7 万美元。LuthorSQL 的核心思路是利用组织已拥有的本地硬件，以单遍推理方式快速处理大量常规查询，从而为昂贵的 LLM 智能体卸载负担，同时不损害智能体的准确率。该工作值得关注，因为它直击企业级 text-to-SQL 部署中的成本、延迟与数据隐私三大现实问题，并提出了“快慢双系统”的实用架构范式，对希望在生产环境中落地数据库智能体的团队具有直接参考价值。",
+  "tags": [
+    "Text-to-SQL",
+    "LLM Agent",
+    "本地推理",
+    "成本优化"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "托管 LLM 智能体做 text-to-SQL 虽准确，但每次查询调用外部 API 带来高成本、高延迟和敏感数据外泄风险",
+      "LuthorSQL 以单遍本地模型充当“系统 1”，为慢速 LLM 智能体卸载高频常规查询，形成快慢协同架构",
+      "利用组织已有本地硬件即可显著降低 text-to-SQL 的年度运营成本，同时保护查询隐私"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

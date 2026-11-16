@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-104",
+  "title": "Binarization as an Attack Surface in Weightless Neural Networks",
+  "source_url": "https://arxiv.org/abs/2611.17646",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究无权重神经网络（WNN）中二值化过程作为攻击面的安全性问题。WNN 是一类轻量级分类器，通过将输入二值化并将二进制模式存储于查找表进行学习，适用于资源受限场景（如入侵检测）。由于不跨越二值化阈值的小扰动不会改变二进制输入，WNN 看似对对抗样本天然鲁棒；然而，一旦扰动跨越阈值，则可能引发显著的模式变化。该研究系统分析了二值化边界作为攻击面的特性，揭示了 WNN 在对抗攻击下的脆弱性机制，对轻量级模型的安全部署具有重要警示意义。",
+  "tags": [
+    "Adversarial Robustness",
+    "Weightless Neural Networks",
+    "Binarization",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:05:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "WNN 的二值化阈值构成一个独特的攻击面：小扰动若不跨阈值则无效，但跨阈值扰动可导致二进制模式剧变",
+      "WNN 对对抗样本的‘天然鲁棒性’是一种假象，攻击者可针对二值化边界设计有效攻击",
+      "该研究为资源受限场景下轻量级分类器的安全评估提供了新的分析视角"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-071",
+  "title": "VelServe: Taming Decode Jitters in LLM Inference with Tail-Calibrated Scheduling",
+  "source_url": "https://arxiv.org/abs/2611.18392",
+  "source_platform": "rss_ai_research",
+  "summary": "VelServe 是一篇针对大语言模型（LLM）推理服务中解码抖动（decode jitters）问题的系统调度研究。论文指出，在交互式 LLM 服务中，必须同时满足首令牌时间（TTFT）和令牌间时间（TBT）的延迟 SLO，以保证流式与软实时应用的令牌交付可预测性。作者在聚合式（aggregated）与解耦式（disaggregated）服务架构中均识别出解码抖动现象：单次抖动会延迟批次内所有请求，而长响应往往跨越数百个解码步骤，因此即便罕见的超时也会累积造成大量 SLO 违规。为此，论文提出 VelServe，采用尾部校准调度（Tail-Calibrated Scheduling）来驯服解码抖动，通过校准尾部延迟并据此进行请求调度，从而在保持吞吐的同时显著降低 SLO 违规率。该工作值得关注，因为它直面 LLM 在线服务中长尾延迟这一实际痛点，提出了可落地的调度机制，对推理基础设施的性能优化具有直接参考价值。",
+  "tags": [
+    "LLM Inference",
+    "Scheduling",
+    "SLO",
+    "Latency"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:04:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "解码抖动会延迟整个批次的所有请求，长响应跨数百步导致罕见超时累积成大量 SLO 违规",
+      "聚合式与解耦式服务架构中均存在解码抖动问题，需针对性调度",
+      "尾部校准调度通过校准延迟尾部来指导请求调度，可有效降低 SLO 违规率"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

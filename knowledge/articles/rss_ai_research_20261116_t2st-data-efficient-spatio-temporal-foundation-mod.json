@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-138",
+  "title": "T2ST: Data-Efficient Spatio-Temporal Foundation Models via Temporal Data and Knowledge Transfer",
+  "source_url": "https://arxiv.org/abs/2611.18199",
+  "source_platform": "rss_ai_research",
+  "summary": "T2ST 提出了一种数据高效的时空基础模型（STFM）训练方法，旨在解决时空观测数据稀缺且获取成本高的问题。该工作观察到每个空间位置上的观测本质上构成一条时间序列，因此提出利用丰富且易采集的纯时间序列数据，通过时间数据与知识迁移来增强时空基础模型。T2ST 的核心思路是：在缺乏同步观测和空间元数据的情况下，将时间序列中学习到的时序模式与知识迁移到时空建模中，从而降低对大规模时空标注语料的依赖。该研究值得关注的原因在于，时空基础模型通常需要海量高质量时空数据，而现实场景中这类数据往往难以获得；T2ST 提供了一条以时间序列数据为补充、提升 STFM 数据效率的可行路径，对遥感、气象、交通等时空应用领域具有实际意义，也为基础模型在数据受限场景下的训练提供了新思路。",
+  "tags": [
+    "时空基础模型",
+    "时间序列",
+    "迁移学习",
+    "数据高效"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:07:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "时空观测数据稀缺且采集成本高，而时间序列数据丰富易得，二者在结构上存在天然联系（每个空间位置的观测即一条时间序列）。",
+      "T2ST 通过时间数据与知识迁移，使丰富的时序数据能够增强时空基础模型，降低对大规模同步时空语料的依赖。",
+      "该工作为数据受限条件下的时空基础模型训练提供了数据高效的新范式，可推广至遥感、气象、交通等时空应用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

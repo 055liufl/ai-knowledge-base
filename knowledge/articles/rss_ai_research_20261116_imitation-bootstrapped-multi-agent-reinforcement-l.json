@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-081",
+  "title": "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2611.18543",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Imitation Bootstrapped Multi-Agent Reinforcement Learning (IB-MARL) 的方法，旨在解决多智能体强化学习（MARL）中演示数据难以获取的问题。传统上，单智能体 RL 可以通过人类演示加速学习，但在多智能体场景中，一个人很难同时遥操作多个智能体。Round-Robin Behavior Cloning (R2BC) 通过让演示者轮流控制一个智能体、其他智能体执行当前策略来缓解这一问题，但 R2BC 存在分布偏移和协调性不足的缺陷。IB-MARL 在 R2BC 的基础上引入模仿自举机制：利用轮流演示数据训练一个集中式模仿学习策略，并将其作为 MARL 的初始化或辅助损失，从而在探索阶段引导多智能体系统学习协调行为。该方法在多个合作型多智能体任务上进行了验证，表明其能够显著提升样本效率和最终性能，同时降低对大量专家演示的依赖。该工作为多智能体强化学习中的演示利用提供了新思路，值得关注。",
+  "tags": [
+    "MARL",
+    "Imitation Learning",
+    "Reinforcement Learning",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:04:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出模仿自举机制，将轮流演示数据转化为集中式模仿策略，用于引导多智能体强化学习。",
+      "解决了多智能体场景下单人演示难以同时控制多个智能体的问题，降低了演示数据采集门槛。",
+      "在多个合作型多智能体任务上验证了方法能提升样本效率和最终性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

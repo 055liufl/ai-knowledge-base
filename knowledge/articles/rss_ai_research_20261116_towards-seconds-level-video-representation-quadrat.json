@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-113",
+  "title": "Towards Seconds-level Video Representation: Quadratically Gated Feature Grid with Adaptive, Prediction-free Sampling",
+  "source_url": "https://arxiv.org/abs/2611.17786",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Q-GAS，一种面向视频的隐式神经表示方法，目标是解决现有隐式视频表示构建速度过慢、难以满足工业应用基本门槛的问题。Q-GAS 的核心设计包含三部分：多分辨率显式 3D 特征网格、紧凑的 SwiGLU 风格二次门控（Quadratic-Gating, QG）解码器，以及误差感知、无需预测的自适应采样器。显式网格避免了哈希冲突导致的系数共享问题，从而提升表示质量与构建效率；QG 解码器在保持紧凑的同时增强表达能力；自适应采样器则根据重建误差动态选择采样位置，省去额外的预测网络开销。该方法面向坐标查询式视频表示，强调将构建时间压缩到秒级，使隐式视频表示更接近实际部署要求。其价值在于把隐式神经表示从研究原型推向可落地的工程方案，对视频压缩、流媒体、内容生成与编辑等需要快速构建视频表示的场景具有潜在意义。整体属于表示学习与高效推理交叉方向的工作，创新点集中在显式网格与轻量解码器、采样策略的协同设计。",
+  "tags": [
+    "视频表示",
+    "隐式神经表示",
+    "特征网格",
+    "高效推理"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过多分辨率显式 3D 特征网格替代哈希编码，避免哈希冲突带来的系数共享问题，提升表示质量与构建效率。",
+      "采用紧凑的 SwiGLU 风格二次门控解码器，在保持模型轻量的同时增强坐标查询的表达能力。",
+      "引入误差感知、无需预测的自适应采样器，根据重建误差动态选择采样点，省去额外预测网络开销。",
+      "目标是将隐式视频表示的构建时间压缩到秒级，跨越工业应用的基本实用门槛。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

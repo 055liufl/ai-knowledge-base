@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-143",
+  "title": "From Bytes to Behavior: Request-Level Attribution from Live GPU Hidden States",
+  "source_url": "https://arxiv.org/abs/2611.18272",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种针对运行中LLM服务的实时GPU隐藏状态取证方法。现有内存取证主要关注静态工件（如模型权重或提示日志），无法分析无法重启或修改的在线推理进程的瞬时计算状态。作者从活跃GPU中逐层获取残差流激活，实现请求级归因，将字节级内存数据与模型行为关联。这项技术值得关注，因为它填补了动态推理过程取证空白，对模型安全审计、行为追溯和合规性检查具有实用价值，尤其适用于生产环境中的黑盒LLM服务。",
+  "tags": [
+    "LLM",
+    "GPU Forensics",
+    "Activation Analysis",
+    "AI Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:07:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有ML取证聚焦静态工件，无法分析运行中LLM的瞬时计算状态",
+      "从活跃GPU逐层提取残差流激活，实现请求级行为归因",
+      "方法适用于不可重启或修改的生产LLM服务，支持安全审计与行为追溯"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-105",
+  "title": "Imitation Policies Learn a Proprioceptive Anchor: A Predictive Law for Perception Noise and Its Closed Loop Cost",
+  "source_url": "https://arxiv.org/abs/2611.17658",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究机器人操作模仿策略在训练数据包含噪声物体位置时的行为。作者发现，由于演示者会朝向物体运动，机器人自身状态（本体感受）携带了物体位置信息，因此训练后的策略会学习一个“本体感受锚点”，并将噪声读数按 α = V/(V + s²) 进行加权，其中 s² 为读数噪声方差，V 为锚点方差。这一发现揭示了模仿策略对噪声读数的折扣机制，并给出了预测感知噪声影响的定量规律，同时分析了该机制在闭环控制中的代价。该工作为理解模仿学习中的噪声鲁棒性提供了理论解释，对机器人操作策略的设计与训练具有指导意义，值得关注。",
+  "tags": [
+    "Imitation Learning",
+    "Robotics",
+    "Perception Noise",
+    "Closed-loop Control"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:05:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模仿策略会利用机器人本体感受状态作为物体位置的锚点，从而折扣噪声读数。",
+      "读数加权系数 α = V/(V + s²) 定量描述了策略对噪声的折扣程度，其中 V 为本体感受锚点的方差。",
+      "该预测规律可用于分析感知噪声对闭环控制性能的影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

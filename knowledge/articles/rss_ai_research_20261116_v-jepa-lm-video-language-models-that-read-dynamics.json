@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-118",
+  "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+  "source_url": "https://arxiv.org/abs/2611.17831",
+  "source_platform": "rss_ai_research",
+  "summary": "V-JEPA-LM 是一项关于视频-语言模型的研究，指出当前将世界模型视频编码器（如 V-JEPA）与语言模型结合的方式存在根本性缺陷。V-JEPA 类编码器能从纯视频中学习场景的动态变化（方向、速度、顺序、状态），但与之对接的语言模型仅基于字幕和问答对训练。由于每条字幕或问题只描述视频片段的少数属性，模型倾向于学习检索这些被点名的属性，而非真正“阅读”视频内容，导致编码器所携带的丰富动态信息未被利用。摘要中提到，在相同测试项上，线性探针的表现揭示了这一问题。该工作值得关注，因为它挑战了当前视频-语言模型的主流训练范式，提示需要设计能迫使模型利用视频动态表征的架构或训练目标，对多模态理解、世界模型与视频问答研究具有重要启示。",
+  "tags": [
+    "Video-Language Model",
+    "World Model",
+    "V-JEPA",
+    "Multimodal Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有视频-语言模型倾向于检索字幕中提及的少量属性，而非真正理解视频中的动态变化",
+      "V-JEPA 等世界模型编码器携带的丰富动态信息在与语言模型对接后未被有效利用",
+      "线性探针实验表明，模型在相同测试项上的表现揭示了表征利用的不足",
+      "需要重新设计训练目标或架构，迫使语言模型读取并利用视频编码器的动态表征"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

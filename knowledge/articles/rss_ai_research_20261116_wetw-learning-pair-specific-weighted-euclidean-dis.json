@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-090",
+  "title": "WETW: Learning Pair-Specific Weighted Euclidean Distances for Efficient DTW Search",
+  "source_url": "https://arxiv.org/abs/2611.17412",
+  "source_platform": "rss_ai_research",
+  "summary": "WETW 提出了一种针对动态时间规整（DTW）搜索效率问题的新方法。DTW 是时间序列相似性搜索的标准距离度量，能处理时间轴上的错位，但其计算复杂度与序列长度呈二次方关系，且传统下界剪枝效果有限，导致在大规模长序列集合上的搜索非常缓慢。现有的学习型近似方法通过嵌入序列来降低比较成本，但通常对所有序列对使用相同的固定规则（如欧氏距离），忽略了 DTW 对每对序列进行个性化对齐的特性。WETW 的核心创新在于学习成对特定的加权欧氏距离（Pair-Specific Weighted Euclidean Distances），即为每一对序列学习一个加权的欧氏距离度量，以更准确地近似 DTW 距离，从而在保持搜索精度的同时显著提升效率。该方法有望在时间序列检索、语音识别、动作识别等依赖 DTW 的应用场景中带来性能提升，值得关注。",
+  "tags": [
+    "DTW",
+    "时间序列",
+    "相似性搜索",
+    "度量学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:05:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DTW 的二次复杂度与弱下界剪枝是长序列搜索的瓶颈，现有学习型近似方法使用统一规则忽略了成对对齐的差异性。",
+      "WETW 通过为每对序列学习加权欧氏距离来个性化近似 DTW，有望在保持精度的同时提升搜索效率。",
+      "该方法属于学习型索引与度量学习的交叉方向，可扩展至语音、动作识别等时间序列检索场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

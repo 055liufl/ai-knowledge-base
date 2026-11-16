@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-086",
+  "title": "Time-Consistent Evaluation of Hierarchical Code Graphs for SWE Agents",
+  "source_url": "https://arxiv.org/abs/2611.17388",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对仓库感知软件工程（SWE）智能体评估中的时间污染和提示级解决方案泄漏问题，提出了一种基于分层代码图的时间一致性评估方法。研究建立在 Sun（2026）的时间一致性基准协议之上，在 C++ 的 DragonFly 和 JavaScript/TypeScript 的 React 两个真实仓库上强制执行严格的零泄漏隔离，锁定仓库状态以确保预存知识与未来代码演化之间的清晰分离。该工作值得关注的原因在于：当前主流 SWE 基准测试普遍存在训练数据与评估数据时间重叠的问题，导致智能体可能通过记忆而非推理获得高分，评估结果失真。该论文通过分层代码图结构建模仓库知识，并结合时间一致性协议，为 SWE 智能体提供了更可信的能力度量方式，对推动代码智能体评估体系的严谨化具有方法论意义。",
+  "tags": [
+    "SWE Agent",
+    "Benchmark",
+    "Code Graph",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:05:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准 SWE 基准存在时间污染和提示级解决方案泄漏，导致智能体评估结果虚高",
+      "分层代码图结合时间一致性协议可实现预存仓库知识与未来代码演化的严格隔离",
+      "在 DragonFly（C++）和 React（JS/TS）上的零泄漏隔离验证了协议的多语言适用性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

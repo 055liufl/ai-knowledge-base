@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-130",
+  "title": "RL$^{\\mathrm{RT}}$: On-Device Reinforcement Learning Runtime",
+  "source_url": "https://arxiv.org/abs/2611.18035",
+  "source_platform": "rss_ai_research",
+  "summary": "RL^RT 是一种面向嵌入式 GPU 的端侧强化学习运行时系统，旨在解决 actor 与 learner 共享同一 GPU 时因权重更新导致的 actor 停滞或策略漂移问题。传统设计要么在 learner 生成新权重时暂停 actor，要么允许 actor 继续运行但策略逐渐偏离最新权重。RL^RT 将这种耦合关系转化为可调参数：通过 refresh bound 限制两次刷新之间 actor 的发布次数，并引入带 slack-aware 准入控制的 GPU permit 机制，优先保障 actor 的实时性需求。该工作值得关注，因为它首次系统性地将端侧 RL 训练-推理耦合问题建模为可调度的运行时约束，为在资源受限设备上同时运行学习与决策提供了实用方案，对边缘智能、自适应控制系统和持续学习部署具有参考价值。",
+  "tags": [
+    "On-Device RL",
+    "Runtime System",
+    "GPU Scheduling",
+    "Edge AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:07:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 actor 与 learner 的权重刷新耦合从固定策略转变为可调参数（refresh bound），在策略新鲜度与 actor 连续性之间取得平衡",
+      "引入 slack-aware GPU 准入控制，在共享嵌入式 GPU 上优先保障 actor 的实时推理需求",
+      "为端侧强化学习的训练-推理共存调度提供了系统级抽象，而非仅算法层面的优化"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

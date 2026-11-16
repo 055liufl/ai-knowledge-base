@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-001",
+  "title": "When Should LLM Agents Forget? Memory Filtering Under Query-Critical Resolver Errors",
+  "source_url": "https://arxiv.org/abs/2611.17338",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM智能体记忆系统中的硬过滤（hard-filtering）问题：当系统将判定为过时的事实删除时，若解析器（resolver）出现错误，可能误删对当前查询至关重要的事实，从而降低下游任务准确率。作者在三个模型上进行了受控敏感性干预实验，发现在完美解析条件下，硬删除策略带来+0.186至+0.230的准确率增益；但在最低可靠性条件下，反而造成-0.176至-0.181的损失。配对靶向干预进一步表明，误删（false-drop）造成的负面影响显著大于保留过时信息。该工作首次系统量化了记忆过滤中解析器错误与查询关键事实之间的交互风险，对设计更稳健的LLM记忆管理机制具有重要参考价值，值得关注。",
+  "tags": [
+    "LLM",
+    "Memory",
+    "Agent",
+    "Filtering"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "硬过滤记忆在解析器完美时收益显著，但解析器可靠性下降会迅速转为负收益",
+      "误删查询关键事实（false-drop）的代价远高于保留过时事实",
+      "记忆系统应引入不确定性感知的软过滤或延迟删除机制，而非简单硬删除"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

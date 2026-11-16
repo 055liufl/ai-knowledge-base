@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-002",
+  "title": "Does the Ranking Hold? A Practitioner-Facing Audit of Hallucination Detectors on Small, Quantized, On-Device LLMs",
+  "source_url": "https://arxiv.org/abs/2611.17339",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对当前幻觉检测研究主要基于7B-70B大模型、充足采样预算和精确匹配/ROUGE正确性标签的现状，指出现有证据基础未覆盖实际部署在设备端的小型量化模型（如Phi-3-mini、Llama-3.2-3B-Instruct、Qwen2.5-3B-Instruct、Gemma-2-2B-Instruct，通常为4-bit精度）。作者在单GPU上对四种幻觉检测器进行了可复现的审计，评估其在小型量化端侧LLM上的排名是否依然成立。这项工作值得关注，因为它首次系统性地检验了幻觉检测方法在真实部署场景下的有效性，揭示了研究基准与实际应用之间的差距，对端侧AI的可靠部署具有重要指导意义。",
+  "tags": [
+    "LLM",
+    "Hallucination Detection",
+    "On-Device AI",
+    "Quantization"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有幻觉检测方法主要在7B-70B大模型上评估，未覆盖实际部署的小型量化端侧模型",
+      "研究首次在单GPU上对四种检测器进行可复现审计，检验排名在4-bit小模型上是否保持",
+      "揭示了研究基准与实际部署场景之间的证据缺口，对端侧AI可靠性有指导意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

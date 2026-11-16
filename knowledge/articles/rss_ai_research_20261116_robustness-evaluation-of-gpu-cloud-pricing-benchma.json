@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261116-031",
+  "title": "Robustness Evaluation of GPU Cloud Pricing Benchmarks under Incomplete Observations: A Controlled Missingness Study",
+  "source_url": "https://arxiv.org/abs/2611.17796",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对GPU云租赁价格基准在数据缺失情况下的稳健性进行了系统性评估。研究聚焦于每日GPU租赁价格基准，当市场报价缺失时，基准可能失效。作者对一种固定的等权重中位数规则进行了压力测试，模拟了四种掩码机制（数据缺失机制）和四种基准层面的恢复方法。通过27个场景下的5800次蒙特卡洛实现，并在190个保留日上进行验证，研究发现：整源中断会将发布覆盖率降低至0.77，但在已发布日期上保持零条件误差；而改变组成的损失则保留0.86的覆盖率。该研究为GPU云定价基准的可靠性提供了量化分析，对依赖此类基准进行成本估算和决策的开发者与研究者具有参考价值，尤其在数据不完整条件下如何维持基准的准确性方面提供了实证见解。",
+  "tags": [
+    "GPU Cloud",
+    "Pricing Benchmark",
+    "Robustness",
+    "Missing Data",
+    "Monte Carlo"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:02:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "整源中断导致发布覆盖率降至0.77，但已发布日期的条件误差为零，表明基准在部分缺失下仍能保持准确性。",
+      "组成变化型缺失下覆盖率保留0.86，显示基准对数据缺失机制具有一定稳健性。",
+      "等权重中位数规则在多种缺失场景下表现稳定，可作为GPU云定价基准的可靠聚合方法。",
+      "研究通过大规模蒙特卡洛模拟为基准评估提供了可复现的缺失数据压力测试框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

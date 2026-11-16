@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-059",
+  "title": "A$^3$: Adaptive Audio Agent Framework for Collaborative Edge Computing",
+  "source_url": "https://arxiv.org/abs/2611.18064",
+  "source_platform": "rss_ai_research",
+  "summary": "A³ 是一个面向嵌入式音频代理的自适应框架，旨在解决边缘计算中服务器依赖导致的单点故障问题。当音频代理依赖边缘服务器以提升速度时，链路故障会导致代理完全失效。A³ 通过将完整流水线阶段放置在服务器上，同时在设备端保留一个完整的后备代理，并利用链路感知的截止时间机制来对冲两条路径，从而在服务器不可用时仍能保证功能。在 Jetson 设备和 RTX A4500 服务器上的实验表明，A³ 在正常链路下能达到与纯服务器方案相当的性能，同时在链路故障时仍能通过设备端后备代理提供可用服务。该工作对于边缘计算场景下的可靠 AI 代理部署具有重要参考价值，尤其适用于对实时性和鲁棒性要求较高的音频处理应用。",
+  "tags": [
+    "Edge Computing",
+    "Audio Agent",
+    "Fault Tolerance",
+    "Adaptive Framework"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:04:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过服务器与设备端双路径对冲，实现链路故障时的无缝降级",
+      "链路感知的截止时间机制动态决定何时放弃服务器路径",
+      "在 Jetson 和 RTX A4500 上验证了与纯服务器方案相当的性能"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

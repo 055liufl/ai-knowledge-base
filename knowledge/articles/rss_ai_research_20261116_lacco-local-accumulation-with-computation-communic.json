@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-057",
+  "title": "LACCO: Local Accumulation with Computation--Communication Overlap",
+  "source_url": "https://arxiv.org/abs/2611.17991",
+  "source_platform": "rss_ai_research",
+  "summary": "LACCO（Local Accumulation with Computation-Communication Overlap）是一篇针对低带宽网络环境下语言模型分布式训练优化的 arXiv 论文。该工作聚焦于本地优化方法（如 DiLoCo）中的同步瓶颈问题：虽然 DiLoCo 通过多步本地更新减少通信频率，但外层梯度平均与外层更新仍处于关键路径上，造成训练停顿。现有的计算-通信重叠方法通常依赖延迟更新或副本本地更新来规避停顿，但这类做法可能导致收敛性下降或副本漂移。LACCO 提出一种新的重叠机制，旨在在不牺牲收敛质量的前提下隐藏通信开销。该研究对分布式训练、去中心化训练以及带宽受限场景下的基础模型训练具有实际意义，值得关注分布式系统与大模型训练交叉领域的研究者和工程师阅读。",
+  "tags": [
+    "Distributed Training",
+    "Communication Optimization",
+    "LLM",
+    "Local SGD"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:03:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "DiLoCo 类本地优化方法虽降低通信频率，但外层梯度平均与更新仍在关键路径上造成停顿",
+      "现有计算-通信重叠方案通过延迟更新或副本本地更新规避停顿，但会损害收敛性或引发副本漂移",
+      "LACCO 试图在保持收敛质量的同时实现计算与通信的有效重叠，适用于低带宽网络下的大模型训练"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

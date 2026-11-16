@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261116-114",
+  "title": "Can Large Language Models Optimize Pretrained Neural Network Weights? A Multi-Phase Empirical Evaluation of Gradient-Free Editing in YOLO26 Object Detection",
+  "source_url": "https://arxiv.org/abs/2611.17789",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型（LLM）能否在无梯度条件下优化预训练神经网络权重，以YOLO26目标检测模型和MS COCO数据集为实验平台，系统评估了五个实验阶段。方法涵盖确定性缩放、随机扰动、差分进化、CMA-ES、结构化干预、真实本地LLM提案、失败感知引导以及混合LLM-CMA-ES策略。研究核心在于检验直接权重编辑作为微调替代方案的泛化能力，以及LLM引导是否带来实际增益。该工作首次将LLM引入检测器权重编辑流程，为无梯度模型适配提供了新思路，同时通过多阶段消融实验严谨地量化了LLM指导的价值与局限，对理解LLM在数值优化中的角色具有参考意义。",
+  "tags": [
+    "LLM",
+    "权重编辑",
+    "目标检测",
+    "无梯度优化",
+    "CMA-ES"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "直接权重编辑可作为微调的无梯度替代方案，但其泛化能力受编辑策略影响显著",
+      "LLM引导在权重编辑中可能带来增益，但需与进化策略（如CMA-ES）结合才能稳定发挥价值",
+      "失败感知引导和混合LLM-CMA-ES策略优于纯随机或确定性方法，表明LLM的语义推理有助于缩小搜索空间",
+      "在YOLO26和MS COCO上的多阶段实验为LLM辅助数值优化提供了可复现的评估框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

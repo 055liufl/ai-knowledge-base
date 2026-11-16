@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-117",
+  "title": "SceneAgent: A Multi-Agent Framework for Portable Game Scene Generation",
+  "source_url": "https://arxiv.org/abs/2611.17821",
+  "source_platform": "rss_ai_research",
+  "summary": "SceneAgent 是一个面向游戏场景生成的多智能体框架，核心目标是解决场景生成器跨游戏引擎迁移时，规划逻辑、构建工具和积累经验难以复用的问题。传统做法通常只导出最终场景产物，但生成过程中的规划策略、工具调用和存储经验仍绑定在原后端上，导致迁移成本高。SceneAgent 通过引入规范化的 SceneContext 来维护持续演化的世界状态，并用后端适配器隔离坐标约定、资产绑定和导出等引擎相关细节，从而把构建过程与具体后端解耦。该工作值得关注，因为它把多智能体协作从单纯的生成任务扩展到可移植的生成流程复用，对游戏开发中跨引擎资产与场景流水线、以及 Agent 系统的可迁移性设计都有参考价值。不过摘要信息有限，具体生成质量、适配器覆盖范围和实验评估仍需阅读全文确认。",
+  "tags": [
+    "Multi-Agent",
+    "Game Scene Generation",
+    "Cross-Engine Portability",
+    "Agent Framework"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "场景生成器的可移植性不只是导出最终产物，规划、构建工具和存储经验同样需要跨后端复用。",
+      "SceneContext 作为规范化世界状态，与后端适配器分离，是解耦生成过程与具体游戏引擎的关键设计。",
+      "后端适配器集中处理坐标约定、资产绑定和导出差异，降低迁移到新引擎的改造成本。",
+      "该思路对多智能体系统的可迁移架构设计具有借鉴意义，但实际生成质量和适配范围仍需实验验证。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

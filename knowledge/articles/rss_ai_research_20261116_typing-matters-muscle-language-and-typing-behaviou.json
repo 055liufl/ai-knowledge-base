@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-076",
+  "title": "Typing Matters: Muscle, Language and Typing Behaviour in Live Keystroke Decoding from sEMG",
+  "source_url": "https://arxiv.org/abs/2611.18464",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出，仅从手腕表面肌电信号（sEMG）解码输入文本时，不应将其简化为离线字符识别问题，而应同时考虑肌肉信号、语言约束和打字行为（如错字、修正、退格、换行）三个维度。作者认为传统以字符错误率为指标的离线评估框架忽略了真实交互中的动态性，导致问题被过度简化。研究通过实时按键解码实验，分析肌肉活动、语言模型与打字行为如何共同影响解码性能，并强调在线场景下行为上下文对提升准确率的关键作用。该工作值得关注，因为它挑战了sEMG文本输入的主流评估范式，为无键盘人机交互、可穿戴输入设备及辅助技术提供了更贴近实际应用的分析视角，同时为多模态信号融合与实时解码系统设计提供了新思路。",
+  "tags": [
+    "sEMG",
+    "Keystroke Decoding",
+    "Human-Computer Interaction",
+    "Signal Processing"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:04:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将sEMG文本解码视为纯信号推断问题会丢失打字行为（错字、修正、退格）带来的关键上下文信息。",
+      "实时在线解码需同时建模肌肉信号、语言约束和打字行为三个维度，而非仅优化离线字符错误率。",
+      "行为上下文（如修正和退格）可显著影响解码策略，应在系统设计中显式纳入。",
+      "该研究为无键盘输入和辅助技术提供了更贴近真实使用场景的评估框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-006",
+  "title": "Advancing Quantization for R&amp;R Models with Microscaling Formats",
+  "source_url": "https://arxiv.org/abs/2611.17501",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对推荐与排序（R&R）模型在数字广告场景中的量化难题展开研究。R&R 模型需要极高的推理吞吐量，但对精度损失极为敏感：与 LLM 通常可容忍 1% 以上的量化精度下降不同，生产级 R&R 模型要求模型质量相对基线的归一化熵（NE）偏差必须控制在 0.01% 以内。论文提出采用 Microscaling（微缩放）数据格式推进 R&R 模型的量化，以在满足严苛精度约束的同时提升推理效率。该工作值得关注，因为它直面推荐系统量化落地的核心矛盾——极致吞吐与近乎无损精度之间的张力，并引入在 LLM 量化中兴起的新兴数值格式，为广告推荐等大规模在线服务提供了潜在的部署路径。",
+  "tags": [
+    "Quantization",
+    "Recommendation",
+    "Microscaling",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "R&R 模型对量化精度极其敏感，生产环境要求 NE 偏差不超过 0.01%，远严于 LLM 常见的 1% 容忍度",
+      "Microscaling 格式为在严苛精度约束下实现高吞吐推理提供了新的量化方向",
+      "推荐系统量化的核心挑战在于同时满足极致吞吐与近乎无损的模型质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

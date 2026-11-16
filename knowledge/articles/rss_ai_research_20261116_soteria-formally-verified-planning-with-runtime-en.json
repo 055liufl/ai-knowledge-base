@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-042",
+  "title": "Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.17880",
+  "source_platform": "rss_ai_research",
+  "summary": "Soteria 是一个面向 LLM Agent 安全执行多步工具调用的框架，旨在同时满足任务效用与安全约束这两个相互冲突的目标。现有方法往往在安全与效用之间做出取舍：严格拦截不安全动作虽能防止违规，却可能使 Agent 陷入无法恢复的困境；而放松约束则带来风险。Soteria 的核心思路是将规划与运行时强制执行相结合，通过形式化验证保证规划满足领域策略与正确性约束，并在运行时对执行进行强制检查，从而在阻止违规行为的同时为 Agent 提供有原则的恢复路径。该工作值得关注，因为它直面 LLM Agent 落地中的关键矛盾——安全与可用性的平衡，并引入形式化方法提升可靠性，为构建可审计、可信任的自主 Agent 系统提供了新范式，对 Agent 安全研究及工程实践均有参考价值。",
+  "tags": [
+    "LLM Agent",
+    "Formal Verification",
+    "Safety",
+    "Planning",
+    "Runtime Enforcement"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:03:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的多步工具调用需同时优化任务效用与安全合规，二者存在内在张力，简单拦截会导致 Agent 无法恢复。",
+      "Soteria 将形式化验证的规划与运行时强制执行结合，在保证安全约束的同时为 Agent 提供有原则的恢复机制。",
+      "该框架为构建可审计、可信任的自主 Agent 系统提供了新思路，弥补了现有方法在安全与效用间被迫取舍的不足。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

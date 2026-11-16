@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-144",
+  "title": "Right Token, Right Time: From Per-Token Gating to Trajectory-Aware Activation Steering",
+  "source_url": "https://arxiv.org/abs/2611.18274",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究基于稀疏自编码器（SAE）的激活引导（activation steering）方法，用于在不进行任务特定微调的情况下控制大语言模型的行为。作者指出，现有标准方法在每一个生成 token 上都施加引导信号，导致模型表示偏离训练分布，从而损害生成质量。论文提出一个关键观察：干预在生成轨迹中的时机（when）是决定性的控制维度，而非仅仅关注施加什么信号。为此，作者将引导重新建模为逐 token 的门控问题，并进一步提出轨迹感知的激活引导方法，从单纯的 per-token gating 演进到考虑整条生成轨迹的激活策略。该工作值得关注，因为它揭示了激活引导中被长期忽视的时间维度，为提升可控生成的质量与稳定性提供了新思路，对可解释性、模型对齐与推理时干预等方向具有参考价值。",
+  "tags": [
+    "Activation Steering",
+    "Sparse Autoencoder",
+    "LLM Control",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:07:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "激活引导中干预的时机（when）与干预内容同样重要，是决定性的控制维度",
+      "逐 token 施加引导信号会使表示偏离训练分布并损害生成质量",
+      "将引导建模为逐 token 门控问题，并扩展到轨迹感知的激活策略",
+      "该方法无需任务特定微调即可实现更高质量的行为控制"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

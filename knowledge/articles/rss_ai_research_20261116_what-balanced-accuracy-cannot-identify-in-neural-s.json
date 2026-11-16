@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-047",
+  "title": "What Balanced Accuracy Cannot Identify in Neural-Signal Decoding under Test-Time Adaptation",
+  "source_url": "https://arxiv.org/abs/2611.17925",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了在神经信号解码（如EEG和ECG分类）中，测试时自适应（Test-Time Adaptation, TTA）通常采用转导式评估（即每个批次在更新后评分），但聚合准确率的变化无法揭示队列内部个体层面的差异。作者在11个数据集-编码器组合（Siena/EEG、PTB-XL/ECG各4个，Sleep-EDF/EEG 3个）上评估了全测试时自适应（full_ttt），固定了数据划分和源模型评估，以受试者为分析单元。研究发现，平衡准确率（Balanced Accuracy）作为聚合指标，无法识别TTA在不同受试者间带来的异质性效果——某些受试者可能受益而另一些受损，但整体准确率可能不变甚至提升。这一发现对神经信号解码的可靠评估和公平性具有重要意义，提示需要更细粒度的评估指标来捕捉TTA的个体化影响。该工作值得关注，因为它挑战了当前TTA评估的惯例，并为设计更稳健的自适应方法提供了实证基础。",
+  "tags": [
+    "Test-Time Adaptation",
+    "Neural Signal Decoding",
+    "EEG",
+    "ECG",
+    "Evaluation Metrics"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:03:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "聚合的平衡准确率变化无法反映TTA在受试者层面的异质性效果，可能掩盖个体性能的下降。",
+      "在11个数据集-编码器组合上的实验表明，TTA的收益高度依赖于受试者，需要更细粒度的评估指标。",
+      "转导式评估（每批更新后评分）可能高估TTA的实际泛化能力，建议采用更严格的评估协议。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

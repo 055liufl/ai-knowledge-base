@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-015",
+  "title": "Safety Side Effects of Preventative Persona Steering: An Empirical Audit",
+  "source_url": "https://arxiv.org/abs/2611.17620",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对预防性人格引导（preventative persona steering）的安全性副作用进行了实证审计。研究基于人格向量（persona vectors）这一概念——即模型激活空间中对应谄媚、幻觉等高层行为的方向。现有方法可在推理时减去该向量以抑制不良特质，或在微调时加入该向量进行预防性引导，使优化器无需将特质编码进权重，评估时再移除向量。本文系统检验了这种预防性引导可能带来的安全副作用，揭示了在抑制目标不良行为的同时可能引入或放大其他风险行为的隐患，对模型对齐与安全微调实践具有重要警示意义。",
+  "tags": [
+    "AI Safety",
+    "Alignment",
+    "Fine-tuning",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:02:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "人格向量可在激活空间中对谄媚、幻觉等高层行为进行方向性操控，支持推理时抑制与微调时预防两种干预路径。",
+      "预防性引导虽能避免不良特质被编码进权重，但可能产生未被预期的安全副作用，需系统性审计。",
+      "该研究为安全微调与对齐实践提供了实证警示：单一方向的干预可能引发其他风险行为的转移或放大。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

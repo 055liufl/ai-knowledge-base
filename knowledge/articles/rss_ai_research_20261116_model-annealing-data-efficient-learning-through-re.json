@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-008",
+  "title": "Model Annealing: Data-Efficient Learning through Review and Consolidation",
+  "source_url": "https://arxiv.org/abs/2611.17524",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“模型退火”（Model Annealing）的训练方法，旨在解决小规模标注数据集在训练预算耗尽前被过早记忆、剩余训练仅用于锐化置信度的问题。方法将训练划分为多个“学习片段”，每个片段内学习率再次升高后冷却，冷却后的模型状态加入“过去自我”的记忆库，新片段从该记忆库中学习，实现基于网络自身知识的复习与巩固。核心创新在于将剩余训练预算用于重新学习而非简单拟合，从而提升数据效率。该方法在概念上融合了退火、记忆回放与自蒸馏思想，可能对少样本学习、持续学习及训练效率优化有重要影响，值得关注。",
+  "tags": [
+    "训练方法",
+    "数据效率",
+    "模型退火",
+    "记忆回放"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小数据集训练中，模型过早记忆标签，剩余训练仅锐化置信度，浪费预算。",
+      "模型退火通过多片段学习率循环和记忆库，让模型从自身知识中复习巩固。",
+      "该方法有望提升数据效率，适用于少样本和持续学习场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

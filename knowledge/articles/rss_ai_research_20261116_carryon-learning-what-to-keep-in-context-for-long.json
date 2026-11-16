@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261116-116",
+  "title": "CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.17808",
+  "source_platform": "rss_ai_research",
+  "summary": "CarryOn 是一篇针对长程 LLM Agent 上下文管理问题的研究论文（arXiv:2611.17808）。长程 Agent 在执行多步骤任务时会积累大量交互历史，导致上下文膨胀，影响执行可靠性与效率。现有方法主要依赖摘要、剪枝或历史选择来压缩上下文，但论文指出更短的上下文并不必然带来更好的决策：摘要可能丢失后续动作所需的精确细节，而保留过多历史又会引入噪声与成本。CarryOn 的核心思路是让 Agent 学习「该保留什么」，即针对任务需求动态判断哪些上下文信息对后续决策真正有价值，而非简单地压缩长度。该工作切中了当前 Agent 系统落地的关键瓶颈——上下文工程，对构建可长期运行、多工具协同的智能体具有直接参考价值，值得 Agent 研究者与工程开发者关注。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "Long-Horizon",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:06:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长程 Agent 的上下文管理不能只追求「更短」，压缩本身可能损害决策质量",
+      "摘要与剪枝会丢失后续动作所需的精确细节，是现有方法的主要缺陷",
+      "核心方向是让模型学习保留对后续决策真正有价值的上下文信息，而非被动压缩",
+      "上下文工程是长程多工具 Agent 可靠落地的关键瓶颈之一"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

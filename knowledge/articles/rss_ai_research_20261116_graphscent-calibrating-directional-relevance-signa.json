@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-098",
+  "title": "GraphScent: Calibrating Directional Relevance Signals for Bounded-Context Code Localization",
+  "source_url": "https://arxiv.org/abs/2611.17527",
+  "source_platform": "rss_ai_research",
+  "summary": "GraphScent 是一篇关于代码定位的研究论文，针对在单张消费级 GPU 上本地运行开放权重语言模型时，如何用短小、无状态的代码检查替代多轮探索历史的问题。论文聚焦于无状态仓库定位的核心挑战：当冻结的语言模型从紧凑视图中评估未编辑的代码实体时，哪些结构关系能使其相关性判断对附近的修复目标具有信息量。研究以 Gemma 模型为基础，提出通过校准方向性相关性信号来提升有界上下文下的代码定位效果。该工作值得关注，因为它探索了在资源受限环境下利用结构信息增强代码定位的实用路径，对本地化 AI 编程助手和代码维护工具具有潜在价值。",
+  "tags": [
+    "Code Localization",
+    "LLM",
+    "Repository Analysis",
+    "Graph"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:05:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无状态代码定位需要依赖结构关系信号来弥补缺乏多轮探索历史的不足",
+      "冻结语言模型对代码实体的相关性判断可通过方向性信号校准来提升对修复目标的指向性",
+      "在单张消费级 GPU 上运行开放权重模型进行代码定位是可行且值得优化的场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

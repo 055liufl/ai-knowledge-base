@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261116-003",
+  "title": "LoRAWeaver: Directional Adapter Routing in LoRA Representation Space",
+  "source_url": "https://arxiv.org/abs/2611.17340",
+  "source_platform": "rss_ai_research",
+  "summary": "LoRAWeaver 提出了一种在 LoRA 表示空间中进行方向性适配器路由的新方法，旨在解决参数高效微调中适配器池不断增长导致的推理选择难题。随着任务特定 LoRA 适配器数量增加，现有路由和基于编码器的方法往往需要在新适配器加入时重新训练，难以适应动态场景。该工作将适配器路由视为在 LoRA 表示空间中的方向性问题，通过分析适配器向量的方向关系实现无需重训练的动态路由。这一思路对多任务 LLM 部署、持续学习与模型即服务场景具有实用价值，可显著降低适配器管理与推理选择成本，值得关注参数高效微调与模型路由方向的研究者和工程师阅读。",
+  "tags": [
+    "LoRA",
+    "PEFT",
+    "Adapter Routing",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-16T17:59:47Z",
+  "collected_at": "2026-11-16T18:01:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将适配器路由建模为 LoRA 表示空间中的方向性问题，避免新适配器加入时的重训练",
+      "针对适配器池动态增长场景，提升推理时适配器选择的灵活性与可扩展性",
+      "对多任务 LLM 部署和模型即服务中的适配器管理具有实用意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
