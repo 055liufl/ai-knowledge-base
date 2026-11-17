@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261117-082",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 Transformer 中混合专家（MoE）技术的介绍性文章。MoE 是一种模型架构，通过将前馈网络层替换为多个并行的专家网络，并引入路由机制为每个输入动态选择部分专家进行计算，从而在保持计算成本相对稳定的情况下大幅增加模型参数量。文章可能涵盖 MoE 的基本原理、路由策略（如 Top-K 路由）、负载均衡问题、在 Transformer 中的集成方式，以及训练和推理中的挑战与优化。MoE 已成为构建超大规模语言模型的关键技术之一，被 GPT-4、Mixtral 等模型采用，因此该内容对于理解现代高效大模型架构具有重要价值。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-11-17T17:25:11Z",
+  "collected_at": "2026-11-17T17:30:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活专家网络，在增加模型参数量的同时控制计算成本。",
+      "路由机制是 MoE 的核心，Top-K 路由和负载均衡是常见设计。",
+      "MoE 在训练和推理中面临负载不均衡、通信开销等挑战。",
+      "MoE 已被 GPT-4、Mixtral 等先进大模型采用，是扩展模型规模的重要方向。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

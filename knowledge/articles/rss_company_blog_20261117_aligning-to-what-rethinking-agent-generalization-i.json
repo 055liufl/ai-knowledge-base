@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261117-111",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队在 Hugging Face 博客上发布的技术文章，围绕其新一代模型 MiniMax M2 展开，核心议题是「对齐到何处」——即智能体（Agent）泛化能力的对齐目标与方法论反思。文章指出，当前 Agent 训练普遍依赖特定任务或环境的监督信号，容易导致过拟合于狭窄场景，而真正的泛化需要模型在未见过的工具、任务与交互模式上保持稳定表现。MiniMax M2 通过改进对齐策略与训练数据分布，试图在指令遵循、工具调用与多步推理之间取得平衡，从而提升跨域迁移能力。文章还讨论了「对齐税」问题：过度对齐可能削弱模型的探索性与通用推理能力，因此需要在安全性与能力之间寻找更优的权衡点。该内容值得关注的原因在于，它来自一线大模型团队的实践总结，直面 Agent 泛化这一当前落地瓶颈，对研究者理解对齐范式演进、对开发者构建可迁移 Agent 系统均具有参考价值，同时也为评估 Agent 能力提供了新的思考框架。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-17T17:25:11Z",
+  "collected_at": "2026-11-17T17:31:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 泛化的关键不在于拟合特定任务分布，而在于对齐目标本身是否具备跨环境可迁移性。",
+      "过度对齐会带来「对齐税」，削弱模型的探索性与通用推理能力，需要在安全与能力间重新权衡。",
+      "MiniMax M2 的实践表明，改进训练数据分布与对齐策略可提升未见工具与任务上的稳定性。",
+      "评估 Agent 应关注跨域迁移表现，而非单一基准上的分数提升。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

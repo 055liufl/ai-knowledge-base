@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261117-060",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论将 vLLM 从 V0 迁移到 V1 时在强化学习（RL）场景下遇到的正确性问题。vLLM 是当前主流的高吞吐 LLM 推理引擎，V1 架构重写了调度与执行核心以提升性能，但在 RL 训练流程中（如 PPO/GRPO 的 rollout 阶段），推理引擎的输出必须与训练时的策略分布严格一致，否则会引入偏差。文章强调在追求性能优化（corrections）之前，必须先保证推理结果的数值正确性（correctness），并分享了迁移过程中发现的偏差来源与验证方法。对于使用 vLLM 做 RLHF/RLVR 训练的团队，这是一份重要的工程实践参考，提醒性能升级不能以牺牲训练信号的正确性为代价。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "RLHF"
+  ],
+  "author": null,
+  "published_at": "2026-11-17T17:25:11Z",
+  "collected_at": "2026-11-17T17:29:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练中，推理引擎的输出分布必须与训练策略严格一致，性能优化前应先验证数值正确性",
+      "vLLM V0 到 V1 的架构重写可能引入 rollout 阶段的细微偏差，需要系统性验证",
+      "该实践对使用 vLLM 进行 RLHF/RLVR 训练的团队具有直接参考价值"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

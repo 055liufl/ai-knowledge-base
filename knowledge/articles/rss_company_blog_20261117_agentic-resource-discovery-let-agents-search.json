@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261117-049",
+  "title": "Agentic Resource Discovery: Let agents search",
+  "source_url": "https://huggingface.co/blog/agentic-resource-discovery-launch",
+  "source_platform": "rss_company_blog",
+  "summary": "Hugging Face 发布的 Agentic Resource Discovery 是一项让 AI Agent 能够主动搜索和发现外部资源（如模型、数据集、工具、文档等）的能力与配套方案。其核心思路是：不再让 Agent 仅依赖预置的静态工具列表或人工编排的调用链，而是赋予其“搜索”这一基础动作，使其在运行时根据任务目标自主检索 Hugging Face Hub 上的资源，并决定使用哪些资源来完成任务。该方案通常以 MCP（Model Context Protocol）服务器或工具接口的形式暴露搜索能力，让 Claude、Cursor 等支持 MCP 的客户端或自建 Agent 框架直接接入。值得关注的原因在于：一是它把“资源发现”从开发者的手工工作转变为 Agent 的运行时能力，显著提升了 Agent 的自主性与可扩展性；二是它依托 Hugging Face 庞大的模型与数据集生态，为 Agent 提供了持续更新、近乎无限的工具池；三是它顺应了 Agent 从“固定工具调用”走向“动态工具发现”的行业趋势，为构建更通用、更少人工维护的智能体系统提供了可落地的参考实现。",
+  "tags": [
+    "Agent",
+    "MCP",
+    "Tool Use",
+    "Hugging Face"
+  ],
+  "author": null,
+  "published_at": "2026-11-17T17:25:11Z",
+  "collected_at": "2026-11-17T17:28:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "让 Agent 在运行时自主搜索和发现资源，替代人工预置工具列表，是提升 Agent 通用性的关键一步。",
+      "基于 MCP 协议暴露搜索能力，可无缝接入 Claude、Cursor 等主流客户端，降低集成成本。",
+      "依托 Hugging Face Hub 的模型与数据集生态，Agent 可获得持续更新、规模庞大的可用工具池。",
+      "该方向标志着 Agent 从静态工具调用向动态工具发现的演进，对构建低维护成本的智能体系统具有参考价值。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}
