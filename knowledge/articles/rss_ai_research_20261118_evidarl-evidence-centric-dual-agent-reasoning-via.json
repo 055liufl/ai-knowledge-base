@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-052",
+  "title": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+  "source_url": "https://arxiv.org/abs/2611.22310",
+  "source_platform": "rss_ai_research",
+  "summary": "EviDARL 提出了一种面向多表问答（Multi-Table QA）的证据中心双智能体框架 EviDA，包含证据构建智能体与推理回答智能体，并通过交替强化学习（Alternating Reinforcement Learning）进行训练。现有基于 LLM 的表格推理研究多集中于单表场景，而多表问答需要跨复杂表关系进行多跳推理，且证据分散于长上下文中，往往缺乏可验证的中间推理轨迹。EviDA 通过将证据构建与推理回答解耦为两个协作智能体，显式地构造可追溯的证据链，再基于证据完成答案生成，从而提升推理过程的可解释性与可靠性。该工作值得关注之处在于：它将多智能体协作与强化学习结合，针对多表问答中证据分散、推理链不可验证的核心痛点提出系统性方案，为复杂结构化数据推理提供了新的建模范式，对表格问答、多跳推理及可解释 AI 研究方向具有参考价值。",
+  "tags": [
+    "Multi-Table QA",
+    "Multi-Agent",
+    "Reinforcement Learning",
+    "Table Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:02:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将多表问答拆解为证据构建与推理回答两个协作智能体，显式构造可追溯的证据链，缓解长上下文证据分散问题",
+      "采用交替强化学习训练双智能体，使证据构建与推理过程相互促进，弥补缺乏可验证中间轨迹的缺陷",
+      "针对多表场景的多跳推理需求，强调证据中心（evidence-centric）的建模范式，提升推理可解释性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-114",
+  "title": "Cancellation-Free Constrained SquareCB for Safe Controller Selection",
+  "source_url": "https://arxiv.org/abs/2611.21880",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究约束上下文赌博机问题，学习者在每轮从K个动作中选择一个，目标是在保持期望成本低于预算的同时最小化损失。现有方法通过在线回归的归约，利用从过去约束残差中学到的拉格朗日乘子对成本加权，导致某些轮次的松弛可以抵消其他轮次的违规。作者提出一种无取消（cancellation-free）的约束SquareCB算法，对权重进行修正（rectified weight），避免不同轮次间成本违规的相互抵消。该工作为安全控制器选择等需要严格约束满足的场景提供了更可靠的在线学习框架，在理论保证和实际安全性方面具有改进意义，值得关注约束强化学习与在线决策的研究者和开发者阅读。",
+  "tags": [
+    "Contextual Bandits",
+    "Constrained Optimization",
+    "Safe RL",
+    "Online Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有拉格朗日乘子加权方法允许轮次间成本违规相互抵消，无法保证每轮约束满足",
+      "提出无取消的修正权重SquareCB算法，避免松弛与违规的跨轮抵消",
+      "适用于安全控制器选择等对约束满足要求严格的在线决策场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

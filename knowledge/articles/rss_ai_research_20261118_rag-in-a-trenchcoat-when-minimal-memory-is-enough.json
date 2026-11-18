@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-034",
+  "title": "RAG in a Trenchcoat: When Minimal Memory Is Enough for Agentic Systems, and When It Isn't",
+  "source_url": "https://arxiv.org/abs/2611.22179",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 BRIDGE——一个刻意保持极简的 RAG 记忆系统，用于 agentic 场景。当前 agentic memory 研究不断叠加抽取、超替（supersession）、反思、图合成等复杂原语，但作者在测试的记忆基准上发现这些原语几乎都无法收回其成本。BRIDGE 仅由链式观察笔记、BM25 与余弦混合检索、按时间顺序渲染三部分组成，在 bootstrap 置信区间内与更复杂系统达到持平效果。该工作值得关注，因为它对 agent 记忆领域日益复杂的架构堆叠提出实证质疑，提示在多数场景下最小化记忆可能已足够，有助于降低系统复杂度与工程成本，并为何时才真正需要复杂记忆机制划出边界。",
+  "tags": [
+    "RAG",
+    "Agent Memory",
+    "Retrieval",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:01:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "抽取、超替、反思、图合成等复杂记忆原语在测试基准上难以收回成本",
+      "链式观察笔记 + BM25/余弦混合检索 + 时间顺序渲染的极简方案即可达到与复杂系统统计持平的性能",
+      "该结果对 agent 记忆架构的复杂度堆叠提出实证质疑，提示应按场景判断是否需要复杂记忆"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

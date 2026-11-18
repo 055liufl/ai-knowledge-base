@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-127",
+  "title": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
+  "source_url": "https://arxiv.org/abs/2611.22009",
+  "source_platform": "rss_ai_research",
+  "summary": "DiagTrace 是一个面向临床决策的交互式基准测试，旨在弥补现有医学 LLM 评测范式的关键缺陷。当前主流医学问答与诊断推理基准通常一次性提供全部患者信息，仅评估最终诊断或推理依据，这与真实临床诊断过程严重脱节——医生需要在信息不完整的情况下，通过逐步问诊、检查与检验主动获取证据，动态缩小鉴别诊断范围。DiagTrace 提出以交互方式模拟这一过程，要求模型在每一轮主动选择获取哪些信息，并基于逐步累积的证据做出判断，从而更真实地衡量模型的临床决策能力。该工作属于评测方法学层面的创新，对医学 AI 的可信评估具有重要意义：它把评测重点从“知识记忆与静态推理”转向“信息获取策略与不确定性管理”，有望揭示现有模型在主动问诊、检查选择与成本控制方面的短板。对于从事医疗 LLM 研发、临床决策支持系统设计以及 AI 安全性评估的研究者和开发者而言，该基准提供了更贴近部署场景的衡量工具，也为后续训练具备交互诊断能力的智能体指明了方向。",
+  "tags": [
+    "Medical LLM",
+    "Benchmark",
+    "Clinical Decision Making",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有医学 LLM 基准一次性给出全部患者信息，忽略了真实诊断中逐步获取证据的核心过程",
+      "DiagTrace 通过交互式评测考察模型主动选择检查与问诊策略的能力，而非仅评估最终诊断准确率",
+      "该基准将评测重心从静态知识问答转向信息获取与不确定性管理，更贴近临床部署场景",
+      "对医疗 AI 智能体的训练与可信评估具有方法学参考价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

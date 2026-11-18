@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-131",
+  "title": "Weight-Space Programming Doesn't Need Transformers",
+  "source_url": "https://arxiv.org/abs/2611.22055",
+  "source_platform": "rss_ai_research",
+  "summary": "本文探讨了在权重空间编程（weight-space programming）范式下，是否仍需要Transformer架构。传统上，Transformer因其在梯度下降训练中的良好表现和GPU上的高效运行而被广泛采用。但在权重空间编程中，大型语言模型（LLM）直接手写目标权重，无需基于梯度的训练，因此上述优势不再适用。作者在仅提供少量指导、十个标注示例和一个沙箱环境（主要针对多项选择题）的条件下，让三个前沿LLM尝试直接编写权重。该研究挑战了主流架构选择的默认假设，探索了LLM作为权重生成器的可能性，对理解模型架构与训练范式的耦合关系具有启发意义，也为无需训练的网络构建提供了新思路。",
+  "tags": [
+    "LLM",
+    "Transformer",
+    "权重空间编程",
+    "架构设计"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Transformer的流行源于其与梯度下降和GPU的适配性，而非架构本身的绝对优越性。",
+      "权重空间编程绕过了梯度训练，使得传统架构选择的理由不再成立。",
+      "前沿LLM在少量示例和沙箱环境下能够直接编写权重，展示了无需训练构建网络的潜力。",
+      "该研究促使我们重新思考模型架构与训练范式之间的耦合关系。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

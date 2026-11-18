@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-111",
+  "title": "The Hidden Cost of MoE Diffusion Decoding: Profiling and Fixing the Sampler",
+  "source_url": "https://arxiv.org/abs/2611.21852",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对掩码扩散语言模型（dLLM）的解码过程进行性能剖析，发现了一个容易被忽视的隐藏开销：在26B参数的扩散混合专家（MoE）模型于带宽受限的边缘加速器（NVIDIA GB10）上进行单用户解码时，经过权重量化后，对完整画布×词表logits张量执行的逐token采样与停止流水线（即采样器）成为显著瓶颈。研究指出，扩散解码每步需对整个token画布去噪，导致采样器在每次前向传播中重复处理大规模logits，其成本在量化后反而凸显。论文通过profiling定位问题，并提出针对采样器的修复优化方案，以降低解码延迟。该工作值得关注，因为它揭示了MoE扩散模型部署中常被忽略的系统级开销，为边缘设备上的高效推理提供了实用改进方向。",
+  "tags": [
+    "Diffusion LLM",
+    "MoE",
+    "Inference Optimization",
+    "Profiling"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "扩散语言模型解码时，逐token采样与停止流水线需处理整个画布×词表的logits张量，在权重量化后成为带宽受限边缘设备上的主要瓶颈。",
+      "该隐藏开销在26B MoE扩散模型的单用户解码中尤为明显，常规优化（如量化）可能反而使其占比上升。",
+      "通过系统级profiling定位采样器瓶颈，并针对性地修复，可有效降低扩散解码延迟。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

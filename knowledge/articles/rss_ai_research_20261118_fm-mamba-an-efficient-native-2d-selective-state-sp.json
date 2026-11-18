@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-132",
+  "title": "FM-Mamba: An Efficient Native 2D Selective State Space Model with Stability-Aware Discretization",
+  "source_url": "https://arxiv.org/abs/2611.22061",
+  "source_platform": "rss_ai_research",
+  "summary": "FM-Mamba 提出了一种原生二维选择性状态空间模型，旨在解决现有 Mamba 方法处理图像等二维特征时的缺陷。现有方法要么将特征图展平为一维序列并融合多次扫描，破坏了空间邻接性且成倍增加计算量；要么直接在二维网格上递归，但使用固定的、与输入无关的缩放因子，并且仅聚合单条反对角线上的前驱，导致离散步长不受二维稳定性理论约束。FM-Mamba 通过引入稳定性感知的离散化机制，在二维网格上实现原生递归，既保留了空间邻接结构，又避免了多次扫描带来的计算开销。该工作值得关注，因为它为状态空间模型在视觉任务中的高效应用提供了新思路，有望在保持计算效率的同时提升二维特征建模能力，对基于 Mamba 的视觉模型研究具有推动作用。",
+  "tags": [
+    "Mamba",
+    "State Space Model",
+    "Computer Vision",
+    "Efficient Architecture"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:06:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Mamba 视觉方法通过展平或固定缩放递归处理二维特征，破坏了空间结构或缺乏稳定性理论支撑。",
+      "FM-Mamba 提出原生二维选择性状态空间模型，在二维网格上直接递归并引入稳定性感知离散化。",
+      "该方法有望在保持计算效率的同时，更有效地建模图像等二维数据的空间邻接关系。"
+    ],
+    "tech_category": "model",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-051",
+  "title": "Efficient Wide-Beam Generative Retrieval with Model-Native Trie Decoding and Shared-Context Attention",
+  "source_url": "https://arxiv.org/abs/2611.22309",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Trie-Head，一种用于生成式检索（Generative Retrieval, GR）的模型原生输出接口，旨在解决宽束搜索（wide-beam search）下的两个服务成本问题：一是词汇表级别的评分张量大部分被丢弃，二是对相同提示的重复注意力计算。Trie-Head 将标识符前缀树（trie）存储为经过验证的 GPU 张量，从而在模型内部直接进行 trie 约束解码，避免使用 Python 自定义 logit 处理器带来的开销。该方法通过共享上下文注意力（Shared-Context Attention）减少重复计算，提升宽束生成式检索的推理效率。该工作关注生成式检索在实际部署中的效率瓶颈，对搜索、推荐等需要大规模候选生成的场景具有实用价值，属于模型推理优化与检索系统交叉方向的技术贡献。",
+  "tags": [
+    "Generative Retrieval",
+    "Beam Search",
+    "Inference Optimization",
+    "Trie Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:02:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "宽束生成式检索的主要服务成本来自词汇表级评分张量的浪费和重复的提示注意力计算。",
+      "将 trie 存储为 GPU 张量并作为模型原生输出接口，可避免 Python 自定义 logit 处理器的开销。",
+      "共享上下文注意力机制能减少宽束搜索中对相同提示的重复注意力计算。",
+      "该方法面向生成式检索的实际部署效率，对搜索和推荐系统的大规模候选生成有实用意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

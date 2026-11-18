@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-049",
+  "title": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+  "source_url": "https://arxiv.org/abs/2611.22301",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，蒙特卡洛树搜索（MCTS）在提升大语言模型（LLM）推理能力时效果有限，其瓶颈在于MCTS的计数机制：标准UCT算法为文本分支独立分配访问计数，导致同一推理策略的不同表述被重复探索，浪费搜索预算。作者通过理论分析揭示了这一计数偏差，并提出学习探索计数的方法，使MCTS能更有效地识别并复用推理策略。该工作为LLM推理的搜索算法优化提供了新视角，有望提升推理效率与效果，对研究者和开发者均有参考价值。",
+  "tags": [
+    "MCTS",
+    "LLM",
+    "Reasoning",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:02:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MCTS在LLM推理中效果受限的关键瓶颈是计数机制：标准UCT对文本分支独立计数，导致同一推理策略的不同表述被重复探索。",
+      "理论分析表明，这种计数偏差会浪费搜索预算，降低MCTS的效率。",
+      "提出学习探索计数的方法，使MCTS能更有效地识别和复用推理策略，提升搜索效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

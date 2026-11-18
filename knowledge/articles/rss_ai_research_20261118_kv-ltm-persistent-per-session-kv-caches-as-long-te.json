@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-012",
+  "title": "KV-LTM: Persistent Per-Session KV Caches as Long-Term Memory for Personal Assistants",
+  "source_url": "https://arxiv.org/abs/2611.21998",
+  "source_platform": "rss_ai_research",
+  "summary": "KV-LTM 是一篇关于个人助理长期记忆架构的 arXiv 论文。作者观察到，现有个人助理虽然积累数月对话历史，但长期记忆栈在问题与证据之间引入了推导或选择环节，导致信息损失。在 LongMemEval 上的系统级对比显示，两个商业助理的得分显著低于同一模型离线读取完整历史的表现，暗示写入与读取之间存在内容丢失。为此，论文提出 KV-LTM：一种记忆层级，同时存储每个会话的原始文本及其 KV cache，使模型能够持久化地复用会话级 KV 缓存作为长期记忆，从而绕过传统检索或摘要式记忆带来的信息损耗。该工作值得关注，因为它直接针对个人助理长期记忆的核心瓶颈——记忆保真度，并提出以 KV cache 作为持久化记忆载体的系统级方案，对构建高保真、低损耗的个性化 AI 助理具有实践参考价值，也呼应了当前 LLM 应用中上下文管理与记忆分层的研究热点。",
+  "tags": [
+    "KV Cache",
+    "Long-Term Memory",
+    "Personal Assistant",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:00:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有长期记忆栈在问题与证据之间引入推导或选择环节，造成写入到读取之间的内容损失",
+      "LongMemEval 上商业助理得分显著低于同模型离线读取完整历史，佐证记忆保真度问题",
+      "提出存储每会话原始文本及其 KV cache 的记忆层级，以持久化 KV 缓存作为长期记忆载体",
+      "该方案绕过检索/摘要式记忆的信息损耗，为高保真个性化助理提供系统级思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

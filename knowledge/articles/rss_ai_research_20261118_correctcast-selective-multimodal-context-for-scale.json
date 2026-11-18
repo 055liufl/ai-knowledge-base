@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-033",
+  "title": "CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting",
+  "source_url": "https://arxiv.org/abs/2611.22178",
+  "source_platform": "rss_ai_research",
+  "summary": "CorrectCast 提出了一种解耦的残差校正框架，用于降水临近预报（precipitation nowcasting）的后处理。现有临近预报模型在强度、位置和空间结构上存在误差，而通过重新训练骨干网络来修正这些误差计算成本高昂，且需要针对特定架构进行修改。CorrectCast 的核心思路是保持基础预报模型冻结，在其输出的预报结果之上进行残差校正，从而避免昂贵的重训练。该方法引入了选择性多模态上下文（selective multimodal context）和尺度感知（scale-aware）机制，使校正模块能够根据不同的空间尺度自适应地利用多模态信息来精修预报结果。这一工作的价值在于：它提供了一种模型无关、即插即用的后处理方案，可以叠加在任意已有的临近预报系统之上，显著降低改进预报质量的工程成本，对气象预报业务落地和时空预测研究都具有实用意义。",
+  "tags": [
+    "precipitation nowcasting",
+    "residual correction",
+    "multimodal",
+    "spatiotemporal forecasting"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:01:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过冻结基础预报模型并叠加残差校正模块，避免了昂贵的重训练和架构改动，实现模型无关的即插即用改进。",
+      "引入选择性多模态上下文与尺度感知机制，使校正能够针对强度、位置和空间结构等不同误差类型自适应调整。",
+      "该框架可作为通用后处理层叠加到现有临近预报系统上，降低业务部署中提升预报质量的成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

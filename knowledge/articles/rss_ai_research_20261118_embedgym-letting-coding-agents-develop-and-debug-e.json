@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-108",
+  "title": "EmbedGym: Letting Coding Agents Develop and Debug Embedded Firmware Without Physical Hardware",
+  "source_url": "https://arxiv.org/abs/2611.21845",
+  "source_platform": "rss_ai_research",
+  "summary": "EmbedGym 是一篇来自 arXiv 的跨领域研究论文，提出了一种让编码智能体（Coding Agents）在无物理硬件条件下开发与调试嵌入式固件的训练/评测环境。该研究的核心洞察是：现代编码智能体在通用软件基准上表现优异，是因为它们能在闭环中运行代码和单元测试；但嵌入式固件开发打破了这一闭环——程序即使编译通过，仍可能因引脚极性、总线协议、时序或网络等硬件相关问题在真实设备上失败，而仅靠文本终端的智能体无法观测这些问题。现有嵌入式编码智能体要么跳过硬件执行，要么只能驱动仅支持 GPIO 的模拟器，能力受限。EmbedGym 通过构建更完整的硬件仿真环境，使智能体能够获得类似真实硬件的反馈信号，从而形成开发-调试闭环。该工作值得关注，因为它将智能体能力评估从纯软件领域拓展到嵌入式系统这一高门槛场景，有望降低固件开发对物理硬件的依赖，并为嵌入式领域的 AI 辅助开发建立可复现的基准。",
+  "tags": [
+    "Coding Agent",
+    "Embedded Systems",
+    "Simulation",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "嵌入式固件开发打破了编码智能体依赖的\"运行-测试\"闭环，编译通过不等于硬件可用",
+      "硬件相关缺陷（引脚极性、总线协议、时序、网络）需要仿真环境提供可观测反馈",
+      "现有嵌入式智能体受限于跳过硬件执行或仅支持 GPIO 的简单模拟器",
+      "EmbedGym 为无物理硬件的固件开发调试提供了更完整的闭环训练与评测环境"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

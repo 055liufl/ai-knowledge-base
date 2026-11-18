@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-115",
+  "title": "Domain-Tuned Diffusion Super-Resolution for 4K Facial Asset Maps",
+  "source_url": "https://arxiv.org/abs/2611.21890",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对影视级面部资产制作中生成式管线仅输出1K反照率与位移贴图、而特写镜头需要4K贴图的问题，提出了一种领域调优的扩散超分辨率方法。作者指出，直接套用摄影图像超分并不合适：面部UV贴图具有领域特定统计特性，位移贴图是标量高度场，其误差会直接扭曲几何形状。为此，他们构建了面向面部资产的扩散上采样器，实现从1024到4096的4倍超分辨率。该工作值得关注，因为它将扩散模型应用于专业图形资产管线，兼顾了UV域统计与几何保真度，有望提升影视级面部资产的生产效率与质量。",
+  "tags": [
+    "Diffusion",
+    "Super-Resolution",
+    "Facial Assets",
+    "Graphics"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "面部UV贴图具有领域特定统计特性，通用摄影超分方法效果不佳，需要领域调优。",
+      "位移贴图是标量高度场，超分误差会直接导致几何扭曲，因此对保真度要求更高。",
+      "扩散模型可用于4倍面部资产超分（1K到4K），服务于影视级特写渲染。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-094",
+  "title": "Watermark Evidence under Open-Weight LLM Modification: Exact Bounds for Low-Rank Output Watermarks",
+  "source_url": "https://arxiv.org/abs/2611.21702",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究开放权重语言模型在被修改后，水印验证器（OpenStamp 风格）所依赖的证据如何变化。作者将权重修改建模为下一 token logits 上的残差，并在每个共享前缀处推导出有限词表下期望对数似然证据的精确下界，重点针对低秩输出水印给出精确界。该工作值得关注，因为开放权重模型可被下游用户微调或修改，而水印验证仍以原始基座和标记模型为参照，水印证据的可靠性直接关系到模型溯源与版权保护能否成立。论文提供了理论上的精确边界分析，有助于理解水印在模型被修改后的鲁棒性极限，对水印方案设计与安全评估具有参考价值。",
+  "tags": [
+    "LLM",
+    "Watermark",
+    "Model Security",
+    "Open-Weight Models"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将开放权重模型的修改表示为下一 token logits 上的残差，从而形式化分析水印证据的变化",
+      "针对低秩输出水印，在有限词表下推导出期望对数似然证据的精确下界",
+      "揭示了模型修改后 OpenStamp 类验证器可用证据的理论边界，为水印鲁棒性评估提供依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-099",
+  "title": "LLMs as Validators for Cross-Chain Bridges: Evaluating Source-Level and Transaction-Level Attack Detection on Solana",
+  "source_url": "https://arxiv.org/abs/2611.21777",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究利用大语言模型（LLM）作为跨链桥安全验证器，重点评估其在 Solana 区块链上检测源码级和交易级攻击的能力。跨链桥因链上程序漏洞已造成大量资产损失，在 Solana 上，即使底层区块链正常运行，缺失的验证检查也可能导致漏洞被利用。研究团队实现了一个原生 Rust 的 lock-and-mint 跨链桥，并系统评估 LLM 能否从源代码或交易记录中诊断出具体缺陷，而不仅仅是发出警报。该工作值得关注，因为它将 LLM 的应用从通用代码生成拓展到高风险的区块链安全审计领域，探索了 LLM 在真实攻击场景下的诊断深度与可靠性，为智能合约安全工具链提供了新思路，同时也揭示了 LLM 作为安全验证器的能力边界与潜在风险。",
+  "tags": [
+    "LLM",
+    "Blockchain",
+    "Security",
+    "Solana"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 可被用于跨链桥智能合约的漏洞诊断，而不仅是简单的告警触发",
+      "研究区分了源码级与交易级两种攻击检测维度，评估 LLM 在不同信息粒度下的诊断能力",
+      "在 Solana 生态中，缺失验证检查是跨链桥的主要风险来源，即使区块链本身运行正常",
+      "通过自建 Rust lock-and-mint 桥进行实证评估，为 LLM 安全审计能力提供了可复现的测试基准"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

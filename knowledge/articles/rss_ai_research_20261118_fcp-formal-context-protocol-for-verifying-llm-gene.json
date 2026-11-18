@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-089",
+  "title": "FCP: Formal Context Protocol for Verifying LLM-Generated Artifacts",
+  "source_url": "https://arxiv.org/abs/2611.21679",
+  "source_platform": "rss_ai_research",
+  "summary": "FCP（形式化上下文协议）针对LLM生成工件时的一个关键弱点：当模型同时生成工件和用于检查它的测试时，测试通过并不能提供强证据，因为模型可能误解需求，从而生成有缺陷的工件以及一个恰好接受该缺陷的检查。FCP通过将“一致性”（工件是否满足需求的某种形式化解读）与“保真度”（工件是否忠实于原始请求）分离来解决这一问题。一致性由模型检查器和SMT求解器判定，而保真度则通过将形式化解读与原始请求进行对比来验证。该协议为AI生成代码、规格说明等工件的可信验证提供了新范式，尤其适用于安全关键或高可靠性场景，值得关注。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "SMT",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM同时生成工件和测试时，测试通过是弱证据，因为模型可能误解需求并生成自洽但错误的检查。",
+      "FCP将一致性（工件满足形式化需求）与保真度（形式化需求忠实于原始请求）分离验证。",
+      "一致性验证可借助模型检查器和SMT求解器等成熟形式化方法自动完成。",
+      "该协议为AI生成工件的可信验证提供了新思路，尤其适用于安全关键领域。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-043",
+  "title": "Towards Physics-Constrained Rectified Flow for Climate Downscaling: What Projections Can Certify?",
+  "source_url": "https://arxiv.org/abs/2611.22283",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为物理约束整流流（PC-RF）的条件流匹配降尺度方法，用于气候统计降尺度。传统扩散模型和流匹配生成器虽能生成高分辨率细节，但可能破坏粗分辨率输入中的守恒定律（如质量守恒、非负降水等）。PC-RF 在训练阶段引入针对风场散度、负降水和质量漂移的惩罚项，并在采样后通过投影步骤消除残余的物理不一致性。该工作值得关注，因为它试图解决生成式气候降尺度中物理一致性与生成质量之间的核心矛盾，并探讨了投影后能提供何种可认证的预测保证，对气候风险评估和极端事件模拟具有实际意义。",
+  "tags": [
+    "Climate Downscaling",
+    "Flow Matching",
+    "Physics-Constrained ML",
+    "Generative Models"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:01:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式降尺度模型需显式引入物理约束（如质量守恒、非负性）以避免产生物理上不可行的场。",
+      "PC-RF 在训练中通过惩罚项约束风场散度、负降水和质量漂移，并在采样后投影以强制物理一致性。",
+      "投影步骤虽能修正输出，但需评估其对预测可认证性的影响，即物理约束是否真正保证了降尺度结果的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

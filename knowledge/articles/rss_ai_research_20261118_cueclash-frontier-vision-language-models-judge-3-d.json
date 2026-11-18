@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-141",
+  "title": "CueClash: Frontier Vision-Language Models Judge 3-D Relations Close to the Picture Plane",
+  "source_url": "https://arxiv.org/abs/2611.22180",
+  "source_platform": "rss_ai_research",
+  "summary": "CueClash 是一项针对前沿视觉语言模型（VLM）在 3D 关系判断中是否依赖 2D 图像线索而非真实 3D 布局的评估研究。作者构建了渲染场景数据集，其中每个关系的 2D 线索在恰好一半的陈述中是正确的，从而将“图片平面线索”与“地面布局”分离。通过计算“捷径差距”（线索正确时的准确率减去线索错误时的准确率），研究发现 Claude Opus 5.5、GPT-5.5 和 Gemini 3.6 Flash 在低推理努力下均表现出 +18 到 +37 个百分点的显著差距，表明这些模型严重依赖 2D 捷径而非真正的 3D 理解。该工作揭示了当前 VLM 在空间推理上的根本性缺陷，对具身智能、机器人导航和 3D 场景理解等应用具有重要警示意义，值得研究者关注。",
+  "tags": [
+    "VLM",
+    "3D 空间推理",
+    "评估基准",
+    "捷径学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:06:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "前沿 VLM 在 3D 关系判断中显著依赖 2D 图像平面线索，而非真实 3D 布局，存在 +18 到 +37 个百分点的捷径差距。",
+      "CueClash 通过控制 2D 线索正确率恰好为 50% 的渲染场景，有效分离了图片线索与地面布局两种判断依据。",
+      "低推理努力下模型更易走捷径，提示推理增强可能部分缓解但未必根除该问题。",
+      "该缺陷对依赖精确 3D 空间理解的具身智能和机器人应用构成直接风险。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-093",
+  "title": "Stop Early, Stay Simple: Evidence Acquisition for Power System Fault and Attack Diagnosis",
+  "source_url": "https://arxiv.org/abs/2611.21695",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 ActiGrid，一个用于网络物理电力系统故障与攻击诊断的主动证据获取基准框架。传统诊断模型通常检查所有遥测源，但部分事件仅需单一源即可明确，另一些则需多源融合。ActiGrid 将容忍缺失模态的分类器与双深度 Q 网络（DDQN）配对，学习何时停止收集证据并做出诊断。核心问题是：学习到的证据选择策略在何种情况下值得其额外复杂度。该工作为主动感知与诊断策略的权衡提供了系统化评估平台，对电力系统安全、多模态学习与强化学习交叉领域具有参考价值。",
+  "tags": [
+    "强化学习",
+    "多模态学习",
+    "电力系统",
+    "故障诊断",
+    "基准测试"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并非所有诊断事件都需要全量遥测数据，主动选择证据可降低采集成本",
+      "学习型证据获取策略的收益需与模型复杂度进行权衡评估",
+      "容忍缺失模态的分类器与 DDQN 结合，可实现动态停止证据收集",
+      "ActiGrid 为电力系统故障与攻击诊断提供了可复现的基准框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

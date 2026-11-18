@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-047",
+  "title": "Streaming On-Policy Distillation: Decoupling Three Clocks for Stage-Wise Supervision Consumption",
+  "source_url": "https://arxiv.org/abs/2611.22298",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出流式在线策略蒸馏（Streaming OPD），通过解耦三个时钟——响应生成、监督信号传递和参数更新——来提升在线策略蒸馏的效率。传统 OPD 要求三者同步，导致监督信号必须等待完整响应生成后才能使用，造成计算资源闲置和训练延迟。流式 OPD 允许响应在生成过程中持续交付新片段，每次交付保留完整因果前缀，但损失仅在新位置上计算；同时引入消费协议来组织监督预算、位置选择等。该工作为在线策略蒸馏提供了更细粒度的训练范式，有望显著降低训练延迟并提升样本利用率，对 LLM 对齐与蒸馏实践具有重要参考价值。",
+  "tags": [
+    "On-Policy Distillation",
+    "Streaming",
+    "LLM Training",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:02:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏中响应生成、监督传递和参数更新可以解耦为三个独立时钟，无需严格同步。",
+      "流式交付新生成片段并仅在新位置计算损失，可保留完整因果前缀的同时降低计算冗余。",
+      "消费协议用于组织监督预算和位置选择，是实现流式 OPD 的关键机制。",
+      "该范式有望减少训练延迟并提升监督信号的利用效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

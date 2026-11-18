@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-140",
+  "title": "What RL on Expert-Built Tasks Teaches Nemotron 3.5 Super",
+  "source_url": "https://arxiv.org/abs/2611.22161",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对 NVIDIA 的 Nemotron 3.5 Super 模型（总参数 120B，激活参数 12B）进行了强化学习后训练研究。研究采用五个专家构建的任务数据集，分别进行独立的 RL 训练：真实世界软件工程、复杂约束满足、长程工具使用、专业图表理解以及企业文档推理。每次训练均使用全新的 rank-32 LoRA 适配器，采用 CISPO 算法在 Tinker 平台上进行，且不包含监督学习阶段。每个适配器均与基础模型进行对比评估。该工作值得关注，因为它系统性地探索了在单一大型 MoE 模型上，针对多种高难度专业任务进行纯 RL 微调的效果与可行性，为 RL 在复杂现实任务中的迁移性和专业化能力提供了实证分析，对模型后训练策略和 Agent 能力构建具有参考价值。",
+  "tags": [
+    "RL",
+    "LLM",
+    "LoRA",
+    "Agent",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:06:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在五个专家构建的高难度任务上分别进行纯 RL 后训练，无需监督阶段，验证了 RL 直接适配专业任务的可行性。",
+      "采用 rank-32 LoRA 适配器和 CISPO 算法，在 120B 总参数、12B 激活参数的 MoE 模型上实现高效训练。",
+      "每个任务独立训练适配器并与基础模型对比，为 RL 在不同领域的能力增益提供了细粒度实证。",
+      "覆盖软件工程、工具使用、图表理解等长程复杂任务，对构建实用 Agent 能力具有直接指导意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

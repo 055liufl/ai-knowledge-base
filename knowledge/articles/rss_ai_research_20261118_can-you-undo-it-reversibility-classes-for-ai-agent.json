@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-019",
+  "title": "Can You Undo It? Reversibility Classes for AI Agent Actions",
+  "source_url": "https://arxiv.org/abs/2611.22075",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为“可逆性类别”的框架，用于评估AI代理执行工具调用后能否撤销其影响。当前，工具使用型AI代理可以修改文件、数据库、访问权限和公开信息，但拥有调用工具的权限并不意味着错误可以被撤销。该研究定义了一个五级可逆性词汇表，包含对参数敏感的规则、保守默认值以及明确的前状态捕获契约。作者实现并维护了一个包含536个工具、覆盖20个MCP服务器的注册表，并进行了738项规则案例检查。这项工作值得关注，因为它首次系统性地将“可逆性”作为AI代理安全与治理的核心维度，为开发者提供了可操作的分类标准，有助于降低代理误操作带来的风险，推动更负责任的代理部署。",
+  "tags": [
+    "AI Agent",
+    "Safety",
+    "Tool Use",
+    "MCP",
+    "Governance"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:00:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具调用权限不等于错误可撤销，可逆性应作为独立的安全属性进行评估。",
+      "五级可逆性分类与参数敏感规则能更精细地刻画不同操作的风险等级。",
+      "前状态捕获契约是实现可逆性的关键工程实践，需在工具设计阶段纳入。",
+      "覆盖536个工具和20个MCP服务器的注册表为实际部署提供了可参考的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

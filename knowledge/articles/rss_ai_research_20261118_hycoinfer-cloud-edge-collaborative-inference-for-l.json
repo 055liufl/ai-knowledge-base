@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-134",
+  "title": "HyCoInfer: Cloud-Edge Collaborative Inference for Large Language Models on Heterogeneous GPU-FPGA Architectures",
+  "source_url": "https://arxiv.org/abs/2611.22086",
+  "source_platform": "rss_ai_research",
+  "summary": "HyCoInfer 提出了一种面向大语言模型（LLM）的云边协同推理系统，针对异构 GPU-FPGA 架构进行优化。该研究指出，当前 LLM 服务主要依赖云端 GPU，但自回归解码阶段受内存带宽限制，导致 GPU 算术单元利用率不足；而边缘 FPGA 虽在解码效率上有优势，却难以独立支撑高并发服务负载。HyCoInfer 的核心设计是将预填充（prefill）阶段分配给云端 GPU，并将解码（decoding）阶段分布式地部署在云端 GPU 和边缘 FPGA 上，从而充分利用两类硬件的互补特性。该系统旨在解决 LLM 推理中计算与内存瓶颈的错配问题，提升整体吞吐与能效。其创新点在于异构资源协同调度与任务划分策略，为云边协同推理提供了新思路。该工作值得关注，因为它探索了非传统硬件（FPGA）在 LLM 服务中的实际角色，并给出了系统级解决方案，对降低推理成本、提升边缘智能部署可行性具有潜在影响。",
+  "tags": [
+    "LLM",
+    "异构计算",
+    "云边协同",
+    "FPGA",
+    "推理系统"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:06:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 自回归解码是内存密集型任务，云端 GPU 的算力在解码阶段常被浪费，而边缘 FPGA 在解码效率上具有优势。",
+      "将预填充阶段放在云端 GPU、解码阶段分布式部署在云端 GPU 与边缘 FPGA 上，可以发挥异构硬件的互补性。",
+      "云边协同推理需要解决任务划分、资源调度与通信开销等系统级挑战，HyCoInfer 提供了可行的架构方案。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

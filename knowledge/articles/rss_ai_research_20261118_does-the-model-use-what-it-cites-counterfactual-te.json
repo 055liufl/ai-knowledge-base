@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-119",
+  "title": "Does the Model Use What It Cites? Counterfactual Tests of Grounded Reasoning Chains in Small Video-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.21940",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究小型视频-语言模型在生成有依据的推理链时，其引用的帧片段和边界框是否真正影响最终答案。作者提出一种干预测试方法：将模型自己引用的区域涂黑，并与在同一帧上涂黑同等大小的其他区域进行对比，通过比较正确答案翻转的比例来量化“引用差距”（cite gap）。该研究揭示了模型可能引用与答案无关的区域，即“引用”与“依赖”之间的脱节，对可解释性和可信AI评估具有重要意义。方法简洁且无需额外标注，为验证多模态推理链的忠实性提供了可操作的诊断工具。",
+  "tags": [
+    "Video-Language Models",
+    "Grounded Reasoning",
+    "Interpretability",
+    "Counterfactual Testing"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型引用的区域不一定真正影响其答案，引用与依赖之间存在可量化的差距。",
+      "通过涂黑引用区域并与同尺寸随机区域对比的干预方法，可有效检验推理链的忠实性。",
+      "该测试无需人工标注，适用于评估小型视频-语言模型的可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

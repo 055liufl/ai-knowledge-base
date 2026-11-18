@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-110",
+  "title": "AR-WAM: efficient streaming world-action modeling for autonomous driving",
+  "source_url": "https://arxiv.org/abs/2611.21851",
+  "source_platform": "rss_ai_research",
+  "summary": "AR-WAM 是一篇面向自动驾驶的 arXiv 论文，提出了一种高效的流式世界-动作模型（world-action model）。该工作针对视频基础模型在自动驾驶场景中的核心痛点：虽然视频基础模型能够预测交通演化，但重复的历史编码和迭代式视频生成导致计算成本过高，难以满足驾驶任务对实时性的要求。AR-WAM 的核心思路是将自回归时序建模与单次前向的未来条件化（single-pass future conditioning）相结合，并采用因果视频骨干网络（causal video backbone），从而在保持对未来场景预测能力的同时显著降低推理开销，实现流式、低延迟的世界建模与动作输出。该研究值得关注的原因在于：它试图弥合视频生成式世界模型与自动驾驶实时决策之间的效率鸿沟，若方法有效，可为端到端自动驾驶提供一种兼顾预测性与实用性的新范式，对世界模型在机器人、具身智能等实时场景的落地也具有参考价值。不过摘要信息有限，具体性能提升幅度、与现有端到端方案的对比以及实车验证情况仍需阅读全文确认。",
+  "tags": [
+    "Autonomous Driving",
+    "World Model",
+    "Video Generation",
+    "Autoregressive Model",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视频基础模型用于自动驾驶的主要瓶颈是重复历史编码与迭代生成带来的高推理成本，而非预测能力本身",
+      "因果视频骨干配合单次前向未来条件化，是兼顾时序预测与流式低延迟推理的关键设计",
+      "世界-动作联合建模有望将场景预测与驾驶决策统一到同一框架中",
+      "该类方法的价值最终取决于实时性与闭环驾驶性能之间的权衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

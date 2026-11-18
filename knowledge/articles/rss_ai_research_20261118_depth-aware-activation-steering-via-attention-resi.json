@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-087",
+  "title": "Depth-Aware Activation Steering via Attention Residuals",
+  "source_url": "https://arxiv.org/abs/2611.21655",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出一种无需训练的深度感知激活引导（depth-aware activation steering）流程，用于调控大语言模型行为。现有激活引导方法通常只在单一层注入向量，缺乏跨层传播机制和内部验证手段。作者将两项近期技术结合：Attention Residuals（AttnRes）提供可学习的跨层通路，Jacobian-lens（J-space）实现概念读出，从而构建轻量级管线，并在 Qwen3-0.6B 等两个小型开源模型上验证。该工作值得关注，因为它把激活引导从单层静态干预推进到跨层动态传播，并引入内部概念验证，有望提升引导的鲁棒性与可解释性，同时保持训练-free 的低成本优势，对模型行为对齐与可控生成研究具有参考价值。",
+  "tags": [
+    "Activation Steering",
+    "LLM Interpretability",
+    "Attention Residuals"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:03:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有激活引导多局限于单层注入，缺乏深度感知的跨层传播与内部验证机制",
+      "AttnRes 的可学习跨层通路与 Jacobian-lens 概念读出结合，可实现轻量级深度感知引导",
+      "方法保持 training-free 特性，降低行为调控成本",
+      "目前仅在小型开源模型上验证，泛化性有待进一步评估"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

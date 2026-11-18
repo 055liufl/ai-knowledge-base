@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261118-006",
+  "title": "DNeo: Your Parallel Draft Model Needs Better Target Feature Encoding",
+  "source_url": "https://arxiv.org/abs/2611.21925",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对推测扩散解码（speculative-diffusion decoding）中的并行草稿模型提出改进。推测扩散解码使用小型并行草稿模型在一次前向传播中生成多个草稿token，再由大型目标模型并行验证，当多个草稿token同时通过验证时可加速推理。近期并行草稿架构（DFlash、DSpark）通过特征编码机制，以目标模型计算的丰富特征为条件来提升草稿质量。论文标题指出这些并行草稿模型需要更好的目标特征编码，暗示现有方法在特征编码方面存在不足，并提出改进方案。该工作值得关注，因为它直接针对大模型推理加速中的关键瓶颈——草稿质量与验证通过率，对提升推测解码的实际加速比具有实用价值。",
+  "tags": [
+    "Speculative Decoding",
+    "Inference Acceleration",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:00:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行草稿模型的质量高度依赖目标模型特征编码的有效性",
+      "现有DFlash、DSpark等架构的特征编码机制仍有改进空间",
+      "更好的目标特征编码可提升多token同时通过验证的概率，从而加速推理"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

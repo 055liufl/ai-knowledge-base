@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-029",
+  "title": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+  "source_url": "https://arxiv.org/abs/2611.22169",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，工具增强的医疗智能体默认将工具返回的任何内容视为证据，这一做法代价高昂。医疗工具会静默失败，而冻结的推理器无法忽略进入其上下文的信息，因此许多原本能正确回答的病例在加入工具输出后被翻转成错误答案，作者称之为“证据劫持”。论文用 V-information 解释该现象：推理器失去了忽略的选项，工具输出可能污染推理过程。该研究值得关注，因为它揭示了工具增强智能体在医疗等高风险领域的一个关键脆弱性，并提出了证据治理的必要性，对构建更可靠的医疗 AI 系统具有重要指导意义。",
+  "tags": [
+    "Medical Agent",
+    "Tool-Augmented LLM",
+    "Evidence Governance",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:01:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具增强的医疗智能体默认信任工具输出，但工具会静默失败，导致证据劫持现象。",
+      "冻结的推理器无法忽略上下文中的信息，因此错误工具输出会翻转原本正确的答案。",
+      "V-information 理论解释了推理器失去忽略选项的机制，为证据治理提供了理论基础。",
+      "需要为工具增强智能体设计证据治理机制，以过滤或加权工具输出，避免证据劫持。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-092",
+  "title": "TIBECG: Temporal Information Bottleneck for Lead-Specific Demographic Privacy in ECG Waveform Release",
+  "source_url": "https://arxiv.org/abs/2611.21694",
+  "source_platform": "rss_ai_research",
+  "summary": "TIBECG 提出了一种基于时间信息瓶颈（Temporal Information Bottleneck）的架构，用于在发布心电图（ECG）波形时保护人口统计学隐私（如年龄和性别）。该方法针对医院十二导联记录中提取的单个导联进行处理，通过一个仅含 230 万参数的处理器动态调整潜在表示的长度，同时保持相同的九分一致性目标，且无需在保护器拟合中使用年龄或性别标签。在 6,386 条记录上的评估表明，该方法能够在保留诊断相关信息的同时，有效抑制人口统计学信息的泄露。该工作值得关注，因为它首次将时间信息瓶颈应用于 ECG 波形发布中的隐私保护，为医疗数据共享中的隐私-效用权衡提供了一种轻量级、无需敏感标签的解决方案，对远程医疗和健康数据合规发布具有实际意义。",
+  "tags": [
+    "ECG",
+    "Privacy",
+    "Information Bottleneck",
+    "Healthcare"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:04:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "时间信息瓶颈可有效抑制 ECG 波形中的人口统计学信息泄露，同时保持诊断相关特征。",
+      "该方法无需在保护器拟合阶段使用年龄或性别标签，降低了隐私保护对敏感标注的依赖。",
+      "仅 230 万参数的轻量级处理器适合实际部署，在隐私-效用权衡中具有竞争力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

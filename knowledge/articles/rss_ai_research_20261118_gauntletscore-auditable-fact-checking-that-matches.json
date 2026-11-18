@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-129",
+  "title": "GauntletScore: Auditable Fact-Checking That Matches the Best Published Checkers on LLM-AggreFact",
+  "source_url": "https://arxiv.org/abs/2611.22027",
+  "source_platform": "rss_ai_research",
+  "summary": "GauntletScore 是一种面向 LLM 生成文本的可审计事实核查引擎，旨在验证生成句子是否被源文档支持。与当前主流做法——依赖单一强模型作为检查器——不同，GauntletScore 采用多模型协作架构：它向来自不同提供商的独立“读者”模型提出类型化问题，并将每个回答作为一条测量记录写入证据账本（evidence ledger），再通过少量规则和阈值进行聚合判定。这些规则和阈值在 LLM-AggreFact 基准的开发集上设定。作者声称该方法在 LLM-AggreFact 上达到了与已发表最佳检查器相当的性能，同时具备可审计性——每个判定都能追溯到具体证据条目和规则，而非黑箱输出。该工作值得关注的原因在于：事实核查是 AI 文本安全部署的关键环节，而现有单模型方案缺乏透明度与可解释性；GauntletScore 通过证据账本机制在保持竞争力的同时提供了审计路径，对需要合规与可追溯性的生产场景具有实用价值，也为多模型集成用于验证任务提供了新思路。",
+  "tags": [
+    "Fact-Checking",
+    "LLM",
+    "Hallucination Detection",
+    "Multi-Agent",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "用多提供商独立读者模型替代单一检查器，通过类型化提问收集证据，提升事实核查的可审计性",
+      "证据账本（evidence ledger）记录每条测量，使最终判定可追溯到具体证据与规则，而非黑箱输出",
+      "仅用少量规则和阈值在开发集上调参，即在 LLM-AggreFact 上达到与已发表最佳单模型检查器相当的性能",
+      "为需要合规与可解释性的 AI 文本验证生产场景提供了可落地的工程范式"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

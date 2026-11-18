@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-037",
+  "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+  "source_url": "https://arxiv.org/abs/2611.22238",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究LLM编码代理在重复发送对话历史时的上下文管理成本问题，特别关注前缀缓存（prefix caching）机制下的成本核算。作者在SWE-bench Verified、SWE-bench和Loc-Bench三个基准上，对开源模型进行了超过20,000次运行实验，分别统计未缓存输入、缓存输入和输出token的成本。研究发现，添加有用代码可能减少搜索开销，移除旧工具输出可能缩短后续提示，但这些操作是否真正降低任务解决成本需要精细测量。该工作将上下文管理从直觉优化提升为可量化的成本问题，对构建高效编码代理具有重要实践意义，尤其在前缀缓存广泛应用的背景下，为开发者提供了成本感知的上下文策略设计依据。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Prefix Caching",
+    "Code Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:01:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "前缀缓存机制下，上下文增删的成本需分别核算未缓存输入、缓存输入和输出token，简单直觉可能误导优化方向。",
+      "添加有用代码与移除旧工具输出对任务总成本的影响并非单调，需在真实基准上大规模测量验证。",
+      "超过20,000次运行的大规模实验表明，上下文管理策略应基于成本感知而非仅凭经验规则。",
+      "该研究为编码代理的上下文工程提供了可量化的评估框架，有助于设计更经济的代理工作流。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

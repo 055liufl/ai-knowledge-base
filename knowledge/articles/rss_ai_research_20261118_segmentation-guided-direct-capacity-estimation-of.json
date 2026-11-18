@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-133",
+  "title": "Segmentation-Guided Direct Capacity Estimation of Rooftop Photovoltaics from Aerial Imagery",
+  "source_url": "https://arxiv.org/abs/2611.22076",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Direct Head 的分割引导架构，用于从航拍图像直接估计屋顶光伏（PV）的装机容量。传统方法通常先分割光伏阵列，再将掩码转换为物理面积，最后乘以功率密度来估算容量，这种流程将容量预测与掩码面积强耦合，容易引入误差。Direct Head 在保留 U-Net 分割分支的基础上，增加了一个直接预测容量的回归头，从而绕过面积转换环节，实现端到端的容量估计。该工作面向配电规划场景，解决并网记录不完整或空间聚合导致的光伏清单缺失问题，对电网规划、分布式能源管理和遥感应用具有实用价值。其创新点在于将分割作为辅助任务而非唯一中间表示，减少了误差累积，提升了容量估计的鲁棒性。",
+  "tags": [
+    "遥感图像",
+    "语义分割",
+    "光伏容量估计",
+    "U-Net"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:06:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统方法通过分割掩码面积乘以功率密度估算容量，存在误差累积和强耦合问题",
+      "Direct Head 在 U-Net 分割基础上增加直接容量回归头，实现端到端估计",
+      "分割作为辅助任务可提供空间引导，但容量预测不再依赖掩码面积转换",
+      "该方法面向配电规划中并网记录不完整或空间聚合的实际痛点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

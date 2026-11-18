@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-116",
+  "title": "A Temporal Algebraic Framework for Data Stream Evaluation Under Delayed Labels and Distribution Shifts",
+  "source_url": "https://arxiv.org/abs/2611.21914",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对数据流场景中标签延迟到达、标签仅部分可得、类别流行度漂移以及稀有类别在短窗口内消失等现实问题，提出了一个时间代数框架（Temporal Algebraic Framework）。传统评估方法在这些条件下会将决策边界的退化与类别流行度的变化相混淆，并且在标签延迟或由模型选择性标注时产生偏差。作者扩展了一个代数框架，该框架能够从单一混淆矩阵中同时获得池化（micro）和逐类（macro）度量，并将其推广到数据流场景，通过对计数进行加权来处理时间维度上的标签延迟与分布漂移问题。该工作值得关注，因为流式机器学习在推荐、风控、监控等在线系统中广泛部署，而延迟标签与分布漂移下的可靠评估长期缺乏严格的理论工具；该框架有望为在线模型监控与评估提供更无偏、可解释的数学基础，对研究者和工程实践者均具参考价值。",
+  "tags": [
+    "Data Stream",
+    "Evaluation",
+    "Distribution Shift",
+    "Delayed Labels"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统流式评估会将决策边界退化与类别流行度变化相混淆，导致误判模型性能",
+      "标签延迟或模型选择性标注会引入评估偏差，需要加权计数机制来校正",
+      "单一混淆矩阵可同时导出 micro 与 macro 度量，扩展后适用于时间维度的流式场景",
+      "该框架为在线系统的模型监控提供了更无偏的评估理论基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

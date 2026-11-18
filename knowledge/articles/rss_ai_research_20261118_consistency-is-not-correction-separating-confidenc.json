@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261118-085",
+  "title": "Consistency Is Not Correction: Separating Confidence, Abstention, and Recovery in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.21651",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体中的置信度信号提出关键区分：排序能力（discrimination）、选择性预测（selective prediction）与纠正效用（correction utility）是三个独立且不可互推的性质。作者对纠正效用给出精确分解——门控恢复减去门控伤害，并据此界定其边界。这一工作揭示了当前智能体控制器（如重采样、升级至更大模型或弃权）常被混淆的假设：高置信度排序并不保证弃权能提升整体表现，也不保证能真正纠正错误。论文为设计更可靠的智能体决策机制提供了理论框架，对构建可校准、可弃权、可恢复的LLM系统具有重要指导意义，尤其适用于需要高可靠性的应用场景。",
+  "tags": [
+    "LLM Agent",
+    "Confidence Calibration",
+    "Abstention",
+    "Selective Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:03:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "置信度信号的排序能力、选择性预测能力与纠正效用是三个独立性质，不能相互推导。",
+      "纠正效用可精确分解为门控恢复减去门控伤害，为评估控制器提供量化边界。",
+      "重采样、模型升级或弃权等策略需分别验证其纠正效用，而非仅依赖置信度排序。",
+      "该分解为设计可校准、可弃权、可恢复的LLM智能体控制器提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

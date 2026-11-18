@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261118-123",
+  "title": "Weight-space programming for tractor guidance controller: large language models natively write neural network weights that steer a real tractor",
+  "source_url": "https://arxiv.org/abs/2611.21958",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究提出并验证了「权重空间编程」（Weight-space Programming）这一新范式：大语言模型在自然语言规格的引导下，直接读写神经网络的权重，全程不依赖优化器或梯度下降。作者将其应用于真实拖拉机的自动导航任务，网络仅有 253 个参数，负责沿直线与圆弧路径转向；当机器硬件发生变化（如转向执行器变慢）时，模型需相应调整权重。实验使用 GPT-6 Astra 与 Claude Fable 等模型完成权重生成与适配。该工作的价值在于：一是把 LLM 的能力从「生成文本/代码」扩展到「直接生成模型参数」，绕开传统训练流程，为小规模控制网络的快速定制与在线适配提供了新路径；二是选择真实物理系统（拖拉机）而非仿真基准，使结论更具工程说服力；三是参数规模极小、任务边界清晰，便于分析 LLM 是否真正理解控制语义而非记忆模式。对具身智能、边缘控制与 LLM 工具化方向均有参考意义，但其可扩展性与安全性仍需进一步验证。",
+  "tags": [
+    "LLM",
+    "Weight-space Programming",
+    "Embodied AI",
+    "Control",
+    "Autonomous Driving"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 可绕过梯度下降直接生成神经网络权重，为小规模控制网络提供免训练的快速定制与硬件变更适配能力",
+      "在真实拖拉机导航任务上验证，说明该方法已从概念走向物理系统落地，而非仅停留在仿真基准",
+      "253 参数的极小网络降低了任务复杂度，但也使方法向大规模模型的可扩展性存疑",
+      "硬件变化（如转向执行器变慢）下的权重重写能力，是该方法相对传统再训练流程的核心优势"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

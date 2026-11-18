@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-062",
+  "title": "PACD: Provenance-Aware Consensus Decoding for Mitigating Cross-Modal Hallucinations in Omnimodal Large Language Models",
+  "source_url": "https://arxiv.org/abs/2611.22456",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出PACD（Provenance-Aware Consensus Decoding），一种无需训练的推理时解码方法，用于缓解全模态大语言模型（Omni-LLMs）中的跨模态幻觉问题。全模态模型整合音频、视频和文本进行多模态推理，但某一模态可能不当影响另一模态的预测，产生跨模态幻觉。现有免训练解码方法通过模态扰动或相关性加权来缓解，但在融合过程中受无关模态线索干扰，且难以检测共享信息。PACD引入来源感知机制，追踪各模态对最终预测的贡献，并通过共识解码策略筛选可靠模态信号，从而抑制跨模态干扰。该方法无需额外训练，可直接应用于现有全模态模型，对提升多模态推理可靠性具有实用价值，尤其适用于音视频理解、多模态问答等场景。",
+  "tags": [
+    "Omni-LLM",
+    "Hallucination",
+    "Decoding",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:02:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨模态幻觉源于融合过程中无关模态线索的干扰，现有免训练解码方法难以有效检测共享信息",
+      "PACD通过来源感知追踪各模态贡献，并利用共识解码筛选可靠信号，无需额外训练",
+      "该方法为全模态大模型的推理时可靠性提升提供了新思路，可推广至音视频多模态任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

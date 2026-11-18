@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-128",
+  "title": "Computed Permutation Trellis Coding: Near-Optimal Quantization from Two Multiplications and a 64-Byte Table",
+  "source_url": "https://arxiv.org/abs/2611.22019",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Computed Permutation Trellis Coding (CPTC) 的低比特量化格式，专门针对“一次写入、多次读取”的张量场景。传统的逐值量化格式（如 INT4 和 FP4）由于独立舍入，会浪费大量比特，无法达到信息论理想极限。网格编码通过联合编码值来弥补这一损失，但现有解码器要么需要大型查找表才能达到最佳质量，要么使用哈希计算值从而限制了灵活性。CPTC 的创新在于仅用两次乘法和一个 64 字节的查找表就能实现接近最优的量化效果，大幅降低了存储和计算开销。这项工作值得关注，因为它为模型压缩和高效推理提供了一种极具实用性的新方案，有望在边缘设备和内存受限场景中显著提升低比特量化的精度与效率。",
+  "tags": [
+    "量化",
+    "模型压缩",
+    "网格编码",
+    "高效推理"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:05:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "CPTC 通过联合编码张量值，克服了 INT4/FP4 等独立量化格式的信息论效率损失。",
+      "仅需两次乘法和一个 64 字节的查找表即可实现接近最优的解码，避免了大型查找表或复杂哈希计算。",
+      "该格式特别适合一次写入多次读取的张量，为低比特量化提供了高精度与低开销的平衡方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

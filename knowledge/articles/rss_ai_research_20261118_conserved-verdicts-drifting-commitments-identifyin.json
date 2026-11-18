@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261118-008",
+  "title": "Conserved Verdicts, Drifting Commitments: Identifying Harmful Overthinking",
+  "source_url": "https://arxiv.org/abs/2611.21946",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究推理模型在已得出正确答案后继续思考反而丢失答案的现象，称为有害过度思考。作者指出，判断是否停止推理需在推理链同一点比较两个概率：模型若此刻停止所给答案正确的概率（承诺）与最终答案正确的概率（裁决）。现有最终正确性探针仅估计裁决，无法完成此比较，因为裁决是对最终答案的预测，而承诺反映当前状态。论文揭示裁决与承诺可能背离，导致模型在正确后继续推理而犯错。该研究为推理模型停止策略提供新视角，对提升推理效率与可靠性有重要意义，值得关注。",
+  "tags": [
+    "LLM",
+    "Reasoning",
+    "Overthinking",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-18T16:58:21Z",
+  "collected_at": "2026-11-18T17:00:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理模型在得出正确答案后继续思考可能丢失答案，需在推理链同一点比较承诺与裁决两个概率来决定是否停止。",
+      "最终正确性探针仅估计裁决，无法完成停止决策所需的比较，因为裁决是对最终答案的预测而非当前承诺。",
+      "裁决与承诺可能发生漂移，导致模型在正确后继续推理而犯错，这为设计更优的停止策略提供了依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
