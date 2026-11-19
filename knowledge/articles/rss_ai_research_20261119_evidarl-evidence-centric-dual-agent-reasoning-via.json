@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-052",
+  "title": "EviDARL: Evidence-Centric Dual-Agent Reasoning via Alternating Reinforcement Learning for Multi-Table Question Answering",
+  "source_url": "https://arxiv.org/abs/2611.22310",
+  "source_platform": "rss_ai_research",
+  "summary": "EviDARL 提出了一种面向多表问答（Multi-Table QA）的证据中心双智能体框架，旨在解决现有 LLM 表格推理研究多局限于单表场景、难以处理跨表多跳推理和长上下文证据分散的问题。该框架包含两个智能体：证据构建智能体负责从多表中定位并组织相关证据，推理与回答智能体则基于构建的证据进行多跳推理并生成答案。两个智能体通过交替强化学习（Alternating Reinforcement Learning）进行联合优化，从而在缺乏可验证中间推理轨迹的情况下提升整体推理能力。该工作值得关注，因为多表问答是企业数据分析、金融报表理解等真实场景中的核心需求，而现有方法在复杂表间关系建模和证据追踪方面存在明显不足。EviDARL 通过显式的证据构建步骤和双智能体协同机制，为提升 LLM 在结构化数据上的可解释性和推理可靠性提供了新思路，对表格推理、多智能体系统和强化学习在 LLM 中的应用等方向具有参考价值。",
+  "tags": [
+    "Multi-Table QA",
+    "Agent",
+    "Reinforcement Learning",
+    "Table Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多表问答需要跨表多跳推理和长上下文证据整合，现有单表方法难以直接迁移。",
+      "双智能体分工（证据构建与推理回答）可显式分离证据定位与推理过程，提升可解释性。",
+      "交替强化学习为缺乏中间监督信号的多智能体协同训练提供了一种可行方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

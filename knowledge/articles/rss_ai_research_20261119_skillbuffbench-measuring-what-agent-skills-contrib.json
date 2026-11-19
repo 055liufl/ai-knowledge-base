@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-014",
+  "title": "SkillBuffBench: Measuring What Agent Skills Contribute across Harnesses, Models, Skill Access Modes and Memory",
+  "source_url": "https://arxiv.org/abs/2611.22017",
+  "source_platform": "rss_ai_research",
+  "summary": "SkillBuffBench 是一个针对 Agent Skills 的系统性评测基准，旨在量化这类「按需加载的程序性知识文件包」在真实部署条件下的实际贡献。现有证据几乎都来自理想化设置：任务对应的 Skill 被人工挑选、Agent 从空白状态起步；而实际部署中，Agent 需要从任意已安装的 Skill 库中自行选择，并且往往携带记忆与历史上下文。该工作跨越不同 harness、不同模型、不同 Skill 访问模式以及有无记忆等维度进行测量，填补了「Skill 到底带来多少增益」这一关键空白。对于正在构建或评估编码 Agent 的团队而言，它提供了可复用的评测框架与更贴近生产的结论，有助于判断是否值得投入维护 Skill 库、如何设计 Skill 检索与加载机制，以及记忆与 Skill 之间是协同还是干扰。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Coding Agent",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent Skills 的收益证据多来自「人工指定正确 Skill + 空白上下文」的理想设置，与真实部署条件存在系统性偏差。",
+      "评测需同时控制 harness、模型、Skill 访问模式和记忆四个维度，才能分离出 Skill 本身的净贡献。",
+      "Agent 从任意已安装 Skill 库中自主选择 Skill 的能力，是决定 Skill 实际价值的关键变量。",
+      "记忆与 Skill 的交互可能放大或抵消 Skill 带来的增益，是部署评估中不可忽略的因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-121",
+  "title": "Consistency Is Not Correction: Separating Confidence, Abstention, and Recovery in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.21651",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体中的置信度信号提出了一个关键区分：一致性（consistency）并不等同于纠正（correction）。作者指出，关于置信度信号的三个常见主张——区分能力（对答案排序）、选择性预测（支持弃权）和纠正效用（改善答案）——彼此并不蕴含。论文对纠正效用进行了精确分解，将其拆解为“门控恢复”减去“门控伤害”，并给出了理论边界。这一工作揭示了当前智能体控制器（如重采样、升级到更大模型或弃权）设计中的一个根本性混淆：高一致性信号可能只反映模型自我一致，而非真正提升答案质量。该研究为构建更可靠的LLM智能体控制策略提供了理论基础，值得关注，因为它挑战了将一致性直接作为纠正依据的常见实践，并提出了更精细的评估框架。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Confidence",
+    "Abstention",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:12:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "一致性信号（如答案重采样的一致性）不能直接等同于纠正效用，高一致性可能只是模型自我重复而非真正改善答案。",
+      "置信度信号的区分能力、选择性预测和纠正效用是三个独立属性，不能相互推导。",
+      "纠正效用可精确分解为门控恢复减去门控伤害，为设计更安全的智能体控制器提供了理论边界。",
+      "当前基于置信度进行重采样、模型升级或弃权的策略需要重新审视其理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

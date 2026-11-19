@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-124",
+  "title": "Token Commitment as a Control Surface for Steering Masked Diffusion Generation",
+  "source_url": "https://arxiv.org/abs/2611.21669",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出将掩码扩散模型中的“token 承诺”机制作为推理时控制生成过程的新接口。传统方法通过修改激活值、logits 或去噪轨迹来引导生成，而将承诺策略视为固定的解码细节。作者将其拆分为两个独立决策：承诺哪些 token 以及承诺多少 token，并系统研究这两个维度对生成质量与可控性的影响。这项工作为扩散语言模型提供了一种轻量级、无需重新训练的控制手段，有望提升生成的可控性和效率，对研究者和开发者均有参考价值。",
+  "tags": [
+    "Diffusion Models",
+    "Controllable Generation",
+    "Inference-time Steering",
+    "Masked Language Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:12:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Token 承诺策略是掩码扩散模型中一个被忽视但有效的控制面，可独立于激活和 logits 进行调节。",
+      "将承诺策略拆分为“承诺哪些 token”和“承诺多少 token”两个决策，为推理时控制提供了更细粒度的操作空间。",
+      "该方法无需额外训练即可引导生成，有望在保持生成质量的同时提升可控性和效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

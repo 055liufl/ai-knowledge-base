@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-135",
+  "title": "LLMs as Validators for Cross-Chain Bridges: Evaluating Source-Level and Transaction-Level Attack Detection on Solana",
+  "source_url": "https://arxiv.org/abs/2611.21777",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究利用大语言模型（LLM）作为跨链桥的安全验证器，重点评估其在Solana区块链上检测源代码级和交易级攻击的能力。作者实现了一个原生Rust的锁定-铸造（lock-and-mint）跨链桥，并系统测试LLM能否从源代码或交易记录中诊断出缺失的验证检查等漏洞，而不仅仅是发出警报。研究意义在于：跨链桥因链上程序漏洞已造成巨额资产损失，而Solana上即使底层区块链正常运行，缺失的验证检查也可能被利用。该工作填补了LLM在跨链桥安全审计中实际诊断能力评估的空白，为智能合约安全分析提供了新思路，对区块链安全研究者和开发者具有参考价值。",
+  "tags": [
+    "LLM",
+    "Blockchain",
+    "Security",
+    "Solana",
+    "Smart Contract"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:13:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM可从源代码和交易记录两个层面检测跨链桥漏洞，但诊断能力而非仅告警能力仍需系统评估",
+      "Solana上缺失验证检查是跨链桥被攻击的关键原因，即使底层区块链运行正常",
+      "通过实现原生Rust锁定-铸造桥进行实证测试，为LLM安全验证器提供了可复现的评估框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

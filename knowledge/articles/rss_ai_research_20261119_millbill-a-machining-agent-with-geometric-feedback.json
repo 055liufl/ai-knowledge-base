@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-071",
+  "title": "MillBill: A Machining Agent with Geometric Feedback",
+  "source_url": "https://arxiv.org/abs/2611.22565",
+  "source_platform": "rss_ai_research",
+  "summary": "MillBill 是一个面向机械加工领域的智能体系统，旨在将 CAD 模型自动转化为可执行的加工程序。传统方法依赖语言模型直接生成几何与刀路代码，导致数值执行成为模型任务的一部分，容易引入精度和可靠性问题。MillBill 的核心创新在于将加工决策与几何执行、验证分离：智能体负责工艺规划与决策，而几何计算和验证由专用模块完成。系统输入为边界表示（B-Rep）零件、毛坯和材料信息，通过本地部署的模型驱动整个流程。该工作值得关注，因为它展示了如何将 LLM 智能体与领域专用几何引擎结合，在需要高数值精度的制造场景中实现可靠自动化，为 AI 辅助制造提供了新范式。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "CAD/CAM",
+    "制造自动化"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将加工决策与几何执行分离，避免让语言模型直接承担数值计算任务，提升可靠性",
+      "智能体架构结合本地模型与几何验证模块，适用于对精度要求高的制造场景",
+      "为 LLM 在 CAD/CAM 领域的落地提供了可参考的系统设计模式"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

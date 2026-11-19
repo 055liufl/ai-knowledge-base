@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-023",
+  "title": "From Sorry to QED: Refining LLM Math Proofs via Angelic Execution",
+  "source_url": "https://arxiv.org/abs/2611.22103",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 MathEye 框架，旨在解决大语言模型生成的 Lean 数学证明脚本在复杂定理上频繁失败的问题。LLM 虽能生成具有高层结构的证明脚本，但常因遗漏边条件或误用引理导致证明器提前中止，丢弃原本可行的证明大纲。MathEye 通过“天使执行”（Angelic Execution）技术，将不完美的 LLM 生成脚本转化为完全验证的 Lean 证明。其核心思想是允许证明器在遇到错误时探索多种可能的修正路径，而非直接失败，从而保留并修复有潜力的证明结构。该工作值得关注，因为它显著提升了 LLM 在形式化数学中的实用性，降低了人工修复成本，并可能推动自动定理证明与 LLM 的深度融合。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Theorem Proving",
+    "Lean"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 生成的 Lean 证明脚本常因小错误而整体失败，但错误脚本中仍包含有价值的高层证明结构。",
+      "Angelic Execution 通过非确定性执行和回溯机制，系统性地探索修正路径，而非直接放弃失败脚本。",
+      "MathEye 框架将不完美脚本转化为完全验证的证明，显著提升 LLM 在形式化数学中的可用性。",
+      "该方法有望减少人工修复证明的负担，并促进 LLM 与交互式定理证明器的协同工作。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-037",
+  "title": "Context Has a Price: Adding and Removing Context for LLM Coding Agents under Prefix Caching",
+  "source_url": "https://arxiv.org/abs/2611.22238",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM编码代理在重复发送对话历史时的上下文管理成本问题，特别是在前缀缓存（Prefix Caching）机制下。作者在SWE-bench Verified、SWE-bench和Loc-Bench上对开源模型进行了超过20,000次运行，分别统计未缓存输入、缓存输入和输出token的成本。研究发现，添加有用代码或删除旧工具输出等上下文操作对任务总成本的影响并非直观：由于前缀缓存会大幅降低重复前缀的成本，盲目添加或删除上下文可能反而增加未缓存token的消耗，从而抵消收益。该工作将上下文管理视为一个可测量的成本优化问题，为编码代理的提示工程和系统设计提供了实证依据，值得关注因为它挑战了“更多上下文总是更好”的常见假设，并强调了在缓存感知下进行上下文取舍的重要性。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Context Management",
+    "Prefix Caching",
+    "SWE-bench"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "前缀缓存会显著改变上下文增删的成本权衡，未缓存token才是主要成本驱动因素。",
+      "添加有用代码或删除旧工具输出并不必然降低总成本，可能因破坏缓存前缀而增加开销。",
+      "在超过20,000次运行中，上下文管理策略需要针对缓存机制进行专门优化，而非直觉性操作。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

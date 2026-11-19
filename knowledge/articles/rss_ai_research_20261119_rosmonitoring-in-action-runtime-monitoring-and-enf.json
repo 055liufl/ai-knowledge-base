@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-059",
+  "title": "ROSMonitoring in Action: Runtime Monitoring and Enforcement for ROS 2 Actions",
+  "source_url": "https://arxiv.org/abs/2611.22407",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出将 ROSMonitoring 扩展至 ROS 2 Actions 的运行时监控与强制执行框架。ROS 2 中的导航、操作、巡检等长时任务通常以 Action 实现，其生命周期包含目标提交与接受、反馈、状态更新、结果获取和取消等结构化阶段，与 Topic 和 Service 有本质差异。现有 ROSMonitoring 仅支持 Topic 和 Service，无法重建 Action 生命周期或暴露 Action 级事件，导致这类关键长时任务缺乏运行时验证手段。本文的工作在于补足这一空白，使监控器能够感知 Action 各阶段状态并施加运行时约束（如安全属性违规时取消或干预目标）。该研究值得关注的原因在于：ROS 2 已成为机器人系统的主流中间件，而 Action 承载了最复杂、风险最高的任务逻辑；将形式化运行时验证引入 Action 层，有助于在部署阶段捕获时序与状态机层面的错误，提升机器人系统的安全性与可靠性。对从事机器人软件工程、安全关键系统验证的研究者和开发者具有直接参考价值。",
+  "tags": [
+    "ROS 2",
+    "Runtime Verification",
+    "Robotics",
+    "Formal Methods"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "ROS 2 Action 具有区别于 Topic/Service 的结构化生命周期，现有监控工具无法重建其状态机，形成监控盲区",
+      "将运行时监控与强制执行扩展到 Action 层，可在长时任务执行中实时检测并干预违规行为",
+      "该工作提升了安全关键机器人应用在部署阶段的可靠性与可验证性"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

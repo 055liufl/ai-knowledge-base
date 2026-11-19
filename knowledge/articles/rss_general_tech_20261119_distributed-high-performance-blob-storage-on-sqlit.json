@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261119-004",
+  "title": "Distributed, high-performance blob storage on SQLite",
+  "source_url": "https://zerodha.tech/blog/high-performance-distributed-blob-storage/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了 Zerodha 技术团队如何基于 SQLite 构建分布式、高性能的 blob 存储系统。SQLite 通常被视为轻量级嵌入式数据库，但通过巧妙的设计，作者将其扩展为支持分布式部署的 blob 存储方案，解决了传统对象存储（如 S3）在延迟和成本上的痛点。文章详细阐述了架构设计、数据分片、复制机制以及性能优化策略，并分享了在生产环境中的实践经验。该方案值得关注，因为它挑战了“SQLite 不适合分布式场景”的固有认知，为需要低延迟、高吞吐 blob 存储的团队提供了一种新颖且经济高效的替代方案，尤其适合中小规模或边缘计算场景。",
+  "tags": [
+    "SQLite",
+    "分布式存储",
+    "Blob存储",
+    "高性能"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:47Z",
+  "collected_at": "2026-11-19T17:06:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SQLite 通过合理的分片和复制策略可以构建分布式 blob 存储，突破其单机限制。",
+      "该方案在延迟和成本上优于传统对象存储，适合对性能敏感的应用场景。",
+      "生产实践表明，基于 SQLite 的存储系统在可靠性和可扩展性上能满足中等规模需求。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

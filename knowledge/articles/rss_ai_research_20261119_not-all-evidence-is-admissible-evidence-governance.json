@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-029",
+  "title": "Not All Evidence Is Admissible: Evidence Governance for Tool-Augmented Medical Agents",
+  "source_url": "https://arxiv.org/abs/2611.22169",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出工具增强型医疗智能体存在一个被忽视的严重问题：它们默认将工具返回的任何内容都视为有效证据，但医疗工具可能静默失败，而冻结的推理模型无法忽略已进入上下文的信息，导致原本能正确回答的病例在加入工具输出后反而被翻转成错误答案，作者将这一现象称为“证据劫持”（evidence hijacking）。论文用 V-information 理论解释该现象：推理器丧失了“忽略”这一选项，因此工具输出可以左右最终判断。为此作者提出“证据治理”（Evidence Governance）框架，主张并非所有证据都可被采纳，需要在证据进入推理上下文之前进行筛选与治理。该工作值得关注，因为它揭示了当前 Agent 工具调用范式中一个系统性风险——工具可靠性不足与推理器缺乏过滤能力叠加，会主动损害模型性能，这对医疗等高风险领域的 Agent 设计具有直接警示意义，也为工具增强推理的可信性研究提供了新的理论视角与改进方向。",
+  "tags": [
+    "Agent",
+    "Medical AI",
+    "Tool Use",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具增强型医疗智能体默认信任工具输出，但工具会静默失败，导致原本正确的回答被“证据劫持”翻转为错误",
+      "冻结的推理器无法忽略已进入上下文的信息，V-information 理论解释了工具输出为何能左右判断",
+      "并非所有证据都可采纳，需要在证据进入推理上下文前进行治理与筛选",
+      "该问题对医疗等高风险 Agent 应用具有系统性警示，工具可靠性需与推理器的过滤能力协同设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

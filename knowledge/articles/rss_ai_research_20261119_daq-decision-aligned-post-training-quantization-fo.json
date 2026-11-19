@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-076",
+  "title": "DAQ: Decision-Aligned Post-Training Quantization for Spiking Transformers",
+  "source_url": "https://arxiv.org/abs/2611.22611",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出决策对齐训练后量化（DAQ）方法，用于脉冲Transformer（Spiking Transformers）的压缩与加速。脉冲Transformer结合了注意力表示学习与稀疏脉冲通信，但其权重和膜变量仍带来显著的存储与计算开销。训练后量化（PTQ）是降低这些开销的实用手段，但在权重和膜量化下保持神经元发放行为仍具挑战。DAQ通过决策对齐策略，旨在解决量化过程中脉冲发放一致性问题，从而在低比特量化下维持模型性能。该工作为脉冲神经网络与Transformer结合的高效部署提供了新思路，对边缘计算和神经形态硬件应用具有潜在价值。",
+  "tags": [
+    "Spiking Neural Networks",
+    "Quantization",
+    "Transformer",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "脉冲Transformer的权重和膜变量量化需保持神经元发放行为一致，DAQ通过决策对齐解决此问题。",
+      "训练后量化（PTQ）为脉冲Transformer提供无需重训练的高效压缩途径。",
+      "该方法有望推动脉冲神经网络在资源受限硬件上的实际部署。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

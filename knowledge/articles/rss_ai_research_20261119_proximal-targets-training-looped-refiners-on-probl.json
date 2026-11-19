@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-082",
+  "title": "Proximal Targets: Training Looped Refiners on Problems with Many Correct Answers",
+  "source_url": "https://arxiv.org/abs/2611.22737",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对循环精炼器（如HRM和TRM）的训练目标问题展开研究。这类模型通过反复应用小型网络来改进草稿答案，并采用深度监督将每次迭代都训练向每个谜题存储的单一答案。作者证明，当谜题存在多个正确答案时，这种单一目标会设定一个模型容量无法消除的损失下限，且损失最小化的迭代会将多个答案混合成一个无效网格。为此，论文提出“近端目标”（proximal target）：将每次迭代训练向其自身输出最接近的正确答​​案。该方法有望提升循环精炼器在多解问题上的训练效果，避免无效混合，对改进迭代推理模型的监督策略具有理论价值和实践意义。",
+  "tags": [
+    "Looped Refiners",
+    "Deep Supervision",
+    "Training Objective",
+    "Multi-Answer Problems"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当谜题有多个正确答案时，深度监督使用单一存储答案会引入不可消除的损失下限。",
+      "损失最小化的迭代会将多个正确答案混合成一个无效网格。",
+      "近端目标通过将每次迭代训练向其自身输出最接近的正确答案来避免混合问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

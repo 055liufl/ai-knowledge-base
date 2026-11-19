@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-091",
+  "title": "Outcome-Balanced PPO and Policy-Induced Flow Rectification for Flow-Based VLA Policies",
+  "source_url": "https://arxiv.org/abs/2611.22878",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于流的视觉-语言-动作（VLA）策略的强化学习后训练问题，提出了两个关键挑战：策略更新会改变用于随机转移的分数近似所依赖的速度场几何结构，以及稀疏的多任务 rollout 会导致任务间和优势符号上的学习信号不均衡。为此，作者引入了 Outcome-Balanced PPO 和策略诱导的流整流方法。该工作值得关注，因为它解决了流匹配策略在 RL 微调中的稳定性与样本效率问题，对机器人操作等需要多任务泛化的 VLA 应用具有实际意义，并可能推动流式生成策略与强化学习结合的理论与工程进展。",
+  "tags": [
+    "VLA",
+    "Reinforcement Learning",
+    "Flow Matching",
+    "PPO",
+    "Robot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:11:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流式 VLA 策略的 RL 后训练中，策略更新会破坏速度场几何，影响随机转移的分数近似质量。",
+      "稀疏多任务 rollout 导致任务间与优势符号上的学习信号不均衡，需通过 Outcome-Balanced PPO 进行平衡。",
+      "策略诱导的流整流可缓解策略更新对速度场几何的扰动，提升训练稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

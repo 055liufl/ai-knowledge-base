@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-017",
+  "title": "A Hybrid Exact-Heuristic Solver for the Integrated Passenger and Parcel Transportation Problem",
+  "source_url": "https://arxiv.org/abs/2611.22043",
+  "source_platform": "rss_ai_research",
+  "summary": "本文介绍了作者参加SOICT 2026竞赛第二轮所提交的求解器，针对集成乘客与包裹运输问题（IPPT），该问题是一个带有时间窗、开放路线和异构出租车的选择性取送货路径问题。求解器是一个单文件、仅使用标准库的Python程序，结合了基于最晚到达松弛的常数时间插入测试、贪心插入、局部搜索以及自适应大邻域搜索（ALNS）等混合精确-启发式方法。该工作的价值在于：它针对一个具有现实复杂性的组合优化问题，提出了一种轻量级但高效的混合求解策略，无需依赖外部库即可运行，便于复现和部署。其常数时间插入测试和ALNS框架的设计对物流路径规划领域具有参考意义，尤其适合资源受限或需要快速原型验证的场景。尽管是竞赛提交方案，但其方法组合和工程实现思路对研究者和开发者均有启发。",
+  "tags": [
+    "组合优化",
+    "路径规划",
+    "启发式算法",
+    "ALNS",
+    "物流运输"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出基于最晚到达松弛的常数时间插入测试，显著提升插入操作的效率。",
+      "将贪心插入、局部搜索与自适应大邻域搜索（ALNS）结合，形成混合精确-启发式求解框架。",
+      "求解器为单文件、仅用Python标准库实现，具有高可复现性和轻量级部署优势。",
+      "针对集成乘客与包裹运输这一现实问题，方法对异构车队和时间窗约束具有适应性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

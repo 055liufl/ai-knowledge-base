@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-101",
+  "title": "FrameRouter: Frame Budget Routing for Long-Video Understanding on Video-MME-v2 and Beyond",
+  "source_url": "https://arxiv.org/abs/2611.23055",
+  "source_platform": "rss_ai_research",
+  "summary": "FrameRouter 针对长视频问答基准（如 Video-MME-v2）中统一帧预算评估方式与实际证据需求不匹配的问题展开研究。作者分析发现，不同问题子集偏好不同的固定帧预算策略，且统一增加帧数并不能可靠提升所有指标。基于此，论文提出固定均值帧预算路由方法，旨在根据问题动态分配帧预算，以更高效地利用计算资源并提升长视频理解性能。该工作值得关注，因为它挑战了当前长视频基准评测的默认假设，揭示了帧预算策略与问题类型之间的强相关性，为视频理解系统的评测与优化提供了新视角，并可能推动更自适应、更经济的视频大模型推理方案。",
+  "tags": [
+    "Video Understanding",
+    "Long-Video QA",
+    "Frame Budget",
+    "Benchmark",
+    "Adaptive Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:11:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一帧预算评估忽略了不同问题对证据需求的巨大差异，导致评测结果不能反映系统真实能力。",
+      "不同问题子集偏好不同的固定帧预算策略，说明帧预算选择应与问题类型自适应匹配。",
+      "单纯增加帧数并不能可靠提升所有指标，存在收益递减甚至负面效应。",
+      "固定均值帧预算路由为长视频理解提供了一种更高效、更自适应的推理与评测思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-057",
+  "title": "AutoE2E: Don't speak - Language free end-to-end autonomy A Real-Time Driving Model for L2++ ADAS and L4 Robotaxis",
+  "source_url": "https://arxiv.org/abs/2611.22374",
+  "source_platform": "rss_ai_research",
+  "summary": "AutoE2E 是 Autoware 基金会 Robotaxi 工作组开发的开源端到端驾驶模型，面向 L2++ ADAS 和 L4 Robotaxi 场景。该模型采用时序鸟瞰图（BEV）架构，融合多摄像头感知、高清地图信息和路线条件来预测未来车辆运动。具体实现上，它使用预训练的相机-BEV 主干网络、时序特征融合模块以及轻量级循环轨迹规划器，模型参数量约为 79.9M。该工作值得关注的原因在于：它完全绕过自然语言中间表示，直接实现从感知到规划的端到端驾驶，避免了语言模型带来的延迟和不确定性；同时作为开源项目，为自动驾驶研究社区提供了可复现的基线，有助于推动端到端自动驾驶技术的标准化和产业化落地。",
+  "tags": [
+    "自动驾驶",
+    "端到端模型",
+    "BEV感知",
+    "轨迹规划"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AutoE2E 采用无语言中间表示的纯端到端架构，直接由多摄像头 BEV 感知和地图信息生成轨迹，降低了系统延迟和语言歧义风险。",
+      "时序 BEV 架构结合预训练主干、时序融合与轻量循环规划器，在约 79.9M 参数下实现了 L2++ 到 L4 的通用驾驶预测能力。",
+      "作为 Autoware 基金会开源项目，该模型为端到端自动驾驶研究提供了可复现的基线，有利于社区协作和标准化评测。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

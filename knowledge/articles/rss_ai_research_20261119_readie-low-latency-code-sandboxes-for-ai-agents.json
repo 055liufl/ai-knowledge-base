@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-030",
+  "title": "Readie: Low-Latency Code Sandboxes for AI Agents",
+  "source_url": "https://arxiv.org/abs/2611.22171",
+  "source_platform": "rss_ai_research",
+  "summary": "Readie 是一篇关于 AI Agent 代码沙箱低延迟启动的 arXiv 论文。论文指出，AI Agent 通过迭代生成和执行代码来完成任务，为解耦 Agent 框架与代码执行，许多系统将执行卸载到专用代码沙箱。然而现有沙箱启动缓慢，无论是依赖自定义快照还是单一胖镜像，根本原因相同：难以构建紧凑且可共享的预热快照。Readie 针对这一瓶颈提出低延迟代码沙箱方案，旨在提升 Agent 迭代执行代码的效率。该工作值得关注，因为代码执行延迟直接影响 Agent 的响应速度和任务完成效率，是 Agent 基础设施的关键优化点，对构建高性能 Agent 系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "Code Sandbox",
+    "Infra",
+    "Low-Latency"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI Agent 迭代执行代码的模式使代码沙箱成为关键基础设施，启动延迟直接影响 Agent 效率",
+      "现有沙箱慢启动的根因是难以构建紧凑、可共享的预热快照，而非快照或镜像方案本身",
+      "低延迟沙箱设计需要解决快照紧凑性与预热共享性的矛盾"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

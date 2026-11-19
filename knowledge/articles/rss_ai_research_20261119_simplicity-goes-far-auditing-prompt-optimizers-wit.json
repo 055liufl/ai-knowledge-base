@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-074",
+  "title": "Simplicity Goes Far: Auditing Prompt Optimizers with Demonstration-Conditioned Prompt Search",
+  "source_url": "https://arxiv.org/abs/2611.22605",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对自动提示优化（Automatic Prompt Optimization）领域日益复杂化的方法提出质疑。作者指出，近期方法常叠加策略梯度更新、轨迹反思和进化搜索等机制，但它们都共享一个“生成-选择”（generate-and-select）步骤；若不对该步骤进行控制，报告的增益可能混淆了优化器机制与更大采样预算的贡献。为此，作者将该步骤单独隔离为“演示条件提示搜索”（Demonstration-Conditioned Prompt Search, DCPS），并将自动提示工程师（APE）的配方重新用于这一受控设定。该工作的价值在于提供了一种审计视角：通过剥离复杂机制、仅保留基础的生成-选择流程，可以更清晰地衡量各类提示优化器的真实收益来源，提醒研究社区在报告性能提升时需控制采样预算等混杂因素，对提示工程与LLM评测方法学具有方法论意义。",
+  "tags": [
+    "Prompt Optimization",
+    "LLM Evaluation",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有提示优化方法的性能增益可能部分来自更大的采样预算，而非优化器机制本身",
+      "将生成-选择步骤隔离为DCPS可提供受控的审计基线",
+      "复用APE配方作为简单基线，有助于揭示复杂方法的真实贡献",
+      "提示优化研究需更严格地控制混杂变量以提升结论可信度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

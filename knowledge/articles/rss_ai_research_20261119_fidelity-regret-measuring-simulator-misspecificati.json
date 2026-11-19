@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-040",
+  "title": "Fidelity Regret: Measuring Simulator Misspecification in Verifiable Design",
+  "source_url": "https://arxiv.org/abs/2611.22263",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出“保真度遗憾”（fidelity regret）这一新指标，用于量化在可验证设计（如基因电路设计）中，廉价模拟器因模型误设而导致的决策质量损失。研究指出，RLVF（可验证反馈强化学习）假设验证器能评估真正关心的量，但在基因电路设计中，拓扑验证器只能确认程序是计算目标函数的有效电路，而评估其物理性能必须依赖模拟器。作者在一个包含21,362种设计、覆盖5个实测门库和3种有机体的组合子空间上测量了保真度遗憾，即廉价模拟器选择设计时相对于真实性能的简单遗憾。该工作首次系统性地将模拟器误设问题形式化，并提供了量化框架，对依赖模拟器进行设计优化的领域（如合成生物学、EDA）具有重要警示意义，提醒研究者关注验证器与真实目标之间的差距。",
+  "tags": [
+    "模拟器误设",
+    "可验证设计",
+    "强化学习",
+    "基因电路",
+    "保真度遗憾"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RLVF假设验证器能评估真正关心的量，但实际中验证器（如拓扑验证）与性能评估（需模拟器）之间存在鸿沟。",
+      "保真度遗憾量化了廉价模拟器因模型误设而导致的决策质量损失，是评估模拟器可靠性的新指标。",
+      "在基因电路设计的组合子空间上实证测量了保真度遗憾，揭示了模拟器误设对设计选择的影响。",
+      "该研究提醒依赖模拟器优化的领域需警惕验证目标与真实目标的不一致。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

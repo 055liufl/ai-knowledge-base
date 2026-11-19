@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-051",
+  "title": "Efficient Wide-Beam Generative Retrieval with Model-Native Trie Decoding and Shared-Context Attention",
+  "source_url": "https://arxiv.org/abs/2611.22309",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Trie-Head，一种面向生成式检索（Generative Retrieval, GR）的模型原生输出接口，旨在解决宽束（wide-beam）Trie 约束解码中的两个核心服务成本问题：一是词表级打分张量中大部分被丢弃造成的计算与显存浪费，二是对同一提示（prompt）的重复注意力计算。Trie-Head 将语义标识符（SID）的 Trie 结构直接存储为经过验证的 GPU 张量，从而在模型内部原生地完成 Trie 约束，替代了传统的 Python 自定义 logit processor 方案。结合共享上下文注意力（Shared-Context Attention）机制，该方法在保持标识符合法性的同时显著降低宽束解码的开销。该工作值得关注，因为它直面生成式检索从研究走向生产部署时的实际推理瓶颈，将约束解码从外挂式后处理下沉为模型原生能力，对提升大规模目录检索系统的吞吐与延迟表现具有直接工程价值。",
+  "tags": [
+    "Generative Retrieval",
+    "Constrained Decoding",
+    "Inference Optimization",
+    "Beam Search"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 Trie 约束从 Python logit processor 下沉为模型原生的 GPU 张量接口，减少宽束解码中的无效词表打分与显存开销。",
+      "共享上下文注意力机制复用同一 prompt 的注意力计算，缓解宽束场景下的重复计算问题。",
+      "生成式检索的落地瓶颈正从模型效果转向推理服务效率，约束解码的工程实现成为关键优化点。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

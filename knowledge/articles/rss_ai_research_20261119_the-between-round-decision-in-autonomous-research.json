@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-079",
+  "title": "The Between-Round Decision in Autonomous Research: An LLM Controller That Reads the Whole Trajectory",
+  "source_url": "https://arxiv.org/abs/2611.22661",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出自主研究中的“轮间决策”问题：每轮实验后，系统需基于结果而非初始提案，决定是优化当前最佳方案还是开启新方向、从哪个方案继续构建以及设定什么目标。现有系统通常用规则、评分、搜索树和调度等机制包裹这一决策，而本文提出一种LLM控制器，通过读取完整轨迹（包括历史实验与结果）来做轮间决策。其核心价值在于将决策依据从静态提案转向动态实验结果，更贴近真实科研迭代逻辑，有望提升自主研究系统的适应性与效率。该工作对自动化科研、LLM智能体及实验设计领域具有参考意义，但摘要未披露具体方法细节与实验效果，需进一步阅读全文评估。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Autonomous Research",
+    "Decision Making"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "轮间决策应基于实验结果而非初始提案，因为执行过程会改变方案的前景。",
+      "现有系统用规则、评分、搜索树等外部机制处理轮间决策，本文尝试用LLM直接读取完整轨迹来决策。",
+      "该问题对自主研究系统的迭代效率与方向选择具有关键影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

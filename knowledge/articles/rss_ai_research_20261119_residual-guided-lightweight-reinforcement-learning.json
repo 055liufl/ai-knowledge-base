@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-097",
+  "title": "Residual-Guided Lightweight Reinforcement Learning for Risk-Aware Trajectory Selection with a Frozen World Model",
+  "source_url": "https://arxiv.org/abs/2611.22998",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种残差引导的轻量级强化学习框架，用于自动驾驶中的风险感知轨迹选择。现有方法依赖世界模型预测未来场景并评估候选轨迹，但固定选择规则难以适应不同场景下的权衡。作者冻结世界模型并固定候选轨迹库，仅使用PPO微调一个联合策略，在候选选择与边界约束上进行决策。该工作值得关注，因为它以极低的训练成本实现了场景自适应的轨迹选择，避免了重新训练世界模型的高昂开销，为自动驾驶决策模块提供了一种高效、可扩展的强化学习方案。",
+  "tags": [
+    "Reinforcement Learning",
+    "Autonomous Driving",
+    "World Model",
+    "Trajectory Planning"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:11:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结世界模型并固定候选轨迹库，仅用PPO微调选择策略，大幅降低训练成本。",
+      "残差引导机制使策略能够根据场景动态调整候选轨迹的评估与选择。",
+      "联合优化候选选择与边界约束，提升风险感知轨迹选择的场景适应性。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

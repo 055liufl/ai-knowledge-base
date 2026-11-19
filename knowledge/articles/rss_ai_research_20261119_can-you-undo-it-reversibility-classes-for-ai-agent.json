@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-019",
+  "title": "Can You Undo It? Reversibility Classes for AI Agent Actions",
+  "source_url": "https://arxiv.org/abs/2611.22075",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出「可逆性等级」（Reversibility Classes）框架，用于解决工具调用型 AI Agent 的一个关键安全缺口：拥有调用工具的权限，并不意味着该操作出错后可以被撤销。作者设计了一套五级声明式词汇表，配合对参数敏感的判定规则、保守默认策略以及显式的「先前状态捕获契约」，让 Agent 在执行文件修改、数据库写入、权限变更或公开发布等操作前，能够明确判断该动作是否可逆、如何回滚。论文还提供了固定版本的实现和带证据链接的注册表，覆盖 20 个 MCP 服务器上的 536 个工具，并通过 738 项规则-用例检查进行验证。该工作值得关注的原因在于：当前 Agent 安全研究多聚焦于权限控制与提示注入防护，而对「操作后果可撤销性」这一维度缺乏系统化建模；随着 Agent 越来越多地直接操作生产环境，可逆性分级有望成为工具描述标准与 Agent 决策流程中的重要组成部分，为高风险不可逆操作引入人工确认或更严格的执行约束。",
+  "tags": [
+    "Agent",
+    "AI Safety",
+    "MCP",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权限许可不等于可撤销性，Agent 安全需要单独建模操作的可逆程度",
+      "五级可逆性词汇表结合参数敏感规则与保守默认值，可在工具描述层面标准化风险标注",
+      "显式的先前状态捕获契约使回滚成为可执行流程，而非事后补救",
+      "覆盖 20 个 MCP 服务器、536 个工具的注册表与 738 项检查为框架提供了可复现的实证基础"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

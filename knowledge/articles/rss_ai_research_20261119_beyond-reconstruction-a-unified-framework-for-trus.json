@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-136",
+  "title": "Beyond Reconstruction: A Unified Framework for Trustworthy and Explainable EEG Artifact Removal Evaluation",
+  "source_url": "https://arxiv.org/abs/2611.21781",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对脑电（EEG）伪迹去除领域现有评估体系的根本缺陷提出解决方案。当前深度学习方法虽在EEG伪迹去除任务上表现优异，但评估几乎完全依赖重建类指标（误差、相关性、信噪比），这些指标仅衡量与干净EEG的相似度，无法判断模型是否真正抑制了伪迹、是否保留了神经活动、以及是否提供可靠解释。为此，作者提出TriX-EEG三层评估框架，从可信性与可解释性角度重新定义伪迹去除的评估标准。该工作值得关注，因为它触及了EEG信号处理与深度学习交叉领域中被长期忽视的评估盲区：重建质量高不等于伪迹去除有效，也不等于神经信息无损。对于从事脑机接口、临床EEG分析及可解释AI的研究者而言，该框架有望推动更严谨的模型比较与部署决策，避免因指标误导而选择实际不可靠的模型。",
+  "tags": [
+    "EEG",
+    "可解释性",
+    "评估框架",
+    "信号处理"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:13:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "重建类指标（误差、相关性、信噪比）无法区分模型是真正抑制了伪迹还是仅仅拟合了干净信号，存在评估盲区",
+      "伪迹去除评估需同时考察三个维度：伪迹抑制效果、神经活动保留程度、以及模型解释的可靠性",
+      "TriX-EEG三层框架为EEG伪迹去除提供了超越重建相似度的可信性与可解释性评估路径",
+      "该工作提示EEG深度学习模型的部署决策不应仅依赖重建指标，否则可能选出实际不可靠的模型"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

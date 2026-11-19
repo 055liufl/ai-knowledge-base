@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-032",
+  "title": "The Only Edge Was Memorized in Training: LLM Trading Agents Around Earnings and Bad News",
+  "source_url": "https://arxiv.org/abs/2611.22177",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM交易代理在财报公告和坏消息场景下的表现。作者指出，新闻发布后几分钟内股价即已反应，基于新闻回放的基准测试未发现交易新闻的alpha。因此资金可能停留在两个位置：已知日期的财报公告前，以及坏消息后市场过度下跌时。然而，现有关于LLM与财报的研究多读取公告发布时或之后的文档，存在信息泄露风险。论文通过严格回放机制测试LLM代理，发现其所谓优势实际上来自训练数据中的记忆，而非真正的推理能力。该研究对评估LLM金融应用的可信度具有重要意义，揭示了基准测试中数据污染导致的虚假性能，提醒研究者和开发者需更严谨地设计时间对齐的评估方法。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Finance",
+    "Benchmark",
+    "Data Contamination"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "基于新闻的LLM交易代理在严格时间对齐的回放中无法产生alpha，新闻信息在几分钟内已被定价",
+      "LLM在财报场景中的表面优势可能源于训练数据记忆而非真实推理，存在严重的数据泄露问题",
+      "评估LLM金融代理必须采用严格的时间对齐基准，避免使用公告发布后文档造成信息污染",
+      "坏消息后的过度反应和已知日期的财报公告是剩余潜在收益的两个场景，但需警惕LLM的记忆效应"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

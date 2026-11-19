@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-046",
+  "title": "SpecSearch: Towards Hardware-Aware Efficient Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.22296",
+  "source_platform": "rss_ai_research",
+  "summary": "SpecSearch 是一篇关于硬件感知高效投机解码（Speculative Decoding, SD）的 arXiv 论文。投机解码能加速大语言模型推理，但其最优配置同时取决于工作负载特征、GPU 硬件和可用内存。论文指出，在 RTX 5090 上，当前最优的投机草稿模型 DFlash 在低并发下吞吐量可达自回归解码的 3.50 倍，但在高并发且输出较短时仅为 0.76 倍，说明静态配置无法适应动态场景。为此，作者提出 SpecSearch，一个硬件感知的搜索框架，旨在根据运行时条件自动选择最优的投机解码配置，从而在不同并发和输出长度下稳定获得加速收益。该工作值得关注，因为它揭示了投机解码性能对硬件与负载的强敏感性，并提供了系统化的自适应优化思路，对 LLM 推理部署具有实际指导意义。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Hardware-Aware",
+    "Auto-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "投机解码的加速效果高度依赖并发度和输出长度，静态配置可能导致性能下降而非提升。",
+      "在 RTX 5090 上，DFlash 在低并发下可达 3.50 倍加速，但高并发短输出时仅 0.76 倍，凸显硬件感知调优的必要性。",
+      "SpecSearch 通过硬件感知的搜索策略，动态适配工作负载与 GPU 特性，以稳定实现投机解码的加速收益。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-085",
+  "title": "A Full-Ledger Counterfactual Audit of Adaptive Reasoning",
+  "source_url": "https://arxiv.org/abs/2611.22778",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出全账本反事实价值审计（FLCVA）框架，用于评估自适应推理策略。自适应推理的核心问题是：模型应在何时直接作答、何时投入更多计算继续推理。现有方法通常通过预测当前答案是否有误来决定是否继续，但预测答案错误并不能保证额外推理一定带来改进。FLCVA 从同一冻结前缀出发，在统一答案流程下比较立即作答与四种固定长度续写的效果，并将策略使用的每个信号成本纳入核算，从而更严谨地衡量额外推理的真实价值。该工作对推理时计算分配、自适应停止策略和推理效率评估具有方法学意义，值得关注推理优化与评测的研究者和开发者阅读。",
+  "tags": [
+    "Adaptive Reasoning",
+    "Inference Compute",
+    "Evaluation",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:11:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预测当前答案错误并不等于额外推理会带来改进，二者需分开评估",
+      "FLCVA 通过同一冻结前缀下的反事实续写比较，量化额外推理的真实收益",
+      "审计框架将策略所用信号的成本纳入核算，避免忽略推理开销",
+      "为自适应停止与推理时计算分配提供了更严谨的评估方法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-125",
+  "title": "FCP: Formal Context Protocol for Verifying LLM-Generated Artifacts",
+  "source_url": "https://arxiv.org/abs/2611.21679",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出形式化上下文协议（FCP），用于验证大语言模型生成的产物是否真正满足用户请求，而非仅通过模型自己编写的测试。核心洞察是：当LLM同时生成产物和测试时，测试通过并不能证明产物正确，因为模型可能误解需求并生成与之匹配的错误测试。FCP将验证分为两个独立部分：一致性检查（产物是否满足需求的形式化解读）由模型检查器和SMT求解器判定；保真度检查（形式化解读是否忠实于原始请求）则另行处理。该方法旨在为AI生成代码、规格说明等产物提供更可靠的验证机制，减少对自生成测试的依赖。该工作对提升LLM在软件工程中的可信度具有重要意义，尤其适用于需要高保证的代码生成和形式化验证场景。",
+  "tags": [
+    "LLM",
+    "Formal Verification",
+    "Code Generation",
+    "SMT"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:12:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM自生成测试存在根本性缺陷：模型可能同时产生错误产物和接受该错误的测试，导致测试通过成为弱证据。",
+      "FCP将验证分解为一致性（形式化需求满足性）和保真度（形式化解读与原始请求的匹配度）两个独立维度。",
+      "利用模型检查器和SMT求解器对一致性进行严格判定，为AI生成产物提供可证明的正确性保证。",
+      "该方法适用于高保证软件工程场景，可显著提升LLM生成代码和规格说明的可信度。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

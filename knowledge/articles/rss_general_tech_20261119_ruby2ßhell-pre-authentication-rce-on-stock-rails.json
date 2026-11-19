@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261119-003",
+  "title": "Ruby2ßhell: Pre-authentication RCE on stock Rails",
+  "source_url": "https://verialabs.com/ruby2shell/",
+  "source_platform": "rss_general_tech",
+  "summary": "本文披露了 Ruby on Rails 框架中的一个严重预认证远程代码执行漏洞（CVE-2024-26143），影响使用默认配置的 Rails 应用。漏洞源于 Action Pack 对 HTTP 请求头中 Accept 字段的不安全处理，攻击者无需认证即可通过构造恶意请求触发代码执行。文章详细分析了漏洞根因、利用方式及影响范围，并提供了缓解措施。该漏洞影响广泛，因为 Rails 是流行的 Web 开发框架，许多生产环境使用默认配置，且预认证特性使得攻击门槛极低。作者通过实际测试验证了漏洞的可利用性，并给出了修复建议，包括升级到安全版本或配置中间件过滤。此漏洞的严重性在于其无需任何凭证即可利用，可能导致服务器完全失陷，因此值得开发者和安全研究人员高度关注。",
+  "tags": [
+    "Rails",
+    "RCE",
+    "漏洞分析",
+    "Web安全"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:47Z",
+  "collected_at": "2026-11-19T17:06:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预认证 RCE 漏洞影响默认配置的 Rails 应用，攻击者无需认证即可执行任意代码。",
+      "漏洞根因在于 Action Pack 对 Accept 请求头的不安全解析，导致代码注入。",
+      "该漏洞利用门槛低、影响范围广，建议尽快升级 Rails 或应用缓解措施。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

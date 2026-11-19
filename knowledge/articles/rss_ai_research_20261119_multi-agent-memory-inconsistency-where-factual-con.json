@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-038",
+  "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.22245",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注多智能体LLM系统中一个被忽视的一致性问题：当主智能体将证据收集任务委派给多个工作智能体时，各工作智能体在独立上下文中检索到的事实，可能在主智能体进行联合结论时缺失，导致事实性冲突消失。作者基于Harvey LAB文档审查任务，通过受控的事实冲突构建了一个基准测试和证据流分析器，用于系统研究多智能体记忆不一致现象。该工作值得关注，因为它首次将多智能体协作中的记忆一致性问题形式化，并提供了可复用的评估工具，对构建可靠的多智能体系统具有直接指导意义。",
+  "tags": [
+    "Multi-Agent",
+    "Memory",
+    "LLM",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体委派中，工作智能体检索到的事实可能无法传递到主智能体的证据池，造成事实冲突被系统性掩盖",
+      "通过受控事实冲突和证据流分析器，可以量化多智能体记忆不一致的发生位置与程度",
+      "该问题对需要联合结论的文档审查等高风险任务尤为关键，需在系统设计中显式追踪证据流"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

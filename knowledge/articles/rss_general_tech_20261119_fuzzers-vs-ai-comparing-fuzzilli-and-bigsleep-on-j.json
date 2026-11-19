@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261119-014",
+  "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines",
+  "source_url": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+  "source_platform": "rss_general_tech",
+  "summary": "Google Project Zero 发布了一项对比研究，比较传统模糊测试工具 Fuzzilli 与 AI 驱动的漏洞挖掘系统 BigSleep 在 JavaScript 引擎上的表现。JavaScript 引擎（如 V8、JavaScriptCore）是浏览器安全的核心攻击面，其漏洞挖掘长期依赖覆盖率引导的模糊测试。Fuzzilli 是专为 JS 引擎设计的成熟 fuzzer，而 BigSleep 代表基于大语言模型的自动化漏洞发现新范式。该研究通过同一目标上的对照实验，评估 AI 方法能否在真实复杂软件中达到或超越传统 fuzzer 的漏洞发现能力，并分析两者在测试用例生成、代码覆盖、漏洞深度与误报率等方面的差异。其价值在于为安全社区提供首个较为系统的“AI 漏洞挖掘 vs 传统 fuzzing”实证对比，帮助判断 LLM 在漏洞研究中的实际定位——是替代、补充还是仍处于早期探索阶段，对浏览器厂商、安全研究者和 AI 安全工具开发者均有参考意义。",
+  "tags": [
+    "Fuzzing",
+    "LLM",
+    "Security",
+    "JavaScript"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:48Z",
+  "collected_at": "2026-11-19T17:07:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "首次在同一 JavaScript 引擎目标上系统对比传统 fuzzer 与 LLM 驱动的漏洞挖掘系统",
+      "Fuzzilli 代表覆盖率引导的成熟工程化方案，BigSleep 代表基于大模型的语义化漏洞发现新路径",
+      "对比维度涵盖漏洞发现能力、代码覆盖与误报率，有助于厘清 AI 在漏洞研究中的真实定位",
+      "结论对浏览器安全团队选择漏洞挖掘工具链具有直接参考价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

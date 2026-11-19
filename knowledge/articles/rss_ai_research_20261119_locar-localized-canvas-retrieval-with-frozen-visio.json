@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-026",
+  "title": "LoCaR: Localized Canvas Retrieval With Frozen Vision-Language Model",
+  "source_url": "https://arxiv.org/abs/2611.22131",
+  "source_platform": "rss_ai_research",
+  "summary": "LoCaR 是一个无需训练的框架，用于解决局部文本到图像检索问题。传统方法使用整图嵌入，容易忽略小物体和局部属性，导致对局部查询的检索效果不佳。LoCaR 利用冻结的视觉语言模型，通过 SAM2 生成独立的物体提案，对每个区域分别编码，从而获得更细粒度的局部表示。该方法无需额外训练，即可提升对局部细节敏感查询的检索性能。该工作值得关注，因为它提出了一种简单有效的训练免费方案，结合现成分割模型与冻结视觉编码器，为细粒度多模态检索提供了新思路，且易于部署和扩展。",
+  "tags": [
+    "多模态检索",
+    "视觉语言模型",
+    "图像分割",
+    "细粒度检索"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "整图嵌入会低估小物体和局部属性的重要性，导致局部查询检索效果差。",
+      "利用 SAM2 生成物体提案并对每个区域独立编码，可获得更细粒度的局部表示。",
+      "整个框架无需训练，直接使用冻结的视觉语言模型，降低了应用门槛。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261119-113",
+  "title": "Marimba: A System One Model for Speech",
+  "source_url": "https://arxiv.org/abs/2611.18330",
+  "source_platform": "rss_ai_research",
+  "summary": "Marimba 是一个面向语音应用的“系统一”模型接口，基于冻结的 Qwen3-ASR 0.6B 特征构建，用于在音频窗口内做出三类快速决策：词项是否存在、话轮是否结束以及语言识别。对于词汇类问题，系统直接对 ASR 转录文本进行零样本打分；对于非词汇类问题，则使用问题条件化的预测头和独立的第 18 层话轮结束读出模块；语言识别复用 ASR 模型自身的语言分数。该工作值得关注，因为它提出了一种轻量、模块化且无需微调主干模型的语音决策范式，将 ASR 特征复用为通用语音理解接口，有望降低语音交互系统的延迟与工程复杂度，并为“系统一”式快速语音判断提供可复现的基线。",
+  "tags": [
+    "Speech",
+    "ASR",
+    "System One",
+    "Turn Detection",
+    "Language Identification"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:12:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结的 ASR 特征可作为通用语音决策接口，无需微调主干模型即可支持词项存在、话轮结束和语言识别等任务。",
+      "词汇类问题通过零样本 ASR 转录打分解决，非词汇类问题通过问题条件化头和层读出解决，体现了任务分治的设计思路。",
+      "语言识别直接复用 ASR 模型自身的语言分数，减少了额外模块和训练成本。",
+      "该工作为语音交互中的快速“系统一”决策提供了轻量、可复现的基线方案。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-028",
+  "title": "Long-Context Generation Is a Sampling Problem (When You Turn Up the Heat)",
+  "source_url": "https://arxiv.org/abs/2611.22148",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了开放权重语言模型在长文本生成中性能下降的问题，并提出这一现象本质上是一个采样问题而非训练不足。作者指出，在高温采样场景下，采样器（即从模型概率分布中选择下一个 token 的规则）决定了长文本生成和智能体式生成能否维持并表现良好。研究团队测试了 29 个参数规模从 1B 到 122B 的开放权重模型，覆盖十个成熟基准测试以及长达一百万 token 的针检索任务。这项工作值得关注，因为它挑战了“长上下文能力必须靠更多训练来提升”的主流假设，将注意力转向推理阶段的采样策略优化，为低成本改善长上下文生成质量提供了新思路，对智能体应用和长文档处理场景具有直接实用价值。",
+  "tags": [
+    "Long-Context",
+    "Sampling",
+    "LLM",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:08:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长上下文生成质量下降可能主要源于采样策略而非模型训练不足",
+      "高温采样下采样器的选择直接决定长文本与智能体生成能否维持",
+      "在 29 个 1B-122B 开放权重模型和百万 token 检索任务上验证了采样对长上下文表现的关键作用",
+      "通过优化推理阶段采样规则可低成本改善长上下文生成，无需额外训练"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

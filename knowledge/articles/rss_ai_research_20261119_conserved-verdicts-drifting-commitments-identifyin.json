@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-008",
+  "title": "Conserved Verdicts, Drifting Commitments: Identifying Harmful Overthinking",
+  "source_url": "https://arxiv.org/abs/2611.21946",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究推理模型在已得出正确答案后继续思考反而导致答案错误的现象，称为“有害过度思考”。作者指出，判断是否应停止思考需要比较两个概率：模型若立即停止所给答案正确的概率（承诺）和最终完成答案正确的概率（裁决）。仅依赖最终正确性探针估计的裁决无法完成这一比较，因为裁决可能保持稳定而承诺发生漂移。论文形式化定义了承诺与裁决的差异，并揭示仅用最终正确性信号无法识别何时应停止推理，从而可能导致模型在正确后继续思考并丢失正确答案。该工作对理解推理模型的计算效率与可靠性平衡具有重要价值，为设计更智能的停止准则提供了理论基础。",
+  "tags": [
+    "LLM",
+    "推理模型",
+    "过度思考",
+    "停止准则"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:07:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推理模型在已得出正确答案后继续思考可能丢失正确答案，称为有害过度思考。",
+      "判断是否停止需比较承诺（立即停止答案正确的概率）与裁决（最终答案正确的概率），仅靠裁决无法完成比较。",
+      "最终正确性探针估计的裁决可能稳定，但承诺会漂移，导致无法识别应停止的时机。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

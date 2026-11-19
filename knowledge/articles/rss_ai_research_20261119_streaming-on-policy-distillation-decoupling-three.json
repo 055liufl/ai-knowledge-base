@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-047",
+  "title": "Streaming On-Policy Distillation: Decoupling Three Clocks for Stage-Wise Supervision Consumption",
+  "source_url": "https://arxiv.org/abs/2611.22298",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出流式在线策略蒸馏（Streaming On-Policy Distillation），核心创新在于将响应生成、监督信号传递和参数更新这三个原本同步的过程解耦为独立的“时钟”。传统在线策略蒸馏要求三者粒度一致，导致效率受限；而流式方法允许在生成过程中反复交付新生成的片段，每次交付保留完整因果前缀，但损失仅在新位置上计算。随后通过一种消费协议组织监督预算、位置选择和策略更新，实现阶段式监督消费。该工作值得关注，因为它打破了在线蒸馏中生成与更新的强耦合，有望提升训练效率与灵活性，对LLM蒸馏和在线学习系统设计具有启发意义。",
+  "tags": [
+    "On-Policy Distillation",
+    "LLM Training",
+    "Streaming",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏中响应生成、监督传递和参数更新可以解耦为三个独立时钟，无需共享同一粒度。",
+      "流式交付保留完整因果前缀但仅在新位置计算损失，避免重复计算并保持因果一致性。",
+      "消费协议通过监督预算和位置选择实现阶段式监督消费，提升训练效率与灵活性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

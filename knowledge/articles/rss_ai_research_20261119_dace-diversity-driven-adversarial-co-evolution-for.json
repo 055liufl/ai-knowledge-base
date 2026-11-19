@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261119-041",
+  "title": "DACE: Diversity-Driven Adversarial Co-Evolution for Robust LLM Safety Alignment",
+  "source_url": "https://arxiv.org/abs/2611.22278",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出DACE（Diversity-Driven Adversarial Co-Evolution）框架，旨在解决大语言模型安全对齐中对抗攻击演化快于防御管线的问题。现有协同进化框架存在两个复合病理：攻击策略坍缩（攻击者过拟合于少数高奖励改写模式）和防御对抗过拟合（防御者仅针对有限攻击模式优化而丧失泛化性）。DACE通过多样性驱动机制促进攻击者生成多样化的对抗样本，同时引导防御者学习更鲁棒的安全策略，从而打破攻防双方在狭窄策略空间中的共演化陷阱。该工作对于提升LLM在开放对抗环境下的安全对齐鲁棒性具有重要价值，尤其适用于需要持续抵御未知攻击的部署场景。",
+  "tags": [
+    "LLM安全",
+    "对抗训练",
+    "协同进化",
+    "安全对齐"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:09:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有协同进化安全对齐框架存在攻击策略坍缩和防御对抗过拟合两个复合病理，导致攻防双方陷入狭窄策略空间的共演化陷阱。",
+      "DACE通过多样性驱动机制鼓励攻击者生成多样化对抗样本，同时提升防御者的泛化鲁棒性，打破攻防策略坍缩的恶性循环。",
+      "多样性是维持对抗协同进化健康动态的关键因素，可防止攻防双方过拟合于有限的高奖励策略模式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

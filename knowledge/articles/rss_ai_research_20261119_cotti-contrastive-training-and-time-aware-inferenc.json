@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261119-073",
+  "title": "COTTI: Contrastive Training and Time-Aware Inference for Robust Industrial Recommendation under Promotional Drift",
+  "source_url": "https://arxiv.org/abs/2611.22597",
+  "source_platform": "rss_ai_research",
+  "summary": "COTTI 是一个面向工业推荐系统的框架，旨在解决促销活动引发的分布漂移问题。促销事件会改变流量构成、购买行为以及不同时间尺度上的转化概率规模，导致历史训练数据与事件期间的数据分布不一致。COTTI 的核心思路是将历史表示学习与事件时间的分数调整分离：通过跨周期对比对齐（CPC）对同一用户或物品在不同周期内的配对历史进行正则化，使表示对促销漂移更鲁棒；同时采用时间感知推理机制，在事件发生时对预测分数进行动态调整。该工作来自工业场景，强调实际部署中的鲁棒性和可维护性，对推荐系统在非平稳环境下的稳定表现具有参考价值。其创新点在于将对比学习与时间感知推理结合，并针对促销漂移这一常见但棘手的工业问题提出系统性解决方案，值得推荐系统工程师和研究者关注。",
+  "tags": [
+    "推荐系统",
+    "对比学习",
+    "分布漂移",
+    "工业应用"
+  ],
+  "author": null,
+  "published_at": "2026-11-19T17:05:49Z",
+  "collected_at": "2026-11-19T17:10:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "促销活动导致推荐系统面临显著的分布漂移，需要专门机制来分离历史表示学习与事件时间调整。",
+      "跨周期对比对齐（CPC）通过正则化同一实体的配对历史，提升表示对促销漂移的鲁棒性。",
+      "时间感知推理在事件发生时动态调整预测分数，弥补历史模型与当前分布之间的差距。",
+      "该框架面向工业部署，强调鲁棒性和可维护性，对实际推荐系统应对非平稳环境有参考意义。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}
