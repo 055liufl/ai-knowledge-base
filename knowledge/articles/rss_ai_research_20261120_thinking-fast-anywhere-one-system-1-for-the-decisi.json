@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-025",
+  "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
+  "source_url": "https://arxiv.org/abs/2611.23751",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 AnyS1 框架，旨在解决自主 LLM Agent 在每一步都调用大模型（System-2）导致的高成本与高延迟问题。现有双系统 Agent 虽将部分决策卸载给轻量级 System-1 模型，但依赖针对每个环境手工编写的 workflow-specific hooks，泛化性差。AnyS1 的核心创新在于：利用人类编写的程序性技能（procedural skills），其指令天然指定了在何处做出决策，从而自动识别任意 Agent 工作流中的决策点，并将这些决策点上的选择交由 System-1 模型处理，无需为每个环境单独编写钩子。该工作将快慢思考（System-1/System-2）架构从特定工作流推广到通用 Agent 场景，有望显著降低 Agent 的推理成本与响应延迟，同时保持决策质量，对构建高效、可扩展的自主 Agent 系统具有实用价值，值得 Agent 系统设计与 LLM 推理优化方向的研究者和开发者关注。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "System-1/System-2",
+    "推理优化"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有双系统 Agent 依赖按环境手工编写的 workflow hooks，AnyS1 通过人类程序性技能自动定位决策点，实现跨工作流泛化。",
+      "将小模型（System-1）用于候选集较小的中间决策，可显著降低大模型调用带来的成本与延迟。",
+      "程序性技能指令中隐含的决策位置信息是自动化卸载决策的关键信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

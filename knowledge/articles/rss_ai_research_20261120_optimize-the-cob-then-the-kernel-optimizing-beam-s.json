@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-100",
+  "title": "Optimize the Cob, Then the Kernel: Optimizing Beam Search for Generative Recommendation Inference",
+  "source_url": "https://arxiv.org/abs/2611.23339",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对生成式推荐（GR）推理场景提出优化方案。GR 推理具有长输入序列、宽束搜索和少量固定输出 token 的特点，与常规 LLM 服务差异显著。现有引擎如 vLLM 将每个束作为独立序列批处理，导致对共享提示前缀的 KV 缓存重复访问；同时每个束搜索生成步骤作为独立引擎调用，带来主机端开销。论文提出“先优化 Cob，再优化 Kernel”的思路，从束搜索层面减少冗余 KV 访问和调用开销，对推荐系统推理性能提升有实际意义。",
+  "tags": [
+    "Beam Search",
+    "Inference Optimization",
+    "Generative Recommendation",
+    "KV Cache"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:51:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式推荐推理与 LLM 服务在序列长度、束宽和输出 token 数上存在本质差异，直接复用 vLLM 等引擎效率低下",
+      "将束作为独立序列批处理会导致共享提示前缀的 KV 缓存冗余访问",
+      "每个束搜索步骤独立调用引擎引入额外主机端开销，需在束搜索层面进行协同优化"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-009",
+  "title": "GUARD: Stabilizing Recursive Self-Improvement with Regret Guidance",
+  "source_url": "https://arxiv.org/abs/2611.23476",
+  "source_platform": "rss_ai_research",
+  "summary": "GUARD 是一篇针对自主 AI 智能体递归自我改进（RSI）稳定性问题的研究论文。论文指出，当前自主智能体通常采用冻结的基础模型配合可编辑的 harness（包含提示词、技能、工具规则和记忆），通过经验驱动 harness 的自我改进而无需更新模型权重。然而，在没有外部评分器的情况下进行自我编辑往往适得其反：反思机制和标量分数无法区分一次编辑新引入的破坏与原本就未解决的问题，从而导致局部性能回退、技能遗忘和记忆膨胀。GUARD（Grader-free Regret Guidance）提出以 regret 引导的方式稳定递归自我改进过程，旨在解决自我编辑中的归因混淆问题。该工作值得关注，因为它直击自主智能体持续自我进化中的核心可靠性瓶颈——如何在缺乏外部监督信号时判断编辑的真实收益，对构建可长期稳定运行的智能体系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Self-Improvement",
+    "LLM",
+    "Reliability"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "无外部评分器时，反思与标量分数无法区分编辑新引入的破坏与原有未解决问题，导致归因混淆",
+      "递归自我改进的典型失败模式包括局部性能回退、技能遗忘和记忆膨胀",
+      "GUARD 通过 regret 引导机制稳定自我编辑过程，无需依赖外部评分器",
+      "该工作聚焦冻结模型加可编辑 harness 的无权重更新自我改进范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

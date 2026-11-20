@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-019",
+  "title": "RefinementGuard: Counterexample-Directed Semantic Qualification for Hidden Agent-Tool Execution",
+  "source_url": "https://arxiv.org/abs/2611.23611",
+  "source_platform": "rss_ai_research",
+  "summary": "RefinementGuard 是一篇关于智能体工具执行安全性的研究论文，针对工具运行时将智能体选择的操作降级为隐藏并行图时可能出现的语义误译风险，提出了一种翻译验证机制。该方法将候选执行图与独立参考在隔离状态下进行对比，并引入显式的父操作义务（parent-operation obligations）来确保语义一致性，同时结合工件绑定（artifact-bound）和故障关闭（fail-closed）的运行时准入控制。该工作值得关注，因为它首次系统性地解决了隐藏式、有副作用的智能体-工具降级过程中的语义正确性问题，为智能体工具调用的可靠性和安全性提供了形式化保障思路，对构建可信赖的智能体系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Runtime Verification",
+    "Semantic Validation"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "隐藏的并行图降级虽能降低延迟和上下文开销，但存在语义误译风险，需要专门的翻译验证机制",
+      "通过将候选图与独立参考在隔离状态下对比，并引入父操作义务，可实现细粒度的语义资格认证",
+      "工件绑定与故障关闭的运行时准入策略为智能体工具执行提供了安全兜底"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

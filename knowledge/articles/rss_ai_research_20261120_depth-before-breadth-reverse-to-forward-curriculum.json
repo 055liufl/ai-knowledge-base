@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-075",
+  "title": "Depth Before Breadth: Reverse-to-Forward Curriculum with Advantage Decomposition for LLM Agent",
+  "source_url": "https://arxiv.org/abs/2611.24697",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM智能体在长程任务中强化学习面临的稀疏终端奖励、信用分配困难和探索效率低等问题，提出了一种名为“Reverse-to-Forward Curriculum with Advantage Decomposition”的训练框架。核心思想是利用策略诱导的能力区域（policy-induced capability region）概念，即当前策略能够可靠完成任务的状态集合。作者观察到在能力区域边界附近，智能体只需少量动作即可到达更优状态，因此设计了一种从后向前的课程学习策略：先训练智能体完成接近目标的状态，再逐步向前扩展任务范围，从而缓解稀疏奖励带来的探索难题。同时，论文引入优势分解机制，将终端奖励的信用分配拆解为多个中间步骤的贡献，提升学习效率。该方法在长程LLM智能体任务上进行了验证，展示了在样本效率和最终性能上的优势。该工作值得关注，因为它为LLM智能体的强化学习训练提供了一种系统性的课程设计思路，有望降低训练成本并提升复杂任务上的表现。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Reinforcement Learning",
+    "Curriculum Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:50:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出策略诱导能力区域概念，利用边界状态只需少量动作即可提升的特性设计课程。",
+      "采用反向到前向的课程学习，从接近目标的状态开始训练，缓解稀疏奖励下的探索困难。",
+      "引入优势分解机制，将终端奖励的信用分配拆解为中间步骤贡献，提升学习效率。",
+      "为LLM智能体长程任务的强化学习训练提供了一种系统性的课程设计框架。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

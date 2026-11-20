@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-034",
+  "title": "Evaluating invariance training with certified answer-changing controls in neural graph algorithms",
+  "source_url": "https://arxiv.org/abs/2611.23907",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究神经网络图算法中的不变性训练（invariance training）评估问题。不变性训练旨在使神经算法推理器对保持答案不变的输入变化具有鲁棒性，通常通过准确率和此类编辑改变预测的罕见程度来评判。作者在合成图的最小生成树上提出一个关键问题：这种评估是否能检测到对改变答案的编辑所丧失的敏感性，而在此场景下两个方向都可被认证。论文设计了一种认证方法：通过单桥接附加子图可证明保留所有原始标签，而通过另一种方式附加则会改变答案，从而构建出答案保持与答案改变两类可控编辑。这项工作值得关注，因为它揭示了当前不变性训练评估体系的潜在盲区——模型可能对保持答案的扰动鲁棒，却同时对真正影响输出的变化失去敏感性，这对神经算法推理的可靠性评估具有重要意义。",
+  "tags": [
+    "神经算法推理",
+    "不变性训练",
+    "图算法",
+    "鲁棒性评估"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有不变性训练评估仅关注答案保持型编辑的鲁棒性，可能掩盖模型对答案改变型编辑的敏感性丧失",
+      "通过单桥接与多桥接附加子图的构造，可在最小生成树任务上同时认证答案保持与答案改变两个方向",
+      "该研究为神经算法推理器的鲁棒性评估提供了更严格的双向认证框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

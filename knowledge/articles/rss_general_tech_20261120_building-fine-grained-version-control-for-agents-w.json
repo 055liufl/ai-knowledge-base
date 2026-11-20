@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261120-017",
+  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+  "source_url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章介绍了如何利用 Rust 和 Cloudflare Durable Objects 为 AI Agent 构建细粒度版本控制系统。传统 Git 面向人类开发者，以文件为粒度记录变更，而 Agent 在运行过程中会产生大量细碎、高频的状态变化（如工具调用、中间推理、记忆更新），需要更精细的追踪与回滚能力。作者提出以 Rust 实现高性能的差异计算与状态管理核心，借助 Durable Objects 的强一致性和单点协调特性，为每个 Agent 会话维护可持久化、可回溯的版本历史。该方案使 Agent 的每一步操作都可审计、可重放、可分支，为调试、合规与多 Agent 协作提供了基础设施。文章值得关注之处在于：它把版本控制从代码领域扩展到 Agent 运行时状态，填补了当前 Agent 工程化中可观测性与可恢复性的空白，同时展示了 Rust + 边缘持久化对象在 AI 基础设施中的组合潜力，对构建生产级 Agent 系统的团队具有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Rust",
+    "Durable Objects",
+    "版本控制"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:48Z",
+  "collected_at": "2026-11-20T16:46:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 运行时状态变化高频且细碎，传统以文件为粒度的 Git 无法满足，需要面向 Agent 的细粒度版本控制",
+      "Rust 负责高性能差异计算与状态管理，Durable Objects 提供强一致的单点协调与持久化，二者组合适合构建 Agent 状态基础设施",
+      "细粒度版本历史让 Agent 的每一步操作可审计、可重放、可分支，显著提升调试与合规能力",
+      "该方向填补了 Agent 工程化中可观测性与可恢复性的空白，是生产级 Agent 系统的重要基础设施"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

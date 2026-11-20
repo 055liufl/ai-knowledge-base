@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-103",
+  "title": "BiMa-ECGSR: reconstructing the 12-lead ECG from reduced lead sets with bidirectional state-space models",
+  "source_url": "https://arxiv.org/abs/2611.23345",
+  "source_platform": "rss_ai_research",
+  "summary": "BiMa-ECGSR 提出了一种从减少导联集重建 12 导联心电图的方法，使用双向 Mamba 状态空间编码器-解码器，并提供了回归（BiMa-SR）和扩散（DiBiMa-SR）两种变体。可穿戴设备和监护仪通常只能记录少量 ECG 导联，而大多数诊断工具依赖 12 导联，因此该工作旨在弥合这一差距。模型在 PTB-XL 数据集上针对六种输入导联组合（I；II；I+II；I+II+V1；I+II+V2；I+II+V1+V4）进行训练，推理时仅使用实际测量的导联，并在 PTB-XL 测试折上评估。该研究值得关注，因为它利用新兴的状态空间模型（Mamba）解决 ECG 导联重建这一实际临床问题，有望提升可穿戴设备的心电诊断能力。",
+  "tags": [
+    "ECG",
+    "Mamba",
+    "State-Space Models",
+    "Diffusion",
+    "Healthcare"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:51:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "使用双向 Mamba 状态空间模型进行 ECG 导联重建，相比传统方法可能更高效地捕捉长程依赖。",
+      "同时探索回归和扩散两种生成范式，为重建任务提供不同权衡。",
+      "在标准数据集 PTB-XL 上系统评估多种减少导联配置，具有临床可穿戴设备应用潜力。"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

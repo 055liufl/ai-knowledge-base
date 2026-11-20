@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-064",
+  "title": "Risk-Triggered Search: Behavior-Preserving Safe Control",
+  "source_url": "https://arxiv.org/abs/2611.24409",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为风险触发搜索（Risk-Triggered Search, RTS）的安全控制方法，旨在解决预训练视觉世界模型在生成多步动作计划时无法有效避免进入禁区或发生刚体碰撞滑动的问题。传统方法依赖终端接近目标，但缺乏对过程风险的显式建模，而纯视觉接口往往缺少解析动力学、结构化状态或碰撞几何信息。RTS 通过内部预测动作条件的过程风险，在冻结的联合嵌入预测模型上实现行为保持的安全控制。该方法在不需要修改预训练模型的情况下，动态触发搜索以规避风险，兼顾任务性能与安全性。该工作值得关注，因为它为视觉世界模型的安全部署提供了一种轻量级、可插拔的解决方案，尤其适用于机器人操作和自动驾驶等对安全性要求高的场景。",
+  "tags": [
+    "Safe Control",
+    "World Model",
+    "Visual Planning",
+    "Risk Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:49:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "预训练视觉世界模型在生成动作计划时缺乏对过程风险的显式建模，容易导致禁区穿越或碰撞滑动。",
+      "RTS 通过内部预测动作条件的过程风险，在冻结模型上实现行为保持的安全控制，无需重新训练。",
+      "该方法为视觉世界模型的安全部署提供了一种轻量级、可插拔的解决方案，适用于机器人操作等场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

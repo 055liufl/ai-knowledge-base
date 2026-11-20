@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-027",
+  "title": "Metrics-in-the-Loop: Complexity Feedback Reshapes Agent-Written Code",
+  "source_url": "https://arxiv.org/abs/2611.23817",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 metrics-in-the-loop 的推理时干预方法，用于解决自主编码智能体在长时间运行中仅依赖测试通过与否来指导代码生成的问题。现有编码智能体能够独立编写完整代码库，但测试通过并不能反映代码复杂度的累积和测试覆盖率的缺口，这些问题会在智能体扩展自身代码时持续存在。该方法在智能体运行轨迹中注入廉价、自动计算的代码度量指标，为智能体提供实时反馈，从而引导其生成更简洁、覆盖更全面的代码。该工作值得关注，因为它首次系统性地将代码质量度量引入智能体的推理循环，弥补了仅靠测试信号驱动代码生成的不足，为提升自主编码智能体生成代码的长期可维护性提供了新思路。",
+  "tags": [
+    "Agent",
+    "Code Generation",
+    "Software Engineering",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅依赖测试通过信号无法揭示代码复杂度累积和测试覆盖缺口，这些问题会在智能体自主扩展代码时持续恶化",
+      "在推理时向智能体上下文注入自动计算的代码度量指标，可作为一种轻量级实时反馈机制引导代码生成",
+      "metrics-in-the-loop 干预无需重新训练模型，属于推理时干预，具有较低的实施成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

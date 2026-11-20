@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-037",
+  "title": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
+  "source_url": "https://arxiv.org/abs/2611.23917",
+  "source_platform": "rss_ai_research",
+  "summary": "Vanguard 是一篇关于视觉语言智能体（Vision-Language Agents）推理加速的 arXiv 论文。这类智能体需要浏览网页、操作手机或在家庭环境中执行动作，每一步行动前都要进行推理，因此每一步都依赖大型模型，导致延迟和成本高企，阻碍了实际部署。步级推测解码（step-level speculation）是一种有前景的解决方案：让小模型为每一步起草动作，仅在草稿被拒绝时才调用大模型。然而，该方法的效果高度依赖于“裁判”（judge）的判断质量。论文指出，仅阅读步骤文本的裁判无法判断该步骤是否与它所操作的屏幕内容相匹配，这是现有方法的关键缺陷。Vanguard 针对这一问题提出改进方案，旨在让推测机制更可靠地判断何时可以信任小模型草稿。该工作对降低多模态智能体部署成本、提升实时交互体验具有实际意义，值得关注智能体系统效率优化的研究者和工程师阅读。",
+  "tags": [
+    "Vision-Language Agent",
+    "Speculative Decoding",
+    "Inference Acceleration",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉语言智能体每步推理都调用大模型，延迟和成本是部署的主要瓶颈",
+      "步级推测让小模型起草、大模型仅在拒绝时介入，可显著降低开销",
+      "现有裁判仅看步骤文本，无法判断动作是否与屏幕内容匹配，是推测可靠性的关键缺陷",
+      "Vanguard 通过引入视觉上下文改进裁判判断，决定何时信任草稿"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

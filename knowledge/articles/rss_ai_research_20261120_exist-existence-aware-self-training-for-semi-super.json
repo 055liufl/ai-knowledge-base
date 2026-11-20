@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-121",
+  "title": "ExiST: Existence-Aware Self-Training for Semi-Supervised Multi-Organ Segmentation",
+  "source_url": "https://arxiv.org/abs/2611.23581",
+  "source_platform": "rss_ai_research",
+  "summary": "ExiST 是一篇关于半监督多器官分割的学术论文，针对标注数据稀缺且小器官占比极低（不足前景的1%）的场景。作者发现自训练在此类场景下存在一种特定失败模式：当教师模型在扫描中漏检某个小器官时，该器官的所有体素都会被赋予高置信度的背景伪标签，导致学生模型被训练为预测该器官不存在，且该错误在迭代中反复累积。论文提出 Existence-Aware Self-Training（ExiST）方法，核心思路是让自训练过程感知器官的存在性，避免将漏检直接当作负样本。该工作值得关注，因为它揭示了半监督医学图像分割中一个被忽视但影响显著的系统性偏差问题，对提升小器官分割的鲁棒性具有实际价值，也为自训练伪标签质量控制提供了新视角。",
+  "tags": [
+    "半监督学习",
+    "医学图像分割",
+    "自训练",
+    "伪标签"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "半监督多器官分割中，教师模型漏检小器官会导致其全部体素被标为高置信度背景，学生模型因此被训练为预测器官缺失。",
+      "该失败模式在迭代自训练中会反复累积，对小器官（占比不足前景1%）的损害尤为严重。",
+      "解决方案的核心是让自训练具备存在性感知能力，区分'器官不存在'与'教师漏检'，避免将漏检直接作为负监督信号。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

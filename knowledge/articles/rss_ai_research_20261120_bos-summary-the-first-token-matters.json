@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-012",
+  "title": "BOS Summary: The First Token Matters",
+  "source_url": "https://arxiv.org/abs/2611.23508",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大视觉语言模型（LVLM）和大语言模型（LLM）中的注意力汇（attention sink）现象，即BOS（序列起始）token等特定位置会获得不成比例的注意力权重。作者指出，在标准因果掩码下，BOS查询只能关注自身，因此后续token反复访问的BOS表示并不携带任何输入信息，这构成一个结构性缺陷。为此，论文提出BOS Summary，一种无需训练的推理时方法，通过让BOS位置汇总输入信息来修正这一问题。该工作值得关注，因为它揭示了Transformer注意力机制中一个被广泛忽视但影响深远的细节，并提供了一种零训练成本的改进方案，对理解LLM内部表示和提升推理质量具有潜在价值。",
+  "tags": [
+    "LLM",
+    "Attention Mechanism",
+    "Vision-Language Model",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BOS token在因果掩码下仅关注自身，导致后续token反复访问的表示不携带输入信息",
+      "注意力汇现象在LVLM和LLM中普遍存在，但BOS表示的信息空洞是一个被忽视的结构性问题",
+      "BOS Summary提供无需训练的推理时修正方案，降低了改进部署成本",
+      "该发现对理解Transformer注意力分配机制和优化长上下文推理有启示意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

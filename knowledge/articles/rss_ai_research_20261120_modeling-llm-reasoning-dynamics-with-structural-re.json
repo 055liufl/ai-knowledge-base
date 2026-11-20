@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-024",
+  "title": "Modeling LLM Reasoning Dynamics with Structural Representations",
+  "source_url": "https://arxiv.org/abs/2611.23749",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 T/E/S 的结构化表示方法，用于建模大语言模型推理过程的时间动态。研究将推理过程分解为持续活动（spans）和局部操作（events），并结合原始文本进行联合建模。在推理和信息检索任务上，该方法显著提升了下一结果预测的准确性：在 Transformer 架构下，76 个评估组中有 70 组得到改善；在 Qwen 结合 LoRA 的设置下，76 组中有 74 组得到改善。研究还发现，span 的持续时间和前置事件对预测后续计算需求具有重要影响。这项工作为理解 LLM 推理的内部机制提供了新的结构化视角，并展示了如何利用时间结构信息提升模型对推理过程的预测能力，对可解释性研究和推理优化具有潜在价值。",
+  "tags": [
+    "LLM Reasoning",
+    "Structural Representation",
+    "Temporal Modeling",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LLM 推理过程分解为文本、局部事件和持续活动段的结构化表示，能有效捕捉推理的时间动态。",
+      "事件和活动段信息在绝大多数评估组中提升了下一结果预测的准确性，验证了结构化建模的有效性。",
+      "活动段持续时间和前置事件是预测后续计算需求的重要特征，揭示了推理过程的时序规律。",
+      "该方法在 Transformer 和 Qwen+LoRA 两种设置下均表现稳定，具有良好的泛化性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

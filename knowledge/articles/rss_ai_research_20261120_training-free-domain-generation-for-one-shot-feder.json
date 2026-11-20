@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-035",
+  "title": "Training-Free Domain Generation for One-Shot Federated Learning with Server-Side Pre-trained Diffusion Models",
+  "source_url": "https://arxiv.org/abs/2611.23908",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于服务器端预训练扩散模型的无训练域生成方法，用于解决单轮联邦学习（OSFL）中客户端数据异构性带来的挑战。OSFL 通过仅进行一次通信轮次大幅降低通信开销，但有限的交互使得从异构客户端分布中学习变得困难。现有基于扩散模型的 OSFL 方法试图通过合成近似客户端分布的数据来缓解这一问题，但通常需要额外的训练或复杂的生成过程。该工作利用服务器端预训练的扩散模型，无需额外训练即可生成合成数据，从而在保持低通信成本的同时提升模型在异构数据上的性能。该方法创新性地将预训练扩散模型作为数据生成器，避免了客户端数据泄露风险，并降低了计算负担。这项研究值得关注，因为它为联邦学习中的通信效率与数据异构性矛盾提供了一种实用且高效的解决方案，有望推动 OSFL 在边缘计算和隐私敏感场景中的实际部署。",
+  "tags": [
+    "Federated Learning",
+    "Diffusion Models",
+    "Data Heterogeneity",
+    "One-Shot Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用服务器端预训练扩散模型进行无训练数据生成，避免了客户端额外计算和通信开销。",
+      "通过合成近似客户端分布的数据，有效缓解单轮联邦学习中的数据异构性问题。",
+      "该方法在保持低通信成本的同时，提升了模型在异构客户端数据上的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

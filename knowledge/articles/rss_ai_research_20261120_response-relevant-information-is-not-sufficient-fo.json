@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-083",
+  "title": "Response-Relevant Information Is Not Sufficient for Neural Training-State Equivalence",
+  "source_url": "https://arxiv.org/abs/2611.23245",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了神经网络训练状态等价性的判定问题，指出仅凭响应相关信息不足以证明两个网络处于相同训练状态。作者从操作层面定义了训练状态等价性：相对于一个干预族和预测时域，如果两个检查点在训练受到扰动并继续后表现出相似的响应，则视为等价。实验在一层Transformer学习模加法的全新运行中进行，发现对权重衰减脉冲的响应相对于随机种子具有高度可重复性。这一工作对模型可复现性、训练过程理解和检查点比较具有方法论意义，挑战了仅依赖输出响应判断训练状态等价的常见假设，为更严谨的训练动态分析提供了新视角。",
+  "tags": [
+    "Transformer",
+    "训练动态",
+    "可复现性",
+    "神经网络理论"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:50:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅凭响应相关信息不足以判定两个神经网络处于相同训练状态",
+      "训练状态等价性应操作化定义为：在干预族和时域下，训练扰动后继续训练时响应相似",
+      "在一层Transformer学习模加法的实验中，权重衰减脉冲响应相对于随机种子高度可重复",
+      "该研究为检查点比较和训练过程可复现性提供了更严格的方法论基础"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

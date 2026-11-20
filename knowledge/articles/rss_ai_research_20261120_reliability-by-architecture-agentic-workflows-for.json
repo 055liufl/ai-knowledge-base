@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-115",
+  "title": "Reliability by Architecture: Agentic Workflows for Validated Multi-Physics Simulation from Natural Language",
+  "source_url": "https://arxiv.org/abs/2611.23473",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于架构可靠性的智能体工作流，用于从自然语言描述自动准备、执行和验证强耦合多物理场仿真。传统上，这类仿真需要专家大量时间投入，而现有基于大语言模型（LLM）的智能体工作流虽然能协调仿真流程，但可靠性不足，缺乏对物理一致性和问题描述保真度的检查。作者设计了一个智能体框架，实现显式任务分配：LLM负责解释用户请求和仿真器诊断信息，生成输入组件，但关键物理验证由确定性模块完成，从而在架构层面保证可靠性。该工作值得关注，因为它将LLM的灵活性与传统仿真验证的严谨性结合，为科学计算自动化提供了可验证的路径，有望降低多物理场仿真的使用门槛并提升结果可信度。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Simulation",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "可靠性应通过架构设计实现，而非仅依赖LLM能力：将物理一致性检查交给确定性模块，LLM只负责语义理解和组件生成。",
+      "显式任务分配是智能体工作流可靠性的关键：LLM解释请求与诊断，验证逻辑独立于LLM。",
+      "该方法为自然语言驱动的多物理场仿真自动化提供了可验证的工程路径，平衡了灵活性与严谨性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

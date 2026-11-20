@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-118",
+  "title": "Beyond the Sink Token: Sink-Guided Key Editing in Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.23516",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了视觉语言模型（VLM）中注意力汇聚（sink）令牌的键方向对图像和问题令牌注意力的影响。作者发现，在四个被探测的VLM中，增强正汇聚对齐分量的幅度会平均增加注意力，而增强负分量则会减少注意力。基于这一发现，论文提出了一种“汇聚引导的键编辑”方法，通过直接编辑键向量中的汇聚对齐分量来调控注意力分配，从而可能改善模型对图像和问题的关注。这项工作超越了以往仅解释汇聚令牌为何吸引注意力的研究，转向主动利用汇聚方向进行注意力干预，为VLM的可解释性和可控性提供了新思路。其创新点在于揭示了汇聚键方向与注意力之间的因果性响应模式，并展示了键编辑作为一种轻量级注意力调控手段的潜力，对理解多模态模型内部机制和开发更可靠的VLM具有参考价值。",
+  "tags": [
+    "VLM",
+    "Attention",
+    "Interpretability",
+    "Key Editing"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在多个VLM中，增强正汇聚对齐的键分量会平均增加注意力，而增强负分量则减少注意力，表明汇聚键方向对注意力分配有因果性影响。",
+      "通过直接编辑键向量中的汇聚对齐分量，可以调控模型对图像和问题令牌的注意力，为注意力干预提供了一种轻量级方法。",
+      "该研究将汇聚令牌的作用从解释性观察推进到可操作的键编辑层面，有助于提升VLM的可控性和可解释性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

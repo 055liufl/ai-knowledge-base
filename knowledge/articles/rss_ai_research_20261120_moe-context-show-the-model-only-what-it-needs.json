@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-062",
+  "title": "MoE-Context: Show the Model Only What It Needs",
+  "source_url": "https://arxiv.org/abs/2611.24379",
+  "source_platform": "rss_ai_research",
+  "summary": "MoE-Context 提出了一种面向 AI Agent 的上下文管理方法，旨在解决语言模型在每一步都读取完整历史记录所带来的效率问题。该方法将上下文切分为多个块，在每一步执行前，通过一个快速的二分类（是/否）判断来决定当前步骤需要哪些块；未被选中的块被压缩为一行摘要笔记，但仍可随时召回，且不会删除任何信息。这种设计模仿了人类工作记忆的机制：只保留当下需要的信息，其余以粗略笔记形式留存。该工作值得关注，因为它直接针对 Agent 场景中长上下文带来的计算开销和注意力稀释问题，提出了一种动态、可逆的上下文筛选机制，有望提升 Agent 的推理效率与长程任务表现，并为上下文压缩与检索的融合提供了新思路。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "MoE",
+    "Long Context"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:49:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将上下文分块并按需动态筛选，可显著减少每步推理的上下文长度，降低计算开销。",
+      "未选中的上下文块被压缩为一行笔记而非删除，保留了可召回性，兼顾效率与信息完整性。",
+      "用快速二分类模型决定上下文块取舍，是一种轻量级的上下文路由机制，可视为 MoE 思想在上下文层面的应用。",
+      "该方法模仿人类工作记忆的按需提取模式，为 Agent 长程任务中的上下文管理提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-011",
+  "title": "SpecLook: Speculating Where to Look for Fast and Reliable Agentic MLLMs",
+  "source_url": "https://arxiv.org/abs/2611.23483",
+  "source_platform": "rss_ai_research",
+  "summary": "SpecLook 针对具备图像推理能力的智能体多模态大语言模型（Agentic MLLM）提出了一种加速与可靠性提升方案。这类模型通常通过交替进行推理与放大（zoom-in）工具调用来“用图像思考”，但顺序循环导致推理速度慢，且输出缺乏可靠性评分。已有对 token、推理步骤或答案的推测方法仍保留该循环，且答案推测可能接受高置信度错误。作者发现该循环大多只增加一次放大步骤，而一个小模型在多数数据划分上已领先于智能体。基于此，SpecLook 推测“应该看哪里”，以跳过冗余循环步骤并给出可靠性信号。该工作对提升多模态智能体的推理效率与可信度具有实用价值，值得关注。",
+  "tags": [
+    "MLLM",
+    "Agent",
+    "Speculative Decoding",
+    "Multimodal Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:27Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "智能体 MLLM 的推理-放大循环通常只增加一次放大步骤，存在可被推测跳过的冗余。",
+      "小模型在多数数据划分上已领先于完整智能体循环，可用于推测“看哪里”以加速。",
+      "现有答案推测方法可能接受高置信度错误，SpecLook 同时关注速度与可靠性评分。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

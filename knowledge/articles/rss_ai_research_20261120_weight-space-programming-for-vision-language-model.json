@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-126",
+  "title": "Weight Space Programming for Vision Language Model Repair",
+  "source_url": "https://arxiv.org/abs/2611.23615",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究权重空间编程（weight-space programming）在视觉语言模型修复中的有效性。作者在SmolVLM-256M和LFM2-VL-450M两个视觉语言模型的权重中人为植入故障，然后让一个编码智能体（coding agent）在不被告知故障位置的情况下直接编辑权重进行修复，并将每次编辑与原始权重进行对比验证。研究发现，智能体能够自主发现视觉投影层中被重新缩放的投影行以及视觉编码器中的噪声，并推断出未知的故障模式。这项工作值得关注，因为它首次系统性地探讨了无梯度、直接操作权重的模型修复范式所依赖的关键条件，为模型可解释性、权重级调试以及智能体自主修复模型缺陷提供了新的研究方向和实证基础。",
+  "tags": [
+    "权重空间编程",
+    "视觉语言模型",
+    "模型修复",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重空间编程可在无梯度条件下直接编辑模型权重，编码智能体能够自主定位并修复植入的故障",
+      "智能体无需被告知故障位置，即可发现视觉投影层中被重新缩放的投影行和视觉编码器中的噪声",
+      "该研究揭示了成功权重修复所依赖的关键因素，为模型调试与可解释性提供了新视角"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

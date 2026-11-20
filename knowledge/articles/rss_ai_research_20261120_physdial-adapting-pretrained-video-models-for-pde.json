@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-117",
+  "title": "PhysDial: Adapting Pretrained Video Models for PDE Simulation under Changing Physical Conditions",
+  "source_url": "https://arxiv.org/abs/2611.23498",
+  "source_platform": "rss_ai_research",
+  "summary": "PhysDial 是一篇关于将预训练视频模型适配用于偏微分方程（PDE）仿真的研究论文，重点解决物理条件变化下的仿真问题。传统 PDE 基础模型通常在固定条件下训练，难以应对轨迹内部条件变化（如参数突变、边界条件改变）的场景。作者提出反事实测试，衡量模型预测从同一状态向变化后求解器分支的偏移程度，发现固定条件训练的模型只能部分跟随变化。PhysDial 通过为 PDE 基础模型引入条件输入，使其能够适应动态物理条件，从而提升在控制、设计和场景研究中的实用性。该工作首次系统评估了轨迹内条件变化对 PDE 仿真的影响，为科学机器学习与视频预训练模型的交叉提供了新思路，值得关注。",
+  "tags": [
+    "PDE",
+    "Video Model",
+    "Foundation Model",
+    "Scientific Computing"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 PDE 基础模型在固定条件下训练，难以适应轨迹内物理条件变化，预测仅部分跟随变化后的求解器分支。",
+      "提出反事实测试，量化模型预测向变化后求解器分支的偏移程度，为评估条件适应性提供新指标。",
+      "通过为 PDE 基础模型引入条件输入，适配预训练视频模型以处理动态物理条件，提升仿真灵活性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

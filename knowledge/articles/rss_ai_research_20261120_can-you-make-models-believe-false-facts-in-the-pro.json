@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-039",
+  "title": "Can you make models believe false facts in the prompt?",
+  "source_url": "https://arxiv.org/abs/2611.23938",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了如何让大语言模型（LLM）在提示中相信虚假事实，以支持对齐评估和构建模型生物体。此前的方法如合成文档微调（SDF）需要为每组虚假信念单独微调模型，成本高昂且难以规模化。本文尝试训练一个单一模型，使其能够相信提示中<facts>标签内放置的任何事实，从而支持大规模SDF驱动的对齐评估。研究探索了通过提示注入和微调相结合的方式实现这一目标，旨在提升对齐评估的效率和可扩展性。该工作对于理解模型信念操控、安全评估以及构建可控的模型行为具有重要意义，尤其为对齐研究提供了新的工具和方法。",
+  "tags": [
+    "LLM",
+    "Alignment",
+    "Fine-tuning",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出单一模型即可相信提示中<facts>标签内任意虚假事实的方法，避免了为每组信念单独微调的成本。",
+      "该方法有望大幅提升基于SDF的对齐评估的规模和效率。",
+      "研究探索了提示注入与微调的结合，为模型信念操控提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-111",
+  "title": "QDA: Closed-Loop LLM Quantization Design with Agents",
+  "source_url": "https://arxiv.org/abs/2611.23388",
+  "source_platform": "rss_ai_research",
+  "summary": "QDA（Closed-Loop LLM Quantization Design with Agents）是一篇来自 arXiv 的论文，提出用 LLM Agent 自动设计大语言模型的后训练量化方案。传统上，量化配方（如权重/激活位宽、分组粒度、异常值处理策略等）需要专家针对每个新模型和精度目标反复手工调优，耗时且往往次优。QDA 的核心思路是构建闭环智能体系统：LLM Agent 在多轮迭代中生成候选量化配方、实际构建量化模型并评估其精度与效率表现，再根据反馈修正下一轮设计，从而让更多轮次带来更好的配方。该方法将量化设计从人工经验驱动转变为可自动迭代的搜索-评估闭环，有望降低部署成本、提升不同模型与精度组合下的量化质量。其价值在于把 Agent 能力引入模型压缩这一工程性极强的环节，为 LLM 推理优化提供可复用的自动化范式，对推理部署与量化研究均有参考意义。",
+  "tags": [
+    "Quantization",
+    "LLM",
+    "Agent",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化配方因模型和精度而异，专家手工重设计成本高且常非最优，自动化设计存在明确需求。",
+      "LLM Agent 通过多轮“生成候选—构建—评估”的闭环迭代，可将量化设计转化为可累积改进的搜索过程。",
+      "将 Agent 引入模型压缩流程，为推理部署优化提供了从人工经验驱动到自动迭代的范式转变。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

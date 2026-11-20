@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-028",
+  "title": "Evidence-Based Credit Assignment for Search-Augmented Language Models",
+  "source_url": "https://arxiv.org/abs/2611.23824",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对搜索增强语言模型（Search-Augmented Language Models）在强化学习训练中的信用分配问题提出改进。现有方法仅依赖终端答案奖励（outcome supervision），导致轨迹中每次搜索行为获得相同信用，无法区分检索内容是否有用；当某问题的所有采样轨迹均失败时，组中心化的结果优势会坍缩为零，即使轨迹中存在部分有效检索步骤。作者提出基于证据的信用分配方法（Evidence-Based Credit Assignment），旨在利用检索到的证据信息对搜索步骤进行细粒度信用评估，从而在无步骤级标注的情况下改善训练信号。该工作值得关注，因为它直击搜索增强LLM强化学习中的稀疏奖励与信用分配瓶颈，有望提升模型在多步检索推理任务中的学习效率与最终性能。",
+  "tags": [
+    "RL",
+    "Search-Augmented LM",
+    "Credit Assignment",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "终端答案奖励对轨迹中所有搜索步骤赋予相同信用，无法区分检索是否有效，是搜索增强LLM强化学习的关键局限。",
+      "当所有采样轨迹均失败时，组中心化优势估计会坍缩为零，导致即使存在部分有效检索步骤也无法获得学习信号。",
+      "基于证据的信用分配有望在无步骤级标注条件下实现更细粒度的搜索步骤评估，缓解稀疏奖励问题。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

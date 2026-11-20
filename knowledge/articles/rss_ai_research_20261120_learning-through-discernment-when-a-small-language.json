@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261120-136",
+  "title": "Learning through Discernment: when a small language model learns from user feedback on the job, and when it decays",
+  "source_url": "https://arxiv.org/abs/2611.23716",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究小型语言模型（Qwen3 0.6B 和 1.7B）能否通过夜间从日常工作中学习来持续改进。由于缺乏真实结果标签，模型需要判断哪些尝试值得学习，而模型自身的判断和用户反馈都可能出错。作者在 WebShop 和 τ²-bench 环境中进行了 127 次模拟，每次模拟持续长达一年，使用 LoRA 适配器每晚对“裁判”接受的尝试进行微调。研究发现，小模型在获得可靠反馈时能够通过辨别式学习提升性能，但在反馈噪声较大或模型自我判断不可靠时会出现性能衰减。该工作揭示了设备端小模型持续学习的潜力与风险，为设计更稳健的在线学习机制提供了重要参考。",
+  "tags": [
+    "Small Language Models",
+    "Continual Learning",
+    "User Feedback",
+    "LoRA",
+    "On-device Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:53:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "小模型可以通过夜间微调从日常交互中持续学习，但学习效果高度依赖反馈信号的质量。",
+      "模型自我判断和用户反馈都可能出错，导致学习到错误模式并引发性能衰减。",
+      "在 WebShop 和 τ²-bench 上的长期模拟（127 次、长达一年）表明，辨别式学习需要谨慎设计裁判机制。",
+      "设备端持续学习需平衡探索与利用，避免噪声反馈导致的模型退化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

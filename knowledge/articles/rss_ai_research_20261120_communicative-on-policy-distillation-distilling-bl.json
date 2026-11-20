@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-132",
+  "title": "Communicative On-Policy Distillation: Distilling Black-Box Teacher Capabilities through Communication for Long-Horizon Tasks",
+  "source_url": "https://arxiv.org/abs/2611.23673",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Communicative On-Policy Distillation (COPD)，一种针对长程任务的语言模型智能体蒸馏新范式。传统 on-policy distillation 依赖教师模型的 logits，但纯文本黑盒模型（如通过 API 访问的闭源模型）并不暴露这些信息，导致无法直接蒸馏。COPD 转而利用自然语言通信作为蒸馏媒介：在任务执行过程中，学生模型与更强的黑盒教师模型进行交互，通过教师给出的自然语言反馈、建议或纠正来学习其能力。该方法使小模型能够从无法获取内部概率分布的强模型中受益，扩展了蒸馏的适用范围，尤其适用于需要多步推理和长期规划的长程任务。该工作值得关注，因为它解决了黑盒教师蒸馏这一实际痛点，为智能体能力迁移提供了新思路，且不依赖模型内部访问权限，具有较高的实用价值和推广潜力。",
+  "tags": [
+    "Distillation",
+    "Agent",
+    "LLM",
+    "Black-Box",
+    "Long-Horizon"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 on-policy distillation 依赖教师 logits，无法用于纯文本黑盒模型；COPD 用自然语言通信替代 logits 作为蒸馏信号。",
+      "COPD 在任务执行过程中让学生模型与黑盒教师交互，通过教师的语言反馈学习其能力，适用于长程任务。",
+      "该方法降低了蒸馏对模型内部访问的依赖，使闭源强模型的能力可以迁移到小模型，扩展了蒸馏的适用场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-091",
+  "title": "Ephyra: A Property-Based Testing Framework for the LLM Era",
+  "source_url": "https://arxiv.org/abs/2611.23282",
+  "source_platform": "rss_ai_research",
+  "summary": "Ephyra 是一个面向 LLM 时代的基于属性的测试（PBT）框架，以 Rust 库形式实现。论文指出，随着编码智能体越来越多地编写软件测试，传统 PBT 库的设计已难以适应新需求。Ephyra 围绕三个核心概念构建：可定制性、可观测性和生成器合成。它允许用户自由组合生成、变异和收缩等测试循环组件，并能根据功能谓词自动合成这些组件。该工作值得关注，因为它将 PBT 从静态库转变为可编程、可观测的测试基础设施，为 LLM 驱动的自动化测试提供了更灵活、更可调试的底层支持，有望提升智能体生成测试的质量与可靠性。",
+  "tags": [
+    "Property-Based Testing",
+    "Rust",
+    "Coding Agents",
+    "Test Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:51:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统 PBT 库的设计假设已不适用于编码智能体大量编写测试的新场景，需要重新思考测试框架的抽象。",
+      "Ephyra 通过可组合的生成、变异和收缩循环，让用户自定义测试策略，而非受限于固定 API。",
+      "生成器合成机制可根据功能谓词自动构造测试组件，降低了为复杂属性编写生成器的门槛。",
+      "可观测性设计使测试过程更透明，便于调试和信任 LLM 生成的测试。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

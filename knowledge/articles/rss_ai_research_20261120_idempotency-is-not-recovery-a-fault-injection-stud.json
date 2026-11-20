@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-107",
+  "title": "Idempotency Is Not Recovery: A Fault-Injection Study of Language-Model Agent Tool Actions",
+  "source_url": "https://arxiv.org/abs/2611.23353",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究针对语言模型Agent在执行工具调用时因中断导致的故障模式展开系统性分析。当Agent的工具调用被中断时，外部系统可能已被修改但未获确认，重试可能导致重复操作，而假设成功则可能掩盖未执行的动作。作者构建了一个受控的Agent运行时环境，集成授权、操作账本、目标端幂等性、对账和证据密封等机制，并注入十种单主机故障类别，对比四种配置下的行为。核心发现是：幂等性本身并不等同于恢复能力——仅靠幂等重试无法解决所有中断场景，必须结合操作账本与对账机制才能可靠判断动作的真实状态。该工作为Agent工具调用的可靠性工程提供了实证基础，对构建生产级Agent系统具有重要参考价值。",
+  "tags": [
+    "Agent",
+    "Fault Injection",
+    "Reliability",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:51:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "幂等性仅能防止重复执行，无法解决中断后动作状态未知的问题，不能替代完整的恢复机制",
+      "操作账本与对账机制是判断工具调用真实结果的关键，需与幂等性配合使用",
+      "十类单主机故障注入实验揭示了Agent运行时在中断场景下的多种隐蔽失败模式",
+      "生产级Agent系统需要将授权、账本、幂等、对账和证据密封作为整体可靠性方案设计"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-123",
+  "title": "FutureBench: A Renewable Framework for Evaluating Knowledge-Context Conflict in LLMs",
+  "source_url": "https://arxiv.org/abs/2611.23601",
+  "source_platform": "rss_ai_research",
+  "summary": "FutureBench 是一个用于评估大语言模型（LLM）在知识-上下文冲突场景下表现的可再生评测框架。该框架利用带时间戳的问题、受控的段落三元组以及无上下文探针，系统性地测试模型在检索文本与自身参数化知识发生矛盾时的决策行为。研究覆盖 3,629 个问题和六个模型，发现一种名为 Verify 的提示策略（将核查与段落优先级结合）在五个测试模型上均提高了对错误答案的采纳率，尤其是在预截止日期事件上，主要通过取代模型原有正确答案的方式实现。该工作值得关注，因为它揭示了常见的“先核查再回答”提示范式可能反而诱导模型过度信任检索上下文，从而损害其内部知识的正确性，对 RAG 系统设计和提示工程具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "RAG",
+    "Evaluation",
+    "Prompt Engineering"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Verify 提示（核查+段落优先）在五个模型上均提高了对错误答案的采纳率，说明核查指令可能被模型误解为优先信任检索文本。",
+      "知识-上下文冲突的评估需要控制时间戳和段落三元组，FutureBench 提供了可再生的标准化测试方法。",
+      "无上下文探针有助于分离模型参数化知识与上下文影响，揭示提示策略对内部知识使用的干扰。",
+      "该发现对 RAG 系统设计提出警示：盲目添加核查步骤可能降低答案准确性，需谨慎设计提示优先级。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

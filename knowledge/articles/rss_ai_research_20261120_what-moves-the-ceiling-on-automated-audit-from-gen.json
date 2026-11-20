@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-085",
+  "title": "What Moves the Ceiling on Automated Audit: from General Code to Scientific Code, Results and Data",
+  "source_url": "https://arxiv.org/abs/2611.23250",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种已部署的自动化审计安排：由不同供应商的审计模型阅读另一模型生成的代码，并结合确定性检查来验证代码可验证的部分。研究以不依赖任何模型提供的地面真值为基准，测量该安排的局限性。在带有隐藏测试的通用代码上，审计模型进行八次阅读后，召回率达到30.0%（置信区间20.0-40.7%），同时在正确代码上的误报率为16.0%（10.1-22.3%），且收益递减、未见平台期。该工作首次系统量化了跨供应商模型审计在通用代码上的天花板，并指出从通用代码扩展到科学代码、结果与数据审计时面临的额外挑战，对构建可靠的AI代码审计流水线具有重要参考价值。",
+  "tags": [
+    "代码审计",
+    "LLM评估",
+    "自动化验证",
+    "AI安全"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:50:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "跨供应商模型审计在通用代码上的召回率仅约30%，误报率约16%，且增加审计次数收益递减，表明当前自动化审计存在明显天花板。",
+      "确定性检查与模型审计结合是已部署的实用方案，但模型审计的局限性需要被量化并纳入系统设计。",
+      "从通用代码扩展到科学代码、结果与数据审计时，验证难度和不确定性显著增加，需要新的评估基准和方法。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

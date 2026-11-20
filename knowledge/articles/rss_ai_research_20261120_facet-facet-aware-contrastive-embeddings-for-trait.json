@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261120-015",
+  "title": "FACET - Facet Aware Contrastive Embeddings for Traits- Big Five Estimation from Life Narratives",
+  "source_url": "https://arxiv.org/abs/2611.23560",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 FACET 框架，用于从生活叙事文本中估计大五人格特质分数。作者指出，人格在书面语言中的信号本身较弱且不一致，现有基于文本的方法通常只在输入层或决策层简单拼接语言模型表示与心理语言学特征，未能充分挖掘两种视角的互补性。FACET 采用三阶段框架：先分别获取语言模型表示与心理语言学表示，再通过对比学习（contrastive embeddings）在特质层面进行更精细的对齐与融合，同时对预测目标（大五人格各维度）进行分解，以缓解整体信号稀疏的问题。其核心创新在于“facet aware”的对比嵌入设计，即针对不同人格侧面构建对比学习目标，使模型能够捕捉更细粒度的心理语言线索。该工作值得关注的原因在于：人格计算是情感计算与用户建模的重要方向，而生活叙事（life narratives）是比短文本更丰富但也更嘈杂的数据源；将对比学习引入心理测量预测，为弱信号场景下的多视图表示融合提供了新思路，对心理健康评估、个性化推荐与人机交互中的用户画像构建具有潜在应用价值。",
+  "tags": [
+    "对比学习",
+    "人格计算",
+    "文本表示",
+    "心理语言学",
+    "多视图融合"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "人格信号在文本中弱且不一致，简单拼接语言模型与心理语言学特征不足以充分提取信号，需要在表示层面进行更精细的融合。",
+      "将预测目标按人格侧面（facet）分解，并配合对比学习构建特质感知的嵌入空间，可缓解整体信号稀疏问题。",
+      "生活叙事作为长文本数据源，比短文本包含更丰富的心理语言线索，但也带来更大的噪声与建模挑战。",
+      "三阶段框架为弱信号心理测量预测中的多视图表示对齐提供了可复用的方法论范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-128",
+  "title": "FairPGT: Partitioned Graph Transformers for Dual-Level Fair Graph Clustering",
+  "source_url": "https://arxiv.org/abs/2611.23631",
+  "source_platform": "rss_ai_research",
+  "summary": "FairPGT 是一种面向公平图聚类的分区图 Transformer 方法，旨在解决属性图聚类中因社区与受保护群体对齐而产生的群体偏见问题。传统图 Transformer 通过同组注意力机制可能放大偏见，且全局注意力限制了可扩展性。FairPGT 将注意力限制在 METIS 划分的子图内，并通过路由令牌连接各分区，从而将二次复杂度降低为可扩展的分区计算。该方法在保持聚类质量的同时提升公平性，适用于社交网络、推荐系统等需要公平无偏聚类的场景。其创新点在于将图分区与路由令牌结合，兼顾公平性与效率，为公平图学习提供了新思路。",
+  "tags": [
+    "Graph Transformer",
+    "Fair Clustering",
+    "Graph Partitioning",
+    "Scalability"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "图 Transformer 的同组注意力会放大人口统计偏见，需在架构层面引入公平性约束。",
+      "通过 METIS 分区和路由令牌限制注意力范围，可降低计算复杂度并提升可扩展性。",
+      "分区策略在公平图聚类中能同时缓解偏见放大和全局注意力瓶颈。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

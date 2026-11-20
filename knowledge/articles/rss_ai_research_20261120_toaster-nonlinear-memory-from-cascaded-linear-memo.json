@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-129",
+  "title": "Toaster: Nonlinear Memory from Cascaded Linear Memories and Target Propagation",
+  "source_url": "https://arxiv.org/abs/2611.23648",
+  "source_platform": "rss_ai_research",
+  "summary": "Toaster 提出了一种新的循环记忆架构，旨在结合线性记忆（如 DeltaNet、KDA）的高效训练与深度记忆（如 TTT-MLP、Titans）的强大表达能力。线性记忆每 token 执行一次 delta-rule 更新，其块内乘积具有精确的 WY 形式，因而训练快速；深度记忆使用小型 MLP，能存储矩阵无法表示的映射，但更新缺乏 WY 形式，训练较慢。Toaster 通过级联线性记忆并利用目标传播（target propagation）来构建非线性记忆，从而在保持 WY 形式可训练性的同时，获得类似深度记忆的非线性表达能力。该工作为长序列建模提供了一种兼顾效率与性能的新思路，值得关注。",
+  "tags": [
+    "RNN",
+    "Memory",
+    "Linear Attention",
+    "Target Propagation"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "线性记忆的块内更新具有精确 WY 形式，训练高效但表达能力受限。",
+      "深度记忆（如 MLP）能存储更复杂的映射，但缺乏 WY 形式导致训练困难。",
+      "Toaster 通过级联线性记忆与目标传播，在保持 WY 形式的同时引入非线性。",
+      "该方法为长序列建模提供了一种兼顾训练效率与记忆容量的新架构。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

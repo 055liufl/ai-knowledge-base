@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261120-006",
+  "title": "Why Sub-4-Bit Vision CNNs Collapse and Where Mixed-Precision Recovery Stops",
+  "source_url": "https://arxiv.org/abs/2611.23445",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究系统分析了视觉卷积神经网络（CNN）在权重压缩至4比特以下时出现的灾难性精度崩溃现象，并探究了混合精度恢复策略的失效边界。作者指出，尽管低比特量化对资源受限环境下的深度视觉模型至关重要，但将权重量化到4比特以下常导致精度骤降。混合精度恢复通过选择性保留高精度参数来挽救精度，但其内在机制和失效位置尚不明确。本文通过系统性实验揭示了崩溃发生的具体位置与原因，并明确了混合精度恢复策略的停止条件，为低比特量化模型的设计与部署提供了关键理论依据。该工作对边缘计算、模型压缩和高效推理领域具有重要参考价值，尤其有助于开发者在极端量化场景下做出更合理的精度-效率权衡。",
+  "tags": [
+    "量化",
+    "模型压缩",
+    "CNN",
+    "混合精度",
+    "边缘计算"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:47:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉CNN在权重低于4比特时会出现灾难性精度崩溃，其崩溃位置与网络结构及量化策略密切相关。",
+      "混合精度恢复策略存在明确的失效边界，并非所有层都适合保留高精度参数。",
+      "系统分析揭示了低比特量化下精度崩溃的机制，为设计更鲁棒的量化方案提供了理论指导。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

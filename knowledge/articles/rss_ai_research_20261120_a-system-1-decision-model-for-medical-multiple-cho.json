@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-029",
+  "title": "A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models",
+  "source_url": "https://arxiv.org/abs/2611.23832",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于冻结语言模型的System 1决策模型，用于医学多项选择题的快速作答。模型将问题和每个选项分别通过冻结的语言模型编码为向量，再通过两个小型可训练头将其映射到共享空间，选择距离最近的选项作为答案。该设计此前已在智能体决策中验证，但本文首次系统评估其在需要医学知识的考试题上的表现。研究发现，在医学多选题中，正确选项与问题的相似度往往并不高于错误选项，这对基于相似度的决策模型构成挑战。该工作值得关注，因为它探索了冻结大模型在专业领域快速推理中的能力边界，为低成本、低延迟的医学问答系统提供了新思路，同时也揭示了System 1式相似度匹配在知识密集型任务中的局限性。",
+  "tags": [
+    "LLM",
+    "Medical QA",
+    "Decision Model",
+    "Frozen Language Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:48:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结语言模型配合小型可训练头可实现单次前向的快速多选题决策，无需微调大模型。",
+      "医学多选题中正确选项与问题的相似度不一定高于错误选项，基于相似度的System 1模型面临根本性挑战。",
+      "该研究为评估冻结模型在专业领域快速推理中的能力边界提供了实证分析。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

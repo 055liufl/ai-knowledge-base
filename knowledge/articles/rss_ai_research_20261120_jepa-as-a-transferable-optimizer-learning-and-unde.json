@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261120-124",
+  "title": "JEPA as a Transferable Optimizer: Learning and Understanding Black-Box Optimization from Reward-Agnostic Pretraining",
+  "source_url": "https://arxiv.org/abs/2611.23608",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 JEPA-PS（JEPA Policy Search），一种基于联合嵌入预测架构（JEPA）的学习型黑盒优化器。与传统学习优化器不同，JEPA-PS 在随机 rollout 上进行与奖励无关的预训练，不依赖梯度信息，旨在探索学习优化器从搜索历史中实际利用了哪些信息。该方法将优化过程视为策略搜索问题，通过 JEPA 在潜在空间预测未来状态，从而学习可迁移的优化策略。该工作的价值在于：一是提出了一种新的预训练范式，使优化器能在无奖励信号下学习通用搜索行为；二是从可解释性角度分析了学习优化器的信息利用机制，补充了仅关注性能超越的研究视角；三是展示了跨任务迁移的潜力，为黑盒优化领域提供了新的研究方向和工具。",
+  "tags": [
+    "Black-Box Optimization",
+    "JEPA",
+    "Learned Optimizer",
+    "Self-Supervised Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-20T16:44:50Z",
+  "collected_at": "2026-11-20T16:52:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "JEPA-PS 通过奖励无关的随机 rollout 预训练，使优化器学习可迁移的搜索策略，而非依赖特定任务的奖励信号。",
+      "该研究关注学习优化器从搜索历史中提取了哪些信息，为理解其内部机制提供了新视角。",
+      "基于联合嵌入预测架构的潜在空间预测，可能提升优化器在无梯度黑盒场景下的泛化能力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
