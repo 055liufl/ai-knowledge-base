@@ -1,0 +1,30 @@
+{
+  "id": "rss-company-blog-20261121-006",
+  "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+  "source_url": "https://huggingface.co/blog/token-pooling",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了针对多向量嵌入模型的 Token Pooling-Aware Training 方法。多向量嵌入模型（如 ColBERT）通过为每个 token 生成向量来实现细粒度检索，但存储和计算开销巨大。Token Pooling 通过合并相似 token 的向量来减少向量数量，从而降低存储和延迟。然而，传统的池化操作在训练后应用会导致性能下降。本文提出在训练过程中引入池化感知，使模型能够适应池化后的表示。该方法在 Hugging Face 博客中详细阐述，包括实现细节和实验结果，展示了在保持检索质量的同时显著减少向量数量的效果。这项工作对于构建高效的多向量检索系统具有重要意义，尤其适用于大规模部署场景。",
+  "tags": [
+    "Embedding",
+    "Retrieval",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-11-21T15:55:49Z",
+  "collected_at": "2026-11-21T15:57:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Token Pooling 可大幅减少多向量嵌入模型的存储和计算开销",
+      "训练时引入池化感知能避免性能下降，优于训练后池化",
+      "该方法在检索质量与效率之间取得了更好的平衡"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

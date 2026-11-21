@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261121-078",
+  "title": "Build a Domain-Specific Embedding Model in Under a Day",
+  "source_url": "https://huggingface.co/blog/nvidia/domain-specific-embedding-finetune",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何在不到一天的时间内构建领域特定的嵌入模型。基于NVIDIA的技术博客，该方法利用参数高效微调技术（如LoRA）和对比学习，在特定领域数据上微调预训练的嵌入模型（如NV-Embed、E5等），从而显著提升检索增强生成（RAG）等下游任务的性能。文章强调了领域适应的重要性：通用嵌入模型在专业领域（如医疗、法律、金融）表现不佳，而领域微调能大幅提高语义相似度计算的准确性。流程包括数据准备（正负样本对）、模型选择、微调训练和评估，并提供了实践指南和代码示例。该方法降低了定制嵌入模型的门槛，使开发者能在有限算力下快速获得高质量领域模型，对RAG应用落地具有重要价值。",
+  "tags": [
+    "Embedding",
+    "Fine-tuning",
+    "RAG",
+    "NVIDIA"
+  ],
+  "author": null,
+  "published_at": "2026-11-21T15:55:49Z",
+  "collected_at": "2026-11-21T16:00:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "领域特定嵌入模型能显著提升RAG在专业领域的检索质量，通用模型往往表现不佳。",
+      "利用参数高效微调（如LoRA）和对比学习，可在一天内完成领域嵌入模型的训练。",
+      "数据准备是关键：需要构建领域相关的正负样本对，并设计合适的难负样本挖掘策略。",
+      "NVIDIA提供的工具和预训练模型（如NV-Embed）降低了定制嵌入模型的技术门槛和算力需求。"
+    ],
+    "tech_category": "tool",
+    "audience": "developer"
+  },
+  "version": 1
+}

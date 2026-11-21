@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261121-062",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，讨论 vLLM 从 V0 到 V1 版本演进过程中在强化学习（RL）场景下的正确性问题。vLLM 是当前主流的高吞吐 LLM 推理引擎，广泛用于 RLHF/RLVR 等训练流程中的采样环节。文章核心观点是：在将 vLLM 升级到 V1 架构时，必须优先保证推理结果的正确性（correctness），再考虑性能优化或功能修正（corrections）。由于 RL 训练对采样结果的数值一致性极为敏感，推理引擎的细微偏差可能导致奖励信号失真、训练不稳定甚至策略崩溃。文章可能涉及 V1 引擎在调度、KV cache 管理、采样逻辑等方面的行为差异，以及如何通过对比测试、数值校验等手段确保 V0 与 V1 输出一致。对于使用 vLLM 进行 RL 训练的研究者和工程师而言，这是一份重要的迁移与验证指南，提醒社区在追求性能提升的同时不能忽视正确性基线。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-21T15:55:49Z",
+  "collected_at": "2026-11-21T16:00:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在 RL 训练流程中，推理引擎的数值正确性比性能优化更优先，V0 到 V1 的迁移需先建立正确性基线",
+      "vLLM V1 在调度与 KV cache 管理上的行为变化可能影响采样一致性，需通过对比测试验证输出等价性",
+      "推理引擎的细微偏差会通过奖励信号放大，导致 RL 训练不稳定，因此迁移前必须做严格的数值校验"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
