@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261122-012",
+  "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+  "source_url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+  "source_platform": "rss_company_blog",
+  "summary": "该内容来自 Hugging Face 博客（微软发布），介绍 ThinkingBox：一种将数据库评分结果转化为强化学习奖励信号的方法，用于对智能体进行后训练。核心思路是把数据库任务的评分机制（如 SQL 执行结果、查询正确性等）直接作为 RL 奖励，从而在真实、可验证的任务环境中优化 Agent 的推理与操作能力，而非依赖人工标注或偏好模型。这值得关注的原因在于：数据库任务天然具备可自动验证的奖励信号，是 RL 后训练的理想场景；该方法展示了如何把结构化环境中的确定性反馈转化为训练信号，为 Agent 在工具调用、代码生成、数据操作等可验证领域的能力提升提供了可复用的范式，也体现了微软在 Agent 后训练方向上的工程化探索。",
+  "tags": [
+    "Agent",
+    "RL",
+    "Post-Training",
+    "Database"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:00:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据库任务的确定性评分可天然转化为 RL 奖励，避免人工标注和偏好模型的噪声",
+      "在可验证环境中进行 RL 后训练，是提升 Agent 工具调用与推理能力的有效路径",
+      "ThinkingBox 展示了将结构化环境反馈接入 Agent 训练流程的工程化范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

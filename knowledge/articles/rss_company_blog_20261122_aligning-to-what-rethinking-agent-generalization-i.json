@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261122-113",
+  "title": "Aligning to What? Rethinking Agent Generalization in MiniMax M2",
+  "source_url": "https://huggingface.co/blog/MiniMax-AI/aligning-to-what",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 MiniMax 团队在 Hugging Face 博客上发布的技术文章，围绕其新一代模型 MiniMax M2 展开，核心议题是「对齐到何处」——即智能体（Agent）泛化能力的对齐目标与评估方式。文章质疑了当前 Agent 训练中常见的做法：将模型对齐到特定工具调用格式、特定任务轨迹或特定环境反馈，从而在基准测试上取得高分，但这种对齐可能只是过拟合到评测分布，而非真正获得可迁移的通用智能体能力。作者提出应重新思考 Agent 泛化的定义，区分「表面格式对齐」与「底层决策能力对齐」，并讨论如何在训练数据构造、奖励设计与评测体系上避免短视对齐。文章结合 MiniMax M2 的实践，分享了在多样化工具、多轮交互和开放环境下的泛化表现观察，强调鲁棒性与跨任务迁移才是衡量 Agent 对齐质量的关键指标。该文值得关注，因为它触及当前 Agent 研究的一个根本性误区：基准分数提升不等于能力泛化，对开发者设计训练与评测流程、对研究者理解对齐目标均有直接参考价值。",
+  "tags": [
+    "Agent",
+    "Alignment",
+    "Generalization",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:05:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 对齐若只针对特定工具格式或评测轨迹，容易过拟合基准而非获得可迁移能力",
+      "应区分表面格式对齐与底层决策能力对齐，后者才是泛化的关键",
+      "多样化工具、多轮交互与开放环境下的鲁棒性是衡量 Agent 对齐质量的核心指标",
+      "基准分数提升不等于能力泛化，训练数据构造与奖励设计需避免短视对齐"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

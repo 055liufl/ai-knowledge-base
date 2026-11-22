@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261122-008",
+  "title": "LLMs can read and write executables byte by byte from a hex dump",
+  "source_url": "https://sgiannopoulos.github.io/blog/machine-code-programming/",
+  "source_platform": "rss_general_tech",
+  "summary": "该内容介绍了一种让大语言模型（LLM）直接以十六进制转储形式读写可执行机器码的方法。作者通过博客展示了如何将二进制可执行文件转换为十六进制文本，并让 LLM 逐字节理解、修改和生成机器码，从而绕过传统汇编器/编译器流程。这一尝试值得关注，因为它挑战了 LLM 只能处理自然语言和高级编程语言的固有认知，揭示了模型在底层二进制表示上的潜在能力。该方法可用于逆向工程、二进制补丁、恶意软件分析、漏洞挖掘等场景，也为研究 LLM 对非文本结构化数据的理解能力提供了新视角。不过，当前方法依赖模型对十六进制模式的记忆与推理，准确性和可靠性仍有待验证，且对复杂程序的支持有限。总体而言，这是一项具有探索性和启发性的实验，展示了 LLM 在系统底层编程领域的可能性，但距离实用化仍有距离。",
+  "tags": [
+    "LLM",
+    "二进制分析",
+    "逆向工程",
+    "机器码"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:24Z",
+  "collected_at": "2026-11-22T15:59:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 可以直接处理十六进制形式的机器码，无需经过汇编器或编译器",
+      "该方法为二进制补丁、逆向工程和恶意软件分析提供了新思路",
+      "模型对底层二进制模式的理解能力仍有限，准确性和可靠性需进一步验证",
+      "该实验拓展了 LLM 在系统编程和底层数据表示方面的研究边界"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

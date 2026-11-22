@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261122-092",
+  "title": "Training Design for Text-to-Image Models: Lessons from Ablations",
+  "source_url": "https://huggingface.co/blog/Photoroom/prx-part2",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是Photoroom团队关于文本到图像模型训练设计的经验分享，基于一系列消融实验（Ablations）总结出关键设计选择。文章深入探讨了训练过程中的多个维度，包括数据质量与规模、模型架构、损失函数、优化器设置、文本编码器选择、噪声调度等，并对比了不同配置对生成质量的影响。这些实验揭示了哪些因素对模型性能至关重要，例如数据清洗比单纯增加数据量更有效，某些架构改动可能带来边际收益递减。该内容值得关注，因为它提供了来自工业界的一手实验证据，帮助研究者和开发者避免常见陷阱，优化训练流程，节省计算资源。文章强调实践中的权衡，而非单纯追求指标提升，对文本到图像模型的训练具有实际指导意义。",
+  "tags": [
+    "Text-to-Image",
+    "Diffusion Models",
+    "Training",
+    "Ablation Study"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:04:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "数据质量与清洗策略比单纯增加数据量对生成质量的影响更大。",
+      "模型架构的某些改进（如注意力机制调整）可能带来边际收益递减，需权衡计算成本。",
+      "文本编码器的选择与微调策略显著影响文本-图像对齐能力。",
+      "训练超参数（如学习率调度、噪声采样）的细微调整可能大幅影响最终性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

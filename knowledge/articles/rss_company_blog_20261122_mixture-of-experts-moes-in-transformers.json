@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261122-084",
+  "title": "Mixture of Experts (MoEs) in Transformers",
+  "source_url": "https://huggingface.co/blog/moe-transformers",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客上关于 Transformer 中混合专家（MoE）技术的介绍性文章。MoE 是一种模型架构，通过将前馈网络替换为多个“专家”网络，并利用门控机制为每个输入动态选择少数专家进行计算，从而在保持计算成本几乎不变的情况下大幅增加模型参数量。文章可能涵盖 MoE 的基本原理、在 Transformer 中的实现方式（如稀疏门控、专家容量、负载均衡等关键问题），以及其在自然语言处理中的应用和优势。该内容值得关注，因为 MoE 已成为构建超大规模模型（如 Switch Transformer、GShard）的核心技术，能够显著提升模型容量与训练效率，同时降低推理成本，对研究者和开发者理解和应用大模型架构具有重要参考价值。",
+  "tags": [
+    "MoE",
+    "Transformer",
+    "LLM",
+    "模型架构"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:03:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 通过稀疏激活专家网络，在几乎不增加计算量的情况下大幅提升模型参数量。",
+      "门控机制和负载均衡是 MoE 训练中的关键挑战，影响模型效果与稳定性。",
+      "MoE 已被成功应用于超大规模语言模型，如 Switch Transformer，显著提升训练效率。",
+      "理解 MoE 有助于开发者优化大模型推理成本与部署策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

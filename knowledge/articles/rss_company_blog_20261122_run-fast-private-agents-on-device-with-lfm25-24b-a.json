@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261122-015",
+  "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+  "source_url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+  "source_platform": "rss_company_blog",
+  "summary": "Liquid AI 在 Hugging Face 博客发布了 LFM2.5-24B-A2B 模型，主打在设备端本地运行快速、私密的智能体（Agent）。该模型名称中的 A2B 暗示其采用激活参数约 2B 的稀疏/混合专家式架构，总参数规模 24B，从而在保持较强能力的同时大幅降低推理算力需求，使本地部署成为可能。其核心价值在于三点：一是隐私，数据无需上传云端即可完成 Agent 推理；二是速度，小激活参数带来低延迟；三是端侧可用性，降低对昂贵 GPU 集群的依赖。这契合当前行业从云端大模型向端侧小模型、从通用聊天向自主 Agent 演进的趋势，对希望在本地构建私有智能体应用的开发者具有较高参考价值。不过博客正文内容较少，具体基准测试、量化方案与硬件要求等信息需进一步查阅模型卡与论文。",
+  "tags": [
+    "端侧模型",
+    "Agent",
+    "MoE",
+    "隐私计算"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:00:52Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "24B 总参数配合约 2B 激活参数，在能力与端侧推理成本之间取得平衡",
+      "本地运行 Agent 可避免数据外传，满足隐私敏感场景需求",
+      "反映大模型向端侧化、稀疏化与 Agent 化融合的行业趋势",
+      "实际部署效果需结合量化方案与目标硬件进一步验证"
+    ],
+    "tech_category": "model",
+    "audience": "developer"
+  },
+  "version": 1
+}

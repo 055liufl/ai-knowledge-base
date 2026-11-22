@@ -1,0 +1,33 @@
+{
+  "id": "rss-company-blog-20261122-025",
+  "title": "Training a coding model to paint watercolours with TRL and OpenEnv",
+  "source_url": "https://huggingface.co/blog/train-to-paint-with-code",
+  "source_platform": "rss_company_blog",
+  "summary": "该内容来自 Hugging Face 博客，介绍如何利用 TRL（Transformer Reinforcement Learning）和 OpenEnv 训练一个编码模型来绘制水彩画。核心思路是将绘画任务转化为代码生成问题：模型输出绘图代码，由环境执行并渲染成图像，再通过强化学习（如 GRPO 等算法）依据视觉或奖励信号优化模型策略。OpenEnv 提供了可交互的执行环境，使模型能够在“生成代码—执行—获得反馈”的闭环中学习。这一工作的价值在于展示了强化学习在非传统代码任务（创意视觉生成）上的应用潜力，验证了将代码模型作为通用“行动器”配合环境反馈进行后训练的可行性，为多模态奖励驱动的代码智能体训练提供了可复现的实践范例。对关注 RLHF/RLVR、代码智能体和创意 AI 的研究者与开发者具有较高参考价值。",
+  "tags": [
+    "TRL",
+    "OpenEnv",
+    "Reinforcement Learning",
+    "Code Generation",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:29Z",
+  "collected_at": "2026-11-22T16:01:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将绘画任务建模为代码生成问题，通过执行渲染结果作为反馈信号，实现端到端的强化学习训练闭环。",
+      "TRL 与 OpenEnv 的组合提供了一种可复用的范式：代码模型作为策略网络，环境负责执行与奖励计算。",
+      "该实验证明代码模型可借助 RL 后训练扩展到创意视觉任务，拓展了代码智能体的应用边界。",
+      "视觉/渲染奖励的设计是此类任务的关键，决定了模型学习到的绘画风格与质量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

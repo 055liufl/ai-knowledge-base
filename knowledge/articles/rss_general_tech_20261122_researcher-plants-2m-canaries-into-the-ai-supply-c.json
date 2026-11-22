@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261122-010",
+  "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced",
+  "source_url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+  "source_platform": "rss_general_tech",
+  "summary": "该报道介绍了一位安全研究者向 AI 供应链中植入约 200 万个“金丝雀”（canary token，一种用于检测数据泄露的诱饵标记），以追踪用户秘密数据在 AI 供应链中的流向。实验揭示，AI 供应链存在严重的数据泄露问题：用户输入、提示词乃至敏感信息会经由模型提供商、第三方 API、日志系统和训练管道等多个环节被意外暴露，泄露速度令人担忧。这一发现值得关注，因为当前 AI 应用普遍依赖多层外部服务，数据边界模糊，而现有隐私合规手段难以覆盖这种复杂的供应链结构。该研究以大规模实证方式量化了泄露风险，为开发者、模型提供商和合规团队敲响警钟，也提示需要建立更细粒度的数据追踪与隔离机制。",
+  "tags": [
+    "AI供应链",
+    "数据隐私",
+    "安全研究",
+    "金丝雀令牌"
+  ],
+  "author": null,
+  "published_at": "2026-11-22T15:58:25Z",
+  "collected_at": "2026-11-22T15:59:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI 供应链的多层外部依赖导致用户敏感数据在多个环节被意外泄露，风险远超传统应用",
+      "通过大规模植入金丝雀令牌，可实证量化数据在模型提供商、API 和日志系统中的泄露路径与速度",
+      "现有隐私合规框架难以覆盖 AI 供应链的复杂数据流，需要新的追踪与隔离机制"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}
