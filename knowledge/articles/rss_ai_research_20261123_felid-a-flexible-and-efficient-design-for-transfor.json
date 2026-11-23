@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-139",
+  "title": "Felid: A Flexible and Efficient Design for Transformer Fine-Tuning over Encrypted Data",
+  "source_url": "https://arxiv.org/abs/2611.27175",
+  "source_platform": "rss_ai_research",
+  "summary": "Felid 是一种面向全同态加密（FHE）场景下 Transformer 微调的高效灵活设计，旨在解决隐私保护机器学习中加密计算开销过大的核心瓶颈。现有工作多从模型架构层面优化效率，但整体性能仍受限于密文运算的固有高成本。Felid 将优化焦点下沉到密文操作层面，通过灵活高效的算子设计与调度策略，降低加密 Transformer 微调的计算与通信开销，从而在保证数据全程加密、非交互式训练的前提下提升可用性。该工作值得关注，因为它直接触及 FHE 落地大模型训练的关键痛点——密文运算效率，为隐私保护微调提供了新的系统级优化思路，对需要在敏感数据上训练或适配大模型的场景（如医疗、金融）具有实际意义。",
+  "tags": [
+    "FHE",
+    "Transformer",
+    "Privacy-Preserving ML",
+    "Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 FHE Transformer 微调优化多停留在架构层面，整体性能仍受密文运算固有成本制约",
+      "Felid 将优化重心下沉到密文操作级别，从算子与调度层面挖掘效率提升空间",
+      "该设计在保持非交互式、全加密训练的同时，有望显著降低微调的计算与通信开销",
+      "为敏感数据场景下的大模型隐私保护微调提供了系统级优化新路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

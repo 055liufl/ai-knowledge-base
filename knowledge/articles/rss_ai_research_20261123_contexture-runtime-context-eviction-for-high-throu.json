@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-120",
+  "title": "Contexture: Runtime Context Eviction for High-Throughput Agent Serving",
+  "source_url": "https://arxiv.org/abs/2611.26980",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Contexture，一种面向高吞吐 LLM Agent 服务的运行时上下文驱逐机制。研究指出，Hermes、OpenClaw、Codex 等 Agent 会反复重发不断增长的执行历史，导致高带宽内存（HBM）中共享 GPU KV 缓存需求激增，而共享 KV 容量已成为限制 Agent 服务吞吐量的关键瓶颈。现有上下文压缩方法缺乏全局缓存状态可见性，运行时 KV 管理器又缺少工具执行信息，二者难以协同。Contexture 通过将 token 追溯到其来源工具操作，发现后续操作对早期上下文的依赖模式，从而在运行时做出更精准的驱逐决策。该工作将 Agent 执行语义与 KV 缓存管理相结合，为高并发 Agent 推理服务提供了新的系统级优化思路，对构建低成本、高吞吐的 Agent 基础设施具有实用价值。",
+  "tags": [
+    "Agent",
+    "KV Cache",
+    "LLM Serving",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共享 KV 缓存容量而非算力，正成为高吞吐 Agent 服务的核心瓶颈",
+      "将 token 追溯到来源工具操作，可为上下文驱逐提供执行语义依据",
+      "现有上下文压缩与运行时 KV 管理各自为政，缺乏全局缓存状态与工具执行信息的联合视图",
+      "Agent 服务优化需打通应用层执行历史与底层显存管理"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-072",
+  "title": "Recoverable Symbols, Unstable Execution: Auditing Internal Pathways and Decision Identity in Visual State Tracking",
+  "source_url": "https://arxiv.org/abs/2611.27715",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究视觉状态跟踪任务中模型决策不稳定的问题：即使视觉特征保留了任务所需的全部符号信息，模型仍会因图像中无关部分的变化而改变答案。作者通过诊断性实验，将每个输入与一个保留所有查询符号的供体视图配对，利用冻结的ViT编码器和循环执行器来检测模型内部路径与决策身份。研究发现，模型虽然能恢复符号，但执行过程不稳定，揭示了视觉特征与决策逻辑之间的鸿沟。该工作为理解视觉推理模型的鲁棒性和内部机制提供了新的审计方法，对提升多模态模型的可解释性和可靠性具有重要意义。",
+  "tags": [
+    "视觉状态跟踪",
+    "模型鲁棒性",
+    "可解释性",
+    "ViT"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:58:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉特征可以保留任务所需的所有符号信息，但模型决策仍会因无关图像变化而改变，表明执行过程存在不稳定性。",
+      "通过配对输入与保留查询符号的供体视图，可以审计模型内部路径与决策身份的一致性。",
+      "冻结ViT编码器与循环执行器的组合揭示了视觉特征与决策逻辑之间的鸿沟，为模型可解释性提供了新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

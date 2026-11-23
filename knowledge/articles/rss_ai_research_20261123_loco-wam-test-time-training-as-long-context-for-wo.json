@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-104",
+  "title": "LoCo-WAM: Test-Time Training as Long Context for World-Action Models",
+  "source_url": "https://arxiv.org/abs/2611.26853",
+  "source_platform": "rss_ai_research",
+  "summary": "LoCo-WAM 提出了一种面向世界-动作模型（World-Action Models）的测试时训练方法，旨在解决机器人决策中短观测历史限制的问题。传统世界-动作模型通常仅依赖较短的观测历史来预测未来并指导动作，延长历史会增加每一步决策的计算量，且可能需要单独训练模型。LoCo-WAM 通过测试时训练，利用新观测到的帧更新视频模型中的低秩适配器（low-rank adapter），从而在不增加历史长度的情况下，从动作结果中持续学习。该方法在保持短历史长度的同时，使模型能够适应新环境并积累长期经验，为机器人决策中的长上下文建模提供了高效的新思路。该工作值得关注，因为它将测试时训练引入世界-动作模型，以低计算成本实现长上下文适应，可能推动机器人学习在动态环境中的实用化。",
+  "tags": [
+    "World-Action Models",
+    "Test-Time Training",
+    "Robot Learning",
+    "Low-Rank Adaptation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过测试时训练更新低秩适配器，LoCo-WAM 在不增加观测历史长度的情况下实现了长上下文适应。",
+      "该方法利用新观测帧在线更新模型，使世界-动作模型能够从自身动作结果中持续学习。",
+      "LoCo-WAM 避免了延长历史带来的计算开销和单独训练模型的需求，提升了决策效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

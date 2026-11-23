@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-046",
+  "title": "HookEvo: A Framework for Coordinated Plugin Evolution on Hook-Enabled Agent Runtimes",
+  "source_url": "https://arxiv.org/abs/2611.27294",
+  "source_platform": "rss_ai_research",
+  "summary": "HookEvo 是一个面向工具使用型智能体（Agent）的框架，旨在通过利用 Agent 运行时已有的生命周期钩子（lifecycle hooks）来协同演化任务特定的执行外壳（harness）。该框架在 DeepSeek Harness 上进行了实例化：每一轮中，一个独立的改进器（improver）从执行轨迹中诊断失败原因，并提出候选修改方案，随后 HookEvo 对候选方案进行评估。其核心价值在于解决工具使用型 Agent 失败修复时往往需要同时调整工具回执解析、上下文组装和动作检查等多个环节的协调难题。该工作将插件演化与运行时钩子机制结合，为 Agent 系统的自动化修复与持续改进提供了一种结构化方法，对构建更鲁棒、可自适应的 Agent 运行时具有参考意义。",
+  "tags": [
+    "Agent",
+    "Plugin Evolution",
+    "Runtime Hooks",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用 Agent 运行时已有的生命周期钩子来演化任务特定的执行外壳，避免了对运行时核心的侵入式修改。",
+      "通过独立的改进器从执行轨迹中诊断失败并提出候选方案，实现了失败修复的自动化闭环。",
+      "工具使用型 Agent 的失败修复往往需要跨多个环节（回执解析、上下文组装、动作检查）的协同调整，单一环节的修补难以奏效。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

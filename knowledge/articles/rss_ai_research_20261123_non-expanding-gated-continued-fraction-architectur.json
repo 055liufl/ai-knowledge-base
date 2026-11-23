@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-102",
+  "title": "Non-Expanding Gated Continued Fraction Architecture for Feedforward Layers in Language Models",
+  "source_url": "https://arxiv.org/abs/2611.26835",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向语言模型前馈层的新型非扩展门控连分数架构（Non-Expanding Gated Continued Fraction Architecture），是对已有 CoFrGeNets（连分数启发式神经网络架构）的改进工作。此前研究表明，连分数式架构在语言建模中具有极高的参数效率，同时仍能保持良好性能，但其结构复杂、集成成本较高，难以直接嵌入标准预训练流程。本文的核心贡献有两点：一是提出非扩展（non-expanding）的连分数通道混合机制，避免中间维度膨胀带来的计算与显存开销；二是引入门控设计以增强表达能力，并简化与主流 Transformer 前馈层的对接方式，使其可直接用于标准预训练协议。该工作值得关注的原因在于：当前大模型参数规模与训练成本持续攀升，参数高效的前馈层替代方案具有显著的实用价值；若该架构能在保持性能的同时降低参数量和计算量，将对模型压缩、边缘部署和低成本预训练产生直接影响。不过该摘要为 cross 公告的截断版本，具体实验设置、基线对比与性能数据尚不完整，需阅读全文进一步验证其实际收益。",
+  "tags": [
+    "LLM",
+    "Architecture",
+    "Parameter Efficiency",
+    "Feedforward"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "连分数启发式架构（CoFrGeNets）已被证明在语言建模中具备高参数效率，本文在此基础上进一步优化性能与工程可用性。",
+      "提出非扩展（non-expanding）通道混合机制，避免中间维度膨胀，降低计算与显存开销。",
+      "引入门控设计并简化与标准预训练协议的集成，提升架构的实用性与可部署性。",
+      "该方向对降低大模型前馈层参数与训练成本具有潜在价值，但需全文实验数据验证其相对 Transformer FFN 的实际收益。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

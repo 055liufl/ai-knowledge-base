@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-035",
+  "title": "Double counting in LLM evidence fusion: exact posteriors separate rule compliance from posterior gain",
+  "source_url": "https://arxiv.org/abs/2611.27138",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究大语言模型在检索、多智能体共识和智能体记忆等场景中融合多源报告时的证据重复计数问题。当多个报告来自同一来源时，若将其视为独立证据会导致证据被重复计算，从而扭曲后验概率。常见补救措施是加入指令要求每个来源只计一次，但该指令的实际价值取决于接收方的原始基线，需要精确参考才能定价。作者构建了分级依赖的精确参考框架：在二值世界设定下，单报告可靠性为0.65，并设置四个依赖等级，通过披露的依赖结构计算精确后验。该工作将规则遵从性与后验增益分离，为评估LLM证据融合中的去重指令提供了严格基准，对多智能体系统和RAG的可靠性评估具有方法论意义。",
+  "tags": [
+    "LLM",
+    "Evidence Fusion",
+    "Multi-Agent",
+    "RAG",
+    "Probabilistic Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "共享来源报告被当作独立证据会导致LLM证据融合中的重复计数，扭曲后验推断",
+      "要求每个来源只计一次的指令效果取决于接收方原始基线，需精确参考才能评估其价值",
+      "分级依赖的精确参考框架将规则遵从性与实际后验增益分离，提供更严格的评估基准"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

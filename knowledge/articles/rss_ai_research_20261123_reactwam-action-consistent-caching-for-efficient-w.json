@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-054",
+  "title": "ReActWAM: Action-Consistent Caching for Efficient World-Action Models",
+  "source_url": "https://arxiv.org/abs/2611.27372",
+  "source_platform": "rss_ai_research",
+  "summary": "ReActWAM 提出了一种面向世界-动作模型（World-Action Models, WAMs）的动作一致性缓存方法，旨在解决闭环机器人执行中连续推理周期产生相似动作序列所导致的计算冗余问题。WAMs 在生成机器人动作的同时预测未来视觉状态，推理开销巨大。ReActWAM 的核心思路是识别并复用一致的动作预测，仅对需要新计算的动作变化进行重新推理，从而在保持动作一致性的前提下显著降低计算成本。该工作为具身智能与机器人基础模型的高效部署提供了新思路，值得关注。",
+  "tags": [
+    "World Model",
+    "Robotics",
+    "Caching",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "世界-动作模型在闭环执行中连续推理周期常产生相似动作序列，存在大量冗余计算。",
+      "通过区分一致动作与需要新计算的动作变化，可实现动作一致性缓存以降低推理开销。",
+      "该方法在保持动作一致性的同时提升推理效率，对机器人实时部署具有实用价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-109",
+  "title": "Perceive Once, Escalate on Demand: Handing Off Visual KV Memory from Small to Large VLMs",
+  "source_url": "https://arxiv.org/abs/2611.26902",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 Baton 方法，解决级联视觉语言模型（VLM）系统中大模型重复编码历史视觉信息的高昂成本问题。在长视频场景下，具身智能体无法在每一步都运行大型 VLM，因此采用小模型持续感知、仅将不确定决策升级给大模型的级联架构。然而每次升级时，大模型都需重新编码小模型已感知过的历史，成为主要开销。Baton 的核心思想是将小模型的视觉记忆——即其对历史帧的键值（KV）缓存——直接传递给大模型，使大模型无需从头编码即可复用已有感知结果。该工作针对级联 VLM 的推理效率瓶颈，提出跨模型 KV 缓存迁移方案，有望显著降低长视频具身推理的延迟与算力消耗，对边缘部署和实时多模态智能体具有实用价值。",
+  "tags": [
+    "VLM",
+    "KV Cache",
+    "Embodied AI",
+    "Model Cascade",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "级联 VLM 中升级决策的主要成本来自大模型重复编码小模型已感知的历史视觉信息",
+      "将小模型的视觉 KV 缓存直接传递给大模型，可避免重复编码并显著降低升级开销",
+      "跨模型 KV 缓存复用为长视频具身智能体的高效推理提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

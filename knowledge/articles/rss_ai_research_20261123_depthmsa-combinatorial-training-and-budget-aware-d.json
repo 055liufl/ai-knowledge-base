@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-142",
+  "title": "DepthMSA: Combinatorial Training and Budget-Aware Depth Allocation for Multimodal Sentiment Analysis",
+  "source_url": "https://arxiv.org/abs/2611.27198",
+  "source_platform": "rss_ai_research",
+  "summary": "DepthMSA 是一篇关于多模态情感分析（MSA）的 arXiv 论文，针对当前最先进 MSA 模型依赖大型预训练编码器、却对所有模态统一进行全深度处理（不考虑计算成本或预测贡献）的问题，提出了一种组合训练与预算感知深度分配方法。论文揭示了一个关键矛盾：模态编码器的计算成本与其预测贡献之间存在显著不匹配，即高成本模态未必带来相应收益。DepthMSA 的核心思路是在有限计算预算下，动态决定每个模态应被处理到多深，从而在保持预测性能的同时降低总体计算开销。该工作值得关注，因为它将多模态情感分析从“堆大模型”转向“计算资源智能分配”，为多模态模型的高效推理与训练提供了新视角，对资源受限场景下的多模态部署具有实际意义，也为后续研究模态级计算分配策略提供了可参考的框架。",
+  "tags": [
+    "Multimodal",
+    "Sentiment Analysis",
+    "Efficient Inference",
+    "Depth Allocation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:01:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有多模态情感分析模型对所有模态统一全深度处理，忽视了不同模态计算成本与预测贡献之间的显著不匹配。",
+      "DepthMSA 提出预算感知的深度分配策略，在有限计算预算下按模态动态决定处理深度，以平衡性能与开销。",
+      "该方法将多模态情感分析的研究重点从扩大模型规模转向计算资源的智能分配，为高效多模态推理提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-009",
+  "title": "Budget-Aware Predict-and-Verify Theorem Proving with Heterogeneous LLM Solvers",
+  "source_url": "https://arxiv.org/abs/2611.26906",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 BudgetPV，一个面向 LLM 定理证明的预算感知预测-验证智能体系统。核心问题是：不同 LLM 定理求解器在证明能力和推理成本上差异显著，对所有子目标统一使用昂贵求解器会造成算力浪费，而始终从最便宜模型开始又会在需要强模型的子目标上浪费尝试次数。BudgetPV 通过预测-验证机制，在未解决的子目标之间动态分配计算预算，并调度异构 LLM 求解器，从而在有限算力下提升整体证明效率。该工作值得关注之处在于：它将成本感知的模型路由与定理证明的搜索过程结合，为多模型协同推理提供了可复用的预算分配框架，对降低 LLM 形式化推理的推理成本、提升资源利用率具有实际意义，也为智能体调度异构模型提供了新思路。",
+  "tags": [
+    "LLM",
+    "Theorem Proving",
+    "Agent",
+    "Model Routing"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:55:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "异构 LLM 求解器在证明能力与推理成本上存在显著差异，统一调度策略会造成算力浪费",
+      "预测-验证机制可在未解决子目标间动态分配预算，平衡成本与证明成功率",
+      "预算感知的模型路由为多模型协同的形式化推理提供了可复用的调度框架"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-029",
+  "title": "Writing Weights or Training Them? Spatial Reasoning through Weight-Space Programming and Low-Rank Adaptation",
+  "source_url": "https://arxiv.org/abs/2611.27089",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了权重空间编程（Weight-Space Programming）作为一种替代梯度微调的语言模型适应方法。研究使用Qwen3.5-0.8B模型，在固定参考系任务（128项）、StepGame（200项）以及两个未训练的距离比较任务上，对比了权重空间编程与低秩适应（LoRA）等梯度方法的效果。实验表明，在启用思考模式时，公开补丁p50c将参考系任务的平均准确率从0.0%提升至22.1%，StepGame从19.2%提升至33.7%。这项工作值得关注，因为它提出了一种让模型直接检查和编辑另一模型权重的范式，可能为模型适应和空间推理能力提供新思路，并挑战了传统基于梯度的微调方法。",
+  "tags": [
+    "权重空间编程",
+    "低秩适应",
+    "空间推理",
+    "模型适应"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "权重空间编程允许语言模型直接检查和编辑另一模型的权重，为模型适应提供了梯度方法之外的替代方案。",
+      "在Qwen3.5-0.8B上，权重空间编程补丁在参考系和StepGame任务上显著提升了准确率，但绝对性能仍较低。",
+      "该方法在未训练的距离比较任务上的表现有待进一步验证，暗示其泛化能力可能有限。",
+      "研究对比了权重空间编程与低秩适应，为理解不同适应范式的优劣提供了实证依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

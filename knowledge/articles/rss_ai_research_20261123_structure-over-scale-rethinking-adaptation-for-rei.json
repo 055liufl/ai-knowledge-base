@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-137",
+  "title": "Structure Over Scale: Rethinking Adaptation for Reinforcement Learning with Verifiable Rewards",
+  "source_url": "https://arxiv.org/abs/2611.27148",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文重新审视了可验证奖励强化学习（RLVR）中的参数高效微调策略，指出传统上在Full Fine-Tuning（FFT）的表达能力与LoRA的效率之间的权衡忽略了一个关键变量：更新几何结构。作者在冷启动GRPO协议下发现LoRA存在秩坍缩现象：低秩时性能稳定，但秩增加时性能突然崩溃。在DeepMath-Hard等任务上，这一现象表明LoRA的秩并非越高越好，而是存在一个临界点。该研究挑战了“规模至上”的适应范式，强调更新结构（如秩的几何性质）比单纯增加参数量更重要，为RLVR的高效适配提供了新视角，对理解参数高效微调在强化学习中的局限性具有重要价值。",
+  "tags": [
+    "RLVR",
+    "LoRA",
+    "GRPO",
+    "参数高效微调"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LoRA在RLVR中存在秩坍缩现象：低秩稳定，高秩性能骤降，表明秩的选择存在临界点。",
+      "更新几何结构（如秩的分布）是影响RLVR适配效果的关键变量，而非仅由表达能力或效率决定。",
+      "冷启动GRPO协议下，LoRA的秩增加并不单调提升性能，挑战了“规模至上”的适应范式。",
+      "该发现提示需要重新设计RLVR中的参数高效微调策略，关注更新结构而非单纯增加参数量。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

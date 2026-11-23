@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-062",
+  "title": "Vega-Fafnir: Is Greedy Decoding the Same Decoding? Where Rounding Noise in Speculative Verification Comes From and What Removing It Costs",
+  "source_url": "https://arxiv.org/abs/2611.27554",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了在有限精度下，贪心解码语言模型的不同运行方式（缓存与否、填充与否、单独或批处理、单token或多token验证即推测解码）是否会产生相同输出。作者以Qwen3-0.6B（bfloat16，生成128个新token，GSM8K和ARC提示）为对象，测量其贪心文本与每轮仅解码一个token的参考实现之间的差异频率。结果显示，每轮验证4个猜测token的推测解码会改变60%的生成内容。论文进一步分析了这种舍入噪声的来源，并探讨了消除该噪声的代价。该研究揭示了服务引擎中看似等价的解码方式在数值精度层面存在显著差异，对推测解码的可靠性和一致性提出了重要警示，值得关注。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Numerical Precision",
+    "Greedy Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在有限精度下，贪心解码的不同实现方式（如推测解码）会产生不同的输出，每轮验证4个token可改变60%的生成内容。",
+      "推测解码的舍入噪声来源需要被重视，服务引擎不应将不同解码方式视为完全等价。",
+      "消除舍入噪声可能带来额外成本，需要在效率与一致性之间权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

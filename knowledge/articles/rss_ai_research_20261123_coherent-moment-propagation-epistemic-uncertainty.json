@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-105",
+  "title": "Coherent Moment Propagation: Epistemic Uncertainty for Pre-trained Robot Policies",
+  "source_url": "https://arxiv.org/abs/2611.26855",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于流匹配（Flow Matching）的机器人策略在部署时缺乏可信度度量的问题，提出了一种名为「连贯矩传播」（Coherent Moment Propagation）的方法，用于在推理阶段估计认知不确定性（Epistemic Uncertainty）。流匹配策略在长程规划与灵巧操作等任务中表现优异，但面对训练分布之外的新场景时，无法告知使用者其输出指令是否可信。认知不确定性反映模型权重层面的无知程度，理论上可量化这种风险，然而从流匹配模型的推理过程中直接计算该不确定性存在计算与传播上的困难。该工作通过矩传播机制在采样过程中连贯地传递不确定性信息，从而为预训练机器人策略提供可用的置信度信号。其价值在于弥补了当前机器人基础模型「只给动作、不给可信度」的关键缺口，对安全部署、异常检测与人机协作具有实际意义，也为不确定性量化与生成式策略的结合提供了新思路。",
+  "tags": [
+    "机器人学习",
+    "不确定性量化",
+    "流匹配",
+    "预训练策略"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:34Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流匹配策略虽在机器人操作中表现优异，但缺乏对预测指令可信度的度量，构成部署安全隐患",
+      "认知不确定性可量化模型在训练分布外场景中的「无知」程度，但需解决推理时的计算与传播难题",
+      "连贯矩传播通过在采样过程中传递不确定性信息，为预训练策略提供可用的置信度估计",
+      "该方法有望推动机器人基础模型从「能动作」走向「可信动作」，支撑安全部署与异常检测"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

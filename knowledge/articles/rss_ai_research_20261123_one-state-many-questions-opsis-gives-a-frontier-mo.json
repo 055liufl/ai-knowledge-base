@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-133",
+  "title": "One state, many questions: Opsis gives a frontier model typed eyes for pathology",
+  "source_url": "https://arxiv.org/abs/2611.27102",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Opsis 系统，旨在解决病理学基础模型与前沿语言模型在病理报告生成中的互补性问题。病理报告本质上是具有固定答案集的检查清单，许多问题由其他问题组合而成。病理基础模型通过为每个问题训练分类器可准确回答，但缺乏组合推理能力；而前沿语言模型虽能自由组合，却无法将包含一万四千个图块的整张切片纳入上下文。Opsis 为前沿模型提供“类型化视觉接口”，使其能够像病理学家一样按需查询切片的不同区域和尺度。在 189 个乳腺报告问题上，直接阅读文字描述或缩略图与图块的前沿模型表现受限，而 Opsis 通过结构化视觉查询显著提升了回答准确性。该工作为多模态大模型在医学影像领域的落地提供了新范式，值得关注。",
+  "tags": [
+    "Pathology",
+    "Multimodal",
+    "Foundation Model",
+    "Medical AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "病理报告是结构化检查清单，基础模型擅长单点分类但缺乏组合推理，语言模型擅长组合但受限于上下文长度。",
+      "Opsis 通过类型化视觉接口让前沿模型按需查询切片区域，弥合了两种范式的鸿沟。",
+      "在 189 个乳腺报告问题上，结构化视觉查询显著优于直接阅读文字描述或缩略图。",
+      "该工作为多模态大模型在医学影像中的实用化提供了可借鉴的架构设计。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

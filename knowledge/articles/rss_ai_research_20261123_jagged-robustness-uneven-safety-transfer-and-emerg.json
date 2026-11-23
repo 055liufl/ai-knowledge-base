@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-057",
+  "title": "Jagged Robustness: Uneven Safety Transfer and Emerging Vulnerabilities under LLM Quantization",
+  "source_url": "https://arxiv.org/abs/2611.27424",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了量化（模型参数压缩）对语言模型能力与安全性的影响，提出“锯齿状鲁棒性”概念，即量化后不同能力维度的退化程度不均匀。作者通过基准测试发现，在Qwen3-4B模型上，模型安全防护和偏见控制会因量化而显著退化，而真实性等其他能力则相对稳定。这一发现揭示了量化在提升推理效率的同时可能引入新的安全漏洞，对部署量化模型的实际应用具有重要警示意义。研究强调需要针对量化后的安全对齐进行专门评估，而非假设所有能力同步保持。该工作为模型压缩与安全性的交叉研究提供了新视角，值得关注模型部署安全性的开发者和研究者重视。",
+  "tags": [
+    "Quantization",
+    "LLM Safety",
+    "Model Compression",
+    "Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化对LLM不同能力的影响不均匀，安全防护和偏见控制比真实性等能力更易退化",
+      "在Qwen3-4B上观察到安全对齐的“锯齿状”转移现象，量化后出现新的脆弱性",
+      "部署量化模型时需单独评估安全维度，不能假设所有能力同步保持",
+      "该研究为量化感知的安全对齐和模型压缩策略提供了实证依据"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

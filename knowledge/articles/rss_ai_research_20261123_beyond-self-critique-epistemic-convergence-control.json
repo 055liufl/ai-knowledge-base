@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-080",
+  "title": "Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification",
+  "source_url": "https://arxiv.org/abs/2611.27839",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，多智能体科学声明验证系统常采用角色结构化的LLM辩论来检验假设，但当辩论智能体来自同一基础模型时，它们共享相同的潜在表示，导致自我批判偏差在结构上不可避免。静态固定迭代协议进一步加剧问题：要么在证据稳定前过早停止，要么在收敛后浪费推理算力。为此，作者提出“认知收敛控制”（Epistemic Convergence Control）方法，旨在动态监测辩论过程中的证据稳定性，并据此自适应决定是否继续辩论，从而在提升验证可靠性的同时优化计算效率。该工作值得关注，因为它直面多智能体LLM系统中一个根本性缺陷——同源模型间的自我批判偏差，并给出了可操作的收敛控制机制，对构建更可信的自动化科研验证流程具有实际意义。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Debate",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:58:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "同源LLM智能体因共享潜在表示，其自我批判偏差是结构性的，无法通过角色分工消除。",
+      "固定迭代次数的辩论协议存在过早停止或算力浪费的两难，需要动态收敛控制。",
+      "认知收敛控制通过监测证据稳定性来自适应终止辩论，兼顾验证质量与推理效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-115",
+  "title": "MG-EDA: Maturity-Gated Skew-Normal Estimation of Distribution Algorithms",
+  "source_url": "https://arxiv.org/abs/2611.26938",
+  "source_platform": "rss_ai_research",
+  "summary": "MG-EDA 提出了一种基于成熟度门控的偏正态分布估计算法，用于解决高斯分布估计算法（EDA）在斜坡上方差收缩、远离最优解时停滞的问题。传统高斯 EDA 在搜索过程中沿移动方向缺乏有效的修正机制，导致收敛缓慢或陷入局部最优。该论文为沿运动方向的三种修正（均值漂移、协方差沿路径的伸长以及偏度）引入了一个校准门控规则：通过种群成熟度统计量来决定每种修正是否启用、作用强度以及持续时间，并在适当时机关闭门控。这一机制使算法能够根据搜索阶段自适应地调整分布形状，从而提升在复杂地形上的优化性能。该工作属于进化计算与分布估计算法的交叉研究，对优化算法设计具有理论意义，并为实际工程优化问题提供了新的思路。",
+  "tags": [
+    "EDA",
+    "优化算法",
+    "进化计算",
+    "偏正态分布"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:58Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "高斯EDA在斜坡上方差收缩导致停滞，需要沿运动方向引入均值漂移、协方差伸长和偏度修正。",
+      "通过种群成熟度统计量构建校准门控，自适应决定修正的启用、强度与持续时间。",
+      "门控机制使算法能够根据搜索阶段动态调整分布形状，避免过早或过度修正。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

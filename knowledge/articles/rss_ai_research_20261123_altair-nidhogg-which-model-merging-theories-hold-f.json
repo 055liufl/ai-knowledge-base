@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-061",
+  "title": "Altair-Nidhogg: Which Model-Merging Theories Hold for a One-Pass Decision Encoder? Soups, Task Arithmetic, TIES and DARE Against Joint Training and Prediction Ensembling",
+  "source_url": "https://arxiv.org/abs/2611.27550",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究模型合并理论在单次决策编码器（Laya）上的适用性。Laya 是一个小型模型，通过一次前向传播回答多选题，每个选项包含名称和描述。由于新增技能需要重新训练，作者测试了四种已发表的模型合并方法（权重平均、任务算术、TIES、DARE）是否适用于 Laya，并验证其背后的理论假设。实验基于 156 个模型，均从同一发布检查点出发，包括四个普通微调模型和五个专家模型（每个专家增加一种训练类型）。研究对比了合并方法与联合训练和预测集成，旨在揭示这些合并技术在单次决策编码器场景下的有效性及理论边界。该工作值得关注，因为它首次系统评估了主流模型合并理论在非传统架构（单次决策编码器）上的表现，为小模型高效技能扩展提供了实证依据，并可能推动模型合并理论的修正与适配。",
+  "tags": [
+    "Model Merging",
+    "Fine-tuning",
+    "Encoder",
+    "Task Arithmetic"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:47Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "模型合并方法（如TIES、DARE）在单次决策编码器上的有效性需重新验证，传统理论可能不完全适用。",
+      "联合训练和预测集成作为基线，可揭示合并方法在技能整合上的性能差距。",
+      "156个模型的实验规模为模型合并理论的实证研究提供了可靠基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

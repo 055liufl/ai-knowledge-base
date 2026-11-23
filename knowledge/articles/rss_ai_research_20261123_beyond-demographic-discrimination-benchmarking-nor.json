@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-007",
+  "title": "Beyond Demographic Discrimination: Benchmarking Normative-Descriptive Calibration in LLMs",
+  "source_url": "https://arxiv.org/abs/2611.26870",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种新的LLM公平性评估基准，旨在检验模型在规范性推理（应该发生什么）与描述性推理（可能发生什么）之间是否保持一致。现有公平性基准大多只评估单一推理目标下的群体歧视，而忽略了同一项目在不同推理目标下是否被区别对待。作者构建了测试集，要求模型对相同情境分别进行描述性预测和规范性决策，并比较其输出差异。研究发现，LLM在两种推理模式下对相同人口群体可能表现出不一致的偏见模式，即模型在“描述”时可能反映社会刻板印象，而在“决策”时可能试图遵循公平规范，导致规范性-描述性校准失败。该工作首次系统性地将规范性-描述性校准引入LLM公平性评估，揭示了单一目标基准可能掩盖的偏见问题，对LLM在敏感场景的部署具有重要警示意义。",
+  "tags": [
+    "LLM",
+    "Fairness",
+    "Benchmark",
+    "Normative Reasoning"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:55:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有公平性基准仅评估单一推理目标，无法检测模型在描述性与规范性推理间的不一致偏见。",
+      "LLM在描述性任务中可能放大社会刻板印象，而在规范性任务中试图遵循公平规范，导致校准失败。",
+      "规范性-描述性校准应成为LLM公平性评估的标准维度，以揭示被单一目标基准掩盖的偏见。",
+      "该基准为开发更稳健、社会对齐的LLM提供了新的评估工具和诊断视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

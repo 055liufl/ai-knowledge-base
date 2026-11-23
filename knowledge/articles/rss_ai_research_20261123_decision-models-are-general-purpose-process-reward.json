@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-028",
+  "title": "Decision Models Are General-Purpose Process Reward Models",
+  "source_url": "https://arxiv.org/abs/2611.27068",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 DM-PRM，将通用决策模型（即能以概率回答是/否问题的模型）转化为通用过程奖励模型（Process Reward Model），用于解决强化学习中步级信用分配的难题。传统 RL 从可验证结果中学习时，每个 episode 只获得一个奖励信号，所有步骤被同等对待，且当所有 rollout 失败时无法学习到任何任务信息。步级信用通常依赖步骤标签、学习到的 critic、昂贵的 LLM 评判器或手写规则。DM-PRM 的核心思路是复用通用决策模型的概率输出作为步骤级奖励信号，无需额外标注或复杂评判机制，从而以较低成本实现细粒度的过程监督。该工作值得关注，因为它将通用决策能力与过程奖励建模统一起来，有望降低 RL 训练语言智能体的门槛，提升样本效率和训练稳定性，对智能体强化学习、过程监督和奖励建模方向具有启发意义。",
+  "tags": [
+    "RL",
+    "Process Reward Model",
+    "Agent",
+    "Decision Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通用决策模型的概率输出可直接作为过程奖励信号，避免依赖步骤标签、critic 或 LLM 评判器",
+      "DM-PRM 解决了稀疏结果奖励下步级信用分配困难的问题，尤其在全部 rollout 失败时仍能提供学习信号",
+      "该方法将决策建模与过程奖励建模统一，为语言智能体的 RL 训练提供了一种低成本、可扩展的监督方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

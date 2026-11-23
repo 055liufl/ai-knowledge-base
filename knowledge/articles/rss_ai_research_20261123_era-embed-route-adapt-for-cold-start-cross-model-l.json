@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-111",
+  "title": "ERA: Embed, Route, Adapt for Cold-Start Cross-Model Latent Retrieval",
+  "source_url": "https://arxiv.org/abs/2611.26919",
+  "source_platform": "rss_ai_research",
+  "summary": "ERA（Embed, Route, Adapt）是一篇关于跨模型潜在检索（cross-model latent retrieval）的 arXiv 论文，聚焦于生产检索系统在更换嵌入模型时面临的冷启动难题。传统检索系统与索引语料的嵌入模型强绑定，若要更换查询编码器，通常需要重新嵌入整个语料库，成本高昂；而在冷启动阶段既没有查询日志可供学习，每个由新编码器嵌入的文档又会产生 API 或计算开销。ERA 提出一种三阶段系统：先以极小的锚点预算（anchor budget）选取信息量最大的文档进行嵌入，再通过路由机制将查询映射到合适的嵌入空间，最后进行自适应对齐，从而在无需全量重嵌入的情况下实现跨模型检索。该工作值得关注之处在于，它直击 RAG 与检索系统落地中的真实痛点——模型升级与迁移成本，提出用少量锚点样本完成嵌入空间对齐，有望显著降低检索系统迭代与冷启动部署的门槛，对构建可演进的检索基础设施具有实用价值。",
+  "tags": [
+    "Retrieval",
+    "Embedding",
+    "RAG",
+    "Cold-Start"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生产检索系统与索引嵌入模型强绑定，换模型通常意味着全量重嵌入，成本是模型迁移的核心障碍",
+      "冷启动场景下无查询日志可用，ERA 用少量高信息量锚点样本完成跨嵌入空间对齐",
+      "Embed-Route-Adapt 三阶段框架将嵌入预算、查询路由与自适应对齐解耦，降低新编码器的部署成本",
+      "该方法对需要频繁升级嵌入模型的 RAG 与检索基础设施具有直接工程价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

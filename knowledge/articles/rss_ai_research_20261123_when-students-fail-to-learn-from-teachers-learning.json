@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-033",
+  "title": "When Students Fail to Learn from Teachers: Learning Dynamics of On-Policy Distillation",
+  "source_url": "https://arxiv.org/abs/2611.27125",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究在线策略蒸馏（On-Policy Distillation, OPD）中一个关键但被忽视的问题：即使教师模型能力很强，学生模型在自身生成上进行token级监督学习时仍可能出现训练不稳定，表现为响应长度失控、重复生成和性能严重下降。作者特别指出一种称为“虚假一致”（spurious agreement）的现象，即学生模型与教师模型保持高重叠但实际学习失败。论文从学习动力学角度分析OPD的失败机制，为理解大语言模型后训练中的蒸馏稳定性提供了新的理论视角。该工作值得关注，因为OPD已成为LLM后训练的核心技术之一，而训练不稳定性是实际部署中的常见痛点，理解其动力学有助于设计更鲁棒的蒸馏算法。",
+  "tags": [
+    "On-Policy Distillation",
+    "LLM Post-training",
+    "Training Stability",
+    "Knowledge Distillation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏即使教师模型能力强也可能训练不稳定，导致响应长度膨胀、重复生成和性能退化",
+      "存在“虚假一致”现象：学生模型与教师模型高重叠但并未真正学习到有效知识",
+      "需要从学习动力学角度理解OPD失败机制，而非仅关注教师模型质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

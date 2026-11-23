@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-073",
+  "title": "Average-Depth Variable Execution via Request-Local Token Routing",
+  "source_url": "https://arxiv.org/abs/2611.27738",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为 Average-Depth Variable Execution via Request-Local Token Routing 的方法，旨在降低大语言模型推理成本。传统层跳过技术虽能减少计算量，但请求级预算无法指定如何在生成的各个 token 间分配层执行。该方法允许不同 token 执行不同数量的层，同时使每个请求的平均执行深度匹配连续预算。在每个路由层，路由器读取当前 token 状态和请求预算，决定是否执行 Transformer 块。这项研究值得关注，因为它为 LLM 推理效率提供了更细粒度的动态计算分配机制，有望在保持生成质量的同时显著降低平均计算开销，对实际部署中的成本控制具有重要价值。",
+  "tags": [
+    "LLM",
+    "Inference Optimization",
+    "Dynamic Computation",
+    "Layer Skipping"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:58:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "提出请求局部 token 路由，实现每个 token 可变层执行深度，同时满足请求级平均深度预算",
+      "路由器基于当前 token 状态和请求预算动态决定是否执行 Transformer 块，实现细粒度计算分配",
+      "为 LLM 推理成本控制提供了超越固定层跳过策略的新思路，平衡计算效率与生成质量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

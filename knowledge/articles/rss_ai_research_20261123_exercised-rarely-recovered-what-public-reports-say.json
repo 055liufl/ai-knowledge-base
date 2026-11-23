@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-130",
+  "title": "Exercised, Rarely Recovered: What Public Reports Say About Recovery in 50 AI Agent Harnesses and Runtimes",
+  "source_url": "https://arxiv.org/abs/2611.27090",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文对50个AI Agent执行框架和运行时（harnesses and runtimes）的恢复机制进行了实证分析，基于公开报告评估了检查点恢复、撤销、审批和日志读取等常见恢复手段的实际效果。研究发现，尽管研究型运行时承诺了saga式补偿和事务回滚等更强保证，但公开证据显示这些机制在实际使用中很少被触发，且恢复成功率极低。论文采用预先冻结的数据收集协议，对12个持久化Agent运行时进行了分级评估，揭示了AI Agent系统在错误恢复方面的严重不足。这项工作值得关注，因为它首次系统性地量化了Agent运行时的恢复能力差距，对构建可靠、可生产的AI Agent系统具有重要警示意义，尤其适用于需要长时间运行或高风险操作的编码Agent场景。",
+  "tags": [
+    "Agent",
+    "Reliability",
+    "Runtime",
+    "Recovery"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "公开证据表明，AI Agent运行时的恢复机制（如检查点、撤销、事务回滚）在实际使用中很少被触发，且恢复成功率极低。",
+      "研究型运行时承诺的saga式补偿和事务回滚等强保证，在真实场景中缺乏有效验证，存在承诺与实践的显著差距。",
+      "AI编码Agent的误删除和长任务崩溃等故障场景下，用户依赖的恢复手段效果有限，亟需更可靠的运行时保障机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-031",
+  "title": "CoEvoBench: Can LLMs Drive Recursive Co-Evolution of Agentic Systems?",
+  "source_url": "https://arxiv.org/abs/2611.27116",
+  "source_platform": "rss_ai_research",
+  "summary": "CoEvoBench 是一个面向 LLM Agent 系统递归协同进化的基准测试，聚焦于模型（model）与执行框架（harness，即中介 Agent 与工具、环境交互的代码）之间的相互依赖关系。现有基准要么只评估后训练或数据研究而将 harness 排除在外，要么只关注 harness 优化而忽略模型侧的协同变化，无法刻画二者交替改进的递归过程。CoEvoBench 提出将 LLM 研究者视为递归改进的驱动者，要求其在每一轮决策中判断应修改模型还是 harness，因为任一方的改动都会改变另一方的价值。该工作填补了 Agent 系统整体协同优化评测的空白，对理解自动化 AI 研究、Agent 自改进以及模型-框架联合优化具有重要参考价值，适合关注 Agent 架构与自动化研究的开发者和研究者。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "LLM",
+    "AutoML"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:37Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM Agent 的性能由模型与 harness 共同决定，二者存在相互依赖的协同进化关系",
+      "现有基准割裂评估模型后训练与 harness 优化，缺乏对递归协同改进过程的衡量",
+      "CoEvoBench 将 LLM 研究者建模为逐轮决策者，需判断每轮修改模型还是 harness",
+      "该基准为自动化 AI 研究与 Agent 自改进能力提供了新的评测维度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

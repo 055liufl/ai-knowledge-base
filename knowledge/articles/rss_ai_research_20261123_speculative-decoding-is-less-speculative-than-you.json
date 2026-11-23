@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-083",
+  "title": "Speculative Decoding Is Less Speculative Than You Think",
+  "source_url": "https://arxiv.org/abs/2611.27891",
+  "source_platform": "rss_ai_research",
+  "summary": "本文针对推测解码（Speculative Decoding）的效率来源提出新见解，指出其加速效果并非如通常认为的那样依赖“猜测”目标模型的输出，而是更多受益于对采样随机性的处理。推测解码通过提前准备候选续写来加速语言模型推理，其效率取决于有限的草稿计算能多好地预判目标模型实际路径。该路径涉及两种不确定性：目标模型预测的不确定性和采样随机性。前者需要目标模型前向传播，后者则可通过其他方式处理。文章可能重新审视了推测解码中草稿模型与目标模型的关系，为优化推理加速提供了新视角。该研究值得关注，因为它挑战了对推测解码机制的常见理解，可能指导更高效的推理系统设计，对LLM部署和推理优化有实际意义。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Sampling",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:58:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "推测解码的加速效果可能被高估为对目标模型预测的预判，而实际更多来自对采样随机性的处理。",
+      "目标模型预测的不确定性需要前向传播，而采样随机性可通过更廉价的方式应对，这为优化提供了新方向。",
+      "重新理解推测解码中两种不确定性的贡献，有助于设计更高效的推理加速策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-032",
+  "title": "Portable Active Recovery under Timed and Position-Dependent Visual Outages",
+  "source_url": "https://arxiv.org/abs/2611.27121",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究四旋翼无人机在视觉中断情况下的主动恢复策略，特别区分了两种视觉中断：基于时间的定时中断和基于位置的空间中断。在无外部定位的立体视觉惯性四旋翼上，这两种中断在丢失瞬间表现相同，但需要相反的响应策略。实验表明，悬停等待策略在定时中断中成功恢复93/96次，但在空间中断中完全失败（0/96，13次硬故障）。论文提出了一种便携式主动恢复方法，能够根据中断类型采取不同策略，从而在两种场景下均实现可靠恢复。该研究对于提升无人机在GPS拒止环境下的自主性和鲁棒性具有重要意义，尤其适用于室内、地下等存在视觉盲区的场景。",
+  "tags": [
+    "UAV",
+    "Visual-Inertial Odometry",
+    "Robustness",
+    "Autonomous Navigation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "定时视觉中断与位置依赖视觉中断在丢失瞬间表现相同，但需要相反的恢复策略：悬停等待适用于定时中断，而空间中断需要主动移动以脱离盲区。",
+      "悬停等待策略在定时中断中成功率达97%，但在空间中断中完全失败，表明单一策略无法应对所有视觉中断类型。",
+      "提出的便携式主动恢复方法能够根据中断类型自适应调整策略，显著提升四旋翼在无外部定位下的任务完成率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

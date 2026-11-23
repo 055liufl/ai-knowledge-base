@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-051",
+  "title": "GRACE: Controlled Evidence Interventions for Diagnosing and Improving Knowledge Integration in GraphRAG",
+  "source_url": "https://arxiv.org/abs/2611.27350",
+  "source_platform": "rss_ai_research",
+  "summary": "GRACE 是一个用于诊断 GraphRAG 系统知识整合能力的基准测试。GraphRAG 将语言模型的参数化知识与检索到的图证据相结合，但聚合准确率无法揭示失败原因究竟是缺失路径、干扰项还是与模型知识冲突。GRACE 通过执行 LC-QuAD 2.0 查询于 Wikidata 上，并对每个证据子图施加四种受控干预（切断支持路径、添加类型兼容的干扰项、附加高度数节点等）来构建。该工作值得关注，因为它首次系统性地解耦了 GraphRAG 失败来源，为评估和改进图检索增强生成提供了细粒度诊断工具，有助于开发者定位模型与图证据整合中的具体缺陷。",
+  "tags": [
+    "GraphRAG",
+    "RAG",
+    "Benchmark",
+    "Knowledge Integration"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "聚合准确率掩盖了 GraphRAG 失败的具体原因，需通过受控干预分离缺失路径、干扰项和知识冲突。",
+      "GRACE 基于 Wikidata 和 LC-QuAD 2.0 构建，对证据子图施加四种干预以系统诊断知识整合能力。",
+      "该基准为改进 GraphRAG 提供了可操作的诊断信号，而非仅报告端到端性能。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

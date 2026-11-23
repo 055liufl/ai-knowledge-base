@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-106",
+  "title": "Your Judge Inherits Your Prompt: In-Context Label Bias in an LLM-as-Judge Is Directional, Not Symmetric",
+  "source_url": "https://arxiv.org/abs/2611.26881",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了LLM-as-judge评估范式中的上下文标签偏差问题。作者指出，作为评判者的LLM本身是一个由少量上下文示例引导的冻结语言模型，而这类模型已知会吸收示例中的标签平衡而非将其视为中性示例。研究聚焦于多模态（视频问答）评估流程中使用的LLM评判者，探究这种标签偏差是否会影响评判结果及其具体表现形式。通过实验，作者发现该偏差是方向性的而非对称的，即评判者会系统性地偏向某一类标签，而非均匀地受标签分布影响。这一发现对依赖LLM-as-judge进行开放式输出评分的评估流程具有重要警示意义，表明评估结果可能因提示中示例的标签构成而产生系统性偏差，从而影响模型比较和选择的可靠性。该工作为理解LLM评判者的偏差机制提供了新视角，并呼吁在评估设计中考虑标签平衡的敏感性。",
+  "tags": [
+    "LLM-as-Judge",
+    "评估偏差",
+    "多模态评估",
+    "上下文学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM评判者会吸收上下文示例中的标签平衡，而非将其视为中性示例，导致评估偏差。",
+      "该标签偏差是方向性的而非对称的，即评判者会系统性地偏向某一类标签。",
+      "在多模态视频问答评估流程中，这种偏差同样存在并可能影响评估结果的可靠性。",
+      "评估设计需考虑提示中示例标签平衡的敏感性，以避免系统性偏差。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

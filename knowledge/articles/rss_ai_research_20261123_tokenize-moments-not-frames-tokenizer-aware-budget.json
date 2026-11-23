@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-113",
+  "title": "Tokenize Moments, Not Frames: Tokenizer-Aware Budget Allocation for Training-Free Video LLM Acceleration",
+  "source_url": "https://arxiv.org/abs/2611.26933",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对视频大语言模型（Video LLM）在长视频处理中因视觉token数量庞大而导致的推理效率问题，提出了一种无需训练的加速方法。现有免训练加速器通过剪枝或合并token来减少计算量，但在长视频上会损失精度。作者通过分析16个开源模型的帧相似性和视觉tokenizer，发现精度损失源于token选择之前的一个步骤：在固定token预算下，长视频的帧采样间隔超过了帧间相似性维持的约2秒窗口，导致采样帧之间差异过大，从而影响token选择的质量。基于此，论文提出“Tokenize Moments, Not Frames”的思路，即根据tokenizer特性进行预算分配，而非简单按帧分配。该方法有望在不重新训练模型的情况下，显著提升长视频场景下的推理速度与精度平衡，对视频LLM的实际部署具有重要价值。",
+  "tags": [
+    "Video LLM",
+    "Token Pruning",
+    "Efficient Inference",
+    "Tokenizer"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:59:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长视频中帧采样间隔超过帧间相似性窗口（约2秒）是免训练加速器精度损失的关键原因。",
+      "token预算分配应基于视觉tokenizer的特性，而非简单按帧均匀分配。",
+      "通过分析16个开源模型，揭示了token选择前的采样步骤对最终精度的重要影响。",
+      "提出的tokenizer-aware预算分配方法有望在无需训练的情况下实现更优的加速与精度权衡。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

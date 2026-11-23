@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-055",
+  "title": "Evidence sufficiency assessment enables cost-effective review allocation in on-premise clinical AI agents",
+  "source_url": "https://arxiv.org/abs/2611.27390",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对本地部署的临床AI代理提出了一种无需训练的证据充分性评估方法，用于在自动接受高置信度诊断与转交医生复核之间进行成本有效的分流。传统方法依赖token概率或模型自报置信度，但会遗漏错误；而五次运行一致性虽更可靠却带来五倍计算开销。作者提出在决策点评估证据充分性，并设计三层顺序分诊协议：遮蔽推理与诊断内容后，同一4B模型仅根据客观证据打分，从而在保证安全性的同时降低复核成本。该工作值得关注，因为它解决了临床AI落地中的关键矛盾——自动化效率与医疗安全之间的平衡，且方法无需额外训练，易于在资源受限的本地环境中部署。",
+  "tags": [
+    "Clinical AI",
+    "Agent",
+    "Uncertainty Estimation",
+    "Triage"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "token概率和自报置信度不足以可靠识别临床AI诊断错误",
+      "五次运行一致性虽可靠但计算成本过高，不适合本地部署",
+      "遮蔽推理与诊断内容后评估证据充分性，可作为一种无需训练的错误检测信号",
+      "三层顺序分诊协议能在自动接受与人工复核之间实现成本有效的平衡"
+    ],
+    "tech_category": "application",
+    "audience": "researcher"
+  },
+  "version": 1
+}

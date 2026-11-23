@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-016",
+  "title": "Run One, Get Two: Near-Free Streaming Safety Checks for Local LLMs",
+  "source_url": "https://arxiv.org/abs/2611.26975",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 ToRA（Token-Row Adapter），一种面向本地 LLM 助手的近零成本流式安全检测方案。本地 LLM 逐用户解码时受内存带宽限制，计算资源闲置。现有安全检测方案存在精度与成本的权衡：专用守护模型精度高但每 token 延迟近乎翻倍，隐状态探针成本低但精度不足。ToRA 通过将第二个模型作为生成器解码步骤中的额外行运行，共享权重与 KV 缓存，实现双行解码，在不显著增加延迟的情况下完成安全检测。该工作值得关注，因为它巧妙利用了本地推理中闲置的计算资源，为资源受限场景下的 LLM 安全部署提供了实用且高效的解决思路，对本地 AI 助手的安全合规具有重要意义。",
+  "tags": [
+    "LLM",
+    "Safety",
+    "Inference",
+    "Local Deployment"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "本地 LLM 解码受内存带宽限制，计算资源闲置，为并行安全检测提供了机会",
+      "ToRA 将守护模型作为解码步骤的额外行运行，共享权重和 KV 缓存，实现近零额外延迟",
+      "该方案在精度与成本之间取得平衡，优于专用守护模型的高延迟和隐状态探针的低精度",
+      "双行解码思路可推广至其他需要并行辅助任务的本地推理场景"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

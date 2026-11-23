@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-027",
+  "title": "Dynamic Token Merging for Efficient Vision-Language Models",
+  "source_url": "https://arxiv.org/abs/2611.27064",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出动态Token合并（DTM）方法，用于提升视觉语言模型（VLM）的推理效率。VLM通常将每张图像编码为数百个视觉token，即使提示仅依赖图像局部区域，也会导致高昂的推理成本。DTM最初在MrT5中用于字节级文本编码器，其核心是一个轻量级删除门（delete gate），对上下文隐藏状态进行评分，训练时作为可微的注意力偏置，推理时物理移除低分token。作者将该机制引入VLM，旨在根据提示动态裁剪视觉token，减少计算量。该工作值得关注，因为它直接针对VLM部署中的效率瓶颈，提供了一种可学习、端到端的token稀疏化方案，有望在保持性能的同时显著降低推理开销，对多模态应用落地具有实用价值。",
+  "tags": [
+    "VLM",
+    "Token Merging",
+    "Efficient Inference",
+    "Multimodal"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VLM的视觉token数量大，动态合并可根据提示依赖区域减少冗余计算。",
+      "DTM通过可微删除门在训练中学习token重要性，推理时物理移除，实现端到端优化。",
+      "该方法从文本编码器迁移至VLM，展示了跨模态token稀疏化的可行性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

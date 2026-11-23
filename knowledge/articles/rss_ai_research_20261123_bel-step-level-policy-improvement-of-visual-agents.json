@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-041",
+  "title": "Bel: Step-Level Policy Improvement of Visual Agents Without Training",
+  "source_url": "https://arxiv.org/abs/2611.27222",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为Bel的方法，用于在不进行额外训练的情况下改进视觉智能体的逐步策略。视觉智能体通过屏幕点击或相机图像指向来执行任务，但贪婪解码可能错过正确动作。Bel的核心思想是利用视觉判断来选择动作：动作应在执行位置被评估，而非仅依赖文本或坐标。例如，点击在文本中只是两个数字，但绘制在屏幕上则能明确其语义（如“发布”按钮）。该方法通过视觉反馈对智能体自身采样的动作进行逐步筛选和优化，无需重新训练模型。这值得关注，因为它提供了一种轻量级、即插即用的策略改进方案，有望提升视觉智能体在交互任务中的成功率，并降低对大规模标注数据的依赖。",
+  "tags": [
+    "Visual Agent",
+    "Policy Improvement",
+    "Greedy Decoding",
+    "Visual Feedback"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "视觉动作的评估应基于其执行位置的视觉上下文，而非仅文本或坐标。",
+      "智能体自身的采样中常包含正确动作，但贪婪解码可能忽略它们。",
+      "通过视觉判断进行逐步筛选，可在不训练的情况下改进策略。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

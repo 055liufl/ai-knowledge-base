@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-003",
+  "title": "TOUMAII: A 4.5M-Pair Tool-Calling Preference Dataset and Its Source-Agnostic Generator",
+  "source_url": "https://arxiv.org/abs/2611.26722",
+  "source_platform": "rss_ai_research",
+  "summary": "TOUMAII 是一个包含 450 万对工具调用偏好数据的数据集，并配套一个与数据源无关的生成器。该工作针对企业级 AI 智能体在自主执行多步任务时对工具调用可靠性的核心需求，指出现有监督微调（SFT）仅优化生成正确调用，而缺乏对合理错误调用的对比学习，导致模型在格式错误或决策失误时容易导致交互失败。TOUMAII 通过构建大规模偏好对数据，使模型能够学习区分正确与错误调用，从而提升工具调用的鲁棒性和准确性。该数据集和生成器的发布为工具调用能力的偏好优化提供了重要基础设施，值得关注的原因在于：工具调用是智能体落地的关键瓶颈，而偏好数据规模达 450 万对，且生成器与数据源无关，具备较强的可扩展性和通用性，有望推动智能体在真实企业环境中的可靠部署。",
+  "tags": [
+    "Tool Calling",
+    "Preference Data",
+    "Agent",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:55:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 SFT 仅优化正确调用，缺乏对错误调用的对比学习，TOUMAII 通过偏好对数据弥补这一缺陷。",
+      "450 万对偏好数据规模庞大，且生成器与数据源无关，具备良好的可扩展性和通用性。",
+      "工具调用的格式错误或决策失误会直接导致交互失败，偏好优化是提升智能体可靠性的关键方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

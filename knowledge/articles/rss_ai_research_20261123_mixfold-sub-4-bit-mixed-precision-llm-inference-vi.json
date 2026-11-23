@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-017",
+  "title": "MixFold: Sub-4-Bit Mixed-Precision LLM Inference via Output-Channel Grouping on Mobile NPUs",
+  "source_url": "https://arxiv.org/abs/2611.26976",
+  "source_platform": "rss_ai_research",
+  "summary": "MixFold 提出了一种面向移动 NPU 的亚 4 比特混合精度 LLM 推理方法，旨在解决低比特量化在移动端内存节省无法转化为解码加速的问题。移动 NPU 的矩阵单元仅支持少数原生整数数据类型，且每个矩阵单元瓦片只能使用一种数据类型，导致不支持的权重格式需在向量单元上转换，抵消了低比特带来的收益。MixFold 通过输出通道分组技术，将 3 比特和完全对称的 2 比特权重映射到 NPU 原生支持的数据类型上，避免运行时转换开销，从而在移动 NPU 上实现高效的亚 4 比特混合精度推理。该工作值得关注，因为它直面移动端 LLM 部署中量化收益与硬件约束之间的核心矛盾，为在资源受限设备上运行更大模型提供了可行的系统级优化方案。",
+  "tags": [
+    "LLM",
+    "Quantization",
+    "Mobile NPU",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:56:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "亚 4 比特量化的内存节省在移动 NPU 上不一定转化为解码加速，因为不支持的权重格式转换会抵消收益。",
+      "移动 NPU 矩阵单元仅支持少数原生整数类型，且每个瓦片只能使用一种数据类型，混合精度面临额外约束。",
+      "MixFold 通过输出通道分组将 3 比特和对称 2 比特权重映射到原生类型，避免向量单元转换开销。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

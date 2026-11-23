@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-144",
+  "title": "Parameter-Efficient Adaptation of Qwen3-VL for Handwritten Mathematical Expression Recognition",
+  "source_url": "https://arxiv.org/abs/2611.27208",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究在有限计算资源下，如何将紧凑的视觉语言模型适配于手写数学表达式识别（HMER）任务。HMER 需要同时恢复符号身份和二维语法结构，局部合理的转录仍可能结构错误。作者从 4-bit 量化的 Qwen3-VL-4B 检查点出发，对视觉、语言等模块应用秩为 16 的低秩适配（LoRA），使模型生成线性化的符号标签图（SLG）。该工作展示了参数高效微调方法在复杂结构化识别任务上的可行性，为资源受限场景下的多模态模型适配提供了实践参考，值得关注。",
+  "tags": [
+    "VLM",
+    "LoRA",
+    "HMER",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:01:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "HMER 需要联合恢复符号身份与二维语法，局部合理的转录可能结构错误，因此评估需关注结构正确性。",
+      "从 4-bit 量化的 Qwen3-VL-4B 出发，对视觉和语言模块应用秩 16 LoRA，可在有限算力下适配模型。",
+      "将识别结果表示为线性化符号标签图（SLG），为结构化输出提供了一种紧凑表示。",
+      "参数高效微调使紧凑 VLM 在复杂结构化识别任务上具备可行性，适合资源受限场景。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-060",
+  "title": "Trained on Harm, Still Refusing: A Training-Time Defense for Code Generation",
+  "source_url": "https://arxiv.org/abs/2611.27495",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种针对代码生成模型的训练时防御方法，旨在解决微调过程中安全对齐被破坏的问题。研究发现，即使模型内部表征仍能高度解码出有害信息，模型仍可能遵从有害请求；且初始的拒绝偏好并不保证持续拒绝。该方法通过在训练过程中注入防御机制，使模型在微调后仍能保持拒绝有害请求的能力。该工作值得关注，因为它揭示了安全对齐在微调中的脆弱性，并提供了一种实用的训练时解决方案，对代码生成模型的安全部署具有重要意义。",
+  "tags": [
+    "安全对齐",
+    "代码生成",
+    "微调防御",
+    "LLM安全"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "微调不可信数据会严重削弱代码模型拒绝有害请求的能力，即使内部表征仍可解码有害信息。",
+      "模型初始的拒绝偏好不能保证微调后持续拒绝，存在偏好衰减现象。",
+      "提出训练时防御方法，在微调过程中保持模型的安全拒绝行为。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

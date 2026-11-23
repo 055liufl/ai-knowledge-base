@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261123-088",
+  "title": "VerifiQuant: Governance-by-Execution for Financial LLM Workflows",
+  "source_url": "https://arxiv.org/abs/2611.26649",
+  "source_platform": "rss_ai_research",
+  "summary": "VerifiQuant 是一篇来自 arXiv 的金融 LLM 工作流治理框架论文。该研究指出，金融场景中 LLM 最危险的失败模式是输出自信、格式规范但数值错误的答案，且缺乏区分对错的信号。作者认为核心部署问题是可治理性：系统必须判断问题是否支持数值回答，还是应澄清、拦截或拒绝。VerifiQuant 提出「执行即治理」框架，将金融计算逻辑与 LLM 输出解耦，通过可执行验证机制确保数值答案的正确性。该工作值得关注，因为它直击 LLM 在高风险金融场景落地的关键痛点——幻觉数值的不可检测性，并提出了一种从架构层面而非提示工程层面解决可信度问题的思路，对金融 AI 产品的合规部署具有实践指导意义。",
+  "tags": [
+    "LLM",
+    "金融AI",
+    "可信AI",
+    "工作流治理"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:58:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "金融 LLM 最危险的失败不是明显错误，而是格式规范、语气自信的错误数值，用户难以察觉",
+      "核心部署障碍是可治理性：系统需判断何时应给出数值答案、何时应澄清或拒绝",
+      "执行即治理（governance-by-execution）将计算验证与语言生成解耦，从架构层面保障数值正确性",
+      "该思路可推广到其他高风险数值密集型领域，如医疗、法律和工程计算"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

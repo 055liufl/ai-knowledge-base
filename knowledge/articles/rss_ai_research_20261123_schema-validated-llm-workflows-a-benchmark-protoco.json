@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261123-134",
+  "title": "Schema-Validated LLM Workflows: A Benchmark Protocol and Comparative Evaluation Across Six Python Implementations",
+  "source_url": "https://arxiv.org/abs/2611.27106",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM在结构化输出场景（如记录提取、SQL生成、报告摘要、政策问答和运营路由）中仅保证可解析性而无法确保任务正确性的问题，提出了一套可复现的基准测试协议、公开可执行工件以及跨六种Python实现的对比评估。研究通过实时API确认性评估，将结构有效性（如JSON Schema验证）与任务特定正确性分离，覆盖五类业务边界场景。该工作值得关注，因为它首次系统性地量化了LLM工作流中“格式合规”与“语义正确”之间的差距，为开发者选择实现方案和设计验证层提供了实证依据，并推动了LLM工程化落地的标准化评估。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Schema Validation",
+    "Workflow",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:00:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "结构有效性（如JSON Schema通过）不等于任务正确性，LLM工作流需分层验证。",
+      "六种Python实现的对比揭示了不同库在实时API下的性能与正确性差异。",
+      "公开可执行工件和基准协议提升了LLM结构化输出评估的可复现性。",
+      "业务边界场景（提取、SQL、摘要、问答、路由）需要任务特定的正确性度量。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

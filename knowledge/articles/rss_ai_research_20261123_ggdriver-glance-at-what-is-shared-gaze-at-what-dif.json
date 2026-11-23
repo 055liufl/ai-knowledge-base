@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261123-049",
+  "title": "GGDriver: Glance at What Is Shared, Gaze at What Differs for Perception-Free Planning",
+  "source_url": "https://arxiv.org/abs/2611.27330",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出GGDriver，一种用于端到端自动驾驶规划的新方法。传统规划器对所有候选轨迹使用相同的压缩场景表示进行评估，而GGDriver让每个候选轨迹选择用于细化和评分的视觉证据。方法分为两步：首先通过全局一瞥（global glance）从共享场景特征生成轨迹假设；然后围绕每条轨迹投影一个走廊，并针对该走廊区域进行局部凝视（gaze），提取与具体机动相关的视觉特征来精炼和评分轨迹。这种“先共享、后差异”的感知策略使规划器能够根据左转、直行等不同操作关注场景的不同部分，实现无需显式感知模块的规划。该工作值得关注，因为它挑战了端到端规划中统一场景表示的惯例，提出了一种更符合驾驶决策直觉的注意力机制，有望提升复杂场景下的规划安全性和准确性。",
+  "tags": [
+    "Autonomous Driving",
+    "End-to-End Planning",
+    "Attention Mechanism",
+    "Trajectory Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T19:57:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "每个候选轨迹应选择自己的视觉证据，而非共享同一压缩场景表示",
+      "全局一瞥生成轨迹假设，局部凝视围绕轨迹走廊提取差异化特征",
+      "该方法实现了感知与规划的解耦式注意力，无需显式感知模块"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

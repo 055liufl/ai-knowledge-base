@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261123-140",
+  "title": "GEG-SAM: Gaze Exploration-Guided Segment Anything Model for Weakly Supervised Polyp Segmentation",
+  "source_url": "https://arxiv.org/abs/2611.27183",
+  "source_platform": "rss_ai_research",
+  "summary": "GEG-SAM 提出了一种利用内镜医师眼动注视数据作为弱监督信号来驱动 Segment Anything Model（SAM）进行息肉分割的新方法。现有方法通常将注视点视为孤立的空间提示，直接与目标关联，忽略了自然注视是一个连续的视觉搜索过程——注视点在时间上相互连接、在空间上有组织，并与视觉探索行为耦合。该工作针对这一缺陷，设计了眼动探索引导机制，将注视序列建模为连续探索轨迹，从而为 SAM 提供更符合临床诊断过程的弱监督信息。该方法的意义在于：一方面降低了息肉分割对密集像素级标注的依赖，利用常规内镜检查中可无感采集的眼动数据作为廉价监督；另一方面将 SAM 强大的通用分割能力迁移到医学内镜场景，有望提升结直肠息肉检测与分割的自动化水平。对于医学影像分析、弱监督学习和基础模型适配等方向的研究者与开发者而言，该工作提供了将人类视觉行为先验注入大模型的新思路，值得关注。",
+  "tags": [
+    "SAM",
+    "Weakly Supervised Learning",
+    "Medical Imaging",
+    "Gaze",
+    "Segmentation"
+  ],
+  "author": null,
+  "published_at": "2026-11-23T19:53:59Z",
+  "collected_at": "2026-11-23T20:01:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将内镜医师眼动注视作为无感采集的弱监督信号，减少对像素级标注的依赖",
+      "指出现有方法将注视点视为孤立空间提示的缺陷，强调注视是时间连续、空间组织的视觉搜索过程",
+      "通过眼动探索引导 SAM，把人类视觉行为先验注入通用分割基础模型",
+      "为医学内镜场景下的弱监督息肉分割提供了新的监督范式"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
