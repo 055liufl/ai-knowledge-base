@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261124-063",
+  "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_platform": "rss_company_blog",
+  "summary": "该博客由 ServiceNow AI 团队发布，探讨了 vLLM 从 V0 架构迁移到 V1 架构过程中在强化学习（RL）场景下遇到的关键问题，核心观点是「正确性优先于修正」。文章指出，vLLM V1 在推理性能上有显著提升，但在与 RL 训练流程（如 PPO、GRPO 等）集成时，由于调度、KV cache 管理和采样逻辑的变化，可能引入细微的正确性偏差，例如 logprob 不一致、采样结果不可复现等问题。作者强调，在将 V1 用于 RL 训练之前，必须先建立严格的正确性验证机制，而非依赖事后修补。文章分享了具体的调试经验、验证方法以及迁移建议，对使用 vLLM 做 RLHF/RLVR 的团队具有较高参考价值。",
+  "tags": [
+    "vLLM",
+    "RL",
+    "推理引擎",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-24T19:22:30Z",
+  "collected_at": "2026-11-24T19:26:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vLLM V1 在 RL 场景下存在正确性风险，迁移前需建立严格的验证机制",
+      "调度与 KV cache 逻辑变化可能导致 logprob 不一致和采样不可复现",
+      "正确性应优先于性能优化，避免事后修补带来的隐性偏差",
+      "为使用 vLLM 进行 RLHF/RLVR 训练的团队提供了可操作的调试与迁移建议"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

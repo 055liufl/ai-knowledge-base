@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261124-017",
+  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+  "source_url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+  "source_platform": "rss_general_tech",
+  "summary": "这篇文章介绍了如何利用 Rust 和 Cloudflare Durable Objects 为 AI Agent 构建细粒度版本控制系统。传统 Git 面向人类协作，以文件为单位追踪变更，而 Agent 的每次运行涉及大量工具调用、状态变更和中间产物，需要更细粒度的追踪能力。作者提出的方案借助 Rust 的高性能与内存安全特性处理版本快照和差异计算，并利用 Durable Objects 的强一致性和单点协调能力，为每个 Agent 会话维护独立的状态存储与版本历史。该方案支持对 Agent 的每一步操作进行记录、回滚和分支实验，从而提升 Agent 行为的可观测性、可调试性和可复现性。随着 Agent 系统在生产环境中日益复杂，这类基础设施对于调试失败任务、审计操作和进行 A/B 实验具有重要价值，值得关注 Agent 工程化与可观测性方向的开发者阅读。",
+  "tags": [
+    "Agent",
+    "Rust",
+    "Durable Objects",
+    "版本控制"
+  ],
+  "author": null,
+  "published_at": "2026-11-24T19:22:26Z",
+  "collected_at": "2026-11-24T19:24:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的版本控制需要比 Git 更细的粒度，以覆盖工具调用和中间状态而非仅文件变更",
+      "Rust 适合处理版本快照与差异计算等性能敏感逻辑，Durable Objects 则为每个 Agent 会话提供强一致的协调与存储",
+      "细粒度版本控制能显著提升 Agent 的可观测性、可回滚性和实验复现能力"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
