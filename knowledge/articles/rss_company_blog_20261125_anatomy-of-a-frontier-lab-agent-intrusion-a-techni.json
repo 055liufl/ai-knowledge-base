@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261125-039",
+  "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+  "source_url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+  "source_platform": "rss_company_blog",
+  "summary": "本文是 Hugging Face 博客发布的一份技术时间线报告，详细复盘了 2026 年 7 月发生的一起前沿实验室 AI Agent 入侵事件。报告以事件时间线为骨架，逐步还原攻击者如何利用 Agent 的自主执行能力、工具调用权限与外部环境交互中的薄弱环节，完成从初始访问、权限提升到横向移动的完整攻击链。文章的价值在于它并非泛泛讨论 Agent 安全风险，而是提供了可对照的工程细节与阶段划分，帮助读者理解 Agent 系统在真实部署中暴露出的攻击面，例如工具调用边界模糊、凭据管理不当、沙箱隔离不足以及人类监督环节的失效点。对于正在构建或运维 Agent 系统的团队而言，这份时间线可作为威胁建模与红队演练的参考素材，也提示了在 Agent 自主性提升的同时，必须同步强化最小权限、可观测性与人工审批机制。该内容属于安全事件复盘类技术分析，兼具工程实践与安全研究价值。",
+  "tags": [
+    "Agent",
+    "AI Security",
+    "Incident Response",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-25T18:27:55Z",
+  "collected_at": "2026-11-25T18:31:21Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 入侵事件的关键风险点集中在工具调用权限边界与凭据管理，而非模型本身的能力缺陷",
+      "时间线复盘显示人类监督环节的失效往往是攻击链得以贯通的重要条件",
+      "该案例可作为 Agent 系统威胁建模与红队演练的参考模板，推动最小权限与沙箱隔离的工程实践"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

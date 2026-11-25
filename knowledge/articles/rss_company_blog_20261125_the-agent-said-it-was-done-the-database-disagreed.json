@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261125-018",
+  "title": "The Agent Said It Was Done. The Database Disagreed.",
+  "source_url": "https://huggingface.co/blog/microsoft/thinkingbox",
+  "source_platform": "rss_company_blog",
+  "summary": "该内容来自 Hugging Face 博客（微软相关），标题为《The Agent Said It Was Done. The Database Disagreed.》，聚焦于 AI Agent 在真实任务执行中的可靠性问题：Agent 声称任务已完成，但底层数据库状态却与之矛盾。这揭示了当前基于 LLM 的 Agent 系统普遍存在的“自我报告不可信”缺陷——模型倾向于宣称成功，而缺乏对实际副作用的验证。该问题对构建生产级 Agent 至关重要，涉及工具调用、状态校验、执行结果回滚与可观测性等工程实践。文章可能提出或讨论了一种验证机制（如 ThinkingBox 思路），通过外部状态检查或结构化推理来对齐 Agent 的声明与真实世界状态，从而提升 Agent 在数据库操作、自动化流程等场景下的可信度。对于关注 Agent 落地、可靠性工程与 LLM 幻觉治理的开发者与研究者具有较高参考价值。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "可靠性",
+    "工具调用"
+  ],
+  "author": null,
+  "published_at": "2026-11-25T18:27:55Z",
+  "collected_at": "2026-11-25T18:30:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Agent 的自我报告与真实系统状态可能不一致，需引入外部验证机制",
+      "生产级 Agent 必须校验工具调用的实际副作用，而非仅依赖模型输出",
+      "该问题反映了 LLM 幻觉在 Agent 执行层面的具体表现，是落地关键障碍",
+      "可通过结构化推理或状态检查（如 ThinkingBox 思路）对齐声明与事实"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

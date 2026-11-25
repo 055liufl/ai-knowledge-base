@@ -1,0 +1,31 @@
+{
+  "id": "rss-general-tech-20261125-007",
+  "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
+  "source_url": "https://greydanus.github.io/2026/11/12/pengpt/",
+  "source_platform": "rss_general_tech",
+  "summary": "PenGPT 是 Sam Greydanus 提出的一项生成式 Transformer 研究项目，专注于手写笔迹与草图（sketch）的生成建模。该项目将 GPT 式的自回归序列建模思路迁移到矢量笔迹数据上，把笔画的坐标、抬笔/落笔状态等离散化 token 序列作为建模对象，从而让模型能够像生成文本一样逐笔生成手写字符和简笔画。其核心价值在于拓展了生成式 Transformer 的应用边界：从自然语言、代码、图像 token 延伸到人类手写轨迹这一具有强时序性和空间结构的数据模态。相比基于像素的图像生成方法，笔迹序列生成天然具备矢量性、可编辑性和可缩放性，对数字墨水、手写合成、教育辅助、创意绘图工具等场景具有直接应用潜力。该工作也呼应了近期将 Transformer 用于多模态序列建模的趋势，展示了统一序列建模范式在非文本连续轨迹数据上的可行性。尽管目前以博客形式呈现，但其思路对研究者和开发者理解生成式模型的数据表示设计、tokenization 策略以及小规模复现实验具有参考意义，值得关注其在手写识别、笔迹风格迁移和人机协同绘图方向的后续发展。",
+  "tags": [
+    "Transformer",
+    "生成模型",
+    "手写生成",
+    "序列建模"
+  ],
+  "author": null,
+  "published_at": "2026-11-25T18:27:49Z",
+  "collected_at": "2026-11-25T18:29:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将手写笔迹离散化为 token 序列，使 GPT 式自回归建模可直接应用于矢量笔迹生成",
+      "相比像素级图像生成，笔迹序列生成具备矢量性、可编辑性和可缩放性，更适合数字墨水与创意工具场景",
+      "展示了统一序列建模范式从文本向连续轨迹数据扩展的可行性，tokenization 策略是关键设计点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

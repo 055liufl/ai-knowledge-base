@@ -1,0 +1,31 @@
+{
+  "id": "rss-company-blog-20261125-004",
+  "title": "180B Parameters, 32GB of RAM: Pushing MoE Inference to the Limit with Transformers",
+  "source_url": "https://huggingface.co/blog/moe-expert-streaming",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了如何利用Hugging Face Transformers库在仅有32GB内存的机器上运行180B参数的混合专家（MoE）模型。通过专家流式加载（expert streaming）技术，将模型参数动态从磁盘加载到内存，而非全部驻留，从而大幅降低内存需求。文章详细阐述了MoE架构的特点、流式加载的实现原理、性能优化策略（如预取、缓存、异步加载），并提供了实际测试结果和代码示例。这项技术使得在消费级硬件上部署超大规模MoE模型成为可能，显著降低了研究和应用的门槛，对推动大模型民主化具有重要意义。",
+  "tags": [
+    "MoE",
+    "Transformers",
+    "推理优化",
+    "内存管理"
+  ],
+  "author": null,
+  "published_at": "2026-11-25T18:27:55Z",
+  "collected_at": "2026-11-25T18:29:44Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "专家流式加载通过动态加载MoE模型中的专家参数，大幅降低内存占用，使180B模型在32GB RAM上运行成为可能。",
+      "结合预取、缓存和异步加载等优化技术，可以在有限内存下保持较高的推理吞吐量。",
+      "该技术降低了大规模MoE模型的部署门槛，为在消费级硬件上运行大模型提供了实用方案。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

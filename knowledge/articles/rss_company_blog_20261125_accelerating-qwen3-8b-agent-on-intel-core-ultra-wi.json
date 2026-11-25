@@ -1,0 +1,32 @@
+{
+  "id": "rss-company-blog-20261125-124",
+  "title": "Accelerating Qwen3-8B Agent on Intel® Core™ Ultra with Depth-Pruned Draft Models",
+  "source_url": "https://huggingface.co/blog/intel-qwen3-agent",
+  "source_platform": "rss_company_blog",
+  "summary": "本文介绍了在 Intel Core Ultra 处理器上，通过深度剪枝的草稿模型加速 Qwen3-8B 智能体推理的技术。该方法采用推测解码（speculative decoding）策略，使用一个经过深度剪枝的轻量级草稿模型来预测多个候选 token，再由完整的 Qwen3-8B 模型进行验证，从而在保持输出质量的同时显著提升推理速度。该方案针对边缘设备优化，充分利用 Intel Core Ultra 的 CPU 和集成 NPU 的算力，实现了低延迟的智能体交互。文章详细阐述了草稿模型的剪枝方法、训练过程以及与主模型的协同推理机制，并提供了性能基准测试结果，显示在典型智能体任务上可获得明显的加速比。这项工作降低了在本地设备上运行大语言模型智能体的门槛，为边缘 AI 应用提供了实用且高效的解决方案，值得关注。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "推理加速",
+    "边缘计算",
+    "模型剪枝"
+  ],
+  "author": null,
+  "published_at": "2026-11-25T18:27:55Z",
+  "collected_at": "2026-11-25T18:34:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "采用深度剪枝的草稿模型进行推测解码，可在不损失输出质量的前提下加速 Qwen3-8B 智能体在边缘设备上的推理。",
+      "针对 Intel Core Ultra 的 CPU 和 NPU 进行优化，实现了低延迟的本地智能体部署。",
+      "该方法降低了在资源受限设备上运行大语言模型智能体的门槛，推动了边缘 AI 应用的发展。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}
