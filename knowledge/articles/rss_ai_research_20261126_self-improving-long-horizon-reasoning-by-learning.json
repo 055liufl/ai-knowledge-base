@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-023",
+  "title": "Self-Improving Long-Horizon Reasoning by Learning Summaries from Local Continuations",
+  "source_url": "https://arxiv.org/abs/2611.31621",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注长程推理中推理模型随上下文增长而性能退化的问题，提出通过定期将推理历史压缩为紧凑状态并从该状态继续推理来扩展有效推理视野。现有方法要么用最终答案奖励训练状态，要么从更强模型蒸馏，但两者都无法单独衡量状态本身的贡献。作者观察到局部延续（local continuations）可以提供更直接的监督信号，据此提出从局部延续中学习摘要（summaries）的自改进方法，使模型能够在不依赖外部强模型或仅最终答案奖励的情况下，学习到对推理历史的有效压缩表示，从而在长程推理任务上实现自我提升。该工作为长上下文推理的状态压缩与自监督训练提供了新思路，对提升推理模型在复杂多步任务中的稳定性具有潜在价值。",
+  "tags": [
+    "Long-Horizon Reasoning",
+    "Context Compression",
+    "Self-Improvement",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长推理轨迹本身并不自动带来更长的有效推理视野，上下文增长会导致推理模型性能退化。",
+      "将推理历史压缩为紧凑状态并从状态继续，是扩展有效推理视野的关键手段。",
+      "最终答案奖励和强模型蒸馏均无法单独衡量压缩状态本身的贡献，局部延续提供了更直接的监督信号。",
+      "从局部延续中学习摘要可实现模型自改进，减少对外部强模型或稀疏最终奖励的依赖。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

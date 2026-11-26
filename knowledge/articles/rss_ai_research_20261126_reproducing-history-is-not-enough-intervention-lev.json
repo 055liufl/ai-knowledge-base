@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-033",
+  "title": "Reproducing History Is Not Enough: Intervention-Level Assurance for LLM-Generated Simulators",
+  "source_url": "https://arxiv.org/abs/2611.31736",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出，大型语言模型（LLM）能够生成操作流程与工作流的仿真程序，这些程序可用于回答关于新记录和新政策的反事实问题。然而，仅凭程序能复现历史记录并不足以保证其可靠性：程序可能错误地应用请求的变更、将变更应用到与问题无关的记录上，或在输入变化后失效。作者提出“干预级保证”（Intervention-Level Assurance）的概念，强调需要针对干预操作本身进行验证，而非仅验证历史复现能力。该研究值得关注，因为它揭示了LLM生成仿真器在决策支持场景中的关键风险，并为评估和保障此类程序的可信度提供了新视角，对依赖LLM进行政策模拟和流程分析的开发者与研究者具有重要参考价值。",
+  "tags": [
+    "LLM",
+    "Simulation",
+    "Assurance",
+    "What-if Analysis"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:26Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "复现历史记录是LLM生成仿真器的必要但不充分条件，无法保证反事实问题的回答正确性。",
+      "干预操作可能被错误应用或作用于错误记录，导致仿真结果偏离预期。",
+      "需要建立干预级别的保证机制，对仿真程序在变更场景下的行为进行独立验证。",
+      "该问题对基于LLM的政策模拟与流程优化应用构成关键可靠性挑战。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

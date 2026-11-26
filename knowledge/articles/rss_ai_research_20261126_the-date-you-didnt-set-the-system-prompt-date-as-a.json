@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-108",
+  "title": "The Date You Didn't Set: The System-Prompt Date as a Hidden Variable in LLM Evaluation",
+  "source_url": "https://arxiv.org/abs/2611.31254",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了指令微调模型系统提示中自动填充的日期（通常为当天日期）作为一个隐藏变量对LLM评估结果的影响。研究在六个指令微调模型和四个基准上，固定提示、解码和配置，仅改变系统提示中的日期，发现所有模型均受影响，且两个看似合理的日期设置会导致评估结果出现显著差异。这项工作首次系统性地量化了系统提示日期这一常被忽视的变量对评估稳定性和可复现性的影响，提醒研究者和开发者：未改变评估代码的情况下，模型表现可能因日期不同而波动，从而影响基准比较和结论可靠性。对于依赖LLM评估进行模型选型、迭代和学术对比的团队，该发现具有重要的方法论警示意义。",
+  "tags": [
+    "LLM Evaluation",
+    "System Prompt",
+    "Reproducibility",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "系统提示中自动填充的日期是一个被忽视的隐藏变量，会随日期变化而改变评估输入，导致同一评估在不同日期产生不同结果。",
+      "在六个指令微调模型和四个基准上，固定其他所有条件仅改变日期，所有模型均受到影响，说明该问题具有普遍性。",
+      "两个看似合理的日期设置即可导致评估结果出现显著差异，威胁LLM评估的可复现性和基准比较的公平性。",
+      "研究者和开发者应在评估中显式控制或记录系统提示日期，以避免将日期波动误判为模型能力变化。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

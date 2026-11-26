@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-016",
+  "title": "Agent Recovery Gone Wrong: Measuring Harm Beyond Duplicate Calls",
+  "source_url": "https://arxiv.org/abs/2611.31554",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究代码执行型 LLM Agent 在 API 写入失败后的恢复行为。当 Agent 提交的代码块部分写入成功但整体失败时，Agent 会重写代码块并继续执行，这种恢复机制可能导致外部状态被重复修改或产生其他危害。作者基于 AppWorld Agent 的录制轨迹，对 200 个候选片段进行分层随机抽样，量化了自然失败场景下恢复操作对外部状态造成的实际损害。该研究首次系统性地测量了 Agent 恢复机制在真实轨迹中的副作用，揭示了仅关注重复调用之外的更广泛危害，对构建安全可靠的 Agent 系统具有重要警示意义。",
+  "tags": [
+    "Agent",
+    "LLM",
+    "安全",
+    "代码执行",
+    "可靠性"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:45Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "代码执行型 Agent 在部分写入成功后失败并重写代码块时，可能对外部状态造成重复修改等实际危害。",
+      "基于 AppWorld Agent 真实轨迹的测量表明，自然失败场景下的恢复危害需要被系统性地量化。",
+      "仅关注重复调用不足以覆盖 Agent 恢复机制的全部风险，需扩展对状态一致性和副作用的研究。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

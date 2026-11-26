@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-058",
+  "title": "TableRouter: Query-Aware Evidence Construction for Long-Table Question Answering",
+  "source_url": "https://arxiv.org/abs/2611.32006",
+  "source_platform": "rss_ai_research",
+  "summary": "TableRouter 是一个面向长表格问答（Long-Table QA）的无训练框架，旨在解决表格规模超出 LLM 上下文预算时证据检索不充分的问题。现有方法通常只检索相关行，但检索到的子集可能遗漏精确聚合所需的信息，且即使证据完整，LLM 也可能难以有效利用。TableRouter 通过分析每个查询，在两条路径间动态选择：一条是计算路径，从表格中推导问题条件统计量；另一条是推理路径，将证据组织为更易被 LLM 使用的形式。该工作值得关注，因为它跳过了模型微调，直接针对长表格场景中“检索到但用不好”的痛点，提出查询感知的证据构造策略，对提升表格问答的准确性和鲁棒性具有实用价值，尤其适用于需要精确聚合的复杂查询。",
+  "tags": [
+    "Table QA",
+    "Long-Context",
+    "Evidence Construction",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长表格问答中，仅检索相关行不足以支持精确聚合，检索子集可能遗漏关键信息。",
+      "即使证据完整，LLM 也可能难以直接利用，需要针对查询构造更易用的证据形式。",
+      "TableRouter 采用无训练框架，根据查询动态选择计算路径或推理路径，平衡精确性与可读性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

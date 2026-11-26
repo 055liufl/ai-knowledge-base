@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-014",
+  "title": "One Step, Four Clocks: How GUI Agents Fall Out of Step",
+  "source_url": "https://arxiv.org/abs/2611.31522",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究GUI智能体在界面动态变化时出现的时序失配问题。作者指出，仅用延迟无法解释失败原因，因为动作可能在不同交互阶段失效。为此，他们提出EODA模型，将交互过程分解为环境变化、观察可用、决策承诺和动作接收四个事件，并构建ChronotopeGym测试环境，在暂停、回放和实时三种执行模式下评估智能体表现。实验覆盖五类任务，发现智能体在实时执行中容易因界面变化导致动作失效。该工作首次系统性地将GUI智能体的失败归因于多时钟异步问题，为提升智能体在动态环境中的鲁棒性提供了新的分析框架和评测工具，对GUI自动化、人机交互和智能体系统设计具有重要参考价值。",
+  "tags": [
+    "GUI Agent",
+    "Agent",
+    "Benchmark",
+    "Human-Computer Interaction"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "GUI智能体的失败不仅源于延迟，更源于环境变化、观察、决策和动作接收四个事件之间的时序错位。",
+      "提出EODA模型和ChronotopeGym环境，系统评估智能体在暂停、回放和实时模式下的表现。",
+      "实时执行中界面动态变化会导致智能体已选动作失效，需设计时序感知的决策机制。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-112",
+  "title": "RECAP: Training Long-horizon LLM Agents with Context Compaction",
+  "source_url": "https://arxiv.org/abs/2611.31258",
+  "source_platform": "rss_ai_research",
+  "summary": "RECAP 是一个针对长周期 LLM 智能体的强化学习框架，旨在解决有限上下文预算下智能体处理长任务时交互历史膨胀的问题。其核心思想是上下文压缩（context compaction）：用压缩摘要替换冗长的交互历史，从而在固定上下文窗口内维持长期任务执行。然而，摘要质量会通过后续多轮交互影响任务成败，因此如何将压缩策略与智能体策略联合学习成为关键挑战。RECAP 基于“摘要应保留对后续决策有用的信息”这一原则，通过强化学习端到端优化压缩与决策过程。该工作值得关注，因为它首次系统性地将上下文压缩纳入智能体策略学习闭环，为长周期任务中的记忆管理与上下文效率提供了可训练的新范式，有望推动 LLM 智能体在复杂、多步骤场景中的实际部署。",
+  "tags": [
+    "LLM Agent",
+    "Reinforcement Learning",
+    "Context Compression",
+    "Long-horizon"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "上下文压缩是长周期 LLM 智能体在有限上下文预算下工作的关键，但压缩摘要的质量会通过多轮交互累积影响任务成败。",
+      "RECAP 将压缩策略与智能体策略通过强化学习联合优化，而非将压缩视为独立的预处理步骤。",
+      "摘要应保留对后续决策有用的信息，这一原则指导了 RL 奖励设计与训练过程。",
+      "该框架为长周期任务中的记忆管理与上下文效率提供了可训练的新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-028",
+  "title": "BRAG: Bayesian Retrieval Augmented Generation",
+  "source_url": "https://arxiv.org/abs/2611.31656",
+  "source_platform": "rss_ai_research",
+  "summary": "BRAG（Bayesian Retrieval Augmented Generation）是一篇来自 arXiv 的学术论文，提出了一种基于贝叶斯生成模型的检索增强生成新框架。传统 RAG 方法主要依赖查询与记忆块之间的语义相似度进行排序，而现有改进方法虽然引入了反馈学习，但大多属于独立启发式策略，缺乏统一的理论依据来判断何时适用。BRAG 将检索过程建模为生成模型：每个记忆块从其原始嵌入锚定的 von Mises-Fisher 混合分布中生成其能够回答的查询，从而以概率方式刻画“检索-使用”关系。该方法的核心价值在于为 RAG 的检索排序提供了原则性的贝叶斯建模范式，有望替代零散的启发式改进，提升检索决策的可解释性与自适应能力。对于关注 RAG 系统优化、信息检索理论以及概率生成模型的研究者和开发者而言，该工作值得关注，因为它可能推动 RAG 从相似度匹配向概率推理演进。",
+  "tags": [
+    "RAG",
+    "Bayesian Inference",
+    "Information Retrieval",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "BRAG 将 RAG 检索建模为生成过程，每个记忆块通过 von Mises-Fisher 混合分布生成其可回答的查询，为检索排序提供概率化理论框架。",
+      "现有 RAG 改进方法多为独立启发式，缺乏统一选择依据；BRAG 以贝叶斯生成模型统一刻画检索与使用的关系。",
+      "该方法有望提升 RAG 检索决策的可解释性与自适应能力，推动从语义相似度匹配向概率推理演进。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

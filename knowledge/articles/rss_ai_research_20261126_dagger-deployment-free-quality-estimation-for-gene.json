@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-107",
+  "title": "DAGGER: Deployment-Free Quality Estimation for Generative AI Workflows",
+  "source_url": "https://arxiv.org/abs/2611.31252",
+  "source_platform": "rss_ai_research",
+  "summary": "DAGGER 是一篇来自 arXiv 的跨领域研究论文，聚焦于生成式 AI 工作流（Generative AI Workflows）的端到端质量估计问题。这类工作流通常由多个阶段串联组成，每个阶段可从多个候选模型中选择，而单个阶段的误差会沿流水线向下游传播，导致最终性能不仅取决于各模型自身的准确率，还取决于其输出对下游阶段的影响。传统做法需要对每一种模型组合配置进行实际部署和端到端评估，成本极高且难以规模化。DAGGER 提出一种“免部署”（Deployment-Free）的质量估计方法，旨在不实际部署全部配置的前提下预测工作流的端到端质量，从而大幅降低模型选型与工作流优化的评估开销。该工作值得关注的原因在于：随着 Agent 与多阶段生成式流水线在生产环境中普及，如何在组合爆炸的模型配置空间中高效选型成为工程落地的关键瓶颈；DAGGER 若能在免部署条件下给出可靠的质量估计，将显著加速工作流设计与迭代，并为自动化模型路由、成本-质量权衡提供方法论基础。",
+  "tags": [
+    "Generative AI",
+    "Workflow",
+    "Quality Estimation",
+    "Model Selection"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多阶段生成式工作流存在误差跨阶段传播，端到端质量不能简单由单模型精度推导",
+      "候选模型组合导致配置空间爆炸，逐一部署评估不可行，免部署质量估计是必要方向",
+      "该方法有望用于自动化模型选型与工作流优化，降低评估成本",
+      "对 Agent 与多阶段流水线的工程落地具有方法论价值"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

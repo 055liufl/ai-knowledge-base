@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-063",
+  "title": "ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience",
+  "source_url": "https://arxiv.org/abs/2611.32085",
+  "source_platform": "rss_ai_research",
+  "summary": "ExpGuard 是一项针对长周期 LLM 智能体经验污染风险的安全防护研究。长周期 LLM 智能体常将历史轨迹蒸馏为可复用经验，但源轨迹中的误导性或对抗性引导会污染这些经验，使有害指令跨任务持续存在并影响未来决策。该工作指出评估此类风险面临三大挑战：在经验复用前建模来源与执行依赖关系、学习经验可信度评估机制、以及在长周期任务中动态隔离或修复被污染经验。ExpGuard 提出一套防护框架，旨在从经验生成、存储到复用的全链路中检测并阻断被污染的经验传播。该研究值得关注，因为随着智能体自主性和任务周期增长，经验复用成为提升效率的关键手段，但也引入了新型持久化攻击面，现有安全对齐方法难以覆盖跨任务的经验级污染。ExpGuard 为智能体安全提供了从单步对齐向经验生命周期治理延伸的新视角，对构建可信、可审计的自主智能体系统具有重要参考价值。",
+  "tags": [
+    "LLM Agent",
+    "AI Safety",
+    "Experience Reuse",
+    "Adversarial Robustness"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:38Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "长周期智能体的经验蒸馏机制会将源轨迹中的误导性引导固化为可复用经验，形成跨任务的持久化攻击面",
+      "经验复用前的来源与执行依赖建模是评估污染风险的关键前提",
+      "需要从单步对齐扩展到经验全生命周期的安全治理，包括检测、隔离与修复被污染经验"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

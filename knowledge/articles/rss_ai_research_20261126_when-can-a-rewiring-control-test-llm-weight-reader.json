@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-103",
+  "title": "When Can a Rewiring Control Test LLM Weight Readers? C2 and an Eligibility Protocol",
+  "source_url": "https://arxiv.org/abs/2611.29120",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对大语言模型能否真正从原始权重中读取并计算小型神经网络行为这一能力评估问题提出方法论批判。作者指出，现有评估中 LLM 能预测小网络输出，但这一成功可能仅源于识别权重空间中的规律性“指纹”，而非真正执行计算；而保持功能不变的控制实验无法区分这两种机制。为此，论文提出 C2 反事实测试：置换网络最终线性读出层的列，使除该读出层列顺序外的所有其他参数，以及读出层的奇异值、范数和元素多重集均保持不变。通过这种重排，模型若真正读取权重并计算，应能相应调整预测；若仅依赖指纹识别，则会在 C2 下失效。论文进一步提出“资格协议”（Eligibility Protocol），用于判定何种重布线控制实验能够有效检验 LLM 的权重读取能力。该工作对机制可解释性与权重空间推理评估具有方法论意义，值得关注。",
+  "tags": [
+    "LLM",
+    "mechanistic interpretability",
+    "weight-space reasoning",
+    "evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:14Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 预测小网络输出可能只是识别权重空间指纹，而非真正计算",
+      "功能保持型控制实验无法区分指纹识别与真实权重读取",
+      "C2 通过置换最终读出层列构造反事实，保持奇异值、范数和元素多重集不变",
+      "提出资格协议，界定何种重布线控制能有效检验权重读取能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

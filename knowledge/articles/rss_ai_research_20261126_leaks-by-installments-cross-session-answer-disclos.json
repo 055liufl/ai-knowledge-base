@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-135",
+  "title": "Leaks by Installments: Cross-Session Answer Disclosure in LLM Tutors and a Ledger-Based Defense",
+  "source_url": "https://arxiv.org/abs/2611.31429",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出基于大语言模型（LLM）的辅导系统存在跨会话答案泄露风险：学习者无需一次性索要答案，而是可以通过开启新会话、改写问题或请求不同数值的解题过程，逐步拼凑出完整答案。现有防护措施仅针对单次对话内的回复进行判断，无法识别这种跨会话的渐进式泄露。作者将这一现象称为“跨会话披露”，并提出一种防御方案：为每位学习者维护一个持久化的披露账本（disclosure ledger），用于记录和追踪已泄露的信息，从而在后续会话中识别并阻止累积性答案泄露。该研究关注LLM教育应用中的安全与隐私问题，具有实际部署价值，尤其对在线辅导平台和智能教育产品有直接指导意义。",
+  "tags": [
+    "LLM",
+    "安全",
+    "教育",
+    "隐私"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:16:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有LLM辅导系统的防护仅基于单次会话，无法阻止学习者通过多轮跨会话提问逐步获取答案。",
+      "跨会话答案泄露是一种渐进式攻击，需要持久化的用户级追踪机制来防御。",
+      "提出的披露账本方案为每位学习者记录已披露信息，可在后续会话中识别并阻断累积泄露。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-082",
+  "title": "EviCraft: Can Minecraft Agents Find What They Cannot See?",
+  "source_url": "https://arxiv.org/abs/2611.32765",
+  "source_platform": "rss_ai_research",
+  "summary": "EviCraft 是一篇针对 Minecraft 具身智能体评测方法的研究论文。作者指出，Minecraft 作为具身智能体的常用测试平台存在一个关键漏洞：mineBlock 等语义工具直接从模拟器已加载的世界状态中选取目标，而不做可见性检验。这意味着智能体可以直接挖到从未见过的埋藏矿石，导致评测分数无法反映智能体是否真正进行了搜索探索。为解决这一问题，论文将缺失的需求形式化为「证据闭包」（evidence closure）：智能体系统的每一个决策，包括工具内部的决策，都只能通过智能体实际可获取的事实来依赖世界状态。该工作揭示了当前具身智能体基准测试中普遍存在的评测失真问题，对智能体能力评估的严谨性提出了重要挑战，并为构建更可信的具身智能体评测体系提供了形式化基础。对于从事具身智能、智能体评测与 Minecraft 环境研究的开发者和研究者具有较高参考价值。",
+  "tags": [
+    "Agent",
+    "Embodied AI",
+    "Benchmark",
+    "Minecraft"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Minecraft 智能体基准存在评测漏洞：语义工具绕过可见性检验，使智能体可直接获取未观测信息，分数无法反映真实搜索能力",
+      "论文提出「证据闭包」原则，要求智能体所有决策（含工具内部）只能依赖其实际可获取的世界事实",
+      "该问题揭示了具身智能体评测中信息泄漏的普遍风险，对基准设计的严谨性提出更高要求"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

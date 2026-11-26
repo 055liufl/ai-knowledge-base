@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261126-098",
+  "title": "Uncertainty-Aware Candidate Generation for Entity Linking in Cyber Threat Intelligence",
+  "source_url": "https://arxiv.org/abs/2611.33086",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对网络威胁情报（CTI）场景中的实体链接（Entity Linking）问题，提出了一种不确定性感知的候选生成方法。传统实体解析流水线通常将歧义压缩为早期硬决策：上游命名实体识别（NER）只选择一个实体跨度（span）和类型，下游实体链接则将该选择视为真实标签。这种做法丢弃了底层数据中关于歧义性的宝贵信息（例如跨度边界分歧和类型混淆），导致系统在面对输入不确定性时表现脆弱、不可预测地失败。论文的核心思路是在候选生成阶段保留并利用这种不确定性信息，而非过早地做出确定性判断，从而提升实体链接系统在真实威胁情报数据上的鲁棒性。该工作值得关注的原因在于：网络威胁情报领域充斥着大量非结构化文本和模糊实体（如恶意软件名称、攻击组织别名等），实体链接的准确性直接影响威胁情报的关联分析质量；同时，该研究提出的'不确定性感知'范式对更广泛的实体解析和信息抽取流水线也具有方法论借鉴意义，挑战了传统流水线中'早期硬决策'的固有假设。",
+  "tags": [
+    "Entity Linking",
+    "Cyber Threat Intelligence",
+    "Uncertainty",
+    "NER",
+    "Information Extraction"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统实体解析流水线将歧义压缩为早期硬决策，丢弃了跨度边界分歧和类型混淆等有价值的不确定性信息",
+      "在网络威胁情报场景中保留不确定性信息可提升实体链接系统面对模糊输入时的鲁棒性",
+      "该方法挑战了NER选择单一跨度、EL将其视为真实标签的固有流水线假设",
+      "不确定性感知的候选生成范式对更广泛的实体解析和信息抽取任务具有方法论借鉴意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

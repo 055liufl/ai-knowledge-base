@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-140",
+  "title": "Where Agent Defenses Fail: A Case Study of Policy Compositions and Measurement Limits",
+  "source_url": "https://arxiv.org/abs/2611.31541",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了编码智能体在沙箱限制与主机中介策略组合下的安全失效问题。作者通过文件与HTTP收据独立测量攻击效果，而非依赖控制日志，并设计了两个前瞻性冻结输入队列（110和300次运行）在已探索的作者任务上进行实验。研究发现，限制性沙箱本身未观察到攻击，但策略组合（如沙箱阻止网络访问而主机中介恢复投递）可能引入注入指令，导致秘密泄露。论文揭示了智能体防御在策略组合场景下的脆弱性，并指出了测量方法的局限性。该工作对智能体安全评估具有重要参考价值，尤其关注防御机制交互产生的意外漏洞。",
+  "tags": [
+    "Agent Security",
+    "Sandbox",
+    "Policy Composition",
+    "Measurement"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:16:42Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "限制性沙箱单独使用时未观察到攻击，但与其他策略组合可能产生新的攻击面。",
+      "主机中介在恢复功能时可能被注入指令利用，导致敏感信息泄露。",
+      "使用文件与HTTP收据进行独立测量，比依赖控制日志更能反映真实攻击效果。",
+      "前瞻性冻结输入队列设计有助于提高实验的可重复性和可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-048",
+  "title": "RepoEviAgent: Scalable Synthesis of Evidence-Grounded Repository-Level Question Answering Tasks",
+  "source_url": "https://arxiv.org/abs/2611.31873",
+  "source_platform": "rss_ai_research",
+  "summary": "RepoEviAgent 是一个面向软件工程（SWE）领域的可扩展数据构建框架，旨在解决仓库级问答任务中高质量训练与评测数据稀缺的问题。真实 SWE 任务要求智能体理解仓库结构、跨模块依赖和运行时行为，传统人工标注成本高且难以规模化。该工作从 8,477 个开源仓库出发，将质量感知的数据筛选与角色专门化的多智能体任务合成相结合，自动生成有证据支撑（evidence-grounded）的仓库级问答任务。其核心价值在于：一是通过多智能体分工（如代码检索、证据定位、问题生成、质量校验）提升合成数据的可靠性与可追溯性；二是强调证据锚定，使生成的问题答案可回溯到具体代码位置，降低幻觉风险；三是提供了可扩展的自动化流水线，为 SWE 智能体的训练与评测提供持续数据供给。对关注代码智能体、仓库级理解与合成数据的研究者和工程师具有较高参考价值。",
+  "tags": [
+    "SWE",
+    "Multi-Agent",
+    "Data Synthesis",
+    "Code Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:00Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "采用角色专门化的多智能体协作合成仓库级问答任务，将数据筛选与任务生成解耦，提升可扩展性",
+      "强调证据锚定（evidence-grounded），使问答可回溯到具体代码位置，缓解合成数据中的幻觉问题",
+      "从 8,477 个开源仓库出发构建流水线，为 SWE 智能体的训练与评测提供规模化数据来源",
+      "仓库级任务需覆盖结构理解、跨模块依赖与运行时行为，是当前代码智能体评测的关键难点"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

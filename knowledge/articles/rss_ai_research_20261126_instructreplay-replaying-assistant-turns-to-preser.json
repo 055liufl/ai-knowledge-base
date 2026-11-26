@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-089",
+  "title": "InstructReplay: Replaying Assistant Turns to Preserve General Behavior During Factual Fine-Tuning",
+  "source_url": "https://arxiv.org/abs/2611.32918",
+  "source_platform": "rss_ai_research",
+  "summary": "InstructReplay 是一项针对指令微调语言模型在事实性微调过程中通用能力退化问题的研究。作者发现，标准微调会使模型在指令遵循、推理和编码基准上的表现平均下降 35 分，并且这种性能损失与回答长度的骤减高度相关：微调后的模型回答长度至少减半，且回答长度偏离初始模型越远，失败率越高。为此，作者提出 InstructReplay 方法，通过回放助手轮次来保留模型的通用行为。该研究揭示了事实性微调中一个被忽视的关键现象——回答长度崩溃与能力退化之间的关联，为缓解灾难性遗忘提供了新的视角和实用方案，对需要持续更新知识又不想牺牲通用能力的开发者具有重要参考价值。",
+  "tags": [
+    "Fine-tuning",
+    "Catastrophic Forgetting",
+    "LLM",
+    "Instruction Following"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:40Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准事实性微调会导致指令遵循、推理和编码能力平均下降35分，回答长度至少减半。",
+      "回答长度偏离初始模型越远，模型失败率越高，长度崩溃是能力退化的关键信号。",
+      "InstructReplay通过回放助手轮次来保留通用行为，为缓解灾难性遗忘提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

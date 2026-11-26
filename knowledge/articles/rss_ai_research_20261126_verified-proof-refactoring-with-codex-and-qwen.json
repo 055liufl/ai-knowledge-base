@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-037",
+  "title": "Verified Proof Refactoring with Codex and Qwen",
+  "source_url": "https://arxiv.org/abs/2611.31762",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种基于大语言模型的 Lean 4 证明重构方法，旨在减少证明源码长度和检查成本，同时保持定理陈述不变并兼容多个 Lean 版本。系统采用本地部署的 Qwen 模型，通过开源 Codex CLI 工具进行源码检查、声明检索和证明替换测试。宿主程序仅在替换方案改善目标指标且 Lean 在所有必需版本上接受时保留该替换，随后通过确定性的 CPU 处理流程进一步精炼已验证的证明。该方法值得关注之处在于：它将 LLM 的代码生成能力与形式化验证的严格性相结合，通过'验证后保留'的机制确保重构的正确性，为形式化数学证明的自动化维护和优化提供了可行路径，有望降低大型 Lean 项目的维护成本并提升证明检查效率。",
+  "tags": [
+    "LLM",
+    "Lean 4",
+    "形式化验证",
+    "代码重构"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 LLM 代码生成与形式化验证结合，通过多版本 Lean 检查确保重构的正确性",
+      "本地部署 Qwen 模型配合 Codex CLI 实现源码检查与证明替换的自动化流程",
+      "采用'仅保留改进且通过验证的替换'策略，兼顾优化目标与正确性保证",
+      "确定性 CPU 后处理流程进一步精炼已验证证明，形成 LLM 与规则方法互补的混合架构"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

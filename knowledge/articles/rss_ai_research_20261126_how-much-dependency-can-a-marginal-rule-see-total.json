@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-057",
+  "title": "How Much Dependency Can a Marginal Rule See? Total Correlation in Diffusion LM Parallel Decoding",
+  "source_url": "https://arxiv.org/abs/2611.31990",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究掩码扩散语言模型（Masked Diffusion LM）并行解码中的依赖关系问题。这类模型通过每步提交多个 token 来加速生成，但每个 token 独立地从其边缘分布采样，导致 token 间的依赖信息丢失。作者指出这种损失的大小等于已提交集合的条件总相关（Conditional Total Correlation, C）。大多数解码器基于逐位置边缘概率选择提交集合，虽能给出 C 的界但无法确定其值。论文核心问题是：这些解码器对 C 的预测能力如何？作者在四个掩码扩散模型上对固定候选集估计 C，系统评估了基于边缘概率的选择策略对真实依赖结构的预测精度。该工作首次将总相关作为并行解码依赖损失的量化指标，为理解扩散语言模型解码质量与速度的权衡提供了理论视角，对改进并行解码策略、减少 token 间依赖破坏具有指导意义，值得关注扩散模型推理加速与解码算法设计的研究者和开发者阅读。",
+  "tags": [
+    "Diffusion LM",
+    "Parallel Decoding",
+    "Total Correlation",
+    "Inference Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行解码中每个 token 独立从边缘分布采样，导致 token 间依赖丢失，其损失量可精确量化为已提交集合的条件总相关 C。",
+      "基于逐位置边缘概率的解码器只能给出 C 的界，无法确定真实依赖损失，因此其对 C 的预测能力存在根本局限。",
+      "论文在四个掩码扩散模型上对固定候选集估计 C，为评估并行解码策略的依赖保持能力提供了实证框架。",
+      "该研究揭示了扩散语言模型解码速度与生成质量权衡背后的依赖结构问题，为设计更优的并行解码算法提供理论依据。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

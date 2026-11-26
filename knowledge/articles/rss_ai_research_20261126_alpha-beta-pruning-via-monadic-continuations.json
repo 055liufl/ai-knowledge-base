@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-072",
+  "title": "Alpha-Beta Pruning via Monadic Continuations",
+  "source_url": "https://arxiv.org/abs/2611.32320",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于单子（monad）的 alpha-beta 剪枝形式化方法，将延续单子（continuation monad）与读取单子（reader monad）相结合。传统 alpha-beta 剪枝是博弈 AI 中的核心优化技术，通过跳过不影响最优决策的分支来加速极小极大搜索。以往的函数式编程实现通常将 alpha-beta 边界编码到可用走法的类型中，而本文的新构造将边界记录在单子内部，从而避免了类型层面的复杂编码。该方法为博弈搜索算法提供了更简洁、更可组合的函数式抽象，有助于在函数式编程语言中更优雅地实现和推理博弈 AI 算法。该工作属于程序语言与 AI 交叉领域的研究，对函数式编程社区和博弈 AI 研究者具有参考价值。",
+  "tags": [
+    "Alpha-Beta Pruning",
+    "Monad",
+    "Game AI",
+    "Functional Programming"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将 alpha-beta 剪枝的边界记录在单子内部，而非编码到走法类型中，简化了类型层面的处理",
+      "延续单子与读取单子的组合为博弈搜索提供了一种可组合的函数式抽象",
+      "该方法有助于在函数式编程语言中更优雅地实现和推理博弈 AI 算法"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

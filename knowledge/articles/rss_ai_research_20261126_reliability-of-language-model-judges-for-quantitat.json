@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-121",
+  "title": "Reliability of Language-Model Judges for Quantitative Scientific Question Answering: Evidence from Perovskite Photovoltaics",
+  "source_url": "https://arxiv.org/abs/2611.31269",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统评估了语言模型作为自动评判员在定量科学问答中的可靠性，以钙钛矿光伏领域为案例。研究构建了包含755个问题的基准，所有标准答案均从45,441条实验器件记录中确定性计算得出，避免了人工标注的主观性。作者对比了前沿模型Claude Opus 5.5与两个本地模型的评判表现，发现自动评判在定量科学合成任务上存在显著不可靠性，包括对数值精度、单位一致性和计算逻辑的误判。这项工作首次量化了模型评判员在硬科学定量场景中的信任边界，对依赖LLM进行科研评估的流程提出了警示，并呼吁建立领域特定的评判校准方法。其价值在于揭示了当前自动评估范式的脆弱性，为构建更稳健的科学问答评测体系提供了实证基础。",
+  "tags": [
+    "LLM Evaluation",
+    "Scientific QA",
+    "Model-as-Judge",
+    "RAG"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:56Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自动模型评判在定量科学问答中可靠性不足，对数值精度和计算逻辑的误判率显著高于定性任务。",
+      "确定性计算的标准答案（来自45,441条实验记录）为评判可靠性提供了无偏的黄金基准，避免了人工标注噪声。",
+      "前沿模型（Claude Opus 5.5）与本地模型的评判表现差异表明，模型规模并非解决定量评判可靠性的充分条件。",
+      "科学领域需要领域特定的评判校准与验证协议，不能直接套用通用LLM-as-a-judge范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

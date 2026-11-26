@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261126-002",
+  "title": "MOZAIC: An Audio-Video Deepfake Benchmark for Telling What Is Fake",
+  "source_url": "https://arxiv.org/abs/2611.31301",
+  "source_platform": "rss_ai_research",
+  "summary": "MOZAIC 是一个面向音视频（AV）深度伪造检测的基准数据集，旨在解决现有基准只能判断整段视频真伪、无法区分检测器究竟依赖画面、声音还是编码痕迹的问题。该基准采用配对设计，为每个源片段同时发布四种组合：真视频+真音频、真视频+假音频、假视频+真音频、假视频+假音频，从而构成四分类标签体系，使研究者能够直接测量各模态对检测结果的贡献。伪造类型覆盖人脸伪造、语音伪造以及两者兼有的情况。该工作值得关注的原因在于：随着音视频生成模型能力快速提升，深度伪造检测正从单一模态走向多模态融合，而缺乏可归因的评测基准会导致检测器性能提升来源不明、鲁棒性评估失真。MOZAIC 的配对四分类设计为模态消融提供了受控实验条件，有助于揭示检测器是否存在模态偏置（例如过度依赖视觉伪影或音频编码痕迹），并推动更具可解释性和跨模态鲁棒性的检测方法发展。对深度伪造检测、多媒体取证、多模态学习与AI安全领域的研究者和开发者具有较高参考价值。",
+  "tags": [
+    "Deepfake Detection",
+    "Multimodal",
+    "Benchmark",
+    "Audio-Video",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:13Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "配对四分类设计（真/假视频 × 真/假音频）使模态贡献可被直接测量，弥补了传统二分类基准无法归因的缺陷",
+      "该基准可揭示检测器是否存在模态偏置，例如过度依赖视觉伪影或音频编码痕迹而非真实语义线索",
+      "覆盖人脸伪造、语音伪造及两者兼有的场景，支持对多模态融合检测方法的受控消融实验",
+      "为深度伪造检测的可解释性与跨模态鲁棒性评估提供了标准化实验平台"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-076",
+  "title": "VISE: Verifier-Independent Skill Self-Evolution with Feedback from Tool Implementations",
+  "source_url": "https://arxiv.org/abs/2611.32480",
+  "source_platform": "rss_ai_research",
+  "summary": "VISE（Verifier-Independent Skill Evolution）是一种面向 LLM Agent 技能自进化的新方法，旨在解决技能优化过程中缺乏任务特定验证器的问题。传统上，Agent 技能（可复用的工作流）的改进依赖于对缺失或错误指令的反馈，但这类反馈通常需要针对具体任务构建验证器，成本高且难以泛化。VISE 提出“脚本优先”的思路，直接利用工具实现（源代码）来指导技能修订：从工具源码中提取工具能力、输入要求、使用条件和输出格式等关键信息，作为技能演化的反馈信号。该方法不依赖外部验证器，使 Agent 能够在仅有工具实现的情况下自主发现技能缺陷并迭代改进。该工作值得关注，因为它降低了 Agent 技能自进化的门槛，提升了在开放工具环境下的适应性与可靠性，对构建更自主、更鲁棒的 LLM Agent 系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "Skill Evolution",
+    "Tool Use",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "VISE 通过从工具源代码中提取能力、输入要求、使用条件和输出格式，替代任务特定验证器来指导技能修订。",
+      "脚本优先的方法使 Agent 技能演化不再依赖外部验证器，降低了反馈获取的成本和门槛。",
+      "该工作为开放工具环境下 LLM Agent 的自主技能改进提供了新思路，有望提升 Agent 的适应性和鲁棒性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

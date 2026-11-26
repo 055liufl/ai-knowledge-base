@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-111",
+  "title": "scOPD: Routed On-Policy Self-Distillation for LLM-Based Single-Cell Annotation",
+  "source_url": "https://arxiv.org/abs/2611.31257",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 scOPD（Routed On-Policy Self-Distillation），一种用于基于 LLM 的单细胞注释的新训练方法。现有方法主要依赖标量结果奖励，对中间生物推理过程的监督有限，尤其在批次级注释任务中，需要同时解决局部细胞身份识别和全局一对一匹配约束，局部错误可能影响整个分配。scOPD 通过路由式在线策略自蒸馏，利用模型自身生成的推理轨迹进行细粒度监督，从而提升注释准确性和推理质量。该方法值得关注，因为它将自蒸馏与策略优化结合，针对生物信息学中结构化预测的难点，为 LLM 在科学领域的应用提供了更有效的训练范式。",
+  "tags": [
+    "LLM",
+    "Self-Distillation",
+    "Single-Cell Annotation",
+    "Bioinformatics"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:32Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有标量奖励无法有效监督中间生物推理，批次级注释需要联合优化局部身份与全局匹配约束。",
+      "scOPD 采用路由式在线策略自蒸馏，利用模型自身生成的推理轨迹提供细粒度监督。",
+      "该方法针对单细胞注释中的结构化预测问题，有望提升 LLM 在生物信息学任务中的推理与分配准确性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

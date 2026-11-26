@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-119",
+  "title": "SD-Cache: Learnable Memory Consolidation with State-Guided Dynamic Caching",
+  "source_url": "https://arxiv.org/abs/2611.31265",
+  "source_platform": "rss_ai_research",
+  "summary": "SD-Cache 是一篇关于大语言模型推理内存优化的 arXiv 论文（编号 2611.31265），聚焦于 RAG 场景下 KV 缓存随外部知识累积而线性膨胀的问题。论文提出一种名为 SD-Cache 的可学习记忆整合机制，结合状态引导的动态缓存策略，对已编码的检索内容进行压缩与整合，从而在保持模型推理质量的同时降低显存占用与推理成本。该工作值得关注的原因在于：RAG 已成为 LLM 落地的主流范式，而长上下文与持续服务场景下的 KV 缓存开销是实际部署的核心瓶颈之一；现有记忆压缩方法多依赖静态启发式规则，SD-Cache 引入可学习与状态感知的动态决策，代表从规则驱动向模型自适应内存管理的演进方向，对推理基础设施与长上下文应用均有参考价值。",
+  "tags": [
+    "KV Cache",
+    "RAG",
+    "Memory Compression",
+    "LLM Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:51Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RAG 场景下检索内容持续写入 KV 缓存，导致缓存线性增长，成为内存与推理成本的主要瓶颈",
+      "SD-Cache 将记忆整合建模为可学习过程，并利用状态引导实现动态缓存决策，超越静态压缩启发式",
+      "该方向体现 LLM 内存管理从规则驱动向模型自适应演进，对长上下文与持久化服务部署具有实用意义"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-083",
+  "title": "RubikSQL-HB: Agentic Text-to-SQL with Knowledge in the Loop",
+  "source_url": "https://arxiv.org/abs/2611.32772",
+  "source_platform": "rss_ai_research",
+  "summary": "RubikSQL-HB 是一个面向数据库智能体的文本到 SQL（Text-to-SQL）系统，其核心创新在于将数据库特有的业务含义、存储值和参考查询等知识组织为可查询的知识工作区，并基于 HeavenBase 平台实现。与传统方法仅依赖模式结构不同，该系统允许智能体在推理过程中随时访问知识接口，从而在构建和调查答案时动态获取相关知识。候选智能体可以交错进行知识检索与 SQL 生成，形成“知识在环”（Knowledge in the Loop）的代理式工作流。该工作值得关注，因为它指出了 Text-to-SQL 任务中一个关键但常被忽视的维度：数据库的语义知识（如业务术语、枚举值、示例查询）对生成正确 SQL 至关重要，而现有方法往往只关注表结构。通过将知识作为一等公民并设计可查询的工作区，RubikSQL-HB 为提升复杂数据库场景下的 SQL 生成准确性和可解释性提供了新思路，对数据库智能体、自然语言接口和知识增强推理等方向具有参考价值。",
+  "tags": [
+    "Text-to-SQL",
+    "Agent",
+    "Knowledge Retrieval",
+    "Database"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Text-to-SQL 智能体不仅需要模式结构，还需要业务含义、存储值和参考查询等知识，且这些知识在不同推理阶段发挥作用。",
+      "通过可查询的数据库特定知识工作区，智能体可以在构建和调查答案的过程中动态访问知识接口，实现知识在环的代理式工作流。",
+      "候选智能体交错进行知识检索与 SQL 生成，表明知识获取应作为推理过程的一部分而非前置步骤。"
+    ],
+    "tech_category": "application",
+    "audience": "developer"
+  },
+  "version": 1
+}

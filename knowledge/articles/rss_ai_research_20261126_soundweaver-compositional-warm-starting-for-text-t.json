@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-102",
+  "title": "SoundWeaver: Compositional Warm-Starting for Text-to-Audio Diffusion Serving",
+  "source_url": "https://arxiv.org/abs/2603.07865",
+  "source_platform": "rss_ai_research",
+  "summary": "SoundWeaver 是一个面向文本到音频（T2A）扩散模型推理加速的免训练框架，论文编号 arXiv:2603.07865。T2A 扩散模型虽然能生成高质量音频，但通常需要数十次神经函数评估（NFE），导致推理延迟显著，成为实际部署中的瓶颈。现有加速方法大多针对单条生成轨迹独立优化，忽略了不同生成请求之间可能存在的可复用声学结构。SoundWeaver 首次提出跨示例的组合式声学复用思路，通过“组合式热启动”（compositional warm-starting）机制，在推理阶段复用先前示例中已有的声学片段或结构，从而减少重复计算、降低 NFE 数量，且无需额外训练。该工作将推理优化从单轨迹视角拓展到跨请求的复用视角，对 T2A 服务的延迟与吞吐优化具有直接价值，尤其适合音频生成平台、实时内容创作与大规模推理服务场景。其免训练特性也降低了落地门槛，值得关注扩散模型推理加速与音频生成系统方向的研究者和工程师阅读。",
+  "tags": [
+    "Text-to-Audio",
+    "Diffusion",
+    "Inference Acceleration",
+    "Audio Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:11Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "T2A 扩散模型的主要推理瓶颈在于数十次 NFE 带来的高延迟，现有加速方法多局限于单条轨迹优化。",
+      "SoundWeaver 首次提出跨示例的组合式声学复用，利用历史生成中的可复用结构减少重复计算。",
+      "该框架为免训练方案，无需额外模型训练即可集成到现有 T2A 服务中，落地成本较低。",
+      "将推理优化视角从单请求扩展到跨请求复用，为音频扩散服务化提供了新的加速方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

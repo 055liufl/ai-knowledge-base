@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-133",
+  "title": "GHC:Expanding Residual Interfaces in Hyper-Connections",
+  "source_url": "https://arxiv.org/abs/2611.31350",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出分组超连接（GHC），针对现有超连接（Hyper-Connections）中每个分支仅能读取单一流混合、并向所有流写入同一输出向量的窄接口瓶颈，通过沿注意力头或FFN通道将分支划分为并行组，为每组提供独立的流混合读写接口，从而扩展残差接口的表达能力。该工作值得关注，因为它直接改进了残差连接这一深度学习基础架构组件，有望提升大模型训练与推理的效率和性能，对模型架构设计具有潜在影响。",
+  "tags": [
+    "模型架构",
+    "残差连接",
+    "超连接",
+    "深度学习"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:16:25Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有超连接的分支读写接口过窄，限制了残差流的表达能力",
+      "GHC通过分组并行化，为每个组提供独立的流混合接口，缓解瓶颈",
+      "该方法可沿注意力头或FFN通道灵活划分，兼容Transformer结构",
+      "改进基础残差连接可能对大规模模型训练产生积极影响"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

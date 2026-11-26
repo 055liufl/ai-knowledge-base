@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-034",
+  "title": "GreenDynaMix: Thermal-Aware Dynamic Mixed-Precision MoE LLM Inference Systems",
+  "source_url": "https://arxiv.org/abs/2611.31737",
+  "source_platform": "rss_ai_research",
+  "summary": "GreenDynaMix 是一篇关于 LLM 推理系统优化的 arXiv 论文，聚焦于持续推理过程中 GPU 发热导致的硅老化与可靠性下降问题。论文指出，GPU 温度会随工作负载强度和环境条件持续波动，为将温度维持在安全范围内，必须进行实时频率调节，而这往往以牺牲吞吐量或精度为代价。GreenDynaMix 提出首个运行时系统（摘要在此处截断），结合动态混合精度与 MoE（混合专家）架构，实现热感知的推理调度。其核心思路是在温度约束下动态调整计算精度与专家激活策略，从而在可靠性、吞吐量和模型精度之间取得更优平衡。该工作值得关注的原因在于：它首次将热管理、混合精度量化与 MoE 稀疏计算三者统一到运行时系统中，针对的是大规模 LLM 长期部署中真实存在但常被忽视的硬件可靠性问题；对于需要在有限散热条件下维持高吞吐推理的数据中心和边缘部署场景，具有直接的工程价值。",
+  "tags": [
+    "MoE",
+    "LLM Inference",
+    "Mixed-Precision",
+    "Thermal Management"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:28Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "持续 LLM 推理产生的热量会加速硅老化并降低 GPU 可靠性，热管理应成为推理系统设计的一等约束",
+      "实时频率调节是控温的必要手段，但会带来吞吐量或精度的权衡，需要系统级协同优化",
+      "将动态混合精度与 MoE 稀疏激活结合，可在温度约束下动态调整计算负载，实现精度与性能的平衡",
+      "该工作首次把热感知调度、混合精度和 MoE 统一到运行时系统中，对长期高负载部署场景有直接工程意义"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

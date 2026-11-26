@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-029",
+  "title": "Look Before You Commit: Visual-Evidence-Guided Decoding for Multimodal Diffusion Language Models",
+  "source_url": "https://arxiv.org/abs/2611.31677",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对多模态扩散语言模型（Diffusion MLLM）在生成过程中依赖置信度决定何时提交候选 token 的问题展开研究。作者指出，在多模态任务中，置信度无法区分候选 token 是源自图像证据还是语言先验。通过配对前向消融实验，研究发现近九成高置信度提交对图像不敏感，而退化和幻觉样本则表现出显著的图像敏感性增加。基于此，论文提出一种视觉证据引导的解码策略（Visual-Evidence-Guided Decoding），旨在利用视觉证据而非单纯置信度来指导 token 提交决策，从而减少幻觉、提升多模态生成的可靠性。该工作揭示了扩散多模态模型中置信度与视觉 grounding 之间的错位，为多模态扩散模型的解码机制提供了新视角，对提升生成质量与可信度具有实用价值。",
+  "tags": [
+    "Multimodal",
+    "Diffusion Model",
+    "Decoding",
+    "Hallucination"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多模态扩散语言模型中，高置信度提交的 token 近九成对图像证据不敏感，置信度无法有效区分视觉 grounding 与语言先验。",
+      "退化和幻觉样本反而表现出更高的图像敏感性，说明置信度与视觉证据之间存在错位。",
+      "提出视觉证据引导的解码策略，用图像证据而非单纯置信度指导 token 提交，有望降低幻觉。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

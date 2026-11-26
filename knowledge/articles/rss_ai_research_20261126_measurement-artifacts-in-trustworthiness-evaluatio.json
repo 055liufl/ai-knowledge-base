@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-087",
+  "title": "Measurement Artifacts in Trustworthiness Evaluations of Quantized Small Language Models",
+  "source_url": "https://arxiv.org/abs/2611.32848",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文探讨了量化小语言模型可信度评估中的测量伪影问题。作者指出，当前评估通常将基准分数的变化归因于量化，但实际测量值等于真实变化加上仪器（评估工具）贡献的误差项。如果误差在所有精度下相同，它只会缩小配对比较的差异，而不会创造或逆转效应；但如果误差与量化相互作用，则可能创造或逆转效应，并被误报为量化的效果。论文估计了这种相互作用对若干可信度基准的影响，揭示了量化模型评估中一个被忽视的方法论缺陷。该研究值得关注，因为它挑战了现有量化评估结论的可靠性，提醒研究者和开发者需区分真实量化效应与测量工具引入的伪影，对模型压缩和可信度评估领域具有重要方法论意义。",
+  "tags": [
+    "Quantization",
+    "Evaluation",
+    "Trustworthiness",
+    "Small Language Models"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "量化评估中基准分数的变化可能包含与量化相互作用的仪器误差，而非全部来自量化本身。",
+      "恒定仪器误差只会缩小配对比较的差异，但交互误差可能创造或逆转效应，导致错误归因。",
+      "该研究估计了交互误差对可信度基准的影响，提示需重新审视量化模型评估结论的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

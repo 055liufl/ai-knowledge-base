@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-093",
+  "title": "LoomKV: Lossless KV Cache Compression from GPU Memory to SSD for LLM Serving",
+  "source_url": "https://arxiv.org/abs/2611.32954",
+  "source_platform": "rss_ai_research",
+  "summary": "LoomKV 是一种面向大语言模型（LLM）服务场景的无损 KV 缓存压缩方案，覆盖从 GPU 显存到主机 DRAM 再到 SSD 的多级存储层次。现有 LLM 服务引擎通常将 KV 缓存从 GPU 显存卸载到外部存储，以支持多轮对话和 Agent 请求的提示前缀复用，但容量受限于两个层面：外部存储层决定前缀在淘汰前的复用能力，GPU KV 池则限制并发长请求数量；同时，有损压缩会改变 KV 值并影响输出质量。LoomKV 针对这两个层面分别引入无损压缩（tier mode 等），在不改变 KV 数值和模型输出的前提下提升有效容量，从而改善前缀复用效率与并发长请求支持能力。该工作值得关注，因为它直面 LLM 推理服务中 KV 缓存容量瓶颈这一核心痛点，提出无损压缩贯穿 GPU 显存、DRAM 与 SSD 的完整方案，有望在不牺牲生成质量的前提下降低服务成本、提升吞吐与长上下文场景的可用性，对推理基础设施优化具有实际意义。",
+  "tags": [
+    "KV Cache",
+    "LLM Serving",
+    "Compression",
+    "Inference Infra"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM 服务中 KV 缓存容量受外部存储层（前缀复用）和 GPU KV 池（并发长请求）双重限制",
+      "有损压缩会改变 KV 值并影响模型输出，无损压缩是保持生成质量的关键",
+      "LoomKV 将无损压缩扩展到 GPU 显存、DRAM 和 SSD 多级存储，提升有效容量与前缀复用效率"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

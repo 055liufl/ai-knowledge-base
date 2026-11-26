@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-129",
+  "title": "Scoring Recovery-Time Agent Security: Proposals, Effects, and Retry Instructions",
+  "source_url": "https://arxiv.org/abs/2611.31318",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文聚焦于 AI Agent 在工具调用超时后的恢复行为安全性问题。作者指出，当工具写入操作超时时，其结果可能是不存在、已提交或仍在执行中，而仅以最终目标是否达成来评估 Agent 会掩盖有害的恢复动作——对 12 条给定轨迹的审计显示，表面完成率从 10/12 降至 8/12。为此，论文提出一种可执行评估方法，分别记录工具提案、运行时决策和已提交效果三个层面。在 3,456 个模型回合的实验中，原始任务措辞下仅 39/576 的恢复行为有效，说明现有 Agent 在超时恢复场景下的安全性存在显著缺陷。该工作值得关注，因为它揭示了 Agent 评估中被忽视的恢复阶段风险，并提供了细粒度的评估框架与重试指令设计思路，对构建可靠、可审计的 Agent 系统具有直接指导意义。",
+  "tags": [
+    "Agent",
+    "Evaluation",
+    "Safety",
+    "Tool Use"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:16:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "仅以目标是否达成评估 Agent 会掩盖超时恢复过程中的有害动作，审计后完成率从 10/12 降至 8/12。",
+      "应分别记录工具提案、运行时决策与已提交效果三个层面，以实现可执行的细粒度安全评估。",
+      "在 3,456 个模型回合中，原始任务措辞下仅 39/576 的恢复行为有效，表明 Agent 超时恢复能力普遍不足。",
+      "重试指令与任务措辞设计对 Agent 恢复行为的安全性和有效性有显著影响。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

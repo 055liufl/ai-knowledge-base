@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-006",
+  "title": "Antares-Smaug: Adversarial Names, Tokens and Attack Rewrites: Sanitisers Miss Unseen Generalisations",
+  "source_url": "https://arxiv.org/abs/2611.31347",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究了对开放决策模型Laya的对抗攻击。Laya模型接收文本、问题及K个带描述的命名选项，单次前向传播即返回每个选项的概率，软件可基于此概率自动决策。作者对六个Laya模型发起攻击，使用81种程序化编辑手段（包括注入句子、标签泄露、编辑描述、诱饵选项、不可见及形似字符、信息洪流等）作用于566个合成样本，统计原本正确回答的条目被劫持或丢失的比例。研究发现，现有消毒器（sanitisers）无法泛化到未见过的攻击变体，即模型对对抗性名称、令牌和攻击重写缺乏鲁棒性。该工作揭示了开放决策模型在真实部署中的安全风险，强调了对抗鲁棒性评估的必要性，并为设计更稳健的防御机制提供了实证基础。",
+  "tags": [
+    "Adversarial Attack",
+    "Robustness",
+    "Decision Model",
+    "Security"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Laya等开放决策模型在单次前向传播中输出选项概率，易受程序化编辑攻击（如注入句子、标签泄露、诱饵选项）影响。",
+      "现有消毒器无法泛化到未见过的攻击变体，导致模型正确回答被劫持或丢失。",
+      "对抗性名称、令牌和攻击重写是模型鲁棒性的关键薄弱点，需在部署前进行系统性评估。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

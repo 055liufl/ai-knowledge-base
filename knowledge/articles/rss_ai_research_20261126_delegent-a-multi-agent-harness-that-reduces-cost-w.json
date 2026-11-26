@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261126-099",
+  "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+  "source_url": "https://arxiv.org/abs/2611.33098",
+  "source_platform": "rss_ai_research",
+  "summary": "Delegent 是一篇来自 arXiv 的论文，提出了一种多智能体框架（agent harness），旨在降低基于前沿大语言模型（LLM）的智能体运行成本。其核心思想是：前沿模型在每一步都会重新读取全部上下文并执行所有子任务，无论任务难易，导致高昂开销。Delegent 通过将简单子任务委托给可在本地硬件上运行的小语言模型（SLM）来削减成本，同时保持整体性能。该框架构建于 Claude Code 之上，实现简单有效。论文验证了这一思路的可行性，表明合理分配任务难度可以显著降低对昂贵前沿模型的依赖。这项工作值得关注，因为它直接回应了 LLM 智能体部署中的成本瓶颈，提供了一种实用的混合模型协作范式，对开发者构建经济高效的智能体系统具有参考价值，也启发了对模型能力分层利用的进一步研究。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Cost Optimization",
+    "SLM",
+    "Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "前沿模型在智能体每一步都重新处理全部上下文并执行所有子任务，造成大量不必要的成本。",
+      "将简单子任务委托给本地运行的小语言模型（SLM）可以在不牺牲性能的情况下显著降低费用。",
+      "Delegent 基于 Claude Code 构建，提供了一个简单有效的多智能体 harness 实现范例。",
+      "该工作展示了混合使用前沿模型与小型模型的成本优化潜力，为智能体系统设计提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

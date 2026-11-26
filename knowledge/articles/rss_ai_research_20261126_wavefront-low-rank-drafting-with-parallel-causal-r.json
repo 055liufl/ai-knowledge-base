@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-024",
+  "title": "Wavefront: Low-Rank Drafting with Parallel Causal Refinement for Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.31638",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出Wavefront，一种用于推测解码（speculative decoding）的低秩草稿与并行因果精炼方法。推测解码通过让廉价草稿模型提议token、目标模型并行验证来加速LLM推理。并行块草稿器（如DFlash和P-EAGLE）在一次前向传播中提议整个块，但丢失了块内token间的依赖关系；DSpark通过一个顺序运行的轻量级修正头部分恢复这种依赖，但作者测量发现该头在大多数情况下会覆盖基础预测，导致效率问题。Wavefront旨在解决这一矛盾，通过低秩草稿和并行因果精炼，在保持并行效率的同时恢复token间依赖，从而提升推测解码的接受率和整体加速比。该工作对LLM推理加速领域具有实用价值，尤其关注草稿质量与并行性的平衡。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "Low-Rank",
+    "Parallel Decoding"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行块草稿器丢失块内token依赖，顺序修正头虽能恢复依赖但会过度覆盖基础预测，降低效率。",
+      "Wavefront通过低秩草稿与并行因果精炼，在保持并行性的同时恢复token间依赖，有望提高推测解码的接受率。",
+      "该工作揭示了推测解码中草稿质量与并行效率之间的权衡，为设计更高效的草稿器提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

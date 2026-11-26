@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-074",
+  "title": "The Control-Flow Tax: Specialized Decision Routing for LLM Agent Workflows",
+  "source_url": "https://arxiv.org/abs/2611.32365",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出LLM Agent工作流中存在显著的“控制流税”（Control-Flow Tax）：在文档工作流中，决定下一步做什么的路由开销占初始任务参考成本的42.5%。单纯降低token价格无法解决该问题，因为廉价通用路由器可能触发对昂贵生成器的额外调用。作者评估了一种异构架构，其中专用System 1决策模型Jev控制有限状态决策路由，以替代通用LLM进行控制流判断。该工作值得关注，因为它首次量化了Agent控制流开销，并指出专用小模型在决策路由上的成本优势，为Agent系统架构优化提供了新方向。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Routing",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:03Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "控制流路由在Agent工作流中可占参考成本的42.5%，是常被忽视的主要开销来源",
+      "降低token单价不能解决控制流税，廉价通用路由器反而可能增加昂贵生成器的调用次数",
+      "使用专用System 1决策模型（如Jev）进行有限状态路由，是降低控制流成本的有效异构架构方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

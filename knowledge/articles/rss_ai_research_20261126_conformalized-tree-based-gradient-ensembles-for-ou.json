@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-130",
+  "title": "Conformalized Tree-Based Gradient Ensembles for Out-of-Distribution Detection and Plausible Recourse",
+  "source_url": "https://arxiv.org/abs/2611.31319",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对基于梯度提升决策树（GBDT）的反事实建议（counterfactual recourse）系统提出改进方法。反事实建议旨在为用户提供可操作的特征调整方案，以逆转自动化决策模型的不利预测。然而，现有方法在优化建议时往往仅针对分类器置信度或狭窄的代理分数，容易利用决策边界伪影和低密度区域（Goodhart定律的体现），从而产生分布外（OOD）的建议，这些建议在实际中不可行或不可信。论文提出使用共形化（conformalized）的树基梯度集成方法来进行OOD检测，并生成合理的反事实建议。该方法结合了共形预测的统计保证与树集成模型，旨在确保建议既有效又位于数据分布内。这项研究值得关注，因为它解决了机器学习可解释性和可操作性中的一个关键实际问题——反事实建议的鲁棒性和可信度，对高风险决策场景（如金融、医疗）中的负责任AI部署具有重要意义。",
+  "tags": [
+    "Counterfactual Recourse",
+    "OOD Detection",
+    "Gradient Boosting",
+    "Conformal Prediction"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:16:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "反事实建议搜索若仅优化分类器置信度，会因Goodhart定律而利用边界伪影，产生分布外且不可行的建议。",
+      "共形预测为OOD检测提供统计保证，可增强反事实建议的可靠性。",
+      "树基梯度集成模型需要专门设计以同时实现OOD检测和合理建议生成。",
+      "该方法对高风险自动化决策场景中的负责任AI部署具有实际意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

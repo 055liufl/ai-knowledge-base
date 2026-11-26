@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-020",
+  "title": "Frequency-Conditioned Privacy Auditing of Fine-Tuned Language Models",
+  "source_url": "https://arxiv.org/abs/2611.31581",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种基于频率条件的隐私审计方法，用于评估微调后语言模型对敏感信息的记忆与泄露风险。研究指出，当同一人的信息在训练数据中多次出现时，模型可能记住这些信息，但记忆并不等同于可恢复；更严重的隐私风险在于模型在生成时主动复现敏感内容。作者通过分析敏感信息在训练数据中的出现频率与模型生成复现概率之间的关系，构建了频率条件化的审计框架，以更准确地量化微调模型的隐私泄露程度。该工作值得关注，因为它将隐私审计从静态记忆检测推进到动态生成复现层面，为敏感数据微调场景下的隐私风险评估提供了更细粒度的工具，对合规部署和隐私保护研究具有实际意义。",
+  "tags": [
+    "Privacy",
+    "Fine-tuning",
+    "LLM",
+    "Auditing"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆不等于可恢复，生成阶段的复现才是更严重的隐私风险",
+      "敏感信息在训练数据中的出现频率是影响泄露概率的关键因素",
+      "频率条件化的审计框架能更准确地量化微调模型的隐私泄露程度"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-052",
+  "title": "CAPE: Coordinating Calibration and Search for Tool-Use Policies",
+  "source_url": "https://arxiv.org/abs/2611.31938",
+  "source_platform": "rss_ai_research",
+  "summary": "CAPE 提出了一种面向工具使用策略编译的新框架，解决了一个被忽视的关键问题：工具调用失败往往并非因为操作本身错误，而是因为接收工具在代理无法检查的配置下解析分隔符、日期或记录布局。针对这类黑盒配置的工具，编译工具使用策略需要同时进行校准（在候选配置上评估候选调用）和搜索（在已评估的调用中寻找最优策略）。CAPE 的核心贡献在于将校准与搜索统一到同一个编译预算下协调进行，而非先完成全部校准再搜索，从而避免因校准开销过大而推迟策略改进。该工作对构建可靠的工具调用代理（Agent）系统具有直接价值，尤其适用于工具接口不透明、配置不可见的真实部署场景，为工具使用策略的自动化编译提供了新的方法论视角。",
+  "tags": [
+    "Agent",
+    "Tool Use",
+    "Calibration",
+    "Search"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "工具调用失败可能源于代理不可见的工具端配置（如分隔符、日期格式、记录布局），而非操作逻辑错误",
+      "工具使用策略编译需要校准与搜索协同，二者共享同一预算，串行执行会延迟策略改进",
+      "CAPE 将校准与搜索纳入统一预算协调，为黑盒工具场景下的策略编译提供了新思路"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

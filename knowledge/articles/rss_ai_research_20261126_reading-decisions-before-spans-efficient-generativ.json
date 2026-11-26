@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-090",
+  "title": "Reading Decisions Before Spans: Efficient Generative Verification",
+  "source_url": "https://arxiv.org/abs/2611.32931",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究生成式验证器在检测到不支持声明时提前终止生成的可行性。作者使用一个冻结的2B参数跨度验证器，其输出在生成任何位置信息前先选择空错误列表或第一个错误对象。Native8方法在做出该选择后立即停止，而Prefill1则预先提供七个固定语法令牌。实验表明，对于仅需筛查助手报告的应用，提前停止可显著减少不必要的生成开销，同时保持验证准确性。这项工作为高效验证提供了新思路，有望降低大模型验证的推理成本，值得关注。",
+  "tags": [
+    "Generative Verification",
+    "Early Stopping",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:41Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "生成式验证器可在描述错误前提前终止，节省计算资源",
+      "冻结的2B验证器通过输出选择实现早期决策",
+      "对于仅需筛查的应用，剩余生成可能不必要",
+      "Prefill1方法通过预填充固定语法令牌平衡效率与准确性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

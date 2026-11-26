@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261126-110",
+  "title": "Directly Maximizing On-policy Expected Accepted Length for Speculative Decoding",
+  "source_url": "https://arxiv.org/abs/2611.31256",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出FreDraft，一种用于投机解码（speculative decoding）的在线策略训练方法。投机解码通过轻量草稿模型生成候选token，再由目标模型验证，从而加速大语言模型推理。现有草稿模型训练通常优化token级分布对齐，但并未直接优化被接受前缀的长度——一旦某个草稿token被拒绝，后续所有草稿token都会被丢弃。FreDraft直接最大化在线策略下的期望接受长度，使训练目标与推理时的实际加速效果更一致。该工作值得关注，因为它从优化目标层面改进了投机解码的草稿模型训练范式，有望在相同草稿模型规模下获得更高的接受率和推理加速比，对LLM高效推理部署具有实用价值。",
+  "tags": [
+    "Speculative Decoding",
+    "LLM Inference",
+    "On-policy Training"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:15:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有草稿模型训练优化token级分布对齐，与投机解码实际关注的接受前缀长度并不直接一致。",
+      "FreDraft采用在线策略训练，直接最大化期望接受长度，使训练目标与推理加速效果对齐。",
+      "该方法有望提升草稿token接受率，从而在相同草稿模型下获得更高推理加速比。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

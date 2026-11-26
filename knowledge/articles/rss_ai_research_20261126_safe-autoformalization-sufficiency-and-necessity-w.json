@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-019",
+  "title": "Safe Autoformalization: Sufficiency and Necessity with Entailment Graphs",
+  "source_url": "https://arxiv.org/abs/2611.31571",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种面向自动形式化（Autoformalization）的安全保障技术，旨在解决大语言模型（LLM）在将自然语言陈述转换为形式化公式时缺乏形式化保证的问题。自动形式化的正确性依赖于陈述的上下文背景，而LLM的概率性输出无法提供逻辑上的确定性。作者引入“单侧逻辑充分性”认证框架：若公式对意图是充分的，则强制执行是安全的；若公式对意图是必要的，则拒绝执行是安全的。该方法利用蕴含图（Entailment Graphs）来建模和验证公式与意图之间的逻辑关系，从而在LLM生成的形式化结果上附加可证明的安全保证。这项工作值得关注，因为它首次将形式化验证与LLM驱动的自动形式化相结合，为高风险领域（如数学证明、程序验证、法律合同）中部署自动形式化工具提供了理论基石，有望推动可信AI在形式化推理方向的发展。",
+  "tags": [
+    "Autoformalization",
+    "LLM",
+    "Formal Verification",
+    "Entailment Graphs"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:11:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "LLM驱动的自动形式化缺乏形式化保证，需引入单侧逻辑充分性认证来确保安全性。",
+      "充分性公式可安全强制执行，必要性公式可安全拒绝执行，从而在不确定输出上建立可证明的边界。",
+      "蕴含图被用于建模自然语言意图与形式化公式之间的逻辑关系，支撑安全认证过程。",
+      "该技术为自动形式化在数学、程序验证等高风险领域的可信部署提供了理论基础。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-081",
+  "title": "CAPTA: Identifying LLMs Behind AI Agents",
+  "source_url": "https://arxiv.org/abs/2611.32686",
+  "source_platform": "rss_ai_research",
+  "summary": "CAPTA 是一篇来自 arXiv 的研究论文，聚焦于 AI Agent 生态中的一个新兴安全问题：如何识别 Agent 背后实际驱动的大语言模型（LLM）。在基于 LLM 的 Agent 通过工具和 API 调用访问远程服务的场景中，远程服务方无法直接查询后端模型，但可以通过收集 Agent 交互过程中可观测的响应来推断其底层模型。论文指出，这种识别能力具有双刃剑性质：一方面，服务方可能利用识别结果发起模型特定的攻击，例如提示注入或选择性投递被篡改的内容；另一方面，识别机制也可用于安全审计与合规检测。该研究值得关注的原因在于，它揭示了 Agent 部署中一个常被忽视的信任边界问题——模型身份的不透明性可能被恶意利用，同时也为 Agent 安全防护、模型溯源和 API 服务方的风险控制提供了新的研究视角。随着 Agent 大规模接入第三方服务，这类针对后端模型指纹识别的研究对构建可信 Agent 生态具有重要的实践意义。",
+  "tags": [
+    "Agent",
+    "LLM Security",
+    "Prompt Injection",
+    "Model Fingerprinting"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:20Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "远程服务方可通过 Agent 的可观测响应推断其后端 LLM，形成模型指纹识别攻击面",
+      "模型身份识别可被用于发起模型特定的提示注入或内容操纵攻击",
+      "Agent 与第三方服务交互时存在模型身份不透明的信任边界问题",
+      "该研究为 Agent 安全审计、模型溯源与 API 风险控制提供了新方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

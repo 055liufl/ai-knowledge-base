@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-051",
+  "title": "Contrastive On-Policy Self-Distillation for LLM Unlearning",
+  "source_url": "https://arxiv.org/abs/2611.31932",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为对比性在策略自蒸馏（Contrastive On-Policy Self-Distillation, CPSD）的大语言模型遗忘学习新框架，旨在解决现有基于似然的方法仅对固定遗忘序列进行负向监督、忽视演化中遗忘策略所访问状态的问题。传统遗忘方法通常优化模型使其不生成特定遗忘序列，但缺乏对模型在自身生成轨迹上行为的引导，导致遗忘不彻底或过度损害模型通用能力。CPSD 通过在策略自蒸馏机制，让模型在自身生成的样本上进行对比学习，既抑制遗忘目标又保留无关能力。该工作为 LLM 遗忘学习提供了新视角，即从固定数据监督转向动态策略感知的对比蒸馏，有望提升遗忘的精准性与模型能力的保持性。对于关注模型安全、隐私保护与可控生成的开发者和研究者具有参考价值。",
+  "tags": [
+    "LLM",
+    "Unlearning",
+    "Self-Distillation",
+    "Contrastive Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:07Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有基于似然的遗忘方法仅对固定遗忘序列提供负向监督，忽略了演化中策略访问的状态，导致遗忘不充分或能力损伤。",
+      "CPSD 通过在策略自蒸馏与对比学习结合，使模型在自身生成轨迹上接受动态监督，兼顾遗忘效果与能力保留。",
+      "该框架将遗忘学习从静态数据监督转向动态策略感知，为 LLM 遗忘提供了新范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

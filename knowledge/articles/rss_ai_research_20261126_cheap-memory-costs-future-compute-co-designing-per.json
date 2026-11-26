@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-050",
+  "title": "Cheap Memory Costs Future Compute: Co-Designing Persistent KV and GPU Execution for Efficient Streaming Video Diffusion",
+  "source_url": "https://arxiv.org/abs/2611.31892",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对块因果视频扩散模型在生成长视频时的效率瓶颈展开研究。此类模型逐块生成视频，并依赖持久化的 KV 缓存作为条件。每生成一个块后，需额外执行一次无噪声（t=0）前向传播，将干净的 KV 写入缓存；随着蒸馏和推测性提前退出等技术使去噪过程变得廉价，这一干净 KV 更新反而成为运行时的主要开销。若复用陈旧 KV 可缩短更新，但陈旧记忆会破坏后续块的条件信息并增加其计算负担。论文提出“廉价记忆代价未来计算”的核心观点，主张对持久 KV 与 GPU 执行进行协同设计，以在流式视频扩散中实现高效生成。该工作值得关注，因为它揭示了长视频生成中记忆管理与计算效率之间的权衡关系，并为系统级优化提供了新思路。",
+  "tags": [
+    "Video Diffusion",
+    "KV Cache",
+    "GPU Execution",
+    "Streaming Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:05Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "块因果视频扩散中，干净 KV 更新在去噪廉价化后成为主要运行时开销。",
+      "复用陈旧 KV 虽能缩短更新，但会损害后续块的条件质量并增加计算负担。",
+      "持久 KV 管理与 GPU 执行需协同设计，以平衡记忆开销与未来计算成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

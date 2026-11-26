@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-095",
+  "title": "RecordRoute: Auditing Agent Failures with Localization-Guided Diagnosis",
+  "source_url": "https://arxiv.org/abs/2611.33022",
+  "source_platform": "rss_ai_research",
+  "summary": "RecordRoute 是一篇来自 arXiv 的 AI 智能体（Agent）审计研究，聚焦于失败执行轨迹的归因分析。该研究指出，审计失败的 Agent 执行需要同时回答三个问题：哪个执行者应负责、最早的决定性步骤是哪一步、以及错误模式是什么。现有监督方法要么只做步骤定位，要么从共享轨迹表示中同时预测多个归因目标，但都没有利用定位结果来筛选用于错误模式诊断的文本，导致诊断精度受限。RecordRoute 提出将比较式定位与模式诊断耦合起来：先通过对比方法精确定位最早出错的关键步骤，再基于该定位结果选择相关文本片段进行错误模式判定，从而形成定位引导的诊断流程。该工作值得关注，因为随着 Agent 系统在复杂任务中的广泛部署，失败审计与可解释性成为落地瓶颈；RecordRoute 将定位与诊断从割裂的并行预测转变为有引导的级联流程，为 Agent 可靠性工程提供了更可解释、更精准的审计范式，对构建可信 Agent 系统具有实用价值。",
+  "tags": [
+    "Agent",
+    "Failure Attribution",
+    "Auditing",
+    "Interpretability"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:54Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Agent 失败审计方法将步骤定位与错误模式诊断割裂处理，未利用定位结果指导诊断文本选择，限制了诊断精度。",
+      "RecordRoute 通过比较式定位先确定最早决定性步骤，再以定位结果引导错误模式诊断，形成级联式审计流程。",
+      "该工作将审计目标从并行多任务预测转为有引导的定位-诊断耦合，提升了失败归因的可解释性与准确性。",
+      "Agent 失败审计是可信 Agent 系统落地的关键环节，定位引导的诊断范式对可靠性工程具有实用意义。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261126-062",
+  "title": "More Powerful, Less Verifiable? Mitigating Hard-to-Verify Hallucinations in MLLM's Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2611.32055",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文关注多模态大模型（MLLM）在强化学习（RL）优化过程中出现的一个隐蔽风险：奖励优化可能使模型输出错误更难被人类察觉，即'更难验证的幻觉'。作者构建了ITHV（Image-Text Hallucination Verifiability Dataset），包含2,728个视觉 grounding 实例，用于区分人类容易发现的明显幻觉与难以验证的隐蔽幻觉。研究旨在揭示RL训练带来的可验证性下降问题，并提出缓解策略。该工作值得关注，因为它触及了RLHF/RLAIF等对齐方法的一个关键盲区——模型能力提升的同时可能牺牲输出的可审计性，对多模态模型的安全部署与评估具有直接意义。",
+  "tags": [
+    "MLLM",
+    "Reinforcement Learning",
+    "Hallucination",
+    "Alignment",
+    "Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:35Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "强化学习优化奖励可能系统性地产生人类更难检测的错误输出，形成'更强但更不可验证'的悖论。",
+      "ITHV数据集通过区分明显幻觉与隐蔽幻觉，为量化模型输出的可验证性提供了新基准。",
+      "多模态模型的幻觉评估需从'是否存在错误'扩展到'错误是否可被人类发现'这一维度。",
+      "该问题对RLHF/RLAIF等对齐范式的安全性提出警示，需在训练目标中引入可验证性约束。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

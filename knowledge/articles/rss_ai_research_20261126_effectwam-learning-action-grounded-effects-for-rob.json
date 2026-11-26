@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261126-061",
+  "title": "EffectWAM: Learning Action-Grounded Effects for Robot Manipulation",
+  "source_url": "https://arxiv.org/abs/2611.32053",
+  "source_platform": "rss_ai_research",
+  "summary": "EffectWAM 是一种面向机器人操作的世界-动作模型，旨在将视觉预测与可执行控制更紧密地连接。其核心包含三个互补组件：Effect、相机位置编码（CaPE）和动作接地（Action Grounding）。Effect 通过独立编码的未来观测与共享的当前观测锚点之间的差异来表示视觉变化，从而更清晰地捕捉动作引起的环境改变；CaPE 在端点池化时引入相对相机位姿条件，提升视角变化下的鲁棒性；动作接地则将预测的视觉效应与具体机器人动作对齐，增强控制的可执行性。该工作值得关注，因为它系统性地解决了世界模型中视觉预测与动作执行之间的鸿沟，为基于视觉的机器人操作提供了一种结构化的学习范式，有望提升机器人在复杂场景下的泛化能力和操作精度。",
+  "tags": [
+    "World Model",
+    "Robot Manipulation",
+    "Visual Prediction",
+    "Action Grounding"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:13:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "Effect 通过独立编码未来观测并与当前观测锚点做差，显式建模动作引起的视觉变化，避免共享编码器带来的信息混淆。",
+      "CaPE 将相对相机位姿作为条件引入端点池化，使模型对视角变化更鲁棒，有利于多视角机器人操作。",
+      "动作接地机制将视觉效应预测与可执行动作对齐，弥合了世界模型与机器人控制之间的鸿沟。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

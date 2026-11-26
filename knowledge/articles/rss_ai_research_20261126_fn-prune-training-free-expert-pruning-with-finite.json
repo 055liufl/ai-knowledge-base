@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-035",
+  "title": "FN-Prune: Training-Free Expert Pruning with Finite RMSNorm Perturbations",
+  "source_url": "https://arxiv.org/abs/2611.31747",
+  "source_platform": "rss_ai_research",
+  "summary": "FN-Prune 是一种无需训练的专家剪枝方法，用于降低混合专家（MoE）语言模型的显存占用。现有基于频率或幅值的专家重要性评分独立评估每个专家，忽略了归一化层（RMSNorm）如何消费专家贡献：移除一个专家会同时改变残差流的方向和剩余部分的缩放尺度。FN-Prune 提出有限 RMSNorm 扰动准则，通过比较移除专家前后归一化输出的变化来更准确地衡量专家重要性，从而在剪枝后更好地保持模型质量。该方法无需额外训练或微调，可直接应用于现有 MoE 模型，对降低部署成本、提升推理效率具有实用价值，尤其适合资源受限场景下的模型压缩。",
+  "tags": [
+    "MoE",
+    "Pruning",
+    "LLM",
+    "Model Compression"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有频率/幅值评分独立评估专家，忽略了 RMSNorm 对专家贡献的非线性消费方式",
+      "移除专家会同时改变残差流方向和剩余部分的缩放，需联合建模",
+      "FN-Prune 用有限 RMSNorm 扰动作为免训练剪枝准则，更贴近实际影响",
+      "无需微调即可压缩 MoE 模型，利于降低显存和部署成本"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

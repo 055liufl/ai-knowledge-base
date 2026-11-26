@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-092",
+  "title": "Beyond Expected Value: PPO with Distributional Critics for Systematic Conservation Planning",
+  "source_url": "https://arxiv.org/abs/2611.32948",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对系统性保护规划（Systematic Conservation Planning）中预算分配在生态与气候不确定性下的序贯决策问题，提出将分布评论家（Distributional Critics）引入PPO（近端策略优化）框架。传统静态工具无法适应动态变化，而仅优化期望回报的策略在气候变化导致的极端轨迹上可能失效。此前CAPTAIN框架首次将该问题建模为序贯强化学习，但采用无梯度的进化策略（ES）优化器，存在样本效率低、难以处理高维动作空间等局限。本文用PPO替代ES，并利用分布评论家学习回报分布而非仅期望值，从而在优化平均性能的同时兼顾最坏情况风险。该工作将风险敏感的强化学习引入生态保护决策，为气候不确定性下的资源分配提供了更鲁棒的方法，对强化学习在环境管理中的应用具有推动意义。",
+  "tags": [
+    "Reinforcement Learning",
+    "PPO",
+    "Distributional RL",
+    "Conservation Planning",
+    "Risk-Sensitive Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:14:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "将分布评论家与PPO结合，使保护规划策略不仅优化期望回报，还能显式建模回报分布以应对最坏气候轨迹。",
+      "用PPO替代CAPTAIN中的进化策略优化器，有望提升样本效率和策略梯度稳定性，更适合高维序贯决策。",
+      "系统性保护规划本质是序贯资源分配问题，风险敏感的强化学习比静态优化或仅期望优化更适应气候不确定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

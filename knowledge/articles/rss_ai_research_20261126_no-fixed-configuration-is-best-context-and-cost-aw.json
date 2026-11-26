@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261126-047",
+  "title": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
+  "source_url": "https://arxiv.org/abs/2611.31864",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多阶段LLM流水线（复合AI系统）的数值参数调优问题，以模式匹配与映射为应用场景，同时优化准确率和成本两个目标。作者对流水线中所有数值设置进行联合调优，并在35个任务上采用留出任务组的方式评估泛化性能。研究发现：调优主要带来成本降低和少量准确率提升（一个调优配置在留出任务上获得2.9个百分点的准确率增益），但无法解决剩余准确率差距；不存在固定最优配置，配置需随上下文和成本约束自适应调整。该工作值得关注，因为它系统性地揭示了复合AI系统参数调优的收益边界，为LLM流水线的成本-精度权衡提供了实证依据和可操作的方法论。",
+  "tags": [
+    "LLM Pipeline",
+    "AutoML",
+    "Schema Matching",
+    "Cost-Aware Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-26T18:09:47Z",
+  "collected_at": "2026-11-26T18:12:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "对多阶段LLM流水线进行全参数联合调优主要降低推理成本，准确率提升有限（约2.9个百分点），剩余准确率差距无法通过数值调优弥补。",
+      "不存在适用于所有任务的固定最优配置，配置需根据任务上下文和成本约束动态调整。",
+      "采用留出任务组的评估方式能更真实地反映调优配置的泛化能力，避免过拟合特定任务。",
+      "模式匹配与映射任务可作为复合AI系统调优研究的代表性基准，其结论对类似多阶段流水线具有参考价值。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
