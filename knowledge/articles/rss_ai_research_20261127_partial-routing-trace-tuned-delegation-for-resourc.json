@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-010",
+  "title": "Partial Routing: Trace-Tuned Delegation for Resource-Efficient Agentic Workflows",
+  "source_url": "https://arxiv.org/abs/2611.33402",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种名为“部分路由”（Partial Routing）的方法，用于提升智能体工作流的资源效率。传统模型路由将整个任务分配给单一模型，但智能体任务往往混合了简单和困难的子任务，导致统一选择模型效率低下。部分路由引导前沿主模型（lead model）将合适的子任务委托给更便宜的工人模型（worker model）。通过分析两个模型的历史运行记录，识别重复出现的子任务并测量其性能与成本，从而做出委托决策。该方法有望在保持任务质量的同时显著降低计算成本，对构建经济高效的智能体系统具有重要价值。",
+  "tags": [
+    "Agent",
+    "Model Routing",
+    "Cost Optimization",
+    "Workflow"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:54:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "部分路由通过将简单子任务委托给廉价模型，实现智能体工作流的细粒度成本优化。",
+      "利用历史运行数据识别重复子任务并评估委托收益，是该方法的核心机制。",
+      "该方法有望在保持前沿模型处理复杂子任务能力的同时，大幅降低整体推理成本。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

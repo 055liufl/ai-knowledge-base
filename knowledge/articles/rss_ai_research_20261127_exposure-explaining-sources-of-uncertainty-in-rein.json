@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-057",
+  "title": "EXPOSURE: Explaining Sources of Uncertainty in Reinforcement Learning",
+  "source_url": "https://arxiv.org/abs/2611.34248",
+  "source_platform": "rss_ai_research",
+  "summary": "EXPOSURE 是一种针对强化学习（RL）中不确定性来源的可解释性方法。现有基于 Shapley 值的 RL 解释方法只能说明哪些观测特征驱动智能体的行为和期望回报，却无法解释其确定性。要解释确定性，需要理解观测特征如何影响不同来源的回报不确定性，而 Shapley 值计算要求智能体对每个可见特征子集都给出预测。EXPOSURE 提出使用一个掩码感知的信念网络同时完成动作选择和不确定性归因，从而在无需为每个特征子集单独训练或推理的情况下，将回报不确定性分解到各个观测特征上。该方法填补了 RL 可解释性中“解释不确定性”这一空白，对安全关键场景下的智能体调试、风险分析和人机信任建立具有实际意义，也为 Shapley 值在 RL 中的高效应用提供了新思路。",
+  "tags": [
+    "Reinforcement Learning",
+    "Explainability",
+    "Uncertainty",
+    "Shapley Values"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:30Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 Shapley 值方法只能解释 RL 智能体的行为和期望回报，无法解释其确定性来源",
+      "EXPOSURE 通过单个掩码感知信念网络同时支持动作选择与不确定性归因，避免了对特征子集的组合爆炸式推理",
+      "将回报不确定性分解到观测特征层面，有助于安全关键场景下的风险分析与智能体调试"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

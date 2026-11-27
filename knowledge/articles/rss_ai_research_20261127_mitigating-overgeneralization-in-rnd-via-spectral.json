@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-131",
+  "title": "Mitigating Overgeneralization in RND via Spectral Target Design",
+  "source_url": "https://arxiv.org/abs/2611.33850",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对强化学习中的随机网络蒸馏（RND）新颖性信号提出改进。RND 通过固定随机目标网络与可训练预测器之间的差异来衡量新颖性，但存在过度泛化问题：预测器会在数据流形之外外推目标网络的输出，导致面对陌生输入时新颖性分数崩塌，从而削弱探索能力。作者从核理论视角分析这一失败模式，在高斯过程目标模型与 NTK 机制预测器的假设下，推导出 RND 新颖性分数的解析形式，并据此提出谱目标设计（Spectral Target Design）来缓解过度泛化。该工作为 RND 的失效机制提供了理论解释，并给出可操作的设计原则，对基于内在奖励的探索研究具有参考价值。",
+  "tags": [
+    "RND",
+    "Reinforcement Learning",
+    "Exploration",
+    "Kernel Theory"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:12Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "RND 的新颖性分数在数据流形之外会因预测器外推而崩塌，这是过度泛化的核心表现",
+      "通过 GP 目标模型与 NTK 机制预测器的核理论框架，可以解析地刻画 RND 新颖性分数的行为",
+      "谱目标设计为缓解过度泛化提供了理论驱动的改进方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

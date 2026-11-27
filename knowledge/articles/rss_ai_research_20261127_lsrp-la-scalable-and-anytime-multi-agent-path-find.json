@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-126",
+  "title": "LSRP*-LA: Scalable and Anytime Multi-Agent Path Finding for Large Agents with Asynchronous Actions",
+  "source_url": "https://arxiv.org/abs/2611.33793",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 LSRP*-LA，一种面向大型智能体（占据多个顶点）且支持异步动作的多智能体路径规划（MAPF）算法。传统 MAPF 方法通常假设每个智能体仅占据单个顶点，并要求所有智能体动作同步执行，这在实际应用中（如大型机器人、自动驾驶车辆、物流搬运设备）往往不成立。已有同时放宽这两个假设的规划器要么只能处理少量智能体，要么无法在任意时间预算内持续改进解的质量。LSRP*-LA 基于 LSRP* 框架进行扩展，旨在实现可扩展且随时（anytime）可用的求解能力，即在有限时间内快速给出可行解，并随着计算时间增加不断优化路径成本。该工作值得关注，因为它弥合了理论 MAPF 模型与实际多机器人系统之间的差距，为大规模、异构、异步执行场景提供了更实用的规划工具，对多机器人协调、仓储物流和自动驾驶等领域具有潜在应用价值。",
+  "tags": [
+    "MAPF",
+    "Multi-Agent",
+    "Path Planning",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:01Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 MAPF 算法普遍假设单顶点智能体和同步动作，限制了实际部署，LSRP*-LA 同时放宽这两个假设。",
+      "该算法具备 anytime 特性，可在任意时间预算内返回可行解并持续优化，适合实时性要求高的场景。",
+      "针对大型智能体（占据多顶点）的可扩展求解是当前 MAPF 研究的薄弱环节，该工作提供了新的解决思路。",
+      "研究成果有望推动 MAPF 从理论模型向仓储物流、自动驾驶等多机器人实际系统落地。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

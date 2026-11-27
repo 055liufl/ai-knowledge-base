@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-093",
+  "title": "KiRA: Kronecker Input-Gated Rank Adaptation for Parameter-Efficient Fine-Tuning of Pretrained Models",
+  "source_url": "https://arxiv.org/abs/2611.33236",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 KiRA（Kronecker Input-Gated Rank Adaptation），一种面向预训练模型参数高效微调（PEFT）的新方法。现有 PEFT 方法大多采用低秩更新，其秩远低于全量微调且对所有输入固定不变；输入自适应变体虽能按输入调整容量，但仍受限于低秩瓶颈，且任务是否受益于输入条件化在训练前无法预知。KiRA 通过 Kronecker 分解与输入门控机制，在保持参数高效的同时突破固定低秩限制，使适配器容量能够随输入动态变化。该工作值得关注，因为它直击 PEFT 中'秩固定'与'输入自适应'之间的核心矛盾，为微调大模型提供了更灵活、可能更优的折中方案，对资源受限场景下的模型适配具有实用价值。",
+  "tags": [
+    "PEFT",
+    "Fine-tuning",
+    "Low-rank Adaptation",
+    "Kronecker Decomposition"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:57:49Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 PEFT 方法的低秩更新秩固定且远低于全量微调，构成表达能力瓶颈",
+      "输入自适应 PEFT 变体仍受低秩约束，且任务是否受益于输入条件化无法预先判断",
+      "KiRA 结合 Kronecker 分解与输入门控，在参数高效前提下实现随输入变化的适配容量"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

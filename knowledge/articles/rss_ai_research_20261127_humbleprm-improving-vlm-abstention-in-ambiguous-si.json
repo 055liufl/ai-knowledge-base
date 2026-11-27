@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-108",
+  "title": "HumblePRM: Improving VLM Abstention in Ambiguous Situations through Process Reward Modeling",
+  "source_url": "https://arxiv.org/abs/2611.33452",
+  "source_platform": "rss_ai_research",
+  "summary": "HumblePRM 是一篇关于提升视觉语言模型（VLM）在模糊视觉情境下“弃权”能力的论文。研究指出，可靠部署 VLM 要求模型表达的置信度与其实际可见内容一致，并能识别视觉证据过于模糊而无法自信作答的情况。标准后训练使用结果奖励模型（ORM），仅监督最终决策，无论图像是否支持都奖励自信回答，导致模型在证据不足时仍强行作答。HumblePRM 提出通过过程奖励建模（Process Reward Modeling）改进 VLM 的弃权行为，即在推理过程中对每一步进行奖励监督，而非仅关注最终结果，从而让模型学会在视觉证据不足时主动表达不确定性或弃权。该工作值得关注，因为它针对 VLM 可靠性中的关键痛点——过度自信与幻觉问题，提供了一种过程级监督的新思路，有望提升模型在真实模糊场景下的安全性和可信度，对高风险应用场景的部署具有实际意义。",
+  "tags": [
+    "VLM",
+    "Process Reward Modeling",
+    "Abstention",
+    "Uncertainty",
+    "Post-training"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:23Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "标准结果奖励模型（ORM）只监督最终答案，会奖励无根据的自信回答，导致 VLM 在视觉证据模糊时仍强行作答。",
+      "过程奖励建模（PRM）将监督信号细化到推理步骤，有助于模型在证据不足时学会弃权或表达不确定性。",
+      "提升 VLM 的弃权能力是保障其可靠部署、减少幻觉与过度自信的关键方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

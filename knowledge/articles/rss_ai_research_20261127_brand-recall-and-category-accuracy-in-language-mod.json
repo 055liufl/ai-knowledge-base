@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-008",
+  "title": "Brand Recall and Category Accuracy in Language Models: An Audit of 1,000 B2B SaaS Brands",
+  "source_url": "https://arxiv.org/abs/2611.33322",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究对1000个B2B SaaS品牌在333个产品类别中的语言模型表现进行了审计，重点区分了品牌召回（模型能否说出品牌名）与类别准确性（模型能否正确分类品牌）。在Gemma 4 12B模型上，无外部检索时，类别提示仅能召回510个品牌（51.0%）。通过五候选类别探测，787个品牌的参考标签排名第一，194个品牌被干扰项排第一，19个品牌区分度低。在981个可区分排名中，进一步分析了模型对品牌类别归属的准确性。该研究值得关注，因为它首次系统性地量化了语言模型在B2B SaaS领域的品牌知识缺陷，揭示了模型即使能生成品牌名称，也常无法正确归类，这对依赖LLM进行市场分析、竞品研究和内容生成的应用具有重要警示意义，并提供了可复现的评估方法。",
+  "tags": [
+    "LLM",
+    "Evaluation",
+    "B2B SaaS",
+    "Brand Recall"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:54:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "语言模型在B2B SaaS品牌召回上表现中等（51%），但类别准确性存在显著偏差，近20%的品牌被错误分类。",
+      "品牌召回与类别准确性应分开评估，模型能说出品牌名不代表理解其所属类别。",
+      "无外部检索时，模型对长尾B2B品牌的覆盖有限，需结合检索增强或领域微调。",
+      "五候选探测方法能有效量化类别混淆程度，为模型审计提供可复现的基准。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

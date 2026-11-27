@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-032",
+  "title": "TransHarness: From Benchmark Overfitting to Transferable Harness Evolution",
+  "source_url": "https://arxiv.org/abs/2611.33757",
+  "source_platform": "rss_ai_research",
+  "summary": "TransHarness 是一篇针对编码智能体（coding agents）的 arXiv 论文，聚焦于“harness evolution”（测试框架/执行框架演化）这一不更新模型权重即可提升智能体表现的路径。作者指出，现有 harness 演化方法容易对演化所用的基准过拟合，导致性能提升无法迁移到新任务上。为此，论文提出 Transferable Harness Evolution（TransHarness），其核心是从同任务的“成功-失败”对比中演化出 harness 干预策略（intervention policies），这些策略将执行上下文触发器与诊断性引导（diagnostic guidance）耦合起来。该工作值得关注的原因在于：它直击智能体工程化中的关键痛点——基准过拟合与泛化能力不足，提出了一种不依赖模型微调、而是通过演化外部执行框架来获得可迁移改进的思路，对构建更稳健的编码智能体系统具有方法论意义，也为 harness/脚手架层面的自动化优化提供了新的研究方向。",
+  "tags": [
+    "Agent",
+    "Coding Agent",
+    "Harness Evolution",
+    "Benchmark Overfitting"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 harness 演化方法容易对演化基准过拟合，性能提升难以迁移到新任务",
+      "TransHarness 从同任务的成功-失败对比中演化干预策略，而非依赖模型权重更新",
+      "干预策略将执行上下文触发器与诊断性引导相结合，提升跨任务可迁移性",
+      "该方向表明智能体性能提升可来自外部执行框架的自动化演化，而非仅靠模型能力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

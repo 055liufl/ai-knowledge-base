@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-053",
+  "title": "Letting Models Manage Their Own Context: Where We Stand",
+  "source_url": "https://arxiv.org/abs/2611.34147",
+  "source_platform": "rss_ai_research",
+  "summary": "本文研究了一种替代传统 agent harness 上下文管理方式的方案：模型驱动的上下文管理。当前主流 agent 框架（如 NVIDIA 开源的 ooa）在上下文窗口填满时，由 harness 自动触发压缩并摘要历史。作者提出通过上下文 API 让模型自主决定何时压缩、压缩什么内容，并在文档研究和机器相关任务上对比了两种策略。该研究值得关注，因为它触及 agent 长期运行的核心瓶颈——上下文窗口管理，将控制权从外部框架转移到模型本身，可能显著提升长任务中的信息保留与推理连贯性，也为 agent 架构设计提供了新的思路。",
+  "tags": [
+    "Agent",
+    "Context Management",
+    "LLM",
+    "Agent Harness"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:19Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前 agent 框架由 harness 被动触发上下文压缩，模型本身缺乏对上下文生命周期的控制权",
+      "模型驱动的上下文管理通过 context API 让模型自主决定压缩时机与内容，可能更符合任务语义需求",
+      "在 NVIDIA 开源 harness ooa 上的对比实验为两种策略提供了实证依据",
+      "该方向有望缓解长任务 agent 的上下文窗口瓶颈，提升信息保留与推理连贯性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

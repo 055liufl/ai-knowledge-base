@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-106",
+  "title": "Temporal Selective Exploration for Reinforcement Learning-Guided Continuous-Discrete Flow Matching in 3D Molecular Design",
+  "source_url": "https://arxiv.org/abs/2611.33417",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向连续-离散混合流匹配（Flow Matching）的强化学习优化方法，并应用于3D分子设计。流匹配在生成任务中表现优异，但通过强化学习优化其生成过程的研究仍不充分，尤其是在连续-离散混合场景下。核心挑战在于流匹配被建模为常微分方程（ODE），其确定性轨迹不天然支持RL优化。作者通过将轨迹转化为随机微分方程（SDE）引入随机性，并设计时间选择性探索策略，在保持生成质量的同时实现RL引导的优化。该工作值得关注，因为它首次系统性地解决了混合连续-离散流匹配的RL微调问题，为分子设计等需要同时处理连续坐标和离散原子类型的任务提供了新范式，有望推动生成模型与强化学习在科学发现领域的深度融合。",
+  "tags": [
+    "Flow Matching",
+    "Reinforcement Learning",
+    "Molecular Design",
+    "Generative Model"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:18Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流匹配的ODE确定性轨迹阻碍RL优化，需通过SDE引入随机性以支持探索",
+      "时间选择性探索策略可平衡探索效率与生成质量，避免全轨迹随机化带来的噪声",
+      "连续-离散混合流匹配的RL优化在3D分子设计等任务中具有重要应用潜力"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

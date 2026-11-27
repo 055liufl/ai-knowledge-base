@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-139",
+  "title": "InstructTTS-OPD: On-Policy Distillation for Multi-Objective Instruction-Following TTS",
+  "source_url": "https://arxiv.org/abs/2611.33937",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 InstructTTS-OPD，一种基于在线策略蒸馏（On-Policy Distillation）的多目标指令跟随 TTS 方法。指令跟随 TTS 要求模型同时满足三个目标：遵循自由形式的自然语言指令、正确发音转写文本、以及保持自然音质。现有方法通常采用强化学习进行后训练以对齐人类偏好，但多目标优化仍具挑战。该工作通过在线策略蒸馏框架，将多个目标（指令跟随、发音准确、自然度）统一到蒸馏过程中，利用教师模型或奖励信号在策略采样上提供细粒度指导，从而避免强化学习中的高方差和奖励设计难题。该方法在保持生成质量的同时提升了多目标平衡能力，为 Instruct-TTS 的后训练提供了新思路。值得关注的是，它首次将在线策略蒸馏系统性地引入多目标指令 TTS 场景，有望降低对复杂奖励工程的依赖，并推动更可控、更自然的语音合成系统发展。",
+  "tags": [
+    "TTS",
+    "Instruction-Following",
+    "On-Policy Distillation",
+    "Multi-Objective Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略蒸馏可统一优化指令跟随、发音准确和自然度三个目标，避免强化学习中的奖励设计复杂性。",
+      "该方法在策略采样上利用教师指导，有望降低多目标 TTS 后训练的方差和训练不稳定性。",
+      "为 Instruct-TTS 提供了一种不依赖复杂奖励工程的后训练范式，推动更可控的语音合成。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

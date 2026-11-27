@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-073",
+  "title": "A Failure-Driven Data Flywheel for Post-Training Vision-Language-Action Models",
+  "source_url": "https://arxiv.org/abs/2611.34698",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向视觉-语言-动作（VLA）模型后训练的数据飞轮方法，旨在解决预训练VLA模型难以满足新平台全部行为需求、且缺乏大规模部署数据的问题。其核心思路是：通过将任务相关实体插入重建的真实场景中，构造目标场景（即现有数据中缺失的场景），并针对每个行为需求评估模型表现，从而系统性地发现失败案例。这些失败案例随后被用于指导数据采集或合成，形成闭环迭代。该方法的价值在于，它让数据有限的团队也能高效地针对模型弱点进行定向改进，而非依赖海量随机数据。对于机器人、具身智能等VLA应用领域，这种失败驱动的数据生成策略有望显著降低后训练成本，提升模型在特定任务上的鲁棒性和成功率，是一种兼具实用性和创新性的工程化方案。",
+  "tags": [
+    "VLA",
+    "Data Flywheel",
+    "Post-Training",
+    "Embodied AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:57:06Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "通过将任务实体插入重建场景来合成缺失的目标场景，可有效暴露模型的行为缺陷。",
+      "失败驱动的数据飞轮形成闭环：评估失败→生成针对性数据→再训练，提升数据效率。",
+      "该方法降低了对大规模部署数据的依赖，适合数据有限的团队进行VLA模型后训练。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

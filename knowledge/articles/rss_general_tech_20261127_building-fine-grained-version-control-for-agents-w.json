@@ -1,0 +1,32 @@
+{
+  "id": "rss-general-tech-20261127-019",
+  "title": "Building fine-grained version control for agents with Rust and Durable Objects",
+  "source_url": "https://delta.dev/blog/fine-grained-version-control-for-agents",
+  "source_platform": "rss_general_tech",
+  "summary": "本文介绍了如何利用 Rust 和 Durable Objects 为 AI 代理构建细粒度版本控制。随着 AI 代理在复杂任务中的广泛应用，其行为、状态和决策过程的版本管理变得至关重要。传统版本控制系统（如 Git）主要针对代码文件，难以满足代理动态、多分支、状态化的需求。作者提出了一种基于 Rust 的高性能实现，结合 Cloudflare Durable Objects 的强一致性和持久化特性，为每个代理实例提供独立的、可追溯的版本历史。该系统支持细粒度的状态快照、分支管理和回滚，使开发者能够精确控制代理的演化过程，便于调试、审计和协作。文章详细阐述了架构设计、关键挑战（如并发控制、存储效率）以及实现细节，并展示了实际应用场景。该方案为 AI 代理的工程化提供了重要的基础设施支持，值得关注。",
+  "tags": [
+    "Agent",
+    "Version Control",
+    "Rust",
+    "Durable Objects"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:46Z",
+  "collected_at": "2026-11-27T17:54:15Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统版本控制不适合代理的动态状态，需要细粒度、状态化的版本管理。",
+      "Rust 提供高性能和安全性，Durable Objects 提供强一致性和持久化，二者结合是理想方案。",
+      "细粒度版本控制能提升代理的可调试性、可审计性和协作效率。",
+      "该架构可扩展到其他需要状态版本化的分布式应用。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

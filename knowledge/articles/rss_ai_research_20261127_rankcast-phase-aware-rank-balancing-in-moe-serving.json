@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-114",
+  "title": "RankCast: Phase-Aware Rank Balancing in MoE Serving",
+  "source_url": "https://arxiv.org/abs/2611.33542",
+  "source_platform": "rss_ai_research",
+  "summary": "RankCast 是一篇关于 MoE 模型推理服务优化的 arXiv 论文，聚焦于分离式架构（Prefill/Decode 分离）下专家并行（EP）的负载不均衡问题。论文指出，MoE 推理中每一层都必须等待最繁忙的 EP rank，而 Prefill 阶段是计算密集型、Decode 阶段是访存密集型，两者的延迟来源不同，因此需要阶段感知的 rank 负载均衡策略。RankCast 提出根据 Prefill 和 Decode 的不同特性动态调整 rank 负载分配，以缓解 EP 中的木桶效应，提升整体推理吞吐。该工作值得关注，因为 MoE 大模型服务正成为主流部署形态，而 EP 负载均衡是制约其效率的关键瓶颈；阶段感知的优化思路对推理系统设计具有直接参考价值，尤其适合从事 LLM 推理基础设施的工程师。",
+  "tags": [
+    "MoE",
+    "Expert Parallelism",
+    "LLM Serving",
+    "Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:36Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MoE 推理中每层需等待最繁忙的 EP rank，负载不均衡是主要延迟来源",
+      "Prefill 为计算密集型、Decode 为访存密集型，二者延迟来源不同，需分别优化",
+      "阶段感知的 rank 负载均衡可缓解 EP 木桶效应，提升分离式架构下的推理吞吐"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261127-002",
+  "title": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+  "source_url": "https://arxiv.org/abs/2611.33161",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向LLM和VLM候选答案选择的约束感知测试时评分框架。传统方法依赖模型置信度、学习型评判模型或领域检查，但各自存在缺陷：流畅但可能不安全、数学上合理但物理不可行、或评判模型高分却违反任务要求。该框架将每个答案必须通过的少量硬性检查与软性评分相结合，在测试时对多个候选答案进行综合排序。硬性检查确保基本约束（如安全性、可行性、任务合规性）不被违反，软性评分则利用模型置信度或评判模型对通过硬检查的答案进行质量排序。该方法无需额外训练，可直接应用于现有LLM/VLM的推理阶段，提升答案选择的可靠性和任务符合度。其创新点在于将约束满足与质量评分解耦，兼顾安全性与实用性，适用于需要严格约束的领域（如代码生成、数学推理、物理规划等）。该工作为测试时计算（test-time compute）提供了一种轻量级、可解释的增强策略，值得关注。",
+  "tags": [
+    "LLM",
+    "VLM",
+    "Test-Time Compute",
+    "Constraint Satisfaction",
+    "Candidate Selection"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:54:24Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "传统候选选择方法（置信度、评判模型、领域检查）各有盲点，单一信号不可靠。",
+      "将硬性约束检查与软性质量评分结合，可在测试时有效过滤违反任务要求的答案。",
+      "该框架无需额外训练，可直接集成到现有LLM/VLM推理流程中，提升安全性和合规性。",
+      "适用于代码生成、数学推理等对约束敏感的领域，为测试时计算提供可解释的增强手段。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

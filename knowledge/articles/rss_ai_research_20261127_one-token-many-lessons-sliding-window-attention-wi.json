@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-098",
+  "title": "One Token, Many Lessons: Sliding-Window Attention within Gated Delta Networks",
+  "source_url": "https://arxiv.org/abs/2611.33257",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文从测试时回归（TTR）的视角重新审视线性注意力机制，将循环状态矩阵视为在线学习的回归模型，其中键和值分别作为输入和目标，查询用于从模型中读取信息。作者指出，状态学习的有效性取决于如何平衡历史信息的压缩与遗忘。基于这一视角，论文提出在门控Delta网络（Gated Delta Networks）中引入滑动窗口注意力机制，以改进状态更新过程。该方法旨在结合线性注意力的高效性与滑动窗口注意力的局部精确性，从而在长序列建模中实现更好的计算-内存-精度权衡。这项工作的价值在于为线性注意力与滑动窗口注意力的融合提供了理论解释和实用设计，对长上下文建模、高效Transformer架构以及测试时自适应等方向具有参考意义，尤其适合关注模型效率与长序列处理的研究者和开发者。",
+  "tags": [
+    "Linear Attention",
+    "Sliding Window Attention",
+    "Gated Delta Networks",
+    "Long Sequence Modeling"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:57:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "从测试时回归（TTR）视角看，线性注意力的状态矩阵可视为在线学习的回归模型，键和值分别对应输入和目标，查询用于读取。",
+      "状态学习的有效性取决于历史信息压缩与遗忘之间的平衡，滑动窗口注意力可为此提供局部精确性。",
+      "在门控Delta网络中引入滑动窗口注意力，有望结合线性注意力的高效性与局部注意力的精确性，改善长序列建模。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

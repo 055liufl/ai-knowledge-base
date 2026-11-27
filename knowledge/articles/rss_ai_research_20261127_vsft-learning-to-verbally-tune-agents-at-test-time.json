@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-065",
+  "title": "vSFT: Learning to Verbally Tune Agents at Test Time",
+  "source_url": "https://arxiv.org/abs/2611.34440",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出 vSFT（verbally Supervised Fine-Tuning）框架，旨在解决基于强化学习的 LLM Agent 在测试时优化面临的高昂 rollout 成本和稀疏奖励问题。vSFT 将自然语言形式的密集反馈与测试时的权重更新相结合，形成 Agent 与反馈提供者之间的闭环。传统 agentic RL 虽能通过 on-policy 方式提升 Agent 能力，但测试时应用受限；vSFT 则利用自然语言反馈作为监督信号，在测试阶段直接微调模型权重，从而在无需大量环境交互的情况下实现持续改进。该工作值得关注，因为它探索了测试时学习（test-time learning）的新范式，将语言反馈转化为可执行的权重更新，有望降低 Agent 自适应成本并提升部署灵活性，对 Agent 的在线学习和实际应用具有潜在影响。",
+  "tags": [
+    "Agent",
+    "Fine-Tuning",
+    "Test-Time Learning",
+    "Reinforcement Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "vSFT 将自然语言密集反馈与测试时权重更新结合，形成 Agent 与反馈源之间的闭环，避免传统 RL 的高昂 rollout 成本。",
+      "该方法针对 agentic RL 的稀疏奖励和测试时应用受限问题，提出了一种基于语言监督的替代方案。",
+      "测试时直接进行权重更新可能为 Agent 的持续自适应提供新路径，但需关注计算开销与稳定性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

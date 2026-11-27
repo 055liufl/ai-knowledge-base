@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-111",
+  "title": "The Geometry Is the Memory: Task-Density Routing for Continual LoRA",
+  "source_url": "https://arxiv.org/abs/2611.33487",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出CONTLORA方法，解决持续学习场景下多个LoRA适配器在推理时的路由选择问题。现有方法冻结旧适配器并不能保证推理时正确选择和使用它们，当存在多个适配器时，路由并识别与查询答案表示空间匹配的适配器十分困难。CONTLORA用紧凑的类统计量替代存储的样本，用于适配器选择和分类，在冻结表示中采用高斯类模型进行选择。该方法将任务密度路由与几何记忆相结合，为持续LoRA学习提供了一种无需回放样本的高效推理路由机制，对持续学习与参数高效微调的结合具有参考价值。",
+  "tags": [
+    "LoRA",
+    "Continual Learning",
+    "Routing",
+    "Parameter-Efficient Fine-Tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "冻结旧适配器不足以保证推理时正确路由，适配器选择本身是持续学习的关键挑战",
+      "用高斯类统计量替代存储样本，可在不增加记忆开销的情况下实现适配器选择与分类",
+      "在冻结表示空间中进行几何匹配，为多适配器路由提供了轻量级解决方案"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

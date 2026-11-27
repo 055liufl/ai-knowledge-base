@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-136",
+  "title": "Beyond the Happy Path: Generalizing Robot World Models from Simulated Failures",
+  "source_url": "https://arxiv.org/abs/2611.33925",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文指出机器人世界模型在训练数据以成功演示为主的情况下，对失败场景（如抓取错位、物体滑动或倾斜）的预测能力严重不足。作者在五个预训练的动作条件模型上测试，发现物体运动预测误差最多仅比静态基线（直接复制第一帧）低10.4%，其中两个模型甚至更差。研究提出利用模拟失败数据来泛化世界模型，以提升其在非理想路径下的鲁棒性。这项工作值得关注，因为它揭示了当前机器人世界模型在真实部署中的关键短板，并指明了通过模拟失败来增强模型泛化性的方向，对机器人学习与规划领域具有重要参考价值。",
+  "tags": [
+    "Robot World Models",
+    "Simulation",
+    "Failure Generalization",
+    "Policy Evaluation"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "当前机器人世界模型在失败场景下的预测能力接近静态基线，泛化性严重不足。",
+      "训练数据以成功演示为主是导致模型在非理想路径下失效的主要原因。",
+      "利用模拟失败数据进行训练是提升世界模型鲁棒性的有效潜在方向。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

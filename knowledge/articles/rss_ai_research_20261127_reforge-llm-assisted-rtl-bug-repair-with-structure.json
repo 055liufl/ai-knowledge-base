@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-031",
+  "title": "REFORGE: LLM-Assisted RTL Bug Repair with Structured Context and Verification Feedback",
+  "source_url": "https://arxiv.org/abs/2611.33748",
+  "source_platform": "rss_ai_research",
+  "summary": "REFORGE 是一篇关于利用大语言模型（LLM）修复 RTL（寄存器传输级）硬件设计缺陷的学术论文。该研究指出，现有基于 LLM 的 RTL 修复方法存在一个关键问题：它们通常只报告单一的修复成功率，而成功编译或测试平台执行并不能证明缺陷已被真正消除、行为得到保持、安全性得到保障或实现具备可行性。REFORGE 提出了一种结构化上下文与验证反馈相结合的修复框架，旨在为上述各项属性分别保留独立证据，从而提升修复过程的可复现性，并便于集成到硬件设计流程中。该工作值得关注的原因在于，它将 LLM 辅助代码修复从软件领域延伸到硬件设计这一高门槛场景，并强调验证证据的分离与可追溯性，这对硬件工程中严谨的验证文化具有重要意义，也为 LLM 在 EDA 流程中的可信落地提供了方法论参考。",
+  "tags": [
+    "LLM",
+    "RTL",
+    "EDA",
+    "Verification"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "成功编译或测试平台通过并不等于缺陷被真正修复，RTL 修复需要分别验证缺陷消除、行为保持、安全性和可实现性",
+      "现有 LLM 辅助 RTL 修复研究普遍只报告单一修复率，缺乏可复现的独立证据，阻碍了与硬件设计流程的集成",
+      "结构化上下文与验证反馈的结合是提升 LLM 硬件修复可信度的关键方向"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-054",
+  "title": "SOLO: Towards Sample-Faithful and Detectable LLM Watermarking under Repeated Sampling via Content-Anchored Single-Owner Contexts",
+  "source_url": "https://arxiv.org/abs/2611.34190",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对LLM水印在重复采样场景下的可靠性问题展开研究。当前无失真水印（distortion-free watermark）在部署时通常只在单个响应内部去重键控上下文，导致同一提示下多次采样得到的响应之间产生耦合：由于答案模板的存在，所有响应在生成答案前都会用相同的上下文查询水印，从而引发碰撞。这种耦合破坏了水印的样本忠实性（sample-faithfulness），即水印不应影响采样分布，同时也降低了水印的可检测性。作者提出SOLO方法，通过内容锚定的单所有者上下文（Content-Anchored Single-Owner Contexts）来解耦同一请求下的多个响应，使每个响应拥有独立的键控上下文，从而在重复采样场景下保持水印的样本忠实性和可检测性。该工作揭示了实际部署中水印方案的一个关键漏洞，对LLM输出溯源与版权保护具有重要意义。",
+  "tags": [
+    "LLM Watermarking",
+    "Repeated Sampling",
+    "Distortion-Free Watermark",
+    "AI Safety"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:22Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有无失真水印在重复采样时因答案模板导致上下文碰撞，使同一请求的多个响应相互耦合，破坏样本忠实性。",
+      "SOLO通过内容锚定的单所有者上下文为每个响应分配独立键控上下文，解耦重复采样下的水印查询。",
+      "该问题在实际部署配置中普遍存在，影响水印的可检测性与LLM输出溯源的可靠性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

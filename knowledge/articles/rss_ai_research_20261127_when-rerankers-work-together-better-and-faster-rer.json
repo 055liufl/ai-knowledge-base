@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-130",
+  "title": "When Rerankers Work Together: Better and Faster Reranking without Joint Training",
+  "source_url": "https://arxiv.org/abs/2611.33844",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文系统研究了多阶段RAG管道中异构重排器（reranker）的组合使用，无需联合训练。作者考察了词汇、单向量、晚交互和联合查询-上下文评分等多种重排器，并提出了两种轻量级语义粗排器：Cache-Pointwise和Cache-Shapley。它们从段落相关性标签中学习，共享可缓存表示，并支持线性时间的单例推理。研究表明，独立重排器的质量并不能决定其在多阶段管道中的价值，通过合理组合异构重排器，可以在不进行联合训练的情况下实现更好且更快的重排效果。这项工作为RAG系统的重排阶段提供了新的设计思路，强调了重排器组合的协同效应，对提升检索增强生成的效率和准确性具有实际意义。",
+  "tags": [
+    "RAG",
+    "Reranking",
+    "Information Retrieval",
+    "Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "独立重排器的质量不能决定其在多阶段RAG管道中的价值，组合使用异构重排器可能带来更优效果。",
+      "Cache-Pointwise和Cache-Shapley两种轻量级语义粗排器通过共享缓存表示和线性时间推理，实现了高效的重排。",
+      "无需联合训练即可组合不同类别的重排器（词汇、单向量、晚交互、联合评分），为RAG系统设计提供了灵活性。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-078",
+  "title": "Show Your Work: Can Small Open Models Read SEC Filings with Evidence a Machine Can Check?",
+  "source_url": "https://arxiv.org/abs/2611.24990",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 Filing-Evidence 基准，用于评估小型开源模型在单张消费级 GPU 上从 SEC 文件（10-K/10-Q）中提取数字的能力，并要求模型提供可机器验证的证据：页码和包含该数字的逐字引用。基准包含 1000 个问题，覆盖 45 家美国公司的 90 份近期文件，答案键来自内联 XBRL 标签。研究评估了十种小型开源模型，关注其答案的准确性与证据可验证性。这项工作值得关注，因为它将 LLM 在金融文档抽取中的评估从“流畅性”转向“可验证性”，强调证据溯源，对金融、审计等高风险场景的模型可信部署具有实际意义，同时探索了在消费级硬件上运行小型模型完成专业任务的可行性。",
+  "tags": [
+    "LLM",
+    "Benchmark",
+    "Financial NLP",
+    "Evidence Extraction"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:57:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "流畅的答案不等于经过验证的答案，金融文档抽取需要可机器检查的证据（页码+逐字引用）。",
+      "Filing-Evidence 基准利用内联 XBRL 标签作为答案键，提供了客观的评估标准。",
+      "小型开源模型在单张消费级 GPU 上运行，探索了低成本、可本地部署的金融文档抽取方案。",
+      "评估重点从答案准确性扩展到证据可验证性，推动 LLM 在高风险领域的可信应用。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

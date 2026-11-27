@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-102",
+  "title": "Poisoning Self-Evolving Security Policies in LLM Agents",
+  "source_url": "https://arxiv.org/abs/2611.33385",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文揭示了LLM智能体自演化安全防御机制本身可被攻击的新风险。自演化防御通过从观察到的攻击中学习可复用策略来提升安全性，但作者证明这一学习过程可成为攻击面。在AgentDojo基准上，利用SED（自演化防御）构造单次提示注入攻击，使防御系统学习到过于宽泛的策略，进而拒绝合法请求。在10次Nemotron运行中，所有被投毒的运行均出现过度拒绝。该研究首次系统性地指出自演化安全策略的投毒漏洞，对LLM智能体安全部署具有重要警示意义，值得安全研究者和开发者关注。",
+  "tags": [
+    "LLM Agent",
+    "Security",
+    "Prompt Injection",
+    "Self-Evolving Defense"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:09Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自演化防御的学习过程本身可成为攻击面，单次提示注入即可污染策略学习",
+      "被投毒的防御会学习到过度宽泛的策略，导致对合法请求的过度拒绝",
+      "在AgentDojo基准和Nemotron模型上验证了攻击的普遍性（10次运行全部成功）",
+      "LLM智能体安全需同时关注防御机制自身的学习鲁棒性"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

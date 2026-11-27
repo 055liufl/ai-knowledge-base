@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-004",
+  "title": "General-Purpose Decision Models for AI Configuration Tuning",
+  "source_url": "https://arxiv.org/abs/2611.33190",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究通用决策模型能否用于指导 AI 配置调优（AI configuration tuning）。AI 配置调优是在有限预算下搜索能提升 AI 系统性能的配置参数，现有调优器采用不同的采样与搜索策略，决策策略的选择直接影响调优质量与成本。作者以已部署的通用决策模型 Jev 为代表，考察其在多样化任务中返回结构化选择与数值评分的能力，并据此评估通用决策模型引导调优的可行性。该工作值得关注之处在于：它尝试将通用决策模型引入超参数/配置搜索这一经典优化问题，可能降低对任务专用调优器的依赖，为自动化 AI 系统配置提供新的范式；同时其评估框架对理解通用模型在结构化决策任务上的边界具有参考价值。不过摘要信息有限，具体实验规模、对比基线与结论强度尚需阅读全文确认。",
+  "tags": [
+    "AutoML",
+    "Hyperparameter Tuning",
+    "Decision Model",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:54:29Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "决策策略的选择是 AI 配置调优中质量与成本的核心权衡点",
+      "通用决策模型（如 Jev）有望作为跨任务的调优引导器，减少对专用调优器的依赖",
+      "结构化选择加数值评分的输出形式使通用模型可直接嵌入搜索循环",
+      "该方向仍处早期，需更多实验验证其相对传统调优器的实际收益"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-084",
+  "title": "Semantic Density Does Not Predict Agent-Memory Collapse",
+  "source_url": "https://arxiv.org/abs/2611.33184",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究LLM智能体持久化文本记忆的一个关键失效模式：记忆库反复更新后，任务性能会逐渐退化，即所谓“记忆坍缩”。作者提出一个直觉性假设：记忆库的统计特征（如平均成对余弦相似度ρ，即语义密度）能否在留出集准确率下降之前发出预警。为此，他们在ALFWorld、AppWorld、ScienceWorld、WebShop以及两个ARC-AGI设置上，对13种记忆方法产生的805个快照，注册并追踪了包括ρ在内的14项几何、检索与图结构统计量。标题给出的核心结论是：语义密度并不能预测智能体记忆坍缩。这意味着仅靠记忆库内部的相似度或几何指标，无法可靠地作为记忆退化的早期预警信号。该工作值得关注，因为它直接挑战了“记忆越紧凑/语义越集中越好”的常见工程直觉，并为智能体记忆系统的监控、评估与设计提供了实证依据，提示需要更贴近任务表现的诊断指标。",
+  "tags": [
+    "Agent Memory",
+    "LLM Agent",
+    "Evaluation",
+    "Embedding Geometry"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:57:31Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "记忆库的平均成对余弦相似度（语义密度）无法预测留出集准确率的下降，不能作为记忆坍缩的早期预警指标。",
+      "研究覆盖13种记忆方法、805个快照和5类以上环境（ALFWorld、AppWorld、ScienceWorld、WebShop、ARC-AGI），结论具有较强实证广度。",
+      "仅依赖记忆库内部的几何或检索统计量来监控智能体记忆健康度可能不可靠，需要与任务表现挂钩的诊断信号。",
+      "该结果挑战了“语义越集中/记忆越紧凑越好”的工程直觉，对记忆系统的设计与运维有直接启示。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

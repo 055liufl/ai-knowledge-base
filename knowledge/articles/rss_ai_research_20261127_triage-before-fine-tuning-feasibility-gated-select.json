@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-125",
+  "title": "Triage Before Fine-Tuning: Feasibility-Gated Selection and Monitored Adaptation of Embodied Foundation Models for a Fixed Physical Platform",
+  "source_url": "https://arxiv.org/abs/2611.33772",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文针对具身基础模型在固定物理平台上的部署问题，提出了一种“先分诊、后微调”的框架。作者指出，实践者通常根据基准排名选择公开检查点，然后在本地数据上微调，但平台在选模型前就已固定，且本地数据很少。论文将模型在固定平台上的性能损失拆分为可修复和不可修复的部分：感知差距（传感器无法捕获的信息）不可修复，而其他差距可通过本地数据弥补。基于此，作者提出可行性门控的选择方法，并监控微调过程，以判断哪些检查点值得适配。该工作为具身智能的模型选型与微调提供了系统性的决策依据，值得关注。",
+  "tags": [
+    "Embodied AI",
+    "Fine-Tuning",
+    "Foundation Models",
+    "Model Selection"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:59Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在固定物理平台上，模型性能损失可分解为感知差距（不可修复）和其他可修复差距，本地数据只能弥补后者。",
+      "提出可行性门控的检查点选择方法，避免在不可修复的模型上浪费微调资源。",
+      "强调微调过程需要监控，以动态评估适配的可行性和效果。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

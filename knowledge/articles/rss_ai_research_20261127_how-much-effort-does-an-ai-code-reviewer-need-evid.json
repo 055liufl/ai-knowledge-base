@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-020",
+  "title": "How Much Effort Does an AI Code Reviewer Need? Evidence from Claude 5.5 Models on Plausible-but-Wrong Patches",
+  "source_url": "https://arxiv.org/abs/2611.33639",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究AI代码审查器在检测“看似合理但错误”的补丁时所需付出的努力程度。这类补丁能通过基准测试但无法通过更严格的测试。研究使用Claude Opus 5.5（预注册）、Sonnet 5.5和Haiku 5.5（探索性）对90个由AI代理编写的Django补丁进行审查，这些补丁来自SWE-bench。推理模型允许审查器通过“努力设置”在成本和勤勉之间权衡。研究旨在量化审查器需要多少努力才能发现这类隐蔽错误，为团队配置AI审查工具提供实证依据。该工作值得关注，因为它直面AI编码代理产出速度超过人类审查能力这一现实瓶颈，并首次系统评估了不同努力级别下AI审查器的有效性，对构建可靠的AI辅助代码审查流程具有指导意义。",
+  "tags": [
+    "AI Code Review",
+    "LLM",
+    "Software Engineering",
+    "Benchmark"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "AI编码代理的产出速度已超过人类审查能力，引入AI审查器成为必要补充。",
+      "推理模型可通过努力设置调节审查成本与检出率之间的权衡。",
+      "看似合理但错误的补丁能通过基准测试却无法通过更严格测试，是审查的主要挑战。",
+      "不同模型（Opus/Sonnet/Haiku）在审查此类补丁时所需努力程度存在差异。"
+    ],
+    "tech_category": "research",
+    "audience": "developer"
+  },
+  "version": 1
+}

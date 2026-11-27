@@ -1,0 +1,30 @@
+{
+  "id": "rss-ai-research-20261127-023",
+  "title": "Faster and Better Query (FBQ): Learning Future-Position Probes from the First Generated Token",
+  "source_url": "https://arxiv.org/abs/2611.33679",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出了一种名为 Faster and Better Query (FBQ) 的方法，用于解决大语言模型在预填充阶段结束时需要决定保留哪些提示键值（KV）的问题。传统方法通过生成草稿续写来近似未来解码步骤的查询，但需要额外的自回归步骤，成本较高。FBQ 创新性地利用最终预填充 logits 中已经可用的第一个输出 token 的嵌入，构建低成本的伪查询，以近似未来的解码查询。该方法无需额外生成步骤，即可在 KV 缓存淘汰决策中实现更快且更优的性能。该工作对于提升 LLM 推理效率、降低长上下文场景下的内存开销具有实际意义，尤其适用于需要高效 KV 缓存管理的部署环境。",
+  "tags": [
+    "LLM",
+    "KV Cache",
+    "Inference Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:10Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "利用第一个输出 token 的嵌入构建伪查询，避免额外自回归生成步骤，显著降低计算开销。",
+      "在预填充阶段即可近似未来解码查询，提升 KV 缓存淘汰决策的准确性。",
+      "方法直接复用最终预填充 logits 中的信息，实现简单且易于集成到现有推理框架。"
+    ],
+    "tech_category": "infra",
+    "audience": "researcher"
+  },
+  "version": 1
+}

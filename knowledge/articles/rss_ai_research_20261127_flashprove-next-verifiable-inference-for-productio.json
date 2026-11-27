@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-122",
+  "title": "FlashProve-Next: Verifiable Inference for Production LLM APIs",
+  "source_url": "https://arxiv.org/abs/2611.33741",
+  "source_platform": "rss_ai_research",
+  "summary": "FlashProve-Next 是一篇来自 arXiv 的技术论文，提出了一种针对生产环境 LLM API 的可验证推理方案。当前，使用闭源权重 LLM API 的客户无法验证服务提供商是否真正运行了所宣称的模型、精度、隐藏提示词和推理预算。现有方法要么依赖硬件或第三方信任，要么需要对整数代理模型的每一层进行高成本重证明，且与原生浮点服务存在偏差。FlashProve-Next 的核心创新在于：无需修改原生服务栈，即可为单个 LLM API 响应生成可验证的、零知识掩码的证明。这意味着客户端可以在不泄露模型权重或提示词的情况下，确认服务端确实执行了约定的计算。该工作值得关注，因为它直击 LLM 服务供应链中的信任痛点，为 API 经济中的合规审计、SLA 保障和防欺诈提供了密码学级别的技术路径，同时兼顾了生产环境的性能约束，有望推动可验证 AI 服务从理论走向落地。",
+  "tags": [
+    "Verifiable Inference",
+    "Zero-Knowledge Proof",
+    "LLM API",
+    "Trustworthy AI"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:53Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "现有 LLM API 缺乏对模型、精度、提示词和推理预算的客户端可验证性，形成信任盲区。",
+      "FlashProve-Next 通过零知识掩码证明实现单次响应级验证，且不侵入原生浮点服务栈。",
+      "该方案避免了整数代理模型重证明的高开销与浮点服务偏差问题，更贴近生产实际。",
+      "可验证推理为 API 经济中的合规审计与防欺诈提供了密码学基础，具有商业化潜力。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

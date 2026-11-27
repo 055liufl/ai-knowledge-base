@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261127-052",
+  "title": "Not Every Input Needs Everything: Unifying Expert Gating, Model Cascades, and Agent Orchestration",
+  "source_url": "https://arxiv.org/abs/2611.34112",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出统一视角，将稀疏神经网络中的token级专家门控、查询级模型级联以及任务级多智能体编排视为条件计算的三种表现形式，核心思想是并非每个输入都需要经过全部计算资源。论文指出，对每个输入都统一执行完整的神经网络权重、前沿基础模型或整个多智能体工作流会带来显著的计算、延迟和金钱开销，而条件计算通过动态决定每个请求调用哪些内部专家、模型端点或专用智能体来缓解这一成本。该工作值得关注，因为它首次系统性地连接了此前分散在模型架构、推理系统和智能体系统三个层面的条件计算研究，为构建高效、自适应的AI系统提供了统一的理论框架和设计原则，对降低大模型部署成本、提升推理效率以及优化多智能体协作具有重要指导意义。",
+  "tags": [
+    "Conditional Computation",
+    "Model Cascades",
+    "Agent Orchestration",
+    "Mixture-of-Experts",
+    "Efficient Inference"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:17Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "条件计算的核心原则是动态路由：根据输入复杂度选择性地激活专家、模型或智能体，避免统一执行全部计算。",
+      "token级门控、查询级级联和任务级编排本质上是同一条件计算思想在不同粒度上的体现，可以统一建模。",
+      "统一框架有助于跨层优化计算效率，例如将模型级联的路由策略与智能体编排的调度策略协同设计。",
+      "该视角为降低大模型和多智能体系统的计算、延迟与成本开销提供了系统化的设计原则。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

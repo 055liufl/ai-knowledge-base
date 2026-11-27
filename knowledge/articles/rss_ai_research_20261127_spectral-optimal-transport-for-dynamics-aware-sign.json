@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-039",
+  "title": "Spectral Optimal Transport for Dynamics-Aware Sign Language Generation",
+  "source_url": "https://arxiv.org/abs/2611.33818",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出了一种面向手语生成（SLG）的谱最优传输方法，旨在解决基于流模型与最优传输的现有基线在语义对齐上的不足。手语生成需要将口语文本转换为传达相同含义的骨骼姿态序列，其核心挑战在于文本到手势存在一对多的映射关系。现有方法虽借助最优传输处理这种多模态性，但若引入无分类器引导（CFG）以增强语义对齐，则需同时进行条件与无条件训练，二者可能相互冲突。作者从谱域角度重新审视最优传输，提出动态感知的生成框架，试图在保持多对一映射灵活性的同时提升文本-手势语义一致性。该工作值得关注之处在于：它将最优传输理论、谱方法与扩散/流模型引导机制结合，为多模态序列生成中的对齐问题提供了新思路；同时手语生成具有明确的社会价值（无障碍交流），而语义对齐与生成多样性之间的权衡也是当前生成模型研究的共性难题。若方法有效，可能推广至其他一对多序列生成任务，如语音驱动手势、文本到动作等。",
+  "tags": [
+    "Optimal Transport",
+    "Sign Language Generation",
+    "Flow Models",
+    "Multimodal Generation"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:48Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "手语生成本质是文本到姿态序列的一对多映射，最优传输是处理该多模态性的有效工具",
+      "无分类器引导虽能增强语义对齐，但其条件/无条件联合训练可能与最优传输目标存在冲突",
+      "谱域视角为动态感知的生成建模提供了新的理论切入点",
+      "该方法有望推广至语音驱动手势、文本到动作等其他一对多序列生成任务"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

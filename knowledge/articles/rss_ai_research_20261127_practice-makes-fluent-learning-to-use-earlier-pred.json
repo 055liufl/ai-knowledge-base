@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-121",
+  "title": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
+  "source_url": "https://arxiv.org/abs/2611.33722",
+  "source_platform": "rss_ai_research",
+  "summary": "本文提出一种训练循环模型（looped models）的新方法，使其通过“练习”学会用更少的迭代次数完成任务。循环模型的中间预测允许提前退出，但共享权重更新可能导致最终循环预测退化，同时退出门控需要跟踪早期预测质量的变化。作者通过训练模型利用早期预测，在保持任务性能的同时减少计算迭代次数，模拟人类通过练习变得更快的过程。该工作值得关注，因为它探索了模型效率与自适应计算之间的权衡，为降低推理成本提供了新思路，并揭示了循环模型中权重共享与提前退出机制的相互作用。",
+  "tags": [
+    "Looped Models",
+    "Adaptive Computation",
+    "Early Exit",
+    "Model Efficiency"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:50Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "循环模型可通过训练学会利用中间预测提前退出，从而减少迭代次数。",
+      "共享权重更新可能提升早期预测却损害最终预测，需平衡两者。",
+      "退出门控需动态跟踪早期预测质量的变化。",
+      "该方法模拟人类练习效应，为自适应计算提供新视角。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

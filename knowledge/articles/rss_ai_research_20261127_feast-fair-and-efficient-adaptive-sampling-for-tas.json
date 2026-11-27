@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-129",
+  "title": "FEAST: Fair and Efficient Adaptive Sampling for Task-Free On-Policy Learning",
+  "source_url": "https://arxiv.org/abs/2611.33827",
+  "source_platform": "rss_ai_research",
+  "summary": "FEAST 提出了一种面向无任务在线策略学习（task-free on-policy learning）的自适应采样方法，旨在解决语言智能体在利用自生成经验训练时如何公平且高效地分配有限 rollout 预算的问题。传统方法倾向于优先采样当前学习信号强的能力，但在在线策略学习中，这些信号是内生的：过去的采样分配会改变策略，进而影响未来可用的证据，形成反馈循环，导致训练不足的能力获得越来越少的采样机会，加剧能力间的不平衡。FEAST 通过公平且自适应的采样机制打破这一恶性循环，在保证采样效率的同时促进不同能力间的均衡发展。该工作对于提升语言智能体在开放环境中的持续学习与自我改进能力具有重要价值，尤其适用于缺乏明确任务定义、依赖自生成经验进行策略优化的场景。",
+  "tags": [
+    "Agent",
+    "Reinforcement Learning",
+    "Sampling",
+    "On-Policy Learning"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:08Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "在线策略学习中，采样分配与策略演化之间存在内生反馈循环，可能导致能力训练失衡。",
+      "FEAST 通过公平且自适应的采样策略，在有限 rollout 预算下平衡探索与利用，避免欠训练能力被边缘化。",
+      "该方法适用于无任务设定的语言智能体自我改进场景，为持续学习中的资源分配提供了新思路。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261127-064",
+  "title": "Evaluating Aviation Safety Knowledge Extraction with SmolLM2: From Zero-Shot to Retrieval-Grounded Prompting",
+  "source_url": "https://arxiv.org/abs/2611.34432",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究评估了小型语言模型 SmolLM2-1.7B-Instruct 在航空安全知识抽取任务中的表现，使用 300 条美国国家运输安全委员会（NTSB）事故叙述文本，从概念准确性、逐字证据支撑、结构合规性和有向关系抽取四个维度，系统比较了零样本、单样本、固定少样本和检索增强提示四种策略。研究关注的核心问题是：航空事故叙述中蕴含大量结构化事件字段无法捕捉的安全知识，能否通过提示工程让参数量仅 1.7B 的小模型可靠地抽取出来。其价值在于两点：一是将检索增强生成（RAG）思路引入安全领域信息抽取，验证检索 grounding 对证据可追溯性的作用；二是聚焦小模型而非 GPT-4 级大模型，探索低成本、可本地部署方案在安全关键领域的可行性。对航空安全分析、事故报告自动化和受限资源下的领域知识抽取均有参考意义。",
+  "tags": [
+    "RAG",
+    "信息抽取",
+    "小语言模型",
+    "提示工程",
+    "航空安全"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:46Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "研究将知识抽取质量拆解为概念准确性、逐字证据支撑、结构合规性和关系抽取四个可量化维度，为领域信息抽取提供了较完整的评估框架",
+      "检索增强提示（retrieval-grounded prompting）相比零样本和少样本提示，有望提升小模型输出与原文证据的对齐程度，减少幻觉",
+      "1.7B 参数级小模型在安全关键领域的抽取任务上具备研究价值，指向低成本、可私有化部署的领域知识抽取路线",
+      "航空事故叙述中的隐性安全知识难以被结构化字段覆盖，提示式抽取是补充传统事故数据库的可行手段"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

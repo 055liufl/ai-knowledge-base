@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261127-037",
+  "title": "Keep or Roll Back? Out-of-Loop Judges for Self-Improving VLA and End-to-End Embodied Policies",
+  "source_url": "https://arxiv.org/abs/2611.33794",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文提出 SealedLoop 评估框架，针对自改进具身策略（如 VLA 和端到端具身策略）中“内部裁判”缺乏独立性的问题，引入一个位于改进循环之外的“密封裁判”（sealed judge）。传统自改进流程中，策略收集经验、重新训练，并由同一循环内训练或选择的裁判决定是否保留新策略，导致裁判证据与策略不独立，可能产生偏差。SealedLoop 的密封裁判对改进器不可见、不可优化，仅当新策略在密封裁判下表现更优时才被保留。该工作为具身智能策略的自我改进提供了更可靠的评估机制，有助于避免因裁判偏差导致的性能退化或虚假提升，对机器人学习、VLA 模型和端到端策略的迭代优化具有方法论意义。",
+  "tags": [
+    "VLA",
+    "Embodied AI",
+    "Self-Improvement",
+    "Evaluation",
+    "Robotics"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:43Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "自改进具身策略中，循环内裁判与策略不独立，可能导致评估偏差和错误保留。",
+      "SealedLoop 引入循环外密封裁判，改进器无法看见或优化该裁判，保证评估独立性。",
+      "仅当新策略在密封裁判下评分更高时才保留，可提升自改进的可靠性。",
+      "该框架适用于 VLA 和端到端具身策略，为机器人策略迭代提供更严谨的评估范式。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

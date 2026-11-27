@@ -1,0 +1,33 @@
+{
+  "id": "rss-ai-research-20261127-099",
+  "title": "Onnx2TEE: Automated Graph-Aware Model Partitioning for TEE-based Edge AI Protection",
+  "source_url": "https://arxiv.org/abs/2611.33262",
+  "source_platform": "rss_ai_research",
+  "summary": "Onnx2TEE 提出了一种面向边缘 AI 模型保护的自动化图感知分区方法，旨在利用可信执行环境（TEE）的硬件隔离能力防止模型被窃取或篡改。随着 AI 模型越来越多地部署在边缘设备上，这些模型往往研发成本高、运行环境可能不可信，且下游系统依赖其输出准确性，因此模型保护至关重要。该工作针对 ONNX 模型图结构，自动将计算图划分为在 TEE 内执行的安全部分与在 TEE 外执行的普通部分，以在安全性与性能开销之间取得平衡。其核心价值在于将 TEE 保护从手工设计推进到自动化、图感知的层面，降低了在资源受限边缘设备上部署受保护模型的门槛，对边缘 AI 安全部署具有实际意义。",
+  "tags": [
+    "TEE",
+    "Edge AI",
+    "ONNX",
+    "Model Protection",
+    "Model Partitioning"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:02Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "边缘 AI 模型面临窃取与篡改风险，TEE 的硬件隔离是可行的保护手段，但全模型放入 TEE 会带来不可接受的性能开销。",
+      "基于 ONNX 计算图的自动分区能够在安全性与执行效率之间取得平衡，避免人工设计分区策略。",
+      "图感知的分区方法考虑了算子间的数据依赖，比简单的层切分更精细，有助于最小化 TEE 内计算量。",
+      "该工作将模型保护从研究概念推进到可自动化落地的工程基础设施层面。"
+    ],
+    "tech_category": "infra",
+    "audience": "developer"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-133",
+  "title": "When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction",
+  "source_url": "https://arxiv.org/abs/2611.33893",
+  "source_platform": "rss_ai_research",
+  "summary": "该研究通过NL2Repo和ProgramBench两个仓库构建任务，系统比较了单智能体与主智能体委派并行子智能体的效果。研究发现，并行子智能体并非总是有效：在任务可分解性强、模块间依赖较少的场景下，委派能提升代码质量与构建成功率；但在高度耦合或需要全局一致性的任务中，并行委派反而增加成本并可能降低程序质量。研究还揭示了委派策略的关键影响因素，如任务分解粒度、子智能体间通信开销以及主智能体的协调能力。该工作首次对并行子智能体在代码生成中的有效性进行了实证分析，为LLM编码智能体的架构设计提供了重要参考，有助于开发者避免盲目采用并行化而带来的资源浪费。",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Coding",
+    "Multi-Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:59:16Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "并行子智能体的有效性高度依赖任务的可分解性：模块化程度高的任务受益明显，而耦合度高的任务则可能因协调开销而劣化。",
+      "委派策略需权衡成本与质量：并行化虽能加速部分子任务，但整体运行成本倍增，且不保证最终程序更优。",
+      "主智能体的协调能力与子智能体间的通信机制是影响并行编码效果的关键因素。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

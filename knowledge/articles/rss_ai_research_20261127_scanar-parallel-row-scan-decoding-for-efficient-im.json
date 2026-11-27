@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-124",
+  "title": "ScanAR: Parallel Row-Scan Decoding for Efficient Image Generation in Unified Autoregressive Models",
+  "source_url": "https://arxiv.org/abs/2611.33761",
+  "source_platform": "rss_ai_research",
+  "summary": "ScanAR 提出了一种并行行扫描解码方法，用于加速统一自回归多模态模型中的图像生成。这类模型将文本和图像统一为单一 token 序列，共享下一个 token 预测头，但图像生成需按光栅顺序逐 token 解码 H×W 视觉网格，导致 HW 步串行推理，成为推理时间瓶颈。现有加速方法往往需要修改 tokenizer、预测头或模型内部结构，而 ScanAR 通过并行行扫描解码策略，在不改变模型架构的前提下减少串行步数，从而显著提升图像生成效率。该工作值得关注，因为它直击统一 AR 模型推理效率的核心痛点，且方法具有通用性，有望推动多模态统一模型在实际部署中的落地。",
+  "tags": [
+    "Autoregressive Model",
+    "Multimodal",
+    "Image Generation",
+    "Inference Acceleration"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:57Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "统一自回归多模态模型的图像生成按光栅顺序逐 token 解码，HW 步串行推理是主要时间瓶颈。",
+      "ScanAR 采用并行行扫描解码，在不修改 tokenizer、预测头或模型结构的情况下加速生成。",
+      "该方法具有通用性，可应用于现有统一 AR 模型，降低部署门槛。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-061",
+  "title": "MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems",
+  "source_url": "https://arxiv.org/abs/2611.34327",
+  "source_platform": "rss_ai_research",
+  "summary": "MeterRouter 是一篇针对基于大语言模型（LLM）的多智能体系统（MAS）的预算感知动态路由研究。该工作指出，多智能体系统虽然性能优于单智能体，但智能体间的通信会带来大量 token 开销；若为每个智能体都分配大型 LLM，则资源利用效率低下，系统远离帕累托前沿。论文提出 MeterRouter 框架，将回答查询的成本视为由招募的智能体数量、每个智能体的角色与所分配的 LLM、以及通信拓扑共同决定，从而在预算约束下动态路由模型与角色分配。该研究值得关注，因为它直击多智能体系统部署中的核心成本-性能权衡问题，为在有限 token 预算下优化 MAS 的资源配置提供了系统性方法，对降低实际部署成本、提升系统效率具有直接指导意义。",
+  "tags": [
+    "Multi-Agent",
+    "LLM",
+    "Routing",
+    "Cost Optimization"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:39Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "多智能体系统的成本由智能体数量、角色与 LLM 分配、通信拓扑共同决定，需联合优化而非简单堆叠大模型。",
+      "为每个智能体统一分配大型 LLM 会导致资源利用低效，系统远离成本-性能帕累托前沿。",
+      "预算感知的动态路由可在 token 开销约束下提升多智能体系统的整体效率。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

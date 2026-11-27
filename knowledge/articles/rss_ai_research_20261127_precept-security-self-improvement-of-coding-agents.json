@@ -1,0 +1,32 @@
+{
+  "id": "rss-ai-research-20261127-113",
+  "title": "PRECEPT: Security Self-Improvement of Coding Agents via Evolving Principles",
+  "source_url": "https://arxiv.org/abs/2611.33519",
+  "source_platform": "rss_ai_research",
+  "summary": "PRECEPT 是一篇关于 AI 编码代理安全自我改进的研究论文。研究揭示了一个关键问题：当前主流编码代理（Codex、Claude Code、Qwen Code）在功能测试通过的情况下仍会生成不安全代码。实验显示，当向代理展示失败的安全测试时，它们能在 85.7% 的情况下修复漏洞，但在新会话中却有 26.7% 的概率重新引入同类漏洞，这一比例与从未见过该漏洞的代理相当，说明代理并未真正从安全反馈中学习。该研究提出通过演化原则（Evolving Principles）实现编码代理的安全自我改进，即让代理从安全失败中提炼可复用的原则，并在后续任务中持续应用。这项工作值得关注，因为它直击 AI 编码代理在真实部署中的核心风险——安全缺陷的反复出现，并提出了超越单次修复的持续学习机制，对提升自动化编码的安全性和可靠性具有重要实践意义。",
+  "tags": [
+    "Coding Agent",
+    "AI Security",
+    "Self-Improvement",
+    "LLM"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:58:33Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "编码代理在展示失败安全测试时修复率高达 85.7%，但新会话中 26.7% 会重新引入同类漏洞，表明单次修复无法形成持久的安全记忆。",
+      "代理重新引入漏洞的概率与从未见过该漏洞的代理相当，说明当前代理缺乏从安全反馈中泛化学习的能力。",
+      "通过演化原则（Evolving Principles）让代理从安全失败中提炼可复用规则，是实现持续安全自我改进的关键路径。",
+      "功能测试通过不等于代码安全，AI 编码代理的自动化提交需要引入更严格的安全验证与学习闭环。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

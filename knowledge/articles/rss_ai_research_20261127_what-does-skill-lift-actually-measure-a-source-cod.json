@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-046",
+  "title": "What Does Skill Lift Actually Measure? A Source-Code-Level Audit and Noise-Aware Reanalysis of SkillsBench",
+  "source_url": "https://arxiv.org/abs/2611.33943",
+  "source_platform": "rss_ai_research",
+  "summary": "本文对SkillsBench基准进行了源代码级别的审计，并提出了噪声感知的重新分析方法。SkillsBench声称人类策划的智能体技能（指令、参考材料和脚本的目录）平均能将编码智能体的通过率提升约16.6个百分点，但部分任务反而下降。后续研究据此对技能进行门控或剔除。作者通过审计源代码发现该基准在测量技能提升时存在噪声和偏差，并重新分析数据以更准确地评估技能的真实效果。该工作值得关注，因为它挑战了当前基于逐任务增益进行技能筛选的流行做法，提醒研究者和开发者注意基准测量中的噪声问题，对智能体技能评估方法具有重要修正意义。",
+  "tags": [
+    "Agent",
+    "Benchmark",
+    "Evaluation",
+    "Coding Agent"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:56:04Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "SkillsBench报告的技能平均提升16.6个百分点可能因源代码层面的噪声和偏差而被高估或误读。",
+      "基于逐任务增益对技能进行门控或剔除的做法可能不可靠，因为测量噪声会导致错误的取舍决策。",
+      "对基准进行源代码级审计和噪声感知重分析是评估智能体技能真实效果的必要步骤。"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}

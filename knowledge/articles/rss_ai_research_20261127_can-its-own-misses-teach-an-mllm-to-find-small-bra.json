@@ -1,0 +1,31 @@
+{
+  "id": "rss-ai-research-20261127-042",
+  "title": "Can Its Own Misses Teach an MLLM to Find Small Brain Metastases?",
+  "source_url": "https://arxiv.org/abs/2611.33836",
+  "source_platform": "rss_ai_research",
+  "summary": "该论文研究多模态大语言模型（MLLM）在医学影像中定位微小病灶的能力缺陷，以脑转移瘤为典型案例。作者指出，在384像素分辨率下，0.1毫升的病灶覆盖面积不足一个视觉token的四分之一，导致前沿MLLM在每扫描一次假阳性的约束下，对0.1-1毫升病灶的检出率不足30%。单数据集微调虽有效但迁移性差，进一步优化依赖缓慢的试错过程。论文提出利用模型自身的漏检（misses）作为训练信号，探索让MLLM从错误中学习以提升小病灶检测能力。该工作值得关注，因为它直击MLLM在医学影像细粒度定位上的核心瓶颈——视觉token分辨率与病灶尺度的根本矛盾，并提出了一种自监督式的改进思路，对医学AI和MLLM能力边界研究均有启发。",
+  "tags": [
+    "MLLM",
+    "Medical Imaging",
+    "Object Detection",
+    "Fine-tuning"
+  ],
+  "author": null,
+  "published_at": "2026-11-27T17:52:47Z",
+  "collected_at": "2026-11-27T17:55:55Z",
+  "status": "draft",
+  "priority": "medium",
+  "language": "en",
+  "retry_count": 0,
+  "metrics": {},
+  "ai_analysis": {
+    "key_insights": [
+      "MLLM在384px下对0.1mL脑转移灶的视觉token覆盖不足四分之一，小病灶定位存在根本性分辨率瓶颈",
+      "前沿MLLM在每扫描一假阳性约束下对0.1-1mL病灶检出率低于30%，暴露医学细粒度定位短板",
+      "单数据集微调迁移性差，利用模型自身漏检作为训练信号是提升小病灶检测的潜在新路径"
+    ],
+    "tech_category": "research",
+    "audience": "researcher"
+  },
+  "version": 1
+}
